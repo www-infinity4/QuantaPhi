@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T22:31:20.992053Z",
+  "checked_at": "2026-11-21T23:01:10.942837Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "columbus vs inter miami",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:10:00Z",
-      "related_news_urls": [
-        "https://www.intermiamicf.com/news/it-s-miami-time-get-ready-for-inter-miami-cf-s-playoffs-opener-this-saturday-presented-by-nu",
-        "https://www.mlssoccer.com/playoffs/2026/news/lionel-messi-inter-miami-enter-mls-cup-playoffs-with-historic-ambitions",
-        "https://www.theguardian.com/football/2026/nov/20/columbus-crew-mls-playoffs"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX4U08hjSjMuzOgub0VLFI4imMB3GaGB_E6J7nrFYM09NszBPJvOjM0kXxZpw",
-      "image_credit": "Inter Miami CF",
-      "news": [
-        {
-          "url": "https://www.intermiamicf.com/news/it-s-miami-time-get-ready-for-inter-miami-cf-s-playoffs-opener-this-saturday-presented-by-nu",
-          "title": "It’s Miami Time: Get Ready for Inter Miami CF’s Playoffs Opener This Saturday Presented by Nu",
-          "publisher": "Inter Miami CF",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX4U08hjSjMuzOgub0VLFI4imMB3GaGB_E6J7nrFYM09NszBPJvOjM0kXxZpw"
-        },
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/lionel-messi-inter-miami-enter-mls-cup-playoffs-with-historic-ambitions",
-          "title": "Lionel Messi & Inter Miami enter MLS Cup Playoffs with historic ambitions",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5Oltv4ZKAEbKLy2kmsdu5JJYzx7vnnr3YvuL4QZIWNOqSLBE0Bapmfrx3J1c"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/20/columbus-crew-mls-playoffs",
-          "title": "How the Columbus Crew switched paths en route to the MLS playoffs",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxL2taJlXL9XUO4WqPMnmvSYKc1cwTnSd6lLHFpjJCLuBRQTvtU8M4mGY_Ai4"
-        }
-      ]
-    },
-    {
-      "query": "santos - león",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17536059/santos-leon-apertura-2026-alineaciones-probabilidades",
-        "https://www.soyfiera.com/news/2026/11/19/fernando-nene-beltran-pide-enfocarse-en-leon-y-no-en-otros-resultados-rumbo-al-duelo-decisivo-ante-santos-30041.html",
-        "https://www.tudn.com/futbol/liga-mx/santos-laguna-vs-leon-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScc0KDUg7PePpJUdUh0M6NG7l5C9_ggDXEMqQ8spYtUaMPCPO7m0VFbaBT-cg",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17536059/santos-leon-apertura-2026-alineaciones-probabilidades",
-          "title": "Santos vs León: alineaciones y probabilidades",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScc0KDUg7PePpJUdUh0M6NG7l5C9_ggDXEMqQ8spYtUaMPCPO7m0VFbaBT-cg"
-        },
-        {
-          "url": "https://www.soyfiera.com/news/2026/11/19/fernando-nene-beltran-pide-enfocarse-en-leon-y-no-en-otros-resultados-rumbo-al-duelo-decisivo-ante-santos-30041.html",
-          "title": "Fernando 'Nene' Beltrán pide enfocarse en León y no en otros resultados rumbo al duelo decisivo ante Santos",
-          "publisher": "SoyFiera.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZFH_RmKnVuZs83XtNYudJll86Kl9f4AcbFsRB-IyL-PjbJ3TIDRMG37m91wE"
-        },
-        {
-          "url": "https://www.tudn.com/futbol/liga-mx/santos-laguna-vs-leon-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
-          "title": "A qué hora y dónde ver el Santos Laguna vs. León de la Jornada 17",
-          "publisher": "TUDN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5sotgMRa2xWsD8BZ-jdocTUe086l_0Cis1VafVIuFCXCTQWcE90BC8hYUMS8"
-        }
-      ]
-    },
-    {
-      "query": "idaho vs idaho state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T22:10:00Z",
-      "related_news_urls": [
-        "https://www.dnews.com/sports/idaho-eyes-potato-state-trophy-against-idaho-state-in-season-finale-545e0258",
-        "https://skylinesportsmt.com/vandals-weekly-thomas-ford-jr-cody-hawkins-jerek-wolcott-samuel-akem-on-idaho-vs-idaho-state-rivalry-week/",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/390994/picks"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp35vyi9m7M_2KeNn1ZPNZH1BsReRSEaP9rGMHGVfoTLniEdC56JWmSbz_Xhs",
-      "image_credit": "Moscow-Pullman Daily News",
-      "news": [
-        {
-          "url": "https://www.dnews.com/sports/idaho-eyes-potato-state-trophy-against-idaho-state-in-season-finale-545e0258",
-          "title": "Idaho eyes Potato State Trophy against Idaho State in season finale",
-          "publisher": "Moscow-Pullman Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTp35vyi9m7M_2KeNn1ZPNZH1BsReRSEaP9rGMHGVfoTLniEdC56JWmSbz_Xhs"
-        },
-        {
-          "url": "https://skylinesportsmt.com/vandals-weekly-thomas-ford-jr-cody-hawkins-jerek-wolcott-samuel-akem-on-idaho-vs-idaho-state-rivalry-week/",
-          "title": "Vandals Weekly: Thomas Ford Jr., Cody Hawkins, Jerek Wolcott & Samuel Akem on Idaho vs. Idaho State rivalry week",
-          "publisher": "Skyline Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNGOkfwam0249KgGwKGKj6bJYeox8KqdjXX4b6tgrX7hRrUtGjYPrNIFo5gP4"
-        },
-        {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390994/picks",
-          "title": "Idaho State Bengals vs Seattle Redhawks Picks, Prop Bets For November 15, 2026 - NCAAB Predictions",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrSmJ1tmlg1CSWQ9mgXjuTRinp52X0CvCM83MpX_vicdwdU4jGmj5d_oBaroo"
-        }
-      ]
-    },
-    {
-      "query": "john mateer",
+      "query": "kirk ferentz",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T22:10:00Z",
+      "published_at": "2026-11-21T22:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/john-mateer-jumps-arch-manning-020041865.html",
-        "https://roundtable.io/sports/ncaa/oklahoma/video/is-oklahomas-john-mateer-better-than-texas-arch-manning-espn-thinks-so",
-        "https://www.aol.com/articles/john-mateer-jumps-arch-manning-020041000.html"
+        "https://247sports.com/college/iowa/article/disrespected-how-iowa-can-respond-to-the-cfp-rankings-vs-illinois-swarmcast-292981389/",
+        "https://www.foxnews.com/outkick-sports/iowas-kirk-ferentz-threatens-fire-coaches-mention-style-points-great-old-school-statement",
+        "https://www.kcci.com/article/cfp-rankings-nov-17-iowa-hawkeyes-playoffs/74457746"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1eHtym0GfbbuqHjCz7bvKoq8p629ybir5iUrcPspKItMsw_ZECGp1uyUkrQ",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT90QPg-SEdINfUk411YD_E3DIivscoRAdkaUcpmgoOIy7sQc3BM273-9hq_-k",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/john-mateer-jumps-arch-manning-020041865.html",
-          "title": "John Mateer jumps Arch Manning in ESPN's Power Four QB Rankings",
-          "publisher": "Yahoo Sports",
+          "url": "https://247sports.com/college/iowa/article/disrespected-how-iowa-can-respond-to-the-cfp-rankings-vs-illinois-swarmcast-292981389/",
+          "title": "DISRESPECTED: How IOWA Can Respond to the CFP Rankings vs. Illinois | SwarmCast",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm1eHtym0GfbbuqHjCz7bvKoq8p629ybir5iUrcPspKItMsw_ZECGp1uyUkrQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT90QPg-SEdINfUk411YD_E3DIivscoRAdkaUcpmgoOIy7sQc3BM273-9hq_-k"
         },
         {
-          "url": "https://roundtable.io/sports/ncaa/oklahoma/video/is-oklahomas-john-mateer-better-than-texas-arch-manning-espn-thinks-so",
-          "title": "Video - Is Oklahoma's John Mateer BETTER Than Texas' Arch Manning? ESPN Thinks So…",
-          "publisher": "roundtable.io",
+          "url": "https://www.foxnews.com/outkick-sports/iowas-kirk-ferentz-threatens-fire-coaches-mention-style-points-great-old-school-statement",
+          "title": "Iowa's Kirk Ferentz threatens to fire coaches if they mention style points with great old-school statement",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwVxWdO9eKF-UH9MSguZd-jFWx2-ydJTJ3hns8WeUEAMR26uFqusVhUuR9JtM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLEOERYP9oD6H28QotlqYjxfhMUdc6rKj-THo7E5jpOhSG47ptNiKCT4aZDhw"
         },
         {
-          "url": "https://www.aol.com/articles/john-mateer-jumps-arch-manning-020041000.html",
-          "title": "John Mateer jumps Arch Manning in ESPN's Power Four QB Rankings",
-          "publisher": "AOL.com",
+          "url": "https://www.kcci.com/article/cfp-rankings-nov-17-iowa-hawkeyes-playoffs/74457746",
+          "title": "Iowa holds steady in latest CFP rankings; Oregon, Ohio State move in front of Hawkeyes",
+          "publisher": "KCCI",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXupC4Dll5JX9MIAQRYHUrb1-mJ9Eazeydc3yG25iHIT3cKDrL0XckA68YWVI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo4HRcUAQIAzev71kBPYXAwKuYnvMT1PT_9mOp8GIp4H4E6IT8zhmI_uXxLXE"
         }
       ]
     },
     {
-      "query": "sabres vs panthers",
+      "query": "josh heupel",
       "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:00:00Z",
+      "published_at": "2026-11-21T22:30:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/buffalo-sabres-florida-panthers-game-preview-november-21-2026",
-        "https://sports.yahoo.com/articles/buffalo-sabres-vs-florida-panthers-171712062.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/buffalo-sabres-vs-florida-panthers-prediction-odds-2026-11-21/"
+        "https://www.on3.com/teams/tennessee-volunteers/news/josh-heupel-nick-saban-sec-coach-award-tennessee-football/",
+        "https://atozsports.com/nashville/volunteers/josh-heupel-deserves-credit-for-something-tennessee-has-done-well-that-ohio-state-and-others-have-struggled-with/",
+        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/21/tennessee-football-lsu-live-score-updates-lane-kiffin-george-macintyre-desean-bishop-faizon-brandon--live/92824313007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRhe2FLw264ZSB_sF27h585HcBqjIE4vtG6OR1q5dfbBwOHvtvrVjkNfFEj7I",
+      "image_credit": "On3",
       "news": [
         {
-          "url": "https://www.nhl.com/news/buffalo-sabres-florida-panthers-game-preview-november-21-2026",
-          "title": "Sabres at Panthers projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/buffalo-sabres-vs-florida-panthers-171712062.html",
-          "title": "Buffalo Sabres vs. Florida Panthers - Lineups, Injury Updates, And Game Notes",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoerzmH76zyfdhtusOjDGsh5RwW5zFZyz0TX3sLfxOxfwMBnKqCtF6IwS1Yso"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/buffalo-sabres-vs-florida-panthers-prediction-odds-2026-11-21/",
-          "title": "Buffalo Sabres vs Florida Panthers Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAwQZkjE87ApqJpcinTi7W2IdqlxNudnkPDWIWvHzoiZK6gcuRCwnUYUZyUGg"
-        }
-      ]
-    },
-    {
-      "query": "kylian mbappé",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T22:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50553735/goodness-gracious-mbappe-skies-penalty-real-madrid",
-        "https://sports.yahoo.com/articles/kylian-mbapp-skies-penalty-rare-210700188.html",
-        "https://www.goal.com/en/news/did-the-referee-favour-real-archivo-var-settles-debate-over-mbappe-penalty/blte4e05da75ce16579"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5ohg-wV_AnSiriQfQpA95eC_Y0WtcQnqiujuHwG7RnJoOeS8GoG4B4QO_gc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50553735/goodness-gracious-mbappe-skies-penalty-real-madrid",
-          "title": "'Goodness gracious me!' Mbappe skies penalty for Real Madrid",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5ohg-wV_AnSiriQfQpA95eC_Y0WtcQnqiujuHwG7RnJoOeS8GoG4B4QO_gc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kylian-mbapp-skies-penalty-rare-210700188.html",
-          "title": "Kylian Mbappé skies penalty in rare moment for Real Madrid 📉",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ38PgssTXYND1tpZpwp5Wqc0GkOJbhDiFQLYeo8_2dKOE0pMsiYlFd2raBCZ8"
-        },
-        {
-          "url": "https://www.goal.com/en/news/did-the-referee-favour-real-archivo-var-settles-debate-over-mbappe-penalty/blte4e05da75ce16579",
-          "title": "Did the referee favour Real? Archivo VAR settles debate over Mbappé penalty",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJr988wN3E4zsrEkPcMXYXp2b8z2Rai0d70Ohuo-qOKzoFfU_cbnIcCu9b8a8"
-        }
-      ]
-    },
-    {
-      "query": "penguins vs predators",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:00:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/penguins/news/game-preview-11-21-26-at-nashville-predators",
-        "https://sports.yahoo.com/articles/lineup-notes-murashov-starts-hayes-213219593.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/pittsburgh-penguins-vs-nashville-predators-prediction-odds-2026-11-21/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0DOz_L759_1N9yrsbEZbVW2NP640Xv0znizqWzQ7BTKm5QabYKiIIdztGbWI",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/penguins/news/game-preview-11-21-26-at-nashville-predators",
-          "title": "Game Preview: 11.21.26 at Nashville Predators | Pittsburgh Penguins",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0DOz_L759_1N9yrsbEZbVW2NP640Xv0znizqWzQ7BTKm5QabYKiIIdztGbWI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lineup-notes-murashov-starts-hayes-213219593.html",
-          "title": "Lineup Notes: Murashov Starts, Hayes Is In After Friday's Recall",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDam8oQiLIXvp6vASfKVx1B3mYw_bUujqh1_iWcA7c3fsi0GU1Gn_RHYpgsyM"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/pittsburgh-penguins-vs-nashville-predators-prediction-odds-2026-11-21/",
-          "title": "Pittsburgh Penguins vs Nashville Predators Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF9CohVz3WZ1eDnyahzOT5jUgYlJeeVqv_d93QDYx-LgvgvCh63w8-5qEGdiU"
-        }
-      ]
-    },
-    {
-      "query": "jude bellingham",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:00:00Z",
-      "related_news_urls": [
-        "https://www.managingmadrid.com/real-madrid-cf-players/115482/jude-bellingham-delivers-another-assist-in-englands-win-over-spain",
-        "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/el-gran-momento-de-bellingham-16-11-2026",
-        "https://en.as.com/soccer/leave-jude-at-home-bellinghams-remarkable-england-transformation-f202611-n/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlMsDuu9n0BiP9TeS2ZY_8oyolG96OhUVZDmjDN19Q_gG5A85v-ctLjROaeY",
-      "image_credit": "Managing Madrid",
-      "news": [
-        {
-          "url": "https://www.managingmadrid.com/real-madrid-cf-players/115482/jude-bellingham-delivers-another-assist-in-englands-win-over-spain",
-          "title": "Jude Bellingham delivers another assist in England’s win over Spain",
-          "publisher": "Managing Madrid",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJlMsDuu9n0BiP9TeS2ZY_8oyolG96OhUVZDmjDN19Q_gG5A85v-ctLjROaeY"
-        },
-        {
-          "url": "https://www.realmadrid.com/en-US/news/football/first-team/latest-news/el-gran-momento-de-bellingham-16-11-2026",
-          "title": "Bellingham's Great Form",
-          "publisher": "Real Madrid CF | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk-mTDhrqwuKdA_9Olc3_BeJH6s7yBXM3p-GSFWwJDCGB6t5Q62pbCFX6gmJE"
-        },
-        {
-          "url": "https://en.as.com/soccer/leave-jude-at-home-bellinghams-remarkable-england-transformation-f202611-n/",
-          "title": "“Leave Jude at home”: Bellingham’s remarkable England transformation",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvJsERIWJZcp13wwhsmW-Vuh-GSXnIjPJk8oiJ9Pcbw7K9d9GfySNFZj2y7lg"
-        }
-      ]
-    },
-    {
-      "query": "pachuca - toluca",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T22:00:00Z",
-      "related_news_urls": [
-        "https://www.facebook.com/MilenioDiario/photos/-ya-casicheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-pachuca-vs-toluca-de-la-liga-mx-/1690243503133114/",
-        "https://www.dazn.com/es-MX/news/f%C3%BAtbol/pachuca-vs-toluca-vivo-canales-streaming-horarios-apertura-liga-mx/8zjacabhuskp18e7tmgtyvml9",
-        "https://bajio.quadratin.com.mx/van-diablos-rojos-por-el-4o-sitio/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb63eHsFDs_-YulIdyqI6oOoETd-PNGvgRi6FE5EmqKNy7DdfBy9fpSIMyWhc",
-      "image_credit": "Facebook",
-      "news": [
-        {
-          "url": "https://www.facebook.com/MilenioDiario/photos/-ya-casicheca-a-qu%C3%A9-hora-y-en-d%C3%B3nde-ver-el-pachuca-vs-toluca-de-la-liga-mx-/1690243503133114/",
-          "title": "⚽ ¡Ya casi! Checa a qué HORA y en DÓNDE VER el Pachuca vs Toluca de la Liga MX 🦫🆚👹",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb63eHsFDs_-YulIdyqI6oOoETd-PNGvgRi6FE5EmqKNy7DdfBy9fpSIMyWhc"
-        },
-        {
-          "url": "https://www.dazn.com/es-MX/news/f%C3%BAtbol/pachuca-vs-toluca-vivo-canales-streaming-horarios-apertura-liga-mx/8zjacabhuskp18e7tmgtyvml9",
-          "title": "Pachuca vs Toluca en vivo: canales, streaming y horarios del Apertura de la Liga MX para España, México, Latinoamérica y USA",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPr6_LRLSzFUb0c2f7zRnPt-EzrnpNjYVqkzvFpyEgo055gHKmFcs8RmEyJJA"
-        },
-        {
-          "url": "https://bajio.quadratin.com.mx/van-diablos-rojos-por-el-4o-sitio/",
-          "title": "Van Diablos Rojos por el 4o sitio",
-          "publisher": "Quadratin Bajío",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIHa6MFy55RVVi3PBm8ureY0LKjqyVOYQrry9DgLzag5aEloVGm67soxee0t0"
-        }
-      ]
-    },
-    {
-      "query": "desean bishop",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T22:00:00Z",
-      "related_news_urls": [
-        "https://www.knoxnews.com/story/sports/columnists/university-of-tennessee/john-adams/2026/11/19/tennessee-football-desean-bishop-lsu-doak-walker-award/92805087007/",
-        "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-desean-bishop-top-five-career-rushing-leaders/",
-        "https://volswire.usatoday.com/story/sports/college/volunteers/football/2026/11/16/2026-sec-football-rushing-yard-leaders-after-week-11-desean-bishop/92801304007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeMedu6PJyn-Irj35I3r8yOzv5akyqModIcDRaGjnNICimsAvn0TecN74g4WU",
-      "image_credit": "Knoxville News Sentinel",
-      "news": [
-        {
-          "url": "https://www.knoxnews.com/story/sports/columnists/university-of-tennessee/john-adams/2026/11/19/tennessee-football-desean-bishop-lsu-doak-walker-award/92805087007/",
-          "title": "Why Tennessee's DeSean Bishop is deserving of Doak Walker Award | Adams",
-          "publisher": "Knoxville News Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeMedu6PJyn-Irj35I3r8yOzv5akyqModIcDRaGjnNICimsAvn0TecN74g4WU"
-        },
-        {
-          "url": "https://www.on3.com/teams/tennessee-volunteers/news/tennessee-football-desean-bishop-top-five-career-rushing-leaders/",
-          "title": "DeSean Bishop rumbles into top five of Tennessee's career rushing leaders",
+          "url": "https://www.on3.com/teams/tennessee-volunteers/news/josh-heupel-nick-saban-sec-coach-award-tennessee-football/",
+          "title": "Why Nick Saban is so impressed with Tennessee coach Josh Heupel",
           "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHjMh-qdZ2h1D29FP0j4ekjK4IJx5Lth1GJozscHkJzb90zZwAkyZkSmtatOg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRhe2FLw264ZSB_sF27h585HcBqjIE4vtG6OR1q5dfbBwOHvtvrVjkNfFEj7I"
         },
         {
-          "url": "https://volswire.usatoday.com/story/sports/college/volunteers/football/2026/11/16/2026-sec-football-rushing-yard-leaders-after-week-11-desean-bishop/92801304007/",
-          "title": "Where DeSean Bishop ranks for rushing yards after Texas A&M game",
-          "publisher": "Vols Wire",
+          "url": "https://atozsports.com/nashville/volunteers/josh-heupel-deserves-credit-for-something-tennessee-has-done-well-that-ohio-state-and-others-have-struggled-with/",
+          "title": "Josh Heupel deserves credit for something Tennessee has done well that Ohio State and others have struggled with",
+          "publisher": "A to Z Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-ApF3Vg9g3kGCRVt3i9WXcUXeObimvk_KwkNkXwAX2me0BO2xsA14GQP8USs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmHmBq-dx3I4tKZkXaU1h5v_WAhtszXTWeg8muwPHAYWG_D7iPdPcqnz8BE7A"
+        },
+        {
+          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/football/2026/11/21/tennessee-football-lsu-live-score-updates-lane-kiffin-george-macintyre-desean-bishop-faizon-brandon--live/92824313007/",
+          "title": "Tennessee football vs LSU live updates, Vols lead 10-6 at halftime",
+          "publisher": "Knoxville News Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQXHFTcXsvwOZ0wGCkS4g5DdOUbWu7Kh8P1S66cYBIb3Qm8NsKMQOZQ1ZacjQ"
+        }
+      ]
+    },
+    {
+      "query": "weather forecast",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T22:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel",
+        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+        "https://www.fox5dc.com/news/potential-thanksgiving-storm-could-bring-rain-snow-travel-disruptions-dc-region-east-coast"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FS9gmxRBlI3MTmi8HUFtfnlusSQvN1eE8aBEPr15Pt_ZVh3dwn_VkZX6MLU",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel",
+          "title": "Millions across 20+ states face Thanksgiving travel disruptions as powerful storms take aim at both coasts",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FS9gmxRBlI3MTmi8HUFtfnlusSQvN1eE8aBEPr15Pt_ZVh3dwn_VkZX6MLU"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+          "title": "Storms expected on both coasts threatens Thanksgiving travel",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+        },
+        {
+          "url": "https://www.fox5dc.com/news/potential-thanksgiving-storm-could-bring-rain-snow-travel-disruptions-dc-region-east-coast",
+          "title": "Potential Thanksgiving storm could bring rain, snow and travel disruptions to DC region, East Coast",
+          "publisher": "FOX 5 DC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTJ9-yrsRTJ4IiKgmj1SIx7FcliaoPNl-S4cEw1fdViOonqHTSaC4r5zCNQB4"
+        }
+      ]
+    },
+    {
+      "query": "is karl anthony towns playing tonight",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T22:30:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/gameday-coverage/118722/portlannnd-trail-blazers-new-york-knicks-time-tv-latest-injury-report",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/og-anunoby-calf-downgraded-to-out-saturday",
+        "https://sports.yahoo.com/articles/knicks-guard-jordan-clarkson-receives-200213389.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn19oB1Z1WIdS4cs4Kp-iAM4yx7A5gKYXDwtdz4DBpUZMavSVk3JKodAwMAy8",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/gameday-coverage/118722/portlannnd-trail-blazers-new-york-knicks-time-tv-latest-injury-report",
+          "title": "Trail Blazers Set to Take On World Champion Knicks",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn19oB1Z1WIdS4cs4Kp-iAM4yx7A5gKYXDwtdz4DBpUZMavSVk3JKodAwMAy8"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/og-anunoby-calf-downgraded-to-out-saturday",
+          "title": "OG Anunoby (calf) downgraded to out Saturday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJs9eCf65XxFQ4ul8FDJENBKDh7A7ngE4AHvpx5GwkZ0n7yVV6KmwCL2v7vVU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/knicks-guard-jordan-clarkson-receives-200213389.html",
+          "title": "Knicks Guard Jordan Clarkson Receives Injury Update Before Trail Blazers Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN8NLPAKuWs8LnYyJkYix579IExsMugUiG1ijE51UeN-UrzZzzn7edqsL8SjE"
+        }
+      ]
+    },
+    {
+      "query": "alabama vs unc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T22:30:00Z",
+      "related_news_urls": [
+        "https://www.al.com/tv/2026/11/where-to-watch-alabama-vs-unc-womens-basketball-for-free-today.html",
+        "https://www.fubo.tv/news/womens-college-basketball/north-carolina-vs-alabama-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+        "https://bamahammer.com/the-pauline-love-era-faces-its-toughest-test-yet-against-north-carolina"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjffd9htOKS-nUhkLvsqxOXcKzwIYTZIymqZWA-wef-aPSkpMOVBRKxKIJR0Y",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/tv/2026/11/where-to-watch-alabama-vs-unc-womens-basketball-for-free-today.html",
+          "title": "Where to watch Alabama vs. UNC women’s basketball for free today",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjffd9htOKS-nUhkLvsqxOXcKzwIYTZIymqZWA-wef-aPSkpMOVBRKxKIJR0Y"
+        },
+        {
+          "url": "https://www.fubo.tv/news/womens-college-basketball/north-carolina-vs-alabama-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+          "title": "North Carolina vs Alabama - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEHBGoYCvFAK-nlsvdzJsDPHgtSlgvRitTfpqxmEpjf2-WsHTUitJogJyt5sI"
+        },
+        {
+          "url": "https://bamahammer.com/the-pauline-love-era-faces-its-toughest-test-yet-against-north-carolina",
+          "title": "The Pauline Love era faces its toughest test yet against North Carolina",
+          "publisher": "Bama Hammer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRj0QEqwX60gvFhfPiAXQRVaiH6b7A7WaHqx5lkno6TS4cg5-QT_eXngtQb-Y"
+        }
+      ]
+    },
+    {
+      "query": "uc davis football",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T22:30:00Z",
+      "related_news_urls": [
+        "https://www.abridged.org/news/sacramento-regional-football-cif-semis/",
+        "https://ucdavisaggies.com/news/2026/11/20/football-uc-davis-looks-to-defend-golden-horseshoe-extend-streak-in-regular-season-finale.aspx",
+        "https://www.fubo.tv/news/ncaaf/cal-poly-san-luis-obispo-at-uc-davis-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN7A0WRoznoKiuGnBlDl1XE67z4MHc25WoLOXLlfqwxCK-X_RK8I6XQt83b5I",
+      "image_credit": "Abridged – PBS KVIE",
+      "news": [
+        {
+          "url": "https://www.abridged.org/news/sacramento-regional-football-cif-semis/",
+          "title": "Big weekend of Sacramento-area football: high school and JuCo semis, a UC Davis must-win",
+          "publisher": "Abridged – PBS KVIE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN7A0WRoznoKiuGnBlDl1XE67z4MHc25WoLOXLlfqwxCK-X_RK8I6XQt83b5I"
+        },
+        {
+          "url": "https://ucdavisaggies.com/news/2026/11/20/football-uc-davis-looks-to-defend-golden-horseshoe-extend-streak-in-regular-season-finale.aspx",
+          "title": "UC Davis Looks to Defend Golden Horseshoe, Extend Streak on Senior Day",
+          "publisher": "UC Davis Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQx0wzTWdqofCL0Ns_hHsrA8DlWZH0b9Qp8dYLjpk1S6rC_eUOi04cl0FxsbtQ"
+        },
+        {
+          "url": "https://www.fubo.tv/news/ncaaf/cal-poly-san-luis-obispo-at-uc-davis-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+          "title": "Cal Poly-San Luis Obispo at UC Davis - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY1ipQLtbAD5yMNzcjywCVekYOs2eLPCKZDGnAjelABANlPnmb1b7whXCkD9g"
+        }
+      ]
+    },
+    {
+      "query": "maryland vs usc",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T22:20:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/usc/live/usc-football-maryland-live-updates-start-time-and-how-to-watch",
+        "https://sports.yahoo.com/articles/watch-maryland-vs-usc-live-221500626.html",
+        "https://247sports.com/college/usc/longformarticle/usc-football-notebook-trojans-senior-day-maryland-terrapins-293019375/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwoEakIcxKXkOHrA6-d-hNho3TW_87fj4v6Q9KCRZ4gBIqlDditCem89RHfkY",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/usc/live/usc-football-maryland-live-updates-start-time-and-how-to-watch",
+          "title": "USC football vs. Maryland: Live updates, start time and how to watch",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwoEakIcxKXkOHrA6-d-hNho3TW_87fj4v6Q9KCRZ4gBIqlDditCem89RHfkY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-maryland-vs-usc-live-221500626.html",
+          "title": "How to watch Maryland vs USC: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdLlkZ7cNlhDvLLEryE5ur1ExVEb43WyAGcFkeey6_1naqzP5MrFABdgBESsY"
+        },
+        {
+          "url": "https://247sports.com/college/usc/longformarticle/usc-football-notebook-trojans-senior-day-maryland-terrapins-293019375/",
+          "title": "The Trojan Notebook: USC looks for Senior Day win vs. Maryland",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSqFXsolW7_JLONVYktme0gzQ3wDetmOdM5jsG0zU2sFZYXRMTIMgwRPWfeGg"
+        }
+      ]
+    },
+    {
+      "query": "gta vi review metacritic",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/media/gta-vi-launch-sales-numbers",
+        "https://www.usatoday.com/story/tech/gaming/2026/11/21/gta-6-first-day-sales-record/92897054007/",
+        "https://www.nytimes.com/2026/11/21/arts/grand-theft-auto-vi-notebook-chaos-serenity.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp7av8l2XReAoO-AknYHwsJniGv4HNNGEv5HiF6TnyCDZafv4UP4oyT1Bjs_0",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/media/gta-vi-launch-sales-numbers",
+          "title": "‘GTA VI’ sales blew past $3 billion in its first day, making it one of the biggest entertainment launches ever",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp7av8l2XReAoO-AknYHwsJniGv4HNNGEv5HiF6TnyCDZafv4UP4oyT1Bjs_0"
+        },
+        {
+          "url": "https://www.usatoday.com/story/tech/gaming/2026/11/21/gta-6-first-day-sales-record/92897054007/",
+          "title": "GTA 6 first-day sales of $3.8B is largest entertainment launch ever",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0MEHoLRK2UiFeV0IEKXiGHpxz45t3sjGqlOO_QHtn6O6q5f9mI_BtBDO78Qg"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/21/arts/grand-theft-auto-vi-notebook-chaos-serenity.html",
+          "title": "Find Serenity in Grand Theft Auto VI. (Or Just Embrace the Chaos.)",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTjJLaeYVPn7U0pYaTineDdqBKMkSaERwQkGEUjJNA8_HwI5jG-Z-X1VFUVho"
+        }
+      ]
+    },
+    {
+      "query": "tesla fsd v15",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T22:20:00Z",
+      "related_news_urls": [
+        "https://www.basenor.com/blogs/news/tesla-update-fsd-v15",
+        "https://www.teslarati.com/tesla-full-self-driving-v15-rollout-begins-full-release-notes-improvements/",
+        "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT69iLbQ0abeuwPiogoVjEw9nyV8PZlG7LWWIx8DemqoBhiHBexCL6FHrXohhQ",
+      "image_credit": "BASENOR - Tesla Accessories",
+      "news": [
+        {
+          "url": "https://www.basenor.com/blogs/news/tesla-update-fsd-v15",
+          "title": "Tesla FSD V15 UI Overhaul: What to Expect and How to Prepare",
+          "publisher": "BASENOR - Tesla Accessories",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT69iLbQ0abeuwPiogoVjEw9nyV8PZlG7LWWIx8DemqoBhiHBexCL6FHrXohhQ"
+        },
+        {
+          "url": "https://www.teslarati.com/tesla-full-self-driving-v15-rollout-begins-full-release-notes-improvements/",
+          "title": "Tesla Full Self-Driving v15 rollout begins: full release notes and improvements",
+          "publisher": "Teslarati",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1NP-GfNCox31vxN7sPlPWy8AnzoIB_1aNk7VIGnQMtbe7_kiXejy2UT9b29s"
+        },
+        {
+          "url": "https://electrek.co/2026/11/21/tesla-fsd-v15-rollout-25x-safety-reality-view/",
+          "title": "Tesla launches FSD v15, targets its biggest weaknesses, from signs to potholes",
+          "publisher": "Electrek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSNCqiPs7bNKZgguS8-6mMQKjJiQTAzoCYwCf5OhFxa3jsl2_D1RpoiCGsq6E"
+        }
+      ]
+    },
+    {
+      "query": "karl anthony towns",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T22:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/karl-anthony-towns-illness-questionable-saturday",
+        "https://www.rotowire.com/basketball/headlines/karl-anthony-towns-injury-questionable-due-to-illness-540324",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/karl-anthony-towns-to-miss-first-game-of-the-season-due-to-illness/92904069007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/karl-anthony-towns-illness-questionable-saturday",
+          "title": "Karl-Anthony Towns (illness) questionable Saturday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/karl-anthony-towns-injury-questionable-due-to-illness-540324",
+          "title": "Karl-Anthony Towns Injury: Questionable due to illness",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3kweYks_OQlrSH5-kA9UJj1mmkL6M-xSXTAm3s7cLeCFzZM8NeDhpaRkGPNE"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/karl-anthony-towns-to-miss-first-game-of-the-season-due-to-illness/92904069007/",
+          "title": "Karl-Anthony Towns to miss first game of the season due to illness",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Uhg4yL7G8QPiANmprgEpwj4ZUBgSYdbHj-vuyXdPNYS5Phib82O_Sq4PFrw"
         }
       ]
     }
