@@ -6,7 +6,7 @@ import {QUICK_CARD_SOURCES,findSourceCard,validSourceCard,PUBLIC_SOURCE_IDS,isPu
 import {CREATOR_SOURCES} from '../creator-post-catalog.mjs';
 import {YOUTUBE_CREATOR_SOURCES} from '../youtube-creator-catalog.mjs';
 import {JULIE_DERU_SOURCES} from '../julie-deru-catalog.mjs';
-import {CREATOR_MIX_SOURCE,LANDING_AUTISM_SOURCE} from '../youtube-creator-mixed-core.mjs';
+import {CREATOR_MIX_SOURCE,LANDING_AUTISM_SOURCE,FAMOUS_MOMMY_SOURCE,MAXINE_SOURCE} from '../youtube-creator-mixed-core.mjs';
 import {REVIEWED_OWNER_VIDEO_CARDS} from '../youtube-owner-video-links.mjs';
 import {FAMILY_TV_SOURCE} from '../family-parenting-tv-core.mjs';
 import {MILK_MAMAS_SOURCE} from '../milk-mamas-catalog.mjs';
@@ -129,11 +129,13 @@ test('functional source cards enter Public while link-only integrations remain s
   ...JULIE_DERU_SOURCES.map(c=>c.id),
   CREATOR_MIX_SOURCE.id,
   LANDING_AUTISM_SOURCE.id,
+  FAMOUS_MOMMY_SOURCE.id,
+  MAXINE_SOURCE.id,
   ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
   FAMILY_TV_SOURCE.id,
   MILK_MAMAS_SOURCE.id
  ]);
- assert.equal(PUBLIC_SOURCE_IDS.length,29+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
+ assert.equal(PUBLIC_SOURCE_IDS.length,31+CREATOR_SOURCES.length+YOUTUBE_CREATOR_SOURCES.length+JULIE_DERU_SOURCES.length+REVIEWED_OWNER_VIDEO_CARDS.length);
  assert.equal(isPublicSourceCard(findSourceCard('chatgpt')),true);
  for(const card of QUICK_CARD_SOURCES)assert.equal(isPublicSourceCard(card),PUBLIC_SOURCE_IDS.includes(card.id));
  assert.match(launcher,/ACTIVE_SOURCE_CARDS\.filter\(isPublicSourceCard\)/);
