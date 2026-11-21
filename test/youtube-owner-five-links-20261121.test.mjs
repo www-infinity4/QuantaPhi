@@ -265,3 +265,30 @@ test('new owner-submitted video AhhDT0AkqC0 is added once to Public Media Quick 
   assert.ok(ALL_FEED_CARDS.some(v=>v.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('owner YouTube video YpFf6N0Ewa4 is indexed exactly once in existing Oracle Public/Media cards',()=>{
+  const id='YpFf6N0Ewa4';
+  const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+  assert.equal(matches.length,1,'Preserve the owner-supplied YouTube video exactly once');
+  const video=matches[0];
+  assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(video.observedAt,'2026-11-21');
+  assert.equal(video.titleVerified,false,'Do not invent unverified public metadata');
+  assert.match(video.title,/title unverified/i);
+  assert.equal(video.publisherVerified,false);
+  assert.equal(video.publishedAt,null);
+  assert.equal(video.contentBoundary,'general-media');
+  assert.ok(validateOwnerYouTubeLink(video));
+  assert.equal(validateOwnerYouTubeLink({...video,sourceUrl:'https://evil.test/watch?v='+id}),false);
+  assert.equal(validateOwnerYouTubeLink({...video,publisherVerified:true}),false);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+  assert.ok(card,'Reuse the existing Oracle Quick Card factory');
+  assert.equal(card.featureUrl,video.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.match(card.details,/not independently verified/i);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
