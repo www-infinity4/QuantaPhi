@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE} from '../youtube-creator-mixed-core.mjs';
+import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE, FAMOUS_MOMMY_SOURCE, MAXINE_SOURCE} from '../youtube-creator-mixed-core.mjs';
 import {parseCreatorUploads, creatorUploadsApi} from '../workers/quantaphi-site/creator-uploads.mjs';
 import {findSourceCard, isPublicSourceCard, validSourceCard} from '../source-quick-cards.mjs';
 import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
@@ -10,7 +10,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','landing']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','landing','famousmommy','maxine']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -138,4 +138,36 @@ test('LANDing Autism publisher has a standalone Public/Media full-channel Quick 
  assert.match(ui,/Full channel/);
  assert.match(ui,/Load more videos/);
  assert.ok(ui.includes('youtube-nocookie.com/embed'));
+});
+
+
+test('owner videos produce independent verified original-channel Quick Cards without assuming historical archive completeness',()=>{
+ for(const row of [
+  {key:'famousmommy',id:'famous-mommy-youtube',name:'The Famous Mommy',channelId:'UCLE2maZ8nLeHMNXihYnd4lg',profile:'https://www.youtube.com/@TheFamousMommy',video:'fivLE0tSUV8',card:FAMOUS_MOMMY_SOURCE},
+  {key:'maxine',id:'maxine-youtube',name:'Maxine',channelId:'UCHD-KqiMq1aJjHiYZso-2_w',profile:'https://www.youtube.com/@Maxineeg',video:'bCyafMNRVOE',card:MAXINE_SOURCE}
+ ]){
+  const channel=CREATOR_CHANNELS.find(c=>c.key===row.key);
+  assert.ok(channel,row.key);
+  assert.equal(channel.name,row.name);
+  assert.equal(channel.channelId,row.channelId);
+  assert.equal(channel.url,row.profile);
+  assert.ok(channel.seed.length>=2);
+  assert.equal(channel.seed[0].videoId,row.video);
+  assert.equal(new Set(channel.seed.map(v=>v.videoId)).size,channel.seed.length);
+  assert.ok(channel.seed.every(v=>v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+  const card=findSourceCard(row.id);
+  assert.equal(card?.id,row.card.id);
+  assert.equal(card?.initialCreatorChannel,row.key);
+  assert.equal(card?.official,row.profile);
+  assert.equal(card?.youtubeMixedFeed,true);
+  assert.ok(isPublicSourceCard(card));
+  assert.ok(validSourceCard(card));
+  assert.equal(departmentFor(card),'media');
+  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ }
+ const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.ok(ui.includes('dedicatedChannel.seed.length'),'Each channel must display its own actual indexed count');
+ assert.ok(ui.includes('youtube-nocookie.com/embed'));
+ assert.match(ui,/Stop playback/);
+ assert.doesNotMatch(ui,/autoplay=1/);
 });
