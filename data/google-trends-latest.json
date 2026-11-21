@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T05:31:11.597378Z",
+  "checked_at": "2026-11-21T06:01:31.582056Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "arnold schwarzenegger",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T05:10:00Z",
-      "related_news_urls": [
-        "https://www.broadwayworld.com/bwwtv/article/Chris-Pratt-Recalls-Lying-to-Jimmy-Buffett-and-Arnolds-Santa-Portrait-20261119",
-        "https://www.whiskeyriff.com/2026/11/20/the-terminal-list-star-chris-pratt-proved-his-90s-country-cred-to-garth-brooks-failed-jimmy-buffett/",
-        "https://www.momtastic.com/celebrities/827276-arnold-schwarzenegger-grandkids-dad-chris-pratt-santa-christmas-portrait/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQlt0MmGqxUK1f9H-NAj99oeogTrzipvoSwSihDaWsMICVwnvfAqSF6KF6Bco",
-      "image_credit": "BroadwayWorld",
-      "news": [
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/Chris-Pratt-Recalls-Lying-to-Jimmy-Buffett-and-Arnolds-Santa-Portrait-20261119",
-          "title": "Chris Pratt Recalls Lying to Jimmy Buffett and Arnold's Santa Portrait",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQlt0MmGqxUK1f9H-NAj99oeogTrzipvoSwSihDaWsMICVwnvfAqSF6KF6Bco"
-        },
-        {
-          "url": "https://www.whiskeyriff.com/2026/11/20/the-terminal-list-star-chris-pratt-proved-his-90s-country-cred-to-garth-brooks-failed-jimmy-buffett/",
-          "title": "‘The Terminal List’ Star, Chris Pratt, Proved His ’90s Country Cred to Garth Brooks (& Failed Jimmy Buffett)",
-          "publisher": "Whiskey Riff",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSV9KNFiSl4x5iVsZRrrBlTY-oC12u-mCP2Rb1O9aEvtt5OsSzoCfVK5tok-Ow"
-        },
-        {
-          "url": "https://www.momtastic.com/celebrities/827276-arnold-schwarzenegger-grandkids-dad-chris-pratt-santa-christmas-portrait/",
-          "title": "Arnold Schwarzenegger Finds a Very Personal Way To Play Santa for Grandkids",
-          "publisher": "Momtastic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF8duAerj8JGpqgNjr4yxGadkSpCW2OI8MhJIs1T3lXaqVs-kxeaFZPGBZsW8"
-        }
-      ]
-    },
-    {
-      "query": "taylor kinney",
+      "query": "general hospital",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T05:10:00Z",
+      "published_at": "2026-11-21T05:40:00Z",
       "related_news_urls": [
-        "https://www.nbc.com/nbc-insider/what-happened-to-severide-burke-chicago-fire",
-        "https://www.imdb.com/news/ni66118828/?ref_=nmnw_art_perm",
-        "https://onechicagocenter.com/chicago-fire-sidelined-best-character-but-show-good-reason"
+        "https://www.yahoo.com/entertainment/tv/articles/why-sonny-may-not-behind-191555543.html",
+        "https://www.soapoperadigest.com/content/general-hospital-recap-everyones-coming-for-sonny-and-judes-secret-accomplice-is-revealed/",
+        "https://daytimeconfidential.com/2026/11/19/perkies-observations-bullets-fly-at-the-piers-on-general-hospital"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyOeZH1ri_xlxumKMcEoj2_sovuHDQkwpW6YRmYyk1Soggy6HqT5eT7rG92k",
-      "image_credit": "NBC TV",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEWhtCpTVZ930g5KVFI9bwC2dSUT80X5x9MUMv6aEB1CKdr9YKkmZruvQEg1E",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.nbc.com/nbc-insider/what-happened-to-severide-burke-chicago-fire",
-          "title": "What Happened to Severide and Burke on Chicago Fire? Why They're Missing",
-          "publisher": "NBC TV",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/why-sonny-may-not-behind-191555543.html",
+          "title": "Why Sonny May Not Be Behind the Pier Shooting on GH",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyOeZH1ri_xlxumKMcEoj2_sovuHDQkwpW6YRmYyk1Soggy6HqT5eT7rG92k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEWhtCpTVZ930g5KVFI9bwC2dSUT80X5x9MUMv6aEB1CKdr9YKkmZruvQEg1E"
         },
         {
-          "url": "https://www.imdb.com/news/ni66118828/?ref_=nmnw_art_perm",
-          "title": "Is Kelly Severide Leaving ‘Chicago Fire’? What Happened to Taylor Kinney’s Character",
-          "publisher": "IMDb",
+          "url": "https://www.soapoperadigest.com/content/general-hospital-recap-everyones-coming-for-sonny-and-judes-secret-accomplice-is-revealed/",
+          "title": "General Hospital Recap: Everyone’s Coming for Sonny and Jude’s Secret Accomplice is Revealed!",
+          "publisher": "Soap Opera Digest",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT46Svirgwg9VmA8edDDI15QT_-XvC6eiqtAJLw9uu93vI94wgDVigXUi9LQpw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD947ABJlLkh2OCqhKb2FaKNv54FsAzAOTL7nlUACSDmj5t2JnORTENBcrewQ"
         },
         {
-          "url": "https://onechicagocenter.com/chicago-fire-sidelined-best-character-but-show-good-reason",
-          "title": "Chicago Fire sidelined its best character, but at least the show had a good reason",
-          "publisher": "One Chicago Center",
+          "url": "https://daytimeconfidential.com/2026/11/19/perkies-observations-bullets-fly-at-the-piers-on-general-hospital",
+          "title": "General Hospital recap: Bullets Fly at The Piers!",
+          "publisher": "Daytime Confidential",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_eUAoOoohiNKsOR5ak4Txy3X-k2i9IY2YGEfZU6MxMJKHDCGPRsAM-3i2ucA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHmk1uBB0Q-1llzVTC_BWCnlhQSkKVvEfRucWvYu4DpVXIUknK_ZTgN3Jbztc"
         }
       ]
     },
     {
-      "query": "donnie gta 6",
+      "query": "where is the strip club in gta6",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T05:10:00Z",
+      "published_at": "2026-11-21T05:40:00Z",
       "related_news_urls": [
-        "https://www.polygon.com/gta-6-drug-system-mechanics-coke-npc-generation-rockstar/",
-        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
-        "https://insider-gaming.com/how-to-take-drugs-in-gta-6/"
+        "https://escorenews.com/en/article/82818-how-to-find-strip-clubs-in-gta-6-all-locations-is-there-sex-and-nudity-and-how-to-get-a-private-dance",
+        "https://www.elconstitucional.es/en/ecm/find/the-heel-of-gta-6-what-it-is-and-why-it-has-become-one-of-the-most-sought-after-places-in-the-video-game_10403_102.html",
+        "https://bsinews.id/en/gta-six-strip-clubs-locations"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOmBVpC4ZXllYGhmZo8KkKGklQeGptFrRLLkaoCmm6VFVUwwfhz6hA8-v5dzo",
-      "image_credit": "Polygon.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuIXonaCK9O7dw23qGrpWfzjktIs4lsP9Mgou82Ta4bQcvfM3e-F_yOBNneaU",
+      "image_credit": "escorenews.com",
       "news": [
         {
-          "url": "https://www.polygon.com/gta-6-drug-system-mechanics-coke-npc-generation-rockstar/",
-          "title": "GTA 6's Hidden Drug System Is Surprisingly Deep",
-          "publisher": "Polygon.com",
+          "url": "https://escorenews.com/en/article/82818-how-to-find-strip-clubs-in-gta-6-all-locations-is-there-sex-and-nudity-and-how-to-get-a-private-dance",
+          "title": "How to find strip clubs in GTA 6: all locations, is there sex and nudity, and how to get a private dance",
+          "publisher": "escorenews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOmBVpC4ZXllYGhmZo8KkKGklQeGptFrRLLkaoCmm6VFVUwwfhz6hA8-v5dzo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuIXonaCK9O7dw23qGrpWfzjktIs4lsP9Mgou82Ta4bQcvfM3e-F_yOBNneaU"
         },
         {
-          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
-          "title": "Can you save Donnie in GTA 6?",
-          "publisher": "GamesRadar+",
+          "url": "https://www.elconstitucional.es/en/ecm/find/the-heel-of-gta-6-what-it-is-and-why-it-has-become-one-of-the-most-sought-after-places-in-the-video-game_10403_102.html",
+          "title": "The Heel of GTA 6: what it is and why it has become one of the most sought-after places in the video game",
+          "publisher": "El Constitucional",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz8CZyJwl1yKGyC826MzGVppS3BZSFXD01d8e4CSgjqocpXn-5CjKforgJsso"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5xuloOXdl0UuTy4aN_kue2Zn0VPyGzuvJyyoiSYnGqvMFObYiYaCTgvAZec0"
         },
         {
-          "url": "https://insider-gaming.com/how-to-take-drugs-in-gta-6/",
-          "title": "How to Take Drugs in Grand Theft Auto 6? Where to Find Drugs, Explained",
-          "publisher": "Insider Gaming",
+          "url": "https://bsinews.id/en/gta-six-strip-clubs-locations",
+          "title": "GTA 6 Features Three Strip Clubs Across Vice City and Leonida",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMWOASf51TM5WgojO61zb3bDIQqnekzbLpfSazw_kfZo7rPx1aK4M95M0vUGI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuoHgOSQ4qzfM-pYoN8icyK2fv5wR_cINdldibuSfqnw7D_meKefCMe_bnSmo"
         }
       ]
     },
     {
-      "query": "emirates",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:10:00Z",
-      "related_news_urls": [
-        "https://gulfnews.com/business/aviation/emirates-opens-new-first-class-lounge-at-dubai-airport-as-dh400-million-makeover-begins-1.500753456",
-        "https://livefromalounge.com/emirates-commits-to-a-new-era-of-first-class-lounges-with-aed-400-million-commitment/",
-        "https://www.voyages-d-affaires.com/en/emirates-first-class-lounge-at-dubai-airport/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhX9kJei_N2ppqtgBqc_-Ji2Kxi01GwxJ9YR2LKCDF0W8ktgaiv_187PVyvxw",
-      "image_credit": "Gulf News",
-      "news": [
-        {
-          "url": "https://gulfnews.com/business/aviation/emirates-opens-new-first-class-lounge-at-dubai-airport-as-dh400-million-makeover-begins-1.500753456",
-          "title": "Emirates opens new First Class Lounge at Dubai Airport as Dh400 million makeover begins",
-          "publisher": "Gulf News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhX9kJei_N2ppqtgBqc_-Ji2Kxi01GwxJ9YR2LKCDF0W8ktgaiv_187PVyvxw"
-        },
-        {
-          "url": "https://livefromalounge.com/emirates-commits-to-a-new-era-of-first-class-lounges-with-aed-400-million-commitment/",
-          "title": "Emirates commits to a new era of First Class Lounges with AED 400 million commitment",
-          "publisher": "Live From A Lounge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1y7m4fJlTzfdomV9vNJdP-PPLz-o-lCMd4b5TNeY5F_k8HZ-ZjWWWOB0jrJA"
-        },
-        {
-          "url": "https://www.voyages-d-affaires.com/en/emirates-first-class-lounge-at-dubai-airport/",
-          "title": "Emirates opens a temporary Première Classe lounge at Dubai Airport",
-          "publisher": "Voyages d'affaires",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4QDmdPuNR6-yUp12wvBDUZWKDUb3WmaTUw2p0J5-4LM7yY4BMohHKt6Fjsw8"
-        }
-      ]
-    },
-    {
-      "query": "jessica chastain",
+      "query": "ziaire williams",
       "approx_searches": "1000+",
-      "published_at": "2026-11-21T05:00:00Z",
+      "published_at": "2026-11-21T05:30:00Z",
       "related_news_urls": [
-        "https://www.netflix.com/tudum/articles/top-10-november-9-2026",
-        "https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f",
-        "https://collider.com/netflix-thriller-heartland-streaming-success-november-2026/"
+        "https://www.espn.com/fantasy/basketball/story/_/id/50541974/fantasy-basketball-tips-nba-betting-picks-today",
+        "https://establishtherun.com/nba-matchups-november-20-3/",
+        "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7IVhf1A3iOPMWOZw4YnX5m4YFqowJyMcMA8cSynqPD5rjztz7Zy1UC3v7MRM",
-      "image_credit": "Netflix",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxxsc5_sqLqgdpEjCMMWpNV8Dv8yVAUkp8zoIba5THtCYor2czlWbVMIJh1n4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.netflix.com/tudum/articles/top-10-november-9-2026",
-          "title": "Heartland Hunts Down the No. 1 Spot in This Week’s Top 10",
-          "publisher": "Netflix",
+          "url": "https://www.espn.com/fantasy/basketball/story/_/id/50541974/fantasy-basketball-tips-nba-betting-picks-today",
+          "title": "Fantasy adds, NBA bets to make for Friday: Jazz keep red-hot Bamba in lineup",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7IVhf1A3iOPMWOZw4YnX5m4YFqowJyMcMA8cSynqPD5rjztz7Zy1UC3v7MRM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxxsc5_sqLqgdpEjCMMWpNV8Dv8yVAUkp8zoIba5THtCYor2czlWbVMIJh1n4"
         },
         {
-          "url": "https://www.wsj.com/arts-culture/television/heartland-review-jessica-chastains-country-music-mystery-10b5e33f",
-          "title": "‘Heartland’ Review: Jessica Chastain’s Country-Music Mystery",
+          "url": "https://establishtherun.com/nba-matchups-november-20-3/",
+          "title": "NBA Matchups: November 20",
+          "publisher": "Establish The Run",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR35E43TRJ07TNmbx4rHbMhojEqWf8bg_PkZcKo9Yi5W3tDBzBpbdu-DrHG_e0"
+        },
+        {
+          "url": "https://www.covers.com/nba/moneyline-predictions-picks-nov-20-2026",
+          "title": "NBA Predictions and Moneyline Picks Today: Friday, Nov. 20",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDgXV7yCVe8cxhIIgr3Ht8of2UqXXUIlN6IpZIVwYYwsy-iLFRGsr0wroYZ7U"
+        }
+      ]
+    },
+    {
+      "query": "aaron gordon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T05:30:00Z",
+      "related_news_urls": [
+        "https://www.denverpost.com/2026/11/19/nuggets-celtics-defense-gordon-jokic/",
+        "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/eYWBwYv00OpM/",
+        "https://demokratis.co.id/en/aaron-gordon-shooting-slump"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSskfpQlIBFhJURV6OTRHYa-rQdFHn_f8yG4r8R6oqntSYBTaSfQ606lW-VdZQ",
+      "image_credit": "The Denver Post",
+      "news": [
+        {
+          "url": "https://www.denverpost.com/2026/11/19/nuggets-celtics-defense-gordon-jokic/",
+          "title": "Renck: Nuggets can’t win like Broncos with their defense. Aaron Gordon needs to start scoring.",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSskfpQlIBFhJURV6OTRHYa-rQdFHn_f8yG4r8R6oqntSYBTaSfQ606lW-VdZQ"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/eYWBwYv00OpM/",
+          "title": "What's wrong with Aaron Gordon?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgWXMishh5wHTHYBVrWqVpRDpVbh0XXboWoXol-tFXZVJrKusJ-eZRexFCJdc"
+        },
+        {
+          "url": "https://demokratis.co.id/en/aaron-gordon-shooting-slump",
+          "title": "Aaron Gordon's Shooting Slump Challenges Denver Nuggets",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHu7lEx6kV3264iteXfVhUwUpTGhoyCwXsAJ19pyXx-820wp1JvQxEDqskUzg"
+        }
+      ]
+    },
+    {
+      "query": "cameron johnson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T05:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/nuggets-cameron-johnson-quiet-in-victory/",
+        "https://www.espn.com/video/clip/_/id/50493940/cameron-johnson-rocks-rim-powerful-flush",
+        "https://www.rotowire.com/basketball/headlines/cameron-johnson-news-quiet-in-victory-539998"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KxqHcBFE_i0Lb9vhHkqHciap72MZaKIy3BJOx72jnspw9tehCKhCDz1YjDM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/nuggets-cameron-johnson-quiet-in-victory/",
+          "title": "Nuggets' Cameron Johnson: Quiet in victory",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5KxqHcBFE_i0Lb9vhHkqHciap72MZaKIy3BJOx72jnspw9tehCKhCDz1YjDM"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50493940/cameron-johnson-rocks-rim-powerful-flush",
+          "title": "Cameron Johnson rocks the rim with powerful flush",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAJstazetEl5m9NilvwXtDR6TSaX8ro6XHm838YibpzrWA3QkkdJegV_ZDE7s"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/cameron-johnson-news-quiet-in-victory-539998",
+          "title": "Cameron Johnson News: Quiet in victory",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_cN1DS7XoFvMvclnHEoXUWucFAPaqYeFGgl2og2xY-nMJwV9mudurkGsnh4"
+        }
+      ]
+    },
+    {
+      "query": "biggest black friday deals",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-21T05:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-20",
+        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+        "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIsEPOqmMSYONoI0wTC7wPWMXt8o2i61InZxXxzvg54CjB_Hr0O55kW1NQOZU",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-20",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIsEPOqmMSYONoI0wTC7wPWMXt8o2i61InZxXxzvg54CjB_Hr0O55kW1NQOZU"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+        },
+        {
+          "url": "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463",
+          "title": "Black Friday Holiday Deals, Approved by Executive Editor Adrianna Brach",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhDSA6g8daLTb90uEjPhiS14nRHa8heG2l_zT5VtGGYlq95ZwCHzk5Lq3w3gU"
+        }
+      ]
+    },
+    {
+      "query": "kevin durant",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T05:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/real-estate/luxury-homes/kevin-durant-paradise-valley-arizona-home-0053e726",
+        "https://robbreport.com/shelter/celebrity-homes/gallery/kevin-durant-house-in-photos-1238846785/",
+        "https://www.bizjournals.com/phoenix/news/2026/11/19/kevin-durant-lists-u-shaped-paradise-valley-estate.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNJITOmm3_i_VUb0w3HNA3cz8qA8jAp9UjohBlxdIjeVItvqdD-DyQ7hAAwFg",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/real-estate/luxury-homes/kevin-durant-paradise-valley-arizona-home-0053e726",
+          "title": "Exclusive | Kevin Durant Lists U-Shaped Arizona House for $13.9 Million",
           "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiIZ5S6YsRnLAeGQnTyAkH0aMTgi783udA8qAcO05PMJJib6KEpgmG1fQX-VA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNJITOmm3_i_VUb0w3HNA3cz8qA8jAp9UjohBlxdIjeVItvqdD-DyQ7hAAwFg"
         },
         {
-          "url": "https://collider.com/netflix-thriller-heartland-streaming-success-november-2026/",
-          "title": "Netflix’s New ‘Yellowstone’ Replacement Is Officially a No. 1 Streaming Hit",
-          "publisher": "Collider",
+          "url": "https://robbreport.com/shelter/celebrity-homes/gallery/kevin-durant-house-in-photos-1238846785/",
+          "title": "Kevin Durant’s Arizona House in Photos",
+          "publisher": "Robb Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXf9O4LURUkhfgVOUi2ECMOYaIhP3cFd3lE6V-od9dAtzyTbH3MELVOYyAQ7E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdNVTFvMe8XB6Wa1B-BSrFLj-djwZlq2GAz1bEmd4hYT-mVGa87BSK8p7u5cY"
+        },
+        {
+          "url": "https://www.bizjournals.com/phoenix/news/2026/11/19/kevin-durant-lists-u-shaped-paradise-valley-estate.html",
+          "title": "NBA star Kevin Durant lists Paradise Valley estate for $13.9M after agent swap",
+          "publisher": "The Business Journals",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0YYe77xtU6M2d74xQYjIx0IZMnGrmupyY79SW4Mx10Fnamb6dhbDrWIaYweI"
         }
       ]
     },
     {
-      "query": "tourist trap gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:00:00Z",
+      "query": "darius acuff jr.",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T05:20:00Z",
       "related_news_urls": [
-        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-tourist-trap-mission-walkthrough",
-        "https://www.videogameschronicle.com/guide/gta-6-tourist-trap-mission-walkthrough/",
-        "https://www.eurogamer.net/gta-6-tourist-trap-walkthrough"
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/darius-acuff-with-18-and-12-assists-in-loss",
+        "https://www.sbnation.com/nba/1136952/darius-acuff-rookie-scouting-report-stats-good-bad-breakdown",
+        "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A",
-      "image_credit": "Mobalytics",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-tourist-trap-mission-walkthrough",
-          "title": "'Tourist Trap' Mission Walkthrough Guide - GTA 6",
-          "publisher": "Mobalytics",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/darius-acuff-with-18-and-12-assists-in-loss",
+          "title": "Darius Acuff with 18 and 12 assists in loss",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8"
         },
         {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-tourist-trap-mission-walkthrough/",
-          "title": "GTA 6 Tourist Trap Mission Walkthrough",
-          "publisher": "Video Games Chronicle",
+          "url": "https://www.sbnation.com/nba/1136952/darius-acuff-rookie-scouting-report-stats-good-bad-breakdown",
+          "title": "Darius Acuff is showing flashes of NBA stardom, but he has one massive problem",
+          "publisher": "SB Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv8q658zKXig81NSMJVY0MSSsWGE4Ukg-5dFPLvqCJFoRvdNjM7jzgDMv6_sk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLMkoIYuDAReo-IaF3f-V0S82BnK_eZFyDptOJrIaEFvwkWZH1lGj8dBl0NE"
         },
         {
-          "url": "https://www.eurogamer.net/gta-6-tourist-trap-walkthrough",
-          "title": "GTA 6 Tourist Trap walkthrough",
-          "publisher": "Eurogamer.net",
+          "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
+          "title": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXNBrJjVf5bFhFw5d09WRiq4PdAgu6tNxpCIZfYIY3LmjPfFWrnETUEIUdZk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7qjdO55A00uP1YSGqohKfY3Y586Rgo8E8Dct8fGL7kc1LPuYstV3K1zgY10"
         }
       ]
     },
     {
-      "query": "andrew tate",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T05:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
-        "https://thoughtcatalog.com/jeremy-london/2026/11/lauren-southern-says-her-girl-against-feminism-image-made-it-feel-impossible-to-speak-after-she-alleges-andrew-tate-raped-her/",
-        "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
-          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM"
-        },
-        {
-          "url": "https://thoughtcatalog.com/jeremy-london/2026/11/lauren-southern-says-her-girl-against-feminism-image-made-it-feel-impossible-to-speak-after-she-alleges-andrew-tate-raped-her/",
-          "title": "Lauren Southern Says Her ‘Girl Against Feminism’ Image Made It Feel Impossible to Speak After She Alleges Andrew Tate Raped Her",
-          "publisher": "Thought Catalog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzJfeiZK0w9s08YLDwqAvztM60fE0trsd4nzjNjkO0Ha4ev9e6OrEdr_CaUrA"
-        },
-        {
-          "url": "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
-          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
-        }
-      ]
-    },
-    {
-      "query": "sacramento kings vs lakers timeline",
+      "query": "fred vanvleet",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T04:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "jamal murray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T04:50:00Z",
+      "published_at": "2026-11-21T05:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jamal-murray-keeping-nuggets-title-190004791.html",
-        "https://bvmsports.com/2026/11/13/the-denver-nuggets-best-player-right-now-is-not-nikola-jokic/",
-        "https://www.denvergazette.com/2026/11/18/jamal-murray-nikola-jokics-unique-spot-in-hoop-history-nba-insider/"
+        "https://www.espn.com/nba/story/_/id/50524821/nba-houston-rockets-fred-vanvleet-injury-comeback",
+        "https://www.espnlacrosse.com/2026/11/20/how-a-season-without-their-admiral-showed-the-rockets-what-they-were-missing/",
+        "https://www.espn.com/video/clip/_/id/50543371/fred-vanvleet-brings-sense-calm-rockets"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJTAbxrzLof8Yz2JfnoNvvGjgoNKaxJFr-4eL3MrKYhtTCP2TELkUVl7wOUzU",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDX_ieHEYwMLxY7Phbcxf0UTVdn5caVgsoqZ0oGYeG4ZxCPdDlUYzKin6EHfw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jamal-murray-keeping-nuggets-title-190004791.html",
-          "title": "Jamal Murray is keeping the Nuggets' title hopes alive but he needs more help",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/nba/story/_/id/50524821/nba-houston-rockets-fred-vanvleet-injury-comeback",
+          "title": "Fred VanVleet's 'fresh slate' is driving Houston's early season success",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJTAbxrzLof8Yz2JfnoNvvGjgoNKaxJFr-4eL3MrKYhtTCP2TELkUVl7wOUzU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDX_ieHEYwMLxY7Phbcxf0UTVdn5caVgsoqZ0oGYeG4ZxCPdDlUYzKin6EHfw"
         },
         {
-          "url": "https://bvmsports.com/2026/11/13/the-denver-nuggets-best-player-right-now-is-not-nikola-jokic/",
-          "title": "The Denver Nuggets best player right now is not Nikola Jokic",
-          "publisher": "BVM Sports",
+          "url": "https://www.espnlacrosse.com/2026/11/20/how-a-season-without-their-admiral-showed-the-rockets-what-they-were-missing/",
+          "title": "How a season without their ‘admiral’ showed the Rockets what they were missing",
+          "publisher": "ESPN La Crosse 105.5",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9Iiwsc-Pcg45asfTDkG1PvCA2in5J8MpsB0--NBSqpsaKAFec9OyKIfjB1yE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThXIoYphlPwr8mvvCBMba8Ce2I-aDNVt5k7uTsJfYlh3_5G-hwxPQsPGKeDc"
         },
         {
-          "url": "https://www.denvergazette.com/2026/11/18/jamal-murray-nikola-jokics-unique-spot-in-hoop-history-nba-insider/",
-          "title": "Jamal Murray, Nikola Jokic’s unique spot in hoop history | NBA Insider",
-          "publisher": "Denver Gazette",
+          "url": "https://www.espn.com/video/clip/_/id/50543371/fred-vanvleet-brings-sense-calm-rockets",
+          "title": "Michael C. Wright: Fred VanVleet brings 'sense of calm' to Rockets",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkyhCo0rIBHsCjYT8uAcl-xeqtqbf9qJaV5BgdHIEyLdEpcwWwF_RzellyZ-Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS61fzZRLrxynGLF_FLmB26dPMmCZQdGrUqGVilE1ZdDIZCRdd9VqVChrm8LJc"
         }
       ]
     },
     {
-      "query": "colin farrell",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T04:50:00Z",
+      "query": "gilberto mora",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T05:20:00Z",
       "related_news_urls": [
-        "https://www.prnewswire.com/news-releases/eddie-vedder-hozier-tom-holland-and-colin-farrell-help-raise-over-3-million-for-eb-research-partnership-at-new-york-gala-302947215.html",
-        "https://www.citybiz.co/article/937112/eddie-vedder-hozier-and-celebrity-supporters-help-raise-over-3-million-for-eb-research/",
-        "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week"
+        "https://www.flashscore.com/news/flashscore-sources-mora-could-shun-giants-for-ajax-or-dortmund-as-january-transfer-looms/jV4tD2bm/",
+        "https://onefootball.com/en/news/xolos-seek-to-keep-gilberto-mora-six-more-months-despite-european-interest-43803493",
+        "https://www.soyfutbol.com/en/leagues/sebastian-abreu-applauds-gilberto-moras-rise-and-international-ambitions-with-xolos-20261120-0034.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxYjmywDUZyCEpFz_fXH2x2JaaAJ_X_pACm8G3yulLxU1F4F2LkvGNLca1clg",
-      "image_credit": "PR Newswire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenJEyU7IVYXyDKrIVY8sxO9LujbghmBi1htyN6A1YkOXdPzK2EyNGAvhZd8c",
+      "image_credit": "Flashscore.com",
       "news": [
         {
-          "url": "https://www.prnewswire.com/news-releases/eddie-vedder-hozier-tom-holland-and-colin-farrell-help-raise-over-3-million-for-eb-research-partnership-at-new-york-gala-302947215.html",
-          "title": "Eddie Vedder, Hozier, Tom Holland and Colin Farrell Help Raise Over $3 Million for EB Research Partnership at New York Gala",
-          "publisher": "PR Newswire",
+          "url": "https://www.flashscore.com/news/flashscore-sources-mora-could-shun-giants-for-ajax-or-dortmund-as-january-transfer-looms/jV4tD2bm/",
+          "title": "Ajax and Dortmund in with a chance of signing Mexican sensation Mora",
+          "publisher": "Flashscore.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxYjmywDUZyCEpFz_fXH2x2JaaAJ_X_pACm8G3yulLxU1F4F2LkvGNLca1clg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSenJEyU7IVYXyDKrIVY8sxO9LujbghmBi1htyN6A1YkOXdPzK2EyNGAvhZd8c"
         },
         {
-          "url": "https://www.citybiz.co/article/937112/eddie-vedder-hozier-and-celebrity-supporters-help-raise-over-3-million-for-eb-research/",
-          "title": "Eddie Vedder, Hozier and Celebrity Supporters Help Raise Over $3 Million for EB Research",
-          "publisher": "citybiz",
+          "url": "https://onefootball.com/en/news/xolos-seek-to-keep-gilberto-mora-six-more-months-despite-european-interest-43803493",
+          "title": "Xolos seek to keep Gilberto Mora six more months despite European interest",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRo1z-XNZ-Ex30YxzBuEHWIZGLy8Pcy8p-ItuQaL1frKwdUpbVsgwyXLU6ZIz4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl2VBH-EfH2hFKW2yUGAYw1JHwuxBWyWe6GumOMqNX6we_JkVRfi-sn8HP1mo"
         },
         {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/20/the-seven-best-films-to-watch-on-tv-this-week",
-          "title": "The Slightest Touch to California Schemin’: the seven best films to watch on TV this week",
-          "publisher": "The Guardian",
+          "url": "https://www.soyfutbol.com/en/leagues/sebastian-abreu-applauds-gilberto-moras-rise-and-international-ambitions-with-xolos-20261120-0034.html",
+          "title": "Sebastián Abreu Applauds Gilberto Mora’s Rise and International Ambitions with Xolos",
+          "publisher": "Soy Futbol",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm-nNTOFmW9SKiEWCP35y4_1GR2tSpa-B-yDe7fYd4KOHi-Ij1WIXNpC4z-r4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDxITJrXpEXdGrNfDdNYm5BHF4HYkg9A9ZOwu9w0-DxqIHEcDJBD9yuVbfio"
         }
       ]
     }
