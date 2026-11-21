@@ -100,3 +100,18 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Separate predecessor acceptance:** [PR #2007](https://github.com/www-infinity4/QuantaPhi/pull/2007) and [PR #2011](https://github.com/www-infinity4/QuantaPhi/pull/2011) were merged as observed on 2026-11-20. Public Cloudflare GET API returned 21 family-only D1 rows and live source detail rendered 21; this proves the restricted family D1 read path, **not** a full YouTube archive or physical Android.
 - **Boundaries:** full AbbeCAdventures archive, Shorts, Community posts, other YouTube channels, account authorization and ongoing provider-compliant ingestion remain incomplete. Publisher checks and age/content boundary checks are necessary before importing other shared links. No owner token or consent scope was expanded.
 - **Next executable action:** inspect PR #2019's exact-head CI and browser results; fix failing checks on this branch, then guarded permitted merge and live QuantaPhi/Android readback. Preserve open issue #1603 until broader video feed acceptance.
+
+
+## Session 6 — Milk Mamas Nest seven-video Family Quick Card · 2026-11-21
+
+- Owner source: https://youtu.be/Hft1qIEnuuY?is=Zcop20Bs-r0bcKr9
+- Canonical issue: #1603, existing Family & Parenting TV/player tools reused; no duplicate issue.
+- Publisher observed: Milk Mamas Nest, https://www.youtube.com/@MilkMamasNest3. Public browser inspection identified seven videos. Public watch-page metadata was independently confirmed for the supplied video and five related entries; the remaining link was identified through the channel's Videos tab.
+- Coverage: seven observed video title/URL pairs only, no official publisher playlist found. Future upload completeness or exact publication dates are not asserted.
+- Boundary: nonsexual family education only; no 21+ ads, rehost, account access, paywall, unauthorized publishing or substituted medical advice.
+- Source files: milk-mamas-catalog.mjs, family-parenting-tv-card.mjs, source-quick-cards.mjs, test/milk-mamas-quick-card.test.mjs, .github/workflows/creator-post-cards.yml.
+- Features: official YouTube opt-in player, seven-episode selector, search, Previous/Next navigation and original channel link, one active iframe.
+- Working branch: feat/milk-mamas-nest-episodes-1603-20261121 from main; no shared runner lease issued or overridden in this connector session.
+- Evidence: GitHub commits on branch; standalone local TDD red then two passing tests on new module before integration. Exact-head GitHub CI, browser/Android playback, PR review, merge, deployment and production acceptance have separate receipts pending.
+- State: source_staged. Estimated 4/8 acceptance tracks complete (source, observed catalog, UI integration, regression/CI wiring). Remaining: CI, review/merge, deploy, Android/browser acceptance.
+- Next executable action: inspect exact-head PR CI, fix failing checks on same branch, review then permitted merge and deployed Android test.
