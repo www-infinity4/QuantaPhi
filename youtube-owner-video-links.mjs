@@ -13,6 +13,11 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=UPFgnpkm7MQ',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media'
+},{
+ videoId:'QR_c5m1RLtk',title:'YouTube video QR_c5m1RLtk (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=QR_c5m1RLtk',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ sourceMetadataVerified:false,contentBoundary:'general-media'
 }];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
@@ -21,6 +26,7 @@ export function validateOwnerYouTubeLink(row){
  if(typeof row.title!=='string'||row.title.length<1||row.title.length>150||
     row.title!==row.title.trim()||/[<>\u0000-\u001f]/.test(row.title))return false;
  if(row.publishedAt!==null||row.publisherVerified!==false||row.contentBoundary!=='general-media')return false;
+ if(row.sourceMetadataVerified!==undefined&&row.sourceMetadataVerified!==false)return false;
  return /^\d{4}-\d\d-\d\d$/.test(row.observedAt||'')&&
   Number.isFinite(Date.parse(row.observedAt+'T00:00:00Z'));
 }
@@ -36,5 +42,7 @@ export const REVIEWED_OWNER_VIDEO_CARDS=Object.freeze(REVIEWED_OWNER_VIDEO_LINKS
  reviewedYouTubeVideoId:v.videoId,contentBoundary:'general-media',
  observedAt:v.observedAt,publishedAt:null,publisherVerified:false,
  focus:'Original YouTube link and optional provider-hosted playback only. The publisher and upload date have not been independently verified; do not present this as licensed, current/trending, family education, 21+ or an advertisement.',
- details:'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
+ details:v.sourceMetadataVerified===false
+  ? 'Owner-supplied YouTube link received on '+v.observedAt+'; video title, channel identity, publisher and embed availability are not independently verified. This entry is not a full channel import.'
+  : 'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
 })));
