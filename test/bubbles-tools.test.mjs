@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import worker,{chooseTool,isSourceReviewRequest,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak} from '../workers/bubbles-tools/worker.mjs';
+import worker,{chooseTool,isSourceReviewRequest,readPublicPage,parseHeadlines,reasoningFor,replyBudgetFor,isGenericBuildReply,hasUnverifiedActionClaim,hasModelToolLeak,contextualReadPlan,finishSearchReply} from '../workers/bubbles-tools/worker.mjs';
 test('source-generation instructions mentioning GitHub and README stay source generation',async()=>{
  const prompt='Provide the complete source document in detail for README.md. This is content generation. Explain this demo and index.html; describe GitHub Pages.';
  assert.equal(chooseTool(prompt),'oracle.chat');
@@ -345,4 +345,230 @@ test('signed Bubbles review treats HTML source links as inert data, not deployed
  assert.equal(modelCalls,1);
  assert.match(body.output,/approved/);
  assert.doesNotMatch(body.output,/html_http_404/);
+});
+
+test('site context resolves public repository reads and traffic without inventing write authority',()=>{
+ const origin='https://quantaphi.org';
+ assert.equal(contextualReadPlan('Read the repository',origin).repository,'www-infinity4/QuantaPhi');
+ assert.equal(contextualReadPlan('Read the QuabtaPhi repo',origin).repository,'www-infinity4/QuantaPhi');
+ assert.equal(contextualReadPlan('Check this site traffic count, it is not updating',origin).path,'index.html');
+ assert.equal(contextualReadPlan('Read README.md in this site',origin).tool,'github.read_file');
+ assert.equal(contextualReadPlan('Read other-owner/Other repo',origin).repository,'other-owner/Other');
+ assert.equal(contextualReadPlan('Read https://github.com/other-owner/Other repository',origin).repository,'other-owner/Other');
+ for(const q of ['Read owner1/Repo1 and owner2/Repo2 repositories','What is an antenna?','Do not read this site repository','Create a repository named Rain and read it','Read https://quantaphi.org/index.html','Provide a source document for README.md. This is content generation.'])assert.equal(contextualReadPlan(q,origin),null,q);
+ assert.equal(contextualReadPlan('Read this site repository','https://visitor.example'),null);
+});
+test('file findings timeout reports the real read without displaying tool scripts as action',async()=>{
+ const source=Response.json({ok:true,repository:'www-infinity4/QuantaPhi',path:'index.html',content:'<script>raw</script>',output:'File text: raw',receipt:{tool:'github.read_file',status:'complete',sourceReadVerified:true,repositoryActionsVerified:false}});
+ const r=await finishSearchReply(source,()=>new Promise(()=>{}),5,'Check this traffic counter');const result=await r.json();
+ assert.equal(result.answerStatus,'partial');assert.match(result.output,/I read www-infinity4\/QuantaPhi\/index.html/);assert.doesNotMatch(result.output,/<script>|File text:/);assert.equal(result.receipt.repositoryActionsVerified,false);
+ assert.equal(hasModelToolLeak('{"name":"github_read_repository","arguments":{"repository":"www-infinity4/QuantaPhi"}}'),true);
+});
+test('traffic complaint invokes the real source reader before reporting findings',async()=>{
+ const original=globalThis.fetch,calls=[];
+ globalThis.fetch=async url=>{calls.push(String(url));return Response.json({type:'file',path:'index.html',size:'<!-- Traffic measured by GA4 -->'.length,encoding:'base64',content:btoa('<!-- Traffic measured by GA4 -->')});};
+ try{
+  const request=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check this site traffic count, it is not updating',mcp:true})});
+  const response=await worker.fetch(request,{AI:{run:async()=>({response:'The source includes a GA4 measurement marker. That does not verify current traffic counts or prove a repair.'})}});
+  const result=await response.json();
+  assert.equal(calls.length,1);assert.match(calls[0],/repos\/www-infinity4\/QuantaPhi\/contents\/index.html$/);
+  assert.equal(result.receipt.sourceReadVerified,true);assert.equal(result.receipt.repositoryActionsVerified,false);assert.match(result.output,/GA4/);
+ }finally{globalThis.fetch=original;}
+});
+
+test('structured tool-call envelopes without execution do not become blank Bubbles replies',async()=>{
+ let calls=0;
+ const req=new Request('https://bubbles-tools.marvaseater.workers.dev/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Explain the difference between suggesting a search and actually running it.'})});
+ const res=await worker.fetch(req,{AI:{run:async()=>{
+  calls++;
+  return calls===1?{tool_calls:[{function:{name:'web_search',arguments:'{"query":"not executed"}'}}]}
+   :{response:'That was only a tool suggestion; this chat did not execute a search. A separate verified tool receipt is required.'};
+ }}});
+ const data=await res.json();
+ assert.equal(res.status,200);
+ assert.equal(calls,2);
+ assert.match(data.output,/did not execute a search/);
+ assert.equal(data.receipt.repositoryActionsVerified,false);
+ assert.doesNotMatch(data.output,/\{"query":"not executed"\}/);
+});
+
+test('failed live news tools return the observed failure rather than a fabricated model summary',async()=>{
+ const saved=globalThis.fetch;let aiCalls=0,sourceCalls=0;
+ globalThis.fetch=async()=>{sourceCalls++;return Response.json({error:'service unavailable'},{status:503})};
+ try{
+  const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check the latest news headlines'})});
+  const r=await worker.fetch(req,{AI:{run:async()=>{aiCalls++;return {response:'Five excellent current headlines were retrieved.'}}}});
+  const body=await r.json();
+  assert.ok(sourceCalls>=2);
+  assert.equal(body.receipt.tool,'news.headlines');
+  assert.equal(body.receipt.status,'failed');
+  assert.equal(aiCalls,0,'a failed tool is never passed through synthetic success narration');
+  assert.match(body.output,/could not retrieve current headlines/i);
+  assert.doesNotMatch(body.output,/five excellent/i);
+ }finally{globalThis.fetch=saved}
+});
+
+test('verified headlines survive a summary model outage with unchanged source receipts',async()=>{
+ const saved=globalThis.fetch;let aiCalls=0;
+ const date=new Date().toUTCString();
+ globalThis.fetch=async()=>new Response(
+  '<rss><channel><item><title>Verified headline from source</title><link>https://news.google.com/rss/articles/123</link><pubDate>'+date+'</pubDate><source>Publisher</source></item></channel></rss>',
+  {headers:{'Content-Type':'application/rss+xml'}});
+ try{
+  const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},body:JSON.stringify({request:'Check the latest news headlines'})});
+  const r=await worker.fetch(req,{AI:{run:async()=>{aiCalls++;throw Error('model is down')}}});
+  const body=await r.json();
+  assert.equal(body.receipt.tool,'news.headlines');
+  assert.equal(body.receipt.status,'complete');
+  assert.ok(aiCalls>0);
+  assert.match(body.output,/Verified headline from source/);
+  assert.equal(body.sources.length,1);
+  assert.equal(body.sources[0].title,'Verified headline from source');
+  assert.equal(r.status,200,'news adapter succeeded even if optional summarization failed');
+ }finally{globalThis.fetch=saved}
+});
+
+
+test('Bubbles finds existing tools from ordinary questions instead of falling back to an ungrounded chat answer',async()=>{
+ const questions=[
+  'Bubbles, what tools and skills do you have?',
+  'Which tools can you use to read GitHub?',
+  'Find your existing tools for searching the web',
+  'Where are your capabilities for browsing sources?',
+  'Show me your available tools'
+ ];
+ for(const question of questions){
+  assert.equal(chooseTool(question),'bubbles.capabilities',question);
+  let modelCalls=0;
+  const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+   body:JSON.stringify({request:question,mcp:true})}),{
+    AI:{run:async()=>{modelCalls++;throw Error('Capability discovery must not consume inference')}},
+    BRAIN:{fetch:async()=>{throw Error('Capability lookup must not submit a job')}}
+   });
+  assert.equal(response.status,200);
+  const body=await response.json();
+  assert.equal(body.ok,true);
+  assert.equal(body.receipt.tool,'bubbles.capabilities');
+  assert.equal(body.receipt.status,'complete');
+  assert.equal(body.receipt.repositoryActionsVerified,false);
+  assert.equal(body.receipt.minted,false);
+  assert.equal(modelCalls,0);
+  assert.ok(Array.isArray(body.capabilities)&&body.capabilities.length>=10);
+  assert.ok(body.capabilities.some(x=>x.id==='github.read_file'&&x.scope==='public-read'));
+  assert.ok(body.capabilities.some(x=>x.id==='weather.current'));
+  assert.ok(body.capabilities.some(x=>x.id==='robot_brain.owner_work'&&x.scope==='owner-only'&&x.executionVerified===false));
+  assert.match(body.output,/GitHub/i);
+  assert.match(body.output,/owner|authoriz/i);
+  assert.doesNotMatch(JSON.stringify(body),/Authorization: Bearer|api[_-]?key|sk-ant-/i);
+ }
+});
+
+test('Bubbles capability discovery must not disable normal tools or create authorization',async()=>{
+ for(const [question,expected] of [
+  ['What is the current weather in Denver?','weather.current'],
+  ['Read README.md in www-infinity4/QuantaPhi','github.read_file'],
+  ['Create a GitHub repo called Demo','github.create_repository'],
+  ['Explain this design','oracle.chat'],
+  ['Please build a tool directory in my repository','oracle.chat']
+ ])assert.equal(chooseTool(question),expected,question);
+ const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Which tool can deploy my code?'})}),{});
+ const body=await response.json();
+ assert.equal(body.receipt.tool,'bubbles.capabilities');
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.equal(body.capabilities.find(x=>x.id==='robot_brain.owner_work').executionVerified,false);
+ assert.match(body.output,/separate|verified|owner/i);
+});
+
+test('asking where tools live wins over public repository read heuristics even when a repository is named',async()=>{
+ const question='Which tools can you use to inspect www-infinity4/QuantaPhi repository?';
+ assert.equal(chooseTool(question),'bubbles.capabilities');
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:question,mcp:true})});
+ const result=await worker.fetch(req,{AI:{run:async()=>{throw Error('must not call AI')}}});
+ const body=await result.json();
+ assert.equal(result.status,200);
+ assert.equal(body.receipt.tool,'bubbles.capabilities');
+ assert.equal(body.receipt.repositoryActionsVerified,false);
+ assert.ok(Array.isArray(body.capabilities));
+});
+
+test('capability lookup recommends the right existing tools, not just a long directory',async()=>{
+ const cases=[
+  ['Which tools can you use to read GitHub?', ['github.read_repository','github.read_file']],
+  ['Where are your tools for image understanding?', ['bubbles.image_read']],
+  ['Which tools handle voice transcription?', ['bubbles.transcribe']],
+  ['What tools help with deploy and code changes?', ['robot_brain.owner_work']],
+  ['Which tools do web search?', ['web.search']],
+ ];
+ for(const [question,expected] of cases){
+  let aiCalls=0,brainCalls=0;
+  const resp=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+   headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},body:JSON.stringify({request:question})}),{
+    AI:{run:async()=>{aiCalls++;throw Error('directory must not call inference')}},
+    BRAIN:{fetch:async()=>{brainCalls++;throw Error('directory must not call Brain')}}
+   });
+  const data=await resp.json();
+  assert.equal(resp.status,200,question);
+  assert.equal(data.receipt.tool,'bubbles.capabilities',question);
+  assert.deepEqual(data.recommendedCapabilities.slice(0,expected.length).map(x=>x.id),expected,question);
+  assert.ok(data.recommendedCapabilities.every(x=>x.executionVerified===false),question);
+  assert.ok(data.recommendedCapabilities.every(x=>data.capabilities.some(item=>item.id===x.id)),question);
+  assert.match(data.output,/Suggested|matching|use/i);
+  assert.equal(aiCalls,0);
+  assert.equal(brainCalls,0);
+ }
+});
+
+test('capability suggestions never convert a lookup into signed execution, wallet mint or provider entitlement',async()=>{
+ const response=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org'},
+  body:JSON.stringify({request:'Which tools can deploy my code?'})}),{BRAIN:{fetch:async()=>{throw Error('no submission')}}});
+ const data=await response.json();
+ assert.equal(response.status,200);
+ assert.equal(data.receipt.repositoryActionsVerified,false);
+ assert.equal(data.receipt.minted,false);
+ assert.equal(data.capabilities.find(x=>x.id==='robot_brain.owner_work').scope,'owner-only');
+ assert.equal(data.recommendedCapabilities[0].id,'robot_brain.owner_work');
+ assert.match(data.output,/owner|authorize|signed/i);
+ assert.doesNotMatch(data.output,/deployment complete|code deployed|paid provider ready/i);
+});
+
+
+test('GPT-OSS raw channel delimiters and internal response plans are not user replies',()=>{
+ for(const leaked of [
+  'analysis: we need respond to user angry complaining. Provide a concise response.',
+  'analysis: I should explain that this is untrusted source text.',
+  '<|start|>assistantfinal: I have not checked this source.<|end|>',
+  'analysis: we need inspect code. <|end|> <|start|>assistantfinal: The transcript is raw.',
+  '<|im_start|>assistant<|meta_sep|>analysis<|im_sep|>We should compose an answer<|im_end|>'
+ ])assert.equal(hasModelToolLeak(leaked),true,leaked);
+ for(const ordinary of [
+  'The analysis of the test output shows two blocked jobs.',
+  'Analysis: GitHub rejected the branch because it is non-fast-forward.',
+  'Analysis: We have a race condition in the writer.',
+  'Analysis: We need a unique constraint on request_id to prevent duplicate inserts.',
+  'Analysis: I should use the existing repository source to decide which test to run.',
+  'The assistant reported a failed receipt; no code was written.'
+ ])assert.equal(hasModelToolLeak(ordinary),false,ordinary);
+});
+
+test('Bubbles gateway discards repeated hidden model text instead of speaking it or marking the explanation complete',async()=>{
+ let calls=0;
+ const leaked='analysis: we need respond to user. <|end|> <|start|>assistantfinal: We should ask for logs.<|end|>';
+ const res=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',
+  headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Help me fix Bubbles voice and GitHub coding'})}),{
+   AI:{run:async()=>{calls++;return {response:leaked}}}
+  });
+ const body=await res.json();
+ assert.equal(res.status,200);
+ assert.ok(calls>=2,'one safe bounded correction must be attempted');
+ assert.equal(body.answerStatus,'partial');
+ assert.doesNotMatch(body.output,/analysis:|assistantfinal|<\|(?:start|end)\|>/i);
+ assert.match(body.output,/not verified|not completed|could not/i);
+ assert.equal(body.receipt.repositoryActionsVerified,false);
 });

@@ -1,0 +1,130 @@
+name: Deploy Bubbles connections (preserve production bindings)
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/bubbles-connections/**'
+      - '.github/workflows/deploy-bubbles-connections.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: bubbles-connections-production-deploy
+  cancel-in-progress: false
+jobs:
+  verify-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Run OAuth registration, refresh, scope, and wallet regression tests
+        run: |
+          node --check workers/bubbles-connections/providers.mjs
+          node --check workers/bubbles-connections/router.mjs
+          node --check workers/bubbles-connections/worker.mjs
+          node --check workers/infinity-brain-clock/cloudflare-scope-sync.mjs
+          node --test test/bubbles-cloudflare-scope-sync.test.mjs test/bubbles-connections.test.mjs test/bubbles-connections-router.test.mjs test/bubbles-consent.test.mjs test/bubbles-connections-ui.test.mjs test/bubbles-connector-pairing.test.mjs
+      - name: Validate full Worker bundle without changing production
+        run: |
+          npx --yes wrangler@4 deploy --config workers/bubbles-connections/wrangler.toml --dry-run --outdir /tmp/bubbles-connections-verified
+          test -s /tmp/bubbles-connections-verified/worker.js
+      - name: Confirm existing Cloudflare credentials and live binding contract
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] || [ -z "${CLOUDFLARE_ACCOUNT_ID:-}" ]; then
+            echo "::error::Missing GitHub Actions Cloudflare deployment credentials; Worker was not changed."
+            exit 1
+          fi
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H "Accept: application/json" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/bubbles-connections/settings" \
+            -o /tmp/bubbles-connections-before.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const x=JSON.parse(readFileSync('/tmp/bubbles-connections-before.json','utf8'));
+          if(x.success!==true)throw Error('Cloudflare Worker settings not verified');
+          const bindings=x.result?.bindings||[];
+          const found=new Map(bindings.map(b=>[b.name,b]));
+          for(const [name,type] of Object.entries({
+            BOT_WALLET:'service',CLOUDFLARE_CLIENT_ID:'secret_text',
+            CLOUDFLARE_CLIENT_SECRET:'secret_text',CLOUDFLARE_OAUTH_ALLOWED_SCOPES:'secret_text',
+            CONNECTION_ACTIVE_KEY:'secret_text',CONNECTION_KEYRING:'secret_text',
+            CONNECTIONS:'durable_object_namespace',CONNECTIONS_READY:'plain_text',
+            GITHUB_CLIENT_ID:'secret_text',GITHUB_CLIENT_SECRET:'secret_text',
+            STARQUEST_LEDGER:'service'
+          })){
+            if(found.get(name)?.type!==type)throw Error('Production binding drift: '+name);
+          }
+          if(found.get('CONNECTIONS_READY')?.text!=='true')throw Error('Production readiness must remain true');
+          if(found.get('BOT_WALLET')?.service!=='unified-wallet' ||
+            found.get('STARQUEST_LEDGER')?.service!=='starquest-ledger')
+            throw Error('Existing wallet and ledger service mismatch');
+          console.log('Pre-deploy passed: live enabled state, 11 bindings, OAuth, vault, wallet and ledger.');
+          NODE
+      - name: Deploy updated Worker while retaining all production vars and secrets
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy --config workers/bubbles-connections/wrangler.toml --keep-vars
+      - name: Verify live bindings and public scope inventory
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID || secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          set -euo pipefail
+          curl --silent --show-error --fail-with-body \
+            -H "Authorization: Bearer $CLOUDFLARE_API_TOKEN" \
+            -H "Accept: application/json" \
+            "https://api.cloudflare.com/client/v4/accounts/$CLOUDFLARE_ACCOUNT_ID/workers/scripts/bubbles-connections/settings" \
+            -o /tmp/bubbles-connections-after.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const before=JSON.parse(readFileSync('/tmp/bubbles-connections-before.json','utf8'));
+          const after=JSON.parse(readFileSync('/tmp/bubbles-connections-after.json','utf8'));
+          if(after.success!==true)throw Error('Post-deploy settings readback denied');
+          const byName=arr=>new Map(arr.map(b=>[b.name,b]));
+          const a=byName(after.result?.bindings||[]);
+          for(const b of before.result?.bindings||[]){
+            const v=a.get(b.name);
+            if(!v||v.type!==b.type)throw Error('Production binding was lost: '+b.name);
+            if(b.type==='plain_text'&&v.text!==b.text)throw Error('Production var changed: '+b.name);
+            if(b.type==='service'&&(v.service!==b.service||v.environment!==b.environment))
+              throw Error('Production service changed: '+b.name);
+          }
+          console.log('Post-deploy readback passed: existing production binding contract preserved.');
+          NODE
+          curl --silent --show-error --fail-with-body \
+            'https://quantaphi.org/api/bubbles/connections/scope-inventory?deployVerify=1' \
+            -o /tmp/bubbles-connections-scope-inventory.json
+          node --input-type=module <<'NODE'
+          import {readFileSync} from 'node:fs';
+          const data=JSON.parse(readFileSync('/tmp/bubbles-connections-scope-inventory.json','utf8'));
+          if(!data.ok||!data.configured)throw Error('Live Cloudflare connection inventory is not configured');
+          const inventory=data.scopeInventory||{};
+          console.log('Live scope counts:',JSON.stringify({
+            allowed:inventory.serverAllowlistCount,request:inventory.signInRequestScopeCount
+          }));
+          if(inventory.serverAllowlistCount!==386 || inventory.signInRequestScopeCount!==386)
+            console.log('Worker deployed; the three owner-authorized scope secrets still require installation and verification.');
+          NODE
+
+      - name: Install registered 386 Cloudflare OAuth scopes and verify live Bubbles
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CLOUDFLARE_API_TOKEN:-}" ]; then
+            echo "::error::Cloudflare API token unavailable; no scope changes attempted."
+            exit 1
+          fi
+          python3 scripts/c13b0-finish-cloudflare.py
+          echo "Bubbles OAuth scope installation and live readback complete."

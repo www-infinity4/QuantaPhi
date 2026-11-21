@@ -1,0 +1,59 @@
+/* Google search-trend discovery cards. Original Oracle Octaves white/warm presentation. */
+.gt-card{box-sizing:border-box;max-width:100%;min-width:0;background:#fff!important;border:1px solid #e5d3c6!important;border-radius:18px!important;padding:17px!important;color:#34251f!important;box-shadow:0 6px 24px #68463510}
+.gt-card *{box-sizing:border-box}
+.gt-eyebrow{font:800 11px/1.35 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.105em;color:#a32d29!important;margin:0 0 6px}
+.gt-title{font:850 clamp(19px,3.4vw,26px)/1.2 system-ui,sans-serif;color:#37241f;margin:0 0 9px}
+.gt-snapshot,.gt-fine{font:400 12px/1.5 system-ui,sans-serif;color:#685952;margin:7px 0}
+.gt-toolbar,.gt-tabs,.gt-actions,.gt-picks{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+.gt-toolbar{margin-top:14px}
+.gt-date{font-size:13px;font-weight:800;display:inline-block;padding:6px 0;white-space:nowrap}
+.gt-control,.gt-link{font:750 13px/1.4 system-ui,sans-serif;border:1px solid #dec4b5;border-radius:11px;padding:10px 12px;min-height:43px;background:#fff;color:#842b25!important;cursor:pointer;text-decoration:none!important;display:inline-flex;align-items:center;justify-content:center}
+.gt-control:hover,.gt-link:hover,.gt-control.selected{background:#9c3029!important;color:#fff!important;border-color:#9c3029}
+.gt-control:focus-visible,.gt-link:focus-visible{outline:3px solid #205dc8;outline-offset:2px}
+.gt-status{font:650 12px/1.4 system-ui,sans-serif;color:#554e49;margin:9px 0}
+.gt-games{display:grid;gap:9px;margin:10px 0}
+.gt-game{border:1px solid #e8dad0;background:#fffaf7;border-radius:14px;padding:11px}
+.gt-match{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.gt-team{display:flex;flex-direction:column;justify-content:space-between;gap:4px;min-width:0;font-size:13px;overflow-wrap:anywhere}
+.gt-team strong{font:750 13px/1.4 system-ui,sans-serif;color:#2f2623}
+.gt-score{font:850 23px/1.1 system-ui,sans-serif;color:#8b2824;font-variant-numeric:tabular-nums}
+.gt-game-status{font:650 12px/1.4 system-ui,sans-serif;color:#65534d;margin:9px 0 6px}
+.gt-game .gt-link{font-size:12px;min-height:36px;padding:7px 10px}
+.gt-empty{font-size:13px;line-height:1.5;padding:15px;border:1px dashed #d8c4b6;border-radius:12px;background:#fffaf7}
+.gt-media-detail{margin:11px 0;padding:10px;border-radius:14px;background:#fffaf7;border:1px solid #ebdace}
+.gt-topic{font:850 17px/1.3 system-ui,sans-serif;margin:7px 0;color:#35251e}
+.gt-picks .gt-link{flex:1 1 155px}
+.gt-head{max-width:930px;margin:0 auto;padding:10px 12px}
+.gt-page{background:#faf3ec;color:#33231f;font-family:system-ui,sans-serif;line-height:1.5;margin:0;min-height:100vh}
+.gt-page main{max-width:920px;margin:auto;padding:14px}
+.gt-page h1{font-size:clamp(25px,5vw,40px);line-height:1.15;margin:10px 0}
+.gt-page .gt-page-intro{background:white;border:1px solid #e8d7c8;border-radius:18px;padding:16px;margin:12px 0}
+.gt-page .gt-card{margin:16px 0}
+.gt-page a{color:#9d2e26;text-underline-offset:3px}
+.gt-page .gt-page-footer{padding:18px;margin:16px 0;border-radius:16px;background:#fff;border:1px solid #e8d7c8;font-size:13px}
+@media(max-width:430px){.gt-card{padding:11px!important}.gt-toolbar{gap:5px}.gt-control,.gt-link{min-height:45px}.gt-match{gap:7px}}
+
+/* Current trends appear separately from the dated October 23 archive. */
+.gt-latest-feed{border:1px solid #e7d0c0;border-radius:14px;background:#fff8f3;padding:12px;margin:13px 0}
+.gt-latest-feed .gt-games{max-height:480px;overflow:auto;overscroll-behavior:contain}
+.gt-latest-feed .gt-topic{overflow-wrap:anywhere}
+
+/* Infinity match-center treatment: source imagery and useful data lead. */
+.gt-card{color:#15334f!important;border-color:#d8e5ef!important;box-shadow:0 9px 30px #15334f12}
+.gt-card .gt-eyebrow{color:#1766a3!important}.gt-card .gt-title,.gt-card .gt-topic{color:#15334f}
+.gt-card .gt-control,.gt-card .gt-link,.vbs-current-scores .gt-control,.vbs-current-scores .gt-link{border-color:#cadde9;color:#155e98!important;background:#fff}
+.gt-card .gt-control:hover,.gt-card .gt-link:hover,.gt-card .gt-control.selected{background:#0767b2!important;border-color:#0767b2;color:#fff!important}
+.gt-rich-game{padding:0;overflow:hidden;background:white;border-color:#dbe6ee}
+.gt-game-top{padding:10px 13px;background:linear-gradient(125deg,#123d60,#176da7);color:#fff;display:flex;justify-content:space-between;gap:9px;align-items:center}
+.gt-state{font-size:10px;letter-spacing:.08em;border:1px solid #ffffff60;border-radius:6px;padding:5px 7px}.gt-state.gt-live{background:#d83b3b;border-color:#d83b3b}.gt-series{font-size:10px;font-weight:750;text-align:right}
+.gt-rich-game .gt-match{padding:16px 12px;background:linear-gradient(180deg,#f1f7fc,#fff);gap:13px}
+.gt-rich-game .gt-team{align-items:center;text-align:center;justify-content:flex-start}.gt-team-logo{width:72px;height:66px;object-fit:contain;margin-bottom:6px;filter:drop-shadow(0 5px 6px #0b2a4b16)}
+.gt-rich-game .gt-score{font-size:38px;color:#153e61;margin:4px 0}.gt-rich-game .gt-team strong{font-size:14px;color:#15334f}.gt-record{font-size:11px;color:#50697c;min-height:15px}
+.gt-team-stats{font-size:12px;font-weight:800;line-height:1.5;color:#235578;margin:3px 0}.gt-leader{font-size:11px;line-height:1.45;color:#4d6477;margin:4px 0}
+.gt-rich-game>.gt-game-status,.gt-rich-game>.gt-fine,.gt-game-detail{margin:8px 13px;color:#3e5b72;font-size:12px;line-height:1.5}.gt-rich-game>.gt-link{display:flex;margin:12px;min-height:44px;background:#f1f7fc}
+.gt-trend-feature{padding:0 0 6px;overflow:hidden;background:white;border-color:#dbe6ee}.gt-trend-feature>.gt-topic{font-size:25px;margin:11px 13px;color:#153e61}.gt-trend-feature>.gt-eyebrow{margin:14px 13px 5px}.gt-trend-feature>.gt-fine,.gt-trend-feature>.gt-actions{margin:9px 13px}
+.gt-trend-photo{display:block;width:100%;height:auto;max-height:285px;aspect-ratio:16/9;object-fit:cover;background:#edf4f9}.gt-demand{font-size:21px;font-weight:850;color:#0868ac;margin:10px 13px}.gt-topic-nav{display:flex;gap:7px;justify-content:space-between;flex-wrap:wrap}.gt-topic-nav .gt-control{font-size:12px;padding:8px;flex:1}
+.gt-trend-story{border-top:1px solid #e4edf4;padding:10px 13px}.gt-trend-story .gt-link{display:block;border:0;padding:0;background:none!important;color:#175d95!important;min-height:0;text-align:left;font-size:14px;line-height:1.45}.gt-publisher{display:block;font-size:10px;color:#557084;margin-top:6px}.gt-trend-story .gt-fine{font-size:12px;line-height:1.5}
+.gt-latest-feed{padding:10px;background:#f4f8fb;border-color:#dbe7f0}.gt-latest-feed .gt-games{max-height:none;overflow:visible}.gt-archive{padding:12px;border-top:1px solid #d8e5ef;margin-top:14px}.gt-archive summary{font-size:12px;color:#4e677c;cursor:pointer;min-height:40px}
+.vbs-current-scores{font-family:system-ui,sans-serif;min-width:0;padding-bottom:14px}.vbs-current-scores *{box-sizing:border-box}.vbs-news-photo{width:100%;max-height:190px;aspect-ratio:16/9;object-fit:cover;border-radius:11px;display:block;margin-bottom:8px}
+@media(max-width:360px){.gt-team-logo{width:58px;height:55px}.gt-rich-game .gt-score{font-size:32px}.gt-rich-game .gt-match{gap:7px}.gt-trend-feature>.gt-topic{font-size:22px}}

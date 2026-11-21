@@ -201,8 +201,8 @@ public final class ScreenCaptureService extends Service {
                 width = Math.max(2, ((int) (width * scale) / 2) * 2);
                 height = Math.max(2, ((int) (height * scale) / 2) * 2);
                 file = new File(directory, "screen-" + System.currentTimeMillis() + ".mp4");
-                // Persist the original before the encoder begins: a process
-                // death must not make the pending video undiscoverable.
+                // Persist the private original before starting. A process crash after
+                // stop must never make the pending footage undiscoverable.
                 BrainNotes.prefs(this).edit().putString("capture_path", file.getAbsolutePath())
                     .putString("capture_type", "video/mp4").remove("capture_uri").apply();
                 // A screen recording is one MP4 with microphone sound, not a

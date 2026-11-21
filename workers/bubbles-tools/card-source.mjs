@@ -20,5 +20,7 @@ export function cardSourcePlanFor(text){
  const targets=matches.length>1&&designReference?matches.filter(card=>card.id!=='oracle-octaves'):matches;
  if(targets.length!==1)return null;
  const card=targets[0];
+ // Repository identity and public route are independent catalog fields.
+ // Alien-Radio is served at /infinity-radio/; C13b0 at /infinity-phi/.
  return {repository:card.repository,path:'README.md',card:card.id,liveRoute:card.url};
 }

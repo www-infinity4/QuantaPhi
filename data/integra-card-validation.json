@@ -1,0 +1,40 @@
+{
+  "schema": "infinity.integra-validation.v1",
+  "id": "integra",
+  "title": "Integra · Quick Card Validator",
+  "role": "validate-only",
+  "gmailAccount": {
+    "status": "owner-declared",
+    "address": "quantaphi.integra.ai@gmail.com",
+    "connected": false,
+    "verification": "not-verified-via-connector",
+    "source": "owner-provided",
+    "lastConnectionCheck": "unavailable"
+  },
+  "xAccount": {
+    "status": "not-created",
+    "handle": null
+  },
+  "permissions": {
+    "readStudySheet": true,
+    "inspectPublicURLs": true,
+    "inspectConsentedTestReceipts": true,
+    "approveDeploy": false,
+    "sendEmail": false,
+    "createAccounts": false,
+    "writeProviderSessions": false
+  },
+  "reviewKeys": [
+    "officialSource",
+    "providerIdentity",
+    "requestedCapability",
+    "authenticationBoundary",
+    "privacyConsent",
+    "originalLinkFallback",
+    "sourceProvenance",
+    "testsAndReceipts",
+    "deploymentProof"
+  ],
+  "releaseStatus": "not-authorized",
+  "requiredOwnerAction": "Sign in to the new Gmail account through Google's own login and connect this account to ChatGPT/Gmail; verify delegated access before enabling any message handling. Integra stays validation-only."
+}

@@ -3,6 +3,9 @@ const FILLER=new Set('a an and are at be build can change check code create do f
 const SUBJECTS=[
  {words:/\b(?:bubbles|floating (?:chat|overlay)|apk|microphone|voice|speech|screen recorder|screen capture|android overlay)\b/i,targets:['QuantaPhi']},
  {words:/\b(?:robot brain|brain runner|owner ticket|colou?r bots?|red brain|brain clock)\b/i,targets:['QuantaPhi','Moltnook']},
+ // Site pages and quick cards are implemented in QuantaPhi unless an explicit
+ // authorized repository or a stronger named-project match says otherwise.
+ {words:/\b(?:home\s?page|homepage|website|site layout|webpage|quick\s*cards?|cards?|card carousel|walmart|shopphi|fox one)\b/i,targets:['QuantaPhi']},
  {words:/\b(?:infinity radio|alien radio|radio player|radio station|radio stream)\b/i,targets:['Alien-Radio','QuantaPhi']},
  {words:/\b(?:widget|card catalog|card catalogue)\b/i,targets:['WidgetPhi','QuantaPhi']},
  {words:/\b(?:starcoin|wallet|mint|quants? tokens?)\b/i,targets:['QuantaPhi','Mint-For-Infinity']},

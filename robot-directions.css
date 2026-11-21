@@ -43,3 +43,14 @@
 #robotDirections .robot-work-ticket small{display:block;font-size:12px;color:#685e70;margin-top:8px}
 #robotDirections .robot-work-actions button{flex:1 1 155px;white-space:normal}
 @media(max-width:420px){#robotDirections .robot-work-ticket{padding:12px}}
+
+/* Live ChatGPT repair handoff stays separate from the active Bubbles composer. */
+#robotDirections .robot-work-handoff{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:10px 0}
+#robotDirections .robot-work-handoff button{background:#174d77;color:#fff;border:1px solid #174d77;flex:1 1 175px;font-weight:750}
+#robotDirections .robot-work-handoff a{display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+ min-height:44px;padding:10px 15px;border-radius:24px;border:1px solid #174d77;color:#174d77;background:#fff;
+ text-decoration:none;font-weight:750;flex:1 1 140px}
+#robotDirections .robot-work-handoff small{width:100%}
+#robotDirections .robot-work-history{margin:10px 0 2px}
+#robotDirections .robot-work-history>summary{font-weight:800;color:#174d77}
+#robotDirections .robot-work-handoff :focus-visible,#robotDirections .robot-work-history>summary:focus-visible{outline:3px solid #b88b22;outline-offset:2px}

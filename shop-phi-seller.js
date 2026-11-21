@@ -150,6 +150,32 @@ function mount(form,fields,status,config={}){
  return Object.freeze({
   ids:()=>ids.slice(),
   hasMedia:()=>ids.length>0,
+  async uploadPhotos(references){
+   if(!root.QuantAIPersonal?.shopPhiUpload)throw Error('Authenticated ShopPhi photo upload is unavailable.');
+   const receipts=[];
+   for(const ref of references||[]){
+    const stored=await get(ref);
+    if(!stored)throw Error('A selected item photograph is missing from this device. Save another photo.');
+    if(stored.kind!=='image')throw Error('Short videos stay private until a video publishing service is verified. Use photos to publish this item.');
+    // Redraw into a fresh WebP so phone EXIF/GPS metadata is not uploaded.
+    let bitmap;
+    try{
+     bitmap=await createImageBitmap(stored.blob);
+     const scale=Math.min(1,1600/Math.max(bitmap.width,bitmap.height));
+     const canvas=document.createElement('canvas');
+     canvas.width=Math.max(1,Math.round(bitmap.width*scale));
+     canvas.height=Math.max(1,Math.round(bitmap.height*scale));
+     canvas.getContext('2d').drawImage(bitmap,0,0,canvas.width,canvas.height);
+     const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/webp',.85));
+     if(!blob||blob.type!=='image/webp')throw Error('This device cannot prepare private, metadata-stripped photos for ShopPhi.');
+     if(blob.size>4500000)throw Error('Compressed photo is too large (limit 4.5 MB).');
+     const receipt=await root.QuantAIPersonal.shopPhiUpload(blob);
+     if(!/^[0-9a-f-]{36}$/i.test(receipt.mediaId||''))throw Error('Photo server did not confirm the uploaded image.');
+     receipts.push(receipt.mediaId);
+    }finally{bitmap?.close?.()}
+   }
+   return receipts;
+  },
   clear:()=>{ids=[];void render()},
   async previewIn(item,target){
    if(!Array.isArray(item?.mediaIds)||!item.mediaIds.length)return;

@@ -15,9 +15,14 @@ export function scopeOwnerContext(job){
 }
 export function scopedRepositoryJob(job,{ticketId='',jobId='',repository=''}={}){
  if(!job||typeof job!=='object'||Array.isArray(job))throw Error('assigned_job_missing');
- const instructions=bounded(job.instructions,9500);
+ // Match authenticated ticket intake: never silently discard an accepted
+ // requirement or the final acceptance items on the way to the model.
+ const instructions=typeof job.instructions==='string'?job.instructions:'';
  if(!instructions.trim())throw Error('assigned_job_instructions_missing');
- const acceptance=Array.isArray(job.acceptance)?job.acceptance.filter(x=>typeof x==='string'&&x.trim()).slice(0,16).map(x=>x.slice(0,800)):[];
+ if(instructions.length>12000)throw Error('assigned_job_instructions_too_large');
+ const acceptance=Array.isArray(job.acceptance)?[...job.acceptance]:[];
+ if((job.acceptance!==undefined&&!Array.isArray(job.acceptance))||acceptance.length>20||
+    acceptance.some(x=>typeof x!=='string'||x.length>700))throw Error('assigned_job_acceptance_invalid');
  const related=scopeOwnerContext(job);
  return {
   id:bounded(jobId||job.id,120),ticketId:bounded(ticketId,120),

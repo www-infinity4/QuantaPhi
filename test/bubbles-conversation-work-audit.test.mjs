@@ -18,14 +18,17 @@ test('owner negative voice constraints remain attached to relevant candidate',()
  const t=auditWorkHistory([m(1,'user','Fix Bubbles voice and never sing the reply; do not read ticket numbers aloud.')]);
  assert.equal(t.length,1);assert.match(t[0].constraints[0],/never sing/);
 });
-test('only independent CI/deployment receipts upgrade status',()=>{
- const c=auditWorkHistory([m(1,'user','Fix Infinity Radio playback now.')])[0],sha='a'.repeat(40);
- const proof={repository:c.repositorySuggestion,sha,testReceipts:[{passed:true,url:'https://github.com/example/actions/1'}]};
- assert.equal(reconcileWorkEvidence(c,{...proof,repository:'www-infinity4/Wrong'}).status,c.status);
- assert.equal(reconcileWorkEvidence(c,{...proof,testReceipts:[]}).status,c.status);
- assert.equal(reconcileWorkEvidence(c,{...proof,deployed:true,liveObserved:false}).status,c.status);
- assert.equal(reconcileWorkEvidence(c,proof).status,'tests_verified');
- assert.equal(reconcileWorkEvidence(c,{...proof,deployed:true,deploymentUrl:'https://example.org',liveObserved:true}).status,'deployed_observed');
+test('self-asserted CI/URL/deployment claims cannot finish a backlog task',()=>{
+ const c=auditWorkHistory([m(1,'user','Fix Infinity Radio playback now.')])[0];
+ const forged={repository:c.repositorySuggestion,sha:'a'.repeat(40),
+  testReceipts:[{passed:true,url:'https://github.com/example/actions/1'}],
+  deployed:true,deploymentUrl:'https://example.org',liveObserved:true};
+ const result=reconcileWorkEvidence(c,forged);
+ assert.equal(result.status,'candidate_needs_repository_inspection');
+ assert.equal(result.repositoryVerified,false);
+ assert.equal(result.receipt,undefined);
+ assert.equal(c.status,'candidate_needs_repository_inspection');
+ assert.equal(reconcileWorkEvidence(c,null).status,c.status);
 });
 test('archive reads are owner-partitioned, paginated and never create work',async()=>{
  const calls=[],db={prepare(sql){const q={bind(...args){calls.push({sql,args});return q},async all(){return {results:[m(3,'user','Fix Infinity Radio playback.'),m(2,'user','Build Bubbles memory retrieval.'),m(1,'user','Sync Android APK with website.')]}}};return q}};
@@ -37,4 +40,12 @@ test('archive reads are owner-partitioned, paginated and never create work',asyn
  assert.deepEqual(calls[1].args.slice(0,4),['verified_owner',1002,1002,'message_0002']);
  await assert.rejects(auditOwnerConversation(db,'verified_owner',{beforeAt:12,beforeId:'../../evil'}),/cursor_invalid/);
  await assert.rejects(auditOwnerConversation(db,''),/verified_owner_required/);
+});
+test('plural GitHub repos and repositories are recognized as unfinished owner build work',()=>{
+ for(const request of ['Build GitHub repos automatically for Bubbles.',
+  'Fix GitHub repositories that were left unfinished.',
+  'Check GitHub pull requests and build missing features.']){
+  const found=auditWorkHistory([m(101,'user',request)]);
+  assert.ok(found.some(x=>x.id==='autonomous-building'),request);
+ }
 });

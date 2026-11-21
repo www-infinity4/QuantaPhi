@@ -4,6 +4,8 @@ import {ConsentService} from '../workers/bubbles-connections/consent.mjs';
 import {TokenVault, randomToken} from '../workers/bubbles-connections/vault.mjs';
 import {googleAdapter, githubAdapter} from '../workers/bubbles-connections/providers.mjs';
 import {executeGoogleRead,googleReadURL,selectGoogleResource} from '../workers/bubbles-connections/google-read.mjs';
+import {connectionResult} from '../workers/bubbles-connections/completion.mjs';
+import {checkConnectionSetup} from '../workers/bubbles-connections/setup-check.mjs';
 
 // Serialized transactions model DO atomic storage; failures roll back writes.
 function storage() {
@@ -39,6 +41,17 @@ test('vault encrypts secrets and authenticates user/connection context', async (
   await assert.rejects(new TokenVault({v1:randomToken()},'v1').open(record,'alice/google'));
   assert.deepEqual(await new TokenVault({v1:key,v2:randomToken()},'v2').open(record,'alice/google'),{token:'private-token'});
 });
+
+test('wallet setup probe checks encrypted storage without creating an account or retaining probe data',async()=>{
+ const f=fixture();let checked=0;
+ f.service.adapters.cloudflare={checkClient:async()=>{checked++;return {status:'client_rejected',reason:'cloudflare_exchange_401_invalid_client'};}};
+ const result=await checkConnectionSetup(f.service,{userId:'alice'});
+ assert.deepEqual(result,{vault:'passed',storage:'passed',client:{status:'client_rejected',reason:'cloudflare_exchange_401_invalid_client'},accountVerified:false});
+ assert.equal(checked,1);
+ assert.deepEqual([...f.db.rows.keys()].map(key=>key.split(':').at(-1)),['setup-check-rate']);
+ await assert.rejects(checkConnectionSetup(f.service,{userId:'alice'}),/too_many_requests/);
+ assert.equal(checked,1);
+});
 test('consent state uses PKCE and neither state storage nor response contains raw secrets', async () => {
   const f = fixture(), state = await f.begin();
   const result = await f.finish(state), stored = JSON.stringify([...f.db.rows]);
@@ -71,6 +84,20 @@ test('failed exchange burns state without persisting a connection', async () => 
   await assert.rejects(f.finish(state),/state_invalid_or_used/);
   assert.ok(![...f.db.rows.keys()].some(k=>k.includes(':connection:') || k.includes(':credential:')));
 });
+
+test('external-browser exchange failure survives the RPC boundary and cannot replay a code',async()=>{
+  const f=fixture(),state=await f.begin();let calls=0;
+  f.adapter.exchange=async()=>{calls++;throw Error('cloudflare_exchange_401_invalid_client');};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'one-use-provider-code'});
+  const input={...f.input,state};
+  const result=await connectionResult(()=>f.service.finishHandoff(input));
+  assert.deepEqual(JSON.parse(JSON.stringify(result)),{connectionError:'cloudflare_exchange_401_invalid_client'});
+  assert.equal(calls,1);
+  assert.deepEqual(await f.service.handoffStatus(input),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(input),{status:'expired'});
+  assert.equal(calls,1);
+  assert.ok(![...f.db.rows.keys()].some(key=>key.includes(':connection:')||key.includes(':credential:')||key.includes(':handoff:')));
+});
 test('disconnect deletes credentials and cancels a callback already in flight', async () => {
   const f = fixture(), first = await f.finish(await f.begin()), state = await f.begin();
   let release, entered;
@@ -91,6 +118,32 @@ test('Google requests only chosen service scopes and explicit account selection'
   assert.ok(url.searchParams.get('scope').includes('spreadsheets.readonly'));
   assert.ok(!url.searchParams.get('scope').includes('drive.readonly'));
   assert.ok(!url.href.includes('server-secret'));
+});
+test('basic Google consent requests only identity and email, not Gmail or Drive',()=>{
+ const adapter=googleAdapter(config);
+ const url=new URL(adapter.authorization({state:'state',challenge:'challenge',actions:['identity.read']}));
+ assert.equal(url.searchParams.get('scope'),'openid email');
+ assert.equal(url.searchParams.get('prompt'),'consent select_account');
+});
+test('two Google identities share one wallet without replacing or disconnecting each other',async()=>{
+ const f=fixture(),input={...f.input,actions:['identity.read']};
+ f.adapter.exchange=async({code})=>({subject:code,label:code+'@example.test',
+  accessToken:'private-access-'+code,refreshToken:'private-refresh-'+code,
+  expiresIn:3600,grantedActions:['identity.read']});
+ const authorize=async code=>{
+  const state=new URL((await f.service.start(input)).authorizationUrl).searchParams.get('state');
+  return f.service.complete({...input,state,code});
+ };
+ const first=await authorize('integra'),second=await authorize('second');
+ assert.notEqual(first.id,second.id);
+ assert.equal(first.label,'integra@example.test');
+ assert.equal(second.label,'second@example.test');
+ assert.equal((await f.service.list({userId:'alice'})).filter(r=>r.status==='connected').length,2);
+ assert.equal((await f.service.list({userId:'bob'})).length,0);
+ await f.service.disconnect({userId:'alice',id:second.id});
+ const remaining=await f.service.list({userId:'alice'});
+ assert.equal(remaining.find(r=>r.id===first.id)?.status,'connected');
+ assert.equal(remaining.find(r=>r.id===second.id)?.status,'disconnected');
 });
 test('Google grants only requested actions actually present in provider response', async () => {
   const replies = [{access_token:'access',token_type:'Bearer',expires_in:3600,scope:'openid email https://www.googleapis.com/auth/drive.readonly'}, {sub:'stable-sub',email:'address@test',email_verified:true}];
@@ -158,7 +211,7 @@ test('Google refresh without a new refresh token retains the prior one', async()
 });
 test('Google read tool uses fixed endpoints, verifies caller and suppresses results after disconnect', async()=>{
   const f=fixture(),account=await f.finish(await f.begin());let calls=0;
-  const request=async(url,options)=>{calls++;assert.equal(new URL(url).hostname,'www.googleapis.com');assert.equal(options.redirect,'error');assert.equal(options.headers.Authorization,'Bearer secret-access');return Response.json({files:[{id:'f1',name:'report'}]});};
+  const request=async(url,options)=>{calls++;assert.equal(new URL(url).hostname,'www.googleapis.com');assert.equal(options.redirect,'manual');assert.equal(options.headers.Authorization,'Bearer secret-access');return Response.json({files:[{id:'f1',name:'report'}]});};
   const result=await executeGoogleRead(f.service,{userId:'alice',id:account.id,operation:'drive.list',args:{url:'https://attacker.test',query:'https://attacker.test'}},request);
   assert.equal(result.receipt.status,'provider_confirmed');assert.equal(result.data.files[0].id,'f1');
   await assert.rejects(executeGoogleRead(f.service,{userId:'bob',id:account.id,operation:'drive.list'},request));assert.equal(calls,1);
@@ -242,4 +295,231 @@ test('connection test never writes without verified installed-repository write p
  const adapter=githubAdapter({clientId:'test',clientSecret:'test',redirectUri:'https://example.test/callback'},()=>assert.fail('no write request allowed'));
  adapter.repositories=async()=>({repositories:[{name:'www-infinity4/QuantaPhi',permissions:{write:false}}]});
  await assert.rejects(adapter.connectionTest({accessToken:'test'}),/repository_write_not_verified/);
+});
+
+test('Cloudflare account selection is isolated by verified wallet, token and selected membership',async()=>{
+ const db=storage(),vault=new TokenVault({v1:randomToken()},'v1'),ownerAccount='a'.repeat(32),anotherAccount='b'.repeat(32),requests=[];
+ const adapter={
+  authorization:({state})=>'https://dash.cloudflare.com/oauth2/auth?state='+state,
+  exchange:async()=>({accessToken:'alice-private-token',refreshToken:'alice-refresh',expiresIn:3600,subject:'cf-alice',label:'Alice Cloudflare',grantedActions:['account.read']}),
+  accounts:async({accessToken})=>{requests.push(accessToken);return {accounts:[{id:ownerAccount,name:'Alice own account'}],truncated:false};},
+  revoke:async()=>{}
+ };
+ const service=new ConsentService({storage:db,vault,adapters:{cloudflare:adapter},now:()=>1000});
+ const args={userId:'alice',sessionId:'trusted-session',provider:'cloudflare',actions:['account.read']};
+ const state=new URL((await service.start(args)).authorizationUrl).searchParams.get('state');
+ const connection=await service.complete({...args,state,code:'authorization'});
+ assert.deepEqual((await service.cloudflareAccounts({userId:'alice',id:connection.id})).accounts,[{id:ownerAccount,name:'Alice own account'}]);
+ await assert.rejects(service.cloudflareAccounts({userId:'bob',id:connection.id}),/connection_/);
+ await assert.rejects(service.selectCloudflareAccount({userId:'alice',id:connection.id,accountId:anotherAccount}),/cloudflare_account_not_authorized/);
+ const selected=await service.selectCloudflareAccount({userId:'alice',id:connection.id,accountId:ownerAccount});
+ assert.equal(selected.storageReady,false);
+ assert.equal(selected.status,'account_selected_not_provisioned');
+ assert.deepEqual(requests,['alice-private-token','alice-private-token','alice-private-token']);
+ const saved=await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id);
+ assert.equal(saved.accountId,ownerAccount);
+ assert.ok(!JSON.stringify([...db.rows]).includes('alice-private-token'));
+ await service.disconnect({userId:'alice',id:connection.id});
+ assert.equal(await db.get((await service.namespace('alice'))+'cloudflare:selected:'+connection.id),undefined);
+});
+
+test('cross-browser handoff remains bound to the initiating wallet session',async()=>{
+  const f=fixture(),state=await f.begin();
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...f.input,state,sessionId:'another-session'}),/callback_session_mismatch/);
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'});
+  assert.deepEqual(await f.service.handoffStatus({...f.input,state}),{status:'received'});
+  // Chrome may repeat the exact callback after a redirect; this is harmless
+  // and must not turn a valid initial handoff into a false sign-in failure.
+  assert.deepEqual(await f.service.handoff({userId:'alice',provider:'google',state,code:'provider-code'}),{received:true,duplicate:true});
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'replayed'}),/callback_already_received/);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('provider-code'),false);
+});
+
+test('Google return recovers without a tab marker only for the original wallet session',async()=>{
+  const f=fixture(),state=await f.begin();
+  const {userId,sessionId}=f.input;
+  assert.deepEqual(await f.service.resumeGoogleHandoff({userId,sessionId}),{status:'missing'});
+  await f.service.handoff({userId,provider:'google',state,code:'private-return-code'});
+  for(const identity of [{userId:'bob',sessionId},{userId,sessionId:'other-wallet-session'}]){
+    assert.deepEqual(await f.service.resumeGoogleHandoff(identity),{status:'missing'});
+  }
+  assert.equal(f.calls,0);
+  const attempts=await Promise.all([f.service.resumeGoogleHandoff({userId,sessionId}),
+    f.service.resumeGoogleHandoff({userId,sessionId})]);
+  const recovered=attempts.find(attempt=>attempt.status==='connected');
+  assert.equal(recovered.status,'connected');
+  assert.equal(recovered.account.provider,'google');
+  assert.equal((await f.service.resumeGoogleHandoff({userId,sessionId})).status,'connected');
+  assert.equal(f.calls,1);
+  assert.ok(!JSON.stringify([...f.db.rows]).includes(state));
+  assert.ok(!JSON.stringify(recovered).includes('private-return-code'));
+  await f.service.disconnect({userId,id:recovered.account.id});
+  assert.equal((await f.service.resumeGoogleHandoff({userId,sessionId})).status,'expired');
+});
+test('cross-browser handoff rejects wrong owner, provider and expired state',async()=>{
+  const f=fixture(),state=await f.begin();
+  await assert.rejects(f.service.handoff({userId:'bob',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'github',state,code:'code'}),/state_invalid_or_used/);
+  f.setTime(301000);
+  await assert.rejects(f.service.handoff({userId:'alice',provider:'google',state,code:'code'}),/state_invalid_or_used/);
+});
+
+test('isolated browser callback completes exactly once through original verified session',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code-from-external-chrome'});
+  await assert.rejects(f.service.finishHandoff({...auth,sessionId:'other-device'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  const result=await f.service.finishHandoff(auth);
+  assert.equal(result.status,'connected');
+  assert.equal(result.account.status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal((await f.service.finishHandoff(auth)).status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal(JSON.stringify([...f.db.rows]).includes('code-from-external-chrome'),false);
+});
+test('declined authorization never exchanges a provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,error:true});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'declined'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'declined'});
+  assert.equal(f.calls,0);
+});
+test('concurrent handoff finishes cannot exchange twice',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  const outcomes=await Promise.allSettled([f.service.finishHandoff(auth),f.service.finishHandoff(auth)]);
+  assert.equal(outcomes.filter(x=>x.status==='rejected').length,0,JSON.stringify(outcomes.map(x=>x.status==='rejected'?{error:x.reason?.message}:x.value)));
+  assert.ok(outcomes.some(x=>x.value.status==='connected'));
+  assert.ok(outcomes.every(x=>['connected','pending'].includes(x.value.status)));
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal(f.calls,1);
+});
+
+test('polls stay pending while the first Android handoff exchanges its provider code',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'single-use-code'});
+  let entered,release;
+  const exchanging=new Promise(resolve=>{entered=resolve;});
+  const continueExchange=new Promise(resolve=>{release=resolve;});
+  const original=f.adapter.exchange;
+  f.adapter.exchange=async args=>{entered();await continueExchange;return original(args);};
+  const first=f.service.finishHandoff(auth);
+  await exchanging; // OAuth state is already consumed; provider request is in flight.
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'pending'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'pending'});
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'different-session'}),/callback_session_mismatch/);
+  release();
+  const completed=await first;
+  assert.equal(completed.status,'connected');
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  assert.equal(f.calls,1);
+  assert.equal([...f.db.rows.keys()].filter(k=>k.includes('handoff-inflight:')).length,0);
+});
+
+test('completed external-browser handoff survives a lost completion response',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'external-code'});
+  const first=await f.service.finishHandoff(auth);
+  assert.equal(first.status,'connected');
+  const recovered=await f.service.handoffStatus(auth);
+  assert.equal(recovered.status,'connected');
+  assert.deepEqual(recovered.account,first.account);
+  assert.deepEqual(await f.service.finishHandoff(auth),first);
+  assert.equal(f.calls,1);
+  await assert.rejects(f.service.handoffStatus({...auth,sessionId:'other-session'}),/callback_session_mismatch/);
+  await assert.rejects(f.service.finishHandoff({...auth,provider:'github'}),/callback_session_mismatch/);
+  f.setTime(301000);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+});
+
+test('recovered OAuth success never survives account disconnect',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'code'});
+  const result=await f.service.finishHandoff(auth);
+  assert.equal((await f.service.handoffStatus(auth)).status,'connected');
+  await f.service.disconnect({userId:'alice',id:result.account.id});
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.deepEqual(await f.service.finishHandoff(auth),{status:'expired'});
+  assert.equal(f.calls,1);
+});
+test('recovered OAuth success cannot impersonate a later connection revision',async()=>{
+  const f=fixture(),state=await f.begin(),auth={...f.input,state};
+  await f.service.handoff({userId:'alice',provider:'google',state,code:'old-code'});
+  const old=await f.service.finishHandoff(auth);
+  assert.equal(old.status,'connected');
+  const newer=await f.finish(await f.begin());
+  assert.equal(newer.id,old.account.id);
+  assert.deepEqual(await f.service.handoffStatus(auth),{status:'expired'});
+  assert.equal(f.calls,2);
+});
+
+test('Cloudflare callback recovers after Android loses its tab marker only in the originating wallet session',async()=>{
+ const f=fixture();let exchanges=0;
+ f.service.adapters.cloudflare={
+  authorization:({state,challenge})=>'https://dash.cloudflare.com/oauth2/auth?'+new URLSearchParams({state,code_challenge:challenge}),
+  exchange:async()=>{exchanges++;return {subject:'cloudflare-subject',label:'Cloudflare owner',accessToken:'private-cloudflare-access',refreshToken:'private-cloudflare-refresh',expiresIn:3600,grantedActions:['account.read']};}
+ };
+ const input={userId:'alice',sessionId:'session-a',provider:'cloudflare',actions:['account.read']};
+ const state=new URL((await f.service.start(input)).authorizationUrl).searchParams.get('state');
+ assert.deepEqual(await f.service.resumeCloudflareHandoff(input),{status:'missing'});
+ await f.service.handoff({userId:input.userId,provider:'cloudflare',state,code:'secret-cloudflare-code'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,userId:'different-owner'}),{status:'missing'});
+ assert.deepEqual(await f.service.resumeCloudflareHandoff({...input,sessionId:'another-wallet-session'}),{status:'missing'});
+ const results=await Promise.all([f.service.resumeCloudflareHandoff(input),f.service.resumeCloudflareHandoff(input)]);
+ assert.ok(results.some(r=>r.status==='connected'&&r.account.provider==='cloudflare'));
+ assert.equal(exchanges,1);
+ assert.ok(!JSON.stringify(results).includes('secret-cloudflare-code'));
+ assert.ok(!JSON.stringify([...f.db.rows]).includes('private-cloudflare-access'));
+});
+
+test('expired Google OAuth session auto-refreshes on account status without a second sign-in button',async()=>{
+ const f=fixture(),connection=await f.finish(await f.begin());let refreshes=0;
+ f.adapter.refresh=async ({refreshToken,actions})=>{
+  assert.equal(refreshToken,'secret-refresh');
+  assert.deepEqual(actions,['drive.read']);
+  refreshes++;
+  return {accessToken:'new-secret-access',refreshToken:'new-secret-refresh',
+   expiresIn:3600,grantedActions:actions};
+ };
+ f.setTime(3600500);
+ const results=await f.service.gateStatus({userId:'alice'});
+ const google=results.find(account=>account.id===connection.id);
+ assert.equal(refreshes,1);
+ assert.equal(google.status,'connected');
+ assert.ok(google.expiresAt>3600500+30000);
+ assert.ok(!JSON.stringify(results).includes('new-secret'));
+ const next=await f.service.gateStatus({userId:'alice'});
+ assert.equal(next.find(account=>account.id===connection.id).status,'connected');
+ assert.equal(refreshes,1);
+});
+
+test('Google OAuth code exchange and userinfo use a Cloudflare Workers-supported redirect policy',async()=>{
+ const urls=[],calls=[];
+ const adapter=googleAdapter(config,async(url,options)=>{
+  urls.push(url);calls.push(options);
+  assert.equal(options.redirect,'manual','Workers rejects redirect:error before requesting Google');
+  if(url==='https://oauth2.googleapis.com/token')return Response.json({access_token:'access',token_type:'Bearer',expires_in:3600,scope:'openid email https://www.googleapis.com/auth/drive.readonly'});
+  if(url==='https://openidconnect.googleapis.com/v1/userinfo')return Response.json({sub:'google-sub',email:'user@example.test',email_verified:true});
+  assert.fail('Unexpected endpoint '+url);
+ });
+ const account=await adapter.exchange({code:'authorized-code',verifier:'verifier',actions:['drive.read']});
+ assert.equal(account.subject,'google-sub');
+ assert.deepEqual(account.grantedActions,['drive.read']);
+ assert.deepEqual(urls,['https://oauth2.googleapis.com/token','https://openidconnect.googleapis.com/v1/userinfo']);
+ assert.equal(calls[1].headers.Authorization,'Bearer access');
+});
+
+test('Google OAuth refuses third-party redirects rather than forwarding codes or access tokens',async()=>{
+ let requests=0;
+ const adapter=googleAdapter(config,async(url,options)=>{
+  requests++;
+  assert.equal(options.redirect,'manual');
+  return Response.redirect('https://untrusted.example/capture',302);
+ });
+ await assert.rejects(adapter.exchange({code:'private-code',verifier:'verifier',actions:['drive.read']}),/google_exchange_302/);
+ assert.equal(requests,1,'A redirect cannot follow or receive the code');
+ await assert.rejects(adapter.refresh({refreshToken:'private-refresh',actions:['drive.read']}),/google_refresh_302/);
+ assert.equal(requests,2);
 });

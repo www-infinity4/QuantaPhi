@@ -28,6 +28,8 @@ Provider secrets must never appear in public page HTML, URLs, notes, or embed sn
 
 ## Verified embed message model
 
+The embed initially mounts only its visible floating launcher: it does not navigate to or insert the Bubbles iframe until the visitor taps Open. On first open the same sandboxed iframe is loaded, and later closes simply hide it so the conversation and user-granted mic session are retained while the page remains open. This is a performance measure for pages with many quick cards, not an authorization or model-access change. Embedded chat still needs normal permissions and may be subject to browser background microphone restrictions.
+
 The embed iframe sends only open/closed resize events with type quantaphi:bubbles:size and small finite drag deltas with type quantaphi:bubbles:move. The host loader requires the exact https://quantaphi.org origin and the specific iframe's window as event source. It receives no note text, AI conversation data, passwords or account tokens. Embedded widgets do not read the platform-owner work token.
 
 ## Observer checklist

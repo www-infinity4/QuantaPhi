@@ -62,6 +62,30 @@ export async function precedingSignedTurns({id,db,now=Date.now()}){
  return 'Relevant recent conversation (verified same-run history, not new tool calls or authorization):\n'+transcript.join('\n')+
   '\nAnswer the CURRENT user question using relevant context. Do not claim a prior result proves a current button tap or new tool action.\n';
 }
+// Only the signed PUBLIC conversation is retryable. It exposes registered
+// READS and chat, never owner work, card clicks, wallet writes or shell tools.
+// Reuse the exact payload when a transport resets, with a strict shared deadline.
+export async function fetchPublicAssistantWithRetry(fetcher,url,options,{now=Date.now,pause=ms=>new Promise(resolve=>setTimeout(resolve,ms)),deadlineMs=88000}={}){
+ const started=now();let last;
+ for(let attempt=0;attempt<2;attempt++){
+  const remaining=deadlineMs-(now()-started);
+  if(remaining<1000)break;
+  try{
+   const response=await fetcher(url,{...options,signal:AbortSignal.timeout(Math.min(attempt===0?70000:20000,remaining))});
+   // Never retry unauthorized requests or malformed inputs. Only transient
+   // upstream failures qualify, and a successful response is never repeated.
+   if(![502,503,504].includes(response.status)||attempt===1)return response;
+   last=Error('gateway_http_'+response.status);
+  }catch(error){
+   last=error;
+   if(attempt===1)break;
+  }
+  if(deadlineMs-(now()-started)<2500)break;
+  await pause(150);
+ }
+ throw last||Error('public_assist_deadline');
+}
+
 // Executes while the authenticated server client holds its request open.
 // The public tool itself verifies the source. Carry a *bounded, origin-locked*
 // citation across signed transport instead of silently discarding it.
@@ -76,11 +100,27 @@ export function publicGithubSourceReceipt(data){
     url.pathname.includes('..'))return null;
  return url.href;
 }
+// Signed public results reveal only registered read-tool names and statuses,
+// never model arguments, owner context, queries, messages or raw source output.
+export function signedReadStepReceipts(receipt){
+ if(receipt?.tool!=='agent.read_sequence'||!Array.isArray(receipt.steps))return [];
+ const allowed=new Set(['weather.current','news.headlines','web.search','web.read_page',
+  'github.read_repository','github.read_file','github.read_commit','organic.memory_benchmark','resonance.calculate']);
+ const statusAllowed=new Set(['complete','partial','failed','blocked','needs_input','invalid_input','unverified']);
+ return receipt.steps.slice(0,4).filter(s=>allowed.has(s?.tool)).map(s=>({
+  tool:s.tool,status:statusAllowed.has(s.status)?s.status:'unverified'
+ }));
+}
 export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.now()}){
  const row=await db.prepare("SELECT payload,status,expires_ms FROM bubbles_chatgpt_bridge WHERE id=? AND action='server_assist'").bind(id).first();
  if(!row||['complete','blocked'].includes(row.status))return;
- if(row.status==='working'||row.expires_ms<=now){
-  await db.prepare("UPDATE bubbles_chatgpt_bridge SET status=?,result=?,updated_ms=? WHERE id=? AND action='server_assist'").bind('blocked',JSON.stringify({ok:false,error:row.status==='working'?'execution_interrupted':'assist_result_expired'}),now,id).run();
+ // A concurrent signed retry can have seen server_pending before the
+ // first executor claimed it. "working" is evidence of an active claim, not
+ // proof of a crash; never cancel the valid first response from here.
+ if(row.status==='working')return;
+ if(row.expires_ms<=now){
+  await db.prepare("UPDATE bubbles_chatgpt_bridge SET status=?,result=?,updated_ms=? WHERE id=? AND action='server_assist' AND status='server_pending'")
+   .bind('blocked',JSON.stringify({ok:false,error:'assist_result_expired'}),now,id).run();
   return;
  }
  const claimed=await db.prepare("UPDATE bubbles_chatgpt_bridge SET status='working' WHERE id=? AND action='server_assist' AND status='server_pending'").bind(id).run();
@@ -92,8 +132,8 @@ export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.no
     phase='gateway_fetch';
     const history=await precedingSignedTurns({id,db,now});
     const input=history?history+'Current user question: '+text:text;
-    const response=await fetcher(GATEWAY,{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
-     body:JSON.stringify({request:text,input,mcp:true}),signal:AbortSignal.timeout(90000),redirect:'manual'});
+    const response=await fetchPublicAssistantWithRetry(fetcher,GATEWAY,{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+      body:JSON.stringify({request:text,input,mcp:true}),redirect:'manual'});
     gatewayStatus=response.status;
     if(!response.ok)throw Error('gateway_http_'+response.status);
     phase='gateway_json';
@@ -106,9 +146,20 @@ export async function executeServerAssist({id,db,store,fetcher=fetch,now=Date.no
     const toolSources=(Array.isArray(data.sources)?data.sources:[]).slice(0,8).map(s=>({title:String(s.title||'').slice(0,200),url:String(s.url||'').slice(0,1500)}));
     if(verifiedGithubSource&&!toolSources.some(s=>s.url===verifiedGithubSource))
      toolSources.push({title:'Verified public GitHub file',url:verifiedGithubSource});
-    result={ok:true,output:output.slice(0,8000),answerStatus:data.answerStatus==='partial'?'partial':(data.answerStatus==='complete'?'complete':'unverified'),analysisVerified:data.analysisVerified===true,
-     receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:String(data.receipt.status||'unverified').slice(0,60),
-      sourceReadVerified:data.receipt.sourceReadVerified===true,repositoryActionsVerified:false},
+    // The signed request transport can finish even if its actual tool failed.
+    // Keep that transport state separate from result.ok, which the acceptance
+    // runner uses to credit completed GPT work. Never erase a useful failure
+    // explanation, the actual receipt, or the available public sources.
+    const toolStatuses=new Set(['complete','partial','failed','blocked','needs_input','invalid_input','unverified']);
+    const receiptStatus=toolStatuses.has(data.receipt.status)?data.receipt.status:'unverified';
+    const answerStatus=['complete','partial','failed','blocked','needs_input'].includes(data.answerStatus)?data.answerStatus:'unverified';
+    const outcome=receiptStatus!=='complete'?'tool_'+receiptStatus:
+     answerStatus==='partial'?'answer_partial':
+     ['failed','blocked','needs_input'].includes(answerStatus)?'answer_'+answerStatus:'complete';
+    result={ok:outcome==='complete',outcome,output:output.slice(0,8000),answerStatus,analysisVerified:data.analysisVerified===true,
+     receipt:{tool:String(data.receipt.tool||'conversation').slice(0,100),status:receiptStatus,
+      sourceReadVerified:data.receipt.sourceReadVerified===true,repositoryActionsVerified:false,
+      ...(data.receipt.tool==='agent.read_sequence'?{steps:signedReadStepReceipts(data.receipt)}:{})},
      ...(verifiedGithubSource?{sourceUrl:verifiedGithubSource}:{}),sources:toolSources.slice(0,8),
      scope:'public_bubbles_conversation',ownerToolsVerified:false,phoneVerified:false};
     state='complete';

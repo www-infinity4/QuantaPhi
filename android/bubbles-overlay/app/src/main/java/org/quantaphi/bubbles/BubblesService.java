@@ -270,7 +270,7 @@ public final class BubblesService extends Service {
      */
     boolean openFilePicker(android.webkit.ValueCallback<android.net.Uri[]> callback, boolean historyJson) {
         // JSON/ZIP imports can exhaust memory on low-RAM phones during MP4 encoding.
-        // Preserve the existing history while the recorder finishes saving.
+        // Keep the existing website history intact; retry after Stop & save.
         if (historyJson && ScreenCaptureService.isRunning()) {
             BrainNotes.prefs(this).edit().putString("last_error",
                 "Finish saving the current recording before importing history").apply();
@@ -901,6 +901,13 @@ public final class BubblesService extends Service {
 
     private void beginAudioRecording() {
         if (liveMicrophoneOwned) { pendingAudioRecording = false; return; }
+        // A second Record tap must not reset the active WAV or its transcript.
+        if (recording.active()) {
+            pendingAudioRecording = false;
+            BrainNotes.prefs(this).edit().putBoolean("audio_active", true)
+                .putString("audio_state", "Recording microphone sound").apply();
+            return;
+        }
         pendingAudioRecording = false;
         try {
             recording.start(new java.io.File(getFilesDir(), "captures"));
@@ -917,7 +924,12 @@ public final class BubblesService extends Service {
         final java.io.File completed;
         try {
             completed = recording.finish();
-            if (completed == null) return; // No sound bytes; do not report a fake save.
+            if (completed == null) {
+                // Stop before microphone startup (or with zero PCM) is not a save.
+                BrainNotes.prefs(this).edit()
+                    .putString("audio_state", "No microphone recording to save").apply();
+                return;
+            }
             final String transcript = recordedWords;
             BrainNotes.prefs(this).edit()
                 .putString("audio_path", completed.getAbsolutePath())
@@ -1099,7 +1111,9 @@ public final class BubblesService extends Service {
         Pattern namedWake=Pattern.compile("^(?:(?:hey|hi|hello|okay|ok)\\s+)?(?:"+Pattern.quote(alias)+"|bubbles(?:\\s+ai)?|bubble\\s+ai)(?=$|[\\s,:.!?])",Pattern.CASE_INSENSITIVE);
         Matcher matcher = namedWake.matcher(text);
         boolean directed = matcher.find();
-        // A tapped RecordB start is an intentional foreground interaction.
+        // A tapped RecordB start is an intentional foreground interaction. Keep
+        // its short spoken follow-up window even with app/media sound playing.
+        // All longer-lived recording controls still require source gating.
         if (typed) {
             VoiceCaptureCommands.Command started = VoiceCaptureCommands.parse(text);
             if (started != null && "screen_video".equals(started.action)) {

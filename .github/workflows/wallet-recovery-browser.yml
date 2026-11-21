@@ -1,0 +1,32 @@
+name: Wallet recovery browser regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'workers/unified-wallet/**'
+      - 'test/bubbles-owner-wallet-recovery.test.cjs'
+      - 'test/wallet-recovery-form.browser.cjs'
+      - 'test/unified-wallet-account-isolation.test.cjs'
+      - '.github/workflows/wallet-recovery-browser.yml'
+  pull_request:
+    paths:
+      - 'workers/unified-wallet/**'
+      - 'test/bubbles-owner-wallet-recovery.test.cjs'
+      - 'test/wallet-recovery-form.browser.cjs'
+      - 'test/unified-wallet-account-isolation.test.cjs'
+      - '.github/workflows/wallet-recovery-browser.yml'
+permissions:
+  contents: read
+jobs:
+  recovery-form:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test test/bubbles-owner-wallet-recovery.test.cjs test/unified-wallet-account-isolation.test.cjs
+      - run: npm install --no-save --package-lock=false playwright@1.56.1
+      - run: npx playwright install --with-deps chromium
+      - run: node test/wallet-recovery-form.browser.cjs

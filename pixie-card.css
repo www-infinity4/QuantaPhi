@@ -1,0 +1,14 @@
+/* Pixie Stories quick card: scoped, non-destructive Oracle Octaves styling. */
+#pixieStoryCard{position:relative;overflow:hidden;border:1px solid #e7b9d0;background:linear-gradient(145deg,#fffafa,#ffeff7 60%,#f9ecff);border-radius:18px;margin:15px 0;padding:18px;color:#532c4c;box-shadow:0 5px 19px #a24f8017}
+#pixieStoryCard *{box-sizing:border-box}
+#pixieStoryCard .pixie-kicker{margin:0 0 8px;font-size:11px;letter-spacing:.12em;color:#a13c74;font-weight:900}
+#pixieStoryCard .pixie-head{display:flex;align-items:center;gap:15px}
+#pixieStoryCard .pixie-flower{display:grid;place-items:center;min-width:76px;width:76px;height:76px;border-radius:50%;background:radial-gradient(circle,#ffeef7 38%,#ecc5df 40%,#f6dbea 63%,#fff0f6 66%);font-size:50px;color:#be5f99}
+#pixieStoryCard h2{font-size:25px;line-height:1.1;letter-spacing:-.035em;margin:0}
+#pixieStoryCard .pixie-lead{font-size:14px;line-height:1.55;color:#69445f;margin:12px 0}
+#pixieStoryCard .pixie-actions{display:flex;flex-wrap:wrap;gap:9px}
+#pixieStoryCard .pixie-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;text-decoration:none;font-weight:800;font-size:13px;color:white;background:#a43b73;border-radius:12px;border:1px solid #a43b73}
+#pixieStoryCard .pixie-actions a+ a{background:#fff;color:#893b6f;border-color:#d5adca}
+#pixieStoryCard .pixie-note{margin:12px 0 0;font-size:11px;line-height:1.4;color:#815e75}
+#pixieStoryCard a:focus-visible{outline:3px solid #5025a1;outline-offset:3px}
+@media(max-width:380px){#pixieStoryCard{padding:13px}#pixieStoryCard .pixie-flower{width:55px;min-width:55px;height:55px;font-size:33px}#pixieStoryCard h2{font-size:22px}}

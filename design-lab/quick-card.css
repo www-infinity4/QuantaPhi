@@ -1,0 +1,28 @@
+/* Source-rotated, functional compact Power Chain card. All selectors scoped. */
+.lab-quick-card{font-family:system-ui,-apple-system,Roboto,sans-serif;color:#262522;max-width:100%;min-width:0}
+.lab-quick-card *{box-sizing:border-box}
+.lab-quick-card .lab-card-art{min-height:185px;padding:19px 20px;position:relative;isolation:isolate;overflow:hidden;border-radius:16px;color:#fff;background:radial-gradient(circle at 81% 38%,#ae6455 0%,#5d352e 33%,#232825 81%)}
+.lab-quick-card .lab-card-art:after{content:"";position:absolute;right:10%;top:-31%;width:48%;aspect-ratio:1;border:2px solid #ead6bd60;border-radius:50%;box-shadow:0 0 0 17px #f3d3bc14,0 0 0 35px #f3d3bc10,0 0 0 54px #f3d3bc09}
+.lab-card-eyebrow{display:block;font-size:9px;font-weight:850;letter-spacing:.16em;color:#f5cdb7}
+.lab-quick-card .lab-card-art h3{margin:52px 0 4px;font:500 37px/1 Georgia,serif;letter-spacing:-.05em;position:relative;z-index:1;color:#fff}
+.lab-quick-card .lab-card-art p{font-size:12px;position:relative;z-index:1;margin:0;color:#f2e4d6}
+.lab-card-disc{position:absolute;right:13%;top:28%;height:98px;width:98px;transform:rotateX(29deg) rotateZ(-20deg);border-radius:50%;background:radial-gradient(circle,#e9c5aa,#7e3a31 50%,#552d28 53%,#eacbab 58%,transparent 61%);box-shadow:0 9px 19px #120e0e77,0 0 0 9px #dfc4aa3b,0 0 0 10px #c5987180}
+.lab-card-disc span{position:absolute;inset:33%;border-radius:50%;border:1px solid #ffccb0;background:#c56647;box-shadow:inset 0 3px 5px #fff8,0 4px 8px #0005}
+.lab-card-content{display:grid;gap:10px;padding:15px 4px 4px}
+.lab-card-label{font-size:10px;font-weight:900;letter-spacing:.14em;color:#915035}
+.lab-card-input{padding:11px 13px;font:inherit;font-size:14px;min-width:0;width:100%;border:1px solid #cdbdb0;border-radius:12px;background:#fff;color:#282624}
+.lab-card-lanes{display:flex;flex-wrap:wrap;gap:6px}
+.lab-card-lane{border:1px solid #d5c8bc;border-radius:50px;padding:7px 11px;font-size:11px;font-weight:850;background:#f3ede7;color:#5c564e}
+.lab-card-lane[aria-pressed="true"]{background:#9e4734;color:#fff;border-color:#9e4734}
+.lab-card-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.lab-card-go{border:0;border-radius:12px;min-height:45px;padding:10px 13px;background:#a94432;color:#fff;font-size:11px;font-weight:950;flex:1}
+.lab-card-stop{border:1px solid #d9cbbd;background:#fff;border-radius:12px;padding:10px 13px;min-height:45px;font-size:11px;font-weight:800}
+.lab-card-go:disabled,.lab-card-stop:disabled{opacity:.5}
+.lab-card-open{color:#9d4a33;font-size:11px;font-weight:850;text-decoration:none;padding:8px 3px}
+.lab-card-status,.lab-card-fine{font-size:11px;line-height:1.5;color:#70665f;margin:0}
+.lab-card-results{display:grid;gap:5px}
+.lab-card-result{display:flex;flex-direction:column;padding:10px;background:#fff;border:1px solid #e7dbcf;border-radius:9px;color:#93412f;text-decoration:underline;font-weight:800;font-size:12px;line-height:1.4;overflow-wrap:anywhere}
+.lab-card-result small{color:#686055;text-decoration:none;font-weight:550;font-size:10px;margin-top:4px}
+.lab-card-shared{margin-top:9px}
+.lab-quick-card :focus-visible{outline:3px solid #cd865e;outline-offset:3px}
+@media(max-width:440px){.lab-quick-card .lab-card-art{min-height:165px}.lab-quick-card .lab-card-art h3{font-size:32px}.lab-card-disc{height:80px;width:80px}.lab-card-actions{gap:5px}.lab-card-go{padding:9px 11px}}

@@ -11,8 +11,13 @@ assert.ok(neuralStart>0&&neuralEnd>neuralStart);
 // Source classifier fixtures exercise the deterministic path; the asynchronous
 // model only runs in the actual verified-owner chat.
 const source=originalSource.slice(0,neuralStart)+' let neuralCoding=false;\n'+originalSource.slice(neuralEnd);
-const modeLine=site.slice(site.indexOf('   const mode='),site.indexOf('   const namedWorkflow=',site.indexOf('   const mode=')));
-const classify=new Function('request','coderIntent',source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
+const modeStart=site.indexOf('   const workflowDispatch=');
+const modeEnd=site.indexOf('   const action=',modeStart);
+assert.ok(modeStart>0&&modeEnd>modeStart);
+const modeLine=site.slice(modeStart,modeEnd);
+// The real chat resolves namedCardWork from its card catalog before entering this
+// excerpt. Here, exercise the old operator with no named-card match.
+const classify=new Function('request','coderIntent','const namedCardWork=null;\nconst contextualPluralRepair=false;\n'+source+'\n'+modeLine+'\nreturn {ownerGithubNonAction,createRepository,directCoding,requestsAgents,mode};');
 
 test('create a new file uses GitHub WRITE, not READ',()=>{
  const request='Create a new file named hello.txt in RecordB';
@@ -20,6 +25,17 @@ test('create a new file uses GitHub WRITE, not READ',()=>{
  assert.equal(result.createRepository,false,'file creation is not repository creation');
  assert.equal(result.directCoding,true,'file creation must reach GitHub tool route');
  assert.equal(result.mode,'write','file creation needs commit_files permission');
+});
+test('moving a card enters the direct write adapter, while questions and refusals stay inert',()=>{
+ for(const request of ['Move the Gary Cardone card to the carousel','Put the Gary Cardone card in the carousel',
+  'Place the Gary Cardone card in rotation','Relocate the Gary Cardone card']){
+  const result=classify(request,()=>null);
+  assert.equal(result.directCoding,true,request);
+  assert.equal(result.mode,'write',request);
+ }
+ for(const request of ['Do not move the Gary Cardone card','How do I move the Gary Cardone card?']){
+  assert.equal(classify(request,()=>null).directCoding,false,request);
+ }
 });
 test('repair conversation mentioning a repository is not a creation instruction',()=>{
  assert.equal(classify('Reads & Realms broke; build notes in the GPT Investigation repo',()=>null).createRepository,false);
@@ -49,11 +65,11 @@ test('create repository differs from file creation; questions and refusals never
 test('GitHub responses distinguish read, commit, PR and repo creation blockers',()=>{
  const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
  const humanReplies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
- assert.match(humanReplies.githubReply({ok:true,status:'inspected'}),/No files were created or changed/);
+ assert.match(humanReplies.githubReply({ok:true,status:'inspected'}),/No changes were made/);
  const commit=humanReplies.githubReply({ok:true,status:'committed_unverified',receipts:[
   {status:'committed_unverified',commitSha:'a'.repeat(40)},
   {status:'pull_request_open',url:'https://github.com/www-infinity4/RecordB/pull/5'}]});
- assert.match(commit,/source commit/);
+ assert.match(commit,/source changes were saved/);
  assert.match(commit,/pull\/5/);
  assert.match(commit,/not verified/);
  const created=humanReplies.githubReply({ok:true,status:'repository_created',repository:'www-infinity4/Bubbles-QA',url:'https://github.com/www-infinity4/Bubbles-QA',environment:{status:'blocked',error:'github_workflow_setup_http_403'}});
@@ -114,4 +130,20 @@ test('repository creation contract is explicit and does not report verified CI o
  assert.equal(result.deployed,false);
  assert.deepEqual(JSON.parse(calls[1].options.body).private,true);
  assert.ok(calls.every(c=>c.options.redirect==='manual'));
+});
+
+test('a bare completed status cannot claim passed checks or deployed code without verification',()=>{
+ const start=site.indexOf('const humanReplies=()=>({'),end=site.indexOf('const brainTools=',start);
+ const replies=new Function(site.slice(start,end)+'\nreturn humanReplies;')()();
+ for(const outcome of [
+  {ok:true,status:'completed'},
+  {ok:true,status:'completed',testsVerified:false},
+  {ok:true,status:'deployed_verified',deploymentVerified:false},
+  {ok:true,status:'success'}
+ ]){
+  const spoken=replies.githubReply(outcome);
+  assert.doesNotMatch(spoken,/checks passed|repair is finished|deployed successfully|what should we work on next/i);
+  assert.match(spoken,/not verified|not confirmed|unverified|awaiting/i);
+ }
+ assert.match(replies.githubReply({ok:true,status:'deployed_verified',deploymentVerified:true,testsVerified:true}),/verified|passed/i);
 });

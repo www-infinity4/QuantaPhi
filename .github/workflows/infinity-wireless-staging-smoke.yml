@@ -1,0 +1,50 @@
+name: Infinity Wireless staging write/readback smoke
+on:
+  push:
+    branches: ['feature/bubbles-wireless-card-20261102']
+    paths: ['.github/workflows/infinity-wireless-staging-smoke.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify real D1 write, protected read and idempotency
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import {randomBytes} from 'node:crypto';
+          const origin='https://quantaphi.org';
+          const url='https://quantaphi-infinity-wireless-orders.marvaseater.workers.dev/api/wireless/orders';
+          const token=randomBytes(32).toString('hex');
+          const payload={city:'Testville',state:'IA',goal:'pilot',backhaul:'unknown',acceptedPlanningOnly:true,requestKey:token};
+          const post=(body,originHeader=origin)=>fetch(url,{method:'POST',headers:{Origin:originHeader,'Content-Type':'application/json'},body:JSON.stringify(body)});
+          const denied=await post(payload,'https://example.net');
+          assert.equal(denied.status,403,'cross-origin request must be blocked');
+          const made=await post(payload);
+          const receipt=await made.json();
+          assert.equal(made.status,201,JSON.stringify(receipt));
+          assert.equal(receipt.ok,true);
+          assert.match(receipt.id,/^IW-[A-F0-9]{20}$/);
+          assert.equal(receipt.serviceActive,false);
+          assert.equal(receipt.coverageVerified,false);
+          const missing=await fetch(url+'/'+receipt.id);
+          assert.equal(missing.status,401,'status lookup must require private key');
+          const lookup=await fetch(url+'/'+receipt.id,{headers:{Authorization:'Bearer '+token}});
+          const saved=await lookup.json();
+          assert.equal(lookup.status,200);
+          assert.equal(saved.id,receipt.id);
+          assert.ok(saved.events.some(e=>e.kind==='request_received'));
+          const replay=await post(payload);
+          assert.equal(replay.status,200,'retry must be idempotent');
+          assert.equal((await replay.json()).id,receipt.id);
+          const changed=await post({...payload,goal:'business'});
+          assert.equal(changed.status,409,'same key cannot be reassigned');
+          console.log('Verified staging D1 request, receipt, auth and idempotency: '+receipt.id);
+          console.log('This is a synthetic planning record, not real coverage.');
+          NODE

@@ -1,0 +1,55 @@
+name: QuantaPhi public directory and singing studio
+on:
+  pull_request:
+    paths:
+      - 'directory/**'
+      - 'studio/**'
+      - 'index.html'
+      - 'privacy.html'
+      - 'sitemap.xml'
+      - 'oracle-card-deck.js'
+      - 'source-quick-cards.mjs'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/public-directory-studio.test.mjs'
+      - '.github/workflows/directory-studio-checks.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'directory/**'
+      - 'studio/**'
+      - 'index.html'
+      - 'privacy.html'
+      - 'sitemap.xml'
+      - 'oracle-card-deck.js'
+      - 'source-quick-cards.mjs'
+      - 'bubbles-card-catalog.mjs'
+      - 'test/public-directory-studio.test.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Validate all directory and studio modules
+        run: |
+          node --check directory/records.mjs
+          node --check directory/directory.mjs
+          node --check studio/songbook.mjs
+          node --check studio/studio.mjs
+          node --check source-quick-cards.mjs
+          node --check oracle-card-deck.js
+          node --check bubbles-card-catalog.mjs
+          node --test test/public-directory-studio.test.mjs test/source-quick-cards.test.mjs test/bubbles-card-workspace.test.mjs
+      - name: Verify directory privacy and copyright guardrails
+        run: |
+          ! grep -En 'scrape|collectAllProfiles|fetch\\(.*facebook\\.com|fetch\\(.*starmakerstudios' directory/directory.mjs studio/studio.mjs
+          grep -q '/studio/' index.html
+          grep -q '/directory/' sitemap.xml

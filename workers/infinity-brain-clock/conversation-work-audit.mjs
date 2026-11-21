@@ -1,8 +1,9 @@
 /* Read-only owner-conversation work discovery; no ticket creation, credentials or export. */
 const topics=[
+ ['infinity-nuances','Infinity OS Cart 003/004 nuance discovery','QuantaPhi',/\b(?:cart\s*0*0?[34]\b|nuances?\b|infinity\s+os\b|41\s+(?:main\s+)?carts?\b|calculator\s+twins?\b)\b/i],
  ['owner-delegation','ChatGPT–Bubbles owner connection','QuantaPhi',/\b(?:owner (?:mode|chat|access|session)|five.day (?:owner|session)|5.day session|connect (?:yourself|gpt|chatgpt) (?:to|with) bubbles|hook (?:in|into) (?:bubbles|owner)|robot brain access)\b/i],
  ['conversation-memory','Bubbles conversation retrieval and memory','QuantaPhi',/\b(?:memory|memories|synapse|conversation (?:history|archive|context|categor|fold)|parse (?:my |older |old )?(?:messages|conversations)|remember (?:my|previous)|grammarphi)\b/i],
- ['autonomous-building','Autonomous repository build and verification','QuantaPhi',/\b(?:self.build|build(?:ing)? (?:itself|on its own)|automatic(?:ally)? (?:build|upgrade|repair)|autonom(?:ous|ation)|repo(?:sitor(?:y|ies))? (?:not |in)?(?:fully )?built|unfinished (?:projects|repos|builds)|test ground ai|brain runner|github (?:commit|pr|repo|tools?))\b/i],
+ ['autonomous-building','Autonomous repository build and verification','QuantaPhi',/\b(?:self.build|build(?:ing)? (?:itself|on its own)|automatic(?:ally)? (?:build|upgrade|repair)|autonom(?:ous|ation)|repo(?:sitor(?:y|ies))? (?:not |in)?(?:fully )?built|unfinished (?:projects|repos|builds)|test ground ai|brain runner|github (?:commits?|pull requests?|prs?|repos?(?:itor(?:y|ies))?|tools?))\b/i],
  ['apk-web-sync','Android APK and website shared chat/voice','QuantaPhi',/\b(?:apk|android|phone)\b[\s\S]{0,110}\b(?:sync|synch|website|webview|same (?:version|voice|chat)|not respond)|\b(?:sync|synch|same (?:version|voice|chat))\b[\s\S]{0,110}\b(?:apk|android)\b/i],
  ['voice','Natural continuous Bubbles voice','QuantaPhi',/\b(?:voice|speak|speech|microphone|mic|tts|sing|diaphragm|listening)\b/i],
  ['recorder','Bubbles native recording and capture','RecordB',/\b(?:record(?:ing|er)?|media.?projection|screen capture|xrecorder|recordb)\b/i],
@@ -11,7 +12,7 @@ const topics=[
  ['wallet','Unified wallet and development receipts','QuantaPhi',/\b(?:wallet|starcoin|quants?|infinity token|mint|credits? (?:for|on) commits?)\b/i],
  ['site-building','Website builder and published interaction tests','Omni-Phi',/\b(?:website|webpage|code phi|publish(?:ed|ing)? (?:site|page)|site (?:build|builder|test))\b/i]
 ];
-const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
+const DIRECT=/\b(?:fix|repair|build|create|add|implement|integrate|connect|hook|sync|synch|upgrade|improve|test|verify|check|inspect|publish|deploy|import|restore|make|continue|read|find|teach|use|push|run|set up|set it up|need(?:s)? to|have to|must|should|want (?:you|bubbles|it) to)\b/i;
 const FAILURE=/\b(?:broken|doesn.t work|not working|stuck|can.t|cannot|failed|failing|shuts? off|not (?:sync|respond|playing)|lost|missing|unfinished|not built)\b/i;
 const CONSTRAINT=/\b(?:do not|don't|never|without|stop|only|must|should|prefer|no more|instead of|not (?:sing|chant|read))\b/i;
 const validId=v=>/^[A-Za-z0-9_-]{8,100}$/.test(v||'');
@@ -32,7 +33,8 @@ export function auditWorkHistory(messages,{maxCandidates=30}={}){
   for(const [id,title,repo,re] of topics.filter(v=>v[3].test(t)).slice(0,5)){
    let task=found.get(id);
    if(!task){task={id,title,repositorySuggestion:'www-infinity4/'+repo,repositoryVerified:false,status:'candidate_needs_repository_inspection',kind:kind(t),evidence:[],constraints:[],
-    nextChecks:['read target repository and relevant issues/PRs','compare exact source against request','run appropriate tests','verify deployment and observable behavior']};found.set(id,task)}
+    nextChecks:['read target repository and relevant issues/PRs','compare exact source against request','run appropriate tests','verify deployment and observable behavior'],mentions:0};found.set(id,task)}
+   task.mentions++;
    if(task.evidence.length<12&&!task.evidence.some(e=>e.messageId===message.id))task.evidence.push({messageId:message.id,at:Number.isSafeInteger(message.at)?message.at:null,excerpt:brief(t,320)});
    if(CONSTRAINT.test(t)&&task.constraints.length<8){const c=brief(t,220);if(!task.constraints.includes(c))task.constraints.push(c)}
    if(kind(t)==='repair')task.kind='repair';
@@ -40,14 +42,16 @@ export function auditWorkHistory(messages,{maxCandidates=30}={}){
  }
  return [...found.values()].sort((a,b)=>b.evidence.length-a.evidence.length||a.id.localeCompare(b.id)).slice(0,Math.max(0,Math.min(30,Number(maxCandidates)||30)));
 }
-export function reconcileWorkEvidence(candidate,proof){
+// Compatibility helper for candidate rendering only. The old implementation
+// promoted a self-asserted 'passed' flag and an arbitrary URL to 'tests_verified'.
+// Model-provided claims are untrusted evidence; independent readback lives in
+// work-receipt-readback.mjs and even that cannot certify completed features.
+export function reconcileWorkEvidence(candidate,_untrustedClaim){
  if(!candidate||typeof candidate.id!=='string')throw TypeError('candidate_required');
- const base={...candidate};
- if(!proof||proof.repository!==candidate.repositorySuggestion||!/^[0-9a-f]{40}$/.test(proof.sha||''))return base;
- if(!Array.isArray(proof.testReceipts)||!proof.testReceipts.length||proof.testReceipts.some(t=>t?.passed!==true||!t?.url))return base;
- if(proof.deployed===true&&(!/^https:\/\//.test(proof.deploymentUrl||'')||proof.liveObserved!==true))return base;
- return {...base,status:proof.deployed===true?'deployed_observed':'tests_verified',repositoryVerified:true,
-  receipt:{repository:proof.repository,sha:proof.sha,tests:proof.testReceipts.map(t=>t.url).slice(0,8),...(proof.deployed===true?{deploymentUrl:proof.deploymentUrl}:{})}};
+ const copy={...candidate,status:'candidate_needs_repository_inspection',
+  repositoryVerified:false};
+ delete copy.receipt;
+ return copy;
 }
 // Invoke only from existing wallet-verified /owner/conversation route. Owner is server-derived.
 export async function auditOwnerConversation(db,owner,body={}){

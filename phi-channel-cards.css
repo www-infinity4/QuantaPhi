@@ -6,6 +6,8 @@
 .channelphi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:14px;align-items:start}
 .channelphi-card{background:#fff;border:1px solid #ddcfeb;border-radius:18px;padding:13px;display:flex;flex-direction:column;gap:9px;min-width:0;box-shadow:0 5px 14px #45276912}
 .channelphi-card.channelphi-playing{grid-column:1/-1}
+.channelphi-card.channelphi-kyou{grid-column:1/-1;border-color:#a4c9e6;background:#f7fbff}
+.channelphi-kyou-logo{display:block;width:90px;max-width:35%;height:48px;object-fit:contain}
 .channelphi-mast{display:flex;align-items:center;gap:10px;min-width:0}
 .channelphi-monogram{display:grid;place-items:center;flex:0 0 48px;height:48px;border-radius:13px;color:white;font-size:18px;font-weight:950;background:linear-gradient(145deg,#7340aa,#42205f)}
 .channelphi-omni .channelphi-monogram{background:linear-gradient(145deg,#0c74bf,#4d2ca3)}
@@ -41,3 +43,44 @@
 .channelphi-controls .channelphi-stop{background:#56212c;color:#fff}
 .channelphi-prev:focus-visible,.channelphi-next:focus-visible,.channelphi-sound:focus-visible{outline:3px solid #ffd877;outline-offset:2px}
 @media(max-width:430px){.channelphi-video-slot .channelphi-frame,.channelphi-video-slot .channelphi-video{height:100%;min-height:0}.channelphi-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.channelphi-controls button{font-size:14px}}
+
+/* KYOU official media screen. It must never be a 520px embedded website. */
+.channelphi-kyou .channelphi-screen{display:block;aspect-ratio:16/9;min-height:0;border:1px solid #31546f;border-radius:15px;background:radial-gradient(circle at 50% 35%,#285a75 0%,#091925 76%);text-decoration:none}
+.channelphi-kyou .channelphi-art{inset:10% 16%;width:68%;height:80%;object-fit:contain;opacity:1}
+.channelphi-kyou .channelphi-screen-label{justify-content:flex-end;gap:8px;padding:12px;background:linear-gradient(0deg,#071923ed 0%,#07192322 62%,transparent 100%);text-shadow:none;color:#fff}
+.channelphi-kyou .channelphi-screen .channelphi-play-icon{display:grid;place-items:center;flex:none;width:54px;height:54px;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;border:2px solid #f5faff;border-radius:50%;background:#f7fbff;color:#183c58;font-size:23px;box-shadow:0 3px 20px #0006}
+.channelphi-kyou .channelphi-screen-label strong{font:700 13px/1.35 system-ui,sans-serif;color:#fff}
+.channelphi-kyou .channelphi-screen:focus-visible{outline:3px solid #2b88bd;outline-offset:3px}
+.channelphi-kyou .channelphi-screen:hover .channelphi-play-icon{background:#e7f3fb}
+
+/* Separate player Quick Cards: calmer typography, actual poster before play,
+   a single 16:9 screen, standard media controls and minimal extra chrome. */
+#phiChannelCards.channelphi-guide-home{padding:15px;background:#f8fafb;border-color:#c8d8e1;color:#253d50;box-shadow:none}
+.channelphi-guide-home .channelphi-heading h2{color:#24394b;font-size:clamp(23px,4vw,29px)}
+.channelphi-guide-home .channelphi-heading p{color:#536778;font-size:16px;line-height:1.6}
+.channelphi-guide-poster{display:block;width:100%;max-height:190px;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#dce6ec}
+.channelphi-guide-links,.channelphi-source-links{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.channelphi-guide-links{padding:13px 0}
+.channelphi-guide-links a,.channelphi-source-links a{display:inline-flex;align-items:center;min-height:42px;padding:8px 12px;border:1px solid #b5c8d5;border-radius:9px;background:#fff;color:#23577a;text-decoration:none;font:650 14px/1.4 system-ui,sans-serif}
+.channelphi-guide-links a:focus-visible,.channelphi-source-links a:focus-visible{outline:3px solid #d9ae5c;outline-offset:2px}
+.channelphi-standalone-root{display:block;max-width:800px;margin:14px auto}
+.channelphi-independent{display:flex;flex-direction:column;gap:11px;padding:clamp(12px,3vw,20px);background:#fbfcfd;border:1px solid #c7d5df;border-radius:18px;box-shadow:none;color:#263b4b;min-width:0}
+.channelphi-independent .channelphi-name h3{font-size:clamp(22px,4.5vw,28px);letter-spacing:.01em;color:#203b50}
+.channelphi-independent .channelphi-kicker{color:#527086}
+.channelphi-independent .channelphi-description{font-size:16px;line-height:1.58;letter-spacing:.015em;color:#435768}
+.channelphi-airing{margin:0;font:750 16px/1.45 system-ui;color:#1a415a}
+.channelphi-program-note{margin:0;font-size:13px;line-height:1.52;color:#536f7e}
+.channelphi-independent .channelphi-screen{aspect-ratio:16/9;min-height:0;border:0;border-radius:12px;background:#0b1a29;overflow:hidden}
+.channelphi-independent .channelphi-art{object-fit:cover;opacity:1}
+.channelphi-independent .channelphi-screen-label{background:linear-gradient(180deg,transparent 45%,#081321cf 100%);justify-content:center}
+.channelphi-independent .channelphi-play-icon{border-radius:13px;width:63px;height:47px;font:24px/1 system-ui;background:#121b29d9;border:1px solid #ffffffa0}
+.channelphi-independent .channelphi-viewer{padding:0;background:#101921;border-radius:12px;overflow:hidden}
+.channelphi-independent .channelphi-video-slot{border-radius:0}
+.channelphi-independent .channelphi-now{padding:5px 11px;color:#edf3f7;font-size:14px}
+.channelphi-independent .channelphi-status{padding:3px 11px 8px;color:#d4e1e8}
+.channelphi-independent .channelphi-controls{display:flex;gap:8px;justify-content:flex-end;padding:8px}
+.channelphi-independent .channelphi-controls button{flex:0 0 auto;min-height:44px;min-width:74px;border:1px solid #8d9eac;border-radius:9px;padding:9px 12px!important;background:#e6edf3;color:#273a4c;font:650 13px/1.4 system-ui}
+.channelphi-independent:not(.channelphi-omni) :is(.channelphi-prev,.channelphi-sound){display:none}
+.channelphi-independent.channelphi-omni .channelphi-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.channelphi-independent.channelphi-omni .channelphi-controls button{min-width:0}
+@media(max-width:420px){.channelphi-standalone-root{margin:10px auto}.channelphi-independent{padding:12px}.channelphi-independent .channelphi-controls button{font-size:13px}}

@@ -114,7 +114,8 @@ test('same Android Bubbles conversation bypasses model-only chat for live lookup
  assert.match(source,/const weatherContinuation=/);
  assert.match(source,/bubbles-weather-town/);
  assert.match(source,/do i need an umbrella/);
- assert.match(source,/sourceTool\?/);
+ assert.match(source,/status\.textContent=json\.answerStatus==='partial'/);
+ assert.doesNotMatch(source,/Bubbles model \+ verified tool:/);
  assert.match(source,/ba-search-sources/);
  assert.match(source,/body:JSON.stringify\(lookupPayload\(\)\)/);
 });
@@ -214,7 +215,7 @@ test('model-suggested tools never turn a repository repair or greeting into a re
  r=await call({request:'Hello Bubbles',mcp:true},env);
  data=await r.json();
  assert.equal(data.receipt.tool,'oracle.chat');
- assert.equal(selections,1);
+ assert.equal(selections,0,'greetings should avoid the redundant read-only AI selector');
  assert.equal(chats,2);
 });
 

@@ -25,7 +25,8 @@ async function health(){
    new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(Error('timeout'))},7000)})
   ]);
   return response.ok?'reachable (HTTP '+response.status+')':
-    response.status===401||response.status===403?'reachable; access controlled (HTTP '+response.status+')':
+    response.status===404?'not publicly verifiable (HTTP 404; owner-only protection or missing route)':
+    response.status===401||response.status===403?'access controlled (HTTP '+response.status+'); owner session not established by this check':
     'HTTP '+response.status+' (service needs inspection)';
  }catch{return 'unreachable or blocked by browser/network';}
  finally{clearTimeout(timer)}
@@ -50,7 +51,7 @@ async function run(){
    line('Brain wallet verification',info?info.server+' ('+info.reason+')':'owner script not loaded'),
    line('Owner session',owner?'server-verified on this page':'not verified on this page'),
    line('Account OAuth',account?.dataset?.ready==='true'?'GitHub and Cloudflare approved':'not fully verified; not a basic-chat requirement'),
-   line('Brain public health',await health())
+   line('Brain health (owner-protected)',await health())
   ];
   result.replaceChildren(...stages);
   summary.textContent=owner?'Owner check: verified on this page':'Owner check: needs attention (view details)';

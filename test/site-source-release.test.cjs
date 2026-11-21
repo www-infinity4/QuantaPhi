@@ -33,19 +33,28 @@ test('QuantaPhi gateway serves current main Oracle styling and video studio asse
  assert.ok(!calls.some(url=>url.includes('/www-infinity4/Oracle/main/oracle-interface.css')));
 });
 
-const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
+const routing=source.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|accountRelease|sourceRef) =/.test(line)).join('\n');
 const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
 test('the automatic request interface and planner follow current main, including legacy cache URLs',()=>{
  for(const sourcePath of ['/index.html','/bubbles.html','/bubbles/index.html','/bubbles-chrome.html','/bubbles-ai.js','/bubbles-brain-actions.js','/robot-directions.js','/robot-work-report.js','/src/specialist-planner.js','/bubbles-ai.css','/bubbles-card-workspace.mjs']){
   for(const query of ['','?v=20261017-verified-receipts1','?v=20261019-auto-start1'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/'+query)),'main');
  }
 });
-test('existing account, download and live-GPT source pins are preserved',()=>{
+test('account connection repair follows current main; unrelated source pins stay preserved',()=>{
  const url=new URL('https://quantaphi.org/');
- assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'5314715a3a403b548f54440dd7975c7dd7972390');
+ assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-connections.mjs'},url),'main');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/apk-downloads.js'},url),'6643d2727f5be56dd0f1b217f532099899833bca');
  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:'/bubbles-gpt-live.js'},url),'40dc5b89ec8ae53804daa7fae6184a904b73fab0');
- assert.match(source,/quantaphi-org-service-20261019-chat-repair-v3/);
+ assert.match(source,/quantaphi-org-service-20261029-housing-v15/);
+ assert.doesNotMatch(source,/quantaphi-org-service-20261026-oracle-auth-v7/);
+ assert.doesNotMatch(source,/quantaphi-org-service-20261026-mobile-oauth-v8/);
+});
+
+test('old and new sign-in URLs use the same current account repair',()=>{
+ for(const sourcePath of ['/bubbles.html','/bubbles-accounts.html','/bubbles-signin-gate.mjs','/bubbles-connections-gate.mjs','/bubbles-connections.mjs','/bubbles-auth.css','/bubbles-auth-return.mjs','/assets/auth-cloudflare.svg','/assets/auth-github.svg']){
+  for(const v of ['20261026-signin2','20261018-direct2','20261026-oracle-auth1'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v='+v)),'main');
+  assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=future-release')),'main');
+ }
 });
 
 test('versioned chat repair assets use one tested immutable commit, while future main stays current',()=>{
@@ -53,4 +62,24 @@ test('versioned chat repair assets use one tested immutable commit, while future
   assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=20261019-chat-repair1')),'70324fb07090c9e2c15929b4a70c11afa4693c86');
   assert.equal(sourceRef({repo:'QuantaPhi',sourcePath},new URL('https://quantaphi.org/?v=future-release')),'main');
  }
+});
+
+test('Infinity results and directory pages allow only same-origin viewer framing',async()=>{
+ const context={URL,Request,Response,Headers,AbortController,setTimeout,clearTimeout,
+ fetch:async()=>new Response('<html><body>source</body></html>',{headers:{'Content-Type':'text/html','X-Frame-Options':'DENY'}})};
+ vm.runInNewContext(source.replace(/^import \{videoAPI\} from '.\/video-api\.mjs';\s*/,'').replace('export default','globalThis.worker='),context);
+ for(const path of ['/infinity-search-results.html','/directory/','/studio/','/source-quick-card.html']){
+  const response=await context.worker.fetch(new Request('https://quantaphi.org'+path),{});
+  assert.equal(response.headers.get('X-Frame-Options'),'SAMEORIGIN',path);
+ }
+ const home=await context.worker.fetch(new Request('https://quantaphi.org/'),{});
+ assert.equal(home.headers.get('X-Frame-Options'),'DENY');
+});
+
+test('the quality-gated card release uses one immutable source for all its assets',()=>{
+ for(const path of ['/source-quick-cards.mjs','/oracle-card-deck.js','/oracle-card-deck.css','/quanta-card-experience.css','/quanta-card-experience.mjs'])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:path},new URL('https://quantaphi.org/?v=20261024-quality-gate4')),'60f916b744e24c909106f01ae346d9abb2a187b9');
+});
+
+test('Walmart release assets use their tested immutable commit',()=>{
+ for(const [path,v] of [['/oracle-card-deck.js','20261024-walmart1'],['/walmart-card.css','20261024-pizza1'],['/walmart-card.mjs','20261024-pizza1']])assert.equal(sourceRef({repo:'QuantaPhi',sourcePath:path},new URL('https://quantaphi.org/?v='+v)),'a0ed33c9fe67a475c8c395af00142fbe4f58c8ac');
 });

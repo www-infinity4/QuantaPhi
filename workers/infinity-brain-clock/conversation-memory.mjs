@@ -1,5 +1,8 @@
 import {notificationSettings} from './notification-settings.mjs';
 import {auditOwnerConversation} from './conversation-work-audit.mjs';
+import {sweepOwnerWorkHistory} from './conversation-work-sweep.mjs';
+import {readbackOwnerWorkReceipt} from './work-receipt-readback.mjs';
+import {reconcileOwnerBacklog} from './conversation-ticket-reconcile.mjs';
 // Owner-only conversation archive. Kept separate from verified engineering outcomes.
 const initialized=new WeakSet();
 export const capabilities=[
@@ -35,6 +38,9 @@ export function searchTerms(query){return [...new Set(String(query||'').toLowerC
 export async function conversationMemory(db,owner,body){
  if(!initialized.has(db)){for(const sql of schema)await db.prepare(sql).run();initialized.add(db);}
  if(body.mode==='work-audit')return auditOwnerConversation(db,owner,body);
+ if(body.mode==='work-audit-sweep')return sweepOwnerWorkHistory(db,owner,body);
+ if(body.mode==='work-audit-source-check')return readbackOwnerWorkReceipt(owner,body);
+ if(body.mode==='work-audit-reconcile')return reconcileOwnerBacklog(db,owner,body);
  if(['notification-preferences','notification-claim'].includes(body.mode))return notificationSettings(db,owner,body);
  if(['voice-claim','voice-renew','voice-status','voice-release'].includes(body.mode)){
   if(!/^[a-zA-Z0-9_-]{8,100}$/.test(body.client||''))throw Error('voice_client_invalid');

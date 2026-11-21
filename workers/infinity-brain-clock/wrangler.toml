@@ -24,6 +24,14 @@ entrypoint = "BrainModels"
 binding = "BOT_WALLET"
 service = "unified-wallet"
 environment = "production"
+
+# Preserve the verified production TinyFish broker service routing.
+# Without this declaration a staged Worker silently drops the service
+# binding, breaking owner-approved browser/quick-card operations.
+[[services]]
+binding = "TINYFISH_BROKER"
+service = "continuity-session-coordinator"
+environment = "production"
 [[durable_objects.bindings]]
 name = "CLOCK"
 class_name = "BrainClock"

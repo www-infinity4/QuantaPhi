@@ -9,6 +9,9 @@
   function create(options) {
     const keepMs = Math.max(5000, Math.min(90000, Number(options?.followupMs) || 30000));
     const requireWakeName = options?.requireWakeName !== false;
+    // Embedded cards are public places: require an explicit address on each turn,
+    // even during follow-up windows when television or nearby people are audible.
+    const requireWakeEveryTurn = options?.requireWakeEveryTurn === true;
     let activeUntil = 0;
     let quiet = false;
     let lastMessage = '';
@@ -27,7 +30,7 @@
       const matched = text.match(wake);
       const directed = Boolean(matched);
       const content = directed ? text.slice(matched[0].length).replace(/^[\s,:.!?-]+/, '').trim() : text;
-      if ((!requireWakeName && quiet) || (requireWakeName && !directed && (quiet || now > activeUntil))) return {type: 'ignore', reason: 'wake_name_required'};
+      if ((requireWakeEveryTurn && !directed) || (!requireWakeName && quiet) || (requireWakeName && !directed && (quiet || now > activeUntil))) return {type: 'ignore', reason: 'wake_name_required'};
       if (MUTE.test(content)) {
         activeUntil = 0; quiet = true;
         return {type: 'mute'};

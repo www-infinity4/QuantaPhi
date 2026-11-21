@@ -1,0 +1,19 @@
+name: Walmart product card
+on:
+  pull_request:
+    paths: ['walmart-card.*', 'oracle-card-deck.js', 'index.html', 'test/walmart-card.test.mjs', '.github/workflows/walmart-card.yml']
+  push:
+    branches: [main]
+    paths: ['walmart-card.*', 'oracle-card-deck.js', 'index.html', 'test/walmart-card.test.mjs', '.github/workflows/walmart-card.yml']
+permissions:
+  contents: read
+jobs:
+  walmart-card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check walmart-card.mjs
+      - run: node --test test/walmart-card.test.mjs test/oracle-card-deck.test.cjs

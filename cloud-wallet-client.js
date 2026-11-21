@@ -201,7 +201,10 @@ global.InfinityCloudWallet=InfinityUnifiedWallet;
 function installCloudWalletRecoveryLink(){
  if(!['/','/index.html','/QuantaPhi/','/QuantaPhi/index.html'].includes(location.pathname))return;
  if(document.getElementById('qpCloudRecoveryLink'))return;
- const target=document.querySelector('.qbalances')||document.querySelector('.qtop');
+ // Recovery belongs in the existing hamburger's account links, not as a large chip
+ // between the wallet summary and the main search. All older standalone pages
+ // without a menu retain the original visible recovery entry.
+ const target=document.getElementById('qmenu')||document.querySelector('.qbalances')||document.querySelector('.qtop');
  if(!target)return;
  const link=document.createElement('a');
  link.id='qpCloudRecoveryLink';
@@ -209,7 +212,9 @@ function installCloudWalletRecoveryLink(){
  link.textContent='Find Cloud Tokens';
  link.setAttribute('aria-label','Find StarCoins, Quants and Infinity records in Cloudflare');
  Object.assign(link.style,{display:'inline-flex',alignItems:'center',justifyContent:'center',borderRadius:'999px',border:'1px solid #bba0df',background:'#f0e3fc',color:'#4a207f',padding:'8px 12px',minHeight:'40px',fontSize:'13px',fontWeight:'800',textDecoration:'none',whiteSpace:'nowrap'});
- target.appendChild(link);
+ const walletMenu=document.getElementById('qmenuWallet');
+ if(target.id==='qmenu'&&walletMenu?.parentElement===target)walletMenu.insertAdjacentElement('afterend',link);
+ else target.appendChild(link);
 }
 if(typeof document!=='undefined'){
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',installCloudWalletRecoveryLink,{once:true});

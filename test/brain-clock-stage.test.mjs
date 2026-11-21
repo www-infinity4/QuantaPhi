@@ -21,7 +21,8 @@ test('a trusted main commit may stage a zero-traffic version but NEVER routes pr
  const build=workflow.slice(workflow.indexOf('npx --yes wrangler@4 deploy'));
  assert.match(build,/--dry-run/);
  assert.match(workflow,/persist-credentials: false/);
- assert.match(workflow,/if: \${{ github\.event_name == 'push' \|\| inputs\.operation == 'stage_version' }}/);
+ assert.equal((workflow.match(/if: \${{ steps\.stage_gate\.outputs\.stage_ready == 'true' }}/g)||[]).length,3);
+ assert.match(workflow,/node scripts\/brain-stage-source-receipt\.mjs gate/);
  assert.match(workflow,/CLOUDFLARE_API_TOKEN: \${{ secrets\.CLOUDFLARE_API_TOKEN }}/);
  assert.match(workflow,/This workflow never deploys a Worker/);
 });

@@ -4,11 +4,14 @@ export async function searchGithubCode(env, body, request=fetch) {
  const query=String(body.query||'').trim().replace(/\s+/g,' ').slice(0,160);
  if(query.length<2||/[^\p{L}\p{N}\s._+@#/-]/u.test(query))
   return {ok:false,status:'blocked',error:'invalid_search_query'};
- const scope=body.scope==='owner'?'owner':'public';
- const scoped=scope==='owner'?query+' user:www-infinity4':query;
+ const scope=body.scope==='repository'?'repository':body.scope==='owner'?'owner':'public';
+ const repository=scope==='repository'?String(body.repository||''):null;
+ if(scope==='repository'&&!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(repository))
+  return {ok:false,status:'blocked',error:'invalid_repository_scope'};
+ const scoped=scope==='repository'?query+' repo:'+repository:scope==='owner'?query+' user:www-infinity4':query;
  const searchUrl='https://github.com/search?q='+encodeURIComponent(scoped)+'&type=code';
  const token=env.GITHUB_TOKEN;
- if(!token&&scope==='owner')
+ if(!token&&scope!=='public')
   return {ok:false,status:'blocked',error:'github_owner_search_requires_connection',scope,query,searchUrl,complete:false};
  if(token){
   const response=await request('https://api.github.com/search/code?q='+encodeURIComponent(scoped)+'&per_page=15',{
@@ -25,7 +28,7 @@ export async function searchGithubCode(env, body, request=fetch) {
      excerpt:Array.isArray(item.text_matches)?item.text_matches.map(m=>String(m.fragment||'').slice(0,220)).join(' ').slice(0,420):''}))
      .filter(item=>item.url.startsWith('https://github.com/'))};
   }
-  if(scope==='owner')
+  if(scope!=='public')
    return {ok:false,status:'blocked',error:'github_code_search_http_'+response.status,scope,query,searchUrl,complete:false};
  }
  // GitHub repository search is public without a token. Name and description

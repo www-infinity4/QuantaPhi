@@ -172,7 +172,19 @@ final class FloatingOracleWindow {
     }
     boolean show() {
         if (root != null) {
+            final boolean reopened = root.getVisibility() != View.VISIBLE;
             root.setVisibility(View.VISIBLE);
+            // Hiding via the Android X does not destroy the first-party WebView.
+            // On genuine reopen, begin a new visible conversation without
+            // clearing the owner archive or NativeChatJournal crash backup.
+            // Do not reset while the web bridge has an unfinished voice/typed turn.
+            if (reopened && websiteReady && trustedChat(website)
+                    && !dispatchInFlight && !typedDispatchInFlight
+                    && pendingSpeech.isEmpty() && pendingTyped.isEmpty()) {
+                website.evaluateJavascript(
+                    "Boolean(window.QuantaBubbles && window.QuantaBubbles.startFreshOnReopen && window.QuantaBubbles.startFreshOnReopen())",
+                    null);
+            }
             checkSiteRevision();
             return true;
         }

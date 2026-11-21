@@ -44,5 +44,5 @@ test('blocked job history can be paged without losing older upgrades',()=>{
  assert.match(report,/blockedOffset-10/);
  assert.match(report,/candidates\.slice\(offset,offset\+10\)/);
  assert.match(report,/Blocked jobs /);
- assert.match(card,/robot-work-report\.js\?v=20261019-chat-repair1/);
+ assert.match(card,/robot-work-report\.js\?v=20261029-gpt-handoff1/);
 });

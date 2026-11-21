@@ -1,0 +1,36 @@
+name: Restricted advertising Worker verification
+on:
+  pull_request:
+    paths:
+      - 'workers/restricted-ads/**'
+      - 'restricted-ad-policy.mjs'
+      - 'test/restricted-ads-worker.test.mjs'
+      - 'test/test_restricted_ads_migrations.py'
+      - 'work/unfinished/TICKET-1905.md'
+      - '.github/workflows/restricted-ad-worker.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'workers/restricted-ads/**'
+      - 'test/restricted-ads-worker.test.mjs'
+      - 'test/test_restricted_ads_migrations.py'
+      - 'work/unfinished/TICKET-1905.md'
+      - '.github/workflows/restricted-ad-worker.yml'
+jobs:
+  age-verification:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify Worker modules
+        run: |
+          node --check workers/restricted-ads/index.mjs
+          node --check restricted-ad-policy.mjs
+      - name: Prove denied by default, consent enforcement and reviewed creative delivery
+        run: node --test test/restricted-ad-policy.test.mjs test/restricted-ads-worker.test.mjs
+      - name: Verify D1 migration adds required expiring campaign evidence without approving old rows
+        run: python3 -m unittest discover -s test -p 'test_restricted_ads_migrations.py' -v

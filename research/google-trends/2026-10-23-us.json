@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "date_us_central": "2026-10-23",
+  "source": "Google Trends Trending Now, United States, Past 24 hours",
+  "source_url": "https://trends.google.com/trending?geo=US&hours=24",
+  "capture": "Read in authenticated Cloudflare browser-rendering against Google's public trending page; not a live Google Trends API",
+  "search_volume_meaning": "Google Trends approximate search-volume ranges; not QuantaPhi viewers and not exact counts",
+  "topics": [
+    {
+      "query": "knicks vs celtics",
+      "searches_min_label": "200K+",
+      "card": "googleTrendNba",
+      "interaction": "Switch NBA matchups, dates, view ESPN scores and game details"
+    },
+    {
+      "query": "bulls vs bucks",
+      "searches_min_label": "200K+",
+      "card": "googleTrendNba",
+      "interaction": "Switch NBA matchups, dates, view ESPN scores and game details"
+    },
+    {
+      "query": "rays vs brewers",
+      "searches_min_label": "200K+",
+      "card": "googleTrendMlb",
+      "interaction": "View MLB postseason games by date, score, inning and original game page"
+    },
+    {
+      "query": "ethan klein",
+      "searches_min_label": "200K+",
+      "card": "googleTrendCulture",
+      "interaction": "Find source articles, videos and related searches, no invented coverage"
+    },
+    {
+      "query": "avengers doomsday",
+      "searches_min_label": "20K+",
+      "card": "googleTrendCulture",
+      "interaction": "Find current movie headlines, trailers and related searches"
+    },
+    {
+      "query": "gladiator ii netflix release date",
+      "searches_min_label": "20K+",
+      "card": "googleTrendCulture",
+      "interaction": "Find source reporting and check release/streaming availability"
+    }
+  ],
+  "live_source_feeds": [
+    {
+      "role": "NBA scores",
+      "origin": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard?dates=YYYYMMDD",
+      "browser_verified_200": true,
+      "provider": "ESPN"
+    },
+    {
+      "role": "MLB schedule, status and scores",
+      "origin": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=YYYY-MM-DD&hydrate=linescore",
+      "browser_verified_200": true,
+      "provider": "MLB"
+    }
+  ],
+  "limitations": [
+    "Search snapshot must not be represented as a live trend feed.",
+    "Sports source APIs may change, be delayed or unavailable.",
+    "Article and video publishers retain rights; no copying full content.",
+    "No affiliation or endorsement claimed."
+  ]
+}

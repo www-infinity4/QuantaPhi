@@ -25,9 +25,17 @@ export async function planReadSteps(ai,options){
  return {tool_calls:value.calls.map(c=>({name:c.name,arguments:c.arguments}))};
 }
 const trim=(v,n)=>typeof v==='string'?v.trim().slice(0,n):'';
-const writes=/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create|execute|shell|python|termux)\b/i;
+const writes=/\b(?:delete|purchase|pay|transfer|approve|authorize|deploy|merge|commit|install|edit|modify|repair|fix|implement|build|create)\b/i;
+// Mentioning Python, a shell, or a code parser is not a request to EXECUTE them.
+// Only an explicit execution verb with an execution target leaves the read-only lane.
+const codeExecution=/\b(?:run|execute|launch|start|install)\s+(?:(?:the|some|my|a)\s+)?(?:python|bash|shell|termux|scripts?|code|commands?)\b/i;
 export function needsReadAgent(question){
- if(writes.test(question)||!/\b(?:and|then|also|compare)\b/i.test(question))return false;
+ if(writes.test(question)||codeExecution.test(question)||!/\b(?:and|then|also|compare)\b/i.test(question))return false;
+ // Multiple named libraries in a research question deserve separate sourced
+ // reads before synthesis; a single broad search snippet is not a comparison.
+ if(/\b(?:research|compare|explain|investigate)\b/i.test(question)&&
+    /\b(?:libraries|parsers|frameworks|packages|tools)\b/i.test(question)&&
+    /\b(?:and|versus|vs\.?)\b/i.test(question))return true;
  const groups=[/\b(?:weather|forecast)\b/i,/\b(?:news|headlines)\b/i,/\b(?:search|research)\b/i,
   /\b(?:github|repository)\b|(?:^|\s)[\w.-]+\/[\w.-]+(?=\s|[,.?!]|$)/i,/https:\/\/(?:www\.)?quantaphi\.org/i,/\b(?:calculate|resonance)\b/i];
  const independentGroups=groups.filter(p=>p.test(question)).length;

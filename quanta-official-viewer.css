@@ -1,0 +1,14 @@
+/* Full-size mobile-first official-site experience; no fake chat UI. */
+.qov-card{background:#fff;color:#1b2736;border:1px solid #dce6ee;border-radius:19px;padding:clamp(14px,3.5vw,23px);display:grid;gap:12px;box-shadow:0 10px 34px #24426313;min-width:0}
+.qov-card *{box-sizing:border-box}.qov-card h3{margin:0!important;color:#193b60!important;font-size:clamp(20px,3vw,25px)!important;line-height:1.25}
+.qov-card p{margin:0!important;line-height:1.5}.qov-eyebrow{font-weight:800;font-size:11px;letter-spacing:.09em;color:#165f9e}
+.qov-help{color:#506070!important;font-size:13px}
+.qov-actions{display:flex;align-items:stretch;gap:9px;flex-wrap:wrap}
+.qov-card .qov-primary,.qov-card .qov-secondary,.qov-card .qov-preview{font:750 14px/1.35 system-ui,sans-serif;min-height:48px;border-radius:11px;padding:12px 14px;display:inline-flex;justify-content:center;align-items:center;text-decoration:none!important;cursor:pointer}
+.qov-card .qov-primary{border:1px solid #006bc4;background:#086bb4;color:#fff!important}
+.qov-card .qov-secondary{border:1px solid #b9d0e5;background:#f7fbff;color:#1a5689!important}
+.qov-card .qov-preview{border:1px solid #b9d0e5;background:#e8f3ff;color:#1d5688;width:100%}
+.qov-card .qov-actions>:first-child{flex:1 1 175px}.qov-card :is(a,button):focus-visible{outline:3px solid #f3af38;outline-offset:3px}
+.qov-frame-box{min-width:0;border:1px solid #d3dce4;background:#f2f4f7;border-radius:14px;overflow:hidden}
+.qov-frame-box[hidden]{display:none!important}.qov-frame{width:100%;height:min(72vh,690px);min-height:380px;border:0;background:#f5f7fa;display:block}
+@media(max-width:440px){.qov-card .qov-actions{display:grid;grid-template-columns:1fr}.qov-frame{height:70vh;min-height:410px}}

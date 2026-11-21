@@ -60,7 +60,7 @@ test('stalled GitHub response recovers by the original receipt ID without resubm
  const ctx={Response,AbortController,setTimeout:(fn,ms)=>setTimeout(fn,Math.min(ms,10)),clearTimeout,
   embedded:false,BRAIN:'https://brain.test',crypto:webcrypto,
   verifiedOwnerHeaders:async()=>({Authorization:'Bearer test-fixture-only'}),
-  watchDirectGithubReceipt:id=>watched.push(id),
+  rememberRecentGithubWork:()=>{},watchDirectGithubReceipt:id=>watched.push(id),
   fetch:async(url,options)=>{calls.push(JSON.parse(options.body));return new Response(new ReadableStream({start(c){c.enqueue(new TextEncoder().encode('{'));}}));}};
  vm.createContext(ctx);
  vm.runInContext(helper+cut('async function directGithubOperation(', '\ninput.addEventListener'),ctx);

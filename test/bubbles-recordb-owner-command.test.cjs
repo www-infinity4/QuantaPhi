@@ -43,17 +43,18 @@ test('named RecordB issue is submitted to its own repository, not stale selectio
 test('explicit RecordB bot-team requests take the authenticated ticket path',()=>{
  assert.match(site,/bot\\s\+team/);
  assert.match(site,/let directCoding=!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue&&codeTask;/);
- assert.match(site,/else if\(!embedded&&isOwnerWorkRequest\(request\)\)/);
- assert.match(site,/submitWork\(request,'explicit-user-command'\)/);
+ assert.match(site,/else if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
+ assert.match(site,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
  assert.match(site,/Target: '\+ticket.repository/);
  assert.match(site,/completed code, APK recording tests and deployment still require actual runner receipts/);
 });
 
 test('every Bubbles entrypoint loads the unpinned fresh action router',()=>{
- const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|sourceRef) =/.test(line)).join('\n');
+ const routing=gateway.split('\n').filter(line=>/^  const (?:repairRef|newQuantaRelease|newOctavesRelease|requestFlowRelease|chatRepairRelease|signinRelease|accountRelease|sourceRef) =/.test(line)).join('\n');
  const sourceRef=new Function('route','incoming',routing+';return sourceRef;');
- const version='20261022-observed-card1';
- const brainsVersion='20261020-tool-driver1';
+ const version=fs.readFileSync('bubbles.html','utf8').match(/\/bubbles-ai\.js\?v=([0-9A-Za-z_-]+)/)?.[1];
+ assert.ok(version,'Bubbles script revision is required');
+ const brainsVersion='20261025-speech-guard1';
  for(const path of ['index.html','bubbles.html','bubbles/index.html','bubbles-chrome.html']){
   const html=fs.readFileSync(path,'utf8');
   assert.match(html,new RegExp('bubbles-brain-actions\\.js\\?v='+brainsVersion));
