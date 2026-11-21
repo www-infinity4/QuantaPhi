@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T08:31:20.646732Z",
+  "checked_at": "2026-11-21T09:01:30.210896Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "la cascara motel gta 6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:30:00Z",
+      "related_news_urls": [
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
+        "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
+        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A",
+      "image_credit": "Mobalytics",
+      "news": [
+        {
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-la-cascara-motel-robbery",
+          "title": "All La Cascara Motel Robbery Loot & Secrets Locations - GTA 6",
+          "publisher": "Mobalytics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+        },
+        {
+          "url": "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
+          "title": "La Cascara Motel Walkthrough",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjrUv5vfIM36kxOJDii_T06O4j_IjfUP2KuosItC8URIJ9Olf-emyCWLNnIGs"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
+        }
+      ]
+    },
+    {
+      "query": "dreamstate",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:10:00Z",
+      "related_news_urls": [
+        "https://edm.com/news/above-beyond-first-anjunabeats-classics-set-dreamstate-festival/",
+        "https://weraveyou.com/2026/11/7-artists-you-cant-miss-at-dreamstate-socal-2026/",
+        "https://hoodline.com/2026/11/dreamstate-brings-afterparty-aboard-queen-mary-in-long-beach/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiWJdGz-zoMmshQnkkwrYyd9zO5gRETBCCF-iNDaYKhY3JpKxRonwVW2AVbM",
+      "image_credit": "EDM.com",
+      "news": [
+        {
+          "url": "https://edm.com/news/above-beyond-first-anjunabeats-classics-set-dreamstate-festival/",
+          "title": "Above & Beyond to Play First-Ever ‘Anjunabeats Classics’ Set at Dreamstate Festival",
+          "publisher": "EDM.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiiWJdGz-zoMmshQnkkwrYyd9zO5gRETBCCF-iNDaYKhY3JpKxRonwVW2AVbM"
+        },
+        {
+          "url": "https://weraveyou.com/2026/11/7-artists-you-cant-miss-at-dreamstate-socal-2026/",
+          "title": "7 artists you can’t miss at Dreamstate SoCal 2026",
+          "publisher": "We Rave You",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpqLfS1m6dSLN5aCouKpDdUS_J0JQmcpQ6kCvc1DyYaVF_F6fAVrn70YPDaZg"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/dreamstate-brings-afterparty-aboard-queen-mary-in-long-beach/",
+          "title": "Dreamstate weekend plan at Queen Mary",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoNCCnvEBqCDVZm-LYpxasPzcOF0m7fHNn0jQgXudIdyFjCQAlHdPjcEDhrLw"
+        }
+      ]
+    },
     {
       "query": "jensen ackles",
       "approx_searches": "100+",
@@ -47,8 +117,8 @@
       "published_at": "2026-11-21T07:50:00Z",
       "related_news_urls": [
         "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
-        "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review",
-        "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/"
+        "https://nextbestpicture.com/the-further-mis-adventures-of-cliff-booth/",
+        "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M",
       "image_credit": "Los Angeles Times",
@@ -61,18 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M"
         },
         {
+          "url": "https://nextbestpicture.com/the-further-mis-adventures-of-cliff-booth/",
+          "title": "\"THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH\" - Review",
+          "publisher": "Next Best Picture",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNjzheM-os6dYrAmdjwU7XUc46K4ogMTYcIFN55rZMKxujaHtSuGIvpoziSw"
+        },
+        {
           "url": "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review",
           "title": "The Further Mis-Adventures of Cliff Booth review: Brad Pitt returns to his Oscar-winning role in a 'macho fantasy' ★★★☆☆",
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2YlOYT8KbJtBPu7fyW8s1u5sgEMQPj3j0xgv0DM1TIR0lD7XFdMNmpi0uJbE"
-        },
-        {
-          "url": "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/",
-          "title": "‘The Further Mis-Adventures of Cliff Booth’ Review: David Fincher’s Breezy Tarantino Spinoff Is a Disappointing Compromise Between Great Directors",
-          "publisher": "IndieWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmetxSa0wNd5irutH-0iHWxdPc70G59awqAVp6cLTzRclhjUZo5SXqb3no12o"
         }
       ]
     },
@@ -135,7 +205,7 @@
           "title": "First & 10: Central Ohio high school football scores | Week 4 of playoffs",
           "publisher": "10TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfBUHYDbTrDiT87Sy-TP9onlg-vfFHhNRK73_k0de8Bc13jzvOoRfueJh8GGs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd2rFFgQmrbxxcO_M1qXsSKRa2PFgeHW0KZGYWhZPABa5QfT83MmzBPdwmb2E"
         },
         {
           "url": "https://www.dispatch.com/story/sports/high-school/football/2026/11/20/ohio-high-school-football-scores-ohsaa-playoff-fourth-round-games--live/92869988007/",
@@ -183,7 +253,7 @@
     },
     {
       "query": "gta 6 money glitch",
-      "approx_searches": "200+",
+      "approx_searches": "100+",
       "published_at": "2026-11-21T07:40:00Z",
       "related_news_urls": [
         "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
@@ -221,13 +291,20 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-21T07:30:00Z",
       "related_news_urls": [
+        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
         "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
-        "https://www.theguardian.com/sport/live/2026/nov/21/australia-v-england-first-mens-t20-cricket-international-live",
-        "https://www.bbc.com/sport/cricket/live/c30y48pz38qt"
+        "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gOyL8Uyn8U0VK_PRk4reY1JytCBKBC62OTb3fc5HqFNbsR9g_7BNrW6PiIA",
+      "image_credit": "BBC",
       "news": [
+        {
+          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
+          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gOyL8Uyn8U0VK_PRk4reY1JytCBKBC62OTb3fc5HqFNbsR9g_7BNrW6PiIA"
+        },
         {
           "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
           "title": "Harper's Australia debut a much-needed good story",
@@ -236,24 +313,17 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7jZMpbY-nrsnKq5bLNm3dnxCuVRiqrQvqcFmRN5fsFlqI1CKLICee2zzsh5s"
         },
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/21/australia-v-england-first-mens-t20-cricket-international-live",
-          "title": "Australia v England: first men’s T20 cricket international – live",
-          "publisher": "The Guardian",
+          "url": "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html",
+          "title": "Australia wins the toss and will bowl in the 1st of 5 T20 matches against England",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT09oMfzpCtEWtbnrRT6OFTB0yb6HFbi--rLerU1Ecxs1Sjp95uHgZXEPxPA2c"
-        },
-        {
-          "url": "https://www.bbc.com/sport/cricket/live/c30y48pz38qt",
-          "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRpU2u88n4CyBBQ_c-Yz7Gl5aLu1oPBUMmFb4FnDAlic7LwOfsCbBK2uAWsi4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlqj3pX5hPGUOP9zpn90p8ZaDqYXH7ajEzqD7MD7dRCd8Xyvo0UWsl-23h1U"
         }
       ]
     },
     {
       "query": "is there a casino in gta 6",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-21T07:30:00Z",
       "related_news_urls": [
         "https://insider-gaming.com/gta-6-casino/",
@@ -283,76 +353,6 @@
           "publisher": "Hindustan Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6GQDkqzLhd0bC4kDAJu6lTr4AgYMU7EL7nCpaNYXVt8CVjPUoxQD16VGHbA"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 interactive map",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T07:20:00Z",
-      "related_news_urls": [
-        "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
-        "https://www.shacknews.com/article/151428/gta6-interactive-map-shackmaps",
-        "https://www.ign.com/wikis/gta-6/About_the_GTA_6_Guide_Editors"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA",
-      "image_credit": "GamesIndustry.biz",
-      "news": [
-        {
-          "url": "https://www.gamesindustry.biz/ign-partners-with-rockstar-to-host-official-strategy-guide-for-gta-6",
-          "title": "IGN partners with Rockstar to host Official Strategy Guide for GTA 6",
-          "publisher": "GamesIndustry.biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA"
-        },
-        {
-          "url": "https://www.shacknews.com/article/151428/gta6-interactive-map-shackmaps",
-          "title": "Grand Theft Auto 6 interactive map - Shackmaps",
-          "publisher": "Shacknews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiHSV61DyobRBBGLLR4yje5RmGqDbPco0SB2vybvYDKERzv3UHfYhLs-MqtIc"
-        },
-        {
-          "url": "https://www.ign.com/wikis/gta-6/About_the_GTA_6_Guide_Editors",
-          "title": "About the GTA 6 Guide Editors",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-XdNh3WmMQVYg1yzPR_WKkij2HjWPLuu9DqUmAj8PcCFM8oLLxflBYS2hLLI"
-        }
-      ]
-    },
-    {
-      "query": "zoe saldana",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T07:20:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/articleshow/136042615.cms",
-        "https://demokratis.co.id/en/zoe-saldana-star-trek",
-        "https://www.socialnews.xyz/2026/11/20/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPmC7TBAeRPA8_1jBr4Fjebe9aFFfXXXDUxr-6OPVecr1wYELBgzDXYhKRDo",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/articleshow/136042615.cms",
-          "title": "When Zoe Saldana spoke about her mother’s obsession with ‘Star Trek’",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZPmC7TBAeRPA8_1jBr4Fjebe9aFFfXXXDUxr-6OPVecr1wYELBgzDXYhKRDo"
-        },
-        {
-          "url": "https://demokratis.co.id/en/zoe-saldana-star-trek",
-          "title": "Zoe Saldana Recalls Her Mother's Star Trek Influence",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShDGMDCB10Us1B_f9H_Iy4Cpwl5HleiJmDi6FSnneU4dSvwRZXyhCuij6FGus"
-        },
-        {
-          "url": "https://www.socialnews.xyz/2026/11/20/when-zoe-saldana-spoke-about-her-mothers-obsession-with-star-trek/",
-          "title": "When Zoe Saldana spoke about her mother’s obsession with ‘Star Trek’",
-          "publisher": "Social News XYZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbXZd7B9yA82X1YM-LNc3dgdXEoHWG14U9nY-Tq0DuGpwu6-1IzXu4t3ofqC0"
         }
       ]
     }
