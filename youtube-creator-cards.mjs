@@ -1,4 +1,5 @@
 import {YOUTUBE_CHANNEL,YOUTUBE_VIDEO_DATABASE,YOUTUBE_TOPICS,findYouTubeVideo,searchYouTubeVideos} from './youtube-creator-catalog.mjs';
+import {JULIE_DERU_CHANNEL,JULIE_DERU_VIDEO_DATABASE,JULIE_DERU_TOPICS,findJulieDeruVideo,searchJulieDeruVideos} from './julie-deru-catalog.mjs';
 
 /* In-card public-source browser. Each user click mounts at most one YouTube
  * player; switching videos removes the previous iframe. No autoplay, rehost,
@@ -10,22 +11,30 @@ let activeFrame=null;
 function stopPlayer(){
  if(activeFrame){activeFrame.remove();activeFrame=null;}
 }
+if(typeof window!=='undefined')window.addEventListener('quantaphi:youtube-player-stop',stopPlayer);
 export function mountYouTubeCreatorCard(root,card){
- if(card?.youtubeChannelId!==YOUTUBE_CHANNEL.channelId)return false;
+ const isJulie=card?.youtubeChannelId===JULIE_DERU_CHANNEL.channelId;
+ if(!isJulie&&card?.youtubeChannelId!==YOUTUBE_CHANNEL.channelId)return false;
+ const channel=isJulie?JULIE_DERU_CHANNEL:YOUTUBE_CHANNEL;
+ const database=isJulie?JULIE_DERU_VIDEO_DATABASE:YOUTUBE_VIDEO_DATABASE;
+ const topics=isJulie?JULIE_DERU_TOPICS:YOUTUBE_TOPICS;
+ const find=isJulie?findJulieDeruVideo:findYouTubeVideo;
+ const searchVideos=isJulie?searchJulieDeruVideos:searchYouTubeVideos;
+ const indexRoute=isJulie?'julie-deru-youtube':'abbecadventures-youtube';
  const panel=el('section','qcx-tool youtube-creator-post-card');
- panel.setAttribute('aria-label','AbbeCAdventures indexed video database');
- panel.append(el('h3','','AbbeCAdventures · Public YouTube videos'),
-  el('p','qcx-note',YOUTUBE_VIDEO_DATABASE.videos.length+' source-identified videos · partial archive · checked '+YOUTUBE_VIDEO_DATABASE.coverage.checkedAt),
+ panel.setAttribute('aria-label',channel.name+' indexed video database');
+ panel.append(el('h3','',channel.name+' · Public YouTube videos'),
+  el('p','qcx-note',database.videos.length+' source-identified videos · partial archive · checked '+database.coverage.checkedAt),
   el('p','qcx-note','Titles, links and thumbnails are from the original publisher. Community posts, full upload history and exact publish dates have not been indexed.'));
- let query='',selected=card.youtubeVideoId||YOUTUBE_VIDEO_DATABASE.videos[0]?.videoId;
+ let query='',selected=card.youtubeVideoId||database.videos[0]?.videoId;
  const single=Boolean(card.youtubeVideoId);
  const controls=el('div','qcx-controls');
  let search,picker,previous,next;
  const status=el('p','qcx-note');status.setAttribute('role','status');
  const contents=el('div','youtube-creator-content');
- const rows=()=>single?[findYouTubeVideo(card.youtubeVideoId)].filter(Boolean):searchYouTubeVideos(query);
+ const rows=()=>single?[find(card.youtubeVideoId)].filter(Boolean):searchVideos(query);
  if(!single){
-  search=el('input','qcx-input');search.type='search';search.placeholder='Search indexed videos';search.maxLength=140;search.setAttribute('aria-label','Search AbbeCAdventures indexed videos');
+  search=el('input','qcx-input');search.type='search';search.placeholder='Search indexed videos';search.maxLength=140;search.setAttribute('aria-label','Search '+channel.name+' indexed videos');
   picker=el('select','qcx-input');picker.setAttribute('aria-label','Choose indexed YouTube video');
   search.addEventListener('input',()=>{query=search.value;paint();});
   picker.addEventListener('change',()=>{selected=picker.value;paint();});
@@ -59,14 +68,15 @@ export function mountYouTubeCreatorCard(root,card){
   thumb.addEventListener('error',()=>thumb.remove(),{once:true});figure.append(thumb);
   const playback=el('div','qcx-player');
   const title=el('h4','',video.title);
-  const topic=el('p','qcx-note',YOUTUBE_TOPICS[video.topic]+' · AbbeCAdventures · publish date not verified');
+  const topic=el('p','qcx-note',topics[video.topic]+' · '+channel.name+' · publish date not verified');
   const actions=el('div','qcx-controls');
   actions.append(link('Read original on YouTube',video.sourceUrl));
   const play=button('Play video in card',()=>{
+   window.dispatchEvent(new Event('quantaphi:youtube-player-stop'));
    stopPlayer();
    playback.replaceChildren();
    const frame=el('iframe','qcx-video');
-   frame.title='AbbeCAdventures: '+video.title;
+   frame.title=channel.name+': '+video.title;
    frame.src='https://www.youtube-nocookie.com/embed/'+video.videoId;
    frame.loading='lazy';frame.referrerPolicy='strict-origin-when-cross-origin';
    frame.allow='accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share';
@@ -80,11 +90,11 @@ export function mountYouTubeCreatorCard(root,card){
    el('p','qcx-note','Playback requires a click. YouTube may restrict embedding; the original link remains available.'));
  }
  const footer=el('div','qcx-controls');
- footer.append(link('View original channel',YOUTUBE_CHANNEL.profileUrl));
- if(single)footer.append(link('Browse indexed videos','/source-quick-card.html?card=abbecadventures-youtube'));
+ footer.append(link('View original channel',channel.profileUrl));
+ if(single)footer.append(link('Browse indexed videos','/source-quick-card.html?card='+indexRoute));
  else footer.append(button('Export indexed database',()=>{
-  const blob=new Blob([JSON.stringify(YOUTUBE_VIDEO_DATABASE,null,2)],{type:'application/json'});
-  const url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='abbecadventures-reviewed-video-index.json';a.click();
+  const blob=new Blob([JSON.stringify(database,null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=channel.handle.toLowerCase()+'-reviewed-video-index.json';a.click();
   setTimeout(()=>URL.revokeObjectURL(url),1000);
  }));
  panel.append(footer);root.append(panel);paint();return true;
