@@ -124,6 +124,7 @@
   <link rel="stylesheet" href="/bubbles-auth.css?v=20261026-oracle-auth1">
   <link rel="stylesheet" href="/bubbles-responsive-20261026-v2.css?v=20261026-mobile-layout3">
   <link rel="stylesheet" href="/bubbles-family-modern.css?v=20261104-family-room1">
+  <link rel="stylesheet" href="/automation/bubbles/card.css">
 </head>
 <body class="oracle-octaves-page">
   <main class="bubbles-page">
@@ -224,6 +225,10 @@
       
     </section>
 
+    <section id="bubblesAutomationHub" class="bubbles-wallet" aria-labelledby="bubblesAutomationTitle">
+      <h2 id="bubblesAutomationTitle">Bubbles Automation Hub · ten programs</h2>
+      <p role="status">Source-backed controls · live device and provider permissions are checked separately.</p>
+    </section>
     <section class="bubbles-install" aria-labelledby="bubbles-install-title">
       <div><h2 id="bubbles-install-title">Install Bubbles in Chrome</h2><p>Add Bubbles to your home screen. Chrome will offer installation where supported; otherwise use its three-dot menu.</p></div>
       <button id="bubblesInstallChrome" type="button">Install Bubbles in Chrome</button>
@@ -282,6 +287,7 @@ html.bubble-iframe .bubbles-bottom-nav,body.bubbles-embedded .bubbles-bottom-nav
         }
       });
   </script>
+  <script type="module" src="/automation/bubbles/card.mjs"></script>
 </body>
 </html>
 
