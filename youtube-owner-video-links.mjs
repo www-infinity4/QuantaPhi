@@ -13,6 +13,36 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=UPFgnpkm7MQ',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media'
+},
+{
+ videoId:'93YR_yN2dSY',title:'YouTube video 93YR_yN2dSY (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=93YR_yN2dSY',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'cfGcMiv3pkw',title:'YouTube video cfGcMiv3pkw (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=cfGcMiv3pkw',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'21tiB8QgHoM',title:'YouTube video 21tiB8QgHoM (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=21tiB8QgHoM',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'BM41NL-KoDc',title:'YouTube video BM41NL-KoDc (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=BM41NL-KoDc',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'kd1PLywtQzI',title:'YouTube video kd1PLywtQzI (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=kd1PLywtQzI',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 }];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
@@ -21,6 +51,7 @@ export function validateOwnerYouTubeLink(row){
  if(typeof row.title!=='string'||row.title.length<1||row.title.length>150||
     row.title!==row.title.trim()||/[<>\u0000-\u001f]/.test(row.title))return false;
  if(row.publishedAt!==null||row.publisherVerified!==false||row.contentBoundary!=='general-media')return false;
+ if(row.titleVerified!==undefined&&row.titleVerified!==false)return false;
  return /^\d{4}-\d\d-\d\d$/.test(row.observedAt||'')&&
   Number.isFinite(Date.parse(row.observedAt+'T00:00:00Z'));
 }
@@ -36,5 +67,7 @@ export const REVIEWED_OWNER_VIDEO_CARDS=Object.freeze(REVIEWED_OWNER_VIDEO_LINKS
  reviewedYouTubeVideoId:v.videoId,contentBoundary:'general-media',
  observedAt:v.observedAt,publishedAt:null,publisherVerified:false,
  focus:'Original YouTube link and optional provider-hosted playback only. The publisher and upload date have not been independently verified; do not present this as licensed, current/trending, family education, 21+ or an advertisement.',
- details:'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
+ details:v.titleVerified===false
+  ? 'Owner-supplied YouTube watch URL and syntactically valid video ID; title, channel, playback availability and rights not independently verified. No full-channel import, licensed download or paid placement.'
+  : 'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
 })));
