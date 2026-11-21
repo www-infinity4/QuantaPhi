@@ -109,6 +109,7 @@ def run():
                 checks.append(f'{width}px: six original carousel cards, business placement and strict Following')
 
                 # CryptoCyberia: original X post is source-linked, not auto-embedded.
+                before_widgets=len(widget_requests)
                 page.goto(base+'/source-quick-card.html?card=cryptocyberia-japanese-keyboards',wait_until='domcontentloaded')
                 vintage=page.locator('.reviewed-x-post-card')
                 expect(vintage).to_be_visible()
@@ -117,8 +118,7 @@ def run():
                 expect(vintage.get_by_role('link',name='Read original X post')).to_have_attribute(
                     'href','https://x.com/CryptoCyberia/status/2123913224965988533')
                 assert vintage.locator('[data-mock-x-post]').count()==0, 'No auto-embed on original card'
-                before_widgets=len(widget_requests)
-                assert before_widgets==2, 'No extra X widgets requested without consent'
+                assert len(widget_requests)==before_widgets, 'No X widgets should be requested before consent'
                 vintage.get_by_role('button',name='Load original X post').click()
                 expect(vintage.locator('[data-mock-x-post]')).to_have_count(1)
                 assert len(widget_requests)==before_widgets+1, 'Widget requires one explicit click'
