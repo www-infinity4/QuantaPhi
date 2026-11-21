@@ -19,6 +19,16 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=bzvtKRteavs',
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media',shortsRoute:true
+},{
+ videoId:'XBZA2NJU2UQ',title:'Mom vs daughter wrestling match',
+ sourceUrl:'https://www.youtube.com/watch?v=XBZA2NJU2UQ',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media'
+},{
+ videoId:'_A5x0pVktw8',title:'Wrestling: Mother vs Daughter',
+ sourceUrl:'https://www.youtube.com/watch?v=_A5x0pVktw8',
+ observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media'
 }];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
