@@ -1,0 +1,29 @@
+name: Experimental Viewport Ports (sandbox)
+on:
+  pull_request:
+    paths:
+      - 'sandbox/ports/**'
+      - 'test/experimental-ports.test.mjs'
+      - '.github/workflows/experimental-ports.yml'
+  push:
+    branches:
+      - 'feature/ibm-viewport-ports'
+    paths:
+      - 'sandbox/ports/**'
+      - 'test/experimental-ports.test.mjs'
+      - '.github/workflows/experimental-ports.yml'
+permissions:
+  contents: read
+jobs:
+  static-port-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify isolated viewport state and sandbox safety
+        run: node --test test/experimental-ports.test.mjs
