@@ -1,3 +1,22 @@
+---
+issue: 2038
+state: scoped
+dot: "🔴"
+progress_percent: 0
+progress_basis: "0 of new implementation acceptance checks verified; documentation only"
+sessions_spent: 0
+sessions_remaining_estimate: unknown
+agent: null
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Inventory existing licensed Goudey proofs and verify rights before prototypes."
+merged: false
+deployed: false
+live_verified: false
+---
+
 # TICKET-2038: Goudey fantasy craft card proofing
 
 - **GitHub issue:** https://github.com/www-infinity4/QuantaPhi/issues/2038
