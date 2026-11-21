@@ -127,3 +127,29 @@ test('two new November 21 owner YouTube links each register one source-backed pu
     assert.equal(departmentFor(card),'media');
   }
 });
+
+
+test('owner video GuT4DmGeuS0 is represented once as a source-linked Oracle Media card',()=>{
+  const id='GuT4DmGeuS0';
+  const records=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+  assert.equal(records.length,1,'Do not duplicate user source ID');
+  const v=records[0];
+  assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(v.observedAt,'2026-11-21');
+  assert.match(v.title,/title unverified/i);
+  assert.equal(v.titleVerified,false);
+  assert.equal(v.publisherVerified,false);
+  assert.equal(v.publishedAt,null);
+  assert.equal(v.contentBoundary,'general-media');
+  assert.equal(validateOwnerYouTubeLink(v),true);
+  assert.equal(validateOwnerYouTubeLink({...v,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+  assert.ok(card,'The existing card factory should render the link');
+  assert.equal(card.featureUrl,v.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.match(card.details,/not independently verified/i);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
