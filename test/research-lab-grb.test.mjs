@@ -36,3 +36,26 @@ test('static source-only pages do not upload images, perform profiling or claim 
   assert.match(html,/source|Source/i);
  }
 });
+test('Dopant Oxide AI separates precise oxide research from ambiguous Dopant AI',async()=>{
+ const {classifyMaterialsTerm}=await import('../research-lab/dopant-oxide-ai.mjs');
+ assert.equal(classifyMaterialsTerm('Dopant Oxide AI'),'dopant-oxide-ai');
+ assert.equal(classifyMaterialsTerm('Dopant AI'),'dopant-ai-ambiguous');
+ assert.equal(classifyMaterialsTerm('dopamine diaper rash'),'unrelated');
+ assert.equal(classifyMaterialsTerm('oxide thin film'),'oxide-materials');
+});
+test('84 test is local input/output verification, not GPT brain telemetry',async()=>{
+ const {checkSync84}=await import('../research-lab/dopant-oxide-ai.mjs');
+ assert.deepEqual(checkSync84('84'),{code:84,matched:true,scope:'local-demo',brainTelemetry:false});
+ assert.equal(checkSync84('85').matched,false);
+ assert.equal(checkSync84('840').matched,false);
+});
+test('materials page has grounded sources, privacy limits, and Android accessible controls',()=>{
+ const html=page('dopant-oxide-ai.html');
+ for(const val of ['Dopant Oxide AI','Al₂O₃','B₂O₃','TiO₂','oxygen vacancies'])assert.ok(html.includes(val),val);
+ assert.match(html,/name="viewport"/);
+ assert.match(html,/<main\b/);
+ assert.match(html,/nature\.com\/articles\/s41467-025-64798-w/);
+ assert.match(html,/min-height:\s*44px/);
+ assert.match(html,/not GPT synchronization/i);
+ assert.doesNotMatch(html,/<input\s+type="file"|getUserMedia|geolocation|face-api|tensorflow/i);
+});
