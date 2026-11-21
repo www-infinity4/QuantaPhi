@@ -133,6 +133,7 @@ test('Argo Mill owner Short is indexed in Oracle media without inventing its cha
  assert.ok(c);
  assert.equal(c.secondUrl,'https://www.youtube.com/shorts/bzvtKRteavs');
  assert.equal(c.secondLabel,'Open Shorts link');
+ assert.equal(c.name,'Argo Mill Tour · Idaho Springs');
  assert.match(c.details,/not a complete channel archive/);
  assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
  assert.ok(ACTIVE_SOURCE_CARDS.some(card=>card.id===c.id));
