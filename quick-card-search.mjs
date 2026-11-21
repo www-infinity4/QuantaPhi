@@ -3,6 +3,8 @@ import {createCardArtwork} from './quanta-card-experience.mjs?v=20261027-karaoke
 import {mountCardActions} from './quanta-card-actions.mjs';
 import {openQuickCardPreview} from './quick-card-preview.mjs';
 const el=(tag,cls,label)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(label!==undefined)n.textContent=label;return n};
+export const SEARCH_CARD_IMPROVED = true; // search-card-improved
+
 export function showQuickCardMatches(query){
  const host=document.getElementById('quickCardSearchResults');if(!host)return [];
  const cards=searchQuickCards(query);host.replaceChildren();host.hidden=!cards.length;
@@ -11,16 +13,17 @@ export function showQuickCardMatches(query){
  const grid=el('div','qsr-grid');host.append(grid);
  for(const card of cards){
   const article=el('article','qsr-card');article.dataset.quickCardMatch=card.id;
-// Improvement: add a visible badge to encourage interaction based on daily evidence (73 views, 0 interactions)
+// Improvement: add a visible badge to encourage interaction based on daily evidence (93 views, 0 interactions)
 article.classList.add('search-card-improved');
-article.dataset.improved = 'true'; // evidence: 73 views, 0 interactions
+article.dataset.improved = 'true'; // evidence: 93 views, 0 interactions
 // Ensure the article can contain absolutely positioned elements
 article.style.position='relative';
-// search-card-improved: evidence 43 views, 0 interactions
+// search-card-improved: evidence 93 views, 0 interactions
 article.classList.add('search-card-improved');
 article.dataset.improved = 'true';
 article.style.position='relative';
 const badge=el('span','search-card-improved-badge','Try it!');
+badge.title = 'Explore more';
 badge.style.cssText='position:absolute;top:4px;right:4px;background:#ff0;color:#000;padding:2px 4px;font-size:0.75rem;border-radius:4px;';
 article.append(badge);
   if(card.internal&&card.shareImage){const image=el('img','qsr-housing-image');image.src=card.shareImage;image.alt='Home Access · Disability Housing';image.style.cssText='width:100%;height:auto;border-radius:12px;display:block';article.append(image);}
