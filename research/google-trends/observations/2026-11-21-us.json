@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T13:01:14.357745Z",
+  "checked_at": "2026-11-21T13:30:58.277325Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "alexander zverev ben shelton atp finals",
+      "query": "england vs new zealand",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T12:40:00Z",
+      "published_at": "2026-11-21T13:10:00Z",
       "related_news_urls": [
-        "https://www.atptour.com/en/news/alcaraz-shelton-nitto-atp-finals-2026-sf-preview",
-        "https://www.theguardian.com/sport/live/2026/nov/21/atp-finals-tennis-carlos-alcaraz-v-ben-shelton-live-semi-final-updates",
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/oNZLt9NIR2At/"
+        "https://www.bbc.com/sport/rugby-union/articles/cqrmgjpp0l48o",
+        "https://www.theguardian.com/sport/live/2026/nov/21/england-v-new-zealand-nations-championship-rugby-union-live",
+        "https://www.telegraph.co.uk/rugby-union/2026/11/20/why-beating-all-blacks-is-still-a-massive-scalp-for-england/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgkDuc652f3q8JGgB0rXF_Mt52nt5p5D1Psk9C9q6yQA1_jJVGuxf9tGAHdOE",
-      "image_credit": "ATP Tour",
-      "news": [
-        {
-          "url": "https://www.atptour.com/en/news/alcaraz-shelton-nitto-atp-finals-2026-sf-preview",
-          "title": "Preview: Alcaraz & Shelton clash in Nitto ATP Finals SFs",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgkDuc652f3q8JGgB0rXF_Mt52nt5p5D1Psk9C9q6yQA1_jJVGuxf9tGAHdOE"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/21/atp-finals-tennis-carlos-alcaraz-v-ben-shelton-live-semi-final-updates",
-          "title": "ATP Finals tennis: Carlos Alcaraz v Ben Shelton – live semi-final updates",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhD5Vxrtv-AXbqfS6KO69PxSR5U8bjnMoA30qFQfJuOvfFAfchYv9B_-SWwDE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-schedule-scores-results/oNZLt9NIR2At/",
-          "title": "ATP Finals 2026 live updates: Latest with Alcaraz vs. Shelton in semifinals, Zverev vs. Medvedev to come",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSonwVIbL1hvs1KjV0fNGOmaYs9rHuCyJn5LQJ9khKOnfoLTT0buM6m_NaOeAc"
-        }
-      ]
-    },
-    {
-      "query": "raleigh christmas parade",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T12:40:00Z",
-      "related_news_urls": [
-        "https://abc11.com/post/christmas-holiday-season-2026-nc-raleigh-tree-lighting-parade-heres-how-watch-live-info-parking-transportation/20059319/",
-        "https://www.newsobserver.com/news/local/article318173141.html",
-        "https://www.wral.com/lifestyles/2026-raleigh-christmas-parade-how-to-watch/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxYjQ64__inf6JPxi1PbGHAHN8cnEqB1QQXGxpApdCQRI03hVnZam52xAFgo",
-      "image_credit": "ABC11 News",
-      "news": [
-        {
-          "url": "https://abc11.com/post/christmas-holiday-season-2026-nc-raleigh-tree-lighting-parade-heres-how-watch-live-info-parking-transportation/20059319/",
-          "title": "Christmas Holiday Season 2026 NC: Raleigh Tree Lighting, Parade; Here's how to Watch Live, info on parking, transportation",
-          "publisher": "ABC11 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBxYjQ64__inf6JPxi1PbGHAHN8cnEqB1QQXGxpApdCQRI03hVnZam52xAFgo"
-        },
-        {
-          "url": "https://www.newsobserver.com/news/local/article318173141.html",
-          "title": "The Raleigh Christmas parade is Saturday. Here’s what to expect downtown",
-          "publisher": "Raleigh News & Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyYGQ8Ry6qn7booaomT2ZsDsCwsYSFsY6JKP52C7O6kvQaqvH82tbo22yTVlw"
-        },
-        {
-          "url": "https://www.wral.com/lifestyles/2026-raleigh-christmas-parade-how-to-watch/",
-          "title": "Raleigh Christmas Parade kicks off Saturday morning: Route, parking and how to watch at home",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSURySAz3GNtBcrRlKZI9lgyRq4iK8uEgf08mmYX0ox7RULnwnw4mKE5Y4LnvI"
-        }
-      ]
-    },
-    {
-      "query": "hierophant connections nyt",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-21T12:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-21-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-20-1258/",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-21-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-21-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 21, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-20-1258/",
-          "title": "Today’s NYT Connections Hints and Answers for Friday, Nov. 20, #1258",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-21-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Saturday, November 21, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIfkxRLUL-dbog89Zo2rKrK16nrtyL6KGnDSmkyalhDTNCKuuiYSUi2zAk8Gw"
-        }
-      ]
-    },
-    {
-      "query": "2026 ihsa football semifinal scores",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:40:00Z",
-      "related_news_urls": [
-        "https://chicago.suntimes.com/high-school-football/2026/11/20/previewing-the-top-ihsa-football-semifinal-playoff-games",
-        "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
-        "https://www.shawlocal.com/friday-night-drive/2026/11/19/2026-ihsa-playoffs-steve-soucies-class-5a-playoff-analysis-and-picks/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAJnmOMO_JwfzPuxu_2b5kwGIYNDO8M-1Bc8Bulp9Ece-3mVR3AKGDQCneDRA",
-      "image_credit": "Chicago Sun-Times",
-      "news": [
-        {
-          "url": "https://chicago.suntimes.com/high-school-football/2026/11/20/previewing-the-top-ihsa-football-semifinal-playoff-games",
-          "title": "Previewing the top IHSA football semifinal playoff games",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAJnmOMO_JwfzPuxu_2b5kwGIYNDO8M-1Bc8Bulp9Ece-3mVR3AKGDQCneDRA"
-        },
-        {
-          "url": "https://www.si.com/high-school/illinois/illinois-high-school-football-schedule-scores-live-updates-ihsa-november-21-01m7r99tnv6x",
-          "title": "Illinois High School Football Schedule, Scores & Live Updates (IHSA) — November 21",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSku8m73CXke44byO8ou6yyqAqKKbgSYIvsMk-hQVpYdnaTvcgD_4LZdpRehxY"
-        },
-        {
-          "url": "https://www.shawlocal.com/friday-night-drive/2026/11/19/2026-ihsa-playoffs-steve-soucies-class-5a-playoff-analysis-and-picks/",
-          "title": "2026 IHSA playoffs: Steve Soucie’s Class 5A playoff analysis and picks",
-          "publisher": "Shaw Local",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRSvmYo7wuubyyeWVUaSLXz9rAswfdYOq_MEieHTum0sX_llTwAF5Mkbo0D4M"
-        }
-      ]
-    },
-    {
-      "query": "sarah mcbride",
-      "approx_searches": "100+",
-      "published_at": "2026-11-21T12:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
-        "https://www.advocate.com/politics/national/sarah-mcbride-elected-house-leadership",
-        "https://www.erininthemorning.com/p/sarah-mcbride-becomes-the-first-trans"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6JPvK3q586ZJus_CXvebZ1-3-EDqZQguVQ8EfcDIK4Z3B6D1f1BM4hZJAuq4",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/21/us/politics/sarah-mcbride-barred-from-capitol-bathrooms-wins-top-post.html",
-          "title": "Sarah McBride, Barred From Capitol Bathrooms, Wins Top Post",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6JPvK3q586ZJus_CXvebZ1-3-EDqZQguVQ8EfcDIK4Z3B6D1f1BM4hZJAuq4"
-        },
-        {
-          "url": "https://www.advocate.com/politics/national/sarah-mcbride-elected-house-leadership",
-          "title": "Republicans made Sarah McBride a target. House Democrats just elected her to leadership",
-          "publisher": "Advocate.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCjPvAkry-WwhhuD4jSneIKpCKpJ8PXDsCgB0JXxTHWkVjvpT9N0HItAH9Hg"
-        },
-        {
-          "url": "https://www.erininthemorning.com/p/sarah-mcbride-becomes-the-first-trans",
-          "title": "Sarah McBride Becomes The First Trans Member Of Congressional Leadership In A 248-Vote Landslide",
-          "publisher": "Erin In The Morning | Substack",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsU5JERhvGtnvSXV7mnUSJVRSpXFdMHxDp0btjOuqZt_qPBgLSq_1aHq83Ong"
-        }
-      ]
-    },
-    {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-21T12:30:00Z",
-      "related_news_urls": [
-        "https://www.pagina12.com.ar/2026/11/21/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-sabado-21-de-noviembre/",
-        "https://www.meteored.com.ar/noticias/prediccion/se-vienen-noches-de-20-c-y-un-feriado-largo-con-sol-y-lluvias-puntuales-en-el-amba-asi-sigue-el-tiempo-hasta-el-lunes.html",
-        "https://nuevarioja.com.ar/sociedad/la-capital-tendra-una-jornada-calurosa-con-probabilidad-de-tormentas-aisladas-durante-la-tarde.htm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRptVk9wQIrKL5kXm5azovr05UGbelzsUnpKIeNBbhctvxLzpW4KWhc5S_K7bs",
-      "image_credit": "Página|12",
-      "news": [
-        {
-          "url": "https://www.pagina12.com.ar/2026/11/21/clima-en-buenos-aires-el-pronostico-del-tiempo-para-este-sabado-21-de-noviembre/",
-          "title": "Clima en Buenos Aires: el pronóstico del tiempo para este sábado 21 de noviembre",
-          "publisher": "Página|12",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRptVk9wQIrKL5kXm5azovr05UGbelzsUnpKIeNBbhctvxLzpW4KWhc5S_K7bs"
-        },
-        {
-          "url": "https://www.meteored.com.ar/noticias/prediccion/se-vienen-noches-de-20-c-y-un-feriado-largo-con-sol-y-lluvias-puntuales-en-el-amba-asi-sigue-el-tiempo-hasta-el-lunes.html",
-          "title": "Se vienen noches de 20 °C y un feriado largo con sol y lluvias puntuales en el AMBA: así sigue el tiempo hasta el lunes",
-          "publisher": "Meteored Argentina",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwJHTHbnm6JwLhQ_-QQ4pVe_K0kyarQzyZQd2wMXV5tiAeUhv_dHJtvwnMLWs"
-        },
-        {
-          "url": "https://nuevarioja.com.ar/sociedad/la-capital-tendra-una-jornada-calurosa-con-probabilidad-de-tormentas-aisladas-durante-la-tarde.htm",
-          "title": "La Capital tendrá una jornada calurosa con probabilidad de tormentas aisladas durante la tarde",
-          "publisher": "Nueva Rioja",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyGDp6WNEGKn1jM1MXWmCy7EmI0Wq_LWs2hwA30v4O6mWr4O5DCPIxRDUiWng"
-        }
-      ]
-    },
-    {
-      "query": "galatasaray - samsunspor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T12:30:00Z",
-      "related_news_urls": [
-        "https://www.kahtahaberpostasi.com/haber/galatasaray-spor-kulubu-samsunspor-macina-parcali-formayla-cikacak",
-        "https://www.fotospor.com.tr/spor-toto-super-lig/iste-super-ligde-gunun-var-hakemleri-717431",
-        "https://www.webaslan.com/futbol/galatasaray-da-ilk-11-surprizi-kaan-ayhan-ve-singo-SXHBQ180975SXQ"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTR6bz3XwfSb2Gjkxb8q15lB33ftRKyUOLaIMJY1wLAWHXV4YP8VyreqmpQs",
-      "image_credit": "Kahta Haber Postası",
-      "news": [
-        {
-          "url": "https://www.kahtahaberpostasi.com/haber/galatasaray-spor-kulubu-samsunspor-macina-parcali-formayla-cikacak",
-          "title": "Galatasaray Spor Kulübü, Samsunspor Maçına Parçalı Formayla Çıkacak",
-          "publisher": "Kahta Haber Postası",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTR6bz3XwfSb2Gjkxb8q15lB33ftRKyUOLaIMJY1wLAWHXV4YP8VyreqmpQs"
-        },
-        {
-          "url": "https://www.fotospor.com.tr/spor-toto-super-lig/iste-super-ligde-gunun-var-hakemleri-717431",
-          "title": "İşte Süper Lig'de günün VAR hakemleri",
-          "publisher": "Fotospor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6g-e3l_1zPBxlgV46gMdrmlV9t07obtFPzP7K_jhrRcUlofyswKkc05Xoknk"
-        },
-        {
-          "url": "https://www.webaslan.com/futbol/galatasaray-da-ilk-11-surprizi-kaan-ayhan-ve-singo-SXHBQ180975SXQ",
-          "title": "Galatasaray'da ilk 11 sürprizi: Kaan Ayhan ve Singo!",
-          "publisher": "webaslan.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy8ZQEAbLW3qihsPZJqDvt5htUGnwOOgYAEKP89xvd-12kXwyiYSUqxwo99RU"
-        }
-      ]
-    },
-    {
-      "query": "liverpool vs chelsea",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T12:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cr868wyllle2t",
-        "https://www.chelseafc.com/en/news/article/chelsea-womens-starting-line-up-vs-liverpool-confirmed",
-        "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-against-chelsea-in-the-wsl"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq3uddClhMKUET2rZlo1ZVjw89I4RBHnn1yBICUDLA1Vs12hPtrVlKGFRePJ0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_E2X66uX47IQ-Pr8KUBVQMB8FSWQHsti0CMOgtWw3YrR8RwMx6Rbw9KInrZQ",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cr868wyllle2t",
-          "title": "Liverpool vs Chelsea LIVE: Text updates and match stats from WSL lunchtime kick-off",
+          "url": "https://www.bbc.com/sport/rugby-union/articles/cqrmgjpp0l48o",
+          "title": "England v New Zealand: Hosts aim to extend All Black misery",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq3uddClhMKUET2rZlo1ZVjw89I4RBHnn1yBICUDLA1Vs12hPtrVlKGFRePJ0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_E2X66uX47IQ-Pr8KUBVQMB8FSWQHsti0CMOgtWw3YrR8RwMx6Rbw9KInrZQ"
         },
         {
-          "url": "https://www.chelseafc.com/en/news/article/chelsea-womens-starting-line-up-vs-liverpool-confirmed",
-          "title": "Chelsea Women's starting line up vs Liverpool confirmed | News | Official Site",
-          "publisher": "Chelsea Football Club",
+          "url": "https://www.theguardian.com/sport/live/2026/nov/21/england-v-new-zealand-nations-championship-rugby-union-live",
+          "title": "England v New Zealand: Nations Championship rugby union – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREneDu4sEZV_j5TS8rcJ0mH8-bImfWelf00vQ16Q8Gsy0y4zIAO99JXb_GkGI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTB4dJGYy8XEZxUqkwWHwCNuRbfyewlSyxOfFSR07vfupsM7HM2sFHFnLecaoI"
         },
         {
-          "url": "https://www.liverpoolfc.com/news/team-news-confirmed-liverpool-line-up-against-chelsea-in-the-wsl",
-          "title": "Team news: Confirmed Liverpool line-up against Chelsea in the WSL",
-          "publisher": "Liverpool FC",
+          "url": "https://www.telegraph.co.uk/rugby-union/2026/11/20/why-beating-all-blacks-is-still-a-massive-scalp-for-england/",
+          "title": "England beware: Wounded All Blacks are bloodthirsty for revenge",
+          "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjlx29okVex_CqOmde2XT9M8o1uiRGOYIB5K684iTUl8fSvnLj9aSjvKhT0RU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMxcoNpc3o2d2C55XwoCKXJhHbfyo_ntJM23YQ002aE-j96BfA1VSIZZ_33uQ"
         }
       ]
     },
     {
-      "query": "méxico",
+      "query": "bryce underwood",
       "approx_searches": "200+",
-      "published_at": "2026-11-21T12:30:00Z",
+      "published_at": "2026-11-21T13:10:00Z",
       "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-20-tipo-cambio-22541221.php",
-        "https://es-us.finanzas.yahoo.com/noticias/peso-mexicano-lidera-p%C3%A9rdidas-emergentes-162211222.html",
-        "https://www.elfinanciero.com.mx/opinion/enrique-quintana/2026/11/20/un-dolar-caro-pone-a-prueba-a-banxico/"
+        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/20/bryce-underwood-donald-trump-nil-protect-college-sports-act/92884444007/",
+        "https://www.mlive.com/wolverines/football/2026/11/did-president-trump-just-take-a-shot-at-michigan-qb-bryce-underwood.html",
+        "https://www.on3.com/news/president-donald-trump-takes-apparent-shot-bryce-underwood-nil-deal-strong-arm-no-accuracy/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo",
-      "image_credit": "Dallas News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkvFqRCJpz1DrN9NzhHmRPZmKEbY_Nygk5SLcORltutqDYsfM0c_zbYBusL6w",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-20-tipo-cambio-22541221.php",
-          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
-          "publisher": "Dallas News",
+          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/20/bryce-underwood-donald-trump-nil-protect-college-sports-act/92884444007/",
+          "title": "Bryce Underwood catches stray from President Donald Trump with PCSA in limbo",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkvFqRCJpz1DrN9NzhHmRPZmKEbY_Nygk5SLcORltutqDYsfM0c_zbYBusL6w"
         },
         {
-          "url": "https://es-us.finanzas.yahoo.com/noticias/peso-mexicano-lidera-p%C3%A9rdidas-emergentes-162211222.html",
-          "title": "Peso mexicano lidera pérdidas emergentes por perspectivas de la Fed y postura de Banxico",
-          "publisher": "Yahoo Finanzas",
+          "url": "https://www.mlive.com/wolverines/football/2026/11/did-president-trump-just-take-a-shot-at-michigan-qb-bryce-underwood.html",
+          "title": "Did President Trump just take a shot at Michigan QB Bryce Underwood?",
+          "publisher": "MLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2mY9X4I4VRV3tG1Y5VjAP5GmHN4ylz1pl3x_U_50cyOK2G2JKZcZoO-N3fs4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSORusFN-AjFVZhtf6_hqH2DImwwTzH3xcWIFNzMJVqNmTjPaRHAQLSSiDiM8"
         },
         {
-          "url": "https://www.elfinanciero.com.mx/opinion/enrique-quintana/2026/11/20/un-dolar-caro-pone-a-prueba-a-banxico/",
-          "title": "Un dólar caro pone a prueba a Banxico",
-          "publisher": "El Financiero",
+          "url": "https://www.on3.com/news/president-donald-trump-takes-apparent-shot-bryce-underwood-nil-deal-strong-arm-no-accuracy/",
+          "title": "President Donald Trump takes apparent shot at Bryce Underwood NIL deal: ‘Strong arm, no accuracy’",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQHtvtRZyf-xVvAIq5TnNgp_gO-b3aGhoYH2riwj3mr_ZWs5tuNcFE7kjFFAs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLhcGBgO5uE6zXs3i3IcsqnVkA_FnaCeyghfJQhVsCTgz_rlDw9Iuj0J_JJRY"
         }
       ]
     },
     {
-      "query": "matt rife",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T12:30:00Z",
+      "query": "panda express new rangoon nachos",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T13:10:00Z",
       "related_news_urls": [
-        "https://www.10tv.com/article/news/local/comedian-matt-rife-columbus-ohio-stadium-homecoming/530-2146aa9f-0759-4a6f-9c59-c6f4b645c350",
-        "https://www.nbc4i.com/news/local-news/columbus/ohio-born-comedian-matt-rife-to-headline-ohio-stadium/",
-        "https://news.pollstar.com/2026/11/19/matt-rife-announces-special-2027-homecoming-show/"
+        "https://www.allrecipes.com/panda-express-rangoon-nachos-12265288",
+        "https://www.tastingtable.com/2322231/panda-express-rangoon-nachos-review/",
+        "https://cw33.com/a-taste-of-north-texas/food-and-drink/panda-express-adds-viral-rangoon-nachos-to-digital-menu/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRItKqxvfZTxFJvzAN7l_uzHxTE5I8eQGsUcYn0h9s6WhKnHOPZBW2pVL4iFUU",
-      "image_credit": "10TV",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4knw2-nX5z-lE_wlYXIrg11lmP-3F-VxCADoF439439EhONvy68KRTQcgKo",
+      "image_credit": "Allrecipes",
       "news": [
         {
-          "url": "https://www.10tv.com/article/news/local/comedian-matt-rife-columbus-ohio-stadium-homecoming/530-2146aa9f-0759-4a6f-9c59-c6f4b645c350",
-          "title": "Comedian Matt Rife announces first-ever stadium performance in Columbus",
-          "publisher": "10TV",
+          "url": "https://www.allrecipes.com/panda-express-rangoon-nachos-12265288",
+          "title": "Panda Express Just Quietly Released a New Limited-Time Menu Item",
+          "publisher": "Allrecipes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRItKqxvfZTxFJvzAN7l_uzHxTE5I8eQGsUcYn0h9s6WhKnHOPZBW2pVL4iFUU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB4knw2-nX5z-lE_wlYXIrg11lmP-3F-VxCADoF439439EhONvy68KRTQcgKo"
         },
         {
-          "url": "https://www.nbc4i.com/news/local-news/columbus/ohio-born-comedian-matt-rife-to-headline-ohio-stadium/",
-          "title": "Ohio-born comedian Matt Rife to headline Ohio Stadium",
-          "publisher": "NBC4 WCMH-TV",
+          "url": "https://www.tastingtable.com/2322231/panda-express-rangoon-nachos-review/",
+          "title": "Review: Panda Express Made A Viral Menu Hack Official, And You Need To Try It Before It's Gone",
+          "publisher": "Tasting Table",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8SCB9QudSZAD48RRivkQJ22gscZZOcNAGh6-lAZ71_MxnD2V_LMzzBsPrUiI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTePiv3HVMw7eZVYWhizUq9Ynkg2aiEgu-8HP1VizdrTbEAZTcGE9_AzDBh7pc"
         },
         {
-          "url": "https://news.pollstar.com/2026/11/19/matt-rife-announces-special-2027-homecoming-show/",
-          "title": "Matt Rife Announces Special 2027 Homecoming Show",
-          "publisher": "Pollstar News",
+          "url": "https://cw33.com/a-taste-of-north-texas/food-and-drink/panda-express-adds-viral-rangoon-nachos-to-digital-menu/",
+          "title": "Panda Express adds viral Rangoon nachos to digital menu",
+          "publisher": "CW33.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOKI8-7wFnpPIIWAMR5xQiGa76j7GH0ZPbvs52yGcxb8wia-3i_C23hgIY1t4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3sQ4Ln1Uv6e1SJABq_Mi0C2hyRLdJwTUgNIECkbpzcrcHPg6GafTiwLTsLpA"
+        }
+      ]
+    },
+    {
+      "query": "phil wickham hallelujah! it's christmas again!",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T13:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/video/6408674651112",
+        "https://chvnradio.com/articles/phil-wickham-set-to-release-new-christmas-album",
+        "https://gospelmusic.org/news/phil-wickham-set-to-perform-for-fox-news-christmas-tree-lighting-on-friday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvTIbso_NVOd8FtpgPs1nHf4uffN5yjWewabqUPsy8Yi0esp3L0f_ItEnhbBI",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/video/6408674651112",
+          "title": "Phil Wickham celebrates new Christmas album ahead of Fox Square performance",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvTIbso_NVOd8FtpgPs1nHf4uffN5yjWewabqUPsy8Yi0esp3L0f_ItEnhbBI"
+        },
+        {
+          "url": "https://chvnradio.com/articles/phil-wickham-set-to-release-new-christmas-album",
+          "title": "Phil Wickham set to release new Christmas album",
+          "publisher": "CHVN Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJjAg3hxnHLaEbj0bsfGdW_loQ3r4xcZXBFapIYyjHl3t0qRIe_eBRnAyUCh8"
+        },
+        {
+          "url": "https://gospelmusic.org/news/phil-wickham-set-to-perform-for-fox-news-christmas-tree-lighting-on-friday",
+          "title": "Phil Wickham Set to Perform for Fox News Christmas Tree Lighting On Friday",
+          "publisher": "Gospel Music Association",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmG2RqRyUKCjmFTFg5OvkcoZgCnyBizEC7HZf-O-9T6o4QjzRJZa6i48V5SVk"
+        }
+      ]
+    },
+    {
+      "query": "trinity rodman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T13:10:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/sports/2026/11/20/trinity-rodman-became-best-paid-womens-soccer-star-then-backed-up-investment/",
+        "https://www.espn.com/soccer/story/_/id/50535011/spirit-rodman-nwsl-title",
+        "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwgxVmwOcSBgb7rMd5jgA2_qhnS_19AXPWRDub5Vk08lMooBoEIy3t5qgq0x4",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/sports/2026/11/20/trinity-rodman-became-best-paid-womens-soccer-star-then-backed-up-investment/",
+          "title": "Trinity Rodman became the best-paid women’s soccer star — then backed up the investment",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwgxVmwOcSBgb7rMd5jgA2_qhnS_19AXPWRDub5Vk08lMooBoEIy3t5qgq0x4"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50535011/spirit-rodman-nwsl-title",
+          "title": "Rodman eyes 'full-circle moment' with NWSL title: 'Would mean everything'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbjm9ZMzNQxGJXQfkcHv5yKaBmeQCujHMcGeoF9KoFJsCZMWLtIp11wTPASU0"
+        },
+        {
+          "url": "https://www.cbssports.com/soccer/news/trinity-rodmans-washington-spirit-nwsl-final-fun/",
+          "title": "Trinity Rodman's non-negotiable for Washington Spirit: 'I wouldn't be playing soccer if it wasn't fun'",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgKEz7T8oy9G2eMiQEdMYg84Ne3wt6HBcjamSJ_6hD37GjdSygj3HEHCSf_CU"
+        }
+      ]
+    },
+    {
+      "query": "fox news politics",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T13:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/economy/policy/article/generational-theft-harsh-pushback-follows-a-plan-to-fund-social-security-with-more-government-borrowing-160247441.html",
+        "https://www.foxnews.com/politics/millions-could-lose-paid-benefits-due-congress-ignoring-decades-social-security-warnings-experts",
+        "https://www.ms.now/rachel-maddow-show/maddowblog/ron-johnson-social-security-ponzi-scheme-wisconsin"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRo4Sy7GhLKtCKmaiFk7kF4caSJAaLZnE2HUyAW5O7PGaXywRCX7ziop9-Tlc",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/economy/policy/article/generational-theft-harsh-pushback-follows-a-plan-to-fund-social-security-with-more-government-borrowing-160247441.html",
+          "title": "'Generational theft': Harsh pushback follows a plan to fund Social Security with more government borrowing",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRo4Sy7GhLKtCKmaiFk7kF4caSJAaLZnE2HUyAW5O7PGaXywRCX7ziop9-Tlc"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/millions-could-lose-paid-benefits-due-congress-ignoring-decades-social-security-warnings-experts",
+          "title": "Millions could lose paid benefits due to Congress ignoring decades of Social Security warnings: experts",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzN9kudDpAEev-LeJFvOEMDUzio4ZPSPfJI8CEuHxGIU0VjxPfTEU31v5yvFg"
+        },
+        {
+          "url": "https://www.ms.now/rachel-maddow-show/maddowblog/ron-johnson-social-security-ponzi-scheme-wisconsin",
+          "title": "The problem(s) with Ron Johnson trying to walk back his call for Social Security’s elimination",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMtlLd170QN8YzwZiBlNFU5vi-3KZcVn_0SlyqiY3rcXMu-1YkNcYvvAFcqIs"
+        }
+      ]
+    },
+    {
+      "query": "nitto atp finals",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T13:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
+        "https://www.reuters.com/sports/tennis/alcaraz-eases-injury-concerns-with-cobolli-win-complete-perfect-atp-finals-group-2026-11-20/",
+        "https://www.atptour.com/en/news/alcaraz-cobolli-nitto-atp-finals-2026-friday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50543676/carlos-alcaraz-wins-set-atp-finals-semi-vs-ben-shelton",
+          "title": "Carlos Alcaraz in off-court 'challenge' to stay healthy for semis of ATP Finals",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1RYWqo6ozs4bkq3z9VP8GlQWHw38CLvNgufIqkjw9hWHDz-gVwvPXxJ_MBIQ"
+        },
+        {
+          "url": "https://www.reuters.com/sports/tennis/alcaraz-eases-injury-concerns-with-cobolli-win-complete-perfect-atp-finals-group-2026-11-20/",
+          "title": "Alcaraz eases injury concerns with Cobolli win, Medvedev books last four spot",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbONeTEZ3S8J78_wa9h5_LVR_WuDcpIc-8Jjf-dydCOpyNf5WDPhdkg65Riaw"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/alcaraz-cobolli-nitto-atp-finals-2026-friday",
+          "title": "Alcaraz, free & firing, downs Cobolli in Turin",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQw4tFEEkar65go_S0oJZqobriqKcG8QAnEuFB-hCwCYdA3bDrPfilQQz8zgl0"
+        }
+      ]
+    },
+    {
+      "query": "epl fixtures",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T13:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/football/2026/nov/20/premier-league-10-things-to-look-out-for-this-weekend",
+        "https://www.si.com/soccer/premier-league-predictions-man-utd-liverpool-arsenal-newcastle-gameweek-11",
+        "https://www.premierleague.com/en/news/4764715/predicted-line-ups-for-premier-league-teams-in-matchweek-11"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcRy6Je9r3zk4L4SOvrxQHSuj3-x1wOQa788XluNtM_EyQgxcSxytT2xewdto",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/20/premier-league-10-things-to-look-out-for-this-weekend",
+          "title": "Premier League: 10 things to look out for this weekend",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcRy6Je9r3zk4L4SOvrxQHSuj3-x1wOQa788XluNtM_EyQgxcSxytT2xewdto"
+        },
+        {
+          "url": "https://www.si.com/soccer/premier-league-predictions-man-utd-liverpool-arsenal-newcastle-gameweek-11",
+          "title": "Premier League Predictions: Pochettino’s Man Utd Bow at Liverpool, Arsenal Visit Newcastle",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKVf2jDUPnU0J3GarVMHgdTXHt8hyow1ttelou0UBDaL14RzDou8k6X_Pl2a8"
+        },
+        {
+          "url": "https://www.premierleague.com/en/news/4764715/predicted-line-ups-for-premier-league-teams-in-matchweek-11",
+          "title": "Predicted line-ups for Premier League teams in Matchweek 11",
+          "publisher": "Premier League",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOE_jDw406NrXLCd0ebtjyEBOJWY8MvCMZeltbdjfNDpjIaYyXvrswjV-yo0"
+        }
+      ]
+    },
+    {
+      "query": "2027 ncaa bracketology top seeds",
+      "approx_searches": "200+",
+      "published_at": "2026-11-21T12:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-basketball/news/2027-ncaa-tournament-projection-bracketology-houston-iillinois-virginia/",
+        "https://www.theixsports.com/the-ix-basketball-newsroom/ncaa-basketball/bracketology/2026-27-bracketology-new-no-1-seeds-louisville-michigan/",
+        "https://hoopshd.com/2026/11/16/hoops-hd-merit-rankings-bracket-projections-nov-16th/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1qa_rBViey0CJmmswW4wCf7v_0jsSWbWW7CuVGSDC4vPVUGmGPuhlbOnEj4",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/2027-ncaa-tournament-projection-bracketology-houston-iillinois-virginia/",
+          "title": "2027 NCAA Tournament Bracketology: Houston takes over No. 1 overall seed; IIllinois, Virginia jump to top line",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe1qa_rBViey0CJmmswW4wCf7v_0jsSWbWW7CuVGSDC4vPVUGmGPuhlbOnEj4"
+        },
+        {
+          "url": "https://www.theixsports.com/the-ix-basketball-newsroom/ncaa-basketball/bracketology/2026-27-bracketology-new-no-1-seeds-louisville-michigan/",
+          "title": "2026-27 Bracketology: New No. 1 seeds join the fray",
+          "publisher": "The IX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2SV_y5xxJQxSltrOOs5rNEszpcsVQNFcjN8Q7bwz1j0ExEsGNxkqVAhbB5_k"
+        },
+        {
+          "url": "https://hoopshd.com/2026/11/16/hoops-hd-merit-rankings-bracket-projections-nov-16th/",
+          "title": "Hoops HD Merit Rankings/Bracket Projections – Nov 16th",
+          "publisher": "Hoops HD",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQATSMcx34Jx05r91R2rHeRWDgbbkZ1w0kEgJZ9jYiQQHRO4jVf5brnYNRmzHM"
+        }
+      ]
+    },
+    {
+      "query": "southampton vs derby county",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T12:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c8dx1z4xxqnyt",
+        "https://www.tufutbolero.com/en/news/southampton-derby-derby-arrive-with-eight-confirmed-absences-fdbced",
+        "https://www.dcfc.co.uk/news/2026/11/pre-match-john-eustace-southampton-a-202627"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWBBy1ur4dBM7eYUo1s6W8V6Q56QDaGKjDfwyzdGEgQsF7ptYMRgSSb7KWz3g",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c8dx1z4xxqnyt",
+          "title": "Southampton v Derby County: Championship stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWBBy1ur4dBM7eYUo1s6W8V6Q56QDaGKjDfwyzdGEgQsF7ptYMRgSSb7KWz3g"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/southampton-derby-derby-arrive-with-eight-confirmed-absences-fdbced",
+          "title": "Southampton-Derby: Derby arrive with eight confirmed absences",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAEj_OxcOP3l2J70IOMCfQag7rReJ6TkaHKha-Dc_eijcQLCCm6T3FR4iEhhM"
+        },
+        {
+          "url": "https://www.dcfc.co.uk/news/2026/11/pre-match-john-eustace-southampton-a-202627",
+          "title": "PRE-MATCH: John Eustace - Southampton (A)",
+          "publisher": "DCFC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScKn69UdBTJK2PChBJiiQ8ovWbMrNPFQxlPFVUg1fcpYzJdFzLzGy1N51oxo8"
         }
       ]
     }
