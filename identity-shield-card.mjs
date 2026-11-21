@@ -1,6 +1,7 @@
 /* Infinity Identity Shield · a public research Quick Card, not an SSA or credit service.
  * No SSN, account number, login form, wallet mutation or private monitoring.
  */
+import {shieldProviders,safeShieldProviderUrl} from './identity-shield-providers.mjs';
 const root=document.getElementById('identityShieldQuickCard');
 if(root&&!root.dataset.identityShieldMounted){
  root.dataset.identityShieldMounted='true';
@@ -27,6 +28,13 @@ if(root&&!root.dataset.identityShieldMounted){
   '#identityShieldQuickCard .ish-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;}',
   '#identityShieldQuickCard .ish-action{border:1px solid #cab8df;border-radius:12px;background:#fff;padding:11px 12px;color:#4d306e;text-decoration:none;font:inherit;font-size:14px;font-weight:800;cursor:pointer;}',
   '#identityShieldQuickCard .ish-action:focus-visible{outline:3px solid #a379d0;outline-offset:2px;}',
+  '#identityShieldQuickCard .ish-provider-list{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0;}',
+  '#identityShieldQuickCard .ish-provider{padding:13px;border:1px solid #d5dce5;background:#fff;border-radius:13px;min-width:0;}',
+  '#identityShieldQuickCard .ish-provider strong{display:block;font-size:17px;line-height:1.4;color:#392152;}',
+  '#identityShieldQuickCard .ish-provider p{font-size:15px;line-height:1.5;color:#344550;margin:5px 0 8px;}',
+  '#identityShieldQuickCard .ish-provider .ish-action{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 12px;font-size:16px;line-height:1.35;}',
+  '#identityShieldQuickCard .ish-external-status{display:block;margin:7px 0 0;font-size:13px;line-height:1.5;color:#4d6471;}',
+  '#identityShieldQuickCard .ish-action{min-height:44px;}',
   '#identityShieldQuickCard .ish-footer{font-size:12px;line-height:1.55;color:#596572;margin:13px 0 0;}',
   '@media(max-width:350px){#identityShieldQuickCard .ish-list{grid-template-columns:1fr;}#identityShieldQuickCard .ish-art{width:64px;height:64px;}#identityShieldQuickCard h2{font-size:19px;}}'
  ].join('\n');
@@ -62,6 +70,19 @@ if(root&&!root.dataset.identityShieldMounted){
   const status=el('span','ish-readback','Research check pending');statuses.set(id,status);item.append(a,status);list.append(item);
  }
  root.append(list);
+ root.append(el('h3','ish-title','Official protection services'));
+ root.append(el('p','ish-summary','Use these official services directly for protection. They are external websites, not QuantaPhi partners or connected accounts. A link does not verify a freeze, PIN, report or account status.'));
+ const providers=el('div','ish-provider-list');
+ for(const provider of shieldProviders){
+  const url=safeShieldProviderUrl(provider.id,provider.url);
+  if(!url||provider.connection!=='external_only'||provider.partner_contract!==false)continue;
+  const item=el('section','ish-provider');
+  item.append(el('strong','',provider.name+' · '+provider.category),el('p','',provider.detail));
+  const a=el('a','ish-action',provider.action);a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.referrerPolicy='no-referrer';
+  item.append(a,el('span','ish-external-status','External official service · not connected · action must be completed with provider'));
+  providers.append(item);
+ }
+ root.append(providers);
  const actions=el('div','ish-actions'),refresh=el('button','ish-action','Refresh public research status');
  refresh.type='button';const settings=el('a','ish-action','Identity settings');
  settings.href='/bubbles-identity-settings.html';actions.append(refresh,settings);root.append(actions);
