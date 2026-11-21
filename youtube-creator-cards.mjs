@@ -18,7 +18,7 @@ export function mountYouTubeCreatorCard(root,card){
  const database=isJulie?JULIE_DERU_VIDEO_DATABASE:YOUTUBE_VIDEO_DATABASE;
  const topics=isJulie?JULIE_DERU_TOPICS:YOUTUBE_TOPICS;
  const find=isJulie?findJulieDeruVideo:findYouTubeVideo;
- const search=isJulie?searchJulieDeruVideos:searchYouTubeVideos;
+ const searchVideos=isJulie?searchJulieDeruVideos:searchYouTubeVideos;
  const indexRoute=isJulie?'julie-deru-youtube':'abbecadventures-youtube';
  const panel=el('section','qcx-tool youtube-creator-post-card');
  panel.setAttribute('aria-label',channel.name+' indexed video database');
@@ -31,7 +31,7 @@ export function mountYouTubeCreatorCard(root,card){
  let search,picker,previous,next;
  const status=el('p','qcx-note');status.setAttribute('role','status');
  const contents=el('div','youtube-creator-content');
- const rows=()=>single?[find(card.youtubeVideoId)].filter(Boolean):search(query);
+ const rows=()=>single?[find(card.youtubeVideoId)].filter(Boolean):searchVideos(query);
  if(!single){
   search=el('input','qcx-input');search.type='search';search.placeholder='Search indexed videos';search.maxLength=140;search.setAttribute('aria-label','Search '+channel.name+' indexed videos');
   picker=el('select','qcx-input');picker.setAttribute('aria-label','Choose indexed YouTube video');
@@ -91,7 +91,7 @@ export function mountYouTubeCreatorCard(root,card){
  footer.append(link('View original channel',channel.profileUrl));
  if(single)footer.append(link('Browse indexed videos','/source-quick-card.html?card='+indexRoute));
  else footer.append(button('Export indexed database',()=>{
-  const blob=new Blob([JSON.stringify(YOUTUBE_VIDEO_DATABASE,null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify(database,null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download=channel.handle.toLowerCase()+'-reviewed-video-index.json';a.click();
   setTimeout(()=>URL.revokeObjectURL(url),1000);
  }));
