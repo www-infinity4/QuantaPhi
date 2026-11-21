@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T09:01:30.210896Z",
+  "checked_at": "2026-11-21T09:30:59.929237Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "la cascara motel safe code",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T09:00:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/",
+          "title": "All GTA 6 Safe Codes for Chapter 2 in Port Gellhorn",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6FKjDWjKag2KVYr2axJexQ0hc4saEbnLdPtmfztJg_6wrY8KqtjRdAw25KMs"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-safe-codes-combinations/",
+          "title": "How to get safe codes in GTA 6",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2ms6fTUbdJbV3FDg6ZgjRQPz0mFg8z2pG3omv6zgx07xkHmuMyHuc5Qxl3Z0"
+        },
+        {
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-bowling-alley-heist",
+          "title": "All Kingpin Bowling Alley Robbery Loot & Secrets Locations - GTA 6",
+          "publisher": "Mobalytics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+        }
+      ]
+    },
     {
       "query": "la cascara motel gta 6",
       "approx_searches": "100+",
@@ -15,7 +50,7 @@
         "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
         "https://www.vice.com/en/article/gta-6-chapter-2-port-gellhorn-safe-codes/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4",
       "image_credit": "Mobalytics",
       "news": [
         {
@@ -23,7 +58,7 @@
           "title": "All La Cascara Motel Robbery Loot & Secrets Locations - GTA 6",
           "publisher": "Mobalytics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1adQ2DWmxh0aGf6mdFIzpLY5KYa82C-DZKKz1TBfQKGakdrAe_Xxm6E9-y_A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL5Ltq4rgoIhfJ0tQ5j5Z_cnW9bziovxsyJjnu4DaUGC5O1vRLedg0_-wKIV4"
         },
         {
           "url": "https://www.ign.com/wikis/gta-6/La_Cascara_Motel",
@@ -77,17 +112,59 @@
       ]
     },
     {
+      "query": "porto fc",
+      "approx_searches": "100+",
+      "published_at": "2026-11-21T08:10:00Z",
+      "related_news_urls": [
+        "https://onefootball.com/en/news/francesco-farioli-admits-porto-struggles-for-us-not-a-great-night-43810451",
+        "https://www.beinsports.com/en-us/soccer/articles/live-fc-porto-vs-usc-paredes-ta%C3%A7a-de-portugal-2026-11-20",
+        "https://ua.news/en/world/portu-v-seriyi-penalti-peremig-paredesh-iz-tretogo-divizionu-interia-sport"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM1ROjpn6T-d7zM0J8ijzvRj5lay00MrRz55W8Dvsdxo3Dc38RxvRMYBGfzSM",
+      "image_credit": "OneFootball",
+      "news": [
+        {
+          "url": "https://onefootball.com/en/news/francesco-farioli-admits-porto-struggles-for-us-not-a-great-night-43810451",
+          "title": "Francesco Farioli admits Porto struggles: “For us, not a great night”",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM1ROjpn6T-d7zM0J8ijzvRj5lay00MrRz55W8Dvsdxo3Dc38RxvRMYBGfzSM"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/articles/live-fc-porto-vs-usc-paredes-ta%C3%A7a-de-portugal-2026-11-20",
+          "title": "LIVE: FC Porto vs USC Paredes | Taça de Portugal",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREp_L2jEEm_vG74f3YnouTWKb0oV0ZPBdy9Ppf3tKh3yAnw13WIYdOHVWLb10"
+        },
+        {
+          "url": "https://ua.news/en/world/portu-v-seriyi-penalti-peremig-paredesh-iz-tretogo-divizionu-interia-sport",
+          "title": "Porto beat third-division Paredes in a penalty shootout — Interia Sport",
+          "publisher": "UA.NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrPJf4BXKZnAA4p_dzoFHtrtgpblFGir-8UE6ymnvW1eLizK8BzhgI7gQzxMk"
+        }
+      ]
+    },
+    {
       "query": "jensen ackles",
       "approx_searches": "100+",
       "published_at": "2026-11-21T08:00:00Z",
       "related_news_urls": [
+        "https://bleedingcool.com/tv/the-boys-vought-rising-jensen-ackles-aya-cash-are-heading-to-ccxp/",
         "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
-        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
-        "https://www.imdb.com/news/ni66118663/?ref_=nmnw_art_perm"
+        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB8dCI8pjIPZuoZQquOzlaZa0D5BYet-dKSYrooVfSGTw_M4SI4AH7x-cp4Lw",
-      "image_credit": "Who What Wear",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi_y8vgVEi2QtowSLKAt5F2SpzuYuI-UIfRIziVONkcprvEYX1-Z9Qs2HBcU",
+      "image_credit": "Bleeding Cool News",
       "news": [
+        {
+          "url": "https://bleedingcool.com/tv/the-boys-vought-rising-jensen-ackles-aya-cash-are-heading-to-ccxp/",
+          "title": "The Boys: Vought Rising: Jensen Ackles & Aya Cash Are Heading to CCXP",
+          "publisher": "Bleeding Cool News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEi_y8vgVEi2QtowSLKAt5F2SpzuYuI-UIfRIziVONkcprvEYX1-Z9Qs2HBcU"
+        },
         {
           "url": "https://www.whowhatwear.com/fashion/celebrity/jared-padalecki-guarding-stars-netflix",
           "title": "Jared Padalecki's Latest Role Might Surprise You",
@@ -101,13 +178,6 @@
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66118663/?ref_=nmnw_art_perm",
-          "title": "‘Guarding Stars’ Movie Ending Explained: How Does The Gang Catch The Stalker?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAnYnZJMrOQBDJ0mogv9B2R19toHru7PUeAiCDq_zHjIsDe38g_6DvZS6oxio"
         }
       ]
     },
@@ -117,8 +187,8 @@
       "published_at": "2026-11-21T07:50:00Z",
       "related_news_urls": [
         "https://www.latimes.com/entertainment-arts/movies/story/2026-11-19/david-fincher-further-mis-adventures-cliff-booth-holiday-preview-2026",
-        "https://nextbestpicture.com/the-further-mis-adventures-of-cliff-booth/",
-        "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review"
+        "https://variety.com/2026/film/reviews/the-further-mis-adventures-of-cliff-booth-review-brad-pitt-1236952037/",
+        "https://deadline.com/2026/11/david-fincher-defends-ai-cliff-booth-criticism-1237230711/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M",
       "image_credit": "Los Angeles Times",
@@ -131,18 +201,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7eRqiY5AiIIIQ1PM1FtmyqOWkuUVEPesmsXEBhdiZMITtrA7OyrSlLnO678M"
         },
         {
-          "url": "https://nextbestpicture.com/the-further-mis-adventures-of-cliff-booth/",
-          "title": "\"THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH\" - Review",
-          "publisher": "Next Best Picture",
+          "url": "https://variety.com/2026/film/reviews/the-further-mis-adventures-of-cliff-booth-review-brad-pitt-1236952037/",
+          "title": "'The Further Mis-Adventures of Cliff Booth' Review: Very Fun Hangout",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxNjzheM-os6dYrAmdjwU7XUc46K4ogMTYcIFN55rZMKxujaHtSuGIvpoziSw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLK8-HiJtpBofHyxb4aqXDvWvm29AX1dIebZLEwskx6UIQXt51XykZv6y9bY"
         },
         {
-          "url": "https://www.bbc.com/culture/article/20261119-the-further-mis-adventures-of-cliff-booth-review",
-          "title": "The Further Mis-Adventures of Cliff Booth review: Brad Pitt returns to his Oscar-winning role in a 'macho fantasy' ★★★☆☆",
-          "publisher": "BBC",
+          "url": "https://deadline.com/2026/11/david-fincher-defends-ai-cliff-booth-criticism-1237230711/",
+          "title": "David Fincher Defends Use Of AI Amid ‘Cliff Booth’ Criticism: “Well, It Exists. Should We Not Use It?”",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2YlOYT8KbJtBPu7fyW8s1u5sgEMQPj3j0xgv0DM1TIR0lD7XFdMNmpi0uJbE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNQ66EcSOykrrJMgd0rG8gtzDw5M69ij1weNe5V51hrY_vNtb59XsdP-CoIiA"
+        }
+      ]
+    },
+    {
+      "query": "how old is jason in gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T07:40:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+        "https://www.yahoo.com/entertainment/celebrity/article/the-lead-actress-in-grand-theft-auto-vi-has-finally-been-revealed-what-to-know-about-the-woman-behind-lucia-185317472.html",
+        "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/article/the-lead-actress-in-grand-theft-auto-vi-has-finally-been-revealed-what-to-know-about-the-woman-behind-lucia-185317472.html",
+          "title": "The lead actress in 'Grand Theft Auto VI' has finally been revealed. What to know about the woman behind Lucia.",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhXkCY3aEVqu6IhST3uBHl_alSrXTyrVVH8UNnW_e9uJUDnbPookf51GR4hQo"
+        },
+        {
+          "url": "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
+          "title": "Everything We Know About Manni L. Perez, ‘GTA 6’ Female Lead Lucia Caminos",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT05kjwrBYX-lcuM3Uf66HDH1E_MhJOBIOl6sfAWvMlnSd8wJyaVwBYXvgzUkI"
         }
       ]
     },
@@ -178,76 +283,6 @@
           "publisher": "Seeking Alpha",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQk1FuVsqer7hCUB0ydgyCf4radhkUSvCX9pNiJzMpM1nAo9yVF7GJLzrLBk"
-        }
-      ]
-    },
-    {
-      "query": "ohsaa football scores",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T07:40:00Z",
-      "related_news_urls": [
-        "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-20-2026/",
-        "https://www.10tv.com/article/sports/high-school/hs-football/central-ohio-high-school-football-scores-playoffs-week-4-2026/530-25bcccad-9dc1-4554-8a63-5816acef94f4",
-        "https://www.dispatch.com/story/sports/high-school/football/2026/11/20/ohio-high-school-football-scores-ohsaa-playoff-fourth-round-games--live/92869988007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsu6rtuRnltXpyZ4xUEH1gl5tktGu0-9nAn-OqWxieYgTpLf5uTlGjZIeaerU",
-      "image_credit": "NBC4 WCMH-TV",
-      "news": [
-        {
-          "url": "https://www.nbc4i.com/sports/ffn/columbus-area-high-school-football-scores-and-highlights-nov-20-2026/",
-          "title": "Columbus-area high school football scores and highlights: Nov. 20, 2026",
-          "publisher": "NBC4 WCMH-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRsu6rtuRnltXpyZ4xUEH1gl5tktGu0-9nAn-OqWxieYgTpLf5uTlGjZIeaerU"
-        },
-        {
-          "url": "https://www.10tv.com/article/sports/high-school/hs-football/central-ohio-high-school-football-scores-playoffs-week-4-2026/530-25bcccad-9dc1-4554-8a63-5816acef94f4",
-          "title": "First & 10: Central Ohio high school football scores | Week 4 of playoffs",
-          "publisher": "10TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd2rFFgQmrbxxcO_M1qXsSKRa2PFgeHW0KZGYWhZPABa5QfT83MmzBPdwmb2E"
-        },
-        {
-          "url": "https://www.dispatch.com/story/sports/high-school/football/2026/11/20/ohio-high-school-football-scores-ohsaa-playoff-fourth-round-games--live/92869988007/",
-          "title": "Ohio high school football scores, live regional final playoff game updates",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTo7rhN_PY3_RifWKXTocDcmWGy8MKEG07zrc09RW5rIH1N9LRxWKHzF2nYaEk"
-        }
-      ]
-    },
-    {
-      "query": "how old is jason in gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-21T07:40:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-        "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
-        "https://tech.yahoo.com/general/breaking-news/article/the-actor-behind-jason-in-gta-6-has-finally-been-revealed-heres-where-youve-seen-him-before-150006402.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
-        },
-        {
-          "url": "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
-          "title": "Everything We Know About Manni L. Perez, ‘GTA 6’ Female Lead Lucia Caminos",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT05kjwrBYX-lcuM3Uf66HDH1E_MhJOBIOl6sfAWvMlnSd8wJyaVwBYXvgzUkI"
-        },
-        {
-          "url": "https://tech.yahoo.com/general/breaking-news/article/the-actor-behind-jason-in-gta-6-has-finally-been-revealed-heres-where-youve-seen-him-before-150006402.html",
-          "title": "The actor behind Jason in 'GTA 6' has finally been revealed. Here's where you've seen him before.",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStEHjgCjsiLyFUvvUCUXwx_QUVrL7FmaeGKETvsc1xsRb9s-APPsUgIIO2EoA"
         }
       ]
     },
@@ -295,7 +330,7 @@
         "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
         "https://sports.yahoo.com/articles/australia-wins-toss-bowl-1st-081728321.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gOyL8Uyn8U0VK_PRk4reY1JytCBKBC62OTb3fc5HqFNbsR9g_7BNrW6PiIA",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj1UuhWbILbFaGJGGbS4KjJhoUqg-N4P97IlvfMoS2k2Mp5yrnF3cpb3tiT20",
       "image_credit": "BBC",
       "news": [
         {
@@ -303,7 +338,7 @@
           "title": "Australia vs England LIVE: First T20, MCG, Melbourne - cricket score, commentary & updates",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_gOyL8Uyn8U0VK_PRk4reY1JytCBKBC62OTb3fc5HqFNbsR9g_7BNrW6PiIA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj1UuhWbILbFaGJGGbS4KjJhoUqg-N4P97IlvfMoS2k2Mp5yrnF3cpb3tiT20"
         },
         {
           "url": "https://www.cricinfo.com/story/sam-harper-s-australia-debut-a-much-needed-good-story-1563295",
@@ -318,41 +353,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlqj3pX5hPGUOP9zpn90p8ZaDqYXH7ajEzqD7MD7dRCd8Xyvo0UWsl-23h1U"
-        }
-      ]
-    },
-    {
-      "query": "is there a casino in gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T07:30:00Z",
-      "related_news_urls": [
-        "https://insider-gaming.com/gta-6-casino/",
-        "https://www.poker.org/latest-news/a-violent-vacation-the-poker-vlogger-trading-cash-games-for-gta-vi-ageCq0N5jaf8/",
-        "https://www.hindustantimes.com/entertainment/others/gta-vi-has-two-casinos-but-players-cannot-gamble-rockstar-executive-explains-why-101795053493549.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjW_A_JfvzKYnxKV70WCkL35jfjjp6WjNFYdLLCm81VXUqdDr9tj7eAU_dJuE",
-      "image_credit": "Insider Gaming",
-      "news": [
-        {
-          "url": "https://insider-gaming.com/gta-6-casino/",
-          "title": "Where is the Casino in GTA 6? Location, Explained",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjW_A_JfvzKYnxKV70WCkL35jfjjp6WjNFYdLLCm81VXUqdDr9tj7eAU_dJuE"
-        },
-        {
-          "url": "https://www.poker.org/latest-news/a-violent-vacation-the-poker-vlogger-trading-cash-games-for-gta-vi-ageCq0N5jaf8/",
-          "title": "A violent vacation: The poker vlogger trading cash games for GTA VI",
-          "publisher": "Poker.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzTp8EDMp_KUd1i_76TaM4XXADJELN53A-KO3Ge2WJEoCtbJjAWofN8kUzg7w"
-        },
-        {
-          "url": "https://www.hindustantimes.com/entertainment/others/gta-vi-has-two-casinos-but-players-cannot-gamble-rockstar-executive-explains-why-101795053493549.html",
-          "title": "GTA VI has two casinos, but players cannot gamble; Rockstar executive explains why | Hindustan Times",
-          "publisher": "Hindustan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ6GQDkqzLhd0bC4kDAJu6lTr4AgYMU7EL7nCpaNYXVt8CVjPUoxQD16VGHbA"
         }
       ]
     }
