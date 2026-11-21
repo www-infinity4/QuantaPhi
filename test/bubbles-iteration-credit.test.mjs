@@ -88,3 +88,29 @@ test('alarm retries retain pending work on an outage and save a per-receipt proo
  assert.equal((await s.get(recordKey)).receipts.length,1);
  assert.equal([...s.data].filter(([key])=>key.startsWith('bit-credit-retry:')).length,0);
 });
+
+test('verified GitHub research and PR receipts pass the same Bubble Bits wallet validator',async()=>{
+ const s=storage(),ctx=await context(s);
+ const record={requestId,repository:'www-infinity4/QuantaPhi',bitContext:ctx};
+ const cases=[
+  [{action:'capabilities',repository:record.repository},{ok:true,status:'credential_verified_read'},'github.capabilities'],
+  [{action:'list_workflows',repository:record.repository},{ok:true,complete:true,workflows:[]},'github.list_workflows'],
+  [{action:'list_runs',repository:record.repository},{ok:true,status:'runs_read_only',runs:[],complete:true},'github.list_runs'],
+  [{action:'create_pr',repository:record.repository},{ok:true,status:'pull_request_open',number:1845},'github.create_pr']
+ ];
+ for(const [operation,result,expectedTool] of cases){
+  const step=await githubIteration(env,record,result,operation,0);
+  assert.equal(step?.receipt?.tool,expectedTool);
+  assert.equal(step?.credit?.tool,expectedTool);
+  assert.equal(validateBitCredit(step.credit).receiptId,step.receipt.id,
+   expectedTool+' should be accepted by the wallet credit schema');
+ }
+});
+test('workflow dispatch acceptance remains observation-only, not an earned Bubble Bit',async()=>{
+ const s=storage(),ctx=await context(s),record={requestId,repository:'www-infinity4/QuantaPhi',bitContext:ctx};
+ const item=await githubIteration(env,record,{ok:true,status:'dispatch_accepted',completed:false},
+  {action:'dispatch_workflow',repository:record.repository},0);
+ assert.equal(item?.receipt?.tool,'github.dispatch_workflow');
+ assert.equal(item?.credit,undefined,'dispatch is not proof that the job executed');
+ assert.equal(item?.bit?.amount,0);
+});

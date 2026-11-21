@@ -49,6 +49,9 @@ export async function githubIteration(env,record,result,operation,index){
  if(!tool)return null;
  const receiptId='bb_'+await hash(JSON.stringify([env.WRITER_OWNER_HASH,record.requestId,tool,operation.repository,operation.path||null,result.commitSha||result.headSha||result.run?.headSha||result.sha||result.readme?.commitSha||null,result.run?.id||null,operation.query||null]));
  const receipt={id:receiptId,tool,status:'complete'};
+ // Dispatch only confirms a request was queued. No actual run or code result
+ // exists yet, so it cannot mint a Bubble Bit regardless of user context.
+ if(tool==='github.dispatch_workflow')return {receipt,bit:{status:'observation_only',amount:0}};
  const ctx=record.bitContext;
  if(!ctx||tool==='github.create_repository')return {receipt,bit:{status:'context_unavailable',amount:0}};
  const packet={version:1,source:'brain_direct_github_v1',asset:'BUBBLE_BIT',receiptId,userId:ctx.userId,

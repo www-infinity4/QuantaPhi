@@ -37,6 +37,11 @@
     .bubbles-wallet-asset{padding:10px;border-radius:12px;background:#f5eefc;min-width:0}
     .bubbles-wallet-asset small,.bubbles-wallet-asset strong{display:block;color:#3f2857}
     .bubbles-wallet-asset strong{font-size:22px;font-variant-numeric:tabular-nums}
+    .bubbles-wallet-asset-status{font-size:13px;line-height:1.45;letter-spacing:.01em;overflow-wrap:anywhere;margin-top:5px;color:#57496a}
+    .bubbles-wallet-asset{min-height:90px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+    .bubbles-wallet-asset:focus-within{outline:2px solid #5f259f;outline-offset:2px}
+    @media(max-width:390px){.bubbles-wallet-balances{grid-template-columns:1fr}.bubbles-wallet-asset{min-height:76px}.bubbles-wallet-asset strong{font-size:24px}}
+
     .bubbles-wallet details{border-top:1px solid #ebdef7;margin-top:10px;padding-top:10px}
     .bubbles-wallet summary{cursor:pointer;font-weight:750}
     .bubbles-wallet-receipts{max-height:350px;overflow-y:auto;overflow-wrap:anywhere;padding-left:28px}

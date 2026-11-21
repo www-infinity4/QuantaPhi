@@ -2,6 +2,7 @@
 'use strict';
 const STAR='https://starquest-ledger.marvaseater.workers.dev';
 const WALLET='https://unified-wallet.marvaseater.workers.dev';
+const MUSIC_LEDGER='https://quanta-phi-ledger.marvaseater.workers.dev/v1/music-quants/state';
 const byId=id=>document.getElementById(id);
 const state=byId('bubblesWalletConnection');
 const balances=byId('bubblesWalletBalances');
@@ -11,7 +12,7 @@ const refresh=byId('bubblesWalletRefresh');
 if(!state||!balances||!history||!receipts||!refresh)return;
 let pending=false,lastUser='';
 function status(message){state.textContent=message}
-function money(value){return Number.isFinite(Number(value))?Number(value).toLocaleString(undefined,{maximumFractionDigits:1}):'—'}
+function money(value){return value===null||value===undefined||value===''||!Number.isFinite(Number(value))?'—':Number(value).toLocaleString(undefined,{maximumFractionDigits:1})}
 function accountTime(value){const number=Number(value);if(!Number.isFinite(number)||number<=0)return '';const t=new Date(number);return Number.isNaN(+t)?'':t.toLocaleString()}
 async function verifiedWalletToken(){
  const bridge=global.QuantaCloudConnection;
@@ -34,11 +35,25 @@ async function api(url,token){
   return data;
  }finally{clearTimeout(timer)}
 }
-function line(title,value){
+function line(title,value,detail=''){
  const span=document.createElement('span');span.className='bubbles-wallet-asset';
  const label=document.createElement('small');label.textContent=title;
  const count=document.createElement('strong');count.textContent=money(value);
- span.append(label,count);return span;
+ span.append(label,count);if(detail){const info=document.createElement('small');info.className='bubbles-wallet-asset-status';info.textContent=detail;span.append(info)}return span;
+}
+function workAssetLine(name,asset){
+ return asset?.available===true&&Number.isSafeInteger(asset.credited)&&asset.credited>=0
+   ?line(name,asset.credited,(asset.pending>0?String(asset.pending)+' pending verification · ':'')+'Verified receipt-backed ledger')
+   :line(name,null,'No verified balance · ledger not connected');
+}
+function disconnectedBalances(){
+ balances.replaceChildren(
+   line('GIT Coin',null,'No verified balance · sign in for verified receipt readback'),
+   line('Bubble Bits',null,'No verified balance · sign in for credited bits'),
+   line('GPT Coin',null,'No verified balance · verified model run required'),
+   line('Cash Wallet',null,'No verified balance · provider funds not connected')
+ );
+ balances.hidden=false;history.hidden=true;receipts.replaceChildren();
 }
 function item(target,text){
  const li=document.createElement('li');li.textContent=text;target.append(li);
@@ -71,9 +86,18 @@ async function populate(token,star,unified){
   line('Infinity',b.INFINITY),
   line('Music Quants',b.MUSIC_QUANT)
  );
- const bitInfo=unified.bubbleBits;
- if(bitInfo?.available&&Number.isSafeInteger(bitInfo.credited))balances.append(line('Bubble Bits credited',bitInfo.credited));
- else {const unavailable=document.createElement('p');unavailable.textContent='Bubble Bit credit ledger unavailable';balances.append(unavailable);}
+ const workAssets=unified.workAssets||{};
+ balances.append(workAssetLine('GIT Coin',workAssets.GIT_COIN));
+ balances.append(workAssetLine('Bubble Bits',unified.bubbleBits));
+ balances.append(workAssetLine('GPT Coin',workAssets.GPT_COIN));
+ const listeningTile=line('Listening Quants',null,'Checking signed Cloudflare listening receipts…');
+ listeningTile.dataset.asset='listening';
+ balances.append(listeningTile);
+ const cash=unified.cashWallet||{status:'not_connected'};
+ const cashReady=cash.providerVerified===true&&cash.currency==='USD'&&Number.isSafeInteger(cash.availableCents)&&cash.availableCents>=0;
+ const cashRow=line('Cash Wallet',null,cashReady?'Settled USD · provider verified':'No verified balance · provider not connected');
+ cashRow.querySelector('strong').textContent=cashReady?('$'+(cash.availableCents/100).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})):'—';
+ balances.append(cashRow);
  balances.hidden=false;
  history.hidden=false;
  status('Cloudflare verified · '+name+' · live balances');
@@ -116,6 +140,40 @@ async function populate(token,star,unified){
  if(!tokens.length)item(tokenList,'No Infinity search receipts returned for this account.');
  receipts.append(tokenList);
 }
+function showListening(historyData){
+ const tile=balances.querySelector('[data-asset="listening"]');
+ if(!tile)return;
+ const known=historyData?.available===true&&Array.isArray(historyData.listening);
+ const entries=known?historyData.listening:null;
+ tile.querySelector('strong').textContent=known?money(entries.length):'—';
+ tile.querySelector('.bubbles-wallet-asset-status').textContent=known
+  ?'Verified listening receipts · included in Music Quants, not counted twice'
+  :'No verified listening history · Cloudflare ledger unavailable';
+ const head=document.createElement('h3');head.textContent='Listening Quant source receipts';
+ receipts.append(head);
+ const list=document.createElement('ol');list.className='bubbles-wallet-receipts';
+ if(!known)item(list,'Cloudflare did not verify the complete listening history. No count was invented.');
+ else if(!entries.length)item(list,'No active Listening Quant receipts were returned for this account.');
+ else for(const q of entries.slice(0,100)){
+  const name=q.song||q.context?.events?.[0]?.program||'Listening receipt';
+  const channel=q.context?.events?.[0]?.channel||'';
+  const duration=q.durationSec>0?q.durationSec+' seconds':'duration not recorded';
+  item(list,name+' · '+(channel?channel+' · ':'')+duration+
+   (q.startedAt?' · started '+q.startedAt:'')+
+   (q.sourceUrl?' · source '+q.sourceUrl:'')+
+   ' · receipt '+q.id+(q.hash?' · provenance '+q.hash:''));
+ }
+ receipts.append(list);
+ if(known&&entries.length>100){
+  const note=document.createElement('p');
+  note.textContent='Showing the newest 100 source receipts; '+entries.length+' verified listening records are counted.';
+  receipts.append(note);
+ }
+}
+async function readCloudListening(token){
+ const {readListeningHistory}=await import('/wallet-listening-history.mjs?v=20261108-provenance1');
+ return readListeningHistory(offset=>api(MUSIC_LEDGER+(offset?'?offset='+offset:''),token));
+}
 async function load(){
  if(pending)return;
  pending=true;refresh.disabled=true;
@@ -123,14 +181,16 @@ async function load(){
  try{
   const token=await verifiedWalletToken();
   if(!/^sq_[A-Za-z0-9_-]{32,}$/.test(token||'')){
-   balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+   disconnectedBalances();
    status('Wallet not connected in this browser or Android app. Your Cloudflare records have not been erased. Use Find Cloud Tokens to restore an existing verified wallet.');
    return;
   }
   const [star,unified]=await Promise.all([api(STAR+'/v1/state',token),api(WALLET+'/v1/wallet/state',token)]);
   await populate(token,star,unified);
+  try{showListening(await readCloudListening(token));}
+  catch{showListening({available:false});}
  }catch(error){
-  balances.hidden=true;history.hidden=true;receipts.replaceChildren();
+  disconnectedBalances();
   status('Could not verify the current wallet: '+String(error.message||error).slice(0,180)+'. Stored Cloudflare records were not changed.');
  }finally{pending=false;refresh.disabled=false}
 }
@@ -138,5 +198,7 @@ refresh.addEventListener('click',()=>void load());
 document.addEventListener('starquest:ledger-connected',()=>void load());
 document.addEventListener('starquest:auth-changed',()=>void load());
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')void load()});
+global.addEventListener('infinity:wallet-state',()=>void load());
+disconnectedBalances();
 void load();
 })(window);
