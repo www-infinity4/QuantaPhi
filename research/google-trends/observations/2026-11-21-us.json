@@ -3,76 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-21T15:31:22.822285Z",
+  "checked_at": "2026-11-21T16:01:26.009672Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "luca williams barnett",
+      "query": "kocaelispor vs fenerbahçe",
       "approx_searches": "500+",
-      "published_at": "2026-11-21T15:10:00Z",
+      "published_at": "2026-11-21T15:30:00Z",
       "related_news_urls": [
-        "https://www.spurs-web.com/spurs-news/maybe-de-zerbi-hints-luca-williams-barnett-could-be-in-line-for-first-tottenham-start/",
-        "https://cwibc.co.id/en/tottenham-ipswich-confirmed-lineups",
-        "https://www.yardbarker.com/soccer/articles/spurs_have_a_bench_warmer_who_will_block_williams_barnetts_pathway/s1_17897_44590410"
+        "https://www.goal.com/en-sg/news/kocaelispor-vs-fenerbahce-live-today-where-to-watch-on-tv-and-online/blt5aed1c826beb0e33",
+        "https://www.sportsmole.co.uk/football/kocaelispor/preview/kocaelispor-vs-fenerbahce-prediction-team-news-lineups_609421.html",
+        "https://www.fanatik.com.tr/en/three-players-out-for-the-fenerbahce-kocaelispor-match-2645164"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe8f8u-_Dl2z9LfzuL9TFAwWwQQru0Kps5dUq8WADWf05iGCZCpBn4cieRzsI",
-      "image_credit": "Spurs Web",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGm29ArpsGRcg0atoQdxSVyACLx_CZQOx0vXyIHrd8Pzq3g8lb8mAZOr4NKE8",
+      "image_credit": "Goal.com",
       "news": [
         {
-          "url": "https://www.spurs-web.com/spurs-news/maybe-de-zerbi-hints-luca-williams-barnett-could-be-in-line-for-first-tottenham-start/",
-          "title": "‘Maybe’ – De Zerbi hints Luca Williams-Barnett could be in line for first Tottenham start",
-          "publisher": "Spurs Web",
+          "url": "https://www.goal.com/en-sg/news/kocaelispor-vs-fenerbahce-live-today-where-to-watch-on-tv-and-online/blt5aed1c826beb0e33",
+          "title": "Kocaelispor vs Fenerbahçe live today: Where to watch on TV and online",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe8f8u-_Dl2z9LfzuL9TFAwWwQQru0Kps5dUq8WADWf05iGCZCpBn4cieRzsI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGm29ArpsGRcg0atoQdxSVyACLx_CZQOx0vXyIHrd8Pzq3g8lb8mAZOr4NKE8"
         },
         {
-          "url": "https://cwibc.co.id/en/tottenham-ipswich-confirmed-lineups",
-          "title": "Tottenham Name Williams Barnett for Ipswich Premier League Clash",
-          "publisher": "cwibc.co.id",
+          "url": "https://www.sportsmole.co.uk/football/kocaelispor/preview/kocaelispor-vs-fenerbahce-prediction-team-news-lineups_609421.html",
+          "title": "Preview: Kocaelispor vs Fenerbahce - prediction, team news, lineups",
+          "publisher": "Sports Mole",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcMH4bahX4PZBxfcPOsHBPUwbnl92RxqxwR_K-BAB4JQAImeHoXEKXOyDsogg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9SB4FuzXc28GGz1mZdq_0czxhS55umPjacXXN7rZKBtX6BEFGBaLPIcwXg0Y"
         },
         {
-          "url": "https://www.yardbarker.com/soccer/articles/spurs_have_a_bench_warmer_who_will_block_williams_barnetts_pathway/s1_17897_44590410",
-          "title": "Spurs have a bench warmer who will block Williams-Barnett's pathway",
-          "publisher": "Yardbarker",
+          "url": "https://www.fanatik.com.tr/en/three-players-out-for-the-fenerbahce-kocaelispor-match-2645164",
+          "title": "Three players out for the Fenerbahçe-Kocaelispor match!",
+          "publisher": "Fanatik",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaPI0nPBbSl4KgqB1P2nyRwPSNFCz_DtDSKm9g0Q9jO-1ikVCOHHRZtxhBH8s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_BZi0F9zB2T6p60X4xBf8CoO-6V1iMfUWN1NyfhK4T1wKPBg9qAIRy-JTlr4"
         }
       ]
     },
     {
-      "query": "bournemouth",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T15:10:00Z",
+      "query": "henry cavill as james bond",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T15:30:00Z",
       "related_news_urls": [
-        "https://www.si.com/soccer/why-junior-kroupi-may-disappoint-arsenal-transfer-pursuit",
-        "https://www.nytimes.com/athletic/video/ct8J1FKi3tfj6qp/",
-        "https://www.goal.com/en/news/arsenal-transfer-eli-junior-kroupi-bournemouth/blt1a7090360f006863"
+        "https://collider.com/henry-cavill-netflix-spy-thriller-first-look/",
+        "https://www.imdb.com/es/news/ni66120511/?ref_=tt_nwr_1",
+        "https://www.fortressofsolitude.co.za/henry-cavill-james-bond-final-five-pattinson-box-office/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuLjYxXFRc5lkpLZ42ljEcqZZrPjuEBMNnGU-SEwH2t6I_2u7lzmAUvCJVRt4",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qtNswF67cWn4TxibL865ng-okx7ZkGgBYMGyri0CjPr_GyIUeJqHl1GlgBA",
+      "image_credit": "Collider",
       "news": [
         {
-          "url": "https://www.si.com/soccer/why-junior-kroupi-may-disappoint-arsenal-transfer-pursuit",
-          "title": "Why Junior Kroupi May Disappoint Arsenal in Transfer PursuitStance",
-          "publisher": "Sports Illustrated",
+          "url": "https://collider.com/henry-cavill-netflix-spy-thriller-first-look/",
+          "title": "Netflix Officially Finds Its James Bond Replacement in Henry Cavill",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuLjYxXFRc5lkpLZ42ljEcqZZrPjuEBMNnGU-SEwH2t6I_2u7lzmAUvCJVRt4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qtNswF67cWn4TxibL865ng-okx7ZkGgBYMGyri0CjPr_GyIUeJqHl1GlgBA"
         },
         {
-          "url": "https://www.nytimes.com/athletic/video/ct8J1FKi3tfj6qp/",
-          "title": "Video: David Ornstein latest on Kroupi's future",
-          "publisher": "The New York Times",
+          "url": "https://www.imdb.com/es/news/ni66120511/?ref_=tt_nwr_1",
+          "title": "Henry Cavill Officially Finds His James Bond Role in New Video From Netflix Action Spy Movie",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLPaMOsjj6-j-AXsqdkfqazyBp-qK5Cf6Zkxz2aLYJ3U6leNrhQUnfR5sSZSU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1W015lmuj75KHvRJINl81g8cZ7a6oEDGhN75M7pvZmZNUv7eJw-WdE0JM2Z8"
         },
         {
-          "url": "https://www.goal.com/en/news/arsenal-transfer-eli-junior-kroupi-bournemouth/blt1a7090360f006863",
-          "title": "Arsenal face MASSIVE £100m stumbling block in pursuit of Premier League wonderkid",
+          "url": "https://www.fortressofsolitude.co.za/henry-cavill-james-bond-final-five-pattinson-box-office/",
+          "title": "Why Henry Cavill Wasn’t Even in the Running for James Bond",
+          "publisher": "Fortress of Solitude",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHOhlsFmL5tPm1eRtqXJWJyT6229BWeerk-gARhm0W8uJLlBFi63ugccyQ6AY"
+        }
+      ]
+    },
+    {
+      "query": "nice vs psg",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-21T15:20:00Z",
+      "related_news_urls": [
+        "https://www.fubo.tv/news/soccer/ogc-nice-vs-paris-saint-germain-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+        "https://sports.yahoo.com/articles/ogc-nice-predicted-xi-v-081200550.html",
+        "https://www.goal.com/en-us/news/luis-enrique-ousmane-dembele-returns-ahead-of-psg-nice-clash/bltf50f732abd59bf94"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0e0DbLQEGOa6TusoOCF615kD57d8mVZB_4zUG-tkApuxC2MsQuLD7pIAGmlc",
+      "image_credit": "Fubo",
+      "news": [
+        {
+          "url": "https://www.fubo.tv/news/soccer/ogc-nice-vs-paris-saint-germain-where-to-watch-stream-info-tv-channel-and-live-updates-november-21-2026/",
+          "title": "OGC Nice vs Paris Saint-Germain - Where to Watch, Stream Info, TV Channel, and Live Updates (November 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0e0DbLQEGOa6TusoOCF615kD57d8mVZB_4zUG-tkApuxC2MsQuLD7pIAGmlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ogc-nice-predicted-xi-v-081200550.html",
+          "title": "OGC Nice predicted XI v PSG: Mohamed Abdelmonem out, Elye Wahi to start",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIIJpYehyiHX8isQHeXmeQZkhX2xvnutplBX4e1Ulu7GHEH-vCYsRS8vGidTA"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/luis-enrique-ousmane-dembele-returns-ahead-of-psg-nice-clash/bltf50f732abd59bf94",
+          "title": "'Players are liars' - Luis Enrique delivers classic quip ahead of PSG clash with Nice as Ousmane Dembele returns to boost squad",
           "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMolApKrvQz3njiOpWB5NHTRpbyCrm8QWJPNbI-2B7PD6DKYFooddJRuQW2jg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLnphUDEK8kzdg3Hwk5pgNcTCxhI9vxyNUCWq-lqbX0cQihadi9y5Mk9d5Rs"
+        }
+      ]
+    },
+    {
+      "query": "barry bonds",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T15:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50534187/pete-rose-posthumously-pardoned-president-donald-trump",
+        "https://www.foxnews.com/outkick-sports/mlb-all-time-leaders-hits-home-runs-cy-young-awards-arent-hall-of-fame-thats-problem",
+        "https://www.bbc.com/news/articles/cx1l0pm7l9jmo"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2_BbRLB49tXm7-RC_8Sx7LHp0J2-Ulv7YSznHJBjZVDPp8KoU6EdSc9iD5U",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50534187/pete-rose-posthumously-pardoned-president-donald-trump",
+          "title": "Pete Rose posthumously pardoned by President Donald Trump",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2_BbRLB49tXm7-RC_8Sx7LHp0J2-Ulv7YSznHJBjZVDPp8KoU6EdSc9iD5U"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/mlb-all-time-leaders-hits-home-runs-cy-young-awards-arent-hall-of-fame-thats-problem",
+          "title": "MLB's all-time leaders in hits, home runs and Cy Young Awards aren't in the Hall of Fame, and that's a problem",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaiw6VjdVbz3rkKo8vMVkyliZY2w1g874u2Ci_mMc4Ni7uDjF_S8DTHvrC1MI"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cx1l0pm7l9jmo",
+          "title": "Trump posthumously pardons US baseball legend Pete Rose",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpw9YMMwYkJt7QM-btl7nsYUUyaAocTnr_lErrm_unvJRft7n6oFM_EglHbZY"
+        }
+      ]
+    },
+    {
+      "query": "costco thanksgiving holiday store closures",
+      "approx_searches": "500+",
+      "published_at": "2026-11-21T15:20:00Z",
+      "related_news_urls": [
+        "https://www.thestreet.com/retail/costco-makes-a-tough-store-closure-decision",
+        "https://www.9news.com/article/news/nation-world/thanksgiving-day-store-hours-whats-open-closed/507-21ce3069-0339-4818-9711-a6541c05424b",
+        "https://kpq.com/ixp/1137/p/stores-closed-thanksgiving-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7-9RShmpgEfZOOT1OHbSAVYhU49PhXWVsCBGdKQ8ylPES7s-_EfPav_lsYz8",
+      "image_credit": "TheStreet",
+      "news": [
+        {
+          "url": "https://www.thestreet.com/retail/costco-makes-a-tough-store-closure-decision",
+          "title": "Costco makes a tough store closure decision",
+          "publisher": "TheStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7-9RShmpgEfZOOT1OHbSAVYhU49PhXWVsCBGdKQ8ylPES7s-_EfPav_lsYz8"
+        },
+        {
+          "url": "https://www.9news.com/article/news/nation-world/thanksgiving-day-store-hours-whats-open-closed/507-21ce3069-0339-4818-9711-a6541c05424b",
+          "title": "Thanksgiving Day 2026 store hours: Here's what's open and closed for last-minute shoppers",
+          "publisher": "9NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4u6yCkfu-aM7eiyKo50RgESqw90jcO9eNiey-4l67LFUzVc0uf_fDub42G-8"
+        },
+        {
+          "url": "https://kpq.com/ixp/1137/p/stores-closed-thanksgiving-2026/",
+          "title": "Remember When Thanksgiving Dinner Ended at the Mall? Walmart, Target, Costco, and More Are Staying Closed",
+          "publisher": "NewsRadio 560 KPQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJFHcuVFZtr7rJXM8PR-MKKrRbXHHstCj5og3AakDXse1nxjqmg0UVXutZXfI"
+        }
+      ]
+    },
+    {
+      "query": "dwayne johnson",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-21T15:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50549970/the-rock-ends-epic-gameday-entrance-slamming-mcafee-table",
+        "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142230306.html",
+        "https://miamihurricanes.com/news/2026/11/18/miami-welcomes-back-espn-college-gameday-acc-huddle26"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVnX400jqytwbnNhf3s2Ng3Ce-PEXRmF2JTdUA5qBDPEGl9VmpYRA51bV_dNo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50549970/the-rock-ends-epic-gameday-entrance-slamming-mcafee-table",
+          "title": "The Rock ends epic 'GameDay' entrance by slamming McAfee through table",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVnX400jqytwbnNhf3s2Ng3Ce-PEXRmF2JTdUA5qBDPEGl9VmpYRA51bV_dNo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/best-college-gameday-signs-week-142230306.html",
+          "title": "Best ‘College GameDay’ signs from Week 12: Miami vs. Virginia Tech",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQb5rcJxQxCjPVGJlhYqFfvsriIWLsILEyvgyKNqYJjV8D3zRHEzp2qD7hNuM"
+        },
+        {
+          "url": "https://miamihurricanes.com/news/2026/11/18/miami-welcomes-back-espn-college-gameday-acc-huddle26",
+          "title": "Miami Welcomes Back ESPN College GameDay, ACC Huddle",
+          "publisher": "Miami Hurricanes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb2_efgGPxvB4i6_0DWqAmSlry_I5o5SJHKYKADx_NVsN4M6iuJ3oG-PIFPVo"
+        }
+      ]
+    },
+    {
+      "query": "lucá williams-barnett",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-21T15:10:00Z",
+      "related_news_urls": [
+        "https://www.givemesport.com/tottenham-de-zerbi-presented-perfect-williams-barnett-opportunity-ipswich/",
+        "https://www.spurs-web.com/spurs-news/youre-going-to-be-like-glenn-hoddle-micky-hazard-reveals-what-he-told-williams-barnett/",
+        "https://www.essexcountynews.co.uk/sport/national/26745184.tottenhams-luca-williams-barnett-told-not-let-english-football-change/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1JIn81EmqMRyPbzS404VPGujvUkQOlvElpmcvS3Ui7XRqH5lVPClxZ2SFHVs",
+      "image_credit": "GiveMeSport",
+      "news": [
+        {
+          "url": "https://www.givemesport.com/tottenham-de-zerbi-presented-perfect-williams-barnett-opportunity-ipswich/",
+          "title": "De Zerbi Presented With His Perfect Luca Williams-Barnett Opportunity at Tottenham",
+          "publisher": "GiveMeSport",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1JIn81EmqMRyPbzS404VPGujvUkQOlvElpmcvS3Ui7XRqH5lVPClxZ2SFHVs"
+        },
+        {
+          "url": "https://www.spurs-web.com/spurs-news/youre-going-to-be-like-glenn-hoddle-micky-hazard-reveals-what-he-told-williams-barnett/",
+          "title": "‘You’re going to be like Glenn Hoddle’ – Micky Hazard reveals what he told Williams-Barnett",
+          "publisher": "Spurs Web",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSppuwRYIWjFU-ZU4Z_R_Y09aQ5ro3NIW3P-jhCL2coobFDyvqvKvGJaIpGAI4"
+        },
+        {
+          "url": "https://www.essexcountynews.co.uk/sport/national/26745184.tottenhams-luca-williams-barnett-told-not-let-english-football-change/",
+          "title": "Tottenham’s Luca Williams-Barnett told not to let English football change him",
+          "publisher": "https://www.essexcountynews.co.uk/",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6U10UWOzEVdXdMcnjs7Qkv9XmCiQqVWQktxotHenUwE4g_80Wll16BMvqzzg"
         }
       ]
     },
@@ -82,7 +257,7 @@
       "published_at": "2026-11-21T15:00:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-saudi-led-coalition-repels-houthi-missiles",
-        "https://www.ynetnews.com/article/b168jg1y7l",
+        "https://www.ndtv.com/world-news/iran-claims-it-hit-us-f-16-fighter-jet-with-missile-forced-emergency-landing-12359448",
         "https://www.timesofisrael.com/liveblog_entry/irans-army-claims-it-damaged-us-f-16-over-gulf-forcing-emergency-landing-no-immediate-comment-from-us-military/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQugeP7Bg28xq6kpKkHuGL3bYtvj-G4IFRMtD17qdcudIyOjfM373_EJsYaGFQ",
@@ -96,11 +271,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQugeP7Bg28xq6kpKkHuGL3bYtvj-G4IFRMtD17qdcudIyOjfM373_EJsYaGFQ"
         },
         {
-          "url": "https://www.ynetnews.com/article/b168jg1y7l",
-          "title": "Iran unveils underground 'missile city,' claims it struck US F-16 over Persian Gulf",
-          "publisher": "Ynetnews",
+          "url": "https://www.ndtv.com/world-news/iran-claims-it-hit-us-f-16-fighter-jet-with-missile-forced-emergency-landing-12359448",
+          "title": "Iran Claims It Hit US F-16 Fighter Jet With Missile, Forced Emergency Landing",
+          "publisher": "NDTV",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr3S-XfH0TwRIMFZIB958UKHLyFwiiZzRqvcH2W8praFcytaLjy9MDuUHiu-E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQc-gajPmBnu3LRV_hsm525eUgKfyQmZ7Kj2d_Rh4b3X7aRuhSgI0Mxkl36iM"
         },
         {
           "url": "https://www.timesofisrael.com/liveblog_entry/irans-army-claims-it-damaged-us-f-16-over-gulf-forcing-emergency-landing-no-immediate-comment-from-us-military/",
@@ -112,43 +287,43 @@
       ]
     },
     {
-      "query": "mexico u-17 vs romania u-17",
-      "approx_searches": "500+",
+      "query": "gta 6 review score discrepancy",
+      "approx_searches": "2000+",
       "published_at": "2026-11-21T14:50:00Z",
       "related_news_urls": [
-        "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/",
-        "https://www.chivasdecorazon.com.mx/en/noticias/41799/Presencia-Rojiblanca-en-el-triunfo-del-Tri-Sub-17",
-        "https://www.soyfutbol.com/en/leagues/mark-your-calendars-where-to-watch-mexicos-u-17-national-team-live-at-qatar-2026-20261120-0050.html"
+        "https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/",
+        "https://www.pushsquare.com/news/2026/11/gta-6-ps5-review-bombing-out-of-control-as-zelda-receives-revenge-ratings",
+        "https://psxextreme.com/feature/lets-talk-about-critic-vs-user-reviews/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKTF1e0EOBDXlwnDL2y-A9fV-nC2Gr5-iAyUlMBDHVkIg0UR5PAPcfKrvzto",
-      "image_credit": "Fubo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3cmFfMho0T2y-eevQWEcu6epqp965J_6OT7mTY26Rm23vbhLLzD2IRQFaDrg",
+      "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/",
-          "title": "Mexico vs Romania U17 Live Stream: How to Watch 2026 FIFA U-17 World Cup (Nov. 21, 2026)",
-          "publisher": "Fubo",
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/21/grand-theft-auto-6-is-being-review-bombed-on-metacritic/",
+          "title": "‘Grand Theft Auto 6’ Is Being Review Bombed On Metacritic",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKTF1e0EOBDXlwnDL2y-A9fV-nC2Gr5-iAyUlMBDHVkIg0UR5PAPcfKrvzto"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3cmFfMho0T2y-eevQWEcu6epqp965J_6OT7mTY26Rm23vbhLLzD2IRQFaDrg"
         },
         {
-          "url": "https://www.chivasdecorazon.com.mx/en/noticias/41799/Presencia-Rojiblanca-en-el-triunfo-del-Tri-Sub-17",
-          "title": "Rojiblanco Presence in Mexico U17's Victory!",
-          "publisher": "Chivas",
+          "url": "https://www.pushsquare.com/news/2026/11/gta-6-ps5-review-bombing-out-of-control-as-zelda-receives-revenge-ratings",
+          "title": "GTA 6 PS5 Review Bombing Out of Control as Zelda Receives Revenge Ratings",
+          "publisher": "Push Square",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwAPNP-vxwqAZSR_Q-AjgmMccAn4quChERUFGQyfXDrt3t4Bc46zcajB2ZmYY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmVmpqnWTKjxLQsh-TmEtcTZiyOaloa2gOQjai3wt2VbjEHhI6y8TmDv-Fea0"
         },
         {
-          "url": "https://www.soyfutbol.com/en/leagues/mark-your-calendars-where-to-watch-mexicos-u-17-national-team-live-at-qatar-2026-20261120-0050.html",
-          "title": "Mark Your Calendars: Where to Watch Mexico’s U-17 National Team Live at Qatar 2026!",
-          "publisher": "Soy Futbol",
+          "url": "https://psxextreme.com/feature/lets-talk-about-critic-vs-user-reviews/",
+          "title": "Let’s Talk About Critic vs User Reviews",
+          "publisher": "PSX Extreme",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlGBtUWB7LB_bAg4HPzLC50BG5lhSudkQ1vXWqvbc2y_hq4nik2krj3Hq0gXA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPYIF5fO-UEwGS_ehJet_K5swOE2fstQaHirLbYxUiXL9pVLWkXRNSiBO7k04"
         }
       ]
     },
     {
       "query": "emmanuel emegha",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-21T14:50:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/emmanuel-emegha-issues-chelsea-warning-130239821.html",
@@ -178,181 +353,6 @@
           "publisher": "Demokratis.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTQ4SKy3lR8m1OIwKTC-avX-0qYe7tFhA_X7GgUl8LeF4nvEn971PXLTtiHg"
-        }
-      ]
-    },
-    {
-      "query": "süper lig",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:50:00Z",
-      "related_news_urls": [
-        "https://www.61saat.com/super-ligde-korku-dolu-anlar-ambulans-sahaya-girdi",
-        "https://www.gazianteppostasi.com/spor/mehmet-akinci-ve-meclis-uyeleri-tribunde-gaziantep-fk-nin-yaninda",
-        "https://www.trtspor.com.tr/haber/futbol/bu-galibiyeti-biz-hak-ettik-34178278"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeN4VfgMb2hH-U0jmU27QeceOG5BF0kdXOOfS4kEhrXpcvb-7-4grxUBloWDA",
-      "image_credit": "61SAAT",
-      "news": [
-        {
-          "url": "https://www.61saat.com/super-ligde-korku-dolu-anlar-ambulans-sahaya-girdi",
-          "title": "Süper Lig'de korku dolu anlar! Ambulans sahaya girdi",
-          "publisher": "61SAAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeN4VfgMb2hH-U0jmU27QeceOG5BF0kdXOOfS4kEhrXpcvb-7-4grxUBloWDA"
-        },
-        {
-          "url": "https://www.gazianteppostasi.com/spor/mehmet-akinci-ve-meclis-uyeleri-tribunde-gaziantep-fk-nin-yaninda",
-          "title": "Mehmet Akıncı ve meclis üyeleri tribünde Gaziantep FK’nın yanında",
-          "publisher": "Gaziantep Postası",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvDlXakZi3dRHRJ29i-IjJfR6zdKZZEAGSMxngomvc2UJNIh9IJ_zPCCBTIT4"
-        },
-        {
-          "url": "https://www.trtspor.com.tr/haber/futbol/bu-galibiyeti-biz-hak-ettik-34178278",
-          "title": "\"Bu galibiyeti biz hak ettik\"",
-          "publisher": "TRTSpor",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1rbhKE994yNw8Mk8Xfl13syNbsFtD8D_QdswOohdLZGCKUa8oqF14hga4Vi0"
-        }
-      ]
-    },
-    {
-      "query": "mario cristobal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T14:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says",
-        "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-miami-return-close-ankle-surgery/",
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177573.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZsYibKW7aWjhwll01eOLZg9yQEmoWutsxeItkktkS05Siq2vx9IEYZqSuJQ8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says",
-          "title": "Miami WR Malachi Toney 'really close' to return after ankle surgery, coach says",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZsYibKW7aWjhwll01eOLZg9yQEmoWutsxeItkktkS05Siq2vx9IEYZqSuJQ8"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-miami-return-close-ankle-surgery/",
-          "title": "Miami star WR Malachi Toney 'really close' to returning from ankle injury, Mario Cristobal says",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cpbTnGXPkJ-hwA4jfuDScslLBZ2sPnGSXiJ7BHbv7pFhCnom8O-uEaTmidE"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177573.html",
-          "title": "Miami’s Malachi Toney says he feels ‘almost 100%’ two weeks after ankle surgery",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVoyKmJMfxXRh-7p6KC6oZjG2inHPYZfjZk7FjPNkC1AYT79YbvhvXb1C-i4s"
-        }
-      ]
-    },
-    {
-      "query": "best tech black friday deals",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-21T14:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-        "https://shopping.yahoo.com/deals/breaking-news/article/i-scoured-dozens-of-black-friday-sales-and-these-are-the-best-style-deals-from-hoka-kate-spade-hanes-and-more-141116602.html",
-        "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
-        },
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/i-scoured-dozens-of-black-friday-sales-and-these-are-the-best-style-deals-from-hoka-kate-spade-hanes-and-more-141116602.html",
-          "title": "I scoured dozens of Black Friday sales, and these are the best style deals from Hoka, Kate Spade, Hanes and more",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOGY2Fg3b60L0tRfXbbaCnojtfiRVet7M8gF3jll_jeg8gz4zc9E3m5qFjI00"
-        },
-        {
-          "url": "https://www.today.com/shop/gift-sales-adrianna-brach-rcna610463",
-          "title": "Black Friday Holiday Deals, Approved by Executive Editor Adrianna Brach",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhDSA6g8daLTb90uEjPhiS14nRHa8heG2l_zT5VtGGYlq95ZwCHzk5Lq3w3gU"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 xbox auto upload bans",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-21T14:40:00Z",
-      "related_news_urls": [
-        "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
-        "https://www.levelup.com/en/news/xbox-bans-grand-theft-auto-6-players-and-all-fans-risk-being-punished-if-they-dont-disable-this-console-feature/",
-        "https://insider-gaming.com/gta-6-xbox-auto-upload-ban-explained/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ",
-      "image_credit": "Pure Xbox",
-      "news": [
-        {
-          "url": "https://www.purexbox.com/news/2026/11/gta-6-players-warned-to-turn-off-auto-uploads-or-risk-getting-banned-on-xbox",
-          "title": "GTA 6 Players Warned To Turn Off Auto-Uploads Or Risk Getting Banned On Xbox",
-          "publisher": "Pure Xbox",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTTJKYWqe90IEIhXeVbe0NxX6NfCVwKmEVr21VZpIVGJlKRo-iZXdtwa5zjtQ"
-        },
-        {
-          "url": "https://www.levelup.com/en/news/xbox-bans-grand-theft-auto-6-players-and-all-fans-risk-being-punished-if-they-dont-disable-this-console-feature/",
-          "title": "Xbox Bans Grand Theft Auto 6 Players, and All Fans Risk Being Punished If They Don’t Disable This Console Feature",
-          "publisher": "www.levelup.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq-tQkjJyE54fnl3IFKyNDqfLevuiy88Oc0c2XmXEAhLelHz3jgdNRCyj6Lm0"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-xbox-auto-upload-ban-explained/",
-          "title": "GTA 6 Auto Upload Bans—Can Sex and Nudity Get You Banned From XBOX?",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB-7Fr3eo6ckuM19O010ozZJqJn-L5-C41Buh70jI0-nQYCZbutKb8rEwvB4c"
-        }
-      ]
-    },
-    {
-      "query": "harvard yale game",
-      "approx_searches": "200+",
-      "published_at": "2026-11-21T14:40:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/19/sports/harvard-yale-football-fenway-park/",
-        "https://www.thecrimson.com/topic/harvard-yale-2026/",
-        "https://yaledailynews.com/articles/this-year-harvard-wins"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4zbRcGt53oT_oiBWRkgsNdd09L0llZ6-LeZsqMnSZnQUh98tn7Hh88qfpYD4",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/19/sports/harvard-yale-football-fenway-park/",
-          "title": "Harvard wants an Ivy League football title outright. It has to get past Yale in The Game at Fenway Park.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4zbRcGt53oT_oiBWRkgsNdd09L0llZ6-LeZsqMnSZnQUh98tn7Hh88qfpYD4"
-        },
-        {
-          "url": "https://www.thecrimson.com/topic/harvard-yale-2026/",
-          "title": "Harvard-Yale: The 142nd Game",
-          "publisher": "The Harvard Crimson",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-dcjmlRmRgw4tyxowT-ul8e4nqk2fjzc2H_LKm1YyGzuMko4dwwEI_twng1k"
-        },
-        {
-          "url": "https://yaledailynews.com/articles/this-year-harvard-wins",
-          "title": "This year, Harvard wins",
-          "publisher": "Yale Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJDAbg4JL0pVHzJLn3ykJExya6mLHRVbwaNaA4PgRAnojzi2UK8ldq11G82VE"
         }
       ]
     }
