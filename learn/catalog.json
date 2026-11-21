@@ -95,6 +95,44 @@
       "writingMethod": "AI-assisted draft by Codex",
       "sourceCheck": "Codex AI, 2026-10-04",
       "independentExpertReview": false
+    },
+    {
+      "slug": "element-interactions",
+      "url": "https://quantaphi.org/learn/element-interactions/",
+      "title": "Element Interactions",
+      "extractionTerms": [
+        "stibnite",
+        "antimony",
+        "sulfur",
+        "phosphorus",
+        "dysprosium",
+        "potassium",
+        "barium",
+        "calcium",
+        "carbon"
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia: Carbon",
+          "url": "https://en.wikipedia.org/wiki/Carbon"
+        },
+        {
+          "title": "CementL: Antimony",
+          "url": "https://www.cementl.com/antimony-sb-element/"
+        },
+        {
+          "title": "Purdue: Dysprosium",
+          "url": "https://engineering.purdue.edu/REE/rare-earth-elements/dysprosium"
+        },
+        {
+          "title": "ScienceDirect: Stibnite",
+          "url": "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/stibnite"
+        }
+      ],
+      "author": "QuantaPhi",
+      "writingMethod": "AI-assisted draft by Codex",
+      "sourceCheck": "Codex AI, 2026-11-21",
+      "independentExpertReview": false
     }
   ]
 }
