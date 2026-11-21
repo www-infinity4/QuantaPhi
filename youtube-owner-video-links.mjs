@@ -28,7 +28,7 @@ export function validateOwnerYouTubeLink(row){
     row.title!==row.title.trim()||/[<>\u0000-\u001f]/.test(row.title))return false;
  if(row.publishedAt!==null||row.publisherVerified!==false||row.contentBoundary!=='general-media')return false;
  if(row.shortsRoute!==undefined&&row.shortsRoute!==true)return false;
- if(row.displayTitle!==undefined&&(typeof row.displayTitle!=='string'||row.displayTitle.trim()!==row.displayTitle||row.displayTitle.length>120||/[<>\\u0000-\\u001f]/.test(row.displayTitle)))return false;
+ if(row.displayTitle!==undefined&&(typeof row.displayTitle!=='string'||row.displayTitle.trim()!==row.displayTitle||row.displayTitle.length>120||/[<>\u0000-\u001f]/.test(row.displayTitle)))return false;
  return /^\d{4}-\d\d-\d\d$/.test(row.observedAt||'')&&
   Number.isFinite(Date.parse(row.observedAt+'T00:00:00Z'));
 }
