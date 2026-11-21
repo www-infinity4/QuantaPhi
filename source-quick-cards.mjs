@@ -1,4 +1,4 @@
-import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261102-cardimages1';
+import {createCardArtwork,mountCardTools} from './quanta-card-experience.mjs?v=20261121-creator-mix1';
 import {findDiscovery} from './quanta-feed-catalog.mjs';
 import {mountOfficialViewer} from './quanta-official-viewer.mjs';
 import {mountAvatarAiCard} from './avatar-ai-card.mjs';
