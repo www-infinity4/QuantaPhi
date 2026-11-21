@@ -117,3 +117,31 @@ test('owner-supplied Samirah video has one public source-linked Oracle Quick Car
  assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
  assert.equal(departmentFor(c),'media');
 });
+
+
+test('owner batch View More loads actual additional videos from the saved catalog and verified creators',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ for(const id of ['oxVpgLW2k2c','hI_ZLgcCeVU','jZ4Jk4nR94I','O5wUpS5z4SI']){
+  const found=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+  assert.equal(found.length,1,'Missing or duplicate owner link '+id);
+  const v=found[0];
+  assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(v.publishedAt,null);
+  assert.equal(v.publisherVerified,false);
+  assert.equal(v.titleVerified,false);
+  assert.equal(validateOwnerYouTubeLink(v),true);
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+  assert.ok(card,'Quick Card not generated for '+id);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card),'Not a valid Public card '+id);
+  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id),'Missing Oracle feed card '+id);
+  assert.equal(departmentFor(card),'media');
+ }
+ const player=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(player,/View more videos/,'Each owner video needs a View more control');
+ assert.match(player,/initialCreatorChannel:'owner'/,'Open the owner-video feed within the card');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/,'Feed must include the actual owner videos');
+ assert.match(mixed,/Load more videos/);
+ assert.match(mixed,/\/api\/creator-uploads/,'Must continue fetching recent uploads from known channels');
+ assert.match(mixed,/Owner-submitted videos/,'Do not mislabel owner links as a verified channel');
+});
