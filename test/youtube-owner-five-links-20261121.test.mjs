@@ -153,3 +153,26 @@ test('owner video GuT4DmGeuS0 is represented once as a source-linked Oracle Medi
   assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('Brittikitty Lily source opens as one original-video Public/Media Quick Card',()=>{
+  const id='eikANmw714k';
+  const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+  assert.equal(matches.length,1,'The submitted video must not duplicate');
+  const video=matches[0];
+  assert.equal(video.title,'Lily can literally fall asleep everywhere and anywhere 😂😂');
+  assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+  assert.equal(video.observedAt,'2026-11-21');
+  assert.equal(video.publisherVerified,false,'Channel ownership remains unverified');
+  assert.equal(video.publishedAt,null,'Do not infer publication date from the link');
+  assert.equal(video.contentBoundary,'general-media');
+  assert.ok(validateOwnerYouTubeLink(video));
+  const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+  assert.ok(card,'The original YouTube video must render in the existing source-card factory');
+  assert.equal(card.featureUrl,video.sourceUrl);
+  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+  assert.equal(findSourceCard(card.id)?.id,card.id);
+  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+  assert.equal(departmentFor(card),'media');
+});
