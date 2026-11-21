@@ -144,6 +144,37 @@ def run():
                 expect(stage.locator('[data-source-id="abbecadventures-video-6346365875734e4f666a4d"]')).to_be_visible()
                 checks.append(f'{width}px: 12 original YouTube source cards with media placement in Oracle')
 
+                # Julie Deru uses the SAME Abbe player and actual Oracle carousel,
+                # with no frame or provider request until the viewer chooses Play.
+                page.goto(base+'/source-quick-card.html?card=julie-deru-youtube', wait_until='domcontentloaded')
+                julie = page.locator('.youtube-creator-post-card')
+                expect(julie).to_be_visible()
+                expect(julie).to_contain_text('Julie Deru · Public YouTube videos')
+                expect(julie).to_contain_text('2 source-identified videos')
+                assert julie.locator('iframe').count()==0
+                julie_search=julie.get_by_role('searchbox',name='Search Julie Deru indexed videos')
+                julie_search.fill('trees')
+                expect(julie.get_by_role('status')).to_contain_text('1 of 1')
+                assert julie.get_by_role('link',name='Read original on YouTube').get_attribute('href')=='https://www.youtube.com/watch?v=G6zpr59jEas'
+                julie_search.fill('nothing-here-xyz')
+                expect(julie.get_by_role('status')).to_contain_text('No indexed videos match')
+                julie_search.fill('')
+                with page.expect_download() as julie_download:
+                    julie.get_by_role('button',name='Export indexed database').click()
+                exported_julie=json.loads(Path(julie_download.value.path()).read_text())
+                assert len(exported_julie['videos'])==2 and exported_julie['coverage']['complete'] is False
+                julie.get_by_role('button',name='Play video in card').click()
+                expect(julie.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/G6zpr59jEas')
+                julie.get_by_role('button',name='Stop playback').click()
+                expect(julie.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'),'Julie Deru card overflow'
+                page.goto(base+'/?card=julie-deru-youtube',wait_until='domcontentloaded')
+                stage=page.locator('#oracleCardStage')
+                expect(stage.locator('[data-source-id="julie-deru-youtube"] .youtube-creator-post-card')).to_be_visible(timeout=20000)
+                chooser=page.locator('#oracleCardChooser')
+                expect(chooser.locator('option[value^="source-julie-deru-"]')).to_have_count(3)
+                checks.append(f'{width}px: Julie Deru source Quick Cards, search, export, original link, one-player stop and Oracle placement')
+
                 # A deterministic, source-shaped D1 response tests the NEW family
                 # channel interface without assuming external Worker availability in CI.
                 family_fixture={'channel':'family-parenting-tv','partial':True,'videos':[
