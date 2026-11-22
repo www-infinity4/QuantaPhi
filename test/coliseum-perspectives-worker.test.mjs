@@ -50,7 +50,7 @@ function fixture(t){
 test('separate advisory permission defaults off and another member cannot opt the author in',async t=>{
  const {call}=fixture(t);
  let initial=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
- assert.equal(initial.status,200);
+ assert.equal(initial.status,200,JSON.stringify(initial));
  assert.equal(initial.ready,false);
  assert.deepEqual(initial.perspectives,[]);
  const forged=await call('mallory','/v1/perspectives/choice','POST',
@@ -64,7 +64,7 @@ test('opt-in only explicit valid author choice; three distinct members unlock an
  for(const [i,name] of ['alice','bob','cara'].entries()){
   const result=await call(name,'/v1/perspectives/choice','POST',
    {ideaId:idea(i+1),share:true,purpose:'bubbles-advisory-v1'});
-  assert.equal(result.status,200);
+  assert.equal(result.status,200,JSON.stringify(result));
   assert.equal(result.shared,true);
  }
  const data=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
@@ -85,7 +85,7 @@ test('author withdrawal prevents future advisory reads without deleting the publ
   await call(name,'/v1/perspectives/choice','POST',{ideaId:idea(i+1),share:true,purpose:'bubbles-advisory-v1'});
  const withdrawn=await call('bob','/v1/perspectives/choice','POST',
   {ideaId:idea(2),share:false,purpose:'bubbles-advisory-v1'});
- assert.equal(withdrawn.status,200);
+ assert.equal(withdrawn.status,200,JSON.stringify(withdrawn));
  assert.equal(withdrawn.shared,false);
  const after=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
  assert.equal(after.ready,false);
