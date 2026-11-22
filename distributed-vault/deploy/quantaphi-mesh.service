@@ -1,0 +1,38 @@
+[Unit]
+Description=QuantaPhi private encrypted app-fragment mesh coordinator
+Documentation=https://github.com/www-infinity4/QuantaPhi/tree/main/distributed-vault
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+User=quantamesh
+Group=quantamesh
+WorkingDirectory=/opt/quantaphi
+EnvironmentFile=/etc/quantaphi/mesh.env
+Environment=MESH_HOST=127.0.0.1
+Environment=MESH_PORT=8789
+Environment=MESH_DB=/var/lib/quantaphi-mesh/mesh.sqlite
+Environment=MESH_REPLICAS=3
+ExecStart=/usr/bin/node /opt/quantaphi/distributed-vault/mesh-runner.mjs
+Restart=on-failure
+RestartSec=5s
+StartLimitIntervalSec=60
+StartLimitBurst=5
+UMask=0077
+StateDirectory=quantaphi-mesh
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+CapabilityBoundingSet=
+LockPersonality=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+ReadWritePaths=/var/lib/quantaphi-mesh
+
+[Install]
+WantedBy=multi-user.target
