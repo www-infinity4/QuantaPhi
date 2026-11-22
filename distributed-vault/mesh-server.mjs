@@ -94,6 +94,14 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
    PRIMARY KEY(file_id,node_id)
  );
  `);
+ // Existing local coordinator databases are upgraded in place. No personal
+ // browsing events are recorded; these are coarse server-observed APP heartbeats.
+ const nodeColumns=new Set(db.prepare('PRAGMA table_info(mesh_nodes)').all().map(row=>row.name));
+ for(const [column,definition] of [
+  ['active_windows','INTEGER NOT NULL DEFAULT 0'],
+  ['last_active_bucket','INTEGER NOT NULL DEFAULT -1'],
+  ['cache_losses','INTEGER NOT NULL DEFAULT 0']
+ ])if(!nodeColumns.has(column))db.exec('ALTER TABLE mesh_nodes ADD COLUMN '+column+' '+definition);
  const ownerHash=hashToken(ownerToken);
  function tokenFrom(req){
   const raw=req.headers.authorization;
@@ -120,7 +128,12 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
   const cutoff=activeCutoff();
   db.prepare('DELETE FROM mesh_placements WHERE node_id IN (SELECT node_id FROM mesh_nodes WHERE online=0 OR last_seen<?)').run(cutoff);
   db.prepare('DELETE FROM mesh_avoid WHERE until_ms<=?').run(now());
-  const nodes=db.prepare('SELECT node_id, capacity FROM mesh_nodes WHERE online=1 AND last_seen>=? ORDER BY rowid').all(cutoff);
+  // Prefer app caches observed reliably across distinct minute windows. A flood
+  // of repeated heartbeats in one minute cannot increase this score. This
+  // is app availability, not phone/browser activity or user profiling.
+  const nodes=db.prepare(`SELECT node_id,capacity FROM mesh_nodes
+    WHERE online=1 AND last_seen>=?
+    ORDER BY active_windows DESC, cache_losses ASC, capacity DESC, node_id`).all(cutoff);
   const files=db.prepare('SELECT file_id,manifest FROM mesh_files ORDER BY created_at').all();
   for(const row of files){
    const manifest=JSON.parse(row.manifest);
@@ -266,7 +279,15 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
       .run(receipt.file_id,caller.node_id,now()+peerTtlMs);
      invalidated++;
     }
-   db.prepare('UPDATE mesh_nodes SET last_seen=? WHERE node_id=?').run(now(),caller.node_id);
+   const stamp=now(),bucket=Math.floor(stamp/60000);
+   // Only a validated, authenticated app-inventory heartbeat can record a
+   // window. No URLs, location, screen time or other app/device data used.
+   db.prepare(`UPDATE mesh_nodes
+    SET last_seen=?,
+        active_windows=CASE WHEN last_active_bucket<>? THEN min(active_windows+1,100) ELSE active_windows END,
+        last_active_bucket=?,
+        cache_losses=cache_losses+?
+    WHERE node_id=?`).run(stamp,bucket,bucket,invalidated,caller.node_id);
    repair();
    return send(res,200,{active:true,invalidated});
   }
