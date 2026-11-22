@@ -817,7 +817,7 @@ public final class MainActivity extends Activity {
         if ("screen_image".equals(action)) {
             screenIntervalSeconds = 0; screenDurationSeconds = 0; beginScreen(true);
         } else if ("screen_sequence".equals(action)) {
-            screenIntervalSeconds = Math.max(2, Math.min(60, seconds));
+            screenIntervalSeconds = Math.max(1, Math.min(60, seconds));
             screenDurationSeconds = Math.max(10, Math.min(300, duration));
             beginScreen(true);
         } else if ("screen_video".equals(action)) {
