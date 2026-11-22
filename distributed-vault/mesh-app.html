@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>Infinity Mesh · App Cache</title>
+<style>
+:root{font:18px/1.5 system-ui,sans-serif;background:#f5f0e8;color:#272a31}
+body{margin:0;padding:20px 14px}main{max-width:680px;margin:auto}.card{background:#fff;border:1px solid #d5c9b8;border-radius:16px;padding:20px;margin:0 0 18px}
+h1{font-size:1.6rem;line-height:1.2}h2{font-size:1.1rem}p{line-height:1.55}
+button,input{font:inherit;min-height:48px;border-radius:9px;padding:10px 13px}
+input{width:100%;border:1px solid #7b7980;margin:8px 0 12px}
+button{border:1px solid #9e3335;background:#9e3335;color:#fff;margin:4px 4px 4px 0;cursor:pointer}
+button.alt{background:#fff;color:#9e3335}button:focus-visible,input:focus-visible{outline:3px solid #e6a234;outline-offset:2px}
+.small{font-size:.89rem;color:#60606d}.stat{font-variant-numeric:tabular-nums;font-weight:750}
+@media(max-width:420px){button{width:100%;margin:5px 0}}
+</style></head><body><main>
+<section class="card">
+<p class="small">INFINITY φ · Peer cache · Migration #2110</p>
+<h1>Application-managed encrypted cache</h1>
+<p>This app can keep encrypted fragments inside its own app storage and send storage receipts to your owner's mesh server. It does not read photos, contacts, other apps, or personal documents.</p>
+<p class="small">The app can refresh fragments while this page is open. Closing the browser may suspend network work. Your device can clear app storage at any time.</p>
+</section>
+<section class="card">
+<h2>Connect this app</h2>
+<label for="peerToken">App enrollment credential from the server owner</label>
+<input id="peerToken" type="password" autocomplete="off" placeholder="Private app token">
+<button id="peerSave">Save app connection</button>
+<p id="peerStatus" role="status" aria-live="polite">Not connected</p>
+</section>
+<section class="card">
+<h2>Cache and repair</h2>
+<p>Encrypted fragments stored: <span id="peerEntries" class="stat">0</span></p>
+<p>App cache used: <span id="peerBytes" class="stat">0 bytes</span> (8 MiB limit)</p>
+<button id="peerSync">Sync available fragments</button>
+<button id="peerPause" class="alt">Pause caching</button>
+<button id="peerClear" class="alt">Clear mesh fragments</button>
+<p class="small">Clearing the mesh cache notifies the coordinator on the next successful check, so it can find other free app space. This does not clear other app files or browser cookies.</p>
+</section>
+</main><script type="module" src="/app/mesh-peer.mjs"></script></body></html>
