@@ -37,7 +37,8 @@ function fixture(t){
     run:async()=>({meta:{changes:p.run(...values).changes}})};
   }};
  }},OPEN_COLISEUM_BETA:'true',MEMBER_PEPPER:PEPPER,
-  BETA_ALLOWED_MEMBERS:members.map(member).join(',')};
+  BETA_ALLOWED_MEMBERS:members.map(member).join(','),
+  PERSPECTIVE_REVIEWERS:member('alice')};
  async function call(name,path,method='GET',body,origin='https://quantaphi.org'){
   const req=new Request(URL_ROOT+path,{method,headers:{authorization:token(name),origin,'content-type':'application/json'},
    body:body===undefined?undefined:JSON.stringify(body)});
@@ -107,4 +108,14 @@ test('requests without an eligible invitation or from another website cannot acc
  const unauth=await worker.fetch(new Request(URL_ROOT+'/v1/perspectives?modelId=zeus&sector=Technology'),{
   OPEN_COLISEUM_BETA:'false'});
  assert.equal(unauth.status,503);
+});
+
+test('member login alone does not give a nonreviewer access to others advisory contributions',async t=>{
+ const {call}=fixture(t);
+ const denied=await call('bob','/v1/perspectives?modelId=zeus&sector=Technology');
+ assert.equal(denied.status,403);
+ assert.equal(denied.error,'perspective_reviewer_required');
+ const accepted=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
+ assert.equal(accepted.status,200);
+ assert.equal(accepted.ready,false);
 });
