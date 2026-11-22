@@ -7,7 +7,7 @@ function request(path,{method='GET',origin='https://quantaphi.org',authorization
   return new Request('https://quantaphi.org'+PREFIX+path,{method,headers:{Origin:origin,Authorization:authorization,...(body?{'Content-Type':'application/json'}:{})},...(body?{body:JSON.stringify(body)}:{})});
 }
 const FULL_CLOUDFLARE_SCOPES="user-details.read memberships.read workers-scripts.admin d1.write page.write d1.read workers-routes.read workers-routes.write page.read workers-kv-storage.read workers-kv-storage.write workers-r2.read workers-r2.write queues.read queues.write ai.read ai.write browser-rendering.read browser-rendering.write containers.read containers.write workers-observability.read dns.read dns.write";
-const env={CONNECTIONS_READY:true,BOT_WALLET:{fetch:async(url,options)=>{assert.equal(url,'https://wallet.internal/v1/wallet/state');assert.equal(options.headers.Authorization,bearer);return Response.json({ok:true,user:{id:'verified-alice'}});}}};
+const env={CONNECTIONS_READY:true,BOT_WALLET:{fetch:async(url,options)=>{assert.ok(['https://wallet.internal/v1/wallet/state','https://wallet.internal/v1/wallet/identity'].includes(url));assert.equal(options.headers.Authorization,bearer);return Response.json({ok:true,user:{id:'verified-alice'}});}}};
 test('router rejects foreign origins and unauthenticated callers before resolving storage',async()=>{
   const resolve=()=>assert.fail('must not resolve a service');
   assert.equal((await handleConnections(request('/accounts',{origin:'https://evil.test'}),env,resolve)).status,403);
@@ -21,6 +21,34 @@ test('Unified Wallet identity remains usable without provider configuration or a
  assert.equal(missing.status,401);
  const foreign=await handleConnections(request('/session',{origin:'https://evil.test'}),env,()=>assert.fail());
  assert.equal(foreign.status,403);
+});
+
+test('connection sign-in verifies identity without depending on balance or history availability',async()=>{
+ const paths=[];
+ const e={...env,BOT_WALLET:{fetch:async(url,options)=>{
+  paths.push(url);assert.equal(options.headers.Authorization,bearer);
+  if(url.endsWith('/identity'))return Response.json({ok:true,user:{id:'verified-alice'}});
+  return Response.json({error:'D1 daily read quota exhausted'},{status:500});
+ }}};
+ const response=await handleConnections(request('/session'),e,()=>assert.fail('no provider state needed'));
+ assert.equal(response.status,200);assert.deepEqual(await response.json(),{ok:true,walletVerified:true});
+ assert.deepEqual(paths,['https://wallet.internal/v1/wallet/identity']);
+});
+
+test('wallet outages are service errors while revoked or malformed identity proof remains rejected',async()=>{
+ for(const status of [429,500,503]){
+  const e={...env,BOT_WALLET:{fetch:async()=>Response.json({error:'private quota detail'},{status})}};
+  const response=await handleConnections(request('/session'),e,()=>assert.fail());
+  assert.equal(response.status,503);assert.deepEqual(await response.json(),{ok:false,error:'wallet_validation_unavailable'});
+ }
+ const unavailable=await handleConnections(request('/session'),{...env,BOT_WALLET:{fetch:async()=>{throw Error('private network detail');}}},()=>assert.fail());
+ assert.equal(unavailable.status,503);assert.equal((await unavailable.json()).error,'wallet_validation_unavailable');
+ for(const payload of [{ok:false},{ok:true,user:{id:''}},{ok:true,user:{id:{id:'forged'}}}]){
+  const response=await handleConnections(request('/session'),{...env,BOT_WALLET:{fetch:async()=>Response.json(payload)}},()=>assert.fail());
+  assert.equal(response.status,401);
+ }
+ const revoked=await handleConnections(request('/session'),{...env,BOT_WALLET:{fetch:async()=>Response.json({error:'invalid_device_token'},{status:401})}},()=>assert.fail());
+ assert.equal(revoked.status,401);
 });
 
 test('setup check requires a verified wallet and cannot use a body-supplied identity',async()=>{

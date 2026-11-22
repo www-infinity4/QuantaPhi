@@ -56,12 +56,12 @@
   views.textContent=d.pageViews.toLocaleString();
   const updated=new Date(d.fetchedAt).toLocaleString();
   const age=Date.now()-Date.parse(d.fetchedAt);
-  const live=d.refreshConfigured&&!fallback&&!recovered&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
+  const live=d.refreshConfigured&&d.storageStatus!=='unavailable'&&d.refreshStatus!=='failed'&&!fallback&&!recovered&&age<60*60*1000&&d.through===new Date().toISOString().slice(0,10);
   const prefix='Recorded since '+d.since+' (earliest available Cloudflare date), through '+d.through+'. ';
   const recent=' Last 7 days (UTC '+d.last7Days.since+' to '+d.last7Days.until+', '+
    d.last7Days.daysRecorded+'/7 days recorded): '+d.last7Days.requests.toLocaleString()+
    ' requests, '+d.last7Days.pageViews.toLocaleString()+' page views.';
-  const status=live?'Automatic Cloudflare sync is active. ':(d.refreshConfigured?'Last recorded total; feed is temporarily stale. ':'Last recorded total; automatic ingestion is not yet authorized. ');
+  const status=d.storageStatus==='unavailable'?'Last recorded total; traffic sync is temporarily unavailable. ':live?'Automatic Cloudflare sync is active. ':(d.refreshConfigured?'Last recorded total; feed is temporarily stale. ':'Last recorded total; automatic ingestion is not yet authorized. ');
   note.textContent=prefix+status+'Last verified '+updated+'.'+recent+
    ' Includes bots; not unique visitors or individual clicks.'+
    (d.coverageContinuous?'':' Some daily records are missing; the total is incomplete.');

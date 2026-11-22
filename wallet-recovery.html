@@ -136,7 +136,10 @@ function savedCredentials(){
 }
 async function api(origin,path,token,body){
   const {response,payload}=await timedJson(origin+path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{Authorization:'Bearer '+token},body:body?JSON.stringify(body):undefined,cache:'no-store'},14000);
-  if(!response.ok||payload.ok===false)throw Error(payload.message||payload.error||'Cloud request failed ('+response.status+')');
+  if(!response.ok||payload.ok===false){
+    const error=Error(payload.message||payload.error||'Cloud request failed ('+response.status+')');
+    error.status=response.status;throw error;
+  }
   return payload;
 }
 async function proof(password,username){
@@ -149,14 +152,30 @@ function stat(label,value){
 }
 function detail(text){$('details').append(el('li',text))}
 async function scan(username,token){
-  const [s,u,q]=await Promise.allSettled([
+  const [s,u,q,identity]=await Promise.allSettled([
     api(STAR,'/v1/state',token),
     api(UNIFIED,'/v1/wallet/state',token),
-    api(QUANT,'/v1/quants/state',token)
+    api(QUANT,'/v1/quants/state',token),
+    RETURN_TO_BUBBLES?api(UNIFIED,'/v1/wallet/identity',token):Promise.resolve(null)
   ]);
-  if(s.status!=='fulfilled')throw Error('StarQuest device connection is missing or invalid. Reconnect your existing account.');
+  if(s.status!=='fulfilled')throw Error([401,403,404].includes(s.reason?.status)?
+    'StarQuest device connection is missing or invalid. Reconnect your existing account.':
+    'StarQuest verification is temporarily unavailable. The saved sign-in was kept; try again later.');
   const star=s.value.state||{};
   if(username&&String(star.username||'').toLowerCase()!==username.toLowerCase())throw Error('Account identity mismatch. No records were changed.');
+  // Optional balances/history can be unavailable while the same existing
+  // StarQuest device identity remains valid. Never infer identity from cache.
+  const verifiedIdentity=identity.status==='fulfilled'?identity.value?.user:null;
+  if(RETURN_TO_BUBBLES){
+    const id=verifiedIdentity?.id;
+    if(identity.status!=='fulfilled'||identity.value?.ok!==true||
+       !((typeof id==='string'&&id.length>0&&id.length<160)||(Number.isSafeInteger(id)&&id>=0)))
+      throw Error('Unified Wallet identity verification is temporarily unavailable or could not verify this account. Try again; the saved sign-in was kept.');
+    if(String(verifiedIdentity.username||'').toLowerCase()!==String(star.username||'').toLowerCase()||
+       (u.status==='fulfilled'&&u.value.user?.id!==id)||
+       (q.status==='fulfilled'&&q.value.user_id&&q.value.user_id!==id))
+      throw Error('Unified wallet identity mismatch. No records were changed.');
+  }
   $('results').hidden=false;$('stats').replaceChildren();$('details').replaceChildren();
   $('account').textContent='Verified StarQuest account: '+star.username;
   stat('Available StarCoins',Number(star.starCoins||0)+Number(star.pendingShareCredits||0)/10);
@@ -181,12 +200,11 @@ async function scan(username,token){
       if(Number(q.value.balance)!==Number(v.balances?.QUANT))detail('Quant balance mismatch detected. No automatic adjustment was made.');
     }else detail('The independent Quant ledger is unavailable or has no linked wallet. Existing unified records were not changed.');
   }else{
-    detail('Infinity/Quant ledger could not be read: '+String(u.reason?.message||'unavailable')+'. Reconnect or request an owner review; no tokens were reset.');
+    detail('Infinity/Quant balances are temporarily unavailable. The existing sign-in was kept; check balances again later. No tokens were reset.');
     if(q.status==='fulfilled'){stat('Quants from ledger',q.value.balance);stat('Infinity from ledger',q.value.infinity_balance)}
   }
-  msg('Cloudflare search complete. Existing account balances were read without changing credits.');
+  msg('Existing account verified. Available records were read without changing credits.');
   if(RETURN_TO_BUBBLES){
-    if(u.status!=='fulfilled')throw Error('Unified Wallet could not verify this account. Try again.');
     location.replace('/bubbles.html');
   }
 }

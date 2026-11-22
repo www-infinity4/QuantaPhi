@@ -231,6 +231,9 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
     if(code==='verified_wallet_required'){
      setStatus('Sign in with StarQuest to connect your existing Unified Wallet to Bubbles.');
      if(recover)recover.hidden=false;
+    }else if(code==='wallet_validation_unavailable'){
+     setStatus('Wallet verification is temporarily unavailable. Your existing sign-in was kept; use Check sign-ins again to retry. No new Cloudflare sign-in is required for this error.');
+     if(recover)recover.hidden=true;
     }else if(code==='connection_timeout'){
      setStatus('The account check timed out. Tap Sign in with Cloudflare to retry.');
     }else{
