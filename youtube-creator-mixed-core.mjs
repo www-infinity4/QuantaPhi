@@ -73,6 +73,29 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"S5-Tm1oi4uQ","The Parenting Advice Nobody Asked For 🙄"),
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"o1BfJwDPwMk","The truth about High Rate Mobility DLA for autistic children"),
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"yguj32c--8E","How I Know When My Autistic Daughter Is Having a Meltdown ❤️")
+  ])}),
+ // Publisher page and Videos tab verified 2026-11-22: all 18 listed uploads.
+ // The owner-selected video is intentionally first. Dates/rights not inferred.
+ Object.freeze({key:'dekret',name:'ДЕКРЕТ',channelId:'UC_z0l4Wm8yai_rDlZ2iPjrg',
+  url:'https://www.youtube.com/channel/UC_z0l4Wm8yai_rDlZ2iPjrg',seed:Object.freeze([
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','BNMCCyjAb74','Кормить грудью легко'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','FC7SEj-F0vo',"Women's rights in prenatal clinics, maternity hospitals, and vaccination matters"),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','Nb9HuzcsEvQ','Gentle Hypnosis During Childbirth'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','YlNcU6CRrAs','Первое купание новорожденного'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','sOaDnUxD_aQ','Кесарево сечение - роды или операция?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','1tWQ9VFfMW8','What is homeopathy?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','Hs5ikoqJaz8','Why Do Kids Get Sick?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','7tlG8T_BxbI',"Gave birth. What's next?"),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','N3iYfTLJotk','Who will help relieve the pain of the expectant mother?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','ylJz_HPP7l8','How to find your osteopath?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','qVidBmlJrZw','Peculiarities of raising boys and girls'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','cGFBILXi0QY','Остеопат Сергеев Андрей Андреевич'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','eCvKvwvQmn4','How to prepare your body for labor'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','2kjUNfI4wj4','Как укрепить иммунитет ребенка?'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','7y06kzGb3zo','Childbirth through the eyes of an obstetrician'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','MRKCrFVFAjQ','Recommendations from a lactation consultant'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','7NSg9XlBdho','Consultation with a pediatrician'),
+   seed('UC_z0l4Wm8yai_rDlZ2iPjrg','tgwwm_iR698','Погода в доме')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -168,4 +191,17 @@ export const AGORA_SOU_MAE_SOURCE=Object.freeze({
  focus:'Browse a source-identified original YouTube video and recent public uploads, with search, pagination and tap-to-play in card. Open the publisher channel for the complete historical catalog.',
  details:'Official publisher and UC channel ID verified on 2026-11-22. The keyless public RSS feed loads only recent uploads, not every historic video, Short or Community post. No media downloads, paid API, affiliation, advertising or licensed rehosting are claimed.',
  youtubeMixedFeed:true,initialCreatorChannel:'agorasoumae'
+});
+
+
+/* Verified original uploader's public Videos tab, with a complete 18-link
+ * observed starting snapshot and a separate keyless recent-upload refresh. */
+export const DEKRET_SOURCE=Object.freeze({
+ id:'dekret-youtube',name:'ДЕКРЕТ · Full Channel',
+ kind:'Video · YouTube',feature:'Browse 18 original channel videos and recent uploads',
+ featureUrl:'https://www.youtube.com/channel/UC_z0l4Wm8yai_rDlZ2iPjrg/videos',
+ official:'https://www.youtube.com/channel/UC_z0l4Wm8yai_rDlZ2iPjrg',
+ focus:'Watch the requested Кормить грудью легко video first, search or load more across all 18 publicly listed uploads, and open the original creator channel.',
+ details:'All 18 video URLs were read from the publisher’s Videos tab on 2026-11-22. The optional RSS refresh may show newer uploads, but historical completeness is only as of that observation. Provider controls playback and embed restrictions. This is attributed discovery, not medical endorsement or permission to copy or monetize video.',
+ youtubeMixedFeed:true,initialCreatorChannel:'dekret',initialCreatorVideoId:'BNMCCyjAb74'
 });
