@@ -3,340 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T17:31:20.965371Z",
+  "checked_at": "2026-11-22T18:01:18.434858Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "atp finals",
+      "query": "thanksgiving nfl games",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T17:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/how-to-buy-detroit-lions-vs-chicago-bears-nfl-tickets-thanksgiving/92866374007/",
+        "https://dawindycity.com/bears-thanksgiving-day-showdown-continues-to-look-a-bit-easier",
+        "https://www.the-sun.com/sport/17334974/nfl-thanksgiving-schedule-change/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1-Wnv2DlHlGgLINm7LMGxZQsaPLpXRZf3npLswaLM8DtIa9So74YI1_bVX0",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/how-to-buy-detroit-lions-vs-chicago-bears-nfl-tickets-thanksgiving/92866374007/",
+          "title": "Lions vs Bears NFL Thanksgiving tickets drop under $300, shop now",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1-Wnv2DlHlGgLINm7LMGxZQsaPLpXRZf3npLswaLM8DtIa9So74YI1_bVX0"
+        },
+        {
+          "url": "https://dawindycity.com/bears-thanksgiving-day-showdown-continues-to-look-a-bit-easier",
+          "title": "Bears Thanksgiving Day showdown continues to look a bit easier",
+          "publisher": "Da Windy City",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssKv4Gu4e5Vzl6ki49fhvmE0paZU1MSpPi7idQVbvfrafjelmHnERWFRK9Qk"
+        },
+        {
+          "url": "https://www.the-sun.com/sport/17334974/nfl-thanksgiving-schedule-change/",
+          "title": "NFL urged to make major schedule change involving Dallas Cowboys on Thanksgiving",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBh8p28PX4lML7lWE7mjQckL9_MK2n_7j42Shoe1Le-FgtofVxqyes8xHVbfQ"
+        }
+      ]
+    },
+    {
+      "query": "carlos alcaraz",
       "approx_searches": "20000+",
-      "published_at": "2026-11-22T17:10:00Z",
+      "published_at": "2026-11-22T17:30:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/22/atp-finals-tennis-alexander-zverev-carlos-alcaraz-final-live",
-        "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-final-preview",
-        "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title"
+        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-score-result-alcaraz-zverev/zE3gyPX7aO1D/",
+        "https://sports.yahoo.com/articles/alexander-zverev-completely-silenced-one-110000109.html",
+        "https://www.kxan.com/sports-general/ap-alcaraz-shakes-off-thigh-injury-to-beat-shelton-and-reach-championship-match-at-atp-finals/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDGgz2-1YFhuQ9V2M3mXPsaI2xvaer4fBwMRseqXPLeC7iTujZyu6QMoj8aZc",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6oqYcMSQBVEuvmIKq8qelJ4mqgR24ZMYrqNJR892zrEK1IYW2-_xOEs-Twiw",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/22/atp-finals-tennis-alexander-zverev-carlos-alcaraz-final-live",
-          "title": "(3) ATP Finals tennis: Alexander Zverev v Carlos Alcaraz in the final – live",
-          "publisher": "The Guardian",
+          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-score-result-alcaraz-zverev/zE3gyPX7aO1D/",
+          "title": "ATP Finals 2026 live updates: Carlos Alcaraz and Alexander Zverev meet in championship match",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDGgz2-1YFhuQ9V2M3mXPsaI2xvaer4fBwMRseqXPLeC7iTujZyu6QMoj8aZc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6oqYcMSQBVEuvmIKq8qelJ4mqgR24ZMYrqNJR892zrEK1IYW2-_xOEs-Twiw"
         },
         {
-          "url": "https://www.nittoatpfinals.com/en/news/nitto-atp-finals-2026-final-preview",
-          "title": "Final Preview: Zverev vs. Alcaraz in Nitto ATP Finals championship blockbuster",
-          "publisher": "Nitto ATP Finals",
+          "url": "https://sports.yahoo.com/articles/alexander-zverev-completely-silenced-one-110000109.html",
+          "title": "Alexander Zverev has completely silenced one criticism after beating Daniil Medvedev in Turin",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPKCUHJdLCfhnmGbW-4cSHDKT2stqD_EUOGgBZpMVOs6qiQGlPqCByGnCPJ4M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD6giE8wNnihmhSRbVt1S8RwwhZcvP4S45sTAPg_yeTtH4ZkZqnpEi9O1QaU8"
         },
         {
-          "url": "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title",
-          "title": "Zverev tops Medvedev, sets up showdown with Alcaraz for ATP Finals title",
-          "publisher": "ESPN",
+          "url": "https://www.kxan.com/sports-general/ap-alcaraz-shakes-off-thigh-injury-to-beat-shelton-and-reach-championship-match-at-atp-finals/",
+          "title": "Alcaraz shakes off thigh injury to beat Shelton and reach championship match at ATP Finals",
+          "publisher": "KXAN Austin",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bFwwwI9-jSLvWZbWFD__XW_G2X4shIIuyvFIMY0aAKEmm_-zTbS0ZfMv_tM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpiUjSlBYbu0NBH8orRvrCynlra5CrzQ-F9Of3sUWnjaWuNPW2akYAtR2s8tw"
         }
       ]
     },
     {
-      "query": "sacramento county sheriff",
+      "query": "who should i start",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T17:30:00Z",
+      "related_news_urls": [
+        "https://www.rotoballer.com/weekend-waiver-wire-rankings-fantasy-football-week-11-2026/1999810",
+        "https://www.fantasysp.com/start/nfl/878757/pat-bryant-or-tetairoa-mcmillan",
+        "https://www.yardbarker.com/nfl/articles/broncos_x_factor_on_offense_revealed_as_bo_nix_and_sean_payton_find_comfort_in_wr/s1_17789_44575018"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDe1euwW815ujb2-KcGRUSx8TKkqKzSWYhu_mZDcYpMEIH0Uc4pdbOvhW-3UE",
+      "image_credit": "RotoBaller",
+      "news": [
+        {
+          "url": "https://www.rotoballer.com/weekend-waiver-wire-rankings-fantasy-football-week-11-2026/1999810",
+          "title": "Weekend Waiver Wire Rankings - Fantasy Football Week 11 (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDe1euwW815ujb2-KcGRUSx8TKkqKzSWYhu_mZDcYpMEIH0Uc4pdbOvhW-3UE"
+        },
+        {
+          "url": "https://www.fantasysp.com/start/nfl/878757/pat-bryant-or-tetairoa-mcmillan",
+          "title": "Pat Bryant or Tetairoa McMillan",
+          "publisher": "FantasySP",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi3kEB_kl1G1Zk0pLItB3TZKRQNH9TS-JqzaPs1gpqT0Q4B4GBEsTh1JZ2hSU"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/broncos_x_factor_on_offense_revealed_as_bo_nix_and_sean_payton_find_comfort_in_wr/s1_17789_44575018",
+          "title": "Broncos’ X-Factor on Offense Revealed as Bo Nix and Sean Payton Find Comfort in WR",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt1cQCBqMekP6oS7KRaJH5kbbwAonD4DIhcVYCONOkLBewtyCTaFAW2qe_kl8"
+        }
+      ]
+    },
+    {
+      "query": "guy fieri",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T17:10:00Z",
+      "published_at": "2026-11-22T17:30:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/sacramento/news/shooting-sacramento-county-sheriffs-deputy-suspect-antelope/",
-        "https://www.kcra.com/article/suspect-deputy-hospitalized-after-shooting-involving-the-sacramento-county-sheriffs-office/74500917",
-        "https://www.sacbee.com/news/local/crime/article318201809.html"
+        "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
+        "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
+        "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEr9vqM-fNZ8s2lv4pbqWz5PdRmwSk4hFf_mNlTd9CedOIVUVi85QiA7If_k",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo",
+      "image_credit": "PennLive.com",
       "news": [
         {
-          "url": "https://www.cbsnews.com/sacramento/news/shooting-sacramento-county-sheriffs-deputy-suspect-antelope/",
-          "title": "Sacramento County Sheriff's deputy, suspect injured in shooting",
-          "publisher": "CBS News",
+          "url": "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
+          "title": "Guy Fieri’s heartbreaking post has fans sending prayers: ‘He is looking down’",
+          "publisher": "PennLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkEr9vqM-fNZ8s2lv4pbqWz5PdRmwSk4hFf_mNlTd9CedOIVUVi85QiA7If_k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo"
         },
         {
-          "url": "https://www.kcra.com/article/suspect-deputy-hospitalized-after-shooting-involving-the-sacramento-county-sheriffs-office/74500917",
-          "title": "Suspect, deputy hospitalized after shooting involving the Sacramento County Sheriff's Office",
-          "publisher": "KCRA",
+          "url": "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
+          "title": "Guy Fieri Shares Birthday Tribute for Late Father Jim, Who Died in 2024: ‘Miss Him Every Day’",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0s_glVTfoFcEkMfCHgcuESUB6bIDXhLaOFIFeBR0BKuAsy-tJPdaOjAdLMr0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4pLzJ1AZt9ADVOUn_WK1mKUtSuZK13funbamPV4j-b6ax2AW-RQiGuG6utX8"
         },
         {
-          "url": "https://www.sacbee.com/news/local/crime/article318201809.html",
-          "title": "Sacramento sheriff’s deputy, suspect wounded in early morning shooting in Antelope",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/",
+          "title": "Guy Fieri Honors His Late Father With A Heartbreaking Tribute On Instagram: ‘Miss Him Everyday’",
+          "publisher": "Delish",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRmB7YBSxH0vNijJ5JG4bLAr8qlPWPaO6ubdh7aKnl-Mhg7533Arnufo07XOY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl0blc485AEZtaVub98uck5YYPouXVq3B_FD5w0dRTJ8n3qzwIelqt-Ob4x4"
         }
       ]
     },
     {
-      "query": "butler vs nebraska",
+      "query": "barcelona - athletic club",
       "approx_searches": "2000+",
-      "published_at": "2026-11-22T17:00:00Z",
+      "published_at": "2026-11-22T17:20:00Z",
       "related_news_urls": [
-        "https://www.si.com/college/nebraska/basketball/nebraska-to-face-butler-which-once-was-a-final-four-team-under-brad-stevens",
-        "https://huskers.com/news/2026/11/20/huskers-face-butler-in-bad-boy-mowers-series-chicago",
-        "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-butler/"
+        "https://onefootball.com/es/noticias/jensen-y-fiamma-ya-superan-los-registros-de-la-temporada-pasada-43816041",
+        "https://kirolakeitb.eus/es/futbol/equipos/eibar/2026/11/21/eibar-pierde-ante-atletico-madrid-dos-puntos-del-descenso/",
+        "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-athletic-club-horario-donde-ver-tv-online-liga-f-202627-dazn/1iev9c8om9tqp1gj4052a2shb5"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHa1-vWZ6kgyfG7miUr8NEtaKsXQq73pagTVVZ_66LgSBIYKBF4-JMjaXGHuU",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/nebraska/basketball/nebraska-to-face-butler-which-once-was-a-final-four-team-under-brad-stevens",
-          "title": "Nebraska to Face Butler, Which Once Was a Final Four Team Under Brad Stevens",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHa1-vWZ6kgyfG7miUr8NEtaKsXQq73pagTVVZ_66LgSBIYKBF4-JMjaXGHuU"
-        },
-        {
-          "url": "https://huskers.com/news/2026/11/20/huskers-face-butler-in-bad-boy-mowers-series-chicago",
-          "title": "Huskers Face Butler in Bad Boy Mowers Series - Chicago",
-          "publisher": "huskers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf50EXJHPM7LcoWIUnoiVF9xOtXOIki6AwY2NVeDPbQvGSYW_aCBw7xr7VaPY"
-        },
-        {
-          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/nebraska-hoops-game-day-butler/",
-          "title": "Nebraska Hoops Game Day: Butler",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ82mcz0w-k1Unqi-qDrs3k_r7O-ycM8BYwh7jxpoozTt5_e7mYbeA8vGYRarU"
-        }
-      ]
-    },
-    {
-      "query": "nebraska volleyball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T17:00:00Z",
-      "related_news_urls": [
-        "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament",
-        "https://iuhoosiers.com/news/2026/11/21/womens-volleyball-big-ten-tournament-round-1-recap"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTp1mcqo8OMuWAkqawCplCx1Pwp1vSxjuJvViASOpETprB17cRk3VcnHjsP9w",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament",
-          "title": "No. 9 Badgers prepare for inaugural B1G Tournament",
-          "publisher": "Wisconsin Badgers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwUo_1VJKvtfFQDHzvv18sbUhePwsm0K4TwhEuZkteTzcOTsP0cQqhCVW4Ohw"
-        },
-        {
-          "url": "https://iuhoosiers.com/news/2026/11/21/womens-volleyball-big-ten-tournament-round-1-recap",
-          "title": "Gritty, Not Pretty",
-          "publisher": "Indiana University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUfspG-sKFKu1cznwGkJm0fRYqYAU_-1lLu86PemX2whmIrxqF199AUsYsVOk"
-        }
-      ]
-    },
-    {
-      "query": "nebraska volleyball schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T17:00:00Z",
-      "related_news_urls": [
-        "https://huskers.com/news/1969/12/31/cook-announces-nebraska-volleyball-schedule-changes-huskerscom-nebraska-athletics-official-web-site",
-        "https://www.sportingnews.com/us/tickets/news/league-one-volleyball-lincoln-shop-tickets-nebraska-vs-miami/fff5428374c71d7b27d44c24"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrcHaJqivDrLZ3-Cin-O4GA695x-pKu7g2Pnu7NCQ6goxcZ2LEfBpvnPQp9rk",
-      "image_credit": "huskers.com",
-      "news": [
-        {
-          "url": "https://huskers.com/news/1969/12/31/cook-announces-nebraska-volleyball-schedule-changes-huskerscom-nebraska-athletics-official-web-site",
-          "title": "Cook Announces Nebraska Volleyball Schedule Changes - Huskers.com - Nebraska Athletics Official Web Site",
-          "publisher": "huskers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrcHaJqivDrLZ3-Cin-O4GA695x-pKu7g2Pnu7NCQ6goxcZ2LEfBpvnPQp9rk"
-        },
-        {
-          "url": "https://www.sportingnews.com/us/tickets/news/league-one-volleyball-lincoln-shop-tickets-nebraska-vs-miami/fff5428374c71d7b27d44c24",
-          "title": "League One Volleyball to play in Lincoln: Shop tickets to see LOVB Nebraska vs. Miami at Devaney Center",
-          "publisher": "Sporting News AU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGZuzxgVmyutfCjCvKaAEorwj2ue0w2Vf7vLlEBPQzCMMOGBIssFjb6DWs630"
-        }
-      ]
-    },
-    {
-      "query": "bbc football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T17:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50551332/man-city-fulham-haaland-disallowed-goal-premier-league",
-        "https://www.bbc.com/sport/football/articles/cxe8944j188yo",
-        "https://www.skysports.com/football/news/13614659/problems-for-passive-man-city-as-chelsea-are-bullied-by-leeds-premier-league-hits-and-misses"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXLS7T2IvZvryDjPCK-A-acFyQv01vCcINjgjVho6c4xSFlPNprREldMt7pY0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50551332/man-city-fulham-haaland-disallowed-goal-premier-league",
-          "title": "Enzo Maresca: Man City denied 'clear' goal in draw with Fulham",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXLS7T2IvZvryDjPCK-A-acFyQv01vCcINjgjVho6c4xSFlPNprREldMt7pY0"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/cxe8944j188yo",
-          "title": "Manchester City 1-1 Fulham: Elliot Anderson and Ayyoub Bouaddi leave Enzo Maresca with Enzo Fernandez dilemma",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUOxCATs6LIqOOS7imdKBA26DuyLqI2XGE6LEZWJtWCDIu3wNQeIvlBCv7yko"
-        },
-        {
-          "url": "https://www.skysports.com/football/news/13614659/problems-for-passive-man-city-as-chelsea-are-bullied-by-leeds-premier-league-hits-and-misses",
-          "title": "Problems for passive Man City as Chelsea are bullied by Leeds - Premier League hits and misses",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvLt9ZcJE1ess6zQrqYqXrpeIsCaigWmKOlKjHsJZXHjFgHPXX7Pe3NyXrH6c"
-        }
-      ]
-    },
-    {
-      "query": "florian wirtz",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T16:50:00Z",
-      "related_news_urls": [
-        "https://onefootball.com/de/news/ronaldo-henry-und-co-warum-wirtz-noch-hoffnung-haben-darf-43818242",
-        "https://www.fussballdaten.de/news/dfb-aufschwung-hoeness-hamann-teilen-gegen-nagelsmann-aus/",
-        "https://ran.joyn.de/sports/fussball/premier-league-eng/juergen-klopp-hat-liverpool-gezeigt-was-florian-wirtz-braucht-englaender-sticheln-vor-kracher-gegen-manchester-united-219560"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoUoTeRtIXuFAwiSCPgBp7OSiS77ZdwyYoCoqBmC2g1S_GHlNXEgf2IVLhwrM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQag6EOziUC0mY1rgoBTEUeOgPSSDbWQcoItDLgV0iWxzjveJdObujlWKfwYyU",
       "image_credit": "OneFootball",
       "news": [
         {
-          "url": "https://onefootball.com/de/news/ronaldo-henry-und-co-warum-wirtz-noch-hoffnung-haben-darf-43818242",
-          "title": "Ronaldo, Henry und Co.: Warum Wirtz noch Hoffnung haben darf!",
+          "url": "https://onefootball.com/es/noticias/jensen-y-fiamma-ya-superan-los-registros-de-la-temporada-pasada-43816041",
+          "title": "Jensen y Fiamma ya superan los registros de la temporada pasada",
           "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoUoTeRtIXuFAwiSCPgBp7OSiS77ZdwyYoCoqBmC2g1S_GHlNXEgf2IVLhwrM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQag6EOziUC0mY1rgoBTEUeOgPSSDbWQcoItDLgV0iWxzjveJdObujlWKfwYyU"
         },
         {
-          "url": "https://www.fussballdaten.de/news/dfb-aufschwung-hoeness-hamann-teilen-gegen-nagelsmann-aus/",
-          "title": "Nach DFB-Aufschwung: Hoeneß und Hamann teilen gegen Nagelsmann aus",
-          "publisher": "fussballdaten.de",
+          "url": "https://kirolakeitb.eus/es/futbol/equipos/eibar/2026/11/21/eibar-pierde-ante-atletico-madrid-dos-puntos-del-descenso/",
+          "title": "El Eibar pierde ante el Atlético de Madrid y se sitúa a dos puntos del descenso (1-3)",
+          "publisher": "kirolakeitb.eus",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFG-T301rNc2Knte7qE8PJTHJtL7iTETE4XG_HGNP26_WN9d43jXTgMZ3VFo8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpYmunAtHW6HX0X1jflisvTU9HGMfQQAVGUqtEB1myubKqtCIlnnWByroRd_I"
         },
         {
-          "url": "https://ran.joyn.de/sports/fussball/premier-league-eng/juergen-klopp-hat-liverpool-gezeigt-was-florian-wirtz-braucht-englaender-sticheln-vor-kracher-gegen-manchester-united-219560",
-          "title": "\"Klopp hat Liverpool gezeigt, was Wirtz braucht\": Engländer sticheln vor Kracher gegen United",
-          "publisher": "Joyn",
+          "url": "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-athletic-club-horario-donde-ver-tv-online-liga-f-202627-dazn/1iev9c8om9tqp1gj4052a2shb5",
+          "title": "FC Barcelona vs Athletic Club: horario y dónde ver hoy por TV y online Liga F 2026/27 a través de DAZN",
+          "publisher": "DAZN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST4Kc1eZ8NeMWSn6_DiRbkYZ69sw6L0xj5rQgFaYDdfzamNdLK7mSSokuUPs4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WL8rXAx9KSKY6KgS55FjLIFODQt8ZijQnn27PiFBMmFhODR-cHMFIxuxLi0"
         }
       ]
     },
     {
-      "query": "cardinals vs chiefs",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T16:40:00Z",
+      "query": "barcelona vs athletic club",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T17:20:00Z",
       "related_news_urls": [
-        "https://www.chiefs.com/news/five-things-to-watch-on-sunday-cardinals-vs-chiefs",
-        "https://sports.yahoo.com/articles/mahomes-kelce-stylish-entrance-week-163033412.html",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-odds/216955/chiefs-cardinals-week-11-game-score-predictions"
+        "https://barcauniversal.com/one-year-back-at-the-spotify-camp-nou-a-review-of-barcelonas-numbers-at-home/",
+        "https://cwibc.co.id/en/barcelona-athletic-liga-f-matchday"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX5A8cvi3jM8GqApfWk9lEE6ISoAC7CD5MuF6r0AyuFoMVec-Hy82zp-K-Rbg",
-      "image_credit": "Kansas City Chiefs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh6wDEoF2NRupy0FzkMF-g-apP87ZdifjNTyc-GIGyvIRuQahEwXEjkqnjZM",
+      "image_credit": "Barca Universal",
       "news": [
         {
-          "url": "https://www.chiefs.com/news/five-things-to-watch-on-sunday-cardinals-vs-chiefs",
-          "title": "Five Things to Watch on Sunday | Cardinals vs. Chiefs",
-          "publisher": "Kansas City Chiefs",
+          "url": "https://barcauniversal.com/one-year-back-at-the-spotify-camp-nou-a-review-of-barcelonas-numbers-at-home/",
+          "title": "One year back at the Spotify Camp Nou: A review of Barcelona’s numbers at home",
+          "publisher": "Barca Universal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRX5A8cvi3jM8GqApfWk9lEE6ISoAC7CD5MuF6r0AyuFoMVec-Hy82zp-K-Rbg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh6wDEoF2NRupy0FzkMF-g-apP87ZdifjNTyc-GIGyvIRuQahEwXEjkqnjZM"
         },
         {
-          "url": "https://sports.yahoo.com/articles/mahomes-kelce-stylish-entrance-week-163033412.html",
-          "title": "Mahomes, Kelce make stylish entrance for Week 11 matchup vs. Cardinals",
-          "publisher": "Yahoo Sports",
+          "url": "https://cwibc.co.id/en/barcelona-athletic-liga-f-matchday",
+          "title": "Barcelona Hosts Athletic Club in Liga F Matchday 12",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRL6VCRxy1SPBSy4ThYLyFcPmhFlIfV2sUv5Y18PooLQOSu1zyNRS1803RsY3s"
-        },
-        {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-odds/216955/chiefs-cardinals-week-11-game-score-predictions",
-          "title": "Chiefs-Cardinals Week 11 game and score predictions from Arrowhead Pride",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKrrqGMVpStwAbKIgfFEm6co0owYdPpfGpIGpRIp7NTNQNKGNY_ru-F7HbSyM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIcwwZL_71iNVg090KvN3VHryNzueR9ptwvnoo7jdM-I-i9vPR4KkT4Ercns"
         }
       ]
     },
     {
-      "query": "buccaneers vs lions",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T16:40:00Z",
+      "query": "michael strahan",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T17:20:00Z",
       "related_news_urls": [
-        "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/21/predictions-lions-vs-tampa-bay-buccaneers/92802199007/",
-        "https://sports.yahoo.com/articles/lions-vs-tampa-bay-buccaneers-163251688.html",
-        "https://www.freep.com/story/sports/nfl/lions/2026/11/22/lions-buccaneers-alim-mcneill-aidan-hutchinson/92883860007/"
+        "https://people.com/michael-strahan-rare-family-photos-kids-12268465",
+        "https://sports.yahoo.com/articles/im-still-not-over-tom-013741872.html",
+        "https://bleacherreport.com/articles/25535992-tom-brady-eli-manning-troll-each-other-signed-jerseys-super-bowl-rivalry-new-ig-photos"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLy_T2cFEr0c4ZUOHIYH7uWouYrKQYx0A_yKSYcEHtVPoujN4k_Q29e_7V6SY",
-      "image_credit": "The Detroit News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNOHB9bwGFXLdTWPqT7NstCahXEXKh2wlXJhMWrI5zzM890gvyVwWNglkhUEA",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/21/predictions-lions-vs-tampa-bay-buccaneers/92802199007/",
-          "title": "Predictions: Lions vs. Tampa Bay Buccaneers",
-          "publisher": "The Detroit News",
+          "url": "https://people.com/michael-strahan-rare-family-photos-kids-12268465",
+          "title": "Happy 55th Birthday, Michael Strahan! See the Good Morning America Anchor’s Sweetest Family Photos with His Kids",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLy_T2cFEr0c4ZUOHIYH7uWouYrKQYx0A_yKSYcEHtVPoujN4k_Q29e_7V6SY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNOHB9bwGFXLdTWPqT7NstCahXEXKh2wlXJhMWrI5zzM890gvyVwWNglkhUEA"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lions-vs-tampa-bay-buccaneers-163251688.html",
-          "title": "Lions vs. Tampa Bay Buccaneers: Live updates",
+          "url": "https://sports.yahoo.com/articles/im-still-not-over-tom-013741872.html",
+          "title": "\"I'm Still Not Over It\": Tom Brady Makes Honest Admission on Painful Super Bowl XLII Loss to Eli Manning as Netflix Announces Documentary",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS7tM9ncUGkzW2Rj9VYJf22OapTLSvtsq8Nglp44SntVHpFwRvuMNutXYh_jI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9iQmN-hb79I1Kb1NIer1SR-XVg5KdjhkBO8O5mQvU7UwYjBa54-55ZfF7PO4"
         },
         {
-          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/22/lions-buccaneers-alim-mcneill-aidan-hutchinson/92883860007/",
-          "title": "Lions D-line aims to prove doubters wrong vs NFL's top run game",
-          "publisher": "Detroit Free Press",
+          "url": "https://bleacherreport.com/articles/25535992-tom-brady-eli-manning-troll-each-other-signed-jerseys-super-bowl-rivalry-new-ig-photos",
+          "title": "Tom Brady, Eli Manning Troll Each Other With Signed Jerseys from Super Bowl Rivalry in New IG Photos",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1Txl2gCKeMT7PB3O5a-OZOO6iWDuNc2oMI-13RiZ-KI7xJ0-S1udUtNUMpSQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBxWvetc9cS24YFHiriYSBlbLPQcpuHa_2LwF_ca_BQg9efNIJKv6R9JmYlGE"
         }
       ]
     },
     {
-      "query": "dolphins vs bills",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T16:40:00Z",
+      "query": "jaguars schedule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T17:20:00Z",
       "related_news_urls": [
-        "https://www.audacy.com/wgr550/sports/bills/capaccio-dolphins-at-bills-sal-s-keys-notes-and-stats",
-        "https://sports.yahoo.com/articles/miami-dolphins-vs-buffalo-bills-170000826.html",
-        "https://www.miamidolphins.com/news/game-preview-miami-dolphins-at-buffalo-bills-x3267"
+        "https://www.jaguars.com/news/o-zone-big-one-in-jersey",
+        "https://www.cbssports.com/fantasy/football/news/jaguars-jessie-bates-ready-for-jaguars-debut/",
+        "https://sports.yahoo.com/articles/former-falcons-star-jessie-bates-143052821.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_AobLwF0X2bJS4wuk_TtF_y1mY8VXAqBXufPmfrfwxabWwJsAdZUXzC1zFx0",
-      "image_credit": "Audacy",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSorMQIwoDVrLvtrIPHCi5v6Bmk1Z7kWfcNyiOLRz7sWzWnL3lPc-Nn-4QDck",
+      "image_credit": "Jacksonville Jaguars",
       "news": [
         {
-          "url": "https://www.audacy.com/wgr550/sports/bills/capaccio-dolphins-at-bills-sal-s-keys-notes-and-stats",
-          "title": "Capaccio: Dolphins at Bills: Sal's keys, notes and stats",
-          "publisher": "Audacy",
+          "url": "https://www.jaguars.com/news/o-zone-big-one-in-jersey",
+          "title": "O-Zone: Big One in Jersey",
+          "publisher": "Jacksonville Jaguars",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_AobLwF0X2bJS4wuk_TtF_y1mY8VXAqBXufPmfrfwxabWwJsAdZUXzC1zFx0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSorMQIwoDVrLvtrIPHCi5v6Bmk1Z7kWfcNyiOLRz7sWzWnL3lPc-Nn-4QDck"
         },
         {
-          "url": "https://sports.yahoo.com/articles/miami-dolphins-vs-buffalo-bills-170000826.html",
-          "title": "Miami Dolphins Vs Buffalo Bills: Game Information & Live Chat",
+          "url": "https://www.cbssports.com/fantasy/football/news/jaguars-jessie-bates-ready-for-jaguars-debut/",
+          "title": "Jaguars' Jessie Bates: Ready for Jaguars debut",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Bxcs78XEKWBqsrpUPHzqX7maM5BhBDjW_ovucbaKWTdjAanaRVm7xqeiOg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/former-falcons-star-jessie-bates-143052821.html",
+          "title": "Former Falcons star Jessie Bates to make Jaguars debut vs. Giants",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVyX3Br_20KJJ9wQoaKjm7Gmc7NkwMhRKdF2A2gWRawGaWWV6ACFSiUaCRWhE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTakBX27ogeLOMoNuEI0qq1PRikqSSAtudZWgPbYmTlkTeR7rWczWHseF7tvBM"
+        }
+      ]
+    },
+    {
+      "query": "miami ohio basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T17:20:00Z",
+      "related_news_urls": [
+        "https://miamiredhawks.com/news/2026/11/20/mens-basketball-redhawks-prepare-to-face-off-with-uic-in-the-jacksonville-classic",
+        "https://www.accuscore.com/game/cmwqvu9hpw2evro01ajblr8eg",
+        "https://www.dimers.com/cbb/news/miami-oh-vs-illinois-chicago-prediction-11-22-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLj71jcFCwhHtj1dFQd6ZvQkAoC_DcTF8CokAdY7B07wr_pK6mJudORBSOa8A",
+      "image_credit": "Miami University RedHawks",
+      "news": [
+        {
+          "url": "https://miamiredhawks.com/news/2026/11/20/mens-basketball-redhawks-prepare-to-face-off-with-uic-in-the-jacksonville-classic",
+          "title": "RedHawks Prepare to Face Off With UIC in the Jacksonville Classic",
+          "publisher": "Miami University RedHawks",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLj71jcFCwhHtj1dFQd6ZvQkAoC_DcTF8CokAdY7B07wr_pK6mJudORBSOa8A"
         },
         {
-          "url": "https://www.miamidolphins.com/news/game-preview-miami-dolphins-at-buffalo-bills-x3267",
-          "title": "Game Preview: Miami Dolphins at Buffalo Bills",
-          "publisher": "Miami Dolphins",
+          "url": "https://www.accuscore.com/game/cmwqvu9hpw2evro01ajblr8eg",
+          "title": "Miami (OH) vs UIC Prediction (Nov 22): UIC 55% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgaBz5lU-e2EDytw9GiofiFnFjqERId3x8t4i2_CxJ2O0L9rPqtWw_0rQB_JM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy2kKtNHCAjoVGr7oWSP4btbPmHofFBDpvFswhHiRJU-YMChjIAJDA8XHUaOU"
+        },
+        {
+          "url": "https://www.dimers.com/cbb/news/miami-oh-vs-illinois-chicago-prediction-11-22-2026-ac",
+          "title": "Miami (OH) vs. Illinois-Chicago prediction, odds, pick for Nov. 22, 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHVvT2ibWuk9uSjG56Kx2vEsNDFHJUTSTdk3ZNrlFjn7CONr-sH1y7ujB7Q"
+        }
+      ]
+    },
+    {
+      "query": "new york yankees catcher trade",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T17:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/yankees-trade-pitch-lands-cardinals-073522943.html",
+        "https://sports.yahoo.com/articles/yankees-just-sign-carson-kelly-160326746.html",
+        "https://yanksgoyard.com/yankees-just-got-a-cheap-carson-kelly-alternative-at-catcher-that-has-fans-fearing-the-worst"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1fVjru4uIFOx8LdDXdtxKTknSONHlW4mKKs6nVGt18wB6wDQYz3kEoNg9p0",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/yankees-trade-pitch-lands-cardinals-073522943.html",
+          "title": "Yankees Trade Pitch Lands Cardinals Rookie Catcher in Anthony Volpe Blockbuster",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1fVjru4uIFOx8LdDXdtxKTknSONHlW4mKKs6nVGt18wB6wDQYz3kEoNg9p0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/yankees-just-sign-carson-kelly-160326746.html",
+          "title": "Yankees Should Just Sign Carson Kelly and Get it Over With",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-cBXLTGDm4B-Lx6600FfKiJEFhfg4sl-oeEoF8xUdUW6IFXnn23l6Jwqqxoc"
+        },
+        {
+          "url": "https://yanksgoyard.com/yankees-just-got-a-cheap-carson-kelly-alternative-at-catcher-that-has-fans-fearing-the-worst",
+          "title": "Yankees just avoided cheap Carson Kelly alternative at catcher that had fans fearing the worst",
+          "publisher": "Yanks Go Yard",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWTxLmC779dkfYt6t1RIp15jyOxgxlqVJ6VjJaxKLUrwUBnKR8icbn20w6UGg"
         }
       ]
     }
