@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T09:01:24.783567Z",
+  "checked_at": "2026-11-22T09:31:15.498075Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "unemployment",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T09:10:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/california/socal-duo-stole-millions-unemployment-benefits/",
+        "https://www.edhat.com/california/news/arthur-marquez-guilty-covid-19-unemployment-fraud-san-bernardino/",
+        "https://www.kslm.news/news/california-man-pleads-guilty-to-2-1-million-pandemic-unemployment-fraud-mwmsa8w4"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYMg3vVOSvC2R33fX1JBw_ovz1pDD43rW65uJll6ymKRNagmtx32Pbcsmbu94",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/california/socal-duo-stole-millions-unemployment-benefits/",
+          "title": "Southern California duo stole $2.1 million in unemployment benefits",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYMg3vVOSvC2R33fX1JBw_ovz1pDD43rW65uJll6ymKRNagmtx32Pbcsmbu94"
+        },
+        {
+          "url": "https://www.edhat.com/california/news/arthur-marquez-guilty-covid-19-unemployment-fraud-san-bernardino/",
+          "title": "San Bernardino Man Arthur Marquez Pleads Guilty in $2.1M COVID-19 Unemployment Fraud Scheme",
+          "publisher": "edhat",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlPE_pdxtXY3FRd0Ld81ss84ys57y-RQpYFs75w3ySRnGoNjSXbwB30DQkXGg"
+        },
+        {
+          "url": "https://www.kslm.news/news/california-man-pleads-guilty-to-2-1-million-pandemic-unemployment-fraud-mwmsa8w4",
+          "title": "California Man Pleads Guilty to $2.1 Million Pandemic Unemployment Fraud",
+          "publisher": "KSLM Radio",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwicwWG4beqceJTKaGNBN1oeDJ_CInkMhSYZ9Vhvk_8kGB4bjVcOIFsby4FYk"
+        }
+      ]
+    },
+    {
+      "query": "black friday sales",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-22T09:00:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+        "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
+          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
+        },
+        {
+          "url": "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals",
+          "title": "We vetted thousands of early Black Friday deals to find 42 worth pouncing on",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuTtvGXJaj0PcrnoFmkLXVclz26HKxlLWsNNx1VUK8se8PggMjU3FKOBwYmU"
+        }
+      ]
+    },
+    {
+      "query": "nordvpn",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:40:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
+        "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
+        "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
+          "title": "NordVPN at $2.99 a Month Costs Less Than Your Airport Coffee This Thanksgiving",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q"
+        },
+        {
+          "url": "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
+          "title": "Beyond VPN: NordVPN Details Its 2026 Security Bundles Combining Antivirus, Password Management and Encrypted Storage",
+          "publisher": "The Gila Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVhCL9S-v7vwcz_pjydDgezblNC7huTyN7p0-MDB567DR9Xnb3_yFB5NtGJTM"
+        },
+        {
+          "url": "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80",
+          "title": "Get NordVPN's best price since last Black Friday – 2 years for just $80",
+          "publisher": "Tom's Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0zQr-4tEgkNY_ZIp0GGmuZES9DNPQZdDPcjqTzsV00xVRRfZn2Q_OnQUWSg"
+        }
+      ]
+    },
     {
       "query": "jfk",
       "approx_searches": "100+",
@@ -42,37 +147,37 @@
       ]
     },
     {
-      "query": "nordvpn",
+      "query": "a24",
       "approx_searches": "100+",
       "published_at": "2026-11-22T08:40:00Z",
       "related_news_urls": [
-        "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
-        "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
-        "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80"
+        "https://www.cnbc.com/2026/11/20/a24-box-office-hbo-max.html",
+        "https://foro3d.com/en/2026/noviembre/a24-amplia-su-catalogo-televisivo-en-2026-con-series-para-casi-todas-l.html",
+        "https://www.indiewire.com/news/business/a24-tv-division-istrong-2026-crystal-lake-1235228517/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q",
-      "image_credit": "Gizmodo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpA2hpuO6PBATvCVZNBUMNWEkVoMmp4ZjvHZglCw2CcumuhP1DD873lYQOFgI",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
-          "title": "NordVPN at $2.99 a Month Costs Less Than Your Airport Coffee This Thanksgiving",
-          "publisher": "Gizmodo",
+          "url": "https://www.cnbc.com/2026/11/20/a24-box-office-hbo-max.html",
+          "title": "A24 is having a great year at the box office. That could give HBO Max a streaming edge",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpA2hpuO6PBATvCVZNBUMNWEkVoMmp4ZjvHZglCw2CcumuhP1DD873lYQOFgI"
         },
         {
-          "url": "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
-          "title": "Beyond VPN: NordVPN Details Its 2026 Security Bundles Combining Antivirus, Password Management and Encrypted Storage",
-          "publisher": "The Gila Herald",
+          "url": "https://foro3d.com/en/2026/noviembre/a24-amplia-su-catalogo-televisivo-en-2026-con-series-para-casi-todas-l.html",
+          "title": "A24 expands its television catalog in 2026 with series for almost every platform",
+          "publisher": "Foro3D",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVhCL9S-v7vwcz_pjydDgezblNC7huTyN7p0-MDB567DR9Xnb3_yFB5NtGJTM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4Q6_CJCXgPWkNiOiZkMq6H62lxCidq8aoE_kBd1PSe8EZFoUn_0BS442g5rQ"
         },
         {
-          "url": "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80",
-          "title": "Get NordVPN's best price since last Black Friday – 2 years for just $80",
-          "publisher": "Tom's Guide",
+          "url": "https://www.indiewire.com/news/business/a24-tv-division-istrong-2026-crystal-lake-1235228517/",
+          "title": "A24’s TV Division Is Quietly Having as Strong a Year as Its Film Team",
+          "publisher": "IndieWire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0zQr-4tEgkNY_ZIp0GGmuZES9DNPQZdDPcjqTzsV00xVRRfZn2Q_OnQUWSg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcgiLkBHLUscoJ6RmKf2dx0B5Bb9j1gOjqAS-Z8J2qDXBAocecQmNPJS29Vr4"
         }
       ]
     },
@@ -148,7 +253,7 @@
     },
     {
       "query": "skip bayless",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-22T08:00:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "drake",
-      "approx_searches": "200+",
+      "query": "gta 6 vicki",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T07:50:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-friday-nov-20",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aidan-hutchinson-wasnt-fined-for-sack-that-injured-drake-maye"
+        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
+        "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrMx6G4OCb1hS5CmydB25flZIyXDCh4GYvm_sa4MQSHUZ994SDcGuswB4S5eM",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk",
+      "image_credit": "escorenews.com",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50542578/patriots-qb-drake-maye-fractured-fibula-sources-say",
-          "title": "Patriots QB Drake Maye has fractured fibula, sources say",
-          "publisher": "ESPN",
+          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
+          "publisher": "escorenews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrMx6G4OCb1hS5CmydB25flZIyXDCh4GYvm_sa4MQSHUZ994SDcGuswB4S5eM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
         },
         {
-          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-friday-nov-20",
-          "title": "NFL news roundup: Patriots' Drake Maye has fractured fibula; Raiders' Brock Bowers questionable",
-          "publisher": "NFL.com",
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
+          "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
+          "publisher": "Radio Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aidan-hutchinson-wasnt-fined-for-sack-that-injured-drake-maye",
-          "title": "Aidan Hutchinson wasn’t fined for sack that injured Drake Maye",
-          "publisher": "NBC Sports",
+          "url": "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
+          "title": "‘GTA 6’: Where You Know Vicki Actress Taryn Manning From",
+          "publisher": "Men's Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcm_ngkBLp4VpD5bADrSyyYMD1c_i5-1f1Fsk5s088iD5YAl5_7w0k13Lzum0"
-        }
-      ]
-    },
-    {
-      "query": "aeropuerto",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T07:40:00Z",
-      "related_news_urls": [
-        "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
-        "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
-        "https://apnews.com/article/eeuu-ice-seattle-arrestos-inmigrantes-redadas-6eb96549f597a0ab27f1d4b609af42b3"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZSvlLYSNEVz0WWhXBlm7rT5z_mdSinOo_FkMPgZzZf1gZTafL1SkvVhaGRQ",
-      "image_credit": "EL PAÍS",
-      "news": [
-        {
-          "url": "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
-          "title": "Agentes del ICE causan terror al detener a dos personas en el embarque de un vuelo en Seattle",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZSvlLYSNEVz0WWhXBlm7rT5z_mdSinOo_FkMPgZzZf1gZTafL1SkvVhaGRQ"
-        },
-        {
-          "url": "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
-          "title": "Agentes de ICE arrestan a dos inmigrantes mexicanos en el aeropuerto de Seattle en una escena \"angustiosa\"",
-          "publisher": "CNN en Español",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3K_jrZj6ZUGryc0cCP8GDcCzh6PPYckkuLRBazkhC-fvOTjZrgv_XF1qOuT8"
-        },
-        {
-          "url": "https://apnews.com/article/eeuu-ice-seattle-arrestos-inmigrantes-redadas-6eb96549f597a0ab27f1d4b609af42b3",
-          "title": "Agentes de inmigración arrestan a 2 mexicanos en el aeropuerto de Seattle y retrasan vuelo",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmjMGqjHPh3ZByzy5ugmzKit4PCPmQHlj2DETuXdFNkvWDXtT4ftxkLwzj67Y"
-        }
-      ]
-    },
-    {
-      "query": "president trump",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T07:20:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/21/trump-executive-order-01179540",
-        "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-        "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaRICpIt227V_P9kYQskhdE2ErIVYN2F43U2zvWlXAske61I3NtWeJaHPyla4",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/21/trump-executive-order-01179540",
-          "title": "New Trump executive order seeks to block federal contractors from talking to Congress",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaRICpIt227V_P9kYQskhdE2ErIVYN2F43U2zvWlXAske61I3NtWeJaHPyla4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/21/us/politics/trump-congressional-oversight-contractors.html",
-          "title": "Trump Moves to Restrict Congressional Oversight of Contractors",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTlWiwsXiW8rEOn3Eq35E6dI6pij5Oh7jMEiO7b9ScGpX0IPVPg-SrFAImkuk"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/21/g-s1-154966/trump-contractors-congress",
-          "title": "Trump orders federal contractors to check with White House before responding to Congress",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQorQQGcm5NkkZ41fckitbEg38TBut-HcFn-jJa9mZWlUjW3zvgcBvwHmppuhY"
-        }
-      ]
-    },
-    {
-      "query": "russian missiles poland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T07:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
-        "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
-        "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
-          "title": "NATO will defend every inch of Polish territory, Rutte says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw"
-        },
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
-          "title": "Poland says Russian missiles hit its territory; Trump calls it a mistake",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShsyEI5GJTJYCH3JikDLNWnLA6gZ05EH1YCotuFVdnaIhDER6vels_X59jii8"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond",
-          "title": "Russian missiles hit Poland: What happened, and could NATO respond?",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNevjOI9sEXqTviWrw2YeRSBLvCYpEMqT4FqMGMIF-FBZ2wJHVGj2xomTYLZw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBHLB6ZlfoLRydC95tG2vraGalFvdb6Bxc3RqpUTRklJF1SVvwvNI6JI76a4"
         }
       ]
     }
