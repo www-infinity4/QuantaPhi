@@ -424,3 +424,14 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Separate gates:** Independent source review, current-head CI / mergeability, guarded merge, deployed public asset readback, real YouTube in-card play/Stop/fallback and physical Android acceptance remain unverified.
 - **Progress for this single card only:** approximately 2/6 acceptance gates (source intake + test-first reproduction) observed; do not change aggregate issue #1603 completion estimate. Session count: one newly recorded intake/build pass. Remaining sessions unknown; no background execution asserted.
 - **Next single executable action:** Inspect source-plus-checkpoint branch head's Creator Quick Cards and other exact-head CI, review diff against current main, then gate merge and separately verify website/Android playback.
+
+
+## Session — owner WKIVlHQRXF4 source Quick Card (2026-11-22)
+
+- **Canonical issue:** #1603. **Draft PR:** #2098, https://github.com/www-infinity4/QuantaPhi/pull/2098. **Branch:** `feat/owner-youtube-WKIVlHQRXF4-1603-20261122` from main; no merge or production deployment.
+- **Owner source:** https://youtu.be/WKIVlHQRXF4?is=9h2PE4iGFeeXFutq; canonical watch URL https://www.youtube.com/watch?v=WKIVlHQRXF4. YouTube page title observed as **11 de julho de 2019** on 2026-11-22. This title is not evidence of upload date. Publisher, exact upload date, embeddability, rights, age classification and source-channel coverage remain unverified.
+- **RED-first test commit:** `651b46a8308e392d082f680c5afe1fb56c7fcc0b`, `test/youtube-owner-WKIVlHQRXF4.test.mjs`. At this branch head, source inspection found zero `WKIVlHQRXF4` rows where the regression requires exactly one. **This is a structural RED proof only; an executable failing Node test was not yet observed.**
+- **GREEN source commit:** `a47503bc904a87548f3373a606588fe731497291`, exactly one source link in `youtube-owner-video-links.mjs`, reusing existing Oracle Public/Media card and owner View More feed. Structural count check found exactly one row. Tests/CI are not yet established as passing on this head.
+- **Scope:** No added iframe/player code, media rehost, publisher claim, full-channel claim, advertising label, Star Coins, wallet mutation or payouts. No credentials, branching-rule bypass or production release.
+- **State:** source_staged / 🔴. **Progress estimate for this one video:** 2/7 gates (owner source identified; source row and test staged); executed Node regression, exact-head CI, independent review, permitted merge, Cloudflare readback and Android tap-to-play acceptance are still outstanding. **Sessions:** one scoped source-edit session; further effort unknown.
+- **Blocker / next smallest action:** Run `node --test test/youtube-owner-WKIVlHQRXF4.test.mjs` and relevant existing creator-card regressions on the exact PR head; inspect GitHub Actions and remediate in the same PR before mergeability/release checks.
