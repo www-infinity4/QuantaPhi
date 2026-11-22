@@ -30,3 +30,31 @@ test('owner WKIVlHQRXF4 has exactly one source-backed Oracle Public/Media Quick 
  assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/,'The owner View More feed includes reviewed original links');
  assert.match(mixed,/Load more videos/);
 });
+
+test('owner report on WKIVlHQRXF4 is tracked as an unverified review case, not a verdict or identity hunt',async()=>{
+ const {CREATOR_VIDEO_REVIEW_CASES,validateCreatorVideoReviewCase,reviewCasesForVideo,CREATOR_VIDEO_REVIEW_RULES}=await import('../creator-video-review-ledger.mjs');
+ const id='WKIVlHQRXF4';
+ const cases=reviewCasesForVideo(id);
+ assert.equal(cases.length,1,'One distinct review case per owner report');
+ const record=cases[0];
+ assert.equal(record.caseId,'CVID-20261122-WKIVlHQRXF4');
+ assert.equal(record.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(record.reportedBy,'owner');
+ assert.equal(record.status,'reported-unverified');
+ assert.equal(record.concernCode,'on-camera-visibility-request');
+ assert.match(record.summary,/owner.+child.+asked.+person filming.+appear/i);
+ assert.equal(record.evidence.videoDirectlyReviewed,false);
+ assert.deepEqual(record.evidence.verifiedTimestamps,[]);
+ assert.equal(record.personIdentified,false);
+ assert.equal(record.automaticSanction,false);
+ assert.equal(record.publicAccusation,false);
+ assert.ok(validateCreatorVideoReviewCase(record));
+ assert.equal(CREATOR_VIDEO_REVIEW_CASES.filter(v=>v.videoId===id).length,1);
+ assert.equal(reviewCasesForVideo('NOT-AN-ID').length,0);
+ assert.ok(CREATOR_VIDEO_REVIEW_RULES.some(rule=>rule.id==='minor-consent-and-comfort'));
+ assert.ok(CREATOR_VIDEO_REVIEW_RULES.some(rule=>rule.id==='no-identification-pressure'));
+ assert.equal(validateCreatorVideoReviewCase({...record,status:'verified-violation'}),false,
+   'Do not silently promote an owner report to an adjudicated violation');
+ assert.equal(validateCreatorVideoReviewCase({...record,personIdentified:true}),false);
+ assert.equal(validateCreatorVideoReviewCase({...record,automaticSanction:true}),false);
+});
