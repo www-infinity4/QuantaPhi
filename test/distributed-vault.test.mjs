@@ -56,9 +56,9 @@ test('randomized placement uses only app cache instances reporting available cap
 test('placement rejects non-app devices, insufficient or duplicate app instances, and invalid replica count',()=>{
  const {manifest}=packFile(Buffer.from('hello'),{shards:4});
  assert.throws(()=>planPlacement(manifest,Array.from({length:4},(_,i)=>({id:'p'+i,appCacheReady:false,maxShardBytes:1000}))),/not enough app-cache/);
- assert.throws(()=>planPlacement(manifest,[{id:'same',appCacheReady:true,maxShardBytes:1000},{id:'same',optIn:true,maxShardBytes:1000}]),/duplicate device/);
+ assert.throws(()=>planPlacement(manifest,[{id:'same',appCacheReady:true,maxShardBytes:1000},{id:'same',appCacheReady:true,maxShardBytes:1000}]),/duplicate device/);
  const ok=Array.from({length:4},(_,i)=>({id:'p'+i,appCacheReady:true,maxShardBytes:1000}));
- assert.throws(()=>planPlacement(manifest,ok,{replicas:2}),/not enough opted-in/);
+ assert.throws(()=>planPlacement(manifest,ok,{replicas:2}),/not enough app-cache/);
  assert.throws(()=>planPlacement(manifest,ok,{replicas:0}),/replicas/);
 });
 
