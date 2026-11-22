@@ -67,7 +67,7 @@ test('video cards use only approved click-to-play YouTube embeds and retain dire
 test('owner-linked YouTube video becomes a separate source-backed public Oracle carousel card, not a family or 21+ placement',async()=>{
  const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
  assert.ok(REVIEWED_OWNER_VIDEO_LINKS.length>=2,'Owner catalog includes the original two and may grow with new verified source links');
- const v=REVIEWED_OWNER_VIDEO_LINKS[0];
+ const v=REVIEWED_OWNER_VIDEO_LINKS.find(item=>item.videoId==='PyUwXoTabPA');
  assert.equal(v.videoId,'PyUwXoTabPA');
  assert.equal(v.title,'REFRESHING! 6-2-2014');
  assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v=PyUwXoTabPA');
@@ -318,4 +318,30 @@ test('owner bDZam9unNYk is exactly one source-only Public/Media Quick Card with 
  const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
  assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
  assert.match(mixed,/Load more videos/);
+});
+
+
+test('owner-featured Love Rose source is first among owner-submitted videos with truthful unverified metadata',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='d_nGb3NXIKA';
+ const hits=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(hits.length,1,'One deduplicated owner-requested link');
+ const video=hits[0];
+ assert.equal(REVIEWED_OWNER_VIDEO_LINKS[0].videoId,id,'Owner requested top position in owner video feed');
+ assert.equal(video.title,'Love Rose · owner label (YouTube title unverified)');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(video),true);
+ const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+ assert.ok(card,'The original shared Quick Card must be generated');
+ assert.equal(REVIEWED_OWNER_VIDEO_CARDS[0].reviewedYouTubeVideoId,id);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(card));
+ assert.ok(validSourceCard(card));
+ assert.ok(ACTIVE_SOURCE_CARDS.some(c=>c.id===card.id));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
 });
