@@ -1,0 +1,34 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner yMLadAyHNFo is one source-only Public/Media Quick Card with View More',()=>{
+ const id='yMLadAyHNFo';
+ const entries=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(entries.length,1,'The owner submitted one video; no duplicate or omission');
+ const item=entries[0];
+ assert.equal(item.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(item.observedAt,'2026-11-22');
+ assert.equal(item.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(item.titleVerified,false);
+ assert.equal(item.publisherVerified,false);
+ assert.equal(item.publishedAt,null);
+ assert.equal(item.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(item),true);
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.featureUrl,item.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
+ assert.match(mixed,/Load more videos/);
+});
