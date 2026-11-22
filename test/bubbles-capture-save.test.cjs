@@ -151,3 +151,17 @@ test('a second Record tap preserves the active recording and empty Stop is not a
   assert.match(stop, /if \(completed == null\) \{[\s\S]*?No microphone recording to save[\s\S]*?return;/);
   assert.ok(stop.indexOf('if (completed == null)') < stop.indexOf('CapturePublisher.publish('));
 });
+
+
+test('consented one-second screenshot sequences preserve each native clamp and the 60-frame safety cap',()=>{
+  const screen=source('ScreenCaptureService.java');
+  const activity=source('MainActivity.java');
+  const commands=source('VoiceCaptureCommands.java');
+  for(const nativeFile of [screen,activity,commands]){
+    assert.match(nativeFile,/Math\.max\(1, Math\.min\(60, (?:intervalSeconds|seconds)\)\)/);
+  }
+  assert.match(commands,/seconds = Math\.max\(seconds, \(durationSeconds \+ 59\) \/ 60\)/);
+  assert.match(screen,/captureCount >= 60/);
+  assert.match(screen,/durationSeconds = Math\.max\(10, Math\.min\(300, durationSeconds\)\)/);
+  assert.match(screen,/getMediaProjection\(Activity\.RESULT_OK, consent\)/);
+});
