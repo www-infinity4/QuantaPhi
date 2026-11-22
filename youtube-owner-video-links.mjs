@@ -222,6 +222,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+ ,{
+  videoId:'dTinr4W_IhY',title:'YouTube video dTinr4W_IhY (title unverified)',
+  sourceUrl:'https://www.youtube.com/watch?v=dTinr4W_IhY',
+  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+  titleVerified:false,contentBoundary:'general-media'
+ }
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
