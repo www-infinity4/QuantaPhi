@@ -57,7 +57,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,cloudflareRecovery=false,chat=false,failOnSecondSession=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false,walletServiceDown=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,cloudflareRecovery=false,chat=false,failOnSecondSession=false}={}){
  const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
   'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
   'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
@@ -81,6 +81,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,oauthReturn
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
   if(path==='/session'){
    sessionReads++;
+   if(walletServiceDown)return Response.json({ok:false,error:'wallet_validation_unavailable'},{status:503});
    if(failOnSecondSession&&sessionReads===2)throw Error('temporary_offline');
    return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   }
@@ -117,6 +118,15 @@ const partialGate=()=>({ok:true,walletVerified:true,ready:false,providers:{
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
 }});
+
+test('wallet service outages do not instruct a signed-in visitor to start new StarQuest or Cloudflare authorization',async t=>{
+ const ui=mountedGate(t,partialGate(),{walletServiceDown:true});
+ await new Promise(setImmediate);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.match(ui.get('bubblesSigninStatus').textContent,/wallet verification.*temporarily unavailable/i);
+ assert.doesNotMatch(ui.get('bubblesSigninStatus').textContent,/tap sign in|sign in with StarQuest/i);
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
+});
 
 test('inline chat mounts its real IDs and replaces pending controls with actionable sign-in',async t=>{
  const ui=mountedGate(t,partialGate(),{walletMissing:true,chat:true});

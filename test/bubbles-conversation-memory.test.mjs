@@ -1,5 +1,31 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {execFileSync} from 'node:child_process';import {mkdtempSync,rmSync} from 'node:fs';import {tmpdir} from 'node:os';import path from 'node:path';
-import {conversationMemory,normalizeMessages,searchTerms} from '../workers/infinity-brain-clock/conversation-memory.mjs';
+import {conversationMemory,normalizeMessages,searchTerms,schema} from '../workers/infinity-brain-clock/conversation-memory.mjs';
+import {readFileSync} from 'node:fs';
+
+test('chat-folder history lookup stays within a bounded SQLite work budget for both schema writers',()=>{
+ const folderSource=readFileSync(new URL('../workers/bubbles-chat-folders/worker.mjs',import.meta.url),'utf8');
+ const folderSchema=[...folderSource.matchAll(/'(CREATE [^'\n]+)'/g)].map(match=>match[1]);
+ const query=folderSource.match(/prepare\('(SELECT COUNT\(\*\) AS count,MIN\(at\)[^']+)'\)/)?.[1];
+ assert.ok(query,'exercise the actual legacy-folder query');
+ const report=JSON.parse(execFileSync('python3',['-c',`import sqlite3,json,sys
+data=json.loads(sys.argv[1]); out=[]
+for schema in data['schemas']:
+ c=sqlite3.connect(':memory:')
+ c.execute('CREATE TABLE IF NOT EXISTS bubbles_messages(owner TEXT NOT NULL,id TEXT NOT NULL,role TEXT NOT NULL,text TEXT NOT NULL,at INTEGER NOT NULL,PRIMARY KEY(owner,id))')
+ for sql in schema: c.execute(sql)
+ c.executemany('INSERT INTO bubbles_messages VALUES(?,?,?,?,?)',[('owner-a','m'+str(i),'user','message',i+1) for i in range(2001)])
+ c.executemany('INSERT INTO bubbles_session_messages VALUES(?,?,?,?)',[('owner-a','s'+str(i%10),'m'+str(i),i+1) for i in range(2000)])
+ steps=[0]
+ def budget():
+  steps[0]+=1000
+  return int(steps[0]>150000)
+ c.set_progress_handler(budget,1000)
+ row=c.execute(data['query'],('owner-a',)).fetchone()
+ out.append({'count':row[0],'steps':steps[0]})
+print(json.dumps(out))`,JSON.stringify({schemas:[schema,folderSchema],query})],{encoding:'utf8'}));
+ assert.deepEqual(report.map(row=>row.count),[1,1]);
+ for(const row of report)assert.ok(row.steps<=150000,'avoid millions of repeated membership scans');
+});
 function database(file){
  const run=(statements)=>JSON.parse(execFileSync('python3',['-c',`import sqlite3,json,sys
 c=sqlite3.connect(sys.argv[1]);c.row_factory=sqlite3.Row

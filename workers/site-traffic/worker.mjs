@@ -94,14 +94,51 @@ const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':
 // A manual read can demand fresh provider data, but never exposes the Analytics token.
 // Five-minute provider cooldown avoids hitting Cloudflare on repeated button presses.
 const MANUAL_COOLDOWN_MS=5*60*1000;
-export async function handleTrafficRequest(request,env,{fetcher=fetch,now=new Date(),ctx}={}){
+// Keep one public, verified snapshot per edge instead of scanning every daily
+// record for every visitor's minute timer. The longer cache lifetime preserves
+// the actual last verified counts during a shared D1 quota outage.
+const SNAPSHOT_FRESH_MS=60*1000;
+const snapshotKey=()=>new Request('https://quantaphi.org/api/site-traffic?cache=verified-snapshot-v1');
+function validSnapshot(d,now){
+ const recent=d?.last7Days,today=isoDate(now);
+ return d?.schemaVersion===2&&d.site==='quantaphi.org'&&d.source===SOURCE&&
+  d.scope==='recorded_since'&&d.historicComplete===false&&d.includesBots===true&&d.uniqueVisitors===false&&
+  validUtcDay(d.since)&&validUtcDay(d.through)&&d.since<=d.through&&d.through<=today&&
+  validVerifiedAt(d.fetchedAt,now)&&isCount(d.requests)&&isCount(d.pageViews)&&
+  isCount(d.recordedDays)&&typeof d.coverageContinuous==='boolean'&&
+  recent&&validUtcDay(recent.since)&&validUtcDay(recent.until)&&
+  recent.until>=d.through&&recent.until<=today&&
+  Date.parse(recent.until)-Date.parse(recent.since)===6*DAY&&
+  isCount(recent.daysRecorded)&&recent.daysRecorded<=7&&recent.daysRecorded<=d.recordedDays&&
+  isCount(recent.requests)&&isCount(recent.pageViews)&&recent.requests<=d.requests&&recent.pageViews<=d.pageViews;
+}
+async function cachedSnapshot(cache,now){
+ try{
+  const response=await cache?.match(snapshotKey());
+  if(!response?.ok)return null;
+  const snapshot=await response.json(),storedAt=Number(response.headers.get('X-Traffic-Cached-At'));
+  return validSnapshot(snapshot,now)&&Number.isFinite(storedAt)&&storedAt>0&&storedAt<=now.getTime()+60000?
+   {snapshot,storedAt}:null;
+ }catch{return null;}
+}
+async function cacheSnapshot(cache,snapshot,now){
+ if(!cache?.put)return;
+ try{await cache.put(snapshotKey(),Response.json(snapshot,{headers:{
+  'Cache-Control':'public, max-age=86400','X-Traffic-Cached-At':String(now.getTime())
+ }}));}catch{}
+}
+export async function handleTrafficRequest(request,env,{fetcher=fetch,now=new Date(),ctx,cache=globalThis.caches?.default}={}){
  const url=new URL(request.url);
  if(url.pathname!=='/api/site-traffic')return new Response('Not found',{status:404});
  if(request.method!=='GET'&&request.method!=='HEAD')return new Response('Method not allowed',{status:405,headers:{Allow:'GET, HEAD'}});
  const manual=request.method==='GET'&&url.searchParams.get('refresh')==='1';
+ const configured=Boolean(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN);
+ const cached=await cachedSnapshot(cache,now);
+ if(!manual&&cached&&now.getTime()-cached.storedAt<SNAPSHOT_FRESH_MS){
+  return new Response(request.method==='HEAD'?null:JSON.stringify({...cached.snapshot,refreshConfigured:configured})+'\n',{status:200,headers});
+ }
  try{
   let snapshot=await readLedger(env.TRAFFIC_LEDGER,now);
-  const configured=Boolean(env.SITE_TRAFFIC_CLOUDFLARE_TOKEN);
   let refreshStatus;
   if(manual){
    if(!configured)refreshStatus='not_configured';
@@ -123,13 +160,32 @@ export async function handleTrafficRequest(request,env,{fetcher=fetch,now=new Da
     token:env.SITE_TRAFFIC_CLOUDFLARE_TOKEN,fetcher,now
    }).catch(e=>console.warn('traffic_refresh:',String(e?.message||e).slice(0,80))));
   }
-  snapshot.refreshConfigured=configured;
-  if(manual)snapshot.refreshStatus=refreshStatus;
+  // Read replicas or older fallback data must never replace a newer verified
+  // total with fewer requests/views. Preserve its original verification time.
+  if(cached&&cached.snapshot.since===snapshot.since&&
+   (cached.snapshot.requests>snapshot.requests||cached.snapshot.pageViews>snapshot.pageViews||
+    Date.parse(cached.snapshot.fetchedAt)>Date.parse(snapshot.fetchedAt)))snapshot=cached.snapshot;
+  snapshot={...snapshot,refreshConfigured:configured};
+  delete snapshot.storageStatus;delete snapshot.retryAt;
+  if(cached?.snapshot.refreshStatus==='failed'&&
+   Date.parse(snapshot.fetchedAt)<=Date.parse(cached.snapshot.fetchedAt)&&refreshStatus!=='refreshed')refreshStatus='failed';
+  if(refreshStatus)snapshot.refreshStatus=refreshStatus;
+  else delete snapshot.refreshStatus;
+  await cacheSnapshot(cache,snapshot,now);
   return new Response(request.method==='HEAD'?null:JSON.stringify(snapshot)+'\n',{
    status:200,headers:manual?{...headers,'Cache-Control':'no-store'}:headers
   });
  }catch(e){
   console.warn('traffic_read:',String(e?.message||e).slice(0,80));
+  if(cached){
+   const snapshot={...cached.snapshot,refreshConfigured:configured,storageStatus:'unavailable'};
+   if(manual)snapshot.refreshStatus='failed';
+   if(String(e?.message||e).includes('free tier daily row'))snapshot.retryAt=new Date(Date.parse(isoDate(now))+DAY).toISOString();
+   await cacheSnapshot(cache,snapshot,now);
+   return new Response(request.method==='HEAD'?null:JSON.stringify(snapshot)+'\n',{
+    status:200,headers:{...headers,'Cache-Control':'no-store'}
+   });
+  }
   return new Response(JSON.stringify({ok:false,error:'traffic_ledger_unavailable'})+'\n',{
    status:503,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}
   });

@@ -22,6 +22,10 @@ and are *not* literal link clicks.
 - Actual backfill was seeded in D1 from the authenticated Cloudflare GraphQL
   `httpRequests1dGroups` result on October 24, 2026, with 21 distinct days.
 - An isolated Worker at `GET /api/site-traffic` reads this durable ledger.
+  Verified public snapshots are reused for one minute per edge, independent of
+  query strings; a last verified snapshot is kept for up to a day during a
+  storage outage. Failed storage/provider verification keeps its failure status
+  and original source timestamp, rather than claiming a newly verified count.
   It may attempt an asynchronous refresh of stale data, but it always returns
   persisted counts if analytics authorization is temporarily unavailable.
 - The Worker schedules a 15-minute refresh, re-reading the last 30 UTC dates
@@ -63,6 +67,12 @@ To activate unattended ingestion:
 does not by itself mean the Worker is scheduled and serving live queries.
 
 ## Visitor-initiated refresh (one tap)
+
+November 22 incident: the Analytics secret name and fifteen-minute cron are
+present, but live D1 reads failed for the account's daily allowance and writes
+failed for account storage. Reconnecting Cloudflare OAuth is not a repair for
+those provider limits. See `work/unfinished/TICKET-1110.md` for the actual
+source, quota, storage and release evidence. No account or balance was reset.
 
 The homepage **Refresh Cloudflare traffic** button uses
 `GET /api/site-traffic?refresh=1` with `Cache-Control: no-store`.

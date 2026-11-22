@@ -62,6 +62,32 @@ test('missing and unknown device credentials cannot read any account',async()=>{
  assert.equal(f.keyFetches(),0);
 });
 
+test('identity verification survives unavailable balance storage without reading or writing it',async()=>{
+ const f=await fixture();let balanceQueries=0;
+ const env={...f.env,DB:{prepare(){balanceQueries++;throw Error('D1 daily read quota exhausted');}}};
+ for(let i=0;i<2;i++){
+  const response=await f.worker.fetch(f.request('/v1/wallet/identity?userId=forged',f.tokens[i]),env,{});
+  assert.equal(response.status,200);
+  assert.deepEqual(await response.json(),{ok:true,user:{id:f.accounts[i].id,username:f.accounts[i].username}});
+  assert.equal(response.headers.get('Cache-Control'),'no-store');
+ }
+ assert.equal(balanceQueries,0);
+ assert.ok(f.reads.every(({sql})=>sql.startsWith('SELECT a.id')));
+});
+
+test('identity-only verification rejects missing and revoked credentials and never falls back to another account',async()=>{
+ const f=await fixture();
+ for(const token of [null,'sq_'+'Z'.repeat(43)]){
+  const response=await f.worker.fetch(f.request('/v1/wallet/identity?userId=account-a',token),f.env,{});
+  assert.equal(response.status,401);
+  const value=await response.json();assert.equal(value.user,undefined);assert.equal(value.balances,undefined);
+ }
+ const request=new Request('https://wallet.example.test/v1/wallet/identity',{
+  method:'POST',headers:{Authorization:'Bearer '+f.tokens[0],'Content-Type':'application/json'},body:'{"userId":"account-b"}'});
+ assert.equal((await f.worker.fetch(request,f.env,{})).status,404);
+ assert.ok(f.reads.every(({sql})=>sql.startsWith('SELECT a.id')));
+});
+
 test('another account ID in the history query never changes the authenticated owner',async()=>{
  const f=await fixture();
  const response=await f.worker.fetch(f.request('/v1/wallet/infinity-history?userId=account-b',f.tokens[0]),f.env,{});

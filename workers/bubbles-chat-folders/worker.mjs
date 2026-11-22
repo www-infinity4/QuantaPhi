@@ -21,7 +21,8 @@ const tables=[
  'CREATE TABLE IF NOT EXISTS bubbles_sessions(owner TEXT NOT NULL,session_id TEXT NOT NULL,title TEXT NOT NULL,created INTEGER NOT NULL,updated INTEGER NOT NULL,PRIMARY KEY(owner,session_id))',
  'CREATE INDEX IF NOT EXISTS bubbles_sessions_recent ON bubbles_sessions(owner,updated DESC)',
  'CREATE TABLE IF NOT EXISTS bubbles_session_messages(owner TEXT NOT NULL,session_id TEXT NOT NULL,message_id TEXT NOT NULL,at INTEGER NOT NULL,PRIMARY KEY(owner,session_id,message_id))',
- 'CREATE INDEX IF NOT EXISTS bubbles_session_messages_recent ON bubbles_session_messages(owner,session_id,at DESC)'
+ 'CREATE INDEX IF NOT EXISTS bubbles_session_messages_recent ON bubbles_session_messages(owner,session_id,at DESC)',
+ 'CREATE INDEX IF NOT EXISTS bubbles_session_messages_membership ON bubbles_session_messages(owner,message_id)'
 ];
 async function sessionHandler(env,body){
  for(const sql of tables)await env.WORK_DB.prepare(sql).run();

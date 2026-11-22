@@ -19,10 +19,17 @@ export async function walletIdentity(request,env) {
     return env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1')).pairIdentity({token:authorization.slice(7)});
   }
   if (!env.BOT_WALLET?.fetch) throw Error('wallet_validation_unavailable');
-  const response = await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{
-    headers:{Authorization:authorization},signal:AbortSignal.timeout(9000)});
-  if (!response.ok) throw Error('verified_wallet_required');
-  const value = await response.json(), id = value?.user?.id;
+  // Signing in needs a verified account, not balances, token lists or history.
+  // A storage outage must not be reported as a rejected or revoked credential.
+  let response,value;
+  try{
+    response = await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/identity',{
+      headers:{Authorization:authorization},signal:AbortSignal.timeout(9000)});
+  }catch{throw Error('wallet_validation_unavailable');}
+  if ([401,403,404].includes(response.status)) throw Error('verified_wallet_required');
+  if (!response.ok) throw Error('wallet_validation_unavailable');
+  try{value=await response.json();}catch{throw Error('wallet_validation_unavailable');}
+  const id = value?.user?.id;
   if (!value.ok || !((typeof id === 'string' && id.length > 0 && id.length < 160) || (Number.isSafeInteger(id) && id >= 0))) throw Error('verified_wallet_required');
   // Binding uses the authenticated device session, not browser-provided IDs.
   return {userId:String(id),sessionId:await digest(authorization)};

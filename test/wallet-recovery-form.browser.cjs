@@ -29,9 +29,18 @@ const {chromium}=require('playwright');
  const env={RECOVERY_ACCESS_ISSUER:issuer,RECOVERY_ACCESS_AUD:'fixture',RECOVERY_OWNER_EMAIL:'owner@example.test',RECOVERY_OWNER_ACCOUNT_ID:'original-fixture',IDENTITY_DB:db};
  const digest=async value=>Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value))).toString('hex');
  const issue=vm.runInNewContext(source.slice(start,end)+';issueOwnerRecovery',{crypto,TextEncoder,TextDecoder,Response,URL,Request,btoa,atob,Uint8Array,digest,AbortSignal,fetch:async()=>Response.json({keys:[pub]}),console:{warn(){}}});
+ const recoveryHtml=fs.readFileSync('wallet-recovery.html','utf8');
  const requests=[];
  const server=http.createServer(async(req,res)=>{
   try{
+   const pathname=new URL(req.url,'http://fixture.test').pathname;
+   if(pathname==='/wallet-recovery.html'){
+    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});res.end(recoveryHtml);return;
+   }
+   if(pathname==='/bubbles.html'){
+    res.writeHead(200,{'Content-Type':'text/html; charset=utf-8'});res.end('<h1>Verified Bubbles return fixture</h1>');return;
+   }
+   if(pathname!=='/v1/wallet/issue-recovery'){res.writeHead(404);res.end('Fixture route not found');return;}
    const chunks=[];for await(const chunk of req)chunks.push(chunk);
    const headers=new Headers(req.headers);headers.set('Cf-Access-Jwt-Assertion',jwt);
    const request=new Request('http://127.0.0.1:'+server.address().port+req.url,{method:req.method,headers,...(req.method==='POST'?{body:Buffer.concat(chunks)}:{})});
@@ -44,11 +53,13 @@ const {chromium}=require('playwright');
  let browser;
  try{
   browser=await chromium.launch({headless:true,...(process.env.QA_CHROMIUM_EXECUTABLE?{executablePath:process.env.QA_CHROMIUM_EXECUTABLE}:{}),args:['--no-sandbox','--disable-dev-shm-usage','--disable-gpu']});
-  const endpoint='http://127.0.0.1:'+server.address().port+'/v1/wallet/issue-recovery';
+  const fixtureOrigin='http://127.0.0.1:'+server.address().port;
+  const endpoint=fixtureOrigin+'/v1/wallet/issue-recovery';
   for(const mobile of [false,true]){
    requests.length=0;writes.length=0;
    const context=await browser.newContext({viewport:{width:mobile?390:1280,height:844},isMobile:mobile,hasTouch:mobile});
    try{
+    await context.route('**/*',route=>new URL(route.request().url()).origin===fixtureOrigin?route.continue():route.abort());
     const page=await context.newPage();
     const form=await page.goto(endpoint);
     assert.equal(form.status(),200);assert.equal(form.headers()['referrer-policy'],'same-origin');assert.equal(writes.length,0);
@@ -61,6 +72,69 @@ const {chromium}=require('playwright');
     assert.match(await page.locator('code').innerText(),/^wrc_[A-Za-z0-9_-]{43}$/);
     console.log(JSON.stringify({browser:await browser.version(),mobile,formStatus:form.status(),postStatus:result.status(),sameOrigin:post.origin===new URL(endpoint).origin,grantWrites:writes.length,codePagePolicy:post.policy}));
    }finally{await context.close();}
+  }
+
+  // These are existing signed-in device fixtures. Every external API request
+  // is fulfilled locally, and unknown destinations are aborted before network
+  // access. No actual account, wallet, authorization or provider is contacted.
+  const username='browser-fixture',deviceToken='sq_'+'A'.repeat(43),accountId='synthetic-account';
+  const starOrigin='https://starquest-ledger.marvaseater.workers.dev';
+  const unifiedOrigin='https://unified-wallet.marvaseater.workers.dev';
+  const quantOrigin='https://quanta-phi-ledger.marvaseater.workers.dev';
+  for(const mobile of [false,true]){
+   for(const scenario of ['valid-identity-balances-unavailable','revoked-identity','mismatched-identity']){
+    const context=await browser.newContext({viewport:{width:mobile?390:1280,height:844},isMobile:mobile,hasTouch:mobile});
+    const apiCalls=[],unexpected=[],grantsBefore=writes.length;
+    try{
+     await context.addInitScript(({username,deviceToken})=>{
+      localStorage.setItem('starquest_session',JSON.stringify({key:username,username,signedInAt:Date.now()}));
+      localStorage.setItem('starquest_users',JSON.stringify({[username]:{key:username,username,passwordHash:'',tokens:2}}));
+      localStorage.setItem('starquest_ledger_device_v1:'+username,deviceToken);
+     },{username,deviceToken});
+     await context.route('**/*',async route=>{
+      const request=route.request(),url=new URL(request.url());
+      if(url.origin===fixtureOrigin)return route.continue();
+      const known=(url.origin===starOrigin&&url.pathname==='/v1/state')||
+       (url.origin===unifiedOrigin&&['/v1/wallet/identity','/v1/wallet/state'].includes(url.pathname))||
+       (url.origin===quantOrigin&&url.pathname==='/v1/quants/state');
+      if(!known){unexpected.push(url.origin+url.pathname);return route.abort();}
+      const headers={'Access-Control-Allow-Origin':fixtureOrigin,
+       'Access-Control-Allow-Headers':'Authorization, Content-Type','Access-Control-Allow-Methods':'GET, OPTIONS'};
+      if(request.method()==='OPTIONS')return route.fulfill({status:204,headers});
+      assert.equal(request.method(),'GET','existing device recovery must not enroll, mint, or modify any ledger');
+      assert.equal(request.headers().authorization,'Bearer '+deviceToken);
+      let status=503,payload={ok:false,error:'synthetic_balance_storage_unavailable'};
+      if(url.origin===starOrigin){
+       status=200;payload={ok:true,state:{username,starCoins:2,pendingShareCredits:0,shareCount:0,ledger:[],watchHistory:[]}};
+      }else if(url.pathname==='/v1/wallet/identity'){
+       status=scenario==='revoked-identity'?401:200;
+       payload=status===401?{ok:false,error:'invalid_device_token'}:
+        {ok:true,user:{id:accountId,username:scenario==='mismatched-identity'?'another-fixture':username}};
+      }
+      apiCalls.push({path:url.pathname,status});
+      await route.fulfill({status,headers,contentType:'application/json',body:JSON.stringify(payload)});
+     });
+     const page=await context.newPage();
+     await page.goto(fixtureOrigin+'/wallet-recovery.html?signin=starquest&returnTo=/bubbles.html',{waitUntil:'domcontentloaded'});
+     if(scenario==='valid-identity-balances-unavailable'){
+      await page.waitForURL(fixtureOrigin+'/bubbles.html');
+      assert.equal(await page.locator('h1').textContent(),'Verified Bubbles return fixture');
+     }else{
+      await page.waitForFunction(()=>document.querySelector('#message')?.classList.contains('warning'));
+      assert.equal(new URL(page.url()).pathname,'/wallet-recovery.html');
+      assert.match(await page.locator('#message').textContent(),scenario==='revoked-identity'?/could not verify this account/i:/identity mismatch/i);
+      assert.equal(await page.locator('#signin').isVisible(),true);
+     }
+     assert.ok(apiCalls.some(call=>call.path==='/v1/wallet/identity'&&call.status===(scenario==='revoked-identity'?401:200)));
+     assert.ok(apiCalls.some(call=>call.path==='/v1/wallet/state'&&call.status===503));
+     assert.deepEqual(unexpected,[]);assert.equal(writes.length,grantsBefore,'ordinary sign-in recovery must not issue owner grants');
+     assert.equal(await page.evaluate(username=>localStorage.getItem('starquest_ledger_device_v1:'+username),username),deviceToken);
+     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('starquest_session')).username),username);
+     console.log(JSON.stringify({browser:await browser.version(),mobile,scenario,
+      returnedToBubbles:new URL(page.url()).pathname==='/bubbles.html',identityStatus:scenario==='revoked-identity'?401:200,
+      optionalBalancesStatus:503,unexpectedRequests:unexpected.length,ownerGrantWrites:writes.length-grantsBefore}));
+    }finally{await context.close();}
+   }
   }
  }finally{if(browser)await browser.close();await new Promise(resolve=>server.close(resolve));}
 })().catch(error=>{console.error(error);process.exitCode=1;});

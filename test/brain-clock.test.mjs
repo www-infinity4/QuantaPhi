@@ -511,10 +511,34 @@ test('wallet-owner sessions require an existing verified payout owner, expire, a
 });
 
 test('the public Brain route never authorizes by displayed wallet balances or account names',()=>{
- assert.match(source,/BOT_WALLET\.fetch\('https:\/\/wallet\.internal\/v1\/wallet\/state'/);
+ assert.match(source,/BOT_WALLET\.fetch\('https:\/\/wallet\.internal\/v1\/wallet\/identity'/);
  assert.match(source,/recipient\.userId!==body\.userId/);
  assert.match(source,/await ownerAuthorized\(env,token\)/);
  assert.match(source,/if\(origin&&!origins\.has\(origin\)\)/);
+});
+
+test('Brain owner sign-in uses verified identity while balances are unavailable and keeps the existing owner binding',async()=>{
+ const memory=new Map([['bot-work-recipient',{userId:'original-owner'}]]);
+ const clock=new BrainClock({storage:testStorage(memory)},{});
+ const token='sq_'+'a'.repeat(40),paths=[];let userId='original-owner',status=200;
+ const env={CLOCK:{idFromName:()=>1,get:()=>({fetch:(url,options)=>clock.fetch(new Request(url,options))})},BOT_WALLET:{fetch:async(url,options)=>{
+  paths.push(url);assert.equal(options.headers.Authorization,'Bearer '+token);
+  if(!url.endsWith('/identity'))return Response.json({error:'D1 daily read limit'},{status:500});
+  return Response.json(status===200?{ok:true,user:{id:userId}}:{error:'unavailable'},{status});
+ }}};
+ const request=(origin='https://quantaphi.org')=>new Request('https://brain.test/owner/session',{
+  method:'POST',headers:{Origin:origin,Authorization:'Bearer '+token}});
+ const response=await brainWorker.fetch(request(),env);
+ assert.equal(response.status,200);assert.match((await response.json()).token,/^rb_[a-f0-9]{64}$/);
+ assert.deepEqual(paths,['https://wallet.internal/v1/wallet/identity']);
+ userId='another-wallet';assert.equal((await brainWorker.fetch(request(),env)).status,404);
+ assert.equal(memory.get('bot-work-recipient').userId,'original-owner');
+ status=401;assert.equal((await brainWorker.fetch(request(),env)).status,404);
+ status=503;const down=await brainWorker.fetch(request(),env);assert.equal(down.status,503);
+ assert.equal((await down.json()).error,'wallet_service_unreachable');
+ assert.equal((await brainWorker.fetch(request('https://evil.test'),env)).status,404);
+ assert.equal(memory.get('bot-work-recipient').userId,'original-owner');
+ assert.ok(!JSON.stringify([...memory]).includes(token));
 });
 
 test('verified Brain tickets share the writer owner partition instead of an anonymous browser key',async()=>{

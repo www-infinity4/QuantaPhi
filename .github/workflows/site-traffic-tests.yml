@@ -7,6 +7,7 @@ on:
       - 'data/site-traffic.json'
       - 'workers/site-traffic/**'
       - 'test/site-traffic.test.mjs'
+      - 'test/site-traffic-cache.test.mjs'
       - '.github/workflows/site-traffic-tests.yml'
   workflow_dispatch:
 permissions:
@@ -24,4 +25,4 @@ jobs:
         run: |
           node --check site-traffic.js
           node --check workers/site-traffic/worker.mjs
-          node --test test/site-traffic.test.mjs
+          node --test test/site-traffic.test.mjs test/site-traffic-cache.test.mjs

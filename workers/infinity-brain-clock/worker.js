@@ -1907,9 +1907,10 @@ export default{
    const token=request.headers.get('Authorization')?.match(/^Bearer (sq_[A-Za-z0-9_-]{32,})$/)?.[1];
    if(!token)return output(request,{ok:false,error:'wallet_connection_required'},404);
    try{
-    const verified=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/state',{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(12000)});
+    const verified=await env.BOT_WALLET.fetch('https://wallet.internal/v1/wallet/identity',{headers:{Authorization:'Bearer '+token},signal:AbortSignal.timeout(12000)});
+    if(!verified.ok)return output(request,{ok:false,error:verified.status===429||verified.status>=500?'wallet_service_unreachable':'wallet_not_verified'},verified.status===429||verified.status>=500?503:404);
     const state=await verified.json();
-    if(!verified.ok||!state.ok||!state.user?.id)return output(request,{ok:false,error:'wallet_not_verified'},404);
+    if(!state.ok||!state.user?.id)return output(request,{ok:false,error:'wallet_not_verified'},404);
     const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
     const response=await clock.fetch('https://clock.internal/owner/session-create',{method:'POST',body:JSON.stringify({userId:state.user.id})});
     return output(request,await response.json(),response.ok?200:404);
