@@ -3,87 +3,297 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T04:01:28.793636Z",
+  "checked_at": "2026-11-22T04:31:13.907567Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jack whitehall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T03:40:00Z",
+      "query": "arvid lindblad",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T04:10:00Z",
       "related_news_urls": [
-        "https://www.chad.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
-        "https://www.worksopguardian.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
-        "https://metro.co.uk/2026/11/19/jack-whitehall-responds-becky-hill-releases-class-row-diss-track-29803433/"
+        "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
+        "https://sports.yahoo.com/articles/lawson-hurt-costly-issue-las-094700974.html",
+        "https://www.formula1.com/en/video/we-did-the-basics-well-p6-lindblad-on-how-racing-bulls-maximised-las-vegas-qualifying.1882443880346255316"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcjdYB4UPqiviyIv5lPZPQjX8ea36TYypw1KRUrUGDmLbrsSL78KJmZpf_i0U",
-      "image_credit": "Mansfield and Ashfield Chad",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT98iHfrdgjP6jjfzi5hcxBfH6R_lZFIJAWTgVDs4hWnbHlXDW3ep1FDvkD84",
+      "image_credit": "Car and Driver",
       "news": [
         {
-          "url": "https://www.chad.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
-          "title": "Jack Whitehall ending 2026 by being a Bad Influence in Nottingham",
-          "publisher": "Mansfield and Ashfield Chad",
+          "url": "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
+          "title": "Racing Bulls Driver Liam Lawson Talks Raptors and Country Songs Ahead of 2026 Vegas GP",
+          "publisher": "Car and Driver",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcjdYB4UPqiviyIv5lPZPQjX8ea36TYypw1KRUrUGDmLbrsSL78KJmZpf_i0U"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT98iHfrdgjP6jjfzi5hcxBfH6R_lZFIJAWTgVDs4hWnbHlXDW3ep1FDvkD84"
         },
         {
-          "url": "https://www.worksopguardian.co.uk/whats-on/jack-whitehall-ending-2026-by-being-a-bad-influence-in-nottingham-9365050",
-          "title": "Jack Whitehall ending 2026 by being a Bad Influence in Nottingham",
-          "publisher": "Worksop Guardian",
+          "url": "https://sports.yahoo.com/articles/lawson-hurt-costly-issue-las-094700974.html",
+          "title": "Lawson hurt by costly issue in Las Vegas: 'I need to figure it out'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcjdYB4UPqiviyIv5lPZPQjX8ea36TYypw1KRUrUGDmLbrsSL78KJmZpf_i0U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEpxbRrLonxUxC-wK5NSsd__bYIw6JEhX-6DcQ445j8Xv4ntzcMYWkjIxhns"
         },
         {
-          "url": "https://metro.co.uk/2026/11/19/jack-whitehall-responds-becky-hill-releases-class-row-diss-track-29803433/",
-          "title": "Jack Whitehall responds after Becky Hill releases 'class row' diss track",
-          "publisher": "Metro.co.uk",
+          "url": "https://www.formula1.com/en/video/we-did-the-basics-well-p6-lindblad-on-how-racing-bulls-maximised-las-vegas-qualifying.1882443880346255316",
+          "title": "'We did the basics well' - P6 Lindblad on how Racing Bulls maximised Las Vegas Qualifying",
+          "publisher": "Formula 1",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldD6Od64lYOSgUadHQ2_4jLstqUMIhNLq9euglFkyeZXkUKih4MQDmhB7Sgo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU4YhR5KdxW05z-Km4dm4P0VJbyrdQCPFOA5N_F4-lbh4bn0_hxCWPHA7v6zw"
         }
       ]
     },
     {
-      "query": "apple tv",
+      "query": "whitney peak",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:10:00Z",
+      "related_news_urls": [
+        "https://www.refinery29.com/en-us/2026/11/12022666/hunger-games-sunrise-on-the-reaping-review-maya-hawke-whitney-peak-interview",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
+        "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDh0n6Xufa-vJYJPds-kfDMxmWsN5FZqcwrRcyewQYDUxGPiE4nii6JWGGE2o",
+      "image_credit": "Refinery29",
+      "news": [
+        {
+          "url": "https://www.refinery29.com/en-us/2026/11/12022666/hunger-games-sunrise-on-the-reaping-review-maya-hawke-whitney-peak-interview",
+          "title": "“The Revolution Is Constant.” Sunrise On The Reaping's Maya Hawke & Whitney Peak On Its Urgent Message",
+          "publisher": "Refinery29",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDh0n6Xufa-vJYJPds-kfDMxmWsN5FZqcwrRcyewQYDUxGPiE4nii6JWGGE2o"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
+          "title": "Ethan Hawke and Uma Thurman's famous lookalike daughter wows in daring crop top – 9 months after surprise wedding",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU"
+        },
+        {
+          "url": "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
+          "title": "Ben Shapiro. . Maya Hawke Wants to Radicalize Your Children With The Hunger Games",
+          "publisher": "Facebook",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSFJNzuVYKL0R26DDiaHphst6BlgVQHNK8ka5ybXd94cgkV4ZzZZEvhRUQNm8"
+        }
+      ]
+    },
+    {
+      "query": "alvin wyatt",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:10:00Z",
+      "related_news_urls": [
+        "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
+        "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
+        "https://www.flcourier.com/news/b-cu-makes-coaching-change-days-before-florida-classic/article_248d936a-c4b9-41ff-8ac4-90c74fdb4e78.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A",
+      "image_credit": "Bethune-Cookman University Athletics",
+      "news": [
+        {
+          "url": "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
+          "title": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr.",
+          "publisher": "Bethune-Cookman University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A"
+        },
+        {
+          "url": "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
+          "title": "FAMU, rain dampen Alvin Wyatt’s return to Florida Classic as Rattlers win 27-14",
+          "publisher": "Orlando Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyi0EpayaBoMUOyHoIINeBbtNWjI1JqX70IoD5mR8D0Vl2_uVxaH6-OeEblN0"
+        },
+        {
+          "url": "https://www.flcourier.com/news/b-cu-makes-coaching-change-days-before-florida-classic/article_248d936a-c4b9-41ff-8ac4-90c74fdb4e78.html",
+          "title": "B-CU makes coaching change days before Florida Classic",
+          "publisher": "Florida Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9abDehtUdbQZfNaC4ghP17oLgsBiGUGrnPFEJOrQ7GnlXGljyRWmZ7475ySU"
+        }
+      ]
+    },
+    {
+      "query": "f1",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-22T04:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live",
+        "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
+        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOswSptfZr6orck1eRCcRkko0qmcMKO7NVVs3-dyLNnmTFJUjqK2Hc4aZqaQ",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live",
+          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOswSptfZr6orck1eRCcRkko0qmcMKO7NVVs3-dyLNnmTFJUjqK2Hc4aZqaQ"
+        },
+        {
+          "url": "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
+          "title": "Las Vegas Grand Prix LIVE! F1 race updates, commentary and results",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoFKiUeDkJVVfPTnD2AyLiqwCVulxiY7YjLWKnSmkKQVU8DujrPtlqOQm03W8"
+        },
+        {
+          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
+          "publisher": "Formula 1",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
+        }
+      ]
+    },
+    {
+      "query": "college football georgia standings",
       "approx_searches": "5000+",
-      "published_at": "2026-11-22T03:40:00Z",
+      "published_at": "2026-11-22T04:00:00Z",
       "related_news_urls": [
-        "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
-        "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
-        "https://www.reviewed.com/deals/features/prime-video-deals-black-friday-2026"
+        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-utah-vs-tcu-georgia-vs-south-carolina-virginia-tech-vs-miami-and-more-024248685.html",
+        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStU0607x1RPn3mXNPBPzOm0wyWRZUf3KlfaItYTYgNmb24lODzXCJ-GNAMMYA",
-      "image_credit": "Billboard",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
-          "title": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less",
-          "publisher": "Billboard",
+          "url": "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+          "title": "Week 12 live: Tracking top moments and best highlights",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStU0607x1RPn3mXNPBPzOm0wyWRZUf3KlfaItYTYgNmb24lODzXCJ-GNAMMYA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4"
         },
         {
-          "url": "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
-          "title": "Best Black Friday streaming deals 2026: Paramount+, Apple TV, HBO Max, and more already live",
-          "publisher": "Mashable",
+          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-utah-vs-tcu-georgia-vs-south-carolina-virginia-tech-vs-miami-and-more-024248685.html",
+          "title": "College football live updates, scores: Utah vs. TCU, Oklahoma State vs. Arizona State and more",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-YRl-wWry65lx6XgF1W9b5l6CT05nTUsI_yL6JgSArneUX7wzpC-11lk6fwI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjMvCgl8TbfQyEY7FzLIefotokFUh_6PrKOs1QVMSH4wk77juT9CSP9VIalKs"
         },
         {
-          "url": "https://www.reviewed.com/deals/features/prime-video-deals-black-friday-2026",
-          "title": "Prime Video just released its Black Friday deals and we're bringing the popcorn",
-          "publisher": "Reviewed",
+          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
+          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkM5UqHGXpbZFj1fleK9A2GbNwkXxrGazreET6Y7YM3tftS_s4GzIgvKUEG1Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
         }
       ]
     },
     {
-      "query": "f1 schedule",
+      "query": "sam hauser",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T04:00:00Z",
+      "related_news_urls": [
+        "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
+        "https://sports.yahoo.com/articles/boston-celtics-three-d-wing-215840202.html",
+        "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
+          "title": "Collective Buy-In has Celtics' Bench Among NBA's Best | Boston Celtics",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/boston-celtics-three-d-wing-215840202.html",
+          "title": "Boston Celtics: Three-and-D Wing Emerging as Key Contributor",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpbbOC3DIxVM6AbrmMhwJOVfdRCzB_AGX5NopvhYcShJRWdTTqL9YCgcTGl90"
+        },
+        {
+          "url": "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
+          "title": "Celtics can’t keep Sam Hauser on the bench for too much longer",
+          "publisher": "Hardwood Houdini",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-AQ34oLRkLCZ2gdETKVjRxXFAdF7VTYW4j03be0O-x4XxGSKAQ46RR2poJJw"
+        }
+      ]
+    },
+    {
+      "query": "jake fette",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:00:00Z",
+      "related_news_urls": [
+        "https://arizonasports.com/ncaa/arizona-state/asu-football/brock-osweiler-asu-jake-fette",
+        "https://www.azcentral.com/videos/sports/college/asu/2026/11/17/jake-fette-asu-football-performance/92818099007/",
+        "https://www.statepress.com/article/2026/11/sports-jake-fette-football-freshman"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXstHp9hf1G6-0l3p-ZP0z8xK1Y5j37wJ1UzANcAc5vWi2adBhGlgd_1SZZE",
+      "image_credit": "Arizona Sports",
+      "news": [
+        {
+          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/brock-osweiler-asu-jake-fette",
+          "title": "Brock Osweiler gives ASU quarterback Jake Fette high praise",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXstHp9hf1G6-0l3p-ZP0z8xK1Y5j37wJ1UzANcAc5vWi2adBhGlgd_1SZZE"
+        },
+        {
+          "url": "https://www.azcentral.com/videos/sports/college/asu/2026/11/17/jake-fette-asu-football-performance/92818099007/",
+          "title": "ASU freshman QB Jake Fette has kept mistakes to a minimum",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh46p79cgmX0M2xUzedLJRXdodxvLFJVoREfKzG5yWo2vintnck1ely3ZlFe4"
+        },
+        {
+          "url": "https://www.statepress.com/article/2026/11/sports-jake-fette-football-freshman",
+          "title": "Freshman phenom: Jake Fette's first year brings glimpse into future",
+          "publisher": "The State Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOScqQAdYfYas6zdhOpWr03JUGS1N2KVqfsDRNIl93TpadPy6sPWb0ZucBtWI"
+        }
+      ]
+    },
+    {
+      "query": "nina dobrev",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:00:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/kathryn-newton-nina-dobrev-adam-devine-sorry-about-my-friends-1237228476/",
+        "https://fangirlish.com/2026/11/20/nina-dobrevs-next-movie-is-sorry-about-my-friends-and-this-cast-has-our-attention/",
+        "https://cultbox.co.uk/news/sorry-about-my-friends-sets-cast"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEJXqAFKO-nEebMUjprUGD8UfBt9k_-eMrPebEndG6gNm1gthTvBBj-SRJmaU",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/kathryn-newton-nina-dobrev-adam-devine-sorry-about-my-friends-1237228476/",
+          "title": "Kathryn Newton, Nina Dobrev, Adam Devine & Scott Eastwood To Star In Rom-Com ‘Sorry About My Friends’",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEJXqAFKO-nEebMUjprUGD8UfBt9k_-eMrPebEndG6gNm1gthTvBBj-SRJmaU"
+        },
+        {
+          "url": "https://fangirlish.com/2026/11/20/nina-dobrevs-next-movie-is-sorry-about-my-friends-and-this-cast-has-our-attention/",
+          "title": "Nina Dobrev’s Next Movie Is Sorry About My Friends, and This Cast Has Our Attention",
+          "publisher": "Fangirlish",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsQ_0-LozV-1X7w2AbKVNxtY5SBFnWI_CqZKTWAvNKR-21fkTUM0V-H640Q4"
+        },
+        {
+          "url": "https://cultbox.co.uk/news/sorry-about-my-friends-sets-cast",
+          "title": "Sorry About My Friends sets cast",
+          "publisher": "CultBox",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRObh-osQJCxmJG8sq5UVJEIX2g70mpHwi-xizVqoA88Rv-j3OqL84fslOdfN4"
+        }
+      ]
+    },
+    {
+      "query": "f1 tv",
       "approx_searches": "2000+",
-      "published_at": "2026-11-22T03:40:00Z",
+      "published_at": "2026-11-22T03:50:00Z",
       "related_news_urls": [
         "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
-        "https://www.bbc.com/sport/formula1/articles/cx4gnlr603mqo",
-        "https://www.pcmag.com/news/how-to-watch-f1-las-vegas-grand-prix-live-for-free"
+        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b026d6c8f083dc0e39947c0",
+        "https://mashable.com/entertainment/las-vegas-gp-f1-live-stream-free"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuITFJ-e9vMxbTQY5XpU9BEcUy1nii6_uBv5Nkc44fK7Jrp7-arQMxa3berI",
       "image_credit": "Formula 1",
@@ -96,263 +306,53 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuITFJ-e9vMxbTQY5XpU9BEcUy1nii6_uBv5Nkc44fK7Jrp7-arQMxa3berI"
         },
         {
-          "url": "https://www.bbc.com/sport/formula1/articles/cx4gnlr603mqo",
-          "title": "Las Vegas Grand Prix practice, qualifying and race times, UK times, plus weather forecast",
-          "publisher": "BBC",
+          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b026d6c8f083dc0e39947c0",
+          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHAeQYphS6ZwyahDgEFDveTmi4ZDRyODlnOqXi1ZvWEcWHBrqS5JbvBfzOxAI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROtvmyYFSyH8PhvKFoYLctDskTyWC4j-FtF4F8gR3JhSC8mgyRRPX5XTxTYto"
         },
         {
-          "url": "https://www.pcmag.com/news/how-to-watch-f1-las-vegas-grand-prix-live-for-free",
-          "title": "Las Vegas Grand Prix Livestream: How to Watch Today's Formula 1 Race for Free",
-          "publisher": "PCMag",
+          "url": "https://mashable.com/entertainment/las-vegas-gp-f1-live-stream-free",
+          "title": "I'm watching the Las Vegas GP for free this weekend — how to live stream F1 for free",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZVZGdn1AYjvLP-Bh2hLZWIsuYXu5GLPb-wFow3CgjWRA0OeO2xIJnLBdMPQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrih_ZwDQQ2NFUEqvr2ILn_y-4fYqbHriVyt8gq3HQ6_MSfzJ4o834GTIRvo"
         }
       ]
     },
     {
-      "query": "las vegas weather",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T03:40:00Z",
+      "query": "drew mestemaker",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T03:50:00Z",
       "related_news_urls": [
-        "https://www.mercedesamgf1.com/news/rain-clouds-opening-day-picture-in-las-vegas",
-        "https://www.reviewjournal.com/local/weather/showers-hit-las-vegas-valley-with-cooler-than-normal-temps-3916592/",
-        "https://www.ktnv.com/weather/a-pleasantly-cool-weekend-in-southern-nevada"
+        "https://sports.yahoo.com/articles/drew-mestemaker-injury-oklahoma-state-120354777.html",
+        "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-active-asu",
+        "https://www.si.com/college/oklahomastate/football/oklahoma-state-qb-drew-mestemaker-game-time-decision-for-arizona-state-game"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRPJXZOyTGrKeb_04ZfCP5jhb074_S3gYGc0rVfGsdEvvKbAnZKrKZLpro7Vc",
-      "image_credit": "Mercedes-AMG PETRONAS F1 Team",
-      "news": [
-        {
-          "url": "https://www.mercedesamgf1.com/news/rain-clouds-opening-day-picture-in-las-vegas",
-          "title": "2026 Las Vegas Grand Prix: Rain Clouds Opening Day Picture in Las Vegas",
-          "publisher": "Mercedes-AMG PETRONAS F1 Team",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRPJXZOyTGrKeb_04ZfCP5jhb074_S3gYGc0rVfGsdEvvKbAnZKrKZLpro7Vc"
-        },
-        {
-          "url": "https://www.reviewjournal.com/local/weather/showers-hit-las-vegas-valley-with-cooler-than-normal-temps-3916592/",
-          "title": "Showers hit Las Vegas Valley with cooler than normal temps",
-          "publisher": "Las Vegas Review-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDb66i6SjhutKMhuN9aIGKBg_wXaWeq1dYcLIaaiaiAK7GlXbZ0lXxFfJ0lvw"
-        },
-        {
-          "url": "https://www.ktnv.com/weather/a-pleasantly-cool-weekend-in-southern-nevada",
-          "title": "A Pleasantly Cool Weekend in Southern Nevada",
-          "publisher": "www.ktnv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh38xty2gcP-GANBPXu9Q6sVJMu5cLKCbNwAUTevLzY6b1OV9Ny7pRlD0J-uE"
-        }
-      ]
-    },
-    {
-      "query": "zach lavine",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T03:40:00Z",
-      "related_news_urls": [
-        "https://www.fantasypros.com/nba/news/621666/zach-lavine-fills-stat-sheet-friday-against-lakers.php",
-        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/zach-lavine-darius-acuff-jr-phoenix-suns/1981373/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-lavine-scores-18-points-in-return-wednesday"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvcth9BJ9PfCkzh0Ntq-DWyQMszvjo9GmInrhJ0-aU7oIW05MsMQAcerFs5ko",
-      "image_credit": "FantasyPros",
-      "news": [
-        {
-          "url": "https://www.fantasypros.com/nba/news/621666/zach-lavine-fills-stat-sheet-friday-against-lakers.php",
-          "title": "Zach LaVine fills stat sheet Friday against Lakers",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvcth9BJ9PfCkzh0Ntq-DWyQMszvjo9GmInrhJ0-aU7oIW05MsMQAcerFs5ko"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/zach-lavine-darius-acuff-jr-phoenix-suns/1981373/",
-          "title": "Zach LaVine, Kings hope Darius Acuff Jr. won't be negatively impacted by losing",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThxtehlCSVUQjtgQDVJRWQnLmJxYDKMob4tJ_1_pLX_Ra8zjsE2GyxyBwvabQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-lavine-scores-18-points-in-return-wednesday",
-          "title": "Zach LaVine scores 18 points in return Wednesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1KqSxFPwMSfQTFPOuMrqegEcXci34k3-FXNrzZ8ivpmgI9yfrPyL8wIqq1BM"
-        }
-      ]
-    },
-    {
-      "query": "donald sutherland",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T03:40:00Z",
-      "related_news_urls": [
-        "https://www.toy-people.com/en/?p=116835",
-        "https://www.worldofreel.com/blog/2026/11/20/james-gray-reveals-what-his-shorter-ad-astra-cut-looks-like-less-narration-more-ruth-negga-and-donald-sutherland-and-a-different-ending",
-        "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJRo3gYDSxnzblOmG4i5pASZT1OZBpK6IGTE0k0r-jzRiSDG3KFYxB6Rua92o",
-      "image_credit": "玩具人 TOY PEOPLE",
-      "news": [
-        {
-          "url": "https://www.toy-people.com/en/?p=116835",
-          "title": "\"Ad Astra\" Earned Raves, but James Gray Has Disowned It for Years — Now He Wants a Shorter Director's Cut After Brad Pitt Pushed Changes",
-          "publisher": "玩具人 TOY PEOPLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJRo3gYDSxnzblOmG4i5pASZT1OZBpK6IGTE0k0r-jzRiSDG3KFYxB6Rua92o"
-        },
-        {
-          "url": "https://www.worldofreel.com/blog/2026/11/20/james-gray-reveals-what-his-shorter-ad-astra-cut-looks-like-less-narration-more-ruth-negga-and-donald-sutherland-and-a-different-ending",
-          "title": "James Gray Says His ‘Ad Astra’ Cut Was 12 Minutes Shorter, Had “Considerably Less Narration” and a Bleaker Ending",
-          "publisher": "World of Reel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQiJSDxFeBtas4dlXoRB-WksrFWM1NDXoC0HXSJAzJpcHXlw7zDbS5Ajcyrlk"
-        },
-        {
-          "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
-          "title": "Box Office: 'Hunger Games: Sunrise on Reaping' Opening to $120M, 4th Best Series",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdiQNZYKYGpUTyxNndg5sFOSc6fi0MIJBM-7vk0bxYwLNKu3S4RT52vT80w28"
-        }
-      ]
-    },
-    {
-      "query": "victor wembanyama",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T03:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/recap/_/gameId/401910027",
-        "https://www.nba.com/watch/video/wemby-joins-kd-as-the-only-players-since-1997-98-with-30-pts-10-reb-2-stl-and-2-blk-in-a-half",
-        "https://bleacherreport.com/articles/25536221-wemby-makes-nba-history-rare-stats-32-point-1st-half-spurs-vs-pelicans"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuvzxv26PCGSeQrc2j9RSnnQTnfkvs4vmkeuTlVjifthU1TQkLwKxJuaCcR0M",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401910027",
-          "title": "Spurs 114-91 Pelicans (Nov 21, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuvzxv26PCGSeQrc2j9RSnnQTnfkvs4vmkeuTlVjifthU1TQkLwKxJuaCcR0M"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/wemby-joins-kd-as-the-only-players-since-1997-98-with-30-pts-10-reb-2-stl-and-2-blk-in-a-half",
-          "title": "Victor Wembanyama joins Kevin Durant in rare first-half company",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQZYL9yoHzVbavrOSYa-wpI8yJwRt762Ief0hXlZUeYNbUkn0afmqPdz9dZDg"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536221-wemby-makes-nba-history-rare-stats-32-point-1st-half-spurs-vs-pelicans",
-          "title": "Wemby Makes NBA History with Rare Stats in 32-Point 1st Half for Spurs vs. Pelicans",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0k40I0wUN6L9kOWkhzqpPKkH6fsyPLiAoxB-UadstWqwGLakZv6qeDHflLvU"
-        }
-      ]
-    },
-    {
-      "query": "boubacar traore",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T03:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/way-too-early-2027-nfl-170006243.html",
-        "https://www.nflmockdraftdatabase.com/news/edge-power-rankings-2026-11-09",
-        "https://www.centraloregondaily.com/sports/seattle_seahawks/indiana-wide-receiver-is-seattles-ideal-2027-nfl-draft-target/article_850db54d-cba3-55ef-a764-fce5cc94a6b2.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThBq7X4Diluxg3IPpl0-UouWgV1af6WXrFaV352xrA86d_YX7A_5wIl4luhPk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA_ismSEQkZteO6z68cdqGUlXNPrha_jlBGiZ4f7hypH7ZCkK7LndaLeraeA",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/way-too-early-2027-nfl-170006243.html",
-          "title": "Way-Too-Early 2027 NFL Draft EDGE Rankings: 2 Elite Prospects Stealing the Spotlight",
+          "url": "https://sports.yahoo.com/articles/drew-mestemaker-injury-oklahoma-state-120354777.html",
+          "title": "Drew Mestemaker injury update: Is Oklahoma State football QB playing vs Arizona State?",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThBq7X4Diluxg3IPpl0-UouWgV1af6WXrFaV352xrA86d_YX7A_5wIl4luhPk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA_ismSEQkZteO6z68cdqGUlXNPrha_jlBGiZ4f7hypH7ZCkK7LndaLeraeA"
         },
         {
-          "url": "https://www.nflmockdraftdatabase.com/news/edge-power-rankings-2026-11-09",
-          "title": "2027 EDGE Power Rankings: Rhodes and Nichols Arrive Two Tiers Apart (Week of November 9, 2026)",
-          "publisher": "NFL Mock Draft Database",
+          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-active-asu",
+          "title": "Oklahoma State's Drew Mestemaker active vs. ASU",
+          "publisher": "Arizona Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNsP2gMXhI-StLtUvcE4CK-87ib8bEts5TU1EBVIiEu1rmy8togh0P7Bw1wJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegR_Wq8UrMgrpHPcXC8ewtLUZklkXeVAe27JlVkB5pWZFjv5kCK77lTGsBzE"
         },
         {
-          "url": "https://www.centraloregondaily.com/sports/seattle_seahawks/indiana-wide-receiver-is-seattles-ideal-2027-nfl-draft-target/article_850db54d-cba3-55ef-a764-fce5cc94a6b2.html",
-          "title": "Indiana wide receiver is Seattle's ideal 2027 NFL draft target",
-          "publisher": "Central Oregon Daily",
+          "url": "https://www.si.com/college/oklahomastate/football/oklahoma-state-qb-drew-mestemaker-game-time-decision-for-arizona-state-game",
+          "title": "Oklahoma State QB Drew Mestemaker Game-Time Decision for Arizona State Game",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9YBkbWPUKIyvN3W_wuK_jCbutCZUgK39oHUw4YQSzV_SwE30Q0XfeMShZQ0o"
-        }
-      ]
-    },
-    {
-      "query": "avery johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T03:30:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/kansas-state/article/kansas-state-college-football-basketball-k-state-big-12-daily-delivery-collin-klein-tim-fitzgerald-big-12-nil-avery-johnson-fifth-year-292953836/",
-        "https://www.on3.com/teams/kansas-state-wildcats/news/what-im-hearing-on-discussions-between-kansas-state-and-avery-johnson/",
-        "https://1350kman.com/2026/11/k-state-balancing-finish-to-season-with-look-toward-future-johnsons-potential-5th-year/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfVgq9lXkj8EqG5ilU1OSiPUsv4tUI_GTN9KH92JHvJX4id_x5RYK-E5Kzc5U",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/kansas-state/article/kansas-state-college-football-basketball-k-state-big-12-daily-delivery-collin-klein-tim-fitzgerald-big-12-nil-avery-johnson-fifth-year-292953836/",
-          "title": "Will Avery Johnson return to Kansas State for his final season? | Daily Delivery",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfVgq9lXkj8EqG5ilU1OSiPUsv4tUI_GTN9KH92JHvJX4id_x5RYK-E5Kzc5U"
-        },
-        {
-          "url": "https://www.on3.com/teams/kansas-state-wildcats/news/what-im-hearing-on-discussions-between-kansas-state-and-avery-johnson/",
-          "title": "What I'm hearing on discussions between Kansas State and Avery Johnson",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYhnfF7s5QfTEXjdcIc-S1Zxmwz0xVcdZOiIMSeq3X1mmMxAcMpxWkFTTT45w"
-        },
-        {
-          "url": "https://1350kman.com/2026/11/k-state-balancing-finish-to-season-with-look-toward-future-johnsons-potential-5th-year/",
-          "title": "K-State balancing finish to season with look toward future, Johnson’s potential 5th year",
-          "publisher": "News Radio KMAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk1eKX8olAsrXJXQwDWzy94JsJYNTXIBO6g4lWO7tLHrRhK_kRrA0HWcKsejU"
-        }
-      ]
-    },
-    {
-      "query": "keanu reeves",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T03:30:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/kim-kardashian-is-dressing-for-team-lewis-hamilton-2026-11-21",
-        "https://pagesix.com/2026/11/21/photos/celebrities-at-f1-las-vegas-grand-prix-2026-see-all-the-stars/",
-        "https://people.com/go-inside-people-x-instyle-formula-1-grand-prix-party-2026-12268391"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY8Bh0LlcKFB4HCjFS51PW6lIY1MpNJEFtvea5RLr2eN0CAvz7MyhoyJDcrEY",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/kim-kardashian-is-dressing-for-team-lewis-hamilton-2026-11-21",
-          "title": "Kim Kardashian Is Dressing for Team Lewis Hamilton",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY8Bh0LlcKFB4HCjFS51PW6lIY1MpNJEFtvea5RLr2eN0CAvz7MyhoyJDcrEY"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/21/photos/celebrities-at-f1-las-vegas-grand-prix-2026-see-all-the-stars/",
-          "title": "Celebrities at F1 Las Vegas Grand Prix 2026: See all the stars",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5_ppqerPj2UWtQf975PEU_kqAjUFsDEq4DIXNmPWSzpj421BwtNEM9uSVZ2w"
-        },
-        {
-          "url": "https://people.com/go-inside-people-x-instyle-formula-1-grand-prix-party-2026-12268391",
-          "title": "Go Inside the Star-Studded PEOPLE x InStyle F1 Grand Prix Party Trackside in Las Vegas (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdRDwcQ25MkASeAvGqtrQnfs0OZgu8PUB4qpxXSgxDjBZikpcQx-95nBD71tI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmqyIQK7tnnsgOVGlejA9UoMMr8-swbS8KdfOy4tj7sOpBl_YPaTm2bEF02EM"
         }
       ]
     }
