@@ -1,0 +1,11 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f7f4f0" />
+  <line x1="40" y1="180" x2="380" y2="180" stroke="#312722" stroke-width="2" />
+  <line x1="40" y1="180" x2="40" y2="20" stroke="#312722" stroke-width="2" />
+  <rect x="80" y="120" width="40" height="60" fill="#b83b32" />
+  <rect x="160" y="80" width="40" height="100" fill="#b83b32" />
+  <rect x="240" y="140" width="40" height="40" fill="#b83b32" />
+  <rect x="320" y="100" width="40" height="80" fill="#b83b32" />
+  <text x="200" y="190" font-family="system-ui" font-size="12" fill="#312722" text-anchor="middle">Category</text>
+  <text x="15" y="100" font-family="system-ui" font-size="12" fill="#312722" transform="rotate(-90 15,100)">Value</text>
+</svg>
