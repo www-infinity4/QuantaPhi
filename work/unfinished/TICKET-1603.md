@@ -362,3 +362,13 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Evidence:** RED assertion/test commit `665087197462d109d308c9a59ca22aeea974a538`; source implementation commit `c2f3cb81fe98b92a1e95446e3e6ea932c81b83ea`. Focused test execution, exact-head CI, independent review, merge, deployment, browser and physical Android are **not yet verified** as of this checkpoint.
 - **Progress (this video subset only):** 2/5 acceptance tracks source+test authored (estimated 40%); remaining focused/CI pass, guarded merge, and deployed live/Android acceptance. **Parent #1603 overall progress unchanged.**
 - **Session:** 1 scoped ChatGPT/GitHub connector session; lease_id `null` (no runtime lease claimed); **next action:** confirm focused exact-head test and CI status for PR, review and merge only if policy permits, then verify deployed source and Android playback.
+
+
+## Owner-submitted YouTube Quick Card · 2026-11-22 · klFqPeYPJ-Y
+
+- Source: https://youtu.be/klFqPeYPJ-Y?is=tz0VyqMgszGB3tKZ; canonical watch https://www.youtube.com/watch?v=klFqPeYPJ-Y.
+- Observed public page title: **After shower routine** (2026-11-22). Uploader identity, channel ID, upload date, embedding, media rights, complete channel archive and 21+ classification are **not independently verified**.
+- Scope: Add one unique owner-linked source to the existing Public/Media Oracle YouTube card and owner-video View More feed. Keep optional YouTube-hosted click-to-play, stop, thumbnail, original fallback, no rehost, no Star Coin/payout/mint write, no 21+ or Family TV misclassification.
+- Work branch: `feat/owner-youtube-klfqpeypjy-1603-20261122` pinned from main `b8a4702561b57667f9ca2981e2f120014e453a60`; no coordinator lease claimed; this is a bounded repository edit, not a persistent autonomous agent execution.
+- Verification plan: one idempotent source record and focused Node regression; inspect exact-head CI, independently review, verify PR mergeability before permitted merge, then Cloudflare and Android acceptance. Source edits are **not** deployment receipts.
+- State at source checkpoint: code proposed; CI, merge, deployment and physical Android verification pending. Next action: inspect exact-head PR workflow after submission.
