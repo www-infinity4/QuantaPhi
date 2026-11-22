@@ -3,41 +3,165 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T10:31:19.205016Z",
+  "checked_at": "2026-11-22T11:01:22.025560Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sam houser",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T09:30:00Z",
+      "query": "juventus vs venezia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T10:40:00Z",
       "related_news_urls": [
-        "https://www.ft.com/content/3333e0cf-c3d8-4836-92c7-a84878e802a3?syn-25a6b1a6=1",
-        "https://www.gq.com/story/houser-grand-theft-auto-interview",
-        "https://www.dailymail.com/video/news/video-3747135/Video-How-two-British-public-school-brothers-created-Grand-Theft-Auto.html"
+        "https://sports.yahoo.com/articles/official-juventus-team-face-venezia-102900348.html",
+        "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092",
+        "https://www.besoccer.com/new/gondolas-take-on-water-in-turin-1442591"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgtHC56AR7ttI8uKE_XrRJYufnc29-X9secLu8pv4PABR4sUIZwDgf6g1OmYA",
-      "image_credit": "Financial Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KSmRTNcz6GGgn8yS2BNgIH4PY33OXyLKtXerzNgAVeEH9t3V4EKCjITLXso",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.ft.com/content/3333e0cf-c3d8-4836-92c7-a84878e802a3?syn-25a6b1a6=1",
-          "title": "Sam Houser, the Rockstar gamer behind ‘Grand Theft Auto’",
-          "publisher": "Financial Times",
+          "url": "https://sports.yahoo.com/articles/official-juventus-team-face-venezia-102900348.html",
+          "title": "Official Juventus team to face Venezia – Luiz and Alajbegovic start",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgtHC56AR7ttI8uKE_XrRJYufnc29-X9secLu8pv4PABR4sUIZwDgf6g1OmYA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KSmRTNcz6GGgn8yS2BNgIH4PY33OXyLKtXerzNgAVeEH9t3V4EKCjITLXso"
         },
         {
-          "url": "https://www.gq.com/story/houser-grand-theft-auto-interview",
-          "title": "The GTA Files: My Long-Lost Interview With the Brothers Who Founded Rockstar",
-          "publisher": "GQ",
+          "url": "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092",
+          "title": "A Spalletti no le afectan los comentarios de Conte",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3pJl_D6bKBz2X58-VzeopNIk9UbhMIjIILpP7Np-j2vG41KoDgNQwwW4zSTk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLR4xECn1t_fjs-e_ccbLHM7lSYOtr3hwzrSPLAHVGCNppCxns__YGGlICXiI"
         },
         {
-          "url": "https://www.dailymail.com/video/news/video-3747135/Video-How-two-British-public-school-brothers-created-Grand-Theft-Auto.html",
-          "title": "Video: How two 'posh' British brother went on to create Grand Theft Auto",
-          "publisher": "Daily Mail",
+          "url": "https://www.besoccer.com/new/gondolas-take-on-water-in-turin-1442591",
+          "title": "Gondolas take on water in Turin",
+          "publisher": "BeSoccer Livescore",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpJoy05Y9iOQVBjQIdBrN9EoF9dHYgD-bWSb7xISAnmCRPMU3Gq7qpJocp2xA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTm65qdmfwkSwMBEgRe3VgEVNr_pHLVvIHFdCAnNdGmKuTWqo1kgRXvZgq-0"
+        }
+      ]
+    },
+    {
+      "query": "philly marathon 2026",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-22T10:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
+        "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
+        "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA",
+      "image_credit": "NBC10 Philadelphia",
+      "news": [
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
+          "title": "Two storms to track",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA"
+        },
+        {
+          "url": "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
+          "title": "Philadelphia gears up for busy weekend with marathon, Eagles game and possible stormy weather",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDbz2_H9kcozMO_yCA1C18dyONs0fxGMeuYml6i__KLcZT2GKwbKKDWyH17GA"
+        },
+        {
+          "url": "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel",
+          "title": "Rain moves through Philadelphia region ahead of early Thanksgiving travel",
+          "publisher": "FOX 29 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhom5TgsZkwSyHsMKeGKTB4LZTdVBB8-3iN1KESoAu1hR_eLQUl0ALTn3YzaA"
+        }
+      ]
+    },
+    {
+      "query": "anne heche",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T10:30:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/22/anne-heche-creditors-object-to-her-son-settlement-petition/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9LeyfFO7_7Z9BxDNNAb0zxcm0krHKi-B23aFIhelfwaBta1JUQrAnopByXo",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/22/anne-heche-creditors-object-to-her-son-settlement-petition/",
+          "title": "Anne Heche Creditors Object to Her Son's Petition For Settlement",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9LeyfFO7_7Z9BxDNNAb0zxcm0krHKi-B23aFIhelfwaBta1JUQrAnopByXo"
+        }
+      ]
+    },
+    {
+      "query": "espncricinfo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T10:30:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
+        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-new-zealand-hope-of-wellington-great-escape-as-visitors-batters-dominate/WNJ4ID4DTRG2BJHO6LWI4WKTV4/",
+        "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNS13JwBuPE2HYm8qh9ariPeS5r9N5q9P7jpUc-Xh5I-zscB0LS7gAubx6904",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 1st Test",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNS13JwBuPE2HYm8qh9ariPeS5r9N5q9P7jpUc-Xh5I-zscB0LS7gAubx6904"
+        },
+        {
+          "url": "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-new-zealand-hope-of-wellington-great-escape-as-visitors-batters-dominate/WNJ4ID4DTRG2BJHO6LWI4WKTV4/",
+          "title": "Black Caps hope for Wellington great escape as India dominate day four",
+          "publisher": "NZ Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs5ryKWmbznMDSwLS9G5JisnLEXcCBiQ0BkUnT84WaFGZqnc7t3a14uNl2i84"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256",
+          "title": "India breaks New Zealand Test record with monster innings in Wellington",
+          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTszaQasJ4y5oRd0-lv78E57CgUF1edXB7bOH9w5EbU_XGhkX7-H3zqccDmvts"
+        }
+      ]
+    },
+    {
+      "query": "atomic clock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T09:30:00Z",
+      "related_news_urls": [
+        "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
+        "https://demokratis.co.id/en/quantum-superposition-time-detection",
+        "https://scitechdaily.com/scientists-uncover-a-bizarre-quantum-effect-where-time-could-flow-at-different-speeds-simultaneously/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLSF9HUFZ6R_to_UbhjzU292byF_uVoI461FeFvSNU9qSKk_Cb0NiumDOyhjc",
+      "image_credit": "Science Daily",
+      "news": [
+        {
+          "url": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
+          "title": "Time may be far stranger than we realize. Scientists have a way to test it",
+          "publisher": "Science Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLSF9HUFZ6R_to_UbhjzU292byF_uVoI461FeFvSNU9qSKk_Cb0NiumDOyhjc"
+        },
+        {
+          "url": "https://demokratis.co.id/en/quantum-superposition-time-detection",
+          "title": "Researchers Develop Method to Detect Quantum Superposition of Time",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNKHGnghzVaP6SBrtMp6T1fmnNIllasOCRL5LFpiypxY2jkxFQYdETYbgi5RE"
+        },
+        {
+          "url": "https://scitechdaily.com/scientists-uncover-a-bizarre-quantum-effect-where-time-could-flow-at-different-speeds-simultaneously/",
+          "title": "Scientists Uncover a Bizarre Quantum Effect Where Time Could Flow at Different Speeds Simultaneously",
+          "publisher": "SciTechDaily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitohK2iUATvLPgPDCu17DWu03pr0rZg5CtzZ9yv0rsYN9UVtuYE1jzOcTV6w"
         }
       ]
     },
@@ -213,146 +337,6 @@
           "publisher": "Engadget",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxBYnaBmtO8GNPIDRYPesYAynqnjhdzLgW-mDbqoNhrCRcNwDymxILfB1G_ZQ"
-        }
-      ]
-    },
-    {
-      "query": "a24",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T08:40:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/20/a24-box-office-hbo-max.html",
-        "https://foro3d.com/en/2026/noviembre/a24-amplia-su-catalogo-televisivo-en-2026-con-series-para-casi-todas-l.html",
-        "https://www.indiewire.com/news/business/a24-tv-division-istrong-2026-crystal-lake-1235228517/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpA2hpuO6PBATvCVZNBUMNWEkVoMmp4ZjvHZglCw2CcumuhP1DD873lYQOFgI",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/20/a24-box-office-hbo-max.html",
-          "title": "A24 is having a great year at the box office. That could give HBO Max a streaming edge",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpA2hpuO6PBATvCVZNBUMNWEkVoMmp4ZjvHZglCw2CcumuhP1DD873lYQOFgI"
-        },
-        {
-          "url": "https://foro3d.com/en/2026/noviembre/a24-amplia-su-catalogo-televisivo-en-2026-con-series-para-casi-todas-l.html",
-          "title": "A24 expands its television catalog in 2026 with series for almost every platform",
-          "publisher": "Foro3D",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4Q6_CJCXgPWkNiOiZkMq6H62lxCidq8aoE_kBd1PSe8EZFoUn_0BS442g5rQ"
-        },
-        {
-          "url": "https://www.indiewire.com/news/business/a24-tv-division-istrong-2026-crystal-lake-1235228517/",
-          "title": "A24’s TV Division Is Quietly Having as Strong a Year as Its Film Team",
-          "publisher": "IndieWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcgiLkBHLUscoJ6RmKf2dx0B5Bb9j1gOjqAS-Z8J2qDXBAocecQmNPJS29Vr4"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 money glitch",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T08:30:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-money-glitch/",
-        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-        "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDEO9o_lqdu8X_GaSVY0uv2qQoY3LNfwI6mznmEmQyCG5mLQcQQbAhUk9xwM",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-money-glitch/",
-          "title": "GTA 6 Money Glitch – How to Get Unlimited Money",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDEO9o_lqdu8X_GaSVY0uv2qQoY3LNfwI6mznmEmQyCG5mLQcQQbAhUk9xwM"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
-        },
-        {
-          "url": "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html",
-          "title": "GTA 6 senior design director confirms the ‘tools’ players acquire in the open world through the fence systems can be used again after completing jobs — ‘Even in the cases where we ",
-          "publisher": "Yahoo Tech",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5ekVVynt7yLp9uxv7BzSnr1o66qmiBKKQGV2N6arXOfQ6wkgMtJ8kvVCPUCQ"
-        }
-      ]
-    },
-    {
-      "query": "travel",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T08:20:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/travel/2026/11/21/best-times-drive-thanksgiving-road-trips/",
-        "https://www.cnbc.com/select/drive-fly-travel-costs/",
-        "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgo1iXnPf_HW7hyWu-TVbvuQkTVaXWC1F5t9uR2HJhfHQvFMduOU9BLZrc8Ao",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/travel/2026/11/21/best-times-drive-thanksgiving-road-trips/",
-          "title": "When to hit the road for the least-bad Thanksgiving traffic",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgo1iXnPf_HW7hyWu-TVbvuQkTVaXWC1F5t9uR2HJhfHQvFMduOU9BLZrc8Ao"
-        },
-        {
-          "url": "https://www.cnbc.com/select/drive-fly-travel-costs/",
-          "title": "Traveling soon? Here’s how to decide whether to fly or drive",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNOReOYL1kbRO5k1xu8pWtQjCqFHBRPq6UrPJ4IEehiWMk-yjdOtQ68f6uHU8"
-        },
-        {
-          "url": "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/",
-          "title": "Thanksgiving Travel Expected to Dip Slightly Compared to Last Year",
-          "publisher": "AAA Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM-TWXs6PNQqPcAAgzTjwHTxvlfJqiyy3IQGNwtB_NcEyPG0vAJgks7DJ9YJE"
-        }
-      ]
-    },
-    {
-      "query": "skip bayless",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T08:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
-        "https://www.limapagi.id/en/bayless-vikings-49ers-prediction",
-        "https://billswire.usatoday.com/story/sports/nfl/bills/2026/11/20/skip-bayless-takes-bills-josh-allen-as-his-nfl-mvp-on-first-take/92882959007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
-          "title": "Skip Bayless stunned by what Josh Allen has admitted to doing for the Bills",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8"
-        },
-        {
-          "url": "https://www.limapagi.id/en/bayless-vikings-49ers-prediction",
-          "title": "Bayless Backs Vikings to Beat 49ers Despite Cousins Doubts",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSmE1uw0Lg0oZRQu--b2MxIRpPlNVcDmKjfFPqXCfOpvcxG23uWhNNsp0E7tg"
-        },
-        {
-          "url": "https://billswire.usatoday.com/story/sports/nfl/bills/2026/11/20/skip-bayless-takes-bills-josh-allen-as-his-nfl-mvp-on-first-take/92882959007/",
-          "title": "Skip Bayless takes Bills' Josh Allen as his NFL MVP on 'First Take' (video)",
-          "publisher": "Bills Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacZ4VggprUXzetFxZ1VhaZT4efG6p_6efq3LmeDNhnjyp_WZS9VEKFkFZWvM"
         }
       ]
     }
