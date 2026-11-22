@@ -3,27 +3,271 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T11:01:22.025560Z",
+  "checked_at": "2026-11-22T11:31:12.779963Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "juventus vs venezia",
+      "query": "granada vs real madrid",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T11:10:00Z",
+      "related_news_urls": [
+        "https://www.realmadrid.com/en-US/news/football/womens-team/fixtures/granada-real-madrid-a-cerrar-noviembre-con-una-victoria-en-la-liga-f-21-11-2026",
+        "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVFwWuzEIKifmAP_Cn5QjJx9R8Fm8Af5xzibbWZjP0qKN5vjWZ0WqlqCyt4",
+      "image_credit": "Real Madrid CF | Web Oficial",
+      "news": [
+        {
+          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/fixtures/granada-real-madrid-a-cerrar-noviembre-con-una-victoria-en-la-liga-f-21-11-2026",
+          "title": "Granada-Real Madrid: aiming for victory before the break",
+          "publisher": "Real Madrid CF | Web Oficial",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVFwWuzEIKifmAP_Cn5QjJx9R8Fm8Af5xzibbWZjP0qKN5vjWZ0WqlqCyt4"
+        },
+        {
+          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026",
+          "title": "Real Madrid Squad List Against Granada",
+          "publisher": "Real Madrid CF | Web Oficial",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIdK1SdPmrxKK8455HzqKFg-0QM5Kcz1IiKpAPL27afe0xGYobtiYKr2FzE24"
+        }
+      ]
+    },
+    {
+      "query": "ipad black friday deals",
       "approx_searches": "200+",
+      "published_at": "2026-11-22T11:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
+        "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
+        "https://appleinsider.com/articles/26/11/22/airpods-pro-3-plunge-to-169-airpods-max-2-drop-to-419-for-black-friday-week"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
+          "title": "This AirPods Pro 3 deal is the one to grab before Black Friday",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
+          "title": "I’ve tested all of Apple’s AirPods. These are the 10 best early Black Friday deals | CNN Underscored",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQOqjqK0CdeGevNBcbh1KLqcTu8hvA4Ep9IdOuf-tEorzJx1I8anbkDh4dX4M"
+        },
+        {
+          "url": "https://appleinsider.com/articles/26/11/22/airpods-pro-3-plunge-to-169-airpods-max-2-drop-to-419-for-black-friday-week",
+          "title": "Get AirPods Pro 3 for $169 in Amazon's early Black Friday Sale",
+          "publisher": "AppleInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQda_KZbEcbaJcRBF3YOLdbTqBrKCdPqp-1yTz4QzoHWQlqkOXrVseNXfH-2D8"
+        }
+      ]
+    },
+    {
+      "query": "pakistan a vs india a",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T11:00:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/ind-vs-pak-asia-cup-rising-stars-pakistan-a-opt-to-bat-against-india-a-both-sides-unchanged-1563603",
+        "https://sports.yahoo.com/articles/ind-vs-pak-asia-cup-103413698.html",
+        "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlnajtCncnhICVXws7_qR-FIhthaiG-VD8GiE371Zh_CIhhcw0rn5v-KSfVwc",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/ind-vs-pak-asia-cup-rising-stars-pakistan-a-opt-to-bat-against-india-a-both-sides-unchanged-1563603",
+          "title": "Pakistan A opt to bat against India A; both teams unchanged",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlnajtCncnhICVXws7_qR-FIhthaiG-VD8GiE371Zh_CIhhcw0rn5v-KSfVwc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ind-vs-pak-asia-cup-103413698.html",
+          "title": "IND vs PAK Asia Cup Rising Stars toss 'cheating' controversy: Abdul Samad questions match referee's call as Tilak Varma watches",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqWp5JleuN_ky2s_ibaVyZh0UWyX_MdVCxRjKupjC0swd_lRiabVrw0eX1QM"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms",
+          "title": "India A vs Pakistan A Live Score, ACC Mens Asia Cup Rising Stars 2026: India aim to mount pressure after Ayush Badoni, Harshit Rana ruin Pakistan's perfect start",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMk-AtDu7jSIvHj90cVbvT4_0RBydr_jvqNcBFA17om98FROEcSj5xwZthjaM"
+        }
+      ]
+    },
+    {
+      "query": "granada cf - real madrid",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T11:00:00Z",
+      "related_news_urls": [
+        "https://as.com/futbol/femenino/granada-real-madrid-hoy-en-directo-ultima-hora-de-la-primera-division-femenina-en-vivo-f202611-d/",
+        "https://www.granadahoy.com/granadacf/adrian-martin-esperamos-disfrutar-domingo_0_2008556102.html",
+        "https://www.ideal.es/granadacf/dos-futbolistas-cedidas-amenazan-real-madrid-sabemos-20261121190746-nt.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTfT9PVQ_MIdoAtFP86pBY8gWM_L-SZhmvRbF9gY28rc1h7e3MeM9xpgpPrws",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/futbol/femenino/granada-real-madrid-hoy-en-directo-ultima-hora-de-la-primera-division-femenina-en-vivo-f202611-d/",
+          "title": "Granada - Real Madrid, hoy en directo: última hora de la Primera División femenina en vivo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTfT9PVQ_MIdoAtFP86pBY8gWM_L-SZhmvRbF9gY28rc1h7e3MeM9xpgpPrws"
+        },
+        {
+          "url": "https://www.granadahoy.com/granadacf/adrian-martin-esperamos-disfrutar-domingo_0_2008556102.html",
+          "title": "Adrián Martín: “Esperamos disfrutar de un domingo muy bonito con nuestra afición”",
+          "publisher": "Granada Hoy",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWmwRjCLrdJ10EUzKcSJ9yEh7en5uf3hK2AJQJCoDljAXY5OZ-OhVQP99Y8DE"
+        },
+        {
+          "url": "https://www.ideal.es/granadacf/dos-futbolistas-cedidas-amenazan-real-madrid-sabemos-20261121190746-nt.html",
+          "title": "Dos futbolistas cedidas amenazan al Real Madrid: «Sabemos por dónde podemos hacerle daño»",
+          "publisher": "Ideal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv1W-GHYNU3ZQowdyH3vYkD8zm0WRFgCT_ShNzVs_TBFVC_QCZdVFQRIjyiu8"
+        }
+      ]
+    },
+    {
+      "query": "juventus - venezia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T10:50:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/calcio/fantanews/22-11-2026/juventus-venezia-le-formazioni-ufficiali-tutti-i-titolari.shtml",
+        "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/21-152697013/probabili_formazioni_juve-venezia_le_scelte_di_spalletti_tutti_i_ballottaggi_e_chi_resta_fuori",
+        "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68Y5imywySFrmCDSBUIov_Ga9DeZdTwdKVplVZDOnIiYrDKqlfEG3bDtFxCs",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/calcio/fantanews/22-11-2026/juventus-venezia-le-formazioni-ufficiali-tutti-i-titolari.shtml",
+          "title": "Juventus-Venezia, le formazioni ufficiali: Spalletti punta su Alajbegovic, Nicola si affida a Lauberbach",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68Y5imywySFrmCDSBUIov_Ga9DeZdTwdKVplVZDOnIiYrDKqlfEG3bDtFxCs"
+        },
+        {
+          "url": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/21-152697013/probabili_formazioni_juve-venezia_le_scelte_di_spalletti_tutti_i_ballottaggi_e_chi_resta_fuori",
+          "title": "Probabili formazioni Juve-Venezia: le scelte di Spalletti, tutti i ballottaggi e chi resta fuori",
+          "publisher": "Tuttosport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYB1QBIPGJa8ZlxaBHks6pxbVjZh8J8Icsp6K1QYJDFVpt_MkcjHVn7zh1V8"
+        },
+        {
+          "url": "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali",
+          "title": "Serie A | Juventus-Venezia | Le formazioni ufficiali",
+          "publisher": "Juventus.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHvGBay7PkwwSiqc4KVcTW0KbpI3nYEM9cOqrdSRUlmfSI2etK3EqXfeWfgno"
+        }
+      ]
+    },
+    {
+      "query": "linda evans",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T10:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/dynasty-star-linda-evans-turns-140523310.html",
+        "https://people.com/dynasty-alum-linda-evans-says-she-is-feeling-the-love-as-she-turns-84-12263359",
+        "https://www.aol.com/articles/dynastys-linda-evans-turning-84-231856000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgldFF96Lx6ZeBx-WdRi2NT8hlvMPQEvaPk4kG6zxbwz9Yk4h8xI2Fve1GQbM",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dynasty-star-linda-evans-turns-140523310.html",
+          "title": "‘Dynasty’ Star Linda Evans Turns 84: Why She Chose to Stay Single",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgldFF96Lx6ZeBx-WdRi2NT8hlvMPQEvaPk4kG6zxbwz9Yk4h8xI2Fve1GQbM"
+        },
+        {
+          "url": "https://people.com/dynasty-alum-linda-evans-says-she-is-feeling-the-love-as-she-turns-84-12263359",
+          "title": "‘Dynasty’ Alum Linda Evans Says She Is ‘Feeling the Love’ as She Turns 84",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCDUJfei1-Dcr9VrAbPo28mY7_XHX_teaK1sJ_D5yIE_124Reul46nvvSELp4"
+        },
+        {
+          "url": "https://www.aol.com/articles/dynastys-linda-evans-turning-84-231856000.html",
+          "title": "Dynasty's Linda Evans on Turning 84: \"It Feels Like a Gift\"",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR54A7LbdDnWA9pD7JsLsGxXPSNRGX3yDcC3LlhOom_SbnTVVCvU8NcplToE6w"
+        }
+      ]
+    },
+    {
+      "query": "radar",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T10:50:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility",
+        "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+        "https://www.nytimes.com/2026/11/17/opinion/gulf-iran-israel-war.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45piilrS25HivZ8aKh4KjkpX2N9JjFpScBF4vajfTjwohDGDXRsIurpkhpTI",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility",
+          "title": "Bahrain says Iranian attack caused fire at industrial facility",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45piilrS25HivZ8aKh4KjkpX2N9JjFpScBF4vajfTjwohDGDXRsIurpkhpTI"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
+          "title": "Bahrain says Iran strikes industrial facility as air defences intercept attacks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTb4VJ9F5Q7j0Bs_6_lmpp7AQGbLqrxXkTK4cCKTJ15q6cphxctpKLldT6Va4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/17/opinion/gulf-iran-israel-war.html",
+          "title": "Opinion | Shock and Dread in the Gulf",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpBgXdfghDtQ16NcRuoSDlhEQGgIxR6eWNp2w4dEFaPHycYZlW3uMSSLMkNI"
+        }
+      ]
+    },
+    {
+      "query": "juventus vs venezia",
+      "approx_searches": "1000+",
       "published_at": "2026-11-22T10:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/official-juventus-team-face-venezia-102900348.html",
-        "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092",
-        "https://www.besoccer.com/new/gondolas-take-on-water-in-turin-1442591"
+        "https://sports.yahoo.com/articles/serie-liveblog-juventus-venezia-milan-102500267.html",
+        "https://www.reutersconnect.com/item/serie-a-juventus-v-venezia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wVVlQUEU",
+        "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KSmRTNcz6GGgn8yS2BNgIH4PY33OXyLKtXerzNgAVeEH9t3V4EKCjITLXso",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXVR9uhnF8kNk19Cb_y02knJolHPxHoGIv8i2YSJ0_O65HyekZW5EKsjROjo0",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/official-juventus-team-face-venezia-102900348.html",
-          "title": "Official Juventus team to face Venezia – Luiz and Alajbegovic start",
+          "url": "https://sports.yahoo.com/articles/serie-liveblog-juventus-venezia-milan-102500267.html",
+          "title": "Serie A Liveblog: Juventus-Venezia, Milan-Frosinone, Atalanta-Inter and more",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6KSmRTNcz6GGgn8yS2BNgIH4PY33OXyLKtXerzNgAVeEH9t3V4EKCjITLXso"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXVR9uhnF8kNk19Cb_y02knJolHPxHoGIv8i2YSJ0_O65HyekZW5EKsjROjo0"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/serie-a-juventus-v-venezia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wVVlQUEU",
+          "title": "Licensable picture: Serie A - Juventus v Venezia",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUd_Rf15af-nUlw3eOHI2O8Mh9t5XuArskL9yJklvS0zyAXyZTsDNcuC7LETc"
         },
         {
           "url": "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092",
@@ -31,35 +275,21 @@
           "publisher": "OneFootball",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLR4xECn1t_fjs-e_ccbLHM7lSYOtr3hwzrSPLAHVGCNppCxns__YGGlICXiI"
-        },
-        {
-          "url": "https://www.besoccer.com/new/gondolas-take-on-water-in-turin-1442591",
-          "title": "Gondolas take on water in Turin",
-          "publisher": "BeSoccer Livescore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXTm65qdmfwkSwMBEgRe3VgEVNr_pHLVvIHFdCAnNdGmKuTWqo1kgRXvZgq-0"
         }
       ]
     },
     {
       "query": "philly marathon 2026",
-      "approx_searches": "10000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-22T10:40:00Z",
       "related_news_urls": [
-        "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
         "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
-        "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel"
+        "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel",
+        "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA",
-      "image_credit": "NBC10 Philadelphia",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDbz2_H9kcozMO_yCA1C18dyONs0fxGMeuYml6i__KLcZT2GKwbKKDWyH17GA",
+      "image_credit": "6abc Philadelphia",
       "news": [
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
-          "title": "Two storms to track",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA"
-        },
         {
           "url": "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
           "title": "Philadelphia gears up for busy weekend with marathon, Eagles game and possible stormy weather",
@@ -73,270 +303,48 @@
           "publisher": "FOX 29 Philadelphia",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhom5TgsZkwSyHsMKeGKTB4LZTdVBB8-3iN1KESoAu1hR_eLQUl0ALTn3YzaA"
-        }
-      ]
-    },
-    {
-      "query": "anne heche",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T10:30:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/22/anne-heche-creditors-object-to-her-son-settlement-petition/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9LeyfFO7_7Z9BxDNNAb0zxcm0krHKi-B23aFIhelfwaBta1JUQrAnopByXo",
-      "image_credit": "TMZ",
-      "news": [
+        },
         {
-          "url": "https://www.tmz.com/2026/11/22/anne-heche-creditors-object-to-her-son-settlement-petition/",
-          "title": "Anne Heche Creditors Object to Her Son's Petition For Settlement",
-          "publisher": "TMZ",
+          "url": "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
+          "title": "Two storms to track",
+          "publisher": "NBC10 Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc9LeyfFO7_7Z9BxDNNAb0zxcm0krHKi-B23aFIhelfwaBta1JUQrAnopByXo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA"
         }
       ]
     },
     {
-      "query": "espncricinfo",
+      "query": "tkach family",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T10:30:00Z",
+      "published_at": "2026-11-22T10:40:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
-        "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-new-zealand-hope-of-wellington-great-escape-as-visitors-batters-dominate/WNJ4ID4DTRG2BJHO6LWI4WKTV4/",
-        "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256"
+        "https://www.wlfi.com/2026/11/20/indiana-state-police-address-questions-concerns-surrounding-west-lafayette-shooting-investigation/",
+        "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
+        "https://www.jconline.com/story/news/crime/2026/11/20/coroner-bailiff-kills-wife-and-teenage-daughters-then-kills-himself/92877000007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNS13JwBuPE2HYm8qh9ariPeS5r9N5q9P7jpUc-Xh5I-zscB0LS7gAubx6904",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2y2T3axdBdtZ7jKQTxg-YODO9Idha0H-jHGMQSfY8xI6KVIqsK0kksbxxjM0",
+      "image_credit": "WLFI",
       "news": [
         {
-          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - NZ vs IND, 1st Test",
-          "publisher": "Cricinfo",
+          "url": "https://www.wlfi.com/2026/11/20/indiana-state-police-address-questions-concerns-surrounding-west-lafayette-shooting-investigation/",
+          "title": "Indiana State Police address questions and concerns surrounding West Lafayette shooting investigation",
+          "publisher": "WLFI",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNS13JwBuPE2HYm8qh9ariPeS5r9N5q9P7jpUc-Xh5I-zscB0LS7gAubx6904"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2y2T3axdBdtZ7jKQTxg-YODO9Idha0H-jHGMQSfY8xI6KVIqsK0kksbxxjM0"
         },
         {
-          "url": "https://www.nzherald.co.nz/sport/cricket/black-caps/black-caps-v-india-new-zealand-hope-of-wellington-great-escape-as-visitors-batters-dominate/WNJ4ID4DTRG2BJHO6LWI4WKTV4/",
-          "title": "Black Caps hope for Wellington great escape as India dominate day four",
-          "publisher": "NZ Herald",
+          "url": "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
+          "title": "Four people identified in West Lafayette death investigation",
+          "publisher": "starcitytv.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs5ryKWmbznMDSwLS9G5JisnLEXcCBiQ0BkUnT84WaFGZqnc7t3a14uNl2i84"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY"
         },
         {
-          "url": "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256",
-          "title": "India breaks New Zealand Test record with monster innings in Wellington",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "url": "https://www.jconline.com/story/news/crime/2026/11/20/coroner-bailiff-kills-wife-and-teenage-daughters-then-kills-himself/92877000007/",
+          "title": "Coroner: Bailiff kills wife and teenage daughters, then kills himself",
+          "publisher": "Journal & Courier",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTszaQasJ4y5oRd0-lv78E57CgUF1edXB7bOH9w5EbU_XGhkX7-H3zqccDmvts"
-        }
-      ]
-    },
-    {
-      "query": "atomic clock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T09:30:00Z",
-      "related_news_urls": [
-        "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
-        "https://demokratis.co.id/en/quantum-superposition-time-detection",
-        "https://scitechdaily.com/scientists-uncover-a-bizarre-quantum-effect-where-time-could-flow-at-different-speeds-simultaneously/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLSF9HUFZ6R_to_UbhjzU292byF_uVoI461FeFvSNU9qSKk_Cb0NiumDOyhjc",
-      "image_credit": "Science Daily",
-      "news": [
-        {
-          "url": "https://www.sciencedaily.com/releases/2026/11/261120075558.htm",
-          "title": "Time may be far stranger than we realize. Scientists have a way to test it",
-          "publisher": "Science Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLSF9HUFZ6R_to_UbhjzU292byF_uVoI461FeFvSNU9qSKk_Cb0NiumDOyhjc"
-        },
-        {
-          "url": "https://demokratis.co.id/en/quantum-superposition-time-detection",
-          "title": "Researchers Develop Method to Detect Quantum Superposition of Time",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNKHGnghzVaP6SBrtMp6T1fmnNIllasOCRL5LFpiypxY2jkxFQYdETYbgi5RE"
-        },
-        {
-          "url": "https://scitechdaily.com/scientists-uncover-a-bizarre-quantum-effect-where-time-could-flow-at-different-speeds-simultaneously/",
-          "title": "Scientists Uncover a Bizarre Quantum Effect Where Time Could Flow at Different Speeds Simultaneously",
-          "publisher": "SciTechDaily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitohK2iUATvLPgPDCu17DWu03pr0rZg5CtzZ9yv0rsYN9UVtuYE1jzOcTV6w"
-        }
-      ]
-    },
-    {
-      "query": "nancy guthrie",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T09:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66117623/?ref_=nwc_art_perm",
-        "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
-        "https://www.hindustantimes.com/world-news/us-news/porch-guy-walked-backwards-with-nancy-guthrie-slumped-over-during-abduction-leaving-no-footprints-in-blood-ex-fbi-agent-suggests-101794727769975.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-fRQ8R-dkj2DOdfczgvRvKgSxt4ka54MMF9W1e-c61Jsf33ESiJK54ezQw7c",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66117623/?ref_=nwc_art_perm",
-          "title": "Nancy Guthrie Update: Retired FBI Agent Calls Out Major Timeline Issue",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-fRQ8R-dkj2DOdfczgvRvKgSxt4ka54MMF9W1e-c61Jsf33ESiJK54ezQw7c"
-        },
-        {
-          "url": "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
-          "title": "Savannah Guthrie’s Thanksgiving Plans Confirmed as Mom Nancy Remains Missing",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s"
-        },
-        {
-          "url": "https://www.hindustantimes.com/world-news/us-news/porch-guy-walked-backwards-with-nancy-guthrie-slumped-over-during-abduction-leaving-no-footprints-in-blood-ex-fbi-agent-suggests-101794727769975.html",
-          "title": "Porch Guy walked ‘backwards' with Nancy Guthrie ‘slumped over' during abduction, leaving no footprints in blood, ex-FBI agent suggests | Hindustan Times",
-          "publisher": "Hindustan Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNrPD3TKyf2rzXz833Wnb3ufuazE4NkvtEZfbS6TEQKicBXdGaxuNDW3pcMF8"
-        }
-      ]
-    },
-    {
-      "query": "unemployment",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T09:10:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/socal-duo-stole-millions-unemployment-benefits/",
-        "https://www.edhat.com/california/news/arthur-marquez-guilty-covid-19-unemployment-fraud-san-bernardino/",
-        "https://www.kslm.news/news/california-man-pleads-guilty-to-2-1-million-pandemic-unemployment-fraud-mwmsa8w4"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYMg3vVOSvC2R33fX1JBw_ovz1pDD43rW65uJll6ymKRNagmtx32Pbcsmbu94",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/socal-duo-stole-millions-unemployment-benefits/",
-          "title": "Southern California duo stole $2.1 million in unemployment benefits",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYMg3vVOSvC2R33fX1JBw_ovz1pDD43rW65uJll6ymKRNagmtx32Pbcsmbu94"
-        },
-        {
-          "url": "https://www.edhat.com/california/news/arthur-marquez-guilty-covid-19-unemployment-fraud-san-bernardino/",
-          "title": "San Bernardino Man Arthur Marquez Pleads Guilty in $2.1M COVID-19 Unemployment Fraud Scheme",
-          "publisher": "edhat",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlPE_pdxtXY3FRd0Ld81ss84ys57y-RQpYFs75w3ySRnGoNjSXbwB30DQkXGg"
-        },
-        {
-          "url": "https://www.kslm.news/news/california-man-pleads-guilty-to-2-1-million-pandemic-unemployment-fraud-mwmsa8w4",
-          "title": "California Man Pleads Guilty to $2.1 Million Pandemic Unemployment Fraud",
-          "publisher": "KSLM Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwicwWG4beqceJTKaGNBN1oeDJ_CInkMhSYZ9Vhvk_8kGB4bjVcOIFsby4FYk"
-        }
-      ]
-    },
-    {
-      "query": "jfk",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T08:40:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/see-how-today-covered-the-jfk-assassination-in-1963-273660997794",
-        "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
-        "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjglZ3UX4j58V8YvsPQozTBXdaK1rbAdARttlJsNLA2EL9JfIR9JcLXiTqP9M",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/see-how-today-covered-the-jfk-assassination-in-1963-273660997794",
-          "title": "See How TODAY Covered the JFK Assassination in 1963",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjglZ3UX4j58V8YvsPQozTBXdaK1rbAdARttlJsNLA2EL9JfIR9JcLXiTqP9M"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
-          "title": "Inside the museum preserving the story of JFK's assassination",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
-          "title": "Today in History: November 22, infamous pirate Blackbeard killed in battle",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8jjJ86o6fZRWfvzfWI831oh5CdLBxgyFFH4DRLW9gRR-CiAKbbxxHy0f9Vqw"
-        }
-      ]
-    },
-    {
-      "query": "nordvpn",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T08:40:00Z",
-      "related_news_urls": [
-        "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
-        "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
-        "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q",
-      "image_credit": "Gizmodo",
-      "news": [
-        {
-          "url": "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
-          "title": "NordVPN at $2.99 a Month Costs Less Than Your Airport Coffee This Thanksgiving",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q"
-        },
-        {
-          "url": "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
-          "title": "Beyond VPN: NordVPN Details Its 2026 Security Bundles Combining Antivirus, Password Management and Encrypted Storage",
-          "publisher": "The Gila Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVhCL9S-v7vwcz_pjydDgezblNC7huTyN7p0-MDB567DR9Xnb3_yFB5NtGJTM"
-        },
-        {
-          "url": "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80",
-          "title": "Get NordVPN's best price since last Black Friday – 2 years for just $80",
-          "publisher": "Tom's Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0zQr-4tEgkNY_ZIp0GGmuZES9DNPQZdDPcjqTzsV00xVRRfZn2Q_OnQUWSg"
-        }
-      ]
-    },
-    {
-      "query": "how to auto drive gta 6",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T08:40:00Z",
-      "related_news_urls": [
-        "https://www.polygon.com/gta-6-auto-drive-how-to/",
-        "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
-        "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc",
-      "image_credit": "Polygon.com",
-      "news": [
-        {
-          "url": "https://www.polygon.com/gta-6-auto-drive-how-to/",
-          "title": "How to use auto drive in GTA 6",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc"
-        },
-        {
-          "url": "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
-          "title": "Grand Theft Auto VI's Auto Drive Is A Beautiful And Free Version Of Hands-Free Travel",
-          "publisher": "Game Informer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfDahXQjSg8MDMJHROtJwAZvCaQTP4XBuUHubiVi79oToNZcQIpKkF-JDgbQE"
-        },
-        {
-          "url": "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/",
-          "title": "This GTA 6 Fast Travel Trick Comes At A Price",
-          "publisher": "Engadget",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxBYnaBmtO8GNPIDRYPesYAynqnjhdzLgW-mDbqoNhrCRcNwDymxILfB1G_ZQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdsQT5YgD1rxsSZMuw8I2VG3eiqkgjCp3d3PMcIBAzQVCd9DGLumvwQa0tQU"
         }
       ]
     }
