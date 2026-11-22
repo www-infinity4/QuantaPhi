@@ -210,6 +210,13 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,
+{
+ videoId:'WKIVlHQRXF4',title:'11 de julho de 2019',
+ sourceUrl:'https://www.youtube.com/watch?v=WKIVlHQRXF4',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
