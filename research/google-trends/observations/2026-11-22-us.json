@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T04:31:13.907567Z",
+  "checked_at": "2026-11-22T05:01:27.459767Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "arvid lindblad",
+      "query": "ben wang",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:30:00Z",
+      "related_news_urls": [
+        "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
+        "https://www.imdb.com/fr/news/ni66118981/?ref_=nwc_art_perm",
+        "https://www.bustle.com/entertainment/ben-wang-hunger-games-wyatt-interview"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStgUYaBMQbK8C-2i0qvZFw_t4lG1vvF6-hWL1ln84OK4fahLmys93Kvy3hxK8",
+      "image_credit": "Star Tribune",
+      "news": [
+        {
+          "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
+          "title": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStgUYaBMQbK8C-2i0qvZFw_t4lG1vvF6-hWL1ln84OK4fahLmys93Kvy3hxK8"
+        },
+        {
+          "url": "https://www.imdb.com/fr/news/ni66118981/?ref_=nwc_art_perm",
+          "title": "Why Wyatt Callow From The Hunger Games: Sunrise On The Reaping Looks So Familiar",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHM95oyZJQ3ZRr5DiiNmkNIdxnVbof7Hi2lRLZdzviRiFf9q3qN7OcDCV6LPE"
+        },
+        {
+          "url": "https://www.bustle.com/entertainment/ben-wang-hunger-games-wyatt-interview",
+          "title": "'Hunger Games': Ben Wang On Playing Wyatt & Bonding With His Costars",
+          "publisher": "Bustle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyXH1pyQdlDEIpzx2zmvVIZJUVE43DxyUZnTEWqQ-qRTF4n-EsMrt9RLVfiPQ"
+        }
+      ]
+    },
+    {
+      "query": "inde navarrette",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T04:20:00Z",
+      "related_news_urls": [
+        "https://www.hollywoodreporter.com/movies/movie-news/obsession-inde-navarrette-spotlight-tribute-gotham-awards-1236759136/",
+        "https://www.cinemablend.com/movies/i-thought-inde-navarrette-oscars-best-actress-biggest-competition-julianne-moore-the-debut",
+        "https://screenrant.com/obsession-inde-navarrette-oscar-award-contender/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFkrjzeF2jKtTKJFt8bf34aVu_7XUbq_IJcfFHg8crPD0K7uCFqEu9o_xDSXg",
+      "image_credit": "The Hollywood Reporter",
+      "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/obsession-inde-navarrette-spotlight-tribute-gotham-awards-1236759136/",
+          "title": "‘Obsession’ Breakout Inde Navarrette to Receive Spotlight Tribute at Gotham Film Awards (Exclusive)",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFkrjzeF2jKtTKJFt8bf34aVu_7XUbq_IJcfFHg8crPD0K7uCFqEu9o_xDSXg"
+        },
+        {
+          "url": "https://www.cinemablend.com/movies/i-thought-inde-navarrette-oscars-best-actress-biggest-competition-julianne-moore-the-debut",
+          "title": "I Thought Inde Navarrette Was A Shoe-In For The Oscars. Then I Saw Her Biggest Competition",
+          "publisher": "Cinemablend",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKyIFFnihBOts3vRPy0peiOu9wvn5o7phU-9HrwYDiWkqygjhDFOsOG5NajU"
+        },
+        {
+          "url": "https://screenrant.com/obsession-inde-navarrette-oscar-award-contender/",
+          "title": "Obsession Star Inde Navarrette Addresses Oscar Buzz After Breakout Horror 's $524M Success",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN9WJ1UQTx-gom2JPvViTLlnQaFlFlMMDhd0rRn6Crl9XLYKCWLreN2eI8UQU"
+        }
+      ]
+    },
+    {
+      "query": "isack hadjar",
       "approx_searches": "500+",
+      "published_at": "2026-11-22T04:20:00Z",
+      "related_news_urls": [
+        "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/",
+        "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/",
+        "https://www.france24.com/fr/info-en-continu/20261121-f1-verstappen-qui-perd-gagne-%C3%A0-las-vegas"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpoNjvq-g_LWEGnknLl0H0HVQYEatNYQHQf7TAPFct6ox6TGLpNjiPRb-r9Eo",
+      "image_credit": "Motorsport.com",
+      "news": [
+        {
+          "url": "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/",
+          "title": "Isack Hadjar: Red Bull \"looked a bit stupid\" in Vegas qualifying tow game",
+          "publisher": "Motorsport.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpoNjvq-g_LWEGnknLl0H0HVQYEatNYQHQf7TAPFct6ox6TGLpNjiPRb-r9Eo"
+        },
+        {
+          "url": "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/",
+          "title": "Isack Hadjar: “We looked stupid” in Las Vegas as I don’t like slipstreaming",
+          "publisher": "Motorsport.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGXLvQkqSkjn86hxAXZGFSdWNa7mcmrtTUYt0p0xWvRiyPbYSUSfN34seIJXM"
+        },
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261121-f1-verstappen-qui-perd-gagne-%C3%A0-las-vegas",
+          "title": "F1: Verstappen, qui perd gagne à Las Vegas",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVXnpYq6niK118_lXXggaVQRkq3a13mquYxyM__cWjd9XKdQ50oYvSSj5O_k"
+        }
+      ]
+    },
+    {
+      "query": "is snl new tonight",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-22T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
+        "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
+      "image_credit": "NBC TV",
+      "news": [
+        {
+          "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
+          "title": "Is Saturday Night Live New Tonight? About the November 21 Host and Musical Guest",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        },
+        {
+          "url": "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
+          "title": "Is ‘SNL’ new tonight? See the season 52 episode schedule",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuywhwu3MDHEays1ELdmOfSi-S5TOV094ZAouZOBVo2B1o9UeUU6rF53zLpQA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/",
+          "title": "Is 'SNL' on tonight? Show reveals schedule change before Thanksgiving",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTtPuklWzUMjrMlIhMdUkfqI3DTtLHynp_Vad6luSZdE9S6IM3QE2UNg09nT4"
+        }
+      ]
+    },
+    {
+      "query": "arvid lindblad",
+      "approx_searches": "1000+",
       "published_at": "2026-11-22T04:10:00Z",
       "related_news_urls": [
         "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
@@ -38,6 +178,41 @@
           "publisher": "Formula 1",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU4YhR5KdxW05z-Km4dm4P0VJbyrdQCPFOA5N_F4-lbh4bn0_hxCWPHA7v6zw"
+        }
+      ]
+    },
+    {
+      "query": "alvin wyatt",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:10:00Z",
+      "related_news_urls": [
+        "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
+        "https://www.reutersconnect.com/item/bethune-cookman-interim-head-coach-alvin-shine-wyatt-coaches-during-the-florida-classic-against-florida-aampm-at-camping/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MjE3OTE",
+        "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A",
+      "image_credit": "Bethune-Cookman University Athletics",
+      "news": [
+        {
+          "url": "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
+          "title": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr.",
+          "publisher": "Bethune-Cookman University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/bethune-cookman-interim-head-coach-alvin-shine-wyatt-coaches-during-the-florida-classic-against-florida-aampm-at-camping/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MjE3OTE",
+          "title": "Licensable picture: Bethune-Cookman interim head coach Alvin “Shine” Wyatt coaches during the Florida Classic against Florida A&M at Camping",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7eFwrDQx6_5qG9-anCLT6K2466dUQ09CLn6KFJkGZtFcpLfQZi_CDZp-IHD8"
+        },
+        {
+          "url": "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
+          "title": "FAMU, rain dampen Alvin Wyatt’s return to Florida Classic as Rattlers win 27-14",
+          "publisher": "Orlando Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyi0EpayaBoMUOyHoIINeBbtNWjI1JqX70IoD5mR8D0Vl2_uVxaH6-OeEblN0"
         }
       ]
     },
@@ -77,65 +252,30 @@
       ]
     },
     {
-      "query": "alvin wyatt",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T04:10:00Z",
-      "related_news_urls": [
-        "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
-        "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
-        "https://www.flcourier.com/news/b-cu-makes-coaching-change-days-before-florida-classic/article_248d936a-c4b9-41ff-8ac4-90c74fdb4e78.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A",
-      "image_credit": "Bethune-Cookman University Athletics",
-      "news": [
-        {
-          "url": "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
-          "title": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr.",
-          "publisher": "Bethune-Cookman University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A"
-        },
-        {
-          "url": "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
-          "title": "FAMU, rain dampen Alvin Wyatt’s return to Florida Classic as Rattlers win 27-14",
-          "publisher": "Orlando Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyi0EpayaBoMUOyHoIINeBbtNWjI1JqX70IoD5mR8D0Vl2_uVxaH6-OeEblN0"
-        },
-        {
-          "url": "https://www.flcourier.com/news/b-cu-makes-coaching-change-days-before-florida-classic/article_248d936a-c4b9-41ff-8ac4-90c74fdb4e78.html",
-          "title": "B-CU makes coaching change days before Florida Classic",
-          "publisher": "Florida Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9abDehtUdbQZfNaC4ghP17oLgsBiGUGrnPFEJOrQ7GnlXGljyRWmZ7475ySU"
-        }
-      ]
-    },
-    {
       "query": "f1",
       "approx_searches": "20000+",
       "published_at": "2026-11-22T04:00:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live",
         "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
+        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b0272568f08268116cd51a4",
         "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOswSptfZr6orck1eRCcRkko0qmcMKO7NVVs3-dyLNnmTFJUjqK2Hc4aZqaQ",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGhefO596JD-iC6SMv7UGtx4eavLlKA5SX8kCVAPTNQgr6PDE74fHhfQ9njfk",
+      "image_credit": "ESPN",
       "news": [
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live",
-          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXOswSptfZr6orck1eRCcRkko0qmcMKO7NVVs3-dyLNnmTFJUjqK2Hc4aZqaQ"
-        },
         {
           "url": "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
           "title": "Las Vegas Grand Prix LIVE! F1 race updates, commentary and results",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoFKiUeDkJVVfPTnD2AyLiqwCVulxiY7YjLWKnSmkKQVU8DujrPtlqOQm03W8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGhefO596JD-iC6SMv7UGtx4eavLlKA5SX8kCVAPTNQgr6PDE74fHhfQ9njfk"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b0272568f08268116cd51a4",
+          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROtvmyYFSyH8PhvKFoYLctDskTyWC4j-FtF4F8gR3JhSC8mgyRRPX5XTxTYto"
         },
         {
           "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
@@ -147,78 +287,8 @@
       ]
     },
     {
-      "query": "college football georgia standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
-        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-utah-vs-tcu-georgia-vs-south-carolina-virginia-tech-vs-miami-and-more-024248685.html",
-        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
-          "title": "Week 12 live: Tracking top moments and best highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-utah-vs-tcu-georgia-vs-south-carolina-virginia-tech-vs-miami-and-more-024248685.html",
-          "title": "College football live updates, scores: Utah vs. TCU, Oklahoma State vs. Arizona State and more",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjMvCgl8TbfQyEY7FzLIefotokFUh_6PrKOs1QVMSH4wk77juT9CSP9VIalKs"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
-          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
-        }
-      ]
-    },
-    {
-      "query": "sam hauser",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T04:00:00Z",
-      "related_news_urls": [
-        "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
-        "https://sports.yahoo.com/articles/boston-celtics-three-d-wing-215840202.html",
-        "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
-          "title": "Collective Buy-In has Celtics' Bench Among NBA's Best | Boston Celtics",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/boston-celtics-three-d-wing-215840202.html",
-          "title": "Boston Celtics: Three-and-D Wing Emerging as Key Contributor",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpbbOC3DIxVM6AbrmMhwJOVfdRCzB_AGX5NopvhYcShJRWdTTqL9YCgcTGl90"
-        },
-        {
-          "url": "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
-          "title": "Celtics can’t keep Sam Hauser on the bench for too much longer",
-          "publisher": "Hardwood Houdini",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-AQ34oLRkLCZ2gdETKVjRxXFAdF7VTYW4j03be0O-x4XxGSKAQ46RR2poJJw"
-        }
-      ]
-    },
-    {
       "query": "jake fette",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T04:00:00Z",
       "related_news_urls": [
         "https://arizonasports.com/ncaa/arizona-state/asu-football/brock-osweiler-asu-jake-fette",
@@ -252,107 +322,37 @@
       ]
     },
     {
-      "query": "nina dobrev",
-      "approx_searches": "200+",
+      "query": "sam hauser",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T04:00:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/kathryn-newton-nina-dobrev-adam-devine-sorry-about-my-friends-1237228476/",
-        "https://fangirlish.com/2026/11/20/nina-dobrevs-next-movie-is-sorry-about-my-friends-and-this-cast-has-our-attention/",
-        "https://cultbox.co.uk/news/sorry-about-my-friends-sets-cast"
+        "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
+        "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
+        "https://www.cbssports.com/fantasy/basketball/news/celtics-sam-hauser-scores-season-high-12-points-539537/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEJXqAFKO-nEebMUjprUGD8UfBt9k_-eMrPebEndG6gNm1gthTvBBj-SRJmaU",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/kathryn-newton-nina-dobrev-adam-devine-sorry-about-my-friends-1237228476/",
-          "title": "Kathryn Newton, Nina Dobrev, Adam Devine & Scott Eastwood To Star In Rom-Com ‘Sorry About My Friends’",
-          "publisher": "Deadline",
+          "url": "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
+          "title": "Collective Buy-In has Celtics' Bench Among NBA's Best | Boston Celtics",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEJXqAFKO-nEebMUjprUGD8UfBt9k_-eMrPebEndG6gNm1gthTvBBj-SRJmaU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw"
         },
         {
-          "url": "https://fangirlish.com/2026/11/20/nina-dobrevs-next-movie-is-sorry-about-my-friends-and-this-cast-has-our-attention/",
-          "title": "Nina Dobrev’s Next Movie Is Sorry About My Friends, and This Cast Has Our Attention",
-          "publisher": "Fangirlish",
+          "url": "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
+          "title": "Celtics can’t keep Sam Hauser on the bench for too much longer",
+          "publisher": "Hardwood Houdini",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUsQ_0-LozV-1X7w2AbKVNxtY5SBFnWI_CqZKTWAvNKR-21fkTUM0V-H640Q4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-AQ34oLRkLCZ2gdETKVjRxXFAdF7VTYW4j03be0O-x4XxGSKAQ46RR2poJJw"
         },
         {
-          "url": "https://cultbox.co.uk/news/sorry-about-my-friends-sets-cast",
-          "title": "Sorry About My Friends sets cast",
-          "publisher": "CultBox",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/celtics-sam-hauser-scores-season-high-12-points-539537/",
+          "title": "Celtics' Sam Hauser: Scores season-high 12 points",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRObh-osQJCxmJG8sq5UVJEIX2g70mpHwi-xizVqoA88Rv-j3OqL84fslOdfN4"
-        }
-      ]
-    },
-    {
-      "query": "f1 tv",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T03:50:00Z",
-      "related_news_urls": [
-        "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
-        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b026d6c8f083dc0e39947c0",
-        "https://mashable.com/entertainment/las-vegas-gp-f1-live-stream-free"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuITFJ-e9vMxbTQY5XpU9BEcUy1nii6_uBv5Nkc44fK7Jrp7-arQMxa3berI",
-      "image_credit": "Formula 1",
-      "news": [
-        {
-          "url": "https://www.formula1.com/en/latest/article/strategy-guide-what-are-the-tactical-options-for-the-las-vegas-gp.4k41CN1CbogRoqk1kkOb9C",
-          "title": "What are the tyre strategy options for the Las Vegas GP?",
-          "publisher": "Formula 1",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGuITFJ-e9vMxbTQY5XpU9BEcUy1nii6_uBv5Nkc44fK7Jrp7-arQMxa3berI"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b026d6c8f083dc0e39947c0",
-          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROtvmyYFSyH8PhvKFoYLctDskTyWC4j-FtF4F8gR3JhSC8mgyRRPX5XTxTYto"
-        },
-        {
-          "url": "https://mashable.com/entertainment/las-vegas-gp-f1-live-stream-free",
-          "title": "I'm watching the Las Vegas GP for free this weekend — how to live stream F1 for free",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrih_ZwDQQ2NFUEqvr2ILn_y-4fYqbHriVyt8gq3HQ6_MSfzJ4o834GTIRvo"
-        }
-      ]
-    },
-    {
-      "query": "drew mestemaker",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T03:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/drew-mestemaker-injury-oklahoma-state-120354777.html",
-        "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-active-asu",
-        "https://www.si.com/college/oklahomastate/football/oklahoma-state-qb-drew-mestemaker-game-time-decision-for-arizona-state-game"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA_ismSEQkZteO6z68cdqGUlXNPrha_jlBGiZ4f7hypH7ZCkK7LndaLeraeA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/drew-mestemaker-injury-oklahoma-state-120354777.html",
-          "title": "Drew Mestemaker injury update: Is Oklahoma State football QB playing vs Arizona State?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwA_ismSEQkZteO6z68cdqGUlXNPrha_jlBGiZ4f7hypH7ZCkK7LndaLeraeA"
-        },
-        {
-          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/drew-mestemaker-active-asu",
-          "title": "Oklahoma State's Drew Mestemaker active vs. ASU",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSegR_Wq8UrMgrpHPcXC8ewtLUZklkXeVAe27JlVkB5pWZFjv5kCK77lTGsBzE"
-        },
-        {
-          "url": "https://www.si.com/college/oklahomastate/football/oklahoma-state-qb-drew-mestemaker-game-time-decision-for-arizona-state-game",
-          "title": "Oklahoma State QB Drew Mestemaker Game-Time Decision for Arizona State Game",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmqyIQK7tnnsgOVGlejA9UoMMr8-swbS8KdfOy4tj7sOpBl_YPaTm2bEF02EM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Ap1INc7hTZupWD2BKkqXfpsxC7jYVkCV4Oyo_F77eLY3tt6Us72_KNctetM"
         }
       ]
     }
