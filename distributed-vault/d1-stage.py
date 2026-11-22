@@ -97,6 +97,40 @@ def import_sql(sql_path, destination):
         except OSError:
             pass
 
+def snapshot(db_path, destination):
+    """Create a consistent private SQLite backup even with journal/WAL writers."""
+    source = check_file(db_path)
+    target = Path(destination).resolve()
+    if target.exists():
+        fail("destination already exists")
+    target.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+    temporary = target.parent / (".snapshot-" + uuid.uuid4().hex + ".tmp")
+    source_db = None
+    target_db = None
+    try:
+        with private_open(temporary):
+            pass
+        source_db = sqlite3.connect(f"file:{source}?mode=ro", uri=True)
+        target_db = sqlite3.connect(temporary)
+        source_db.backup(target_db)
+        target_db.close()
+        target_db = None
+        source_db.close()
+        source_db = None
+        tables = verify_sqlite(temporary)
+        if target.exists():
+            fail("destination appeared during snapshot")
+        os.link(temporary, target)
+        temporary.unlink()
+        print(json.dumps({"status":"consistent_sqlite_snapshot", "bytes":target.stat().st_size,
+                          "sha256":digest(target),"tableCount":len(tables)}))
+    finally:
+        if target_db is not None:
+            target_db.close()
+        if source_db is not None:
+            source_db.close()
+        temporary.unlink(missing_ok=True)
+
 def chunk(db_path, directory, requested_bytes):
     source = check_file(db_path)
     verify_sqlite(source)
@@ -169,9 +203,11 @@ def restore(directory, destination):
 
 def main(argv):
     if len(argv) < 1:
-        fail("usage: d1-stage.py import-sql <export.sql> <new.sqlite> | chunk <sqlite> <new-dir> <bytes> | restore <chunks-dir> <new.sqlite>")
+        fail("usage: d1-stage.py import-sql <export.sql> <new.sqlite> | snapshot <sqlite> <new.sqlite> | chunk <sqlite> <new-dir> <bytes> | restore <chunks-dir> <new.sqlite>")
     if argv[0] == "import-sql" and len(argv) == 3:
         return import_sql(argv[1], argv[2])
+    if argv[0] == "snapshot" and len(argv) == 3:
+        return snapshot(argv[1], argv[2])
     if argv[0] == "chunk" and len(argv) == 4:
         return chunk(argv[1], argv[2], argv[3])
     if argv[0] == "restore" and len(argv) == 3:
