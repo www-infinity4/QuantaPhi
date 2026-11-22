@@ -198,6 +198,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'tjIEETH5Wqg',title:'YouTube video tjIEETH5Wqg (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=tjIEETH5Wqg',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
