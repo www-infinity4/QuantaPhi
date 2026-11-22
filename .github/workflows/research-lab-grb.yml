@@ -4,6 +4,7 @@ on:
     paths:
       - 'research-lab/**'
       - 'test/research-lab-grb.test.mjs'
+      - 'test/research-lab-air-material-memory.test.mjs'
       - '.github/workflows/research-lab-grb.yml'
   workflow_dispatch:
 permissions:
@@ -18,4 +19,4 @@ jobs:
         with:
           node-version: '24'
       - name: Source-backed research and privacy regressions
-        run: node --test test/research-lab-grb.test.mjs
+        run: node --test test/research-lab-grb.test.mjs test/research-lab-air-material-memory.test.mjs
