@@ -155,3 +155,15 @@ test('database and encrypted copies remain after a clean server restart',async t
  assert.equal(recovered.status,200);
  assert.deepEqual(restoreFile(recovered.manifest,recovered.fragments,key),Buffer.from('durable encrypted shard data'));
 });
+
+test('a falsified whole ciphertext hash rejects final shard before scheduling phone copies',async t=>{
+ const {call}=await fixture(t);
+ const {manifest,fragments}=packFile(Buffer.from('whole-file integrity'),{shards:3});
+ const bad={...manifest,ciphertextSha256:'a'.repeat(64)};
+ assert.equal((await call('POST','/v1/owner/manifests',bad)).status,201);
+ for(const part of fragments.slice(0,2))
+  assert.equal((await call('PUT',`/v1/owner/shards/${manifest.fileId}/${part.index}`,part)).status,201);
+ assert.equal((await call('PUT',`/v1/owner/shards/${manifest.fileId}/2`,fragments[2])).status,422);
+ const current=(await call('GET','/v1/owner/status')).files[0];
+ assert.equal(current.uploadedShards,2);
+});
