@@ -3,41 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T00:47:16.296790Z",
+  "checked_at": "2026-11-22T01:01:26.821886Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kyle whittingham",
+      "query": "is malachi toney playing today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says",
+        "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-miami-return-close-ankle-surgery/",
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177975.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZsYibKW7aWjhwll01eOLZg9yQEmoWutsxeItkktkS05Siq2vx9IEYZqSuJQ8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50542494/malachi-toney-nearing-return-ankle-surgery-coach-says",
+          "title": "Miami WR Malachi Toney 'really close' to return after ankle surgery, coach says",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZsYibKW7aWjhwll01eOLZg9yQEmoWutsxeItkktkS05Siq2vx9IEYZqSuJQ8"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/malachi-toney-injury-update-miami-return-close-ankle-surgery/",
+          "title": "Miami star WR Malachi Toney 'really close' to returning from ankle injury, Mario Cristobal says",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU9TniBJZO41lSNHKzwmQ3Nnx98pW5pxqDUCvGRRjqEdnAp78hGMj3iESV1BI"
+        },
+        {
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177975.html",
+          "title": "Could Malachi Toney be ahead of schedule for a Miami return? What Cristobal says",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNXW81K6PO081P_d2GMlqY0Nl9Xo6DUtTJMJcQpqIQEpv3mKY59SiGtZrEyz4"
+        }
+      ]
+    },
+    {
+      "query": "andre drummond",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://dailyknicks.com/knicks-find-andre-drummond-insurance-without-trade",
+        "https://dailyknicks.com/knicks-search-andre-drummond-upgrade-harder",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/mike-brown-said-hes-comfortable-playing-andre/92906339007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9LJ9npgXduod16LcJs4Ey9qzn5RLa9YipTMEzfgXb0ElTHndpLHnyk47JXIQ",
+      "image_credit": "Daily Knicks",
+      "news": [
+        {
+          "url": "https://dailyknicks.com/knicks-find-andre-drummond-insurance-without-trade",
+          "title": "Knicks can find Andre Drummond insurance without a trade if they're willing to wait",
+          "publisher": "Daily Knicks",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9LJ9npgXduod16LcJs4Ey9qzn5RLa9YipTMEzfgXb0ElTHndpLHnyk47JXIQ"
+        },
+        {
+          "url": "https://dailyknicks.com/knicks-search-andre-drummond-upgrade-harder",
+          "title": "Knicks' search for an Andre Drummond upgrade just got harder",
+          "publisher": "Daily Knicks",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyga4Qjqizmr23yABW3AtoHupGobRh0gP2cm-CAy10n0-6f_fcUS6q4DWjrYk"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/mike-brown-said-hes-comfortable-playing-andre/92906339007/",
+          "title": "Mike Brown said he’s comfortable playing Andre …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXkRxi4OXXJSB1tQw7f0GEb8b261XhcATAVbsNdNJh9OPv5XZphzZoBA-jGE"
+        }
+      ]
+    },
+    {
+      "query": "chris hemsworth",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+        "https://www.autospies.com/mobile/article_mobile.aspx?artid=132762",
+        "https://www.yahoo.com/entertainment/celebrity/articles/chris-hemsworth-home-burglary-reveals-193745710.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-Ssmsxkg7pcIgY4Sblsgx7C19fFO_g3ND1qSUVzTNnOTq5w0fTASn_IfA2Q",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+          "title": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-Ssmsxkg7pcIgY4Sblsgx7C19fFO_g3ND1qSUVzTNnOTq5w0fTASn_IfA2Q"
+        },
+        {
+          "url": "https://www.autospies.com/mobile/article_mobile.aspx?artid=132762",
+          "title": "Thieves Steal The God Of Thunder's RAM And Raptor From Garage At Fortified Castle",
+          "publisher": "AutoSpies.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFKPksynxCtn0wdagHwOBKNUd9BD9HKVLA6Bxt6nwJC-lmFCEskLvWk6nlnRU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/chris-hemsworth-home-burglary-reveals-193745710.html",
+          "title": "Chris Hemsworth Home Burglary Update Reveals Arrest Has Been Made, Details Here",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsCKdX1BNM4Lbbc9DhlKt8NA1E7yT4qYP1wNFQmz-u0yssqEBdXvOvCre4oM"
+        }
+      ]
+    },
+    {
+      "query": "cfp bracket",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/college-football-playoff-bubble-watch-teams-week-12-2026/",
+        "https://www.si.com/college-football/week-12-winners-and-losers-byu-survives-friendliest-game-year",
+        "https://www.nytimes.com/athletic/7792879/2026/11/19/college-football-playoff-chaos-brackets-scenarios/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX3i3TNQ57KTDdxy8eFh_Z5mwT1QwGfr2U6GtOvISn03xatMc3vEIlGDrSM4",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-playoff-bubble-watch-teams-week-12-2026/",
+          "title": "College Football Playoff bubble: Where Ohio State, Wake Forest, BYU, others stand after Week 12 upsets",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBX3i3TNQ57KTDdxy8eFh_Z5mwT1QwGfr2U6GtOvISn03xatMc3vEIlGDrSM4"
+        },
+        {
+          "url": "https://www.si.com/college-football/week-12-winners-and-losers-byu-survives-friendliest-game-year",
+          "title": "College Football Week 12 Winners and Losers: BYU Survives the Friendliest Game of the Year",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_qRIGfkIkss3cNR-7fcDetvceqv2DMOkbWrOUQwigqi--OPbOw1yhLT6EIgs"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7792879/2026/11/19/college-football-playoff-chaos-brackets-scenarios/",
+          "title": "Boise hosting Bama? 6 Big Ten teams? Welcome to College Football Playoff chaos",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSYxhGmhdcRHMcTrcPMPLaWyrnmCmTPdwXr5SzfGX87-ADZZ6xUtLF4NJUvw"
+        }
+      ]
+    },
+    {
+      "query": "sec football standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://www.saturdaydownsouth.com/news/college-football/sec-power-rankings-where-all-16-teams-stand-after-week-11/",
+        "https://www.on3.com/teams/oklahoma-sooners/news/sec-rankings-show-how-tight-the-sec-is/",
+        "https://247sports.com/college/texas/article/2026-247sports-sec-football-poll-georgia-takes-the-top-spot-while-texas-makes-a-push-to-contend-for-a-title-292951565/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVG9YNnRUuT4mC-8lcojzyy44gviyQZGKNUzlBgVExL8VL_zZUbJhFELJJAKs",
+      "image_credit": "Saturday Down South",
+      "news": [
+        {
+          "url": "https://www.saturdaydownsouth.com/news/college-football/sec-power-rankings-where-all-16-teams-stand-after-week-11/",
+          "title": "SEC Power Rankings: Where all 16 teams stand after Week 11",
+          "publisher": "Saturday Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVG9YNnRUuT4mC-8lcojzyy44gviyQZGKNUzlBgVExL8VL_zZUbJhFELJJAKs"
+        },
+        {
+          "url": "https://www.on3.com/teams/oklahoma-sooners/news/sec-rankings-show-how-tight-the-sec-is/",
+          "title": "In the SEC, Who Follows Georgia?",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEIOtipD3doozA73J4JRpYJD4JJ0FIh_fjH9vTGavSsZHkUuJva1l7FHw3qG0"
+        },
+        {
+          "url": "https://247sports.com/college/texas/article/2026-247sports-sec-football-poll-georgia-takes-the-top-spot-while-texas-makes-a-push-to-contend-for-a-title-292951565/",
+          "title": "2026 247Sports SEC Football Poll: Georgia takes the top spot, while Texas makes a push to contend for a title",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrFogLk8vRDV9Q_-vMI5I56ouGaW_7NfHA0dGoegzJ0-UlXfTVTwZtoZAeWDU"
+        }
+      ]
+    },
+    {
+      "query": "dennis rodman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://www.basketballnetwork.net/old-school/isiah-thomas-on-how-chicago-bulls-failed-dennis-rodman",
+        "https://fadeawayworld.net/nba-media/toni-kukoc-explains-why-dennis-rodman-got-mad-when-bulls-won-by-30-points",
+        "https://sg.news.yahoo.com/wanted-draft-ex-cavs-star-160000958.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlJIGNtjttMRVxgQ04smwDRakvB29jp9F82vCTSVJIPVurIP4djHMefVqnuNA",
+      "image_credit": "Basketball Network",
+      "news": [
+        {
+          "url": "https://www.basketballnetwork.net/old-school/isiah-thomas-on-how-chicago-bulls-failed-dennis-rodman",
+          "title": "\"They didn't see that Rodman was crying out for help\" – Isiah Thomas on how Bulls failed Dennis Rodman",
+          "publisher": "Basketball Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlJIGNtjttMRVxgQ04smwDRakvB29jp9F82vCTSVJIPVurIP4djHMefVqnuNA"
+        },
+        {
+          "url": "https://fadeawayworld.net/nba-media/toni-kukoc-explains-why-dennis-rodman-got-mad-when-bulls-won-by-30-points",
+          "title": "Toni Kukoc Explains Why Dennis Rodman Got Mad When Bulls Won By 30 Points",
+          "publisher": "Fadeaway World",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM0HP2zUFD33RXiFN7vK18ePSzy-dUg6jhkPyWuc-WlaDhSooj_eJH3QGbVhg"
+        },
+        {
+          "url": "https://sg.news.yahoo.com/wanted-draft-ex-cavs-star-160000958.html",
+          "title": "‘He wanted to draft me’: Ex-Cavs star says Michael Jordan personally compared him to Dennis Rodman",
+          "publisher": "Yahoo News Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTf-zMqfnEQFIfS6iLCPluBDDW8AsZ2voxCL9NxMXXyWk7L9FUAfNR85ckrQd8"
+        }
+      ]
+    },
+    {
+      "query": "dusty may",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/dusty-may-says-lively-close-222247280.html",
+        "https://www.dallasnews.com/sports/mavericks/article/dereck-lively-injury-update-mavericks-dusty-may-22541850.php",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/i-asked-the-same-question-this-morning-close-is-a/92883163007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9wyq_I_iRgwsIai2dAFH_6V60D44Y1FHAV3hCATZO7xcKvGDlaFSv555tDCQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/dusty-may-says-lively-close-222247280.html",
+          "title": "Dusty May Says Lively Is Close, But Fans Know The Wait Is Long",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ9wyq_I_iRgwsIai2dAFH_6V60D44Y1FHAV3hCATZO7xcKvGDlaFSv555tDCQ"
+        },
+        {
+          "url": "https://www.dallasnews.com/sports/mavericks/article/dereck-lively-injury-update-mavericks-dusty-may-22541850.php",
+          "title": "Dereck Lively II injury update: Mavericks coach Dusty May says center is ‘progressing’",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5FZNZzh_KRZCHE3ou4AhrpNeqJ9Gf3Sx9IDmBCJdQDa7IfTf3UTDK3yPUNxU"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/i-asked-the-same-question-this-morning-close-is-a/92883163007/",
+          "title": "\"I asked the same question this morning & close is a …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-U_mQZKrvKRggGqMnub5w2_PrlhWvGUfUEDKVHaWJfqJ5S9eoPqj5dQQQluE"
+        }
+      ]
+    },
+    {
+      "query": "partidos de liga mx",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T00:40:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17540693/liga-mx-pelea-ultimos-boletos-liguilla-apertura-2026",
+        "https://www.si.com/mx/liga-mx/que-equipos-llegan-al-alza-y-quienes-a-la-baja-a-la-ultima-jornada-del-apertura-2026",
+        "https://cnnespanol.cnn.com/2026/11/20/deportes/liga-mx-estaran-cuatro-grandes-liguilla-apertura-2026-orix"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWsww0SGc_B1sE-efNuVvdkqlzdvTlql_s0V9SLhN715N-_r2YJ_CTfSFC17I",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17540693/liga-mx-pelea-ultimos-boletos-liguilla-apertura-2026",
+          "title": "¿Cómo está la pelea por los últimos boletos a la Liguilla?",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWsww0SGc_B1sE-efNuVvdkqlzdvTlql_s0V9SLhN715N-_r2YJ_CTfSFC17I"
+        },
+        {
+          "url": "https://www.si.com/mx/liga-mx/que-equipos-llegan-al-alza-y-quienes-a-la-baja-a-la-ultima-jornada-del-apertura-2026",
+          "title": "¿Qué equipos llegan al alza y quiénes a la baja a la última jornada del Apertura 2026?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUGHGUT23peiaHkRR-o15d4OzE5pQiyWZFyCHd5BUQuLmh7ZYxOdotkWmE6z0"
+        },
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/20/deportes/liga-mx-estaran-cuatro-grandes-liguilla-apertura-2026-orix",
+          "title": "Jornada decisiva en la Liga MX: ¿estarán los cuatro grandes en la fiesta del fútbol mexicano?",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQWXed6HY0bcFaGJf92qjpgpQyt_IBrbVuVl7Qz3Dq6IPTA8lJAfljbao72wQ"
+        }
+      ]
+    },
+    {
+      "query": "top 25 college football scores",
       "approx_searches": "2000+",
       "published_at": "2026-11-22T00:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7796316/2026/11/20/michigan-kyle-whittingham-fit-critisicm/",
-        "https://sports.yahoo.com/articles/michigan-football-insiders-list-kyle-202925445.html",
-        "https://www.wsj.com/sports/football/kyle-whittingham-michigan-b89849e2"
+        "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-ohio-state-vs-nebraska-byu-vs-kansas-and-more-202236067.html",
+        "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTf6j2P6SH2MEUAD-r12KkEaUBqJgvmGq6GgY42rISPhfsFBzNoKGIrrX7u-iQ",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7796316/2026/11/20/michigan-kyle-whittingham-fit-critisicm/",
-          "title": "Michigan hired Kyle Whittingham to clean up a mess. Instead he’s flirting with disaster - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/college-football/story/_/id/50541394/week-12-live-highlights",
+          "title": "Week 12 live: Tracking top moments and best highlights",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTf6j2P6SH2MEUAD-r12KkEaUBqJgvmGq6GgY42rISPhfsFBzNoKGIrrX7u-iQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7iit_8Yc9_QtYui1YAbr_N4amfjaJoUEuYOdk6DT0Pe_GZVmiqEKTjM2F6N4"
         },
         {
-          "url": "https://sports.yahoo.com/articles/michigan-football-insiders-list-kyle-202925445.html",
-          "title": "Michigan football insiders list out Kyle Whittingham’s 4 biggest sins that could cost him job",
+          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-ohio-state-vs-nebraska-byu-vs-kansas-and-more-202236067.html",
+          "title": "College football live updates, scores: LSU vs. Tennessee, UCLA vs. Michigan, Indiana vs. Washington and more",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvamtSWk91kombwEUzGZG7QpdlNLrLVqAv0-veP8Xz7-YzhjgINgDT9cRkUK0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjMvCgl8TbfQyEY7FzLIefotokFUh_6PrKOs1QVMSH4wk77juT9CSP9VIalKs"
         },
         {
-          "url": "https://www.wsj.com/sports/football/kyle-whittingham-michigan-b89849e2",
-          "title": "The Year Michigan Football Went From Disgrace to Disaster",
-          "publisher": "WSJ",
+          "url": "https://www.cbssports.com/college-football/news/college-football-picks-predictions-spread-odds-betting-lines-top-25-week-12-games/",
+          "title": "College football picks: Predictions against the spread, odds, betting lines for top 25 games in Week 12",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnHRKsCPn1lytmdtn8jpadbfXhMTnGdJv8sp5HhqNhXayvmIZjhOHrQUSFhTg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkTJOXKJhSggr6UHiyrCHTsJNhmuyldgM47DQ-k0jiZNviMmnHAuZX3ahOsN4"
         }
       ]
     },
@@ -73,286 +353,6 @@
           "publisher": "ESPN",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWi8Nw6ilb2m14uqcj6WEdSsEx8nKU782ThjNzTImENECT0KF8u9gAbVysHsI"
-        }
-      ]
-    },
-    {
-      "query": "pumas - monterrey",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://www.si.com/es-us/que-necesita-pumas-para-clasificar-a-la-liguilla-del-apertura-2026",
-        "https://www.rayados.com/es/noticias/21686/rayados-por-cierre-de-liguilla",
-        "https://mexico.as.com/futbol/futbol-mexicano/si-tijuana-vence-al-atlante-pumas-aun-esta-vivo-pero-requiere-de-este-marcador-ante-monterrey-y-dos-milagros-mas-f202611-n/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgOIaRxDT9Jo1nqJFIqzZRDbw2jVO7zRW9YoXwUSWpYmJA-_UJWSvGGcBSadk",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/es-us/que-necesita-pumas-para-clasificar-a-la-liguilla-del-apertura-2026",
-          "title": "¿Qué necesita Pumas para clasificar a la liguilla del Apertura 2026?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgOIaRxDT9Jo1nqJFIqzZRDbw2jVO7zRW9YoXwUSWpYmJA-_UJWSvGGcBSadk"
-        },
-        {
-          "url": "https://www.rayados.com/es/noticias/21686/rayados-por-cierre-de-liguilla",
-          "title": "RAYADOS, POR CIERRE DE LIGUILLA",
-          "publisher": "Rayados",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKLSBtsmVzMy1a4WV-HUUsQMgGC1YjtIr8U9aQnAWGjnkKiyeDTQT-waibh5E"
-        },
-        {
-          "url": "https://mexico.as.com/futbol/futbol-mexicano/si-tijuana-vence-al-atlante-pumas-aun-esta-vivo-pero-requiere-de-este-marcador-ante-monterrey-y-dos-milagros-mas-f202611-n/",
-          "title": "Si Tijuana vence al Atlante, Pumas aún está vivo, pero requiere de este marcador ante Monterrey y dos milagros",
-          "publisher": "AS México",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSsCifut7Mi826PanZDCzFtPZ3Ya4Y0Zs4VXalJYRQLuTWaFgKqcBqPDsqx0M"
-        }
-      ]
-    },
-    {
-      "query": "big 10",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://huskers.com/news/2026/11/20/vb-preview-big-ten-tournament",
-        "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament",
-        "https://www.indystar.com/picture-gallery/sports/college/2026/11/20/big-ten-volleyball-tournament-photos-at-the-fishers-event-center/92892413007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4hVAVvqO_q8HAY6J7iDNsJsFHxWWize520ACeY_IVpAkVYVonUABP7OHWKo",
-      "image_credit": "huskers.com",
-      "news": [
-        {
-          "url": "https://huskers.com/news/2026/11/20/vb-preview-big-ten-tournament",
-          "title": "VB Preview: Big Ten Tournament - University of Nebraska - Official Athletics Website",
-          "publisher": "huskers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa4hVAVvqO_q8HAY6J7iDNsJsFHxWWize520ACeY_IVpAkVYVonUABP7OHWKo"
-        },
-        {
-          "url": "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament",
-          "title": "No. 9 Badgers prepare for inaugural B1G Tournament",
-          "publisher": "Wisconsin Badgers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwUo_1VJKvtfFQDHzvv18sbUhePwsm0K4TwhEuZkteTzcOTsP0cQqhCVW4Ohw"
-        },
-        {
-          "url": "https://www.indystar.com/picture-gallery/sports/college/2026/11/20/big-ten-volleyball-tournament-photos-at-the-fishers-event-center/92892413007/",
-          "title": "The inaugural Big Ten volleyball tournament takes on the Fishers Event Center",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs6nC4cyYkqUH8UJJgRty39xysIpOKtvlaypL-GeJQ1sWvrwg_pRY35GfKNEU"
-        }
-      ]
-    },
-    {
-      "query": "best movies to stream right now",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/20/arts/tony-streaming/",
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/20/new-movies-streaming-netflix-hbo-max-disney-amazon-prime-video/92793087007/",
-        "https://www.messenger-inquirer.com/features/what-to-stream-gta-vi-always-lalisa-the-altruists-and-steps/article_0d8a91c5-0a40-5081-8019-983da4d53c71.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSYkgQkLj8fCp03x0Xg1hJpkQTpTvwmKXuiFcxzDQDbey39xla4ls-efAG0IU",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/20/arts/tony-streaming/",
-          "title": "Nicolas Cage in ‘Madden,’ a Bourdain biopic, plus more new movies and TV to watch this weekend",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSYkgQkLj8fCp03x0Xg1hJpkQTpTvwmKXuiFcxzDQDbey39xla4ls-efAG0IU"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/20/new-movies-streaming-netflix-hbo-max-disney-amazon-prime-video/92793087007/",
-          "title": "From 'Obsession' to 'Madden,' 10 movies you need to stream right now",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsOHLYjmax9SUWtd6xBd2EBZw7tFrhLtH23IQuLu7J3elR3tcjStdYFkp1Sik"
-        },
-        {
-          "url": "https://www.messenger-inquirer.com/features/what-to-stream-gta-vi-always-lalisa-the-altruists-and-steps/article_0d8a91c5-0a40-5081-8019-983da4d53c71.html",
-          "title": "What to Stream: 'GTA VI,' 'Always Lalisa,' 'The Altruists' and 'Steps'",
-          "publisher": "Messenger-Inquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9F3H6a3JlSfE7mHJ-_kYRQBQdPYUUQgfJOL1KpAKmIxDH_TQQXfcO0iysfho"
-        }
-      ]
-    },
-    {
-      "query": "parma shooting",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://fox8.com/news/multiple-injured-in-parma-shooting-incident-police/",
-        "https://www.wkyc.com/article/news/crime/parma-shooting-police-response-cuyahoga-county-ridge-road/95-072d2cec-8329-41b4-91bf-bcb23c3417cb",
-        "https://www.news5cleveland.com/news/local-news/parma-police-investigating-shooting-on-ridge-road"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk3WktOHDYF0e1Wfcmzqsyg81dd9-dwSHgKg6CSXKdsGm7gHyopndX484iP3g",
-      "image_credit": "FOX 8 News",
-      "news": [
-        {
-          "url": "https://fox8.com/news/multiple-injured-in-parma-shooting-incident-police/",
-          "title": "Multiple injured in Parma shooting incident: Police",
-          "publisher": "FOX 8 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQk3WktOHDYF0e1Wfcmzqsyg81dd9-dwSHgKg6CSXKdsGm7gHyopndX484iP3g"
-        },
-        {
-          "url": "https://www.wkyc.com/article/news/crime/parma-shooting-police-response-cuyahoga-county-ridge-road/95-072d2cec-8329-41b4-91bf-bcb23c3417cb",
-          "title": "Parma police on scene of Ridge Road shooting",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbTfnI-ZpXQFBz-s5eY48dvW5sU8nvtoIQYDbF7Jgegl3VEfY2BOkECGqJTlM"
-        },
-        {
-          "url": "https://www.news5cleveland.com/news/local-news/parma-police-investigating-shooting-on-ridge-road",
-          "title": "Parma Police investigating shooting on Ridge Road",
-          "publisher": "News 5 Cleveland WEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9n9VmgT1qNPuaUbcV7E2q8kCUQoGpxU-OBjvcwCZSA0_rlHnuXNDk525Ftpo"
-        }
-      ]
-    },
-    {
-      "query": "cal poly football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://mustangnews.net/bo-kelly-calpoly-final-season/",
-        "https://demokratis.co.id/en/bo-kelly-cal-poly-quarterback",
-        "https://www.limapagi.id/en/bo-kelly-cal-poly-quarterback"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWmGgsZR1OvznYdRhYeZ2K4OfJidIScUVP3TauaN2S1_QPcduofLgWr26rzsU",
-      "image_credit": "Mustang News",
-      "news": [
-        {
-          "url": "https://mustangnews.net/bo-kelly-calpoly-final-season/",
-          "title": "How Cal Poly's Bo Kelly Embraced the Backup Role",
-          "publisher": "Mustang News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWmGgsZR1OvznYdRhYeZ2K4OfJidIScUVP3TauaN2S1_QPcduofLgWr26rzsU"
-        },
-        {
-          "url": "https://demokratis.co.id/en/bo-kelly-cal-poly-quarterback",
-          "title": "Bo Kelly Stays Ready Through Cal Poly Quarterback Rotation",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPsHii9wOq-IEvLrseCyLF8PCLuxFyWcAC4dL4kDbH96sDRWQ3rQUbEuUpj9Y"
-        },
-        {
-          "url": "https://www.limapagi.id/en/bo-kelly-cal-poly-quarterback",
-          "title": "Bo Kelly Maintains Focus Through Cal Poly Backup Role",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPsHii9wOq-IEvLrseCyLF8PCLuxFyWcAC4dL4kDbH96sDRWQ3rQUbEuUpj9Y"
-        }
-      ]
-    },
-    {
-      "query": "la tech football",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T00:20:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/sports/nhl/event/2026/2998553/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NHL&tile=1",
-        "https://www.usatoday.com/sports/wncaab/event/2026/3008853/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=7",
-        "https://www.usatoday.com/sports/wncaab/event/2026/3023863/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=13"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LaN1693qnMRy2bS8cl-jWAMTjGJ0wlANRTwWRr_fHfgMmXTe2Yvn_GlYlSQ",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/sports/nhl/event/2026/2998553/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NHL&tile=1",
-          "title": "Pittsburgh Penguins at Nashville Predators - NHL Game Summary - Nov 21, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2LaN1693qnMRy2bS8cl-jWAMTjGJ0wlANRTwWRr_fHfgMmXTe2Yvn_GlYlSQ"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/wncaab/event/2026/3008853/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=7",
-          "title": "South Carolina Gamecocks at Providence Friars - WNCAAB Game Summary - Nov 21, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd5aXyRdagl2pFKmX0n5OQdmMSgNn6k0vQI-jLGXWqTB55o8vaGmDIdS1UQAg"
-        },
-        {
-          "url": "https://www.usatoday.com/sports/wncaab/event/2026/3023863/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=WNCAAB&tile=13",
-          "title": "Morgan State Lady Bears at Maryland Terrapins - WNCAAB Game Summary - Nov 21, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiK8iEODuN_91s7Kl6yp1EWYFnuw7d156lhKCnV7yA6Ewu7k8WCF-6OMfPyjs"
-        }
-      ]
-    },
-    {
-      "query": "grizzlies vs timberwolves",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T00:10:00Z",
-      "related_news_urls": [
-        "https://www.canishoopus.com/timberwolves-game-previews/71487/nba-thread-memphis-grizzlies-lamelo-ball",
-        "https://sports.yahoo.com/articles/final-injury-report-grizzlies-timberwolves-210000342.html",
-        "https://www.startribune.com/minnesota-timberwolves-memphis-grizzlies-score-today-lamelo-ball-stats-anthony-edwards-injury-update/601914499"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx--ScbgnRAwdDN8MNALz5wPh9lPhl7U_QwTCOA8jvjFWnHZe7Jl1P1KnywBI",
-      "image_credit": "Canis Hoopus",
-      "news": [
-        {
-          "url": "https://www.canishoopus.com/timberwolves-game-previews/71487/nba-thread-memphis-grizzlies-lamelo-ball",
-          "title": "Game Preview #17: Wolves vs Grizzlies Game Thread",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx--ScbgnRAwdDN8MNALz5wPh9lPhl7U_QwTCOA8jvjFWnHZe7Jl1P1KnywBI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/final-injury-report-grizzlies-timberwolves-210000342.html",
-          "title": "Final Injury Report for Grizzlies-Timberwolves: Will Cameron Boozer, Ty Jerome Play?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGQ5CS2cjx3FJA_4BXS_ynZzg8LzWsUHSbaGG3R_qSEg1Cy4yi0Qj3br98QTw"
-        },
-        {
-          "url": "https://www.startribune.com/minnesota-timberwolves-memphis-grizzlies-score-today-lamelo-ball-stats-anthony-edwards-injury-update/601914499",
-          "title": "Live: Wolves look to bounce back against Grizzlies as homestand continues",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUegIuouO4YWQtohX3tS21aQAIcisuVFtIdLdH9KfQG5xZBeNLpTiAHn9Q33A"
-        }
-      ]
-    },
-    {
-      "query": "clippers vs mavericks",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/mavs/news/mavericks-clippers-preview-mavs-developing-their-identity-every-day-in-practice",
-        "https://sports.yahoo.com/articles/mavericks-concerning-availability-ahead-saturday-231409360.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/karl-anthony-towns-illness-downgraded-to-out"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8hWXBQ3JFfV54fo9VQYhGkBITZOrIz9JCOIX3aOZvU6Y46bCZMAdf_ciPkAU",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/mavs/news/mavericks-clippers-preview-mavs-developing-their-identity-every-day-in-practice",
-          "title": "Mavericks-Clippers preview: Mavs developing their identity every day in practice",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8hWXBQ3JFfV54fo9VQYhGkBITZOrIz9JCOIX3aOZvU6Y46bCZMAdf_ciPkAU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mavericks-concerning-availability-ahead-saturday-231409360.html",
-          "title": "Mavericks Get Concerning Availability Update Ahead of Saturday’s Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiJTwWlI3JatQrMDT8qkHtJ0k_fQiDM2lBMvMzBrnWL3WSyY8_VIGcUxOTW08"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/karl-anthony-towns-illness-downgraded-to-out",
-          "title": "Karl-Anthony Towns (illness) downgraded to out",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0"
         }
       ]
     }
