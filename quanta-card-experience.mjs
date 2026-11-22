@@ -198,6 +198,10 @@ function mediaPlayer(root,id,initialVideo=null){
   panel.append(preview,node('h4','',initialVideo.name),
    node('p','qcx-note','Owner-submitted public video · publisher and exact publication date not independently verified · general media only'),
    link('Original video on YouTube',initialVideo.sourceUrl));
+  // Only the exact source-specific YouTube Shorts route is offered; never
+  // infer a channel, account, or additional Shorts from a single video.
+  if(initialVideo.secondUrl==='https://www.youtube.com/shorts/'+initialVideo.reviewedYouTubeVideoId)
+   panel.append(link('Open Shorts link',initialVideo.secondUrl));
  }
  note(panel,'Paste a public '+(id==='youtube'?'YouTube video or Short':id==='tiktok'?'TikTok video':'Spotify track, album or playlist')+' URL. Nothing is loaded until you press Play.');
  const form=node('form','qcx-search-form');const field=input('Paste an original '+id+' URL','Public media URL');
