@@ -169,8 +169,8 @@ export function mountMixedCreatorCard(root,card){
   if(saved.some(raw=>JSON.stringify(parseCreatorInput(raw))===JSON.stringify(parsed))){
    addStatus.textContent='That channel or video is already in your list.';return;
   }
-  if(parsed.type==='channel'&&channels().length>=8){
-   addStatus.textContent='Eight channels at a time are supported. Use existing channels or add individual videos.';return;
+  if(parsed.type==='channel'&&channels().length>=CREATOR_CHANNELS.length+8){
+   addStatus.textContent='Up to eight additional channel links are supported. Use existing channels or add individual videos.';return;
   }
   if(saved.length>=80){addStatus.textContent='Your saved list is full (80 links).';return;}
   const normalized=parsed.type==='video'?'https://www.youtube.com/watch?v='+parsed.videoId:
