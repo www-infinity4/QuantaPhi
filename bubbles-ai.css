@@ -515,3 +515,20 @@ body .ba-panel .ba-bits-proof{font-size:12px}
  .ba-panel .ba-note .ba-remove{width:auto;max-width:100%}
 }
 @media(prefers-reduced-motion:reduce){.ba-panel .ba-note{transition:none!important}}
+
+/* Byte orb / training wheels — local optional composer aid, never wallet auth. */
+.ba-byte-assist{padding:5px 8px;border:1px solid #bed4dc;border-radius:12px;background:#f5fbfc;color:#18384a;font:500 14px/1.5 system-ui,sans-serif}
+.ba-byte-assist>summary{cursor:pointer;min-height:44px;display:flex;align-items:center;font-weight:750;touch-action:manipulation}
+.ba-byte-assist .ba-muted{font-size:13px!important;color:#375160}
+.ba-byte-orb-line{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:5px 0}
+.ba-byte-orb{display:inline-flex;flex:none;align-items:center;justify-content:center;border-radius:50%;
+ background:radial-gradient(circle at 32% 24%,#fff 5%,#d5f7ff 30%,#63d6eb 72%,#2e679f 100%);
+ box-shadow:inset -3px -3px 6px #2a456855,0 1px 5px #274c5b55;color:#173255;
+ min-width:22px;min-height:22px;font:800 16px/1 system-ui,sans-serif;overflow:hidden}
+.ba-byte-orb-status{flex:1;min-width:145px;font-size:13px;overflow-wrap:anywhere}
+.ba-byte-suggestion{font-size:13px;line-height:1.5;margin:5px 0 9px;overflow-wrap:anywhere}
+.ba-byte-assist-controls{display:flex;flex-wrap:wrap;gap:7px}
+.ba-panel .ba-byte-assist button{min-height:44px;font-size:13px;border-color:#86acba;background:#fff;color:#173c50;padding:8px 10px}
+.ba-panel .ba-byte-assist button[hidden]{display:none!important}
+@media(max-width:440px){.ba-byte-assist-controls>*{flex:1 1 44%;min-width:0}}
+@media(prefers-reduced-motion:reduce){.ba-byte-orb{transition:none;animation:none}}
