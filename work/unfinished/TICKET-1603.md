@@ -402,3 +402,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **State / dot / progress:** `implementing` / 🔴 / estimated 2 of 6 gates (original source recorded, regression defined; CI, review, merge, deployment/Android acceptance outstanding). One documented session; remaining unknown.
 - **Lease:** No authenticated Moltnook lease was claimed; GitHub branch action is not runner lease or identity proof.
 - **Next executable action:** Inspect current draft PR's exact-head checks (including Creator source-and-mobile), independently review source + copyright boundary, reconcile latest main if needed, then permitted merge and Cloudflare/Android readback. Do not mark deployed or complete without receipts.
+
+## Session · Owner Love Rose featured YouTube Quick Card · 2026-11-22
+
+- **Owner input:** https://youtu.be/d_nGb3NXIKA?is=q6XbkQIzRmhjMFA0 — “quick card please and love rose to the top”.
+- **Scope:** existing issue #1603, owner-submitted YouTube/Oracle Public Media catalog and owner View More list. No new provider, renderer, channel archive, coin ledger or payout.
+- **Source title:** “Love Rose” is **owner-selected display text**, not a verified YouTube title. YouTube page/oEmbed throttled; no verified uploader, publication timestamp, age category, embed/rights claim. Canonical watch ID: `d_nGb3NXIKA`.
+- **Patch:** new source record at index zero of `reviewedLinks` generating an existing Quick Card; minimal regression test asserts first position, one unique video, original URL, Media/Public routing, metadata boundaries and existing thumbnail path. Prior first-entry test now targets its original ID rather than relying on list position.
+- **TDD:** test-first commit `d1c588947d4a0cce1d309073c73ae95d89e87bad`; implementation commit `75811394a2e73539ad36e9ddc8eb38915195d4d7`. A local Node RED/GREEN run was **not** observed; code commits are not test results.
+- **Evidence scope:** source-staged, CI/review/merge/deploy/live Android playback/Stop **not verified**.
+- **Lease:** no authenticated coordinator lease observed or claimed in this connector session.
+- **Next executable action:** inspect the exact-head GitHub Actions Node/creator Quick Card workflow results on this branch and correct any failures, then independent source review and eligible merge. Cloudflare production and physical Android require separate readback.
+- **Scoped completion estimate:** 2/6 tracks (source record and test code authored); remaining: executable tests/CI, review, merge, browser/Android acceptance. 1 session; sessions remaining unknown.
