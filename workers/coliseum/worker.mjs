@@ -29,7 +29,7 @@ async function stateUser(req){
  }finally{clearTimeout(timer)}
 }
 async function pseudonym(username,pepper){
- const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),'HMAC',{hash:'SHA-256'},false,['sign']);
+ const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  const digest=await crypto.subtle.sign('HMAC',h,new TextEncoder().encode(username));
  return [...new Uint8Array(digest)].slice(0,16).map(x=>x.toString(16).padStart(2,'0')).join('');
 }
