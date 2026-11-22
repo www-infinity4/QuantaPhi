@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T18:01:18.434858Z",
+  "checked_at": "2026-11-22T18:30:50.143126Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "thanksgiving nfl games",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T17:40:00Z",
+      "query": "is taylor swift at the chiefs game today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:10:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/how-to-buy-detroit-lions-vs-chicago-bears-nfl-tickets-thanksgiving/92866374007/",
-        "https://dawindycity.com/bears-thanksgiving-day-showdown-continues-to-look-a-bit-easier",
-        "https://www.the-sun.com/sport/17334974/nfl-thanksgiving-schedule-change/"
+        "https://www.imdb.com/es/news/ni66123344/?ref_=nwc_art_perm",
+        "https://sports.yahoo.com/articles/taylor-swift-attend-chiefs-bills-165559006.html",
+        "https://heavy.com/sports/nfl/kansas-city-chiefs/taylor-swift-status-for-attending-nwsl-championship-game/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1-Wnv2DlHlGgLINm7LMGxZQsaPLpXRZf3npLswaLM8DtIa9So74YI1_bVX0",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/shopping/sports/tickets/2026/11/22/how-to-buy-detroit-lions-vs-chicago-bears-nfl-tickets-thanksgiving/92866374007/",
-          "title": "Lions vs Bears NFL Thanksgiving tickets drop under $300, shop now",
-          "publisher": "USA Today",
+          "url": "https://www.imdb.com/es/news/ni66123344/?ref_=nwc_art_perm",
+          "title": "Is Taylor Swift Going to Travis Kelce’s Chiefs Game Today?",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1-Wnv2DlHlGgLINm7LMGxZQsaPLpXRZf3npLswaLM8DtIa9So74YI1_bVX0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4"
         },
         {
-          "url": "https://dawindycity.com/bears-thanksgiving-day-showdown-continues-to-look-a-bit-easier",
-          "title": "Bears Thanksgiving Day showdown continues to look a bit easier",
-          "publisher": "Da Windy City",
+          "url": "https://sports.yahoo.com/articles/taylor-swift-attend-chiefs-bills-165559006.html",
+          "title": "Will Taylor Swift Attend Chiefs-Bills Thanksgiving Game? Travis Kelce’s Wife Faces Decision",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssKv4Gu4e5Vzl6ki49fhvmE0paZU1MSpPi7idQVbvfrafjelmHnERWFRK9Qk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_UKZJmglcL8LHijF7U3rtenxlY1c99qaX3eZV9KaKj9dkoHYzxExzSxbC7DY"
         },
         {
-          "url": "https://www.the-sun.com/sport/17334974/nfl-thanksgiving-schedule-change/",
-          "title": "NFL urged to make major schedule change involving Dallas Cowboys on Thanksgiving",
-          "publisher": "The Sun",
+          "url": "https://heavy.com/sports/nfl/kansas-city-chiefs/taylor-swift-status-for-attending-nwsl-championship-game/",
+          "title": "Taylor Swift’s Status for Attending NWSL Championship Game",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBh8p28PX4lML7lWE7mjQckL9_MK2n_7j42Shoe1Le-FgtofVxqyes8xHVbfQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIRqQy_JtDQQOHSyiKJy_0I5BTLgkDOFIPS4AIsMCJsu-vKU0PJ21GaH_CKh4"
         }
       ]
     },
     {
-      "query": "carlos alcaraz",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T17:30:00Z",
+      "query": "tyler shough",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T18:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-score-result-alcaraz-zverev/zE3gyPX7aO1D/",
-        "https://sports.yahoo.com/articles/alexander-zverev-completely-silenced-one-110000109.html",
-        "https://www.kxan.com/sports-general/ap-alcaraz-shakes-off-thigh-injury-to-beat-shelton-and-reach-championship-match-at-atp-finals/"
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-shough-is-the-saints-leading-rusher-with-187-yards-this-season",
+        "https://www.neworleanssaints.com/video/jeremiah-wright-interview-saints-panthers-postgame-11-16-2026",
+        "https://www.louisianasports.net/2026/11/14/saints-run-game-must-pave-way-to-rebound/latest-stories/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6oqYcMSQBVEuvmIKq8qelJ4mqgR24ZMYrqNJR892zrEK1IYW2-_xOEs-Twiw",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw6rMzaDvF-IBFqqjNzmtl2HlvI4wP13ck-02BpWusXnMcVo2pFfygJLF9d7g",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/atp-finals-2026-live-updates-score-result-alcaraz-zverev/zE3gyPX7aO1D/",
-          "title": "ATP Finals 2026 live updates: Carlos Alcaraz and Alexander Zverev meet in championship match",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-shough-is-the-saints-leading-rusher-with-187-yards-this-season",
+          "title": "Tyler Shough is the Saints’ leading rusher, with 187 yards this season",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw6rMzaDvF-IBFqqjNzmtl2HlvI4wP13ck-02BpWusXnMcVo2pFfygJLF9d7g"
+        },
+        {
+          "url": "https://www.neworleanssaints.com/video/jeremiah-wright-interview-saints-panthers-postgame-11-16-2026",
+          "title": "Jeremiah Wright on o-line play, run game 11/16/2026",
+          "publisher": "New Orleans Saints",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVFOrjWm7UYj8450SdGyxdUQi3MZMLKwShNTdMWiAkAL3Tna1YX7w4knZ57bY"
+        },
+        {
+          "url": "https://www.louisianasports.net/2026/11/14/saints-run-game-must-pave-way-to-rebound/latest-stories/",
+          "title": "Saints run game must pave way to rebound",
+          "publisher": "Louisiana Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyVQ2l9XPOytY3lng1UqWjG3ourziFZEhwhCLEEJOlndJ93SC1JrSe-imkuM"
+        }
+      ]
+    },
+    {
+      "query": "dallas cowboys game today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T18:10:00Z",
+      "related_news_urls": [
+        "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
+        "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
+        "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
+      "news": [
+        {
+          "url": "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
+          "title": "Man dies days after fight at Dallas Cowboys game",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
+          "title": "Police investigate man's death after alleged altercation at 49ers-Cowboys game",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4upwL0cAQwvAnWJ7uXF81fniug5UXLhccgpvU5JTpKF3aH5bjofsIgQ41ZPo"
+        },
+        {
+          "url": "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6",
+          "title": "Family of man who died after altercation at Dallas Cowboys game speaks out about 'tragic accident'",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ul-ntuuNDuR6lH2Yf98vrXMrDms7b18rtd6WY3p3JjYOKLYM08d2jUwbp54"
+        }
+      ]
+    },
+    {
+      "query": "rashod bateman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:10:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/chargers-ravens-on-monday-night-football-what-we-learned-from-los-angeles-23-20-win-over-baltimore",
+        "https://www.nytimes.com/athletic/7789332/2026/11/17/projected-nfl-draft-order-2027-chargers-ravens/",
+        "https://www.espn.com/nfl/story/_/id/50508744/kyle-hamilton-says-ravens-disgracing-standards-loss-previously-winless-chargers"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6l6qvxcqm-I5PMKjVDV1Y4anXPqpKZVWiXmv8ydBTVkwojefd9WAf3LpiQyI",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/chargers-ravens-on-monday-night-football-what-we-learned-from-los-angeles-23-20-win-over-baltimore",
+          "title": "Chargers-Ravens on 'Monday Night Football': What We Learned from Los Angeles' 23-20 win over Baltimore",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6l6qvxcqm-I5PMKjVDV1Y4anXPqpKZVWiXmv8ydBTVkwojefd9WAf3LpiQyI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7789332/2026/11/17/projected-nfl-draft-order-2027-chargers-ravens/",
+          "title": "Projected 2027 NFL Draft order: Chargers climb out of No. 1 spot; Ravens’ top-10 odds soar",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6oqYcMSQBVEuvmIKq8qelJ4mqgR24ZMYrqNJR892zrEK1IYW2-_xOEs-Twiw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnkyn1J3QzBfRCq6kRx9la1de_SHhPc-1m3tW85jW6_6a_YEeva4bsswYBlnQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/alexander-zverev-completely-silenced-one-110000109.html",
-          "title": "Alexander Zverev has completely silenced one criticism after beating Daniil Medvedev in Turin",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50508744/kyle-hamilton-says-ravens-disgracing-standards-loss-previously-winless-chargers",
+          "title": "Kyle Hamilton says Ravens 'disgracing' standards after losing to 0-8 Chargers",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD6giE8wNnihmhSRbVt1S8RwwhZcvP4S45sTAPg_yeTtH4ZkZqnpEi9O1QaU8"
-        },
-        {
-          "url": "https://www.kxan.com/sports-general/ap-alcaraz-shakes-off-thigh-injury-to-beat-shelton-and-reach-championship-match-at-atp-finals/",
-          "title": "Alcaraz shakes off thigh injury to beat Shelton and reach championship match at ATP Finals",
-          "publisher": "KXAN Austin",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpiUjSlBYbu0NBH8orRvrCynlra5CrzQ-F9Of3sUWnjaWuNPW2akYAtR2s8tw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTroheLyWv4V55fvqORowlAymqcVmASzYFXZtAersdV02cTn1wQSsgBStWtNzw"
         }
       ]
     },
     {
-      "query": "who should i start",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T17:30:00Z",
-      "related_news_urls": [
-        "https://www.rotoballer.com/weekend-waiver-wire-rankings-fantasy-football-week-11-2026/1999810",
-        "https://www.fantasysp.com/start/nfl/878757/pat-bryant-or-tetairoa-mcmillan",
-        "https://www.yardbarker.com/nfl/articles/broncos_x_factor_on_offense_revealed_as_bo_nix_and_sean_payton_find_comfort_in_wr/s1_17789_44575018"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDe1euwW815ujb2-KcGRUSx8TKkqKzSWYhu_mZDcYpMEIH0Uc4pdbOvhW-3UE",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/weekend-waiver-wire-rankings-fantasy-football-week-11-2026/1999810",
-          "title": "Weekend Waiver Wire Rankings - Fantasy Football Week 11 (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDe1euwW815ujb2-KcGRUSx8TKkqKzSWYhu_mZDcYpMEIH0Uc4pdbOvhW-3UE"
-        },
-        {
-          "url": "https://www.fantasysp.com/start/nfl/878757/pat-bryant-or-tetairoa-mcmillan",
-          "title": "Pat Bryant or Tetairoa McMillan",
-          "publisher": "FantasySP",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi3kEB_kl1G1Zk0pLItB3TZKRQNH9TS-JqzaPs1gpqT0Q4B4GBEsTh1JZ2hSU"
-        },
-        {
-          "url": "https://www.yardbarker.com/nfl/articles/broncos_x_factor_on_offense_revealed_as_bo_nix_and_sean_payton_find_comfort_in_wr/s1_17789_44575018",
-          "title": "Broncos’ X-Factor on Offense Revealed as Bo Nix and Sean Payton Find Comfort in WR",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt1cQCBqMekP6oS7KRaJH5kbbwAonD4DIhcVYCONOkLBewtyCTaFAW2qe_kl8"
-        }
-      ]
-    },
-    {
-      "query": "guy fieri",
+      "query": "detective",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T17:30:00Z",
+      "published_at": "2026-11-22T18:10:00Z",
       "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
-        "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-        "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/"
+        "https://www.cbsnews.com/colorado/news/denver-police-detective-accused-dui-hit-run-driving-city-issued-suv/",
+        "https://hoodline.com/2026/11/denver-detective-accused-of-dui-fled-on-rim-for-a-mile-in-city-suv-deputies-say/",
+        "https://www.inkl.com/news/denver-detective-accused-of-dui-fleeing-crash-in-city-suv-deputies-stop-identify-her-at-gunpoint"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo",
-      "image_credit": "PennLive.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7HMXwVl8vOCSkLhegpI2ylQPmhf9st3zX3WxZdkKVd1WTr9ZwC-S-0A_PuY",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
-          "title": "Guy Fieri’s heartbreaking post has fans sending prayers: ‘He is looking down’",
-          "publisher": "PennLive.com",
+          "url": "https://www.cbsnews.com/colorado/news/denver-police-detective-accused-dui-hit-run-driving-city-issued-suv/",
+          "title": "Denver police detective accused of DUI hit-and-run was driving city-issued SUV, sheriff's report says",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7HMXwVl8vOCSkLhegpI2ylQPmhf9st3zX3WxZdkKVd1WTr9ZwC-S-0A_PuY"
         },
         {
-          "url": "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-          "title": "Guy Fieri Shares Birthday Tribute for Late Father Jim, Who Died in 2024: ‘Miss Him Every Day’",
-          "publisher": "People.com",
+          "url": "https://hoodline.com/2026/11/denver-detective-accused-of-dui-fled-on-rim-for-a-mile-in-city-suv-deputies-say/",
+          "title": "Denver Detective DUI Hit-and-Run in City SUV: What Happened",
+          "publisher": "Hoodline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4pLzJ1AZt9ADVOUn_WK1mKUtSuZK13funbamPV4j-b6ax2AW-RQiGuG6utX8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_z6KKIYw3x9vPy0mckZ_CSQpZBMjfjq1-uJPc74KXRaFZGNgygJzXt7hDbKU"
         },
         {
-          "url": "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/",
-          "title": "Guy Fieri Honors His Late Father With A Heartbreaking Tribute On Instagram: ‘Miss Him Everyday’",
-          "publisher": "Delish",
+          "url": "https://www.inkl.com/news/denver-detective-accused-of-dui-fleeing-crash-in-city-suv-deputies-stop-identify-her-at-gunpoint",
+          "title": "Denver detective accused of DUI, fleeing crash in city SUV; deputies stop, identify her at gunpoint",
+          "publisher": "inkl",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl0blc485AEZtaVub98uck5YYPouXVq3B_FD5w0dRTJ8n3qzwIelqt-Ob4x4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOfBExz3pMCjJozExskJ5SMWwhbC8IJ4nJX-XuKU1i6vsEPhlcO-poako1pw"
         }
       ]
     },
     {
-      "query": "barcelona - athletic club",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T17:20:00Z",
-      "related_news_urls": [
-        "https://onefootball.com/es/noticias/jensen-y-fiamma-ya-superan-los-registros-de-la-temporada-pasada-43816041",
-        "https://kirolakeitb.eus/es/futbol/equipos/eibar/2026/11/21/eibar-pierde-ante-atletico-madrid-dos-puntos-del-descenso/",
-        "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-athletic-club-horario-donde-ver-tv-online-liga-f-202627-dazn/1iev9c8om9tqp1gj4052a2shb5"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQag6EOziUC0mY1rgoBTEUeOgPSSDbWQcoItDLgV0iWxzjveJdObujlWKfwYyU",
-      "image_credit": "OneFootball",
-      "news": [
-        {
-          "url": "https://onefootball.com/es/noticias/jensen-y-fiamma-ya-superan-los-registros-de-la-temporada-pasada-43816041",
-          "title": "Jensen y Fiamma ya superan los registros de la temporada pasada",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQag6EOziUC0mY1rgoBTEUeOgPSSDbWQcoItDLgV0iWxzjveJdObujlWKfwYyU"
-        },
-        {
-          "url": "https://kirolakeitb.eus/es/futbol/equipos/eibar/2026/11/21/eibar-pierde-ante-atletico-madrid-dos-puntos-del-descenso/",
-          "title": "El Eibar pierde ante el Atlético de Madrid y se sitúa a dos puntos del descenso (1-3)",
-          "publisher": "kirolakeitb.eus",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpYmunAtHW6HX0X1jflisvTU9HGMfQQAVGUqtEB1myubKqtCIlnnWByroRd_I"
-        },
-        {
-          "url": "https://www.dazn.com/es-ES/news/futbol/fc-barcelona-athletic-club-horario-donde-ver-tv-online-liga-f-202627-dazn/1iev9c8om9tqp1gj4052a2shb5",
-          "title": "FC Barcelona vs Athletic Club: horario y dónde ver hoy por TV y online Liga F 2026/27 a través de DAZN",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2WL8rXAx9KSKY6KgS55FjLIFODQt8ZijQnn27PiFBMmFhODR-cHMFIxuxLi0"
-        }
-      ]
-    },
-    {
-      "query": "barcelona vs athletic club",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T17:20:00Z",
-      "related_news_urls": [
-        "https://barcauniversal.com/one-year-back-at-the-spotify-camp-nou-a-review-of-barcelonas-numbers-at-home/",
-        "https://cwibc.co.id/en/barcelona-athletic-liga-f-matchday"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh6wDEoF2NRupy0FzkMF-g-apP87ZdifjNTyc-GIGyvIRuQahEwXEjkqnjZM",
-      "image_credit": "Barca Universal",
-      "news": [
-        {
-          "url": "https://barcauniversal.com/one-year-back-at-the-spotify-camp-nou-a-review-of-barcelonas-numbers-at-home/",
-          "title": "One year back at the Spotify Camp Nou: A review of Barcelona’s numbers at home",
-          "publisher": "Barca Universal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyh6wDEoF2NRupy0FzkMF-g-apP87ZdifjNTyc-GIGyvIRuQahEwXEjkqnjZM"
-        },
-        {
-          "url": "https://cwibc.co.id/en/barcelona-athletic-liga-f-matchday",
-          "title": "Barcelona Hosts Athletic Club in Liga F Matchday 12",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlIcwwZL_71iNVg090KvN3VHryNzueR9ptwvnoo7jdM-I-i9vPR4KkT4Ercns"
-        }
-      ]
-    },
-    {
-      "query": "michael strahan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T17:20:00Z",
-      "related_news_urls": [
-        "https://people.com/michael-strahan-rare-family-photos-kids-12268465",
-        "https://sports.yahoo.com/articles/im-still-not-over-tom-013741872.html",
-        "https://bleacherreport.com/articles/25535992-tom-brady-eli-manning-troll-each-other-signed-jerseys-super-bowl-rivalry-new-ig-photos"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNOHB9bwGFXLdTWPqT7NstCahXEXKh2wlXJhMWrI5zzM890gvyVwWNglkhUEA",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/michael-strahan-rare-family-photos-kids-12268465",
-          "title": "Happy 55th Birthday, Michael Strahan! See the Good Morning America Anchor’s Sweetest Family Photos with His Kids",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNOHB9bwGFXLdTWPqT7NstCahXEXKh2wlXJhMWrI5zzM890gvyVwWNglkhUEA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/im-still-not-over-tom-013741872.html",
-          "title": "\"I'm Still Not Over It\": Tom Brady Makes Honest Admission on Painful Super Bowl XLII Loss to Eli Manning as Netflix Announces Documentary",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9iQmN-hb79I1Kb1NIer1SR-XVg5KdjhkBO8O5mQvU7UwYjBa54-55ZfF7PO4"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25535992-tom-brady-eli-manning-troll-each-other-signed-jerseys-super-bowl-rivalry-new-ig-photos",
-          "title": "Tom Brady, Eli Manning Troll Each Other With Signed Jerseys from Super Bowl Rivalry in New IG Photos",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBxWvetc9cS24YFHiriYSBlbLPQcpuHa_2LwF_ca_BQg9efNIJKv6R9JmYlGE"
-        }
-      ]
-    },
-    {
-      "query": "jaguars schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T17:20:00Z",
-      "related_news_urls": [
-        "https://www.jaguars.com/news/o-zone-big-one-in-jersey",
-        "https://www.cbssports.com/fantasy/football/news/jaguars-jessie-bates-ready-for-jaguars-debut/",
-        "https://sports.yahoo.com/articles/former-falcons-star-jessie-bates-143052821.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSorMQIwoDVrLvtrIPHCi5v6Bmk1Z7kWfcNyiOLRz7sWzWnL3lPc-Nn-4QDck",
-      "image_credit": "Jacksonville Jaguars",
-      "news": [
-        {
-          "url": "https://www.jaguars.com/news/o-zone-big-one-in-jersey",
-          "title": "O-Zone: Big One in Jersey",
-          "publisher": "Jacksonville Jaguars",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSorMQIwoDVrLvtrIPHCi5v6Bmk1Z7kWfcNyiOLRz7sWzWnL3lPc-Nn-4QDck"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/jaguars-jessie-bates-ready-for-jaguars-debut/",
-          "title": "Jaguars' Jessie Bates: Ready for Jaguars debut",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Bxcs78XEKWBqsrpUPHzqX7maM5BhBDjW_ovucbaKWTdjAanaRVm7xqeiOg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/former-falcons-star-jessie-bates-143052821.html",
-          "title": "Former Falcons star Jessie Bates to make Jaguars debut vs. Giants",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTakBX27ogeLOMoNuEI0qq1PRikqSSAtudZWgPbYmTlkTeR7rWczWHseF7tvBM"
-        }
-      ]
-    },
-    {
-      "query": "miami ohio basketball",
+      "query": "ollie gordon",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T17:20:00Z",
+      "published_at": "2026-11-22T18:10:00Z",
       "related_news_urls": [
-        "https://miamiredhawks.com/news/2026/11/20/mens-basketball-redhawks-prepare-to-face-off-with-uic-in-the-jacksonville-classic",
-        "https://www.accuscore.com/game/cmwqvu9hpw2evro01ajblr8eg",
-        "https://www.dimers.com/cbb/news/miami-oh-vs-illinois-chicago-prediction-11-22-2026-ac"
+        "https://www.oddsshopper.com/articles/expert-picks/underdog-picks-2026-11-22",
+        "https://www.si.com/nfl/dolphins/onsi/dolphins-2026-midseason-awards-from-ollie-to-chop-to-uche-01m7x3xsyqbn",
+        "https://www.audacy.com/wqam/video/chris-perkins-names-malik-washington-as-the-dolphins-midseason-mvp-his-take-on-mccord-s-debut-xbyfmp2"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLj71jcFCwhHtj1dFQd6ZvQkAoC_DcTF8CokAdY7B07wr_pK6mJudORBSOa8A",
-      "image_credit": "Miami University RedHawks",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFD8eJmm-QEN_xppxfTE2N-9-uusY392BjSEJGPJaBo4fy8CJTNmchSp0pwZY",
+      "image_credit": "OddsShopper",
       "news": [
         {
-          "url": "https://miamiredhawks.com/news/2026/11/20/mens-basketball-redhawks-prepare-to-face-off-with-uic-in-the-jacksonville-classic",
-          "title": "RedHawks Prepare to Face Off With UIC in the Jacksonville Classic",
-          "publisher": "Miami University RedHawks",
+          "url": "https://www.oddsshopper.com/articles/expert-picks/underdog-picks-2026-11-22",
+          "title": "Underdog NFL Picks Sunday: Monangai, Ollie Gordon Higher",
+          "publisher": "OddsShopper",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLj71jcFCwhHtj1dFQd6ZvQkAoC_DcTF8CokAdY7B07wr_pK6mJudORBSOa8A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFD8eJmm-QEN_xppxfTE2N-9-uusY392BjSEJGPJaBo4fy8CJTNmchSp0pwZY"
         },
         {
-          "url": "https://www.accuscore.com/game/cmwqvu9hpw2evro01ajblr8eg",
-          "title": "Miami (OH) vs UIC Prediction (Nov 22): UIC 55% — Odds & Live Score",
-          "publisher": "AccuScore",
+          "url": "https://www.si.com/nfl/dolphins/onsi/dolphins-2026-midseason-awards-from-ollie-to-chop-to-uche-01m7x3xsyqbn",
+          "title": "Dolphins 2026 Midseason Awards: From Ollie to Chop to Uche",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy2kKtNHCAjoVGr7oWSP4btbPmHofFBDpvFswhHiRJU-YMChjIAJDA8XHUaOU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQflAfxO3Kozw1P-uAOyvixt5AZER5ENt2l1mw5hWeE7pb29JZhcBIz3Fw0C4c"
         },
         {
-          "url": "https://www.dimers.com/cbb/news/miami-oh-vs-illinois-chicago-prediction-11-22-2026-ac",
-          "title": "Miami (OH) vs. Illinois-Chicago prediction, odds, pick for Nov. 22, 2026",
-          "publisher": "Dimers",
+          "url": "https://www.audacy.com/wqam/video/chris-perkins-names-malik-washington-as-the-dolphins-midseason-mvp-his-take-on-mccord-s-debut-xbyfmp2",
+          "title": "Chris Perkins names Malik Washington as the Dolphins midseason MVP | His take on McCord's debut",
+          "publisher": "Audacy",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkHVvT2ibWuk9uSjG56Kx2vEsNDFHJUTSTdk3ZNrlFjn7CONr-sH1y7ujB7Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDojLV5B1DSvnlX6ySQY_J5lRBSt0uXt9H0D8Eqe8ShBMYshIzfIWRmqwdLk"
         }
       ]
     },
     {
-      "query": "new york yankees catcher trade",
+      "query": "dolphins qb",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T17:20:00Z",
+      "published_at": "2026-11-22T18:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/yankees-trade-pitch-lands-cardinals-073522943.html",
-        "https://sports.yahoo.com/articles/yankees-just-sign-carson-kelly-160326746.html",
-        "https://yanksgoyard.com/yankees-just-got-a-cheap-carson-kelly-alternative-at-catcher-that-has-fans-fearing-the-worst"
+        "https://sports.yahoo.com/articles/theres-only-one-reasonable-answer-134204725.html",
+        "https://phinphanatic.com/miami-dolphins-shouldn-t-even-think-about-adding-former-colts-qb-daniel-jones-01m7xn018cac",
+        "https://www.sun-sentinel.com/2026/11/20/dolphins-offensive-coordinator-analyzes-qb-kyle-mccord-will-dolphins-spy-josh-allen/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1fVjru4uIFOx8LdDXdtxKTknSONHlW4mKKs6nVGt18wB6wDQYz3kEoNg9p0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5bUEZrjk1TpZJakgmuk1jW6jxI8mh5M3fN0h-9rbPbyPRR3G21XAJOt36OW0",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/yankees-trade-pitch-lands-cardinals-073522943.html",
-          "title": "Yankees Trade Pitch Lands Cardinals Rookie Catcher in Anthony Volpe Blockbuster",
+          "url": "https://sports.yahoo.com/articles/theres-only-one-reasonable-answer-134204725.html",
+          "title": "There's only one reasonable answer to the question of whether or not the Miami Dolphins should entertain adding QB Daniel Jones",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC1fVjru4uIFOx8LdDXdtxKTknSONHlW4mKKs6nVGt18wB6wDQYz3kEoNg9p0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5bUEZrjk1TpZJakgmuk1jW6jxI8mh5M3fN0h-9rbPbyPRR3G21XAJOt36OW0"
         },
         {
-          "url": "https://sports.yahoo.com/articles/yankees-just-sign-carson-kelly-160326746.html",
-          "title": "Yankees Should Just Sign Carson Kelly and Get it Over With",
+          "url": "https://phinphanatic.com/miami-dolphins-shouldn-t-even-think-about-adding-former-colts-qb-daniel-jones-01m7xn018cac",
+          "title": "Dolphins shouldn't even think about adding former Colts QB Daniel Jones",
+          "publisher": "Phin Phanatic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkvHDSchck2nsEcFRBbTyU25kkzY499-jqxStpvc5PrYTzKWdrekSSB9Xypc4"
+        },
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/20/dolphins-offensive-coordinator-analyzes-qb-kyle-mccord-will-dolphins-spy-josh-allen/",
+          "title": "Dolphins offensive coordinator analyzes QB Kyle McCord; will Dolphins spy Josh Allen?",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDXitHF-vc71wEgHUnML0TuLdrM-0zVY9JNnQ5v6jQayuUtbaruGmzmByZW4c"
+        }
+      ]
+    },
+    {
+      "query": "max hurleman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:00:00Z",
+      "related_news_urls": [
+        "https://triblive.com/sports/kaden-wetjen-scratched-for-steelers-vs-eagles-max-hurleman-to-serve-as-returner-in-nfl-debut/",
+        "https://sports.yahoo.com/articles/week-11-inactives-steelers-172159995.html",
+        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-rule-out-seven-players-including-struggling-rookie-returner.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbK36ryC1BXMYzT-Ikup71S6EQIfAzbx6GiXiLPZ3kRn4euNqLhTYw6Uv45WI",
+      "image_credit": "TribLIVE.com",
+      "news": [
+        {
+          "url": "https://triblive.com/sports/kaden-wetjen-scratched-for-steelers-vs-eagles-max-hurleman-to-serve-as-returner-in-nfl-debut/",
+          "title": "Kaden Wetjen scratched for Steelers vs. Eagles; Max Hurleman to serve as returner in NFL debut",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbK36ryC1BXMYzT-Ikup71S6EQIfAzbx6GiXiLPZ3kRn4euNqLhTYw6Uv45WI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/week-11-inactives-steelers-172159995.html",
+          "title": "Week 11 inactives for Steelers",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-cBXLTGDm4B-Lx6600FfKiJEFhfg4sl-oeEoF8xUdUW6IFXnn23l6Jwqqxoc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXLs7_k_IZsQ1AfC0hfimUwacvo1nQ3WPCJBN49du4Q4ck1iQ5lz8ztMnmYbE"
         },
         {
-          "url": "https://yanksgoyard.com/yankees-just-got-a-cheap-carson-kelly-alternative-at-catcher-that-has-fans-fearing-the-worst",
-          "title": "Yankees just avoided cheap Carson Kelly alternative at catcher that had fans fearing the worst",
-          "publisher": "Yanks Go Yard",
+          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-rule-out-seven-players-including-struggling-rookie-returner.html",
+          "title": "Pittsburgh Steelers rule out seven players, including struggling rookie returner",
+          "publisher": "PennLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWTxLmC779dkfYt6t1RIp15jyOxgxlqVJ6VjJaxKLUrwUBnKR8icbn20w6UGg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqfi9d5P8fVcp8FftUp9ub2idXxY9mHcm1flyiPb8_PTYH-uzRUpDjN11Z1U"
+        }
+      ]
+    },
+    {
+      "query": "hector herrera",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:00:00Z",
+      "related_news_urls": [
+        "https://www.telemundo.com/deportes/mas-deporte/hector-herrera-es-arrestado-por-manejar-bajo-los-efectos-del-alcohol-d-rcna610705",
+        "https://www.mediotiempo.com/futbol/mls/hector-herrera-es-arrestado-en-estados-unidos-esto-se-sabe-de-su-detencion",
+        "https://www.elhorizonte.mx/deportes/hector-herrera-enfrenta-arresto-en-texas-por-presunta-ebriedad/8436316416"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsnnzAq7lRQUZR48NrcdZHSf6czzcTeyT2y4AoxBxhn6GVVptjkngA7J7NhnM",
+      "image_credit": "Telemundo",
+      "news": [
+        {
+          "url": "https://www.telemundo.com/deportes/mas-deporte/hector-herrera-es-arrestado-por-manejar-bajo-los-efectos-del-alcohol-d-rcna610705",
+          "title": "Héctor Herrera es arrestado por manejar bajo los efectos del alcohol, días antes de los Playoffs de la MLS",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsnnzAq7lRQUZR48NrcdZHSf6czzcTeyT2y4AoxBxhn6GVVptjkngA7J7NhnM"
+        },
+        {
+          "url": "https://www.mediotiempo.com/futbol/mls/hector-herrera-es-arrestado-en-estados-unidos-esto-se-sabe-de-su-detencion",
+          "title": "¡Última hora! Reportan que Héctor Herrera fue arrestado en Estados Unidos; esto se sabe de su detención",
+          "publisher": "Mediotiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGSY9H1P2qBpGTNrg39n5o5gQKcS70DN9RY0Fna3ZeuJMtywlvR__Mg1U9qyM"
+        },
+        {
+          "url": "https://www.elhorizonte.mx/deportes/hector-herrera-enfrenta-arresto-en-texas-por-presunta-ebriedad/8436316416",
+          "title": "Héctor Herrera enfrenta arresto en Texas por presunta ebriedad",
+          "publisher": "El Horizonte",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-v7-sxtkNKV65O0lti_0tRX6T5IitIVAtIQx5tigYovYkZPd9oPzYzqQZOJ0"
+        }
+      ]
+    },
+    {
+      "query": "is kenneth walker playing this week",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/217091/chiefs-cardinals-inactives-peter-woods-to-miss-third-straight-game",
+        "https://sports.yahoo.com/articles/inactive-players-arizona-cardinals-vs-163823819.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV7ToOE1nebYnvHEGfqhUKuKZnCvmku3Y8nSC_ZJJw0GRY0JCt65bXp5Orgwg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
+          "title": "Chiefs' Kenneth Walker III, two linemen out vs. Cardinals",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV7ToOE1nebYnvHEGfqhUKuKZnCvmku3Y8nSC_ZJJw0GRY0JCt65bXp5Orgwg"
+        },
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/217091/chiefs-cardinals-inactives-peter-woods-to-miss-third-straight-game",
+          "title": "Chiefs-Cardinals Inactives: DT Peter Woods to miss third straight game",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLuQEj9otKMrR0SE7lHYwZERV3Z5mc9Md_05qxtZ90g69xC-K6b71BHjCcPkI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/inactive-players-arizona-cardinals-vs-163823819.html",
+          "title": "Inactive players for Arizona Cardinals vs. Kansas City Chiefs, Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjzCdDmh4Gd1UiOar9U_-2-9enq4Q4LQThNOEsKEKyfINDP4CSa-9aqLxUR4Q"
         }
       ]
     }
