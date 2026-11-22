@@ -1,0 +1,19 @@
+:root{font-family:system-ui,-apple-system,Roboto,Arial,sans-serif;color:#302922;background:#f7f4f0;line-height:1.55}
+*{box-sizing:border-box}body{margin:0}[hidden]{display:none!important}
+.sa-app{max-width:780px;margin:0 auto;padding:14px 14px 36px}
+.sa-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:4px 2px 14px;color:#6e615a;font-size:.82rem;font-weight:800;letter-spacing:.02em}
+.sa-nav a{color:#a9342c;text-decoration:none;font-size:1.1rem}
+.sa-panel{background:#fff;border:1px solid #e5ddd6;border-radius:18px;box-shadow:0 10px 28px #31272211;padding:17px;margin-bottom:13px}
+.sa-kicker{font-weight:900;letter-spacing:.13em;color:#ae3a32;font-size:.75rem;margin:0}
+h1{font-size:clamp(2rem,7vw,2.7rem);line-height:1.15;margin:5px 0 12px;color:#302922}h2{font-size:1.28rem;line-height:1.3;margin:0 0 10px;color:#302922}p{margin:9px 0;overflow-wrap:anywhere}
+.sa-muted{font-size:.92rem;color:#5d544f}.sa-honesty{padding:12px;background:#fff7df;border-left:4px solid #b83b32;border-radius:9px}
+#saScene,#saSnapshot,#saVideo{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:#f2f7fb;border:1px solid #cfd9df;border-radius:14px}#saScene{touch-action:none;cursor:grab;aspect-ratio:32/21}#saScene:active{cursor:grabbing}
+.sa-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+button,.sa-file{font:inherit;font-size:1rem;font-weight:750;min-height:48px;min-width:48px;padding:10px 14px;border:1px solid #a9342c;border-radius:12px;color:#fff;background:#b83b32;cursor:pointer;touch-action:manipulation}
+button:disabled{opacity:.45;cursor:not-allowed}button:not(:disabled):active{filter:brightness(.92)}.sa-file{display:block;width:100%;color:#6c2b22;background:#fff6f2;border-color:#e7c0bb;margin:8px 0}
+.sa-file input{display:block;max-width:100%;font-size:.92rem;margin-top:7px;color:#302922}
+button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,#saScene:focus-visible{outline:3px solid #195d80;outline-offset:3px}
+textarea{font:inherit;border:1px solid #c7b9b0;border-radius:12px;background:#fdfbf9;padding:12px;width:100%;min-height:90px;resize:vertical;color:#302922}
+.sa-footer{font-size:.84rem;color:#625a55;text-align:center;padding:9px 0 80px}.sa-footer a{color:#a9342c}
+@media(max-width:420px){.sa-actions>button{flex:1 1 145px}.sa-panel{padding:15px}.sa-nav span{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
