@@ -104,18 +104,22 @@ export function toGeminiText(archive){
  * The same token must validate against Bubbles' profile endpoint and the
  * per-wallet Quanta search journal. Never use unscoped local token histories.
  */
-export async function readVerifiedWalletSearches({memory,connection,fetchImpl=fetch}={}){
+export async function verifyWalletBinding({memory,connection,fetchImpl=fetch}={}){
  const scope=memory?.profileScope;
- if(memory?.cloudConnected!==true||!SCOPE.test(scope||''))fail('verified wallet required to export searches');
- if(typeof connection?.resolveDeviceToken!=='function')fail('wallet search connection unavailable');
+ if(memory?.cloudConnected!==true||!SCOPE.test(scope||''))fail('verified wallet required for account export');
+ if(typeof connection?.resolveDeviceToken!=='function')fail('wallet account connection unavailable');
  const token=await connection.resolveDeviceToken();
- if(typeof token!=='string'||!token)fail('wallet search token unavailable');
+ if(typeof token!=='string'||!token)fail('wallet account token unavailable');
  const headers={Authorization:'Bearer '+token};
  const options={method:'GET',headers,cache:'no-store',credentials:'omit',redirect:'error',signal:AbortSignal.timeout(12000)};
  const verified=await fetchImpl('https://bubbles-memory.marvaseater.workers.dev/v1/profile',options);
  if(!verified?.ok)fail('verified wallet account check unavailable');
  const account=await verified.json();
- if(!account?.ok||account.profile!==scope)fail('account mismatch; refused to mix search history');
+ if(!account?.ok||account.profile!==scope)fail('account mismatch; refused to export another wallet profile');
+ return {scope,options};
+}
+export async function readVerifiedWalletSearches({memory,connection,fetchImpl=fetch}={}){
+ const {scope,options}=await verifyWalletBinding({memory,connection,fetchImpl});
  const response=await fetchImpl('https://quanta-phi-ledger.marvaseater.workers.dev/v1/quants/history',options);
  if(!response?.ok)fail('search history unavailable, no partial export claimed');
  const body=await response.json();
