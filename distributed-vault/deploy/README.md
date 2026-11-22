@@ -2,8 +2,8 @@
 
 **Status:** source/template stage only. No actual host provisioned, no DNS/TLS change,
 no public mesh endpoint, no physical Android peer connection, and no live D1
-export/import or production cutover. The existing Cloudflare D1 remains
-authoritative and must not be disabled until every migration receipt passes.
+export/import or production cutover. D1 remains authoritative until every
+migration receipt passes. This is not a production cutover.
 
 A GitHub repository holds code, **not an always-on server**. This system needs a
 **separate permanent owner-controlled host** with network reachability and
