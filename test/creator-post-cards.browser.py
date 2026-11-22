@@ -327,6 +327,9 @@ def run():
                 expect(becki.get_by_role('link',name='Full Becki | Autism Out Loud Coach videos on YouTube')).to_have_attribute('href','https://www.youtube.com/@autismoutloudcoach/shorts')
                 expect(becki.locator('iframe')).to_have_count(0)
                 assert becki.get_by_role('button',name='Play in card').first.bounding_box()['height']>=44
+                expect(becki.get_by_role('status').first).to_contain_text('of 16 loaded videos')
+                becki.get_by_role('button',name='Load more videos').click()
+                expect(becki.locator('.qcx-mix-entry')).to_have_count(12)
                 becki_feed_available=True
                 page.reload(wait_until='domcontentloaded')
                 becki=page.locator('.youtube-creator-mixed-card')
