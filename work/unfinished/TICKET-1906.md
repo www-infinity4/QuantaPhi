@@ -15,7 +15,7 @@ fence: null
 last_observed_at_utc: "2026-11-11T08:30:26.255Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/unified-wallet-numeric-device-bindings-1906-20261122
-head_sha: "fa57c52051e57da232cbc752f9888f9aadaf2425" # device-number core source head, prior to documentation checkpoint
+head_sha: "e03db1966bc60629094915580baeeff71faf24cb" # latest validated source head before this checkpoint
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/2119"
 tests: "RED 44/45 at d22e0e01, provider-verification run 42987050045; GREEN 45/45 at 73b824a4, run 42987180622; account-connection checks green; real provider and physical Android acceptance pending"
 ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42987180622"
@@ -84,3 +84,14 @@ The owner proposes that each phone retain an individually generated numeric stri
 **Existing identity and financial safety:** original StarQuest device token lookup and Unified Wallet balance/ledger tables completely unchanged. No private user phones were scanned or remotely registered, no actual numeric user examples stored, no D1 migration, no new authentication grant, no billing or Cloudflare changes. Existing passkey work [Quant Mail PR #1240](https://github.com/www-infinity4/QuantaPhi/pull/1240) is relevant but not merged/production verified; reuse a supported WebAuthn ceremony rather than custom authentication. Real Android passkey, account recovery, credential revocation, two accounts per device, cross-account isolation and staged migration still unverified.
 
 **Acceptance:** exact-head 6 focused Node tests and existing wallet account isolation CI, source review, then source-only merge if permitted. Next production action requires authenticated first-device enrollment (using existing sign-in/recovery), real WebAuthn proof and fail-closed staging before any StarQuest dependency removal. No robot Brain sign-in or device restoration success claimed.
+
+### Owner's RGB bulb / account-window extension · November 22, 2026
+
+The owner likens an account's enrolled phone identifiers to Christmas-tree bulbs whose hexadecimal colors align into a see-through window, and wants his phone/GitHub app to preserve records so the wallet association isn't lost. Built in PR #2119:
+- `workers/unified-wallet/device-color-graph.mjs` maps one **generated** 39-digit alias to 6 reversible `#RRGGBB` tiles plus 16-bit accidental-corruption checksum. Values are strings; precise 128-bit leading-zero roundtrip. Colors are a visualization, **not hidden credentials** or encryption.
+- `buildWalletColorWindow` displays an 11-color fingerprint only of the currently verified wallet's previously enrolled device numbers. Order-independent list; different account has distinct hash; `colorWindowsAlign` is never an authentication grant. Signatures and verified owner/server proof remain mandatory.
+- [Bubbles unified CI 45073665224](https://github.com/www-infinity4/QuantaPhi/actions/runs/45073665224) at `e03db1966bc60629094915580baeeff71faf24cb`: color graph tests 5/5 and numeric-key/isolated-wallet tests 6/6 passed; all 11 exact-head workflows passed. 
+- User's example numbers were intentionally not copied to GitHub. Each user phone contributes **only its own authorized ID**. No cross-user phone scanning, global super-number, public GitHub data storage, or live StarQuest replacement.
+- Existing [private GitHub StarCoin backup pilot](https://github.com/www-infinity4/QuantaPhi/blob/main/docs/STARCOIN-GITHUB-BACKUP-PILOT.md) already uses an owner-authorized GitHub App and per-account repository access, but it does **not automatically back up this new numeric device map**. A later encrypted device-map backup must explicitly require account consent, a private repository, independent restore keys and actual success receipts. GitHub Actions/source itself is not phone storage or wallet credentials.
+
+**Deployment hold:** no live number enrollment, no Android passkey ceremony, no server-issued/atomically consumed challenge, no D1 migration or new production wallet session; keep StarQuest and wallet recovery untouched until independent review and two-account physical-device testing.
