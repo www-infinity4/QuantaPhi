@@ -3,27 +3,342 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T13:01:06.863173Z",
+  "checked_at": "2026-11-22T13:30:35.667984Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "hull vs brighton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cky97ll8253wt",
+        "https://www.espn.com/soccer/story/_/id/50560972/hull-city-brighton-hove-albion-live-premier-league-updates",
+        "https://sports.yahoo.com/articles/suttons-predictions-hull-city-v-110126676.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnWzvsnQsMAkJ98T4jvzhjVJJsEa7IO-g3NhYBFxCwlFFhrP9TECRRjF3VBU",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cky97ll8253wt",
+          "title": "Hull City vs Brighton & Hove Albion LIVE: Premier League build-up, team news, stats & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdnWzvsnQsMAkJ98T4jvzhjVJJsEa7IO-g3NhYBFxCwlFFhrP9TECRRjF3VBU"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50560972/hull-city-brighton-hove-albion-live-premier-league-updates",
+          "title": "Hull City vs Brighton LIVE: Premier League score, updates and commentary",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDz0rtl4h2pIHkuvkK-N6Z7zbtuUbTx4YPu4w6_MWxCOJJvajWrvQKZOQtl44"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/suttons-predictions-hull-city-v-110126676.html",
+          "title": "Sutton's predictions: Hull City v Brighton",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_7BK-_hocbuPFxP-c1DHSPqrKI2TswQZgrGJora5m338azt16phPzk_gdg2c"
+        }
+      ]
+    },
+    {
+      "query": "barca",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T13:10:00Z",
+      "related_news_urls": [
+        "https://www.tufutbolero.com/it/notizie/barca-de-jong-difensore-centrale-e-adeyemi-punta-col-140d9f",
+        "https://www.allfootballapp.com/it/articles/6030523-il-barcellona-ha-una-percentuale-di",
+        "https://www.diretta.it/news/calcio-laliga-liga-il-barcellona-ospita-il-villarreal-in-serata-l-atletico-madrid-visita-il-getafe/tSJUoWLs/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3eDXaiG0NPViO-FiOTDd2lF2b1yrFo3d2p6Aua7Mb8CU8je3vOJqgzBiyIc",
+      "image_credit": "Tu Futbolero",
+      "news": [
+        {
+          "url": "https://www.tufutbolero.com/it/notizie/barca-de-jong-difensore-centrale-e-adeyemi-punta-col-140d9f",
+          "title": "Barça: De Jong difensore centrale e Adeyemi punta col Villarreal",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3eDXaiG0NPViO-FiOTDd2lF2b1yrFo3d2p6Aua7Mb8CU8je3vOJqgzBiyIc"
+        },
+        {
+          "url": "https://www.allfootballapp.com/it/articles/6030523-il-barcellona-ha-una-percentuale-di",
+          "title": "Il Barcellona ha una percentuale di vittorie del 42,8% nelle partite delle 14:00 e ora affronta il Sottomarino Giallo",
+          "publisher": "AllFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSY9HH3Sj0G1HXToHzCmGqRXp0Lz6asz1BhrcoY2FaCrHH62I8L_IASeaVwMg"
+        },
+        {
+          "url": "https://www.diretta.it/news/calcio-laliga-liga-il-barcellona-ospita-il-villarreal-in-serata-l-atletico-madrid-visita-il-getafe/tSJUoWLs/",
+          "title": "Liga, il Barcellona ospita il Villarreal, in serata l'Atletico Madrid visita il Getafe",
+          "publisher": "Diretta",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLo1RenBUD2FWAVd68Lek9d3QAO3sOiEUxvPpF7ECiHCuHxY66_kOm1zgy4tQ"
+        }
+      ]
+    },
+    {
+      "query": "changing retirement lifestyle baby boomers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T13:10:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/personal-finance/retirement/baby-boomers-aging-eec29458",
+        "https://www.myjournalcourier.com/opinion/article/robert-krol-aging-population-larger-service-22507279.php",
+        "https://www.wsj.com/personal-finance/the-economics-of-growing-old-dfd5c60f"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEuiCMKkret8gg4XryjIy6WtITdMfMzhKDRgDGL-VkeCpSEaa8gaeahw6wO1Y",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/personal-finance/retirement/baby-boomers-aging-eec29458",
+          "title": "Boomers Are Rewriting the Playbook for Old Age. It Doesn’t Include Winding Down.",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEuiCMKkret8gg4XryjIy6WtITdMfMzhKDRgDGL-VkeCpSEaa8gaeahw6wO1Y"
+        },
+        {
+          "url": "https://www.myjournalcourier.com/opinion/article/robert-krol-aging-population-larger-service-22507279.php",
+          "title": "Commentary: Robert Krol: Aging population and larger service sector complicate money policy",
+          "publisher": "Jacksonville Journal-Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtfbhON4gNq3L_NV8hZWEPSNpToQ0LfgOtL6CUYwDszyBRipOeCsKXHM4XqJ0"
+        },
+        {
+          "url": "https://www.wsj.com/personal-finance/the-economics-of-growing-old-dfd5c60f",
+          "title": "The Economics of Growing Old",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUSwCxeDb5QuIcMxVrlXiBA00qrycDl8kJ8faCWiRI9aFuAy5OKJ1LnErfz6Q"
+        }
+      ]
+    },
+    {
+      "query": "konyaspor vs beşiktaş",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T13:10:00Z",
+      "related_news_urls": [
+        "https://www.fanatik.com.tr/besiktas/live-konyaspor-besiktas-maci-canli-anlatim-kny-bjk-maci-kadrosu-skoru-ve-istatistikleri-2645344",
+        "https://www.canligaste.com/canli-kasimpasa-alanyaspor-maci-basladi/954642/",
+        "https://www.yenisafak.com/spor/besiktasta-surpriz-eksik-mac-kadrosuna-alinmadi-herkes-nedenini-merak-etti-4875442"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTugfTq2YezcZfOkpppO77JPnkhsE04ivQfQglUFI73eX7LVgB896oEhCj-dTE",
+      "image_credit": "Fanatik",
+      "news": [
+        {
+          "url": "https://www.fanatik.com.tr/besiktas/live-konyaspor-besiktas-maci-canli-anlatim-kny-bjk-maci-kadrosu-skoru-ve-istatistikleri-2645344",
+          "title": "CANLI | Konyaspor-Beşiktaş maçı Canlı Anlatım - KNY- BJK maçı kadrosu, skoru ve istatistikleri",
+          "publisher": "Fanatik",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTugfTq2YezcZfOkpppO77JPnkhsE04ivQfQglUFI73eX7LVgB896oEhCj-dTE"
+        },
+        {
+          "url": "https://www.canligaste.com/canli-kasimpasa-alanyaspor-maci-basladi/954642/",
+          "title": "CANLI | Kasımpaşa - Alanyaspor maçı başladı",
+          "publisher": "Canlı Gaste",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvF-2QrMaMrDONeY3nq61F3iov1qfF4p-mj_w4uYWGS-jl58t430UIoQOmXPc"
+        },
+        {
+          "url": "https://www.yenisafak.com/spor/besiktasta-surpriz-eksik-mac-kadrosuna-alinmadi-herkes-nedenini-merak-etti-4875442",
+          "title": "Beşiktaş'ta sürpriz eksik: Maç kadrosuna alınmadı herkes nedenini merak etti",
+          "publisher": "Yeni Şafak",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCKpeTeUf86UkxKQlh4PYuN6yQPzM2LFjQaCXuM4Vnp4J0Me7eHbMcIwm4sxQ"
+        }
+      ]
+    },
+    {
+      "query": "georgia tech couple",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T13:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/21/georgia-tech-wake-forest-fans-jesse-palmer-bachelor-couple-breakup/92902050007/",
+        "https://www.newsweek.com/sports/ncaa/wake-forest-espn-announcers-georgia-tech-couples-arguing-12752721",
+        "https://www.news.com.au/sport/sports-life/thats-not-ok-couple-breaks-up-on-live-tv-as-crazy-footage-goes-viral/news-story/54d986e5e3e2501e3930112e3a86413c"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRepOs673Yp6fommdtL295echf2LAf6Uf0EyPHNa9n7t11b5t2fuCweKZgAc4c",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/21/georgia-tech-wake-forest-fans-jesse-palmer-bachelor-couple-breakup/92902050007/",
+          "title": "Jesse Palmer narrates Georgia Tech couple drama like only ‘Bachelor’ host can",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRepOs673Yp6fommdtL295echf2LAf6Uf0EyPHNa9n7t11b5t2fuCweKZgAc4c"
+        },
+        {
+          "url": "https://www.newsweek.com/sports/ncaa/wake-forest-espn-announcers-georgia-tech-couples-arguing-12752721",
+          "title": "College football announcers turn couple's argument into play-by-play",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRD9x79K9mKdnFw6dvc3BzqaJ7sY4KQ1ktAN23kn1k4opKXacH7VXb-MbzmN5U"
+        },
+        {
+          "url": "https://www.news.com.au/sport/sports-life/thats-not-ok-couple-breaks-up-on-live-tv-as-crazy-footage-goes-viral/news-story/54d986e5e3e2501e3930112e3a86413c",
+          "title": "Couple break up on live TV, go viral",
+          "publisher": "News.com.au",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ_GEB-sV60MM0fGJcy6GAovPRqX7bFtwO_aWs8_X_D5MzpBHf7xsk879i6ok"
+        }
+      ]
+    },
+    {
+      "query": "russian navy vessel fire benghazi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T13:00:00Z",
+      "related_news_urls": [
+        "https://www.navalnews.com/naval-news/2026/11/russian-warship-destroyed-in-huge-explosion-in-libya/",
+        "https://libyaobserver.ly/news/airstrikes-target-ammunition-depots-benghazi-naval-base-amid-conflicting-reports",
+        "https://defence-blog.com/russian-corvette-reportedly-destroyed-in-blast-at-libyan-port/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSN2IioZiYVfC3Mwx-HAZeNCHTIJU2Cz5bRk7bRkYk2ezoUa22r3dSHjsXhNA",
+      "image_credit": "Naval News",
+      "news": [
+        {
+          "url": "https://www.navalnews.com/naval-news/2026/11/russian-warship-destroyed-in-huge-explosion-in-libya/",
+          "title": "Russian Warship Destroyed In Huge Explosion In Libya",
+          "publisher": "Naval News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSN2IioZiYVfC3Mwx-HAZeNCHTIJU2Cz5bRk7bRkYk2ezoUa22r3dSHjsXhNA"
+        },
+        {
+          "url": "https://libyaobserver.ly/news/airstrikes-target-ammunition-depots-benghazi-naval-base-amid-conflicting-reports",
+          "title": "Airstrikes target ammunition depots at Benghazi Naval Base amid conflicting reports",
+          "publisher": "The Libya Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLH7lg6E1ZG4ShFTaqcW0zRIfEgujgAYfBRoytcLns0dCRYmiGeXh5t19C0k4"
+        },
+        {
+          "url": "https://defence-blog.com/russian-corvette-reportedly-destroyed-in-blast-at-libyan-port/",
+          "title": "Russian corvette reportedly destroyed in blast at Libyan port",
+          "publisher": "The Defence Blog",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU97N93fUv684fYLdISq_3C5D8iX9K81Zwehi9b6ZmexsChwLI5RkeMeUPuWo"
+        }
+      ]
+    },
+    {
+      "query": "market correction",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T13:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+        "https://www.nytimes.com/2026/11/20/business/anthropic-ai-stocks-sp500.html",
+        "https://www.cnn.com/2026/11/20/investing/us-stocks-anthropic-ai"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2KvcHpNc722zf7efmpot7OCdwQ7yY1qoxa65uwYUG_l40cWJfn1HPQQM7HCs",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/20/sp-500-correction-market-sell-off.html",
+          "title": "S&P 500 correction: Five forces behind the market sell-off",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2KvcHpNc722zf7efmpot7OCdwQ7yY1qoxa65uwYUG_l40cWJfn1HPQQM7HCs"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/20/business/anthropic-ai-stocks-sp500.html",
+          "title": "Stocks Skid Into a Correction, as A.I. Worries Intensify",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWyPOaS0qNM4ltKbhn09ymxsxwllj8uFDsGEpC6h-79Hq--y_p_kFEBApUgeo"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/20/investing/us-stocks-anthropic-ai",
+          "title": "Nasdaq wipes out gains for the year as Anthropic IPO fails to quell AI nerves",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2Dqp291o1r8UParVH4McB_OvEWS5K87paVgQXd9eEpatLfAOMcWYxn_ONmyg"
+        }
+      ]
+    },
+    {
+      "query": "is baker mayfield playing",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T13:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50550285/sources-buccaneers-qb-baker-mayfield-plantar-fasciitis",
+        "https://www.nfl.com/news/buccaneers-baker-mayfield-questionable-to-play-vs-lions",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/pelissero-baker-mayfield-has-plantar-fascia-injury"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iqmJnx5Ar4gi5hf0AZHU1iCXFjD8E3QpjPDIIYC7zM8MKzzWmbSsByhLSFs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50550285/sources-buccaneers-qb-baker-mayfield-plantar-fasciitis",
+          "title": "Sources: Bucs' Baker Mayfield has plantar fasciitis, determined to keep playing",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5iqmJnx5Ar4gi5hf0AZHU1iCXFjD8E3QpjPDIIYC7zM8MKzzWmbSsByhLSFs"
+        },
+        {
+          "url": "https://www.nfl.com/news/buccaneers-baker-mayfield-questionable-to-play-vs-lions",
+          "title": "Buccaneers' Baker Mayfield (foot/thumb) questionable to play Sunday vs. Lions",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85J1wEcTREkDtW2LF1CQnSVo5oYpb4j-tM06sdbDvQ7NWPbvgBqwaeCZJGMc"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/pelissero-baker-mayfield-has-plantar-fascia-injury",
+          "title": "Pelissero: Baker Mayfield has plantar fascia injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUEdxUlKV0BZEmQdOHx0Iq4wlsy9PNIZ4z19HNkqhY3R1cor9yxJmTwjXt77Y"
+        }
+      ]
+    },
+    {
+      "query": "barcelona schedule",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T12:50:00Z",
+      "related_news_urls": [
+        "https://www.teamtalk.com/chelsea/blueco-alessandro-bastoni-talks-inter-milan-star-assesses-premier-league-transfer",
+        "https://www.goal.com/en/news/disagreement-at-barca-over-possible-winter-transfer-flick-is-not-convinced/blt98fc36f6c1502c55",
+        "https://getfootballnewsspain.com/barcelona-chief-deco-has-a-clear-first-choice-centre-back-target-in-mind-a-necessary-signing/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW_j7FveYWhhov74YfpkH4tHLGMhVXj8JtRFwv89KAX9gpErWVL8QrV6QXLOM",
+      "image_credit": "TEAMtalk",
+      "news": [
+        {
+          "url": "https://www.teamtalk.com/chelsea/blueco-alessandro-bastoni-talks-inter-milan-star-assesses-premier-league-transfer",
+          "title": "Chelsea enter race for 'most valuable defender in the world' as star assesses shock Premier League move",
+          "publisher": "TEAMtalk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW_j7FveYWhhov74YfpkH4tHLGMhVXj8JtRFwv89KAX9gpErWVL8QrV6QXLOM"
+        },
+        {
+          "url": "https://www.goal.com/en/news/disagreement-at-barca-over-possible-winter-transfer-flick-is-not-convinced/blt98fc36f6c1502c55",
+          "title": "Disagreement at Barça over possible winter transfer: ‘Flick is not convinced’",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaMm7DOTfaYPrwgoRBdObv8v0XRSzosFxAdU-L4BSdF_cmfELzh3waonBpELI"
+        },
+        {
+          "url": "https://getfootballnewsspain.com/barcelona-chief-deco-has-a-clear-first-choice-centre-back-target-in-mind-a-necessary-signing/",
+          "title": "Barcelona chief Deco has a clear first-choice centre-back target in mind: 'A necessary signing'",
+          "publisher": "Get Spanish Football News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9_RUf1UBjIOyYAmAJjLrHo3ds-fGJshbWChOHPYzD2cRRAw2Tq0sWnDAL4oI"
+        }
+      ]
+    },
     {
       "query": "jack campbell text kelvin sheppard",
       "approx_searches": "200+",
       "published_at": "2026-11-22T12:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/jack-campbell-sent-detroit-lions-100408895.html",
+        "https://www.freep.com/story/sports/nfl/lions/2026/11/22/jack-campbell-detroit-lions-kelvin-sheppard/92879864007/",
         "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/19/detroit-lions-jack-campbell-neck-injury-kelvin-sheppard-aidan-hutchinson/92861091007/",
-        "https://atozsports.com/nfl/detroit-lions-news/lions-linebacker-jack-campbell-reportedly-believes-he-can-return-this-season-but-one-big-hurdle-still-stands-in-his-way/"
+        "https://www.devilslakejournal.com/sports/15773/lions-linebacker-jack-campbell-says-he-has-full-movement-in-lower-body-after-suffering-neck-injury/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwA6bhuciq37CDGQQNCgCWTfw1K1OtojqvISNBW1TghCGJSv6ismZ-x0Wd2Dg",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MSskHcF4g-GS5gb__XyuKgMno8oPnaGmMvybrZv7fEKGqAKZz6HxLvYAwzA",
+      "image_credit": "Detroit Free Press",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/jack-campbell-sent-detroit-lions-100408895.html",
+          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/22/jack-campbell-detroit-lions-kelvin-sheppard/92879864007/",
           "title": "Jack Campbell sent Detroit Lions DC a text that fired him up",
-          "publisher": "Yahoo Sports",
+          "publisher": "Detroit Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwA6bhuciq37CDGQQNCgCWTfw1K1OtojqvISNBW1TghCGJSv6ismZ-x0Wd2Dg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MSskHcF4g-GS5gb__XyuKgMno8oPnaGmMvybrZv7fEKGqAKZz6HxLvYAwzA"
         },
         {
           "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/19/detroit-lions-jack-campbell-neck-injury-kelvin-sheppard-aidan-hutchinson/92861091007/",
@@ -33,326 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRssrFNSkva50dfWxpQhRYK6Kx6jWsDCsTOw9CSqAnCfsXqVJ74niwsz6aKvls"
         },
         {
-          "url": "https://atozsports.com/nfl/detroit-lions-news/lions-linebacker-jack-campbell-reportedly-believes-he-can-return-this-season-but-one-big-hurdle-still-stands-in-his-way/",
-          "title": "Lions linebacker Jack Campbell reportedly believes he can return this season, but one big hurdle still stands in his way",
-          "publisher": "A to Z Sports",
+          "url": "https://www.devilslakejournal.com/sports/15773/lions-linebacker-jack-campbell-says-he-has-full-movement-in-lower-body-after-suffering-neck-injury/",
+          "title": "Lions linebacker Jack Campbell says he has full movement in lower body after suffering neck injury",
+          "publisher": "Devil's Lake Daily Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVPWhN94YND-rv4gANwkQjFTbXBwnnB2rHkknXTE13PeMOzsbT3kHbEhX_0zM"
-        }
-      ]
-    },
-    {
-      "query": "jared padalecki guarding stars movie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T12:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
-        "https://www.tvinsider.com/swooon/1314215/guarding-stars-the-bodyguard-title-change-book-interview/",
-        "https://www.elle.com/culture/movies-tv/a74458732/leighton-meester-guarding-stars-netflix-interview/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
-          "title": "Guarding Stars review – Leighton Meester is a delight in fizzy Netflix holiday romance",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg"
-        },
-        {
-          "url": "https://www.tvinsider.com/swooon/1314215/guarding-stars-the-bodyguard-title-change-book-interview/",
-          "title": "'Guarding Stars' Writers Break Down 'The Bodyguard' Title Change",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVKLcuk4BhqpojrMth4Z_QODLaBu9o69FFcGdaExPgRVHZQCE0zTgjAeXJTI"
-        },
-        {
-          "url": "https://www.elle.com/culture/movies-tv/a74458732/leighton-meester-guarding-stars-netflix-interview/",
-          "title": "Leighton Meester Loves Playing a Bitch: ‘Somehow It Comes Easy to Me’",
-          "publisher": "ELLE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfMd1EiYXK2ijnnIaWvh0EGoJ9QdsU9DdhEhnOcs2PIcvSNnKY8mpfi6XmU_M"
-        }
-      ]
-    },
-    {
-      "query": "was snl new last night",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-22T12:40:00Z",
-      "related_news_urls": [
-        "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
-        "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
-      "image_credit": "NBC TV",
-      "news": [
-        {
-          "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
-          "title": "Is Saturday Night Live New Tonight? About the November 21 Host and Musical Guest",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
-        },
-        {
-          "url": "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
-          "title": "Is ‘SNL’ new tonight? See the season 52 episode schedule",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuywhwu3MDHEays1ELdmOfSi-S5TOV094ZAouZOBVo2B1o9UeUU6rF53zLpQA"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/",
-          "title": "Is 'SNL' on tonight? Show reveals schedule change before Thanksgiving",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTtPuklWzUMjrMlIhMdUkfqI3DTtLHynp_Vad6luSZdE9S6IM3QE2UNg09nT4"
-        }
-      ]
-    },
-    {
-      "query": "marshawn lynch",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T12:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/49ers-rookie-kaelon-black-draws-023936889.html",
-        "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
-        "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyZkcVUebhoNfqRHXCbiw77geT2bNYm9NVSU5DDqTlbvv-2_kHRbrkdmZ3hY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/49ers-rookie-kaelon-black-draws-023936889.html",
-          "title": "49ers Rookie Kaelon Black Draws Eye-Opening Comparison to Marshawn Lynch",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyZkcVUebhoNfqRHXCbiw77geT2bNYm9NVSU5DDqTlbvv-2_kHRbrkdmZ3hY"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
-          "title": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEIRvp7kHoLXx2rubmFULLG8A159ugpy9LLtWVtdaH2RSEwKzBQWFu5bPa5mY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/",
-          "title": "Raiders owner Mark Davis 'hurt' by 'Madden' movie's portrayal of Al Davis | Exclusive",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS28fSxYQrFQ6Ofx_AQ6YdgtEBcK5Atnxd_l3uvc9dkFcAw-fjFky9xWP4p0As"
-        }
-      ]
-    },
-    {
-      "query": "andrew tate",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T12:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
-        "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
-        "https://www.imdb.com/news/ni66119095/?ref_=nm_nwr_1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
-          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM"
-        },
-        {
-          "url": "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
-          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66119095/?ref_=nm_nwr_1",
-          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
-        }
-      ]
-    },
-    {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T12:30:00Z",
-      "related_news_urls": [
-        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/",
-        "https://tn.com.ar/estados-unidos/clima/2026/11/22/como-estara-el-clima-en-new-york-este-domingo-22-de-noviembre/",
-        "https://eldiariony.com/2026/11/22/el-tiempo-de-hoy-en-nueva-york-para-este-domingo-22-de-noviembre/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA",
-      "image_credit": "La Nación",
-      "news": [
-        {
-          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/",
-          "title": "Clima en Yonkers, New York hoy: cuál es el pronóstico del tiempo para la semana del 23 de noviembre al 23 de noviembre",
-          "publisher": "La Nación",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
-        },
-        {
-          "url": "https://tn.com.ar/estados-unidos/clima/2026/11/22/como-estara-el-clima-en-new-york-este-domingo-22-de-noviembre/",
-          "title": "¿Cómo estará el clima en New York este domingo 22 de noviembre?",
-          "publisher": "TN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv7TmK4TTGfw2BIyDdpPdsKDVDMI9XNr0sKD-Dq7oDgErCz6PgUGxmirhm5Qk"
-        },
-        {
-          "url": "https://eldiariony.com/2026/11/22/el-tiempo-de-hoy-en-nueva-york-para-este-domingo-22-de-noviembre/",
-          "title": "El tiempo de hoy en Nueva York para este domingo 22 de noviembre",
-          "publisher": "El Diario NY",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbifkbDAjA3nMfU5CDOH_K9GM7qvslYhbhJ2vFhP5p39kqDcwcDQNABuUzikE"
-        }
-      ]
-    },
-    {
-      "query": "ronny hallin laverne shirley actress",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T12:30:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/ronny-hallin-played-maxine-laverne-shirley-dies-88-decades-television-report",
-        "https://www.latimes.com/entertainment-arts/story/2026-11-20/ronny-hallin-tv-producer-known-for-laverne-shirley-dies-at-88",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/ronny-hallin-laverne-shirley-happy-days-actress-dead/92880180007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pMT4biX8f7kKJ5bsiaxiisG2Wyb2l2QCuEOpvRBaSZ4wP2QnD800jL__Xkw",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/entertainment/ronny-hallin-played-maxine-laverne-shirley-dies-88-decades-television-report",
-          "title": "Ronny Hallin, who played Maxine on 'Laverne & Shirley,' dies at 88 after decades in television: report",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pMT4biX8f7kKJ5bsiaxiisG2Wyb2l2QCuEOpvRBaSZ4wP2QnD800jL__Xkw"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-20/ronny-hallin-tv-producer-known-for-laverne-shirley-dies-at-88",
-          "title": "Ronny Hallin, ‘Laverne & Shirley’ producer and sister of Garry and Penny Marshall, dies at 88",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfZkbCSD4pjiKuEn7ghAvruKIeSzu665334a9fIdhAoNgf2L-RRLfTX2V6gzc"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/ronny-hallin-laverne-shirley-happy-days-actress-dead/92880180007/",
-          "title": "Ronny Hallin, Maxine on 'Laverne & Shirley,' dies at 88",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVA_RMabVpDcokIkhALj5aGLcnbozZJCl78Vxutbwc0xGlZAy4F8OaSNx5Im0"
-        }
-      ]
-    },
-    {
-      "query": "connections today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T12:30:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-22-2026",
-        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-22-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-21-1259/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-22-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 22, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-22-2026",
-          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 22, 2026",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3I0wxBSbRSTqQiezur0gWhC-ywAByOjk3TGqmMpYVV-2staJ0EdCENa_K37s"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-21-1259/",
-          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 21, #1259",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        }
-      ]
-    },
-    {
-      "query": "atp finals 2026",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
-        "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title",
-        "https://sports.yahoo.com/articles/alexander-zverev-ties-pete-sampras-120000203.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDLr7S8dhZsOsQWLHMphPipFRWwGNhfHAKsYAvPdh5ffxBP6eIZklorZJu6k",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
-          "title": "The ATP Finals ends with Carlos Alcaraz, Alexander Zverev and an emblem of a strange season - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDLr7S8dhZsOsQWLHMphPipFRWwGNhfHAKsYAvPdh5ffxBP6eIZklorZJu6k"
-        },
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title",
-          "title": "Zverev tops Medvedev, sets up showdown with Alcaraz for ATP Finals title",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bFwwwI9-jSLvWZbWFD__XW_G2X4shIIuyvFIMY0aAKEmm_-zTbS0ZfMv_tM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alexander-zverev-ties-pete-sampras-120000203.html",
-          "title": "Alexander Zverev ties Pete Sampras’ personal record at the ATP Finals ahead of Carlos Alcaraz showdown",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYVYI6z2wR-U8xPI16-qUxQ87SLE8e9giomxtzZZYW_mKeGGdOx3OP6q74eqw"
-        }
-      ]
-    },
-    {
-      "query": "carnell tate",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/cbs-carnell-tate-shoulder-likely-to-play-vs-dal",
-        "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-cowboys-week-x1668",
-        "https://www.thefantasyfootballers.com/news/648831/carnell-tate-full-practice-but-questionable-for-sunday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi0HPt2IErGjfcKt3rE8Cz8t7tDSQ6oP7F60ogPAlaUZMwz2llATugaovyCuY",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/cbs-carnell-tate-shoulder-likely-to-play-vs-dal",
-          "title": "CBS: Carnell Tate (shoulder) likely to play vs. DAL",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi0HPt2IErGjfcKt3rE8Cz8t7tDSQ6oP7F60ogPAlaUZMwz2llATugaovyCuY"
-        },
-        {
-          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-cowboys-week-x1668",
-          "title": "Quick Hits on the Titans From Wednesday of Cowboys Week",
-          "publisher": "Tennessee Titans",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvppZB-A8XH5UpmMMnQz_goHCUuNtR4AFX0WxBPYeUb1R7lmfC-I5yYYb9rY"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/648831/carnell-tate-full-practice-but-questionable-for-sunday/",
-          "title": "Carnell Tate Full practice, but questionable for Sunday",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH4XiAMlH3hJyCR-AH1ILNmHc_jssfoQGEcbHMgRWICmvvTYO3XhepvN4Tn7I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYpzGTAaiEwbRWJ5ZA7EHxNdzqNHtqv_1mn7r8n44_rp2HoNgRDD6Dc9lEYyo"
         }
       ]
     }
