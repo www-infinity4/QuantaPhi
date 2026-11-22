@@ -378,3 +378,18 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Implementation:** authored regression test first in commit `9a04bb797fd05fc08b4ef3302ff526854bc28c51`; then added one validated source record to `youtube-owner-video-links.mjs`. Regression is intended to fail before the record; no actual RED run observed yet. No duplicate source IDs, third-party video download, monetization or wallet write.
 - **Verification gates:** connector source commits observed; exact-head CI, independent source review, guarded merge, Cloudflare live release, desktop/Android player acceptance are outstanding until separate receipts arrive. No signed Moltnook lease was claimed by this connector session. Parent issue is still open.
 - **Next executable action:** inspect PR #2089 exact-head GitHub Actions checks and resolve failures. Then independently review source boundaries, guarded-merge only if allowed, and verify real deploy/browser and Android playback; obtain Ella Bella's exact original link separately before any import.
+
+
+## Owner video intake · bDZam9unNYk · 2026-11-22
+
+- **Original owner URL:** https://youtu.be/bDZam9unNYk?is=XtlZjA1q9lubEUS3
+- **Canonical URL:** https://www.youtube.com/watch?v=bDZam9unNYk
+- **Existing issue / new draft:** #1603 / https://github.com/www-infinity4/QuantaPhi/pull/2090
+- **Repository / branch / base at claim:** `www-infinity4/QuantaPhi` / `feat/youtube-bdzam9unNYk-1603-20261122` / `b6097acd927a7b5603df6a5f67c16aef0df21926`.
+- **Source confidence:** Owner-supplied syntactically valid YouTube video ID. Public YouTube page and oEmbed fetches were throttled or timed out. Title, channel, publication, playback availability, rights and complete channel are unverified.
+- **Scope:** Add one `youtube-owner-video-links.mjs` source-only general-media record. It automatically generates exactly one Public/Media Oracle Quick Card, first-party thumbnail reference, optional provider-hosted playback and the original-source fallback with View More. No copied media, invented ads, verified channel import, wallet/Star Coin changes or new service keys.
+- **TDD RED:** GitHub test-first commit `6c79f738473952817b309a039dc691295157e4ee`. Workflow [45024745832](https://github.com/www-infinity4/QuantaPhi/actions/runs/45024745832) job 137215204683 failed specifically on new assertion (`0 !== 1`, no source), 126 other tests passed, exit code 1.
+- **Green source patch:** `57c8544188985227f1402532287636186f945770`; current exact-head CI still to be confirmed after checkpoint commit. Source/CI and release receipts are distinct.
+- **State / dot / progress:** `implementing` / 🔴 / estimated 2 of 6 gates (original source recorded, regression defined; CI, review, merge, deployment/Android acceptance outstanding). One documented session; remaining unknown.
+- **Lease:** No authenticated Moltnook lease was claimed; GitHub branch action is not runner lease or identity proof.
+- **Next executable action:** Inspect current draft PR's exact-head checks (including Creator source-and-mobile), independently review source + copyright boundary, reconcile latest main if needed, then permitted merge and Cloudflare/Android readback. Do not mark deployed or complete without receipts.
