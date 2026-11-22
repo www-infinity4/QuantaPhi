@@ -2,6 +2,7 @@
 import functools
 import json
 import os
+import xml.etree.ElementTree as ET
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from threading import Thread
@@ -28,6 +29,12 @@ def run():
         Thread(target=server.serve_forever, daemon=True).start()
         base = f'http://127.0.0.1:{server.server_port}'
     checks = []
+    atom = ET.parse(ROOT / 'test/fixtures/autism-out-loud-uploads.xml').getroot()
+    ns = {'a': 'http://www.w3.org/2005/Atom', 'yt': 'http://www.youtube.com/xml/schemas/2015'}
+    becki_uploads = [{'videoId': e.findtext('yt:videoId', namespaces=ns),
+                      'title': e.findtext('a:title', namespaces=ns),
+                      'sourceUrl': 'https://www.youtube.com/watch?v='+e.findtext('yt:videoId', namespaces=ns),
+                      'publishedAt': e.findtext('a:published', namespaces=ns)} for e in atom.findall('a:entry', ns)]
     try:
         with sync_playwright() as p:
             launch = {'headless': True}
@@ -38,9 +45,17 @@ def run():
                 context = browser.new_context(viewport={'width': width, 'height': 900}, timezone_id='America/Chicago', accept_downloads=True)
                 page = context.new_page()
                 widget_requests = []
+                becki_feed_available = False
                 def route(request):
                     url = request.request.url
-                    if url.startswith('https://platform.twitter.com/widgets.js'):
+                    if '/api/creator-uploads?channel=UC4ZlERGU2sUoBP_ssCagn5g' in url:
+                        if becki_feed_available:
+                            request.fulfill(status=200, content_type='application/json', body=json.dumps({
+                                'ok': True, 'channelId': 'UC4ZlERGU2sUoBP_ssCagn5g', 'complete': False,
+                                'source': 'YouTube public uploads RSS', 'videos': becki_uploads}))
+                        else:
+                            request.fulfill(status=503, content_type='application/json', body='{"ok":false}')
+                    elif url.startswith('https://platform.twitter.com/widgets.js'):
                         widget_requests.append(url)
                         if len(widget_requests) == 1:
                             request.abort()
@@ -221,6 +236,28 @@ def run():
                     'src','https://www.youtube-nocookie.com/embed/PyUwXoTabPA')
                 reviewed.get_by_role('button',name='Stop playback').click()
                 expect(reviewed.locator('iframe')).to_have_count(0)
+                # Owner cards have an in-card View More feed, not a dead link:
+                # six per page, more real owner URLs, and verified creator RSS.
+                reviewed.get_by_role('button',name='View more videos').click()
+                more=reviewed.locator('.qcx-owner-more-videos')
+                expect(more).to_be_visible()
+                expect(more.get_by_role('combobox',name='Filter by video channel')).to_have_value('owner')
+                expect(more.locator('.qcx-mix-entry')).to_have_count(6)
+                more.get_by_role('button',name='Load more videos').click()
+                assert more.locator('.qcx-mix-entry').count()>=11, 'View More must page actual owner links'
+                expect(more).to_contain_text('oxVpgLW2k2c')
+                expect(more).to_contain_text('O5wUpS5z4SI')
+                more.get_by_role('button',name='Play in card').first.click()
+                expect(more.locator('iframe')).to_have_count(1)
+                reviewed.locator('form.qcx-search-form').get_by_role('button',name='Play in card').click()
+                expect(more.locator('iframe')).to_have_count(0)
+                expect(reviewed.locator('iframe')).to_have_count(1)
+                reviewed.get_by_role('button',name='Stop playback').first.click()
+                expect(reviewed.locator('iframe')).to_have_count(0)
+                more.get_by_role('combobox',name='Filter by video channel').select_option('gana')
+                assert more.locator('.qcx-mix-entry').count()>=1, 'Verified channel filter must show real seed videos'
+                reviewed.get_by_role('button',name='Hide more videos').click()
+                expect(more).to_be_hidden()
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Reviewed video overflow'
                 page.goto(base+'/?card='+reviewed_id,wait_until='domcontentloaded')
                 expect(page.locator('#oracleCardStage [data-source-id="'+reviewed_id+'"]')).to_be_visible(timeout=20000)
@@ -278,6 +315,43 @@ def run():
                 expect(page.locator('#oracleCardStage [data-source-id="landing-autism-youtube"] .youtube-creator-mixed-card')).to_be_visible(timeout=20000)
                 assert page.locator('#oracleCardChooser option[value="source-landing-autism-youtube"]').count()==1
                 checks.append(f'{width}px: LANDing Autism source channel in Oracle, Play/Stop, mobile no overflow')
+
+                # Becki: reviewed fallback works with RSS unavailable; an observed
+                # public-feed fixture then exercises paging and channel isolation.
+                page.goto(base+'/source-quick-card.html?card=autism-out-loud-youtube',wait_until='domcontentloaded')
+                becki=page.locator('.youtube-creator-mixed-card')
+                expect(becki).to_contain_text('Becki | Autism Out Loud Coach · Full channel Quick Card')
+                expect(becki.get_by_role('combobox',name='Filter by video channel')).to_have_value('autism-out-loud')
+                expect(becki.locator('.qcx-mix-entry')).to_have_count(6)
+                expect(becki.locator('.qcx-mix-entry').first).to_contain_text('When My Autistic Daughter Has No Wet Wipes!')
+                expect(becki.get_by_role('link',name='Full Becki | Autism Out Loud Coach videos on YouTube')).to_have_attribute('href','https://www.youtube.com/@autismoutloudcoach/shorts')
+                expect(becki.locator('iframe')).to_have_count(0)
+                assert becki.get_by_role('button',name='Play in card').first.bounding_box()['height']>=44
+                becki_feed_available=True
+                page.reload(wait_until='domcontentloaded')
+                becki=page.locator('.youtube-creator-mixed-card')
+                expect(becki.get_by_role('status').first).to_contain_text('of 16 loaded videos')
+                expect(becki.locator('.qcx-mix-entry').first).to_contain_text('When My Autistic Daughter Has No Wet Wipes!')
+                becki.get_by_role('button',name='Load more videos').click()
+                expect(becki.locator('.qcx-mix-entry')).to_have_count(12)
+                search=becki.get_by_role('searchbox',name='Search loaded creator videos')
+                search.fill('wet wipes')
+                expect(becki.locator('.qcx-mix-entry')).to_have_count(1)
+                becki.get_by_role('button',name='Play in card',exact=True).click()
+                expect(becki.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/L9x-4pLKG50')
+                becki.get_by_role('button',name='Stop playback',exact=True).click()
+                expect(becki.locator('iframe')).to_have_count(0)
+                search.fill('')
+                becki.get_by_role('button',name='Play in card').nth(0).click()
+                becki.get_by_role('button',name='Play in card').nth(1).click()
+                expect(becki.locator('iframe')).to_have_count(1)
+                becki.get_by_role('button',name='Stop playback',exact=True).filter(visible=True).click()
+                expect(becki.locator('iframe')).to_have_count(0)
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'Becki channel Quick Card overflow'
+                page.goto(base+'/?card=autism-out-loud-youtube',wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="autism-out-loud-youtube"] .youtube-creator-mixed-card')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-autism-out-loud-youtube"]').count()==1
+                checks.append(f'{width}px: Becki channel, requested video, Shorts link, RSS fallback, Load More, search, one player, Stop and no overflow')
 
                 context.close()
             browser.close()

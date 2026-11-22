@@ -1,7 +1,8 @@
+import {REVIEWED_OWNER_VIDEO_LINKS, REVIEWED_OWNER_VIDEO_CARDS, validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE} from '../youtube-creator-mixed-core.mjs';
+import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE, AGORA_SOU_MAE_SOURCE} from '../youtube-creator-mixed-core.mjs';
 import {parseCreatorUploads, creatorUploadsApi} from '../workers/quantaphi-site/creator-uploads.mjs';
 import {findSourceCard, isPublicSourceCard, validSourceCard} from '../source-quick-cards.mjs';
 import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
@@ -10,7 +11,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','landing']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -138,4 +139,101 @@ test('LANDing Autism publisher has a standalone Public/Media full-channel Quick 
  assert.match(ui,/Full channel/);
  assert.match(ui,/Load more videos/);
  assert.ok(ui.includes('youtube-nocookie.com/embed'));
+});
+
+test('Becki owner video opens its verified Autism Out Loud channel as a Public/Media Quick Card',()=>{
+ const channel=CREATOR_CHANNELS.find(c=>c.key==='autism-out-loud');
+ assert.ok(channel,'The requested publisher must be indexed');
+ assert.equal(channel.name,'Becki | Autism Out Loud Coach');
+ assert.equal(channel.channelId,'UC4ZlERGU2sUoBP_ssCagn5g');
+ assert.equal(channel.url,'https://www.youtube.com/@autismoutloudcoach');
+ assert.equal(channel.videosUrl,'https://www.youtube.com/@autismoutloudcoach/shorts');
+ assert.equal(channel.seed.length,6);
+ assert.equal(channel.seed[0].videoId,'L9x-4pLKG50');
+ assert.equal(channel.seed[0].title,'When My Autistic Daughter Has No Wet Wipes! 😂❤️');
+ assert.ok(channel.seed.every(v=>v.channelId===channel.channelId&&v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+ const card=findSourceCard('autism-out-loud-youtube');
+ assert.equal(card?.initialCreatorChannel,channel.key);
+ assert.equal(card?.featureUrl,channel.videosUrl);
+ assert.equal(card?.official,channel.url);
+ assert.equal(card?.youtubeMixedFeed,true);
+ assert.ok(isPublicSourceCard(card));
+ assert.ok(validSourceCard(card));
+ assert.equal(departmentFor(card),'media');
+ assert.equal(ALL_FEED_CARDS.filter(c=>c.id===card.id).length,1);
+});
+
+// Original public Atom response captured 2026-11-22. YouTube's root
+// yt:channelId omits UC, while its author and feed links use the full UC ID.
+const beckiFeed=()=>readFileSync(new URL('./fixtures/autism-out-loud-uploads.xml',import.meta.url),'utf8');
+test('actual YouTube upload feed remains readable when its channel field omits UC',async()=>{
+ const channelId='UC4ZlERGU2sUoBP_ssCagn5g',xml=beckiFeed();
+ const rows=parseCreatorUploads(xml,channelId);
+ assert.equal(rows.length,15);
+ assert.equal(rows[0].videoId,'iWXbl9-5O98');
+ assert.equal(rows[0].publishedAt,'2026-11-21T20:27:15+00:00');
+ assert.ok(rows.every(v=>v.channelId===channelId));
+ const response=await creatorUploadsApi(new Request('https://quantaphi.org/api/creator-uploads?channel='+channelId),async()=>new Response(xml));
+ assert.equal(response.status,200);
+ const body=await response.json();
+ assert.equal(body.complete,false);
+ assert.equal(body.videos.length,15);
+});
+
+test('an unrelated RSS channel is rejected even when a link contains the requested full channel ID',async()=>{
+ const expected='UC4ZlERGU2sUoBP_ssCagn5g';
+ const mismatched=beckiFeed().replaceAll('<yt:channelId>4ZlERGU2sUoBP_ssCagn5g</yt:channelId>','<yt:channelId>6ySmwN_K8fGGD2EKLQdEGA</yt:channelId>');
+ assert.deepEqual(parseCreatorUploads(mismatched,expected),[]);
+ const response=await creatorUploadsApi(new Request('https://quantaphi.org/api/creator-uploads?channel='+expected),async()=>new Response(mismatched));
+ assert.equal(response.status,502);
+ assert.equal((await response.json()).ok,false);
+});
+
+test('AGORA SOU MÃE verified publisher has one dedicated full-channel Public/Media Quick Card',()=>{
+ const channel=CREATOR_CHANNELS.find(c=>c.key==='agorasoumae');
+ assert.ok(channel,'Verified YouTube publisher appears in the creator selector');
+ assert.equal(channel.name,'AGORA SOU MÃE');
+ assert.equal(channel.channelId,'UCjht-pbc_924v1ovsKHZd9Q');
+ assert.equal(channel.url,'https://www.youtube.com/@agorasoumae173');
+ assert.equal(channel.seed.length,7,'Use only seven source-identified video IDs, not an invented full archive');
+ assert.deepEqual(channel.seed.map(v=>v.videoId),[
+  'XNXSduqwZ54','VnDurY3dysA','5vkwoZXc6Vg','GzTixQ8PVvY','ZqXrplTyGg0','MNcG0UM9t4c','97l1heMfoiE'
+ ]);
+ assert.ok(channel.seed.every(v=>v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+ assert.equal(channel.seed[0].videoId,'XNXSduqwZ54');
+ assert.equal(channel.seed[0].sourceUrl,'https://www.youtube.com/watch?v=XNXSduqwZ54');
+ assert.equal(channel.seed[0].title,'MAMÃES ASSISTAM ESTE VIDEO');
+ const card=findSourceCard('agora-sou-mae-youtube');
+ assert.equal(card?.id,AGORA_SOU_MAE_SOURCE.id);
+ assert.equal(card?.initialCreatorChannel,'agorasoumae');
+ assert.equal(card?.youtubeMixedFeed,true);
+ assert.equal(card?.official,'https://www.youtube.com/@agorasoumae173');
+ assert.equal(card?.featureUrl,'https://www.youtube.com/@agorasoumae173/videos');
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.equal(departmentFor(card),'media');
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(ui,/card.initialCreatorChannel/);
+ assert.ok(ui.includes('/api/creator-uploads?channel='));
+ assert.match(ui,/Load more videos/);
+ assert.ok(ui.includes('youtube-nocookie.com/embed/'));
+});
+
+test('XNXSduqwZ54 has a single original-video media card without unsupported archive or rights claims',()=>{
+ const id='XNXSduqwZ54';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1);
+ const v=rows[0];
+ assert.equal(v.title,'MAMÃES ASSISTAM ESTE VIDEO');
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.publisherVerified,false,'Existing owner video schema does not grant publication rights');
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const c=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+ assert.ok(c&&isPublicSourceCard(c)&&validSourceCard(c));
+ assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.equal(departmentFor(c),'media');
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
 });

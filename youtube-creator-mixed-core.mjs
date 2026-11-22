@@ -25,6 +25,12 @@ export const CREATOR_CHANNELS=Object.freeze([
   url:'https://www.youtube.com/@SamirahAnn',seed:Object.freeze([
    seed('samirah','UPFgnpkm7MQ','BREASTFEEDING A TEETHING BABY | Clingy baby | Clean with me | Mum of four')
   ])}),
+ // Public watch page identifies Brittikitty and the original channel handle.
+ // No canonical UC ID was verified; link the full Videos tab but do not fetch RSS.
+ Object.freeze({key:'brittikitty',name:'Brittikitty',channelId:null,
+  url:'https://www.youtube.com/@brittikitty',seed:Object.freeze([
+   seed('brittikitty','eikANmw714k','Lily can literally fall asleep everywhere and anywhere 😂😂')
+  ])}),
  Object.freeze({key:'landing',name:'LANDing Autism',channelId:'UCQU1zvNELO2AatGXMRQ2bSw',
   url:'https://www.youtube.com/@LANDingAutism',seed:Object.freeze([
    seed('UCQU1zvNELO2AatGXMRQ2bSw','QR_c5m1RLtk','Penelope Takes Her FIRST STEPS!!'),
@@ -33,6 +39,30 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UCQU1zvNELO2AatGXMRQ2bSw','xDr8qOYR93M','Answering Questions I Really Don\'t Want To'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','rS_P180JLU8','Autism Life In Texas'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','4CjRqGBkjQY','New House Grocery Haul 2026 | WALMART GROCERIES')
+  ])}),
+ // Verified directly on the public video and channel pages on 2026-11-22.
+ // RSS supplies recent uploads; historical videos stay on the original channel.
+ Object.freeze({key:'agorasoumae',name:'AGORA SOU MÃE',channelId:'UCjht-pbc_924v1ovsKHZd9Q',
+  url:'https://www.youtube.com/@agorasoumae173',seed:Object.freeze([
+   seed('UCjht-pbc_924v1ovsKHZd9Q','XNXSduqwZ54','MAMÃES ASSISTAM ESTE VIDEO'),
+   // Six additional exact ID/title pairs inspected from official public upload RSS.
+   seed('UCjht-pbc_924v1ovsKHZd9Q','VnDurY3dysA','Decoração de Natal | AGORA SOU MÃE ❤️'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','5vkwoZXc6Vg','FAZENDO FAXINA NA CASA TODA | AGORA SOU MÃE ❤️'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','GzTixQ8PVvY','VIAJAMOS PARA APARECIDA DO NORTE | AGORA SOU MÃE 🥰'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','ZqXrplTyGg0','Como está sendo a fase dos 3 anos da minha filha? | AGORA SOU MÃE'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','MNcG0UM9t4c','Dia de faxina pesadona 🫢 |AGORA SOU MÃE'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','97l1heMfoiE','Uma faxina na cozinha, óleo pra todo lado 🫢 | AGORA SOU MÃE')
+  ])}),
+ // Watch page, channel canonical metadata and public Atom feed checked 2026-11-22.
+ Object.freeze({key:'autism-out-loud',name:'Becki | Autism Out Loud Coach',channelId:'UC4ZlERGU2sUoBP_ssCagn5g',
+  url:'https://www.youtube.com/@autismoutloudcoach',
+  videosUrl:'https://www.youtube.com/@autismoutloudcoach/shorts',seed:Object.freeze([
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','L9x-4pLKG50','When My Autistic Daughter Has No Wet Wipes! 😂❤️'),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','iWXbl9-5O98',"Well, That's Not How I Expected My Saturday Night To Go!! 😂❤️"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','TvGFHhVF7eo','Is There Still a Stigma Around Specialist Schools?'),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','dM3t5FTzucI','Just Another Saturday With My Autistic Daughter Bethany!! 😂❤️'),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','yGkisQ2DWx4',"I've Been Hiding in the Car AGAIN! 😂"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','QlUq_VZhlx8',"Bethany Wasn't Falling for That! 😂❤️")
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -87,7 +117,7 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · LANDing Autism · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Brittikitty · LANDing Autism · Becki · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
@@ -106,4 +136,26 @@ export const LANDING_AUTISM_SOURCE=Object.freeze({
  focus:'Browse six source-identified public original videos, recent official YouTube RSS uploads and the publisher\'s complete public Videos tab. Playback starts only when tapped.',
  details:'Source-identified public YouTube video links, checked 2026-11-21. This is a partial indexed selection with keyless recent-upload refresh, not a complete historical video download or licensed rehost; YouTube owns playback restrictions.',
  youtubeMixedFeed:true,initialCreatorChannel:'landing'
+});
+
+export const AUTISM_OUT_LOUD_SOURCE=Object.freeze({
+ id:'autism-out-loud-youtube',name:'Becki | Autism Out Loud Coach · Full Channel',
+ kind:'Video · YouTube',feature:'Browse original Shorts and recent channel uploads',
+ featureUrl:'https://www.youtube.com/@autismoutloudcoach/shorts',
+ official:'https://www.youtube.com/@autismoutloudcoach',
+ focus:'Watch the requested original video, browse six reviewed channel links and refresh recent uploads from the official YouTube feed. Search, load more or open the creator’s complete public channel.',
+ details:'Original watch page, publisher channel ID and public uploads feed checked 2026-11-22. This card indexes a partial selection and recent uploads; the complete archive and Posts remain on YouTube. Playback depends on the publisher’s restrictions.',
+ youtubeMixedFeed:true,initialCreatorChannel:'autism-out-loud',initialCreatorVideoId:'L9x-4pLKG50'
+});
+
+/* Dedicated publisher channel viewer. The official channel Videos tab hosts
+ * the full catalog; our keyless RSS endpoint only fetches recent uploads. */
+export const AGORA_SOU_MAE_SOURCE=Object.freeze({
+ id:'agora-sou-mae-youtube',name:'AGORA SOU MÃE · Full Channel',
+ kind:'Video · YouTube',feature:'Browse recent public uploads and the full original channel',
+ featureUrl:'https://www.youtube.com/@agorasoumae173/videos',
+ official:'https://www.youtube.com/@agorasoumae173',
+ focus:'Browse a source-identified original YouTube video and recent public uploads, with search, pagination and tap-to-play in card. Open the publisher channel for the complete historical catalog.',
+ details:'Official publisher and UC channel ID verified on 2026-11-22. The keyless public RSS feed loads only recent uploads, not every historic video, Short or Community post. No media downloads, paid API, affiliation, advertising or licensed rehosting are claimed.',
+ youtubeMixedFeed:true,initialCreatorChannel:'agorasoumae'
 });

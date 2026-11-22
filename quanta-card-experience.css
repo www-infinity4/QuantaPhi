@@ -52,6 +52,7 @@
 textarea.qcx-input{width:100%;resize:vertical;min-height:85px}
 .qcx-button{font:800 14px/1.3 system-ui,sans-serif;min-height:46px;border:0;border-radius:12px;padding:10px 15px;background:#a7352e;color:white!important;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}
 .qcx-button:disabled{opacity:.55;cursor:not-allowed}.qcx-button:hover{filter:brightness(.91)}
+.youtube-creator-mixed-card [hidden]{display:none!important}
 .qcx-link{color:#852d29;font:750 13px/1.4 system-ui,sans-serif;display:inline-flex;align-items:center;min-height:40px}
 .qcx-player{width:100%;min-height:15px}.qcx-video{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:11px;background:#14121b}
 .qcx-audio{max-width:100%;width:100%}.qcx-controls{display:flex;flex-wrap:wrap;gap:9px}
