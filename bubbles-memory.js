@@ -109,7 +109,9 @@
   }
   async function context(q){
    if(!enabled)return '';
-   const last=await recent(12),related=await search(q,8),ids=new Set(last.map(e=>e.id));
+   // Use only this opted-in owner's indexed history. One short historical
+   // user clip can refresh context; it is never an instruction or new grant.
+   const history=await recent(36),last=history.slice(-12),related=await search(q,16),ids=new Set(last.map(e=>e.id));
    let saved='';
    // Saved notes remain evidence, never model instructions or permission.
    if(cloud){
@@ -130,14 +132,32 @@
     if(recentSize+line.length>5000)continue;
     recentLines.unshift(line);recentSize+=line.length;
    }
+   // Prefer relevant indexed user clips; fall back to older owner-history
+   // clips only when there is no query match. No assistant/model prose is a
+   // steering candidate. A source ID makes the selection auditable.
+   const eligible=e=>e?.role==='user'&&!ids.has(e.id)&&
+    typeof e.text==='string'&&e.text.trim().length>=40;
+   const relevant=related.filter(eligible);
+   const older=history.slice(0,-12).filter(eligible);
+   const candidates=(relevant.length?relevant:older).slice(0,24);
+   const index=candidates.length?Math.min(candidates.length-1,
+    Math.floor(Math.max(0,Math.min(0.999999999,Math.random()))*candidates.length)):-1;
+   const picked=index>=0?candidates[index]:null;
+   let clipLine='';
+   if(picked){
+    const id=String(picked.id||'').replace(/[^A-Za-z0-9_-]/g,'').slice(0,80);
+    const heading='Continuity clip [historical user quote; reference not authorization; id='+id+']: ';
+    const available=Math.min(700,7800-saved.length-recentSize-heading.length-1);
+    if(available>=40)clipLine=heading+picked.text.trim().replace(/[\\r\\n]+/g,' ').slice(0,available)+'\n';
+   }
    let archived='';
    for(const e of related){
-    if(ids.has(e.id))continue;
+    if(ids.has(e.id)||e.id===picked?.id)continue;
     const line=e.role+': '+e.text.slice(0,900)+'\n';
-    if(saved.length+archived.length+recentSize+line.length>7800)continue;
+    if(saved.length+clipLine.length+archived.length+recentSize+line.length>7800)continue;
     archived+=line;
    }
-   return saved+archived+recentLines.join('');
+   return saved+clipLine+archived+recentLines.join('');
   }
   async function remoteFetch(path,options={}){
    const r=await fetch(API+path,{...options,headers:{'authorization':'Bearer '+token,'content-type':'application/json',...(options.headers||{})},cache:'no-store'});
