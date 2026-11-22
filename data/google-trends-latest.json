@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T14:01:12.611652Z",
+  "checked_at": "2026-11-22T14:31:12.173394Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cory booker",
+      "query": "jay clayton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T14:00:00Z",
+      "related_news_urls": [
+        "https://x.com/atrupar/status/2123846816642789627/video/1",
+        "https://x.com/atrupar/status/2124506487116488853/video/1",
+        "https://x.com/atrupar/status/2123831233310310790/video/1"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVn168-_3nSpcD668nK5-jWWqCQ3z2EoIqu2ZSzGRzrhv_dsxCpNiMUTYmlw",
+      "image_credit": "X",
+      "news": [
+        {
+          "url": "https://x.com/atrupar/status/2123846816642789627/video/1",
+          "title": "Trump on the new Democratic majorities: \"We could end up with great healthcare in our country. We could end up better than dealing with the Republicans.\"",
+          "publisher": "X",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVn168-_3nSpcD668nK5-jWWqCQ3z2EoIqu2ZSzGRzrhv_dsxCpNiMUTYmlw"
+        },
+        {
+          "url": "https://x.com/atrupar/status/2124506487116488853/video/1",
+          "title": "BASH: Is Alice Huang a spy? JAY CLAYTON: This is a matter under investigation. I'm going to let that investigation play out. BASH: You're the Director of National Intelligence CLAY",
+          "publisher": "X",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVD6B4GxrrD12FrtAx0TyBSVZ5G91J7LSYspGySyS1SQVbuCowEX03tGk73Oo"
+        },
+        {
+          "url": "https://x.com/atrupar/status/2123831233310310790/video/1",
+          "title": "\"Russia was very impressed\" -- Trump leads his press conference by bragging about taking the longest flight in Air Force One history, in case you were worried that he actually acco",
+          "publisher": "X",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzoEyHFRo27euSy3qiMBFn1YxjsU2sj2TN6LhZIxDGKzKhcYfwInLhuGGM8Xw"
+        }
+      ]
+    },
+    {
+      "query": "sassuolo vs genoa",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T13:40:00Z",
+      "published_at": "2026-11-22T14:00:00Z",
       "related_news_urls": [
-        "https://www.modernghana.com/videonews/nbc/1/758797",
-        "https://www.postandcourier.com/politics/cory-booker-charleston-sc-naacp-2028/article_5d7d4e30-a97c-483f-83bb-0c194acf3eb7.html",
-        "https://apnews.com/video/senator-booker-comments-on-future-of-senate-leadership-iran-war-e8ba4112e7da4933890a084521163df9"
+        "https://www.bbc.com/sport/football/live/cmly7eejp92et",
+        "https://www.tufutbolero.com/en/news/sassuolo-genoa-sassuolo-arrive-on-five-straight-defeats-feb444",
+        "https://onefootball.com/en/news/preview-sassuolo-vs-genoa-team-news-lineups-predictions-serie-a-2211-43807461"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVX8mq5Mr1WD7cut1Xj-aeMzWwD5L7iGuJHuXWaJE3r0de2tP_zvGt_xpG4w",
-      "image_credit": "Modern Ghana",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.modernghana.com/videonews/nbc/1/758797",
-          "title": "‘This is a time for NEW leadership’: Sen. Cory Booker talks Senate leadership, possible 2028 run",
-          "publisher": "Modern Ghana",
+          "url": "https://www.bbc.com/sport/football/live/cmly7eejp92et",
+          "title": "Sassuolo vs Genoa: Italian Serie A stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOVX8mq5Mr1WD7cut1Xj-aeMzWwD5L7iGuJHuXWaJE3r0de2tP_zvGt_xpG4w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
         },
         {
-          "url": "https://www.postandcourier.com/politics/cory-booker-charleston-sc-naacp-2028/article_5d7d4e30-a97c-483f-83bb-0c194acf3eb7.html",
-          "title": "Sen. Booker of NJ urges Charleston NAACP to fight for American Dream as he weighs presidential run",
-          "publisher": "Post and Courier",
+          "url": "https://www.tufutbolero.com/en/news/sassuolo-genoa-sassuolo-arrive-on-five-straight-defeats-feb444",
+          "title": "Sassuolo-Genoa: Sassuolo arrive on five straight defeats",
+          "publisher": "Tu Futbolero",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7CnadyLMztvIz_JIt4ymYyyy-DytUoi0c7giK7QQhkR90IoHA67L7ym5lIPU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOb_3-RNOTD2foSwhzQwU2Nz4rAAN6sBrMvUq5YAnIOvRwpMwuTr6otUs7B7k"
         },
         {
-          "url": "https://apnews.com/video/senator-booker-comments-on-future-of-senate-leadership-iran-war-e8ba4112e7da4933890a084521163df9",
-          "title": "Senator Booker comments on future of Senate leadership, Iran war",
-          "publisher": "AP News",
+          "url": "https://onefootball.com/en/news/preview-sassuolo-vs-genoa-team-news-lineups-predictions-serie-a-2211-43807461",
+          "title": "PREVIEW | Sassuolo vs Genoa: team news, lineups, predictions (Serie A 22/11)",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFdp_3GNkpsg7GLukYcnWdltZSegEOVniX-by-pR-HWcVq4Y0WWyelfs1jV6c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmT4Oo4Lnqoeak2L-_9gQFSmi6MiGBfnlgk5TM-35aab09RkvAQI2rnbkFoA0"
         }
       ]
     },
     {
-      "query": "quentin tarantino",
+      "query": "bologna vs udinese",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T13:40:00Z",
+      "published_at": "2026-11-22T14:00:00Z",
       "related_news_urls": [
-        "https://people.com/quentin-tarantino-wife-daniella-welcome-their-third-baby-a-boy-exclusive-12271821",
-        "https://www.ynetnews.com/culture/article/r1axyuljqe",
-        "https://www.aol.com/articles/quentin-tarantino-wife-daniella-welcome-131016000.html"
+        "https://www.bbc.com/sport/football/live/cqvg2ee3zj77t",
+        "https://onefootball.com/en/news/pessina-and-theate-return-to-training-43790996",
+        "https://www.tufutbolero.com/en/news/happonen-ruled-out-bologna-s-squad-for-the-udinese-clash-a84c28"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1gZE9NC5qGzifejLKjj92QDzZvUyQmft8V9GjCIQ4rPwNtPmWOXGMmgucYyY",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://people.com/quentin-tarantino-wife-daniella-welcome-their-third-baby-a-boy-exclusive-12271821",
-          "title": "Quentin Tarantino and Wife Daniella Welcome Their Third Baby, a Boy (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.bbc.com/sport/football/live/cqvg2ee3zj77t",
+          "title": "Bologna vs Udinese: Italian Serie A stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1gZE9NC5qGzifejLKjj92QDzZvUyQmft8V9GjCIQ4rPwNtPmWOXGMmgucYyY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://www.ynetnews.com/culture/article/r1axyuljqe",
-          "title": "Quentin Tarantino and Israeli wife Daniella Pick celebrate birth of third child",
-          "publisher": "Ynetnews",
+          "url": "https://onefootball.com/en/news/pessina-and-theate-return-to-training-43790996",
+          "title": "Pessina and Theate return to training",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmvaxlbSxIUQpOmGxARuw9SlwdyjEoutA5uw9oNuYVDMOci_fRk2sncA4hXrI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDkn5NtRiXjh3rfZDyfZgWBVcUtZBYxkg2V6kgNJjewmXnM1L3d1ZM6W4saJo"
         },
         {
-          "url": "https://www.aol.com/articles/quentin-tarantino-wife-daniella-welcome-131016000.html",
-          "title": "Quentin Tarantino and Wife Daniella Welcome Their Third Baby, a Boy (Exclusive)",
-          "publisher": "AOL.com",
+          "url": "https://www.tufutbolero.com/en/news/happonen-ruled-out-bologna-s-squad-for-the-udinese-clash-a84c28",
+          "title": "Happonen ruled out: Bologna's squad for the Udinese clash",
+          "publisher": "Tu Futbolero",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1gZE9NC5qGzifejLKjj92QDzZvUyQmft8V9GjCIQ4rPwNtPmWOXGMmgucYyY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRAE8SwqGx-qIFE5haqlP87LJhlibWEqfftf2QWHpcdxFxWxghi-GCrHujzDo"
         }
       ]
     },
     {
-      "query": "target black friday 2026",
+      "query": "marc marquez",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T13:40:00Z",
+      "published_at": "2026-11-22T14:00:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/22/target-black-friday-sale-2026/92881966007/",
-        "https://mashable.com/tech/target-black-friday-ad-scans-early-deals-2026",
-        "https://www.macrumors.com/2026/11/18/targets-early-black-friday/"
+        "https://www.espn.com/racing/story/_/id/50557365/marquez-8th-motogp-world-championship",
+        "https://www.motogp.com/en/videos/2026/11/22/marc-marquez-is-your-2026-motogp-world-champion/1267521?playlistId=480380",
+        "https://www.the-race.com/motogp/joke-motogp-sprint-rescheduling-infuriates-miller/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQXXsFtp2euOVHkWgIF3LnOiknAUSvcc3XqiBNB6aatofpjG978gRm9rd4tKw",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/22/target-black-friday-sale-2026/92881966007/",
-          "title": "Target's Black Friday sale is here with deals on thousands of gifts",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQXXsFtp2euOVHkWgIF3LnOiknAUSvcc3XqiBNB6aatofpjG978gRm9rd4tKw"
-        },
-        {
-          "url": "https://mashable.com/tech/target-black-friday-ad-scans-early-deals-2026",
-          "title": "Black Friday 2026 at Target: See the ad and early deals",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7v711K7lNXKWF1j3yJ8n6baF7bQQ09F0ZgxLFaKawJ2nTd9CS5CQ_xBwwYTM"
-        },
-        {
-          "url": "https://www.macrumors.com/2026/11/18/targets-early-black-friday/",
-          "title": "Target's Early Black Friday Event Offers Savings on Apple, TVs, and Accessories",
-          "publisher": "MacRumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdBCVwVd5m-NseP08wQc9eIcTfywRTZOHeocjNkwLYefEO7wkr08e5GCjnnWw"
-        }
-      ]
-    },
-    {
-      "query": "jennifer garner",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
-        "https://www.dailymail.com/tvshowbiz/article-16307869/ben-affleck-reunites-jennifer-garner-thanksgiving-jennifer-lopez-divorce-therapy.html",
-        "https://eia.media/article/society/bena-affleka-zametili-s-byvshey-zhenoy-na-parkovke-v-los-andzhelese"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDjoV_s8UcI0m1R96URqunQ2sVMglQRkVz6YwZSgRqg2--AKmG9TSReybg4PI",
-      "image_credit": "The Australian",
-      "news": [
-        {
-          "url": "https://www.theaustralian.com.au/arts/news-of-the-week-jennifer-garner-reflects-on-incredible-part-of-ben-affleck-marriage/video/75793ab6de375b238ab608fa0407c979",
-          "title": "NEWS OF THE WEEK: Jennifer Garner reflects on ‘incredible’ part of Ben Affleck marriage",
-          "publisher": "The Australian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDjoV_s8UcI0m1R96URqunQ2sVMglQRkVz6YwZSgRqg2--AKmG9TSReybg4PI"
-        },
-        {
-          "url": "https://www.dailymail.com/tvshowbiz/article-16307869/ben-affleck-reunites-jennifer-garner-thanksgiving-jennifer-lopez-divorce-therapy.html",
-          "title": "Ben Affleck reunites with ex Jennifer Garner ahead of Thanksgiving",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0uY3UUNGxpk8nzJ2iVMzlAbKO27LyUE7_iN1UWL_WxQb76bZHT4dGq4UWh1A"
-        },
-        {
-          "url": "https://eia.media/article/society/bena-affleka-zametili-s-byvshey-zhenoy-na-parkovke-v-los-andzhelese",
-          "title": "Ben Affleck spotted with ex-wife in Los Angeles parking lot · EIA",
-          "publisher": "eia.media",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxADNetlNJtijnm17vhqoDyVLFM58stZ6Vxpd83c8t8i5DsEUxAjDmoDGnHt0"
-        }
-      ]
-    },
-    {
-      "query": "2026 black friday deals",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22",
-        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
-        "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9OfNNEeQmKmxQHlYHl4nLi2mWK43yNMsTmtBe-ck7auKx71srG33l3uDsRg",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22",
-          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9OfNNEeQmKmxQHlYHl4nLi2mWK43yNMsTmtBe-ck7auKx71srG33l3uDsRg"
-        },
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
-          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 shopping event of the year",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
-        },
-        {
-          "url": "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals",
-          "title": "We vetted thousands of early Black Friday deals to find 42 worth pouncing on",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuTtvGXJaj0PcrnoFmkLXVclz26HKxlLWsNNx1VUK8se8PggMjU3FKOBwYmU"
-        }
-      ]
-    },
-    {
-      "query": "us lbm coaches poll projections",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/22/college-football-rankings-projection-coaches-poll-week-12/92909085007/",
-        "https://sports.yahoo.com/articles/college-football-rankings-week-12-120312535.html",
-        "https://collegefootballnews.com/college-football/coaches-poll-prediction-tennessee-texas-alabama"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5Gq-BihB74K8EJzlrKyublcRKkb2KFCkg6av1RKN-Z_4m4ShGlZ31Ec8Npxc",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/22/college-football-rankings-projection-coaches-poll-week-12/92909085007/",
-          "title": "College football rankings projection: UCLA, Indiana set for tumble in coaches poll",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5Gq-BihB74K8EJzlrKyublcRKkb2KFCkg6av1RKN-Z_4m4ShGlZ31Ec8Npxc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/college-football-rankings-week-12-120312535.html",
-          "title": "College football rankings after Week 12: Updated Coaches Poll, AP Top 25 for SEC",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQVEKX6KflYJP8nqvss_dvgR440UeiqFSYeB59a5okFhJLf2oyO2c_I6VbGoI"
-        },
-        {
-          "url": "https://collegefootballnews.com/college-football/coaches-poll-prediction-tennessee-texas-alabama",
-          "title": "Coaches Poll Prediction: Will They Finally Get Tennessee, Texas, Alabama Right?",
-          "publisher": "College Football News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTJlELNYviUscriB7vSec37v976AWws_ntYl-4khxmsX8UDzzjswHZM11W26c"
-        }
-      ]
-    },
-    {
-      "query": "is there an early nfl game today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/jets-vs-chargers-game-time-133326672.html",
-        "https://www.cbssports.com/prediction/news/nfl-week-11-jets-vs-chargers-odds-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus/",
-        "https://establishtherun.com/evan-silvas-matchups-jets-at-chargers-2/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX8d1opdjkRxIMksvJzGOekjRNO_lMnQju3wYqcyiPW2qJtlgB32MS9KLNy8A",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/jets-vs-chargers-game-time-133326672.html",
-          "title": "Jets vs. Chargers: Game Time, TV, Announcers, Online Streaming, and More",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQX8d1opdjkRxIMksvJzGOekjRNO_lMnQju3wYqcyiPW2qJtlgB32MS9KLNy8A"
-        },
-        {
-          "url": "https://www.cbssports.com/prediction/news/nfl-week-11-jets-vs-chargers-odds-predictions-use-polymarket-promo-code-cbssports-to-get-a-25-bonus/",
-          "title": "NFL Week 11 Jets vs. Chargers odds, predictions: Use Polymarket promo code CBSSPORTS to get a $25 bonus",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm2RjY-ClfkkznzebQT28SYsxg3V5UB17P1qiZShFZJXJ1A9pGD1LE20C3yG4"
-        },
-        {
-          "url": "https://establishtherun.com/evan-silvas-matchups-jets-at-chargers-2/",
-          "title": "Evan Silva’s Matchups: Jets at Chargers",
-          "publisher": "Establish The Run",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbAm1ylQ4fx2Tr3PVEfzheimtLWQQg5n02ePptmLlrdGG6KvzKYS-k1NueJ4s"
-        }
-      ]
-    },
-    {
-      "query": "titans vs cowboys",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://www.dallascowboys.com/news/here-we-goooo-is-this-the-week-everything-clicks-for-the-cowboys",
-        "https://sports.yahoo.com/articles/keys-game-titans-upset-cowboys-130032727.html",
-        "https://www.tennesseetitans.com/news/weekend-mailbag-jim-wyatt-answers-questions-from-titans-fans-ahead-of-sunday-s-game-vs-the-cowboys"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpRaMjgjez6pJQXvv-8_5QkLKIMsRkvsWd8Muu7FjzO9UxNSo9I1CRBe5D8ZA",
-      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-      "news": [
-        {
-          "url": "https://www.dallascowboys.com/news/here-we-goooo-is-this-the-week-everything-clicks-for-the-cowboys",
-          "title": "Here We Goooo: Is this the week everything clicks for the Cowboys?",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpRaMjgjez6pJQXvv-8_5QkLKIMsRkvsWd8Muu7FjzO9UxNSo9I1CRBe5D8ZA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/keys-game-titans-upset-cowboys-130032727.html",
-          "title": "Keys to the Game: How Titans Can Upset Cowboys on the Road",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBkLJzl411nbB1nt0UbwC6_mjG0dv9owZcFr-MXca8Po37s57H-cxCEBhC6ss"
-        },
-        {
-          "url": "https://www.tennesseetitans.com/news/weekend-mailbag-jim-wyatt-answers-questions-from-titans-fans-ahead-of-sunday-s-game-vs-the-cowboys",
-          "title": "Weekend Mailbag: Jim Wyatt Answers Questions From Titans Fans Ahead of Sunday's Game vs the Cowboys",
-          "publisher": "Tennessee Titans",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRr2SYvzFUUDM2nOcvoP8Q-45MI9DYAETjKZSD2ChKOygOK3JH8XHce3lcS7wc"
-        }
-      ]
-    },
-    {
-      "query": "alec pierce",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T13:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50551004/sources-colts-shutting-alec-pierce-rest-season",
-        "https://bleacherreport.com/articles/25536315-major-alec-pierce-injury-update-revealed-new-nfl-rumors-after-daniel-jones-cut-colts",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-colts-as-expected-wont-activate-wr-alec-pierce-from-injured-reserve"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdqwyTPd3W1_WLHfw_23ukp2Fy9rJ1zslxo7cs-1pviG_T4YLbbLhogX9Lyqc",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWYktB5Q1gkeAKf9tdfmQWrwJ9MiBhmk-EiI0rQXO9wauqELOXDa2Se60LuA",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50551004/sources-colts-shutting-alec-pierce-rest-season",
-          "title": "Sources: Colts shut down Alec Pierce for season, plan for WR's return in 2027",
+          "url": "https://www.espn.com/racing/story/_/id/50557365/marquez-8th-motogp-world-championship",
+          "title": "Marc Márquez's record-equaling 8th MotoGP title is his most impressive yet",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdqwyTPd3W1_WLHfw_23ukp2Fy9rJ1zslxo7cs-1pviG_T4YLbbLhogX9Lyqc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWYktB5Q1gkeAKf9tdfmQWrwJ9MiBhmk-EiI0rQXO9wauqELOXDa2Se60LuA"
         },
         {
-          "url": "https://bleacherreport.com/articles/25536315-major-alec-pierce-injury-update-revealed-new-nfl-rumors-after-daniel-jones-cut-colts",
-          "title": "Major Alec Pierce Injury Update Revealed in New NFL Rumors After Daniel Jones Cut by Colts",
-          "publisher": "Bleacher Report",
+          "url": "https://www.motogp.com/en/videos/2026/11/22/marc-marquez-is-your-2026-motogp-world-champion/1267521?playlistId=480380",
+          "title": "Marc Marquez is your 2026 MotoGP World Champion",
+          "publisher": "motogp.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOVey9X0_340zNw6YOXuSrpElJmqxRmP7x-eqPtazGAd2b1Q3QRJXP7ctX7DE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLZUbfTYNJepunEQyxSBrD8S_JE9Bb-anqkNbVeaWxNxhuLJWxNTiD_DF5FXw"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-colts-as-expected-wont-activate-wr-alec-pierce-from-injured-reserve",
-          "title": "The Colts, as expected, won’t activate WR Alec Pierce from injured reserve",
-          "publisher": "NBC Sports",
+          "url": "https://www.the-race.com/motogp/joke-motogp-sprint-rescheduling-infuriates-miller/",
+          "title": "'Joke' MotoGP sprint rescheduling infuriates Miller",
+          "publisher": "The Race",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0NfUxpplb8hxLjcHgsUCSWQLcx0tvf-uRqlXYEpdIp_Wbc_jjTjvuRvopPig"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6zGggytKs0LLX9fF7hogQtRdEOWGUCVJkQbvrG5aYSQGBJnG67nvw_ddGUVk"
         }
       ]
     },
     {
-      "query": "gta 6 early pc port rumors",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T13:20:00Z",
+      "query": "week 11 fantasy rankings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T14:00:00Z",
       "related_news_urls": [
-        "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
-        "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
-        "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk"
+        "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
+        "https://www.cbssports.com/nfl/news/nfl-week-11-inactives-injury-tracker-latest-news-updates/live/",
+        "https://www.4for4.com/2026/w11/2026-week-11-nfl-weekend-update-injuries-picks-dfs-prop-parlay-fantasy-rankings"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0",
-      "image_credit": "The Verge",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzdM-QjuP27lIuPFfKOsYXc8OBzXKe1PwmwwSuxDf_bLAUTDGUpslB0rehsZU",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
-          "title": "The wait begins for GTA VI on PC",
-          "publisher": "The Verge",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
+          "title": "Fantasy football Week 11 inactives: Who's in and who's out?",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzdM-QjuP27lIuPFfKOsYXc8OBzXKe1PwmwwSuxDf_bLAUTDGUpslB0rehsZU"
         },
         {
-          "url": "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
-          "title": "Can your PC run GTA VI? The minimum RAM, GPU, and CPU requirements to expect",
-          "publisher": "ZDNET",
+          "url": "https://www.cbssports.com/nfl/news/nfl-week-11-inactives-injury-tracker-latest-news-updates/live/",
+          "title": "NFL Week 11 inactives, injury tracker: Latest news, updates on availability of key players",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3kJNkzXanVDNQNyaPDMEs4JkdvJ8Fb0unFhnJOpE8Rby4w4BA_ELs1mq6llM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwQKxhB0D0_WVnpdtzdRGh-NV6aDPBgahVTgTVYQGPc-KpGux9IarRZKhR5bo"
         },
         {
-          "url": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
-          "title": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
-          "publisher": "GameGPU",
+          "url": "https://www.4for4.com/2026/w11/2026-week-11-nfl-weekend-update-injuries-picks-dfs-prop-parlay-fantasy-rankings",
+          "title": "2026 Week 11 NFL Weekend Update: Injuries, Picks, DFS, Prop Parlay, Fantasy Rankings",
+          "publisher": "4for4",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzB5jyM-W38qq5JoQTPtBljzDrw3TGHQ7wm3gAqnYCo461x1NexLj3t-Sn9Uc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBl9jY6NxGaOjNV1Ujbk-vXInP180R98Jy2vedN_rck_QovYqJ_obxxXYP210"
+        }
+      ]
+    },
+    {
+      "query": "tony shalhoub",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T14:00:00Z",
+      "related_news_urls": [
+        "https://www.tapinto.net/towns/westfield/sections/arts-and-entertainment/articles/tony-shalhoub-and-josie-adams-coming-to-rialto-dec-10",
+        "https://www.cbsnews.com/news/book-excerpt-we-thought-theyd-never-leave-by-tony-shalhoub-with-josie-adams/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/control-freak-tony-shalhoub-gets-184544542.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxC_nrfGBxtRDoZH8U6s_9fymgD5Q6fSFidwkmWElJJPuwg5pcdp4NOSZq6SM",
+      "image_credit": "TAPinto",
+      "news": [
+        {
+          "url": "https://www.tapinto.net/towns/westfield/sections/arts-and-entertainment/articles/tony-shalhoub-and-josie-adams-coming-to-rialto-dec-10",
+          "title": "Tony Shalhoub and Josie Adams Coming to Rialto Dec. 10",
+          "publisher": "TAPinto",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxC_nrfGBxtRDoZH8U6s_9fymgD5Q6fSFidwkmWElJJPuwg5pcdp4NOSZq6SM"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/book-excerpt-we-thought-theyd-never-leave-by-tony-shalhoub-with-josie-adams/",
+          "title": "Book excerpt: \"We Thought They'd Never Leave\" by Tony Shalhoub with Josie Adams",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4oEfA6kykunyrS1oy52y1PEoLtYsSnH4wQtmwaGyU90R8pHLubTXcCkukOPw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/control-freak-tony-shalhoub-gets-184544542.html",
+          "title": "'Control freak' Tony Shalhoub gets real about being a girl dad and letting go as he teams up with daughter Josie – exclusive",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdOa1mZQ2ZPJMRf3DxqPmrz_0PjzG7b52W7iijRlz0y-Zr8X1og920NSGJB9o"
+        }
+      ]
+    },
+    {
+      "query": "chase elliott",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T13:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/team-jeff-gordon-chase-elliott-045438531.html",
+        "https://beyondtheflag.com/dale-earnhardt-jr-criticism-fair-but-ignores-most-important-point-01m7smgc72x2",
+        "https://demokratis.co.id/en/hendrick-elliott-gustafson-2027"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3drpdVx1ApV_7MtmdBYhj4S_L6T-sYTGYpnjhoDlMnQaJvLD8C6NjdFELOk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/team-jeff-gordon-chase-elliott-045438531.html",
+          "title": "‘All About Your Team’: Jeff Gordon on Chase Elliott, Crew Chief Dynamic",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc3drpdVx1ApV_7MtmdBYhj4S_L6T-sYTGYpnjhoDlMnQaJvLD8C6NjdFELOk"
+        },
+        {
+          "url": "https://beyondtheflag.com/dale-earnhardt-jr-criticism-fair-but-ignores-most-important-point-01m7smgc72x2",
+          "title": "Dale Earnhardt Jr.'s criticism is fair, but ignores the most important point",
+          "publisher": "Beyond the Flag",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWqPu1sk9Wpdx5A5Esvd4AY5XiJHicqEnqVVCmhVeCgw4i0a7h_TuIfy_cU5c"
+        },
+        {
+          "url": "https://demokratis.co.id/en/hendrick-elliott-gustafson-2027",
+          "title": "Hendrick Keeps Chase Elliott and Alan Gustafson Together for 2027",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKqi-FKtmJnfoE2wtB-thWWOnY875cA3QQw4i8Tw2nstVnRKRHFiggUEw0vTI"
+        }
+      ]
+    },
+    {
+      "query": "delta ground stop",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T13:50:00Z",
+      "related_news_urls": [
+        "https://www.wsbtv.com/news/local/clayton-county/ground-stop-effect-hartsfield-jackson-all-delta-air-lines-flights-faa-reports/C2ANPK2EE5E7LDRMQYMDEMOACY/",
+        "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/",
+        "https://www.cbsnews.com/atlanta/news/delta-ceo-thanks-employees-after-nationwide-faa-outage/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg2-LTliNZL7rN8pCgTegXuCqNg8tt8TEtjxR7pjm9McKphxBXI5BFbqlT4z4",
+      "image_credit": "WSB-TV",
+      "news": [
+        {
+          "url": "https://www.wsbtv.com/news/local/clayton-county/ground-stop-effect-hartsfield-jackson-all-delta-air-lines-flights-faa-reports/C2ANPK2EE5E7LDRMQYMDEMOACY/",
+          "title": "Delta Air Lines ground stop at Hartsfield-Jackson downgraded to ‘ground delay,’ FAA says",
+          "publisher": "WSB-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRg2-LTliNZL7rN8pCgTegXuCqNg8tt8TEtjxR7pjm9McKphxBXI5BFbqlT4z4"
+        },
+        {
+          "url": "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/",
+          "title": "Ground stop issued for Delta flights en route to Atlanta",
+          "publisher": "Atlanta News First",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYclxUO1inxdHw1R8mOsJkpoBkU_HAStPF29siawo45Fcbe1VGSV0GPuERk60"
+        },
+        {
+          "url": "https://www.cbsnews.com/atlanta/news/delta-ceo-thanks-employees-after-nationwide-faa-outage/",
+          "title": "Delta CEO thanks employees who helped travelers after nationwide FAA outage",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgUvAF8sguw-cQytj9nSx2eyx4e4X04HEmGDqnuJY5ADU5kucTSfdQzMg6d50"
+        }
+      ]
+    },
+    {
+      "query": "nfl week 11 playoff standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T13:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-11",
+        "https://bleacherreport.com/articles/25535451-nfl-playoff-picture-2026-27-standings-bracket-scenarios-after-texans-vs-colts",
+        "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIfbrFcG2CzzZu7qGB5ZI2sQLiHvYmynjIYnqe5ZWLFSZynnVFG1aW1CSrwN8",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-11",
+          "title": "NFL Playoff Picture 2026: Updated AFC and NFC standings, bracket, tiebreakers for Week 11",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIfbrFcG2CzzZu7qGB5ZI2sQLiHvYmynjIYnqe5ZWLFSZynnVFG1aW1CSrwN8"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25535451-nfl-playoff-picture-2026-27-standings-bracket-scenarios-after-texans-vs-colts",
+          "title": "NFL Playoff Picture 2026-27, Standings, Bracket Scenarios After Texans vs. Colts",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGjzPispLM-sinTkhd_sqoTpcYnu4RjbYkX5eo2iV4K5tQSJJMQ4IyvXPbqaQ"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50463347/2026-nfl-playoffs-chances-odds-tiers-32-teams-nfc-afc",
+          "title": "NFL playoff chance tiers: Where all 32 teams fit in 2026 postseason picture",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQUmRsxQ5gS2xob4sQ7OuoRJY7kitRPqJr_r5TX8fXu6wdvwY0jdYa8J-avc8"
+        }
+      ]
+    },
+    {
+      "query": "villarreal vs barcelona",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T13:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17541820/barcelona-flick-confirma-regresos-anuncia-baja-villarreal",
+        "https://www.marca.com/futbol/barcelona/2026/11/21/alineaciones-probables-barcelona-villarreal-correspondientes-jornada-13-laliga.html",
+        "https://elpais.com/deportes/futbol/2026-11-21/porque-hansi-flick-cose-la-zaga-del-barcelona-con-lo-que-tiene.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScr738g_6L0pIUxc4mjKfzJ7QE46QN6M5pKKVBqIMyCEyIDhOS2xffd8fxDuk",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17541820/barcelona-flick-confirma-regresos-anuncia-baja-villarreal",
+          "title": "Barça: Flick confirma regresos y anuncia baja vs Villarreal",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScr738g_6L0pIUxc4mjKfzJ7QE46QN6M5pKKVBqIMyCEyIDhOS2xffd8fxDuk"
+        },
+        {
+          "url": "https://www.marca.com/futbol/barcelona/2026/11/21/alineaciones-probables-barcelona-villarreal-correspondientes-jornada-13-laliga.html",
+          "title": "Alineaciones confirmadas del Barcelona-Villarreal: De Jong, de central, y Gordon suplente",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGTgaMqZmpOyw_HT8_4UVr60W2vuK_qPPY4scTOo53Df1O4PVw00jpgHrFU-g"
+        },
+        {
+          "url": "https://elpais.com/deportes/futbol/2026-11-21/porque-hansi-flick-cose-la-zaga-del-barcelona-con-lo-que-tiene.html",
+          "title": "Por qué Hansi Flick cose la zaga del Barcelona con lo que tiene",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQabyh62ZYCT4k9iAWNu6Kx1HJXKXfnVasIwIZFfGkSmgVhq2-wrjEjcRyHBo"
         }
       ]
     }
