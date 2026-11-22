@@ -252,7 +252,9 @@ export const REVIEWED_OWNER_VIDEO_CARDS=Object.freeze(REVIEWED_OWNER_VIDEO_LINKS
  reviewedYouTubeVideoId:v.videoId,contentBoundary:'general-media',
  observedAt:v.observedAt,publishedAt:null,publisherVerified:false,
  focus:'Original YouTube link and optional provider-hosted playback only. The publisher and upload date have not been independently verified; do not present this as licensed, current/trending, family education, 21+ or an advertisement.',
- details:v.titleVerified===false
+ details:v.videoId==='dTinr4W_IhY'
+  ? 'Owner-supplied original YouTube watch URL; title, channel, playback availability and rights not independently verified. Bubbles capture note: manually saved still screenshots are not continuous one-second recording. One-second screen series require explicit Android permission, a compatible installed build and a maximum of 60 local images; images may be fewer when frames are not delivered. A visible YouTube feed does not show why any recommendation was served.'
+  : v.titleVerified===false
   ? 'Owner-supplied YouTube watch URL and syntactically valid video ID; title, channel, playback availability and rights not independently verified. No full-channel import, licensed download or paid placement.'
   : 'Owner-supplied original YouTube link; public page title and video ID checked on '+v.observedAt+'. This entry is not an exhaustive channel import or a paid, adult, or childcare placement.'
 })));
