@@ -148,7 +148,11 @@ test('Becki owner video opens its verified Autism Out Loud channel as a Public/M
  assert.equal(channel.channelId,'UC4ZlERGU2sUoBP_ssCagn5g');
  assert.equal(channel.url,'https://www.youtube.com/@autismoutloudcoach');
  assert.equal(channel.videosUrl,'https://www.youtube.com/@autismoutloudcoach/shorts');
- assert.equal(channel.seed.length,6);
+ assert.equal(channel.seed.length,16,'The requested video plus all 15 observed public uploads remain browsable without live RSS');
+ assert.equal(new Set(channel.seed.map(v=>v.videoId)).size,16);
+ for(const upload of parseCreatorUploads(beckiFeed(),channel.channelId)){
+  assert.ok(channel.seed.some(v=>v.videoId===upload.videoId&&v.title===upload.title),'Reviewed fallback must retain official title/ID '+upload.videoId);
+ }
  assert.equal(channel.seed[0].videoId,'L9x-4pLKG50');
  assert.equal(channel.seed[0].title,'When My Autistic Daughter Has No Wet Wipes! 😂❤️');
  assert.ok(channel.seed.every(v=>v.channelId===channel.channelId&&v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));

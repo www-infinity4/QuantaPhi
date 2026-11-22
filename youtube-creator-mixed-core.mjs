@@ -62,7 +62,17 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UC4ZlERGU2sUoBP_ssCagn5g','TvGFHhVF7eo','Is There Still a Stigma Around Specialist Schools?'),
    seed('UC4ZlERGU2sUoBP_ssCagn5g','dM3t5FTzucI','Just Another Saturday With My Autistic Daughter Bethany!! 😂❤️'),
    seed('UC4ZlERGU2sUoBP_ssCagn5g','yGkisQ2DWx4',"I've Been Hiding in the Car AGAIN! 😂"),
-   seed('UC4ZlERGU2sUoBP_ssCagn5g','QlUq_VZhlx8',"Bethany Wasn't Falling for That! 😂❤️")
+   seed('UC4ZlERGU2sUoBP_ssCagn5g','QlUq_VZhlx8',"Bethany Wasn't Falling for That! 😂❤️"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"M-aXHaL6QJ0","DLA Refusals: What Are the Government Figures Revealing?"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"7zKM6RTQ1NI","Why Does Respite Cause So Much Judgement?"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"c2vGt3ikN64","Trying to find my Friday feeling..."),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"uA6ljU-FZRg","Why Is Everything a Competition in the SEND Community?"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"oWH3L64NCS8","I just love Bethany’s personality..."),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"LVhwoW28PS0","Why This Is a HUGE Mealtime Win for My Autistic Daughter! ❤️"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"R5ZnOXIKWxQ","Indian Christmas Music Is My New Favourite Mood Booster 😂🎄"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"S5-Tm1oi4uQ","The Parenting Advice Nobody Asked For 🙄"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"o1BfJwDPwMk","The truth about High Rate Mobility DLA for autistic children"),
+   seed('UC4ZlERGU2sUoBP_ssCagn5g',"yguj32c--8E","How I Know When My Autistic Daughter Is Having a Meltdown ❤️")
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -143,7 +153,7 @@ export const AUTISM_OUT_LOUD_SOURCE=Object.freeze({
  kind:'Video · YouTube',feature:'Browse original Shorts and recent channel uploads',
  featureUrl:'https://www.youtube.com/@autismoutloudcoach/shorts',
  official:'https://www.youtube.com/@autismoutloudcoach',
- focus:'Watch the requested original video, browse six reviewed channel links and refresh recent uploads from the official YouTube feed. Search, load more or open the creator’s complete public channel.',
+ focus:'Watch the requested original video, browse 16 reviewed channel links and refresh recent uploads from the official YouTube feed. Search, load more or open the creator’s complete public channel.',
  details:'Original watch page, publisher channel ID and public uploads feed checked 2026-11-22. This card indexes a partial selection and recent uploads; the complete archive and Posts remain on YouTube. Playback depends on the publisher’s restrictions.',
  youtubeMixedFeed:true,initialCreatorChannel:'autism-out-loud',initialCreatorVideoId:'L9x-4pLKG50'
 });
