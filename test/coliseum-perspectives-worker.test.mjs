@@ -75,7 +75,8 @@ test('opt-in only explicit valid author choice; three distinct members unlock an
  assert.equal(data.perspectives.length,3);
  assert.equal(data.ownerFinalDecisionRequired,true);
  assert.equal(data.permissions.runner,false);
- assert.doesNotMatch(JSON.stringify(data),/private-test-secret|member_id|memberId|alice|bob|cara/);
+ assert.doesNotMatch(JSON.stringify(data),/private-test-secret|member_id|memberId/);
+ assert.match(data.note,/wording may still be self-identifying/,'do not promise anonymity when published wording includes a name');
  const other=await call('alice','/v1/perspectives?modelId=zeus&sector=Gaming');
  assert.equal(other.ready,false);
  const malformed=await call('alice','/v1/perspectives/choice','POST',{ideaId:idea(1),share:true});
