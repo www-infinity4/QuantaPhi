@@ -133,7 +133,7 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
   // is app availability, not phone/browser activity or user profiling.
   const nodes=db.prepare(`SELECT node_id,capacity FROM mesh_nodes
     WHERE online=1 AND last_seen>=?
-    ORDER BY active_windows DESC, cache_losses ASC, capacity DESC, node_id`).all(cutoff);
+    ORDER BY active_windows DESC, cache_losses ASC, capacity DESC, rowid`).all(cutoff);
   const files=db.prepare('SELECT file_id,manifest FROM mesh_files ORDER BY created_at').all();
   for(const row of files){
    const manifest=JSON.parse(row.manifest);
