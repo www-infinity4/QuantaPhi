@@ -163,9 +163,9 @@ test('AGORA SOU MÃE verified publisher has one dedicated full-channel Public/Me
  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
  const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
  assert.match(ui,/card.initialCreatorChannel/);
- assert.match(ui,/api\\/creator-uploads/);
+ assert.ok(ui.includes('/api/creator-uploads?channel='));
  assert.match(ui,/Load more videos/);
- assert.match(ui,/youtube-nocookie.com\\/embed/);
+ assert.ok(ui.includes('youtube-nocookie.com/embed/'));
 });
 
 test('XNXSduqwZ54 has a single original-video media card without unsupported archive or rights claims',()=>{
