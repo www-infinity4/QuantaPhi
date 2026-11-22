@@ -447,3 +447,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Dot/state:** 🔴 source staged, verification pending. Scope progress 2/6 (test/source prepared; exact-head CI, independent review, guarded merge, production and Android acceptance outstanding; count conservatively includes production+Android).
 - **Agent/lease:** ChatGPT connector read/write under owner context; no signed runner lease claimed, no automatic grant extension. Sessions for this Short: 1; remaining unknown.
 - **Next single action:** inspect exact-head Creator run outcome and all required PR checks, fix failures on the same branch, then independently review the diff and use the guarded merge process only if permitted.
+
+
+## Owner video `_0T9WJ3ekWU` · source-only Oracle Quick Card · 2026-11-22
+
+- **Owner URL:** https://youtu.be/_0T9WJ3ekWU?is=VnK4m8sov_HcxcgJ ; normalized source https://www.youtube.com/watch?v=_0T9WJ3ekWU .
+- **Canonical issue:** #1603. Branch: `feat/owner-youtube-_0T9WJ3ekWU-1603-20261122` based on main; authenticated GitHub connector branch/write only, no separate Moltnook signed runner lease claimed.
+- **Source scope:** A single owner-submitted video ID in the existing `youtube-owner-video-links.mjs` catalog. The watch page and metadata endpoint were throttled; title, channel, publication date, embedding availability and rights are not independently verified. Use the unverified-title fallback; retain `general-media` boundary and source-only/provider-hosted click-to-play rules.
+- **TDD staging:** Test-first regression commit `0b17714d86f41870cd596acd7285e2bb22c2ea2e` in `test/youtube-creator-quick-cards.test.mjs`; catalog implementation commit `282bcd611ce670c8bfe509a08a422ff420db87b1`. RED test execution has not been observed; no failure/pass is claimed from commit ordering alone.
+- **Known behavior reused:** Oracle Public/Media Quick Card, one optional YouTube player on click, Stop, original-source fallback, and owner View More. No publisher credential, media rehost, adult/family classification, advertisement, payment or wallet change.
+- **State:** 🔴 `implementing`, estimated 2/6 scoped acceptance gates (source link + matching test staged; CI, review/merge, release, browser/Android remain). One documented engineering session, remaining sessions unknown.
+- **Next single executable action:** Open PR and inspect the exact-head Creator Quick Cards and required CI checks, review isolated diff, then guarded merge and independently verify production and physical Android playback. No claim of production release or owner-device acceptance.
+
