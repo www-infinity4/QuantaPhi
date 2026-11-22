@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T23:00:53.477791Z",
+  "checked_at": "2026-11-22T23:31:16.102929Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jj mccarthy",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T22:40:00Z",
+      "query": "nuggets vs bulls",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T23:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/had-preconceived-notion-him-being-150312044.html",
-        "https://www.bigblueview.com/new-york-giants-analysis/180568/j-j-mccarthy-has-won-at-every-level-will-that-continue-in-ny-giants-playoff-run",
-        "https://nypost.com/2026/11/21/sports/j-j-mccarthy-showing-improved-touch-on-passes-since-joining-giants/"
+        "https://sports.yahoo.com/articles/denver-nuggets-injury-report-every-172412138.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-chicago-bulls-prediction-odds-6019835/",
+        "https://www.denverstiffs.com/preview-denver-nuggets-head-out-on-one-game-road-trip-to-face-chicago-bulls/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPEA9Mo9OBv8ygfws69vwxHGDBixQt0VWOIf3XxRdR2j7F80Nhi1emGL5t5Co",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNqz5sbx6DB7V50N2joGq3-b-4qWpn00m4vbRi94U8qm7cDwRH_JkR4083UqQ",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/had-preconceived-notion-him-being-150312044.html",
-          "title": "‘I Had a Preconceived Notion of Him Being a Crappy Teammate’ — Giants Analyst Claims J.J. McCarthy Has Solidified Himself as a ‘Legitimate Starting QB’",
+          "url": "https://sports.yahoo.com/articles/denver-nuggets-injury-report-every-172412138.html",
+          "title": "Denver Nuggets Injury Report: Every Status vs. Chicago Bulls",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPEA9Mo9OBv8ygfws69vwxHGDBixQt0VWOIf3XxRdR2j7F80Nhi1emGL5t5Co"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNqz5sbx6DB7V50N2joGq3-b-4qWpn00m4vbRi94U8qm7cDwRH_JkR4083UqQ"
         },
         {
-          "url": "https://www.bigblueview.com/new-york-giants-analysis/180568/j-j-mccarthy-has-won-at-every-level-will-that-continue-in-ny-giants-playoff-run",
-          "title": "J.J. McCarthy has won at every level; will that continue in Giants’ playoff run?",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/denver-nuggets-vs-chicago-bulls-prediction-odds-6019835/",
+          "title": "Denver Nuggets vs Chicago Bulls Prediction, Picks & Odds | NBA Sunday",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVFtaXQmvM3BvMe1z6mFvl893dqfWUbkhhMSOU0WjNiR9TF-psq8qKlmGv-l0"
+        },
+        {
+          "url": "https://www.denverstiffs.com/preview-denver-nuggets-head-out-on-one-game-road-trip-to-face-chicago-bulls/",
+          "title": "Preview: Denver Nuggets head out on one game road trip to face Chicago Bulls",
+          "publisher": "Denver Stiffs",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnw9EMtG2j5YT-eA9WrWw9NN_zfxuzXnZXCj5s7EwjMja8RoL2A5JayelU4Pg"
+        }
+      ]
+    },
+    {
+      "query": "mavericks vs jazz",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://utahjazz.com/news/preview-utah-jazz-host-dallas-mavericks",
+        "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/64077/mavericks-vs-jazz-preview-what-will-dallas-look-like-on-second-night-of-back-to-back-in-utah",
+        "https://www.sportsgambler.com/betting-tips/basketball/dallas-mavericks-vs-utah-jazz-prediction-odds-6019836/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-gp8-94Ydb6EdNYcrGGBeWw9gn3UhWX9eSxvQ0UzKD-I24jkiBqzuJb6KwUY",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://utahjazz.com/news/preview-utah-jazz-host-dallas-mavericks",
+          "title": "Preview: Utah Jazz Host Dallas Mavericks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-gp8-94Ydb6EdNYcrGGBeWw9gn3UhWX9eSxvQ0UzKD-I24jkiBqzuJb6KwUY"
+        },
+        {
+          "url": "https://www.mavsmoneyball.com/dallas-mavericks-game-coverage/64077/mavericks-vs-jazz-preview-what-will-dallas-look-like-on-second-night-of-back-to-back-in-utah",
+          "title": "3 thoughts ahead of the Mavericks’ back-to-back bonanza at the Utah Jazz",
+          "publisher": "Mavs Moneyball",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrk5evrNnmKF68tQkJ6zjnu90U5J2wg1J-ZAQWoWLkB_U6MSo_6udmTIuPJW0"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/dallas-mavericks-vs-utah-jazz-prediction-odds-6019836/",
+          "title": "Dallas Mavericks vs Utah Jazz Prediction, Picks & Odds | NBA Sunday",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCj4UV2XZ6OMWPG8otSK-CWckdcenQc3GqfKqJSfgaGXVy8_o1Py9qxiJ_MGE"
+        }
+      ]
+    },
+    {
+      "query": "magic vs wizards",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/look-franz-wagner-magic-aj-190002208.html",
+        "https://www.bulletsforever.com/washington-wizards-preview/74261/wizards-vs-magic-preview-washington-returns-home-to-face-magic",
+        "https://www.sportsgambler.com/betting-tips/basketball/orlando-magic-vs-washington-wizards-prediction-odds-6019837/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmUHgr0GGfzm5Wrvky7EMLIZM-8nFTTGMOFTJnZHoaqc_mJXIQ2KnY8w66y5c",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/look-franz-wagner-magic-aj-190002208.html",
+          "title": "What To Look For As Franz Wagner, Magic Take On AJ Dybantsa, Wizards",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmUHgr0GGfzm5Wrvky7EMLIZM-8nFTTGMOFTJnZHoaqc_mJXIQ2KnY8w66y5c"
+        },
+        {
+          "url": "https://www.bulletsforever.com/washington-wizards-preview/74261/wizards-vs-magic-preview-washington-returns-home-to-face-magic",
+          "title": "Wizards vs Magic Preview: Washington returns home to face Magic",
+          "publisher": "Bullets Forever",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD0AuCou5WPa2VjejBz70WWSP-mkuBKIqdSWrPhxwtpcEwm3SiSNpzE3cimWk"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/orlando-magic-vs-washington-wizards-prediction-odds-6019837/",
+          "title": "Orlando Magic vs Washington Wizards Prediction, Picks & Odds | NBA Sunday",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHEhi7X18gxL0XHvGxZvk-qPEyB7N6YZ4Pvyp1qVeiSSeLUbUlia-Trd4K3h0"
+        }
+      ]
+    },
+    {
+      "query": "penguins vs stars",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/pittsburgh-penguins-dallas-stars-game-preview-november-22-2026",
+        "https://sports.yahoo.com/articles/lineup-notes-silovs-starts-stastney-223302847.html",
+        "https://www.pensburgh.com/penguins-lines-game-time-watch/83456/game-preview-pittsburgh-penguins-dallas-stars-11-22-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/pittsburgh-penguins-dallas-stars-game-preview-november-22-2026",
+          "title": "Penguins at Stars projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lineup-notes-silovs-starts-stastney-223302847.html",
+          "title": "Lineup Notes: Silovs Starts, Stastney Replaces Carlile On Defense",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-NSbUojMHu9zMp_sKlWVo2U0jnlhZexp1-WdZ6_TAQbOL7egQ6nOBIgNDKio"
+        },
+        {
+          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/83456/game-preview-pittsburgh-penguins-dallas-stars-11-22-2026",
+          "title": "Game Preview: Pittsburgh Penguins @ Dallas Stars 11/22/2026",
+          "publisher": "PensBurgh",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTE2e5ef3y7A1RnNm9S6xHY2eUhTfGOnZ0Vym1WyRekXkhCMD3HDprB38t6Dg"
+        }
+      ]
+    },
+    {
+      "query": "oilers vs blues",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/blues/news/preview-blues-vs-oilers-11222026",
+        "https://www.sportsline.com/nhl/game-forecast/NHL_20261121_PIT@NSH/",
+        "https://sports.yahoo.com/articles/oilers-vs-blues-prediction-picks-152810753.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuBaqS8bq37DW1RFLD-lXwrBfAZEncOpPFCGJCbl3KhJPMTJmpHqrgrZXUWc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/blues/news/preview-blues-vs-oilers-11222026",
+          "title": "Preview: Blues vs. Oilers | St. Louis Blues",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUuBaqS8bq37DW1RFLD-lXwrBfAZEncOpPFCGJCbl3KhJPMTJmpHqrgrZXUWc"
+        },
+        {
+          "url": "https://www.sportsline.com/nhl/game-forecast/NHL_20261121_PIT@NSH/",
+          "title": "Pittsburgh Penguins vs. Nashville Predators Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Saturday 11/21 6:00 PM ET",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwO-1-WrGCWtQgt9eGaT4wR6utgUooH8ESOwwpeHUkPBKM5GySEY8kM8EHMPA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/oilers-vs-blues-prediction-picks-152810753.html",
+          "title": "Oilers vs Blues Prediction, Picks, NHL Odds for Sunday, November 22",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREbJ-p1sgNkVQm_hyLX3IYwLiJQRreqRVespDrphvkgJhc_1cW0IcVC6sEtY0"
+        }
+      ]
+    },
+    {
+      "query": "john harbaugh",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7796615/2026/11/20/giants-jaguars-preview-week-11-harbaugh-skattebo/",
+        "https://www.bigblueview.com/nfl-reacts-survey/180730/survey-results-giants-fans-still-think-the-cowboys-are-the-biggest-threat",
+        "https://www.commanders.com/news/washington-commanders-nfc-east-playoff-race-week-11-giants-cowboys-eagles"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL_ljhHMASN1tjwytum2u2u7ZKB1r-Cq5kfkbOzlEj4pBr015v6TuAWV37UYs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7796615/2026/11/20/giants-jaguars-preview-week-11-harbaugh-skattebo/",
+          "title": "Giants’ schedule ramps up in difficulty with Sunday’s game against Jaguars - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL_ljhHMASN1tjwytum2u2u7ZKB1r-Cq5kfkbOzlEj4pBr015v6TuAWV37UYs"
+        },
+        {
+          "url": "https://www.bigblueview.com/nfl-reacts-survey/180730/survey-results-giants-fans-still-think-the-cowboys-are-the-biggest-threat",
+          "title": "Survey results - Giants fans still think the Cowboys are the biggest threat",
           "publisher": "Big Blue View",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxzaGKOPWmW-p3iiLz6XCY8hoQCj02gznTZNjDbp2-GTaYw7-3b9OmxKvxoyA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJC3yjVBtDi7ic5uIjrA8jNZXGbEWcoWDdUJZwl9CmVZUjRxorUPqBQXzr5KY"
         },
         {
-          "url": "https://nypost.com/2026/11/21/sports/j-j-mccarthy-showing-improved-touch-on-passes-since-joining-giants/",
-          "title": "J.J. McCarthy showing improved touch on passes since joining Giants",
-          "publisher": "New York Post",
+          "url": "https://www.commanders.com/news/washington-commanders-nfc-east-playoff-race-week-11-giants-cowboys-eagles",
+          "title": "NFC East roundup | Still alive in the division race",
+          "publisher": "Washington Commanders",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6_dNxfJAtMpkMtrlex_72WCLpi9rWfIvOd9pJJjp4a3nmV1s27rKQ4NgB1ac"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSg7_h9khzqF65HompEbsy58GwG_YpGF-egFvfINrA9gaUw8g0wUQVVkUQ_1Mo"
         }
       ]
     },
     {
-      "query": "charlotte vs chicago",
+      "query": "garrett wilson",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T22:40:00Z",
+      "published_at": "2026-11-22T23:10:00Z",
       "related_news_urls": [
-        "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
-        "https://www.mlssoccer.com/playoffs/2026/news/chicago-fire-robert-lewandowski-aim-for-next-step",
-        "https://www.charlottefootballclub.com/news/this-team-is-for-real-why-this-is-charlotte-fc-s-year-for-a-playoff-run"
+        "https://cwibc.co.id/en/cimini-garrett-wilson-jets-trade",
+        "https://bsinews.id/en/cimini-garrett-wilson-jets-warning",
+        "https://www.limapagi.id/en/jets-garrett-wilson-trade-warning"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-4flr6rdXFMosRJ7FG5sGbhblx4_lu2m_8apgl6o-SBx0PfvSBqR1a7UMsQ0",
-      "image_credit": "Chicago Fire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRW7WP-PXQ9bMDCQtwOqOXkf7R_UxvB6OYCa1zH8O0H1ELeAxtts3blAFLFs",
+      "image_credit": "cwibc.co.id",
       "news": [
         {
-          "url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
-          "title": "Matchday | Chicago Fire FC Opens 2026 MLS Cup Playoffs Against Charlotte FC",
-          "publisher": "Chicago Fire",
+          "url": "https://cwibc.co.id/en/cimini-garrett-wilson-jets-trade",
+          "title": "Cimini Warns Jets Losing Streak Could Push Garrett Wilson Out",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-4flr6rdXFMosRJ7FG5sGbhblx4_lu2m_8apgl6o-SBx0PfvSBqR1a7UMsQ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRW7WP-PXQ9bMDCQtwOqOXkf7R_UxvB6OYCa1zH8O0H1ELeAxtts3blAFLFs"
         },
         {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/chicago-fire-robert-lewandowski-aim-for-next-step",
-          "title": "Chicago Fire & Robert Lewandowski aim for next step",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSis11CDYJ0o3tSgMc6Gojx4ERuhWzVn5edFh7Lqz4EVI0o_kX4lxR0hCS6tBU"
-        },
-        {
-          "url": "https://www.charlottefootballclub.com/news/this-team-is-for-real-why-this-is-charlotte-fc-s-year-for-a-playoff-run",
-          "title": "“This Team is for Real”: Why This is Charlotte FC’s Year for a Playoff Run",
-          "publisher": "Charlotte FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRr9NJl3YpNAb_i6rxwLQ-MGLAz2rsCed-LJmCZ5_uy6R7bEvokgm2q5ilR58c"
-        }
-      ]
-    },
-    {
-      "query": "ucla vs tennessee",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T22:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50563018/week-12-results-rivalry-week",
-        "https://triblive.com/sports/big-ten-takes-a-beating-no-teams-in-ap-top-5-for-1st-time-since-2021-as-georgia-utah-hold-steady/",
-        "https://sports.yahoo.com/college-football/breaking-news/article/ap-top-25-ucla-drops-to-no-10-indiana-falls-to-no-12-after-week-12-losses-190414501.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQQgNXDwT0jANTvm4C79mLBIIMSP7BgWAh_X0Q23Qyp1upzAD-EERpmisAmDM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50563018/week-12-results-rivalry-week",
-          "title": "What Week 12's unexpected results mean for Rivalry Week and beyond",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQQgNXDwT0jANTvm4C79mLBIIMSP7BgWAh_X0Q23Qyp1upzAD-EERpmisAmDM"
-        },
-        {
-          "url": "https://triblive.com/sports/big-ten-takes-a-beating-no-teams-in-ap-top-5-for-1st-time-since-2021-as-georgia-utah-hold-steady/",
-          "title": "Big Ten takes a beating, no teams in AP top 5 for 1st time since 2021 as Georgia, Utah hold steady",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJLZyornTySHyQyi5rxv3oxoK4ZzA3RMkPNlkIiJe1_Z7CN41glbbUVJPjZM"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/breaking-news/article/ap-top-25-ucla-drops-to-no-10-indiana-falls-to-no-12-after-week-12-losses-190414501.html",
-          "title": "AP Top 25: UCLA drops to No. 10, Indiana falls to No. 12 after Week 12 losses",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5USIj9Qy3Qw1nglyMlNcXkqxFxkWEk6dXRDOw1vEROJnlHzol5sBT7LYlQtM"
-        }
-      ]
-    },
-    {
-      "query": "phillies",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T22:40:00Z",
-      "related_news_urls": [
-        "https://www.thegoodphight.com/philadelphia-phillies-news/89600/phillies-news-brandon-marsh-citizens-bank-park-a-j-ewing",
-        "https://metrophiladelphia.com/stories/phillies-brandon-marsh-trade,163242",
-        "https://www.si.com/mlb/angels/onsi/could-former-angel-brandon-marsh-be-non-tendered-and-should-the-angels-bring-him-back-01m7k9f1gb44"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDwHPSdgBWPgJFKo0H49CSjwCAsq4yrlgOtrVC_dSaUU9zUrWmhgCBMwY3kUM",
-      "image_credit": "The Good Phight",
-      "news": [
-        {
-          "url": "https://www.thegoodphight.com/philadelphia-phillies-news/89600/phillies-news-brandon-marsh-citizens-bank-park-a-j-ewing",
-          "title": "Phillies news: Brandon Marsh, Citizens Bank Park, A.J. Ewing",
-          "publisher": "The Good Phight",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDwHPSdgBWPgJFKo0H49CSjwCAsq4yrlgOtrVC_dSaUU9zUrWmhgCBMwY3kUM"
-        },
-        {
-          "url": "https://metrophiladelphia.com/stories/phillies-brandon-marsh-trade,163242",
-          "title": "Why the Phillies should explore a Brandon Marsh trade",
-          "publisher": "Metro Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBZMTcMeCwHcVLYrdZ64uTNV9cfEsRjCMjrSB05ryD3gNJSk3g7oJj6FWDhN8"
-        },
-        {
-          "url": "https://www.si.com/mlb/angels/onsi/could-former-angel-brandon-marsh-be-non-tendered-and-should-the-angels-bring-him-back-01m7k9f1gb44",
-          "title": "Could Former Angel Brandon Marsh Be Non-Tendered—And Should the Angels Bring Him Back?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtR7jzge6cq8A9l2_aUnQn6JZQRcJGAoVWVlt1NFJ9Y7IHhfreJCvtooSJCmg"
-        }
-      ]
-    },
-    {
-      "query": "tom coughlin",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T22:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/tom-coughlin-fails-advance-pro-175525326.html",
-        "https://giantswire.usatoday.com/story/sports/nfl/giants/2026/11/20/tom-coughlin-fails-advance-pro-football-hall-of-fame-bid/92875429007/",
-        "https://www.nytimes.com/athletic/7803516/2026/11/22/tom-brady-hof-robert-kraft-bill-belichick/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIn0ooMaoHlggz6aO_7lAqA4wI9211C6TP7AOW_AxH-QOLp-yahH2LSevL9Rw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/tom-coughlin-fails-advance-pro-175525326.html",
-          "title": "Tom Coughlin fails to advance in Pro Football Hall of Fame bid",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIn0ooMaoHlggz6aO_7lAqA4wI9211C6TP7AOW_AxH-QOLp-yahH2LSevL9Rw"
-        },
-        {
-          "url": "https://giantswire.usatoday.com/story/sports/nfl/giants/2026/11/20/tom-coughlin-fails-advance-pro-football-hall-of-fame-bid/92875429007/",
-          "title": "Tom Coughlin fails to advance in Pro Football Hall of Fame bid",
-          "publisher": "Giants Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRugLOV0SCKPmuslNnwuzhdUI3n35qD6RWAQesiGCLep6Ib10rUf0YvxhmxY_s"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7803516/2026/11/22/tom-brady-hof-robert-kraft-bill-belichick/",
-          "title": "Tom Brady says HOF voters ‘need to come to their senses’ on Robert Kraft, Bill Belichick",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlsz-UWSqpkGSPwjzEp_Xz3DOiPLvkNsmSFzuSaevK7Xwnf4ymAdAHNZ1R_g"
-        }
-      ]
-    },
-    {
-      "query": "jameis winston",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T22:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/officials-give-jameis-winston-a-td-replays-appear-to-show-he-was-down-before-scoring",
-        "https://www.nfl.com/videos/jameis-winston-s-td-run-on-fourth-down-gives-giants-a-9-3-lead-against-jags",
-        "https://sports.yahoo.com/nfl/live/giants-jaguars-score-live-updates-inactives-highlights-stats-where-to-watch-week-11-192808688.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP_hDlSEVVEvajxDXKyCsa2cqHB8ZBGKiuHMH5JOW03LOMZFSe08CnVcMy2pk",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/officials-give-jameis-winston-a-td-replays-appear-to-show-he-was-down-before-scoring",
-          "title": "Officials give Jameis Winston a TD, replays appear to show he was down before scoring",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP_hDlSEVVEvajxDXKyCsa2cqHB8ZBGKiuHMH5JOW03LOMZFSe08CnVcMy2pk"
-        },
-        {
-          "url": "https://www.nfl.com/videos/jameis-winston-s-td-run-on-fourth-down-gives-giants-a-9-3-lead-against-jags",
-          "title": "Jameis Winston's TD run on fourth down gives Giants a 9-3 lead against Jags",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrcaj7twtBIVGo7zWeDEszM4XczBqHW6z77AAqxJibCMh412de8gFbIEorQHg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/live/giants-jaguars-score-live-updates-inactives-highlights-stats-where-to-watch-week-11-192808688.html",
-          "title": "Jaguars vs. Giants live updates, score: Jacksonville brings elite defense to MetLife Stadium as Giants seek bounce-back win",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOSVvlK8-0iDWIEGQ6_VfIlOb80Ul_RP3bigfRhJ2kENMGYrCA9gz2J9pqnvQ"
-        }
-      ]
-    },
-    {
-      "query": "ap poll college football rankings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T22:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50562947/week-12-ap-college-football-poll-reaction-next-top-25",
-        "https://bleacherreport.com/articles/25536312-ap-college-football-poll-2026-week-13-rankings-released-top-risers-and-fallers",
-        "https://sports.yahoo.com/articles/week-12-ap-top-25-201539925.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu7iaqAUldEtlR2FJg9-bCouANjfeNe6827WvALOcW-y6VMcIrAjdKKpcAeDc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50562947/week-12-ap-college-football-poll-reaction-next-top-25",
-          "title": "AP college football Week 12 poll reaction: What's next for Top 25",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu7iaqAUldEtlR2FJg9-bCouANjfeNe6827WvALOcW-y6VMcIrAjdKKpcAeDc"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536312-ap-college-football-poll-2026-week-13-rankings-released-top-risers-and-fallers",
-          "title": "AP College Football Poll 2026 Week 13 Rankings Released with Top Risers and Fallers",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSzf0sNR0n9w4AipiIMjuCDJfIfHwpL-A8p78gyu3rh89skD5J7QRtw2CUsdw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/week-12-ap-top-25-201539925.html",
-          "title": "Week 12 AP Top 25: Georgia remains No. 1, Big Ten teams plummet",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Q7eokRdNL71soy8sDtwe_49cbTlXopcaTGz4HBm-LWqiQWnrZxAdYKfFbqs"
-        }
-      ]
-    },
-    {
-      "query": "mlb trade rumors",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T22:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mlb/article/mlb-trade-candidates-to-watch-could-ketel-marte-jarren-duran-corey-seager-be-in-play-223458483.html",
-        "https://www.nytimes.com/athletic/7793506/2026/11/19/mlb-trade-ideas-ketel-marte-otto-lopez/",
-        "https://bleacherreport.com/articles/25536052-new-mlb-trade-rumors-nolan-arenado-ketel-marte-d-backs-eye-major-decisions-free-agency"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2RJ01YiXAVfdwMoe4XILudp7Mf-gw6cm74YHyXd5DqvkSoaA7f_sb7ShbHuk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mlb/article/mlb-trade-candidates-to-watch-could-ketel-marte-jarren-duran-corey-seager-be-in-play-223458483.html",
-          "title": "MLB trade candidates to watch: Could Ketel Marte, Jarren Duran, Corey Seager be in play?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2RJ01YiXAVfdwMoe4XILudp7Mf-gw6cm74YHyXd5DqvkSoaA7f_sb7ShbHuk"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7793506/2026/11/19/mlb-trade-ideas-ketel-marte-otto-lopez/",
-          "title": "Ketel Marte to Boston and 4 other hypothetical trades I’d like to see: Bowden",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWHSHPx3PsHlWUT3tvvB8EYfQWQAJmZMx2fQzF1tTfTEHuhANt9s3bZJvSQCU"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536052-new-mlb-trade-rumors-nolan-arenado-ketel-marte-d-backs-eye-major-decisions-free-agency",
-          "title": "New MLB Trade Rumors on Nolan Arenado, Ketel Marte as D-Backs Eye Major Decisions in Free Agency",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInL-uvcnQLsPrQcU3QJMNZaX1vejqNAVW_bgOuOJX7wsrMgrqcF75PaYOiEM"
-        }
-      ]
-    },
-    {
-      "query": "kansas city chiefs taylor swift",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T22:20:00Z",
-      "related_news_urls": [
-        "https://ca.style.yahoo.com/taylor-swift-travis-kelce-chiefs-190517978.html",
-        "https://www.imdb.com/news/ni66123655/?ref_=nwc_art_perm",
-        "https://people.com/taylor-swift-wears-jacket-from-friend-erin-andrews-line-cheer-on-husband-travis-kelce-chiefs-game-12265749"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUasZUx0SCyP1enxuHm_rEF0UDQhHsgp8HUJdgaHELRtkXHxlgdWmwPmLnOWc",
-      "image_credit": "Yahoo Lifestyle Canada",
-      "news": [
-        {
-          "url": "https://ca.style.yahoo.com/taylor-swift-travis-kelce-chiefs-190517978.html",
-          "title": "Taylor Swift Is at Travis Kelce’s Chiefs-Cardinals Game—and Didn’t Come Alone",
-          "publisher": "Yahoo Lifestyle Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUasZUx0SCyP1enxuHm_rEF0UDQhHsgp8HUJdgaHELRtkXHxlgdWmwPmLnOWc"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66123655/?ref_=nwc_art_perm",
-          "title": "Taylor Swift Cheers on Travis Kelce at Chiefs Game With Kylie Kelce, Donna Kelce & Her Parents – See Photos!",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_nVAaNG_0s6-_VpAREP9s8zVK4BAdFXbaS397E-JzNANdTyoE2Tief22jCNY"
-        },
-        {
-          "url": "https://people.com/taylor-swift-wears-jacket-from-friend-erin-andrews-line-cheer-on-husband-travis-kelce-chiefs-game-12265749",
-          "title": "Taylor Swift Wears $60 Chiefs Jacket from Friend Erin Andrews’ Line to Cheer on Husband Travis Kelce",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN0lJjfM7sh2W5VQVgyhCka_kK0vXc1cxfJhF-ag8xOfWvF1gJS65nGHcbtgk"
-        }
-      ]
-    },
-    {
-      "query": "ashton jeanty",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T22:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ashton-jeantys-bad-season-running-the-ball-overshadows-his-receiving-production",
-        "https://bsinews.id/en/incognito-jeanty-raiders-rushing-struggles",
-        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/20/raiders-fantasy-start-sit-week-11-broncos/92878971007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvHykUX1RaOgLuLL6mS-nQIuuRZ0g6lkOiGDx1ilbLK732m4ElR5cI_U5ZUrg",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ashton-jeantys-bad-season-running-the-ball-overshadows-his-receiving-production",
-          "title": "Ashton Jeanty’s bad season running the ball overshadows his receiving production",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvHykUX1RaOgLuLL6mS-nQIuuRZ0g6lkOiGDx1ilbLK732m4ElR5cI_U5ZUrg"
-        },
-        {
-          "url": "https://bsinews.id/en/incognito-jeanty-raiders-rushing-struggles",
-          "title": "Incognito Questions Jeantys Raiders Rushing Struggles",
+          "url": "https://bsinews.id/en/cimini-garrett-wilson-jets-warning",
+          "title": "Cimini Warns Jets Losing Streak Could Push Garrett Wilson Out",
           "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQujKQSN9Jm3hRBt5Ra0K4HIUV3pQUHj2hso92dXIu4ETGfaptEPBjoh0ml5O8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRW7WP-PXQ9bMDCQtwOqOXkf7R_UxvB6OYCa1zH8O0H1ELeAxtts3blAFLFs"
         },
         {
-          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/20/raiders-fantasy-start-sit-week-11-broncos/92878971007/",
-          "title": "Raiders Week 11 fantasy start/sit: Ashton Jeanty still holds PPR value",
-          "publisher": "Raiders Wire",
+          "url": "https://www.limapagi.id/en/jets-garrett-wilson-trade-warning",
+          "title": "Cimini Warns Jets Losing Streak Could Push Garrett Wilson Out",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmOxT5pRlwdWgcJ68Hjag9yMU-OeTjjZNWiJYemkSbCCTqZWEhzepTYuWMvxw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRW7WP-PXQ9bMDCQtwOqOXkf7R_UxvB6OYCa1zH8O0H1ELeAxtts3blAFLFs"
+        }
+      ]
+    },
+    {
+      "query": "tony danza",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T23:10:00Z",
+      "related_news_urls": [
+        "https://www.inkl.com/news/how-much-is-tony-danza-worth-after-taxi-and-whos-the-boss",
+        "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
+        "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBTZ0L1ZKQzUF12T9y0c23OM94YDCyU1qCbST2k2gi4jPQCdJPXpc7Mke91s",
+      "image_credit": "inkl",
+      "news": [
+        {
+          "url": "https://www.inkl.com/news/how-much-is-tony-danza-worth-after-taxi-and-whos-the-boss",
+          "title": "How Much Is Tony Danza Worth After ‘Taxi’ and ‘Who’s the Boss?’",
+          "publisher": "inkl",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBTZ0L1ZKQzUF12T9y0c23OM94YDCyU1qCbST2k2gi4jPQCdJPXpc7Mke91s"
+        },
+        {
+          "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
+          "title": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'",
+          "publisher": "The National Desk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4"
+        },
+        {
+          "url": "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas",
+          "title": "A Look Behind the Curtain of ‘Three Generations, One Christmas’",
+          "publisher": "Great American Pure Flix",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZLmDgILDKTfrc23l3m6g6bBSUZQYgqtDujaolMEHtYeJqOT1zBXQF_2cFHM"
+        }
+      ]
+    },
+    {
+      "query": "cruz azul",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T23:00:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/football/guadalajara-vs-cruz-azul-prediction-lineups-odds-2026-11-22/",
+        "https://www.chivasdecorazon.com.mx/en/noticias/41832/Cules-son-los-escenarios-de-Chivas-de-cara-a-la-liguilla-del-AP26",
+        "https://sports.yahoo.com/articles/team-safe-hands-want-delight-194100209.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAaB1WbGYfkMjstlTDjSXVXVop2zd5CjU_ToF8YXt6QDflPaf6mhHAXURS9SY",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/football/guadalajara-vs-cruz-azul-prediction-lineups-odds-2026-11-22/",
+          "title": "Guadalajara vs Cruz Azul Prediction, Betting Tips, Lineups & Odds | 22 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAaB1WbGYfkMjstlTDjSXVXVop2zd5CjU_ToF8YXt6QDflPaf6mhHAXURS9SY"
+        },
+        {
+          "url": "https://www.chivasdecorazon.com.mx/en/noticias/41832/Cules-son-los-escenarios-de-Chivas-de-cara-a-la-liguilla-del-AP26",
+          "title": "What Are Chivas’ Possible Scenarios Heading Into the AP26 Playoffs?",
+          "publisher": "Chivas",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-QVEGfo3coG6kKEvFeMlSPZJ6eLJP6V6s6HcSjJBx0hvCobADCGPVUpA3l98"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/team-safe-hands-want-delight-194100209.html",
+          "title": "The team is in safe hands, we want to delight Chivahermanos - Omar Govea",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi44kqJ9N7Z1A9V4YY_z9aq2wxLr1xSS1op0qkU57Yci9ti5Uqq3CcgBpwGE"
+        }
+      ]
+    },
+    {
+      "query": "dominic zvada",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T23:00:00Z",
+      "related_news_urls": [
+        "https://www.rotoballer.com/player-news/dominic-zvada-falling-out-of-fantasy-starting-conversation-ahead-of-week-11/2000351",
+        "https://athlonsports.com/nfl/jaguars-giants-weaknesses-exploit-hide-week-11",
+        "https://www.nbcsports.com/watch/nfl/profootballtalk/when-does-the-clock-strike-midnight-on-dominic-zvadas-opportunity"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeL_CRI_tD-SRn-qSo2ooo1Ng00_Avll4siNxCV4iYxbuxZ2_qklyyxtnQtJY",
+      "image_credit": "RotoBaller",
+      "news": [
+        {
+          "url": "https://www.rotoballer.com/player-news/dominic-zvada-falling-out-of-fantasy-starting-conversation-ahead-of-week-11/2000351",
+          "title": "Dominic Zvada Week 11 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeL_CRI_tD-SRn-qSo2ooo1Ng00_Avll4siNxCV4iYxbuxZ2_qklyyxtnQtJY"
+        },
+        {
+          "url": "https://athlonsports.com/nfl/jaguars-giants-weaknesses-exploit-hide-week-11",
+          "title": "Giants’ Kicker Has Missed 6 of His Last 14, and It’s 1 of 3 Weaknesses Jaguars Can Exploit",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSb9W4fg58pF4R_rN_e9W1pgvAw3MCxWaFQJAz9ZXCscuH7fu7slix-WAFvKKQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/watch/nfl/profootballtalk/when-does-the-clock-strike-midnight-on-dominic-zvadas-opportunity",
+          "title": "When is Zvada's opportunity over?",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhRVgLpwXIUJJAe1lx55R8TVCN7d9da9hnw3hRt9tngMJkn_Uy0hvv7JtASyY"
         }
       ]
     }
