@@ -11,13 +11,13 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud','dekret']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
  assert.equal(CREATOR_CHANNELS[0].seed[0].videoId,'OqRb8RKNgQQ');
  assert.equal(CREATOR_CHANNELS[2].seed[0].videoId,'G6zpr59jEas');
- assert.ok(CREATOR_CHANNELS.every(c=>c.url.startsWith('https://www.youtube.com/@')));
+ assert.ok(CREATOR_CHANNELS.every(c=>c.url.startsWith('https://www.youtube.com/@')||c.url.startsWith('https://www.youtube.com/channel/UC')));
 });
 
 test('owner additions accept only genuine YouTube video and channel links',()=>{
