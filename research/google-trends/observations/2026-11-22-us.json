@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T06:01:29.058490Z",
+  "checked_at": "2026-11-22T06:35:31.857167Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "devon dampier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T05:40:00Z",
+      "query": "wsu basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:20:00Z",
       "related_news_urls": [
-        "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
-        "https://www.si.com/college-football/devon-dampier-heisman-moment-trophy-contention-heisman-rankings-after-week-11",
-        "https://sports.yahoo.com/articles/heisman-trophy-race-utahs-devon-200132627.html"
+        "https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/",
+        "https://hawaiiathletics.com/news/2026/11/16/mens-basketball-heads-to-pacific-northwest-for-first-road-trip.aspx",
+        "https://www.thesportingtribune.com/2026/11/19/washington-state-holds-off-hawaii"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3_L-Kbn_xR9Z8O6qDtcJvAm3u0qcE0yAMNKjY2--8o8zEXaRVANcM7KYxRc",
-      "image_credit": "FOX Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcispgBkJNBglIx3FfSB1mbfKGFVd7mcxXpoPw1uWYR1EPi393e3tEQplDyY0",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.foxsports.com/stories/college-football/utah-utes-devon-dampier-heisman-trophy",
-          "title": "The Perfect Pairing Fueling A Heisman Trophy Campaign",
-          "publisher": "FOX Sports",
+          "url": "https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/",
+          "title": "Resolve and timely stops powers WSU to much-needed 79-63 victory over Hawaii",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3_L-Kbn_xR9Z8O6qDtcJvAm3u0qcE0yAMNKjY2--8o8zEXaRVANcM7KYxRc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcispgBkJNBglIx3FfSB1mbfKGFVd7mcxXpoPw1uWYR1EPi393e3tEQplDyY0"
         },
         {
-          "url": "https://www.si.com/college-football/devon-dampier-heisman-moment-trophy-contention-heisman-rankings-after-week-11",
-          "title": "Did Devon Dampier’s Heisman Moment Put Him in Contention for the Trophy? Heisman Rankings After Week 11",
-          "publisher": "Sports Illustrated",
+          "url": "https://hawaiiathletics.com/news/2026/11/16/mens-basketball-heads-to-pacific-northwest-for-first-road-trip.aspx",
+          "title": "Men's Basketball Heads To Pacific Northwest For First Road Trip",
+          "publisher": "Hawaii athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc4B_H8PZys0KWjbpAkjl-bFzqc3DU_cbaElR1Vu4ABUEqLtUmlZTRORyCpCo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScacNj8r4t1WS_yPBebVkgxtA6OZOtGo0m2PfLyNeaz18214Rr02LmIfs036U"
         },
         {
-          "url": "https://sports.yahoo.com/articles/heisman-trophy-race-utahs-devon-200132627.html",
-          "title": "Heisman Trophy Race: Can Utah's Devon Dampier Catch Ohio State's Jeremiah Smith?",
+          "url": "https://www.thesportingtribune.com/2026/11/19/washington-state-holds-off-hawaii",
+          "title": "Washington State holds off Trujillo, hands Hawai‘i second straight loss",
+          "publisher": "The Sporting Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP_-Cfh-a_Mk6yPnwKoyCk5QAP7S06OF5lnwKvdC45Mr7ZfZHSTIMB8cy35MI"
+        }
+      ]
+    },
+    {
+      "query": "john wick",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:20:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm",
+        "https://tbreak.com/john-wick-prequel-game-keanu-reeves/",
+        "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVWbiGZ0NInzqrU3CgUCw3Jwg_C_PTvy0g1qtIQyMhSNh0TiBk3goPMtEVoSE",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm",
+          "title": "John Wick Franchise Officially Returning In New Prequel Set Years Before The Impossible Task",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVWbiGZ0NInzqrU3CgUCw3Jwg_C_PTvy0g1qtIQyMhSNh0TiBk3goPMtEVoSE"
+        },
+        {
+          "url": "https://tbreak.com/john-wick-prequel-game-keanu-reeves/",
+          "title": "Keanu Reeves returns in Saber’s John Wick prequel game",
+          "publisher": "Tbreak UAE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXOqZ263bd9hclb1XofaEq-QI7OH47Ynuzz_qPcesZyXWhhL8fhzwgpkb5BA"
+        },
+        {
+          "url": "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
+          "title": "John Wick Returning In New Prequel Game Set Years Before The Impossible Task",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvux571P0qcwnWEukk9vNZk7XAkpcFavC4LJjUtUofqDUbHxlHCFv9-DJzlzg"
+        }
+      ]
+    },
+    {
+      "query": "donnie gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:20:00Z",
+      "related_news_urls": [
+        "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
+        "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
+        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ",
+      "image_credit": "SVG",
+      "news": [
+        {
+          "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
+          "title": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise",
+          "publisher": "SVG",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
+          "title": "Who Plays Donnie In GTA 6?",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS84rbLVRBzM3tKW3xdVG6Mbiy-a_NVtIyqYUrbVLAmOpNvdC5x8h6lRXpe9tU"
+        },
+        {
+          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
+          "title": "Can you save Donnie in GTA 6?",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz8CZyJwl1yKGyC826MzGVppS3BZSFXD01d8e4CSgjqocpXn-5CjKforgJsso"
+        }
+      ]
+    },
+    {
+      "query": "washington state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/duke/article/late-night-test-duke-looks-for-a-response-against-washington-state-293027554/",
+        "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
+        "https://goduke.com/news/2026/11/20/mens-basketball-duke-opens-west-coast-trip-against-washington-state-on-saturday-night"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlpItObEuGypKC4nsR82VTC7OpK7KZpjqn7vEpHP-1dA-GtmDnCenALXFK0fc",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/duke/article/late-night-test-duke-looks-for-a-response-against-washington-state-293027554/",
+          "title": "Late-night test: Duke looks for a response against Washington State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlpItObEuGypKC4nsR82VTC7OpK7KZpjqn7vEpHP-1dA-GtmDnCenALXFK0fc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
+          "title": "How to watch Duke vs Washington State: Live stream College Basketball, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgVk3JBnZBfWb3Pvefm3qkLIhcYvLRbbPWCBH0Hq9OSkZDVCZhMuMIAAsfJDo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sQ6S14WqRMh6Vzx4uJT50C3CwUYokmumIyw0DO03Jf-umNBfK_iBPfCmMzk"
+        },
+        {
+          "url": "https://goduke.com/news/2026/11/20/mens-basketball-duke-opens-west-coast-trip-against-washington-state-on-saturday-night",
+          "title": "Duke Opens West Coast Trip against Washington State on Saturday Night - Duke University",
+          "publisher": "GoDuke.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKR_oZL4AgSn9OgOPdPFyDl6vks3uHKJPvkorWJsb48SvTeRUuwMNpyWP3iiA"
         }
       ]
     },
     {
-      "query": "darius acuff jr.",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T05:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/darius-acuff-jr-goes-off-for-game-high-36-points",
-        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-family-support-nba-career/1981017/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7qjdO55A00uP1YSGqohKfY3Y586Rgo8E8Dct8fGL7kc1LPuYstV3K1zgY10",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7790682/2026/11/18/darius-acuff-damian-lillard-winning-kings/",
-          "title": "Damian Lillard respects Darius Acuff Jr.’s mentality. He also knows the test ahead",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSt7qjdO55A00uP1YSGqohKfY3Y586Rgo8E8Dct8fGL7kc1LPuYstV3K1zgY10"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/darius-acuff-jr-goes-off-for-game-high-36-points",
-          "title": "Darius Acuff Jr. goes off for game-high 36 points",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-family-support-nba-career/1981017/",
-          "title": "How Kings rookie Darius Acuff Jr.'s father, family remain involved in his career",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuUgKjrJYqbMqb3yJ05jSxCrMBjQMHtK_CO-1hveOeRbhrCZW9sULLWjvKUWY"
-        }
-      ]
-    },
-    {
-      "query": "domantas sabonis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T05:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50559241/domantas-sabonis-fights-defender-1",
-        "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-jr-domantas-sabonis-trail-blazers/1979949/",
-        "https://www.fantasypros.com/nba/news/621665/domantas-sabonis-posts-double-double-fridays-loss-to-lakers.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLiMfDeBeRQvG6Doi2jEmaraKNKATUDP4FmTuxdSoYFzDqTJPV7zNpdCdjfCk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50559241/domantas-sabonis-fights-defender-1",
-          "title": "Domantas Sabonis fights off defender for and-1",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLiMfDeBeRQvG6Doi2jEmaraKNKATUDP4FmTuxdSoYFzDqTJPV7zNpdCdjfCk"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nba/sacramento-kings/darius-acuff-jr-domantas-sabonis-trail-blazers/1979949/",
-          "title": "What we learned as Darius Acuff Jr. cools off in Kings' loss to Trail Blazers",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhOyWLvyDgQD-uSnrRY0VTB7z44rRKMkAuLhMEF7BawHIa5UeW87pFRfNzlLc"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/621665/domantas-sabonis-posts-double-double-fridays-loss-to-lakers.php",
-          "title": "Domantas Sabonis posts double-double in Friday's loss to Lakers",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbcDLQ2WF-Wbc3c_P7jw3tSQbmXpxwUnyvJ0rD9wiYCF-iQoPKBWEpdwT5vw4"
-        }
-      ]
-    },
-    {
-      "query": "tank davis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T05:30:00Z",
-      "related_news_urls": [
-        "https://www.boxingscene.com/articles/gervonta-davis-and-jesse-bam-rodriguez-tease-unlikely-catchweight-showdown",
-        "https://www.boxing247.com/boxing-news/bam-rodriguez-gives-tank-a-test-kambosos-doesnt/311452",
-        "https://boxingnewsonline.net/news/bam-will-fight-davis-on-one-condition/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKE5UpwQBMS5abijD7Njb7l_pg36eqDx-DjUQy96bBIbniPnu4VA-bVEpOfZc",
-      "image_credit": "BoxingScene",
-      "news": [
-        {
-          "url": "https://www.boxingscene.com/articles/gervonta-davis-and-jesse-bam-rodriguez-tease-unlikely-catchweight-showdown",
-          "title": "Gervonta Davis and Jesse ‘Bam’ Rodriguez tease unlikely catchweight showdown",
-          "publisher": "BoxingScene",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKE5UpwQBMS5abijD7Njb7l_pg36eqDx-DjUQy96bBIbniPnu4VA-bVEpOfZc"
-        },
-        {
-          "url": "https://www.boxing247.com/boxing-news/bam-rodriguez-gives-tank-a-test-kambosos-doesnt/311452",
-          "title": "Bam Rodriguez Gives Tank A Test Kambosos Doesn’t",
-          "publisher": "Boxing News 24/7",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWWTqD5ByQ6n4Rj3JVDaA1FJscIn7EMogwjSkdRLpjTqNbYnpgJav6zqc8Z4Q"
-        },
-        {
-          "url": "https://boxingnewsonline.net/news/bam-will-fight-davis-on-one-condition/",
-          "title": "Jesse 'Bam' Rodriguez trainer Robert Garcia says they will fight Gervonta Davis on one condition",
-          "publisher": "Boxing News Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8ksOi6SeZjgX9is7WK5Ysf200HUuH1dqKVxW3BOCysMIf-qKUJQkBFD8SRXc"
-        }
-      ]
-    },
-    {
-      "query": "sonny dykes",
+      "query": "pac 12 championship game",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T05:30:00Z",
+      "published_at": "2026-11-22T06:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/elko-dykes-real-jeopardy-college-151713268.html",
-        "https://www.dallasnews.com/sports/tcu-horned-frogs/article/tcu-horned-frogs-sonny-dykes-hot-seat-22536359.php",
-        "https://sports.betmgm.com/en/blog/college-football/sonny-dukes-replacements-tcu-football-head-coach-2026-bm06/"
+        "https://www.cbssports.com/college-football/news/pac-12-championship-game-scenarios-boise-state-texas-state-oregon-state-san-diego-state/",
+        "https://sports.yahoo.com/articles/mwcconnection-reacts-results-texas-state-140000503.html",
+        "https://gazettetimes.com/sports/beavers-sports/football/article_1839ab93-6254-4374-b0c2-442423debe92.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROtca6HL-uiX6JbpwOXjy9N6h4lXdrMuXGKrNg3Q7b8-ksfiEsmJksp0QJMU",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJcfuxmZWPpMkZ7ZHiTWla5ixeXibYmpXErLrYHiY8rttmseS2ei-wqoPr1ZU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/pac-12-championship-game-scenarios-boise-state-texas-state-oregon-state-san-diego-state/",
+          "title": "Pac-12 Championship Game scenarios: Three teams alive for a date with No. 1 seed Boise State",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJcfuxmZWPpMkZ7ZHiTWla5ixeXibYmpXErLrYHiY8rttmseS2ei-wqoPr1ZU"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mwcconnection-reacts-results-texas-state-140000503.html",
+          "title": "MWCConnection Reacts Results: Texas State to the Pac-12 Championship",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-43hM9i_X37PmlavAErXAM0DkGfdvz9R277xJLZ6hMz_8ge6oYhfIRgDBnp8"
+        },
+        {
+          "url": "https://gazettetimes.com/sports/beavers-sports/football/article_1839ab93-6254-4374-b0c2-442423debe92.html",
+          "title": "A spot in the Pac-12 football title game is on the line",
+          "publisher": "Corvallis Gazette-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEp8XNEja7n1ycUJZ8hIbGB-WJsVoCBq-jqmxqdTWLtAbZ9nf8k3sUZORWFBQ"
+        }
+      ]
+    },
+    {
+      "query": "brandin cooks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+        "https://www.ninersnation.com/san-francisco-roster/166100/49ers-waive-brandin-cooks-activate-c-j-west"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInej-dCCXUpHL3XN3Q_FR_ci9fLFNzTwEYHmpMH1Ydnoot95hGxqpotYiH34",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/elko-dykes-real-jeopardy-college-151713268.html",
-          "title": "Are Elko and Dykes in real jeopardy? Our college football panel weighs in on Hear Me Out",
+          "url": "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
+          "title": "49ers waive ex-Bills, Saints WR with 9,869 career receiving yards",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSROtca6HL-uiX6JbpwOXjy9N6h4lXdrMuXGKrNg3Q7b8-ksfiEsmJksp0QJMU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInej-dCCXUpHL3XN3Q_FR_ci9fLFNzTwEYHmpMH1Ydnoot95hGxqpotYiH34"
         },
         {
-          "url": "https://www.dallasnews.com/sports/tcu-horned-frogs/article/tcu-horned-frogs-sonny-dykes-hot-seat-22536359.php",
-          "title": "Despite his warts, Sonny Dykes has earned at least another year as TCU's coach",
-          "publisher": "Dallas News",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+          "title": "49ers waive WR Brandin Cooks",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6-y4_9694uwP7WLLxfv2oFWSU5WAOGP-sHN8LjeMqAFmzDXgao32EOOPn0sY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
         },
         {
-          "url": "https://sports.betmgm.com/en/blog/college-football/sonny-dukes-replacements-tcu-football-head-coach-2026-bm06/",
-          "title": "4 Replacement Candidates If TCU Fires Sonny Dykes",
-          "publisher": "sports.betmgm.com",
+          "url": "https://www.ninersnation.com/san-francisco-roster/166100/49ers-waive-brandin-cooks-activate-c-j-west",
+          "title": "49ers waive Brandin Cooks, activate C.J. West",
+          "publisher": "Niners Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGvTu0e7U8ZcucWyNotfvjz1UbVfMn7aQOuA7Z3o4Ne72e8anecciL_dR2q8M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7BtpvdzTADORb9fm_GKFzdowacDMg4oMglOCnCbY3fdgtXEEBPteHruKNt0Y"
         }
       ]
     },
     {
-      "query": "ben stiller",
+      "query": "minnesota wild",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T06:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-vancouver-canucks-prediction-odds-2026-11-21/",
+        "https://550thezone.iheart.com/content/2026-11-21-brock-boeser-november-21-preview-vs-the-wild/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrY-9Q6JXWZSZIeP-U_LV_ewy_cccZin4Qv_OzgoZmXHbrsgfKBSle-dekU6Y",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-21-2026",
+          "title": "NHL On Tap: White-hot Wild eye sixth win in row, point in 14th straight",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrY-9Q6JXWZSZIeP-U_LV_ewy_cccZin4Qv_OzgoZmXHbrsgfKBSle-dekU6Y"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-vancouver-canucks-prediction-odds-2026-11-21/",
+          "title": "Minnesota Wild vs Vancouver Canucks Prediction, Picks & Odds | 21 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyT8MRlery3Y1GkTGV4vSwzO1JX-n5622LOpSc3qLe3dpdy7AA2S_w5IAIDfE"
+        },
+        {
+          "url": "https://550thezone.iheart.com/content/2026-11-21-brock-boeser-november-21-preview-vs-the-wild/",
+          "title": "Brock Boeser November 21 Preview vs. the Wild",
+          "publisher": "FOX SPORTS 550 The ZONE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_lTLxCN4_PUMolJC7nuTFW3F_xs3ArL7Zm02UmSvhXPNpZaw7X02V-kMdcSQ"
+        }
+      ]
+    },
+    {
+      "query": "heisman odds",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-22T05:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
+        "https://www.ncaa.com/news/football/article/2026-11-18/ranking-top-heisman-trophy-contenders-3-weeks-play",
+        "https://247sports.com/college/ohio-state/article/ohio-state-football-jeremiah-smith-becomes-first-big-ten-receiver-to-reach-4000-career-yards-293050161/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN6n1OC53_bI2BbCv2IgzsTxVFvlLNP9cMp2vljrRcEwEa0o4AbFtB3XXQvHY",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
+          "title": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN6n1OC53_bI2BbCv2IgzsTxVFvlLNP9cMp2vljrRcEwEa0o4AbFtB3XXQvHY"
+        },
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-18/ranking-top-heisman-trophy-contenders-3-weeks-play",
+          "title": "Ranking the top Heisman trophy contenders with 3 weeks to play",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuZC0y4gGWCkGrsmpJEbIrZCdiuOxq5sWDTpwxJ5nJO0qoe8GgmUybgoZLcKc"
+        },
+        {
+          "url": "https://247sports.com/college/ohio-state/article/ohio-state-football-jeremiah-smith-becomes-first-big-ten-receiver-to-reach-4000-career-yards-293050161/",
+          "title": "Ohio State's Jeremiah Smith becomes first Big Ten receiver to reach 4,000 career yards",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnX61IVuaq2BWOoYdaeslBp1TWTQs9Vfx4mIleSaZpiQKctUJNPZtlzxBETj4"
+        }
+      ]
+    },
+    {
+      "query": "wild hockey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T05:50:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+        "https://www.nytimes.com/athletic/7800922/2026/11/21/quinn-hughes-injury-wild-road-trip/",
+        "https://www.startribune.com/quinn-hughes-injury-update-minnesota-wild-vancouver-canucks-score-today-kirill-kaprizov-stats-points/601921253"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+          "title": "Hughes to miss remainder of Wild road trip with injury",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7800922/2026/11/21/quinn-hughes-injury-wild-road-trip/",
+          "title": "Quinn Hughes out for rest of Wild road trip with undisclosed injury",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROBBFchVMFdDokayFSD1GNftk-AyeNXjzjKZMeYsnEIwtSF3ZcQmpy8M94Ljs"
+        },
+        {
+          "url": "https://www.startribune.com/quinn-hughes-injury-update-minnesota-wild-vancouver-canucks-score-today-kirill-kaprizov-stats-points/601921253",
+          "title": "Live: Last place Canucks putting up a fight against Minnesota Wild",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRTsOFtni3Qd8g8EfDfC1TkVipDscO-04c7VXd7y9NXTIF1jKktyvqxPSVuo8"
+        }
+      ]
+    },
+    {
+      "query": "stevie wonder",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T05:30:00Z",
+      "published_at": "2026-11-22T05:50:00Z",
       "related_news_urls": [
-        "https://ew.com/john-legend-reacts-to-ben-stiller-singing-all-of-me-focker-in-law-12267582",
-        "https://thetab.com/filmshrine/2026/11/20/focker-in-law-ariana-grande-ben-stiller-robert-de-niro-awkward-kissing-chat/",
-        "https://www.yahoo.com/entertainment/movies/articles/john-legend-calls-ben-stiller-190353111.html"
+        "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
+        "https://www.app.com/story/entertainment/music/2026/11/21/stevie-wonder-msg-bruce-springsteen-paul-mccartney-beatles/92899915007/",
+        "https://themusicuniverse.com/stevie-wonder-to-take-over-umusic-shop-ny/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3lKpXIlCw3uX_JNhYnupWMRjjcBVOgwRpYvMiEn8-Fe5XHb0eBwgj0Y9SDA",
-      "image_credit": "Entertainment Weekly",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv8eD-Bf9lqCmVgvcGB8AfNmfaFSR0pOIJkSVcl36iyjg5qV7RFLHz0oFQAx0",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://ew.com/john-legend-reacts-to-ben-stiller-singing-all-of-me-focker-in-law-12267582",
-          "title": "John Legend reacts to Ben Stiller singing ‘All of Me’ in Focker-in-Law : ‘They had Ariana Grande right there’",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
+          "title": "Playing ‘Key of Life,’ Stevie Wonder Invites All to Match His Joy",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd3lKpXIlCw3uX_JNhYnupWMRjjcBVOgwRpYvMiEn8-Fe5XHb0eBwgj0Y9SDA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv8eD-Bf9lqCmVgvcGB8AfNmfaFSR0pOIJkSVcl36iyjg5qV7RFLHz0oFQAx0"
         },
         {
-          "url": "https://thetab.com/filmshrine/2026/11/20/focker-in-law-ariana-grande-ben-stiller-robert-de-niro-awkward-kissing-chat/",
-          "title": "Ariana Grande’s ‘awkward’ kiss chat with Ben Stiller and Robert De Niro has people losing it",
-          "publisher": "The Tab",
+          "url": "https://www.app.com/story/entertainment/music/2026/11/21/stevie-wonder-msg-bruce-springsteen-paul-mccartney-beatles/92899915007/",
+          "title": "Stevie Wonder covers Bruce Springsteen, Beatles at MSG 'Songs' concert",
+          "publisher": "Asbury Park Press",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSedsXKe2-ZbV7TcEg94Yk-eD-iLEiW2xHetGwZo4BWcHGpT07NN0lbjuwV5oY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4vp5naUFQ6b6GSth9YCcaBmZQI0kHLzcJ4kkBSH2Za5agZBLteroieunfQA"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/john-legend-calls-ben-stiller-190353111.html",
-          "title": "John Legend Calls Out Ben Stiller’s Mic Moment With Ariana Grande",
-          "publisher": "Yahoo",
+          "url": "https://themusicuniverse.com/stevie-wonder-to-take-over-umusic-shop-ny/",
+          "title": "Stevie Wonder to take over UMusic Shop NY",
+          "publisher": "The Music Universe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIhJm45LucX_0lem3ncIlVEzK3ThLFjt1ccscDxLvMC0EtWGQW6MsYedHw5tw"
-        }
-      ]
-    },
-    {
-      "query": "mattia gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T05:30:00Z",
-      "related_news_urls": [
-        "https://egamers.io/gta-6-day-release-yacht-guide-where-mattia-is-and-how-to-hit-all-three-champagne-bottles/",
-        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mattia/",
-        "https://www.videogameschronicle.com/guide/gta-6-day-release-mission-walkthrough/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbGP7jGeGSfxWVRuxAam9-bHIPlAWkOb6mM_1V1pfcI2h9JbDItDAkFfIJW5c",
-      "image_credit": "eGamers.io",
-      "news": [
-        {
-          "url": "https://egamers.io/gta-6-day-release-yacht-guide-where-mattia-is-and-how-to-hit-all-three-champagne-bottles/",
-          "title": "GTA 6 Day Release yacht guide: where Mattia is and how to hit all three champagne bottles",
-          "publisher": "eGamers.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbGP7jGeGSfxWVRuxAam9-bHIPlAWkOb6mM_1V1pfcI2h9JbDItDAkFfIJW5c"
-        },
-        {
-          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mattia/",
-          "title": "Should you shake Mattia's hand in GTA 6?",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJqT9W1kZ4KIYSuVgJFgcbJK3nReFq1KK6cjtF6yF0k3jmWNFkZzoApJ_nl5M"
-        },
-        {
-          "url": "https://www.videogameschronicle.com/guide/gta-6-day-release-mission-walkthrough/",
-          "title": "GTA 6 Day Release Mission Walkthrough",
-          "publisher": "Video Games Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm-6eefWa6xCokf5tPEsmTSV7b6axwkiLiL16_KC3ZfgHw10ElrAE7mn8NIMk"
-        }
-      ]
-    },
-    {
-      "query": "kieran culkin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T05:20:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/kieran-culkin-reunite-succession-jesse-armstrong-movie-1237230018/",
-        "https://variety.com/2026/film/global/kieran-culkin-new-movie-succession-creator-jesse-armstrong-1236954101/",
-        "https://www.yahoo.com/entertainment/tv/articles/kieran-culkin-says-succession-spinoff-005228963.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgWUbEiXt1LbqwHlFbF4PDpwyLIpTjIVD0LIjO3oIaW_unCK5vzszp_W_2Bo",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/kieran-culkin-reunite-succession-jesse-armstrong-movie-1237230018/",
-          "title": "Kieran Culkin Reveals He’s Reuniting With ‘Succession’ Creator Jesse Armstrong On Movie",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgWUbEiXt1LbqwHlFbF4PDpwyLIpTjIVD0LIjO3oIaW_unCK5vzszp_W_2Bo"
-        },
-        {
-          "url": "https://variety.com/2026/film/global/kieran-culkin-new-movie-succession-creator-jesse-armstrong-1236954101/",
-          "title": "Kieran Culkin Says He’s Reuniting With ‘Succession’ Creator Jesse Armstrong on New Movie",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0shQsJe5_lCobP8GR3nSBpamTAgy0kh2bMGRgkX7AJ4KxGMlQ4017ln5_6v8"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/kieran-culkin-says-succession-spinoff-005228963.html",
-          "title": "Kieran Culkin Says a ‘Succession’ Spinoff ‘Would Be a Terrible Idea’: ‘What Are You Hoping For? “Cousin Greg: The Sitcom?”‘",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpGGcPRaoZBoHJ7X3Z7GpziOPU9gzc7BiA0E247T1-6s8BKWP1CoeWeqyECng"
-        }
-      ]
-    },
-    {
-      "query": "neemias queta",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T05:20:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/20/sports/celtics-road-trip-sacramento-kings/",
-        "https://sports.yahoo.com/articles/joe-mazzulla-boston-celtics-focus-212520867.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/19/we-should-welcome-two-on-the-ball-weve-just-gotta/92856674007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs-OXot3AtWwgCdP0LDba9GUrqXc3GTLJ8i4RzOYPgVElucm1Ox46H5Vhfvlw",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/20/sports/celtics-road-trip-sacramento-kings/",
-          "title": "What the Celtics must clean up in Sacramento to make sure their first skid of the season ends at two games",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs-OXot3AtWwgCdP0LDba9GUrqXc3GTLJ8i4RzOYPgVElucm1Ox46H5Vhfvlw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/joe-mazzulla-boston-celtics-focus-212520867.html",
-          "title": "For Joe Mazzulla, Boston Celtics need to focus on process over results after losses",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ8xL8Y11x0Pq0ooRu9ezrin1SY2nFzSOMQZt_L8tkxtpAmqMVbV8t-BmR2cQ"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/19/we-should-welcome-two-on-the-ball-weve-just-gotta/92856674007/",
-          "title": "“We should welcome two on the ball.” “We’ve just gotta …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-U_mQZKrvKRggGqMnub5w2_PrlhWvGUfUEDKVHaWJfqJ5S9eoPqj5dQQQluE"
-        }
-      ]
-    },
-    {
-      "query": "who won miss universe 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T05:20:00Z",
-      "related_news_urls": [
-        "https://news.tuoitre.vn/nguyen-quynh-anh-stripped-of-miss-universe-vietnam-title-103261119131743126.htm",
-        "https://www.ndtv.com/lifestyle/why-miss-universe-vietnam-quynh-anh-nguyen-lost-her-crown-just-48-days-after-winning-12353457",
-        "https://e.vnexpress.net/news/life/celebrities/miss-universe-vietnam-s-turbulent-47-day-reign-before-crown-revocation-5147036.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdZSgJ0MfdYTAUBqFN_sBpr04tI32iGs6TevyTRIK3B_8UrGrWu96y6Ot-Z1c",
-      "image_credit": "Tuoi Tre News | The News Gateway to Vietnam",
-      "news": [
-        {
-          "url": "https://news.tuoitre.vn/nguyen-quynh-anh-stripped-of-miss-universe-vietnam-title-103261119131743126.htm",
-          "title": "Nguyen Quynh Anh stripped of Miss Universe Vietnam title",
-          "publisher": "Tuoi Tre News | The News Gateway to Vietnam",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdZSgJ0MfdYTAUBqFN_sBpr04tI32iGs6TevyTRIK3B_8UrGrWu96y6Ot-Z1c"
-        },
-        {
-          "url": "https://www.ndtv.com/lifestyle/why-miss-universe-vietnam-quynh-anh-nguyen-lost-her-crown-just-48-days-after-winning-12353457",
-          "title": "Why Miss Universe Vietnam Quynh Anh Nguyen Lost Her Crown Just 48 Days After Winning",
-          "publisher": "NDTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf7FX2VKI3CZr0W7k52_JQwceM5eVvbZL005DlnEwKYRgxN3I3S8LmW1rZk5M"
-        },
-        {
-          "url": "https://e.vnexpress.net/news/life/celebrities/miss-universe-vietnam-s-turbulent-47-day-reign-before-crown-revocation-5147036.html",
-          "title": "Miss Universe Vietnam's turbulent 47-day reign before crown revocation",
-          "publisher": "VnExpress International",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNXyEj4DqX5tf47CnZnAOKQwRw-QImKBuq0HUzODwaEw7WJLXod4SLgLYLQ5E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqLkp8yhoqosR5_QtE-S0lTGPDemVZxCLqVIL_H-P3JVb_ok_hQ1_e56KFQhc"
         }
       ]
     }
