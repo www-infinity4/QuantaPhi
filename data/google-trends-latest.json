@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T19:30:51.054026Z",
+  "checked_at": "2026-11-22T20:01:30.567336Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "getafe vs atlético",
+      "query": "pistons vs hawks",
       "approx_searches": "2000+",
-      "published_at": "2026-11-22T19:10:00Z",
+      "published_at": "2026-11-22T19:40:00Z",
       "related_news_urls": [
-        "https://www.si.com/es-us/pronostico-getafe-vs-atletico-de-madrid-probabilidades-estadisticas-bajas-y-prediccion-ia",
-        "https://onefootball.com/es/noticias/getafe-atletico-estos-son-los-elegidos-de-simeone-y-bordalas-43821039",
-        "https://hsbnoticias.com/noticias/getafe-vs-aleti-de-los-derbi-favoritos-de-espana"
+        "https://sports.yahoo.com/articles/pistons-vs-hawks-prediction-pick-120443901.html",
+        "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-today-s-hawks-pistons-showdown-01m8206y95px",
+        "https://www.nytimes.com/athletic/7802740/2026/11/22/pistons-vs-hawks-stream-how-to-watch-nov-22/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsyR_T5q-v1p8m6Es08WuQl8SLklzm9wOPQP57hPVY31N3bcw5L7nLdFdMEk",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/es-us/pronostico-getafe-vs-atletico-de-madrid-probabilidades-estadisticas-bajas-y-prediccion-ia",
-          "title": "Pronóstico Getafe vs Atlético de Madrid: probabilidades, estadísticas, bajas y predicción IA",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnsyR_T5q-v1p8m6Es08WuQl8SLklzm9wOPQP57hPVY31N3bcw5L7nLdFdMEk"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/getafe-atletico-estos-son-los-elegidos-de-simeone-y-bordalas-43821039",
-          "title": "🚨 Getafe-Atlético: estos son los elegidos de Simeone y Bordalás",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU_E-26TdgEO39jrp0s2K-txoCaKo6vuTt5fIB9Vfe5ZPGcFCnhsvi1CzW9N8"
-        },
-        {
-          "url": "https://hsbnoticias.com/noticias/getafe-vs-aleti-de-los-derbi-favoritos-de-espana",
-          "title": "Getafe vs Aleti: de los derbi favoritos de España",
-          "publisher": "HSB Noticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjMZepFXTxXLPuFqUTSf0GIAUcUIQ7s43yIJ0IU5RJMgmWSW9mGYkQacU1IvE"
-        }
-      ]
-    },
-    {
-      "query": "alvin kamara",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T19:10:00Z",
-      "related_news_urls": [
-        "https://heavy.com/sports/nfl/new-orleans-saints/is-alvin-kamara-playing-today-why-saints-rb-isnt-doing-anything-vs-bears/",
-        "https://sports.yahoo.com/articles/alvin-kamara-back-practice-thursday-020407063.html",
-        "https://www.fantasypros.com/nfl/notes/499812/alvin-kamara-2026-week-11-outlook.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReLZzt_F29qSWO9pI4uoaQxh6iiZIfn9Yb0NMgzST9hxzb1Uffk0QrEwDZrCs",
-      "image_credit": "Heavy.com",
-      "news": [
-        {
-          "url": "https://heavy.com/sports/nfl/new-orleans-saints/is-alvin-kamara-playing-today-why-saints-rb-isnt-doing-anything-vs-bears/",
-          "title": "Is Alvin Kamara Playing Today? Why Saints RB Isn’t Doing Anything vs. Bears",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReLZzt_F29qSWO9pI4uoaQxh6iiZIfn9Yb0NMgzST9hxzb1Uffk0QrEwDZrCs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/alvin-kamara-back-practice-thursday-020407063.html",
-          "title": "Alvin Kamara back at practice Thursday",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsKtZavcUglKjmv-3CQ8wlKiMOkLKMcSvoyXsWL71lCBNrDLoifxvWJ1OZj1s"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/notes/499812/alvin-kamara-2026-week-11-outlook.php",
-          "title": "Alvin Kamara Week 11 Outlook - Saints at Bears",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6hNF6HA93-RbvY4AbGZwVgueFdWoXJd-Ezt8L-0fbH2ZoiKA2cBW9RpE8x2E"
-        }
-      ]
-    },
-    {
-      "query": "dj moore",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T19:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/dj-moore-hits-sea-lion-celebration-following-4-yard-td-reception",
-        "https://sports.yahoo.com/articles/bills-dj-moore-explains-story-190140044.html",
-        "https://www.fantasypros.com/nfl/news/620282/dj-moore-finds-end-zone-week-10-win.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAzVC333X5E0jLgFDXVD5je4rPkPc4xVM1sUuAiblFvA41W1MXWvlkYElUXPY",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/dj-moore-hits-sea-lion-celebration-following-4-yard-td-reception",
-          "title": "Buffalo Bills wide receiver DJ Moore hits sea lion celebration following 4-yard TD reception",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAzVC333X5E0jLgFDXVD5je4rPkPc4xVM1sUuAiblFvA41W1MXWvlkYElUXPY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/bills-dj-moore-explains-story-190140044.html",
-          "title": "Bills’ DJ Moore explains story behind his hilarious ‘Sea lion’ celebration",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEWozdQcWVknO9HeGky2Iy_GWoqR874m24LERuDh6EAWxH_aRaJHgnyvzs7Vk"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/620282/dj-moore-finds-end-zone-week-10-win.php",
-          "title": "DJ Moore finds the end zone in Week 10 win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzPrwrQVwxVj4T024VWq1K_KeMgpXdpD6tII8_adXbc7jbxVDuWvEIWoMDSIk"
-        }
-      ]
-    },
-    {
-      "query": "travis etienne",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T19:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50521728/week-11-predictions-upsets-fantasy-sleepers-stats-2026",
-        "https://www.cbssports.com/betting/news/week-11-nfl-odds-picks-brinsons-best-bets-player-props-anytime-td-scorers-for-sunday/",
-        "https://www.nfl.com/news/nfl-week-11-bold-predictions-patrick-mahomes-ties-td-record-saints-travis-etienne-jr-bedevils-bears"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlwHrf_p6TUYmKZDtZ3UWkIYsYTl9CDf2uunDfiTA8pzuRv4EZ85G5WOtosdA",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50521728/week-11-predictions-upsets-fantasy-sleepers-stats-2026",
-          "title": "NFL Week 11 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlwHrf_p6TUYmKZDtZ3UWkIYsYTl9CDf2uunDfiTA8pzuRv4EZ85G5WOtosdA"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/week-11-nfl-odds-picks-brinsons-best-bets-player-props-anytime-td-scorers-for-sunday/",
-          "title": "Week 11 NFL odds, picks: Brinson's best bets, player props, anytime TD scorers for Sunday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRs4EdCdHwLDidwc7JaKkBvjD0pat1xkK3GNSXFJIBfIBGxxmS32vWh6ZnDJk"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-week-11-bold-predictions-patrick-mahomes-ties-td-record-saints-travis-etienne-jr-bedevils-bears",
-          "title": "NFL Week 11 bold predictions: Patrick Mahomes ties TD record; Saints' Travis Etienne Jr. bedevils Bears",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj1v9pibjnDh3VoTdnYf1Jg5aWIpBh7y1_b6sctzoW6cFIoIAE-SD_8RA6Pto"
-        }
-      ]
-    },
-    {
-      "query": "ted hurst",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T19:10:00Z",
-      "related_news_urls": [
-        "https://957wdae.iheart.com/content/2026-11-21-ted-morris-hurst-iii-week-11-preview-vs-the-lions/",
-        "https://bucsreport.com/2026/11/22/predicted-stat-line-buccaneers-wr-ted-hurst-vs-detroit/",
-        "https://bvmsports.com/2026/11/19/chris-godwin-predicted-stats-vs-lions-5-catches-48-yards/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhBsBSleaUIWCwQdNmVllPGuuGvMbIK3tx0luRee_7oTgTa5ZGibyWiR6x_o",
-      "image_credit": "95.7 WDAE",
-      "news": [
-        {
-          "url": "https://957wdae.iheart.com/content/2026-11-21-ted-morris-hurst-iii-week-11-preview-vs-the-lions/",
-          "title": "Ted Morris Hurst III Week 11 Preview vs. the Lions",
-          "publisher": "95.7 WDAE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhBsBSleaUIWCwQdNmVllPGuuGvMbIK3tx0luRee_7oTgTa5ZGibyWiR6x_o"
-        },
-        {
-          "url": "https://bucsreport.com/2026/11/22/predicted-stat-line-buccaneers-wr-ted-hurst-vs-detroit/",
-          "title": "Predicted Stat Line: Buccaneers WR Ted Hurst vs Detroit",
-          "publisher": "Bucs Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdpIA88gKGucLpOux1FoU7SiHMBsi2RjRbP-B5yjQwSHownimkAFKlimzhnxM"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/19/chris-godwin-predicted-stats-vs-lions-5-catches-48-yards/",
-          "title": "Chris Godwin Predicted Stats vs. Lions: 5 Catches, 48 Yards",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdRW71I13kM4BNGF5ri5LJZn28UlAl-vs_vGrj3DCwEfc-UUdJminuDOFiB7Q"
-        }
-      ]
-    },
-    {
-      "query": "tetairoa mcmillan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T19:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/espn-predicts-bounce-back-game-144034762.html",
-        "https://www.si.com/nfl/panthers/onsi/fantasy-start-or-sit-tetairoa-mcmillan-panthers-d-st-darren-waller-01m80fsrgs94",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/mcmillan-held-to-35-yards-in-week-10-win"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQV84xOcARNN4dSIa4ZMbQH7hJez26masUy-2-tTUzjelJyY14gwE6hpWeAou0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vrWeAFNOPRHLFchFO0Jv_klOwSfQyuABi3Z1XIn4LWIlxajPAfUAMbbR4XQ",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/espn-predicts-bounce-back-game-144034762.html",
-          "title": "ESPN predicts bounce-back game for Panthers WR Tetairoa McMillan in Week 11",
+          "url": "https://sports.yahoo.com/articles/pistons-vs-hawks-prediction-pick-120443901.html",
+          "title": "Pistons vs Hawks Prediction, Pick, NBA Odds for Sunday, November 22",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQV84xOcARNN4dSIa4ZMbQH7hJez26masUy-2-tTUzjelJyY14gwE6hpWeAou0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2vrWeAFNOPRHLFchFO0Jv_klOwSfQyuABi3Z1XIn4LWIlxajPAfUAMbbR4XQ"
         },
         {
-          "url": "https://www.si.com/nfl/panthers/onsi/fantasy-start-or-sit-tetairoa-mcmillan-panthers-d-st-darren-waller-01m80fsrgs94",
-          "title": "Football: Should You Start or Sit These 3 Panthers Against Baltimore?",
+          "url": "https://www.si.com/nba/hawks/onsi/three-bold-predictions-for-today-s-hawks-pistons-showdown-01m8206y95px",
+          "title": "Three Bold Predictions For Today's Hawks-Pistons Showdown",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRoZcZJZuD4XWFNApfD6k7jvEVpLG1HCeznGuGrLXLlqo6UnGcxtitGNSHA85k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoT_nTCaO2Mobrkgyq2w6jf2gUO262nLhFRJsmGSP4tV4oAZmfJ3f8qJJ95CE"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/mcmillan-held-to-35-yards-in-week-10-win",
-          "title": "McMillan held to 35 yards in Week 10 win",
-          "publisher": "NBC Sports",
+          "url": "https://www.nytimes.com/athletic/7802740/2026/11/22/pistons-vs-hawks-stream-how-to-watch-nov-22/",
+          "title": "How to watch Pistons vs. Hawks: TV channel and streaming options for November 22",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzGK5oZX9bKFgPP1jjwKwgW1pWJQpDH2OhLjzIcW5mcXqpGchsQ9oSa7nRzN0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVNFZPEdgI87v9LOOuutsHYo1ACGCKrroqJ136O-zrGUDfN0ZPiZwxkZL4Idw"
         }
       ]
     },
     {
-      "query": "mike pettine",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T19:10:00Z",
+      "query": "dk metcalf",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T19:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50532679/cowboys-christian-parker-dc-job-do",
-        "https://sports.yahoo.com/nfl/article/cowboys-quinnen-williams-when-asked-about-defensive-play-calling-change-repeats-same-line-im-gonna-keep-that-to-myself-145433835.html",
-        "https://www.dallascowboys.com/news/shemar-james-on-play-calling-transition-as-cowboys-green-dot-lb"
+        "https://www.espn.com/nfl/story/_/id/50545137/steelers-receiver-corps-boost-wilson-pittman-week-11",
+        "https://triblive.com/sports/first-call-dk-metcalf-sorts-through-media-noise-in-hopes-of-improving-fates-of-duquesne-rmu-football-intertwined/",
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/178249/antonio-brown-critical-of-steelers-wr-dk-metcalf-amidst-struggles"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GU8k7Qq1WeHTcDmyDTjriYiKn5zGnHyHGSSiyt0psI6bWUDK9-tVlhkP8V0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-r8vL_MpeAiTFKxPSy9yUz7E9UyIXS4vqAK2CCShmYExQgJHUbYRI9YOL4LM",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50532679/cowboys-christian-parker-dc-job-do",
-          "title": "Cowboys' Parker: I'm still DC, have 'job to do' after losing playcalling duties",
+          "url": "https://www.espn.com/nfl/story/_/id/50545137/steelers-receiver-corps-boost-wilson-pittman-week-11",
+          "title": "How Steelers' wide receiver corps gets big boost in Week 11",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GU8k7Qq1WeHTcDmyDTjriYiKn5zGnHyHGSSiyt0psI6bWUDK9-tVlhkP8V0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-r8vL_MpeAiTFKxPSy9yUz7E9UyIXS4vqAK2CCShmYExQgJHUbYRI9YOL4LM"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/article/cowboys-quinnen-williams-when-asked-about-defensive-play-calling-change-repeats-same-line-im-gonna-keep-that-to-myself-145433835.html",
-          "title": "Cowboys' Quinnen Williams, when asked about defensive play-calling change, repeats same line: 'I'm gonna keep that to myself'",
-          "publisher": "Yahoo Sports",
+          "url": "https://triblive.com/sports/first-call-dk-metcalf-sorts-through-media-noise-in-hopes-of-improving-fates-of-duquesne-rmu-football-intertwined/",
+          "title": "First Call: DK Metcalf sorts through media noise in hopes of improving; fates of Duquesne, RMU football intertwined",
+          "publisher": "TribLIVE.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRilu6zuHGB-KV-m1W1BcbKTWKfzV6cPBCtVI906u110Q7wVTqKfzswbbm2Ooc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD8JaBpTXBY7wfbFVcS9Z2I-iIYL5h5ccFBLwHtrjf33Qk_CqbLTSEgIhF0_U"
         },
         {
-          "url": "https://www.dallascowboys.com/news/shemar-james-on-play-calling-transition-as-cowboys-green-dot-lb",
-          "title": "Shemar James on play-calling transition as Cowboys' green dot LB",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-news/178249/antonio-brown-critical-of-steelers-wr-dk-metcalf-amidst-struggles",
+          "title": "Antonio Brown critical of Steelers WR DK Metcalf amidst struggles",
+          "publisher": "Behind the Steel Curtain",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPWb6t9Afuh8nEyypTf-ARt7sLfwz9JuEAwsO8Ov8nvfbTjU7r1lrhs1sefs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoIywnOsavcLUyo3YRcCadMcvepCDNM32iR-CrAm8xUvsvquKWNKcdn9Tyzc"
         }
       ]
     },
     {
-      "query": "colston loveland",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T19:00:00Z",
+      "query": "trevor lawrence",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T19:40:00Z",
       "related_news_urls": [
-        "https://www.dazn.com/en-CA/news/football/bears-colston-loveland-caleb-williams-attack-role-analysis/1v9ali9axqrblzpbeksxc6o72",
-        "https://fantasyfootballcalculator.com/start/colston-loveland-or-malachi-fields",
-        "https://www.bleachernation.com/bears/2026/11/17/colston-loveland-improving/"
+        "https://www.foxnews.com/outkick-sports/nfl-star-trevor-lawrence-talks-possibility-getting-aew-ring-one-day",
+        "https://www.yahoo.com/news/videos/jaguars-trevor-lawrence-getting-aew-163436397.html",
+        "https://www.foxnews.com/video/6408736001112"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSDutKLIH1xt57bBnFz_i9wIVoOw6ZV7igam8krjTUjwCTDV0CmwT6gtgxhQ",
-      "image_credit": "DAZN",
-      "news": [
-        {
-          "url": "https://www.dazn.com/en-CA/news/football/bears-colston-loveland-caleb-williams-attack-role-analysis/1v9ali9axqrblzpbeksxc6o72",
-          "title": "Caleb Williams and Colston Loveland: The Bears’ rising connection",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSDutKLIH1xt57bBnFz_i9wIVoOw6ZV7igam8krjTUjwCTDV0CmwT6gtgxhQ"
-        },
-        {
-          "url": "https://fantasyfootballcalculator.com/start/colston-loveland-or-malachi-fields",
-          "title": "Who Should I Start? Colston Loveland or Malachi Fields",
-          "publisher": "Fantasy Football Calculator",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzb_6or5XSHzv_lpDY_qha240SY_INi4QDE3gh0cEFSfzriJyTKn6U0msQbNs"
-        },
-        {
-          "url": "https://www.bleachernation.com/bears/2026/11/17/colston-loveland-improving/",
-          "title": "Colston Loveland's 2nd Half Breakout Might Already Be Underway",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0MpHEhS6IbOyKKWdNKWebyChsb1GueHE5OGLimoW3sNk-9sCL6-eU0dBssME"
-        }
-      ]
-    },
-    {
-      "query": "joey slye",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T19:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/titans-kicker-joey-slye-hardest-hit-nfl-week-10-jaguars",
-        "https://sports.yahoo.com/articles/jaguars-josh-cameron-breaks-silence-085344000.html",
-        "https://www.fantasypros.com/nfl/news/620416/joey-slye-goes-11-kicking-points-loss.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Y8Mzy98G1zdE-onQrjjDXuI341HaZBYD-pkNixrGf9-p9mP9cyTdls_deZw",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHQR3k-UCQP-fxytg0IelOXnZT5a0bgsTPBVDMEQBaa1uAY9T2yFCRmlVHBD8",
       "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/titans-kicker-joey-slye-hardest-hit-nfl-week-10-jaguars",
-          "title": "Titans kicker Joey Slye may have delivered the hardest hit of NFL Week 10 action against Jaguars",
+          "url": "https://www.foxnews.com/outkick-sports/nfl-star-trevor-lawrence-talks-possibility-getting-aew-ring-one-day",
+          "title": "NFL star Trevor Lawrence talks possibility of getting into an AEW ring one day",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1Y8Mzy98G1zdE-onQrjjDXuI341HaZBYD-pkNixrGf9-p9mP9cyTdls_deZw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHQR3k-UCQP-fxytg0IelOXnZT5a0bgsTPBVDMEQBaa1uAY9T2yFCRmlVHBD8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jaguars-josh-cameron-breaks-silence-085344000.html",
-          "title": "Jaguars’ Josh Cameron breaks silence on getting welcomed into the NFL by a kicker",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yahoo.com/news/videos/jaguars-trevor-lawrence-getting-aew-163436397.html",
+          "title": "Jaguars' Trevor Lawrence on getting in an AEW ring one day",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdUhLo5zebZjPTO3HqJ9Yg5Ytys4hDrvIHYPiyVuB4GKELkeOeFjL5QO5rSvc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxTVQUkPLg3VAAHGnkqMZajEAR9xyDV1nyG8uTlgvNWcC8tpZyTJ9ymLnRc8s"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/620416/joey-slye-goes-11-kicking-points-loss.php",
-          "title": "Joey Slye goes for 11 kicking points in loss",
-          "publisher": "FantasyPros",
+          "url": "https://www.foxnews.com/video/6408736001112",
+          "title": "Jaguars' Trevor Lawrence on getting in an AEW ring one day",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzsHtBzGxrbVXDpb-fLMaEJ6NBWygc3CrfqwCYHzDpsws3BkZONOsegPxvxPA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrY3s1SeBCnVegpP5v3KyA46hqM3YJDMVyDlXzV_Tljp8Hv3zGvRsZXenpPlQ"
         }
       ]
     },
     {
-      "query": "zavion thomas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T19:00:00Z",
+      "query": "damar hamlin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T19:40:00Z",
       "related_news_urls": [
-        "https://abc7chicago.com/live-updates/chicago-bears-live-updates-latest-news-football-season-illinois-indiana-lawmakers-battle-site-build-new-stadium/20060646/",
-        "https://www.espn.com/nfl/story/_/id/50535411/bears-jeffery-simmons-says-knee-fine-expects-play-vs-saints",
-        "https://www.chicagobears.com/news/jeffery-simmons-kyle-monangai-good-to-go-against-saints-injury-update"
+        "https://sports.yahoo.com/articles/chris-bell-injury-dolphins-rookie-194201585.html",
+        "https://phinphanatic.com/chris-bell-sends-miami-dolphins-fans-a-message-they-can-t-wait-to-see-become-a-reality-01m7ttppbne0",
+        "https://www.thefantasyfootballers.com/news/647828/chris-bell-inactive-in-week-10/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho",
-      "image_credit": "ABC7 Chicago",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo2J2iAwz1nVtyUqGcdYd8cvHnQlK0g2ksCr54Zmjwjrw_NA62ur52EMXbxUw",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://abc7chicago.com/live-updates/chicago-bears-live-updates-latest-news-football-season-illinois-indiana-lawmakers-battle-site-build-new-stadium/20060646/",
-          "title": "Chicago Bears live updates: Bears to host New Orleans Saints at Soldier Field Sunday",
-          "publisher": "ABC7 Chicago",
+          "url": "https://sports.yahoo.com/articles/chris-bell-injury-dolphins-rookie-194201585.html",
+          "title": "Chris Bell injury update: Dolphins rookie WR helped off after hard hit",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo2J2iAwz1nVtyUqGcdYd8cvHnQlK0g2ksCr54Zmjwjrw_NA62ur52EMXbxUw"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50535411/bears-jeffery-simmons-says-knee-fine-expects-play-vs-saints",
-          "title": "Bears' Jeffery Simmons says knee injury a non-issue, expects to play vs. Saints",
-          "publisher": "ESPN",
+          "url": "https://phinphanatic.com/chris-bell-sends-miami-dolphins-fans-a-message-they-can-t-wait-to-see-become-a-reality-01m7ttppbne0",
+          "title": "Chris Bell sends Dolphins fans a message they can't wait to see become a reality",
+          "publisher": "Phin Phanatic",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTllpRjZmZl-9MKnwTuz5vSh0Pr-W7Fbvj5VGVGu0LikQDlv4H1kNseDQtcxaQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSeyZeLRXWsNA9IIK0jKYHnmQGp2Bsp4Vafi6Sjo1YAWpmw_OMZhC2uLOA1fs"
         },
         {
-          "url": "https://www.chicagobears.com/news/jeffery-simmons-kyle-monangai-good-to-go-against-saints-injury-update",
-          "title": "Jeffery Simmons, Kyle Monangai good to go against Saints | Injury Update",
-          "publisher": "Chicago Bears",
+          "url": "https://www.thefantasyfootballers.com/news/647828/chris-bell-inactive-in-week-10/",
+          "title": "Chris Bell Inactive in Week 10",
+          "publisher": "Fantasy Footballers Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs0B3qrMjZqfq0BUvebDZMIvQQX8IRXr_TN4AOmeB7Cp_r0huhKb9Jzb3EuOw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEfi_Svbl49cxth8dcQamomeRk5ja6xDMhr5NnV7YIE1_cheUK1YFHvOpuF8w"
+        }
+      ]
+    },
+    {
+      "query": "gibbs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T19:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-betting/jahmyr-gibbs-jared-goff-power-lions-offense-week-11-game-against-buccaneers",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jahmyr-gibbs-is-on-pace-to-break-the-nfl-record-for-yards-from-scrimmage-in-a-season",
+        "https://www.freep.com/story/sports/nfl/lions/2026/11/18/lions-rb-jahmyr-gibbs-once-again-named-nfc-player-of-the-week/92844687007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa6qo6SB5eP5dGqSVkI6SCeOn597tlCDiz1vxNhE7hLJB7Pas5mtaERjvuO6E",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-betting/jahmyr-gibbs-jared-goff-power-lions-offense-week-11-game-against-buccaneers",
+          "title": "Jahmyr Gibbs and Jared Goff power Lions offense into Week 11 game against Buccaneers",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa6qo6SB5eP5dGqSVkI6SCeOn597tlCDiz1vxNhE7hLJB7Pas5mtaERjvuO6E"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/jahmyr-gibbs-is-on-pace-to-break-the-nfl-record-for-yards-from-scrimmage-in-a-season",
+          "title": "Jahmyr Gibbs is on pace to break the NFL record for yards from scrimmage in a season",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUz-cixMEcsWmAKO889E5PV2LInrS2Tj_ISp96gMkv3rzSfbWzPjy3yfVqmNw"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/18/lions-rb-jahmyr-gibbs-once-again-named-nfc-player-of-the-week/92844687007/",
+          "title": "Lions RB Jahmyr Gibbs named NFC Player of the Week − again",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQamV0gnWBCVQHbdVb5jbOKvQrIj0_Pi7HRn-137N1EXpaZI4uX61pDVBFYCoo"
+        }
+      ]
+    },
+    {
+      "query": "george karlaftis",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T19:40:00Z",
+      "related_news_urls": [
+        "https://www.arrowheadpride.com/nfl-reacts-survey/217030/week-11-results-chiefs-fans-praise-george-karlaftis",
+        "https://www.aol.com/articles/chris-jones-praises-elite-performance-130111000.html",
+        "https://bvmsports.com/2026/11/19/searching-for-the-real-truth-about-the-chiefs-pass-rush/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTecupNXVZ0oZyuWRMU8okMVuDmZqzwO08WRZHsfoZOYynHOVGUIQQ1KTGWek",
+      "image_credit": "Arrowhead Pride",
+      "news": [
+        {
+          "url": "https://www.arrowheadpride.com/nfl-reacts-survey/217030/week-11-results-chiefs-fans-praise-george-karlaftis",
+          "title": "In Week 11’s ‘Reacts’ poll, Chiefs fans praise George Karlaftis",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTecupNXVZ0oZyuWRMU8okMVuDmZqzwO08WRZHsfoZOYynHOVGUIQQ1KTGWek"
+        },
+        {
+          "url": "https://www.aol.com/articles/chris-jones-praises-elite-performance-130111000.html",
+          "title": "Chris Jones praises elite performance from underrated teammate",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW51CBqZwdiKmsUjr_-fzojPDDdfEaDxT0R6PNp0rMsyAABs4EWZC8E8Sj33c"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/19/searching-for-the-real-truth-about-the-chiefs-pass-rush/",
+          "title": "Searching for the REAL TRUTH About the Chiefs’ Pass Rush",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW7mjZisqjDt6HnTwXntbmECWTfV3Dqf5dXKimmhEwN9ni0FiHylDmkGuOk4o"
+        }
+      ]
+    },
+    {
+      "query": "nelly korda",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T19:40:00Z",
+      "related_news_urls": [
+        "https://www.lpga.com/news/2026/nelly-korda-fires-65-to-set-up-historic-sunday-at-cme-group-tour-championship",
+        "https://www.golfchannel.com/lpga/news/nelly-korda-finds-her-swing-for-third-round-65-reignites-hall-of-fame-storyline-at-cme",
+        "https://sports.yahoo.com/articles/nelly-korda-strengtens-hall-fame-211730766.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5-B4wnC-duPibS8LReHoKAp9oTFTeufXcW-0Qt1SHC3VhVnmWLj8u6xefUKc",
+      "image_credit": "LPGA",
+      "news": [
+        {
+          "url": "https://www.lpga.com/news/2026/nelly-korda-fires-65-to-set-up-historic-sunday-at-cme-group-tour-championship",
+          "title": "Nelly Korda Fires 65 to Set Up Historic Sunday at CME Group Tour Championship",
+          "publisher": "LPGA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5-B4wnC-duPibS8LReHoKAp9oTFTeufXcW-0Qt1SHC3VhVnmWLj8u6xefUKc"
+        },
+        {
+          "url": "https://www.golfchannel.com/lpga/news/nelly-korda-finds-her-swing-for-third-round-65-reignites-hall-of-fame-storyline-at-cme",
+          "title": "Just like that, Nelly Korda has found her swing as hall-of-fame storyline reignites at CME",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDHInmhUx1hDlJ4Yz_3llM9hMKmCPIcomVuc-d6KkpenpzhJXUjmTZyKOndw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nelly-korda-strengtens-hall-fame-211730766.html",
+          "title": "Nelly Korda strengtens Hall of Fame bid and offers captivating insight into her struggles at CME",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqraJvyUtvLUihRGpxa9pGgOQ-pQrsPv8scUWZq4EjNnqXd3Fn6R76DoKXcQ"
+        }
+      ]
+    },
+    {
+      "query": "quinnen williams",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T19:40:00Z",
+      "related_news_urls": [
+        "https://www.dallascowboys.com/news/quinnen-williams-named-finalist-for-bart-starr-award",
+        "https://www.giants.com/news/jameis-winston-among-10-finalists-for-2027-bart-starr-award",
+        "https://www.bignewsnetwork.com/news/279446241/quinnen-williams-named-finalist-for-bart-starr-award"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUbMtpVILB8jShFrYBZNpADt93yl3nhhGVBxHB94i9iPOMIuEAZ54kkEOZQM",
+      "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+      "news": [
+        {
+          "url": "https://www.dallascowboys.com/news/quinnen-williams-named-finalist-for-bart-starr-award",
+          "title": "Quinnen Williams named finalist for Bart Starr Award",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRUbMtpVILB8jShFrYBZNpADt93yl3nhhGVBxHB94i9iPOMIuEAZ54kkEOZQM"
+        },
+        {
+          "url": "https://www.giants.com/news/jameis-winston-among-10-finalists-for-2027-bart-starr-award",
+          "title": "Jameis Winston among 10 finalists for 2027 Bart Starr Award",
+          "publisher": "Giants.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD62EQgkr9muiWvzvZFI4Q0qv77cTzwo_nq5tjAIY4EIY8t8CylyaE32UsyUo"
+        },
+        {
+          "url": "https://www.bignewsnetwork.com/news/279446241/quinnen-williams-named-finalist-for-bart-starr-award",
+          "title": "Quinnen Williams named finalist for Bart Starr Award",
+          "publisher": "Big News Network.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNR0DoBJOCS1cG8Tt5tuTVDuDj_1ja4cYAm3u8BpxWJaZKS8IfP4H3KhhwHP8"
+        }
+      ]
+    },
+    {
+      "query": "troy aikman",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T19:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+        "https://sports.yahoo.com/articles/troy-aikman-bait-mike-florio-190614022.html",
+        "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/troy-aikman-bait-mike-florio-190614022.html",
+          "title": "‘Will (Troy) Aikman Take the Bait?’ — Mike Florio Speculates Whether Joe Buck Will Bring Up Cowboys Legend’s Viral Comments in Upcoming MNF Broadcast",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRroSf33c-dflhRIIxXDYEjB6QmExzUs94QWD7teJBqVNv6G4KyLeuNBMDhzdo"
+        },
+        {
+          "url": "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242",
+          "title": "Troy Aikman escalates ongoing feud with Joe Buck, saying broadcast partner ‘always wanted a one-man booth’",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZG4o50zce7tg1bwnNg6a5rXYGaPjM8brC8p-NdldcwgNXgavX3-3lbNzOtM"
+        }
+      ]
+    },
+    {
+      "query": "charlie smyth",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T19:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/american-football/articles/cmdx1n2pv1d1o",
+        "https://www.rte.ie/sport/us-sport/2026/1121/1600157-smyth-signs-two-year-deal-with-new-orleans/",
+        "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/21/saints-announce-roster-moves-ahead-of-week-11-game-at-bears/92900523007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZln3633rnA8gmMPmydaijCXdwStjVY_y1kySFOkfIHg3VqnkZmKBPMSIpRzQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/american-football/articles/cmdx1n2pv1d1o",
+          "title": "Charlie Smyth: Kicker elevated to New Orleans Saints' playing roster",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZln3633rnA8gmMPmydaijCXdwStjVY_y1kySFOkfIHg3VqnkZmKBPMSIpRzQ"
+        },
+        {
+          "url": "https://www.rte.ie/sport/us-sport/2026/1121/1600157-smyth-signs-two-year-deal-with-new-orleans/",
+          "title": "Charlie Smyth signs two-year deal with New Orleans Saints",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNiJAPB3uX4Koc4veT-ScTNxh3rVmz8olzqMkqiQl1v_nHeBSIt9yEYEA64eQ"
+        },
+        {
+          "url": "https://saintswire.usatoday.com/story/sports/nfl/saints/2026/11/21/saints-announce-roster-moves-ahead-of-week-11-game-at-bears/92900523007/",
+          "title": "Saints announce roster moves ahead of Week 11 game at Bears",
+          "publisher": "Saints Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj7XnDSkxBF2F25Zn3KIopowN0BDqqyYa6akn1BXuZi04Ki1rF2QEBhVcyQk8"
         }
       ]
     }
