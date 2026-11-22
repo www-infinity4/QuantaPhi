@@ -9,6 +9,8 @@ Canonical owner work order: [QuantaPhi #1704](https://github.com/www-infinity4/Q
 
 - `/research-lab/dopant-oxide-ai.html` — source-guided **Dopant Oxide AI** terminology primer and local diagnostic 84. This does not inspect GPT weights or establish Bubbles synchronization. Its separate `dopant-oxide-ai.mjs` classifier distinguishes the precise multiword term from ambiguous `Dopant AI` and unrelated subjects.
 
+- `/research-lab/material-memory-air.html` — sourced scientific comparisons for laser plasma voxels, boron-oxide crack sealing at elevated temperature, quartz optical luminescence and the limits of digital Black verification. Pure static HTML; no device or instrument connection.
+
 ## Source scope
 NASA Vela, Compton BATSE, Swift, Fermi, GCN, NASA gamma-ray physics; EPA radiation logging; Espressif pulse counter documentation. Source links and interpretation are embedded on the pages. The owner's gamma-in-every-molecule proposal is labeled unverified; gamma radiation is not a property emitted continually by every molecule.
 
@@ -16,7 +18,7 @@ NASA Vela, Compton BATSE, Swift, Fermi, GCN, NASA gamma-ray physics; EPA radiati
 No uploaded images or private details, identities, school affiliations or profiles of children are saved in public source. No head-counting vision model is connected. The proposed visual counting option is aggregate and consent-bound, pending independently tested authorized vision integration. A sensor cannot establish relationships, intentions, wrongdoing or spiritual claims.
 
 ## Verification
-Run `node --test test/research-lab-grb.test.mjs` (includes focused oxide/84 regressions). CI on a PR runs the same focused tests under `ubuntu-24.04` / Node 24. Check exact-head and independent review before any merge; a merged page requires a separate Cloudflare/deployed URL and Android readback receipt. No deploy has been claimed.
+Run `node --test test/research-lab-grb.test.mjs test/research-lab-air-material-memory.test.mjs` (includes focused oxide/84 regressions). CI on a PR runs the same focused tests under `ubuntu-24.04` / Node 24. Check exact-head and independent review before any merge; a merged page requires a separate Cloudflare/deployed URL and Android readback receipt. No deploy has been claimed.
 
 ## Research data handling
 Proposed future schema: UTC time, detector and firmware, number of pulses over a defined time window, background calibration, uncertainty, external public event identifiers and source provenance. No live instrument is attached; never fabricate sample counts or personal inference.
