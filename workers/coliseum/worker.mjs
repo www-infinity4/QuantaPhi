@@ -1,4 +1,5 @@
 import {BETA_CAPACITY,clean,validModel,validSector,validIdea,validMessage,allowsOrigin,editionPolicy,publicMemberLabel} from '../../coliseum/room-api-core.mjs';
+import {validatePerspectiveChoice,makePerspectiveBrief} from '../../coliseum/perspective-core.mjs';
 /* Independent Infinity Coliseum beta API, NOT an OpenAI model.
  * Starts disabled and requires a real StarQuest device credential, D1 migration,
  * a 32+ character member pseudonymization secret, and explicit beta allowlist.
@@ -28,7 +29,7 @@ async function stateUser(req){
  }finally{clearTimeout(timer)}
 }
 async function pseudonym(username,pepper){
- const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),'HMAC',{hash:'SHA-256'},false,['sign']);
+ const h=await crypto.subtle.importKey('raw',new TextEncoder().encode(pepper),{name:'HMAC',hash:'SHA-256'},false,['sign']);
  const digest=await crypto.subtle.sign('HMAC',h,new TextEncoder().encode(username));
  return [...new Uint8Array(digest)].slice(0,16).map(x=>x.toString(16).padStart(2,'0')).join('');
 }
@@ -93,10 +94,28 @@ async function handler(req,env){
    if(!validModel(modelId)||!validSector(sector))return error(req,'invalid_room',400);
    if(!await joined(db,modelId,member))return error(req,'join_room_first',403);
    const table=path==='/v1/ideas'?'coliseum_ideas':'coliseum_messages';
-   const fields=table==='coliseum_ideas'?'id,parent_id,model_id,sector,member_id,title,description,created_at':'id,model_id,sector,member_id,text,created_at';
-   const count=table==='coliseum_ideas'?40:50;
-   const query=await db.prepare('SELECT '+fields+' FROM '+table+' WHERE model_id=? AND sector=? ORDER BY created_at DESC LIMIT '+count).bind(modelId,sector).all();
-   const rows=(query.results||[]).map(({member_id,...r})=>({...r,author:publicMemberLabel(member_id)}));
+   const isIdeas=table==='coliseum_ideas';
+   const fields=isIdeas
+    ?'i.id,i.parent_id,i.model_id,i.sector,i.member_id,i.title,i.description,i.created_at,COALESCE(c.shared,0) AS perspective_shared'
+    :'id,model_id,sector,member_id,text,created_at';
+   const count=isIdeas?40:50;
+   const q=isIdeas
+    ?'SELECT '+fields+' FROM coliseum_ideas i LEFT JOIN coliseum_perspective_consents c ON c.idea_id=i.id AND c.member_id=i.member_id WHERE i.model_id=? AND i.sector=? ORDER BY i.created_at DESC LIMIT '+count
+    :'SELECT '+fields+' FROM coliseum_messages WHERE model_id=? AND sector=? ORDER BY created_at DESC LIMIT '+count;
+   let query;
+   try{query=await db.prepare(q).bind(modelId,sector).all()}
+   catch(error){
+    if(!isIdeas)throw error;
+    // A source merge must not disable an existing Coliseum room while
+    // the separate advisory D1 migration is still awaiting authorization.
+    query=await db.prepare(`SELECT id,parent_id,model_id,sector,member_id,title,description,created_at,
+      0 AS perspective_shared FROM coliseum_ideas
+      WHERE model_id=? AND sector=? ORDER BY created_at DESC LIMIT 40`).bind(modelId,sector).all();
+   }
+   const rows=(query.results||[]).map(({member_id,perspective_shared,...r})=>({
+    ...r,author:publicMemberLabel(member_id),
+    ...(isIdeas?{mine:member_id===member,perspectiveShared:perspective_shared===1}:{})
+   }));
    return reply(req,{ok:true,modelId,sector,items:rows});
   }
   if(path==='/v1/ideas'&&req.method==='POST'){
@@ -108,6 +127,46 @@ async function handler(req,env){
    await sql(db.prepare('INSERT INTO coliseum_ideas (id,model_id,sector,member_id,title,description,parent_id,created_at) VALUES (?,?,?,?,?,?,NULL,?)'),
     id,b.modelId,b.sector,member,clean(b.title,110),clean(b.description,1800),new Date().toISOString());
    return reply(req,{ok:true,id,posted:true},201);
+  }
+  // Published Coliseum ideas may inform Bubbles improvement suggestions
+  // only through a distinct affirmative opt-in by the SAME idea author.
+  // Repeated calls are idempotent; the author can revoke without deleting
+  // their original published room post.
+  if(path==='/v1/perspectives/choice'&&req.method==='POST'){
+   const choice=validatePerspectiveChoice(await readBody(req));
+   if(!choice)return error(req,'invalid_perspective_consent',400);
+   const idea=await db.prepare('SELECT id,model_id,sector,member_id FROM coliseum_ideas WHERE id=?').bind(choice.ideaId).first();
+   if(!idea)return error(req,'idea_not_found',404);
+   if(idea.member_id!==member)return error(req,'idea_owner_required',403);
+   if(!await joined(db,idea.model_id,member))return error(req,'join_room_first',403);
+   await limit(db,member,'perspective_choice',12);
+   await sql(db.prepare(`INSERT INTO coliseum_perspective_consents
+    (idea_id,member_id,shared,purpose,updated_at) VALUES (?,?,?,?,?)
+    ON CONFLICT(idea_id,member_id) DO UPDATE SET
+    shared=excluded.shared,purpose=excluded.purpose,updated_at=excluded.updated_at`),
+    idea.id,member,choice.share?1:0,choice.purpose,new Date().toISOString());
+   return reply(req,{ok:true,ideaId:idea.id,shared:choice.share,purpose:choice.purpose,
+    note:choice.share?'Only this published idea may inform advisory comparisons.':'This idea is no longer eligible for new Bubbles advisory comparisons.'});
+  }
+  if(path==='/v1/perspectives'&&req.method==='GET'){
+   const modelId=url.searchParams.get('modelId'),sector=url.searchParams.get('sector');
+   if(!validModel(modelId)||!validSector(sector))return error(req,'invalid_room',400);
+   if(!await joined(db,modelId,member))return error(req,'join_room_first',403);
+   // Even an ordinary Coliseum member may not request the curated AI-advisory
+   // batch. Enable only explicitly provisioned, pseudonymized reviewers.
+   const reviewers=new Set(String(env.PERSPECTIVE_REVIEWERS||'')
+    .split(',').map(x=>x.trim()).filter(x=>/^[a-f0-9]{32}$/.test(x)));
+   if(!reviewers.has(member))return error(req,'perspective_reviewer_required',403);
+   const query=await db.prepare(`SELECT i.id,i.model_id,i.sector,i.member_id,i.title,i.description,
+     c.shared AS consented FROM coliseum_ideas i
+     JOIN coliseum_perspective_consents c ON c.idea_id=i.id AND c.member_id=i.member_id
+     WHERE i.model_id=? AND i.sector=? AND c.shared=1 AND c.purpose='bubbles-advisory-v1'
+     ORDER BY c.updated_at DESC LIMIT 40`).bind(modelId,sector).all();
+   const candidates=(query.results||[]).map(r=>({...r,consented:r.consented===1}));
+   const brief=makePerspectiveBrief(candidates,{modelId,sector,minimumContributors:3});
+   return reply(req,{ok:true,ready:brief.ready,status:brief.status,
+    minimumContributors:3,perspectives:brief.perspectives,note:brief.note,
+    permissions:brief.permissions,ownerFinalDecisionRequired:true});
   }
   if(path==='/v1/messages'&&req.method==='POST'){
    const b=await readBody(req);

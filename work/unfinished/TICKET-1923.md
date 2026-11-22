@@ -5,7 +5,7 @@ state: source_staged
 dot: "🟡"
 progress_percent: 44
 progress_basis: "44% estimate applies only to initial Nuance source-card phase; overall five-thread Avatar AI pilot and production acceptance remain incomplete. Public prompt and owner-scoped audit source integrated pending CI, independent review and live checks."
-sessions_spent: 4
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: GPT
 lease_id: null
@@ -13,12 +13,12 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/infinity-os-nuance-discovery-1923
+branch: feat/opt-in-perspectives-specialist-handoff-1923-20261122
 merged: false
 deployed: false
 live_verified: false
 blocker: "Full original transcript not yet authorized/imported; combined exact-head CI, independent review, production and Android checks pending."
-next_action: "Read the full exact-head browser CI after pinning supported runners, then obtain independent GitHub review before guarded merge and live Android/Cloudflare checks."
+next_action: "Review exact-head #2118 Coliseum consent/quorum and Nuance card CI, fix failures; keep community beta and third-party model handoffs inactive without runtime grants."
 ---
 # Ticket 1923 · Infinity OS Cart 003/004 → Nuance Discovery
 
@@ -77,3 +77,21 @@ Check the PR's exact-head CI, especially `test/avatar-ai-card.test.mjs`, `test/s
 - **Firmware source:** original ESP32 DevKit/WROOM pushbutton BLE notification demonstration on GPIO27 and corresponding UUIDs. Only public, non-sensitive button events; no EEG, mental-state inference, cellular network access or device microphone.
 - **Source tests:** local RED missing-module run; after implementing protocol/parser and UI hook, focused Node v22 tests 6/6 passed locally, syntax checks passed. Hardware flash, firmware compile, real Android Chrome BLE pairing, encrypted pairing, Android APK native bridging and Cloudflare production remain unverified.
 - **Gate:** exact-head GitHub CI and independent review of this PR, 320/360/393px Android Chrome pairing with user-controlled disconnect, actual ESP32 bench receipt, then governed merge and deployed readback. Do not claim a tested physical device or an autonomous Avatar project builder. No active executor lease claimed in chat.
+
+---
+
+## Specialist trades and voluntarily shared community perspectives · 2026-11-22
+
+**Owner direction:** One project architect gives the overall goal; GPT, Gemini, engineers, testers and deployment specialists should receive one another's actual source artifacts and results rather than repeatedly asking the owner to repeat instructions. The owner makes final product decisions. Other users' perspectives may inform suggestions but are not authorization to read or repurpose private chats, private brain memory or device history.
+
+**Existing code reused:** Nuance Discovery owner Quick Card, Coliseum's published-room ideas and StarQuest-authenticated beta, current Bubbles/Robot Brain signed runner, Gemini user-controlled handoff source from merged #2117. No second private transcript database or owner-superuser backdoor created.
+
+**PR [#2118](https://github.com/www-infinity4/QuantaPhi/pull/2118)** source includes:
+- `coliseum/perspective-core.mjs`: explicit per-idea purpose-bound opt-in/withdrawal validation; privacy-aware advisory with minimum 3 distinct signed-in contributor pseudonyms before release and no member ID in output; texts strictly *untrusted suggestions*, never instructions; limited exact-PR/SHA specialist handoff records with `providerExecuted:false` unless real external execution is confirmed.
+- Dedicated separate D1 consent migration `workers/coliseum/migrations/0002_perspective_consent.sql`, default OFF. Beta Worker requires an existing verified StarQuest member and source-idea author to opt in/withdraw; reader must be joined to the room. Existing private drafts, messages and archive tables are never selected.
+- `coliseum/coliseum-live.mjs` opt-in checkbox on publication (unchecked by default) plus author-only future share/withdraw controls; `nuance-discovery-card.mjs` separately authenticated owner-triggered published-idea view and copy-only advisory, no automatic model call or dispatch.
+- Tests are test-first, including real mock-D1+signed-member Worker simulation, cross-user permission rejection, revoked-consent exclusion, 3-contributor threshold and no automatic Gemini execution. Coliseum CI extended to run them.
+
+**Limitations and release holds:** A StarQuest pseudonym proves a member credential in these tests, not a unique human. Text may self-identify even if member IDs are omitted; explicit consent must disclose this before a real rollout. Removing opt-in stops **future advisory queries** but cannot recall already copied text; before launching, the service needs deletion/retention and contributor controls independently reviewed. A model calling Gemini requires an actual authorized provider integration and permissible request limits, not speculation about access to Google's private data. No live beta, D1 schema migration, Gemini call, user memory scan, production deployment, independent full security audit or Android acceptance is claimed.
+
+**Next:** exact-head PR #2118 CI and source review; only source-only merge if permitted, preserve disabled production beta until privacy acceptance and actual provider access are verified. Then build the real signed cross-tool job handoff and opt-in contributor onboarding without changing existing wallet/D1 authorizations.
