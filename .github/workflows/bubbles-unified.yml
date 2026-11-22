@@ -24,6 +24,8 @@ on:
       - 'workers/unified-wallet/wallet-recovery-schema.sql'
       - 'workers/unified-wallet/worker.js'
       - 'workers/unified-wallet/device-number-core.mjs'
+      - 'workers/unified-wallet/device-color-graph.mjs'
+      - 'test/unified-wallet-device-color-graph.test.mjs'
       - 'test/unified-wallet-device-number.test.mjs'
       - 'bubbles-card-*'
       - 'bubbles-brain-actions.js'
@@ -122,6 +124,8 @@ jobs:
       - run: node --check bubbles-dispatch-catalog.mjs
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check workers/unified-wallet/device-number-core.mjs
+      - run: node --check workers/unified-wallet/device-color-graph.mjs
+      - run: node --test test/unified-wallet-device-color-graph.test.mjs
       - run: node --test test/unified-wallet-device-number.test.mjs
       - run: node --check bubbles-cloud-wallet.js
       - run: node --test test/bubbles-cloud-wallet-history.test.cjs test/bubbles-owner-wallet-recovery.test.cjs
