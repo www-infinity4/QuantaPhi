@@ -222,6 +222,18 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'UrNCWJRcra4',title:'YouTube video UrNCWJRcra4 (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=UrNCWJRcra4',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
+,{
+ videoId:'zxfjMzTaiGI',title:'YouTube video zxfjMzTaiGI (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=zxfjMzTaiGI',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
