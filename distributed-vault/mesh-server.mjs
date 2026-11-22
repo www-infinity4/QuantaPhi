@@ -6,7 +6,7 @@ import {createServer as createHttpServer} from 'node:http';
 import {createServer as createHttpsServer} from 'node:https';
 import {DatabaseSync} from 'node:sqlite';
 import {randomBytes,randomUUID,createHash,timingSafeEqual} from 'node:crypto';
-import {mkdirSync,readFileSync} from 'node:fs';
+import {mkdirSync,readFileSync,chmodSync,closeSync,openSync} from 'node:fs';
 import {dirname} from 'node:path';
 
 const MAX_BODY=1_400_000; // Encrypted shard request bound; use small source chunks
@@ -58,7 +58,12 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
  requireTrue(Number.isSafeInteger(peerTtlMs)&&peerTtlMs>=1000,'invalid peer TTL');
  requireTrue(typeof now==='function','invalid clock');
  requireTrue(LOOPBACK.has(host)||Boolean(tls?.key&&tls?.cert),'TLS required for non-loopback server');
- if(dbPath!==':memory:')mkdirSync(dirname(dbPath),{recursive:true,mode:0o700});
+ if(dbPath!==':memory:'){
+  mkdirSync(dirname(dbPath),{recursive:true,mode:0o700});
+  // Do not let a permissive process umask expose the private shard/control DB.
+  closeSync(openSync(dbPath,'a',0o600));
+  chmodSync(dbPath,0o600);
+ }
  const db=new DatabaseSync(dbPath);
  db.exec(`
  PRAGMA journal_mode=WAL;
@@ -215,6 +220,17 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
    }
    db.prepare('INSERT INTO mesh_shards(file_id,shard_index,hash,data,bytes) VALUES(?,?,?,?,?)')
     .run(fileId,index,part.sha256,part.data,blob.length);
+   // Shard hashes alone cannot detect a dishonest or incorrect ciphertext
+   // manifest. Verify the complete encrypted file before any app assignment.
+   const records=db.prepare('SELECT data FROM mesh_shards WHERE file_id=? ORDER BY shard_index').all(fileId);
+   if(records.length===m.requiredShards){
+    const whole=createHash('sha256');
+    for(const record of records)whole.update(Buffer.from(record.data,'base64'));
+    if(whole.digest('hex')!==m.ciphertextSha256){
+     db.prepare('DELETE FROM mesh_shards WHERE file_id=? AND shard_index=?').run(fileId,index);
+     throw Object.assign(Error('whole ciphertext integrity mismatch'),{status:422});
+    }
+   }
    repair();
    return send(res,201,{stored:true,fileId,index});
   }
