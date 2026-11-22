@@ -167,3 +167,31 @@ test('a falsified whole ciphertext hash rejects final shard before scheduling ph
  const current=(await call('GET','/v1/owner/status')).files[0];
  assert.equal(current.uploadedShards,2);
 });
+
+test('new encrypted fragments favor phones with repeated app activity windows over idle registered peers',async t=>{
+ let time=2000000;
+ const root=mkdtempSync(join(tmpdir(),'qp-mesh-usage-'));
+ t.after(()=>rmSync(root,{recursive:true,force:true}));
+ const mesh=createMeshServer({dbPath:join(root,'usage.sqlite'),ownerToken:OWNER,replicas:1,peerTtlMs:600000,now:()=>time});
+ const url=await mesh.listen();t.after(async()=>mesh.close());
+ const call=async(method,path,body,token=OWNER)=>{
+  const res=await fetch(url+path,{method,headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});
+  return {status:res.status,...await res.json()};
+ };
+ const [idle,regular,frequent]=await provision(call,3);
+ for(let window=0;window<3;window++){
+  time+=61000;
+  assert.equal((await call('POST','/v1/node/heartbeat',{inventory:[]},frequent.token)).status,200);
+  // Repeated calls in one minute are not evidence of a second active window.
+  for(let extra=0;extra<4;extra++)await call('POST','/v1/node/heartbeat',{inventory:[]},frequent.token);
+  if(window>=1)assert.equal((await call('POST','/v1/node/heartbeat',{inventory:[]},regular.token)).status,200);
+ }
+ await upload(call,Buffer.from('app-liveness-driven encrypted placement'),{shards:2});
+ const f=await call('GET','/v1/node/next',undefined,frequent.token);
+ const r=await call('GET','/v1/node/next',undefined,regular.token);
+ const i=await call('GET','/v1/node/next',undefined,idle.token);
+ assert.ok(f.fragment,'frequent app should receive a copy');
+ assert.ok(r.fragment,'regular app should receive a copy');
+ assert.equal(i.fragment,null,'idle registered peer must not be preferred over active caches');
+ assert.notEqual(f.fragment.index,r.fragment.index,'independent app instances hold different fragment indices');
+});
