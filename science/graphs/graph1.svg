@@ -1,0 +1,8 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f7f4f0" />
+  <line x1="40" y1="180" x2="380" y2="180" stroke="#312722" stroke-width="2" />
+  <line x1="40" y1="180" x2="40" y2="20" stroke="#312722" stroke-width="2" />
+  <polyline points="60,150 120,130 180,100 240,80 300,60 360,40" fill="none" stroke="#b83b32" stroke-width="3" />
+  <text x="200" y="190" font-family="system-ui" font-size="12" fill="#312722" text-anchor="middle">Time (s)</text>
+  <text x="15" y="100" font-family="system-ui" font-size="12" fill="#312722" transform="rotate(-90 15,100)">Sensor Value</text>
+</svg>

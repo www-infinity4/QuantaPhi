@@ -1,8 +1,8 @@
+import {REVIEWED_OWNER_VIDEO_LINKS, REVIEWED_OWNER_VIDEO_CARDS, validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {CREATOR_CHANNELS, parseCreatorInput, mixCreatorVideos, pageCreatorVideos, CREATOR_MIX_SOURCE, LANDING_AUTISM_SOURCE, AGORA_SOU_MAE_SOURCE} from '../youtube-creator-mixed-core.mjs';
-import {REVIEWED_OWNER_VIDEO_LINKS, REVIEWED_OWNER_VIDEO_CARDS, validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
 import {parseCreatorUploads, creatorUploadsApi} from '../workers/quantaphi-site/creator-uploads.mjs';
 import {findSourceCard, isPublicSourceCard, validSourceCard} from '../source-quick-cards.mjs';
 import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
@@ -11,7 +11,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -141,6 +141,53 @@ test('LANDing Autism publisher has a standalone Public/Media full-channel Quick 
  assert.ok(ui.includes('youtube-nocookie.com/embed'));
 });
 
+test('Becki owner video opens its verified Autism Out Loud channel as a Public/Media Quick Card',()=>{
+ const channel=CREATOR_CHANNELS.find(c=>c.key==='autism-out-loud');
+ assert.ok(channel,'The requested publisher must be indexed');
+ assert.equal(channel.name,'Becki | Autism Out Loud Coach');
+ assert.equal(channel.channelId,'UC4ZlERGU2sUoBP_ssCagn5g');
+ assert.equal(channel.url,'https://www.youtube.com/@autismoutloudcoach');
+ assert.equal(channel.videosUrl,'https://www.youtube.com/@autismoutloudcoach/shorts');
+ assert.equal(channel.seed.length,6);
+ assert.equal(channel.seed[0].videoId,'L9x-4pLKG50');
+ assert.equal(channel.seed[0].title,'When My Autistic Daughter Has No Wet Wipes! 😂❤️');
+ assert.ok(channel.seed.every(v=>v.channelId===channel.channelId&&v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+ const card=findSourceCard('autism-out-loud-youtube');
+ assert.equal(card?.initialCreatorChannel,channel.key);
+ assert.equal(card?.featureUrl,channel.videosUrl);
+ assert.equal(card?.official,channel.url);
+ assert.equal(card?.youtubeMixedFeed,true);
+ assert.ok(isPublicSourceCard(card));
+ assert.ok(validSourceCard(card));
+ assert.equal(departmentFor(card),'media');
+ assert.equal(ALL_FEED_CARDS.filter(c=>c.id===card.id).length,1);
+});
+
+// Original public Atom response captured 2026-11-22. YouTube's root
+// yt:channelId omits UC, while its author and feed links use the full UC ID.
+const beckiFeed=()=>readFileSync(new URL('./fixtures/autism-out-loud-uploads.xml',import.meta.url),'utf8');
+test('actual YouTube upload feed remains readable when its channel field omits UC',async()=>{
+ const channelId='UC4ZlERGU2sUoBP_ssCagn5g',xml=beckiFeed();
+ const rows=parseCreatorUploads(xml,channelId);
+ assert.equal(rows.length,15);
+ assert.equal(rows[0].videoId,'iWXbl9-5O98');
+ assert.equal(rows[0].publishedAt,'2026-11-21T20:27:15+00:00');
+ assert.ok(rows.every(v=>v.channelId===channelId));
+ const response=await creatorUploadsApi(new Request('https://quantaphi.org/api/creator-uploads?channel='+channelId),async()=>new Response(xml));
+ assert.equal(response.status,200);
+ const body=await response.json();
+ assert.equal(body.complete,false);
+ assert.equal(body.videos.length,15);
+});
+
+test('an unrelated RSS channel is rejected even when a link contains the requested full channel ID',async()=>{
+ const expected='UC4ZlERGU2sUoBP_ssCagn5g';
+ const mismatched=beckiFeed().replaceAll('<yt:channelId>4ZlERGU2sUoBP_ssCagn5g</yt:channelId>','<yt:channelId>6ySmwN_K8fGGD2EKLQdEGA</yt:channelId>');
+ assert.deepEqual(parseCreatorUploads(mismatched,expected),[]);
+ const response=await creatorUploadsApi(new Request('https://quantaphi.org/api/creator-uploads?channel='+expected),async()=>new Response(mismatched));
+ assert.equal(response.status,502);
+ assert.equal((await response.json()).ok,false);
+});
 
 test('AGORA SOU MÃE verified publisher has one dedicated full-channel Public/Media Quick Card',()=>{
  const channel=CREATOR_CHANNELS.find(c=>c.key==='agorasoumae');
