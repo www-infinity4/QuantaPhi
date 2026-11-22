@@ -363,6 +363,14 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Progress (this video subset only):** 2/5 acceptance tracks source+test authored (estimated 40%); remaining focused/CI pass, guarded merge, and deployed live/Android acceptance. **Parent #1603 overall progress unchanged.**
 - **Session:** 1 scoped ChatGPT/GitHub connector session; lease_id `null` (no runtime lease claimed); **next action:** confirm focused exact-head test and CI status for PR, review and merge only if policy permits, then verify deployed source and Android playback.
 
+## Session — 2026-11-22 · owner video 4EUkH6CzTUA
+- **Owner source:** https://youtu.be/4EUkH6CzTUA?is=VCCENAcZb6tqCeY9; one owner-submitted Quick Card. Canonical issue #1603; draft PR #2086, branch `feat/youtube-owner-4eukh6cztua-1603-20261122`, based on main `417adee0708d0d4a3617385c909c3512770a4680`.
+- **Verified scope:** syntactically valid 11-character video ID and canonical original YouTube URL; no verified title, uploader/channel, published date, embedding permission, full archive, license or age claim. This is a general Oracle Public/Media original-source card; no YouTube media rehost, adverts, wallet credits or Star Coins paid.
+- **TDD proof:** first committed targeted test at `41eb56070c307310742197b737852d11aa1d8c64`; real GitHub Creator post Quick Cards run [45024106489](https://github.com/www-infinity4/QuantaPhi/actions/runs/45024106489), job `137213215287` failed the specific new regression with missing owner link `0 !== 1` at source line 201. Existing syntax verification passed. This is a confirmed behavioral RED before source.
+- **Source patch:** `422011e017971e33a473b18aa1c8d7ab448cf5a0` adds one validated source entry in existing `youtube-owner-video-links.mjs` mapped by existing Quick Card/player and View more feed; title explicitly unverified. No new renderer/provider.
+- **Progress estimate:** source intake, real test-first RED and source implementation achieved (3/7 gates); latest head CI, independent source review, GitHub guarded merge, Cloudflare/real browser and physical Android acceptance remain. One documented session, remaining session count unknown.
+- **Lease:** no signed Moltnook runner/owner lease was claimed by this GitHub connector; no other active lease was overwritten.
+- **Next executable action:** inspect PR #2086 exact-head Creator workflow and other CI, correct any failures, independently check URL/card boundaries, then merge only if allowed and verify actual deployment plus Android playback separately. Parent #1603 remains open.
 
 ## Session · owner video G2B1dFuhtfY · 2026-11-22
 
