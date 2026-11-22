@@ -1,0 +1,9 @@
+# Replace mesh.example.org with the DNS name of your verified owner host.
+# Caddy handles ACME HTTPS; the Node server ONLY binds loopback:8789.
+# No third-party tunnel or additional proxy is required.
+mesh.example.org {
+    encode zstd gzip
+    header X-Content-Type-Options "nosniff"
+    header Referrer-Policy "no-referrer"
+    reverse_proxy 127.0.0.1:8789
+}
