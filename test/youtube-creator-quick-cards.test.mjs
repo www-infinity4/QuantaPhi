@@ -145,3 +145,28 @@ test('owner batch View More loads actual additional videos from the saved catalo
  assert.match(mixed,/\/api\/creator-uploads/,'Must continue fetching recent uploads from known channels');
  assert.match(mixed,/Owner-submitted videos/,'Do not mislabel owner links as a verified channel');
 });
+
+test('owner LQXArAgVeqw YouTube link produces one honest Public/Media Quick Card',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='LQXArAgVeqw';
+ const sources=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+ assert.equal(sources.length,1,'One source record per owner-supplied video');
+ const video=sources[0];
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.title,'YouTube video LQXArAgVeqw (title unverified)');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(video));
+ assert.equal(validateOwnerYouTubeLink({...video,publisherVerified:true}),false);
+ const card=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+ assert.ok(card,'Source is indexed into a card');
+ assert.equal(card.featureUrl,video.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(isPublicSourceCard(card) && validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id),'Card appears in Oracle feed');
+ assert.equal(departmentFor(card),'media');
+});
