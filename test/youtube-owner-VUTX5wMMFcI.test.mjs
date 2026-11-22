@@ -1,0 +1,34 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+import {readFileSync} from 'node:fs';
+
+test('VUTX5wMMFcI owner YouTube URL becomes exactly one honest Public/Media Quick Card and View More entry',()=>{
+ const id='VUTX5wMMFcI', url='https://www.youtube.com/watch?v='+id;
+ const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(matches.length,1,'Owner video must have one source record, with no duplicates');
+ const row=matches[0];
+ assert.equal(row.sourceUrl,url);
+ assert.equal(row.title,'YouTube video VUTX5wMMFcI (title unverified)');
+ assert.equal(row.titleVerified,false);
+ assert.equal(row.observedAt,'2026-11-22');
+ assert.equal(row.publishedAt,null);
+ assert.equal(row.publisherVerified,false);
+ assert.equal(row.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(row),true);
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.featureUrl,url);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.equal(ALL_FEED_CARDS.filter(c=>c.id===card.id).length,1);
+ assert.equal(departmentFor(card),'media');
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/,'The existing in-card View More feed consumes owner links');
+ assert.match(mixed,/Load more videos/);
+});
