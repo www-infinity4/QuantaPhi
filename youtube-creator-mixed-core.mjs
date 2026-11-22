@@ -39,6 +39,12 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UCQU1zvNELO2AatGXMRQ2bSw','xDr8qOYR93M','Answering Questions I Really Don\'t Want To'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','rS_P180JLU8','Autism Life In Texas'),
    seed('UCQU1zvNELO2AatGXMRQ2bSw','4CjRqGBkjQY','New House Grocery Haul 2026 | WALMART GROCERIES')
+  ])}),
+ // Verified directly on the public video and channel pages on 2026-11-22.
+ // RSS supplies recent uploads; historical videos stay on the original channel.
+ Object.freeze({key:'agorasoumae',name:'AGORA SOU MÃE',channelId:'UCjht-pbc_924v1ovsKHZd9Q',
+  url:'https://www.youtube.com/@agorasoumae173',seed:Object.freeze([
+   seed('UCjht-pbc_924v1ovsKHZd9Q','XNXSduqwZ54','MAMÃES ASSISTAM ESTE VIDEO')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -112,4 +118,17 @@ export const LANDING_AUTISM_SOURCE=Object.freeze({
  focus:'Browse six source-identified public original videos, recent official YouTube RSS uploads and the publisher\'s complete public Videos tab. Playback starts only when tapped.',
  details:'Source-identified public YouTube video links, checked 2026-11-21. This is a partial indexed selection with keyless recent-upload refresh, not a complete historical video download or licensed rehost; YouTube owns playback restrictions.',
  youtubeMixedFeed:true,initialCreatorChannel:'landing'
+});
+
+
+/* Dedicated publisher channel viewer. The official channel Videos tab hosts
+ * the full catalog; our keyless RSS endpoint only fetches recent uploads. */
+export const AGORA_SOU_MAE_SOURCE=Object.freeze({
+ id:'agora-sou-mae-youtube',name:'AGORA SOU MÃE · Full Channel',
+ kind:'Video · YouTube',feature:'Browse recent public uploads and the full original channel',
+ featureUrl:'https://www.youtube.com/@agorasoumae173/videos',
+ official:'https://www.youtube.com/@agorasoumae173',
+ focus:'Browse a source-identified original YouTube video and recent public uploads, with search, pagination and tap-to-play in card. Open the publisher channel for the complete historical catalog.',
+ details:'Official publisher and UC channel ID verified on 2026-11-22. The keyless public RSS feed loads only recent uploads, not every historic video, Short or Community post. No media downloads, paid API, affiliation, advertising or licensed rehosting are claimed.',
+ youtubeMixedFeed:true,initialCreatorChannel:'agorasoumae'
 });
