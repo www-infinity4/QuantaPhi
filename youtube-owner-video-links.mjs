@@ -216,6 +216,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'lx2C0wK2pak',title:'YouTube video lx2C0wK2pak (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=lx2C0wK2pak',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
