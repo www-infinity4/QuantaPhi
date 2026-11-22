@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {findSourceCard,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner video -264Pp4Q5tM has one unverified-source Oracle Public/Media Quick Card',()=>{
+ const id='-264Pp4Q5tM';
+ const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(matches.length,1,'owner-submitted video appears exactly once');
+ const v=matches[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(card=>card.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'existing card renderer generates a single card');
+ const c=cards[0];
+ assert.equal(c.featureUrl,v.sourceUrl);
+ assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(c.details,/not independently verified/i);
+ assert.equal(findSourceCard(c.id)?.id,c.id);
+ assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
+ assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
+ assert.equal(departmentFor(c),'media');
+});
