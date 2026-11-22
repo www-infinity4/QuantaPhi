@@ -57,7 +57,7 @@ test('main Bubbles gate resumes Android OAuth after same-window navigation',()=>
  assert.match(source,/Finishing sign-in/);
 });
 
-function mountedGate(t,payload,{startFails=false,walletMissing=false,walletServiceDown=false,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,cloudflareRecovery=false,chat=false,failOnSecondSession=false}={}){
+function mountedGate(t,payload,{startFails=false,walletMissing=false,walletServiceDown=false,sessionError=null,oauthReturn=null,oauthProvider='cloudflare',googleRecovery=false,cloudflareRecovery=false,chat=false,failOnSecondSession=false}={}){
  const ids=chat?['chatBubblesSigninGate','chatBubblesSigninStatus','chatBubblesGithubSignIn',
   'chatBubblesCloudflareSignIn','chatBubblesGithubStatus','chatBubblesCloudflareStatus',
   'chatBubblesGithubCard','chatBubblesCloudflareCard','chatBubblesRetrySignInCheck',
@@ -82,6 +82,7 @@ function mountedGate(t,payload,{startFails=false,walletMissing=false,walletServi
   if(path==='/session'){
    sessionReads++;
    if(walletServiceDown)return Response.json({ok:false,error:'wallet_validation_unavailable'},{status:503});
+   if(sessionError)return Response.json({ok:false,error:sessionError},{status:503});
    if(failOnSecondSession&&sessionReads===2)throw Error('temporary_offline');
    return Response.json({ok:true,walletVerified:payload?.walletVerified===true});
   }
@@ -118,6 +119,18 @@ const partialGate=()=>({ok:true,walletVerified:true,ready:false,providers:{
  cloudflare:{configured:true,connected:false,permissionsApproved:false,scopeSetupRequired:true,
   authorizationActions:['account.read','projects.build','ledger.read']}
 }});
+
+test('D1 service errors do not falsely instruct a new Cloudflare login or reveal a recovery prompt',async t=>{
+ const ui=mountedGate(t,partialGate(),{sessionError:'d1_read_limit_exceeded'});
+ await new Promise(setImmediate);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.match(ui.get('bubblesSigninStatus').textContent,/account.*unavailable|could not check/i);
+ assert.doesNotMatch(ui.get('bubblesSigninStatus').textContent,/tap sign in|sign in with Cloudflare|start a new sign-in/i);
+ assert.equal(ui.get('bubblesRecoverWallet').hidden,true);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true,'Outage must not promote an unnecessary new OAuth action');
+ assert.equal(ui.get('bubblesGithubSignIn').hidden,true,'Outage must not suggest reconnecting GitHub either');
+ assert.equal(ui.calls.some(call=>call.path==='/start'),false);
+});
 
 test('wallet service outages do not instruct a signed-in visitor to start new StarQuest or Cloudflare authorization',async t=>{
  const ui=mountedGate(t,partialGate(),{walletServiceDown:true});
