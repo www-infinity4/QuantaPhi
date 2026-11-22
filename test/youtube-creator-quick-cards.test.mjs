@@ -370,3 +370,6 @@ test('owner-submitted uvqqCjk_aXs has exactly one public media Quick Card with u
  assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
  assert.equal(departmentFor(card),'media');
 });
+
+// Keep the owner-specific source and review-ledger regression in the Creator workflow.
+import './youtube-owner-WKIVlHQRXF4.test.mjs';
