@@ -28,8 +28,13 @@ if(area){
  const form=make('form');form.id='livePitch';
  const title=make('input');title.name='title';title.type='text';title.placeholder='Your project name';title.minLength=5;title.maxLength=110;title.required=true;title.setAttribute('aria-label','Live project title');
  const description=make('textarea');description.name='description';description.placeholder='What should the group build together?';description.minLength=12;description.maxLength=1800;description.rows=3;description.required=true;description.setAttribute('aria-label','Live project description');
+ const shareWrap=make('label');
+ const sharePerspective=document.createElement('input');
+ sharePerspective.type='checkbox';sharePerspective.checked=false;sharePerspective.id='coliseumShareToBubbles';
+ shareWrap.append(sharePerspective,make('span',
+  'Allow Bubbles to consider this published idea for improvement suggestions (optional; you can withdraw)'));
  const publish=make('button','Publish idea to this beta room');publish.type='submit';publish.className='primary';
- form.append(title,description,publish);board.append(form);
+ form.append(title,description,shareWrap,publish);board.append(form);
  const projects=make('div');projects.id='liveIdeas';
  board.append(make('h3','Shared projects'),projects);
  const chat=make('section');chat.append(make('h3','Room conversation'));
@@ -108,6 +113,17 @@ if(area){
      await loadBoard();
     }));acts.append(b);
    }
+   if(i.mine===true){
+    const share=make('button',i.perspectiveShared?'Withdraw from Bubbles suggestions':'Allow Bubbles to consider this published idea','secondary');
+    share.type='button';share.setAttribute('aria-label',share.textContent);
+    share.addEventListener('click',()=>void task(async()=>{
+     const accepted=await call('/v1/perspectives/choice',{method:'POST',
+      body:JSON.stringify({ideaId:i.id,share:!i.perspectiveShared,purpose:'bubbles-advisory-v1'})});
+     state(accepted.shared?'This one published idea may now inform Bubbles advisory suggestions.':
+      'Idea withdrawn from future Bubbles advisory suggestions. Original published idea stays in room.');
+     await loadBoard();
+    }));acts.append(share);
+   }
    const fork=make('button','Branch idea','secondary');fork.type='button';fork.addEventListener('click',()=>void task(async()=>{
     await call('/v1/branch',{method:'POST',body:JSON.stringify({ideaId:i.id})});
     state('New project branch published under your membership.');await loadBoard();
@@ -135,8 +151,19 @@ if(area){
  sector.addEventListener('change',()=>{if(joined)void task(loadBoard)});
  refreshRoom.addEventListener('click',()=>{if(joined)void task(loadBoard)});
  form.addEventListener('submit',e=>{e.preventDefault();if(!joined)return;void task(async()=>{
-  await call('/v1/ideas',{method:'POST',body:JSON.stringify({modelId,sector:sector.value,title:title.value,description:description.value})});
-  form.reset();state('Idea published to your verified group.');await loadBoard();
+  const agreed=sharePerspective.checked;
+  const posted=await call('/v1/ideas',{method:'POST',body:JSON.stringify({modelId,sector:sector.value,title:title.value,description:description.value})});
+  form.reset();
+  if(agreed&&posted.id){
+   try{
+    await call('/v1/perspectives/choice',{method:'POST',
+     body:JSON.stringify({ideaId:posted.id,share:true,purpose:'bubbles-advisory-v1'})});
+    state('Idea published and this idea opted into Bubbles advisory suggestions; you can withdraw it from your posted ideas.');
+   }catch{
+    state('Idea published; optional Bubbles reuse was NOT confirmed. You can choose it again from your posted ideas.');
+   }
+  }else state('Idea published privately to your verified room. No Bubbles advisory reuse permission granted.');
+  await loadBoard();
  })});
  chatForm.addEventListener('submit',e=>{e.preventDefault();if(!joined)return;void task(async()=>{
   await call('/v1/messages',{method:'POST',body:JSON.stringify({modelId,sector:sector.value,text:chatText.value})});
