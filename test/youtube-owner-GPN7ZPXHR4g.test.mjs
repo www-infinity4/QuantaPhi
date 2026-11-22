@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {ACTIVE_SOURCE_CARDS,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner GPN7ZPXHR4g link maps to one honest Oracle Public/Media card and View More feed item',()=>{
+ const id='GPN7ZPXHR4g';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'Exactly one source entry per owner-submitted video');
+ const video=rows[0];
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(video));
+ assert.equal(validateOwnerYouTubeLink({...video,publisherVerified:true}),false);
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'Use existing source-card/player path');
+ const card=cards[0];
+ assert.equal(card.featureUrl,video.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ACTIVE_SOURCE_CARDS.some(c=>c.id===card.id));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
