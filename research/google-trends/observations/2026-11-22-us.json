@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T03:01:30.034983Z",
+  "checked_at": "2026-11-22T03:31:18.484604Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hawaii vs nevada",
+      "query": "jaden mcdaniels",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T02:40:00Z",
+      "published_at": "2026-11-22T03:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-hawaii-vs-nevada-live-023000007.html",
-        "https://www.staradvertiser.com/2026/11/21/sports/uh-football-to-battle-low-30-degree-temperature-in-nevada/",
-        "https://nevadasportsnet.com/news/reporters/nevada-football-versus-hawaii-three-keys-to-victory-and-a-prediction"
+        "https://ripcityproject.com/toumani-camara-becoming-blazers-jaden-mcdaniels-under-micah-nori",
+        "https://www.denverpost.com/2026/11/20/nuggets-defense-scheme-jokic-murray/",
+        "https://sports.yahoo.com/articles/nuggets-defensive-makeover-might-warrant-200003823.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZPn5u1ZZTAE6mBikSVpSSaRMfP-hQy4QUty_q0ImSSUOFJuzSUBY6wOuT8zs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-hawaii-vs-nevada-live-023000007.html",
-          "title": "How to watch Hawaii vs Nevada: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZPn5u1ZZTAE6mBikSVpSSaRMfP-hQy4QUty_q0ImSSUOFJuzSUBY6wOuT8zs"
-        },
-        {
-          "url": "https://www.staradvertiser.com/2026/11/21/sports/uh-football-to-battle-low-30-degree-temperature-in-nevada/",
-          "title": "UH football to battle low 30-degree temperature in Nevada",
-          "publisher": "Honolulu Star-Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTpwPoIKW-qOiqIE8SYYhqJS9ehPKvmV-PjF7E4GCtyb1HD5PApo_3RKEbwgk"
-        },
-        {
-          "url": "https://nevadasportsnet.com/news/reporters/nevada-football-versus-hawaii-three-keys-to-victory-and-a-prediction",
-          "title": "Nevada football versus Hawaii: Three keys to victory and a prediction",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmP2U27l4BVGbv2o78sAvWS2auztZlqGqA5jnD_cA0GgJkQRz6rDbzbxtKFc0"
-        }
-      ]
-    },
-    {
-      "query": "donovan clingan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T02:40:00Z",
-      "related_news_urls": [
-        "https://ripcityproject.com/donovan-clingan-25-under-25-snub-undersells-anchoring-blazers",
-        "https://www.fantasypros.com/nba/news/619977/donovan-clingan-posts-11-rebounds-win.php",
-        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-donovan-clingan-records-double-double-in-win/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXzo4sbvUfbNtQvxBHHaHvcsE7sGhFu90ccMnou6cPkgVU82wZDesGhcXkbpU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS00Hp6I0rhycs8fDPdIge697rRbncRvryowyVcyUbY-KQH-CKosVz0JNOT3c4",
       "image_credit": "Rip City Project",
       "news": [
         {
-          "url": "https://ripcityproject.com/donovan-clingan-25-under-25-snub-undersells-anchoring-blazers",
-          "title": "Donovan Clingan’s 25-under-25 snub undersells how much he’s anchoring Blazers",
+          "url": "https://ripcityproject.com/toumani-camara-becoming-blazers-jaden-mcdaniels-under-micah-nori",
+          "title": "Toumani Camara is becoming the Blazers’ Jaden McDaniels under Micah Nori",
           "publisher": "Rip City Project",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXzo4sbvUfbNtQvxBHHaHvcsE7sGhFu90ccMnou6cPkgVU82wZDesGhcXkbpU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS00Hp6I0rhycs8fDPdIge697rRbncRvryowyVcyUbY-KQH-CKosVz0JNOT3c4"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/619977/donovan-clingan-posts-11-rebounds-win.php",
-          "title": "Donovan Clingan posts 11 rebounds in win",
-          "publisher": "FantasyPros",
+          "url": "https://www.denverpost.com/2026/11/20/nuggets-defense-scheme-jokic-murray/",
+          "title": "Nuggets’ defense is keeping them afloat amid clunky start to season. Seriously.",
+          "publisher": "The Denver Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYYMba8GDj4K_xZusC2xgsYl3j71_gdF4NtEcR9eSdsXcMzh4mTfpDAEnDqsw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRDMdLTk5-di-yt8saWxao-0UaKRQzCK6z78dfpf4OjtTP-Kh-mlO4YCAedUA"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-donovan-clingan-records-double-double-in-win/",
-          "title": "Trail Blazers' Donovan Clingan: Records double-double in win",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU"
-        }
-      ]
-    },
-    {
-      "query": "wemby",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T02:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50538594/spurs-victor-wembanyama-shunk-done-due-blister",
-        "https://sports.yahoo.com/articles/avoid-ll-avoid-7-foot-115000084.html",
-        "https://www.nba.com/news/innovation-by-injury-finger-blister-forces-victor-wembanyama-into-debuting-the-shunk"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGtqv_Q6TPKa5udUG6y8EgtjNxVvXZ_M8l8dM0meRbnTFvOVEqouGVgctjxr8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50538594/spurs-victor-wembanyama-shunk-done-due-blister",
-          "title": "Spurs' Victor Wembanyama says new-look 'shunk' done because of blister on hand",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGtqv_Q6TPKa5udUG6y8EgtjNxVvXZ_M8l8dM0meRbnTFvOVEqouGVgctjxr8"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/avoid-ll-avoid-7-foot-115000084.html",
-          "title": "“If I Can Avoid It, I’ll Avoid It”: 7-Foot-4 Victor Wembanyama Reveals Why He Could Be Done With Dunking",
+          "url": "https://sports.yahoo.com/articles/nuggets-defensive-makeover-might-warrant-200003823.html",
+          "title": "Nuggets' defensive makeover might warrant a thank-you card to Jaden McDaniels",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1zPXM2-BQ_vGsMMcL68fsjjDCdL6whsMwcQYU27trA012l8Z67bos7CA77n8"
-        },
-        {
-          "url": "https://www.nba.com/news/innovation-by-injury-finger-blister-forces-victor-wembanyama-into-debuting-the-shunk",
-          "title": "Innovation by injury: Finger blister forces Victor Wembanyama into debuting the 'shunk'",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3QPolIJIzGWXjDHT3YLOn5o0tHZgyoVQFzuYGl5OdWnAITE6a_kb2JjIkmSI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnhoT9S3sW8BW45u9vdgaNEj9BdBdY5693V41K_xJK2n1VeK16XFuyRqEtuyg"
         }
       ]
     },
     {
-      "query": "u of u football",
+      "query": "quinn hughes",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T02:40:00Z",
+      "published_at": "2026-11-22T03:10:00Z",
       "related_news_urls": [
-        "https://utahutes.com/news/2026/11/19/utah-football-season-ticket-renewal-period-opens-today",
-        "https://sports.yahoo.com/articles/utah-vs-tcu-prediction-pick-112200269.html",
-        "https://www.foxnews.com/outkick-betting/utah-vs-tcu-prediction-odds-best-bets-utah-faces-big-time-trap-spot"
+        "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+        "https://www.nytimes.com/athletic/7800922/2026/11/21/quinn-hughes-injury-wild-road-trip/",
+        "https://www.startribune.com/quinn-hughes-injury-update-minnesota-wild-vancouver-canucks-score-today-kirill-kaprizov-stats-points/601921253"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHbHKIuaPnzgjLHslUW_KNQEtgSxPpvpApLIlawrtZ1vjDlEU7mSrybtQqpSE",
-      "image_credit": "University of Utah Athletics",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://utahutes.com/news/2026/11/19/utah-football-season-ticket-renewal-period-opens-today",
-          "title": "Utah Football Season Ticket Renewal Period Opens Today",
-          "publisher": "University of Utah Athletics",
+          "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+          "title": "Hughes to miss remainder of Wild road trip with injury",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHbHKIuaPnzgjLHslUW_KNQEtgSxPpvpApLIlawrtZ1vjDlEU7mSrybtQqpSE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY"
         },
         {
-          "url": "https://sports.yahoo.com/articles/utah-vs-tcu-prediction-pick-112200269.html",
-          "title": "Utah vs TCU Prediction, Pick, College Football Odds for Saturday, Nov. 21",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7800922/2026/11/21/quinn-hughes-injury-wild-road-trip/",
+          "title": "Quinn Hughes out for rest of Wild road trip with undisclosed injury",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6mVj9e_6g1WfBFcGRFptswTJEMniCrrEQG-IGNVlfPPyPL_H05vgjeLiqGRE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROBBFchVMFdDokayFSD1GNftk-AyeNXjzjKZMeYsnEIwtSF3ZcQmpy8M94Ljs"
         },
         {
-          "url": "https://www.foxnews.com/outkick-betting/utah-vs-tcu-prediction-odds-best-bets-utah-faces-big-time-trap-spot",
-          "title": "Utah vs TCU prediction, odds and best bets: Utah faces a big time trap spot",
+          "url": "https://www.startribune.com/quinn-hughes-injury-update-minnesota-wild-vancouver-canucks-score-today-kirill-kaprizov-stats-points/601921253",
+          "title": "Live: Wild are looking for sixth straight win as they face Canucks without Quinn Hughes",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaWJ_tiSy0Zcwep2JgnZHP0vX9JjJGO3GlZi_RBZMxB4cqOmQ36nZh8JDeukU"
+        }
+      ]
+    },
+    {
+      "query": "fossil",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T03:10:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
+        "https://thehill.com/homenews/ap/ap-international/ap-un-climate-talk-negotiators-go-into-second-day-of-overtime-while-at-odds-over-fossil-fuels/",
+        "https://www.bbc.com/news/articles/c6ly5w40eg07o"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgvdAFuhhrphN1wPJvKMNlxS0lEaEJ2QBK01gi2FReaM9uX7RjQGkd5OndkY",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/environment/2026/nov/21/climate-talks-stall-countries-mull-showdown-saudi-arabia-over-fossil-fuels",
+          "title": "Climate talks stall as countries mull showdown with Saudi Arabia over fossil fuel phaseout | Cop31",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOgvdAFuhhrphN1wPJvKMNlxS0lEaEJ2QBK01gi2FReaM9uX7RjQGkd5OndkY"
+        },
+        {
+          "url": "https://thehill.com/homenews/ap/ap-international/ap-un-climate-talk-negotiators-go-into-second-day-of-overtime-while-at-odds-over-fossil-fuels/",
+          "title": "UN climate talk negotiators go into second day of overtime while at odds over fossil fuels",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCtW5N2VT7IhpP6_PO0IxZ2stGuIKqhf_yHTfV6vkNqMUHcQ6LAsrXD8XmDH0"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/c6ly5w40eg07o",
+          "title": "Fight over fossil fuels leaves COP31 climate talks in deadlock",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjtqgKaObAFen5ZWkSC9WvOQwGyZWjS5yzGC37x7pwrjFAq8-tNrgD8InFKJg"
+        }
+      ]
+    },
+    {
+      "query": "michael irvin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T03:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/cowboys-great-michael-irvin-outlines-franchises-timeline-retain-americas-team-status",
+        "https://dallassportsjournal.com/michael-irvin-cowboys-offense-defense-30-points/",
+        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-legend-blasts-christian-parker-brutal-coaching-mismatch"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9gEUyoe-aZ5ez1qUlcQWlOIMsjzOj_ACoTLp1fAzQtEWKcQW0IUTmfzoZKSM",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/cowboys-great-michael-irvin-outlines-franchises-timeline-retain-americas-team-status",
+          "title": "Cowboys great Michael Irvin outlines franchise's timeline to retain 'America’s Team' status",
           "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1i9paMjcBN0LUXg5pZ4eWt1NIjdWHGEqMn_SARZ6chvRuGe5p9NGfZ4qQ770"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9gEUyoe-aZ5ez1qUlcQWlOIMsjzOj_ACoTLp1fAzQtEWKcQW0IUTmfzoZKSM"
+        },
+        {
+          "url": "https://dallassportsjournal.com/michael-irvin-cowboys-offense-defense-30-points/",
+          "title": "‘I Wanted 30 A Game’: Michael Irvin Questions Dallas Cowboys’ Inconsistent Offense And Struggling Defense",
+          "publisher": "Dallas Hoops Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlNyPe35IWb-XOOOLpcyO-OgGQOKPn1BBzwGHU0bjaw17xoZuZnizwI8EnlcU"
+        },
+        {
+          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-legend-blasts-christian-parker-brutal-coaching-mismatch",
+          "title": "Dallas Cowboys Legend Blasts Christian Parker After Brutal Coaching Mismatch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_XHwDs5wtw4FroEA8lqN9TyfTQIXfiZVjW2AZP2PpOoQJplZn4xRz4dzoCok"
         }
       ]
     },
     {
-      "query": "toronto maple leafs",
+      "query": "chris evans",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T02:40:00Z",
+      "published_at": "2026-11-22T03:00:00Z",
       "related_news_urls": [
-        "https://www.tsn.ca/nhl/article/thought-youd-at-least-maybe-hear-something-lorentz-on-not-receiving-call-from-new-leafs-regime/",
-        "https://sports.yahoo.com/articles/ex-maple-leafs-forward-rips-225655793.html",
-        "https://mapleleafshotstove.com/2026/11/21/steven-lorentz-discusses-final-months-as-a-leaf-returning-to-toronto/"
+        "https://cosmicbook.news/chris-evans-steve-rogers",
+        "https://comicbook.com/movies/news/avengers-doomsdays-steve-rogers-reveal-means-an-avengers-endgame-retcon/",
+        "https://www.yahoo.com/entertainment/articles/chris-evans-explains-why-turned-210206112.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnmLeODOLoiN_YhbArYDTNjC5oy9bmFvlWHUYFOt8mXdhFIcwKOLE-nJci1g",
-      "image_credit": "TSN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnZwF6Qx0onP7OQKtmfUi7SCE2RW6EGmVv7FTvu7lO-hXz_WkugJeMS7yI_3I",
+      "image_credit": "Cosmic Book News",
       "news": [
         {
-          "url": "https://www.tsn.ca/nhl/article/thought-youd-at-least-maybe-hear-something-lorentz-on-not-receiving-call-from-new-leafs-regime/",
-          "title": "‘Thought you’d at least maybe hear something’: Lorentz on not receiving call from new Leafs regime",
-          "publisher": "TSN",
+          "url": "https://cosmicbook.news/chris-evans-steve-rogers",
+          "title": "Chris Evans Doesn’t Want To Be Called Captain America Anymore",
+          "publisher": "Cosmic Book News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTnmLeODOLoiN_YhbArYDTNjC5oy9bmFvlWHUYFOt8mXdhFIcwKOLE-nJci1g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnZwF6Qx0onP7OQKtmfUi7SCE2RW6EGmVv7FTvu7lO-hXz_WkugJeMS7yI_3I"
         },
         {
-          "url": "https://sports.yahoo.com/articles/ex-maple-leafs-forward-rips-225655793.html",
-          "title": "Ex-Maple Leafs Forward Rips John Chayka Ahead of Toronto Return",
-          "publisher": "Yahoo Sports",
+          "url": "https://comicbook.com/movies/news/avengers-doomsdays-steve-rogers-reveal-means-an-avengers-endgame-retcon/",
+          "title": "Avengers: Doomsday’s Steve Rogers Reveal Means an Avengers: Endgame Retcon",
+          "publisher": "ComicBook.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ51f7iNyNr02Q7Y2LfWJLB-2BDQs_wvf9dDjpmYdSVYNfwK8vSFH4gf9x-sCs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFYKpRRPcqtaUlztntsVvsHJwxPtairLw-JWQY7gS__wEnNJLGAnyXjbvVG6A"
         },
         {
-          "url": "https://mapleleafshotstove.com/2026/11/21/steven-lorentz-discusses-final-months-as-a-leaf-returning-to-toronto/",
-          "title": "Steven Lorentz on not hearing from Leafs management over the summer: “I understand it's business, but… I thought you’d at least maybe hear something”",
-          "publisher": "Maple Leaf Hot Stove",
+          "url": "https://www.yahoo.com/entertainment/articles/chris-evans-explains-why-turned-210206112.html",
+          "title": "Chris Evans Explains Why He Turned Down a ‘Dozen’ MCU Return Pitches Before Avengers: Doomsday",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRyPA4gEkuVYZBAoj875qtIdOmEykgN72XeGE5J13lxiMz4YkOsRdakpl-vNI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShlRH3EycXc2ZeV4bdV7VX6Ssr6RP1aTeC4gUbfrjPDK_IHOe4QzxBDffm-m8"
         }
       ]
     },
     {
-      "query": "utah state vs oregon state",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T02:30:00Z",
+      "query": "knicks standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T03:00:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-utah-state-aggies-preview-who-wins-in-the-trenches-could-be-the-difference.html",
-        "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/21/oregon-state-beaver-football-utah-state-aggies-updates-score-tv-channel-streaming-schedule/92882444007/",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/utah-state-aggies-vs-oregon-state-beavers-prediction-odds-2026-11-21/"
+        "https://www.nba.com/news/emirates-nba-cup-live-updates-november-20",
+        "https://www.nytimes.com/athletic/7792472/2026/11/20/nba-cup-standings-update-magic-nets-knicks/",
+        "https://sports.yahoo.com/articles/nba-cup-scores-standings-scenarios-175145886.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUB4oE00vXpKR12aLWSA-o6gtmcz99lMaR9_i2yK1V2a6nJBLaYsHpsghJeM",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/beavers/2026/11/oregon-state-beavers-vs-utah-state-aggies-preview-who-wins-in-the-trenches-could-be-the-difference.html",
-          "title": "Oregon State Beavers vs. Utah State Aggies preview: Who wins in the trenches could be the difference",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCUB4oE00vXpKR12aLWSA-o6gtmcz99lMaR9_i2yK1V2a6nJBLaYsHpsghJeM"
-        },
-        {
-          "url": "https://www.statesmanjournal.com/story/sports/college/oregon-state/2026/11/21/oregon-state-beaver-football-utah-state-aggies-updates-score-tv-channel-streaming-schedule/92882444007/",
-          "title": "Oregon State football vs. Utah State updates, score, TV, streaming",
-          "publisher": "Statesman Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-I0R-HF5NzDBArvILJut88ot73aQd7rI676HcEODvH0gsakQvq5s7Jnn-nec"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/utah-state-aggies-vs-oregon-state-beavers-prediction-odds-2026-11-21/",
-          "title": "Utah State vs Oregon State Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
-        }
-      ]
-    },
-    {
-      "query": "product recall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T02:30:00Z",
-      "related_news_urls": [
-        "https://www.foxbusiness.com/lifestyle/over-51000-units-kids-adult-toothpaste-mouthwash-recalled-nationwide-over-hormone-contamination",
-        "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/20/toothpaste-mouthwash-recalled-orl-labs/92875373007/",
-        "https://cwibc.co.id/en/fda-orl-oral-care-recall"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZDvhrVYB0cLrgW2ZjRjFduNSgEiZP19dLDCWIGCUfXaVri14lYNgF1ND0Um4",
-      "image_credit": "Fox Business",
-      "news": [
-        {
-          "url": "https://www.foxbusiness.com/lifestyle/over-51000-units-kids-adult-toothpaste-mouthwash-recalled-nationwide-over-hormone-contamination",
-          "title": "Over 51,000 units of kids' and adult toothpaste, mouthwash recalled nationwide over hormone contamination",
-          "publisher": "Fox Business",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZDvhrVYB0cLrgW2ZjRjFduNSgEiZP19dLDCWIGCUfXaVri14lYNgF1ND0Um4"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/consumer-protection/recalls-alerts/2026/11/20/toothpaste-mouthwash-recalled-orl-labs/92875373007/",
-          "title": "Over 51K toothpaste, mouthwash products recalled. See the list",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReUHq__BGFbcvtda4COLFCLwzQBF1-9Iqq5OHwN9SPQD9j9fYatuTjXUZ4QNQ"
-        },
-        {
-          "url": "https://cwibc.co.id/en/fda-orl-oral-care-recall",
-          "title": "FDA Recalls ORL Oral Care Products Over Hormone Contamination",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTs_QZIZkUktex4np2wQCTIeW5AZM9lvU8xxAzp9rlvveXDH8B8ZAZvDfS_-aU"
-        }
-      ]
-    },
-    {
-      "query": "josh hart",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/josh-hart-toughest-battle-is-mental",
-        "https://www.cbssports.com/nba/news/knicks-struggles-josh-hart-championship-hangover/",
-        "https://www.hoopsrumors.com/2026/11/atlantic-notes-hart-raptors-injuries-traore-queta.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZMaAaE96eVllwz2_axLSOSS3mrgIRoOWyoNc3YmJFCrbEHCzsdOncpyr2lY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7kkSnIc8tYC4I-N1wb9vz0tNxqbwIHYVuM9_JSFcju0CSWHHogp0eqPrBbCo",
       "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nba.com/news/josh-hart-toughest-battle-is-mental",
-          "title": "The Athletic: Josh Hart’s toughest battle is mental",
+          "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-november-20",
+          "title": "Top moments from Friday's Emirates NBA Cup",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwZMaAaE96eVllwz2_axLSOSS3mrgIRoOWyoNc3YmJFCrbEHCzsdOncpyr2lY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7kkSnIc8tYC4I-N1wb9vz0tNxqbwIHYVuM9_JSFcju0CSWHHogp0eqPrBbCo"
         },
         {
-          "url": "https://www.cbssports.com/nba/news/knicks-struggles-josh-hart-championship-hangover/",
-          "title": "Championship hangover? Josh Hart 'not in a good headspace' as he, other Knicks struggle amid uneven start",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/atlantic-notes-hart-raptors-injuries-traore-queta.html",
-          "title": "Atlantic Notes: Hart, Raptors, Traore, Queta",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7DzU_RT-sIjge9dn4ygfPQhVu6oFWwbvxjscKFOnRUBM85wBMNVh9IwYcc04"
-        }
-      ]
-    },
-    {
-      "query": "emergency operations center",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html",
-        "https://www.wqad.com/article/news/national/military-news/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
-        "https://www.cnn.com/2026/11/20/us/iowa-lead-azide-army-detonation"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmYzWu-lgSL5VzF2TjrTBBMOWnm152NrStpBLxYIgz8xrg-ush_ULlRVYES1A",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html",
-          "title": "The Army Rejected a Cleaner Option to Destroy Lead-Laced Explosives in Iowa",
+          "url": "https://www.nytimes.com/athletic/7792472/2026/11/20/nba-cup-standings-update-magic-nets-knicks/",
+          "title": "Knicks’ NBA Cup chances could take a major hit Friday night",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmYzWu-lgSL5VzF2TjrTBBMOWnm152NrStpBLxYIgz8xrg-ush_ULlRVYES1A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL9s_HuCctyj6bEQdJM5AKLK6J6XUtAV4bRebnIM55BWuKt0jIA9txGE1GmEQ"
         },
         {
-          "url": "https://www.wqad.com/article/news/national/military-news/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
-          "title": "Noon Sunday deadline set in Iowa Army blast challenge; Fort Madison says detonation could come Monday or Tuesday",
-          "publisher": "WQAD",
+          "url": "https://sports.yahoo.com/articles/nba-cup-scores-standings-scenarios-175145886.html",
+          "title": "NBA Cup scores, standings, and scenarios: Who can clinch and who's nearly toast?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_RdQwK8ACWSBwmR5cC1q5OqTnNI7zMSKpwrzbqe0IZmVXklhZr-wXjZkr238"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/20/us/iowa-lead-azide-army-detonation",
-          "title": "Judge halts Army’s plan to detonate 5 tons of bomb-making material as Iowa residents worry about lead exposure",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcL6cVss9R9-eXQ6eign_afKX5sSfEy5Sjojy7utemfFXI3p7syS7_kD4oOpY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeuMLVHpuY_ox4kTGZr7asYOS46uCdJe1WmNe46398FO55DpkYlafh-jaU6_g"
         }
       ]
     },
     {
-      "query": "carlos salcedo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T02:30:00Z",
+      "query": "goldie hawn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T03:00:00Z",
       "related_news_urls": [
-        "https://www.marca.com/mx/futbol/liga-mx/2026/11/22/titan-carlos-salcedo-expulsar-pone-almeyda-rayados-pared.html",
-        "https://www.365scores.com/es/news/carlos-salcedo-es-expulsado-vs-pumas/"
+        "https://extratv.com/2026/11/19/goldie-hawn-on-new-book-30th-anniversary-of-first-wives-club-and-81st-birthday-exclusive/",
+        "https://www.instyle.com/goldie-hawn-reveals-best-birthday-gift-from-kurt-russell-12262500",
+        "https://people.com/goldie-hawn-has-no-idea-what-kurt-russell-will-get-for-her-birthday-exclusive-12258169"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGihzQbmxs8AHOL_h7wEkYUlbtkPb78MkFe83sKV4bDqiKPaQRd2U91unlHjU",
-      "image_credit": "MARCA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74-U_f7cgqU0kVqjyBUeVSb_9mxDa3kttrsB1JuJDIX1ymqtYdM1eagRfqjo",
+      "image_credit": "Extra",
       "news": [
         {
-          "url": "https://www.marca.com/mx/futbol/liga-mx/2026/11/22/titan-carlos-salcedo-expulsar-pone-almeyda-rayados-pared.html",
-          "title": "El 'Titán' Carlos Salcedo se hace expulsar y pone a sufrir a Almeyda y Rayados",
-          "publisher": "MARCA",
+          "url": "https://extratv.com/2026/11/19/goldie-hawn-on-new-book-30th-anniversary-of-first-wives-club-and-81st-birthday-exclusive/",
+          "title": "Goldie Hawn on New Book, 81st Birthday & 30th Anniversary of ‘First Wives Club' (Exclusive)",
+          "publisher": "Extra",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGihzQbmxs8AHOL_h7wEkYUlbtkPb78MkFe83sKV4bDqiKPaQRd2U91unlHjU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74-U_f7cgqU0kVqjyBUeVSb_9mxDa3kttrsB1JuJDIX1ymqtYdM1eagRfqjo"
         },
         {
-          "url": "https://www.365scores.com/es/news/carlos-salcedo-es-expulsado-vs-pumas/",
-          "title": "Carlos Salcedo expulsado vs Pumas por doble amarilla",
-          "publisher": "365Scores",
+          "url": "https://www.instyle.com/goldie-hawn-reveals-best-birthday-gift-from-kurt-russell-12262500",
+          "title": "Goldie Hawn, 80, Reveals the Best Birthday Gift Kurt Russell, 75, Has Ever Given Her—and It Involves a Family Member",
+          "publisher": "InStyle",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI1qaaHY5S4Prxixx_sr1z8XHLC_BXUh-gLY-M7rxrciwRsWuyyxQrp8dvDWo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGE0ISNRRYJDU74Wcocu58DZvbVHiiADh8gOZiaveGW-k2Ex3P0wWKu8hVHvA"
+        },
+        {
+          "url": "https://people.com/goldie-hawn-has-no-idea-what-kurt-russell-will-get-for-her-birthday-exclusive-12258169",
+          "title": "Goldie Hawn Has ‘No Idea’ What Kurt Russell Will Get for Her Birthday (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9OZgcvF7dzhzOjbhjp2iD_1v9c3G5wnbHZ6_NUop1qYYm7pQKkxpaaXtEzGk"
+        }
+      ]
+    },
+    {
+      "query": "mikal bridges",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T02:50:00Z",
+      "related_news_urls": [
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/mikal-bridges-for-the-win/92908838007/",
+        "https://www.blazersedge.com/gameday-threads-2/118738/portland-trail-blazers-new-york-knicks-discussion-time-tv-injury-report",
+        "https://sports.yahoo.com/articles/mikal-bridges-buzzer-beater-lifts-025859875.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOsA3HsJYJcWirjbkrISovyHOqNI_lN7IxEcuF_4FdxwXGPPI3AV4tO-BS0-g",
+      "image_credit": "HoopsHype",
+      "news": [
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/21/mikal-bridges-for-the-win/92908838007/",
+          "title": "Mikal Bridges for the win",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOsA3HsJYJcWirjbkrISovyHOqNI_lN7IxEcuF_4FdxwXGPPI3AV4tO-BS0-g"
+        },
+        {
+          "url": "https://www.blazersedge.com/gameday-threads-2/118738/portland-trail-blazers-new-york-knicks-discussion-time-tv-injury-report",
+          "title": "Trail Blazers vs. Knicks Discussion Served Hot Here!",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRjjcRZ9N94gSm61Ci_rQrzy_LCj9v9dicZQEu2SXSUh6EAdQF1Yf4W4pcRqY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mikal-bridges-buzzer-beater-lifts-025859875.html",
+          "title": "Mikal Bridges' buzzer-beater lifts Knicks past Portland",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLUEOT0xyz-hugJan_opxkvuOzVf7jGcrqKhYq4hULV3C6M47eHpWhtLDgzRE"
+        }
+      ]
+    },
+    {
+      "query": "nhl standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T02:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50532384/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey",
+        "https://www.cbssports.com/nhl/news/nhl-power-rankings-carolina-hurricanes-stanley-cup-title-repeat-quest/",
+        "https://bleacherreport.com/articles/25534525-nhl-power-rankings-hurricanes-oilers-and-rangers-heaters-maple-leafs-freefall"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnFecH76WiXdIF8FXCNZ9vTS6FxrgbdDBB7NdTA5prTNRL-G5C3slRS_4oLoA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50532384/nhl-2026-27-power-rankings-top-teams-players-stats-projections-standings-fantasy-hockey",
+          "title": "NHL Power Rankings: Updated poll, plus fantasy hockey add/drops for all 32 teams",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnFecH76WiXdIF8FXCNZ9vTS6FxrgbdDBB7NdTA5prTNRL-G5C3slRS_4oLoA"
+        },
+        {
+          "url": "https://www.cbssports.com/nhl/news/nhl-power-rankings-carolina-hurricanes-stanley-cup-title-repeat-quest/",
+          "title": "NHL Power Rankings: Hurricanes mowing down everyone in their path on quest for Stanley Cup repeat",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKgsYIIs6iB9hRcnLREdX9QFW9I59eongFgrf2KiKO28NR-pnf-S1X1qG6iWA"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25534525-nhl-power-rankings-hurricanes-oilers-and-rangers-heaters-maple-leafs-freefall",
+          "title": "NHL Power Rankings: Hurricanes, Oilers and Rangers on Heaters; Maple Leafs in Freefall",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTkt_ZOmxGhb_WG-POOa2bNUTD5ak1AgRkO3rR4Ivbdf1FzVLKocYiafmoIjI"
+        }
+      ]
+    },
+    {
+      "query": "pumas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T02:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+        "https://www.espn.com/soccer/report/_/gameId/401861185",
+        "https://www.uefa.com/uefanationsleague/news/02ab-22146db70e40-12d581ab82a9-1000--uefa-nations-league-matchday-6-highlights-germany-nether/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyTcOt8e8qQ_XR3W700XOISOQpQ-F1mu16iQySeah_jBumVsNaYSaOOEyjBmU",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmly7wxld228t",
+          "title": "Germany 5-0 Netherlands: Florian Wirtz scores twice in Nations League",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyTcOt8e8qQ_XR3W700XOISOQpQ-F1mu16iQySeah_jBumVsNaYSaOOEyjBmU"
+        },
+        {
+          "url": "https://www.espn.com/soccer/report/_/gameId/401861185",
+          "title": "Germany 5-0 Netherlands (Nov 16, 2026) Game Analysis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC8wNf2BoG3Bj5zypG1lFDipP64zkBUgT9eLiaDYk6dJAEuo502lZwD9BG59E"
+        },
+        {
+          "url": "https://www.uefa.com/uefanationsleague/news/02ab-22146db70e40-12d581ab82a9-1000--uefa-nations-league-matchday-6-highlights-germany-nether/",
+          "title": "UEFA Nations League Matchday 6 highlights: Germany, Netherlands into quarter-finals",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_6wwoQVN86gzbtSrts2QVfEsXT_thxMxGXwxn7F8PnNi5AatzuL5DcITrGQ"
         }
       ]
     }
