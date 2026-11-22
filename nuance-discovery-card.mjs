@@ -151,7 +151,7 @@ if(root){
    if(requestId!==communitySerial||getHeaders().Authorization!==owner.Authorization)
     throw Error('Owner session changed; community view cleared.');
    if(result.ready!==true||!Array.isArray(result.perspectives)){
-    communityStatus.textContent='No eligible community batch yet. At least three different people must separately opt in to this use, and you must join the beta room.';
+    communityStatus.textContent='No eligible community batch yet. At least three distinct signed-in contributors must separately opt in, and you must join the beta room.';
     return;
    }
    const ideas=result.perspectives.slice(0,12).filter(i=>i&&
