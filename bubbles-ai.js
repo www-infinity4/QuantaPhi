@@ -1193,7 +1193,26 @@ const importLabel=create('label','ba-privacy-label','Import ChatGPT or Gemini hi
 const importGPT=create('input','ba-field');importGPT.type='file';importGPT.accept='.json,application/json';
 importGPT.setAttribute('aria-label','Import ChatGPT conversations.json or Gemini Apps MyActivity.json from Google Takeout');
 const importStatus=create('p','ba-muted','ChatGPT sign-in does not share old chats. Choose each ChatGPT conversations.json or Google Takeout Gemini Apps MyActivity.json file. Bubbles indexes only the records actually present in that export.');
-privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus);
+// Google/Gemini exports are explicitly user-initiated downloads, not an
+// automatic Google API backup. A verified wallet scope is required.
+const googleGeminiArchiveHeading=create('p','ba-muted','Google handoff · Your own saved chats and searches');
+const includeSearchLabel=create('label','ba-privacy-label');
+const googleIncludeSearch=create('input');googleIncludeSearch.type='checkbox';googleIncludeSearch.checked=true;
+includeSearchLabel.append(googleIncludeSearch,create('span','','Include QuantaPhi searches (requires verified wallet history)'));
+const googleBackupPassphrase=create('input','ba-field');
+googleBackupPassphrase.type='password';
+googleBackupPassphrase.autocomplete='new-password';
+googleBackupPassphrase.placeholder='Choose a private backup passphrase (16+ characters)';
+googleBackupPassphrase.setAttribute('aria-label','Private encrypted backup passphrase');
+const googleEncryptedDownload=create('button','ba-control','Download encrypted account backup');
+googleEncryptedDownload.type='button';
+const googleGeminiDownload=create('button','ba-control','Download Gemini handoff text');
+googleGeminiDownload.type='button';
+const googleGeminiBackupStatus=create('p','ba-muted','Your data stays with QuantaPhi until you select a download. Gemini and Google Drive do not automatically receive it.');googleGeminiBackupStatus.setAttribute('role','status');
+const googleGeminiHelp=create('a','ba-muted','Open Gemini for manual file attachment');
+googleGeminiHelp.href='https://gemini.google.com/';googleGeminiHelp.target='_blank';googleGeminiHelp.rel='noopener noreferrer';
+privacy.append(privacyLabel,cloudLabel,clearChat,cloudDelete,importLabel,importGPT,importStatus,
+ googleGeminiArchiveHeading,includeSearchLabel,googleBackupPassphrase,googleEncryptedDownload,googleGeminiDownload,googleGeminiBackupStatus,googleGeminiHelp);
 const noteText=create('textarea','ba-field');noteText.rows=2;noteText.maxLength=3000;noteText.placeholder='Write a note you choose to keep on this device…';noteText.setAttribute('aria-label','Bubbles private note');
 const saveNote=create('button','ba-control','Save note');saveNote.type='button';
 if(nativeOverlay){noteText.hidden=true;saveNote.hidden=true;} // Voice/text 'take notes' is the main input.
@@ -2165,6 +2184,64 @@ importGPT.addEventListener('change',async()=>{
  }catch(error){importStatus.textContent='History import failed: '+String(error.message||error).slice(0,160)}
  finally{importGPT.value=''}
 });
+// Only the person pressing the button can cause a local export. For search
+// history, the SAME wallet bearer credential is independently checked against
+// the Bubbles wallet profile and per-user Quanta search journal.
+async function downloadGoogleHandoff(kind){
+ if(!keepChat||!longMemory?.cloudConnected||!longMemory.profileScope){
+  googleGeminiBackupStatus.textContent='Connect the verified wallet and enable Bubbles history before exporting private account records.';
+  return;
+ }
+ if(!window.confirm('Download your own Bubbles history'+(googleIncludeSearch.checked?' and wallet search queries':'')+
+  '? These records may contain personal details. No Google upload occurs; only share the resulting file yourself.'))return;
+ const sourceScope=longMemory.profileScope;
+ const button=kind==='encrypted'?googleEncryptedDownload:googleGeminiDownload;
+ button.disabled=true;
+ try{
+  const {buildUserArchive,verifyWalletBinding,readVerifiedWalletSearches,sealUserArchive,toGeminiText}=
+   await import('./distributed-vault/google-gemini-handoff.mjs');
+  // Require a fresh match between current wallet bearer and indexed memory
+  // even if the user intentionally downloads chats without search history.
+  await verifyWalletBinding({memory:longMemory,connection:window.QuantaCloudConnection});
+  const chats=await longMemory.exportCurrentScope();
+  const searches=googleIncludeSearch.checked
+   ?await readVerifiedWalletSearches({memory:longMemory,connection:window.QuantaCloudConnection}):[];
+  if(!longMemory.cloudConnected||longMemory.profileScope!==sourceScope)throw Error('Wallet account changed during export; nothing was downloaded.');
+  if(!chats.length&&!searches.length)throw Error('No verified saved conversations or searches were available. Nothing was exported.');
+  const archive=await buildUserArchive({ownerScope:sourceScope,consent:true,chats,searches});
+  let content,fileName,type;
+  if(kind==='encrypted'){
+   const passphrase=googleBackupPassphrase.value;
+   if(passphrase.length<16)throw Error('Choose a backup passphrase with at least 16 characters. Keep it safe; it cannot be recovered for you.');
+   content=JSON.stringify(await sealUserArchive(archive,passphrase),null,2)+'\\n';
+   fileName='quantaphi-private-backup-'+new Date().toISOString().slice(0,10)+'.json';
+   type='application/json';
+  }else{
+   content=toGeminiText(archive);
+   fileName='quantaphi-manual-gemini-handoff-'+new Date().toISOString().slice(0,10)+'.txt';
+   type='text/plain';
+  }
+  // No network upload. The user chooses whether to save the encrypted copy
+  // into their Google account or attach the plaintext file to Gemini.
+  const blob=new Blob([content],{type:type+';charset=utf-8'});
+  const fileURL=URL.createObjectURL(blob);
+  const link=document.createElement('a');link.href=fileURL;link.download=fileName;link.hidden=true;
+  document.body.append(link);link.click();link.remove();
+  setTimeout(()=>URL.revokeObjectURL(fileURL),30000);
+  googleGeminiBackupStatus.textContent='Download prepared: '+archive.chats.length+
+   ' saved chat turns and '+archive.searches.length+' QuantaPhi searches. '+
+   (kind==='encrypted'?'Encrypted on this device. Store the file and your passphrase separately.':
+    'Plaintext handoff. Review it before you manually attach it to Gemini; this does not import Gemini history.');
+ }catch(error){
+  googleGeminiBackupStatus.textContent='Export not completed: '+String(error?.message||error).slice(0,240)+
+   (googleIncludeSearch.checked?' Uncheck Include QuantaPhi searches to export chats only when the search service is unavailable.':'');
+ }finally{
+  googleBackupPassphrase.value='';
+  button.disabled=false;
+ }
+}
+googleEncryptedDownload.addEventListener('click',()=>void downloadGoogleHandoff('encrypted'));
+googleGeminiDownload.addEventListener('click',()=>void downloadGoogleHandoff('gemini'));
 longMemory?.onUpdate((events,error)=>{
  if(error){memoryHint.textContent='Private archive sync paused: '+error+'. Owner Brain memory is unchanged.';return}
  if(Array.isArray(events)&&events.length){

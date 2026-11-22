@@ -1,12 +1,12 @@
 ---
 canonical_issue: 2110
 project: "Cloudflare exit · app-owned distributed shard cache and local mesh server"
-subtask: "M02 host install templates and M05 read-only D1 snapshot parity; no real deployment/cutover"
-state: review_pending
+subtask: "M05 personal archive/consented Gemini handoff; automatic Google export and D1 cutover not authorized or verified"
+state: ci_passed
 dot: "🟡"
-progress_percent: 35
-progress_basis: "Encrypted cache, local coordinator and deployment templates/parity source-tested; 0 real owner-host, Android, live D1 export/restore, production SQL API or cutover acceptance tracks verified"
-sessions_spent: 3
+progress_percent: 37
+progress_basis: "Encrypted cache, local coordinator, HTTPS/deployment template, private D1 parity and per-user export source-tested; real owner host/Android, complete per-account history, live D1 SQL API and actual Google destination remain unverified"
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT via connected GitHub"
 lease_id: null
@@ -14,14 +14,14 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/mesh-deployment-d1-parity-2110-20261122
-head_sha_at_checkpoint: "366b926e8a001c1caf2309fa6e5c8fcc0af81d88"
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/2116"
+branch: feat/bubbles-google-gemini-user-handoff-2110-20261122
+head_sha_at_checkpoint: "ce61bc341228ed4d0e8ae3bc14289d7a16aa5926"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/2117"
 merged: false
 deployed: false
 live_verified: false
 blocker: "No verified owner-hosted always-on machine or public HTTPS, no real Android peer enrollment, no independent D1 export ledger receipts or production SQL API; keep old D1 authoritative"
-next_action: "Review exact-head PR #2116 and security boundary; merge inactive source when eligible, then discover an actually owned always-on host and prove verified HTTPS readback before transferring synthetic app cache data"
+next_action: "Review and guard merge PR #2117 after exact-head CI; then validate Android Bubbles export under real verified wallet and separately pursue compliant complete-history export approval"
 ---
 
 # App-owned shard-cache prototype · November 22, 2026
@@ -69,3 +69,20 @@ Independent source/security review of the exact PR head; correct any issues; mer
 - Replication is not an absolute guarantee. Every unique N-of-N fragment index must be retrievable with its decryption key or reconstructed from a complete separate backup; simultaneous replica and backup loss cannot be repaired using a hash alone.
 
 Next safe executable action: exact-head test/review and guarded merge of inactive PR #2116. A verified owner-hosted always-on HTTPS endpoint and private disk are needed before enrolling real phones or attempting any D1 shadow movement.
+
+## Google/Gemini user-controlled archive · November 22, 2026
+
+- Prior [PR #2116](https://github.com/www-infinity4/QuantaPhi/pull/2116) **merged**: `9de2dba6b3002b27e6fa73917dd6c1a3694cdfef`. Source-only HTTPS host templates and private D1 hash parity, **not** installed host or migrated data.
+- New [PR #2117](https://github.com/www-infinity4/QuantaPhi/pull/2117) implements **user-initiated** encrypted download (AES-GCM/PBKDF2, no key uploaded), and manually attached plaintext TXT for Gemini. Bubbles privacy panel requires an already verified wallet scope, user confirmation and explicit download; the export never auto-posts to Google or combines wallet histories from different accounts.
+- Google official documentation as of 2026-11-22: Gemini supports manual import of supported AI ZIP chat archives and manual file attachments. It does not establish automatic third-party app history writes. Google's Drive API terms restrict using Drive to back up other apps' content without Google's express written consent, and prohibit storage-limit sharding. We have **not** added a Drive/Gemini API uploader.
+- Read-only current-wallet search history is matched to the *same bearer token* via Bubbles profile and Quanta search journal. The current endpoint only returns up to 1,000 recent searches, so the exporter rejects results reaching that limit rather than pretending completeness; an unavailable cloud/identity check blocks combined export. User can explicitly download chats-only.
+- Wallet-scoped BubblesMemory export filters saved turns to current profile, excludes notes and sync/internal state. It is **not complete historical coverage** across all Bubbles/ChatGPT sessions. No passive full-browser search monitoring, no external Google-account scraping, no customer-account upload, no private data stored in GitHub.
+- [Exact-head test suite 45069628117](https://github.com/www-infinity4/QuantaPhi/actions/runs/45069628117) for `da789c9c43377189fa4d925d7c7fd05cdf187ff2`: **51/51** tests; 25 same-head GitHub workflows returned success. Review required before guarded merge. No production/browser/Android or real Google account import receipts.
+
+Next: exact-head source review, source-only guarded merge, Android verification of encrypted browser download with a real wallet (no secret disclosure), and a future paginated per-user history export that safely includes older than the first 1,000 searches. Do not conflate user-selected plaintext Gemini upload with Google-hosted private storage or automatic database replication.
+
+### Account switch and Android cache guard
+
+A dedicated regression now checks a fresh profile read for a **chats-only** export, not just the combined chat/search exporter. Both paths recheck a single currently active wallet bearer against the wallet-scoped Bubbles profile; mismatches abort. A proposed Bubbles asset-version bump was reverted because it violated existing cross-entrypoint version contract tests; a coordinated cache-refresh/browser/Android release remains a separate verification step. No new APK or WebView cache is assumed updated. As of this checkpoint, no real Android/Google account export has been verified; every background Google transfer remains disabled.
+
+- New finding: Android OS Auto Backup offers up to 25 MB per app user at no charge, independent of restricted Drive developer APIs and not connected to Gemini chat memory. Current Bubbles native Android manifest explicitly sets `android:allowBackup=false`. It is intentionally **left unchanged**: no backup rule/verified encrypted app-private directory or real restore test yet. No claim of native Google backup activation.
