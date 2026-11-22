@@ -362,3 +362,13 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Evidence:** RED assertion/test commit `665087197462d109d308c9a59ca22aeea974a538`; source implementation commit `c2f3cb81fe98b92a1e95446e3e6ea932c81b83ea`. Focused test execution, exact-head CI, independent review, merge, deployment, browser and physical Android are **not yet verified** as of this checkpoint.
 - **Progress (this video subset only):** 2/5 acceptance tracks source+test authored (estimated 40%); remaining focused/CI pass, guarded merge, and deployed live/Android acceptance. **Parent #1603 overall progress unchanged.**
 - **Session:** 1 scoped ChatGPT/GitHub connector session; lease_id `null` (no runtime lease claimed); **next action:** confirm focused exact-head test and CI status for PR, review and merge only if policy permits, then verify deployed source and Android playback.
+
+
+## Session · owner video G2B1dFuhtfY · 2026-11-22
+
+- **Owner source:** https://youtu.be/G2B1dFuhtfY?is=65wATBp4X_R890l3
+- **Canonical:** https://www.youtube.com/watch?v=G2B1dFuhtfY. YouTube watch-page result identifies **We Adopted Another Baby!**. Uploader/channel, upload date, exact embed availability and rights are not verified.
+- **Reuse, not duplicate:** issue #1603; draft PR #2088. One source-only Public/Media record in `youtube-owner-video-links.mjs`, automatically used by existing original-thumbnail Oracle Quick Card, click-only YouTube provider embed, Stop, original link, and owner View More feed. No paid API, media download, backup, Star Coins, ad placement or channel bulk import.
+- **Branch:** `feat/youtube-owner-G2B1dFuhtfY-1603-20261122`, initial base `b8a4702561b57667f9ca2981e2f120014e453a60`. TDD specification commit `f3e9f2eabee9dffec2276d00db89463e20f6e1f2`; source import commit `7112425fb251ebf6a40b7bae696c97f5fe876c7c`. First push had Image Context workflow pass but no demonstrated focused failing RED run; this is not RED proof.
+- **Status:** source implemented, focused exact-head tests and independent review pending as of checkpoint. Scoped estimate 3/7 gates complete (source link/title, code placement, assertion), remaining: focused CI, independent review/guarded merge, Cloudflare readback, physical Android player/Stop verification. One documented session; additional sessions unknown. No signed Moltnook job lease was issued from this connector session.
+- **Next safe action:** read PR #2088 exact-head Creator post Quick Cards and other required GitHub Actions. Fix actual failures on its branch. Verify current base/mergeability, review, then eligible policy-compliant merge; confirm Cloudflare and real Android separately.
