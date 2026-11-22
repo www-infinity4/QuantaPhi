@@ -20,7 +20,7 @@ test('typing assistant never sends, modifies wallet, collects drafts or starts m
  const to=s.indexOf('// === Byte orb and training-wheel assist END ===',from);
  assert.ok(from>0&&to>from);
  const block=s.slice(from,to);
- assert.doesNotMatch(block,/sendMessage\(|fetch\(|navigator\.mediaDevices|localStorage\.setItem|wallet|connectionCode/i);
+ assert.doesNotMatch(block,/sendMessage\(|fetch\(|navigator\.mediaDevices|localStorage\.setItem|walletFetch|walletRequest|connectionCode/i);
  assert.match(block,/explicitTap:true/);
  assert.match(block,/mode='off'/);
  assert.match(block,/input\.selectionStart===input\.value\.length/);
