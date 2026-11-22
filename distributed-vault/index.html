@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Infinity App Shard Cache · QuantaPhi</title>
+<style>
+:root{font:18px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;color:#2a2825;background:#f4f0e8}
+*{box-sizing:border-box}body{margin:0;padding:20px 14px 52px}
+main{max-width:710px;margin:0 auto}header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+a{color:#9f302e;text-decoration-thickness:1px;text-underline-offset:4px}
+.logo{font-weight:800;letter-spacing:.05em;color:#8e2425}.card{background:white;border:1px solid #d5ccc0;border-radius:18px;padding:22px;margin:16px 0;box-shadow:0 3px 10px #2a201910}
+h1{font-size:clamp(1.5rem,6vw,2rem);line-height:1.25;margin:0 0 14px}h2{font-size:1.13rem;margin:0 0 12px}p{margin:8px 0 15px}
+.eyebrow{font-size:.78rem;color:#8f3533;text-transform:uppercase;letter-spacing:.1em;font-weight:800}
+.note{font-size:.91rem;color:#605c53}.metric{font-weight:700;font-variant-numeric:tabular-nums}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+button{font:inherit;font-weight:650;border-radius:11px;padding:11px 16px;min-height:48px;cursor:pointer;border:1px solid #a23b39;background:#a23b39;color:#fff}
+button.alt{background:white;color:#8f2927}button:disabled{opacity:.55;cursor:not-allowed}
+button:focus-visible,a:focus-visible{outline:3px solid #c07b16;outline-offset:3px}
+dl{display:grid;grid-template-columns:1fr auto;gap:12px;margin:12px 0}
+dt{color:#605c53}dd{margin:0;font-weight:650;font-variant-numeric:tabular-nums}
+@media(max-width:450px){.card{padding:18px}.actions button{width:100%}}
+</style>
+</head><body><main>
+<header><span class="logo">INFINITY φ</span><a href="../">QuantaPhi home</a></header>
+<section class="card" aria-labelledby="title">
+<p class="eyebrow">Cloud-exit experiment · Issue #2110</p>
+<h1 id="title">Application-managed encrypted cache</h1>
+<p>This page demonstrates normal app storage. While the app is open, it can keep small, verified encrypted fragments in its own browser storage—like an installed app caching files. It does not read photos, contacts, other app data, or personal documents.</p>
+<p class="note">Only a public synthetic test fragment is used here. No peer network, hidden background collection, or remote upload is active.</p>
+</section>
+<section class="card" aria-labelledby="cache-title">
+<h2 id="cache-title">This device's app cache</h2>
+<p id="vaultStatus" role="status" aria-live="polite">Opening app storage…</p>
+<dl><dt>Stored fragments</dt><dd id="vaultEntries">—</dd><dt>Bytes in cache</dt><dd id="vaultBytes">—</dd><dt>App cache limit</dt><dd>8 MiB</dd></dl>
+<div class="actions">
+<button id="vaultTestCache">Recheck and cache demo fragment</button>
+<button id="vaultPause" class="alt">Pause app caching</button>
+<button id="vaultClear" class="alt">Clear vault storage</button>
+</div>
+</section>
+<section class="card">
+<h2>How the full design works</h2>
+<p>File encryption happens before anything reaches another app instance. The software divides encrypted bytes into independent fragments, hashes them, and prepares randomized assignments to app caches with available capacity. Restoration checks fragment integrity and requires the original private key.</p>
+<p><strong>Network status:</strong> This prototype does not send fragments between phones. Peers, secure transport, availability, and durable recovery must be built and verified separately before replacing any live server.</p>
+<p class="note">Browser and Android operating systems can evict or clear app data. The owner can inspect or delete local caches at any time. This prototype cannot make storage permanent or unrecoverable.</p>
+</section>
+<footer class="note">Source and test ledger: <a href="https://github.com/www-infinity4/QuantaPhi/issues/2110">QuantaPhi #2110</a></footer>
+</main><script type="module" src="./app-page.mjs"></script></body></html>
