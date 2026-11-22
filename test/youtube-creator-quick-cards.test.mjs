@@ -79,7 +79,7 @@ test('owner-linked YouTube video becomes a separate source-backed public Oracle 
  assert.equal(validateOwnerYouTubeLink({...v,contentBoundary:'adult'}),false);
  assert.equal(validateOwnerYouTubeLink({...v,contentBoundary:'family-education'}),false);
  assert.equal(validateOwnerYouTubeLink({...v,publisherVerified:true}),false);
- const c=REVIEWED_OWNER_VIDEO_CARDS[0];
+ const c=REVIEWED_OWNER_VIDEO_CARDS.find(item=>item.reviewedYouTubeVideoId===v.videoId);
  assert.ok(c);
  assert.equal(c.reviewedYouTubeVideoId,v.videoId);
  assert.ok(isPublicSourceCard(c));
