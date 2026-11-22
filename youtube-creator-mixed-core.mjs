@@ -44,7 +44,14 @@ export const CREATOR_CHANNELS=Object.freeze([
  // RSS supplies recent uploads; historical videos stay on the original channel.
  Object.freeze({key:'agorasoumae',name:'AGORA SOU MÃE',channelId:'UCjht-pbc_924v1ovsKHZd9Q',
   url:'https://www.youtube.com/@agorasoumae173',seed:Object.freeze([
-   seed('UCjht-pbc_924v1ovsKHZd9Q','XNXSduqwZ54','MAMÃES ASSISTAM ESTE VIDEO')
+   seed('UCjht-pbc_924v1ovsKHZd9Q','XNXSduqwZ54','MAMÃES ASSISTAM ESTE VIDEO'),
+   // Six additional exact ID/title pairs inspected from official public upload RSS.
+   seed('UCjht-pbc_924v1ovsKHZd9Q','VnDurY3dysA','Decoração de Natal | AGORA SOU MÃE ❤️'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','5vkwoZXc6Vg','FAZENDO FAXINA NA CASA TODA | AGORA SOU MÃE ❤️'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','GzTixQ8PVvY','VIAJAMOS PARA APARECIDA DO NORTE | AGORA SOU MÃE 🥰'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','ZqXrplTyGg0','Como está sendo a fase dos 3 anos da minha filha? | AGORA SOU MÃE'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','MNcG0UM9t4c','Dia de faxina pesadona 🫢 |AGORA SOU MÃE'),
+   seed('UCjht-pbc_924v1ovsKHZd9Q','97l1heMfoiE','Uma faxina na cozinha, óleo pra todo lado 🫢 | AGORA SOU MÃE')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
