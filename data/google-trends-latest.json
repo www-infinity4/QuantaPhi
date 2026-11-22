@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T10:01:23.210712Z",
+  "checked_at": "2026-11-22T10:31:19.205016Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -112,37 +112,37 @@
       ]
     },
     {
-      "query": "how to auto drive gta 6",
-      "approx_searches": "100+",
+      "query": "jfk",
+      "approx_searches": "200+",
       "published_at": "2026-11-22T08:40:00Z",
       "related_news_urls": [
-        "https://www.polygon.com/gta-6-auto-drive-how-to/",
-        "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
-        "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/"
+        "https://www.today.com/video/see-how-today-covered-the-jfk-assassination-in-1963-273660997794",
+        "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
+        "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc",
-      "image_credit": "Polygon.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjglZ3UX4j58V8YvsPQozTBXdaK1rbAdARttlJsNLA2EL9JfIR9JcLXiTqP9M",
+      "image_credit": "TODAY.com",
       "news": [
         {
-          "url": "https://www.polygon.com/gta-6-auto-drive-how-to/",
-          "title": "How to use auto drive in GTA 6",
-          "publisher": "Polygon.com",
+          "url": "https://www.today.com/video/see-how-today-covered-the-jfk-assassination-in-1963-273660997794",
+          "title": "See How TODAY Covered the JFK Assassination in 1963",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjglZ3UX4j58V8YvsPQozTBXdaK1rbAdARttlJsNLA2EL9JfIR9JcLXiTqP9M"
         },
         {
-          "url": "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
-          "title": "Grand Theft Auto VI's Auto Drive Is A Beautiful And Free Version Of Hands-Free Travel",
-          "publisher": "Game Informer",
+          "url": "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
+          "title": "Inside the museum preserving the story of JFK's assassination",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfDahXQjSg8MDMJHROtJwAZvCaQTP4XBuUHubiVi79oToNZcQIpKkF-JDgbQE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI"
         },
         {
-          "url": "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/",
-          "title": "This GTA 6 Fast Travel Trick Comes At A Price",
-          "publisher": "Engadget",
+          "url": "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
+          "title": "Today in History: November 22, infamous pirate Blackbeard killed in battle",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxBYnaBmtO8GNPIDRYPesYAynqnjhdzLgW-mDbqoNhrCRcNwDymxILfB1G_ZQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8jjJ86o6fZRWfvzfWI831oh5CdLBxgyFFH4DRLW9gRR-CiAKbbxxHy0f9Vqw"
         }
       ]
     },
@@ -182,37 +182,37 @@
       ]
     },
     {
-      "query": "jfk",
+      "query": "how to auto drive gta 6",
       "approx_searches": "100+",
       "published_at": "2026-11-22T08:40:00Z",
       "related_news_urls": [
-        "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
-        "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
-        "https://www.inforum.com/opinion/letters/letter-those-fateful-days-recalled"
+        "https://www.polygon.com/gta-6-auto-drive-how-to/",
+        "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
+        "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI",
-      "image_credit": "PBS",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc",
+      "image_credit": "Polygon.com",
       "news": [
         {
-          "url": "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
-          "title": "Inside the museum preserving the story of JFK's assassination",
-          "publisher": "PBS",
+          "url": "https://www.polygon.com/gta-6-auto-drive-how-to/",
+          "title": "How to use auto drive in GTA 6",
+          "publisher": "Polygon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc"
         },
         {
-          "url": "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
-          "title": "Today in History: November 22, infamous pirate Blackbeard killed in battle",
-          "publisher": "The Mercury News",
+          "url": "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
+          "title": "Grand Theft Auto VI's Auto Drive Is A Beautiful And Free Version Of Hands-Free Travel",
+          "publisher": "Game Informer",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8jjJ86o6fZRWfvzfWI831oh5CdLBxgyFFH4DRLW9gRR-CiAKbbxxHy0f9Vqw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfDahXQjSg8MDMJHROtJwAZvCaQTP4XBuUHubiVi79oToNZcQIpKkF-JDgbQE"
         },
         {
-          "url": "https://www.inforum.com/opinion/letters/letter-those-fateful-days-recalled",
-          "title": "Letter: Those fateful days recalled",
-          "publisher": "InForum",
+          "url": "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/",
+          "title": "This GTA 6 Fast Travel Trick Comes At A Price",
+          "publisher": "Engadget",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82f6_uTt4EIt3ubuas83zyg2wVd6t26auzrSTemGpG3nMPNWKeC8OjnsG8As"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxBYnaBmtO8GNPIDRYPesYAynqnjhdzLgW-mDbqoNhrCRcNwDymxILfB1G_ZQ"
         }
       ]
     },
@@ -256,26 +256,26 @@
       "approx_searches": "100+",
       "published_at": "2026-11-22T08:30:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
         "https://www.vice.com/en/article/gta-6-money-glitch/",
+        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
         "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno",
-      "image_credit": "Forbes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDEO9o_lqdu8X_GaSVY0uv2qQoY3LNfwI6mznmEmQyCG5mLQcQQbAhUk9xwM",
+      "image_credit": "VICE",
       "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
-          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
-        },
         {
           "url": "https://www.vice.com/en/article/gta-6-money-glitch/",
           "title": "GTA 6 Money Glitch – How to Get Unlimited Money",
           "publisher": "VICE",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDEO9o_lqdu8X_GaSVY0uv2qQoY3LNfwI6mznmEmQyCG5mLQcQQbAhUk9xwM"
+        },
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
         },
         {
           "url": "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html",
@@ -291,33 +291,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-22T08:20:00Z",
       "related_news_urls": [
-        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
-        "https://www.nytimes.com/2026/11/21/weather/northeast-storm-thanksgiving.html",
-        "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel"
+        "https://www.washingtonpost.com/travel/2026/11/21/best-times-drive-thanksgiving-road-trips/",
+        "https://www.cnbc.com/select/drive-fly-travel-costs/",
+        "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE",
-      "image_credit": "NPR",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgo1iXnPf_HW7hyWu-TVbvuQkTVaXWC1F5t9uR2HJhfHQvFMduOU9BLZrc8Ao",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
-          "title": "Storms expected on both coasts threatens Thanksgiving travel",
-          "publisher": "NPR",
+          "url": "https://www.washingtonpost.com/travel/2026/11/21/best-times-drive-thanksgiving-road-trips/",
+          "title": "When to hit the road for the least-bad Thanksgiving traffic",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgo1iXnPf_HW7hyWu-TVbvuQkTVaXWC1F5t9uR2HJhfHQvFMduOU9BLZrc8Ao"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/21/weather/northeast-storm-thanksgiving.html",
-          "title": "Back-to-Back Storms Poised to Hit the Northeast Before Thanksgiving",
-          "publisher": "The New York Times",
+          "url": "https://www.cnbc.com/select/drive-fly-travel-costs/",
+          "title": "Traveling soon? Here’s how to decide whether to fly or drive",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXRGhtyFuHTAIXeDHxF6ytXlY9xYcrx7vuBB7Xk5mWzl_V0yuiHm9uGT-SNYA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNOReOYL1kbRO5k1xu8pWtQjCqFHBRPq6UrPJ4IEehiWMk-yjdOtQ68f6uHU8"
         },
         {
-          "url": "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel",
-          "title": "Millions across 20+ states face Thanksgiving travel disruptions as powerful storms take aim at both coasts",
-          "publisher": "FOX Weather",
+          "url": "https://newsroom.aaa.com/2026/11/aaa-thanksgiving-holiday-travel-forecast/",
+          "title": "Thanksgiving Travel Expected to Dip Slightly Compared to Last Year",
+          "publisher": "AAA Newsroom",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FS9gmxRBlI3MTmi8HUFtfnlusSQvN1eE8aBEPr15Pt_ZVh3dwn_VkZX6MLU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM-TWXs6PNQqPcAAgzTjwHTxvlfJqiyy3IQGNwtB_NcEyPG0vAJgks7DJ9YJE"
         }
       ]
     },
@@ -327,8 +327,8 @@
       "published_at": "2026-11-22T08:00:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
-        "https://www.profootballnetwork.com/skip-bayless-josh-allen-joe-burrow-qb-debate/",
-        "https://bsinews.id/en/bayless-backs-vikings-beat-49ers"
+        "https://www.limapagi.id/en/bayless-vikings-49ers-prediction",
+        "https://billswire.usatoday.com/story/sports/nfl/bills/2026/11/20/skip-bayless-takes-bills-josh-allen-as-his-nfl-mvp-on-first-take/92882959007/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8",
       "image_credit": "Yahoo Sports",
@@ -341,18 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8"
         },
         {
-          "url": "https://www.profootballnetwork.com/skip-bayless-josh-allen-joe-burrow-qb-debate/",
-          "title": "‘Just Stop’ ‘He’s the Best Since (Tom) Brady Retired’ — NFL Fans Fire Back at Skip Bayless Over Bizarre Take in Josh Allen-Joe Burrow Debate",
-          "publisher": "Pro Football Network",
+          "url": "https://www.limapagi.id/en/bayless-vikings-49ers-prediction",
+          "title": "Bayless Backs Vikings to Beat 49ers Despite Cousins Doubts",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2o4vBq3lE18xps1t1d6Ffm4XLmrYO3_IVNxqKepiSsL1v_Ay2SVkkTOXwB_Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSmE1uw0Lg0oZRQu--b2MxIRpPlNVcDmKjfFPqXCfOpvcxG23uWhNNsp0E7tg"
         },
         {
-          "url": "https://bsinews.id/en/bayless-backs-vikings-beat-49ers",
-          "title": "Bayless Backs Vikings to Beat 49ers Despite Cousins Doubts",
-          "publisher": "bsinews.id",
+          "url": "https://billswire.usatoday.com/story/sports/nfl/bills/2026/11/20/skip-bayless-takes-bills-josh-allen-as-his-nfl-mvp-on-first-take/92882959007/",
+          "title": "Skip Bayless takes Bills' Josh Allen as his NFL MVP on 'First Take' (video)",
+          "publisher": "Bills Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAoeqOxO6WeWPeTLcBHE4CidNKUaYxrfTYh_liVk3UxpWWSE505fpzsAIjHSc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSacZ4VggprUXzetFxZ1VhaZT4efG6p_6efq3LmeDNhnjyp_WZS9VEKFkFZWvM"
         }
       ]
     }
