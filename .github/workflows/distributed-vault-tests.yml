@@ -3,6 +3,9 @@ on:
   pull_request:
     paths:
       - 'distributed-vault/**'
+      - 'bubbles-memory.js'
+      - 'bubbles-ai.js'
+      - 'test/bubbles-google-*.test.mjs'
       - 'test/distributed-vault*.test.mjs'
       - '.github/workflows/distributed-vault-tests.yml'
   push:
@@ -37,4 +40,4 @@ jobs:
           node --check distributed-vault/google-gemini-handoff.mjs
           python3 -m py_compile distributed-vault/d1-verify.py
       - name: Test encryption, 1000 shards and application-controlled cache
-        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs test/distributed-vault-cli.test.mjs test/distributed-vault-mesh-server.test.mjs test/distributed-vault-d1-stage.test.mjs test/distributed-vault-peer.test.mjs test/distributed-vault-d1-verify.test.mjs test/distributed-vault-deploy.test.mjs test/distributed-vault-google-handoff.test.mjs
+        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs test/distributed-vault-cli.test.mjs test/distributed-vault-mesh-server.test.mjs test/distributed-vault-d1-stage.test.mjs test/distributed-vault-peer.test.mjs test/distributed-vault-d1-verify.test.mjs test/distributed-vault-deploy.test.mjs test/distributed-vault-google-handoff.test.mjs test/bubbles-google-wallet-export.test.mjs test/bubbles-google-handoff-ui.test.mjs
