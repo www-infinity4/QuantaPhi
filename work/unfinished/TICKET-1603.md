@@ -404,6 +404,16 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Next executable action:** Inspect current draft PR's exact-head checks (including Creator source-and-mobile), independently review source + copyright boundary, reconcile latest main if needed, then permitted merge and Cloudflare/Android readback. Do not mark deployed or complete without receipts.
 
 
+## 2026-11-22 · owner yMLadAyHNFo Quick Card / Omni pod expiration report
+
+- **Scope / source:** owner supplied https://youtu.be/yMLadAyHNFo?is=pEeL7IhPqYGUjiRq and reported that expired "Omni pod girls" clips need to return while subsequent clips complain about expiration. This is a user-reported playback problem, not a verified YouTube/provider error. No claim of revoked rights being renewed.
+- **Canonical issue:** #1603. Draft PR: https://github.com/www-infinity4/QuantaPhi/pull/2093, branch `feat/youtube-owner-yMLadAyHNFo-1603-20261122`, pinned original main SHA `c9568a11d8265a8e8d1e4f1055bf3ce8521b59d5`.
+- **Test-first receipt:** `fdddf48ca0677ea1d6cf96354cb6856ff79f13e8` added owner regression to the existing Creator suite. Creator CI [45025484595](https://github.com/www-infinity4/QuantaPhi/actions/runs/45025484595) failed only the new test (`0 !== 1`, 128 pass, 1 fail), demonstrating the missing source.
+- **Implementation:** `e45338d9d0b89c198a7ac6fd33d9a03f4aa662f9` adds exactly one validated owner video record to `youtube-owner-video-links.mjs` for Oracle Public/Media, with existing click-to-play YouTube source, Stop and owner View More. Title, channel ID, publication date, embed availability, rights and the Omni pod report remain **unverified**. `0b9d93fb1900cb4ef7e4477d3f9f022ad8bd011a` removed a redundant standalone test, retaining the regression inside the existing CI suite.
+- **Release state:** source-staged, draft/unmerged; latest focused Creator run [45025529353](https://github.com/www-infinity4/QuantaPhi/actions/runs/45025529353) still in progress at this checkpoint. Other checks on this head have passed as observed. This is neither a Cloudflare deployment nor physical Android/YouTube playback verification.
+- **Expiration follow-up:** identify the exact affected video IDs or in-card provider error text before proposing a repair. An unavailable/removed YouTube video must show a truthful source/fallback; never rehost or extend provider rights/age/session grants. Do not conflate creator video availability with temporary ad listing expiry.
+- **Next single executable action:** inspect the completed exact-head Creator run, review PR diff and conflicts, and only then consider a permitted merge with independent deployment/browser acceptance afterward. No payment, coin or wallet mutation.
+
 ## Owner video uvqqCjk_aXs — intake / single-card source session (2026-11-22)
 
 - **Original owner URL:** https://youtu.be/uvqqCjk_aXs?is=06AKUeFyRec04qXN . Canonical video watch URL: https://www.youtube.com/watch?v=uvqqCjk_aXs .
