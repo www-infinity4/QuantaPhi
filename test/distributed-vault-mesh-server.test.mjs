@@ -195,3 +195,20 @@ test('new encrypted fragments favor phones with repeated app activity windows ov
  assert.equal(i.fragment,null,'idle registered peer must not be preferred over active caches');
  assert.notEqual(f.fragment.index,r.fragment.index,'independent app instances hold different fragment indices');
 });
+
+test('first app heartbeat does not erase an unacknowledged download assignment',async t=>{
+ const {call}=await fixture(t,{replicas:1});
+ const devices=await provision(call,2);
+ const {manifest}=await upload(call,Buffer.from('new app cache is empty until first download'),{shards:2});
+ for(const device of devices){
+  const first=await call('POST','/v1/node/heartbeat',{inventory:[]},device.token);
+  assert.equal(first.status,200);
+  assert.equal(first.invalidated,0,'pending uploads are not lost cached data');
+  const next=await call('GET','/v1/node/next',undefined,device.token);
+  assert.equal(next.status,200);
+  assert.equal(next.fragment.fileId,manifest.fileId);
+  const ack=await call('POST','/v1/node/ack',{fileId:manifest.fileId,index:next.fragment.index,sha256:next.fragment.sha256},device.token);
+  assert.equal(ack.status,200);
+ }
+ assert.equal((await call('GET','/v1/owner/status')).files[0].underReplicated,0);
+});
