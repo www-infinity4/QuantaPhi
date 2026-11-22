@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T12:01:24.342081Z",
+  "checked_at": "2026-11-22T12:31:17.185097Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nintendo switch 2 black friday deals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T11:40:00Z",
+      "query": "barcelona - villarreal",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://www.wired.com/story/best-black-friday-nintendo-switch-deals-11-22-26/",
-        "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
-        "https://nintendoeverything.com/ea-hosting-black-friday-2026-nintendo-eshop-sale-with-plants-vs-zombies-split-fiction-more-at-new-low-prices/"
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17540059/barcelona-vs-villarreal-alineacion-probabilidades-laliga",
+        "https://www.si.com/es-us/lesionados-y-sancionados-del-barcelona-para-enfrentarse-al-villarreal",
+        "https://www.sport.es/es/noticias/barca/barca-busca-cambiar-menu-hora-136630093"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCDlrC2IrYCfXFn1TNzz2l-_-sT1MhAfQhdqys29c7r3e3uOmDiKFFJRoSms",
-      "image_credit": "WIRED",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyBW7Tk326GwIQTvh-86wB4r8477RoQXBxhkEPGGcL7Z4Pl6czwR9FiHKWM0",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.wired.com/story/best-black-friday-nintendo-switch-deals-11-22-26/",
-          "title": "Save $50 on the Best Nintendo Switch 2 Bundle",
-          "publisher": "WIRED",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17540059/barcelona-vs-villarreal-alineacion-probabilidades-laliga",
+          "title": "Barcelona: posible alineación y probabilidades vs Villarreal",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCDlrC2IrYCfXFn1TNzz2l-_-sT1MhAfQhdqys29c7r3e3uOmDiKFFJRoSms"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyBW7Tk326GwIQTvh-86wB4r8477RoQXBxhkEPGGcL7Z4Pl6czwR9FiHKWM0"
         },
         {
-          "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
-          "title": "Adventure Awaits: Save on a daring selection of digital games",
-          "publisher": "Nintendo",
+          "url": "https://www.si.com/es-us/lesionados-y-sancionados-del-barcelona-para-enfrentarse-al-villarreal",
+          "title": "Lesionados y sancionados del Barcelona para enfrentarse al Villarreal",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSttzOeog3cW6cBchzbl3hSNl7CJxCO_HcTx1sXggNzJrahT_LJ3Dq1mD9BN7o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBvu0JX8RlCoR-IZlkiT5pw60FgQqtg6RTuSGoZe1-j_ayz-e4L0t40ut1UbA"
         },
         {
-          "url": "https://nintendoeverything.com/ea-hosting-black-friday-2026-nintendo-eshop-sale-with-plants-vs-zombies-split-fiction-more-at-new-low-prices/",
-          "title": "EA hosting Black Friday 2026 Nintendo eShop sale with Plants vs. Zombies, Split Fiction, more at new low prices",
-          "publisher": "Nintendo Everything",
+          "url": "https://www.sport.es/es/noticias/barca/barca-busca-cambiar-menu-hora-136630093",
+          "title": "El Barça busca cambiar el menú a la hora de comer",
+          "publisher": "SPORT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPAKqjajYyd46C70Xr2Oge-LI7qIaqG0wq0BdiF2bj6ZaffSMWPWmJO1O8uwA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3tBjlpBedKCwdM3JWGMp2V2sLxbhCf0UFNLJvRdSI5v6uEsSVFgVh752nmeY"
         }
       ]
     },
     {
-      "query": "ca",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T11:40:00Z",
-      "related_news_urls": [
-        "https://www.constructionowners.com/news/aecom-wins-five-year-geotechnical-services-contract-for-california-water-project",
-        "https://simplywall.st/stocks/us/capital-goods/nyse-acm/aecom/news/why-is-aecom-acm-landing-a-five-year-california-water-role-i",
-        "https://www.marketscreener.com/news/aecom-announces-selection-by-delta-conveyance-design-and-construction-authority-to-provide-programma-ce785edddb8df12d"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTItLVSnoW5UYh_qyiWGMKvBm3P7Py-uGAX0BCzmO1aW0RoS-PVX_63C5LnBAA",
-      "image_credit": "Construction Owners",
-      "news": [
-        {
-          "url": "https://www.constructionowners.com/news/aecom-wins-five-year-geotechnical-services-contract-for-california-water-project",
-          "title": "AECOM Wins California Delta Conveyance Geotechnical Contract",
-          "publisher": "Construction Owners",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTItLVSnoW5UYh_qyiWGMKvBm3P7Py-uGAX0BCzmO1aW0RoS-PVX_63C5LnBAA"
-        },
-        {
-          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-acm/aecom/news/why-is-aecom-acm-landing-a-five-year-california-water-role-i",
-          "title": "Why Is AECOM (ACM) Landing A Five Year California Water Role Important?",
-          "publisher": "Simply Wall St",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaDgNZKdv3q4elAsizL5EvyXOd0_UVJd9Iq5V7dNUdfRpYZtQPn-PROPM9ToM"
-        },
-        {
-          "url": "https://www.marketscreener.com/news/aecom-announces-selection-by-delta-conveyance-design-and-construction-authority-to-provide-programma-ce785edddb8df12d",
-          "title": "AECOM Announces Selection By Delta Conveyance Design And Construction Authority To Provide Programmatic Geotechnical Exploration And Reporting Services For Delta Conveyance Project",
-          "publisher": "marketscreener.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbwcWLWmcA6ZnkGy8vPVKuW9Kz7ruNA9-R1lisKo6B5YGDPIkD6r_943PW6GU"
-        }
-      ]
-    },
-    {
-      "query": "walmart black friday ad 2026",
+      "query": "burnley vs blackburn rovers",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T11:40:00Z",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/shop-walmarts-best-early-black-friday-deals-on-apple-airpods-ninja-air-fryers-shark-vacuums-and-more-160507690.html",
-        "https://www.moneylion.com/trending/money/walmart-deals-worth-getting-before-black-friday",
-        "https://www.foxnews.com/deals/walmart-black-friday-deals"
+        "https://www.bbc.com/sport/football/live/cj04wnnr2py9t",
+        "https://www.skysports.com/football/live-blog/13613569/burnley-vs-blackburn-live-championship-match-updates-score-stream-and-free-highlights",
+        "https://www.theleaguepaper.com/latest-news/football-league-championship/470492/lets-fix-bad-habits-and-get-the-win/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7U3cYELkFEh2WR92-kpgiBYeaoBmoX2yTcFv_f0lKMfyjfZWrgDb_tTpJmSQ",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXdAC4BPVf9QloNyriF0-7TOZOqef9izr85C9sKCtmQqAItgui_5sT9I-Y-_8",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/shop-walmarts-best-early-black-friday-deals-on-apple-airpods-ninja-air-fryers-shark-vacuums-and-more-160507690.html",
-          "title": "Shop Walmart's best early Black Friday deals on Apple AirPods, Ninja air fryers, Shark vacuums and more",
-          "publisher": "Yahoo",
+          "url": "https://www.bbc.com/sport/football/live/cj04wnnr2py9t",
+          "title": "EFL Championship LIVE: Burnley vs Blackburn Rovers - build-up, team news, match stats & live text commentary",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7U3cYELkFEh2WR92-kpgiBYeaoBmoX2yTcFv_f0lKMfyjfZWrgDb_tTpJmSQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXdAC4BPVf9QloNyriF0-7TOZOqef9izr85C9sKCtmQqAItgui_5sT9I-Y-_8"
         },
         {
-          "url": "https://www.moneylion.com/trending/money/walmart-deals-worth-getting-before-black-friday",
-          "title": "10 Walmart Deals To Grab Before Black Friday",
-          "publisher": "MoneyLion",
+          "url": "https://www.skysports.com/football/live-blog/13613569/burnley-vs-blackburn-live-championship-match-updates-score-stream-and-free-highlights",
+          "title": "Burnley vs Blackburn LIVE! Championship match updates, score, stream and free highlights",
+          "publisher": "Sky Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsInM47jXdcg_Uw37wH1d4APXNtbhH-tJ2wM67BLbeupvPdmC5KuGiq9mYZjs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_eP3wdsFwcL_P6eHgpPUy1X7nbnBGDGDDU7rye9zRKgKIrmmeR-xF-fqGVjM"
         },
         {
-          "url": "https://www.foxnews.com/deals/walmart-black-friday-deals",
-          "title": "Save on gifts for everyone with Walmart Black Friday deals on Dyson, Samsung, KitchenAid and more",
-          "publisher": "Fox News",
+          "url": "https://www.theleaguepaper.com/latest-news/football-league-championship/470492/lets-fix-bad-habits-and-get-the-win/",
+          "title": "LET’S FIX BAD HABITS – AND GET THE WIN!",
+          "publisher": "The League Paper",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBEafeIpDHEpFIUYxXQ892U_6aO1dh4PQxaqCULlMrSIkOxmgYTKrBLQYOhc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeT0IemSN9vnEym2dEMBemaNDVu9-RqBfXIrIRmwCSEIya6N-mMoAA_KF1Vo"
         }
       ]
     },
     {
-      "query": "天气",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T11:40:00Z",
+      "query": "weather nyc",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-21/world-economy-latest-japan-s-economy-slips-as-weather-dents-spending",
-        "https://www.bloomberg.com/news/articles/2026-11-15/japan-s-economy-contracts-as-bad-weather-weighs-on-consumption",
-        "https://www.businessinsider.com/rare-look-inside-p-8-poseidon-arsenal-sensors-hunt-submarines-2026-11"
+        "https://weather.com/2026/11/22/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
+        "https://www.accuweather.com/en/hurricane/east-coast-storm-to-spread-tropical-rain-wind-and-flooding-northward-this-weekend/1961885",
+        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTclU2C2a3hAR52tVf_AKzWaBVjG-BP2TTPlin60a2GdS1YLnZ_5b8Mi-gVzJM",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqFQ4Duox39G2o8beTI10uyme2NancIDsi_Tv6m9nmtjv0w-29co_j0C9cQ7o",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-21/world-economy-latest-japan-s-economy-slips-as-weather-dents-spending",
-          "title": "Charting the Global Economy: GDP Slips in Japan on Weak Consumer",
-          "publisher": "Bloomberg.com",
+          "url": "https://weather.com/2026/11/22/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
+          "title": "East Coast storm could soak millions this weekend",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTclU2C2a3hAR52tVf_AKzWaBVjG-BP2TTPlin60a2GdS1YLnZ_5b8Mi-gVzJM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqFQ4Duox39G2o8beTI10uyme2NancIDsi_Tv6m9nmtjv0w-29co_j0C9cQ7o"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-15/japan-s-economy-contracts-as-bad-weather-weighs-on-consumption",
-          "title": "Japan’s Economy Shrinks as Bad Weather Weighs on Consumption",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.accuweather.com/en/hurricane/east-coast-storm-to-spread-tropical-rain-wind-and-flooding-northward-this-weekend/1961885",
+          "title": "East Coast storm to spread tropical rain, wind and flooding northward this weekend",
+          "publisher": "AccuWeather",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjqDjNb8Rb7s0a-dAyGfXSsmFioTjpIa7wHIDW9cfqRnA4oJ4fhn_l6tOr_Ww"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnKj7k1Wp-0sRW28ZQmkTpfBh-e4CYbz9yzTwSmTi_cqB9gEZmYF1D0LteT6M"
         },
         {
-          "url": "https://www.businessinsider.com/rare-look-inside-p-8-poseidon-arsenal-sensors-hunt-submarines-2026-11",
-          "title": "We got rare access to a P-8 Poseidon, a flying arsenal of sensors and weapons built to hunt hidden submarines",
-          "publisher": "Business Insider",
+          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+          "title": "East Coast storm could disrupt holiday travel after battering Florida",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVns-LWBSdxbaAnGZWnbG3IiBTVcKfLoso4OPqRsGyzs6AOlr4RYnokGg-9D0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
         }
       ]
     },
     {
-      "query": "hulu black friday deal 2026",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T11:40:00Z",
+      "query": "nick cannon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66122569/?ref_=int_nwr_1",
-        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/21/disney-plus-espn-hulu-bundle-early-black-friday-deal/92883826007/",
-        "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/"
+        "https://www.billboard.com/music/rb-hip-hop/nick-cannon-hospital-lupus-prayers-1236387115/",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
+        "https://www.newser.com/story/400412/nick-cannon-posts-hospital-pic-asks-for-prayers.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTatopGgxH2JjOtP7rbXfpjD9SbPeEFLoZAo-2otzHHVjFjkVOJVJdinZExUCk",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWSRQPRd_jK7HvmVk1AXdgqTMgKE4vk9LsJqXus1HLMNKI7cFyZHaRzz7NU_o",
+      "image_credit": "Billboard",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66122569/?ref_=int_nwr_1",
-          "title": "Disney+ Black Friday 2026: what to expect before the deal drops",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTatopGgxH2JjOtP7rbXfpjD9SbPeEFLoZAo-2otzHHVjFjkVOJVJdinZExUCk"
-        },
-        {
-          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/21/disney-plus-espn-hulu-bundle-early-black-friday-deal/92883826007/",
-          "title": "Save 36% with this Disney+, ESPN, Hulu early Black Friday bundle deal",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZathGtSIaoqYxEb_fMVgYlyujCDyh7hGjUmcR-FmdW21Qn88ekpLjtR_O8hI"
-        },
-        {
-          "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
-          "title": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less",
+          "url": "https://www.billboard.com/music/rb-hip-hop/nick-cannon-hospital-lupus-prayers-1236387115/",
+          "title": "Nick Cannon Hospitalized Amid Lupus Battle: ‘Pray for Me, Y’all!’",
           "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStU0607x1RPn3mXNPBPzOm0wyWRZUf3KlfaItYTYgNmb24lODzXCJ-GNAMMYA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWSRQPRd_jK7HvmVk1AXdgqTMgKE4vk9LsJqXus1HLMNKI7cFyZHaRzz7NU_o"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
+          "title": "Nick Cannon hospitalized amid lupus battle, asks fans to 'pray for me'",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq27k7qEYqruB-mF98uSl7ha8oTgxOTv7Cs7CR67XAqIINVLoH20ARQqHyrvg"
+        },
+        {
+          "url": "https://www.newser.com/story/400412/nick-cannon-posts-hospital-pic-asks-for-prayers.html",
+          "title": "Nick Cannon Posts Hospital Pic, Asks for Prayers",
+          "publisher": "Newser",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXbBmgjmln3zj9Evkeq_OIzuKIp6HqzSedQEBtD5fYQpcVpyupdU-JNi-H3m4"
         }
       ]
     },
     {
-      "query": "météo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T11:30:00Z",
-      "related_news_urls": [
-        "https://www.france24.com/fr/info-en-continu/20261121-apr%C3%A8s-les-pluies-le-pas-de-calais-a-encore-des-crues-%C3%A0-g%C3%A9rer",
-        "https://www.franceinfo.fr/france/hauts-de-france/pas-de-calais/on-est-fatigue-c-est-epuisant-stressant-le-desarroi-des-habitants-du-pas-de-calais-apres-des-inondations-a-repetition_8294126.html",
-        "https://www.20minutes.fr/planete/4264751-20261122-intemperies-jura-ain-vigilance-orange-pluie-inondations-calais-reste-alerte-orange-crues"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe3_kmttna7_YGkddwTUjG8ynQSfdv8J1kJ5r2aHPFFynmaJBhks1y7uI1O7g",
-      "image_credit": "France 24",
-      "news": [
-        {
-          "url": "https://www.france24.com/fr/info-en-continu/20261121-apr%C3%A8s-les-pluies-le-pas-de-calais-a-encore-des-crues-%C3%A0-g%C3%A9rer",
-          "title": "Après les pluies, le Pas-de-Calais a encore des crues à gérer",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe3_kmttna7_YGkddwTUjG8ynQSfdv8J1kJ5r2aHPFFynmaJBhks1y7uI1O7g"
-        },
-        {
-          "url": "https://www.franceinfo.fr/france/hauts-de-france/pas-de-calais/on-est-fatigue-c-est-epuisant-stressant-le-desarroi-des-habitants-du-pas-de-calais-apres-des-inondations-a-repetition_8294126.html",
-          "title": "\"On est fatigué, (...) c'est épuisant, stressant\" : le désarroi des habitants du Pas-de-Calais après des inondations à répétition",
-          "publisher": "franceinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnEfTWW_xv-L0AMLE44GPhhEOfb0ytITovidxCRE-bYwKBOA5xCgOTnbQVIQ"
-        },
-        {
-          "url": "https://www.20minutes.fr/planete/4264751-20261122-intemperies-jura-ain-vigilance-orange-pluie-inondations-calais-reste-alerte-orange-crues",
-          "title": "Le Jura et l’Ain passent en vigilance orange pluie-inondations",
-          "publisher": "20 Minutes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUn0R41C2AclLnc2BvaZKM-kXBGTnRmrE5ILy8wUnUyflQ5tC7BhdmV2d2Q6c"
-        }
-      ]
-    },
-    {
-      "query": "погода",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T11:30:00Z",
-      "related_news_urls": [
-        "https://novostivolgograda.ru/news/2026-11-22/zima-blizko-kogda-v-volgograde-vypadet-pervyy-sneg-5738588",
-        "https://gazeta-vp.ru/volgogradskie-sinoptiki-rasskazali-kakoj-budet-zima-v-regione/",
-        "https://v1.ru/text/gorod/2026/11/20/76779640/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYA3hha0ybGV_3sLDDNdzNkMmxBddwYIf8UwqpO9tCHQPPWCb6LGBP2SPD50Q",
-      "image_credit": "novostivolgograda.ru",
-      "news": [
-        {
-          "url": "https://novostivolgograda.ru/news/2026-11-22/zima-blizko-kogda-v-volgograde-vypadet-pervyy-sneg-5738588",
-          "title": "Зима близко: когда в Волгограде выпадет первый снег",
-          "publisher": "novostivolgograda.ru",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYA3hha0ybGV_3sLDDNdzNkMmxBddwYIf8UwqpO9tCHQPPWCb6LGBP2SPD50Q"
-        },
-        {
-          "url": "https://gazeta-vp.ru/volgogradskie-sinoptiki-rasskazali-kakoj-budet-zima-v-regione/",
-          "title": "Волгоградские синоптики рассказали, какой будет зима в регионе",
-          "publisher": "Волжская правда",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgiSmG-Ma1l13avNFQ0y4N1W4IgMyUp0_3cXZms5zEjYPVddhoJ65QSZ0kDtw"
-        },
-        {
-          "url": "https://v1.ru/text/gorod/2026/11/20/76779640/",
-          "title": "Зима близко: в Волгограде метеорологи обещают резкое похолодание после нескольких дней тепла",
-          "publisher": "Новости Волгограда и Волгоградской области",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xxBAdZhZMjUHaU_Q1MguBZp8SoVAp7a4AJOQKxUIugCW75s2KpRUaHuJ5Xc"
-        }
-      ]
-    },
-    {
-      "query": "troy aikman radio comments joe buck",
+      "query": "ncaa division i football bowl subdivision",
       "approx_searches": "100+",
-      "published_at": "2026-11-22T11:20:00Z",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
-        "https://sports.yahoo.com/articles/burn-down-nfl-fans-react-045919545.html",
-        "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242"
+        "https://www.espn.com/college-football/story/_/id/50535192/waiver-approved-army-navy-13th-game-2027",
+        "https://www.cbssports.com/college-football/news/army-navy-game-ncaa-waiver-2027-13th-game-cfp-expansion/",
+        "https://www.firstcoastnews.com/article/sports/local-sports/army-navy-game-bid-jacksonville/77-41b5650d-6cca-43b2-95da-459fc7a556fd"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc-H_vSno8a6L3nsWJncD50xv8dpXUpT8EReX5YCfmDByliS6FUPx-x1XMr9w",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
-          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’ - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/burn-down-nfl-fans-react-045919545.html",
-          "title": "‘Burn it all down’: NFL fans react after hearing what Troy Aikman has now said about Joe Buck",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1E9FeUVy2y3Xl96ILn4-XNGglqmLJIOWPjakpXDSfPUAclJ_1f4ZvV5nQyK4"
-        },
-        {
-          "url": "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242",
-          "title": "Troy Aikman escalates ongoing feud with Joe Buck, saying broadcast partner ‘always wanted a one-man booth’",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZG4o50zce7tg1bwnNg6a5rXYGaPjM8brC8p-NdldcwgNXgavX3-3lbNzOtM"
-        }
-      ]
-    },
-    {
-      "query": "granada vs real madrid",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T11:10:00Z",
-      "related_news_urls": [
-        "https://www.realmadrid.com/en-US/news/football/womens-team/fixtures/granada-real-madrid-a-cerrar-noviembre-con-una-victoria-en-la-liga-f-21-11-2026",
-        "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401928998/valparaiso-troy"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVFwWuzEIKifmAP_Cn5QjJx9R8Fm8Af5xzibbWZjP0qKN5vjWZ0WqlqCyt4",
-      "image_credit": "Real Madrid CF | Web Oficial",
-      "news": [
-        {
-          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/fixtures/granada-real-madrid-a-cerrar-noviembre-con-una-victoria-en-la-liga-f-21-11-2026",
-          "title": "Granada-Real Madrid: aiming for victory before the break",
-          "publisher": "Real Madrid CF | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVFwWuzEIKifmAP_Cn5QjJx9R8Fm8Af5xzibbWZjP0qKN5vjWZ0WqlqCyt4"
-        },
-        {
-          "url": "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026",
-          "title": "Real Madrid Squad List Against Granada",
-          "publisher": "Real Madrid CF | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIdK1SdPmrxKK8455HzqKFg-0QM5Kcz1IiKpAPL27afe0xGYobtiYKr2FzE24"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928998/valparaiso-troy",
-          "title": "Valparaiso 77-72 Troy (Nov 21, 2026) Final Score",
+          "url": "https://www.espn.com/college-football/story/_/id/50535192/waiver-approved-army-navy-13th-game-2027",
+          "title": "Waiver approved allowing Army, Navy to play 13th game in 2027",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBKGEN3Etk1Gp9eNuPXp9yVWaHTK6mTwA3m04ICY15Iy7lE5_RuRXvefEUVZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc-H_vSno8a6L3nsWJncD50xv8dpXUpT8EReX5YCfmDByliS6FUPx-x1XMr9w"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/army-navy-game-ncaa-waiver-2027-13th-game-cfp-expansion/",
+          "title": "NCAA grants waiver for Army vs. Navy to be played as 13th game in 2027 amid College Football Playoff expansion",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs5lbqsBkg21pnpIxL8NJls_uLkTmxYp9FXs60BFboiicgozAk8_7d76I9g4"
+        },
+        {
+          "url": "https://www.firstcoastnews.com/article/sports/local-sports/army-navy-game-bid-jacksonville/77-41b5650d-6cca-43b2-95da-459fc7a556fd",
+          "title": "'Tremendous fit here': Jacksonville leaders explore options to host the annual Army-Navy game",
+          "publisher": "firstcoastnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9Mr6ngx6Gku-l_Cr2jRsr9HlkMfahu93LWLS5kFPpBSzAYVma34WwhAb18dA"
         }
       ]
     },
     {
-      "query": "pakistan a vs india a",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T11:00:00Z",
+      "query": "tessa majors",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T12:10:00Z",
       "related_news_urls": [
-        "https://www.cricinfo.com/story/ind-vs-pak-asia-cup-rising-stars-pakistan-a-opt-to-bat-against-india-a-both-sides-unchanged-1563603",
-        "https://sports.yahoo.com/articles/ind-vs-pak-asia-cup-103413698.html",
-        "https://www.india.com/sports/cricket/india-a-vs-pakistan-a-acc-asia-cup-rising-stars-2026-match-no-8-22-nov-predicted-playing-11-teams-ind-a-vs-pak-a-squad-key-players-list-picked-captains-tilak-varma-abdul-samad-vaibhav-sooryavanshi-abh-8547050/"
+        "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
+        "https://www.dailymail.com/news/article-16312305/Barnard-teen-killer-college-murder-early-release.html",
+        "https://www.the-sun.com/news/17340255/teen-killer-tessa-majors-freed-early/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlnajtCncnhICVXws7_qR-FIhthaiG-VD8GiE371Zh_CIhhcw0rn5v-KSfVwc",
-      "image_credit": "Cricinfo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.cricinfo.com/story/ind-vs-pak-asia-cup-rising-stars-pakistan-a-opt-to-bat-against-india-a-both-sides-unchanged-1563603",
-          "title": "Pakistan A opt to bat against India A; both teams unchanged",
-          "publisher": "Cricinfo",
+          "url": "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
+          "title": "Exclusive | Teen killer who held down Tessa Majors while pal plunged knife into her heart freed early — despite violence behind bars",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlnajtCncnhICVXws7_qR-FIhthaiG-VD8GiE371Zh_CIhhcw0rn5v-KSfVwc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/ind-vs-pak-asia-cup-103413698.html",
-          "title": "IND vs PAK Asia Cup Rising Stars toss 'cheating' controversy: Abdul Samad questions match referee's call as Tilak Varma watches",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.dailymail.com/news/article-16312305/Barnard-teen-killer-college-murder-early-release.html",
+          "title": "Teen killer who held down college freshman, 18, as she was ruthlessly murdered is freed from prison early despite bad behavior behind bars",
+          "publisher": "Daily Mail",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqWp5JleuN_ky2s_ibaVyZh0UWyX_MdVCxRjKupjC0swd_lRiabVrw0eX1QM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfIbuw2EVpoLbkEzLbu2zVsSiIXpwKb3O4lJfuVjEDIK-Z5mZnfBOSyGOnLo"
         },
         {
-          "url": "https://www.india.com/sports/cricket/india-a-vs-pakistan-a-acc-asia-cup-rising-stars-2026-match-no-8-22-nov-predicted-playing-11-teams-ind-a-vs-pak-a-squad-key-players-list-picked-captains-tilak-varma-abdul-samad-vaibhav-sooryavanshi-abh-8547050/",
-          "title": "India A vs Pakistan A Predicted Playing 11: Will Vaibhav Sooryavanshi open with Abhishek Sharma again?",
-          "publisher": "India.com",
+          "url": "https://www.the-sun.com/news/17340255/teen-killer-tessa-majors-freed-early/",
+          "title": "Teen killer who held student, 18, down as pal stabbed her to death freed early",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdD-yiCRLsejJDTi_DaB-0E2yZBphX8XmVLOm3voLmm5LRo-Ul9h9MS-Gs7ig"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOKkuxoX6Xj6fEIswHlN8taXOLDMg8uXO6UV_VoT4rFT_SE3XeC54_SPCtNek"
+        }
+      ]
+    },
+    {
+      "query": "lpga leaderboard",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T12:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50554344/kim-clings-1-shot-lead-lpga-finale-korda-back-mix",
+        "https://www.lpga.com/news/2026/jeeno-thitikul-rides-another-back-nine-31-into-solo-second-after-second-round-in-naples",
+        "https://www.bbc.com/sport/golf/articles/cmx20gypx244o"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTXU3yl1JS4P1VsB7Wh12SobdESXAW8Krg6h5d97x4lCAsqb60Z86_AYku-Rc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50554344/kim-clings-1-shot-lead-lpga-finale-korda-back-mix",
+          "title": "Kim clings to 1-shot lead in LPGA finale; Korda back in mix",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTXU3yl1JS4P1VsB7Wh12SobdESXAW8Krg6h5d97x4lCAsqb60Z86_AYku-Rc"
+        },
+        {
+          "url": "https://www.lpga.com/news/2026/jeeno-thitikul-rides-another-back-nine-31-into-solo-second-after-second-round-in-naples",
+          "title": "Jeeno Thitikul Rides Another Back-Nine 31 Into Solo Second after Second Round in Naples",
+          "publisher": "LPGA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrjppqssgi7dvhuCwxuzZ6cScgS6_a7adSEdtRQg8X2ABVyQqzVM25luQiZE"
+        },
+        {
+          "url": "https://www.bbc.com/sport/golf/articles/cmx20gypx244o",
+          "title": "England's Hull one stroke off lead at lucrative LPGA finale",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjEvkFfDYGvYkoS2ai-I82lTwto8VT3ObQlNEWVDE7uaDew5hoIruUGFISWd4"
+        }
+      ]
+    },
+    {
+      "query": "elija lofton",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T12:00:00Z",
+      "related_news_urls": [
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177581.html",
+        "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/elija-lofton-injury-update-miami-virginia-tech/92485056007/",
+        "https://www.aol.com/articles/elija-lofton-injured-latest-updates-011840000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPkiXCQKDcOIXgZzCenyeQDFP04qjhl6tVLF-Yxv_T6gBPkVDI3h9l0xaxqhQ",
+      "image_credit": "Miami Herald",
+      "news": [
+        {
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177581.html",
+          "title": "Miami Hurricanes lose a key playmaker to injury against Virginia Tech",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPkiXCQKDcOIXgZzCenyeQDFP04qjhl6tVLF-Yxv_T6gBPkVDI3h9l0xaxqhQ"
+        },
+        {
+          "url": "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/elija-lofton-injury-update-miami-virginia-tech/92485056007/",
+          "title": "Is Elija Lofton injured? Latest updates after Miami TE exits game",
+          "publisher": "The Palm Beach Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1xS41lc_4QJhlwOPypssa_9PMtv6ofFfEivl0mEmqbuIsH9D9yGNWxyGwPC0"
+        },
+        {
+          "url": "https://www.aol.com/articles/elija-lofton-injured-latest-updates-011840000.html",
+          "title": "Is Elija Lofton injured? Latest updates after Miami TE exits game",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8DJLjc9Ydzjz7ZHlJ3XX6cMzzvNY9TJqCTvzS9OGlwwNtVLtTCHTkYHxHEWU"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 pc port",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T12:00:00Z",
+      "related_news_urls": [
+        "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
+        "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
+        "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0",
+      "image_credit": "The Verge",
+      "news": [
+        {
+          "url": "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
+          "title": "The wait begins for GTA VI on PC",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0"
+        },
+        {
+          "url": "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
+          "title": "Can your PC run GTA VI? The minimum RAM, GPU, and CPU requirements to expect",
+          "publisher": "ZDNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3kJNkzXanVDNQNyaPDMEs4JkdvJ8Fb0unFhnJOpE8Rby4w4BA_ELs1mq6llM"
+        },
+        {
+          "url": "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
+          "title": "The anonymous hacker Cyberleek releases an Xbox build of 'GTA VI'",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-svtkRS8YlnQ5rcYqmUH7sZ-mNM5N14hkhAJohZzN3KLnirybnE9Z2DTUON4"
+        }
+      ]
+    },
+    {
+      "query": "weather chicago",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T12:00:00Z",
+      "related_news_urls": [
+        "https://chicago.suntimes.com/weather/2026/11/21/chicago-reaches-third-warmest-fall-on-record",
+        "https://wgntv.com/weather/chicago-weather-saturday-11212026/",
+        "https://www.nbcchicago.com/news/local/record-warmth-possible-in-chicago-but-the-forecast-is-about-to-change-dramatically/4018978/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDPbIdx63ozwo0S88ESsB0ahMCLV6Vsfr8BxVVXazWA1GDM_OqeiJQbL3E_iI",
+      "image_credit": "Chicago Sun-Times",
+      "news": [
+        {
+          "url": "https://chicago.suntimes.com/weather/2026/11/21/chicago-reaches-third-warmest-fall-on-record",
+          "title": "Chicago reaches third warmest fall in 150 years, says National Weather Service",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDPbIdx63ozwo0S88ESsB0ahMCLV6Vsfr8BxVVXazWA1GDM_OqeiJQbL3E_iI"
+        },
+        {
+          "url": "https://wgntv.com/weather/chicago-weather-saturday-11212026/",
+          "title": "Second consecutive day of near record warmth: Saturday’s predicted 72 degrees to tie 113-year-old record for the date",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdeps4dpw6aSV-SN_PI4Vu_JGr_c_-GV7HAhu1TIALxPoqFUlFjZZ3t2GmifY"
+        },
+        {
+          "url": "https://www.nbcchicago.com/news/local/record-warmth-possible-in-chicago-but-the-forecast-is-about-to-change-dramatically/4018978/",
+          "title": "Record warmth possible in Chicago, but forecast is about to change dramatically",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyjOKmTDGKNbpvyaXZ0Jyt-eLG9LoXzEHzgNSUjzBNMJmos6-jsj2uhMZVzeo"
         }
       ]
     }
