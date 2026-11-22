@@ -102,7 +102,16 @@ async function handler(req,env){
    const q=isIdeas
     ?'SELECT '+fields+' FROM coliseum_ideas i LEFT JOIN coliseum_perspective_consents c ON c.idea_id=i.id AND c.member_id=i.member_id WHERE i.model_id=? AND i.sector=? ORDER BY i.created_at DESC LIMIT '+count
     :'SELECT '+fields+' FROM coliseum_messages WHERE model_id=? AND sector=? ORDER BY created_at DESC LIMIT '+count;
-   const query=await db.prepare(q).bind(modelId,sector).all();
+   let query;
+   try{query=await db.prepare(q).bind(modelId,sector).all()}
+   catch(error){
+    if(!isIdeas)throw error;
+    // A source merge must not disable an existing Coliseum room while
+    // the separate advisory D1 migration is still awaiting authorization.
+    query=await db.prepare(`SELECT id,parent_id,model_id,sector,member_id,title,description,created_at,
+      0 AS perspective_shared FROM coliseum_ideas
+      WHERE model_id=? AND sector=? ORDER BY created_at DESC LIMIT 40`).bind(modelId,sector).all();
+   }
    const rows=(query.results||[]).map(({member_id,perspective_shared,...r})=>({
     ...r,author:publicMemberLabel(member_id),
     ...(isIdeas?{mine:member_id===member,perspectiveShared:perspective_shared===1}:{})
