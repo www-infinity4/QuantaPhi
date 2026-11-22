@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {findSourceCard,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner Short lx2C0wK2pak becomes exactly one source-backed Oracle Public/Media Quick Card',()=>{
+ const id='lx2C0wK2pak';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'owner source added once, no duplicate');
+ const video=rows[0];
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.match(video.title,/title unverified/i);
+ assert.ok(validateOwnerYouTubeLink(video));
+ assert.equal(validateOwnerYouTubeLink({...video,publisherVerified:true}),false);
+ const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+ assert.ok(card,'shared Oracle card factory creates this Short card');
+ assert.equal(card.featureUrl,video.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.equal(findSourceCard(card.id)?.id,card.id);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
