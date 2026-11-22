@@ -5,6 +5,7 @@ on:
       - 'index.html'
       - 'site-traffic.js'
       - 'data/site-traffic.json'
+      - 'data/site-traffic-lifetime.json'
       - 'workers/site-traffic/**'
       - 'test/site-traffic.test.mjs'
       - 'test/site-traffic-cache.test.mjs'

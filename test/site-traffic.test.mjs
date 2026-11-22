@@ -170,7 +170,7 @@ test('public counter remains monotonic across reloads, later lower totals and st
  nodes=await runClientOnce(store,[new Error('offline'),stale]);
  assert.equal(nodes.qtrafficRequests.textContent,'958,421');
  assert.equal(nodes.qtrafficViews.textContent,'374,475');
- assert.match(nodes.qtrafficNote.textContent,/temporarily stale|not yet authorized/);
+ assert.match(nodes.qtrafficNote.textContent,/temporarily stale|not yet authorized|verified backup/);
  const higher=trafficPayload(970000,380000,'2026-10-26T17:00:00.000Z');
  nodes=await runClientOnce(store,[higher]);
  assert.equal(nodes.qtrafficRequests.textContent,'970,000');
@@ -313,7 +313,8 @@ test('stale successful ledger cannot hide newer, source-validated Cloudflare fal
  assert.equal(nodes.qtrafficRequests.textContent,'1,191,980');
  assert.equal(nodes.qtrafficViews.textContent,'459,620');
  assert.match(nodes.qtrafficNote.textContent,/2026-10-24 to 2026-10-30, 7\/7 days recorded/);
- assert.match(nodes.qtrafficNote.textContent,/automatic ingestion is not yet authorized/);
+ assert.match(nodes.qtrafficNote.textContent,/verified backup/i);
+ assert.doesNotMatch(nodes.qtrafficNote.textContent,/not yet authorized/,'a storage outage does not establish an authorization failure');
 });
 
 test('manual refresh asks server to recheck Cloudflare rather than just reread cached totals',async()=>{
