@@ -53,9 +53,9 @@ export function validateCreatorVideoReviewCase(row){
  if(!row||typeof row!=='object'||!safeId.test(row.videoId||''))return false;
  if(row.caseId!=='CVID-'+String(row.recordedAt||'').replaceAll('-','')+'-'+row.videoId)return false;
  if(row.sourceUrl!=='https://www.youtube.com/watch?v='+row.videoId)return false;
- if(!/^\\d{4}-\\d{2}-\\d{2}$/.test(row.recordedAt)||!Number.isFinite(Date.parse(row.recordedAt+'T00:00:00Z')))return false;
+ if(!/^\d{4}-\d{2}-\d{2}$/.test(row.recordedAt)||!Number.isFinite(Date.parse(row.recordedAt+'T00:00:00Z')))return false;
  if(row.reportedBy!=='owner'||!allowedCodes.has(row.concernCode)||!allowedStatuses.has(row.status))return false;
- if(typeof row.summary!=='string'||row.summary.length<25||row.summary.length>500||/[<>\\u0000-\\u001f]/.test(row.summary))return false;
+ if(typeof row.summary!=='string'||row.summary.length<25||row.summary.length>500||/[<>\u0000-\u001f]/.test(row.summary))return false;
  if(!row.evidence||typeof row.evidence!=='object'||typeof row.evidence.videoDirectlyReviewed!=='boolean'||
   typeof row.evidence.uploaderVerified!=='boolean'||typeof row.evidence.contextVerified!=='boolean'||
   !Array.isArray(row.evidence.verifiedTimestamps)||row.evidence.verifiedTimestamps.some(n=>!Number.isInteger(n)||n<0))return false;
