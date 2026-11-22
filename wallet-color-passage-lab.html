@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Infinity φ · Color Passage Window Lab</title>
+<style>
+:root{font:17px/1.55 system-ui,sans-serif;color:#21364b;background:#f5f3f0}
+*{box-sizing:border-box}body{margin:0;padding:18px 14px}
+main{max-width:730px;margin:auto}
+section{background:#fff;border:1px solid #cbd7db;border-radius:16px;padding:18px;margin:14px 0}
+h1{line-height:1.22;font-size:1.65rem}h2{font-size:1.15rem}
+p{overflow-wrap:anywhere}small{color:#436074}
+.actions{display:flex;flex-wrap:wrap;gap:9px}
+button{min-height:44px;border:1px solid #356c8c;border-radius:10px;color:white;background:#245d80;font:650 16px/1.3 system-ui,sans-serif;padding:10px 14px}
+button:focus-visible,a:focus-visible{outline:3px solid #b87e00;outline-offset:3px}
+#passageWindow{display:grid;grid-template-columns:repeat(auto-fit,minmax(49px,1fr));gap:10px;margin:18px 0}
+.passage{min-height:59px;border-radius:14px;border:2px solid #1d3642;display:grid;place-items:center;position:relative;overflow:hidden}
+.passage::after{content:"";width:38%;aspect-ratio:1;border-radius:50%;border:3px solid #142c3d;box-shadow:0 0 0 2px #ffffff9f;background:#f6f5f1;opacity:.96}
+.passage[data-match="false"]::after{background:#21364b;opacity:1;border-color:#d2e3ee}
+#passageStatus{font-weight:700}
+.note{border-left:4px solid #356c8c;padding-left:12px}
+@media(max-width:450px){button{flex:1 1 100%}h1{font-size:1.43rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body><main>
+<section>
+<p><small>INFINITY φ · UNIFIED WALLET · DEVELOPMENT PREVIEW</small></p>
+<h1>Color Passage Window</h1>
+<p>Eleven hexadecimal color bulbs represent a checksum-like alignment picture of a <strong>synthetic wallet's own registered devices</strong>. The pale openings line up only when every displayed tile matches.</p>
+<p><strong>Synthetic test data only.</strong> The actual wallet, its account balances, and your phone's stored data are not read here. Colors are not a secret key.</p>
+<div class="actions">
+<button type="button" id="makeSample">Create a new synthetic window</button>
+<button type="button" id="misalign">Misalign one color passage</button>
+<button type="button" id="realign">Realign the display</button>
+</div>
+</section>
+<section>
+<h2>Aligned passageways</h2>
+<div id="passageWindow" role="img" aria-label="Synthetic hexadecimal window awaiting generation"></div>
+<p id="passageStatus" role="status" aria-live="polite">No wallet access granted · no window generated.</p>
+<p class="note">Aligned colors open a <em>visual window only</em>. Real access to protected data still requires a server-verified wallet session and a signed, account-scoped device challenge. No wallet access granted.</p>
+</section>
+</main><script type="module" src="./wallet-color-passage-lab.mjs"></script></body>
+</html>
