@@ -424,3 +424,14 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Separate gates:** Independent source review, current-head CI / mergeability, guarded merge, deployed public asset readback, real YouTube in-card play/Stop/fallback and physical Android acceptance remain unverified.
 - **Progress for this single card only:** approximately 2/6 acceptance gates (source intake + test-first reproduction) observed; do not change aggregate issue #1603 completion estimate. Session count: one newly recorded intake/build pass. Remaining sessions unknown; no background execution asserted.
 - **Next single executable action:** Inspect source-plus-checkpoint branch head's Creator Quick Cards and other exact-head CI, review diff against current main, then gate merge and separately verify website/Android playback.
+
+
+## Owner video GPN7ZPXHR4g — 2026-11-22 intake / Quick Card branch
+
+- **Owner source URL:** https://youtu.be/GPN7ZPXHR4g?is=Y4SaNKrXoqCFvShP . Canonical original: https://www.youtube.com/watch?v=GPN7ZPXHR4g .
+- **Canonical issue / draft PR:** #1603, https://github.com/www-infinity4/QuantaPhi/pull/2099 . Branch `feat/owner-youtube-GPN7ZPXHR4g-1603-20261122`; no Moltnook runner lease claimed. One bounded owner video.
+- **Scope / provenance:** Syntactically valid submitted ID; YouTube watch page retrieval was throttled. Title, publisher/channel, exact publication date, available provider embed, age classification and media rights **not independently verified**. Use explicit unverified fallback; no made-up full-channel import, cached copied media, special 21+ placement, advertisements, rewards, Star Coins or payout.
+- **TDD and source commits:** Test-first missing-record regression `0ee0ee28fdc0292474ae1b6b5eb3975774178c1b`; dedicated owner source record `2f5ac25a9b93d3d07cffc387eca7225ec857942e`; import of focused regression into existing Creator CI suite `4960d766ada7191812b87060455c895a5a187b24`. RED test execution on its test-only commit was **not observed**, so no RED run success/failure claim.
+- **Functional route:** Reuse the exact existing `youtube-owner-video-links.mjs` → Oracle Public/Media source card and owner View More. One optional publisher-hosted playback iframe after click, Stop, original-source fallback.
+- **Separate acceptance gates (new single-video scope):** source intake and source+test staged (estimated 2/6); exact-head CI, independent review/merge policy, Cloudflare release, public page/browser and physical Android Play/Stop remain **unverified**. This does not revise aggregate #1603 acceptance percentage. Session spent: 1; remaining sessions: unknown.
+- **Next single executable step:** Inspect the Creator post Quick Cards and all required CI runs at latest exact branch head, repair any failing focused assertions, independently review before any eligible merge, then separately inspect public deployment and Android playback.

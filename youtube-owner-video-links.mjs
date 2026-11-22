@@ -210,6 +210,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'GPN7ZPXHR4g',title:'YouTube video GPN7ZPXHR4g (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=GPN7ZPXHR4g',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
