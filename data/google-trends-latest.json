@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T12:31:17.185097Z",
+  "checked_at": "2026-11-22T13:01:06.863173Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "barcelona - villarreal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T12:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17540059/barcelona-vs-villarreal-alineacion-probabilidades-laliga",
-        "https://www.si.com/es-us/lesionados-y-sancionados-del-barcelona-para-enfrentarse-al-villarreal",
-        "https://www.sport.es/es/noticias/barca/barca-busca-cambiar-menu-hora-136630093"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyBW7Tk326GwIQTvh-86wB4r8477RoQXBxhkEPGGcL7Z4Pl6czwR9FiHKWM0",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17540059/barcelona-vs-villarreal-alineacion-probabilidades-laliga",
-          "title": "Barcelona: posible alineación y probabilidades vs Villarreal",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyBW7Tk326GwIQTvh-86wB4r8477RoQXBxhkEPGGcL7Z4Pl6czwR9FiHKWM0"
-        },
-        {
-          "url": "https://www.si.com/es-us/lesionados-y-sancionados-del-barcelona-para-enfrentarse-al-villarreal",
-          "title": "Lesionados y sancionados del Barcelona para enfrentarse al Villarreal",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBvu0JX8RlCoR-IZlkiT5pw60FgQqtg6RTuSGoZe1-j_ayz-e4L0t40ut1UbA"
-        },
-        {
-          "url": "https://www.sport.es/es/noticias/barca/barca-busca-cambiar-menu-hora-136630093",
-          "title": "El Barça busca cambiar el menú a la hora de comer",
-          "publisher": "SPORT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3tBjlpBedKCwdM3JWGMp2V2sLxbhCf0UFNLJvRdSI5v6uEsSVFgVh752nmeY"
-        }
-      ]
-    },
-    {
-      "query": "burnley vs blackburn rovers",
+      "query": "jack campbell text kelvin sheppard",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T12:10:00Z",
+      "published_at": "2026-11-22T12:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cj04wnnr2py9t",
-        "https://www.skysports.com/football/live-blog/13613569/burnley-vs-blackburn-live-championship-match-updates-score-stream-and-free-highlights",
-        "https://www.theleaguepaper.com/latest-news/football-league-championship/470492/lets-fix-bad-habits-and-get-the-win/"
+        "https://sports.yahoo.com/articles/jack-campbell-sent-detroit-lions-100408895.html",
+        "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/19/detroit-lions-jack-campbell-neck-injury-kelvin-sheppard-aidan-hutchinson/92861091007/",
+        "https://atozsports.com/nfl/detroit-lions-news/lions-linebacker-jack-campbell-reportedly-believes-he-can-return-this-season-but-one-big-hurdle-still-stands-in-his-way/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXdAC4BPVf9QloNyriF0-7TOZOqef9izr85C9sKCtmQqAItgui_5sT9I-Y-_8",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwA6bhuciq37CDGQQNCgCWTfw1K1OtojqvISNBW1TghCGJSv6ismZ-x0Wd2Dg",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cj04wnnr2py9t",
-          "title": "EFL Championship LIVE: Burnley vs Blackburn Rovers - build-up, team news, match stats & live text commentary",
-          "publisher": "BBC",
+          "url": "https://sports.yahoo.com/articles/jack-campbell-sent-detroit-lions-100408895.html",
+          "title": "Jack Campbell sent Detroit Lions DC a text that fired him up",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXdAC4BPVf9QloNyriF0-7TOZOqef9izr85C9sKCtmQqAItgui_5sT9I-Y-_8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwA6bhuciq37CDGQQNCgCWTfw1K1OtojqvISNBW1TghCGJSv6ismZ-x0Wd2Dg"
         },
         {
-          "url": "https://www.skysports.com/football/live-blog/13613569/burnley-vs-blackburn-live-championship-match-updates-score-stream-and-free-highlights",
-          "title": "Burnley vs Blackburn LIVE! Championship match updates, score, stream and free highlights",
-          "publisher": "Sky Sports",
+          "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/19/detroit-lions-jack-campbell-neck-injury-kelvin-sheppard-aidan-hutchinson/92861091007/",
+          "title": "Lions' Kelvin Sheppard says text from Jack Campbell 'fired me up'",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_eP3wdsFwcL_P6eHgpPUy1X7nbnBGDGDDU7rye9zRKgKIrmmeR-xF-fqGVjM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRssrFNSkva50dfWxpQhRYK6Kx6jWsDCsTOw9CSqAnCfsXqVJ74niwsz6aKvls"
         },
         {
-          "url": "https://www.theleaguepaper.com/latest-news/football-league-championship/470492/lets-fix-bad-habits-and-get-the-win/",
-          "title": "LET’S FIX BAD HABITS – AND GET THE WIN!",
-          "publisher": "The League Paper",
+          "url": "https://atozsports.com/nfl/detroit-lions-news/lions-linebacker-jack-campbell-reportedly-believes-he-can-return-this-season-but-one-big-hurdle-still-stands-in-his-way/",
+          "title": "Lions linebacker Jack Campbell reportedly believes he can return this season, but one big hurdle still stands in his way",
+          "publisher": "A to Z Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfeT0IemSN9vnEym2dEMBemaNDVu9-RqBfXIrIRmwCSEIya6N-mMoAA_KF1Vo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVPWhN94YND-rv4gANwkQjFTbXBwnnB2rHkknXTE13PeMOzsbT3kHbEhX_0zM"
         }
       ]
     },
     {
-      "query": "weather nyc",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T12:10:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/22/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
-        "https://www.accuweather.com/en/hurricane/east-coast-storm-to-spread-tropical-rain-wind-and-flooding-northward-this-weekend/1961885",
-        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqFQ4Duox39G2o8beTI10uyme2NancIDsi_Tv6m9nmtjv0w-29co_j0C9cQ7o",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/22/forecast/regional/east-coast-storm-coastal-flooding-winds-rain",
-          "title": "East Coast storm could soak millions this weekend",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqFQ4Duox39G2o8beTI10uyme2NancIDsi_Tv6m9nmtjv0w-29co_j0C9cQ7o"
-        },
-        {
-          "url": "https://www.accuweather.com/en/hurricane/east-coast-storm-to-spread-tropical-rain-wind-and-flooding-northward-this-weekend/1961885",
-          "title": "East Coast storm to spread tropical rain, wind and flooding northward this weekend",
-          "publisher": "AccuWeather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnKj7k1Wp-0sRW28ZQmkTpfBh-e4CYbz9yzTwSmTi_cqB9gEZmYF1D0LteT6M"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
-          "title": "East Coast storm could disrupt holiday travel after battering Florida",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
-        }
-      ]
-    },
-    {
-      "query": "nick cannon",
+      "query": "jared padalecki guarding stars movie",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T12:10:00Z",
+      "published_at": "2026-11-22T12:40:00Z",
       "related_news_urls": [
-        "https://www.billboard.com/music/rb-hip-hop/nick-cannon-hospital-lupus-prayers-1236387115/",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
-        "https://www.newser.com/story/400412/nick-cannon-posts-hospital-pic-asks-for-prayers.html"
+        "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
+        "https://www.tvinsider.com/swooon/1314215/guarding-stars-the-bodyguard-title-change-book-interview/",
+        "https://www.elle.com/culture/movies-tv/a74458732/leighton-meester-guarding-stars-netflix-interview/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWSRQPRd_jK7HvmVk1AXdgqTMgKE4vk9LsJqXus1HLMNKI7cFyZHaRzz7NU_o",
-      "image_credit": "Billboard",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.billboard.com/music/rb-hip-hop/nick-cannon-hospital-lupus-prayers-1236387115/",
-          "title": "Nick Cannon Hospitalized Amid Lupus Battle: ‘Pray for Me, Y’all!’",
-          "publisher": "Billboard",
+          "url": "https://www.theguardian.com/film/2026/nov/18/guarding-stars-review-netflix-leighton-meester",
+          "title": "Guarding Stars review – Leighton Meester is a delight in fizzy Netflix holiday romance",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWSRQPRd_jK7HvmVk1AXdgqTMgKE4vk9LsJqXus1HLMNKI7cFyZHaRzz7NU_o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtFzEQaSek1kon_OBea3Kv5i_PFLXowRj2MWtH56hdYgvMdkUIzAJZDJPvhPg"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/nick-cannon-hospitalization-lupus/92884820007/",
-          "title": "Nick Cannon hospitalized amid lupus battle, asks fans to 'pray for me'",
+          "url": "https://www.tvinsider.com/swooon/1314215/guarding-stars-the-bodyguard-title-change-book-interview/",
+          "title": "'Guarding Stars' Writers Break Down 'The Bodyguard' Title Change",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThVKLcuk4BhqpojrMth4Z_QODLaBu9o69FFcGdaExPgRVHZQCE0zTgjAeXJTI"
+        },
+        {
+          "url": "https://www.elle.com/culture/movies-tv/a74458732/leighton-meester-guarding-stars-netflix-interview/",
+          "title": "Leighton Meester Loves Playing a Bitch: ‘Somehow It Comes Easy to Me’",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfMd1EiYXK2ijnnIaWvh0EGoJ9QdsU9DdhEhnOcs2PIcvSNnKY8mpfi6XmU_M"
+        }
+      ]
+    },
+    {
+      "query": "was snl new last night",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-22T12:40:00Z",
+      "related_news_urls": [
+        "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
+        "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
+      "image_credit": "NBC TV",
+      "news": [
+        {
+          "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
+          "title": "Is Saturday Night Live New Tonight? About the November 21 Host and Musical Guest",
+          "publisher": "NBC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
+        },
+        {
+          "url": "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
+          "title": "Is ‘SNL’ new tonight? See the season 52 episode schedule",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuywhwu3MDHEays1ELdmOfSi-S5TOV094ZAouZOBVo2B1o9UeUU6rF53zLpQA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/",
+          "title": "Is 'SNL' on tonight? Show reveals schedule change before Thanksgiving",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq27k7qEYqruB-mF98uSl7ha8oTgxOTv7Cs7CR67XAqIINVLoH20ARQqHyrvg"
-        },
-        {
-          "url": "https://www.newser.com/story/400412/nick-cannon-posts-hospital-pic-asks-for-prayers.html",
-          "title": "Nick Cannon Posts Hospital Pic, Asks for Prayers",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXbBmgjmln3zj9Evkeq_OIzuKIp6HqzSedQEBtD5fYQpcVpyupdU-JNi-H3m4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTtPuklWzUMjrMlIhMdUkfqI3DTtLHynp_Vad6luSZdE9S6IM3QE2UNg09nT4"
         }
       ]
     },
     {
-      "query": "ncaa division i football bowl subdivision",
+      "query": "marshawn lynch",
       "approx_searches": "100+",
-      "published_at": "2026-11-22T12:10:00Z",
+      "published_at": "2026-11-22T12:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50535192/waiver-approved-army-navy-13th-game-2027",
-        "https://www.cbssports.com/college-football/news/army-navy-game-ncaa-waiver-2027-13th-game-cfp-expansion/",
-        "https://www.firstcoastnews.com/article/sports/local-sports/army-navy-game-bid-jacksonville/77-41b5650d-6cca-43b2-95da-459fc7a556fd"
+        "https://sports.yahoo.com/articles/49ers-rookie-kaelon-black-draws-023936889.html",
+        "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
+        "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc-H_vSno8a6L3nsWJncD50xv8dpXUpT8EReX5YCfmDByliS6FUPx-x1XMr9w",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyZkcVUebhoNfqRHXCbiw77geT2bNYm9NVSU5DDqTlbvv-2_kHRbrkdmZ3hY",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50535192/waiver-approved-army-navy-13th-game-2027",
-          "title": "Waiver approved allowing Army, Navy to play 13th game in 2027",
+          "url": "https://sports.yahoo.com/articles/49ers-rookie-kaelon-black-draws-023936889.html",
+          "title": "49ers Rookie Kaelon Black Draws Eye-Opening Comparison to Marshawn Lynch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmyZkcVUebhoNfqRHXCbiw77geT2bNYm9NVSU5DDqTlbvv-2_kHRbrkdmZ3hY"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
+          "title": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQc-H_vSno8a6L3nsWJncD50xv8dpXUpT8EReX5YCfmDByliS6FUPx-x1XMr9w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEIRvp7kHoLXx2rubmFULLG8A159ugpy9LLtWVtdaH2RSEwKzBQWFu5bPa5mY"
         },
         {
-          "url": "https://www.cbssports.com/college-football/news/army-navy-game-ncaa-waiver-2027-13th-game-cfp-expansion/",
-          "title": "NCAA grants waiver for Army vs. Navy to be played as 13th game in 2027 amid College Football Playoff expansion",
-          "publisher": "CBS Sports",
+          "url": "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/",
+          "title": "Raiders owner Mark Davis 'hurt' by 'Madden' movie's portrayal of Al Davis | Exclusive",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs5lbqsBkg21pnpIxL8NJls_uLkTmxYp9FXs60BFboiicgozAk8_7d76I9g4"
-        },
-        {
-          "url": "https://www.firstcoastnews.com/article/sports/local-sports/army-navy-game-bid-jacksonville/77-41b5650d-6cca-43b2-95da-459fc7a556fd",
-          "title": "'Tremendous fit here': Jacksonville leaders explore options to host the annual Army-Navy game",
-          "publisher": "firstcoastnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9Mr6ngx6Gku-l_Cr2jRsr9HlkMfahu93LWLS5kFPpBSzAYVma34WwhAb18dA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS28fSxYQrFQ6Ofx_AQ6YdgtEBcK5Atnxd_l3uvc9dkFcAw-fjFky9xWP4p0As"
         }
       ]
     },
     {
-      "query": "tessa majors",
+      "query": "andrew tate",
       "approx_searches": "100+",
-      "published_at": "2026-11-22T12:10:00Z",
+      "published_at": "2026-11-22T12:40:00Z",
       "related_news_urls": [
-        "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
-        "https://www.dailymail.com/news/article-16312305/Barnard-teen-killer-college-murder-early-release.html",
-        "https://www.the-sun.com/news/17340255/teen-killer-tessa-majors-freed-early/"
+        "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
+        "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
+        "https://www.imdb.com/news/ni66119095/?ref_=nm_nwr_1"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI",
-      "image_credit": "New York Post",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
-          "title": "Exclusive | Teen killer who held down Tessa Majors while pal plunged knife into her heart freed early — despite violence behind bars",
-          "publisher": "New York Post",
+          "url": "https://variety.com/2026/tv/news/andrew-tate-toxic-empire-hbo-lauren-southern-rape-sex-trafficking-1236952871/",
+          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQafsx6DLtM_kdzbGOQrrk2dkCV68SHHV3zL0gBJDwxkanaSea4XTLucw749FM"
         },
         {
-          "url": "https://www.dailymail.com/news/article-16312305/Barnard-teen-killer-college-murder-early-release.html",
-          "title": "Teen killer who held down college freshman, 18, as she was ruthlessly murdered is freed from prison early despite bad behavior behind bars",
-          "publisher": "Daily Mail",
+          "url": "https://www.imdb.com/fr-ca/news/ni66119095/?ref_=nm_nwr_1",
+          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdfIbuw2EVpoLbkEzLbu2zVsSiIXpwKb3O4lJfuVjEDIK-Z5mZnfBOSyGOnLo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
         },
         {
-          "url": "https://www.the-sun.com/news/17340255/teen-killer-tessa-majors-freed-early/",
-          "title": "Teen killer who held student, 18, down as pal stabbed her to death freed early",
-          "publisher": "The Sun",
+          "url": "https://www.imdb.com/news/ni66119095/?ref_=nm_nwr_1",
+          "title": "Andrew Tate Accused of Rape by Ex-Far Right Influencer in New Documentary",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOKkuxoX6Xj6fEIswHlN8taXOLDMg8uXO6UV_VoT4rFT_SE3XeC54_SPCtNek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYAaK1dc05mG8Rqc5ngWJNt4Dmps3lwBLPi-apkABtkQ3qgZUMEJIwYYpktxA"
         }
       ]
     },
     {
-      "query": "lpga leaderboard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T12:10:00Z",
+      "query": "clima",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-22T12:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50554344/kim-clings-1-shot-lead-lpga-finale-korda-back-mix",
-        "https://www.lpga.com/news/2026/jeeno-thitikul-rides-another-back-nine-31-into-solo-second-after-second-round-in-naples",
-        "https://www.bbc.com/sport/golf/articles/cmx20gypx244o"
+        "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/",
+        "https://tn.com.ar/estados-unidos/clima/2026/11/22/como-estara-el-clima-en-new-york-este-domingo-22-de-noviembre/",
+        "https://eldiariony.com/2026/11/22/el-tiempo-de-hoy-en-nueva-york-para-este-domingo-22-de-noviembre/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTXU3yl1JS4P1VsB7Wh12SobdESXAW8Krg6h5d97x4lCAsqb60Z86_AYku-Rc",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA",
+      "image_credit": "La Nación",
       "news": [
         {
-          "url": "https://www.espn.com/golf/story/_/id/50554344/kim-clings-1-shot-lead-lpga-finale-korda-back-mix",
-          "title": "Kim clings to 1-shot lead in LPGA finale; Korda back in mix",
-          "publisher": "ESPN",
+          "url": "https://www.lanacion.com.ar/estados-unidos/nueva-york/clima-en-yonkers-new-york-hoy-cual-es-el-pronostico-del-tiempo-para-la-semana-del-23-de-noviembre-al-nid22112026/",
+          "title": "Clima en Yonkers, New York hoy: cuál es el pronóstico del tiempo para la semana del 23 de noviembre al 23 de noviembre",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTXU3yl1JS4P1VsB7Wh12SobdESXAW8Krg6h5d97x4lCAsqb60Z86_AYku-Rc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe_9Hz0wKXaY2_IVgG3TCgNryQj93q_4qi63VwtHP0-_-Z6xq0svsLTTKS8XA"
         },
         {
-          "url": "https://www.lpga.com/news/2026/jeeno-thitikul-rides-another-back-nine-31-into-solo-second-after-second-round-in-naples",
-          "title": "Jeeno Thitikul Rides Another Back-Nine 31 Into Solo Second after Second Round in Naples",
-          "publisher": "LPGA",
+          "url": "https://tn.com.ar/estados-unidos/clima/2026/11/22/como-estara-el-clima-en-new-york-este-domingo-22-de-noviembre/",
+          "title": "¿Cómo estará el clima en New York este domingo 22 de noviembre?",
+          "publisher": "TN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrjppqssgi7dvhuCwxuzZ6cScgS6_a7adSEdtRQg8X2ABVyQqzVM25luQiZE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv7TmK4TTGfw2BIyDdpPdsKDVDMI9XNr0sKD-Dq7oDgErCz6PgUGxmirhm5Qk"
         },
         {
-          "url": "https://www.bbc.com/sport/golf/articles/cmx20gypx244o",
-          "title": "England's Hull one stroke off lead at lucrative LPGA finale",
-          "publisher": "BBC",
+          "url": "https://eldiariony.com/2026/11/22/el-tiempo-de-hoy-en-nueva-york-para-este-domingo-22-de-noviembre/",
+          "title": "El tiempo de hoy en Nueva York para este domingo 22 de noviembre",
+          "publisher": "El Diario NY",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjEvkFfDYGvYkoS2ai-I82lTwto8VT3ObQlNEWVDE7uaDew5hoIruUGFISWd4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbifkbDAjA3nMfU5CDOH_K9GM7qvslYhbhJ2vFhP5p39kqDcwcDQNABuUzikE"
         }
       ]
     },
     {
-      "query": "elija lofton",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T12:00:00Z",
+      "query": "ronny hallin laverne shirley actress",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T12:30:00Z",
       "related_news_urls": [
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177581.html",
-        "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/elija-lofton-injury-update-miami-virginia-tech/92485056007/",
-        "https://www.aol.com/articles/elija-lofton-injured-latest-updates-011840000.html"
+        "https://www.foxnews.com/entertainment/ronny-hallin-played-maxine-laverne-shirley-dies-88-decades-television-report",
+        "https://www.latimes.com/entertainment-arts/story/2026-11-20/ronny-hallin-tv-producer-known-for-laverne-shirley-dies-at-88",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/ronny-hallin-laverne-shirley-happy-days-actress-dead/92880180007/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPkiXCQKDcOIXgZzCenyeQDFP04qjhl6tVLF-Yxv_T6gBPkVDI3h9l0xaxqhQ",
-      "image_credit": "Miami Herald",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pMT4biX8f7kKJ5bsiaxiisG2Wyb2l2QCuEOpvRBaSZ4wP2QnD800jL__Xkw",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318177581.html",
-          "title": "Miami Hurricanes lose a key playmaker to injury against Virginia Tech",
-          "publisher": "Miami Herald",
+          "url": "https://www.foxnews.com/entertainment/ronny-hallin-played-maxine-laverne-shirley-dies-88-decades-television-report",
+          "title": "Ronny Hallin, who played Maxine on 'Laverne & Shirley,' dies at 88 after decades in television: report",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPkiXCQKDcOIXgZzCenyeQDFP04qjhl6tVLF-Yxv_T6gBPkVDI3h9l0xaxqhQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5pMT4biX8f7kKJ5bsiaxiisG2Wyb2l2QCuEOpvRBaSZ4wP2QnD800jL__Xkw"
         },
         {
-          "url": "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/11/21/elija-lofton-injury-update-miami-virginia-tech/92485056007/",
-          "title": "Is Elija Lofton injured? Latest updates after Miami TE exits game",
-          "publisher": "The Palm Beach Post",
+          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-20/ronny-hallin-tv-producer-known-for-laverne-shirley-dies-at-88",
+          "title": "Ronny Hallin, ‘Laverne & Shirley’ producer and sister of Garry and Penny Marshall, dies at 88",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1xS41lc_4QJhlwOPypssa_9PMtv6ofFfEivl0mEmqbuIsH9D9yGNWxyGwPC0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfZkbCSD4pjiKuEn7ghAvruKIeSzu665334a9fIdhAoNgf2L-RRLfTX2V6gzc"
         },
         {
-          "url": "https://www.aol.com/articles/elija-lofton-injured-latest-updates-011840000.html",
-          "title": "Is Elija Lofton injured? Latest updates after Miami TE exits game",
-          "publisher": "AOL.com",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/20/ronny-hallin-laverne-shirley-happy-days-actress-dead/92880180007/",
+          "title": "Ronny Hallin, Maxine on 'Laverne & Shirley,' dies at 88",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8DJLjc9Ydzjz7ZHlJ3XX6cMzzvNY9TJqCTvzS9OGlwwNtVLtTCHTkYHxHEWU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVA_RMabVpDcokIkhALj5aGLcnbozZJCl78Vxutbwc0xGlZAy4F8OaSNx5Im0"
         }
       ]
     },
     {
-      "query": "gta 6 pc port",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T12:00:00Z",
+      "query": "connections today",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T12:30:00Z",
       "related_news_urls": [
-        "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
-        "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
-        "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6"
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-22-2026",
+        "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-22-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-21-1259/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0",
-      "image_credit": "The Verge",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
       "news": [
         {
-          "url": "https://www.theverge.com/games/1036550/grand-theft-auto-6-gta-vi-pc-version-fomo",
-          "title": "The wait begins for GTA VI on PC",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMKyr5KDyf0T-qSDtu99XFSbujbtnq9dKy2spHSOQ-vHcL6N2cIJKF4zUW4L0"
-        },
-        {
-          "url": "https://www.zdnet.com/home-and-office/gta-vi-pc-minimum-system-requirements/",
-          "title": "Can your PC run GTA VI? The minimum RAM, GPU, and CPU requirements to expect",
-          "publisher": "ZDNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3kJNkzXanVDNQNyaPDMEs4JkdvJ8Fb0unFhnJOpE8Rby4w4BA_ELs1mq6llM"
-        },
-        {
-          "url": "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
-          "title": "The anonymous hacker Cyberleek releases an Xbox build of 'GTA VI'",
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-22-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 22, 2026",
           "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-svtkRS8YlnQ5rcYqmUH7sZ-mNM5N14hkhAJohZzN3KLnirybnE9Z2DTUON4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://lifehacker.com/entertainment/nyt-connections-answer-today-november-22-2026",
+          "title": "Today's NYT Connections Hints (and Answer) for Sunday, November 22, 2026",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3I0wxBSbRSTqQiezur0gWhC-ywAByOjk3TGqmMpYVV-2staJ0EdCENa_K37s"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-21-1259/",
+          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 21, #1259",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
         }
       ]
     },
     {
-      "query": "weather chicago",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T12:00:00Z",
+      "query": "atp finals 2026",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-22T12:30:00Z",
       "related_news_urls": [
-        "https://chicago.suntimes.com/weather/2026/11/21/chicago-reaches-third-warmest-fall-on-record",
-        "https://wgntv.com/weather/chicago-weather-saturday-11212026/",
-        "https://www.nbcchicago.com/news/local/record-warmth-possible-in-chicago-but-the-forecast-is-about-to-change-dramatically/4018978/"
+        "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
+        "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title",
+        "https://sports.yahoo.com/articles/alexander-zverev-ties-pete-sampras-120000203.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDPbIdx63ozwo0S88ESsB0ahMCLV6Vsfr8BxVVXazWA1GDM_OqeiJQbL3E_iI",
-      "image_credit": "Chicago Sun-Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDLr7S8dhZsOsQWLHMphPipFRWwGNhfHAKsYAvPdh5ffxBP6eIZklorZJu6k",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://chicago.suntimes.com/weather/2026/11/21/chicago-reaches-third-warmest-fall-on-record",
-          "title": "Chicago reaches third warmest fall in 150 years, says National Weather Service",
-          "publisher": "Chicago Sun-Times",
+          "url": "https://www.nytimes.com/athletic/7802181/2026/11/22/atp-finals-alcaraz-zverev-final/",
+          "title": "The ATP Finals ends with Carlos Alcaraz, Alexander Zverev and an emblem of a strange season - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDPbIdx63ozwo0S88ESsB0ahMCLV6Vsfr8BxVVXazWA1GDM_OqeiJQbL3E_iI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrDLr7S8dhZsOsQWLHMphPipFRWwGNhfHAKsYAvPdh5ffxBP6eIZklorZJu6k"
         },
         {
-          "url": "https://wgntv.com/weather/chicago-weather-saturday-11212026/",
-          "title": "Second consecutive day of near record warmth: Saturday’s predicted 72 degrees to tie 113-year-old record for the date",
-          "publisher": "WGN-TV",
+          "url": "https://www.espn.com/tennis/story/_/id/50553968/zverev-tops-medvedev-sets-showdown-alcaraz-atp-finals-title",
+          "title": "Zverev tops Medvedev, sets up showdown with Alcaraz for ATP Finals title",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdeps4dpw6aSV-SN_PI4Vu_JGr_c_-GV7HAhu1TIALxPoqFUlFjZZ3t2GmifY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bFwwwI9-jSLvWZbWFD__XW_G2X4shIIuyvFIMY0aAKEmm_-zTbS0ZfMv_tM"
         },
         {
-          "url": "https://www.nbcchicago.com/news/local/record-warmth-possible-in-chicago-but-the-forecast-is-about-to-change-dramatically/4018978/",
-          "title": "Record warmth possible in Chicago, but forecast is about to change dramatically",
-          "publisher": "NBC 5 Chicago",
+          "url": "https://sports.yahoo.com/articles/alexander-zverev-ties-pete-sampras-120000203.html",
+          "title": "Alexander Zverev ties Pete Sampras’ personal record at the ATP Finals ahead of Carlos Alcaraz showdown",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyjOKmTDGKNbpvyaXZ0Jyt-eLG9LoXzEHzgNSUjzBNMJmos6-jsj2uhMZVzeo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYVYI6z2wR-U8xPI16-qUxQ87SLE8e9giomxtzZZYW_mKeGGdOx3OP6q74eqw"
+        }
+      ]
+    },
+    {
+      "query": "carnell tate",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T12:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/cbs-carnell-tate-shoulder-likely-to-play-vs-dal",
+        "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-cowboys-week-x1668",
+        "https://www.thefantasyfootballers.com/news/648831/carnell-tate-full-practice-but-questionable-for-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi0HPt2IErGjfcKt3rE8Cz8t7tDSQ6oP7F60ogPAlaUZMwz2llATugaovyCuY",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-21/cbs-carnell-tate-shoulder-likely-to-play-vs-dal",
+          "title": "CBS: Carnell Tate (shoulder) likely to play vs. DAL",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRi0HPt2IErGjfcKt3rE8Cz8t7tDSQ6oP7F60ogPAlaUZMwz2llATugaovyCuY"
+        },
+        {
+          "url": "https://www.tennesseetitans.com/news/quick-hits-on-the-titans-from-wednesday-of-cowboys-week-x1668",
+          "title": "Quick Hits on the Titans From Wednesday of Cowboys Week",
+          "publisher": "Tennessee Titans",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIvppZB-A8XH5UpmMMnQz_goHCUuNtR4AFX0WxBPYeUb1R7lmfC-I5yYYb9rY"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/648831/carnell-tate-full-practice-but-questionable-for-sunday/",
+          "title": "Carnell Tate Full practice, but questionable for Sunday",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH4XiAMlH3hJyCR-AH1ILNmHc_jssfoQGEcbHMgRWICmvvTYO3XhepvN4Tn7I"
         }
       ]
     }
