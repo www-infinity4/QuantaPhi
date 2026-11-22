@@ -1,0 +1,35 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {ACTIVE_SOURCE_CARDS,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner dTinr4W_IhY uses exactly one original YouTube Public/Media Quick Card, without invented metadata or private screenshots',()=>{
+ const id='dTinr4W_IhY';
+ const videos=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(videos.length,1);
+ const video=videos[0];
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(video));
+ assert.equal(Object.hasOwn(video,'captureFrames'),false,'Private capture images and medical inferences stay out of public video catalog');
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.featureUrl,video.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.match(card.details,/one.second/i,'Quick Card explains requested sampling cadence');
+ assert.match(card.details,/not continuous/i,'Still screenshots cannot be misrepresented as continuous screen recording');
+ assert.match(card.details,/not (?:show|prove) why/i,'Do not accuse individuals of targeted manipulation from a feed snapshot');
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ACTIVE_SOURCE_CARDS.some(c=>c.id===card.id));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
