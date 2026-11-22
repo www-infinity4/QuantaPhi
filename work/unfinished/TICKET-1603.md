@@ -447,3 +447,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Dot/state:** 🔴 source staged, verification pending. Scope progress 2/6 (test/source prepared; exact-head CI, independent review, guarded merge, production and Android acceptance outstanding; count conservatively includes production+Android).
 - **Agent/lease:** ChatGPT connector read/write under owner context; no signed runner lease claimed, no automatic grant extension. Sessions for this Short: 1; remaining unknown.
 - **Next single action:** inspect exact-head Creator run outcome and all required PR checks, fix failures on the same branch, then independently review the diff and use the guarded merge process only if permitted.
+
+## Owner video -264Pp4Q5tM · session 2026-11-22
+
+- **Original owner URL:** https://youtu.be/-264Pp4Q5tM?is=iB1HmeTbjGCo0Pow
+- **Canonical source:** https://www.youtube.com/watch?v=-264Pp4Q5tM (video ID syntax valid, watch metadata unavailable due to YouTube fetch throttling).
+- **Same canonical issue:** #1603. **Scoped draft PR:** https://github.com/www-infinity4/QuantaPhi/pull/2105, branch `feat/owner-youtube-264pp4q5tm-1603-20261122`. No separate issue created.
+- **Source-only scope:** exactly one row in `youtube-owner-video-links.mjs`, with unknown title and publisher marked unverified, publication date null and general-media boundary. Existing Oracle Public/Media Quick Card, single click-to-play YouTube player, Stop/source fallback and owner View More feed are reused rather than forked. No full channel import, download, content-age assertion, advertising, wallet or reward changes.
+- **Test-first file commit:** `c6732e2caa1b6d06cba05a859c3f67837e2f7c14`; **Creator CI import commit:** `ec4ce17122281e286e73c811dff34f725f6f83d1`. New test asserts exact one record, unverified metadata, provider URL/image and placement in the public Media feed. **RED test execution was not observed** before the source patch; don't claim a confirmed RED result.
+- **Source entry commit:** `c837992da75bcc68d8dd9736094d45f833e045a0`. GitHub readback found one matching catalog record on the isolated branch. At that commit, Creator workflow `45032927376` and other PR checks were in progress; Image Context `45032927393` succeeded. No complete exact-head test suite or independent source review is established here.
+- **State:** source staged / 🔴 unfinished, no signed Moltnook runner lease claimed, no merge, deploy, live-browser or physical Android receipt. This media-only subtask has source and test files prepared but 0 verified release/Android acceptance checks.
+- **Blocker:** external YouTube title/channel/rights and embedding cannot be confirmed from current access; review and actual CI results still needed.
+- **Next single action:** inspect final Creator run `45032927376` and required exact-head checks; fix any regression on the same PR, independently review then gate merge and production/Android readback. Keep #1603 open.
