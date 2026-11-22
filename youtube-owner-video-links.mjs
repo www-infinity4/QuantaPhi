@@ -139,6 +139,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-21',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'XNXSduqwZ54',title:'MAMÃES ASSISTAM ESTE VIDEO',
+ sourceUrl:'https://www.youtube.com/watch?v=XNXSduqwZ54',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
