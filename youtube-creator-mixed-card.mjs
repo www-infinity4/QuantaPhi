@@ -52,7 +52,7 @@ export function mountMixedCreatorCard(root,card){
   for(const raw of saved){
    const parsed=parseCreatorInput(raw);
    if(parsed?.type!=='channel'||found.some(c=>c.channelId===parsed.channelId))continue;
-   if(found.length>=8)break;
+   if(found.length>=CREATOR_CHANNELS.length+8)break;
    found.push({key:parsed.channelId,name:'Added YouTube channel · '+parsed.channelId.slice(-6),
     channelId:parsed.channelId,url:'https://www.youtube.com/channel/'+parsed.channelId,seed:[]});
   }
