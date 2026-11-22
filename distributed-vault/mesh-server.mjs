@@ -6,7 +6,7 @@ import {createServer as createHttpServer} from 'node:http';
 import {createServer as createHttpsServer} from 'node:https';
 import {DatabaseSync} from 'node:sqlite';
 import {randomBytes,randomUUID,createHash,timingSafeEqual} from 'node:crypto';
-import {mkdirSync} from 'node:fs';
+import {mkdirSync,readFileSync} from 'node:fs';
 import {dirname} from 'node:path';
 
 const MAX_BODY=1_400_000; // Encrypted shard request bound; use small source chunks
@@ -157,6 +157,21 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
  async function handle(req,res){
   const path=new URL(req.url||'/', 'http://loopback.invalid').pathname;
   if(req.method==='GET'&&path==='/health')return send(res,200,{ok:true,service:'infinity-mesh-local-v1'});
+  // Same-origin installed app page and modules; no public cross-origin
+  // credential access. CSP blocks inline scripts and third-party code.
+  const staticFiles={
+    '/app': ['mesh-app.html','text/html; charset=utf-8'],
+    '/app/mesh-peer.mjs': ['mesh-peer.mjs','text/javascript; charset=utf-8'],
+    '/app/app-cache.mjs': ['app-cache.mjs','text/javascript; charset=utf-8']
+  };
+  if(req.method==='GET'&&Object.hasOwn(staticFiles,path)){
+   const [file,contentType]=staticFiles[path];
+   const bytes=readFileSync(new URL('./'+file,import.meta.url));
+   res.writeHead(200,{'Content-Type':contentType,'Cache-Control':'no-store',
+    'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer',
+    'Content-Security-Policy':"default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; base-uri 'none'; frame-ancestors 'none'; form-action 'none'"});
+   res.end(bytes);return;
+  }
   const isOwner=path.startsWith('/v1/owner/');
   const isNode=path.startsWith('/v1/node/');
   requireTrue(isOwner||isNode,'not found',404);
