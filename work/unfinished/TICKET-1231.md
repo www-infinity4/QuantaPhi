@@ -1,3 +1,22 @@
+---
+issue: 1231
+state: implementing
+dot: 🔴
+progress_percent: 43
+progress_basis: "3 of 7 milestones source-staged: regression, three native clamps, consent and frame-cap contract; exact-head CI, independent review, protected release and physical phone acceptance pending."
+sessions_spent: 1
+sessions_remaining_estimate: unknown
+agent: ChatGPT GitHub connector
+lease_id: null
+fence: null
+lease_expires_at: null
+task_session_id: null
+next_action: "Review Android exact-head CI and fix any failure before independent privacy review."
+merged: false
+deployed: false
+live_verified: false
+---
+
 # TICKET-1231 — Bubbles / Android native readiness
 
 Canonical issue: https://github.com/www-infinity4/QuantaPhi/issues/1231
