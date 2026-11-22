@@ -243,8 +243,11 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      setStatus('Account check temporarily unavailable. Your existing sign-in was not changed. Use Check sign-ins again to retry; no new Cloudflare authorization is required by this error.');
      if(recover)recover.hidden=true;
     }
+    // Only a confirmed missing wallet can offer authentication recovery.
+    // A failed service read must not visually invite a new OAuth session.
+    const missingWallet=code==='verified_wallet_required';
     for(const id of ['github','cloudflare']){
-     cards[id].hidden=false;actions[id].hidden=false;
+     cards[id].hidden=!missingWallet;actions[id].hidden=!missingWallet;
      labels[id].textContent='';
      actions[id].textContent='Sign in with '+(id==='github'?'GitHub':'Cloudflare');
     }
