@@ -402,3 +402,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **State / dot / progress:** `implementing` / 🔴 / estimated 2 of 6 gates (original source recorded, regression defined; CI, review, merge, deployment/Android acceptance outstanding). One documented session; remaining unknown.
 - **Lease:** No authenticated Moltnook lease was claimed; GitHub branch action is not runner lease or identity proof.
 - **Next executable action:** Inspect current draft PR's exact-head checks (including Creator source-and-mobile), independently review source + copyright boundary, reconcile latest main if needed, then permitted merge and Cloudflare/Android readback. Do not mark deployed or complete without receipts.
+
+
+## Owner video uvqqCjk_aXs — intake / single-card source session (2026-11-22)
+
+- **Original owner URL:** https://youtu.be/uvqqCjk_aXs?is=06AKUeFyRec04qXN . Canonical video watch URL: https://www.youtube.com/watch?v=uvqqCjk_aXs .
+- **Issue / PR:** Reuses #1603; draft PR #2095, https://github.com/www-infinity4/QuantaPhi/pull/2095 . Isolated branch `feat/youtube-owner-uvqqCjk_aXs-1603-20261122`, based on main `c9568a11d8265a8e8d1e4f1055bf3ce8521b59d5`; no signed Moltnook lease claimed.
+- **Scope / import:** One explicit owner-supplied video ID with fallback title marked unverified, no publisher, no exact publication date, no rights/embedded playback claim. Existing `youtube-owner-video-links.mjs` and Oracle public media player / View More are reused. One in-card player only; no media rehosting, 21+ assertion, ads, payout or wallet modification.
+- **Test-first RED receipt:** `8289dea6e67029e83acde56b48222a6b0dbd55ca` adds an integration assertion. Creator Quick Cards run https://github.com/www-infinity4/QuantaPhi/actions/runs/45025726336 (job 137218203350) failed as expected: owner video assertion `expected: 1`, `actual: 0`; 129 tests, 1 failure. Other workflow outcomes are not evidence of the missing catalog entry passing.
+- **Source commit:** `01bb32efb43676727f4ed6c831d9cb4c8778ba71` adds one canonical URL, unverified metadata flag, dated observation and unchanged category boundary. Test / full CI on this exact commit are pending confirmation.
+- **Separate gates:** Independent source review, current-head CI / mergeability, guarded merge, deployed public asset readback, real YouTube in-card play/Stop/fallback and physical Android acceptance remain unverified.
+- **Progress for this single card only:** approximately 2/6 acceptance gates (source intake + test-first reproduction) observed; do not change aggregate issue #1603 completion estimate. Session count: one newly recorded intake/build pass. Remaining sessions unknown; no background execution asserted.
+- **Next single executable action:** Inspect source-plus-checkpoint branch head's Creator Quick Cards and other exact-head CI, review diff against current main, then gate merge and separately verify website/Android playback.
