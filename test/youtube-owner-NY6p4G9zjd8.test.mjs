@@ -1,0 +1,33 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {findSourceCard,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner NY6p4G9zjd8 link creates one unverified-source Oracle Media Quick Card',()=>{
+ const id='NY6p4G9zjd8';
+ const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(matches.length,1,'Owner video appears exactly once in shared catalog');
+ const v=matches[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ assert.equal(validateOwnerYouTubeLink({...v,publisherVerified:true}),false);
+ assert.equal(validateOwnerYouTubeLink({...v,contentBoundary:'adult'}),false);
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'Reuse existing one-video card renderer');
+ const c=cards[0];
+ assert.equal(c.featureUrl,v.sourceUrl);
+ assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(c.details,/not independently verified/i);
+ assert.equal(findSourceCard(c.id)?.id,c.id);
+ assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
+ assert.ok(ALL_FEED_CARDS.some(card=>card.id===c.id));
+ assert.equal(departmentFor(c),'media');
+});
