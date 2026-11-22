@@ -269,7 +269,9 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
      Number.isInteger(x.index)&&x.index>=0&&x.index<4096&&HEX.test(x.sha256||''),'invalid inventory');
     listed.add(x.fileId+':'+x.index+':'+x.sha256);
    }
-   const receipts=db.prepare('SELECT p.file_id,p.shard_index,s.hash FROM mesh_placements p JOIN mesh_shards s ON s.file_id=p.file_id AND s.shard_index=p.shard_index WHERE p.node_id=?').all(caller.node_id);
+   const receipts=db.prepare('SELECT p.file_id,p.shard_index,s.hash FROM mesh_placements p JOIN mesh_shards s ON s.file_id=p.file_id AND s.shard_index=p.shard_index WHERE p.node_id=? AND p.acked=1').all(caller.node_id);
+   // Only verified prior cache receipts can be "lost". Pending placements
+   // are expected to be absent on the app's first heartbeat, before download.
    let invalidated=0;
    for(const receipt of receipts)
     if(!listed.has(receipt.file_id+':'+receipt.shard_index+':'+receipt.hash)){
