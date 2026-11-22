@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T05:01:27.459767Z",
+  "checked_at": "2026-11-22T05:31:22.828628Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ben wang",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T04:30:00Z",
-      "related_news_urls": [
-        "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
-        "https://www.imdb.com/fr/news/ni66118981/?ref_=nwc_art_perm",
-        "https://www.bustle.com/entertainment/ben-wang-hunger-games-wyatt-interview"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStgUYaBMQbK8C-2i0qvZFw_t4lG1vvF6-hWL1ln84OK4fahLmys93Kvy3hxK8",
-      "image_credit": "Star Tribune",
-      "news": [
-        {
-          "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
-          "title": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStgUYaBMQbK8C-2i0qvZFw_t4lG1vvF6-hWL1ln84OK4fahLmys93Kvy3hxK8"
-        },
-        {
-          "url": "https://www.imdb.com/fr/news/ni66118981/?ref_=nwc_art_perm",
-          "title": "Why Wyatt Callow From The Hunger Games: Sunrise On The Reaping Looks So Familiar",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHM95oyZJQ3ZRr5DiiNmkNIdxnVbof7Hi2lRLZdzviRiFf9q3qN7OcDCV6LPE"
-        },
-        {
-          "url": "https://www.bustle.com/entertainment/ben-wang-hunger-games-wyatt-interview",
-          "title": "'Hunger Games': Ben Wang On Playing Wyatt & Bonding With His Costars",
-          "publisher": "Bustle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyXH1pyQdlDEIpzx2zmvVIZJUVE43DxyUZnTEWqQ-qRTF4n-EsMrt9RLVfiPQ"
-        }
-      ]
-    },
-    {
-      "query": "inde navarrette",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T04:20:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/movies/movie-news/obsession-inde-navarrette-spotlight-tribute-gotham-awards-1236759136/",
-        "https://www.cinemablend.com/movies/i-thought-inde-navarrette-oscars-best-actress-biggest-competition-julianne-moore-the-debut",
-        "https://screenrant.com/obsession-inde-navarrette-oscar-award-contender/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFkrjzeF2jKtTKJFt8bf34aVu_7XUbq_IJcfFHg8crPD0K7uCFqEu9o_xDSXg",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/obsession-inde-navarrette-spotlight-tribute-gotham-awards-1236759136/",
-          "title": "‘Obsession’ Breakout Inde Navarrette to Receive Spotlight Tribute at Gotham Film Awards (Exclusive)",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFkrjzeF2jKtTKJFt8bf34aVu_7XUbq_IJcfFHg8crPD0K7uCFqEu9o_xDSXg"
-        },
-        {
-          "url": "https://www.cinemablend.com/movies/i-thought-inde-navarrette-oscars-best-actress-biggest-competition-julianne-moore-the-debut",
-          "title": "I Thought Inde Navarrette Was A Shoe-In For The Oscars. Then I Saw Her Biggest Competition",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkKyIFFnihBOts3vRPy0peiOu9wvn5o7phU-9HrwYDiWkqygjhDFOsOG5NajU"
-        },
-        {
-          "url": "https://screenrant.com/obsession-inde-navarrette-oscar-award-contender/",
-          "title": "Obsession Star Inde Navarrette Addresses Oscar Buzz After Breakout Horror 's $524M Success",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSN9WJ1UQTx-gom2JPvViTLlnQaFlFlMMDhd0rRn6Crl9XLYKCWLreN2eI8UQU"
-        }
-      ]
-    },
-    {
-      "query": "isack hadjar",
+      "query": "f1 vote",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T04:20:00Z",
+      "published_at": "2026-11-22T05:10:00Z",
       "related_news_urls": [
-        "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/",
-        "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/",
-        "https://www.france24.com/fr/info-en-continu/20261121-f1-verstappen-qui-perd-gagne-%C3%A0-las-vegas"
+        "https://www.espn.com/f1/story/_/id/50472097/v8-engine-confirmed-formula-1",
+        "https://www.formula1.com/en/latest/article/fia-confirms-unanimous-agreement-on-framework-for-2030-power-units.AZ7EFvWPyGPH0xG1JS8Ud",
+        "https://racer.com/2026/11/20/unanimous-agreement-reached-on-2-1l-turbo-v8s-for-f1-in-2030"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpoNjvq-g_LWEGnknLl0H0HVQYEatNYQHQf7TAPFct6ox6TGLpNjiPRb-r9Eo",
-      "image_credit": "Motorsport.com",
-      "news": [
-        {
-          "url": "https://www.motorsport.com/f1/news/isack-hadjar-red-bull-looked-a-bit-stupid-in-vegas-qualifying-tow-game/10876319/",
-          "title": "Isack Hadjar: Red Bull \"looked a bit stupid\" in Vegas qualifying tow game",
-          "publisher": "Motorsport.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpoNjvq-g_LWEGnknLl0H0HVQYEatNYQHQf7TAPFct6ox6TGLpNjiPRb-r9Eo"
-        },
-        {
-          "url": "https://www.motorsport.com/f1/news/isack-hadjar-we-looked-stupid-in-las-vegas-as-i-dont-like-slipstreaming/10876445/",
-          "title": "Isack Hadjar: “We looked stupid” in Las Vegas as I don’t like slipstreaming",
-          "publisher": "Motorsport.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGXLvQkqSkjn86hxAXZGFSdWNa7mcmrtTUYt0p0xWvRiyPbYSUSfN34seIJXM"
-        },
-        {
-          "url": "https://www.france24.com/fr/info-en-continu/20261121-f1-verstappen-qui-perd-gagne-%C3%A0-las-vegas",
-          "title": "F1: Verstappen, qui perd gagne à Las Vegas",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVXnpYq6niK118_lXXggaVQRkq3a13mquYxyM__cWjd9XKdQ50oYvSSj5O_k"
-        }
-      ]
-    },
-    {
-      "query": "is snl new tonight",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
-        "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0",
-      "image_credit": "NBC TV",
-      "news": [
-        {
-          "url": "https://www.nbc.com/nbc-insider/snl-tonight-new-or-repeat-november-21-host",
-          "title": "Is Saturday Night Live New Tonight? About the November 21 Host and Musical Guest",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYIMLiakoXr1APH2J1B6DyNd79wHgqzstn6CwFsfrKsCVOGksVV-NrmHgrng0"
-        },
-        {
-          "url": "https://www.nj.com/entertainment/2026/11/is-snl-new-tonight-see-the-season-52-episode-schedule.html",
-          "title": "Is ‘SNL’ new tonight? See the season 52 episode schedule",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuywhwu3MDHEays1ELdmOfSi-S5TOV094ZAouZOBVo2B1o9UeUU6rF53zLpQA"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/21/snl-schedule-change-november-21/92878798007/",
-          "title": "Is 'SNL' on tonight? Show reveals schedule change before Thanksgiving",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTtPuklWzUMjrMlIhMdUkfqI3DTtLHynp_Vad6luSZdE9S6IM3QE2UNg09nT4"
-        }
-      ]
-    },
-    {
-      "query": "arvid lindblad",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T04:10:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
-        "https://sports.yahoo.com/articles/lawson-hurt-costly-issue-las-094700974.html",
-        "https://www.formula1.com/en/video/we-did-the-basics-well-p6-lindblad-on-how-racing-bulls-maximised-las-vegas-qualifying.1882443880346255316"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT98iHfrdgjP6jjfzi5hcxBfH6R_lZFIJAWTgVDs4hWnbHlXDW3ep1FDvkD84",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/features/a74470597/liam-lawson-driver-2026-las-vegas-grand-prix-interview/",
-          "title": "Racing Bulls Driver Liam Lawson Talks Raptors and Country Songs Ahead of 2026 Vegas GP",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT98iHfrdgjP6jjfzi5hcxBfH6R_lZFIJAWTgVDs4hWnbHlXDW3ep1FDvkD84"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lawson-hurt-costly-issue-las-094700974.html",
-          "title": "Lawson hurt by costly issue in Las Vegas: 'I need to figure it out'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxEpxbRrLonxUxC-wK5NSsd__bYIw6JEhX-6DcQ445j8Xv4ntzcMYWkjIxhns"
-        },
-        {
-          "url": "https://www.formula1.com/en/video/we-did-the-basics-well-p6-lindblad-on-how-racing-bulls-maximised-las-vegas-qualifying.1882443880346255316",
-          "title": "'We did the basics well' - P6 Lindblad on how Racing Bulls maximised Las Vegas Qualifying",
-          "publisher": "Formula 1",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRU4YhR5KdxW05z-Km4dm4P0VJbyrdQCPFOA5N_F4-lbh4bn0_hxCWPHA7v6zw"
-        }
-      ]
-    },
-    {
-      "query": "alvin wyatt",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T04:10:00Z",
-      "related_news_urls": [
-        "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
-        "https://www.reutersconnect.com/item/bethune-cookman-interim-head-coach-alvin-shine-wyatt-coaches-during-the-florida-classic-against-florida-aampm-at-camping/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MjE3OTE",
-        "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A",
-      "image_credit": "Bethune-Cookman University Athletics",
-      "news": [
-        {
-          "url": "https://bcuathletics.com/news/2026/11/15/bethune-cookman-university-parts-ways-with-head-football-coach-raymond-woodie-jr.aspx",
-          "title": "Bethune-Cookman University Parts Ways with Head Football Coach Raymond Woodie, Jr.",
-          "publisher": "Bethune-Cookman University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxdtjDV-w70WpTdYDMTW6Ho-0UROc6FMBQ97C55RL9cFVcF-y00avcqVBK18A"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/bethune-cookman-interim-head-coach-alvin-shine-wyatt-coaches-during-the-florida-classic-against-florida-aampm-at-camping/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MjE3OTE",
-          "title": "Licensable picture: Bethune-Cookman interim head coach Alvin “Shine” Wyatt coaches during the Florida Classic against Florida A&M at Camping",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7eFwrDQx6_5qG9-anCLT6K2466dUQ09CLn6KFJkGZtFcpLfQZi_CDZp-IHD8"
-        },
-        {
-          "url": "https://www.orlandosentinel.com/2026/11/21/famu-rain-dampen-alvin-wyatts-return-to-florida-classic-as-rattlers-win-27-14/",
-          "title": "FAMU, rain dampen Alvin Wyatt’s return to Florida Classic as Rattlers win 27-14",
-          "publisher": "Orlando Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyi0EpayaBoMUOyHoIINeBbtNWjI1JqX70IoD5mR8D0Vl2_uVxaH6-OeEblN0"
-        }
-      ]
-    },
-    {
-      "query": "whitney peak",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T04:10:00Z",
-      "related_news_urls": [
-        "https://www.refinery29.com/en-us/2026/11/12022666/hunger-games-sunrise-on-the-reaping-review-maya-hawke-whitney-peak-interview",
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
-        "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDh0n6Xufa-vJYJPds-kfDMxmWsN5FZqcwrRcyewQYDUxGPiE4nii6JWGGE2o",
-      "image_credit": "Refinery29",
-      "news": [
-        {
-          "url": "https://www.refinery29.com/en-us/2026/11/12022666/hunger-games-sunrise-on-the-reaping-review-maya-hawke-whitney-peak-interview",
-          "title": "“The Revolution Is Constant.” Sunrise On The Reaping's Maya Hawke & Whitney Peak On Its Urgent Message",
-          "publisher": "Refinery29",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDh0n6Xufa-vJYJPds-kfDMxmWsN5FZqcwrRcyewQYDUxGPiE4nii6JWGGE2o"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/ethan-hawke-uma-thurmans-famous-164642105.html",
-          "title": "Ethan Hawke and Uma Thurman's famous lookalike daughter wows in daring crop top – 9 months after surprise wedding",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl0Edc6zEJaJtq9OR2JpRR-fGSUzvJMGneW8JTlQiB8Nb6etceKC14GvkS-TU"
-        },
-        {
-          "url": "https://www.facebook.com/officialbenshapiro/videos/maya-hawke-wants-to-radicalize-your-children-with-the-hunger-games/1656611059290293/",
-          "title": "Ben Shapiro. . Maya Hawke Wants to Radicalize Your Children With The Hunger Games",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSFJNzuVYKL0R26DDiaHphst6BlgVQHNK8ka5ybXd94cgkV4ZzZZEvhRUQNm8"
-        }
-      ]
-    },
-    {
-      "query": "f1",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
-        "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b0272568f08268116cd51a4",
-        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGhefO596JD-iC6SMv7UGtx4eavLlKA5SX8kCVAPTNQgr6PDE74fHhfQ9njfk",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-1OfNONsQh2eVHhgku1cCWTZxWOOxoyfS2__SrXFi3jb-xnpn3680Qw4rHx8",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/f1/story/_/id/50530089/las-vegas-grand-prix-2026-live-updates-results-analysis-commentary",
-          "title": "Las Vegas Grand Prix LIVE! F1 race updates, commentary and results",
+          "url": "https://www.espn.com/f1/story/_/id/50472097/v8-engine-confirmed-formula-1",
+          "title": "F1 bosses reach agreement to introduce V8 engines in 2030",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGhefO596JD-iC6SMv7UGtx4eavLlKA5SX8kCVAPTNQgr6PDE74fHhfQ9njfk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-1OfNONsQh2eVHhgku1cCWTZxWOOxoyfS2__SrXFi3jb-xnpn3680Qw4rHx8"
         },
         {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/22/las-vegas-grand-prix-formula-one-2026-race-updates-live?page=with:block-6b0272568f08268116cd51a4",
-          "title": "Las Vegas Grand Prix: Formula One 2026 race updates – live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROtvmyYFSyH8PhvKFoYLctDskTyWC4j-FtF4F8gR3JhSC8mgyRRPX5XTxTYto"
-        },
-        {
-          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
+          "url": "https://www.formula1.com/en/latest/article/fia-confirms-unanimous-agreement-on-framework-for-2030-power-units.AZ7EFvWPyGPH0xG1JS8Ud",
+          "title": "FIA confirms unanimous agreement on 2030 PU framework",
           "publisher": "Formula 1",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYtdYXebEfLKwR7p3MH-rEOklYStNTiBW1eosPlPqzKYBvljFApInsCXp3k_I"
+        },
+        {
+          "url": "https://racer.com/2026/11/20/unanimous-agreement-reached-on-2-1l-turbo-v8s-for-f1-in-2030",
+          "title": "Unanimous agreement reached on 2.1L turbo V8s for F1 in 2030",
+          "publisher": "RACER - Racing News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROUUrGhgfmiZ7b5B3QSoU2e1rRJWYrdNW5b-wRHsTHV2AlDZ5XLbLRFGfFxq8"
         }
       ]
     },
     {
-      "query": "jake fette",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T04:00:00Z",
+      "query": "juan brunetta",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T05:10:00Z",
       "related_news_urls": [
-        "https://arizonasports.com/ncaa/arizona-state/asu-football/brock-osweiler-asu-jake-fette",
-        "https://www.azcentral.com/videos/sports/college/asu/2026/11/17/jake-fette-asu-football-performance/92818099007/",
-        "https://www.statepress.com/article/2026/11/sports-jake-fette-football-freshman"
+        "https://www.sportsgambler.com/betting-tips/football/tigres-vs-club-america-prediction-lineups-odds-2026-11-21/",
+        "https://cwibc.co.id/en/club-america-rotated-lineup-tigres",
+        "https://ca.sports.yahoo.com/news/tigres-beat-am-rica-death-051200114.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXstHp9hf1G6-0l3p-ZP0z8xK1Y5j37wJ1UzANcAc5vWi2adBhGlgd_1SZZE",
-      "image_credit": "Arizona Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tkY0Xxpt-UUT3QL6YUFCmk2j4kBmr9YHWvDH4UJ11VLs46H2p2riDAsYsWQ",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://arizonasports.com/ncaa/arizona-state/asu-football/brock-osweiler-asu-jake-fette",
-          "title": "Brock Osweiler gives ASU quarterback Jake Fette high praise",
-          "publisher": "Arizona Sports",
+          "url": "https://www.sportsgambler.com/betting-tips/football/tigres-vs-club-america-prediction-lineups-odds-2026-11-21/",
+          "title": "Tigres vs América Prediction, Betting Tips, Lineups & Odds | 21 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnXstHp9hf1G6-0l3p-ZP0z8xK1Y5j37wJ1UzANcAc5vWi2adBhGlgd_1SZZE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tkY0Xxpt-UUT3QL6YUFCmk2j4kBmr9YHWvDH4UJ11VLs46H2p2riDAsYsWQ"
         },
         {
-          "url": "https://www.azcentral.com/videos/sports/college/asu/2026/11/17/jake-fette-asu-football-performance/92818099007/",
-          "title": "ASU freshman QB Jake Fette has kept mistakes to a minimum",
-          "publisher": "azcentral.com and The Arizona Republic",
+          "url": "https://cwibc.co.id/en/club-america-rotated-lineup-tigres",
+          "title": "Club America Names Rotated XI for Tigres UANL Clash",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh46p79cgmX0M2xUzedLJRXdodxvLFJVoREfKzG5yWo2vintnck1ely3ZlFe4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNFNcSS0jsREPDY5Y9kXxzCaR7DEtVR81L6-8bpTTJ4nKTsK9yqf8fIdspnXk"
         },
         {
-          "url": "https://www.statepress.com/article/2026/11/sports-jake-fette-football-freshman",
-          "title": "Freshman phenom: Jake Fette's first year brings glimpse into future",
-          "publisher": "The State Press",
+          "url": "https://ca.sports.yahoo.com/news/tigres-beat-am-rica-death-051200114.html",
+          "title": "👊Tigres beat América at the death with a Brunetta stunner",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOScqQAdYfYas6zdhOpWr03JUGS1N2KVqfsDRNIl93TpadPy6sPWb0ZucBtWI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR50N-A1n4G_NDo4rwcsrDBgJdtpWAnRtq_xEgW8ZibRJpfRxEM6IrW2Nslx6A"
         }
       ]
     },
     {
-      "query": "sam hauser",
+      "query": "lando norris",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T04:00:00Z",
+      "published_at": "2026-11-22T05:00:00Z",
       "related_news_urls": [
-        "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
-        "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
-        "https://www.cbssports.com/fantasy/basketball/news/celtics-sam-hauser-scores-season-high-12-points-539537/"
+        "https://www.formula1.com/en/latest/article/its-going-to-be-a-tough-day-norris-wary-of-mclarens-straight-line-speed-deficit-ahead-of-las-vegas-gp.43WdQWgZsqQaofWDF0E1l3",
+        "https://www.motorsport.com/f1/news/lando-norris-frustrated-by-mclarens-shocking-top-speed-at-las-vegas-gp-qualifying/10876362/",
+        "https://www.grandprix.com/races/las-vegas-gp-2026-friday-team-quotes.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEyx9L3Hu56X3FzxMSscfCRQ31EwBegKt6FB61PGaLFg9kR8gHSdNXBtm605E",
+      "image_credit": "Formula 1",
       "news": [
         {
-          "url": "https://celtics.com/news/sidebar-prac-20261114-collective-buy-in-has-celtics-bench-among-nba-best",
-          "title": "Collective Buy-In has Celtics' Bench Among NBA's Best | Boston Celtics",
-          "publisher": "NBA.com",
+          "url": "https://www.formula1.com/en/latest/article/its-going-to-be-a-tough-day-norris-wary-of-mclarens-straight-line-speed-deficit-ahead-of-las-vegas-gp.43WdQWgZsqQaofWDF0E1l3",
+          "title": "Norris expects tough Vegas GP amid McLaren speed struggles",
+          "publisher": "Formula 1",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ty83MyHw2js2IbuP53tRZT2RuvRIhBkvn97jnk8BqLxA6_B5EnbX4qVXmHw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEyx9L3Hu56X3FzxMSscfCRQ31EwBegKt6FB61PGaLFg9kR8gHSdNXBtm605E"
         },
         {
-          "url": "https://hardwoodhoudini.com/celtics-cant-keep-sam-hauser-bench-too-much-longer",
-          "title": "Celtics can’t keep Sam Hauser on the bench for too much longer",
-          "publisher": "Hardwood Houdini",
+          "url": "https://www.motorsport.com/f1/news/lando-norris-frustrated-by-mclarens-shocking-top-speed-at-las-vegas-gp-qualifying/10876362/",
+          "title": "Lando Norris frustrated by McLaren's \"shocking\" top speed at Las Vegas GP qualifying",
+          "publisher": "Motorsport.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-AQ34oLRkLCZ2gdETKVjRxXFAdF7VTYW4j03be0O-x4XxGSKAQ46RR2poJJw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMA9OAWEtyhqj0gVYUjhhPGXif_XXffs34nQVFiafpl2SkQoQP5KpVgAVNC9E"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/celtics-sam-hauser-scores-season-high-12-points-539537/",
-          "title": "Celtics' Sam Hauser: Scores season-high 12 points",
-          "publisher": "CBS Sports",
+          "url": "https://www.grandprix.com/races/las-vegas-gp-2026-friday-team-quotes.html",
+          "title": "Friday Team Quotes",
+          "publisher": "Grandprix.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Ap1INc7hTZupWD2BKkqXfpsxC7jYVkCV4Oyo_F77eLY3tt6Us72_KNctetM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZlO5ng8tNWJoqw0edK-L225tQbL1SusZlHZO72bdXRItrPoQubMTlSRA0l8A"
+        }
+      ]
+    },
+    {
+      "query": "vancouver canucks",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T05:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/wild/news/projected-lineup-wild-at-canucks-112126",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-vancouver-canucks-prediction-odds-2026-11-21/",
+        "https://www.nytimes.com/athletic/7801023/2026/11/21/wild-vs-canucks-stream-how-to-watch-nov-21/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNsV7h-2dau5lE9b92nf4MkqSD5tKfGDKRS8UbMS8c2l0pAm8NxWQ-6te5uGA",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/wild/news/projected-lineup-wild-at-canucks-112126",
+          "title": "Projected Lineup: Wild at Canucks",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNsV7h-2dau5lE9b92nf4MkqSD5tKfGDKRS8UbMS8c2l0pAm8NxWQ-6te5uGA"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-vancouver-canucks-prediction-odds-2026-11-21/",
+          "title": "Minnesota Wild vs Vancouver Canucks Prediction, Picks & Odds | 21 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyT8MRlery3Y1GkTGV4vSwzO1JX-n5622LOpSc3qLe3dpdy7AA2S_w5IAIDfE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7801023/2026/11/21/wild-vs-canucks-stream-how-to-watch-nov-21/",
+          "title": "How to watch Wild vs. Canucks: TV channel and streaming options for November 21",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbUYxildpslSGcVTEfGo4eDCNhAt3xOrnlXeSksvOsCeznHygwlpFBre_p98c"
+        }
+      ]
+    },
+    {
+      "query": "devin carter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T05:00:00Z",
+      "related_news_urls": [
+        "https://www.masslive.com/celtics/2026/11/celtics-guard-lost-10-pounds-while-sick-but-returns-to-make-boston-debut.html",
+        "https://www.bostonglobe.com/2026/11/18/sports/celtics-devin-carter-return-illness/",
+        "https://www.celticsblog.com/boston-celtics-news/150577/devin-carter-celtics-illness"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWTTkSMyLA-0NmYa15odHTR0m9pagRIucE1CxxqvaWk6LLuB-i8u_Z_-f1BE",
+      "image_credit": "MassLive",
+      "news": [
+        {
+          "url": "https://www.masslive.com/celtics/2026/11/celtics-guard-lost-10-pounds-while-sick-but-returns-to-make-boston-debut.html",
+          "title": "Celtics guard lost 10 pounds while sick, but returns to make Boston debut",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoWTTkSMyLA-0NmYa15odHTR0m9pagRIucE1CxxqvaWk6LLuB-i8u_Z_-f1BE"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/18/sports/celtics-devin-carter-return-illness/",
+          "title": "Devin Carter continues to regain health, after bout with mononucleosis, while active for Celtics",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFJk8G3PjJjpwFhsRwWOyp0wi6Yz7FC6Xef39Xyqyo1NKiM6iPUfuUBMnHujw"
+        },
+        {
+          "url": "https://www.celticsblog.com/boston-celtics-news/150577/devin-carter-celtics-illness",
+          "title": "Devin Carter speaks for first time since preseason illness",
+          "publisher": "CelticsBlog",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFmEMjIHCleJmxIlaJIr-PHAk8FfY3B5WRf_FaWpFnZQalC7dNQLSYeUtpGM"
+        }
+      ]
+    },
+    {
+      "query": "mahershala ali oscar wins career impact",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T05:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/mahershala-ali-oscars-wins-hollywood-1236955111/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/mahershala-ali-black-oscars-debate-203017424.html",
+        "https://suaragarut.id/en/mahershala-ali-black-actors-oscar-validation"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM-0J6uN5MpKkySBMaBIviWBq0s6As08xXVthu3BRGcFYK58udJ8YCJ6GvAhE",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/mahershala-ali-oscars-wins-hollywood-1236955111/",
+          "title": "Mahershala Ali Says It ‘Doesn’t Matter’ That He’s Won 2 Oscars Because ‘There Are Not Roles for Me’ in ‘the Vast Majority of Projects’: ‘You’re Like Everybody Else Waiting’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM-0J6uN5MpKkySBMaBIviWBq0s6As08xXVthu3BRGcFYK58udJ8YCJ6GvAhE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/mahershala-ali-black-oscars-debate-203017424.html",
+          "title": "Mahershala Ali on Black Oscars Debate: 'Doesn't Translate to Anything Real'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKgSK8cizp6OMHOzt37f3iga-w26ECtJ5iFfbjFNcK0Ka4GR-BS6CPiQjraSo"
+        },
+        {
+          "url": "https://suaragarut.id/en/mahershala-ali-black-actors-oscar-validation",
+          "title": "Mahershala Ali Challenges Black Actors Pursuit of Oscar Validation",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwyQe5E0b8s8TyOF1O-_XD9xbhdYZTJlZvhfVxHMNkNlOva5MgH-272kdrR5E"
+        }
+      ]
+    },
+    {
+      "query": "homelessness",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+        "https://democracyforward.org/news/press-releases/federal-court-strikes-down-trump-vance-administrations-unlawful-restrictions-on-homelessness-funding/",
+        "https://www.pressdemocrat.com/2026/11/18/permanent-housing-funding-threatened/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9tZZ8Aric9__xC9FJ7Wv2LkPNClWEM2ncNzxjLg832_6Q01UJulUzXGsyJ84",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+          "title": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9tZZ8Aric9__xC9FJ7Wv2LkPNClWEM2ncNzxjLg832_6Q01UJulUzXGsyJ84"
+        },
+        {
+          "url": "https://democracyforward.org/news/press-releases/federal-court-strikes-down-trump-vance-administrations-unlawful-restrictions-on-homelessness-funding/",
+          "title": "Federal Court Strikes Down Trump-Vance Administration’s Unlawful Restrictions on Homelessness Funding",
+          "publisher": "Democracy Forward",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOxaBYqdsmr0SdDFjqzrVC7DXldos5QHnRw4i0eXLdFHrqQtKm2nE_lKnOpPQ"
+        },
+        {
+          "url": "https://www.pressdemocrat.com/2026/11/18/permanent-housing-funding-threatened/",
+          "title": "Local symposium sounds alarm of threats to long-term housing for homeless people",
+          "publisher": "The Press Democrat",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBkP2mtrgsATs3LNwmiKn_3JaOXD6Ws9sbDGK4xRJpOAZIP7V7-dezobRpNZQ"
+        }
+      ]
+    },
+    {
+      "query": "chadwick boseman",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:50:00Z",
+      "related_news_urls": [
+        "https://www.foxcarolina.com/2026/11/21/family-says-leroy-boseman-father-actor-chadwick-boseman-has-died/",
+        "https://www.kcra.com/article/leroy-boseman-father-of-chadwick-boseman-died/74499272",
+        "https://www.wspa.com/news/national/spokesperson-leroy-boseman-father-of-chadwick-boseman-has-died/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjd9JqlvTRawMi2dhmRy8cgUTrsFofsMYdv5EPpGRokJJ4GpE_dFjsuN-isi4",
+      "image_credit": "FOX Carolina News",
+      "news": [
+        {
+          "url": "https://www.foxcarolina.com/2026/11/21/family-says-leroy-boseman-father-actor-chadwick-boseman-has-died/",
+          "title": "Family says Leroy Boseman, father of actor Chadwick Boseman, has died",
+          "publisher": "FOX Carolina News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjd9JqlvTRawMi2dhmRy8cgUTrsFofsMYdv5EPpGRokJJ4GpE_dFjsuN-isi4"
+        },
+        {
+          "url": "https://www.kcra.com/article/leroy-boseman-father-of-chadwick-boseman-died/74499272",
+          "title": "Leroy Boseman, father of the late Chadwick Boseman, has died",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBE4-AlysryEwDcrJ8JI1_wT4OvDpgivI53UpHpF8p7qjLLcL3gAQJV1Ad"
+        },
+        {
+          "url": "https://www.wspa.com/news/national/spokesperson-leroy-boseman-father-of-chadwick-boseman-has-died/",
+          "title": "Spokesperson: Leroy Boseman, father of Chadwick Boseman, has died",
+          "publisher": "WSPA 7News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2qT5zqM6N5y0QZoqH7RE3NhOtGZC1rOXrS4RZgg16t9oywtFbcAxgIuDG4Uo"
+        }
+      ]
+    },
+    {
+      "query": "what is the last mission of chapter 1 gta 6",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T04:50:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/int-en/gta-6-daily-routine-guide",
+        "https://www.forbes.com/sites/paultassi/2026/11/19/i-played-130-hours-of-gta-6-and-here-are-10-tips-you-should-know/",
+        "https://www.gamingbible.com/news/best-things-do-first-10-hours-gta-6-849506-20261120"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLB3Ex943bqqJVXhkmTaUZsOUHAwiBlTA5tiPk8QZfeKdcFZ954PyRozsaWto",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/int-en/gta-6-daily-routine-guide",
+          "title": "GTA 6 daily routine: What you should do every day and why it matters",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLB3Ex943bqqJVXhkmTaUZsOUHAwiBlTA5tiPk8QZfeKdcFZ954PyRozsaWto"
+        },
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/i-played-130-hours-of-gta-6-and-here-are-10-tips-you-should-know/",
+          "title": "I Played 130 Hours Of ‘GTA 6’ — Here Are 10 Tips You Should Know",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMjUvb7gAK_m0q8ROvdYdtg-ooHazZHQdq_oc6D7SBrRox9nmMbjx_ku0BUVc"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/best-things-do-first-10-hours-gta-6-849506-20261120",
+          "title": "The 9 best things to do in the first 10 hours playing GTA 6",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbD2Y4e-1yiiM6vy8ZNlHdfGBomSulcjDU-j0OecyTbTCTdBbT3ZonzZqtvTk"
+        }
+      ]
+    },
+    {
+      "query": "pierre gasly",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T04:50:00Z",
+      "related_news_urls": [
+        "https://www.formula1.com/en/latest/article/alpine-left-disappointed-after-gasly-had-shone-with-perfect-lap-in-q2.48hDMDkgL0meTLKg3usEg6",
+        "https://onefootball.com/en/news/franco-colapinto-starts-ninth-in-las-vegas-unhappy-we-had-more-in-us-43812691",
+        "https://www.racefans.net/2026/11/20/formula-1-teams-set-no-lap-times-set-in-wet-first-practice-at-las-vegas/f1-grand-prix-of-las-vegas-practice-65/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvrwrGQYTdINlGHKm58beDBtA_CtJzHL5eiELuqNI-TMwhhhCKAZ_feFmpg0",
+      "image_credit": "Formula 1",
+      "news": [
+        {
+          "url": "https://www.formula1.com/en/latest/article/alpine-left-disappointed-after-gasly-had-shone-with-perfect-lap-in-q2.48hDMDkgL0meTLKg3usEg6",
+          "title": "Alpine left disappointed despite Gasly’s ‘perfect’ Q2 lap",
+          "publisher": "Formula 1",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYvrwrGQYTdINlGHKm58beDBtA_CtJzHL5eiELuqNI-TMwhhhCKAZ_feFmpg0"
+        },
+        {
+          "url": "https://onefootball.com/en/news/franco-colapinto-starts-ninth-in-las-vegas-unhappy-we-had-more-in-us-43812691",
+          "title": "Franco Colapinto starts ninth in Las Vegas, unhappy: «We had more in us»",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWJaU7PJk5GnN0r6h1Q4JvqxqS3zPSf8G9T1HRV9uzjvLIAc2JzaCIixkUWUc"
+        },
+        {
+          "url": "https://www.racefans.net/2026/11/20/formula-1-teams-set-no-lap-times-set-in-wet-first-practice-at-las-vegas/f1-grand-prix-of-las-vegas-practice-65/",
+          "title": "George Russell, Mercedes, Las Vegas Strip Circuit, 2026",
+          "publisher": "RaceFans",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtJ_a_3y6uqXNEXzAPya4tCTSP43iFzVsnwbUcyx2RxBtRWtxkHFDXDNRGuMg"
         }
       ]
     }
