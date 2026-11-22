@@ -3,7 +3,14 @@
  * channel contents, embedding availability, 21+ classification or rights.
  * This catalog is independent of Family & Parenting TV and adult feeds. */
 const inspectedOn='2026-11-20';
+// The owner explicitly featured this clip as "Love Rose". This is an owner
+// display label, NOT independently verified YouTube title or publisher metadata.
 const reviewedLinks=[{
+ videoId:'d_nGb3NXIKA',title:'Love Rose · owner label (YouTube title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=d_nGb3NXIKA',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},{
  videoId:'PyUwXoTabPA',title:'REFRESHING! 6-2-2014',
  sourceUrl:'https://www.youtube.com/watch?v=PyUwXoTabPA',
  observedAt:inspectedOn,publishedAt:null,publisherVerified:false,
