@@ -73,6 +73,17 @@ export const CREATOR_CHANNELS=Object.freeze([
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"S5-Tm1oi4uQ","The Parenting Advice Nobody Asked For 🙄"),
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"o1BfJwDPwMk","The truth about High Rate Mobility DLA for autistic children"),
    seed('UC4ZlERGU2sUoBP_ssCagn5g',"yguj32c--8E","How I Know When My Autistic Daughter Is Having a Meltdown ❤️")
+  ])}),
+ // Owner video: verified YouTube browser uploader @vibekesmy, canonical UC ID.
+ // Other exact title/video pairs observed in this channel's public Atom feed.
+ Object.freeze({key:'vibekesmy',name:'vibekesmy',channelId:'UCalI6vlQ7ypPrUTlIiIrrug',
+  url:'https://www.youtube.com/@vibekesmy',seed:Object.freeze([
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','hYfaFMzRwT8','Å legge barnet til brystet'),
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','BEWHhI6CJ3k','The latch'),
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','LvbUslem0aY','E2 Latching on in three different positions'),
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','BV7OxKKIt2U','Cradlehold'),
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','y_IxoK4ou7s','Cross-cradlehold'),
+   seed('UCalI6vlQ7ypPrUTlIiIrrug','1gD3ZM2iPsw','Side lying')
   ])})
 ]);
 const VIDEO_ID=/^[A-Za-z0-9_-]{11}$/;
@@ -127,7 +138,7 @@ export function pageCreatorVideos(videos,offset=0,limit=6){
  return videos.slice(start,start+count);
 }
 export const CREATOR_MIX_SOURCE=Object.freeze({
- id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Brittikitty · LANDing Autism · Becki · Creator Mix',
+ id:'youtube-creator-mix',name:'GANA Tribe · Abbe · Julie · Samirah · Brittikitty · LANDing Autism · Becki · vibekesmy · Creator Mix',
  kind:'Video · YouTube',feature:'Mixed channel uploads and saved creator videos',
  featureUrl:'https://www.youtube.com/@ganatribe/videos',
  official:'https://www.youtube.com/@ganatribe',
@@ -168,4 +179,16 @@ export const AGORA_SOU_MAE_SOURCE=Object.freeze({
  focus:'Browse a source-identified original YouTube video and recent public uploads, with search, pagination and tap-to-play in card. Open the publisher channel for the complete historical catalog.',
  details:'Official publisher and UC channel ID verified on 2026-11-22. The keyless public RSS feed loads only recent uploads, not every historic video, Short or Community post. No media downloads, paid API, affiliation, advertising or licensed rehosting are claimed.',
  youtubeMixedFeed:true,initialCreatorChannel:'agorasoumae'
+});
+
+/* Verified owner source, reusing the existing one-player and keyless RSS viewer.
+ * The full historical channel is linked, not copied or locally indexed. */
+export const VIBEKESMY_SOURCE=Object.freeze({
+ id:'vibekesmy-youtube',name:'vibekesmy · Full Channel',
+ kind:'Video · YouTube',feature:'Breastfeeding positions · original instructional videos',
+ featureUrl:'https://www.youtube.com/@vibekesmy/videos',
+ official:'https://www.youtube.com/@vibekesmy',
+ focus:'Begin with the owner-requested original video, browse identified instructional uploads or refresh recent channel videos, and open the full original YouTube channel.',
+ details:'Video title, uploader and canonical channel ID checked 2026-11-22. The public Atom feed covers only recent uploads, not a complete historical archive. Links and tap-to-play are publisher-hosted, with no copied videos, medical endorsement, ad affiliation or payout claim.',
+ youtubeMixedFeed:true,initialCreatorChannel:'vibekesmy',initialCreatorVideoId:'hYfaFMzRwT8'
 });

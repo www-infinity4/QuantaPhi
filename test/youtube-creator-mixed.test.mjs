@@ -11,7 +11,7 @@ import {departmentFor} from '../quanta-context-placement.mjs';
 const video=(channelId,videoId,title)=>({channelId,videoId,title,sourceUrl:'https://www.youtube.com/watch?v='+videoId,publishedAt:null});
 
 test('Creator mix preserves known channel IDs and a separate owner-linked Samirah source',()=>{
- assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud']);
+ assert.deepEqual(CREATOR_CHANNELS.map(c=>c.key),['gana','abbe','julie','samirah','brittikitty','landing','agorasoumae','autism-out-loud','vibekesmy']);
  assert.equal(CREATOR_CHANNELS[0].channelId,'UC6ySmwN_K8fGGD2EKLQdEGA');
  assert.equal(CREATOR_CHANNELS[1].channelId,'UCFsg41h5GN7TAxFUK3Sl00w');
  assert.equal(CREATOR_CHANNELS[2].channelId,'UCt_P3xPrrnOkYT5UQQ4vUIg');
@@ -241,3 +241,6 @@ test('XNXSduqwZ54 has a single original-video media card without unsupported arc
  assert.equal(departmentFor(c),'media');
  assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
 });
+
+// Keep source-specific creator acceptance in the existing focused CI invocation.
+import './vibekesmy-channel-quick-card.test.mjs';
