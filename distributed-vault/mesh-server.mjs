@@ -84,6 +84,10 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
   FOREIGN KEY(node_id) REFERENCES mesh_nodes(node_id)
  );
  CREATE INDEX IF NOT EXISTS idx_mesh_place_node ON mesh_placements(node_id,acked);
+ CREATE TABLE IF NOT EXISTS mesh_avoid (
+   file_id TEXT NOT NULL, node_id TEXT NOT NULL, until_ms INTEGER NOT NULL,
+   PRIMARY KEY(file_id,node_id)
+ );
  `);
  const ownerHash=hashToken(ownerToken);
  function tokenFrom(req){
@@ -110,6 +114,7 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
  function repair(){
   const cutoff=activeCutoff();
   db.prepare('DELETE FROM mesh_placements WHERE node_id IN (SELECT node_id FROM mesh_nodes WHERE online=0 OR last_seen<?)').run(cutoff);
+  db.prepare('DELETE FROM mesh_avoid WHERE until_ms<=?').run(now());
   const nodes=db.prepare('SELECT node_id, capacity FROM mesh_nodes WHERE online=1 AND last_seen>=? ORDER BY rowid').all(cutoff);
   const files=db.prepare('SELECT file_id,manifest FROM mesh_files ORDER BY created_at').all();
   for(const row of files){
@@ -117,7 +122,11 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
    const count=db.prepare('SELECT count(*) n FROM mesh_shards WHERE file_id=?').get(row.file_id).n;
    if(count!==manifest.requiredShards)continue; // no partial encrypted file
    const placements=db.prepare('SELECT node_id,shard_index FROM mesh_placements WHERE file_id=?').all(row.file_id);
-   const used=new Set(placements.map(x=>x.node_id));
+   // When a phone reports that it dumped one file's cache, do not immediately
+   // place the same file back on that phone. Prefer another live app instance.
+   const avoided=db.prepare('SELECT node_id FROM mesh_avoid WHERE file_id=? AND until_ms>?')
+     .all(row.file_id,now()).map(x=>x.node_id);
+   const used=new Set([...placements.map(x=>x.node_id),...avoided]);
    const counts=Array(manifest.requiredShards).fill(0);
    for(const p of placements)counts[p.shard_index]++;
    const bytes=db.prepare('SELECT shard_index,bytes FROM mesh_shards WHERE file_id=?').all(row.file_id);
@@ -222,6 +231,8 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
     if(!listed.has(receipt.file_id+':'+receipt.shard_index+':'+receipt.hash)){
      db.prepare('DELETE FROM mesh_placements WHERE node_id=? AND file_id=? AND shard_index=?')
       .run(caller.node_id,receipt.file_id,receipt.shard_index);
+     db.prepare('INSERT INTO mesh_avoid(file_id,node_id,until_ms) VALUES(?,?,?) ON CONFLICT(file_id,node_id) DO UPDATE SET until_ms=excluded.until_ms')
+      .run(receipt.file_id,caller.node_id,now()+peerTtlMs);
      invalidated++;
     }
    db.prepare('UPDATE mesh_nodes SET last_seen=? WHERE node_id=?').run(now(),caller.node_id);
