@@ -42,7 +42,7 @@ function fixture(t){
   const req=new Request(URL_ROOT+path,{method,headers:{authorization:token(name),origin,'content-type':'application/json'},
    body:body===undefined?undefined:JSON.stringify(body)});
   const res=await worker.fetch(req,env);
-  return {status:res.status,...await res.json()};
+  return {...await res.json(),status:res.status};
  }
  for(const [i,name] of ['alice','bob','cara'].entries())
   db.prepare('INSERT INTO coliseum_ideas(id,model_id,sector,member_id,title,description,parent_id,created_at) VALUES(?,?,?,?,?,?,NULL,?)')
