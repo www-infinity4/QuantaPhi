@@ -371,3 +371,12 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Progress estimate:** source intake, real test-first RED and source implementation achieved (3/7 gates); latest head CI, independent source review, GitHub guarded merge, Cloudflare/real browser and physical Android acceptance remain. One documented session, remaining session count unknown.
 - **Lease:** no signed Moltnook runner/owner lease was claimed by this GitHub connector; no other active lease was overwritten.
 - **Next executable action:** inspect PR #2086 exact-head Creator workflow and other CI, correct any failures, independently check URL/card boundaries, then merge only if allowed and verify actual deployment plus Android playback separately. Parent #1603 remains open.
+
+## Owner-submitted YouTube Quick Card · 2026-11-22 · klFqPeYPJ-Y
+
+- Source: https://youtu.be/klFqPeYPJ-Y?is=tz0VyqMgszGB3tKZ; canonical watch https://www.youtube.com/watch?v=klFqPeYPJ-Y.
+- Observed public page title: **After shower routine** (2026-11-22). Uploader identity, channel ID, upload date, embedding, media rights, complete channel archive and 21+ classification are **not independently verified**.
+- Scope: Add one unique owner-linked source to the existing Public/Media Oracle YouTube card and owner-video View More feed. Keep optional YouTube-hosted click-to-play, stop, thumbnail, original fallback, no rehost, no Star Coin/payout/mint write, no 21+ or Family TV misclassification.
+- Work branch: `feat/owner-youtube-klfqpeypjy-1603-20261122` pinned from main `b8a4702561b57667f9ca2981e2f120014e453a60`; no coordinator lease claimed; this is a bounded repository edit, not a persistent autonomous agent execution.
+- Verification plan: one idempotent source record and focused Node regression; inspect exact-head CI, independently review, verify PR mergeability before permitted merge, then Cloudflare and Android acceptance. Source edits are **not** deployment receipts.
+- State at source checkpoint: code proposed; CI, merge, deployment and physical Android verification pending. Next action: inspect exact-head PR workflow after submission.

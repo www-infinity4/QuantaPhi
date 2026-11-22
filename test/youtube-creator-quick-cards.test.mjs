@@ -244,3 +244,22 @@ test('owner 4EUkH6CzTUA has exactly one source-only Oracle Public/Media Quick Ca
  assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
  assert.match(mixed,/Load more videos/);
 });
+
+test('owner klFqPeYPJ-Y After shower routine creates one source-identified Public/Media Oracle Quick Card',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='klFqPeYPJ-Y',rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'Duplicate or missing owner watch URL');
+ const v=rows[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.title,'After shower routine');
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const card=REVIEWED_OWNER_VIDEO_CARDS.find(c=>c.reviewedYouTubeVideoId===id);
+ assert.ok(card&&isPublicSourceCard(card)&&validSourceCard(card));
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
