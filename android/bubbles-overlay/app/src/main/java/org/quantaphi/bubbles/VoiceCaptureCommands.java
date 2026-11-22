@@ -95,7 +95,7 @@ final class VoiceCaptureCommands {
         if (!repeating) return new Command("screen_image", 0, 0);
         int seconds = interval.hitEnd() && !q.contains("every") ? 5 : 5;
         if (interval.reset().find()) seconds = number(interval.group(1), interval.group(2), 5);
-        seconds = Math.max(2, Math.min(60, seconds));
+        seconds = Math.max(1, Math.min(60, seconds));
         Matcher duration = DURATION.matcher(q);
         int durationSeconds = 300;
         if (duration.find()) {
