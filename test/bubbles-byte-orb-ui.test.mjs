@@ -11,7 +11,7 @@ test('Bubbles offers a user-controlled first-letter training wheel, not automati
  assert.match(s,/measureWordOrb/);
  assert.match(s,/suggestFirstWord/);
  assert.match(s,/acceptWordSuggestion/);
- assert.match(s,/bubbles:session_changed/);
+ assert.match(s,/bubbles:iteration/);
  assert.match(s,/input\.dispatchEvent\(new Event\('input'/);
 });
 test('typing assistant never sends, modifies wallet, collects drafts or starts microphone',()=>{
