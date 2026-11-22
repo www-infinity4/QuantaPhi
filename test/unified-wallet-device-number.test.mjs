@@ -31,7 +31,7 @@ test('the account, not a number copied from another phone, authorizes enrollment
  assert.equal(linked.grants.walletSpend,false);
  assert.throws(()=>createWalletDeviceLink({verifiedAccountId:ACCOUNT,requestedAccountId:SECOND,deviceNumber:id,publicKeyJwk:jwk,consent:true}),/account mismatch/i);
  assert.throws(()=>createWalletDeviceLink({verifiedAccountId:ACCOUNT,requestedAccountId:ACCOUNT,deviceNumber:id,publicKeyJwk:jwk,consent:false}),/consent/i);
- assert.throws(()=>createWalletDeviceLink({verifiedAccountId:ACCOUNT,requestedAccountId:ACCOUNT,deviceNumber:'16377938478',publicKeyJwk:jwk,consent:true}),/device number/i);
+ assert.throws(()=>createWalletDeviceLink({verifiedAccountId:ACCOUNT,requestedAccountId:ACCOUNT,deviceNumber:'1'.repeat(11),publicKeyJwk:jwk,consent:true}),/device number/i);
 });
 test('an account-scoped numeric chain is only a fingerprint of authorized member devices',async()=>{
  const a=issueNumericDeviceId(crypto),b=issueNumericDeviceId(crypto);
@@ -67,4 +67,9 @@ test('standalone number cannot authorize an account without registered P-256 sig
   issuedAt:1763850000000,now:1763850010000,used:false,crypto
  });
  assert.equal(result,false);
+});
+
+test('canonical signed message refuses account identifiers containing separators or newlines',()=>{
+ const number='1'.repeat(39),challenge='A'.repeat(43);
+ assert.throws(()=>deviceChallengeMessage({accountId:'account\\nforged',deviceNumber:number,challenge}),/invalid device challenge/i);
 });
