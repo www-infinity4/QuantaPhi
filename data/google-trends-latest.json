@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T09:31:15.498075Z",
+  "checked_at": "2026-11-22T10:01:23.210712Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "sam houser",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T09:30:00Z",
+      "related_news_urls": [
+        "https://www.ft.com/content/3333e0cf-c3d8-4836-92c7-a84878e802a3?syn-25a6b1a6=1",
+        "https://www.gq.com/story/houser-grand-theft-auto-interview",
+        "https://www.dailymail.com/video/news/video-3747135/Video-How-two-British-public-school-brothers-created-Grand-Theft-Auto.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgtHC56AR7ttI8uKE_XrRJYufnc29-X9secLu8pv4PABR4sUIZwDgf6g1OmYA",
+      "image_credit": "Financial Times",
+      "news": [
+        {
+          "url": "https://www.ft.com/content/3333e0cf-c3d8-4836-92c7-a84878e802a3?syn-25a6b1a6=1",
+          "title": "Sam Houser, the Rockstar gamer behind ‘Grand Theft Auto’",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgtHC56AR7ttI8uKE_XrRJYufnc29-X9secLu8pv4PABR4sUIZwDgf6g1OmYA"
+        },
+        {
+          "url": "https://www.gq.com/story/houser-grand-theft-auto-interview",
+          "title": "The GTA Files: My Long-Lost Interview With the Brothers Who Founded Rockstar",
+          "publisher": "GQ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3pJl_D6bKBz2X58-VzeopNIk9UbhMIjIILpP7Np-j2vG41KoDgNQwwW4zSTk"
+        },
+        {
+          "url": "https://www.dailymail.com/video/news/video-3747135/Video-How-two-British-public-school-brothers-created-Grand-Theft-Auto.html",
+          "title": "Video: How two 'posh' British brother went on to create Grand Theft Auto",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpJoy05Y9iOQVBjQIdBrN9EoF9dHYgD-bWSb7xISAnmCRPMU3Gq7qpJocp2xA"
+        }
+      ]
+    },
+    {
+      "query": "nancy guthrie",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T09:20:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66117623/?ref_=nwc_art_perm",
+        "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
+        "https://www.hindustantimes.com/world-news/us-news/porch-guy-walked-backwards-with-nancy-guthrie-slumped-over-during-abduction-leaving-no-footprints-in-blood-ex-fbi-agent-suggests-101794727769975.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-fRQ8R-dkj2DOdfczgvRvKgSxt4ka54MMF9W1e-c61Jsf33ESiJK54ezQw7c",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66117623/?ref_=nwc_art_perm",
+          "title": "Nancy Guthrie Update: Retired FBI Agent Calls Out Major Timeline Issue",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-fRQ8R-dkj2DOdfczgvRvKgSxt4ka54MMF9W1e-c61Jsf33ESiJK54ezQw7c"
+        },
+        {
+          "url": "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
+          "title": "Savannah Guthrie’s Thanksgiving Plans Confirmed as Mom Nancy Remains Missing",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s"
+        },
+        {
+          "url": "https://www.hindustantimes.com/world-news/us-news/porch-guy-walked-backwards-with-nancy-guthrie-slumped-over-during-abduction-leaving-no-footprints-in-blood-ex-fbi-agent-suggests-101794727769975.html",
+          "title": "Porch Guy walked ‘backwards' with Nancy Guthrie ‘slumped over' during abduction, leaving no footprints in blood, ex-FBI agent suggests | Hindustan Times",
+          "publisher": "Hindustan Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNrPD3TKyf2rzXz833Wnb3ufuazE4NkvtEZfbS6TEQKicBXdGaxuNDW3pcMF8"
+        }
+      ]
+    },
     {
       "query": "unemployment",
       "approx_searches": "100+",
@@ -42,37 +112,37 @@
       ]
     },
     {
-      "query": "black friday sales",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-22T09:00:00Z",
+      "query": "how to auto drive gta 6",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:40:00Z",
       "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-        "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals"
+        "https://www.polygon.com/gta-6-auto-drive-how-to/",
+        "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
+        "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc",
+      "image_credit": "Polygon.com",
       "news": [
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-holiday-event-150406596.html",
-          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 holiday event",
-          "publisher": "Yahoo",
+          "url": "https://www.polygon.com/gta-6-auto-drive-how-to/",
+          "title": "How to use auto drive in GTA 6",
+          "publisher": "Polygon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7pBKrrXnX5bBh8xFd5LVFYa_EliTkQkaZOmkI9AFiBwrCDaJOXVuNCJlD5jc"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-21",
-          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
-          "publisher": "CNN",
+          "url": "https://gameinformer.com/tips/2026/11/19/grand-theft-auto-vis-auto-drive-is-a-beautiful-and-free-version-of-hands-free",
+          "title": "Grand Theft Auto VI's Auto Drive Is A Beautiful And Free Version Of Hands-Free Travel",
+          "publisher": "Game Informer",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlCfDzuM36UYzWC6JwNIW_suwsgLu4AzcpqIq3xQYdsZIlSTDdhWQB7CLPms"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfDahXQjSg8MDMJHROtJwAZvCaQTP4XBuUHubiVi79oToNZcQIpKkF-JDgbQE"
         },
         {
-          "url": "https://www.theguardian.com/thefilter-us/2026/nov/21/best-early-black-friday-cyber-monday-deals",
-          "title": "We vetted thousands of early Black Friday deals to find 42 worth pouncing on",
-          "publisher": "The Guardian",
+          "url": "https://www.engadget.com/2323486/gta-6-fast-travel-trick-price/",
+          "title": "This GTA 6 Fast Travel Trick Comes At A Price",
+          "publisher": "Engadget",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKuTtvGXJaj0PcrnoFmkLXVclz26HKxlLWsNNx1VUK8se8PggMjU3FKOBwYmU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxBYnaBmtO8GNPIDRYPesYAynqnjhdzLgW-mDbqoNhrCRcNwDymxILfB1G_ZQ"
         }
       ]
     },
@@ -116,33 +186,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-22T08:40:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
-        "https://ew.com/chilling-words-jfk-told-jackie-day-assassinated-resurfaced-new-book-12253532",
-        "https://closerweekly.com/rob-reiner-penned-prologue-to-new-jfk-book-reflecting-on-assassination-a-week-before-his-own-murder/"
+        "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
+        "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
+        "https://www.inforum.com/opinion/letters/letter-those-fateful-days-recalled"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPBacsQk7J_xQf5oyfRMx6p1_Ze32DTm5yEtzzO9hAzmH0euCxPZMqbmCn3fk",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI",
+      "image_credit": "PBS",
       "news": [
         {
-          "url": "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
-          "title": "‘Perhaps we are safer not knowing’: a year after his death, Rob Reiner’s JFK assassination book is revealed",
-          "publisher": "The Guardian",
+          "url": "https://www.pbs.org/newshour/show/inside-the-museum-preserving-the-story-of-jfks-assassination",
+          "title": "Inside the museum preserving the story of JFK's assassination",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPBacsQk7J_xQf5oyfRMx6p1_Ze32DTm5yEtzzO9hAzmH0euCxPZMqbmCn3fk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRPwhGRBYUg4rDydACAx29hmW67So8t2rGv-aDq_LxeRK_qW54SbMhKIMCGQI"
         },
         {
-          "url": "https://ew.com/chilling-words-jfk-told-jackie-day-assassinated-resurfaced-new-book-12253532",
-          "title": "Chilling words JFK told Jackie the day he was assassinated resurfaced in new book",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.mercurynews.com/2026/11/22/today-in-history-november-22-infamous-pirate-blackbeard-killed-in-battle/",
+          "title": "Today in History: November 22, infamous pirate Blackbeard killed in battle",
+          "publisher": "The Mercury News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3vpj2gMhn5XFRzVzWjJwG1j_kmgjJBo8TyB7AXsXy8VMiYIGoQ5fb-UpIpx4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8jjJ86o6fZRWfvzfWI831oh5CdLBxgyFFH4DRLW9gRR-CiAKbbxxHy0f9Vqw"
         },
         {
-          "url": "https://closerweekly.com/rob-reiner-penned-prologue-to-new-jfk-book-reflecting-on-assassination-a-week-before-his-own-murder/",
-          "title": "Rob Reiner Penned Prologue to New JFK Book Reflecting on Assassination a Week Before His Own Murder",
-          "publisher": "closerweekly.com",
+          "url": "https://www.inforum.com/opinion/letters/letter-those-fateful-days-recalled",
+          "title": "Letter: Those fateful days recalled",
+          "publisher": "InForum",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCQ30sMP4eGfbKLHcUszhJ4p_c6_rGBJEsYxGNaL9IFHGod_FFDKQ_BghQRdI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR82f6_uTt4EIt3ubuas83zyg2wVd6t26auzrSTemGpG3nMPNWKeC8OjnsG8As"
         }
       ]
     },
@@ -218,7 +288,7 @@
     },
     {
       "query": "travel",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-22T08:20:00Z",
       "related_news_urls": [
         "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
@@ -283,76 +353,6 @@
           "publisher": "bsinews.id",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAoeqOxO6WeWPeTLcBHE4CidNKUaYxrfTYh_liVk3UxpWWSE505fpzsAIjHSc"
-        }
-      ]
-    },
-    {
-      "query": "la",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T08:00:00Z",
-      "related_news_urls": [
-        "https://www.nbclosangeles.com/news/local/palisades-arson-trial-jonathan-rinderknecht/3972494/",
-        "https://ktla.com/news/local-news/palisades-fire-trial-verdict-jonathan-rinderknecht/",
-        "https://www.nytimes.com/2026/11/20/us/la-fire-trial-arson.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVNzXe_Q3-RhF31RA2BrcAyoay4pfIRPfLZTzJyg9ZasPzuo0rJGEl7qjAitE",
-      "image_credit": "NBC Los Angeles",
-      "news": [
-        {
-          "url": "https://www.nbclosangeles.com/news/local/palisades-arson-trial-jonathan-rinderknecht/3972494/",
-          "title": "Man found guilty of starting Palisades Fire in federal prosecutors' second attempt",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVNzXe_Q3-RhF31RA2BrcAyoay4pfIRPfLZTzJyg9ZasPzuo0rJGEl7qjAitE"
-        },
-        {
-          "url": "https://ktla.com/news/local-news/palisades-fire-trial-verdict-jonathan-rinderknecht/",
-          "title": "Jonathan Rinderknecht found guilty of sparking blaze that became deadly Palisades Fire",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXkeGzHk7fBmYnT46Oa9S10d61mE9X6cP7HlPTVlVp13m-tUrxDyJcSS-G9HI"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/20/us/la-fire-trial-arson.html",
-          "title": "Jury in Palisades Fire Trial Finds Man Guilty of Arson in Devastating Blaze",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXqSM-d-dFQFj5LZgNDWgF85ut9LsOG87fjqVo7zbNF1Y0ENK_Rc53pJwcey8"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 vicki",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T07:50:00Z",
-      "related_news_urls": [
-        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-        "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk",
-      "image_credit": "escorenews.com",
-      "news": [
-        {
-          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-          "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
-          "title": "‘GTA 6’: Where You Know Vicki Actress Taryn Manning From",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBHLB6ZlfoLRydC95tG2vraGalFvdb6Bxc3RqpUTRklJF1SVvwvNI6JI76a4"
         }
       ]
     }
