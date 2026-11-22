@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer"><meta name="color-scheme" content="light">
+<title>Spatial AI · Infinity Quick Card · QuantaPhi</title>
+<meta name="description" content="Explore local 3D OBJ geometry and use a permission-controlled camera preview. No automatic depth reconstruction or uploads.">
+<link rel="canonical" href="https://quantaphi.org/spatial-ai.html">
+<link rel="stylesheet" href="/spatial-ai.css?v=20261121-1">
+<script type="module" src="/spatial-ai.js?v=20261121-1"></script>
+</head><body>
+<main class="sa-app" id="spatialAI">
+ <nav class="sa-nav"><a href="/">∞ QuantaPhi</a><span>INFINITY · SPATIAL AI</span></nav>
+ <header class="sa-panel sa-hero"><p class="sa-kicker">BUBBLES · 3D WORKSPACE</p><h1>Spatial AI</h1>
+ <p>Explore geometry in three dimensions, then inspect a camera image with your permission. Runs on this device without paid APIs.</p>
+ <p class="sa-honesty"><strong>Accuracy:</strong> Camera image is 2D. This first-stage card does not reconstruct depth, measure real-world distances, locate people, or run SLAM. The sample cube is illustrative.</p></header>
+ <section class="sa-panel" aria-labelledby="saSceneHeading">
+  <h2 id="saSceneHeading">3D geometry viewer</h2>
+  <canvas id="saScene" width="640" height="420" role="img" aria-label="Wireframe 3D scene; drag to rotate or use the zoom controls">A 3D wireframe preview requires canvas support.</canvas>
+  <p class="sa-muted" id="saMeshStatus" role="status" aria-live="polite">Sample cube loaded · illustrative model</p>
+  <div class="sa-actions"><button type="button" id="saReset">Sample cube</button><button type="button" id="saZoomIn" aria-label="Zoom in">Zoom +</button><button type="button" id="saZoomOut" aria-label="Zoom out">Zoom −</button></div>
+  <label class="sa-file" for="saFile">Import a local .OBJ 3D model<input id="saFile" type="file" accept=".obj,text/plain" aria-describedby="saFileHelp"></label>
+  <p id="saFileHelp" class="sa-muted">Up to 1 MB, 5,000 vertices and 10,000 faces; triangulated wireframe only. Files stay in this browser tab. No uploads.</p>
+ </section>
+ <section class="sa-panel" aria-labelledby="saCameraHeading">
+  <h2 id="saCameraHeading">Optional camera preview</h2><p>Camera access starts only after you tap Start camera and approve your browser's permission request.</p>
+  <div class="sa-actions"><button type="button" id="saStartCamera">Start camera</button><button type="button" id="saCapture" disabled>Capture 2D frame</button><button type="button" id="saStopCamera" disabled>Stop camera</button></div>
+  <video id="saVideo" autoplay muted playsinline hidden aria-label="Local camera preview"></video>
+  <canvas id="saSnapshot" width="640" height="360" hidden role="img" aria-label="2D camera frame retained temporarily in this tab"></canvas>
+  <p id="saCameraStatus" class="sa-muted" role="status" aria-live="polite">Camera is off. Nothing is recorded or uploaded.</p>
+ </section>
+ <section class="sa-panel" aria-labelledby="saBubblesHeading">
+  <h2 id="saBubblesHeading">Discuss the scene with Bubbles</h2><p>Copy a geometry summary, then open the Bubbles orb and paste it into chat. No image or 3D model is sent automatically.</p>
+  <div class="sa-actions"><button type="button" id="saCopy">Copy geometry summary</button></div>
+  <textarea id="saSummary" rows="3" readonly aria-label="Shareable scene summary"></textarea>
+  <p id="saCopyStatus" class="sa-muted" role="status" aria-live="polite"></p>
+ </section>
+ <footer class="sa-footer">Source-only prototype · no depth-map or robotics authority · <a href="/">QuantaPhi home</a></footer>
+</main>
+<script src="/bubbles-embed.js" data-bubble-id="spatial-ai" data-bubble-role="specialist" data-bubble-name="Bubbles Spatial AI" data-bubble-instructions="Help explain local OBJ geometry, 3D projection and careful spatial reasoning. Do not claim camera depth or a verified physical map from a single image. Never request private image uploads without explicit consent."></script>
+</body></html>
