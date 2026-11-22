@@ -162,6 +162,12 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=djgY5YE6RKU',
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'GCoFEjd_eFI',title:'YouTube video GCoFEjd_eFI (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=GCoFEjd_eFI',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 },{
  videoId:'4EUkH6CzTUA',title:'YouTube video 4EUkH6CzTUA (title unverified)',
  sourceUrl:'https://www.youtube.com/watch?v=4EUkH6CzTUA',
