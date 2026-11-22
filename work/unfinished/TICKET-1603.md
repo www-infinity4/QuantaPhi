@@ -447,3 +447,13 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Dot/state:** 🔴 source staged, verification pending. Scope progress 2/6 (test/source prepared; exact-head CI, independent review, guarded merge, production and Android acceptance outstanding; count conservatively includes production+Android).
 - **Agent/lease:** ChatGPT connector read/write under owner context; no signed runner lease claimed, no automatic grant extension. Sessions for this Short: 1; remaining unknown.
 - **Next single action:** inspect exact-head Creator run outcome and all required PR checks, fix failures on the same branch, then independently review the diff and use the guarded merge process only if permitted.
+
+## Owner video NY6p4G9zjd8 · session 2026-11-22
+
+- **Owner original URL:** https://youtu.be/NY6p4G9zjd8?is=HERHv5gGU3S6L4LU
+- **Canonical watch source:** https://www.youtube.com/watch?v=NY6p4G9zjd8 ; title, publisher/channel, upload date, embedded playback, rights and suitability unverified because public YouTube retrieval was throttled.
+- **Continued issue:** #1603; **isolated draft PR:** https://github.com/www-infinity4/QuantaPhi/pull/2107 ; branch `feat/owner-youtube-ny6p4g9zjd8-1603-20261122`. No new issue and no signed Moltnook runner lease claimed.
+- **Source and test:** dedicated regression `test/youtube-owner-NY6p4G9zjd8.test.mjs` first committed at `6aa6656043268a0d44954de344c1e397090fa650`, Creator suite registered at `44af7bc83fdd4c70f85e6383b9a7ebe38cad16e0`. **Observed RED:** Creator run [45033411265](https://github.com/www-infinity4/QuantaPhi/actions/runs/45033411265), job 137241750946, failed expected missing single source `0 !== 1` in the new test. Single catalog addition: commit `34d100e779d2cf1efec279965af5be7315908430`, with GitHub source readback successful. This is not a passing GREEN receipt until exact-head CI is inspected.
+- **Card design:** one existing Oracle Public/Media card, original source URL, provider-hosted optional click-to-play/Stop and owner View More; unverified title explicitly labeled. This is not a full-channel import or content-category assertion. No video rehosting, new publisher rights, ads, Star Coins or wallet writes.
+- **State and progress:** 🔴 source staged (two source/test implementation milestones complete; independent complete CI, review, guarded merge, deployed browser and physical Android checks outstanding). Subtask 1 documented session; remaining estimate unknown. No merge, production or Android receipt.
+- **Next single action:** inspect complete Creator and required workflow outcomes at the latest branch head; fix any failures, independently check metadata and merge policy, then pursue permitted merge and separate Cloudflare/Android acceptance.
