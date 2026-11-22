@@ -92,6 +92,17 @@
     }catch(e){if(!completed){completed=true;reject(e)}}
    });
   }
+  // User-initiated personal export. Only the verified active wallet profile,
+  // never guest, private notes, hidden internal fields or another account.
+  async function exportCurrentScope(){
+   if(!enabled||!cloud||!/^[a-f0-9]{64}$/.test(scope))throw Error('Verified wallet required for history export.');
+   const rows=await all();
+   if(rows.length>10000)throw Error('Too many wallet history entries; use smaller verified batches.');
+   return rows.filter(item=>['user','assistant'].includes(item.role)).map(item=>{
+    if(item.scope!==scope)throw Error('Account scope mismatch in private history.');
+    return {scope,id:item.id,role:item.role,text:item.text,at:item.at};
+   });
+  }
   async function recent(limit=30){return (await all()).slice(-limit)}
   async function search(q,limit=8){
    const db=await dbPromise;if(!db)return [];
@@ -238,7 +249,7 @@
   }
   function setEnabled(value){enabled=value===true;if(!enabled){cloud=false;token='';clearInterval(clock)}}
   function onUpdate(handler){onChange=typeof handler==='function'?handler:()=>{}}
-  return {setEnabled,onUpdate,append,appendAll,recent,ownerUserBatch,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
+  return {setEnabled,onUpdate,append,appendAll,recent,exportCurrentScope,ownerUserBatch,search,context,remember,recall,browseSynapses,forgetSynapse,connect,sync,clear,
     get profileScope(){return cloud&&scope!=='guest'?scope:null},
     get cloudConnected(){return cloud},get enabled(){return enabled}};
  }
