@@ -93,3 +93,61 @@ This source proves *individual components* only. It does not prove a live
 identity replacement or production login. The two numeric examples provided
 in conversation must **not** be embedded into repository files or treated as
 real credentials.
+
+## Hex-color graph and aligned-window visualization
+
+The owner extended the original numbered-device idea: each approved phone's
+numeric string can be drawn as colored RGB "bulbs" whose patterns align into
+an account-specific transparent window. This is **implemented as reversible,
+non-secret display encoding**, NOT steganographic encryption, a new wallet
+password, or permission to read other phone data.
+
+- `encodeDeviceColorTiles`: converts one exact 39-digit 128-bit app-installation
+  label to **six `#RRGGBB` tiles** (16 original data bytes plus two
+  first SHA-256 checksum bytes). Leading zeroes roundtrip exactly.
+- `decodeDeviceColorTiles`: decodes those six tiles and rejects incorrect
+  color formats, impossible values and accidental tile corruption. A short
+  16-bit checksum detects many mistakes, but someone can deliberately copy
+  or forge colors; this is **not** encryption or authentication.
+- `buildWalletColorWindow`: takes the **server-supplied list of already
+  authorized device labels belonging to only one verified account**. It
+  deterministically sorts the labels, hashes the wallet account binding and
+  renders its SHA-256 fingerprint as eleven RGB tiles. The same account's
+  registered phones generate an aligned pattern even in different list order;
+  a different wallet obtains a different pattern.
+- `colorWindowsAlign`: compares complete sets of displayed tiles for
+  visual agreement, and always returns *comparison only*. Neither rendering
+  nor alignment authorizes any account or financial transaction.
+
+```text
+Phone A own app alias --> 6 RGB tiles  ┐
+                                        ├─ VERIFIED wallet's enrolled devices
+Phone B own app alias --> 6 RGB tiles  ┘      ↓
+                                  account-bound sorted device-list SHA-256
+                                              ↓
+                                   11-color visual "window"
+                                              ↓
+                           device passkey/signature STILL required to log in
+```
+
+**Backup separation:** An enrolled owner phone can prepare a private,
+encrypted recovery *manifest* containing the account's public device aliases,
+public keys, revocation state and last server-reconciled list hash. A future
+authorized GitHub App integration may upload that **ciphertext** only to the
+specific owner's private backup repository with permission and integrity
+receipts; source merges and GitHub Actions do not automatically copy device
+data. Never store raw wallet tokens, WebAuthn private keys, unencrypted account
+data or other users' device lists in GitHub, nor make GitHub the wallet
+authorization server. Recovering the identifiers is not the same as
+recovering a lost device's cryptographic key. At least one remaining
+authenticated device or independently verified recovery method must exist.
+
+**Privacy and reliability:** A phone only knows its own enrollment plus
+whatever *authorized account-scoped* device summary the wallet server returns.
+Phones belonging to unrelated accounts are not scanned or joined into a
+global identity graph. If some bulbs are unavailable, the display may still
+show the last server-authenticated account list, but a lost device must not
+block its owner from using a valid recovery method. The private wallet ledger
+remains authoritative. Hardware enrollment, authorized private GitHub backup
+upload, actual signed session issuance, native Android UI and D1 migration
+remain separate unfinished work, not deployed by this PR.
