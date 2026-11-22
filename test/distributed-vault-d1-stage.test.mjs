@@ -48,3 +48,15 @@ test('malformed SQL fails closed and cannot leave a false accepted database',t=>
  assert.notEqual(status.status,0);
  assert.equal(existsSync(out),false);
 });
+
+test('safe SQLite snapshot copies a source database without mutating its rows',t=>{
+ const dir=mkdtempSync(join(tmpdir(),'d1-snapshot-'));t.after(()=>rmSync(dir,{recursive:true,force:true}));
+ const db=join(dir,'live.sqlite'),copy=join(dir,'snapshot.sqlite');
+ const seeded=spawnSync('python3',['-c','import sqlite3,sys; d=sqlite3.connect(sys.argv[1]);d.execute("PRAGMA journal_mode=WAL");d.execute("CREATE TABLE notes(v TEXT)");d.execute("INSERT INTO notes VALUES (?)",("owner-value",));d.commit();d.close()',db],{encoding:'utf8'});
+ assert.equal(seeded.status,0,seeded.stderr);
+ const snap=run('snapshot',db,copy);
+ assert.equal(snap.status,0,snap.stderr);
+ const details=spawnSync('python3',['-c','import sqlite3,sys; a=sqlite3.connect(sys.argv[1]);b=sqlite3.connect(sys.argv[2]);print(a.execute("SELECT * FROM notes").fetchall()==b.execute("SELECT * FROM notes").fetchall())',db,copy],{encoding:'utf8'});
+ assert.equal(details.stdout.trim(),'True');
+ assert.notEqual(run('snapshot',db,copy).status,0);
+});
