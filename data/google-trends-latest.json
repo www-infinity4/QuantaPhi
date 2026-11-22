@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T21:01:16.214345Z",
+  "checked_at": "2026-11-22T21:31:20.586442Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jordyn tyson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T20:40:00Z",
+      "query": "nfl standings cowboys",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-22T21:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-saints-took-chance-on-jordyn-tyson/",
-        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-11-start-em-sit-em-carnell-tate-vs-jordyn-tyson",
-        "https://www.nola.com/sports/saints/through-jordyn-tyson-s-two-games-with-the-saints-there-s-one-number-that-jumps/article_e72a5be6-19df-48ee-9c0d-6b50cdc0cf5c.html"
+        "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
+        "https://abc13.com/post/mario-narro-death-police-investigate-mans-alleged-altercation-san-francisco-49ers-dallas-cowboys-game/20067376/",
+        "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSScS9E4FWQfvnjOSHvPmcnl9QNSuo88O0wyedXKUyDO1ShW5JI3b6S7tEdFsA",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY",
+      "image_credit": "FOX 4 News Dallas-Fort Worth",
       "news": [
         {
-          "url": "https://www.cbssports.com/nfl/news/revisiting-2026-nfl-draft-saints-took-chance-on-jordyn-tyson/",
-          "title": "Revisiting 2026 NFL Draft: Were the Saints wise in taking a chance on injury-prone Jordyn Tyson?",
-          "publisher": "CBS Sports",
+          "url": "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
+          "title": "Man dies days after fight at Dallas Cowboys game",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSScS9E4FWQfvnjOSHvPmcnl9QNSuo88O0wyedXKUyDO1ShW5JI3b6S7tEdFsA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY"
         },
         {
-          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-11-start-em-sit-em-carnell-tate-vs-jordyn-tyson",
-          "title": "Fantasy Football Week 11 Start ‘Em, Sit ‘Em: Carnell Tate vs. Jordyn Tyson",
-          "publisher": "Sports Illustrated",
+          "url": "https://abc13.com/post/mario-narro-death-police-investigate-mans-alleged-altercation-san-francisco-49ers-dallas-cowboys-game/20067376/",
+          "title": "Police investigate man's death after alleged altercation at 49ers-Cowboys game",
+          "publisher": "ABC13 Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqQdsKj_kPtWo0tPl2nL_dPTenzxqBNlkv4GnVX1t1iY4M-xmiVGZHbSOUs8w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-GLL85hOl1HNEZjQDmY-E2IaFpqmBMj4mAMr39T6f8E47tJHfINepw9zbOYQ"
         },
         {
-          "url": "https://www.nola.com/sports/saints/through-jordyn-tyson-s-two-games-with-the-saints-there-s-one-number-that-jumps/article_e72a5be6-19df-48ee-9c0d-6b50cdc0cf5c.html",
-          "title": "Through Jordyn Tyson’s two games with the Saints, there’s one number that jumps off the page",
-          "publisher": "NOLA.com",
+          "url": "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6",
+          "title": "Family of man who died after altercation at Dallas Cowboys game speaks out about 'tragic accident'",
+          "publisher": "WFAA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcVMdO-UWRTFS10XkctAxPtWOErOEafzdVieoqMy9VXj7of9E1AvHrV6jxTN0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ul-ntuuNDuR6lH2Yf98vrXMrDms7b18rtd6WY3p3JjYOKLYM08d2jUwbp54"
         }
       ]
     },
     {
-      "query": "jaylen warren",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T20:40:00Z",
+      "query": "carolina panthers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-22T21:10:00Z",
       "related_news_urls": [
-        "https://www.cincyjungle.com/cincinnati-bengals-discussion/205971/the-plays-that-have-set-ton-defensive-turnaround-this-season",
-        "https://www.nytimes.com/athletic/7793098/2026/11/19/bengals-defense-ceiling-al-golden/",
-        "https://sports.yahoo.com/videos/bengals-revealed-shut-down-pittsburghs-031721863.html"
+        "https://sports.yahoo.com/articles/derrick-henry-injury-latest-news-210631350.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/henry-heads-to-blue-tent-in-fourth-quarter-vs-car",
+        "https://www.baltimoresun.com/2026/11/22/ravens-derrick-henry-panthers-concussion-protocol/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnxs13ncVQPP2d68IOGYNygzY7N9Iy_M1R67B4Fa7HXMWyZajLcBn35GWiGH8",
-      "image_credit": "Cincy Jungle",
-      "news": [
-        {
-          "url": "https://www.cincyjungle.com/cincinnati-bengals-discussion/205971/the-plays-that-have-set-ton-defensive-turnaround-this-season",
-          "title": "The plays that have set the tone for the Bengals’ defensive turnaround this season",
-          "publisher": "Cincy Jungle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnxs13ncVQPP2d68IOGYNygzY7N9Iy_M1R67B4Fa7HXMWyZajLcBn35GWiGH8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7793098/2026/11/19/bengals-defense-ceiling-al-golden/",
-          "title": "What’s the ceiling for the Bengals’ defense? Why it could determine the team’s fate",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjeKpE_WmH_CPEY5MK-L4Dx0ig5_U_7ktpxFa0ygvE02j8a6Lk2vB7S-1o15g"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/bengals-revealed-shut-down-pittsburghs-031721863.html",
-          "title": "The Bengals Revealed How To Shut Down Pittsburgh's Offense",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKpB60LKzdPWyR7jyGQJtialDZU4KBAqu0OhpnCDQGZSevRNCO71j55IUymAs"
-        }
-      ]
-    },
-    {
-      "query": "jalen hurts",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T20:40:00Z",
-      "related_news_urls": [
-        "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
-        "https://sports.yahoo.com/articles/long-jalen-hurts-injury-eagles-162316729.html",
-        "https://www.wdel.com/news/sen-blunt-rochester-pushes-nfl-for-blood-clot-policy-after-hurts-injury/article_a7c5c411-2444-4fa8-8a93-95e4ba16a154.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA",
-      "image_credit": "WHYY",
-      "news": [
-        {
-          "url": "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
-          "title": "NFL tells Delaware U.S. senator that experts will review Philly QB Jalen Hurts’ care for blood clots",
-          "publisher": "WHYY",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/long-jalen-hurts-injury-eagles-162316729.html",
-          "title": "How long is Jalen Hurts out? Injury update as Eagles QB recovers from blood clots",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ6ohx4gTTUGlNPrlFqwf7rgDZHx-PgsZK0fra5ApTyLLkHo0Y_vQuAzbQQ9o"
-        },
-        {
-          "url": "https://www.wdel.com/news/sen-blunt-rochester-pushes-nfl-for-blood-clot-policy-after-hurts-injury/article_a7c5c411-2444-4fa8-8a93-95e4ba16a154.html",
-          "title": "Sen. Blunt Rochester pushes NFL for blood clot policy after Hurts injury",
-          "publisher": "WDEL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9Xc3J_FcsFH4VyPvoqbHIrKDwUNUR1c-Rz_58czGENFjNgqHAn2G7hgREj94"
-        }
-      ]
-    },
-    {
-      "query": "ryan flournoy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T20:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/id/50532835/fantasy-football-streamers-last-minute-pickups-week-11",
-        "https://www.nytimes.com/athletic/7789603/2026/11/17/market-share-report-week-11-waiver-options/",
-        "https://sports.yahoo.com/video/can-ryan-flournoy-deliver-sneaky-fantasy-value-in-week-11-160459873.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fvFhU3-sjpyYkg5S6dRUiuPhLWdiq4rSqOngRiWvvHULdRSXQFe3iLGAT0k",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/id/50532835/fantasy-football-streamers-last-minute-pickups-week-11",
-          "title": "Fantasy football last-minute pickups: Flournoy, Ayomanor among top candidates",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3fvFhU3-sjpyYkg5S6dRUiuPhLWdiq4rSqOngRiWvvHULdRSXQFe3iLGAT0k"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7789603/2026/11/17/market-share-report-week-11-waiver-options/",
-          "title": "Fantasy football market share report: Ryan Flournoy and more Week 11 plug-and-play options",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIIyRrDzkbQTSuDKrf0sCZjpy0tob1oXZzoWzs6Z7hP_F5rPCXAu0hR_laabU"
-        },
-        {
-          "url": "https://sports.yahoo.com/video/can-ryan-flournoy-deliver-sneaky-fantasy-value-in-week-11-160459873.html",
-          "title": "Can Ryan Flournoy deliver sneaky fantasy value in Week 11?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSe8eei_E5xyh4Q0XGeEg9_B2WtFlFGXLLi3D7bNSt0ifH5upmmjovwanCikXs"
-        }
-      ]
-    },
-    {
-      "query": "cincinnati vs nashville",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T20:40:00Z",
-      "related_news_urls": [
-        "https://www.mlssoccer.com/playoffs/2026/news/nashville-sc-out-to-complete-mls-cup-supporters-shield-history",
-        "https://sports.yahoo.com/articles/channel-nashville-sc-vs-fc-110456281.html",
-        "https://news.vumc.org/2026/11/20/banner-support-for-a-banner-year-vanderbilt-health-cheers-on-nashville-soccer-club-in-playoff-run/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw4MAv7ttz5oO1oMlH1IbbQ2zEPAdexnZrCi-GDMF24ghT231Tx88BQnPqnR0",
-      "image_credit": "MLSsoccer.com",
-      "news": [
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/nashville-sc-out-to-complete-mls-cup-supporters-shield-history",
-          "title": "Nashville SC out to complete MLS Cup-Supporters' Shield history",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSw4MAv7ttz5oO1oMlH1IbbQ2zEPAdexnZrCi-GDMF24ghT231Tx88BQnPqnR0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/channel-nashville-sc-vs-fc-110456281.html",
-          "title": "What channel is Nashville SC vs FC Cincinnati on today? Time, TV schedule for MLS Cup playoffs Game 1",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyxF72fEjxofQFGzwmcLaLk0HynFnzxR-HxO4I2OsXThtE8EJ01NTXoSZFuHA"
-        },
-        {
-          "url": "https://news.vumc.org/2026/11/20/banner-support-for-a-banner-year-vanderbilt-health-cheers-on-nashville-soccer-club-in-playoff-run/",
-          "title": "Banner support for a banner year: Vanderbilt Health cheers on Nashville Soccer Club in playoff run",
-          "publisher": "Vanderbilt Health News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoohYooGJES4sWJWznpTtq2oQhzJ6JFxRGjM0G4k-ax3HB6kI5tkCrHsaoWrY"
-        }
-      ]
-    },
-    {
-      "query": "will shipley",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T20:40:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-        "https://www.cbssports.com/fantasy/football/news/eagles-will-shipley-cleared-to-return-for-week-11/",
-        "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-          "title": "Steelers vs. Eagles Inactives",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/eagles-will-shipley-cleared-to-return-for-week-11/",
-          "title": "Eagles' Will Shipley: Cleared to return for Week 11",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw8Bxcs78XEKWBqsrpUPHzqX7maM5BhBDjW_ovucbaKWTdjAanaRVm7xqeiOg"
-        },
-        {
-          "url": "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
-          "title": "Former Clemson Star Activated from Injured Reserve",
-          "publisher": "The Clemson Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXBiYyGR0Lr_yR7uIShTmLvy0KrE56d-T1BzyRFzIXvpWWSZsV_cxKQ_HRG9g"
-        }
-      ]
-    },
-    {
-      "query": "torreense vs benfica",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T20:40:00Z",
-      "related_news_urls": [
-        "https://sportsbook.fanduel.com/soccer/portuguese-cup/torreense-v-benfica-36346332",
-        "https://www.thenational.scot/sport/26747337.celtic-euro-opponents-make-earthquake-vow-ahead-hoops-showdown/",
-        "https://www.celticway.co.uk/news/26750549.torreense-star-convinced-can-pull-off-celtic-shock/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA",
-      "image_credit": "FanDuel Sportsbook",
-      "news": [
-        {
-          "url": "https://sportsbook.fanduel.com/soccer/portuguese-cup/torreense-v-benfica-36346332",
-          "title": "Torreense v Benfica Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBWTCP24ziiSwNlO9PZ8sJIg_pE9rDl3xMB3kJGkOKsUzCPOo-hm5VCSHJgA"
-        },
-        {
-          "url": "https://www.thenational.scot/sport/26747337.celtic-euro-opponents-make-earthquake-vow-ahead-hoops-showdown/",
-          "title": "Celtic Euro opponents make 'earthquake' vow ahead of Hoops showdown",
-          "publisher": "The National Scot",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQk3JvDfmIMYOfD4Te1F-8svMaW4nQK1bcYqJf2h8_oRbEl-zNAO6S5ARQTvxc"
-        },
-        {
-          "url": "https://www.celticway.co.uk/news/26750549.torreense-star-convinced-can-pull-off-celtic-shock/",
-          "title": "Why Torreense star is convinced they can pull off Europa League shock",
-          "publisher": "The Celtic Way",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUtCMejfx9qfX29kXYS395Nm7cBQRoCHMB4PsqAWZ0drME_z3O1RYVEm9pPI"
-        }
-      ]
-    },
-    {
-      "query": "darnell washington",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T20:30:00Z",
-      "related_news_urls": [
-        "https://www.rotoballer.com/player-news/darnell-washington-could-see-diminished-role-in-week-11/2000036",
-        "https://sports.yahoo.com/articles/five-steelers-beyond-aaron-rodgers-183916326.html",
-        "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-aaron-rodgers-gets-100-real-pittsburgh-big-weapon"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ5Lj4Y7j-vCige53FnFObn6p_toXQlPKXYXyO_urPTpNvxYbtoLQH61Z2tgw",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/player-news/darnell-washington-could-see-diminished-role-in-week-11/2000036",
-          "title": "Darnell Washington Week 11 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ5Lj4Y7j-vCige53FnFObn6p_toXQlPKXYXyO_urPTpNvxYbtoLQH61Z2tgw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/five-steelers-beyond-aaron-rodgers-183916326.html",
-          "title": "Five Steelers beyond Aaron Rodgers who could hurt the Eagles",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9moZ7RZYGKpUiDgoPrJKqrvv-8iA8LLGZXK5ZRe9wHQ1au08CZXY2KKEo54w"
-        },
-        {
-          "url": "https://clutchpoints.com/nfl/pittsburgh-steelers/steelers-news-aaron-rodgers-gets-100-real-pittsburgh-big-weapon",
-          "title": "Steelers’ Aaron Rodgers gets 100% real about Pittsburgh’s ‘big weapon’",
-          "publisher": "ClutchPoints",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQU_5VKYLn8E6HgfldO0Oc9Nah7ze8sVrJZ4pK3MWrpI8h_A-BJOmFtcybPnKw"
-        }
-      ]
-    },
-    {
-      "query": "montez sweat",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/bears-coach-makes-feelings-clear-140007440.html",
-        "https://www.sportsmockery.com/chicago-bears/why-that-montez-sweat-conspiracy-may-have-been-right-after-all/",
-        "https://dawindycity.com/trade-deadline-decisions-made-bears-expectations-for-montez-sweat-clear"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Y5fnJWBNl_w9D7GwzBwPNVmnx4uw-T0WavrjwJwdc20jRuFyM2mEso1wBiY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXaaEaMbCuMrjJP84Tj280HwyPw9r6he8R-K2qi1NrO3Onvf8rjjS_CJWnXFw",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bears-coach-makes-feelings-clear-140007440.html",
-          "title": "Bears coach makes his feelings clear on trade deadline activity",
+          "url": "https://sports.yahoo.com/articles/derrick-henry-injury-latest-news-210631350.html",
+          "title": "Derrick Henry injury update: Latest news on Ravens RB’s status in Week 11 game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Y5fnJWBNl_w9D7GwzBwPNVmnx4uw-T0WavrjwJwdc20jRuFyM2mEso1wBiY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXaaEaMbCuMrjJP84Tj280HwyPw9r6he8R-K2qi1NrO3Onvf8rjjS_CJWnXFw"
         },
         {
-          "url": "https://www.sportsmockery.com/chicago-bears/why-that-montez-sweat-conspiracy-may-have-been-right-after-all/",
-          "title": "Why That Montez Sweat Conspiracy May Have Been Right After All",
-          "publisher": "Sports Mockery",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/henry-heads-to-blue-tent-in-fourth-quarter-vs-car",
+          "title": "Henry heads to blue tent in fourth quarter vs. CAR",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS9JKeUjEf4Xiyk8-plAmmn74u2NnqtqSL6fzgkcf-CCxZUL7tyEg03BU8L2c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDF65WyOYJZ-11vx_nQ7kF-PQc8FIU0e-QEPQ75N1y1_OY3rP7NWKyxWEIvwo"
         },
         {
-          "url": "https://dawindycity.com/trade-deadline-decisions-made-bears-expectations-for-montez-sweat-clear",
-          "title": "Trade deadline decisions made Bears expectations for Montez Sweat clear",
-          "publisher": "Da Windy City",
+          "url": "https://www.baltimoresun.com/2026/11/22/ravens-derrick-henry-panthers-concussion-protocol/",
+          "title": "Ravens RB Derrick Henry exits vs. Panthers to be evaluated for concussion",
+          "publisher": "Baltimore Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM8gs5eyPj9ap5AW3gpAUHfFzXQbHYUJkWNbFb2fsTab67Yc_4kXqumqCxfhY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUFBWjOkwzgSCtQlM1Mdosc0wf27cApGOcNr3g8E2NOtZM2z7RkJTcmqmV5Z4"
         }
       ]
     },
     {
-      "query": "cnbc make it",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T20:30:00Z",
+      "query": "nfl standings lions",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T21:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
-        "https://www.livemint.com/news/us-news/3-crore-salary-but-less-than-18-6-lakh-in-annual-expenses-how-this-google-employee-is-saving-nearly-90-of-his-income-11795369630690.html",
-        "https://www.limapagi.id/en/google-analyst-extreme-frugal-living"
+        "https://www.espn.com/nfl/story/_/id/50503226/nfl-power-rankings-week-11-non-quarterback-mvps-midseason",
+        "https://sports.yahoo.com/articles/nfl-power-rankings-where-patrick-193415656.html",
+        "https://www.azcentral.com/story/sports/nfl/2026/11/16/nfl-power-rankings-week-11-2026-season/90932194007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6oHJYW3OziDoIJiWm_7w6xoHWoyboL2eu2J3uTKl3x_gz_TKX6MagiX6N9Ik",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY3riOM-87uTZ9jCoPKiHmh55LUBj9gujt57y4meHG23ZPNWbfCson1NT4f1E",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
-          "title": "26-year-old Google worker earns $323,000 a year—but lives on less than minimum wage",
-          "publisher": "CNBC",
+          "url": "https://www.espn.com/nfl/story/_/id/50503226/nfl-power-rankings-week-11-non-quarterback-mvps-midseason",
+          "title": "NFL Power Rankings: Stacking all 32 teams for Week 11, plus non-QB MVPs",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6oHJYW3OziDoIJiWm_7w6xoHWoyboL2eu2J3uTKl3x_gz_TKX6MagiX6N9Ik"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQY3riOM-87uTZ9jCoPKiHmh55LUBj9gujt57y4meHG23ZPNWbfCson1NT4f1E"
         },
         {
-          "url": "https://www.livemint.com/news/us-news/3-crore-salary-but-less-than-18-6-lakh-in-annual-expenses-how-this-google-employee-is-saving-nearly-90-of-his-income-11795369630690.html",
-          "title": "₹3 crore salary but less than ₹18.6 lakh in annual expenses: How this Google employee is saving nearly 90% of his income",
-          "publisher": "Livemint",
+          "url": "https://sports.yahoo.com/articles/nfl-power-rankings-where-patrick-193415656.html",
+          "title": "NFL Power Rankings: Where Do Patrick Mahomes, Chiefs Rank After Week 10?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoDnzECDoq21318bGGPSMqgKXcZlU3_y7ptEDPiRfy25Vu5tBTinRZKr4rwE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRJl6fHgEr6v_cwu5xIHiWXqxr45l_-L_e2-tnLLEZc7_-CR2JjTQzqNlE7NWk"
         },
         {
-          "url": "https://www.limapagi.id/en/google-analyst-extreme-frugal-living",
-          "title": "Google Analyst Earns 323000 Dollars While Spending Under 20000",
-          "publisher": "Limapagi",
+          "url": "https://www.azcentral.com/story/sports/nfl/2026/11/16/nfl-power-rankings-week-11-2026-season/90932194007/",
+          "title": "NFL power rankings Week 11 shift with Bills, Bengals, Lions win streaks",
+          "publisher": "azcentral.com and The Arizona Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6r-Q7Y4ylb72GnLZASnMgh6tEaSoJyFvl3HUni4hjeHHSgE09BAY6G96sJYM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQje_Tioe5wkSr5TOPhJ7twJczEWa89LH7QKREW2MqaoxcdIDtIr2vFrZ-C0os"
+        }
+      ]
+    },
+    {
+      "query": "jeffery simmons",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://abc7chicago.com/live-updates/chicago-bears-live-updates-latest-news-football-season-illinois-indiana-lawmakers-battle-site-build-new-stadium/20060646/",
+        "https://www.espn.com/nfl/story/_/id/50535411/bears-jeffery-simmons-says-knee-fine-expects-play-vs-saints",
+        "https://www.chicagobears.com/news/jeffery-simmons-kyle-monangai-good-to-go-against-saints-injury-update"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho",
+      "image_credit": "ABC7 Chicago",
+      "news": [
+        {
+          "url": "https://abc7chicago.com/live-updates/chicago-bears-live-updates-latest-news-football-season-illinois-indiana-lawmakers-battle-site-build-new-stadium/20060646/",
+          "title": "Chicago Bears live updates: Bears to host New Orleans Saints at Soldier Field Sunday",
+          "publisher": "ABC7 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_5JQkiuAaztdj-75LCCAyrD8PDztsJ_w40A6UA4rsVaWXF4Yj6o1-eE6I3Ho"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50535411/bears-jeffery-simmons-says-knee-fine-expects-play-vs-saints",
+          "title": "Bears' Jeffery Simmons says knee injury a non-issue, expects to play vs. Saints",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTllpRjZmZl-9MKnwTuz5vSh0Pr-W7Fbvj5VGVGu0LikQDlv4H1kNseDQtcxaQ"
+        },
+        {
+          "url": "https://www.chicagobears.com/news/jeffery-simmons-kyle-monangai-good-to-go-against-saints-injury-update",
+          "title": "Jeffery Simmons, Kyle Monangai good to go against Saints | Injury Update",
+          "publisher": "Chicago Bears",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs0B3qrMjZqfq0BUvebDZMIvQQX8IRXr_TN4AOmeB7Cp_r0huhKb9Jzb3EuOw"
+        }
+      ]
+    },
+    {
+      "query": "ravens score",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.co.uk/nfl/game?gameId=401873068"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfyGdfOqBUIHWIR-rSZfarlGEGDvrkx3ZQeU71kUsRLaRSY-WNDdqsPoOGmNs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.co.uk/nfl/game?gameId=401873068",
+          "title": "Ravens vs. Panthers (22 Nov, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfyGdfOqBUIHWIR-rSZfarlGEGDvrkx3ZQeU71kUsRLaRSY-WNDdqsPoOGmNs"
+        }
+      ]
+    },
+    {
+      "query": "jonah coleman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://sports.mynorthwest.com/ncaa/uw/two-uw-huskies-among-favorites-for-nfls-offensive-rookie-of-the-year",
+        "https://www.dawgsbynature.com/post/Xvxq-jGqyaGT",
+        "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/football/2026/11/15/denzel-boston-jonah-coleman-cleveland-browns-denver-broncos-nfl-uw-football/92747677007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqBcDlKPcRwDpELKTbACaaWP6oOwO8H9Emvg59dGuv170idx5hCe7Kuzfclc4",
+      "image_credit": "Seattle Sports",
+      "news": [
+        {
+          "url": "https://sports.mynorthwest.com/ncaa/uw/two-uw-huskies-among-favorites-for-nfls-offensive-rookie-of-the-year",
+          "title": "Two UW products among favorites for NFL’s Offensive Rookie of the Year",
+          "publisher": "Seattle Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqBcDlKPcRwDpELKTbACaaWP6oOwO8H9Emvg59dGuv170idx5hCe7Kuzfclc4"
+        },
+        {
+          "url": "https://www.dawgsbynature.com/post/Xvxq-jGqyaGT",
+          "title": "Chiefs' rookie gets fan nod over Browns Denzel Boston for OROY so far",
+          "publisher": "Dawgs By Nature",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUo8TEJBEb3XPZWCggdk__pSgxI-UqIS1gTJZ2yX5pp-8As1ciafdcGFB4XYo"
+        },
+        {
+          "url": "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/football/2026/11/15/denzel-boston-jonah-coleman-cleveland-browns-denver-broncos-nfl-uw-football/92747677007/",
+          "title": "Two Washington alums among Offensive Rookie of the Year favorites",
+          "publisher": "Huskies Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUQ4mEs4EXooK77cvhO0mRGLCBT7-ZxzVx-i7UlhS1s6n3YF1kflSigzygqQQ"
+        }
+      ]
+    },
+    {
+      "query": "jags",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://www.giants.com/news/inactives-who-s-in-who-s-out-for-giants-vs-jaguars",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/chiefs-pull-patrick-mahomes-324-3-with-34-7-lead",
+        "https://sports.yahoo.com/articles/giants-saints-inactives-dt-darius-200820175.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmwN9gzCJLdNjCf6zRQ-q9DMk2qo9Q939zm45nPljbRci31NHfs1JF9TOzwBQ",
+      "image_credit": "Giants.com",
+      "news": [
+        {
+          "url": "https://www.giants.com/news/inactives-who-s-in-who-s-out-for-giants-vs-jaguars",
+          "title": "Inactives: Who's in, who's out for Giants vs. Jaguars",
+          "publisher": "Giants.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmwN9gzCJLdNjCf6zRQ-q9DMk2qo9Q939zm45nPljbRci31NHfs1JF9TOzwBQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/chiefs-pull-patrick-mahomes-324-3-with-34-7-lead",
+          "title": "Chiefs pull Patrick Mahomes (324/3) with 34-7 lead",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQevlFpMi85SuEqHtcRejaHGz8DS0_Az0Am0KKyEfTzYVmxmUkSRZFgMDXKtt4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/giants-saints-inactives-dt-darius-200820175.html",
+          "title": "Giants-Saints inactives: DT Darius Alexander left off New York’s game day roster",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9AnDa8lXW86JRjZ32whLK1OnlNZdDb3CAtqYGd1v1FRGrATtEYlTeNmO_2Lk"
+        }
+      ]
+    },
+    {
+      "query": "nfl standings miami dolphins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/malik-washington-moves-the-chains-with-one-handed-catch-on-fourth-down",
+        "https://www.espn.com/video/clip/_/id/50555039/jaylon-tolbert-rushes-5-yard-td",
+        "https://www.miamidolphins.com/news/transcript-wr-jalen-tolbert-press-conference-november-16"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh4TzUSd73dXBTqb-biK6wZPmtNKk00AxH5FbfI9GrhglAHPIPCyWuoqhJutk",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/malik-washington-moves-the-chains-with-one-handed-catch-on-fourth-down",
+          "title": "Miami Dolphins wide receiver Malik Washington moves the chains with one-handed catch on fourth down",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh4TzUSd73dXBTqb-biK6wZPmtNKk00AxH5FbfI9GrhglAHPIPCyWuoqhJutk"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50555039/jaylon-tolbert-rushes-5-yard-td",
+          "title": "Jaylon Tolbert rushes in for 5-yard TD",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1TWlARztdv8aC-pVv9xZJYUzdso8lqPpK-d2RB5QhWbtfSLPG5h_MMNHIgw"
+        },
+        {
+          "url": "https://www.miamidolphins.com/news/transcript-wr-jalen-tolbert-press-conference-november-16",
+          "title": "Transcript: WR Jalen Tolbert Press Conference - November 16",
+          "publisher": "Miami Dolphins",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB5ALP-K12mKwHCm29q5S1paSQZXmDYeVTmVhGFHMT_NghG2lFKryDVMnBsi8"
+        }
+      ]
+    },
+    {
+      "query": "carolina panthers game today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://www.panthers.com/news/week-11-inactives-vs-baltimore-cornerback-marco-wilson-inactive-for-ravens-game",
+        "https://sports.yahoo.com/articles/carolina-panthers-release-inactives-week-165906130.html",
+        "https://www.rotowire.com/football/headlines/bobby-okereke-injury-out-for-week-11-648809"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRua6mAxz9BkVaZUz7HkJEolCQCqQtoIpqYBmZlvZtA6xEoVwZdh1TxnWPzesI",
+      "image_credit": "Panthers.com",
+      "news": [
+        {
+          "url": "https://www.panthers.com/news/week-11-inactives-vs-baltimore-cornerback-marco-wilson-inactive-for-ravens-game",
+          "title": "Week 11 Inactives vs. Baltimore: Cornerback Marco Wilson inactive for Ravens game",
+          "publisher": "Panthers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRua6mAxz9BkVaZUz7HkJEolCQCqQtoIpqYBmZlvZtA6xEoVwZdh1TxnWPzesI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/carolina-panthers-release-inactives-week-165906130.html",
+          "title": "Carolina Panthers Release Inactives for Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZtduNk8SbsWHP8ePMcR_1q4EAU9gBqrSqiKZd-MjO55ARopbpNvqZcVcjZpk"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/bobby-okereke-injury-out-for-week-11-648809",
+          "title": "Bobby Okereke Injury: Out for Week 11",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtw870bKaa8XUgQvRkFcwW0O2z3UgO7iYQVWT7eI3iQchFKxr548fbV3ZpA6Y"
+        }
+      ]
+    },
+    {
+      "query": "afc playoff picture",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T21:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-11",
+        "https://sports.yahoo.com/articles/nfl-playoff-picture-nfl-standings-204018035.html",
+        "https://bleacherreport.com/articles/25535451-nfl-playoff-picture-2026-27-standings-bracket-scenarios-after-texans-vs-colts"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIfbrFcG2CzzZu7qGB5ZI2sQLiHvYmynjIYnqe5ZWLFSZynnVFG1aW1CSrwN8",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-11",
+          "title": "NFL Playoff Picture 2026: Updated AFC and NFC standings, bracket, tiebreakers for Week 11",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIfbrFcG2CzzZu7qGB5ZI2sQLiHvYmynjIYnqe5ZWLFSZynnVFG1aW1CSrwN8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-playoff-picture-nfl-standings-204018035.html",
+          "title": "NFL playoff picture, NFL standings update in Week 11",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEIOMiOmfc7XY69j5IhCeGzoFhODxRCKQ0j6aDk_7_MZaamTecw7k7Kq5rZg"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25535451-nfl-playoff-picture-2026-27-standings-bracket-scenarios-after-texans-vs-colts",
+          "title": "Fans Make It Sports | Sports. Highlights. News. Now.",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGjzPispLM-sinTkhd_sqoTpcYnu4RjbYkX5eo2iV4K5tQSJJMQ4IyvXPbqaQ"
         }
       ]
     }
