@@ -72,7 +72,7 @@ export async function inspectDeferredSources(job,{request=fetch,now=Date.now()}=
  const github='https://api.github.com/repos/'+repository+'/commits/main';
  let pinnedCommit='';
  try{
-  const r=await request(github,{headers:{Accept:'application/vnd.github+json'},redirect:'error',
+  const r=await request(github,{headers:{Accept:'application/vnd.github+json'},redirect:'manual',
    signal:AbortSignal.timeout(12000)});
   const text=await readLimited(r,75000);
   const parsed=text&&JSON.parse(text);
@@ -82,7 +82,7 @@ export async function inspectDeferredSources(job,{request=fetch,now=Date.now()}=
  for(const path of requested){
   const url='https://raw.githubusercontent.com/'+repository+'/'+pinnedCommit+'/'+path.split('/').map(encodeURIComponent).join('/');
   try{
-   const r=await request(url,{redirect:'error',signal:AbortSignal.timeout(12000)});
+   const r=await request(url,{redirect:'manual',signal:AbortSignal.timeout(12000)});
    const data=await readLimited(r,44000);
    if(data===null){sources.push({path,status:'unavailable'});continue;}
    sources.push({path,status:'verified_source',sha256:await hashString(data),bytes:new TextEncoder().encode(data).byteLength});

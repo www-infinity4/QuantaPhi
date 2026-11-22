@@ -13,18 +13,27 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feature/bubbles-visible-bit-iterations-20261104
-head_sha: 1a58cba45230a338c74c3fcb9788927857deca00
+branch: fix/brain-github-manual-redirect-1907
+head_sha: null
 merged: false
 deployed: false
 live_verified: false
-next_action: "Verify exact-head CI on Bubbles #1664; obtain independent review and gated merge/release, then use one signed owner continuation with real claim/test/PR receipt"
-blocker: "Live Brain's deployed source predates pending admission fixes; older tickets require explicit eligible owner selection. Independent review and guarded release still pending."
+next_action: "Review PR #2069 final source and exact-head CI, then stage and canary the exact merged Brain source through existing Moltnook release gates"
+blocker: "Live Brain still serves the November 19 CT candidate with unsupported redirect modes; source repair, guarded deployment and signed result acceptance are distinct gates."
 ---
 
 # Canonical issue
 
 https://github.com/www-infinity4/QuantaPhi/issues/1192
+
+## November 22 CT · Brain transport continuation under #1907
+
+- Owner request: "Brain fix please I think you still have more ti wire up". Reused open PR [#2069](https://github.com/www-infinity4/QuantaPhi/pull/2069); no duplicate issue or replacement runner. GitHub's direct PR read confirms the branch merges cleanly. No coordinator lease was claimed; lease/fence fields stay null.
+- Live Cloudflare GET still reports deployment `72a4d7d7-148e-49fd-b8c6-a6b3141f004a`, candidate `6936c7ed-9f78-48b6-b19f-1a430a1f365a` at 100%. Original Green delivery [run 44976395638](https://github.com/www-infinity4/Moltnook/actions/runs/44976395638) wrote a branch then failed its Brain callback with `Invalid redirect value`.
+- Extended the existing two-call-site repair to eight identical unsupported redirect settings in recovery, work-receipt readback, token-manager metadata, OAuth bootstrap and scope-sync helpers. All use `manual` and retain existing non-2xx rejection, owner gates, timeout, fixed destinations, approval state and sanitized receipts. Tests use only synthetic providers; no real token, OAuth client, consent or wallet operation was invoked.
+- Regression-first local RED: 42 tests, 15 passed, 27 failed before source changes. Focused GREEN: 49/49 passed after the eight mode replacements. Both recovery redirects and each commit/CI/jobs redirect remain unverified and are never followed. The required BrainClock suite imports the affected recovery/readback/OAuth tests; scope-sync tests already run in required CI.
+- One additional documented session; overall percentage, total sessions and remaining estimate remain unknown. Current state is source tested / review pending (YELLOW), not deployed or Android accepted. Exact final commit/CI/review/release receipts are appended to canonical #1907 as observed.
+- Preserve the unrelated unsafe job's refusal; do not retry it as an acceptance test. Next: final independent source review and exact-head CI, permitted merge, zero-traffic stage, isolated canary, guarded production readback and one safe signed job result.
 
 # Owner acceptance
 

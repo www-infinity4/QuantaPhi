@@ -31,7 +31,7 @@ export async function readbackOwnerWorkReceipt(owner,body={},fetcher=fetch){
  const read=async path=>{
   // All targets are pinned to the GitHub REST host and exact known repository.
   const response=await fetcher(prefix+path,{
-   method:'GET',redirect:'error',headers:{Accept:'application/vnd.github+json',
+   method:'GET',redirect:'manual',headers:{Accept:'application/vnd.github+json',
     'User-Agent':'Bubbles-Work-Receipt-Readback'},
    signal:AbortSignal.timeout(12000)
   });

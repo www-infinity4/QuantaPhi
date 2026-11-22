@@ -47,7 +47,7 @@ async function api(path,token,{method='GET',body,request=fetch}={}){
   method,headers:{Authorization:'Bearer '+token,Accept:'application/json',
    ...(body?{'Content-Type':'application/json'}:{})},
   ...(body?{body:JSON.stringify(body)}:{}),
-  redirect:'error',signal:AbortSignal.timeout(15000)});
+  redirect:'manual',signal:AbortSignal.timeout(15000)});
  const data=await res.json().catch(()=>({}));
  if(!res.ok||data?.success!==true)throw Error('cloudflare_http_'+res.status);
  return data.result;

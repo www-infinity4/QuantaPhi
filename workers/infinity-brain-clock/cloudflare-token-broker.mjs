@@ -93,7 +93,7 @@ export async function inspectCloudflareTokenManager(env,{request=fetch}={}){
  try{
   const res=await request('https://api.cloudflare.com/client/v4/user/tokens/permission_groups',{
    method:'GET',headers:{Authorization:'Bearer '+parent,Accept:'application/json'},
-   redirect:'error',signal:AbortSignal.timeout(12000)});
+   redirect:'manual',signal:AbortSignal.timeout(12000)});
   const data=await res.json().catch(()=>({}));
   if(!res.ok||data.success!==true){
    return {ok:false,stage:'permission_group_lookup',httpStatus:res.status,

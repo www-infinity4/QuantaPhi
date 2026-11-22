@@ -18,6 +18,7 @@ import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from '
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
+import {githubReadNoRedirect} from './github-read-transport.mjs';
 
 import {reconcileMergedJob} from './merge-receipt.mjs';
 import {sortCandidates} from './queue-order.mjs';
@@ -100,9 +101,9 @@ async function updateRunnerLease(storage,lease,update){
 }
 function engineGithub(token){
  return async(path,accept='application/vnd.github+json')=>{
-  const response=await fetch('https://api.github.com/'+path,{
+  const response=await githubReadNoRedirect('https://api.github.com/'+path,{
    headers:{Accept:accept,'User-Agent':'Infinity-Repository-Engine',...(token?{Authorization:'Bearer '+token}:{})},
-   redirect:'error',signal:AbortSignal.timeout(15000)
+   signal:AbortSignal.timeout(15000)
   });
   if(!response.ok)throw Error('engine_github_read_failed_'+response.status);
   return accept==='application/vnd.github.raw+json'?response.text():response.json();
@@ -314,8 +315,8 @@ export class BrainClock extends DurableObject{
   const token=typeof body.verificationToken==='string'&&body.verificationToken?body.verificationToken:'';
   const headers={Accept:'application/vnd.github+json','User-Agent':'Infinity-Pink-Source-Review',...(token?{Authorization:'Bearer '+token}:{})};
   async function verifiedGithub(path,raw=false){
-   const r=await fetch('https://api.github.com/'+path,{headers:raw?{...headers,Accept:'application/vnd.github.raw+json'}:headers,
-    redirect:'error',signal:AbortSignal.timeout(15000)});
+   const r=await githubReadNoRedirect('https://api.github.com/'+path,{headers:raw?{...headers,Accept:'application/vnd.github.raw+json'}:headers,
+    signal:AbortSignal.timeout(15000)});
    if(!r.ok)throw Error('source_review_github_read_failed_'+r.status);
    return raw?readBoundedText(r,250000):r.json();
   }

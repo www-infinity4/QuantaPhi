@@ -29,6 +29,7 @@ function harness({scopes=fakeScopeIDs(),client=ID,active=ID.slice(0,16),
  };
  let catalogCalls=0;
  const request=async (url,opts={})=>{
+  assert.equal(opts.redirect,'manual','authenticated and public scope reads must use Cloudflare-supported no-follow mode');
   const path=String(url);
   logs.push({url:path,method:opts.method||'GET',body:opts.body});
   if(path.startsWith('https://quantaphi.org/api/bubbles/connections/scope-inventory')){
@@ -242,6 +243,7 @@ test('already synchronized requires both verified counts and makes no write',asy
 test('read-only preflight identifies the failing Cloudflare endpoint before any token mint',async()=>{
  const requests=[];
  const request=async(url,options)=>{
+  assert.equal(options.redirect,'manual');
   requests.push({url,method:options.method||'GET'});
   return Response.json({success:false,errors:[{code:6003,message:'DO NOT ECHO SECRET MATERIAL'}]},
    {status:400});

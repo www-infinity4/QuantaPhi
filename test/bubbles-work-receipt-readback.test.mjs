@@ -23,7 +23,7 @@ function checked(reply=success){
   const index=urls.indexOf(url);
   assert.ok(index>=0,'reject unknown host or endpoint: '+url);
   assert.equal(options.method,'GET');
-  assert.equal(options.redirect,'error');
+  assert.equal(options.redirect,'manual');
   return {ok:true,json:async()=>reply[index]};
  };
  return {seen,fetcher};
@@ -85,6 +85,20 @@ test('read failures, malformed IDs and missing owner fail closed',async()=>{
  }
  const failing=await readbackOwnerWorkReceipt(owner,input,async()=>({ok:false,status:403}));
  assert.equal(failing.error,'github_receipt_readback_unavailable');
+});
+test('redirected commit, workflow or job JSON is never accepted as a work receipt',async()=>{
+ for(let redirected=0;redirected<3;redirected++){
+  const calls=[];
+  const result=await readbackOwnerWorkReceipt(owner,input,async(url,options)=>{
+   assert.equal(options.redirect,'manual');
+   const index=calls.length;calls.push(url);
+   assert.equal(url,urls[index]);
+   return Response.json(success[index],index===redirected?{status:302,headers:{Location:'https://other.example/receipt'}}:{});
+  });
+  assert.equal(result.ok,false);
+  assert.equal(result.error,'github_receipt_readback_unavailable');
+  assert.equal(calls.length,redirected+1);
+ }
 });
 test('owner-only Brain route exposes bounded source readback, not a ticket creation operation',()=>{
  const source=readFileSync('workers/infinity-brain-clock/conversation-memory.mjs','utf8');

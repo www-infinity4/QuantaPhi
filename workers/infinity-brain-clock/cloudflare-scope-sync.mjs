@@ -14,7 +14,7 @@ const getResult=async(path,token,{method='GET',body,request=fetch}={})=>{
  const response=await request('https://api.cloudflare.com/client/v4'+path,{
   method,headers:{Authorization:'Bearer '+token,Accept:'application/json',...(body?{'Content-Type':'application/json'}:{})},
   ...(body?{body:JSON.stringify(body)}:{}),
-  redirect:'error',signal:AbortSignal.timeout(18000)});
+  redirect:'manual',signal:AbortSignal.timeout(18000)});
  const json=await response.json().catch(()=>({}));
  if(!response.ok||json?.success!==true)throw Error('cloudflare_http_'+response.status);
  return json.result;
@@ -70,7 +70,7 @@ export async function confirmBubblesScopeSync(storage,body,env,{
   if(!scopes.every(s=>typeof s==='string'&&/^[a-zA-Z][\w.-]{1,100}$/.test(s))||
     new Set(scopes).size!==scopes.length)throw Error('oauth_client_scopes_invalid');
   const existing=await request('https://quantaphi.org/api/bubbles/connections/scope-inventory',{
-   headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(12000)});
+   headers:{Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(12000)});
   const catalog=existing.ok?await existing.json().catch(()=>({})):{};
   const cloudflare=catalog.ok===true&&catalog.configured===true?catalog:null;
   if(cloudflare?.clientIdPrefix!==CLIENT_ID.slice(0,16))
@@ -119,7 +119,7 @@ export async function confirmBubblesScopeSync(storage,body,env,{
   let count=null,requested=null,clientMatches=false,scopeSetMatches=false,revisionMatches=false;
   try{
    const check=await request('https://quantaphi.org/api/bubbles/connections/scope-inventory?scopeSync=1',
-    {headers:{Accept:'application/json'},redirect:'error',signal:AbortSignal.timeout(12000)});
+    {headers:{Accept:'application/json'},redirect:'manual',signal:AbortSignal.timeout(12000)});
    if(check.ok){
     const data=await check.json();
     clientMatches=data?.ok===true&&data?.configured===true&&
