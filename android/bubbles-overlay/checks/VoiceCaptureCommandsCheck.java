@@ -51,6 +51,13 @@ public final class VoiceCaptureCommandsCheck {
         expect("film this", "camera_video");
         expect("take a screenshot", "screen_image");
         expect("take screenshots every five seconds for five minutes", "screen_sequence");
+        VoiceCaptureCommands.Command oneSecond = VoiceCaptureCommands.parse("take screenshots every 1 second for 30 seconds");
+        if (oneSecond == null || !"screen_sequence".equals(oneSecond.action) ||
+                oneSecond.intervalSeconds != 1 || oneSecond.durationSeconds != 30)
+            throw new AssertionError("Consent-based 1-second screenshot series must preserve a 30-second requested duration");
+        VoiceCaptureCommands.Command capped = VoiceCaptureCommands.parse("take screenshots every 1 second for five minutes");
+        if (capped == null || capped.intervalSeconds != 5 || capped.durationSeconds != 300)
+            throw new AssertionError("Long screenshot series must still cap to 60 images");
         noCapture("can you explain the video to me");
         noCapture("what happened to the camera");
         noCapture("how do I record my screen?");
