@@ -135,7 +135,7 @@ test('rejects malformed shards, changed hashes, forged phone claims and duplicat
  assert.equal((await call('PUT',`/v1/owner/shards/${id}/0`,fragments[0])).status,200);
  const peer=(await provision(call,1))[0];
  assert.equal((await call('POST','/v1/node/ack',{fileId:id,index:0,sha256:fragments[0].sha256},peer.token)).status,409);
- assert.equal((await call('POST','/v1/node/heartbeat',{inventory:[{fileId:'fake',index:0,sha256:fragments[0].sha256}]},peer.token)).status,200);
+ assert.equal((await call('POST','/v1/node/heartbeat',{inventory:[{fileId:'fake',index:0,sha256:fragments[0].sha256}]},peer.token)).status,422,'reject forged file identifiers');
  const status=await call('GET','/v1/owner/status');
  assert.equal(status.files[0].underReplicated,4);
 });
