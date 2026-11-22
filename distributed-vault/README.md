@@ -61,3 +61,56 @@ The existing `.github/workflows/distributed-vault-tests.yml` must pass on the ex
 6. Only then consider moving a safe non-identity workload from Cloudflare under issue #2110's staged cutover gates.
 
 No production migration or bill cancellation is authorized by this prototype.
+
+## Phase 2 — owner-hosted repository mesh server (PR #2115)
+
+`mesh-server.mjs`, `mesh-runner.mjs`, `mesh-owner.mjs`, `mesh-peer.mjs` and `mesh-app.html` add a **runnable localhost coordinator** with durable local SQLite metadata and encrypted shard copies. This is the repository-built server software; **GitHub repos do not themselves run permanent background servers**. The machine running `mesh-runner.mjs` must remain powered, online and backed up. Node 22's `node:sqlite` is experimental and must be validated on the chosen owner host.
+
+### Run on owner-controlled Termux or computer, without npm
+
+Generate a strong owner token once with Python; save it in a private local secret manager, not GitHub:
+
+```bash
+cd ~/QuantaPhi
+export MESH_OWNER_TOKEN="$(python3 -c 'import secrets; print(secrets.token_urlsafe(48))')"
+export MESH_DB="$HOME/.quantaphi-mesh/mesh.sqlite"
+node distributed-vault/mesh-runner.mjs
+```
+
+In **another terminal** on that machine, with the same owner token:
+
+```bash
+export MESH_API_URL="http://127.0.0.1:8789"
+node distributed-vault/mesh-owner.mjs enroll 524288
+node distributed-vault/mesh-owner.mjs publish "$HOME/my-encrypted-shards"
+node distributed-vault/mesh-owner.mjs status
+node distributed-vault/mesh-owner.mjs repair
+```
+
+The `enroll` result is a separate private per-app credential. Provide it to that installed app **privately**; never add it to a public page, repository, log, QR screenshot, or source file. The enrolled device opens `https://YOUR-VERIFIED-OWNER-HOST/app` after a real HTTPS certificate has been installed and the hostname verified. One-time app enrollment permits automatic encryption-fragment caching while the page runs; no per-fragment storage permission is needed. A device can pause caching or clear its app fragments. The server reassigns a lost fragment to other available app caches, temporarily avoiding an app that just reported its copy missing.
+
+The server is intentionally loopback-only by default. Binding to a real public address requires `MESH_TLS_CERT` and `MESH_TLS_KEY` for direct HTTPS, with valid certificate/hostname and network/firewall configuration. Do not expose the HTTP loopback port directly to the Internet. The served app uses same-origin APIs (no broad cross-origin permission). App/phone availability is intermittent; background work is **not** promised.
+
+The coordinator's SQLite file holds **ciphertext only** for fragments, metadata, hash receipts and hashed per-app credentials, never plaintext D1 records or file decryption keys. That owner-hosted encrypted repository is the repair source when a phone cache is erased. Keep it privately backed up too. A cache report is not hardware attestation; cloneable tokens, malicious clients, multi-node outages, corrupted host disks and offline phones remain future security and reliability tests. Never use this as the only copy of financial or identity records.
+
+### Private D1 migration staging
+
+The private offline migration tool `d1-stage.py` can import a legitimate *owner-provided* D1 SQL export into a new SQLite file, check its SQLite integrity, split it into independently hashed chunks, and restore byte-identical SQLite from them. **No actual D1 account data has been exported, transferred, imported or switched by this PR.** The live D1 quota and storage exhaustion must be resolved before attempting an authorized export; use the provider's official supported export mechanism and keep all snapshots out of public GitHub.
+
+```bash
+python3 distributed-vault/d1-stage.py import-sql "$HOME/private-export.sql" "$HOME/private-mirror.sqlite"
+python3 distributed-vault/d1-stage.py chunk "$HOME/private-mirror.sqlite" "$HOME/private-db-chunks" 16777216
+python3 distributed-vault/d1-stage.py restore "$HOME/private-db-chunks" "$HOME/verified-mirror.sqlite"
+```
+
+**Private chunks are unencrypted.** Before any transfer to app caches, encrypt each chunk with the existing `vault-cli.mjs pack` command into its **own** fragment manifest and keep each chunk's private AES-GCM key separately. Publish only the encrypted fragment folders with `mesh-owner.mjs publish`. For a larger database, repeat across each chunk and verify every key/manifest. Never upload a raw `.sqlite`, `.sql`, private key or plain chunk to a public GitHub repo.
+
+The current server provides a durable **encrypted backup/fragment coordinator**, not a production SQL API compatible with Cloudflare D1. To replace live D1 queries, Bubbles/StarQuest requires a verified stateful SQL host, carefully migrated tables, authenticated per-user APIs, write ordering and dual-read reconciliation, leases, backups and a reversible cutover. The user did not authorize data destruction, billing changes, token resets or DNS changes.
+
+### Regression tests
+
+```bash
+node --test test/distributed-vault*.test.mjs
+```
+
+The CI runs the SQLite coordinator, HTTP tests, lost-phone-cache repair, credential isolation, encrypted recovery across restart, D1 SQL import and private SQLite chunk restore using **synthetic** data. Results are not physical Android/production receipts.
