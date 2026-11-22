@@ -269,6 +269,28 @@ test('owner screenshot The Shires Daddy\'s Little Girl has one source-backed pub
  assert.match(player,/View more videos/);
 });
 
+test('owner G2B1dFuhtfY YouTube link produces one original-source Oracle Media Quick Card',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='G2B1dFuhtfY';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+ assert.equal(rows.length,1,'Exactly one verified-source entry for this user-supplied link');
+ const video=rows[0];
+ assert.equal(video.title,'We Adopted Another Baby!');
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.publisherVerified,false,'Title lookup is not publisher verification');
+ assert.equal(video.publishedAt,null,'Never invent exact publication date');
+ assert.equal(video.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(video));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(card=>card.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'One reusable card, not another player');
+ const card=cards[0];
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(card) && validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
+
 
 test('owner bDZam9unNYk is exactly one source-only Public/Media Quick Card with View More feed coverage',async()=>{
  const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');

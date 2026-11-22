@@ -379,6 +379,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Verification gates:** connector source commits observed; exact-head CI, independent source review, guarded merge, Cloudflare live release, desktop/Android player acceptance are outstanding until separate receipts arrive. No signed Moltnook lease was claimed by this connector session. Parent issue is still open.
 - **Next executable action:** inspect PR #2089 exact-head GitHub Actions checks and resolve failures. Then independently review source boundaries, guarded-merge only if allowed, and verify real deploy/browser and Android playback; obtain Ella Bella's exact original link separately before any import.
 
+## Session · owner video G2B1dFuhtfY · 2026-11-22
+
+- **Owner source:** https://youtu.be/G2B1dFuhtfY?is=65wATBp4X_R890l3
+- **Canonical:** https://www.youtube.com/watch?v=G2B1dFuhtfY. YouTube watch-page result identifies **We Adopted Another Baby!**. Uploader/channel, upload date, exact embed availability and rights are not verified.
+- **Reuse, not duplicate:** issue #1603; draft PR #2088. One source-only Public/Media record in `youtube-owner-video-links.mjs`, automatically used by existing original-thumbnail Oracle Quick Card, click-only YouTube provider embed, Stop, original link, and owner View More feed. No paid API, media download, backup, Star Coins, ad placement or channel bulk import.
+- **Branch:** `feat/youtube-owner-G2B1dFuhtfY-1603-20261122`, initial base `b8a4702561b57667f9ca2981e2f120014e453a60`. TDD specification commit `f3e9f2eabee9dffec2276d00db89463e20f6e1f2`; source import commit `7112425fb251ebf6a40b7bae696c97f5fe876c7c`. First push had Image Context workflow pass but no demonstrated focused failing RED run; this is not RED proof.
+- **Status:** source implemented, focused exact-head tests and independent review pending as of checkpoint. Scoped estimate 3/7 gates complete (source link/title, code placement, assertion), remaining: focused CI, independent review/guarded merge, Cloudflare readback, physical Android player/Stop verification. One documented session; additional sessions unknown. No signed Moltnook job lease was issued from this connector session.
+- **Next safe action:** read PR #2088 exact-head Creator post Quick Cards and other required GitHub Actions. Fix actual failures on its branch. Verify current base/mergeability, review, then eligible policy-compliant merge; confirm Cloudflare and real Android separately.
+
 
 ## Owner video intake · bDZam9unNYk · 2026-11-22
 
@@ -387,7 +396,7 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Existing issue / new draft:** #1603 / https://github.com/www-infinity4/QuantaPhi/pull/2090
 - **Repository / branch / base at claim:** `www-infinity4/QuantaPhi` / `feat/youtube-bdzam9unNYk-1603-20261122` / `b6097acd927a7b5603df6a5f67c16aef0df21926`.
 - **Source confidence:** Owner-supplied syntactically valid YouTube video ID. Public YouTube page and oEmbed fetches were throttled or timed out. Title, channel, publication, playback availability, rights and complete channel are unverified.
-- **Scope:** Add one `youtube-owner-video-links.mjs` source-only general-media record. It automatically generates exactly one Public/Media Oracle Quick Card, first-party thumbnail reference, optional provider-hosted playback and the original-source fallback with View More. No copied media, invented ads, verified channel import, wallet/Star Coin changes or new service keys.
+- **Scope:** Add one `youtube-owner-video-links.mjs` source-only general-media record. It automatically generates exactly one Public/Media Oracle Quick Card, YouTube-hosted thumbnail reference, optional provider-hosted playback and the original-source fallback with View More. No copied media, invented ads, verified channel import, wallet/Star Coin changes or new service keys.
 - **TDD RED:** GitHub test-first commit `6c79f738473952817b309a039dc691295157e4ee`. Workflow [45024745832](https://github.com/www-infinity4/QuantaPhi/actions/runs/45024745832) job 137215204683 failed specifically on new assertion (`0 !== 1`, no source), 126 other tests passed, exit code 1.
 - **Green source patch:** `57c8544188985227f1402532287636186f945770`; current exact-head CI still to be confirmed after checkpoint commit. Source/CI and release receipts are distinct.
 - **State / dot / progress:** `implementing` / 🔴 / estimated 2 of 6 gates (original source recorded, regression defined; CI, review, merge, deployment/Android acceptance outstanding). One documented session; remaining unknown.
