@@ -1,0 +1,15 @@
+# Spatial AI · Quick Card · Issue #2064
+- Project: www-infinity4/QuantaPhi
+- Source request: owner continuation on 2026-11-21 Central Time.
+- Owner issue: https://github.com/www-infinity4/QuantaPhi/issues/2064
+- Agent: ChatGPT Green source engineer / Pink local checks; no authenticated background runner lease claimed.
+- Branch: feat/spatial-ai-quick-card-2064-20261121 (main source SHA cc00a99ef9fde0306c20c40f6ff4996b3c5a9932).
+- State: source implementation staged; CI, independent review, release and Android browser verification pending.
+- Dot: RED until source and exact-head CI tests are confirmed.
+- Progress estimate: 3/10 milestones (~30%); not evidence of live deployment.
+- Sessions spent: 1; remaining estimate: unknown.
+- Source scope: local OBJ parser and wireframe renderer, explicitly approved camera preview, in-memory 2D capture, summary handoff, existing Bubbles card catalog, mobile styling.
+- Boundaries: 2D image is not depth; no SLAM/ARCore, validated measurement, private context import, automatic uploads, robot controls, or paid APIs.
+- Test command: node --test test/spatial-ai.test.mjs
+- Local test: RED module absent; then five focused tests passed in a locally assembled workspace. Independent CI on exact branch head remains unverified.
+- Next action: inspect/open draft PR and exact-head CI, run Android width/browser camera acceptance. Keep merge, deployment and live checks separate.
