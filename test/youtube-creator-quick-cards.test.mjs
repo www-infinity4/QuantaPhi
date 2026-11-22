@@ -192,3 +192,31 @@ test('owner c0YDTPOmiCM link produces one source-only Oracle Public/Media Quick 
  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
  assert.equal(departmentFor(card),'media');
 });
+
+
+test('owner 4EUkH6CzTUA has exactly one source-only Oracle Public/Media Quick Card and a View more feed entry',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='4EUkH6CzTUA';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'Owner supplied one video; never drop or duplicate it');
+ const video=rows[0];
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(video.titleVerified,false);
+ assert.equal(video.publisherVerified,false);
+ assert.equal(video.publishedAt,null);
+ assert.equal(video.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(video));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+ assert.match(card.details,/not independently verified/i);
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
+ assert.match(mixed,/Load more videos/);
+});
