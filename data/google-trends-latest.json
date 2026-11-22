@@ -3,52 +3,236 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T15:31:18.113298Z",
+  "checked_at": "2026-11-22T16:01:15.697887Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "real sociedad",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T15:10:00Z",
+      "query": "scott bessent",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T15:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
-        "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
-        "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055"
+        "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+        "https://www.washingtonpost.com/technology/2026/11/20/officials-approved-sale-580000-nvidia-chips-chinese-companies/",
+        "https://www.bloomberg.com/news/articles/2026-11-19/us-approved-ai-chip-sales-to-china-s-tencent-alibaba-data-show"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1CWArzm4pabIgOg2ANnnBqvNXVN7zScyjg2-MluSRX-FtRyTQjzXF3LRl-uo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6AOcuMbRbWK1rZT5mEPpAhkbNxXWLyd0si7uujLOLV51xFMvLwgGF-EfzqI",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
-          "title": "🚨 Racing Santander-Real Sociedad: both sides rotate their starting XIs",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html",
+          "title": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1CWArzm4pabIgOg2ANnnBqvNXVN7zScyjg2-MluSRX-FtRyTQjzXF3LRl-uo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM6AOcuMbRbWK1rZT5mEPpAhkbNxXWLyd0si7uujLOLV51xFMvLwgGF-EfzqI"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
-          "title": "Racing-Real Sociedad: Racing hosts with three players ruled out",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.washingtonpost.com/technology/2026/11/20/officials-approved-sale-580000-nvidia-chips-chinese-companies/",
+          "title": "Officials approved the sale of 580,000 Nvidia chips to Chinese companies",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdtA36GPPSHu1Zyg0eGF-23dDKjfM3Xv5sIPXN-pCIIGsuUQJG8EXRragqFwA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmYkudsES2sLQMuFZ6uWi-zyqGuwby2VGunqFBsshVMudMUbK5VVuDMYnT0Cc"
         },
         {
-          "url": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
-          "title": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
-          "publisher": "WhoScored.com",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-19/us-approved-ai-chip-sales-to-china-s-tencent-alibaba-data-show",
+          "title": "US Approved AI Chip Sales to China’s Tencent, Alibaba, Data Show",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpWDp1NRBTf71zgBOb0Z_KD8hxX-Ho0cD86paz5WMmCgyEA0bLOGISmg7Zptc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPcJBaSdXs7kajU_Op-g8sjOUvhuAuuvTrfHJm4IVfD0_1e2eSZ3O7MajReyI"
+        }
+      ]
+    },
+    {
+      "query": "liverpool vs man utd",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live",
+        "https://www.skysports.com/football/live-blog/13610924/liverpool-vs-man-utd-live-premier-league-match-updates-free-highlights-news-and-score",
+        "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbE7yzE6cBPG_Fbon3r3a98dZPMNgRsaEgEVVIdAxeIu62WTiGdiYZ04V_I-M",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/22/liverpool-v-manchester-united-premier-league-live",
+          "title": "Liverpool v Manchester United: Premier League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbE7yzE6cBPG_Fbon3r3a98dZPMNgRsaEgEVVIdAxeIu62WTiGdiYZ04V_I-M"
+        },
+        {
+          "url": "https://www.skysports.com/football/live-blog/13610924/liverpool-vs-man-utd-live-premier-league-match-updates-free-highlights-news-and-score",
+          "title": "Liverpool vs Man Utd LIVE! Premier League match updates, free highlights, news and score",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjprwGmTrgi7X0pwmcm1U8KuLXqHJ2Fk2lbMhjlChBThvKoSz_Hmk3YTDu2PU"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/ckqx5w58dgv7o",
+          "title": "'He will see what Man Utd are made of' - Pulis on Pochettino's first game",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJBCTA9BDVPClKitropnj3mtQMCfKC5-mNQJpzQTOiKJqXptEJiN9Z-ACRKrs"
+        }
+      ]
+    },
+    {
+      "query": "delta flights",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [
+        "https://www.fox5atlanta.com/news/delta-air-lines-automation-issue-triggers-hundreds-thanksgiving-travel-delays-atlanta",
+        "https://www.11alive.com/article/travel/flights/ground-delay-issued-for-delta-flights-set-to-arrive-at-hartsfield-airport/85-4b871a06-44d5-4344-b8db-042a8c090c4e",
+        "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfs_FWNLhP5hTEdct1hsCCtVw3JCUPibGbqNRkNhpW4SW7euKDdhZz7-gDcQ",
+      "image_credit": "FOX 5 Atlanta",
+      "news": [
+        {
+          "url": "https://www.fox5atlanta.com/news/delta-air-lines-automation-issue-triggers-hundreds-thanksgiving-travel-delays-atlanta",
+          "title": "Delta Air Lines automation issue triggers hundreds of Thanksgiving travel delays in Atlanta",
+          "publisher": "FOX 5 Atlanta",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfs_FWNLhP5hTEdct1hsCCtVw3JCUPibGbqNRkNhpW4SW7euKDdhZz7-gDcQ"
+        },
+        {
+          "url": "https://www.11alive.com/article/travel/flights/ground-delay-issued-for-delta-flights-set-to-arrive-at-hartsfield-airport/85-4b871a06-44d5-4344-b8db-042a8c090c4e",
+          "title": "\"Ground delay\" issued for Delta Flights set to arrive at Hartsfield Airport",
+          "publisher": "11Alive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLadYA-Yff1G8nCCipe-GamOEjd9RvgTOKsOD2XSwcpqde6mbRPE8yBiUleh0"
+        },
+        {
+          "url": "https://www.atlantanewsfirst.com/2026/11/22/ground-stop-issued-delta-flights-en-route-atlanta/",
+          "title": "Ground stop issued for Delta flights en route to Atlanta",
+          "publisher": "Atlanta News First",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYclxUO1inxdHw1R8mOsJkpoBkU_HAStPF29siawo45Fcbe1VGSV0GPuERk60"
+        }
+      ]
+    },
+    {
+      "query": "walmart black friday",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/news/local/planning-for-black-friday-heres-which-malls-are-opening-early-and-their-hours/4019873/",
+        "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-store-hours-2026-when-do-doors-open-at-walmart-target-kohls-macys-best-buy-costco-and-other-retailers-182104117.html",
+        "https://www.freep.com/story/life/shopping/2026/11/20/black-friday-2026-retailers-sales-michigan/92878772007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyHhs2bhBQkX_o9wisiXW1N1ouESVkDM0p3vMsVMdUVe-4HMmynsL_IBD-QkE",
+      "image_credit": "NBC Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/planning-for-black-friday-heres-which-malls-are-opening-early-and-their-hours/4019873/",
+          "title": "Planning for Black Friday? Here's which malls are opening early and their hours",
+          "publisher": "NBC Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyHhs2bhBQkX_o9wisiXW1N1ouESVkDM0p3vMsVMdUVe-4HMmynsL_IBD-QkE"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-store-hours-2026-when-do-doors-open-at-walmart-target-kohls-macys-best-buy-costco-and-other-retailers-182104117.html",
+          "title": "Black Friday store hours 2026: When do doors open at Walmart, Target, Kohl's, Macy's, Best Buy, Costco and other retailers?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNWGrybN-8Vdah5f6P2afK2fNQEhw7uSUzVcJoWw0id71CzFEhiyVwMU-s-w4"
+        },
+        {
+          "url": "https://www.freep.com/story/life/shopping/2026/11/20/black-friday-2026-retailers-sales-michigan/92878772007/",
+          "title": "When is Black Friday 2026? Some retailers are already offering deals",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3PIzWPp4FJCcEapsDp_0KRsHHuI1IXi4EpHYRKjf7PdamuK_iUAVMhMezxTA"
+        }
+      ]
+    },
+    {
+      "query": "trabzonspor vs eyüpspor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [
+        "https://beinsports.com.tr/haber/thomas-reis-bu-sebepten-oturu-zor-bir-mac-olacak",
+        "https://www.canligaste.com/canli-trabzonspor-eyupspor-maci-kadro-dizilis-h2h-canli-anlatim-ve-canli-skor-22-kasim-2026/954772/",
+        "https://www.61saat.com/trabzonspor-taraftarlarinin-istegi-gercek-oldu-baskan-dogana-tesekkur-ettiler"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiwMiJcgfr4FPJ1TOMpoPs_OpycOuGUy6gQ6QZD9TE5xgwSE3b6tFvo5P1fzY",
+      "image_credit": "beinsports.com.tr",
+      "news": [
+        {
+          "url": "https://beinsports.com.tr/haber/thomas-reis-bu-sebepten-oturu-zor-bir-mac-olacak",
+          "title": "Thomas Reis Bu sebepten ötürü zor bir maç olacak",
+          "publisher": "beinsports.com.tr",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiwMiJcgfr4FPJ1TOMpoPs_OpycOuGUy6gQ6QZD9TE5xgwSE3b6tFvo5P1fzY"
+        },
+        {
+          "url": "https://www.canligaste.com/canli-trabzonspor-eyupspor-maci-kadro-dizilis-h2h-canli-anlatim-ve-canli-skor-22-kasim-2026/954772/",
+          "title": "CANLI | Trabzonspor - Eyüpspor maçı kadro, diziliş, H2H canlı anlatım ve canlı skor - 22 Kasım 2026",
+          "publisher": "Canlı Gaste",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThG9KArGrHc1TOolJkB5nFrjT8pvgxrkcZ_Aq58v6tHpygvL3SkeuSamz0nSs"
+        },
+        {
+          "url": "https://www.61saat.com/trabzonspor-taraftarlarinin-istegi-gercek-oldu-baskan-dogana-tesekkur-ettiler",
+          "title": "Trabzonspor taraftarlarının isteği gerçek oldu! Başkan Doğan'a teşekkür ettiler",
+          "publisher": "61SAAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXfw_XBccgD-Nu79R3oc179WBZXs2PFnEj_qwxGDtIAN_z-H1V-1erPHCMv-k"
+        }
+      ]
+    },
+    {
+      "query": "sen john kennedy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "denver weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T15:20:00Z",
+      "related_news_urls": [
+        "https://kdvr.com/weather/weather-forecast/denver-weather-afternoon-sun-and-much-colder-stretch-ahead/",
+        "https://www.9news.com/article/weather/weather-colorado/snow-colorado-mountains-forecast/73-6d5427a0-5fab-444e-a038-7020f83a5266",
+        "https://opensnow.com/dailysnow/colorado/post/44984"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7u_s_lM6YB9ogU9tj_zC7WgdOovmYX4eSMKVtYRZI6YlqQkfzREzRv9bo9B8",
+      "image_credit": "KDVR",
+      "news": [
+        {
+          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-afternoon-sun-and-much-colder-stretch-ahead/",
+          "title": "Denver weather: Afternoon sun and much colder stretch ahead",
+          "publisher": "KDVR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7u_s_lM6YB9ogU9tj_zC7WgdOovmYX4eSMKVtYRZI6YlqQkfzREzRv9bo9B8"
+        },
+        {
+          "url": "https://www.9news.com/article/weather/weather-colorado/snow-colorado-mountains-forecast/73-6d5427a0-5fab-444e-a038-7020f83a5266",
+          "title": "Snow to pick up in Colorado mountains, colder fall temps this weekend",
+          "publisher": "9NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjeoMRjekfzm2Ivyt5ywk2_K2VdaiI5X-WxJewaB2oo92C64Cun-z9xzd-LpE"
+        },
+        {
+          "url": "https://opensnow.com/dailysnow/colorado/post/44984",
+          "title": "It snowed (a least a little) and more snow is on the way Fri & Sat",
+          "publisher": "OpenSnow",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_3K0_pUmkIEaYl0m7Bnrt-BqsYSYCveMGKJocb0AD2lmQ68eWIZ-ukgx-Lrw"
         }
       ]
     },
     {
       "query": "tom jackson espn",
-      "approx_searches": "50000+",
+      "approx_searches": "100000+",
       "published_at": "2026-11-22T15:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
-        "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-icon-tom-jackson-dies/73-da8f248b-eb27-431d-825c-077d3a4455e7",
-        "https://www.denverbroncos.com/news/broncos-mourn-the-passing-of-ring-of-fame-lb-tom-jackson"
+        "https://sports.yahoo.com/nfl/breaking-news/article/former-espn-analyst-and-broncos-linebacker-tom-jackson-dies-at-75-years-old-151357345.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/broncos-tv-legend-tom-jackson-dies-at-75"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqDjK0C-VnGSWsrxSUcqGI4vTC-8tIYJX3NnuKVKb9WgZr_Ro9l2qxDgVPLs",
       "image_credit": "ESPN",
@@ -61,18 +245,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqDjK0C-VnGSWsrxSUcqGI4vTC-8tIYJX3NnuKVKb9WgZr_Ro9l2qxDgVPLs"
         },
         {
-          "url": "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-icon-tom-jackson-dies/73-da8f248b-eb27-431d-825c-077d3a4455e7",
-          "title": "Broncos' icon Tom Jackson dies at 75",
-          "publisher": "9NEWS",
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/former-espn-analyst-and-broncos-linebacker-tom-jackson-dies-at-75-years-old-151357345.html",
+          "title": "Former ESPN analyst and Broncos linebacker Tom Jackson dies at 75 years old",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTplXE0TPH_jC4tPyULZo9KCPFUjsd0biIfQWKPsSsrcJe7YwT9J1dOId6eLyg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZGujjFTL0DiXwQMmCZhIjhdPVUzvyxro2Q8sK2wreRl8A92-xxrdQrryd8FI"
         },
         {
-          "url": "https://www.denverbroncos.com/news/broncos-mourn-the-passing-of-ring-of-fame-lb-tom-jackson",
-          "title": "Broncos mourn the passing of Ring of Fame LB Tom Jackson",
-          "publisher": "Denver Broncos",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/broncos-tv-legend-tom-jackson-dies-at-75",
+          "title": "Broncos, TV legend Tom Jackson dies at 75",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHjRhE_wbMSUgEtoaHyCwcgZs-ImQ4fuh5VUGK5-d1gofZ9tT1pc03duyUH8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPoVZdrKJanEgo2i_O4rynH0jiGcelah2Qv_AkajPYc5nT032iHhSwrGIzbSo"
         }
       ]
     },
@@ -83,7 +267,7 @@
       "related_news_urls": [
         "https://ew.com/bo-derek-john-corbett-adopted-gene-hackman-dog-after-death-12269646",
         "https://parade.com/news/the-dog-found-beside-gene-hackman-wife-new-owner-hollywood-a-lister",
-        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bo-derek-and-john-corbett-adopt-gene-hackmans-dog-bear-after-initially-turning-down-request/articleshow/136048727.cms"
+        "https://cwibc.co.id/en/derek-corbett-adopt-hackman-dog"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeWA6yvMH12GdU7X8VSDfVyipihN-fIJMCijTFYctBRb1TtWtaNAEhKNd10cw",
       "image_credit": "Entertainment Weekly",
@@ -103,256 +287,46 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnc_1JpXmF4h8vOzvKb3FL6Xxv2-ATbq-0S4rQHdY_MzuoI4fZMuDQI6225L4"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bo-derek-and-john-corbett-adopt-gene-hackmans-dog-bear-after-initially-turning-down-request/articleshow/136048727.cms",
-          "title": "Bo Derek and John Corbett adopt Gene Hackman’s dog Bear after initially turning down request",
-          "publisher": "The Times of India",
+          "url": "https://cwibc.co.id/en/derek-corbett-adopt-hackman-dog",
+          "title": "Bo Derek and John Corbett Adopt Gene Hackman's Dog Bear",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmVsT0xYg44JyMRl-pyV917YEc0dssWi-13RsVNMJ1WXCmO5OVogIFi-9ZUU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6zEYIWeN6lJjzuh2Do88CXQnJzyhj-5PH8cpYptU_SvzuvnQqf5XjMdpy6CY"
         }
       ]
     },
     {
-      "query": "fcs playoffs",
-      "approx_searches": "2000+",
+      "query": "pau navarro",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T14:50:00Z",
       "related_news_urls": [
-        "https://www.ncaa.com/news/football/article/2026-11-21/predicting-every-large-team-2026-fcs-playoffs",
-        "https://www.si.com/college/fcs/big-sky/2026-fcs-football-playoff-bracket-predictions-final-selection-sunday",
-        "https://theanalyst.com/articles/fcs-football-postseason-qualifiers-and-conference-champions"
+        "https://www.goal.com/en/news/concern-at-barcelona-as-yamal-receives-treatment-before-villarreal-clash/blt4c2a29043b6d29f8",
+        "https://www.wvnews.com/sports/pro/spain-la-liga-soccer/image_552c346d-a83b-5d80-90a8-4e686fd75c13.html",
+        "https://onefootball.com/en/video/flick-sobre-la-baja-de-lamine-en-el-primer-partido-de-espana-estaba-hablado-con-de-la-fuente-43813223"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25i6gfeZP0v8rU5FXzl1fXo38TmU1CTqZZHAnMI3q_XiBtRo5mihmQAMIlJo",
-      "image_credit": "NCAA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HTYGd3TJI8-PUPL5qP-RwYuiDqsoLJObomJ5siAEt47-0ptep14KUAjQrKA",
+      "image_credit": "Goal.com",
       "news": [
         {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-21/predicting-every-large-team-2026-fcs-playoffs",
-          "title": "Predicting every at-large team for the 2026 FCS playoffs",
-          "publisher": "NCAA.com",
+          "url": "https://www.goal.com/en/news/concern-at-barcelona-as-yamal-receives-treatment-before-villarreal-clash/blt4c2a29043b6d29f8",
+          "title": "Concern at Barcelona as Yamal receives treatment before Villarreal clash",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25i6gfeZP0v8rU5FXzl1fXo38TmU1CTqZZHAnMI3q_XiBtRo5mihmQAMIlJo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3HTYGd3TJI8-PUPL5qP-RwYuiDqsoLJObomJ5siAEt47-0ptep14KUAjQrKA"
         },
         {
-          "url": "https://www.si.com/college/fcs/big-sky/2026-fcs-football-playoff-bracket-predictions-final-selection-sunday",
-          "title": "2026 FCS Football Playoff Bracket Predictions (Nov. 21)",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.wvnews.com/sports/pro/spain-la-liga-soccer/image_552c346d-a83b-5d80-90a8-4e686fd75c13.html",
+          "title": "Spain La Liga Soccer",
+          "publisher": "WV News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGCTtAfnxjfXoCqM4A-HxMxtB7Fpz5QqUCSnyeAivzB0KmNXCBmnU-LIfGdU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScvzpTmS3iZruvwHypSraYKb_MNpi_vdEc3i8jNqr86mDpB0NPdOIK3PyU_RM"
         },
         {
-          "url": "https://theanalyst.com/articles/fcs-football-postseason-qualifiers-and-conference-champions",
-          "title": "2026 FCS Football Postseason Qualifiers and Conference Champions",
-          "publisher": "Opta Analyst",
+          "url": "https://onefootball.com/en/video/flick-sobre-la-baja-de-lamine-en-el-primer-partido-de-espana-estaba-hablado-con-de-la-fuente-43813223",
+          "title": "Flick, sobre la baja de Lamine en el primer partido de España: \"Estaba hablado con De la Fuente\"",
+          "publisher": "OneFootball",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6omNfZolWjuBsuCmxL_Fpe8l4Rm4s2oqPbY79hokzrb3HqOqTU4m99u57Ras"
-        }
-      ]
-    },
-    {
-      "query": "united states attorney",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T14:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/texas/news/u-s-attorney-in-texas-warns-democratic-lawmakers-about-investigating-trump-associates-faces-pushback/",
-        "https://www.politico.com/news/2026/11/19/democrats-trump-oversight-aaron-reitz-letters-01173711",
-        "https://www.theguardian.com/us-news/2026/nov/16/doj-elizabeth-warren-trump-investigation-records"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvw1QEQs6u6fyMuMziPpHwiBPvU4_q7sWBfO-DR24DJz2aFFx5q3D4w0hlgX8",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/texas/news/u-s-attorney-in-texas-warns-democratic-lawmakers-about-investigating-trump-associates-faces-pushback/",
-          "title": "U.S. Attorney in Texas warns Democratic lawmakers about investigating Trump associates, faces pushback",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvw1QEQs6u6fyMuMziPpHwiBPvU4_q7sWBfO-DR24DJz2aFFx5q3D4w0hlgX8"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/19/democrats-trump-oversight-aaron-reitz-letters-01173711",
-          "title": "A US attorney warned Dems about their Trump rhetoric. Legal experts say ignore him.",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJ-eYBJpa2nJSli8MGndzhE7J9gxnvU52Bjk0pWBU4h1tF25ZPlMARzLRdfzM"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/16/doj-elizabeth-warren-trump-investigation-records",
-          "title": "DoJ warns Elizabeth Warren of ‘consequences’ unless she preserves Trump records",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-lXXiMS-RYr_2mDwvKvJqI5FP0FtbIcSJQapfPHOJnS_CqR0pHRn81_alAxY"
-        }
-      ]
-    },
-    {
-      "query": "brock bowers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T14:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
-        "https://sports.yahoo.com/articles/brock-bowers-playing-today-latest-135410717.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Z8xv6E0SJ2A9rIbwRwUUjwMFNci8dGAjwV42AtM_1KqGCpT6UzPfxnsz0Ps",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
-          "title": "Raiders TE Brock Bowers (ankle, quad) listed as questionable",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Z8xv6E0SJ2A9rIbwRwUUjwMFNci8dGAjwV42AtM_1KqGCpT6UzPfxnsz0Ps"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/brock-bowers-playing-today-latest-135410717.html",
-          "title": "Is Brock Bowers playing today? Latest on Raiders TE's injury status",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh6nrxWpq-yGwqAObvp1k1JQ4_zni2EnWsK5UGHhTobxRRklU8r6mM3Rqlno8"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday",
-          "title": "Brock Bowers doesn’t know whether he will play Sunday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQstgGVyxln-RfZrlMiJp0UE61STivoO-t41i4oiXhHM44-46Hg4gNKrMYoOKU"
-        }
-      ]
-    },
-    {
-      "query": "kwame onwuachi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T14:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
-        "https://www.yahoo.com/lifestyle/articles/kwame-onwuachis-culinary-journey-145019769.html",
-        "https://demokratis.co.id/en/kwame-onwuachi-dinner-party-essentials"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT33wrDzg9L8mzN_XzqR5D4x_0K7RXUoDEoE-rhvCLwmNqdSdnqucF_CpKA7Zc",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
-          "title": "Kwame Onwuachi's culinary journey",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT33wrDzg9L8mzN_XzqR5D4x_0K7RXUoDEoE-rhvCLwmNqdSdnqucF_CpKA7Zc"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/kwame-onwuachis-culinary-journey-145019769.html",
-          "title": "Kwame Onwuachi's culinary journey",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbRgJyidtsG8q4V-o2etGHwDNRQrNyOEFKeTj44Sc01WeaxTyba3PQ5miNB5U"
-        },
-        {
-          "url": "https://demokratis.co.id/en/kwame-onwuachi-dinner-party-essentials",
-          "title": "Kwame Onwuachi Shares Dinner Party Essentials and Future Plans",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4EMP5iDgy2Ilanw_R5r3Px-zk7c_Jna_8vlI7XWJ66WVjBaF_VS2O_6CTd0"
-        }
-      ]
-    },
-    {
-      "query": "cbs sunday morning",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T14:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/lifestyle/articles/sunday-morning-2026-food-issue-115006916.html",
-        "https://www.paramountpressexpress.com/cbs-news-and-stations/shows/cbs-news-sunday-morning/releases/?view=113618-cbs-sunday-morning-listings-for-the-special-eat-drink-and-be-merry-food-themed-edition",
-        "https://www.limapagi.id/en/cbs-sunday-morning-food-issue"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqui6cb_Eez2wTF_KQA4QiJy3N28HFAMfRVIw58-jzgTnXlZYdZyS85dsMixU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/sunday-morning-2026-food-issue-115006916.html",
-          "title": "\"Sunday Morning\" 2026 \"Food Issue\" recipe index",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqui6cb_Eez2wTF_KQA4QiJy3N28HFAMfRVIw58-jzgTnXlZYdZyS85dsMixU"
-        },
-        {
-          "url": "https://www.paramountpressexpress.com/cbs-news-and-stations/shows/cbs-news-sunday-morning/releases/?view=113618-cbs-sunday-morning-listings-for-the-special-eat-drink-and-be-merry-food-themed-edition",
-          "title": "“CBS SUNDAY MORNING” LISTINGS FOR THE SPECIAL “EAT, DRINK AND BE MERRY” FOOD-THEMED EDITION",
-          "publisher": "Paramount Press Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv4nSmIGlGvPn1tJV8Gw8nXERnqNuRjudZ14Fr1j4Jjg6uzZNUyDwQr7p3aYo"
-        },
-        {
-          "url": "https://www.limapagi.id/en/cbs-sunday-morning-food-issue",
-          "title": "CBS Sunday Morning Explores Food Costs and Culinary Traditions",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr31Zz7jrmihr6WOMu9BIHBKf0TYpE28IC9szaHcebpGPiNS-cfB3tpPunkIo"
-        }
-      ]
-    },
-    {
-      "query": "paris fc vs angers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T14:40:00Z",
-      "related_news_urls": [
-        "https://www.lequipe.fr/Football/match-direct/ligue-1/2026-2027/paris-fc-angers-live/690355",
-        "https://www.footmercato.net/a6006597621758667720-angers-sco-17-ans-lyceen-international-tricolore-et-deja-titulaire-face-a-lom-jusquou-peut-aller-mael-gernigon",
-        "https://www.ouest-france.fr/sport/football/angers-sco/zinga-blesse-un-jeune-gardien-de-17-ans-integre-le-groupe-dangers-sco-pour-le-deplacement-au-paris-fc-34419de8-e65c-11f1-afa7-9a0bb82a33d1"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlMEq0xIhprXFFqp1jTVgb_TU7QFwYhlpFkeNih2ZGkrJnpLnf0i7sT2JwVk",
-      "image_credit": "L'Équipe",
-      "news": [
-        {
-          "url": "https://www.lequipe.fr/Football/match-direct/ligue-1/2026-2027/paris-fc-angers-live/690355",
-          "title": "DIRECT. Paris FC - Angers, Ligue 1 : But de Koleosho !",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlMEq0xIhprXFFqp1jTVgb_TU7QFwYhlpFkeNih2ZGkrJnpLnf0i7sT2JwVk"
-        },
-        {
-          "url": "https://www.footmercato.net/a6006597621758667720-angers-sco-17-ans-lyceen-international-tricolore-et-deja-titulaire-face-a-lom-jusquou-peut-aller-mael-gernigon",
-          "title": "Angers SCO : 17 ans, lycéen, international tricolore et déjà titulaire face à l’OM… jusqu’où peut aller Mael Gernigon ?",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSit61eAwH-sZNAK9gAp9axW10nQPn59g5q297pn8l9V4pNvnplWrCdaAiuppw"
-        },
-        {
-          "url": "https://www.ouest-france.fr/sport/football/angers-sco/zinga-blesse-un-jeune-gardien-de-17-ans-integre-le-groupe-dangers-sco-pour-le-deplacement-au-paris-fc-34419de8-e65c-11f1-afa7-9a0bb82a33d1",
-          "title": "Zinga blessé, un jeune gardien de 17 ans intègre le groupe d’Angers-SCO pour le déplacement au Paris FC",
-          "publisher": "Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSouix_E45z1OIinfdA0SuQ7_efTBOh0Cg0AYwt0-9tMbb37BWaWh6YCzPUTCY"
-        }
-      ]
-    },
-    {
-      "query": "racing santander vs real sociedad",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T14:30:00Z",
-      "related_news_urls": [
-        "https://www.noticiasdegipuzkoa.eus/reala/2026/11/22/directo-racing-real-sarr-oyarzabal-11783784.html",
-        "https://www.naiz.eus/info/noticia/20261121/una-real-mermada-visita-santander-con-la-idea-de-mantener-intactas-sus-opciones-europeas",
-        "https://www.eldiariomontanes.es/deportes/racing/minuto-minuto-encuentro-20261122161335-di.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmu9ftMR2PkZz5Mf3UM-dIcj_8iuzELU_6PHcS4zMF4PYyeqf6RNjbx5wPk4",
-      "image_credit": "Noticias de Gipuzkoa",
-      "news": [
-        {
-          "url": "https://www.noticiasdegipuzkoa.eus/reala/2026/11/22/directo-racing-real-sarr-oyarzabal-11783784.html",
-          "title": "Directo Racing-Real | Sarr y Oyarzabal vuelven al once",
-          "publisher": "Noticias de Gipuzkoa",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmu9ftMR2PkZz5Mf3UM-dIcj_8iuzELU_6PHcS4zMF4PYyeqf6RNjbx5wPk4"
-        },
-        {
-          "url": "https://www.naiz.eus/info/noticia/20261121/una-real-mermada-visita-santander-con-la-idea-de-mantener-intactas-sus-opciones-europeas",
-          "title": "Una Real mermada visita Santander con la idea de mantener intactas sus opciones europeas",
-          "publisher": "naiz:",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1AutPM_wsFi8YNxQz2Hc39gjJvdR_tJ36Y46OGod-XCrr7_B5d2bNg6lgewE"
-        },
-        {
-          "url": "https://www.eldiariomontanes.es/deportes/racing/minuto-minuto-encuentro-20261122161335-di.html",
-          "title": "Minuto a minuto del encuentro",
-          "publisher": "El Diario Montañés",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPlVj6E2KViQzGNyGiR9hk1X5-z07p2OwErv833rY4ZRVKzKf8Ekp_VYqcaxE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVN_JF4obzHHkz9btcKyiXIOwlT-GHbPDynL2fObtfJFgj9d8_7wfPoXR2MEY"
         }
       ]
     }
