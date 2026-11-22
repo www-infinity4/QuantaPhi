@@ -241,3 +241,34 @@ test('XNXSduqwZ54 has a single original-video media card without unsupported arc
  assert.equal(departmentFor(c),'media');
  assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
 });
+
+test('ДЕКРЕТ channel has all 18 observed uploads and a source-linked standalone Public/Media Quick Card',()=>{
+ const channel=CREATOR_CHANNELS.find(c=>c.key==='dekret');
+ assert.ok(channel,'Verified ДЕКРЕТ publisher must be in the existing creator catalog');
+ assert.equal(channel.name,'ДЕКРЕТ');
+ assert.equal(channel.channelId,'UC_z0l4Wm8yai_rDlZ2iPjrg');
+ assert.equal(channel.url,'https://www.youtube.com/channel/UC_z0l4Wm8yai_rDlZ2iPjrg');
+ assert.equal(channel.seed.length,18,'Do not silently substitute RSS-only coverage for all 18 listed uploads');
+ assert.deepEqual(channel.seed.map(v=>v.videoId),[
+  'BNMCCyjAb74','FC7SEj-F0vo','Nb9HuzcsEvQ','YlNcU6CRrAs','sOaDnUxD_aQ','1tWQ9VFfMW8',
+  'Hs5ikoqJaz8','7tlG8T_BxbI','N3iYfTLJotk','ylJz_HPP7l8','qVidBmlJrZw','cGFBILXi0QY',
+  'eCvKvwvQmn4','2kjUNfI4wj4','7y06kzGb3zo','MRKCrFVFAjQ','7NSg9XlBdho','tgwwm_iR698'
+ ]);
+ assert.equal(new Set(channel.seed.map(v=>v.videoId)).size,18,'No duplicate uploads');
+ assert.equal(channel.seed[0].title,'Кормить грудью легко');
+ assert.ok(channel.seed.every(v=>v.channelId===channel.channelId&&v.publishedAt===null));
+ assert.ok(channel.seed.every(v=>v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
+ const card=findSourceCard('dekret-youtube');
+ assert.ok(card,'Dedicated Public source card exists');
+ assert.equal(card.initialCreatorChannel,'dekret');
+ assert.equal(card.initialCreatorVideoId,'BNMCCyjAb74');
+ assert.equal(card.featureUrl,'https://www.youtube.com/channel/UC_z0l4Wm8yai_rDlZ2iPjrg/videos');
+ assert.equal(card.youtubeMixedFeed,true);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.equal(departmentFor(card),'media');
+ assert.equal(ALL_FEED_CARDS.filter(c=>c.id===card.id).length,1);
+ const ui=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(ui,/Load more videos/);
+ assert.match(ui,/card.initialCreatorVideoId/);
+ assert.match(ui,/youtube-nocookie\.com\/embed/);
+});
