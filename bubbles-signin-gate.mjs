@@ -235,9 +235,13 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
      setStatus('Wallet verification is temporarily unavailable. Your existing sign-in was kept; use Check sign-ins again to retry. No new Cloudflare sign-in is required for this error.');
      if(recover)recover.hidden=true;
     }else if(code==='connection_timeout'){
-     setStatus('The account check timed out. Tap Sign in with Cloudflare to retry.');
+     setStatus('The account check timed out. Your existing sign-in was not changed. Use Check sign-ins again to retry; no new Cloudflare authorization is required by this error.');
+     if(recover)recover.hidden=true;
     }else{
-     setStatus('Could not check the account session. Tap Sign in with Cloudflare to retry; no permissions were changed.');
+     // Service errors (including D1 read exhaustion) are not proof that a
+     // previously authenticated wallet was revoked. Never suggest OAuth here.
+     setStatus('Account check temporarily unavailable. Your existing sign-in was not changed. Use Check sign-ins again to retry; no new Cloudflare authorization is required by this error.');
+     if(recover)recover.hidden=true;
     }
     for(const id of ['github','cloudflare']){
      cards[id].hidden=false;actions[id].hidden=false;
