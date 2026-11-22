@@ -192,3 +192,28 @@ test('owner c0YDTPOmiCM link produces one source-only Oracle Public/Media Quick 
  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
  assert.equal(departmentFor(card),'media');
 });
+
+test('owner GCoFEjd_eFI video creates one public Media Quick Card without invented video metadata',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='GCoFEjd_eFI';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+ assert.equal(rows.length,1,'Exactly one owner-supplied source link');
+ const v=rows[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.title,'YouTube video GCoFEjd_eFI (title unverified)');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(card=>card.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'One video card, not a duplicate video player');
+ const card=cards[0];
+ assert.equal(card.featureUrl,v.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});
