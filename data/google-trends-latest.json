@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T07:01:19.754901Z",
+  "checked_at": "2026-11-22T07:31:11.236771Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "powerball winner",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T07:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
+        "https://www.yahoo.com/news/us/articles/powerball-see-winning-numbers-saturday-052244798.html",
+        "https://www.indystar.com/story/money/lottery/2026/11/21/powerball-numbers-tonight-nov-21-2026-winning-powerball-numbers-last-night-drawing-11-21-26-lottery/92864808007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
+          "title": "Powerball winning numbers for Nov. 21: $114M jackpot",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/powerball-see-winning-numbers-saturday-052244798.html",
+          "title": "Powerball: See the winning numbers in Saturday’s $114 million drawing; one ticket in Florida won",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUDc5vHlm7qez_n5cskiaWKh_I6nsF-6STrUXlPX_xXXFOeoUz0PkwW86sIg"
+        },
+        {
+          "url": "https://www.indystar.com/story/money/lottery/2026/11/21/powerball-numbers-tonight-nov-21-2026-winning-powerball-numbers-last-night-drawing-11-21-26-lottery/92864808007/",
+          "title": "Powerball numbers tonight, Nov. 21? Powerball winning numbers last night",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFfcxyaln5ttq3lmQkvkauwMdYMq4EUl6w1nJLGXkz_Abgw7nti9RJxVEg-4g"
+        }
+      ]
+    },
+    {
+      "query": "criminal profile gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:50:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+        "https://www.psychologytoday.com/us/blog/un-numb/202611/6-signs-grand-theft-auto-vi-is-coming-between-you-and-your-partner",
+        "https://www.foxnews.com/lifestyle/grand-theft-auto-vi-mania-endanger-marriages-relationship-coach-exposes-red-flag"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+          "title": "GTA 6 Criminal Profile: How the system works",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
+        },
+        {
+          "url": "https://www.psychologytoday.com/us/blog/un-numb/202611/6-signs-grand-theft-auto-vi-is-coming-between-you-and-your-partner",
+          "title": "6 Signs Grand Theft Auto VI Is Coming Between You and Your Partner",
+          "publisher": "Psychology Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWOik9viZvkivlPuop9jDz8-6_xcDhfcbnLVN-GmDU_XEA-1h1d74sjvJSE6M"
+        },
+        {
+          "url": "https://www.foxnews.com/lifestyle/grand-theft-auto-vi-mania-endanger-marriages-relationship-coach-exposes-red-flag",
+          "title": "Grand Theft Auto VI mania could endanger marriages as relationship coach exposes red flag",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuHFn6vk6tzlfCJGUkxmSpVyPugcyYYNU97y-fCe-7TXm6E-oMSMEpLQ6ZaG8"
+        }
+      ]
+    },
+    {
+      "query": "lucia voice actor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T06:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/article/the-gta-6-cast-has-been-revealed-meet-the-voice-actors-behind-lucia-jason-and-more-155230217.html",
+        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+        "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBPNTUJ-hsGbgwEYexf_4rUsHDmSeDjR0XAbnSqpgZj7YTf0QR5GcAgZEzo6g",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/article/the-gta-6-cast-has-been-revealed-meet-the-voice-actors-behind-lucia-jason-and-more-155230217.html",
+          "title": "The ‘GTA 6’ cast has been revealed: Meet the voice actors behind Lucia, Jason and more",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBPNTUJ-hsGbgwEYexf_4rUsHDmSeDjR0XAbnSqpgZj7YTf0QR5GcAgZEzo6g"
+        },
+        {
+          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
+        },
+        {
+          "url": "https://www.today.com/popculture/news/manni-l-perez-gta-6-lucia-caminos-everything-to-know-rcna610095",
+          "title": "Everything We Know About Manni L. Perez, ‘GTA 6’ Female Lead Lucia Caminos",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT05kjwrBYX-lcuM3Uf66HDH1E_MhJOBIOl6sfAWvMlnSd8wJyaVwBYXvgzUkI"
+        }
+      ]
+    },
     {
       "query": "vicki gta 6 voice actor",
       "approx_searches": "500+",
       "published_at": "2026-11-22T06:40:00Z",
       "related_news_urls": [
         "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-        "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from"
+        "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
+        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4",
       "image_credit": "Radio Times",
@@ -26,18 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
         },
         {
-          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
-        },
-        {
           "url": "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
           "title": "‘GTA 6’: Where You Know Vicki Actress Taryn Manning From",
           "publisher": "Men's Journal",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBHLB6ZlfoLRydC95tG2vraGalFvdb6Bxc3RqpUTRklJF1SVvwvNI6JI76a4"
+        },
+        {
+          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
+          "publisher": "escorenews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
         }
       ]
     },
@@ -46,33 +151,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-22T06:40:00Z",
       "related_news_urls": [
-        "https://www.flickeringmyth.com/wwii-ghost-rider-joins-hasbros-marvel-legends-series-with-hellhunters-sgt-sal-romero-figure-motorcycle-set/",
-        "https://www.actionfigureinsider.com/hasbro-reveals-new-marvellegends-series-figures-during-hasbro-pulse-fanstream/",
-        "https://www.murphysmultiverse.com/marvel-legends-secret-wars-doctor-doom-ghost-rider-44-retro-x-men/"
+        "https://screenrant.com/avengers-doomsday-doctor-doom-scrappedvariant/",
+        "https://bleedingcool.com/collectibles/bow-before-the-new-marvel-legends-god-emperor-doom/",
+        "https://www.imdb.com/news/ni66121852/?ref_=int_nwr_3"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx9laLXY0Wfiw4BHsfORv899uQ109L3aIchaKrowquHJstHQcA93yUcAuVyjw",
-      "image_credit": "Flickering Myth",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC0pF1hQknJoVabIcKadkjjE-8ehNNnHRnIrQbfPanOJuOqa5Ue-NDXXaP_mY",
+      "image_credit": "ScreenRant",
       "news": [
         {
-          "url": "https://www.flickeringmyth.com/wwii-ghost-rider-joins-hasbros-marvel-legends-series-with-hellhunters-sgt-sal-romero-figure-motorcycle-set/",
-          "title": "WWII Ghost Rider joins Hasbro's Marvel Legends Series with Hellhunters figure & motorcycle set",
-          "publisher": "Flickering Myth",
+          "url": "https://screenrant.com/avengers-doomsday-doctor-doom-scrappedvariant/",
+          "title": "Doctor Doom’s Scrapped MCU Variant Unveiled In New Avengers: Doomsday Release",
+          "publisher": "ScreenRant",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx9laLXY0Wfiw4BHsfORv899uQ109L3aIchaKrowquHJstHQcA93yUcAuVyjw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC0pF1hQknJoVabIcKadkjjE-8ehNNnHRnIrQbfPanOJuOqa5Ue-NDXXaP_mY"
         },
         {
-          "url": "https://www.actionfigureinsider.com/hasbro-reveals-new-marvellegends-series-figures-during-hasbro-pulse-fanstream/",
-          "title": "@Hasbro Reveals New #MarvelLegends Series Figures During Hasbro Pulse Fanstream",
-          "publisher": "Action Figure Insider",
+          "url": "https://bleedingcool.com/collectibles/bow-before-the-new-marvel-legends-god-emperor-doom/",
+          "title": "Bow Before the New Marvel Legends God Emperor Doom",
+          "publisher": "Bleeding Cool News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7zAHlOk9isdU0f54rdv330s1ADQ_XBZWFY4FrRX5vjbSqe4ShmAfTKxR1vBY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbHAsaKk_K293eDiZiHDgHtzCTemgwksKxWCM-M0jxmSvlsGiuGVBWC-pDfkY"
         },
         {
-          "url": "https://www.murphysmultiverse.com/marvel-legends-secret-wars-doctor-doom-ghost-rider-44-retro-x-men/",
-          "title": "Hasbro Unveils ‘Secret Wars’ God Emperor Doctor Doom, Retro X-Men Wave, and WWII Ghost Rider ’44",
-          "publisher": "Murphy's Multiverse",
+          "url": "https://www.imdb.com/news/ni66121852/?ref_=int_nwr_3",
+          "title": "Doctor Doom’s Scrapped ‘Avengers: Doomsday’ Costume Just Became a Stunning Collectible as First Look is Revealed",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYUiH5ZIq06QOyMdZG1KJmtfXvhPdVFacKz7q_86xfIsLWeegIb55bLSwi988"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZn9pw2kdoaWg4et7QI-TVbJhjuwhJnJi57IRCgvu7iN5ElljX058OHLyyAc"
         }
       ]
     },
@@ -112,37 +217,72 @@
       ]
     },
     {
-      "query": "duke vs washington state",
+      "query": "gta 6 chapter 2 mission list",
       "approx_searches": "500+",
       "published_at": "2026-11-22T06:20:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/duke/article/late-night-test-duke-looks-for-a-response-against-washington-state-293027554/",
-        "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
-        "https://www.si.com/college/duke/blue-devils-3-instant-observations-from-basketball-ugly-win-over-washington-state"
+        "https://www.redbull.com/int-en/gta-6-complete-mission-list",
+        "https://www.polygon.com/gta-6-mission-chapter-list-how-many/",
+        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlpItObEuGypKC4nsR82VTC7OpK7KZpjqn7vEpHP-1dA-GtmDnCenALXFK0fc",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac",
+      "image_credit": "Red Bull",
       "news": [
         {
-          "url": "https://247sports.com/college/duke/article/late-night-test-duke-looks-for-a-response-against-washington-state-293027554/",
-          "title": "Late-night test: Duke looks for a response against Washington State",
-          "publisher": "247Sports",
+          "url": "https://www.redbull.com/int-en/gta-6-complete-mission-list",
+          "title": "GTA 6: A guide to every mission and chapter",
+          "publisher": "Red Bull",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlpItObEuGypKC4nsR82VTC7OpK7KZpjqn7vEpHP-1dA-GtmDnCenALXFK0fc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac"
         },
         {
-          "url": "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
-          "title": "How to watch Duke vs Washington State: Live stream College Basketball, TV channel",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.polygon.com/gta-6-mission-chapter-list-how-many/",
+          "title": "All main story missions in GTA 6",
+          "publisher": "Polygon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sQ6S14WqRMh6Vzx4uJT50C3CwUYokmumIyw0DO03Jf-umNBfK_iBPfCmMzk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1UzgLoG78Bz2gpqORX2zLaS7HG9lRNtwCZVJXlS-MMOQ_rNtQsaYmPcFA4L8"
         },
         {
-          "url": "https://www.si.com/college/duke/blue-devils-3-instant-observations-from-basketball-ugly-win-over-washington-state",
-          "title": "3 Instant Observations From Duke Basketball's Ugly Win Over Washington State",
-          "publisher": "Sports Illustrated",
+          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
+          "title": "How long it takes to play 'GTA 6': Story playthrough and achievements",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTluJSvcHDQwCxANrJeJ6X6NHVd-3lYNGvC34cKrrND8TX2UTbJk84LVaasqco"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
+        }
+      ]
+    },
+    {
+      "query": "donnie gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T06:20:00Z",
+      "related_news_urls": [
+        "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
+        "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
+        "https://demokratis.co.id/en/gta6-donnie-brad-carter"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ",
+      "image_credit": "SVG",
+      "news": [
+        {
+          "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
+          "title": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise",
+          "publisher": "SVG",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
+          "title": "Who Plays Donnie In GTA 6?",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS84rbLVRBzM3tKW3xdVG6Mbiy-a_NVtIyqYUrbVLAmOpNvdC5x8h6lRXpe9tU"
+        },
+        {
+          "url": "https://demokratis.co.id/en/gta6-donnie-brad-carter",
+          "title": "GTA 6 Reveals Donnie Death and Brad Carter Voice Role",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruy5Try7tAMHkvlD-XQSsSgx8X1lxwwK4b-YrMlERRHTnAKSNINilHldpvJI"
         }
       ]
     },
@@ -182,177 +322,37 @@
       ]
     },
     {
-      "query": "donnie gta 6",
-      "approx_searches": "200+",
+      "query": "duke vs washington state",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T06:20:00Z",
       "related_news_urls": [
-        "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
-        "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
-        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/"
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909567",
+        "https://247sports.com/college/duke/article/duke-vs-washington-state-recap-blue-devils-hold-on-78-74-293148809/",
+        "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ",
-      "image_credit": "SVG",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzTM5VTm4nmcLuiyco2ZJI_Ik1PEccAnTYG3jCaFpW3Z_WtfPGyZfIDc0dh9I",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
-          "title": "GTA 6's First Major Death Might Be The Most Disturbing In The Entire Franchise",
-          "publisher": "SVG",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909567",
+          "title": "Duke 78-74 Washington State (Nov 21, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZgveDo91s7T1FDNTCV0mSvbEsC2AzxneCbUwdimdczwaa9lWzMnTVpK8sxxQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzTM5VTm4nmcLuiyco2ZJI_Ik1PEccAnTYG3jCaFpW3Z_WtfPGyZfIDc0dh9I"
         },
         {
-          "url": "https://tech.yahoo.com/gaming/articles/plays-donnie-gta-6-010000008.html",
-          "title": "Who Plays Donnie In GTA 6?",
-          "publisher": "Yahoo Tech",
+          "url": "https://247sports.com/college/duke/article/duke-vs-washington-state-recap-blue-devils-hold-on-78-74-293148809/",
+          "title": "Duke’s 19-point lead shrinks to two before Blue Devils hold on",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS84rbLVRBzM3tKW3xdVG6Mbiy-a_NVtIyqYUrbVLAmOpNvdC5x8h6lRXpe9tU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13CGyWGHSKmSGWN9L79Qpbfd9ZwF2ItTPHcwwwb6QV3or5zFIR9-l9aOvIRs"
         },
         {
-          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-save-donnie/",
-          "title": "Can you save Donnie in GTA 6?",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz8CZyJwl1yKGyC826MzGVppS3BZSFXD01d8e4CSgjqocpXn-5CjKforgJsso"
-        }
-      ]
-    },
-    {
-      "query": "john wick",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T06:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm",
-        "https://tbreak.com/john-wick-prequel-game-keanu-reeves/",
-        "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVWbiGZ0NInzqrU3CgUCw3Jwg_C_PTvy0g1qtIQyMhSNh0TiBk3goPMtEVoSE",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66121814/?ref_=nmnw_art_perm",
-          "title": "John Wick Franchise Officially Returning In New Prequel Set Years Before The Impossible Task",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVWbiGZ0NInzqrU3CgUCw3Jwg_C_PTvy0g1qtIQyMhSNh0TiBk3goPMtEVoSE"
-        },
-        {
-          "url": "https://tbreak.com/john-wick-prequel-game-keanu-reeves/",
-          "title": "Keanu Reeves returns in Saber’s John Wick prequel game",
-          "publisher": "Tbreak UAE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpXOqZ263bd9hclb1XofaEq-QI7OH47Ynuzz_qPcesZyXWhhL8fhzwgpkb5BA"
-        },
-        {
-          "url": "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
-          "title": "John Wick Returning In New Prequel Game Set Years Before The Impossible Task",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvux571P0qcwnWEukk9vNZk7XAkpcFavC4LJjUtUofqDUbHxlHCFv9-DJzlzg"
-        }
-      ]
-    },
-    {
-      "query": "brandin cooks",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T06:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-        "https://www.ninersnation.com/san-francisco-roster/166100/49ers-waive-brandin-cooks-activate-c-j-west"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInej-dCCXUpHL3XN3Q_FR_ci9fLFNzTwEYHmpMH1Ydnoot95hGxqpotYiH34",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/49ers-waive-ex-bills-saints-214011514.html",
-          "title": "49ers waive ex-Bills, Saints WR with 9,869 career receiving yards",
+          "url": "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
+          "title": "How to watch Duke vs Washington State: Live stream College Basketball, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInej-dCCXUpHL3XN3Q_FR_ci9fLFNzTwEYHmpMH1Ydnoot95hGxqpotYiH34"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-          "title": "49ers waive WR Brandin Cooks",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
-        },
-        {
-          "url": "https://www.ninersnation.com/san-francisco-roster/166100/49ers-waive-brandin-cooks-activate-c-j-west",
-          "title": "49ers waive Brandin Cooks, activate C.J. West",
-          "publisher": "Niners Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7BtpvdzTADORb9fm_GKFzdowacDMg4oMglOCnCbY3fdgtXEEBPteHruKNt0Y"
-        }
-      ]
-    },
-    {
-      "query": "heisman odds",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-22T05:50:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/news/football/article/2026-11-18/ranking-top-heisman-trophy-contenders-3-weeks-play",
-        "https://sports.yahoo.com/college-football/breaking-news/article/jeremiah-smith-becomes-an-even-bigger-heisman-favorite-with-2-td-performance-against-nebraska-203827233.html",
-        "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuZC0y4gGWCkGrsmpJEbIrZCdiuOxq5sWDTpwxJ5nJO0qoe8GgmUybgoZLcKc",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-18/ranking-top-heisman-trophy-contenders-3-weeks-play",
-          "title": "Ranking the top Heisman trophy contenders with 3 weeks to play",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuZC0y4gGWCkGrsmpJEbIrZCdiuOxq5sWDTpwxJ5nJO0qoe8GgmUybgoZLcKc"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/breaking-news/article/jeremiah-smith-becomes-an-even-bigger-heisman-favorite-with-2-td-performance-against-nebraska-203827233.html",
-          "title": "Jeremiah Smith becomes an even bigger Heisman favorite with 2-TD performance against Nebraska",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4zl9PtvWI6ZGaF3qY_Pm_tZYZMkQLt3SUfmCpxTg2u7WmTs7UHLaEjd8dmj4"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536169-latest-heisman-trophy-2026-odds-jeremiah-smith-rises-mestemaker-falls",
-          "title": "Latest Heisman Trophy 2026 Odds as Jeremiah Smith Rises, Mestemaker Falls",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTN6n1OC53_bI2BbCv2IgzsTxVFvlLNP9cMp2vljrRcEwEa0o4AbFtB3XXQvHY"
-        }
-      ]
-    },
-    {
-      "query": "stevie wonder",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T05:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
-        "https://www.app.com/story/entertainment/music/2026/11/21/stevie-wonder-msg-bruce-springsteen-paul-mccartney-beatles/92899915007/",
-        "https://themusicuniverse.com/stevie-wonder-to-take-over-umusic-shop-ny/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv8eD-Bf9lqCmVgvcGB8AfNmfaFSR0pOIJkSVcl36iyjg5qV7RFLHz0oFQAx0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/20/arts/music/stevie-wonder-songs-in-the-key-of-life-tour.html",
-          "title": "Playing ‘Key of Life,’ Stevie Wonder Invites All to Match His Joy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv8eD-Bf9lqCmVgvcGB8AfNmfaFSR0pOIJkSVcl36iyjg5qV7RFLHz0oFQAx0"
-        },
-        {
-          "url": "https://www.app.com/story/entertainment/music/2026/11/21/stevie-wonder-msg-bruce-springsteen-paul-mccartney-beatles/92899915007/",
-          "title": "Stevie Wonder covers Bruce Springsteen, Beatles at MSG 'Songs' concert",
-          "publisher": "Asbury Park Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF4vp5naUFQ6b6GSth9YCcaBmZQI0kHLzcJ4kkBSH2Za5agZBLteroieunfQA"
-        },
-        {
-          "url": "https://themusicuniverse.com/stevie-wonder-to-take-over-umusic-shop-ny/",
-          "title": "Stevie Wonder to take over UMusic Shop NY",
-          "publisher": "The Music Universe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqLkp8yhoqosR5_QtE-S0lTGPDemVZxCLqVIL_H-P3JVb_ok_hQ1_e56KFQhc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sQ6S14WqRMh6Vzx4uJT50C3CwUYokmumIyw0DO03Jf-umNBfK_iBPfCmMzk"
         }
       ]
     }
