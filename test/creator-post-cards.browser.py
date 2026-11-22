@@ -279,6 +279,31 @@ def run():
                 assert page.locator('#oracleCardChooser option[value="source-landing-autism-youtube"]').count()==1
                 checks.append(f'{width}px: LANDing Autism source channel in Oracle, Play/Stop, mobile no overflow')
 
+                # New owner-added full-channel Quick Cards reuse the same
+                # source-backed player, original YouTube fallback and Oracle.
+                for slug,channel_key,name,term,video_id in [
+                    ('famous-mommy-youtube','famousmommy','The Famous Mommy','Momcozy Breastpump','fivLE0tSUV8'),
+                    ('maxine-youtube','maxine','Maxine','Diamond Head','bCyafMNRVOE'),
+                ]:
+                    page.goto(base+'/source-quick-card.html?card='+slug,wait_until='domcontentloaded')
+                    creator=page.locator('.youtube-creator-mixed-card')
+                    expect(creator).to_be_visible()
+                    expect(creator).to_contain_text(name+' · Full channel Quick Card')
+                    expect(creator.get_by_role('combobox',name='Filter by video channel')).to_have_value(channel_key)
+                    assert creator.locator('.qcx-mix-entry').count()>=2, 'Missing source-identified videos'
+                    expect(creator.locator('iframe')).to_have_count(0)
+                    creator.get_by_role('searchbox',name='Search loaded creator videos').fill(term)
+                    expect(creator.locator('.qcx-mix-entry')).to_have_count(1)
+                    creator.get_by_role('button',name='Play in card').click()
+                    expect(creator.locator('iframe')).to_have_attribute('src','https://www.youtube-nocookie.com/embed/'+video_id)
+                    creator.get_by_role('button',name='Stop playback').click()
+                    expect(creator.locator('iframe')).to_have_count(0)
+                    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), slug+' overflow'
+                    page.goto(base+'/?card='+slug,wait_until='domcontentloaded')
+                    expect(page.locator('#oracleCardStage [data-source-id="'+slug+'"] .youtube-creator-mixed-card')).to_be_visible(timeout=20000)
+                    assert page.locator('#oracleCardChooser option[value="source-'+slug+'"]').count()==1
+                    checks.append(f'{width}px: '+name+' original channel / one player / Public Oracle')
+
                 context.close()
             browser.close()
     finally:
