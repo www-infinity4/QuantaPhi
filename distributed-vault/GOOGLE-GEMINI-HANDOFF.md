@@ -37,6 +37,29 @@ No passive app scanning, personal browser history, unrelated Google searches, wa
 - The encrypted archive is a restorable, integrity-authenticated artifact in source code (`openUserArchive`). A future user-facing restore wizard must require a matching profile and explicit confirmation before saving events or changing any Bubbles memory.
 - This is a manual handoff of the available **current verified records**, not automatic Google or Gemini backup, nor comprehensive cross-device history. To export all searches beyond the existing `LIMIT 1000`, add a secure owner-scoped paginated journal export with replay/coverage checks; do not loosen account partitioning or exhaust D1 quota.
 
+
+## Native Android free Google backup — separate future implementation
+
+Android's **Auto Backup for Apps** is a real Google-managed free backup path of
+up to **25 MB per app user**. It uses the Android system backup transport under
+the user's Google account; it is **not** the Google Drive developer API and
+not Gemini history import. Android users choose device backup settings; the
+system controls backup timing and may skip a backup. Source:
+https://developer.android.com/identity/data/autobackup
+
+The current native Bubbles manifest at
+`android/bubbles-overlay/app/src/main/AndroidManifest.xml` explicitly declares
+`android:allowBackup="false"`. **Do not blindly enable it**: the app includes
+WebView, credentials, microphone and recording state. A safe native feature
+requires an APK change that first stores *only the user's explicitly selected
+encrypted export* in a dedicated app-private backup directory, plus carefully
+scoped Android 12+ `dataExtractionRules` and older `fullBackupContent`
+exclusions. It must exclude credentials, provider tokens, caches, ephemeral
+fragments, Android Keystore references and unrelated WebView data. Only after
+signed APK build, permission/privacy review and a real Android backup/restore
+test may the application claim Google Auto Backup for this archive. No such
+change is deployed or enabled by this PR.
+
 ## Verification
 
 ```bash
