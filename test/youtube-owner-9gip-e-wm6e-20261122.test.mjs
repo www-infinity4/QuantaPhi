@@ -1,0 +1,34 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {findSourceCard,isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner video 9gIP_e-wM6E has exactly one original-source Oracle Public/Media Quick Card',()=>{
+ const id='9gIP_e-wM6E';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'one deduplicated owner video record');
+ const row=rows[0];
+ assert.equal(row.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(row.observedAt,'2026-11-22');
+ assert.equal(row.title,'YouTube video '+id+' (title unverified)');
+ assert.equal(row.titleVerified,false);
+ assert.equal(row.publisherVerified,false);
+ assert.equal(row.publishedAt,null);
+ assert.equal(row.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(row));
+ assert.equal(validateOwnerYouTubeLink({...row,publisherVerified:true}),false);
+ assert.equal(validateOwnerYouTubeLink({...row,titleVerified:true}),false);
+ assert.equal(validateOwnerYouTubeLink({...row,sourceUrl:'https://youtube.com.evil.test/watch?v='+id}),false);
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.featureUrl,row.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.match(card.details,/not independently verified/i);
+ assert.ok(validSourceCard(card)&&isPublicSourceCard(card));
+ assert.equal(findSourceCard(card.id)?.id,card.id);
+ assert.equal(ALL_FEED_CARDS.filter(c=>c.id===card.id).length,1);
+ assert.equal(departmentFor(card),'media');
+});
