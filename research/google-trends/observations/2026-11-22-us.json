@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T01:31:32.473338Z",
+  "checked_at": "2026-11-22T02:01:29.946397Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ducks vs mammoth",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T01:10:00Z",
+      "query": "selena gomez",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T01:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/anaheim-ducks-utah-mammoth-game-preview-november-21-2026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/anaheim-ducks-vs-utah-mammoth-prediction-odds-2026-11-21/",
-        "https://www.nytimes.com/athletic/7800837/2026/11/21/ducks-vs-mammoth-stream-how-to-watch-nov-21/"
+        "https://www.eonline.com/news/1438278/hailey-bieber-details-past-suicidal-ideation",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/hailey-bieber-says-online-harassment-013040070.html",
+        "https://www.nytimes.com/2026/11/18/business/dealbook/hailey-bieber-rhode-social-media.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLOJl8DVs3UUayporPXpaZeBa52TP5Y__ZgdYkPZG2ulyek23HjXQTgBo-kNs",
+      "image_credit": "E! News",
       "news": [
         {
-          "url": "https://www.nhl.com/news/anaheim-ducks-utah-mammoth-game-preview-november-21-2026",
-          "title": "Ducks at Mammoth projected lineups",
-          "publisher": "NHL.com",
+          "url": "https://www.eonline.com/news/1438278/hailey-bieber-details-past-suicidal-ideation",
+          "title": "Hailey Bieber Details Suicidal Ideation Amid Scrutiny From Fans",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLOJl8DVs3UUayporPXpaZeBa52TP5Y__ZgdYkPZG2ulyek23HjXQTgBo-kNs"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/anaheim-ducks-vs-utah-mammoth-prediction-odds-2026-11-21/",
-          "title": "Anaheim Ducks vs Utah Mammoth Prediction, Picks & Odds | 21 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/hailey-bieber-says-online-harassment-013040070.html",
+          "title": "Hailey Bieber Says Online Harassment Once Made Her Question Whether She Wanted to Live",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7c9i0HeaJ0uFLl0f_fs1-HZtETu9JuiTzGW10zGNRb7x1WHUjYvWzkhP06hA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxb7-lGsgid0lIkh18_5v-a068Kv29-vka03a38aN0iSbdeFCK4CpoFBerrZY"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7800837/2026/11/21/ducks-vs-mammoth-stream-how-to-watch-nov-21/",
-          "title": "How to watch Ducks vs. Mammoth: TV channel and streaming options for November 21",
+          "url": "https://www.nytimes.com/2026/11/18/business/dealbook/hailey-bieber-rhode-social-media.html",
+          "title": "Social Media Helped Build Hailey Bieber’s Company. It Also Took a Mental Toll.",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuI6R_KylyAveVOy05FgJbCNX--dhT7a7sXUf4NIAIwi_qlJbBzTHyZ7t9e-A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_BRqvUy215hrV0KJ3lCB5bfdvjT1OLeqZysh9zahap9xc7CnmhDNJn4lJFPQ"
         }
       ]
     },
     {
-      "query": "new movies to stream",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T01:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-the-hunger-games-sunrise-on-the-reaping-in-theaters-rent-or-buy-the-odyssey-stream-madden-on-prime-video-151646229.html",
-        "https://www.record-eagle.com/news/arts_and_entertainment/whats-playing-in-theaters-11-20-2026/article_ca8e869c-b44a-4bb3-9897-4545b8848ae2.html",
-        "https://www.nbcchicago.com/richard-roeper-reviews-movies-chicago/roepers-reviews-2-pop-culture-icon-origin-stories-in-the-same-week/4019207/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4VTKGqOL0j6Z-8u4Vc2OkSqwKFzdYST_Y3x0Dw_d7EAipNrh5v-drh-G9OCU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-the-hunger-games-sunrise-on-the-reaping-in-theaters-rent-or-buy-the-odyssey-stream-madden-on-prime-video-151646229.html",
-          "title": "New movies to watch this weekend: See 'The Hunger Games: Sunrise on the Reaping' in theaters, rent or buy 'The Odyssey,' stream 'Madden' on Prime Video",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4VTKGqOL0j6Z-8u4Vc2OkSqwKFzdYST_Y3x0Dw_d7EAipNrh5v-drh-G9OCU"
-        },
-        {
-          "url": "https://www.record-eagle.com/news/arts_and_entertainment/whats-playing-in-theaters-11-20-2026/article_ca8e869c-b44a-4bb3-9897-4545b8848ae2.html",
-          "title": "What's playing in theaters: 11/20/2026",
-          "publisher": "Traverse City Record-Eagle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmW6oKNrg57MG_PAscRGI6FXFOmSxTz4j9BN0QjDAwXWn6-Km0kxRmGHrkAs8"
-        },
-        {
-          "url": "https://www.nbcchicago.com/richard-roeper-reviews-movies-chicago/roepers-reviews-2-pop-culture-icon-origin-stories-in-the-same-week/4019207/",
-          "title": "Roeper's Reviews: 2 pop culture icon origin stories in the same week",
-          "publisher": "NBC Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgzNxnaR6h3FhZ_VxCNwlHvkV1RFzzTk9-ty0w8iNj-liXrDpAzxizsukW36s"
-        }
-      ]
-    },
-    {
-      "query": "paula patton",
+      "query": "tallulah willis",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T01:10:00Z",
+      "published_at": "2026-11-22T01:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/tracey-edmonds-previews-love-vineyard-182427793.html",
-        "https://www.eewmagazineonline.com/movie-reviews/2026/11/21/black-history-love-on-the-vineyard-oak-bluffs-paula-patton",
-        "https://www.today.com/video/paula-patton-talks-love-on-the-vineyard-family-dating-and-more-273737285942"
+        "https://people.com/bruce-willis-seen-in-new-photo-shared-by-daughter-tallulah-12270959",
+        "https://parade.com/celebrities/tallulah-willis-shares-rare-photo-bruce-willis"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyV5oLNbIE1N64CGfbUweX9NjWZD1YO_o1nC7eEs3nxjimNq8aWlmne-SVysQ",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWFIXdkELiKUHcn2Nhi_O9fVnj6m_D_OhpGLxuj4uk-hfxmxgPot6B3vLH9t4",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/tracey-edmonds-previews-love-vineyard-182427793.html",
-          "title": "Tracey Edmonds previews ‘Love on the Vineyard’ premiering 11/21 on Lifetime",
-          "publisher": "Yahoo",
+          "url": "https://people.com/bruce-willis-seen-in-new-photo-shared-by-daughter-tallulah-12270959",
+          "title": "Bruce Willis Seen in New Photo with Daughter Tallulah amid His Dementia Diagnosis",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyV5oLNbIE1N64CGfbUweX9NjWZD1YO_o1nC7eEs3nxjimNq8aWlmne-SVysQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWFIXdkELiKUHcn2Nhi_O9fVnj6m_D_OhpGLxuj4uk-hfxmxgPot6B3vLH9t4"
         },
         {
-          "url": "https://www.eewmagazineonline.com/movie-reviews/2026/11/21/black-history-love-on-the-vineyard-oak-bluffs-paula-patton",
-          "title": "The Black History Behind Lifetime's 'Love on the Vineyard'",
-          "publisher": "EEW Magazine",
+          "url": "https://parade.com/celebrities/tallulah-willis-shares-rare-photo-bruce-willis",
+          "title": "Tallulah Willis Shares Rare Father-Daughter Moment With Bruce Amid His Dementia Battle",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvUJOz8tNLVdFUXQiecbssiNWLO6sTU0_rP2dwrGUVPvjF4a7qrem5fqDNXz8"
-        },
-        {
-          "url": "https://www.today.com/video/paula-patton-talks-love-on-the-vineyard-family-dating-and-more-273737285942",
-          "title": "Paula Patton Talks ‘Love on the Vineyard,’ Family, Dating and More",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9R5Mg9ZkoFXNRBfeGj531lbYCgiN0cqsFC2kit0nr8Tl_YHiC-bYJPVkkxdo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwNA_DGrWB4Fw0PxT2Sa1o0PDa_205KtRpHJVDqSRHYv4D4yM6pkU5BiX2pIU"
         }
       ]
     },
     {
-      "query": "tony danza",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T01:00:00Z",
+      "query": "trump homelessness funding policy block",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T01:40:00Z",
       "related_news_urls": [
-        "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-        "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas",
-        "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html"
+        "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+        "https://www.reuters.com/legal/government/us-judge-rejects-trump-administrations-homelessness-program-revamp-2026-11-20/",
+        "https://democracyforward.org/news/press-releases/federal-court-strikes-down-trump-vance-administrations-unlawful-restrictions-on-homelessness-funding/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4",
-      "image_credit": "National News Desk",
-      "news": [
-        {
-          "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-          "title": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'",
-          "publisher": "National News Desk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4"
-        },
-        {
-          "url": "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas",
-          "title": "A Look Behind the Curtain of ‘Three Generations, One Christmas’",
-          "publisher": "Great American Pure Flix",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZLmDgILDKTfrc23l3m6g6bBSUZQYgqtDujaolMEHtYeJqOT1zBXQF_2cFHM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/holiday-movies-feature-family-romance-183638413.html",
-          "title": "Holiday movies feature family, romance, music, football",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfAafd5jZ8sN8YWB7JLr_T3ilkniiR0ADbUa3dq37L43gtDsDoZ8BK-DwhgNA"
-        }
-      ]
-    },
-    {
-      "query": "croix bethune",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T01:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7797400/2026/11/20/nwsl-championship-kansas-city-current-croix-bethune-manifest/",
-        "https://www.cbssports.com/soccer/news/current-croix-bethune-nwsl-final-washington-spirit/",
-        "https://www.kansascity.com/sports/soccer/kc-current/article318181544.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxM3yf1wXiLrXwqyxhk7noKDM7sjDy9oLFn1YkrO5mJpiXiOiX7VgB1o0izvE",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9tZZ8Aric9__xC9FJ7Wv2LkPNClWEM2ncNzxjLg832_6Q01UJulUzXGsyJ84",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7797400/2026/11/20/nwsl-championship-kansas-city-current-croix-bethune-manifest/",
-          "title": "Croix Bethune manifested a career year. Now comes a title shot against her former club",
+          "url": "https://www.nytimes.com/2026/11/21/us/politics/judge-trump-homeless-aid-addiction-treatment.html",
+          "title": "Judge Blocks Trump Administration’s Effort to Transform Homelessness Policy",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxM3yf1wXiLrXwqyxhk7noKDM7sjDy9oLFn1YkrO5mJpiXiOiX7VgB1o0izvE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9tZZ8Aric9__xC9FJ7Wv2LkPNClWEM2ncNzxjLg832_6Q01UJulUzXGsyJ84"
         },
         {
-          "url": "https://www.cbssports.com/soccer/news/current-croix-bethune-nwsl-final-washington-spirit/",
-          "title": "Current's Croix Bethune focused on being 'me. M.E. -- Most Essential, version of yourself' ahead of NWSL final",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT83zIL6T3qygtE55AUHfPT4D3djZGmWHSz42E0LSmygMnM622A72-YYx7fe8Q"
-        },
-        {
-          "url": "https://www.kansascity.com/sports/soccer/kc-current/article318181544.html",
-          "title": "KC Current's Croix Bethune will take center stage at NWSL Championship",
-          "publisher": "Kansas City Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBty8vxNArDreZXkzwQC4bwbtdVrt_nm9gKusQ3nGE_5JzwEcu-Tz5zpJ1YNo"
-        }
-      ]
-    },
-    {
-      "query": "madden cast",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T01:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
-        "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nicolas-cage-on-his-john-madden-misfire-im-not-frank-caliendo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEIRvp7kHoLXx2rubmFULLG8A159ugpy9LLtWVtdaH2RSEwKzBQWFu5bPa5mY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50549761/mark-davis-upset-father-portrayal-movie-madden",
-          "title": "Raiders' Mark Davis unhappy with 'unfair' image of his father in 'Madden' movie",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEIRvp7kHoLXx2rubmFULLG8A159ugpy9LLtWVtdaH2RSEwKzBQWFu5bPa5mY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/",
-          "title": "Raiders owner Mark Davis 'hurt' by 'Madden' movie's portrayal of Al Davis | Exclusive",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS28fSxYQrFQ6Ofx_AQ6YdgtEBcK5Atnxd_l3uvc9dkFcAw-fjFky9xWP4p0As"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nicolas-cage-on-his-john-madden-misfire-im-not-frank-caliendo",
-          "title": "Nicolas Cage on his John Madden misfire: “I’m not Frank Caliendo”",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTBVSfRU7FB_BtOnSMOHXsPZY1_kg6xdIYdY1eH4Tr3GZ9X2EZnDPv5Maw5Z8"
-        }
-      ]
-    },
-    {
-      "query": "tony",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T01:00:00Z",
-      "related_news_urls": [
-        "https://decider.com/2026/11/20/tony-hbo-max-review/",
-        "https://www.imdb.com/news/ni66122162/?ref_=nmnw_art_perm",
-        "https://www.galvnews.com/news_reuters/nation/teenage-anthony-bourdain-dominic-sessa-left-gets-life-and-cooking-lessons-from-a-provincetown-seafood/image_3d8eaa0f-0e54-5d87-972f-174e7f005f16.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR886-C141w2XPjA_Y2I52UlKxVNB9NYBaAHBizcaYaNZkEk_gTd7WO2atQ6_g",
-      "image_credit": "Decider",
-      "news": [
-        {
-          "url": "https://decider.com/2026/11/20/tony-hbo-max-review/",
-          "title": "Stream It Or Skip It: ‘Tony’ on HBO Max, a slice-of-a-life biopic starring Dominic Sessa as young Anthony Bourdain",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR886-C141w2XPjA_Y2I52UlKxVNB9NYBaAHBizcaYaNZkEk_gTd7WO2atQ6_g"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66122162/?ref_=nmnw_art_perm",
-          "title": "Antonio Banderas’ Best Biopic of 2026 Better Than Michael Officially Lands on HBO Max",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGNKUcVU6JNrR3Rm6XSFEMGsIfPepKwmIb4GMbngs7oSlEYv6ynzk6hJyECBk"
-        },
-        {
-          "url": "https://www.galvnews.com/news_reuters/nation/teenage-anthony-bourdain-dominic-sessa-left-gets-life-and-cooking-lessons-from-a-provincetown-seafood/image_3d8eaa0f-0e54-5d87-972f-174e7f005f16.html",
-          "title": "Teenage Anthony Bourdain (Dominic Sessa, left) gets life and cooking lessons from a Provincetown seafood chef (Antonio Banderas) in the biopic \"Tony.\"",
-          "publisher": "The Daily News | Texas' Oldest Newspaper",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9dLsDktj3Ll834faZK0mqBCSd-iMeGy-CSeSR9hOeU5ozDABZ1UepzenMugU"
-        }
-      ]
-    },
-    {
-      "query": "miss universo 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T01:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
-        "https://en.as.com/entertainment/how-to-vote-for-justus-kelley-in-miss-universe-2026-how-to-support-the-usa-representative-f202611-n/",
-        "https://mezha.net/eng/news/mezha-b86771ce3b530eb97e00e6cc_justus_kelley_honors/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3MNocK-tat6xa9GZ9ildciYueyitre9Nbq9uLmrTGWNWeHr_QZKR2F15bVGU",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
-          "title": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3MNocK-tat6xa9GZ9ildciYueyitre9Nbq9uLmrTGWNWeHr_QZKR2F15bVGU"
-        },
-        {
-          "url": "https://en.as.com/entertainment/how-to-vote-for-justus-kelley-in-miss-universe-2026-how-to-support-the-usa-representative-f202611-n/",
-          "title": "How to vote for Justus Kelley in Miss Universe 2026: How to support the USA representative",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllCnvmviOqxfYSHVB4xmXAlnu8lVbC56hW-T0sENZlbEHmUUFsKPS941CCVg"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-b86771ce3b530eb97e00e6cc_justus_kelley_honors/",
-          "title": "Justus Kelley honors Mary Leona Gage, Miss USA stripped of crown in 1957",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHaeKp_5TrT0QHWIW3VZM8e-dLibDb6RNUx1v0iIWCYRlKoH-BNugnadI8PXI"
-        }
-      ]
-    },
-    {
-      "query": "general dynamics f-16 fighting falcon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T01:00:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/aerospace-defense/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf-2026-11-21/",
-        "https://www.tasnimnews.ir/en/news/2026/11/21/3754452/iranian-army-damages-us-f-16-forces-mission-abort",
-        "https://www.foxnews.com/video/6408710726112"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDKklXcebzzWEFUwH3YUTcdd8gzEThrEjGA1eY8bivPHPZVEthzR76kZm3pU",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/aerospace-defense/us-denies-iranian-account-that-missile-damaged-f-16-over-gulf-2026-11-21/",
-          "title": "US denies Iranian account that missile damaged F-16 over Gulf",
+          "url": "https://www.reuters.com/legal/government/us-judge-rejects-trump-administrations-homelessness-program-revamp-2026-11-20/",
+          "title": "US judge rejects Trump administration's homelessness program revamp",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZDKklXcebzzWEFUwH3YUTcdd8gzEThrEjGA1eY8bivPHPZVEthzR76kZm3pU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKMqwde89qYDVwe7Wzn9YU8yHhm3MlfjizuhOWq1c_hxY7IspA8pCKVbGWRus"
         },
         {
-          "url": "https://www.tasnimnews.ir/en/news/2026/11/21/3754452/iranian-army-damages-us-f-16-forces-mission-abort",
-          "title": "Iranian Army Damages US F-16, Forces Mission Abort",
-          "publisher": "تسنیم",
+          "url": "https://democracyforward.org/news/press-releases/federal-court-strikes-down-trump-vance-administrations-unlawful-restrictions-on-homelessness-funding/",
+          "title": "Federal Court Strikes Down Trump-Vance Administration’s Unlawful Restrictions on Homelessness Funding",
+          "publisher": "Democracy Forward",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMpBUabVS8PFMB1ByD8AXocqTFH1Za-TLkok_XHU3vIyc3EvuvgfWYIOG-VeU"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408710726112",
-          "title": "The decision to strike Iran was not a choice but a necessity, major general says",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRm-7C-l1mGHAa1cwG_dndf-CM2DuwfC0QpfwHE7ZKBOWhGL2rHzEnTH5xLPE4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOxaBYqdsmr0SdDFjqzrVC7DXldos5QHnRw4i0eXLdFHrqQtKm2nE_lKnOpPQ"
         }
       ]
     },
     {
-      "query": "santa clarita ice car detention video",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T00:50:00Z",
+      "query": "san diego st vs boise state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T01:30:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-21/ice-officer-seen-on-video-smashing-window-to-detain-man-at-santa-clarita-sheriffs-station",
-        "https://abc7.com/post/ice-detains-man-outside-santa-clarita-sheriffs-station-video-shows/20062073/",
-        "https://signalscv.com/2026/11/protesters-confront-ice-during-arrest-outside-sheriffs-station-in-santa-clarita/"
+        "https://247sports.com/college/boise-state/article/game-preview-boise-state-san-diego-state-293020568/",
+        "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318181059.html",
+        "https://www.si.com/college/boise-state/football/closing-point-spread-betting-odds-for-no-17-boise-state-vs-san-diego-state"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCMhfr60QKz8aoB9WfJSfDp45D1SCnCZEP4pBHS9X89orOppye5GVvxVmHXYs",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiRG5RPGLZlmTt3DQKHZA7fXVuHWisY4n5Deo_xR3YNPMHt1aAHMK1OwXqjQ",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.latimes.com/california/story/2026-11-21/ice-officer-seen-on-video-smashing-window-to-detain-man-at-santa-clarita-sheriffs-station",
-          "title": "ICE officer seen on video smashing window to detain man at Santa Clarita sheriff’s station",
-          "publisher": "Los Angeles Times",
+          "url": "https://247sports.com/college/boise-state/article/game-preview-boise-state-san-diego-state-293020568/",
+          "title": "Game preview: Boise State looks to polish off perfect home record against San Diego State",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCMhfr60QKz8aoB9WfJSfDp45D1SCnCZEP4pBHS9X89orOppye5GVvxVmHXYs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBiRG5RPGLZlmTt3DQKHZA7fXVuHWisY4n5Deo_xR3YNPMHt1aAHMK1OwXqjQ"
         },
         {
-          "url": "https://abc7.com/post/ice-detains-man-outside-santa-clarita-sheriffs-station-video-shows/20062073/",
-          "title": "ICE smashes car window, detains man outside Santa Clarita Sheriff's Station",
-          "publisher": "ABC7 Los Angeles",
+          "url": "https://www.idahostatesman.com/sports/college/mountain-west/boise-state-university/boise-state-football/article318181059.html",
+          "title": "Boise State vs. San Diego State: Kickoff time, TV channel and radio details",
+          "publisher": "Idaho Statesman",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLr6cT2ekhPaB8E-AFpbMbY6PxqL55mVLjBt0jXHa9TRXCRXnCCRqXDZQPrZQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvKA55nNvkiZzEAfpz_PyabWzAB-Xwb_Pd3-qmrM_v-446tpvtcj83wv2OUAg"
         },
         {
-          "url": "https://signalscv.com/2026/11/protesters-confront-ice-during-arrest-outside-sheriffs-station-in-santa-clarita/",
-          "title": "Protesters confront ICE during arrest outside sheriff’s station in Santa Clarita",
-          "publisher": "Santa Clarita Valley Signal",
+          "url": "https://www.si.com/college/boise-state/football/closing-point-spread-betting-odds-for-no-17-boise-state-vs-san-diego-state",
+          "title": "Closing point spread, betting odds for No. 17 Boise State vs. San Diego State",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKNxA9THqnk0DKCpqfHv2cguf_-OO1L0TWprNZosMLe8CUwbZTv7x4bGripCU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHOkHwTjSTHRgSwsFS8VvNNndqcwm-ERuPe6SxlYAq0KH-XXYa0o54ctRG7N0"
+        }
+      ]
+    },
+    {
+      "query": "shane beamer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://www.dawgnation.com/football/shane-beamer-has-south-carolina-braced-no-1-georgia-heres-what-know/TRHWOMBOWNBFTGDBJUBXNZSHWE/",
+        "https://247sports.com/college/south-carolina/article/college-football-playoff-why-south-carolina-gamecocks-ranked-292924184/",
+        "https://www.espn.com/video/clip/_/id/50514085/shane-beamer-discusses-priming-no-1-uga-tough-conversations-seniors"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz1Ul8PRFZjPCuRZUOFX2AjEDAVQ6QH-pGFZJ0F_afI8s-69Y6zkfzz-HShdQ",
+      "image_credit": "DawgNation",
+      "news": [
+        {
+          "url": "https://www.dawgnation.com/football/shane-beamer-has-south-carolina-braced-no-1-georgia-heres-what-know/TRHWOMBOWNBFTGDBJUBXNZSHWE/",
+          "title": "Shane Beamer has South Carolina braced for No. 1 Georgia: Here's what to know",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTz1Ul8PRFZjPCuRZUOFX2AjEDAVQ6QH-pGFZJ0F_afI8s-69Y6zkfzz-HShdQ"
+        },
+        {
+          "url": "https://247sports.com/college/south-carolina/article/college-football-playoff-why-south-carolina-gamecocks-ranked-292924184/",
+          "title": "Committee chair explains South Carolina's CFP ranking",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiOm4kXNUP6EdCBjkpXHF8LrIF7u0i7ExHr3GNQSV0HNrNJtRl_s7BAaqYzRE"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50514085/shane-beamer-discusses-priming-no-1-uga-tough-conversations-seniors",
+          "title": "Shane Beamer discusses priming for No. 1 UGA, tough conversations with seniors",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuK4vGsW2rfY3Z2m3MRv_iAomHd-fsTTc_4lfyFPjow0Srjvux2hg2dRhyD6k"
+        }
+      ]
+    },
+    {
+      "query": "florida panthers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-florida-panthers-lineup-x0845",
+        "https://www.litterboxcats.com/florida-panthers-vs-buffalo-sabres-gameday-24-2026-27-nhl-schedule/",
+        "https://sports.yahoo.com/articles/watch-sabres-vs-panthers-live-220000249.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRXWsy9eftxJOkSc-zgwLW1CDrkWEaydz63uRddTXHRfIVLuicWg_EQ_wdbuc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-florida-panthers-lineup-x0845",
+          "title": "Sabres at Panthers | How to watch, lineup notes, and storylines",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRXWsy9eftxJOkSc-zgwLW1CDrkWEaydz63uRddTXHRfIVLuicWg_EQ_wdbuc"
+        },
+        {
+          "url": "https://www.litterboxcats.com/florida-panthers-vs-buffalo-sabres-gameday-24-2026-27-nhl-schedule/",
+          "title": "Gameday 24: Florida Panthers vs Buffalo Sabres",
+          "publisher": "Litter Box Cats",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9ookcks1gNX1CDlCsRiC36x99xqlar0C0hPJqsno42PFokWtJP9-7L31hYuc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/watch-sabres-vs-panthers-live-220000249.html",
+          "title": "How to watch Sabres vs Panthers: Live stream NHL, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXPPycqhmMzO-eBIOZMchySFkGRstWtnHmQgOOQG61St4QkrnODCIkDtOkZFE"
+        }
+      ]
+    },
+    {
+      "query": "storm",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+        "https://www.cbsnews.com/newyork/news/nyc-rain-storm-weather-forecast-new-jersey-connecticut-november-22/",
+        "https://abc7ny.com/post/thanksgiving-weather-forecast-coastal-storm-could-bring-rain-tri-state/20059583/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+          "title": "East Coast storm could disrupt holiday travel after battering Florida",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/news/nyc-rain-storm-weather-forecast-new-jersey-connecticut-november-22/",
+          "title": "Heavy rain could impact the New York City area Sunday. Get the First Alert Forecast.",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh7ARy9N2wEwostc6eo3IsSWIDxewqA9wdz67t5rmVKI5PfPH97cYNa4F07Wg"
+        },
+        {
+          "url": "https://abc7ny.com/post/thanksgiving-weather-forecast-coastal-storm-could-bring-rain-tri-state/20059583/",
+          "title": "Thanksgiving weather forecast: Coastal storm could bring rain to Tri-State",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSC4odmSBt3uERPcMheRV0-x7_QIbkV0Z3m_RgngZWvXSFeOLudZlJGWVvjgVM"
+        }
+      ]
+    },
+    {
+      "query": "landry shamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/knicks-landry-shamet-starting-against-trail-blazers/",
+        "https://dailyknicks.com/mikal-bridges-is-slowly-but-surely-stiff-arming-landry-shamet",
+        "https://www.si.com/nba/knicks/onsi/knicks-positive-signs-mikal-bridges-starting-mount-01m7qr8psqg5"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/knicks-landry-shamet-starting-against-trail-blazers/",
+          "title": "Knicks' Landry Shamet: Starting against Trail Blazers",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGNk90_TVw3F4K9CC8xxUI7G6F1WqU5leW8DsCj9s7JvOZhm30arygVJg6CGU"
+        },
+        {
+          "url": "https://dailyknicks.com/mikal-bridges-is-slowly-but-surely-stiff-arming-landry-shamet",
+          "title": "Mikal Bridges is slowly but surely stiff-arming Landry Shamet",
+          "publisher": "Daily Knicks",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNuO6ML2knReB5lErRlF1ciCbb5iT5aAperDonZYw10dnceZy6fzGgJQA2H44"
+        },
+        {
+          "url": "https://www.si.com/nba/knicks/onsi/knicks-positive-signs-mikal-bridges-starting-mount-01m7qr8psqg5",
+          "title": "Knicks’ Positive Signs From Mikal Bridges Are Starting to Mount",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTlq_xWD_fVmu5hdMOdQD4J6yCEEn5ypcG-39skywN5zfH-zCyw5rYYZ6WTQMQ"
+        }
+      ]
+    },
+    {
+      "query": "cedric coward",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/cedric-coward-dials-from-long-distance",
+        "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cedric-coward-double-doubles-with-four-assists/",
+        "https://www.espn.com/video/clip/_/id/50506347/cedric-coward-massive-swat-rim"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4wp6Z5nQi-SOi4_iW8Xn_F-pRdEc0l6lIiys_V1RfnLFepdH3DyOoJetxmxo",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/cedric-coward-dials-from-long-distance",
+          "title": "Cedric Coward dials from long distance",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4wp6Z5nQi-SOi4_iW8Xn_F-pRdEc0l6lIiys_V1RfnLFepdH3DyOoJetxmxo"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cedric-coward-double-doubles-with-four-assists/",
+          "title": "Grizzlies' Cedric Coward: Double-doubles with four assists",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAqTKOoHed79o2haAuHkSj-TEnuImCwTq6ZBrLYEmD0hyBK-yuroHasmRXqpA"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50506347/cedric-coward-massive-swat-rim",
+          "title": "Cedric Coward with the massive swat at the rim",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGerItGGt3p7hmD2kyi8hXLj4rA_GCDsBj39wz8UOf5gKGcxaR5RpB1ybWk9U"
+        }
+      ]
+    },
+    {
+      "query": "playstation plus",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T01:30:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/playstation-plus-december-2026-free-ps2-game-confirmed/",
+        "https://www.playstationlifestyle.net/2026/11/20/ps2-action-game-soul-reaver-2-ps5-port-puzzling",
+        "https://www.theshortcut.com/products/legacy-of-kain-soul-reaver-12-remastered"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMNi276OwURkpXrSFMpymBONuPClXKw4Ei-bNU96hH8lZmsxG3fOLdnrrG38o",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/playstation-plus-december-2026-free-ps2-game-confirmed/",
+          "title": "PlayStation Plus First Free Game For December Is A PS2 10/10 Masterpiece",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMNi276OwURkpXrSFMpymBONuPClXKw4Ei-bNU96hH8lZmsxG3fOLdnrrG38o"
+        },
+        {
+          "url": "https://www.playstationlifestyle.net/2026/11/20/ps2-action-game-soul-reaver-2-ps5-port-puzzling",
+          "title": "New PS5 Release of Beloved PS2 Action Game Confuses Players",
+          "publisher": "PlayStation LifeStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbtJh2hOvU1dPDHWDEyMhgKpQ7vJ0wUAMN84v8OQghYchtXqnhVSWS_rMyAu8"
+        },
+        {
+          "url": "https://www.theshortcut.com/products/legacy-of-kain-soul-reaver-12-remastered",
+          "title": "Legacy of Kain Soul Reaver 1&2 Remastered: 75/100 media score",
+          "publisher": "www.theshortcut.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXwpBQWqnuEQrO-35WXBYSNJcnTJUhCX709Zp0Gi8Tn0k2NeJh3280moKy54Y"
         }
       ]
     }
