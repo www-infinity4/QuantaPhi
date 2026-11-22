@@ -145,3 +145,25 @@ test('owner batch View More loads actual additional videos from the saved catalo
  assert.match(mixed,/\/api\/creator-uploads/,'Must continue fetching recent uploads from known channels');
  assert.match(mixed,/Owner-submitted videos/,'Do not mislabel owner links as a verified channel');
 });
+
+
+test('owner supplied November 22 video is review-pending, source-linked, and never credited automatically',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const source='https://www.youtube.com/watch?v=bomGzT7_j4A';
+ const row=REVIEWED_OWNER_VIDEO_LINKS.find(item=>item.videoId==='bomGzT7_j4A');
+ assert.ok(row,'owner video should be ingested without invented publisher metadata');
+ assert.equal(row.sourceUrl,source);
+ assert.equal(row.titleVerified,false);
+ assert.equal(row.publisherVerified,false);
+ assert.equal(row.publishedAt,null);
+ assert.equal(row.observedAt,'2026-11-22');
+ assert.equal(row.contentBoundary,'general-media');
+ assert.equal(validateOwnerYouTubeLink(row),true);
+ const card=REVIEWED_OWNER_VIDEO_CARDS.find(item=>item.reviewedYouTubeVideoId===row.videoId);
+ assert.ok(card);
+ assert.equal(card.featureUrl,source);
+ assert.equal(card.publisherVerified,false);
+ assert.match(card.details,/No full-channel import/);
+ assert.ok(ALL_FEED_CARDS.some(item=>item.id===card.id));
+ assert.equal(departmentFor(card),'media');
+});

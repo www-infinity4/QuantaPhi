@@ -145,6 +145,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  contentBoundary:'general-media'
 }
+,{
+ videoId:'bomGzT7_j4A',title:'YouTube video bomGzT7_j4A (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=bomGzT7_j4A',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
