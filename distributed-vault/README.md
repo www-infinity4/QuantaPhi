@@ -114,3 +114,9 @@ node --test test/distributed-vault*.test.mjs
 ```
 
 The CI runs the SQLite coordinator, HTTP tests, lost-phone-cache repair, credential isolation, encrypted recovery across restart, D1 SQL import and private SQLite chunk restore using **synthetic** data. Results are not physical Android/production receipts.
+
+### App-use pattern placement
+
+The server now uses **coarse, server-observed availability of its own enrolled app cache** to decide where newly encrypted fragments should go. A valid app heartbeat counts at most once in a one-minute activity window. Caches active in more distinct windows are preferred; caches reporting lost fragments are deprioritized. Equal scores retain stable enrollment order. The server does not request browsing history, screen time, location, contacts, or data from other apps. Heartbeat windows are capped at 100 and are **not** evidence of a genuine unique physical phone or a guarantee of future availability.
+
+This is a lightweight heuristic. It cannot wake a phone, evade Android background limits, or restore missing ciphertext from a hash. The owner-held encrypted coordinator copy and multiple app replicas remain required until erasure coding and independent backup/recovery have been proven.
