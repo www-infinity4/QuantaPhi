@@ -30,11 +30,13 @@ test('traffic snapshot stays a marked verified record rather than fake live metr
  assert.equal(d.scope,'recorded_since');
  assert.equal(d.historicComplete,false);
  assert.equal(d.refreshConfigured,false);
- assert.equal(d.through,'2026-11-05');
- assert.equal(d.requests,1942571);
- assert.equal(d.pageViews,591747);
- assert.equal(d.recordedDays,33);
- assert.ok(Date.parse(d.fetchedAt)>=Date.parse('2026-11-05T00:00:00Z'));
+ // Exact values come from the November 22 read-only Cloudflare/ledger
+ // recovery receipt in TICKET-1110; this remains a dated static backup.
+ assert.equal(d.through,'2026-11-22');
+ assert.equal(d.requests,4501203);
+ assert.equal(d.pageViews,1042952);
+ assert.equal(d.recordedDays,50);
+ assert.equal(d.fetchedAt,'2026-11-22T19:06:27.768Z');
  assert.ok(d.last7Days.requests<=d.requests);
  assert.ok(d.last7Days.pageViews<=d.pageViews);
 });
