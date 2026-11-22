@@ -34,6 +34,7 @@ jobs:
           node --check distributed-vault/mesh-runner.mjs
           node --check distributed-vault/mesh-owner.mjs
           node --check distributed-vault/mesh-peer.mjs
+          node --check distributed-vault/google-gemini-handoff.mjs
           python3 -m py_compile distributed-vault/d1-verify.py
       - name: Test encryption, 1000 shards and application-controlled cache
-        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs test/distributed-vault-cli.test.mjs test/distributed-vault-mesh-server.test.mjs test/distributed-vault-d1-stage.test.mjs test/distributed-vault-peer.test.mjs test/distributed-vault-d1-verify.test.mjs test/distributed-vault-deploy.test.mjs
+        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs test/distributed-vault-cli.test.mjs test/distributed-vault-mesh-server.test.mjs test/distributed-vault-d1-stage.test.mjs test/distributed-vault-peer.test.mjs test/distributed-vault-d1-verify.test.mjs test/distributed-vault-deploy.test.mjs test/distributed-vault-google-handoff.test.mjs
