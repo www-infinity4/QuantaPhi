@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {buildUserArchive,sealUserArchive,openUserArchive,toGeminiText,readVerifiedWalletSearches} from '../distributed-vault/google-gemini-handoff.mjs';
+import {buildUserArchive,sealUserArchive,openUserArchive,toGeminiText,verifyWalletBinding,readVerifiedWalletSearches} from '../distributed-vault/google-gemini-handoff.mjs';
 const OWNER='a'.repeat(64),OTHER='b'.repeat(64);
 const chats=[
  {scope:OWNER,id:'chat1',role:'user',text:'How do stars work?',at:1740000000000},
@@ -81,4 +81,20 @@ test('refuses excess data rather than silently omitting history that users expec
  const oversized=Array.from({length:10001},(_,i)=>({scope:OWNER,id:'x'+i,role:'user',text:'valid',at:1740000000000+i}));
  await assert.rejects(buildUserArchive({ownerScope:OWNER,consent:true,chats:oversized,searches:[]}),/too many/i);
  await assert.rejects(buildUserArchive({ownerScope:OWNER,consent:true,chats:[{...chats[0],text:'x'.repeat(7000)}],searches:[]}),/too long/i);
+});
+
+test('even chats-only export requires rechecking that active bearer still matches wallet profile',async()=>{
+ const calls=[];
+ const binding=await verifyWalletBinding({
+  memory:{cloudConnected:true,profileScope:OWNER},
+  connection:{resolveDeviceToken:async()=> 'account-token'},
+  fetchImpl:async url=>{calls.push(url);return {ok:true,json:async()=>({ok:true,profile:OWNER})}}
+ });
+ assert.equal(binding.scope,OWNER);
+ assert.equal(calls.length,1);
+ await assert.rejects(verifyWalletBinding({
+  memory:{cloudConnected:true,profileScope:OWNER},
+  connection:{resolveDeviceToken:async()=> 'other-account-token'},
+  fetchImpl:async()=>({ok:true,json:async()=>({ok:true,profile:OTHER})})
+ }),/account mismatch/i);
 });
