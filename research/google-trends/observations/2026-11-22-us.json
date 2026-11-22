@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T18:30:50.143126Z",
+  "checked_at": "2026-11-22T19:01:10.368733Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "is taylor swift at the chiefs game today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T18:10:00Z",
+      "query": "chuck hubbard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T18:40:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66123344/?ref_=nwc_art_perm",
-        "https://sports.yahoo.com/articles/taylor-swift-attend-chiefs-bills-165559006.html",
-        "https://heavy.com/sports/nfl/kansas-city-chiefs/taylor-swift-status-for-attending-nwsl-championship-game/"
+        "https://www.nytimes.com/2026/11/22/us/virginia-foxx-chuck-hubbard-north-carolina-house.html",
+        "https://apnews.com/article/chuck-hubbard-virginia-foxx-north-carolina-23732afcd78a853e98acd9b72d0cbd14",
+        "https://www.wxii12.com/article/virginia-foxx-concedes-recount-north-carolina-5th-congressional-district/74501474"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7gx3rbbt5cTCfeZ4yh60zJ_0vHzTvyRKGB4aoKn5JXOQm6a2m7-aWhXYaSSE",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.imdb.com/es/news/ni66123344/?ref_=nwc_art_perm",
-          "title": "Is Taylor Swift Going to Travis Kelce’s Chiefs Game Today?",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7BH2nDxcDjCM5eHrF6ofKQRGcatMZ2BY99UU9_uBEAPTRyKTasmI_MtqGMb4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/taylor-swift-attend-chiefs-bills-165559006.html",
-          "title": "Will Taylor Swift Attend Chiefs-Bills Thanksgiving Game? Travis Kelce’s Wife Faces Decision",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_UKZJmglcL8LHijF7U3rtenxlY1c99qaX3eZV9KaKj9dkoHYzxExzSxbC7DY"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/kansas-city-chiefs/taylor-swift-status-for-attending-nwsl-championship-game/",
-          "title": "Taylor Swift’s Status for Attending NWSL Championship Game",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIRqQy_JtDQQOHSyiKJy_0I5BTLgkDOFIPS4AIsMCJsu-vKU0PJ21GaH_CKh4"
-        }
-      ]
-    },
-    {
-      "query": "tyler shough",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T18:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-shough-is-the-saints-leading-rusher-with-187-yards-this-season",
-        "https://www.neworleanssaints.com/video/jeremiah-wright-interview-saints-panthers-postgame-11-16-2026",
-        "https://www.louisianasports.net/2026/11/14/saints-run-game-must-pave-way-to-rebound/latest-stories/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw6rMzaDvF-IBFqqjNzmtl2HlvI4wP13ck-02BpWusXnMcVo2pFfygJLF9d7g",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/tyler-shough-is-the-saints-leading-rusher-with-187-yards-this-season",
-          "title": "Tyler Shough is the Saints’ leading rusher, with 187 yards this season",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw6rMzaDvF-IBFqqjNzmtl2HlvI4wP13ck-02BpWusXnMcVo2pFfygJLF9d7g"
-        },
-        {
-          "url": "https://www.neworleanssaints.com/video/jeremiah-wright-interview-saints-panthers-postgame-11-16-2026",
-          "title": "Jeremiah Wright on o-line play, run game 11/16/2026",
-          "publisher": "New Orleans Saints",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVFOrjWm7UYj8450SdGyxdUQi3MZMLKwShNTdMWiAkAL3Tna1YX7w4knZ57bY"
-        },
-        {
-          "url": "https://www.louisianasports.net/2026/11/14/saints-run-game-must-pave-way-to-rebound/latest-stories/",
-          "title": "Saints run game must pave way to rebound",
-          "publisher": "Louisiana Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyVQ2l9XPOytY3lng1UqWjG3ourziFZEhwhCLEEJOlndJ93SC1JrSe-imkuM"
-        }
-      ]
-    },
-    {
-      "query": "dallas cowboys game today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T18:10:00Z",
-      "related_news_urls": [
-        "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
-        "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
-        "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY",
-      "image_credit": "FOX 4 News Dallas-Fort Worth",
-      "news": [
-        {
-          "url": "https://www.fox4news.com/news/man-dies-days-after-fight-dallas-cowboys-game",
-          "title": "Man dies days after fight at Dallas Cowboys game",
-          "publisher": "FOX 4 News Dallas-Fort Worth",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNJPeNeKbI6ZcCy4QqnaPFOLDnf-N423cktBLfraP7CzFG2-1sqNskwB3uzEY"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
-          "title": "Police investigate man's death after alleged altercation at 49ers-Cowboys game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4upwL0cAQwvAnWJ7uXF81fniug5UXLhccgpvU5JTpKF3aH5bjofsIgQ41ZPo"
-        },
-        {
-          "url": "https://www.wfaa.com/article/news/crime/cowboys-game-att-stadium-fan-death-fight-fall/287-79997ef9-f990-4720-abb6-eabfbe6364e6",
-          "title": "Family of man who died after altercation at Dallas Cowboys game speaks out about 'tragic accident'",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6ul-ntuuNDuR6lH2Yf98vrXMrDms7b18rtd6WY3p3JjYOKLYM08d2jUwbp54"
-        }
-      ]
-    },
-    {
-      "query": "rashod bateman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T18:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/chargers-ravens-on-monday-night-football-what-we-learned-from-los-angeles-23-20-win-over-baltimore",
-        "https://www.nytimes.com/athletic/7789332/2026/11/17/projected-nfl-draft-order-2027-chargers-ravens/",
-        "https://www.espn.com/nfl/story/_/id/50508744/kyle-hamilton-says-ravens-disgracing-standards-loss-previously-winless-chargers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6l6qvxcqm-I5PMKjVDV1Y4anXPqpKZVWiXmv8ydBTVkwojefd9WAf3LpiQyI",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/chargers-ravens-on-monday-night-football-what-we-learned-from-los-angeles-23-20-win-over-baltimore",
-          "title": "Chargers-Ravens on 'Monday Night Football': What We Learned from Los Angeles' 23-20 win over Baltimore",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6l6qvxcqm-I5PMKjVDV1Y4anXPqpKZVWiXmv8ydBTVkwojefd9WAf3LpiQyI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7789332/2026/11/17/projected-nfl-draft-order-2027-chargers-ravens/",
-          "title": "Projected 2027 NFL Draft order: Chargers climb out of No. 1 spot; Ravens’ top-10 odds soar",
+          "url": "https://www.nytimes.com/2026/11/22/us/virginia-foxx-chuck-hubbard-north-carolina-house.html",
+          "title": "Democrat Unseats 11-Term G.O.P. House Member in North Carolina",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnkyn1J3QzBfRCq6kRx9la1de_SHhPc-1m3tW85jW6_6a_YEeva4bsswYBlnQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7gx3rbbt5cTCfeZ4yh60zJ_0vHzTvyRKGB4aoKn5JXOQm6a2m7-aWhXYaSSE"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50508744/kyle-hamilton-says-ravens-disgracing-standards-loss-previously-winless-chargers",
-          "title": "Kyle Hamilton says Ravens 'disgracing' standards after losing to 0-8 Chargers",
-          "publisher": "ESPN",
+          "url": "https://apnews.com/article/chuck-hubbard-virginia-foxx-north-carolina-23732afcd78a853e98acd9b72d0cbd14",
+          "title": "Chuck Hubbard defeats Rep. Virginia Foxx after a recount in their North Carolina House race",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTroheLyWv4V55fvqORowlAymqcVmASzYFXZtAersdV02cTn1wQSsgBStWtNzw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNqmKNLeNTKs__SCxDu4WEf1RRUdNwp-w4EEg5uuJ49Pf8uPnAaOhYcUVEBXo"
+        },
+        {
+          "url": "https://www.wxii12.com/article/virginia-foxx-concedes-recount-north-carolina-5th-congressional-district/74501474",
+          "title": "Virginia Foxx concedes after recount in North Carolina’s 5th Congressional District race",
+          "publisher": "WXII",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEeRGKQfU9E4qa-xYhLuVkcUKWSM4g5bh6RW5mNStjqeva5lSklCKKcqZIJs4"
         }
       ]
     },
     {
-      "query": "detective",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T18:10:00Z",
+      "query": "emmett johnson",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-22T18:30:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/colorado/news/denver-police-detective-accused-dui-hit-run-driving-city-issued-suv/",
-        "https://hoodline.com/2026/11/denver-detective-accused-of-dui-fled-on-rim-for-a-mile-in-city-suv-deputies-say/",
-        "https://www.inkl.com/news/denver-detective-accused-of-dui-fleeing-crash-in-city-suv-deputies-stop-identify-her-at-gunpoint"
+        "https://sports.yahoo.com/articles/week-11-fantasy-rankings-emmett-123051562.html",
+        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-11/",
+        "https://www.kansascity.com/sports/article318185811.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7HMXwVl8vOCSkLhegpI2ylQPmhf9st3zX3WxZdkKVd1WTr9ZwC-S-0A_PuY",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/colorado/news/denver-police-detective-accused-dui-hit-run-driving-city-issued-suv/",
-          "title": "Denver police detective accused of DUI hit-and-run was driving city-issued SUV, sheriff's report says",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTC7HMXwVl8vOCSkLhegpI2ylQPmhf9st3zX3WxZdkKVd1WTr9ZwC-S-0A_PuY"
-        },
-        {
-          "url": "https://hoodline.com/2026/11/denver-detective-accused-of-dui-fled-on-rim-for-a-mile-in-city-suv-deputies-say/",
-          "title": "Denver Detective DUI Hit-and-Run in City SUV: What Happened",
-          "publisher": "Hoodline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_z6KKIYw3x9vPy0mckZ_CSQpZBMjfjq1-uJPc74KXRaFZGNgygJzXt7hDbKU"
-        },
-        {
-          "url": "https://www.inkl.com/news/denver-detective-accused-of-dui-fleeing-crash-in-city-suv-deputies-stop-identify-her-at-gunpoint",
-          "title": "Denver detective accused of DUI, fleeing crash in city SUV; deputies stop, identify her at gunpoint",
-          "publisher": "inkl",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOfBExz3pMCjJozExskJ5SMWwhbC8IJ4nJX-XuKU1i6vsEPhlcO-poako1pw"
-        }
-      ]
-    },
-    {
-      "query": "ollie gordon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T18:10:00Z",
-      "related_news_urls": [
-        "https://www.oddsshopper.com/articles/expert-picks/underdog-picks-2026-11-22",
-        "https://www.si.com/nfl/dolphins/onsi/dolphins-2026-midseason-awards-from-ollie-to-chop-to-uche-01m7x3xsyqbn",
-        "https://www.audacy.com/wqam/video/chris-perkins-names-malik-washington-as-the-dolphins-midseason-mvp-his-take-on-mccord-s-debut-xbyfmp2"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFD8eJmm-QEN_xppxfTE2N-9-uusY392BjSEJGPJaBo4fy8CJTNmchSp0pwZY",
-      "image_credit": "OddsShopper",
-      "news": [
-        {
-          "url": "https://www.oddsshopper.com/articles/expert-picks/underdog-picks-2026-11-22",
-          "title": "Underdog NFL Picks Sunday: Monangai, Ollie Gordon Higher",
-          "publisher": "OddsShopper",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFD8eJmm-QEN_xppxfTE2N-9-uusY392BjSEJGPJaBo4fy8CJTNmchSp0pwZY"
-        },
-        {
-          "url": "https://www.si.com/nfl/dolphins/onsi/dolphins-2026-midseason-awards-from-ollie-to-chop-to-uche-01m7x3xsyqbn",
-          "title": "Dolphins 2026 Midseason Awards: From Ollie to Chop to Uche",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQflAfxO3Kozw1P-uAOyvixt5AZER5ENt2l1mw5hWeE7pb29JZhcBIz3Fw0C4c"
-        },
-        {
-          "url": "https://www.audacy.com/wqam/video/chris-perkins-names-malik-washington-as-the-dolphins-midseason-mvp-his-take-on-mccord-s-debut-xbyfmp2",
-          "title": "Chris Perkins names Malik Washington as the Dolphins midseason MVP | His take on McCord's debut",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDojLV5B1DSvnlX6ySQY_J5lRBSt0uXt9H0D8Eqe8ShBMYshIzfIWRmqwdLk"
-        }
-      ]
-    },
-    {
-      "query": "dolphins qb",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T18:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/theres-only-one-reasonable-answer-134204725.html",
-        "https://phinphanatic.com/miami-dolphins-shouldn-t-even-think-about-adding-former-colts-qb-daniel-jones-01m7xn018cac",
-        "https://www.sun-sentinel.com/2026/11/20/dolphins-offensive-coordinator-analyzes-qb-kyle-mccord-will-dolphins-spy-josh-allen/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5bUEZrjk1TpZJakgmuk1jW6jxI8mh5M3fN0h-9rbPbyPRR3G21XAJOt36OW0",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIJeZGzqa80CvSMB9DTpDJEt5LK3VLmFcZ-FhZIo0YYgGaaN6KnSnKmpRx-VY",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/theres-only-one-reasonable-answer-134204725.html",
-          "title": "There's only one reasonable answer to the question of whether or not the Miami Dolphins should entertain adding QB Daniel Jones",
+          "url": "https://sports.yahoo.com/articles/week-11-fantasy-rankings-emmett-123051562.html",
+          "title": "Week 11 fantasy rankings: Emmett Johnson projects as sixth-best RB",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5bUEZrjk1TpZJakgmuk1jW6jxI8mh5M3fN0h-9rbPbyPRR3G21XAJOt36OW0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIJeZGzqa80CvSMB9DTpDJEt5LK3VLmFcZ-FhZIo0YYgGaaN6KnSnKmpRx-VY"
         },
         {
-          "url": "https://phinphanatic.com/miami-dolphins-shouldn-t-even-think-about-adding-former-colts-qb-daniel-jones-01m7xn018cac",
-          "title": "Dolphins shouldn't even think about adding former Colts QB Daniel Jones",
-          "publisher": "Phin Phanatic",
+          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-start-em-sit-em-rb-in-week-11/",
+          "title": "Fantasy football Start 'Em, Sit 'Em RB in Week 11: Emmett Johnson set to shine as Tony Pollard stays red-hot",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkvHDSchck2nsEcFRBbTyU25kkzY499-jqxStpvc5PrYTzKWdrekSSB9Xypc4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnenNehlMhqgi5ShgbaEkA5Tfcf_yOoUvxY32VfwXRpfo3qXhDbPS3CZkPmWU"
         },
         {
-          "url": "https://www.sun-sentinel.com/2026/11/20/dolphins-offensive-coordinator-analyzes-qb-kyle-mccord-will-dolphins-spy-josh-allen/",
-          "title": "Dolphins offensive coordinator analyzes QB Kyle McCord; will Dolphins spy Josh Allen?",
-          "publisher": "Sun Sentinel",
+          "url": "https://www.kansascity.com/sports/article318185811.html",
+          "title": "Chiefs RB Emmett Johnson gets massive ratings boost in 'Madden NFL 27'",
+          "publisher": "Kansas City Star",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDXitHF-vc71wEgHUnML0TuLdrM-0zVY9JNnQ5v6jQayuUtbaruGmzmByZW4c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMdkNcEw-nj4MtddbaScs73BARGVkj6gE6sUAo10BQ4sNDBIZ6cK5gysdllqc"
         }
       ]
     },
     {
-      "query": "max hurleman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T18:00:00Z",
+      "query": "bradley cooper",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T18:30:00Z",
       "related_news_urls": [
-        "https://triblive.com/sports/kaden-wetjen-scratched-for-steelers-vs-eagles-max-hurleman-to-serve-as-returner-in-nfl-debut/",
-        "https://sports.yahoo.com/articles/week-11-inactives-steelers-172159995.html",
-        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-rule-out-seven-players-including-struggling-rookie-returner.html"
+        "https://graziamagazine.com/articles/the-ability-to-be-deeply-honest-gigi-hadid-has-explained-what-makes-her-relationship-with-bradley-cooper-different-from-her-past-romances/",
+        "https://suaragarut.id/en/hadid-cooper-matching-gold-rings",
+        "https://demokratis.co.id/en/gigi-hadid-bradley-cooper-relationship"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbK36ryC1BXMYzT-Ikup71S6EQIfAzbx6GiXiLPZ3kRn4euNqLhTYw6Uv45WI",
-      "image_credit": "TribLIVE.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4BzrIh4sJFWcAV0wGTbwMBAyDkllp5qm1g6lHpkyOfeeKkv9homWDX2ST9io",
+      "image_credit": "graziamagazine.com",
       "news": [
         {
-          "url": "https://triblive.com/sports/kaden-wetjen-scratched-for-steelers-vs-eagles-max-hurleman-to-serve-as-returner-in-nfl-debut/",
-          "title": "Kaden Wetjen scratched for Steelers vs. Eagles; Max Hurleman to serve as returner in NFL debut",
+          "url": "https://graziamagazine.com/articles/the-ability-to-be-deeply-honest-gigi-hadid-has-explained-what-makes-her-relationship-with-bradley-cooper-different-from-her-past-romances/",
+          "title": "\"The Ability to Be Deeply Honest\": Gigi Hadid Has Explained What Makes Her Relationship With Bradley Cooper Different From Her Past Romances",
+          "publisher": "graziamagazine.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4BzrIh4sJFWcAV0wGTbwMBAyDkllp5qm1g6lHpkyOfeeKkv9homWDX2ST9io"
+        },
+        {
+          "url": "https://suaragarut.id/en/hadid-cooper-matching-gold-rings",
+          "title": "Gigi Hadid and Bradley Cooper Fuel Marriage Rumors With Rings",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTrtr-P-IOeq54oaKCrnIh0X1wGe73vOrD7UTo3umVS7mEa9lVQJ_DSwd9czE"
+        },
+        {
+          "url": "https://demokratis.co.id/en/gigi-hadid-bradley-cooper-relationship",
+          "title": "Gigi Hadid Explains Her Relationship With Bradley Cooper",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTrtr-P-IOeq54oaKCrnIh0X1wGe73vOrD7UTo3umVS7mEa9lVQJ_DSwd9czE"
+        }
+      ]
+    },
+    {
+      "query": "saquon barkley",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/saquon-barkley-healthier-after-bye-hoping-to-turn-his-season-around/768301/",
+        "https://triblive.com/sports/even-as-he-approaches-30-eagles-saquon-barkley-commands-respect-of-steelers-defense/",
+        "https://www.si.com/betting/saquon-barkley-injury-update-betting-impact-for-steelers-vs-eagles-in-nfl-week-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzwWNEOFj0RaMoSdq7bDPZohtwTx0PBiJq2TyntdT1f-8MjViuZ7u0cgq5MJk",
+      "image_credit": "NBC Sports Philadelphia",
+      "news": [
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/saquon-barkley-healthier-after-bye-hoping-to-turn-his-season-around/768301/",
+          "title": "Saquon Barkley healthier after bye, hoping to salvage his season",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzwWNEOFj0RaMoSdq7bDPZohtwTx0PBiJq2TyntdT1f-8MjViuZ7u0cgq5MJk"
+        },
+        {
+          "url": "https://triblive.com/sports/even-as-he-approaches-30-eagles-saquon-barkley-commands-respect-of-steelers-defense/",
+          "title": "Even as he approaches 30, Eagles’ Saquon Barkley commands respect of Steelers defense",
           "publisher": "TribLIVE.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbK36ryC1BXMYzT-Ikup71S6EQIfAzbx6GiXiLPZ3kRn4euNqLhTYw6Uv45WI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCiyiQ_-NkVm9OuOYl_zBrUV3Dw87Zs8TFIoBLrgFRYM-Yc3gW9VGR12jONjk"
         },
         {
-          "url": "https://sports.yahoo.com/articles/week-11-inactives-steelers-172159995.html",
-          "title": "Week 11 inactives for Steelers",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.si.com/betting/saquon-barkley-injury-update-betting-impact-for-steelers-vs-eagles-in-nfl-week-11-2026",
+          "title": "Is Saquon Barkley Playing Today? (Injury Update, Betting Impact for Steelers vs. Eagles in NFL Week 11)",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXLs7_k_IZsQ1AfC0hfimUwacvo1nQ3WPCJBN49du4Q4ck1iQ5lz8ztMnmYbE"
-        },
-        {
-          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-rule-out-seven-players-including-struggling-rookie-returner.html",
-          "title": "Pittsburgh Steelers rule out seven players, including struggling rookie returner",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrqfi9d5P8fVcp8FftUp9ub2idXxY9mHcm1flyiPb8_PTYH-uzRUpDjN11Z1U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHJfVckZnYshSHMcTDTvhedC-bP34eW5e_FLjJxWKHeX24MKeNRg8Ge65E5DM"
         }
       ]
     },
     {
-      "query": "hector herrera",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T18:00:00Z",
+      "query": "kavontae turpin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-22T18:30:00Z",
       "related_news_urls": [
-        "https://www.telemundo.com/deportes/mas-deporte/hector-herrera-es-arrestado-por-manejar-bajo-los-efectos-del-alcohol-d-rcna610705",
-        "https://www.mediotiempo.com/futbol/mls/hector-herrera-es-arrestado-en-estados-unidos-esto-se-sabe-de-su-detencion",
-        "https://www.elhorizonte.mx/deportes/hector-herrera-enfrenta-arresto-en-texas-por-presunta-ebriedad/8436316416"
+        "https://thelandryhat.com/cowboys-simply-can-t-keep-justifying-an-offensive-role-for-kavontae-turpin-01m7rp722agd"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsnnzAq7lRQUZR48NrcdZHSf6czzcTeyT2y4AoxBxhn6GVVptjkngA7J7NhnM",
-      "image_credit": "Telemundo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tsvmUtddVJ9w4ED7gm1nOcLbBtnTmDXkInl77oWbOQXzhjSSLvvUl1ZVipo",
+      "image_credit": "The Landry Hat",
       "news": [
         {
-          "url": "https://www.telemundo.com/deportes/mas-deporte/hector-herrera-es-arrestado-por-manejar-bajo-los-efectos-del-alcohol-d-rcna610705",
-          "title": "Héctor Herrera es arrestado por manejar bajo los efectos del alcohol, días antes de los Playoffs de la MLS",
-          "publisher": "Telemundo",
+          "url": "https://thelandryhat.com/cowboys-simply-can-t-keep-justifying-an-offensive-role-for-kavontae-turpin-01m7rp722agd",
+          "title": "Cowboys simply can’t keep justifying an offensive role for KaVontae Turpin",
+          "publisher": "The Landry Hat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsnnzAq7lRQUZR48NrcdZHSf6czzcTeyT2y4AoxBxhn6GVVptjkngA7J7NhnM"
-        },
-        {
-          "url": "https://www.mediotiempo.com/futbol/mls/hector-herrera-es-arrestado-en-estados-unidos-esto-se-sabe-de-su-detencion",
-          "title": "¡Última hora! Reportan que Héctor Herrera fue arrestado en Estados Unidos; esto se sabe de su detención",
-          "publisher": "Mediotiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGSY9H1P2qBpGTNrg39n5o5gQKcS70DN9RY0Fna3ZeuJMtywlvR__Mg1U9qyM"
-        },
-        {
-          "url": "https://www.elhorizonte.mx/deportes/hector-herrera-enfrenta-arresto-en-texas-por-presunta-ebriedad/8436316416",
-          "title": "Héctor Herrera enfrenta arresto en Texas por presunta ebriedad",
-          "publisher": "El Horizonte",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-v7-sxtkNKV65O0lti_0tRX6T5IitIVAtIQx5tigYovYkZPd9oPzYzqQZOJ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0tsvmUtddVJ9w4ED7gm1nOcLbBtnTmDXkInl77oWbOQXzhjSSLvvUl1ZVipo"
         }
       ]
     },
     {
-      "query": "is kenneth walker playing this week",
+      "query": "tampa bay buccaneers vs detroit lions match player stats",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T18:00:00Z",
+      "published_at": "2026-11-22T18:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/217091/chiefs-cardinals-inactives-peter-woods-to-miss-third-straight-game",
-        "https://sports.yahoo.com/articles/inactive-players-arizona-cardinals-vs-163823819.html"
+        "https://957wdae.iheart.com/content/2026-11-21-ted-morris-hurst-iii-week-11-preview-vs-the-lions/",
+        "https://bvmsports.com/2026/11/19/chris-godwin-predicted-stats-vs-lions-5-catches-48-yards/",
+        "https://www.yardbarker.com/nfl/articles/predicted_stat_line_buccaneers_wr_ted_hurst_vs_detroit/s1_17135_44601816"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV7ToOE1nebYnvHEGfqhUKuKZnCvmku3Y8nSC_ZJJw0GRY0JCt65bXp5Orgwg",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhBsBSleaUIWCwQdNmVllPGuuGvMbIK3tx0luRee_7oTgTa5ZGibyWiR6x_o",
+      "image_credit": "95.7 WDAE",
+      "news": [
+        {
+          "url": "https://957wdae.iheart.com/content/2026-11-21-ted-morris-hurst-iii-week-11-preview-vs-the-lions/",
+          "title": "Ted Morris Hurst III Week 11 Preview vs. the Lions",
+          "publisher": "95.7 WDAE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRhBsBSleaUIWCwQdNmVllPGuuGvMbIK3tx0luRee_7oTgTa5ZGibyWiR6x_o"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/19/chris-godwin-predicted-stats-vs-lions-5-catches-48-yards/",
+          "title": "Chris Godwin Predicted Stats vs. Lions: 5 Catches, 48 Yards",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdRW71I13kM4BNGF5ri5LJZn28UlAl-vs_vGrj3DCwEfc-UUdJminuDOFiB7Q"
+        },
+        {
+          "url": "https://www.yardbarker.com/nfl/articles/predicted_stat_line_buccaneers_wr_ted_hurst_vs_detroit/s1_17135_44601816",
+          "title": "Predicted Stat Line: Buccaneers WR Ted Hurst vs Detroit",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuSsKw0H8GtKnDBP-U9xHotxiSn0YG-G5DvT_61Z42qD4dLiQ4Ev39F-dbGAs"
+        }
+      ]
+    },
+    {
+      "query": "justin reid",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T18:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50543025/justin-reid-posts-saints-farewell-team-works-release",
+        "https://sports.yahoo.com/articles/bears-emerge-top-spot-32-042227404.html",
+        "https://www.bigblueview.com/new-york-giants-discussion/180607/should-the-ny-giants-be-interested-in-safety-justin-reid"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmFTxPu8XexhrBJgS3FJhKCN9loOHj42s32MTqhiLzgGSKdoUN8P7YcKf6Mrk",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
-          "title": "Chiefs' Kenneth Walker III, two linemen out vs. Cardinals",
+          "url": "https://www.espn.com/nfl/story/_/id/50543025/justin-reid-posts-saints-farewell-team-works-release",
+          "title": "Justin Reid posts Saints farewell as team releases safety",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV7ToOE1nebYnvHEGfqhUKuKZnCvmku3Y8nSC_ZJJw0GRY0JCt65bXp5Orgwg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmFTxPu8XexhrBJgS3FJhKCN9loOHj42s32MTqhiLzgGSKdoUN8P7YcKf6Mrk"
         },
         {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-injuries/217091/chiefs-cardinals-inactives-peter-woods-to-miss-third-straight-game",
-          "title": "Chiefs-Cardinals Inactives: DT Peter Woods to miss third straight game",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLuQEj9otKMrR0SE7lHYwZERV3Z5mc9Md_05qxtZ90g69xC-K6b71BHjCcPkI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/inactive-players-arizona-cardinals-vs-163823819.html",
-          "title": "Inactive players for Arizona Cardinals vs. Kansas City Chiefs, Week 11",
+          "url": "https://sports.yahoo.com/articles/bears-emerge-top-spot-32-042227404.html",
+          "title": "Bears Emerge as Top Spot for $32 Million DB Ahead of Playoff Run",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjzCdDmh4Gd1UiOar9U_-2-9enq4Q4LQThNOEsKEKyfINDP4CSa-9aqLxUR4Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJSmxcldOKrr6EvQKY_939Gr3E2iP73bqYvb_P0PkEzm1UL5YTDMpCp7UhtEo"
+        },
+        {
+          "url": "https://www.bigblueview.com/new-york-giants-discussion/180607/should-the-ny-giants-be-interested-in-safety-justin-reid",
+          "title": "Should the NY Giants be interested in safety Justin Reid?",
+          "publisher": "Big Blue View",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUscB1jQYM89h2GtepVlNAwGN4A95OeLBDNXeg6z9EyVuKg4bDyu97ygzEJE"
+        }
+      ]
+    },
+    {
+      "query": "iowa vs iowa state wrestling",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T18:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/iowa-wrestling-no-4-iowa-183000495.html",
+        "https://www.themat.com/news/2026/november/19/men-s-college-notebook-annual-cy-hawk-dual-highlights-seven-ranked-matchups-this-weekend",
+        "https://www.flowrestling.org/articles/16420105-2026-cy-hawk-dual-date-time-lineups-how-to-watch"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyPdLUBFMwZoghQm-IcLT4MgKM8WMuJMrBLegirHgI00a-kYwkj5qJkXNDE8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/iowa-wrestling-no-4-iowa-183000495.html",
+          "title": "Iowa Wrestling: No. 4 Iowa vs No. 10 Iowa State & No. 1 Iowa Women vs No. 6 King – Preview – How to Watch Guide & Match Thread",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyPdLUBFMwZoghQm-IcLT4MgKM8WMuJMrBLegirHgI00a-kYwkj5qJkXNDE8"
+        },
+        {
+          "url": "https://www.themat.com/news/2026/november/19/men-s-college-notebook-annual-cy-hawk-dual-highlights-seven-ranked-matchups-this-weekend",
+          "title": "Men’s College Notebook: Annual Cy-Hawk Dual Highlights Seven Ranked Matchups This Weekend",
+          "publisher": "USA Wrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo3nXXML_0tLNR0N1n-ffFvSl6RLZLq8SSODbYde27SGc8MiVazIuzirUDJ-w"
+        },
+        {
+          "url": "https://www.flowrestling.org/articles/16420105-2026-cy-hawk-dual-date-time-lineups-how-to-watch",
+          "title": "Everything To Know About The 2026 Cy-Hawk Dual",
+          "publisher": "FloWrestling",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7J2m9j0imc68GwMs9JTTsUksckzcRUBoDqb_Oq-yqRZ6fo7AQMHo5RHtdpk4"
+        }
+      ]
+    },
+    {
+      "query": "northwestern vs dayton",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T18:30:00Z",
+      "related_news_urls": [
+        "https://daytonflyers.com/news/2026/11/21/mens-basketball-plays-northwestern-in-charleston-classic-finale.aspx",
+        "https://www.bleachernation.com/how-to-watch/2026/11/21/dayton-vs-northwestern-free-live-stream-tv-channel-how-to-watch/",
+        "https://sports.betmgm.com/en/blog/ncaab/northwestern-dayton-prediction-odds-picks-nov-22-college-basketball-jaa/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAt-kzQ4hNZG0OjsTSjvPJg-Ej8dJLQKrsN6Bh4eBjtRnESC7FDxwqxfbVa4w",
+      "image_credit": "University of Dayton Athletics",
+      "news": [
+        {
+          "url": "https://daytonflyers.com/news/2026/11/21/mens-basketball-plays-northwestern-in-charleston-classic-finale.aspx",
+          "title": "Men's Basketball Plays Northwestern In Charleston Classic Finale - University of Dayton Athletics",
+          "publisher": "University of Dayton Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAt-kzQ4hNZG0OjsTSjvPJg-Ej8dJLQKrsN6Bh4eBjtRnESC7FDxwqxfbVa4w"
+        },
+        {
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/21/dayton-vs-northwestern-free-live-stream-tv-channel-how-to-watch/",
+          "title": "How to Watch Dayton Flyers vs. Northwestern Wildcats: Live Stream or on TV",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbwMYbFef4PRlOWK5eMMkt85in4TxRl9dQxvJr23yX9b8Bo0C8bexey9Q-xA0"
+        },
+        {
+          "url": "https://sports.betmgm.com/en/blog/ncaab/northwestern-dayton-prediction-odds-picks-nov-22-college-basketball-jaa/",
+          "title": "Northwestern vs Dayton Prediction, Odds & Best Bets Today – NCAAB, Nov. 22",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-AfPzGYXMuRc7ZiMEGN_tDPgbjUWoONI2E7br3kGcADea59kKAo14y276WzM"
+        }
+      ]
+    },
+    {
+      "query": "jlo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T18:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/music/articles/jennifer-lopez-says-ben-affleck-133030282.html",
+        "https://www.dailymail.com/tvshowbiz/article-16310385/jennifer-lopez-ben-affleck-documentary.html",
+        "https://ew.com/jennifer-lopez-ben-affleck-produced-documentary-gave-up-creative-control-12267960"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9yNHbt3G_WYSPLNJ9YN21p0YMlUrTrwW7RYNBm7ZV9I_POJ4qLRhwAggNtT0",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/jennifer-lopez-says-ben-affleck-133030282.html",
+          "title": "Jennifer Lopez Says Ben Affleck-Produced Documentary Overshadowed Her Music After She Gave Up Control",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9yNHbt3G_WYSPLNJ9YN21p0YMlUrTrwW7RYNBm7ZV9I_POJ4qLRhwAggNtT0"
+        },
+        {
+          "url": "https://www.dailymail.com/tvshowbiz/article-16310385/jennifer-lopez-ben-affleck-documentary.html",
+          "title": "Jennifer Lopez points blame at Ben Affleck for 'disappointing' doc",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7BOAKHFdg2eVgkFY7S_49CfHLhg2uw9_VDsVZJm7A0frs_q3Bm3lFVkcpDss"
+        },
+        {
+          "url": "https://ew.com/jennifer-lopez-ben-affleck-produced-documentary-gave-up-creative-control-12267960",
+          "title": "Jennifer Lopez gave up creative control of documentary produced by Ben Affleck: ‘Disappointing’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyZHS9Eg_bj2cf2aQaFLKBpWkaARBNZzII4PGc8qg-vZZdf3Y2xyxR7dsDYL0"
         }
       ]
     }
