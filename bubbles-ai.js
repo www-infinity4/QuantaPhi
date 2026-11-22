@@ -1083,7 +1083,41 @@ const send=create('button','ba-send','Send');send.type='submit';
 // Keep Bubbles' original model and owner tools. A third-party website login is
 // not an authenticated API connection, so do not expose a non-working Claude choice.
 const modelChoice={value:'bubbles'};
-actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
+// Clipboard access requires this owner click, never every keystroke.
+// Browsers cannot enumerate Android clipboard history: read current text only.
+const importClipboardClip=create('button','ba-control','📋 Save copied clip');
+importClipboardClip.type='button';importClipboardClip.hidden=embedded;
+importClipboardClip.setAttribute('aria-label','Save current copied text as a private Bubbles continuity clip');
+importClipboardClip.addEventListener('click',async()=>{
+ if(!keepChat||!longMemory?.enabled){status.textContent='Enable Remember my conversation in Bubbles Options before saving a copied clip.';return;}
+ if(!navigator.clipboard?.readText){status.textContent='Clipboard reading is unavailable here. Paste the clip in the message box instead.';return;}
+ importClipboardClip.disabled=true;
+ try{
+  const copied=await navigator.clipboard.readText();
+  const {prepareClipboardClip}=await import('/bubbles-clipboard-clip.mjs');
+  const checked=prepareClipboardClip(copied);
+  if(!checked.ok){
+   status.textContent=checked.reason==='too_long'?'Clip is longer than 6,000 characters. Use the private history importer for longer exports.':
+    checked.reason==='sensitive'?'This copied text resembles a private key or access token and was not saved.':
+    'No suitable copied text was found. Copy a passage first, then tap Save copied clip.';
+   return;
+  }
+  const preview=checked.text.replace(/\s+/g,' ').slice(0,150);
+  const synced=longMemory.cloudConnected?' It will also sync to your connected private wallet memory.':' It stays in this browser unless private wallet sync is enabled.';
+  if(!window.confirm('Save this current clipboard passage as historical Bubbles context?\n\n'+preview+
+   (checked.text.length>150?'…':'')+'\n\nOlder clips are examples, not new work authorization.'+synced)){
+   status.textContent='Copied clip was not saved.';return;
+  }
+  if(!keepChat||!longMemory.enabled){status.textContent='Bubbles memory was disabled. Clip not saved.';return;}
+  const id='clipboard-'+crypto.randomUUID().replaceAll('-','');
+  const ok=await longMemory.append({id,role:'user',text:checked.text});
+  status.textContent=ok?'Copied clip saved privately. Bubbles can sample it for continuity on future replies.':'Private memory could not save this clip on your device.';
+ }catch(error){
+  status.textContent=error?.name==='NotAllowedError'?'Clipboard permission was not granted. You can paste the clip manually.':
+   'Clipboard clip was not saved: '+String(error?.message||error).slice(0,100);
+ }finally{importClipboardClip.disabled=false;}
+});
+actions.append(photoRow,mic,speak,send);actions.insertBefore(importClipboardClip,mic);composer.append(input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
