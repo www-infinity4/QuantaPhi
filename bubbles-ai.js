@@ -2198,8 +2198,11 @@ async function downloadGoogleHandoff(kind){
  const button=kind==='encrypted'?googleEncryptedDownload:googleGeminiDownload;
  button.disabled=true;
  try{
-  const {buildUserArchive,readVerifiedWalletSearches,sealUserArchive,toGeminiText}=
+  const {buildUserArchive,verifyWalletBinding,readVerifiedWalletSearches,sealUserArchive,toGeminiText}=
    await import('./distributed-vault/google-gemini-handoff.mjs');
+  // Require a fresh match between current wallet bearer and indexed memory
+  // even if the user intentionally downloads chats without search history.
+  await verifyWalletBinding({memory:longMemory,connection:window.QuantaCloudConnection});
   const chats=await longMemory.exportCurrentScope();
   const searches=googleIncludeSearch.checked
    ?await readVerifiedWalletSearches({memory:longMemory,connection:window.QuantaCloudConnection}):[];
