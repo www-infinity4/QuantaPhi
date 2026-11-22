@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T08:31:24.103920Z",
+  "checked_at": "2026-11-22T09:01:24.783567Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "jfk",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
+        "https://ew.com/chilling-words-jfk-told-jackie-day-assassinated-resurfaced-new-book-12253532",
+        "https://closerweekly.com/rob-reiner-penned-prologue-to-new-jfk-book-reflecting-on-assassination-a-week-before-his-own-murder/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPBacsQk7J_xQf5oyfRMx6p1_Ze32DTm5yEtzzO9hAzmH0euCxPZMqbmCn3fk",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/19/who-killed-jfk-rob-reiner",
+          "title": "‘Perhaps we are safer not knowing’: a year after his death, Rob Reiner’s JFK assassination book is revealed",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPBacsQk7J_xQf5oyfRMx6p1_Ze32DTm5yEtzzO9hAzmH0euCxPZMqbmCn3fk"
+        },
+        {
+          "url": "https://ew.com/chilling-words-jfk-told-jackie-day-assassinated-resurfaced-new-book-12253532",
+          "title": "Chilling words JFK told Jackie the day he was assassinated resurfaced in new book",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3vpj2gMhn5XFRzVzWjJwG1j_kmgjJBo8TyB7AXsXy8VMiYIGoQ5fb-UpIpx4"
+        },
+        {
+          "url": "https://closerweekly.com/rob-reiner-penned-prologue-to-new-jfk-book-reflecting-on-assassination-a-week-before-his-own-murder/",
+          "title": "Rob Reiner Penned Prologue to New JFK Book Reflecting on Assassination a Week Before His Own Murder",
+          "publisher": "closerweekly.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCQ30sMP4eGfbKLHcUszhJ4p_c6_rGBJEsYxGNaL9IFHGod_FFDKQ_BghQRdI"
+        }
+      ]
+    },
+    {
+      "query": "nordvpn",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:40:00Z",
+      "related_news_urls": [
+        "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
+        "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
+        "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q",
+      "image_credit": "Gizmodo",
+      "news": [
+        {
+          "url": "https://gizmodo.com/nordvpn-at-2-99-a-month-costs-less-than-your-airport-coffee-this-thanksgiving-2000843196",
+          "title": "NordVPN at $2.99 a Month Costs Less Than Your Airport Coffee This Thanksgiving",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzabNCFGc67jjzxsb5yuWZwcwqRWJjm0UcGckMf2fwZoYIYPMB9ZBFAuAzO4Q"
+        },
+        {
+          "url": "https://gilaherald.com/beyond-vpn-nordvpn-details-its-2026-security-bundles-combining-antivirus-password-management-and-encrypted-storage/",
+          "title": "Beyond VPN: NordVPN Details Its 2026 Security Bundles Combining Antivirus, Password Management and Encrypted Storage",
+          "publisher": "The Gila Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVhCL9S-v7vwcz_pjydDgezblNC7huTyN7p0-MDB567DR9Xnb3_yFB5NtGJTM"
+        },
+        {
+          "url": "https://www.tomsguide.com/computing/vpns/get-nordvpns-best-price-since-last-black-friday-2-years-for-just-usd80",
+          "title": "Get NordVPN's best price since last Black Friday – 2 years for just $80",
+          "publisher": "Tom's Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR0zQr-4tEgkNY_ZIp0GGmuZES9DNPQZdDPcjqTzsV00xVRRfZn2Q_OnQUWSg"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 money glitch",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+        "https://www.vice.com/en/article/gta-6-money-glitch/",
+        "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/19/the-best-ways-to-earn-money-in-gta-6-early-mid-and-late-game/",
+          "title": "The Best Ways To Earn Money In ‘GTA 6,’ Early, Mid- And Late-Game",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOtbG50mXvX09Kh1H2y0FRuG15w5iaeQh2F_FKdT67dVgfkh3DIwqRPL_Gvno"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-money-glitch/",
+          "title": "GTA 6 Money Glitch – How to Get Unlimited Money",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrDEO9o_lqdu8X_GaSVY0uv2qQoY3LNfwI6mznmEmQyCG5mLQcQQbAhUk9xwM"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/gta-6-senior-design-director-160000570.html",
+          "title": "GTA 6 senior design director confirms the ‘tools’ players acquire in the open world through the fence systems can be used again after completing jobs — ‘Even in the cases where we ",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5ekVVynt7yLp9uxv7BzSnr1o66qmiBKKQGV2N6arXOfQ6wkgMtJ8kvVCPUCQ"
+        }
+      ]
+    },
+    {
+      "query": "travel",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T08:20:00Z",
+      "related_news_urls": [
+        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+        "https://www.nytimes.com/2026/11/21/weather/northeast-storm-thanksgiving.html",
+        "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE",
+      "image_credit": "NPR",
+      "news": [
+        {
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+          "title": "Storms expected on both coasts threatens Thanksgiving travel",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/21/weather/northeast-storm-thanksgiving.html",
+          "title": "Back-to-Back Storms Poised to Hit the Northeast Before Thanksgiving",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXRGhtyFuHTAIXeDHxF6ytXlY9xYcrx7vuBB7Xk5mWzl_V0yuiHm9uGT-SNYA"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/thanksgiving-east-west-coastal-storms-travel",
+          "title": "Millions across 20+ states face Thanksgiving travel disruptions as powerful storms take aim at both coasts",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7FS9gmxRBlI3MTmi8HUFtfnlusSQvN1eE8aBEPr15Pt_ZVh3dwn_VkZX6MLU"
+        }
+      ]
+    },
     {
       "query": "skip bayless",
       "approx_searches": "100+",
       "published_at": "2026-11-22T08:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/watch/player/_/id/50541403",
-        "https://uk.sports.yahoo.com/news/why-skip-bayless-t-believe-114500733.html",
-        "https://www.hitc.com/why-skip-bayless-cant-believe-his-own-prediction-for-49ers-vs-vikings/"
+        "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
+        "https://www.profootballnetwork.com/skip-bayless-josh-allen-joe-burrow-qb-debate/",
+        "https://bsinews.id/en/bayless-backs-vikings-beat-49ers"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV8wwfn07Nk_ZPwvsUN11uYRhL4vBVTFUX-06BWN43qKv7f5H1dJb_ncPt_no",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.espn.com/watch/player/_/id/50541403",
-          "title": "Stephen A.'s DISGUSTED to agree with Skip Bayless on this 49ers-Vikings debate",
-          "publisher": "ESPN",
+          "url": "https://sports.yahoo.com/articles/skip-bayless-stunned-josh-allen-133000495.html",
+          "title": "Skip Bayless stunned by what Josh Allen has admitted to doing for the Bills",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV8wwfn07Nk_ZPwvsUN11uYRhL4vBVTFUX-06BWN43qKv7f5H1dJb_ncPt_no"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5CYbbXwjJvfdaEA1ZfnkcbL4W1_zCT75UcoMDlKzafrSqgQ0UamiCcbYKJC8"
         },
         {
-          "url": "https://uk.sports.yahoo.com/news/why-skip-bayless-t-believe-114500733.html",
-          "title": "Why Skip Bayless ‘can’t believe’ his own prediction for 49ers vs Vikings",
-          "publisher": "Yahoo",
+          "url": "https://www.profootballnetwork.com/skip-bayless-josh-allen-joe-burrow-qb-debate/",
+          "title": "‘Just Stop’ ‘He’s the Best Since (Tom) Brady Retired’ — NFL Fans Fire Back at Skip Bayless Over Bizarre Take in Josh Allen-Joe Burrow Debate",
+          "publisher": "Pro Football Network",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjb3bC_J3kN1DtnPMAuHodgMMhDCCzSx4yYWtT8g087J6b412vga451Dp6SPk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2o4vBq3lE18xps1t1d6Ffm4XLmrYO3_IVNxqKepiSsL1v_Ay2SVkkTOXwB_Q"
         },
         {
-          "url": "https://www.hitc.com/why-skip-bayless-cant-believe-his-own-prediction-for-49ers-vs-vikings/",
-          "title": "Why Skip Bayless ‘can’t believe’ his own prediction for 49ers vs Vikings",
-          "publisher": "HITC",
+          "url": "https://bsinews.id/en/bayless-backs-vikings-beat-49ers",
+          "title": "Bayless Backs Vikings to Beat 49ers Despite Cousins Doubts",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQwcZw3euaypUq2akbaGMx-iKToNdjc2QuXILgH8QN2nBKMwA7nhMWGV6jPMA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAoeqOxO6WeWPeTLcBHE4CidNKUaYxrfTYh_liVk3UxpWWSE505fpzsAIjHSc"
         }
       ]
     },
@@ -190,7 +330,7 @@
         "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
         "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgTtAQrasGnZQuP7w-EjSPxD5wtKQj27_Jgnd-8AlnaMmimZ32WDoYewrO20g",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw",
       "image_credit": "Reuters",
       "news": [
         {
@@ -198,7 +338,7 @@
           "title": "NATO will defend every inch of Polish territory, Rutte says",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgTtAQrasGnZQuP7w-EjSPxD5wtKQj27_Jgnd-8AlnaMmimZ32WDoYewrO20g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw"
         },
         {
           "url": "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
@@ -213,146 +353,6 @@
           "publisher": "Al Jazeera",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNevjOI9sEXqTviWrw2YeRSBLvCYpEMqT4FqMGMIF-FBZ2wJHVGj2xomTYLZw"
-        }
-      ]
-    },
-    {
-      "query": "powerball winner",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T07:00:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
-        "https://www.yahoo.com/news/us/articles/powerball-see-winning-numbers-saturday-052244798.html",
-        "https://www.magnoliareporter.com/news_and_business/regional_news/article_e990bc2e-4278-4998-968b-5764f86f659a.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
-          "title": "Powerball winning numbers for Nov. 21: $114M jackpot",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/powerball-see-winning-numbers-saturday-052244798.html",
-          "title": "Powerball: See the winning numbers in Saturday’s $114 million drawing; one ticket in Florida won",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUDc5vHlm7qez_n5cskiaWKh_I6nsF-6STrUXlPX_xXXFOeoUz0PkwW86sIg"
-        },
-        {
-          "url": "https://www.magnoliareporter.com/news_and_business/regional_news/article_e990bc2e-4278-4998-968b-5764f86f659a.html",
-          "title": "Florida ticket wins $114 million Powerball lottery",
-          "publisher": "Magnolia Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKisQXDaKNhgzyuxDm20KSJZE2xOyYvfJRBBp775g1gQPwCCJ13F9YSUKHg"
-        }
-      ]
-    },
-    {
-      "query": "criminal profile gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T06:50:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-        "https://www.psychologytoday.com/us/blog/un-numb/202611/6-signs-grand-theft-auto-vi-is-coming-between-you-and-your-partner",
-        "https://www.foxnews.com/lifestyle/grand-theft-auto-vi-mania-endanger-marriages-relationship-coach-exposes-red-flag"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-          "title": "GTA 6 Criminal Profile: How the system works",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
-        },
-        {
-          "url": "https://www.psychologytoday.com/us/blog/un-numb/202611/6-signs-grand-theft-auto-vi-is-coming-between-you-and-your-partner",
-          "title": "6 Signs Grand Theft Auto VI Is Coming Between You and Your Partner",
-          "publisher": "Psychology Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWOik9viZvkivlPuop9jDz8-6_xcDhfcbnLVN-GmDU_XEA-1h1d74sjvJSE6M"
-        },
-        {
-          "url": "https://www.foxnews.com/lifestyle/grand-theft-auto-vi-mania-endanger-marriages-relationship-coach-exposes-red-flag",
-          "title": "Grand Theft Auto VI mania could endanger marriages as relationship coach exposes red flag",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuHFn6vk6tzlfCJGUkxmSpVyPugcyYYNU97y-fCe-7TXm6E-oMSMEpLQ6ZaG8"
-        }
-      ]
-    },
-    {
-      "query": "vicki gta 6 voice actor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T06:40:00Z",
-      "related_news_urls": [
-        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-        "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk",
-      "image_credit": "escorenews.com",
-      "news": [
-        {
-          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-          "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
-          "title": "‘GTA 6’: Where You Know Vicki Actress Taryn Manning From",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBHLB6ZlfoLRydC95tG2vraGalFvdb6Bxc3RqpUTRklJF1SVvwvNI6JI76a4"
-        }
-      ]
-    },
-    {
-      "query": "robert downey jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T06:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/articles/avengers-doomsday-gives-fans-striking-161008025.html",
-        "https://www.flickeringmyth.com/wwii-ghost-rider-joins-hasbros-marvel-legends-series-with-hellhunters-sgt-sal-romero-figure-motorcycle-set/",
-        "https://www.imdb.com/news/ni66121845/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRycuw4RSp8FTK0Oyv7gjCrMhH0DxKX8UmznuggILJjNVBEBvfo6ByT-Spfko",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/avengers-doomsday-gives-fans-striking-161008025.html",
-          "title": "Avengers: Doomsday Gives Fans Striking New Look at Lord Doom’s Mysterious Design",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRycuw4RSp8FTK0Oyv7gjCrMhH0DxKX8UmznuggILJjNVBEBvfo6ByT-Spfko"
-        },
-        {
-          "url": "https://www.flickeringmyth.com/wwii-ghost-rider-joins-hasbros-marvel-legends-series-with-hellhunters-sgt-sal-romero-figure-motorcycle-set/",
-          "title": "WWII Ghost Rider joins Hasbro's Marvel Legends Series with Hellhunters figure & motorcycle set",
-          "publisher": "Flickering Myth",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTx9laLXY0Wfiw4BHsfORv899uQ109L3aIchaKrowquHJstHQcA93yUcAuVyjw"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66121845/?ref_=ttnw_art_perm",
-          "title": "Hot Toys’ Regal Lord Doom Figure Reveals a Doctor Doom Look Fans May Never See on Screen",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-3w3XX5s06z6HSYdzje37jFy-V5xKUgEgK0nUeNCF4tyTd2H6IXYyALyXm-g"
         }
       ]
     }
