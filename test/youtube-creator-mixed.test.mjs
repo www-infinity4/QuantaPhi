@@ -241,3 +241,6 @@ test('XNXSduqwZ54 has a single original-video media card without unsupported arc
  assert.equal(departmentFor(c),'media');
  assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
 });
+
+// Keep source-specific creator acceptance in the existing focused CI invocation.
+import './vibekesmy-channel-quick-card.test.mjs';
