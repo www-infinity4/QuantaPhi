@@ -1,4 +1,5 @@
 import test from 'node:test';
+import './brain-clock-github-redirect.test.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {DatabaseSync} from 'node:sqlite';
