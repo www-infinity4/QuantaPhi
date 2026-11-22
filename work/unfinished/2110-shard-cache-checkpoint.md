@@ -15,7 +15,7 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/bubbles-google-gemini-user-handoff-2110-20261122
-head_sha_at_checkpoint: "81aa76789ba113097c7290cf017d535a301e6fae"
+head_sha_at_checkpoint: "ce61bc341228ed4d0e8ae3bc14289d7a16aa5926"
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/2117"
 merged: false
 deployed: false
@@ -83,4 +83,6 @@ Next: exact-head source review, source-only guarded merge, Android verification 
 
 ### Account switch and Android cache guard
 
-A dedicated regression now checks a fresh profile read for a **chats-only** export, not just the combined chat/search exporter. Both paths recheck a single currently active wallet bearer against the wallet-scoped Bubbles profile; mismatches abort. Bubbles, QuantaPhi homepage and Chrome Bubbles pages now reference cache-busted Bubbles memory/AI script URLs to avoid stale Android scripts when this patch deploys. As of this checkpoint, no real Android/Google account export has been verified; every background Google transfer remains disabled.
+A dedicated regression now checks a fresh profile read for a **chats-only** export, not just the combined chat/search exporter. Both paths recheck a single currently active wallet bearer against the wallet-scoped Bubbles profile; mismatches abort. A proposed Bubbles asset-version bump was reverted because it violated existing cross-entrypoint version contract tests; a coordinated cache-refresh/browser/Android release remains a separate verification step. No new APK or WebView cache is assumed updated. As of this checkpoint, no real Android/Google account export has been verified; every background Google transfer remains disabled.
+
+- New finding: Android OS Auto Backup offers up to 25 MB per app user at no charge, independent of restricted Drive developer APIs and not connected to Gemini chat memory. Current Bubbles native Android manifest explicitly sets `android:allowBackup=false`. It is intentionally **left unchanged**: no backup rule/verified encrypted app-private directory or real restore test yet. No claim of native Google backup activation.
