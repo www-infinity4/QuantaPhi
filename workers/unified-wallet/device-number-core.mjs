@@ -2,7 +2,7 @@
 // Source-only pilot: no public login route, D1 write, account merge, or
 // permission to scan other phones. Legacy wallet login is intentionally intact.
 const NUMBER=/^\d{39}$/;
-const NONEMPTY=x=>typeof x==='string'&&x.length>0&&x.length<=128;
+const NONEMPTY=x=>typeof x==='string'&&/^[A-Za-z0-9_.:-]{1,128}$/.test(x);
 const text=new TextEncoder();
 function publicP256(jwk){
  return Boolean(jwk&&typeof jwk==='object'&&!Array.isArray(jwk)&&
