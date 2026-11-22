@@ -13,10 +13,10 @@ const token=name=>'Bearer sq_'+name.padEnd(40,'x');
 const idea=i=>'00000000-0000-4000-8000-'+String(i).padStart(12,'0');
 const URL_ROOT='https://infinity-coliseum.marvaseater.workers.dev';
 
-function fixture(t){
+function fixture(t,{migrated=true}={}){
  const db=new DatabaseSync(':memory:');
  db.exec(sql('0001_coliseum.sql'));
- db.exec(sql('0002_perspective_consent.sql'));
+ if(migrated)db.exec(sql('0002_perspective_consent.sql'));
  for(const name of members){
   db.prepare('INSERT INTO coliseum_members(model_id,member_id,joined_at) VALUES(?,?,?)').run('zeus',member(name),'2026-11-22T00:00:00Z');
  }
@@ -118,4 +118,14 @@ test('member login alone does not give a nonreviewer access to others advisory c
  const accepted=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
  assert.equal(accepted.status,200);
  assert.equal(accepted.ready,false);
+});
+
+test('existing beta room ideas still read if new consent migration is not yet installed',async t=>{
+ const {call}=fixture(t,{migrated:false});
+ const list=await call('alice','/v1/ideas?modelId=zeus&sector=Technology');
+ assert.equal(list.status,200,JSON.stringify(list));
+ assert.equal(list.items.length,3);
+ assert.ok(list.items.every(x=>x.perspectiveShared===false),'old ideas do not imply new AI consent');
+ const advisory=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
+ assert.notEqual(advisory.status,200,'missing consent schema must never be interpreted as approval');
 });
