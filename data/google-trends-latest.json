@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T07:31:11.236771Z",
+  "checked_at": "2026-11-22T08:01:20.773050Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "aeropuerto",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T07:40:00Z",
+      "related_news_urls": [
+        "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
+        "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
+        "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/investigan-la-detencion-de-dos-pasajeros-por-hombres-enmascarados-en-un-vuelo-de-alaska-airlines-tmvo13247125"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZSvlLYSNEVz0WWhXBlm7rT5z_mdSinOo_FkMPgZzZf1gZTafL1SkvVhaGRQ",
+      "image_credit": "EL PAÍS",
+      "news": [
+        {
+          "url": "https://elpais.com/us/migracion/2026-11-22/agentes-del-ice-causan-terror-al-detener-a-dos-personas-en-el-embarque-de-un-vuelo-en-seattle.html",
+          "title": "Agentes del ICE causan terror al detener a dos personas en el embarque de un vuelo en Seattle",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMZSvlLYSNEVz0WWhXBlm7rT5z_mdSinOo_FkMPgZzZf1gZTafL1SkvVhaGRQ"
+        },
+        {
+          "url": "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
+          "title": "Agentes de ICE arrestan a dos inmigrantes mexicanos en el aeropuerto de Seattle en una escena \"angustiosa\"",
+          "publisher": "CNN en Español",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3K_jrZj6ZUGryc0cCP8GDcCzh6PPYckkuLRBazkhC-fvOTjZrgv_XF1qOuT8"
+        },
+        {
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo-en-la-noche/inmigracion/video/investigan-la-detencion-de-dos-pasajeros-por-hombres-enmascarados-en-un-vuelo-de-alaska-airlines-tmvo13247125",
+          "title": "Investigan la detención de dos pasajeros por hombres enmascarados en un vuelo de Alaska Airlines",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0AMAy6YIYsqSgd2_qMaPRHU22dsWWxVrG6-zU_KXdveMdc9pYmshhRC_Q9qA"
+        }
+      ]
+    },
+    {
+      "query": "president trump",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T07:20:00Z",
+      "related_news_urls": [
+        "https://thehill.com/homenews/campaign/6234314-trump-maga-split-midterms/",
+        "https://www.nybooks.com/online/2026/11/18/the-struggle-has-begun-midterms-trump/",
+        "https://www.politico.com/news/2026/11/15/tpp-trump-coalition-maga-breaks-01164574"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuOnCClbVX2GtozPjitewx0TM8ZZ1eBdPGP42PcOuQdXWz80XTF9kStq_OIA0",
+      "image_credit": "The Hill",
+      "news": [
+        {
+          "url": "https://thehill.com/homenews/campaign/6234314-trump-maga-split-midterms/",
+          "title": "Trump’s grip on GOP tested as MAGA allies head for exit",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuOnCClbVX2GtozPjitewx0TM8ZZ1eBdPGP42PcOuQdXWz80XTF9kStq_OIA0"
+        },
+        {
+          "url": "https://www.nybooks.com/online/2026/11/18/the-struggle-has-begun-midterms-trump/",
+          "title": "The Struggle Has Begun",
+          "publisher": "The New York Review of Books",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbS7Cq0ThOOrRf8DS6mHCnSXcqKyEdMwsS0aw67hVyza3Z6u1y98Lp8vMln5Y"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/15/tpp-trump-coalition-maga-breaks-01164574",
+          "title": "Poll: Republicans have a MAGA dilemma after their midterm losses",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDvd79izGCqz_UYEXimEvLep2WnYrOuwVH3KeyZhR5mLC6NOF4i4tkArBxkfM"
+        }
+      ]
+    },
+    {
+      "query": "russian missiles poland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T07:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+        "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
+        "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/nato-will-defend-every-inch-polish-territory-rutte-says-2026-11-21/",
+          "title": "NATO will defend every inch of Polish territory, Rutte says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQvk0H_leIJJBv_6nBzRGQ4qO_ZhrGpyrNesP1woUVqsTVRJc8ffJNLFWAVaw"
+        },
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/21/poland-says-russian-missiles-hit-its-territory-trump-calls-it-mistake/",
+          "title": "Poland says Russian missiles hit its territory; Trump calls it a mistake",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShsyEI5GJTJYCH3JikDLNWnLA6gZ05EH1YCotuFVdnaIhDER6vels_X59jii8"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/21/russian-missiles-hit-poland-what-happened-and-could-nato-respond",
+          "title": "Russian missiles hit Poland: What happened, and could NATO respond?",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNevjOI9sEXqTviWrw2YeRSBLvCYpEMqT4FqMGMIF-FBZ2wJHVGj2xomTYLZw"
+        }
+      ]
+    },
     {
       "query": "powerball winner",
       "approx_searches": "100+",
@@ -13,7 +118,7 @@
       "related_news_urls": [
         "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
         "https://www.yahoo.com/news/us/articles/powerball-see-winning-numbers-saturday-052244798.html",
-        "https://www.indystar.com/story/money/lottery/2026/11/21/powerball-numbers-tonight-nov-21-2026-winning-powerball-numbers-last-night-drawing-11-21-26-lottery/92864808007/"
+        "https://www.magnoliareporter.com/news_and_business/regional_news/article_e990bc2e-4278-4998-968b-5764f86f659a.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA",
       "image_credit": "USA Today",
@@ -33,11 +138,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUDc5vHlm7qez_n5cskiaWKh_I6nsF-6STrUXlPX_xXXFOeoUz0PkwW86sIg"
         },
         {
-          "url": "https://www.indystar.com/story/money/lottery/2026/11/21/powerball-numbers-tonight-nov-21-2026-winning-powerball-numbers-last-night-drawing-11-21-26-lottery/92864808007/",
-          "title": "Powerball numbers tonight, Nov. 21? Powerball winning numbers last night",
-          "publisher": "IndyStar",
+          "url": "https://www.magnoliareporter.com/news_and_business/regional_news/article_e990bc2e-4278-4998-968b-5764f86f659a.html",
+          "title": "Florida ticket wins $114 million Powerball lottery",
+          "publisher": "Magnolia Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFfcxyaln5ttq3lmQkvkauwMdYMq4EUl6w1nJLGXkz_Abgw7nti9RJxVEg-4g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOKisQXDaKNhgzyuxDm20KSJZE2xOyYvfJRBBp775g1gQPwCCJ13F9YSUKHg"
         }
       ]
     },
@@ -78,7 +183,7 @@
     },
     {
       "query": "lucia voice actor",
-      "approx_searches": "500+",
+      "approx_searches": "100+",
       "published_at": "2026-11-22T06:50:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/celebrity/article/the-gta-6-cast-has-been-revealed-meet-the-voice-actors-behind-lucia-jason-and-more-155230217.html",
@@ -113,23 +218,16 @@
     },
     {
       "query": "vicki gta 6 voice actor",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-22T06:40:00Z",
       "related_news_urls": [
-        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
         "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
-        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance"
+        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+        "https://beebom.com/gta-6-vicki/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4",
-      "image_credit": "Radio Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBHLB6ZlfoLRydC95tG2vraGalFvdb6Bxc3RqpUTRklJF1SVvwvNI6JI76a4",
+      "image_credit": "Men's Journal",
       "news": [
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
-          "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        },
         {
           "url": "https://www.mensjournal.com/news/gta-6-where-you-know-vicki-actress-taryn-manning-from",
           "title": "‘GTA 6’: Where You Know Vicki Actress Taryn Manning From",
@@ -143,6 +241,13 @@
           "publisher": "escorenews.com",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDR0NrqRJ6mkbxTV5F_SH1L4yCGcQYubHOhq3h1EJJ3KexqjivWWA97ejHXfk"
+        },
+        {
+          "url": "https://beebom.com/gta-6-vicki/",
+          "title": "GTA 6 Vicki – Emo Goth Girl Character, Voice Actor and Romance",
+          "publisher": "Beebom",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5Nmgua_mPTtiRQo9tUIRCFBvSHDPgTf8wkYKSt_8MFp1jV7V0eGnXhKCRU4Y"
         }
       ]
     },
@@ -217,43 +322,8 @@
       ]
     },
     {
-      "query": "gta 6 chapter 2 mission list",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T06:20:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/int-en/gta-6-complete-mission-list",
-        "https://www.polygon.com/gta-6-mission-chapter-list-how-many/",
-        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/int-en/gta-6-complete-mission-list",
-          "title": "GTA 6: A guide to every mission and chapter",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac"
-        },
-        {
-          "url": "https://www.polygon.com/gta-6-mission-chapter-list-how-many/",
-          "title": "All main story missions in GTA 6",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1UzgLoG78Bz2gpqORX2zLaS7HG9lRNtwCZVJXlS-MMOQ_rNtQsaYmPcFA4L8"
-        },
-        {
-          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
-          "title": "How long it takes to play 'GTA 6': Story playthrough and achievements",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
-        }
-      ]
-    },
-    {
       "query": "donnie gta 6",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T06:20:00Z",
       "related_news_urls": [
         "https://www.svg.com/2321148/gta-6-donnie-death-explained/",
@@ -283,76 +353,6 @@
           "publisher": "Demokratis.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSruy5Try7tAMHkvlD-XQSsSgx8X1lxwwK4b-YrMlERRHTnAKSNINilHldpvJI"
-        }
-      ]
-    },
-    {
-      "query": "wsu basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T06:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/",
-        "https://hawaiiathletics.com/news/2026/11/16/mens-basketball-heads-to-pacific-northwest-for-first-road-trip.aspx",
-        "https://www.thesportingtribune.com/2026/11/19/washington-state-holds-off-hawaii"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcispgBkJNBglIx3FfSB1mbfKGFVd7mcxXpoPw1uWYR1EPi393e3tEQplDyY0",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/washington-state/article/washington-state-basketball-and-timely-stops-powers-wsu-to-much-needed-79-63-victory-over-hawaii--292966335/",
-          "title": "Resolve and timely stops powers WSU to much-needed 79-63 victory over Hawaii",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcispgBkJNBglIx3FfSB1mbfKGFVd7mcxXpoPw1uWYR1EPi393e3tEQplDyY0"
-        },
-        {
-          "url": "https://hawaiiathletics.com/news/2026/11/16/mens-basketball-heads-to-pacific-northwest-for-first-road-trip.aspx",
-          "title": "Men's Basketball Heads To Pacific Northwest For First Road Trip",
-          "publisher": "Hawaii athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScacNj8r4t1WS_yPBebVkgxtA6OZOtGo0m2PfLyNeaz18214Rr02LmIfs036U"
-        },
-        {
-          "url": "https://www.thesportingtribune.com/2026/11/19/washington-state-holds-off-hawaii",
-          "title": "Washington State holds off Trujillo, hands Hawai‘i second straight loss",
-          "publisher": "The Sporting Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP_-Cfh-a_Mk6yPnwKoyCk5QAP7S06OF5lnwKvdC45Mr7ZfZHSTIMB8cy35MI"
-        }
-      ]
-    },
-    {
-      "query": "duke vs washington state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T06:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909567",
-        "https://247sports.com/college/duke/article/duke-vs-washington-state-recap-blue-devils-hold-on-78-74-293148809/",
-        "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzTM5VTm4nmcLuiyco2ZJI_Ik1PEccAnTYG3jCaFpW3Z_WtfPGyZfIDc0dh9I",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909567",
-          "title": "Duke 78-74 Washington State (Nov 21, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzTM5VTm4nmcLuiyco2ZJI_Ik1PEccAnTYG3jCaFpW3Z_WtfPGyZfIDc0dh9I"
-        },
-        {
-          "url": "https://247sports.com/college/duke/article/duke-vs-washington-state-recap-blue-devils-hold-on-78-74-293148809/",
-          "title": "Duke’s 19-point lead shrinks to two before Blue Devils hold on",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ13CGyWGHSKmSGWN9L79Qpbfd9ZwF2ItTPHcwwwb6QV3or5zFIR9-l9aOvIRs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-duke-vs-washington-state-025500222.html",
-          "title": "How to watch Duke vs Washington State: Live stream College Basketball, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4sQ6S14WqRMh6Vzx4uJT50C3CwUYokmumIyw0DO03Jf-umNBfK_iBPfCmMzk"
         }
       ]
     }
