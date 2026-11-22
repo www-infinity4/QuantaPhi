@@ -1117,7 +1117,7 @@ importClipboardClip.addEventListener('click',async()=>{
    'Clipboard clip was not saved: '+String(error?.message||error).slice(0,100);
  }finally{importClipboardClip.disabled=false;}
 });
-actions.append(photoRow,importClipboardClip,mic,speak,send);composer.append(input,photoPreview,actions);
+actions.append(photoRow,mic,speak,send);actions.insertBefore(importClipboardClip,mic);composer.append(input,photoPreview,actions);
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';
