@@ -148,7 +148,11 @@ test('AGORA SOU MÃE verified publisher has one dedicated full-channel Public/Me
  assert.equal(channel.name,'AGORA SOU MÃE');
  assert.equal(channel.channelId,'UCjht-pbc_924v1ovsKHZd9Q');
  assert.equal(channel.url,'https://www.youtube.com/@agorasoumae173');
- assert.equal(channel.seed.length,1,'Do not invent uninspected video IDs or an entire history');
+ assert.equal(channel.seed.length,7,'Use only seven source-identified video IDs, not an invented full archive');
+ assert.deepEqual(channel.seed.map(v=>v.videoId),[
+  'XNXSduqwZ54','VnDurY3dysA','5vkwoZXc6Vg','GzTixQ8PVvY','ZqXrplTyGg0','MNcG0UM9t4c','97l1heMfoiE'
+ ]);
+ assert.ok(channel.seed.every(v=>v.sourceUrl==='https://www.youtube.com/watch?v='+v.videoId));
  assert.equal(channel.seed[0].videoId,'XNXSduqwZ54');
  assert.equal(channel.seed[0].sourceUrl,'https://www.youtube.com/watch?v=XNXSduqwZ54');
  assert.equal(channel.seed[0].title,'MAMÃES ASSISTAM ESTE VIDEO');
