@@ -770,7 +770,7 @@ test('BrainClock automatically rescues a blocked Quant AI ticket using pinned te
  const storage=new Map();const readFiles=[];
  globalThis.fetch=async(url,options={})=>{
   const u=String(url);
-  assert.equal(options.redirect,'error');
+  assert.equal(options.redirect,'manual');
   if(u.endsWith('/commits/main'))return Response.json({sha});
   const prefix='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/'+sha+'/';
   assert.ok(u.startsWith(prefix),u);
