@@ -3,47 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T15:01:24.697762Z",
+  "checked_at": "2026-11-22T15:31:18.113298Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "brock bowers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T14:40:00Z",
+      "query": "real sociedad",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T15:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/betting/brock-bowers-injury-update-betting-impact-for-raiders-vs-broncos-in-nfl-week-11-2026",
-        "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/22/brock-bowers-injury-update-status-ankle-week-11/92911880007/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday"
+        "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
+        "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
+        "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn-v8DWVTJKpoXbBc-TvGA3uAmuB5Lgn9nCn4MguVa_ghuYSn65MipKNavjUQ",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1CWArzm4pabIgOg2ANnnBqvNXVN7zScyjg2-MluSRX-FtRyTQjzXF3LRl-uo",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.si.com/betting/brock-bowers-injury-update-betting-impact-for-raiders-vs-broncos-in-nfl-week-11-2026",
-          "title": "Is Brock Bowers Playing Today? (Injury Update, Betting Impact for Raiders vs. Broncos in NFL Week 11)",
+          "url": "https://sports.yahoo.com/articles/racing-santander-real-sociedad-both-141100730.html",
+          "title": "🚨 Racing Santander-Real Sociedad: both sides rotate their starting XIs",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1CWArzm4pabIgOg2ANnnBqvNXVN7zScyjg2-MluSRX-FtRyTQjzXF3LRl-uo"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/racing-real-sociedad-racing-hosts-with-three-players-ruled-fcf0d2",
+          "title": "Racing-Real Sociedad: Racing hosts with three players ruled out",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdtA36GPPSHu1Zyg0eGF-23dDKjfM3Xv5sIPXN-pCIIGsuUQJG8EXRragqFwA"
+        },
+        {
+          "url": "https://www.whoscored.com/articles/CSmhj4JbhkKOQFzSsInNvA/show/cng111-20261122-racing-santander-vs-real-sociedad-prediction-1795332055",
+          "title": "Racing Santander vs Real Sociedad: Lineups, Prediction, Odds & Bet Builder Tip",
+          "publisher": "WhoScored.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpWDp1NRBTf71zgBOb0Z_KD8hxX-Ho0cD86paz5WMmCgyEA0bLOGISmg7Zptc"
+        }
+      ]
+    },
+    {
+      "query": "tom jackson espn",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-22T15:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
+        "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-icon-tom-jackson-dies/73-da8f248b-eb27-431d-825c-077d3a4455e7",
+        "https://www.denverbroncos.com/news/broncos-mourn-the-passing-of-ring-of-fame-lb-tom-jackson"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqDjK0C-VnGSWsrxSUcqGI4vTC-8tIYJX3NnuKVKb9WgZr_Ro9l2qxDgVPLs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50561778/tom-jackson-broncos-star-espn-legend-dies-75",
+          "title": "Tom Jackson, Broncos star LB and Hall of Fame broadcaster at ESPN, dies at 75",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXqDjK0C-VnGSWsrxSUcqGI4vTC-8tIYJX3NnuKVKb9WgZr_Ro9l2qxDgVPLs"
+        },
+        {
+          "url": "https://www.9news.com/article/sports/nfl/denver-broncos/mike-klis/broncos-icon-tom-jackson-dies/73-da8f248b-eb27-431d-825c-077d3a4455e7",
+          "title": "Broncos' icon Tom Jackson dies at 75",
+          "publisher": "9NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTplXE0TPH_jC4tPyULZo9KCPFUjsd0biIfQWKPsSsrcJe7YwT9J1dOId6eLyg"
+        },
+        {
+          "url": "https://www.denverbroncos.com/news/broncos-mourn-the-passing-of-ring-of-fame-lb-tom-jackson",
+          "title": "Broncos mourn the passing of Ring of Fame LB Tom Jackson",
+          "publisher": "Denver Broncos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMHjRhE_wbMSUgEtoaHyCwcgZs-ImQ4fuh5VUGK5-d1gofZ9tT1pc03duyUH8"
+        }
+      ]
+    },
+    {
+      "query": "gene hackman dog adoption",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T15:00:00Z",
+      "related_news_urls": [
+        "https://ew.com/bo-derek-john-corbett-adopted-gene-hackman-dog-after-death-12269646",
+        "https://parade.com/news/the-dog-found-beside-gene-hackman-wife-new-owner-hollywood-a-lister",
+        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bo-derek-and-john-corbett-adopt-gene-hackmans-dog-bear-after-initially-turning-down-request/articleshow/136048727.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeWA6yvMH12GdU7X8VSDfVyipihN-fIJMCijTFYctBRb1TtWtaNAEhKNd10cw",
+      "image_credit": "Entertainment Weekly",
+      "news": [
+        {
+          "url": "https://ew.com/bo-derek-john-corbett-adopted-gene-hackman-dog-after-death-12269646",
+          "title": "Bo Derek and John Corbett adopted Gene Hackman’s dog after his death: ‘Perfect gentleman’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeWA6yvMH12GdU7X8VSDfVyipihN-fIJMCijTFYctBRb1TtWtaNAEhKNd10cw"
+        },
+        {
+          "url": "https://parade.com/news/the-dog-found-beside-gene-hackman-wife-new-owner-hollywood-a-lister",
+          "title": "The Dog Found Beside Gene Hackman’s Wife Has a New Home—and Its New Owner Is a Hollywood A-Lister",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnc_1JpXmF4h8vOzvKb3FL6Xxv2-ATbq-0S4rQHdY_MzuoI4fZMuDQI6225L4"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/bo-derek-and-john-corbett-adopt-gene-hackmans-dog-bear-after-initially-turning-down-request/articleshow/136048727.cms",
+          "title": "Bo Derek and John Corbett adopt Gene Hackman’s dog Bear after initially turning down request",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWmVsT0xYg44JyMRl-pyV917YEc0dssWi-13RsVNMJ1WXCmO5OVogIFi-9ZUU"
+        }
+      ]
+    },
+    {
+      "query": "fcs playoffs",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T14:50:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/football/article/2026-11-21/predicting-every-large-team-2026-fcs-playoffs",
+        "https://www.si.com/college/fcs/big-sky/2026-fcs-football-playoff-bracket-predictions-final-selection-sunday",
+        "https://theanalyst.com/articles/fcs-football-postseason-qualifiers-and-conference-champions"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25i6gfeZP0v8rU5FXzl1fXo38TmU1CTqZZHAnMI3q_XiBtRo5mihmQAMIlJo",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-21/predicting-every-large-team-2026-fcs-playoffs",
+          "title": "Predicting every at-large team for the 2026 FCS playoffs",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25i6gfeZP0v8rU5FXzl1fXo38TmU1CTqZZHAnMI3q_XiBtRo5mihmQAMIlJo"
+        },
+        {
+          "url": "https://www.si.com/college/fcs/big-sky/2026-fcs-football-playoff-bracket-predictions-final-selection-sunday",
+          "title": "2026 FCS Football Playoff Bracket Predictions (Nov. 21)",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn-v8DWVTJKpoXbBc-TvGA3uAmuB5Lgn9nCn4MguVa_ghuYSn65MipKNavjUQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdGCTtAfnxjfXoCqM4A-HxMxtB7Fpz5QqUCSnyeAivzB0KmNXCBmnU-LIfGdU"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/22/brock-bowers-injury-update-status-ankle-week-11/92911880007/",
-          "title": "Is Brock Bowers playing today? Latest on Raiders TE's injury status",
-          "publisher": "USA Today",
+          "url": "https://theanalyst.com/articles/fcs-football-postseason-qualifiers-and-conference-champions",
+          "title": "2026 FCS Football Postseason Qualifiers and Conference Champions",
+          "publisher": "Opta Analyst",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy9bdm-gRaCXu8Bi0rnGor35sZoQ6hy7LcOd9t93l6MUfD5zzxjEGZLyB_K68"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday",
-          "title": "Brock Bowers doesn’t know whether he will play Sunday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQstgGVyxln-RfZrlMiJp0UE61STivoO-t41i4oiXhHM44-46Hg4gNKrMYoOKU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6omNfZolWjuBsuCmxL_Fpe8l4Rm4s2oqPbY79hokzrb3HqOqTU4m99u57Ras"
         }
       ]
     },
     {
       "query": "united states attorney",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-22T14:40:00Z",
       "related_news_urls": [
         "https://www.cbsnews.com/texas/news/u-s-attorney-in-texas-warns-democratic-lawmakers-about-investigating-trump-associates-faces-pushback/",
@@ -77,52 +182,164 @@
       ]
     },
     {
-      "query": "augsburg vs mainz",
+      "query": "brock bowers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T14:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
+        "https://sports.yahoo.com/articles/brock-bowers-playing-today-latest-135410717.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Z8xv6E0SJ2A9rIbwRwUUjwMFNci8dGAjwV42AtM_1KqGCpT6UzPfxnsz0Ps",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
+          "title": "Raiders TE Brock Bowers (ankle, quad) listed as questionable",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8Z8xv6E0SJ2A9rIbwRwUUjwMFNci8dGAjwV42AtM_1KqGCpT6UzPfxnsz0Ps"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/brock-bowers-playing-today-latest-135410717.html",
+          "title": "Is Brock Bowers playing today? Latest on Raiders TE's injury status",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRh6nrxWpq-yGwqAObvp1k1JQ4_zni2EnWsK5UGHhTobxRRklU8r6mM3Rqlno8"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/brock-bowers-doesnt-know-whether-he-will-play-sunday",
+          "title": "Brock Bowers doesn’t know whether he will play Sunday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQstgGVyxln-RfZrlMiJp0UE61STivoO-t41i4oiXhHM44-46Hg4gNKrMYoOKU"
+        }
+      ]
+    },
+    {
+      "query": "kwame onwuachi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T14:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
+        "https://www.yahoo.com/lifestyle/articles/kwame-onwuachis-culinary-journey-145019769.html",
+        "https://demokratis.co.id/en/kwame-onwuachi-dinner-party-essentials"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT33wrDzg9L8mzN_XzqR5D4x_0K7RXUoDEoE-rhvCLwmNqdSdnqucF_CpKA7Zc",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/video/kwame-onwuachis-culinary-journey/",
+          "title": "Kwame Onwuachi's culinary journey",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT33wrDzg9L8mzN_XzqR5D4x_0K7RXUoDEoE-rhvCLwmNqdSdnqucF_CpKA7Zc"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/kwame-onwuachis-culinary-journey-145019769.html",
+          "title": "Kwame Onwuachi's culinary journey",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbRgJyidtsG8q4V-o2etGHwDNRQrNyOEFKeTj44Sc01WeaxTyba3PQ5miNB5U"
+        },
+        {
+          "url": "https://demokratis.co.id/en/kwame-onwuachi-dinner-party-essentials",
+          "title": "Kwame Onwuachi Shares Dinner Party Essentials and Future Plans",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr4EMP5iDgy2Ilanw_R5r3Px-zk7c_Jna_8vlI7XWJ66WVjBaF_VS2O_6CTd0"
+        }
+      ]
+    },
+    {
+      "query": "cbs sunday morning",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T14:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/lifestyle/articles/sunday-morning-2026-food-issue-115006916.html",
+        "https://www.paramountpressexpress.com/cbs-news-and-stations/shows/cbs-news-sunday-morning/releases/?view=113618-cbs-sunday-morning-listings-for-the-special-eat-drink-and-be-merry-food-themed-edition",
+        "https://www.limapagi.id/en/cbs-sunday-morning-food-issue"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqui6cb_Eez2wTF_KQA4QiJy3N28HFAMfRVIw58-jzgTnXlZYdZyS85dsMixU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/sunday-morning-2026-food-issue-115006916.html",
+          "title": "\"Sunday Morning\" 2026 \"Food Issue\" recipe index",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqui6cb_Eez2wTF_KQA4QiJy3N28HFAMfRVIw58-jzgTnXlZYdZyS85dsMixU"
+        },
+        {
+          "url": "https://www.paramountpressexpress.com/cbs-news-and-stations/shows/cbs-news-sunday-morning/releases/?view=113618-cbs-sunday-morning-listings-for-the-special-eat-drink-and-be-merry-food-themed-edition",
+          "title": "“CBS SUNDAY MORNING” LISTINGS FOR THE SPECIAL “EAT, DRINK AND BE MERRY” FOOD-THEMED EDITION",
+          "publisher": "Paramount Press Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv4nSmIGlGvPn1tJV8Gw8nXERnqNuRjudZ14Fr1j4Jjg6uzZNUyDwQr7p3aYo"
+        },
+        {
+          "url": "https://www.limapagi.id/en/cbs-sunday-morning-food-issue",
+          "title": "CBS Sunday Morning Explores Food Costs and Culinary Traditions",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSr31Zz7jrmihr6WOMu9BIHBKf0TYpE28IC9szaHcebpGPiNS-cfB3tpPunkIo"
+        }
+      ]
+    },
+    {
+      "query": "paris fc vs angers",
       "approx_searches": "200+",
       "published_at": "2026-11-22T14:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cwkgmrrdpzzmt",
-        "https://www.tufutbolero.com/en/news/augsburg-mainz-preview-augsburg-arrive-with-five-absentees-fcccf3",
-        "https://www.whoscored.com/articles/76EV5VgUbEabgIS_hOmiqA/show/cng111-20261122-augsburg-vs-mainz-prediction-1795329263"
+        "https://www.lequipe.fr/Football/match-direct/ligue-1/2026-2027/paris-fc-angers-live/690355",
+        "https://www.footmercato.net/a6006597621758667720-angers-sco-17-ans-lyceen-international-tricolore-et-deja-titulaire-face-a-lom-jusquou-peut-aller-mael-gernigon",
+        "https://www.ouest-france.fr/sport/football/angers-sco/zinga-blesse-un-jeune-gardien-de-17-ans-integre-le-groupe-dangers-sco-pour-le-deplacement-au-paris-fc-34419de8-e65c-11f1-afa7-9a0bb82a33d1"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlMEq0xIhprXFFqp1jTVgb_TU7QFwYhlpFkeNih2ZGkrJnpLnf0i7sT2JwVk",
+      "image_credit": "L'Équipe",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cwkgmrrdpzzmt",
-          "title": "Augsburg vs Mainz 05: German Bundesliga stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.lequipe.fr/Football/match-direct/ligue-1/2026-2027/paris-fc-angers-live/690355",
+          "title": "DIRECT. Paris FC - Angers, Ligue 1 : But de Koleosho !",
+          "publisher": "L'Équipe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUlMEq0xIhprXFFqp1jTVgb_TU7QFwYhlpFkeNih2ZGkrJnpLnf0i7sT2JwVk"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/augsburg-mainz-preview-augsburg-arrive-with-five-absentees-fcccf3",
-          "title": "Augsburg-Mainz preview: Augsburg arrive with five absentees",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.footmercato.net/a6006597621758667720-angers-sco-17-ans-lyceen-international-tricolore-et-deja-titulaire-face-a-lom-jusquou-peut-aller-mael-gernigon",
+          "title": "Angers SCO : 17 ans, lycéen, international tricolore et déjà titulaire face à l’OM… jusqu’où peut aller Mael Gernigon ?",
+          "publisher": "Foot Mercato",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQM1l_bsUVffqgTW4AbvWNqjfNwR5exvXfN-0CHLx0kpISnBS7W0HZ6hsw_GZg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSit61eAwH-sZNAK9gAp9axW10nQPn59g5q297pn8l9V4pNvnplWrCdaAiuppw"
         },
         {
-          "url": "https://www.whoscored.com/articles/76EV5VgUbEabgIS_hOmiqA/show/cng111-20261122-augsburg-vs-mainz-prediction-1795329263",
-          "title": "Augsburg vs Mainz: Lineups, Prediction, Odds & Bet Builder Tip",
-          "publisher": "WhoScored.com",
+          "url": "https://www.ouest-france.fr/sport/football/angers-sco/zinga-blesse-un-jeune-gardien-de-17-ans-integre-le-groupe-dangers-sco-pour-le-deplacement-au-paris-fc-34419de8-e65c-11f1-afa7-9a0bb82a33d1",
+          "title": "Zinga blessé, un jeune gardien de 17 ans intègre le groupe d’Angers-SCO pour le déplacement au Paris FC",
+          "publisher": "Ouest-France",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-k-XX5sCZuQxVgKQTok4vEO-IM1J1n1ek-JqiRuy9x8OsaC4sObK0wj-LKqg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSouix_E45z1OIinfdA0SuQ7_efTBOh0Cg0AYwt0-9tMbb37BWaWh6YCzPUTCY"
         }
       ]
     },
     {
       "query": "racing santander vs real sociedad",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-22T14:30:00Z",
       "related_news_urls": [
+        "https://www.noticiasdegipuzkoa.eus/reala/2026/11/22/directo-racing-real-sarr-oyarzabal-11783784.html",
         "https://www.naiz.eus/info/noticia/20261121/una-real-mermada-visita-santander-con-la-idea-de-mantener-intactas-sus-opciones-europeas",
-        "https://as.com/futbol/primera/racing-real-sociedad-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
-        "https://www.teleprensa.com/deportes/previa-real-sociedad-busca-sacar-redito-derbi-sevillano-visita-sardinero/202611212002152564139.html"
+        "https://www.eldiariomontanes.es/deportes/racing/minuto-minuto-encuentro-20261122161335-di.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1AutPM_wsFi8YNxQz2Hc39gjJvdR_tJ36Y46OGod-XCrr7_B5d2bNg6lgewE",
-      "image_credit": "naiz:",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmu9ftMR2PkZz5Mf3UM-dIcj_8iuzELU_6PHcS4zMF4PYyeqf6RNjbx5wPk4",
+      "image_credit": "Noticias de Gipuzkoa",
       "news": [
+        {
+          "url": "https://www.noticiasdegipuzkoa.eus/reala/2026/11/22/directo-racing-real-sarr-oyarzabal-11783784.html",
+          "title": "Directo Racing-Real | Sarr y Oyarzabal vuelven al once",
+          "publisher": "Noticias de Gipuzkoa",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBmu9ftMR2PkZz5Mf3UM-dIcj_8iuzELU_6PHcS4zMF4PYyeqf6RNjbx5wPk4"
+        },
         {
           "url": "https://www.naiz.eus/info/noticia/20261121/una-real-mermada-visita-santander-con-la-idea-de-mantener-intactas-sus-opciones-europeas",
           "title": "Una Real mermada visita Santander con la idea de mantener intactas sus opciones europeas",
@@ -131,228 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1AutPM_wsFi8YNxQz2Hc39gjJvdR_tJ36Y46OGod-XCrr7_B5d2bNg6lgewE"
         },
         {
-          "url": "https://as.com/futbol/primera/racing-real-sociedad-en-directo-laliga-ea-sports-hoy-en-vivo-f202611-d/",
-          "title": "Racing - Real Sociedad, en directo: LaLiga EA Sports, hoy en vivo",
-          "publisher": "Diario AS",
+          "url": "https://www.eldiariomontanes.es/deportes/racing/minuto-minuto-encuentro-20261122161335-di.html",
+          "title": "Minuto a minuto del encuentro",
+          "publisher": "El Diario Montañés",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFKbTL6EAqbzjC6fvl8F2_WJdSy5N5femINqbJU4vQAw6T_KVnJV0g0KqDc3k"
-        },
-        {
-          "url": "https://www.teleprensa.com/deportes/previa-real-sociedad-busca-sacar-redito-derbi-sevillano-visita-sardinero/202611212002152564139.html",
-          "title": "(Previa) La Real Sociedad busca sacar rédito del derbi sevillano en su visita a El Sardinero",
-          "publisher": "Teleprensa",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGH9N1Hwfr2om9A2jrWGKGpP5BfRJ6vc0IWTkB-JcFuzpSUOWiYDkM1X8Jq98"
-        }
-      ]
-    },
-    {
-      "query": "peggy flanagan",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T14:30:00Z",
-      "related_news_urls": [
-        "https://www.ms.now/morning-joe/watch/sens-elect-flanagan-stratton-on-delivering-for-voters-2521334339896",
-        "https://sahanjournal.com/democracy-politics/peggy-flanagan-senate-win-minnesota-tribes-react/",
-        "https://www.huffpost.com/entry/peggy-flanagan-first-native-american-woman-elected-to-senate_n_6af722e7e4b0476a159b3751"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqCv74yyiJwsI74VbYqiVJGR-2FUyA4bhzvmSk5f7hemYdron1DenUac4_4fM",
-      "image_credit": "MS NOW",
-      "news": [
-        {
-          "url": "https://www.ms.now/morning-joe/watch/sens-elect-flanagan-stratton-on-delivering-for-voters-2521334339896",
-          "title": "Sens.-Elect Flanagan, Stratton on DELIVERING for voters",
-          "publisher": "MS NOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqCv74yyiJwsI74VbYqiVJGR-2FUyA4bhzvmSk5f7hemYdron1DenUac4_4fM"
-        },
-        {
-          "url": "https://sahanjournal.com/democracy-politics/peggy-flanagan-senate-win-minnesota-tribes-react/",
-          "title": "‘Change is coming’: On Minnesota reservations, Peggy Flanagan’s Senate win inspires pride, hope",
-          "publisher": "Sahan Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlDDqeeJcOHI2XL1SW8I5X4Td_0BB0HHk-15bhZTbbkowvyEhuwd2u5yrcnzk"
-        },
-        {
-          "url": "https://www.huffpost.com/entry/peggy-flanagan-first-native-american-woman-elected-to-senate_n_6af722e7e4b0476a159b3751",
-          "title": "In Conversation With Peggy Flanagan, The First Native Woman Elected To The Senate",
-          "publisher": "HuffPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBanhDNsMqJtFPo_lt8xx1KETJTJ0Cm-TWb9UwrYZp4mBz0GE9L8WpOLM95VQ"
-        }
-      ]
-    },
-    {
-      "query": "paris fc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T14:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cvlyjnn6p7rkt",
-        "https://mrfixitstips.co.uk/sunday-ligue-1-predictions-22-11-2026/",
-        "https://parisfc.fr/en/pro-mens-team/paris-fc-vs-angers-matchday-11-practical-information-and-schedule/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cvlyjnn6p7rkt",
-          "title": "Paris FC vs Angers: French Ligue 1 stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
-        },
-        {
-          "url": "https://mrfixitstips.co.uk/sunday-ligue-1-predictions-22-11-2026/",
-          "title": "Sunday’s Ligue 1 betting tips: Expert predictions from France’s top flight",
-          "publisher": "MrFixitsTips",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0e20H5PLMTQ5OgwqgCbXUw9s5CqFf70cwXYeN7RzAaorMvmBq2q6KFAjZxsg"
-        },
-        {
-          "url": "https://parisfc.fr/en/pro-mens-team/paris-fc-vs-angers-matchday-11-practical-information-and-schedule/",
-          "title": "Paris FC vs. Angers (Matchday 11): Practical Information and Schedule",
-          "publisher": "Paris FC - Site officiel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ6YjUbHt0hU9nB047ICEAOTu3MwLLR7MO4cd74W-m4PDbNTscK32gEf8hYyk"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving football games",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T14:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/sports/football/the-nfl-is-out-to-stuff-your-tvs-this-thanksgiving-eeff85f0",
-        "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
-        "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRZZu7FvHgW--7ZJ--Nm1soeUmNZ2GaSQ7E_ULmraESo-7A_w9k8iWdCVNxeA",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/sports/football/the-nfl-is-out-to-stuff-your-tvs-this-thanksgiving-eeff85f0",
-          "title": "The NFL Is Out to Stuff Your TVs This Thanksgiving",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRZZu7FvHgW--7ZJ--Nm1soeUmNZ2GaSQ7E_ULmraESo-7A_w9k8iWdCVNxeA"
-        },
-        {
-          "url": "https://www.washingtonpost.com/opinions/2026/11/19/nfl-wants-own-thanksgiving-christmas-new-year-eve/",
-          "title": "Opinion | The NFL ate Thanksgiving. Christmas and New Year’s could be next.",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotaYmh3MtAy-7fvIeLdQeVunR_aK7kA60yskfCpOpDZHg2oaaGW-ZGNQkimY"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/19/opinion/nfl-thanksgiving-games-peter-king/",
-          "title": "Opinion | How the NFL captured Thanksgiving",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQESMsXXaVXoqlNWit9nQCHUTd_VxAS4_5haZiRAPmEMPyIhwOex8Z8F00vZGM"
-        }
-      ]
-    },
-    {
-      "query": "barcelona x villarreal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T14:30:00Z",
-      "related_news_urls": [
-        "https://www.tufutbolero.com/pt/noticias/barca-de-jong-de-zagueiro-e-adeyemi-na-frente-contra-o-140d9f",
-        "https://www.goal.com/br/not%C3%ADcias/surpresa-no-ataque-na-escalacao-do-barcelona-para-o-jogo-contra-o-villarreal/blt18022cc19c7e41a6",
-        "https://www.vietnam.vn/pt/nhan-dinh-bong-da-barca-vs-villarreal-goi-ten-lamine-yamal"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOyNg0ozbHqbNM9QwE4LLWqR4zeo-AzOHsQx4UO6PABkQoNTeYD9dwnq2FYQ",
-      "image_credit": "Tu Futbolero",
-      "news": [
-        {
-          "url": "https://www.tufutbolero.com/pt/noticias/barca-de-jong-de-zagueiro-e-adeyemi-na-frente-contra-o-140d9f",
-          "title": "Barça: De Jong de zagueiro e Adeyemi na frente contra o Villarreal",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOyNg0ozbHqbNM9QwE4LLWqR4zeo-AzOHsQx4UO6PABkQoNTeYD9dwnq2FYQ"
-        },
-        {
-          "url": "https://www.goal.com/br/not%C3%ADcias/surpresa-no-ataque-na-escalacao-do-barcelona-para-o-jogo-contra-o-villarreal/blt18022cc19c7e41a6",
-          "title": "Surpresa no ataque na escalação do Barcelona para o jogo contra o Villarreal",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRovALzbmcgM32hGWLWLumPf_7hvfbSqfhjWyfTGz3PIkHZ5lCv4sH8gh8HJVs"
-        },
-        {
-          "url": "https://www.vietnam.vn/pt/nhan-dinh-bong-da-barca-vs-villarreal-goi-ten-lamine-yamal",
-          "title": "Palpite para Barcelona x Villarreal: Lamine Yamal será escalado",
-          "publisher": "Vietnam.vn",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1NHkmKmmgGoktNRKj82Y418UUDqQT9BJ_cLiupTup04JisN2bc9QwSHh2SbE"
-        }
-      ]
-    },
-    {
-      "query": "winning powerball numbers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T14:20:00Z",
-      "related_news_urls": [
-        "https://www.wkyc.com/article/news/lottery/powerball-winner-hits-jackpot-114-million-where-lucky-lottery-ticket-was-sold-the-winning-numbers-nov-21-drawing-ohio-lottery-results/95-995b1968-e79f-4d4c-88b8-063d0645a632",
-        "https://www.freep.com/story/news/lottery/2026/11/21/powerball-numbers-saturday-november-21-2026-results/92662492007/",
-        "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQF-BY4XE7bj5x7nuCJgzWIQduoQMaHfUOv2WheYjijZDHNZGVIJ61t0OOA4",
-      "image_credit": "WKYC",
-      "news": [
-        {
-          "url": "https://www.wkyc.com/article/news/lottery/powerball-winner-hits-jackpot-114-million-where-lucky-lottery-ticket-was-sold-the-winning-numbers-nov-21-drawing-ohio-lottery-results/95-995b1968-e79f-4d4c-88b8-063d0645a632",
-          "title": "Powerball winner hits jackpot worth $114 million: See where the lucky lottery ticket was sold and check the winning numbers for the Nov. 21 drawing",
-          "publisher": "WKYC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXQF-BY4XE7bj5x7nuCJgzWIQduoQMaHfUOv2WheYjijZDHNZGVIJ61t0OOA4"
-        },
-        {
-          "url": "https://www.freep.com/story/news/lottery/2026/11/21/powerball-numbers-saturday-november-21-2026-results/92662492007/",
-          "title": "Powerball numbers for Saturday, Nov. 21: Florida ticket wins jackpot",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsqPPpabSxlTtMMR_P8BjtPOdlK2mZsN7e3qrJXyWTGa9YbVf3nYBmYKh2t7Q"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/lottery/2026/11/21/powerball-winning-numbers-november-21-2026/92884986007/",
-          "title": "Powerball winning numbers for Nov. 21: $114M jackpot",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJw15wOSYYH3IKSl4jXhwsu-luPL2iUtjnVz9FY9_nEUDLAS5Bo_sX3wU9JQA"
-        }
-      ]
-    },
-    {
-      "query": "motogp",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T14:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/racing/story/_/id/50557365/marquez-8th-motogp-world-championship",
-        "https://www.motogp.com/en/news/2026/11/22/new-to-motogp-meet-marc-marquez-the-2026-world-champion/1184718",
-        "https://www.reuters.com/sports/marquez-wins-eighth-motogp-title-portugal-2026-11-22/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTv5JDXYwpRsFn4pu0WP3g42NbPGoqFCDydd38uGEuWuKxIOvt6hCv2KUr6mw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/racing/story/_/id/50557365/marquez-8th-motogp-world-championship",
-          "title": "Marc Márquez's record-equaling 8th MotoGP title is his most impressive yet",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTv5JDXYwpRsFn4pu0WP3g42NbPGoqFCDydd38uGEuWuKxIOvt6hCv2KUr6mw"
-        },
-        {
-          "url": "https://www.motogp.com/en/news/2026/11/22/new-to-motogp-meet-marc-marquez-the-2026-world-champion/1184718",
-          "title": "New to MotoGP? Meet Marc Marquez, the 2026 World Champion",
-          "publisher": "motogp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKhLB-8OvTMeOODcm0tFqkexJJQUGu3OIipxsCzbkV28cPAHCH_pdvPx56CBY"
-        },
-        {
-          "url": "https://www.reuters.com/sports/marquez-wins-eighth-motogp-title-portugal-2026-11-22/",
-          "title": "MotoGP maestro Marquez wins record eighth premier class title in Portugal",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpT45hs-OT9QQmVdceSLQc-9ta1n8WdJ2mydfZJ9UcLrrkZLPVjmlmxzshYSE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPlVj6E2KViQzGNyGiR9hk1X5-z07p2OwErv833rY4ZRVKzKf8Ekp_VYqcaxE"
         }
       ]
     }
