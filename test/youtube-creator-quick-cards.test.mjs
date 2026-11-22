@@ -347,3 +347,31 @@ test('owner yMLadAyHNFo is exactly one source-only Public/Media Quick Card in Vi
  assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
  assert.match(mixed,/Load more videos/);
 });
+
+test('owner tjIEETH5Wqg URL yields exactly one honest Oracle Public/Media Quick Card and View More source',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='tjIEETH5Wqg',watch='https://www.youtube.com/watch?v='+id;
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'Deduplicated owner source must exist');
+ const v=rows[0];
+ assert.equal(v.sourceUrl,watch);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.title,'YouTube video tjIEETH5Wqg (title unverified)');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'One existing Oracle video card per video');
+ const c=cards[0];
+ assert.equal(c.sourceUrl,watch);
+ assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
+ assert.equal(findSourceCard(c.id)?.id,c.id);
+ assert.ok(ACTIVE_SOURCE_CARDS.some(x=>x.id===c.id));
+ assert.ok(ALL_FEED_CARDS.some(x=>x.id===c.id));
+ assert.equal(departmentFor(c),'media');
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/,'Use existing owner View More feed');
+});
