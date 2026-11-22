@@ -353,3 +353,15 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **Status:** source staged / draft PR, approximately 3 of 6 scoped checkpoints (source URL, catalog record, regression authored); focused CI, reviewed merge, live Cloudflare/Android verification still required. 1 documented session; remaining 1–2 sessions estimated, subject to CI and deployment.
 - **Lease:** no signed Moltnook owner lease claimed in this connector session; do not present the GitHub connector write as a runner/brain receipt.
 - **Next action:** inspect PR #2083 exact-head Creator post Quick Cards workflow, fix failure if any, independently review source and metadata boundary, then guarded merge and Cloudflare/Android readback. Keep #1603 open for all other unfinished media work.
+
+
+## Session · 2026-11-22 — two owner-submitted Shorts, source-only media intake
+
+- **Owner URLs:** https://youtube.com/shorts/xzwUgLLH_nE?is=0ZwVvVvUTKpW2pak and https://youtube.com/shorts/NMlQGgvzEkQ?is=cSoqCKG1kTnIEEGX
+- **Canonical issue:** #1603; use the existing Oracle Public/Media card family rather than duplicate the carousel or publisher-feed service.
+- **Branch:** `feat/owner-short-xzwUgLLH-nE-1603-20261122`, from `main`. Two unique IDs in `youtube-owner-video-links.mjs`; associated regression assertions in `test/youtube-creator-quick-cards.test.mjs`.
+- **Source evidence:** owner-provided Shorts URLs and syntactically valid 11-character IDs. The public YouTube page returned no usable title, uploader, published date or rights evidence during this session. Use unverified source-only labels; no channel archive, age rating, payment, advertising or media copy.
+- **Checks designed:** exactly one public Media source card per ID, nonfabricated metadata, original links/thumbnails, feed inclusion and existing View More integration. Source import itself does not prove a passing runtime test or embed availability.
+- **Observed state:** source patch committed; exact-head CI, independent review, permitted merge, deployment, in-browser playback and Android acceptance still pending.
+- **Progress:** 2/2 catalog source IDs added, 0/2 live Quick Card acceptances verified. Session count for this intake: 1 documented; remaining source review and release receipts unknown.
+- **Next executable action:** run and inspect PR exact-head CI for both card records, review regression with existing source catalog, then guarded merge and mobile/browser readback.
