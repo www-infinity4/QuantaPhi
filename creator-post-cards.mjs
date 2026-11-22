@@ -17,6 +17,42 @@ function loadXWidget(){
  }).catch(error=>{widgetPromise=null;throw error;});
  return widgetPromise;
 }
+/* Generic, source-attributed single X post; use the same opted-in provider
+ * widget as the reviewed creator database rather than copying X media. */
+export function mountReviewedSingleXPost(root,card){
+ if(!root||!card||!/^\d{15,22}$/.test(card.xOriginalPostId||'')||
+    !/^[A-Za-z0-9_]{1,15}$/.test(card.xOriginalHandle||'')||
+    card.featureUrl!=='https://x.com/'+card.xOriginalHandle+'/status/'+card.xOriginalPostId||
+    card.official!=='https://x.com/'+card.xOriginalHandle)return false;
+ const panel=el('section','qcx-tool reviewed-x-post-card');
+ panel.setAttribute('aria-label','Original X post from @'+card.xOriginalHandle);
+ const heading=el('h3','','Original X post · '+card.name);
+ const attribution=el('p','qcx-note','Source: @'+card.xOriginalHandle+' · independent summary, not a complete archive');
+ const published=el('time','creator-post-date',new Date(card.publishedAt).toLocaleString());
+ published.dateTime=card.publishedAt;
+ const summary=el('p','creator-post-summary',card.details);
+ const status=el('p','qcx-note','To view the original media, select Load original X post. X may require sign-in or restrict embeds.');
+ status.setAttribute('role','status');
+ const embed=el('div','creator-post-embed');
+ const actions=el('div','qcx-controls');
+ actions.append(link('Read original X post',card.featureUrl),link('Visit original X profile',card.official));
+ const load=button('Load original X post',async()=>{
+  load.disabled=true;load.textContent='Loading original…';
+  try{
+   const widget=await loadXWidget();
+   const result=await widget.createTweet(card.xOriginalPostId,embed,{conversation:'none',dnt:true,theme:'light'});
+   load.textContent=result?'Original loaded':'Retry original X post';load.disabled=Boolean(result);
+   if(!result)status.textContent='X did not return an embed. The original source link is available.';
+  }catch{
+   load.disabled=false;load.textContent='Retry original X post';
+   status.textContent='X embed unavailable. Open the original post on X instead.';
+  }
+ });
+ actions.append(load);
+ panel.append(heading,attribution,published,summary,actions,status,embed);
+ root.append(panel);return true;
+}
+
 export function mountCreatorPostCard(root,card){
  if(card?.creatorId!==CREATOR_DATABASE.creator.id)return false;
  const creator=CREATOR_DATABASE.creator;

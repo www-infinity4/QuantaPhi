@@ -44,6 +44,16 @@ export const QUICK_CARD_SOURCES=Object.freeze([
  source('starmaker','StarMaker','Karaoke','Find a song and sing karaoke','https://www.starmakerstudios.com/en/songs','https://www.starmakerstudios.com/en/songs','Help with song selection, harmonies and vocal practice; recording needs explicit microphone permission and a real licensed backing track.','Open official StarMaker karaoke. QuantaPhi must not copy paid backing tracks, lyrics or recordings without rights.',{secondUrl:'https://play.google.com/store/apps/details?id=com.starmakerinteractive.starmaker',secondLabel:'Open StarMaker on Android'}),
  ...MOTORCYCLE_SOURCES
 ]);
+/* Verified original public X post: source metadata and independent synopsis only.
+ * X owns the original image/media and optional embeds; no account integration. */
+export const CRYPTOCYBERIA_X_SOURCE=Object.freeze(source(
+ 'cryptocyberia-japanese-keyboards','Vintage Japanese keyboards · CryptoCyberia',
+ 'Technology · Computing history','Vintage Japanese keyboards: kana, kanji and IME',
+ 'https://x.com/CryptoCyberia','https://x.com/CryptoCyberia/status/2123913224965988533',
+ 'Discuss the historical Japanese keyboard hardware and phonetic kana-to-kanji input methods, with original source attribution and explicit independent summary.',
+ 'Independent source description: Lain on the Blockchain (@CryptoCyberia) discusses unusual vintage Japanese keyboards, kana input, kanji selection and modern IME. Original X post published 2026-11-20; media and embeds remain under X permissions, not copied or licensed for QuantaPhi.',
+ {xOriginalPostId:'2123913224965988533',xOriginalHandle:'CryptoCyberia',publishedAt:'2026-11-20T22:55:47.000Z',checkedAt:'2026-11-21'}
+));
 // Carry one source-backed technology research card into the ACTIVE Oracle
 // source bank; the archived discovery feed is NOT a visible homepage carousel.
 // The source adapter reuses the same verified original catalog record and tools.
@@ -55,6 +65,7 @@ export const ACTIVE_SOURCE_CARDS=Object.freeze([
  ...JULIE_DERU_SOURCES,
  CREATOR_MIX_SOURCE,
  LANDING_AUTISM_SOURCE,
+ CRYPTOCYBERIA_X_SOURCE,
  ...REVIEWED_OWNER_VIDEO_CARDS,
  FAMILY_TV_SOURCE,
  MILK_MAMAS_SOURCE,
@@ -74,6 +85,7 @@ export const PUBLIC_SOURCE_IDS=Object.freeze([
  ...JULIE_DERU_SOURCES.map(c=>c.id),
  CREATOR_MIX_SOURCE.id,
  LANDING_AUTISM_SOURCE.id,
+ CRYPTOCYBERIA_X_SOURCE.id,
  ...REVIEWED_OWNER_VIDEO_CARDS.map(c=>c.id),
  FAMILY_TV_SOURCE.id,
  MILK_MAMAS_SOURCE.id

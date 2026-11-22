@@ -108,6 +108,26 @@ def run():
                 expect(chooser.locator('option[value="source-'+POST+'"]')).to_have_count(0)
                 checks.append(f'{width}px: six original carousel cards, business placement and strict Following')
 
+                # CryptoCyberia: original X post is source-linked, not auto-embedded.
+                before_widgets=len(widget_requests)
+                page.goto(base+'/source-quick-card.html?card=cryptocyberia-japanese-keyboards',wait_until='domcontentloaded')
+                vintage=page.locator('.reviewed-x-post-card')
+                expect(vintage).to_be_visible()
+                expect(vintage).to_contain_text('Vintage Japanese keyboards')
+                expect(vintage).to_contain_text('kana')
+                expect(vintage.get_by_role('link',name='Read original X post')).to_have_attribute(
+                    'href','https://x.com/CryptoCyberia/status/2123913224965988533')
+                assert vintage.locator('[data-mock-x-post]').count()==0, 'No auto-embed on original card'
+                assert len(widget_requests)==before_widgets, 'No X widgets should be requested before consent'
+                vintage.get_by_role('button',name='Load original X post').click()
+                expect(vintage.locator('[data-mock-x-post]')).to_have_count(1)
+                assert len(widget_requests)==before_widgets+1, 'Widget requires one explicit click'
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), 'X technology card overflow'
+                page.goto(base+'/?card=cryptocyberia-japanese-keyboards',wait_until='domcontentloaded')
+                expect(page.locator('#oracleCardStage [data-source-id="cryptocyberia-japanese-keyboards"] .reviewed-x-post-card')).to_be_visible(timeout=20000)
+                assert page.locator('#oracleCardChooser option[value="source-cryptocyberia-japanese-keyboards"]').count()==1
+                checks.append(f'{width}px: Japanese keyboard X card, source attribution, on-demand embed and Oracle placement')
+
                 # AbbeCAdventures: source data, native card search and consented
                 # YouTube iframe only after a human Play click (not playback rights).
                 page.goto(base+'/source-quick-card.html?card=abbecadventures-youtube', wait_until='domcontentloaded')

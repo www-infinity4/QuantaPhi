@@ -9,7 +9,7 @@ import {mountMarketplaceCarousel} from './quanta-marketplace-carousel.mjs?v=2026
 import {mountStarMakerQuickCard} from './starmaker-quick-card.mjs';
 import {mountMotorcycleQuickCard} from './motorcycle-quick-cards.mjs';
 import {mountKaraokeLab} from './quanta-karaoke-lab.mjs';
-import {mountCreatorPostCard} from './creator-post-cards.mjs';
+import {mountCreatorPostCard,mountReviewedSingleXPost} from './creator-post-cards.mjs';
 import {mountYouTubeCreatorCard} from './youtube-creator-cards.mjs';
 import {mountMixedCreatorCard} from './youtube-creator-mixed-card.mjs';
 import {mountFamilyParentingTvCard} from './family-parenting-tv-card.mjs';
@@ -438,6 +438,9 @@ export function mountCardTools(root,card){
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(mountCreatorPostCard(root,card)){
+  mountCardActions(root,card,{showSearch:false});return;
+ }
+ if(mountReviewedSingleXPost(root,card)){
   mountCardActions(root,card,{showSearch:false});return;
  }
  if(id==='pcla-picocela'){
