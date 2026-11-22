@@ -244,3 +244,27 @@ test('owner 4EUkH6CzTUA has exactly one source-only Oracle Public/Media Quick Ca
  assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/);
  assert.match(mixed,/Load more videos/);
 });
+
+test('owner screenshot The Shires Daddy\'s Little Girl has one source-backed public media Quick Card',async()=>{
+ const {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink}=await import('../youtube-owner-video-links.mjs');
+ const id='rMNS9oNCL3s';
+ const sources=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(sources.length,1,'Exactly one original video link should be indexed');
+ const v=sources[0];
+ assert.equal(v.title,"The Shires - Daddy's Little Girl");
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const card=cards[0];
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
+ assert.equal(departmentFor(card),'media');
+ const player=readFileSync(new URL('../quanta-card-experience.mjs',import.meta.url),'utf8');
+ assert.match(player,/View more videos/);
+});
