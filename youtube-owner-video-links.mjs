@@ -169,6 +169,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'G2B1dFuhtfY',title:'We Adopted Another Baby!',
+ sourceUrl:'https://www.youtube.com/watch?v=G2B1dFuhtfY',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
