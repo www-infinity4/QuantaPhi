@@ -25,6 +25,9 @@ test('owner dTinr4W_IhY uses exactly one original YouTube Public/Media Quick Car
  assert.equal(card.featureUrl,video.sourceUrl);
  assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
  assert.match(card.details,/not independently verified/i);
+ assert.match(card.details,/one.second/i,'Quick Card explains requested sampling cadence');
+ assert.match(card.details,/not continuous/i,'Still screenshots cannot be misrepresented as continuous screen recording');
+ assert.match(card.details,/not (?:show|prove) why/i,'Do not accuse individuals of targeted manipulation from a feed snapshot');
  assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
  assert.ok(ACTIVE_SOURCE_CARDS.some(c=>c.id===card.id));
  assert.ok(ALL_FEED_CARDS.some(c=>c.id===card.id));
