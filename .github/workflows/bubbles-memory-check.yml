@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - "bubbles-memory.js"
+      - "bubbles-clipboard-clip.mjs"
+      - "test/bubbles-clipboard-clip.test.mjs"
       - "bubbles-ai.js"
       - "bubbles-public-build-history.mjs"
       - "test/bubbles-public-build-history.test.mjs"
@@ -17,6 +19,8 @@ on:
     branches: [main]
     paths:
       - "bubbles-memory.js"
+      - "bubbles-clipboard-clip.mjs"
+      - "test/bubbles-clipboard-clip.test.mjs"
       - "bubbles-ai.js"
       - "bubbles-public-build-history.mjs"
       - "test/bubbles-public-build-history.test.mjs"
@@ -39,8 +43,9 @@ jobs:
       - name: Validate Bubbles JS modules and browser code
         run: |
           node --check bubbles-memory.js
+          node --check bubbles-clipboard-clip.mjs
           node --check bubbles-ai.js
           node --check bubbles-public-build-history.mjs
           node --check workers/bubbles-memory/worker.mjs
       - name: Verify wallet-scoped event retention, deletion and replay policy
-        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-memory-context-budget.test.mjs test/bubbles-public-build-history.test.mjs
+        run: node --test test/bubbles-memory.test.mjs test/bubbles-conversation-memory.test.mjs test/bubbles-memory-context-budget.test.mjs test/bubbles-clipboard-clip.test.mjs test/bubbles-public-build-history.test.mjs
