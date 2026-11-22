@@ -40,24 +40,24 @@ test('encryption is randomized for repeated plaintext and does not expose owner 
  assert.equal('filename' in one.manifest,false);
 });
 
-test('randomized placement uses only explicitly opted-in unique devices, one fragment per device',()=>{
+test('randomized placement uses only app cache instances reporting available capacity, one fragment per device',()=>{
  const {manifest}=packFile(Buffer.from('hello'),{shards:5});
- const peers=Array.from({length:15},(_,i)=>({id:'consented-'+i,optIn:i<10,maxShardBytes:1000}));
+ const peers=Array.from({length:15},(_,i)=>({id:'app-'+i,appCacheReady:i<10,maxShardBytes:1000}));
  const plan=planPlacement(manifest,peers,{replicas:2});
  const recipients=plan.assignments.flatMap(x=>x.deviceIds);
  assert.equal(plan.assignments.length,5);
  assert.equal(recipients.length,10);
  assert.equal(new Set(recipients).size,10);
- assert.ok(recipients.every(s=>s.startsWith('consented-')));
+ assert.ok(recipients.every(s=>s.startsWith('app-')));
  assert.ok(plan.assignments.every(x=>x.deviceIds.length===2));
  assert.equal('fileContent' in plan,false);
 });
 
-test('placement rejects non-consenting nodes, insufficient or duplicate volunteers, and invalid replica count',()=>{
+test('placement rejects non-app devices, insufficient or duplicate app instances, and invalid replica count',()=>{
  const {manifest}=packFile(Buffer.from('hello'),{shards:4});
- assert.throws(()=>planPlacement(manifest,Array.from({length:4},(_,i)=>({id:'p'+i,optIn:false,maxShardBytes:1000}))),/not enough opted-in/);
- assert.throws(()=>planPlacement(manifest,[{id:'same',optIn:true,maxShardBytes:1000},{id:'same',optIn:true,maxShardBytes:1000}]),/duplicate device/);
- const ok=Array.from({length:4},(_,i)=>({id:'p'+i,optIn:true,maxShardBytes:1000}));
+ assert.throws(()=>planPlacement(manifest,Array.from({length:4},(_,i)=>({id:'p'+i,appCacheReady:false,maxShardBytes:1000}))),/not enough app-cache/);
+ assert.throws(()=>planPlacement(manifest,[{id:'same',appCacheReady:true,maxShardBytes:1000},{id:'same',optIn:true,maxShardBytes:1000}]),/duplicate device/);
+ const ok=Array.from({length:4},(_,i)=>({id:'p'+i,appCacheReady:true,maxShardBytes:1000}));
  assert.throws(()=>planPlacement(manifest,ok,{replicas:2}),/not enough opted-in/);
  assert.throws(()=>planPlacement(manifest,ok,{replicas:0}),/replicas/);
 });
