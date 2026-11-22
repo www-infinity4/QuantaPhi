@@ -144,7 +144,7 @@ public final class ScreenCaptureService extends Service {
             final boolean sequence = screenshot && intervalSeconds > 0 && durationSeconds > 0;
             if (screenshot) {
                 if (sequence) {
-                    intervalSeconds = Math.max(2, Math.min(60, intervalSeconds));
+                    intervalSeconds = Math.max(1, Math.min(60, intervalSeconds));
                     durationSeconds = Math.max(10, Math.min(300, durationSeconds));
                     sequenceIntervalMs = 1000L * intervalSeconds;
                     sequenceDirectory = new File(directory, "screen-series-" + System.currentTimeMillis());
