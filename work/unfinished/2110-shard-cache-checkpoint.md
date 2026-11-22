@@ -15,7 +15,7 @@ task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
 branch: feat/bubbles-google-gemini-user-handoff-2110-20261122
-head_sha_at_checkpoint: "da789c9c43377189fa4d925d7c7fd05cdf187ff2"
+head_sha_at_checkpoint: "81aa76789ba113097c7290cf017d535a301e6fae"
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/2117"
 merged: false
 deployed: false
@@ -80,3 +80,7 @@ Next safe executable action: exact-head test/review and guarded merge of inactiv
 - [Exact-head test suite 45069628117](https://github.com/www-infinity4/QuantaPhi/actions/runs/45069628117) for `da789c9c43377189fa4d925d7c7fd05cdf187ff2`: **51/51** tests; 25 same-head GitHub workflows returned success. Review required before guarded merge. No production/browser/Android or real Google account import receipts.
 
 Next: exact-head source review, source-only guarded merge, Android verification of encrypted browser download with a real wallet (no secret disclosure), and a future paginated per-user history export that safely includes older than the first 1,000 searches. Do not conflate user-selected plaintext Gemini upload with Google-hosted private storage or automatic database replication.
+
+### Account switch and Android cache guard
+
+A dedicated regression now checks a fresh profile read for a **chats-only** export, not just the combined chat/search exporter. Both paths recheck a single currently active wallet bearer against the wallet-scoped Bubbles profile; mismatches abort. Bubbles, QuantaPhi homepage and Chrome Bubbles pages now reference cache-busted Bubbles memory/AI script URLs to avoid stale Android scripts when this patch deploys. As of this checkpoint, no real Android/Google account export has been verified; every background Google transfer remains disabled.
