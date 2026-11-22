@@ -319,3 +319,25 @@ test('owner video _9UqlGS0O1M produces exactly one source-backed Public/Media Qu
   assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id));
   assert.equal(departmentFor(card),'media');
 });
+
+
+test('Nov 22 owner-submitted djgY5YE6RKU registers one original-video Quick Card without invented metadata',()=>{
+ const id='djgY5YE6RKU';
+ const rows=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(rows.length,1,'Owner link must appear once');
+ const v=rows[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-22');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.equal(v.contentBoundary,'general-media');
+ assert.ok(validateOwnerYouTubeLink(v));
+ const c=REVIEWED_OWNER_VIDEO_CARDS.find(row=>row.reviewedYouTubeVideoId===id);
+ assert.ok(c,'Existing source-card generator should produce a standalone card');
+ assert.equal(c.featureUrl,v.sourceUrl);
+ assert.ok(validSourceCard(c)&&isPublicSourceCard(c));
+ assert.equal(findSourceCard(c.id)?.id,c.id);
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
+ assert.equal(departmentFor(c),'media');
+});
