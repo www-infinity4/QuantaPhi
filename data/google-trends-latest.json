@@ -3,16 +3,297 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-22T11:31:12.779963Z",
+  "checked_at": "2026-11-22T12:01:24.342081Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "granada vs real madrid",
+      "query": "nintendo switch 2 black friday deals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-22T11:40:00Z",
+      "related_news_urls": [
+        "https://www.wired.com/story/best-black-friday-nintendo-switch-deals-11-22-26/",
+        "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
+        "https://nintendoeverything.com/ea-hosting-black-friday-2026-nintendo-eshop-sale-with-plants-vs-zombies-split-fiction-more-at-new-low-prices/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCDlrC2IrYCfXFn1TNzz2l-_-sT1MhAfQhdqys29c7r3e3uOmDiKFFJRoSms",
+      "image_credit": "WIRED",
+      "news": [
+        {
+          "url": "https://www.wired.com/story/best-black-friday-nintendo-switch-deals-11-22-26/",
+          "title": "Save $50 on the Best Nintendo Switch 2 Bundle",
+          "publisher": "WIRED",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWCDlrC2IrYCfXFn1TNzz2l-_-sT1MhAfQhdqys29c7r3e3uOmDiKFFJRoSms"
+        },
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
+          "title": "Adventure Awaits: Save on a daring selection of digital games",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSttzOeog3cW6cBchzbl3hSNl7CJxCO_HcTx1sXggNzJrahT_LJ3Dq1mD9BN7o"
+        },
+        {
+          "url": "https://nintendoeverything.com/ea-hosting-black-friday-2026-nintendo-eshop-sale-with-plants-vs-zombies-split-fiction-more-at-new-low-prices/",
+          "title": "EA hosting Black Friday 2026 Nintendo eShop sale with Plants vs. Zombies, Split Fiction, more at new low prices",
+          "publisher": "Nintendo Everything",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPAKqjajYyd46C70Xr2Oge-LI7qIaqG0wq0BdiF2bj6ZaffSMWPWmJO1O8uwA"
+        }
+      ]
+    },
+    {
+      "query": "ca",
       "approx_searches": "100+",
+      "published_at": "2026-11-22T11:40:00Z",
+      "related_news_urls": [
+        "https://www.constructionowners.com/news/aecom-wins-five-year-geotechnical-services-contract-for-california-water-project",
+        "https://simplywall.st/stocks/us/capital-goods/nyse-acm/aecom/news/why-is-aecom-acm-landing-a-five-year-california-water-role-i",
+        "https://www.marketscreener.com/news/aecom-announces-selection-by-delta-conveyance-design-and-construction-authority-to-provide-programma-ce785edddb8df12d"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTItLVSnoW5UYh_qyiWGMKvBm3P7Py-uGAX0BCzmO1aW0RoS-PVX_63C5LnBAA",
+      "image_credit": "Construction Owners",
+      "news": [
+        {
+          "url": "https://www.constructionowners.com/news/aecom-wins-five-year-geotechnical-services-contract-for-california-water-project",
+          "title": "AECOM Wins California Delta Conveyance Geotechnical Contract",
+          "publisher": "Construction Owners",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTItLVSnoW5UYh_qyiWGMKvBm3P7Py-uGAX0BCzmO1aW0RoS-PVX_63C5LnBAA"
+        },
+        {
+          "url": "https://simplywall.st/stocks/us/capital-goods/nyse-acm/aecom/news/why-is-aecom-acm-landing-a-five-year-california-water-role-i",
+          "title": "Why Is AECOM (ACM) Landing A Five Year California Water Role Important?",
+          "publisher": "Simply Wall St",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaDgNZKdv3q4elAsizL5EvyXOd0_UVJd9Iq5V7dNUdfRpYZtQPn-PROPM9ToM"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/aecom-announces-selection-by-delta-conveyance-design-and-construction-authority-to-provide-programma-ce785edddb8df12d",
+          "title": "AECOM Announces Selection By Delta Conveyance Design And Construction Authority To Provide Programmatic Geotechnical Exploration And Reporting Services For Delta Conveyance Project",
+          "publisher": "marketscreener.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbwcWLWmcA6ZnkGy8vPVKuW9Kz7ruNA9-R1lisKo6B5YGDPIkD6r_943PW6GU"
+        }
+      ]
+    },
+    {
+      "query": "walmart black friday ad 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T11:40:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/shop-walmarts-best-early-black-friday-deals-on-apple-airpods-ninja-air-fryers-shark-vacuums-and-more-160507690.html",
+        "https://www.moneylion.com/trending/money/walmart-deals-worth-getting-before-black-friday",
+        "https://www.foxnews.com/deals/walmart-black-friday-deals"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7U3cYELkFEh2WR92-kpgiBYeaoBmoX2yTcFv_f0lKMfyjfZWrgDb_tTpJmSQ",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/shop-walmarts-best-early-black-friday-deals-on-apple-airpods-ninja-air-fryers-shark-vacuums-and-more-160507690.html",
+          "title": "Shop Walmart's best early Black Friday deals on Apple AirPods, Ninja air fryers, Shark vacuums and more",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7U3cYELkFEh2WR92-kpgiBYeaoBmoX2yTcFv_f0lKMfyjfZWrgDb_tTpJmSQ"
+        },
+        {
+          "url": "https://www.moneylion.com/trending/money/walmart-deals-worth-getting-before-black-friday",
+          "title": "10 Walmart Deals To Grab Before Black Friday",
+          "publisher": "MoneyLion",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsInM47jXdcg_Uw37wH1d4APXNtbhH-tJ2wM67BLbeupvPdmC5KuGiq9mYZjs"
+        },
+        {
+          "url": "https://www.foxnews.com/deals/walmart-black-friday-deals",
+          "title": "Save on gifts for everyone with Walmart Black Friday deals on Dyson, Samsung, KitchenAid and more",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBBEafeIpDHEpFIUYxXQ892U_6aO1dh4PQxaqCULlMrSIkOxmgYTKrBLQYOhc"
+        }
+      ]
+    },
+    {
+      "query": "天气",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T11:40:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-21/world-economy-latest-japan-s-economy-slips-as-weather-dents-spending",
+        "https://www.bloomberg.com/news/articles/2026-11-15/japan-s-economy-contracts-as-bad-weather-weighs-on-consumption",
+        "https://www.businessinsider.com/rare-look-inside-p-8-poseidon-arsenal-sensors-hunt-submarines-2026-11"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTclU2C2a3hAR52tVf_AKzWaBVjG-BP2TTPlin60a2GdS1YLnZ_5b8Mi-gVzJM",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-21/world-economy-latest-japan-s-economy-slips-as-weather-dents-spending",
+          "title": "Charting the Global Economy: GDP Slips in Japan on Weak Consumer",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTclU2C2a3hAR52tVf_AKzWaBVjG-BP2TTPlin60a2GdS1YLnZ_5b8Mi-gVzJM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-15/japan-s-economy-contracts-as-bad-weather-weighs-on-consumption",
+          "title": "Japan’s Economy Shrinks as Bad Weather Weighs on Consumption",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjqDjNb8Rb7s0a-dAyGfXSsmFioTjpIa7wHIDW9cfqRnA4oJ4fhn_l6tOr_Ww"
+        },
+        {
+          "url": "https://www.businessinsider.com/rare-look-inside-p-8-poseidon-arsenal-sensors-hunt-submarines-2026-11",
+          "title": "We got rare access to a P-8 Poseidon, a flying arsenal of sensors and weapons built to hunt hidden submarines",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVns-LWBSdxbaAnGZWnbG3IiBTVcKfLoso4OPqRsGyzs6AOlr4RYnokGg-9D0"
+        }
+      ]
+    },
+    {
+      "query": "hulu black friday deal 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-22T11:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66122569/?ref_=int_nwr_1",
+        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/21/disney-plus-espn-hulu-bundle-early-black-friday-deal/92883826007/",
+        "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTatopGgxH2JjOtP7rbXfpjD9SbPeEFLoZAo-2otzHHVjFjkVOJVJdinZExUCk",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66122569/?ref_=int_nwr_1",
+          "title": "Disney+ Black Friday 2026: what to expect before the deal drops",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTatopGgxH2JjOtP7rbXfpjD9SbPeEFLoZAo-2otzHHVjFjkVOJVJdinZExUCk"
+        },
+        {
+          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/21/disney-plus-espn-hulu-bundle-early-black-friday-deal/92883826007/",
+          "title": "Save 36% with this Disney+, ESPN, Hulu early Black Friday bundle deal",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZathGtSIaoqYxEb_fMVgYlyujCDyh7hGjUmcR-FmdW21Qn88ekpLjtR_O8hI"
+        },
+        {
+          "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-streaming-deals-2026-prices-plans-1236386882/",
+          "title": "A Guide to the Best Black Friday Streaming Deals: See Platforms, Prices & Plans for Less",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStU0607x1RPn3mXNPBPzOm0wyWRZUf3KlfaItYTYgNmb24lODzXCJ-GNAMMYA"
+        }
+      ]
+    },
+    {
+      "query": "météo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T11:30:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/fr/info-en-continu/20261121-apr%C3%A8s-les-pluies-le-pas-de-calais-a-encore-des-crues-%C3%A0-g%C3%A9rer",
+        "https://www.franceinfo.fr/france/hauts-de-france/pas-de-calais/on-est-fatigue-c-est-epuisant-stressant-le-desarroi-des-habitants-du-pas-de-calais-apres-des-inondations-a-repetition_8294126.html",
+        "https://www.20minutes.fr/planete/4264751-20261122-intemperies-jura-ain-vigilance-orange-pluie-inondations-calais-reste-alerte-orange-crues"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe3_kmttna7_YGkddwTUjG8ynQSfdv8J1kJ5r2aHPFFynmaJBhks1y7uI1O7g",
+      "image_credit": "France 24",
+      "news": [
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261121-apr%C3%A8s-les-pluies-le-pas-de-calais-a-encore-des-crues-%C3%A0-g%C3%A9rer",
+          "title": "Après les pluies, le Pas-de-Calais a encore des crues à gérer",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe3_kmttna7_YGkddwTUjG8ynQSfdv8J1kJ5r2aHPFFynmaJBhks1y7uI1O7g"
+        },
+        {
+          "url": "https://www.franceinfo.fr/france/hauts-de-france/pas-de-calais/on-est-fatigue-c-est-epuisant-stressant-le-desarroi-des-habitants-du-pas-de-calais-apres-des-inondations-a-repetition_8294126.html",
+          "title": "\"On est fatigué, (...) c'est épuisant, stressant\" : le désarroi des habitants du Pas-de-Calais après des inondations à répétition",
+          "publisher": "franceinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnEfTWW_xv-L0AMLE44GPhhEOfb0ytITovidxCRE-bYwKBOA5xCgOTnbQVIQ"
+        },
+        {
+          "url": "https://www.20minutes.fr/planete/4264751-20261122-intemperies-jura-ain-vigilance-orange-pluie-inondations-calais-reste-alerte-orange-crues",
+          "title": "Le Jura et l’Ain passent en vigilance orange pluie-inondations",
+          "publisher": "20 Minutes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUn0R41C2AclLnc2BvaZKM-kXBGTnRmrE5ILy8wUnUyflQ5tC7BhdmV2d2Q6c"
+        }
+      ]
+    },
+    {
+      "query": "погода",
+      "approx_searches": "200+",
+      "published_at": "2026-11-22T11:30:00Z",
+      "related_news_urls": [
+        "https://novostivolgograda.ru/news/2026-11-22/zima-blizko-kogda-v-volgograde-vypadet-pervyy-sneg-5738588",
+        "https://gazeta-vp.ru/volgogradskie-sinoptiki-rasskazali-kakoj-budet-zima-v-regione/",
+        "https://v1.ru/text/gorod/2026/11/20/76779640/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYA3hha0ybGV_3sLDDNdzNkMmxBddwYIf8UwqpO9tCHQPPWCb6LGBP2SPD50Q",
+      "image_credit": "novostivolgograda.ru",
+      "news": [
+        {
+          "url": "https://novostivolgograda.ru/news/2026-11-22/zima-blizko-kogda-v-volgograde-vypadet-pervyy-sneg-5738588",
+          "title": "Зима близко: когда в Волгограде выпадет первый снег",
+          "publisher": "novostivolgograda.ru",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYA3hha0ybGV_3sLDDNdzNkMmxBddwYIf8UwqpO9tCHQPPWCb6LGBP2SPD50Q"
+        },
+        {
+          "url": "https://gazeta-vp.ru/volgogradskie-sinoptiki-rasskazali-kakoj-budet-zima-v-regione/",
+          "title": "Волгоградские синоптики рассказали, какой будет зима в регионе",
+          "publisher": "Волжская правда",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgiSmG-Ma1l13avNFQ0y4N1W4IgMyUp0_3cXZms5zEjYPVddhoJ65QSZ0kDtw"
+        },
+        {
+          "url": "https://v1.ru/text/gorod/2026/11/20/76779640/",
+          "title": "Зима близко: в Волгограде метеорологи обещают резкое похолодание после нескольких дней тепла",
+          "publisher": "Новости Волгограда и Волгоградской области",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2xxBAdZhZMjUHaU_Q1MguBZp8SoVAp7a4AJOQKxUIugCW75s2KpRUaHuJ5Xc"
+        }
+      ]
+    },
+    {
+      "query": "troy aikman radio comments joe buck",
+      "approx_searches": "100+",
+      "published_at": "2026-11-22T11:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+        "https://sports.yahoo.com/articles/burn-down-nfl-fans-react-045919545.html",
+        "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7795096/2026/11/19/troy-aikman-joe-buck-espn-nfl-super-bowl-61/",
+          "title": "Troy Aikman takes dig at Joe Buck, extending tensions: ‘Joe’s always wanted a 1-man booth’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8HiU3qC7j-2uyG1E83265dwXAmD1u6EyPzaRyuvZUf9DEQnEJ3RfaTaef5BI"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/burn-down-nfl-fans-react-045919545.html",
+          "title": "‘Burn it all down’: NFL fans react after hearing what Troy Aikman has now said about Joe Buck",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1E9FeUVy2y3Xl96ILn4-XNGglqmLJIOWPjakpXDSfPUAclJ_1f4ZvV5nQyK4"
+        },
+        {
+          "url": "https://www.nbcnews.com/sports/nfl/troy-aikman-joe-buck-super-bowl-espn-feud-comments-nfl-rcna610242",
+          "title": "Troy Aikman escalates ongoing feud with Joe Buck, saying broadcast partner ‘always wanted a one-man booth’",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsZG4o50zce7tg1bwnNg6a5rXYGaPjM8brC8p-NdldcwgNXgavX3-3lbNzOtM"
+        }
+      ]
+    },
+    {
+      "query": "granada vs real madrid",
+      "approx_searches": "200+",
       "published_at": "2026-11-22T11:10:00Z",
       "related_news_urls": [
         "https://www.realmadrid.com/en-US/news/football/womens-team/fixtures/granada-real-madrid-a-cerrar-noviembre-con-una-victoria-en-la-liga-f-21-11-2026",
-        "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026"
+        "https://www.realmadrid.com/en-US/news/football/womens-team/squad-call/convocatoria-del-real-madrid-contra-el-granada-21-11-2026",
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401928998/valparaiso-troy"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVFwWuzEIKifmAP_Cn5QjJx9R8Fm8Af5xzibbWZjP0qKN5vjWZ0WqlqCyt4",
       "image_credit": "Real Madrid CF | Web Oficial",
@@ -30,52 +311,24 @@
           "publisher": "Real Madrid CF | Web Oficial",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIdK1SdPmrxKK8455HzqKFg-0QM5Kcz1IiKpAPL27afe0xGYobtiYKr2FzE24"
-        }
-      ]
-    },
-    {
-      "query": "ipad black friday deals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T11:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
-        "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
-        "https://appleinsider.com/articles/26/11/22/airpods-pro-3-plunge-to-169-airpods-max-2-drop-to-419-for-black-friday-week"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/select/shopping/apple-airpods-pro-3-deal-of-the-day-rcna610526",
-          "title": "This AirPods Pro 3 deal is the one to grab before Black Friday",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnbJ75s9QLFqk4Z8HSHct_EBxYG2Zem0aEceb_TFu9bywlZzMy5iXcnTJfgho"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/apple-airpods-black-friday-deals-2026-11-20",
-          "title": "I’ve tested all of Apple’s AirPods. These are the 10 best early Black Friday deals | CNN Underscored",
-          "publisher": "CNN",
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401928998/valparaiso-troy",
+          "title": "Valparaiso 77-72 Troy (Nov 21, 2026) Final Score",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQOqjqK0CdeGevNBcbh1KLqcTu8hvA4Ep9IdOuf-tEorzJx1I8anbkDh4dX4M"
-        },
-        {
-          "url": "https://appleinsider.com/articles/26/11/22/airpods-pro-3-plunge-to-169-airpods-max-2-drop-to-419-for-black-friday-week",
-          "title": "Get AirPods Pro 3 for $169 in Amazon's early Black Friday Sale",
-          "publisher": "AppleInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQda_KZbEcbaJcRBF3YOLdbTqBrKCdPqp-1yTz4QzoHWQlqkOXrVseNXfH-2D8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBKGEN3Etk1Gp9eNuPXp9yVWaHTK6mTwA3m04ICY15Iy7lE5_RuRXvefEUVZI"
         }
       ]
     },
     {
       "query": "pakistan a vs india a",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-22T11:00:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/story/ind-vs-pak-asia-cup-rising-stars-pakistan-a-opt-to-bat-against-india-a-both-sides-unchanged-1563603",
         "https://sports.yahoo.com/articles/ind-vs-pak-asia-cup-103413698.html",
-        "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms"
+        "https://www.india.com/sports/cricket/india-a-vs-pakistan-a-acc-asia-cup-rising-stars-2026-match-no-8-22-nov-predicted-playing-11-teams-ind-a-vs-pak-a-squad-key-players-list-picked-captains-tilak-varma-abdul-samad-vaibhav-sooryavanshi-abh-8547050/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlnajtCncnhICVXws7_qR-FIhthaiG-VD8GiE371Zh_CIhhcw0rn5v-KSfVwc",
       "image_credit": "Cricinfo",
@@ -95,256 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyqWp5JleuN_ky2s_ibaVyZh0UWyX_MdVCxRjKupjC0swd_lRiabVrw0eX1QM"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-pakistan-a-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-west-end-park-international-cricket-stadium/liveblog/136068901.cms",
-          "title": "India A vs Pakistan A Live Score, ACC Mens Asia Cup Rising Stars 2026: India aim to mount pressure after Ayush Badoni, Harshit Rana ruin Pakistan's perfect start",
-          "publisher": "The Times of India",
+          "url": "https://www.india.com/sports/cricket/india-a-vs-pakistan-a-acc-asia-cup-rising-stars-2026-match-no-8-22-nov-predicted-playing-11-teams-ind-a-vs-pak-a-squad-key-players-list-picked-captains-tilak-varma-abdul-samad-vaibhav-sooryavanshi-abh-8547050/",
+          "title": "India A vs Pakistan A Predicted Playing 11: Will Vaibhav Sooryavanshi open with Abhishek Sharma again?",
+          "publisher": "India.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMk-AtDu7jSIvHj90cVbvT4_0RBydr_jvqNcBFA17om98FROEcSj5xwZthjaM"
-        }
-      ]
-    },
-    {
-      "query": "granada cf - real madrid",
-      "approx_searches": "200+",
-      "published_at": "2026-11-22T11:00:00Z",
-      "related_news_urls": [
-        "https://as.com/futbol/femenino/granada-real-madrid-hoy-en-directo-ultima-hora-de-la-primera-division-femenina-en-vivo-f202611-d/",
-        "https://www.granadahoy.com/granadacf/adrian-martin-esperamos-disfrutar-domingo_0_2008556102.html",
-        "https://www.ideal.es/granadacf/dos-futbolistas-cedidas-amenazan-real-madrid-sabemos-20261121190746-nt.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTfT9PVQ_MIdoAtFP86pBY8gWM_L-SZhmvRbF9gY28rc1h7e3MeM9xpgpPrws",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/femenino/granada-real-madrid-hoy-en-directo-ultima-hora-de-la-primera-division-femenina-en-vivo-f202611-d/",
-          "title": "Granada - Real Madrid, hoy en directo: última hora de la Primera División femenina en vivo",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTfT9PVQ_MIdoAtFP86pBY8gWM_L-SZhmvRbF9gY28rc1h7e3MeM9xpgpPrws"
-        },
-        {
-          "url": "https://www.granadahoy.com/granadacf/adrian-martin-esperamos-disfrutar-domingo_0_2008556102.html",
-          "title": "Adrián Martín: “Esperamos disfrutar de un domingo muy bonito con nuestra afición”",
-          "publisher": "Granada Hoy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWmwRjCLrdJ10EUzKcSJ9yEh7en5uf3hK2AJQJCoDljAXY5OZ-OhVQP99Y8DE"
-        },
-        {
-          "url": "https://www.ideal.es/granadacf/dos-futbolistas-cedidas-amenazan-real-madrid-sabemos-20261121190746-nt.html",
-          "title": "Dos futbolistas cedidas amenazan al Real Madrid: «Sabemos por dónde podemos hacerle daño»",
-          "publisher": "Ideal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv1W-GHYNU3ZQowdyH3vYkD8zm0WRFgCT_ShNzVs_TBFVC_QCZdVFQRIjyiu8"
-        }
-      ]
-    },
-    {
-      "query": "juventus - venezia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T10:50:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/calcio/fantanews/22-11-2026/juventus-venezia-le-formazioni-ufficiali-tutti-i-titolari.shtml",
-        "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/21-152697013/probabili_formazioni_juve-venezia_le_scelte_di_spalletti_tutti_i_ballottaggi_e_chi_resta_fuori",
-        "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68Y5imywySFrmCDSBUIov_Ga9DeZdTwdKVplVZDOnIiYrDKqlfEG3bDtFxCs",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/calcio/fantanews/22-11-2026/juventus-venezia-le-formazioni-ufficiali-tutti-i-titolari.shtml",
-          "title": "Juventus-Venezia, le formazioni ufficiali: Spalletti punta su Alajbegovic, Nicola si affida a Lauberbach",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT68Y5imywySFrmCDSBUIov_Ga9DeZdTwdKVplVZDOnIiYrDKqlfEG3bDtFxCs"
-        },
-        {
-          "url": "https://www.tuttosport.com/news/calcio/serie-a/juventus/2026/11/21-152697013/probabili_formazioni_juve-venezia_le_scelte_di_spalletti_tutti_i_ballottaggi_e_chi_resta_fuori",
-          "title": "Probabili formazioni Juve-Venezia: le scelte di Spalletti, tutti i ballottaggi e chi resta fuori",
-          "publisher": "Tuttosport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYB1QBIPGJa8ZlxaBHks6pxbVjZh8J8Icsp6K1QYJDFVpt_MkcjHVn7zh1V8"
-        },
-        {
-          "url": "https://www.juventus.com/it/news/articoli/serie-a-juventus-venezia-le-formazioni-ufficiali",
-          "title": "Serie A | Juventus-Venezia | Le formazioni ufficiali",
-          "publisher": "Juventus.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHvGBay7PkwwSiqc4KVcTW0KbpI3nYEM9cOqrdSRUlmfSI2etK3EqXfeWfgno"
-        }
-      ]
-    },
-    {
-      "query": "linda evans",
-      "approx_searches": "100+",
-      "published_at": "2026-11-22T10:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/dynasty-star-linda-evans-turns-140523310.html",
-        "https://people.com/dynasty-alum-linda-evans-says-she-is-feeling-the-love-as-she-turns-84-12263359",
-        "https://www.aol.com/articles/dynastys-linda-evans-turning-84-231856000.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgldFF96Lx6ZeBx-WdRi2NT8hlvMPQEvaPk4kG6zxbwz9Yk4h8xI2Fve1GQbM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dynasty-star-linda-evans-turns-140523310.html",
-          "title": "‘Dynasty’ Star Linda Evans Turns 84: Why She Chose to Stay Single",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgldFF96Lx6ZeBx-WdRi2NT8hlvMPQEvaPk4kG6zxbwz9Yk4h8xI2Fve1GQbM"
-        },
-        {
-          "url": "https://people.com/dynasty-alum-linda-evans-says-she-is-feeling-the-love-as-she-turns-84-12263359",
-          "title": "‘Dynasty’ Alum Linda Evans Says She Is ‘Feeling the Love’ as She Turns 84",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCDUJfei1-Dcr9VrAbPo28mY7_XHX_teaK1sJ_D5yIE_124Reul46nvvSELp4"
-        },
-        {
-          "url": "https://www.aol.com/articles/dynastys-linda-evans-turning-84-231856000.html",
-          "title": "Dynasty's Linda Evans on Turning 84: \"It Feels Like a Gift\"",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR54A7LbdDnWA9pD7JsLsGxXPSNRGX3yDcC3LlhOom_SbnTVVCvU8NcplToE6w"
-        }
-      ]
-    },
-    {
-      "query": "radar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T10:50:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility",
-        "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
-        "https://www.nytimes.com/2026/11/17/opinion/gulf-iran-israel-war.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45piilrS25HivZ8aKh4KjkpX2N9JjFpScBF4vajfTjwohDGDXRsIurpkhpTI",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility",
-          "title": "Bahrain says Iranian attack caused fire at industrial facility",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ45piilrS25HivZ8aKh4KjkpX2N9JjFpScBF4vajfTjwohDGDXRsIurpkhpTI"
-        },
-        {
-          "url": "https://www.reuters.com/world/middle-east/bahrain-warns-residents-potential-threat-iran-conflict-persists-2026-11-21/",
-          "title": "Bahrain says Iran strikes industrial facility as air defences intercept attacks",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTb4VJ9F5Q7j0Bs_6_lmpp7AQGbLqrxXkTK4cCKTJ15q6cphxctpKLldT6Va4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/17/opinion/gulf-iran-israel-war.html",
-          "title": "Opinion | Shock and Dread in the Gulf",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpBgXdfghDtQ16NcRuoSDlhEQGgIxR6eWNp2w4dEFaPHycYZlW3uMSSLMkNI"
-        }
-      ]
-    },
-    {
-      "query": "juventus vs venezia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T10:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/serie-liveblog-juventus-venezia-milan-102500267.html",
-        "https://www.reutersconnect.com/item/serie-a-juventus-v-venezia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wVVlQUEU",
-        "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXVR9uhnF8kNk19Cb_y02knJolHPxHoGIv8i2YSJ0_O65HyekZW5EKsjROjo0",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/serie-liveblog-juventus-venezia-milan-102500267.html",
-          "title": "Serie A Liveblog: Juventus-Venezia, Milan-Frosinone, Atalanta-Inter and more",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXVR9uhnF8kNk19Cb_y02knJolHPxHoGIv8i2YSJ0_O65HyekZW5EKsjROjo0"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/serie-a-juventus-v-venezia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQk0wVVlQUEU",
-          "title": "Licensable picture: Serie A - Juventus v Venezia",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUd_Rf15af-nUlw3eOHI2O8Mh9t5XuArskL9yJklvS0zyAXyZTsDNcuC7LETc"
-        },
-        {
-          "url": "https://onefootball.com/en/video/a-spalletti-no-le-afectan-los-comentarios-de-conte-43817092",
-          "title": "A Spalletti no le afectan los comentarios de Conte",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLR4xECn1t_fjs-e_ccbLHM7lSYOtr3hwzrSPLAHVGCNppCxns__YGGlICXiI"
-        }
-      ]
-    },
-    {
-      "query": "philly marathon 2026",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-22T10:40:00Z",
-      "related_news_urls": [
-        "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
-        "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel",
-        "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDbz2_H9kcozMO_yCA1C18dyONs0fxGMeuYml6i__KLcZT2GKwbKKDWyH17GA",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/post/philadelphia-gears-busy-weekend-marathon-eagles-game-possible-stormy-weather/20061482/",
-          "title": "Philadelphia gears up for busy weekend with marathon, Eagles game and possible stormy weather",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDbz2_H9kcozMO_yCA1C18dyONs0fxGMeuYml6i__KLcZT2GKwbKKDWyH17GA"
-        },
-        {
-          "url": "https://www.fox29.com/news/rain-moves-through-philadelphia-region-ahead-early-thanksgiving-travel",
-          "title": "Rain moves through Philadelphia region ahead of early Thanksgiving travel",
-          "publisher": "FOX 29 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhom5TgsZkwSyHsMKeGKTB4LZTdVBB8-3iN1KESoAu1hR_eLQUl0ALTn3YzaA"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/two-storms-to-track/4501141/",
-          "title": "Two storms to track",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHcj1fkzflPMh254yLSH7eWuZ82e8CQobXLQCrjBTfmceS6K4JegAaZwCvRuA"
-        }
-      ]
-    },
-    {
-      "query": "tkach family",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T10:40:00Z",
-      "related_news_urls": [
-        "https://www.wlfi.com/2026/11/20/indiana-state-police-address-questions-concerns-surrounding-west-lafayette-shooting-investigation/",
-        "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
-        "https://www.jconline.com/story/news/crime/2026/11/20/coroner-bailiff-kills-wife-and-teenage-daughters-then-kills-himself/92877000007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2y2T3axdBdtZ7jKQTxg-YODO9Idha0H-jHGMQSfY8xI6KVIqsK0kksbxxjM0",
-      "image_credit": "WLFI",
-      "news": [
-        {
-          "url": "https://www.wlfi.com/2026/11/20/indiana-state-police-address-questions-concerns-surrounding-west-lafayette-shooting-investigation/",
-          "title": "Indiana State Police address questions and concerns surrounding West Lafayette shooting investigation",
-          "publisher": "WLFI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2y2T3axdBdtZ7jKQTxg-YODO9Idha0H-jHGMQSfY8xI6KVIqsK0kksbxxjM0"
-        },
-        {
-          "url": "https://www.starcitytv.com/news/local/four-people-identified-in-west-lafayette-death-investigation/article_270ded97-585a-4d86-97f6-0e054cc310bd.html",
-          "title": "Four people identified in West Lafayette death investigation",
-          "publisher": "starcitytv.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzrASSP9TA4QfVHNhxMijD30i0_YhlCeZ3AHAtYW-uTUAGs47gKt2UHz9ToFY"
-        },
-        {
-          "url": "https://www.jconline.com/story/news/crime/2026/11/20/coroner-bailiff-kills-wife-and-teenage-daughters-then-kills-himself/92877000007/",
-          "title": "Coroner: Bailiff kills wife and teenage daughters, then kills himself",
-          "publisher": "Journal & Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzdsQT5YgD1rxsSZMuw8I2VG3eiqkgjCp3d3PMcIBAzQVCd9DGLumvwQa0tQU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdD-yiCRLsejJDTi_DaB-0E2yZBphX8XmVLOm3voLmm5LRo-Ul9h9MS-Gs7ig"
         }
       ]
     }
