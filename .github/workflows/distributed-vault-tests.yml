@@ -31,4 +31,4 @@ jobs:
           node --check distributed-vault/app-cache.mjs
           node --check distributed-vault/app-page.mjs
       - name: Test encryption, 1000 shards and application-controlled cache
-        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs
+        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs test/distributed-vault-app-page.test.mjs test/distributed-vault-cli.test.mjs
