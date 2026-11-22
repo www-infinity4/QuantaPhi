@@ -3,9 +3,9 @@ issue: 1906
 project: "Bubbles Identity & Verification Center"
 state: review_pending
 dot: "🟡"
-progress_percent: 35
+progress_percent: 38
 progress_basis: "Cloudflare stale gate fix and browser Verification Center source staged and tested; broader OAuth, real provider behavior, independent review, merge, release and two-account acceptance remain"
-sessions_spent: 2
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "ChatGPT via authenticated GitHub connector"
 lease_id: null
@@ -14,16 +14,16 @@ task_session_id: null
 fence: null
 last_observed_at_utc: "2026-11-11T08:30:26.255Z"
 repo: www-infinity4/QuantaPhi
-branch: fix/identity-verification-1906-20261111
-head_sha: "73b824a4fe08823410e58cff3f2eba4b959e8ce6" # last green source head before this checkpoint update
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/1910"
+branch: feat/unified-wallet-numeric-device-bindings-1906-20261122
+head_sha: "fa57c52051e57da232cbc752f9888f9aadaf2425" # device-number core source head, prior to documentation checkpoint
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/2119"
 tests: "RED 44/45 at d22e0e01, provider-verification run 42987050045; GREEN 45/45 at 73b824a4, run 42987180622; account-connection checks green; real provider and physical Android acceptance pending"
 ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42987180622"
 merged: false
 deployed: false
 live_verified: false
 blocker: "Independent security review not submitted; real Google/GitHub/Cloudflare user OAuth, signed owner execution, Cloudflare deployment and two-account Android acceptance unverified"
-next_action: "Obtain an independent security review of PR #1910 and confirm exact-head CI remains green before guarded merge"
+next_action: "Verify exact-head PR #2119 CI and source/security review; merge inactive code if policy permits; preserve production StarQuest auth until passkey enrollment proof"
 ---
 # TICKET-1906 — Bubbles Identity & Verification Center
 
@@ -72,3 +72,15 @@ No credentials or private user identifiers in this checkpoint. Never convert thi
 - Provider acceptance: live callback trace for `connection_complete_exchange_type_redirect`, two real isolated accounts, session expiry and Android navigation still need authenticated end-to-end verification; existing synthetic tests are not that proof.
 - Owner wallets, provider secrets, token storage, OAuth scopes, existing accounts and balance ledgers were not modified. No merge, production deployment, Android test, or connection success claimed.
 - Next single action: secure a real independent security review of the exact PR head before any guarded merge or deploy; fix any findings on this branch and rerun exact-head checks.
+
+---
+
+## Numeric wallet device aliases · owner idea November 22, 2026
+
+The owner proposes that each phone retain an individually generated numeric string and that Unified Wallet recognize the phone/account relationship without repeated StarQuest sign-in. Example numeric strings supplied in conversation are **not actual credentials**, are not reproduced in source or documentation, and do not establish ownership.
+
+**Staged [PR #2119](https://github.com/www-infinity4/QuantaPhi/pull/2119):** new `workers/unified-wallet/device-number-core.mjs`, isolated Node tests, and `workers/unified-wallet/migrations/0001_numeric_alias_pilot.sql` (NOT applied). Generates 39-character decimal identifiers from 128-bit CSPRNG as strings; they are a public index, not password, phone number or balance access. A server mapping can link each account only to devices the owner explicitly enrolled. The account-scoped SHA-256 device-list fingerprint is not authorization. Cryptographic proof requires verified wallet account, signed P-256 challenge binding account+number, expiration and single-use enforcement. Source helper rejects copied numbers, wrong accounts, expired/replayed/tampered signatures. A production server must validate WebAuthn/passkeys and atomically consume challenges; no login route is enabled in this PR.
+
+**Existing identity and financial safety:** original StarQuest device token lookup and Unified Wallet balance/ledger tables completely unchanged. No private user phones were scanned or remotely registered, no actual numeric user examples stored, no D1 migration, no new authentication grant, no billing or Cloudflare changes. Existing passkey work [Quant Mail PR #1240](https://github.com/www-infinity4/QuantaPhi/pull/1240) is relevant but not merged/production verified; reuse a supported WebAuthn ceremony rather than custom authentication. Real Android passkey, account recovery, credential revocation, two accounts per device, cross-account isolation and staged migration still unverified.
+
+**Acceptance:** exact-head 6 focused Node tests and existing wallet account isolation CI, source review, then source-only merge if permitted. Next production action requires authenticated first-device enrollment (using existing sign-in/recovery), real WebAuthn proof and fail-closed staging before any StarQuest dependency removal. No robot Brain sign-in or device restoration success claimed.
