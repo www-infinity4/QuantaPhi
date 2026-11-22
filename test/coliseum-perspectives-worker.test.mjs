@@ -21,7 +21,9 @@ function fixture(t){
   db.prepare('INSERT INTO coliseum_members(model_id,member_id,joined_at) VALUES(?,?,?)').run('zeus',member(name),'2026-11-22T00:00:00Z');
  }
  const realFetch=globalThis.fetch;
+ const seenRequests=[];
  globalThis.fetch=async (url,options={})=>{
+  seenRequests.push({url:String(url),authorization:options.headers?.authorization||''});
   assert.equal(String(url),'https://starquest-ledger.marvaseater.workers.dev/v1/state');
   const authorization=options.headers?.authorization;
   const name=members.find(x=>authorization===token(x));
@@ -45,12 +47,12 @@ function fixture(t){
  for(const [i,name] of ['alice','bob','cara'].entries())
   db.prepare('INSERT INTO coliseum_ideas(id,model_id,sector,member_id,title,description,parent_id,created_at) VALUES(?,?,?,?,?,?,NULL,?)')
    .run(idea(i+1),'zeus','Technology',member(name),'Perspective '+name,'Build independent testable software with source evidence','2026-11-22T00:00:00Z');
- return {db,call};
+ return {db,call,seenRequests};
 }
 test('separate advisory permission defaults off and another member cannot opt the author in',async t=>{
- const {call}=fixture(t);
+ const {call,seenRequests}=fixture(t);
  let initial=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
- assert.equal(initial.status,200,JSON.stringify(initial));
+ assert.equal(initial.status,200,JSON.stringify({initial,seenRequests}));
  assert.equal(initial.ready,false);
  assert.deepEqual(initial.perspectives,[]);
  const forged=await call('mallory','/v1/perspectives/choice','POST',
@@ -60,11 +62,11 @@ test('separate advisory permission defaults off and another member cannot opt th
  assert.equal((await call('alice','/v1/perspectives?modelId=zeus&sector=Technology')).ready,false);
 });
 test('opt-in only explicit valid author choice; three distinct members unlock an advisory-only batch',async t=>{
- const {call}=fixture(t);
+ const {call,seenRequests}=fixture(t);
  for(const [i,name] of ['alice','bob','cara'].entries()){
   const result=await call(name,'/v1/perspectives/choice','POST',
    {ideaId:idea(i+1),share:true,purpose:'bubbles-advisory-v1'});
-  assert.equal(result.status,200,JSON.stringify(result));
+  assert.equal(result.status,200,JSON.stringify({result,seenRequests}));
   assert.equal(result.shared,true);
  }
  const data=await call('alice','/v1/perspectives?modelId=zeus&sector=Technology');
