@@ -127,6 +127,8 @@ test('D1 service errors do not falsely instruct a new Cloudflare login or reveal
  assert.match(ui.get('bubblesSigninStatus').textContent,/account.*unavailable|could not check/i);
  assert.doesNotMatch(ui.get('bubblesSigninStatus').textContent,/tap sign in|sign in with Cloudflare|start a new sign-in/i);
  assert.equal(ui.get('bubblesRecoverWallet').hidden,true);
+ assert.equal(ui.get('bubblesCloudflareSignIn').hidden,true,'Outage must not promote an unnecessary new OAuth action');
+ assert.equal(ui.get('bubblesGithubSignIn').hidden,true,'Outage must not suggest reconnecting GitHub either');
  assert.equal(ui.calls.some(call=>call.path==='/start'),false);
 });
 
