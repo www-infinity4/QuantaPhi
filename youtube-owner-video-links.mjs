@@ -151,6 +151,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'c0YDTPOmiCM',title:'YouTube video c0YDTPOmiCM (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=c0YDTPOmiCM',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
