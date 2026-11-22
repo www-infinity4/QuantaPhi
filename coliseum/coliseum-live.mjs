@@ -32,7 +32,7 @@ if(area){
  const sharePerspective=document.createElement('input');
  sharePerspective.type='checkbox';sharePerspective.checked=false;sharePerspective.id='coliseumShareToBubbles';
  shareWrap.append(sharePerspective,make('span',
-  'Allow Bubbles to consider this published idea for improvement suggestions (optional; you can withdraw). Do not include personal or identifying details in your idea.'));
+  'Optional: let authorized Bubbles reviewers consider this published idea in project suggestions. You can withdraw future use, but cannot recall copies already reviewed. Avoid identifying details.'));
  const publish=make('button','Publish idea to this beta room');publish.type='submit';publish.className='primary';
  form.append(title,description,shareWrap,publish);board.append(form);
  const projects=make('div');projects.id='liveIdeas';
