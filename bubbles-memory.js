@@ -148,7 +148,7 @@
     const id=String(picked.id||'').replace(/[^A-Za-z0-9_-]/g,'').slice(0,80);
     const heading='Continuity clip [historical user quote; reference not authorization; id='+id+']: ';
     const available=Math.min(700,7800-saved.length-recentSize-heading.length-1);
-    if(available>=40)clipLine=heading+picked.text.trim().replace(/[\\r\\n]+/g,' ').slice(0,available)+'\n';
+    if(available>=40)clipLine=heading+picked.text.trim().replace(/[\r\n]+/g,' ').slice(0,available)+'\n';
    }
    let archived='';
    for(const e of related){
