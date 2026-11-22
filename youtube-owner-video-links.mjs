@@ -162,6 +162,18 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=djgY5YE6RKU',
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'xzwUgLLH_nE',title:'YouTube Short xzwUgLLH_nE (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=xzwUgLLH_nE',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'NMlQGgvzEkQ',title:'YouTube Short NMlQGgvzEkQ (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=NMlQGgvzEkQ',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 }
 ];
 export function validateOwnerYouTubeLink(row){
