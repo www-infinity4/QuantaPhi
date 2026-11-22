@@ -1,0 +1,33 @@
+name: App-owned encrypted fragment vault regressions
+on:
+  pull_request:
+    paths:
+      - 'distributed-vault/**'
+      - 'test/distributed-vault*.test.mjs'
+      - '.github/workflows/distributed-vault-tests.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'distributed-vault/**'
+      - 'test/distributed-vault*.test.mjs'
+      - '.github/workflows/distributed-vault-tests.yml'
+permissions:
+  contents: read
+jobs:
+  encrypted-shards:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Prove pinned checkout
+        run: git rev-parse HEAD
+      - name: Check syntax
+        run: |
+          node --check distributed-vault/vault-core.mjs
+          node --check distributed-vault/vault-cli.mjs
+          node --check distributed-vault/app-cache.mjs
+      - name: Test encryption, 1000 shards and application-controlled cache
+        run: node --test test/distributed-vault.test.mjs test/distributed-vault-app-cache.test.mjs
