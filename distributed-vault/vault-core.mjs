@@ -84,8 +84,9 @@ export function restoreFile(manifest,fragments,keyBytes){
  }catch{fail('ciphertext authentication failed');}
 }
 /**
- * Explicit volunteer opt-in only. A device receives at most one shard per
- * file, even with replicas. Placement is a proposal: NO network send occurs.
+ * App-owned cache instances only (like ordinary app data, not user files).
+ * A device receives at most one shard per file, even with replicas. No network send occurs.
+ * The coordinator must verify real app installations and their reported capacity.
  */
 export function planPlacement(manifest,volunteers,{replicas=1}={}){
  const m=validateManifest(manifest);
@@ -94,7 +95,7 @@ export function planPlacement(manifest,volunteers,{replicas=1}={}){
  const maxBytes=Math.ceil(m.ciphertextBytes/m.requiredShards);
  const seen=new Set(),eligible=[];
  for(const device of volunteers){
-  if(!device||device.optIn!==true)continue;
+  if(!device||device.appCacheReady!==true)continue;
   const id=device.id;
   if(typeof id!=='string'||!/^[a-zA-Z0-9_.:-]{1,96}$/.test(id))fail('invalid device id');
   if(seen.has(id))fail('duplicate device id');
@@ -103,7 +104,7 @@ export function planPlacement(manifest,volunteers,{replicas=1}={}){
    eligible.push(id);
  }
  const needed=m.requiredShards*replicas;
- if(eligible.length<needed)fail('not enough opted-in eligible devices: need '+needed+', have '+eligible.length);
+ if(eligible.length<needed)fail('not enough app-cache eligible devices: need '+needed+', have '+eligible.length);
  // Cryptographically randomized assignment; never assign two shards to one device.
  for(let i=eligible.length-1;i>0;i--){
   const j=randomInt(i+1);
@@ -112,5 +113,5 @@ export function planPlacement(manifest,volunteers,{replicas=1}={}){
  const assignments=Array.from({length:m.requiredShards},(_,index)=>({
   shardIndex:index,deviceIds:eligible.slice(index*replicas,(index+1)*replicas)
  }));
- return {scheme:'consented-placement/v1',fileId:m.fileId,requiredShards:m.requiredShards,replicas,assignments};
+ return {scheme:'app-cache-placement/v1',fileId:m.fileId,requiredShards:m.requiredShards,replicas,assignments};
 }
