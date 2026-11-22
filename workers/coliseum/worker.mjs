@@ -143,6 +143,11 @@ async function handler(req,env){
    const modelId=url.searchParams.get('modelId'),sector=url.searchParams.get('sector');
    if(!validModel(modelId)||!validSector(sector))return error(req,'invalid_room',400);
    if(!await joined(db,modelId,member))return error(req,'join_room_first',403);
+   // Even an ordinary Coliseum member may not request the curated AI-advisory
+   // batch. Enable only explicitly provisioned, pseudonymized reviewers.
+   const reviewers=new Set(String(env.PERSPECTIVE_REVIEWERS||'')
+    .split(',').map(x=>x.trim()).filter(x=>/^[a-f0-9]{32}$/.test(x)));
+   if(!reviewers.has(member))return error(req,'perspective_reviewer_required',403);
    const query=await db.prepare(`SELECT i.id,i.model_id,i.sector,i.member_id,i.title,i.description,
      c.shared AS consented FROM coliseum_ideas i
      JOIN coliseum_perspective_consents c ON c.idea_id=i.id AND c.member_id=i.member_id
