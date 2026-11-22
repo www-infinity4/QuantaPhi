@@ -3,6 +3,7 @@ on:
   pull_request:
     paths:
       - 'coliseum/**'
+      - 'nuance-discovery-card.mjs'
       - 'workers/coliseum/**'
       - 'test/coliseum-api.test.mjs'
       - 'test/coliseum*'
@@ -29,12 +30,14 @@ jobs:
           node --check coliseum/coliseum.js
           node --check coliseum/zeus-quick-card.mjs
           node --check coliseum/room-api-core.mjs
+          node --check coliseum/perspective-core.mjs
+          node --check nuance-discovery-card.mjs
           node --check coliseum/coliseum-live.mjs
           node --check coliseum/session-history-core.mjs
           node --check coliseum/session-history.mjs
           node --check test/zeus-session-history-browser.spec.mjs
           node --check workers/coliseum/worker.mjs
-          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/zeus-session-history.test.mjs
+          node --test test/coliseum.test.mjs test/coliseum-api.test.mjs test/coliseum-perspectives-consent.test.mjs test/coliseum-perspectives-worker.test.mjs test/nuance-discovery.test.mjs test/zeus-session-history.test.mjs
       - name: Verify prototype has no fabricated live subscription routes
         run: |
           test -f coliseum/index.html
