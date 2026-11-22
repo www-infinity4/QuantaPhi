@@ -4,6 +4,12 @@
 const CHANNEL=/^UC[A-Za-z0-9_-]{22}$/;
 const VIDEO=/^[A-Za-z0-9_-]{11}$/;
 const one=(text,tag)=>{const m=text.match(new RegExp('<'+tag+'(?:\\s[^>]*)?>([\\s\\S]*?)<\\/'+tag+'>','i'));return m?.[1]?.trim()||'';};
+// YouTube Atom uses either the full UC ID or its exact prefix-free suffix.
+// Compare the channel field itself; a matching ID elsewhere is not proof.
+const matchesChannel=(xml,channelId)=>{
+ const value=one(xml,'yt:channelId');
+ return value===channelId||value===channelId.slice(2);
+};
 const decode=text=>String(text).replace(/&(?:amp|lt|gt|quot|apos|#(\d+)|#x([\da-f]+));/gi,(s,decimal,hex)=>{
  const named={'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&apos;':"'"};
  if(named[s.toLowerCase()])return named[s.toLowerCase()];
@@ -12,7 +18,7 @@ const decode=text=>String(text).replace(/&(?:amp|lt|gt|quot|apos|#(\d+)|#x([\da-
 });
 export function parseCreatorUploads(xml,channelId){
  if(typeof xml!=='string'||xml.length>300000||!CHANNEL.test(channelId))return [];
- if(one(xml,'yt:channelId')!==channelId)return [];
+ if(!matchesChannel(xml,channelId))return [];
  const entries=xml.match(/<entry(?:\s[^>]*)?>[\s\S]*?<\/entry>/gi)||[];
  const found=[],seen=new Set();
  for(const entry of entries.slice(0,30)){
@@ -46,7 +52,7 @@ export async function creatorUploadsApi(request,fetcher=fetch){
   const body=await upstream.text();
   if(body.length>300000)return response({ok:false,error:'Feed too large'},502);
   const videos=parseCreatorUploads(body,channelId);
-  if(!body.includes('<feed')||!body.includes('<yt:channelId>')||!body.includes(channelId))
+  if(!body.includes('<feed')||!matchesChannel(body,channelId))
    return response({ok:false,error:'YouTube feed did not match channel'},502);
   return response({ok:true,channelId,complete:false,source:'YouTube public uploads RSS',
    checkedAt:new Date().toISOString(),videos});

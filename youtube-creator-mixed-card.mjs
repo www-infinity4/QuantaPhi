@@ -23,8 +23,9 @@ export function mountMixedCreatorCard(root,card){
  const dedicatedChannel=CREATOR_CHANNELS.find(c=>c.key===card.initialCreatorChannel)||null;
  const ownerView=card.initialCreatorChannel==='owner';
  const panel=el('section','qcx-tool youtube-creator-mixed-card');
- panel.setAttribute('aria-label',ownerView?'More owner-submitted videos and original creator uploads':dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':'GANA Tribe, AbbeCAdventures, Julie Deru, Samirah Ann, Brittikitty and LANDing Autism mixed YouTube video feed');
- const title=el('h3','',ownerView?'View more videos · owner links + verified creators':dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · GANA Tribe / Abbe / Julie / Samirah / Brittikitty / LANDing Autism');
+ const channelNames=CREATOR_CHANNELS.map(c=>c.name).join(' / ');
+ panel.setAttribute('aria-label',ownerView?'More owner-submitted videos and original creator uploads':dedicatedChannel?dedicatedChannel.name+' full channel YouTube videos':channelNames+' mixed YouTube video feed');
+ const title=el('h3','',ownerView?'View more videos · owner links + verified creators':dedicatedChannel?dedicatedChannel.name+' · Full channel Quick Card':'YouTube creator mix · '+channelNames);
  const info=el('p','qcx-note',ownerView?'Browse more videos you submitted, then switch the channel selector to load verified creators’ recent uploads using YouTube public RSS. These links are not presumed related or from the same uploader. Full channel archives stay on YouTube.':dedicatedChannel?'Original channel link, six reviewed videos and recent uploads. Search or load more; the full historical archive stays on YouTube.':'Recent videos from YouTube’s official public upload feeds, plus reviewed and personally added links. Full history, Shorts and Community posts may not be present.');
  const status=el('p','qcx-note','Loading available public uploads…');
  status.setAttribute('role','status');
@@ -81,6 +82,10 @@ export function mountMixedCreatorCard(root,card){
     title:'Your added video · '+p.videoId,publishedAt:null,origin:'personal'});
   }
   const mixed=mixCreatorVideos(rows,[...chs.map(c=>c.key),'owner','saved']);
+  if(dedicatedChannel&&filter===dedicatedChannel.key){
+   const requested=mixed.findIndex(v=>v.videoId===card.initialCreatorVideoId&&v.channelId===dedicatedChannel.key);
+   if(requested>0)mixed.unshift(...mixed.splice(requested,1));
+  }
   return mixed.filter(v=>(filter==='all'||filter===v.channelId)&&
    (!query||[v.title,titleFor(v,chs)].join(' ').toLocaleLowerCase().includes(query)));
  }
@@ -96,7 +101,7 @@ export function mountMixedCreatorCard(root,card){
   const chs=channels();setChannelFilter(chs);
   channelsBox.replaceChildren();
   for(const channel of chs)channelsBox.append(anchor('Full '+channel.name+' videos on YouTube',
-   channel.url+(channel.url.includes('/channel/')?'/videos':'/videos')));
+   channel.videosUrl||channel.url+'/videos'));
   for(const raw of saved){
    if(parseCreatorInput(raw)?.type!=='handle')continue;
    const name=parseCreatorInput(raw).handle;
