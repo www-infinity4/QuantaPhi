@@ -1,0 +1,32 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {REVIEWED_OWNER_VIDEO_LINKS,REVIEWED_OWNER_VIDEO_CARDS,validateOwnerYouTubeLink} from '../youtube-owner-video-links.mjs';
+import {isPublicSourceCard,validSourceCard} from '../source-quick-cards.mjs';
+import {ALL_FEED_CARDS} from '../quanta-feed.mjs';
+import {departmentFor} from '../quanta-context-placement.mjs';
+
+test('owner WKIVlHQRXF4 has exactly one source-backed Oracle Public/Media Quick Card',()=>{
+ const id='WKIVlHQRXF4';
+ const matches=REVIEWED_OWNER_VIDEO_LINKS.filter(row=>row.videoId===id);
+ assert.equal(matches.length,1,'One owner link must create exactly one record');
+ const video=matches[0];
+ assert.equal(video.title,'11 de julho de 2019','Title observed on the public YouTube watch page');
+ assert.equal(video.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(video.observedAt,'2026-11-22');
+ assert.equal(video.publishedAt,null,'Do not treat the title as a verified publication date');
+ assert.equal(video.publisherVerified,false,'Do not infer channel identity from the share link');
+ assert.equal(video.contentBoundary,'general-media','No unverified family or 21+ categorization');
+ assert.ok(validateOwnerYouTubeLink(video));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(card=>card.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1,'Reuse the existing player, do not make a second media viewer');
+ const card=cards[0];
+ assert.equal(card.featureUrl,video.sourceUrl);
+ assert.equal(card.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(card)&&validSourceCard(card));
+ assert.ok(ALL_FEED_CARDS.some(row=>row.id===card.id),'Owner URL must appear in the Oracle feed');
+ assert.equal(departmentFor(card),'media');
+ const mixed=readFileSync(new URL('../youtube-creator-mixed-card.mjs',import.meta.url),'utf8');
+ assert.match(mixed,/REVIEWED_OWNER_VIDEO_LINKS/,'The owner View More feed includes reviewed original links');
+ assert.match(mixed,/Load more videos/);
+});
