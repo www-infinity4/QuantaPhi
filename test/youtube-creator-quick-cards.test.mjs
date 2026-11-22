@@ -1,3 +1,4 @@
+import './youtube-owner-GPN7ZPXHR4g.test.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {YOUTUBE_CHANNEL,YOUTUBE_VIDEO_DATABASE,YOUTUBE_CREATOR_SOURCES,validateYouTubeVideo,mergeYouTubeVideos,searchYouTubeVideos} from '../youtube-creator-catalog.mjs';
