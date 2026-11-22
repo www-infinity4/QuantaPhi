@@ -19,7 +19,7 @@ function mockGithub(pathContent=sources){
  const called=[];
  const request=async(url,options)=>{
   called.push(String(url));
-  assert.equal(options.redirect,'error');
+  assert.equal(options.redirect,'manual','Cloudflare supports manual redirects; never follow source redirects');
   if(String(url).endsWith('/commits/main'))return Response.json({sha});
   const prefix='https://raw.githubusercontent.com/www-infinity4/QuantaPhi/'+sha+'/';
   assert.ok(String(url).startsWith(prefix),'host/commit is pinned to the verified owner repository');
@@ -64,6 +64,21 @@ test('a partial or unreachable source scan stays deferred with explicit next act
  const noNetwork=await inspectDeferredSources(job,{request:async()=>{throw Error('offline');},now});
  assert.equal(noNetwork.status,'pinned_commit_unavailable');
  assert.equal(recoveryDecision(job,noNetwork,{now}).requeue,false);
+});
+test('redirected commit or source bodies cannot supply recovery evidence',async()=>{
+ for(const redirectCommit of [true,false]){
+  const calls=[];
+  const inspection=await inspectDeferredSources(task(),{now,request:async(url,options)=>{
+   assert.equal(options.redirect,'manual');
+   calls.push(url);
+   if(url.endsWith('/commits/main')&&!redirectCommit)return Response.json({sha});
+   return new Response(JSON.stringify({sha,...sources}),{status:302,headers:{Location:'https://other.example/source'}});
+  }});
+  assert.equal(recoveryDecision(task(),inspection,{now}).requeue,false);
+  assert.ok(inspection.sources.every(s=>s.status!=='verified_source'));
+  assert.ok(calls.every(url=>!url.includes('other.example')));
+  if(redirectCommit)assert.equal(calls.length,1);
+ }
 });
 test('a real approval, permission or security hold cannot be rehabilitated as a technical guess',()=>{
  for(const blocker of ['security_hold','permission_denied','owner_authorization_required','biometric verification required','payment consent required']){

@@ -19,6 +19,7 @@ function fixture({denyPermission=false,failFirstSecret=false}={}){
  };
  const json=(data,status=200)=>Response.json({success:status<400,result:data,errors:status>=400?[{code:10000,message:'invalid'}]:[]},{status});
  async function request(url,opt){
+  assert.equal(opt.redirect,'manual','Cloudflare OAuth reads, writes and cleanup never follow bearer-token redirects');
   const u=new URL(url);const method=opt.method;
   events.push({path:u.pathname,method});
   if(u.pathname==='/client/v4/user/tokens/permission_groups'){

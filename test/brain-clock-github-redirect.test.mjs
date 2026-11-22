@@ -1,5 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import './brain-deferred-recovery.test.mjs';
+import './bubbles-work-receipt-readback.test.mjs';
+import './bubbles-oauth-client-bootstrap.test.mjs';
 import {githubReadNoRedirect} from '../workers/infinity-brain-clock/github-read-transport.mjs';
 
 const endpoint='https://api.github.com/repos/www-infinity4/QuantaPhi/commits/abc';
