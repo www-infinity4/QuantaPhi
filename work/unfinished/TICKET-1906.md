@@ -3,9 +3,9 @@ issue: 1906
 project: "Bubbles Identity & Verification Center"
 state: review_pending
 dot: "🟡"
-progress_percent: 38
+progress_percent: 40
 progress_basis: "Cloudflare stale gate fix and browser Verification Center source staged and tested; broader OAuth, real provider behavior, independent review, merge, release and two-account acceptance remain"
-sessions_spent: 3
+sessions_spent: 4
 sessions_remaining_estimate: unknown
 agent: "ChatGPT via authenticated GitHub connector"
 lease_id: null
@@ -14,16 +14,16 @@ task_session_id: null
 fence: null
 last_observed_at_utc: "2026-11-11T08:30:26.255Z"
 repo: www-infinity4/QuantaPhi
-branch: feat/unified-wallet-numeric-device-bindings-1906-20261122
+branch: feat/bubbles-byte-orb-color-passages-1906-20261122
 head_sha: "e03db1966bc60629094915580baeeff71faf24cb" # latest validated source head before this checkpoint
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/2119"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/2120"
 tests: "RED 44/45 at d22e0e01, provider-verification run 42987050045; GREEN 45/45 at 73b824a4, run 42987180622; account-connection checks green; real provider and physical Android acceptance pending"
 ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42987180622"
 merged: false
 deployed: false
 live_verified: false
 blocker: "Independent security review not submitted; real Google/GitHub/Cloudflare user OAuth, signed owner execution, Cloudflare deployment and two-account Android acceptance unverified"
-next_action: "Verify exact-head PR #2119 CI and source/security review; merge inactive code if policy permits; preserve production StarQuest auth until passkey enrollment proof"
+next_action: "Run exact-head PR #2120 CI, review/guard source-only merge, then independently verify real Android/website orb and wallet passage lab; original wallet auth unchanged"
 ---
 # TICKET-1906 — Bubbles Identity & Verification Center
 
@@ -95,3 +95,11 @@ The owner likens an account's enrolled phone identifiers to Christmas-tree bulbs
 - Existing [private GitHub StarCoin backup pilot](https://github.com/www-infinity4/QuantaPhi/blob/main/docs/STARCOIN-GITHUB-BACKUP-PILOT.md) already uses an owner-authorized GitHub App and per-account repository access, but it does **not automatically back up this new numeric device map**. A later encrypted device-map backup must explicitly require account consent, a private repository, independent restore keys and actual success receipts. GitHub Actions/source itself is not phone storage or wallet credentials.
 
 **Deployment hold:** no live number enrollment, no Android passkey ceremony, no server-issued/atomically consumed challenge, no D1 migration or new production wallet session; keep StarQuest and wallet recovery untouched until independent review and two-account physical-device testing.
+
+### Color passages + word-byte training wheels · November 22, 2026
+
+Continued the owner's hex-coded "passageways" visual window from merged [#2119](https://github.com/www-infinity4/QuantaPhi/pull/2119) and the first-word Bubbles handwriting/typing orb idea on [PR #2120](https://github.com/www-infinity4/QuantaPhi/pull/2120), cross-linked to [Complete Me AI #1927](https://github.com/www-infinity4/QuantaPhi/issues/1927). 
+New `bubbles-byte-assist.mjs` reports only the first word's UTF-8 byte count, first grapheme and size-clamped orb; optional deterministic local phrase suggestions are tap-to-apply, initially off, can fade or be disabled. Existing Bubbles composer integrates readable Android controls but **does not send any chat, change saved drafts, read wallet contents, call a model or claim work** when letters are typed.
+`colorPassageStatus` produces a per-tile 11-bulb match mask of the already verified color window. `wallet-color-passage-lab.html` and module show alignment/misalignment using **synthetic numbers only**. No real wallet keys, balances, signed grants, phone data, or other-user IDs are read. Visual equality never means account authentication or permission to transfer bytes.
+
+Security/release blockers: signed account session proof remains external to this helper; real two-phone wallet enrollment, encrypted owner GitHub backup, HTTPS data flow, Android WebView acceptance, and live Bubbles source release are not verified. This staged branch is not a deployed identity repair. Node tests are wired into the Bubbles unified CI; do not claim a merge/deployment until exact-head checks and readback confirm.
