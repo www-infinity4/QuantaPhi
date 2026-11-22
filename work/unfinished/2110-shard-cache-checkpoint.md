@@ -1,12 +1,12 @@
 ---
 canonical_issue: 2110
 project: "Cloudflare exit · app-owned distributed shard cache and local mesh server"
-subtask: "M02/M05 local owner server, encrypted replication and D1 export staging; no production cutover"
-state: ci_passed
+subtask: "M02 host install templates and M05 read-only D1 snapshot parity; no real deployment/cutover"
+state: review_pending
 dot: "🟡"
 progress_percent: 35
-progress_basis: "2/6 engineering tracks source-tested (encrypted fragment cache and local coordinator), plus private D1 staging; real replacement host, physical peers, recoverable migration, D1 query APIs, cross-account checks and live cutover not verified"
-sessions_spent: 2
+progress_basis: "Encrypted cache, local coordinator and deployment templates/parity source-tested; 0 real owner-host, Android, live D1 export/restore, production SQL API or cutover acceptance tracks verified"
+sessions_spent: 3
 sessions_remaining_estimate: unknown
 agent: "ChatGPT via connected GitHub"
 lease_id: null
@@ -14,14 +14,14 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: feat/repository-mesh-server-d1-staging-2110-20261122
-head_sha_at_checkpoint: "1078e415d3ff4649a2aea014ab971185f165c281"
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/2115"
+branch: feat/mesh-deployment-d1-parity-2110-20261122
+head_sha_at_checkpoint: "366b926e8a001c1caf2309fa6e5c8fcc0af81d88"
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/2116"
 merged: false
 deployed: false
 live_verified: false
-blocker: "No verified live replacement host, production HTTPS, real Android peer fleet, or verified D1 SQL export/import and read/write API cutover; N-of-N scheme depends on owner encrypted copy"
-next_action: "Review exact-head secure mesh server PR #2115 and CI; merge source-only when permitted, then verify actual HTTPS owner host and two enrolled Android app caches before any D1 cutover"
+blocker: "No verified owner-hosted always-on machine or public HTTPS, no real Android peer enrollment, no independent D1 export ledger receipts or production SQL API; keep old D1 authoritative"
+next_action: "Review exact-head PR #2116 and security boundary; merge inactive source when eligible, then discover an actually owned always-on host and prove verified HTTPS readback before transferring synthetic app cache data"
 ---
 
 # App-owned shard-cache prototype · November 22, 2026
@@ -57,3 +57,15 @@ Independent source/security review of the exact PR head; correct any issues; mer
 - Physical Android, actual HTTPS domain, billed Google host, two-account isolation, revoked phone sessions, recovery under malicious peers, signed runner, erasure coding, live D1 export, data-level reconciliation and production cutover **remain unverified**. No deployed migration or complete Brain repair claimed.
 
 **Next bounded action:** source/security review and exact-head CI of PR #2115, guarded source merge if permitted. Next *live* action requires a verifiably owned HTTPS server with persistent disk before enrolling real phones or copying any D1 records.
+
+## Deployment + D1 parity source pass · November 22, 2026
+
+- Prior [PR #2115](https://github.com/www-infinity4/QuantaPhi/pull/2115) is **merged** at `eb58aa2caa2583447c8d74780085b59778247a27`. The app-cache mesh source exists on main; **no live host or D1 migration** verified.
+- New [PR #2116](https://github.com/www-infinity4/QuantaPhi/pull/2116) is a source-only deployment/migration rehearsal: versioned `quantaphi-mesh.service` (dedicated OS user, localhost-only bind, private persistent SQLite, systemd hardening), free-software Caddy HTTPS reverse-proxy example, owner-host runbook, and `d1-verify.py` read-only table count/schema/content fingerprinting for *private staged SQLite snapshots*.
+- Read-only parity test exercises synthetic BLOBs, same rows with different insertion order, mismatched ledger-like balances, omitted tables, missing files and refusal of an import/write command. It reports only hashes/counts/table names; **does not certify completeness of an actual Cloudflare export**.
+- CI at source head `366b926e8a001c1caf2309fa6e5c8fcc0af81d88`: [vault regressions 45067558363](https://github.com/www-infinity4/QuantaPhi/actions/runs/45067558363) **40/40 green**, plus Bubbles, wallet/search, payout and image source checks. Before any merge, update exact-head receipts for this checkpoint change.
+- External blockers: never-paid Cloudflare alternative doesn't magically provide electricity, public IPv4/IPv6, physical host or disk. No actual Google compute endpoint observed; installing templates on a real host needs access/config, verified TLS and user action. No DNS/billing/OAuth/StarQuest/wallet/worker modifications performed.
+- Zero-downtime D1 migration is **not proven**. Source record counts, final write fence, per-user permissions, ledger totals/invariants, sequences/triggers/indexes, replay, dual read, rollback and independent restore still require separate real receipts.
+- Replication is not an absolute guarantee. Every unique N-of-N fragment index must be retrievable with its decryption key or reconstructed from a complete separate backup; simultaneous replica and backup loss cannot be repaired using a hash alone.
+
+Next safe executable action: exact-head test/review and guarded merge of inactive PR #2116. A verified owner-hosted always-on HTTPS endpoint and private disk are needed before enrolling real phones or attempting any D1 shadow movement.
