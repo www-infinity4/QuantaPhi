@@ -221,6 +221,12 @@ const reviewedLinks=[{
  sourceUrl:'https://www.youtube.com/watch?v=lx2C0wK2pak',
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
+},
+{
+ videoId:'_0T9WJ3ekWU',title:'YouTube video _0T9WJ3ekWU (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=_0T9WJ3ekWU',
+ observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
 }
 ];
 export function validateOwnerYouTubeLink(row){
