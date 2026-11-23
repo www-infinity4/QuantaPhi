@@ -1,12 +1,31 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {webcrypto} from 'node:crypto';
+import * as identityCore from '../workers/unified-wallet/device-number-core.mjs';
 import {
  issueNumericDeviceId,createWalletDeviceLink,accountDeviceChain,
  deviceChallengeMessage,verifyDeviceChallenge
 } from '../workers/unified-wallet/device-number-core.mjs';
 
 const crypto=webcrypto, ACCOUNT='account-user-a', SECOND='account-user-b';
+test('New World user number stays stable across devices and retains all 256 hash bits as decimal text',async()=>{
+ const a=await identityCore.globalUserIdentity(ACCOUNT,crypto);
+ const again=await identityCore.globalUserIdentity(ACCOUNT,crypto);
+ const b=await identityCore.globalUserIdentity(SECOND,crypto);
+ assert.deepEqual(a,again);
+ assert.match(a.number,/^\d{78}$/);
+ assert.notEqual(a.number,b.number);
+ const expected=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('QuantaPhi-global-user-id-v1\n'+ACCOUNT));
+ assert.equal(BigInt(a.number),BigInt('0x'+Buffer.from(expected).toString('hex')));
+ assert.equal(a.version,'nwi-v1');assert.equal(a.scope,'quantaphi');assert.equal(a.isAuthentication,false);
+ assert.doesNotMatch(JSON.stringify(a),/account-user|username|email|token|balance/);
+ assert.deepEqual(await identityCore.globalUserIdentity(42,crypto),await identityCore.globalUserIdentity('42',crypto));
+});
+test('global user identity requires a canonical account key and cryptographic hashing',async()=>{
+ for(const value of [null,undefined,'',' account-a','a\nb','a'.repeat(160),{},1.5,NaN,Number.MAX_SAFE_INTEGER+1])
+  await assert.rejects(identityCore.globalUserIdentity(value,crypto),/account/i);
+ await assert.rejects(identityCore.globalUserIdentity(ACCOUNT,{}),/cryptographic/i);
+});
 async function pair(){
  const kp=await crypto.subtle.generateKey({name:'ECDSA',namedCurve:'P-256'},true,['sign','verify']);
  const jwk=await crypto.subtle.exportKey('jwk',kp.publicKey);

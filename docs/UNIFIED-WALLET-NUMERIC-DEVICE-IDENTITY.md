@@ -151,3 +151,41 @@ block its owner from using a valid recovery method. The private wallet ledger
 remains authoritative. Hardware enrollment, authorized private GitHub backup
 upload, actual signed session issuance, native Android UI and D1 migration
 remain separate unfinished work, not deployed by this PR.
+
+
+## New World ID · stable account number (`nwi-v1`)
+
+The device enrollment pilot above remains separate. `globalUserIdentity` adds a
+read-only **account label** to existing authenticated user responses:
+
+- Input: the immutable server-verified account key (StarQuest generates
+  `acct_` plus a random UUID), never a username, email, phone number, password,
+  government ID or token. The namespace is exactly
+  `QuantaPhi-global-user-id-v1` plus a newline plus the canonical account key.
+- SHA-256 retains all256 bits, encoded as exactly **78 decimal characters**,
+  including leading zeroes. Keep the value as a string; JSON numbers lose digits.
+  The descriptor contains `version:nwi-v1`, `scope:quantaphi`, `number`, and
+  `isAuthentication:false`. This is a QuantaPhi application account identifier.
+- The same existing account receives the same number across devices/recovery;
+  adding or revoking devices does not change it. Separate account keys produce
+  independent hashes; cryptographic collision resistance is not an absolute
+  mathematical uniqueness guarantee. Account merging would require a separate
+  reviewed mapping policy.
+- Unified Wallet `/v1/wallet/identity` and `/v1/wallet/state` return
+  `user.globalIdentity`. Connector `/session` returns `globalIdentity` only after
+  verifying its existing device bearer or account-bound temporary pairing.
+  User-supplied IDs in query/body do not select an account, and this label is
+  never an authentication credential, owner permission or spending approval.
+- No additional database write, D1 migration, public directory or identity
+  backup is needed. Hashing is not encryption or anonymity; keep account labels
+  out of public activity/logs unless independently required and authorized.
+- The existing `/bubbles-accounts.html` Verification Center displays the number
+  with a Copy account number button. Its identity check is independent of
+  optional provider records. Refresh/rejection clears it and stale older
+  account requests cannot overwrite the current display. It is not stored in
+  localStorage/sessionStorage.
+
+Tests: existing device-number, wallet-account-isolation, connector-router and
+provider-verification suites; `test/global-user-identity.browser.cjs` exercises
+mobile360/393 and desktop1280 using synthetic accounts only. Real production
+source readback and actual owner/Android acceptance remain separate receipts.
