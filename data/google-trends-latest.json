@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T07:01:43.000316Z",
+  "checked_at": "2026-11-23T07:31:26.814391Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "iowa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T07:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
+        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
+        "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRPyfpIOvVq4awVixcRzbL8MDzxLTdGaEjrjG5IbsOAHGK_2hjw7G2qiaQlMs",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
+          "title": "US Army intends to detonate bomb-making material in Iowa on Wednesday despite a court pause. Here’s what we know",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRPyfpIOvVq4awVixcRzbL8MDzxLTdGaEjrjG5IbsOAHGK_2hjw7G2qiaQlMs"
+        },
+        {
+          "url": "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
+          "title": "Army update on Iowa Army Ammunition Plant",
+          "publisher": "Army.mil",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRziwWClQT0pD90Npdp7OvkGRE_Vf3FyUZpXjfuUNg8zN2aUOKzI1nYP8er6I0"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html",
+          "title": "The Army Rejected a Cleaner Option to Destroy Lead-Laced Explosives in Iowa",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmYzWu-lgSL5VzF2TjrTBBMOWnm152NrStpBLxYIgz8xrg-ush_ULlRVYES1A"
+        }
+      ]
+    },
+    {
+      "query": "og anunoby",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T07:10:00Z",
+      "related_news_urls": [
+        "https://www.postingandtoasting.com/knicks-game-previews/91455/game-preview-knicks-vs-trail-blazers-november-21-2026",
+        "https://www.hoopsrumors.com/2026/11/injury-notes-knicks-hawks-mathurin-murray-boyles.html",
+        "https://www.nba.com/knicks/photos/knicks-on-the-court-thursday-november-21-vs-portland-trail-blazers"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1idgDOKKdezwinX9aF2uH1tbMYDdW8yYBrb-s-e4I3zwnzfWkq2OrHKPf-o",
+      "image_credit": "Posting and Toasting",
+      "news": [
+        {
+          "url": "https://www.postingandtoasting.com/knicks-game-previews/91455/game-preview-knicks-vs-trail-blazers-november-21-2026",
+          "title": "Game Preview: Knicks vs Trail Blazers, November 21, 2026",
+          "publisher": "Posting and Toasting",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1idgDOKKdezwinX9aF2uH1tbMYDdW8yYBrb-s-e4I3zwnzfWkq2OrHKPf-o"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/injury-notes-knicks-hawks-mathurin-murray-boyles.html",
+          "title": "Injury Notes: Knicks, Hawks, Mathurin, Murray-Boyles",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgDv8YHYzfxMrbbhTt0lE7LZltEidbyvLuoTL5hmvctZV5QrHpKljZmSq9ns"
+        },
+        {
+          "url": "https://www.nba.com/knicks/photos/knicks-on-the-court-thursday-november-21-vs-portland-trail-blazers",
+          "title": "Knicks on the Court: Thursday, November 21 vs. Portland Trail Blazers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1hpIk9XW132ssb-7AxB33pB7zl1ExrzklgE5bYA3YvhF255h2fBNAGxYRbM"
+        }
+      ]
+    },
+    {
+      "query": "elon musk net worth",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T07:00:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks",
+        "https://www.billionaires.africa/2026/11/21/american-billionaire-elon-musk-loses-73-8-billion-in-a-day-as-worlds-five-richest-shed-146-billion/",
+        "https://www.modernghana.com/videonews/cgtn/2/755195"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks",
+          "title": "Elon Musk's Net Worth Takes a $64 Billion Hit in a Day as Tesla and SpaceX Falter Amid AI Bubble Risks",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM"
+        },
+        {
+          "url": "https://www.billionaires.africa/2026/11/21/american-billionaire-elon-musk-loses-73-8-billion-in-a-day-as-worlds-five-richest-shed-146-billion/",
+          "title": "World’s five richest lose $146B as Nasdaq falls 5.3%",
+          "publisher": "Billionaires.Africa",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrM2A0AkOu-D_poIHvQyxbHLtnC__MJaTrlFq22BEtk4hLs076Q7S6QPN5QJ4"
+        },
+        {
+          "url": "https://www.modernghana.com/videonews/cgtn/2/755195",
+          "title": "Musk’s political spending raises business questions",
+          "publisher": "Modern Ghana",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqhobdEJp2Q9ygiPUdKRs3AzQYTHSpDaXEPcsC54EA4iHUUNohgU_cMKwYnQ"
+        }
+      ]
+    },
+    {
+      "query": "la noire",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T06:50:00Z",
+      "related_news_urls": [
+        "https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121",
+        "https://en.gamegpu.com/news/igry/rockstar-australia-predpolozhitelno-rabotaet-nad-prodolzheniem-l-a-noire",
+        "https://bsinews.id/en/rockstar-la-noire-zodiac-sequel"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkXhQCnvAJhnWIPiQ0ntqPr-UI87Qz92JQGG-aUdANla16bzaC-ubcN5rcdG8",
+      "image_credit": "GAMINGbible",
+      "news": [
+        {
+          "url": "https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121",
+          "title": "Rockstar Games' next game revealed as GTA 6 ending confirms long-standing theory",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkXhQCnvAJhnWIPiQ0ntqPr-UI87Qz92JQGG-aUdANla16bzaC-ubcN5rcdG8"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/rockstar-australia-predpolozhitelno-rabotaet-nad-prodolzheniem-l-a-noire",
+          "title": "Rockstar Australia is reportedly working on a sequel to LA Noire.",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqzHP40rRGZdtvktRV0JkSNJ-z8oYNTD7gsjm9cqgCh9jWxoTJhyqNYsk5U0"
+        },
+        {
+          "url": "https://bsinews.id/en/rockstar-la-noire-zodiac-sequel",
+          "title": "Rockstar LA Noire 2 Leak Points to Zodiac Killer Story",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzQ-Bjeod9WvQSYR-rL497TWm5vbD5ug8N9TEWsxab4FB3zEHcUJWUWpeaXWs"
+        }
+      ]
+    },
+    {
+      "query": "last mission of chapter 1 gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T06:50:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/int-en/gta-6-beginners-guide",
+        "https://www.polygon.com/gta-6-guides-walkthroughs-tips/",
+        "https://www.vice.com/en/article/gta-6-chapter-1-length-missions-missable-content/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2VSE2DMTknZ0n2Wb6vmiD-nZXj4_WSER-JwIbG41cCm2w1icS4-wP2NYysMM",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/int-en/gta-6-beginners-guide",
+          "title": "GTA 6 beginner’s guide: Essential tips and hidden mechanics",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2VSE2DMTknZ0n2Wb6vmiD-nZXj4_WSER-JwIbG41cCm2w1icS4-wP2NYysMM"
+        },
+        {
+          "url": "https://www.polygon.com/gta-6-guides-walkthroughs-tips/",
+          "title": "GTA 6 guides and walkthroughs",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwTKyw3cjWnSQYLk4lBXv602oW4wc-f_8JAMnj5qZQrJhZkh1uy9XaunAXkz4"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-1-length-missions-missable-content/",
+          "title": "How Long Is Chapter 1 in GTA 6? Final Mission and Missable Content",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMWAwOWlAnTGxtGl7PAMwbkpP0D3bZUYOEnGwcxzlaaCwHAXvErNRKQi4xPY"
+        }
+      ]
+    },
     {
       "query": "spacex",
       "approx_searches": "2000+",
       "published_at": "2026-11-23T06:20:00Z",
       "related_news_urls": [
-        "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
-        "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
-        "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
+        "https://finance.yahoo.com/technology/ai/articles/elon-musks-tesla-spacex-formed-102000717.html",
+        "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
+        "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodkzIaTFd6VmC519TU_LPI6JSLMJu_yUNhKBbq6zgicF7vLECClVzXry-WEE",
-      "image_credit": "Space",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVfrmrC3rulYFeaqs1x7xOp51LXGD9ihU3rX3WGmD0fcnjV4cLw3Bdbi5wybE",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
-          "title": "SpaceX launches classified mission for US Space Force from California (video)",
-          "publisher": "Space",
+          "url": "https://finance.yahoo.com/technology/ai/articles/elon-musks-tesla-spacex-formed-102000717.html",
+          "title": "Elon Musk's Tesla and SpaceX Each Formed a Special Committee to Explore a Merger as His AI Spending Accelerates. Here's Why Combining Them Could Reshape How Investors Value Tesla's",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodkzIaTFd6VmC519TU_LPI6JSLMJu_yUNhKBbq6zgicF7vLECClVzXry-WEE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVfrmrC3rulYFeaqs1x7xOp51LXGD9ihU3rX3WGmD0fcnjV4cLw3Bdbi5wybE"
         },
         {
-          "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
-          "title": "SpaceX launches intelligence-gathering satellites for the National Reconnaissance Office",
-          "publisher": "Spaceflight Now",
+          "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
+          "title": "Is SpaceX-Tesla Merger Imminent?",
+          "publisher": "Puck",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNdgRDF5voJPP7m-It4fuBIWGmnf4aSFw0QIdorsrJqNxDb087YgfVUvT6qG8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9cRYnHyQK9fhKeKu3lQMdNgcdZ7nIFEFljsQBp3V9oGgoBQnjAXYvcPphKo"
         },
         {
-          "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/",
-          "title": "SpaceX West Coast Team Sets Record with Quick Turnaround Between Falcon Liftoffs",
-          "publisher": "Noozhawk",
+          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
+          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2mExXpvdacwhx-zsy5RULTIuvWHEoRTvnt4weo2N7xC_DRoRiJRg0u-d15qo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWCZqqEwfd9ld7NePLhuzT9I3ifd9pPA6LVh9ESnrTG-rXx-9TX4Wt_LeGbc"
+        }
+      ]
+    },
+    {
+      "query": "ben wang",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T06:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
+        "https://variety.com/2026/film/box-office/sunrise-on-the-reaping-box-office-hunger-games-opening-weekend-exceeds-expectations-1236953061/",
+        "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ12dO5pH53RfAQp9Yhvy5AH_J4yAwSCvijcldrN9l5a_C_qG9jyrE7RtJAuYA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
+          "title": "‘Hunger Games’ Rebounds With $120 Million Opening for ‘Sunrise on the Reaping’ at Box Office",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ12dO5pH53RfAQp9Yhvy5AH_J4yAwSCvijcldrN9l5a_C_qG9jyrE7RtJAuYA"
+        },
+        {
+          "url": "https://variety.com/2026/film/box-office/sunrise-on-the-reaping-box-office-hunger-games-opening-weekend-exceeds-expectations-1236953061/",
+          "title": "Box Office: ‘Sunrise on the Reaping’ Reignites ‘Hunger Games’ Franchise With $120 Million Debut",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHdUkza5rsK6M8QyTnbKmmPGCg3S2WGsqrrvpzKJcpUTaI_cekC7NO9dN4EI"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review",
+          "title": "'Sunrise on the Reaping' feels like sunset for the 'Hunger Games' franchise",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMSv1HxkFwHITnu11W46cMp-cT8dTvxku1B8N66NLsCIGvaD4OwkbM-M09V9k"
         }
       ]
     },
@@ -48,7 +258,7 @@
       "related_news_urls": [
         "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/",
         "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html",
-        "https://cnnespanol.cnn.com/2026/11/21/mexico/quien-es-chapo-isidro-detenido-beltran-leyva-sinaloa-eeuu-orix"
+        "https://apnews.com/article/mexico-capo-captura-chapo-isidro-historial-4833e5a93c3bdbc7def3ea466e954c7a"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9WSWoEEvOYNR5_Ez7bNkocTpTejIbVy1RzIUuB1Bztu9xiQOfLaOGR27MzI",
       "image_credit": "PolíticoMX",
@@ -68,11 +278,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qx89T4ry8eY9gHGWsC59xB10O6j-XE1EV2xohHA6SPUf8MAtLRbqskmGUNE"
         },
         {
-          "url": "https://cnnespanol.cnn.com/2026/11/21/mexico/quien-es-chapo-isidro-detenido-beltran-leyva-sinaloa-eeuu-orix",
-          "title": "Quién es el Chapo Isidro, el cabecilla criminal de los Beltrán Leyva detenido en Sinaloa con ayuda de EE.UU.",
-          "publisher": "CNN en Español",
+          "url": "https://apnews.com/article/mexico-capo-captura-chapo-isidro-historial-4833e5a93c3bdbc7def3ea466e954c7a",
+          "title": "Antes de ser detenido, el líder criminal mexicano “El Chapo Isidro” pasó de narco menor a capo",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9ot25-pt_duC0Tx1nYR6RpFPi-nrdjWPBPMg-QHvNIyWczgOUFlOojaS4YrE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS16I2tHZY6WNS61tCVhKgKInSNorUH9PdWMBnSZAzunLuV6psfixW4Y6KOvws"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "space4games",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY61z6-KcLji_L5ZYCSohd7AAxSya-Wpueh-D9BLgjxXQcJQ63JO51oMhmeX0"
-        }
-      ]
-    },
-    {
-      "query": "charlotte fc vs chicago fire fc standings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/report/_/gameId/401933730",
-        "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
-        "https://www.charlottefootballclub.com/news/full-time-clip-pep-biel-last-minute-winner-gives-charlotte-fc-2-1-win-in-match-one"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhoEgBTAdDaLlx6IzVDJnqNLSK88q_UJcjnnHwStCw1ejTgnJIBtO2XSlX2IQ",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/report/_/gameId/401933730",
-          "title": "Chicago 1-2 Charlotte (Nov 22, 2026) Game Analysis",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhoEgBTAdDaLlx6IzVDJnqNLSK88q_UJcjnnHwStCw1ejTgnJIBtO2XSlX2IQ"
-        },
-        {
-          "url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
-          "title": "Matchday | Chicago Fire FC Opens 2026 MLS Cup Playoffs Against Charlotte FC",
-          "publisher": "Chicago Fire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-4flr6rdXFMosRJ7FG5sGbhblx4_lu2m_8apgl6o-SBx0PfvSBqR1a7UMsQ0"
-        },
-        {
-          "url": "https://www.charlottefootballclub.com/news/full-time-clip-pep-biel-last-minute-winner-gives-charlotte-fc-2-1-win-in-match-one",
-          "title": "Full-Time Clip: Pep Biel Last-Minute Winner Gives Charlotte FC 2-1 Win in Match One",
-          "publisher": "Charlotte FC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXBmKsstAjv-Icj3ykoNJhDE7vq4Tlb_cN43Akv1NzLIlAMyJITyLiUoT88OA"
-        }
-      ]
-    },
-    {
-      "query": "cyberleek",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T05:50:00Z",
-      "related_news_urls": [
-        "https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs",
-        "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
-        "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxy4VS-DHLgwspxrWYEEdFimRzBt-_nu871flTk1joAU-S8TLJgLAd7AmI10Y",
-      "image_credit": "HotHardware",
-      "news": [
-        {
-          "url": "https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs",
-          "title": "Can My PC Run GTA 6? Minimum And Recommended Specs To Expect",
-          "publisher": "HotHardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxy4VS-DHLgwspxrWYEEdFimRzBt-_nu871flTk1joAU-S8TLJgLAd7AmI10Y"
-        },
-        {
-          "url": "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
-          "title": "The anonymous hacker Cyberleek releases an Xbox build of 'GTA VI'",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-svtkRS8YlnQ5rcYqmUH7sZ-mNM5N14hkhAJohZzN3KLnirybnE9Z2DTUON4"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
-          "title": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzB5jyM-W38qq5JoQTPtBljzDrw3TGHQ7wm3gAqnYCo461x1NexLj3t-Sn9Uc"
-        }
-      ]
-    },
-    {
-      "query": "criminal profile gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T05:50:00Z",
-      "related_news_urls": [
-        "https://www.clarin.com/us-news/how-the-criminal-profile-works-in-gta-6-karma-and-honor-system-explained_0_LQkpy3b2Nm.html",
-        "https://www.techpowerup.com/354843/rockstar-says-gta-6-encourages-empathy-a-first-for-the-series",
-        "https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiGujSYSmqsan7CrvyhVu84CefoXlK9qNwQAZvKUcsyLO-KHJWoFf2Y_qUHI",
-      "image_credit": "Clarin.com",
-      "news": [
-        {
-          "url": "https://www.clarin.com/us-news/how-the-criminal-profile-works-in-gta-6-karma-and-honor-system-explained_0_LQkpy3b2Nm.html",
-          "title": "How the Criminal Profile works in GTA 6: Karma and honor system explained",
-          "publisher": "Clarin.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiGujSYSmqsan7CrvyhVu84CefoXlK9qNwQAZvKUcsyLO-KHJWoFf2Y_qUHI"
-        },
-        {
-          "url": "https://www.techpowerup.com/354843/rockstar-says-gta-6-encourages-empathy-a-first-for-the-series",
-          "title": "Rockstar Says GTA 6 Encourages Empathy, a First for the Series",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR2KcSbhTMtHTIZRJN32pcmCiKycJ1gvcyHx90KxchF467Raxf9BkMKOKZZHg"
-        },
-        {
-          "url": "https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs",
-          "title": "GTA 6's Jason and Lucia Will Start as Small-Time Criminals Who Have to Work Up to High-Value Jobs",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS7jY1GCvb0dzGwtIGhiJngFeAc2e_y-g0xwUTRQhqcz0ztDhO2CSE9nGFf8"
-        }
-      ]
-    },
-    {
-      "query": "dow jones stock markets",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T05:40:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
-        "https://www.economist.com/the-world-in-brief/2026/11/23/e6e19a5b-7c86-42da-a814-be646f87075c",
-        "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
-          "title": "S&P 500 futures rebound sharply to rise 2%, kick-starting shortened week after tech rout: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ"
-        },
-        {
-          "url": "https://www.economist.com/the-world-in-brief/2026/11/23/e6e19a5b-7c86-42da-a814-be646f87075c",
-          "title": "World in Brief: Asian tech stock sell-off continues; COP31 collapses",
-          "publisher": "The Economist",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHcZWSWAJW_7SuSVVMWjAzJhiQ_-H3XDsc1dTlgbVsP0pfvJT6m5CifP4TwI"
-        },
-        {
-          "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
-          "title": "US futures bounce as Asia scrambles to slow AI stocks rout",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVhLJKWShT1dYqJWWVKnuX3QYdK9ohBeuly8JuRCziONja505_DNNNz2rgRfU"
-        }
-      ]
-    },
-    {
-      "query": "weather los angeles",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T05:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
-        "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
-        "https://earthquake.usgs.gov/earthquakes/eventpage/ci41364111/pager"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLZiyrwIW97a0bhV4ZS-1xtZhv_HTnqMzLSAV3xJGrAgBEIFv6gHp-adH0alY",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
-          "title": "Another quake rattles Southern California, this time off the coast of San Pedro",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLZiyrwIW97a0bhV4ZS-1xtZhv_HTnqMzLSAV3xJGrAgBEIFv6gHp-adH0alY"
-        },
-        {
-          "url": "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
-          "title": "Magnitude 4.4 earthquake hits near downtown Los Angeles",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuougOjEI0F8KJayXPoLssqpnonufsM1ltc01eqts3ZIvfgXcXkKqs7dFQBag"
-        },
-        {
-          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41364111/pager",
-          "title": "M 4.4 - 1 km NNW of Commerce, CA",
-          "publisher": "USGS (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEe_kK6W7L7FRYFyAgoPocPWAe8asG_ij2hJAVT_bH8xarsDgfzlcClSJDHCg"
-        }
-      ]
-    },
-    {
-      "query": "king tides flooding",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T05:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
-        "https://www.kcra.com/article/suisun-city-flood-preparedness-king-tides-november-weather/74503481",
-        "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
-          "title": "California coast faces extreme flood threat on holiday; water could inundate Bay Area airports",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM"
-        },
-        {
-          "url": "https://www.kcra.com/article/suisun-city-flood-preparedness-king-tides-november-weather/74503481",
-          "title": "Suisun City prepares for king tides and stormy weather this week",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvotJxWY5t69LFuUTuuDOSpwNhEuU0CGSE3vSJjiMx7WgBsifI-5Nq_mBWKM"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537",
-          "title": "California prepares for flooding, rain and wind as Thanksgiving approaches",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVrfdNBBD3OYaBDkr6XyI3nIwIYt2pW8E1Rci5pDDBWTzW24PzXTeAkcneW0Y"
         }
       ]
     }
