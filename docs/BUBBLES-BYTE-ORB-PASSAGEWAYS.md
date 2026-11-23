@@ -45,3 +45,21 @@ node --check bubbles-byte-assist.mjs
 node --check wallet-color-passage-lab.mjs
 node --check bubbles-ai.js
 ```
+
+## Symbolic signal-cavity receiver · November 22, 2026 extension
+
+The owner described a stream interpreted as black standby → white available light → yellow arriving data → red inspection → orange selection. Blue/green/purple represent the specialized result paths. The intermediate colors may be **control-plane guides**, not pixels painted onto the finished screen. The "hole" or cavity is represented as an aperture mask that passes or blocks a packet without having its own visible color.
+
+This is now a small, fully **synthetic** and **bounded** software model in `bubbles-color-cavity.mjs`, and an opt-in receiver demo in `wallet-color-passage-lab.html` + `wallet-color-passage-lab.mjs`. It is **not** an engineering assertion that television receivers process black/white/yellow in that order. Real broadcasts use encoded stream formats, decoding and rendering; LCDs and OLEDs form their light with different physical technologies. Color identifiers and software filter choices do not establish an independent transport protocol.
+
+- `routeCavityFrame` accepts at most 128 **metadata-only** synthetic packets, each with a routing label and a byte count, with no content, user identifiers, access tokens or device state. It selects only a caller-requested channel through a Boolean aperture array; invalid channels, payloads, byte counts, masks and oversized batches fail closed.
+- `COLOR_CAVITY_STAGES` carries the labels black (standby), white (illumination), yellow (incoming), red (inspect), orange (decide), blue (research), green (build), purple (review). The output lists the requested channel and count/weight only; it never claims physically emitted RGB filter colors or a real decoded payload.
+- `reduceCavityFrames` sums bounded frame receipts without accumulating raw packets. Simulated trillions of bubbles are a **scaling metaphor**, not a claim to allocate or process trillions of browser elements.
+- The demonstration offers an explicit **Enable white signal**, requested-channel picker, a cavity-open/closed toggle, one-frame advance and optional slow playback. No playback starts by itself; it stops on page hide. Reduced-motion preference disables auto-play, and a static frame-step remains available. All controls are locally synthetic and never unlock the wallet.
+- Even perfect visual alignment is not actual authentication, data transfer or money movement. An authenticated server is required for any real device stream. Neither this patch nor the existing RGB window branch authorizes any new database, login or permission.
+
+Source tests: `node --test test/bubbles-color-cavity.test.mjs test/wallet-color-passage-lab.test.mjs`, included in the Bubbles unified CI. Exact-head checks and live-device acceptance remain separate. PR #2120 stays in draft while the pre-existing public Bubbles health endpoint returns `Bubbles health: missing JSON response`.
+
+Display technology background:
+- Dolby Professional Support, [Display Technologies Overview](https://professionalsupport.dolby.com/s/article/Display-Technologies-Overview)
+- Stanford, [Display technologies for vision science](https://stanford.edu/~wandell/data/papers/2016-Handbook-DisplayCharacterization-Galleys.pdf)
