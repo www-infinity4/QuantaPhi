@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T02:01:19.400709Z",
+  "checked_at": "2026-11-23T02:32:54.407680Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dylan larkin",
+      "query": "raheem morris",
       "approx_searches": "500+",
-      "published_at": "2026-11-23T01:40:00Z",
+      "published_at": "2026-11-23T02:10:00Z",
       "related_news_urls": [
-        "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin/",
-        "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/22/red-wings-might-be-adjusting-their-ask-in-any-dylan-larkin-trade/92913365007/",
-        "https://sports.yahoo.com/videos/friedman-red-wings-adjusted-thinking-231709196.html"
+        "https://sports.yahoo.com/articles/tom-brady-answers-whether-san-160500176.html",
+        "https://www.ninersnation.com/san-francisco-49ers-coaching-staff/165995/raheem-morris-wont-make-excuses-for-the-49ers-defense-explains-missed-opportunities",
+        "https://bvmsports.com/2026/11/16/is-the-49ers-defense-bad-shorts/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmgNVZRS3GYN4KSkWXO2_RoFwjDlEWZdVEl1rqE1vkzVXpn7-Y_gZSR_7VrZY",
-      "image_credit": "Sportsnet.ca",
-      "news": [
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin/",
-          "title": "Red Wings adjusting ask for Dylan Larkin",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmgNVZRS3GYN4KSkWXO2_RoFwjDlEWZdVEl1rqE1vkzVXpn7-Y_gZSR_7VrZY"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/22/red-wings-might-be-adjusting-their-ask-in-any-dylan-larkin-trade/92913365007/",
-          "title": "Red Wings might be adjusting their ask in any Dylan Larkin trade",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXaNceQ3rYjJpkbpXGTxvGHTjIlxRt1gcpKVXaRO2p8J5h9yI6MUFPN5X_cso"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/friedman-red-wings-adjusted-thinking-231709196.html",
-          "title": "Friedman: Red Wings \"Have Adjusted\" Thinking In Dylan Larkin Trade Ask",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkJI7rKHIPNlkTY-pfM-4joaYcyLcknCJAiVrjai-Kj-tjsLyJkOXZHfVH3BM"
-        }
-      ]
-    },
-    {
-      "query": "michael hage",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:40:00Z",
-      "related_news_urls": [
-        "https://www.montrealhockeyfanatics.com/nhl-team/montreal-canadiens/michael-hage-reveals-why-he-chose-not-to-sign-with-the-canadiens-this-season",
-        "https://sportsnaut.com/nhl/montreal-canadiens/canadiens-news-zharovsky-hage-mittelstadt-new-habs-lines",
-        "https://insidetherink.com/montreal-canadiens-prospect-pipeline-is-taking-over-four-major-hockey-leagues/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB5mcLOGtlNdNmvTiYjEMq88sFh6AqwbdzLiK-czNaQ8zVO15t8FE-P6bKOCk",
-      "image_credit": "Montreal Hockey Fanatics",
-      "news": [
-        {
-          "url": "https://www.montrealhockeyfanatics.com/nhl-team/montreal-canadiens/michael-hage-reveals-why-he-chose-not-to-sign-with-the-canadiens-this-season",
-          "title": "Michael Hage reveals why he chose not to sign with the Canadiens this season",
-          "publisher": "Montreal Hockey Fanatics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB5mcLOGtlNdNmvTiYjEMq88sFh6AqwbdzLiK-czNaQ8zVO15t8FE-P6bKOCk"
-        },
-        {
-          "url": "https://sportsnaut.com/nhl/montreal-canadiens/canadiens-news-zharovsky-hage-mittelstadt-new-habs-lines",
-          "title": "Habs Daily: Top Prospect Highlights, New Lines, Pugachyov Shorty, Hutson Excellence",
-          "publisher": "Sportsnaut",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7131e0Mw4ilMG6gRwcHwcTiq9iAwPMPkXiqIXgpgsumc6XXdDgxH4TS_IZic"
-        },
-        {
-          "url": "https://insidetherink.com/montreal-canadiens-prospect-pipeline-is-taking-over-four-major-hockey-leagues/",
-          "title": "Montreal Canadiens Prospect Pipeline Is Taking Over Four Major Hockey Leagues",
-          "publisher": "Inside The Rink",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpQAQQUaqeAkm3f8L1_teBiDQksgu8QQ7g0HAc1Ncv91DLJ41REE1cJlqL1o"
-        }
-      ]
-    },
-    {
-      "query": "robert lewandowski",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:40:00Z",
-      "related_news_urls": [
-        "https://przegladsportowy.onet.pl/pilka-nozna/mls/chicago-fire-charlotte-fc-relacja-na-zywo-lewandowski-z-golem-live/v36773e",
-        "https://sportowefakty.wp.pl/pilka-nozna/1285659/na-klopoty-lewandowski-zobacz-bramke-polaka-w-play-off",
-        "https://sport.interia.pl/robert-lewandowski/na-zywo-chicago-fire-charlotte-fc-w-1-8-finalu-major-league-soccer-r,nzId,9436"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOnQVz_MgcyMF5rZhfx9GrhhQhVnLqCyHanvkRa1JH0BHJE-POyxyR2rquHHU",
-      "image_credit": "Przegląd Sportowy",
-      "news": [
-        {
-          "url": "https://przegladsportowy.onet.pl/pilka-nozna/mls/chicago-fire-charlotte-fc-relacja-na-zywo-lewandowski-z-golem-live/v36773e",
-          "title": "MLS: Chicago Fire - Charlotte FC",
-          "publisher": "Przegląd Sportowy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOnQVz_MgcyMF5rZhfx9GrhhQhVnLqCyHanvkRa1JH0BHJE-POyxyR2rquHHU"
-        },
-        {
-          "url": "https://sportowefakty.wp.pl/pilka-nozna/1285659/na-klopoty-lewandowski-zobacz-bramke-polaka-w-play-off",
-          "title": "Na kłopoty Lewandowski. Zobacz bramkę Polaka w play-off",
-          "publisher": "SportoweFakty",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR20oVXfxKkxvsvVsLhV2u-AXdZ5epds1-40GEuC9gATl4-qJ5A8kEn4LXwxKg"
-        },
-        {
-          "url": "https://sport.interia.pl/robert-lewandowski/na-zywo-chicago-fire-charlotte-fc-w-1-8-finalu-major-league-soccer-r,nzId,9436",
-          "title": "Chicago Fire - Charlotte FC w 1/8 finału Major League Soccer. Relacja na żywo",
-          "publisher": "Interia Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToyNsh4ThOijnDL5kb-UmMvgqHPzhzf1xegeg8pSm0VCNXi38MOqhy1iNNQQQ"
-        }
-      ]
-    },
-    {
-      "query": "brock purdy wife",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T01:40:00Z",
-      "related_news_urls": [
-        "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
-        "https://www.mensjournal.com/news/brock-purdy-wife-jenna-purdy-photos-college",
-        "https://thespun.com/trending/brock-purdys-wife-sent-nfl-fans-into-frenzy-with-swimsuit-photo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC7zxKVREUv4db2htl7G8DYA-4FKsCqXz5o57asNtV9B41rRmx3w2x4hsxL8k",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
-          "title": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC7zxKVREUv4db2htl7G8DYA-4FKsCqXz5o57asNtV9B41rRmx3w2x4hsxL8k"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/brock-purdy-wife-jenna-purdy-photos-college",
-          "title": "Brock Purdy Wife: Jenna Purdy Is Former College Athlete",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlU555e-jno1PnApyNoNMYOMb2pTeMiWmrF9a7A6b8UeGexYt0_0MENJ-VJIk"
-        },
-        {
-          "url": "https://thespun.com/trending/brock-purdys-wife-sent-nfl-fans-into-frenzy-with-swimsuit-photo",
-          "title": "Brock Purdy’s Wife Sent NFL Fans Into Frenzy With Swimsuit Photo",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Z3nUILEpLwRzoG6Xtncy5O8gTbod5YTHRGZAkOUMANOkReeYHN93wG4-gqE"
-        }
-      ]
-    },
-    {
-      "query": "malik mustapha",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T01:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-fined-23-882-for-block-the-league-used-as-a-highlight",
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/siran-neal-marques-sigle-malik-mustapha-fine/1981909/",
-        "https://www.si.com/nfl/cowboys/onsi/george-pickens-hefty-nfl-fine-actions-dallas-cowboys-loss-49ers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyTFAJa72dPBR6EHhWIoDOCYaS8Fyo-CUI5dewsGC3bZOmcgCZYCT3gDqEOiA",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-fined-23-882-for-block-the-league-used-as-a-highlight",
-          "title": "CeeDee Lamb fined $23,882 for block the league used as a highlight",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyTFAJa72dPBR6EHhWIoDOCYaS8Fyo-CUI5dewsGC3bZOmcgCZYCT3gDqEOiA"
-        },
-        {
-          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/siran-neal-marques-sigle-malik-mustapha-fine/1981909/",
-          "title": "Two 49ers safeties fined after win vs. Cowboys, but Malik Mustapha not punished",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC7DmFVe7MwQfkVIUgKE2A0sYTt_GX3af4JfT8gvTdqfogl52H4WdzSVTLZT0"
-        },
-        {
-          "url": "https://www.si.com/nfl/cowboys/onsi/george-pickens-hefty-nfl-fine-actions-dallas-cowboys-loss-49ers",
-          "title": "George Pickens Hit With Hefty NFL Fine For Actions in Cowboys' Loss To 49ers",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsdykbsHhRddj03rGWqcewsWVr5WX9xbuS2gUKVePcGvFX61ej0C1VqjsW0oY"
-        }
-      ]
-    },
-    {
-      "query": "cj west",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T01:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbGNYW5yPWlkawBvlOW89SRS03j0Ri5T1P_h0Mh0c026_ak31lOzfah2q44Fk",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
-          "title": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game",
+          "url": "https://sports.yahoo.com/articles/tom-brady-answers-whether-san-160500176.html",
+          "title": "Tom Brady answers whether San Francisco 49ers fans should be concerned about their defence",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbGNYW5yPWlkawBvlOW89SRS03j0Ri5T1P_h0Mh0c026_ak31lOzfah2q44Fk"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-          "title": "49ers waive WR Brandin Cooks",
+          "url": "https://www.ninersnation.com/san-francisco-49ers-coaching-staff/165995/raheem-morris-wont-make-excuses-for-the-49ers-defense-explains-missed-opportunities",
+          "title": "Raheem Morris won’t make excuses for the 49ers’ defense; explains missed opportunities",
+          "publisher": "Niners Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtdd4h1gwwCzf6himK2trMSPZ9IxK8riu2cZk_2zFDKQXEI8pSBec34krvOZM"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/16/is-the-49ers-defense-bad-shorts/",
+          "title": "Is the 49ers’ Defense Bad? #shorts",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6Im08ozOwGbTUD6gKmvVooOHKdWfaa29-wZ6VuRWyIQ5dS3mS4alhPtgKX3k"
+        }
+      ]
+    },
+    {
+      "query": "deebo samuel sr.",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T02:10:00Z",
+      "related_news_urls": [
+        "https://www.rotoballer.com/who-should-i-start-for-week-11-deebo-samuel-sr-jordan-mason-aaron-jones-sr-keenan-allen-kaelon-black-myles-price-mike-evans-jauan-jennings-justin-jefferson/2000139",
+        "https://www.si.com/onsi/fantasy/start-em-sit-em/week-11-fantasy-football-start-em-sit-em-deebo-samuel-jordyn-tyson-49ers-saints",
+        "https://www.prizepicks.com/playbook-article/nfl-week-11-start-em-sit-em-wrs-stefon-diggs-vs-deebo-samuel"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROicVRcCOzI87_ub_Xl29-byEPuS9RQWapMnq1cS1u5mbCdebOBG2W8IriTz4",
+      "image_credit": "RotoBaller",
+      "news": [
+        {
+          "url": "https://www.rotoballer.com/who-should-i-start-for-week-11-deebo-samuel-sr-jordan-mason-aaron-jones-sr-keenan-allen-kaelon-black-myles-price-mike-evans-jauan-jennings-justin-jefferson/2000139",
+          "title": "Who Should I Start for Fantasy Football Week 11? Deebo Samuel Sr., Jordan Mason, Aaron Jones Sr., Keenan Allen, Kaelon Black, Myles Price, Mike Evans, Jauan Jennings, Justin Jeffer",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROicVRcCOzI87_ub_Xl29-byEPuS9RQWapMnq1cS1u5mbCdebOBG2W8IriTz4"
+        },
+        {
+          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/week-11-fantasy-football-start-em-sit-em-deebo-samuel-jordyn-tyson-49ers-saints",
+          "title": "Week 11 Fantasy Football Start 'Em, Sit 'Em: Deebo Samuel vs. Jordyn Tyson",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXurKIH4zeBFwq9rIUOLNJuPicE9nxbTvOR9M7JtYwkKSKtdFellEkE9kwcEg"
+        },
+        {
+          "url": "https://www.prizepicks.com/playbook-article/nfl-week-11-start-em-sit-em-wrs-stefon-diggs-vs-deebo-samuel",
+          "title": "NFL Week 11 Start ‘Em, Sit ‘Em WRs: Stefon Diggs vs. Deebo Samuel",
+          "publisher": "PrizePicks",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFgg7_2-Gm_iTIIGjiHxVbg5karTWX71HW6dZc0is-4dh6Q71Iyl0WhKsXJY0"
+        }
+      ]
+    },
+    {
+      "query": "kevin o'connell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T02:00:00Z",
+      "related_news_urls": [
+        "https://www.profootballrumors.com/2026/11/jets-may-pursue-vikings-hc-kevin-oconnell-sean-mcdermott-seen-as-likely-hire",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-kevin-oconnell-and-jets-connection-resurfaces-not-surprisingly",
+        "https://www.newsbreak.com/sportsnaut-509592/5015508349604-new-york-jets-coaching-rumors-connect-team-to-trade-for-one-of-nfl-s-most-successful-leaders"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7ie99ZYEnOOjMBvOs2g5-kfCzd8zuTKtKC2ig8NhdRVkgOkxzfbJu7qJLex8",
+      "image_credit": "ProFootballRumors.com",
+      "news": [
+        {
+          "url": "https://www.profootballrumors.com/2026/11/jets-may-pursue-vikings-hc-kevin-oconnell-sean-mcdermott-seen-as-likely-hire",
+          "title": "Jets To Pursue Vikings HC Kevin O'Connell? Sean McDermott Seen As Legitimate HC Target For New York",
+          "publisher": "ProFootballRumors.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7ie99ZYEnOOjMBvOs2g5-kfCzd8zuTKtKC2ig8NhdRVkgOkxzfbJu7qJLex8"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-kevin-oconnell-and-jets-connection-resurfaces-not-surprisingly",
+          "title": "The Kevin O’Connell-Jets connection resurfaces, not surprisingly",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVaC0NFYRnOYUebo1LgwDTCT858X-Ctq5f_Jvx_S4vScyawenS9tpw5WkDdXA"
         },
         {
-          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/",
-          "title": "49ers cut WR Brandin Cooks, should Raiders sign him?",
-          "publisher": "Raiders Wire",
+          "url": "https://www.newsbreak.com/sportsnaut-509592/5015508349604-new-york-jets-coaching-rumors-connect-team-to-trade-for-one-of-nfl-s-most-successful-leaders",
+          "title": "New York Jets Coaching Rumors Connect Team to Trade for One of NFL’s Most Successful Leaders",
+          "publisher": "NewsBreak: Local News & Alerts",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvaFwnvxq8Nk48NqQzsHgH-0rVScYrNK328mhQdKrCSyjgeBx3cqcXyQUiek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQde0eumjfbUHiw9nDs_J-zuS5036HBmS0D48axITn-P3NbHpymEnCqbAdug-k"
         }
       ]
     },
     {
-      "query": "marines",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:30:00Z",
-      "related_news_urls": [
-        "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
-        "https://patch.com/california/banning-beaumont/search-continues-active-duty-marine-who-vanished-after-leaving-ie-casino",
-        "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqUSOJ1pEt2EQxpcqL3t7dgP1wBwH3EpTs-Mdpa6qNsYIZOGqN6xEdCx1zqc",
-      "image_credit": "KUTV",
-      "news": [
-        {
-          "url": "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
-          "title": "Marine Corps releases statement after Utah service member found dead in California",
-          "publisher": "KUTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqUSOJ1pEt2EQxpcqL3t7dgP1wBwH3EpTs-Mdpa6qNsYIZOGqN6xEdCx1zqc"
-        },
-        {
-          "url": "https://patch.com/california/banning-beaumont/search-continues-active-duty-marine-who-vanished-after-leaving-ie-casino",
-          "title": "Body Found During Search For Active-Duty Marine Who Vanished In IE: Reports",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmU3W9QVuD3slSjSbSU2LUKTrdlZjiKe1DdHzLcuPdkp8MWEvhCFM2zDN9MEo"
-        },
-        {
-          "url": "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/",
-          "title": "Missing Camp Pendleton Marine found dead in San Bernardino County",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jce52h6Zz01Lhlz7ixd6EFenROVbbxVNBGssuCbQXHSo2hq2KfmCUt0AVKI"
-        }
-      ]
-    },
-    {
-      "query": "reese witherspoon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:30:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/lauren-neustadter-exits-reese-witherspoon-hello-sunshine-1237230709/",
-        "https://inshorts.com/en/news/reese-witherspoon-reacquires-hello-sunshine-via-mediawan-deal-1794988204654",
-        "https://variety.com/2026/film/news/hello-sunshine-lauren-neustadter-exits-reese-witherspoon-1236954660/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7syHPI6p-x9RSepcFqOeoBmhQsh705bMgmDwE7M9ucTaAPo7lCMrSHFegnEU",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/lauren-neustadter-exits-reese-witherspoon-hello-sunshine-1237230709/",
-          "title": "Lauren Neustadter Exiting Reese Witherspoon’s Hello Sunshine",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7syHPI6p-x9RSepcFqOeoBmhQsh705bMgmDwE7M9ucTaAPo7lCMrSHFegnEU"
-        },
-        {
-          "url": "https://inshorts.com/en/news/reese-witherspoon-reacquires-hello-sunshine-via-mediawan-deal-1794988204654",
-          "title": "Reese Witherspoon reacquires Hello Sunshine via Mediawan deal | Tap to know more | Inshorts",
-          "publisher": "Inshorts",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJjNEtD4CEUXacNa6DqwEcyYmCRgFPK2_dO0OoF0t6arx70ltvelZUtux2nj0"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/hello-sunshine-lauren-neustadter-exits-reese-witherspoon-1236954660/",
-          "title": "Hello Sunshine’s Lauren Neustadter to Leave Reese Witherspoon’s Company at End of Year",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELnc53PwT7RVbQA4rUpsdvFDiR7G_HCGMDqKr8g-CLXEKJf0pW0nM0TGSbJs"
-        }
-      ]
-    },
-    {
-      "query": "pregnant workers fairness act",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T01:30:00Z",
-      "related_news_urls": [
-        "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
-        "https://wjla.com/news/nation-world/pregnant-workers-ruling-puts-17-trillion-covid-era-house-vote-under-scrutiny",
-        "https://thehill.com/regulation/court-battles/6235708-court-rules-congress-proxy-unconstitutional/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8_IMzIW3wRscM1tMESrTxbN92k3fGbY-Sxd4_PACQIKwLSe2jB8jAwtO0aM",
-      "image_credit": "PBS",
-      "news": [
-        {
-          "url": "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
-          "title": "Appeals court says federal law requiring accommodations for pregnant workers is unconstitutional",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8_IMzIW3wRscM1tMESrTxbN92k3fGbY-Sxd4_PACQIKwLSe2jB8jAwtO0aM"
-        },
-        {
-          "url": "https://wjla.com/news/nation-world/pregnant-workers-ruling-puts-17-trillion-covid-era-house-vote-under-scrutiny",
-          "title": "Pregnant workers ruling puts $1.7 trillion COVID-era House vote under scrutiny",
-          "publisher": "WJLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lp5yhgIYo6uhsOJe8P8HONEqPZICiR_iKcBUh1kZqxCffeFzJlzZu1qDIJ4"
-        },
-        {
-          "url": "https://thehill.com/regulation/court-battles/6235708-court-rules-congress-proxy-unconstitutional/",
-          "title": "$1.7 trillion Biden-era government funding bill found unconstitutional, appeals court rules",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6vBClJ324t_giRYbCtQdD4Pv0ZNYXaDQ6x8bgyZVWZhclIDXM4XrPaykHOgc"
-        }
-      ]
-    },
-    {
-      "query": "san francisco 49ers schedule",
+      "query": "jack nicklaus",
       "approx_searches": "1000+",
-      "published_at": "2026-11-23T01:30:00Z",
+      "published_at": "2026-11-23T02:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
-        "https://www.nfl.com/news/nfl-week-11-inactives-players-ruled-out-sunday-2026-season",
-        "https://www.49erswebzone.com/news/205386-nfl-inactives-players-ruled-sundays/"
+        "https://sports.yahoo.com/articles/jack-nicklaus-had-plans-historic-183523864.html",
+        "https://lufkindailynews.com/news_reuters/national/the-lake-worth-beach-golf-club-is-closed-after-rain-caused-flooding-on-the-course/image_3817bc0f-e31b-5839-b083-991540485e1c.html",
+        "https://www.wflx.com/2026/11/17/lake-worth-beach-prepares-more-rain-residents-continue-recovering-historic-flooding/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKD8rDdTOeEmNgiMA3BXzEcskKsrkSTncpvvWHbTFcBQQHVU3wApTzQRoWm6Q",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-dAH_2ZPphizaFmGZ31X_HznqAULyPuILp7kgVe7mypNvByxHVRHByqjEm8A",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jack-nicklaus-had-plans-historic-183523864.html",
+          "title": "Jack Nicklaus had plans for historic Florida municipal golf course. What happened?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-dAH_2ZPphizaFmGZ31X_HznqAULyPuILp7kgVe7mypNvByxHVRHByqjEm8A"
+        },
+        {
+          "url": "https://lufkindailynews.com/news_reuters/national/the-lake-worth-beach-golf-club-is-closed-after-rain-caused-flooding-on-the-course/image_3817bc0f-e31b-5839-b083-991540485e1c.html",
+          "title": "The Lake Worth Beach Golf Club is closed after rain caused flooding on the course in Lake Worth Beach, Fla., on November 19, 2026.",
+          "publisher": "The Lufkin Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROVfSaQfUkSUlagT7E7yO52r5tZ_M2Cc7fo_f1TrlsgTN4yV1vJw_SV5NfDxA"
+        },
+        {
+          "url": "https://www.wflx.com/2026/11/17/lake-worth-beach-prepares-more-rain-residents-continue-recovering-historic-flooding/",
+          "title": "Lake Worth Beach prepares for more rain as residents continue recovering from historic flooding",
+          "publisher": "WFLX",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-cLMYIB3bjAgnyDxB8ftDMi2OXDjQ6JHr8477dBw1tNpKOFMvtcPaqK5ULI"
+        }
+      ]
+    },
+    {
+      "query": "terrell owens",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T02:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/terrell-owens-bought-moorestown-n-153300721.html",
+        "https://www.nfl.com/videos/purdy-s-td-pass-to-a-bulldozing-kittle-opens-scoring-in-vikings-49ers-at-estadio-banorte",
+        "https://www.foxsports.com/live-blog/nfl/vikings-49ers-live-updates-score"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcVVkG1Og7AOogryO8ogNNIsYuqDmgbrZ80IDXU0omnFdsXIybcclaqRdbBRw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/terrell-owens-bought-moorestown-n-153300721.html",
+          "title": "Terrell Owens bought a Moorestown, N.J. mansion in 2004 for $3.9 million; six years later, he sold it for $1.7 million",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcVVkG1Og7AOogryO8ogNNIsYuqDmgbrZ80IDXU0omnFdsXIybcclaqRdbBRw"
+        },
+        {
+          "url": "https://www.nfl.com/videos/purdy-s-td-pass-to-a-bulldozing-kittle-opens-scoring-in-vikings-49ers-at-estadio-banorte",
+          "title": "Purdy's TD pass to a bulldozing Kittle opens scoring in Vikings-49ers at Estadio Banorte",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwFP5VN3c4DVyoZRm7Z62yhLtc6dpOxn2iGyPFlMMca-iUnEh593Nk9GTJVT8"
+        },
+        {
+          "url": "https://www.foxsports.com/live-blog/nfl/vikings-49ers-live-updates-score",
+          "title": "Vikings vs. 49ers Live Updates, Score: NFC Showdown In Mexico City",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI1g6cdi4mc47WDVk_S_ejJUdV_3ALwxmoH-bfAeyyw0_vto4_YKprt1dPcN0"
+        }
+      ]
+    },
+    {
+      "query": "josh giddey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T02:00:00Z",
+      "related_news_urls": [
+        "https://chicago.suntimes.com/bulls/2026/11/20/josh-giddey-at-point-guard-this-experiment-is-not-going-to-end-well",
+        "https://www.chicagotribune.com/2026/11/22/chicago-bulls-matas-buzelis-josh-giddey/",
+        "https://www.nytimes.com/athletic/7789049/2026/11/17/josh-giddey-turnovers-bulls/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-0G7IfyYJtY6Ep9l_Z1MDv5LvfQ_Btej2Qcq_VYeybLe2_-UU7yh-j4d2U44",
+      "image_credit": "Chicago Sun-Times",
+      "news": [
+        {
+          "url": "https://chicago.suntimes.com/bulls/2026/11/20/josh-giddey-at-point-guard-this-experiment-is-not-going-to-end-well",
+          "title": "Josh Giddey at point guard? This experiment is not going to end well",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-0G7IfyYJtY6Ep9l_Z1MDv5LvfQ_Btej2Qcq_VYeybLe2_-UU7yh-j4d2U44"
+        },
+        {
+          "url": "https://www.chicagotribune.com/2026/11/22/chicago-bulls-matas-buzelis-josh-giddey/",
+          "title": "Why late-game benchings of Matas Buzelis and Josh Giddey are a troubling trend for the Chicago Bulls",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDD_kV14LhbSYa2sQKQvPUNSKfhU0ZQkad0RZ6g2gOJ61xY7oE08u8FXuNHcw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7789049/2026/11/17/josh-giddey-turnovers-bulls/",
+          "title": "Josh Giddey’s turnover problems raise troubling questions for Bulls - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU8bNho23h5Ix0WuZt5BiJzLhFjZ0_rU9GCVzxI77lJtM4xEqQSuP0gfoExko"
+        }
+      ]
+    },
+    {
+      "query": "is keenan allen playing",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/football/news/fantasy-football-usage-report-keenan-allen-steps-into-immediate-role-with-49ers",
+        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-11-start-sit-keenan-allen-malik-washington",
+        "https://sports.yahoo.com/video/is-keenan-allen-the-49ers-most-reliable-fantasy-wr-in-week-11-232729248.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD8mLUORN0GxYyz-lXCXbVcW_cZU-fSacjKdYMikpRJQTzZNmQvokCbk8zKtM",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/news/fantasy-football-usage-report-keenan-allen-steps-into-immediate-role-with-49ers",
+          "title": "Fantasy Football Usage Report: Keenan Allen steps into immediate role with 49ers",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD8mLUORN0GxYyz-lXCXbVcW_cZU-fSacjKdYMikpRJQTzZNmQvokCbk8zKtM"
+        },
+        {
+          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-11-start-sit-keenan-allen-malik-washington",
+          "title": "Fantasy Football Week 11 Start 'Em Sit 'Em: Keenan Allen or Malik Washington?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGWp-LddUhQLJKJTEetN8-zNA0bmuLwiTh0bKeqAoOea0-jCZgNtQHiUuhHKM"
+        },
+        {
+          "url": "https://sports.yahoo.com/video/is-keenan-allen-the-49ers-most-reliable-fantasy-wr-in-week-11-232729248.html",
+          "title": "Is Keenan Allen the 49ers' most reliable fantasy WR in Week 11?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXtDnwHoXxJ72u7LiSB5dWTJjbZzZ3WLrqTBbDR2ajEoXMAnvg86SHW5DoKOw"
+        }
+      ]
+    },
+    {
+      "query": "penta wwe",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T02:00:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25536633-george-kittle-pays-tribute-wwes-penta-mask-video-ahead-49ers-vikings-mexico-city",
+        "https://www.foxnews.com/outkick-sports/49ers-george-kittle-channels-inner-luchador-sports-wwe-stars-mask-performs-celebration-after-td",
+        "https://sports.yahoo.com/articles/rob-gronkowski-lists-three-reasons-110500232.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMmlCo4wqw5GNwwrB-bt_NDIESn5ka5otkV0kGigtq-ZJjzoZOkKAmpqPidCY",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25536633-george-kittle-pays-tribute-wwes-penta-mask-video-ahead-49ers-vikings-mexico-city",
+          "title": "George Kittle Pays Tribute to WWE's Penta With Mask in Video Ahead of 49ers-Vikings in Mexico City",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMmlCo4wqw5GNwwrB-bt_NDIESn5ka5otkV0kGigtq-ZJjzoZOkKAmpqPidCY"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/49ers-george-kittle-channels-inner-luchador-sports-wwe-stars-mask-performs-celebration-after-td",
+          "title": "49ers' George Kittle channels his inner Luchador as he sports WWE star's mask, performs celebration after TD",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfoSXOSjWZ96Ee1gGlnu5iWSctMzBloQQrhbFDP87lUIkX_FgwLyuiGz4rF_Q"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rob-gronkowski-lists-three-reasons-110500232.html",
+          "title": "Rob Gronkowski lists three reasons why 49ers’ tight end George Kittle is the best in football",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeR4iWOEklG4rLGqpbe1K0rll7UdBVoTIupw2s-bo809gQ0lqXnaOsQu0OFBA"
+        }
+      ]
+    },
+    {
+      "query": "samuel montembeault",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T01:50:00Z",
+      "related_news_urls": [
+        "https://www.rds.ca/hockey/canadiens/article/le-ch-envoie-hage-et-un-gros-pactole-pour-larkin/",
+        "https://www.lapresse.ca/sports/hockey/2026-11-22/dylan-larkin-au-canadien-contre-michael-hage-kirby-dach-et-samuel-montembeault.php",
+        "https://www.journaldemontreal.com/2026/11/22/dylan-larkin-est-echange-au-canadien"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpV9mAyDqvofJBnulkGuFwCW4uckf2LS3qf3BYZfeiulSQ6gBESjYtYlMsP-s",
+      "image_credit": "RDS",
+      "news": [
+        {
+          "url": "https://www.rds.ca/hockey/canadiens/article/le-ch-envoie-hage-et-un-gros-pactole-pour-larkin/",
+          "title": "Le CH envoie Hage et un gros pactole pour Larkin",
+          "publisher": "RDS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpV9mAyDqvofJBnulkGuFwCW4uckf2LS3qf3BYZfeiulSQ6gBESjYtYlMsP-s"
+        },
+        {
+          "url": "https://www.lapresse.ca/sports/hockey/2026-11-22/dylan-larkin-au-canadien-contre-michael-hage-kirby-dach-et-samuel-montembeault.php",
+          "title": "Dylan Larkin au Canadien, contre Michael Hage, Kirby Dach et Samuel Montembeault",
+          "publisher": "La Presse",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTRbc_a3kSB7fd23FDfuS2fbo0ZbXxXwWZID1G7fT9VJdaxqT7slQ8F-nZWTc"
+        },
+        {
+          "url": "https://www.journaldemontreal.com/2026/11/22/dylan-larkin-est-echange-au-canadien",
+          "title": "Dylan Larkin est échangé au Canadien",
+          "publisher": "Le Journal de Montréal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbwcyQv2leKM_nNYGjeDYJQriu4x8lIMWDPfF_xV0QBNTusoRwLjrhRXvWrTA"
+        }
+      ]
+    },
+    {
+      "query": "kirk cousins wife",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T01:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+        "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
+        "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
-          "title": "Fantasy football Week 11 inactives: Who's in and who's out?",
+          "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+          "title": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKD8rDdTOeEmNgiMA3BXzEcskKsrkSTncpvvWHbTFcBQQHVU3wApTzQRoWm6Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc"
         },
         {
-          "url": "https://www.nfl.com/news/nfl-week-11-inactives-players-ruled-out-sunday-2026-season",
-          "title": "NFL Week 11 inactives: Players ruled out for Sunday's 11 games",
+          "url": "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
+          "title": "Back with the Vikings, Kirk Cousins is trusting Kevin O’Connell more than ever",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuksXFiLBf2R-FFshU9lDz_HLK4UVR06vLwZ1uwHUNslsMBodkLM9M1Rus8Og"
+        },
+        {
+          "url": "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return",
+          "title": "Kirk Cousins trying to 'slow down,' keep blinders on amid whirlwind Vikings return: 'Ignorance is bliss'",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc261jIS5978dpG4g6i6O9FXNT44geQm62i5q-_uNmPS9NFgcq2EhByHjmaM0"
-        },
-        {
-          "url": "https://www.49erswebzone.com/news/205386-nfl-inactives-players-ruled-sundays/",
-          "title": "NFL Week 11 inactives: Players ruled out for Sunday’s 11 games",
-          "publisher": "49ers Webzone",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUOWAdyGOjA1VsFQcnPA3Z0HB1k3oYIucBEi7Mj1duDVoHcgs2TaduJcjOELc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl78E3Jwj1a0ysGKIksP75MTowqvh8J38ObSn9ryf6myTFGg-JeK1o1XHqamg"
         }
       ]
     }
