@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T19:01:13.181619Z",
+  "checked_at": "2026-11-23T19:31:25.069838Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "brandon aiyuk",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T19:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50522814/sources-brandon-aiyuk-mended-friendship-jayden-daniels",
+        "https://www.nytimes.com/athletic/7801617/2026/11/22/brandon-aiyuk-commanders-free-agency-practice-squad/",
+        "https://bleacherreport.com/articles/25536350-latest-brandon-aiyuk-jayden-daniels-relationship-revealed-new-nfl-rumors-amid-commanders-buzz"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50522814/sources-brandon-aiyuk-mended-friendship-jayden-daniels",
+          "title": "Sources: Brandon Aiyuk contacted Jayden Daniels to mend friendship with star QB",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7801617/2026/11/22/brandon-aiyuk-commanders-free-agency-practice-squad/",
+          "title": "Brandon Aiyuk could be available soon. Should the Commanders consider adding him? - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgHFtZZEx6lSUyPQOGaKVaIt1XYlZPxVco3puC6akUiiYzQ6WhuzD6xCmfkrE"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536350-latest-brandon-aiyuk-jayden-daniels-relationship-revealed-new-nfl-rumors-amid-commanders-buzz",
+          "title": "Latest on Brandon Aiyuk-Jayden Daniels Relationship Revealed in New NFL Rumors amid Commanders Buzz",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkfcvO5k2nSOVIBIY8RLeen4_gayXUI7hSbqmIDZdpeUL7vrLPNGx1QEztMwg"
+        }
+      ]
+    },
+    {
+      "query": "cruise ship",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T19:10:00Z",
+      "related_news_urls": [
+        "https://maritime-executive.com/article/costa-concordia-s-master-released-from-prison-after-nine-years",
+        "https://people.com/costa-cruises-captain-francesco-schettino-released-from-prison-after-fatal-2012-boat-sinking-12272942",
+        "https://www.euronews.com/2026/11/21/former-costa-concordia-cruise-ship-captain-released-from-prison-on-probation-after-nine-ye"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Ezxi1-_mQtAS2GMdQxFi4d3g_H8Sz3JH6iEErvJroA4n_Fta8KT9r5fAsMs",
+      "image_credit": "The Maritime Executive",
+      "news": [
+        {
+          "url": "https://maritime-executive.com/article/costa-concordia-s-master-released-from-prison-after-nine-years",
+          "title": "Costa Concordia's Master Released From Prison After Nine Years",
+          "publisher": "The Maritime Executive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Ezxi1-_mQtAS2GMdQxFi4d3g_H8Sz3JH6iEErvJroA4n_Fta8KT9r5fAsMs"
+        },
+        {
+          "url": "https://people.com/costa-cruises-captain-francesco-schettino-released-from-prison-after-fatal-2012-boat-sinking-12272942",
+          "title": "Costa Cruises Captain Francesco Schettino Released from Prison After Fatal 2012 Boat Sinking",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHoof55Bu3DwP9WNcRD21bH2RFW1ppx9NuPbZ8pu-4JFGbcxh2zPwacKwskCE"
+        },
+        {
+          "url": "https://www.euronews.com/2026/11/21/former-costa-concordia-cruise-ship-captain-released-from-prison-on-probation-after-nine-ye",
+          "title": "Former Costa Concordia captain released from prison on probation",
+          "publisher": "Euronews",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI--0ZMnxbOyohm2ug2vAIarC8_pul1DXhF96bTL3_o2vIxp8A-S757sRaQNE"
+        }
+      ]
+    },
+    {
+      "query": "levante - elche c. f.",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T19:10:00Z",
+      "related_news_urls": [
+        "https://www.dazn.com/es-ES/news/futbol/levante-vs-elche-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1eqa0ekse5wzf1frm2o0lcmrc6",
+        "https://www.levante-emv.com/deportes/2026/11/22/castro-tres-puntos-son-muchos-puntos-136730505.html",
+        "https://www.tufutbolero.com/novedades/levante-elche-previa-el-elche-llega-con-dos-bajas-por-lesion-fcf0d2"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI",
+      "image_credit": "DAZN",
+      "news": [
+        {
+          "url": "https://www.dazn.com/es-ES/news/futbol/levante-vs-elche-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1eqa0ekse5wzf1frm2o0lcmrc6",
+          "title": "Levante vs Elche: horario y dónde ver hoy por TV y online el partido de LaLiga 2026/27 a través de DAZN",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI"
+        },
+        {
+          "url": "https://www.levante-emv.com/deportes/2026/11/22/castro-tres-puntos-son-muchos-puntos-136730505.html",
+          "title": "Castro, entrenador del Levante UD: “Tres puntos para nosotros son muchos puntos”",
+          "publisher": "Levante-EMV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-ZILkPDlTSAJ-FhXoJj-KfHvV_l3RALtm08llraACmmYeCdSnhaBvrRpMl6U"
+        },
+        {
+          "url": "https://www.tufutbolero.com/novedades/levante-elche-previa-el-elche-llega-con-dos-bajas-por-lesion-fcf0d2",
+          "title": "Levante-Elche, previa: el Elche llega con dos bajas por lesión",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwOQY4nWoBiNhjitWlUT83dfwK2XdqkD0zSCqZrcwjawNdOJp2jr_gEFtPNk"
+        }
+      ]
+    },
+    {
+      "query": "levante vs elche",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T19:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7805956/2026/11/23/elche-cf-vs-levante-stream-how-to-watch-la-liga-nov-23/",
+        "https://www.tufutbolero.com/en/news/levante-elche-preview-elche-arrive-with-two-injury-absences-fcf0d2",
+        "https://aktualita.co/en/sports/levante-vs-elche-relegation-battle"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCKe16nCzviIY-U-y73je9PeHdHOVuJB8s1l4g4wHGWde5plY1f5QnFACE25A",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7805956/2026/11/23/elche-cf-vs-levante-stream-how-to-watch-la-liga-nov-23/",
+          "title": "How to watch Elche CF vs. Levante in the U.S.: TV channel and streaming options for November 23",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCKe16nCzviIY-U-y73je9PeHdHOVuJB8s1l4g4wHGWde5plY1f5QnFACE25A"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/levante-elche-preview-elche-arrive-with-two-injury-absences-fcf0d2",
+          "title": "Levante-Elche preview: Elche arrive with two injury absences",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8sgnINSf7lq35YPRxymb4MJoJPM5BitqVhv3rwY86Dg7jy588mT-uPUuHmQ"
+        },
+        {
+          "url": "https://aktualita.co/en/sports/levante-vs-elche-relegation-battle",
+          "title": "Levante vs Elche: High-Stakes La Liga Relegation Battle, Check Schedule, Standings, and Score Prediction",
+          "publisher": "Aktualita.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4_G1XkIzRUNI-Xs2f344CYUrMIeTuqmRveqLJVS6qRWAmYnAif9jNaRKrOvc"
+        }
+      ]
+    },
+    {
+      "query": "brentford vs everton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T19:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c64gnwyv7kvjt",
+        "https://www.theguardian.com/football/live/2026/nov/23/brentford-v-everton-premier-league-live",
+        "https://www.brentfordfc.com/en/news/match-previews-brentford-v-everton-premier-league-23-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDM5iAVCteQTpaQq_7sDwdqRjDxe3MSfZBp9gZtLymBBBFF7tW0JGhBaHZZNA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c64gnwyv7kvjt",
+          "title": "Premier League LIVE: Brentford vs Everton - build-up, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDM5iAVCteQTpaQq_7sDwdqRjDxe3MSfZBp9gZtLymBBBFF7tW0JGhBaHZZNA"
+        },
+        {
+          "url": "https://www.theguardian.com/football/live/2026/nov/23/brentford-v-everton-premier-league-live",
+          "title": "Brentford v Everton: Premier League – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7CXP4g6tU_x2doU1pystu4YWG_gNKGOaphCoAxcsIVY1nbvYWbHun4u0tWgs"
+        },
+        {
+          "url": "https://www.brentfordfc.com/en/news/match-previews-brentford-v-everton-premier-league-23-11-2026",
+          "title": "Brentford v Everton - match preview, kick-off time and more",
+          "publisher": "Brentford FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpXrWKU7xpT09HYhmDADPiqm4RD0Bs4w4oxJ4TkKGO92EkWpQNuEwgLfc2ZMU"
+        }
+      ]
+    },
+    {
+      "query": "monza vs fiorentina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T19:00:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en-us/news/watch-monza-vs-fiorentina-live-today-tv-channel-and-streaming-details/blt39b04020f7688291",
+        "https://www.yardbarker.com/soccer/articles/fiorentina_coach_vanoli_ndour_and_njie_are_fine_atta_is_back_ahead_of_monza_clash/s1_17344_44597066",
+        "https://www.violanation.com/fiorentina-match-coverage/23300/monza-vs-fiorentina-lineups-and-how-to-watch"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj8PLBa6OXdXeHwVYDqfPZlRrfu--vv_-FncIBxO-dR9gTvDGV4N9CMYv1tNk",
+      "image_credit": "Goal.com",
+      "news": [
+        {
+          "url": "https://www.goal.com/en-us/news/watch-monza-vs-fiorentina-live-today-tv-channel-and-streaming-details/blt39b04020f7688291",
+          "title": "Watch Monza vs Fiorentina live today: TV channel and streaming details",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRj8PLBa6OXdXeHwVYDqfPZlRrfu--vv_-FncIBxO-dR9gTvDGV4N9CMYv1tNk"
+        },
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/fiorentina_coach_vanoli_ndour_and_njie_are_fine_atta_is_back_ahead_of_monza_clash/s1_17344_44597066",
+          "title": "Fiorentina coach Vanoli: ‘Ndour and Njie are fine, Atta is back’ ahead of Monza clash",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMvXnQVuDfeOF_2ywExDRs7Uy74L2enjolITes1iW90zO1SF08nwP8rWaFWcs"
+        },
+        {
+          "url": "https://www.violanation.com/fiorentina-match-coverage/23300/monza-vs-fiorentina-lineups-and-how-to-watch",
+          "title": "Monza vs Fiorentina: Lineups and how to watch",
+          "publisher": "Viola Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG_idfJxAIyEdJl2cSYc2d5IeDS_hDcjO3jnVyvNcLjEuJjg_xa9YU68AxzTU"
+        }
+      ]
+    },
+    {
+      "query": "kerry titheradge",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T18:50:00Z",
+      "related_news_urls": [
+        "https://people.com/below-deck-midseason-tease-former-crew-member-returns-exclusive-12268594",
+        "https://www.bravotv.com/the-daily-dish/below-deck-season-13-midseason-trailer-teases-firings-new-crew-member-video",
+        "https://www.vulture.com/article/below-deck-recap-season-13-episode-6-bravo.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiiKvdj4Eg1v6wgCm-RsJ1wkvyqt2RwiHHR4HlsAukUfhwku5TyXnYxsLA0Ck",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/below-deck-midseason-tease-former-crew-member-returns-exclusive-12268594",
+          "title": "‘Below Deck’ Brings Back a Former Cast Member to Join Season 13 in Midseason Teaser (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiiKvdj4Eg1v6wgCm-RsJ1wkvyqt2RwiHHR4HlsAukUfhwku5TyXnYxsLA0Ck"
+        },
+        {
+          "url": "https://www.bravotv.com/the-daily-dish/below-deck-season-13-midseason-trailer-teases-firings-new-crew-member-video",
+          "title": "Below Deck Midseason Trailer: Captain Kerry Hints at More Season 13 Firings Amid Surprise Return",
+          "publisher": "Bravo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScmH58GWzN-TUhire850it003b_I6Yt8Ipau3zJkJvLpAZeCj6heSSF4z6_NI"
+        },
+        {
+          "url": "https://www.vulture.com/article/below-deck-recap-season-13-episode-6-bravo.html",
+          "title": "Below Deck Recap: Power Hungry",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGo_HSV0uhhqYU3Kh--T0gFCS_DD2r4k9A-W9T5MO0zqB_KIUdpi41BZnD30E"
+        }
+      ]
+    },
+    {
+      "query": "vanity fair taylor swift",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T18:50:00Z",
+      "related_news_urls": [
+        "https://www.vanityfair.com/story/the-mastermind",
+        "https://www.yahoo.com/entertainment/celebrity/articles/beyond-want-greed-vanity-fair-174901393.html",
+        "https://pagesix.com/2026/11/23/entertainment/taylor-swift-labeled-regina-george-by-classmates-acquaintances-in-vanity-fair-hit-piece/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROote6EeOX8egaFM6gxR_SLK_lZuPeqXgjSCk9RFubXP65duaMxFbMgw3zG5U",
+      "image_credit": "Vanity Fair",
+      "news": [
+        {
+          "url": "https://www.vanityfair.com/story/the-mastermind",
+          "title": "What If We Told You She’s a Mastermind? A Tale of Pop Stardom",
+          "publisher": "Vanity Fair",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROote6EeOX8egaFM6gxR_SLK_lZuPeqXgjSCk9RFubXP65duaMxFbMgw3zG5U"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/beyond-want-greed-vanity-fair-174901393.html",
+          "title": "‘Beyond want, greed’: Vanity Fair rips Taylor Swift and Travis Kelce’s lavish wedding",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBQgTkOQ1FsxAFO5-eL0R_MuwvpVgDXrMXulMcVeLvznuTR9z2VpKBUcHHVX8"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/23/entertainment/taylor-swift-labeled-regina-george-by-classmates-acquaintances-in-vanity-fair-hit-piece/",
+          "title": "Taylor Swift slammed as real-life ‘Regina George’ by classmates and acquaintances in brutal Vanity Fair hit piece",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRggoghb8OoRacJz-oR96_EYHT7fdqI_1sbgd0akFfoj_FdiY7OHveFiMZGv0o"
+        }
+      ]
+    },
     {
       "query": "grand theft auto",
       "approx_searches": "5000+",
@@ -34,44 +314,9 @@
       ]
     },
     {
-      "query": "hbo max",
+      "query": "iowa women's basketball",
       "approx_searches": "1000+",
       "published_at": "2026-11-23T18:40:00Z",
-      "related_news_urls": [
-        "https://www.pcmag.com/deals/hbo-max-half-price-early-black-friday-deal-2026",
-        "https://decider.com/article/hbo-max-black-friday-deal-2026/",
-        "https://www.seenit.co.uk/hbo-max-uk-deals/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfDT7g3uVmf2ZaVgWztVMp0oQmDRH8E3oiUBnEA8S0kZO0nK0e-SQVj830rE",
-      "image_credit": "PCMag",
-      "news": [
-        {
-          "url": "https://www.pcmag.com/deals/hbo-max-half-price-early-black-friday-deal-2026",
-          "title": "HBO Max is Half Price for One Year With This Early Black Friday Streaming Service Deal",
-          "publisher": "PCMag",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPfDT7g3uVmf2ZaVgWztVMp0oQmDRH8E3oiUBnEA8S0kZO0nK0e-SQVj830rE"
-        },
-        {
-          "url": "https://decider.com/article/hbo-max-black-friday-deal-2026/",
-          "title": "HBO Max is half price for a full year with this Black Friday streaming deal",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfYa1axo8cf2ISNhCyRfHTQwbwJeKG0sOJhyxqLBMpGlZZ47NUTB3f4c-HlUA"
-        },
-        {
-          "url": "https://www.seenit.co.uk/hbo-max-uk-deals/",
-          "title": "HBO Max UK unveils half price 2026 Black Friday deals",
-          "publisher": "seenit.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzelwloT6j7VOemEOukZp8_B4l2Lj1WzLj6YWZ1dJkKAPITEuEi7iFdwEjSiI"
-        }
-      ]
-    },
-    {
-      "query": "utah vs iowa",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T18:30:00Z",
       "related_news_urls": [
         "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/23/iowa-womens-basketball-utah-bahamas-tv-stream-how-to-watch-channel/92884546007/",
         "https://sports.yahoo.com/articles/iowa-womens-basketball-vs-utah-171541141.html",
@@ -100,251 +345,6 @@
           "publisher": "On3",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqa3aNYkf7Wg2dkiC5Qmr8omvPI21O3ilfsBNMUl1WilX2E4g9ZUF6oCwlWUk"
-        }
-      ]
-    },
-    {
-      "query": "wright state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T18:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/akron-vs-wright-state-prediction-100033347.html",
-        "https://www.fubo.tv/news/ncaam/akron-vs-wright-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-23-2026/",
-        "https://bvmsports.com/2026/11/22/akron-vs-wright-state-espn-events-invitational-game-preview/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5F05kLhWnqRQcP0ad9RhVDZ6upxaV6Y1tJkqch2cA8lvTv9WLcnifGzQNYU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/akron-vs-wright-state-prediction-100033347.html",
-          "title": "Akron vs Wright State Prediction, Pick, College Basketball Odds for Monday, Nov. 23",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5F05kLhWnqRQcP0ad9RhVDZ6upxaV6Y1tJkqch2cA8lvTv9WLcnifGzQNYU"
-        },
-        {
-          "url": "https://www.fubo.tv/news/ncaam/akron-vs-wright-state-where-to-watch-stream-info-tv-channel-and-live-updates-november-23-2026/",
-          "title": "Akron vs Wright State - Where to Watch, Stream Info, TV Channel, and Live Updates (November 23, 2026)",
-          "publisher": "Fubo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa3YfWBnHkwv4aQ46vQZbocrFgpSnV9qzuTiTpn3APGEsoJ5YmCW_2aVs6DAo"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/22/akron-vs-wright-state-espn-events-invitational-game-preview/",
-          "title": "Akron vs. Wright State: ESPN Events Invitational Game Preview",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRd_RXMVYR6wmmdsSWj6K2R-TCU-FZID6E9NwCfMNEaR0-UexF5XLIr1fjanNw"
-        }
-      ]
-    },
-    {
-      "query": "parastoo ahmadi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T18:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cq1j6585l5g6o",
-        "https://www.thenationalnews.com/news/mena/2026/11/23/iran-lashes-female-singer-and-her-team-74-times-each-over-vulgar-concert-with-no-audience/",
-        "https://www.yahoo.com/news/world/articles/report-iranian-singer-band-members-150334904.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDRwVsgCyuk7rg--806TRRU5ELdyU3c44WRsG6hZBqlP-yctJdoY_9NSpBrL8",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cq1j6585l5g6o",
-          "title": "Iranian authorities flog singer who performed without hijab, lawyers say",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDRwVsgCyuk7rg--806TRRU5ELdyU3c44WRsG6hZBqlP-yctJdoY_9NSpBrL8"
-        },
-        {
-          "url": "https://www.thenationalnews.com/news/mena/2026/11/23/iran-lashes-female-singer-and-her-team-74-times-each-over-vulgar-concert-with-no-audience/",
-          "title": "Iran lashes female singer and her team 74 times each over 'vulgar' concert with no audience",
-          "publisher": "The National",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEPQOZ39bA3zpEmBtYomOaUu4i0RQNKGgPlnQeFRyVzd8nwVarIz6mTc2wteU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/report-iranian-singer-band-members-150334904.html",
-          "title": "Report: Iranian singer and band members lashed for YouTube concert",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_ykaxscfpu6X6edfcCFUcZMLPta9iqXO5rQbbNHXVSYK9lBcEOqIfMWYE9MA"
-        }
-      ]
-    },
-    {
-      "query": "al ahly vs pyramids",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T18:10:00Z",
-      "related_news_urls": [
-        "https://www.kickoff.com/world-news/africa-news/hussein-ammouta-s-warning-ahead-of-pyramids-clash",
-        "https://www.goal.com/en-in/news/ammouta-springs-surprises-against-pyramids-as-imam-ashour-waits-for-his-chance/bltd2698ad22045a8ec",
-        "https://www.soccerladuma.co.za/international/african-football/al-ahly-change-preparations-for-pyramids-fc"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsc-1vj9g3SaewpxBC8XHuoiugghi4ElVlfaWH0MpoS4tP8laWdDC_4XXz1QM",
-      "image_credit": "KickOff",
-      "news": [
-        {
-          "url": "https://www.kickoff.com/world-news/africa-news/hussein-ammouta-s-warning-ahead-of-pyramids-clash",
-          "title": "Al Ahly coach warned he could end up like Riveiro",
-          "publisher": "KickOff",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsc-1vj9g3SaewpxBC8XHuoiugghi4ElVlfaWH0MpoS4tP8laWdDC_4XXz1QM"
-        },
-        {
-          "url": "https://www.goal.com/en-in/news/ammouta-springs-surprises-against-pyramids-as-imam-ashour-waits-for-his-chance/bltd2698ad22045a8ec",
-          "title": "Ammouta springs surprises against Pyramids as Imam Ashour waits for his chance",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ14zR7rvV28awVMjVfp-CAHXTByH2qnCp8ebn3olee7b-7qBXMnA_qokDsMHk"
-        },
-        {
-          "url": "https://www.soccerladuma.co.za/international/african-football/al-ahly-change-preparations-for-pyramids-fc",
-          "title": "Al Ahly Make Special Plans To Stop Rulani & Pyramids",
-          "publisher": "Soccer Laduma",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZOs1O72dOAQSehAC1daMD8emchlQE_vRE7Dkv7Q-KXMLtJUZ2UNM_TIR-9_w"
-        }
-      ]
-    },
-    {
-      "query": "professional golfer",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T18:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/pro-golfer-arrested-cannabis-luggage-nigeria/",
-        "https://www.bbc.com/news/articles/cj93rggenq4xo",
-        "https://ndlea.gov.ng/blog/large-meth-consignments-hidden-in-cereals-packs-from-south-africa-intercepted-at-mmia"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlHlw8e5aFnICOPFPB4H3IQXhHBK4OlnPgEQyhVEm11P5XS-ColtapDNA5DJ0",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/pro-golfer-arrested-cannabis-luggage-nigeria/",
-          "title": "Pro golfer and chef arrested for over 100 pounds of alleged drugs in luggage at airport in Nigeria",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlHlw8e5aFnICOPFPB4H3IQXhHBK4OlnPgEQyhVEm11P5XS-ColtapDNA5DJ0"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cj93rggenq4xo",
-          "title": "US basketball player Greene Da'monte Khiree arrested in Nigeria with cannabis haul",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0"
-        },
-        {
-          "url": "https://ndlea.gov.ng/blog/large-meth-consignments-hidden-in-cereals-packs-from-south-africa-intercepted-at-mmia",
-          "title": "Large meth consignments hidden in cereals packs from South Africa intercepted at MMIA",
-          "publisher": "National Drug Law Enforcement Agency",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyZpko7wWnOVVyJLZphuMyTUI_zL3z1oMh5Bin7-iqr2bu9x21eqjWvhMQDSc"
-        }
-      ]
-    },
-    {
-      "query": "ohare ground stop",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T18:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcchicago.com/news/local/ground-stop-issued-at-ohare-airport-due-to-staffing-at-start-of-busy-holiday-week/4020413/",
-        "https://www.newsweek.com/busiest-us-airports-hit-by-ground-stops-two-days-in-a-row-12758749",
-        "https://chicago.suntimes.com/news/2026/11/23/ground-stop-issued-at-ohare-airport-during-busy-holiday-travel-week"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRylOxcSz5Un_-UMe1K19oeDeH5m3p2tJkrG1Ye6sOxpuxjQYrlcQgivsEXew",
-      "image_credit": "NBC Chicago",
-      "news": [
-        {
-          "url": "https://www.nbcchicago.com/news/local/ground-stop-issued-at-ohare-airport-due-to-staffing-at-start-of-busy-holiday-week/4020413/",
-          "title": "Ground stop issued at O'Hare Airport ‘due to staffing' at start of busy holiday week",
-          "publisher": "NBC Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRylOxcSz5Un_-UMe1K19oeDeH5m3p2tJkrG1Ye6sOxpuxjQYrlcQgivsEXew"
-        },
-        {
-          "url": "https://www.newsweek.com/busiest-us-airports-hit-by-ground-stops-two-days-in-a-row-12758749",
-          "title": "Busiest US Airports Hit by Ground Stops Two Days in a Row",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCZ9LoxXFbHTYUoljSDhLhKgtXanq0mRwXU76RDdPpUWvXR0AGrgxyScOhHGM"
-        },
-        {
-          "url": "https://chicago.suntimes.com/news/2026/11/23/ground-stop-issued-at-ohare-airport-during-busy-holiday-travel-week",
-          "title": "Ground stop issued at O'Hare Airport during busy holiday travel week",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIckNOtEJyN9SyRYUrkBjb9MxX6YFro_F3T4B70clEWf7-sDqWErhhGiaVjM"
-        }
-      ]
-    },
-    {
-      "query": "ap top 25 basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T17:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50574973/houston-replaces-florida-new-no-1-men-ap-top-25",
-        "https://www.cbssports.com/college-basketball/news/coaches-poll-rankings-duke-tumbles-houston-surges/",
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-23/houston-surges-no-1-andy-katzs-latest-power-44"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3q3fRq9Kwn40m33HKy-_BcwO5YwWt0_J2VhRuzZcmCCN4AsF8jbKR0nqCah4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50574973/houston-replaces-florida-new-no-1-men-ap-top-25",
-          "title": "Houston replaces Florida at No. 1 in men's AP Top 25",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3q3fRq9Kwn40m33HKy-_BcwO5YwWt0_J2VhRuzZcmCCN4AsF8jbKR0nqCah4"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/coaches-poll-rankings-duke-tumbles-houston-surges/",
-          "title": "College basketball rankings: Duke tumbles after second loss, Houston surges in Coaches Poll",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVHwfuqUrFTqyY8yEZYk5tCNWFIUcP8OWI4bdGL2fpYbT9pKRxw01GqfSozs"
-        },
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-23/houston-surges-no-1-andy-katzs-latest-power-44",
-          "title": "Houston surges to No. 1 in Andy Katz's latest Power 44",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMBfEiwCwh2hQekleSUnJmJ2chI8cpqbiEAgtpzCTM3Tv0QjRFCVFNo3tKlJo"
-        }
-      ]
-    },
-    {
-      "query": "the heart in winter",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T17:40:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1237231172/",
-        "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
-        "https://www.hollywoodreporter.com/movies/movie-news/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1236761238/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAWgvIRRBQ6IlpSknJCVmrEWgykFFO3s7NwH0pB0Xsgz2F3WyDU6-Ys3mxnko",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1237231172/",
-          "title": "Steven Spielberg Sets Adaptation Of ‘The Heart In Winter’ As Next Film At Focus With Jessie Buckley, Cillian Murphy And Mark Rylance Starring And Paul Thomas Anderson Adapting The ",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAWgvIRRBQ6IlpSknJCVmrEWgykFFO3s7NwH0pB0Xsgz2F3WyDU6-Ys3mxnko"
-        },
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
-          "title": "Steven Spielberg to make a western written by Paul Thomas Anderson",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD7mAGwSySWIXNIIPhzcyFntArsjm_zFdZYD3cw9lP-ZkBk0EcY8jJtlly7zM"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/movies/movie-news/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1236761238/",
-          "title": "Steven Spielberg to Direct 'Heart in Winter' From Paul Thomas Anderson",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXVpaK498mbF5mochROE85uX6npKzJAgF1kYyGjT87wCXdAVEjPVnMicGMbrI"
         }
       ]
     }
