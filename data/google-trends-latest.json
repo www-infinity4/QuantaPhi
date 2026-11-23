@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T22:01:18.579514Z",
+  "checked_at": "2026-11-23T22:31:22.021025Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "michigan vs miami fl",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T21:20:00Z",
+      "query": "byu basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T22:10:00Z",
       "related_news_urls": [
-        "https://mgoblue.com/news/2026/11/20/womens-basketball-michigan-to-head-to-bahamas-for-baha-mar-pink-flamingo-championship",
-        "https://www.nytimes.com/athletic/7806174/2026/11/23/michigan-vs-miami-fl-stream-how-to-watch-nov-23/",
-        "https://1230thegambler.iheart.com/content/2026-11-23-michigan-vs-miami-fl-tv-stream-nov-23/"
+        "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
+        "https://sports.yahoo.com/articles/washington-vs-byu-live-updates-210102339.html",
+        "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlk5OMl8uchHaDniAAcWlPCIT-UKXcCe7TNyIw7UVRKbGzXkyAavGztNZFccM",
-      "image_credit": "University of Michigan Athletics",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk",
+      "image_credit": "BYU Athletics",
       "news": [
         {
-          "url": "https://mgoblue.com/news/2026/11/20/womens-basketball-michigan-to-head-to-bahamas-for-baha-mar-pink-flamingo-championship",
-          "title": "Michigan to Head to Bahamas for Baha Mar Pink Flamingo Championship",
-          "publisher": "University of Michigan Athletics",
+          "url": "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
+          "title": "No. 21 BYU faces Washington in Southwest Maui Invitational",
+          "publisher": "BYU Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlk5OMl8uchHaDniAAcWlPCIT-UKXcCe7TNyIw7UVRKbGzXkyAavGztNZFccM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7806174/2026/11/23/michigan-vs-miami-fl-stream-how-to-watch-nov-23/",
-          "title": "How to watch Michigan vs. Miami (FL) women’s basketball: TV channel and streaming options for November 23",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSRRiu4XYTyzMAmLXmOmJcl99c_z7yHyYWHImYxZBSeo-w2W5sHvXZlxPoocA"
-        },
-        {
-          "url": "https://1230thegambler.iheart.com/content/2026-11-23-michigan-vs-miami-fl-tv-stream-nov-23/",
-          "title": "Michigan vs. Miami (FL) TV & Stream – Nov. 23",
-          "publisher": "WBZT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKj3YXAUU1a8Ggfj9X3iGLjQFwOhegrE3G2p6DMX9V8pDmYHqX2AskPCQBfOc"
-        }
-      ]
-    },
-    {
-      "query": "flood watch",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-23T21:10:00Z",
-      "related_news_urls": [
-        "https://www.charlotteobserver.com/news/weather-news/article318220198.html",
-        "https://www.wect.com/2026/11/23/king-tides-could-cause-flooding-carolina-beach-roads/",
-        "https://www.thestate.com/news/weather-news/article318216706.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK64Lb3-YQjNxXMT28BycYlmyrx1voQkLeD7bYcIhD_FjPg9Bd6nnooiyfwA0",
-      "image_credit": "Charlotte Observer",
-      "news": [
-        {
-          "url": "https://www.charlotteobserver.com/news/weather-news/article318220198.html",
-          "title": "Coastal flood watch affecting Eastern North Carolina Wednesday and Thursday",
-          "publisher": "Charlotte Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK64Lb3-YQjNxXMT28BycYlmyrx1voQkLeD7bYcIhD_FjPg9Bd6nnooiyfwA0"
-        },
-        {
-          "url": "https://www.wect.com/2026/11/23/king-tides-could-cause-flooding-carolina-beach-roads/",
-          "title": "King tides could cause flooding on Carolina Beach roads",
-          "publisher": "WECT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_xUoZDsOOE_ENuDNdT5AKfOqa3zv_MCvuDygEcRxOFmvu4vf-vGn8979fbCg"
-        },
-        {
-          "url": "https://www.thestate.com/news/weather-news/article318216706.html",
-          "title": "Coastal flood advisory in place for Myrtle Beach area and Coastal Georgetown for Tuesday",
-          "publisher": "The State",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGp3cBA5DLrLRA44jHNqJmBCPCvx5v5w2Ka3lFRuyLBOyRlSb0qiOJSJh4KE"
-        }
-      ]
-    },
-    {
-      "query": "what time does the stock market close",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T21:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://www.usatoday.com/story/money/markets/2026/11/23/stock-market-thanksgiving-black-friday-2026/92761427007/",
-        "https://primexbt.com/company-blog/upcoming-market-hours-changes-due-to-us-thanksgiving-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-          "title": "Is the stock market open on Thanksgiving and Black Friday?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
-        },
-        {
-          "url": "https://www.usatoday.com/story/money/markets/2026/11/23/stock-market-thanksgiving-black-friday-2026/92761427007/",
-          "title": "Is the stock market open on Thanksgiving, Black Friday?",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1EdYqyAmRAsGimmA8fydFyxd0qlAsVB6kwz7igUl2GQyHkwc3Z0g5gY6Xfa4"
-        },
-        {
-          "url": "https://primexbt.com/company-blog/upcoming-market-hours-changes-due-to-us-thanksgiving-2026/",
-          "title": "Upcoming market hours changes due to US Thanksgiving 2026",
-          "publisher": "PrimeXBT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwYXhJpLFI0qfLai3BlEs7U8B_ePd1pzi2J4CUGTY5GfT2GTdFfRegR6PWBIk"
-        }
-      ]
-    },
-    {
-      "query": "maria middleton",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T21:10:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/US/pennsylvania-teen-died-2020-become-gen-saint/story?id=138378815",
-        "https://6abc.com/post/maria-middletons-story-bucks-county-teens-journey-canonization-takes-step/20057588/",
-        "https://www.buckscountyherald.com/news/perkasie-teen-villa-joseph-marie-student-begins-road-to-sainthood/article_d57dbfb4-4048-42ff-a05b-3b482984b636.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWpj8Xm2xOC2Lbyi0SwX0-NCVPT9DXw14Ikx200EqW5DP7vsy8AmEKpOeMF5A",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/US/pennsylvania-teen-died-2020-become-gen-saint/story?id=138378815",
-          "title": "Pennsylvania teen who died in 2020 could become first Gen Z saint",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWpj8Xm2xOC2Lbyi0SwX0-NCVPT9DXw14Ikx200EqW5DP7vsy8AmEKpOeMF5A"
-        },
-        {
-          "url": "https://6abc.com/post/maria-middletons-story-bucks-county-teens-journey-canonization-takes-step/20057588/",
-          "title": "Maria Middleton's story: Bucks County teen's journey toward canonization takes next step",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqp8Ctn1PEFCCD1coiid7_zsmmzof_-1l9wdC8Z-Qk8o-BlB6qmLYLBvPWMAY"
-        },
-        {
-          "url": "https://www.buckscountyherald.com/news/perkasie-teen-villa-joseph-marie-student-begins-road-to-sainthood/article_d57dbfb4-4048-42ff-a05b-3b482984b636.html",
-          "title": "Perkasie teen, Villa Joseph Marie student begins road to sainthood",
-          "publisher": "Bucks County Herald newspaper",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiqOdWu31N2MiCjlxFIn8LBaH53OKP77Y5ZQ9gVcKGvRHwMy6S_YEjoheq7y8"
-        }
-      ]
-    },
-    {
-      "query": "jacory croskey-merritt",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T21:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50576561/commanders-rb-jacory-croskey-merritt-activated-ir",
-        "https://sports.yahoo.com/articles/commanders-big-boost-ahead-monday-212816781.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-23/metcalf-wont-face-suspension-for-week-11-incident"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdidF30slOCoeQONZSg8aQSboAYWqqPtCRGx5sp4CSwTe-n5p0eIcwwPJ1n6k",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50576561/commanders-rb-jacory-croskey-merritt-activated-ir",
-          "title": "Commanders RB Jacory Croskey-Merritt activated from IR ahead of MNF",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdidF30slOCoeQONZSg8aQSboAYWqqPtCRGx5sp4CSwTe-n5p0eIcwwPJ1n6k"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/commanders-big-boost-ahead-monday-212816781.html",
-          "title": "Commanders get big boost ahead of Monday night vs Bengals",
+          "url": "https://sports.yahoo.com/articles/washington-vs-byu-live-updates-210102339.html",
+          "title": "Washington vs BYU live updates: Score, highlights, predictions, analysis",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToC5JIijBRpx1wtOfj3V3DfDe5iFKC_8ii9swnyV9ObB_9sXjUD6UKP2fJLoE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK7076f67eCla2rD3MW7A6glTDYXwx0aEgLPw2MntT8cuNvhOgRFAo213ocBo"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-23/metcalf-wont-face-suspension-for-week-11-incident",
-          "title": "Metcalf won’t face suspension for Week 11 incident",
-          "publisher": "NBC Sports",
+          "url": "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/",
+          "title": "BYU coach Kevin Young previews Maui Invitational",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKNo9UegBHXw2ObQAx4ubSx5aFxNkc13Of4oI0PnShf6GeO7qgppy5ARPuVbQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv4MMNIO_V1n_nnuyX8m8BoZf91G_yXu05FTSehh8txomln4uwrQa_kkhqW4"
         }
       ]
     },
     {
-      "query": "dwts finale",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T20:50:00Z",
+      "query": "russia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T22:10:00Z",
       "related_news_urls": [
-        "https://www.forbes.com/sites/monicamercuri/2026/11/22/dancing-with-the-stars-finale-unveils-freestyle-songs-and-major-viewing-change/",
-        "https://www.bostonglobe.com/2026/11/23/arts/dancing-with-the-stars-season-35-finale-predictions/",
-        "https://www.yahoo.com/entertainment/tv/articles/predictions-winner-dancing-stars-season-163000108.html"
+        "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
+        "https://www.theguardian.com/world/2026/nov/23/russia-war-dead-hidden-toll-ukraine-conflict",
+        "https://thehill.com/policy/defense/6238400-russian-casualties-ukraine-war-putin-zelensky/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXBgz_aRVUGwRiMfPmi7gDkQmDmgI3sHp2W3SvhIhe3v-Bah23TNh2hVSHe5o",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZUx6cF93BoANENh_oSpBahOvYiqvh146JUWFnesj5-b4VR6z0ZTFGshp6q5c",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
+          "title": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZUx6cF93BoANENh_oSpBahOvYiqvh146JUWFnesj5-b4VR6z0ZTFGshp6q5c"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/23/russia-war-dead-hidden-toll-ukraine-conflict",
+          "title": "Russia’s war dead: the hidden toll of the Ukraine conflict",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS-OnGCPoxsAN8SQD0ip8zaiNiWKGOl8iEDUbzFyhVJoBkCSKALhMHraIUUbw"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6238400-russian-casualties-ukraine-war-putin-zelensky/",
+          "title": "More than 700,000 Russian soldiers have been killed in Ukraine: Analysis",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4h2VvCTFrbkdSBU_L4GkN3bAV2MWOw8Ofb6-ERlGqx91siFN_lK7k-rxnbcc"
+        }
+      ]
+    },
+    {
+      "query": "internacional vs vitória",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T22:10:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://somoscolorados.com/beira-rio-deve-receber-40-mil-torcedores-em-partida-decisiva-para-o-inter",
+        "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Internacional x Vitória: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA"
+        },
+        {
+          "url": "https://somoscolorados.com/beira-rio-deve-receber-40-mil-torcedores-em-partida-decisiva-para-o-inter",
+          "title": "Beira-Rio deve receber 40 mil torcedores em partida decisiva para o Inter",
+          "publisher": "Portal Somos Colorados",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCgx3wU6RQpUFcsJONQIhtW-76xuO2t119L_3FF5qVEeF487rIce_Be9vtMxY"
+        },
+        {
+          "url": "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html",
+          "title": "Eduardo Baptista surpreende e escala novidade no meio-campo do Inter; veja o time para encarar o Vitória",
+          "publisher": "GZH",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzV3nNiCqjG4be6yTyP__niTzeBVaLK-MLM2KgP6rEgjAln8xcFKThSECjUwU"
+        }
+      ]
+    },
+    {
+      "query": "nevada basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T22:10:00Z",
+      "related_news_urls": [
+        "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
+        "https://www.kolotv.com/2026/11/23/acrisure-series-continues-wolf-pack-take-san-francisco-tahoe/",
+        "https://nevadawolfpack.com/news/2026/11/22/mens-basketball-nevada-faces-san-francisco-in-the-acrisure-series.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ",
+      "image_credit": "Nevada Sports Net",
+      "news": [
+        {
+          "url": "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
+          "title": "Nevada basketball versus San Francisco: Three keys to victory and a prediction",
+          "publisher": "Nevada Sports Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ"
+        },
+        {
+          "url": "https://www.kolotv.com/2026/11/23/acrisure-series-continues-wolf-pack-take-san-francisco-tahoe/",
+          "title": "Acrisure Series continues as Wolf Pack take on San Francisco in Tahoe",
+          "publisher": "KOLO | 8 News Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrH2uULGUCXy6OsdKrmKPtPLi2GFi0vWozbjLyyepmY8HCZXWQtVjF0YHnTKo"
+        },
+        {
+          "url": "https://nevadawolfpack.com/news/2026/11/22/mens-basketball-nevada-faces-san-francisco-in-the-acrisure-series.aspx",
+          "title": "Nevada faces San Francisco in the Acrisure Series - University of Nevada Athletics",
+          "publisher": "University of Nevada Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZZnyNC1HmXFnuyPZZ4VpLy0z8FQa_fzGldib9Hw-QgNNkeE6r_EdEVZfVp2k"
+        }
+      ]
+    },
+    {
+      "query": "tom holland",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T21:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164948323.html",
+        "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
+        "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxmBG0TZi0igSRW4ECVhbzs10GDTOhEzs3CmE8kkmdauHcWnBVG_WR1KTAMw",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164948323.html",
+          "title": "Tom Holland’s Spider-Man Is Back in New Marvel Release as Avengers: Doomsday Trailer Debuts",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxmBG0TZi0igSRW4ECVhbzs10GDTOhEzs3CmE8kkmdauHcWnBVG_WR1KTAMw"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
+          "title": "Rosario Dawson Back as Night Nurse in Spider-Man Brand New Day Re-Release",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp3Xtx7KZ82S3IYlod8abLBuHYPHfn99Kd7tuTocDx7bDTugsCxdfiC0xYfs"
+        },
+        {
+          "url": "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/",
+          "title": "Tom Holland Officially Returns as Spider-Man in Stunning New Look",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI3rZraz4dFNHMg5mAfNpg4-0MMDFCzhq-J4NT5NO6A7Dhi9QVV8novaix5C0"
+        }
+      ]
+    },
+    {
+      "query": "is there a full moon tonight",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T21:50:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
+        "https://www.bostonglobe.com/2026/11/23/metro/viewing-beaver-supermoon-king-tides/",
+        "https://www.nationalgeographic.com/science/article/november-2026-supermoon"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2LpBm3gW2zcn8bppZLXxL4OFnpbau2xz1p5xZsw2kvtPX6F3Quyz8uwk4n8",
       "image_credit": "Forbes",
       "news": [
         {
-          "url": "https://www.forbes.com/sites/monicamercuri/2026/11/22/dancing-with-the-stars-finale-unveils-freestyle-songs-and-major-viewing-change/",
-          "title": "‘Dancing With The Stars’ Reveals Finale Songs And Dances, Including Freestyle",
+          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
+          "title": "A Supermoon Is About To Meet The ‘Seven Sisters’ In The Night Sky",
           "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXBgz_aRVUGwRiMfPmi7gDkQmDmgI3sHp2W3SvhIhe3v-Bah23TNh2hVSHe5o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2LpBm3gW2zcn8bppZLXxL4OFnpbau2xz1p5xZsw2kvtPX6F3Quyz8uwk4n8"
         },
         {
-          "url": "https://www.bostonglobe.com/2026/11/23/arts/dancing-with-the-stars-season-35-finale-predictions/",
-          "title": "Ahead of the ‘Dancing with the Stars’ finale on Tuesday, we rate the contenders — knowing anything could happen",
+          "url": "https://www.bostonglobe.com/2026/11/23/metro/viewing-beaver-supermoon-king-tides/",
+          "title": "This week’s Beaver Supermoon to bring king tides to Boston. Here’s how to catch a great lunar view.",
           "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwnSGUcVf9878TyBxoPS-Y9s2D6Wif1F4_kiBWIc_vaw26_607ZSR4XW4bx-g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRk1LNvNSU6ijMowU6TTpneqnP3Riu9wTbsJ25wH4rTIbswFrtAIiyXr5ks20"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/predictions-winner-dancing-stars-season-163000108.html",
-          "title": "Predictions for the Winner of Dancing with the Stars Season 35 Finale on Nov. 24",
+          "url": "https://www.nationalgeographic.com/science/article/november-2026-supermoon",
+          "title": "A Spectacular Streak of Supermoons Is About to Begin",
+          "publisher": "National Geographic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnlyIlPJ5DYAXv63AqAE_5ZsEu3J13VJp2wcJ-4x4_cNZvNG7i_w7zuW2Jx1I"
+        }
+      ]
+    },
+    {
+      "query": "grayson chrisley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T21:50:00Z",
+      "related_news_urls": [
+        "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/judge-rules-against-todd-chrisley-110955975.html",
+        "https://www.tmz.com/2026/11/23/judge-partially-denies-todd-chrisley-effort-to-block-son-grayson-medical-records/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWI3w5xD6USmFmvY-HHwOOSpNA6ZXIHOORxKGJT0djd9VbauF4px-HvtnVE",
+      "image_credit": "WSB-TV",
+      "news": [
+        {
+          "url": "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
+          "title": "Judge allows access to Grayson Chrisley’s medical records in 2022 crash lawsuit",
+          "publisher": "WSB-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWI3w5xD6USmFmvY-HHwOOSpNA6ZXIHOORxKGJT0djd9VbauF4px-HvtnVE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/judge-rules-against-todd-chrisley-110955975.html",
+          "title": "Judge Rules Against Todd Chrisley in Battle Over Son Grayson’s Drug Test Records After Car Crash",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz3PVdZxlbRFOimmNAQu37RjIT_YUgwa24lPivagaGpUupG0X93l6cZ015zRc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzbaEVskjO_0ZHiBufJQsoB_6LUswoNab2XSnThCFjADT6vV3bAC13t42ehQ"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/23/judge-partially-denies-todd-chrisley-effort-to-block-son-grayson-medical-records/",
+          "title": "Todd Chrisley Shut Down in Effort to Completely Block Son's Drug Test Results From 2022 Car Crash",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgGBXTu8WRAzhTmj3bkKcjiuvk7kVuT1zrm2p7_OIplhNf587CfBx8muTqI7g"
         }
       ]
     },
     {
-      "query": "cathie wood",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T20:40:00Z",
+      "query": "michelle randolph",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T21:50:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-goes-bargain-hunting-132902138.html",
-        "https://www.tradingview.com/news/seekingalpha:fece44d52094b:0-cathie-wood-s-ark-invest-weekly-update-trims-nvidia-by-107m-boosts-spacex-stake-by-74m/",
-        "https://www.benzinga.com/markets/tech/26/11/63418980/cathie-wood-doubles-down-on-highest-conviction-names-nvidia-tesla-and-amd-as-cyclical-tech-stocks-get-slaughtered-amid-market-pullback"
+        "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon",
+        "https://www.yahoo.com/entertainment/tv/articles/tsitp-chris-briney-breaks-silence-150052752.html",
+        "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcE6rMSwoSGKYgpuDNli60CIXinekbG9ulmEZ3g5zWM2RnpUXkppmhKBq8DA8",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxe5TnZlJAtlkanq_OqUUg2veUrvNmrqIRBBU3FfLReTM6ygDRF5tYkC3e8o",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-goes-bargain-hunting-132902138.html",
-          "title": "Cathie Wood Goes Bargain Hunting: 3 Stocks She Just Bought",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon",
+          "title": "Clashing Through the Snow review – Amazon’s Christmas romcom is a bust",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcE6rMSwoSGKYgpuDNli60CIXinekbG9ulmEZ3g5zWM2RnpUXkppmhKBq8DA8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxe5TnZlJAtlkanq_OqUUg2veUrvNmrqIRBBU3FfLReTM6ygDRF5tYkC3e8o"
         },
         {
-          "url": "https://www.tradingview.com/news/seekingalpha:fece44d52094b:0-cathie-wood-s-ark-invest-weekly-update-trims-nvidia-by-107m-boosts-spacex-stake-by-74m/",
-          "title": "Cathie Wood's Ark invest weekly update: trims Nvidia by $107M, boosts SpaceX stake by $74M",
-          "publisher": "TradingView",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/tsitp-chris-briney-breaks-silence-150052752.html",
+          "title": "TSITP’s Chris Briney Breaks Silence on Surprise Cameo in His Christmas Movie: ‘Wish I Made It Happen’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1fUjBS-iWeZElHxAb9r1AdTYbW4Umw2ARsqyTiq6T1i1sDPYAGAeQeHoh9E"
         },
         {
-          "url": "https://www.benzinga.com/markets/tech/26/11/63418980/cathie-wood-doubles-down-on-highest-conviction-names-nvidia-tesla-and-amd-as-cyclical-tech-stocks-get-slaughtered-amid-market-pullback",
-          "title": "Cathie Wood Doubles Down On ‘Highest Conviction Names’ Nvidia, Tesla and AMD As Cyclical Tech Stocks Get",
-          "publisher": "Benzinga",
+          "url": "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908",
+          "title": "Christopher Briney Shocks Jenna and Sheinelle With a Magic Trick on TODAY: ‘What?!’",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC_uOEAhLaqMFtte7dyCKH4YDkXQmBzzg0vwpLwVtouSnYVSG1uAe7jLIikgY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcf-eBZ7b_MMJAzF571NS6U0B7FeqdxiePZBzMDihOBwsv0KUa-ipaYF1jvM"
         }
       ]
     },
     {
-      "query": "thanksgiving weather forecast",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T20:30:00Z",
+      "query": "manny manuel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T21:50:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
-        "https://www.inquirer.com/weather/thanksgiving-weather-philadelphia-travel-delays-20261123.html",
-        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino"
+        "https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-manny-manuel-por-conducir-en-estado-de-embriaguez/",
+        "https://www.primerahora.com/noticias/policia-tribunales/notas/arrestan-en-salinas-a-manny-manuel-por-conducir-borracho/",
+        "https://es-us.vida-estilo.yahoo.com/manny-manuel-arrestado-supuesto-estado-203207469.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmSMvCF3VC4czPWQITurcmY26xZKDlgnrUFUU5T9g5dv9gxfkzI80SuJMv0-Y",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn04a_fj8e9aPs_33qPddrAwlWol_WwsICQCfqnoI3njDyeosTFs6VxGHEZNI",
+      "image_credit": "El Nuevo Día",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
-          "title": "Storms to hit both coasts, threatening Thanksgiving travel for millions and Macy’s 100th parade",
-          "publisher": "CNN",
+          "url": "https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-manny-manuel-por-conducir-en-estado-de-embriaguez/",
+          "title": "Arrestan a Manny Manuel por conducir en estado de embriaguez",
+          "publisher": "El Nuevo Día",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmSMvCF3VC4czPWQITurcmY26xZKDlgnrUFUU5T9g5dv9gxfkzI80SuJMv0-Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn04a_fj8e9aPs_33qPddrAwlWol_WwsICQCfqnoI3njDyeosTFs6VxGHEZNI"
         },
         {
-          "url": "https://www.inquirer.com/weather/thanksgiving-weather-philadelphia-travel-delays-20261123.html",
-          "title": "Heavy rain and strong winds could hit the Philadelphia area on Thanksgiving",
-          "publisher": "Inquirer.com",
+          "url": "https://www.primerahora.com/noticias/policia-tribunales/notas/arrestan-en-salinas-a-manny-manuel-por-conducir-borracho/",
+          "title": "Arrestan en Salinas a Manny Manuel por conducir en alegado estado de embriaguez",
+          "publisher": "Primera Hora",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqkHJreDcu2wO0B-a6ySi8Bw02RdynYIT4TiA5U5tZay9bcITeJDl47ppy1Cw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOT50wmXIpre0kaxT0Mx5DOcm-gak_L03kuN4XQvr6pX67wU86IiHZgFIitrE"
         },
         {
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
-          "title": "Storms expected on both coasts threaten Thanksgiving travel",
-          "publisher": "NPR",
+          "url": "https://es-us.vida-estilo.yahoo.com/manny-manuel-arrestado-supuesto-estado-203207469.html",
+          "title": "Manny Manuel es arrestado en supuesto estado de embriaguez",
+          "publisher": "Yahoo en Español Vida y Estilo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTtVfD-gJ9Ti3PD_q_3gLEG-bliogE1WXgsZXN5iFwJ-0tVCWyzlKelC5znU"
         }
       ]
     },
     {
-      "query": "jason statham",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T20:30:00Z",
+      "query": "wwe raw",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T21:50:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66124440/?ref_=tt_nwr_1",
-        "https://movieweb.com/wrath-of-man-statham-eastwood-stream-november-2026/",
-        "https://movieweb.com/the-beekeeper-jason-statham-stream-november-2026/"
+        "https://www.wwe.com/shows/raw/2026-11-23",
+        "https://sports.yahoo.com/articles/roman-reigns-returns-wwe-raw-183032078.html",
+        "https://newsable.asianetnews.com/gallery/entertainment/three-names-cody-rhodes-could-have-called-to-fill-team-usa-final-wwe-spot-6nukl3p"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQ3R0sjf_ng8RjagbJIxQhLgRfYotzIBFv8S668LeMhoMyGindv4NIAalXm0",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxjsBNPnr3zM5IS-30rLyiOm3mlnI9GE5UJmg8_Vq2YMP_M-b0TRKf-muuHE",
+      "image_credit": "WWE",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66124440/?ref_=tt_nwr_1",
-          "title": "Jason Statham & Scott Eastwood's (Very) Intense 119-Minute Action Thriller Is a Global Streaming Hit",
-          "publisher": "IMDb",
+          "url": "https://www.wwe.com/shows/raw/2026-11-23",
+          "title": "Raw preview, Nov. 23, 2026: How will Roman Reigns and The Bloodline react to The 946 getting the WarGames advantage?",
+          "publisher": "WWE",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQ3R0sjf_ng8RjagbJIxQhLgRfYotzIBFv8S668LeMhoMyGindv4NIAalXm0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxjsBNPnr3zM5IS-30rLyiOm3mlnI9GE5UJmg8_Vq2YMP_M-b0TRKf-muuHE"
         },
         {
-          "url": "https://movieweb.com/wrath-of-man-statham-eastwood-stream-november-2026/",
-          "title": "Jason Statham & Scott Eastwood's (Very) Intense 119-Minute Action Thriller Is a Global Streaming Hit",
-          "publisher": "MovieWeb",
+          "url": "https://sports.yahoo.com/articles/roman-reigns-returns-wwe-raw-183032078.html",
+          "title": "Roman Reigns Returns on WWE Raw Tonight, Which Starts Two Hours Early",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWzPmBOzATjd5ChE1FMEneP7VRNnGJw8H4Bjmsu4QrvlMVftquHdigJYWJenc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9qA-lTx54wO_54MOZDTC-jMYWkNEZkjeMCdjDfWOq1GSzOFRa0efjUJ051OM"
         },
         {
-          "url": "https://movieweb.com/the-beekeeper-jason-statham-stream-november-2026/",
-          "title": "Jason Statham's R-Rated 105-Minute Action Thriller Is a Global Streaming Hit Ahead of 2027 Sequel",
-          "publisher": "MovieWeb",
+          "url": "https://newsable.asianetnews.com/gallery/entertainment/three-names-cody-rhodes-could-have-called-to-fill-team-usa-final-wwe-spot-6nukl3p",
+          "title": "3 Names Cody Rhodes Could Have Called To Fill Team USA's Final WWE Spot",
+          "publisher": "Asianet Newsable",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwVS8rcwxWaAA-BAPMLUNLiiqTM7f6SzKIwbE43Uc0ttTUNeu9jiHnFJpWVY0"
-        }
-      ]
-    },
-    {
-      "query": "404 media",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T20:20:00Z",
-      "related_news_urls": [
-        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
-        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
-        "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
-      "image_credit": "Google Cloud",
-      "news": [
-        {
-          "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
-          "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
-          "publisher": "Google Cloud",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
-        },
-        {
-          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
-          "title": "Outpace automated cyber threats with security built for nonstop defense.",
-          "publisher": "blog.google",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiublQ9Y4VBPR2O9vWESkNe_aHyYueCv2PeexKRuTbBvzUmHir69PIXxeDyeo"
-        },
-        {
-          "url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
-          "title": "Agentic Attacks in the Wild: ARTEX & Offensive AI Frameworks",
-          "publisher": "wiz.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDA_7WAWWyrFTXQKbicy-FoVqY5LZ0ORlZbZcXnZ8ItGCF2HJPHjBDd_OXb0E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjTnhgNujnVIHs6ZxPm4AntlLhpt5eHx-PE-jMhHtki99oLZWm9qFAI-Pkghk"
         }
       ]
     }
