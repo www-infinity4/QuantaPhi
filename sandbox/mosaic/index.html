@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuantaPhi · Mosaic Creator Studio Sandbox</title>
+<style>
+:root{font-family:system-ui,sans-serif;background:#0c1627;color:#eef6ff;line-height:1.5;letter-spacing:.015em}
+*{box-sizing:border-box}body{margin:0;padding:clamp(16px,3vw,28px)}main{max-width:1050px;margin:auto}
+h1{font-size:clamp(1.7rem,5vw,2.6rem);margin:.3em 0}
+.note{color:#c7d8eb}a{color:#bddcff}.editor,.panel{background:#1a2941;border:1px solid #55749a;border-radius:19px;padding:18px;margin:20px 0}
+label{display:block;font-weight:700;margin:10px 0}textarea{width:100%;min-height:150px;resize:vertical;border:1px solid #809cba;border-radius:12px;background:#0a1728;color:#fff;padding:12px;font:inherit;font-size:1rem}
+button{min-height:48px;border-radius:10px;background:#a5d7ff;color:#0b1930;border:1px solid #b8dbfa;font:inherit;font-weight:700;padding:10px 16px;cursor:pointer}
+button:focus-visible,textarea:focus-visible{outline:3px solid #fff;outline-offset:3px}.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:12px}
+.node{background:#243a59;padding:14px;border-radius:14px;border:1px solid #7b9cc2}.node h3{font-size:1.12rem;margin:0 0 8px}
+.status{color:#dce7f4}.scenes li{margin-bottom:7px}footer{margin-top:20px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style></head><body><main>
+<p class="note">QuantaPhi · Developer sandbox</p><h1>Mosaic Creator Studio</h1>
+<p>Local storyboard only. Image, voice and video providers are not connected. No media generated, publication, uploads, payment or outside API calls. Not affiliated with commercial Mosaic.</p>
+<section class="editor"><h2>Original script writer</h2><label for="script">Scene ideas (up to 800 characters)</label>
+<textarea id="script" maxlength="800" placeholder="Write a short original script, separating scenes with periods."></textarea>
+<div class="buttons"><button id="plan" type="button">Build local storyboard</button><button id="export" type="button">Export draft JSON</button></div>
+<p id="message" class="note" role="status" aria-live="polite">Write an original script to begin.</p></section>
+<section class="panel"><h2>Node pipeline</h2><div class="flow">
+<div class="node"><h3>1. Script</h3><span class="status" id="st-script">Needs script</span></div>
+<div class="node"><h3>2. Image</h3><span class="status" id="st-image">Not connected</span></div>
+<div class="node"><h3>3. Voice</h3><span class="status" id="st-voice">Not connected</span></div>
+<div class="node"><h3>4. Video</h3><span class="status" id="st-video">Not connected</span></div>
+<div class="node"><h3>5. Review</h3><span class="status" id="st-review">Blocked until media rights and assets verified</span></div>
+</div></section>
+<section class="panel"><h2>Storyboard scenes</h2><ol id="scenes"></ol><p id="empty" class="note">No scenes yet. This produces text outlines, not rendered images or video.</p></section>
+<footer>No paid provider is needed to write a storyboard. <a href="/">QuantaPhi home</a></footer>
+</main><script type="module">
+import {createStudio,createStoryboard,pipelineStatus,exportProject} from './mosaic-state.mjs';
+const byId=id=>document.getElementById(id);let studio=createStudio();
+function render(){
+  const status=pipelineStatus(studio);
+  for(const [name,value] of Object.entries(status))byId('st-'+name).textContent=value.replaceAll('_',' ');
+  const list=byId('scenes');list.replaceChildren();
+  studio.scenes.forEach((text,index)=>{const li=document.createElement('li');li.textContent='Scene '+(index+1)+': '+text;list.append(li)});
+  byId('empty').hidden=studio.scenes.length>0;
+}
+byId('plan').addEventListener('click',()=>{
+  studio=createStoryboard(createStudio(byId('script').value));render();
+  byId('message').textContent=studio.scenes.length?studio.scenes.length+' local scenes ready. Media providers are disconnected.':'Enter text to create a local storyboard.';
+});
+byId('export').addEventListener('click',()=>{
+  const project=createStoryboard(createStudio(byId('script').value));
+  const blob=new Blob([JSON.stringify(exportProject(project),null,2)],{type:'application/json'});
+  const url=URL.createObjectURL(blob);const anchor=document.createElement('a');
+  anchor.href=url;anchor.download='quantaphi-mosaic-draft.json';anchor.click();URL.revokeObjectURL(url);
+  byId('message').textContent='Local draft exported; no media generated or published.';
+});
+render();
+</script></body></html>
