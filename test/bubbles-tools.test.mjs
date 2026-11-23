@@ -572,3 +572,22 @@ test('Bubbles gateway discards repeated hidden model text instead of speaking it
  assert.match(body.output,/not verified|not completed|could not/i);
  assert.equal(body.receipt.repositoryActionsVerified,false);
 });
+
+test('Workers AI free daily quota reports 429 without repeating expensive inference or claiming login failed',async()=>{
+ let calls=0;
+ const req=new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://quantaphi.org','Content-Type':'application/json'},
+  body:JSON.stringify({request:'Hello Bubbles'})});
+ const res=await worker.fetch(req,{AI:{run:async()=>{
+  calls++;
+  const err=new Error('AiError: 4006: daily free neuron allocation exhausted');
+  err.code=4006;
+  throw err;
+ }}});
+ const body=await res.json();
+ assert.equal(res.status,429,'daily quota is not an unknown 502 model error');
+ assert.equal(body.error,'ai_daily_limit');
+ assert.match(body.output,/AI.*capacity|daily.*limit/i);
+ assert.equal(body.receipt.status,'failed');
+ assert.equal(calls,1,'do not retry an exhausted daily allocation with other paid/free models');
+ assert.doesNotMatch(JSON.stringify(body),/password|token|new wallet|sign out|sign in with Cloudflare/i);
+});
