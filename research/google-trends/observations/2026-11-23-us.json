@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T03:33:28.181207Z",
+  "checked_at": "2026-11-23T04:01:15.965675Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "brandin cooks",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T03:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+          "title": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+          "title": "49ers waive WR Brandin Cooks",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
+        },
+        {
+          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/",
+          "title": "49ers cut WR Brandin Cooks, should Raiders sign him?",
+          "publisher": "Raiders Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvaFwnvxq8Nk48NqQzsHgH-0rVScYrNK328mhQdKrCSyjgeBx3cqcXyQUiek"
+        }
+      ]
+    },
+    {
+      "query": "josh hart",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T03:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
+        "https://sports.yahoo.com/nba/breaking-news/article/knicks-mikal-bridges-drills-buzzer-beating-3-pointer-to-defeat-trail-blazers-031115344.html",
+        "https://www.nba.com/news/starting-5-november-22-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjvvlbxJUi4JjA3e_dJcI8j1pMCom1RwJGA2htrGXVzUnYzAsfSGgqFeyrrMo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
+          "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjvvlbxJUi4JjA3e_dJcI8j1pMCom1RwJGA2htrGXVzUnYzAsfSGgqFeyrrMo"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/knicks-mikal-bridges-drills-buzzer-beating-3-pointer-to-defeat-trail-blazers-031115344.html",
+          "title": "Knicks' Mikal Bridges drills buzzer-beating 3-pointer to defeat Trail Blazers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtiBRo35JqAohr2BOzwKUlze1iZcBDl7JP2nE9SwCNciPjyIqpBua-x8acpJk"
+        },
+        {
+          "url": "https://www.nba.com/news/starting-5-november-22-2026",
+          "title": "Starting 5: Bridges delivers, Wemby dominates",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3wA448_X-10Ox-y6i2oMGkP9lxnrVDNXeWvs-XieCv26ax0O8aop381FGM4"
+        }
+      ]
+    },
+    {
+      "query": "utah valley basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T03:40:00Z",
+      "related_news_urls": [
+        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+        "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
+        "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ",
+      "image_credit": "Formula 1",
+      "news": [
+        {
+          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
+          "publisher": "Formula 1",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
+        },
+        {
+          "url": "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
+          "title": "F1 Las Vegas GP LIVE: Race updates, results, stream and highlights from 21st round of 2026 Formula 1 season in USA",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5GB4kuPDyi_8Ek9Ehk42XOHxK9mZgIfbQ00PMdRn7qXlJhftMLpbnggYgJRc"
+        },
+        {
+          "url": "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
+          "title": "Max Verstappen promoted to Las Vegas GP pole as Kimi Antonelli drops to sixth",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wxv5GN_yrA_kldDehVtXmfd7ryVA5MZR1rYT8H47s_q5hbND0yXwrTXn9cI"
+        }
+      ]
+    },
+    {
+      "query": "karl-anthony towns",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T03:30:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/22/sports/karl-anthony-towns-draws-praise-from-another-former-coach/",
+        "https://www.complex.com/bets/a/sameer-kumar/karl-anthony-towns-knicks-championship",
+        "https://sports.yahoo.com/articles/love-kat-happy-him-130854387.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDtKELdsEbQNAc9bSJHtvgtOCSKWKdI70oBlkqqbuNG9k9D5NrKSX8qiFmm8",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/22/sports/karl-anthony-towns-draws-praise-from-another-former-coach/",
+          "title": "Karl-Anthony Towns draws praise from another former coach",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDtKELdsEbQNAc9bSJHtvgtOCSKWKdI70oBlkqqbuNG9k9D5NrKSX8qiFmm8"
+        },
+        {
+          "url": "https://www.complex.com/bets/a/sameer-kumar/karl-anthony-towns-knicks-championship",
+          "title": "Inside Karl-Anthony Towns’ Journey From Phenom to NBA Champ",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9eDi0Nc9HXKptwgzV63pEQ7Tc8AOucTI6DMbNcXw-Ta7DbW75AK34t1jbcxA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/love-kat-happy-him-130854387.html",
+          "title": "I love KAT; I was happy for him to get to the …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0KxR12f7Cq5jSflA3A4PJqzmkyCqM8nSH3Scg_wKqUC3bAl3sDSKs40NNy50"
+        }
+      ]
+    },
+    {
+      "query": "roman kantserov",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T03:30:00Z",
+      "related_news_urls": [
+        "https://www.fantasypros.com/nhl/news/622033/roman-kantserov-notches-two-points-saturdays-win-over-flames.php",
+        "https://www.chicitysports.com/chicago-blackhawks-kanserov-rookie-goals/",
+        "https://www.cbssports.com/fantasy/hockey/news/blackhawks-roman-kantserov-dominating-rookie-sniper-bags-another/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj0rWltT9pAKsi-su5neTd0up1rgpY6agMASRxBK-m_3gKPl4rUYt3m61_wWs",
+      "image_credit": "FantasyPros",
+      "news": [
+        {
+          "url": "https://www.fantasypros.com/nhl/news/622033/roman-kantserov-notches-two-points-saturdays-win-over-flames.php",
+          "title": "Roman Kantserov notches two points in Saturday's win over Flames",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj0rWltT9pAKsi-su5neTd0up1rgpY6agMASRxBK-m_3gKPl4rUYt3m61_wWs"
+        },
+        {
+          "url": "https://www.chicitysports.com/chicago-blackhawks-kanserov-rookie-goals/",
+          "title": "Chicago Blackhawks forward leading NHL rookies in goals",
+          "publisher": "ChiCitySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVoqVOBRQAzXBtwUB8Z_or9lDzokWEZWLTc4q_aXpn0oX4EsxyYi4Vm43euEk"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/hockey/news/blackhawks-roman-kantserov-dominating-rookie-sniper-bags-another/",
+          "title": "Blackhawks' Roman Kantserov: Dominating rookie sniper bags another",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIwsog_VCx1MhabHgaraqV_t-oBDpXEaQ9jjkLUNWZMtR_F4fVaXce2JLrDs"
+        }
+      ]
+    },
+    {
+      "query": "meritage hospitality group wendy closures",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T03:30:00Z",
+      "related_news_urls": [
+        "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
+        "https://finance.yahoo.com/small-business/articles/major-burger-chain-buying-163-034700908.html",
+        "https://lexpress-franchise.com/en-us/news/wendys-bid-acquire-meritage-restaurants-bankruptcy/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_MDr_1YN7HaEGl5prllAvYyOMOHo2_Iw36C5g1bEZxCTcCGpaylTv-4wheQA",
+      "image_credit": "Fast Company",
+      "news": [
+        {
+          "url": "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
+          "title": "Wendy’s store closures hit close to 100 locations in franchisee downfall: See the latest list",
+          "publisher": "Fast Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_MDr_1YN7HaEGl5prllAvYyOMOHo2_Iw36C5g1bEZxCTcCGpaylTv-4wheQA"
+        },
+        {
+          "url": "https://finance.yahoo.com/small-business/articles/major-burger-chain-buying-163-034700908.html",
+          "title": "Major burger chain buying 163 franchisee units out of bankruptcy",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLUWhX0AhdA-N-miBepRcsjcypSWHMejNjnlLDznoxZKzlbVdp8TzEEO-pY-Y"
+        },
+        {
+          "url": "https://lexpress-franchise.com/en-us/news/wendys-bid-acquire-meritage-restaurants-bankruptcy/",
+          "title": "Wendy's Bids $52M for 163 Meritage Restaurants",
+          "publisher": "L’Express Franchise",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8S2zjKaprH8KCezH0LaRiuABwMYnPwNB89vY9_PWqHub5hiFFeiGntXWInnU"
+        }
+      ]
+    },
+    {
+      "query": "lost",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T03:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21",
+        "https://www.nytimes.com/athletic/7802887/2026/11/22/ap-top-25-college-football-week-12/",
+        "https://www.cbssports.com/college-football/news/college-football-rankings-ap-top-25-poll-week-13-ucla-indiana-texas/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyP2S_1N-w3nl6DmybHbBsWuK3np0iMp-DsyLW7N4sqX8rP2MjjjJsghYueM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21",
+          "title": "No Big Ten football teams in AP top 5 for first time since 2021",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyP2S_1N-w3nl6DmybHbBsWuK3np0iMp-DsyLW7N4sqX8rP2MjjjJsghYueM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7802887/2026/11/22/ap-top-25-college-football-week-12/",
+          "title": "AP Top 25: UCLA, Indiana tumble as Wake Forest earns best college football ranking ever - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS76taIjPROzqGzQK14ItHzY98_qmTtVXnBkIfyck_oqk76rV5Yre21qYmJqow"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-rankings-ap-top-25-poll-week-13-ucla-indiana-texas/",
+          "title": "AP Top 25 poll: UCLA, Indiana slide; Texas moves into top five of college football rankings",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWvhzzE3EvKBN1x49Wy032qlUwAqtju721B-CQsrNIXrCc4kHkuDRKTuFcAxI"
+        }
+      ]
+    },
     {
       "query": "martin short",
       "approx_searches": "500+",
@@ -43,12 +288,12 @@
     },
     {
       "query": "the mosquito bowl",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T03:20:00Z",
       "related_news_urls": [
         "https://bookandfilmglobe.com/film/taking-a-dunk-in-the-mosquito-bowl/",
         "https://collider.com/netflix-wwii-the-mosquito-bowl-release-date-november-2026/",
-        "https://madison.com/collection_93348c0b-c4ee-439e-853c-f7f8beee40b7.html"
+        "https://demokratis.co.id/en/mosquito-bowl-netflix-release-2026"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITo5Ucpfk9JGxhP-QJ8xEkym-RuQaTwlPuW6UKgQdns9ia6J6XzrkWQgV5wk",
       "image_credit": "Book and Film Globe",
@@ -68,11 +313,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyMxePnB2G9quxTysThXMVmsCfkpN84miAAqxxDnZ6enwZ-Llv5imPMhPZ-bQ"
         },
         {
-          "url": "https://madison.com/collection_93348c0b-c4ee-439e-853c-f7f8beee40b7.html",
-          "title": "Photos: “The Mosquito Bowl” movie props on display at The Kollege Klub",
-          "publisher": "Wisconsin State Journal",
+          "url": "https://demokratis.co.id/en/mosquito-bowl-netflix-release-2026",
+          "title": "Netflix Releases Peter Bergs The Mosquito Bowl on November 25",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkjlNgCB-CZXGW0z7oi2iurIKK1GmTT1In8pLoIBnBgYaDpSXQyaqsKmVHsfk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQavq9XxpBr9DXiIVwYjUAEI0bePI70-xSw6GQ7FBaa5qeiy4JT7822sa9pSrY"
         }
       ]
     },
@@ -82,25 +327,25 @@
       "published_at": "2026-11-23T03:10:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
-        "https://www.bloomberg.com/news/articles/2026-11-23/south-korea-says-market-measures-will-ease-investor-jitters",
+        "https://www.bloomberg.com/news/articles/2026-11-22/s-korea-rolls-out-phased-measures-to-stabilize-volatile-markets",
         "https://www.koreatimes.co.kr/economy/20261122/kospi-rout-fuels-calls-for-bolder-stabilization-measures"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ3aOeWl87wK4Valp3qhF6O-9sE-eaBetZUIZXkuIm_hXKAzTZNRvCUWpqAyY",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8pFC-TFy4PuCMNhh23XE8_-ORT2cbZKDHEB0n2UCCsF_zCUCCfUea6FL_Mwk",
       "image_credit": "Al Jazeera",
       "news": [
         {
           "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
-          "title": "Asian stock markets tumble as AI bubble fears mount",
+          "title": "South Korea’s stock market tumbles as AI bubble fears mount",
           "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ3aOeWl87wK4Valp3qhF6O-9sE-eaBetZUIZXkuIm_hXKAzTZNRvCUWpqAyY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8pFC-TFy4PuCMNhh23XE8_-ORT2cbZKDHEB0n2UCCsF_zCUCCfUea6FL_Mwk"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-23/south-korea-says-market-measures-will-ease-investor-jitters",
-          "title": "South Korea Says Market Measures Will Ease Investor Jitters",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-22/s-korea-rolls-out-phased-measures-to-stabilize-volatile-markets",
+          "title": "S. Korea Rolls Out Phased Measures to Stabilize Volatile Markets",
           "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWEmSHqYdCFUaRhgVrJPXTq2_G2fPz_rA1_czfTAIOHVRSrYfD9lGlsWAXmVA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4HODmPNYrRK9gW36_oNDchpIX706l7TJtYIDLSkfsHE3DByLKCDB3pU--a0"
         },
         {
           "url": "https://www.koreatimes.co.kr/economy/20261122/kospi-rout-fuels-calls-for-bolder-stabilization-measures",
@@ -108,251 +353,6 @@
           "publisher": "The Korea Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMjGhk26FDMnIA-HketInvI-DS5I5XavIE6naY9Z1D61MLCRTFhNLybDNi_JA"
-        }
-      ]
-    },
-    {
-      "query": "pacers vs knicks match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/sports/nba/event/2026/3018940/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
-        "https://www.nba.com/game/nyk-vs-ind-0022600034/box-score",
-        "https://www.si.com/nba/timberwolves/onsi/5-biggest-catalysts-behind-timberwolves-growing-win-streak-01m7c5s63nvt"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7yA1VTc0yjK1DlP1nYtaINUdPwi-1MzmkwkWTXBanhvZbAXuMKuNpduEu9s",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/sports/nba/event/2026/3018940/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
-          "title": "Indiana Pacers at New York Knicks - NBA Game Summary - Nov 22, 2026",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR7yA1VTc0yjK1DlP1nYtaINUdPwi-1MzmkwkWTXBanhvZbAXuMKuNpduEu9s"
-        },
-        {
-          "url": "https://www.nba.com/game/nyk-vs-ind-0022600034/box-score",
-          "title": "New York Knicks vs Indiana Pacers Nov 13, 2026 Box Scores",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmGQ33VT7Sk0vNamhuMlPo2Ts0bOGpff-qL4mU0CkHnQs0hBgCP5Jqpr6qLvM"
-        },
-        {
-          "url": "https://www.si.com/nba/timberwolves/onsi/5-biggest-catalysts-behind-timberwolves-growing-win-streak-01m7c5s63nvt",
-          "title": "5 Biggest Catalysts Behind Timberwolves’ Growing Win Streak",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPGunvFwF3pXrSyRkZ4G3lYqgBfHILcuf2EudnhzHS-Jimg-S1HNTbow0R50w"
-        }
-      ]
-    },
-    {
-      "query": "justin hartley",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/justin-hartley-developing-dr-lucia-series-nbc-1237229428/",
-        "https://www.cbr.com/justin-hartley-nbc-medical-drama-dr-lucia/",
-        "https://screenrant.com/justin-hartley-dr-lucia-nbc-tv-remake-development/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHqgDVdxD_yO3yDiSE1GcHsmZwWht2SUqj_gMJ_EF1SvEU4ze6wzVjn7XQIc",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/justin-hartley-developing-dr-lucia-series-nbc-1237229428/",
-          "title": "Justin Hartley & ChangeUp Productions Developing Medical Drama ‘Dr. Lucia’ At NBC",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEHqgDVdxD_yO3yDiSE1GcHsmZwWht2SUqj_gMJ_EF1SvEU4ze6wzVjn7XQIc"
-        },
-        {
-          "url": "https://www.cbr.com/justin-hartley-nbc-medical-drama-dr-lucia/",
-          "title": "Tracker Star Justin Hartley Sets NBC Medical Drama That's Grey's Anatomy Meets Stephen King",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLXoC4sKpPNNE-EUkphTLApaXHCrn4s3O2NwWxQIuanSA3O8m0fdk8BZVN-Xw"
-        },
-        {
-          "url": "https://screenrant.com/justin-hartley-dr-lucia-nbc-tv-remake-development/",
-          "title": "Justin Hartley Reuniting With NBC For New Medical Series Remake",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeMxdSVEJLkpmzV5Qv2Qkz-A6oaMk0HKRdDbYxuLWxCwJ7N0a_nphxl0BCwVM"
-        }
-      ]
-    },
-    {
-      "query": "line of fire",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66114947/",
-        "https://www.nbc.com/nbc-insider/line-of-fire-thanksgiving-episode-midseason-finale-how-to-watch",
-        "https://www.givememyremote.com/remote/2026/11/20/line-of-fire-season-1-fall-finale-preview-joshua-safran/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8K6Ipop7yTBs2tJ9QXXgtgQKRyx0Tm4VW4x8otlzbghhoVvdhKFyc2UF8Uw",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66114947/",
-          "title": "‘Line of Fire’ Episode 8 Recap and Ending Explained: Secrets Pile Up for the Hollingsworths",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8K6Ipop7yTBs2tJ9QXXgtgQKRyx0Tm4VW4x8otlzbghhoVvdhKFyc2UF8Uw"
-        },
-        {
-          "url": "https://www.nbc.com/nbc-insider/line-of-fire-thanksgiving-episode-midseason-finale-how-to-watch",
-          "title": "Line of Fire’s Midseason Finale Is a Drama-Packed Thanksgiving Episode: How to Watch",
-          "publisher": "NBC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRoP0CdKyZBnS64xy7ENf3OQVI2sVYLoIyGjuCUfu9AMVnCqMTdjCFhvwjP6k"
-        },
-        {
-          "url": "https://www.givememyremote.com/remote/2026/11/20/line-of-fire-season-1-fall-finale-preview-joshua-safran/",
-          "title": "LINE OF FIRE: Joshua Safran Teases the Secret-Revealing Fall Finale",
-          "publisher": "Give Me My Remote",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCtaN-Mt7_oVDoCzaLgSCXhToNI8tWjxsmSYipIFW4OJF7vnUi2NapM3iLFWw"
-        }
-      ]
-    },
-    {
-      "query": "landry shamet",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T03:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/mike-brown-landry-shamet-sixth-232659104.html",
-        "https://www.sportingnews.com/en/nba/news/landry-shamet-contract-bargain-knicks/e44889979b2da2608ba6d5b2",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZSOle_ME2RiRR4NoFXQvZNcE7NqWPV2rCH7pn3J-E49QsKITyPge_ixKQKw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/mike-brown-landry-shamet-sixth-232659104.html",
-          "title": "Mike Brown on Landry Shamet: He should be Sixth Man of the Year, it's not close",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHZSOle_ME2RiRR4NoFXQvZNcE7NqWPV2rCH7pn3J-E49QsKITyPge_ixKQKw"
-        },
-        {
-          "url": "https://www.sportingnews.com/en/nba/news/landry-shamet-contract-bargain-knicks/e44889979b2da2608ba6d5b2",
-          "title": "Landry Shamet's contract proving to be massive bargain for Knicks",
-          "publisher": "www.sportingnews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-a5Ab6pyTNcnEmSexExUt_GPOJ1aYbrOQHin2HEFTdYogEP1e_-ATCX2QSTM"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond",
-          "title": "NYK start Brunson, Bridges, Shamet, Hart, Drummond",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgj0cFVHmimVQULrgs0jqzxtxZptVu1yNMFkVr84cXDq6ck1o6ruiP3zcT2Y8"
-        }
-      ]
-    },
-    {
-      "query": "mike tomlin",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/cut-eyelids-off-mike-tomlin-013424625.html",
-        "https://sports.ndtv.com/us/nfl/could-mike-tomlins-unexpected-praise-signal-a-new-era-for-the-cleveland-browns-12341735",
-        "https://www.yardbarker.com/nfl/articles/browns_todd_monken_looking_forward_to_speaking_with_mike_tomlin_after_previous_controversy/s1_13132_44585498"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSra-3xgU-sHK3UQx2_pAEggMgOco6jC3cR05mIkwKcMeAGfVLHsJgwKRNkecM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/cut-eyelids-off-mike-tomlin-013424625.html",
-          "title": "\"They Cut Their Eyelids Off\": Mike Tomlin Responds to Todd Monken's Fiery \"They've Never Blinked\" Message After Browns' Win Over Texans",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSra-3xgU-sHK3UQx2_pAEggMgOco6jC3cR05mIkwKcMeAGfVLHsJgwKRNkecM"
-        },
-        {
-          "url": "https://sports.ndtv.com/us/nfl/could-mike-tomlins-unexpected-praise-signal-a-new-era-for-the-cleveland-browns-12341735",
-          "title": "Could Mike Tomlin's Unexpected Praise Signal A New Era For The Cleveland Browns?",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR427ssitXJ2XZD0QOmVgPOKTWdcfLj-Qe1XA8kR6l3g_iMSlZgPtzlXCcmrAg"
-        },
-        {
-          "url": "https://www.yardbarker.com/nfl/articles/browns_todd_monken_looking_forward_to_speaking_with_mike_tomlin_after_previous_controversy/s1_13132_44585498",
-          "title": "Browns' Todd Monken looking forward to speaking with Mike Tomlin after previous controversy",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSboPI5qQ9jwWl9UWyhgTodIgzl5221tD4v3vl76etDaaapV_lISO6sTAcb8b0"
-        }
-      ]
-    },
-    {
-      "query": "marine corps base camp pendleton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:00:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/california/missing-marine-body-found-abandoned-building-california-desert/",
-        "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/",
-        "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyYifFWXWQ7L186j4R71mgEWxIybHdHXOp38JCCQCrH6IoAdIhkjOFs58Q7Cw",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/california/missing-marine-body-found-abandoned-building-california-desert/",
-          "title": "Missing active-duty Marine, 19, found dead in Southern California desert",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyYifFWXWQ7L186j4R71mgEWxIybHdHXOp38JCCQCrH6IoAdIhkjOFs58Q7Cw"
-        },
-        {
-          "url": "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/",
-          "title": "Missing Camp Pendleton Marine found dead in San Bernardino County",
-          "publisher": "NBC 7 San Diego",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jce52h6Zz01Lhlz7ixd6EFenROVbbxVNBGssuCbQXHSo2hq2KfmCUt0AVKI"
-        },
-        {
-          "url": "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
-          "title": "Marine Corps releases statement after Utah service member found dead in California",
-          "publisher": "KUTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqUSOJ1pEt2EQxpcqL3t7dgP1wBwH3EpTs-Mdpa6qNsYIZOGqN6xEdCx1zqc"
-        }
-      ]
-    },
-    {
-      "query": "the warning",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T02:50:00Z",
-      "related_news_urls": [
-        "https://www.billboard.com/culture/product-recommendations/nfl-mexico-city-game-the-warning-halftime-watch-live-free-1236385357/",
-        "https://sports.yahoo.com/articles/singing-u-mexico-national-anthems-103001511.html",
-        "https://www.thehypemagazine.com/2026/11/13/the-warning-first-latin-grammy-ego-best-rock-song/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxg_TBKtJu6Hu9ZWDYVQJm7NmcxNpYy-E_JeRu8rwVbxC_c2_QCvZBqjwPjIU",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/culture/product-recommendations/nfl-mexico-city-game-the-warning-halftime-watch-live-free-1236385357/",
-          "title": "NFL Mexico City Game Halftime Show 2026: Here's Where to Watch The Warning Perform Live Online Free",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxg_TBKtJu6Hu9ZWDYVQJm7NmcxNpYy-E_JeRu8rwVbxC_c2_QCvZBqjwPjIU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/singing-u-mexico-national-anthems-103001511.html",
-          "title": "Who is singing the U.S. and Mexico national anthems for Vikings vs. 49ers?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmP7davrkZIKR_Myy41xqQeh77DhEKNx7B4t4NMcfuqwIt1ElAJ1hvLbp3EGQ"
-        },
-        {
-          "url": "https://www.thehypemagazine.com/2026/11/13/the-warning-first-latin-grammy-ego-best-rock-song/",
-          "title": "The Warning Takes Home Their First Latin Grammy Award as “Ego” Wins Best Rock Song",
-          "publisher": "The Hype Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1ukDNjnfFNl_WUP-H2Yw8JpPRQLjD65nPFf1qctGcHOsnZTXITOPwrYvRyRA"
         }
       ]
     }
