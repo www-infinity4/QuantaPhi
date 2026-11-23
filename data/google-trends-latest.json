@@ -3,27 +3,314 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T15:30:59.644161Z",
+  "checked_at": "2026-11-23T16:01:20.010742Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "christopher briney",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T15:40:00Z",
+      "related_news_urls": [
+        "https://www.10tv.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+        "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
+        "https://www.elitedaily.com/entertainment/chris-briney-michelle-randolph-clashing-through-the-snow-chemistry-interview"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg",
+      "image_credit": "10TV",
+      "news": [
+        {
+          "url": "https://www.10tv.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+          "title": "'Clashing Through the Snow' co-stars, director preview holiday romantic comedy",
+          "publisher": "10TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg"
+        },
+        {
+          "url": "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
+          "title": "Amazon Prime movie, shot in Greene County, sets premiere date",
+          "publisher": "NEWS10 ABC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7F16fxs-Y31g_VXjmK0u10S_VOKzNJo7ElmpI1E1FOctJAChKpjIpgFVK5c"
+        },
+        {
+          "url": "https://www.elitedaily.com/entertainment/chris-briney-michelle-randolph-clashing-through-the-snow-chemistry-interview",
+          "title": "Chris Briney & Michelle Randolph On Their Chemistry In “Clashing Through The Snow” [Exclusive]",
+          "publisher": "Elite Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4n0e9P5C4P4glZWfYrLz0Yh-BPWLKo5f0rVInWVqVYpBXC5YL1yrkG_ufpGc"
+        }
+      ]
+    },
+    {
+      "query": "davidson basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T15:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
+        "https://www.sportsline.com/cbb/news/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
+        "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
+          "title": "Northern Iowa vs. Davidson prediction, odds: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 by proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY"
+        },
+        {
+          "url": "https://www.sportsline.com/cbb/news/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
+          "title": "Northern Iowa vs. Davidson odds, prediction: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 from advanced model",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKxMh_FECkMrRYWEw3yy1eshIA702Xe428YY28BtP8x_Ob4oqZz0Flw62UPHk"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/",
+          "title": "Northern Iowa vs Davidson Prediction, Picks & Odds | 23 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        }
+      ]
+    },
+    {
+      "query": "north korea",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T15:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49",
+        "https://www.telegraph.co.uk/world-news/2026/11/22/kim-ghosts-trump-while-building-up-nuclear-arsenal/",
+        "https://www.huffpost.com/entry/trump-kim-jong-un-north-korea-nuclear-snub_n_6b037dade4b0e97a9407e334"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWV5ElB4ieQMMTgsaOaxkrUNKEipm15VUU9D8O5vYtHhP85ylQQNAi_TXU9yE",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49",
+          "title": "How Kim Jong Un Gets Away With Building Nukes and Ghosting Trump",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWV5ElB4ieQMMTgsaOaxkrUNKEipm15VUU9D8O5vYtHhP85ylQQNAi_TXU9yE"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/world-news/2026/11/22/kim-ghosts-trump-while-building-up-nuclear-arsenal/",
+          "title": "Kim ghosts Trump while building up nuclear arsenal",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSJpjsJsYZryH7Ehbidcyf7nK4PlHfamzy1gP_z1_W7cPaAsXpBMSpNXBqOb8"
+        },
+        {
+          "url": "https://www.huffpost.com/entry/trump-kim-jong-un-north-korea-nuclear-snub_n_6b037dade4b0e97a9407e334",
+          "title": "Trump Getting Ghosted By Dictator Who Stole His Heart: Report",
+          "publisher": "HuffPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_yxR2afCS6TmLvnK6pXGvNFuTxMzgmr7OVUspE5seTs5rsgdFLELco6kXSOI"
+        }
+      ]
+    },
+    {
+      "query": "sophie cunningham indiana fever offseason",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T15:20:00Z",
+      "related_news_urls": [
+        "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
+        "https://www.aol.com/articles/sophie-cunningham-appear-chicago-sports-111500000.html",
+        "https://thespun.com/wnba/sophie-cunninghams-ridiculously-high-autograph-fee-leaks"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJz4ZFl2Dv1Vh_VVmZgEF_grmyV7Cr3WksmDY16hk69Gu4roEQC60zQpNHZDk",
+      "image_credit": "SuaraGarut.ID",
+      "news": [
+        {
+          "url": "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
+          "title": "Sophie Cunningham Charges Nearly 300 Dollars for Autographs",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJz4ZFl2Dv1Vh_VVmZgEF_grmyV7Cr3WksmDY16hk69Gu4roEQC60zQpNHZDk"
+        },
+        {
+          "url": "https://www.aol.com/articles/sophie-cunningham-appear-chicago-sports-111500000.html",
+          "title": "Sophie Cunningham to Appear at Chicago Sports Spectacular This Friday",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGkF-jF9mibPnIFWrW784CL6Mu_B9oY_tFtt-Zjw84_NHc1_aEvvfc6TI6TE"
+        },
+        {
+          "url": "https://thespun.com/wnba/sophie-cunninghams-ridiculously-high-autograph-fee-leaks",
+          "title": "Sophie Cunningham’s Ridiculously High Autograph Fee Leaks",
+          "publisher": "The Spun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEyoIuMzW-t_L8wLXsk5_vJZp1JVnZTWKrMcBAD5wR5KHra_L2wsIzzsrkm0"
+        }
+      ]
+    },
+    {
+      "query": "costco stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T15:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/many-shares-costco-d-5-115002243.html",
+        "https://www.fool.com/investing/2026/11/23/will-costco-do-a-stock-split-before-the-end-of-2026/",
+        "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26GyguJRiURX6st4fzjVyJPrj_1hhbvQUfZ8kf9ZpXigEHRuC1ESxWVo-aGY",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/many-shares-costco-d-5-115002243.html",
+          "title": "Here’s How Many Shares of Costco You’d Need for $5,000 in Yearly Dividends.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26GyguJRiURX6st4fzjVyJPrj_1hhbvQUfZ8kf9ZpXigEHRuC1ESxWVo-aGY"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/23/will-costco-do-a-stock-split-before-the-end-of-2026/",
+          "title": "Will Costco Do a Stock Split Before the End of 2026?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1TfroNqzziIERUniBeqBIYkBtLwWGRLyj_toFGcrRyJv6Z-VKuGy7b2k3BHM"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html",
+          "title": "Jim Cramer says Costco's hefty special dividend signals ‘more gains ahead’",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHre1GL-393RnfQ5WgTjdd6_ue2nXeogabDHEuJzNgs8BioTDlAsyPTOrKwXs"
+        }
+      ]
+    },
+    {
+      "query": "al-shamal vs al-ahli",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T15:10:00Z",
+      "related_news_urls": [
+        "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
+        "https://www.goal.com/en-in/news/an-extraordinary-night-with-a-taste-of-revenge-mahrez-reopens-the-book-of-memories-against-al-ahli/blt82f4c191a1c34093",
+        "https://www.yardbarker.com/soccer/articles/yesterdays_friend_riyad_mahrez_surprises_al_ahli_players_before_al_shamal_clash/s1_17790_44605348"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q",
+      "image_credit": "The Stats Zone",
+      "news": [
+        {
+          "url": "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
+          "title": "Al Shamal vs Al Ahli Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q"
+        },
+        {
+          "url": "https://www.goal.com/en-in/news/an-extraordinary-night-with-a-taste-of-revenge-mahrez-reopens-the-book-of-memories-against-al-ahli/blt82f4c191a1c34093",
+          "title": "An extraordinary night with a taste of revenge: Mahrez reopens the book of memories against Al-Ahli",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShsGP7fcjepEGCRlDtuxfDDPlyB2V3UkX7nTY6xiZ2QpnSmCsu0iGPakrlPZw"
+        },
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/yesterdays_friend_riyad_mahrez_surprises_al_ahli_players_before_al_shamal_clash/s1_17790_44605348",
+          "title": "'Yesterday's friend': Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXz02aHwLGkFOMeBfIKRCVZa4-sqkL4CEA7FY2ZP-QOJHkYGU7sA7kN_q7Ot8"
+        }
+      ]
+    },
+    {
+      "query": "pfe stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/healthcare/articles/pfizers-launched-acquired-drugs-grew-223502254.html",
+        "https://seekingalpha.com/article/4970774-pfizer-struggling-to-meet-dividend-beyond-2027",
+        "https://www.theglobeandmail.com/investing/markets/stocks/PFE/pressreleases/8920125/can-new-products-and-acquisitions-revive-pfizers-growth-story/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz9bBqI4phFI9xZHBSbkPsm8ahTplw9MkaU92tdidYqWT3MaQdXwZyYWutuSw",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/healthcare/articles/pfizers-launched-acquired-drugs-grew-223502254.html",
+          "title": "Pfizer's Launched and Acquired Drugs Grew 32% in Q3 — and 3 Other Reasons to Buy the Stock Before 2027",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz9bBqI4phFI9xZHBSbkPsm8ahTplw9MkaU92tdidYqWT3MaQdXwZyYWutuSw"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4970774-pfizer-struggling-to-meet-dividend-beyond-2027",
+          "title": "Pfizer: Struggling To Meet Dividend Beyond 2027",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_Sca2bTE3kCY3yL0LR-yWBKvgWmvu2l_oz-UUgyse9R7Mwlp9GfBpyl5Hls"
+        },
+        {
+          "url": "https://www.theglobeandmail.com/investing/markets/stocks/PFE/pressreleases/8920125/can-new-products-and-acquisitions-revive-pfizers-growth-story/",
+          "title": "Can New Products and Acquisitions Revive Pfizer's Growth Story?",
+          "publisher": "The Globe and Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSFoyS3nWKS9w_LeY3_exU86Xsitw3_PbNe7jlu6uuOmy56Tw0iGyiHD3gpW8"
+        }
+      ]
+    },
+    {
+      "query": "tesla stock",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
+        "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
+        "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
+          "title": "Cathie Wood Says TSLA Holders ‘Will Get’ A Premium If SpaceX Buys Tesla — HSBC Puts It At Over 30%",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo"
+        },
+        {
+          "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
+          "title": "Is SpaceX-Tesla Merger Imminent?",
+          "publisher": "Puck",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9cRYnHyQK9fhKeKu3lQMdNgcdZ7nIFEFljsQBp3V9oGgoBQnjAXYvcPphKo"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
+          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWCZqqEwfd9ld7NePLhuzT9I3ifd9pPA6LVh9ESnrTG-rXx-9TX4Wt_LeGbc"
+        }
+      ]
+    },
     {
       "query": "apple stock",
       "approx_searches": "2000+",
       "published_at": "2026-11-23T15:00:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/apple-now-25-berkshire-hathaways-225502762.html",
-        "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
-        "https://www.fool.com.au/2026/11/19/3-berkshire-13f-moves-you-may-have-missed-while-watching-anthropic-and-nvidia/"
+        "https://247wallst.com/personal-finance/2026/11/23/swap-cash-for-the-apple-stock-inside-your-irrevocable-trust-before-you-die-and-the-shares-come-home-for-a-full-step-up-estate-lawyers-write-that-power-in-on-purpose/",
+        "https://247wallst.com/personal-finance/2026/11/22/the-400000-of-stock-he-put-in-his-kids-trust-in-2012-is-worth-4-million-everyone-says-it-will-never-get-a-step-up-hell-swap-it-back-for-cash-and-the-irss-share-of-that-gain-will-be-zero/",
+        "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU-57OkXHqxJAuaviopCvPF4Zl9aRvcKEj0dlzvMkjZmKuV7J9dzbnIRSQfLE",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqMIoXRYip0H-Q0zrwbn5sNwgf1oRZ-E5PaucUusG80D_LYEo1FPnfzFvMPxs",
+      "image_credit": "24/7 Wall St.",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-now-25-berkshire-hathaways-225502762.html",
-          "title": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
-          "publisher": "Yahoo Finance",
+          "url": "https://247wallst.com/personal-finance/2026/11/23/swap-cash-for-the-apple-stock-inside-your-irrevocable-trust-before-you-die-and-the-shares-come-home-for-a-full-step-up-estate-lawyers-write-that-power-in-on-purpose/",
+          "title": "Swap Cash for the Apple Stock Inside Your Irrevocable Trust Before You Die and the Shares Come Home for a Full Step-Up. Estate Lawyers Write That Power In on Purpose",
+          "publisher": "24/7 Wall St.",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU-57OkXHqxJAuaviopCvPF4Zl9aRvcKEj0dlzvMkjZmKuV7J9dzbnIRSQfLE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqMIoXRYip0H-Q0zrwbn5sNwgf1oRZ-E5PaucUusG80D_LYEo1FPnfzFvMPxs"
+        },
+        {
+          "url": "https://247wallst.com/personal-finance/2026/11/22/the-400000-of-stock-he-put-in-his-kids-trust-in-2012-is-worth-4-million-everyone-says-it-will-never-get-a-step-up-hell-swap-it-back-for-cash-and-the-irss-share-of-that-gain-will-be-zero/",
+          "title": "The $400,000 of Stock He Put in His Kids' Trust in 2012 Is Worth $4 Million. Everyone Says It Will Never Get a Step-Up. He'll Swap It Back for Cash, and the IRS's Share of That Gai",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvVjSbmJSXMuQD-LgOdlaL0osMHxjArlQje_amVMibTKmn2zTGWVuWrbc006E"
         },
         {
           "url": "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
@@ -31,13 +318,6 @@
           "publisher": "AppleInsider",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBWrs3xjZ8vyXpKWOMgsj5DH0tgsrACKdtA82ibTj085cD0bVTthr04MqFc90"
-        },
-        {
-          "url": "https://www.fool.com.au/2026/11/19/3-berkshire-13f-moves-you-may-have-missed-while-watching-anthropic-and-nvidia/",
-          "title": "3 Berkshire 13F moves you may have missed while watching Anthropic and Nvidia",
-          "publisher": "The Motley Fool Australia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrw3hkIO1_J1gyPHplzmSLRJKvgNlWYy43mw0ByyvFO0UG6TqkmDI6ILYkWWQ"
         }
       ]
     },
@@ -47,8 +327,8 @@
       "published_at": "2026-11-23T15:00:00Z",
       "related_news_urls": [
         "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
-        "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
-        "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html"
+        "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
+        "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk",
       "image_credit": "Barron's",
@@ -61,298 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk"
         },
         {
-          "url": "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
-          "title": "Is The Coca-Cola (NYSE:KO) Built For A Choppier Market?",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt1nrOF1ZA3XEBAipGxWUM6oKL1RfOBdpCcFc1okgNOmlTrECufaQDYRCArTQ"
-        },
-        {
           "url": "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
           "title": "How Many Shares of Coca-Cola or PepsiCo Pay $1,000 a Month in Dividends?",
           "publisher": "Yahoo Finance",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVcADHjpE9Q7n7mDElNaE6tkh7wWWMaMyZF3evaN0alZ4lBn_ieq4BOhwczxw"
-        }
-      ]
-    },
-    {
-      "query": "vrt stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T15:00:00Z",
-      "related_news_urls": [
-        "https://www.quantisnow.com/insight/vertiv-downgraded-by-robert-w-baird-with-a-new-price-6803146",
-        "https://www.zacks.com/commentary/3032088/top-ranked-ai-stock-to-buy-now-on-the-dip-for-100-upside-vrt",
-        "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGnbjjWYyPbiPBQRUohVOPbzXvXwkZfzyZqW6R91O-JL1DqPGGU9WtGPbIFc",
-      "image_credit": "Quantisnow",
-      "news": [
-        {
-          "url": "https://www.quantisnow.com/insight/vertiv-downgraded-by-robert-w-baird-with-a-new-price-6803146",
-          "title": "Vertiv downgraded by Robert W. Baird with a new price target",
-          "publisher": "Quantisnow",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGnbjjWYyPbiPBQRUohVOPbzXvXwkZfzyZqW6R91O-JL1DqPGGU9WtGPbIFc"
         },
         {
-          "url": "https://www.zacks.com/commentary/3032088/top-ranked-ai-stock-to-buy-now-on-the-dip-for-100-upside-vrt",
-          "title": "Top-Ranked AI Stock to Buy Now on the Dip for 100% Upside: VRT",
-          "publisher": "Zacks Investment Research",
+          "url": "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
+          "title": "Is The Coca-Cola (NYSE:KO) Built For A Choppier Market?",
+          "publisher": "Kalkine Media",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4_C6fk8UaZJLNj9qpOnI6p26AYp1Kv9xKksw2j3sr25z3QAYUAbRwzhG-Npc"
-        },
-        {
-          "url": "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far",
-          "title": "Evercore’s $325 Target Says Vertiv’s Selloff Went Too Far",
-          "publisher": "TIKR.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiCdOfUbePbrIkWRbB0ejLfy2V7Rq88azjWyuYBH4I-DV4hFkG0zT9gJRmPgc"
-        }
-      ]
-    },
-    {
-      "query": "paul goldschmidt",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-sign-paul-goldschmidt",
-        "https://www.mlbtraderumors.com/2026/11/mets-sign-paul-goldschmidt.html",
-        "https://www.thescore.com/mlb/news/3663873/report-mets-agree-to-deal-with-veteran-goldschmidt"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-sign-paul-goldschmidt",
-          "title": "Report: Mets sign Paul Goldschmidt",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/mets-sign-paul-goldschmidt.html",
-          "title": "Mets To Sign Paul Goldschmidt",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9KiBlvewY40ijq88T7Lr6Bz__7WyvqEc7nwCa9Y9BxbOG4BR7uTREwmXZoA"
-        },
-        {
-          "url": "https://www.thescore.com/mlb/news/3663873/report-mets-agree-to-deal-with-veteran-goldschmidt",
-          "title": "Report: Mets agree to deal with veteran Goldschmidt",
-          "publisher": "theScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRulTHtPfEQje6m8d7ugoRMoJFQ3L8OhPGO0XOZ30PLMkGDizvVBI9bFGdh8Hk"
-        }
-      ]
-    },
-    {
-      "query": "gold price today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
-        "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
-        "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-traders-pare-bets-002803539.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
-          "title": "Gold rises as bargain hunters step in after steep weekly drop",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ"
-        },
-        {
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
-          "title": "Gold Rebounds After Sharpest Weekly Decline Since March",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BACqMVovQtbRsVJPRSl4x1l8cmrjABBN9BuB8b9yBpQ278ZKa98HC-p5G4g"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-traders-pare-bets-002803539.html",
-          "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKF9beWsnITpaJfco-WKWlbz9opKA9-Zoom1EkYnVMPKyfXQA71doUt5Naqdg"
-        }
-      ]
-    },
-    {
-      "query": "spcx",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/spacex-stock-buy-rating-jefferies-8a82866d",
-        "https://finance.yahoo.com/markets/stocks/articles/why-saturday-historic-starship-catch-185002969.html",
-        "https://seekingalpha.com/article/4970749-spacex-is-far-better-than-i-thought-upgrade"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtTWCoZu51Wj-Noc4L9_PwHB7QIJus91OmJMlmjn5CX39GlwCguMROFzGkFQ",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/spacex-stock-buy-rating-jefferies-8a82866d",
-          "title": "Haven In Orbit? SpaceX Stock Is Still a Buy, Wall Street Says.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtTWCoZu51Wj-Noc4L9_PwHB7QIJus91OmJMlmjn5CX39GlwCguMROFzGkFQ"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-saturday-historic-starship-catch-185002969.html",
-          "title": "Why Saturday’s Historic Starship Catch Changes the Bull Case for SpaceX Stock",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCnABYVaZZKJhrrxc_etKcjagChhWsBO0d9P7dSp38CQ6h_OvBU-RqMCpyvoE"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4970749-spacex-is-far-better-than-i-thought-upgrade",
-          "title": "SpaceX Is Far Better Than I Thought",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR94y5pNESRdDa4zut7OrMIXK-Kw7PMPA-gNUi2jiKzIhgRqgQ4mcT9Lc3xQuM"
-        }
-      ]
-    },
-    {
-      "query": "nasdaq composite",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/22/stock-market-doing-something-only-5th-time-this-century-history-says-obvious-what-next-for-stocks/",
-        "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-imminent-ai-092602481.html",
-        "https://finance.biggo.com/news/a98a0845-991f-4c73-8c11-ab5b11cb1ec1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/22/stock-market-doing-something-only-5th-time-this-century-history-says-obvious-what-next-for-stocks/",
-          "title": "The Stock Market Is Doing Something for Only the 5th Time This Century, and History Says It's Obvious What Comes Next for Stocks",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-imminent-ai-092602481.html",
-          "title": "Is a Stock Market Crash Imminent for the AI-Driven Trump Bull Market? History Weighs In With an Unpleasant Answer.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5T3NbTuNztApRYU0INnuDvJJvBV7r7A1MqjaizoEEusTahRhD0zuvwE8fw0"
-        },
-        {
-          "url": "https://finance.biggo.com/news/a98a0845-991f-4c73-8c11-ab5b11cb1ec1",
-          "title": "S&P 500 Valuation Gauge Tops 30 Again, Only the Fifth Time This Century",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ-QIEukYqSgsRarFg2krF53crfuYd4iM22dwdY6zRUTrwHscdIeaYKF9zMRY"
-        }
-      ]
-    },
-    {
-      "query": "who gets social security nov 25",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/money/2026/11/23/social-security-payment-november-25/92867743007/",
-        "https://www.washingtonexaminer.com/news/4793529/december-supplemental-security-direct-payment-goes-out-nine-days/",
-        "https://www.al.com/news/2026/11/social-securitys-payment-schedule-changing-in-december-some-get-cola-raise-early.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5JYEDkPlcmkrl-1zr6U0wvyj6g2yp1QtbpTwmDlQRBdR0dvfTdXiYrlhonn4",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/money/2026/11/23/social-security-payment-november-25/92867743007/",
-          "title": "Social Security payments go out Nov. 25. Who gets paid?",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5JYEDkPlcmkrl-1zr6U0wvyj6g2yp1QtbpTwmDlQRBdR0dvfTdXiYrlhonn4"
-        },
-        {
-          "url": "https://www.washingtonexaminer.com/news/4793529/december-supplemental-security-direct-payment-goes-out-nine-days/",
-          "title": "December Social Security direct payment worth up to $994 goes out in nine days",
-          "publisher": "Washington Examiner",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvuOw52KG3tQnE-_SROd2cOMcuYTxTdAUsrJ4HgEO5zKrjAw6f94SZBCsVdxc"
-        },
-        {
-          "url": "https://www.al.com/news/2026/11/social-securitys-payment-schedule-changing-in-december-some-get-cola-raise-early.html",
-          "title": "Social Security’s payment schedule changing in December: Some get COLA raise early",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeT6ibLAxIm0wUvdeiO4AimNQam2LsxM34xv3xcOdrCpLF_qjz5iuoHx5bgDA"
-        }
-      ]
-    },
-    {
-      "query": "walmart stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.fool.com/investing/2026/11/23/should-you-buy-walmart-stock-now-or-wait-for-a-dip/",
-        "https://www.wsj.com/finance/stocks/walmarts-winning-combo-thrifty-shoppers-and-wary-ai-investors-183184e3",
-        "https://www.foreignpolicyjournal.com/2026/11/21/walmarts-nyse-wmt-p-e-premium-over-peers-raises-questions-about-what-investors-are-actually-paying-for/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZZY54oPhJuiVqID7Rau5A0IYtSJ7xfBFtMNHDfdX0TrlgtJEKNh5sjfsy0VM",
-      "image_credit": "The Motley Fool",
-      "news": [
-        {
-          "url": "https://www.fool.com/investing/2026/11/23/should-you-buy-walmart-stock-now-or-wait-for-a-dip/",
-          "title": "Should You Buy Walmart Stock Now or Wait for a Dip?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZZY54oPhJuiVqID7Rau5A0IYtSJ7xfBFtMNHDfdX0TrlgtJEKNh5sjfsy0VM"
-        },
-        {
-          "url": "https://www.wsj.com/finance/stocks/walmarts-winning-combo-thrifty-shoppers-and-wary-ai-investors-183184e3",
-          "title": "Walmart’s Winning Combo: Thrifty Shoppers and Wary AI Investors",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREnEGHMlpP0RklvvM9EzfBwILMaW6s9zYznYqzIQ0lEtkadK7STyPdoIKdVmo"
-        },
-        {
-          "url": "https://www.foreignpolicyjournal.com/2026/11/21/walmarts-nyse-wmt-p-e-premium-over-peers-raises-questions-about-what-investors-are-actually-paying-for/",
-          "title": "Walmart's (NYSE: WMT) P/E Premium Over Peers Raises Questions About What Investors Are Actually Paying For",
-          "publisher": "Foreign Policy Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy-91V8cxNvyFv_rJI4qpoTVnja25aXSHyGmIttV-Py7GCQjuGnlt73owu2qk"
-        }
-      ]
-    },
-    {
-      "query": "asts stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T14:50:00Z",
-      "related_news_urls": [
-        "https://www.barchart.com/story/news/8939525/this-analyst-just-upgraded-ast-spacemobile-stock-here-s-why",
-        "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-behind-fresh-151017644.html",
-        "https://www.foreignpolicyjournal.com/2026/11/22/falling-estimates-and-rising-share-count-cloud-ast-spacemobiles-nasdaq-asts-path-to-b-rileys-48-target/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8",
-      "image_credit": "Barchart.com",
-      "news": [
-        {
-          "url": "https://www.barchart.com/story/news/8939525/this-analyst-just-upgraded-ast-spacemobile-stock-here-s-why",
-          "title": "This Analyst Just Upgraded AST SpaceMobile Stock. Here's Why.",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-behind-fresh-151017644.html",
-          "title": "AST SpaceMobile (ASTS), What Is Behind The Fresh Attention?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKbT8Oe7GC7ffI8IPxmSTM_DZq9EDXu4aLSORVCtzzzdOVG6iG13Pi_6siawQ"
-        },
-        {
-          "url": "https://www.foreignpolicyjournal.com/2026/11/22/falling-estimates-and-rising-share-count-cloud-ast-spacemobiles-nasdaq-asts-path-to-b-rileys-48-target/",
-          "title": "Falling Estimates And Rising Share Count Cloud AST SpaceMobile's (NASDAQ: ASTS) Path To B. Riley's $48 Target",
-          "publisher": "Foreign Policy Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHa51uCCi-otfLBu_mQUM1CKPGvdBuvykafPYU9BQZ4vaQPhVsrqR71GzC7s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt1nrOF1ZA3XEBAipGxWUM6oKL1RfOBdpCcFc1okgNOmlTrECufaQDYRCArTQ"
         }
       ]
     }
