@@ -3,27 +3,104 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T04:33:37.778391Z",
+  "checked_at": "2026-11-23T05:01:23.204162Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "violent night 2",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T04:40:00Z",
+      "related_news_urls": [
+        "https://www.93x.com/win/violent-night-2/",
+        "https://redcarpetcrash.com/austin-and-dallas-win-passes-to-advance-screenings-of-violent-night-2/",
+        "https://soaplandtv.co.uk/article/violent-night-2-puts-santa-on-the-naughty-list-as-kristen-bell-joins-the-fight"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7nD4tP2prhOOcn6JF3sKw3nJ5cq_GOmL8dTosTLGLH_VlnuvXK_l14koz3w4",
+      "image_credit": "93X",
+      "news": [
+        {
+          "url": "https://www.93x.com/win/violent-night-2/",
+          "title": "Enter to Win Advance Screening Passes to Violent Night 2",
+          "publisher": "93X",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7nD4tP2prhOOcn6JF3sKw3nJ5cq_GOmL8dTosTLGLH_VlnuvXK_l14koz3w4"
+        },
+        {
+          "url": "https://redcarpetcrash.com/austin-and-dallas-win-passes-to-advance-screenings-of-violent-night-2/",
+          "title": "Austin And Dallas: Win Passes To Advance Screenings Of ‘Violent Night 2’",
+          "publisher": "RedCarpetCrash.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFgkIf8TkGiu4qwmn2Ue5jWOns5C05uO4sU2GuUt5JduFS5qfSyfPYk7eSjNQ"
+        },
+        {
+          "url": "https://soaplandtv.co.uk/article/violent-night-2-puts-santa-on-the-naughty-list-as-kristen-bell-joins-the-fight",
+          "title": "Violent Night 2 Puts Santa on the Naughty List as Kristen Bell Joins the Fight",
+          "publisher": "SoaplandTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPF9a5tpXrcn5sMli5khb2tWqeCW21O0esn5_wd-UTPwEyz6kCMUn9DPaBJL4"
+        }
+      ]
+    },
+    {
+      "query": "loyola chicago basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T04:30:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
+        "https://sjsuspartans.com/news/2026/11/21/spartans-set-to-compete-in-acrisure-series-mte",
+        "https://www.covers.com/sport/basketball/ncaab/matchup/390731/picks"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
+          "title": "San Jose State vs Loyola Chicago Prediction, Picks & Odds | 22 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
+        },
+        {
+          "url": "https://sjsuspartans.com/news/2026/11/21/spartans-set-to-compete-in-acrisure-series-mte",
+          "title": "Spartans Set to Compete in Acrisure Series MTE - SJSU Athletics - Official Athletics Website",
+          "publisher": "San Jose State Spartans",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVfSEiXK1OGPNiovXe72UvZWZjOTiqIleLIGxnnEjfAxp0OvTUPqHZ2D3oXLo"
+        },
+        {
+          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390731/picks",
+          "title": "San Jose State Spartans vs Loyola Chicago Ramblers Picks, Prop Bets For November 23, 2026 - NCAAB Predictions",
+          "publisher": "Covers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS461K4Ev42g03A9CTzlY4grYqao7ey_qE7eR23sYEofYzgLKhJytBh3Mpcuuc"
+        }
+      ]
+    },
+    {
       "query": "nfc standings",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-23T04:20:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11",
-        "https://www.nfl.com/videos/examining-afc-playoff-picture-ahead-of-snf-in-week-11-of-2026-nfl-gameday-final"
+        "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-11-snf",
+        "https://www.nytimes.com/athletic/7787464/2026/11/22/nfl-playoff-picture-week-11-49ers-bills/",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg",
       "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
-          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Ahead of Week 11 SNF",
+          "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-11-snf",
+          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings After Week 11 SNF",
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7787464/2026/11/22/nfl-playoff-picture-week-11-49ers-bills/",
+          "title": "NFL playoff picture, Week 11: 49ers look like class of NFC; can anyone catch Bills in AFC?",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYcmXGiwN-R4HT7luCY9-jgW6wVlFv8shLOUgRMr2PiOmL8dAC8EUZqdhDL4"
         },
         {
           "url": "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11",
@@ -31,54 +108,82 @@
           "publisher": "Arrowhead Pride",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMX6fcXvNTRkmRiNwreRlnM4OB0NoSJbg8Zi2cawSA64ywFE7Ob66NHl-sqjw"
-        },
-        {
-          "url": "https://www.nfl.com/videos/examining-afc-playoff-picture-ahead-of-snf-in-week-11-of-2026-nfl-gameday-final",
-          "title": "Examining AFC playoff picture ahead of 'SNF' in Week 11 of 2026 | 'NFL GameDay Final'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAwPZYIbsbE9lHgM3yEXdHKIRlBVHqxwFpygU279NIrVI_zip5lXWvADlSA-0"
         }
       ]
     },
     {
-      "query": "vikings schedule",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T04:10:00Z",
+      "query": "what happened to kirk cousins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T04:20:00Z",
       "related_news_urls": [
-        "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026",
-        "https://www.kare11.com/article/associatedpress/associatedpress/vikings-get-healthier-to-face-the-49ers-with-cashman-hockenson-among-the-starters-back-from-injury/616-2612fb92-b668-41a4-9293-a779e9985af1",
-        "https://www.cbssports.com/fantasy/football/news/vikings-isaiah-rodgers-no-go-for-snf/"
+        "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+        "https://sports.yahoo.com/articles/kirk-cousins-family-couldn-t-032747491.html",
+        "https://people.com/kirk-cousins-kids-everything-to-know-12252678"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeK9Ve-xRF2Ri01x3X_UmjykwTn4M5n53b0r2sve86FgX-JiEiBWYf-lWB02w",
-      "image_credit": "Vikings.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026",
-          "title": "Vikings vs. 49ers Inactives for Week 11 of 2026",
-          "publisher": "Vikings.com",
+          "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+          "title": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeK9Ve-xRF2Ri01x3X_UmjykwTn4M5n53b0r2sve86FgX-JiEiBWYf-lWB02w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc"
         },
         {
-          "url": "https://www.kare11.com/article/associatedpress/associatedpress/vikings-get-healthier-to-face-the-49ers-with-cashman-hockenson-among-the-starters-back-from-injury/616-2612fb92-b668-41a4-9293-a779e9985af1",
-          "title": "Vikings get healthier to face the 49ers with Cashman, Hockenson among the starters back from injury",
-          "publisher": "kare11.com",
+          "url": "https://sports.yahoo.com/articles/kirk-cousins-family-couldn-t-032747491.html",
+          "title": "Kirk Cousins’ family couldn’t wait to leave Las Vegas after Raiders-Vikings trade",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxQ9mfjUuXjRXJh9hi4eRT8zXurhl6HV0Vlx4TSpM-djZWDNaZqzKyHjJZJbs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhxYiILZrgi6Br-yiYWQV32aT7pF5kRAjGHtJS32il2e4jPVy1F7bdn26Vb68"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/vikings-isaiah-rodgers-no-go-for-snf/",
-          "title": "Vikings' Isaiah Rodgers: No go for SNF",
-          "publisher": "CBS Sports",
+          "url": "https://people.com/kirk-cousins-kids-everything-to-know-12252678",
+          "title": "Meet Kirk Cousins’ 2 Kids, Sons Cooper and Turner",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTJ6gwJCH7IU0Wx2qdBpkDgPi90hjl_3BZbe45wktHa-N3I9fcmFQRmNiDV1k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMj7fnJ1h0zy5WW4COlmNXhyTAnYMvB90W6kae4cVVsIAACs3aa68pgjvX29E"
+        }
+      ]
+    },
+    {
+      "query": "tim allen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T04:20:00Z",
+      "related_news_urls": [
+        "https://people.com/tim-allen-jane-hajduk-reveal-ideal-date-night-after-20-years-of-marriage-exclusive-12267499",
+        "https://www.yahoo.com/entertainment/celebrity/articles/tim-allen-wife-jane-hajduk-173807210.html",
+        "https://pagesix.com/2026/11/21/celebrity-news/tim-allen-wife-jane-hajduk-reveal-simple-date-night-secret-after-20-years-of-marriage/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0DzTgTIxufNFWUk7e8finN7IKnRttveEvhvCa-P8xIHW83rK2ybNSEk5GdpY",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/tim-allen-jane-hajduk-reveal-ideal-date-night-after-20-years-of-marriage-exclusive-12267499",
+          "title": "Tim Allen and Jane Hajduk Reveal What Their Ideal Date Night Looks Like After 20 Years of Marriage (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0DzTgTIxufNFWUk7e8finN7IKnRttveEvhvCa-P8xIHW83rK2ybNSEk5GdpY"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tim-allen-wife-jane-hajduk-173807210.html",
+          "title": "Tim Allen and Wife Jane Hajduk’s Relationship Timeline: Marriage, Parenthood and More",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnIu3154chAnWBYJdEAP05Q2DGk8sPzv1y0QQ4CQUGVUQoMot7Reqm4BLBZTU"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/21/celebrity-news/tim-allen-wife-jane-hajduk-reveal-simple-date-night-secret-after-20-years-of-marriage/",
+          "title": "Tim Allen, wife Jane Hajduk reveal their simple secret to date nights after 20 years of marriage",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWh09VzuBP2WBeGyBMGhLqSjMzQtESpMsaF9A9n9XiVxEdDpYu1z6o161wX1s"
         }
       ]
     },
     {
       "query": "mac jones",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-23T04:10:00Z",
       "related_news_urls": [
         "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
@@ -108,6 +213,41 @@
           "publisher": "Fantasy Guru",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo"
+        }
+      ]
+    },
+    {
+      "query": "49ers loss",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T04:10:00Z",
+      "related_news_urls": [
+        "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
+        "https://sports.yahoo.com/articles/vikings-t-keep-pace-nfc-043459134.html",
+        "https://www.nfl.com/videos/examining-nfc-playoff-picture-following-tnf-in-week-11-nfl-gameday-final"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLCLg0-gFYEAlvUo_iE17YmDq49NN-w25EAXuhRMtkE3l8SJr5smGdW56qrRk",
+      "image_credit": "Pride Of Detroit",
+      "news": [
+        {
+          "url": "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
+          "title": "Here is where the Lions fit in the NFC playoff picture right now",
+          "publisher": "Pride Of Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLCLg0-gFYEAlvUo_iE17YmDq49NN-w25EAXuhRMtkE3l8SJr5smGdW56qrRk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vikings-t-keep-pace-nfc-043459134.html",
+          "title": "Vikings can’t keep pace in NFC North playoff standings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb0w7r3Hgjp24LX6EZ8WksCzyrFpahGsLgCfCqdKG3Z04XzjuFOwCi3A9rVAI"
+        },
+        {
+          "url": "https://www.nfl.com/videos/examining-nfc-playoff-picture-following-tnf-in-week-11-nfl-gameday-final",
+          "title": "Examining NFC playoff picture following 'TNF' in Week 11 | 'NFL GameDay Final'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjDBnysjnk7TLp3lv5qHzkX-qPlEIMEnt6qvOs7FvUmG8rjejeoX-PMWxYzU"
         }
       ]
     },
@@ -151,26 +291,19 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-23T04:00:00Z",
       "related_news_urls": [
-        "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
-        "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins"
+        "https://www.nfl.com/videos/kirk-cousins-29-yard-loft-pinpoints-a-wide-open-justin-jefferson-inside-49ers-territory",
+        "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5um2oXJhmldclkBK6uux74IXwnkBSfOe5Mh0m_KfzpUYrgyMfXBwvr6vpOCs",
-      "image_credit": "The Viking Age",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv46A4Mez_nOGurnlsVRt21ewV1dQnMjO4bBwqc_retQ9waLBmL-SzINfttqY",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
-          "title": "Justin Jefferson's emotional reaction to Kirk Cousins reveals what Vikings missed",
-          "publisher": "The Viking Age",
+          "url": "https://www.nfl.com/videos/kirk-cousins-29-yard-loft-pinpoints-a-wide-open-justin-jefferson-inside-49ers-territory",
+          "title": "Kirk Cousins' 29-yard loft pinpoints a wide-open Justin Jefferson inside 49ers' territory",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5um2oXJhmldclkBK6uux74IXwnkBSfOe5Mh0m_KfzpUYrgyMfXBwvr6vpOCs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
-          "title": "Jefferson goes for 9/74 on 13 targets vs. Packers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBx_sXQA5sXSXsTOdyiqr031of3CiQHF7bGGmbuoLuZdfVFeYVMFEXSniPaXU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv46A4Mez_nOGurnlsVRt21ewV1dQnMjO4bBwqc_retQ9waLBmL-SzINfttqY"
         },
         {
           "url": "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins",
@@ -178,6 +311,13 @@
           "publisher": "Bleacher Report",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVRiTBDF16_P11jyEVfC27dO_gQJEPnqd8kb3BVjbts-Dgm7T00HxJ5Iqu96s"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
+          "title": "Jefferson goes for 9/74 on 13 targets vs. Packers",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBx_sXQA5sXSXsTOdyiqr031of3CiQHF7bGGmbuoLuZdfVFeYVMFEXSniPaXU"
         }
       ]
     },
@@ -188,7 +328,7 @@
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/20/sports/patriots-mailbag-jimmy-garoppolo/",
         "https://bleacherreport.com/articles/25536035-new-patriots-rumors-jimmy-garoppolo-amid-daniel-jones-buzz-after-drake-mayes-injury-update",
-        "https://ninernoise.com/jimmy-garoppolos-potential-reunion-paints-sad-picture-post-49ers-career"
+        "https://www.barstoolsports.com/blog/3581274/make-the-call-the-patriots-have-a-better-shot-at-a-playoff-run-with-jimmy-g"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KQN2f9gTVMx9Krnb6Qk_3AGl3AktlXW_yPWNhs4YxJxAhigQXYywU-0ILVY",
       "image_credit": "The Boston Globe",
@@ -208,151 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqv5PiqLkRiDMf2oknOkJb-RJY3h-tGQM5650zaqghzUvI_PxQewkkwNbd7D4"
         },
         {
-          "url": "https://ninernoise.com/jimmy-garoppolos-potential-reunion-paints-sad-picture-post-49ers-career",
-          "title": "Jimmy Garoppolo's potential reunion paints a sad picture of post-49ers career",
-          "publisher": "Niner Noise",
+          "url": "https://www.barstoolsports.com/blog/3581274/make-the-call-the-patriots-have-a-better-shot-at-a-playoff-run-with-jimmy-g",
+          "title": "MAKE THE CALL: The Patriots Have A Better Shot At A Playoff Run With Jimmy G Than They Do With Tommy Cutlets",
+          "publisher": "Barstool Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXVkiGRaO_ykHZCgJfYvOxJOUq_qrGZXHZ6buMcSX-kSvteGoGOQsAqqJKkkg"
-        }
-      ]
-    },
-    {
-      "query": "cris collinsworth",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T04:00:00Z",
-      "related_news_urls": [
-        "https://www.themirror.com/sport/american-football/cris-collinsworth-49ers-vikings-sick-2119186",
-        "https://www.nytimes.com/athletic/7795603/2026/11/22/nfl-week-11-preview-sunday-playbook/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-week-11-afternoon-schedule-is-short-on-must-see-games"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUOEIsxehnjz1xOyAE51B1sdjirJgLatp0HgeCcLgwOSx0RR3jr0UJtIMYuM",
-      "image_credit": "The Mirror US",
-      "news": [
-        {
-          "url": "https://www.themirror.com/sport/american-football/cris-collinsworth-49ers-vikings-sick-2119186",
-          "title": "SNF viewers concerned about Cris Collinsworth after tuning in to Vikings-49ers broadcast",
-          "publisher": "The Mirror US",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUOEIsxehnjz1xOyAE51B1sdjirJgLatp0HgeCcLgwOSx0RR3jr0UJtIMYuM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7795603/2026/11/22/nfl-week-11-preview-sunday-playbook/",
-          "title": "What to watch for on NFL Sunday: Cowboys’ desperation and 49ers-Vikings’ NFC showdown - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTktvGz5jtIDwoFxCUVM3mhxDIf6ykzPB0-XFSnvaD2POl_XbLy2xnjn7G71WI"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-week-11-afternoon-schedule-is-short-on-must-see-games",
-          "title": "The Week 11 afternoon schedule is short on must-see games",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhKxOMtvGd-Z8ghtGZ0UROwJFHsaJIknQSLGy7wJ4Y6q74Jk2s4kLZG8qQSj4"
-        }
-      ]
-    },
-    {
-      "query": "rg3",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50548223/carmelo-anthony-calls-ravens-humphrey-baltimore-remark",
-        "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/",
-        "https://sports.yahoo.com/nfl/article/carmelo-anthony-calls-on-marlon-humphrey-to-do-more-after-baltimore-criminals-comment-apologies-dont-build-anything-presence-does-144124740.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WaP7f63uTlIU4NGrZkUfIMZuf782LMKIzF5sNNH-SuYFV8d06NYNwXiw33E",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50548223/carmelo-anthony-calls-ravens-humphrey-baltimore-remark",
-          "title": "Carmelo Anthony calls out Ravens' Humphrey over Baltimore 'criminals' remark",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WaP7f63uTlIU4NGrZkUfIMZuf782LMKIzF5sNNH-SuYFV8d06NYNwXiw33E"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/",
-          "title": "For the Ravens, ‘Marlon being Marlon’ isn’t funny — or tolerable — anymore - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTofPe4RIUHTxJFqCiCrx72JBmxgyWFfX0USIhty01rFxiOqjetfpqVP6jK6NU"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/carmelo-anthony-calls-on-marlon-humphrey-to-do-more-after-baltimore-criminals-comment-apologies-dont-build-anything-presence-does-144124740.html",
-          "title": "Carmelo Anthony calls on Marlon Humphrey to do more after Baltimore 'criminals' comment: 'Apologies don't build anything. Presence does'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2c_AzoNAaZpuQl7X8eD4pFQuJA3A-ILtA8p4eZbwFh4bu1tRLwgTRyQAFN8w"
-        }
-      ]
-    },
-    {
-      "query": "whitney peak",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T04:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/serendipity-reboot-cast-madelyn-cline-1236952550/",
-        "https://deadline.com/2026/11/whitney-peak-stephen-kalyn-join-serendipity-1237227988/",
-        "https://ruralradio.com/kozy/abc_news/whitney-peak-stephen-kalyn-join-cast-of-serendipity-reboot-film-abciddfa800c3/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV47K5FX1wRDYFLE4gHoOwftkyJbXyXchgi32PrUeS1Urh_TPicYXJ8f0nTFY",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/serendipity-reboot-cast-madelyn-cline-1236952550/",
-          "title": "‘Outer Banks’ Alum Madelyn Cline in Final Talks to Join New ‘Serendipity’ Movie (EXCLUSIVE)",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV47K5FX1wRDYFLE4gHoOwftkyJbXyXchgi32PrUeS1Urh_TPicYXJ8f0nTFY"
-        },
-        {
-          "url": "https://deadline.com/2026/11/whitney-peak-stephen-kalyn-join-serendipity-1237227988/",
-          "title": "Whitney Peak & Stephen Kalyn Join New 'Serendipity' Movie (EXCLUSIVE)",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJbv7nycyAUfWA67WCtQFd-gJM8KYiDm2q8WaHIAkj3qbtciBVz2FzJaTGcss"
-        },
-        {
-          "url": "https://ruralradio.com/kozy/abc_news/whitney-peak-stephen-kalyn-join-cast-of-serendipity-reboot-film-abciddfa800c3/",
-          "title": "Whitney Peak, Stephen Kalyn join cast of ‘Serendipity’ reboot film",
-          "publisher": "Rural Radio Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMWH4b7mUn2BE7r--Cc7T4XgzC3dAIu-lqc8BCG0tMZg_QG9Jyb-y_tzNtFU"
-        }
-      ]
-    },
-    {
-      "query": "flood warning",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T03:50:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
-        "https://www.clickorlando.com/news/local/2026/11/22/seminole-county-families-face-rising-floodwaters-as-threat-looms-for-days/",
-        "https://www.upi.com/Top_News/US/2026/11/21/florida-flooding-people-flee-homes/7111795285007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOQnZoUeiL2mo5VGaokbV-pNpkh52UUEVVOA-LAm2QJrycI0uE4Op-w_pM_Pw",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
-          "title": "River flooding threatens parts of Florida coast while torrential storms begin to ease after days of heavy rain",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOQnZoUeiL2mo5VGaokbV-pNpkh52UUEVVOA-LAm2QJrycI0uE4Op-w_pM_Pw"
-        },
-        {
-          "url": "https://www.clickorlando.com/news/local/2026/11/22/seminole-county-families-face-rising-floodwaters-as-threat-looms-for-days/",
-          "title": "Seminole County families face rising floodwaters as threat looms for days",
-          "publisher": "WKMG",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqXDMv7FGcYuXCw9tpERxlvoqThaZNPzp8Ho2xw0Wawm9D5bp4N1CA2VK_Am0"
-        },
-        {
-          "url": "https://www.upi.com/Top_News/US/2026/11/21/florida-flooding-people-flee-homes/7111795285007/",
-          "title": "Florida families flee flooded homes after more than 2 feet of rain",
-          "publisher": "upi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcYn0TnOGLBdzEtDoZb5bC-JwgKual8uHuqsYvSqv6w14WujpiRetNYjzNtdE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Q1KrLfyOKMTPLoJn2dnYrYkKEk73yB7Whw6nAMKWTsZbKbfAmtVz4MerjfQ"
         }
       ]
     }
