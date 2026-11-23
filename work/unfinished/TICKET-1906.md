@@ -3,9 +3,9 @@ issue: 1906
 project: "Bubbles Identity & Verification Center"
 state: review_pending
 dot: "🟡"
-progress_percent: 40
+progress_percent: 41
 progress_basis: "Cloudflare stale gate fix and browser Verification Center source staged and tested; broader OAuth, real provider behavior, independent review, merge, release and two-account acceptance remain"
-sessions_spent: 4
+sessions_spent: 5
 sessions_remaining_estimate: unknown
 agent: "ChatGPT via authenticated GitHub connector"
 lease_id: null
@@ -15,15 +15,15 @@ fence: null
 last_observed_at_utc: "2026-11-11T08:30:26.255Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/bubbles-byte-orb-color-passages-1906-20261122
-head_sha: "e03db1966bc60629094915580baeeff71faf24cb" # latest validated source head before this checkpoint
+head_sha: "2c6e9c0b08b1197df1a05d8586353c7d3305adf9" # new signal-routing source head; final CI still unverified
 pr: "https://github.com/www-infinity4/QuantaPhi/pull/2120"
 tests: "RED 44/45 at d22e0e01, provider-verification run 42987050045; GREEN 45/45 at 73b824a4, run 42987180622; account-connection checks green; real provider and physical Android acceptance pending"
 ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42987180622"
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent security review not submitted; real Google/GitHub/Cloudflare user OAuth, signed owner execution, Cloudflare deployment and two-account Android acceptance unverified"
-next_action: "Run exact-head PR #2120 CI, review/guard source-only merge, then independently verify real Android/website orb and wallet passage lab; original wallet auth unchanged"
+blocker: "Exact-head cavity simulation CI not yet completed; public Bubbles health missing JSON on prior PR #2120 exact-head live smoke checks; production wallet and Android acceptance unverified"
+next_action: "Run new exact-head PR #2120 cavity tests and remaining CI; resolve public Bubbles health and any current merge conflicts without bypassing auth, then guarded source merge and later Android acceptance"
 ---
 # TICKET-1906 — Bubbles Identity & Verification Center
 
@@ -103,3 +103,9 @@ New `bubbles-byte-assist.mjs` reports only the first word's UTF-8 byte count, fi
 `colorPassageStatus` produces a per-tile 11-bulb match mask of the already verified color window. `wallet-color-passage-lab.html` and module show alignment/misalignment using **synthetic numbers only**. No real wallet keys, balances, signed grants, phone data, or other-user IDs are read. Visual equality never means account authentication or permission to transfer bytes.
 
 Security/release blockers: signed account session proof remains external to this helper; real two-phone wallet enrollment, encrypted owner GitHub backup, HTTPS data flow, Android WebView acceptance, and live Bubbles source release are not verified. This staged branch is not a deployed identity repair. Node tests are wired into the Bubbles unified CI; do not claim a merge/deployment until exact-head checks and readback confirm.
+
+### Black/white/yellow cavity signal model · 2026-11-22 evening
+
+Owner extended the color-window metaphor to a black standby buffer, white signal inside yellow incoming guide, red inspection, orange selection and blue/green/purple output routes, with a Boolean cavity whose control color need not be rendered as a physical pixel. This is now **synthetic-only** `bubbles-color-cavity.mjs` attached to the existing source-stage PR [#2120](https://github.com/www-infinity4/QuantaPhi/pull/2120), and a new opted-in receiver section on `wallet-color-passage-lab.html`. It accepts bounded metadata-only frames (max 128 items, max 32 aperture Booleans), rejects payloads/unauthorized channel names, emits counts and routing labels only, supports manual frame stepping and accessible paused-on-hide slow playback. Nothing reads actual TV broadcasts, encrypted phone fragments, other user records, or identity credentials; color route matches do not authorize financial data reads. Tests `test/bubbles-color-cavity.test.mjs` and updated `test/wallet-color-passage-lab.test.mjs` are wired into existing Bubbles unified workflow. See `docs/BUBBLES-BYTE-ORB-PASSAGEWAYS.md` for the difference between this control-plane analogy and actual LCD/OLED RGB physics.
+
+**Prior exact-head receipt**: earlier #2120 source head `77741533f4a2114bc064b76ecfa41f06981ecb45` had 27/29 workflows passing, with two real endpoint smoke workflows failing `Bubbles health: missing JSON response` ([45085720440](https://github.com/www-infinity4/QuantaPhi/actions/runs/45085720440) and [45085720431](https://github.com/www-infinity4/QuantaPhi/actions/runs/45085720431)). That is still a hard hold for source promotion. No new HEAD CI/production/device claim until a separate receipt exists; PR remains **draft and unmerged**.
