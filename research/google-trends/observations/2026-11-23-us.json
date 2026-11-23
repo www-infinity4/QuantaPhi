@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T01:31:14.238706Z",
+  "checked_at": "2026-11-23T02:01:19.400709Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "fred warner",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T01:10:00Z",
+      "query": "dylan larkin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:40:00Z",
       "related_news_urls": [
-        "https://www.vikings.com/news/aaron-jones-levi-drake-rodriguez-excitement-first-game-mexico",
-        "https://www.espn.com/nfl/story/_/id/50535108/san-francisco-49ers-fred-warner-mexican-heritage-dpoy",
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/fred-warner-mexico-city-heritage/1981916/"
+        "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin/",
+        "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/22/red-wings-might-be-adjusting-their-ask-in-any-dylan-larkin-trade/92913365007/",
+        "https://sports.yahoo.com/videos/friedman-red-wings-adjusted-thinking-231709196.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-VcZ2fMv3em61Ojhw_cXeV89ycQeUswf_NQXzN86XkdShw2nCkS6qfZzFGc",
-      "image_credit": "Vikings.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmgNVZRS3GYN4KSkWXO2_RoFwjDlEWZdVEl1rqE1vkzVXpn7-Y_gZSR_7VrZY",
+      "image_credit": "Sportsnet.ca",
       "news": [
         {
-          "url": "https://www.vikings.com/news/aaron-jones-levi-drake-rodriguez-excitement-first-game-mexico",
-          "title": "Aaron Jones, Sr. & Levi Drake Rodriguez Share Excitement for Vikings 1st Game in Mexico",
-          "publisher": "Vikings.com",
+          "url": "https://www.sportsnet.ca/nhl/article/red-wings-adjusting-ask-for-dylan-larkin/",
+          "title": "Red Wings adjusting ask for Dylan Larkin",
+          "publisher": "Sportsnet.ca",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-VcZ2fMv3em61Ojhw_cXeV89ycQeUswf_NQXzN86XkdShw2nCkS6qfZzFGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmgNVZRS3GYN4KSkWXO2_RoFwjDlEWZdVEl1rqE1vkzVXpn7-Y_gZSR_7VrZY"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50535108/san-francisco-49ers-fred-warner-mexican-heritage-dpoy",
-          "title": "In Mexico City, 49ers' Fred Warner can represent his heritage and boost DPOY case",
-          "publisher": "ESPN",
+          "url": "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/22/red-wings-might-be-adjusting-their-ask-in-any-dylan-larkin-trade/92913365007/",
+          "title": "Red Wings might be adjusting their ask in any Dylan Larkin trade",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ62LlCGc0dpf9Pmn5V9SMBsU1F_q7nB5xIjMeGW62ZYZlVHX4zX7ojk5FlHpo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXaNceQ3rYjJpkbpXGTxvGHTjIlxRt1gcpKVXaRO2p8J5h9yI6MUFPN5X_cso"
         },
         {
-          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/fred-warner-mexico-city-heritage/1981916/",
-          "title": "Fred Warner reflects on ‘magnitude' of representing heritage in Mexico City game",
+          "url": "https://sports.yahoo.com/videos/friedman-red-wings-adjusted-thinking-231709196.html",
+          "title": "Friedman: Red Wings \"Have Adjusted\" Thinking In Dylan Larkin Trade Ask",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkJI7rKHIPNlkTY-pfM-4joaYcyLcknCJAiVrjai-Kj-tjsLyJkOXZHfVH3BM"
+        }
+      ]
+    },
+    {
+      "query": "michael hage",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:40:00Z",
+      "related_news_urls": [
+        "https://www.montrealhockeyfanatics.com/nhl-team/montreal-canadiens/michael-hage-reveals-why-he-chose-not-to-sign-with-the-canadiens-this-season",
+        "https://sportsnaut.com/nhl/montreal-canadiens/canadiens-news-zharovsky-hage-mittelstadt-new-habs-lines",
+        "https://insidetherink.com/montreal-canadiens-prospect-pipeline-is-taking-over-four-major-hockey-leagues/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB5mcLOGtlNdNmvTiYjEMq88sFh6AqwbdzLiK-czNaQ8zVO15t8FE-P6bKOCk",
+      "image_credit": "Montreal Hockey Fanatics",
+      "news": [
+        {
+          "url": "https://www.montrealhockeyfanatics.com/nhl-team/montreal-canadiens/michael-hage-reveals-why-he-chose-not-to-sign-with-the-canadiens-this-season",
+          "title": "Michael Hage reveals why he chose not to sign with the Canadiens this season",
+          "publisher": "Montreal Hockey Fanatics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB5mcLOGtlNdNmvTiYjEMq88sFh6AqwbdzLiK-czNaQ8zVO15t8FE-P6bKOCk"
+        },
+        {
+          "url": "https://sportsnaut.com/nhl/montreal-canadiens/canadiens-news-zharovsky-hage-mittelstadt-new-habs-lines",
+          "title": "Habs Daily: Top Prospect Highlights, New Lines, Pugachyov Shorty, Hutson Excellence",
+          "publisher": "Sportsnaut",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7131e0Mw4ilMG6gRwcHwcTiq9iAwPMPkXiqIXgpgsumc6XXdDgxH4TS_IZic"
+        },
+        {
+          "url": "https://insidetherink.com/montreal-canadiens-prospect-pipeline-is-taking-over-four-major-hockey-leagues/",
+          "title": "Montreal Canadiens Prospect Pipeline Is Taking Over Four Major Hockey Leagues",
+          "publisher": "Inside The Rink",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXpQAQQUaqeAkm3f8L1_teBiDQksgu8QQ7g0HAc1Ncv91DLJ41REE1cJlqL1o"
+        }
+      ]
+    },
+    {
+      "query": "robert lewandowski",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:40:00Z",
+      "related_news_urls": [
+        "https://przegladsportowy.onet.pl/pilka-nozna/mls/chicago-fire-charlotte-fc-relacja-na-zywo-lewandowski-z-golem-live/v36773e",
+        "https://sportowefakty.wp.pl/pilka-nozna/1285659/na-klopoty-lewandowski-zobacz-bramke-polaka-w-play-off",
+        "https://sport.interia.pl/robert-lewandowski/na-zywo-chicago-fire-charlotte-fc-w-1-8-finalu-major-league-soccer-r,nzId,9436"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOnQVz_MgcyMF5rZhfx9GrhhQhVnLqCyHanvkRa1JH0BHJE-POyxyR2rquHHU",
+      "image_credit": "Przegląd Sportowy",
+      "news": [
+        {
+          "url": "https://przegladsportowy.onet.pl/pilka-nozna/mls/chicago-fire-charlotte-fc-relacja-na-zywo-lewandowski-z-golem-live/v36773e",
+          "title": "MLS: Chicago Fire - Charlotte FC",
+          "publisher": "Przegląd Sportowy",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOnQVz_MgcyMF5rZhfx9GrhhQhVnLqCyHanvkRa1JH0BHJE-POyxyR2rquHHU"
+        },
+        {
+          "url": "https://sportowefakty.wp.pl/pilka-nozna/1285659/na-klopoty-lewandowski-zobacz-bramke-polaka-w-play-off",
+          "title": "Na kłopoty Lewandowski. Zobacz bramkę Polaka w play-off",
+          "publisher": "SportoweFakty",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR20oVXfxKkxvsvVsLhV2u-AXdZ5epds1-40GEuC9gATl4-qJ5A8kEn4LXwxKg"
+        },
+        {
+          "url": "https://sport.interia.pl/robert-lewandowski/na-zywo-chicago-fire-charlotte-fc-w-1-8-finalu-major-league-soccer-r,nzId,9436",
+          "title": "Chicago Fire - Charlotte FC w 1/8 finału Major League Soccer. Relacja na żywo",
+          "publisher": "Interia Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToyNsh4ThOijnDL5kb-UmMvgqHPzhzf1xegeg8pSm0VCNXi38MOqhy1iNNQQQ"
+        }
+      ]
+    },
+    {
+      "query": "brock purdy wife",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T01:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
+        "https://www.mensjournal.com/news/brock-purdy-wife-jenna-purdy-photos-college",
+        "https://thespun.com/trending/brock-purdys-wife-sent-nfl-fans-into-frenzy-with-swimsuit-photo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC7zxKVREUv4db2htl7G8DYA-4FKsCqXz5o57asNtV9B41rRmx3w2x4hsxL8k",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/onsi/athlete-lifestyle/49ers-brock-purdy-and-wife-jenna-share-powerful-message-that-goes-far-beyond-football",
+          "title": "49ers' Brock Purdy and Wife Jenna Share Powerful Message That Goes Far Beyond Football",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTC7zxKVREUv4db2htl7G8DYA-4FKsCqXz5o57asNtV9B41rRmx3w2x4hsxL8k"
+        },
+        {
+          "url": "https://www.mensjournal.com/news/brock-purdy-wife-jenna-purdy-photos-college",
+          "title": "Brock Purdy Wife: Jenna Purdy Is Former College Athlete",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlU555e-jno1PnApyNoNMYOMb2pTeMiWmrF9a7A6b8UeGexYt0_0MENJ-VJIk"
+        },
+        {
+          "url": "https://thespun.com/trending/brock-purdys-wife-sent-nfl-fans-into-frenzy-with-swimsuit-photo",
+          "title": "Brock Purdy’s Wife Sent NFL Fans Into Frenzy With Swimsuit Photo",
+          "publisher": "The Spun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Z3nUILEpLwRzoG6Xtncy5O8gTbod5YTHRGZAkOUMANOkReeYHN93wG4-gqE"
+        }
+      ]
+    },
+    {
+      "query": "malik mustapha",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-fined-23-882-for-block-the-league-used-as-a-highlight",
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/siran-neal-marques-sigle-malik-mustapha-fine/1981909/",
+        "https://www.si.com/nfl/cowboys/onsi/george-pickens-hefty-nfl-fine-actions-dallas-cowboys-loss-49ers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyTFAJa72dPBR6EHhWIoDOCYaS8Fyo-CUI5dewsGC3bZOmcgCZYCT3gDqEOiA",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ceedee-lamb-fined-23-882-for-block-the-league-used-as-a-highlight",
+          "title": "CeeDee Lamb fined $23,882 for block the league used as a highlight",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyTFAJa72dPBR6EHhWIoDOCYaS8Fyo-CUI5dewsGC3bZOmcgCZYCT3gDqEOiA"
+        },
+        {
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/siran-neal-marques-sigle-malik-mustapha-fine/1981909/",
+          "title": "Two 49ers safeties fined after win vs. Cowboys, but Malik Mustapha not punished",
           "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFbG2_9w1aQXemaw9J4mmSk-EvWTsSqtZ1jWxu178xK7NbgSue7M9wsDVJMY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRC7DmFVe7MwQfkVIUgKE2A0sYTt_GX3af4JfT8gvTdqfogl52H4WdzSVTLZT0"
+        },
+        {
+          "url": "https://www.si.com/nfl/cowboys/onsi/george-pickens-hefty-nfl-fine-actions-dallas-cowboys-loss-49ers",
+          "title": "George Pickens Hit With Hefty NFL Fine For Actions in Cowboys' Loss To 49ers",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsdykbsHhRddj03rGWqcewsWVr5WX9xbuS2gUKVePcGvFX61ej0C1VqjsW0oY"
         }
       ]
     },
     {
-      "query": "tabla liga mx",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-23T01:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17546949/tigres-vs-america-jornada-17-resultado-resumen-goles",
-        "https://www.fubo.tv/news/soccer/tigres-uanl-vs-club-america-donde-ver-transmision-en-vivo-canal-de-tv-y-actualizaciones-21-de-noviembre-de-2026/",
-        "https://www.telemundo.com/deportes/el-pelotazo/video/tigres-vence-al-america-y-se-definen-los-invitados-a-liguilla-el-pelotazo-show-completo-tmvo13247155"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHPpChWVa00diQirZK8Zoejp6NgsqfrFeDMVmDvVsUEokst-nPhhSLao4PMY",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17546949/tigres-vs-america-jornada-17-resultado-resumen-goles",
-          "title": "América sucumbe en el Volcán y pone en riesgo el segundo sitio",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHPpChWVa00diQirZK8Zoejp6NgsqfrFeDMVmDvVsUEokst-nPhhSLao4PMY"
-        },
-        {
-          "url": "https://www.fubo.tv/news/soccer/tigres-uanl-vs-club-america-donde-ver-transmision-en-vivo-canal-de-tv-y-actualizaciones-21-de-noviembre-de-2026/",
-          "title": "Tigres UANL vs Club América - Dónde ver, transmisión en vivo, canal de TV y actualizaciones (21 de noviembre de 2026)",
-          "publisher": "Fubo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX_ELG7fsP8BJWKrefdpVHIiGHWbYDHrV-Oxa7Nh3E3qh_80x0NzINvAGILLk"
-        },
-        {
-          "url": "https://www.telemundo.com/deportes/el-pelotazo/video/tigres-vence-al-america-y-se-definen-los-invitados-a-liguilla-el-pelotazo-show-completo-tmvo13247155",
-          "title": "Tigres vence al América y se definen los invitados a Liguilla | El Pelotazo | Show completo",
-          "publisher": "Telemundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmh4E8HrMZROY6KXq01z2ie6Rf9Cek_XFhKQmrSS7DY2ARY71CcmSVYKhIsUI"
-        }
-      ]
-    },
-    {
-      "query": "nbc",
+      "query": "cj west",
       "approx_searches": "1000+",
-      "published_at": "2026-11-23T01:10:00Z",
+      "published_at": "2026-11-23T01:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/20/arts/music/bowen-yang-apology-antisemitic-slur-regina-spektor.html",
-        "https://www.tvinsider.com/1305095/michael-rapaport-demands-nbc-fire-bowen-yang-snl-zio-controversy/",
-        "https://variety.com/2026/tv/news/bowen-yang-apologizes-regina-spektor-antisemitic-slur-1236954304/"
+        "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIjXQLVADK4tc-XbEn-XEeRZhK4lsjIEDmJnVaPqbfbTJFDULGM1LTI_D7V6o",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/20/arts/music/bowen-yang-apology-antisemitic-slur-regina-spektor.html",
-          "title": "Bowen Yang Apologizes for Using an Antisemitic Slur on His Podcast",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIjXQLVADK4tc-XbEn-XEeRZhK4lsjIEDmJnVaPqbfbTJFDULGM1LTI_D7V6o"
-        },
-        {
-          "url": "https://www.tvinsider.com/1305095/michael-rapaport-demands-nbc-fire-bowen-yang-snl-zio-controversy/",
-          "title": "Michael Rapaport Makes Bold Demand of NBC After Bowen Yang Controversy",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZGTas_6FHBDYzV0xTORb3bZMLTC0BPO8UnhUB51AjLKLvSIKxgwYfrTE1n2w"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/bowen-yang-apologizes-regina-spektor-antisemitic-slur-1236954304/",
-          "title": "Bowen Yang Apologizes for Calling Regina Spektor an Antisemitic Slur, Didn’t Know It Was ‘Popularized by Far-Right Movements’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHqXxKGgqLm6fJZITFVVTFVlN65ADkzJ6XU4dGC9rtE4IuGOjrOn1i2geA6UA"
-        }
-      ]
-    },
-    {
-      "query": "49ers game today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T01:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/vikings-fans-taunt-49ers-faithful-004815472.html",
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/live-updates-score-highlights-minnesota-vikings-2/1981025/",
-        "https://nypost.com/2026/11/20/sports/49ers-fan-brawls-earning-faithful-dangerous-reputation/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPQQ26uhyzw0K7zPq7FFI1GcDpr45lRhgtDlvVNom007s7OtcJW7axiAxN8Ew",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/vikings-fans-taunt-49ers-faithful-004815472.html",
-          "title": "Vikings fans taunt 49ers Faithful with provocative Mexico City chant",
+          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
+          "title": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPQQ26uhyzw0K7zPq7FFI1GcDpr45lRhgtDlvVNom007s7OtcJW7axiAxN8Ew"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70"
         },
         {
-          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/live-updates-score-highlights-minnesota-vikings-2/1981025/",
-          "title": "49ers vs. Vikings live updates: Brock Purdy faces top NFL defense in Mexico City",
-          "publisher": "NBC Sports Bay Area & California",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
+          "title": "49ers waive WR Brandin Cooks",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgajnsc3NsRpX16zopcob06aOn4-TKI8EZDFeV-dIev8MI4bc6P_Pwn4RhWWk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
         },
         {
-          "url": "https://nypost.com/2026/11/20/sports/49ers-fan-brawls-earning-faithful-dangerous-reputation/",
-          "title": "49ers fan brawls are earning the ‘Faithful’ a dangerous reputation problem",
-          "publisher": "New York Post",
+          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/",
+          "title": "49ers cut WR Brandin Cooks, should Raiders sign him?",
+          "publisher": "Raiders Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9_6MuP0MCFcZjyhw4MIGf1Tx7FDURFVdI2IXBLcnE9isDscTEqd2IN8s2VwI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvaFwnvxq8Nk48NqQzsHgH-0rVScYrNK328mhQdKrCSyjgeBx3cqcXyQUiek"
         }
       ]
     },
     {
-      "query": "vikings game today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T01:00:00Z",
+      "query": "marines",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
-        "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
-        "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return"
+        "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
+        "https://patch.com/california/banning-beaumont/search-continues-active-duty-marine-who-vanished-after-leaving-ie-casino",
+        "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqUSOJ1pEt2EQxpcqL3t7dgP1wBwH3EpTs-Mdpa6qNsYIZOGqN6xEdCx1zqc",
+      "image_credit": "KUTV",
+      "news": [
+        {
+          "url": "https://kutv.com/news/local/marine-corps-releases-statement-after-utah-service-member-found-dead-in-california",
+          "title": "Marine Corps releases statement after Utah service member found dead in California",
+          "publisher": "KUTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqUSOJ1pEt2EQxpcqL3t7dgP1wBwH3EpTs-Mdpa6qNsYIZOGqN6xEdCx1zqc"
+        },
+        {
+          "url": "https://patch.com/california/banning-beaumont/search-continues-active-duty-marine-who-vanished-after-leaving-ie-casino",
+          "title": "Body Found During Search For Active-Duty Marine Who Vanished In IE: Reports",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmU3W9QVuD3slSjSbSU2LUKTrdlZjiKe1DdHzLcuPdkp8MWEvhCFM2zDN9MEo"
+        },
+        {
+          "url": "https://www.nbcsandiego.com/news/local/missing-camp-pendleton-marine-found-dead-in-san-bernardino-county/4105322/",
+          "title": "Missing Camp Pendleton Marine found dead in San Bernardino County",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6jce52h6Zz01Lhlz7ixd6EFenROVbbxVNBGssuCbQXHSo2hq2KfmCUt0AVKI"
+        }
+      ]
+    },
+    {
+      "query": "reese witherspoon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/lauren-neustadter-exits-reese-witherspoon-hello-sunshine-1237230709/",
+        "https://inshorts.com/en/news/reese-witherspoon-reacquires-hello-sunshine-via-mediawan-deal-1794988204654",
+        "https://variety.com/2026/film/news/hello-sunshine-lauren-neustadter-exits-reese-witherspoon-1236954660/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7syHPI6p-x9RSepcFqOeoBmhQsh705bMgmDwE7M9ucTaAPo7lCMrSHFegnEU",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/lauren-neustadter-exits-reese-witherspoon-hello-sunshine-1237230709/",
+          "title": "Lauren Neustadter Exiting Reese Witherspoon’s Hello Sunshine",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7syHPI6p-x9RSepcFqOeoBmhQsh705bMgmDwE7M9ucTaAPo7lCMrSHFegnEU"
+        },
+        {
+          "url": "https://inshorts.com/en/news/reese-witherspoon-reacquires-hello-sunshine-via-mediawan-deal-1794988204654",
+          "title": "Reese Witherspoon reacquires Hello Sunshine via Mediawan deal | Tap to know more | Inshorts",
+          "publisher": "Inshorts",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJjNEtD4CEUXacNa6DqwEcyYmCRgFPK2_dO0OoF0t6arx70ltvelZUtux2nj0"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/hello-sunshine-lauren-neustadter-exits-reese-witherspoon-1236954660/",
+          "title": "Hello Sunshine’s Lauren Neustadter to Leave Reese Witherspoon’s Company at End of Year",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQELnc53PwT7RVbQA4rUpsdvFDiR7G_HCGMDqKr8g-CLXEKJf0pW0nM0TGSbJs"
+        }
+      ]
+    },
+    {
+      "query": "pregnant workers fairness act",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T01:30:00Z",
+      "related_news_urls": [
+        "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
+        "https://wjla.com/news/nation-world/pregnant-workers-ruling-puts-17-trillion-covid-era-house-vote-under-scrutiny",
+        "https://thehill.com/regulation/court-battles/6235708-court-rules-congress-proxy-unconstitutional/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8_IMzIW3wRscM1tMESrTxbN92k3fGbY-Sxd4_PACQIKwLSe2jB8jAwtO0aM",
+      "image_credit": "PBS",
+      "news": [
+        {
+          "url": "https://www.pbs.org/newshour/nation/appeals-court-says-federal-law-requiring-accommodations-for-pregnant-workers-is-unconstitutional",
+          "title": "Appeals court says federal law requiring accommodations for pregnant workers is unconstitutional",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8_IMzIW3wRscM1tMESrTxbN92k3fGbY-Sxd4_PACQIKwLSe2jB8jAwtO0aM"
+        },
+        {
+          "url": "https://wjla.com/news/nation-world/pregnant-workers-ruling-puts-17-trillion-covid-era-house-vote-under-scrutiny",
+          "title": "Pregnant workers ruling puts $1.7 trillion COVID-era House vote under scrutiny",
+          "publisher": "WJLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8lp5yhgIYo6uhsOJe8P8HONEqPZICiR_iKcBUh1kZqxCffeFzJlzZu1qDIJ4"
+        },
+        {
+          "url": "https://thehill.com/regulation/court-battles/6235708-court-rules-congress-proxy-unconstitutional/",
+          "title": "$1.7 trillion Biden-era government funding bill found unconstitutional, appeals court rules",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6vBClJ324t_giRYbCtQdD4Pv0ZNYXaDQ6x8bgyZVWZhclIDXM4XrPaykHOgc"
+        }
+      ]
+    },
+    {
+      "query": "san francisco 49ers schedule",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T01:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
+        "https://www.nfl.com/news/nfl-week-11-inactives-players-ruled-out-sunday-2026-season",
+        "https://www.49erswebzone.com/news/205386-nfl-inactives-players-ruled-sundays/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKD8rDdTOeEmNgiMA3BXzEcskKsrkSTncpvvWHbTFcBQQHVU3wApTzQRoWm6Q",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
-          "title": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayInactives-50530832/fantasy-football-injuries-nfl-week-11-inactive-active",
+          "title": "Fantasy football Week 11 inactives: Who's in and who's out?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKD8rDdTOeEmNgiMA3BXzEcskKsrkSTncpvvWHbTFcBQQHVU3wApTzQRoWm6Q"
         },
         {
-          "url": "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
-          "title": "Back with the Vikings, Kirk Cousins is trusting Kevin O’Connell more than ever",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuksXFiLBf2R-FFshU9lDz_HLK4UVR06vLwZ1uwHUNslsMBodkLM9M1Rus8Og"
-        },
-        {
-          "url": "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return",
-          "title": "Kirk Cousins trying to 'slow down,' keep blinders on amid whirlwind Vikings return: 'Ignorance is bliss'",
+          "url": "https://www.nfl.com/news/nfl-week-11-inactives-players-ruled-out-sunday-2026-season",
+          "title": "NFL Week 11 inactives: Players ruled out for Sunday's 11 games",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl78E3Jwj1a0ysGKIksP75MTowqvh8J38ObSn9ryf6myTFGg-JeK1o1XHqamg"
-        }
-      ]
-    },
-    {
-      "query": "jordan mason",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:00:00Z",
-      "related_news_urls": [
-        "https://bsinews.id/en/aaron-jones-week-eleven-fantasy",
-        "https://www.fantasypros.com/nfl/notes/499799/jordan-mason-2026-week-11-outlook.php",
-        "https://sports.yahoo.com/articles/fantasy-football-vikings-wr-start-222519345.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTVtY2-5MAyK24Zc1KRJEwkNitveeCPa3a7HEBM1y4Jw-aXr-RXEraBxYhxo",
-      "image_credit": "bsinews.id",
-      "news": [
-        {
-          "url": "https://bsinews.id/en/aaron-jones-week-eleven-fantasy",
-          "title": "Fantasy Analysts Urge Managers to Bench Aaron Jones in Week 11",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTVtY2-5MAyK24Zc1KRJEwkNitveeCPa3a7HEBM1y4Jw-aXr-RXEraBxYhxo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc261jIS5978dpG4g6i6O9FXNT44geQm62i5q-_uNmPS9NFgcq2EhByHjmaM0"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/notes/499799/jordan-mason-2026-week-11-outlook.php",
-          "title": "Jordan Mason Week 11 Outlook - Vikings at 49ers",
-          "publisher": "FantasyPros",
+          "url": "https://www.49erswebzone.com/news/205386-nfl-inactives-players-ruled-sundays/",
+          "title": "NFL Week 11 inactives: Players ruled out for Sunday’s 11 games",
+          "publisher": "49ers Webzone",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dQWSR-8XSdXssbA7tJMbKoDWFnoBhpBAcK1EWkXRgOVl9Og6nkWLa2mhtHI"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fantasy-football-vikings-wr-start-222519345.html",
-          "title": "Fantasy Football: Which Vikings WR should you start in Week 11?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIvDouM3eBopV2-icumCV74aCUgczlXqAzYbt8lyRPYGwpTeHW7k2BIb3WezQ"
-        }
-      ]
-    },
-    {
-      "query": "rachael leigh cook",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/rachael-leigh-cook-plays-twins-212605934.html",
-        "https://rissiwrites.com/2026/11/double-booked-for-the-holidays-familiar-star-in-dual-role.html",
-        "https://www.aol.com/articles/writer-brisa-carleton-shares-her-210448000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsjIo7fdSOVHChyNs6TRDx5HoqR0drk8M2_judGKloIihWrJ5SYPK0Yf_2oIo",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/rachael-leigh-cook-plays-twins-212605934.html",
-          "title": "Rachael Leigh Cook Plays Twins In Her New Hallmark Movie. I’m Surprised At What Weirded Her Out",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsjIo7fdSOVHChyNs6TRDx5HoqR0drk8M2_judGKloIihWrJ5SYPK0Yf_2oIo"
-        },
-        {
-          "url": "https://rissiwrites.com/2026/11/double-booked-for-the-holidays-familiar-star-in-dual-role.html",
-          "title": "‘DOUBLE BOOKED FOR THE HOLIDAYS’: SEE LIKABLE STAR PLAY IN A UNIQUE DUAL ROLE",
-          "publisher": "RissiWrites.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBE3x7Cvd436xedN1wajYRo7JoXpXY5mSf-cSLQI_uOV7fvuf_ODHEkq0PMM4"
-        },
-        {
-          "url": "https://www.aol.com/articles/writer-brisa-carleton-shares-her-210448000.html",
-          "title": "Writer Brisa Carleton Shares Her Excitement Over Rachael Leigh Cook Joining Her First Film",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzo13xdJSR-7PZD_3jxumQUCbViM4wfMOki5a6mFElP3D0w372nSSfmx8-2zg"
-        }
-      ]
-    },
-    {
-      "query": "dea",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T01:00:00Z",
-      "related_news_urls": [
-        "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
-        "https://www.cbsnews.com/news/louisiana-nitazenes-bust/",
-        "https://www.wbrz.com/news/ebrso-dea-dismantle-synthetic-opioid-lab-creating-nitazene-a-first-in-the-us/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSOffl3d0gRzGePfTz94cidyko-RwVSTNE6sEWIkR5LK2NQMpISNndJtQFDPo",
-      "image_credit": "DEA (.gov)",
-      "news": [
-        {
-          "url": "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
-          "title": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge",
-          "publisher": "DEA (.gov)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSOffl3d0gRzGePfTz94cidyko-RwVSTNE6sEWIkR5LK2NQMpISNndJtQFDPo"
-        },
-        {
-          "url": "https://www.cbsnews.com/news/louisiana-nitazenes-bust/",
-          "title": "They thought it was a fentanyl lab. It was nitazenes — synthetic opioids up to 80 times more potent.",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFWi4Z_lix-BXGBAKOS1aXrMRlpgYB9p26w16uETxZOlT3YCd4xRyFN0jcP0"
-        },
-        {
-          "url": "https://www.wbrz.com/news/ebrso-dea-dismantle-synthetic-opioid-lab-creating-nitazene-a-first-in-the-us/",
-          "title": "EBRSO, DEA dismantle synthetic opioid lab creating nitazene, a first in the US",
-          "publisher": "WBRZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXbvA4mOX8QTopkXiffMMItEYsY9cf8ZmNkVkysY26at4NESp9R2ErgDmoAXM"
-        }
-      ]
-    },
-    {
-      "query": "chivas de guadalajara vs cruz azul standings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T00:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/watch-guadalajara-vs-cruz-azul-220000760.html",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-cd-guadalajara-v-cruz-azul/bltfc34aa02ed105402",
-        "https://www.fubo.tv/news/soccer/guadalajara-vs-cruz-azul-where-to-watch-stream-info-tv-channel-and-live-updates-november-22-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7dKN_VCiAem-6jb_X8ZRaoC9-wcx8Iw7fgdGxXGmS_RNEvH2CwtjTh3CUH0c",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/watch-guadalajara-vs-cruz-azul-220000760.html",
-          "title": "How to watch Guadalajara vs Cruz Azul: Live stream Liga MX, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7dKN_VCiAem-6jb_X8ZRaoC9-wcx8Iw7fgdGxXGmS_RNEvH2CwtjTh3CUH0c"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-cd-guadalajara-v-cruz-azul/bltfc34aa02ed105402",
-          "title": "Watch CD Guadalajara vs Cruz Azul live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrQUvYaSor_2LEzD9itHTcwiz-pZzsCO8F1D3MSAbtGu89h3dpOL15uAq5kzM"
-        },
-        {
-          "url": "https://www.fubo.tv/news/soccer/guadalajara-vs-cruz-azul-where-to-watch-stream-info-tv-channel-and-live-updates-november-22-2026/",
-          "title": "Guadalajara vs Cruz Azul - Where to Watch, Stream Info, TV Channel, and Live Updates (November 22, 2026)",
-          "publisher": "Fubo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTizh1xhgEE4BuKSVyrYtRjxiMVK4VzUzM87Yct6x-1YM3h5Bmj3Z7okiD5ZaE"
-        }
-      ]
-    },
-    {
-      "query": "cam skattebo",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T00:50:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
-        "https://sports.yahoo.com/articles/lions-rookie-defensive-end-facing-151225387.html",
-        "https://www.fox2detroit.com/video/fmc-5cn5ish0wi3ode1z"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0pzgw1VqRr_rpbcIm7LyetMVYAHW0jKrbsXXcV3F71sqhv16Zo46C5ewvH0",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
-          "title": "Aidan Hutchinson's message to Lions after season-ending injury: 'Hold down the fort til I’m back, boys'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0pzgw1VqRr_rpbcIm7LyetMVYAHW0jKrbsXXcV3F71sqhv16Zo46C5ewvH0"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lions-rookie-defensive-end-facing-151225387.html",
-          "title": "Lions Rookie Defensive End Facing Pressure After Aidan Hutchinson Injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE8fe01f-__OD8aKhe5LeZdDFde_430dk7c4X4_qXnm90d7cBY5NB_svaOaUs"
-        },
-        {
-          "url": "https://www.fox2detroit.com/video/fmc-5cn5ish0wi3ode1z",
-          "title": "Kelvin Sheppard on life without Hutchinson, Hassanein, and the return of Kerby Joseph",
-          "publisher": "FOX 2 Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmXWgcG9IcqmyktuazLbubqO0stnRCgJzhpsc1pHNsJqSj8XMH7rRX9WE77rI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUOWAdyGOjA1VsFQcnPA3Z0HB1k3oYIucBEi7Mj1duDVoHcgs2TaduJcjOELc"
         }
       ]
     }
