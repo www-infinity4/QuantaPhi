@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T01:01:30.528920Z",
+  "checked_at": "2026-11-23T01:31:14.238706Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "querétaro - necaxa",
+      "query": "fred warner",
       "approx_searches": "2000+",
-      "published_at": "2026-11-23T00:40:00Z",
+      "published_at": "2026-11-23T01:10:00Z",
       "related_news_urls": [
-        "https://www.tudn.com/futbol/liga-mx/queretaro-vs-necaxa-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
-        "https://www.elfutbolero.com.mx/ligamx/sumo-sus-20-puntos-en-diez-partidos-y-desde-octubre-no-hace-uno-mas-si-pierde-con-necaxa-queretaro-cierra-su-cuarto-torneo-seguido-con-20-20261122.html",
-        "https://www.heraldo.mx/ultimo-juego-del-2026-para-los-rayos/"
+        "https://www.vikings.com/news/aaron-jones-levi-drake-rodriguez-excitement-first-game-mexico",
+        "https://www.espn.com/nfl/story/_/id/50535108/san-francisco-49ers-fred-warner-mexican-heritage-dpoy",
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/fred-warner-mexico-city-heritage/1981916/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg8QYEiWHFvvLcWCs9FaLFdOsMXjzU32tNcvbwaF8_SataamCU_YVEXrswjY",
-      "image_credit": "TUDN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-VcZ2fMv3em61Ojhw_cXeV89ycQeUswf_NQXzN86XkdShw2nCkS6qfZzFGc",
+      "image_credit": "Vikings.com",
       "news": [
         {
-          "url": "https://www.tudn.com/futbol/liga-mx/queretaro-vs-necaxa-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
-          "title": "A qué hora y dónde ver el Querétaro vs. Necaxa de la Jornada 17",
-          "publisher": "TUDN",
+          "url": "https://www.vikings.com/news/aaron-jones-levi-drake-rodriguez-excitement-first-game-mexico",
+          "title": "Aaron Jones, Sr. & Levi Drake Rodriguez Share Excitement for Vikings 1st Game in Mexico",
+          "publisher": "Vikings.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg8QYEiWHFvvLcWCs9FaLFdOsMXjzU32tNcvbwaF8_SataamCU_YVEXrswjY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-VcZ2fMv3em61Ojhw_cXeV89ycQeUswf_NQXzN86XkdShw2nCkS6qfZzFGc"
         },
         {
-          "url": "https://www.elfutbolero.com.mx/ligamx/sumo-sus-20-puntos-en-diez-partidos-y-desde-octubre-no-hace-uno-mas-si-pierde-con-necaxa-queretaro-cierra-su-cuarto-torneo-seguido-con-20-20261122.html",
-          "title": "Sumó sus 20 puntos en diez partidos y desde octubre no hace uno más: si pierde con Necaxa, Querétaro cierra su cuarto torneo seguido con 20",
-          "publisher": "El Futbolero México",
+          "url": "https://www.espn.com/nfl/story/_/id/50535108/san-francisco-49ers-fred-warner-mexican-heritage-dpoy",
+          "title": "In Mexico City, 49ers' Fred Warner can represent his heritage and boost DPOY case",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdrPu2iU6-kzW1d01HK5x3KeYITVYqsj8jU0ODbPoEtocz6FqdF1fGJcZ_b50"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ62LlCGc0dpf9Pmn5V9SMBsU1F_q7nB5xIjMeGW62ZYZlVHX4zX7ojk5FlHpo"
         },
         {
-          "url": "https://www.heraldo.mx/ultimo-juego-del-2026-para-los-rayos/",
-          "title": "Último juego del 2026 para los Rayos",
-          "publisher": "El Heraldo de Aguascalientes",
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/fred-warner-mexico-city-heritage/1981916/",
+          "title": "Fred Warner reflects on ‘magnitude' of representing heritage in Mexico City game",
+          "publisher": "NBC Sports Bay Area & California",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6x9bmaPBOXLiWMt5pEHH0LIjLVoXPQtVLVjEl1BgvGQh53ynh0ZmuxXxZaSY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlFbG2_9w1aQXemaw9J4mmSk-EvWTsSqtZ1jWxu178xK7NbgSue7M9wsDVJMY"
         }
       ]
     },
     {
-      "query": "marvel avengers doomsday trailer",
+      "query": "tabla liga mx",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-23T01:10:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17546949/tigres-vs-america-jornada-17-resultado-resumen-goles",
+        "https://www.fubo.tv/news/soccer/tigres-uanl-vs-club-america-donde-ver-transmision-en-vivo-canal-de-tv-y-actualizaciones-21-de-noviembre-de-2026/",
+        "https://www.telemundo.com/deportes/el-pelotazo/video/tigres-vence-al-america-y-se-definen-los-invitados-a-liguilla-el-pelotazo-show-completo-tmvo13247155"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHPpChWVa00diQirZK8Zoejp6NgsqfrFeDMVmDvVsUEokst-nPhhSLao4PMY",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17546949/tigres-vs-america-jornada-17-resultado-resumen-goles",
+          "title": "América sucumbe en el Volcán y pone en riesgo el segundo sitio",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVHPpChWVa00diQirZK8Zoejp6NgsqfrFeDMVmDvVsUEokst-nPhhSLao4PMY"
+        },
+        {
+          "url": "https://www.fubo.tv/news/soccer/tigres-uanl-vs-club-america-donde-ver-transmision-en-vivo-canal-de-tv-y-actualizaciones-21-de-noviembre-de-2026/",
+          "title": "Tigres UANL vs Club América - Dónde ver, transmisión en vivo, canal de TV y actualizaciones (21 de noviembre de 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX_ELG7fsP8BJWKrefdpVHIiGHWbYDHrV-Oxa7Nh3E3qh_80x0NzINvAGILLk"
+        },
+        {
+          "url": "https://www.telemundo.com/deportes/el-pelotazo/video/tigres-vence-al-america-y-se-definen-los-invitados-a-liguilla-el-pelotazo-show-completo-tmvo13247155",
+          "title": "Tigres vence al América y se definen los invitados a Liguilla | El Pelotazo | Show completo",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmh4E8HrMZROY6KXq01z2ie6Rf9Cek_XFhKQmrSS7DY2ARY71CcmSVYKhIsUI"
+        }
+      ]
+    },
+    {
+      "query": "nbc",
       "approx_searches": "1000+",
-      "published_at": "2026-11-23T00:40:00Z",
+      "published_at": "2026-11-23T01:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
-        "https://www.screendaily.com/news/joe-russo-teases-final-avengers-doomsday-trailer-keep-refreshing-your-feed/5222656.article",
-        "https://hypebeast.com/2026/11/marvel-11-part-avengers-doomsday-poster-montage-character-poster-unveiled"
+        "https://www.nytimes.com/2026/11/20/arts/music/bowen-yang-apology-antisemitic-slur-regina-spektor.html",
+        "https://www.tvinsider.com/1305095/michael-rapaport-demands-nbc-fire-bowen-yang-snl-zio-controversy/",
+        "https://variety.com/2026/tv/news/bowen-yang-apologizes-regina-spektor-antisemitic-slur-1236954304/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9JsH5DqLinBYxLKdo0Fl1SRnuv13v5rqt-uKgdkfVmcqPMUq8N9ZA8mlfaI",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
-          "title": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9JsH5DqLinBYxLKdo0Fl1SRnuv13v5rqt-uKgdkfVmcqPMUq8N9ZA8mlfaI"
-        },
-        {
-          "url": "https://www.screendaily.com/news/joe-russo-teases-final-avengers-doomsday-trailer-keep-refreshing-your-feed/5222656.article",
-          "title": "Joe Russo teases final ‘Avengers: Doomsday’ trailer: “Keep refreshing your feed”",
-          "publisher": "Screen Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8sB4BmDR41vui_ar50dscC3SQh0vmQ6jKBehHbTVfhuEuAzdbeIIwrs5Dbcw"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/marvel-11-part-avengers-doomsday-poster-montage-character-poster-unveiled",
-          "title": "Marvel Drops Sprawling 11-Part 'Avengers: Doomsday' Characters Poster Montage",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvHLkeweR_EvrQItqf69gBfEOO8U8819mP2PCmU_3pvcvM1ioPsyteoltOkQ8"
-        }
-      ]
-    },
-    {
-      "query": "lowes black friday deals",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T00:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/",
-        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
-        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlubKhbI9wMA_SPUakW7ywsOgk53ANuT9_ZVhwlZABcaa8tWNYlg7nSTy-VxE",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIjXQLVADK4tc-XbEn-XEeRZhK4lsjIEDmJnVaPqbfbTJFDULGM1LTI_D7V6o",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/",
-          "title": "Black Friday Deals Are Already Rolling In — Here Are the Best | Reviews by Wirecutter",
+          "url": "https://www.nytimes.com/2026/11/20/arts/music/bowen-yang-apology-antisemitic-slur-regina-spektor.html",
+          "title": "Bowen Yang Apologizes for Using an Antisemitic Slur on His Podcast",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlubKhbI9wMA_SPUakW7ywsOgk53ANuT9_ZVhwlZABcaa8tWNYlg7nSTy-VxE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIjXQLVADK4tc-XbEn-XEeRZhK4lsjIEDmJnVaPqbfbTJFDULGM1LTI_D7V6o"
         },
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
-          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 shopping event of the year",
-          "publisher": "Yahoo",
+          "url": "https://www.tvinsider.com/1305095/michael-rapaport-demands-nbc-fire-bowen-yang-snl-zio-controversy/",
+          "title": "Michael Rapaport Makes Bold Demand of NBC After Bowen Yang Controversy",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZGTas_6FHBDYzV0xTORb3bZMLTC0BPO8UnhUB51AjLKLvSIKxgwYfrTE1n2w"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22",
-          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
-          "publisher": "CNN",
+          "url": "https://variety.com/2026/tv/news/bowen-yang-apologizes-regina-spektor-antisemitic-slur-1236954304/",
+          "title": "Bowen Yang Apologizes for Calling Regina Spektor an Antisemitic Slur, Didn’t Know It Was ‘Popularized by Far-Right Movements’",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9OfNNEeQmKmxQHlYHl4nLi2mWK43yNMsTmtBe-ck7auKx71srG33l3uDsRg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHqXxKGgqLm6fJZITFVVTFVlN65ADkzJ6XU4dGC9rtE4IuGOjrOn1i2geA6UA"
         }
       ]
     },
     {
-      "query": "penn state volleyball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T00:40:00Z",
+      "query": "49ers game today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T01:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-sports/story/_/id/50502503/penn-state-volleyball-big-ten-tournament-kennedy-martin-alexis-stucky",
-        "https://sports.yahoo.com/articles/postseason-volleyball-back-know-nittany-193518083.html",
-        "https://www.espnlacrosse.com/2026/11/20/alexis-stucky-kennedy-martin-and-volleyballs-riskiest-reunion/"
+        "https://sports.yahoo.com/articles/vikings-fans-taunt-49ers-faithful-004815472.html",
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/live-updates-score-highlights-minnesota-vikings-2/1981025/",
+        "https://nypost.com/2026/11/20/sports/49ers-fan-brawls-earning-faithful-dangerous-reputation/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7q7TRwSQvNnvehR5qGLDy-l0mHsoHyTSaksGuTpwtroJc8abMyeUCG_BfBwc",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPQQ26uhyzw0K7zPq7FFI1GcDpr45lRhgtDlvVNom007s7OtcJW7axiAxN8Ew",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/vikings-fans-taunt-49ers-faithful-004815472.html",
+          "title": "Vikings fans taunt 49ers Faithful with provocative Mexico City chant",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPQQ26uhyzw0K7zPq7FFI1GcDpr45lRhgtDlvVNom007s7OtcJW7axiAxN8Ew"
+        },
+        {
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/live-updates-score-highlights-minnesota-vikings-2/1981025/",
+          "title": "49ers vs. Vikings live updates: Brock Purdy faces top NFL defense in Mexico City",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgajnsc3NsRpX16zopcob06aOn4-TKI8EZDFeV-dIev8MI4bc6P_Pwn4RhWWk"
+        },
+        {
+          "url": "https://nypost.com/2026/11/20/sports/49ers-fan-brawls-earning-faithful-dangerous-reputation/",
+          "title": "49ers fan brawls are earning the ‘Faithful’ a dangerous reputation problem",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9_6MuP0MCFcZjyhw4MIGf1Tx7FDURFVdI2IXBLcnE9isDscTEqd2IN8s2VwI"
+        }
+      ]
+    },
+    {
+      "query": "vikings game today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T01:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+        "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
+        "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-sports/story/_/id/50502503/penn-state-volleyball-big-ten-tournament-kennedy-martin-alexis-stucky",
-          "title": "Alexis Stucky, Kennedy Martin and volleyball's riskiest reunion",
+          "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
+          "title": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7q7TRwSQvNnvehR5qGLDy-l0mHsoHyTSaksGuTpwtroJc8abMyeUCG_BfBwc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/postseason-volleyball-back-know-nittany-193518083.html",
-          "title": "Postseason Volleyball is Back: What to Know about the Nittany Lions",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.startribune.com/minnesota-vikings-san-francisco-49ers-sunday-night-football-mexico-city-kirk-cousins-kevin-oconnell/601922603",
+          "title": "Back with the Vikings, Kirk Cousins is trusting Kevin O’Connell more than ever",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqN0T19gaiBC6E8rFlPH_X2US7AB_qNH_H4otRX3hdtdqM9tGLQft5gGN6xc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuksXFiLBf2R-FFshU9lDz_HLK4UVR06vLwZ1uwHUNslsMBodkLM9M1Rus8Og"
         },
         {
-          "url": "https://www.espnlacrosse.com/2026/11/20/alexis-stucky-kennedy-martin-and-volleyballs-riskiest-reunion/",
-          "title": "Alexis Stucky, Kennedy Martin and volleyball’s riskiest reunion",
-          "publisher": "ESPN La Crosse 105.5",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThXIoYphlPwr8mvvCBMba8Ce2I-aDNVt5k7uTsJfYlh3_5G-hwxPQsPGKeDc"
-        }
-      ]
-    },
-    {
-      "query": "lightning game",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T00:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
-        "https://www.nhl.com/sabres/news/buffalo-sabres-tampa-bay-lightning-recap-highlights-x9457",
-        "https://sports.yahoo.com/articles/buffalo-sabres-vs-tampa-bay-182921553.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCYPJyuzcTlcVYX1k2uyUvVlZSxVoxOlDVwEyidExjsXJzBhAbsA5zpzD8Woo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
-          "title": "Noah Ostlund lights the lamp for Sabres",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCYPJyuzcTlcVYX1k2uyUvVlZSxVoxOlDVwEyidExjsXJzBhAbsA5zpzD8Woo"
-        },
-        {
-          "url": "https://www.nhl.com/sabres/news/buffalo-sabres-tampa-bay-lightning-recap-highlights-x9457",
-          "title": "At the Horn | Sabres 6 - Lightning 2",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5M9BoMJcL3KssAEQIEU7TGQM1LVYJuZWkd2cZvmlqlmC2u90qt7gP4tHpSoc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/buffalo-sabres-vs-tampa-bay-182921553.html",
-          "title": "Buffalo Sabres vs. Tampa Bay Lightning - Lineups, Injury Updates, And Game Notes",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjQZYczhZC7TFn6SWwALy4otxt4AEogyT5mNL0TbbS8FHje_HAHKTXmwF5k8Y"
-        }
-      ]
-    },
-    {
-      "query": "celtics vs warriors",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T00:30:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
-        "https://sports.yahoo.com/articles/watch-celtics-vs-warriors-live-003000245.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
-          "title": "Celtics at Warriors: Boston looks to rebound after last-second loss",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/watch-celtics-vs-warriors-live-003000245.html",
-          "title": "How to watch Celtics vs Warriors: Live stream NBA, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5QJH__zBOomOOaKXiLtsm_LRZQzaU1RhUiPWj2uvqu4ZnOMdV86V14z2dQc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available",
-          "title": "Walter Clayton Jr. (knee) upgraded to available",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdeVYQf4iF86Y_L9YVG1ymrUDXKA64qT1eN5wcI3CESBaARwcNySVqC-hPUig"
-        }
-      ]
-    },
-    {
-      "query": "ja'quan mcmillian",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T00:30:00Z",
-      "related_news_urls": [
-        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/22/nfl-broncos-likely-lose-jaquan-mcmillian-on-open-market/92833883007/",
-        "https://www.kare11.com/video/sports/locked-on/lo-denver/broncos-show/jaquan-mcmillian-earning-major-role-in-broncos-super-bowl-window/535-88f849f1-708f-4cbd-a753-7385f454d512",
-        "https://denversports.com/watch/what-more-does-jaquan-mcmillian-have-to-do-for-the-broncos-to-pay-him/01a1e6fb-ff48-8008-c00f-31057983fd19"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB8mUkhvYq99hN1mSodF8IPaQnEzJfpWvQ06rKdZCGHxMCTTPkbuWgdNTJGN8",
-      "image_credit": "Broncos Wire",
-      "news": [
-        {
-          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/22/nfl-broncos-likely-lose-jaquan-mcmillian-on-open-market/92833883007/",
-          "title": "Broncos seem likely to lose Ja'Quan McMillian if they let him test open market",
-          "publisher": "Broncos Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB8mUkhvYq99hN1mSodF8IPaQnEzJfpWvQ06rKdZCGHxMCTTPkbuWgdNTJGN8"
-        },
-        {
-          "url": "https://www.kare11.com/video/sports/locked-on/lo-denver/broncos-show/jaquan-mcmillian-earning-major-role-in-broncos-super-bowl-window/535-88f849f1-708f-4cbd-a753-7385f454d512",
-          "title": "Ja’Quan McMillian Earning MAJOR Role in Broncos’ Super Bowl window",
-          "publisher": "kare11.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVnVlHhgthqFo3ijcdPnI8CKYfPVvI-idJt5F1sBEHgVaS1CS8mkyNFgTjOok"
-        },
-        {
-          "url": "https://denversports.com/watch/what-more-does-jaquan-mcmillian-have-to-do-for-the-broncos-to-pay-him/01a1e6fb-ff48-8008-c00f-31057983fd19",
-          "title": "What more does Ja'Quan Mcmillian have to do for the Broncos to pay him?",
-          "publisher": "Denver Sports 104.3 The Fan",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlsq334g97zbwXeVku-uHxJRW-lV60-CdV7NwfsC0k8oRMH8jXwUrdjqEy2Nk"
-        }
-      ]
-    },
-    {
-      "query": "riley moss contract",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T00:30:00Z",
-      "related_news_urls": [
-        "https://www.49ers.com/video/kyle-shanahan-provides-injury-updates-final-preparations-ahead-of-mexico-city",
-        "https://www.nfl.com/videos/titans-vs-cowboys-highlights-week-11",
-        "https://www.49ers.com/video/buckner-juszczyk-discuss-team-bonding-recovery-process-and-prep-for-vikings-unique-defense"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLH9gFGJXX7xrSrCGTLBeP3-tIzQiCSOlGtOS10LBt_j0iIMDZU3OEk7GzPU",
-      "image_credit": "San Francisco 49ers",
-      "news": [
-        {
-          "url": "https://www.49ers.com/video/kyle-shanahan-provides-injury-updates-final-preparations-ahead-of-mexico-city",
-          "title": "Kyle Shanahan Provides Injury Updates, Final Preparations Ahead of Mexico City",
-          "publisher": "San Francisco 49ers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLH9gFGJXX7xrSrCGTLBeP3-tIzQiCSOlGtOS10LBt_j0iIMDZU3OEk7GzPU"
-        },
-        {
-          "url": "https://www.nfl.com/videos/titans-vs-cowboys-highlights-week-11",
-          "title": "Titans vs. Cowboys highlights | Week 11",
+          "url": "https://www.nfl.com/news/kirk-cousins-slow-down-blinders-on-whirlwind-vikings-return",
+          "title": "Kirk Cousins trying to 'slow down,' keep blinders on amid whirlwind Vikings return: 'Ignorance is bliss'",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaJhHnTSa_KWJIhu9MkUvKCq5ShJfsuKQd6GrzjOoyMbFX41gXsOeLG5-zBx8"
-        },
-        {
-          "url": "https://www.49ers.com/video/buckner-juszczyk-discuss-team-bonding-recovery-process-and-prep-for-vikings-unique-defense",
-          "title": "Buckner, Juszczyk Discuss Team Bonding, Recovery Process, and Prep for Vikings Unique Defense",
-          "publisher": "San Francisco 49ers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiAKlw9asJuqQxgJd-_7BkhhjkbW36JxfHwIXq4ynGQK3EABHC1RuvUcIvtHo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl78E3Jwj1a0ysGKIksP75MTowqvh8J38ObSn9ryf6myTFGg-JeK1o1XHqamg"
         }
       ]
     },
     {
-      "query": "steve campbell",
+      "query": "jordan mason",
       "approx_searches": "500+",
-      "published_at": "2026-11-23T00:30:00Z",
+      "published_at": "2026-11-23T01:00:00Z",
       "related_news_urls": [
-        "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
-        "https://www.footballscoop.com/2026/11/22/steve-campbell-returns-for-another-run-at-central-arkansas",
-        "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/"
+        "https://bsinews.id/en/aaron-jones-week-eleven-fantasy",
+        "https://www.fantasypros.com/nfl/notes/499799/jordan-mason-2026-week-11-outlook.php",
+        "https://sports.yahoo.com/articles/fantasy-football-vikings-wr-start-222519345.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg",
-      "image_credit": "University of Central Arkansas Athletics",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTVtY2-5MAyK24Zc1KRJEwkNitveeCPa3a7HEBM1y4Jw-aXr-RXEraBxYhxo",
+      "image_credit": "bsinews.id",
       "news": [
         {
-          "url": "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
-          "title": "Steve Campbell Returns to Central Arkansas as Head Football Coach",
-          "publisher": "University of Central Arkansas Athletics",
+          "url": "https://bsinews.id/en/aaron-jones-week-eleven-fantasy",
+          "title": "Fantasy Analysts Urge Managers to Bench Aaron Jones in Week 11",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtTVtY2-5MAyK24Zc1KRJEwkNitveeCPa3a7HEBM1y4Jw-aXr-RXEraBxYhxo"
         },
         {
-          "url": "https://www.footballscoop.com/2026/11/22/steve-campbell-returns-for-another-run-at-central-arkansas",
-          "title": "Steve Campbell returns for another run at Central Arkansas",
-          "publisher": "FootballScoop.com",
+          "url": "https://www.fantasypros.com/nfl/notes/499799/jordan-mason-2026-week-11-outlook.php",
+          "title": "Jordan Mason Week 11 Outlook - Vikings at 49ers",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhceW9ForGUJev0aqV6btEmfA701WtGyYETsFWRojDCBKcM2POsXXnf18yFw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0dQWSR-8XSdXssbA7tJMbKoDWFnoBhpBAcK1EWkXRgOVl9Og6nkWLa2mhtHI"
         },
         {
-          "url": "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/",
-          "title": "UCA names Steve Campbell next head football coach",
-          "publisher": "FOX16.com",
+          "url": "https://sports.yahoo.com/articles/fantasy-football-vikings-wr-start-222519345.html",
+          "title": "Fantasy Football: Which Vikings WR should you start in Week 11?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXvDw-RhOaoyyxSTNgHKhLWPWMhOj8chrLP79R9DeyZ4qbUHNJlX0Zfj1WHM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIvDouM3eBopV2-icumCV74aCUgczlXqAzYbt8lyRPYGwpTeHW7k2BIb3WezQ"
         }
       ]
     },
     {
-      "query": "the altruists cast",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T00:30:00Z",
+      "query": "rachael leigh cook",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:00:00Z",
       "related_news_urls": [
-        "https://www.netflix.com/tudum/articles/the-altruists-cast-guide",
-        "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
-        "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner"
+        "https://www.yahoo.com/entertainment/tv/articles/rachael-leigh-cook-plays-twins-212605934.html",
+        "https://rissiwrites.com/2026/11/double-booked-for-the-holidays-familiar-star-in-dual-role.html",
+        "https://www.aol.com/articles/writer-brisa-carleton-shares-her-210448000.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgShiITdwsHan1wh5bfeDu96KLmAofftale7duP5BuEnpkrkm4cgdAfNv5M5M",
-      "image_credit": "Netflix",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsjIo7fdSOVHChyNs6TRDx5HoqR0drk8M2_judGKloIihWrJ5SYPK0Yf_2oIo",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.netflix.com/tudum/articles/the-altruists-cast-guide",
-          "title": "Who Is in The Altruists Cast? Meet the Unlikely Billionaires",
-          "publisher": "Netflix",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/rachael-leigh-cook-plays-twins-212605934.html",
+          "title": "Rachael Leigh Cook Plays Twins In Her New Hallmark Movie. I’m Surprised At What Weirded Her Out",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgShiITdwsHan1wh5bfeDu96KLmAofftale7duP5BuEnpkrkm4cgdAfNv5M5M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsjIo7fdSOVHChyNs6TRDx5HoqR0drk8M2_judGKloIihWrJ5SYPK0Yf_2oIo"
         },
         {
-          "url": "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
-          "title": "Where is Caroline Ellison now? She's out of prison and landed a nonprofit job",
-          "publisher": "Business Insider",
+          "url": "https://rissiwrites.com/2026/11/double-booked-for-the-holidays-familiar-star-in-dual-role.html",
+          "title": "‘DOUBLE BOOKED FOR THE HOLIDAYS’: SEE LIKABLE STAR PLAY IN A UNIQUE DUAL ROLE",
+          "publisher": "RissiWrites.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKDFP6fEjjKXxYr0mb0l83sp386D8Lfs6Us7pjXOo9eDMRD4NMbBPAWKP2GA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBE3x7Cvd436xedN1wajYRo7JoXpXY5mSf-cSLQI_uOV7fvuf_ODHEkq0PMM4"
         },
         {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner",
-          "title": "The Altruists review – two of TV’s best actors light up this chaotic crypto tale",
-          "publisher": "The Guardian",
+          "url": "https://www.aol.com/articles/writer-brisa-carleton-shares-her-210448000.html",
+          "title": "Writer Brisa Carleton Shares Her Excitement Over Rachael Leigh Cook Joining Her First Film",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNwzeb6SFM2QYA965SNpkBXmOzBftFmeayoQcphEej4Z76ZXExR2R1vKZlV0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzo13xdJSR-7PZD_3jxumQUCbViM4wfMOki5a6mFElP3D0w372nSSfmx8-2zg"
+        }
+      ]
+    },
+    {
+      "query": "dea",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T01:00:00Z",
+      "related_news_urls": [
+        "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
+        "https://www.cbsnews.com/news/louisiana-nitazenes-bust/",
+        "https://www.wbrz.com/news/ebrso-dea-dismantle-synthetic-opioid-lab-creating-nitazene-a-first-in-the-us/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSOffl3d0gRzGePfTz94cidyko-RwVSTNE6sEWIkR5LK2NQMpISNndJtQFDPo",
+      "image_credit": "DEA (.gov)",
+      "news": [
+        {
+          "url": "https://www.dea.gov/press-releases/2026/11/20/ebrso-and-dea-dismantle-large-scale-nitazene-laboratory-baton-rouge",
+          "title": "EBRSO and DEA Dismantle Large-scale Nitazene Laboratory in Baton Rouge",
+          "publisher": "DEA (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSOffl3d0gRzGePfTz94cidyko-RwVSTNE6sEWIkR5LK2NQMpISNndJtQFDPo"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/louisiana-nitazenes-bust/",
+          "title": "They thought it was a fentanyl lab. It was nitazenes — synthetic opioids up to 80 times more potent.",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFWi4Z_lix-BXGBAKOS1aXrMRlpgYB9p26w16uETxZOlT3YCd4xRyFN0jcP0"
+        },
+        {
+          "url": "https://www.wbrz.com/news/ebrso-dea-dismantle-synthetic-opioid-lab-creating-nitazene-a-first-in-the-us/",
+          "title": "EBRSO, DEA dismantle synthetic opioid lab creating nitazene, a first in the US",
+          "publisher": "WBRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXbvA4mOX8QTopkXiffMMItEYsY9cf8ZmNkVkysY26at4NESp9R2ErgDmoAXM"
+        }
+      ]
+    },
+    {
+      "query": "chivas de guadalajara vs cruz azul standings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T00:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/watch-guadalajara-vs-cruz-azul-220000760.html",
+        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-cd-guadalajara-v-cruz-azul/bltfc34aa02ed105402",
+        "https://www.fubo.tv/news/soccer/guadalajara-vs-cruz-azul-where-to-watch-stream-info-tv-channel-and-live-updates-november-22-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7dKN_VCiAem-6jb_X8ZRaoC9-wcx8Iw7fgdGxXGmS_RNEvH2CwtjTh3CUH0c",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/watch-guadalajara-vs-cruz-azul-220000760.html",
+          "title": "How to watch Guadalajara vs Cruz Azul: Live stream Liga MX, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7dKN_VCiAem-6jb_X8ZRaoC9-wcx8Iw7fgdGxXGmS_RNEvH2CwtjTh3CUH0c"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-cd-guadalajara-v-cruz-azul/bltfc34aa02ed105402",
+          "title": "Watch CD Guadalajara vs Cruz Azul live today: Who is broadcasting the match on TV and via live stream?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrQUvYaSor_2LEzD9itHTcwiz-pZzsCO8F1D3MSAbtGu89h3dpOL15uAq5kzM"
+        },
+        {
+          "url": "https://www.fubo.tv/news/soccer/guadalajara-vs-cruz-azul-where-to-watch-stream-info-tv-channel-and-live-updates-november-22-2026/",
+          "title": "Guadalajara vs Cruz Azul - Where to Watch, Stream Info, TV Channel, and Live Updates (November 22, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTizh1xhgEE4BuKSVyrYtRjxiMVK4VzUzM87Yct6x-1YM3h5Bmj3Z7okiD5ZaE"
+        }
+      ]
+    },
+    {
+      "query": "cam skattebo",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T00:50:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
+        "https://sports.yahoo.com/articles/lions-rookie-defensive-end-facing-151225387.html",
+        "https://www.fox2detroit.com/video/fmc-5cn5ish0wi3ode1z"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0pzgw1VqRr_rpbcIm7LyetMVYAHW0jKrbsXXcV3F71sqhv16Zo46C5ewvH0",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/aidan-hutchinson-lions-season-ending-injury-hold-down-the-fort",
+          "title": "Aidan Hutchinson's message to Lions after season-ending injury: 'Hold down the fort til I’m back, boys'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj0pzgw1VqRr_rpbcIm7LyetMVYAHW0jKrbsXXcV3F71sqhv16Zo46C5ewvH0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lions-rookie-defensive-end-facing-151225387.html",
+          "title": "Lions Rookie Defensive End Facing Pressure After Aidan Hutchinson Injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTE8fe01f-__OD8aKhe5LeZdDFde_430dk7c4X4_qXnm90d7cBY5NB_svaOaUs"
+        },
+        {
+          "url": "https://www.fox2detroit.com/video/fmc-5cn5ish0wi3ode1z",
+          "title": "Kelvin Sheppard on life without Hutchinson, Hassanein, and the return of Kerby Joseph",
+          "publisher": "FOX 2 Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmXWgcG9IcqmyktuazLbubqO0stnRCgJzhpsc1pHNsJqSj8XMH7rRX9WE77rI"
         }
       ]
     }
