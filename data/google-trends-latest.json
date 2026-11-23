@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T11:31:15.650816Z",
+  "checked_at": "2026-11-23T12:01:35.678128Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "michigan lottery",
+      "query": "mstr stock",
       "approx_searches": "100+",
-      "published_at": "2026-11-23T11:10:00Z",
+      "published_at": "2026-11-23T11:40:00Z",
       "related_news_urls": [
-        "https://www.freep.com/story/news/local/2026/11/22/michigan-lottery-results-sunday-november-22-2026/92920790007/",
-        "https://www.detroitnews.com/story/news/local/wayne-county/2026/11/20/wayne-county-man-wins-6-million-lottery-prize-extraordinaire/92879477007/",
-        "https://midmichigannow.com/news/local/wayne-county-man-wins-6-million-from-scratch-off-plans-to-retire"
+        "https://finance.yahoo.com/markets/crypto/articles/mstr-stock-jumps-premarket-bitcoin-094438906.html",
+        "https://simplywall.st/stocks/us/software/nasdaq-mstr/strategy/news/strategy-mstr-stock-looks-cheap-relative-to-book-value",
+        "https://pluang.com/en/news-feed/apa-yang-sebenarnya-anda-miliki-saat-membeli-saham-strategy-mstr"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr69yZWzpdCy3y1wjGNDPEVpvesXRJy1_k-EMz5sbCR2y8z0VUr3_-pLT7DjI",
-      "image_credit": "Detroit Free Press",
-      "news": [
-        {
-          "url": "https://www.freep.com/story/news/local/2026/11/22/michigan-lottery-results-sunday-november-22-2026/92920790007/",
-          "title": "Michigan Lottery Daily 3, Daily 4 results for Nov. 22, 2026",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr69yZWzpdCy3y1wjGNDPEVpvesXRJy1_k-EMz5sbCR2y8z0VUr3_-pLT7DjI"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/news/local/wayne-county/2026/11/20/wayne-county-man-wins-6-million-lottery-prize-extraordinaire/92879477007/",
-          "title": "Michigan lottery winner calls boss to quit after $6 million win",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUESCysqkFLT5XTreXM-5jC_EyiL9CrYj1mWm0_RHDjisWEJMl8-preeBcPqQ"
-        },
-        {
-          "url": "https://midmichigannow.com/news/local/wayne-county-man-wins-6-million-from-scratch-off-plans-to-retire",
-          "title": "Wayne County man wins $6 million from scratch-off, plans to retire",
-          "publisher": "WSMH",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFNXw710rEnl9sacxYTAKvrRgaV0MT5nnmGQ-7knxOO1ulmjZ4n66e48S7APQ"
-        }
-      ]
-    },
-    {
-      "query": "sofi stock",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T11:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/sofi-stock-slumps-52-week-015314888.html",
-        "https://pro.thestreet.com/trade-ideas/im-not-buying-more-sofi-until-he-does",
-        "https://kalkinemedia.com/us/news/top-stories/why-is-sofi-technologies-nasdaqsofi-attracting-attention-after-a-rating-upgrade"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiEwPZCQUIXpIaPCcDQxf8PV4V2Sq3GDfx2OMRNv5npsOQx_Fx_feiJxofiuE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1rGeRL8J-nkWCMwviMnprNH-3o1TGXYws0ZJ8gFwKASMzeKz-LmS-OOmCYYY",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sofi-stock-slumps-52-week-015314888.html",
-          "title": "SOFI Stock Slumps To 52-Week Lows: Retail Blames Anthropic For Being A Liquidity ‘Sponge’",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/mstr-stock-jumps-premarket-bitcoin-094438906.html",
+          "title": "MSTR Stock Jumps In Premarket As Bitcoin Reclaims $61K After Brutal Nasdaq Sell-Off",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiEwPZCQUIXpIaPCcDQxf8PV4V2Sq3GDfx2OMRNv5npsOQx_Fx_feiJxofiuE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1rGeRL8J-nkWCMwviMnprNH-3o1TGXYws0ZJ8gFwKASMzeKz-LmS-OOmCYYY"
         },
         {
-          "url": "https://pro.thestreet.com/trade-ideas/im-not-buying-more-sofi-until-he-does",
-          "title": "I’m Not Buying More SoFi Until He Does",
-          "publisher": "RealMoney Pro",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_XC45GS0WZazi98uqyV3PshPaycvvi5Y6ykf9rKJj52358WzZ-mY3pdocGuM"
-        },
-        {
-          "url": "https://kalkinemedia.com/us/news/top-stories/why-is-sofi-technologies-nasdaqsofi-attracting-attention-after-a-rating-upgrade",
-          "title": "Why Is SoFi Technologies (NASDAQ:SOFI) Attracting Attention After A Rating Upgrade?",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRclnmZMBJqpKTtlxQQSj5_qLmNmVdrOUBH5Cnc1_YPWqz_BoFgUJj3We9Ii-E"
-        }
-      ]
-    },
-    {
-      "query": "space exploration technologies corp.",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T11:00:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/markets/tech/26/11/63518673/grant-cardone-says-elon-musk-buy-nvidia-bring-jensen-huang-back",
-        "https://finance.yahoo.com/markets/stocks/articles/could-spacex-ultimate-winner-nvidia-092002478.html",
-        "https://simplywall.st/stocks/us/telecom/nasdaq-spcx/space-exploration-technologies/news/space-exploration-technologies-spcx-gets-a-new-hiring-twist"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUWbdMD3lYcRJO7dws8OSbDSzkrkpcCTcp8F35UkefLznkiBtUrFcZU2ofK9M",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/markets/tech/26/11/63518673/grant-cardone-says-elon-musk-buy-nvidia-bring-jensen-huang-back",
-          "title": "Grant Cardone Says Elon Musk Could Buy 50% of Nvidia and Bring Jensen Huang Back, Days After SpaceX CEO’s",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUWbdMD3lYcRJO7dws8OSbDSzkrkpcCTcp8F35UkefLznkiBtUrFcZU2ofK9M"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/could-spacex-ultimate-winner-nvidia-092002478.html",
-          "title": "Could SpaceX Be the Ultimate Winner of the Nvidia-Jensen Huang Split?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk4yi4ocEEPnduV7exfJcvpIAB7gsIcfYafTqw4SPrtsL3gJOwoOqm0y1sMmk"
-        },
-        {
-          "url": "https://simplywall.st/stocks/us/telecom/nasdaq-spcx/space-exploration-technologies/news/space-exploration-technologies-spcx-gets-a-new-hiring-twist",
-          "title": "Space Exploration Technologies (SPCX) Gets A New Hiring Twist As Musk Eyes Top AI Talent",
+          "url": "https://simplywall.st/stocks/us/software/nasdaq-mstr/strategy/news/strategy-mstr-stock-looks-cheap-relative-to-book-value",
+          "title": "Strategy (MSTR) Stock Looks Cheap Relative To Book Value",
           "publisher": "Simply Wall St",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAknS9lKX6X7xyVKTQ36vJlJ0tR_xZvR3LzI6qjQ5n8aM3Q_Ft-AzZ-6rVkqE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT31Rti5XFsJeDF_0fg-0Ni4uUcsy6HEBr_28FEkJkZPhs5miEzn4xyeD-xJyE"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/apa-yang-sebenarnya-anda-miliki-saat-membeli-saham-strategy-mstr",
+          "title": "Strategy stock reflects leveraged Bitcoin holdi...",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0D6vXHRrYrRq0-0PMY0vPb_lIX0TcKSt6ZgY_ZFJWmcSd4cI1A_xJQ4OgqvU"
         }
       ]
     },
     {
-      "query": "cbs sports top 25 basketball prediction",
+      "query": "victoria broderick",
       "approx_searches": "100+",
-      "published_at": "2026-11-23T11:00:00Z",
+      "published_at": "2026-11-23T11:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
-        "https://www.cbssports.com/college-basketball/news/tomorrows-top-25-today-houston-no-1-duke-college-basketball-rankings/",
-        "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/"
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-indiana.html",
+        "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-missouri-proposition-a-2025-congressional-redistricting-map.html",
+        "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0RJjv3Dx9KqIQKbF2mzI987R7uiCYv0o39TLRMNAhlLPQseN4sZ36i3-HKQs",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
-          "title": "Men's college basketball Power Rankings: Duke drops, Kansas is new No. 1",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/tomorrows-top-25-today-houston-no-1-duke-college-basketball-rankings/",
-          "title": "Tomorrow's Top 25 Today: Houston is new No. 1, Duke plummets in college basketball rankings prediction",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPOOMIOlxiSQnjZBbYddt18cbC0P9ZtEmi42hKsyebNqGcTDMBGD0bCQiL8X4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
-          "title": "AP Top 25: Michigan State rises to No. 2, LSU replaces Kentucky in college basketball rankings",
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-indiana.html",
+          "title": "Indiana Election Results",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWv6OvUUjjVcJgdIIPMp2FCccTnSitOrE6prsQ47SdiRniCmpZRJgYk-ORjlA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0RJjv3Dx9KqIQKbF2mzI987R7uiCYv0o39TLRMNAhlLPQseN4sZ36i3-HKQs"
+        },
+        {
+          "url": "https://www.nytimes.com/interactive/2026/11/03/us/elections/results-missouri-proposition-a-2025-congressional-redistricting-map.html",
+          "title": "Missouri Proposition A Election Results: 2025 Congressional Redistricting Map",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMXCgXjowfq1B2HoRq1ymhxqB9AeUzocOLaJ53sl_nMGbF9Sd5w-cL-EKejI"
+        },
+        {
+          "url": "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/",
+          "title": "DesJarlais concedes Tennessee 4th Congressional District to Democrat Victoria Broderick",
+          "publisher": "Tennessee Lookout",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGQt0JcXuAVXrPcYqpKDKpo-MxBxt1i6mDf1s_T8prO4unBofYdtLxJoYPkY"
         }
       ]
     },
     {
-      "query": "weather new york",
+      "query": "india",
       "approx_searches": "100+",
-      "published_at": "2026-11-23T11:00:00Z",
+      "published_at": "2026-11-23T11:40:00Z",
       "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
-        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
-        "https://www.wdsu.com/article/low-tropical-development-western-atlantic-florida/74495897"
+        "https://www.bloomberg.com/news/articles/2026-11-23/india-pledges-1-61-billion-to-nepal-as-china-courts-kathmandu",
+        "https://www.reuters.com/world/asia-pacific/nepal-pm-balendra-shah-visit-india-meet-modi-2026-11-20/",
+        "https://www.ft.com/content/c2626635-ed45-492a-a300-5972f2db9fa9?syn-25a6b1a6=1"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt0GwV5LSqTCZuyfSW9_jG0sRHcCJh7gn4lIFb4GNycKkzfsXienwJp6o1kxU",
-      "image_credit": "The Boston Globe",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRETr6DyjL8JkO7HrENm5WFlcI6DHb4bRsgQqspRQc_GRPKMjBfmzI4JBYAlQ",
+      "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
-          "title": "Quick-hitting coastal storm brings heavy, windswept rain into New England. Our next system tracks closer to Thanksgiving.",
-          "publisher": "The Boston Globe",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/india-pledges-1-61-billion-to-nepal-as-china-courts-kathmandu",
+          "title": "India Pledges $1.61 Billion to Nepal as China Courts Kathmandu",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt0GwV5LSqTCZuyfSW9_jG0sRHcCJh7gn4lIFb4GNycKkzfsXienwJp6o1kxU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRETr6DyjL8JkO7HrENm5WFlcI6DHb4bRsgQqspRQc_GRPKMjBfmzI4JBYAlQ"
         },
         {
-          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
-          "title": "East Coast storm could disrupt holiday travel after battering Florida",
+          "url": "https://www.reuters.com/world/asia-pacific/nepal-pm-balendra-shah-visit-india-meet-modi-2026-11-20/",
+          "title": "Nepal PM Balendra Shah to visit India, meet Modi",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh5-Rt94omzPfB9-pJ_IsFBrugnHlAVnMZ-lTk1oOP9Z0jICmUOUKMY3q7h98"
+        },
+        {
+          "url": "https://www.ft.com/content/c2626635-ed45-492a-a300-5972f2db9fa9?syn-25a6b1a6=1",
+          "title": "Nepal’s rapper-turned-PM seals aid deal with India’s Narendra Modi",
+          "publisher": "Financial Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvx1c1OFBuyBTp1ms3uQUR7aDVPmT1-pGCWVAblw-LrLvcSvW4AZ8UdXH3D2w"
+        }
+      ]
+    },
+    {
+      "query": "bernie sanders",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T11:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/hakeem-jeffries-trump-democrats-healthcare/",
+        "https://thehill.com/policy/healthcare/6231776-democrats-expand-medicare-coverage/",
+        "https://www.theguardian.com/us-news/2026/nov/22/hakeem-jeffries-democrats-agenda"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnsKT44n952Ree96a_gwCaZT6asBb9-LsDMuXKxy8nqsPX9CK9pvcJefL2g0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/hakeem-jeffries-trump-democrats-healthcare/",
+          "title": "Hakeem Jeffries outlines healthcare areas where Democrats \"can explore coming together\" with Trump",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfnsKT44n952Ree96a_gwCaZT6asBb9-LsDMuXKxy8nqsPX9CK9pvcJefL2g0"
+        },
+        {
+          "url": "https://thehill.com/policy/healthcare/6231776-democrats-expand-medicare-coverage/",
+          "title": "Democrats want ‘Medicare for More.’ Then comes the hard part",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgtUDxUbfDLLectkzngopiAxvzFfzKAvMEzNf6JrHrwXdGdB99JwsX5dQMAlQ"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/22/hakeem-jeffries-democrats-agenda",
+          "title": "Hakeem Jeffries willing to cross political aisle to work on Democrats’ agenda",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvLOoszs95r31Tg9OGWMt8NUURE7CyPjXjrGf166za8EFyatSLh4kbKrgRGMU"
+        }
+      ]
+    },
+    {
+      "query": "orcl stock",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/larry-ellison-falls-out-of-top-10-billionaire-ranking-as-oracle-stock-hits-34-month-low/",
+        "https://www.moomoo.com/news/post/1005060008/no-fear-even-if-ai-data-center-business-drops-to",
+        "https://finance.yahoo.com/markets/stocks/articles/biggest-fear-around-oracle-could-212806591.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEoKpbRXanfGXUuGk6dmzcGmcivJmjV_jf0JvxVpA_SlsWu-IEreqEm_YAUzQ",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/antoniopequenoiv/2026/11/20/larry-ellison-falls-out-of-top-10-billionaire-ranking-as-oracle-stock-hits-34-month-low/",
+          "title": "Larry Ellison No Longer Among World’s 10 Richest Billionaires As Oracle Stock Plummets",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEoKpbRXanfGXUuGk6dmzcGmcivJmjV_jf0JvxVpA_SlsWu-IEreqEm_YAUzQ"
+        },
+        {
+          "url": "https://www.moomoo.com/news/post/1005060008/no-fear-even-if-ai-data-center-business-drops-to",
+          "title": "No Fear Even If AI Data Center Business Drops to Zero: Bernstein Says Oracle (ORCL.US) Is Undervalued, Maintains $325 Price Target",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTf00n2-6-BL7mH_VSOD3uZgNhSOztpL0rXNbt-sKSvr_Ka20bBiHcSnf5gUQY"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/biggest-fear-around-oracle-could-212806591.html",
+          "title": "The Biggest Fear Around Oracle Could Soon End. Wall Street Sees ORCL Stock Surging 100% From Here.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTS1oDjSyC8sZ1KdfFN0qyBq0JQhIjgcgtnXBHPyDKTuXyz6lKbFdftSimAjfk"
+        }
+      ]
+    },
+    {
+      "query": "smci stock",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-inc-smci-130005275.html",
+        "https://www.tikr.com/blog/super-micro-just-dropped-33-in-a-month-after-a-record-quarter-is-it-time-to-sell-or-load-up",
+        "https://247wallst.com/investing/2026/11/17/super-micro-falls-4-dell-and-hewlett-packard-enterprise-slide-2-do-new-u-s-export-curbs-deepen-super-micros-china-problem/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgq5SkiANcxaXiM8-st5Bp3KZxJLbR32QrCdbWd7DileXn2F0wOHb_VBUb3eM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/super-micro-computer-inc-smci-130005275.html",
+          "title": "Super Micro Computer, Inc. (SMCI) is Attracting Investor Attention: Here is What You Should Know",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgq5SkiANcxaXiM8-st5Bp3KZxJLbR32QrCdbWd7DileXn2F0wOHb_VBUb3eM"
+        },
+        {
+          "url": "https://www.tikr.com/blog/super-micro-just-dropped-33-in-a-month-after-a-record-quarter-is-it-time-to-sell-or-load-up",
+          "title": "Super Micro Just Dropped 33% in a Month After a Record Quarter. Is It Time to Sell, or Load Up?",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWs6a-bWN-Ez14qBIYjcmP1a6YGVrZn7w2nNVLhVcp6d4NjAG6kKWp62IxZH0"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/11/17/super-micro-falls-4-dell-and-hewlett-packard-enterprise-slide-2-do-new-u-s-export-curbs-deepen-super-micros-china-problem/",
+          "title": "Super Micro Falls 4%, Dell and Hewlett Packard Enterprise Slide 2%: Do New U.S. Export Curbs Deepen Super Micro's China Problem?",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYor1bnPQBVwseb0cbc-btGjrBwmYX8SxruUYQc1te8ycEbTaUxSe7gyvgSOc"
+        }
+      ]
+    },
+    {
+      "query": "strands hint today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T11:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/22/crosswords/strands-sidekick-995.html",
+        "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-23-995/",
+        "https://parade.com/living/nyt-strands-hints-answers-today-spangram-sunday-november-22-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGISayuRsiCRuSpWUsWC2d7xiMAKPzSMVCqVTZbRwPp_cDDV611T3j_ItoI5k",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/22/crosswords/strands-sidekick-995.html",
+          "title": "NYT Strands Hints for November 23, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGISayuRsiCRuSpWUsWC2d7xiMAKPzSMVCqVTZbRwPp_cDDV611T3j_ItoI5k"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-strands-hints-answers-spangram-november-23-995/",
+          "title": "Today’s NYT Strands Hints, Spangram and Answers for Monday, Nov. 23, #995",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE-JCWL-geJx4ZmEuJSL2MbatsaViOuWBrYsFoL_UcSGxPWQxX7f99YbDZYeQ"
+        },
+        {
+          "url": "https://parade.com/living/nyt-strands-hints-answers-today-spangram-sunday-november-22-2026",
+          "title": "Today’s NYT ‘Strands’ Hints, Spangram and Answers for Sunday, November 22, 2026",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKT7N-NENi-M1urPRqYiuOG0BccxyNP6xTizjmpyXv-fngfMCGZtebUyv2HAM"
+        }
+      ]
+    },
+    {
+      "query": "iran war hormuz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T11:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
+        "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue",
+        "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqfCoLbeodrU-Y0zsgJB1pTM8W5EhDiPq6oOzrUBO4ad4oE2qYpMWP2byg43w",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/22/middleeast/hormuz-attacks-highest-levels-iran-war-intl",
+          "title": "Iranian attacks in the Strait of Hormuz are at the highest levels since the conflict began",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqfCoLbeodrU-Y0zsgJB1pTM8W5EhDiPq6oOzrUBO4ad4oE2qYpMWP2byg43w"
         },
         {
-          "url": "https://www.wdsu.com/article/low-tropical-development-western-atlantic-florida/74495897",
-          "title": "Tropical development odds drop, but coastal flooding is still expected",
-          "publisher": "WDSU",
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/21/iran-war-live-iran-targets-us-military-in-bahrain-houthi-strikes-continue",
+          "title": "Iran war updates: Navy says tankers ablaze near Hormuz after hitting mines",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFLCeuOTDu2LjUtjGg8o1euhSmZcnWJ2Xp5ZhUCNcmDjC_9WHrSoAvxNZVNFI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfhgdnYuiWad4l7-b21Fz0WFuuPw1dTDpS1eWTVhkSZSNpPYrYxRL5nXLDDI"
+        },
+        {
+          "url": "https://www.wsj.com/world/middle-east/the-u-a-e-is-shuttling-oil-past-iran-in-risky-hormuz-operation-9150693e",
+          "title": "The U.A.E. Is Shuttling Oil Past Iran in Risky Hormuz Operation",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTac8wu5pRjsQwxZLf-KSa9YNMnE7Z7L3Hjo1BLsn05WDg7wbjGdFfCcjt8cVU"
         }
       ]
     },
     {
-      "query": "hulu black friday deal 2026",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T11:00:00Z",
+      "query": "gta6 chapter 3",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T11:20:00Z",
       "related_news_urls": [
-        "https://www.billboard.com/culture/product-recommendations/prime-video-black-friday-cyber-monday-streaming-deals-2026-1236385908/",
-        "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
-        "https://appleinsider.com/articles/26/11/20/black-friday-streaming-deals-cut-apple-tv-to-699mo-paramount-plus-to-299mo"
+        "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+        "https://www.ign.com/wikis/gta-6/The_Cartel_Heist_Walkthrough",
+        "https://www.videogameschronicle.com/guide/gta-6-chapter-3-mission-list/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR3m8LSitDW1FmqllhGUDETfJREa6am8NGGJGVLEhfTlZMv4Qf_cTFFxicYWo",
-      "image_credit": "Billboard",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk",
+      "image_credit": "VICE",
       "news": [
         {
-          "url": "https://www.billboard.com/culture/product-recommendations/prime-video-black-friday-cyber-monday-streaming-deals-2026-1236385908/",
-          "title": "Amazon Prime Video Black Friday Cyber Monday Deals: Save Big on Streaming Add-Ons, Movie Purchases & More",
-          "publisher": "Billboard",
+          "url": "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+          "title": "How Long Is Chapter 3 in GTA 6? All Missables and Mission List",
+          "publisher": "VICE",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR3m8LSitDW1FmqllhGUDETfJREa6am8NGGJGVLEhfTlZMv4Qf_cTFFxicYWo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk"
         },
         {
-          "url": "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
-          "title": "Best Black Friday streaming deals 2026: Paramount+, Apple TV, HBO Max, and more already live",
-          "publisher": "Mashable",
+          "url": "https://www.ign.com/wikis/gta-6/The_Cartel_Heist_Walkthrough",
+          "title": "The Cartel Heist Walkthrough",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-YRl-wWry65lx6XgF1W9b5l6CT05nTUsI_yL6JgSArneUX7wzpC-11lk6fwI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT_pXoCPvlkHjKQwjNACiq2XBscvDkqghZ3Uej1wbN1flAo3HmgDvrUnvXGyg"
         },
         {
-          "url": "https://appleinsider.com/articles/26/11/20/black-friday-streaming-deals-cut-apple-tv-to-699mo-paramount-plus-to-299mo",
-          "title": "Black Friday streaming deals cut Apple TV to $6.99/mo, Paramount Plus to $2.99/mo",
-          "publisher": "AppleInsider",
+          "url": "https://www.videogameschronicle.com/guide/gta-6-chapter-3-mission-list/",
+          "title": "GTA 6 Chapter 3 Mission List: Every Mission in Order & Point of No Return",
+          "publisher": "Video Games Chronicle",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcoWfbB0r-TQeazMBUteaBz2F2mMIh4vOjUKblnetr5Jz2sKSdPJoZgmX4sYM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh6pC4ZvjnoB8MtFOqXa9sQ0SfmHO16P8vlPm2D7g9ail_3g2f8h1zaitDUhE"
         }
       ]
     },
     {
-      "query": "jack campbell",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T10:50:00Z",
+      "query": "crwd stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T11:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50569390/rb-cam-skattebo-backflips-again-pledging-nix-celebration",
-        "https://sports.yahoo.com/articles/john-harbaugh-one-word-response-104500343.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-says-hes-done-doing-backflips-after-aidan-hutchinson-injury"
+        "https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031",
+        "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/",
+        "https://finance.yahoo.com/news/crowdstrike-explores-acquisition-zscaler-report-111021470.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZl1t9qd1xaKcNRqYcyvl-dJ1g9L_9KmqENihyLTIVM65pcAF12ENaGzPG3rw",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TdZtT0yOhdKqGfhHfYNNEar5BubGBTe8gy0guEKnQdHgr0eGPsqdpBtqe8A",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50569390/rb-cam-skattebo-backflips-again-pledging-nix-celebration",
-          "title": "RB Cam Skattebo backflips again after pledging to nix celebration",
-          "publisher": "ESPN",
+          "url": "https://www.wsj.com/business/deals/crowdstrike-to-buy-zscaler-in-43-9-billion-stock-swap-4c926031",
+          "title": "CrowdStrike to Buy Zscaler in $43.9 Billion Stock Swap",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZl1t9qd1xaKcNRqYcyvl-dJ1g9L_9KmqENihyLTIVM65pcAF12ENaGzPG3rw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5TdZtT0yOhdKqGfhHfYNNEar5BubGBTe8gy0guEKnQdHgr0eGPsqdpBtqe8A"
         },
         {
-          "url": "https://sports.yahoo.com/articles/john-harbaugh-one-word-response-104500343.html",
-          "title": "John Harbaugh’s one-word response to Cam Skattebo backflip promise break caught on camera",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.reuters.com/legal/transactional/crowdstrike-buy-zscaler-439-billion-2026-11-23/",
+          "title": "CrowdStrike bets on network security with $43.9 billion Zscaler deal",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ-rbpgZdENoKWy2G9T4atBkEJDBwN1iU6X0ifKe1MgX18gXUnZobskAaNBsE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkoe3Fwibfedieqon3DLX7UPxFu28lj2KWaR_vageYNP3fDjhSBXH42YedELE"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-says-hes-done-doing-backflips-after-aidan-hutchinson-injury",
-          "title": "Cam Skattebo says he’s done doing backflips after Aidan Hutchinson injury",
-          "publisher": "NBC Sports",
+          "url": "https://finance.yahoo.com/news/crowdstrike-explores-acquisition-zscaler-report-111021470.html",
+          "title": "CrowdStrike explores acquisition of Zscaler – report",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSakYcDagxtcqgaOwRZhpFzsZbzXjxfV6pB96CMoGB_m2CCGed-DgJ0QBHFJso"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 update patch",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T10:50:00Z",
-      "related_news_urls": [
-        "https://www.polygon.com/patch-notes-gta-6-next-gen/",
-        "https://www.gameindustry.com/news-industry-happenings/the-next-console-generation-is-already-taking-shape/",
-        "https://www.redbull.com/int-en/gta-6-updates-patch-notes"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupahWyNTrI5VM4JdcSU3Z-Fa6scnmvZHN1RK0HFKOW172QnAaK8_e85KhB9w",
-      "image_credit": "Polygon.com",
-      "news": [
-        {
-          "url": "https://www.polygon.com/patch-notes-gta-6-next-gen/",
-          "title": "Six Years Too Late, Next-Gen Finally Arrives with GTA 6",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupahWyNTrI5VM4JdcSU3Z-Fa6scnmvZHN1RK0HFKOW172QnAaK8_e85KhB9w"
-        },
-        {
-          "url": "https://www.gameindustry.com/news-industry-happenings/the-next-console-generation-is-already-taking-shape/",
-          "title": "The Next Console Generation Is Already Taking Shape",
-          "publisher": "Gameindustry.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4XUgfe9wsg7Dnjy-0PVQgPOPfO8PPMy3C8BBTgeIZi-BBKAORnQqNgEFoJhE"
-        },
-        {
-          "url": "https://www.redbull.com/int-en/gta-6-updates-patch-notes",
-          "title": "GTA 6 launch updates: Patch sizes, versions and release dates",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOsPBOgs-xwYEt9grfy2Svt32xjB6y783jNsLl3rCoTH8GJiFrYq8SqWXZqNc"
-        }
-      ]
-    },
-    {
-      "query": "suriname",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T10:50:00Z",
-      "related_news_urls": [
-        "https://www.waterkant.net/suriname/2026/11/22/wang-bezorgde-ouders-durven-hun-kinderen-niet-meer-naar-school-te-sturen/",
-        "https://www.srherald.com/suriname/2026/11/17/regering-komt-woensdag-met-nadere-antwoorden-over-verslechterde-veiligheidssituatie/",
-        "https://sun.sr/nieuws/lokaal/adhin-meer-investeringen-nodig-om-veiligheid-in-suriname-te-verbeteren?id=46237"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKntK-vU8CVQ-A4SxXG40mDwlBG277KOzdY9CVjtYZGBqhzDgVyAwVVEcleqY",
-      "image_credit": "Waterkant",
-      "news": [
-        {
-          "url": "https://www.waterkant.net/suriname/2026/11/22/wang-bezorgde-ouders-durven-hun-kinderen-niet-meer-naar-school-te-sturen/",
-          "title": "Wang: “Bezorgde ouders durven hun kinderen niet meer naar school te sturen”",
-          "publisher": "Waterkant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKntK-vU8CVQ-A4SxXG40mDwlBG277KOzdY9CVjtYZGBqhzDgVyAwVVEcleqY"
-        },
-        {
-          "url": "https://www.srherald.com/suriname/2026/11/17/regering-komt-woensdag-met-nadere-antwoorden-over-verslechterde-veiligheidssituatie/",
-          "title": "Regering komt woensdag met nadere antwoorden over verslechterde veiligheidssituatie",
-          "publisher": "Suriname Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW_va3okkY_oz-WtBaDrx2dMRYzH9P6iiiB_yEWtqnXGBAmJsgStfWyb3YYRg"
-        },
-        {
-          "url": "https://sun.sr/nieuws/lokaal/adhin-meer-investeringen-nodig-om-veiligheid-in-suriname-te-verbeteren?id=46237",
-          "title": "Adhin: Meer investeringen nodig om veiligheid in Suriname te verbeteren",
-          "publisher": "Sun News Suriname",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_8bmj5fmBjzgfJwTy4H_M-xuzql9QLS7gfdJllt5hGkCb8TYsugnC3vs5Tqw"
-        }
-      ]
-    },
-    {
-      "query": "jamie lee curtis",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T10:50:00Z",
-      "related_news_urls": [
-        "https://people.com/jamie-lee-curtis-marks-68th-birthday-as-only-surviving-member-immediate-family-12273457",
-        "https://ew.com/jamie-lee-curtis-first-birthday-after-sister-kelly-death-12272871",
-        "https://www.upi.com/Entertainment_News/Photos/Award-winning-actress-Jamie-Lee-Curtis-turns-68/16397/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6lL0Tk3Lm2pkew2yBfckk_XQFXG-nc0ursdCTJ4Jhzk_5WocLAplvwiuQ9uQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jamie-lee-curtis-marks-68th-birthday-as-only-surviving-member-immediate-family-12273457",
-          "title": "Jamie Lee Curtis Marks 68th Birthday as ‘Only Surviving Member’ of Immediate Family",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6lL0Tk3Lm2pkew2yBfckk_XQFXG-nc0ursdCTJ4Jhzk_5WocLAplvwiuQ9uQ"
-        },
-        {
-          "url": "https://ew.com/jamie-lee-curtis-first-birthday-after-sister-kelly-death-12272871",
-          "title": "Jamie Lee Curtis laments being ‘the last in the line’ on first birthday after sister’s death",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwwHEZQ_JJBnvvhDDrGy5ENNKnxWEHPfqMlLZDTZzVGxjYb4--rmSBC9DpOlk"
-        },
-        {
-          "url": "https://www.upi.com/Entertainment_News/Photos/Award-winning-actress-Jamie-Lee-Curtis-turns-68/16397/",
-          "title": "In photos: Award-winning actress Jamie Lee Curtis turns 68 - All Photos",
-          "publisher": "UPI.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzi-12dayrU_G5raZBPXI_f5feUUCzC4mGoh_iI6vIAthKaLIzhXwBvoJhrSo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYEWEIP1mj2-Gwa0VEMUYHLwHQFfLSRt3ky7nNIZe73JrvSMS0T3lFUh-mYBo"
         }
       ]
     }
