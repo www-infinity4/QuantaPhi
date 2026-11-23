@@ -4,11 +4,13 @@ on:
     branches: [main]
     paths:
       - 'identity-shield-card.mjs'
+      - 'identity-shield-providers.mjs'
       - 'scripts/identity-shield-public-monitor.py'
       - '.github/workflows/identity-shield-public-monitor.yml'
   pull_request:
     paths:
       - 'identity-shield-card.mjs'
+      - 'identity-shield-providers.mjs'
       - 'assets/identity-shield.svg'
       - 'data/identity-shield-research.json'
       - 'scripts/identity-shield-public-monitor.py'

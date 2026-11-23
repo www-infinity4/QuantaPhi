@@ -1,6 +1,6 @@
 # Infinity Identity Shield · staged build and Bubbles research charter
 
-Status: first public-information Quick Card and public-source monitoring code staged in GitHub. This is **not** a live identity monitoring service.
+Status: original Quick Card and public-only checker merged via #1767; the provider directory and no-redirect fix are proposed in PR #1999. **This is not a live personal identity monitoring service.** Partner contracts, account connections, independent security signoff, scheduled public-source readback and Android acceptance remain unverified.
 
 ## Operating objective
 
@@ -44,3 +44,29 @@ Give people a single readable protection view with evidence-backed alerts from a
 5. Run a weekly public-agency-source monitor, then produce concrete proposed code tickets for genuine changes with independent review.
 
 Work remains separate from financial account connections, Bubbles wallet and account settings. Refer to issue #1765 for public research and #1506 for private identity-vault security.
+
+
+## Stage 1b · Official services and network hardening (#1999)
+
+The Shield offers reviewed links to government and credit bureau protections. They are **official external destinations, not integrations or commercial partnerships**. The user operates each service directly; QuantaPhi does not verify a credit freeze, score, PIN, account or identity status.
+
+| Service | Direct official action | Status |
+| --- | --- | --- |
+| Equifax | https://www.equifax.com/personal/credit-report-services/credit-freeze | Free security freeze; external only |
+| Experian | https://www.experian.com/help/credit-freeze/ | Free security freeze; external only |
+| TransUnion | https://www.transunion.com/credit-freeze | Free security freeze; external only |
+| AnnualCreditReport.com | https://www.annualcreditreport.com/ | Free official credit reports; external only |
+| IRS | https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin | Tax identity protection PIN; external only |
+| SSA | https://www.ssa.gov/myaccount/ | Direct account/earnings review; external only |
+| FTC | https://www.identitytheft.gov/Steps | Identity theft recovery; external only |
+
+Authoritative background: CFPB credit-freeze guidance https://www.consumerfinance.gov/ask-cfpb/what-is-a-credit-freeze-or-security-freeze-on-my-credit-report-en-1341/ ; FTC free reports https://consumer.ftc.gov/articles/free-credit-reports ; IRS IP PIN https://www.irs.gov/identity-theft-fraud-scams/get-an-identity-protection-pin .
+
+### Security contract
+
+- The external registry has exact HTTPS destination matching. Provider links open with no opener or referrer; official sign-in stays on the provider domain. No affiliate tracking or user-provided URLs.
+- The monitor cannot follow an HTTP redirect before validating where the request would go. An unexpected redirect yields an unavailable record, not a success claim.
+- Every provider is marked disconnected; clicking the link does not grant QuantaPhi a provider account, consent receipt or monitoring access. No SSNs, passwords, PINs, documents, credit reports or account numbers are collected.
+- No provider-branded affiliation, underwriting, coverage guarantee or partnership should be represented without a signed agreement.
+- To build **actual** credit monitoring, contract with an eligible bureau/authorized provider for lawful use, consent scope, event receipt schema and independent privacy/security testing. Account login providers ID.me/Login.gov require their own supported integration programs; no scraping. Cloudflare security and encrypted private infrastructure require separately provisioned, audited access controls, threat modeling, key management and production tests. The private vault hold #1506 remains in force.
+- The source PR, tests, independent security approval, merge, scheduled-feed evidence, Cloudflare deployment and Android browser verification are separate acceptance stages. No green/connected indication without receipts.

@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse
-from urllib.request import Request, urlopen
+from urllib.request import Request, HTTPRedirectHandler, build_opener
 
 ROOT = Path(__file__).resolve().parent.parent
 STATE = ROOT / "data/identity-shield-research.json"
@@ -46,6 +46,16 @@ def normalize_public_page(content):
     return re.sub(r"\s+", " ", " ".join(parser.parts)).strip()
 
 
+class RejectPublicSourceRedirect(HTTPRedirectHandler):
+    """Do not follow even one redirect before validating the destination.
+
+    Unexpected redirects are recorded as unavailable, never fetched.
+    """
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
 def public_digest(url):
     if url not in SOURCES.values():
         raise ValueError("public_source_not_allowlisted")
@@ -53,7 +63,9 @@ def public_digest(url):
         "User-Agent": "QuantaPhi-Public-Source-Research/1.0",
         "Accept": "text/html",
     })
-    with urlopen(req, timeout=13) as response:
+    # The default urllib opener follows redirects before response.geturl().
+    # A custom no-redirect opener prevents unsolicited requests to new hosts.
+    with build_opener(RejectPublicSourceRedirect()).open(req, timeout=13) as response:
         final = urlparse(response.geturl())
         initial = urlparse(url)
         if final.scheme != "https" or final.hostname != initial.hostname:
