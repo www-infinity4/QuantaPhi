@@ -29,6 +29,10 @@ test('white signal and yellow intake precede red inspect and orange routing deci
  assert.equal(frame.guideColorsRendered,false,'control labels never masquerade as physical pixels');
  assert.equal(frame.dataAccessGranted,false);
  assert.equal(frame.authorizesWallet,false);
+ assert.deepEqual(frame.whiteConduit,{
+  carrier:'white',inside:'yellow',between:['red','yellow'],
+  drawn:false,grantsAccess:false
+ });
 });
 test('color passage cavity can be absent yet drive selective frame output',()=>{
  const frame=routeCavityFrame(packets,{requested:'green',lightOn:true,apertures:[false,true]});
