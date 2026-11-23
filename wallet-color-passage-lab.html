@@ -21,6 +21,19 @@ button:focus-visible,a:focus-visible{outline:3px solid #b87e00;outline-offset:3p
 .passage[data-match="false"]::after{background:#21364b;opacity:1;border-color:#d2e3ee}
 #passageStatus{font-weight:700}
 .note{border-left:4px solid #356c8c;padding-left:12px}
+.cavity-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end}
+.cavity-controls label{display:grid;gap:4px;font-size:14px;font-weight:700;flex:1 1 160px}
+.cavity-controls select{width:100%;min-height:44px;padding:8px;border:1px solid #356c8c;border-radius:9px;font:600 16px/1.3 system-ui,sans-serif;background:#fff;color:#21364b}
+#cavityStages{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:15px 0}
+.cavity-stage{border-radius:9px;border:1px solid #c3d1d8;padding:6px 8px;font:650 13px/1.35 system-ui,sans-serif;background:#eff4f7;color:#18394c}
+.cavity-stage small{display:block;font-weight:450;font-size:11px}
+.cavity-arrow{font-size:18px;color:#466174}
+#cavityPixels{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px;background:#10131c;border:2px solid #283d54;padding:10px;border-radius:12px;min-height:62px}
+.cavity-slot{min-height:36px;border-radius:7px;border:1px solid #74899e;display:flex;align-items:center;justify-content:center;color:#ecf0f3;font-size:13px}
+.cavity-slot[data-pass="true"]{color:#10131c;border:2px solid #fff;background:var(--route-light,#a3e2fc)}
+.cavity-slot[data-pass="false"]{background:#10131c}
+#cavityStatus{font-weight:700;line-height:1.5}
+.cavity-caption{font-size:13px;color:#38546a}
 @media(max-width:450px){button{flex:1 1 100%}h1{font-size:1.43rem}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -42,6 +55,28 @@ button:focus-visible,a:focus-visible{outline:3px solid #b87e00;outline-offset:3p
 <div id="passageWindow" role="img" aria-label="Synthetic hexadecimal window awaiting generation"></div>
 <p id="passageStatus" role="status" aria-live="polite">No wallet access granted · no window generated.</p>
 <p class="note">Aligned colors open a <em>visual window only</em>. Real access to protected data still requires a server-verified wallet session and a signed, account-scoped device challenge. No wallet access granted.</p>
+</section>
+<section aria-label="Symbolic screen and data receiver">
+<h2>Black / White / Yellow · Signal Cavity</h2>
+<p>Black holds an inactive screen. White represents an enabled signal. Yellow marks incoming metadata. Red inspects and orange selects a requested route such as blue, green, or purple. These <strong>color guides are not actual TV pixel filters</strong> or an account-unlocking procedure.</p>
+<p class="cavity-caption">This is an opt-in, synthetic, step-by-step analogy. A real display uses electrical decoding and RGB subpixels; LCD and OLED screens differ. The simulated selector cannot read a phone or receive a broadcast.</p>
+<div class="cavity-controls">
+<button type="button" id="cavityPower" aria-pressed="false">Enable white signal</button>
+<label for="cavityChannel">Requested channel
+<select id="cavityChannel">
+<option value="blue">Blue · research</option>
+<option value="green">Green · build</option>
+<option value="purple">Purple · review</option>
+<option value="red">Red · inspect</option>
+</select></label>
+<button type="button" id="cavityAperture">Close one cavity opening</button>
+<button type="button" id="cavityNext">Next frame</button>
+<button type="button" id="cavityPlay" aria-pressed="false">Play slow frames</button>
+</div>
+<div id="cavityStages" aria-label="Symbolic routing stages"></div>
+<div id="cavityPixels" role="img" aria-label="Eight inactive synthetic signal slots"></div>
+<p id="cavityStatus" role="status" aria-live="polite">Black standby · no simulated light or selected packets.</p>
+<p class="note">The holes are Boolean passage masks. A red or yellow guide may exist as a routing label even when no red or yellow pixel is drawn. No data stream or wallet access granted.</p>
 </section>
 </main><script type="module" src="./wallet-color-passage-lab.mjs"></script></body>
 </html>
