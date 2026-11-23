@@ -3,17 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T16:31:15.406329Z",
+  "checked_at": "2026-11-23T17:01:31.181452Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "st bonaventure basketball",
+      "query": "ben stiller",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T16:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
+        "https://people.com/owen-wilson-on-working-with-ariana-grande-robert-de-niro-focker-in-law-exclusive-12244595",
+        "https://www.creativescreenwriting.com/how-john-hamburg-crafts-a-focker-comedy-inside-focker-in-law-with-the-writer-behind-the-meet-the-parents-franchise"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
+          "title": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI"
+        },
+        {
+          "url": "https://people.com/owen-wilson-on-working-with-ariana-grande-robert-de-niro-focker-in-law-exclusive-12244595",
+          "title": "Owen Wilson on Working with Ariana Grande, Robert De Niro for ‘Focker-in-Law’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr1XfNh9wTcbsVX1CGUoaTmIpbKhPBWZZflc4VfGYtCKwPLZJPvyUe_TnOtpM"
+        },
+        {
+          "url": "https://www.creativescreenwriting.com/how-john-hamburg-crafts-a-focker-comedy-inside-focker-in-law-with-the-writer-behind-the-meet-the-parents-franchise",
+          "title": "How John Hamburg Crafts a Focker Comedy: Inside ‘Focker-In-Law’ with the Writer Behind the ‘Meet The Parents’ Franchise",
+          "publisher": "Creative Screenwriting",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNAqYW6c8LGbC4_yO9c7heINbnE2R2kjoDkxpsUpLD_fjHrps6CThRLOsWp2s"
+        }
+      ]
+    },
+    {
+      "query": "charlie cox",
       "approx_searches": "200+",
+      "published_at": "2026-11-23T16:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html",
+        "https://comicbook.com/movies/news/marvels-charlie-cox-asked-to-audition-for-james-bond-and-the-answer-he-got-is-surprising/",
+        "https://ew.com/charlie-cox-didnt-get-james-bond-audition-after-being-told-he-was-too-old-12274565"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzCa__55UcHqiSNNarpoUSGK8NW-Rg-dq6h6Wu_QDGdaC6PZbQm--Bldficqc",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html",
+          "title": "Charlie Cox details brutal reason he was turned down for James Bond role",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzCa__55UcHqiSNNarpoUSGK8NW-Rg-dq6h6Wu_QDGdaC6PZbQm--Bldficqc"
+        },
+        {
+          "url": "https://comicbook.com/movies/news/marvels-charlie-cox-asked-to-audition-for-james-bond-and-the-answer-he-got-is-surprising/",
+          "title": "Marvel's Charlie Cox Asked to Audition for James Bond, And the Answer He Got Is Surprising",
+          "publisher": "ComicBook.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKHbLwet_hOcxuUZqdPjd9IZu_HkPNPBeoGoGARExtCmo827QVUDBY3VZzHQ"
+        },
+        {
+          "url": "https://ew.com/charlie-cox-didnt-get-james-bond-audition-after-being-told-he-was-too-old-12274565",
+          "title": "Marvel star was told he’s ‘too old’ to audition for James Bond: ‘Rob’s the same age as me!’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9Lp3mBAJrsvexVNsdc61g-CGr1zz70qMLxJIyFB91DEjYdVE7mM0djBduwk"
+        }
+      ]
+    },
+    {
+      "query": "st bonaventure basketball",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T16:00:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
-        "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx"
+        "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
+        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ",
       "image_credit": "CBS Sports",
@@ -26,64 +96,64 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ"
         },
         {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
-          "title": "Watch Appalachian state Live",
-          "publisher": "Kayo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
-        },
-        {
           "url": "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
           "title": "Men's Basketball Heads to Orlando for ESPN Events Invitational",
           "publisher": "Belmont Bruins",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDmFum9se9qNkAfOECb6x8jBuKoUMn97s881EmeILLY_5hh1j2SLpfWIUgr9Y"
+        },
+        {
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
+          "title": "Watch Appalachian state Live",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
         }
       ]
     },
     {
       "query": "brad pitt",
-      "approx_searches": "2000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T15:50:00Z",
       "related_news_urls": [
-        "https://people.com/david-leitch-shares-oceans-14-update-on-script-cast-exclusive-12265980",
-        "https://www.yahoo.com/entertainment/movies/articles/oceans-14-director-explains-filming-183036160.html",
-        "https://www.thewrap.com/creative-content/movies/oceans-14-update-cast-scheduling-challenge/"
+        "https://www.rte.ie/entertainment/2026/1123/1600317-brad-pitt-pulls-out-of-london-premiere-due-to-flu/",
+        "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
+        "https://www.hellomagazine.com/celebrities/936643/brad-pitt-forced-last-minute-cancellation-health-issue/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfnjzYG_Q1e2VlgjPZqBBX8P0G1xaNGzfOrMVTDAOp2YCRqxEWPYjInPmlAvQ",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Mq9CGc8dpy_tbuVQyIzbwS2oHOhEa1vtkAoNWjylcshy88yLFG7Gt_xJVsE",
+      "image_credit": "RTE.ie",
       "news": [
         {
-          "url": "https://people.com/david-leitch-shares-oceans-14-update-on-script-cast-exclusive-12265980",
-          "title": "‘Ocean’s 14’ Director David Leitch Gives Update on the Heist Sequel’s Star-Studded Cast and ‘Great Script’ (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.rte.ie/entertainment/2026/1123/1600317-brad-pitt-pulls-out-of-london-premiere-due-to-flu/",
+          "title": "Brad Pitt pulls out of London premiere due to flu",
+          "publisher": "RTE.ie",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfnjzYG_Q1e2VlgjPZqBBX8P0G1xaNGzfOrMVTDAOp2YCRqxEWPYjInPmlAvQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Mq9CGc8dpy_tbuVQyIzbwS2oHOhEa1vtkAoNWjylcshy88yLFG7Gt_xJVsE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/oceans-14-director-explains-filming-183036160.html",
-          "title": "'Ocean's 14' Director Explains Filming Delay as Brad Pitt Points to Late 2027 Start",
-          "publisher": "Yahoo",
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
+          "title": "Brad Pitt cancels London premiere appearance for new film due to illness",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCIfmf3eONrtCaUBHx5oMvkKrgrsRQasnKmsCJT02vLaE3uDbO0XzCvaVZ0I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRceM-73J4RWkO5bX0A9KlGshQWBxsKEZLAkpXqHxbU0AUSjbAejFIBhw8qYfI"
         },
         {
-          "url": "https://www.thewrap.com/creative-content/movies/oceans-14-update-cast-scheduling-challenge/",
-          "title": "‘Ocean’s 14’ Director Says Reuniting Cast Remains a Challenge Despite ‘Great Script’",
-          "publisher": "TheWrap",
+          "url": "https://www.hellomagazine.com/celebrities/936643/brad-pitt-forced-last-minute-cancellation-health-issue/",
+          "title": "Brad Pitt cancels London appearance hours before screening after falling ill",
+          "publisher": "HELLO!",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf9a1-MNkpYKHwUsaQTEwIKGSmCKEgC2Cd2A7_QXcYVTxxlNKEzmEOayRUgXc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWj-aC2XC8mKwjNyxZt6YNkAQAoXdQxyLrhzq-9cyJxpay1P3ShPJMqTOorfA"
         }
       ]
     },
     {
       "query": "honda takata airbag rupture notice",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T15:40:00Z",
       "related_news_urls": [
         "https://www.foxbusiness.com/economy/honda-recalls-810k-vehicles-over-dangerous-takata-airbag-inflator-rupture-risk",
-        "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
-        "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/"
+        "https://www.usatoday.com/story/cars/recalls/2026/11/23/honda-recalls-vehicles-acura-accord-civic-cr-v-models/92922637007/",
+        "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0",
       "image_credit": "Fox Business",
@@ -96,24 +166,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0"
         },
         {
+          "url": "https://www.usatoday.com/story/cars/recalls/2026/11/23/honda-recalls-vehicles-acura-accord-civic-cr-v-models/92922637007/",
+          "title": "Honda recalls over 810,000 vehicles. See the affected models",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHSAeowJr6GHgu8Qkc9u3EHBbW4tPSqs01Oqah9U4hsI9HPjpuRIBBI1husR0"
+        },
+        {
           "url": "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
           "title": "Honda and Toyota recall 1.6 million vehicles over Takata airbag rupture risk",
           "publisher": "NBC News",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgido-l33Jk2lDPhzyVUQ4f9HhQRfZx0eZJjkENuPKp-7ggjpeAkCTObHtaJQ"
-        },
-        {
-          "url": "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/",
-          "title": "More than 300,000 Toyota, Lexus vehicles recalled over faulty Takata airbags",
-          "publisher": "WDBJ7",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0WT0NyWp-1766odSzLHkJI8K1hD_BsOM3BZZPwRebK5_DQp1fnyids90UB-I"
         }
       ]
     },
     {
       "query": "christopher briney",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T15:40:00Z",
       "related_news_urls": [
         "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
@@ -147,12 +217,47 @@
       ]
     },
     {
+      "query": "silver",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T15:30:00Z",
+      "related_news_urls": [
+        "https://fortune.com/article/current-price-of-silver-11-23-2026/",
+        "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
+        "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU",
+      "image_credit": "Fortune",
+      "news": [
+        {
+          "url": "https://fortune.com/article/current-price-of-silver-11-23-2026/",
+          "title": "Current price of silver as of Monday, Nov. 23, 2026",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU"
+        },
+        {
+          "url": "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
+          "title": "Stop guessing the bottom in the silver price. Watch these 6 signs instead",
+          "publisher": "Kitco",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH2W0P6rorotUCbSprKdnAUSVafE9N5Ms5t3HzSJ9-OztvBOfaFMNz4Ymdn70"
+        },
+        {
+          "url": "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/",
+          "title": "Silver's Brutal Rout Could Have a Sting in the Tail",
+          "publisher": "StoneX",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73fCQQqNAq5Xj7WVF4TlEGNluNdOFw33ZMFolj8UNi2iUU_NUTvv5c7s1EiU"
+        }
+      ]
+    },
+    {
       "query": "davidson basketball",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T15:30:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
-        "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/",
+        "https://www.sportsline.com/insiders/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
         "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY",
@@ -166,11 +271,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/",
-          "title": "Northern Iowa vs Davidson Prediction, Picks & Odds | 23 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.sportsline.com/insiders/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
+          "title": "Northern Iowa vs. Davidson odds, prediction: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 from advanced model",
+          "publisher": "SportsLine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKxMh_FECkMrRYWEw3yy1eshIA702Xe428YY28BtP8x_Ob4oqZz0Flw62UPHk"
         },
         {
           "url": "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off",
@@ -218,7 +323,7 @@
     },
     {
       "query": "sophie cunningham indiana fever offseason",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-23T15:20:00Z",
       "related_news_urls": [
         "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
@@ -248,111 +353,6 @@
           "publisher": "The Spun",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEyoIuMzW-t_L8wLXsk5_vJZp1JVnZTWKrMcBAD5wR5KHra_L2wsIzzsrkm0"
-        }
-      ]
-    },
-    {
-      "query": "costco stock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T15:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/many-shares-costco-d-5-115002243.html",
-        "https://www.fool.com/investing/2026/11/23/will-costco-do-a-stock-split-before-the-end-of-2026/",
-        "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26GyguJRiURX6st4fzjVyJPrj_1hhbvQUfZ8kf9ZpXigEHRuC1ESxWVo-aGY",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/many-shares-costco-d-5-115002243.html",
-          "title": "Here’s How Many Shares of Costco You’d Need for $5,000 in Yearly Dividends.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26GyguJRiURX6st4fzjVyJPrj_1hhbvQUfZ8kf9ZpXigEHRuC1ESxWVo-aGY"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/23/will-costco-do-a-stock-split-before-the-end-of-2026/",
-          "title": "Will Costco Do a Stock Split Before the End of 2026?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1TfroNqzziIERUniBeqBIYkBtLwWGRLyj_toFGcrRyJv6Z-VKuGy7b2k3BHM"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/16/costco-special-dividend-jim-cramer.html",
-          "title": "Jim Cramer says Costco's hefty special dividend signals ‘more gains ahead’",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHre1GL-393RnfQ5WgTjdd6_ue2nXeogabDHEuJzNgs8BioTDlAsyPTOrKwXs"
-        }
-      ]
-    },
-    {
-      "query": "al-shamal vs al-ahli",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T15:10:00Z",
-      "related_news_urls": [
-        "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
-        "https://bsinews.id/en/mahrez-faces-al-ahli-qatar",
-        "https://khelnow.com/football/al-shamal-vs-al-ahli-live-starting-lineups-afc-champions-league-elite-202611"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q",
-      "image_credit": "The Stats Zone",
-      "news": [
-        {
-          "url": "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
-          "title": "Al Shamal vs Al Ahli Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q"
-        },
-        {
-          "url": "https://bsinews.id/en/mahrez-faces-al-ahli-qatar",
-          "title": "Mahrez Faces Former Club Al-Ahli in Asian Champions League",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCGYi-o1YwQdwomgNhv2nNorFysljqQpNdprHQleDNN4Fzz6WrdTqshIjG-uI"
-        },
-        {
-          "url": "https://khelnow.com/football/al-shamal-vs-al-ahli-live-starting-lineups-afc-champions-league-elite-202611",
-          "title": "Al-Shamal vs Al Ahli LIVE - Confirmed starting lineups & pre-match updates for AFC Champions League Elite 2026-27 clash",
-          "publisher": "Khel Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyvtlb42TuaUqQxL1OKU5z254SaKt8-9PVUxknyx7Q37ZZaw2CCIzxPqZl7A"
-        }
-      ]
-    },
-    {
-      "query": "pfe stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T15:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/healthcare/articles/pfizers-launched-acquired-drugs-grew-223502254.html",
-        "https://seekingalpha.com/article/4970774-pfizer-struggling-to-meet-dividend-beyond-2027",
-        "https://www.theglobeandmail.com/investing/markets/stocks/PFE/pressreleases/8920125/can-new-products-and-acquisitions-revive-pfizers-growth-story/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz9bBqI4phFI9xZHBSbkPsm8ahTplw9MkaU92tdidYqWT3MaQdXwZyYWutuSw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/healthcare/articles/pfizers-launched-acquired-drugs-grew-223502254.html",
-          "title": "Pfizer's Launched and Acquired Drugs Grew 32% in Q3 — and 3 Other Reasons to Buy the Stock Before 2027",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSz9bBqI4phFI9xZHBSbkPsm8ahTplw9MkaU92tdidYqWT3MaQdXwZyYWutuSw"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4970774-pfizer-struggling-to-meet-dividend-beyond-2027",
-          "title": "Pfizer: Struggling To Meet Dividend Beyond 2027",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_Sca2bTE3kCY3yL0LR-yWBKvgWmvu2l_oz-UUgyse9R7Mwlp9GfBpyl5Hls"
-        },
-        {
-          "url": "https://www.theglobeandmail.com/investing/markets/stocks/PFE/pressreleases/8920125/can-new-products-and-acquisitions-revive-pfizers-growth-story/",
-          "title": "Can New Products and Acquisitions Revive Pfizer's Growth Story?",
-          "publisher": "The Globe and Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSFoyS3nWKS9w_LeY3_exU86Xsitw3_PbNe7jlu6uuOmy56Tw0iGyiHD3gpW8"
         }
       ]
     }
