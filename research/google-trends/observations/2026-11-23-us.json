@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T13:01:29.481430Z",
+  "checked_at": "2026-11-23T13:31:11.541694Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "thanksgiving",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T12:40:00Z",
+      "query": "gwyneth paltrow",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T13:10:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
-        "https://www.yahoo.com/news/weather-news/article/thanksgiving-travel-forecast-storms-on-both-coasts-could-snarl-busiest-travel-days-san-francisco-braces-for-potentially-record-king-tides-114727556.html",
-        "https://www.nytimes.com/2026/11/23/weather/thanksgiving-storm-updates-maps.html"
+        "https://www.theguardian.com/tv-and-radio/2026/nov/23/weird-lifestyle-advice-from-gwyneth-paltrow-best-podcasts-of-the-week",
+        "https://people.com/gwyneth-paltrow-crown-affair-holiday-gifts-november-2026-12187520",
+        "https://www.nytimes.com/2026/11/22/opinion/war-hbo-divorce-tech-huang.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgxrRcsRUi1roQ83YhTG3R3yE3trB0de5FutG7W11n6AF0Cc47k1sxGzYQdZs",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5-WEF7ruyx7TA0bqR6Ip5QXrrBfaKI8UtFXtNYJtL7sV3U5ayKHBOC7S1kJc",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
-          "title": "Holiday travel: Dual storms threaten Thanksgiving plans from coast to coast",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgxrRcsRUi1roQ83YhTG3R3yE3trB0de5FutG7W11n6AF0Cc47k1sxGzYQdZs"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/article/thanksgiving-travel-forecast-storms-on-both-coasts-could-snarl-busiest-travel-days-san-francisco-braces-for-potentially-record-king-tides-114727556.html",
-          "title": "Thanksgiving travel forecast: Storms on both coasts could snarl busiest travel days; San Francisco braces for potentially record king tides",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR12zaPmV2GT6hzLdvuJ6Gzyrll61NVnoT64dYy_0xkkDrUpPIgLfkKFib6qHc"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/23/weather/thanksgiving-storm-updates-maps.html",
-          "title": "Thanksgiving Weather: Storm Maps and Forecast",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt7XYWjSiHCopAqYDqWkm1CtBb6AJz77JOHMmcyArr96Z0-r6MNHlSGx_ECc8"
-        }
-      ]
-    },
-    {
-      "query": "ben sasse",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T12:40:00Z",
-      "related_news_urls": [
-        "https://omaha.com/news/state-regional/nebraska/article_988a9794-801a-598c-b0bd-b85f73cc88bb.html",
-        "https://apnews.com/article/ben-sasse-cancer-memoir-redeem-time-8f45309901291fc255fd0b702ac5cf87",
-        "https://thehill.com/blogs/in-the-know/6231023-ben-sasse-pancreatic-cancer-memoir/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCTvMeqoVuy6ay3D48lu18OnFizRqbBbeb9ufC6IuKNANcZLZMJjk27TU-Zas",
-      "image_credit": "Omaha World-Herald",
-      "news": [
-        {
-          "url": "https://omaha.com/news/state-regional/nebraska/article_988a9794-801a-598c-b0bd-b85f73cc88bb.html",
-          "title": "Funeral for father of former Nebraska Sen. Ben Sasse set for Monday",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCTvMeqoVuy6ay3D48lu18OnFizRqbBbeb9ufC6IuKNANcZLZMJjk27TU-Zas"
-        },
-        {
-          "url": "https://apnews.com/article/ben-sasse-cancer-memoir-redeem-time-8f45309901291fc255fd0b702ac5cf87",
-          "title": "Former Sen. Ben Sasse’s memoir on surviving cancer, co-written with his daughter, is set for March 9",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqRZ6HT9Y5Z3mkum0fVcA6ZADqlXI6pq7kgqYdWx6u2Oncav5ZQ-_XZLiJnyM"
-        },
-        {
-          "url": "https://thehill.com/blogs/in-the-know/6231023-ben-sasse-pancreatic-cancer-memoir/",
-          "title": "Sasse to release memoir on his life, family amid cancer battle",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8BG3_GM2_NybHt-nLIcw93iX5ntFXl96S3J4p5Hqg2VwCoXisn7a0051jAZY"
-        }
-      ]
-    },
-    {
-      "query": "prison",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T12:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/digital/global/russell-brand-wife-prison-rules-1236955715/",
-        "https://www.yahoo.com/news/world/article/russell-brands-wife-says-she-will-honor-rules-after-sharing-his-prison-message-on-youtube-120047083.html",
-        "https://www.theguardian.com/news/2026/nov/22/russell-brand-wife-laura-gallacher-youtube-video"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxA29NbvT8WFzfJylpKg_R0TjyDZz6efro-Lwb_4ekLjLe3-xtsTiSLLhuToI",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/digital/global/russell-brand-wife-prison-rules-1236955715/",
-          "title": "Russell Brand’s Wife Says She Will No Longer Pass on Prison Messages From Him ‘Now That I Understand the Parameters’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxA29NbvT8WFzfJylpKg_R0TjyDZz6efro-Lwb_4ekLjLe3-xtsTiSLLhuToI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/article/russell-brands-wife-says-she-will-honor-rules-after-sharing-his-prison-message-on-youtube-120047083.html",
-          "title": "Russell Brand's wife says she will 'honor' rules after sharing his prison message on YouTube",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT57-E3hOsWAWVLxYJXtDgHNPC2Pju_CA2Gw-r67RsnQ30DI9jo2sBzl20LSw4"
-        },
-        {
-          "url": "https://www.theguardian.com/news/2026/nov/22/russell-brand-wife-laura-gallacher-youtube-video",
-          "title": "Russell Brand’s wife vows to abide by prison rules after video controversy",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/23/weird-lifestyle-advice-from-gwyneth-paltrow-best-podcasts-of-the-week",
+          "title": "Weird lifestyle advice from Gwyneth Paltrow: best podcasts of the week",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQI6eLCf9g-CJTBhfFHm8uopyxxX3Bt4f67SlXu63JQofys5M184giobJuTG8o"
-        }
-      ]
-    },
-    {
-      "query": "brian hartline",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T12:40:00Z",
-      "related_news_urls": [
-        "https://www.tampabay.com/sports/bulls/2026/11/22/tim-beck-brian-hartline-american-conference/",
-        "https://www.footballscoop.com/2026/11/22/usf-offensive-coordinator-tim-beck-part-ways",
-        "https://greengoldandbold.com/usf-fans-have-many-questions-but-does-brian-hartline-have-the-answers-01m807e67v4t"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8TRVZ5ZR0GtVmIUdAFm2DH0AudAQe7cNv6Q1xKaYBqvfYJTFzJhMHlNerwqw",
-      "image_credit": "Tampa Bay Times",
-      "news": [
-        {
-          "url": "https://www.tampabay.com/sports/bulls/2026/11/22/tim-beck-brian-hartline-american-conference/",
-          "title": "Tim Beck out as USF OC as Brian Hartline’s debut season disappoints",
-          "publisher": "Tampa Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8TRVZ5ZR0GtVmIUdAFm2DH0AudAQe7cNv6Q1xKaYBqvfYJTFzJhMHlNerwqw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5-WEF7ruyx7TA0bqR6Ip5QXrrBfaKI8UtFXtNYJtL7sV3U5ayKHBOC7S1kJc"
         },
         {
-          "url": "https://www.footballscoop.com/2026/11/22/usf-offensive-coordinator-tim-beck-part-ways",
-          "title": "USF, Offensive Coordinator Tim Beck Mutually Agree to Part Ways",
-          "publisher": "FootballScoop.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTW5Lts-OmnoB_QtKcev4dnC_yIsXPShv1KaSO7Ke5WpqVlQgo_LZpngTb_8RE"
-        },
-        {
-          "url": "https://greengoldandbold.com/usf-fans-have-many-questions-but-does-brian-hartline-have-the-answers-01m807e67v4t",
-          "title": "USF fans have many questions, but does Brian Hartline have the answers?",
-          "publisher": "Green, Gold, and Bold",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVgvo3omWpsQXYbkk6ONIW0TZ6JcHde3aepKxX0DGApE276ig-dFjSyEo9WAI"
-        }
-      ]
-    },
-    {
-      "query": "schd",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T12:40:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/advisor/articles/weeks-best-schwab-claims-dividend-king-title-2452c0a4",
-        "https://finance.yahoo.com/markets/stocks/articles/heres-many-shares-schd-youd-093500045.html",
-        "https://www.fool.com/investing/2026/11/19/this-dividend-etf-could-double-your-money-over-the-next-6-years/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTG-bLzr_EgbVvN4LpJJ5vEh1HTL1nbXvvdq2C-7sDGddm_5OD-HrKfOqHuFwQ",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/advisor/articles/weeks-best-schwab-claims-dividend-king-title-2452c0a4",
-          "title": "Week’s Best: Schwab Claims Dividend King Title",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTG-bLzr_EgbVvN4LpJJ5vEh1HTL1nbXvvdq2C-7sDGddm_5OD-HrKfOqHuFwQ"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/heres-many-shares-schd-youd-093500045.html",
-          "title": "Here's How Many Shares of SCHD You'd Need to Generate $1,000 in Monthly Passive Income",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQD7_X2HrXAqRyvnF7ysJG5x84iHbBJ2EbhWL93MICkJyq6bQ0Mb6Z0hY84Ric"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/19/this-dividend-etf-could-double-your-money-over-the-next-6-years/",
-          "title": "This Dividend ETF Could Double Your Money Over the Next 6 Years",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvx9rcR6VjteKxenwxjiRVVRojkC9hzRDLfRHhCwKznuSD0hNvbLm3kHosBos"
-        }
-      ]
-    },
-    {
-      "query": "premarket",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T12:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-        "https://finance.yahoo.com/markets/stocks/articles/green-week-ahead-nvidia-futures-060000363.html",
-        "https://www.trendingtopics.eu/ai-stocks-rebound-nvidia-neoclouds-premarket/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg-V13voO8vQ4_SVogNblyyXqpDqeTZgftq6vJOn8BdVeFR2ptx_NqddMLW0A",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html",
-          "title": "Anthropic, Nvidia shares rise in premarket trading after major tech sell-off",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRg-V13voO8vQ4_SVogNblyyXqpDqeTZgftq6vJOn8BdVeFR2ptx_NqddMLW0A"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/green-week-ahead-nvidia-futures-060000363.html",
-          "title": "Green Week Ahead? Nvidia Futures Rip 6%, Nasdaq and S&P 500 Futures Snap Back 2%",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6MH5lZ2F1ojOqFVnH7nxpVcBoZ8ELQZWMJqZoIuEN5Wz0uRY7KLt8mziyaW8"
-        },
-        {
-          "url": "https://www.trendingtopics.eu/ai-stocks-rebound-nvidia-neoclouds-premarket/",
-          "title": "A.I. Stocks Set to Rebound as Nvidia and Neoclouds Rise Before the Bell",
-          "publisher": "www.trendingtopics.eu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0bCWU1VzW0sruvn0ieh76ZcGoeq3Ghlk01AEd5KAhgcyO7n5So29srWRoqjE"
-        }
-      ]
-    },
-    {
-      "query": "what type of cancer did kate middleton have",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T12:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/21/uk/kate-cancer-documentary-intl",
-        "https://www.nytimes.com/2026/11/21/world/europe/princess-kate-bbc-cancer-film.html",
-        "https://people.com/kate-middleton-reveals-she-never-rang-bell-after-cancer-treatment-new-documentary-12268951"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8w7RovTgqVSfD-3YY55ZAwdLFgiJA9FabOYxrYHW5VMoiUWqt-mnS0PcV80Y",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/21/uk/kate-cancer-documentary-intl",
-          "title": "‘Cancer does change you’: Princess of Wales talks candidly about her experience in new documentary",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8w7RovTgqVSfD-3YY55ZAwdLFgiJA9FabOYxrYHW5VMoiUWqt-mnS0PcV80Y"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/21/world/europe/princess-kate-bbc-cancer-film.html",
-          "title": "Catherine, Princess of Wales, Documents Life With Cancer in BBC Film",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJlQ38bMridO9efjyanWCXWlzlGzJ601xzoJ9LqoxmCQEDYQ2XSGy7xay_hw"
-        },
-        {
-          "url": "https://people.com/kate-middleton-reveals-she-never-rang-bell-after-cancer-treatment-new-documentary-12268951",
-          "title": "Kate Middleton Reveals She Never Rang the Bell After Chemotherapy in New Documentary",
+          "url": "https://people.com/gwyneth-paltrow-crown-affair-holiday-gifts-november-2026-12187520",
+          "title": "Gwyneth Paltrow Recommended This Giftable Hair Towel for the Person on Your List Who Returns Everything",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBwSi9OGiBEZtop_bfVmjG-QnpqeVErcYiwQ7NkaNcVa7q6EfGhY6pv5ZK4Xg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSpjJQyzbHLu4Qfg07KCmK0gnXqYHoYatd5z3A7sJ9cpujpfq4JEmcuI32SeE"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/22/opinion/war-hbo-divorce-tech-huang.html",
+          "title": "Opinion | Why I Loved the Slick and Dirty HBO Divorce Drama ‘War’",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqIQrtncutVKF7_bW9HHfjMfclvjAQZl9aVGY3UUjAvICq7RQvcZqt7pUNuOs"
         }
       ]
     },
     {
-      "query": "kit harington",
+      "query": "neftchi fergana vs al-hilal",
       "approx_searches": "500+",
-      "published_at": "2026-11-23T12:20:00Z",
+      "published_at": "2026-11-23T13:10:00Z",
       "related_news_urls": [
-        "https://collider.com/game-of-thrones-jon-snow-return-war-for-westeros-release-window-2027/",
-        "https://screenrant.com/game-of-thrones-war-for-the-throne-november-2026/",
-        "https://tbreak.com/war-for-westeros-jon-snow-2027/"
+        "https://khelnow.com/football/neftchi-fergana-vs-al-hilal-live-starting-lineups-afc-champions-league-elite-202611",
+        "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
+        "https://zamin.uz/en/sport/227801-islom-ismoilov-speaks-on-tactics-and-the-goal-of-victory-against-al-hilol.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTArKKk7O-djoAuXj7vRqgUeM2POD6c9UUzJUGfeEaKFnca8-qYLJcLimIpdGg",
-      "image_credit": "Collider",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmxlrBmhsBnzUX64ySyvigU0QRAYceS_0J6hU5_jwDBccOrlGPG_xJmgR4az8",
+      "image_credit": "Khel Now",
       "news": [
         {
-          "url": "https://collider.com/game-of-thrones-jon-snow-return-war-for-westeros-release-window-2027/",
-          "title": "‘Game of Thrones’ Officially Brings Kit Harington’s Jon Snow Back in 2027",
-          "publisher": "Collider",
+          "url": "https://khelnow.com/football/neftchi-fergana-vs-al-hilal-live-starting-lineups-afc-champions-league-elite-202611",
+          "title": "Neftchi Fergana vs Al Hilal LIVE - Confirmed starting lineups & pre-match updates for AFC Champions League Elite 2026-27 clash",
+          "publisher": "Khel Now",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTArKKk7O-djoAuXj7vRqgUeM2POD6c9UUzJUGfeEaKFnca8-qYLJcLimIpdGg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmxlrBmhsBnzUX64ySyvigU0QRAYceS_0J6hU5_jwDBccOrlGPG_xJmgR4az8"
         },
         {
-          "url": "https://screenrant.com/game-of-thrones-war-for-the-throne-november-2026/",
-          "title": "Game Of Thrones: War For The Throne Officially Unveiled",
-          "publisher": "ScreenRant",
+          "url": "https://qalampir.uz/en/news/bugun-uzbekiston-klublari-saudiya-zhamoalariga-k-arshi-uynaydi-146791",
+          "title": "Uzbek clubs to face Saudi teams today",
+          "publisher": "Qalampir.uz",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXEWF5j44Wnkrr-q5o_d_tYrdz6pivkmjTrWimNiVYpr02Uy91T83O_94JvFY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbfHjag8VBUtUek7LgcbWxKteIYjxo-zu2QLzkidUu4yS7vtmjsc9JR2jmPik"
         },
         {
-          "url": "https://tbreak.com/war-for-westeros-jon-snow-2027/",
-          "title": "War for Westeros brings Jon Snow back in early 2027",
-          "publisher": "Tbreak UAE",
+          "url": "https://zamin.uz/en/sport/227801-islom-ismoilov-speaks-on-tactics-and-the-goal-of-victory-against-al-hilol.html",
+          "title": "Islom Ismoilov speaks on tactics and the goal of victory against Al Hilol",
+          "publisher": "Zamin.uz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSApRic2GSKj9vVYGlPKH2JDgTEZ9mO1Uc6WCkqV0DmT3uOtHJ3LQRq4GbGXkA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKwfSJ86AFO6LCg-PTuX-dznOogWRI9OJoRUjJlMx8qcI-dii-CvmxRx1taDw"
         }
       ]
     },
     {
-      "query": "ian charleson",
+      "query": "strait of hormuz shipping blockade",
       "approx_searches": "200+",
-      "published_at": "2026-11-23T12:20:00Z",
+      "published_at": "2026-11-23T13:10:00Z",
       "related_news_urls": [
-        "https://www.npr.org/2026/11/23/nx-s1-6027946/ian-charleson-elsinore-andrew-scott-chariots-of-fire-gandhi",
-        "https://www.nytimes.com/2026/11/22/movies/andrew-scott-elsinore-ian-charleson.html",
-        "https://www.wsj.com/arts-culture/film/elsinore-review-andrew-scotts-shakespearean-struggle-689baf99"
+        "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/",
+        "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade",
+        "https://www.bloomberg.com/news/articles/2026-11-23/fake-iran-tanker-highlights-uncertainty-around-hormuz-traffic"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqs8oIwdw6uaaV8VI7_Var9cn4PxLZqEZN2j-bBq_0VJI58rMO1pOEMX0QeM",
-      "image_credit": "NPR",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEv0M0eZnyh9RsbsOTVpVJRfFPwIr1vLfsIkhrWsmStsBnr7v6VBMoOCHShq8",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.npr.org/2026/11/23/nx-s1-6027946/ian-charleson-elsinore-andrew-scott-chariots-of-fire-gandhi",
-          "title": "Ian Charleson played Hamlet while he was dying. Still, he was 'dazzling'",
-          "publisher": "NPR",
+          "url": "https://www.cbsnews.com/live-updates/iran-war-us-trump-blockade-strait-of-hormuz-ship-attacks/",
+          "title": "Live Updates: Iran says it will use all means to end U.S. blockade as Trump plays down escalating attacks",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTqs8oIwdw6uaaV8VI7_Var9cn4PxLZqEZN2j-bBq_0VJI58rMO1pOEMX0QeM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEv0M0eZnyh9RsbsOTVpVJRfFPwIr1vLfsIkhrWsmStsBnr7v6VBMoOCHShq8"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/22/movies/andrew-scott-elsinore-ian-charleson.html",
-          "title": "Andrew Scott on the Shattering Feat of Playing Ian Charleson in ‘Elsinore’",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnry7sn-GlAUR2K2CffK5rTFucOCyegnzfM1_t0tCxM2Y3Fx5r9q0bVdBm3aQ"
-        },
-        {
-          "url": "https://www.wsj.com/arts-culture/film/elsinore-review-andrew-scotts-shakespearean-struggle-689baf99",
-          "title": "‘Elsinore’ Review: Andrew Scott’s Shakespearean Struggle",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYm8C4_I-4KM5pBiuHFnzJCsgrTzAYn9FBpYxOa7XVh3o7CFT79B3ZPhvI32M"
-        }
-      ]
-    },
-    {
-      "query": "fire",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T12:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-        "https://www.aljazeera.com/video/newsfeed/2026/11/23/search-continues-for-dozens-missing-after-indonesia-candy-factory-fire",
-        "https://www.reuters.com/world/asia-pacific/indonesia-says-24-killed-factory-blaze-rescuers-search-dozens-missing-2026-11-23/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTceGfybY-nmGeVlI24e5TqmVALiBAGRKal2ITyXiMgSgNC_5Lrl677YU44Szs",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/23/world/asia/indonesia-factory-fire.html",
-          "title": "Dozens Unaccounted for After Fire Rips Through Candy Factory in Indonesia",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTceGfybY-nmGeVlI24e5TqmVALiBAGRKal2ITyXiMgSgNC_5Lrl677YU44Szs"
-        },
-        {
-          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/search-continues-for-dozens-missing-after-indonesia-candy-factory-fire",
-          "title": "Search continues for dozens missing after Indonesia candy factory fire",
+          "url": "https://www.aljazeera.com/video/newsfeed/2026/11/23/iran-threatens-response-to-any-attack-amid-naval-blockade",
+          "title": "Iran threatens response to any attack amid naval blockade",
           "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnxkr2nuxw1ljbxk94o1JROotfTNhBshJczjsnR4BsYOLETMzKtQq5PHwZTiM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSAVonOt3fpBhTyNK0XhqD4vafod22LBSKbHh7fSnHBblO4Mgq8XGrkM_5APvg"
         },
         {
-          "url": "https://www.reuters.com/world/asia-pacific/indonesia-says-24-killed-factory-blaze-rescuers-search-dozens-missing-2026-11-23/",
-          "title": "Indonesia says 24 killed in factory blaze as rescuers search for dozens missing",
-          "publisher": "Reuters",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/fake-iran-tanker-highlights-uncertainty-around-hormuz-traffic",
+          "title": "Fake Iran Tanker Highlights Uncertainty Around Hormuz Traffic",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4AnN-mIapk5TObIM5obgz8pM7ZObjr0KexJAeVVsewIyXRd1NNqFPaIE34vc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgNKcjO_a9s5QcwqMkPmUcL3XjHVXBsVntgXHxvxKNDHmn26_5a5tR2Stx_XA"
+        }
+      ]
+    },
+    {
+      "query": "musk foundation",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T13:10:00Z",
+      "related_news_urls": [
+        "https://fortune.com/2026/11/23/elon-musk-foundation-400-million-donations-2025/",
+        "https://www.bloomberg.com/news/articles/2026-11-18/elon-musk-s-giving-went-mostly-to-his-own-charity-last-year",
+        "https://mezha.net/eng/news/mezha-9ef91c57215173904b390576_musk_foundation_gave/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnwnfRgWa98DCuP5_rGAu-w1GTShwl2tnFTC3XKsWp181d9KI2xIubUejru_Q",
+      "image_credit": "Fortune",
+      "news": [
+        {
+          "url": "https://fortune.com/2026/11/23/elon-musk-foundation-400-million-donations-2025/",
+          "title": "Elon Musk's $16 billion foundation gave away $400 million in 2025, mostly to another Musk nonprofit",
+          "publisher": "Fortune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnwnfRgWa98DCuP5_rGAu-w1GTShwl2tnFTC3XKsWp181d9KI2xIubUejru_Q"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-18/elon-musk-s-giving-went-mostly-to-his-own-charity-last-year",
+          "title": "Elon Musk’s Giving Went Mostly to His Own Charity Last Year",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlWTnxjV0C8MEhxffADBYeaAszVaZsOTuDJrh6Y1wY3xEhbH09jo891EYhu5E"
+        },
+        {
+          "url": "https://mezha.net/eng/news/mezha-9ef91c57215173904b390576_musk_foundation_gave/",
+          "title": "Musk Foundation gave nearly $400 million in 2025, mostly to his other nonprofit",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRClfEo71ABVVCt2ClolAzQiO6a8FlBexiWR1jRrx6HamMFxhqSPUt9zGi0Kbg"
+        }
+      ]
+    },
+    {
+      "query": "kim jong un meets ambassadors",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T13:10:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/world/asia/north-koreas-kim-jong-un-welcomes-new-envoys-friendly-toward-us-8102b4aa",
+        "https://www.upi.com/Top_News/World-News/2026/11/23/Kim-Jong-Un-diplomatic-ceremony-ambassadors-foreign-ties/4881795418326/",
+        "https://www.stripes.com/theaters/asia_pacific/2026-11-23/kim-jong-un-north-korea-ambassadors-23551098.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9UyNIHWcd2U6naAYbcQvmmaIRpvVL0J_CpepX6xpp13eTuh-Eac3-yV_Rox4",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/world/asia/north-koreas-kim-jong-un-welcomes-new-envoys-friendly-toward-us-8102b4aa",
+          "title": "North Korea’s Kim Jong Un Welcomes New Envoys ‘Friendly Toward Us’",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9UyNIHWcd2U6naAYbcQvmmaIRpvVL0J_CpepX6xpp13eTuh-Eac3-yV_Rox4"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/World-News/2026/11/23/Kim-Jong-Un-diplomatic-ceremony-ambassadors-foreign-ties/4881795418326/",
+          "title": "Kim Jong Un vows to expand foreign ties at rare diplomatic ceremony",
+          "publisher": "upi",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnZwMYJowyZ5Km52V43xIPr0Z-2ad8gd0VaDuU2j7PshxJh4bHKQ98wUo-Qx8"
+        },
+        {
+          "url": "https://www.stripes.com/theaters/asia_pacific/2026-11-23/kim-jong-un-north-korea-ambassadors-23551098.html",
+          "title": "North Korean leader claims arms build-up for self-defense, not regional supremacy",
+          "publisher": "Stars and Stripes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGInzV5YbTHXfd14fv7UPx2svLbY5rzLqUe6mXuXT1sllY73IgvKAgGvpU_L4"
+        }
+      ]
+    },
+    {
+      "query": "the rookie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T13:10:00Z",
+      "related_news_urls": [
+        "https://www.nj.com/tv/2026/11/see-when-high-potential-the-rookie-and-more-abc-shows-return-in-2027.html",
+        "https://blexmedia.com/the-full-2027-midseason-schedule/",
+        "https://collider.com/abc-winter-2026-2027-schedule/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp1RXrq9ndqwRAXDpl1LWKZJ1QgJb5JJAz0xXg2o8p2fcR9kqFXKH4KY1tjMI",
+      "image_credit": "NJ.com",
+      "news": [
+        {
+          "url": "https://www.nj.com/tv/2026/11/see-when-high-potential-the-rookie-and-more-abc-shows-return-in-2027.html",
+          "title": "See when ‘High Potential,’ ‘The Rookie’ and more ABC shows return in 2027",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp1RXrq9ndqwRAXDpl1LWKZJ1QgJb5JJAz0xXg2o8p2fcR9kqFXKH4KY1tjMI"
+        },
+        {
+          "url": "https://blexmedia.com/the-full-2027-midseason-schedule/",
+          "title": "Your Favorite Show Is Coming Back -- Here's Exactly When: The Full 2027 Midseason Schedule",
+          "publisher": "Blex Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqPdo4Owpoty8L8yYqhZEgfDXnNetY7lus3tQTAnJXBO7JtyOAhDL19srbe-M"
+        },
+        {
+          "url": "https://collider.com/abc-winter-2026-2027-schedule/",
+          "title": "Every Show Premiering on ABC in Winter 2026–2027",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoailJc1HFpNh1xF8Fw3OEnTGBCapOGVyUkcLbEZyrjyQVsuRaNrza7H2j09c"
+        }
+      ]
+    },
+    {
+      "query": "غلامرضا نیکخواه",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T13:00:00Z",
+      "related_news_urls": [
+        "https://www.iranintl.com/202611232692",
+        "https://www.entekhab.ir/fa/news/949318/%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%86%DB%8C%DA%A9%D8%AE%D9%88%D8%A7%D9%87-%D8%A8%D9%87-%D8%B7%D9%88%D8%B1-%D9%86%D8%A7%DA%AF%D9%87%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1%DA%AF%D8%B0%D8%B4%D8%AA",
+        "https://www.bartarinha.ir/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D9%88%D8%B1%D8%B2%D8%B4%DB%8C-123/1629965-%D8%B3%DA%A9%D8%A7%D9%86%D8%B3%DB%8C-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%86%DB%8C%DA%A9%D8%AE%D9%88%D8%A7%D9%87-%DA%A9%D9%87-%D8%A8%DB%8C%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84%DB%8C-%D9%87%D8%A7-%D9%88%D8%A7%DB%8C%D8%B1%D8%A7%D9%84-%D8%B4%D8%AF"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1JnH18LVhkZka7c03IWM9kd6chzAl1PDqzOz1hfxjRr75rE2EHmXvvk9eLA",
+      "image_credit": "Iran International",
+      "news": [
+        {
+          "url": "https://www.iranintl.com/202611232692",
+          "title": "غلامرضا نیکخواه، بازیگر باسابقه سینما و تلویزیون درگذشت",
+          "publisher": "Iran International",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH1JnH18LVhkZka7c03IWM9kd6chzAl1PDqzOz1hfxjRr75rE2EHmXvvk9eLA"
+        },
+        {
+          "url": "https://www.entekhab.ir/fa/news/949318/%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%86%DB%8C%DA%A9%D8%AE%D9%88%D8%A7%D9%87-%D8%A8%D9%87-%D8%B7%D9%88%D8%B1-%D9%86%D8%A7%DA%AF%D9%87%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1%DA%AF%D8%B0%D8%B4%D8%AA",
+          "title": "غلامرضا نیکخواه درگذشت",
+          "publisher": "انتخاب",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQe4whPFUvdOvGJNXCqRAWFGCb1JoAMy4AunQNk0WWQ96SPP4NEk2OimHroDng"
+        },
+        {
+          "url": "https://www.bartarinha.ir/%D8%A8%D8%AE%D8%B4-%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D9%88%D8%B1%D8%B2%D8%B4%DB%8C-123/1629965-%D8%B3%DA%A9%D8%A7%D9%86%D8%B3%DB%8C-%D8%A7%D8%B2-%D8%A8%D8%A7%D8%B2%DB%8C-%D8%BA%D9%84%D8%A7%D9%85%D8%B1%D8%B6%D8%A7-%D9%86%DB%8C%DA%A9%D8%AE%D9%88%D8%A7%D9%87-%DA%A9%D9%87-%D8%A8%DB%8C%D9%86-%D8%A7%D8%B3%D8%AA%D9%82%D9%84%D8%A7%D9%84%DB%8C-%D9%87%D8%A7-%D9%88%D8%A7%DB%8C%D8%B1%D8%A7%D9%84-%D8%B4%D8%AF",
+          "title": "سکانسی از بازی غلامرضا نیکخواه که بین استقلالی‌ها وایرال شد",
+          "publisher": "مجله اینترنتی برترین ها",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjQCBS_14oSlj-2Ag4hAbpYateWhupa0FYpsrFjw6wIG9Aj-tqTWvI_DVE3_4"
+        }
+      ]
+    },
+    {
+      "query": "crwd",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T12:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-reports-third-quarter-fiscal-103000256.html",
+        "https://www.quantisnow.com/financials/CRWD",
+        "https://www.moomoo.com/community/feed/crwd-stock-earnings-prediction-will-crowdstrike-beat-earnings-what-to-117661157359621"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHg-BHMfcYMC1JWnjOFGg_tWIipQCNn2p3yzbxW_ELw2XBtw70-NKqHz9eVh4",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-reports-third-quarter-fiscal-103000256.html",
+          "title": "CrowdStrike Reports Third Quarter Fiscal Year 2027 Financial Results",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHg-BHMfcYMC1JWnjOFGg_tWIipQCNn2p3yzbxW_ELw2XBtw70-NKqHz9eVh4"
+        },
+        {
+          "url": "https://www.quantisnow.com/financials/CRWD",
+          "title": "CRWD Financials: Revenue $5.40B, Net Income $58.46M",
+          "publisher": "Quantisnow",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJwDWdOFoD9gY9cnjYeH-8sSAOeoNHuvAWvJnWWDJ6AlZSdKEJYVYYb8vQTmk"
+        },
+        {
+          "url": "https://www.moomoo.com/community/feed/crwd-stock-earnings-prediction-will-crowdstrike-beat-earnings-what-to-117661157359621",
+          "title": "CRWD Stock Earnings Prediction: Will CrowdStrike Beat Earnings? What to expect for the SPY this week",
+          "publisher": "Moomoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRgIFicYlsF5by8Os7Lk5NOqSLtTgxk53Ky2lecKbEW4AtRg9smozkXhzp7N0"
+        }
+      ]
+    },
+    {
+      "query": "elsa pataky",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T12:50:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+        "https://thoughtcatalog.com/jeremy-london/2026/11/police-charge-a-16-year-old-after-three-vehicles-were-stolen-from-chris-hemsworth-and-elsa-patakys-byron-bay-home/",
+        "https://www.autospies.com/mobile/article_mobile.aspx?artid=132762"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-Ssmsxkg7pcIgY4Sblsgx7C19fFO_g3ND1qSUVzTNnOTq5w0fTASn_IfA2Q",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/20/celebrity-news/teen-arrested-over-alleged-break-in-at-chris-hemsworths-australian-home/",
+          "title": "Teen, 16, arrested over alleged break-in at Chris Hemsworth’s Australian home",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb-Ssmsxkg7pcIgY4Sblsgx7C19fFO_g3ND1qSUVzTNnOTq5w0fTASn_IfA2Q"
+        },
+        {
+          "url": "https://thoughtcatalog.com/jeremy-london/2026/11/police-charge-a-16-year-old-after-three-vehicles-were-stolen-from-chris-hemsworth-and-elsa-patakys-byron-bay-home/",
+          "title": "Police Charge a 16-Year-Old After Three Vehicles Were Stolen from Chris Hemsworth and Elsa Pataky’s Byron Bay Home",
+          "publisher": "Thought Catalog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDdxLnFbiVfY1iGD5R75aPSa708BMkqmJ-sDkbS_EdL_rriCr4L16ppby40Hs"
+        },
+        {
+          "url": "https://www.autospies.com/mobile/article_mobile.aspx?artid=132762",
+          "title": "Thieves Steal The God Of Thunder's RAM And Raptor From Garage At Fortified Castle",
+          "publisher": "AutoSpies",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFKPksynxCtn0wdagHwOBKNUd9BD9HKVLA6Bxt6nwJC-lmFCEskLvWk6nlnRU"
+        }
+      ]
+    },
+    {
+      "query": "fa cup",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T12:50:00Z",
+      "related_news_urls": [
+        "https://www.oddschecker.com/insight/football/cng103-20261123-leeds-to-finish-in-the-top-6-of-the-premier-league-odds-cut-to-7-4",
+        "https://motleedsnews.com/match/supercomputer-predicts-final-premier-league-position-after-latest-leeds-united-win",
+        "https://www.bwfc.co.uk/news/womens-report-poulton-vics-0-wanderers-8"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1YQIXzu8dcP7WMDqddDx2DDRIXhe1C7Zv7qEAr6lkrX5IwVQQMxSHo70B7s4",
+      "image_credit": "Oddschecker",
+      "news": [
+        {
+          "url": "https://www.oddschecker.com/insight/football/cng103-20261123-leeds-to-finish-in-the-top-6-of-the-premier-league-odds-cut-to-7-4",
+          "title": "Leeds To Finish In The Top 6 Of The Premier League Odds Cut To 7/4",
+          "publisher": "Oddschecker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1YQIXzu8dcP7WMDqddDx2DDRIXhe1C7Zv7qEAr6lkrX5IwVQQMxSHo70B7s4"
+        },
+        {
+          "url": "https://motleedsnews.com/match/supercomputer-predicts-final-premier-league-position-after-latest-leeds-united-win",
+          "title": "Supercomputer predicts final Premier League position after latest Leeds United win",
+          "publisher": "MOT Leeds News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTftHgICScMMhOdw0bMOAkZf9OKv9pjBuNHZs2-VqMWvJNl2WZZlocv5UZcaWE"
+        },
+        {
+          "url": "https://www.bwfc.co.uk/news/womens-report-poulton-vics-0-wanderers-8",
+          "title": "Women's Report | Poulton Vics 0 Wanderers 8",
+          "publisher": "Bolton Wanderers FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXwMKdYBGuzZ7xgXyLCr86sIbRmY8sGiUlcsJX87QbHuP7ywsKzPMNAXGKFRc"
         }
       ]
     }
