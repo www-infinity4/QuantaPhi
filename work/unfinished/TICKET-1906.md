@@ -15,10 +15,10 @@ fence: null
 last_observed_at_utc: "2026-11-23T01:22:56Z"
 repo: www-infinity4/QuantaPhi
 branch: feat/new-world-user-identity-1906-20261122
-head_sha: "2c1e90a6015ee697114a77e322ae15013c1ddf55" # immutable base before current source commit
-pr: null
-tests: "Identity109/109; Brain97/97; ledger5/5. Browser launch blocked locally by OS socket restriction; registered CI fixture pending"
-ci: null
+head_sha: "6df99fec8f3047e61f5e2b9d7d30b420f13de6e7" # validated code head before this receipt-only checkpoint
+pr: "https://github.com/www-infinity4/QuantaPhi/pull/2122"
+tests: "Identity109/109; Brain97/97; ledger5/5; additional connector compatibility76/76. Real CI browser360/393/1280 passed at b2a7388; final-head repeat pending"
+ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/45094469562" # actual first-head browser pass; newer-head CI must be rechecked
 merged: false
 deployed: false
 live_verified: false
@@ -113,3 +113,12 @@ Owner-authorized request continues #1906 and #1907; no duplicate issue or owner-
 Current subtask: source implemented/tested; independent review/CI/release pending. Overall parent progress is unknown; source/tests are2 of4 scoped delivery milestones, with release and actual user acceptance outstanding. No production change, account recovery, billing, financial action or physical phone acceptance is claimed by this checkpoint.
 
 Independent Pink/Purple source review on the current patch found no blocking issues. It independently reran identity109/109 and Brain/retry97/97, checked1000 synthetic account IDs, confirmed account-key compatibility and fail-closed authentication/fenced quota markers. Browser CI and production/owner acceptance remain unverified.
+
+
+### PR and browser receipt · same session
+
+- [PR2122](https://github.com/www-infinity4/QuantaPhi/pull/2122) contains the same reviewed local Git tree. Latest code head before this receipt-only edit: `6df99fec8f3047e61f5e2b9d7d30b420f13de6e7`.
+- [Chromium run45094469562](https://github.com/www-infinity4/QuantaPhi/actions/runs/45094469562), job137431088386, genuinely passed the new identity card at360,393,1280px: exact clipboard copy, no horizontal overflow,44px minimum control, optional provider outage, stale A/B response rejection and logout clearing. These are synthetic accounts, not actual owner-phone verification.
+- Two initial source guards caught an unnecessarily changed shared asset pin. The account page now retains the existing common connector revision; additional sign-in/provider/UI suite76/76 passes. The primary site serves textual assets no-cache/must-revalidate and Bubbles SW excludes these modules. Final-head CI repeats all checks.
+- Git transport lacked an authenticated username. The existing authenticated GitHub connector uploaded exactly the reviewed public source tree, without tokens/private keys/device credentials. It did not issue a Brain runner claim. Production updates remain gated on final-head CI/merge.
+- Next: verify final-head checks, merge with expected head when permitted, preserve production binding identities on content-only promotion, then read back production and record user acceptance separately in #1906/#1907.
