@@ -784,7 +784,7 @@ async function runMcpRead(request,env,command,originalQuestion=''){
 export function isAiQuotaError(error){
  const code=String(error?.code??'');
  const message=String(error?.message||'').slice(0,600);
- return code==='4006'||/\\b4006\\b/.test(message)||
+ return code==='4006'||/\b4006\b/.test(message)||
   /(?:daily|free).{0,70}(?:neuron|quota|allocation).{0,70}(?:exceeded|exhausted|limit)/i.test(message)||
   /(?:neuron|quota|allocation).{0,70}(?:daily|free).{0,70}(?:exceeded|exhausted|limit)/i.test(message);
 }
