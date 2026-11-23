@@ -3,27 +3,279 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T07:31:26.814391Z",
+  "checked_at": "2026-11-23T08:01:36.367834Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "elon musk",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T07:40:00Z",
+      "related_news_urls": [
+        "https://www.basenor.com/blogs/news/tesla-splits-ai-hardware-ai5-goes-to-optimus-cars-stay-on-ai4",
+        "https://finance.yahoo.com/technology/ai/articles/musk-says-tesla-real-world-045001740.html",
+        "https://wccftech.com/elon-musk-says-teslas-ai4-computer-now-costs-twice-as-much-due-to-memory-and-storage-price-hikes/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CRqPX-wGQSt9hDV0kLjAIhIDkwbjODelW_4Q5zpjRnobsSnZ_OtCtQl82AI",
+      "image_credit": "BASENOR - Tesla Accessories",
+      "news": [
+        {
+          "url": "https://www.basenor.com/blogs/news/tesla-splits-ai-hardware-ai5-goes-to-optimus-cars-stay-on-ai4",
+          "title": "Tesla Splits AI Hardware: AI5 Goes to Optimus, Cars Stay on AI4",
+          "publisher": "BASENOR - Tesla Accessories",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CRqPX-wGQSt9hDV0kLjAIhIDkwbjODelW_4Q5zpjRnobsSnZ_OtCtQl82AI"
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/musk-says-tesla-real-world-045001740.html",
+          "title": "Musk Says Tesla’s Real-World AI Will Get Smarter by “About an Order of Magnitude per Year”",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6Tn5uZP9zyAfKy3wHoTk2sLxnhK_ksrv6g3K6Rp6mjd-3oGIyNWfLrSTsa58"
+        },
+        {
+          "url": "https://wccftech.com/elon-musk-says-teslas-ai4-computer-now-costs-twice-as-much-due-to-memory-and-storage-price-hikes/",
+          "title": "Elon Musk Blames Memory And Storage Price Hikes For Doubling Tesla’s AI4 Computer Costs, Says It “Costs Twice As Much”",
+          "publisher": "Wccftech",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7RQy-I0opY0K0cuZHiC8EgtQ4Kx8I2SaltZ5r4H3lAlOHLRPdaCenJD-2LL0"
+        }
+      ]
+    },
+    {
+      "query": "stranger things",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T07:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/21/theater/joe-keery-other-desert-cities-broadway.html",
+        "https://collider.com/stranger-things-other-worlds-spin-off-release-window-2028/",
+        "https://theboar.org/2026/11/stranger-things-other-worlds-are-we-outstaying-our-welcome-in-hawkins/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoLQMNz4ZO6-dBM_sBiFVRTku2iSdvGb0SEdvFC0W34a9T4LztwArqDj1YRG4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/21/theater/joe-keery-other-desert-cities-broadway.html",
+          "title": "From ‘Stranger Things’ to Broadway, Everyone Knows Joe Keery",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoLQMNz4ZO6-dBM_sBiFVRTku2iSdvGb0SEdvFC0W34a9T4LztwArqDj1YRG4"
+        },
+        {
+          "url": "https://collider.com/stranger-things-other-worlds-spin-off-release-window-2028/",
+          "title": "‘Stranger Things’ Officially Sets 2028 Netflix Return",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbvV9s18we2Db7V5TmLf7RiMjtc8KHVWehSylutQ48o5Mtyx7x_XXEu7a1VI"
+        },
+        {
+          "url": "https://theboar.org/2026/11/stranger-things-other-worlds-are-we-outstaying-our-welcome-in-hawkins/",
+          "title": "Stranger Things Other Worlds: Are we outstaying our welcome in Hawkins?",
+          "publisher": "The Boar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj0VmhFZUTcBY1Errd0uC0n1NFqQaNkLRi406ez4EljypSQTVLZ1NWdNCzeaE"
+        }
+      ]
+    },
+    {
+      "query": "swimming",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T07:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html",
+        "https://www.ctinsider.com/gametimect/article/girls-swimming-class-ll-state-championship-ciac-22535838.php",
+        "https://www.ctinsider.com/gametimect/article/ciac-state-open-girls-swimming-greenwich-champions-22544823.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzUXk_QjgeREmgf0CJ6nfaXk91WCYJYPUtgxPwasEXoJjOFQB6UHb-iqc2o8k",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html",
+          "title": "Greenwich girls swimming holds off Ridgefield for second straight State Open title",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzUXk_QjgeREmgf0CJ6nfaXk91WCYJYPUtgxPwasEXoJjOFQB6UHb-iqc2o8k"
+        },
+        {
+          "url": "https://www.ctinsider.com/gametimect/article/girls-swimming-class-ll-state-championship-ciac-22535838.php",
+          "title": "Greenwich holds off Ridgefield for 4th straight Class LL girls swimming title, 33rd overall",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwOpfijMYHZwJzSsUZa2BuCDzK0kKHwi3W9tWiXdFqmqOnTTS_Uiz_3C-EmZI"
+        },
+        {
+          "url": "https://www.ctinsider.com/gametimect/article/ciac-state-open-girls-swimming-greenwich-champions-22544823.php",
+          "title": "Greenwich girls swimming holds off Ridgefield for second straight State Open title",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9_VW2CSnshO47EJp-7OKxvcuFfQJDl9ENp2E3HJuMpsYSVj3tIoSWc8zCxVo"
+        }
+      ]
+    },
+    {
+      "query": "黎曼猜想",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T07:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/zhongwen/articles/cwe85gr487dno/simp",
+        "https://cn.wsj.com/articles/anthropic-mathematician-says-claude-has-solved-the-most-famous-problem-in-math-f000b8ed",
+        "https://www.huxiu.com/article/4907555.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGDP-H_KUuvF001wqrBYGoExeJW853oh30aE4KDUPU059a7YvMxpxGPoXmYmQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/zhongwen/articles/cwe85gr487dno/simp",
+          "title": "Anthropic公司或许已解决重大数学难题：黎曼猜想",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGDP-H_KUuvF001wqrBYGoExeJW853oh30aE4KDUPU059a7YvMxpxGPoXmYmQ"
+        },
+        {
+          "url": "https://cn.wsj.com/articles/anthropic-mathematician-says-claude-has-solved-the-most-famous-problem-in-math-f000b8ed",
+          "title": "Anthropic数学家称Claude攻克了数学界最著名难题",
+          "publisher": "华尔街日报中文网",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXbNNQm8GL29MRXU4phjChNaGiTgVDJHnTnSF29jxhKR5DV7KYXPrlVq4Hq4"
+        },
+        {
+          "url": "https://www.huxiu.com/article/4907555.html",
+          "title": "Claude协助数学家形式化证明黎曼猜想，引发对知识精英新闻节食与算法神话的反思",
+          "publisher": "虎嗅",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyrDfTPrgnWBa4XdmdXYqdo6KrVttJJtiv6w6NGqrghyBLTovOOG3NpI1BYM"
+        }
+      ]
+    },
+    {
+      "query": "joe jonas",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T07:30:00Z",
+      "related_news_urls": [
+        "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
+        "https://www.imdb.com/es/news/ni66111283/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/joe-jonas-dating-history-full-225333301.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA",
+      "image_credit": "Us Weekly",
+      "news": [
+        {
+          "url": "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
+          "title": "Joe Jonas and Girlfriend Tatiana Gabriela Split After 1 Year of Dating: ‘Things Shifted’",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA"
+        },
+        {
+          "url": "https://www.imdb.com/es/news/ni66111283/",
+          "title": "Joe Jonas Splits from Girlfriend Tatiana Gabriela After Year of Dating",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrI9AGlX6enXbIVBQU0E91scDTDgZl6g9oxbZBVM5JwtTAqD92kvORr9T0kog"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/joe-jonas-dating-history-full-225333301.html",
+          "title": "Joe Jonas Dating History: Full List of His Famous Ex-Girlfriends Revealed",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFeT5UCGJdLu0BcEpPmCJG-5Ob1xVhEaseE0peOKtsfVQrshA1brt25GThljE"
+        }
+      ]
+    },
+    {
+      "query": "sa vs ban",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T07:20:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/story/aiden-markram-says-it-s-quite-a-smooth-transition-to-be-leading-south-africa-again-1563619",
+        "https://www.cricbuzz.com/cricket-news/141019/south-africa-vs-bangladesh-2nd-test-injuries-wont-take-the-sting-out-of-centurion-test-cricbuzzcom",
+        "https://www.thedailystar.net/sports/cricket/news/rain-delays-toss-centurion-test-awaits-start-4331056"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1wUXDZlVj15XHcBT04Ypuemqd6TRJw61ZaL0kz5JKZm-8S9VcH9gIU628sS0",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/story/aiden-markram-says-it-s-quite-a-smooth-transition-to-be-leading-south-africa-again-1563619",
+          "title": "'It's quite a smooth transition'- Markram on stepping in for Bavuma",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1wUXDZlVj15XHcBT04Ypuemqd6TRJw61ZaL0kz5JKZm-8S9VcH9gIU628sS0"
+        },
+        {
+          "url": "https://www.cricbuzz.com/cricket-news/141019/south-africa-vs-bangladesh-2nd-test-injuries-wont-take-the-sting-out-of-centurion-test-cricbuzzcom",
+          "title": "South Africa vs Bangladesh, 2nd Test: Injuries won't take the sting out of Centurion Test",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNAZkFCP_2-CgJWleUFo6_wDFGOMmWGYUuPkFshstUm2b7ZLPeEQSqlQhOxMM"
+        },
+        {
+          "url": "https://www.thedailystar.net/sports/cricket/news/rain-delays-toss-centurion-test-awaits-start-4331056",
+          "title": "Rain delays toss as Centurion Test awaits start",
+          "publisher": "The Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTXq8sah4C9tGUDRz8mXOqHugYvxWQokc9wGkIzHGse_eT_I5UwPBrVr4b9o"
+        }
+      ]
+    },
+    {
+      "query": "paul walker",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T07:20:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
+        "https://www.ign.com/videos/gta-6-how-to-find-the-fast-and-the-furious-car-easter-egg",
+        "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
+          "title": "Where to Find Paul Walker’s 1995 Mitsubishi Eclipse in GTA 6",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM"
+        },
+        {
+          "url": "https://www.ign.com/videos/gta-6-how-to-find-the-fast-and-the-furious-car-easter-egg",
+          "title": "GTA 6 - How to Find the Fast and the Furious Car Easter Egg",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw4PdJS8FBxlvrfv0Rpl7KUU1MreVbNURHIKlu-sStWpmDRdhfK24j_CHQfPo"
+        },
+        {
+          "url": "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+          "title": "Where To Find The Paul Walker 'Fast And Furious' Tribute Car In GTA 6",
+          "publisher": "Jalopnik",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbmWQD2Q_uY_E2qC0vkQ_YNl9iCmdn6ss1nSP97gYiLlE3178NZELPUar1ayU"
+        }
+      ]
+    },
     {
       "query": "iowa",
       "approx_searches": "5000+",
       "published_at": "2026-11-23T07:10:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
-        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
-        "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html"
+        "https://www.wqad.com/article/news/local/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
+        "https://www.kcrg.com/2026/11/22/lead-explosion-experts-question-emergency-army-vows-blast-will-proceed/",
+        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRPyfpIOvVq4awVixcRzbL8MDzxLTdGaEjrjG5IbsOAHGK_2hjw7G2qiaQlMs",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd0P_L61Co-G45DXEXbwZ0V1gbSUVkm3X_XRzjev9mjbMY1pXhGNaAU3PcIS4",
+      "image_credit": "WQAD",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/21/us/iowa-army-detonation-what-we-know",
-          "title": "US Army intends to detonate bomb-making material in Iowa on Wednesday despite a court pause. Here’s what we know",
-          "publisher": "CNN",
+          "url": "https://www.wqad.com/article/news/local/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
+          "title": "Noon Sunday deadline set in Iowa Army blast challenge; Fort Madison says detonation could come Monday or Tuesday",
+          "publisher": "WQAD",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRPyfpIOvVq4awVixcRzbL8MDzxLTdGaEjrjG5IbsOAHGK_2hjw7G2qiaQlMs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd0P_L61Co-G45DXEXbwZ0V1gbSUVkm3X_XRzjev9mjbMY1pXhGNaAU3PcIS4"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/11/22/lead-explosion-experts-question-emergency-army-vows-blast-will-proceed/",
+          "title": "UPDATE: Army says lead azide detonation will take place Wednesday",
+          "publisher": "KCRG",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0_4lgVcbRqSWCRrmha3Xpk1_tDGB0EnXlFRcb5Hp6QJWO_qDmIxMTFXTDBk"
         },
         {
           "url": "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
@@ -31,13 +283,6 @@
           "publisher": "Army.mil",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRziwWClQT0pD90Npdp7OvkGRE_Vf3FyUZpXjfuUNg8zN2aUOKzI1nYP8er6I0"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/21/climate/army-lead-azide-blast.html",
-          "title": "The Army Rejected a Cleaner Option to Destroy Lead-Laced Explosives in Iowa",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmYzWu-lgSL5VzF2TjrTBBMOWnm152NrStpBLxYIgz8xrg-ush_ULlRVYES1A"
         }
       ]
     },
@@ -82,8 +327,8 @@
       "published_at": "2026-11-23T07:00:00Z",
       "related_news_urls": [
         "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks",
-        "https://www.billionaires.africa/2026/11/21/american-billionaire-elon-musk-loses-73-8-billion-in-a-day-as-worlds-five-richest-shed-146-billion/",
-        "https://www.modernghana.com/videonews/cgtn/2/755195"
+        "https://cwibc.co.id/en/musk-wealth-tesla-spacex-decline",
+        "https://demokratis.co.id/en/billionaire-fortunes-nasdaq-selloff"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM",
       "image_credit": "Benzinga",
@@ -96,263 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM"
         },
         {
-          "url": "https://www.billionaires.africa/2026/11/21/american-billionaire-elon-musk-loses-73-8-billion-in-a-day-as-worlds-five-richest-shed-146-billion/",
-          "title": "World’s five richest lose $146B as Nasdaq falls 5.3%",
-          "publisher": "Billionaires.Africa",
+          "url": "https://cwibc.co.id/en/musk-wealth-tesla-spacex-decline",
+          "title": "Musk Loses 64 Billion as Tesla and SpaceX Shares Fall",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrM2A0AkOu-D_poIHvQyxbHLtnC__MJaTrlFq22BEtk4hLs076Q7S6QPN5QJ4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Lr4NtfQtiQxErsKtxSPes73N5yTVB5qg-1gZV8oUfEAYnlZ8L8ZhbaIPC2Q"
         },
         {
-          "url": "https://www.modernghana.com/videonews/cgtn/2/755195",
-          "title": "Musk’s political spending raises business questions",
-          "publisher": "Modern Ghana",
+          "url": "https://demokratis.co.id/en/billionaire-fortunes-nasdaq-selloff",
+          "title": "Five Richest Billionaires Lose 146 Billion as Nasdaq Falls",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYqhobdEJp2Q9ygiPUdKRs3AzQYTHSpDaXEPcsC54EA4iHUUNohgU_cMKwYnQ"
-        }
-      ]
-    },
-    {
-      "query": "la noire",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T06:50:00Z",
-      "related_news_urls": [
-        "https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121",
-        "https://en.gamegpu.com/news/igry/rockstar-australia-predpolozhitelno-rabotaet-nad-prodolzheniem-l-a-noire",
-        "https://bsinews.id/en/rockstar-la-noire-zodiac-sequel"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkXhQCnvAJhnWIPiQ0ntqPr-UI87Qz92JQGG-aUdANla16bzaC-ubcN5rcdG8",
-      "image_credit": "GAMINGbible",
-      "news": [
-        {
-          "url": "https://www.gamingbible.com/news/rockstar-games-next-game-revealed-gta-6-theory-la-noire-072177-20261121",
-          "title": "Rockstar Games' next game revealed as GTA 6 ending confirms long-standing theory",
-          "publisher": "GAMINGbible",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkXhQCnvAJhnWIPiQ0ntqPr-UI87Qz92JQGG-aUdANla16bzaC-ubcN5rcdG8"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/igry/rockstar-australia-predpolozhitelno-rabotaet-nad-prodolzheniem-l-a-noire",
-          "title": "Rockstar Australia is reportedly working on a sequel to LA Noire.",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNqzHP40rRGZdtvktRV0JkSNJ-z8oYNTD7gsjm9cqgCh9jWxoTJhyqNYsk5U0"
-        },
-        {
-          "url": "https://bsinews.id/en/rockstar-la-noire-zodiac-sequel",
-          "title": "Rockstar LA Noire 2 Leak Points to Zodiac Killer Story",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzQ-Bjeod9WvQSYR-rL497TWm5vbD5ug8N9TEWsxab4FB3zEHcUJWUWpeaXWs"
-        }
-      ]
-    },
-    {
-      "query": "last mission of chapter 1 gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T06:50:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/int-en/gta-6-beginners-guide",
-        "https://www.polygon.com/gta-6-guides-walkthroughs-tips/",
-        "https://www.vice.com/en/article/gta-6-chapter-1-length-missions-missable-content/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2VSE2DMTknZ0n2Wb6vmiD-nZXj4_WSER-JwIbG41cCm2w1icS4-wP2NYysMM",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/int-en/gta-6-beginners-guide",
-          "title": "GTA 6 beginner’s guide: Essential tips and hidden mechanics",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2VSE2DMTknZ0n2Wb6vmiD-nZXj4_WSER-JwIbG41cCm2w1icS4-wP2NYysMM"
-        },
-        {
-          "url": "https://www.polygon.com/gta-6-guides-walkthroughs-tips/",
-          "title": "GTA 6 guides and walkthroughs",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwTKyw3cjWnSQYLk4lBXv602oW4wc-f_8JAMnj5qZQrJhZkh1uy9XaunAXkz4"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-1-length-missions-missable-content/",
-          "title": "How Long Is Chapter 1 in GTA 6? Final Mission and Missable Content",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgMWAwOWlAnTGxtGl7PAMwbkpP0D3bZUYOEnGwcxzlaaCwHAXvErNRKQi4xPY"
-        }
-      ]
-    },
-    {
-      "query": "spacex",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T06:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/elon-musks-tesla-spacex-formed-102000717.html",
-        "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-        "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVfrmrC3rulYFeaqs1x7xOp51LXGD9ihU3rX3WGmD0fcnjV4cLw3Bdbi5wybE",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/elon-musks-tesla-spacex-formed-102000717.html",
-          "title": "Elon Musk's Tesla and SpaceX Each Formed a Special Committee to Explore a Merger as His AI Spending Accelerates. Here's Why Combining Them Could Reshape How Investors Value Tesla's",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVfrmrC3rulYFeaqs1x7xOp51LXGD9ihU3rX3WGmD0fcnjV4cLw3Bdbi5wybE"
-        },
-        {
-          "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-          "title": "Is SpaceX-Tesla Merger Imminent?",
-          "publisher": "Puck",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9cRYnHyQK9fhKeKu3lQMdNgcdZ7nIFEFljsQBp3V9oGgoBQnjAXYvcPphKo"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
-          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWCZqqEwfd9ld7NePLhuzT9I3ifd9pPA6LVh9ESnrTG-rXx-9TX4Wt_LeGbc"
-        }
-      ]
-    },
-    {
-      "query": "ben wang",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T06:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
-        "https://variety.com/2026/film/box-office/sunrise-on-the-reaping-box-office-hunger-games-opening-weekend-exceeds-expectations-1236953061/",
-        "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ12dO5pH53RfAQp9Yhvy5AH_J4yAwSCvijcldrN9l5a_C_qG9jyrE7RtJAuYA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
-          "title": "‘Hunger Games’ Rebounds With $120 Million Opening for ‘Sunrise on the Reaping’ at Box Office",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ12dO5pH53RfAQp9Yhvy5AH_J4yAwSCvijcldrN9l5a_C_qG9jyrE7RtJAuYA"
-        },
-        {
-          "url": "https://variety.com/2026/film/box-office/sunrise-on-the-reaping-box-office-hunger-games-opening-weekend-exceeds-expectations-1236953061/",
-          "title": "Box Office: ‘Sunrise on the Reaping’ Reignites ‘Hunger Games’ Franchise With $120 Million Debut",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHdUkza5rsK6M8QyTnbKmmPGCg3S2WGsqrrvpzKJcpUTaI_cekC7NO9dN4EI"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review",
-          "title": "'Sunrise on the Reaping' feels like sunset for the 'Hunger Games' franchise",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMSv1HxkFwHITnu11W46cMp-cT8dTvxku1B8N66NLsCIGvaD4OwkbM-M09V9k"
-        }
-      ]
-    },
-    {
-      "query": "enrique peña nieto",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T06:10:00Z",
-      "related_news_urls": [
-        "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/",
-        "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html",
-        "https://apnews.com/article/mexico-capo-captura-chapo-isidro-historial-4833e5a93c3bdbc7def3ea466e954c7a"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9WSWoEEvOYNR5_Ez7bNkocTpTejIbVy1RzIUuB1Bztu9xiQOfLaOGR27MzI",
-      "image_credit": "PolíticoMX",
-      "news": [
-        {
-          "url": "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/",
-          "title": "Vicente Fox, Felipe Calderón y Enrique Peña Nieto, los presidentes más viajeros de México",
-          "publisher": "PolíticoMX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9WSWoEEvOYNR5_Ez7bNkocTpTejIbVy1RzIUuB1Bztu9xiQOfLaOGR27MzI"
-        },
-        {
-          "url": "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html",
-          "title": "La caída del Chapo Isidro afianza la ofensiva de Sheinbaum contra los cárteles en México",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qx89T4ry8eY9gHGWsC59xB10O6j-XE1EV2xohHA6SPUf8MAtLRbqskmGUNE"
-        },
-        {
-          "url": "https://apnews.com/article/mexico-capo-captura-chapo-isidro-historial-4833e5a93c3bdbc7def3ea466e954c7a",
-          "title": "Antes de ser detenido, el líder criminal mexicano “El Chapo Isidro” pasó de narco menor a capo",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS16I2tHZY6WNS61tCVhKgKInSNorUH9PdWMBnSZAzunLuV6psfixW4Y6KOvws"
-        }
-      ]
-    },
-    {
-      "query": "ign gta 6 map",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T06:00:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
-        "https://opencritic.com/news/40157/grand-theft-auto-6-has-beautiful-tribute",
-        "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
-          "title": "GTA 6 Dev Honors Late Mother With In-Game Memorial That Players Can Visit",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU"
-        },
-        {
-          "url": "https://opencritic.com/news/40157/grand-theft-auto-6-has-beautiful-tribute",
-          "title": "Grand Theft Auto 6 Has Beautiful Tribute",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRk5EylefZdpbWUN9P6o-zpqyUdmv0RUOAuEl1ZZlkHQE6I640AZrYDyklowk"
-        },
-        {
-          "url": "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html",
-          "title": "GTA 6 hidden memorial: Rockstar developer honors late mother who bought him Vice City",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTr-tkUAFtMDfBP0ALLOdR8ZCCz1bzquZ-zJr1yHska1gmGOVzVWEXnXIReBg"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 chapter 2 mission list",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T06:00:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/us-en/gta-6-complete-mission-list",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/",
-        "https://space4games.com/en/games-en/gta-6-trophy-guide/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/us-en/gta-6-complete-mission-list",
-          "title": "GTA 6: A guide to every mission and chapter",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/",
-          "title": "Here's every GTA 6 mission and chapter",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSHNhYkSSyX26GVseDckS4mWftuzCHE-gYWfsG-cEQc24whyj1k9B6A88y4dw"
-        },
-        {
-          "url": "https://space4games.com/en/games-en/gta-6-trophy-guide/",
-          "title": "GTA 6: All 55 Trophies and How to Unlock Them",
-          "publisher": "space4games",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY61z6-KcLji_L5ZYCSohd7AAxSya-Wpueh-D9BLgjxXQcJQ63JO51oMhmeX0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDu7wQyC0HMFoaPx7bksFsxx4jxDj-q2i6asUdQMXyQ24qe8pbP6OFl6WD_8"
         }
       ]
     }
