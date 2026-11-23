@@ -779,6 +779,15 @@ async function runMcpRead(request,env,command,originalQuestion=''){
  const result=await execute(request,env,cases[command.name]());
  return result.json();
 }
+// Cloudflare Workers AI quota exhaustion is not a failed wallet sign-in or
+// a transient model error. Do not consume more inference attempts for 4006.
+export function isAiQuotaError(error){
+ const code=String(error?.code??'');
+ const message=String(error?.message||'').slice(0,600);
+ return code==='4006'||/\\b4006\\b/.test(message)||
+  /(?:daily|free).{0,70}(?:neuron|quota|allocation).{0,70}(?:exceeded|exhausted|limit)/i.test(message)||
+  /(?:neuron|quota|allocation).{0,70}(?:daily|free).{0,70}(?:exceeded|exhausted|limit)/i.test(message);
+}
 async function runChatModel(env,model,options){
  const usable=result=>{
   const text=result?.response??result?.choices?.[0]?.message?.content;
@@ -793,12 +802,14 @@ async function runChatModel(env,model,options){
  try{
   const first=usable(await env.AI.run(model,options));
   return {...first,verifiedModel:model};
- }catch{
+ }catch(error){
+  if(isAiQuotaError(error))throw error;
   try{
    const retry=usable(await env.AI.run(model,{...options,reasoning_effort:'low',
     max_tokens:Math.min(options.max_tokens||650,1600)}));
    return {...retry,verifiedModel:model};
-  }catch{
+  }catch(error){
+   if(isAiQuotaError(error))throw error;
    // Use the smaller, documented Cloudflare Workers AI model rather than
    // failing the entire conversation after one provider/model outage.
    const fallbackModel='@cf/openai/gpt-oss-20b';
@@ -933,6 +944,10 @@ export default {async fetch(request,env){
   if(data.receipt?.tool==='github.read_file')return data.receipt.status==='complete'?finishSearchReply(result,summarize,12000,clean(body.request)):result;
   return await summarize();
  }catch(error){
+  // Never conflate a free inference allowance outage with revoked login.
+  if(isAiQuotaError(error))return response(request,{ok:false,error:'ai_daily_limit',
+   output:'Bubbles AI has reached its daily free processing limit. Your wallet and sign-in were not changed by this request. AI replies can resume when free capacity is available; non-AI tools remain separate.',
+   receipt:{status:'failed',reason:'ai_capacity_unavailable'}},429);
   const invalid=error instanceof SyntaxError;
   return response(request,{ok:false,error:invalid?'invalid_request_json':'assistant_request_failed',output:invalid?'Bubbles could not read your message. Please resend it.':'Bubbles could not complete the AI reply. Your request was not completed; please try again.',receipt:{status:'failed'}},invalid?400:502);
  }
