@@ -166,3 +166,31 @@ test('Access issuer checks signed RSA JWT, owner, expiry and audience before wri
  assert.match(issuer,/crypto\.subtle\.verify/);
  assert.match(issuer,/Cf-Access-Jwt-Assertion/);
 });
+
+test('Access issuer backend rejection is contained as a sanitized temporary outage, not Worker 1101',async()=>{
+ const vm=require('node:vm'),crypto=require('node:crypto').webcrypto;
+ let source=fs.readFileSync('workers/unified-wallet/worker.js','utf8');
+ const start=source.indexOf('async function verifiedAccessEmail(');
+ const issuer=source.indexOf('async function issueOwnerRecovery(',start);
+ assert.ok(start>=0&&issuer>start,'locate actual production issuer');
+ // Authentication is independently verified above with real fixture JWTs.
+ // This test isolates the dispatcher's asynchronous D1 failure boundary.
+ source=source.slice(0,start)+"async function verifiedAccessEmail(){return 'verified-fixture';}\n"+source.slice(issuer);
+ source=source.replace(/^import .*;\r?\n/gm,'').replace('export default {','globalThis.walletWorker = {');
+ const sandbox={Request,Response,URL,Headers,TextEncoder,TextDecoder,Uint8Array,btoa,atob,crypto,AbortSignal,console:{warn(){}}};
+ vm.runInNewContext(source,sandbox,{filename:'unified-wallet-fixture.js'});
+ const endpoint='https://wallet-recovery.quantaphi.org/v1/wallet/issue-recovery',origin=new URL(endpoint).origin;
+ let queryCount=0;
+ const env={RECOVERY_ACCESS_AUD:'fixture',RECOVERY_ACCESS_ISSUER:'https://fixture.cloudflareaccess.com',
+  RECOVERY_OWNER_EMAIL:'owner@example.test',RECOVERY_OWNER_ACCOUNT_ID:'existing-fixture-account',
+  IDENTITY_DB:{prepare(){queryCount++;return{bind(){return{async first(){throw Error('D1_PRIVATE_QUOTA_DETAIL_DO_NOT_EXPOSE')}}}}}}};
+ const get=await sandbox.walletWorker.fetch(new Request(endpoint),env,{});
+ assert.equal(get.status,200);
+ const denied=await sandbox.walletWorker.fetch(new Request(endpoint,{method:'POST',headers:{Origin:'https://other.example','Sec-Fetch-Site':'cross-site'}}),env,{});
+ assert.equal(denied.status,403);
+ assert.equal(queryCount,0,'GET and rejected cross-site POST never write grants or query D1');
+ const response=await sandbox.walletWorker.fetch(new Request(endpoint,{method:'POST',headers:{Origin:origin,'Sec-Fetch-Site':'same-origin'}}),env,{});
+ assert.equal(response.status,503);
+ assert.deepEqual(await response.json(),{error:'wallet_recovery_temporarily_unavailable'});
+ assert.equal(queryCount,1);
+});
