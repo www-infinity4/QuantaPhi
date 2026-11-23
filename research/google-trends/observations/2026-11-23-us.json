@@ -3,156 +3,121 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T17:01:31.181452Z",
+  "checked_at": "2026-11-23T17:30:56.814214Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ben stiller",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T16:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
-        "https://people.com/owen-wilson-on-working-with-ariana-grande-robert-de-niro-focker-in-law-exclusive-12244595",
-        "https://www.creativescreenwriting.com/how-john-hamburg-crafts-a-focker-comedy-inside-focker-in-law-with-the-writer-behind-the-meet-the-parents-franchise"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
-          "title": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI"
-        },
-        {
-          "url": "https://people.com/owen-wilson-on-working-with-ariana-grande-robert-de-niro-focker-in-law-exclusive-12244595",
-          "title": "Owen Wilson on Working with Ariana Grande, Robert De Niro for ‘Focker-in-Law’ (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTr1XfNh9wTcbsVX1CGUoaTmIpbKhPBWZZflc4VfGYtCKwPLZJPvyUe_TnOtpM"
-        },
-        {
-          "url": "https://www.creativescreenwriting.com/how-john-hamburg-crafts-a-focker-comedy-inside-focker-in-law-with-the-writer-behind-the-meet-the-parents-franchise",
-          "title": "How John Hamburg Crafts a Focker Comedy: Inside ‘Focker-In-Law’ with the Writer Behind the ‘Meet The Parents’ Franchise",
-          "publisher": "Creative Screenwriting",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNAqYW6c8LGbC4_yO9c7heINbnE2R2kjoDkxpsUpLD_fjHrps6CThRLOsWp2s"
-        }
-      ]
-    },
-    {
-      "query": "charlie cox",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T16:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html",
-        "https://comicbook.com/movies/news/marvels-charlie-cox-asked-to-audition-for-james-bond-and-the-answer-he-got-is-surprising/",
-        "https://ew.com/charlie-cox-didnt-get-james-bond-audition-after-being-told-he-was-too-old-12274565"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzCa__55UcHqiSNNarpoUSGK8NW-Rg-dq6h6Wu_QDGdaC6PZbQm--Bldficqc",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html",
-          "title": "Charlie Cox details brutal reason he was turned down for James Bond role",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzCa__55UcHqiSNNarpoUSGK8NW-Rg-dq6h6Wu_QDGdaC6PZbQm--Bldficqc"
-        },
-        {
-          "url": "https://comicbook.com/movies/news/marvels-charlie-cox-asked-to-audition-for-james-bond-and-the-answer-he-got-is-surprising/",
-          "title": "Marvel's Charlie Cox Asked to Audition for James Bond, And the Answer He Got Is Surprising",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKHbLwet_hOcxuUZqdPjd9IZu_HkPNPBeoGoGARExtCmo827QVUDBY3VZzHQ"
-        },
-        {
-          "url": "https://ew.com/charlie-cox-didnt-get-james-bond-audition-after-being-told-he-was-too-old-12274565",
-          "title": "Marvel star was told he’s ‘too old’ to audition for James Bond: ‘Rob’s the same age as me!’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9Lp3mBAJrsvexVNsdc61g-CGr1zz70qMLxJIyFB91DEjYdVE7mM0djBduwk"
-        }
-      ]
-    },
-    {
-      "query": "st bonaventure basketball",
+      "query": "donald trump truth social",
       "approx_searches": "500+",
-      "published_at": "2026-11-23T16:00:00Z",
+      "published_at": "2026-11-23T17:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
-        "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29"
+        "https://www.huffpost.com/entry/donald-trump-truth-social-list-of-his-wins_n_6b041119e4b0da866ee131f0",
+        "https://www.aol.com/articles/trump-declares-ended-transgender-insanity-080052000.html",
+        "https://www.mediaite.com/politics/trump/trump-posts-lists-of-his-wins-including-claiming-he-ended-transgender-insanity-and-defeated-inflation-inherited-from-biden/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMuMuIbjmFfsDEawdSoJtwUada3Q9C0SAdO1IqjUlC88b6t9IZBy91zQqCpaw",
+      "image_credit": "HuffPost",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
-          "title": "St. Bonaventure vs. Appalachian State prediction: College basketball picks for Monday, Nov. 23 from top model",
-          "publisher": "CBS Sports",
+          "url": "https://www.huffpost.com/entry/donald-trump-truth-social-list-of-his-wins_n_6b041119e4b0da866ee131f0",
+          "title": "Trump Lists His 'Wins,' But It Looks More Like A Victory For Self-Delusion",
+          "publisher": "HuffPost",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMuMuIbjmFfsDEawdSoJtwUada3Q9C0SAdO1IqjUlC88b6t9IZBy91zQqCpaw"
         },
         {
-          "url": "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
-          "title": "Men's Basketball Heads to Orlando for ESPN Events Invitational",
-          "publisher": "Belmont Bruins",
+          "url": "https://www.aol.com/articles/trump-declares-ended-transgender-insanity-080052000.html",
+          "title": "Trump declares he has “ended transgender insanity” in list of presidential wins",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDmFum9se9qNkAfOECb6x8jBuKoUMn97s881EmeILLY_5hh1j2SLpfWIUgr9Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxBXtChhqmKlQ7Ful9QVUjrdQECrcg8wS4m_C0siptEm5jNTlgE3TRfJVIlOk"
         },
         {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
-          "title": "Watch Appalachian state Live",
-          "publisher": "Kayo Sports",
+          "url": "https://www.mediaite.com/politics/trump/trump-posts-lists-of-his-wins-including-claiming-he-ended-transgender-insanity-and-defeated-inflation-inherited-from-biden/",
+          "title": "Trump Posts List of Wins, Claiming He Defeated Inflation",
+          "publisher": "Mediaite",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOHEuybnzSgFf4A-FEebokiIE8T9gKEfkZwacELZ6WJySLkbdIDECNiBbaDhM"
         }
       ]
     },
     {
-      "query": "brad pitt",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T15:50:00Z",
+      "query": "nigeria",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T17:00:00Z",
       "related_news_urls": [
-        "https://www.rte.ie/entertainment/2026/1123/1600317-brad-pitt-pulls-out-of-london-premiere-due-to-flu/",
-        "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
-        "https://www.hellomagazine.com/celebrities/936643/brad-pitt-forced-last-minute-cancellation-health-issue/"
+        "https://punchng.com/nigeria-not-ready-to-host-world-cup-fifa-president/",
+        "https://soccernet.ng/2026/11/gianni-infantino-abuja-fifa-25-million-nff-caf-assembly.html",
+        "https://www.thehopenewspaper.com/osun-fa-hails-indigenous-firm-over-reconstruction-of-warri-city-stadium/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Mq9CGc8dpy_tbuVQyIzbwS2oHOhEa1vtkAoNWjylcshy88yLFG7Gt_xJVsE",
-      "image_credit": "RTE.ie",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8BG_4ZYQj7oHe1z_hu8Oks67cC1_8ctlfksVhAqLBBPr_zGeANJ532A6VnMw",
+      "image_credit": "Punch Newspapers",
       "news": [
         {
-          "url": "https://www.rte.ie/entertainment/2026/1123/1600317-brad-pitt-pulls-out-of-london-premiere-due-to-flu/",
-          "title": "Brad Pitt pulls out of London premiere due to flu",
-          "publisher": "RTE.ie",
+          "url": "https://punchng.com/nigeria-not-ready-to-host-world-cup-fifa-president/",
+          "title": "Nigeria not ready to host World Cup — FIFA President",
+          "publisher": "Punch Newspapers",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8Mq9CGc8dpy_tbuVQyIzbwS2oHOhEa1vtkAoNWjylcshy88yLFG7Gt_xJVsE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8BG_4ZYQj7oHe1z_hu8Oks67cC1_8ctlfksVhAqLBBPr_zGeANJ532A6VnMw"
         },
         {
-          "url": "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
-          "title": "Brad Pitt cancels London premiere appearance for new film due to illness",
-          "publisher": "The Independent",
+          "url": "https://soccernet.ng/2026/11/gianni-infantino-abuja-fifa-25-million-nff-caf-assembly.html",
+          "title": "Gianni Infantino: Why his Abuja funding pledge matters for the NFF",
+          "publisher": "Soccernet.ng",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRceM-73J4RWkO5bX0A9KlGshQWBxsKEZLAkpXqHxbU0AUSjbAejFIBhw8qYfI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqY70LjLJmQ0qmszVV2TAZ_Gwmvx0yCAsH67utaONAXHL7dzi48IPrsvvQiuQ"
         },
         {
-          "url": "https://www.hellomagazine.com/celebrities/936643/brad-pitt-forced-last-minute-cancellation-health-issue/",
-          "title": "Brad Pitt cancels London appearance hours before screening after falling ill",
-          "publisher": "HELLO!",
+          "url": "https://www.thehopenewspaper.com/osun-fa-hails-indigenous-firm-over-reconstruction-of-warri-city-stadium/",
+          "title": "Osun FA hails indigenous firm over reconstruction of warri city Stadium",
+          "publisher": "The Hope Newspaper",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWj-aC2XC8mKwjNyxZt6YNkAQAoXdQxyLrhzq-9cyJxpay1P3ShPJMqTOorfA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwxOI3TYB1YmCuVfxr6jZyQyLv_uxnIHygDEhuBMGlssXmovxqcBLSHFxKXM"
         }
       ]
     },
     {
-      "query": "honda takata airbag rupture notice",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T15:40:00Z",
+      "query": "joe kasper",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T17:00:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/23/joe-kasper-hegseth-criticism-pentagon-01180149",
+        "https://thehill.com/policy/defense/6237276-pete-hegseth-joe-kasper-iran-war-criticism/",
+        "https://www.newyorker.com/news/q-and-a/the-former-trump-official-who-thinks-trumps-staff-has-let-him-down"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA5XFpozHrzTAxtccdz4EBiGXTYjtnBcHizzhAAmkLxoDapypNmDPPPOFG5S8",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/23/joe-kasper-hegseth-criticism-pentagon-01180149",
+          "title": "‘It’s time for Pete to call it quits’: Hegseth’s former top aide calls for his ouster",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA5XFpozHrzTAxtccdz4EBiGXTYjtnBcHizzhAAmkLxoDapypNmDPPPOFG5S8"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6237276-pete-hegseth-joe-kasper-iran-war-criticism/",
+          "title": "Hegseth’s former chief of staff calls for his resignation",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCLTcEh0VnUq-Qil8_BHah5JDpdbMtLC8sPnr8QmdC5OJzFUgixDHMaSENFsM"
+        },
+        {
+          "url": "https://www.newyorker.com/news/q-and-a/the-former-trump-official-who-thinks-trumps-staff-has-let-him-down",
+          "title": "The Former Trump Official Who Thinks Trump’s Staff Has Let Him Down",
+          "publisher": "The New Yorker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXY7M1ljyE4BbIyTnOqpMoHWM1D56HL9POsfec6P882XvSCIRVvlaV6qXml60"
+        }
+      ]
+    },
+    {
+      "query": "honda",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T16:50:00Z",
       "related_news_urls": [
         "https://www.foxbusiness.com/economy/honda-recalls-810k-vehicles-over-dangerous-takata-airbag-inflator-rupture-risk",
-        "https://www.usatoday.com/story/cars/recalls/2026/11/23/honda-recalls-vehicles-acura-accord-civic-cr-v-models/92922637007/",
+        "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
         "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0",
@@ -166,11 +131,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0"
         },
         {
-          "url": "https://www.usatoday.com/story/cars/recalls/2026/11/23/honda-recalls-vehicles-acura-accord-civic-cr-v-models/92922637007/",
-          "title": "Honda recalls over 810,000 vehicles. See the affected models",
-          "publisher": "USA Today",
+          "url": "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
+          "title": "Honda Issues Yet Another Recall for 810,592 Cars Equipped with Takata Airbags That Could Rupture",
+          "publisher": "Car and Driver",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHSAeowJr6GHgu8Qkc9u3EHBbW4tPSqs01Oqah9U4hsI9HPjpuRIBBI1husR0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS2LFbohMBvvkYf7uqH3iaNwUF11QrZ6nrvji7H9suqr0tbiBQFM7z3Vwe4kE"
         },
         {
           "url": "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
@@ -182,13 +147,180 @@
       ]
     },
     {
+      "query": "ben stiller",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T16:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
+        "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+        "https://www.yahoo.com/entertainment/articles/movie-review-ariana-grande-gives-170231145.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
+          "title": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-reviews/focker-in-law-review-ariana-grande-robert-de-niro-1236760021/",
+          "title": "'Focker In-Law' Review: Ariana Grande Joins Stiller & De Niro",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3BKB5K4OIm4JqYYJefFG1JB0z4QDRFmmyENHdYND_sGGVqeCy8oI6qB3ipA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/movie-review-ariana-grande-gives-170231145.html",
+          "title": "Movie Review: Ariana Grande gives a moribund franchise a pair of shock paddles in 'Focker In-Law'",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcn0MYNy507b3YMXRl0IB0VYeerCSZm1g4kUHHUIDlcdvzNc5G1unaOOfJdUQ"
+        }
+      ]
+    },
+    {
+      "query": "fluffy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T16:40:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/money/cars/2026/11/21/gabriel-fluffy-iglesias-la-auto-show-vw-bus/92886624007/",
+        "https://www.usatoday.com/picture-gallery/cars/news/auto-shows/2026/11/21/comedian-gabriel-fluffy-iglesias-shows-off-his-vw-bus-collection/92886187007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzOyOGDuX1zlAHYKz7z-_22PHiQIj28doZhR-IMpcnMQ-lufLeDN3iNUYsc",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/money/cars/2026/11/21/gabriel-fluffy-iglesias-la-auto-show-vw-bus/92886624007/",
+          "title": "Comedian 'Fluffy' Iglesias thrills fans at LA Auto Show",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRktzOyOGDuX1zlAHYKz7z-_22PHiQIj28doZhR-IMpcnMQ-lufLeDN3iNUYsc"
+        },
+        {
+          "url": "https://www.usatoday.com/picture-gallery/cars/news/auto-shows/2026/11/21/comedian-gabriel-fluffy-iglesias-shows-off-his-vw-bus-collection/92886187007/",
+          "title": "See Comedian Gabriel “Fluffy” Iglesias and his Volkswagen buses",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5odPqDk3bjMErQ8BUj-Bgy6EOq8A8o7xzPbL08D72HMGyoxoKrSi8Kv87EIA"
+        }
+      ]
+    },
+    {
+      "query": "charlie cox",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T16:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/movies/2026/11/23/charlie-cox-james-bond-daredevil-audition/92925259007/",
+        "https://variety.com/2026/film/news/charlie-cox-james-bond-audition-too-old-1236955818/",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIf09werktHO1qfqEi1sUPl5MF49mO3yvtQAp7-Cp4yhuJ8Ug-dFd2L-p8Bd4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/23/charlie-cox-james-bond-daredevil-audition/92925259007/",
+          "title": "Charlie Cox reveals brutal feedback after being rejected for Bond",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIf09werktHO1qfqEi1sUPl5MF49mO3yvtQAp7-Cp4yhuJ8Ug-dFd2L-p8Bd4"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/charlie-cox-james-bond-audition-too-old-1236955818/",
+          "title": "‘Daredevil’ Star Charlie Cox Asked to Audition for James Bond but Was Told He’s Too Old: ‘Robert Pattinson Is the Same Age as Me!’",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9s0HKLFG3E3BL_ASATdogm3cY_FOvmItCIVFyWM5xm2Tr4hVjEg8toOio5BE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/charlie-cox-details-brutal-reason-160610450.html",
+          "title": "Charlie Cox details brutal reason he was turned down for James Bond role",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzCa__55UcHqiSNNarpoUSGK8NW-Rg-dq6h6Wu_QDGdaC6PZbQm--Bldficqc"
+        }
+      ]
+    },
+    {
+      "query": "st bonaventure basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T16:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
+        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
+        "https://appstatesports.com/news/2026/11/22/mens-basketball-plays-monday-tuesday-wednesday-at-espn-disney-event.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
+          "title": "St. Bonaventure vs. Appalachian State prediction: College basketball picks for Monday, Nov. 23 from top model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ"
+        },
+        {
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
+          "title": "Watch Appalachian state Live",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
+        },
+        {
+          "url": "https://appstatesports.com/news/2026/11/22/mens-basketball-plays-monday-tuesday-wednesday-at-espn-disney-event.aspx",
+          "title": "Men's Basketball Plays Monday, Tuesday, Wednesday at ESPN Disney Event",
+          "publisher": "App State Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREDAbtGGqBEOBT1fPHVl5I1IDNW1HEKV1AnuRKY8wNKXall2UI7b6TKUSI_vc"
+        }
+      ]
+    },
+    {
+      "query": "brad pitt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T15:50:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
+        "https://www.nacionale.com/en/articles/why-did-brad-pitt-miss-cliff-booth-london-premiere-flu",
+        "https://www.imdb.com/it/news/ni66124710/?ref_=nwc_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRceM-73J4RWkO5bX0A9KlGshQWBxsKEZLAkpXqHxbU0AUSjbAejFIBhw8qYfI",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/brad-pitt-cliff-booth-premiere-flu-b3089894.html",
+          "title": "Brad Pitt cancels London premiere appearance for new film due to illness",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRceM-73J4RWkO5bX0A9KlGshQWBxsKEZLAkpXqHxbU0AUSjbAejFIBhw8qYfI"
+        },
+        {
+          "url": "https://www.nacionale.com/en/articles/why-did-brad-pitt-miss-cliff-booth-london-premiere-flu",
+          "title": "Why did Brad Pitt miss the Cliff Booth premiere in London? He has the flu, organizers say",
+          "publisher": "Nacionale",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUn5b1Fmv1_jxQEmRAUWqgw08g8sxktmWh8V0HfLmGqXCJaCltQYbivSXY994"
+        },
+        {
+          "url": "https://www.imdb.com/it/news/ni66124710/?ref_=nwc_art_perm",
+          "title": "Brad Pitt Cancels London ‘Cliff Booth’ Premiere Appearance Due to Illness",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdaINNKde88ufz_ioOiqVmVydG2_AHtZke5-yPnkSR1UP0gL7G_eN2KIycfTw"
+        }
+      ]
+    },
+    {
       "query": "christopher briney",
       "approx_searches": "1000+",
       "published_at": "2026-11-23T15:40:00Z",
       "related_news_urls": [
         "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
         "https://www.today.com/video/christopher-briney-on-clashing-through-the-snow-and-tsitp-274017861725",
-        "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/"
+        "https://www.yahoo.com/entertainment/videos/112826-streamline-164546746.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg",
       "image_credit": "ABC10",
@@ -208,151 +340,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpzCCig9Idn36ZM7tUnH9kPZmc3UaL817odQYAm-ZiK0vf2N0fKc82yKTa07I"
         },
         {
-          "url": "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
-          "title": "Amazon Prime movie, shot in Greene County, sets premiere date",
-          "publisher": "NEWS10 ABC",
+          "url": "https://www.yahoo.com/entertainment/videos/112826-streamline-164546746.html",
+          "title": "Decider Streamline: 'Clashing Through the Snow' on Prime Video, 'Dig' on Peacock and More",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7F16fxs-Y31g_VXjmK0u10S_VOKzNJo7ElmpI1E1FOctJAChKpjIpgFVK5c"
-        }
-      ]
-    },
-    {
-      "query": "silver",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T15:30:00Z",
-      "related_news_urls": [
-        "https://fortune.com/article/current-price-of-silver-11-23-2026/",
-        "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
-        "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/article/current-price-of-silver-11-23-2026/",
-          "title": "Current price of silver as of Monday, Nov. 23, 2026",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU"
-        },
-        {
-          "url": "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
-          "title": "Stop guessing the bottom in the silver price. Watch these 6 signs instead",
-          "publisher": "Kitco",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH2W0P6rorotUCbSprKdnAUSVafE9N5Ms5t3HzSJ9-OztvBOfaFMNz4Ymdn70"
-        },
-        {
-          "url": "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/",
-          "title": "Silver's Brutal Rout Could Have a Sting in the Tail",
-          "publisher": "StoneX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73fCQQqNAq5Xj7WVF4TlEGNluNdOFw33ZMFolj8UNi2iUU_NUTvv5c7s1EiU"
-        }
-      ]
-    },
-    {
-      "query": "davidson basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T15:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
-        "https://www.sportsline.com/insiders/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
-        "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
-          "title": "Northern Iowa vs. Davidson prediction, odds: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY"
-        },
-        {
-          "url": "https://www.sportsline.com/insiders/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
-          "title": "Northern Iowa vs. Davidson odds, prediction: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 from advanced model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKxMh_FECkMrRYWEw3yy1eshIA702Xe428YY28BtP8x_Ob4oqZz0Flw62UPHk"
-        },
-        {
-          "url": "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off",
-          "title": "UNI men’s basketball tees off Thanksgiving week at Fort Myers Tip-Off",
-          "publisher": "University of Wyoming Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYsCOwAzXHN1p9grU9aSTvnLweacQBcnbmgyI_wWGFaGSo_aWeRWzXr7K8q5A"
-        }
-      ]
-    },
-    {
-      "query": "north korea",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T15:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49",
-        "https://www.telegraph.co.uk/world-news/2026/11/22/kim-ghosts-trump-while-building-up-nuclear-arsenal/",
-        "https://www.huffpost.com/entry/trump-kim-jong-un-north-korea-nuclear-snub_n_6b037dade4b0e97a9407e334"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWV5ElB4ieQMMTgsaOaxkrUNKEipm15VUU9D8O5vYtHhP85ylQQNAi_TXU9yE",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/world/asia/kim-jong-un-north-korea-trump-2920ff49",
-          "title": "How Kim Jong Un Gets Away With Building Nukes and Ghosting Trump",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWV5ElB4ieQMMTgsaOaxkrUNKEipm15VUU9D8O5vYtHhP85ylQQNAi_TXU9yE"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/world-news/2026/11/22/kim-ghosts-trump-while-building-up-nuclear-arsenal/",
-          "title": "Kim ghosts Trump while building up nuclear arsenal",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSJpjsJsYZryH7Ehbidcyf7nK4PlHfamzy1gP_z1_W7cPaAsXpBMSpNXBqOb8"
-        },
-        {
-          "url": "https://www.huffpost.com/entry/trump-kim-jong-un-north-korea-nuclear-snub_n_6b037dade4b0e97a9407e334",
-          "title": "Trump Getting Ghosted By Dictator Who Stole His Heart: Report",
-          "publisher": "HuffPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_yxR2afCS6TmLvnK6pXGvNFuTxMzgmr7OVUspE5seTs5rsgdFLELco6kXSOI"
-        }
-      ]
-    },
-    {
-      "query": "sophie cunningham indiana fever offseason",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T15:20:00Z",
-      "related_news_urls": [
-        "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
-        "https://www.aol.com/articles/sophie-cunningham-appear-chicago-sports-111500000.html",
-        "https://thespun.com/wnba/sophie-cunninghams-ridiculously-high-autograph-fee-leaks"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJz4ZFl2Dv1Vh_VVmZgEF_grmyV7Cr3WksmDY16hk69Gu4roEQC60zQpNHZDk",
-      "image_credit": "SuaraGarut.ID",
-      "news": [
-        {
-          "url": "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
-          "title": "Sophie Cunningham Charges Nearly 300 Dollars for Autographs",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJz4ZFl2Dv1Vh_VVmZgEF_grmyV7Cr3WksmDY16hk69Gu4roEQC60zQpNHZDk"
-        },
-        {
-          "url": "https://www.aol.com/articles/sophie-cunningham-appear-chicago-sports-111500000.html",
-          "title": "Sophie Cunningham to Appear at Chicago Sports Spectacular This Friday",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGkF-jF9mibPnIFWrW784CL6Mu_B9oY_tFtt-Zjw84_NHc1_aEvvfc6TI6TE"
-        },
-        {
-          "url": "https://thespun.com/wnba/sophie-cunninghams-ridiculously-high-autograph-fee-leaks",
-          "title": "Sophie Cunningham’s Ridiculously High Autograph Fee Leaks",
-          "publisher": "The Spun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtEyoIuMzW-t_L8wLXsk5_vJZp1JVnZTWKrMcBAD5wR5KHra_L2wsIzzsrkm0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrJd_u3VylDwoaTD0p4kpi0epuTz4sYLxGOqRb37sLj_EmwPfHCOPdFYpI-k"
         }
       ]
     }
