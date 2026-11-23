@@ -3,227 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T11:01:27.111319Z",
+  "checked_at": "2026-11-23T11:31:15.650816Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mike schur",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T10:40:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/arts-culture/television/dig-review-amy-poehlers-archaeology-comedy-9c1c0931",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/22/peacock-dig-review-amy-poehler-hugh-laurie-michael-schur/92689400007/",
-        "https://www.hollywoodreporter.com/tv/tv-reviews/dig-review-amy-poehler-mike-schur-hugh-laurie-peacock-1236758949/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfucIBx-pc-Z4ljri96AztHjHQ6a6AvZAoQAUuNmB5s4YNRAqFmJuhzBF5G5I",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/arts-culture/television/dig-review-amy-poehlers-archaeology-comedy-9c1c0931",
-          "title": "‘Dig’ Review: Amy Poehler’s Archaeology Comedy",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfucIBx-pc-Z4ljri96AztHjHQ6a6AvZAoQAUuNmB5s4YNRAqFmJuhzBF5G5I"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/22/peacock-dig-review-amy-poehler-hugh-laurie-michael-schur/92689400007/",
-          "title": "Can Amy Poehler strike sitcom gold again with Peacock's 'Dig'?",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXR_xjWlUlZ-MzkhnWvqTdXA9smGqhS2FUcamA8CFtk7OGRA_70aG9r8aiOw"
-        },
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-reviews/dig-review-amy-poehler-mike-schur-hugh-laurie-peacock-1236758949/",
-          "title": "‘Dig’ Review: Amy Poehler and Mike Schur Reunite for Peacock’s Likable but Underwhelming Archeology Comedy",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7VN2LHVPpR0EW9j2NLyZAyk2ZlX8es4zcoPFfz2DxD3wlcZxHhoePjBPaYMo"
-        }
-      ]
-    },
-    {
-      "query": "marshals",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T10:40:00Z",
-      "related_news_urls": [
-        "https://www.tvline.com/2324467/marshals-season-2-episode-7-recap-kayce-monica-baby-death-explained/",
-        "https://www.forbes.com/sites/erikkain/2026/11/21/marshals-season-2-episode-7-release-time-cbs-paramount-plus/",
-        "https://www.paramountpressexpress.com/paramount-television-studios/shows/marshals/releases/?view=113620-the-marshals-launch-a-desperate-manhunt-to-stop-a-hitman-sent-to-sabotage-a-high-profile-federal-trial-on-marshals-sunday-dec-6"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSQ95E_Gos0MCUEWoJoAHoImam05Rh95UfIzMCqb1EcUgCM6ltSgOsw2RNFw",
-      "image_credit": "TVLine",
-      "news": [
-        {
-          "url": "https://www.tvline.com/2324467/marshals-season-2-episode-7-recap-kayce-monica-baby-death-explained/",
-          "title": "Marshals Revisits Kayce And Monica's Most Tragic Yellowstone Storyline In Season 2",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSQ95E_Gos0MCUEWoJoAHoImam05Rh95UfIzMCqb1EcUgCM6ltSgOsw2RNFw"
-        },
-        {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/21/marshals-season-2-episode-7-release-time-cbs-paramount-plus/",
-          "title": "‘Marshals’ Season 2, Episode 7 Release Time: Here’s When ‘Under The Influence’ Airs On CBS And Paramount+",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFmUzvUdL9HecS41WzjnhNEJKaIbieb9UCOma_roTPQrTXMkd74KXFy3n5C9E"
-        },
-        {
-          "url": "https://www.paramountpressexpress.com/paramount-television-studios/shows/marshals/releases/?view=113620-the-marshals-launch-a-desperate-manhunt-to-stop-a-hitman-sent-to-sabotage-a-high-profile-federal-trial-on-marshals-sunday-dec-6",
-          "title": "THE MARSHALS LAUNCH A DESPERATE MANHUNT TO STOP A HITMAN SENT TO SABOTAGE A HIGH-PROFILE FEDERAL TRIAL, ON “MARSHALS,” SUNDAY, DEC. 6",
-          "publisher": "Paramount Press Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz8d3CFV4NrEhW_1Fm4vs6Tt9A3wXkXAh2Uw-SyDVj6IU7srVT62Ha0XRaPFM"
-        }
-      ]
-    },
-    {
-      "query": "gold rate today",
+      "query": "michigan lottery",
       "approx_searches": "100+",
-      "published_at": "2026-11-23T10:40:00Z",
+      "published_at": "2026-11-23T11:10:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes",
-        "https://www.cnbc.com/2026/11/23/gold-rises-from-14-month-low-as-markets-await-us-inflation-data.html",
-        "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/"
+        "https://www.freep.com/story/news/local/2026/11/22/michigan-lottery-results-sunday-november-22-2026/92920790007/",
+        "https://www.detroitnews.com/story/news/local/wayne-county/2026/11/20/wayne-county-man-wins-6-million-lottery-prize-extraordinaire/92879477007/",
+        "https://midmichigannow.com/news/local/wayne-county-man-wins-6-million-from-scratch-off-plans-to-retire"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxOoMNDHjEDNGCyMnIzOc1nVbgT9bhaal9AOh5EReItRLbrvIPQ84aiAtQkyY",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr69yZWzpdCy3y1wjGNDPEVpvesXRJy1_k-EMz5sbCR2y8z0VUr3_-pLT7DjI",
+      "image_credit": "Detroit Free Press",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes",
-          "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.freep.com/story/news/local/2026/11/22/michigan-lottery-results-sunday-november-22-2026/92920790007/",
+          "title": "Michigan Lottery Daily 3, Daily 4 results for Nov. 22, 2026",
+          "publisher": "Detroit Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxOoMNDHjEDNGCyMnIzOc1nVbgT9bhaal9AOh5EReItRLbrvIPQ84aiAtQkyY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTr69yZWzpdCy3y1wjGNDPEVpvesXRJy1_k-EMz5sbCR2y8z0VUr3_-pLT7DjI"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/23/gold-rises-from-14-month-low-as-markets-await-us-inflation-data.html",
-          "title": "Gold rises from 14-month low as markets await U.S. inflation data",
-          "publisher": "CNBC",
+          "url": "https://www.detroitnews.com/story/news/local/wayne-county/2026/11/20/wayne-county-man-wins-6-million-lottery-prize-extraordinaire/92879477007/",
+          "title": "Michigan lottery winner calls boss to quit after $6 million win",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1rvUvt8A2n0VIZqvU8lWh5f2ocd37iYwt4wzCfDHg5JddvGD2bZSsz-X0AbY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUESCysqkFLT5XTreXM-5jC_EyiL9CrYj1mWm0_RHDjisWEJMl8-preeBcPqQ"
         },
         {
-          "url": "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
-          "title": "Gold climbs more than 2% as dollar rally pauses",
-          "publisher": "Reuters",
+          "url": "https://midmichigannow.com/news/local/wayne-county-man-wins-6-million-from-scratch-off-plans-to-retire",
+          "title": "Wayne County man wins $6 million from scratch-off, plans to retire",
+          "publisher": "WSMH",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFNXw710rEnl9sacxYTAKvrRgaV0MT5nnmGQ-7knxOO1ulmjZ4n66e48S7APQ"
         }
       ]
     },
     {
-      "query": "tessa majors",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T10:30:00Z",
+      "query": "sofi stock",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:10:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/22/us/barnard-college-murder-parole",
-        "https://abc7ny.com/post/convicted-killer-luchiano-lewis-released-parole-tessa-majors-case/20066361/",
-        "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/"
+        "https://finance.yahoo.com/markets/stocks/articles/sofi-stock-slumps-52-week-015314888.html",
+        "https://pro.thestreet.com/trade-ideas/im-not-buying-more-sofi-until-he-does",
+        "https://kalkinemedia.com/us/news/top-stories/why-is-sofi-technologies-nasdaqsofi-attracting-attention-after-a-rating-upgrade"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6OHC7A4dUtYudYzQgAlFzg82vN9LZnO5a0QS25govXAlDXE4u1RVxmsYcvY",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiEwPZCQUIXpIaPCcDQxf8PV4V2Sq3GDfx2OMRNv5npsOQx_Fx_feiJxofiuE",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/22/us/barnard-college-murder-parole",
-          "title": "Man convicted in Barnard student murder released on parole after serving 5 years",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/sofi-stock-slumps-52-week-015314888.html",
+          "title": "SOFI Stock Slumps To 52-Week Lows: Retail Blames Anthropic For Being A Liquidity ‘Sponge’",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiEwPZCQUIXpIaPCcDQxf8PV4V2Sq3GDfx2OMRNv5npsOQx_Fx_feiJxofiuE"
+        },
+        {
+          "url": "https://pro.thestreet.com/trade-ideas/im-not-buying-more-sofi-until-he-does",
+          "title": "I’m Not Buying More SoFi Until He Does",
+          "publisher": "RealMoney Pro",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_XC45GS0WZazi98uqyV3PshPaycvvi5Y6ykf9rKJj52358WzZ-mY3pdocGuM"
+        },
+        {
+          "url": "https://kalkinemedia.com/us/news/top-stories/why-is-sofi-technologies-nasdaqsofi-attracting-attention-after-a-rating-upgrade",
+          "title": "Why Is SoFi Technologies (NASDAQ:SOFI) Attracting Attention After A Rating Upgrade?",
+          "publisher": "Kalkine Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRclnmZMBJqpKTtlxQQSj5_qLmNmVdrOUBH5Cnc1_YPWqz_BoFgUJj3We9Ii-E"
+        }
+      ]
+    },
+    {
+      "query": "space exploration technologies corp.",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:00:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/markets/tech/26/11/63518673/grant-cardone-says-elon-musk-buy-nvidia-bring-jensen-huang-back",
+        "https://finance.yahoo.com/markets/stocks/articles/could-spacex-ultimate-winner-nvidia-092002478.html",
+        "https://simplywall.st/stocks/us/telecom/nasdaq-spcx/space-exploration-technologies/news/space-exploration-technologies-spcx-gets-a-new-hiring-twist"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUWbdMD3lYcRJO7dws8OSbDSzkrkpcCTcp8F35UkefLznkiBtUrFcZU2ofK9M",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/markets/tech/26/11/63518673/grant-cardone-says-elon-musk-buy-nvidia-bring-jensen-huang-back",
+          "title": "Grant Cardone Says Elon Musk Could Buy 50% of Nvidia and Bring Jensen Huang Back, Days After SpaceX CEO’s",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUWbdMD3lYcRJO7dws8OSbDSzkrkpcCTcp8F35UkefLznkiBtUrFcZU2ofK9M"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/could-spacex-ultimate-winner-nvidia-092002478.html",
+          "title": "Could SpaceX Be the Ultimate Winner of the Nvidia-Jensen Huang Split?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk4yi4ocEEPnduV7exfJcvpIAB7gsIcfYafTqw4SPrtsL3gJOwoOqm0y1sMmk"
+        },
+        {
+          "url": "https://simplywall.st/stocks/us/telecom/nasdaq-spcx/space-exploration-technologies/news/space-exploration-technologies-spcx-gets-a-new-hiring-twist",
+          "title": "Space Exploration Technologies (SPCX) Gets A New Hiring Twist As Musk Eyes Top AI Talent",
+          "publisher": "Simply Wall St",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAknS9lKX6X7xyVKTQ36vJlJ0tR_xZvR3LzI6qjQ5n8aM3Q_Ft-AzZ-6rVkqE"
+        }
+      ]
+    },
+    {
+      "query": "cbs sports top 25 basketball prediction",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
+        "https://www.cbssports.com/college-basketball/news/tomorrows-top-25-today-houston-no-1-duke-college-basketball-rankings/",
+        "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50523371/mens-college-basketball-power-rankings",
+          "title": "Men's college basketball Power Rankings: Duke drops, Kansas is new No. 1",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8P0PxIuexHPEYFWZoItIIth-81ThZAy9ACvRf3qompp5TKfmpHwNlenYtt1s"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/tomorrows-top-25-today-houston-no-1-duke-college-basketball-rankings/",
+          "title": "Tomorrow's Top 25 Today: Houston is new No. 1, Duke plummets in college basketball rankings prediction",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPOOMIOlxiSQnjZBbYddt18cbC0P9ZtEmi42hKsyebNqGcTDMBGD0bCQiL8X4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7786641/2026/11/16/ap-top-25-mens-college-basketball-florida-uconn-michigan-state/",
+          "title": "AP Top 25: Michigan State rises to No. 2, LSU replaces Kentucky in college basketball rankings",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWv6OvUUjjVcJgdIIPMp2FCccTnSitOrE6prsQ47SdiRniCmpZRJgYk-ORjlA"
+        }
+      ]
+    },
+    {
+      "query": "weather new york",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T11:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
+        "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+        "https://www.wdsu.com/article/low-tropical-development-western-atlantic-florida/74495897"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt0GwV5LSqTCZuyfSW9_jG0sRHcCJh7gn4lIFb4GNycKkzfsXienwJp6o1kxU",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/17/metro/new-england-noreaster-coastal-storm/",
+          "title": "Quick-hitting coastal storm brings heavy, windswept rain into New England. Our next system tracks closer to Thanksgiving.",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTt0GwV5LSqTCZuyfSW9_jG0sRHcCJh7gn4lIFb4GNycKkzfsXienwJp6o1kxU"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/20/weather/florida-floods-storm-kyle-thanksgiving-travel-climate",
+          "title": "East Coast storm could disrupt holiday travel after battering Florida",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6OHC7A4dUtYudYzQgAlFzg82vN9LZnO5a0QS25govXAlDXE4u1RVxmsYcvY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzFpwcuAXpXZ_ijy3TGrE7bkOk1Og_UN8vZVf1hoQQPuIoFy_5nIUayW8zPkU"
         },
         {
-          "url": "https://abc7ny.com/post/convicted-killer-luchiano-lewis-released-parole-tessa-majors-case/20066361/",
-          "title": "Convicted killer Luchiano Lewis released on parole in Tessa Majors case",
-          "publisher": "ABC7 New York",
+          "url": "https://www.wdsu.com/article/low-tropical-development-western-atlantic-florida/74495897",
+          "title": "Tropical development odds drop, but coastal flooding is still expected",
+          "publisher": "WDSU",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_NWXK-czZqlgrFJ2dZFTqlims1jhB6jsW81IsLM2I2IbHSPAIJZc8UonG3nw"
-        },
-        {
-          "url": "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
-          "title": "Exclusive | Teen killer who held down Tessa Majors while pal plunged knife into her heart freed early — despite violence behind bars",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFLCeuOTDu2LjUtjGg8o1euhSmZcnWJ2Xp5ZhUCNcmDjC_9WHrSoAvxNZVNFI"
         }
       ]
     },
     {
-      "query": "gta 6 update today",
+      "query": "hulu black friday deal 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T11:00:00Z",
+      "related_news_urls": [
+        "https://www.billboard.com/culture/product-recommendations/prime-video-black-friday-cyber-monday-streaming-deals-2026-1236385908/",
+        "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
+        "https://appleinsider.com/articles/26/11/20/black-friday-streaming-deals-cut-apple-tv-to-699mo-paramount-plus-to-299mo"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR3m8LSitDW1FmqllhGUDETfJREa6am8NGGJGVLEhfTlZMv4Qf_cTFFxicYWo",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://www.billboard.com/culture/product-recommendations/prime-video-black-friday-cyber-monday-streaming-deals-2026-1236385908/",
+          "title": "Amazon Prime Video Black Friday Cyber Monday Deals: Save Big on Streaming Add-Ons, Movie Purchases & More",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR3m8LSitDW1FmqllhGUDETfJREa6am8NGGJGVLEhfTlZMv4Qf_cTFFxicYWo"
+        },
+        {
+          "url": "https://mashable.com/entertainment/best-early-black-friday-streaming-deals-2026",
+          "title": "Best Black Friday streaming deals 2026: Paramount+, Apple TV, HBO Max, and more already live",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-YRl-wWry65lx6XgF1W9b5l6CT05nTUsI_yL6JgSArneUX7wzpC-11lk6fwI"
+        },
+        {
+          "url": "https://appleinsider.com/articles/26/11/20/black-friday-streaming-deals-cut-apple-tv-to-699mo-paramount-plus-to-299mo",
+          "title": "Black Friday streaming deals cut Apple TV to $6.99/mo, Paramount Plus to $2.99/mo",
+          "publisher": "AppleInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcoWfbB0r-TQeazMBUteaBz2F2mMIh4vOjUKblnetr5Jz2sKSdPJoZgmX4sYM"
+        }
+      ]
+    },
+    {
+      "query": "jack campbell",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T10:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50569390/rb-cam-skattebo-backflips-again-pledging-nix-celebration",
+        "https://sports.yahoo.com/articles/john-harbaugh-one-word-response-104500343.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-says-hes-done-doing-backflips-after-aidan-hutchinson-injury"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZl1t9qd1xaKcNRqYcyvl-dJ1g9L_9KmqENihyLTIVM65pcAF12ENaGzPG3rw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50569390/rb-cam-skattebo-backflips-again-pledging-nix-celebration",
+          "title": "RB Cam Skattebo backflips again after pledging to nix celebration",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZl1t9qd1xaKcNRqYcyvl-dJ1g9L_9KmqENihyLTIVM65pcAF12ENaGzPG3rw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/john-harbaugh-one-word-response-104500343.html",
+          "title": "John Harbaugh’s one-word response to Cam Skattebo backflip promise break caught on camera",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ-rbpgZdENoKWy2G9T4atBkEJDBwN1iU6X0ifKe1MgX18gXUnZobskAaNBsE"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cam-skattebo-says-hes-done-doing-backflips-after-aidan-hutchinson-injury",
+          "title": "Cam Skattebo says he’s done doing backflips after Aidan Hutchinson injury",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSakYcDagxtcqgaOwRZhpFzsZbzXjxfV6pB96CMoGB_m2CCGed-DgJ0QBHFJso"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 update patch",
       "approx_searches": "200+",
-      "published_at": "2026-11-23T10:20:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/articles/the-binding-of-isaac-dev-removes-undisclosed-ai-generated-music-from-repentance-following-creator-response-review-bombing",
-        "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-        "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ToiY31unm6J4VPLCaq2ovqUPytaMU4iQfX-ntjzjsi9PItsI-auVqbo03BY",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/articles/the-binding-of-isaac-dev-removes-undisclosed-ai-generated-music-from-repentance-following-creator-response-review-bombing",
-          "title": "'Woke Up to a S**t Show' — The Binding of Isaac Creator Says He Was Unaware of Now-Removed AI-Generated Music in Repentance+ Following Backlash",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ToiY31unm6J4VPLCaq2ovqUPytaMU4iQfX-ntjzjsi9PItsI-auVqbo03BY"
-        },
-        {
-          "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
-          "title": "Binding of Isaac developer removes AI music from Repentance Plus",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDduk7mhbQevMkDGFNuSYfUeRFOzIyxORANZNQXPJl3c7vbErJH5YueinHS28"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
-          "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure, Steam reviews drop to Overwhelmingly Negative, music gets pulled",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5julYgKi-gU2WRzVEaliW9-jgNIZktFF7R_OFdU2PXcS9qQOoXafAB5KSOxs"
-        }
-      ]
-    },
-    {
-      "query": "professor severus snape",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T10:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/emma-watson-1-034-billion-160000761.html",
-        "https://collider.com/harry-potter-hbo-reboot-first-scene-dumbledore-book-change/",
-        "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqM4Km254u5bJegd9vUC3NWEI8CzDtiGz-0nEzeHcdXYVU6VviDELBC6dIutA",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/emma-watson-1-034-billion-160000761.html",
-          "title": "Emma Watson’s $1.034 Billion Movie Is Getting an Elaborate Remake Very Soon",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqM4Km254u5bJegd9vUC3NWEI8CzDtiGz-0nEzeHcdXYVU6VviDELBC6dIutA"
-        },
-        {
-          "url": "https://collider.com/harry-potter-hbo-reboot-first-scene-dumbledore-book-change/",
-          "title": "HBO’s ‘Harry Potter’ Officially Changes a Classic Book Moment in First Full Scene Release",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL7r7j9Tw4u6gdfYlYnx14x1kXzdwL6dGO2iXXDX8jnGY-csXgFDHFEStalTo"
-        },
-        {
-          "url": "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/",
-          "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHaFKz-9VNvsQwJhtavKUTwgXM4x-WulTZsQjtnd7q95VAlLkV2nnNzzUwzro"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 update",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T10:10:00Z",
+      "published_at": "2026-11-23T10:50:00Z",
       "related_news_urls": [
         "https://www.polygon.com/patch-notes-gta-6-next-gen/",
         "https://www.gameindustry.com/news-industry-happenings/the-next-console-generation-is-already-taking-shape/",
-        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer"
+        "https://www.redbull.com/int-en/gta-6-updates-patch-notes"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupahWyNTrI5VM4JdcSU3Z-Fa6scnmvZHN1RK0HFKOW172QnAaK8_e85KhB9w",
       "image_credit": "Polygon.com",
@@ -243,116 +278,81 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4XUgfe9wsg7Dnjy-0PVQgPOPfO8PPMy3C8BBTgeIZi-BBKAORnQqNgEFoJhE"
         },
         {
-          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
-          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
-          "publisher": "PCMag",
+          "url": "https://www.redbull.com/int-en/gta-6-updates-patch-notes",
+          "title": "GTA 6 launch updates: Patch sizes, versions and release dates",
+          "publisher": "Red Bull",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOsPBOgs-xwYEt9grfy2Svt32xjB6y783jNsLl3rCoTH8GJiFrYq8SqWXZqNc"
         }
       ]
     },
     {
-      "query": "servicio de control de inmigración y aduanas",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T10:10:00Z",
+      "query": "suriname",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T10:50:00Z",
       "related_news_urls": [
-        "https://www.univision.com/local/san-francisco-kdtv/ice-detiene-a-dos-ciudadanos-estadounidenses-en-oakland-california",
-        "https://www.telemundo.com/noticias/noticias-telemundo/inmigracion/ice-arrestos-aeropuertos-cientificos-investigadores-rcna610663",
-        "https://www.univision.com/noticias/inmigracion/ice-detiene-a-una-estudiante-de-doctorado-de-princeton-en-un-aeropuerto-de-washington-d-c"
+        "https://www.waterkant.net/suriname/2026/11/22/wang-bezorgde-ouders-durven-hun-kinderen-niet-meer-naar-school-te-sturen/",
+        "https://www.srherald.com/suriname/2026/11/17/regering-komt-woensdag-met-nadere-antwoorden-over-verslechterde-veiligheidssituatie/",
+        "https://sun.sr/nieuws/lokaal/adhin-meer-investeringen-nodig-om-veiligheid-in-suriname-te-verbeteren?id=46237"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiQyrojJ6EPJG89zwT277uBBJ606cXaElex5hMpNtzkdKe4xVDoDLlx-ksnts",
-      "image_credit": "Univision",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKntK-vU8CVQ-A4SxXG40mDwlBG277KOzdY9CVjtYZGBqhzDgVyAwVVEcleqY",
+      "image_credit": "Waterkant",
       "news": [
         {
-          "url": "https://www.univision.com/local/san-francisco-kdtv/ice-detiene-a-dos-ciudadanos-estadounidenses-en-oakland-california",
-          "title": "ICE detiene a dos ciudadanos estadounidenses en Oakland: Lo que se sabe",
-          "publisher": "Univision",
+          "url": "https://www.waterkant.net/suriname/2026/11/22/wang-bezorgde-ouders-durven-hun-kinderen-niet-meer-naar-school-te-sturen/",
+          "title": "Wang: “Bezorgde ouders durven hun kinderen niet meer naar school te sturen”",
+          "publisher": "Waterkant",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiQyrojJ6EPJG89zwT277uBBJ606cXaElex5hMpNtzkdKe4xVDoDLlx-ksnts"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSKntK-vU8CVQ-A4SxXG40mDwlBG277KOzdY9CVjtYZGBqhzDgVyAwVVEcleqY"
         },
         {
-          "url": "https://www.telemundo.com/noticias/noticias-telemundo/inmigracion/ice-arrestos-aeropuertos-cientificos-investigadores-rcna610663",
-          "title": "“Quieren asustar a la gente”: ICE detiene a neurocientífica de Princeton con asilo pendiente en un aeropuerto de D.C.",
-          "publisher": "Telemundo",
+          "url": "https://www.srherald.com/suriname/2026/11/17/regering-komt-woensdag-met-nadere-antwoorden-over-verslechterde-veiligheidssituatie/",
+          "title": "Regering komt woensdag met nadere antwoorden over verslechterde veiligheidssituatie",
+          "publisher": "Suriname Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHHFoaIIH0EUwIn5dPTrLIkW012ecghD6rE-xdR9NmWllrPSmp9anL05XA0gM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW_va3okkY_oz-WtBaDrx2dMRYzH9P6iiiB_yEWtqnXGBAmJsgStfWyb3YYRg"
         },
         {
-          "url": "https://www.univision.com/noticias/inmigracion/ice-detiene-a-una-estudiante-de-doctorado-de-princeton-en-un-aeropuerto-de-washington-d-c",
-          "title": "ICE detiene a una estudiante de doctorado de Princeton en un aeropuerto de Washington D.C.",
-          "publisher": "Univision",
+          "url": "https://sun.sr/nieuws/lokaal/adhin-meer-investeringen-nodig-om-veiligheid-in-suriname-te-verbeteren?id=46237",
+          "title": "Adhin: Meer investeringen nodig om veiligheid in Suriname te verbeteren",
+          "publisher": "Sun News Suriname",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4pdlTBhBHmMC-JEW71fbcp9EumM1YjpoQ12afSZvmDcdbcy3dJi_NpdPv0o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_8bmj5fmBjzgfJwTy4H_M-xuzql9QLS7gfdJllt5hGkCb8TYsugnC3vs5Tqw"
         }
       ]
     },
     {
-      "query": "real salt lake vs vancouver whitecaps fc standings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T10:10:00Z",
-      "related_news_urls": [
-        "https://www.mlssoccer.com/playoffs/2026/news/vancouver-whitecaps-open-playoffs-in-style-with-victory-over-real-salt-lake",
-        "https://www.espn.com/video/clip/_/id/50569414/vancouver-whitecaps-vs-real-salt-lake-game-highlights",
-        "https://www.whitecapsfc.com/news/preview-caps-host-real-salt-lake-in-game-1"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgUE4R7jhD1v3U1kNB7on9BpN-I9o__90Y75HaBtJlHmlOddsAyUoLQt0qZHg",
-      "image_credit": "MLSsoccer.com",
-      "news": [
-        {
-          "url": "https://www.mlssoccer.com/playoffs/2026/news/vancouver-whitecaps-open-playoffs-in-style-with-victory-over-real-salt-lake",
-          "title": "Vancouver Whitecaps open playoffs in style with victory over Real Salt Lake",
-          "publisher": "MLSsoccer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgUE4R7jhD1v3U1kNB7on9BpN-I9o__90Y75HaBtJlHmlOddsAyUoLQt0qZHg"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50569414/vancouver-whitecaps-vs-real-salt-lake-game-highlights",
-          "title": "Vancouver Whitecaps vs. Real Salt Lake - Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-Q2-x1HxRNfdH4jxNC4SFTWko0hH14sT_OE7kmYBkmiBzfoHnyhAIdEM1C0"
-        },
-        {
-          "url": "https://www.whitecapsfc.com/news/preview-caps-host-real-salt-lake-in-game-1",
-          "title": "PREVIEW: 'Caps host Real Salt Lake in Game 1 of Round One, Best-Of-3 Series | Watch on Apple TV, TSN",
-          "publisher": "www.whitecapsfc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEuNAOqxlr7iNogK1uIwY0lYF51Q7BwUM_pRbLWL-VXL7jK_78-MQn4WgkAos"
-        }
-      ]
-    },
-    {
-      "query": "don toliver",
+      "query": "jamie lee curtis",
       "approx_searches": "200+",
-      "published_at": "2026-11-23T09:50:00Z",
+      "published_at": "2026-11-23T10:50:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/23/europe/manchester-coop-live-tear-gas-don-toliver-hnk-intl",
-        "https://www.wcvb.com/article/audience-evacuated-don-toliver-concert-unknown-substance/74504442",
-        "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert"
+        "https://people.com/jamie-lee-curtis-marks-68th-birthday-as-only-surviving-member-immediate-family-12273457",
+        "https://ew.com/jamie-lee-curtis-first-birthday-after-sister-kelly-death-12272871",
+        "https://www.upi.com/Entertainment_News/Photos/Award-winning-actress-Jamie-Lee-Curtis-turns-68/16397/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQTQFjrii5gOQgt3kW3-hlDaJljef3g3Lio8be9TUcf7moqozkEY1pHRYTFtc",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6lL0Tk3Lm2pkew2yBfckk_XQFXG-nc0ursdCTJ4Jhzk_5WocLAplvwiuQ9uQ",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/23/europe/manchester-coop-live-tear-gas-don-toliver-hnk-intl",
-          "title": "Manchester Co-Op Live: Don Toliver concert evacuated as ‘unknown substance’ fills UK arena",
-          "publisher": "CNN",
+          "url": "https://people.com/jamie-lee-curtis-marks-68th-birthday-as-only-surviving-member-immediate-family-12273457",
+          "title": "Jamie Lee Curtis Marks 68th Birthday as ‘Only Surviving Member’ of Immediate Family",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQTQFjrii5gOQgt3kW3-hlDaJljef3g3Lio8be9TUcf7moqozkEY1pHRYTFtc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6lL0Tk3Lm2pkew2yBfckk_XQFXG-nc0ursdCTJ4Jhzk_5WocLAplvwiuQ9uQ"
         },
         {
-          "url": "https://www.wcvb.com/article/audience-evacuated-don-toliver-concert-unknown-substance/74504442",
-          "title": "Audience evacuated from Don Toliver concert after unknown substance released in the crowd",
-          "publisher": "WCVB",
+          "url": "https://ew.com/jamie-lee-curtis-first-birthday-after-sister-kelly-death-12272871",
+          "title": "Jamie Lee Curtis laments being ‘the last in the line’ on first birthday after sister’s death",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTRW0-GC_9Z6vdMXsj56jjPz6YRHsfY7Pkx5BUY6msAfYRCpIZhoAtzkv-cLU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwwHEZQ_JJBnvvhDDrGy5ENNKnxWEHPfqMlLZDTZzVGxjYb4--rmSBC9DpOlk"
         },
         {
-          "url": "https://www.theguardian.com/uk-news/2026/nov/23/manchester-co-op-live-arena-evacuated-tear-gas-don-toliver-concert",
-          "title": "Manchester’s Co-op Live arena evacuated after ‘unknown substance’ released in crowd",
-          "publisher": "The Guardian",
+          "url": "https://www.upi.com/Entertainment_News/Photos/Award-winning-actress-Jamie-Lee-Curtis-turns-68/16397/",
+          "title": "In photos: Award-winning actress Jamie Lee Curtis turns 68 - All Photos",
+          "publisher": "UPI.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJFxReicqSDk_yi9L8ZMva1VtwbPQC0sBDT73y7U_qIsnsAOab87hPdFzxR4Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzi-12dayrU_G5raZBPXI_f5feUUCzC4mGoh_iI6vIAthKaLIzhXwBvoJhrSo"
         }
       ]
     }
