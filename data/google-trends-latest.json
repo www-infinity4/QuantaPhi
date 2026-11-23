@@ -3,89 +3,299 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T18:01:19.774416Z",
+  "checked_at": "2026-11-23T18:31:01.133224Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nigeria",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T17:00:00Z",
+      "query": "professional golfer",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T18:00:00Z",
       "related_news_urls": [
-        "https://punchng.com/nigeria-not-ready-to-host-world-cup-fifa-president/",
-        "https://soccernet.ng/2026/11/gianni-infantino-abuja-fifa-25-million-nff-caf-assembly.html",
-        "https://www.thehopenewspaper.com/osun-fa-hails-indigenous-firm-over-reconstruction-of-warri-city-stadium/"
+        "https://www.cbsnews.com/news/pro-golfer-arrested-cannabis-luggage-nigeria/",
+        "https://www.bbc.com/news/articles/cj93rggenq4xo",
+        "https://ndlea.gov.ng/blog/large-meth-consignments-hidden-in-cereals-packs-from-south-africa-intercepted-at-mmia"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8BG_4ZYQj7oHe1z_hu8Oks67cC1_8ctlfksVhAqLBBPr_zGeANJ532A6VnMw",
-      "image_credit": "Punch Newspapers",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlHlw8e5aFnICOPFPB4H3IQXhHBK4OlnPgEQyhVEm11P5XS-ColtapDNA5DJ0",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://punchng.com/nigeria-not-ready-to-host-world-cup-fifa-president/",
-          "title": "Nigeria not ready to host World Cup — FIFA President",
-          "publisher": "Punch Newspapers",
+          "url": "https://www.cbsnews.com/news/pro-golfer-arrested-cannabis-luggage-nigeria/",
+          "title": "Pro golfer and chef arrested for over 100 pounds of alleged drugs in luggage at airport in Nigeria",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8BG_4ZYQj7oHe1z_hu8Oks67cC1_8ctlfksVhAqLBBPr_zGeANJ532A6VnMw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlHlw8e5aFnICOPFPB4H3IQXhHBK4OlnPgEQyhVEm11P5XS-ColtapDNA5DJ0"
         },
         {
-          "url": "https://soccernet.ng/2026/11/gianni-infantino-abuja-fifa-25-million-nff-caf-assembly.html",
-          "title": "Gianni Infantino: Why his Abuja funding pledge matters for the NFF",
-          "publisher": "Soccernet.ng",
+          "url": "https://www.bbc.com/news/articles/cj93rggenq4xo",
+          "title": "US basketball player Greene Da'monte Khiree arrested in Nigeria with cannabis haul",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqY70LjLJmQ0qmszVV2TAZ_Gwmvx0yCAsH67utaONAXHL7dzi48IPrsvvQiuQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGr3mraGdQ4Z-miFpQE-k9cMMlX05RH_UmIxpaqnWJQm-0-L5a87T9l3HtFh0"
         },
         {
-          "url": "https://www.thehopenewspaper.com/osun-fa-hails-indigenous-firm-over-reconstruction-of-warri-city-stadium/",
-          "title": "Osun FA hails indigenous firm over reconstruction of warri city Stadium",
-          "publisher": "The Hope Newspaper",
+          "url": "https://ndlea.gov.ng/blog/large-meth-consignments-hidden-in-cereals-packs-from-south-africa-intercepted-at-mmia",
+          "title": "Large meth consignments hidden in cereals packs from South Africa intercepted at MMIA",
+          "publisher": "National Drug Law Enforcement Agency",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwxOI3TYB1YmCuVfxr6jZyQyLv_uxnIHygDEhuBMGlssXmovxqcBLSHFxKXM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyZpko7wWnOVVyJLZphuMyTUI_zL3z1oMh5Bin7-iqr2bu9x21eqjWvhMQDSc"
         }
       ]
     },
     {
-      "query": "truth social",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T17:00:00Z",
+      "query": "ohare ground stop",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T18:00:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/opinion/apologizing-for-my-friend-vladimir-putin-trump-russia-904978e5",
-        "https://www.c-span.org/clip/public-affairs-event/fmr-us-amb-to-ukraine-calls-president-trumps-moment-of-candor-on-friendship-with-putin-troublesome/5211358",
-        "https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend"
+        "https://www.nbcchicago.com/news/local/ground-stop-issued-at-ohare-airport-due-to-staffing-at-start-of-busy-holiday-week/4020413/",
+        "https://chicago.suntimes.com/news/2026/11/23/ground-stop-issued-at-ohare-airport-during-busy-holiday-travel-week",
+        "https://nypost.com/2026/11/23/us-news/thanksgiving-travel-live-updates-on-weather-flight-delays-and-traffic/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPxBtPXMbeYJ6eCrV1-fmEfYukdwNY0xMj6JUcaI4Duufr3y-J7fK1mufWQJw",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRylOxcSz5Un_-UMe1K19oeDeH5m3p2tJkrG1Ye6sOxpuxjQYrlcQgivsEXew",
+      "image_credit": "NBC Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/ground-stop-issued-at-ohare-airport-due-to-staffing-at-start-of-busy-holiday-week/4020413/",
+          "title": "Ground stop issued at O'Hare Airport ‘due to staffing' at start of busy holiday week",
+          "publisher": "NBC Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRylOxcSz5Un_-UMe1K19oeDeH5m3p2tJkrG1Ye6sOxpuxjQYrlcQgivsEXew"
+        },
+        {
+          "url": "https://chicago.suntimes.com/news/2026/11/23/ground-stop-issued-at-ohare-airport-during-busy-holiday-travel-week",
+          "title": "Ground stop issued at O'Hare Airport during busy holiday travel week",
+          "publisher": "Chicago Sun-Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIIckNOtEJyN9SyRYUrkBjb9MxX6YFro_F3T4B70clEWf7-sDqWErhhGiaVjM"
+        },
+        {
+          "url": "https://nypost.com/2026/11/23/us-news/thanksgiving-travel-live-updates-on-weather-flight-delays-and-traffic/",
+          "title": "Thanksgiving travel live updates: Ground stop halts flights at Chicago’s O’Hare airport",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUsZWpq77rGf0YCaeQrVU14FkNT_ft2WyNgW5pEJpgyaVXoG5GcVXwLB8L9Jw"
+        }
+      ]
+    },
+    {
+      "query": "ap top 25 basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T17:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50566772/ap-mens-top-25-poll-reaction-week-3",
+        "https://www.cbssports.com/college-basketball/news/coaches-poll-rankings-duke-tumbles-houston-surges/",
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-23/houston-surges-no-1-andy-katzs-latest-power-44"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTo0gILpL4acqHCV3roDnJNa90OFWxIXBWMs8TM84OEq9yNnJ8aAnsOasr7aSw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50566772/ap-mens-top-25-poll-reaction-week-3",
+          "title": "Breaking down the 2026-27 AP Top 25 men's basketball poll for Week 3",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTo0gILpL4acqHCV3roDnJNa90OFWxIXBWMs8TM84OEq9yNnJ8aAnsOasr7aSw"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/coaches-poll-rankings-duke-tumbles-houston-surges/",
+          "title": "College basketball rankings: Duke tumbles after second loss, Houston surges in Coaches Poll",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrVHwfuqUrFTqyY8yEZYk5tCNWFIUcP8OWI4bdGL2fpYbT9pKRxw01GqfSozs"
+        },
+        {
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-23/houston-surges-no-1-andy-katzs-latest-power-44",
+          "title": "Houston surges to No. 1 in Andy Katz's latest Power 44",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMBfEiwCwh2hQekleSUnJmJ2chI8cpqbiEAgtpzCTM3Tv0QjRFCVFNo3tKlJo"
+        }
+      ]
+    },
+    {
+      "query": "the heart in winter",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T17:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
+        "https://www.yahoo.com/entertainment/movies/articles/steven-spielberg-sets-adaptation-heart-173000389.html",
+        "https://www.hollywoodreporter.com/movies/movie-news/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1236761238/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD7mAGwSySWIXNIIPhzcyFntArsjm_zFdZYD3cw9lP-ZkBk0EcY8jJtlly7zM",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/23/spielberg-western-paul-thomas-anderson-heart-in-winter",
+          "title": "Steven Spielberg to make a western written by Paul Thomas Anderson",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD7mAGwSySWIXNIIPhzcyFntArsjm_zFdZYD3cw9lP-ZkBk0EcY8jJtlly7zM"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/steven-spielberg-sets-adaptation-heart-173000389.html",
+          "title": "Steven Spielberg Sets Adaptation Of ‘The Heart In Winter’ As Next Film At Focus With Jessie Buckley, Cillian Murphy And Mark Rylance Starring And Paul Thomas Anderson Adapting The ",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6Jw3uQ4GpRgMUpA2h8z-707jtSUo62mgRPguyTnWxLFgH6uXFneQCJVVHdRE"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/steven-spielberg-the-heart-in-winter-paul-thomas-anderson-1236761238/",
+          "title": "Steven Spielberg to Direct 'Heart in Winter' From Paul Thomas Anderson",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwejEaoxd9NUszTwHhHgydSg2J5Nt_RYxd6iQSY7lHzetgG5XXv2l5aU8hNzk"
+        }
+      ]
+    },
+    {
+      "query": "kasey kahne",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T17:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/kyle-larson-done-trucks-kasey-175500604.html",
+        "https://www.newsbreak.com/essentially-sports-363861119/5024538102403-former-hms-star-s-nascar-comeback-has-kyle-larson-rethinking-his-truck-series-decision",
+        "https://www.on3.com/nascar/news/kasey-kahne-nascar-comeback-has-kyle-larson-rethinking-his-2027-plans/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeh6OOtzgjGXTMZfp1tE7NI4M8H7BoANtvrCoEreQyWmhRxa5Z741wb-XhOjk",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/kyle-larson-done-trucks-kasey-175500604.html",
+          "title": "Kyle Larson Was Done With Trucks. Kasey Kahne’s Comeback Has Him Eyeing a 2027 Start",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeh6OOtzgjGXTMZfp1tE7NI4M8H7BoANtvrCoEreQyWmhRxa5Z741wb-XhOjk"
+        },
+        {
+          "url": "https://www.newsbreak.com/essentially-sports-363861119/5024538102403-former-hms-star-s-nascar-comeback-has-kyle-larson-rethinking-his-truck-series-decision",
+          "title": "Former HMS Star's NASCAR Comeback Has Kyle Larson Rethinking His Truck Series Decision",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmucWrX0G0Dbp4D0K_A4eELxFhJLzuUZQ6uwxoyhqJjIN0T_9ZUjMS9dn2XWQ"
+        },
+        {
+          "url": "https://www.on3.com/nascar/news/kasey-kahne-nascar-comeback-has-kyle-larson-rethinking-his-2027-plans/",
+          "title": "Kasey Kahne NASCAR comeback has Kyle Larson rethinking his 2027 plans",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6bz-MZWmutNC-Ye1Yoeh3S8whDji03XOnyhbL0-q1Nty_rHiwNlOqicUvh4g"
+        }
+      ]
+    },
+    {
+      "query": "radnor high school",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T17:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/philadelphia/news/radnor-high-school-lockdown-delaware-county/",
+        "https://www.nbcphiladelphia.com/news/local/radnor-high-school-lockdown-delaware-county-pennsylvania/4501858/",
+        "https://6abc.com/post/radnor-high-school-precautionary-lockdown-amid-unfounded-threat-officials-say/20070605/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXfle1Z5EMXGdBsFjVZxJr23LjZqaFAsWbsjLofZXGogMHKM9I1CDu83fFHTU",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/philadelphia/news/radnor-high-school-lockdown-delaware-county/",
+          "title": "Radnor High School in Delaware County placed on precautionary lockdown",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXfle1Z5EMXGdBsFjVZxJr23LjZqaFAsWbsjLofZXGogMHKM9I1CDu83fFHTU"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/radnor-high-school-lockdown-delaware-county-pennsylvania/4501858/",
+          "title": "Police respond to Radnor High School amid ‘precautionary' lockdown",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3OrVZh5jzUS_ttnB78a28YwLRMOxTP02y-n2aOFU47GIP3-whX2-U0zBRXS8"
+        },
+        {
+          "url": "https://6abc.com/post/radnor-high-school-precautionary-lockdown-amid-unfounded-threat-officials-say/20070605/",
+          "title": "Radnor High School under precautionary lockdown amid 'unfounded' threat, school officials say",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJGbne6QegGxhtmkFRnXMbeAiC-DaMwadLWjTMVE3cqCP2MIPWG6DzadN0nQo"
+        }
+      ]
+    },
+    {
+      "query": "brad gerstner",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T17:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/stocks/pouncing-on-anthropic-wont-make-you-rich-4d500a06",
+        "https://www.reuters.com/business/anthropic-options-debut-with-brisk-volume-2026-11-23/",
+        "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHkQ-q3wT-0MqJVnMTT8MvzKBz1u-eKYDspzuXX-qJuSD7U2-rrc5BPzonqa4",
       "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://www.wsj.com/opinion/apologizing-for-my-friend-vladimir-putin-trump-russia-904978e5",
-          "title": "Opinion | Excusing ‘My Friend’ Vladimir",
+          "url": "https://www.wsj.com/finance/stocks/pouncing-on-anthropic-wont-make-you-rich-4d500a06",
+          "title": "Pouncing on Anthropic Won’t Make You Rich",
           "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSPxBtPXMbeYJ6eCrV1-fmEfYukdwNY0xMj6JUcaI4Duufr3y-J7fK1mufWQJw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHkQ-q3wT-0MqJVnMTT8MvzKBz1u-eKYDspzuXX-qJuSD7U2-rrc5BPzonqa4"
         },
         {
-          "url": "https://www.c-span.org/clip/public-affairs-event/fmr-us-amb-to-ukraine-calls-president-trumps-moment-of-candor-on-friendship-with-putin-troublesome/5211358",
-          "title": "Fmr. U.S. Amb. to Ukraine Calls President Trump's \"Moment of Candor\" on Friendship with Putin \"Troublesome\"",
-          "publisher": "C-SPAN",
+          "url": "https://www.reuters.com/business/anthropic-options-debut-with-brisk-volume-2026-11-23/",
+          "title": "Options on Anthropic shares start trading in brisk volume",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1tj9uR_9_-gsP6rxT9kUKu_9DfWj1M68j3bCyj3_hatBn-iM0EfNnJyKRAAs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQetoTrvsKXrw1WU1LDAnZe9Uc1Ot0d86VhXu8J_-eX38_YdoCbakjOjRcCEUc"
         },
         {
-          "url": "https://www.theguardian.com/us-news/2026/nov/22/intelligence-chief-jay-clayton-trump-putin-my-friend",
-          "title": "US intelligence chief says he trusts Trump’s description of Putin as ‘my friend’",
-          "publisher": "The Guardian",
+          "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
+          "title": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxSyvjdraTs5BndYc5CX37JmIawnhj-AUEWOPf4biicUqan71mAAKbqn2aSFI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVMj7s23FnLfKHgwA_qJR38384V0sXYO0W6k8wLQrKZKKBiA_Y--AJQJBgbGA"
+        }
+      ]
+    },
+    {
+      "query": "nigeria",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T17:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cv1j65xjjk65o",
+        "https://punchng.com/aso-rock-water-outage-exposes-government-failure-kenneth-okonkwo/",
+        "https://guardian.ng/politics/2027-kenneth-okonkwo-warns-nigerians-against-voting-apc/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXh_5t4y9LAWuas4Ok7riBWMKPhA2IQT5uChpqNBVHZIEne09zbMUbwqbmYwc",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cv1j65xjjk65o",
+          "title": "Nigeria's Bola Tinubu: Aso Rock suffers water and power cuts",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXh_5t4y9LAWuas4Ok7riBWMKPhA2IQT5uChpqNBVHZIEne09zbMUbwqbmYwc"
+        },
+        {
+          "url": "https://punchng.com/aso-rock-water-outage-exposes-government-failure-kenneth-okonkwo/",
+          "title": "Aso Rock water outage exposes government failure – Kenneth Okonkwo",
+          "publisher": "Punch Newspapers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLormrnM14z1GI3XcX6Zrs3N7CqiPpl5DUZVZg8OkrJeS9fYBEVke1O_6sk3g"
+        },
+        {
+          "url": "https://guardian.ng/politics/2027-kenneth-okonkwo-warns-nigerians-against-voting-apc/",
+          "title": "2027: Kenneth Okonkwo Warns Nigerians Against Voting APC",
+          "publisher": "The Guardian Nigeria News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4tXqPn79l3mduROsPbMWmC-VCQbGbOqJA9kLbWIXIlB1WhkZHOx64fubTQB4"
         }
       ]
     },
     {
       "query": "joe kasper",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T17:00:00Z",
       "related_news_urls": [
         "https://www.politico.com/news/2026/11/23/joe-kasper-hegseth-criticism-pentagon-01180149",
         "https://thehill.com/policy/defense/6237276-pete-hegseth-joe-kasper-iran-war-criticism/",
         "https://www.newyorker.com/news/q-and-a/the-former-trump-official-who-thinks-trumps-staff-has-let-him-down"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA5XFpozHrzTAxtccdz4EBiGXTYjtnBcHizzhAAmkLxoDapypNmDPPPOFG5S8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLLHN-DrT4-HO1g-enO3ppJ-1Lg-1DJdn1aQ-V_kKMJ9CBk35Ue57rMnu3uI",
       "image_credit": "Politico",
       "news": [
         {
@@ -93,7 +303,7 @@
           "title": "‘It’s time for Pete to call it quits’: Hegseth’s former top aide calls for his ouster",
           "publisher": "Politico",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA5XFpozHrzTAxtccdz4EBiGXTYjtnBcHizzhAAmkLxoDapypNmDPPPOFG5S8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdLLHN-DrT4-HO1g-enO3ppJ-1Lg-1DJdn1aQ-V_kKMJ9CBk35Ue57rMnu3uI"
         },
         {
           "url": "https://thehill.com/policy/defense/6237276-pete-hegseth-joe-kasper-iran-war-criticism/",
@@ -117,8 +327,8 @@
       "published_at": "2026-11-23T16:50:00Z",
       "related_news_urls": [
         "https://www.foxbusiness.com/economy/honda-recalls-810k-vehicles-over-dangerous-takata-airbag-inflator-rupture-risk",
-        "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
-        "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/"
+        "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
+        "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0",
       "image_credit": "Fox Business",
@@ -131,228 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0"
         },
         {
+          "url": "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
+          "title": "Honda Issues Yet Another Recall for 810,592 Cars Equipped with Takata Airbags That Could Rupture",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS2LFbohMBvvkYf7uqH3iaNwUF11QrZ6nrvji7H9suqr0tbiBQFM7z3Vwe4kE"
+        },
+        {
           "url": "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
           "title": "Honda and Toyota recall 1.6 million vehicles over Takata airbag rupture risk",
           "publisher": "NBC News",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgido-l33Jk2lDPhzyVUQ4f9HhQRfZx0eZJjkENuPKp-7ggjpeAkCTObHtaJQ"
-        },
-        {
-          "url": "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/",
-          "title": "More than 300,000 Toyota, Lexus vehicles recalled over faulty Takata airbags",
-          "publisher": "WDBJ7",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0WT0NyWp-1766odSzLHkJI8K1hD_BsOM3BZZPwRebK5_DQp1fnyids90UB-I"
-        }
-      ]
-    },
-    {
-      "query": "ben stiller",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T16:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
-        "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-        "https://www.yahoo.com/news/videos/oscar-winner-comedy-franchise-hits-170000638.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/22/entertainment/ariana-grande-focker-in-law",
-          "title": "Ariana Grande had a tough year. ‘Focker In-Law’ ends it on a high",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsQ_plu8rThIC39J2ptQQUSJ92uEokbOmU6TRhsnZb-V-qBiH4ze5BPhJAzFI"
-        },
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-          "title": "Focker In-Law review: triangle of sadness as Ariana Grande joins Stiller and De Niro in the circle of trust",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/oscar-winner-comedy-franchise-hits-170000638.html",
-          "title": "Oscar Winner’s Comedy Franchise Hits Rock Bottom",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmor_4tpCqs_9dgIF-FHilgcqaWVa2NBzN6mZlMGv6CNJNatQ8M0b-q6Qrvmc"
-        }
-      ]
-    },
-    {
-      "query": "charlie cox",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T16:30:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/charlie-cox-james-bond-audition-too-old-1236955818/",
-        "https://www.ign.com/articles/daredevil-charlie-cox-too-old-james-bond-audition",
-        "https://www.usatoday.com/story/entertainment/movies/2026/11/23/charlie-cox-james-bond-daredevil-audition/92925259007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9s0HKLFG3E3BL_ASATdogm3cY_FOvmItCIVFyWM5xm2Tr4hVjEg8toOio5BE",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/news/charlie-cox-james-bond-audition-too-old-1236955818/",
-          "title": "‘Daredevil’ Star Charlie Cox Asked to Audition for James Bond but Was Told He’s Too Old: ‘Robert Pattinson Is the Same Age as Me!’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9s0HKLFG3E3BL_ASATdogm3cY_FOvmItCIVFyWM5xm2Tr4hVjEg8toOio5BE"
-        },
-        {
-          "url": "https://www.ign.com/articles/daredevil-charlie-cox-too-old-james-bond-audition",
-          "title": "Daredevil Star Charlie Cox Asked for a James Bond Audition but Was Told He Was 'Too Old'",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6f3Uef4V0mX_iUXxvThPORgELlSmKZGEplqHsTvXIXjK1EnlLs94Wsoje4U8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/movies/2026/11/23/charlie-cox-james-bond-daredevil-audition/92925259007/",
-          "title": "Charlie Cox reveals brutal feedback after being rejected for Bond",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIf09werktHO1qfqEi1sUPl5MF49mO3yvtQAp7-Cp4yhuJ8Ug-dFd2L-p8Bd4"
-        }
-      ]
-    },
-    {
-      "query": "st bonaventure basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T16:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
-        "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
-          "title": "St. Bonaventure vs. Appalachian State prediction: College basketball picks for Monday, Nov. 23 from top model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ"
-        },
-        {
-          "url": "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
-          "title": "Men's Basketball Heads to Orlando for ESPN Events Invitational",
-          "publisher": "Belmont Bruins",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDmFum9se9qNkAfOECb6x8jBuKoUMn97s881EmeILLY_5hh1j2SLpfWIUgr9Y"
-        },
-        {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
-          "title": "Watch Appalachian state Live",
-          "publisher": "Kayo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
-        }
-      ]
-    },
-    {
-      "query": "brad pitt",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T15:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/brad-pitt-62-pulls-major-160651953.html",
-        "https://www.the-independent.com/bulletin/culture/brad-pitt-cliff-booth-premiere-uk-london-illness-b3089914.html",
-        "https://www.nacionale.com/en/articles/why-did-brad-pitt-miss-cliff-booth-london-premiere-flu"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6XR-L8HOYN2lMV5Npvl_8AZ7GFVhoxDkLA0fXoDlywDAQpt0hgG-XYeQuMaI",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/brad-pitt-62-pulls-major-160651953.html",
-          "title": "Brad Pitt, 62, pulls out of major London premiere after falling ill",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6XR-L8HOYN2lMV5Npvl_8AZ7GFVhoxDkLA0fXoDlywDAQpt0hgG-XYeQuMaI"
-        },
-        {
-          "url": "https://www.the-independent.com/bulletin/culture/brad-pitt-cliff-booth-premiere-uk-london-illness-b3089914.html",
-          "title": "Brad Pitt to miss London premiere The Further Mis-Adventures Of Cliff Booth",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8t3ebPzo1YvEoXg7AeMQe_gNWxuPYbyGoc3YzythoGeS8jeKkmpKJlZUyiH8"
-        },
-        {
-          "url": "https://www.nacionale.com/en/articles/why-did-brad-pitt-miss-cliff-booth-london-premiere-flu",
-          "title": "Why did Brad Pitt miss the Cliff Booth premiere in London? He has the flu, organizers say",
-          "publisher": "Nacionale",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUn5b1Fmv1_jxQEmRAUWqgw08g8sxktmWh8V0HfLmGqXCJaCltQYbivSXY994"
-        }
-      ]
-    },
-    {
-      "query": "christopher briney",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T15:40:00Z",
-      "related_news_urls": [
-        "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
-        "https://www.today.com/video/christopher-briney-on-clashing-through-the-snow-and-tsitp-274017861725",
-        "https://www.yahoo.com/entertainment/videos/112826-streamline-164546746.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg",
-      "image_credit": "ABC10",
-      "news": [
-        {
-          "url": "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
-          "title": "'Clashing Through the Snow' co-stars, director preview holiday romantic comedy",
-          "publisher": "ABC10",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg"
-        },
-        {
-          "url": "https://www.today.com/video/christopher-briney-on-clashing-through-the-snow-and-tsitp-274017861725",
-          "title": "Christopher Briney on ‘Clashing Through the Snow’ and ‘TSITP’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpzCCig9Idn36ZM7tUnH9kPZmc3UaL817odQYAm-ZiK0vf2N0fKc82yKTa07I"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/112826-streamline-164546746.html",
-          "title": "Decider Streamline: 'Clashing Through the Snow' on Prime Video, 'Dig' on Peacock and More",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTrJd_u3VylDwoaTD0p4kpi0epuTz4sYLxGOqRb37sLj_EmwPfHCOPdFYpI-k"
-        }
-      ]
-    },
-    {
-      "query": "silver",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T15:30:00Z",
-      "related_news_urls": [
-        "https://fortune.com/article/current-price-of-silver-11-23-2026/",
-        "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
-        "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/article/current-price-of-silver-11-23-2026/",
-          "title": "Current price of silver as of Monday, Nov. 23, 2026",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpryXp8O2HWlKt4nvaUJ8Wz8vgRnRFYaf4gzpLKUUNNlz8AN0h35SOKWHNQkU"
-        },
-        {
-          "url": "https://www.kitco.com/opinion/2026-11-20/stop-guessing-bottom-silver-price-watch-these-6-signs-instead",
-          "title": "Stop guessing the bottom in the silver price. Watch these 6 signs instead",
-          "publisher": "Kitco",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTH2W0P6rorotUCbSprKdnAUSVafE9N5Ms5t3HzSJ9-OztvBOfaFMNz4Ymdn70"
-        },
-        {
-          "url": "https://www.stonex.com/en-gb/news-and-analysis/silver-s-brutal-rout-could-have-a-sting-in-the-tail/",
-          "title": "Silver's Brutal Rout Could Have a Sting in the Tail",
-          "publisher": "StoneX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS73fCQQqNAq5Xj7WVF4TlEGNluNdOFw33ZMFolj8UNi2iUU_NUTvv5c7s1EiU"
         }
       ]
     }
