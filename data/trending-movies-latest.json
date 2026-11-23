@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-23T18:32:44.417337Z",
+  "checked_at": "2026-11-23T19:03:44.110258Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -36,6 +36,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "dotg5b0oOSk",
+      "title": "K-Pop: The Debut",
+      "video_id": "dotg5b0oOSk",
+      "video_title": "K-Pop: The Debut Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-23T18:41:55Z",
+      "source_url": "https://www.youtube.com/watch?v=dotg5b0oOSk",
+      "poster": "https://i.ytimg.com/vi/dotg5b0oOSk/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "nnliYPIV8PY",
