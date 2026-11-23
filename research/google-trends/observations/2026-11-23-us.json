@@ -3,27 +3,139 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T16:01:20.010742Z",
+  "checked_at": "2026-11-23T16:31:15.406329Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "st bonaventure basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T16:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
+        "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
+        "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/st-bonaventure-appalachian-state-prediction-odds-time-2026-espn-events-invitational-college-basketball-picks/",
+          "title": "St. Bonaventure vs. Appalachian State prediction: College basketball picks for Monday, Nov. 23 from top model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrF3zte_U3nL7-aqcZhEHKUNQAy-n2IxWBYcLS3bhqIsFYo6GUVvLZqoMYXpQ"
+        },
+        {
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:abtlyvuu04gadhyeqlegd4xyf/ArticleId:gewc8w941pp72grtyxfuic29",
+          "title": "Watch Appalachian state Live",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf1tE2IGL-G1VK-bRNA8vTP-hB8Q62Ox4twpK0wisUpme0KpGuvUt4aXRTVm8"
+        },
+        {
+          "url": "https://belmontbruins.com/news/2026/11/22/mens-basketball-heads-to-orlando-for-espn-events-invitational.aspx",
+          "title": "Men's Basketball Heads to Orlando for ESPN Events Invitational",
+          "publisher": "Belmont Bruins",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDmFum9se9qNkAfOECb6x8jBuKoUMn97s881EmeILLY_5hh1j2SLpfWIUgr9Y"
+        }
+      ]
+    },
+    {
+      "query": "brad pitt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T15:50:00Z",
+      "related_news_urls": [
+        "https://people.com/david-leitch-shares-oceans-14-update-on-script-cast-exclusive-12265980",
+        "https://www.yahoo.com/entertainment/movies/articles/oceans-14-director-explains-filming-183036160.html",
+        "https://www.thewrap.com/creative-content/movies/oceans-14-update-cast-scheduling-challenge/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfnjzYG_Q1e2VlgjPZqBBX8P0G1xaNGzfOrMVTDAOp2YCRqxEWPYjInPmlAvQ",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/david-leitch-shares-oceans-14-update-on-script-cast-exclusive-12265980",
+          "title": "‘Ocean’s 14’ Director David Leitch Gives Update on the Heist Sequel’s Star-Studded Cast and ‘Great Script’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfnjzYG_Q1e2VlgjPZqBBX8P0G1xaNGzfOrMVTDAOp2YCRqxEWPYjInPmlAvQ"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/oceans-14-director-explains-filming-183036160.html",
+          "title": "'Ocean's 14' Director Explains Filming Delay as Brad Pitt Points to Late 2027 Start",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCIfmf3eONrtCaUBHx5oMvkKrgrsRQasnKmsCJT02vLaE3uDbO0XzCvaVZ0I"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/oceans-14-update-cast-scheduling-challenge/",
+          "title": "‘Ocean’s 14’ Director Says Reuniting Cast Remains a Challenge Despite ‘Great Script’",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf9a1-MNkpYKHwUsaQTEwIKGSmCKEgC2Cd2A7_QXcYVTxxlNKEzmEOayRUgXc"
+        }
+      ]
+    },
+    {
+      "query": "honda takata airbag rupture notice",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T15:40:00Z",
+      "related_news_urls": [
+        "https://www.foxbusiness.com/economy/honda-recalls-810k-vehicles-over-dangerous-takata-airbag-inflator-rupture-risk",
+        "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
+        "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0",
+      "image_credit": "Fox Business",
+      "news": [
+        {
+          "url": "https://www.foxbusiness.com/economy/honda-recalls-810k-vehicles-over-dangerous-takata-airbag-inflator-rupture-risk",
+          "title": "Honda recalls 810K vehicles over dangerous Takata airbag inflator rupture risk",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFiWO6pTSOxm5YewfSMneAkaL-ewFjrFim8ofB5hFmBBiO-siaQsUGp1z68I0"
+        },
+        {
+          "url": "https://www.nbcnews.com/business/autos/takata-airbag-recall-rcna610576",
+          "title": "Honda and Toyota recall 1.6 million vehicles over Takata airbag rupture risk",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgido-l33Jk2lDPhzyVUQ4f9HhQRfZx0eZJjkENuPKp-7ggjpeAkCTObHtaJQ"
+        },
+        {
+          "url": "https://www.wdbj7.com/2026/11/21/more-than-300000-toyota-lexus-vehicles-recalled-over-faulty-takata-airbags/",
+          "title": "More than 300,000 Toyota, Lexus vehicles recalled over faulty Takata airbags",
+          "publisher": "WDBJ7",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0WT0NyWp-1766odSzLHkJI8K1hD_BsOM3BZZPwRebK5_DQp1fnyids90UB-I"
+        }
+      ]
+    },
     {
       "query": "christopher briney",
       "approx_searches": "500+",
       "published_at": "2026-11-23T15:40:00Z",
       "related_news_urls": [
-        "https://www.10tv.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
-        "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
-        "https://www.elitedaily.com/entertainment/chris-briney-michelle-randolph-clashing-through-the-snow-chemistry-interview"
+        "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+        "https://www.today.com/video/christopher-briney-on-clashing-through-the-snow-and-tsitp-274017861725",
+        "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg",
-      "image_credit": "10TV",
+      "image_credit": "ABC10",
       "news": [
         {
-          "url": "https://www.10tv.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+          "url": "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
           "title": "'Clashing Through the Snow' co-stars, director preview holiday romantic comedy",
-          "publisher": "10TV",
+          "publisher": "ABC10",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg"
+        },
+        {
+          "url": "https://www.today.com/video/christopher-briney-on-clashing-through-the-snow-and-tsitp-274017861725",
+          "title": "Christopher Briney on ‘Clashing Through the Snow’ and ‘TSITP’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpzCCig9Idn36ZM7tUnH9kPZmc3UaL817odQYAm-ZiK0vf2N0fKc82yKTa07I"
         },
         {
           "url": "https://www.news10.com/news/greene-county/amazon-prime-movie-shot-in-greene-county-sets-premiere-date/",
@@ -31,24 +143,17 @@
           "publisher": "NEWS10 ABC",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr7F16fxs-Y31g_VXjmK0u10S_VOKzNJo7ElmpI1E1FOctJAChKpjIpgFVK5c"
-        },
-        {
-          "url": "https://www.elitedaily.com/entertainment/chris-briney-michelle-randolph-clashing-through-the-snow-chemistry-interview",
-          "title": "Chris Briney & Michelle Randolph On Their Chemistry In “Clashing Through The Snow” [Exclusive]",
-          "publisher": "Elite Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4n0e9P5C4P4glZWfYrLz0Yh-BPWLKo5f0rVInWVqVYpBXC5YL1yrkG_ufpGc"
         }
       ]
     },
     {
       "query": "davidson basketball",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T15:30:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/northern-iowa-davidson-prediction-odds-2026-fort-myers-tip-off-picks-monday-november-23/",
-        "https://www.sportsline.com/cbb/news/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
-        "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/"
+        "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/",
+        "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY",
       "image_credit": "CBS Sports",
@@ -61,18 +166,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldIT7pcCmRO6p6qH64aTT_dtVF9b9nmw4_QBlKtFJ7ueljlT-sLnDT2WlwZY"
         },
         {
-          "url": "https://www.sportsline.com/cbb/news/northern-iowa-vs-davidson-odds-prediction-2026-fort-myers-tip-off-picks-for-monday-nov-23-from-advanced-model/",
-          "title": "Northern Iowa vs. Davidson odds, prediction: 2026 Fort Myers Tip-Off picks for Monday, Nov. 23 from advanced model",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKxMh_FECkMrRYWEw3yy1eshIA702Xe428YY28BtP8x_Ob4oqZz0Flw62UPHk"
-        },
-        {
           "url": "https://www.sportsgambler.com/betting-tips/basketball/northern-iowa-panthers-vs-davidson-wildcats-prediction-odds-2026-11-23/",
           "title": "Northern Iowa vs Davidson Prediction, Picks & Odds | 23 Nov 2026",
           "publisher": "Sportsgambler",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        },
+        {
+          "url": "https://unipanthers.com/news/2026/11/22/mens-basketball-uni-mens-basketball-tees-off-thanksgiving-week-at-fort-myers-tip-off",
+          "title": "UNI men’s basketball tees off Thanksgiving week at Fort Myers Tip-Off",
+          "publisher": "University of Wyoming Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYsCOwAzXHN1p9grU9aSTvnLweacQBcnbmgyI_wWGFaGSo_aWeRWzXr7K8q5A"
         }
       ]
     },
@@ -113,7 +218,7 @@
     },
     {
       "query": "sophie cunningham indiana fever offseason",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-23T15:20:00Z",
       "related_news_urls": [
         "https://suaragarut.id/en/sophie-cunningham-autograph-fee",
@@ -183,12 +288,12 @@
     },
     {
       "query": "al-shamal vs al-ahli",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T15:10:00Z",
       "related_news_urls": [
         "https://www.thestatszone.com/al-shamal-vs-al-ahli-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240883",
-        "https://www.goal.com/en-in/news/an-extraordinary-night-with-a-taste-of-revenge-mahrez-reopens-the-book-of-memories-against-al-ahli/blt82f4c191a1c34093",
-        "https://www.yardbarker.com/soccer/articles/yesterdays_friend_riyad_mahrez_surprises_al_ahli_players_before_al_shamal_clash/s1_17790_44605348"
+        "https://bsinews.id/en/mahrez-faces-al-ahli-qatar",
+        "https://khelnow.com/football/al-shamal-vs-al-ahli-live-starting-lineups-afc-champions-league-elite-202611"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q",
       "image_credit": "The Stats Zone",
@@ -201,18 +306,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0NQdC9dXxNVeORD2qHaJ4xIJJh7dKCGl6iVzEMXMCaHvrpEDPQKrP3ZvDF7Q"
         },
         {
-          "url": "https://www.goal.com/en-in/news/an-extraordinary-night-with-a-taste-of-revenge-mahrez-reopens-the-book-of-memories-against-al-ahli/blt82f4c191a1c34093",
-          "title": "An extraordinary night with a taste of revenge: Mahrez reopens the book of memories against Al-Ahli",
-          "publisher": "Goal.com",
+          "url": "https://bsinews.id/en/mahrez-faces-al-ahli-qatar",
+          "title": "Mahrez Faces Former Club Al-Ahli in Asian Champions League",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShsGP7fcjepEGCRlDtuxfDDPlyB2V3UkX7nTY6xiZ2QpnSmCsu0iGPakrlPZw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCGYi-o1YwQdwomgNhv2nNorFysljqQpNdprHQleDNN4Fzz6WrdTqshIjG-uI"
         },
         {
-          "url": "https://www.yardbarker.com/soccer/articles/yesterdays_friend_riyad_mahrez_surprises_al_ahli_players_before_al_shamal_clash/s1_17790_44605348",
-          "title": "'Yesterday's friend': Riyad Mahrez surprises Al-Ahli players before Al-Shamal clash",
-          "publisher": "Yardbarker",
+          "url": "https://khelnow.com/football/al-shamal-vs-al-ahli-live-starting-lineups-afc-champions-league-elite-202611",
+          "title": "Al-Shamal vs Al Ahli LIVE - Confirmed starting lineups & pre-match updates for AFC Champions League Elite 2026-27 clash",
+          "publisher": "Khel Now",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXz02aHwLGkFOMeBfIKRCVZa4-sqkL4CEA7FY2ZP-QOJHkYGU7sA7kN_q7Ot8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcyvtlb42TuaUqQxL1OKU5z254SaKt8-9PVUxknyx7Q37ZZaw2CCIzxPqZl7A"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "The Globe and Mail",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSFoyS3nWKS9w_LeY3_exU86Xsitw3_PbNe7jlu6uuOmy56Tw0iGyiHD3gpW8"
-        }
-      ]
-    },
-    {
-      "query": "tesla stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
-        "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-        "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
-          "title": "Cathie Wood Says TSLA Holders ‘Will Get’ A Premium If SpaceX Buys Tesla — HSBC Puts It At Over 30%",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo"
-        },
-        {
-          "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-          "title": "Is SpaceX-Tesla Merger Imminent?",
-          "publisher": "Puck",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9cRYnHyQK9fhKeKu3lQMdNgcdZ7nIFEFljsQBp3V9oGgoBQnjAXYvcPphKo"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
-          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWCZqqEwfd9ld7NePLhuzT9I3ifd9pPA6LVh9ESnrTG-rXx-9TX4Wt_LeGbc"
-        }
-      ]
-    },
-    {
-      "query": "apple stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T15:00:00Z",
-      "related_news_urls": [
-        "https://247wallst.com/personal-finance/2026/11/23/swap-cash-for-the-apple-stock-inside-your-irrevocable-trust-before-you-die-and-the-shares-come-home-for-a-full-step-up-estate-lawyers-write-that-power-in-on-purpose/",
-        "https://247wallst.com/personal-finance/2026/11/22/the-400000-of-stock-he-put-in-his-kids-trust-in-2012-is-worth-4-million-everyone-says-it-will-never-get-a-step-up-hell-swap-it-back-for-cash-and-the-irss-share-of-that-gain-will-be-zero/",
-        "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqMIoXRYip0H-Q0zrwbn5sNwgf1oRZ-E5PaucUusG80D_LYEo1FPnfzFvMPxs",
-      "image_credit": "24/7 Wall St.",
-      "news": [
-        {
-          "url": "https://247wallst.com/personal-finance/2026/11/23/swap-cash-for-the-apple-stock-inside-your-irrevocable-trust-before-you-die-and-the-shares-come-home-for-a-full-step-up-estate-lawyers-write-that-power-in-on-purpose/",
-          "title": "Swap Cash for the Apple Stock Inside Your Irrevocable Trust Before You Die and the Shares Come Home for a Full Step-Up. Estate Lawyers Write That Power In on Purpose",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqMIoXRYip0H-Q0zrwbn5sNwgf1oRZ-E5PaucUusG80D_LYEo1FPnfzFvMPxs"
-        },
-        {
-          "url": "https://247wallst.com/personal-finance/2026/11/22/the-400000-of-stock-he-put-in-his-kids-trust-in-2012-is-worth-4-million-everyone-says-it-will-never-get-a-step-up-hell-swap-it-back-for-cash-and-the-irss-share-of-that-gain-will-be-zero/",
-          "title": "The $400,000 of Stock He Put in His Kids' Trust in 2012 Is Worth $4 Million. Everyone Says It Will Never Get a Step-Up. He'll Swap It Back for Cash, and the IRS's Share of That Gai",
-          "publisher": "24/7 Wall St.",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvVjSbmJSXMuQD-LgOdlaL0osMHxjArlQje_amVMibTKmn2zTGWVuWrbc006E"
-        },
-        {
-          "url": "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
-          "title": "Berkshire Hathaway is keeping a quarter of its investments tied up in Apple",
-          "publisher": "AppleInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBWrs3xjZ8vyXpKWOMgsj5DH0tgsrACKdtA82ibTj085cD0bVTthr04MqFc90"
-        }
-      ]
-    },
-    {
-      "query": "ko stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T15:00:00Z",
-      "related_news_urls": [
-        "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
-        "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
-        "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk",
-      "image_credit": "Barron's",
-      "news": [
-        {
-          "url": "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
-          "title": "Coca-Cola Stock Could Lose Its Fizz. Its Valuation Is the Highest in 25 Years.",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
-          "title": "How Many Shares of Coca-Cola or PepsiCo Pay $1,000 a Month in Dividends?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVcADHjpE9Q7n7mDElNaE6tkh7wWWMaMyZF3evaN0alZ4lBn_ieq4BOhwczxw"
-        },
-        {
-          "url": "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
-          "title": "Is The Coca-Cola (NYSE:KO) Built For A Choppier Market?",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt1nrOF1ZA3XEBAipGxWUM6oKL1RfOBdpCcFc1okgNOmlTrECufaQDYRCArTQ"
         }
       ]
     }
