@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T06:47:52.738229Z",
+  "checked_at": "2026-11-23T07:01:43.000316Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -11,68 +11,68 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-23T06:20:00Z",
       "related_news_urls": [
-        "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-        "https://www.yahoo.com/news/politics/articles/not-ask-kill-decisions-elon-190006676.html",
-        "https://breakingdefense.com/2026/11/senate-gearing-up-to-investigate-ukraines-access-to-starshield/"
+        "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
+        "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
+        "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1V4V084uT17jEi2MWbm_rFrE9tWYFDTZQv4SP_IyXgTNG3iZ3m5ffDu1DuY",
-      "image_credit": "Ars Technica",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodkzIaTFd6VmC519TU_LPI6JSLMJu_yUNhKBbq6zgicF7vLECClVzXry-WEE",
+      "image_credit": "Space",
       "news": [
         {
-          "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
-          "title": "SpaceX’s Starshield troubles in Ukraine could threaten its broader military business",
-          "publisher": "Ars Technica",
+          "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-classified-space-force-launch-ussf-317",
+          "title": "SpaceX launches classified mission for US Space Force from California (video)",
+          "publisher": "Space",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1V4V084uT17jEi2MWbm_rFrE9tWYFDTZQv4SP_IyXgTNG3iZ3m5ffDu1DuY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRodkzIaTFd6VmC519TU_LPI6JSLMJu_yUNhKBbq6zgicF7vLECClVzXry-WEE"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/not-ask-kill-decisions-elon-190006676.html",
-          "title": "‘Do Not Ask Me to Make Kill Decisions’: Elon Musk Defends Starlink Restrictions on Ukraine",
-          "publisher": "Yahoo",
+          "url": "https://spaceflightnow.com/2026/11/21/live-coverage-spacex-to-launch-intelligence-gathering-satellites-for-the-national-reconnaissance-office-3/",
+          "title": "SpaceX launches intelligence-gathering satellites for the National Reconnaissance Office",
+          "publisher": "Spaceflight Now",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQewqWUhCjhxf8mRPxf4dtOzeKFvIrexz3DCUyUPrafEGTcyyGO2v_bofQFoE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNdgRDF5voJPP7m-It4fuBIWGmnf4aSFw0QIdorsrJqNxDb087YgfVUvT6qG8"
         },
         {
-          "url": "https://breakingdefense.com/2026/11/senate-gearing-up-to-investigate-ukraines-access-to-starshield/",
-          "title": "Senate gearing up to investigate Ukraine’s access to Starshield",
-          "publisher": "Breaking Defense",
+          "url": "https://www.noozhawk.com/spacex-west-coast-team-sets-record-with-quick-turnaround-between-falcon-liftoffs/",
+          "title": "SpaceX West Coast Team Sets Record with Quick Turnaround Between Falcon Liftoffs",
+          "publisher": "Noozhawk",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrVFOh2aU-xWdeyhRXl6fBTF8vjB0kM0R4XjTe3IDqtaPmkjNp8-FkUMsgiHI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2mExXpvdacwhx-zsy5RULTIuvWHEoRTvnt4weo2N7xC_DRoRiJRg0u-d15qo"
         }
       ]
     },
     {
-      "query": "ben wang",
-      "approx_searches": "2000+",
+      "query": "enrique peña nieto",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T06:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
-        "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut",
-        "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review"
+        "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/",
+        "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html",
+        "https://cnnespanol.cnn.com/2026/11/21/mexico/quien-es-chapo-isidro-detenido-beltran-leyva-sinaloa-eeuu-orix"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdiQNZYKYGpUTyxNndg5sFOSc6fi0MIJBM-7vk0bxYwLNKu3S4RT52vT80w28",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9WSWoEEvOYNR5_Ez7bNkocTpTejIbVy1RzIUuB1Bztu9xiQOfLaOGR27MzI",
+      "image_credit": "PolíticoMX",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
-          "title": "Box Office: 'Hunger Games: Sunrise on Reaping' Opening to $120M, 4th Best Series",
-          "publisher": "Deadline",
+          "url": "https://polls.politico.mx/2026/11/23/vicente-fox-felipe-calderon-y-enrique-pena-nieto-los-presidentes-mas-viajeros-de-mexico/",
+          "title": "Vicente Fox, Felipe Calderón y Enrique Peña Nieto, los presidentes más viajeros de México",
+          "publisher": "PolíticoMX",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdiQNZYKYGpUTyxNndg5sFOSc6fi0MIJBM-7vk0bxYwLNKu3S4RT52vT80w28"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9WSWoEEvOYNR5_Ez7bNkocTpTejIbVy1RzIUuB1Bztu9xiQOfLaOGR27MzI"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut",
-          "title": "‘Hunger Games’ Prequel Snags $120 Million in Domestic Debut",
-          "publisher": "Bloomberg.com",
+          "url": "https://elpais.com/expres/2026-11-23/la-caida-del-chapo-isidro-afianza-la-ofensiva-de-sheinbaum-contra-los-carteles-en-mexico.html",
+          "title": "La caída del Chapo Isidro afianza la ofensiva de Sheinbaum contra los cárteles en México",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY9ZxJYPk0WO2XC4Gjbed5BVsXBbVn7VqJXUlQb4PzUg2gzL4raAHaqZkQquc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1qx89T4ry8eY9gHGWsC59xB10O6j-XE1EV2xohHA6SPUf8MAtLRbqskmGUNE"
         },
         {
-          "url": "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review",
-          "title": "'Sunrise on the Reaping' feels like sunset for the 'Hunger Games' franchise",
-          "publisher": "NPR",
+          "url": "https://cnnespanol.cnn.com/2026/11/21/mexico/quien-es-chapo-isidro-detenido-beltran-leyva-sinaloa-eeuu-orix",
+          "title": "Quién es el Chapo Isidro, el cabecilla criminal de los Beltrán Leyva detenido en Sinaloa con ayuda de EE.UU.",
+          "publisher": "CNN en Español",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMSv1HxkFwHITnu11W46cMp-cT8dTvxku1B8N66NLsCIGvaD4OwkbM-M09V9k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9ot25-pt_duC0Tx1nYR6RpFPi-nrdjWPBPMg-QHvNIyWczgOUFlOojaS4YrE"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "published_at": "2026-11-23T06:00:00Z",
       "related_news_urls": [
         "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
-        "https://digg.com/entertainment/wklp6lzk",
+        "https://opencritic.com/news/40157/grand-theft-auto-6-has-beautiful-tribute",
         "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU",
@@ -96,11 +96,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU"
         },
         {
-          "url": "https://digg.com/entertainment/wklp6lzk",
-          "title": "GTA 6 developer reportedly honors his late mother with a hidden memorial",
-          "publisher": "Digg",
+          "url": "https://opencritic.com/news/40157/grand-theft-auto-6-has-beautiful-tribute",
+          "title": "Grand Theft Auto 6 Has Beautiful Tribute",
+          "publisher": "OpenCritic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDJYKZEecJES1htnbA1hEJ2ZKFuBCUrEG4zR-0cQhDRhh5YAQ_sDRaUasGoY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRk5EylefZdpbWUN9P6o-zpqyUdmv0RUOAuEl1ZZlkHQE6I640AZrYDyklowk"
         },
         {
           "url": "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html",
@@ -153,7 +153,7 @@
       "related_news_urls": [
         "https://www.espn.com/soccer/report/_/gameId/401933730",
         "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
-        "https://www.oregonlive.com/tv/2026/11/how-to-watch-the-chicago-fire-vs-charlotte-fc-mls-playoff-match-for-free-tonight-game-1-live-stream.html"
+        "https://www.charlottefootballclub.com/news/full-time-clip-pep-biel-last-minute-winner-gives-charlotte-fc-2-1-win-in-match-one"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhoEgBTAdDaLlx6IzVDJnqNLSK88q_UJcjnnHwStCw1ejTgnJIBtO2XSlX2IQ",
       "image_credit": "ESPN",
@@ -173,11 +173,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-4flr6rdXFMosRJ7FG5sGbhblx4_lu2m_8apgl6o-SBx0PfvSBqR1a7UMsQ0"
         },
         {
-          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-the-chicago-fire-vs-charlotte-fc-mls-playoff-match-for-free-tonight-game-1-live-stream.html",
-          "title": "How to watch the Chicago Fire vs. Charlotte FC MLS Playoff match for free tonight: Game 1 live stream",
-          "publisher": "OregonLive.com",
+          "url": "https://www.charlottefootballclub.com/news/full-time-clip-pep-biel-last-minute-winner-gives-charlotte-fc-2-1-win-in-match-one",
+          "title": "Full-Time Clip: Pep Biel Last-Minute Winner Gives Charlotte FC 2-1 Win in Match One",
+          "publisher": "Charlotte FC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YWjHK9MByhkYVbZveuEIf2IeYOePp60D_53GHxuEj7F3qCbGFrsxaS1eSHY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXBmKsstAjv-Icj3ykoNJhDE7vq4Tlb_cN43Akv1NzLIlAMyJITyLiUoT88OA"
         }
       ]
     },
@@ -218,7 +218,7 @@
     },
     {
       "query": "criminal profile gta 6",
-      "approx_searches": "1000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T05:50:00Z",
       "related_news_urls": [
         "https://www.clarin.com/us-news/how-the-criminal-profile-works-in-gta-6-karma-and-honor-system-explained_0_LQkpy3b2Nm.html",
@@ -257,7 +257,7 @@
       "published_at": "2026-11-23T05:40:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
-        "https://www.bloomberg.com/news/videos/2026-11-23/the-china-show-11-23-2026-video",
+        "https://www.economist.com/the-world-in-brief/2026/11/23/e6e19a5b-7c86-42da-a814-be646f87075c",
         "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ",
@@ -271,11 +271,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ"
         },
         {
-          "url": "https://www.bloomberg.com/news/videos/2026-11-23/the-china-show-11-23-2026-video",
-          "title": "Watch Asian Stocks Drop AI Fears Outweigh Support Measures",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.economist.com/the-world-in-brief/2026/11/23/e6e19a5b-7c86-42da-a814-be646f87075c",
+          "title": "World in Brief: Asian tech stock sell-off continues; COP31 collapses",
+          "publisher": "The Economist",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsx6UPk4pKSoCIZgE_A280tx_XWeS1T1Kz_X2I7a5nzMrtGeZ13CMbDDyIB6Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRHcZWSWAJW_7SuSVVMWjAzJhiQ_-H3XDsc1dTlgbVsP0pfvJT6m5CifP4TwI"
         },
         {
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
@@ -288,7 +288,7 @@
     },
     {
       "query": "weather los angeles",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-23T05:40:00Z",
       "related_news_urls": [
         "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
