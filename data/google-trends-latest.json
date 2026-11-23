@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T05:01:23.204162Z",
+  "checked_at": "2026-11-23T05:31:20.683573Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "earthquake now",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T05:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
+        "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
+        "https://www.montereycountynow.com/blogs/news_blog/a-5-0-magnitude-earthquake-near-pinnacles-national-park-shakes-south-county/article_be080b2b-3182-435b-918b-fd42e2d50d5b.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwvmh8ZWpAbamn5rgdD_CXRULr0s_FVnC7iZTvAiCnWZcpLq0YMuOiKDT6Ris",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
+          "title": "2 Earthquakes Rattle California",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwvmh8ZWpAbamn5rgdD_CXRULr0s_FVnC7iZTvAiCnWZcpLq0YMuOiKDT6Ris"
+        },
+        {
+          "url": "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
+          "title": "Magnitude 5.0 quake rattles Central Coast",
+          "publisher": "The Mercury News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4GU9Dxm3Ywq79QsijznO96Eiw8pKeN57T3XQ0guYwVxbQYtU0JVhhdPwv768"
+        },
+        {
+          "url": "https://www.montereycountynow.com/blogs/news_blog/a-5-0-magnitude-earthquake-near-pinnacles-national-park-shakes-south-county/article_be080b2b-3182-435b-918b-fd42e2d50d5b.html",
+          "title": "A 5.0-magnitude earthquake near Pinnacles National Park shakes South County.",
+          "publisher": "Monterey County Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG87Cb_qS79-wKvgwfh4ts8IEssmAyvtOFq-2UyDsFup4rJ-OFw79JVluAN2I"
+        }
+      ]
+    },
+    {
+      "query": "earthquake now near los angeles, ca",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T05:10:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
+        "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
+        "https://earthquake.usgs.gov/earthquakes/eventpage/ci41364111/pager"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuougOjEI0F8KJayXPoLssqpnonufsM1ltc01eqts3ZIvfgXcXkKqs7dFQBag",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
+          "title": "Magnitude 4.4 earthquake hits near downtown Los Angeles",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuougOjEI0F8KJayXPoLssqpnonufsM1ltc01eqts3ZIvfgXcXkKqs7dFQBag"
+        },
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
+          "title": "Another quake rattles Southern California, this time off the coast of San Pedro",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLZiyrwIW97a0bhV4ZS-1xtZhv_HTnqMzLSAV3xJGrAgBEIFv6gHp-adH0alY"
+        },
+        {
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/ci41364111/pager",
+          "title": "M 4.4 - 1 km NNW of Commerce, CA",
+          "publisher": "USGS (.gov)",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEe_kK6W7L7FRYFyAgoPocPWAe8asG_ij2hJAVT_bH8xarsDgfzlcClSJDHCg"
+        }
+      ]
+    },
+    {
+      "query": "president snow",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T05:10:00Z",
+      "related_news_urls": [
+        "https://people.com/glenn-close-and-ralph-fiennes-agree-their-hunger-games-characters-had-a-thing-exclusive-12261207",
+        "https://parade.com/movies/glenn-close-teases-that-her-sunrise-on-the-reaping-villain-had-a-thing-with-ralph-fiennes-president-snow",
+        "https://creepycatalog.com/glenn-close-and-ralph-fiennes-decided-their-hunger-games-villains-once-had-a-thing/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4MaSEwr4pJs3f4endjTweTHjgPxWGOtMFD8b158TGfFKMoDZfDwdPlVuYCbI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/glenn-close-and-ralph-fiennes-agree-their-hunger-games-characters-had-a-thing-exclusive-12261207",
+          "title": "Glenn Close and Ralph Fiennes Agree Their ‘Hunger Games’ Characters Had ‘a Thing’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4MaSEwr4pJs3f4endjTweTHjgPxWGOtMFD8b158TGfFKMoDZfDwdPlVuYCbI"
+        },
+        {
+          "url": "https://parade.com/movies/glenn-close-teases-that-her-sunrise-on-the-reaping-villain-had-a-thing-with-ralph-fiennes-president-snow",
+          "title": "Glenn Close Teases That Her ‘Sunrise on the Reaping’ Villain Had a ‘Thing’ With Ralph Fiennes’ President Snow",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThN2UNzcrK79jqnzaTkt3IbxCY_K09dvTbHVHzdu9arycogo8sbr4LBF6Vp54"
+        },
+        {
+          "url": "https://creepycatalog.com/glenn-close-and-ralph-fiennes-decided-their-hunger-games-villains-once-had-a-thing/",
+          "title": "Glenn Close and Ralph Fiennes Decided Their Hunger Games Villains Once Had a Thing",
+          "publisher": "Creepy Catalog",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbQ-7_8B1bjdcVh8cWM5gFEJvTW94F-4SgaNwBFNTX7xHN2HkfyC08SIhO3Ho"
+        }
+      ]
+    },
+    {
+      "query": "lucia voice actor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T05:00:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+        "https://pagesix.com/2026/11/18/celebrity-news/actress-manni-l-perez-revealed-as-performer-behind-gta-6s-leading-character/",
+        "https://people.com/gta-6-voice-actors-side-by-side-with-characters-12265464"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
+          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/18/celebrity-news/actress-manni-l-perez-revealed-as-performer-behind-gta-6s-leading-character/",
+          "title": "Glamorous actress behind GTA 6’s Lucia is unmasked after years of secrecy, ‘scary’ NDAs",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD89FKNd7KART-m5hCN_h8aOYDMF8qC192-cN9PFJdbjbcwvJt0kZAL46xUIE"
+        },
+        {
+          "url": "https://people.com/gta-6-voice-actors-side-by-side-with-characters-12265464",
+          "title": "See the ‘GTA 6’ Voice Actors Side-by-Side with the Characters They Play",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUF55JuHcUer2UhasmewMzmK0jG-CEioSItRAFPYh_RSleMDYBUOz9ZyrAAP8"
+        }
+      ]
+    },
+    {
+      "query": "new zealand vs india",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T04:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/cricket/story/_/id/50559412/nz-vs-ind-1st-test-stats-rishabh-pant-six-hitting-record-india-highest-total-away-test",
+        "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/match-report-5",
+        "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj3tzIIiwjyyxRHdlKT6cLk7AUww6NpoydOwIVTZdB6frykKhbm_v1wVIijw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/cricket/story/_/id/50559412/nz-vs-ind-1st-test-stats-rishabh-pant-six-hitting-record-india-highest-total-away-test",
+          "title": "Stats - Pant's six-feast in India's highest away Test total",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj3tzIIiwjyyxRHdlKT6cLk7AUww6NpoydOwIVTZdB6frykKhbm_v1wVIijw"
+        },
+        {
+          "url": "https://www.cricinfo.com/series/india-in-new-zealand-2026-27-1539421/new-zealand-vs-india-1st-test-1539442/match-report-5",
+          "title": "New Zealand and India play out stalemate on stubborn Basin Reserve pitch",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7JYl-kCZ2y3w8bpUfwmFmRGCNQx2nC9J9FFaUpbxAij8aRrNSNRRkW_KmPM8"
+        },
+        {
+          "url": "https://www.abc.net.au/news/2026-11-22/cricket-india-highest-test-score-against-new-zealand/107414256",
+          "title": "India breaks New Zealand Test record with monster innings in Wellington",
+          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTszaQasJ4y5oRd0-lv78E57CgUF1edXB7bOH9w5EbU_XGhkX7-H3zqccDmvts"
+        }
+      ]
+    },
+    {
+      "query": "quien salio de la mansion vip 2",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T04:50:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/mexico/2026/11/22/la-mansion-vip-votos-como-va-la-tabla-de-posiciones-y-quien-esta-en-riesgo-de-salir-hoy-domingo-22-de-noviembre/",
+        "https://www.lavozarizona.com/story/entretenimiento/2026/11/16/quien-es-abel-robles-primer-eliminado-de-la-mansion-vip-2/92808298007/",
+        "https://www.razon.com.mx/entretenimiento/2026/11/22/como-van-las-votaciones-de-la-mansion-vip-hoy-22-de-noviembre/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/mexico/2026/11/22/la-mansion-vip-votos-como-va-la-tabla-de-posiciones-y-quien-esta-en-riesgo-de-salir-hoy-domingo-22-de-noviembre/",
+          "title": "La Mansión VIP votos: cómo va la tabla de posiciones y quién está en riesgo de salir hoy domingo 22 de noviembre",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A"
+        },
+        {
+          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/16/quien-es-abel-robles-primer-eliminado-de-la-mansion-vip-2/92808298007/",
+          "title": "¿Quién es Abel Robles, primer eliminado de ‘La Mansión VIP 2’?",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfE5ghCQp7xxli859oa69vzCyx4LYWmMqWTqk4FaSVlHPOOHFPnqXHB4NCsoY"
+        },
+        {
+          "url": "https://www.razon.com.mx/entretenimiento/2026/11/22/como-van-las-votaciones-de-la-mansion-vip-hoy-22-de-noviembre/",
+          "title": "¿Cómo van las votaciones de La Mansión VIP hoy 22 de noviembre?",
+          "publisher": "La Razón de México",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcST0-yb7NrgAigOVjO4fr5qbzRItiSRJooXWP3iaU3SY7G3I8AyEovIx4WXOsI"
+        }
+      ]
+    },
+    {
+      "query": "jensen huang nvidia wealth breakdown",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T04:40:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/investing/jensen-and-lori-huang-have-amassed-a-vast-fortune-we-break-down-their-wealth-3d2287b1",
+        "https://www.barrons.com/articles/jensen-huang-nvidia-stock-trust-grat-estate-tax-357c1fd3",
+        "https://pasqualepillitteri.it/en/news/34430/jensen-huang-moves-59-million-nvidia-shares"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ5VslGIMTt8IUq7sWjvgyQAhotGUlOuyyRu7Zn6OJX4e1i7dIvITp5NiUTTM",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/investing/jensen-and-lori-huang-have-amassed-a-vast-fortune-we-break-down-their-wealth-3d2287b1",
+          "title": "Jensen and Lori Huang Have Amassed a Vast Fortune. We Break Down Their Wealth.",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQ5VslGIMTt8IUq7sWjvgyQAhotGUlOuyyRu7Zn6OJX4e1i7dIvITp5NiUTTM"
+        },
+        {
+          "url": "https://www.barrons.com/articles/jensen-huang-nvidia-stock-trust-grat-estate-tax-357c1fd3",
+          "title": "Jensen Huang Passed Billions in Nvidia Stock to His Heirs Months Before His Downfall",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3H1-ZceI55vUzI7fSMkVzdgn9Oecn4h8NkWV0fitX04dv7Z20YAVcY97s_T0"
+        },
+        {
+          "url": "https://pasqualepillitteri.it/en/news/34430/jensen-huang-moves-59-million-nvidia-shares",
+          "title": "Jensen Huang moves 59 million Nvidia shares to a family trust as two GRATs end",
+          "publisher": "Pasquale Pillitteri",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR7slBFt__mx828r10lpukmwXBDnooayZauwf5SLOASU-9QEoRIZq9Wy-nOHs"
+        }
+      ]
+    },
     {
       "query": "violent night 2",
       "approx_searches": "1000+",
@@ -42,13 +287,48 @@
       ]
     },
     {
+      "query": "nfl standings 49ers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T04:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/packers-help-49ers-playoff-picture-042012697.html",
+        "https://www.jsonline.com/story/sports/nfl/packers/2026/11/22/green-bay-packers-schedule-next-game-bye/92910746007/",
+        "https://www.packersnews.com/story/sports/nfl/packers/2026/11/22/packers-offensive-line-will-look-like-red-meat-to-rams-pass-rush/92717986007/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmkGusQ-DVVUVMlOArn5xdTZwvTPyDX8iU9fCKe-tocV2wRkt3pM6cpY7mUgo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/packers-help-49ers-playoff-picture-042012697.html",
+          "title": "The Packers’ get some help from the 49ers in the playoff picture",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmkGusQ-DVVUVMlOArn5xdTZwvTPyDX8iU9fCKe-tocV2wRkt3pM6cpY7mUgo"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/nfl/packers/2026/11/22/green-bay-packers-schedule-next-game-bye/92910746007/",
+          "title": "Do the Packers play today? Schedule, next game after bye",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpsjMxtoQ_ic1H59Gcopf1NEtYU9mx27SBNojpgnqziOEPqf4jYgLkj7HmcRg"
+        },
+        {
+          "url": "https://www.packersnews.com/story/sports/nfl/packers/2026/11/22/packers-offensive-line-will-look-like-red-meat-to-rams-pass-rush/92717986007/",
+          "title": "With Rams’ Myles Garrett and Aaron Donald next, Packers line not catching any breaks",
+          "publisher": "PackersNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThBrerBOWUchDF0i-EVGzTOYCZVdZvS8qLH6apFdcYq_wgEFSnSvo8uS1Y40Y"
+        }
+      ]
+    },
+    {
       "query": "loyola chicago basketball",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T04:30:00Z",
       "related_news_urls": [
         "https://www.sportsgambler.com/betting-tips/basketball/san-jose-state-spartans-vs-loyola-chicago-ramblers-prediction-odds-2026-11-22/",
-        "https://sjsuspartans.com/news/2026/11/21/spartans-set-to-compete-in-acrisure-series-mte",
-        "https://www.covers.com/sport/basketball/ncaab/matchup/390731/picks"
+        "https://bsinews.id/en/college-basketball-acrisure-arena-november-22",
+        "https://sjsuspartans.com/news/2026/11/21/spartans-set-to-compete-in-acrisure-series-mte"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q",
       "image_credit": "Sportsgambler",
@@ -61,298 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-hYvvU8Fdyaub-QnNAgEZZ9H540kcmu5JWauguvOqcRhcDKqJwPmT09FP62Q"
         },
         {
+          "url": "https://bsinews.id/en/college-basketball-acrisure-arena-november-22",
+          "title": "Four College Basketball Teams Meet at Acrisure Arena",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq7vSOTIWqaRcDNW9eqEqXEBCrEduEhOvK48I9h2kl_FhkrjGMW85DQyTO0F0"
+        },
+        {
           "url": "https://sjsuspartans.com/news/2026/11/21/spartans-set-to-compete-in-acrisure-series-mte",
           "title": "Spartans Set to Compete in Acrisure Series MTE - SJSU Athletics - Official Athletics Website",
           "publisher": "San Jose State Spartans",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVfSEiXK1OGPNiovXe72UvZWZjOTiqIleLIGxnnEjfAxp0OvTUPqHZ2D3oXLo"
-        },
-        {
-          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390731/picks",
-          "title": "San Jose State Spartans vs Loyola Chicago Ramblers Picks, Prop Bets For November 23, 2026 - NCAAB Predictions",
-          "publisher": "Covers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS461K4Ev42g03A9CTzlY4grYqao7ey_qE7eR23sYEofYzgLKhJytBh3Mpcuuc"
-        }
-      ]
-    },
-    {
-      "query": "nfc standings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T04:20:00Z",
-      "related_news_urls": [
-        "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-11-snf",
-        "https://www.nytimes.com/athletic/7787464/2026/11/22/nfl-playoff-picture-week-11-49ers-bills/",
-        "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg",
-      "image_credit": "Bleacher Report",
-      "news": [
-        {
-          "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-after-week-11-snf",
-          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings After Week 11 SNF",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7787464/2026/11/22/nfl-playoff-picture-week-11-49ers-bills/",
-          "title": "NFL playoff picture, Week 11: 49ers look like class of NFC; can anyone catch Bills in AFC?",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYcmXGiwN-R4HT7luCY9-jgW6wVlFv8shLOUgRMr2PiOmL8dAC8EUZqdhDL4"
-        },
-        {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11",
-          "title": "Here’s where the Chiefs sit in the AFC playoff standings right now",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMX6fcXvNTRkmRiNwreRlnM4OB0NoSJbg8Zi2cawSA64ywFE7Ob66NHl-sqjw"
-        }
-      ]
-    },
-    {
-      "query": "what happened to kirk cousins",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T04:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
-        "https://sports.yahoo.com/articles/kirk-cousins-family-couldn-t-032747491.html",
-        "https://people.com/kirk-cousins-kids-everything-to-know-12252678"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50557919/vikings-qb-kirk-cousins-pace-make-nfl-history",
-          "title": "Kirk Cousins on pace to make history as 1st QB to play 18 regular-season games",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzVlZU9qtf5_PFmY4K9erBXMwL5b9Ln0T78AWfGI39g4w_NGAuWCvFd5UTRvc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/kirk-cousins-family-couldn-t-032747491.html",
-          "title": "Kirk Cousins’ family couldn’t wait to leave Las Vegas after Raiders-Vikings trade",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhxYiILZrgi6Br-yiYWQV32aT7pF5kRAjGHtJS32il2e4jPVy1F7bdn26Vb68"
-        },
-        {
-          "url": "https://people.com/kirk-cousins-kids-everything-to-know-12252678",
-          "title": "Meet Kirk Cousins’ 2 Kids, Sons Cooper and Turner",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMj7fnJ1h0zy5WW4COlmNXhyTAnYMvB90W6kae4cVVsIAACs3aa68pgjvX29E"
-        }
-      ]
-    },
-    {
-      "query": "tim allen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T04:20:00Z",
-      "related_news_urls": [
-        "https://people.com/tim-allen-jane-hajduk-reveal-ideal-date-night-after-20-years-of-marriage-exclusive-12267499",
-        "https://www.yahoo.com/entertainment/celebrity/articles/tim-allen-wife-jane-hajduk-173807210.html",
-        "https://pagesix.com/2026/11/21/celebrity-news/tim-allen-wife-jane-hajduk-reveal-simple-date-night-secret-after-20-years-of-marriage/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0DzTgTIxufNFWUk7e8finN7IKnRttveEvhvCa-P8xIHW83rK2ybNSEk5GdpY",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/tim-allen-jane-hajduk-reveal-ideal-date-night-after-20-years-of-marriage-exclusive-12267499",
-          "title": "Tim Allen and Jane Hajduk Reveal What Their Ideal Date Night Looks Like After 20 Years of Marriage (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0DzTgTIxufNFWUk7e8finN7IKnRttveEvhvCa-P8xIHW83rK2ybNSEk5GdpY"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tim-allen-wife-jane-hajduk-173807210.html",
-          "title": "Tim Allen and Wife Jane Hajduk’s Relationship Timeline: Marriage, Parenthood and More",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnIu3154chAnWBYJdEAP05Q2DGk8sPzv1y0QQ4CQUGVUQoMot7Reqm4BLBZTU"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/21/celebrity-news/tim-allen-wife-jane-hajduk-reveal-simple-date-night-secret-after-20-years-of-marriage/",
-          "title": "Tim Allen, wife Jane Hajduk reveal their simple secret to date nights after 20 years of marriage",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWh09VzuBP2WBeGyBMGhLqSjMzQtESpMsaF9A9n9XiVxEdDpYu1z6o161wX1s"
-        }
-      ]
-    },
-    {
-      "query": "mac jones",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T04:10:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-        "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
-        "https://www.fantasyguru.com/cowboys-te-luke-schoonmaker-questionable-for-week-11"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-          "title": "Steelers vs. Eagles Inactives",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY"
-        },
-        {
-          "url": "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
-          "title": "Former Clemson Star Activated from Injured Reserve",
-          "publisher": "The Clemson Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXBiYyGR0Lr_yR7uIShTmLvy0KrE56d-T1BzyRFzIXvpWWSZsV_cxKQ_HRG9g"
-        },
-        {
-          "url": "https://www.fantasyguru.com/cowboys-te-luke-schoonmaker-questionable-for-week-11",
-          "title": "Cowboys | TE Luke Schoonmaker questionable for Week 11",
-          "publisher": "Fantasy Guru",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo"
-        }
-      ]
-    },
-    {
-      "query": "49ers loss",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T04:10:00Z",
-      "related_news_urls": [
-        "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
-        "https://sports.yahoo.com/articles/vikings-t-keep-pace-nfc-043459134.html",
-        "https://www.nfl.com/videos/examining-nfc-playoff-picture-following-tnf-in-week-11-nfl-gameday-final"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLCLg0-gFYEAlvUo_iE17YmDq49NN-w25EAXuhRMtkE3l8SJr5smGdW56qrRk",
-      "image_credit": "Pride Of Detroit",
-      "news": [
-        {
-          "url": "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
-          "title": "Here is where the Lions fit in the NFC playoff picture right now",
-          "publisher": "Pride Of Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLCLg0-gFYEAlvUo_iE17YmDq49NN-w25EAXuhRMtkE3l8SJr5smGdW56qrRk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/vikings-t-keep-pace-nfc-043459134.html",
-          "title": "Vikings can’t keep pace in NFC North playoff standings",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb0w7r3Hgjp24LX6EZ8WksCzyrFpahGsLgCfCqdKG3Z04XzjuFOwCi3A9rVAI"
-        },
-        {
-          "url": "https://www.nfl.com/videos/examining-nfc-playoff-picture-following-tnf-in-week-11-nfl-gameday-final",
-          "title": "Examining NFC playoff picture following 'TNF' in Week 11 | 'NFL GameDay Final'",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFjDBnysjnk7TLp3lv5qHzkX-qPlEIMEnt6qvOs7FvUmG8rjejeoX-PMWxYzU"
-        }
-      ]
-    },
-    {
-      "query": "nfl mvp race",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T04:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
-        "https://www.si.com/nfl/executives-vote-2026-midseason-mvp-coach-awards",
-        "https://www.espn.com/nfl/story/_/id/50499235/bengals-joe-burrow-4-touchdowns-win-vs-steelers-puts-company-tom-brady-peyton-manning"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
-          "title": "Joe Burrow clear NFL MVP odds favorite over Josh Allen, Brock Purdy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM"
-        },
-        {
-          "url": "https://www.si.com/nfl/executives-vote-2026-midseason-mvp-coach-awards",
-          "title": "NFL Executives Vote on 2026 Midseason MVP, Coach of the Year, More Awards",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZf7RySNRDgoHuyQtYyb1jHYlaS3Ow5vywVQQJBntCaoCDN_059TOSbVfDIkY"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50499235/bengals-joe-burrow-4-touchdowns-win-vs-steelers-puts-company-tom-brady-peyton-manning",
-          "title": "Joe Burrow's 4-TD night puts QB in company of Tom Brady, Peyton Manning",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEHvATPFqiVRrUnJ-MNAopYvJm9uC0H1IfYokHy-pAntaxtFqHpXsMSSmGJI"
-        }
-      ]
-    },
-    {
-      "query": "justin jefferson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/videos/kirk-cousins-29-yard-loft-pinpoints-a-wide-open-justin-jefferson-inside-49ers-territory",
-        "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv46A4Mez_nOGurnlsVRt21ewV1dQnMjO4bBwqc_retQ9waLBmL-SzINfttqY",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/videos/kirk-cousins-29-yard-loft-pinpoints-a-wide-open-justin-jefferson-inside-49ers-territory",
-          "title": "Kirk Cousins' 29-yard loft pinpoints a wide-open Justin Jefferson inside 49ers' territory",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv46A4Mez_nOGurnlsVRt21ewV1dQnMjO4bBwqc_retQ9waLBmL-SzINfttqY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins",
-          "title": "NFL Coach Clowns Kyler Murray, Carson Wentz After Justin Jefferson's Success with Kirk Cousins",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVRiTBDF16_P11jyEVfC27dO_gQJEPnqd8kb3BVjbts-Dgm7T00HxJ5Iqu96s"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
-          "title": "Jefferson goes for 9/74 on 13 targets vs. Packers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBx_sXQA5sXSXsTOdyiqr031of3CiQHF7bGGmbuoLuZdfVFeYVMFEXSniPaXU"
-        }
-      ]
-    },
-    {
-      "query": "jimmy garoppolo",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T04:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/20/sports/patriots-mailbag-jimmy-garoppolo/",
-        "https://bleacherreport.com/articles/25536035-new-patriots-rumors-jimmy-garoppolo-amid-daniel-jones-buzz-after-drake-mayes-injury-update",
-        "https://www.barstoolsports.com/blog/3581274/make-the-call-the-patriots-have-a-better-shot-at-a-playoff-run-with-jimmy-g"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KQN2f9gTVMx9Krnb6Qk_3AGl3AktlXW_yPWNhs4YxJxAhigQXYywU-0ILVY",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/20/sports/patriots-mailbag-jimmy-garoppolo/",
-          "title": "Patriots mailbag: How real is the possibility of Jimmy Garoppolo returning to the Patriots?",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KQN2f9gTVMx9Krnb6Qk_3AGl3AktlXW_yPWNhs4YxJxAhigQXYywU-0ILVY"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536035-new-patriots-rumors-jimmy-garoppolo-amid-daniel-jones-buzz-after-drake-mayes-injury-update",
-          "title": "New Patriots Rumors on Jimmy Garoppolo amid Daniel Jones Buzz After Drake Maye's Injury Update",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqv5PiqLkRiDMf2oknOkJb-RJY3h-tGQM5650zaqghzUvI_PxQewkkwNbd7D4"
-        },
-        {
-          "url": "https://www.barstoolsports.com/blog/3581274/make-the-call-the-patriots-have-a-better-shot-at-a-playoff-run-with-jimmy-g",
-          "title": "MAKE THE CALL: The Patriots Have A Better Shot At A Playoff Run With Jimmy G Than They Do With Tommy Cutlets",
-          "publisher": "Barstool Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Q1KrLfyOKMTPLoJn2dnYrYkKEk73yB7Whw6nAMKWTsZbKbfAmtVz4MerjfQ"
         }
       ]
     }
