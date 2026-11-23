@@ -3,52 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T20:31:16.145609Z",
+  "checked_at": "2026-11-23T21:01:29.488326Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "stephen miller",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T20:10:00Z",
+      "query": "thanksgiving weather forecast",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-23T20:30:00Z",
       "related_news_urls": [
-        "https://www.theatlantic.com/books/2026/11/stephen-miller-political-evolution-dostoyevsky-sadomasochism/689540/",
-        "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
-        "https://thehill.com/homenews/administration/6237320-katie-zacharia-stephen-miller-trump-administration-salary/"
+        "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
+        "https://www.usatoday.com/story/news/weather/2026/11/23/noreaster-storm-east-coast-over-thanksgiving-week/92924772007/",
+        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKSqQ8I3NjxpKBFxHazY61JNjHFx3QWayNL6umk703MbBxhkUzmV7Ql7A1Ow",
-      "image_credit": "The Atlantic",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg",
+      "image_credit": "The Weather Channel",
       "news": [
         {
-          "url": "https://www.theatlantic.com/books/2026/11/stephen-miller-political-evolution-dostoyevsky-sadomasochism/689540/",
-          "title": "The Political Education of Stephen Miller",
-          "publisher": "The Atlantic",
+          "url": "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
+          "title": "Thanksgiving travel forecast 2026: storms on both coasts",
+          "publisher": "The Weather Channel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKSqQ8I3NjxpKBFxHazY61JNjHFx3QWayNL6umk703MbBxhkUzmV7Ql7A1Ow"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
-          "title": "Fact-Checking Stephen Miller, the New White House Chief of Staff",
-          "publisher": "The New York Times",
+          "url": "https://www.usatoday.com/story/news/weather/2026/11/23/noreaster-storm-east-coast-over-thanksgiving-week/92924772007/",
+          "title": "Storm to wallop East Coast over Thanksgiving week, forecasters warn",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7fKvUuQ0IN-KBbausAfGkH-3VObh9HuqXJm_jqHYk19Byy-vzSKG64Po1ukk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkMrDjlJSbX052VTQCtCEwv7zCgzmfYBFKGEuCeZ9A5jCzbxdGB1AexSUXj8Y"
         },
         {
-          "url": "https://thehill.com/homenews/administration/6237320-katie-zacharia-stephen-miller-trump-administration-salary/",
-          "title": "Zacharia says Miller took ‘significant pay cut’ to return to White House",
-          "publisher": "The Hill",
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+          "title": "Storms expected on both coasts threaten Thanksgiving travel",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgJgUh4dh6CaZnIVosYbA0UPV7HooGBcFSUgWs9vIdloB86D6d-jLDOkwkwhM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+        }
+      ]
+    },
+    {
+      "query": "jason statham",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T20:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66124440/?ref_=tt_nwr_1",
+        "https://movieweb.com/wrath-of-man-statham-eastwood-stream-november-2026/",
+        "https://movieweb.com/the-beekeeper-jason-statham-stream-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQ3R0sjf_ng8RjagbJIxQhLgRfYotzIBFv8S668LeMhoMyGindv4NIAalXm0",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66124440/?ref_=tt_nwr_1",
+          "title": "Jason Statham & Scott Eastwood's (Very) Intense 119-Minute Action Thriller Is a Global Streaming Hit",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBQ3R0sjf_ng8RjagbJIxQhLgRfYotzIBFv8S668LeMhoMyGindv4NIAalXm0"
+        },
+        {
+          "url": "https://movieweb.com/wrath-of-man-statham-eastwood-stream-november-2026/",
+          "title": "Jason Statham & Scott Eastwood's (Very) Intense 119-Minute Action Thriller Is a Global Streaming Hit",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWzPmBOzATjd5ChE1FMEneP7VRNnGJw8H4Bjmsu4QrvlMVftquHdigJYWJenc"
+        },
+        {
+          "url": "https://movieweb.com/the-beekeeper-jason-statham-stream-november-2026/",
+          "title": "Jason Statham's R-Rated 105-Minute Action Thriller Is a Global Streaming Hit Ahead of 2027 Sequel",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwVS8rcwxWaAA-BAPMLUNLiiqTM7f6SzKIwbE43Uc0ttTUNeu9jiHnFJpWVY0"
+        }
+      ]
+    },
+    {
+      "query": "404 media",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T20:20:00Z",
+      "related_news_urls": [
+        "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+        "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA",
+      "image_credit": "Google Cloud",
+      "news": [
+        {
+          "url": "https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold",
+          "title": "GTIG AI Threat Tracker: Agentic Threat Activity Crosses a Significant Threshold",
+          "publisher": "Google Cloud",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReitoSSMk3Wdd_bVUJVDykHAigzn1ekUEu58rFw1ddTij-jH-a_jSzMrbstCA"
+        },
+        {
+          "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/gtig-ai-threat-tracker-q4-2026/",
+          "title": "Outpace automated cyber threats with security built for nonstop defense.",
+          "publisher": "blog.google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiublQ9Y4VBPR2O9vWESkNe_aHyYueCv2PeexKRuTbBvzUmHir69PIXxeDyeo"
+        },
+        {
+          "url": "https://www.wiz.io/blog/agentic-attacks-artex-offensive-ai-frameworks",
+          "title": "Agentic Attacks in the Wild: ARTEX & Offensive AI Frameworks",
+          "publisher": "wiz.io",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDA_7WAWWyrFTXQKbicy-FoVqY5LZ0ORlZbZcXnZ8ItGCF2HJPHjBDd_OXb0E"
         }
       ]
     },
     {
       "query": "jimmy gomez",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/23/politics/house-ethics-committee-reports-jimmy-gomez",
         "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/",
-        "https://www.news8000.com/news/politics/national-politics/house-ethics-panel-says-it-found-substantial-evidence-that-democratic-rep-jimmy-gomez-engaged-in/article_f72b9b90-dd5a-55bf-bc64-9c23e543c72c.html"
+        "https://www.latimes.com/politics/story/2026-11-23/rep-jimmy-gomez-quitting-after-ethics-panel-finds-evidence-of-sexual-misconduct"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3epvT5vL-izSnyJfkte-YguT8vyluoc4cSMBRWycHKsKkjMoD9_zGBCnpg0",
       "image_credit": "CNN",
@@ -68,57 +138,162 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbkwzf4WgFHOSIT4SJ9EIdH8f5a0kGk5s8040bXQF1d414rb9qMS7TK_9eTpU"
         },
         {
-          "url": "https://www.news8000.com/news/politics/national-politics/house-ethics-panel-says-it-found-substantial-evidence-that-democratic-rep-jimmy-gomez-engaged-in/article_f72b9b90-dd5a-55bf-bc64-9c23e543c72c.html",
-          "title": "House Ethics panel says it found 'substantial evidence' that Democratic Rep. Jimmy Gomez engaged in sexual misconduct",
-          "publisher": "news8000.com",
+          "url": "https://www.latimes.com/politics/story/2026-11-23/rep-jimmy-gomez-quitting-after-ethics-panel-finds-evidence-of-sexual-misconduct",
+          "title": "L.A. Rep. Jimmy Gomez quitting after ethics panel finds evidence of sexual misconduct",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUeEdrUctG-2qu2qJTVc0jRkSD6e7NMVbMVAJemI6lXMiTSW3qLsGdZK6YRcA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6UOrlcfcreJdowFhvx8YItKwLS4-x8MXWzVPWKh0n8edmBoTlwJmFdOUckD8"
         }
       ]
     },
     {
       "query": "nick rallis",
-      "approx_searches": "20000+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
-        "https://www.chiefs.com/news/chiefs-defeat-cardinals-34-7-for-third-win-in-a-row",
-        "https://www.nfl.com/videos/can-t-miss-play-mahomes-second-td-connection-with-kelce-is-delivered-amid-swarm-of-cardinals"
+        "https://www.espn.com/nfl/story/_/id/50575938/cardinals-fire-defensive-coordinator-nick-rallis-sources-say",
+        "https://www.nfl.com/news/cardinals-fire-dc-nick-rallis?remove_header",
+        "https://sports.yahoo.com/articles/arizona-cardinals-fire-defensive-coordinator-203409321.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97yKUA5EVE71nsvpAennZ_D_bVsHIvQw5KvYDLsY11s7abQZ7X-Da_ZQzDoc",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfOVsLZWfxK4NMy6KluVg1oDn0oWwH-VMnOnYKFFtl7UTPK5NsF_pC6gP88lE",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
-          "title": "Travis Kelce pads Hall of Fame résumé with two first-half TDs in Chiefs' win",
+          "url": "https://www.espn.com/nfl/story/_/id/50575938/cardinals-fire-defensive-coordinator-nick-rallis-sources-say",
+          "title": "Cardinals fire defensive coordinator Nick Rallis, sources say",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97yKUA5EVE71nsvpAennZ_D_bVsHIvQw5KvYDLsY11s7abQZ7X-Da_ZQzDoc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfOVsLZWfxK4NMy6KluVg1oDn0oWwH-VMnOnYKFFtl7UTPK5NsF_pC6gP88lE"
         },
         {
-          "url": "https://www.chiefs.com/news/chiefs-defeat-cardinals-34-7-for-third-win-in-a-row",
-          "title": "Chiefs Defeat Cardinals, 34-7, for Third Win in a Row",
-          "publisher": "Kansas City Chiefs",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJCUziQla22qZyLPBC29CfMAMOygBCDJvYPh5WSqnRxBIl9kyy5cehdQydD9U"
-        },
-        {
-          "url": "https://www.nfl.com/videos/can-t-miss-play-mahomes-second-td-connection-with-kelce-is-delivered-amid-swarm-of-cardinals",
-          "title": "Can't-Miss Play: Mahomes' second TD connection with Kelce is delivered amid swarm of Cardinals",
+          "url": "https://www.nfl.com/news/cardinals-fire-dc-nick-rallis?remove_header",
+          "title": "NFL Network: Cardinals fire DC Nick Rallis midway through fourth season in Arizona",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjHP0qliFmvPCLbBjF4NPp-yIjWsTEUaC5fMxFVTqeGR2d2gAGNTyuWORdWuo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsBfVLSspMaGTc9_b1Amw_8y1pbJyEz2A-Pf8WgzP3XV5d5EBlmRoFOtwTBVg"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/arizona-cardinals-fire-defensive-coordinator-203409321.html",
+          "title": "Arizona Cardinals fire defensive coordinator after miserable start",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1_TggElMAyZgodCsbB0TwRhDKnaKMJssEb5XIhiCyZuhhbyV0nv5KNzBp_GI"
+        }
+      ]
+    },
+    {
+      "query": "stephen miller",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T20:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/video/podcasts/100000011302725/hakeem-jeffries-stephen-miller-interview.html",
+        "https://thehill.com/homenews/house/6235280-jeffries-openness-working-gop/",
+        "https://www.newsnationnow.com/politics/trump-hakeem-jeffriess-stephen-miller-house-speaker/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFMMk7IKN8eEeHPOySBTmGVfdvM9SQ9T4zcH2lqcMTWOqNCBST3WT7viifVY4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/video/podcasts/100000011302725/hakeem-jeffries-stephen-miller-interview.html",
+          "title": "Video: What Hakeem Jeffries Thinks of Stephen Miller",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFMMk7IKN8eEeHPOySBTmGVfdvM9SQ9T4zcH2lqcMTWOqNCBST3WT7viifVY4"
+        },
+        {
+          "url": "https://thehill.com/homenews/house/6235280-jeffries-openness-working-gop/",
+          "title": "Jeffries says Jordan contacted him after Speaker vote, but not Trump or Vance",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsCh1-tM--npTSDUZI19ijWX7vBLBnH7TYcKevavE_eA7Xz7x90nzDuLirs2s"
+        },
+        {
+          "url": "https://www.newsnationnow.com/politics/trump-hakeem-jeffriess-stephen-miller-house-speaker/",
+          "title": "Trump praises Jeffries’s Speakership nod despite Stephen Miller jabs",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiiTULZ56A5EpY_3I99bNjWZChLC1AT3LYvKWwtpjWX09hTrhNaOiXxXwYSe0"
+        }
+      ]
+    },
+    {
+      "query": "accountant",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T20:10:00Z",
+      "related_news_urls": [
+        "https://ktla.com/news/local-news/film-accountant-sentenced-embezzlement/",
+        "https://deadline.com/2026/11/film-accountant-sentenced-stole-millions-1237231746/",
+        "https://www.dailynews.com/2026/11/23/woodland-hills-film-accountant-had-fun-fun-fun-and-now-hes-going-to-prison/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFLiuYa-235EFlrAjcfIsEZCauIMp-dBad3ETyFsGn_D466Q6IjhCqoEmMwzA",
+      "image_credit": "KTLA",
+      "news": [
+        {
+          "url": "https://ktla.com/news/local-news/film-accountant-sentenced-embezzlement/",
+          "title": "Los Angeles accountant sentenced for stealing more than $1.7M from indie films",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFLiuYa-235EFlrAjcfIsEZCauIMp-dBad3ETyFsGn_D466Q6IjhCqoEmMwzA"
+        },
+        {
+          "url": "https://deadline.com/2026/11/film-accountant-sentenced-stole-millions-1237231746/",
+          "title": "Film Accountant Sentenced: Stole Millions For Hookups, Trips & Designer Gear",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmQxJu8SZpLqjJKkQm1pwBzyNK01tjrhsInlJ8QVbZNq8pGFAMNadAx4ol99Y"
+        },
+        {
+          "url": "https://www.dailynews.com/2026/11/23/woodland-hills-film-accountant-had-fun-fun-fun-and-now-hes-going-to-prison/",
+          "title": "Woodland Hills film accountant had ‘Fun Fun Fun,’ and now he’s going to prison",
+          "publisher": "Los Angeles Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLkQT53l_p-Y-RTOC6HlWIdb6-kjkcsdJ0o5kVQiq9fRrKe9mdh4QPW_70nMQ"
+        }
+      ]
+    },
+    {
+      "query": "fiorentina",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T20:10:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/calcio/fantanews/23-11-2026/monza-fiorentina-le-formazioni-ufficiali-tutti-i-titolari.shtml",
+        "https://www.dazn.com/it-IT/news/calcio/monza-fiorentina-2026-dove-vedere-diretta-streaming-orario-formazioni/vrs4qupfgoes18z8x4660tqic",
+        "https://www.vietnam.vn/it/nhan-dinh-monza-vs-fiorentina-ca-hai-cung-khat-thang"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVNiSsqE2hbxcr_0WyT6O8ycI0SIAkGYLn1PTYOpINuiMSl-K2DLSzCDpT8_U",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/calcio/fantanews/23-11-2026/monza-fiorentina-le-formazioni-ufficiali-tutti-i-titolari.shtml",
+          "title": "Monza-Fiorentina, le formazioni ufficiali: Juric si affida a Varela, Vanoli risponde con Pellegrino",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVNiSsqE2hbxcr_0WyT6O8ycI0SIAkGYLn1PTYOpINuiMSl-K2DLSzCDpT8_U"
+        },
+        {
+          "url": "https://www.dazn.com/it-IT/news/calcio/monza-fiorentina-2026-dove-vedere-diretta-streaming-orario-formazioni/vrs4qupfgoes18z8x4660tqic",
+          "title": "Monza-Fiorentina chiude la giornata 12 di Serie A, dove vederla in tv e diretta streaming e formazioni",
+          "publisher": "DAZN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDngTbEmlmkqvoKaYTPf33kuZFqTwYmj8jitnqL66y5WmlIOBGaKd_-H-XL1I"
+        },
+        {
+          "url": "https://www.vietnam.vn/it/nhan-dinh-monza-vs-fiorentina-ca-hai-cung-khat-thang",
+          "title": "Pronostico Monza-Fiorentina: Entrambe le squadre sono determinate a vincere.",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zx2wnOJ7tOYl3K2VCYOpGmgCtESCp72IzVwGJopjfc9bxfzTg8FVXDEdgUM"
         }
       ]
     },
     {
       "query": "dennard wilson",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/story/_/id/50575838/sources-giants-dennard-wilson-interviews-maryland-job",
         "https://sports.yahoo.com/articles/report-giants-dc-dennard-wilson-193305027.html",
-        "https://www.si.com/nfl/giants/onsi/giants-dennard-wilson-maryland-head-coach-interview-01m84yrhqq04"
+        "https://247sports.com/college/maryland/article/new-york-giants-defensive-coordinator-maryland-alum-dennard-wilson-reemerges-in-terrapins-football-search-293220151/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv4CBPHyMBr7gI7FIebBwOikgD2lwOCKKoTzIpkoHTDMQ6wd-QlPz6bcPiws4",
       "image_credit": "ESPN",
@@ -138,11 +313,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUGuf4T_G4HDt_cU3oNue7bDykBW22usoQDRdDwz0g8sgmO-ea1lskK6kZrGw"
         },
         {
-          "url": "https://www.si.com/nfl/giants/onsi/giants-dennard-wilson-maryland-head-coach-interview-01m84yrhqq04",
-          "title": "Dennard Wilson Reportedly Draws Maryland Interest as Giants' Defense Thrives",
-          "publisher": "Sports Illustrated",
+          "url": "https://247sports.com/college/maryland/article/new-york-giants-defensive-coordinator-maryland-alum-dennard-wilson-reemerges-in-terrapins-football-search-293220151/",
+          "title": "New York Giants defensive coordinator, Maryland alum Dennard Wilson reemerges in Terrapins football search",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2HU266-OnT27Mc60UXhOXlzM1dMs6PdErXzLdF51JxEINrkX0I79VuiexM0M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-PIEWbVI_MxS7KvOof91TMHA1QoJsesaNyzUJr447OrWTk16WuAySAUtMOy8"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "The Hollywood Reporter",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQoT-aaS90bqwkn4S33OOIdakQC-230BDYIAxCyh9vu9CdWTJTeb6ZpPgFCg0"
-        }
-      ]
-    },
-    {
-      "query": "virginia vs oklahoma",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T20:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/virginia-tech/article/virginia-tech-oklahoma-state-charleston-classic-final-26-293183729/",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920381",
-        "https://okstate.com/news/2026/11/21/cowboy-basketball-cowboys-eye-bounce-back-win-in-charleston-classic-finale"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb6EDccKc3q7KhvfVicmHXLELtPr12zlSsyv_MrQ2vJoyFJNJTi-qrgcKeDwE",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-oklahoma-state-charleston-classic-final-26-293183729/",
-          "title": "Cowboys cook the Hokies in Charleston",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb6EDccKc3q7KhvfVicmHXLELtPr12zlSsyv_MrQ2vJoyFJNJTi-qrgcKeDwE"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920381",
-          "title": "Oklahoma State 106-80 Virginia Tech (Nov 22, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzAKCiBWSgqzZB7T4viXvzKzl_K8FeJStzHx4hGOkyZ06k26BQKYX6fKn2Cuo"
-        },
-        {
-          "url": "https://okstate.com/news/2026/11/21/cowboy-basketball-cowboys-eye-bounce-back-win-in-charleston-classic-finale",
-          "title": "Cowboys eye bounce-back win in Charleston Classic finale",
-          "publisher": "Oklahoma State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8e13pK4KWFwInZlasRSNw0das6jX2WtVxt0hTyUjvC9yuM0PZgiZO55wMZns"
-        }
-      ]
-    },
-    {
-      "query": "brent suter",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T19:50:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/yankees-to-sign-brent-suter.html",
-        "https://www.rotowire.com/baseball/headlines/brent-suter-news-lands-in-the-bronx-1028583",
-        "https://heavy.com/sports/mlb/new-york-yankees/sign-11-year-mlb-veteran-bullpen/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5w2xlPdbr6ReXNfWFfM6KgWzXJuUqKBbu9A_eHjjgNG-XYZsq4yrsUNAzQSc",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/yankees-to-sign-brent-suter.html",
-          "title": "Yankees To Sign Brent Suter",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5w2xlPdbr6ReXNfWFfM6KgWzXJuUqKBbu9A_eHjjgNG-XYZsq4yrsUNAzQSc"
-        },
-        {
-          "url": "https://www.rotowire.com/baseball/headlines/brent-suter-news-lands-in-the-bronx-1028583",
-          "title": "Brent Suter News: Lands in the Bronx",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYNNTbHV_0KCwxgNyJPphcchj8rHKx0vjYMG0wr0koQPLL12g8F2eo4aQAjvQ"
-        },
-        {
-          "url": "https://heavy.com/sports/mlb/new-york-yankees/sign-11-year-mlb-veteran-bullpen/",
-          "title": "New York Yankees Sign 11-Year MLB Veteran to Bolster Bullpen",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTg28_2z8anWOph6nukW9hbSJ9ueGdVfyPfaehVKerOz4Zg_MrbzIorSp-Pew"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving storms travel forecast",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T19:50:00Z",
-      "related_news_urls": [
-        "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
-        "https://www.washingtonpost.com/weather/2026/11/23/ahead-thanksgiving-travel-storm-system-could-drench-east-midwest/",
-        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg",
-      "image_credit": "The Weather Channel",
-      "news": [
-        {
-          "url": "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
-          "title": "Thanksgiving travel forecast 2026: storms on both coasts",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg"
-        },
-        {
-          "url": "https://www.washingtonpost.com/weather/2026/11/23/ahead-thanksgiving-travel-storm-system-could-drench-east-midwest/",
-          "title": "A troubling storm is brewing for the East, Mid-Atlantic and Midwest",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17x9ufjYvx7C66QMd5ozPG4DctxPKUHvcc73Cl7zB9o-AMjiBY4LkuPun7cc"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
-          "title": "Storms expected on both coasts threaten Thanksgiving travel",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
-        }
-      ]
-    },
-    {
-      "query": "maui invitational 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T19:50:00Z",
-      "related_news_urls": [
-        "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
-        "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/",
-        "https://www.si.com/college/clemson/basketball/clemson-basketball-s-maui-invitational-schedule-scores-bracket"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk",
-      "image_credit": "BYU Athletics",
-      "news": [
-        {
-          "url": "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
-          "title": "No. 21 BYU faces Washington in Southwest Maui Invitational",
-          "publisher": "BYU Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk"
-        },
-        {
-          "url": "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/",
-          "title": "BYU coach Kevin Young previews Maui Invitational",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv4MMNIO_V1n_nnuyX8m8BoZf91G_yXu05FTSehh8txomln4uwrQa_kkhqW4"
-        },
-        {
-          "url": "https://www.si.com/college/clemson/basketball/clemson-basketball-s-maui-invitational-schedule-scores-bracket",
-          "title": "Clemson Basketball's Maui Invitational Schedule, Scores, Bracket",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbDauisKgtPgZufVGiBdka3ZxASsqVApiN9xIKQvT66FHmcPfiVBnuQJ48Bro"
-        }
-      ]
-    },
-    {
-      "query": "indiana state vs east carolina",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T19:50:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-east-carolina-pirates-nov-23-2026-game-boxscore-270519",
-        "https://www.accuscore.com/game/cmwsfej3yig25ro01zrhrr0o8",
-        "https://www.bleachernation.com/how-to-watch/2026/11/23/east-carolina-vs-indiana-state-start-time-streaming-live-tv-channel-how-to-watch/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-east-carolina-pirates-nov-23-2026-game-boxscore-270519",
-          "title": "Indiana State vs. East Carolina - Live Score - November 23, 2026",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmwsfej3yig25ro01zrhrr0o8",
-          "title": "Indiana State vs East Carolina Prediction (Nov 23): East Carolina 54% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2WNJe4CWY8a56hHks2yYIM3IYwwe1xUlU5_din-kcdM83btXAwxICCqugsrY"
-        },
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/23/east-carolina-vs-indiana-state-start-time-streaming-live-tv-channel-how-to-watch/",
-          "title": "East Carolina vs. Indiana State: Start Time, Streaming Live, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhoxB3czZcqxKpACU-ivRoPpluge7ACWhuV6uZKxHtJx_POaZWG6BtApnHzJA"
         }
       ]
     }
