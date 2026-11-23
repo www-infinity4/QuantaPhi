@@ -21,3 +21,21 @@ test('color window demonstration imports the verified pure helpers, uses no phon
  assert.match(js,/aria/);
  assert.doesNotMatch(js,/fetch\(|navigator\.contacts|navigator\.mediaDevices|localStorage|indexedDB|starquest|sendMessage\(/i);
 });
+
+test('receiver lab expresses black standby, white signal, yellow incoming and red/orange decision guides',()=>{
+ const html=read('wallet-color-passage-lab.html');
+ const js=read('wallet-color-passage-lab.mjs');
+ assert.match(html,/id="cavityPower"/);
+ assert.match(html,/id="cavityChannel"/);
+ assert.match(html,/id="cavityNext"/);
+ assert.match(html,/id="cavityPlay"/);
+ assert.match(html,/id="cavityAperture"/);
+ assert.match(html,/id="cavityStatus"/);
+ assert.match(html,/id="cavityPixels"/);
+ assert.match(html,/color guides are not actual TV pixel filters/i);
+ assert.match(js,/routeCavityFrame/);
+ assert.match(js,/COLOR_CAVITY_STAGES/);
+ assert.match(js,/visibilitychange/);
+ assert.match(js,/prefers-reduced-motion/);
+ assert.doesNotMatch(js,/fetch\(|localStorage|indexedDB|navigator\.mediaDevices|walletToken/i);
+});
