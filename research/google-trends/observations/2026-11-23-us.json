@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T04:01:15.965675Z",
+  "checked_at": "2026-11-23T04:33:37.778391Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "brandin cooks",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T03:40:00Z",
+      "query": "nfc standings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T04:20:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-        "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/"
+        "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11",
+        "https://www.nfl.com/videos/examining-afc-playoff-picture-ahead-of-snf-in-week-11-of-2026-nfl-gameday-final"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/san-francisco-49ers-suddenly-cut-004745358.html",
-          "title": "San Francisco 49ers Suddenly Cut Veteran Wide Receiver Before Vikings Game",
-          "publisher": "Yahoo Sports",
+          "url": "https://bleacherreport.com/articles/25536542-nfl-playoff-bracket-picture-2026-27-and-afc-nfc-standings-ahead-week-11-snf",
+          "title": "NFL Playoff Bracket Picture 2026-27 and AFC, NFC Standings Ahead of Week 11 SNF",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ7ZYKxp4KwmLRiUhu7N97pxxyZm0vGxLfN-QbcgDdyFM6pyZyRJlUPEaZY70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhUZ7FsTUNz2TKvxw-x6DsGzMvkRCRPy8QKa_yhMd4mlp5umkuTAietNvDRRg"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/49ers-waive-wr-brandin-cooks",
-          "title": "49ers waive WR Brandin Cooks",
-          "publisher": "NBC Sports",
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-nfl-playoffs/217044/afc-playoff-picture-kansas-city-chiefs-standings-afc-west-week-11",
+          "title": "Here’s where the Chiefs sit in the AFC playoff standings right now",
+          "publisher": "Arrowhead Pride",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpohnZRamUgICKDDxgizCl4wvvuEgQnoWzqFnFyrFso-YD0XiXFKDkWnWl-KY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMX6fcXvNTRkmRiNwreRlnM4OB0NoSJbg8Zi2cawSA64ywFE7Ob66NHl-sqjw"
         },
         {
-          "url": "https://raiderswire.usatoday.com/story/sports/nfl/raiders/2026/11/21/raiders-should-sign-cut-49ers-wr-brandin-cooks-help-fernando-mendoza-development/92908558007/",
-          "title": "49ers cut WR Brandin Cooks, should Raiders sign him?",
-          "publisher": "Raiders Wire",
+          "url": "https://www.nfl.com/videos/examining-afc-playoff-picture-ahead-of-snf-in-week-11-of-2026-nfl-gameday-final",
+          "title": "Examining AFC playoff picture ahead of 'SNF' in Week 11 of 2026 | 'NFL GameDay Final'",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJvaFwnvxq8Nk48NqQzsHgH-0rVScYrNK328mhQdKrCSyjgeBx3cqcXyQUiek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTAwPZYIbsbE9lHgM3yEXdHKIRlBVHqxwFpygU279NIrVI_zip5lXWvADlSA-0"
         }
       ]
     },
     {
-      "query": "josh hart",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:40:00Z",
+      "query": "vikings schedule",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T04:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
-        "https://sports.yahoo.com/nba/breaking-news/article/knicks-mikal-bridges-drills-buzzer-beating-3-pointer-to-defeat-trail-blazers-031115344.html",
-        "https://www.nba.com/news/starting-5-november-22-2026"
+        "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026",
+        "https://www.kare11.com/article/associatedpress/associatedpress/vikings-get-healthier-to-face-the-49ers-with-cashman-hockenson-among-the-starters-back-from-injury/616-2612fb92-b668-41a4-9293-a779e9985af1",
+        "https://www.cbssports.com/fantasy/football/news/vikings-isaiah-rodgers-no-go-for-snf/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjvvlbxJUi4JjA3e_dJcI8j1pMCom1RwJGA2htrGXVzUnYzAsfSGgqFeyrrMo",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeK9Ve-xRF2Ri01x3X_UmjykwTn4M5n53b0r2sve86FgX-JiEiBWYf-lWB02w",
+      "image_credit": "Vikings.com",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
-          "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
-          "publisher": "ESPN",
+          "url": "https://www.vikings.com/news/inactives-49ers-sunday-night-football-mexico-2026",
+          "title": "Vikings vs. 49ers Inactives for Week 11 of 2026",
+          "publisher": "Vikings.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjvvlbxJUi4JjA3e_dJcI8j1pMCom1RwJGA2htrGXVzUnYzAsfSGgqFeyrrMo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeK9Ve-xRF2Ri01x3X_UmjykwTn4M5n53b0r2sve86FgX-JiEiBWYf-lWB02w"
         },
         {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/knicks-mikal-bridges-drills-buzzer-beating-3-pointer-to-defeat-trail-blazers-031115344.html",
-          "title": "Knicks' Mikal Bridges drills buzzer-beating 3-pointer to defeat Trail Blazers",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.kare11.com/article/associatedpress/associatedpress/vikings-get-healthier-to-face-the-49ers-with-cashman-hockenson-among-the-starters-back-from-injury/616-2612fb92-b668-41a4-9293-a779e9985af1",
+          "title": "Vikings get healthier to face the 49ers with Cashman, Hockenson among the starters back from injury",
+          "publisher": "kare11.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtiBRo35JqAohr2BOzwKUlze1iZcBDl7JP2nE9SwCNciPjyIqpBua-x8acpJk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxQ9mfjUuXjRXJh9hi4eRT8zXurhl6HV0Vlx4TSpM-djZWDNaZqzKyHjJZJbs"
         },
         {
-          "url": "https://www.nba.com/news/starting-5-november-22-2026",
-          "title": "Starting 5: Bridges delivers, Wemby dominates",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH3wA448_X-10Ox-y6i2oMGkP9lxnrVDNXeWvs-XieCv26ax0O8aop381FGM4"
-        }
-      ]
-    },
-    {
-      "query": "utah valley basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T03:40:00Z",
-      "related_news_urls": [
-        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-        "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
-        "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ",
-      "image_credit": "Formula 1",
-      "news": [
-        {
-          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
-          "publisher": "Formula 1",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
-        },
-        {
-          "url": "https://www.skysports.com/f1/live-blog/13615079/f1-las-vegas-gp-live-race-updates-results-stream-and-highlights-from-21st-round-of-2026-formula-1-season-in-usa",
-          "title": "F1 Las Vegas GP LIVE: Race updates, results, stream and highlights from 21st round of 2026 Formula 1 season in USA",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5GB4kuPDyi_8Ek9Ehk42XOHxK9mZgIfbQ00PMdRn7qXlJhftMLpbnggYgJRc"
-        },
-        {
-          "url": "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
-          "title": "Max Verstappen promoted to Las Vegas GP pole as Kimi Antonelli drops to sixth",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wxv5GN_yrA_kldDehVtXmfd7ryVA5MZR1rYT8H47s_q5hbND0yXwrTXn9cI"
-        }
-      ]
-    },
-    {
-      "query": "karl-anthony towns",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:30:00Z",
-      "related_news_urls": [
-        "https://nypost.com/2026/11/22/sports/karl-anthony-towns-draws-praise-from-another-former-coach/",
-        "https://www.complex.com/bets/a/sameer-kumar/karl-anthony-towns-knicks-championship",
-        "https://sports.yahoo.com/articles/love-kat-happy-him-130854387.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDtKELdsEbQNAc9bSJHtvgtOCSKWKdI70oBlkqqbuNG9k9D5NrKSX8qiFmm8",
-      "image_credit": "New York Post",
-      "news": [
-        {
-          "url": "https://nypost.com/2026/11/22/sports/karl-anthony-towns-draws-praise-from-another-former-coach/",
-          "title": "Karl-Anthony Towns draws praise from another former coach",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDDtKELdsEbQNAc9bSJHtvgtOCSKWKdI70oBlkqqbuNG9k9D5NrKSX8qiFmm8"
-        },
-        {
-          "url": "https://www.complex.com/bets/a/sameer-kumar/karl-anthony-towns-knicks-championship",
-          "title": "Inside Karl-Anthony Towns’ Journey From Phenom to NBA Champ",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9eDi0Nc9HXKptwgzV63pEQ7Tc8AOucTI6DMbNcXw-Ta7DbW75AK34t1jbcxA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/love-kat-happy-him-130854387.html",
-          "title": "I love KAT; I was happy for him to get to the …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0KxR12f7Cq5jSflA3A4PJqzmkyCqM8nSH3Scg_wKqUC3bAl3sDSKs40NNy50"
-        }
-      ]
-    },
-    {
-      "query": "roman kantserov",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:30:00Z",
-      "related_news_urls": [
-        "https://www.fantasypros.com/nhl/news/622033/roman-kantserov-notches-two-points-saturdays-win-over-flames.php",
-        "https://www.chicitysports.com/chicago-blackhawks-kanserov-rookie-goals/",
-        "https://www.cbssports.com/fantasy/hockey/news/blackhawks-roman-kantserov-dominating-rookie-sniper-bags-another/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj0rWltT9pAKsi-su5neTd0up1rgpY6agMASRxBK-m_3gKPl4rUYt3m61_wWs",
-      "image_credit": "FantasyPros",
-      "news": [
-        {
-          "url": "https://www.fantasypros.com/nhl/news/622033/roman-kantserov-notches-two-points-saturdays-win-over-flames.php",
-          "title": "Roman Kantserov notches two points in Saturday's win over Flames",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj0rWltT9pAKsi-su5neTd0up1rgpY6agMASRxBK-m_3gKPl4rUYt3m61_wWs"
-        },
-        {
-          "url": "https://www.chicitysports.com/chicago-blackhawks-kanserov-rookie-goals/",
-          "title": "Chicago Blackhawks forward leading NHL rookies in goals",
-          "publisher": "ChiCitySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVoqVOBRQAzXBtwUB8Z_or9lDzokWEZWLTc4q_aXpn0oX4EsxyYi4Vm43euEk"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/hockey/news/blackhawks-roman-kantserov-dominating-rookie-sniper-bags-another/",
-          "title": "Blackhawks' Roman Kantserov: Dominating rookie sniper bags another",
+          "url": "https://www.cbssports.com/fantasy/football/news/vikings-isaiah-rodgers-no-go-for-snf/",
+          "title": "Vikings' Isaiah Rodgers: No go for SNF",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrIwsog_VCx1MhabHgaraqV_t-oBDpXEaQ9jjkLUNWZMtR_F4fVaXce2JLrDs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTJ6gwJCH7IU0Wx2qdBpkDgPi90hjl_3BZbe45wktHa-N3I9fcmFQRmNiDV1k"
         }
       ]
     },
     {
-      "query": "meritage hospitality group wendy closures",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T03:30:00Z",
+      "query": "mac jones",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T04:10:00Z",
       "related_news_urls": [
-        "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
-        "https://finance.yahoo.com/small-business/articles/major-burger-chain-buying-163-034700908.html",
-        "https://lexpress-franchise.com/en-us/news/wendys-bid-acquire-meritage-restaurants-bankruptcy/"
+        "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
+        "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
+        "https://www.fantasyguru.com/cowboys-te-luke-schoonmaker-questionable-for-week-11"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_MDr_1YN7HaEGl5prllAvYyOMOHo2_Iw36C5g1bEZxCTcCGpaylTv-4wheQA",
-      "image_credit": "Fast Company",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY",
+      "image_credit": "Philadelphia Eagles",
       "news": [
         {
-          "url": "https://www.fastcompany.com/91633391/wendys-store-closures-update-list-of-locations-franchise-downfall",
-          "title": "Wendy’s store closures hit close to 100 locations in franchisee downfall: See the latest list",
-          "publisher": "Fast Company",
+          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
+          "title": "Steelers vs. Eagles Inactives",
+          "publisher": "Philadelphia Eagles",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR_MDr_1YN7HaEGl5prllAvYyOMOHo2_Iw36C5g1bEZxCTcCGpaylTv-4wheQA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY"
         },
         {
-          "url": "https://finance.yahoo.com/small-business/articles/major-burger-chain-buying-163-034700908.html",
-          "title": "Major burger chain buying 163 franchisee units out of bankruptcy",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
+          "title": "Former Clemson Star Activated from Injured Reserve",
+          "publisher": "The Clemson Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLUWhX0AhdA-N-miBepRcsjcypSWHMejNjnlLDznoxZKzlbVdp8TzEEO-pY-Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXBiYyGR0Lr_yR7uIShTmLvy0KrE56d-T1BzyRFzIXvpWWSZsV_cxKQ_HRG9g"
         },
         {
-          "url": "https://lexpress-franchise.com/en-us/news/wendys-bid-acquire-meritage-restaurants-bankruptcy/",
-          "title": "Wendy's Bids $52M for 163 Meritage Restaurants",
-          "publisher": "L’Express Franchise",
+          "url": "https://www.fantasyguru.com/cowboys-te-luke-schoonmaker-questionable-for-week-11",
+          "title": "Cowboys | TE Luke Schoonmaker questionable for Week 11",
+          "publisher": "Fantasy Guru",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8S2zjKaprH8KCezH0LaRiuABwMYnPwNB89vY9_PWqHub5hiFFeiGntXWInnU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo"
         }
       ]
     },
     {
-      "query": "lost",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T03:30:00Z",
+      "query": "nfl mvp race",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T04:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21",
-        "https://www.nytimes.com/athletic/7802887/2026/11/22/ap-top-25-college-football-week-12/",
-        "https://www.cbssports.com/college-football/news/college-football-rankings-ap-top-25-poll-week-13-ucla-indiana-texas/"
+        "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
+        "https://www.si.com/nfl/executives-vote-2026-midseason-mvp-coach-awards",
+        "https://www.espn.com/nfl/story/_/id/50499235/bengals-joe-burrow-4-touchdowns-win-vs-steelers-puts-company-tom-brady-peyton-manning"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyP2S_1N-w3nl6DmybHbBsWuK3np0iMp-DsyLW7N4sqX8rP2MjjjJsghYueM",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50563638/no-big-ten-football-teams-ap-top-5-first-21",
-          "title": "No Big Ten football teams in AP top 5 for first time since 2021",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUyP2S_1N-w3nl6DmybHbBsWuK3np0iMp-DsyLW7N4sqX8rP2MjjjJsghYueM"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7802887/2026/11/22/ap-top-25-college-football-week-12/",
-          "title": "AP Top 25: UCLA, Indiana tumble as Wake Forest earns best college football ranking ever - The Athletic",
+          "url": "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
+          "title": "Joe Burrow clear NFL MVP odds favorite over Josh Allen, Brock Purdy",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS76taIjPROzqGzQK14ItHzY98_qmTtVXnBkIfyck_oqk76rV5Yre21qYmJqow"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM"
         },
         {
-          "url": "https://www.cbssports.com/college-football/news/college-football-rankings-ap-top-25-poll-week-13-ucla-indiana-texas/",
-          "title": "AP Top 25 poll: UCLA, Indiana slide; Texas moves into top five of college football rankings",
-          "publisher": "CBS Sports",
+          "url": "https://www.si.com/nfl/executives-vote-2026-midseason-mvp-coach-awards",
+          "title": "NFL Executives Vote on 2026 Midseason MVP, Coach of the Year, More Awards",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWvhzzE3EvKBN1x49Wy032qlUwAqtju721B-CQsrNIXrCc4kHkuDRKTuFcAxI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZf7RySNRDgoHuyQtYyb1jHYlaS3Ow5vywVQQJBntCaoCDN_059TOSbVfDIkY"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50499235/bengals-joe-burrow-4-touchdowns-win-vs-steelers-puts-company-tom-brady-peyton-manning",
+          "title": "Joe Burrow's 4-TD night puts QB in company of Tom Brady, Peyton Manning",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnEHvATPFqiVRrUnJ-MNAopYvJm9uC0H1IfYokHy-pAntaxtFqHpXsMSSmGJI"
         }
       ]
     },
     {
-      "query": "martin short",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:20:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/martin-shorts-comfort-food-12265014",
-        "https://sg.news.yahoo.com/steve-martin-martin-short-favorite-190000382.html",
-        "https://people.com/selena-gomez-recalls-moment-she-discovered-martin-short-cut-into-her-wedding-cake-before-it-was-served-12266915"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0oqXIKRh4M6vMl_e6tJufYJHJwue_4ZMLrE0O11KVskd870AEqEMCSXgfZAM",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/martin-shorts-comfort-food-12265014",
-          "title": "Martin Short’s Go-To Comfort Food Makes Us Love Him Even More",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0oqXIKRh4M6vMl_e6tJufYJHJwue_4ZMLrE0O11KVskd870AEqEMCSXgfZAM"
-        },
-        {
-          "url": "https://sg.news.yahoo.com/steve-martin-martin-short-favorite-190000382.html",
-          "title": "Steve Martin and Martin Short’s Favorite 2-Ingredient Meal Is Adorably Relatable",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZriCW-YUg6Ov-t10FFyvxnOCR0wTrXtHbAwNTmpoudX3CPcsIVG5Q3iNo_9k"
-        },
-        {
-          "url": "https://people.com/selena-gomez-recalls-moment-she-discovered-martin-short-cut-into-her-wedding-cake-before-it-was-served-12266915",
-          "title": "Selena Gomez Recalls Moment She Discovered Martin Short Cut Into Her Wedding Cake Before It Was Served",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH5I3WJGsVq-IHi8vHFEgKfNK3-jKcyGq9VcK2JYEX0SieET1FQrTbs9wlQWw"
-        }
-      ]
-    },
-    {
-      "query": "the mosquito bowl",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T03:20:00Z",
-      "related_news_urls": [
-        "https://bookandfilmglobe.com/film/taking-a-dunk-in-the-mosquito-bowl/",
-        "https://collider.com/netflix-wwii-the-mosquito-bowl-release-date-november-2026/",
-        "https://demokratis.co.id/en/mosquito-bowl-netflix-release-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITo5Ucpfk9JGxhP-QJ8xEkym-RuQaTwlPuW6UKgQdns9ia6J6XzrkWQgV5wk",
-      "image_credit": "Book and Film Globe",
-      "news": [
-        {
-          "url": "https://bookandfilmglobe.com/film/taking-a-dunk-in-the-mosquito-bowl/",
-          "title": "Taking a Dunk in ‘The Mosquito Bowl’",
-          "publisher": "Book and Film Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITo5Ucpfk9JGxhP-QJ8xEkym-RuQaTwlPuW6UKgQdns9ia6J6XzrkWQgV5wk"
-        },
-        {
-          "url": "https://collider.com/netflix-wwii-the-mosquito-bowl-release-date-november-2026/",
-          "title": "Netflix’s Star-Studded WWII Movie Officially Arrives This Week",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyMxePnB2G9quxTysThXMVmsCfkpN84miAAqxxDnZ6enwZ-Llv5imPMhPZ-bQ"
-        },
-        {
-          "url": "https://demokratis.co.id/en/mosquito-bowl-netflix-release-2026",
-          "title": "Netflix Releases Peter Bergs The Mosquito Bowl on November 25",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQavq9XxpBr9DXiIVwYjUAEI0bePI70-xSw6GQ7FBaa5qeiy4JT7822sa9pSrY"
-        }
-      ]
-    },
-    {
-      "query": "kospi",
+      "query": "justin jefferson",
       "approx_searches": "2000+",
-      "published_at": "2026-11-23T03:10:00Z",
+      "published_at": "2026-11-23T04:00:00Z",
       "related_news_urls": [
-        "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
-        "https://www.bloomberg.com/news/articles/2026-11-22/s-korea-rolls-out-phased-measures-to-stabilize-volatile-markets",
-        "https://www.koreatimes.co.kr/economy/20261122/kospi-rout-fuels-calls-for-bolder-stabilization-measures"
+        "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
+        "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8pFC-TFy4PuCMNhh23XE8_-ORT2cbZKDHEB0n2UCCsF_zCUCCfUea6FL_Mwk",
-      "image_credit": "Al Jazeera",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5um2oXJhmldclkBK6uux74IXwnkBSfOe5Mh0m_KfzpUYrgyMfXBwvr6vpOCs",
+      "image_credit": "The Viking Age",
       "news": [
         {
-          "url": "https://www.aljazeera.com/news/2026/11/23/south-koreas-stock-market-tumbles-as-ai-bubble-fears-mount",
-          "title": "South Korea’s stock market tumbles as AI bubble fears mount",
-          "publisher": "Al Jazeera",
+          "url": "https://thevikingage.com/justin-jefferson-emotional-reaction-kirk-cousins-reveals-what-minnesota-vikings-missed",
+          "title": "Justin Jefferson's emotional reaction to Kirk Cousins reveals what Vikings missed",
+          "publisher": "The Viking Age",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8pFC-TFy4PuCMNhh23XE8_-ORT2cbZKDHEB0n2UCCsF_zCUCCfUea6FL_Mwk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5um2oXJhmldclkBK6uux74IXwnkBSfOe5Mh0m_KfzpUYrgyMfXBwvr6vpOCs"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-22/s-korea-rolls-out-phased-measures-to-stabilize-volatile-markets",
-          "title": "S. Korea Rolls Out Phased Measures to Stabilize Volatile Markets",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-15/jefferson-goes-for-9-74-on-13-targets-vs-packers",
+          "title": "Jefferson goes for 9/74 on 13 targets vs. Packers",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4HODmPNYrRK9gW36_oNDchpIX706l7TJtYIDLSkfsHE3DByLKCDB3pU--a0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBx_sXQA5sXSXsTOdyiqr031of3CiQHF7bGGmbuoLuZdfVFeYVMFEXSniPaXU"
         },
         {
-          "url": "https://www.koreatimes.co.kr/economy/20261122/kospi-rout-fuels-calls-for-bolder-stabilization-measures",
-          "title": "KOSPI rout fuels calls for bolder stabilization measures",
-          "publisher": "The Korea Times",
+          "url": "https://bleacherreport.com/articles/25534164-nfl-coach-clowns-kyler-murray-carson-wentz-after-justin-jeffersons-success-kirk-cousins",
+          "title": "NFL Coach Clowns Kyler Murray, Carson Wentz After Justin Jefferson's Success with Kirk Cousins",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMjGhk26FDMnIA-HketInvI-DS5I5XavIE6naY9Z1D61MLCRTFhNLybDNi_JA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVRiTBDF16_P11jyEVfC27dO_gQJEPnqd8kb3BVjbts-Dgm7T00HxJ5Iqu96s"
+        }
+      ]
+    },
+    {
+      "query": "jimmy garoppolo",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T04:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/20/sports/patriots-mailbag-jimmy-garoppolo/",
+        "https://bleacherreport.com/articles/25536035-new-patriots-rumors-jimmy-garoppolo-amid-daniel-jones-buzz-after-drake-mayes-injury-update",
+        "https://ninernoise.com/jimmy-garoppolos-potential-reunion-paints-sad-picture-post-49ers-career"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KQN2f9gTVMx9Krnb6Qk_3AGl3AktlXW_yPWNhs4YxJxAhigQXYywU-0ILVY",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/20/sports/patriots-mailbag-jimmy-garoppolo/",
+          "title": "Patriots mailbag: How real is the possibility of Jimmy Garoppolo returning to the Patriots?",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6KQN2f9gTVMx9Krnb6Qk_3AGl3AktlXW_yPWNhs4YxJxAhigQXYywU-0ILVY"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536035-new-patriots-rumors-jimmy-garoppolo-amid-daniel-jones-buzz-after-drake-mayes-injury-update",
+          "title": "New Patriots Rumors on Jimmy Garoppolo amid Daniel Jones Buzz After Drake Maye's Injury Update",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqv5PiqLkRiDMf2oknOkJb-RJY3h-tGQM5650zaqghzUvI_PxQewkkwNbd7D4"
+        },
+        {
+          "url": "https://ninernoise.com/jimmy-garoppolos-potential-reunion-paints-sad-picture-post-49ers-career",
+          "title": "Jimmy Garoppolo's potential reunion paints a sad picture of post-49ers career",
+          "publisher": "Niner Noise",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXVkiGRaO_ykHZCgJfYvOxJOUq_qrGZXHZ6buMcSX-kSvteGoGOQsAqqJKkkg"
+        }
+      ]
+    },
+    {
+      "query": "cris collinsworth",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T04:00:00Z",
+      "related_news_urls": [
+        "https://www.themirror.com/sport/american-football/cris-collinsworth-49ers-vikings-sick-2119186",
+        "https://www.nytimes.com/athletic/7795603/2026/11/22/nfl-week-11-preview-sunday-playbook/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-week-11-afternoon-schedule-is-short-on-must-see-games"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUOEIsxehnjz1xOyAE51B1sdjirJgLatp0HgeCcLgwOSx0RR3jr0UJtIMYuM",
+      "image_credit": "The Mirror US",
+      "news": [
+        {
+          "url": "https://www.themirror.com/sport/american-football/cris-collinsworth-49ers-vikings-sick-2119186",
+          "title": "SNF viewers concerned about Cris Collinsworth after tuning in to Vikings-49ers broadcast",
+          "publisher": "The Mirror US",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUOEIsxehnjz1xOyAE51B1sdjirJgLatp0HgeCcLgwOSx0RR3jr0UJtIMYuM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7795603/2026/11/22/nfl-week-11-preview-sunday-playbook/",
+          "title": "What to watch for on NFL Sunday: Cowboys’ desperation and 49ers-Vikings’ NFC showdown - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTktvGz5jtIDwoFxCUVM3mhxDIf6ykzPB0-XFSnvaD2POl_XbLy2xnjn7G71WI"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-week-11-afternoon-schedule-is-short-on-must-see-games",
+          "title": "The Week 11 afternoon schedule is short on must-see games",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhKxOMtvGd-Z8ghtGZ0UROwJFHsaJIknQSLGy7wJ4Y6q74Jk2s4kLZG8qQSj4"
+        }
+      ]
+    },
+    {
+      "query": "rg3",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T04:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50548223/carmelo-anthony-calls-ravens-humphrey-baltimore-remark",
+        "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/",
+        "https://sports.yahoo.com/nfl/article/carmelo-anthony-calls-on-marlon-humphrey-to-do-more-after-baltimore-criminals-comment-apologies-dont-build-anything-presence-does-144124740.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WaP7f63uTlIU4NGrZkUfIMZuf782LMKIzF5sNNH-SuYFV8d06NYNwXiw33E",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50548223/carmelo-anthony-calls-ravens-humphrey-baltimore-remark",
+          "title": "Carmelo Anthony calls out Ravens' Humphrey over Baltimore 'criminals' remark",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5WaP7f63uTlIU4NGrZkUfIMZuf782LMKIzF5sNNH-SuYFV8d06NYNwXiw33E"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7796297/2026/11/20/ravens-marlon-humphrey-baltimore-comments/",
+          "title": "For the Ravens, ‘Marlon being Marlon’ isn’t funny — or tolerable — anymore - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTofPe4RIUHTxJFqCiCrx72JBmxgyWFfX0USIhty01rFxiOqjetfpqVP6jK6NU"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/carmelo-anthony-calls-on-marlon-humphrey-to-do-more-after-baltimore-criminals-comment-apologies-dont-build-anything-presence-does-144124740.html",
+          "title": "Carmelo Anthony calls on Marlon Humphrey to do more after Baltimore 'criminals' comment: 'Apologies don't build anything. Presence does'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2c_AzoNAaZpuQl7X8eD4pFQuJA3A-ILtA8p4eZbwFh4bu1tRLwgTRyQAFN8w"
+        }
+      ]
+    },
+    {
+      "query": "whitney peak",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T04:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/serendipity-reboot-cast-madelyn-cline-1236952550/",
+        "https://deadline.com/2026/11/whitney-peak-stephen-kalyn-join-serendipity-1237227988/",
+        "https://ruralradio.com/kozy/abc_news/whitney-peak-stephen-kalyn-join-cast-of-serendipity-reboot-film-abciddfa800c3/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV47K5FX1wRDYFLE4gHoOwftkyJbXyXchgi32PrUeS1Urh_TPicYXJ8f0nTFY",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/serendipity-reboot-cast-madelyn-cline-1236952550/",
+          "title": "‘Outer Banks’ Alum Madelyn Cline in Final Talks to Join New ‘Serendipity’ Movie (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV47K5FX1wRDYFLE4gHoOwftkyJbXyXchgi32PrUeS1Urh_TPicYXJ8f0nTFY"
+        },
+        {
+          "url": "https://deadline.com/2026/11/whitney-peak-stephen-kalyn-join-serendipity-1237227988/",
+          "title": "Whitney Peak & Stephen Kalyn Join New 'Serendipity' Movie (EXCLUSIVE)",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJbv7nycyAUfWA67WCtQFd-gJM8KYiDm2q8WaHIAkj3qbtciBVz2FzJaTGcss"
+        },
+        {
+          "url": "https://ruralradio.com/kozy/abc_news/whitney-peak-stephen-kalyn-join-cast-of-serendipity-reboot-film-abciddfa800c3/",
+          "title": "Whitney Peak, Stephen Kalyn join cast of ‘Serendipity’ reboot film",
+          "publisher": "Rural Radio Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMWH4b7mUn2BE7r--Cc7T4XgzC3dAIu-lqc8BCG0tMZg_QG9Jyb-y_tzNtFU"
+        }
+      ]
+    },
+    {
+      "query": "flood warning",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T03:50:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
+        "https://www.clickorlando.com/news/local/2026/11/22/seminole-county-families-face-rising-floodwaters-as-threat-looms-for-days/",
+        "https://www.upi.com/Top_News/US/2026/11/21/florida-flooding-people-flee-homes/7111795285007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOQnZoUeiL2mo5VGaokbV-pNpkh52UUEVVOA-LAm2QJrycI0uE4Op-w_pM_Pw",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/florida-rare-flood-threat-heavy-rain-slams-region",
+          "title": "River flooding threatens parts of Florida coast while torrential storms begin to ease after days of heavy rain",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOQnZoUeiL2mo5VGaokbV-pNpkh52UUEVVOA-LAm2QJrycI0uE4Op-w_pM_Pw"
+        },
+        {
+          "url": "https://www.clickorlando.com/news/local/2026/11/22/seminole-county-families-face-rising-floodwaters-as-threat-looms-for-days/",
+          "title": "Seminole County families face rising floodwaters as threat looms for days",
+          "publisher": "WKMG",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqXDMv7FGcYuXCw9tpERxlvoqThaZNPzp8Ho2xw0Wawm9D5bp4N1CA2VK_Am0"
+        },
+        {
+          "url": "https://www.upi.com/Top_News/US/2026/11/21/florida-flooding-people-flee-homes/7111795285007/",
+          "title": "Florida families flee flooded homes after more than 2 feet of rain",
+          "publisher": "upi",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcYn0TnOGLBdzEtDoZb5bC-JwgKual8uHuqsYvSqv6w14WujpiRetNYjzNtdE"
         }
       ]
     }
