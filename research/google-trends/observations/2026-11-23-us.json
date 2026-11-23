@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T09:32:42.260611Z",
+  "checked_at": "2026-11-23T10:01:24.507544Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "molly meldrum",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T09:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/kylie-minogue-jimmy-barnes-lead-084409506.html",
+        "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
+          "title": "Molly Meldrum: Australian music legend dies aged 83",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/kylie-minogue-jimmy-barnes-lead-084409506.html",
+          "title": "Kylie Minogue and Jimmy Barnes lead tributes to Molly Meldrum",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-ydcWSa643fxtwYaV8fJ43vZJDhmhM9msykUActpUFixeOmifasfS66vaBck"
+        },
+        {
+          "url": "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
+          "title": "Victorian Liberal party uses AI to write Jess Wilson’s tribute to Molly Meldrum",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS00bBf7i0EApqthkmQJTlIfQzDSIFz9z-OHdJvDhwuY88o_d3tUwqIez7nAo0"
+        }
+      ]
+    },
     {
       "query": "claudia sheinbaum",
       "approx_searches": "200+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://www.jornada.com.mx/noticia/2026/11/22/politica/-claudia-sheinbaum-comparte-video-de-una-clase-de-chi-kung-en-china",
         "https://www.vietnam.vn/es/quan-chuc-tham-gia-apec-dao-pho-tham-quyen-trai-nghiem-thai-cuc-quyen",
-        "https://notipress.mx/actualidad/claudia-sheinbaum-revela-que-practica-chi-kung-como-le-ayuda-40789"
+        "https://www.proceso.com.mx/nacional/2026/11/22/aprovecha-sheinbaum-su-viaje-a-china-para-practicar-chi-kung-384175.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMvbpasxPCNxDDDPIamq3p86kPvFtH4cZneZeOpWktuc0Zjc1N8zHPcjmXQG8",
       "image_credit": "La Jornada",
@@ -33,46 +68,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAy7jFerm4vlKCfxx8AIg2IGYG6ux132LdKz6k99ln1KzFzHIDm1qurU_KjYY"
         },
         {
-          "url": "https://notipress.mx/actualidad/claudia-sheinbaum-revela-que-practica-chi-kung-como-le-ayuda-40789",
-          "title": "Claudia Sheinbaum revela por qué practica Chi Kung y cómo le ayuda",
-          "publisher": "NotiPress",
+          "url": "https://www.proceso.com.mx/nacional/2026/11/22/aprovecha-sheinbaum-su-viaje-a-china-para-practicar-chi-kung-384175.html",
+          "title": "Sheinbaum aprovecha su viaje a China para practicar Chi Kung",
+          "publisher": "Proceso",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5lMf_1-e0_hl0wBtcsOYdoPdXJnz7FQCRcacogBT0hRE8ZkUKgwwB-0yr4Pk"
-        }
-      ]
-    },
-    {
-      "query": "jonathan blow",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T08:20:00Z",
-      "related_news_urls": [
-        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-        "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
-        "https://www.pushsquare.com/guides/gta-6-tenebrae-lux-walkthrough-and-puzzle-solutions"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
-      "image_credit": "Kotaku",
-      "news": [
-        {
-          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
-        },
-        {
-          "url": "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
-          "title": "GTA 6's Tenebrae Lux Minigame Is the Ultimate Jonathan Blow Parody",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmyvsPQQaUcf2wfEtj64NFMERXVy5fsqMrM9rnsc94Kn9BEtDxUxBb8TPQoGM"
-        },
-        {
-          "url": "https://www.pushsquare.com/guides/gta-6-tenebrae-lux-walkthrough-and-puzzle-solutions",
-          "title": "GTA 6: Tenebrae Lux Walkthrough & Puzzle Solutions",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKcADWaGcBBhbM2lPxFIYHFb5RCy-4dQzR68rZY8FhQSeJ3LOgOiJL0XsrEg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7E5JK4P-8fBK-qf-fW-bZD3Jq6ntM19_N6qjVDnXcUwllCWZlqmWFzpmE0kc"
         }
       ]
     },
@@ -112,9 +112,106 @@
       ]
     },
     {
-      "query": "vicki gta 6 voice actor",
-      "approx_searches": "200+",
+      "query": "jonathan blow",
+      "approx_searches": "100+",
       "published_at": "2026-11-23T08:20:00Z",
+      "related_news_urls": [
+        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+        "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
+        "https://insider-gaming.com/tenebrae-lux-gta-6/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
+      "image_credit": "Kotaku",
+      "news": [
+        {
+          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
+        },
+        {
+          "url": "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
+          "title": "Polygon identifies GTA 6’s Johannes Zuch as a Jonathan Blow parody",
+          "publisher": "A 90s Kid",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBUHHCNvaWL-_ndBWT6yO25_4IZOibow7kXxYjbXlQyeXQ-CnhTUe1TPWDu0"
+        },
+        {
+          "url": "https://insider-gaming.com/tenebrae-lux-gta-6/",
+          "title": "How to Complete the Tenebrae Lux Minigame Puzzle in GTA 6",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVmj1WaJkgEMoz2q4iX5L3IUlJdHj79xExbqbJFMgdbJivvkuhwCFzRjtHrPs"
+        }
+      ]
+    },
+    {
+      "query": "boss",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T08:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/f1/story/_/id/50472137/ferrari-charles-leclerc-lewis-hamilton-las-vegas-grand-prix-formula-1",
+        "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z",
+        "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTT6aaGvfBfUlQh-a4EK68vEW2seULD-NDBmJGRI07cvbYDlNQUIDIdImy69s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/f1/story/_/id/50472137/ferrari-charles-leclerc-lewis-hamilton-las-vegas-grand-prix-formula-1",
+          "title": "Lewis Hamilton, Charles Leclerc 'unmanageable' - Ferrari boss",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTT6aaGvfBfUlQh-a4EK68vEW2seULD-NDBmJGRI07cvbYDlNQUIDIdImy69s"
+        },
+        {
+          "url": "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z",
+          "title": "‘It's a lack of respect’ – Ferrari boss Fred Vasseur calls latest Hamilton-Leclerc clash in Las Vegas ‘unacceptable’",
+          "publisher": "Formula 1",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScybVGqCjt_RxdWnvEhrLpbxB9J6i71Bx1PiZA7dDlWGXqVDrWDnUki-Nip1Q"
+        },
+        {
+          "url": "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
+          "title": "Las Vegas Grand Prix: Lewis Hamilton and Charles Leclerc face tense discussion over ability to race together",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr3bkFC5xPmSf-f1IVUr9s-HF9Lt_YIwPf5fkHg29Kcz0Kex3bP4PFFzKk8QM"
+        }
+      ]
+    },
+    {
+      "query": "sam houser",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T07:50:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+        "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+          "title": "Grand Theft Auto VI Now Available",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+          "title": "‘GTA 6’ Hits Massive $3.79 Billion in First-Day Sales",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg7Eh3nZ98dgsSBmwfQbnHag79aRWa8lIJy1SJhMBx1pdxyKYtaZS86IRDt70"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 vicki",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T07:50:00Z",
       "related_news_urls": [
         "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
         "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
@@ -147,75 +244,13 @@
       ]
     },
     {
-      "query": "boss",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T08:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
-        "https://www.skysports.com/f1/news/13615086/lewis-hamilton-charles-leclerc-clashes-cannot-continue-after-las-vegas-gp-with-frederic-vasseur-to-speak-to-drivers-again",
-        "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr3bkFC5xPmSf-f1IVUr9s-HF9Lt_YIwPf5fkHg29Kcz0Kex3bP4PFFzKk8QM",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
-          "title": "Las Vegas Grand Prix: Lewis Hamilton and Charles Leclerc face tense discussion over ability to race together",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr3bkFC5xPmSf-f1IVUr9s-HF9Lt_YIwPf5fkHg29Kcz0Kex3bP4PFFzKk8QM"
-        },
-        {
-          "url": "https://www.skysports.com/f1/news/13615086/lewis-hamilton-charles-leclerc-clashes-cannot-continue-after-las-vegas-gp-with-frederic-vasseur-to-speak-to-drivers-again",
-          "title": "Lewis Hamilton, Charles Leclerc clashes 'cannot continue' after Las Vegas GP with Frederic Vasseur to speak to drivers again",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkNFWshTGdsaGE83PtnT1CN7pG9PlsotWlxDbgNhl67dgG7tu3mSXKCz16aMk"
-        },
-        {
-          "url": "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z",
-          "title": "‘It's a lack of respect’ – Ferrari boss Fred Vasseur calls latest Hamilton-Leclerc clash in Las Vegas ‘unacceptable’",
-          "publisher": "Formula 1",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScybVGqCjt_RxdWnvEhrLpbxB9J6i71Bx1PiZA7dDlWGXqVDrWDnUki-Nip1Q"
-        }
-      ]
-    },
-    {
-      "query": "sam houser",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T07:50:00Z",
-      "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
-        "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE",
-      "image_credit": "Rockstar Games",
-      "news": [
-        {
-          "url": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
-          "title": "Grand Theft Auto VI Now Available",
-          "publisher": "Rockstar Games",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE"
-        },
-        {
-          "url": "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
-          "title": "‘GTA 6’ Hits Massive $3.79 Billion in First-Day Sales",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg7Eh3nZ98dgsSBmwfQbnHag79aRWa8lIJy1SJhMBx1pdxyKYtaZS86IRDt70"
-        }
-      ]
-    },
-    {
       "query": "king charles",
       "approx_searches": "200+",
       "published_at": "2026-11-23T07:50:00Z",
       "related_news_urls": [
         "https://www.telegraph.co.uk/royal-family/2026/11/23/sir-idris-elba-my-life-would-be-very-different-not-for-king/",
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-makes-rare-personal-080100780.html",
-        "https://deadline.com/2026/11/king-charles-idris-elba-netflix-documentary-the-kings-trust-1237231445/"
+        "https://deadline.com/2026/11/king-charles-idris-elba-netflix-documentary-the-kings-trust-1237231445/",
+        "https://www.the-independent.com/news/uk/home-news/idris-elba-trust-charles-the-king-b3089641.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhIpZE_bxHZFz3SvNFjcC94KxuFfCKSzILduQ7NBL1lhpYaDt06pPOvXloos",
       "image_credit": "The Telegraph",
@@ -228,18 +263,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhIpZE_bxHZFz3SvNFjcC94KxuFfCKSzILduQ7NBL1lhpYaDt06pPOvXloos"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-makes-rare-personal-080100780.html",
-          "title": "King Charles makes rare personal confession: 'I am so proud of you'",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2opr_aresxPJ4Pfu6_7Ha72wiKT0hnqyB56g6OAMbLCbzfqzB0gOdPgIp4-o"
-        },
-        {
           "url": "https://deadline.com/2026/11/king-charles-idris-elba-netflix-documentary-the-kings-trust-1237231445/",
           "title": "King Charles III & Idris Elba Join Forces For Netflix Documentary About The King’s Trust",
           "publisher": "Deadline",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVi8tyB1AJGS071C0bzfp_sDHPOrMyluegGRnZ3OySef7NVy5ESwrVc_GgYc4"
+        },
+        {
+          "url": "https://www.the-independent.com/news/uk/home-news/idris-elba-trust-charles-the-king-b3089641.html",
+          "title": "King tells Idris Elba how proud he is of him in film celebrating King’s Trust",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJslQEyqzqiJC9d-T7DoRETNIozeT3z2KAhKzok4ueYies44lETZqCKIR752I"
         }
       ]
     },
@@ -283,68 +318,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-23T07:40:00Z",
       "related_news_urls": [
-        "https://apnews.com/article/strait-of-hormuz-swimmer-lewis-pugh-e772be52a06d75699594a7396ec78f25",
-        "https://www.bbc.com/news/articles/c95y1gr27xplo",
-        "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war"
+        "https://goblackbears.com/news/2026/11/22/mens-swimming-and-diving-mens-swim-dive-places-fourth-at-harold-anderson-invitational",
+        "https://goholycross.com/news/2026/11/22/handwork-breaks-100-freestyle-record-as-womens-swimming-and-diving-finishes-fourth-at-harold-anderson-invitational.aspx",
+        "https://swimswam.com/vermonts-emma-freer-swim-meet-record-421-42-400-im-on-day-3-of-harold-anderson-invite/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm-1kFqvMwFpEb07d5rYTJpdtnpyYkWPF3ISqfDQ6wSFOSuLgDRRsHrQnZ07E",
-      "image_credit": "AP News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRaXWFIcWtVWz8pmlJgqGmK2X-_Rkfk0Bv6YQbTVslvL7gx1pISsO1yBhioLc",
+      "image_credit": "University of Maine Athletics",
       "news": [
         {
-          "url": "https://apnews.com/article/strait-of-hormuz-swimmer-lewis-pugh-e772be52a06d75699594a7396ec78f25",
-          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war’s impact on wildlife",
-          "publisher": "AP News",
+          "url": "https://goblackbears.com/news/2026/11/22/mens-swimming-and-diving-mens-swim-dive-places-fourth-at-harold-anderson-invitational",
+          "title": "Men's Swim & Dive places fourth at Harold Anderson Invitational",
+          "publisher": "University of Maine Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm-1kFqvMwFpEb07d5rYTJpdtnpyYkWPF3ISqfDQ6wSFOSuLgDRRsHrQnZ07E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRaXWFIcWtVWz8pmlJgqGmK2X-_Rkfk0Bv6YQbTVslvL7gx1pISsO1yBhioLc"
         },
         {
-          "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
-          "title": "Strait of Hormuz swim highlights environmental cost of war",
-          "publisher": "BBC",
+          "url": "https://goholycross.com/news/2026/11/22/handwork-breaks-100-freestyle-record-as-womens-swimming-and-diving-finishes-fourth-at-harold-anderson-invitational.aspx",
+          "title": "Handwork breaks 100 freestyle record as women’s swimming and diving finishes fourth at Harold Anderson Invitational",
+          "publisher": "Holy Cross Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOwVeR1WObenvFa08pKcLfMwv22ONug-YIdFwLddRtN1iz2xM0Ke1jvNy0Dk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG-GHcDYBK00HyfZ5_-JtUjiGmcgmvlHdn5kX70_D-WnFICNLmq4CWM02Zw4Y"
         },
         {
-          "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
-          "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
-          "publisher": "The Guardian",
+          "url": "https://swimswam.com/vermonts-emma-freer-swim-meet-record-421-42-400-im-on-day-3-of-harold-anderson-invite/",
+          "title": "Vermont's Emma Freer Swims Meet Record 4:21.42 400 IM On Day 3 Of Harold Anderson Invite",
+          "publisher": "SwimSwam",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReP9u9W0NdvexHL1EPKuK_WdBJrfltLkBrJsgbXL-FXWOzxblMluh4SzETNJ4"
-        }
-      ]
-    },
-    {
-      "query": "elon musk",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T07:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-2027-ai-023231321.html",
-        "https://www.businessinsider.com/elon-musk-warning-ai-compute-data-centers-cash-spacex-tesla-2026-11",
-        "https://www.thestandard.com.hk/innovation/article/349255/AI-industry-will-likely-face-a-severe-funding-shortage-next-year-Elon-Musk"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRq47VExAmUKJHpfMS2hE7Jnu_NrqFVQsoowmNduJRFKanEXRVZle7qF35-E",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-2027-ai-023231321.html",
-          "title": "Elon Musk Says 2027 AI Cash Crunch Will Be ‘Nuts’ — Analysts Still See SpaceX Emerging As The Biggest AI Hyperscaler",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRq47VExAmUKJHpfMS2hE7Jnu_NrqFVQsoowmNduJRFKanEXRVZle7qF35-E"
-        },
-        {
-          "url": "https://www.businessinsider.com/elon-musk-warning-ai-compute-data-centers-cash-spacex-tesla-2026-11",
-          "title": "Elon Musk warns data center delays could leave AI companies short on cash: 'Going to be nuts'",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiI7_EwtnJLrYYJXjigx6bN4n0rmCm4l_wblTnociWYn0Lyh6TlSqLN3qr5gg"
-        },
-        {
-          "url": "https://www.thestandard.com.hk/innovation/article/349255/AI-industry-will-likely-face-a-severe-funding-shortage-next-year-Elon-Musk",
-          "title": "AI ​​industry will likely face a severe funding shortage next year: Elon Musk",
-          "publisher": "The Standard (HK)",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE2Za5axdbmXgmxp-HzQleCYv6LBONUZliYbZ1b8yNmJJ9Gzg7ZNJHY4O-L2o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqmGXUFoMxXs6xpIOOm5WqsS5YjKuE-tkVZrp-FIoKdqAsNoO9ZMuOYln3ANQ"
         }
       ]
     }
