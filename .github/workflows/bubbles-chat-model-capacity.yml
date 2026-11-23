@@ -1,0 +1,21 @@
+name: Bubbles conversation capacity checks
+on:
+  pull_request:
+    paths:
+      - 'workers/bubbles-tools/worker.mjs'
+      - 'test/bubbles-chat-model-capacity.test.mjs'
+      - '.github/workflows/bubbles-chat-model-capacity.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  conversation-capacity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check workers/bubbles-tools/worker.mjs
+      - run: node --test test/bubbles-chat-model-capacity.test.mjs test/bubbles-tools.test.mjs
