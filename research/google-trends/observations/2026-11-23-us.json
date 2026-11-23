@@ -3,330 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T00:01:49.162029Z",
+  "checked_at": "2026-11-23T00:48:12.945492Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "pedro pascal",
-      "approx_searches": "500+",
-      "published_at": "2026-11-22T23:40:00Z",
+      "query": "celtics vs warriors",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
-        "https://www.sfgate.com/food/article/pedro-pascal-tosca-sf-22541881.php",
-        "https://www.imdb.com/news/ni66122050/?ref_=int_nwr_1",
-        "https://ew.com/pedro-pascal-robert-downey-jr-got-marvel-halloween-costumes-cvs-12265698"
+        "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
+        "https://sports.yahoo.com/articles/boston-celtics-11-5-golden-223000969.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwpLjMfMjIW2Pf5TiHsW4NK472-gQVz1nw5CsyZ3KrDygTgTjYx2xLv4X6uQ0",
-      "image_credit": "SFGATE",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc",
+      "image_credit": "The Boston Globe",
       "news": [
         {
-          "url": "https://www.sfgate.com/food/article/pedro-pascal-tosca-sf-22541881.php",
-          "title": "'Women were screaming': Pedro Pascal dines at SF's historic Tosca Cafe",
-          "publisher": "SFGATE",
+          "url": "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
+          "title": "Celtics at Warriors: Boston looks to rebound after last-second loss",
+          "publisher": "The Boston Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwpLjMfMjIW2Pf5TiHsW4NK472-gQVz1nw5CsyZ3KrDygTgTjYx2xLv4X6uQ0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc"
         },
         {
-          "url": "https://www.imdb.com/news/ni66122050/?ref_=int_nwr_1",
-          "title": "Avengers: Doomsday Star Pedro Pascal Reveals Story Behind His And Robert Downey Jr.'s Viral Halloween Costumes",
-          "publisher": "IMDb",
+          "url": "https://sports.yahoo.com/articles/boston-celtics-11-5-golden-223000969.html",
+          "title": "Boston Celtics (11-5) at Golden State Warriors (8-8) Game #17 11/22/26",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6stJcLOlwNTsB03OXr5mxzXEZqBqHy0qckkgNIlum46L6VhWSO5hS5kH6aMI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNCCL5grAUeUYrgZLEqHNLQqOIc0iHta7NsxLwwwCFaaVPpgC9dwd0dcnOHo"
         },
         {
-          "url": "https://ew.com/pedro-pascal-robert-downey-jr-got-marvel-halloween-costumes-cvs-12265698",
-          "title": "Pedro Pascal and Robert Downey Jr. got their ‘Avengers’ Halloween costumes at CVS",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available",
+          "title": "Walter Clayton Jr. (knee) upgraded to available",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSQFEzxxh4K0gwt93Cb6lfQ2Bp7cYqJsfzkfTwF6ZwP5pFBJ_5DEnYkHLfrQo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdeVYQf4iF86Y_L9YVG1ymrUDXKA64qT1eN5wcI3CESBaARwcNySVqC-hPUig"
         }
       ]
     },
     {
-      "query": "bill hader",
+      "query": "riley moss contract",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T23:40:00Z",
+      "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
-        "https://www.rte.ie/entertainment/2026/1122/1600201-america-ferrera/",
-        "https://www.imdb.com/it/news/ni66123388/?ref_=nm_nwr_1",
-        "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-the-cat-in-the-hat-2026-fullmovie-online-4khd-hi7at"
+        "https://www.49ers.com/video/kyle-shanahan-provides-injury-updates-final-preparations-ahead-of-mexico-city",
+        "https://www.nfl.com/videos/titans-vs-cowboys-highlights-week-11",
+        "https://www.49ers.com/video/buckner-juszczyk-discuss-team-bonding-recovery-process-and-prep-for-vikings-unique-defense"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD1FeoQXLBhA9Aoi_hEJxq_LNjYNNueOsf5IhOSrbTc0IaJ7Zjzfqg93XJNAo",
-      "image_credit": "RTE.ie",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLH9gFGJXX7xrSrCGTLBeP3-tIzQiCSOlGtOS10LBt_j0iIMDZU3OEk7GzPU",
+      "image_credit": "San Francisco 49ers",
       "news": [
         {
-          "url": "https://www.rte.ie/entertainment/2026/1122/1600201-america-ferrera/",
-          "title": "America Ferrera says Cat In The Hat is 'an institution'",
-          "publisher": "RTE.ie",
+          "url": "https://www.49ers.com/video/kyle-shanahan-provides-injury-updates-final-preparations-ahead-of-mexico-city",
+          "title": "Kyle Shanahan Provides Injury Updates, Final Preparations Ahead of Mexico City",
+          "publisher": "San Francisco 49ers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTD1FeoQXLBhA9Aoi_hEJxq_LNjYNNueOsf5IhOSrbTc0IaJ7Zjzfqg93XJNAo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjLH9gFGJXX7xrSrCGTLBeP3-tIzQiCSOlGtOS10LBt_j0iIMDZU3OEk7GzPU"
         },
         {
-          "url": "https://www.imdb.com/it/news/ni66123388/?ref_=nm_nwr_1",
-          "title": "The Cat in the Hat UK Premiere Interviews: Bill Hader, Xochitl Gomez & more",
-          "publisher": "IMDb",
+          "url": "https://www.nfl.com/videos/titans-vs-cowboys-highlights-week-11",
+          "title": "Titans vs. Cowboys highlights | Week 11",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCuvCQ0Q1i3AO07MYOVnKG_UfRZECfQpqpR9M-GFvkIvRO1o64BnU9Nu3lJI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaJhHnTSa_KWJIhu9MkUvKCq5ShJfsuKQd6GrzjOoyMbFX41gXsOeLG5-zBx8"
         },
         {
-          "url": "https://www.ub.edu/portal//html/js/editor/fckeditor/editor/filemanager/browser/default/browser.html?Type=File&CONNECTOR=%2F%5C%2Fkeeplearningeveryday.xyz%2Ffc%2Fconnector.php/&GetFoldersAndFiles=video-the-cat-in-the-hat-2026-fullmovie-online-4khd-hi7at",
-          "title": "\"The Cat in the Hat\" [2026] $FullMovie Online 4KHD! Free Available Now",
-          "publisher": "UB - Universitat de Barcelona",
+          "url": "https://www.49ers.com/video/buckner-juszczyk-discuss-team-bonding-recovery-process-and-prep-for-vikings-unique-defense",
+          "title": "Buckner, Juszczyk Discuss Team Bonding, Recovery Process, and Prep for Vikings Unique Defense",
+          "publisher": "San Francisco 49ers",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhz0o-aVNw0VpzMjzVz-2xQJ-NB9f20sTym3NxZWvP04TD6RgY41Usf-h02M0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQiAKlw9asJuqQxgJd-_7BkhhjkbW36JxfHwIXq4ynGQK3EABHC1RuvUcIvtHo"
         }
       ]
     },
     {
-      "query": "theo johnson",
+      "query": "erin cahill",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T00:30:00Z",
+      "related_news_urls": [
+        "https://parade.com/news/days-before-romance-author-annie-england-noblins-tragic-passing-at-44-she-learned-her-2022-novel-would-become-a-hallmark-movie-as-the-film-premieres-its-stars-honor-her-legacy",
+        "https://celebsecrets.com/erin-cahill-reveals-the-one-reason-she-said-yes-to-hallmarks-christmas-in-blue-dog-valley-before-even-reading-the-script-exclusive/",
+        "https://cwibc.co.id/en/christmas-blue-dog-valley-premiere"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ_OZvWh_fcsxgqpL_44HDQRiaUDGCix26ni_N1d-8kg7FKCSQau89uv2lDw",
+      "image_credit": "Parade Magazine",
+      "news": [
+        {
+          "url": "https://parade.com/news/days-before-romance-author-annie-england-noblins-tragic-passing-at-44-she-learned-her-2022-novel-would-become-a-hallmark-movie-as-the-film-premieres-its-stars-honor-her-legacy",
+          "title": "Days Before Romance Author Annie England Noblin's Tragic Passing at 44, She Learned Her 2022 Novel Would Become a Hallmark Movie. As the Film Premieres, Its Stars Honor Her Legacy",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ_OZvWh_fcsxgqpL_44HDQRiaUDGCix26ni_N1d-8kg7FKCSQau89uv2lDw"
+        },
+        {
+          "url": "https://celebsecrets.com/erin-cahill-reveals-the-one-reason-she-said-yes-to-hallmarks-christmas-in-blue-dog-valley-before-even-reading-the-script-exclusive/",
+          "title": "Erin Cahill Reveals the One Reason She Said \"Yes\" to Hallmark’s Christmas in Blue Dog Valley Before Even Reading the Script (Exclusive)",
+          "publisher": "Celeb Secrets",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-rEn-32ttaTB8kwMDi6BS_sTpqSXfZrKoORfPfGGU4TWC_KuY7ZkST39R6Rg"
+        },
+        {
+          "url": "https://cwibc.co.id/en/christmas-blue-dog-valley-premiere",
+          "title": "Hallmark Premieres Christmas in Blue Dog Valley on November 21",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GiFi9ea0kE8XWxSRqeTBFtr5Uv3VUhHVp5Tx7dQIaksO9HHI6opcDqH6sJc"
+        }
+      ]
+    },
+    {
+      "query": "steve campbell",
       "approx_searches": "200+",
-      "published_at": "2026-11-22T23:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "disney discontinues hulu standalone app",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T23:30:00Z",
+      "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/tv/news/disney-hulu-app-merger-completed-in-december-1236949981/",
-        "https://www.cbr.com/disney-confirms-hulu-phaseout-december-2026/",
-        "https://deadline.com/2026/11/tiktok-creator-videos-disney-plus-hulu-avengers-doomsday-1237226429/"
+        "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
+        "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT15CIBFXYSqkwLsqo3AxIigZ3Lz_eYQ58F7xPjgCQKmCI8Ejo74AIBfFC_6Do",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg",
+      "image_credit": "University of Central Arkansas Athletics",
       "news": [
         {
-          "url": "https://variety.com/2026/tv/news/disney-hulu-app-merger-completed-in-december-1236949981/",
-          "title": "Disney+ and Hulu App Merger Slated to Be Completed in December",
-          "publisher": "Variety",
+          "url": "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
+          "title": "Steve Campbell Returns to Central Arkansas as Head Football Coach",
+          "publisher": "University of Central Arkansas Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT15CIBFXYSqkwLsqo3AxIigZ3Lz_eYQ58F7xPjgCQKmCI8Ejo74AIBfFC_6Do"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg"
         },
         {
-          "url": "https://www.cbr.com/disney-confirms-hulu-phaseout-december-2026/",
-          "title": "Say Goodbye to a Major Streaming Service as Disney Quietly Confirms Phaseout",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/",
+          "title": "UCA names Steve Campbell next head football coach",
+          "publisher": "FOX16.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmeAUS4emohvWOpNOvaFRJ7Wu22iW4UMJmjd_DCTo_WvMQ-4mT9e_MjrPW7Q"
-        },
-        {
-          "url": "https://deadline.com/2026/11/tiktok-creator-videos-disney-plus-hulu-avengers-doomsday-1237226429/",
-          "title": "TikTok Creator Videos Coming To Disney+ In December As Hulu Integration Takes Full Effect",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbPxAYF8Sl4-DqQDRVQ_ozTPsIZHXgsqCxxknfOKiGD6_nqsdI-TcQ8nUCRok"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXvDw-RhOaoyyxSTNgHKhLWPWMhOj8chrLP79R9DeyZ4qbUHNJlX0Zfj1WHM"
         }
       ]
     },
     {
-      "query": "geno smith",
+      "query": "jk dobbins",
       "approx_searches": "1000+",
-      "published_at": "2026-11-22T23:30:00Z",
+      "published_at": "2026-11-23T00:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50543665/jets-qb-geno-smith-ankle-cleared-start-vs-chargers",
-        "https://www.ganggreennation.com/new-york-jets-discussion/98793/jets-fans-are-split-on-whether-geno-smith-or-cade-klubnik-should-start-at-quarterback",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/geno-smith-set-for-full-practice-on-friday"
+        "https://www.footballguys.com/article/2026-rushing-matchups-11",
+        "https://www.nytimes.com/athletic/7788601/2026/11/17/fantasy-football-drops-cuts-week-11-nix-dobbins-waddle/",
+        "https://fantasyfootballcalculator.com/start/j.k.-dobbins-or-carnell-tate"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLlS0ho3tF7JOdcIYhcRSbTPKNLmC2dE9H9CkXB_r_XOB0DDYLSL9XBubYfE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFjjnLunq1byN1c1rSgkXiGubf0T4fVqTnJZ6lD-9LtBw9EJ9V-1HaeB0BfU",
+      "image_credit": "Footballguys",
+      "news": [
+        {
+          "url": "https://www.footballguys.com/article/2026-rushing-matchups-11",
+          "title": "Week 11 Rushing Matchups",
+          "publisher": "Footballguys",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFjjnLunq1byN1c1rSgkXiGubf0T4fVqTnJZ6lD-9LtBw9EJ9V-1HaeB0BfU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7788601/2026/11/17/fantasy-football-drops-cuts-week-11-nix-dobbins-waddle/",
+          "title": "Unless it’s Jonah Coleman, it’s time to purge Broncos from your fantasy roster",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxfBONj1xMkvo3bajutFMFfC4WKUfrSwOteVJs3SjCHhlXE_5qNSqnX6hXvc"
+        },
+        {
+          "url": "https://fantasyfootballcalculator.com/start/j.k.-dobbins-or-carnell-tate",
+          "title": "Who Should I Start? J.K. Dobbins or Carnell Tate",
+          "publisher": "Fantasy Football Calculator",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2iJVmi4g7ICK9k-Ub5OhGIIov11fuuYvZv9VoYFxxkTxi_WDF5I5DN1KmcLc"
+        }
+      ]
+    },
+    {
+      "query": "riley moss",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T00:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-nov-19",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/21/riley-moss-contract-details-salary-cap-hits/92905267007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50543665/jets-qb-geno-smith-ankle-cleared-start-vs-chargers",
-          "title": "Jets QB Geno Smith (ankle) cleared to start vs. Chargers",
+          "url": "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
+          "title": "Sources -- Broncos sign CB Riley Moss to four-year extension",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfLlS0ho3tF7JOdcIYhcRSbTPKNLmC2dE9H9CkXB_r_XOB0DDYLSL9XBubYfE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0"
         },
         {
-          "url": "https://www.ganggreennation.com/new-york-jets-discussion/98793/jets-fans-are-split-on-whether-geno-smith-or-cade-klubnik-should-start-at-quarterback",
-          "title": "Jets fans are split on whether Geno Smith or Cade Klubnik should start at quarterback",
-          "publisher": "Gang Green Nation",
+          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-nov-19",
+          "title": "NFL news roundup: Broncos, CB Riley Moss agree to terms on four-year, $67 million extension",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo4N6WZZ6RfgZzYJQi5ODx-ZLIH0G9bf6WcXhPBJPunM794onr9o_O9pwkDiM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/geno-smith-set-for-full-practice-on-friday",
-          "title": "Geno Smith set for full practice on Friday",
-          "publisher": "NBC Sports",
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/21/riley-moss-contract-details-salary-cap-hits/92905267007/",
+          "title": "Riley Moss contract details revealed (view his salary cap hits)",
+          "publisher": "Broncos Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRukieoZMmnM9MEW1jkDG8m2aXY1zONMLpQUj1lh9oHrsdCqp0UTXj3vBlbTPk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX0TlMY1qpA8IHAPl0Y-OWkzzlbxKYpzcdY8zYP6rxGaJyq-4flU77Yt9e-9Y"
         }
       ]
     },
     {
-      "query": "jets schedule",
+      "query": "ncis new york",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T23:30:00Z",
+      "published_at": "2026-11-23T00:20:00Z",
       "related_news_urls": [
-        "https://www.sportsnet.ca/nhl/article/jets-quarter-mark-report-card-winnipeg-still-searching-for-identity/",
-        "https://www.arcticicehockey.com/winnipeg-jets-quarterly-report/",
-        "https://winnipeg.citynews.ca/2026/11/17/are-the-jets-back-fans-are-fired-up-amid-six-game-winning-streak/"
+        "https://www.imdb.com/news/ni66123200/?ref_=nmnw_art_perm",
+        "https://bleedingcool.com/tv/ncis-new-york-returns-in-december-the-river-statuario-previews/",
+        "https://film-book.com/ncis-new-york-season-1-episode-7-the-river-tv-show-trailer/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOCw8HxSBEnYG0Kcm4-v7y8-NO-GsQJaEh4hfm9ZfHb6q-N0N_ze11WdbJKc",
-      "image_credit": "Sportsnet.ca",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW7sPHzbP15qTJkdlJYwZnB_ptNJ88yQyj0agLCaM1VdxZFhcL972Jj_Unb2g",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.sportsnet.ca/nhl/article/jets-quarter-mark-report-card-winnipeg-still-searching-for-identity/",
-          "title": "Jets quarter-mark report card: Winnipeg still searching for identity",
-          "publisher": "Sportsnet.ca",
+          "url": "https://www.imdb.com/news/ni66123200/?ref_=nmnw_art_perm",
+          "title": "‘NCIS: New York’ Officially Gets a Special Sunday Episode Release",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWOCw8HxSBEnYG0Kcm4-v7y8-NO-GsQJaEh4hfm9ZfHb6q-N0N_ze11WdbJKc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW7sPHzbP15qTJkdlJYwZnB_ptNJ88yQyj0agLCaM1VdxZFhcL972Jj_Unb2g"
         },
         {
-          "url": "https://www.arcticicehockey.com/winnipeg-jets-quarterly-report/",
-          "title": "Winnipeg Jets: Quarterly Report",
-          "publisher": "Arctic Ice Hockey",
+          "url": "https://bleedingcool.com/tv/ncis-new-york-returns-in-december-the-river-statuario-previews/",
+          "title": "NCIS: New York Returns in December: \"The River\" & \"Statuario\" Previews",
+          "publisher": "Bleeding Cool News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQds5Wb2A1bJBSvxEVH6kCtkjCRiQYVz_qA0_WAJaDnMx8xxzvgL2nxIE-NaP0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaCV6ydxk_MsBcMbK20-0q2Xt7HiKYILWq_H7gfteZV9uYUfBpG_dl9CofNNE"
         },
         {
-          "url": "https://winnipeg.citynews.ca/2026/11/17/are-the-jets-back-fans-are-fired-up-amid-six-game-winning-streak/",
-          "title": "Are the Jets back? Fans are fired up amid six game winning streak",
-          "publisher": "CityNews Winnipeg",
+          "url": "https://film-book.com/ncis-new-york-season-1-episode-7-the-river-tv-show-trailer/",
+          "title": "NCIS: New York: Season 1, Episode 7: The River TV Show Trailer",
+          "publisher": "Film-Book.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpgC-jpj-kKgCat851i_PAMB3-_0Sw907gMliKiCq9dhhVczGSspRAz2LcIw0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkJIoUn2y1zy0v9dPu8lI9H5ztvxcke7Jb-we3QLcq5b_iziKJ-t_Y8Rj1N4c"
         }
       ]
     },
     {
-      "query": "nasdaq futures",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T23:30:00Z",
+      "query": "pacers vs knicks",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T00:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
-        "https://www.nytimes.com/2026/11/21/business/anthropics-debut-shows-the-disconnect-between-wall-street-and-silicon-valley.html",
-        "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/"
+        "https://sports.yahoo.com/articles/final-injury-report-pacers-knicks-210000310.html",
+        "https://www.nba.com/knicks/news/knicks-vs-pacers-game-notes-november-22-2026",
+        "https://www.si.com/nba/pacers/onsi/indiana-pacers-new-york-knicks-preview-injuries-how-to-watch-odds-starters-01m81jx2x0m8"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVMj7s23FnLfKHgwA_qJR38384V0sXYO0W6k8wLQrKZKKBiA_Y--AJQJBgbGA",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/article/stocks-are-on-fire-sale-as-anthropic-ipo-fails-to-calm-ai-trade-jitters-190051253.html",
-          "title": "Stocks are 'on fire sale' as Anthropic IPO fails to calm AI trade jitters",
-          "publisher": "Yahoo Finance",
+          "url": "https://sports.yahoo.com/articles/final-injury-report-pacers-knicks-210000310.html",
+          "title": "Final Injury Report for Pacers-Knicks: Will Karl-Anthony Towns, Pascal Siakam Play?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVMj7s23FnLfKHgwA_qJR38384V0sXYO0W6k8wLQrKZKKBiA_Y--AJQJBgbGA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/21/business/anthropics-debut-shows-the-disconnect-between-wall-street-and-silicon-valley.html",
-          "title": "Anthropic’s Debut Shows the Disconnect Between Wall Street and Silicon Valley",
+          "url": "https://www.nba.com/knicks/news/knicks-vs-pacers-game-notes-november-22-2026",
+          "title": "Knicks vs Pacers Game Notes | November 22, 2026",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_HubFFbSDT9lioeqxKxVeKeoB0hbdwGHio-fR1MSr8-igeGlWXPUzLYI5b2k"
+        },
+        {
+          "url": "https://www.si.com/nba/pacers/onsi/indiana-pacers-new-york-knicks-preview-injuries-how-to-watch-odds-starters-01m81jx2x0m8",
+          "title": "Indiana Pacers-New York Knicks Preview: Injuries, How to Watch, Odds & Starters",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdoqGcWXVL9usuUksPLn5UGSxJ-1_fJTL8IKaYjEpm9-2_-SOJX64xQDLCZ8"
+        }
+      ]
+    },
+    {
+      "query": "blackhawks vs canucks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T00:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/chicago-blackhawks-vancouver-canucks-game-preview-november-22-2026",
+        "https://sports.yahoo.com/articles/blackhawks-vs-canucks-prediction-picks-165038924.html",
+        "https://www.nytimes.com/athletic/7803625/2026/11/22/blackhawks-vs-canucks-stream-how-to-watch-nov-22/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/chicago-blackhawks-vancouver-canucks-game-preview-november-22-2026",
+          "title": "Blackhawks at Canucks projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/blackhawks-vs-canucks-prediction-picks-165038924.html",
+          "title": "Blackhawks vs Canucks Prediction, Picks, NHL Odds for Sunday, November 22",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZHovOv-7yO8FhGA7wcbH3C7USR-98YvYfbruTe0z8QgXYWXBCOWmGfnaqVE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7803625/2026/11/22/blackhawks-vs-canucks-stream-how-to-watch-nov-22/",
+          "title": "How to watch Blackhawks vs. Canucks: TV channel and streaming options for November 22",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-Q_S5OgUiq3eZxzo_5tlWADPAI0k3OM2yKWc7WPj4fZoqNf2OvH0KwcgLwa0"
-        },
-        {
-          "url": "https://www.reuters.com/world/like-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-2026-11-22/",
-          "title": "EXCLUSIVE: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7Zav8_pjWR-gNCXGzTPZi0e3cCl5N-FPCYDal1ZWLq4ZgkWhTfOx6ZwF4XIw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoHb2wEF5UwYlknqIn-1xTH2pRqtMW7xl-d2MVHz2z7FqbJ3YXe-XPtZ6s-lo"
         }
       ]
     },
     {
-      "query": "wage",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-22T23:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
-        "https://www.cnbc.com/video/2026/11/22/google-worker-spends-under-20-thousand-per-year.html",
-        "https://www.livemint.com/news/us-news/3-crore-salary-but-less-than-18-6-lakh-in-annual-expenses-how-this-google-employee-is-saving-nearly-90-of-his-income-11795369630690.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6oHJYW3OziDoIJiWm_7w6xoHWoyboL2eu2J3uTKl3x_gz_TKX6MagiX6N9Ik",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/make-it/2026/11/22/google-worker-earns-323000-a-yearbut-he-lives-on-minimum-wage.html",
-          "title": "26-year-old Google worker earns $323,000 a year—but lives on less than minimum wage",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6oHJYW3OziDoIJiWm_7w6xoHWoyboL2eu2J3uTKl3x_gz_TKX6MagiX6N9Ik"
-        },
-        {
-          "url": "https://www.cnbc.com/video/2026/11/22/google-worker-spends-under-20-thousand-per-year.html",
-          "title": "I’m a Google worker making $323,000 a year – but living on a minimum wage budget",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2NdhVXe-2xgfR_iszlyOu9kHsN6uHBPa_-BV-RBB6vDjmGtRsmjeyJkacJWg"
-        },
-        {
-          "url": "https://www.livemint.com/news/us-news/3-crore-salary-but-less-than-18-6-lakh-in-annual-expenses-how-this-google-employee-is-saving-nearly-90-of-his-income-11795369630690.html",
-          "title": "₹3 crore salary but less than ₹18.6 lakh in annual expenses: How this Google employee is saving nearly 90% of his income",
-          "publisher": "Livemint",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVoDnzECDoq21318bGGPSMqgKXcZlU3_y7ptEDPiRfy25Vu5tBTinRZKr4rwE"
-        }
-      ]
-    },
-    {
-      "query": "josh holloway",
+      "query": "dre greenlaw",
       "approx_searches": "500+",
-      "published_at": "2026-11-22T23:30:00Z",
+      "published_at": "2026-11-23T00:10:00Z",
       "related_news_urls": [
-        "https://www.tvline.com/2321595/what-to-watch-november-22-2026-tv-shows-movies-streaming/",
-        "https://www.cbr.com/tracker-marshals-delayed-november-22-cbs/",
-        "https://www.yahoo.com/entertainment/tv/articles/trackers-colter-shaw-teams-fellow-180000081.html"
+        "https://www.ninersnation.com/san-francisco-49ers-injuries/166136/49ers-inactive-list-dre-greenlaw-is-out-veteran-wide-receiver-is-a-healthy-scratch",
+        "https://www.cbssports.com/fantasy/football/news/49ers-demarcus-robinson-inactive-for-snf/",
+        "https://www.thefantasyfootballers.com/news/649225/demarcus-robinson-inactive-for-snf/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWQJUqMysUB6VxgHn3bAAbueFtrkDfmS19Sl3klMwO33lRz2U-ogK2JtZRyQ",
-      "image_credit": "TVLine",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMJX4JDz9MRqkEpg_kSX7k4TdPj3lgCwka3zqchrelgDNCmO7Pb-enrNLEjQ",
+      "image_credit": "Niners Nation",
       "news": [
         {
-          "url": "https://www.tvline.com/2321595/what-to-watch-november-22-2026-tv-shows-movies-streaming/",
-          "title": "What To Watch Sunday: Josh Holloway On Tracker, Rachael Leigh Cook Hallmark Movie, And More",
-          "publisher": "TVLine",
+          "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/166136/49ers-inactive-list-dre-greenlaw-is-out-veteran-wide-receiver-is-a-healthy-scratch",
+          "title": "49ers inactive list: Dre Greenlaw is out; veteran wide receiver is a healthy scratch",
+          "publisher": "Niners Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMWQJUqMysUB6VxgHn3bAAbueFtrkDfmS19Sl3klMwO33lRz2U-ogK2JtZRyQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMJX4JDz9MRqkEpg_kSX7k4TdPj3lgCwka3zqchrelgDNCmO7Pb-enrNLEjQ"
         },
         {
-          "url": "https://www.cbr.com/tracker-marshals-delayed-november-22-cbs/",
-          "title": "CBS Delays Tracker & Marshals After Another Sunday Night Schedule Shakeup",
-          "publisher": "Comic Book Resources",
+          "url": "https://www.cbssports.com/fantasy/football/news/49ers-demarcus-robinson-inactive-for-snf/",
+          "title": "49ers' Demarcus Robinson: Inactive for SNF",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeA7wphuKtGMie-PEYwkh4DmXBO42Dy8ZesJlwm4OYKZOyfrrGnFLV-w_zoSk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTJ6gwJCH7IU0Wx2qdBpkDgPi90hjl_3BZbe45wktHa-N3I9fcmFQRmNiDV1k"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/trackers-colter-shaw-teams-fellow-180000081.html",
-          "title": "Tracker's Colter Shaw Teams Up With A Fellow Rewardist Played By Lost's Josh Holloway (Exclusive Sneak Peek)",
-          "publisher": "Yahoo",
+          "url": "https://www.thefantasyfootballers.com/news/649225/demarcus-robinson-inactive-for-snf/",
+          "title": "Demarcus Robinson Inactive for SNF",
+          "publisher": "Fantasy Footballers Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4dn5RlRAdxDaBOABa9kXTTsXD8cU4VKLIfY2k4ph6EyjXrfauJxzhj62_5yc"
-        }
-      ]
-    },
-    {
-      "query": "mario lopez",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-22T23:30:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/mario-lopez-kids-12240278",
-        "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-        "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDRaKyLLeruI2Os4tM-sHYDkNEKvGzqt9Tb6xUHgVx9Njou8ZgURGroACJv_M",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/mario-lopez-kids-12240278",
-          "title": "Meet Mario Lopez’s 3 Kids, Including Their Impressive Acting Careers",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDRaKyLLeruI2Os4tM-sHYDkNEKvGzqt9Tb6xUHgVx9Njou8ZgURGroACJv_M"
-        },
-        {
-          "url": "https://thenationaldesk.com/news/entertainment/mario-lopez-on-working-with-his-son-and-tony-danza-in-three-generations-one-christmas",
-          "title": "Mario Lopez on working with his son and Tony Danza in 'Three Generations, One Christmas'",
-          "publisher": "The National Desk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpEL2mG91It2YtQoqCcXlyuANG3n6UUZLvakMz_O_Y2KBg9-jIN0xju3yxWS4"
-        },
-        {
-          "url": "https://www.pureflix.com/insider/a-look-behind-the-curtain-of-three-generations-one-christmas",
-          "title": "A Look Behind the Curtain of ‘Three Generations, One Christmas’",
-          "publisher": "Great American Pure Flix",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZLmDgILDKTfrc23l3m6g6bBSUZQYgqtDujaolMEHtYeJqOT1zBXQF_2cFHM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnuVoUURg3PJHwjvtKNfoBptFI9-L6ofBViyb7yteZLmIxJVk2-BvA5jLM0Q"
         }
       ]
     }
