@@ -3,41 +3,200 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T08:01:36.367834Z",
+  "checked_at": "2026-11-23T08:33:37.558098Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "elon musk",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T07:40:00Z",
+      "query": "car accident lawyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T08:20:00Z",
       "related_news_urls": [
-        "https://www.basenor.com/blogs/news/tesla-splits-ai-hardware-ai5-goes-to-optimus-cars-stay-on-ai4",
-        "https://finance.yahoo.com/technology/ai/articles/musk-says-tesla-real-world-045001740.html",
-        "https://wccftech.com/elon-musk-says-teslas-ai4-computer-now-costs-twice-as-much-due-to-memory-and-storage-price-hikes/"
+        "https://unn.ua/en/news/the-lawyer-for-the-family-of-the-girl-who-died-in-a-traffic-accident-involving-an-nabu-detective-is-ready-to-testify-before-the-temporary-investigative-commission-about-pressure-and-the-dragging-out-of-the-investigation",
+        "https://unn.ua/en/news/are-you-concerned-about-the-national-anti-corruption-bureau-how-the-case-involving-a-fatal-dtp-caused-by-an-nabu-detective-has-still-not-reached-court-after-8-years"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CRqPX-wGQSt9hDV0kLjAIhIDkwbjODelW_4Q5zpjRnobsSnZ_OtCtQl82AI",
-      "image_credit": "BASENOR - Tesla Accessories",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNKnCbzvhFetqXRu2tTedXvXUAqZFb0vJPYRl1YMu7PgFQbLDSMqy-uOtXfPI",
+      "image_credit": "Українські Національні Новини (УНН)",
       "news": [
         {
-          "url": "https://www.basenor.com/blogs/news/tesla-splits-ai-hardware-ai5-goes-to-optimus-cars-stay-on-ai4",
-          "title": "Tesla Splits AI Hardware: AI5 Goes to Optimus, Cars Stay on AI4",
-          "publisher": "BASENOR - Tesla Accessories",
+          "url": "https://unn.ua/en/news/the-lawyer-for-the-family-of-the-girl-who-died-in-a-traffic-accident-involving-an-nabu-detective-is-ready-to-testify-before-the-temporary-investigative-commission-about-pressure-and-the-dragging-out-of-the-investigation",
+          "title": "The lawyer for the family of the girl who died in a traffic accident involving an NABU detective is ready to testify before the Verkhovna Rada’s Temporary Special Commission about ",
+          "publisher": "Українські Національні Новини (УНН)",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9CRqPX-wGQSt9hDV0kLjAIhIDkwbjODelW_4Q5zpjRnobsSnZ_OtCtQl82AI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNKnCbzvhFetqXRu2tTedXvXUAqZFb0vJPYRl1YMu7PgFQbLDSMqy-uOtXfPI"
         },
         {
-          "url": "https://finance.yahoo.com/technology/ai/articles/musk-says-tesla-real-world-045001740.html",
-          "title": "Musk Says Tesla’s Real-World AI Will Get Smarter by “About an Order of Magnitude per Year”",
-          "publisher": "Yahoo Finance",
+          "url": "https://unn.ua/en/news/are-you-concerned-about-the-national-anti-corruption-bureau-how-the-case-involving-a-fatal-dtp-caused-by-an-nabu-detective-has-still-not-reached-court-after-8-years",
+          "title": "\"Are you concerned about the National Anti-Corruption Bureau…\": how the case involving a fatal traffic accident involving an NABU detective has still not reached court after 8 year",
+          "publisher": "Українські Національні Новини (УНН)",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6Tn5uZP9zyAfKy3wHoTk2sLxnhK_ksrv6g3K6Rp6mjd-3oGIyNWfLrSTsa58"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF3kpBDs8JO7PtDGidN0b69Z1MU48uyYIkGjSGWcQ6x5o1yvwTmz5XASmjfDw"
+        }
+      ]
+    },
+    {
+      "query": "vicki gta 6 voice actor",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T08:20:00Z",
+      "related_news_urls": [
+        "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+        "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122",
+        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKJ2PAbgJHFRKwjqBnCkbX5HBiOQR1BgEhy-nr7KIir61WD27sKNLVghlfY4",
+      "image_credit": "escorenews.com",
+      "news": [
+        {
+          "url": "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
+          "title": "Can you romance Vicki in GTA 6. How to see her naked in strip club and order a private dance",
+          "publisher": "escorenews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKJ2PAbgJHFRKwjqBnCkbX5HBiOQR1BgEhy-nr7KIir61WD27sKNLVghlfY4"
         },
         {
-          "url": "https://wccftech.com/elon-musk-says-teslas-ai4-computer-now-costs-twice-as-much-due-to-memory-and-storage-price-hikes/",
-          "title": "Elon Musk Blames Memory And Storage Price Hikes For Doubling Tesla’s AI4 Computer Costs, Says It “Costs Twice As Much”",
-          "publisher": "Wccftech",
+          "url": "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122",
+          "title": "Bye Mandy, GTA 6 players have moved onto being infatuated with goth girl Vicki",
+          "publisher": "GAMINGbible",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7RQy-I0opY0K0cuZHiC8EgtQ4Kx8I2SaltZ5r4H3lAlOHLRPdaCenJD-2LL0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZT7cDU7pWhBdsnN4M8aHMFvWuxEVEtTpS6JTGONzzJEUwQXjlo3FKm4_jV8"
+        },
+        {
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
+          "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
+          "publisher": "Radio Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
+        }
+      ]
+    },
+    {
+      "query": "jonathan blow",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T08:20:00Z",
+      "related_news_urls": [
+        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+        "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
+        "https://insider-gaming.com/tenebrae-lux-gta-6/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
+      "image_credit": "Kotaku",
+      "news": [
+        {
+          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
+        },
+        {
+          "url": "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
+          "title": "Polygon identifies GTA 6’s Johannes Zuch as a Jonathan Blow parody",
+          "publisher": "A 90s Kid",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBUHHCNvaWL-_ndBWT6yO25_4IZOibow7kXxYjbXlQyeXQ-CnhTUe1TPWDu0"
+        },
+        {
+          "url": "https://insider-gaming.com/tenebrae-lux-gta-6/",
+          "title": "How to Complete the Tenebrae Lux Minigame Puzzle in GTA 6",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVmj1WaJkgEMoz2q4iX5L3IUlJdHj79xExbqbJFMgdbJivvkuhwCFzRjtHrPs"
+        }
+      ]
+    },
+    {
+      "query": "boss",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T08:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
+        "https://www.skysports.com/f1/news/13615086/lewis-hamilton-charles-leclerc-clashes-cannot-continue-after-las-vegas-gp-with-frederic-vasseur-to-speak-to-drivers-again",
+        "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr3bkFC5xPmSf-f1IVUr9s-HF9Lt_YIwPf5fkHg29Kcz0Kex3bP4PFFzKk8QM",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/formula1/articles/c6j9mepj0j1go",
+          "title": "Las Vegas Grand Prix: Lewis Hamilton and Charles Leclerc face tense discussion over ability to race together",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTr3bkFC5xPmSf-f1IVUr9s-HF9Lt_YIwPf5fkHg29Kcz0Kex3bP4PFFzKk8QM"
+        },
+        {
+          "url": "https://www.skysports.com/f1/news/13615086/lewis-hamilton-charles-leclerc-clashes-cannot-continue-after-las-vegas-gp-with-frederic-vasseur-to-speak-to-drivers-again",
+          "title": "Lewis Hamilton, Charles Leclerc clashes 'cannot continue' after Las Vegas GP with Frederic Vasseur to speak to drivers again",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkNFWshTGdsaGE83PtnT1CN7pG9PlsotWlxDbgNhl67dgG7tu3mSXKCz16aMk"
+        },
+        {
+          "url": "https://www.formula1.com/en/latest/article/its-a-lack-of-respect-vasseur-calls-latest-hamilton-leclerc-clash-in-las-vegas-unacceptable.5NGehhmEEtLqzDKxm7bi4z",
+          "title": "‘It's a lack of respect’ – Ferrari boss Fred Vasseur calls latest Hamilton-Leclerc clash in Las Vegas ‘unacceptable’",
+          "publisher": "Formula 1",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScybVGqCjt_RxdWnvEhrLpbxB9J6i71Bx1PiZA7dDlWGXqVDrWDnUki-Nip1Q"
+        }
+      ]
+    },
+    {
+      "query": "sam houser",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T07:50:00Z",
+      "related_news_urls": [
+        "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+        "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE",
+      "image_credit": "Rockstar Games",
+      "news": [
+        {
+          "url": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+          "title": "Grand Theft Auto VI Now Available",
+          "publisher": "Rockstar Games",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE"
+        },
+        {
+          "url": "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/",
+          "title": "‘GTA 6’ Hits Massive $3.79 Billion in First-Day Sales",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRg7Eh3nZ98dgsSBmwfQbnHag79aRWa8lIJy1SJhMBx1pdxyKYtaZS86IRDt70"
+        }
+      ]
+    },
+    {
+      "query": "king charles",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T07:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
+        "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/molly-meldrum-receive-state-funeral-065552747.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
+          "title": "Molly Meldrum: Australian music legend dies aged 83",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4"
+        },
+        {
+          "url": "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
+          "title": "Victorian Liberal party uses AI to write Jess Wilson’s tribute to Molly Meldrum",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS00bBf7i0EApqthkmQJTlIfQzDSIFz9z-OHdJvDhwuY88o_d3tUwqIez7nAo0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/molly-meldrum-receive-state-funeral-065552747.html",
+          "title": "Molly Meldrum to Receive State Funeral as Kylie Minogue, Jimmy Barnes Lead Tributes",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJdDIzDghNL0bGPumDkbY_hr8ZPiDnGlhs3MwapQiX4xa4FO7l0ZIc5B5WvoY"
         }
       ]
     },
@@ -46,33 +205,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-23T07:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/21/theater/joe-keery-other-desert-cities-broadway.html",
-        "https://collider.com/stranger-things-other-worlds-spin-off-release-window-2028/",
-        "https://theboar.org/2026/11/stranger-things-other-worlds-are-we-outstaying-our-welcome-in-hawkins/"
+        "https://www.al.com/alabamafootball/2026/11/stranger-things-actress-makes-guest-appearance-at-alabama-football-game.html",
+        "https://www.reutersconnect.com/item/nov-21-2026-tuscaloosa-al-usa-calista-craig-an-actress-who-is-in-the-cast-of-stranger-things-dances-with-the-alabama/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MTY1MjM",
+        "https://www.limapagi.id/en/stranger-things-alabama-netflix-spinoff"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoLQMNz4ZO6-dBM_sBiFVRTku2iSdvGb0SEdvFC0W34a9T4LztwArqDj1YRG4",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEF_JmTZZ__k8nw26L2ZJ9T2B9j5wEuRkPaEQ3QPOMpXbK-V1yQa9OWmCv22c",
+      "image_credit": "AL.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/21/theater/joe-keery-other-desert-cities-broadway.html",
-          "title": "From ‘Stranger Things’ to Broadway, Everyone Knows Joe Keery",
-          "publisher": "The New York Times",
+          "url": "https://www.al.com/alabamafootball/2026/11/stranger-things-actress-makes-guest-appearance-at-alabama-football-game.html",
+          "title": "‘Stranger Things’ actress makes guest appearance at Alabama football game",
+          "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoLQMNz4ZO6-dBM_sBiFVRTku2iSdvGb0SEdvFC0W34a9T4LztwArqDj1YRG4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEF_JmTZZ__k8nw26L2ZJ9T2B9j5wEuRkPaEQ3QPOMpXbK-V1yQa9OWmCv22c"
         },
         {
-          "url": "https://collider.com/stranger-things-other-worlds-spin-off-release-window-2028/",
-          "title": "‘Stranger Things’ Officially Sets 2028 Netflix Return",
-          "publisher": "Collider",
+          "url": "https://www.reutersconnect.com/item/nov-21-2026-tuscaloosa-al-usa-calista-craig-an-actress-who-is-in-the-cast-of-stranger-things-dances-with-the-alabama/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MTY1MjM",
+          "title": "Licensable picture: Nov 21, 2026; Tuscaloosa, AL, USA; Calista Craig, an actress who is in the cast of Stranger Things, dances with the Alabama",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsbvV9s18we2Db7V5TmLf7RiMjtc8KHVWehSylutQ48o5Mtyx7x_XXEu7a1VI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRajHbH0MiDvDVRMf5cZWEXYmNrRrQDpOe4v-DGSDWKo4TmZS_Zn0t0989MxGk"
         },
         {
-          "url": "https://theboar.org/2026/11/stranger-things-other-worlds-are-we-outstaying-our-welcome-in-hawkins/",
-          "title": "Stranger Things Other Worlds: Are we outstaying our welcome in Hawkins?",
-          "publisher": "The Boar",
+          "url": "https://www.limapagi.id/en/stranger-things-alabama-netflix-spinoff",
+          "title": "Stranger Things Star Joins Alabama Game as Netflix Plans 2028 Spinoff",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj0VmhFZUTcBY1Errd0uC0n1NFqQaNkLRi406ez4EljypSQTVLZ1NWdNCzeaE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEMkaPRZkhTKVaGRsqeHKW2_POLCnaKE7XqJ7hsLSmqF4HR_pOys-RVoNp5cc"
         }
       ]
     },
@@ -81,33 +240,68 @@
       "approx_searches": "100+",
       "published_at": "2026-11-23T07:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html",
-        "https://www.ctinsider.com/gametimect/article/girls-swimming-class-ll-state-championship-ciac-22535838.php",
-        "https://www.ctinsider.com/gametimect/article/ciac-state-open-girls-swimming-greenwich-champions-22544823.php"
+        "https://www.timesnewspapers.com/webster-kirkwoodtimes/boys-swimming-kirkwood-takes-second-webster-third-at-state/article_b92f4b3b-d189-4dfe-b6c8-fa99b42b0dea.html",
+        "https://mexicoledger.com/stories/missouri-military-academy-cadet-mexico-native-burle-medals-at-state-swimming,186491?",
+        "https://www.missourian.com/sports/durnal-leads-area-swimmers-at-state-meet/article_7443fccc-b485-483c-8cac-9eb11724b82c.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzUXk_QjgeREmgf0CJ6nfaXk91WCYJYPUtgxPwasEXoJjOFQB6UHb-iqc2o8k",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfrK0T6iZHleMZN5psxiRjVKRM_ulHLigiex6xWdJSSw3USkYZeSXoxf7X2o",
+      "image_credit": "Webster-Kirkwood Times",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html",
-          "title": "Greenwich girls swimming holds off Ridgefield for second straight State Open title",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.timesnewspapers.com/webster-kirkwoodtimes/boys-swimming-kirkwood-takes-second-webster-third-at-state/article_b92f4b3b-d189-4dfe-b6c8-fa99b42b0dea.html",
+          "title": "Boys Swimming: Kirkwood Takes Second, Webster Third At State",
+          "publisher": "Webster-Kirkwood Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzUXk_QjgeREmgf0CJ6nfaXk91WCYJYPUtgxPwasEXoJjOFQB6UHb-iqc2o8k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMfrK0T6iZHleMZN5psxiRjVKRM_ulHLigiex6xWdJSSw3USkYZeSXoxf7X2o"
         },
         {
-          "url": "https://www.ctinsider.com/gametimect/article/girls-swimming-class-ll-state-championship-ciac-22535838.php",
-          "title": "Greenwich holds off Ridgefield for 4th straight Class LL girls swimming title, 33rd overall",
-          "publisher": "CT Insider",
+          "url": "https://mexicoledger.com/stories/missouri-military-academy-cadet-mexico-native-burle-medals-at-state-swimming,186491?",
+          "title": "Missouri Military Academy cadet, Mexico native Burle medals at state swimming",
+          "publisher": "The Mexico Ledger",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwOpfijMYHZwJzSsUZa2BuCDzK0kKHwi3W9tWiXdFqmqOnTTS_Uiz_3C-EmZI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEmHYzXZ496__L_O600205UeC_HGbekNWiaRtUyAHDIAjVHvb1PK-kod5Jl_Y"
         },
         {
-          "url": "https://www.ctinsider.com/gametimect/article/ciac-state-open-girls-swimming-greenwich-champions-22544823.php",
-          "title": "Greenwich girls swimming holds off Ridgefield for second straight State Open title",
-          "publisher": "CT Insider",
+          "url": "https://www.missourian.com/sports/durnal-leads-area-swimmers-at-state-meet/article_7443fccc-b485-483c-8cac-9eb11724b82c.html",
+          "title": "Durnal leads area swimmers at state meet",
+          "publisher": "Missourian | Washington, MO",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9_VW2CSnshO47EJp-7OKxvcuFfQJDl9ENp2E3HJuMpsYSVj3tIoSWc8zCxVo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxnbQEbPgaYSxJUSac-o4mcdk6wo6J_lJ6W7CtsmvIG9UGz4XwbiiuTlxAfvo"
+        }
+      ]
+    },
+    {
+      "query": "elon musk",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T07:40:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-2027-ai-023231321.html",
+        "https://www.businessinsider.com/elon-musk-warning-ai-compute-data-centers-cash-spacex-tesla-2026-11",
+        "https://www.thestandard.com.hk/innovation/article/349255/AI-industry-will-likely-face-a-severe-funding-shortage-next-year-Elon-Musk"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRq47VExAmUKJHpfMS2hE7Jnu_NrqFVQsoowmNduJRFKanEXRVZle7qF35-E",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/elon-musk-says-2027-ai-023231321.html",
+          "title": "Elon Musk Says 2027 AI Cash Crunch Will Be ‘Nuts’ — Analysts Still See SpaceX Emerging As The Biggest AI Hyperscaler",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmRq47VExAmUKJHpfMS2hE7Jnu_NrqFVQsoowmNduJRFKanEXRVZle7qF35-E"
+        },
+        {
+          "url": "https://www.businessinsider.com/elon-musk-warning-ai-compute-data-centers-cash-spacex-tesla-2026-11",
+          "title": "Elon Musk warns data center delays could leave AI companies short on cash: 'Going to be nuts'",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiI7_EwtnJLrYYJXjigx6bN4n0rmCm4l_wblTnociWYn0Lyh6TlSqLN3qr5gg"
+        },
+        {
+          "url": "https://www.thestandard.com.hk/innovation/article/349255/AI-industry-will-likely-face-a-severe-funding-shortage-next-year-Elon-Musk",
+          "title": "AI ​​industry will likely face a severe funding shortage next year: Elon Musk",
+          "publisher": "The Standard (HK)",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQE2Za5axdbmXgmxp-HzQleCYv6LBONUZliYbZ1b8yNmJJ9Gzg7ZNJHY4O-L2o"
         }
       ]
     },
@@ -118,7 +312,7 @@
       "related_news_urls": [
         "https://www.bbc.com/zhongwen/articles/cwe85gr487dno/simp",
         "https://cn.wsj.com/articles/anthropic-mathematician-says-claude-has-solved-the-most-famous-problem-in-math-f000b8ed",
-        "https://www.huxiu.com/article/4907555.html"
+        "https://news.ifeng.com/c/8yGZx9BeETZ"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGDP-H_KUuvF001wqrBYGoExeJW853oh30aE4KDUPU059a7YvMxpxGPoXmYmQ",
       "image_credit": "BBC",
@@ -138,221 +332,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFXbNNQm8GL29MRXU4phjChNaGiTgVDJHnTnSF29jxhKR5DV7KYXPrlVq4Hq4"
         },
         {
-          "url": "https://www.huxiu.com/article/4907555.html",
-          "title": "Claude协助数学家形式化证明黎曼猜想，引发对知识精英新闻节食与算法神话的反思",
-          "publisher": "虎嗅",
+          "url": "https://news.ifeng.com/c/8yGZx9BeETZ",
+          "title": "167年的难题，终于拿到大结果？",
+          "publisher": "凤凰网",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdyrDfTPrgnWBa4XdmdXYqdo6KrVttJJtiv6w6NGqrghyBLTovOOG3NpI1BYM"
-        }
-      ]
-    },
-    {
-      "query": "joe jonas",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T07:30:00Z",
-      "related_news_urls": [
-        "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
-        "https://www.imdb.com/es/news/ni66111283/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/joe-jonas-dating-history-full-225333301.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA",
-      "image_credit": "Us Weekly",
-      "news": [
-        {
-          "url": "https://www.usmagazine.com/celebrity-news/news/joe-jonas-and-tatiana-gabriela-split-after-1-year-of-dating/",
-          "title": "Joe Jonas and Girlfriend Tatiana Gabriela Split After 1 Year of Dating: ‘Things Shifted’",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sf90f7qFUACeoMTq3uVo4rrLfk_Z8YIIh28t5AvDxR2TpLst_kRu1ZptebA"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66111283/",
-          "title": "Joe Jonas Splits from Girlfriend Tatiana Gabriela After Year of Dating",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrI9AGlX6enXbIVBQU0E91scDTDgZl6g9oxbZBVM5JwtTAqD92kvORr9T0kog"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/joe-jonas-dating-history-full-225333301.html",
-          "title": "Joe Jonas Dating History: Full List of His Famous Ex-Girlfriends Revealed",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFeT5UCGJdLu0BcEpPmCJG-5Ob1xVhEaseE0peOKtsfVQrshA1brt25GThljE"
-        }
-      ]
-    },
-    {
-      "query": "sa vs ban",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T07:20:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/story/aiden-markram-says-it-s-quite-a-smooth-transition-to-be-leading-south-africa-again-1563619",
-        "https://www.cricbuzz.com/cricket-news/141019/south-africa-vs-bangladesh-2nd-test-injuries-wont-take-the-sting-out-of-centurion-test-cricbuzzcom",
-        "https://www.thedailystar.net/sports/cricket/news/rain-delays-toss-centurion-test-awaits-start-4331056"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1wUXDZlVj15XHcBT04Ypuemqd6TRJw61ZaL0kz5JKZm-8S9VcH9gIU628sS0",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/story/aiden-markram-says-it-s-quite-a-smooth-transition-to-be-leading-south-africa-again-1563619",
-          "title": "'It's quite a smooth transition'- Markram on stepping in for Bavuma",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1wUXDZlVj15XHcBT04Ypuemqd6TRJw61ZaL0kz5JKZm-8S9VcH9gIU628sS0"
-        },
-        {
-          "url": "https://www.cricbuzz.com/cricket-news/141019/south-africa-vs-bangladesh-2nd-test-injuries-wont-take-the-sting-out-of-centurion-test-cricbuzzcom",
-          "title": "South Africa vs Bangladesh, 2nd Test: Injuries won't take the sting out of Centurion Test",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNAZkFCP_2-CgJWleUFo6_wDFGOMmWGYUuPkFshstUm2b7ZLPeEQSqlQhOxMM"
-        },
-        {
-          "url": "https://www.thedailystar.net/sports/cricket/news/rain-delays-toss-centurion-test-awaits-start-4331056",
-          "title": "Rain delays toss as Centurion Test awaits start",
-          "publisher": "The Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcTXq8sah4C9tGUDRz8mXOqHugYvxWQokc9wGkIzHGse_eT_I5UwPBrVr4b9o"
-        }
-      ]
-    },
-    {
-      "query": "paul walker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T07:20:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-        "https://www.ign.com/videos/gta-6-how-to-find-the-fast-and-the-furious-car-easter-egg",
-        "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-          "title": "Where to Find Paul Walker’s 1995 Mitsubishi Eclipse in GTA 6",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM"
-        },
-        {
-          "url": "https://www.ign.com/videos/gta-6-how-to-find-the-fast-and-the-furious-car-easter-egg",
-          "title": "GTA 6 - How to Find the Fast and the Furious Car Easter Egg",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw4PdJS8FBxlvrfv0Rpl7KUU1MreVbNURHIKlu-sStWpmDRdhfK24j_CHQfPo"
-        },
-        {
-          "url": "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
-          "title": "Where To Find The Paul Walker 'Fast And Furious' Tribute Car In GTA 6",
-          "publisher": "Jalopnik",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbmWQD2Q_uY_E2qC0vkQ_YNl9iCmdn6ss1nSP97gYiLlE3178NZELPUar1ayU"
-        }
-      ]
-    },
-    {
-      "query": "iowa",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T07:10:00Z",
-      "related_news_urls": [
-        "https://www.wqad.com/article/news/local/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
-        "https://www.kcrg.com/2026/11/22/lead-explosion-experts-question-emergency-army-vows-blast-will-proceed/",
-        "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd0P_L61Co-G45DXEXbwZ0V1gbSUVkm3X_XRzjev9mjbMY1pXhGNaAU3PcIS4",
-      "image_credit": "WQAD",
-      "news": [
-        {
-          "url": "https://www.wqad.com/article/news/local/noon-sunday-deadline-set-in-iowa-army-blast-challenge-fort-madison-says-detonation-could-come-monday-or-tuesday/526-ac7e252c-8ff2-4b3c-b016-1a92530dae50",
-          "title": "Noon Sunday deadline set in Iowa Army blast challenge; Fort Madison says detonation could come Monday or Tuesday",
-          "publisher": "WQAD",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQd0P_L61Co-G45DXEXbwZ0V1gbSUVkm3X_XRzjev9mjbMY1pXhGNaAU3PcIS4"
-        },
-        {
-          "url": "https://www.kcrg.com/2026/11/22/lead-explosion-experts-question-emergency-army-vows-blast-will-proceed/",
-          "title": "UPDATE: Army says lead azide detonation will take place Wednesday",
-          "publisher": "KCRG",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj0_4lgVcbRqSWCRrmha3Xpk1_tDGB0EnXlFRcb5Hp6QJWO_qDmIxMTFXTDBk"
-        },
-        {
-          "url": "https://www.army.mil/article/296990/army_update_on_iowa_army_ammunition_plant",
-          "title": "Army update on Iowa Army Ammunition Plant",
-          "publisher": "Army.mil",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRziwWClQT0pD90Npdp7OvkGRE_Vf3FyUZpXjfuUNg8zN2aUOKzI1nYP8er6I0"
-        }
-      ]
-    },
-    {
-      "query": "og anunoby",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T07:10:00Z",
-      "related_news_urls": [
-        "https://www.postingandtoasting.com/knicks-game-previews/91455/game-preview-knicks-vs-trail-blazers-november-21-2026",
-        "https://www.hoopsrumors.com/2026/11/injury-notes-knicks-hawks-mathurin-murray-boyles.html",
-        "https://www.nba.com/knicks/photos/knicks-on-the-court-thursday-november-21-vs-portland-trail-blazers"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1idgDOKKdezwinX9aF2uH1tbMYDdW8yYBrb-s-e4I3zwnzfWkq2OrHKPf-o",
-      "image_credit": "Posting and Toasting",
-      "news": [
-        {
-          "url": "https://www.postingandtoasting.com/knicks-game-previews/91455/game-preview-knicks-vs-trail-blazers-november-21-2026",
-          "title": "Game Preview: Knicks vs Trail Blazers, November 21, 2026",
-          "publisher": "Posting and Toasting",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1idgDOKKdezwinX9aF2uH1tbMYDdW8yYBrb-s-e4I3zwnzfWkq2OrHKPf-o"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/injury-notes-knicks-hawks-mathurin-murray-boyles.html",
-          "title": "Injury Notes: Knicks, Hawks, Mathurin, Murray-Boyles",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgDv8YHYzfxMrbbhTt0lE7LZltEidbyvLuoTL5hmvctZV5QrHpKljZmSq9ns"
-        },
-        {
-          "url": "https://www.nba.com/knicks/photos/knicks-on-the-court-thursday-november-21-vs-portland-trail-blazers",
-          "title": "Knicks on the Court: Thursday, November 21 vs. Portland Trail Blazers",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz1hpIk9XW132ssb-7AxB33pB7zl1ExrzklgE5bYA3YvhF255h2fBNAGxYRbM"
-        }
-      ]
-    },
-    {
-      "query": "elon musk net worth",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T07:00:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks",
-        "https://cwibc.co.id/en/musk-wealth-tesla-spacex-decline",
-        "https://demokratis.co.id/en/billionaire-fortunes-nasdaq-selloff"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/news/26/11/63516155/elon-musks-net-worth-takes-a-64-billion-hit-in-a-day-as-tesla-and-spacex-falter-amid-ai-bubble-risks",
-          "title": "Elon Musk's Net Worth Takes a $64 Billion Hit in a Day as Tesla and SpaceX Falter Amid AI Bubble Risks",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgyidPHYWNdCkfe6iWLSGXyFLtj9pw-RhwEYfTK6u6zTEk_eRuRdw1ffdnICM"
-        },
-        {
-          "url": "https://cwibc.co.id/en/musk-wealth-tesla-spacex-decline",
-          "title": "Musk Loses 64 Billion as Tesla and SpaceX Shares Fall",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Lr4NtfQtiQxErsKtxSPes73N5yTVB5qg-1gZV8oUfEAYnlZ8L8ZhbaIPC2Q"
-        },
-        {
-          "url": "https://demokratis.co.id/en/billionaire-fortunes-nasdaq-selloff",
-          "title": "Five Richest Billionaires Lose 146 Billion as Nasdaq Falls",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTMDu7wQyC0HMFoaPx7bksFsxx4jxDj-q2i6asUdQMXyQ24qe8pbP6OFl6WD_8"
+          "image_url": null
         }
       ]
     }
