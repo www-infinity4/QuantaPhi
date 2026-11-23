@@ -3,41 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T10:31:13.273103Z",
+  "checked_at": "2026-11-23T11:01:27.111319Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gta 6 update",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T10:10:00Z",
+      "query": "mike schur",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T10:40:00Z",
       "related_news_urls": [
-        "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-live-updates-record-38-billion-launch-viral-clips-and-the-secrets-players-are-finding-in-leonida-163038757.html",
-        "https://www.techpowerup.com/355064/gta-vi-proves-too-demanding-for-some-ps5-consoles-even-at-30-fps",
-        "https://www.polygon.com/gta-6-crash-ps5-error-code-ce-108255-1/"
+        "https://www.wsj.com/arts-culture/television/dig-review-amy-poehlers-archaeology-comedy-9c1c0931",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/22/peacock-dig-review-amy-poehler-hugh-laurie-michael-schur/92689400007/",
+        "https://www.hollywoodreporter.com/tv/tv-reviews/dig-review-amy-poehler-mike-schur-hugh-laurie-peacock-1236758949/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEJx4ikVsLKyLyrv1jcwOcvLYBl5tVb0z-e0nhUnGkurqCnF38NwHQRbValu8",
-      "image_credit": "Yahoo Tech",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfucIBx-pc-Z4ljri96AztHjHQ6a6AvZAoQAUuNmB5s4YNRAqFmJuhzBF5G5I",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://tech.yahoo.com/gaming/breaking-news/article/gta-6-live-updates-record-38-billion-launch-viral-clips-and-the-secrets-players-are-finding-in-leonida-163038757.html",
-          "title": "'GTA 6' live updates: Record $3.8 billion launch, viral clips and the secrets players are finding in Leonida",
-          "publisher": "Yahoo Tech",
+          "url": "https://www.wsj.com/arts-culture/television/dig-review-amy-poehlers-archaeology-comedy-9c1c0931",
+          "title": "‘Dig’ Review: Amy Poehler’s Archaeology Comedy",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEJx4ikVsLKyLyrv1jcwOcvLYBl5tVb0z-e0nhUnGkurqCnF38NwHQRbValu8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfucIBx-pc-Z4ljri96AztHjHQ6a6AvZAoQAUuNmB5s4YNRAqFmJuhzBF5G5I"
         },
         {
-          "url": "https://www.techpowerup.com/355064/gta-vi-proves-too-demanding-for-some-ps5-consoles-even-at-30-fps",
-          "title": "GTA VI Proves Too Demanding For Some PS5 Consoles, Even at 30 FPS",
-          "publisher": "TechPowerUp",
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/22/peacock-dig-review-amy-poehler-hugh-laurie-michael-schur/92689400007/",
+          "title": "Can Amy Poehler strike sitcom gold again with Peacock's 'Dig'?",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxgowyqLSVbMaTA1JwHv11YonxaQ1xiJRPXrGGyXgvAy56kRPbAIJj8O3DbU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpXR_xjWlUlZ-MzkhnWvqTdXA9smGqhS2FUcamA8CFtk7OGRA_70aG9r8aiOw"
         },
         {
-          "url": "https://www.polygon.com/gta-6-crash-ps5-error-code-ce-108255-1/",
-          "title": "GTA 6 Players Are Encountering a Mysterious Game Breaking Crash",
+          "url": "https://www.hollywoodreporter.com/tv/tv-reviews/dig-review-amy-poehler-mike-schur-hugh-laurie-peacock-1236758949/",
+          "title": "‘Dig’ Review: Amy Poehler and Mike Schur Reunite for Peacock’s Likable but Underwhelming Archeology Comedy",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7VN2LHVPpR0EW9j2NLyZAyk2ZlX8es4zcoPFfz2DxD3wlcZxHhoePjBPaYMo"
+        }
+      ]
+    },
+    {
+      "query": "marshals",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T10:40:00Z",
+      "related_news_urls": [
+        "https://www.tvline.com/2324467/marshals-season-2-episode-7-recap-kayce-monica-baby-death-explained/",
+        "https://www.forbes.com/sites/erikkain/2026/11/21/marshals-season-2-episode-7-release-time-cbs-paramount-plus/",
+        "https://www.paramountpressexpress.com/paramount-television-studios/shows/marshals/releases/?view=113620-the-marshals-launch-a-desperate-manhunt-to-stop-a-hitman-sent-to-sabotage-a-high-profile-federal-trial-on-marshals-sunday-dec-6"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSQ95E_Gos0MCUEWoJoAHoImam05Rh95UfIzMCqb1EcUgCM6ltSgOsw2RNFw",
+      "image_credit": "TVLine",
+      "news": [
+        {
+          "url": "https://www.tvline.com/2324467/marshals-season-2-episode-7-recap-kayce-monica-baby-death-explained/",
+          "title": "Marshals Revisits Kayce And Monica's Most Tragic Yellowstone Storyline In Season 2",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSQ95E_Gos0MCUEWoJoAHoImam05Rh95UfIzMCqb1EcUgCM6ltSgOsw2RNFw"
+        },
+        {
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/21/marshals-season-2-episode-7-release-time-cbs-paramount-plus/",
+          "title": "‘Marshals’ Season 2, Episode 7 Release Time: Here’s When ‘Under The Influence’ Airs On CBS And Paramount+",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFmUzvUdL9HecS41WzjnhNEJKaIbieb9UCOma_roTPQrTXMkd74KXFy3n5C9E"
+        },
+        {
+          "url": "https://www.paramountpressexpress.com/paramount-television-studios/shows/marshals/releases/?view=113620-the-marshals-launch-a-desperate-manhunt-to-stop-a-hitman-sent-to-sabotage-a-high-profile-federal-trial-on-marshals-sunday-dec-6",
+          "title": "THE MARSHALS LAUNCH A DESPERATE MANHUNT TO STOP A HITMAN SENT TO SABOTAGE A HIGH-PROFILE FEDERAL TRIAL, ON “MARSHALS,” SUNDAY, DEC. 6",
+          "publisher": "Paramount Press Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz8d3CFV4NrEhW_1Fm4vs6Tt9A3wXkXAh2Uw-SyDVj6IU7srVT62Ha0XRaPFM"
+        }
+      ]
+    },
+    {
+      "query": "gold rate today",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T10:40:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes",
+        "https://www.cnbc.com/2026/11/23/gold-rises-from-14-month-low-as-markets-await-us-inflation-data.html",
+        "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxOoMNDHjEDNGCyMnIzOc1nVbgT9bhaal9AOh5EReItRLbrvIPQ84aiAtQkyY",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/gold-rebounds-as-traders-pare-bets-on-near-term-fed-rate-hikes",
+          "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxOoMNDHjEDNGCyMnIzOc1nVbgT9bhaal9AOh5EReItRLbrvIPQ84aiAtQkyY"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/23/gold-rises-from-14-month-low-as-markets-await-us-inflation-data.html",
+          "title": "Gold rises from 14-month low as markets await U.S. inflation data",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1rvUvt8A2n0VIZqvU8lWh5f2ocd37iYwt4wzCfDHg5JddvGD2bZSsz-X0AbY"
+        },
+        {
+          "url": "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
+          "title": "Gold climbs more than 2% as dollar rally pauses",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ"
+        }
+      ]
+    },
+    {
+      "query": "tessa majors",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T10:30:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/22/us/barnard-college-murder-parole",
+        "https://abc7ny.com/post/convicted-killer-luchiano-lewis-released-parole-tessa-majors-case/20066361/",
+        "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6OHC7A4dUtYudYzQgAlFzg82vN9LZnO5a0QS25govXAlDXE4u1RVxmsYcvY",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/22/us/barnard-college-murder-parole",
+          "title": "Man convicted in Barnard student murder released on parole after serving 5 years",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6OHC7A4dUtYudYzQgAlFzg82vN9LZnO5a0QS25govXAlDXE4u1RVxmsYcvY"
+        },
+        {
+          "url": "https://abc7ny.com/post/convicted-killer-luchiano-lewis-released-parole-tessa-majors-case/20066361/",
+          "title": "Convicted killer Luchiano Lewis released on parole in Tessa Majors case",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_NWXK-czZqlgrFJ2dZFTqlims1jhB6jsW81IsLM2I2IbHSPAIJZc8UonG3nw"
+        },
+        {
+          "url": "https://nypost.com/2026/11/21/us-news/one-of-tessa-majors-killers-sprung-from-upstate-prison-just-6-years-after-sentencing/",
+          "title": "Exclusive | Teen killer who held down Tessa Majors while pal plunged knife into her heart freed early — despite violence behind bars",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ENGyXf1PxB8kgmwv_f3ZhK_Xvsm6W9IAhgGQ8DCC6BC7sQgyJp7iNIDAhJI"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 update today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T10:20:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/the-binding-of-isaac-dev-removes-undisclosed-ai-generated-music-from-repentance-following-creator-response-review-bombing",
+        "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+        "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ToiY31unm6J4VPLCaq2ovqUPytaMU4iQfX-ntjzjsi9PItsI-auVqbo03BY",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/the-binding-of-isaac-dev-removes-undisclosed-ai-generated-music-from-repentance-following-creator-response-review-bombing",
+          "title": "'Woke Up to a S**t Show' — The Binding of Isaac Creator Says He Was Unaware of Now-Removed AI-Generated Music in Repentance+ Following Backlash",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5ToiY31unm6J4VPLCaq2ovqUPytaMU4iQfX-ntjzjsi9PItsI-auVqbo03BY"
+        },
+        {
+          "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+          "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDduk7mhbQevMkDGFNuSYfUeRFOzIyxORANZNQXPJl3c7vbErJH5YueinHS28"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/roguelike/binding-of-isaac-dlc-adds-ai-music-in-gta-6-parodying-update-despite-not-having-an-ai-disclosure-steam-reviews-drop-to-overwhelmingly-negative-music-gets-pulled/",
+          "title": "Binding of Isaac DLC adds AI music in GTA 6-parodying update despite not having an AI disclosure, Steam reviews drop to Overwhelmingly Negative, music gets pulled",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5julYgKi-gU2WRzVEaliW9-jgNIZktFF7R_OFdU2PXcS9qQOoXafAB5KSOxs"
+        }
+      ]
+    },
+    {
+      "query": "professor severus snape",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T10:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/articles/emma-watson-1-034-billion-160000761.html",
+        "https://collider.com/harry-potter-hbo-reboot-first-scene-dumbledore-book-change/",
+        "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqM4Km254u5bJegd9vUC3NWEI8CzDtiGz-0nEzeHcdXYVU6VviDELBC6dIutA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/articles/emma-watson-1-034-billion-160000761.html",
+          "title": "Emma Watson’s $1.034 Billion Movie Is Getting an Elaborate Remake Very Soon",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqM4Km254u5bJegd9vUC3NWEI8CzDtiGz-0nEzeHcdXYVU6VviDELBC6dIutA"
+        },
+        {
+          "url": "https://collider.com/harry-potter-hbo-reboot-first-scene-dumbledore-book-change/",
+          "title": "HBO’s ‘Harry Potter’ Officially Changes a Classic Book Moment in First Full Scene Release",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL7r7j9Tw4u6gdfYlYnx14x1kXzdwL6dGO2iXXDX8jnGY-csXgFDHFEStalTo"
+        },
+        {
+          "url": "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/",
+          "title": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHaFKz-9VNvsQwJhtavKUTwgXM4x-WulTZsQjtnd7q95VAlLkV2nnNzzUwzro"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 update",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T10:10:00Z",
+      "related_news_urls": [
+        "https://www.polygon.com/patch-notes-gta-6-next-gen/",
+        "https://www.gameindustry.com/news-industry-happenings/the-next-console-generation-is-already-taking-shape/",
+        "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupahWyNTrI5VM4JdcSU3Z-Fa6scnmvZHN1RK0HFKOW172QnAaK8_e85KhB9w",
+      "image_credit": "Polygon.com",
+      "news": [
+        {
+          "url": "https://www.polygon.com/patch-notes-gta-6-next-gen/",
+          "title": "Six Years Too Late, Next-Gen Finally Arrives with GTA 6",
           "publisher": "Polygon.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDmLDPUiMpmkErLC-DTXHtaNyVDC6N0Kb5vry5_BqxOiSfisdRDCBqjBQMyO0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTupahWyNTrI5VM4JdcSU3Z-Fa6scnmvZHN1RK0HFKOW172QnAaK8_e85KhB9w"
+        },
+        {
+          "url": "https://www.gameindustry.com/news-industry-happenings/the-next-console-generation-is-already-taking-shape/",
+          "title": "The Next Console Generation Is Already Taking Shape",
+          "publisher": "Gameindustry.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4XUgfe9wsg7Dnjy-0PVQgPOPfO8PPMy3C8BBTgeIZi-BBKAORnQqNgEFoJhE"
+        },
+        {
+          "url": "https://www.pcmag.com/explainers/gta-6-is-finally-here-so-when-can-you-play-online-with-friends-multiplayer",
+          "title": "GTA 6 Is Finally Here...So When Can You Play Online With Friends?",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn6o_JumtbV8MQdgwxsD-kFew9Cru4BjXvY9umVhuPjrig5CAWau3DFc-vPPY"
         }
       ]
     },
@@ -47,8 +257,8 @@
       "published_at": "2026-11-23T10:10:00Z",
       "related_news_urls": [
         "https://www.univision.com/local/san-francisco-kdtv/ice-detiene-a-dos-ciudadanos-estadounidenses-en-oakland-california",
-        "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
-        "https://www.univision.com/noticias/inmigracion/gobernador-de-washington-afirma-que-ice-esta-fuera-de-control-tras-arrestos-en-un-aeropuerto"
+        "https://www.telemundo.com/noticias/noticias-telemundo/inmigracion/ice-arrestos-aeropuertos-cientificos-investigadores-rcna610663",
+        "https://www.univision.com/noticias/inmigracion/ice-detiene-a-una-estudiante-de-doctorado-de-princeton-en-un-aeropuerto-de-washington-d-c"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiQyrojJ6EPJG89zwT277uBBJ606cXaElex5hMpNtzkdKe4xVDoDLlx-ksnts",
       "image_credit": "Univision",
@@ -61,18 +271,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiQyrojJ6EPJG89zwT277uBBJ606cXaElex5hMpNtzkdKe4xVDoDLlx-ksnts"
         },
         {
-          "url": "https://cnnespanol.cnn.com/2026/11/21/eeuu/agentes-ice-arrestan-inmigrantes-aeropuerto-seattle-ap",
-          "title": "Agentes de ICE arrestan a dos inmigrantes mexicanos en el aeropuerto de Seattle en una escena \"angustiosa\"",
-          "publisher": "CNN en Español",
+          "url": "https://www.telemundo.com/noticias/noticias-telemundo/inmigracion/ice-arrestos-aeropuertos-cientificos-investigadores-rcna610663",
+          "title": "“Quieren asustar a la gente”: ICE detiene a neurocientífica de Princeton con asilo pendiente en un aeropuerto de D.C.",
+          "publisher": "Telemundo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6U7VAPe3IJT5jhEzpEdmi3fYENhBIuLwnx_yzlo3gPFUNZ7XNF_BObUiHuj8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHHFoaIIH0EUwIn5dPTrLIkW012ecghD6rE-xdR9NmWllrPSmp9anL05XA0gM"
         },
         {
-          "url": "https://www.univision.com/noticias/inmigracion/gobernador-de-washington-afirma-que-ice-esta-fuera-de-control-tras-arrestos-en-un-aeropuerto",
-          "title": "Gobernador de Washington afirma que ICE está \"fuera de control\" tras arrestos en un aeropuerto",
+          "url": "https://www.univision.com/noticias/inmigracion/ice-detiene-a-una-estudiante-de-doctorado-de-princeton-en-un-aeropuerto-de-washington-d-c",
+          "title": "ICE detiene a una estudiante de doctorado de Princeton en un aeropuerto de Washington D.C.",
           "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCJk0o8fqNkflrG-YTku5VuU1tmOyn7m_G24GtGcZYUt6xv3Ce3AFM-DeDxV0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA4pdlTBhBHmMC-JEW71fbcp9EumM1YjpoQ12afSZvmDcdbcy3dJi_NpdPv0o"
+        }
+      ]
+    },
+    {
+      "query": "real salt lake vs vancouver whitecaps fc standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T10:10:00Z",
+      "related_news_urls": [
+        "https://www.mlssoccer.com/playoffs/2026/news/vancouver-whitecaps-open-playoffs-in-style-with-victory-over-real-salt-lake",
+        "https://www.espn.com/video/clip/_/id/50569414/vancouver-whitecaps-vs-real-salt-lake-game-highlights",
+        "https://www.whitecapsfc.com/news/preview-caps-host-real-salt-lake-in-game-1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgUE4R7jhD1v3U1kNB7on9BpN-I9o__90Y75HaBtJlHmlOddsAyUoLQt0qZHg",
+      "image_credit": "MLSsoccer.com",
+      "news": [
+        {
+          "url": "https://www.mlssoccer.com/playoffs/2026/news/vancouver-whitecaps-open-playoffs-in-style-with-victory-over-real-salt-lake",
+          "title": "Vancouver Whitecaps open playoffs in style with victory over Real Salt Lake",
+          "publisher": "MLSsoccer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgUE4R7jhD1v3U1kNB7on9BpN-I9o__90Y75HaBtJlHmlOddsAyUoLQt0qZHg"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50569414/vancouver-whitecaps-vs-real-salt-lake-game-highlights",
+          "title": "Vancouver Whitecaps vs. Real Salt Lake - Game Highlights",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6-Q2-x1HxRNfdH4jxNC4SFTWko0hH14sT_OE7kmYBkmiBzfoHnyhAIdEM1C0"
+        },
+        {
+          "url": "https://www.whitecapsfc.com/news/preview-caps-host-real-salt-lake-in-game-1",
+          "title": "PREVIEW: 'Caps host Real Salt Lake in Game 1 of Round One, Best-Of-3 Series | Watch on Apple TV, TSN",
+          "publisher": "www.whitecapsfc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEuNAOqxlr7iNogK1uIwY0lYF51Q7BwUM_pRbLWL-VXL7jK_78-MQn4WgkAos"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJFxReicqSDk_yi9L8ZMva1VtwbPQC0sBDT73y7U_qIsnsAOab87hPdFzxR4Q"
-        }
-      ]
-    },
-    {
-      "query": "uefa champions league",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T09:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50560779/manchester-city-vs-napoli-tv-channel-how-watch-uk-kickoff-live-stream-team-news-predicted-lineups",
-        "https://sscnapoli.it/en/news/manchester-city-napoli-arbitra-kovacs",
-        "https://mancitysquare.com/man-city-napoli-tracker-injury-updates-prediction-storylines-more"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0h4etYE3smmcwWlkFm4Qs2zsFDoWtySEDno5kT3zEAfLbU6LG7M5GRpkW5uU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50560779/manchester-city-vs-napoli-tv-channel-how-watch-uk-kickoff-live-stream-team-news-predicted-lineups",
-          "title": "Manchester City vs Napoli: TV channel, kick-off time (Tue Nov 24)",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0h4etYE3smmcwWlkFm4Qs2zsFDoWtySEDno5kT3zEAfLbU6LG7M5GRpkW5uU"
-        },
-        {
-          "url": "https://sscnapoli.it/en/news/manchester-city-napoli-arbitra-kovacs",
-          "title": "Kovacs to referee Manchester City v Napoli",
-          "publisher": "SSC Napoli",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ_Utzp1FqLoSaEvo0DfaKMaCCrmSyaOdZ64ij-FQkeF50fCO9vdkw8-Tpf0s"
-        },
-        {
-          "url": "https://mancitysquare.com/man-city-napoli-tracker-injury-updates-prediction-storylines-more",
-          "title": "Man City vs. Napoli tracker: Injury updates, prediction, storylines, and more",
-          "publisher": "Man City Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-r9Wm2-skGpB3VSQhJkAQWfUYU74_XM1Uyamp_voehDKrbO-fzlbYhAonSUo"
-        }
-      ]
-    },
-    {
-      "query": "avgo stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T09:50:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-stock-took-wild-200123397.html",
-        "https://www.barchart.com/story/news/8953006/why-its-time-to-buy-the-pullback-in-broadcom-stock",
-        "https://www.fool.com/investing/2026/11/22/here-s-what-a-usd1-000-investment-in-broadcom-stock-could-be-worth-by-2035/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqJ7l9LVxoIyzIpFjGGnIfmrW2ihI7kV1EkHhsVnRV-GXdvdEbGTdJ7mde9k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-stock-took-wild-200123397.html",
-          "title": "Why Broadcom Stock Took a Wild Ride on Thursday",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoqJ7l9LVxoIyzIpFjGGnIfmrW2ihI7kV1EkHhsVnRV-GXdvdEbGTdJ7mde9k"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8953006/why-its-time-to-buy-the-pullback-in-broadcom-stock",
-          "title": "Why It’s Time to Buy the Pullback in Broadcom Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwQUQ-tGQE-aEHjDlTZ8TxZKswTiH9wmakHbptJyjOYrqY0GuY1f7CdcCTWKo"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/22/here-s-what-a-usd1-000-investment-in-broadcom-stock-could-be-worth-by-2035/",
-          "title": "Here's What a $1,000 Investment in Broadcom Stock Could Be Worth By 2035",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV6giz4I15irciNj0vUh_B9f_p6wbF4mdGPqMJlcOd0YnW4lnKvmSTxX4EZoM"
-        }
-      ]
-    },
-    {
-      "query": "afc east",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T09:20:00Z",
-      "related_news_urls": [
-        "https://www.buffalobills.com/video/josh-allen-talks-after-afc-east-win-over-the-miami-dolphins",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/joe-brady-we-cant-focus-on-result-theres-a-lot-to-clean-up",
-        "https://www.audacy.com/wgr550/sports/bills/bills-did-not-look-ahead"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLd0bGBFJJFlDBjeHfOO1ouTeEJVSOa0yyuqX2gDi-d76OXgPqWKxxTFCyAwo",
-      "image_credit": "Buffalo Bills",
-      "news": [
-        {
-          "url": "https://www.buffalobills.com/video/josh-allen-talks-after-afc-east-win-over-the-miami-dolphins",
-          "title": "Josh Allen Talks After AFC East Win Over The Miami Dolphins",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLd0bGBFJJFlDBjeHfOO1ouTeEJVSOa0yyuqX2gDi-d76OXgPqWKxxTFCyAwo"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/joe-brady-we-cant-focus-on-result-theres-a-lot-to-clean-up",
-          "title": "Joe Brady: We can’t focus on result, there’s a lot to clean up",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4PuJ8hhQCAbEBatf-JKpihkUHkrD5pBuWIxuwDFlvynYurySd5prSDbTKrTQ"
-        },
-        {
-          "url": "https://www.audacy.com/wgr550/sports/bills/bills-did-not-look-ahead",
-          "title": "Bills didn't look ahead to Kansas City with Sunday's gameplan against Dolphins",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrW-8SmW8Dug7R1SpwEF0QPWIDP9Ic32gMc7yydZeckJ3WgdV9l8M_v1pF43U"
-        }
-      ]
-    },
-    {
-      "query": "molly meldrum",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T09:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
-        "https://www.abc.net.au/news/2026-11-23/molly-meldrum-death-tributes-reactions-/107417564",
-        "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c3qj57rkd2k1o",
-          "title": "Molly Meldrum: Australian music legend dies aged 83",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7gfhiW4dg7Bn_Arqy2F8N251km2z7rkhS0PyfIwWYIEIerAJSopcVIgx9k4"
-        },
-        {
-          "url": "https://www.abc.net.au/news/2026-11-23/molly-meldrum-death-tributes-reactions-/107417564",
-          "title": "Meldrum remembered as 'the fan all artists wish to have'",
-          "publisher": "ABC News & Headlines – Australian Broadcasting Corporation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS04wEIRZxV2-OUfZgpjFrYCaNMI5ma-SIJ5iF_aNWkvkOaEdMTb4yi32S_U9I"
-        },
-        {
-          "url": "https://www.theguardian.com/australia-news/2026/nov/23/victorian-liberal-party-uses-ai-to-write-jess-wilsons-tribute-to-molly-meldrum",
-          "title": "Victorian Liberal party uses AI to write Jess Wilson’s tribute to Molly Meldrum",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS00bBf7i0EApqthkmQJTlIfQzDSIFz9z-OHdJvDhwuY88o_d3tUwqIez7nAo0"
-        }
-      ]
-    },
-    {
-      "query": "claudia sheinbaum",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T08:30:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/educaci%C3%B3n-v%C3%ADa-violencia-sheinbaum-054609483.html",
-        "https://www.imagenzac.com.mx/opinion/nunca-llega-a-zacatecas-con-las-manos-vacias",
-        "https://udgtv.com/noticias/educacion-y-becas-la-via-para-alejar-de-la-delincuencia/338576"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgaUM91JmUkjE_nbRsfgldTh8OA5hIJ63qmrsenxeMtRYv1p9a_6ChIXwu-Ic",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/educaci%C3%B3n-v%C3%ADa-violencia-sheinbaum-054609483.html",
-          "title": "Educación es vía contra violencia: Sheinbaum",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgaUM91JmUkjE_nbRsfgldTh8OA5hIJ63qmrsenxeMtRYv1p9a_6ChIXwu-Ic"
-        },
-        {
-          "url": "https://www.imagenzac.com.mx/opinion/nunca-llega-a-zacatecas-con-las-manos-vacias",
-          "title": "Nunca llega a Zacatecas con las manos vacías",
-          "publisher": "Imagen Zacatecas",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0otbs4K3D23baPkuO_tBZUsEYKkXbJODIEPU7D34ROra8XU4UtG_ZxUhprLE"
-        },
-        {
-          "url": "https://udgtv.com/noticias/educacion-y-becas-la-via-para-alejar-de-la-delincuencia/338576",
-          "title": "Educación y becas, la vía para alejar a jóvenes de la delincuencia: Sheinbaum",
-          "publisher": "UDG TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9Pd5kUmIMbUy6da_3rZltjCKu_tHG1YeVhdpSxOyn78ZI4EJys9AwH5k-ADg"
-        }
-      ]
-    },
-    {
-      "query": "car accident lawyer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T08:20:00Z",
-      "related_news_urls": [
-        "https://unn.ua/en/news/the-lawyer-for-the-family-of-the-girl-who-died-in-a-traffic-accident-involving-an-nabu-detective-is-ready-to-testify-before-the-temporary-investigative-commission-about-pressure-and-the-dragging-out-of-the-investigation",
-        "https://unn.ua/en/news/are-you-concerned-about-the-national-anti-corruption-bureau-how-the-case-involving-a-fatal-dtp-caused-by-an-nabu-detective-has-still-not-reached-court-after-8-years",
-        "https://www.limapagi.id/en/lawyer-challenges-nabu-crash-investigation"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNKnCbzvhFetqXRu2tTedXvXUAqZFb0vJPYRl1YMu7PgFQbLDSMqy-uOtXfPI",
-      "image_credit": "Українські Національні Новини (УНН)",
-      "news": [
-        {
-          "url": "https://unn.ua/en/news/the-lawyer-for-the-family-of-the-girl-who-died-in-a-traffic-accident-involving-an-nabu-detective-is-ready-to-testify-before-the-temporary-investigative-commission-about-pressure-and-the-dragging-out-of-the-investigation",
-          "title": "The lawyer for the family of the girl who died in a traffic accident involving an NABU detective is ready to testify before the Verkhovna Rada’s Temporary Special Commission about ",
-          "publisher": "Українські Національні Новини (УНН)",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNKnCbzvhFetqXRu2tTedXvXUAqZFb0vJPYRl1YMu7PgFQbLDSMqy-uOtXfPI"
-        },
-        {
-          "url": "https://unn.ua/en/news/are-you-concerned-about-the-national-anti-corruption-bureau-how-the-case-involving-a-fatal-dtp-caused-by-an-nabu-detective-has-still-not-reached-court-after-8-years",
-          "title": "\"Are you concerned about the National Anti-Corruption Bureau…\": how the case involving a fatal traffic accident involving an NABU detective has still not reached court after 8 year",
-          "publisher": "Українські Національні Новини (УНН)",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF3kpBDs8JO7PtDGidN0b69Z1MU48uyYIkGjSGWcQ6x5o1yvwTmz5XASmjfDw"
-        },
-        {
-          "url": "https://www.limapagi.id/en/lawyer-challenges-nabu-crash-investigation",
-          "title": "Lawyer Seeks Parliamentary Review of 2018 NABU Crash Case",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO4CHz3K3sK86BGlDdrQZOXu56xdM6elekhGlbGbvSCddhpkNomZsUbwQHhj4"
-        }
-      ]
-    },
-    {
-      "query": "jonathan blow",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T08:20:00Z",
-      "related_news_urls": [
-        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-        "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
-        "https://insider-gaming.com/tenebrae-lux-gta-6/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
-      "image_credit": "Kotaku",
-      "news": [
-        {
-          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
-        },
-        {
-          "url": "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
-          "title": "Polygon identifies GTA 6’s Johannes Zuch as a Jonathan Blow parody",
-          "publisher": "A 90s Kid",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBUHHCNvaWL-_ndBWT6yO25_4IZOibow7kXxYjbXlQyeXQ-CnhTUe1TPWDu0"
-        },
-        {
-          "url": "https://insider-gaming.com/tenebrae-lux-gta-6/",
-          "title": "How to Complete the Tenebrae Lux Minigame Puzzle in GTA 6",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVmj1WaJkgEMoz2q4iX5L3IUlJdHj79xExbqbJFMgdbJivvkuhwCFzRjtHrPs"
         }
       ]
     }
