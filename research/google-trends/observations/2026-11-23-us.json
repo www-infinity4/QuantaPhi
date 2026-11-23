@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T20:01:19.797212Z",
+  "checked_at": "2026-11-23T20:31:16.145609Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "oregon state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/ncb/recap?gameId=401930884",
-        "https://www.oregonlive.com/sports/2026/11/beavers-basketball-make-an-in-state-statement-as-justin-joyner-era-takes-off-bill-oram.html",
-        "https://osubeavers.com/news/2026/11/19/mens-basketball-beavers-drop-ducks-at-moda"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEKef5SB0yYfKU2V8Z2dCtcMhO5iYMrPPA08pi-BUvtDPFmGAqqXt0pYHK13I",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/ncb/recap?gameId=401930884",
-          "title": "Oregon State 82-71 Oregon (Nov 19, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEKef5SB0yYfKU2V8Z2dCtcMhO5iYMrPPA08pi-BUvtDPFmGAqqXt0pYHK13I"
-        },
-        {
-          "url": "https://www.oregonlive.com/sports/2026/11/beavers-basketball-make-an-in-state-statement-as-justin-joyner-era-takes-off-bill-oram.html",
-          "title": "Beavers basketball makes an in-state statement as Justin Joyner era takes off | Bill Oram",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNJIpL7-yQs70cv5krdfUF4sAYHnBOhagsYGkcy9y2tnFVd0AlmZi4YmFdQN8"
-        },
-        {
-          "url": "https://osubeavers.com/news/2026/11/19/mens-basketball-beavers-drop-ducks-at-moda",
-          "title": "Beavers Drop Ducks at Moda",
-          "publisher": "Oregon State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6r9ADQ1cp6CUHkben-asf-XLrlGQatsS9Bpx2rDZdA9mhENaqclWaXAgtZ0M"
-        }
-      ]
-    },
-    {
-      "query": "marco penge",
+      "query": "stephen miller",
       "approx_searches": "2000+",
-      "published_at": "2026-11-23T19:30:00Z",
+      "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
-        "https://www.pgatour.com/tournaments/2026/the-rsm-classic/R2026493/highlights",
-        "https://www.espn.com/golf/story/_/id/50566027/rasmus-hojgaard-michael-thorbjornsen-share-lead-rsm-classic",
-        "https://www.golfdigest.com/story/one-more-round-remains-in-pga-tour-season-with-a-lot-on-the-line-2026"
+        "https://www.theatlantic.com/books/2026/11/stephen-miller-political-evolution-dostoyevsky-sadomasochism/689540/",
+        "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
+        "https://thehill.com/homenews/administration/6237320-katie-zacharia-stephen-miller-trump-administration-salary/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1DN5bLGPJguTTWAO6g96svtZ3TyqKS8MarM5-7_w0lPra8PsbqUBCl1zQ8sE",
-      "image_credit": "PGA Tour",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKSqQ8I3NjxpKBFxHazY61JNjHFx3QWayNL6umk703MbBxhkUzmV7Ql7A1Ow",
+      "image_credit": "The Atlantic",
       "news": [
         {
-          "url": "https://www.pgatour.com/tournaments/2026/the-rsm-classic/R2026493/highlights",
-          "title": "The RSM Classic 2026 Golf Leaderboard - PGA Tour - Highlights",
-          "publisher": "PGA Tour",
+          "url": "https://www.theatlantic.com/books/2026/11/stephen-miller-political-evolution-dostoyevsky-sadomasochism/689540/",
+          "title": "The Political Education of Stephen Miller",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1DN5bLGPJguTTWAO6g96svtZ3TyqKS8MarM5-7_w0lPra8PsbqUBCl1zQ8sE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaKSqQ8I3NjxpKBFxHazY61JNjHFx3QWayNL6umk703MbBxhkUzmV7Ql7A1Ow"
         },
         {
-          "url": "https://www.espn.com/golf/story/_/id/50566027/rasmus-hojgaard-michael-thorbjornsen-share-lead-rsm-classic",
-          "title": "Rasmus Højgaard, Michael Thorbjornsen share lead at RSM Classic",
-          "publisher": "ESPN",
+          "url": "https://www.nytimes.com/2026/11/22/us/politics/stephen-miller-fact-check.html",
+          "title": "Fact-Checking Stephen Miller, the New White House Chief of Staff",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeVjklLrM57v1HPjPTGuE5_EX7gggZ6CHmSLn2bae8JmJx0_-LgG-b3e_G164"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7fKvUuQ0IN-KBbausAfGkH-3VObh9HuqXJm_jqHYk19Byy-vzSKG64Po1ukk"
         },
         {
-          "url": "https://www.golfdigest.com/story/one-more-round-remains-in-pga-tour-season-with-a-lot-on-the-line-2026",
-          "title": "Jackson Koivun, Michael Thorbjornsen eye second titles; others fight for tour survival with 18 holes left in season",
-          "publisher": "Golf Digest",
+          "url": "https://thehill.com/homenews/administration/6237320-katie-zacharia-stephen-miller-trump-administration-salary/",
+          "title": "Zacharia says Miller took ‘significant pay cut’ to return to White House",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7xl2pm_xONJytyTO5PIW0gZKD9we9uS5crin6aH7HGjmLinMktNjs3V-BuI4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgJgUh4dh6CaZnIVosYbA0UPV7HooGBcFSUgWs9vIdloB86D6d-jLDOkwkwhM"
         }
       ]
     },
     {
-      "query": "fire country",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T19:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/why-fire-country-sheriff-country-000030194.html",
-        "https://collider.com/sheriff-country-replacing-fire-country-cbs-2027/",
-        "https://www.imdb.com/news/ni66120678/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPA-zd5coTKLa3TMzDWDz3KmnMUdfKnV6HQ38f0ipSi2BgEAk8EpMmeP5SpE",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/why-fire-country-sheriff-country-000030194.html",
-          "title": "Why Is ‘Fire Country,’ ‘Sheriff Country’ and ‘Boston Blue’ Not Airing New Episodes? Change Explained",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwPA-zd5coTKLa3TMzDWDz3KmnMUdfKnV6HQ38f0ipSi2BgEAk8EpMmeP5SpE"
-        },
-        {
-          "url": "https://collider.com/sheriff-country-replacing-fire-country-cbs-2027/",
-          "title": "CBS Officially Replaces ’Fire Country’s Timeslot With Another Hit Series in 2027",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw-zhoJJMsRwjJSl3B7suC8OmW1Jb8giH5-Nl9I6vFkWTOFqZn8fgiLTGaBG0"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66120678/",
-          "title": "Sheriff Country November 20, 27 & December 4 New Episode 7 Not Airing. It’s Delayed For A While",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT65XEZsGLhriezBpiozS74iNmrMC9XgsusewwXV-JzXbJE_PfmRkfKkif2VJI"
-        }
-      ]
-    },
-    {
-      "query": "terrance ferguson",
+      "query": "jimmy gomez",
       "approx_searches": "500+",
-      "published_at": "2026-11-23T19:30:00Z",
+      "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/rams-te-terrance-ferguson-ankle-193011180.html",
-        "https://www.rotoballer.com/player-news/terrance-ferguson-is-a-speculative-week-11-ir-stash/1995690",
-        "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/20/rams-injury-updates-news-bye-week-sean-mcvay-adams-nacua/92880787007/"
+        "https://www.cnn.com/2026/11/23/politics/house-ethics-committee-reports-jimmy-gomez",
+        "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/",
+        "https://www.news8000.com/news/politics/national-politics/house-ethics-panel-says-it-found-substantial-evidence-that-democratic-rep-jimmy-gomez-engaged-in/article_f72b9b90-dd5a-55bf-bc64-9c23e543c72c.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDKI1rhEvgtD6dr7fMJ9I-SywICi1BGjjt2mTAv6nY96x5ierJ9IjmjFTe9UI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/rams-te-terrance-ferguson-ankle-193011180.html",
-          "title": "Rams TE Terrance Ferguson out for year with ankle injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDKI1rhEvgtD6dr7fMJ9I-SywICi1BGjjt2mTAv6nY96x5ierJ9IjmjFTe9UI"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/terrance-ferguson-is-a-speculative-week-11-ir-stash/1995690",
-          "title": "Terrance Ferguson: Must-Add Waiver Wire Pickup for Week 11 Fantasy Football? - NFL News",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs1kXlQWPWhRojT5YMdhfvg03eJsCxl6XQWPBHFtkCAmKubigJ26_lXaac9mU"
-        },
-        {
-          "url": "https://theramswire.usatoday.com/story/sports/nfl/rams/2026/11/20/rams-injury-updates-news-bye-week-sean-mcvay-adams-nacua/92880787007/",
-          "title": "Rams bye week injury updates: Latest on Adams, Nacua, Ferguson and others",
-          "publisher": "Rams Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShE9yb2O7Q6aWQnvGV__pJH69uni6L3tUnK2K17RH59ctnUgmZ4TN1d0Hhjgo"
-        }
-      ]
-    },
-    {
-      "query": "tulsa vs oregon state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T19:30:00Z",
-      "related_news_urls": [
-        "https://www.bleachernation.com/how-to-watch/2026/11/22/oregon-state-vs-tulsa-start-time-streaming-live-tv-channel-how-to-watch/",
-        "https://bvmsports.com/2026/11/21/beavers-headed-to-palm-springs-for-acrisure-series/",
-        "https://www.accuscore.com/game/cmwsfejy3igcxro01rek73d0i"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7sx64jvMZ_JIi_S0E1AJB0n4kChn31n9XgpTsH1zUT9ua5ha_ND4Orj-WoSc",
-      "image_credit": "Bleacher Nation",
-      "news": [
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/22/oregon-state-vs-tulsa-start-time-streaming-live-tv-channel-how-to-watch/",
-          "title": "Oregon State vs. Tulsa: Start Time, Streaming Live, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7sx64jvMZ_JIi_S0E1AJB0n4kChn31n9XgpTsH1zUT9ua5ha_ND4Orj-WoSc"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/21/beavers-headed-to-palm-springs-for-acrisure-series/",
-          "title": "Beavers Headed to Palm Springs for Acrisure Series",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_sraUF5V_rcYllPLWJzxZ7DVZuEQn4xTZwnRIVDEOTJhrr81cg69xCuLSabU"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmwsfejy3igcxro01rek73d0i",
-          "title": "Tulsa vs Oregon State Prediction (Nov 23): Oregon State 63% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzSf87sCskpCGTPRfaWZ7qeGFjKrOSU78udHDB3bUWUdpiC8PBWAwkEzjgjro"
-        }
-      ]
-    },
-    {
-      "query": "coastal flood watch",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T19:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
-        "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
-        "https://www.sfchronicle.com/weather-forecast/article/rain-tides-flooding-travel-22542082.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjjwiu7Lf-PGqhhh7zqA4iJ0CKOHIuRug8Pd52kQ9M4dcq-sSHQPqaei02ZU",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3epvT5vL-izSnyJfkte-YguT8vyluoc4cSMBRWycHKsKkjMoD9_zGBCnpg0",
       "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/23/weather/san-francisco-tide-storm-flooding-thanksgiving",
-          "title": "San Francisco braces for near-record tides as a storm collides with Thanksgiving travel‌",
+          "url": "https://www.cnn.com/2026/11/23/politics/house-ethics-committee-reports-jimmy-gomez",
+          "title": "House Ethics panel finds Democratic Rep. Jimmy Gomez made unwanted sexual advances toward former staffer",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQjjwiu7Lf-PGqhhh7zqA4iJ0CKOHIuRug8Pd52kQ9M4dcq-sSHQPqaei02ZU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3epvT5vL-izSnyJfkte-YguT8vyluoc4cSMBRWycHKsKkjMoD9_zGBCnpg0"
         },
         {
-          "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
-          "title": "Live storm updates: King tides, rain to bring more flooding to Bay Area Thanksgiving week",
-          "publisher": "ABC7 Bay Area",
+          "url": "https://www.cbsnews.com/news/house-ethics-investigation-jimmy-gomez-sexual-misconduct/",
+          "title": "House Ethics investigation into Rep. Jimmy Gomez finds \"substantial evidence\" of sexual misconduct",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbkwzf4WgFHOSIT4SJ9EIdH8f5a0kGk5s8040bXQF1d414rb9qMS7TK_9eTpU"
         },
         {
-          "url": "https://www.sfchronicle.com/weather-forecast/article/rain-tides-flooding-travel-22542082.php",
-          "title": "Bay Area will flood again — but it won’t look like last week. Here’s a timeline of impacts",
-          "publisher": "San Francisco Chronicle",
+          "url": "https://www.news8000.com/news/politics/national-politics/house-ethics-panel-says-it-found-substantial-evidence-that-democratic-rep-jimmy-gomez-engaged-in/article_f72b9b90-dd5a-55bf-bc64-9c23e543c72c.html",
+          "title": "House Ethics panel says it found 'substantial evidence' that Democratic Rep. Jimmy Gomez engaged in sexual misconduct",
+          "publisher": "news8000.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkk3Uo5LVQcUFT04GONRj8GJ1BprlnnuaUtmA1DRSiUa9g0hmEhPv5z0eYPQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUeEdrUctG-2qu2qJTVc0jRkSD6e7NMVbMVAJemI6lXMiTSW3qLsGdZK6YRcA"
         }
       ]
     },
     {
-      "query": "ole miss basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T19:20:00Z",
+      "query": "nick rallis",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
-        "https://www.tigernet.com/clemson-basketball/news/clemson-ole-miss-in-maui-tv-info-vegas-odds-espn-game-projection-50166",
-        "https://247sports.com/college/ole-miss/article/rebels-opportunity-in-maui-big-for-team-and-program-293180325/",
-        "https://sports.yahoo.com/articles/maui-invitational-ole-miss-faces-155714093.html"
+        "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
+        "https://www.chiefs.com/news/chiefs-defeat-cardinals-34-7-for-third-win-in-a-row",
+        "https://www.nfl.com/videos/can-t-miss-play-mahomes-second-td-connection-with-kelce-is-delivered-amid-swarm-of-cardinals"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52XNx_7CxUnt5c5xyweupaK75AU-rQZH0vRhYGuvrxR32f3nIr479KNuTU7w",
-      "image_credit": "TigerNet",
-      "news": [
-        {
-          "url": "https://www.tigernet.com/clemson-basketball/news/clemson-ole-miss-in-maui-tv-info-vegas-odds-espn-game-projection-50166",
-          "title": "Clemson-Ole Miss in Maui: TV info, Vegas odds & ESPN game projection",
-          "publisher": "TigerNet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ52XNx_7CxUnt5c5xyweupaK75AU-rQZH0vRhYGuvrxR32f3nIr479KNuTU7w"
-        },
-        {
-          "url": "https://247sports.com/college/ole-miss/article/rebels-opportunity-in-maui-big-for-team-and-program-293180325/",
-          "title": "Rebels' opportunity in Maui big for team and program",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiLW1MXmtQ0Oa_g3KaFaTTtkX6AdAcFcAOki6XtGUzA37EHdPTylKOEjLz9ec"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/maui-invitational-ole-miss-faces-155714093.html",
-          "title": "Maui Invitational: Ole Miss faces Clemson to open tournament",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLWzr7RcQANe38RBRbQKJBlz-s1aN0PQb0hcS8P_nF-hfMdwZS9xdSNQBtMmw"
-        }
-      ]
-    },
-    {
-      "query": "brandon aiyuk",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-23T19:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
-        "https://sports.yahoo.com/articles/potential-rams-wr-target-hits-192453782.html",
-        "https://www.nfl.com/news/49ers-releasing-wr-brandon-aiyuk"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs4yLpoZYMdbl8tIjmqdqGYQ4MFkOUF8_Eg9VG4TOxda4idTHZ259g_MWHkZk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97yKUA5EVE71nsvpAennZ_D_bVsHIvQw5KvYDLsY11s7abQZ7X-Da_ZQzDoc",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50575346/sources-49ers-releasing-wr-brandon-aiyuk",
-          "title": "Sources: 49ers releasing WR Brandon Aiyuk, with roster exemption ending",
+          "url": "https://www.espn.com/nfl/story/_/id/50563590/kelce-passes-gronkowski-most-tds-te-including-playoffs",
+          "title": "Travis Kelce pads Hall of Fame résumé with two first-half TDs in Chiefs' win",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs4yLpoZYMdbl8tIjmqdqGYQ4MFkOUF8_Eg9VG4TOxda4idTHZ259g_MWHkZk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR97yKUA5EVE71nsvpAennZ_D_bVsHIvQw5KvYDLsY11s7abQZ7X-Da_ZQzDoc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/potential-rams-wr-target-hits-192453782.html",
-          "title": "Potential Rams WR target hits free agency",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.chiefs.com/news/chiefs-defeat-cardinals-34-7-for-third-win-in-a-row",
+          "title": "Chiefs Defeat Cardinals, 34-7, for Third Win in a Row",
+          "publisher": "Kansas City Chiefs",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHYLaHSIKawUjmfJezrFiZjGOkKJ_KIAGqaZVNicdUSH5KvLAoWrsdcaXHZ0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJCUziQla22qZyLPBC29CfMAMOygBCDJvYPh5WSqnRxBIl9kyy5cehdQydD9U"
         },
         {
-          "url": "https://www.nfl.com/news/49ers-releasing-wr-brandon-aiyuk",
-          "title": "Report: 49ers releasing WR Brandon Aiyuk, ending monthslong saga",
+          "url": "https://www.nfl.com/videos/can-t-miss-play-mahomes-second-td-connection-with-kelce-is-delivered-amid-swarm-of-cardinals",
+          "title": "Can't-Miss Play: Mahomes' second TD connection with Kelce is delivered amid swarm of Cardinals",
           "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvsVwAISB3issDa1tx7kSOkXy6mBghglvwJHTSsAMw-Q7zFY_4woeS0T5MOME"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjHP0qliFmvPCLbBjF4NPp-yIjWsTEUaC5fMxFVTqeGR2d2gAGNTyuWORdWuo"
         }
       ]
     },
     {
-      "query": "brentford vs everton",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T19:10:00Z",
+      "query": "dennard wilson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T20:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c64gnwyv7kvjt",
-        "https://www.theguardian.com/football/live/2026/nov/23/brentford-v-everton-premier-league-live",
-        "https://www.brentfordfc.com/en/news/match-previews-brentford-v-everton-premier-league-23-11-2026"
+        "https://www.espn.com/nfl/story/_/id/50575838/sources-giants-dennard-wilson-interviews-maryland-job",
+        "https://sports.yahoo.com/articles/report-giants-dc-dennard-wilson-193305027.html",
+        "https://www.si.com/nfl/giants/onsi/giants-dennard-wilson-maryland-head-coach-interview-01m84yrhqq04"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDM5iAVCteQTpaQq_7sDwdqRjDxe3MSfZBp9gZtLymBBBFF7tW0JGhBaHZZNA",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv4CBPHyMBr7gI7FIebBwOikgD2lwOCKKoTzIpkoHTDMQ6wd-QlPz6bcPiws4",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c64gnwyv7kvjt",
-          "title": "Premier League LIVE: Brentford vs Everton - build-up, team news, stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.espn.com/nfl/story/_/id/50575838/sources-giants-dennard-wilson-interviews-maryland-job",
+          "title": "Sources: Giants DC Dennard Wilson interviews for HC job at alma mater Maryland",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDM5iAVCteQTpaQq_7sDwdqRjDxe3MSfZBp9gZtLymBBBFF7tW0JGhBaHZZNA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRv4CBPHyMBr7gI7FIebBwOikgD2lwOCKKoTzIpkoHTDMQ6wd-QlPz6bcPiws4"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/23/brentford-v-everton-premier-league-live",
-          "title": "(5) Brentford v Everton: Premier League – live",
-          "publisher": "The Guardian",
+          "url": "https://sports.yahoo.com/articles/report-giants-dc-dennard-wilson-193305027.html",
+          "title": "Report: Giants DC Dennard Wilson had a virtual interview for Maryland head coaching job",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7CXP4g6tU_x2doU1pystu4YWG_gNKGOaphCoAxcsIVY1nbvYWbHun4u0tWgs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUGuf4T_G4HDt_cU3oNue7bDykBW22usoQDRdDwz0g8sgmO-ea1lskK6kZrGw"
         },
         {
-          "url": "https://www.brentfordfc.com/en/news/match-previews-brentford-v-everton-premier-league-23-11-2026",
-          "title": "Brentford v Everton - match preview, kick-off time and more",
-          "publisher": "Brentford FC",
+          "url": "https://www.si.com/nfl/giants/onsi/giants-dennard-wilson-maryland-head-coach-interview-01m84yrhqq04",
+          "title": "Dennard Wilson Reportedly Draws Maryland Interest as Giants' Defense Thrives",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpXrWKU7xpT09HYhmDADPiqm4RD0Bs4w4oxJ4TkKGO92EkWpQNuEwgLfc2ZMU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2HU266-OnT27Mc60UXhOXlzM1dMs6PdErXzLdF51JxEINrkX0I79VuiexM0M"
         }
       ]
     },
     {
-      "query": "levante - elche c. f.",
+      "query": "tom holland new spider-man look",
       "approx_searches": "1000+",
-      "published_at": "2026-11-23T19:10:00Z",
+      "published_at": "2026-11-23T20:00:00Z",
       "related_news_urls": [
-        "https://www.dazn.com/es-ES/news/futbol/levante-vs-elche-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1eqa0ekse5wzf1frm2o0lcmrc6",
-        "https://www.tufutbolero.com/novedades/levante-elche-previa-el-elche-llega-con-dos-bajas-por-lesion-fcf0d2",
-        "https://www.cope.es/emisoras/comunidad-valenciana/valencia-provincia/valencia/deportes-cope-valencia/noticias/castro-rebaja-tension-partido-elche-tampoco-final-20261123_3480161.html"
+        "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
+        "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/",
+        "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-rerelease-theaters-rosario-dawson-1236756620/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI",
-      "image_credit": "DAZN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp3Xtx7KZ82S3IYlod8abLBuHYPHfn99Kd7tuTocDx7bDTugsCxdfiC0xYfs",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.dazn.com/es-ES/news/futbol/levante-vs-elche-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1eqa0ekse5wzf1frm2o0lcmrc6",
-          "title": "Levante vs Elche: horario y dónde ver hoy por TV y online el partido de LaLiga 2026/27 a través de DAZN",
-          "publisher": "DAZN",
+          "url": "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
+          "title": "Rosario Dawson Back as Night Nurse in Spider-Man Brand New Day Re-Release",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp3Xtx7KZ82S3IYlod8abLBuHYPHfn99Kd7tuTocDx7bDTugsCxdfiC0xYfs"
         },
         {
-          "url": "https://www.tufutbolero.com/novedades/levante-elche-previa-el-elche-llega-con-dos-bajas-por-lesion-fcf0d2",
-          "title": "Levante-Elche, previa: el Elche llega con dos bajas por lesión",
-          "publisher": "Tu Futbolero",
+          "url": "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/",
+          "title": "Tom Holland Officially Returns as Spider-Man in Stunning New Look",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrwOQY4nWoBiNhjitWlUT83dfwK2XdqkD0zSCqZrcwjawNdOJp2jr_gEFtPNk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI3rZraz4dFNHMg5mAfNpg4-0MMDFCzhq-J4NT5NO6A7Dhi9QVV8novaix5C0"
         },
         {
-          "url": "https://www.cope.es/emisoras/comunidad-valenciana/valencia-provincia/valencia/deportes-cope-valencia/noticias/castro-rebaja-tension-partido-elche-tampoco-final-20261123_3480161.html",
-          "title": "Castro rebaja la tensión: \"El partido contra el Elche tampoco es una final\"",
-          "publisher": "COPE",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/spider-man-brand-new-day-rerelease-theaters-rosario-dawson-1236756620/",
+          "title": "‘Spider-Man: Brand New Day’ Set for December Rerelease With New Scenes",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWFQ_f9HltatQQN5ohv4J0-9UxGRVn9Qak9SCkXXSdxeZwDkiYSUUhKK32qAY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQoT-aaS90bqwkn4S33OOIdakQC-230BDYIAxCyh9vu9CdWTJTeb6ZpPgFCg0"
+        }
+      ]
+    },
+    {
+      "query": "virginia vs oklahoma",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T20:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/virginia-tech/article/virginia-tech-oklahoma-state-charleston-classic-final-26-293183729/",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920381",
+        "https://okstate.com/news/2026/11/21/cowboy-basketball-cowboys-eye-bounce-back-win-in-charleston-classic-finale"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb6EDccKc3q7KhvfVicmHXLELtPr12zlSsyv_MrQ2vJoyFJNJTi-qrgcKeDwE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-oklahoma-state-charleston-classic-final-26-293183729/",
+          "title": "Cowboys cook the Hokies in Charleston",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb6EDccKc3q7KhvfVicmHXLELtPr12zlSsyv_MrQ2vJoyFJNJTi-qrgcKeDwE"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920381",
+          "title": "Oklahoma State 106-80 Virginia Tech (Nov 22, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzAKCiBWSgqzZB7T4viXvzKzl_K8FeJStzHx4hGOkyZ06k26BQKYX6fKn2Cuo"
+        },
+        {
+          "url": "https://okstate.com/news/2026/11/21/cowboy-basketball-cowboys-eye-bounce-back-win-in-charleston-classic-finale",
+          "title": "Cowboys eye bounce-back win in Charleston Classic finale",
+          "publisher": "Oklahoma State University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8e13pK4KWFwInZlasRSNw0das6jX2WtVxt0hTyUjvC9yuM0PZgiZO55wMZns"
+        }
+      ]
+    },
+    {
+      "query": "brent suter",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T19:50:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/yankees-to-sign-brent-suter.html",
+        "https://www.rotowire.com/baseball/headlines/brent-suter-news-lands-in-the-bronx-1028583",
+        "https://heavy.com/sports/mlb/new-york-yankees/sign-11-year-mlb-veteran-bullpen/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5w2xlPdbr6ReXNfWFfM6KgWzXJuUqKBbu9A_eHjjgNG-XYZsq4yrsUNAzQSc",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/yankees-to-sign-brent-suter.html",
+          "title": "Yankees To Sign Brent Suter",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5w2xlPdbr6ReXNfWFfM6KgWzXJuUqKBbu9A_eHjjgNG-XYZsq4yrsUNAzQSc"
+        },
+        {
+          "url": "https://www.rotowire.com/baseball/headlines/brent-suter-news-lands-in-the-bronx-1028583",
+          "title": "Brent Suter News: Lands in the Bronx",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYNNTbHV_0KCwxgNyJPphcchj8rHKx0vjYMG0wr0koQPLL12g8F2eo4aQAjvQ"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/new-york-yankees/sign-11-year-mlb-veteran-bullpen/",
+          "title": "New York Yankees Sign 11-Year MLB Veteran to Bolster Bullpen",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTg28_2z8anWOph6nukW9hbSJ9ueGdVfyPfaehVKerOz4Zg_MrbzIorSp-Pew"
+        }
+      ]
+    },
+    {
+      "query": "thanksgiving storms travel forecast",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-23T19:50:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
+        "https://www.washingtonpost.com/weather/2026/11/23/ahead-thanksgiving-travel-storm-system-could-drench-east-midwest/",
+        "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/23/holiday/thanksgiving/thanksgiving-travel-weather-forecast-us-storms",
+          "title": "Thanksgiving travel forecast 2026: storms on both coasts",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXHWAxXwaULLmR64WFneRTH4ixSzqc2HTPNy53AvhPFyfd18U9gwYinHoVbLg"
+        },
+        {
+          "url": "https://www.washingtonpost.com/weather/2026/11/23/ahead-thanksgiving-travel-storm-system-could-drench-east-midwest/",
+          "title": "A troubling storm is brewing for the East, Mid-Atlantic and Midwest",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ17x9ufjYvx7C66QMd5ozPG4DctxPKUHvcc73Cl7zB9o-AMjiBY4LkuPun7cc"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/21/nx-s1-6047508/weather-thanksgiving-storm-elnino",
+          "title": "Storms expected on both coasts threaten Thanksgiving travel",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjnWWER3QcnEDznbv1ETo1Z_XFqocfTc2yLHp3x1C_FfxDPBSM5C6aQumYgcE"
+        }
+      ]
+    },
+    {
+      "query": "maui invitational 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T19:50:00Z",
+      "related_news_urls": [
+        "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
+        "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/",
+        "https://www.si.com/college/clemson/basketball/clemson-basketball-s-maui-invitational-schedule-scores-bracket"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk",
+      "image_credit": "BYU Athletics",
+      "news": [
+        {
+          "url": "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
+          "title": "No. 21 BYU faces Washington in Southwest Maui Invitational",
+          "publisher": "BYU Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdbNfpdNGtWTSrNAUR7udTvg7gdwseCClI06WQVyQ3jFqiiR_3xE1ACDVj9xk"
+        },
+        {
+          "url": "https://www.deseret.com/sports/2026/11/22/byu-basketball-kevin-young-previews-maui-invitational-2026/",
+          "title": "BYU coach Kevin Young previews Maui Invitational",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv4MMNIO_V1n_nnuyX8m8BoZf91G_yXu05FTSehh8txomln4uwrQa_kkhqW4"
+        },
+        {
+          "url": "https://www.si.com/college/clemson/basketball/clemson-basketball-s-maui-invitational-schedule-scores-bracket",
+          "title": "Clemson Basketball's Maui Invitational Schedule, Scores, Bracket",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbDauisKgtPgZufVGiBdka3ZxASsqVApiN9xIKQvT66FHmcPfiVBnuQJ48Bro"
+        }
+      ]
+    },
+    {
+      "query": "indiana state vs east carolina",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T19:50:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-east-carolina-pirates-nov-23-2026-game-boxscore-270519",
+        "https://www.accuscore.com/game/cmwsfej3yig25ro01zrhrr0o8",
+        "https://www.bleachernation.com/how-to-watch/2026/11/23/east-carolina-vs-indiana-state-start-time-streaming-live-tv-channel-how-to-watch/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/college-basketball/us-virgin-islands-paradise-jam-indiana-state-sycamores-vs-east-carolina-pirates-nov-23-2026-game-boxscore-270519",
+          "title": "Indiana State vs. East Carolina - Live Score - November 23, 2026",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos"
+        },
+        {
+          "url": "https://www.accuscore.com/game/cmwsfej3yig25ro01zrhrr0o8",
+          "title": "Indiana State vs East Carolina Prediction (Nov 23): East Carolina 54% — Odds & Live Score",
+          "publisher": "AccuScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2WNJe4CWY8a56hHks2yYIM3IYwwe1xUlU5_din-kcdM83btXAwxICCqugsrY"
+        },
+        {
+          "url": "https://www.bleachernation.com/how-to-watch/2026/11/23/east-carolina-vs-indiana-state-start-time-streaming-live-tv-channel-how-to-watch/",
+          "title": "East Carolina vs. Indiana State: Start Time, Streaming Live, TV Channel, How to Watch",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhoxB3czZcqxKpACU-ivRoPpluge7ACWhuV6uZKxHtJx_POaZWG6BtApnHzJA"
         }
       ]
     }
