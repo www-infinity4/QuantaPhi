@@ -1,4 +1,5 @@
 import {cloudStarCoinBackup} from './starcoin-backup.mjs';
+import {globalUserIdentity} from '../unified-wallet/device-number-core.mjs';
 import {digest} from './vault.mjs';
 import {PROVIDERS} from './authorization.mjs';
 import {safeConnectionFailure} from './completion.mjs';
@@ -148,7 +149,7 @@ export async function handleConnections(request,env,resolveService) {
     // Application identity is verified by Unified Wallet. Provider token
     // storage and OAuth configuration are separate from this sign-in.
     if(request.method==='GET'&&url.pathname===PREFIX+'/session')
-      return json(origin,{ok:true,walletVerified:true});
+      return json(origin,{ok:true,walletVerified:true,globalIdentity:await globalUserIdentity(identity.userId)});
     if(url.pathname===PREFIX+'/pair/create'&&request.method==='POST'){
       if(request.headers.get('Authorization')?.startsWith('Bearer bc_'))throw Error('verified_wallet_required');
       const pair=env.CONNECTIONS.get(env.CONNECTIONS.idFromName('connector-pairing-v1'));

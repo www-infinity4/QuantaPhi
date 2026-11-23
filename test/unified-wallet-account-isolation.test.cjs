@@ -3,13 +3,14 @@ const fs=require('node:fs'),vm=require('node:vm'),crypto=require('node:crypto').
 
 async function fixture(){
  const {readBubbleBits}=await import('../workers/unified-wallet/bubble-bit-credit.mjs');
+ const {globalUserIdentity}=await import('../workers/unified-wallet/device-number-core.mjs');
  const accounts=[
   {id:'account-a',username:'alice',star_coins:7,pending_share_credits:0,share_count:0,quant:11,infinity:13,music:17},
   {id:'account-b',username:'bob',star_coins:19,pending_share_credits:0,share_count:0,quant:23,infinity:29,music:31}
  ];
  const hash=async value=>Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value))).toString('hex');
- const tokens=['sq_'+'A'.repeat(43),'sq_'+'B'.repeat(43)];
- const byToken=new Map(await Promise.all(tokens.map(async(token,i)=>[await hash(token),accounts[i]])));
+ const tokens=['sq_'+'A'.repeat(43),'sq_'+'B'.repeat(43),'sq_'+'C'.repeat(43)];
+ const byToken=new Map(await Promise.all(tokens.map(async(token,i)=>[await hash(token),accounts[i===2?0:i]])));
  const reads=[];
  const db={prepare(sql){return{bind(...args){return{
   async first(){
@@ -32,7 +33,7 @@ async function fixture(){
  }}}}};
  const source=fs.readFileSync('workers/unified-wallet/worker.js','utf8').replace(/^import .*\n/gm,'').replace('export default','globalThis.worker =');
  let keyFetches=0;
- const worker=vm.runInNewContext(source+';worker',{readBubbleBits,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
+ const worker=vm.runInNewContext(source+';worker',{readBubbleBits,globalUserIdentity,crypto,TextEncoder,TextDecoder,Request,Response,URL,Uint8Array,btoa,atob,AbortSignal,console,fetch:async()=>{keyFetches++;throw Error('Ordinary wallet routes must not request Access keys');}});
  const env={DB:db,IDENTITY_DB:db};
  const request=(path,token)=>new Request('https://wallet.example.test'+path,{headers:{Origin:'https://quantaphi.org',...(token?{Authorization:'Bearer '+token}:{})}});
  return{accounts,tokens,reads,env,request,worker,keyFetches:()=>keyFetches};
@@ -68,11 +69,27 @@ test('identity verification survives unavailable balance storage without reading
  for(let i=0;i<2;i++){
   const response=await f.worker.fetch(f.request('/v1/wallet/identity?userId=forged',f.tokens[i]),env,{});
   assert.equal(response.status,200);
-  assert.deepEqual(await response.json(),{ok:true,user:{id:f.accounts[i].id,username:f.accounts[i].username}});
+ const value=await response.json();
+ assert.equal(value.user.id,f.accounts[i].id);assert.equal(value.user.username,f.accounts[i].username);
+ assert.match(value.user.globalIdentity.number,/^\d{78}$/);
   assert.equal(response.headers.get('Cache-Control'),'no-store');
  }
  assert.equal(balanceQueries,0);
  assert.ok(f.reads.every(({sql})=>sql.startsWith('SELECT a.id')));
+});
+
+test('a global user ID is shared by enrolled devices and cannot select or unlock an account',async()=>{
+ const f=await fixture(),users=[];
+ for(const token of f.tokens){
+  const response=await f.worker.fetch(f.request('/v1/wallet/identity?userId=account-b&globalId=forged',token),f.env,{});
+  assert.equal(response.status,200);users.push((await response.json()).user);
+ }
+ assert.deepEqual(users[0].globalIdentity,users[2].globalIdentity);
+ assert.notEqual(users[0].globalIdentity.number,users[1].globalIdentity.number);
+ assert.equal(users[0].globalIdentity.isAuthentication,false);
+ const rejected=await f.worker.fetch(f.request('/v1/wallet/identity',users[0].globalIdentity.number),f.env,{});
+ assert.equal(rejected.status,401);
+ assert.ok(f.reads.every(({sql})=>sql.startsWith('SELECT a.id')),'global ID lookup does not read or write balances');
 });
 
 test('identity-only verification rejects missing and revoked credentials and never falls back to another account',async()=>{

@@ -44,6 +44,128 @@ const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.re
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./github-read-transport.mjs",new URL("../workers/infinity-brain-clock/github-read-transport.mjs",import.meta.url).href).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./color-handoff.mjs",colorHandoffUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-candidate-page.mjs',new URL('../workers/infinity-brain-clock/runner-candidate-page.mjs',import.meta.url).href).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
 const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+
+async function withQuotaRunnerIdentity(callback){
+ const priorFetch=globalThis.fetch;
+ const pair=await crypto.subtle.generateKey({name:'RSASSA-PKCS1-v1_5',modulusLength:2048,publicExponent:new Uint8Array([1,0,1]),hash:'SHA-256'},true,['sign','verify']);
+ const jwk={...await crypto.subtle.exportKey('jwk',pair.publicKey),kid:'quota-regression-key'};
+ const encode=value=>Buffer.from(JSON.stringify(value)).toString('base64url');
+ const now=Math.floor(Date.now()/1000);
+ const unsigned=encode({alg:'RS256',kid:jwk.kid})+'.'+encode({iss:'https://token.actions.githubusercontent.com',aud:'infinity-brain-writer',repository:'www-infinity4/Moltnook',repository_id:'1188306316',workflow_ref:'www-infinity4/Moltnook/.github/workflows/moltnook-repository-engine.yml@refs/heads/main',ref:'refs/heads/main',event_name:'schedule',run_id:'42',exp:now+300,nbf:now-1});
+ const signature=Buffer.from(await crypto.subtle.sign('RSASSA-PKCS1-v1_5',pair.privateKey,new TextEncoder().encode(unsigned))).toString('base64url');
+ globalThis.fetch=async url=>{assert.equal(url,'https://token.actions.githubusercontent.com/.well-known/jwks');return Response.json({keys:[jwk]});};
+ const request=(body='{}',token=unsigned+'.'+signature)=>new Request('https://brain.test/runner/plan',{method:'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body});
+ try{return await callback({request});}finally{globalThis.fetch=priorFetch;}
+}
+
+test('signed runner provider quota and unavailable storage are not rejected authentication',async()=>withQuotaRunnerIdentity(async({request})=>{
+ let forwards=0,failure=Error('4006: you have used up your daily free allocation of 10,000 neurons, private-provider-detail');
+ const env={CLOCK:{idFromName:()=>1,get:()=>({fetch:async()=>{forwards++;throw failure;}})}};
+ const quota=await brainWorker.fetch(request(),env);
+ assert.equal(quota.status,429);
+ const body=await quota.json();
+ assert.equal(body.error,'provider_quota_exhausted');
+ assert.equal(body.provider,'cloudflare-workers-ai');
+ assert.equal(body.retryScheduled,true);
+ assert.equal(body.recoveryVerified,false);
+ assert.ok(Number.isSafeInteger(body.retryAt)&&body.retryAt>Date.now());
+ assert.ok(Number(quota.headers.get('Retry-After'))>0);
+ assert.doesNotMatch(JSON.stringify(body),/private-provider-detail|upgrade|paid plan/i);
+ failure=Error('private D1 storage identifier');
+ const unavailable=await brainWorker.fetch(request(),env);
+ assert.equal(unavailable.status,503);
+ assert.deepEqual(await unavailable.json(),{ok:false,error:'runner_operation_unavailable'});
+ const denied=await brainWorker.fetch(request('{}','invalid'),env);
+ assert.equal(denied.status,401);
+ assert.deepEqual(await denied.json(),{ok:false,error:'runner_identity_required'});
+ assert.equal(forwards,2,'unverified identity never reaches the Brain');
+ const badJson=await brainWorker.fetch(request('{'),env);
+ assert.equal(badJson.status,400);
+ assert.equal(forwards,2);
+}));
+
+test('unavailable OIDC signing keys remain a service failure with no downstream call',async()=>withQuotaRunnerIdentity(async({request})=>{
+ globalThis.fetch=async()=>new Response('upstream unavailable',{status:503});
+ const response=await brainWorker.fetch(request(),{CLOCK:{idFromName:()=>assert.fail('no unverified forwarding')}});
+ assert.equal(response.status,503);
+ assert.deepEqual(await response.json(),{ok:false,error:'runner_authentication_unavailable'});
+ globalThis.fetch=async()=>new Response('{',{headers:{'Content-Type':'application/json'}});
+ const malformedKeys=await brainWorker.fetch(request(),{CLOCK:{idFromName:()=>assert.fail('no unverified forwarding')}});
+ assert.equal(malformedKeys.status,503,'malformed upstream key JSON does not invalidate the signed-in identity');
+ assert.deepEqual(await malformedKeys.json(),{ok:false,error:'runner_authentication_unavailable'});
+ const malformedCredential=await brainWorker.fetch(request('{}',Buffer.from('{').toString('base64url')+'.e30.signature'),{});
+ assert.equal(malformedCredential.status,401);
+}));
+
+test('actual provider exhaustion persists only its current fenced job and pauses it until the scheduled retry',async()=>{
+ const job={id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Repair source',acceptance:['Regression passes']};
+ const lease={key:'quota-key',leaseId:'quota-lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:job.id,ticketId:'IW-20261122-F0E68B20',repository:job.repository,revision:'a'.repeat(64),job};
+ const memory=new Map([[lease.key,lease]]);let modelCalls=0,projected;
+ const clock=new BrainClock({storage:testStorage(memory)},{WRITER_AI:{run:async()=>{modelCalls++;throw Error('4006: you have used up your daily free allocation of 10,000 neurons');}}});
+ const send=(path,body={})=>clock.runner(new Request('https://clock.internal/runner/'+path,{method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runnerRepository:'www-infinity4/Moltnook',evidence:{colorFindings:{},runtime:{baseSha:'b'.repeat(40)}},...body})}));
+ await assert.rejects(send('plan'),error=>error.message==='provider_quota_exhausted'&&error.status===429);
+ const marker=memory.get(lease.key).providerQuota;
+ assert.equal(marker.error,'provider_quota_exhausted');
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ assert.equal(marker.retryAt,next.getTime(),'scheduled retry is one minute after the next UTC day, not a recovery promise');
+ assert.equal(marker.recoveryVerified,false);
+ assert.equal(memory.get(lease.key).retryAt,marker.retryAt,'a lost final runner receipt cannot cause early re-inference');
+ await assert.rejects(send('plan'),/provider_quota_exhausted/);
+ assert.equal(modelCalls,1,'no second inference while the durable quota marker is active');
+ clock.projectRunnerResult=async receipt=>{projected=receipt;};
+ clock.payWork=async()=>{};clock.emit=async()=>{};
+ const result=await send('result',{status:'blocked',message:'provider_quota_exhausted'});
+ assert.equal(result.status,200);
+ const saved=memory.get(lease.key);
+ assert.equal(saved.retryAt,marker.retryAt);
+ assert.equal(saved.status,'blocked');assert.equal(saved.leaseUntil,0);
+ assert.equal(saved.jobId,job.id);assert.deepEqual(saved.job,job);
+ assert.equal(projected.retryAt,marker.retryAt);
+ const {eligibleForRetry}=await import('../workers/infinity-brain-clock/alarm-retry.mjs');
+ const retryJob={...job,status:'blocked'};
+ assert.equal(eligibleForRetry(retryJob,{now:marker.retryAt-1,prior:saved}).eligible,false);
+ assert.equal(eligibleForRetry(retryJob,{now:marker.retryAt+1,prior:saved}).eligible,true);
+});
+
+test('caller-supplied quota wording does not create a provider marker or replace ordinary backoff',async()=>{
+ const lease={key:'ordinary-key',leaseId:'ordinary-lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:'TASK-9',ticketId:'TICKET',repository:'www-infinity4/QuantaPhi',revision:'c'.repeat(64),job:{instructions:'Repair source',acceptance:[]}};
+ const memory=new Map([[lease.key,lease]]),clock=new BrainClock({storage:testStorage(memory)},{});
+ clock.projectRunnerResult=async()=>{};clock.payWork=async()=>{};clock.emit=async()=>{};
+ const before=Date.now();
+ const response=await clock.runner(new Request('https://clock.internal/runner/result',{method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runnerRepository:'www-infinity4/Moltnook',status:'blocked',message:'provider_quota_exhausted',retryAt:Date.now()+86400000})}));
+ assert.equal(response.status,200);
+ const saved=memory.get(lease.key);
+ assert.equal(saved.providerQuota,undefined);
+ assert.ok(saved.retryAt>=before+30*60000&&saved.retryAt<=Date.now()+30*60000);
+});
+
+test('quota receipt projects the same job with preserved source progress and no recursive repair',async()=>{
+ const runUrl='https://github.com/www-infinity4/Moltnook/actions/runs/42';
+ const job={id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Repair existing source',acceptance:['Regression passes'],status:'working',progress:{runUrl,baseSha:'a'.repeat(40),runnerSteps:[{phase:'source_read'}],draft:'preserved'}};
+ const revision=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository})))).toString('hex');
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ const providerQuota={error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime(),retryScheduled:true,recoveryVerified:false};
+ const lease={key:'projection-key',leaseId:'projection-lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:job.id,ticketId:'TICKET',repository:job.repository,revision,job,providerQuota};
+ let context=JSON.stringify({color_jobs:[job]});
+ const db={prepare(sql){return {bind(...args){return {
+  first:async()=>{assert.match(sql,/SELECT context_json FROM work_tickets/);return {context_json:context};},
+  run:async()=>{assert.match(sql,/UPDATE work_tickets SET context_json/);assert.equal(args[5],context);context=args[0];return {meta:{changes:1}};}
+ };}};}};
+ const clock=new BrainClock({storage:testStorage(new Map([[lease.key,lease]]))},{WORK_DB:db,WRITER_OWNER_HASH:'fixture-owner'});
+ clock.payWork=async()=>{};clock.emit=async()=>{};
+ const response=await clock.runner(new Request('https://clock.internal/runner/result',{method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runnerRepository:'www-infinity4/Moltnook',status:'blocked',message:'provider_quota_exhausted'})}));
+ assert.equal(response.status,200);
+ const saved=JSON.parse(context);
+ assert.equal(saved.color_jobs.length,1);assert.equal(saved.technical_handoffs,undefined);
+ const projected=saved.color_jobs[0];
+ assert.equal(projected.id,job.id);assert.equal(projected.instructions,job.instructions);
+ assert.equal(projected.progress.blocker,'provider_quota_exhausted');
+ assert.equal(projected.progress.retryAt,providerQuota.retryAt);
+ assert.equal(projected.progress.baseSha,job.progress.baseSha);
+ assert.deepEqual(projected.progress.runnerSteps,job.progress.runnerSteps);
+ assert.equal(projected.progress.draft,'preserved');
+ assert.match(projected.progress.next,/Provider recovery remains unverified/);
+});
 test('quick-card browser HTTP route denies guests and wrong origins before forwarding',async()=>{
  let forwarded=0;
  const owner='quick-card-synthetic-owner',hash=Buffer.from(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(owner))).toString('hex');

@@ -4,6 +4,13 @@
 const REQUIRED=['google','github','cloudflare'];
 const labels={google:'Google',github:'GitHub',cloudflare:'Cloudflare'};
 const goodTime=value=>Number.isFinite(value)&&value>0?value:null;
+export function summarizeGlobalIdentity(session){
+ const id=session?.globalIdentity;
+ if(session?.ok!==true||session?.walletVerified!==true||id?.version!=='nwi-v1'||
+   id.scope!=='quantaphi'||id.isAuthentication!==false||typeof id.number!=='string'||
+   !/^\d{78}$/.test(id.number)||BigInt(id.number)>=(1n<<256n))return null;
+ return {version:id.version,scope:id.scope,number:id.number,isAuthentication:false};
+}
 export function summarizeProviderVerification(catalog,accountResponse,{now=Date.now(),verifiedSession=false}={}){
  const trusted=verifiedSession===true&&Array.isArray(catalog?.providers)&&
    Array.isArray(accountResponse?.accounts);
