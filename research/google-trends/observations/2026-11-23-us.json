@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T09:01:29.828063Z",
+  "checked_at": "2026-11-23T09:32:42.260611Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -13,7 +13,7 @@
       "related_news_urls": [
         "https://www.jornada.com.mx/noticia/2026/11/22/politica/-claudia-sheinbaum-comparte-video-de-una-clase-de-chi-kung-en-china",
         "https://www.vietnam.vn/es/quan-chuc-tham-gia-apec-dao-pho-tham-quyen-trai-nghiem-thai-cuc-quyen",
-        "https://www.elsiglodetorreon.com.mx/noticia/2026/sheinbaum-practica-baduanjin-en-china-en-que-consiste-el-ejercicio-de-los-ocho-brocados.html"
+        "https://notipress.mx/actualidad/claudia-sheinbaum-revela-que-practica-chi-kung-como-le-ayuda-40789"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMvbpasxPCNxDDDPIamq3p86kPvFtH4cZneZeOpWktuc0Zjc1N8zHPcjmXQG8",
       "image_credit": "La Jornada",
@@ -33,11 +33,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAy7jFerm4vlKCfxx8AIg2IGYG6ux132LdKz6k99ln1KzFzHIDm1qurU_KjYY"
         },
         {
-          "url": "https://www.elsiglodetorreon.com.mx/noticia/2026/sheinbaum-practica-baduanjin-en-china-en-que-consiste-el-ejercicio-de-los-ocho-brocados.html",
-          "title": "Sheinbaum practica Baduanjin en China: ¿en qué consiste el ejercicio de los Ocho Brocados?",
-          "publisher": "El Siglo de Torreón",
+          "url": "https://notipress.mx/actualidad/claudia-sheinbaum-revela-que-practica-chi-kung-como-le-ayuda-40789",
+          "title": "Claudia Sheinbaum revela por qué practica Chi Kung y cómo le ayuda",
+          "publisher": "NotiPress",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsyvzppmjSk9wHe9sWkEi-J6Nj1Ty5nni_c69IvyzIuqgi-q9DPil_BoJ4dWo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5lMf_1-e0_hl0wBtcsOYdoPdXJnz7FQCRcacogBT0hRE8ZkUKgwwB-0yr4Pk"
+        }
+      ]
+    },
+    {
+      "query": "jonathan blow",
+      "approx_searches": "100+",
+      "published_at": "2026-11-23T08:20:00Z",
+      "related_news_urls": [
+        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+        "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
+        "https://www.pushsquare.com/guides/gta-6-tenebrae-lux-walkthrough-and-puzzle-solutions"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
+      "image_credit": "Kotaku",
+      "news": [
+        {
+          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
+          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
+        },
+        {
+          "url": "https://www.polygon.com/gta-6-tenebrae-lux-jonathan-blow/",
+          "title": "GTA 6's Tenebrae Lux Minigame Is the Ultimate Jonathan Blow Parody",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmyvsPQQaUcf2wfEtj64NFMERXVy5fsqMrM9rnsc94Kn9BEtDxUxBb8TPQoGM"
+        },
+        {
+          "url": "https://www.pushsquare.com/guides/gta-6-tenebrae-lux-walkthrough-and-puzzle-solutions",
+          "title": "GTA 6: Tenebrae Lux Walkthrough & Puzzle Solutions",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVKcADWaGcBBhbM2lPxFIYHFb5RCy-4dQzR68rZY8FhQSeJ3LOgOiJL0XsrEg"
         }
       ]
     },
@@ -77,48 +112,13 @@
       ]
     },
     {
-      "query": "jonathan blow",
-      "approx_searches": "100+",
-      "published_at": "2026-11-23T08:20:00Z",
-      "related_news_urls": [
-        "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-        "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
-        "https://insider-gaming.com/tenebrae-lux-gta-6/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o",
-      "image_credit": "Kotaku",
-      "news": [
-        {
-          "url": "https://kotaku.com/gta-6s-tenebrae-lux-is-a-hilarious-parody-of-video-game-auteurs-and-a-surprisingly-good-puzzle-diversion-2000758837",
-          "title": "GTA 6′ s Tenebrae Lux Is A Hilarious Parody Of Video Game Auteurs, And A Surprisingly Good Puzzle Diversion",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5MkzgoYdHIREcDMf_CfGouB5MAVrHd_CrxzTVwiSCKVnDmefpjY7VW9ai-8o"
-        },
-        {
-          "url": "https://www.a90skid.com/polygon-identifies-gta-6s-johannes-zuch-as-a-jonathan-blow-parody/",
-          "title": "Polygon identifies GTA 6’s Johannes Zuch as a Jonathan Blow parody",
-          "publisher": "A 90s Kid",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzBUHHCNvaWL-_ndBWT6yO25_4IZOibow7kXxYjbXlQyeXQ-CnhTUe1TPWDu0"
-        },
-        {
-          "url": "https://insider-gaming.com/tenebrae-lux-gta-6/",
-          "title": "How to Complete the Tenebrae Lux Minigame Puzzle in GTA 6",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVmj1WaJkgEMoz2q4iX5L3IUlJdHj79xExbqbJFMgdbJivvkuhwCFzRjtHrPs"
-        }
-      ]
-    },
-    {
       "query": "vicki gta 6 voice actor",
       "approx_searches": "200+",
       "published_at": "2026-11-23T08:20:00Z",
       "related_news_urls": [
         "https://escorenews.com/en/article/82871-can-you-romance-vicki-in-gta-6-how-to-see-her-naked-in-strip-club-and-order-a-private-dance",
-        "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122",
-        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/"
+        "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
+        "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKJ2PAbgJHFRKwjqBnCkbX5HBiOQR1BgEhy-nr7KIir61WD27sKNLVghlfY4",
       "image_credit": "escorenews.com",
@@ -131,18 +131,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMKJ2PAbgJHFRKwjqBnCkbX5HBiOQR1BgEhy-nr7KIir61WD27sKNLVghlfY4"
         },
         {
-          "url": "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122",
-          "title": "Bye Mandy, GTA 6 players have moved onto being infatuated with goth girl Vicki",
-          "publisher": "GAMINGbible",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZT7cDU7pWhBdsnN4M8aHMFvWuxEVEtTpS6JTGONzzJEUwQXjlo3FKm4_jV8"
-        },
-        {
           "url": "https://www.radiotimes.com/technology/gaming/gta-6-vicki-actor-taryn-manning/",
           "title": "Who is Taryn Manning? GTA 6 Vicki actor and singer",
           "publisher": "Radio Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/gta-6-vicki-fans-obsessed-774161-20261122",
+          "title": "Bye Mandy, GTA 6 players have moved onto being infatuated with goth girl Vicki",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZT7cDU7pWhBdsnN4M8aHMFvWuxEVEtTpS6JTGONzzJEUwQXjlo3FKm4_jV8"
         }
       ]
     },
@@ -210,12 +210,12 @@
     },
     {
       "query": "king charles",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-23T07:50:00Z",
       "related_news_urls": [
         "https://www.telegraph.co.uk/royal-family/2026/11/23/sir-idris-elba-my-life-would-be-very-different-not-for-king/",
         "https://www.yahoo.com/entertainment/celebrity/royals/articles/king-charles-makes-rare-personal-080100780.html",
-        "https://www.independent.co.uk/news/uk/home-news/idris-elba-trust-charles-the-king-b3089641.html"
+        "https://deadline.com/2026/11/king-charles-idris-elba-netflix-documentary-the-kings-trust-1237231445/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhIpZE_bxHZFz3SvNFjcC94KxuFfCKSzILduQ7NBL1lhpYaDt06pPOvXloos",
       "image_credit": "The Telegraph",
@@ -235,11 +235,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2opr_aresxPJ4Pfu6_7Ha72wiKT0hnqyB56g6OAMbLCbzfqzB0gOdPgIp4-o"
         },
         {
-          "url": "https://www.independent.co.uk/news/uk/home-news/idris-elba-trust-charles-the-king-b3089641.html",
-          "title": "King tells Idris Elba how proud he is of him in film celebrating King’s Trust",
-          "publisher": "The Independent",
+          "url": "https://deadline.com/2026/11/king-charles-idris-elba-netflix-documentary-the-kings-trust-1237231445/",
+          "title": "King Charles III & Idris Elba Join Forces For Netflix Documentary About The King’s Trust",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJslQEyqzqiJC9d-T7DoRETNIozeT3z2KAhKzok4ueYies44lETZqCKIR752I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVi8tyB1AJGS071C0bzfp_sDHPOrMyluegGRnZ3OySef7NVy5ESwrVc_GgYc4"
         }
       ]
     },
@@ -283,33 +283,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-23T07:40:00Z",
       "related_news_urls": [
-        "https://swimswam.com/running-a-summer-swim-league-nows-the-time-to-make-next-season-easier/",
-        "https://bsinews.id/en/prince-william-swimtopia-transition",
-        "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html"
+        "https://apnews.com/article/strait-of-hormuz-swimmer-lewis-pugh-e772be52a06d75699594a7396ec78f25",
+        "https://www.bbc.com/news/articles/c95y1gr27xplo",
+        "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1qXSOSBHprW6QWiBC4TmV6oQXZshQhL-iy8pf1Jz8DEAlh0Wh_dvB-zkqow",
-      "image_credit": "SwimSwam",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm-1kFqvMwFpEb07d5rYTJpdtnpyYkWPF3ISqfDQ6wSFOSuLgDRRsHrQnZ07E",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://swimswam.com/running-a-summer-swim-league-nows-the-time-to-make-next-season-easier/",
-          "title": "Running a Summer Swim League? Now’s the Time to Make Next Season Easier.",
-          "publisher": "SwimSwam",
+          "url": "https://apnews.com/article/strait-of-hormuz-swimmer-lewis-pugh-e772be52a06d75699594a7396ec78f25",
+          "title": "Endurance athlete swims in Strait of Hormuz to highlight Iran war’s impact on wildlife",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1qXSOSBHprW6QWiBC4TmV6oQXZshQhL-iy8pf1Jz8DEAlh0Wh_dvB-zkqow"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm-1kFqvMwFpEb07d5rYTJpdtnpyYkWPF3ISqfDQ6wSFOSuLgDRRsHrQnZ07E"
         },
         {
-          "url": "https://bsinews.id/en/prince-william-swimtopia-transition",
-          "title": "Prince William Swim League Replaces Legacy Systems With Swimtopia",
-          "publisher": "bsinews.id",
+          "url": "https://www.bbc.com/news/articles/c95y1gr27xplo",
+          "title": "Strait of Hormuz swim highlights environmental cost of war",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfNUOTvcEbS98UDRghvub7jNVkhJ6_XWFIu2ohgPuIEmtZe_6NOy_ioiWtN0U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOwVeR1WObenvFa08pKcLfMwv22ONug-YIdFwLddRtN1iz2xM0Ke1jvNy0Dk"
         },
         {
-          "url": "https://sports.yahoo.com/articles/greenwich-girls-swimming-holds-off-035618020.html",
-          "title": "Greenwich girls swimming holds off Ridgefield for second straight State Open title",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.theguardian.com/world/2026/nov/22/briton-lewis-pugh-swims-strait-of-hormuz-environment-war",
+          "title": "Briton swims length of strait of Hormuz to highlight environmental cost of war",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzUXk_QjgeREmgf0CJ6nfaXk91WCYJYPUtgxPwasEXoJjOFQB6UHb-iqc2o8k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReP9u9W0NdvexHL1EPKuK_WdBJrfltLkBrJsgbXL-FXWOzxblMluh4SzETNJ4"
         }
       ]
     },
