@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T15:01:23.749394Z",
+  "checked_at": "2026-11-23T15:30:59.644161Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "spacex stock",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T14:40:00Z",
+      "query": "apple stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T15:00:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
-        "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-        "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/"
+        "https://finance.yahoo.com/markets/stocks/articles/apple-now-25-berkshire-hathaways-225502762.html",
+        "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
+        "https://www.fool.com.au/2026/11/19/3-berkshire-13f-moves-you-may-have-missed-while-watching-anthropic-and-nvidia/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU-57OkXHqxJAuaviopCvPF4Zl9aRvcKEj0dlzvMkjZmKuV7J9dzbnIRSQfLE",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-tsla-holders-071405988.html",
-          "title": "Cathie Wood Says TSLA Holders ‘Will Get’ A Premium If SpaceX Buys Tesla — HSBC Puts It At Over 30%",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/apple-now-25-berkshire-hathaways-225502762.html",
+          "title": "Apple Is Now 25% of Berkshire Hathaway's Stock Portfolio. Here's What Holding Every Share Tells Investors.",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTg3-PnJxGjtGi8E5gLfrHOXkxTpMW01cqC9Ut2tRoUHPNLxQTEaXB5-1BZnDo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQU-57OkXHqxJAuaviopCvPF4Zl9aRvcKEj0dlzvMkjZmKuV7J9dzbnIRSQfLE"
         },
         {
-          "url": "https://puck.news/wall-street/2026/11/is-spacex-tesla-merger-imminent",
-          "title": "Is SpaceX-Tesla Merger Imminent?",
-          "publisher": "Puck",
+          "url": "https://appleinsider.com/articles/26/11/23/berkshire-hathaway-is-keeping-a-quarter-of-its-investments-tied-up-in-apple",
+          "title": "Berkshire Hathaway is keeping a quarter of its investments tied up in Apple",
+          "publisher": "AppleInsider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTV9cRYnHyQK9fhKeKu3lQMdNgcdZ7nIFEFljsQBp3V9oGgoBQnjAXYvcPphKo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBWrs3xjZ8vyXpKWOMgsj5DH0tgsrACKdtA82ibTj085cD0bVTthr04MqFc90"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/22/should-you-buy-tesla-or-spacex-stock-before-merger/",
-          "title": "Should You Buy Tesla or SpaceX Stock Before Their Potential Merger?",
-          "publisher": "The Motley Fool",
+          "url": "https://www.fool.com.au/2026/11/19/3-berkshire-13f-moves-you-may-have-missed-while-watching-anthropic-and-nvidia/",
+          "title": "3 Berkshire 13F moves you may have missed while watching Anthropic and Nvidia",
+          "publisher": "The Motley Fool Australia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIWCZqqEwfd9ld7NePLhuzT9I3ifd9pPA6LVh9ESnrTG-rXx-9TX4Wt_LeGbc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrw3hkIO1_J1gyPHplzmSLRJKvgNlWYy43mw0ByyvFO0UG6TqkmDI6ILYkWWQ"
         }
       ]
     },
     {
-      "query": "djia",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T14:40:00Z",
+      "query": "ko stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T15:00:00Z",
       "related_news_urls": [
-        "https://www.wsj.com/finance/stocks/pouncing-on-anthropic-wont-make-you-rich-4d500a06",
-        "https://finance.yahoo.com/markets/stocks/articles/anthropic-just-rewrote-wall-streets-122602175.html",
-        "https://www.nytimes.com/2026/11/21/business/anthropics-debut-shows-the-disconnect-between-wall-street-and-silicon-valley.html"
+        "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
+        "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
+        "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHkQ-q3wT-0MqJVnMTT8MvzKBz1u-eKYDspzuXX-qJuSD7U2-rrc5BPzonqa4",
-      "image_credit": "WSJ",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk",
+      "image_credit": "Barron's",
       "news": [
         {
-          "url": "https://www.wsj.com/finance/stocks/pouncing-on-anthropic-wont-make-you-rich-4d500a06",
-          "title": "Pouncing on Anthropic Won’t Make You Rich",
-          "publisher": "WSJ",
+          "url": "https://www.barrons.com/articles/buy-coca-cola-stock-price-pick-e6a89bce",
+          "title": "Coca-Cola Stock Could Lose Its Fizz. Its Valuation Is the Highest in 25 Years.",
+          "publisher": "Barron's",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHkQ-q3wT-0MqJVnMTT8MvzKBz1u-eKYDspzuXX-qJuSD7U2-rrc5BPzonqa4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzplPZPG6m_7-3gSo4Qb_-Yas0sCwUgfSy1B5f1ACPOppmPMZDP62ruAShozk"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-just-rewrote-wall-streets-122602175.html",
-          "title": "Anthropic Just Rewrote Wall Street's IPO Record Books. Here's Where History Says Its Shares Will Head Next.",
+          "url": "https://kalkinemedia.com/us/stocks/bluechip/is-the-coca-cola-nyseko-built-for-a-choppier-market",
+          "title": "Is The Coca-Cola (NYSE:KO) Built For A Choppier Market?",
+          "publisher": "Kalkine Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt1nrOF1ZA3XEBAipGxWUM6oKL1RfOBdpCcFc1okgNOmlTrECufaQDYRCArTQ"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/many-shares-coca-cola-pepsico-165027632.html",
+          "title": "How Many Shares of Coca-Cola or PepsiCo Pay $1,000 a Month in Dividends?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpl3V1CjiDy3TFwo5Wjbx6cGEREuP5swfCbpSA0S5tCOrVhb60KruF4F5R4Xw"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/21/business/anthropics-debut-shows-the-disconnect-between-wall-street-and-silicon-valley.html",
-          "title": "Anthropic’s Debut Shows the Disconnect Between Wall Street and Silicon Valley",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-Q_S5OgUiq3eZxzo_5tlWADPAI0k3OM2yKWc7WPj4fZoqNf2OvH0KwcgLwa0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVcADHjpE9Q7n7mDElNaE6tkh7wWWMaMyZF3evaN0alZ4lBn_ieq4BOhwczxw"
         }
       ]
     },
     {
-      "query": "meta stock",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T14:40:00Z",
+      "query": "vrt stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T15:00:00Z",
       "related_news_urls": [
-        "https://www.barchart.com/story/news/8961884/dont-rush-to-buy-meta-stock-yet-despite-the-crash",
-        "https://www.fool.com/investing/2026/11/21/mark-zuckerberg-s-meta-platforms-is-pouring-up-to-usd145-billion-into-ai-this-year-investors-should-watch-this-1-number/",
-        "https://www.tradingview.com/news/tradingview:326e1b375a4da:0-morgan-stanley-maintains-meta-platforms-at-overweight-lowers-price-target-to-720-from-820/"
+        "https://www.quantisnow.com/insight/vertiv-downgraded-by-robert-w-baird-with-a-new-price-6803146",
+        "https://www.zacks.com/commentary/3032088/top-ranked-ai-stock-to-buy-now-on-the-dip-for-100-upside-vrt",
+        "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUEBbCNy0ZwY_CAUuQnVflsL89IBhzvJkADIAa60nKOgyMXJxwqX-pKre6G84",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGnbjjWYyPbiPBQRUohVOPbzXvXwkZfzyZqW6R91O-JL1DqPGGU9WtGPbIFc",
+      "image_credit": "Quantisnow",
+      "news": [
+        {
+          "url": "https://www.quantisnow.com/insight/vertiv-downgraded-by-robert-w-baird-with-a-new-price-6803146",
+          "title": "Vertiv downgraded by Robert W. Baird with a new price target",
+          "publisher": "Quantisnow",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGnbjjWYyPbiPBQRUohVOPbzXvXwkZfzyZqW6R91O-JL1DqPGGU9WtGPbIFc"
+        },
+        {
+          "url": "https://www.zacks.com/commentary/3032088/top-ranked-ai-stock-to-buy-now-on-the-dip-for-100-upside-vrt",
+          "title": "Top-Ranked AI Stock to Buy Now on the Dip for 100% Upside: VRT",
+          "publisher": "Zacks Investment Research",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4_C6fk8UaZJLNj9qpOnI6p26AYp1Kv9xKksw2j3sr25z3QAYUAbRwzhG-Npc"
+        },
+        {
+          "url": "https://www.tikr.com/blog/evercores-325-target-says-vertivs-selloff-went-too-far",
+          "title": "Evercore’s $325 Target Says Vertiv’s Selloff Went Too Far",
+          "publisher": "TIKR.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiCdOfUbePbrIkWRbB0ejLfy2V7Rq88azjWyuYBH4I-DV4hFkG0zT9gJRmPgc"
+        }
+      ]
+    },
+    {
+      "query": "paul goldschmidt",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-sign-paul-goldschmidt",
+        "https://www.mlbtraderumors.com/2026/11/mets-sign-paul-goldschmidt.html",
+        "https://www.thescore.com/mlb/news/3663873/report-mets-agree-to-deal-with-veteran-goldschmidt"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-sign-paul-goldschmidt",
+          "title": "Report: Mets sign Paul Goldschmidt",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/mets-sign-paul-goldschmidt.html",
+          "title": "Mets To Sign Paul Goldschmidt",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9KiBlvewY40ijq88T7Lr6Bz__7WyvqEc7nwCa9Y9BxbOG4BR7uTREwmXZoA"
+        },
+        {
+          "url": "https://www.thescore.com/mlb/news/3663873/report-mets-agree-to-deal-with-veteran-goldschmidt",
+          "title": "Report: Mets agree to deal with veteran Goldschmidt",
+          "publisher": "theScore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRulTHtPfEQje6m8d7ugoRMoJFQ3L8OhPGO0XOZ30PLMkGDizvVBI9bFGdh8Hk"
+        }
+      ]
+    },
+    {
+      "query": "gold price today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
+        "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
+        "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-traders-pare-bets-002803539.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/india/gold-rises-14-month-low-markets-await-key-us-inflation-data-2026-11-23/",
+          "title": "Gold rises as bargain hunters step in after steep weekly drop",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_jxf4xkcO-T1jIfg19e3MVEkU3dqb-uBJZuWQv9f3lqqMBDTPLjBlfKhvaiQ"
+        },
+        {
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
+          "title": "Gold Rebounds After Sharpest Weekly Decline Since March",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BACqMVovQtbRsVJPRSl4x1l8cmrjABBN9BuB8b9yBpQ278ZKa98HC-p5G4g"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/commodities/articles/gold-rebounds-traders-pare-bets-002803539.html",
+          "title": "Gold Rebounds as Traders Pare Bets on Near-Term Fed Rate Hikes",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKF9beWsnITpaJfco-WKWlbz9opKA9-Zoom1EkYnVMPKyfXQA71doUt5Naqdg"
+        }
+      ]
+    },
+    {
+      "query": "spcx",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.barrons.com/articles/spacex-stock-buy-rating-jefferies-8a82866d",
+        "https://finance.yahoo.com/markets/stocks/articles/why-saturday-historic-starship-catch-185002969.html",
+        "https://seekingalpha.com/article/4970749-spacex-is-far-better-than-i-thought-upgrade"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtTWCoZu51Wj-Noc4L9_PwHB7QIJus91OmJMlmjn5CX39GlwCguMROFzGkFQ",
+      "image_credit": "Barron's",
+      "news": [
+        {
+          "url": "https://www.barrons.com/articles/spacex-stock-buy-rating-jefferies-8a82866d",
+          "title": "Haven In Orbit? SpaceX Stock Is Still a Buy, Wall Street Says.",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLtTWCoZu51Wj-Noc4L9_PwHB7QIJus91OmJMlmjn5CX39GlwCguMROFzGkFQ"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-saturday-historic-starship-catch-185002969.html",
+          "title": "Why Saturday’s Historic Starship Catch Changes the Bull Case for SpaceX Stock",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCnABYVaZZKJhrrxc_etKcjagChhWsBO0d9P7dSp38CQ6h_OvBU-RqMCpyvoE"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4970749-spacex-is-far-better-than-i-thought-upgrade",
+          "title": "SpaceX Is Far Better Than I Thought",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR94y5pNESRdDa4zut7OrMIXK-Kw7PMPA-gNUi2jiKzIhgRqgQ4mcT9Lc3xQuM"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq composite",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/22/stock-market-doing-something-only-5th-time-this-century-history-says-obvious-what-next-for-stocks/",
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-imminent-ai-092602481.html",
+        "https://finance.biggo.com/news/a98a0845-991f-4c73-8c11-ab5b11cb1ec1"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/22/stock-market-doing-something-only-5th-time-this-century-history-says-obvious-what-next-for-stocks/",
+          "title": "The Stock Market Is Doing Something for Only the 5th Time This Century, and History Says It's Obvious What Comes Next for Stocks",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2h0uIOaElU3L7wbwS_Td29xnLq47zbAYJUJ_2WX93QOIDq8OCGrjy3GxWdmM"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-crash-imminent-ai-092602481.html",
+          "title": "Is a Stock Market Crash Imminent for the AI-Driven Trump Bull Market? History Weighs In With an Unpleasant Answer.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu5T3NbTuNztApRYU0INnuDvJJvBV7r7A1MqjaizoEEusTahRhD0zuvwE8fw0"
+        },
+        {
+          "url": "https://finance.biggo.com/news/a98a0845-991f-4c73-8c11-ab5b11cb1ec1",
+          "title": "S&P 500 Valuation Gauge Tops 30 Again, Only the Fifth Time This Century",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ-QIEukYqSgsRarFg2krF53crfuYd4iM22dwdY6zRUTrwHscdIeaYKF9zMRY"
+        }
+      ]
+    },
+    {
+      "query": "who gets social security nov 25",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/2026/11/23/social-security-payment-november-25/92867743007/",
+        "https://www.washingtonexaminer.com/news/4793529/december-supplemental-security-direct-payment-goes-out-nine-days/",
+        "https://www.al.com/news/2026/11/social-securitys-payment-schedule-changing-in-december-some-get-cola-raise-early.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5JYEDkPlcmkrl-1zr6U0wvyj6g2yp1QtbpTwmDlQRBdR0dvfTdXiYrlhonn4",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/2026/11/23/social-security-payment-november-25/92867743007/",
+          "title": "Social Security payments go out Nov. 25. Who gets paid?",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5JYEDkPlcmkrl-1zr6U0wvyj6g2yp1QtbpTwmDlQRBdR0dvfTdXiYrlhonn4"
+        },
+        {
+          "url": "https://www.washingtonexaminer.com/news/4793529/december-supplemental-security-direct-payment-goes-out-nine-days/",
+          "title": "December Social Security direct payment worth up to $994 goes out in nine days",
+          "publisher": "Washington Examiner",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvuOw52KG3tQnE-_SROd2cOMcuYTxTdAUsrJ4HgEO5zKrjAw6f94SZBCsVdxc"
+        },
+        {
+          "url": "https://www.al.com/news/2026/11/social-securitys-payment-schedule-changing-in-december-some-get-cola-raise-early.html",
+          "title": "Social Security’s payment schedule changing in December: Some get COLA raise early",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeT6ibLAxIm0wUvdeiO4AimNQam2LsxM34xv3xcOdrCpLF_qjz5iuoHx5bgDA"
+        }
+      ]
+    },
+    {
+      "query": "walmart stock",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.fool.com/investing/2026/11/23/should-you-buy-walmart-stock-now-or-wait-for-a-dip/",
+        "https://www.wsj.com/finance/stocks/walmarts-winning-combo-thrifty-shoppers-and-wary-ai-investors-183184e3",
+        "https://www.foreignpolicyjournal.com/2026/11/21/walmarts-nyse-wmt-p-e-premium-over-peers-raises-questions-about-what-investors-are-actually-paying-for/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZZY54oPhJuiVqID7Rau5A0IYtSJ7xfBFtMNHDfdX0TrlgtJEKNh5sjfsy0VM",
+      "image_credit": "The Motley Fool",
+      "news": [
+        {
+          "url": "https://www.fool.com/investing/2026/11/23/should-you-buy-walmart-stock-now-or-wait-for-a-dip/",
+          "title": "Should You Buy Walmart Stock Now or Wait for a Dip?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZZY54oPhJuiVqID7Rau5A0IYtSJ7xfBFtMNHDfdX0TrlgtJEKNh5sjfsy0VM"
+        },
+        {
+          "url": "https://www.wsj.com/finance/stocks/walmarts-winning-combo-thrifty-shoppers-and-wary-ai-investors-183184e3",
+          "title": "Walmart’s Winning Combo: Thrifty Shoppers and Wary AI Investors",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREnEGHMlpP0RklvvM9EzfBwILMaW6s9zYznYqzIQ0lEtkadK7STyPdoIKdVmo"
+        },
+        {
+          "url": "https://www.foreignpolicyjournal.com/2026/11/21/walmarts-nyse-wmt-p-e-premium-over-peers-raises-questions-about-what-investors-are-actually-paying-for/",
+          "title": "Walmart's (NYSE: WMT) P/E Premium Over Peers Raises Questions About What Investors Are Actually Paying For",
+          "publisher": "Foreign Policy Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTy-91V8cxNvyFv_rJI4qpoTVnja25aXSHyGmIttV-Py7GCQjuGnlt73owu2qk"
+        }
+      ]
+    },
+    {
+      "query": "asts stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T14:50:00Z",
+      "related_news_urls": [
+        "https://www.barchart.com/story/news/8939525/this-analyst-just-upgraded-ast-spacemobile-stock-here-s-why",
+        "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-behind-fresh-151017644.html",
+        "https://www.foreignpolicyjournal.com/2026/11/22/falling-estimates-and-rising-share-count-cloud-ast-spacemobiles-nasdaq-asts-path-to-b-rileys-48-target/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8",
       "image_credit": "Barchart.com",
       "news": [
         {
-          "url": "https://www.barchart.com/story/news/8961884/dont-rush-to-buy-meta-stock-yet-despite-the-crash",
-          "title": "Don’t Rush to Buy Meta Stock Yet Despite the Crash",
+          "url": "https://www.barchart.com/story/news/8939525/this-analyst-just-upgraded-ast-spacemobile-stock-here-s-why",
+          "title": "This Analyst Just Upgraded AST SpaceMobile Stock. Here's Why.",
           "publisher": "Barchart.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUEBbCNy0ZwY_CAUuQnVflsL89IBhzvJkADIAa60nKOgyMXJxwqX-pKre6G84"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsE3iSkzVunBGHPYUnPkspVZ0waZ8HXD8dML2Rvh4Uf58hAn9daOXPv21bll8"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/21/mark-zuckerberg-s-meta-platforms-is-pouring-up-to-usd145-billion-into-ai-this-year-investors-should-watch-this-1-number/",
-          "title": "Mark Zuckerberg’s Meta Platforms Is Pouring Up to $145 Billion Into AI This Year. Investors Should Watch This 1 Number.",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutKIawz-JO10C0A9_NOgcgfwxfLtFTylWCbPh1Tf04ZG2qGdigCl7rfZPwlQ"
-        },
-        {
-          "url": "https://www.tradingview.com/news/tradingview:326e1b375a4da:0-morgan-stanley-maintains-meta-platforms-at-overweight-lowers-price-target-to-720-from-820/",
-          "title": "Morgan Stanley maintains Meta Platforms at Overweight, lowers price target to $720 from $820",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        }
-      ]
-    },
-    {
-      "query": "googl stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/prediction-where-alphabet-stock-5-081002070.html",
-        "https://www.barrons.com/articles/google-stock-slump-comeback-7f4b0b35",
-        "https://www.cnbc.com/2026/11/19/alphabet-stock-larry-williams-rally-signals.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqLq8gzp8YL5buEi1_DsFwdbvQZNO-ap8wuEwYZDJkTzD9BWAl7o_6s5QOhw",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-where-alphabet-stock-5-081002070.html",
-          "title": "Prediction: Here’s Where Alphabet Stock Will Be in 5 Years",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/ast-spacemobile-asts-behind-fresh-151017644.html",
+          "title": "AST SpaceMobile (ASTS), What Is Behind The Fresh Attention?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuqLq8gzp8YL5buEi1_DsFwdbvQZNO-ap8wuEwYZDJkTzD9BWAl7o_6s5QOhw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKbT8Oe7GC7ffI8IPxmSTM_DZq9EDXu4aLSORVCtzzzdOVG6iG13Pi_6siawQ"
         },
         {
-          "url": "https://www.barrons.com/articles/google-stock-slump-comeback-7f4b0b35",
-          "title": "Alphabet Stock Is Jumping. 2 Reasons the Comeback Starts Now.",
-          "publisher": "Barron's",
+          "url": "https://www.foreignpolicyjournal.com/2026/11/22/falling-estimates-and-rising-share-count-cloud-ast-spacemobiles-nasdaq-asts-path-to-b-rileys-48-target/",
+          "title": "Falling Estimates And Rising Share Count Cloud AST SpaceMobile's (NASDAQ: ASTS) Path To B. Riley's $48 Target",
+          "publisher": "Foreign Policy Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_U98VccqCBJF2Xrsi9-gtEIcw0Kv2bNFEZBIi63ZCTo35KSasyH5-1F-oEco"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/19/alphabet-stock-larry-williams-rally-signals.html",
-          "title": "Cramer: My favorite chartist sees two major signs of a rally brewing in Alphabet stock",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeyrDeqfUYr8yNoGBK8zFyvjoglIKM6zWNJPhMB0Rv--6OixLYYVoZGOAXuuk"
-        }
-      ]
-    },
-    {
-      "query": "vanguard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://www.prnewswire.com/news-releases/vanguard-announces-advisory-changes-to-vanguard-international-explorer-fund-302948266.html",
-        "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN474113:0-vanguard-removes-schroders-as-advisor-to-international-explorer-fund/",
-        "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6BG7gEv-69FYODKp9UQE3931kZt65a7Vqbqmw276dHjWSoldH8T_zeV_x6-A",
-      "image_credit": "PR Newswire",
-      "news": [
-        {
-          "url": "https://www.prnewswire.com/news-releases/vanguard-announces-advisory-changes-to-vanguard-international-explorer-fund-302948266.html",
-          "title": "Vanguard Announces Advisory Changes to Vanguard International Explorer Fund",
-          "publisher": "PR Newswire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6BG7gEv-69FYODKp9UQE3931kZt65a7Vqbqmw276dHjWSoldH8T_zeV_x6-A"
-        },
-        {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_FWN474113:0-vanguard-removes-schroders-as-advisor-to-international-explorer-fund/",
-          "title": "Vanguard Removes Schroders as Advisor to International Explorer Fund",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        },
-        {
-          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
-          "publisher": "NVIDIA Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
-        }
-      ]
-    },
-    {
-      "query": "vix",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://www.tradingview.com/script/cXjhAWhJ-VIX-Zones-v1-2/",
-        "https://www.tradingview.com/script/U6LKzn4R-VIX-Desk-Volatility-Regime-Monitor/",
-        "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ8zCPptcMmt1QLJrL1r-UhP5gADDvngIVEeRHVAtNyml8T8YanG6Heu1FDP8",
-      "image_credit": "TradingView",
-      "news": [
-        {
-          "url": "https://www.tradingview.com/script/cXjhAWhJ-VIX-Zones-v1-2/",
-          "title": "VIX Zones v1.2 — Indicator by Boknaai",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ8zCPptcMmt1QLJrL1r-UhP5gADDvngIVEeRHVAtNyml8T8YanG6Heu1FDP8"
-        },
-        {
-          "url": "https://www.tradingview.com/script/U6LKzn4R-VIX-Desk-Volatility-Regime-Monitor/",
-          "title": "VIX Desk - Volatility Regime Monitor — Indicator by Jron730",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1cjJ8YFE_LMsHVYF-CGCMDe3jy4fgrLbKXH1_tScul8zd2_itliUrz-sPSIw"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84"
-        }
-      ]
-    },
-    {
-      "query": "broadcom stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-stock-could-double-142002691.html",
-        "https://www.barchart.com/story/news/8953006/why-its-time-to-buy-the-pullback-in-broadcom-stock",
-        "https://www.fool.com/investing/2026/11/22/here-s-what-a-usd1-000-investment-in-broadcom-stock-could-be-worth-by-2035/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbqu5EQOmYo87jb5bHzhAspIIdV7KQPspQYbL4ZSA1n9P_Txb0808Dunmp-jE",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-broadcom-stock-could-double-142002691.html",
-          "title": "Why Broadcom Stock Could Double by 2030",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbqu5EQOmYo87jb5bHzhAspIIdV7KQPspQYbL4ZSA1n9P_Txb0808Dunmp-jE"
-        },
-        {
-          "url": "https://www.barchart.com/story/news/8953006/why-its-time-to-buy-the-pullback-in-broadcom-stock",
-          "title": "Why It’s Time to Buy the Pullback in Broadcom Stock",
-          "publisher": "Barchart.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwQUQ-tGQE-aEHjDlTZ8TxZKswTiH9wmakHbptJyjOYrqY0GuY1f7CdcCTWKo"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/22/here-s-what-a-usd1-000-investment-in-broadcom-stock-could-be-worth-by-2035/",
-          "title": "Here's What a $1,000 Investment in Broadcom Stock Could Be Worth By 2035",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRV6giz4I15irciNj0vUh_B9f_p6wbF4mdGPqMJlcOd0YnW4lnKvmSTxX4EZoM"
-        }
-      ]
-    },
-    {
-      "query": "tsla stock",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://seekingalpha.com/article/4971037-tesla-stagnation-priced-for-growth",
-        "https://news.stocktradersdaily.com/canada/tsla-on-the-my-stocks-page_20261120_d3758b",
-        "https://longbridge.com/topics/100000001001687"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVmV5Z5HU-dxMn4W89vYNniX4Ix5YUSMjnUY_d8y7MvHmIr45QZ1lBwtD8T0",
-      "image_credit": "Seeking Alpha",
-      "news": [
-        {
-          "url": "https://seekingalpha.com/article/4971037-tesla-stagnation-priced-for-growth",
-          "title": "Tesla: Stagnation Priced For Growth (NASDAQ:TSLA)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvVmV5Z5HU-dxMn4W89vYNniX4Ix5YUSMjnUY_d8y7MvHmIr45QZ1lBwtD8T0"
-        },
-        {
-          "url": "https://news.stocktradersdaily.com/canada/tsla-on-the-my-stocks-page_20261120_d3758b",
-          "title": "(TSLA) On The My Stocks Page (TSLA:CA)",
-          "publisher": "Stock Traders Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMMqeQwY7niEtN0obi4QSi8xuxqmEbmdcXQ11PD6GgL3iJITRKoSfFMeOoLtM"
-        },
-        {
-          "url": "https://longbridge.com/topics/100000001001687",
-          "title": "$Tesla(TSLA.US)Tesla has faced pressure recently amid the…",
-          "publisher": "Longbridge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiDpAU04mLepj5J-gqvebj6w-YydtfB6q9mV9l1Y5OMo5Sw7bTavD-otGYy00"
-        }
-      ]
-    },
-    {
-      "query": "ionq stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/sell-ionq-stock-now-halved-174752778.html",
-        "https://www.tipranks.com/news/why-are-quantum-computing-stocks-jumping-today-ionq-rigetti-and-d-wave-rally-as-tech-rebounds",
-        "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfmK4thCw50bgs30G2q9pQMKQ3gddyee-XrWJnyKztif6JztbuY-TvGbqJn3c",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/sell-ionq-stock-now-halved-174752778.html",
-          "title": "Should You Sell Your IonQ Stock Now That It Has Halved?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfmK4thCw50bgs30G2q9pQMKQ3gddyee-XrWJnyKztif6JztbuY-TvGbqJn3c"
-        },
-        {
-          "url": "https://www.tipranks.com/news/why-are-quantum-computing-stocks-jumping-today-ionq-rigetti-and-d-wave-rally-as-tech-rebounds",
-          "title": "Why Are Quantum Computing Stocks Jumping Today? IonQ, Rigetti, and D-Wave Rally as Tech Rebounds",
-          "publisher": "TipRanks",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Hy3J5ZvulV0vjHy9Fjbk1RvHMXR_cplJHDEVDG5WIsAyFnWaY0dT8RglRcA"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4968458-ionq-im-losing-confidence-in-the-story-downgrade",
-          "title": "IonQ: I'm Losing Confidence In The Story (Rating Downgrade)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiVVDG3e3r-yW2lAidNmfsYttH6dlmQ5xKg5rfRootEME7ECT1uPGtgc30X7w"
-        }
-      ]
-    },
-    {
-      "query": "gme",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T14:40:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/gme-stock-heads-green-month-051744741.html",
-        "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f",
-        "https://www.tradingview.com/news/benzinga:1edc38cfb094b:0-ryan-cohen-wants-someone-who-can-move-fast-and-own-results-at-gamestop-as-ceo-looks-to-build-his-next-big-move-here-s-how-you-can-apply/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwPvIUhy89ns3CVJG10Bnixy9hqy0yOPqsrsACRare64npn-s7wp7QNTJQ5EE",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/gme-stock-heads-green-month-051744741.html",
-          "title": "GME Stock Heads For A Green Month: Wall Street Reportedly Sees A New Growth Story Beyond The Meme-Stock Hype",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwPvIUhy89ns3CVJG10Bnixy9hqy0yOPqsrsACRare64npn-s7wp7QNTJQ5EE"
-        },
-        {
-          "url": "https://www.barrons.com/articles/gamestop-stock-roaring-kitty-6277bb9f",
-          "title": "Roaring Kitty Is Back. Can He Spark Another GameStop Stock Frenzy?",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogp2AH1WoBLs4q0p4TM4PQaM0u_tOdhoXcYvdXLpjGd9XE7dhG9xoxK_YyEQ"
-        },
-        {
-          "url": "https://www.tradingview.com/news/benzinga:1edc38cfb094b:0-ryan-cohen-wants-someone-who-can-move-fast-and-own-results-at-gamestop-as-ceo-looks-to-build-his-next-big-move-here-s-how-you-can-apply/",
-          "title": "Ryan Cohen Wants Someone Who Can ‘Move Fast’ and ‘Own Results’ at GameStop as CEO Looks to Build His Next Big Move: Here’s How You Can Apply",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeHa51uCCi-otfLBu_mQUM1CKPGvdBuvykafPYU9BQZ4vaQPhVsrqR71GzC7s"
         }
       ]
     }
