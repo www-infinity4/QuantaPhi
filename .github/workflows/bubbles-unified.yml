@@ -4,6 +4,8 @@ on:
     paths:
       - 'bubbles-ai.js'
       - 'bubbles-byte-assist.mjs'
+      - 'bubbles-color-cavity.mjs'
+      - 'test/bubbles-color-cavity.test.mjs'
       - 'wallet-color-passage-lab.html'
       - 'wallet-color-passage-lab.mjs'
       - 'test/wallet-color-passage-lab.test.mjs'
@@ -128,8 +130,9 @@ jobs:
           node-version: '22'
       - run: node --check bubbles-ai.js
       - run: node --check bubbles-byte-assist.mjs
+      - run: node --check bubbles-color-cavity.mjs
       - run: node --check wallet-color-passage-lab.mjs
-      - run: node --test test/bubbles-byte-orb.test.mjs test/bubbles-byte-orb-ui.test.mjs test/wallet-color-passage-lab.test.mjs
+      - run: node --test test/bubbles-byte-orb.test.mjs test/bubbles-byte-orb-ui.test.mjs test/wallet-color-passage-lab.test.mjs test/bubbles-color-cavity.test.mjs
       - run: node --check bubbles-dispatch-catalog.mjs
       - run: node --test test/bubbles-dispatch-catalog.test.mjs test/bubbles-work-evidence.test.mjs test/bubbles-image-conversation.test.mjs
       - run: node --check workers/unified-wallet/device-number-core.mjs
