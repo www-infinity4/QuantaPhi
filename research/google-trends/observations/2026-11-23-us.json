@@ -3,16 +3,261 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T06:01:30.469142Z",
+  "checked_at": "2026-11-23T06:47:52.738229Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "spacex",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T06:20:00Z",
+      "related_news_urls": [
+        "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+        "https://www.yahoo.com/news/politics/articles/not-ask-kill-decisions-elon-190006676.html",
+        "https://breakingdefense.com/2026/11/senate-gearing-up-to-investigate-ukraines-access-to-starshield/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1V4V084uT17jEi2MWbm_rFrE9tWYFDTZQv4SP_IyXgTNG3iZ3m5ffDu1DuY",
+      "image_credit": "Ars Technica",
+      "news": [
+        {
+          "url": "https://arstechnica.com/space/2026/11/incoming-house-chair-threatens-spacex-funding-over-ukraine-controversy/",
+          "title": "SpaceX’s Starshield troubles in Ukraine could threaten its broader military business",
+          "publisher": "Ars Technica",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1V4V084uT17jEi2MWbm_rFrE9tWYFDTZQv4SP_IyXgTNG3iZ3m5ffDu1DuY"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/not-ask-kill-decisions-elon-190006676.html",
+          "title": "‘Do Not Ask Me to Make Kill Decisions’: Elon Musk Defends Starlink Restrictions on Ukraine",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQewqWUhCjhxf8mRPxf4dtOzeKFvIrexz3DCUyUPrafEGTcyyGO2v_bofQFoE"
+        },
+        {
+          "url": "https://breakingdefense.com/2026/11/senate-gearing-up-to-investigate-ukraines-access-to-starshield/",
+          "title": "Senate gearing up to investigate Ukraine’s access to Starshield",
+          "publisher": "Breaking Defense",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrVFOh2aU-xWdeyhRXl6fBTF8vjB0kM0R4XjTe3IDqtaPmkjNp8-FkUMsgiHI"
+        }
+      ]
+    },
+    {
+      "query": "ben wang",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T06:10:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+        "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut",
+        "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdiQNZYKYGpUTyxNndg5sFOSc6fi0MIJBM-7vk0bxYwLNKu3S4RT52vT80w28",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+          "title": "Box Office: 'Hunger Games: Sunrise on Reaping' Opening to $120M, 4th Best Series",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdiQNZYKYGpUTyxNndg5sFOSc6fi0MIJBM-7vk0bxYwLNKu3S4RT52vT80w28"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut",
+          "title": "‘Hunger Games’ Prequel Snags $120 Million in Domestic Debut",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY9ZxJYPk0WO2XC4Gjbed5BVsXBbVn7VqJXUlQb4PzUg2gzL4raAHaqZkQquc"
+        },
+        {
+          "url": "https://www.npr.org/2026/11/20/nx-s1-6046181/hunger-games-sunrise-on-the-reaping-review",
+          "title": "'Sunrise on the Reaping' feels like sunset for the 'Hunger Games' franchise",
+          "publisher": "NPR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMSv1HxkFwHITnu11W46cMp-cT8dTvxku1B8N66NLsCIGvaD4OwkbM-M09V9k"
+        }
+      ]
+    },
+    {
+      "query": "ign gta 6 map",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T06:00:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
+        "https://digg.com/entertainment/wklp6lzk",
+        "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/gta-6-dev-honors-late-mother-with-in-game-memorial-that-players-can-visit",
+          "title": "GTA 6 Dev Honors Late Mother With In-Game Memorial That Players Can Visit",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13SURBfCD2FbyKteyNFFYJAOf4BgU9Ndb6Obzkl-klHrBwXcxjPUd0MLRNkU"
+        },
+        {
+          "url": "https://digg.com/entertainment/wklp6lzk",
+          "title": "GTA 6 developer reportedly honors his late mother with a hidden memorial",
+          "publisher": "Digg",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDJYKZEecJES1htnbA1hEJ2ZKFuBCUrEG4zR-0cQhDRhh5YAQ_sDRaUasGoY"
+        },
+        {
+          "url": "https://www.aol.com/articles/gta-6-hidden-memorial-rockstar-013126000.html",
+          "title": "GTA 6 hidden memorial: Rockstar developer honors late mother who bought him Vice City",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTr-tkUAFtMDfBP0ALLOdR8ZCCz1bzquZ-zJr1yHska1gmGOVzVWEXnXIReBg"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 chapter 2 mission list",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T06:00:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/us-en/gta-6-complete-mission-list",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/",
+        "https://space4games.com/en/games-en/gta-6-trophy-guide/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/us-en/gta-6-complete-mission-list",
+          "title": "GTA 6: A guide to every mission and chapter",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnH5c6NWMBq0zSLZLLTOmkTFfL-g9qrRnuJJ20Iz9GoivuFKHVlRGzP5cBeac"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-mission-list/",
+          "title": "Here's every GTA 6 mission and chapter",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSHNhYkSSyX26GVseDckS4mWftuzCHE-gYWfsG-cEQc24whyj1k9B6A88y4dw"
+        },
+        {
+          "url": "https://space4games.com/en/games-en/gta-6-trophy-guide/",
+          "title": "GTA 6: All 55 Trophies and How to Unlock Them",
+          "publisher": "space4games",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY61z6-KcLji_L5ZYCSohd7AAxSya-Wpueh-D9BLgjxXQcJQ63JO51oMhmeX0"
+        }
+      ]
+    },
+    {
+      "query": "charlotte fc vs chicago fire fc standings",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-23T05:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/report/_/gameId/401933730",
+        "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
+        "https://www.oregonlive.com/tv/2026/11/how-to-watch-the-chicago-fire-vs-charlotte-fc-mls-playoff-match-for-free-tonight-game-1-live-stream.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhoEgBTAdDaLlx6IzVDJnqNLSK88q_UJcjnnHwStCw1ejTgnJIBtO2XSlX2IQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/report/_/gameId/401933730",
+          "title": "Chicago 1-2 Charlotte (Nov 22, 2026) Game Analysis",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhoEgBTAdDaLlx6IzVDJnqNLSK88q_UJcjnnHwStCw1ejTgnJIBtO2XSlX2IQ"
+        },
+        {
+          "url": "https://www.chicagofirefc.com/news/matchday-chicago-fire-fc-opens-2026-mls-cup-playoffs-against-charlotte-fc",
+          "title": "Matchday | Chicago Fire FC Opens 2026 MLS Cup Playoffs Against Charlotte FC",
+          "publisher": "Chicago Fire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-4flr6rdXFMosRJ7FG5sGbhblx4_lu2m_8apgl6o-SBx0PfvSBqR1a7UMsQ0"
+        },
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/how-to-watch-the-chicago-fire-vs-charlotte-fc-mls-playoff-match-for-free-tonight-game-1-live-stream.html",
+          "title": "How to watch the Chicago Fire vs. Charlotte FC MLS Playoff match for free tonight: Game 1 live stream",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2YWjHK9MByhkYVbZveuEIf2IeYOePp60D_53GHxuEj7F3qCbGFrsxaS1eSHY"
+        }
+      ]
+    },
+    {
+      "query": "cyberleek",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T05:50:00Z",
+      "related_news_urls": [
+        "https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs",
+        "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
+        "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxy4VS-DHLgwspxrWYEEdFimRzBt-_nu871flTk1joAU-S8TLJgLAd7AmI10Y",
+      "image_credit": "HotHardware",
+      "news": [
+        {
+          "url": "https://hothardware.com/news/can-my-pc-run-gta-6-min-rec-specs",
+          "title": "Can My PC Run GTA 6? Minimum And Recommended Specs To Expect",
+          "publisher": "HotHardware",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxy4VS-DHLgwspxrWYEEdFimRzBt-_nu871flTk1joAU-S8TLJgLAd7AmI10Y"
+        },
+        {
+          "url": "https://mashable.com/tech/hacker-cyberleek-releases-an-xbox-build-gta-6",
+          "title": "The anonymous hacker Cyberleek releases an Xbox build of 'GTA VI'",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-svtkRS8YlnQ5rcYqmUH7sZ-mNM5N14hkhAJohZzN3KLnirybnE9Z2DTUON4"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/razrabotchiki-predstavili-instrument-leonida-dlya-nativnogo-zapuska-grand-theft-auto-vi-na-pk",
+          "title": "Developers have released the Leonida tool for natively running Grand Theft Auto VI on PC.",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzB5jyM-W38qq5JoQTPtBljzDrw3TGHQ7wm3gAqnYCo461x1NexLj3t-Sn9Uc"
+        }
+      ]
+    },
+    {
+      "query": "criminal profile gta 6",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T05:50:00Z",
+      "related_news_urls": [
+        "https://www.clarin.com/us-news/how-the-criminal-profile-works-in-gta-6-karma-and-honor-system-explained_0_LQkpy3b2Nm.html",
+        "https://www.techpowerup.com/354843/rockstar-says-gta-6-encourages-empathy-a-first-for-the-series",
+        "https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiGujSYSmqsan7CrvyhVu84CefoXlK9qNwQAZvKUcsyLO-KHJWoFf2Y_qUHI",
+      "image_credit": "Clarin.com",
+      "news": [
+        {
+          "url": "https://www.clarin.com/us-news/how-the-criminal-profile-works-in-gta-6-karma-and-honor-system-explained_0_LQkpy3b2Nm.html",
+          "title": "How the Criminal Profile works in GTA 6: Karma and honor system explained",
+          "publisher": "Clarin.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiGujSYSmqsan7CrvyhVu84CefoXlK9qNwQAZvKUcsyLO-KHJWoFf2Y_qUHI"
+        },
+        {
+          "url": "https://www.techpowerup.com/354843/rockstar-says-gta-6-encourages-empathy-a-first-for-the-series",
+          "title": "Rockstar Says GTA 6 Encourages Empathy, a First for the Series",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR2KcSbhTMtHTIZRJN32pcmCiKycJ1gvcyHx90KxchF467Raxf9BkMKOKZZHg"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs",
+          "title": "GTA 6's Jason and Lucia Will Start as Small-Time Criminals Who Have to Work Up to High-Value Jobs",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS7jY1GCvb0dzGwtIGhiJngFeAc2e_y-g0xwUTRQhqcz0ztDhO2CSE9nGFf8"
+        }
+      ]
+    },
     {
       "query": "dow jones stock markets",
       "approx_searches": "5000+",
       "published_at": "2026-11-23T05:40:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html",
-        "https://www.businessinsider.com/us-stock-futures-kospi-tsmc-nvidia-ai-selloff-2026-11-2026-11",
+        "https://www.bloomberg.com/news/videos/2026-11-23/the-china-show-11-23-2026-video",
         "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ",
@@ -26,15 +271,15 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw20LKVIOlFmAAiyy5N0XPDmYi18XGFlyYEJfnctlXF9PAkpI-wEn9GgYygXQ"
         },
         {
-          "url": "https://www.businessinsider.com/us-stock-futures-kospi-tsmc-nvidia-ai-selloff-2026-11-2026-11",
-          "title": "US stock futures rebound as Asian stocks tumble. Wall Street sees more trouble ahead for the AI trade.",
-          "publisher": "Business Insider",
+          "url": "https://www.bloomberg.com/news/videos/2026-11-23/the-china-show-11-23-2026-video",
+          "title": "Watch Asian Stocks Drop AI Fears Outweigh Support Measures",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkufUncya7lrO0J9dqI5mEt8-4dBrJ6BjyfJf25ugCBR0tY0i3n9qVUozI9Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsx6UPk4pKSoCIZgE_A280tx_XWeS1T1Kz_X2I7a5nzMrtGeZ13CMbDDyIB6Y"
         },
         {
           "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-11-22/",
-          "title": "US futures bounce as Asia scrambles to shore up stocks after AI-driven rout",
+          "title": "US futures bounce as Asia scrambles to slow AI stocks rout",
           "publisher": "Reuters",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVhLJKWShT1dYqJWWVKnuX3QYdK9ohBeuly8JuRCziONja505_DNNNz2rgRfU"
@@ -42,149 +287,9 @@
       ]
     },
     {
-      "query": "king tides flooding",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T05:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
-        "https://www.cnn.com/2026/11/22/weather/san-francisco-king-tides-warning",
-        "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
-          "title": "California coast faces extreme flood threat on holiday; water could inundate Bay Area airports",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/22/weather/san-francisco-king-tides-warning",
-          "title": "San Francisco braces for massive tides. Mayor urges residents to reconsider travel",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpzOTUGbNmCm8TaTB2i4eb4HicFFFcUumuO2emqQkP51jG2FMspDSRmJvDXqw"
-        },
-        {
-          "url": "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537",
-          "title": "California prepares for flooding, rain and wind as Thanksgiving approaches",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVrfdNBBD3OYaBDkr6XyI3nIwIYt2pW8E1Rci5pDDBWTzW24PzXTeAkcneW0Y"
-        }
-      ]
-    },
-    {
-      "query": "mattia gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T05:30:00Z",
-      "related_news_urls": [
-        "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mattia/",
-        "https://peradaban.id/en/gta-6-day-release-yacht-guide",
-        "https://www.eurogamer.net/gta-6-day-release-walkthrough"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJqT9W1kZ4KIYSuVgJFgcbJK3nReFq1KK6cjtF6yF0k3jmWNFkZzoApJ_nl5M",
-      "image_credit": "GamesRadar+",
-      "news": [
-        {
-          "url": "https://www.gamesradar.com/games/grand-theft-auto/gta-6-mattia/",
-          "title": "Should you shake Mattia's hand in GTA 6?",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJqT9W1kZ4KIYSuVgJFgcbJK3nReFq1KK6cjtF6yF0k3jmWNFkZzoApJ_nl5M"
-        },
-        {
-          "url": "https://peradaban.id/en/gta-6-day-release-yacht-guide",
-          "title": "GTA 6 Day Release Guide Covers Yacht and Mission Choices",
-          "publisher": "Peradaban.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_zvUmltaihEoDGffUxYCOYFEAQv6dWHRYpMf-vSRkMbrpJFcmJ-5aYhBkZ1E"
-        },
-        {
-          "url": "https://www.eurogamer.net/gta-6-day-release-walkthrough",
-          "title": "GTA 6 Day Release walkthrough",
-          "publisher": "Eurogamer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHMIDvAm0OmmvhENe5gdPYMI3XWhzzMH8RbgvWut29dNEz9DhI4TsddeYSY00"
-        }
-      ]
-    },
-    {
-      "query": "earthquake manhattan beach",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T05:20:00Z",
-      "related_news_urls": [
-        "https://abc7.com/post/preliminary-3-3-magnitude-quake-strikes-off-manhattan-beach-coast/20068667/",
-        "https://www.cbsnews.com/losangeles/news/manhattan-beach-earthquake-3-3-magnitude/",
-        "https://www.foxla.com/news/preliminary-3-3-magnitude-earthquake-reported-los-angeles"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKUz-2EIp-Do8Bemct7CQWmu7lL_R6dETuQjy4Yn0haJSj30gE5pEn3tDgK1Q",
-      "image_credit": "ABC7 Los Angeles",
-      "news": [
-        {
-          "url": "https://abc7.com/post/preliminary-3-3-magnitude-quake-strikes-off-manhattan-beach-coast/20068667/",
-          "title": "Preliminary 3.3-magnitude quake strikes off Manhattan Beach coast",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKUz-2EIp-Do8Bemct7CQWmu7lL_R6dETuQjy4Yn0haJSj30gE5pEn3tDgK1Q"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/news/manhattan-beach-earthquake-3-3-magnitude/",
-          "title": "3.3-magnitude earthquake strikes off Manhattan Beach coast, USGS reports",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSReGnlAkDHOrs9HecPTHjMqZLBPuCe7pBtU-M-Tt9wQzpeT8r0t_X2NpjqeZ0"
-        },
-        {
-          "url": "https://www.foxla.com/news/preliminary-3-3-magnitude-earthquake-reported-los-angeles",
-          "title": "Preliminary 3.3-magnitude earthquake reported in Los Angeles",
-          "publisher": "FOX 11 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3aBqO1bhofz6-pX0u1FEmmMIWh7Gv9f5IqWtEKwkD_XvtEQPaFef6p1L0vfY"
-        }
-      ]
-    },
-    {
-      "query": "earthquake now",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-23T05:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
-        "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
-        "https://www.montereycountynow.com/blogs/news_blog/a-5-0-magnitude-earthquake-near-pinnacles-national-park-shakes-south-county/article_be080b2b-3182-435b-918b-fd42e2d50d5b.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwvmh8ZWpAbamn5rgdD_CXRULr0s_FVnC7iZTvAiCnWZcpLq0YMuOiKDT6Ris",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/20/us/earthquakes-california-los-angeles-pinnacles.html",
-          "title": "2 Earthquakes Rattle California",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwvmh8ZWpAbamn5rgdD_CXRULr0s_FVnC7iZTvAiCnWZcpLq0YMuOiKDT6Ris"
-        },
-        {
-          "url": "https://www.mercurynews.com/2026/11/19/magnitude-5-0-quake-rattles-central-coast/",
-          "title": "Magnitude 5.0 quake rattles Central Coast",
-          "publisher": "The Mercury News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4GU9Dxm3Ywq79QsijznO96Eiw8pKeN57T3XQ0guYwVxbQYtU0JVhhdPwv768"
-        },
-        {
-          "url": "https://www.montereycountynow.com/blogs/news_blog/a-5-0-magnitude-earthquake-near-pinnacles-national-park-shakes-south-county/article_be080b2b-3182-435b-918b-fd42e2d50d5b.html",
-          "title": "A 5.0-magnitude earthquake near Pinnacles National Park shakes South County.",
-          "publisher": "Monterey County Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG87Cb_qS79-wKvgwfh4ts8IEssmAyvtOFq-2UyDsFup4rJ-OFw79JVluAN2I"
-        }
-      ]
-    },
-    {
-      "query": "los angeles earthquake",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T05:10:00Z",
+      "query": "weather los angeles",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T05:40:00Z",
       "related_news_urls": [
         "https://www.latimes.com/california/story/2026-11-21/another-quake-rattles-southern-california-this-time-off-coast-of-san-pedro",
         "https://abcnews.com/US/magnitude-44-earthquake-hits-downtown-los-angeles/story?id=138315998",
@@ -217,142 +322,37 @@
       ]
     },
     {
-      "query": "president snow",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T05:10:00Z",
+      "query": "king tides flooding",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-23T05:30:00Z",
       "related_news_urls": [
-        "https://people.com/glenn-close-and-ralph-fiennes-agree-their-hunger-games-characters-had-a-thing-exclusive-12261207",
-        "https://parade.com/movies/glenn-close-teases-that-her-sunrise-on-the-reaping-villain-had-a-thing-with-ralph-fiennes-president-snow",
-        "https://creepycatalog.com/glenn-close-and-ralph-fiennes-decided-their-hunger-games-villains-once-had-a-thing/"
+        "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
+        "https://www.kcra.com/article/suisun-city-flood-preparedness-king-tides-november-weather/74503481",
+        "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4MaSEwr4pJs3f4endjTweTHjgPxWGOtMFD8b158TGfFKMoDZfDwdPlVuYCbI",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://people.com/glenn-close-and-ralph-fiennes-agree-their-hunger-games-characters-had-a-thing-exclusive-12261207",
-          "title": "Glenn Close and Ralph Fiennes Agree Their ‘Hunger Games’ Characters Had ‘a Thing’ (Exclusive)",
-          "publisher": "People.com",
+          "url": "https://www.yahoo.com/news/weather-news/articles/bay-area-airports-coast-under-171057449.html",
+          "title": "California coast faces extreme flood threat on holiday; water could inundate Bay Area airports",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4MaSEwr4pJs3f4endjTweTHjgPxWGOtMFD8b158TGfFKMoDZfDwdPlVuYCbI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSf4zhThJvjTm3lshqA3IwS6KYJeNeqCQ5UJ6PNdv-C3qlY-teJeLr6qrPOgtM"
         },
         {
-          "url": "https://parade.com/movies/glenn-close-teases-that-her-sunrise-on-the-reaping-villain-had-a-thing-with-ralph-fiennes-president-snow",
-          "title": "Glenn Close Teases That Her ‘Sunrise on the Reaping’ Villain Had a ‘Thing’ With Ralph Fiennes’ President Snow",
-          "publisher": "Parade Magazine",
+          "url": "https://www.kcra.com/article/suisun-city-flood-preparedness-king-tides-november-weather/74503481",
+          "title": "Suisun City prepares for king tides and stormy weather this week",
+          "publisher": "KCRA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThN2UNzcrK79jqnzaTkt3IbxCY_K09dvTbHVHzdu9arycogo8sbr4LBF6Vp54"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRvotJxWY5t69LFuUTuuDOSpwNhEuU0CGSE3vSJjiMx7WgBsifI-5Nq_mBWKM"
         },
         {
-          "url": "https://creepycatalog.com/glenn-close-and-ralph-fiennes-decided-their-hunger-games-villains-once-had-a-thing/",
-          "title": "Glenn Close and Ralph Fiennes Decided Their Hunger Games Villains Once Had a Thing",
-          "publisher": "Creepy Catalog",
+          "url": "https://www.nbcnews.com/news/us-news/california-prepares-flooding-rain-wind-thanksgiving-approaches-rcna610537",
+          "title": "California prepares for flooding, rain and wind as Thanksgiving approaches",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbQ-7_8B1bjdcVh8cWM5gFEJvTW94F-4SgaNwBFNTX7xHN2HkfyC08SIhO3Ho"
-        }
-      ]
-    },
-    {
-      "query": "lucia voice actor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T05:00:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-        "https://pagesix.com/2026/11/18/celebrity-news/actress-manni-l-perez-revealed-as-performer-behind-gta-6s-leading-character/",
-        "https://people.com/gta-6-voice-actors-side-by-side-with-characters-12265464"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/grand-theft-auto-6-actors-0ef831c452fe3a3fd4909ea7069ec118",
-          "title": "‘GTA VI’ finally reveals the actors, voices and familiar names behind Vice City",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMdXEaXN6Fw3KIRqnTVAWCCEAtiS1qhgpOskNFa46kejovljaGemsm7mTO3jU"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/18/celebrity-news/actress-manni-l-perez-revealed-as-performer-behind-gta-6s-leading-character/",
-          "title": "Glamorous actress behind GTA 6’s Lucia is unmasked after years of secrecy, ‘scary’ NDAs",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD89FKNd7KART-m5hCN_h8aOYDMF8qC192-cN9PFJdbjbcwvJt0kZAL46xUIE"
-        },
-        {
-          "url": "https://people.com/gta-6-voice-actors-side-by-side-with-characters-12265464",
-          "title": "See the ‘GTA 6’ Voice Actors Side-by-Side with the Characters They Play",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUF55JuHcUer2UhasmewMzmK0jG-CEioSItRAFPYh_RSleMDYBUOz9ZyrAAP8"
-        }
-      ]
-    },
-    {
-      "query": "new zealand vs india",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T04:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/cricket/story/_/id/50559412/nz-vs-ind-1st-test-stats-rishabh-pant-six-hitting-record-india-highest-total-away-test",
-        "https://www.cricinfo.com/story/nz-vs-ind-1st-test-new-zealand-and-india-play-out-stalemate-on-unyielding-basin-reserve-pitch-1563651",
-        "https://www.wral.com/news/ap/fa1ba-dour-defense-as-new-zealand-holds-on-for-a-draw-in-the-1st-cricket-test-against-india/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj3tzIIiwjyyxRHdlKT6cLk7AUww6NpoydOwIVTZdB6frykKhbm_v1wVIijw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/cricket/story/_/id/50559412/nz-vs-ind-1st-test-stats-rishabh-pant-six-hitting-record-india-highest-total-away-test",
-          "title": "Stats - Pant's six-feast in India's highest away Test total",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj3tzIIiwjyyxRHdlKT6cLk7AUww6NpoydOwIVTZdB6frykKhbm_v1wVIijw"
-        },
-        {
-          "url": "https://www.cricinfo.com/story/nz-vs-ind-1st-test-new-zealand-and-india-play-out-stalemate-on-unyielding-basin-reserve-pitch-1563651",
-          "title": "New Zealand and India play out stalemate on stubborn Basin Reserve pitch",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7JYl-kCZ2y3w8bpUfwmFmRGCNQx2nC9J9FFaUpbxAij8aRrNSNRRkW_KmPM8"
-        },
-        {
-          "url": "https://www.wral.com/news/ap/fa1ba-dour-defense-as-new-zealand-holds-on-for-a-draw-in-the-1st-cricket-test-against-india/",
-          "title": "Dour defense as New Zealand holds on for a draw in the 1st cricket test against India",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1nUOi1vMf_z-FKelJiRc-D5vhh6akFtiqLwnY5hA8HgAwcfVVhwmtpizfDvE"
-        }
-      ]
-    },
-    {
-      "query": "quien salio de la mansion vip 2",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T04:50:00Z",
-      "related_news_urls": [
-        "https://www.infobae.com/mexico/2026/11/22/la-mansion-vip-votos-como-va-la-tabla-de-posiciones-y-quien-esta-en-riesgo-de-salir-hoy-domingo-22-de-noviembre/",
-        "https://www.lavozarizona.com/story/entretenimiento/2026/11/16/quien-es-abel-robles-primer-eliminado-de-la-mansion-vip-2/92808298007/",
-        "https://heraldodemexico.com.mx/espectaculos/2026/11/22/asi-van-las-votaciones-de-la-mansion-vip-esta-es-la-encuesta-que-revelaria-al-segundo-eliminado-2922352.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A",
-      "image_credit": "Infobae",
-      "news": [
-        {
-          "url": "https://www.infobae.com/mexico/2026/11/22/la-mansion-vip-votos-como-va-la-tabla-de-posiciones-y-quien-esta-en-riesgo-de-salir-hoy-domingo-22-de-noviembre/",
-          "title": "La Mansión VIP votos: cómo va la tabla de posiciones y quién está en riesgo de salir hoy domingo 22 de noviembre",
-          "publisher": "Infobae",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRa84tUOxZBBGQIlTR_PDjqAE3-QESezyCw29D7SpEEmYHkfDH1b6pY35jZ4A"
-        },
-        {
-          "url": "https://www.lavozarizona.com/story/entretenimiento/2026/11/16/quien-es-abel-robles-primer-eliminado-de-la-mansion-vip-2/92808298007/",
-          "title": "¿Quién es Abel Robles, primer eliminado de ‘La Mansión VIP 2’?",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfE5ghCQp7xxli859oa69vzCyx4LYWmMqWTqk4FaSVlHPOOHFPnqXHB4NCsoY"
-        },
-        {
-          "url": "https://heraldodemexico.com.mx/espectaculos/2026/11/22/asi-van-las-votaciones-de-la-mansion-vip-esta-es-la-encuesta-que-revelaria-al-segundo-eliminado-2922352.html",
-          "title": "Así van las votaciones de La Mansión VIP; esta es la encuesta que revelaría al segundo eliminado",
-          "publisher": "El Heraldo de México",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoYAl_dkATvSgd1jeA3483X-K2TsF2SSUVmB6iX67E462cRZnABSynhlR1tUc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVrfdNBBD3OYaBDkr6XyI3nIwIYt2pW8E1Rci5pDDBWTzW24PzXTeAkcneW0Y"
         }
       ]
     }
