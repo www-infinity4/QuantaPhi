@@ -40,6 +40,7 @@ export function routeCavityFrame(packets,{requested='blue',lightOn=false,apertur
   format:'bubbles-visual-cavity-frame/v1',
   stage:lightOn===true?'selected':'black',
   guideOrder:lightOn===true?['black','white','yellow','red','orange',requested]:['black'],
+  whiteConduit:{carrier:'white',inside:'yellow',between:['red','yellow'],drawn:false,grantsAccess:false},
   visible,visibleColors:visible?[requested]:[],guideColorsRendered:false,
   accepted,byteWeight:weight,
   aperturesTotal:apertures.length,aperturesOpen:apertures.filter(Boolean).length,
