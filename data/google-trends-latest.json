@@ -3,12 +3,152 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T22:31:22.021025Z",
+  "checked_at": "2026-11-23T23:01:32.263322Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "byu basketball",
-      "approx_searches": "1000+",
+      "query": "botafogo vs são paulo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T22:30:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/rj/futebol/brasileirao-serie-a/noticia/2026/11/23/botafogo-x-sao-paulo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.instagram.com/p/DgFhJKwl0L_/",
+        "https://odia.ig.com.br/esporte/botafogo/2026/11/7325047-botafogo-confia-em-historico-recente-dentro-de-casa-contra-sao-paulo.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScpXmiAFxea9kZfh_JX1-70UCuW_jzT137iaFJnIVva2t3hzV0RwJadbTT0G4",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/rj/futebol/brasileirao-serie-a/noticia/2026/11/23/botafogo-x-sao-paulo-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Botafogo x São Paulo: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScpXmiAFxea9kZfh_JX1-70UCuW_jzT137iaFJnIVva2t3hzV0RwJadbTT0G4"
+        },
+        {
+          "url": "https://www.instagram.com/p/DgFhJKwl0L_/",
+          "title": "SÃO PAULO TEM APENAS UMA VITÓRIA NOS ÚLTIMOS DEZ DUELOS COM O BOTAFOGO! O retrospecto recente reúne uma vitória do Tricolor, seis empates e três derrotas, com nove gols marcados e ",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1i5La0SbY5fpjZP0qIOsl1lwkl4gtpMBwNQGadEAdsT72QJrMf17yES_WgNk"
+        },
+        {
+          "url": "https://odia.ig.com.br/esporte/botafogo/2026/11/7325047-botafogo-confia-em-historico-recente-dentro-de-casa-contra-sao-paulo.html",
+          "title": "Botafogo confia em histórico recente dentro de casa contra São Paulo",
+          "publisher": "O Dia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHx2ByVk2orR4o_Exuf8ZudwJdbSVoXCMvy-t-J_4gGk0G0Qe6pkiRondtu0s"
+        }
+      ]
+    },
+    {
+      "query": "alexandr wang",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T22:30:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/economy/2026/11/23/ai-superintelligence-arriving-warns-top-meta-executive",
+        "https://www.forbes.com/sites/conormurray/2026/11/23/metas-ai-chief-warns-against-handover-of-society-to-ai-frustrating-social-media-users-who-want-solutions/",
+        "https://finance.yahoo.com/technology/ai/articles/167-old-math-problem-just-064345511.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2HrnQrCzMg6mz0HHnmKINS0yqugw6y5IdSM-jFCR4b2GvKvVQiT5ju4h8SQ8",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/economy/2026/11/23/ai-superintelligence-arriving-warns-top-meta-executive",
+          "title": "Artificial superintelligence ‘arriving’, warns top Meta executive",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2HrnQrCzMg6mz0HHnmKINS0yqugw6y5IdSM-jFCR4b2GvKvVQiT5ju4h8SQ8"
+        },
+        {
+          "url": "https://www.forbes.com/sites/conormurray/2026/11/23/metas-ai-chief-warns-against-handover-of-society-to-ai-frustrating-social-media-users-who-want-solutions/",
+          "title": "Meta’s AI Chief Alexandr Wang Warns Against ‘Handover Of Society To AI’ In Viral Post",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpFbA1P_rILuraEiANCqZIle515xriWoP-WRNmiWvEqvvDoOQUDQaHvtWE2eg"
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/167-old-math-problem-just-064345511.html",
+          "title": "A 167-Year-Old Math Problem Just Became Meta's Case That Superintelligence Is Near",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzgmLToaPuMMrOVrsg2dKoodRx0Mm7KKF9812RuVjT_fK-_WsE3a27L20UVW8"
+        }
+      ]
+    },
+    {
+      "query": "gavin newsom",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T22:20:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/politics/2026/11/23/trump-use-doj-speech-attack-newsom-potential-2028-contender/",
+        "https://www.bloomberg.com/news/articles/2026-11-23/trump-slams-newsom-for-commuting-death-sentences-in-2028-preview",
+        "https://www.ms.now/news/trump-speech-justice-department-gavin-newsom"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4VDGQZMDrpInmn5W2taIdqdwJGHdDhRghn2Zwjed3BuZp8DAoB69Ff2zOV00",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/politics/2026/11/23/trump-use-doj-speech-attack-newsom-potential-2028-contender/",
+          "title": "Trump uses DOJ speech to attack Newsom, a potential 2028 contender",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4VDGQZMDrpInmn5W2taIdqdwJGHdDhRghn2Zwjed3BuZp8DAoB69Ff2zOV00"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/trump-slams-newsom-for-commuting-death-sentences-in-2028-preview",
+          "title": "Trump Slams Newsom for Commuting Death Sentences in 2028 Preview",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMnOqVrk63Jd7Ij9gM7-Vc96SWjUjvQZZD0xZfi8iFrobo98Cdt3UqxnFUXY0"
+        },
+        {
+          "url": "https://www.ms.now/news/trump-speech-justice-department-gavin-newsom",
+          "title": "Trump to attack Gavin Newsom in rare Justice Department speech",
+          "publisher": "MS NOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAoRLlY4bwgQ5YP2NXiI5ZTAsyfYDC7vw9dW9fPdfJ1gIJuimwhp-dNvaaR3Q"
+        }
+      ]
+    },
+    {
+      "query": "cboe volatility index",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
+        "https://www.investors.com/news/sp-500-nasdaq-dow-jones-vix-ai-trade-stock-market/",
+        "https://www.barrons.com/articles/stock-market-vix-fear-gauge-ai-d1012e90"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
+          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84"
+        },
+        {
+          "url": "https://www.investors.com/news/sp-500-nasdaq-dow-jones-vix-ai-trade-stock-market/",
+          "title": "VIX Signal Hints The S&P 500 May Be Near Lows",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGKedcQMWi17elcWX6kcpibtUpq_RBF__oi59Eq_3vcEdG6Z6HFH3AJBRCIKg"
+        },
+        {
+          "url": "https://www.barrons.com/articles/stock-market-vix-fear-gauge-ai-d1012e90",
+          "title": "The Fear Gauge Hit 40. This Is What the Market Is Worried About.",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSM9cSB0HSTM78OzN0JIk2-iVwFfYFJ5k5GyRBL3JaW0lc9gZkBjjtOSzPFjs"
+        }
+      ]
+    },
+    {
+      "query": "washington vs byu",
+      "approx_searches": "2000+",
       "published_at": "2026-11-23T22:10:00Z",
       "related_news_urls": [
         "https://byucougars.com/news/2026/11/22/no-21-byu-faces-washington-in-southwest-maui-invitational",
@@ -38,6 +178,41 @@
           "publisher": "Deseret News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv4MMNIO_V1n_nnuyX8m8BoZf91G_yXu05FTSehh8txomln4uwrQa_kkhqW4"
+        }
+      ]
+    },
+    {
+      "query": "internacional vs vitória",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-23T22:10:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/23/vitoria-abre-o-placar-com-12s-e-anota-gol-mais-rapido-do-brasileirao-2026.ghtm",
+        "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Internacional x Vitória: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA"
+        },
+        {
+          "url": "https://www.uol.com.br/esporte/futebol/ultimas-noticias/2026/11/23/vitoria-abre-o-placar-com-12s-e-anota-gol-mais-rapido-do-brasileirao-2026.ghtm",
+          "title": "Vitória abre o placar com 12s e anota gol mais rápido do Brasileirão 2026",
+          "publisher": "UOL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbqfrZ0aN5v_ubZBxFLyOANEymH53WuKCKHRkWyWrBpgE8BJ1pKhhLIDLtnBo"
+        },
+        {
+          "url": "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html",
+          "title": "Eduardo Baptista surpreende e escala novidade no meio-campo do Inter; veja o time para encarar o Vitória",
+          "publisher": "GZH",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzV3nNiCqjG4be6yTyP__niTzeBVaLK-MLM2KgP6rEgjAln8xcFKThSECjUwU"
         }
       ]
     },
@@ -77,48 +252,13 @@
       ]
     },
     {
-      "query": "internacional vs vitória",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T22:10:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://somoscolorados.com/beira-rio-deve-receber-40-mil-torcedores-em-partida-decisiva-para-o-inter",
-        "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA",
-      "image_credit": "ge",
-      "news": [
-        {
-          "url": "https://ge.globo.com/rs/futebol/brasileirao-serie-a/noticia/2026/11/23/internacional-x-vitoria-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Internacional x Vitória: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc4KB5_PBCvEVn2i7_io0sXgFd1jbIaLWc3LKzbEmKiHM1f3v8hLrUngCLUtA"
-        },
-        {
-          "url": "https://somoscolorados.com/beira-rio-deve-receber-40-mil-torcedores-em-partida-decisiva-para-o-inter",
-          "title": "Beira-Rio deve receber 40 mil torcedores em partida decisiva para o Inter",
-          "publisher": "Portal Somos Colorados",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCgx3wU6RQpUFcsJONQIhtW-76xuO2t119L_3FF5qVEeF487rIce_Be9vtMxY"
-        },
-        {
-          "url": "https://gauchazh.clicrbs.com.br/esportes/inter/noticia/2026/11/eduardo-baptista-surpreende-e-escala-novidade-no-meio-campo-do-inter-veja-o-time-para-encarar-o-vitoria-cmwtsfs3t00b0016mjfuoxxm6.html",
-          "title": "Eduardo Baptista surpreende e escala novidade no meio-campo do Inter; veja o time para encarar o Vitória",
-          "publisher": "GZH",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzV3nNiCqjG4be6yTyP__niTzeBVaLK-MLM2KgP6rEgjAln8xcFKThSECjUwU"
-        }
-      ]
-    },
-    {
       "query": "nevada basketball",
       "approx_searches": "200+",
       "published_at": "2026-11-23T22:10:00Z",
       "related_news_urls": [
         "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
-        "https://www.kolotv.com/2026/11/23/acrisure-series-continues-wolf-pack-take-san-francisco-tahoe/",
-        "https://nevadawolfpack.com/news/2026/11/22/mens-basketball-nevada-faces-san-francisco-in-the-acrisure-series.aspx"
+        "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/",
+        "https://www.kolotv.com/2026/11/23/acrisure-series-continues-wolf-pack-take-san-francisco-tahoe/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ",
       "image_credit": "Nevada Sports Net",
@@ -131,18 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ"
         },
         {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/",
+          "title": "San Francisco vs Nevada Prediction, Picks & Odds | 23 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
+        },
+        {
           "url": "https://www.kolotv.com/2026/11/23/acrisure-series-continues-wolf-pack-take-san-francisco-tahoe/",
           "title": "Acrisure Series continues as Wolf Pack take on San Francisco in Tahoe",
           "publisher": "KOLO | 8 News Now",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRrH2uULGUCXy6OsdKrmKPtPLi2GFi0vWozbjLyyepmY8HCZXWQtVjF0YHnTKo"
-        },
-        {
-          "url": "https://nevadawolfpack.com/news/2026/11/22/mens-basketball-nevada-faces-san-francisco-in-the-acrisure-series.aspx",
-          "title": "Nevada faces San Francisco in the Acrisure Series - University of Nevada Athletics",
-          "publisher": "University of Nevada Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZZnyNC1HmXFnuyPZZ4VpLy0z8FQa_fzGldib9Hw-QgNNkeE6r_EdEVZfVp2k"
         }
       ]
     },
@@ -151,26 +291,26 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-23T21:50:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164948323.html",
         "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164907957.html",
         "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxmBG0TZi0igSRW4ECVhbzs10GDTOhEzs3CmE8kkmdauHcWnBVG_WR1KTAMw",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp3Xtx7KZ82S3IYlod8abLBuHYPHfn99Kd7tuTocDx7bDTugsCxdfiC0xYfs",
+      "image_credit": "Variety",
       "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164948323.html",
-          "title": "Tom Holland’s Spider-Man Is Back in New Marvel Release as Avengers: Doomsday Trailer Debuts",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxmBG0TZi0igSRW4ECVhbzs10GDTOhEzs3CmE8kkmdauHcWnBVG_WR1KTAMw"
-        },
         {
           "url": "https://variety.com/2026/film/news/rosario-dawson-night-nurse-spider-man-brand-new-day-1236953529/",
           "title": "Rosario Dawson Back as Night Nurse in Spider-Man Brand New Day Re-Release",
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjp3Xtx7KZ82S3IYlod8abLBuHYPHfn99Kd7tuTocDx7bDTugsCxdfiC0xYfs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/tom-holland-spider-man-back-164907957.html",
+          "title": "Tom Holland’s Spider-Man Is Back in New Marvel Release as Avengers: Doomsday Trailer Debuts",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwbOJjW8B6kKy4qdowqrepIoLNrd4HIKlQiDlwzCtoolC-Nwi36GYc_SOoKjE"
         },
         {
           "url": "https://collider.com/spider-man-brand-new-day-screenx-exclusive-variant-posters/",
@@ -182,59 +322,17 @@
       ]
     },
     {
-      "query": "is there a full moon tonight",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-23T21:50:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
-        "https://www.bostonglobe.com/2026/11/23/metro/viewing-beaver-supermoon-king-tides/",
-        "https://www.nationalgeographic.com/science/article/november-2026-supermoon"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2LpBm3gW2zcn8bppZLXxL4OFnpbau2xz1p5xZsw2kvtPX6F3Quyz8uwk4n8",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
-          "title": "A Supermoon Is About To Meet The ‘Seven Sisters’ In The Night Sky",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2LpBm3gW2zcn8bppZLXxL4OFnpbau2xz1p5xZsw2kvtPX6F3Quyz8uwk4n8"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/23/metro/viewing-beaver-supermoon-king-tides/",
-          "title": "This week’s Beaver Supermoon to bring king tides to Boston. Here’s how to catch a great lunar view.",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRk1LNvNSU6ijMowU6TTpneqnP3Riu9wTbsJ25wH4rTIbswFrtAIiyXr5ks20"
-        },
-        {
-          "url": "https://www.nationalgeographic.com/science/article/november-2026-supermoon",
-          "title": "A Spectacular Streak of Supermoons Is About to Begin",
-          "publisher": "National Geographic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnlyIlPJ5DYAXv63AqAE_5ZsEu3J13VJp2wcJ-4x4_cNZvNG7i_w7zuW2Jx1I"
-        }
-      ]
-    },
-    {
       "query": "grayson chrisley",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-23T21:50:00Z",
       "related_news_urls": [
-        "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
         "https://www.yahoo.com/entertainment/celebrity/articles/judge-rules-against-todd-chrisley-110955975.html",
+        "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
         "https://www.tmz.com/2026/11/23/judge-partially-denies-todd-chrisley-effort-to-block-son-grayson-medical-records/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWI3w5xD6USmFmvY-HHwOOSpNA6ZXIHOORxKGJT0djd9VbauF4px-HvtnVE",
-      "image_credit": "WSB-TV",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzbaEVskjO_0ZHiBufJQsoB_6LUswoNab2XSnThCFjADT6vV3bAC13t42ehQ",
+      "image_credit": "Yahoo",
       "news": [
-        {
-          "url": "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
-          "title": "Judge allows access to Grayson Chrisley’s medical records in 2022 crash lawsuit",
-          "publisher": "WSB-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWI3w5xD6USmFmvY-HHwOOSpNA6ZXIHOORxKGJT0djd9VbauF4px-HvtnVE"
-        },
         {
           "url": "https://www.yahoo.com/entertainment/celebrity/articles/judge-rules-against-todd-chrisley-110955975.html",
           "title": "Judge Rules Against Todd Chrisley in Battle Over Son Grayson’s Drug Test Records After Car Crash",
@@ -243,116 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzbaEVskjO_0ZHiBufJQsoB_6LUswoNab2XSnThCFjADT6vV3bAC13t42ehQ"
         },
         {
+          "url": "https://www.wsbtv.com/news/local/atlanta/judge-allows-access-grayson-chrisleys-medical-records-2022-crash-lawsuit/XQW33GJYIRERVLCRM6HGLO6JH4/",
+          "title": "Judge allows access to Grayson Chrisley’s medical records in 2022 crash lawsuit",
+          "publisher": "WSB-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCWI3w5xD6USmFmvY-HHwOOSpNA6ZXIHOORxKGJT0djd9VbauF4px-HvtnVE"
+        },
+        {
           "url": "https://www.tmz.com/2026/11/23/judge-partially-denies-todd-chrisley-effort-to-block-son-grayson-medical-records/",
           "title": "Todd Chrisley Shut Down in Effort to Completely Block Son's Drug Test Results From 2022 Car Crash",
           "publisher": "TMZ",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgGBXTu8WRAzhTmj3bkKcjiuvk7kVuT1zrm2p7_OIplhNf587CfBx8muTqI7g"
-        }
-      ]
-    },
-    {
-      "query": "michelle randolph",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T21:50:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon",
-        "https://www.yahoo.com/entertainment/tv/articles/tsitp-chris-briney-breaks-silence-150052752.html",
-        "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxe5TnZlJAtlkanq_OqUUg2veUrvNmrqIRBBU3FfLReTM6ygDRF5tYkC3e8o",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon",
-          "title": "Clashing Through the Snow review – Amazon’s Christmas romcom is a bust",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxe5TnZlJAtlkanq_OqUUg2veUrvNmrqIRBBU3FfLReTM6ygDRF5tYkC3e8o"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/tsitp-chris-briney-breaks-silence-150052752.html",
-          "title": "TSITP’s Chris Briney Breaks Silence on Surprise Cameo in His Christmas Movie: ‘Wish I Made It Happen’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB1fUjBS-iWeZElHxAb9r1AdTYbW4Umw2ARsqyTiq6T1i1sDPYAGAeQeHoh9E"
-        },
-        {
-          "url": "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908",
-          "title": "Christopher Briney Shocks Jenna and Sheinelle With a Magic Trick on TODAY: ‘What?!’",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcf-eBZ7b_MMJAzF571NS6U0B7FeqdxiePZBzMDihOBwsv0KUa-ipaYF1jvM"
-        }
-      ]
-    },
-    {
-      "query": "manny manuel",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T21:50:00Z",
-      "related_news_urls": [
-        "https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-manny-manuel-por-conducir-en-estado-de-embriaguez/",
-        "https://www.primerahora.com/noticias/policia-tribunales/notas/arrestan-en-salinas-a-manny-manuel-por-conducir-borracho/",
-        "https://es-us.vida-estilo.yahoo.com/manny-manuel-arrestado-supuesto-estado-203207469.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn04a_fj8e9aPs_33qPddrAwlWol_WwsICQCfqnoI3njDyeosTFs6VxGHEZNI",
-      "image_credit": "El Nuevo Día",
-      "news": [
-        {
-          "url": "https://www.elnuevodia.com/noticias/seguridad/notas/arrestan-a-manny-manuel-por-conducir-en-estado-de-embriaguez/",
-          "title": "Arrestan a Manny Manuel por conducir en estado de embriaguez",
-          "publisher": "El Nuevo Día",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn04a_fj8e9aPs_33qPddrAwlWol_WwsICQCfqnoI3njDyeosTFs6VxGHEZNI"
-        },
-        {
-          "url": "https://www.primerahora.com/noticias/policia-tribunales/notas/arrestan-en-salinas-a-manny-manuel-por-conducir-borracho/",
-          "title": "Arrestan en Salinas a Manny Manuel por conducir en alegado estado de embriaguez",
-          "publisher": "Primera Hora",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOT50wmXIpre0kaxT0Mx5DOcm-gak_L03kuN4XQvr6pX67wU86IiHZgFIitrE"
-        },
-        {
-          "url": "https://es-us.vida-estilo.yahoo.com/manny-manuel-arrestado-supuesto-estado-203207469.html",
-          "title": "Manny Manuel es arrestado en supuesto estado de embriaguez",
-          "publisher": "Yahoo en Español Vida y Estilo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvTtVfD-gJ9Ti3PD_q_3gLEG-bliogE1WXgsZXN5iFwJ-0tVCWyzlKelC5znU"
-        }
-      ]
-    },
-    {
-      "query": "wwe raw",
-      "approx_searches": "200+",
-      "published_at": "2026-11-23T21:50:00Z",
-      "related_news_urls": [
-        "https://www.wwe.com/shows/raw/2026-11-23",
-        "https://sports.yahoo.com/articles/roman-reigns-returns-wwe-raw-183032078.html",
-        "https://newsable.asianetnews.com/gallery/entertainment/three-names-cody-rhodes-could-have-called-to-fill-team-usa-final-wwe-spot-6nukl3p"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxjsBNPnr3zM5IS-30rLyiOm3mlnI9GE5UJmg8_Vq2YMP_M-b0TRKf-muuHE",
-      "image_credit": "WWE",
-      "news": [
-        {
-          "url": "https://www.wwe.com/shows/raw/2026-11-23",
-          "title": "Raw preview, Nov. 23, 2026: How will Roman Reigns and The Bloodline react to The 946 getting the WarGames advantage?",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWxjsBNPnr3zM5IS-30rLyiOm3mlnI9GE5UJmg8_Vq2YMP_M-b0TRKf-muuHE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/roman-reigns-returns-wwe-raw-183032078.html",
-          "title": "Roman Reigns Returns on WWE Raw Tonight, Which Starts Two Hours Early",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9qA-lTx54wO_54MOZDTC-jMYWkNEZkjeMCdjDfWOq1GSzOFRa0efjUJ051OM"
-        },
-        {
-          "url": "https://newsable.asianetnews.com/gallery/entertainment/three-names-cody-rhodes-could-have-called-to-fill-team-usa-final-wwe-spot-6nukl3p",
-          "title": "3 Names Cody Rhodes Could Have Called To Fill Team USA's Final WWE Spot",
-          "publisher": "Asianet Newsable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjTnhgNujnVIHs6ZxPm4AntlLhpt5eHx-PE-jMhHtki99oLZWm9qFAI-Pkghk"
         }
       ]
     }
