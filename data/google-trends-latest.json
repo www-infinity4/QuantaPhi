@@ -3,16 +3,191 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-23T00:48:12.945492Z",
+  "checked_at": "2026-11-23T01:01:30.528920Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "celtics vs warriors",
+      "query": "querétaro - necaxa",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T00:40:00Z",
+      "related_news_urls": [
+        "https://www.tudn.com/futbol/liga-mx/queretaro-vs-necaxa-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
+        "https://www.elfutbolero.com.mx/ligamx/sumo-sus-20-puntos-en-diez-partidos-y-desde-octubre-no-hace-uno-mas-si-pierde-con-necaxa-queretaro-cierra-su-cuarto-torneo-seguido-con-20-20261122.html",
+        "https://www.heraldo.mx/ultimo-juego-del-2026-para-los-rayos/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg8QYEiWHFvvLcWCs9FaLFdOsMXjzU32tNcvbwaF8_SataamCU_YVEXrswjY",
+      "image_credit": "TUDN",
+      "news": [
+        {
+          "url": "https://www.tudn.com/futbol/liga-mx/queretaro-vs-necaxa-a-que-hora-y-donde-ver-el-partido-de-la-jornada-17-de-la-liga-mx-apertura-2026",
+          "title": "A qué hora y dónde ver el Querétaro vs. Necaxa de la Jornada 17",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQg8QYEiWHFvvLcWCs9FaLFdOsMXjzU32tNcvbwaF8_SataamCU_YVEXrswjY"
+        },
+        {
+          "url": "https://www.elfutbolero.com.mx/ligamx/sumo-sus-20-puntos-en-diez-partidos-y-desde-octubre-no-hace-uno-mas-si-pierde-con-necaxa-queretaro-cierra-su-cuarto-torneo-seguido-con-20-20261122.html",
+          "title": "Sumó sus 20 puntos en diez partidos y desde octubre no hace uno más: si pierde con Necaxa, Querétaro cierra su cuarto torneo seguido con 20",
+          "publisher": "El Futbolero México",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdrPu2iU6-kzW1d01HK5x3KeYITVYqsj8jU0ODbPoEtocz6FqdF1fGJcZ_b50"
+        },
+        {
+          "url": "https://www.heraldo.mx/ultimo-juego-del-2026-para-los-rayos/",
+          "title": "Último juego del 2026 para los Rayos",
+          "publisher": "El Heraldo de Aguascalientes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6x9bmaPBOXLiWMt5pEHH0LIjLVoXPQtVLVjEl1BgvGQh53ynh0ZmuxXxZaSY"
+        }
+      ]
+    },
+    {
+      "query": "marvel avengers doomsday trailer",
       "approx_searches": "1000+",
+      "published_at": "2026-11-23T00:40:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+        "https://www.screendaily.com/news/joe-russo-teases-final-avengers-doomsday-trailer-keep-refreshing-your-feed/5222656.article",
+        "https://hypebeast.com/2026/11/marvel-11-part-avengers-doomsday-poster-montage-character-poster-unveiled"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9JsH5DqLinBYxLKdo0Fl1SRnuv13v5rqt-uKgdkfVmcqPMUq8N9ZA8mlfaI",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/joe-russo-doomsday-trailer-strategy-rumored-monday-fans-1237231111/",
+          "title": "Joe Russo Talks ‘Doomsday’ Teaser-Trailer Strategy Ahead Of Rumored Monday Drop: “I Have To interact With Fans”",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo9JsH5DqLinBYxLKdo0Fl1SRnuv13v5rqt-uKgdkfVmcqPMUq8N9ZA8mlfaI"
+        },
+        {
+          "url": "https://www.screendaily.com/news/joe-russo-teases-final-avengers-doomsday-trailer-keep-refreshing-your-feed/5222656.article",
+          "title": "Joe Russo teases final ‘Avengers: Doomsday’ trailer: “Keep refreshing your feed”",
+          "publisher": "Screen Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8sB4BmDR41vui_ar50dscC3SQh0vmQ6jKBehHbTVfhuEuAzdbeIIwrs5Dbcw"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/marvel-11-part-avengers-doomsday-poster-montage-character-poster-unveiled",
+          "title": "Marvel Drops Sprawling 11-Part 'Avengers: Doomsday' Characters Poster Montage",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvHLkeweR_EvrQItqf69gBfEOO8U8819mP2PCmU_3pvcvM1ioPsyteoltOkQ8"
+        }
+      ]
+    },
+    {
+      "query": "lowes black friday deals",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-23T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/",
+        "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
+        "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlubKhbI9wMA_SPUakW7ywsOgk53ANuT9_ZVhwlZABcaa8tWNYlg7nSTy-VxE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/wirecutter/money/best-early-black-friday-deals-2026-1121/",
+          "title": "Black Friday Deals Are Already Rolling In — Here Are the Best | Reviews by Wirecutter",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlubKhbI9wMA_SPUakW7ywsOgk53ANuT9_ZVhwlZABcaa8tWNYlg7nSTy-VxE"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/early-black-friday-deals-live-now-ugg-michael-kors-hoka-dyson-ring-and-more-are-on-major-sale-for-the-2026-shopping-event-of-the-year-120123467.html",
+          "title": "Early Black Friday deals live now: Ugg, Michael Kors, Hoka, Dyson, Ring and more are on major sale for the 2026 shopping event of the year",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaB2OuJ82FPwsOtqmAh6fHcc38IWSlC4NC2jbWKLl7HZfvPqZnhK_bmcE5oY"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/best-black-friday-deals-2026-11-22",
+          "title": "We shopped 147 early Black Friday sales to find the 98 best deals worth shopping now",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF9OfNNEeQmKmxQHlYHl4nLi2mWK43yNMsTmtBe-ck7auKx71srG33l3uDsRg"
+        }
+      ]
+    },
+    {
+      "query": "penn state volleyball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-sports/story/_/id/50502503/penn-state-volleyball-big-ten-tournament-kennedy-martin-alexis-stucky",
+        "https://sports.yahoo.com/articles/postseason-volleyball-back-know-nittany-193518083.html",
+        "https://www.espnlacrosse.com/2026/11/20/alexis-stucky-kennedy-martin-and-volleyballs-riskiest-reunion/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7q7TRwSQvNnvehR5qGLDy-l0mHsoHyTSaksGuTpwtroJc8abMyeUCG_BfBwc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-sports/story/_/id/50502503/penn-state-volleyball-big-ten-tournament-kennedy-martin-alexis-stucky",
+          "title": "Alexis Stucky, Kennedy Martin and volleyball's riskiest reunion",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7q7TRwSQvNnvehR5qGLDy-l0mHsoHyTSaksGuTpwtroJc8abMyeUCG_BfBwc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/postseason-volleyball-back-know-nittany-193518083.html",
+          "title": "Postseason Volleyball is Back: What to Know about the Nittany Lions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqN0T19gaiBC6E8rFlPH_X2US7AB_qNH_H4otRX3hdtdqM9tGLQft5gGN6xc"
+        },
+        {
+          "url": "https://www.espnlacrosse.com/2026/11/20/alexis-stucky-kennedy-martin-and-volleyballs-riskiest-reunion/",
+          "title": "Alexis Stucky, Kennedy Martin and volleyball’s riskiest reunion",
+          "publisher": "ESPN La Crosse 105.5",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTThXIoYphlPwr8mvvCBMba8Ce2I-aDNVt5k7uTsJfYlh3_5G-hwxPQsPGKeDc"
+        }
+      ]
+    },
+    {
+      "query": "lightning game",
+      "approx_searches": "200+",
+      "published_at": "2026-11-23T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
+        "https://www.nhl.com/sabres/news/buffalo-sabres-tampa-bay-lightning-recap-highlights-x9457",
+        "https://sports.yahoo.com/articles/buffalo-sabres-vs-tampa-bay-182921553.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCYPJyuzcTlcVYX1k2uyUvVlZSxVoxOlDVwEyidExjsXJzBhAbsA5zpzD8Woo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50567273/noah-ostlund-lights-lamp-sabres",
+          "title": "Noah Ostlund lights the lamp for Sabres",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCYPJyuzcTlcVYX1k2uyUvVlZSxVoxOlDVwEyidExjsXJzBhAbsA5zpzD8Woo"
+        },
+        {
+          "url": "https://www.nhl.com/sabres/news/buffalo-sabres-tampa-bay-lightning-recap-highlights-x9457",
+          "title": "At the Horn | Sabres 6 - Lightning 2",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5M9BoMJcL3KssAEQIEU7TGQM1LVYJuZWkd2cZvmlqlmC2u90qt7gP4tHpSoc"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/buffalo-sabres-vs-tampa-bay-182921553.html",
+          "title": "Buffalo Sabres vs. Tampa Bay Lightning - Lineups, Injury Updates, And Game Notes",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjQZYczhZC7TFn6SWwALy4otxt4AEogyT5mNL0TbbS8FHje_HAHKTXmwF5k8Y"
+        }
+      ]
+    },
+    {
+      "query": "celtics vs warriors",
+      "approx_searches": "5000+",
       "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
         "https://www.bostonglobe.com/2026/11/22/sports/celtics-warriors-preview-november-22/",
-        "https://sports.yahoo.com/articles/boston-celtics-11-5-golden-223000969.html",
+        "https://sports.yahoo.com/articles/watch-celtics-vs-warriors-live-003000245.html",
         "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc",
@@ -26,11 +201,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBmu2IWUxtXupGv4bO_mHUcozdKWeZm01yKeZ74BAnJy6BhEFTjbKz5Rra0vc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/boston-celtics-11-5-golden-223000969.html",
-          "title": "Boston Celtics (11-5) at Golden State Warriors (8-8) Game #17 11/22/26",
+          "url": "https://sports.yahoo.com/articles/watch-celtics-vs-warriors-live-003000245.html",
+          "title": "How to watch Celtics vs Warriors: Live stream NBA, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNCCL5grAUeUYrgZLEqHNLQqOIc0iHta7NsxLwwwCFaaVPpgC9dwd0dcnOHo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP5QJH__zBOomOOaKXiLtsm_LRZQzaU1RhUiPWj2uvqu4ZnOMdV86V14z2dQc"
         },
         {
           "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-22/walter-clayton-jr-knee-upgraded-to-available",
@@ -38,6 +213,41 @@
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdeVYQf4iF86Y_L9YVG1ymrUDXKA64qT1eN5wcI3CESBaARwcNySVqC-hPUig"
+        }
+      ]
+    },
+    {
+      "query": "ja'quan mcmillian",
+      "approx_searches": "500+",
+      "published_at": "2026-11-23T00:30:00Z",
+      "related_news_urls": [
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/22/nfl-broncos-likely-lose-jaquan-mcmillian-on-open-market/92833883007/",
+        "https://www.kare11.com/video/sports/locked-on/lo-denver/broncos-show/jaquan-mcmillian-earning-major-role-in-broncos-super-bowl-window/535-88f849f1-708f-4cbd-a753-7385f454d512",
+        "https://denversports.com/watch/what-more-does-jaquan-mcmillian-have-to-do-for-the-broncos-to-pay-him/01a1e6fb-ff48-8008-c00f-31057983fd19"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB8mUkhvYq99hN1mSodF8IPaQnEzJfpWvQ06rKdZCGHxMCTTPkbuWgdNTJGN8",
+      "image_credit": "Broncos Wire",
+      "news": [
+        {
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/22/nfl-broncos-likely-lose-jaquan-mcmillian-on-open-market/92833883007/",
+          "title": "Broncos seem likely to lose Ja'Quan McMillian if they let him test open market",
+          "publisher": "Broncos Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRB8mUkhvYq99hN1mSodF8IPaQnEzJfpWvQ06rKdZCGHxMCTTPkbuWgdNTJGN8"
+        },
+        {
+          "url": "https://www.kare11.com/video/sports/locked-on/lo-denver/broncos-show/jaquan-mcmillian-earning-major-role-in-broncos-super-bowl-window/535-88f849f1-708f-4cbd-a753-7385f454d512",
+          "title": "Ja’Quan McMillian Earning MAJOR Role in Broncos’ Super Bowl window",
+          "publisher": "kare11.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVnVlHhgthqFo3ijcdPnI8CKYfPVvI-idJt5F1sBEHgVaS1CS8mkyNFgTjOok"
+        },
+        {
+          "url": "https://denversports.com/watch/what-more-does-jaquan-mcmillian-have-to-do-for-the-broncos-to-pay-him/01a1e6fb-ff48-8008-c00f-31057983fd19",
+          "title": "What more does Ja'Quan Mcmillian have to do for the Broncos to pay him?",
+          "publisher": "Denver Sports 104.3 The Fan",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlsq334g97zbwXeVku-uHxJRW-lV60-CdV7NwfsC0k8oRMH8jXwUrdjqEy2Nk"
         }
       ]
     },
@@ -77,46 +287,12 @@
       ]
     },
     {
-      "query": "erin cahill",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-23T00:30:00Z",
-      "related_news_urls": [
-        "https://parade.com/news/days-before-romance-author-annie-england-noblins-tragic-passing-at-44-she-learned-her-2022-novel-would-become-a-hallmark-movie-as-the-film-premieres-its-stars-honor-her-legacy",
-        "https://celebsecrets.com/erin-cahill-reveals-the-one-reason-she-said-yes-to-hallmarks-christmas-in-blue-dog-valley-before-even-reading-the-script-exclusive/",
-        "https://cwibc.co.id/en/christmas-blue-dog-valley-premiere"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ_OZvWh_fcsxgqpL_44HDQRiaUDGCix26ni_N1d-8kg7FKCSQau89uv2lDw",
-      "image_credit": "Parade Magazine",
-      "news": [
-        {
-          "url": "https://parade.com/news/days-before-romance-author-annie-england-noblins-tragic-passing-at-44-she-learned-her-2022-novel-would-become-a-hallmark-movie-as-the-film-premieres-its-stars-honor-her-legacy",
-          "title": "Days Before Romance Author Annie England Noblin's Tragic Passing at 44, She Learned Her 2022 Novel Would Become a Hallmark Movie. As the Film Premieres, Its Stars Honor Her Legacy",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ_OZvWh_fcsxgqpL_44HDQRiaUDGCix26ni_N1d-8kg7FKCSQau89uv2lDw"
-        },
-        {
-          "url": "https://celebsecrets.com/erin-cahill-reveals-the-one-reason-she-said-yes-to-hallmarks-christmas-in-blue-dog-valley-before-even-reading-the-script-exclusive/",
-          "title": "Erin Cahill Reveals the One Reason She Said \"Yes\" to Hallmark’s Christmas in Blue Dog Valley Before Even Reading the Script (Exclusive)",
-          "publisher": "Celeb Secrets",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-rEn-32ttaTB8kwMDi6BS_sTpqSXfZrKoORfPfGGU4TWC_KuY7ZkST39R6Rg"
-        },
-        {
-          "url": "https://cwibc.co.id/en/christmas-blue-dog-valley-premiere",
-          "title": "Hallmark Premieres Christmas in Blue Dog Valley on November 21",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3GiFi9ea0kE8XWxSRqeTBFtr5Uv3VUhHVp5Tx7dQIaksO9HHI6opcDqH6sJc"
-        }
-      ]
-    },
-    {
       "query": "steve campbell",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
         "https://ucasports.com/news/2026/11/22/steve-campbell-returns-to-central-arkansas-as-head-football-coach.aspx",
+        "https://www.footballscoop.com/2026/11/22/steve-campbell-returns-for-another-run-at-central-arkansas",
         "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg",
@@ -130,6 +306,13 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_019E2gKQ82DXvHvE_ZkQca0ixYiE0DUvbLGEMTEXjvknxP-tLyePsASg2fg"
         },
         {
+          "url": "https://www.footballscoop.com/2026/11/22/steve-campbell-returns-for-another-run-at-central-arkansas",
+          "title": "Steve Campbell returns for another run at Central Arkansas",
+          "publisher": "FootballScoop.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmhceW9ForGUJev0aqV6btEmfA701WtGyYETsFWRojDCBKcM2POsXXnf18yFw"
+        },
+        {
           "url": "https://www.fox16.com/sports/local-sports/uca-names-steve-campbell-next-head-football-coach/",
           "title": "UCA names Steve Campbell next head football coach",
           "publisher": "FOX16.com",
@@ -139,212 +322,37 @@
       ]
     },
     {
-      "query": "jk dobbins",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T00:20:00Z",
+      "query": "the altruists cast",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-23T00:30:00Z",
       "related_news_urls": [
-        "https://www.footballguys.com/article/2026-rushing-matchups-11",
-        "https://www.nytimes.com/athletic/7788601/2026/11/17/fantasy-football-drops-cuts-week-11-nix-dobbins-waddle/",
-        "https://fantasyfootballcalculator.com/start/j.k.-dobbins-or-carnell-tate"
+        "https://www.netflix.com/tudum/articles/the-altruists-cast-guide",
+        "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFjjnLunq1byN1c1rSgkXiGubf0T4fVqTnJZ6lD-9LtBw9EJ9V-1HaeB0BfU",
-      "image_credit": "Footballguys",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgShiITdwsHan1wh5bfeDu96KLmAofftale7duP5BuEnpkrkm4cgdAfNv5M5M",
+      "image_credit": "Netflix",
       "news": [
         {
-          "url": "https://www.footballguys.com/article/2026-rushing-matchups-11",
-          "title": "Week 11 Rushing Matchups",
-          "publisher": "Footballguys",
+          "url": "https://www.netflix.com/tudum/articles/the-altruists-cast-guide",
+          "title": "Who Is in The Altruists Cast? Meet the Unlikely Billionaires",
+          "publisher": "Netflix",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaFjjnLunq1byN1c1rSgkXiGubf0T4fVqTnJZ6lD-9LtBw9EJ9V-1HaeB0BfU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgShiITdwsHan1wh5bfeDu96KLmAofftale7duP5BuEnpkrkm4cgdAfNv5M5M"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7788601/2026/11/17/fantasy-football-drops-cuts-week-11-nix-dobbins-waddle/",
-          "title": "Unless it’s Jonah Coleman, it’s time to purge Broncos from your fantasy roster",
-          "publisher": "The New York Times",
+          "url": "https://www.businessinsider.com/where-is-caroline-ellison-now-ftx-alameda-new-job-2026-11",
+          "title": "Where is Caroline Ellison now? She's out of prison and landed a nonprofit job",
+          "publisher": "Business Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxfBONj1xMkvo3bajutFMFfC4WKUfrSwOteVJs3SjCHhlXE_5qNSqnX6hXvc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqKDFP6fEjjKXxYr0mb0l83sp386D8Lfs6Us7pjXOo9eDMRD4NMbBPAWKP2GA"
         },
         {
-          "url": "https://fantasyfootballcalculator.com/start/j.k.-dobbins-or-carnell-tate",
-          "title": "Who Should I Start? J.K. Dobbins or Carnell Tate",
-          "publisher": "Fantasy Football Calculator",
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/19/the-altruists-review-anthony-boyle-julia-garner",
+          "title": "The Altruists review – two of TV’s best actors light up this chaotic crypto tale",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2iJVmi4g7ICK9k-Ub5OhGIIov11fuuYvZv9VoYFxxkTxi_WDF5I5DN1KmcLc"
-        }
-      ]
-    },
-    {
-      "query": "riley moss",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-nov-19",
-        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/21/riley-moss-contract-details-salary-cap-hits/92905267007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50532392/sources-broncos-sign-cb-riley-moss-four-year-extension",
-          "title": "Sources -- Broncos sign CB Riley Moss to four-year extension",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ1tXHx7M0xkF15xguWA2z2_V7YwPXVYiXJeVZcfR8Zerjx4KdOVaYq7yTSW0"
-        },
-        {
-          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-thursday-nov-19",
-          "title": "NFL news roundup: Broncos, CB Riley Moss agree to terms on four-year, $67 million extension",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
-        },
-        {
-          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/21/riley-moss-contract-details-salary-cap-hits/92905267007/",
-          "title": "Riley Moss contract details revealed (view his salary cap hits)",
-          "publisher": "Broncos Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRX0TlMY1qpA8IHAPl0Y-OWkzzlbxKYpzcdY8zYP6rxGaJyq-4flU77Yt9e-9Y"
-        }
-      ]
-    },
-    {
-      "query": "ncis new york",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T00:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66123200/?ref_=nmnw_art_perm",
-        "https://bleedingcool.com/tv/ncis-new-york-returns-in-december-the-river-statuario-previews/",
-        "https://film-book.com/ncis-new-york-season-1-episode-7-the-river-tv-show-trailer/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW7sPHzbP15qTJkdlJYwZnB_ptNJ88yQyj0agLCaM1VdxZFhcL972Jj_Unb2g",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66123200/?ref_=nmnw_art_perm",
-          "title": "‘NCIS: New York’ Officially Gets a Special Sunday Episode Release",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW7sPHzbP15qTJkdlJYwZnB_ptNJ88yQyj0agLCaM1VdxZFhcL972Jj_Unb2g"
-        },
-        {
-          "url": "https://bleedingcool.com/tv/ncis-new-york-returns-in-december-the-river-statuario-previews/",
-          "title": "NCIS: New York Returns in December: \"The River\" & \"Statuario\" Previews",
-          "publisher": "Bleeding Cool News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaCV6ydxk_MsBcMbK20-0q2Xt7HiKYILWq_H7gfteZV9uYUfBpG_dl9CofNNE"
-        },
-        {
-          "url": "https://film-book.com/ncis-new-york-season-1-episode-7-the-river-tv-show-trailer/",
-          "title": "NCIS: New York: Season 1, Episode 7: The River TV Show Trailer",
-          "publisher": "Film-Book.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkJIoUn2y1zy0v9dPu8lI9H5ztvxcke7Jb-we3QLcq5b_iziKJ-t_Y8Rj1N4c"
-        }
-      ]
-    },
-    {
-      "query": "pacers vs knicks",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-23T00:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/final-injury-report-pacers-knicks-210000310.html",
-        "https://www.nba.com/knicks/news/knicks-vs-pacers-game-notes-november-22-2026",
-        "https://www.si.com/nba/pacers/onsi/indiana-pacers-new-york-knicks-preview-injuries-how-to-watch-odds-starters-01m81jx2x0m8"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/final-injury-report-pacers-knicks-210000310.html",
-          "title": "Final Injury Report for Pacers-Knicks: Will Karl-Anthony Towns, Pascal Siakam Play?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVSqsoMD4wEtNiECGOL8tS1uVU2qcPSeI-MW0wFgHXmtJYSZ8V4YOiVwSpbvM"
-        },
-        {
-          "url": "https://www.nba.com/knicks/news/knicks-vs-pacers-game-notes-november-22-2026",
-          "title": "Knicks vs Pacers Game Notes | November 22, 2026",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_HubFFbSDT9lioeqxKxVeKeoB0hbdwGHio-fR1MSr8-igeGlWXPUzLYI5b2k"
-        },
-        {
-          "url": "https://www.si.com/nba/pacers/onsi/indiana-pacers-new-york-knicks-preview-injuries-how-to-watch-odds-starters-01m81jx2x0m8",
-          "title": "Indiana Pacers-New York Knicks Preview: Injuries, How to Watch, Odds & Starters",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdoqGcWXVL9usuUksPLn5UGSxJ-1_fJTL8IKaYjEpm9-2_-SOJX64xQDLCZ8"
-        }
-      ]
-    },
-    {
-      "query": "blackhawks vs canucks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-23T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/chicago-blackhawks-vancouver-canucks-game-preview-november-22-2026",
-        "https://sports.yahoo.com/articles/blackhawks-vs-canucks-prediction-picks-165038924.html",
-        "https://www.nytimes.com/athletic/7803625/2026/11/22/blackhawks-vs-canucks-stream-how-to-watch-nov-22/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/chicago-blackhawks-vancouver-canucks-game-preview-november-22-2026",
-          "title": "Blackhawks at Canucks projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/blackhawks-vs-canucks-prediction-picks-165038924.html",
-          "title": "Blackhawks vs Canucks Prediction, Picks, NHL Odds for Sunday, November 22",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnZHovOv-7yO8FhGA7wcbH3C7USR-98YvYfbruTe0z8QgXYWXBCOWmGfnaqVE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7803625/2026/11/22/blackhawks-vs-canucks-stream-how-to-watch-nov-22/",
-          "title": "How to watch Blackhawks vs. Canucks: TV channel and streaming options for November 22",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoHb2wEF5UwYlknqIn-1xTH2pRqtMW7xl-d2MVHz2z7FqbJ3YXe-XPtZ6s-lo"
-        }
-      ]
-    },
-    {
-      "query": "dre greenlaw",
-      "approx_searches": "500+",
-      "published_at": "2026-11-23T00:10:00Z",
-      "related_news_urls": [
-        "https://www.ninersnation.com/san-francisco-49ers-injuries/166136/49ers-inactive-list-dre-greenlaw-is-out-veteran-wide-receiver-is-a-healthy-scratch",
-        "https://www.cbssports.com/fantasy/football/news/49ers-demarcus-robinson-inactive-for-snf/",
-        "https://www.thefantasyfootballers.com/news/649225/demarcus-robinson-inactive-for-snf/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMJX4JDz9MRqkEpg_kSX7k4TdPj3lgCwka3zqchrelgDNCmO7Pb-enrNLEjQ",
-      "image_credit": "Niners Nation",
-      "news": [
-        {
-          "url": "https://www.ninersnation.com/san-francisco-49ers-injuries/166136/49ers-inactive-list-dre-greenlaw-is-out-veteran-wide-receiver-is-a-healthy-scratch",
-          "title": "49ers inactive list: Dre Greenlaw is out; veteran wide receiver is a healthy scratch",
-          "publisher": "Niners Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyMJX4JDz9MRqkEpg_kSX7k4TdPj3lgCwka3zqchrelgDNCmO7Pb-enrNLEjQ"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/49ers-demarcus-robinson-inactive-for-snf/",
-          "title": "49ers' Demarcus Robinson: Inactive for SNF",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTJ6gwJCH7IU0Wx2qdBpkDgPi90hjl_3BZbe45wktHa-N3I9fcmFQRmNiDV1k"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/649225/demarcus-robinson-inactive-for-snf/",
-          "title": "Demarcus Robinson Inactive for SNF",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYnuVoUURg3PJHwjvtKNfoBptFI9-L6ofBViyb7yteZLmIxJVk2-BvA5jLM0Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUNwzeb6SFM2QYA965SNpkBXmOzBftFmeayoQcphEej4Z76ZXExR2R1vKZlV0"
         }
       ]
     }
