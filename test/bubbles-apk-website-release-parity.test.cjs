@@ -10,21 +10,33 @@ const native=read('android/bubbles-overlay/app/src/main/java/org/quantaphi/bubbl
 const doc=read('bubbles.html');
 const revision=doc.match(/<script\b[^>]*\bsrc=["']\/bubbles-ai\.js\?v=([^"'&]+)[^"']*["']/i)?.[1];
 
+// Exercise the production cleanup helper alongside extracted lifecycle functions.
+const mediaCleanup=site.slice(site.indexOf('function clearAttachments(){'),site.indexOf('function updateMediaPreview(){'));
+function mediaState(state){
+ state.pendingVideos??=[];
+ state.photoThumb??={removeAttribute:()=>{}};
+ return state;
+}
+const createMediaContext=state=>vm.createContext(mediaState(state));
+const runMediaContext=(source,state)=>vm.runInNewContext(mediaCleanup+source,mediaState(state));
+const runMediaInContext=(source,state)=>vm.runInContext(mediaCleanup+source,state);
+
+
 let sessionSerial=0;
 function openingThread({lastTab='',siteUpdate=false}={}){
  const begin=site.indexOf("let lastTab='',resumeSiteUpdate=false;");
  const end=site.indexOf("try{\n sessionStorage.setItem(TAB_THREAD,activeThread)",begin);
  assert.ok(begin>0&&end>begin);
  const store=new Map([[ 'tab',lastTab],['tab:site-update-reload',siteUpdate?'1':'0']]);
- const scope=vm.createContext({
+ const scope=createMediaContext({
   embedded:false,keepChat:false,
   sessionStorage:{getItem:key=>store.get(key)||null,removeItem:key=>store.delete(key)},
   TAB_THREAD:'tab',UPDATE_RELOAD_THREAD:'tab:site-update-reload',
   threadIndex:lastTab?[{id:lastTab}]:[],
   crypto:{randomUUID:()=>String(++sessionSerial).padStart(32,'0')}
  });
- vm.runInContext(site.slice(begin,end),scope);
- return {id:vm.runInContext('activeThread',scope),markerCleared:!store.has('tab:site-update-reload')};
+ runMediaInContext(site.slice(begin,end),scope);
+ return {id:runMediaInContext('activeThread',scope),markerCleared:!store.has('tab:site-update-reload')};
 }
 
 test('website and APK share the same Brain, but each opening starts its own fresh chat',()=>{
@@ -72,31 +84,33 @@ test('APK loads the current live website, not an HTML build pinned to the APK ve
 });
 
 
-async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false,speaking=false,voiceStarting=false,voiceEnabled=false,nativeRecordingActive=false}={}){
+async function simulateSiteRevisionCheck({draft='',noteDraft='',workDraft='',photo=false,photos=0,videos=0,lateVideo=false,lateDraft=null,lateNoteDraft=null,lateWorkDraft=null,saveFails=false,historyDisabled=false,activeMessages=0,markerFails=false,speaking=false,voiceStarting=false,voiceEnabled=false,nativeRecordingActive=false}={}){
  const begin=site.indexOf('let siteVersionChecking=false,lastSiteVersionCheck=0;');
  const end=site.indexOf('window.QuantaBubbles={',begin);
  assert.ok(begin>0&&end>begin,'actual first-party updater is present');
  const input={value:draft},noteText={value:noteDraft},workText={value:workDraft},events=[];
- const scope=vm.createContext({
+ const scope=createMediaContext({
   embedded:false,Date:{now:()=>60000},URL,siteRevision:'previous',
   location:{origin:'https://quantaphi.org',reload:()=>events.push('reload')},
   bubblesFetch:async()=>{
    if(lateDraft!==null)input.value=lateDraft;
    if(lateNoteDraft!==null)noteText.value=lateNoteDraft;
    if(lateWorkDraft!==null)workText.value=lateWorkDraft;
+   if(lateVideo)scope.pendingVideos.push({name:'late.webm'});
    return {ok:true,text:async()=>'<script src="/bubbles-ai.js?v=next-revision"></script>'};
   },
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   speaking,voiceStarting,voiceEnabled,nativeRecordingActive,
   input,noteText,workText,pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
+  pendingVideos:Array.from({length:videos},()=>({name:'unsent.webm'})),
   keepChat:!historyDisabled,messages:Array.from({length:activeMessages},()=>({role:'user',text:'existing turn'})),
   saveThread:()=>{events.push('saved');return !saveFails;},
   sessionStorage:{setItem:(key,value)=>{if(markerFails)throw Error('sessionStorage unavailable');events.push('marker:'+key+':'+value)}},
   UPDATE_RELOAD_THREAD:'site-update-reload'
  });
- vm.runInContext(site.slice(begin,end),scope);
- const result=await vm.runInContext('checkForSiteUpdate()',scope);
+ runMediaInContext(site.slice(begin,end),scope);
+ const result=await runMediaInContext('checkForSiteUpdate()',scope);
  return {result,events};
 }
 
@@ -108,6 +122,8 @@ test('revision updater never reloads over unsent Android composer text or photos
   {workDraft:'Unsent Robot Brain source request'},
   {photo:true},
   {photos:2},
+  {videos:20},
+  {lateVideo:true},
   {lateDraft:'Text typed while the revision request was pending'},
   {lateNoteDraft:'Note written during update check'},
   {lateWorkDraft:'Brain work request written during update check'}
@@ -144,18 +160,20 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
   {noteDraft:'Private note still being written'},
   {workDraft:'Robot Brain job not yet submitted'},
   {photo:true},
-  {photos:2}
+  {photos:2},
+  {videos:20}
  ];
- const run=({draft='',noteDraft='',workDraft='',photo=false,photos=0}={})=>{
+ const run=({draft='',noteDraft='',workDraft='',photo=false,photos=0,videos=0}={})=>{
   let started=0;
   const ctx={
    nativeOverlay:true,busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
    keepChat:true,messages:[],
    input:{value:draft},noteText:{value:noteDraft},workText:{value:workDraft},
    pendingImage:photo?{data:'photo'}:null,pendingImages:Array.from({length:photos},()=>({data:'photo'})),
+   pendingVideos:Array.from({length:videos},()=>({name:'unsent.webm'})),
    startConversation:()=>{started++;return true}
   };
-  const fn=vm.runInNewContext(code,ctx).startFreshOnReopen;
+  const fn=runMediaContext(code,ctx).startFreshOnReopen;
   return {result:fn(),started};
  };
  for(const scenario of cases){
@@ -164,19 +182,20 @@ test('Android Hide/reopen cannot start a new conversation over any unsent draft'
  assert.deepEqual(run(),{result:true,started:1},'an empty panel may start a fresh chat');
  assert.match(site,/if\(reopening&&!nativeOverlay&&!embedded&&!unsentDraft\)void startConversation\(\{automatic:true\}\)/,
   'website reopen must use the same unsent draft guard');
- assert.match(site,/const unsentDraft=Boolean\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\)/);
+ assert.match(site,/const unsentDraft=Boolean\(input\.value\.length\|\|noteText\.value\.length\|\|workText\.value\.length\|\|pendingImage\|\|pendingImages\.length\|\|pendingVideos\.length\)/);
 });
 
-async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,photos=0,approve=false,automatic=false}={}){
+async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,photos=0,videos=0,approve=false,automatic=false}={}){
  const begin=site.indexOf('function startConversation({automatic=false}={}){');
  const end=site.indexOf("newConversation.addEventListener('click'",begin);
  assert.ok(begin>0&&end>begin,'actual first-party New chat handler exists');
  const events=[],input={value:draft,focus:()=>events.push('focus')};
- const scope=vm.createContext({
+ const scope=createMediaContext({
   busy:false,nativeBridgeBusy:false,nativeSpeechPending:false,voicePending:[],nativeRecordingActive:false,voiceStarting:false,voiceEnabled:false,speaking:false,
   input,noteText:{value:noteDraft},workText:{value:workDraft},
   pendingImage:photo?{data:'unsent-photo'}:null,
   pendingImages:Array.from({length:photos},()=>({data:'unsent-photo'})),
+  pendingVideos:Array.from({length:videos},()=>({name:'unsent.webm'})),
   keepChat:true,messages:[{role:'user',text:'previous turn'}],
   saveThread:()=>events.push('saved'),
   threadIndex:[{id:'previous',title:'Earlier chat',updated:1}],activeThread:'previous',
@@ -191,24 +210,26 @@ async function simulateNewChat({draft='',noteDraft='',workDraft='',photo=false,p
   chatsPanel:{open:true},status:{textContent:''},nativeOverlay:true,ownerReady:false,
   confirm:()=>{events.push('confirm');return approve}
  });
- vm.runInContext(site.slice(begin,end),scope);
- const result=await vm.runInContext(automatic?'startConversation({automatic:true})':'startConversation()',scope);
- return {result,events,composer:input.value,photos:scope.pendingImages.length,thread:scope.activeThread};
+ runMediaInContext(site.slice(begin,end),scope);
+ const result=await runMediaInContext(automatic?'startConversation({automatic:true})':'startConversation()',scope);
+ return {result,events,composer:input.value,photos:scope.pendingImages.length,videos:scope.pendingVideos.length,thread:scope.activeThread};
 }
 
 test('explicit New chat never silently discards unsent text or photos',async()=>{
- for(const scenario of [{draft:'Fifteen minutes of writing'},{draft:'   '},{photo:true},{photos:2}]){
+ for(const scenario of [{draft:'Fifteen minutes of writing'},{draft:'   '},{photo:true},{photos:2},{videos:20}]){
   const cancelled=await simulateNewChat(scenario);
   assert.equal(cancelled.result,false);
   assert.deepEqual(cancelled.events,['confirm'],'cancel must not save, reset, or change the session');
   assert.equal(cancelled.thread,'previous');
   assert.equal(cancelled.composer,scenario.draft||'');
   assert.equal(cancelled.photos,scenario.photos||0);
+  assert.equal(cancelled.videos,scenario.videos||0);
   const approved=await simulateNewChat({...scenario,approve:true});
   assert.equal(approved.result,true);
   assert.equal(approved.thread,'chat_new');
   assert.equal(approved.composer,'');
   assert.equal(approved.photos,0);
+  assert.equal(approved.videos,0);
   assert.equal(approved.events[0],'confirm');
  }
  const empty=await simulateNewChat();
@@ -219,7 +240,7 @@ test('explicit New chat never silently discards unsent text or photos',async()=>
 test('automatic fresh chat fails closed even if caller skips its draft guard',async()=>{
  for(const scenario of [
   {draft:'unfinished'}, {noteDraft:'private note'}, {workDraft:'Brain job draft'},
-  {photo:true}, {photos:2}
+  {photo:true}, {photos:2}, {videos:20}
  ]){
   const result=await simulateNewChat({...scenario,automatic:true});
   assert.equal(result.result,false);
@@ -281,11 +302,30 @@ test('native reopen acknowledges only a successful synchronous fresh-chat reset'
    pendingImage:null,pendingImages:[],
    startConversation:()=>{calls++;return succeeded}
   };
-  const fn=vm.runInNewContext('({'+site.slice(begin,end)+'}).startFreshOnReopen',ctx);
+  const fn=runMediaContext('({'+site.slice(begin,end)+'}).startFreshOnReopen',ctx);
   return {result:fn(),calls};
  };
  assert.deepEqual(make(false),{result:false,calls:1},
   'Android must not acknowledge a new chat when storage prevents the reset');
  assert.deepEqual(make(true),{result:true,calls:1},
   'a genuinely completed reset may still acknowledge success');
+});
+
+
+test('video-only drafts survive automatic updates and require explicit consent to discard',async()=>{
+ const update=await simulateSiteRevisionCheck({videos:20});
+ assert.equal(update.result,false);
+ assert.deepEqual(update.events,[]);
+ const late=await simulateSiteRevisionCheck({lateVideo:true});
+ assert.equal(late.result,false,'video added during revision fetch must block reload');
+ assert.deepEqual(late.events,[]);
+ const automatic=await simulateNewChat({videos:20,automatic:true});
+ assert.equal(automatic.result,false);
+ assert.equal(automatic.videos,20);
+ const cancelled=await simulateNewChat({videos:20});
+ assert.equal(cancelled.result,false);
+ assert.equal(cancelled.videos,20);
+ const approved=await simulateNewChat({videos:20,approve:true});
+ assert.equal(approved.result,true);
+ assert.equal(approved.videos,0);
 });

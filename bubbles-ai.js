@@ -356,7 +356,7 @@ if(!threadIndex.some(t=>t.id===activeThread)){
 }
 const readThread=id=>(data(THREAD_PREFIX+id,[])||[]).filter(m=>m&&['user','assistant'].includes(m.role)&&typeof m.text==='string').slice(-400);
 let messages=keepChat?readThread(activeThread):[];
-messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text.slice(0,6000)}));
+messages=messages.map(m=>({...m,sessionId:activeThread,id:m.id||crypto.randomUUID(),at:m.at||Date.now(),text:m.text}));
 let greeted=messages.length>0,busy=false,turnPending=false,listening=null,ownerToken='',ownerHeaders=null,ownerReady=false,showing=false;
 let voiceResumeWanted=false,voiceStarting=false,heardUntil=0;
 let voiceEnabled=false,recognition=null,voicePending=[],speaking=false,voiceRetry=null,tries=0;
@@ -1038,22 +1038,33 @@ const browserHome=!embedded?create('div','ba-browser-home'):null;
 const composer=create('form','ba-composer');
 let pendingImage=null;
 let pendingImages=[];
-const photoInput=create('input','ba-field ba-photo-file');photoInput.type='file';photoInput.multiple=true;photoInput.accept='image/jpeg,image/png,image/webp';photoInput.setAttribute('aria-label','Add image or screenshot');
+let pendingVideos=[];
+const photoInput=create('input','ba-field ba-photo-file');photoInput.type='file';photoInput.multiple=true;photoInput.accept='image/jpeg,image/png,image/webp,video/mp4,video/webm,video/quicktime';photoInput.setAttribute('aria-label','Add images or videos (16 images, 20 videos)');
 const photoRow=create('div','ba-photo-upload');
-const photoLabel=create('span','ba-photo-label','📷 Image');photoRow.append(photoLabel,photoInput);
+const photoLabel=create('span','ba-photo-label','📎 Media');photoRow.append(photoLabel,photoInput);
 const photoPreview=create('div','ba-photo-preview');photoPreview.hidden=true;
 const photoThumb=create('img');photoThumb.alt='Selected image preview';
 const photoStatus=create('span','','');
-const removePhoto=create('button','ba-control','Remove image');removePhoto.type='button';
-removePhoto.addEventListener('click',()=>{pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;status.textContent='Images removed before sending.';});
+const removePhoto=create('button','ba-control','Remove attachments');removePhoto.type='button';
+function clearAttachments(){pendingImage=null;pendingImages=[];pendingVideos=[];photoInput.value='';photoThumb.removeAttribute('src');photoPreview.hidden=true;}
+function updateMediaPreview(){
+ photoThumb.hidden=!pendingImages.length;
+ photoStatus.textContent=pendingImages.length+'/16 images · '+pendingVideos.length+'/20 videos: '+[...pendingImages,...pendingVideos].map(item=>item.name).join(', ');
+ photoPreview.hidden=!(pendingImages.length||pendingVideos.length);
+}
+removePhoto.addEventListener('click',()=>{if(busy||turnPending)return;clearAttachments();status.textContent='Attachments removed before sending.';});
 photoPreview.append(photoThumb,photoStatus,removePhoto);
 photoInput.addEventListener('change',async()=>{
- if(busy)return;
+ if(busy||turnPending)return;
  const preparationThread=activeThread;
  const files=Array.from(photoInput.files||[]);if(!files.length)return;
- if(files.length+pendingImages.length>4){status.textContent='Attach up to four images per message.';photoInput.value='';return;}
  busy=true;photoInput.disabled=true;send.disabled=true;
- try{for(const file of files){
+ try{
+ const {validateMediaBatch}=await import('/bubbles-media-attachments.mjs?v=20261121-media1');
+ validateMediaBatch(files,pendingImages.length,pendingVideos.length);
+ for(const file of files){
+ if(activeThread!==preparationThread)throw Error('Conversation changed during media preparation');
+ if(file.type.startsWith('video/')){pendingVideos.push(file);updateMediaPreview();status.textContent='Video attached. Send to read sampled frames; audio is not transcribed.';continue;}
  if(!/^image\/(?:jpeg|png|webp)$/.test(file.type)||file.size>8*1024*1024){photoInput.value='';status.textContent='Choose a JPEG, PNG or WebP image smaller than 8 MB.';continue;}
  status.textContent='Preparing image privately on your phone…';
  const objectUrl=URL.createObjectURL(file);
@@ -1069,13 +1080,13 @@ photoInput.addEventListener('change',async()=>{
   pendingImage={data:encoded,name:String(file.name||'photo').slice(0,100)};
   if(activeThread!==preparationThread){pendingImage=pendingImages.at(-1)||null;throw Error('Conversation changed during image preparation');}
   pendingImages.push(pendingImage);
-  photoThumb.src=encoded;photoStatus.textContent=pendingImages.length+' images · '+pendingImages.map(item=>item.name).join(', ');photoPreview.hidden=false;
+  photoThumb.src=encoded;updateMediaPreview();
   status.textContent='Image attached. Ask Bubbles about it and tap Send. Nothing uploaded yet.';
  }catch(error){status.textContent='Image unavailable: '+String(error.message||error).slice(0,110);}
  finally{URL.revokeObjectURL(objectUrl);}
- }}finally{busy=false;photoInput.disabled=false;send.disabled=false;photoInput.value='';}
+ }}catch(error){status.textContent=String(error.message||error);}finally{busy=false;photoInput.disabled=false;send.disabled=false;photoInput.value='';}
 });
-const input=create('textarea','ba-field');input.rows=2;input.maxLength=2500;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
+const input=create('textarea','ba-field');input.rows=2;input.placeholder=nativeOverlay?'Message Bubbles or paste a code…':'Say something, ask a question, or describe a task…';input.setAttribute('aria-label','Message Bubbles');
 const actions=create('div','ba-actions');
 const mic=create('button','ba-mic','🎙 Enable listening');mic.type='button';mic.setAttribute('aria-pressed','false');
 const speak=create('button','ba-speak','🔇 Voice off');speak.type='button';speak.setAttribute('aria-pressed','false');
@@ -2068,10 +2079,10 @@ async function openConversation(id){
  if(id===activeThread)return true;
  // A History click must not silently move an unfinished message or photo
  // into a different conversation. History-off turns are not recoverable.
- const hasUnsent=Boolean(input.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length));
- if(hasUnsent&&!confirm('Open another conversation? Your unsent message, photos or unsaved turns will be discarded.'))return false;
+ const hasUnsent=Boolean(input.value.length||pendingImage||pendingImages.length||pendingVideos.length||(!keepChat&&messages.length));
+ if(hasUnsent&&!confirm('Open another conversation? Your unsent message, attachments or unsaved turns will be discarded.'))return false;
  const previousThread=activeThread,previousDraft=input.value,previousPhoto=pendingImage;
- const previousPhotos=[...pendingImages],previousMessages=[...messages];
+ const previousPhotos=[...pendingImages],previousVideos=[...pendingVideos],previousMessages=[...messages];
  // A cloud History response is valid only for the verified owner session that
  // started the request. A wallet change, sign-out or re-pair must not apply
  // an old account's response to the currently visible chat.
@@ -2092,7 +2103,16 @@ async function openConversation(id){
    if(result.session?.title){const entry=threadIndex.find(x=>x.id===id);if(entry)entry.title=result.session.title;}
    // An empty or not-yet-synced cloud folder must not erase saved device History.
    // Prefer verified nonempty cloud turns, but retain the local copy on empty.
-   if(result.messages.length||!next.length)next=result.messages;
+   if(result.messages.length||!next.length){
+    // Cloud storage keeps bounded excerpts. Reopening must retain this device's
+    // full text when the verified cloud turn is an exact prefix of the same ID.
+    const localById=new Map(next.map(item=>[item.id,item]));
+    next=result.messages.map(remote=>{
+     const local=localById.get(remote.id);
+     return local?.role===remote.role&&typeof local.text==='string'&&typeof remote.text==='string'&&
+      local.text.length>remote.text.length&&local.text.startsWith(remote.text)?{...remote,text:local.text}:remote;
+    });
+   }
   }catch{chatsMessage.textContent='Showing the saved device copy. Cloud history was unavailable.'}
  }
  if(ownerReady!==ownerReadyAtStart||ownerHeaders!==ownerAtStart||(ownerHeaders?.Authorization||'')!==ownerAuthorizationAtStart){
@@ -2104,11 +2124,12 @@ async function openConversation(id){
  if(activeThread!==previousThread||busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking||
     input.value!==previousDraft||pendingImage!==previousPhoto||
     pendingImages.length!==previousPhotos.length||pendingImages.some((p,i)=>p!==previousPhotos[i])||
+    pendingVideos.length!==previousVideos.length||pendingVideos.some((p,i)=>p!==previousVideos[i])||
     messages.length!==previousMessages.length||messages.some((m,i)=>m!==previousMessages[i])){
-  chatsMessage.textContent='This chat changed while History was loading. Your current message and photos were kept; try again.';
+  chatsMessage.textContent='This chat changed while History was loading. Your current message and attachments were kept; try again.';
   return false;
  }
- pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
+ clearAttachments();
  input.value='';
  activeThread=id;
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
@@ -2134,14 +2155,14 @@ function startConversation({automatic=false}={}){
  // Starting a new chat is destructive for unsent text and photos. An
  // explicit click needs confirmation; an automatic reopen must never erase
  // chat, Notes, or Robot Brain drafts, even if its caller misses a guard.
- const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length);
+ const unsentChat=Boolean(input.value.length||pendingImage||pendingImages.length||pendingVideos.length);
  // With History disabled, the transcript itself is unsaved work even if the
  // composer is empty. Require a deliberate confirmation for an explicit reset.
  const unsavedTurns=!keepChat&&messages.length>0;
  if(automatic&&(unsentChat||noteText.value.length||workText.value.length||unsavedTurns))return false;
  const discardWarning=unsavedTurns
-  ?'Start a new chat? History is off, so this conversation and any unsent message or photos will be discarded permanently.'
-  :'Start a new chat? Your unsent message and photos will be discarded.';
+  ?'Start a new chat? History is off, so this conversation and any unsent message or attachments will be discarded permanently.'
+  :'Start a new chat? Your unsent message and attachments will be discarded.';
  if(!automatic&&(unsentChat||unsavedTurns)&&!confirm(discardWarning))return false;
  if(keepChat&&messages.length&&!saveThread()){
   chatsMessage.textContent='This conversation could not be saved on this device. Keep it open and free storage before starting a new chat.';
@@ -2161,7 +2182,7 @@ function startConversation({automatic=false}={}){
   return false;
  }
  threadIndex=nextIndex;
- pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;
+ clearAttachments();
  activeThread=nextThread;
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'session_changed'}}));
  try{
@@ -2398,7 +2419,7 @@ let panelWasOpened=false;
 function toggle(open){
  const reopening=Boolean(open)&&!showing&&panelWasOpened;
  // A collapsed Bubbles panel is not consent to erase unsent chat, Notes or Brain work.
- const unsentDraft=Boolean(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length);
+ const unsentDraft=Boolean(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||pendingVideos.length);
  if(reopening&&!nativeOverlay&&!embedded&&!unsentDraft)void startConversation({automatic:true});
  showing=Boolean(open);
  if(showing)panelWasOpened=true;
@@ -2598,14 +2619,18 @@ window.addEventListener('bubbles:ai-consult',event=>{
 async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  let spoken=String(text||'').trim();
  // Voice turns must never overwrite partially typed messages.
- const clearSentComposer=()=>{if(!fromVoice&&input.value.trim()===spoken)input.value='';};
+ const submittedDraft=input.value,submittedThread=activeThread;
+ let composerCleared=false;
+ const clearSentComposer=()=>{if(!fromVoice&&input.value.trim()===spoken){input.value='';composerCleared=true;}};
  // Observation is delivered separately so its untrusted words can never be
  // classified as an owner job, local tool command, navigation, or approval.
  const nativeEvidence=nativeOverlay?String(androidScreenEvidence||'').slice(0,7000):'';
  const roomEvidencePrefix='BUBBLES_ROOM_CONTEXT_V1\\n'.replace('\\n','\n');
  let roomContext=nativeEvidence.startsWith(roomEvidencePrefix)?nativeEvidence.slice(roomEvidencePrefix.length,roomEvidencePrefix.length+900):'';
  let screenEvidence=roomContext?'':nativeEvidence;
- if(!spoken&&!pendingImage)return;
+ if(!spoken&&!pendingImage&&!pendingVideos.length)return;
+ // Text entry has no cap. Service bounds must never silently shorten a message.
+ if(spoken.length>32000){status.textContent='This message is too long to process at once (32,000 characters). Your full draft is kept; send it in smaller parts.';return;}
  // Serialize from before the first asynchronous owner-memory or pairing read.
  if(busy||turnPending)return;
  turnPending=true;
@@ -2614,7 +2639,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  if(spoken&&await consumeOwnerCodeFromChat(spoken,fromVoice))return;
  if(/^complete me ai(?:$|\s*[-–—:])/i.test(spoken)){
   if(embedded){status.textContent='Open Bubbles on QuantaPhi to use Complete Me AI.';return;}
-  if(pendingImage||pendingImages.length){status.textContent='Complete Me AI uses a text brief. Your attachment is still in the composer.';return;}
+  if(pendingImage||pendingImages.length||pendingVideos.length){status.textContent='Complete Me AI uses a text brief. Your attachment is still in the composer.';return;}
   const thread=activeThread;
   try{
    const {openCompleteMe}=await import('/bubbles-complete-me.mjs');
@@ -2638,7 +2663,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   let decision;
   try{
    const {routeClaudeTurn}=await import('/bubbles-claude-routing.mjs?v=20261108-claude-choice1');
-   decision=routeClaudeTurn(modelChoice.value,spoken,Boolean(pendingImage||pendingImages.length));
+   decision=routeClaudeTurn(modelChoice.value,spoken,Boolean(pendingImage||pendingImages.length||pendingVideos.length));
   }catch(error){
    status.textContent='Claude routing unavailable: '+String(error.message||error).slice(0,110)+'. Your message was preserved.';
    return;
@@ -2759,7 +2784,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   if(fromVoice)nativeSpeechReply=answer;
   return;
  }
- const preference=!embedded&&!pendingImage?brainTools?.notificationPreference?.(spoken):null;
+ const preference=!embedded&&!pendingImage&&!pendingVideos.length?brainTools?.notificationPreference?.(spoken):null;
  if(preference){
   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();
   let answer;
@@ -2792,7 +2817,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Plain-English actions are routed to actual registered UI/tool adapters.
  // This avoids asking a freeform model to narrate taps, reads, or card actions.
  // The parser uses ONLY the user's current command, never screen/website text.
- if(!embedded&&!pendingImage&&/\b(?:tap|click|press|hit|push|choose|select|read|scan|inspect|show|look at|type|enter|fill|what's on|what is on)\b/i.test(spoken)){
+ if(!embedded&&!pendingImage&&!pendingVideos.length&&/\b(?:tap|click|press|hit|push|choose|select|read|scan|inspect|show|look at|type|enter|fill|what's on|what is on)\b/i.test(spoken)){
   let toolAction=null,actionDriver=null;
   try{
    actionDriver=await import('/bubbles-action-driver.mjs?v=20261022-observed-card1');
@@ -2842,7 +2867,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  }
  // Resolve every spoken/typed turn against known cards first, including "Media Star card".
  // Card opening is read-only; owner-only Robot Brain and payment controls keep their own gates.
- if(!pendingImage){
+ if(!pendingImage&&!pendingVideos.length){
   try{
    const {module,workspace}=await chatCardWorkspace();
    const intent=module.cardIntent(spoken);
@@ -2877,7 +2902,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // Registered Bubbles tool inventory is a first-party, read-only gateway operation.
  // Do not burn model inference, open a provider popup, or impersonate owner
  // authorization just to answer "what tools can you use?".
- const nativeCapabilityDiscovery=!pendingImage&&await import('/bubbles-capability-intent.mjs?v=20261108-shared1')
+ const nativeCapabilityDiscovery=!pendingImage&&!pendingVideos.length&&await import('/bubbles-capability-intent.mjs?v=20261108-shared1')
   .then(module=>module.isCapabilityDiscoveryQuestion(spoken)).catch(()=>false);
  if(nativeCapabilityDiscovery){
   busy=true;send.disabled=true;display(spoken,'you');clearSentComposer();setOrbState('thinking');
@@ -2910,7 +2935,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // and one read-only phone observation. It does not execute model-generated
  // permissions, repository writes, taps, payments or arbitrary scripts.
  // Existing deterministic routes still handle clear requests instantly.
- if(!pendingImage&&!embedded&&spoken.length<1000){
+ if(!pendingImage&&!pendingVideos.length&&!embedded&&spoken.length<1000){
   try{
    const {module,workspace}=await chatCardWorkspace();
    const catalog=module.cards.map(c=>({id:c.id,title:c.title,aliases:c.aliases||[]}));
@@ -2964,40 +2989,53 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // User-selected image is untrusted evidence and never grants owner work permissions.
  // Image findings are evidence only; explicit owner text determines work intent.
  let imageWorkEvidence='';
- if(pendingImage&&!fromVoice){
-  const selected=pendingImages.slice(),question=spoken||'Describe these images and their important visible details.';
+ if((pendingImage||pendingVideos.length)&&!fromVoice){
+  const selected=[...pendingImages,...pendingVideos.map(file=>({file,name:file.name}))],question=spoken||'Describe these images and sampled video frames and their important visible details.';
   const imageThread=activeThread;
   const findings=[];
-  busy=true;send.disabled=true;status.textContent='Reading attached images…';
+  busy=true;send.disabled=true;status.textContent='Reading attached media…';
   try{
-   for(let i=0;i<selected.length;i++){
-    const item=selected[i];
+   let imageNumber=0,videoNumber=0;
+   const readFrame=async(data,frameQuestion)=>{
+    if(activeThread!==imageThread)throw Error('Conversation changed during media analysis');
     const response=await bubblesFetch(AI,{method:'POST',headers:{'Content-Type':'application/json'},
-     body:JSON.stringify({request:question,image:item.data})},60000);
+     body:JSON.stringify({request:frameQuestion,image:data})},60000);
     const result=await response.json();
-    if(!response.ok||result.ok===false)throw Error(result.error||'Image analysis unavailable');
-    const answer=extract(result);if(!answer)throw Error('No image analysis was returned');
-    findings.push('Image '+(i+1)+' ('+item.name+'): '+answer);
+    if(!response.ok||result.ok===false)throw Error(result.error||'Media analysis unavailable');
+    const answer=extract(result);if(!answer)throw Error('No media analysis was returned');
+    return answer;
+   };
+   for(const item of selected){
+    if(item.file){
+     const {videoFrames}=await import('/bubbles-media-attachments.mjs?v=20261121-media1');
+     const frames=[];
+     for await(const frame of videoFrames(item.file)){
+      status.textContent='Reading video '+(videoNumber+1)+'/'+pendingVideos.length+' · '+frame.seconds.toFixed(1)+'s sampled frame…';
+      const frameQuestion=question.length<31600?question+'\nThis is one sampled video frame at '+frame.seconds.toFixed(1)+' seconds. Describe visible details only; no audio or full-motion review is available.':question;
+      frames.push(frame.seconds.toFixed(1)+'s: '+await readFrame(frame.data,frameQuestion));
+     }
+     findings.push('Video '+(++videoNumber)+' ('+item.name.slice(0,60)+'), sampled frames only, no audio: '+frames.join(' | '));
+    }else findings.push('Image '+(++imageNumber)+' ('+item.name.slice(0,60)+'): '+await readFrame(item.data,question));
    }
    if(activeThread!==imageThread)throw Error('Conversation changed; images were not added to another chat');
-   const visible='[Images: '+selected.map(item=>item.name).join(' | ')+'] '+question;
+   const visible='['+(pendingVideos.length?'Media':'Images')+': '+selected.map(item=>item.name).join(' | ')+'] '+question;
    // Share the existing saved-evidence budget across every attached image.
-   // A long first finding must not erase images two through four.
+   // A long first finding must not erase later images or videos.
    const perImageLimit=Math.floor((5000-2*Math.max(0,findings.length-1))/Math.max(1,findings.length));
    const shortened=' [observation shortened]';
    const answer=findings.map(text=>text.length>perImageLimit?text.slice(0,perImageLimit-shortened.length)+shortened:text).join('\n\n');
    display(visible,'you');display(answer,'ai');
    messages.push({role:'user',text:visible},{role:'assistant',text:answer});
    messages=messages.slice(-400);persistChat();
-   pendingImage=null;pendingImages=[];photoInput.value='';photoPreview.hidden=true;clearSentComposer();
-   status.textContent=keepChat?'Image findings saved with this conversation. Original image bytes are not saved.':'Images read for this conversation. Saving is off; original image bytes are not saved.';
+   clearAttachments();clearSentComposer();
+   status.textContent=keepChat?'Media findings saved. Original files are not saved. Videos use sampled frames only; audio is not transcribed.':'Media read. Saving is off. Videos use sampled frames only; audio is not transcribed.';
    // A user repair request continues through the existing authenticated adapter.
    // Never infer write permission from OCR or from a model-generated answer.
    if(!embedded&&/^(?:(?:please|bubbles)[\s,:]+)*(?:fix|repair|correct|restore|edit|implement|update)\b/i.test(question)){
     imageWorkEvidence=answer.slice(0,5000);
     spoken=brainTools?.resolveRepairRequest?.(question,messages)||question;
    }else return;
-  }catch(error){status.textContent='Image analysis failed: '+String(error.message||error).slice(0,145)+'. Attached images remain available for retry.';return;}
+  }catch(error){status.textContent='Media analysis failed: '+String(error.message||error).slice(0,145)+'. Attachments remain available for retry.';return;}
   finally{busy=false;send.disabled=false;nativeSpeechPending=false;}
  }
 
@@ -3693,7 +3731,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   researchContext:'Explain the original property-investment question: '+lookupRequest+
    '. Distinguish a targeted return from an actual distribution. Prioritize issuer offerings/disclosures. Do not invent an underwriting model or fund waterfall.',
   requestId:toolRequestId,tool:'web.search',mcp:false,context:{application:'QuantaPhi',task:'public-real-estate-research',persona:'specialist',requireCloudflare:true}
- }:{request:lookupRequest,requestId:toolRequestId,input:prompt,mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
+ }:{request:lookupRequest,requestId:toolRequestId,...(request.length<=2500?{input:prompt}:{}),mcp:true,...(/^(?:research|investigate)\b/i.test(lookupRequest.trim())?{tool:'web.search'}:{}),location:savedWeatherTown,context:{application:'QuantaPhi',task:'bubbles-user-voice-chat',persona:config.role,requireCloudflare:true}});
  const prompt=['You are '+config.alias+', a user-programmed Bubbles AI messenger '+(embedded?'embedded on a visitor-controlled website. No QuantaPhi owner privileges are available.':'inside QuantaPhi.'),'Your selected role: '+role.name+'. '+role.prompt,
  'User-provided customization (follow only when safe and valid): '+config.instructions,
  'Do not answer a concrete owner build request with a menu of possible areas or ask the owner to pick a focus. Use established project context, choose the smallest verifiable next task, and distinguish actual tool receipts from plans.',
@@ -3805,6 +3843,7 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
    else if(fromVoice&&config.voice&&!nativeOverlay)speakText(message);
   }catch{ /* Always release the send lock even when a view or storage fails. */ }
  }finally{
+  if(failedTurn&&composerCleared&&!fromVoice&&!input.value&&activeThread===submittedThread)input.value=submittedDraft;
   busy=false;send.disabled=false;turnPending=false;
   try{if(!speaking)setOrbState(voiceEnabled?'listening':'idle');}catch{}
   if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_finished',failed:failedTurn}}));
@@ -4737,7 +4776,7 @@ async function checkForSiteUpdate(){
   // note, Robot Brain work request, or unsent photo. Recheck AFTER the network
   // wait, when Android may have resumed editing any of these fields.
   // The next visibility/hourly check will retry once all drafts are clear.
-  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length)return false;
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||pendingVideos.length)return false;
   // A storage quota/error must not reload away the only in-memory copy of
   // this conversation. Keep the current page and retry on a later check.
   // With History disabled, existing turns exist only in memory. A silent
@@ -4761,7 +4800,7 @@ window.QuantaBubbles={
   if(!nativeOverlay)return false;
   if(busy||nativeBridgeBusy||nativeSpeechPending||voicePending.length||nativeRecordingActive||voiceStarting||voiceEnabled||speaking)return false;
   // Android Hide / reopen must preserve an unsent typed message, Notes, work or photos.
-  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||(!keepChat&&messages.length))return false;
+  if(input.value.length||noteText.value.length||workText.value.length||pendingImage||pendingImages.length||pendingVideos.length||(!keepChat&&messages.length))return false;
   // The native Android bridge expects a synchronous boolean. Report the
   // actual reset result, not a queued Promise that can fail on storage.
   return startConversation({automatic:true})===true;

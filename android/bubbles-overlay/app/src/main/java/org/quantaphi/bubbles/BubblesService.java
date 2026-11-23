@@ -295,13 +295,13 @@ public final class BubblesService extends Service {
         }
         return true;
     }
-    static void completeImagePicker(android.net.Uri selected) {
+    static void completeImagePicker(android.net.Uri[] selected) {
         BubblesService service = activeImageService;
         if (service == null) return;
         service.main.post(() -> {
             android.webkit.ValueCallback<android.net.Uri[]> callback = service.imagePickerCallback;
             service.imagePickerCallback = null;
-            if (callback != null) callback.onReceiveValue(selected == null ? null : new android.net.Uri[]{selected});
+            if (callback != null) callback.onReceiveValue(selected);
             if (service.connected && service.oracleWindow != null) service.oracleWindow.show();
         });
     }

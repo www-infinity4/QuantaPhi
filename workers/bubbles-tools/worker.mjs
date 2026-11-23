@@ -13,13 +13,16 @@ import {needsReadAgent,runReadAgent,planReadSteps} from './read-agent.mjs';
 import {cardSourcePlanFor} from './card-source.mjs';
 import {readPublicGithubRoot,githubRootSummary} from './github-public-root.mjs';
 import {readPublicCommitFallback} from './public-commit-fallback.mjs';
+import {MAX_MESSAGE_TEXT} from '../../bubbles-media-attachments.mjs';
 const ORIGINS=new Set(['https://quantaphi.org','https://www.quantaphi.org','https://www-infinity4.github.io']);
 const clean=(value,max=2500)=>typeof value==='string'?value.trim().slice(0,max):'';
 const VISION_MODEL='@cf/google/gemma-4-26b-a4b-it';
 // Uploaded images are not persisted, indexed or supplied as tool authorization.
 // The browser removes EXIF and limits the outgoing JPEG to a small bound.
 export async function analyzePhoto(request,env,body){
- const question=clean(body?.request,2500)||'Describe the attached image.';
+ if(typeof body?.request==='string'&&body.request.trim().length>MAX_MESSAGE_TEXT)
+  return response(request,{ok:false,error:'message_too_long'},413);
+ const question=clean(body?.request,MAX_MESSAGE_TEXT)||'Describe the attached image.';
  const image=body?.image;
  if(typeof image!=='string'||image.length>440000||image.length<120
     ||!/^data:image\/jpeg;base64,[A-Za-z0-9+/]+={0,2}$/.test(image))
@@ -615,7 +618,9 @@ export function explainUnverifiedAlias(question){
 }
 
 async function execute(request,env,body){
- const question=clean(body.request);if(!question)return response(request,{ok:false,error:'request_required'},400);
+ if(typeof body.request==='string'&&body.request.trim().length>MAX_MESSAGE_TEXT)
+  return response(request,{ok:false,error:'message_too_long'},413);
+ const question=clean(body.request,MAX_MESSAGE_TEXT);if(!question)return response(request,{ok:false,error:'request_required'},400);
  const contextual=contextualReadPlan(question,request.headers.get('Origin')||'',body.repository);
  if(contextual)body={...body,repository:contextual.repository,...(contextual.path&&!body.path?{path:contextual.path}:{})};
  const tool=['resonance.calculate','organic.memory_benchmark','web.search','weather.current','news.headlines'].includes(body.tool)?body.tool:contextual?.tool||chooseTool(question),id=crypto.randomUUID();
