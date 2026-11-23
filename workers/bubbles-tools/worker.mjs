@@ -158,6 +158,12 @@ export function reasoningFor(text){
 }
 // Short spoken turns conserve plan/Workers AI usage. Detail is available on request,
 // while technical repairs still receive enough room for a useful, evidence-based answer.
+// Keep routine conversation within a smaller inference budget. Engineering
+// and deep-research turns retain the existing larger reasoning model.
+// This changes resource selection, not quotas, wallet access or owner grants.
+export function chatModelFor(text){
+ return reasoningFor(text)==='high'?'@cf/openai/gpt-oss-120b':'@cf/openai/gpt-oss-20b';
+}
 export function replyBudgetFor(text){
  const question=clean(text,4000);
  if(/\b(?:explain in detail|in detail|step.by.step|comprehensive|in.depth|full explanation|elaborate|thoroughly|long answer)\b/i.test(question))return 2500;
@@ -810,6 +816,8 @@ async function runChatModel(env,model,options){
    return {...retry,verifiedModel:model};
   }catch(error){
    if(isAiQuotaError(error))throw error;
+   // Avoid a third attempt on the already-selected economical model.
+   if(model==='@cf/openai/gpt-oss-20b')throw error;
    // Use the smaller, documented Cloudflare Workers AI model rather than
    // failing the entire conversation after one provider/model outage.
    const fallbackModel='@cf/openai/gpt-oss-20b';
@@ -827,7 +835,7 @@ export function legacyCartContextFor(text){
 }
 async function gptReply(request,env,input,receipt,evidence=null,userRequest=''){
  if(!env.AI)return response(request,{ok:false,error:'gpt_service_unavailable',receipt:{...receipt,status:'failed'}},503);
- const model='@cf/openai/gpt-oss-120b';
+ const model=chatModelFor(userRequest);
  const reasoningEffort=reasoningFor(userRequest);
  const ecosystemContext=ecosystemContextFor(userRequest);
  const capabilityContext=capabilityContextFor(userRequest,env);
