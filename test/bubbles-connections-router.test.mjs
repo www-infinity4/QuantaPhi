@@ -16,7 +16,8 @@ test('router rejects foreign origins and unauthenticated callers before resolvin
 
 test('Unified Wallet identity remains usable without provider configuration or a connection Durable Object',async()=>{
  const result=await handleConnections(request('/session'),{...env,CONNECTIONS_READY:false},()=>assert.fail('sign-in must not access provider credentials'));
- assert.deepEqual(await result.json(),{ok:true,walletVerified:true});
+ const value=await result.json();assert.equal(value.ok,true);assert.equal(value.walletVerified,true);
+ assert.match(value.globalIdentity.number,/^\d{78}$/);assert.equal(value.globalIdentity.isAuthentication,false);
  const missing=await handleConnections(request('/session',{authorization:''}),env,()=>assert.fail());
  assert.equal(missing.status,401);
  const foreign=await handleConnections(request('/session',{origin:'https://evil.test'}),env,()=>assert.fail());
@@ -31,7 +32,8 @@ test('connection sign-in verifies identity without depending on balance or histo
   return Response.json({error:'D1 daily read quota exhausted'},{status:500});
  }}};
  const response=await handleConnections(request('/session'),e,()=>assert.fail('no provider state needed'));
- assert.equal(response.status,200);assert.deepEqual(await response.json(),{ok:true,walletVerified:true});
+ assert.equal(response.status,200);const value=await response.json();assert.equal(value.walletVerified,true);
+ assert.match(value.globalIdentity.number,/^\d{78}$/);
  assert.deepEqual(paths,['https://wallet.internal/v1/wallet/identity']);
 });
 

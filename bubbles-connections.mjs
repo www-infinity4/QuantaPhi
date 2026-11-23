@@ -1,4 +1,4 @@
-import {summarizeProviderVerification} from './bubbles-provider-verification.mjs';
+import {summarizeProviderVerification,summarizeGlobalIdentity} from './bubbles-provider-verification.mjs';
 const API = '/api/bubbles/connections';
 const GOOGLE_HANDOFF_TIMEOUT_MS=45000;
 const CLOUDFLARE_HANDOFF_TIMEOUT_MS=45000;
@@ -239,6 +239,29 @@ export class AccountConnections {
 function element(tag,text,className='') {
   const node=document.createElement(tag);node.textContent=text;if(className)node.className=className;return node;
 }
+export function mountGlobalIdentity(container,{copyText=text=>navigator.clipboard.writeText(text)}={}){
+ const card=element('article','','ba-verification-row'),number=element('output',''),
+   status=element('p','Check your account to view its number.','ba-muted'),copy=element('button','Copy account number','ba-control');
+ number.id='bubblesGlobalUserId';number.style.overflowWrap='anywhere';number.style.display='block';
+ number.style.fontSize='1.125rem';number.style.lineHeight='1.65';number.style.letterSpacing='.04em';
+ number.setAttribute('aria-label','New World ID account number');
+ status.setAttribute('role','status');copy.type='button';copy.disabled=true;
+ let activeNumber='';
+ copy.addEventListener('click',async()=>{
+  const value=activeNumber;if(!value)return;
+  try{await copyText(value);if(activeNumber===value)status.textContent='Account number copied.';}
+  catch{if(activeNumber===value)status.textContent='Clipboard unavailable. Select the number to copy it.';}
+ });
+ card.append(element('h3','New World ID'),
+  element('p','Your QuantaPhi account number stays the same across your enrolled devices. Sign-in still requires your account credentials.','ba-muted'),number,copy,status);
+ container.append(card);
+ return {render(session){
+  const id=summarizeGlobalIdentity(session);activeNumber=id?.number||'';
+  number.textContent=activeNumber;copy.disabled=!id;
+  status.textContent=id?'Verified account number.':
+   'Account number unavailable until this account check succeeds. Use Check connected accounts to retry.';
+ }};
+}
 export function mountConnections(container,{token}) {
   const sessionKey='bubbles:connector-session:v1';
   const returnProvider=new URLSearchParams(window.location?.search||'').get('return');
@@ -259,8 +282,9 @@ export function mountConnections(container,{token}) {
   const verification=element('section','','ba-verification-center'),verificationRows=element('div','','ba-verification-list');
   verification.id='bubblesVerificationCenter';
   verification.setAttribute('aria-label','Provider Verification Center');
-  verification.append(element('h2','Verification Center'),
-    element('p','Google, GitHub and Cloudflare are checked separately against this wallet-bound session. Provider sign-in does not authorize owner-only builds.','ba-muted'),verificationRows);
+  verification.append(element('h2','Verification Center'));
+  const globalIdentity=mountGlobalIdentity(verification);
+  verification.append(element('p','Google, GitHub and Cloudflare are checked separately against this wallet-bound session. Provider sign-in does not authorize owner-only builds.','ba-muted'),verificationRows);
   const renderVerification=(providers,accountData,verifiedSession=true)=>{
     const states=summarizeProviderVerification(providers,accountData,{verifiedSession});
     verificationRows.replaceChildren();
@@ -354,6 +378,12 @@ export function mountConnections(container,{token}) {
   async function load() {
     const version=++loadVersion;
     refresh.disabled=true;
+    globalIdentity.render(null);
+    // Identity remains readable when an optional provider account read fails.
+    // Never retain the previous user's number during a refresh or sign-out.
+    const identityCheck=client.call('/session').then(session=>{
+      if(version===loadVersion)globalIdentity.render(session);
+    }).catch(()=>{if(version===loadVersion)globalIdentity.render(null);});
     try {
       let [data,dataAccounts,settings]=await Promise.all([client.call('/catalog'),client.call('/accounts'),
         client.call('/wallet-email/preferences',{action:'read'}).catch(()=>null)]);
@@ -727,7 +757,7 @@ export function mountConnections(container,{token}) {
           'This browser has no verified Bubbles account session. Open Bubbles in the browser where you are signed in.':
           'Could not verify account connections. Please retry.';
       }
-    }finally {if(version===loadVersion)refresh.disabled=false;}
+    }finally {await identityCheck;if(version===loadVersion)refresh.disabled=false;}
   }
   refresh.addEventListener('click',()=>void load());
   if(client.resumePending(async(error,account)=>{

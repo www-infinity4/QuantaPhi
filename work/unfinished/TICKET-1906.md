@@ -3,27 +3,27 @@ issue: 1906
 project: "Bubbles Identity & Verification Center"
 state: review_pending
 dot: "🟡"
-progress_percent: 38
-progress_basis: "Cloudflare stale gate fix and browser Verification Center source staged and tested; broader OAuth, real provider behavior, independent review, merge, release and two-account acceptance remain"
-sessions_spent: 3
+progress_percent: unknown
+progress_basis: "New World ID subtask source and 206 focused tests complete; full identity program and production/phone acceptance remain unverified"
+sessions_spent: 4
 sessions_remaining_estimate: unknown
-agent: "ChatGPT via authenticated GitHub connector"
+agent: "ChatGPT coordinator with Brain engineer and independent security reviewer"
 lease_id: null
 lease_expires_at: null
 task_session_id: null
 fence: null
-last_observed_at_utc: "2026-11-11T08:30:26.255Z"
+last_observed_at_utc: "2026-11-23T01:22:56Z"
 repo: www-infinity4/QuantaPhi
-branch: feat/unified-wallet-numeric-device-bindings-1906-20261122
-head_sha: "e03db1966bc60629094915580baeeff71faf24cb" # latest validated source head before this checkpoint
-pr: "https://github.com/www-infinity4/QuantaPhi/pull/2119"
-tests: "RED 44/45 at d22e0e01, provider-verification run 42987050045; GREEN 45/45 at 73b824a4, run 42987180622; account-connection checks green; real provider and physical Android acceptance pending"
-ci: "https://github.com/www-infinity4/QuantaPhi/actions/runs/42987180622"
+branch: feat/new-world-user-identity-1906-20261122
+head_sha: "2c1e90a6015ee697114a77e322ae15013c1ddf55" # immutable base before current source commit
+pr: null
+tests: "Identity109/109; Brain97/97; ledger5/5. Browser launch blocked locally by OS socket restriction; registered CI fixture pending"
+ci: null
 merged: false
 deployed: false
 live_verified: false
-blocker: "Independent security review not submitted; real Google/GitHub/Cloudflare user OAuth, signed owner execution, Cloudflare deployment and two-account Android acceptance unverified"
-next_action: "Verify exact-head PR #2119 CI and source/security review; merge inactive code if policy permits; preserve production StarQuest auth until passkey enrollment proof"
+blocker: "Independent source/security review passed; exact-head CI/browser and release pending; actual free AI quota recovery and owner Android acceptance unverified"
+next_action: "Verify exact-head CI and browser fixture for the New World ID and quota classification PR"
 ---
 # TICKET-1906 — Bubbles Identity & Verification Center
 
@@ -95,3 +95,21 @@ The owner likens an account's enrolled phone identifiers to Christmas-tree bulbs
 - Existing [private GitHub StarCoin backup pilot](https://github.com/www-infinity4/QuantaPhi/blob/main/docs/STARCOIN-GITHUB-BACKUP-PILOT.md) already uses an owner-authorized GitHub App and per-account repository access, but it does **not automatically back up this new numeric device map**. A later encrypted device-map backup must explicitly require account consent, a private repository, independent restore keys and actual success receipts. GitHub Actions/source itself is not phone storage or wallet credentials.
 
 **Deployment hold:** no live number enrollment, no Android passkey ceremony, no server-issued/atomically consumed challenge, no D1 migration or new production wallet session; keep StarQuest and wallet recovery untouched until independent review and two-account physical-device testing.
+
+
+## New World Identity Generator and Brain quota repair · November 22 CT
+
+Owner-authorized request continues #1906 and #1907; no duplicate issue or owner-signed runner claim is invented. Isolated source branch starts at `2c1e90a6015ee697114a77e322ae15013c1ddf55`.
+
+- A user's **New World ID** is a stable 78-digit decimal **string** derived from the full SHA-256 of a fixed QuantaPhi namespace and the already verified immutable account key. It is separate from each phone's existing 39-digit alias and from the changeable enrolled-device fingerprint. The descriptor is `nwi-v1`, scope `quantaphi`, `isAuthentication:false`. Username, email, telephone number, SSN, hardware ID, tokens and balances are not inputs.
+- Authenticated Unified Wallet identity/state responses attach `user.globalIdentity`; the existing connector `/session` returns the same descriptor after verification, including short-lived authorized connector pairing. Caller account IDs or numeric labels cannot select an account. No new D1 table/write or numeric-ID login route exists.
+- The existing Verification Center shows/copies the complete number, wrapping at Android widths. Its separate identity check survives an optional provider-account read failure. Refresh/logout clear the prior number; an older asynchronous response cannot repaint another user's number. No identity number is stored in browser persistence.
+- **TDD:** eight failing identity regressions were observed before implementation (`/tmp/nwi-red-tests.log`:44/52 passed). Focused final identity suite109/109 passed. Brain engineer observed3 RED regressions and final97/97 Brain/alarm checks passed. Unfinished-ledger5/5 passed before this checkpoint update; rerun on final head.
+- **Actual failure:** Moltnook run https://github.com/www-infinity4/Moltnook/actions/runs/45091582238 job137422113098 reached data/adapter reads then failed model inference at2026-11-23T00:56:49.967Z with Workers AI4006: daily10,000-neuron free allocation exhausted. Existing task `IW-20261122-F0E68B20/TASK-1` was preserved. The wallet adapter's separate `credential_missing` is not evidence of rejection of the owner's session.
+- Brain change: real provider exhaustion becomes sanitized429 `provider_quota_exhausted`, real credential failure remains401, and unavailable infrastructure becomes503. A quota marker is written only after actual inference under the existing fenced lease. The same job keeps its source/draft/progress and receives a next-UTC-day00:01 retry schedule, **not a promise of provider recovery**. Ordinary blocked-job backoff is unchanged and caller-supplied quota wording cannot change it. No paid fallback or new grant.
+- Deployment preparation compared live source to the base without reading account rows:57 Brain modules,3 wallet modules, and13 connector source-map sources all matched exactly. Existing production bindings and secrets must be preserved on content-only release.
+- Browser test at360/393/1280px is registered in the existing read-only wallet-browser workflow. Local Chromium cannot create its OS socket (`Operation not permitted`), so no local browser/physical Android pass is claimed. Exact-head CI must run the actual fixture.
+
+Current subtask: source implemented/tested; independent review/CI/release pending. Overall parent progress is unknown; source/tests are2 of4 scoped delivery milestones, with release and actual user acceptance outstanding. No production change, account recovery, billing, financial action or physical phone acceptance is claimed by this checkpoint.
+
+Independent Pink/Purple source review on the current patch found no blocking issues. It independently reran identity109/109 and Brain/retry97/97, checked1000 synthetic account IDs, confirmed account-key compatibility and fail-closed authentication/fenced quota markers. Browser CI and production/owner acceptance remain unverified.

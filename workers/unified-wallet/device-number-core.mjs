@@ -1,9 +1,23 @@
 // Unified Wallet: NUMBER = display/index only. Proof = device private key.
-// Source-only pilot: no public login route, D1 write, account merge, or
-// permission to scan other phones. Legacy wallet login is intentionally intact.
+// Device enrollment remains a source-only pilot. The global account label
+// below is read-only metadata on an already authenticated user, never login proof.
 const NUMBER=/^\d{39}$/;
 const NONEMPTY=x=>typeof x==='string'&&/^[A-Za-z0-9_.:-]{1,128}$/.test(x);
 const text=new TextEncoder();
+/** Stable platform-wide account label, independent of enrolled device lists.
+ * Call only after the server has resolved the authenticated account key.
+ * Full SHA-256 is retained as 78 decimal characters, including leading zeroes.
+ * No email, government ID, hardware ID, credential, or ledger data is used.
+ */
+export async function globalUserIdentity(accountId,cryptoApi=globalThis.crypto){
+ const key=Number.isSafeInteger(accountId)&&accountId>=0?String(accountId):accountId;
+ if(typeof key!=='string'||!/^[A-Za-z0-9_.:-]{1,159}$/.test(key))throw Error('canonical account key required');
+ if(typeof cryptoApi?.subtle?.digest!=='function')throw Error('cryptographic hashing required');
+ const bytes=new Uint8Array(await cryptoApi.subtle.digest('SHA-256',text.encode('QuantaPhi-global-user-id-v1\n'+key)));
+ let value=0n;
+ for(const byte of bytes)value=(value<<8n)|BigInt(byte);
+ return {version:'nwi-v1',scope:'quantaphi',number:value.toString(10).padStart(78,'0'),isAuthentication:false};
+}
 function publicP256(jwk){
  return Boolean(jwk&&typeof jwk==='object'&&!Array.isArray(jwk)&&
   jwk.kty==='EC'&&jwk.crv==='P-256'&&jwk.d===undefined&&

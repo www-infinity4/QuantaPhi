@@ -3,6 +3,8 @@ import assert from 'node:assert/strict';
 import {summarizeGate} from '../bubbles-signin-gate.mjs';
 import {summarizeProviderVerification} from '../bubbles-provider-verification.mjs';
 import {publicConnection} from '../workers/bubbles-connections/consent.mjs';
+import * as verificationCore from '../bubbles-provider-verification.mjs';
+import * as connectionUI from '../bubbles-connections.mjs';
 
 const now=Date.now();
 const catalog={providers:[
@@ -12,6 +14,41 @@ const catalog={providers:[
 ]};
 const connected=(provider,grantedActions=[])=>({id:'id-'+provider,provider,status:'connected',
   label:provider+' account',expiresAt:now+3600000,updatedAt:now-60000,grantedActions});
+
+test('global account number is displayed only from a fresh verified session with the supported scheme',()=>{
+ const globalIdentity={version:'nwi-v1',scope:'quantaphi',number:'0'.repeat(77)+'1',isAuthentication:false};
+ const payload={ok:true,walletVerified:true,globalIdentity};
+ assert.deepEqual(verificationCore.summarizeGlobalIdentity(payload),globalIdentity);
+ for(const change of [{ok:false},{walletVerified:false},{globalIdentity:null},
+   {globalIdentity:{...globalIdentity,number:'1'.repeat(39)}},
+   {globalIdentity:{...globalIdentity,number:'9'.repeat(78)}},
+   {globalIdentity:{...globalIdentity,scope:'other-app'}},
+   {globalIdentity:{...globalIdentity,version:'nwi-v2'}},
+   {globalIdentity:{...globalIdentity,isAuthentication:true}}])
+  assert.equal(verificationCore.summarizeGlobalIdentity({...payload,...change}),null);
+});
+
+test('account number card copies the exact string and clears it when its session is no longer verified',async t=>{
+ const previous=globalThis.document;t.after(()=>globalThis.document=previous);
+ class Node{
+  constructor(){this.childNodes=[];this.listeners={};this.style={};this.dataset={};}
+  append(...nodes){this.childNodes.push(...nodes);}
+  setAttribute(name,value){this[name]=value;}
+  addEventListener(name,callback){this.listeners[name]=callback;}
+ }
+ globalThis.document={createElement:()=>new Node()};
+ const host=new Node(),copied=[];
+ const card=connectionUI.mountGlobalIdentity(host,{copyText:async value=>copied.push(value)});
+ const nodes=node=>[node,...node.childNodes.flatMap(nodes)];
+ const number='0'.repeat(77)+'7';
+ card.render({ok:true,walletVerified:true,globalIdentity:{version:'nwi-v1',scope:'quantaphi',number,isAuthentication:false}});
+ const output=nodes(host).find(n=>n.id==='bubblesGlobalUserId');
+ const button=nodes(host).find(n=>n.textContent==='Copy account number');
+ assert.equal(output.textContent,number);assert.equal(button.disabled,false);
+ await button.listeners.click();assert.deepEqual(copied,[number]);
+ card.render(null);assert.equal(output.textContent,'');assert.equal(button.disabled,true);
+ await button.listeners.click();assert.equal(copied.length,1,'a stale ID cannot be copied after logout');
+});
 
 test('verified Cloudflare account overrides stale gate configuration but never invents approvals',()=>{
  const summary=summarizeGate({ok:true,walletVerified:true,accountsVerified:true,ready:false,

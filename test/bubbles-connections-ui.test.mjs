@@ -59,17 +59,22 @@ test('account page starts consent with the selected provider permissions',async 
  const storage=new Map(),sessionStorage={getItem:key=>storage.get(key),setItem:(key,value)=>storage.set(key,value),removeItem:key=>storage.delete(key)};
  const popup={location:{},close(){}},calls=[];
  let googleConfigured=false,fullCloudflareConfigured=false,navigation='',holdOldAccounts=false,finishOldRead,cloudflareRecoveryAvailable=false;
- let holdCloudflareRecovery=true,releaseCloudflareRecovery;
+ let holdCloudflareRecovery=true,releaseCloudflareRecovery,identityVerified=true,providerReadUnavailable=false;
+ const accountNumber='0'.repeat(77)+'8';
  let accountRecords=[{id:'github-a',provider:'github',label:'www-infinity4',status:'connected',expiresAt:Date.now()+600000,grantedActions:['repository.read']}];
  const window={document,sessionStorage,location:{pathname:'/bubbles-accounts.html'},open:()=>popup,setTimeout:()=>1,clearTimeout(){},addEventListener(){},removeEventListener(){}};
  Object.assign(globalThis,{document,sessionStorage,window,fetch:async(url,options)=>{
   const path=String(url).replace('/api/bubbles/connections','');
   const body=options.body?JSON.parse(options.body):null;calls.push({path,body});
+  if(path==='/session')return Response.json(identityVerified?
+   {ok:true,walletVerified:true,globalIdentity:{version:'nwi-v1',scope:'quantaphi',number:accountNumber,isAuthentication:false}}:
+   {ok:false,error:'verified_wallet_required'},{status:identityVerified?200:401});
   if(path==='/catalog')return Response.json({ok:true,providers:[{id:'github',configured:true,actions:['repository.read']},
    {id:'cloudflare',configured:true,fullProjectConfigured:fullCloudflareConfigured,
     actions:fullCloudflareConfigured?['account.read','owner.full']:['account.read','projects.build','ledger.read']},
    {id:'google',configured:googleConfigured,actions:['drive.read','gmail.read']}]});
   if(path==='/accounts'){
+   if(providerReadUnavailable)return Response.json({ok:false,error:'provider_storage_unavailable'},{status:503});
    const response=Response.json({ok:true,accounts:accountRecords});
    if(holdOldAccounts&&!finishOldRead)return new Promise(resolve=>{finishOldRead=()=>resolve(response);});
    return response;
@@ -109,6 +114,7 @@ test('account page starts consent with the selected provider permissions',async 
  holdCloudflareRecovery=false;
  releaseCloudflareRecovery();
  await initialLoad;
+ assert.equal(descendants(container).find(node=>node.id==='bubblesGlobalUserId').textContent,accountNumber);
 
  assert.equal(calls.filter(call=>call.path==='/handoff/cloudflare/resume').length,1,
   'Account Connections should try recovering an already received Cloudflare grant even without return URL');
@@ -217,6 +223,15 @@ test('account page starts consent with the selected provider permissions',async 
  assert.ok(descendants(recoveredContainer).some(node=>node.textContent?.includes('Cloudflare signed in ✓ as recovered@example.test')),
   'Recovered Cloudflare connection replaces its old sign-in button');
  assert.equal(descendants(recoveredContainer).some(node=>node.dataset?.provider==='cloudflare'),false);
+
+ providerReadUnavailable=true;
+ await panel.refresh();
+ assert.equal(descendants(container).find(node=>node.id==='bubblesGlobalUserId').textContent,accountNumber,
+  'Optional provider read outage must not hide a separately verified account number');
+ identityVerified=false;
+ await panel.refresh();
+ assert.equal(descendants(container).find(node=>node.id==='bubblesGlobalUserId').textContent,'',
+  'A rejected account refresh must clear the previous user number');
 
 });
 
