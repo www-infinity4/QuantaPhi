@@ -3,76 +3,225 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T15:01:14.126955Z",
+  "checked_at": "2026-11-24T15:31:27.481383Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "seiya suzuki",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T15:10:00Z",
+      "related_news_urls": [
+        "https://www.si.com/mlb/five-best-fits-seiya-suzuki-free-agency-mariners-cubs-padres",
+        "https://sports.yahoo.com/articles/cubs-strong-verdict-seiya-suzuki-072643560.html",
+        "https://www.mlb.com/news/seiya-suzuki-declines-qualifying-offer-from-cubs"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2bmxbcdGy9wC7DwrfZfdZ4aD_zbiJ5DCHI63d3xJgjVjOEAQwQLncNLN7Yd8",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/mlb/five-best-fits-seiya-suzuki-free-agency-mariners-cubs-padres",
+          "title": "The Five Best Fits for Seiya Suzuki in MLB Free Agency",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2bmxbcdGy9wC7DwrfZfdZ4aD_zbiJ5DCHI63d3xJgjVjOEAQwQLncNLN7Yd8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/cubs-strong-verdict-seiya-suzuki-072643560.html",
+          "title": "Cubs Get Strong Verdict on Seiya Suzuki Amid Blue Jays Rumor",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2nrMkoBqJpRaWNOwjlcfMe1cEUxjoEmD3SwqXXPT0T82PDW_b5P4q336DePE"
+        },
+        {
+          "url": "https://www.mlb.com/news/seiya-suzuki-declines-qualifying-offer-from-cubs",
+          "title": "Seiya Suzuki declines qualifying offer from Cubs",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwphSRGxNwn0XuSVByzrOWtmfnvOLMS9x8Lqy-p8T-wzwW_22jIHIMQx851hA"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T15:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
+        "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
+          "title": "Nasdaq declines as Nvidia slides, giving back part of Monday’s rally: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+          "title": "Nvidia live updates: Nvidia stock falls as exuberance fades after Jensen Huang's return as CEO",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjrtlBwBB3X-tIVWwT4FGlcTjI4VFef_smr29X0yh8xx3lOPI0VV4QD5Jxnbg"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+          "title": "Markets Slide as Tech Stocks Partly Reverse Nvidia-Sparked Rally",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
+        }
+      ]
+    },
+    {
+      "query": "trev alberts",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T15:00:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-ad-hire-falls-through-search-reopens/92940230007/",
+        "https://www.si.com/college/michigan/football/michigan-will-no-longer-hire-trev-alberts-as-new-ad-per-report",
+        "https://www.nytimes.com/athletic/7791056/2026/11/17/michigan-trev-alberts-athletic-director-search/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQVNezkOM3170-2Ei-PDUPTTSyKlNEgtYW_JrlKV7PfUO0w8i0lcE-pkjqCLE",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-ad-hire-falls-through-search-reopens/92940230007/",
+          "title": "Michigan athletic director hire falls through; search reopens",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQVNezkOM3170-2Ei-PDUPTTSyKlNEgtYW_JrlKV7PfUO0w8i0lcE-pkjqCLE"
+        },
+        {
+          "url": "https://www.si.com/college/michigan/football/michigan-will-no-longer-hire-trev-alberts-as-new-ad-per-report",
+          "title": "Michigan Will No Longer Hire Trev Alberts as New AD, per Report",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxRTEGHANeJHXeVGg2V_lNbUqrraV50PqDTnqi8geoJ4cjaOflC8e06Hv6-uI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7791056/2026/11/17/michigan-trev-alberts-athletic-director-search/",
+          "title": "Texas A&M’s Trev Alberts agrees to become Michigan’s athletic director: Source",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxgKbXyoBqV7L_znxoWGbVXFC2EJ_luUgCjmWYOKesX2ZHkcvVFLxfD5gB6HQ"
+        }
+      ]
+    },
+    {
+      "query": "teruaki sato",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T14:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
+        "https://sports.yahoo.com/mlb/breaking-news/article/japanese-star-teruaki-sato-cubs-reportedly-agree-to-6-year-120m-contract-151119609.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
+          "title": "Why Teruaki Sato will be the top MLB free-agent value this offseason",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/breaking-news/article/japanese-star-teruaki-sato-cubs-reportedly-agree-to-6-year-120m-contract-151119609.html",
+          "title": "Japanese star Teruaki Satō, Cubs reportedly agree to 6-year, $120M contract",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ruQbpebXTz-g4gcWlNK3lQBXf6B9IW5Ev3E8BwiKPMHVxeKmkPrjXknytBM"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato",
+          "title": "Report: Cubs still ‘in the mix’ for Teruaki Sato",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7LNvVFT4_Y-5cBe9oQC5HJVFfq8qy2NkmEevHHEfcGuwsrnORjKLDqp9oxqA"
+        }
+      ]
+    },
     {
       "query": "rivals",
       "approx_searches": "500+",
       "published_at": "2026-11-24T14:40:00Z",
       "related_news_urls": [
-        "https://jaysbrickblog.com/news/lego-67023-jeff-the-land-shark-from-marvel-rivals-revealed/",
-        "https://www.gamespot.com/articles/lego-first-marvel-rivals-set-is-a-495-piece-tribute-to-the-games-most-adorable-terror/",
-        "https://www.gamesradar.com/toys-collectibles/leaked-lego-jeff-the-land-shark-divides-fans-with-some-hating-and-others-loving-it/"
+        "https://goheels.com/news/2026/11/23/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
+        "https://godeacs.com/news/2026/11/24/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
+        "https://jaysbrickblog.com/news/lego-67023-jeff-the-land-shark-from-marvel-rivals-revealed/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGZPb7RJ2kVJ0mAdTDp9cfbW0Dc2EAyAjeEUrReU0tb-DWVQQaVKzs-ouqeA",
-      "image_credit": "Jay's Brick Blog",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HHdfCbM_uwd8eXkddchejo0s70edfHVZmVJ1PU3R8aeN9Gk6FVdVHD2NOg",
+      "image_credit": "University of North Carolina Athletics",
       "news": [
+        {
+          "url": "https://goheels.com/news/2026/11/23/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
+          "title": "Rivals Unite For Legacy-Inspired Tobacco Road Merchandise Collection - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HHdfCbM_uwd8eXkddchejo0s70edfHVZmVJ1PU3R8aeN9Gk6FVdVHD2NOg"
+        },
+        {
+          "url": "https://godeacs.com/news/2026/11/24/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
+          "title": "Rivals Unite for Legacy-Inspired Tobacco Road Merchandise Collection Celebrating College Athletics Heritage",
+          "publisher": "Wake Forest University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5-NSNeNEedLdcmdiberuHzp2LoltDcPfGUWEJ6DHq8L6m3ycN35p9VUHtm8"
+        },
         {
           "url": "https://jaysbrickblog.com/news/lego-67023-jeff-the-land-shark-from-marvel-rivals-revealed/",
           "title": "LEGO 67023 Jeff the Land Shark from Marvel Rivals revealed!",
           "publisher": "Jay's Brick Blog",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGZPb7RJ2kVJ0mAdTDp9cfbW0Dc2EAyAjeEUrReU0tb-DWVQQaVKzs-ouqeA"
-        },
-        {
-          "url": "https://www.gamespot.com/articles/lego-first-marvel-rivals-set-is-a-495-piece-tribute-to-the-games-most-adorable-terror/",
-          "title": "Lego’s First Marvel Rivals Set Is A 495-Piece Tribute To The Game’s Most Adorable Terror",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGIprU11egRD7WOjVoZRiZ_yJg5yZ6E7PVHBRcrnV7wM6lJzvP5D0NkBhfqkU"
-        },
-        {
-          "url": "https://www.gamesradar.com/toys-collectibles/leaked-lego-jeff-the-land-shark-divides-fans-with-some-hating-and-others-loving-it/",
-          "title": "Leaked Lego Jeff the Land Shark divides fans, with some hating and others loving it",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeecIEj8OUXfCp5FCKj0wD48qp8fVAH7mCnZ2OV4yLD6s3EMURlm9I6sbvYAw"
         }
       ]
     },
     {
+      "query": "popcaan concert",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T14:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
       "query": "u2 tour 2027",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T14:40:00Z",
       "related_news_urls": [
-        "https://www.wbaltv.com/article/u2-baltimore-mt-bank-stadium-2027-concert/74518973",
-        "https://news3lv.com/news/local/u2-las-vegas-allegiant-stadium-concert-2027-greatest-show-on-earth-carnaval-de-luz-bono-edge-adam-clayton-larry-mullen-music-rock",
-        "https://www.seattletimes.com/entertainment/u2-says-their-new-album-is-about-defiant-joy-theyll-tour-it-in-north-america-next-summer/?utm_source=RSS&utm_medium=Referral&utm_campaign=RSS_all"
+        "https://www.u2.com/blogs/news/the-greatest-show-on-earth-set-for-north-america",
+        "https://consequence.net/2026/11/u2-north-american-dates-the-greatest-show-on-earth-world-tour/",
+        "https://www.cbsnews.com/boston/news/u2-carnaval-de-luz-2027-tour-gillette-stadium-tickets/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqKQh02gP6LAme3OwaMaPSO2yITEHqs5eZd2qZf1M39y6yQ-A4Oz8YhOrYI2M",
-      "image_credit": "WBAL-TV",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTmBg1-laqZ11MW1r0eyxk_Gu7Kbg3klBUjapCGThpnpJEaKC-coZwIUbIiBI",
+      "image_credit": "U2.com",
       "news": [
         {
-          "url": "https://www.wbaltv.com/article/u2-baltimore-mt-bank-stadium-2027-concert/74518973",
-          "title": "U2 announces Baltimore stop for 2027 album tour",
-          "publisher": "WBAL-TV",
+          "url": "https://www.u2.com/blogs/news/the-greatest-show-on-earth-set-for-north-america",
+          "title": "The Greatest Show on Earth set for North America",
+          "publisher": "U2.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqKQh02gP6LAme3OwaMaPSO2yITEHqs5eZd2qZf1M39y6yQ-A4Oz8YhOrYI2M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTmBg1-laqZ11MW1r0eyxk_Gu7Kbg3klBUjapCGThpnpJEaKC-coZwIUbIiBI"
         },
         {
-          "url": "https://news3lv.com/news/local/u2-las-vegas-allegiant-stadium-concert-2027-greatest-show-on-earth-carnaval-de-luz-bono-edge-adam-clayton-larry-mullen-music-rock",
-          "title": "U2 returning to Las Vegas for Allegiant Stadium concert",
-          "publisher": "KSNV",
+          "url": "https://consequence.net/2026/11/u2-north-american-dates-the-greatest-show-on-earth-world-tour/",
+          "title": "U2 Announce North American Dates for \"The Greatest Show On Earth World Tour\"",
+          "publisher": "Consequence of Sound",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD-8BntHr8ERnBGvs4FpMZ-yq7aoYi9lxTmXVGEPlj88lqcm_u5sG3_jl4es8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmEld_XxUofAHB1N3shnMSfvTCgovuQfzKh5fHeY0VbjKO1IcDqtL3-fy4NBc"
         },
         {
-          "url": "https://www.seattletimes.com/entertainment/u2-says-their-new-album-is-about-defiant-joy-theyll-tour-it-in-north-america-next-summer/?utm_source=RSS&utm_medium=Referral&utm_campaign=RSS_all",
-          "title": "U2’s new album is about ‘defiant joy.’ They’ll tour it in North America next summer",
-          "publisher": "The Seattle Times",
+          "url": "https://www.cbsnews.com/boston/news/u2-carnaval-de-luz-2027-tour-gillette-stadium-tickets/",
+          "title": "U2 to bring Carnaval de Luz 2027 tour to Gillette Stadium in Foxboro in September",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT6RY5o74hj-RKKKT0068Vj5DIvu3voqX7gbf-JPZ3JR3k4cVpTUXA4cgSflo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGOM-ay53FpvwXnDvH-oL9sXSVG9roZke68mrM526W9z_0C4_dZBxvpqqRBDg"
         }
       ]
     },
@@ -112,221 +261,72 @@
       ]
     },
     {
-      "query": "popcaan concert",
+      "query": "billy ray cyrus miley wedding tribute",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T14:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/23/style/miley-cyrus-married-maxx-morando.html",
+        "https://people.com/billy-ray-cyrus-attend-miley-cyrus-maxx-morando-palm-springs-wedding-12267149",
+        "https://www.vogue.com/article/miley-cyrus-and-maxx-morando-are-married"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzebDtOGuStDnxFth6bdoj3szmgThVv2lwEG4_AY4MQQptQ4Pei85VkOt7Ig",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/23/style/miley-cyrus-married-maxx-morando.html",
+          "title": "Miley Cyrus Marries Maxx Morando in Palm Springs",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzebDtOGuStDnxFth6bdoj3szmgThVv2lwEG4_AY4MQQptQ4Pei85VkOt7Ig"
+        },
+        {
+          "url": "https://people.com/billy-ray-cyrus-attend-miley-cyrus-maxx-morando-palm-springs-wedding-12267149",
+          "title": "Billy Ray Cyrus and Girlfriend Elizabeth Hurley Attend Miley Cyrus and Maxx Morando’s Palm Springs Wedding",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQphxXTemKwAQXwBTbtGeUrbmDULhM7HLPlzjEW15dglEPJfaT6sdCatPInhp8"
+        },
+        {
+          "url": "https://www.vogue.com/article/miley-cyrus-and-maxx-morando-are-married",
+          "title": "Miley Cyrus and Maxx Morando Are Married! See All the Photos Here",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNQWs7W6lnOPsi4bFROJupeo5W5kh1lw3avYaNmGL_za9WxWPRF6AGB1-pEv4"
+        }
+      ]
+    },
+    {
+      "query": "kelly ripa",
       "approx_searches": "200+",
       "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "eduardo franco",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T14:30:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/news/ni66122734/?ref_=ttnw_art_perm",
-        "https://collider.com/video/most-likely-to-the-cast-of-the-hunting-wives-plays-collider-superlatives/",
-        "https://headlineplanet.com/home/2026/11/24/malin-akerman-jaime-ray-newman-more-talk-hunting-wives-on-jennifer-hudson-show-first-look/"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
+        "https://www.imdb.com/fr/news/ni66125044/?ref_=nm_nwr_1",
+        "https://www.imdb.com/es/news/ni66120989/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAbjeWy7hwf4mdUJLa6nNukXWk8IE4OzjcKpAlSJepuqne8IR-iTLl796TohE",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.imdb.com/news/ni66122734/?ref_=ttnw_art_perm",
-          "title": "The Jennifer Hudson Show: Chris Pratt, Malin Akerman",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
+          "title": "Kelly Ripa's lookalike daughter twins with boyfriend in unexpected look",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
+        },
+        {
+          "url": "https://www.imdb.com/fr/news/ni66125044/?ref_=nm_nwr_1",
+          "title": "Live with Kelly and Mark: Caitriona Balfe, Leo Woodall",
           "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAbjeWy7hwf4mdUJLa6nNukXWk8IE4OzjcKpAlSJepuqne8IR-iTLl796TohE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfVKmf6pNuXG-HcRBb_C_xrv7EgxOmFmZmrJXgAnJ0Hyyc6yC0ZpEvJ1ElG0"
         },
         {
-          "url": "https://collider.com/video/most-likely-to-the-cast-of-the-hunting-wives-plays-collider-superlatives/",
-          "title": "Most Likely To...? The Cast of The Hunting Wives Plays Collider Superlatives!",
-          "publisher": "Collider",
+          "url": "https://www.imdb.com/es/news/ni66120989/?ref_=nwc_art_perm",
+          "title": "Michael Gelman Breaks Down Kelly Ripa’s Hosting Evolution & His Own ‘Live’ Journey",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsOCwuiQV1V6fanFudhICCJpSg9q00x7M5816xF55n-7mTA0sIx_F1vDyxY9s"
-        },
-        {
-          "url": "https://headlineplanet.com/home/2026/11/24/malin-akerman-jaime-ray-newman-more-talk-hunting-wives-on-jennifer-hudson-show-first-look/",
-          "title": "Malin Akerman, Jaime Ray Newman, More Talk “Hunting Wives” On “Jennifer Hudson Show”...",
-          "publisher": "Headline Planet",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4kOuuqgQvvyU7RkjeGkrjOam7nGtxGkLNwj6QLiiaIQzDxKjNfR96ne2dC50"
-        }
-      ]
-    },
-    {
-      "query": "bambu p3c",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T14:30:00Z",
-      "related_news_urls": [
-        "https://www.theverge.com/tech/1041034/bambu-p3c-3d-printer-price-release-date",
-        "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
-        "https://www.prnewswire.co.uk/news-releases/tool-changer-now-standard-bambu-lab-launches-the-p3c--make-true-multimaterial-3d-printing-accessible-to-all-creators-302949498.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHOXLiLqcFpboOyh-LRQ4QMf0hPgY-EXZme_QqS9NQ7llM--xudMtmmxzqTQ",
-      "image_credit": "The Verge",
-      "news": [
-        {
-          "url": "https://www.theverge.com/tech/1041034/bambu-p3c-3d-printer-price-release-date",
-          "title": "Bambu’s five-nozzle P3C isn’t quite the 3D printer I expected",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDHOXLiLqcFpboOyh-LRQ4QMf0hPgY-EXZme_QqS9NQ7llM--xudMtmmxzqTQ"
-        },
-        {
-          "url": "https://www.tomshardware.com/3d-printing/bambu-lab-p3c-review",
-          "title": "Bambu Lab P3C Review: A more affordable tool changer",
-          "publisher": "Tom's Hardware",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQWEpsRY8p7nqjQhOhAdhy1Ivu6h5NeBe41qWua-PR4jSS3cfjuZqf7ptMM_o"
-        },
-        {
-          "url": "https://www.prnewswire.co.uk/news-releases/tool-changer-now-standard-bambu-lab-launches-the-p3c--make-true-multimaterial-3d-printing-accessible-to-all-creators-302949498.html",
-          "title": "Tool Changer. Now Standard. Bambu Lab Launches the P3C - Make True Multi‑Material 3D Printing Accessible to All Creators",
-          "publisher": "PR Newswire UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLBTavuqZZAZw8RwM5xij8X0l4PH0Kkn7ieq2Xx3kE78jhgpR1RPd7Fdhue-A"
-        }
-      ]
-    },
-    {
-      "query": "flu season",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/24/health/flu-season-vaccines-cdc",
-        "https://www.wltx.com/article/news/health/flu/south-carolina-flu-hospitalizations-nearly-triple-usual-pace-thanksgiving/101-c416c0e8-bcbf-448e-9839-6c10b67faa01",
-        "https://www.forbes.com/sites/jessepines/2026/11/21/flu-season-came-early-an-er-doctors-holiday-guide-to-stay-healthy/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVfrXTIhZDQfyFJ7lD64guqzlY2Bp2Najk2D-NgtsEs_1K-rO2M_0_ewz32oE",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/24/health/flu-season-vaccines-cdc",
-          "title": "The CDC stays quiet on flu as an early season catches many Americans off-guard",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVfrXTIhZDQfyFJ7lD64guqzlY2Bp2Najk2D-NgtsEs_1K-rO2M_0_ewz32oE"
-        },
-        {
-          "url": "https://www.wltx.com/article/news/health/flu/south-carolina-flu-hospitalizations-nearly-triple-usual-pace-thanksgiving/101-c416c0e8-bcbf-448e-9839-6c10b67faa01",
-          "title": "South Carolina flu hospitalizations nearly triple the usual pace ahead of Thanksgiving",
-          "publisher": "WLTX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSchlzVKLQ7jEUfwgpH_HgqpmxYfWgulbj2BEEn6OR4bkISmw4S3mV7GkskVZw"
-        },
-        {
-          "url": "https://www.forbes.com/sites/jessepines/2026/11/21/flu-season-came-early-an-er-doctors-holiday-guide-to-stay-healthy/",
-          "title": "Flu Season Came Early. An ER Doctor's Holiday Guide To Stay Healthy",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTsAmzgznlTLnL6IcBTjTjtoVxNGrBTcfDs_uLY_qEFOWv7WoqHVpZUyQvRW0"
-        }
-      ]
-    },
-    {
-      "query": "stock markets futures",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T14:20:00Z",
-      "related_news_urls": [
-        "https://www.nacionale.com/en/articles/what-are-dow-futures-are-they-open-now-djia-futures-trading-hours-november-24",
-        "https://www.clarin.com/us-news/why-are-dow-futures-down-today-nov-24-2026-nvidia-pullback-fed-rate-fears-and-iran-sanctions_0_Ec1fP7ILS1.html",
-        "https://www.fxleaders.com/news/2026/11/24/dow-futures-stall-near-49500-as-nasdaq-100-slips-toward-26500-amid-tech-caution/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ11Jm3UmYkX0djCuCKEdibz212-utpnu3cVwzW7uWhf9pNV4JqMwDAraefM8",
-      "image_credit": "Nacionale",
-      "news": [
-        {
-          "url": "https://www.nacionale.com/en/articles/what-are-dow-futures-are-they-open-now-djia-futures-trading-hours-november-24",
-          "title": "What are Dow futures, and are they open now? What Tuesday's early drop does and doesn't mean",
-          "publisher": "Nacionale",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ11Jm3UmYkX0djCuCKEdibz212-utpnu3cVwzW7uWhf9pNV4JqMwDAraefM8"
-        },
-        {
-          "url": "https://www.clarin.com/us-news/why-are-dow-futures-down-today-nov-24-2026-nvidia-pullback-fed-rate-fears-and-iran-sanctions_0_Ec1fP7ILS1.html",
-          "title": "Why are Dow futures down today, Nov. 24, 2026? Nvidia pullback, Fed rate fears, and Iran sanctions",
-          "publisher": "Clarín",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuDihzn-iUgtzAGpZNMHxe81TSpZzKP_LEPfGz9nQr1RyHSaMxP7SU92z3ePk"
-        },
-        {
-          "url": "https://www.fxleaders.com/news/2026/11/24/dow-futures-stall-near-49500-as-nasdaq-100-slips-toward-26500-amid-tech-caution/",
-          "title": "Dow Futures Stall Near 49,500 as Nasdaq Slips Toward 26,500 Amid Tech Caution",
-          "publisher": "FXLeaders",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYg8VX9ZCXBkH3OnPytGPFSwqqs4ELmpIHPCJZ4uDHCjTmpUVhoO_KV5chSkU"
-        }
-      ]
-    },
-    {
-      "query": "barclays center",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T14:20:00Z",
-      "related_news_urls": [
-        "https://dujour.com/gallery/barclays-center-improvements/",
-        "https://celebrityaccess.com/2026/11/23/brooklyn-sports-entertainment-completes-third-phase-of-barclays-center-renovations/",
-        "https://dujour.com/cities/new-york/barclays-center-improvements/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7I0c_8QuGowZPx3OC1eLbCxD_3acLVqThDJEhyBHSBG9Bheh3ELcta6y2a_s",
-      "image_credit": "DuJour",
-      "news": [
-        {
-          "url": "https://dujour.com/gallery/barclays-center-improvements/",
-          "title": "Barclays Center Levels Up",
-          "publisher": "DuJour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7I0c_8QuGowZPx3OC1eLbCxD_3acLVqThDJEhyBHSBG9Bheh3ELcta6y2a_s"
-        },
-        {
-          "url": "https://celebrityaccess.com/2026/11/23/brooklyn-sports-entertainment-completes-third-phase-of-barclays-center-renovations/",
-          "title": "Brooklyn Sports & Entertainment Completes Third Phase of Barclays Center Renovations",
-          "publisher": "CelebrityAccess",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ec0Wuq1LmNz2FJfT_ZuzO_uHgBBzg9aFg7P0WdXHCZndibjF1MB6LKhhkf0"
-        },
-        {
-          "url": "https://dujour.com/cities/new-york/barclays-center-improvements/",
-          "title": "Barclays Center Levels Up",
-          "publisher": "DuJour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPoes9CO0wMq3E-nnkQzPyxCvHM0ejHbEkFnJi_1tV65fuTc--o3aFJ5tYDrE"
-        }
-      ]
-    },
-    {
-      "query": "what time does the stock market open",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T14:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
-        "https://kalkine.com.au/news/general-news/is-spdr-dow-jones-industrial-average-etf-nysearcadia-shut-thursday-and-early-friday-at-100-pm-et"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-          "title": "Is the stock market open on Thanksgiving and Black Friday?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
-        },
-        {
-          "url": "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
-          "title": "US Public Holiday Trading Hours Adjustment Notice | 26 Nov 2026",
-          "publisher": "EBC Financial Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDw47nDCE7q_HwW1a7A_F66g508QPiiT-Rrq5XxcO5xYkSfaArj6swjcfF18"
-        },
-        {
-          "url": "https://kalkine.com.au/news/general-news/is-spdr-dow-jones-industrial-average-etf-nysearcadia-shut-thursday-and-early-friday-at-100-pm-et",
-          "title": "Is SPDR Dow Jones Industrial Average ETF (NYSEARCA:DIA) Shut Thursday and Early Friday at 1:00 p.m. ET?",
-          "publisher": "Kalkine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6OlXnqrVw0IGyzdLn_XEMXZXEM9r_gIC7VngEwi2e5n6mYU8Fi1j33sdZsZE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsHfiALoblMzpclRftg6chtW-jBm8yYpgRgEXnG-yXevgWkuNq9JNH7zl4wIM"
         }
       ]
     }
