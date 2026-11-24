@@ -3,76 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T16:01:09.517774Z",
+  "checked_at": "2026-11-24T16:31:07.804675Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kris bubic",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T15:40:00Z",
+      "query": "ohio basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T16:00:00Z",
       "related_news_urls": [
-        "https://www.si.com/mlb/braves/onsi/is-kris-bubic-worth-the-risk-for-the-braves-at-his-rising-price",
-        "https://clutchpoints.com/mlb/los-angeles-dodgers/mlb-rumors-tarik-skubal-dodgers-free-agent-pitcher-so-hot-right-now-cardinals",
-        "https://heavy.com/sports/mlb/st-louis-cardinals/cardinals-linked-group-starters-potential-upgrades/"
+        "https://ohiobobcats.com/news/2026/11/23/ohio-mens-basketball-set-to-take-on-new-mexico-state-rice-at-2026-scout-jacksonville-classic",
+        "https://www.accuscore.com/game/cmwtuybtn1k97qp018y6rx5fw",
+        "https://www.thepostathens.com/article/2026/11/ohio-mens-basketball-preview-jacksonville-classic"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLbpuS4I8B6rRuj9ziEntbjkY3JZawQ89vXNFt1CwM1nqppMUv0ItY6o4xC34",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTet7c0tOZPg8O53wAFFQi0ItqXFafE8mVaUEFh8gapCirACDXAoa2qtefcloE",
+      "image_credit": "ohiobobcats.com",
       "news": [
         {
-          "url": "https://www.si.com/mlb/braves/onsi/is-kris-bubic-worth-the-risk-for-the-braves-at-his-rising-price",
-          "title": "Is Kris Bubic Worth the Risk For the Braves at His Rising Price?",
-          "publisher": "Sports Illustrated",
+          "url": "https://ohiobobcats.com/news/2026/11/23/ohio-mens-basketball-set-to-take-on-new-mexico-state-rice-at-2026-scout-jacksonville-classic",
+          "title": "Ohio Men's Basketball Set to Take on New Mexico State, Rice at 2026 Scout Jacksonville Classic",
+          "publisher": "ohiobobcats.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLbpuS4I8B6rRuj9ziEntbjkY3JZawQ89vXNFt1CwM1nqppMUv0ItY6o4xC34"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTet7c0tOZPg8O53wAFFQi0ItqXFafE8mVaUEFh8gapCirACDXAoa2qtefcloE"
         },
         {
-          "url": "https://clutchpoints.com/mlb/los-angeles-dodgers/mlb-rumors-tarik-skubal-dodgers-free-agent-pitcher-so-hot-right-now-cardinals",
-          "title": "MLB rumors: A non-Tarik Skubal Dodgers free agent pitcher is so hot right now - watch out for Cardinals",
-          "publisher": "ClutchPoints",
+          "url": "https://www.accuscore.com/game/cmwtuybtn1k97qp018y6rx5fw",
+          "title": "Ohio vs New Mexico State Prediction (Nov 24): Ohio 66% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqFSE7g9cK4oeXQundzkZXBNbieEthWNgo4AFgs1VUYEC6LQ4oqcAcoBHf3UU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj9nJFaOiYEIVJzx61TadctnldME58JRTctB_8USN63xKN0UVhXRrYDLYOFrQ"
         },
         {
-          "url": "https://heavy.com/sports/mlb/st-louis-cardinals/cardinals-linked-group-starters-potential-upgrades/",
-          "title": "Cardinals Linked to Group of Starters as Potential Upgrades",
-          "publisher": "Heavy.com",
+          "url": "https://www.thepostathens.com/article/2026/11/ohio-mens-basketball-preview-jacksonville-classic",
+          "title": "Men’s Basketball: Ohio set to face off in the Jacksonville Classic for the first time",
+          "publisher": "The Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9uFycFyGfP7PIyzmh-Ihp2JqZDDIjDhXUvPHyODzUOAyzmoC8PsNAYqfv_Go"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIsiVUl6zH_My3JgcgWyX4Vtb5lx_-zLnF90BLw2jCgu3JGUaIFPv48k6aLko"
+        }
+      ]
+    },
+    {
+      "query": "ai safety",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T15:50:00Z",
+      "related_news_urls": [
+        "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+        "https://www.forbes.com/sites/zacharyfolk/2026/11/24/anthropic-stock-falls-below-83-per-share-ipo-price/",
+        "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnL3aGFrulX2pfAy70Sq_rE6cnEXWlgw_eAPU_jd9Ym5kkfJfcYNqAco90gaQ",
+      "image_credit": "Axios",
+      "news": [
+        {
+          "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
+          "title": "Scoop: Anthropic and OpenAI employees fear unreleased AI models are too unsafe to release",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnL3aGFrulX2pfAy70Sq_rE6cnEXWlgw_eAPU_jd9Ym5kkfJfcYNqAco90gaQ"
+        },
+        {
+          "url": "https://www.forbes.com/sites/zacharyfolk/2026/11/24/anthropic-stock-falls-below-83-per-share-ipo-price/",
+          "title": "Anthropic Stock Falls Below $83 Per Share IPO Price",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEU2nEhxmVFwijbFESIfMpDwZHLvwcqci9862YGNYRvs1t68wx9Tg35k1law"
+        },
+        {
+          "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668",
+          "title": "Anthropic’s stock just broke below its IPO price for the first time",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhrxwJEFhN3WSC1hhkf8KvBt5De_hMQNh4oOSjlSXJjVEG_HGNEU9_WE4hup0"
+        }
+      ]
+    },
+    {
+      "query": "shabab alahli vs al qadsiah",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T15:50:00Z",
+      "related_news_urls": [
+        "https://www.voiceofemirates.com/en/sport/2026/11/24/todays-match-schedule-and-broadcast-channels-al-ahli-vs-al-qadisiyah-and-real-madrid-vs-psv-eindhoven/",
+        "https://www.thestatszone.com/shabab-al-ahli-vs-al-qadsiah-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240980",
+        "https://www.voiceofemirates.com/en/emirates/2026/11/24/shabab-al-ahli-seeks-to-regain-its-continental-footing-against-al-qadsia-in-the-afc-champions-league-elite/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3BW3p1Nyn-umbIRit5I-ZnRRecxwMTFwKF7ejUVW7vmwwneK0V2SiyPag9EM",
+      "image_credit": "صوت الإمارات",
+      "news": [
+        {
+          "url": "https://www.voiceofemirates.com/en/sport/2026/11/24/todays-match-schedule-and-broadcast-channels-al-ahli-vs-al-qadisiyah-and-real-madrid-vs-psv-eindhoven/",
+          "title": "Today's match schedule and broadcast channels: Al-Ahli vs Al-Qadisiyah and Real Madrid vs PSV Eindhoven",
+          "publisher": "صوت الإمارات",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3BW3p1Nyn-umbIRit5I-ZnRRecxwMTFwKF7ejUVW7vmwwneK0V2SiyPag9EM"
+        },
+        {
+          "url": "https://www.thestatszone.com/shabab-al-ahli-vs-al-qadsiah-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240980",
+          "title": "Shabab Al Ahli vs Al Qadsiah Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXkjZLqWfHqjBIxSxZxyvzfEJ5RWi3geXZiUkXR_qkGxXzbaN9QmU__DsnIPo"
+        },
+        {
+          "url": "https://www.voiceofemirates.com/en/emirates/2026/11/24/shabab-al-ahli-seeks-to-regain-its-continental-footing-against-al-qadsia-in-the-afc-champions-league-elite/",
+          "title": "Shabab Al-Ahli seeks to regain its continental footing against Al-Qadsia in the AFC Champions League Elite",
+          "publisher": "صوت الإمارات",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpYvPWZ3opDM_2e8zlTk2R6IEBll7qfu5Xr8i1IeOQWPWAwElPmN6ACVGXZLM"
         }
       ]
     },
     {
       "query": "freddy peralta",
-      "approx_searches": "500+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-24T15:40:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25536774-2026-mlb-free-agents-rumors-predictions-freddy-peralta-and-more-after-skubals-mets-contract",
-        "https://sports.yahoo.com/articles/freddy-peralta-orioles-best-bet-140000182.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/passan-cubs-sign-teruaki-sato-to-six-year-deal"
+        "https://www.espn.com/mlb/story/_/id/50583512/sources-freddy-peralta-orioles-5-years-125-million",
+        "https://www.mlb.com/orioles/video/report-freddy-peralta-agrees-to-deal-with-orioles",
+        "https://www.cbssports.com/mlb/news/freddy-peralta-orioles-free-agency-contract/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf0BvOzgDsyf8HIRNx2XqNVModw7mKfNUO4nP-mUhw0SreS44E4jo9BS2a7Io",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaBgkpoT4ZfO8XC3BG2imB-59Pbw8hZkRwlWLcgof4tFkvLldR6sIkMLuzm1M",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25536774-2026-mlb-free-agents-rumors-predictions-freddy-peralta-and-more-after-skubals-mets-contract",
-          "title": "2026 MLB Free Agents Rumors, Predictions for Freddy Peralta and More After Skubal's Mets Contract",
-          "publisher": "Bleacher Report",
+          "url": "https://www.espn.com/mlb/story/_/id/50583512/sources-freddy-peralta-orioles-5-years-125-million",
+          "title": "Sources: Freddy Peralta stays in AL East, gets $125M deal to top Orioles rotation",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf0BvOzgDsyf8HIRNx2XqNVModw7mKfNUO4nP-mUhw0SreS44E4jo9BS2a7Io"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaBgkpoT4ZfO8XC3BG2imB-59Pbw8hZkRwlWLcgof4tFkvLldR6sIkMLuzm1M"
         },
         {
-          "url": "https://sports.yahoo.com/articles/freddy-peralta-orioles-best-bet-140000182.html",
-          "title": "Freddy Peralta is the Orioles’ best bet for improving their rotation",
+          "url": "https://www.mlb.com/orioles/video/report-freddy-peralta-agrees-to-deal-with-orioles",
+          "title": "Report: Freddy Peralta agrees to deal with Orioles",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV0HIAWpkhuDWoLjJ5OAbjO1n7A4hbQOgzDcoPREnfrkGYDe1mvKA1x15MspI"
+        },
+        {
+          "url": "https://www.cbssports.com/mlb/news/freddy-peralta-orioles-free-agency-contract/",
+          "title": "Freddy Peralta lands with Orioles: After post-trade turnaround, ALCS MVP scores five-year, $125 million deal",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbrG_GmMIPe9etRFf5jgpz5YAprWmkSY5uqc88le1FoK0RBYiy4yQjZGHIGY"
+        }
+      ]
+    },
+    {
+      "query": "kris bubic",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T15:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50583426/sources-guardians-lefty-kris-bubic-agree-one-year-deal",
+        "https://www.mlb.com/video/kris-bubic-reportedly-signs-with-guardians",
+        "https://sports.yahoo.com/articles/report-kris-bubic-agrees-deal-155912595.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqrMS65b56N_hLcTHd3ZfnW517f_rMyEigc9aTQdPI9LeDbD-EPzE7ThgzxZY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50583426/sources-guardians-lefty-kris-bubic-agree-one-year-deal",
+          "title": "Sources: Guardians, lefty Kris Bubic agree to one-year, $17.5M deal",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqrMS65b56N_hLcTHd3ZfnW517f_rMyEigc9aTQdPI9LeDbD-EPzE7ThgzxZY"
+        },
+        {
+          "url": "https://www.mlb.com/video/kris-bubic-reportedly-signs-with-guardians",
+          "title": "Kris Bubic reportedly signs with Guardians",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS1tfiQ0NCD38ZqtgZ95fCDKUScDSbVXvibStxEjLeNdDGKhtcr-5RG9cDMwo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/report-kris-bubic-agrees-deal-155912595.html",
+          "title": "Report: Kris Bubic Agrees to Deal With Detroit Tigers Division Rival",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-hH4CGJl0XbxZPmgMP2IDEkmTBh_8HP5N0EA-fruWXQ_l6Em0P9ccHSyESw"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/passan-cubs-sign-teruaki-sato-to-six-year-deal",
-          "title": "Passan: Cubs sign Teruaki Sato to six-year deal",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7LNvVFT4_Y-5cBe9oQC5HJVFfq8qy2NkmEevHHEfcGuwsrnORjKLDqp9oxqA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVfS6mHtK7HyWrN19jctHDjFKlf6GLBLcQ4q9YrjKYEHCJ0LXc5hpsDUZX9FQ"
         }
       ]
     },
@@ -82,8 +187,8 @@
       "published_at": "2026-11-24T15:40:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/articles/potential-free-agent-target-ian-154016379.html",
-        "https://www.royalsreview.com/kansas-city-royals-analysis/108385/one-mans-trash-non-tendered-targets-for-kansas-city-royals",
-        "https://kingsofkauffman.com/4-non-tendered-players-the-royals-must-sign-this-offseason"
+        "https://roundtable.io/sports/mlb/twins/players/twins-could-turn-to-cubs-veteran-to-address-one-of-their-biggest-roster-concerns",
+        "https://demokratis.co.id/en/royals-target-ian-happ-outfield"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s",
       "image_credit": "Yahoo Sports",
@@ -96,53 +201,123 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s"
         },
         {
-          "url": "https://www.royalsreview.com/kansas-city-royals-analysis/108385/one-mans-trash-non-tendered-targets-for-kansas-city-royals",
-          "title": "Potential non-tendered free agent targets for the Royals",
-          "publisher": "Royals Review",
+          "url": "https://roundtable.io/sports/mlb/twins/players/twins-could-turn-to-cubs-veteran-to-address-one-of-their-biggest-roster-concerns",
+          "title": "Twins Could Turn to Cubs Veteran to Address One of Their Biggest Roster Concerns",
+          "publisher": "roundtable.io",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgkKtWoaIm9_VKwcUAa75I_KIfG9S4s9pLFzP68Ox5jtH4_qcmZWqAbMLLgYs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LbuCju-LXwwggVTER6Tk6jH5_13HdDl7ROzzlKL7NDaPJF8BZDP1pfV_QAw"
         },
         {
-          "url": "https://kingsofkauffman.com/4-non-tendered-players-the-royals-must-sign-this-offseason",
-          "title": "4 non-tendered players the Royals must sign this offseason",
-          "publisher": "Kings of Kauffman",
+          "url": "https://demokratis.co.id/en/royals-target-ian-happ-outfield",
+          "title": "Royals Consider Ian Happ to Strengthen Left Field",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX1onIb5z54w_UehrJQgS29O7U0qeURvCVHIOIFoJwOIQjLDtktEBGRGD66HM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSgnDjLSC_sYoZPjcuI3MG0VUV-VQrId2VDGT0wLqWqAKEpZo_dzzQLcoI5os"
+        }
+      ]
+    },
+    {
+      "query": "s&p 500 index",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T15:40:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-24/market-timers-get-schooled-as-s-p-500-swings-rip-up-playbooks",
+        "https://finance.yahoo.com/markets/stocks/articles/stock-market-just-entered-correction-082002220.html",
+        "https://www.fool.com/investing/2026/11/23/if-a-stock-market-crash-is-coming-warren-buffett-says-this-is-the-best-move-investors-should-make/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFrCtQrhY85KxTey3OIt3-KOn9zI7WG9L-jYtjf0rKqP-LhVNgEW7Ffaak6pc",
+      "image_credit": "Bloomberg",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/market-timers-get-schooled-as-s-p-500-swings-rip-up-playbooks",
+          "title": "Market Timers Get Schooled as S&P 500 Swings Rip Up Playbooks",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFrCtQrhY85KxTey3OIt3-KOn9zI7WG9L-jYtjf0rKqP-LhVNgEW7Ffaak6pc"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-just-entered-correction-082002220.html",
+          "title": "The Stock Market Just Entered a Correction. History Says Investors Who Make This 1 Move Right Now Will Win Out.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQteIYVIbLR1zmnckbJTtiG6W2_H-EztL2tbyFzFikJKvuowYVlXXS6mjn_lXA"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/23/if-a-stock-market-crash-is-coming-warren-buffett-says-this-is-the-best-move-investors-should-make/",
+          "title": "If a Stock Market Crash Is Coming, Warren Buffett Says This Is the Best Move Investors Should Make",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJHeDzR11kwI_ZbtyEejBVxbQS6H0kX6jW1DbKv9IKgmwMth_W8MEVN3nQYX0"
         }
       ]
     },
     {
       "query": "jonbenet ramsey",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-24T15:30:00Z",
       "related_news_urls": [
-        "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/",
-        "https://theplaylist.net/the-murder-of-jonbenet-ramsey-trailer-melissa-mccarthy-clive-owen-netflix-20261124/",
-        "https://deadline.com/2026/11/the-murder-of-jonbenet-ramsey-trailer-netflix-series-1237232085/"
+        "https://www.hollywoodreporter.com/tv/tv-news/netflix-the-murder-of-jonbenet-ramsey-trailer-mccarthy-owen-1236762125/",
+        "https://www.yahoo.com/entertainment/movies/trailers/articles/watch-melissa-mccarthy-clive-owen-154132011.html",
+        "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4CqnVs5R0q_nMLzsRqiodtjzNf7eATOuh7OAF7HQNaapzLJcmgiGJ5iR-Cbc",
-      "image_credit": "TheWrap",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1VwvYySKfETkP1a2DM20nehSMi0QQFjHUj-cixD1W62qBfJ1pW8pOCylroOU",
+      "image_credit": "The Hollywood Reporter",
       "news": [
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/netflix-the-murder-of-jonbenet-ramsey-trailer-mccarthy-owen-1236762125/",
+          "title": "Netflix’s ‘The Murder of JonBenét Ramsey’ Haunting Trailer Shines Spotlight on Melissa McCarthy and Clive Owen",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1VwvYySKfETkP1a2DM20nehSMi0QQFjHUj-cixD1W62qBfJ1pW8pOCylroOU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/watch-melissa-mccarthy-clive-owen-154132011.html",
+          "title": "Watch: Melissa McCarthy, Clive Owen star in JonBenet Ramsey series",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXZYW6sgC6ik0H6G8lfsqoZtk0I5Q-0m8mS0E0wY3KrC9HQUcJQ9l6Mbx17cI"
+        },
         {
           "url": "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/",
           "title": "‘The Murder of JonBenét Ramsey’ Trailer: Netflix’s True Crime Series Stars Melissa McCarthy, Clive Owen",
           "publisher": "TheWrap",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4CqnVs5R0q_nMLzsRqiodtjzNf7eATOuh7OAF7HQNaapzLJcmgiGJ5iR-Cbc"
+        }
+      ]
+    },
+    {
+      "query": "pakistan a vs nepal national cricket team standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T15:30:00Z",
+      "related_news_urls": [
+        "https://www.geo.tv/latest/692495-pakistan-shaheens-crush-nepal-to-maintain-unbeaten-run-in-rising-stars-asia-cup",
+        "https://tribune.com.pk/story/2642108/shaheens-crush-nepal-to-stay-unbeaten-in-asia-cup-rising-stars",
+        "https://dunyanews.tv/en/Sports/984657-rising-stars-asia-cup-pakistan-shaheens-elect-to-bat-first-against-ne"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpKY_LKBRQzMu6l8XvELL8umDNfflvRCkpdW1kf_rXPiwvIv9Ua9PUh0uYJUA",
+      "image_credit": "Geo News",
+      "news": [
+        {
+          "url": "https://www.geo.tv/latest/692495-pakistan-shaheens-crush-nepal-to-maintain-unbeaten-run-in-rising-stars-asia-cup",
+          "title": "Pakistan Shaheens crush Nepal to maintain unbeaten run in Rising Stars Asia Cup",
+          "publisher": "Geo News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpKY_LKBRQzMu6l8XvELL8umDNfflvRCkpdW1kf_rXPiwvIv9Ua9PUh0uYJUA"
         },
         {
-          "url": "https://theplaylist.net/the-murder-of-jonbenet-ramsey-trailer-melissa-mccarthy-clive-owen-netflix-20261124/",
-          "title": "‘The Murder Of JonBenét Ramsey’ Trailer: Melissa McCarthy & Clive Owen Revisit An Infamous American Tragedy In Netflix’s New Series",
-          "publisher": "The Playlist",
+          "url": "https://tribune.com.pk/story/2642108/shaheens-crush-nepal-to-stay-unbeaten-in-asia-cup-rising-stars",
+          "title": "Shaheens crush Nepal to stay unbeaten in Asia Cup Rising Stars",
+          "publisher": "The Express Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGcDe7hu1LDxJC4X2got_3nZatTGTIpJLtMLsjaFOZcmgCSByDFF-kWGL3Nt8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPGxpCozWPY8IO6hD2TuFWtwd4LhX-iyKvFGFt2Ma2AqLQMG34-j-RER4CIUk"
         },
         {
-          "url": "https://deadline.com/2026/11/the-murder-of-jonbenet-ramsey-trailer-netflix-series-1237232085/",
-          "title": "'The Murder of JonBenét Ramsey' Trailer Puts Spotlight On Parents",
-          "publisher": "Deadline",
+          "url": "https://dunyanews.tv/en/Sports/984657-rising-stars-asia-cup-pakistan-shaheens-elect-to-bat-first-against-ne",
+          "title": "Rising Stars Asia Cup: Pakistan Shaheens elect to bat first against Nepal",
+          "publisher": "Dunya News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTny_S4AiqgEy-qs5cwzWjjDH8K8HIcJHl_JDzWfwLapSglkvc7j2mSLLuCOsk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrHEWylEetPQuXtGtwp_GTKjnurm05vN_xBi2Yf7gIUQ7tU--BG5kmfKJdv84"
         }
       ]
     },
@@ -152,10 +327,10 @@
       "published_at": "2026-11-24T15:20:00Z",
       "related_news_urls": [
         "https://abc7ny.com/story/trump-will-give-medal-freedom-giuliani-fierce-political-ally-led-new-york-911/20074751/",
-        "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/",
-        "https://komonews.com/news/nation-world/president-donald-trump-to-award-former-new-york-mayor-rudy-giuliani-presidential-medal-of-freedom-for-september-11-2001-leadership-terrorist-attacks-man-in-red-bandana-charlie-kirk"
+        "https://www.forbes.com/sites/saradorn/2026/11/24/trump-awarding-rudy-giuliani-medal-of-freedom-today/",
+        "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8rHgDpr4toTW_rpmxWtqnVPFZTCKpV0bBN12wmGIk1YyTc06uftTRsSkSJkU",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3OwKgqNeOtZ6gkadxw3CkRDKs9--0yhFQSwUvJN-mRIcf2YaIwGO0FL-shE",
       "image_credit": "ABC7 New York",
       "news": [
         {
@@ -163,7 +338,14 @@
           "title": "Trump will give Medal of Freedom to Giuliani, a fierce political ally who led New York through 9/11",
           "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8rHgDpr4toTW_rpmxWtqnVPFZTCKpV0bBN12wmGIk1YyTc06uftTRsSkSJkU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3OwKgqNeOtZ6gkadxw3CkRDKs9--0yhFQSwUvJN-mRIcf2YaIwGO0FL-shE"
+        },
+        {
+          "url": "https://www.forbes.com/sites/saradorn/2026/11/24/trump-awarding-rudy-giuliani-medal-of-freedom-today/",
+          "title": "Rudy Giuliani Says He’s Receiving Medal Of Freedom From Trump Today",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLgsN9_OFbNv1inuPwxw8UAo8TCZvK1RHn7ph2KhQCbUw6oTDk8zFagBUVvXY"
         },
         {
           "url": "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/",
@@ -171,188 +353,6 @@
           "publisher": "USA Today",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZUbc6usz-0URU7vBXddViasfsVYHUshCqEDEDcXAEo1o446OvijyTOnU0o2M"
-        },
-        {
-          "url": "https://komonews.com/news/nation-world/president-donald-trump-to-award-former-new-york-mayor-rudy-giuliani-presidential-medal-of-freedom-for-september-11-2001-leadership-terrorist-attacks-man-in-red-bandana-charlie-kirk",
-          "title": "Trump to award Rudy Giuliani Presidential Medal of Freedom for 9/11 leadership",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxozs4iNgyLpej_Ms7OOqEEl3KPsTN1--Zy-kUhBDFeF_XyIKGKhOKbpValuQ"
-        }
-      ]
-    },
-    {
-      "query": "nasdaq index",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T15:20:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-23/stock-market-today-dow-s-p-live-updates",
-        "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
-        "https://finance.yahoo.com/markets/stocks/articles/stock-traders-brace-more-volatility-230442405.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgW9xPTQmbK0IVMD4ICvig_KwXeJuHpCEpRnUWrM-844Zv4bNiUukg9F9bM",
-      "image_credit": "Bloomberg",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-23/stock-market-today-dow-s-p-live-updates",
-          "title": "Stocks Turn Lower as Nvidia Euphoria Wears Off: Markets Wrap",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgW9xPTQmbK0IVMD4ICvig_KwXeJuHpCEpRnUWrM-844Zv4bNiUukg9F9bM"
-        },
-        {
-          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
-          "title": "Instant view: Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYFPfBR4GUEPyXzD-m-0Ws1xzBiLl4kFt8Ky3T8IvPSk1jdIkJwXkZ7oNDnuQ"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-traders-brace-more-volatility-230442405.html",
-          "title": "Stock Traders Brace For More Volatility After Tech-Driven Rout",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iDpRi4bMxsmyQ8rZ6nKZokAr3uknrwUcKAXvyE1AJdjYn6cfh8ubTxtECPA"
-        }
-      ]
-    },
-    {
-      "query": "seiya suzuki",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T15:10:00Z",
-      "related_news_urls": [
-        "https://www.lookoutlanding.com/seattle-mariners-news/151203/tarik-skubal-scott-servais-luis-gil-maikel-garcia-randy-arozarena",
-        "https://www.mlb.com/news/randy-arozarena-vs-seiya-suzuki-free-agent-breakdown",
-        "https://www.seattletimes.com/sports/mariners/why-seiya-suzuki-is-worth-a-100-million-gamble-for-the-mariners/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj0QBmSJiVin21NBJRrCSWSQZmLYXWdAeLoKRVgdCdgDejeCcFSwu7CMpQqJw",
-      "image_credit": "Lookout Landing",
-      "news": [
-        {
-          "url": "https://www.lookoutlanding.com/seattle-mariners-news/151203/tarik-skubal-scott-servais-luis-gil-maikel-garcia-randy-arozarena",
-          "title": "Mariners News: Tarik Skubal, Scott Servais, and Luis Gil",
-          "publisher": "Lookout Landing",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj0QBmSJiVin21NBJRrCSWSQZmLYXWdAeLoKRVgdCdgDejeCcFSwu7CMpQqJw"
-        },
-        {
-          "url": "https://www.mlb.com/news/randy-arozarena-vs-seiya-suzuki-free-agent-breakdown",
-          "title": "Two free-agent outfielders, identical stat lines. Which one will teams covet more?",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ0PGK8a5lgIicyAm3-v63wKklST8GqXmAHmnSQOfNgipBvQuvOw3qQ2PjzGI"
-        },
-        {
-          "url": "https://www.seattletimes.com/sports/mariners/why-seiya-suzuki-is-worth-a-100-million-gamble-for-the-mariners/",
-          "title": "Why Seiya Suzuki is worth a $100 million gamble for the Mariners",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZRCZtRTPEEL4RChcNopXACq_aDht5vtmLhvo6hQj2gdba1mIR3ZtUepFTN5Q"
-        }
-      ]
-    },
-    {
-      "query": "nasdaq today",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T15:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-        "https://www.wsj.com/cio-journal/ais-unanswered-questions-0000937c",
-        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-          "title": "Nasdaq declines as Nvidia slides, giving back part of Monday’s rally: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E"
-        },
-        {
-          "url": "https://www.wsj.com/cio-journal/ais-unanswered-questions-0000937c",
-          "title": "AI’s Unanswered Questions",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXcN-4_vEmC2nb7D69msDHwAVxOjgViTZ6vW2WCsvakJ8BwtukX9eWnTjXDyA"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
-          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
-        }
-      ]
-    },
-    {
-      "query": "honduras sub-17 - colombia sub-17",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T15:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17552748/colombia-vs-honduras-fecha-2-mundial-sub-17-equipo-fecha-hora-y-tv-en-vivo",
-        "https://spanish.news.cn/20261123/9080ba5c05264783a9b7e914f5bd8665/c.html",
-        "https://es-us.noticias.yahoo.com/vencer-jap%C3%B3n-t%C3%A9cnico-fredy-hurtado-181938799.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3kkzBA8NhwFbyYNmMiDTfvoFDlWnPdekuSX9Iua4paN_uJQBKXaHcS_Z45M",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17552748/colombia-vs-honduras-fecha-2-mundial-sub-17-equipo-fecha-hora-y-tv-en-vivo",
-          "title": "Cuándo juegan Colombia vs Honduras por fecha 2 del Mundial Sub 17: equipo, fecha, hora y TV en vivo",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3kkzBA8NhwFbyYNmMiDTfvoFDlWnPdekuSX9Iua4paN_uJQBKXaHcS_Z45M"
-        },
-        {
-          "url": "https://spanish.news.cn/20261123/9080ba5c05264783a9b7e914f5bd8665/c.html",
-          "title": "Copa Mundial de la FIFA Sub-17: Japón vs Colombia",
-          "publisher": "新华网",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3UBZOZWrSgxt-NQ954gK5IGMm023nDx5mEe_u8QCKVSjjfw57KQHJoAO6X5g"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/vencer-jap%C3%B3n-t%C3%A9cnico-fredy-hurtado-181938799.html",
-          "title": "Tras vencer a Japón, el técnico Fredy Hurtado habló del objetivo de Colombia en el Mundial Sub-17 y de su próximo rival",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqaaW01Vmd0f4Ph-OQaGFSKTX7BV9aRpCak7hf5SgBO0dcdC7FCjrzXOSR9B8"
-        }
-      ]
-    },
-    {
-      "query": "trev alberts",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T15:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50583155/attorney-trev-alberts-told-next-ad-michigan",
-        "https://www.cbssports.com/college-football/news/michigan-will-not-hire-texas-a-m-ad-trev-alberts-could-still-owe-full-buyout/",
-        "https://www.mlive.com/wolverines/football/2026/11/michigan-reverses-course-on-hiring-trev-alberts-as-next-athletic-director.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToNgSjF6MLPY-qFbvrkV7vzHysuv9Nezl4DHVlZmji92J8V0zXybXPy6Gy-Ds",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50583155/attorney-trev-alberts-told-next-ad-michigan",
-          "title": "Attorney - Trev Alberts told he won't be next AD at Michigan",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToNgSjF6MLPY-qFbvrkV7vzHysuv9Nezl4DHVlZmji92J8V0zXybXPy6Gy-Ds"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/michigan-will-not-hire-texas-a-m-ad-trev-alberts-could-still-owe-full-buyout/",
-          "title": "Michigan will not hire Texas A&M AD Trev Alberts, could still owe full buyout",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NGuQs-dUCTO_AZSSfIfV6_LbVdWO4M7X2Q-z7g1EtEuyHIvDGoTTpOm7Pfo"
-        },
-        {
-          "url": "https://www.mlive.com/wolverines/football/2026/11/michigan-reverses-course-on-hiring-trev-alberts-as-next-athletic-director.html",
-          "title": "Michigan reverses course on hiring Trev Alberts as next athletic director",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcBUN8goa_3-WfcPM0D3W8mi_YuPLzG4rGJXPOEYXwR8xQu1yi7LLUdTjMrXU"
         }
       ]
     }
