@@ -153,3 +153,54 @@ test('portable Brain rejects a separate private work-ticket database without add
  assert.throws(()=>openPortableBrainState(dbPath),/dedicated_state_database_required/);
  assert.deepEqual(readFileSync(dbPath),before);
 });
+
+
+test('portable ticket compare-and-swap commits reservation and ticket shadow together',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),dbPath=join(dir,'brain-state.sqlite');
+ let state=openPortableBrainState(dbPath);
+ const ticketKey='ticket-shadow:owner-a:fixture',before={context_json:'{"kind":"robot-directions"}',status:'ready'};
+ const after={...before,status:'working'};
+ try{
+  await state.put(ticketKey,before);
+  const reserve=()=>state.transaction(async tx=>{
+   if(await tx.get('runner-claim:fixture:1'))return false;
+   if(!await tx.compareAndSwap(ticketKey,before,after))return false;
+   await tx.put('writer:fixture',{leaseId:'fixture-fence'});
+   await tx.put('repository-lease:fixture',{leaseId:'fixture-fence'});
+   await tx.put('runner-claim:fixture:1','fixture-fence');
+   return true;
+  });
+  assert.deepEqual(await Promise.all([reserve(),reserve()]),[true,false]);
+  await state.close();state=openPortableBrainState(dbPath);
+  assert.deepEqual(await state.get(ticketKey),after);
+  assert.equal(await state.get('runner-claim:fixture:1'),'fixture-fence');
+  assert.equal(await state.transaction(tx=>tx.compareAndSwap(ticketKey,before,{status:'complete'})),false);
+  assert.deepEqual(await state.get(ticketKey),after);
+ }finally{await state.close();}
+});
+test('portable ticket compare-and-swap is transaction-only and rolls back with reservations',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),state=openPortableBrainState(join(dir,'brain-state.sqlite'));
+ const key='ticket-shadow:owner-a:fixture',before={status:'ready'};
+ let escaped;
+ try{
+  assert.equal(state.compareAndSwap,undefined);
+  await state.put(key,before);
+  await assert.rejects(state.transaction(async tx=>{
+   escaped=tx;
+   assert.equal(await tx.compareAndSwap(key,before,{status:'working'}),true);
+   await tx.put('writer:fixture',{leaseId:'uncommitted'});
+   throw Error('fixture aborted');
+  }),/fixture aborted/);
+  assert.deepEqual(await state.get(key),before);
+  assert.equal(await state.get('writer:fixture'),undefined);
+  await assert.rejects(escaped.compareAndSwap(key,before,{status:'complete'}),/transaction_closed/);
+  await state.transaction(async tx=>{
+   assert.equal(await tx.compareAndSwap('absent',null,1),false);
+   assert.equal(await tx.compareAndSwap('absent',undefined,1),true);
+   assert.equal(await tx.compareAndSwap('absent',undefined,2),false);
+  });
+  assert.equal(await state.get('absent'),1);
+ }finally{await state.close();}
+});
