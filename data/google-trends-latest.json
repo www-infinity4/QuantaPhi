@@ -3,47 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T00:41:50.302669Z",
+  "checked_at": "2026-11-24T01:01:30.385070Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "zac taylor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T00:20:00Z",
+      "query": "clippers vs rockets",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T00:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
-        "https://www.cbssports.com/nfl/news/polymarket-promo-code-cbssports-score-25-bonus-bengals-vs-commanders-monday-night-football-predictions/",
-        "https://sports.yahoo.com/articles/washington-commanders-vs-cincinnati-bengals-000000649.html"
+        "https://www.thedreamshake.com/rockets-game-previews/42679/houston-rockets-vs-los-angeles-clippers-game-preview",
+        "https://sports.yahoo.com/articles/clippers-vs-rockets-prediction-pick-152424640.html",
+        "https://sportstalk790.iheart.com/content/2026-11-23-clippers-vs-rockets-injury-report-nov-23/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgN5eU8ImgesI9K6g1Dx4jTAdIkFMDcjXm7Ff_roWtSoGtUg4kqtFlDiXfprg",
+      "image_credit": "The Dream Shake",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
-          "title": "Bengals’ Joe Flacco Makes Eye-Opening Claim About Zac Taylor’s Staff",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.thedreamshake.com/rockets-game-previews/42679/houston-rockets-vs-los-angeles-clippers-game-preview",
+          "title": "Houston Rockets vs. Los Angeles Clippers game preview",
+          "publisher": "The Dream Shake",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgN5eU8ImgesI9K6g1Dx4jTAdIkFMDcjXm7Ff_roWtSoGtUg4kqtFlDiXfprg"
         },
         {
-          "url": "https://www.cbssports.com/nfl/news/polymarket-promo-code-cbssports-score-25-bonus-bengals-vs-commanders-monday-night-football-predictions/",
-          "title": "Polymarket promo code CBSSPORTS: Score $25 bonus for Bengals vs. Commanders, Monday Night Football predictions",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/washington-commanders-vs-cincinnati-bengals-000000649.html",
-          "title": "Washington Commanders vs Cincinnati Bengals: NFL Week 11 MNF game chat and live discussion",
+          "url": "https://sports.yahoo.com/articles/clippers-vs-rockets-prediction-pick-152424640.html",
+          "title": "Clippers vs Rockets Prediction, Pick, NBA Odds for Monday, November 23",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQdR7arHdHMOKcueL5i1sT9vZWHPRjmEtgR8VAckT8FDa_rxR1c-wRdEIEavo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4KBxZwU_DR5T0S0fonIqei7Ke2q29dKNNpU7Iy9WP7h75_9cr6n_ZqXTWKE"
+        },
+        {
+          "url": "https://sportstalk790.iheart.com/content/2026-11-23-clippers-vs-rockets-injury-report-nov-23/",
+          "title": "Clippers vs. Rockets Injury Report – Nov. 23",
+          "publisher": "SportsTalk 790",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjatAMVOTs0jZ9aZE6mPH71M07FQN1jNkb2nb3P4UHXQi5ZNW_8TuOX9BeVi8"
+        }
+      ]
+    },
+    {
+      "query": "joe burrow stats",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T00:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/bengals-joe-burrow-chasing-history-mvp-super-bowl-monday-night-football",
+        "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
+        "https://sports.yahoo.com/articles/steelers-cameron-heyward-adds-fuel-164754094.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sBE_Rn9zmtMeMweUc2r1k9kMARqwcuZjUUSKmLQSKXJYU2LsIIFmmgsbpM0",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/bengals-joe-burrow-chasing-history-mvp-super-bowl-monday-night-football",
+          "title": "Bengals Joe Burrow is chasing history, an MVP and a Super Bowl on Monday Night Football",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sBE_Rn9zmtMeMweUc2r1k9kMARqwcuZjUUSKmLQSKXJYU2LsIIFmmgsbpM0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
+          "title": "Joe Burrow clear NFL MVP odds favorite over Josh Allen, Brock Purdy",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/steelers-cameron-heyward-adds-fuel-164754094.html",
+          "title": "Steelers' Cameron Heyward Adds Fuel to Joe Burrow's 2026 MVP Case With High Praise",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlnr2OX-490TlIQvIDjv0CujBvCGw4YpUqXzrBIvHsokZ0nK-2eab_wI5oEMY"
+        }
+      ]
+    },
+    {
+      "query": "immigration",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T00:30:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/23/new-york-city-and-other-local-governments-sue-to-block-trumps-immigrant-housing-rule-01180609",
+        "https://www.seattletimes.com/business/real-estate/wa-sues-over-hud-housing-rule-targeting-immigrant-households/",
+        "https://www.azfamily.com/2026/11/23/arizona-sues-over-federal-rule-ending-housing-aid-mixed-status-families/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWyV1X7DvYYGkLvqMJMeQfhtdhN-B90yF7LHXOMwDReE-UHBK6R60ScWn-zQ",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/23/new-york-city-and-other-local-governments-sue-to-block-trumps-immigrant-housing-rule-01180609",
+          "title": "Mamdani joins cities in suing to block Trump’s housing rule for mixed-status families",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWyV1X7DvYYGkLvqMJMeQfhtdhN-B90yF7LHXOMwDReE-UHBK6R60ScWn-zQ"
+        },
+        {
+          "url": "https://www.seattletimes.com/business/real-estate/wa-sues-over-hud-housing-rule-targeting-immigrant-households/",
+          "title": "WA sues over HUD housing rule targeting immigrant households",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlo-4ZUoESoAVGBX3eu0ATASE1gFyFmlUFgHpW_PEdAE_SVvPRuMoXsB4f8rg"
+        },
+        {
+          "url": "https://www.azfamily.com/2026/11/23/arizona-sues-over-federal-rule-ending-housing-aid-mixed-status-families/",
+          "title": "Arizona sues over federal rule ending housing aid for mixed-status families",
+          "publisher": "AZ Family",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRULS3-UwjgJkyYMm2jfeHCC57vupo29vOIos5fwLi0N_Cq8LrFuVqJxt3m3Nk"
+        }
+      ]
+    },
+    {
+      "query": "sol ruca",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T00:30:00Z",
+      "related_news_urls": [
+        "https://lindyssports.com/other-sports/sol-ruca-making-her-own-wwe-gear",
+        "https://www.fightful.com/wrestling/sol-ruca-names-her-favorite-part-of-creating-her-own-ring-gear/",
+        "https://411mania.com/wrestling/sol-ruca-favorite-part-making-own-ring-gear/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLZuK7eNDhs6XBO-a2GNXJiwjnBtG5-R7LvcEiWXW6IXTpT9Wpwp9XmXopg-s",
+      "image_credit": "Lyndy's Sports Annuals",
+      "news": [
+        {
+          "url": "https://lindyssports.com/other-sports/sol-ruca-making-her-own-wwe-gear",
+          "title": "Sol Ruca shares personal message on WWE gear",
+          "publisher": "Lyndy's Sports Annuals",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLZuK7eNDhs6XBO-a2GNXJiwjnBtG5-R7LvcEiWXW6IXTpT9Wpwp9XmXopg-s"
+        },
+        {
+          "url": "https://www.fightful.com/wrestling/sol-ruca-names-her-favorite-part-of-creating-her-own-ring-gear/",
+          "title": "Sol Ruca Names Her Favorite Part Of Creating Her Own Ring Gear",
+          "publisher": "Fightful",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1wqg-0hzcw4pW5pQ7lCHb4_ucPMJiz5Qhmw2ULloK1UZ3zaBBZZOCB4cPbvo"
+        },
+        {
+          "url": "https://411mania.com/wrestling/sol-ruca-favorite-part-making-own-ring-gear/",
+          "title": "Sol Ruca Explains Her Favorite Part Of Making Her Own Ring Gear",
+          "publisher": "411Mania.",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0fzhRCNBkp8eLhHBvVjjpqHKlGuJdc0eZ4ugR8_jBulUCWiGvkIsCiMHlaPo"
+        }
+      ]
+    },
+    {
+      "query": "santa clara basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T00:30:00Z",
+      "related_news_urls": [
+        "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
+        "https://www.rgj.com/story/sports/college/wolf-pack/2026/11/23/nevada-races-past-san-francisco-71-62-in-acrisure-series/92934232007/",
+        "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ",
+      "image_credit": "Nevada Sports Net",
+      "news": [
+        {
+          "url": "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
+          "title": "Nevada basketball versus San Francisco: Three keys to victory and a prediction",
+          "publisher": "Nevada Sports Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ"
+        },
+        {
+          "url": "https://www.rgj.com/story/sports/college/wolf-pack/2026/11/23/nevada-races-past-san-francisco-71-62-in-acrisure-series/92934232007/",
+          "title": "Nevada races past San Francisco, 71-62, in Acrisure Series",
+          "publisher": "Reno Gazette Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnCZDzvhHA7dsjg2NHXg3mFfU7B3jiKMEnEskUSTFMGzWJcizYf5mITxnhBa4"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/",
+          "title": "San Francisco vs Nevada Prediction, Picks & Odds | 23 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
+        }
+      ]
+    },
+    {
+      "query": "seth rollins",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T00:30:00Z",
+      "related_news_urls": [
+        "https://www.wwe.com/videos/exclusive-danhausen-invites-hacksaw-jim-duggan-to-his-friendsgiving-smackdown-nov-20-2026",
+        "https://www.si.com/fannation/wrestling/wwe/wwe-raw-results-seth-rollins-completes-team-usa-cm-punk-walks-nov23",
+        "https://sports.yahoo.com/articles/5th-member-team-usa-wwe-130752863.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMZDc-AcakmgU_uoftxFk00t11bjIsZQjfXrYS11zgO2OG6o6fTi8Dp1MdrHU",
+      "image_credit": "WWE",
+      "news": [
+        {
+          "url": "https://www.wwe.com/videos/exclusive-danhausen-invites-hacksaw-jim-duggan-to-his-friendsgiving-smackdown-nov-20-2026",
+          "title": "EXCLUSIVE: Danhausen invites “Hacksaw” Jim Duggan to his Friendsgiving: SmackDown, Nov. 20, 2026",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMZDc-AcakmgU_uoftxFk00t11bjIsZQjfXrYS11zgO2OG6o6fTi8Dp1MdrHU"
+        },
+        {
+          "url": "https://www.si.com/fannation/wrestling/wwe/wwe-raw-results-seth-rollins-completes-team-usa-cm-punk-walks-nov23",
+          "title": "WWE Raw Results [11/23/26]: Seth Rollins Completes Team USA, CM Punk Walks Out",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwoZIOhIhABEGEWO5dpt3p4qusKgmSXaqN4o10U0v0ZhufVzjFoHCSqFVNUgs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/5th-member-team-usa-wwe-130752863.html",
+          "title": "Who Will Be the 5th Member of Team USA at WWE Survivor Series 2026? All Possible Candidates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjVNhvIus_4HnWFfl7bUajl1INiUOoEOadkxKb3NGGlcvlQUSY5-3xktzRKCM"
         }
       ]
     },
     {
       "query": "student loans news",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-24T00:20:00Z",
       "related_news_urls": [
         "https://www.silive.com/news/2026/11/ny-offers-up-to-50k-in-student-loan-forgiveness-heres-who-can-apply.html",
@@ -77,242 +252,83 @@
       ]
     },
     {
-      "query": "washington dc weather",
-      "approx_searches": "500+",
+      "query": "jabari walker",
+      "approx_searches": "2000+",
       "published_at": "2026-11-24T00:20:00Z",
       "related_news_urls": [
-        "https://www.nbcwashington.com/weather/weather-stories/storm-team4-forecast-tracking-thanksgiving-rain-cool-weather/4186902/",
-        "https://www.wxii12.com/article/mild-monday-cooler-wet-windy-thanksgiving-rain-north-carolina/74505047",
-        "https://ithacavoice.org/2026/11/weather-cooler-rainy-thanksgiving-no-snow-expected-locally/"
+        "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/joel-embiid-injury-update-sixers-vs-trail-blazers-nba/769069/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/phi-starts-maxey-edgecombe-brown-james-walker"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcuEyXy_sbdIT6BqO1NOGsf0b4EutO72r_QSJ7gRHuE4sdwpX4Rxuxr3m5qA",
-      "image_credit": "NBC4 Washington",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXWTDxhQwagagP6dYdz-8Z87TcUOZ-PWFDIM44hqM5Ce9fVksu42GWMW64Bw",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nbcwashington.com/weather/weather-stories/storm-team4-forecast-tracking-thanksgiving-rain-cool-weather/4186902/",
-          "title": "Storm Team4 Forecast: Mild Monday before a soggy and windy Thanksgiving",
-          "publisher": "NBC4 Washington",
+          "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+          "title": "76ers rule out Joel Embiid (illness) for game vs. Trail Blazers",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDcuEyXy_sbdIT6BqO1NOGsf0b4EutO72r_QSJ7gRHuE4sdwpX4Rxuxr3m5qA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXWTDxhQwagagP6dYdz-8Z87TcUOZ-PWFDIM44hqM5Ce9fVksu42GWMW64Bw"
         },
         {
-          "url": "https://www.wxii12.com/article/mild-monday-cooler-wet-windy-thanksgiving-rain-north-carolina/74505047",
-          "title": "Mild Monday with a spotty shower chance, wet and windy system possible for Thanksgiving",
-          "publisher": "WXII",
+          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/joel-embiid-injury-update-sixers-vs-trail-blazers-nba/769069/",
+          "title": "Embiid sidelined for Sixers-Blazers with illness",
+          "publisher": "NBC Sports Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQNrwMijCmuv6FeekIp8XJk5cgMWCh8nvAyKU4rUz7EQLW-C0fWDqYtapKpxs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRP6e4LqJkyU_cmVSzI6ucGBP9M8BnUJ7mvMyM0FdNisOGec_y9SF_fhHfyWk"
         },
         {
-          "url": "https://ithacavoice.org/2026/11/weather-cooler-rainy-thanksgiving-no-snow-expected-locally/",
-          "title": "Weather: Cooler, rainy Thanksgiving, no snow expected locally",
-          "publisher": "The Ithaca Voice",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/phi-starts-maxey-edgecombe-brown-james-walker",
+          "title": "PHI starts Maxey, Edgecombe, Brown, James, Walker",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRH7UqjMIf9wP_RX2Nmn6hE3Zry-TdrGRNLb8_zCi5QdmvRbDJl6qSo1v4HgAw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYewsuR92K_fKALEpDQIUmUEiLWpqdp24cLb_MhvnqgT0jZMc82B6bDzEazFg"
         }
       ]
     },
     {
-      "query": "checo perez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T00:10:00Z",
+      "query": "zac taylor",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T00:20:00Z",
       "related_news_urls": [
-        "https://www.formula1.com/en/video/2026-las-vegas-grand-prix-perez-and-camara-collide.1882533394977896205",
-        "https://sports.yahoo.com/articles/camara-haas-spot-proves-perez-212446464.html",
-        "https://grandepremio.com/en/f1/watch-perez-hits-camara-in-las-vegas-f1-clash-as-safety-car-deployed-on-lap-18/"
+        "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
+        "https://www.bengals.com/news/game-within-the-game-zac-taylor-s-coaching-collaboration-justin-hill-justin-rascati-brad-kragthore-defines-bengals-hottest-offense-in-all-the-land",
+        "https://www.fox19.com/2026/11/20/continuity-is-hidden-superpower-bengals-offense/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSibALTOCvYqfDVtGqAoIlPflTm-oN-5oCtaYjrRU-5clyRVbvQtxJ5SOk3xPs",
-      "image_credit": "Formula 1",
-      "news": [
-        {
-          "url": "https://www.formula1.com/en/video/2026-las-vegas-grand-prix-perez-and-camara-collide.1882533394977896205",
-          "title": "2026 Las Vegas Grand Prix: Perez and Camara collide",
-          "publisher": "Formula 1",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSibALTOCvYqfDVtGqAoIlPflTm-oN-5oCtaYjrRU-5clyRVbvQtxJ5SOk3xPs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/camara-haas-spot-proves-perez-212446464.html",
-          "title": "Camara’s Haas Spot Proves Perez’s Penalty Was Right",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRV0X-5PK8yLa1po3pqmOifs2nbynY-UKHuuhfjzEDYYvGZRHN-HznUJc5oZMs"
-        },
-        {
-          "url": "https://grandepremio.com/en/f1/watch-perez-hits-camara-in-las-vegas-f1-clash-as-safety-car-deployed-on-lap-18/",
-          "title": "Pérez crashes into Câmara in Las Vegas battle as Safety Car interrupts Verstappen's lead",
-          "publisher": "Grande Prêmio",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYnIXBPKlWR5pPCwTmeVRyJd0CjO6ckPMYym6a3IDFBf7_c_AyLp2z5qIkElA"
-        }
-      ]
-    },
-    {
-      "query": "dltr earnings date november 24",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T00:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/dear-dollar-tree-stock-fans-150940748.html",
-        "https://www.quiverquant.com/news/DOLLAR+TREE+Q3+2027+Earnings+Preview%3A+Recent+%24DLTR+Insider+Trading%2C+Hedge+Fund+Activity%2C+and+More",
-        "https://www.tradingview.com/news/tradingview:183db57a1213b:0-stifel-initiates-coverage-of-dollar-tree-at-buy-sets-price-target-at-160/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsHiV6RWP_fllpYvoZZueEqWy74-fhBLpDTldkpc6ehte33A-AvfoBYJZRmvQ",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/dear-dollar-tree-stock-fans-150940748.html",
-          "title": "Dear Dollar Tree Stock Fans, Mark Your Calendars for November 24",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsHiV6RWP_fllpYvoZZueEqWy74-fhBLpDTldkpc6ehte33A-AvfoBYJZRmvQ"
-        },
-        {
-          "url": "https://www.quiverquant.com/news/DOLLAR+TREE+Q3+2027+Earnings+Preview%3A+Recent+%24DLTR+Insider+Trading%2C+Hedge+Fund+Activity%2C+and+More",
-          "title": "DOLLAR TREE Q3 2027 Earnings Preview: Recent $DLTR Insider Trading, Hedge Fund Activity, and More",
-          "publisher": "Quiver Quantitative",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAlDybQMI9yavgujU_28aMbRkDkpyww222CtOZpcnIXeRuQiI0mfVDKRTZits"
-        },
-        {
-          "url": "https://www.tradingview.com/news/tradingview:183db57a1213b:0-stifel-initiates-coverage-of-dollar-tree-at-buy-sets-price-target-at-160/",
-          "title": "Stifel initiates coverage of Dollar Tree at Buy, sets price target at $160",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        }
-      ]
-    },
-    {
-      "query": "traffic stop",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T00:10:00Z",
-      "related_news_urls": [
-        "https://www.13wmaz.com/article/news/local/gray-jones/13-year-old-shoots-man-robbing-him-jones-county-sheriff-says/93-3cca660c-8ccf-438c-bcac-963550c1abfb",
-        "https://www.usatoday.com/story/news/crime/2026/11/23/milledgeville-mall-shooting-georgia-teen-shot/92923727007/",
-        "https://www.foxnews.com/us/georgia-police-shoot-13-year-old-milledgeville"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcdLCca_QlXZoMR5sQia6WmFJKK--tRM_OhAZk-6NjMCx-SkuZkZFDSbbI3O8",
-      "image_credit": "13WMAZ",
-      "news": [
-        {
-          "url": "https://www.13wmaz.com/article/news/local/gray-jones/13-year-old-shoots-man-robbing-him-jones-county-sheriff-says/93-3cca660c-8ccf-438c-bcac-963550c1abfb",
-          "title": "13-year-old shoots man robbing him in Jones County, sheriff says",
-          "publisher": "13WMAZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcdLCca_QlXZoMR5sQia6WmFJKK--tRM_OhAZk-6NjMCx-SkuZkZFDSbbI3O8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/crime/2026/11/23/milledgeville-mall-shooting-georgia-teen-shot/92923727007/",
-          "title": "13-year-old boy injured in officer-involved shooting in Georgia",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh27N3BGkRURnyOgLOZZuPnCwHYqCAC1HiWQIjhfelS6QYtSJ_AtB5ZF3w4N0"
-        },
-        {
-          "url": "https://www.foxnews.com/us/georgia-police-shoot-13-year-old-milledgeville",
-          "title": "Georgia officer shoots 13-year-old after traffic stop linked to earlier shooting, police say",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYkCjYX4S1s775n6yCGs8HH9F3fcU3qzhx-t7McT-MdvUPTowACezEgN0X0W0"
-        }
-      ]
-    },
-    {
-      "query": "beckham black",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T00:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/north-carolina/article/north-carolina-tar-heels-demarcus-henry-cj-rosser-beckham-black-yann-kamagate-grant-duggins-293196898/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdMfsQrSpxw_k0LKtxvrX5VKGu3Sm_MqXxQ1m7sEGzLM2vxviao9iq17_aH98",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/north-carolina/article/north-carolina-tar-heels-demarcus-henry-cj-rosser-beckham-black-yann-kamagate-grant-duggins-293196898/",
-          "title": "Prospect Review: Henry, Rosser, Black, Kamagate Have Huge Weeks",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdMfsQrSpxw_k0LKtxvrX5VKGu3Sm_MqXxQ1m7sEGzLM2vxviao9iq17_aH98"
-        }
-      ]
-    },
-    {
-      "query": "cavaliers vs bulls",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T00:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/final-injury-report-cavaliers-bulls-210000102.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/cleveland-cavaliers-vs-chicago-bulls-prediction-odds-6019865/",
-        "https://www.si.com/nba/bulls/onsi/bulls-vs-cavaliers-7-00-pm-ct-prediction-starting-lineups-nic-claxton-s-status-23"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtpUHVvXv3jxy1qIrbDhRrZ3CAJzjPY_n2b89TpREt4TAV6MaCnNCG6ozpyLA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/final-injury-report-cavaliers-bulls-210000102.html",
-          "title": "Final Injury Report for Cavaliers-Bulls: Will Evan Mobley, Norman Powell Play?",
+          "url": "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
+          "title": "Bengals’ Joe Flacco Makes Eye-Opening Claim About Zac Taylor’s Staff",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtpUHVvXv3jxy1qIrbDhRrZ3CAJzjPY_n2b89TpREt4TAV6MaCnNCG6ozpyLA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/cleveland-cavaliers-vs-chicago-bulls-prediction-odds-6019865/",
-          "title": "Cleveland Cavaliers vs Chicago Bulls Prediction, Picks & Odds | NBA Monday",
-          "publisher": "Sportsgambler",
+          "url": "https://www.bengals.com/news/game-within-the-game-zac-taylor-s-coaching-collaboration-justin-hill-justin-rascati-brad-kragthore-defines-bengals-hottest-offense-in-all-the-land",
+          "title": "Game Within The Game | Zac Taylor's Coaching Collaboration Defines Bengals' Hottest Offense In All The Land",
+          "publisher": "Cincinnati Bengals",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2oBTXkGEaa1vSRUf6stZE_FL_IXMuhhHaX9N7prz5sv8c5QdXyQB37lpa-bQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw__zPxrh5TUDwCLEVo1RmYFbdtLxU4-g-CukjNSSa6WSDhc3q2Y6Z2NuZ3gM"
         },
         {
-          "url": "https://www.si.com/nba/bulls/onsi/bulls-vs-cavaliers-7-00-pm-ct-prediction-starting-lineups-nic-claxton-s-status-23",
-          "title": "Bulls vs. Cavaliers (7:00 PM CT) – Prediction, Starting Lineups, Injury Report",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.fox19.com/2026/11/20/continuity-is-hidden-superpower-bengals-offense/",
+          "title": "Continuity is the hidden superpower of the Bengals’ offense",
+          "publisher": "FOX19 | Cincinnati",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNHyDvXeBelw6LJ8gHyMoUKzZiqOdkMU5WiMDuS5G1tQpRUFCDtgpS_OfUN70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3cqW7ABMXF2XWSWwXyimvZDXpQtA4_BIwuaqfbZMPjHMk7mBus5xFndii14"
         }
       ]
     },
     {
-      "query": "suns vs pelicans",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T00:00:00Z",
-      "related_news_urls": [
-        "https://arizonasports.com/nba/phoenix-suns/pelicans-ryan-dunn-zion-williamson-trey-murphy",
-        "https://www.nba.com/suns/news/11-23-2026-suns-vs-pelicans-game-preview",
-        "https://www.sportsgambler.com/betting-tips/basketball/phoenix-suns-vs-new-orleans-pelicans-prediction-odds-6019866/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYhikv_dmlM5HqF_nZMow_GL6QpyQoi3aDMDNH-Em7VOpymRtPrC3s0fhAT90",
-      "image_credit": "Arizona Sports",
-      "news": [
-        {
-          "url": "https://arizonasports.com/nba/phoenix-suns/pelicans-ryan-dunn-zion-williamson-trey-murphy",
-          "title": "Ryan Dunn and Trey Murphy III available, Zion Williamson probable for Suns vs. Pelicans",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYhikv_dmlM5HqF_nZMow_GL6QpyQoi3aDMDNH-Em7VOpymRtPrC3s0fhAT90"
-        },
-        {
-          "url": "https://www.nba.com/suns/news/11-23-2026-suns-vs-pelicans-game-preview",
-          "title": "11/23/2026 Suns vs Pelicans Game Preview",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFMip_5g9BR_uQ95_3Qleo-9bxK_LfK8lHvNs78nkgL2gDpAPINEF8DyKIDqI"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/phoenix-suns-vs-new-orleans-pelicans-prediction-odds-6019866/",
-          "title": "Phoenix Suns vs New Orleans Pelicans Prediction, Picks & Odds | NBA Monday",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOICuZ34AT_t30YOXeIgnfz1Q6pnZdK95iFuk4QecTQOn-uKLOIGKIHHQ8TxU"
-        }
-      ]
-    },
-    {
-      "query": "ship",
+      "query": "russia news",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T00:00:00Z",
+      "published_at": "2026-11-24T00:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-        "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-        "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks"
+        "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks",
+        "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZe0i_OBQR_AE6W-m5MW4QKB2LjA_i5m6UjXgoDpPQ94sgpdIimqP9yhrCgI",
       "image_credit": "The New York Times",
@@ -325,18 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZe0i_OBQR_AE6W-m5MW4QKB2LjA_i5m6UjXgoDpPQ94sgpdIimqP9yhrCgI"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-          "title": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMQP5sbH0Qk0wDBoxgCIO3Zfbrwx9ILmnkTJJWSXRXHylygJTB0fXqMOWs9co"
-        },
-        {
           "url": "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks",
           "title": "Russia warns Ukraine of ‘dangerous trend’ after Libya and Baltic attacks",
           "publisher": "Al Jazeera",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAE8ap02FgD5aJ7Ny5Z1eatxPymEdF9gaHS_ZR1hSZbHeb_dZc7JIFxSRh7d8"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
+          "title": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMQP5sbH0Qk0wDBoxgCIO3Zfbrwx9ILmnkTJJWSXRXHylygJTB0fXqMOWs9co"
         }
       ]
     }
