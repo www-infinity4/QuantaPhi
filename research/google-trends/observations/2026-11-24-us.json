@@ -3,28 +3,161 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T13:01:30.921750Z",
+  "checked_at": "2026-11-24T13:31:12.245308Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "méxico sub-17 - selección de fútbol sub-17 de camerún",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T12:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17543007/mexico-gano-rumania-debut-mundial-sub-17-gol-adan-sanchez",
+        "https://www.si.com/mx/futbol/mexico-debuta-con-triunfo-y-un-golazo-de-adan-sanchez-ante-rumania-en-el-mundial-sub-17-de-qatar-2026",
+        "https://www.tudn.com/futbol/mundial-sub-17/mexico-vs-camerun-a-que-hora-y-donde-ver-el-partido-del-mundial-sub-17"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbhTx3XmPdpU7Etcyn69uqBUF6K4_h-7qHdGnP3ebgabYrd8_gjg9a7mge0vY",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/selecciones/nota/_/id/17543007/mexico-gano-rumania-debut-mundial-sub-17-gol-adan-sanchez",
+          "title": "Mundial Sub-17: México supera con golazo a Rumania en debut",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbhTx3XmPdpU7Etcyn69uqBUF6K4_h-7qHdGnP3ebgabYrd8_gjg9a7mge0vY"
+        },
+        {
+          "url": "https://www.si.com/mx/futbol/mexico-debuta-con-triunfo-y-un-golazo-de-adan-sanchez-ante-rumania-en-el-mundial-sub-17-de-qatar-2026",
+          "title": "México debuta con triunfo y un golazo de Adán Sánchez ante Rumania en el Mundial Sub-17 de Qatar 2026",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTP1AoqF00f3e0l-xan51UIivuAnwPwrmHgMhvzbi362oz7vTUcy0acnr-aNIY"
+        },
+        {
+          "url": "https://www.tudn.com/futbol/mundial-sub-17/mexico-vs-camerun-a-que-hora-y-donde-ver-el-partido-del-mundial-sub-17",
+          "title": "A qué hora y dónde ver el México vs. Camerún del Mundial Sub-17",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvtGrHv9OIbSk9CyFeTnqFPE8Ydh4S0YHucbxEBE2FetmcnbrC80KXSXH6CHA"
+        }
+      ]
+    },
+    {
+      "query": "mexico u-17 vs cameroon u-17",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T12:50:00Z",
+      "related_news_urls": [
+        "https://www.vavel.com/en-us/data/mexico-u17/",
+        "https://www.soyfutbol.com/en/news/mexico-u-17-chases-second-win-against-cameroon-at-the-2026-qatar-world-cup-20261123-0036.html",
+        "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgvd-UCMkRuf88oYDBlQabRtzY1ZOyWZ9ZP4ZRNUc4UjeZUmyAr6uqvA7Zyg",
+      "image_credit": "VAVEL.com",
+      "news": [
+        {
+          "url": "https://www.vavel.com/en-us/data/mexico-u17/",
+          "title": "Mexico U17",
+          "publisher": "VAVEL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgvd-UCMkRuf88oYDBlQabRtzY1ZOyWZ9ZP4ZRNUc4UjeZUmyAr6uqvA7Zyg"
+        },
+        {
+          "url": "https://www.soyfutbol.com/en/news/mexico-u-17-chases-second-win-against-cameroon-at-the-2026-qatar-world-cup-20261123-0036.html",
+          "title": "Mexico U-17 Chases Second Win Against Cameroon at the 2026 Qatar World Cup",
+          "publisher": "Soy Futbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFbgcMVK77jcc1sZLKMaA5IYIxP2BY98Yc6TJERPLTfrwsknCVO5cgODjKaIc"
+        },
+        {
+          "url": "https://www.fubo.tv/news/2026-fifa-u-17-world-cup/mexico-vs-romania-u17-live-stream-how-to-watch-2026-fifa-u-17-world-cup-nov-21-2026/",
+          "title": "Mexico vs Romania U17 Live Stream: How to Watch 2026 FIFA U-17 World Cup (Nov. 21, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTgKTF1e0EOBDXlwnDL2y-A9fV-nC2Gr5-iAyUlMBDHVkIg0UR5PAPcfKrvzto"
+        }
+      ]
+    },
+    {
+      "query": "electrek",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T12:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/article/teslas-autonomy-ambitions-just-got-a-wall-street-vote-of-confidence-130035595.html",
+        "https://www.caranddriver.com/news/a74510768/tesla-driver-assistance-software-video-game/",
+        "https://www.investors.com/news/tesla-elon-musk-sp-500-nasdaq-dow-jones-stock-market-nvidia-jensen-huang-fsd/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn4Q59J4XQEJNXhp5cV-UCONnCJirwLwbnk6hBQz9ofMrfza8NTx2sPH3tJKI",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-autonomy-ambitions-just-got-a-wall-street-vote-of-confidence-130035595.html",
+          "title": "Tesla's autonomy ambitions just got a Wall Street vote of confidence",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn4Q59J4XQEJNXhp5cV-UCONnCJirwLwbnk6hBQz9ofMrfza8NTx2sPH3tJKI"
+        },
+        {
+          "url": "https://www.caranddriver.com/news/a74510768/tesla-driver-assistance-software-video-game/",
+          "title": "Tesla’s Latest Edition of Its Driver-Assistance Software Now Looks Like a Video Game",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIP63PyOK1O0oqF5faxa6_LZJPzBhSnHo4sO-CjnVQiNBxqWbXxc3P1Nssr7M"
+        },
+        {
+          "url": "https://www.investors.com/news/tesla-elon-musk-sp-500-nasdaq-dow-jones-stock-market-nvidia-jensen-huang-fsd/",
+          "title": "Tesla Leaps 13%, Retakes Key Levels. New FSD Update Announced.",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8ICO2bZGcoF7N7f6mMXHVcnjS8zr9p-q6m23mfR8kJjt79Np4gXYkTCfM_rw"
+        }
+      ]
+    },
+    {
+      "query": "katherine heigl",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T12:50:00Z",
+      "related_news_urls": [
+        "https://people.com/katherine-heigl-cutest-family-photos-kids-12275523",
+        "https://www.limapagi.id/en/katherine-heigl-family-birthday-photos",
+        "https://www.aol.com/articles/happy-birthday-katherine-heigl-see-113000000.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpmPFBCzvmR5ylfTPF4g4HzE2bzDOb67FvEDKa54hjRcjZIV7VFGgZ9a0iwI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/katherine-heigl-cutest-family-photos-kids-12275523",
+          "title": "Happy Birthday, Katherine Heigl! See the Grey’s Anatomy Actress’s Cutest Family Photos with Her Husband and 3 Kids",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpmPFBCzvmR5ylfTPF4g4HzE2bzDOb67FvEDKa54hjRcjZIV7VFGgZ9a0iwI"
+        },
+        {
+          "url": "https://www.limapagi.id/en/katherine-heigl-family-birthday-photos",
+          "title": "Katherine Heigl Celebrates 48th Birthday With Family Photos",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcGjrvpwcZxcJI5KXd5OwOhsq4xvn_mupZWo4Y7zZHETCF8MhGvc5InJ0q23A"
+        },
+        {
+          "url": "https://www.aol.com/articles/happy-birthday-katherine-heigl-see-113000000.html",
+          "title": "Happy Birthday, Katherine Heigl! See the “Grey’s Anatomy” Actress’s Cutest Family Photos with Her Husband and 3 Kids",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpmPFBCzvmR5ylfTPF4g4HzE2bzDOb67FvEDKa54hjRcjZIV7VFGgZ9a0iwI"
+        }
+      ]
+    },
     {
       "query": "billy horschel",
       "approx_searches": "200+",
       "published_at": "2026-11-24T12:40:00Z",
       "related_news_urls": [
-        "https://golf.com/news/fedex-cup-champ-loses-tour-card-nightmare-finish/",
         "https://www.espn.com/golf/story/_/id/50547115/neergaard-petersen-part-3-way-tie-lead-sea-island",
-        "https://www.pgatour.com/article/news/latest/2026/11/20/cut-line-the-rsm-classic-doug-ghim-billy-horschel-top-100-fedexcup-fall-standings-leaderboard"
+        "https://www.pgatour.com/article/news/latest/2026/11/20/cut-line-the-rsm-classic-doug-ghim-billy-horschel-top-100-fedexcup-fall-standings-leaderboard",
+        "https://golf.com/news/13-surprising-players-lost-pga-tour-monday/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd1lvigHAh1-e8ioHkdSiMBRb9H68kqojAzSMjvYHsDwD1R9vzwwgLQK5mwcc",
-      "image_credit": "GOLF.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNj_T1sRIj7wsgm0WKO_W97UwmV_xSQVepQwJ7vYY1n4raEzNyQUJg9fvnV2w",
+      "image_credit": "ESPN",
       "news": [
-        {
-          "url": "https://golf.com/news/fedex-cup-champ-loses-tour-card-nightmare-finish/",
-          "title": "‘It stinks’: FedEx Cup champ loses Tour card after nightmare finish",
-          "publisher": "GOLF.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd1lvigHAh1-e8ioHkdSiMBRb9H68kqojAzSMjvYHsDwD1R9vzwwgLQK5mwcc"
-        },
         {
           "url": "https://www.espn.com/golf/story/_/id/50547115/neergaard-petersen-part-3-way-tie-lead-sea-island",
           "title": "Rasmus Neergaard-Petersen shares lead at Sea Island; Horschel loses full cards",
@@ -38,6 +171,48 @@
           "publisher": "PGA Tour",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxIzN2shkeEjtU2oWhk21sz4CP6OoNqFi_UNOoZt7xllXk8nuo5pzAQQGYIRw"
+        },
+        {
+          "url": "https://golf.com/news/13-surprising-players-lost-pga-tour-monday/",
+          "title": "13 surprising players who lost their PGA Tour cards on Monday",
+          "publisher": "GOLF.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTICNoZZHppYskDasHThX0W72BPLRaGYwg2OEpGKwBA2TlxgQvdhZQWmwRMk-k"
+        }
+      ]
+    },
+    {
+      "query": "elly de la cruz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T12:40:00Z",
+      "related_news_urls": [
+        "https://blogredmachine.com/elly-de-la-cruz-2027-outlook-makes-prediction-feel-like-blatant-negligence",
+        "https://www.cnn.com/2026/11/23/sport/new-york-mets-tarik-skubal",
+        "https://www.espn.com/mlb/story/_/id/50574273/tarik-skubal-mets-projections-2027"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdS7fUOco5fmgxO9g9gA9n60Cp_SuqC12-lDF5LqoqTBvCRuVPxwsk9waWWBo",
+      "image_credit": "Blog Red Machine",
+      "news": [
+        {
+          "url": "https://blogredmachine.com/elly-de-la-cruz-2027-outlook-makes-prediction-feel-like-blatant-negligence",
+          "title": "Elly De La Cruz's 2027 outlook makes MLB.com's prediction feel like blatant negligence",
+          "publisher": "Blog Red Machine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdS7fUOco5fmgxO9g9gA9n60Cp_SuqC12-lDF5LqoqTBvCRuVPxwsk9waWWBo"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/23/sport/new-york-mets-tarik-skubal",
+          "title": "Mets owner Steve Cohen paid $450 million for Tarik Skubal. His fellow MLB owners want to stop him from doing it again",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSi495aVn3OrrPxWcSz5z-MS8bV9_FmGfGB55Euiky3NYpUTaNaX4mDiBsmhgo"
+        },
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50574273/tarik-skubal-mets-projections-2027",
+          "title": "How Tarik Skubal boosts Mets' 2027 projections",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8f28lX39PGqEdgxTL4EjPqhJdURIqQuNbByWqnwhGApZMOIJmAku8pHQ0w7I"
         }
       ]
     },
@@ -46,13 +221,20 @@
       "approx_searches": "100+",
       "published_at": "2026-11-24T12:40:00Z",
       "related_news_urls": [
+        "https://www.yahoo.com/entertainment/articles/lexie-hull-launches-travel-sized-050554652.html",
         "https://observer.com/list/lexie-hull-essentials/",
-        "https://peradaban.id/en/lexie-hull-travel-setting-spray",
-        "https://athlonsports.com/wnba/indiana-fever/lexie-hull-off-court-venture-announcement"
+        "https://peradaban.id/en/lexie-hull-forta-cosmetics"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3GLEfFLBLOWAwjqOsyVKj9OZozEqK95p-QL0nuHzB0EzQCvwwigzZhXK9nS0",
-      "image_credit": "Observer",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA8NflXZzP0zcoLcD7EoLtGF6VzAODsbnpZZrdB35SzNKQi14beoW-Lufq9P8",
+      "image_credit": "Yahoo",
       "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/lexie-hull-launches-travel-sized-050554652.html",
+          "title": "Lexie Hull Launches Travel-Sized Makeup Spray While Celebrating Her Wedding in Mexico",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA8NflXZzP0zcoLcD7EoLtGF6VzAODsbnpZZrdB35SzNKQi14beoW-Lufq9P8"
+        },
         {
           "url": "https://observer.com/list/lexie-hull-essentials/",
           "title": "The Essentials With Lexie Hull: Throne of Glass , Cabo and Makeup Put to the WNBA Test",
@@ -61,18 +243,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3GLEfFLBLOWAwjqOsyVKj9OZozEqK95p-QL0nuHzB0EzQCvwwigzZhXK9nS0"
         },
         {
-          "url": "https://peradaban.id/en/lexie-hull-travel-setting-spray",
-          "title": "Lexie Hull Launches Travel Size Setting Spray in Mexico",
+          "url": "https://peradaban.id/en/lexie-hull-forta-cosmetics",
+          "title": "Lexie Hull Tests Forta Cosmetics on the WNBA Court",
           "publisher": "Peradaban.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fqi-wGUVExQVQMhuJqYXMuooo4WGGaFAwmZjcin-TWrCe_VlZ7WI6ENvgH4"
-        },
-        {
-          "url": "https://athlonsports.com/wnba/indiana-fever/lexie-hull-off-court-venture-announcement",
-          "title": "Lexie Hull’s Off-Court Venture Makes Exciting Announcement",
-          "publisher": "Athlon Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFQn-CKlIIeP3USeCPU4QNxjAo7XWp-SzpXhOKKxPq6CVh1vqDTgh0TDKl8s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnj5KNZdxodS5Aoa-Z8Hgc-Zwqz-u45CBkMnqCSC7cPAltBfvAs6Y_Wxnu46w"
         }
       ]
     },
@@ -178,181 +353,6 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqyfDJBIQH5RXM-4mgPoHZyuFs2DWFSbqGFjOXN-yDpmpU3z0XXDg84PpJPgs"
-        }
-      ]
-    },
-    {
-      "query": "united arab emirates national cricket team vs india a cricket team standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T12:10:00Z",
-      "related_news_urls": [
-        "https://www.cricbuzz.com/player-match-performance/match/177203/player/6322/batting?inningsId=1",
-        "https://timesofindia.indiatimes.com/sports/cricket/news/had-a-feeling-i-would-score-a-hundred-india-born-harpreet-bhatias-emotional-ton-on-guru-nanak-jayanti-against-india-a/articleshow/136126818.cms",
-        "https://www.thehindu.com/sport/cricket/asia-cup-rising-stars-india-a-vs-uae-in-doha/article71737454.ece"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtjz0Si6fR43Ph_UTJ1tkT6BykTNzvrR4OFbewusLBV20wMjgHZwibPZgG8XQ",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://www.cricbuzz.com/player-match-performance/match/177203/player/6322/batting?inningsId=1",
-          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtjz0Si6fR43Ph_UTJ1tkT6BykTNzvrR4OFbewusLBV20wMjgHZwibPZgG8XQ"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/news/had-a-feeling-i-would-score-a-hundred-india-born-harpreet-bhatias-emotional-ton-on-guru-nanak-jayanti-against-india-a/articleshow/136126818.cms",
-          "title": "'Had a feeling I would score a hundred': India-born Harpreet Bhatia's emotional ton on Guru Nanak Jayant",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRbklzBZ10XGB0IPlVPpg1xGjT28NOb6zCO_aRdVt_306XpAnqrp5_O3uris"
-        },
-        {
-          "url": "https://www.thehindu.com/sport/cricket/asia-cup-rising-stars-india-a-vs-uae-in-doha/article71737454.ece",
-          "title": "Asia Cup Rising Stars: India 'A' vs United Arab Emirates in Doha on November 24, 2026",
-          "publisher": "The Hindu",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPQ5qo1XvFasBvFghKUI3SW_doa98bivagq5QEhNxkVFVKFxlkJU1KS5z2AEU"
-        }
-      ]
-    },
-    {
-      "query": "union nj fire",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T12:10:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
-        "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
-        "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvOWPUafzbP0Oh1HwaUYjnF7nOcHQUhzR2f3FSCrHBOHWWqrIFoqBdJVIT1U",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
-          "title": "Heavy fire tears through row of stores in downtown Union, NJ",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvOWPUafzbP0Oh1HwaUYjnF7nOcHQUhzR2f3FSCrHBOHWWqrIFoqBdJVIT1U"
-        },
-        {
-          "url": "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
-          "title": "Union, New Jersey fire burns through row of stores",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU"
-        },
-        {
-          "url": "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj",
-          "title": "LIVE: Crews battling huge 3-alarm fire at row of stores in Union, NJ",
-          "publisher": "FOX 5 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLqUaHh_f1ggyp02VABfYKhiscYT1sx5uGRzQiF7mTPFF5b_BuGxnF5iDWb2k"
-        }
-      ]
-    },
-    {
-      "query": "attorney general",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T12:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-        "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
-        "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
-          "title": "EXCLUSIVE: Nvidia's accounting is a focus of US SEC investigation, sources say",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0"
-        },
-        {
-          "url": "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
-          "title": "Exclusive | SEC Is Probing Nvidia Amid Departure of CEO Jensen Huang",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc18Ds4l9odrp0tXbwyGqugA6GIzrfwPUzvgo9t2X40jW9q3ojLgJBQ9G3Nd4"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations",
-          "title": "California Nvidia Probe Covers Potential Criminal Law Violations",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0OlFKilBFGz_-bLU_0-RFM6pbNzvWJbR77wSbqwbdt-u6bXOCXlM4CsesL8"
-        }
-      ]
-    },
-    {
-      "query": "daisy fuentes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T12:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
-        "https://www.yahoo.com/news/videos/daisy-fuentes-discusses-why-she-040845271.html",
-        "https://demokratis.co.id/en/daisy-fuentes-health-fitness-aging"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8lzeAMTaORGMajHGsuB2PM6q7qkY5PW8TsVsGxHA9GbkDYk5QPf7ZBMy5Tw8",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
-          "title": "Iconic MTV star turns 60, shares her no-guilt approach to fitness, food and aging well",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8lzeAMTaORGMajHGsuB2PM6q7qkY5PW8TsVsGxHA9GbkDYk5QPf7ZBMy5Tw8"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/daisy-fuentes-discusses-why-she-040845271.html",
-          "title": "Daisy Fuentes discusses why she ditched her 20s mindset for a new approach to aging",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA_dDUN4coHY2rfY0ZOGJGU-M1PZBPa_jYYCuvIZAf5MCWuU2OaZVsjFXh95w"
-        },
-        {
-          "url": "https://demokratis.co.id/en/daisy-fuentes-health-fitness-aging",
-          "title": "Daisy Fuentes Turns 60 and Shares Her Health and Fitness Routine",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGBRsFgyFLitxEbadkQ-quX7QiXC60nS6tDl94w6SCCZJH7sNPRBTw0TCHkwU"
-        }
-      ]
-    },
-    {
-      "query": "annalynne mccord",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T12:00:00Z",
-      "related_news_urls": [
-        "https://people.com/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles-12276383",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/annalynne-mccord-reveals-days-lives-191442710.html",
-        "https://cwibc.co.id/en/annalynne-mccord-days-financial-rescue"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHm8VnPInibluR4aFL8dai6FySjYLr2IrIFP-t6MzCBid14rR0nFfm99avTCQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles-12276383",
-          "title": "‘Days of Our Lives’ Star AnnaLynne McCord Says the Soap ‘Saved’ Her During Financial Struggles",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHm8VnPInibluR4aFL8dai6FySjYLr2IrIFP-t6MzCBid14rR0nFfm99avTCQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/annalynne-mccord-reveals-days-lives-191442710.html",
-          "title": "AnnaLynne McCord Reveals How 'Days of Our Lives' Helped Her Through Financial Crisis",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsbXY1yWdbp6OeNYo69bTGmATuIJCradMafHOH23vJ1mDy4nxPaWtLRqU5U2A"
-        },
-        {
-          "url": "https://cwibc.co.id/en/annalynne-mccord-days-financial-rescue",
-          "title": "AnnaLynne McCord Credits Days of Our Lives With Financial Rescue",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzcDBoXt6EMccYU8h4B7yeU-baz7gELUeq5iWucwHUhZl9UljQd7PD0UinauM"
         }
       ]
     }
