@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T12:01:43.207819Z",
+  "checked_at": "2026-11-24T12:34:59.341806Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "storm watch",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
+      "query": "习近平",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T12:20:00Z",
       "related_news_urls": [
-        "https://www.basenor.com/blogs/news/tesla-powerwall-storm-watch-mode-how-it-works"
+        "https://cn.nytimes.com/world/20261120/trump-summit-power/",
+        "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
+        "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ9Lb-yBFnAshNJwKaCgrYmbArnuJCK2rhqddFIvhTALN_Paek0H32lmBuxaI",
-      "image_credit": "BASENOR - Tesla Accessories",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI",
+      "image_credit": "纽约时报中文网",
       "news": [
         {
-          "url": "https://www.basenor.com/blogs/news/tesla-powerwall-storm-watch-mode-how-it-works",
-          "title": "Tesla Powerwall Storm Watch Mode: How It Works",
-          "publisher": "BASENOR - Tesla Accessories",
+          "url": "https://cn.nytimes.com/world/20261120/trump-summit-power/",
+          "title": "特朗普试图在国际舞台展示权力，在国内却将被迫分享权力",
+          "publisher": "纽约时报中文网",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ9Lb-yBFnAshNJwKaCgrYmbArnuJCK2rhqddFIvhTALN_Paek0H32lmBuxaI"
-        }
-      ]
-    },
-    {
-      "query": "k-ci",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
-      "related_news_urls": [
-        "https://www.lpm.org/news/2026-11-23/jodeci-concert-at-louisville-palace-canceled-after-fans-wait-more-than-two-hours",
-        "https://www.yahoo.com/entertainment/music/concerts/articles/jodeci-forced-cancel-louisville-concert-212214900.html",
-        "https://people.com/k-ci-truly-sorry-after-severe-dehydration-forces-jodeci-concert-cancellation-12275726"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzkctPtuIoYjNM1DhXeAXJjTarwNM_JjbMAB8G6N3Uyx47zOy_XKZ1-7JYXtA",
-      "image_credit": "Louisville Public Media",
-      "news": [
-        {
-          "url": "https://www.lpm.org/news/2026-11-23/jodeci-concert-at-louisville-palace-canceled-after-fans-wait-more-than-two-hours",
-          "title": "Jodeci concert at Louisville Palace canceled after fans wait more than two hours",
-          "publisher": "Louisville Public Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzkctPtuIoYjNM1DhXeAXJjTarwNM_JjbMAB8G6N3Uyx47zOy_XKZ1-7JYXtA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/jodeci-forced-cancel-louisville-concert-212214900.html",
-          "title": "Jodeci forced to cancel Louisville concert after K-Ci Hailey suffers medical emergency",
-          "publisher": "Yahoo",
+          "url": "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
+          "title": "德语媒体：习近平主导 特朗普普京陪衬",
+          "publisher": "DW.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaDmqoZz2tLDJOJ-UnV4ktt2_5-l9NE0Efr2Xg0bLvQLSJequHm9HgJFw8MIE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfoe4JEvUkXaO-2I2qnHMA5XYd-JYhTRxJH2PAY-vMLMYBJjKcpajJ9PRC25s"
         },
         {
-          "url": "https://people.com/k-ci-truly-sorry-after-severe-dehydration-forces-jodeci-concert-cancellation-12275726",
-          "title": "K-Ci ‘Truly Sorry’ to Disappoint Fans After His ‘Severe Dehydration’ Forces Last-Minute Jodeci Concert Cancellation",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxVmsLRGGkqk-rB9fv7oBWjV96CSrWgkgpNX9k-CUx0JkvZ2KbTRO1PG138JI"
-        }
-      ]
-    },
-    {
-      "query": "daryl ruiter",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
-      "related_news_urls": [
-        "https://www.audacy.com/923thefan/sports/cleveland-browns/daryl-ruiter-ryan-day-is-done-in-columbus",
-        "https://www.cbssports.com/college-football/news/ryan-day-buyout-contract-ohio-state-coach/",
-        "https://sports.yahoo.com/articles/ryan-day-ross-bjork-lighting-151500092.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5gMXbl8ZBYOuvsSEVGMzi-iGnau0ibRMI_sCG2WaKeVG9xv4Q6T94-PueXw",
-      "image_credit": "Audacy",
-      "news": [
-        {
-          "url": "https://www.audacy.com/923thefan/sports/cleveland-browns/daryl-ruiter-ryan-day-is-done-in-columbus",
-          "title": "Daryl Ruiter: “Ryan Day Is Done in Columbus”",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5gMXbl8ZBYOuvsSEVGMzi-iGnau0ibRMI_sCG2WaKeVG9xv4Q6T94-PueXw"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/ryan-day-buyout-contract-ohio-state-coach/",
-          "title": "Ryan Day buyout, contract details: How much it would cost Ohio State to fire coach after 4th loss in 2026",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJdrQqBXHHotexVUtReYdr-xdjsRDQdOZARHTo4lME-7WlD4x_kyF9b3HzZuk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/ryan-day-ross-bjork-lighting-151500092.html",
-          "title": "Ryan Day and Ross Bjork are lighting money on fire",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWenAgt5jEmPcBqJdaSCBE7vgZuyQrAWCyD_RRTDLfdH73A-_aG4Fm8MpJynQ"
-        }
-      ]
-    },
-    {
-      "query": "'d andre swift",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
-      "related_news_urls": [
-        "https://www.si.com/nfl/bears/onsi/d-andre-swift-headed-punishment-ben-johnson-response-latest-fumble",
-        "https://dawindycity.com/bears-officially-have-a-d-andre-swift-problem",
-        "https://bvmsports.com/2026/11/23/ben-johnson-sends-message-swift-benched-zavion-thomas-breakout-bears-lions-showdown/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX3YJAW6_4MNuWBSZHkLUl8AIzmH6iXizEYwdNu1xLi8-71xMyDeE8eQnHsIo",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/nfl/bears/onsi/d-andre-swift-headed-punishment-ben-johnson-response-latest-fumble",
-          "title": "D'Andre Swift Could be Headed for Punishment After Ben Johnson's Response to Latest Fumble",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX3YJAW6_4MNuWBSZHkLUl8AIzmH6iXizEYwdNu1xLi8-71xMyDeE8eQnHsIo"
-        },
-        {
-          "url": "https://dawindycity.com/bears-officially-have-a-d-andre-swift-problem",
-          "title": "Bears officially have a D'Andre Swift problem",
-          "publisher": "Da Windy City",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkfJtVeCSsX1w32tbnrROX4K92YaTMlyGrPRObW-t8vg6tFfJsAgQtZVXCOg4"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/23/ben-johnson-sends-message-swift-benched-zavion-thomas-breakout-bears-lions-showdown/",
-          "title": "BEN JOHNSON SENDS MESSAGE?! Swift BENCHED, Zavion Thomas BREAKOUT + Bears-Lions SHOWDOWN!",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0PFiLSIAAPA_4MUtseCLkB2XZfFlSiMSTqevjPTQ5OJ-PDKEeS97zeJ3dPAQ"
-        }
-      ]
-    },
-    {
-      "query": "gisele pelicot",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm3eg502nxw2o",
-        "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
-        "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm3eg502nxw2o",
-          "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+          "url": "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp",
+          "title": "分析：APEC上与习近平、特朗普历史性会晤，对普京是一场重大胜利",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw"
-        },
-        {
-          "url": "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
-          "title": "Gisèle Pelicot to sue publisher over unauthorized use of nude photographs",
-          "publisher": "Le Monde.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrcKbszYeXra9PlaFyRgL4zo-f2G4WEbm__6fx41XCY8rLGT48J-FX4VCj_M"
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
-          "title": "Gisèle Pelicot ‘deeply shocked’ after nude images used to promote book",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73d4xj9mx-7Ij-CgFQ8-_X5wjeB-TgPhTmS_K1rvsEXS6Zx6v5Pex5GuQtlg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqyfDJBIQH5RXM-4mgPoHZyuFs2DWFSbqGFjOXN-yDpmpU3z0XXDg84PpJPgs"
         }
       ]
     },
     {
-      "query": "home depot black friday",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:40:00Z",
+      "query": "袁家军",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T12:20:00Z",
       "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depots-black-friday-deals-include-mattresses-throw-blankets-decor-and-more-125025622.html",
-        "https://www.bobvila.com/reviews/home-depot-black-friday-free-ryobi-deals-2026/",
-        "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026"
+        "https://www.zaobao.com.sg/news/china/story20261123-10045663",
+        "https://cq.ifeng.com/c/8yI6nIuq1jy",
+        "https://m.sohu.com/a/1105846357_123753?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJf0ij8a0qioFVRxcmffA5GwkOfpKgjYqWxUp3eg78FB55LdwgwkxHk2-YCrg",
+      "image_credit": "联合早报",
       "news": [
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depots-black-friday-deals-include-mattresses-throw-blankets-decor-and-more-125025622.html",
-          "title": "The Home Depot's Black Friday deals include mattresses, throw blankets, decor and more",
+          "url": "https://www.zaobao.com.sg/news/china/story20261123-10045663",
+          "title": "学者：中国对东南亚影响力提升不代表获更多信任 制度化合作是未来发展方向",
+          "publisher": "联合早报",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJf0ij8a0qioFVRxcmffA5GwkOfpKgjYqWxUp3eg78FB55LdwgwkxHk2-YCrg"
+        },
+        {
+          "url": "https://cq.ifeng.com/c/8yI6nIuq1jy",
+          "title": "2026中国—东盟周在渝开幕 袁家军会见重要嘉宾并宣布开幕 玛利甲·集拉班瓦尼出席并致辞",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoqfamnaRIvbY0nSyL6FIo8lXca8L4_J3iWthgpNGkEeMgDtjyJyfkL5LSDuc"
+        },
+        {
+          "url": "https://m.sohu.com/a/1105846357_123753?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "重庆办国际旅行商大会东盟专场活动深化文旅合作",
+          "publisher": "Sohu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyi7ctUe0gh8MidXaG6ak4rpn0NveCQItdvobuo9lTjOEfAFG2W5gBtYVLvSA"
+        }
+      ]
+    },
+    {
+      "query": "st bonaventure basketball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T12:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/game/_/gameId/401892774",
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401913530",
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401921708"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yFCA_H12roYdtaPTPyXUGNYDQC-1CH7hGK68-M0rWsz4xWlHkri7LENlMLQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/game/_/gameId/401892774",
+          "title": "Kings vs. Canadiens (Nov 23, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yFCA_H12roYdtaPTPyXUGNYDQC-1CH7hGK68-M0rWsz4xWlHkri7LENlMLQ"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401913530",
+          "title": "Winthrop vs. Illinois (Nov 23, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921708",
+          "title": "Washington vs. BYU (Nov 23, 2026) Live Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+        }
+      ]
+    },
+    {
+      "query": "union nj fire",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T12:10:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
+        "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
+        "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
+          "title": "Union, New Jersey fire burns through row of stores",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU"
+        },
+        {
+          "url": "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
+          "title": "Heavy fire tears through row of stores in downtown Union, NJ",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvOWPUafzbP0Oh1HwaUYjnF7nOcHQUhzR2f3FSCrHBOHWWqrIFoqBdJVIT1U"
+        },
+        {
+          "url": "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj",
+          "title": "LIVE: Crews battling huge 3-alarm fire at row of stores in Union, NJ",
+          "publisher": "FOX 5 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLqUaHh_f1ggyp02VABfYKhiscYT1sx5uGRzQiF7mTPFF5b_BuGxnF5iDWb2k"
+        }
+      ]
+    },
+    {
+      "query": "attorney general",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T12:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/government/california-attorney-general-says-huang-reinstatement-changes-nothing-2026-11-23/",
+        "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
+        "https://www.trefis.com/stock/nvda/articles/627754/what-sent-nvidia-stock-lower-on-friday/2026-11-23"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3r8rK_VLK3o7rST5OFIKSOrAPrLmXeetcVIa6g7HG5h4XWmOlCQAE5RTkKGs",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/government/california-attorney-general-says-huang-reinstatement-changes-nothing-2026-11-23/",
+          "title": "California attorney general says Huang reinstatement changes nothing",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3r8rK_VLK3o7rST5OFIKSOrAPrLmXeetcVIa6g7HG5h4XWmOlCQAE5RTkKGs"
+        },
+        {
+          "url": "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
+          "title": "Exclusive | SEC Is Probing Nvidia Amid Departure of CEO Jensen Huang",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc18Ds4l9odrp0tXbwyGqugA6GIzrfwPUzvgo9t2X40jW9q3ojLgJBQ9G3Nd4"
+        },
+        {
+          "url": "https://www.trefis.com/stock/nvda/articles/627754/what-sent-nvidia-stock-lower-on-friday/2026-11-23",
+          "title": "What Sent NVIDIA Stock Lower On Friday?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrHus9OC7vC83zuthxNbLTBukzjntTNJgOHB8sZGfFZSWTTHWoOIcPa_bVZhY"
+        }
+      ]
+    },
+    {
+      "query": "daisy fuentes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T12:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
+        "https://www.yahoo.com/news/videos/daisy-fuentes-discusses-why-she-040845271.html",
+        "https://cwibc.co.id/en/daisy-fuentes-fitness-aging-routine"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8lzeAMTaORGMajHGsuB2PM6q7qkY5PW8TsVsGxHA9GbkDYk5QPf7ZBMy5Tw8",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
+          "title": "Iconic MTV star turns 60, shares her no-guilt approach to fitness, food and aging well",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8lzeAMTaORGMajHGsuB2PM6q7qkY5PW8TsVsGxHA9GbkDYk5QPf7ZBMy5Tw8"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/daisy-fuentes-discusses-why-she-040845271.html",
+          "title": "Daisy Fuentes discusses why she ditched her 20s mindset for a new approach to aging",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA_dDUN4coHY2rfY0ZOGJGU-M1PZBPa_jYYCuvIZAf5MCWuU2OaZVsjFXh95w"
         },
         {
-          "url": "https://www.bobvila.com/reviews/home-depot-black-friday-free-ryobi-deals-2026/",
-          "title": "Home Depot Is Giving Away Free Ryobi Tools for Black Friday—Batteries, Impact Wrench, Routers, and More",
-          "publisher": "BobVila.com",
+          "url": "https://cwibc.co.id/en/daisy-fuentes-fitness-aging-routine",
+          "title": "Daisy Fuentes Shares Her Fitness and Aging Routine at 60",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTf1TDahmeUg2M4rbTbl4W2OqDxKhltvcoCHkloVm39lk_uCss3PPVwiveSnI"
-        },
-        {
-          "url": "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026",
-          "title": "These Are the Best Early Black Friday Tool Deals at Home Depot",
-          "publisher": "Lifehacker",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdccuuXCE8AMIUGAGqz8mXjxhMmHk_uSr1t8aNf1bk-OlbwttmfRwfDyG6lZw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGBRsFgyFLitxEbadkQ-quX7QiXC60nS6tDl94w6SCCZJH7sNPRBTw0TCHkwU"
         }
       ]
     },
     {
-      "query": "陈吉宁",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T11:30:00Z",
+      "query": "vaibhav sooryavanshi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T12:00:00Z",
       "related_news_urls": [
-        "https://m.voc.com.cn/xhn/news/202611/34340923.html",
-        "https://www.stheadline.com/zh-hans/realtime-china/3640753/%E6%94%BF%E6%B2%BB%E5%B1%80%E5%A7%94%E5%91%98%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%A7%94%E4%B9%A6%E8%AE%B0%E9%99%88%E5%90%89%E5%AE%81%E5%8F%97%E6%9F%A5-%E6%B6%89%E4%B8%A5%E9%87%8D%E8%BF%9D%E7%BA%AA%E8%BF%9D%E6%B3%95",
-        "https://www.zhengguannews.cn/news/511141.html"
+        "https://m.cricbuzz.com/live-cricket-scores/177203/uae-vs-inda-11th-match-group-b-acc-mens-asia-cup-rising-stars-2026",
+        "https://sports.yahoo.com/articles/fastest-centuries-list-cricket-vaibhav-111526669.html",
+        "https://cwibc.co.id/en/india-a-crush-uae-record-chase"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokR5Gre0dhg32cIc-pwegZB5BlOvOoZy2EULaqzuNwF6MakmidTZEeziyL2E",
-      "image_credit": "新湖南",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3Mxde58yNs-KwRxwSUNYSEtzMU0VJdMkyzLdtId98sRPxSgmcdbsEg02Lf4",
+      "image_credit": "Cricbuzz",
       "news": [
         {
-          "url": "https://m.voc.com.cn/xhn/news/202611/34340923.html",
-          "title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
-          "publisher": "新湖南",
+          "url": "https://m.cricbuzz.com/live-cricket-scores/177203/uae-vs-inda-11th-match-group-b-acc-mens-asia-cup-rising-stars-2026",
+          "title": "INDA vs UAE, 11th Match, Group B, ACC Men's Asia Cup Rising Stars 2026 - Commentary",
+          "publisher": "Cricbuzz",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokR5Gre0dhg32cIc-pwegZB5BlOvOoZy2EULaqzuNwF6MakmidTZEeziyL2E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3Mxde58yNs-KwRxwSUNYSEtzMU0VJdMkyzLdtId98sRPxSgmcdbsEg02Lf4"
         },
         {
-          "url": "https://www.stheadline.com/zh-hans/realtime-china/3640753/%E6%94%BF%E6%B2%BB%E5%B1%80%E5%A7%94%E5%91%98%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%A7%94%E4%B9%A6%E8%AE%B0%E9%99%88%E5%90%89%E5%AE%81%E5%8F%97%E6%9F%A5-%E6%B6%89%E4%B8%A5%E9%87%8D%E8%BF%9D%E7%BA%AA%E8%BF%9D%E6%B3%95",
-          "title": "政治局委员、上海市委书记陈吉宁受查 涉严重违纪违法",
-          "publisher": "星島頭條",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrYWeDP3hbWVe_pdyV7v2YpJHwTzg8aHvoej8mQEkgvKSuVoFCl9-Cf7dLlsg"
-        },
-        {
-          "url": "https://www.zhengguannews.cn/news/511141.html",
-          "title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
-          "publisher": "正观新闻",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrCfEl_jGLhn93UglqTN2oK12KaZO-fxGrpDhxqa9FYxj5p4ZY6HuI4d0p-pE"
-        }
-      ]
-    },
-    {
-      "query": "lakers rumors",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
-        "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
-        "https://sports.yahoo.com/articles/lakers-linked-125m-nba-star-033820084.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeNmHdn6Cgmdw752zSLV84lGFruSpoYFYHW3BSFoUBT4G1sdSdff6f8-voMQU",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
-          "title": "NBA trade rumors: Lakers planning to be active, Jazz looking elsewhere after Kyrie Irving buzz",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeNmHdn6Cgmdw752zSLV84lGFruSpoYFYHW3BSFoUBT4G1sdSdff6f8-voMQU"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
-          "title": "New Lakers Trade Rumors Update Strategy to Improve Roster by 2027 NBA Deadline",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKxn5frvfM6ADBvdwZnmnlB0Cz0_YYBdQ4oetvrxbWdkmnYV50j8BZqd2qB44"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/lakers-linked-125m-nba-star-033820084.html",
-          "title": "Lakers Linked to $125M NBA Star After Rob Pelinka Confirms Trade Plans for Luka Doncic & Co.",
+          "url": "https://sports.yahoo.com/articles/fastest-centuries-list-cricket-vaibhav-111526669.html",
+          "title": "Fastest centuries in List A cricket: Vaibhav Sooryavanshi breaks world record",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX6elxa3jgXfmJNgx1zBGolZz5AYAQGfrkD8zqbV8VJadxpKZo9JH0uRlLZKA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEoBSeGspKe6iawMMLQBvrW3jJya6_PS4b7YHc3iNrag5BI3CAqEssxUnVSw"
+        },
+        {
+          "url": "https://cwibc.co.id/en/india-a-crush-uae-record-chase",
+          "title": "India A Crush UAE in Record 14.2 Over Chase in Doha",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ4cPqd9u6x4Ji9CQIhopLSFY3a-BWtozs4bTV-A-qdG3E5jY9bF-eheexPd8"
         }
       ]
     },
     {
-      "query": "st louis weather",
+      "query": "annalynne mccord",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T11:20:00Z",
+      "published_at": "2026-11-24T12:00:00Z",
       "related_news_urls": [
-        "https://www.komu.com/weather/forecast-quiet-and-cold-for-tuesday-first-alert-weather-day-issued-for-thanksgiving/article_fba5e8ca-38c2-4237-987a-2c68e8c04133.html",
-        "https://www.kcrg.com/2026/11/23/chilly-start-week-holiday-travel-system-way/",
-        "https://fox2now.com/news/storm-threatens-st-louis-with-possible-rain-or-snow-for-thanksgiving/"
+        "https://people.com/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles-12276383",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/annalynne-mccord-reveals-days-lives-191442710.html",
+        "https://parade.com/news/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK0t9WXfGPkrBq-6cdmrbYPgWSXPp6rYHzMoKVXV-wC56iY8VfYGnTIYAc0BE",
-      "image_credit": "KOMU 8",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHm8VnPInibluR4aFL8dai6FySjYLr2IrIFP-t6MzCBid14rR0nFfm99avTCQ",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.komu.com/weather/forecast-quiet-and-cold-for-tuesday-first-alert-weather-day-issued-for-thanksgiving/article_fba5e8ca-38c2-4237-987a-2c68e8c04133.html",
-          "title": "Forecast: Quiet and cold for Tuesday, First Alert Weather Day issued for Thanksgiving",
-          "publisher": "KOMU 8",
+          "url": "https://people.com/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles-12276383",
+          "title": "‘Days of Our Lives’ Star AnnaLynne McCord Says the Soap ‘Saved’ Her During Financial Struggles",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK0t9WXfGPkrBq-6cdmrbYPgWSXPp6rYHzMoKVXV-wC56iY8VfYGnTIYAc0BE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHm8VnPInibluR4aFL8dai6FySjYLr2IrIFP-t6MzCBid14rR0nFfm99avTCQ"
         },
         {
-          "url": "https://www.kcrg.com/2026/11/23/chilly-start-week-holiday-travel-system-way/",
-          "title": "Chilly Start to Week, Holiday Travel System on the Way",
-          "publisher": "KCRG",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/annalynne-mccord-reveals-days-lives-191442710.html",
+          "title": "AnnaLynne McCord Reveals How 'Days of Our Lives' Helped Her Through Financial Crisis",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJv0wy7EIUKOpEUvpe5-FR6J57ptH5CURSuwzIaJYD20HwdfwH9457spvxZk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsbXY1yWdbp6OeNYo69bTGmATuIJCradMafHOH23vJ1mDy4nxPaWtLRqU5U2A"
         },
         {
-          "url": "https://fox2now.com/news/storm-threatens-st-louis-with-possible-rain-or-snow-for-thanksgiving/",
-          "title": "Storm threatens St. Louis with possible rain or snow for Thanksgiving",
-          "publisher": "FOX 2",
+          "url": "https://parade.com/news/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles",
+          "title": "'Days of Our Lives' Star AnnaLynne McCord Says the Soap 'Saved Me' During Financial Struggles",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm4qiB6EdCQdVugaUS0IubyJkmtQ14OXSZfZ4D2eiIp4eEIMjK-VQzuDP-j_Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQcUS18xy31bb4yX8QiaiFvcyArj_SLTpL6WEA5BGv8DHjNALcvlH3cpeD0KI"
         }
       ]
     },
     {
-      "query": "you can see everything digital release",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T11:10:00Z",
+      "query": "courtney clenney",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T12:00:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/commentisfree/2026/nov/23/you-can-see-everything-tells-us-nothing-about-elizabeth-holmes-thats-what-the-courts-are-for",
-        "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-23/you-can-see-everything-100-million-box-office-documentary"
+        "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
+        "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
+        "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0AYIneI6in8R8k1T6KT7mOAe5W7UhNLjxhPSfRE5q88vCKd044JeVeDEMFV4",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/23/you-can-see-everything-tells-us-nothing-about-elizabeth-holmes-thats-what-the-courts-are-for",
-          "title": "You Can See Everything tells us nothing about Elizabeth Holmes. I guess that’s what the courts are for | Zoe Williams",
-          "publisher": "The Guardian",
+          "url": "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
+          "title": "They shared their glamorous life online. Then one was killed — and the other was charged.",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0AYIneI6in8R8k1T6KT7mOAe5W7UhNLjxhPSfRE5q88vCKd044JeVeDEMFV4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU"
         },
         {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
-          "title": "‘You Can See Everything’ Arrives On Streaming: Where To Watch Elizabeth Holmes Documentary",
-          "publisher": "Forbes",
+          "url": "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
+          "title": "OnlyFans model murder case to be featured on NBC's Dateline",
+          "publisher": "NBC 6 South Florida",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCx_wi1d0yQgDw1MGcV0Ap8Ua2HRb68DMHCaY8HK4xS_YS1QFOokpvgqtBlo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-A45KLSZDsn-KtrMN77RgUYpyV8dYgzoK17EEOKBUmpXaYl0kx_6yKfTOsTE"
         },
         {
-          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-23/you-can-see-everything-100-million-box-office-documentary",
-          "title": "‘You Can See Everything’ makes $100 million worldwide, a rarity for documentaries",
-          "publisher": "Los Angeles Times",
+          "url": "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/",
+          "title": "‘A Lot of Fighting’: What Happened Before Courtney Clenney Killed Christian Obumseli?",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAxaML1Nj1RDs9KlrvAWSJYcgpTDjdlG9ZBlLjKFxAYx9ObH6vN7keQyG9l6o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_ecBkfVzn71C9Zn659FzOgG2qJj3Z7zPueatOxeQnTAfXN4-C-9U-wzYPt0"
+        }
+      ]
+    },
+    {
+      "query": "inheritance",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T12:00:00Z",
+      "related_news_urls": [
+        "https://sg.news.yahoo.com/yahoo-poll-should-parents-make-an-effort-to-leave-their-children-an-inheritance-091630563.html",
+        "https://www.asiaone.com/entertainment/darren-lim-doesnt-believe-leaving-children-inheritance",
+        "https://cnalifestyle.channelnewsasia.com/entertainment/darren-lim-inheritance-kids-592126"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWFfdNa3g3uhuOcSaMdUjLeOimUs9KVelH80JxzQvsk2HjXPUvhT3OQZQlkhw",
+      "image_credit": "Yahoo News Singapore",
+      "news": [
+        {
+          "url": "https://sg.news.yahoo.com/yahoo-poll-should-parents-make-an-effort-to-leave-their-children-an-inheritance-091630563.html",
+          "title": "YAHOO POLL: Should parents make an effort to leave their children an inheritance?",
+          "publisher": "Yahoo News Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWFfdNa3g3uhuOcSaMdUjLeOimUs9KVelH80JxzQvsk2HjXPUvhT3OQZQlkhw"
+        },
+        {
+          "url": "https://www.asiaone.com/entertainment/darren-lim-doesnt-believe-leaving-children-inheritance",
+          "title": "Darren Lim doesn't believe in leaving his children an inheritance, wants them to fend for themselves",
+          "publisher": "AsiaOne.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3v7FRet3Vl5GxQvbPTtdpWf906sFu8VwAmuEzWhG3supocQEd7F6GPQQuYw"
+        },
+        {
+          "url": "https://cnalifestyle.channelnewsasia.com/entertainment/darren-lim-inheritance-kids-592126",
+          "title": "Actor Darren Lim does not plan to leave inheritance for his children: 'I don't want to make them lazy'",
+          "publisher": "CNA Lifestyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlqqQltm7QbPXfPYcXQHHivxGpPDCuM5TRlzmR11olkFDSsTc2olL-YwyABAg"
         }
       ]
     }
