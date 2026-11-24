@@ -13,7 +13,7 @@ export function openPortableBrainState(dbPath){
  const db=new DatabaseSync(dbPath);
  try{
   // A separate state file only; never add a table to a live ticket/mesh DB.
-  if(db.prepare("SELECT name FROM sqlite_master WHERE name NOT LIKE 'sqlite_%' AND NOT (type='table' AND name='portable_brain_state') LIMIT 1").get())throw Error('dedicated_state_database_required');
+  if(db.prepare("SELECT name FROM sqlite_master WHERE NOT ((type='table' AND name='portable_brain_state') OR (type='index' AND name='sqlite_autoindex_portable_brain_state_1' AND tbl_name='portable_brain_state' AND sql IS NULL)) LIMIT 1").get())throw Error('dedicated_state_database_required');
   const expected='CREATE TABLE portable_brain_state (key TEXT PRIMARY KEY,value TEXT NOT NULL)';
   const normalize=sql=>String(sql||'').replace(/\s+/g,'').toLowerCase();
   const verifySchema=()=>{
