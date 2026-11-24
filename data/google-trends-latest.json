@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T12:34:59.341806Z",
+  "checked_at": "2026-11-24T13:01:30.921750Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "习近平",
+      "query": "billy horschel",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T12:20:00Z",
+      "published_at": "2026-11-24T12:40:00Z",
       "related_news_urls": [
-        "https://cn.nytimes.com/world/20261120/trump-summit-power/",
-        "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
-        "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp"
+        "https://golf.com/news/fedex-cup-champ-loses-tour-card-nightmare-finish/",
+        "https://www.espn.com/golf/story/_/id/50547115/neergaard-petersen-part-3-way-tie-lead-sea-island",
+        "https://www.pgatour.com/article/news/latest/2026/11/20/cut-line-the-rsm-classic-doug-ghim-billy-horschel-top-100-fedexcup-fall-standings-leaderboard"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI",
-      "image_credit": "纽约时报中文网",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd1lvigHAh1-e8ioHkdSiMBRb9H68kqojAzSMjvYHsDwD1R9vzwwgLQK5mwcc",
+      "image_credit": "GOLF.com",
       "news": [
         {
-          "url": "https://cn.nytimes.com/world/20261120/trump-summit-power/",
-          "title": "特朗普试图在国际舞台展示权力，在国内却将被迫分享权力",
-          "publisher": "纽约时报中文网",
+          "url": "https://golf.com/news/fedex-cup-champ-loses-tour-card-nightmare-finish/",
+          "title": "‘It stinks’: FedEx Cup champ loses Tour card after nightmare finish",
+          "publisher": "GOLF.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSd1lvigHAh1-e8ioHkdSiMBRb9H68kqojAzSMjvYHsDwD1R9vzwwgLQK5mwcc"
         },
         {
-          "url": "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
-          "title": "德语媒体：习近平主导 特朗普普京陪衬",
-          "publisher": "DW.com",
+          "url": "https://www.espn.com/golf/story/_/id/50547115/neergaard-petersen-part-3-way-tie-lead-sea-island",
+          "title": "Rasmus Neergaard-Petersen shares lead at Sea Island; Horschel loses full cards",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfoe4JEvUkXaO-2I2qnHMA5XYd-JYhTRxJH2PAY-vMLMYBJjKcpajJ9PRC25s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNj_T1sRIj7wsgm0WKO_W97UwmV_xSQVepQwJ7vYY1n4raEzNyQUJg9fvnV2w"
         },
         {
-          "url": "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp",
-          "title": "分析：APEC上与习近平、特朗普历史性会晤，对普京是一场重大胜利",
-          "publisher": "BBC",
+          "url": "https://www.pgatour.com/article/news/latest/2026/11/20/cut-line-the-rsm-classic-doug-ghim-billy-horschel-top-100-fedexcup-fall-standings-leaderboard",
+          "title": "Different stakes, different fates: Billy Horschel falters, Doug Ghim rallies at The RSM Classic",
+          "publisher": "PGA Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqyfDJBIQH5RXM-4mgPoHZyuFs2DWFSbqGFjOXN-yDpmpU3z0XXDg84PpJPgs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxIzN2shkeEjtU2oWhk21sz4CP6OoNqFi_UNOoZt7xllXk8nuo5pzAQQGYIRw"
+        }
+      ]
+    },
+    {
+      "query": "lexie hull",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T12:40:00Z",
+      "related_news_urls": [
+        "https://observer.com/list/lexie-hull-essentials/",
+        "https://peradaban.id/en/lexie-hull-travel-setting-spray",
+        "https://athlonsports.com/wnba/indiana-fever/lexie-hull-off-court-venture-announcement"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3GLEfFLBLOWAwjqOsyVKj9OZozEqK95p-QL0nuHzB0EzQCvwwigzZhXK9nS0",
+      "image_credit": "Observer",
+      "news": [
+        {
+          "url": "https://observer.com/list/lexie-hull-essentials/",
+          "title": "The Essentials With Lexie Hull: Throne of Glass , Cabo and Makeup Put to the WNBA Test",
+          "publisher": "Observer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3GLEfFLBLOWAwjqOsyVKj9OZozEqK95p-QL0nuHzB0EzQCvwwigzZhXK9nS0"
+        },
+        {
+          "url": "https://peradaban.id/en/lexie-hull-travel-setting-spray",
+          "title": "Lexie Hull Launches Travel Size Setting Spray in Mexico",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3fqi-wGUVExQVQMhuJqYXMuooo4WGGaFAwmZjcin-TWrCe_VlZ7WI6ENvgH4"
+        },
+        {
+          "url": "https://athlonsports.com/wnba/indiana-fever/lexie-hull-off-court-venture-announcement",
+          "title": "Lexie Hull’s Off-Court Venture Makes Exciting Announcement",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFQn-CKlIIeP3USeCPU4QNxjAo7XWp-SzpXhOKKxPq6CVh1vqDTgh0TDKl8s"
+        }
+      ]
+    },
+    {
+      "query": "sandisk stock price",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T12:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/prediction-sandisk-stock-price-end-221602286.html",
+        "https://seekingalpha.com/article/4971253-sandisk-armageddon-has-been-priced-in",
+        "https://www.fool.com/investing/2026/11/23/even-if-sandisk-s-profits-get-cut-in-half-here-s-what-usd5-000-in-the-stock-could-be-worth-by-2030/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5sezyE0ZFkQThKzbNaXB5WrFOPlAgtwziF9T6_C7Ihy335Hau1dsjjLstEOc",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/prediction-sandisk-stock-price-end-221602286.html",
+          "title": "Prediction: This Will Be Sandisk’s Stock Price by the End of 2027",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5sezyE0ZFkQThKzbNaXB5WrFOPlAgtwziF9T6_C7Ihy335Hau1dsjjLstEOc"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4971253-sandisk-armageddon-has-been-priced-in",
+          "title": "Sandisk: Armageddon Has Been Priced-In (NASDAQ:SNDK)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR812rvO7fnLTJQH4UagOi6_iHHG89TrQh3SRFMaOPW2On0zFQYCS6DJAinIfU"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/23/even-if-sandisk-s-profits-get-cut-in-half-here-s-what-usd5-000-in-the-stock-could-be-worth-by-2030/",
+          "title": "Even If Sandisk's Profits Get Cut in Half, Here's What $5,000 in the Stock Could Be Worth by 2030",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6K_56lSF8_7-Jhb85uhWUPm1iddotS9r9An6RAMDefletPWg9AfPQqFVMa2w"
         }
       ]
     },
@@ -77,37 +147,72 @@
       ]
     },
     {
-      "query": "st bonaventure basketball",
-      "approx_searches": "5000+",
+      "query": "习近平",
+      "approx_searches": "200+",
       "published_at": "2026-11-24T12:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nhl/game/_/gameId/401892774",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401913530",
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401921708"
+        "https://cn.nytimes.com/world/20261120/trump-summit-power/",
+        "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
+        "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yFCA_H12roYdtaPTPyXUGNYDQC-1CH7hGK68-M0rWsz4xWlHkri7LENlMLQ",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI",
+      "image_credit": "纽约时报中文网",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/game/_/gameId/401892774",
-          "title": "Kings vs. Canadiens (Nov 23, 2026) Live Score",
-          "publisher": "ESPN",
+          "url": "https://cn.nytimes.com/world/20261120/trump-summit-power/",
+          "title": "特朗普试图在国际舞台展示权力，在国内却将被迫分享权力",
+          "publisher": "纽约时报中文网",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3yFCA_H12roYdtaPTPyXUGNYDQC-1CH7hGK68-M0rWsz4xWlHkri7LENlMLQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8xNYtFJeceaZCu8WszLrYBhVg2jpd6esHwsUaV9FLTO5yZaQc84tAE03O-VI"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401913530",
-          "title": "Winthrop vs. Illinois (Nov 23, 2026) Live Score",
-          "publisher": "ESPN",
+          "url": "https://www.dw.com/zh/%E5%BE%B7%E8%AF%AD%E5%AA%92%E4%BD%93%E6%B7%B1%E5%9C%B3%E5%85%A8%E5%AE%B6%E7%A6%8F-%E4%B9%A0%E8%BF%91%E5%B9%B3%E4%B8%AD%E5%BF%83-%E7%89%B9%E6%9C%97%E6%99%AE%E6%99%AE%E4%BA%AC%E5%88%86%E7%AB%8B%E4%B8%A4%E4%BE%A7/a-80022446",
+          "title": "德语媒体：习近平主导 特朗普普京陪衬",
+          "publisher": "DW.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfoe4JEvUkXaO-2I2qnHMA5XYd-JYhTRxJH2PAY-vMLMYBJjKcpajJ9PRC25s"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921708",
-          "title": "Washington vs. BYU (Nov 23, 2026) Live Score",
-          "publisher": "ESPN",
+          "url": "https://www.bbc.com/zhongwen/articles/cq702kdw845ro/simp",
+          "title": "分析：APEC上与习近平、特朗普历史性会晤，对普京是一场重大胜利",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhuI2QDWeXT4ULhneWFBctp3562kvu7TLN78gXaC6GfyZyGy5prJX2Ra4Kv_s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqyfDJBIQH5RXM-4mgPoHZyuFs2DWFSbqGFjOXN-yDpmpU3z0XXDg84PpJPgs"
+        }
+      ]
+    },
+    {
+      "query": "united arab emirates national cricket team vs india a cricket team standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T12:10:00Z",
+      "related_news_urls": [
+        "https://www.cricbuzz.com/player-match-performance/match/177203/player/6322/batting?inningsId=1",
+        "https://timesofindia.indiatimes.com/sports/cricket/news/had-a-feeling-i-would-score-a-hundred-india-born-harpreet-bhatias-emotional-ton-on-guru-nanak-jayanti-against-india-a/articleshow/136126818.cms",
+        "https://www.thehindu.com/sport/cricket/asia-cup-rising-stars-india-a-vs-uae-in-doha/article71737454.ece"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtjz0Si6fR43Ph_UTJ1tkT6BykTNzvrR4OFbewusLBV20wMjgHZwibPZgG8XQ",
+      "image_credit": "Cricbuzz",
+      "news": [
+        {
+          "url": "https://www.cricbuzz.com/player-match-performance/match/177203/player/6322/batting?inningsId=1",
+          "title": "Live Cricket Score, Schedule, Latest News, Stats & Videos",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtjz0Si6fR43Ph_UTJ1tkT6BykTNzvrR4OFbewusLBV20wMjgHZwibPZgG8XQ"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/cricket/news/had-a-feeling-i-would-score-a-hundred-india-born-harpreet-bhatias-emotional-ton-on-guru-nanak-jayanti-against-india-a/articleshow/136126818.cms",
+          "title": "'Had a feeling I would score a hundred': India-born Harpreet Bhatia's emotional ton on Guru Nanak Jayant",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuRbklzBZ10XGB0IPlVPpg1xGjT28NOb6zCO_aRdVt_306XpAnqrp5_O3uris"
+        },
+        {
+          "url": "https://www.thehindu.com/sport/cricket/asia-cup-rising-stars-india-a-vs-uae-in-doha/article71737454.ece",
+          "title": "Asia Cup Rising Stars: India 'A' vs United Arab Emirates in Doha on November 24, 2026",
+          "publisher": "The Hindu",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPQ5qo1XvFasBvFghKUI3SW_doa98bivagq5QEhNxkVFVKFxlkJU1KS5z2AEU"
         }
       ]
     },
@@ -116,26 +221,26 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-24T12:10:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
         "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
+        "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
         "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvOWPUafzbP0Oh1HwaUYjnF7nOcHQUhzR2f3FSCrHBOHWWqrIFoqBdJVIT1U",
+      "image_credit": "ABC7 New York",
       "news": [
-        {
-          "url": "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
-          "title": "Union, New Jersey fire burns through row of stores",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU"
-        },
         {
           "url": "https://abc7ny.com/post/heavy-fire-tears-row-stores-downtown-union-nj/20073914/",
           "title": "Heavy fire tears through row of stores in downtown Union, NJ",
           "publisher": "ABC7 New York",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtvOWPUafzbP0Oh1HwaUYjnF7nOcHQUhzR2f3FSCrHBOHWWqrIFoqBdJVIT1U"
+        },
+        {
+          "url": "https://www.cbsnews.com/newyork/news/fire-union-nj-businesses-stuyvesant-avenue/",
+          "title": "Union, New Jersey fire burns through row of stores",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMm-58Dk5HXzeoGCm0CKxFYyVBj6SqBpWZqfub0yExHalyuDHO9fcW1CzBFSU"
         },
         {
           "url": "https://www.fox5ny.com/news/3-alarm-fire-stuyvesant-ave-union-nj",
@@ -151,19 +256,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-24T12:10:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/legal/government/california-attorney-general-says-huang-reinstatement-changes-nothing-2026-11-23/",
+        "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
         "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
-        "https://www.trefis.com/stock/nvda/articles/627754/what-sent-nvidia-stock-lower-on-friday/2026-11-23"
+        "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3r8rK_VLK3o7rST5OFIKSOrAPrLmXeetcVIa6g7HG5h4XWmOlCQAE5RTkKGs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0",
       "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.reuters.com/legal/government/california-attorney-general-says-huang-reinstatement-changes-nothing-2026-11-23/",
-          "title": "California attorney general says Huang reinstatement changes nothing",
+          "url": "https://www.reuters.com/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/",
+          "title": "EXCLUSIVE: Nvidia's accounting is a focus of US SEC investigation, sources say",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3r8rK_VLK3o7rST5OFIKSOrAPrLmXeetcVIa6g7HG5h4XWmOlCQAE5RTkKGs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVsqCo-SGyXBU1vu8o87-V5ZHOz0pRsjcIPdNzyffrD6DLhR3JiF5CXqmqhU0"
         },
         {
           "url": "https://www.wsj.com/business/sec-is-probing-nvidia-amid-departure-of-ceo-jensen-huang-ee7643f8",
@@ -173,22 +278,22 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc18Ds4l9odrp0tXbwyGqugA6GIzrfwPUzvgo9t2X40jW9q3ojLgJBQ9G3Nd4"
         },
         {
-          "url": "https://www.trefis.com/stock/nvda/articles/627754/what-sent-nvidia-stock-lower-on-friday/2026-11-23",
-          "title": "What Sent NVIDIA Stock Lower On Friday?",
-          "publisher": "Trefis",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-21/california-nvidia-probe-covers-potential-criminal-law-violations",
+          "title": "California Nvidia Probe Covers Potential Criminal Law Violations",
+          "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrHus9OC7vC83zuthxNbLTBukzjntTNJgOHB8sZGfFZSWTTHWoOIcPa_bVZhY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg0OlFKilBFGz_-bLU_0-RFM6pbNzvWJbR77wSbqwbdt-u6bXOCXlM4CsesL8"
         }
       ]
     },
     {
       "query": "daisy fuentes",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-24T12:00:00Z",
       "related_news_urls": [
         "https://www.foxnews.com/health/iconic-mtv-star-turns-60-shares-no-guilt-approach-fitness-food-aging-well",
         "https://www.yahoo.com/news/videos/daisy-fuentes-discusses-why-she-040845271.html",
-        "https://cwibc.co.id/en/daisy-fuentes-fitness-aging-routine"
+        "https://demokratis.co.id/en/daisy-fuentes-health-fitness-aging"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8lzeAMTaORGMajHGsuB2PM6q7qkY5PW8TsVsGxHA9GbkDYk5QPf7ZBMy5Tw8",
       "image_credit": "Fox News",
@@ -208,57 +313,22 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSA_dDUN4coHY2rfY0ZOGJGU-M1PZBPa_jYYCuvIZAf5MCWuU2OaZVsjFXh95w"
         },
         {
-          "url": "https://cwibc.co.id/en/daisy-fuentes-fitness-aging-routine",
-          "title": "Daisy Fuentes Shares Her Fitness and Aging Routine at 60",
-          "publisher": "cwibc.co.id",
+          "url": "https://demokratis.co.id/en/daisy-fuentes-health-fitness-aging",
+          "title": "Daisy Fuentes Turns 60 and Shares Her Health and Fitness Routine",
+          "publisher": "Demokratis.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGBRsFgyFLitxEbadkQ-quX7QiXC60nS6tDl94w6SCCZJH7sNPRBTw0TCHkwU"
         }
       ]
     },
     {
-      "query": "vaibhav sooryavanshi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T12:00:00Z",
-      "related_news_urls": [
-        "https://m.cricbuzz.com/live-cricket-scores/177203/uae-vs-inda-11th-match-group-b-acc-mens-asia-cup-rising-stars-2026",
-        "https://sports.yahoo.com/articles/fastest-centuries-list-cricket-vaibhav-111526669.html",
-        "https://cwibc.co.id/en/india-a-crush-uae-record-chase"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3Mxde58yNs-KwRxwSUNYSEtzMU0VJdMkyzLdtId98sRPxSgmcdbsEg02Lf4",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://m.cricbuzz.com/live-cricket-scores/177203/uae-vs-inda-11th-match-group-b-acc-mens-asia-cup-rising-stars-2026",
-          "title": "INDA vs UAE, 11th Match, Group B, ACC Men's Asia Cup Rising Stars 2026 - Commentary",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI3Mxde58yNs-KwRxwSUNYSEtzMU0VJdMkyzLdtId98sRPxSgmcdbsEg02Lf4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/fastest-centuries-list-cricket-vaibhav-111526669.html",
-          "title": "Fastest centuries in List A cricket: Vaibhav Sooryavanshi breaks world record",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJEoBSeGspKe6iawMMLQBvrW3jJya6_PS4b7YHc3iNrag5BI3CAqEssxUnVSw"
-        },
-        {
-          "url": "https://cwibc.co.id/en/india-a-crush-uae-record-chase",
-          "title": "India A Crush UAE in Record 14.2 Over Chase in Doha",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQ4cPqd9u6x4Ji9CQIhopLSFY3a-BWtozs4bTV-A-qdG3E5jY9bF-eheexPd8"
-        }
-      ]
-    },
-    {
       "query": "annalynne mccord",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T12:00:00Z",
       "related_news_urls": [
         "https://people.com/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles-12276383",
         "https://www.yahoo.com/entertainment/celebrity/interviews/articles/annalynne-mccord-reveals-days-lives-191442710.html",
-        "https://parade.com/news/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles"
+        "https://cwibc.co.id/en/annalynne-mccord-days-financial-rescue"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHm8VnPInibluR4aFL8dai6FySjYLr2IrIFP-t6MzCBid14rR0nFfm99avTCQ",
       "image_credit": "People.com",
@@ -278,81 +348,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQsbXY1yWdbp6OeNYo69bTGmATuIJCradMafHOH23vJ1mDy4nxPaWtLRqU5U2A"
         },
         {
-          "url": "https://parade.com/news/days-of-our-lives-star-annalynne-mccord-says-the-soap-saved-me-during-financial-struggles",
-          "title": "'Days of Our Lives' Star AnnaLynne McCord Says the Soap 'Saved Me' During Financial Struggles",
-          "publisher": "Parade Magazine",
+          "url": "https://cwibc.co.id/en/annalynne-mccord-days-financial-rescue",
+          "title": "AnnaLynne McCord Credits Days of Our Lives With Financial Rescue",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQcUS18xy31bb4yX8QiaiFvcyArj_SLTpL6WEA5BGv8DHjNALcvlH3cpeD0KI"
-        }
-      ]
-    },
-    {
-      "query": "courtney clenney",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T12:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
-        "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
-        "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/onlyfans-courtney-clenney-christian-obumseli-death-rcna610149",
-          "title": "They shared their glamorous life online. Then one was killed — and the other was charged.",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFj7qC-kchV__kqMt1NsYIQ97AnOhWzBfzCCuH-Z06rHywVDnfphR2hnhG2zU"
-        },
-        {
-          "url": "https://www.nbcmiami.com/video/nbc-6-news/onlyfans-model-murder-case-to-be-featured-on-nbcs-dateline/3890740/",
-          "title": "OnlyFans model murder case to be featured on NBC's Dateline",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-A45KLSZDsn-KtrMN77RgUYpyV8dYgzoK17EEOKBUmpXaYl0kx_6yKfTOsTE"
-        },
-        {
-          "url": "https://www.rollingstone.com/culture/culture-news/courtney-clenney-christian-obumseli-dateline-1235661517/",
-          "title": "‘A Lot of Fighting’: What Happened Before Courtney Clenney Killed Christian Obumseli?",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW_ecBkfVzn71C9Zn659FzOgG2qJj3Z7zPueatOxeQnTAfXN4-C-9U-wzYPt0"
-        }
-      ]
-    },
-    {
-      "query": "inheritance",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T12:00:00Z",
-      "related_news_urls": [
-        "https://sg.news.yahoo.com/yahoo-poll-should-parents-make-an-effort-to-leave-their-children-an-inheritance-091630563.html",
-        "https://www.asiaone.com/entertainment/darren-lim-doesnt-believe-leaving-children-inheritance",
-        "https://cnalifestyle.channelnewsasia.com/entertainment/darren-lim-inheritance-kids-592126"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWFfdNa3g3uhuOcSaMdUjLeOimUs9KVelH80JxzQvsk2HjXPUvhT3OQZQlkhw",
-      "image_credit": "Yahoo News Singapore",
-      "news": [
-        {
-          "url": "https://sg.news.yahoo.com/yahoo-poll-should-parents-make-an-effort-to-leave-their-children-an-inheritance-091630563.html",
-          "title": "YAHOO POLL: Should parents make an effort to leave their children an inheritance?",
-          "publisher": "Yahoo News Singapore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWFfdNa3g3uhuOcSaMdUjLeOimUs9KVelH80JxzQvsk2HjXPUvhT3OQZQlkhw"
-        },
-        {
-          "url": "https://www.asiaone.com/entertainment/darren-lim-doesnt-believe-leaving-children-inheritance",
-          "title": "Darren Lim doesn't believe in leaving his children an inheritance, wants them to fend for themselves",
-          "publisher": "AsiaOne.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi3v7FRet3Vl5GxQvbPTtdpWf906sFu8VwAmuEzWhG3supocQEd7F6GPQQuYw"
-        },
-        {
-          "url": "https://cnalifestyle.channelnewsasia.com/entertainment/darren-lim-inheritance-kids-592126",
-          "title": "Actor Darren Lim does not plan to leave inheritance for his children: 'I don't want to make them lazy'",
-          "publisher": "CNA Lifestyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlqqQltm7QbPXfPYcXQHHivxGpPDCuM5TRlzmR11olkFDSsTc2olL-YwyABAg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzcDBoXt6EMccYU8h4B7yeU-baz7gELUeq5iWucwHUhZl9UljQd7PD0UinauM"
         }
       ]
     }
