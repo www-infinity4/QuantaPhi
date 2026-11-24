@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T16:31:07.804675Z",
+  "checked_at": "2026-11-24T17:01:30.118246Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ohio basketball",
+      "query": "microsoft code red",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T16:40:00Z",
+      "related_news_urls": [
+        "https://www.seattletimes.com/business/microsoft/microsoft-explains-tech-failures-that-triggered-global-outage/",
+        "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
+        "https://www.theregister.com/saas/2026/11/23/microsoft-mega-outage-report-reveals-testing-gaps-and-emails-that-never-arrived/5311656"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzw2XprWvHqoRlJHt_7l1BNCteduh6D8lyCYnH-c2y9_Q3BzpWhtD7RIOJasU",
+      "image_credit": "The Seattle Times",
+      "news": [
+        {
+          "url": "https://www.seattletimes.com/business/microsoft/microsoft-explains-tech-failures-that-triggered-global-outage/",
+          "title": "Microsoft explains tech failures that triggered global outage",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzw2XprWvHqoRlJHt_7l1BNCteduh6D8lyCYnH-c2y9_Q3BzpWhtD7RIOJasU"
+        },
+        {
+          "url": "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
+          "title": "Video: Microsoft’s C.E.O. Satya Nadella Addresses Global Outlook Outage",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8b9qj8ViALdGVxNLvsuOndJNUR8X8GiC1S24riDfsV2o5Q4rpra4Zh5FmZEE"
+        },
+        {
+          "url": "https://www.theregister.com/saas/2026/11/23/microsoft-mega-outage-report-reveals-testing-gaps-and-emails-that-never-arrived/5311656",
+          "title": "Microsoft mega outage: Report reveals testing gaps and emails that never arrived",
+          "publisher": "The Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZIJfkuIYxM8v-dU5RG09rvnDrwpWFoPm0WCEmOL03UUqPmuvzfKulEPftfU"
+        }
+      ]
+    },
+    {
+      "query": "angela bassett",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T16:20:00Z",
+      "related_news_urls": [
+        "https://www.instagram.com/p/DgBP0tEAQIV/",
+        "https://dancemagazine.com/chelsey-arce-wanted/",
+        "https://joshatthemovies.com/2026/11/18/theater-review-wanted/"
+      ],
+      "image_url": null,
+      "image_credit": "Instagram",
+      "news": [
+        {
+          "url": "https://www.instagram.com/p/DgBP0tEAQIV/",
+          "title": "#AngelaBassett Looks amazing 🤩! She recently stopped by #Broadway in #NYC to watch the #WANTED musical and greet the cast! @wantedmusical",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://dancemagazine.com/chelsey-arce-wanted/",
+          "title": "From Kill Bill to “Bridgerton”: Choreographer Chelsey Arce on Her Inspirations for the New Broadway Musical WANTED",
+          "publisher": "Dance Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROrwEjKzzFd3SCzgSvj06GAsbcL1Vp1qccDJpug_usvaRW1_dNzt-D86lrK_8"
+        },
+        {
+          "url": "https://joshatthemovies.com/2026/11/18/theater-review-wanted/",
+          "title": "Theater Review: Wanted",
+          "publisher": "Josh At The Movies",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI7vNT-H3EEdfV8SCsbX_z98lrC5H0s90KfsfSRhlddmLwl0rXvrW0-2JdkHI"
+        }
+      ]
+    },
+    {
+      "query": "christie miller",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T16:20:00Z",
+      "related_news_urls": [
+        "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
+        "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
+        "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
+          "title": "Influencer, 60, Announces Her Own Death in Pre-Recorded Video, 4 Years After Stage 4 Breast Cancer Diagnosis",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
+          "title": "Influencer Christie Miller Announces Her Own Death at 60 After Cancer Battle",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNhiYd_T7PNm6-Feh-0hTpAAIfR8rmiJjc9U4TOZ3LFSez_DaAwrhH6wIVA4"
+        },
+        {
+          "url": "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
+          "title": "Influencer Christie Miller, 60, announces her own death in tragic video after four-year breast cancer battle",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0_W3epskQs_S2EZsL0SE1uYekvNLVrM9N2_bF1sd5M1FE8V9Q2di5uC9bZ8"
+        }
+      ]
+    },
+    {
+      "query": "playstation plus",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T16:20:00Z",
+      "related_news_urls": [
+        "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
+        "https://www.digitalfoundry.net/features/the-big-gta-6-console-comparison-ps5-vs-ps5-pro-xbox-series-x-and-series-s",
+        "https://www.pcmag.com/news/cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
+      "image_credit": "XBOX Wire",
+      "news": [
+        {
+          "url": "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
+          "title": "How to Play Grand Theft Auto VI in the Cloud and with Remote Play",
+          "publisher": "XBOX Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
+        },
+        {
+          "url": "https://www.digitalfoundry.net/features/the-big-gta-6-console-comparison-ps5-vs-ps5-pro-xbox-series-x-and-series-s",
+          "title": "The Big GTA 6 Console Comparison: PS5 vs PS5 Pro, Xbox Series X and Series S",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFy8HCNr5nf9X333WJBZ1oKaptht3euJSrsZcPvOwg7rEmWQIJ3-2xMkrMSKE"
+        },
+        {
+          "url": "https://www.pcmag.com/news/cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now",
+          "title": "Can't Wait to Live Stream GTA 6? This Trick Lets You Play It On Your PC Now",
+          "publisher": "PCMag",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmoZbZyTxKqtn9cKvt3zJcGua-tJxzKwvfgHy8sKug8RHHXezjWKEA8vyi0o"
+        }
+      ]
+    },
+    {
+      "query": "liv morgan",
       "approx_searches": "500+",
+      "published_at": "2026-11-24T16:10:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/hooters-the-movie-sets-cast-1237232108/",
+        "https://www.foxnews.com/outkick-sports/wwe-star-uniquely-suited-role-hooters-movie",
+        "https://www.yahoo.com/entertainment/movies/articles/wwe-liv-morgan-returns-old-112003038.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Q5cdzm-GERq64cn8YICNQNpX3-nK42TsPJIT6MfhmMbHvJD0DcNInBtfsV8",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/hooters-the-movie-sets-cast-1237232108/",
+          "title": "‘Hooters: The Movie’ Sets Owen Patrick Joyner, Kyle Clark & Audrey Trullinger",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Q5cdzm-GERq64cn8YICNQNpX3-nK42TsPJIT6MfhmMbHvJD0DcNInBtfsV8"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/wwe-star-uniquely-suited-role-hooters-movie",
+          "title": "WWE star uniquely suited for role in 'Hooters: The Movie'",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFgOXJNsd-UHzgzqgxvDcYLtM-J6Gk9i74fjLwTJKOOgTWm_OFABxlJGtDpbs"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/wwe-liv-morgan-returns-old-112003038.html",
+          "title": "WWE’s Liv Morgan returns to old job in Hooters: The Movie",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSva__vQW8jFzvINyKKvTe3UvqkddPxxVYCB4-ALoeJlb3qZQjPi6qWgBqJ5PU"
+        }
+      ]
+    },
+    {
+      "query": "michael king",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T16:10:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-19",
+        "https://sports.yahoo.com/articles/mets-reportedly-interested-3-23-144250828.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-have-interest-in-jazz-chisholm-jr"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROW9vRyVMuKXUMGMSWXVw8NV-e2RFcQlW91lbMBfQTH__dYofGSS5-rHzkC2E",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-19",
+          "title": "Hot Stove Rumors: Lowe, Skubal, Cubs, Sato, Mariners, Mets, Bubic",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROW9vRyVMuKXUMGMSWXVw8NV-e2RFcQlW91lbMBfQTH__dYofGSS5-rHzkC2E"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mets-reportedly-interested-3-23-144250828.html",
+          "title": "Mets Reportedly Interested In 3.23 ERA Starting Pitcher After Signing Tarik Skubal",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnVhcCQBcaF0l1lnPjB6djVmBFRLkA5PgJwDfJtaabTNtMsVQ-GDn4Ev_WVRs"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-have-interest-in-jazz-chisholm-jr",
+          "title": "Report: Mets have interest in Jazz Chisholm Jr.",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqk0N3aO_3rJtDjFGgsho320yZcubfOU7Is1-F9n8_GnsZK47KtdpbeXey2iw"
+        }
+      ]
+    },
+    {
+      "query": "ohio basketball",
+      "approx_searches": "1000+",
       "published_at": "2026-11-24T16:00:00Z",
       "related_news_urls": [
         "https://ohiobobcats.com/news/2026/11/23/ohio-mens-basketball-set-to-take-on-new-mexico-state-rice-at-2026-scout-jacksonville-classic",
@@ -42,37 +252,72 @@
       ]
     },
     {
-      "query": "ai safety",
+      "query": "aldi festive holiday merchandise release",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T15:50:00Z",
+      "published_at": "2026-11-24T16:00:00Z",
       "related_news_urls": [
-        "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
-        "https://www.forbes.com/sites/zacharyfolk/2026/11/24/anthropic-stock-falls-below-83-per-share-ipo-price/",
-        "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668"
+        "https://www.allrecipes.com/aldi-bogg-bag-copycat-12267395",
+        "https://shopping.yahoo.com/style/accessories/articles/aldis-cute-15-haul-bags-182208834.html",
+        "https://www.homesandgardens.com/decor/seasonal/aldi-merry-moments-holiday-paper-trees"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnL3aGFrulX2pfAy70Sq_rE6cnEXWlgw_eAPU_jd9Ym5kkfJfcYNqAco90gaQ",
-      "image_credit": "Axios",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh0ZH3Ilz-374NXTU0bNLSl2apmzKy82lNEhUs3b9N--mVAr2lhYX_z0xhbbk",
+      "image_credit": "Allrecipes",
       "news": [
         {
-          "url": "https://www.axios.com/2026/11/24/anthropic-openai-unreleased-ai-safety-risks",
-          "title": "Scoop: Anthropic and OpenAI employees fear unreleased AI models are too unsafe to release",
-          "publisher": "Axios",
+          "url": "https://www.allrecipes.com/aldi-bogg-bag-copycat-12267395",
+          "title": "Aldi’s New Holiday Copycat Looks Straight Out of a High-End Store",
+          "publisher": "Allrecipes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnL3aGFrulX2pfAy70Sq_rE6cnEXWlgw_eAPU_jd9Ym5kkfJfcYNqAco90gaQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh0ZH3Ilz-374NXTU0bNLSl2apmzKy82lNEhUs3b9N--mVAr2lhYX_z0xhbbk"
         },
         {
-          "url": "https://www.forbes.com/sites/zacharyfolk/2026/11/24/anthropic-stock-falls-below-83-per-share-ipo-price/",
-          "title": "Anthropic Stock Falls Below $83 Per Share IPO Price",
-          "publisher": "Forbes",
+          "url": "https://shopping.yahoo.com/style/accessories/articles/aldis-cute-15-haul-bags-182208834.html",
+          "title": "Aldi's Cute New $15 'Haul It All' Bags Look Just Like a Designer Brand 4x the Price",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwEU2nEhxmVFwijbFESIfMpDwZHLvwcqci9862YGNYRvs1t68wx9Tg35k1law"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPOZ46an4LdrtKijOaGZBcOV5_PuGS766l0PVpwfesoD9MrpeNu_8OlMIHFpg"
         },
         {
-          "url": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668",
-          "title": "Anthropic’s stock just broke below its IPO price for the first time",
-          "publisher": "MarketWatch",
+          "url": "https://www.homesandgardens.com/decor/seasonal/aldi-merry-moments-holiday-paper-trees",
+          "title": "ALDI Just Brought Back a Nostalgic Victorian Christmas Trend for Under $7 – and It’s Guaranteed to Sell Out Fast",
+          "publisher": "Homes and Gardens",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhrxwJEFhN3WSC1hhkf8KvBt5De_hMQNh4oOSjlSXJjVEG_HGNEU9_WE4hup0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsPPtI4rtW4FzDzXqJD6RvYopiDXOw67Sz3aZnQAZ4Oh7ELYbD4a-ne9bcBN4"
+        }
+      ]
+    },
+    {
+      "query": "ai safety",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T15:50:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/litigation/amazons-aws-ceo-says-engineering-not-kill-switches-is-path-ai-safety-2026-11-23/",
+        "https://www.pymnts.com/news/artificial-intelligence/2026/aws-ceo-matt-garman-says-ai-models-need-external-boundaries/",
+        "https://www.powermotiontech.com/technologies/artificial-intelligence/article/55417819/expert-commentary-an-ai-controlled-machine-needs-a-brake-outside-its-ai-brain"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4_ZHuoDbbf9jsGtau9Lq_ZlkcZV7wGUNXy500PTUat3GCMBMNGriLJpZ4oqk",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/litigation/amazons-aws-ceo-says-engineering-not-kill-switches-is-path-ai-safety-2026-11-23/",
+          "title": "Amazon’s AWS CEO says engineering, not kill switches, is path to AI safety",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4_ZHuoDbbf9jsGtau9Lq_ZlkcZV7wGUNXy500PTUat3GCMBMNGriLJpZ4oqk"
+        },
+        {
+          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/aws-ceo-matt-garman-says-ai-models-need-external-boundaries/",
+          "title": "AWS CEO Matt Garman Says AI Models Need External Boundaries",
+          "publisher": "PYMNTS.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EjrS6MezjiGvRsBayDg4NHiin1kZH3FZYs3JQGg2D4jaqlYt9If1vlRS4Kk"
+        },
+        {
+          "url": "https://www.powermotiontech.com/technologies/artificial-intelligence/article/55417819/expert-commentary-an-ai-controlled-machine-needs-a-brake-outside-its-ai-brain",
+          "title": "Expert Commentary: An AI-Controlled Machine Needs a Brake Outside its AI Brain",
+          "publisher": "www.powermotiontech.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLZH8_cDNGlIuXSzf6VAqubAVw0Gegk90bsvUZRrzwFvm4hLI4PUx1wu0C5kA"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "صوت الإمارات",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpYvPWZ3opDM_2e8zlTk2R6IEBll7qfu5Xr8i1IeOQWPWAwElPmN6ACVGXZLM"
-        }
-      ]
-    },
-    {
-      "query": "freddy peralta",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T15:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50583512/sources-freddy-peralta-orioles-5-years-125-million",
-        "https://www.mlb.com/orioles/video/report-freddy-peralta-agrees-to-deal-with-orioles",
-        "https://www.cbssports.com/mlb/news/freddy-peralta-orioles-free-agency-contract/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaBgkpoT4ZfO8XC3BG2imB-59Pbw8hZkRwlWLcgof4tFkvLldR6sIkMLuzm1M",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50583512/sources-freddy-peralta-orioles-5-years-125-million",
-          "title": "Sources: Freddy Peralta stays in AL East, gets $125M deal to top Orioles rotation",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQaBgkpoT4ZfO8XC3BG2imB-59Pbw8hZkRwlWLcgof4tFkvLldR6sIkMLuzm1M"
-        },
-        {
-          "url": "https://www.mlb.com/orioles/video/report-freddy-peralta-agrees-to-deal-with-orioles",
-          "title": "Report: Freddy Peralta agrees to deal with Orioles",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV0HIAWpkhuDWoLjJ5OAbjO1n7A4hbQOgzDcoPREnfrkGYDe1mvKA1x15MspI"
-        },
-        {
-          "url": "https://www.cbssports.com/mlb/news/freddy-peralta-orioles-free-agency-contract/",
-          "title": "Freddy Peralta lands with Orioles: After post-trade turnaround, ALCS MVP scores five-year, $125 million deal",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjbrG_GmMIPe9etRFf5jgpz5YAprWmkSY5uqc88le1FoK0RBYiy4yQjZGHIGY"
-        }
-      ]
-    },
-    {
-      "query": "kris bubic",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T15:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50583426/sources-guardians-lefty-kris-bubic-agree-one-year-deal",
-        "https://www.mlb.com/video/kris-bubic-reportedly-signs-with-guardians",
-        "https://sports.yahoo.com/articles/report-kris-bubic-agrees-deal-155912595.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqrMS65b56N_hLcTHd3ZfnW517f_rMyEigc9aTQdPI9LeDbD-EPzE7ThgzxZY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mlb/story/_/id/50583426/sources-guardians-lefty-kris-bubic-agree-one-year-deal",
-          "title": "Sources: Guardians, lefty Kris Bubic agree to one-year, $17.5M deal",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSqrMS65b56N_hLcTHd3ZfnW517f_rMyEigc9aTQdPI9LeDbD-EPzE7ThgzxZY"
-        },
-        {
-          "url": "https://www.mlb.com/video/kris-bubic-reportedly-signs-with-guardians",
-          "title": "Kris Bubic reportedly signs with Guardians",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS1tfiQ0NCD38ZqtgZ95fCDKUScDSbVXvibStxEjLeNdDGKhtcr-5RG9cDMwo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/report-kris-bubic-agrees-deal-155912595.html",
-          "title": "Report: Kris Bubic Agrees to Deal With Detroit Tigers Division Rival",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVfS6mHtK7HyWrN19jctHDjFKlf6GLBLcQ4q9YrjKYEHCJ0LXc5hpsDUZX9FQ"
-        }
-      ]
-    },
-    {
-      "query": "ian happ",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T15:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/potential-free-agent-target-ian-154016379.html",
-        "https://roundtable.io/sports/mlb/twins/players/twins-could-turn-to-cubs-veteran-to-address-one-of-their-biggest-roster-concerns",
-        "https://demokratis.co.id/en/royals-target-ian-happ-outfield"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/potential-free-agent-target-ian-154016379.html",
-          "title": "Potential free agent target: Ian Happ",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s"
-        },
-        {
-          "url": "https://roundtable.io/sports/mlb/twins/players/twins-could-turn-to-cubs-veteran-to-address-one-of-their-biggest-roster-concerns",
-          "title": "Twins Could Turn to Cubs Veteran to Address One of Their Biggest Roster Concerns",
-          "publisher": "roundtable.io",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6LbuCju-LXwwggVTER6Tk6jH5_13HdDl7ROzzlKL7NDaPJF8BZDP1pfV_QAw"
-        },
-        {
-          "url": "https://demokratis.co.id/en/royals-target-ian-happ-outfield",
-          "title": "Royals Consider Ian Happ to Strengthen Left Field",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSgnDjLSC_sYoZPjcuI3MG0VUV-VQrId2VDGT0wLqWqAKEpZo_dzzQLcoI5os"
-        }
-      ]
-    },
-    {
-      "query": "s&p 500 index",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T15:40:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-24/market-timers-get-schooled-as-s-p-500-swings-rip-up-playbooks",
-        "https://finance.yahoo.com/markets/stocks/articles/stock-market-just-entered-correction-082002220.html",
-        "https://www.fool.com/investing/2026/11/23/if-a-stock-market-crash-is-coming-warren-buffett-says-this-is-the-best-move-investors-should-make/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFrCtQrhY85KxTey3OIt3-KOn9zI7WG9L-jYtjf0rKqP-LhVNgEW7Ffaak6pc",
-      "image_credit": "Bloomberg",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/market-timers-get-schooled-as-s-p-500-swings-rip-up-playbooks",
-          "title": "Market Timers Get Schooled as S&P 500 Swings Rip Up Playbooks",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFrCtQrhY85KxTey3OIt3-KOn9zI7WG9L-jYtjf0rKqP-LhVNgEW7Ffaak6pc"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-just-entered-correction-082002220.html",
-          "title": "The Stock Market Just Entered a Correction. History Says Investors Who Make This 1 Move Right Now Will Win Out.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQteIYVIbLR1zmnckbJTtiG6W2_H-EztL2tbyFzFikJKvuowYVlXXS6mjn_lXA"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/23/if-a-stock-market-crash-is-coming-warren-buffett-says-this-is-the-best-move-investors-should-make/",
-          "title": "If a Stock Market Crash Is Coming, Warren Buffett Says This Is the Best Move Investors Should Make",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJHeDzR11kwI_ZbtyEejBVxbQS6H0kX6jW1DbKv9IKgmwMth_W8MEVN3nQYX0"
-        }
-      ]
-    },
-    {
-      "query": "jonbenet ramsey",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T15:30:00Z",
-      "related_news_urls": [
-        "https://www.hollywoodreporter.com/tv/tv-news/netflix-the-murder-of-jonbenet-ramsey-trailer-mccarthy-owen-1236762125/",
-        "https://www.yahoo.com/entertainment/movies/trailers/articles/watch-melissa-mccarthy-clive-owen-154132011.html",
-        "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1VwvYySKfETkP1a2DM20nehSMi0QQFjHUj-cixD1W62qBfJ1pW8pOCylroOU",
-      "image_credit": "The Hollywood Reporter",
-      "news": [
-        {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/netflix-the-murder-of-jonbenet-ramsey-trailer-mccarthy-owen-1236762125/",
-          "title": "Netflix’s ‘The Murder of JonBenét Ramsey’ Haunting Trailer Shines Spotlight on Melissa McCarthy and Clive Owen",
-          "publisher": "The Hollywood Reporter",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1VwvYySKfETkP1a2DM20nehSMi0QQFjHUj-cixD1W62qBfJ1pW8pOCylroOU"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/trailers/articles/watch-melissa-mccarthy-clive-owen-154132011.html",
-          "title": "Watch: Melissa McCarthy, Clive Owen star in JonBenet Ramsey series",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXZYW6sgC6ik0H6G8lfsqoZtk0I5Q-0m8mS0E0wY3KrC9HQUcJQ9l6Mbx17cI"
-        },
-        {
-          "url": "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/",
-          "title": "‘The Murder of JonBenét Ramsey’ Trailer: Netflix’s True Crime Series Stars Melissa McCarthy, Clive Owen",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4CqnVs5R0q_nMLzsRqiodtjzNf7eATOuh7OAF7HQNaapzLJcmgiGJ5iR-Cbc"
-        }
-      ]
-    },
-    {
-      "query": "pakistan a vs nepal national cricket team standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T15:30:00Z",
-      "related_news_urls": [
-        "https://www.geo.tv/latest/692495-pakistan-shaheens-crush-nepal-to-maintain-unbeaten-run-in-rising-stars-asia-cup",
-        "https://tribune.com.pk/story/2642108/shaheens-crush-nepal-to-stay-unbeaten-in-asia-cup-rising-stars",
-        "https://dunyanews.tv/en/Sports/984657-rising-stars-asia-cup-pakistan-shaheens-elect-to-bat-first-against-ne"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpKY_LKBRQzMu6l8XvELL8umDNfflvRCkpdW1kf_rXPiwvIv9Ua9PUh0uYJUA",
-      "image_credit": "Geo News",
-      "news": [
-        {
-          "url": "https://www.geo.tv/latest/692495-pakistan-shaheens-crush-nepal-to-maintain-unbeaten-run-in-rising-stars-asia-cup",
-          "title": "Pakistan Shaheens crush Nepal to maintain unbeaten run in Rising Stars Asia Cup",
-          "publisher": "Geo News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpKY_LKBRQzMu6l8XvELL8umDNfflvRCkpdW1kf_rXPiwvIv9Ua9PUh0uYJUA"
-        },
-        {
-          "url": "https://tribune.com.pk/story/2642108/shaheens-crush-nepal-to-stay-unbeaten-in-asia-cup-rising-stars",
-          "title": "Shaheens crush Nepal to stay unbeaten in Asia Cup Rising Stars",
-          "publisher": "The Express Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPGxpCozWPY8IO6hD2TuFWtwd4LhX-iyKvFGFt2Ma2AqLQMG34-j-RER4CIUk"
-        },
-        {
-          "url": "https://dunyanews.tv/en/Sports/984657-rising-stars-asia-cup-pakistan-shaheens-elect-to-bat-first-against-ne",
-          "title": "Rising Stars Asia Cup: Pakistan Shaheens elect to bat first against Nepal",
-          "publisher": "Dunya News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrHEWylEetPQuXtGtwp_GTKjnurm05vN_xBi2Yf7gIUQ7tU--BG5kmfKJdv84"
-        }
-      ]
-    },
-    {
-      "query": "rudy giuliani",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T15:20:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/story/trump-will-give-medal-freedom-giuliani-fierce-political-ally-led-new-york-911/20074751/",
-        "https://www.forbes.com/sites/saradorn/2026/11/24/trump-awarding-rudy-giuliani-medal-of-freedom-today/",
-        "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3OwKgqNeOtZ6gkadxw3CkRDKs9--0yhFQSwUvJN-mRIcf2YaIwGO0FL-shE",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/story/trump-will-give-medal-freedom-giuliani-fierce-political-ally-led-new-york-911/20074751/",
-          "title": "Trump will give Medal of Freedom to Giuliani, a fierce political ally who led New York through 9/11",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQ3OwKgqNeOtZ6gkadxw3CkRDKs9--0yhFQSwUvJN-mRIcf2YaIwGO0FL-shE"
-        },
-        {
-          "url": "https://www.forbes.com/sites/saradorn/2026/11/24/trump-awarding-rudy-giuliani-medal-of-freedom-today/",
-          "title": "Rudy Giuliani Says He’s Receiving Medal Of Freedom From Trump Today",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLgsN9_OFbNv1inuPwxw8UAo8TCZvK1RHn7ph2KhQCbUw6oTDk8zFagBUVvXY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/",
-          "title": "Trump to award Rudy Giuliani, former NY mayor, Medal of Freedom",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZUbc6usz-0URU7vBXddViasfsVYHUshCqEDEDcXAEo1o446OvijyTOnU0o2M"
         }
       ]
     }
