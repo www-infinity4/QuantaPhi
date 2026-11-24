@@ -3,27 +3,264 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T18:31:26.007283Z",
+  "checked_at": "2026-11-24T19:01:19.129760Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "trinity rodman",
+      "query": "pittsburgh vs oklahoma",
       "approx_searches": "1000+",
+      "published_at": "2026-11-24T18:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/pitt-vs-oklahoma-prediction-pick-100044915.html",
+        "https://247sports.com/college/pittsburgh/article/pitt-panthers-oklahoma-sooners-preview-fort-myers-tip-off-jeff-capel-baye-ndongo-293242611/",
+        "https://bvmsports.com/2026/11/22/sooners-travel-to-florida-to-play-pitt-in-skechers-fort-myers-tip-off/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCuMW-vR8GXeI0oZGjFlzvmahGqQRhDtjRzzgRgWu8HkBjyoe__M3IWj2zxKU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/pitt-vs-oklahoma-prediction-pick-100044915.html",
+          "title": "Pitt vs Oklahoma Prediction, Pick, College Basketball Odds for Tuesday, Nov. 24",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCuMW-vR8GXeI0oZGjFlzvmahGqQRhDtjRzzgRgWu8HkBjyoe__M3IWj2zxKU"
+        },
+        {
+          "url": "https://247sports.com/college/pittsburgh/article/pitt-panthers-oklahoma-sooners-preview-fort-myers-tip-off-jeff-capel-baye-ndongo-293242611/",
+          "title": "Matchup Preview: Pitt battles Oklahoma in Fort Myers Tip-Off",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3UKmCRubWbz1yxvEmhsqwnhuYxtTR7rSL8Q3qcPji21qGJPX0s1puKu0MFY"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/22/sooners-travel-to-florida-to-play-pitt-in-skechers-fort-myers-tip-off/",
+          "title": "Sooners Travel to Florida to Play Pitt in Skechers Fort Myers Tip-Off",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmofk4WKEZrEAmDX_1ZYMTtdXT7fnChFyVtb81zX0mSk05VCx7iqkZONY5410"
+        }
+      ]
+    },
+    {
+      "query": "fantasypros",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T18:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/football/story/_/id/50572304/fantasy-football-waiver-wire-pickups-week-12",
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-rb-blueprint-for-week-12-174102250.html",
+        "https://www.nytimes.com/athletic/7807012/2026/11/24/fantasy-football-waiver-wire-week-12-upside-pickups-for-the-playoffs-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyBxs6_oEypGx_89xQ4Jk23O1MELMsRnjbxPdQGavFzxWMl1k9cvKBe57qxKs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/football/story/_/id/50572304/fantasy-football-waiver-wire-pickups-week-12",
+          "title": "Live Q&A: Week 12 fantasy football waiver wire pickups",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyBxs6_oEypGx_89xQ4Jk23O1MELMsRnjbxPdQGavFzxWMl1k9cvKBe57qxKs"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-rb-blueprint-for-week-12-174102250.html",
+          "title": "Fantasy Football Rankings: Hayden Winks' RB Blueprint for Week 12",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIjCXZeZIb_0HxyqIZPvjT_8vg4AArlgD5_wo3qQua-noifLzDGkNk-OdFm_4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7807012/2026/11/24/fantasy-football-waiver-wire-week-12-upside-pickups-for-the-playoffs-and-more/",
+          "title": "Fantasy football waiver wire Week 12: Upside pickups for the playoffs and more",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIbh6Jpv0nuRZ7EO8yrfZQGNyTPWj12bRK-A_2uYnlWJ77tu0Tj090DaJTdXw"
+        }
+      ]
+    },
+    {
+      "query": "state of leonida",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T18:30:00Z",
+      "related_news_urls": [
+        "https://www.pcguide.com/news/gta-6-interactive-map-already-has-more-than-6800-points-of-interest-as-fans-discover-leonida/",
+        "https://wnhub.io/news/other/item-52771"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBERk7q5tKgWQS9hk2RrtABf3N9e3mrNUiFfs8UDH56lzB0ibv3qa2K3zyoOg",
+      "image_credit": "PC Guide",
+      "news": [
+        {
+          "url": "https://www.pcguide.com/news/gta-6-interactive-map-already-has-more-than-6800-points-of-interest-as-fans-discover-leonida/",
+          "title": "GTA 6 interactive map already has more than 6,800 points of interest as fans discover Leonida",
+          "publisher": "PC Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBERk7q5tKgWQS9hk2RrtABf3N9e3mrNUiFfs8UDH56lzB0ibv3qa2K3zyoOg"
+        },
+        {
+          "url": "https://wnhub.io/news/other/item-52771",
+          "title": "IGN has teamed up with Rockstar to present the Official Strategy Guide for GTA 6",
+          "publisher": "WN Hub",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA"
+        }
+      ]
+    },
+    {
+      "query": "stock",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T18:20:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-24-2026",
+        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBPPmIwG1RM3SbCvv6Ls5xmHmtnQxDTEpo89UfVL5LKAGETPukEFDTob56Kdg",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+          "title": "Nvidia live updates: Nvidia stock falls as exuberance fades after Jensen Huang's return as CEO",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBPPmIwG1RM3SbCvv6Ls5xmHmtnQxDTEpo89UfVL5LKAGETPukEFDTob56Kdg"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-24-2026",
+          "title": "Stock Market Today: Tech Stocks Slide Back After Epic Rally",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
+        }
+      ]
+    },
+    {
+      "query": "notre dame vs davidson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T18:20:00Z",
+      "related_news_urls": [
+        "https://fightingirish.com/news/2026/11/23/no-13-notre-dame-davidson-meet-at-battle-4-atlantis",
+        "https://www.nytimes.com/athletic/7808534/2026/11/24/notre-dame-vs-davidson-stream-how-to-watch-nov-24/",
+        "https://www.ndsmcobserver.com/article/notre-dame-womens-basketball-gears-up-for-the-battle-4-atlantis-20261124"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdtG7gUDUkjhMKiQzlYDD30d_nf4r4QrkZ9kw-nHUhmrsSTmFu3G3OCLOHn-M",
+      "image_credit": "Notre Dame Fighting Irish",
+      "news": [
+        {
+          "url": "https://fightingirish.com/news/2026/11/23/no-13-notre-dame-davidson-meet-at-battle-4-atlantis",
+          "title": "No 13 Notre Dame, Davidson Meet At Battle 4 Atlantis",
+          "publisher": "Notre Dame Fighting Irish",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdtG7gUDUkjhMKiQzlYDD30d_nf4r4QrkZ9kw-nHUhmrsSTmFu3G3OCLOHn-M"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7808534/2026/11/24/notre-dame-vs-davidson-stream-how-to-watch-nov-24/",
+          "title": "How to watch Notre Dame vs. Davidson women’s basketball: TV channel and streaming options for November 24",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uZe8FzbcbdF9BeuoE8pVl8DjdLeM3sUS3yBQMyEAn3EgauG4UNqFrJPptC4"
+        },
+        {
+          "url": "https://www.ndsmcobserver.com/article/notre-dame-womens-basketball-gears-up-for-the-battle-4-atlantis-20261124",
+          "title": "Notre Dame women’s basketball gears up for the Battle 4 Atlantis",
+          "publisher": "Observer Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZuMNzq2bPak3zpBK9Fb1G5LRZ3xFHHBuwklrXcHDE2SsAlcba23ri7gnNVW4"
+        }
+      ]
+    },
+    {
+      "query": "jack ruby",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T18:20:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/nation/2026/11/24/lee-harvey-oswald-killed-by-jack-ruby-live-tv-after-kennedy-assassination/",
+        "https://www.nola.com/entertainment_life/jada-confronto-biography/article_91c694d5-f6db-4d35-b39d-b17f2217f6ca.html",
+        "https://people.com/inside-jack-ruby-life-after-lee-harvey-oswald-murder-12195205"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA5Hk6JGv-jPw-KS9lEbb0y_lmpT8djjC2pritaeAnyo2fDPN_RCn3KSEi6U",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/nation/2026/11/24/lee-harvey-oswald-killed-by-jack-ruby-live-tv-after-kennedy-assassination/",
+          "title": "Two days after JFK assassination, live TV audience witnesses another killing",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA5Hk6JGv-jPw-KS9lEbb0y_lmpT8djjC2pritaeAnyo2fDPN_RCn3KSEi6U"
+        },
+        {
+          "url": "https://www.nola.com/entertainment_life/jada-confronto-biography/article_91c694d5-f6db-4d35-b39d-b17f2217f6ca.html",
+          "title": "Meet the Bourbon Street burlesque dancer tied to assassinations of JFK, Lee Harvey Oswald",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMMl01trCSJhRipGY_SWIJ7VtT-9WdrYFH7UoTROv6YrJRa0Y24Xaj3dMj2x8"
+        },
+        {
+          "url": "https://people.com/inside-jack-ruby-life-after-lee-harvey-oswald-murder-12195205",
+          "title": "What Happened to Jack Ruby After He Killed Lee Harvey Oswald on Live TV?",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFZQH9oso_D-oUnjW1NFvQITi8RtNiMUGwVLJpIbSP4vlMPFBiE2J6s3DGqd8"
+        }
+      ]
+    },
+    {
+      "query": "ha seong kim",
+      "approx_searches": "2000+",
       "published_at": "2026-11-24T18:10:00Z",
       "related_news_urls": [
-        "https://www.dailymail.com/sport/tennis/article-16318175/ben-shelton-trinity-rodman-split.html",
+        "https://www.mlb.com/news/ha-seong-kim-tigers-contract",
+        "https://www.freep.com/story/sports/mlb/tigers/2026/11/24/detroit-tigers-infielder-ha-seong-kim/92945065007/",
+        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-ha-seong-kim.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWUs0PP5I1LPUUUe6lupe4QJPSHRnjlRoUxAYR9MVd4F_1l5RoBWpJsCcsV6Y",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/ha-seong-kim-tigers-contract",
+          "title": "Tigers agree to 1-year deal with versatile infielder Kim (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWUs0PP5I1LPUUUe6lupe4QJPSHRnjlRoUxAYR9MVd4F_1l5RoBWpJsCcsV6Y"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/mlb/tigers/2026/11/24/detroit-tigers-infielder-ha-seong-kim/92945065007/",
+          "title": "Detroit Tigers signing infielder Ha-Seong Kim: Report",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3AhHFrWNS32Wb0SXRnSfs2r1QsgWp6scJJw8wA_pp6-nZatEgSB-r293CL5w"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-ha-seong-kim.html",
+          "title": "Tigers To Sign Ha-Seong Kim",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzsgrO8F3r8P7kNIzSqJtWyNBQOA7ZO_EIn8XaqgcYnCTd2m0ODaIESq9Wr_M"
+        }
+      ]
+    },
+    {
+      "query": "trinity rodman",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T18:10:00Z",
+      "related_news_urls": [
+        "https://people.com/ben-shelton-and-trinity-rodman-split-after-two-years-together-12277220",
         "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
         "https://extratv.com/2026/11/24/ben-shelton-and-trinity-rodman-split-report/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2of_gMUgTElepwo8DFlBt6MBOgD9_dnfhX-8OR47T3Q6FRp-cJovO49ahmOM",
-      "image_credit": "Daily Mail",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvyetVw3amDt73cUIowdlnTRz5NaU_MKyAUHnJVmStQfbPz6iVvDQSpEctJaQ",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.dailymail.com/sport/tennis/article-16318175/ben-shelton-trinity-rodman-split.html",
-          "title": "Ben Shelton and Trinity Rodman SPLIT: Sports' biggest power couple call time on romance after two years",
-          "publisher": "Daily Mail",
+          "url": "https://people.com/ben-shelton-and-trinity-rodman-split-after-two-years-together-12277220",
+          "title": "Ben Shelton and Trinity Rodman Split After Nearly Two Years Together: Report",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2of_gMUgTElepwo8DFlBt6MBOgD9_dnfhX-8OR47T3Q6FRp-cJovO49ahmOM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvyetVw3amDt73cUIowdlnTRz5NaU_MKyAUHnJVmStQfbPz6iVvDQSpEctJaQ"
         },
         {
           "url": "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
@@ -42,37 +279,37 @@
       ]
     },
     {
-      "query": "ha seong kim",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T18:10:00Z",
+      "query": "retriever",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T18:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/braves-gold-glover-mauricio-dubon-120000728.html",
-        "https://fansided.com/mlb/mlb-insider-free-agent-mauricio-dubon-still-drawing-rave-reviews-from-former-manager",
-        "https://housethathankbuilt.com/previous-lockout-showed-braves-move-with-urgency-re-sign-mauricio-dubon"
+        "https://people.com/golden-retriever-caught-on-camera-leaping-into-pool-to-save-drowning-toddler-12276754",
+        "https://www.news.com.au/lifestyle/hero-golden-retriever-saves-drowning-twoyearold-toddler-after-leaping-into-backyard-pool/news-story/220da3651b256731cf92f7adc902039b",
+        "https://en.haberler.com/this-dog-is-a-hero-now-he-pulled-him-back-from-2343827/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpaGNGMH-bcHFWd2Rt_vMFQ8opjpNnitaVezwNHmsf4HWwwGPOpYJaarmkgo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1NOd1uUg7s1rknAImhln9Gg3RoemENPiVkIme6h5DAmd4vpn-pnzFMGOzSQk",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/braves-gold-glover-mauricio-dubon-120000728.html",
-          "title": "Braves Gold Glover Mauricio Dubon Praised By Former Skipper After Exit",
-          "publisher": "Yahoo Sports",
+          "url": "https://people.com/golden-retriever-caught-on-camera-leaping-into-pool-to-save-drowning-toddler-12276754",
+          "title": "Golden Retriever Caught on Camera Leaping into Pool to Save Drowning Toddler",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpaGNGMH-bcHFWd2Rt_vMFQ8opjpNnitaVezwNHmsf4HWwwGPOpYJaarmkgo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1NOd1uUg7s1rknAImhln9Gg3RoemENPiVkIme6h5DAmd4vpn-pnzFMGOzSQk"
         },
         {
-          "url": "https://fansided.com/mlb/mlb-insider-free-agent-mauricio-dubon-still-drawing-rave-reviews-from-former-manager",
-          "title": "MLB Insider: Free agent Mauricio Dubon still drawing rave reviews from former manager",
-          "publisher": "FanSided",
+          "url": "https://www.news.com.au/lifestyle/hero-golden-retriever-saves-drowning-twoyearold-toddler-after-leaping-into-backyard-pool/news-story/220da3651b256731cf92f7adc902039b",
+          "title": "Hero dog saves toddler from drowning",
+          "publisher": "News.com.au",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcH_Uf-6DPDNKUmYI4P1mYkOd56HIWXbenSgIlEo-Ew1QaVnJRvIai59fnyXg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qwruRspkTqQ5rgWBSjqaWkiPfr3S-lJDHMoVWkmJH-Fld5v7BWZZRyNRJSM"
         },
         {
-          "url": "https://housethathankbuilt.com/previous-lockout-showed-braves-move-with-urgency-re-sign-mauricio-dubon",
-          "title": "Previous lockout showed Braves must move with urgency to re-sign Mauricio Dubon",
-          "publisher": "House That Hank Built",
+          "url": "https://en.haberler.com/this-dog-is-a-hero-now-he-pulled-him-back-from-2343827/",
+          "title": "This dog is a hero now! He pulled him back from death.",
+          "publisher": "Haberler.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWOwE51Hkw0cyFPeiCvsLxlgkrNtFd54qpJeDSzlggC0jZw66mRSFpSoXEvaA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYn81s4VduQkJC1puzM_ERWUZ0vsgLYIoixtOnyGSvA8YBe8RICBPHOWOjJaE"
         }
       ]
     },
@@ -108,235 +345,6 @@
           "publisher": "The Independent",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcWrXqyKL3eLmMCIqgWAP_DOEiqC6qzmE5p3D-kyFaqpYl2yjudKVgigQh4UA"
-        }
-      ]
-    },
-    {
-      "query": "jalen hurts",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T17:50:00Z",
-      "related_news_urls": [
-        "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
-        "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-update-super-bowl-mvp-qb-team-facility-good-spirits/",
-        "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/22/jalen-hurts-injury-update-eagles/92912332007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA",
-      "image_credit": "WHYY",
-      "news": [
-        {
-          "url": "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
-          "title": "NFL tells Delaware U.S. senator that experts will review Philly QB Jalen Hurts’ care for blood clots",
-          "publisher": "WHYY",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-update-super-bowl-mvp-qb-team-facility-good-spirits/",
-          "title": "Eagles' Jalen Hurts update: Super Bowl MVP QB has been in team facility, 'in good spirits'",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMivrKUjpY4l9pIXTJOzJ3qBkEiadlN2kOTCdm1eDlwXT1zFtlwk3V7mL7Ehg"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/22/jalen-hurts-injury-update-eagles/92912332007/",
-          "title": "How long is Jalen Hurts out? Injury update as Eagles QB recovers from blood clots",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl6_Cxl3V2IFbcGRbVhnAvOj5P-u_BS37JEvS0qf8TG42607TJo0pwoigOJLc"
-        }
-      ]
-    },
-    {
-      "query": "natalie portman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T17:50:00Z",
-      "related_news_urls": [
-        "https://www.instyle.com/natalie-portman-oprah-winter-loungewear-12274768"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDM2IUPN14mSWXW8B18xT2pPZTGK9G1zkwu6VTW3y_0j2tDwfP9L8EOfKy44",
-      "image_credit": "InStyle",
-      "news": [
-        {
-          "url": "https://www.instyle.com/natalie-portman-oprah-winter-loungewear-12274768",
-          "title": "Oprah and Natalie Portman Saved My Chilly Morning Walks—Shop Cozy, Elevated Finds They’d Totally Wear",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDM2IUPN14mSWXW8B18xT2pPZTGK9G1zkwu6VTW3y_0j2tDwfP9L8EOfKy44"
-        }
-      ]
-    },
-    {
-      "query": "victoria broderick",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T17:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
-        "https://newschannel9.com/news/local/victoria-broderick-officially-wins-tennessees-4th-congressional-district-per-ap",
-        "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerVn5yoky-owJ5GKiY2fTcMX_6BwDsdD4eNq7TrPZ5Oi-yDAmYIXpcVMNv4s",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
-          "title": "Win in Tennessee Gives Democrats Largest House Majority in 3 Decades",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerVn5yoky-owJ5GKiY2fTcMX_6BwDsdD4eNq7TrPZ5Oi-yDAmYIXpcVMNv4s"
-        },
-        {
-          "url": "https://newschannel9.com/news/local/victoria-broderick-officially-wins-tennessees-4th-congressional-district-per-ap",
-          "title": "Victoria Broderick officially wins Tennessee’s 4th Congressional District, per AP",
-          "publisher": "WTVC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDdllglSUrGrjeEvdg8Nz0Ehh9N59v01amG8Nwa6P3sxS-Z8_QtLOJ5kd_dA"
-        },
-        {
-          "url": "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/",
-          "title": "DesJarlais concedes Tennessee 4th Congressional District to Democrat Victoria Broderick",
-          "publisher": "Tennessee Lookout",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGQt0JcXuAVXrPcYqpKDKpo-MxBxt1i6mDf1s_T8prO4unBofYdtLxJoYPkY"
-        }
-      ]
-    },
-    {
-      "query": "donte divincenzo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T17:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
-        "https://sports.yahoo.com/articles/minnesota-timberwolves-guard-donte-divincenzo-174358919.html",
-        "https://bleacherreport.com/articles/25537296-donte-divincenzo-injury-update-latest-nba-rumors-reveal-timeline-return-t-wolves-guard"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
-          "title": "Wolves' Donte DiVincenzo cleared for basketball activities",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/minnesota-timberwolves-guard-donte-divincenzo-174358919.html",
-          "title": "Minnesota Timberwolves guard Donte DiVincenzo is …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1nZG2viM7GDuG2SjXOEQ9rtQSGGKfpblKOKwwqIOsN8B_xmfdV2YQeGbnCKg"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537296-donte-divincenzo-injury-update-latest-nba-rumors-reveal-timeline-return-t-wolves-guard",
-          "title": "Donte DiVincenzo Injury Update, Latest NBA Rumors Reveal Timeline to Return for T-Wolves Guard",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAZBrvoYXkcSYdpkP-U915xxFs3fvQSitZL240bc83O_USM8GGM6ETU7qPHo"
-        }
-      ]
-    },
-    {
-      "query": "northern colorado basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T17:40:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/southeastern-louisiana-lions-vs-northern-colorado-bears-prediction-odds-2026-11-24/",
-        "https://lionsports.net/news/2026/11/23/mens-basketball-lions-set-to-face-northern-colorado-in-opening-round-of-cancun-challenge.aspx",
-        "https://knup.com/sports/cbb/predictions/northern-colorado-vs-southeastern-louisiana-prediction-betting-tips-11-24-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/southeastern-louisiana-lions-vs-northern-colorado-bears-prediction-odds-2026-11-24/",
-          "title": "Southeastern Louisiana vs Northern Colorado Prediction, Picks & Odds | 24 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
-        },
-        {
-          "url": "https://lionsports.net/news/2026/11/23/mens-basketball-lions-set-to-face-northern-colorado-in-opening-round-of-cancun-challenge.aspx",
-          "title": "Lions Set to Face Northern Colorado in Opening Round of Cancun Challenge",
-          "publisher": "Southeastern Louisiana University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQaQl8TunK_tHTzS0PCoICTyHPt5rw_TEDiu62sJafvLR_zfViAlFjfFlfXoU"
-        },
-        {
-          "url": "https://knup.com/sports/cbb/predictions/northern-colorado-vs-southeastern-louisiana-prediction-betting-tips-11-24-2026/",
-          "title": "Northern Colorado vs Southeastern Louisiana Prediction on 11/24/2026 - CBB Betting Tips & Pick",
-          "publisher": "Knup.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
-        }
-      ]
-    },
-    {
-      "query": "akron basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T17:30:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/belmont-bruins-vs-akron-zips-prediction-odds-2026-11-24/",
-        "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
-        "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/belmont-bruins-vs-akron-zips-prediction-odds-2026-11-24/",
-          "title": "Belmont vs Akron Prediction, Picks & Odds | 24 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
-          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 24",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/",
-          "title": "Akron vs. Belmont: ESPN Events Invitational Game Preview",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCd2tnGkeRH1VM_6_lPo1oNJk8yGBeuvZ69__TEdRgEUOo8z5GDDqqd6m4bs"
-        }
-      ]
-    },
-    {
-      "query": "belmont basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T17:30:00Z",
-      "related_news_urls": [
-        "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
-        "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
-        "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38fV41CkVxk9tTP7YdFJ2kAUk4qJDNVPAjhOKGTYysxCuAhLzm-Ms4RdgDYc",
-      "image_credit": "Belmont Bruins",
-      "news": [
-        {
-          "url": "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
-          "title": "Kenley McCarn Scores Season-High 25 in Loss at Top-10 Ranked LSU Monday Night",
-          "publisher": "Belmont Bruins",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38fV41CkVxk9tTP7YdFJ2kAUk4qJDNVPAjhOKGTYysxCuAhLzm-Ms4RdgDYc"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
-          "title": "LSU’s Kim Mulkey, Mikaylah Williams and ZaKiyah Johnson after 103-45 rout of Belmont",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ",
-          "title": "Licensable picture: 11 ZaKiyah Johnson, LSU Tigers Womens Basketball take on the Belmont Bruins. November 23, 2026; Baton Rouge, LA; at the Pete",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRZKT9-xaykkqHyDORbJHqWG8y2o00k40uFRm9-H_Hu7GkKpFtIfXEj96VSLM"
         }
       ]
     }
