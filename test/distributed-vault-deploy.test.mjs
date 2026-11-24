@@ -306,3 +306,18 @@ test('owner host check runs actual mesh HTTP and restart roundtrip without produ
  assert.deepEqual(receipt,{ok:true,scope:'local-synthetic-host-check',service:'infinity-mesh-local-v1',anonymousDenied:true,encryptedRoundtrip:true,restartVerified:true,productionVerified:false});
  assert.doesNotMatch(output,/not-a-real-token|production-do-not-use/);
 });
+
+
+test('portable Brain rejects unrelated SQLite-prefixed objects without touching private database',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),dbPath=join(dir,'unrelated-state.sqlite');
+ const {chmodSync}=await import('node:fs');
+ const db=new DatabaseSync(dbPath);
+ db.exec('CREATE TABLE sqliteXnotes (note TEXT); INSERT INTO sqliteXnotes VALUES (\'private fixture\')');
+ db.close();chmodSync(dbPath,0o600);
+ const before=readFileSync(dbPath);
+ let opened;
+ try{assert.throws(()=>{opened=openPortableBrainState(dbPath);},/dedicated_state_database_required/);}
+ finally{await opened?.close();}
+ assert.deepEqual(readFileSync(dbPath),before);
+});
