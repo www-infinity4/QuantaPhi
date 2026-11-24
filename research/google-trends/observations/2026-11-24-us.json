@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T20:31:09.602017Z",
+  "checked_at": "2026-11-24T21:01:00.839234Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "como",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17554695/champions-league-diez-futbolistas-mejor-cotizados-como",
-        "https://www.usatoday.com/story/news/nation/2026/11/24/superluna-noviembre-2026-luna-castor-como-ver/92845190007/",
-        "https://www.dallasnews.com/espanol/al-dia/noticias/article/beaver-moon-cuando-luna-del-castor-noviembre-24-22545853.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGWGLbUJjGmiC2I4FYac0mhSZMNwpf9l4X5_VPfqvVvrQW5HslVFKJD7lVfM",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17554695/champions-league-diez-futbolistas-mejor-cotizados-como",
-          "title": "Champions League: Los 10 futbolistas mejor cotizados del Como",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGWGLbUJjGmiC2I4FYac0mhSZMNwpf9l4X5_VPfqvVvrQW5HslVFKJD7lVfM"
-        },
-        {
-          "url": "https://www.usatoday.com/story/news/nation/2026/11/24/superluna-noviembre-2026-luna-castor-como-ver/92845190007/",
-          "title": "Superluna de noviembre 2026, cuándo y cómo ver la luna de castor",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlTNgNyayUrt6l2xSJGvHG22j9NKDmH-PS_-DzK4Qma7ie2DSK_bwfooozp9k"
-        },
-        {
-          "url": "https://www.dallasnews.com/espanol/al-dia/noticias/article/beaver-moon-cuando-luna-del-castor-noviembre-24-22545853.php",
-          "title": "La superluna de noviembre iluminará el cielo de Dallas-Fort Worth: cuándo verla",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQcQhTuM0jszQi-6L36_QpKIpxmbgNdCABxIL5W_BciWSm71WyYFQ3F-pjBG4"
-        }
-      ]
-    },
-    {
-      "query": "jobe bellingham",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:10:00Z",
-      "related_news_urls": [
-        "https://www.thesun.co.uk/sport/41128779/jobe-bellingham-brother-jude-arsenal-borussia-dortmund-shadow/",
-        "https://onefootball.com/en/video/kovac-explica-el-gran-progreso-del-pequeno-de-los-bellingham-no-es-casualidad-se-lo-ha-ganado-43827735",
-        "https://talksport.com/football/4728169/jobe-bellingham-analysis-borussia-dortmund-arsenal-jude-bellingham/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXfbzi0KBkgxcdECpIXLnx6EjqdpBm8Q50TOZDLE4WGmjIPR9geVWUCaQnv7M",
-      "image_credit": "The Sun",
-      "news": [
-        {
-          "url": "https://www.thesun.co.uk/sport/41128779/jobe-bellingham-brother-jude-arsenal-borussia-dortmund-shadow/",
-          "title": "How 'complete football freak' Jobe Bellingham is stepping out of brother Jude's shadow after England call-up",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXfbzi0KBkgxcdECpIXLnx6EjqdpBm8Q50TOZDLE4WGmjIPR9geVWUCaQnv7M"
-        },
-        {
-          "url": "https://onefootball.com/en/video/kovac-explica-el-gran-progreso-del-pequeno-de-los-bellingham-no-es-casualidad-se-lo-ha-ganado-43827735",
-          "title": "Kovac explica el gran progreso del pequeño de los Bellingham: \"No es casualidad, se lo ha ganado\"",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8MCMkLpufdIwQuDQoVfS5zMQWPVMU0Jh_dPNzkmhXlq0b4F5lN8dsq_65jX4"
-        },
-        {
-          "url": "https://talksport.com/football/4728169/jobe-bellingham-analysis-borussia-dortmund-arsenal-jude-bellingham/",
-          "title": "Arsenal handed Jobe Bellingham warning as he emerges from brother Jude’s shadow",
-          "publisher": "talkSPORT",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRycc_SXmFQsYZEn5psOIE7Po0WIgv5rftcuTDAL7_bozL1SL5t5d1a5zwFILA"
-        }
-      ]
-    },
-    {
-      "query": "real betis",
+      "query": "ruben van bommel",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T20:10:00Z",
+      "published_at": "2026-11-24T20:40:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17553988/pellegrini-elogios-yaya-toure-betis-vs-slovan-champions-league",
-        "https://mundobetis.com/2026/11/24/manu-fajardo-seria-un-error-pensar-que-hoy-lo-vamos-a-tener-todo-de-cara/",
-        "https://www.fichajes.com/a3132955439580736620-las-alineaciones-de-slovan-bratislava-y-real-betis"
+        "https://www.voetbalprimeur.nl/nieuws/2162226/valentijn-driessen-en-mike-verweij-zijn-lovend-over-ruben-van-bommel-en-dichten-de.html",
+        "https://www.psvfans.nl/pascal-jansen-ziet-psver-stappen-maken-toen-was-hij-figurant/",
+        "https://www.voetbalkrant.com/nieuws/2026-11-24/mark-van-bommel-kan-fier-zijn-hij-wordt-een-absolute-recordtransfer"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOSxInbnpMOGdPNflvzqLseWxkv22WN-jzvfWC03BPQMICa6DDPDNaA1kgQKI",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvCa9WBFzJGCXhfGhi69VYk7JPPMYWx1l_32JjHOACU4dcP3vPT80HIKd4Qw",
+      "image_credit": "VoetbalPrimeur",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17553988/pellegrini-elogios-yaya-toure-betis-vs-slovan-champions-league",
-          "title": "Pellegrini elogió a Yaya Touré previo al duelo por Champions: \"Estaba seguro que podía ser entrenador\"",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.voetbalprimeur.nl/nieuws/2162226/valentijn-driessen-en-mike-verweij-zijn-lovend-over-ruben-van-bommel-en-dichten-de.html",
+          "title": "Verweij verwacht megatransfer bij PSV: 'Hij gaat de recordverkoop worden'",
+          "publisher": "VoetbalPrimeur",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOSxInbnpMOGdPNflvzqLseWxkv22WN-jzvfWC03BPQMICa6DDPDNaA1kgQKI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvCa9WBFzJGCXhfGhi69VYk7JPPMYWx1l_32JjHOACU4dcP3vPT80HIKd4Qw"
         },
         {
-          "url": "https://mundobetis.com/2026/11/24/manu-fajardo-seria-un-error-pensar-que-hoy-lo-vamos-a-tener-todo-de-cara/",
-          "title": "Manu Fajardo: «Sería un error pensar que hoy lo vamos a tener todo de cara»",
-          "publisher": "MundoBetis",
+          "url": "https://www.psvfans.nl/pascal-jansen-ziet-psver-stappen-maken-toen-was-hij-figurant/",
+          "title": "Pascal Jansen ziet PSV'er stappen maken: \"Hij had het heel zwaar\"",
+          "publisher": "PSVFans",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1OuAOwg2sz6cMBrkaoJkFvNPMSkFk5aiEd_eVjev7z9H1NDZg0xnWS7AfaRc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVNWYStj4us9YFBu-WEwwcMehFPH5LzPP-kQZx_hCvwNc2qNQIr7lejDKLO0"
         },
         {
-          "url": "https://www.fichajes.com/a3132955439580736620-las-alineaciones-de-slovan-bratislava-y-real-betis",
-          "title": "Las alineaciones de Slovan Bratislava y Real Betis",
-          "publisher": "Fichajes.com",
+          "url": "https://www.voetbalkrant.com/nieuws/2026-11-24/mark-van-bommel-kan-fier-zijn-hij-wordt-een-absolute-recordtransfer",
+          "title": "Mark van Bommel kan fier zijn: \"Hij wordt een absolute recordtransfer\"",
+          "publisher": "Voetbalkrant.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRofYS2rYVTP8c9zx5G81dmlVFbFR4mwl1E8H2UR1sCX6TpBrlE8FhsdSS2Okg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0nYM9T0JhS0PoOVsq8x1hd9rXBSNaStY7pGeP2I05OdAZyiMBrOo5kff1SkI"
         }
       ]
     },
     {
-      "query": "players era 16",
+      "query": "championship",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T20:10:00Z",
+      "published_at": "2026-11-24T20:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50575102/feast-week-matchups-analysis",
-        "https://www.cbssports.com/college-basketball/news/thanksgiving-week-primer-maui-invitational-battle-4-atlantis-players-era/",
-        "https://espnpressroom.com/press-release/espns-feast-week-rolls-on-with-250-mens-college-basketball-games-players-era-16-maui-invitational-battle-4-atlantis-and-more/"
+        "https://www.kcur.org/sports/2026-11-24/kansas-city-current-parade-rally-nwsl-championship",
+        "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
+        "https://www.nytimes.com/athletic/7802175/2026/11/22/washington-spirit-nwsl-finals-rodman/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6xv0qlTj9apNWFYBqxRS6Lu-dcCw3QTvEiJIpv6AQjSRSfQEWTlaDQAwN_qU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0x_pAmgCxUzZM_28runf01PCUzq0btI2DYoLKfl4Zgj_ee5KSjAvWuQT7mA",
+      "image_credit": "KCUR",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50575102/feast-week-matchups-analysis",
-          "title": "Men's Feast Week guide: Tuesday's Players Era 16 matchups and more",
-          "publisher": "ESPN",
+          "url": "https://www.kcur.org/sports/2026-11-24/kansas-city-current-parade-rally-nwsl-championship",
+          "title": "Thousands of Current fans join championship parade: 'Kansas City is a great sports town'",
+          "publisher": "KCUR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS6xv0qlTj9apNWFYBqxRS6Lu-dcCw3QTvEiJIpv6AQjSRSfQEWTlaDQAwN_qU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0x_pAmgCxUzZM_28runf01PCUzq0btI2DYoLKfl4Zgj_ee5KSjAvWuQT7mA"
         },
         {
-          "url": "https://www.cbssports.com/college-basketball/news/thanksgiving-week-primer-maui-invitational-battle-4-atlantis-players-era/",
-          "title": "College basketball's Thanksgiving week primer: Most intriguing matchups, top NBA Draft prospects, predictions",
-          "publisher": "CBS Sports",
+          "url": "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
+          "title": "TEAL TUESDAY: KC Current celebrates NWSL victory with march, rally",
+          "publisher": "KMBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjgwSoUeqI5WaspIMNVvPejKOrtrdjALYpos2d53dA4L01yIYSQWZ2Xy-iMHo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPVmKAC4wLjLuaZhh6F1jdtw9bq0IOU77sIjdmF_sBJ0H6eTJmTPk0-KR8e_E"
         },
         {
-          "url": "https://espnpressroom.com/press-release/espns-feast-week-rolls-on-with-250-mens-college-basketball-games-players-era-16-maui-invitational-battle-4-atlantis-and-more/",
-          "title": "ESPN’s Feast Week rolls on with 250+ men’s college basketball games, Players Era 16, Maui Invitational, Battle 4 Atlantis and more",
-          "publisher": "ESPN Press Room",
+          "url": "https://www.nytimes.com/athletic/7802175/2026/11/22/washington-spirit-nwsl-finals-rodman/",
+          "title": "Current silence Rowdy Audi, Spirit fall short in final again: ‘It hurts way worse than the others’",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPD5djIOlQldlXcefL4wfv6-irJmm9VZPFo8l8ODLxzRIyb1IcFrYp8CXxfp0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxyB20-4i0qYjltyp9XWsR1GGxnnBH84sgTMZJeIpHriu6CUTKSnYCy9G4Ac"
         }
       ]
     },
     {
-      "query": "maryland vs tennessee",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T20:00:00Z",
+      "query": "uic vs rice",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/tennessee/longformarticle/players-era-2-4-7-tennessee-basketball-vs-maryland-rick-barnes-buzz-williams-bishop-boswell-juke-harris-jalen-haralson-dewayne-brown-293242011/",
-        "https://utsports.com/news/2026/11/23/mens-basketball-hoops-central-9-11-tennessee-vs-maryland",
-        "https://www.cbssports.com/betting/news/tennessee-maryland-prediction-odds-time-2026-players-era-16-college-basketball-picks-bets/"
+        "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
+        "https://www.dimers.com/cbb/news/illinois-chicago-vs-rice-prediction-11-24-2026-ac",
+        "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRFrwfqqFTERJ_uVp_c1SguPSwLgcW49_p3QxPQd5nUPfI-Ht2vjK8ewrhmFw",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8",
+      "image_credit": "BVM Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/tennessee/longformarticle/players-era-2-4-7-tennessee-basketball-vs-maryland-rick-barnes-buzz-williams-bishop-boswell-juke-harris-jalen-haralson-dewayne-brown-293242011/",
-          "title": "Players Era 2-4-7: No. 9 Tennessee basketball vs. Maryland",
+          "url": "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
+          "title": "Men’s Basketball Continues Play at Scout Jacksonville Classic against UIC",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8"
+        },
+        {
+          "url": "https://www.dimers.com/cbb/news/illinois-chicago-vs-rice-prediction-11-24-2026-ac",
+          "title": "Illinois-Chicago vs. Rice prediction favors Flames on Nov. 24, 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlJIzFf5eQmBorrKeqJVnkJvCJkL-faOv5jvrFgZ0Qy84-q_Iw7bxo4Cpnsn8"
+        },
+        {
+          "url": "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408",
+          "title": "UIC vs. Rice Odds & Betting Predictions November 24, 2026",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
+        }
+      ]
+    },
+    {
+      "query": "chapecoense x palmeiras",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://ge.globo.com/sc/futebol/brasileirao-serie-a/noticia/2026/11/24/chapecoense-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.tvbv.com.br/chapecoense-prepara-homenagem-aos-10-anos-do-acidente-aereo-para-proximo-jogo/",
+        "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA",
+      "image_credit": "ge",
+      "news": [
+        {
+          "url": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/noticia/2026/11/24/chapecoense-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Chapecoense x Palmeiras: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA"
+        },
+        {
+          "url": "https://www.tvbv.com.br/chapecoense-prepara-homenagem-aos-10-anos-do-acidente-aereo-para-proximo-jogo/",
+          "title": "Chapecoense prepara homenagem aos 10 anos do acidente aéreo para próximo jogo",
+          "publisher": "TVBV ONLINE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5Mo-SkFXQHJZf8QsICyNeYmVHKBBQfYynqVaO1mydvrtE_NagYtz8OpaAQXg"
+        },
+        {
+          "url": "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/",
+          "title": "Abel define Palmeiras com sete jogadores formados na base para enfrentar a Chape; veja escalações",
+          "publisher": "Gazeta Esportiva",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOuAWY6-2sfVL274QVc0Xp-7aw7m8dho5-1QRIgPq7T1sfkzXMhEjqtHCxb8"
+        }
+      ]
+    },
+    {
+      "query": "rihanna",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/article/rihanna-asap-rocky-outfit-formula-2026-11-23",
+        "https://www.harpersbazaar.com/celebrity/latest/a74519263/rihanna-asap-rocky-coordinating-outfits-coats-big-pants-street-style-date-night-photos/",
+        "https://www.wmagazine.com/fashion/rihanna-2010s-celine-jacket-asap-rocky-date"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8T6AXbJsfJuhsJCuFhi3Vx2RTIL1mdTUkdcq0khL67HNMsjUxYxcqFm0f44",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/article/rihanna-asap-rocky-outfit-formula-2026-11-23",
+          "title": "Rihanna and A$AP Rocky Are in Physical and Sartorial Lockstep",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8T6AXbJsfJuhsJCuFhi3Vx2RTIL1mdTUkdcq0khL67HNMsjUxYxcqFm0f44"
+        },
+        {
+          "url": "https://www.harpersbazaar.com/celebrity/latest/a74519263/rihanna-asap-rocky-coordinating-outfits-coats-big-pants-street-style-date-night-photos/",
+          "title": "Rihanna Seemingly Borrows Her Stylist’s Coat for a Date With A$AP Rocky",
+          "publisher": "Harper's BAZAAR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKeRuWsXLVAztM-KrraUEXhq51GTf9bG63Cn_VyaqwD4ODU945gkY_hTdYOU4"
+        },
+        {
+          "url": "https://www.wmagazine.com/fashion/rihanna-2010s-celine-jacket-asap-rocky-date",
+          "title": "Rihanna Reimagines a 2010s Trend on Date With A$AP Rocky",
+          "publisher": "W Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNF6g3krhHWpJKi1R-oH0c6mF-Q9_M7P6UvEeBKXPoE-dmemhDX5OD6MCW_tM"
+        }
+      ]
+    },
+    {
+      "query": "huawei",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
+        "https://www.nytimes.com/2026/11/24/nyregion/huawei-guilty-new-york.html",
+        "https://www.bostonherald.com/2026/11/24/huawei-guilty-conspiracy-trial/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
+          "title": "Huawei Found Guilty of US Criminal Charges in Landmark Case",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/nyregion/huawei-guilty-new-york.html",
+          "title": "Huawei Found Guilty of Stealing Trade Secrets in U.S. Trial",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz48I2hj7DPMm6kOvuyhcaecua4f4CrRWqV46CwY_jtn_ZD-wBL84TLetLjMI"
+        },
+        {
+          "url": "https://www.bostonherald.com/2026/11/24/huawei-guilty-conspiracy-trial/",
+          "title": "Chinese tech giant Huawei is guilty of conspiracy to steal trade secrets, US jury finds",
+          "publisher": "Boston Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyJckslN0L0Mz8ODrMkWDq14cqwh5rE-z_A89tw0KApakLRrnaGjQUha8O9-k"
+        }
+      ]
+    },
+    {
+      "query": "fc porto",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://www.abola.pt/noticias/ganhar-ou-ganhar-no-regresso-a-champions-o-onze-provavel-do-fc-porto-2026112313591425072",
+        "https://www.goal.com/br/not%C3%ADcias/santiago-gimenez-o-que-mais-sinto-falta-no-feyenoord-e/bltad5b160c4803652a",
+        "https://www.sporttv.pt/noticias/887936/farioli-temos-de-reduzir-o-barulho-do-estadio"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0bTqVyOaDKXazcb7sGa7jZDUWUegXt4QNFknHXyL839rfIhfcJwBJP2pdI_w",
+      "image_credit": "A Bola",
+      "news": [
+        {
+          "url": "https://www.abola.pt/noticias/ganhar-ou-ganhar-no-regresso-a-champions-o-onze-provavel-do-fc-porto-2026112313591425072",
+          "title": "Ganhar... ou ganhar no regresso à Champions: o onze provável do FC Porto",
+          "publisher": "A Bola",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0bTqVyOaDKXazcb7sGa7jZDUWUegXt4QNFknHXyL839rfIhfcJwBJP2pdI_w"
+        },
+        {
+          "url": "https://www.goal.com/br/not%C3%ADcias/santiago-gimenez-o-que-mais-sinto-falta-no-feyenoord-e/bltad5b160c4803652a",
+          "title": "Santiago Gimenez: ‘O que mais sinto falta no Feyenoord é…’",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeusC2ckMyngYNEndNNXWayQU_5Ec_QWubnKrElWnelFm9TXwW_WHYLk9fSc4"
+        },
+        {
+          "url": "https://www.sporttv.pt/noticias/887936/farioli-temos-de-reduzir-o-barulho-do-estadio",
+          "title": "Farioli: \"Temos de reduzir o barulho do estádio\"",
+          "publisher": "Sport TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8EmUiE2RZ5I3H7QBm6IYic3MpHb7YVlOc0sPmEmhj5-fsNfvNJaYhTb-YGYY"
+        }
+      ]
+    },
+    {
+      "query": "tcu vs miami fl",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/no-17-miami-against-tcu-160004844.html",
+        "https://www.si.com/college/tcu/basketball/tcu-basketball-opens-players-era-16-against-no-17-miami-01m879z426hc",
+        "https://247sports.com/college/miami/article/video-insight-on-tcu-heading-into-players-era-16-tournament-vs-no-17-miami-hurricanes-basketball-293187163/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K3ZCIPZQNIaSN_Ro-KV8mPrC94HNkppUDk6TTSUdoTNejnqnoVw5uK2HtXc",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/no-17-miami-against-tcu-160004844.html",
+          "title": "No. 17 Miami Against TCU at the Players Era 16 Tournament: Game Central, Updates, and Analysis",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K3ZCIPZQNIaSN_Ro-KV8mPrC94HNkppUDk6TTSUdoTNejnqnoVw5uK2HtXc"
+        },
+        {
+          "url": "https://www.si.com/college/tcu/basketball/tcu-basketball-opens-players-era-16-against-no-17-miami-01m879z426hc",
+          "title": "TCU and 15 other teams suit up for the Players Era 16 Tournament",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRob_5ODUDx0EF16MDv58l4cYc8aYV-XFqeOf8mh6Jq0PeMXdSrwNrs8-XsS80"
+        },
+        {
+          "url": "https://247sports.com/college/miami/article/video-insight-on-tcu-heading-into-players-era-16-tournament-vs-no-17-miami-hurricanes-basketball-293187163/",
+          "title": "VIDEO: Insight on TCU heading into Players Era 16 tournament vs. No. 17 Miami",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRFrwfqqFTERJ_uVp_c1SguPSwLgcW49_p3QxPQd5nUPfI-Ht2vjK8ewrhmFw"
-        },
-        {
-          "url": "https://utsports.com/news/2026/11/23/mens-basketball-hoops-central-9-11-tennessee-vs-maryland",
-          "title": "HOOPS CENTRAL: #9/11 Tennessee vs. Maryland",
-          "publisher": "University of Tennessee Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpPi_o4fdqEJoozvjXisWsaraSNkbPqB-EkEDRM1VUOLtmRi70jk737aThlR4"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/tennessee-maryland-prediction-odds-time-2026-players-era-16-college-basketball-picks-bets/",
-          "title": "Tennessee vs. Maryland prediction, odds, time: 2026 Players Era 16 picks by proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrpVABKkh27-HxWwNMjtPA4hvS0mV2cj5XxpQIiq7Osq4_HwOagsufoSsTh-s"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMFM_pYn5ZKM6M03KMq8xv91NxvyPLUDsyogbZylghbFXUlwXkprZ2CWfxpGQ"
         }
       ]
     },
     {
-      "query": "houston fire",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:00:00Z",
+      "query": "como vs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T20:30:00Z",
       "related_news_urls": [
-        "https://abc13.com/post/fire-west-houston-apartment-complex-sends-residents-running-safety/20074410/",
-        "https://www.click2houston.com/news/local/2026/11/24/two-alarm-fire-damages-multiple-units-at-west-houston-apartment-complex/",
-        "https://www.fox26houston.com/video/fmc-g83v0zu3h0752uay"
+        "https://sports.yahoo.com/articles/champions-league-line-ups-como-184800716.html",
+        "https://sports.yahoo.com/articles/champions-league-como-vs-aek-092900283.html",
+        "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261124-como-vs-aek-athens-lineups-prediction-betting-picks-odds"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuVjBjCkr5BUTDDMfXK1EKaFpGtXlSTwNjXyPlViSO0f8S3VyXLKWBzojY8cQ",
-      "image_credit": "ABC13 Houston",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBWb1q-oMVB9QJsTgb7CsarpBSzkIQxkERhXcNURLSz-wcnsPsOsI9QtmWZU",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://abc13.com/post/fire-west-houston-apartment-complex-sends-residents-running-safety/20074410/",
-          "title": "Fire at west Houston apartment complex sends residents running for safety",
-          "publisher": "ABC13 Houston",
+          "url": "https://sports.yahoo.com/articles/champions-league-line-ups-como-184800716.html",
+          "title": "Champions League line-ups: Como vs. AEK Athens",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuVjBjCkr5BUTDDMfXK1EKaFpGtXlSTwNjXyPlViSO0f8S3VyXLKWBzojY8cQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBWb1q-oMVB9QJsTgb7CsarpBSzkIQxkERhXcNURLSz-wcnsPsOsI9QtmWZU"
         },
         {
-          "url": "https://www.click2houston.com/news/local/2026/11/24/two-alarm-fire-damages-multiple-units-at-west-houston-apartment-complex/",
-          "title": "Two-alarm fire damages multiple units at west Houston apartment complex",
-          "publisher": "Click2Houston",
+          "url": "https://sports.yahoo.com/articles/champions-league-como-vs-aek-092900283.html",
+          "title": "Champions League: Como vs. AEK – Probable line-ups and where to watch on TV",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJeQ925NDBejlFeeG7UHvG4KNf_NO8Bs1ZLDQw6_Peko-sT4hh393PmAt4ixM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKwd2Ifzt4VXzdofr7uAgSQfbh20O8UolKp0ONZN-eq8yqTcVYApLIEmRujUE"
         },
         {
-          "url": "https://www.fox26houston.com/video/fmc-g83v0zu3h0752uay",
-          "title": "Houston apartment fire displaces residents days before Thanksgiving",
-          "publisher": "FOX 26 Houston",
+          "url": "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261124-como-vs-aek-athens-lineups-prediction-betting-picks-odds",
+          "title": "Como vs AEK Athens: Lineups, Prediction, Betting Picks & Odds",
+          "publisher": "Oddschecker",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhs9ibd9EFYA3dn3AtIeyOzgxHyg9P8gqCZUwSxzSC3zLq3CZ4fu0o7Ot2-0s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNwmEL5gRhskQR5j0BMh1AAofJ9xUaSV01wRbg68P6nDnQXqOHitn17S5EkOw"
         }
       ]
     },
     {
-      "query": "real madrid",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-24T19:50:00Z",
+      "query": "cia",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T20:20:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/champions/real-madrid-psv-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-en-el-bernabeu-f202611-d/",
-        "https://apnews.com/article/champions-league-madrid-mbappe-arsenal-city-napoli-bruyne-3d607990103615b6c6e5abf6b6e73107",
-        "https://www.elmundo.es/deportes/futbol/champions-league/2026/11/23/6b0489f1e9cf4a60608b457f.html"
+        "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
+        "https://www.wavy.com/news/national/ap-us-news/ap-an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+        "https://www.usnews.com/news/top-news/articles/2026-11-24/us-cia-odni-suffer-cybersecurity-breach-of-some-unclassified-information-nyt-reports"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiTvgDnR19LMdmsTdMTkqL_oRsHnyVKp5YeZZNCsbSmshk2s7u7-Wbvf8XILs",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/champions/real-madrid-psv-hoy-en-directo-partido-de-fase-liga-de-champions-league-ultima-hora-en-el-bernabeu-f202611-d/",
-          "title": "Real Madrid - PSV hoy, en directo: partido de fase liga de Champions League, última hora en el Bernabéu",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiTvgDnR19LMdmsTdMTkqL_oRsHnyVKp5YeZZNCsbSmshk2s7u7-Wbvf8XILs"
-        },
-        {
-          "url": "https://apnews.com/article/champions-league-madrid-mbappe-arsenal-city-napoli-bruyne-3d607990103615b6c6e5abf6b6e73107",
-          "title": "Un Real Madrid en alza recibe al PSV y De Bruyne vuelve al Man City en la Champions",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBVPVcsBktU42h3nmrct_4V_J_3w2kjDzqATp4xJ5caL5_JhHV5GIOlpINZjM"
-        },
-        {
-          "url": "https://www.elmundo.es/deportes/futbol/champions-league/2026/11/23/6b0489f1e9cf4a60608b457f.html",
-          "title": "El trauma del Real Madrid en Eindhoven: un haptoterapeuta para Van Breukelen y unos bóxer de la mala suerte para Mendoza",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdMtjNbnoBE2RrDnrsgJ6lbsq2EamxENLvFCTEXKtWTcD1f-98JFemFG-GOvU"
-        }
-      ]
-    },
-    {
-      "query": "byu basketball",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T19:50:00Z",
-      "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/23/washington-coach-danny-sprinkle-reflects-byu-loss-maui-invitational/",
-        "https://www.uwdawgpound.com/washington-huskies-mens-basketball/79122/huskies-start-fast-cant-hold-on-in-maui-invitational-loss-to-byu",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921708"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiCS93-AB1w7HbTNwQLXM2l9aD7mF42uJf_vvOiYCJrbp1zmYjsq2VylfLX_0",
-      "image_credit": "Deseret News",
-      "news": [
-        {
-          "url": "https://www.deseret.com/sports/2026/11/23/washington-coach-danny-sprinkle-reflects-byu-loss-maui-invitational/",
-          "title": "What Washington coach Danny Sprinkle said after BYU loss",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiCS93-AB1w7HbTNwQLXM2l9aD7mF42uJf_vvOiYCJrbp1zmYjsq2VylfLX_0"
-        },
-        {
-          "url": "https://www.uwdawgpound.com/washington-huskies-mens-basketball/79122/huskies-start-fast-cant-hold-on-in-maui-invitational-loss-to-byu",
-          "title": "Huskies start fast, can’t hold on in Maui Invitational loss to BYU",
-          "publisher": "UW Dawg Pound",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnPr4jRFpju383f3ftOPEcflp1W0ZF3OFew8DhTQWIqamWxldsEM9TmzxFLsc"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921708",
-          "title": "BYU 83-77 Washington (Nov 23, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWub4fClYeHMiODE6X5Z4KxAMXuWcNCrFQT97xgmFE4k-R0l0yXMgh909kfbk"
-        }
-      ]
-    },
-    {
-      "query": "weather san francisco flooding",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T19:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html",
-        "https://abc7news.com/weather/king-tides-flood-bay-area-streets-docks/20075774/",
-        "https://www.nbcbayarea.com/news/local/king-tides-powerful-waves-northern-california-coast/4181075/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7carPV4IAZXcNnNHaJbEfUc3S3YTVly47xbsEXyjyDJjk5C2n5shYtLU14q8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf93_2L1bFALiFdtmVOUyblQqw2uVwPmx4NAhOH1i7F1M_-OtkSBgt4Zz2XbA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html",
-          "title": "‘Extreme’ Flooding Is Feared in California as King Tides Near Records",
+          "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
+          "title": "U.S. Spy Agencies Suffer Breach of Some Unclassified Information",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7carPV4IAZXcNnNHaJbEfUc3S3YTVly47xbsEXyjyDJjk5C2n5shYtLU14q8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf93_2L1bFALiFdtmVOUyblQqw2uVwPmx4NAhOH1i7F1M_-OtkSBgt4Zz2XbA"
         },
         {
-          "url": "https://abc7news.com/weather/king-tides-flood-bay-area-streets-docks/20075774/",
-          "title": "King tides flood Bay Area streets, docks",
-          "publisher": "ABC7 Bay Area",
+          "url": "https://www.wavy.com/news/national/ap-us-news/ap-an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+          "title": "An unclassified CIA system was breached in a cyberattack, AP source says",
+          "publisher": "WAVY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBjBdeFrYKYrPHHuTiSFmyCkrlBToN8ezidSMe8yd8Q0273sqxUlR9D8uAGwA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl5kE7sFCpQ2yYHHfPN0qfJO-7wbKcasxXQnTNjbv3gTtQuLiuv7UEjJeAaZc"
         },
         {
-          "url": "https://www.nbcbayarea.com/news/local/king-tides-powerful-waves-northern-california-coast/4181075/",
-          "title": "King tides, powerful waves and incoming storm threaten Northern California coast",
-          "publisher": "NBC Bay Area",
+          "url": "https://www.usnews.com/news/top-news/articles/2026-11-24/us-cia-odni-suffer-cybersecurity-breach-of-some-unclassified-information-nyt-reports",
+          "title": "US CIA, ODNI Suffer Cybersecurity Breach of Some Unclassified Information, NYT Reports",
+          "publisher": "U.S. News & World Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDO1dWtyTUjQYigX84ILrCa0QZrhafTZCVz-wlkW9HqfxIHTQ2I2VJrhZw1bY"
-        }
-      ]
-    },
-    {
-      "query": "nathan fillion",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T19:50:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/firefly-animated-revival-series-progress-nathan-fillion-update/",
-        "https://demokratis.co.id/en/fillion-confirms-firefly-revival-progress",
-        "https://bsinews.id/en/nathan-fillion-firefly-revival-progress"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlBh71-_2suqekp1Ytq2vZLlL8PZj924ZWW1c2zGLChlhz4AdPcR73AJSiMx8",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/firefly-animated-revival-series-progress-nathan-fillion-update/",
-          "title": "Firefly's New Revival Series Gets Exciting Update From Nathan Fillion",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlBh71-_2suqekp1Ytq2vZLlL8PZj924ZWW1c2zGLChlhz4AdPcR73AJSiMx8"
-        },
-        {
-          "url": "https://demokratis.co.id/en/fillion-confirms-firefly-revival-progress",
-          "title": "Nathan Fillion Confirms Progress on Firefly Animated Revival",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToq0R4R_sSHKNJ_KF9-Nf17aOBTdFu3aDHEuazN2uCGE4ndjppM5OmzLeeWK4"
-        },
-        {
-          "url": "https://bsinews.id/en/nathan-fillion-firefly-revival-progress",
-          "title": "Nathan Fillion Confirms Progress on Animated Firefly Revival",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToq0R4R_sSHKNJ_KF9-Nf17aOBTdFu3aDHEuazN2uCGE4ndjppM5OmzLeeWK4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzG8t_xr50WTnYB6HnXA6ydI6jdzSCmZiljoURPvgfJdDNlHEp2xbyKPomIV8"
         }
       ]
     }
