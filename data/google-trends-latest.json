@@ -3,356 +3,330 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T02:31:59.587117Z",
+  "checked_at": "2026-11-24T03:01:15.887111Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "wild vs sharks",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-23-2026",
-        "https://sports.yahoo.com/videos/lineups-game-notes-more-sharks-013325840.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-san-jose-sharks-prediction-odds-2026-11-23/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuarz-ve_AvPwU6VoHRZeHsjE9soCbmY4ac1b41V0QbwiQDnOSgIAs6G3iK-M",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-23-2026",
-          "title": "NHL On Tap: Kaprizov, Wild seek to extend point streaks to 15",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuarz-ve_AvPwU6VoHRZeHsjE9soCbmY4ac1b41V0QbwiQDnOSgIAs6G3iK-M"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/lineups-game-notes-more-sharks-013325840.html",
-          "title": "Lineups, Game Notes & More: Sharks vs Wild 11/23/26",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwxjIJOlkXTbtCcBskly9LO82rl6UFTrhdD-q6Mc8gPUwkPDBrnyLuzAVk9HI"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-san-jose-sharks-prediction-odds-2026-11-23/",
-          "title": "Minnesota Wild vs San Jose Sharks Prediction, Picks & Odds | 23 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyT8MRlery3Y1GkTGV4vSwzO1JX-n5622LOpSc3qLe3dpdy7AA2S_w5IAIDfE"
-        }
-      ]
-    },
-    {
-      "query": "swayze bozeman",
+      "query": "what happened to tom jackson",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T02:10:00Z",
+      "published_at": "2026-11-24T02:40:00Z",
       "related_news_urls": [
-        "https://www.bengals.com/news/swayze-bozeman-brian-parker-ii-activated-reserve-injured-list-bengals-roster-update",
-        "https://www.cbssports.com/fantasy/football/news/bengals-brian-parker-active-for-mnf/",
-        "https://www.cincyjungle.com/cincinnati-bengals-roster/206385/swayze-bozeman-brian-parker-josh-kattus-practice-squad-commanders-game"
+        "https://www.wkyc.com/article/news/local/cleveland/cleveland-native-tom-jackson-former-broncos-star-sunday-nfl-countdown-analyst-dead-at-75/95-7bb42ec1-8b0d-401a-9ba9-81caf5a06d54",
+        "https://sports.yahoo.com/articles/troy-aikman-raises-eyebrows-unexpected-015059797.html",
+        "https://www.espn.com/nfl/story/_/id/50569388/broncos-coach-sean-payton-game-ball-tom-jackson-family"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREaVU8Q0YFLx38YLlQKFFtq0zDfwceEn3IHGHlbpN1dLjO1gwHV0YKdyCm0MA",
-      "image_credit": "Cincinnati Bengals",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXpql7W24LLQRwIqP9hz-CcBUct4CFa0yB2_DSOv0CqmEVSAud6AFnMJZKSsA",
+      "image_credit": "WKYC",
       "news": [
         {
-          "url": "https://www.bengals.com/news/swayze-bozeman-brian-parker-ii-activated-reserve-injured-list-bengals-roster-update",
-          "title": "Swayze Bozeman, Brian Parker II Activated off Reserve/Injured List | BENGALS ROSTER UPDATE",
-          "publisher": "Cincinnati Bengals",
+          "url": "https://www.wkyc.com/article/news/local/cleveland/cleveland-native-tom-jackson-former-broncos-star-sunday-nfl-countdown-analyst-dead-at-75/95-7bb42ec1-8b0d-401a-9ba9-81caf5a06d54",
+          "title": "Cleveland native Tom Jackson, former Broncos star and 'Sunday NFL Countdown' analyst, dead at 75",
+          "publisher": "WKYC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREaVU8Q0YFLx38YLlQKFFtq0zDfwceEn3IHGHlbpN1dLjO1gwHV0YKdyCm0MA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXpql7W24LLQRwIqP9hz-CcBUct4CFa0yB2_DSOv0CqmEVSAud6AFnMJZKSsA"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/bengals-brian-parker-active-for-mnf/",
-          "title": "Bengals' Brian Parker: Active for MNF",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
-        },
-        {
-          "url": "https://www.cincyjungle.com/cincinnati-bengals-roster/206385/swayze-bozeman-brian-parker-josh-kattus-practice-squad-commanders-game",
-          "title": "Bengals make 3 roster moves ahead of Commanders game",
-          "publisher": "Cincy Jungle",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzpDoqRre5H8i2m1iu7VoXbaFXhgIhzIiXEHL56vUAajSvwjnXgLOWoufWK4g"
-        }
-      ]
-    },
-    {
-      "query": "jrue holiday",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/celtics-derrick-white-alarm-bells-202858791.html",
-        "https://www.masslive.com/celtics/2026/11/joe-mazzulla-makes-surprising-admission-after-warriors-upset-celtics.html",
-        "https://985thesportshub.com/2026/11/23/the-celtics-have-a-derrick-white-problem/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNw_6hFplCyi7DvZHHSWsczbtiTAXxLOJQXpULGwxP5zAeM7rT6uR7QSMXrc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/celtics-derrick-white-alarm-bells-202858791.html",
-          "title": "Celtics’ Derrick White alarm bells are going off as brick fest continues for another season",
+          "url": "https://sports.yahoo.com/articles/troy-aikman-raises-eyebrows-unexpected-015059797.html",
+          "title": "Troy Aikman Raises Eyebrows With Unexpected On-Air Comment During ESPN’s Live Tribute to Tom Jackson",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNw_6hFplCyi7DvZHHSWsczbtiTAXxLOJQXpULGwxP5zAeM7rT6uR7QSMXrc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP5O3uGFMOR0QLqyZRzKyXScvCCsilZXYphaegn4YSvDE0aS1O-Tomecz1opI"
         },
         {
-          "url": "https://www.masslive.com/celtics/2026/11/joe-mazzulla-makes-surprising-admission-after-warriors-upset-celtics.html",
-          "title": "Joe Mazzulla makes surprising admission after Warriors upset Celtics",
-          "publisher": "MassLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzB3DWvsDLtV0W8xZjCoTkrRmNlxp2r8qD_Bp1TKn_OMHjx4OOhOR7Vjg1c8c"
-        },
-        {
-          "url": "https://985thesportshub.com/2026/11/23/the-celtics-have-a-derrick-white-problem/",
-          "title": "The Celtics have a Derrick White problem",
-          "publisher": "98.5 The Sports Hub",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3a5JOY7NF8gPC0TOPLOlOPlLlvq0C1W53Ub9FJzP026UEi8qjacbKTJq176A"
-        }
-      ]
-    },
-    {
-      "query": "where is the super bowl 2027",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-        "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
-        "https://espnpressroom.com/press-release/espn-the-walt-disney-company-the-nfl-and-imax-to-bring-the-super-bowl-to-imax-for-the-first-time/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
-        },
-        {
-          "url": "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
-          "title": "Moviegoers are getting a front-row seat to the Super Bowl",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHVU98hWjeW5rFDJeUcTdqepfJwsQdbQFjIKFcGmPjEIxmXoRzNZe8Kzr3rFI"
-        },
-        {
-          "url": "https://espnpressroom.com/press-release/espn-the-walt-disney-company-the-nfl-and-imax-to-bring-the-super-bowl-to-imax-for-the-first-time/",
-          "title": "ESPN, The Walt Disney Company, the NFL and IMAX to bring the Super Bowl to IMAX for the first time",
-          "publisher": "ESPN Press Room",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5u1QTRZQ4UKSgV6-qirYIxBftAUDOVFDapNlU32t5HPtgPpV0MJOlTwFxKUA"
-        }
-      ]
-    },
-    {
-      "query": "jaden mcdaniels",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/jaden-played-against-223057312.html",
-        "https://dunkingwithwolves.com/jaden-mcdaniels-blunt-comments-about-lamelo-ball-s-defensive-leap-are-spot-on",
-        "https://www.si.com/nba/timberwolves/onsi/sneaky-lamelo-ball-improvement-elate-timberwolves-despite-offensive-concerns-01m80qgfvf8z"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/jaden-played-against-223057312.html",
-          "title": "And Jaden is like, ’We played against you in …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8"
-        },
-        {
-          "url": "https://dunkingwithwolves.com/jaden-mcdaniels-blunt-comments-about-lamelo-ball-s-defensive-leap-are-spot-on",
-          "title": "Jaden McDaniels' blunt comments about LaMelo Ball's defensive leap are spot on",
-          "publisher": "Dunking with Wolves",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWTT4BMF-sxAj_Fronb1Yx5uu14SNI-ZTFgecR8STErkMhGdMtp8ENARGZrtI"
-        },
-        {
-          "url": "https://www.si.com/nba/timberwolves/onsi/sneaky-lamelo-ball-improvement-elate-timberwolves-despite-offensive-concerns-01m80qgfvf8z",
-          "title": "Sneaky LaMelo Ball Improvement Should Elate Timberwolves Despite Offensive Concerns",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnScRLviHwvBFZb9vHwDlWflOHMU-M2Gi4h_gqkY95iq90zYaUJLsFEHHBCuU"
-        }
-      ]
-    },
-    {
-      "query": "mark rutte",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://www.c-span.org/program/international-telecasts/nato-secretary-general-rutte-and-german-chancellor-merz-hold-news-conference/688237",
-        "https://www.foxnews.com/world/nato-warns-putin-could-strike-european-army-responds-points-us-military-model",
-        "https://www.yahoo.com/news/politics/articles/rutte-sceptical-single-european-military-150400352.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8LtYlrKliGB6CyCMJjy1bZdPe22uVTeoVef-ZgC3DaCMPNo8Y6pAHJuw4zp8",
-      "image_credit": "C-SPAN",
-      "news": [
-        {
-          "url": "https://www.c-span.org/program/international-telecasts/nato-secretary-general-rutte-and-german-chancellor-merz-hold-news-conference/688237",
-          "title": "NATO Secy. General Mark Rutte & German Chancellor Hold Press Conference Amid Military Escalation in Ukraine",
-          "publisher": "C-SPAN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8LtYlrKliGB6CyCMJjy1bZdPe22uVTeoVef-ZgC3DaCMPNo8Y6pAHJuw4zp8"
-        },
-        {
-          "url": "https://www.foxnews.com/world/nato-warns-putin-could-strike-european-army-responds-points-us-military-model",
-          "title": "NATO warns Putin could strike before European army responds, points to US as military model",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRR2Cug1sSXObEyM6O_N54-4AP5C-f4gvkNc5Pp3t8bFOuCZKwqOuvwG-LjBo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/rutte-sceptical-single-european-military-150400352.html",
-          "title": "Rutte sceptical of single European military idea: Putin would be in Rotterdam by the time we decided what to do",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpMOrINLiwdRGLf2fvTmOydR0dWl6VQ13D6IKyn4X5IS7wZcDwdvp6CMheWlQ"
-        }
-      ]
-    },
-    {
-      "query": "providence basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://www.golocalprov.com/sports/preview-of-pcs-critical-trip-to-hawaii-kevin-stacom",
-        "https://www.sportsgambler.com/betting-tips/basketball/vcu-rams-vs-providence-friars-prediction-odds-2026-11-23/",
-        "https://sports.yahoo.com/videos/vcu-vs-providence-over-155-185848404.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqp5hSlPoTwclvwy6y1Uvqgv0fBT6Qcl-pphGs-O-jXAhysZXONaNETmR_FoY",
-      "image_credit": "Go Local Prov",
-      "news": [
-        {
-          "url": "https://www.golocalprov.com/sports/preview-of-pcs-critical-trip-to-hawaii-kevin-stacom",
-          "title": "Preview of PC's Critical Trip to Hawaii — Kevin Stacom",
-          "publisher": "Go Local Prov",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqp5hSlPoTwclvwy6y1Uvqgv0fBT6Qcl-pphGs-O-jXAhysZXONaNETmR_FoY"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/vcu-rams-vs-providence-friars-prediction-odds-2026-11-23/",
-          "title": "VCU vs Providence Prediction, Picks & Odds | 23 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmVVvWgDDMndJfMsh5OiBiS3OjMdMzIzpO1SnbQ6m9Yk42_rBugTDJl2arQBM"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/vcu-vs-providence-over-155-185848404.html",
-          "title": "VCU vs. Providence Over 155 in Maui",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdQLcXJyO_cbQRjDoEIJau8-pEwXkxiKkslxI-iB2Z0hKym0OH2PVepWCR74"
-        }
-      ]
-    },
-    {
-      "query": "chase young",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T02:10:00Z",
-      "related_news_urls": [
-        "https://www.chicagobears.com/news/bears-win-fifth-straight-game-move-to-8-2-with-victory-over-saints-game-recap",
-        "https://sports.yahoo.com/videos/5-offensive-takeaways-saints-loss-015416443.html",
-        "https://www.espn.com/nfl/story/_/id/50567207/jeffery-simmons-matches-career-high-3-sacks-bears-win"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeU3jnjZpfD6SQBVdaQUGIZN6EO7-TUQHhxybDXEiOVkb5vdwxxzkPZFbEF54",
-      "image_credit": "Chicago Bears",
-      "news": [
-        {
-          "url": "https://www.chicagobears.com/news/bears-win-fifth-straight-game-move-to-8-2-with-victory-over-saints-game-recap",
-          "title": "Bears win fifth straight game, move to 8-2 with victory over Saints | Game Recap",
-          "publisher": "Chicago Bears",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeU3jnjZpfD6SQBVdaQUGIZN6EO7-TUQHhxybDXEiOVkb5vdwxxzkPZFbEF54"
-        },
-        {
-          "url": "https://sports.yahoo.com/videos/5-offensive-takeaways-saints-loss-015416443.html",
-          "title": "5 Offensive Takeaways From the Saints’ Loss to the Bears",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQHzNYYFvN9FO9zZARfl8ZPOa_bkeebKrQc9RA0W3oX8vH06Wt9JcgHxFcyWs"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50567207/jeffery-simmons-matches-career-high-3-sacks-bears-win",
-          "title": "Jeffery Simmons matches career high with 3 sacks in Bears' win",
+          "url": "https://www.espn.com/nfl/story/_/id/50569388/broncos-coach-sean-payton-game-ball-tom-jackson-family",
+          "title": "Broncos coach Sean Payton awards game ball to Tom Jackson's family",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpQk6_E39Ee_CUW0jB4iakzTtzcsR0nMeLf85KvgQARcBF5_uxXHDn3TH2CxM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2pwIkrelapWt7lqSs0QvLsudFLXCnZQggjWtnj2dkfg1fO_qeNkHniqPycY8"
         }
       ]
     },
     {
-      "query": "trey hendrickson",
+      "query": "pat mcafee",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T02:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50549970/the-rock-ends-epic-gameday-entrance-slamming-mcafee-table",
+        "https://www.si.com/fannation/college/cfb-hq/news/dwayne-the-rock-johnson-apologizes-espn-during-college-gameday",
+        "https://bleacherreport.com/articles/25536025-rock-slams-pat-mcafee-through-table-viral-video-wwe-miami-icon-espn-college-gameday"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVnX400jqytwbnNhf3s2Ng3Ce-PEXRmF2JTdUA5qBDPEGl9VmpYRA51bV_dNo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50549970/the-rock-ends-epic-gameday-entrance-slamming-mcafee-table",
+          "title": "The Rock ends epic 'GameDay' entrance by slamming McAfee through table",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVnX400jqytwbnNhf3s2Ng3Ce-PEXRmF2JTdUA5qBDPEGl9VmpYRA51bV_dNo"
+        },
+        {
+          "url": "https://www.si.com/fannation/college/cfb-hq/news/dwayne-the-rock-johnson-apologizes-espn-during-college-gameday",
+          "title": "Dwayne ‘The Rock’ Johnson Apologizes to ESPN During College GameDay",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSNOa0pnvMNeKvao3O-AY33QcE5Bn7U0Vrn8sSZOD7fUMePPKzl8I3aaHDiI8k"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536025-rock-slams-pat-mcafee-through-table-viral-video-wwe-miami-icon-espn-college-gameday",
+          "title": "The Rock Slams Pat McAfee Through a Table in Viral Video of WWE, Miami Icon on ESPN College GameDay",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiqnZgGeLQLjU3V1l4yKvuBNFNSyo-6rSARcgbWqr8RqP6KNq48v1ZwY1xSBY"
+        }
+      ]
+    },
+    {
+      "query": "jaime munguia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "jason kelce",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:40:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/taylor-swift-niece-wyatt-cheer-on-travis-kelce-kansas-city-chiefs-game-12274200",
+        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318207362.html",
+        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-reaction-travis-kelce-181459354.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPIBXMMRG2hZh0gsu0eorUQD-0_v8qOFEURaek6-g-aUy19LeYnY8LgrUous4",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/taylor-swift-niece-wyatt-cheer-on-travis-kelce-kansas-city-chiefs-game-12274200",
+          "title": "Taylor Swift Embraces Her Aunt Duties With Niece Wyatt, 7, While Celebrating Travis Kelce’s Touchdown",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPIBXMMRG2hZh0gsu0eorUQD-0_v8qOFEURaek6-g-aUy19LeYnY8LgrUous4"
+        },
+        {
+          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318207362.html",
+          "title": "Taylor Swift and Travis Kelce: Seven photos from Chiefs-Cardinals game",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6U5i-wVyOFSrrWXyf8-WzYe0ehHfwTqDU5iN0SSukmLUUGyzaXhEbygL1q3g"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-reaction-travis-kelce-181459354.html",
+          "title": "Taylor Swift’s Reaction to Travis Kelce’s Touchdowns Sparks ‘Curious’ Observation From Expert",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNbO8HJagbl_qSL7nCdlA7J62ZRlFrheqSK0E4nayOlUtwiF5yZP1vuBEP06o"
+        }
+      ]
+    },
+    {
+      "query": "steve harvey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:40:00Z",
+      "related_news_urls": [
+        "https://www.dailybulletin.com/2026/11/22/steve-harvey-the-dry-wit-behind-only-in-la-newspaper-column-dies/",
+        "https://www.espn.com/college-football/story/_/id/50519786/bottom-10-week-11-clemson-steve-harvey",
+        "https://www.presstelegram.com/2026/11/12/grunion-gazette-l-a-times-columnist-steve-harvey-dies-at-80/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-RBpMmaRVL30OEOOR3BBNUDgUFBQFKKZMjWaA5dANZUrFKcw_4VQZ8jIfo8s",
+      "image_credit": "Daily Bulletin",
+      "news": [
+        {
+          "url": "https://www.dailybulletin.com/2026/11/22/steve-harvey-the-dry-wit-behind-only-in-la-newspaper-column-dies/",
+          "title": "Steve Harvey, the dry wit behind ‘Only in LA’ newspaper column, dies",
+          "publisher": "Daily Bulletin",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-RBpMmaRVL30OEOOR3BBNUDgUFBQFKKZMjWaA5dANZUrFKcw_4VQZ8jIfo8s"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50519786/bottom-10-week-11-clemson-steve-harvey",
+          "title": "Bottom 10 after Week 11: Paying tribute to our founding father",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTslGSVE1UFqC_UM8IAHMBEN-Cz8VTjnVLdwwgTJ-oZNap6IZqN8EtOFS9C4Fo"
+        },
+        {
+          "url": "https://www.presstelegram.com/2026/11/12/grunion-gazette-l-a-times-columnist-steve-harvey-dies-at-80/",
+          "title": "Grunion Gazette, L.A. Times columnist Steve Harvey dies at 80",
+          "publisher": "Long Beach Press-Telegram",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZPARhksUkFjrg4Vv95D9gQYAVzvB0y0iWYG-zkDwHDrJre3hXh8kSjGAa9OA"
+        }
+      ]
+    },
+    {
+      "query": "usher chris brown tour fire performer",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T02:10:00Z",
+      "published_at": "2026-11-24T02:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/trey-hendrickson-injury-latest-news-005120263.html",
-        "https://www.fantasypros.com/nfl/news/621877/trey-hendrickson-knee-questionable-to-return.php",
-        "https://clutchpoints.com/nfl/baltimore-ravens/trey-hendrickson-injury-adds-to-ravens-train-wreck-season"
+        "https://www.tmz.com/2026/11/22/usher-and-chris-brown-tour-fire-performer-falls-off-stage/",
+        "https://www.cleveland.com/entertainment/2026/11/performer-falls-off-stage-engulfed-in-flames-during-major-concert.html",
+        "https://www.complex.com/music/a/markelibert/usher-chris-brown-fire-performer-falls-new-orleans"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLVNb8WSEXurwO23WPt6rEJ12sHodplKkvE9r1EuV1utHfpeCqt3o--TqPBEo",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaTNVA7Bc6wsYWuhHUhr_idanMOfhuQWCZD4dLeg71JIZJCW_DLTJj_P2Ec1k",
+      "image_credit": "TMZ",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/trey-hendrickson-injury-latest-news-005120263.html",
-          "title": "Trey Hendrickson Injury Update: Latest News on Ravens DE After Leaving Panthers Game",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.tmz.com/2026/11/22/usher-and-chris-brown-tour-fire-performer-falls-off-stage/",
+          "title": "Usher & Chris Brown's Tour: Fire Performer Falls Off Stage In Flames",
+          "publisher": "TMZ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLVNb8WSEXurwO23WPt6rEJ12sHodplKkvE9r1EuV1utHfpeCqt3o--TqPBEo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaTNVA7Bc6wsYWuhHUhr_idanMOfhuQWCZD4dLeg71JIZJCW_DLTJj_P2Ec1k"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/621877/trey-hendrickson-knee-questionable-to-return.php",
-          "title": "Trey Hendrickson (knee) questionable to return",
-          "publisher": "FantasyPros",
+          "url": "https://www.cleveland.com/entertainment/2026/11/performer-falls-off-stage-engulfed-in-flames-during-major-concert.html",
+          "title": "Performer falls off stage engulfed in flames during major concert",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5dwFGGgfMcoPCjuPqhp2I_wSQrtkPlL05VEspPQdlJKBelBGPsqTNj8UMN8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAplOIjFHuDsEA5YwLuXmSxnGMMOt_xM3-EncHC0e3Xm9uXQP-_4om7AUNckY"
         },
         {
-          "url": "https://clutchpoints.com/nfl/baltimore-ravens/trey-hendrickson-injury-adds-to-ravens-train-wreck-season",
-          "title": "Ravens news: Trey Hendrickson suffers injury scare amid BAL's train-wreck season",
-          "publisher": "ClutchPoints",
+          "url": "https://www.complex.com/music/a/markelibert/usher-chris-brown-fire-performer-falls-new-orleans",
+          "title": "Performer Twirling Fire Batons at Usher and Chris Brown Concert Falls off Stage Surrounded by Flames",
+          "publisher": "Complex",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjBBgReaRVZKeYorOt61gh9zkzqzEbdeu3y0T0c6FKc29YMvpvbPR9AT9dFLU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJIc04VODbPUdbQb0Pi442PFxDbcabrfUDKOb24ZuEJ6WJ4J_jlkxK9U95tdw"
         }
       ]
     },
     {
-      "query": "spurs vs kings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T02:00:00Z",
+      "query": "bryan cook",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-missing-first-game-of-season-due-to-back-tightness-deaaron-fox-also-out-for-game-vs-kings-021655694.html",
-        "https://sports.yahoo.com/articles/spurs-ruled-victor-wembanyama-aaron-015354344.html",
-        "https://www.poundingtherock.com/spurs-game-previews/110591/game-preview-san-antonio-spurs-vs-sacramento-kings"
+        "https://sports.yahoo.com/articles/bengals-bryan-cook-suffers-injury-023647371.html",
+        "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/23/bryan-cook-injured-bengals-commanders-monday-night/92509820007/",
+        "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/23/bengals-bryan-cook-suffers-injury-commanders/92935930007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEwMbS7anEacn5mTICfAIInQLG4csYpAvQ4KIymu2TRqpQ3XhCwoebCjWBo0Y",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWs1hO94PwtCM_9ypzv_OSPLI1MQQcR9zD3uddlktjlkNBA0IKetpJW-tKEI",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-missing-first-game-of-season-due-to-back-tightness-deaaron-fox-also-out-for-game-vs-kings-021655694.html",
-          "title": "Victor Wembanyama missing first game of season due to back tightness, De'Aaron Fox also out for game vs. Kings",
+          "url": "https://sports.yahoo.com/articles/bengals-bryan-cook-suffers-injury-023647371.html",
+          "title": "Bengals’ Bryan Cook suffers injury vs. Commanders",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEwMbS7anEacn5mTICfAIInQLG4csYpAvQ4KIymu2TRqpQ3XhCwoebCjWBo0Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWs1hO94PwtCM_9ypzv_OSPLI1MQQcR9zD3uddlktjlkNBA0IKetpJW-tKEI"
         },
         {
-          "url": "https://sports.yahoo.com/articles/spurs-ruled-victor-wembanyama-aaron-015354344.html",
-          "title": "Spurs have ruled Victor Wembanyama and De’Aaron Fox …",
+          "url": "https://www.cincinnati.com/story/sports/nfl/bengals/2026/11/23/bryan-cook-injured-bengals-commanders-monday-night/92509820007/",
+          "title": "Bengals safety Bryan Cook injures ankle vs Commanders Monday night",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtRexRQXIDWvgVjuhyjmxYMDiE1JZ3h7jB7r-lDXGTOYoRLruqhs0abvmNuSY"
+        },
+        {
+          "url": "https://bengalswire.usatoday.com/story/sports/nfl/bengals/2026/11/23/bengals-bryan-cook-suffers-injury-commanders/92935930007/",
+          "title": "Bengals’ Bryan Cook suffers injury vs. Commanders",
+          "publisher": "Bengals Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8jvhqMEdiN-95SRjQAo3CZGK9P9kpjU3setcFuN88Y5kUuYesu1Iv3BDRWHo"
+        }
+      ]
+    },
+    {
+      "query": "matthew stafford",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/full-practice-matthew-stafford-monday-220418035.html",
+        "https://www.aol.com/articles/full-practice-matthew-stafford-monday-220418000.html",
+        "https://sports.yahoo.com/articles/rams-puka-nacua-era-probably-180142150.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9YkELhCRpYuOvu6I7KLrgTk6hY4JahjkysPTRhUFNhhzQa-lSzFlXoFMhBhY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/full-practice-matthew-stafford-monday-220418035.html",
+          "title": "Full practice for Matthew Stafford Monday",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6P9XuBwe9Yxl9F1wHN2rYq4wxAggxgydsoZgs3AX79r8sGqrhsSOi3C27ih4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9YkELhCRpYuOvu6I7KLrgTk6hY4JahjkysPTRhUFNhhzQa-lSzFlXoFMhBhY"
         },
         {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/110591/game-preview-san-antonio-spurs-vs-sacramento-kings",
-          "title": "Game Preview: San Antonio Spurs vs. Sacramento Kings",
-          "publisher": "Pounding The Rock",
+          "url": "https://www.aol.com/articles/full-practice-matthew-stafford-monday-220418000.html",
+          "title": "Full practice for Matthew Stafford Monday",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT380pcwRiY5-qEl3IHKEjGT_H_b7kKbHJIHj-WbR9C_0tI3D0LdkCb1SlhS2Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7GJuXP0fbQmWmPk4LHXlPpOcyYrmTvYl6NrQumo3SIU1zvYlNDeuPqFZnx3A"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/rams-puka-nacua-era-probably-180142150.html",
+          "title": "Rams’ Puka Nacua era ‘probably’ over after NFL suspension, injuries",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuB-0OxWDsXbu4XUC6bDAcVEGc1pdhxID2gRES_9I5Nc-1cBdo8iVucsOCgvw"
+        }
+      ]
+    },
+    {
+      "query": "jazz - lakers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lakers-optimistic-austin-reaves-availability-022245376.html",
+        "https://sports.yahoo.com/articles/lakers-optimistic-austin-reaves-return-015359901.html",
+        "https://www.hoopsrumors.com/2026/11/injury-notes-reaves-haliburton-antetokounmpo-traore-sixers.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSds48MaErq_lM1idHMhRQw1xpwbzc9c2oHRWDAVOXH_QdBdejUQM6svzuSLTM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-optimistic-austin-reaves-availability-022245376.html",
+          "title": "Lakers optimistic about Austin Reaves’ availability after star guard’s latest step",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSds48MaErq_lM1idHMhRQw1xpwbzc9c2oHRWDAVOXH_QdBdejUQM6svzuSLTM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-optimistic-austin-reaves-return-015359901.html",
+          "title": "Lakers 'optimistic' Austin Reaves will return this week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjXqRrnGp-9Ddf7_nQ3jF-eVfujovz_cZUUlDzOLLVZXn2CA7FOqa25IVZE0s"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/injury-notes-reaves-haliburton-antetokounmpo-traore-sixers.html",
+          "title": "Injury Notes: Reaves, Haliburton, Antetokounmpo, Traore, Sixers",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQwlEFLw-l2b_bRvFppaQF2QemFpiAnPxsHQY2c0KkYe2SzK-jMmZi0l17vew"
+        }
+      ]
+    },
+    {
+      "query": "derek hough",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/derek-hough-says-neighbor-really-inappropriate-physically-kid-12275560",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/dwts-derek-hough-documentary-sexual-abuse-childhood/92926730007/",
+        "https://pagesix.com/2026/11/23/celebrity-news/dancing-with-the-stars-judge-derek-hough-reveals-he-was-sexually-abused-as-a-child-by-utah-neighbor/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhscEQqPR-hfJcq8mS34Usm-sP3i4ozWFuzSYWiIxo0YVtkptQfzb2dvb_I-8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/derek-hough-says-neighbor-really-inappropriate-physically-kid-12275560",
+          "title": "Derek Hough Says a Neighbor Was ‘Really Inappropriate with Me Physically’ as a Kid",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhscEQqPR-hfJcq8mS34Usm-sP3i4ozWFuzSYWiIxo0YVtkptQfzb2dvb_I-8"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/dwts-derek-hough-documentary-sexual-abuse-childhood/92926730007/",
+          "title": "'Dancing with the Stars' judge Derek Hough reveals childhood sexual abuse",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwy4bjRL4m4CjDws-KcorrpPu2WfsykBw4oX31Ifi3gBO0TLC0ezP73Plr8kY"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/23/celebrity-news/dancing-with-the-stars-judge-derek-hough-reveals-he-was-sexually-abused-as-a-child-by-utah-neighbor/",
+          "title": "'Dancing With the Stars' judge Derek Hough reveals he was sexually abused as a child by Utah neighbor",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLBgbjyT2xcgjZGHr6I8pF2MKCcmOsadvtpthM3sUmB3uFSUzXtuWlMdiX7VY"
         }
       ]
     }
