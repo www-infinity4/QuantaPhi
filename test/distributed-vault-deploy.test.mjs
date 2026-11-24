@@ -244,3 +244,55 @@ test('portable rehearsal preserves dependency and owner security holds and rejec
   assert.equal((await state.list({prefix:'rehearsal:repository-lease:'})).size,0);
  }finally{await state.close();}
 });
+
+
+test('portable rehearsal records one fenced synthetic result and releases only its own lock after restart',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {rehearsePortableClaim,recordPortableRehearsalResult}=await import('../distributed-vault/portable-brain-claim.mjs');
+ const {dir}=queueSnapshot(t),path=join(dir,'brain-state.sqlite'),now=Date.now();
+ let state=openPortableBrainState(path);
+ const key='rehearsal:ticket:fixture-owner:fixture-ticket';
+ const input={ownerHash:'fixture-owner',ticketId:'fixture-ticket',jobId:'TASK-1',runId:'123',runAttempt:1,now};
+ try{
+  await state.put(key,shadowTicket(now));
+  const {reservation}=await rehearsePortableClaim(state,input);
+  const result={...input,now:now+100,leaseId:reservation.leaseId,outcome:'fixture_passed'};
+  assert.equal((await recordPortableRehearsalResult(state,{...result,leaseId:'wrong'})).recorded,false);
+  assert.equal((await state.get(key)).context.color_jobs[0].status,'working');
+  await state.close();state=openPortableBrainState(path);
+  const accepted=await recordPortableRehearsalResult(state,result);
+  assert.equal(accepted.recorded,true);assert.equal(accepted.executionVerified,false);
+  assert.equal(accepted.productionVerified,false);
+  assert.equal((await state.get(key)).context.color_jobs[0].status,'blocked');
+  assert.equal((await state.list({prefix:'rehearsal:repository-lease:'})).size,0);
+  const replay=await recordPortableRehearsalResult(state,result);
+  assert.equal(replay.recorded,false);
+  assert.equal(replay.reason,'fixture_result_already_recorded');
+  assert.equal((await state.list({prefix:'rehearsal:result:'})).size,1);
+  assert.equal((await rehearsePortableClaim(state,input)).reason,'runner_attempt_already_claimed');
+ }finally{await state.close();}
+});
+test('portable rehearsal rejects expired, foreign, changed-ticket and replaced-lock results',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {rehearsePortableClaim,recordPortableRehearsalResult}=await import('../distributed-vault/portable-brain-claim.mjs');
+ const {dir}=queueSnapshot(t),state=openPortableBrainState(join(dir,'brain-state.sqlite')),now=Date.now();
+ const key='rehearsal:ticket:fixture-owner:fixture-ticket',lock='rehearsal:repository-lease:www-infinity4/quantaphi';
+ const input={ownerHash:'fixture-owner',ticketId:'fixture-ticket',jobId:'TASK-1',runId:'123',runAttempt:1,now};
+ try{
+  await state.put(key,shadowTicket(now));
+  const {reservation}=await rehearsePortableClaim(state,input);
+  const result={...input,now:now+100,leaseId:reservation.leaseId,outcome:'fixture_failed'};
+  assert.equal((await recordPortableRehearsalResult(state,{...result,now:reservation.leaseUntil})).recorded,false);
+  assert.equal((await recordPortableRehearsalResult(state,{...result,ownerHash:'fixture-other'})).recorded,false);
+  const original=await state.get(key),changed=structuredClone(original);
+  changed.context.color_jobs[0].instructions='Changed after reservation';
+  await state.put(key,changed);
+  assert.equal((await recordPortableRehearsalResult(state,result)).recorded,false);
+  await state.put(key,original);
+  await state.put(lock,{...reservation,leaseId:'replacement'});
+  assert.equal((await recordPortableRehearsalResult(state,result)).recorded,false);
+  assert.equal((await state.get(lock)).leaseId,'replacement');
+  assert.equal((await state.list({prefix:'rehearsal:result:'})).size,0);
+  assert.equal((await state.get(key)).context.color_jobs[0].status,'working');
+ }finally{await state.close();}
+});
