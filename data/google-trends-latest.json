@@ -3,12 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T22:31:12.521647Z",
+  "checked_at": "2026-11-24T23:01:16.602655Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "iowa state basketball",
+      "query": "tyrone taylor",
       "approx_searches": "500+",
+      "published_at": "2026-11-24T22:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/report-teams-showing-interest-in-tyler-austin",
+        "https://www.mlbtraderumors.com/2026/11/multiple-teams-showing-interest-in-tyler-austin.html",
+        "https://nypost.com/2026/11/23/sports/ex-yankee-tyler-austin-looking-for-stateside-return/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/report-teams-showing-interest-in-tyler-austin",
+          "title": "Report: Teams showing interest in Tyler Austin",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/multiple-teams-showing-interest-in-tyler-austin.html",
+          "title": "Multiple Teams Showing Interest In Tyler Austin",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8aJGjWV2CRwjlhTdG35lAck38lE_7go375GdvpFBdnxHaCsFMx4CDj-brtQA"
+        },
+        {
+          "url": "https://nypost.com/2026/11/23/sports/ex-yankee-tyler-austin-looking-for-stateside-return/",
+          "title": "Ex-Yankee Tyler Austin looking for stateside return — and both New York clubs are interested",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0tdauC19l6HjA_pUOoumYsKaNYpxcQ3HmUi3YpLw7uuaOOzqn8YnxYQwc5k4"
+        }
+      ]
+    },
+    {
+      "query": "creighton basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T22:40:00Z",
+      "related_news_urls": [
+        "https://umhoops.com/2026/11/23/five-thoughts-on-michigan-as-it-heads-to-las-vegas-with-questions-to-answer/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/watch-creighton-vs-michigan-live-213000039.html",
+        "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_ncURny0299Jvnua0zE2cG6mX0qlHjn-iSyHN0kvkB04rYCy_uJEBb1IO3Ho",
+      "image_credit": "UM Hoops.com",
+      "news": [
+        {
+          "url": "https://umhoops.com/2026/11/23/five-thoughts-on-michigan-as-it-heads-to-las-vegas-with-questions-to-answer/",
+          "title": "Five thoughts on Michigan as it heads to Las Vegas with questions to answer",
+          "publisher": "UM Hoops.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_ncURny0299Jvnua0zE2cG6mX0qlHjn-iSyHN0kvkB04rYCy_uJEBb1IO3Ho"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/watch-creighton-vs-michigan-live-213000039.html",
+          "title": "How to watch Creighton vs Michigan: Live stream Players Era 16, College Basketball, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTVqjf7ICdajRrK7Fngb_eCnFBFW8i7MMIMx8619BywncoIFtI1vWj35crAD4"
+        },
+        {
+          "url": "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/",
+          "title": "Michigan men's basketball vs. Creighton: Preview and live thread",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8gVuCBxeU8HrhV-GCxj2mZPfDwJVoAGh5CZPNoffsP-bm-SIoOT6xKoqEdPQ"
+        }
+      ]
+    },
+    {
+      "query": "millonarios - bucaramanga",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T22:40:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+        "https://opanoticias.com/el-clasico-vallecaucano-enciende-la-fecha-2-de-los-cuadrangulares-en-una-jornada-decisiva-del-grupo-b/456850",
+        "https://www.rtvc.gov.co/noticias/millonarios-bucaramanga-radio-nacional"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC2iChqqOeha695Gb35AlsO_xUMiiA8fPrlBWZCSvtC3wgTge-eyGzJVHak1g",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
+          "title": "Millonarios pierde a tres piezas del mediocampo y anuncia sus 20 convocados ante Bucaramanga",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC2iChqqOeha695Gb35AlsO_xUMiiA8fPrlBWZCSvtC3wgTge-eyGzJVHak1g"
+        },
+        {
+          "url": "https://opanoticias.com/el-clasico-vallecaucano-enciende-la-fecha-2-de-los-cuadrangulares-en-una-jornada-decisiva-del-grupo-b/456850",
+          "title": "El clásico vallecaucano enciende la Fecha 2 de los cuadrangulares en una jornada decisiva del Grupo B",
+          "publisher": "Opanoticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUl7UaI0Tuhrsd2yP_STA8cR0jc4JMP8cFwQtgZvcJrfukBxiHc26twxE8_eA"
+        },
+        {
+          "url": "https://www.rtvc.gov.co/noticias/millonarios-bucaramanga-radio-nacional",
+          "title": "Radio Nacional de Colombia transmite un choque determinante entre Millonarios y Bucaramanga por los cuadrangulares",
+          "publisher": "RTVC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3uwt-rfpZWct5Amh0WhV1sbgQ8-hOukyN8p9suKQhV-VR1lt5jEuBkHMzcOM"
+        }
+      ]
+    },
+    {
+      "query": "dow jones industrial average",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-24T22:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
+        "https://finance.yahoo.com/markets/stocks/articles/trading-day-nvidia-bounce-fades-220752904.html",
+        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOpWxP5WXXx-qCuIW4smVrto7FJyD7D0hQjxmxuivnTUsxuQ0jaFNP-YGNHU",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
+          "title": "Nasdaq slumps about 1.5% as Nvidia comeback reverses course and Anthropic breaks IPO price: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOpWxP5WXXx-qCuIW4smVrto7FJyD7D0hQjxmxuivnTUsxuQ0jaFNP-YGNHU"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/trading-day-nvidia-bounce-fades-220752904.html",
+          "title": "Trading Day: Nvidia bounce fades",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVCIMBFaCHO89019WDe4dlrXGT-seeuWgx8ICM5yr7qIPej1SxdTkYmNVBTIo"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+          "title": "Markets Slide as Tech Stocks Partly Reverse Nvidia-Sparked Rally",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
+        }
+      ]
+    },
+    {
+      "query": "dólar estadounidense",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T22:20:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-martes-24-tipo-cambio-22547366.php",
+        "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
+        "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-cae-a-nuevos-minimos-de-cinco-meses-frente-al-dolar-a-pesar-de-la-subida-de-la-inflacion-de-mexico-202611241613"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo",
+      "image_credit": "Dallas News",
+      "news": [
+        {
+          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-martes-24-tipo-cambio-22547366.php",
+          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo"
+        },
+        {
+          "url": "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
+          "title": "Peso liga 5 jornadas de bajas ante el dólar: Así cierra HOY",
+          "publisher": "El Financiero",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPRy-vBRhpECNFMykKm9CWhDAAyXVD47DpLDkQ5bWcarAVbGWiGOzN_LRxCgw"
+        },
+        {
+          "url": "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-cae-a-nuevos-minimos-de-cinco-meses-frente-al-dolar-a-pesar-de-la-subida-de-la-inflacion-de-mexico-202611241613",
+          "title": "USD/MXN: El Peso mexicano cae a nuevos mínimos de cinco meses frente al Dólar a pesar de la subida de la inflación de México",
+          "publisher": "FXStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRywaRcq1i4d6gikJrLKcLZWze5Fkanmb-BrU3iwzvgxqIUBZMJXxvM7lszKzg"
+        }
+      ]
+    },
+    {
+      "query": "classement real madrid – psv eindhoven",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T22:20:00Z",
+      "related_news_urls": [
+        "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/real-madrid-psv_mtc21878582/live-commentary.shtml",
+        "https://www.france24.com/fr/info-en-continu/20261124-ligue-des-champions-le-real-madrid-fait-imploser-le-psv-avec-un-doubl%C3%A9-de-mbapp%C3%A9",
+        "https://www.footmercato.net/a8174654027359470089-real-madrid-fede-valverde-recadre-ses-coequipiers"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4PxEJqvZHoY-VrgRmjcm2ADWg9l0YJt2D7zX8BMn6GZ4iKfUqZxFkZsdMS8",
+      "image_credit": "Eurosport",
+      "news": [
+        {
+          "url": "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/real-madrid-psv_mtc21878582/live-commentary.shtml",
+          "title": "Suivez Real Madrid - PSV EN DIRECT, Ligue des champions, saison 2026/2027, 5e journée",
+          "publisher": "Eurosport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4PxEJqvZHoY-VrgRmjcm2ADWg9l0YJt2D7zX8BMn6GZ4iKfUqZxFkZsdMS8"
+        },
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261124-ligue-des-champions-le-real-madrid-fait-imploser-le-psv-avec-un-doubl%C3%A9-de-mbapp%C3%A9",
+          "title": "Ligue des champions : le Real Madrid fait imploser le PSV avec un doublé de Mbappé",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoQDVZOnkFH62xIeyyrbgteDTg4e2yyaeHaBgnXUnhLUaraaLfZHex3bDX6js"
+        },
+        {
+          "url": "https://www.footmercato.net/a8174654027359470089-real-madrid-fede-valverde-recadre-ses-coequipiers",
+          "title": "Real Madrid : Fede Valverde recadre ses coéquipiers",
+          "publisher": "Foot Mercato",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFn16WrRg6_iRy6WGv0tNwVzjfFMeV-yT_9G2dfrQbJMW5_Mas6RYNuYuwYyw"
+        }
+      ]
+    },
+    {
+      "query": "iowa state basketball",
+      "approx_searches": "1000+",
       "published_at": "2026-11-24T22:10:00Z",
       "related_news_urls": [
         "https://cyclones.com/news/2026/11/23/mens-basketball-primer-iowa-state-vs-san-diego-state",
@@ -42,317 +252,107 @@
       ]
     },
     {
-      "query": "travis scott",
+      "query": "como 1907 vs aek athens f.c. standings",
       "approx_searches": "2000+",
-      "published_at": "2026-11-24T22:00:00Z",
+      "published_at": "2026-11-24T22:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/music/festivals/articles/post-malone-travis-scott-charli-194014644.html",
-        "https://themusicuniverse.com/travis-scott-post-malone-charli-xcx-among-2027-tecate-pal-norte-headliners/",
-        "https://news.pollstar.com/2026/11/24/travis-scott-charli-xcx-post-malone-headlining-tecate-pal-norte-2027/"
+        "https://www.tallahatchienews.ms/node/457362",
+        "https://www.reutersconnect.com/item/soccer-2026-como-vs-aek-athens/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBVR1VFSko",
+        "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjjesMIX3Uefu8fru2GJu6-nrHo3-LtAHGrYyPB97rpcqRyXUaa-KQf7cqu18",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY",
+      "image_credit": "Charleston Sun-Sentinel",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/music/festivals/articles/post-malone-travis-scott-charli-194014644.html",
-          "title": "Post Malone, Travis Scott & Charli xcx to Headline Tecate Pa’l Norte 2027: See the Full Lineup",
-          "publisher": "Yahoo",
+          "url": "https://www.tallahatchienews.ms/node/457362",
+          "title": "Replace Your Title Here",
+          "publisher": "Charleston Sun-Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjjesMIX3Uefu8fru2GJu6-nrHo3-LtAHGrYyPB97rpcqRyXUaa-KQf7cqu18"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
         },
         {
-          "url": "https://themusicuniverse.com/travis-scott-post-malone-charli-xcx-among-2027-tecate-pal-norte-headliners/",
-          "title": "Travis Scott, Post Malone, Charli XCX among 2027 Tecate Pa’l Norte headliners",
-          "publisher": "The Music Universe",
+          "url": "https://www.reutersconnect.com/item/soccer-2026-como-vs-aek-athens/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBVR1VFSko",
+          "title": "Licensable picture: Soccer 2026: Como Vs AEK Athens",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaKhkz2kYzI4k_0BhgF2MPiocDrWUgqpOE19ac-QjZi_0VoH_3naGp_G53f00"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzujjM7UQFuzaWTplvuwArJgx-oMVQ607m8RzqibWaw1ZzYqXmPrf3wew-MPU"
         },
         {
-          "url": "https://news.pollstar.com/2026/11/24/travis-scott-charli-xcx-post-malone-headlining-tecate-pal-norte-2027/",
-          "title": "Travis Scott, Charli xcx, Post Malone Headlining Tecate Pa’l Norte 2027",
-          "publisher": "Pollstar News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwquSYOykbTwvWPmKz1tNI2R8bFbUgnXVMaK8Uejf-_XmsCoM_9NCaLcbtUR4"
-        }
-      ]
-    },
-    {
-      "query": "erling haaland",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T22:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50583931/bayern-munich-jamal-musiala-health-contract",
-        "https://www.bbc.com/sport/football/articles/c9x2ejnypp8jo",
-        "https://www.theguardian.com/football/2026/nov/23/bayern-munich-jamal-musiala-controversy-bundesliga"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyUzupn1YIFJc_A8NyAsrQVZSPTHTYWO9URZJl8Av3aIM6OReaebZ28duaRxo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50583931/bayern-munich-jamal-musiala-health-contract",
-          "title": "Bayern hold 'constructive' talks with Musiala's agents over health, not money",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyUzupn1YIFJc_A8NyAsrQVZSPTHTYWO9URZJl8Av3aIM6OReaebZ28duaRxo"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/c9x2ejnypp8jo",
-          "title": "Bayern hold 'constructive' talks over Musiala's health",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQni5YlOh756A2lRIb2yB3thumQqG0Zoz3Q5RncOJDzoHuPr3lVCqQm19TAzUk"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/23/bayern-munich-jamal-musiala-controversy-bundesliga",
-          "title": "Jamal Musiala controversy the nadir of Bayern Munich’s turbulent week",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkODwXHAPLJRqFMHi3VBWTSd7WHrl16zHSNq8rhGnk0tdZcJbdQCrznUmRXf0"
-        }
-      ]
-    },
-    {
-      "query": "ohare ground stop",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T21:50:00Z",
-      "related_news_urls": [
-        "https://www.fox32chicago.com/news/ground-stop-ohare-airport-staffing",
-        "https://www.foxnews.com/video/6408841897112",
-        "https://www.nbcchicago.com/news/local/heavy-traffic-expected-at-ohare-airport-this-week-with-police-cracking-down-on-this-popular-tactic/4020437/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYSsNHukw6n3S_lbAAhDLq7hTCyXXGldc-fENp7XAWcExg9SltAe5b4qwi4-c",
-      "image_credit": "FOX 32 Chicago",
-      "news": [
-        {
-          "url": "https://www.fox32chicago.com/news/ground-stop-ohare-airport-staffing",
-          "title": "Ground stop issued at O'Hare Airport due to staffing issues",
-          "publisher": "FOX 32 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYSsNHukw6n3S_lbAAhDLq7hTCyXXGldc-fENp7XAWcExg9SltAe5b4qwi4-c"
-        },
-        {
-          "url": "https://www.foxnews.com/video/6408841897112",
-          "title": "FAA issues ground-stop for some flights at Chicago O’Hare airport",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIKOG0zPffONlVasc1Fl10u5DhT1VkmxdmyHV0NzfpVbJ1eS5Tj_kFKQ7hhWI"
-        },
-        {
-          "url": "https://www.nbcchicago.com/news/local/heavy-traffic-expected-at-ohare-airport-this-week-with-police-cracking-down-on-this-popular-tactic/4020437/",
-          "title": "Heavy traffic expected at O'Hare Airport this week, with police cracking down on this popular tactic",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWr_tIp20w7T0UW5xeZ6mS3sRvg5pA9hz1bEVWUWeRuzIF3pWKforYwOSgOWI"
-        }
-      ]
-    },
-    {
-      "query": "vinícius júnior",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T21:50:00Z",
-      "related_news_urls": [
-        "https://www.uol.com.br/esporte/futebol/colunas/futebol-pelo-mundo/2026/11/23/brasileiros-pelo-mundo-vini-ressurge-no-real-atacantes-brilham-na-premier.htm",
-        "https://www.goal.com/br/not%C3%ADcias/vinicius-e-diomande-sao-as-novidades-da-escalacao-surpreendente-do-real-madrid-contra-o-psv/bltf63c850ad6f8f6e8",
-        "https://trivela.com.br/europa/mourinho-ma-fase-vinicius-junior-psg-busca-atacante-monaco-crise-confira-resumo-dia/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVklNvx2wB-YJhDrTLwljDI1WuZGvwJEn7lSJrE_SJsQTYEdrOyuc75dzNc_k",
-      "image_credit": "UOL",
-      "news": [
-        {
-          "url": "https://www.uol.com.br/esporte/futebol/colunas/futebol-pelo-mundo/2026/11/23/brasileiros-pelo-mundo-vini-ressurge-no-real-atacantes-brilham-na-premier.htm",
-          "title": "Brasileiros pelo mundo: Vini ressurge no Real, atacantes brilham na Premier",
-          "publisher": "UOL",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVklNvx2wB-YJhDrTLwljDI1WuZGvwJEn7lSJrE_SJsQTYEdrOyuc75dzNc_k"
-        },
-        {
-          "url": "https://www.goal.com/br/not%C3%ADcias/vinicius-e-diomande-sao-as-novidades-da-escalacao-surpreendente-do-real-madrid-contra-o-psv/bltf63c850ad6f8f6e8",
-          "title": "Vinícius e Diomande são as novidades da escalação surpreendente do Real Madrid contra o PSV",
+          "url": "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755",
+          "title": "Alvini criticised after Milan-Frosinone? Fabregas defends him: \"I do the same as him and want to keep hearing he's an excellent coach\"",
           "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnXXr_-Pu-OZibIM9pr7Jg6COWZODWW6bdGr-zURoiy8Q1_HZ63oSo7Ed5qsY"
-        },
-        {
-          "url": "https://trivela.com.br/europa/mourinho-ma-fase-vinicius-junior-psg-busca-atacante-monaco-crise-confira-resumo-dia/",
-          "title": "Mourinho explica má fase de Vini Jr, PSG busca atacante, Monaco em crise e mais: Confira o resumo do dia",
-          "publisher": "Trivela",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8zX0DRNPshOHVTJ_sXzDl1NTjgv9Vc-M95rtGZ88o_steVAAqYMcJGf9WBkk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkar14at7kWXXUB6YnrvW9l7LrUZNyPyRdEaQBW-DH7XYBwczG8rt_NKEpQhc"
         }
       ]
     },
     {
-      "query": "isaac yiadom",
+      "query": "players era 16 bracket",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T21:50:00Z",
+      "published_at": "2026-11-24T22:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/bears-add-cb-isaac-yiadom-220542316.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-24/brandon-aiyuk-clears-waivers",
-        "https://heavy.com/sports/nfl/washington-commanders/isaac-yiadom-claimed-bears-waivers/"
+        "https://www.ncaa.com/news/basketball-men/article/2026-11-23/2026-players-era-16-bracket-schedule-scores",
+        "https://sports.yahoo.com/general/videos/players-era-16-offers-early-164353125.html",
+        "https://www.forbes.com/sites/adamzagoria/2026/11/24/players-era-16-kicks-off-with-7-ranked-teams-players-era-8-viewership-up-43/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQcBkmpJO_7-LCwyyJh-eTJrTGq-QUjF9DOOLqij4RTExSi9OQfHzuS1_y9N0",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s",
+      "image_credit": "NCAA.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/articles/bears-add-cb-isaac-yiadom-220542316.html",
-          "title": "Bears add CB Isaac Yiadom off waivers",
+          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-23/2026-players-era-16-bracket-schedule-scores",
+          "title": "2026 Players Era 16: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s"
+        },
+        {
+          "url": "https://sports.yahoo.com/general/videos/players-era-16-offers-early-164353125.html",
+          "title": "Players Era 16 Offers an Early NCAA Tournament Test",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQcBkmpJO_7-LCwyyJh-eTJrTGq-QUjF9DOOLqij4RTExSi9OQfHzuS1_y9N0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLuQPl1QLxkzIu3WpSLg3-rwKbV5GyFQafgbGTLFecA1P2tLhbh_tY39eN0rM"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-24/brandon-aiyuk-clears-waivers",
-          "title": "Brandon Aiyuk clears waivers",
-          "publisher": "NBC Sports",
+          "url": "https://www.forbes.com/sites/adamzagoria/2026/11/24/players-era-16-kicks-off-with-7-ranked-teams-players-era-8-viewership-up-43/",
+          "title": "Players Era 16 Kicks Off With 7 Ranked Teams; Players Era 8 Viewership Up 43%",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZj-on0aKXuehJYvjlP2Y-zY4jGaOIx7vWlekaaDfCD5PfcCsw_oykEV0WGJA"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/washington-commanders/isaac-yiadom-claimed-bears-waivers/",
-          "title": "Former Commanders Cornerback Receives Big Career News After Recent Release",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjQPp1I1L8bAtz4AuI3JPon1nxMAmfWQm_m45yQ56lChfxK-b8GzD8tex2mS4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhn6fZUCGsmvCYzLmVVRSj_wYVlv2udAXKE5ZM-ngQ3Y3-KRXG5vF9I3htgC0"
         }
       ]
     },
     {
-      "query": "geoffrey hinton",
+      "query": "friendsgiving",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T21:50:00Z",
+      "published_at": "2026-11-24T22:10:00Z",
       "related_news_urls": [
-        "https://fortune.com/2026/11/24/geoffrey-hinton-radiologists-ai-predictions/",
-        "https://finance.yahoo.com/healthcare/articles/geoffrey-hinton-said-stop-training-133000635.html",
-        "https://www.rappler.com/voices/newsletters/rapplers-best-be-very-very-afraid/"
+        "https://www.usatoday.com/story/life/culture/2026/11/24/friendsgiving-bailing-culture/92924652007/",
+        "https://www.yahoo.com/lifestyle/articles/14-people-rsvp-d-yes-204300638.html",
+        "https://demokratis.co.id/en/friendsgiving-guests-fail-attend"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrmd6ssggmOXru4asaY9UGSs8EoikLoIpGFB5h-CfBPVWwcAEypPs1tX2mOk",
-      "image_credit": "Fortune",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGF2kXO02wveYSYZHoDjmIEvi1zZ27pypqA_K7m5QeGkn2UUfqPaGLfQ6h8OI",
+      "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://fortune.com/2026/11/24/geoffrey-hinton-radiologists-ai-predictions/",
-          "title": "Geoffrey Hinton said to stop training radiologists. A decade later, the Bay Area is 600 imaging techs short",
-          "publisher": "Fortune",
+          "url": "https://www.usatoday.com/story/life/culture/2026/11/24/friendsgiving-bailing-culture/92924652007/",
+          "title": "Almost no one showed up to his Friendsgiving. What it says about 'bailing culture'",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrmd6ssggmOXru4asaY9UGSs8EoikLoIpGFB5h-CfBPVWwcAEypPs1tX2mOk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGF2kXO02wveYSYZHoDjmIEvi1zZ27pypqA_K7m5QeGkn2UUfqPaGLfQ6h8OI"
         },
         {
-          "url": "https://finance.yahoo.com/healthcare/articles/geoffrey-hinton-said-stop-training-133000635.html",
-          "title": "Geoffrey Hinton said to stop training radiologists. A decade later, the Bay Area is 600 imaging techs short",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.yahoo.com/lifestyle/articles/14-people-rsvp-d-yes-204300638.html",
+          "title": "‘14 People RSVP’d Yes’: Redditor Says Friendsgiving Plans Took an Unexpected Turn When Guests Failed to Follow Through",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_RJyNlA4FarQMVD5p4LVo4vh_pO8CHndvqX7jJP6CPd9_mJgWTDHPdrIqFZQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOaGkSBFeruu0KOXww9A7IUcLWuc4HAoLaUoVNhuF_QrUsI3ngKn-iDr4tYrE"
         },
         {
-          "url": "https://www.rappler.com/voices/newsletters/rapplers-best-be-very-very-afraid/",
-          "title": "[Rappler’s Best] ‘Be very, very afraid’",
-          "publisher": "Rappler",
+          "url": "https://demokratis.co.id/en/friendsgiving-guests-fail-attend",
+          "title": "Friendsgiving Host Welcomes Five Guests After 25 Invitations",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1THNsNrkcxe-9Lt4lzCqkdGVJvyfIwWqJatmt5RQPWmTE6ds6FfuKbqtl_Zo"
-        }
-      ]
-    },
-    {
-      "query": "paris saint-germain f.c.",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T21:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50584788/psg-luis-enrique-injuries-desire-doue-khvicha-kvaratskhelia",
-        "https://www.nytimes.com/athletic/7800639/2026/11/22/psg-desire-doue-acl-injury/",
-        "https://www.theguardian.com/football/2026/nov/23/psg-best-attack-europe-desire-doue-acl-khvicha-kvaratskhelia-luis-enrique"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvmAYXioCvBhNW9XS0dO1d6gk-zXTSFW5W_-pga2X3PX3dH2QOpjf_zmYt5Kc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50584788/psg-luis-enrique-injuries-desire-doue-khvicha-kvaratskhelia",
-          "title": "Luis Enrique insists PSG won't 'start crying' over Doué, Kvaratskhelia injuries",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvmAYXioCvBhNW9XS0dO1d6gk-zXTSFW5W_-pga2X3PX3dH2QOpjf_zmYt5Kc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7800639/2026/11/22/psg-desire-doue-acl-injury/",
-          "title": "Paris Saint-Germain’s Desire Doue sustains ACL injury in right knee - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8wni7aJrHelRRIGhuOBKDuecXfPQvpO8GJGZCOyAt2_E1jPpG8_oru6ENr7o"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/23/psg-best-attack-europe-desire-doue-acl-khvicha-kvaratskhelia-luis-enrique",
-          "title": "PSG had the best attack in Europe but Doué and Kvaratskhelia injuries will test Luis Enrique",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAPvm80OP0lUOwlZGF2ZMTXlfZTUwEEkb482ZB6tp4Lz_5bURFtxoUg4q6ack"
-        }
-      ]
-    },
-    {
-      "query": "tulsa basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T21:50:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/tulsa-golden-hurricane-vs-illinois-state-redbirds-prediction-odds-2026-11-24/",
-        "https://www.bleachernation.com/how-to-watch/2026/11/24/how-to-watch-tulsa-golden-hurricane-vs-illinois-state-redbirds-live-stream-or-on-tv/",
-        "https://bvmsports.com/2026/11/22/tulsa-heads-west-for-acrisure-series-after-mississippi-state-loss/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/tulsa-golden-hurricane-vs-illinois-state-redbirds-prediction-odds-2026-11-24/",
-          "title": "Tulsa vs Illinois State Prediction, Picks & Odds | 24 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
-        },
-        {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/24/how-to-watch-tulsa-golden-hurricane-vs-illinois-state-redbirds-live-stream-or-on-tv/",
-          "title": "How to Watch Tulsa Golden Hurricane vs. Illinois State Redbirds: Live Stream or on TV",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTxqOcDSfe6Fp_A6W2_m3SEu3S7yEt5HfeMh4F_Fz5qp1cXiSma0FCKJXLqLQ"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/22/tulsa-heads-west-for-acrisure-series-after-mississippi-state-loss/",
-          "title": "Tulsa Heads West for Acrisure Series After Mississippi State Loss",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSploVxlMkBUnKxsk5tU9996ZqJAFAtlTEKLqJspwT0WpsI7o0cYNwT3Ne8WE"
-        }
-      ]
-    },
-    {
-      "query": "amba stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T21:50:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/markets/earnings/26/11/63611425/ambarella-stock-crashes-after-q3-print-heres-what-you-need-to-know",
-        "https://finimize.com/content/ambarellas-q4-outlook-overshadowed-a-small-q3-beat-miss",
-        "https://seekingalpha.com/news/4676401-ambarella-plunges-44-after-hours-on-earnings-miss"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5Ry3JFWL1IjzSbn56VRT4HhhE0EubDAGuM1Xs6WT-pz0W0f1tNV_2drFFBE",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/markets/earnings/26/11/63611425/ambarella-stock-crashes-after-q3-print-heres-what-you-need-to-know",
-          "title": "Ambarella Stock Crashes After Q3 Print: Here's What You Need to Know",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf5Ry3JFWL1IjzSbn56VRT4HhhE0EubDAGuM1Xs6WT-pz0W0f1tNV_2drFFBE"
-        },
-        {
-          "url": "https://finimize.com/content/ambarellas-q4-outlook-overshadowed-a-small-q3-beat-miss",
-          "title": "Ambarella’s Q4 Outlook Overshadowed A Small Q3 Beat Miss",
-          "publisher": "Finimize",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6PkChGuA6C8uu7BG8Y9E4HjwAMF7p75WEdeU9JZ_2YQi4lag6QKskq-yeRiU"
-        },
-        {
-          "url": "https://seekingalpha.com/news/4676401-ambarella-plunges-44-after-hours-on-earnings-miss",
-          "title": "Ambarella plunges 44% after hours on earnings miss (AMBA:NASDAQ)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfVQTTClfDlP3D_iyq4EF5ENcQx86Mr3teAlKXSqww-VGiiSGi66vIGYBeumM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv78A1zOriIU9nTigVxzvj-skcCkFt5WvPxHpf4sFvwc3fQV68YouSDPAPYEs"
         }
       ]
     }
