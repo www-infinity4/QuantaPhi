@@ -71,3 +71,48 @@ test('portable queue refuses absent snapshots and missing owner scope without cr
  assert.equal(existsSync(missing),false);
  await assert.rejects(readPortableQueue({dbPath,ownerHash:''}),/scope/i);
 });
+
+
+test('portable Brain transaction serializes concurrent reservation attempts and survives restart',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),dbPath=join(dir,'brain-state.sqlite');
+ let state=openPortableBrainState(dbPath);
+ const reserve=async id=>state.transaction(async tx=>{
+  if(await tx.get('runner-claim:fixture:1'))return false;
+  await tx.put('writer:fixture',{leaseId:id});
+  await Promise.resolve();
+  await tx.put('repository-lease:fixture',{leaseId:id});
+  await tx.put('runner-claim:fixture:1',id);
+  return true;
+ });
+ try{
+  assert.deepEqual(await Promise.all([reserve('first'),reserve('second')]),[true,false]);
+  await state.close();
+  state=openPortableBrainState(dbPath);
+  assert.deepEqual(await state.get('writer:fixture'),{leaseId:'first'});
+  assert.equal(await state.get('runner-claim:fixture:1'),'first');
+  assert.deepEqual([...await state.list({prefix:'repository-lease:'})],[['repository-lease:fixture',{leaseId:'first'}]]);
+ }finally{await state.close();}
+});
+test('portable Brain rolls back incomplete reservations and invalidates escaped transaction handles',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),state=openPortableBrainState(join(dir,'brain-state.sqlite'));
+ let escaped;
+ try{
+  await state.put('writer:fixture',{leaseId:'prior'});
+  await assert.rejects(state.transaction(async tx=>{
+   escaped=tx;
+   await tx.put('writer:fixture',{leaseId:'uncommitted'});
+   await tx.put('runner-claim:fixture:1','uncommitted');
+   throw Error('fixture rollback');
+  }),/fixture rollback/);
+  assert.deepEqual(await state.get('writer:fixture'),{leaseId:'prior'});
+  assert.equal(await state.get('runner-claim:fixture:1'),undefined);
+  await assert.rejects(async()=>escaped.put('runner-claim:fixture:1','escaped'),/transaction_closed/);
+  await state.put('repository-lease:other%',{leaseId:'other'});
+  await state.put('repository-lease:otherx',{leaseId:'different'});
+  assert.equal((await state.list({prefix:'repository-lease:other%'})).size,1);
+  await state.delete('writer:fixture');
+  assert.equal(await state.get('writer:fixture'),undefined);
+ }finally{await state.close();}
+});
