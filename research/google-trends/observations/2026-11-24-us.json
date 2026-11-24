@@ -3,316 +3,358 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T03:31:37.014627Z",
+  "checked_at": "2026-11-24T04:01:24.206443Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "billie jean king",
+      "query": "quinn hughes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T03:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+        "https://www.kare11.com/article/sports/nhl/wild/minnesota-wild-place-d-quinn-hughes-on-ir-activate-g-filip-gustavsson/89-dc75f989-caec-46a3-a277-a997f56b4594",
+        "https://hockeywilderness.com/news-rumors/minnesota-wild/theres-a-silver-lining-to-quinn-hughes-injury-r31816/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/quinn-hughes-injury-status-report-november-21-2026",
+          "title": "Hughes placed on injured reserve with undisclosed injury",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7LupQoXQgKKFoNJz88eMsawjKCUcQT1eZFCWagqCcIheC-_V6d15iIIc_QkY"
+        },
+        {
+          "url": "https://www.kare11.com/article/sports/nhl/wild/minnesota-wild-place-d-quinn-hughes-on-ir-activate-g-filip-gustavsson/89-dc75f989-caec-46a3-a277-a997f56b4594",
+          "title": "Minnesota Wild place D Quinn Hughes on IR; activate G Filip Gustavsson",
+          "publisher": "kare11.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT15NWR9iTNAArWkHOQvIHjR_5YolOUIXpz90XlYPsKkFNxO4bHonunBOu8xjA"
+        },
+        {
+          "url": "https://hockeywilderness.com/news-rumors/minnesota-wild/theres-a-silver-lining-to-quinn-hughes-injury-r31816/",
+          "title": "There's A Silver Lining To Quinn Hughes' Injury",
+          "publisher": "Hockey Wilderness",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrLRGWq3bbEREfu9n054FQGsfe0cpk2885k9_ePv6K4772kIadmokup03VVhY"
+        }
+      ]
+    },
+    {
+      "query": "cameron carr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T03:40:00Z",
+      "related_news_urls": [
+        "https://lakersnation.com/lakers-news-luka-doncic-believes-cameron-carr-deserves-more-minutes/",
+        "https://nypost.com/2026/11/21/sports/lakers-cameron-carr-big-opportunity-rotation/",
+        "https://sports.yahoo.com/articles/quentin-grimes-praises-lakers-rookie-143614721.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQphZg4gpPCCOO1lK5sKo4QAp1IqJKvgvvoYa9d8Ag6VZEkPtx1K3rg71u9jQ",
+      "image_credit": "Lakers Nation",
+      "news": [
+        {
+          "url": "https://lakersnation.com/lakers-news-luka-doncic-believes-cameron-carr-deserves-more-minutes/",
+          "title": "Lakers News: Luka Doncic Believes Cameron Carr Deserves More Minutes",
+          "publisher": "Lakers Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQphZg4gpPCCOO1lK5sKo4QAp1IqJKvgvvoYa9d8Ag6VZEkPtx1K3rg71u9jQ"
+        },
+        {
+          "url": "https://nypost.com/2026/11/21/sports/lakers-cameron-carr-big-opportunity-rotation/",
+          "title": "Lakers rookie makes most of biggest opportunity he’s gotten so far",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwh_Oum4d-RYLiPcxfYCEGISw-S3GB-_FR2AIGoUT01M4l25FP3W-huCb-RB4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/quentin-grimes-praises-lakers-rookie-143614721.html",
+          "title": "Quentin Grimes Praises Lakers Rookie in Win Over Kings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY2OcyZw7LBo2_PzK0t4E4MVNNFRNCch0zYsBQtx3HqInuIop25M4vkmBBxB0"
+        }
+      ]
+    },
+    {
+      "query": "la cascara motel safe code",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T03:10:00Z",
+      "published_at": "2026-11-24T03:40:00Z",
       "related_news_urls": [
-        "https://www.billiejeankingcup.com/en/news/watch-highlights-as-gauff-and-townsend-clinch-play-off-tie-for-usa",
-        "https://tennisnow.com/gauff-townsend-clinch-usa-sweep-over-hungary-at-bjk-cup/",
-        "https://www.wtatennis.com/news/4613299/coco-gauff-taylor-townsend-give-sneak-peek-of-potential-2028-olympics-partnership-at-billie-jean-king-cup"
+        "https://www.vice.com/en/article/gta-6-bowling-alley-safe-code/",
+        "https://tech.yahoo.com/gaming/articles/locker-safe-codes-gta-6-205250721.html",
+        "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-brooks-boatworks-robbery"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRroHYt2v-rEWi-j741C76AvQOsXZ8dug3nXiJLUIkx02aza8MRc-ZzxVXbLIE",
-      "image_credit": "Billie Jean King Cup",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJQZ7oG45mwBYDvc-igPW3i1YnNI1g5CHdCQLcJ1N1peG-ZS4jXG2iDJ_OUig",
+      "image_credit": "VICE",
       "news": [
         {
-          "url": "https://www.billiejeankingcup.com/en/news/watch-highlights-as-gauff-and-townsend-clinch-play-off-tie-for-usa",
-          "title": "Watch: Highlights as Gauff & Townsend clinch Play-off tie for USA",
-          "publisher": "Billie Jean King Cup",
+          "url": "https://www.vice.com/en/article/gta-6-bowling-alley-safe-code/",
+          "title": "GTA 6 Bowling Alley Safe Code – How to Open the Kingpin Bowling Safe",
+          "publisher": "VICE",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRroHYt2v-rEWi-j741C76AvQOsXZ8dug3nXiJLUIkx02aza8MRc-ZzxVXbLIE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJQZ7oG45mwBYDvc-igPW3i1YnNI1g5CHdCQLcJ1N1peG-ZS4jXG2iDJ_OUig"
         },
         {
-          "url": "https://tennisnow.com/gauff-townsend-clinch-usa-sweep-over-hungary-at-bjk-cup/",
-          "title": "Gauff, Townsend Clinch USA Sweep over Hungary at BJK Cup",
-          "publisher": "Tennis Now",
+          "url": "https://tech.yahoo.com/gaming/articles/locker-safe-codes-gta-6-205250721.html",
+          "title": "All locker and safe codes in GTA 6",
+          "publisher": "Yahoo Tech",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQumW3f82mIQRh4a2etluGTEWcN_5VcB34YXRTZldrYN8a_xMSmHcQ_1C3M7Oo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFjYQNEhvpM5QfBPoE2ciqJ4WwdtSnoygAELIrF1PgdorlGI5XsBfMo3dBF2M"
         },
         {
-          "url": "https://www.wtatennis.com/news/4613299/coco-gauff-taylor-townsend-give-sneak-peek-of-potential-2028-olympics-partnership-at-billie-jean-king-cup",
-          "title": "Gauff, Townsend give sneak peek of potential Olympics partnership",
-          "publisher": "WTA Tennis",
+          "url": "https://mobalytics.gg/gamebase/guides/grand-theft-auto-6-brooks-boatworks-robbery",
+          "title": "All Brooks Boatworks Robbery Key Valuables Locations - GTA 6",
+          "publisher": "Mobalytics",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShCQFcfWIbBahPvhn40PMhY-FFZFqxoXRA2usZIsBCYY7MYhiJP6nhPFtxcmQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuFucCuMFYVSU8RJdqHO1zSleHEdapTMNBeL7SuYJGNQcsv-tKPhpnzYKZnDc"
         }
       ]
     },
     {
-      "query": "joan beringer",
+      "query": "bethune cookman",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T03:10:00Z",
+      "published_at": "2026-11-24T03:40:00Z",
       "related_news_urls": [
-        "https://dunkingwithwolves.com/timberwolves-should-play-lamelo-ball-and-joan-beringer-together-more-despite-risks"
+        "https://www.nytimes.com/athletic/7801321/2026/11/21/bethune-cookman-marching-band-toilet-show-famu/",
+        "https://sports.yahoo.com/college-football/article/bethune-cookman-marching-band-pulls-out-all-the-stops-for-a-toilet-themed-performance-at-halftime-of-loss-to-florida-am-145609210.html",
+        "https://www.aol.com/articles/watch-florida-marching-band-goes-204555000.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiEugY6btPOodYT6KXA9Zj-47Obigf1Tnt0JEyDOc7qcZ3t0bFmcAgbYHFQdA",
-      "image_credit": "Dunking with Wolves",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4F-idmavjN5_9QWoCHYueSFA9-TguWibtcS-QlIiVqN2TxnyB19c2wzcKtSE",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://dunkingwithwolves.com/timberwolves-should-play-lamelo-ball-and-joan-beringer-together-more-despite-risks",
-          "title": "Timberwolves should play LaMelo Ball and Joan Beringer together more despite risks",
-          "publisher": "Dunking with Wolves",
+          "url": "https://www.nytimes.com/athletic/7801321/2026/11/21/bethune-cookman-marching-band-toilet-show-famu/",
+          "title": "Bethune-Cookman band marches into outline of person on the toilet to roast Florida A&M",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiEugY6btPOodYT6KXA9Zj-47Obigf1Tnt0JEyDOc7qcZ3t0bFmcAgbYHFQdA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4F-idmavjN5_9QWoCHYueSFA9-TguWibtcS-QlIiVqN2TxnyB19c2wzcKtSE"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/article/bethune-cookman-marching-band-pulls-out-all-the-stops-for-a-toilet-themed-performance-at-halftime-of-loss-to-florida-am-145609210.html",
+          "title": "Bethune-Cookman marching band pulls out all the stops for a toilet-themed performance at halftime of loss to Florida A&M",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA6m368_JzOVnSdVYSqMfC8-AEwNl9lopX2G2Uc7iIv_0dLkU4-qkFbj4HZO8"
+        },
+        {
+          "url": "https://www.aol.com/articles/watch-florida-marching-band-goes-204555000.html",
+          "title": "WATCH: Florida Marching Band Goes Viral for Hilarious Mockery of Rival Team During Halftime Show",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQ550dghfQU-3xG7X3DaVahqCBkbaE3thNUafI4iIvH_w5pddvT9N0Hb2qpxo"
         }
       ]
     },
     {
-      "query": "amber alert",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T03:00:00Z",
+      "query": "thanksgiving day weather forecast",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-24T03:30:00Z",
       "related_news_urls": [
-        "https://www.syracuse.com/crime/2026/11/amber-alert-issued-for-abduction-of-baby-in-cayuga-county.html",
-        "https://13wham.com/news/local/amber-alert-issued-for-4-month-old-girl-abducted-in-upstate-new-york-xara-thompson-cayuga-county-sterling-dezerea-dashnaw-abduction-missing-child",
-        "https://cnycentral.com/news/local/imminent-danger-amber-alert-for-4-month-old-in-cayuga-county"
+        "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
+        "https://www.foxnews.com/video/6408791148112",
+        "https://www.nytimes.com/2026/11/23/weather/thanksgiving-storm-updates-maps.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShwbpDJEhK2AjyovXUv8UDHIyeJZ1dvJy-ZFltePmlj4KprzvUW9Hchex9efs",
-      "image_credit": "Syracuse.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmSMvCF3VC4czPWQITurcmY26xZKDlgnrUFUU5T9g5dv9gxfkzI80SuJMv0-Y",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.syracuse.com/crime/2026/11/amber-alert-issued-for-abduction-of-baby-in-cayuga-county.html",
-          "title": "Amber Alert issued for abduction of baby in Cayuga County",
-          "publisher": "Syracuse.com",
+          "url": "https://www.cnn.com/2026/11/22/weather/east-west-coast-storms-thanksgiving-travel-climate-hnk",
+          "title": "Storms to hit both coasts, threatening Thanksgiving travel for millions and Macy’s 100th parade",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShwbpDJEhK2AjyovXUv8UDHIyeJZ1dvJy-ZFltePmlj4KprzvUW9Hchex9efs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmSMvCF3VC4czPWQITurcmY26xZKDlgnrUFUU5T9g5dv9gxfkzI80SuJMv0-Y"
         },
         {
-          "url": "https://13wham.com/news/local/amber-alert-issued-for-4-month-old-girl-abducted-in-upstate-new-york-xara-thompson-cayuga-county-sterling-dezerea-dashnaw-abduction-missing-child",
-          "title": "AMBER Alert issued for 4-month-old girl abducted in upstate New York",
-          "publisher": "13WHAM-TV",
+          "url": "https://www.foxnews.com/video/6408791148112",
+          "title": "Widespread storms may disrupt Thanksgiving travel",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzHGbugHtkbUxnsKWGmbEwio_93D4bHyj-q34LC8Xp-QeRlEjprjG_-yB5r8E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFtjnI0WZvLnPvaPONcxO11PDxRmrp9Sp3h1IavdQLC0PUD9Vu64ycMkFViA"
         },
         {
-          "url": "https://cnycentral.com/news/local/imminent-danger-amber-alert-for-4-month-old-in-cayuga-county",
-          "title": "'Imminent danger' Amber alert for 4 month old in Cayuga County",
-          "publisher": "WSTM",
+          "url": "https://www.nytimes.com/2026/11/23/weather/thanksgiving-storm-updates-maps.html",
+          "title": "Thanksgiving Weather: Storm Maps and Forecast",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ98bVGrQ-0YU5PC2kwOLzqOJy0qHHPc_xjq5WvHwYaqUo-U4Ek_uXL1GYeres"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRt7XYWjSiHCopAqYDqWkm1CtBb6AJz77JOHMmcyArr96Z0-r6MNHlSGx_ECc8"
         }
       ]
     },
     {
-      "query": "myles turner",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T03:00:00Z",
+      "query": "wemby",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T03:30:00Z",
       "related_news_urls": [
-        "https://behindthebuckpass.com/myles-turners-quiet-nights-harder-stomach-bucks",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/myles-turner-rejects-four-shots-fouls-out",
-        "https://www.espn.com/video/clip/_/id/50553183/myles-turner-massive-block-rim"
+        "https://www.espn.com/nba/story/_/id/50559763/victor-wembanyama-shows-50-point-5-block-performance",
+        "https://www.nba.com/watch/video/game-recap-spurs-114-pelicans-91-nov-21",
+        "https://www.nytimes.com/athletic/7801959/2026/11/22/victor-wembanyama-stat-padding-50-points-wilt/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SS1XogwBr3wLuaXNxGztweD2CieG7CPa3kpQAYibk7mvUbqwI1gy61yPCcc",
-      "image_credit": "Behind the Buck Pass",
-      "news": [
-        {
-          "url": "https://behindthebuckpass.com/myles-turners-quiet-nights-harder-stomach-bucks",
-          "title": "Myles Turner's quiet nights are getting harder to stomach for Bucks",
-          "publisher": "Behind the Buck Pass",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7SS1XogwBr3wLuaXNxGztweD2CieG7CPa3kpQAYibk7mvUbqwI1gy61yPCcc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/myles-turner-rejects-four-shots-fouls-out",
-          "title": "Myles Turner rejects four shots, fouls out",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-KwG03sKXXZ3yLPyHCwHn8CLGg0xEkxuMihxiuZAHKVQCJKisFoKRyZEPPxk"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50553183/myles-turner-massive-block-rim",
-          "title": "Myles Turner with the massive block at the rim",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBrcwXKf2wrVeReU5XaHavIo_pduMg_pKh88C49pwoPsmWz4OJ_uSndpxIPqA"
-        }
-      ]
-    },
-    {
-      "query": "where is the super bowl this year",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T03:00:00Z",
-      "related_news_urls": [
-        "https://www.imax.com/pr/espn-walt-disney-company-nfl-and-imax-bring-super-bowl-imax",
-        "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
-        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmg0NtN5rJkasK71Ghli0zCUSn2KKs-uC4oO2rp7F6np5PuTlJYPlpqa6Kte4",
-      "image_credit": "IMAX",
-      "news": [
-        {
-          "url": "https://www.imax.com/pr/espn-walt-disney-company-nfl-and-imax-bring-super-bowl-imax",
-          "title": "ESPN, The Walt Disney Company, the NFL and IMAX to Bring the Super Bowl to IMAX for the First Time",
-          "publisher": "IMAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmg0NtN5rJkasK71Ghli0zCUSn2KKs-uC4oO2rp7F6np5PuTlJYPlpqa6Kte4"
-        },
-        {
-          "url": "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
-          "title": "Moviegoers are getting a front-row seat to the Super Bowl",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHVU98hWjeW5rFDJeUcTdqepfJwsQdbQFjIKFcGmPjEIxmXoRzNZe8Kzr3rFI"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
-        }
-      ]
-    },
-    {
-      "query": "trevon diggs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T03:00:00Z",
-      "related_news_urls": [
-        "https://www.seahawks.com/news/seahawks-sign-trevon-diggs-bobby-hart-to-53-man-roster",
-        "https://sports.mynorthwest.com/nfl/seattle-seahawks/seattle-seahawks-place-holani-on-injured-reserve-sign-diggs-hart-off-practice-squad",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/seahawks-sign-cb-trevon-diggs-ot-bobby-hart-to-active-roster"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV1KhEG0ktQ_nlpdAxI1ZrZeD2XHnyOm4R0_OvN8a2c990jxAyru6kfuhSUhw",
-      "image_credit": "Seattle Seahawks",
-      "news": [
-        {
-          "url": "https://www.seahawks.com/news/seahawks-sign-trevon-diggs-bobby-hart-to-53-man-roster",
-          "title": "Seahawks Sign Trevon Diggs & Bobby Hart To 53-Man Roster",
-          "publisher": "Seattle Seahawks",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV1KhEG0ktQ_nlpdAxI1ZrZeD2XHnyOm4R0_OvN8a2c990jxAyru6kfuhSUhw"
-        },
-        {
-          "url": "https://sports.mynorthwest.com/nfl/seattle-seahawks/seattle-seahawks-place-holani-on-injured-reserve-sign-diggs-hart-off-practice-squad",
-          "title": "Seahawks place Holani on IR, sign 2 players off practice squad",
-          "publisher": "Seattle Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBvEbDu0BWI12aYvi2bjKuApct9xz4q4LkguZhS4liopsSDbKb8nY3KZ-vTLc"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/seahawks-sign-cb-trevon-diggs-ot-bobby-hart-to-active-roster",
-          "title": "Seahawks sign CB Trevon Diggs, OT Bobby Hart to active roster",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7I_Dzss-HsnK_ErMrmQ80VI46B6AcwwtvLSPfbuq2hizSBSIPphQcihlPONM"
-        }
-      ]
-    },
-    {
-      "query": "toronto maple leafs",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T02:50:00Z",
-      "related_news_urls": [
-        "https://www.blogto.com/sports_play/2026/11/auston-matthews-stares-anthem-singer/",
-        "https://eyesonisles.com/ny-islanders-anthem-singer-mishap-leaves-fans-and-maple-leafs-looking-puzzled-01m85m1hcgh3",
-        "https://www.hockeypatrol.com/nhl-team/toronto-maple-leafs/auston-matthews-caught-on-camera-reacting-to-botched-canadian-national-anthem-in-new-york"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vxpAVAy88HhoEJAM8QV5nNW2kVMp7q7KOdvKjTjAd9ORXw8v2_XCoR5EYvk",
-      "image_credit": "blogTO",
-      "news": [
-        {
-          "url": "https://www.blogto.com/sports_play/2026/11/auston-matthews-stares-anthem-singer/",
-          "title": "Auston Matthews stares down anthem singer after she botches O Canada",
-          "publisher": "blogTO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vxpAVAy88HhoEJAM8QV5nNW2kVMp7q7KOdvKjTjAd9ORXw8v2_XCoR5EYvk"
-        },
-        {
-          "url": "https://eyesonisles.com/ny-islanders-anthem-singer-mishap-leaves-fans-and-maple-leafs-looking-puzzled-01m85m1hcgh3",
-          "title": "NY Islanders anthem singer mishap leaves fans and Maple Leafs looking puzzled",
-          "publisher": "Eyes On Isles",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtPTmSn23NiR47OJAQx4ry7iyUi7tBLQTo0nOMkyMIIxIA-PQNgNVewWst3fg"
-        },
-        {
-          "url": "https://www.hockeypatrol.com/nhl-team/toronto-maple-leafs/auston-matthews-caught-on-camera-reacting-to-botched-canadian-national-anthem-in-new-york",
-          "title": "Auston Matthews caught on camera reacting to botched Canadian national anthem in New York",
-          "publisher": "Hockey Patrol",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBww1S0wqgf6jfhaim5KZou__3uKltwrvZF_tR5Mn5fRk_s23MEDgRR7Uc_3M"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma city thunder vs pacers match player stats",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T02:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
-        "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXqtsKYiL2ZY7-QeXuaEncWJIjo4jkZFAdFJ4uIzvxMcV2GLlWVR5vO50DJA",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
-          "title": "76ers rally vs. Magic, improve to 11-0 in clutch games",
+          "url": "https://www.espn.com/nba/story/_/id/50559763/victor-wembanyama-shows-50-point-5-block-performance",
+          "title": "Wembanyama makes history in 18 minutes, finishes game with 50 points",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkXqtsKYiL2ZY7-QeXuaEncWJIjo4jkZFAdFJ4uIzvxMcV2GLlWVR5vO50DJA"
         },
         {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
-          "title": "‘It worked every time': How Sixers found a clutch answer at shootaround",
-          "publisher": "NBC Sports Philadelphia",
+          "url": "https://www.nba.com/watch/video/game-recap-spurs-114-pelicans-91-nov-21",
+          "title": "Game Recap: Spurs 114, Pelicans 91 (Nov. 21)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSvLClrXLgwDS11uAZtvbiOVkNNhVNe9Zrbc9kV_1Xw0eAuAtcADyaD5Hbk20"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfPzKWTy4IJ3EsAx_HR2aT6gZvRrO3BPjzeNFUKlW-JCNyk0IUs1wnoTKHs3o"
         },
         {
-          "url": "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html",
-          "title": "VJ Edgecombe stars in Sixers’ comeback win over Orlando Magic",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7801959/2026/11/22/victor-wembanyama-stat-padding-50-points-wilt/",
+          "title": "Victor Wembanyama admitted to ‘stat-padding.’ Here’s why he’s breaking his own rules - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6PuQX4cbfcBQsNmNiFcJ_XhSp3Ii5APzfqlDztyfK5jsyJApDfYItBLAR-E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcScv31e_sUY5EreDZ6GxUY7-CFTKhf6xxVDii8w9cZhMk6v6bCUWcLlLT-fJGk"
         }
       ]
     },
     {
-      "query": "what happened to tom jackson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T02:40:00Z",
+      "query": "russian ukraine war",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T03:30:00Z",
       "related_news_urls": [
-        "https://www.wkyc.com/article/news/local/cleveland/cleveland-native-tom-jackson-former-broncos-star-sunday-nfl-countdown-analyst-dead-at-75/95-7bb42ec1-8b0d-401a-9ba9-81caf5a06d54",
-        "https://sports.yahoo.com/articles/troy-aikman-raises-eyebrows-unexpected-015059797.html",
-        "https://www.espn.com/nfl/story/_/id/50569388/broncos-coach-sean-payton-game-ball-tom-jackson-family"
+        "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
+        "https://www.theguardian.com/world/2026/nov/23/russia-war-dead-hidden-toll-ukraine-conflict",
+        "https://thehill.com/policy/defense/6238400-russian-casualties-ukraine-war-putin-zelensky/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXpql7W24LLQRwIqP9hz-CcBUct4CFa0yB2_DSOv0CqmEVSAud6AFnMJZKSsA",
-      "image_credit": "WKYC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZUx6cF93BoANENh_oSpBahOvYiqvh146JUWFnesj5-b4VR6z0ZTFGshp6q5c",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.wkyc.com/article/news/local/cleveland/cleveland-native-tom-jackson-former-broncos-star-sunday-nfl-countdown-analyst-dead-at-75/95-7bb42ec1-8b0d-401a-9ba9-81caf5a06d54",
-          "title": "Cleveland native Tom Jackson, former Broncos star and 'Sunday NFL Countdown' analyst, dead at 75",
-          "publisher": "WKYC",
+          "url": "https://www.nytimes.com/2026/11/23/world/europe/russia-ukraine-war-deaths.html",
+          "title": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXpql7W24LLQRwIqP9hz-CcBUct4CFa0yB2_DSOv0CqmEVSAud6AFnMJZKSsA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZUx6cF93BoANENh_oSpBahOvYiqvh146JUWFnesj5-b4VR6z0ZTFGshp6q5c"
         },
         {
-          "url": "https://sports.yahoo.com/articles/troy-aikman-raises-eyebrows-unexpected-015059797.html",
-          "title": "Troy Aikman Raises Eyebrows With Unexpected On-Air Comment During ESPN’s Live Tribute to Tom Jackson",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.theguardian.com/world/2026/nov/23/russia-war-dead-hidden-toll-ukraine-conflict",
+          "title": "Russia’s war dead: the hidden toll of the Ukraine conflict",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP5O3uGFMOR0QLqyZRzKyXScvCCsilZXYphaegn4YSvDE0aS1O-Tomecz1opI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS-OnGCPoxsAN8SQD0ip8zaiNiWKGOl8iEDUbzFyhVJoBkCSKALhMHraIUUbw"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50569388/broncos-coach-sean-payton-game-ball-tom-jackson-family",
-          "title": "Broncos coach Sean Payton awards game ball to Tom Jackson's family",
-          "publisher": "ESPN",
+          "url": "https://thehill.com/policy/defense/6238400-russian-casualties-ukraine-war-putin-zelensky/",
+          "title": "More than 700,000 Russian soldiers have been killed in Ukraine: Analysis",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2pwIkrelapWt7lqSs0QvLsudFLXCnZQggjWtnj2dkfg1fO_qeNkHniqPycY8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4h2VvCTFrbkdSBU_L4GkN3bAV2MWOw8Ofb6-ERlGqx91siFN_lK7k-rxnbcc"
         }
       ]
     },
     {
-      "query": "jaime munguia",
+      "query": "ram recalls",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T02:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
+      "published_at": "2026-11-24T03:20:00Z",
+      "related_news_urls": [
+        "https://www.foxbusiness.com/economy/stellantis-recalls-82000-ram-trucks-over-anti-lock-brake-software-bug",
+        "https://www.usatoday.com/story/cars/recalls/2026/11/23/ram-classic-trucks-recall-see-models/92923881007/",
+        "https://www.cars.com/articles/82000-plus-ram-1500-classic-trucks-recalled-for-antilock-braking-system-531513/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_4gBQf4WNmAKSe_chLKv8dVSTuY95sxwmGkWa2mKah_x549ya5vItsMz8Wic",
+      "image_credit": "Fox Business",
+      "news": [
+        {
+          "url": "https://www.foxbusiness.com/economy/stellantis-recalls-82000-ram-trucks-over-anti-lock-brake-software-bug",
+          "title": "Stellantis recalls 82,000 Ram trucks over anti-lock brake software bug",
+          "publisher": "Fox Business",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_4gBQf4WNmAKSe_chLKv8dVSTuY95sxwmGkWa2mKah_x549ya5vItsMz8Wic"
+        },
+        {
+          "url": "https://www.usatoday.com/story/cars/recalls/2026/11/23/ram-classic-trucks-recall-see-models/92923881007/",
+          "title": "More than 80,000 Ram trucks recalled. See affected models",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdWJ-cjSZDsa5ntPlElY7t2cbgFViSxxCkkBmfOFkG8YmEOtgJbUhQumuvTug"
+        },
+        {
+          "url": "https://www.cars.com/articles/82000-plus-ram-1500-classic-trucks-recalled-for-antilock-braking-system-531513/",
+          "title": "82,000-Plus Ram 1500 Classic Trucks Recalled for Antilock Braking System",
+          "publisher": "Cars.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuR4zDh3UWbXdiH_o-hbrBh6OyKMRlj05LpbBmy62EhC8f60St0ED_apsMkKU"
+        }
+      ]
+    },
+    {
+      "query": "haaland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T03:20:00Z",
+      "related_news_urls": [
+        "https://www.si.com/soccer/transfer-rumors-real-madrid-haaland-boost-european-battle-fernandes",
+        "https://sports.yahoo.com/articles/report-real-madrid-president-increasingly-083200860.html",
+        "https://ukranews.com/en/news/1187919-holland-may-join-barcelona-the-condition-under-which-the-norwegian-would-leave-manchester-city-has"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1fK2ZdtQEgz69yC4PgE27gPzPZo0qeh2_9mGXtdV5DAU5HIpKAb_8iq-8INE",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/soccer/transfer-rumors-real-madrid-haaland-boost-european-battle-fernandes",
+          "title": "Transfer Rumors: Real Madrid’s Haaland Boost; European Giants Battle for Fernandes",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1fK2ZdtQEgz69yC4PgE27gPzPZo0qeh2_9mGXtdV5DAU5HIpKAb_8iq-8INE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/report-real-madrid-president-increasingly-083200860.html",
+          "title": "Report: Real Madrid president increasingly confident of signing Manchester City goal machine next summer",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNjkxXmJco9ExuTES1SqQU4cO_ggdsX1N4-jZMUagouK8QvFLSqBHr15g_caA"
+        },
+        {
+          "url": "https://ukranews.com/en/news/1187919-holland-may-join-barcelona-the-condition-under-which-the-norwegian-would-leave-manchester-city-has",
+          "title": "Haaland may join \"Barcelona\" - condition under which Norwegian would leave \"Manchester City\" revealed",
+          "publisher": "Ukrainian News Agency",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBMzW1Py3knq9o17bzszMo_k9kRu0_g6r6stZkVCXK9oIOOVIGNeGjkhzf7cE"
+        }
+      ]
+    },
+    {
+      "query": "mockingjay part 1",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T03:20:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/article/81-thoughts-i-had-while-watching-the-hunger-games",
+        "https://www.ballstatedailynews.com/article/we-are-losing-the-plot-daily-news-ball-state-20261121",
+        "https://www.britannica.com/art/The-Hunger-Games-film-franchise"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmuWJ-daD3yECTIJsAqPj1SDcJoygcoIy9NqhYa4MTArYIw3pcNf9zX5bCpI",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/article/81-thoughts-i-had-while-watching-the-hunger-games",
+          "title": "81 Thoughts I Had While Watching ‘The Hunger Games’",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTmuWJ-daD3yECTIJsAqPj1SDcJoygcoIy9NqhYa4MTArYIw3pcNf9zX5bCpI"
+        },
+        {
+          "url": "https://www.ballstatedailynews.com/article/we-are-losing-the-plot-daily-news-ball-state-20261121",
+          "title": "OPINION: We are losing the plot",
+          "publisher": "Ball State Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgG3jKes6uZca1kHHDdubzjFtxY5XVisKbuM5AmxJDMRjNVen8XjAdZkDiz7k"
+        },
+        {
+          "url": "https://www.britannica.com/art/The-Hunger-Games-film-franchise",
+          "title": "The Hunger Games film franchise | Movies, Sunrise on the Reaping, Film Series, Cast, & Production",
+          "publisher": "Britannica",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8d4hGe6BW1MmasQGqt_QKSBvdw6S8xx1loK0G5aGLpThELWvtEzV0FYncy7U"
+        }
+      ]
     }
   ]
 }
