@@ -462,7 +462,9 @@ export function mountConnections(container,{token}) {
           if(provider.fullProjectConfigured===false)
             card.append(element('p','Additional project permissions need Bubbles OAuth client setup. More scopes in the Cloudflare dashboard do not automatically change this sign-in request.','ba-muted'));
         }
-        const availableActions=providerAuthorizationActions(provider);
+        const availableActions=provider.id==='cloudflare'?
+          availableCloudflareLoginActions(provider).filter(action=>action==='account.read'):
+          providerAuthorizationActions(provider);
         if(provider.id!=='google'&&!availableActions.length){
           button.disabled=true;
           card.append(element('p','This provider has no registered sign-in permissions. Application setup is required.','ba-muted'));
@@ -470,15 +472,13 @@ export function mountConnections(container,{token}) {
         button.addEventListener('click',async()=>{
           if(client.pending){signInStatus.textContent='Finish or cancel the current sign-in first.';return;}
           // Google identity-only consent never requires Gmail or Drive.
-          // The Cloudflare OAuth app's full, server-allowed toolkit is reviewed
-          // in the SAME sign-in when available. Provider consent is mandatory.
-          const fullCloudflare=provider.id==='cloudflare'&&availableActions.includes('owner.full');
+          // Ordinary account sign-in never requests the full project toolkit.
+          // The separate, explicit project review remains in account settings.
           const actions=provider.id==='google'?['identity.read',...selections.filter(c=>c.checked).map(c=>c.value)]:
-            provider.id==='cloudflare'?(fullCloudflare?['owner.full']:['account.read']):availableActions;
+            availableActions;
+          if(!actions.length){signInStatus.textContent='Account sign-in is not configured.';return;}
           button.disabled=true;button.setAttribute('aria-busy','true');
-          signInStatus.textContent=fullCloudflare?
-            'Opening Cloudflare to review the requested project access…':
-            'Opening secure '+providerName+' sign-in…';
+          signInStatus.textContent='Opening secure '+providerName+' sign-in…';
           try {await client.connect(provider.id,actions,async(error,account)=>{
             cancel.hidden=true;
             if(error){
