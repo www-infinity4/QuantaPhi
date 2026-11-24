@@ -3,312 +3,153 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T09:01:35.318272Z",
+  "checked_at": "2026-11-24T09:31:25.169464Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "11",
+      "query": "travel",
       "approx_searches": "100+",
-      "published_at": "2026-11-24T08:30:00Z",
+      "published_at": "2026-11-24T09:10:00Z",
       "related_news_urls": [
-        "https://sjsuspartans.com/news/2026/11/23/highlights-mbb-vs-uc-san-diego-112326",
-        "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-        "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age"
+        "https://www.cnn.com/2026/11/23/travel/video/delta-glitch-looming-storms-threaten-travel-chaos-over-holiday-week",
+        "https://www.axios.com/2026/11/24/thanksgiving-air-travel-record-expected",
+        "https://www.cnbc.com/select/drive-fly-travel-costs/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSst4nz0uRCAybS5-Olfk3MdlWf0Sb0h5z-a26es6UpkgIkIWdJH8WBxsbqYZY",
-      "image_credit": "San Jose State Spartans",
-      "news": [
-        {
-          "url": "https://sjsuspartans.com/news/2026/11/23/highlights-mbb-vs-uc-san-diego-112326",
-          "title": "Highlights: MBB vs. UC San Diego (11/23/26) - SJSU Athletics - Official Athletics Website",
-          "publisher": "San Jose State Spartans",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSst4nz0uRCAybS5-Olfk3MdlWf0Sb0h5z-a26es6UpkgIkIWdJH8WBxsbqYZY"
-        },
-        {
-          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-          "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
-          "publisher": "NVIDIA Newsroom",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8qDUGyx7H7uiXEnq5EQILYq0dJjxyQRhS2zpsVdoBZCM1RxEiYeJ_NZ_PfHQ"
-        },
-        {
-          "url": "https://www.theguardian.com/technology/2026/nov/24/trump-nvidia-gilded-age",
-          "title": "Trump, Nvidia and power: could we be nearing the end of tech’s Gilded Age?",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdqUltPrTFbg3iQr3U8aUnq3h-SnSathDNg7FmnOYwNBUeCtJoWaHbmIqGVVw"
-        }
-      ]
-    },
-    {
-      "query": "philippines",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T08:20:00Z",
-      "related_news_urls": [
-        "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-        "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance",
-        "https://lynnwoodtimes.com/2026/11/23/asia-trip/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjN-oBKVf6jDWlMNUR3FOmEe_Nv2MNpKDocoeuUpMU2n5gz13AYIx_Pflj_yg",
-      "image_credit": "USNI News",
-      "news": [
-        {
-          "url": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-          "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
-          "publisher": "USNI News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjN-oBKVf6jDWlMNUR3FOmEe_Nv2MNpKDocoeuUpMU2n5gz13AYIx_Pflj_yg"
-        },
-        {
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance",
-          "title": "Trump offers the Philippines US$2.4 billion for self-defence – with a catch",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9jsxRZBMJfu-Gvh7yorpDi7H7I1KleGi2VLfxhZm-9rzlxEUGvAHtFTkcqg"
-        },
-        {
-          "url": "https://lynnwoodtimes.com/2026/11/23/asia-trip/",
-          "title": "WA State Gains in Trump’s $17B Asia Trip as Sila in Moses Lake Secures $1B Panasonic Battery Agreement",
-          "publisher": "Lynnwood Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY2s301kJqreqXq898vMgg48IQOAaE7ZMDKQMeZQBv0O40ktz8ZjMYx1VYHgY"
-        }
-      ]
-    },
-    {
-      "query": "lucia voice actor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T08:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66124628/?ref_=ttnw_art_perm",
-        "https://www.tvline.com/2325622/gta-6-lucia-actress-manni-l-perez-law-and-order-special-victims-unit-role/",
-        "https://www.pcgamer.com/games/grand-theft-auto/gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-female-protagonist-in-gta-6/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfEzS20trSP5swNTkk2TcE2n9UvfsMwytv-Azgjd8p5asYutszCOouxjvIXUA",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66124628/?ref_=ttnw_art_perm",
-          "title": "GTA 6 Cast List: Who plays Jason, Lucia and More",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfEzS20trSP5swNTkk2TcE2n9UvfsMwytv-Azgjd8p5asYutszCOouxjvIXUA"
-        },
-        {
-          "url": "https://www.tvline.com/2325622/gta-6-lucia-actress-manni-l-perez-law-and-order-special-victims-unit-role/",
-          "title": "GTA 6's Lucia Actress Had A Role On Law & Order: Special Victims Unit",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvKLRVL1iFf0qHAsed9E1OwcNkTCiFrko_fxIuSgQeBHDpkwFZDrhreA82Rms"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-female-protagonist-in-gta-6/",
-          "title": "Older GTAs weren't good to women, says Rockstar vet delighted by Lucia",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlWeh5Ow5RAz5xbkGwabzN9ZwmdBBA8fiIVMBrO-PgcTD979dZ7URPzL_DRs"
-        }
-      ]
-    },
-    {
-      "query": "google play",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T08:10:00Z",
-      "related_news_urls": [
-        "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
-        "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
-        "https://www.limapagi.id/en/plaud-google-play-productivity-award"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA",
-      "image_credit": "The Korea Daily",
-      "news": [
-        {
-          "url": "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
-          "title": "Plaud — AI Voice Recorder Wins Google Play’s 2026 Best App",
-          "publisher": "The Korea Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA"
-        },
-        {
-          "url": "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
-          "title": "Plaud Wins Google Play Productivity Award for 2026",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRMLq82s5y7jKud0zZZ3s0MI4tPhWqd4ETcNR6LRobARdFaYi2OVb9_BFmoOk"
-        },
-        {
-          "url": "https://www.limapagi.id/en/plaud-google-play-productivity-award",
-          "title": "Plaud Wins Google Play 2026 Productivity Award",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRMLq82s5y7jKud0zZZ3s0MI4tPhWqd4ETcNR6LRobARdFaYi2OVb9_BFmoOk"
-        }
-      ]
-    },
-    {
-      "query": "play store",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T08:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz83-4kC-K7qA5OPZOMvcaq4kg06QNKHOtHrRj1aPLBDj5sAG7sqqJKdMPBeo",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/",
-          "title": "Jeje Studios Launches Wild West Brawl, a Free PvP Auto Battler Card Game for iPhone and Android, on the App Store and Google Play",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz83-4kC-K7qA5OPZOMvcaq4kg06QNKHOtHrRj1aPLBDj5sAG7sqqJKdMPBeo"
-        }
-      ]
-    },
-    {
-      "query": "pope francis",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T08:00:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/24/europe/pope-francis-private-diaries-intl-latam",
-        "https://www.washingtonpost.com/world/2026/11/24/pope-francis-private-diary-reveals-torment-visions-devil/",
-        "https://www.reuters.com/world/pope-francis-had-visions-devil-hell-diaries-reveal-2026-11-24/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_iXXBMvQ6cCjlA2s2HIT6U72dMOtVyA9i1XoQsgwOkipUqbXJUR8elMG9MY",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOLh3XU3YBfkPBW6v0Cly0y-uw1eiapNJRoTe9SJrhnl18FxpT86gJ0lG_sU",
       "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/24/europe/pope-francis-private-diaries-intl-latam",
-          "title": "Pope Francis battled visions of the devil during a two-year spiritual crisis, diaries reveal",
+          "url": "https://www.cnn.com/2026/11/23/travel/video/delta-glitch-looming-storms-threaten-travel-chaos-over-holiday-week",
+          "title": "Delta glitch, looming storms threaten travel chaos over holiday week",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_iXXBMvQ6cCjlA2s2HIT6U72dMOtVyA9i1XoQsgwOkipUqbXJUR8elMG9MY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOLh3XU3YBfkPBW6v0Cly0y-uw1eiapNJRoTe9SJrhnl18FxpT86gJ0lG_sU"
         },
         {
-          "url": "https://www.washingtonpost.com/world/2026/11/24/pope-francis-private-diary-reveals-torment-visions-devil/",
-          "title": "The temptation of Pope Francis: Private diary reveals torment, visions of Devil",
-          "publisher": "The Washington Post",
+          "url": "https://www.axios.com/2026/11/24/thanksgiving-air-travel-record-expected",
+          "title": "Scoop: Thanksgiving air travel expected to hit 16-year high",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSKmhyM9p1Ezp2a4J3ny6O2yFvdgHNyLuG2eHgAEgmJzwEfzVilaV6GL7EJJA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlMp6C3nrCipoGNRdMg0H2Sn3Ta5o-62HqJwD82tF2C13poMEEQIdYIvfIh6g"
         },
         {
-          "url": "https://www.reuters.com/world/pope-francis-had-visions-devil-hell-diaries-reveal-2026-11-24/",
-          "title": "Pope Francis had visions of the Devil and Hell, diaries reveal",
-          "publisher": "Reuters",
+          "url": "https://www.cnbc.com/select/drive-fly-travel-costs/",
+          "title": "Traveling soon? Here’s how to decide whether to fly or drive",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXa4FPasPoKL-feYxJALROmhDsOSE0SrMmcFo3HGJD9XDNMtE739Djjdk5XY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNOReOYL1kbRO5k1xu8pWtQjCqFHBRPq6UrPJ4IEehiWMk-yjdOtQ68f6uHU8"
         }
       ]
     },
     {
-      "query": "justin timberlake",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T08:00:00Z",
+      "query": "horse",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:10:00Z",
       "related_news_urls": [
-        "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
-        "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
-        "https://www.instyle.com/jessica-biel-justin-timberlake-marriage-documentary-trailer-12274735"
+        "https://nypost.com/2026/11/24/us-news/escaped-virginia-horse-rollo-shows-up-at-mcdonalds-and-captured-by-police-in-colonial-heights/",
+        "https://www.wric.com/news/local-news/the-tri-cities/equestrian-center-owner-horse-rogue/",
+        "https://www.12onyourside.com/2026/11/21/rolo-is-repeat-offender-horse-back-home-after-escaping-leading-colonial-heights-police-chase/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc",
-      "image_credit": "Apple",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxGriyK1KauH0TsMYYWIo7MqHf85Sb_Bi1_5Vj0C0-ZrMj0ic4s8z2CUXMMy4",
+      "image_credit": "New York Post",
       "news": [
         {
-          "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
-          "title": "Apple TV announces four-part documentary event “TIMBERLAKE”",
-          "publisher": "Apple",
+          "url": "https://nypost.com/2026/11/24/us-news/escaped-virginia-horse-rollo-shows-up-at-mcdonalds-and-captured-by-police-in-colonial-heights/",
+          "title": "Escaped horse wanders to a Virginia McDonalds before leading police chase through neighborhood",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxGriyK1KauH0TsMYYWIo7MqHf85Sb_Bi1_5Vj0C0-ZrMj0ic4s8z2CUXMMy4"
         },
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
-          "title": "Justin Timberlake Documentary Trailer: “He’s Not Who I Thought He Was”",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.wric.com/news/local-news/the-tri-cities/equestrian-center-owner-horse-rogue/",
+          "title": "Un-foal-gettable joyride: Equestrian center owner says police have rescued adventurous, rogue horse before",
+          "publisher": "WRIC ABC 8News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZ_eKLn0G9RwW-mUVUk589oFJP-o0sKIgvta13UYt299EaAFvZxz-XnsONGf8"
         },
         {
-          "url": "https://www.instyle.com/jessica-biel-justin-timberlake-marriage-documentary-trailer-12274735",
-          "title": "Jessica Biel Says She Needs to “Address Some Things” About Justin Timberlake Marriage in Rare Comments",
-          "publisher": "InStyle",
+          "url": "https://www.12onyourside.com/2026/11/21/rolo-is-repeat-offender-horse-back-home-after-escaping-leading-colonial-heights-police-chase/",
+          "title": "Horse back home after escaping, leading Colonial Heights police on chase",
+          "publisher": "WWBT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIEP7FlB8t4nwxUeFM5lG6b1b22SmtoJSgYDQY06nQWvE8b9X2Pigv0WsiuhE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSERUXyZM4GCepECwbzJHso7XJm-cGxPpgbmjosT1jj3yRt7IbNs_4S16kkVIc"
         }
       ]
     },
     {
-      "query": "gta 6 criminal profile system",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T07:50:00Z",
+      "query": "dinner",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:00:00Z",
       "related_news_urls": [
-        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-        "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
-        "https://tech.yahoo.com/gaming/articles/playing-gta-6-villain-makes-163251499.html"
+        "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs",
+        "https://time.com/article/2026/11/23/thanksgiving-set-to-cost-americans-more-this-year-farm-bureau/",
+        "https://www.kcci.com/article/is-a-thanksgiving-meal-more-expensive-this-year-it-depends/74513063"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
-      "image_credit": "Red Bull",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQu72l3xoVOlB0nZUnx9wxNCl-unjxP-9U7LGSVo20YA9DPl1DLFUMKPXsQgY",
+      "image_credit": "NPR",
       "news": [
         {
-          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-          "title": "GTA 6 Criminal Profile: How the system works",
-          "publisher": "Red Bull",
+          "url": "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs",
+          "title": "Let's talk turkey: Here's how Thanksgiving meal costs have changed this year",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQu72l3xoVOlB0nZUnx9wxNCl-unjxP-9U7LGSVo20YA9DPl1DLFUMKPXsQgY"
         },
         {
-          "url": "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
-          "title": "GTA VI Does What Most Video Games With Choice And Morality Systems Don't",
-          "publisher": "Aftermath",
+          "url": "https://time.com/article/2026/11/23/thanksgiving-set-to-cost-americans-more-this-year-farm-bureau/",
+          "title": "Thanksgiving Dinner Is Set to Cost Americans More This Year, Says Farm Bureau. Here’s Why",
+          "publisher": "Time Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTS3ovd2xYejn0MgHW0gFmPA76RKumlKSYa7LQ2Qfw4hC-LU6ShcYX4lH5SG9U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOyukk2YO7NxHCPrkpgeuEGGitKLw66iXtX9DmbrQkj9ekSdlL0SVWh3JpNuA"
         },
         {
-          "url": "https://tech.yahoo.com/gaming/articles/playing-gta-6-villain-makes-163251499.html",
-          "title": "Playing GTA 6 as a Villain Makes Escaping the Police Much Harder",
-          "publisher": "Yahoo Tech",
+          "url": "https://www.kcci.com/article/is-a-thanksgiving-meal-more-expensive-this-year-it-depends/74513063",
+          "title": "Is a Thanksgiving meal more expensive this year? It depends",
+          "publisher": "KCCI",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXw4GW5Q53yt6TaofzZ1oM-PbPPglcvVafRAQ5BJK2g0wyPaOGCb2IyL-ilE8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxNuYDMveJl_RmPyaLUyZuMcF3JhLBu8DuHEErNq33NQZn8vEmbEQusOpAh9w"
         }
       ]
     },
     {
-      "query": "aus vs eng",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T07:40:00Z",
+      "query": "soccer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:00:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/cricket/live/cly85gv8qpet",
-        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2nd-t20i-1528707/match-preview",
-        "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live"
+        "https://www.espn.com/college-football/story/_/id/deboer-family",
+        "https://www.theguardian.com/football/2026/nov/23/2035-womens-world-cup-potential-women-girls-uk",
+        "https://www.nbc4i.com/sports/united-states-officially-chosen-as-co-host-for-2031-fifa-womens-world-cup/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmMHGSgP7wHJQH4LicH4y5KIedt6z8III8wlIlK36I64_KCqFop8IcygJgwfI",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWWRcMCX8ux0vHiaMS7J2agsIYy7XfyzVi-yGSDzKafkB_VNPfI1hqda6p2nA",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/cricket/live/cly85gv8qpet",
-          "title": "Australia vs England LIVE: Second T20, Carrara, Queensland - cricket score, commentary & updates",
-          "publisher": "BBC",
+          "url": "https://www.espn.com/college-football/story/_/id/deboer-family",
+          "title": "Richter throws TD pass to Dabbs, Griffith kicks 4 FGs for Toledo in 19-0 win over BGSU",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmMHGSgP7wHJQH4LicH4y5KIedt6z8III8wlIlK36I64_KCqFop8IcygJgwfI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWWRcMCX8ux0vHiaMS7J2agsIYy7XfyzVi-yGSDzKafkB_VNPfI1hqda6p2nA"
         },
         {
-          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2nd-t20i-1528707/match-preview",
-          "title": "AUS vs ENG 2026/27, AUS vs ENG 2nd T20I Match Preview - Last-over MCG finish suggests a series of fine margins",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRynNvT8o5nVK8WXrgCuwraj94bvibnwvRYZO18ndOpXv_u6OsoX8cZ-8qXbc"
-        },
-        {
-          "url": "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live",
-          "title": "Australia v England: second men’s Twenty20 international – live",
+          "url": "https://www.theguardian.com/football/2026/nov/23/2035-womens-world-cup-potential-women-girls-uk",
+          "title": "The 2035 Women’s World Cup has huge potential for women and girls in UK",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB16-BTfG7C6ZP3I-T2Eoej7hz8iNeqTk5Q55vhv1tVoixVXH6tNOjKbaAa0Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrgBHPysJUlFz82phk18PDaTooKKITcXtZMSiAJvcBdr7vaKr1JsZluMNw81E"
+        },
+        {
+          "url": "https://www.nbc4i.com/sports/united-states-officially-chosen-as-co-host-for-2031-fifa-womens-world-cup/",
+          "title": "United States officially chosen as co-host for 2031 FIFA Women’s World Cup",
+          "publisher": "NBC4 WCMH-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacWjizc9JhfUVfqNXg_vOoxcX12x5za93yC0OQZ1rEV_tWnY67_1IyWWdvlc"
         }
       ]
     },
     {
-      "query": "the hunger games the ballad of songbirds & snakes",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T07:30:00Z",
+      "query": "office",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T09:00:00Z",
       "related_news_urls": [
         "https://editorial.rottentomatoes.com/article/weekend-box-office-the-hunger-games-sunrise-on-the-reaping-week-1/",
         "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
@@ -337,6 +178,181 @@
           "publisher": "Bloomberg.com",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY9ZxJYPk0WO2XC4Gjbed5BVsXBbVn7VqJXUlQb4PzUg2gzL4raAHaqZkQquc"
+        }
+      ]
+    },
+    {
+      "query": "michael b jordan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66118823/",
+        "https://collider.com/the-thomas-crown-affair-michael-b-jordan-original-streaming-free-tubi-november-2026/",
+        "https://entertainment-focus.com/2026/11/20/the-thomas-crown-affair-michael-b-jordan-leads-new-remake/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQwT4qtvdfeWAlxYx0wJ_Ad6mOOMOKrhqstVREUZE7c16YngKXdGh40R9uV3s",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66118823/",
+          "title": "Michael B. Jordan Officially Replaces Pierce Brosnan in New Crime Thriller Trailer",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQwT4qtvdfeWAlxYx0wJ_Ad6mOOMOKrhqstVREUZE7c16YngKXdGh40R9uV3s"
+        },
+        {
+          "url": "https://collider.com/the-thomas-crown-affair-michael-b-jordan-original-streaming-free-tubi-november-2026/",
+          "title": "The Masterpiece Heist Thriller That Inspired Michael B. Jordan’s New Film Officially Hits Free Streaming",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBJTVvyGVwfxT4L2qBV8_KHo0GVaGTENwFP2PdMgwpZsV761k6Dg3IKRBf85g"
+        },
+        {
+          "url": "https://entertainment-focus.com/2026/11/20/the-thomas-crown-affair-michael-b-jordan-leads-new-remake/",
+          "title": "‘The Thomas Crown Affair’: Michael B. Jordan leads new remake",
+          "publisher": "Entertainment Focus",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO6iMud83_7MDS_LbPmJ13aU768mC6MKPfpiyi5P8o4lM3j7j5iNkiHK_ZxiQ"
+        }
+      ]
+    },
+    {
+      "query": "tiger",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T08:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/tiger-woods-doing-practice-said-180000187.html",
+        "https://www.bbc.com/sport/golf/articles/cm93080ep703o",
+        "https://nypost.com/2026/11/22/sports/tiger-woods-is-making-another-comeback-but-is-there-any-way-he-could-actually-win/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRGTWVyJ-MbgQLfiaVRn8ZH63W-MU5mh6jKIfxmBjek4YgfYdj2rz6Hnx9wXM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/tiger-woods-doing-practice-said-180000187.html",
+          "title": "What Tiger Woods has been doing in practice said to be ‘crazy’ ahead of his return at The Hero",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRGTWVyJ-MbgQLfiaVRn8ZH63W-MU5mh6jKIfxmBjek4YgfYdj2rz6Hnx9wXM"
+        },
+        {
+          "url": "https://www.bbc.com/sport/golf/articles/cm93080ep703o",
+          "title": "Tiger Woods set for competitive golf return in December's Hero World Challenge",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmAM7n3L8dLAvxLRvWfeOJy8aFU8zLYMg9a53GJGFAbLrCaWbvV1YMzWz2RUY"
+        },
+        {
+          "url": "https://nypost.com/2026/11/22/sports/tiger-woods-is-making-another-comeback-but-is-there-any-way-he-could-actually-win/",
+          "title": "Tiger Woods is making another comeback, but is there any way he could actually win?",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBm4KOx2Pi5VWqN5JYvUkpH1OiT72VqN6UwYVErZVlDcktEG7Uhvb5EyFF38"
+        }
+      ]
+    },
+    {
+      "query": "book",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T08:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cm3eg502nxw2o",
+        "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
+        "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cm3eg502nxw2o",
+          "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
+          "title": "Gisèle Pelicot ‘deeply shocked’ after nude images used to promote book",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73d4xj9mx-7Ij-CgFQ8-_X5wjeB-TgPhTmS_K1rvsEXS6Zx6v5Pex5GuQtlg"
+        },
+        {
+          "url": "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
+          "title": "Gisèle Pelicot to sue publisher over unauthorized use of nude photographs",
+          "publisher": "Le Monde.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrcKbszYeXra9PlaFyRgL4zo-f2G4WEbm__6fx41XCY8rLGT48J-FX4VCj_M"
+        }
+      ]
+    },
+    {
+      "query": "philippines",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T08:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-24/philippines-to-upgrade-airport-near-taiwan-for-easier-us-access",
+        "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
+        "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpfpfsRhGq32xUiTShBb_qQyVJW4BOxBZO9IZOJEDYM-g9v3sI54NjcsrhGiU",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/philippines-to-upgrade-airport-near-taiwan-for-easier-us-access",
+          "title": "Philippines to Upgrade Airport Near Taiwan for Easier US Access",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpfpfsRhGq32xUiTShBb_qQyVJW4BOxBZO9IZOJEDYM-g9v3sI54NjcsrhGiU"
+        },
+        {
+          "url": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
+          "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
+          "publisher": "USNI News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjN-oBKVf6jDWlMNUR3FOmEe_Nv2MNpKDocoeuUpMU2n5gz13AYIx_Pflj_yg"
+        },
+        {
+          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance",
+          "title": "Trump offers the Philippines US$2.4 billion for self-defence – with a catch",
+          "publisher": "South China Morning Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9jsxRZBMJfu-Gvh7yorpDi7H7I1KleGi2VLfxhZm-9rzlxEUGvAHtFTkcqg"
+        }
+      ]
+    },
+    {
+      "query": "google play",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T08:10:00Z",
+      "related_news_urls": [
+        "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
+        "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
+        "https://demokratis.co.id/en/plaud-google-play-productivity-award"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA",
+      "image_credit": "The Korea Daily",
+      "news": [
+        {
+          "url": "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
+          "title": "Plaud — AI Voice Recorder Wins Google Play’s 2026 Best App",
+          "publisher": "The Korea Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA"
+        },
+        {
+          "url": "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
+          "title": "Plaud Wins Google Play Productivity Award for 2026",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRMLq82s5y7jKud0zZZ3s0MI4tPhWqd4ETcNR6LRobARdFaYi2OVb9_BFmoOk"
+        },
+        {
+          "url": "https://demokratis.co.id/en/plaud-google-play-productivity-award",
+          "title": "Plaud Wins Google Play 2026 Productivity Partner Award",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZ5n_DBSAe19Q4eASdsKEJ_yfDUhkHP4vFcU1xfvJ-I8vpS93dOrV_FO7Qrs"
         }
       ]
     }
