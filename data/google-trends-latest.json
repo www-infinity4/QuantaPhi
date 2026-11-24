@@ -3,348 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T19:01:19.129760Z",
+  "checked_at": "2026-11-24T19:31:16.640974Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "pittsburgh vs oklahoma",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T18:40:00Z",
+      "query": "man city vs napoli",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T19:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/pitt-vs-oklahoma-prediction-pick-100044915.html",
-        "https://247sports.com/college/pittsburgh/article/pitt-panthers-oklahoma-sooners-preview-fort-myers-tip-off-jeff-capel-baye-ndongo-293242611/",
-        "https://bvmsports.com/2026/11/22/sooners-travel-to-florida-to-play-pitt-in-skechers-fort-myers-tip-off/"
+        "https://www.mancity.com/news/mens/enzo-maresca-napoli-presser-63931031",
+        "https://www.theguardian.com/football/live/2026/nov/24/manchester-city-v-napoli-real-madrid-v-psv-champions-league-clockwatch-live",
+        "https://global.espn.com/football/story/_/id/50573261/kevin-de-bruyne-man-city-napoli"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCuMW-vR8GXeI0oZGjFlzvmahGqQRhDtjRzzgRgWu8HkBjyoe__M3IWj2zxKU",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQukyhdyUj8HQJANxBKaSQKgOGmUsu2jM6jltY2jgh69xKNz9ysJZPzfpTf6-M",
+      "image_credit": "Manchester City FC",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/pitt-vs-oklahoma-prediction-pick-100044915.html",
-          "title": "Pitt vs Oklahoma Prediction, Pick, College Basketball Odds for Tuesday, Nov. 24",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.mancity.com/news/mens/enzo-maresca-napoli-presser-63931031",
+          "title": "Nunes ready for Napoli, confirms Maresca",
+          "publisher": "Manchester City FC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCuMW-vR8GXeI0oZGjFlzvmahGqQRhDtjRzzgRgWu8HkBjyoe__M3IWj2zxKU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQukyhdyUj8HQJANxBKaSQKgOGmUsu2jM6jltY2jgh69xKNz9ysJZPzfpTf6-M"
         },
         {
-          "url": "https://247sports.com/college/pittsburgh/article/pitt-panthers-oklahoma-sooners-preview-fort-myers-tip-off-jeff-capel-baye-ndongo-293242611/",
-          "title": "Matchup Preview: Pitt battles Oklahoma in Fort Myers Tip-Off",
-          "publisher": "247Sports",
+          "url": "https://www.theguardian.com/football/live/2026/nov/24/manchester-city-v-napoli-real-madrid-v-psv-champions-league-clockwatch-live",
+          "title": "(1) Manchester City v Napoli, Real Madrid v PSV: Champions League clockwatch – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc3UKmCRubWbz1yxvEmhsqwnhuYxtTR7rSL8Q3qcPji21qGJPX0s1puKu0MFY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2FcaDrkVniSO_0CSxavrdIonYiW3Ot0rh1_Ekm_d5Rs3fSz8kifGP_ABbIjo"
         },
         {
-          "url": "https://bvmsports.com/2026/11/22/sooners-travel-to-florida-to-play-pitt-in-skechers-fort-myers-tip-off/",
-          "title": "Sooners Travel to Florida to Play Pitt in Skechers Fort Myers Tip-Off",
-          "publisher": "BVM Sports",
+          "url": "https://global.espn.com/football/story/_/id/50573261/kevin-de-bruyne-man-city-napoli",
+          "title": "Maresca calls Man City's league slump 'a shame' before De Bruyne reunion",
+          "publisher": "ESPN Global",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmofk4WKEZrEAmDX_1ZYMTtdXT7fnChFyVtb81zX0mSk05VCx7iqkZONY5410"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrD5C4xLUWPnye4GhUQeO92G4Jwdxpc3eu72idWacqALgIbUElGLeeT8BOzM"
         }
       ]
     },
     {
-      "query": "fantasypros",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T18:40:00Z",
+      "query": "como vs aek",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T19:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/id/50572304/fantasy-football-waiver-wire-pickups-week-12",
-        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-rb-blueprint-for-week-12-174102250.html",
-        "https://www.nytimes.com/athletic/7807012/2026/11/24/fantasy-football-waiver-wire-week-12-upside-pickups-for-the-playoffs-and-more/"
+        "https://as.com/futbol/champions/como-aek-en-directo-champions-league-hoy-en-vivo-f202611-d/",
+        "https://es-us.noticias.yahoo.com/deportes/fabregas-hago-alvini-milan-grand%C3%ADsimo-144412762.html",
+        "https://www.tufutbolero.com/novedades/el-aek-atenas-entrena-en-el-sinigaglia-con-tres-bajas-ante-e-a38fbf"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyBxs6_oEypGx_89xQ4Jk23O1MELMsRnjbxPdQGavFzxWMl1k9cvKBe57qxKs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjWXtUtcu_Fw7iaahlpH5V-0aOrN6OCG7zhtYTcu8yge9Laq5jkehFgxVt5rA",
+      "image_credit": "Diario AS",
+      "news": [
+        {
+          "url": "https://as.com/futbol/champions/como-aek-en-directo-champions-league-hoy-en-vivo-f202611-d/",
+          "title": "Como - AEK, en directo: Champions League hoy en vivo",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjWXtUtcu_Fw7iaahlpH5V-0aOrN6OCG7zhtYTcu8yge9Laq5jkehFgxVt5rA"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/deportes/fabregas-hago-alvini-milan-grand%C3%ADsimo-144412762.html",
+          "title": "Como, Fabregas: «Hago como Alvini ante el Milan, un grandísimo entrenador»",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdc_CSPwDHVB3QVl8lT1IhRjeAJne85X1K0d5SVi8jYZm3cXfg-ziTzXazT0"
+        },
+        {
+          "url": "https://www.tufutbolero.com/novedades/el-aek-atenas-entrena-en-el-sinigaglia-con-tres-bajas-ante-e-a38fbf",
+          "title": "El AEK Atenas entrena en el Sinigaglia con tres bajas ante el Como",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfZ8tGHhyG7G9Xumo9ulene51rlhC5rvSQna4aV6X6ty7dJgVVqHB5VR0uXLY"
+        }
+      ]
+    },
+    {
+      "query": "manchester city - napoli",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T19:10:00Z",
+      "related_news_urls": [
+        "https://www.gazzetta.it/Calcio/Champions-League/23-11-2026/napoli-allegri-prima-del-city-speriamo-nel-risultato-ma-non-basta-e-su-de-bruyne.shtml",
+        "https://www.eurosport.it/calcio/champions-league/2026-2027/manchester-city-napoli-champions-league-le-formazioni-ufficiali-de-bruyne-titolare-nel-suo-ritorno-alletihad_sto23358420/story.shtml",
+        "https://www.vietnam.vn/it/link-xem-truc-tiep-man-city-vs-napoli-3h00-ngay-25-11-champions-league"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5-z_nSBVlKG7TW3hmDfdLLRKqVZ6-ojzfW5j74bAV-NkF0dV7aJ9NA6zQ4w",
+      "image_credit": "La Gazzetta dello Sport",
+      "news": [
+        {
+          "url": "https://www.gazzetta.it/Calcio/Champions-League/23-11-2026/napoli-allegri-prima-del-city-speriamo-nel-risultato-ma-non-basta-e-su-de-bruyne.shtml",
+          "title": "Allegri: \"City davvero fortissimo\". De Bruyne: \"Non ho più 20 anni\". Poi attacca la stampa",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5-z_nSBVlKG7TW3hmDfdLLRKqVZ6-ojzfW5j74bAV-NkF0dV7aJ9NA6zQ4w"
+        },
+        {
+          "url": "https://www.eurosport.it/calcio/champions-league/2026-2027/manchester-city-napoli-champions-league-le-formazioni-ufficiali-de-bruyne-titolare-nel-suo-ritorno-alletihad_sto23358420/story.shtml",
+          "title": "Manchester City-Napoli, Champions League, le formazioni ufficiali: De Bruyne titolare nel suo ritorno all'Etihad",
+          "publisher": "Eurosport.it",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT06efXsSJBWbiS1MwvygSskC7z-yVf0PUbugePtGtPloTLkUmd8KmYdLOnpv0"
+        },
+        {
+          "url": "https://www.vietnam.vn/it/link-xem-truc-tiep-man-city-vs-napoli-3h00-ngay-25-11-champions-league",
+          "title": "Link per la diretta streaming di Manchester City-Napoli, ore 3:00 del mattino del 25 novembre - Champions League",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsKGF6qGUW9ppW87bHPb4fBLormSJBFqGcmTtOEhg6hzqsEGFu5U8Y_gv4BJw"
+        }
+      ]
+    },
+    {
+      "query": "slovan bratislava vs betis",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T19:10:00Z",
+      "related_news_urls": [
+        "https://www.besoccer.com/new/yaya-toure-relishes-reunion-with-former-man-city-boss-pellegrini-1443061",
+        "https://sports.yahoo.com/articles/betis-squad-bratislava-pellegrini-almost-164200660.html",
+        "https://www.sofascore.com/news/slovan-vs-real-betis-preview-form-stats-odds"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdC-E9MNxubediFsOXXRtHJLA8j0OemUCytSMO4xXpqOx07x9XUqnfcMbSiKM",
+      "image_credit": "BeSoccer Livescore",
+      "news": [
+        {
+          "url": "https://www.besoccer.com/new/yaya-toure-relishes-reunion-with-former-man-city-boss-pellegrini-1443061",
+          "title": "Yaya Toure relishes reunion with former Man City boss Pellegrini",
+          "publisher": "BeSoccer Livescore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdC-E9MNxubediFsOXXRtHJLA8j0OemUCytSMO4xXpqOx07x9XUqnfcMbSiKM"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/betis-squad-bratislava-pellegrini-almost-164200660.html",
+          "title": "📋 Betis squad for Bratislava: Pellegrini has almost everyone 🤔",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh0FFKVIUKcuS44Xo9YGXEezt0YPh7kq2z5WMkhECsVV6tPHsY9JuTSf2mdWk"
+        },
+        {
+          "url": "https://www.sofascore.com/news/slovan-vs-real-betis-preview-form-stats-odds",
+          "title": "Slovan vs Betis: UCL preview, stats and odds",
+          "publisher": "Sofascore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1nGXuGu5Ls02KNcDRDInlN2_WzkcbmNTXChInJyauFdlonHKGv_tow9EqkI"
+        }
+      ]
+    },
+    {
+      "query": "feyenoord vs porto",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T19:10:00Z",
+      "related_news_urls": [
+        "https://sportsbook.fanduel.com/soccer/uefa-champions-league/feyenoord-v-porto-36288672",
+        "https://onefootball.com/en/video/santi-gimenez-vuelve-a-roterdam-si-marco-no-festejare-43829501",
+        "https://www.tufutbolero.com/en/news/feyenoord-porto-five-absences-for-feyenoord-three-for-porto-e50451"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8",
+      "image_credit": "FanDuel Sportsbook",
+      "news": [
+        {
+          "url": "https://sportsbook.fanduel.com/soccer/uefa-champions-league/feyenoord-v-porto-36288672",
+          "title": "Feyenoord v Porto Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8"
+        },
+        {
+          "url": "https://onefootball.com/en/video/santi-gimenez-vuelve-a-roterdam-si-marco-no-festejare-43829501",
+          "title": "Santi Giménez vuelve a Róterdam: \"Si marco, no festejaré\"",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI7YQ9pHCjFqkdE5GRCn9J466hy0FiS7Is5Ubzl_NTIIwHwrOkHhUEzh1Et3I"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/feyenoord-porto-five-absences-for-feyenoord-three-for-porto-e50451",
+          "title": "Feyenoord-Porto: five absences for Feyenoord, three for Porto",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu8aMuC8l5GcIlZsoI0BJqg3zUKmTxF4iqVh09wiM6go78Gl8dY7x7gDcfh1o"
+        }
+      ]
+    },
+    {
+      "query": "ole miss basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T19:10:00Z",
+      "related_news_urls": [
+        "https://www.deseret.com/sports/2026/11/24/byu-basketball-ole-miss-maui-invitational-2026-how-to-watch/",
+        "https://www.cbssports.com/college-basketball/news/rankings-top-25-and-1-ole-miss-rebels/",
+        "https://www.vanquishthefoe.com/byu-basketball/28182/byu-basketball-vs-ole-miss-preview-byu-faces-toughest-test-in-young-season-maui-invitational"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuAcEqJwddd4pdquh1g65hfOj10XIeisZzn_c76Wss5gmxgKcxy_SVFaAlehU",
+      "image_credit": "Deseret News",
+      "news": [
+        {
+          "url": "https://www.deseret.com/sports/2026/11/24/byu-basketball-ole-miss-maui-invitational-2026-how-to-watch/",
+          "title": "How to watch No. 19 BYU play Ole Miss in the Maui Invitational",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuAcEqJwddd4pdquh1g65hfOj10XIeisZzn_c76Wss5gmxgKcxy_SVFaAlehU"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/rankings-top-25-and-1-ole-miss-rebels/",
+          "title": "College basketball rankings: Keep an eye on the 5-0 Ole Miss Rebels scratching right outside the Top 25 And 1",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTi4FPhpmNOdO8rYEKVrZqI4An9EaMEiJNntW1M9Tmi7sIT8qIrqL-RVYBC3bU"
+        },
+        {
+          "url": "https://www.vanquishthefoe.com/byu-basketball/28182/byu-basketball-vs-ole-miss-preview-byu-faces-toughest-test-in-young-season-maui-invitational",
+          "title": "BYU vs Ole Miss Preview: BYU Faces Toughest Test in Early Season",
+          "publisher": "Vanquish The Foe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-iQ6Fq2s0tWWn1ydMJWaBJ3jHbozzyrjp92lxE9eNPaUc4SDt3vnLr5CCJlA"
+        }
+      ]
+    },
+    {
+      "query": "fotmob",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T19:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50573929/usmnt-players-pochettino-manchester-united",
+        "https://www.thetimes.com/sport/football/article/mauricio-pochettino-targets-new-striker-in-january-transfer-window-kl0lht5vx",
+        "https://www.si.com/soccer/strikers-man-utd-mauricio-pochettino-january-budget-blow"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwvTn_jOQuz3hQaN80zjwfDdkzJ71F4JjAvoj1GTrKANsIoQqljNdBrJMRXU",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/fantasy/football/story/_/id/50572304/fantasy-football-waiver-wire-pickups-week-12",
-          "title": "Live Q&A: Week 12 fantasy football waiver wire pickups",
+          "url": "https://www.espn.com/soccer/story/_/id/50573929/usmnt-players-pochettino-manchester-united",
+          "title": "Which USMNT players could follow Mauricio Pochettino to Manchester United?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyBxs6_oEypGx_89xQ4Jk23O1MELMsRnjbxPdQGavFzxWMl1k9cvKBe57qxKs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwvTn_jOQuz3hQaN80zjwfDdkzJ71F4JjAvoj1GTrKANsIoQqljNdBrJMRXU"
         },
         {
-          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-rb-blueprint-for-week-12-174102250.html",
-          "title": "Fantasy Football Rankings: Hayden Winks' RB Blueprint for Week 12",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.thetimes.com/sport/football/article/mauricio-pochettino-targets-new-striker-in-january-transfer-window-kl0lht5vx",
+          "title": "Mauricio Pochettino targets new striker in January transfer window",
+          "publisher": "The Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIjCXZeZIb_0HxyqIZPvjT_8vg4AArlgD5_wo3qQua-noifLzDGkNk-OdFm_4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI_Sl5iOxyoPHSF_pUGqtDl6HS5P0jMq-XleIwQ_RBEuP_RbabpW6zGfUbtSc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7807012/2026/11/24/fantasy-football-waiver-wire-week-12-upside-pickups-for-the-playoffs-and-more/",
-          "title": "Fantasy football waiver wire Week 12: Upside pickups for the playoffs and more",
-          "publisher": "The New York Times",
+          "url": "https://www.si.com/soccer/strikers-man-utd-mauricio-pochettino-january-budget-blow",
+          "title": "The Strikers Man Utd Can Afford After Mauricio Pochettino Dealt ‘January Budget’ Blow",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIbh6Jpv0nuRZ7EO8yrfZQGNyTPWj12bRK-A_2uYnlWJ77tu0Tj090DaJTdXw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhX0Leiwqk_by6x9DihTy_JlTaq3hUhSZxms4uTXWUidhiC17XMc2OIyRfIWk"
         }
       ]
     },
     {
-      "query": "state of leonida",
+      "query": "lawsuit",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T19:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/23/metro/boston-hud-immigrant-subsidized-housing-lawsuit/",
+        "https://www.wbur.org/news/2026/11/24/states-sue-hud-housing-aid-immigrants-mixed-status",
+        "https://calmatters.org/housing/2026/11/hud-mixed-status-lawsuit/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwEPodsHZ-t1l8py-2OM8TKNIipnzJTirj4ApBXo6UgMubHuWufaqPrJGIWdI",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/23/metro/boston-hud-immigrant-subsidized-housing-lawsuit/",
+          "title": "New rule could force immigrants out of federally subsidized housing",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwEPodsHZ-t1l8py-2OM8TKNIipnzJTirj4ApBXo6UgMubHuWufaqPrJGIWdI"
+        },
+        {
+          "url": "https://www.wbur.org/news/2026/11/24/states-sue-hud-housing-aid-immigrants-mixed-status",
+          "title": "Mass. joins 20 states in suing HUD over a rule that could cut off housing aid for mixed-status families",
+          "publisher": "WBUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOEYSZVkHFWkqAwtPPOhr9y1QhZjraqoENp029En26dfQJGh2jru9H6lgGj5M"
+        },
+        {
+          "url": "https://calmatters.org/housing/2026/11/hud-mixed-status-lawsuit/",
+          "title": "California sues to block Trump rule denying aid to families with mixed immigration statuses",
+          "publisher": "CalMatters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlZm1qrY2zJxt_Zg1AqdnSix32GpKQYCsIa0ii_QlKh8UpvLfprHo1Yrx-m18"
+        }
+      ]
+    },
+    {
+      "query": "portsmouth vs west ham",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T18:30:00Z",
+      "published_at": "2026-11-24T19:00:00Z",
       "related_news_urls": [
-        "https://www.pcguide.com/news/gta-6-interactive-map-already-has-more-than-6800-points-of-interest-as-fans-discover-leonida/",
-        "https://wnhub.io/news/other/item-52771"
+        "https://www.bbc.com/sport/football/live/cxj05qmzq474t",
+        "https://www.expressfm.com/news/football/this-weeks-opposition-west-ham-united1/",
+        "https://www.tufutbolero.com/en/news/portsmouth-west-ham-portsmouth-arrive-with-six-injury-fdbceb"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBERk7q5tKgWQS9hk2RrtABf3N9e3mrNUiFfs8UDH56lzB0ibv3qa2K3zyoOg",
-      "image_credit": "PC Guide",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwkMo4pFIB6jolwzvzNlJib5LNOIZ7lqSaJQhVnrwIU0NaZNeLvX3spBbzydI",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.pcguide.com/news/gta-6-interactive-map-already-has-more-than-6800-points-of-interest-as-fans-discover-leonida/",
-          "title": "GTA 6 interactive map already has more than 6,800 points of interest as fans discover Leonida",
-          "publisher": "PC Guide",
+          "url": "https://www.bbc.com/sport/football/live/cxj05qmzq474t",
+          "title": "Portsmouth v West Ham United: Championship stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBERk7q5tKgWQS9hk2RrtABf3N9e3mrNUiFfs8UDH56lzB0ibv3qa2K3zyoOg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwkMo4pFIB6jolwzvzNlJib5LNOIZ7lqSaJQhVnrwIU0NaZNeLvX3spBbzydI"
         },
         {
-          "url": "https://wnhub.io/news/other/item-52771",
-          "title": "IGN has teamed up with Rockstar to present the Official Strategy Guide for GTA 6",
-          "publisher": "WN Hub",
+          "url": "https://www.expressfm.com/news/football/this-weeks-opposition-west-ham-united1/",
+          "title": "This Week's Opposition: West Ham United",
+          "publisher": "Express FM - Portsmouth",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ18dJrb6--EMF7HeIA-zINxuF4hhcXrQWEqjRWfK-dUSAqKYWSLD5tAAPbZA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrStLpIyn12vkBVxLvz5oxfKf_t0cMj3ux7i-1ZN5zVZsDqndRV6bESbD8IZw"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/portsmouth-west-ham-portsmouth-arrive-with-six-injury-fdbceb",
+          "title": "Portsmouth-West Ham: Portsmouth arrive with six injury absences",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ieU-MHVsa-EtospZEpNCH1OBA9Wefn6e7mOFqDNYiTkJ6ZdODLIMRb99v5c"
         }
       ]
     },
     {
-      "query": "stock",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T18:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-24-2026",
-        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBPPmIwG1RM3SbCvv6Ls5xmHmtnQxDTEpo89UfVL5LKAGETPukEFDTob56Kdg",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
-          "title": "Nvidia live updates: Nvidia stock falls as exuberance fades after Jensen Huang's return as CEO",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBPPmIwG1RM3SbCvv6Ls5xmHmtnQxDTEpo89UfVL5LKAGETPukEFDTob56Kdg"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-24-2026",
-          "title": "Stock Market Today: Tech Stocks Slide Back After Epic Rally",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL5OjCOOJ_DxUoogygATHkAw-5VUrtDxyHga_zjG2jhh4EIVnEluaAmmO1gX4"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
-          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
-        }
-      ]
-    },
-    {
-      "query": "notre dame vs davidson",
+      "query": "grand theft auto gta vi",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T18:20:00Z",
+      "published_at": "2026-11-24T19:00:00Z",
       "related_news_urls": [
-        "https://fightingirish.com/news/2026/11/23/no-13-notre-dame-davidson-meet-at-battle-4-atlantis",
-        "https://www.nytimes.com/athletic/7808534/2026/11/24/notre-dame-vs-davidson-stream-how-to-watch-nov-24/",
-        "https://www.ndsmcobserver.com/article/notre-dame-womens-basketball-gears-up-for-the-battle-4-atlantis-20261124"
+        "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+        "https://variety.com/2026/gaming/reviews/grand-theft-auto-vi-review-gta-6-1236955932/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdtG7gUDUkjhMKiQzlYDD30d_nf4r4QrkZ9kw-nHUhmrsSTmFu3G3OCLOHn-M",
-      "image_credit": "Notre Dame Fighting Irish",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE",
+      "image_credit": "Rockstar Games",
       "news": [
         {
-          "url": "https://fightingirish.com/news/2026/11/23/no-13-notre-dame-davidson-meet-at-battle-4-atlantis",
-          "title": "No 13 Notre Dame, Davidson Meet At Battle 4 Atlantis",
-          "publisher": "Notre Dame Fighting Irish",
+          "url": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+          "title": "Grand Theft Auto VI Now Available",
+          "publisher": "Rockstar Games",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdtG7gUDUkjhMKiQzlYDD30d_nf4r4QrkZ9kw-nHUhmrsSTmFu3G3OCLOHn-M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7808534/2026/11/24/notre-dame-vs-davidson-stream-how-to-watch-nov-24/",
-          "title": "How to watch Notre Dame vs. Davidson women’s basketball: TV channel and streaming options for November 24",
-          "publisher": "The New York Times",
+          "url": "https://variety.com/2026/gaming/reviews/grand-theft-auto-vi-review-gta-6-1236955932/",
+          "title": "‘Grand Theft Auto VI’ Review: A Bloody, Boundary-Shifting Reclamation of the American Dream",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8uZe8FzbcbdF9BeuoE8pVl8DjdLeM3sUS3yBQMyEAn3EgauG4UNqFrJPptC4"
-        },
-        {
-          "url": "https://www.ndsmcobserver.com/article/notre-dame-womens-basketball-gears-up-for-the-battle-4-atlantis-20261124",
-          "title": "Notre Dame women’s basketball gears up for the Battle 4 Atlantis",
-          "publisher": "Observer Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZuMNzq2bPak3zpBK9Fb1G5LRZ3xFHHBuwklrXcHDE2SsAlcba23ri7gnNVW4"
-        }
-      ]
-    },
-    {
-      "query": "jack ruby",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T18:20:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/nation/2026/11/24/lee-harvey-oswald-killed-by-jack-ruby-live-tv-after-kennedy-assassination/",
-        "https://www.nola.com/entertainment_life/jada-confronto-biography/article_91c694d5-f6db-4d35-b39d-b17f2217f6ca.html",
-        "https://people.com/inside-jack-ruby-life-after-lee-harvey-oswald-murder-12195205"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA5Hk6JGv-jPw-KS9lEbb0y_lmpT8djjC2pritaeAnyo2fDPN_RCn3KSEi6U",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/nation/2026/11/24/lee-harvey-oswald-killed-by-jack-ruby-live-tv-after-kennedy-assassination/",
-          "title": "Two days after JFK assassination, live TV audience witnesses another killing",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnA5Hk6JGv-jPw-KS9lEbb0y_lmpT8djjC2pritaeAnyo2fDPN_RCn3KSEi6U"
-        },
-        {
-          "url": "https://www.nola.com/entertainment_life/jada-confronto-biography/article_91c694d5-f6db-4d35-b39d-b17f2217f6ca.html",
-          "title": "Meet the Bourbon Street burlesque dancer tied to assassinations of JFK, Lee Harvey Oswald",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMMl01trCSJhRipGY_SWIJ7VtT-9WdrYFH7UoTROv6YrJRa0Y24Xaj3dMj2x8"
-        },
-        {
-          "url": "https://people.com/inside-jack-ruby-life-after-lee-harvey-oswald-murder-12195205",
-          "title": "What Happened to Jack Ruby After He Killed Lee Harvey Oswald on Live TV?",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFZQH9oso_D-oUnjW1NFvQITi8RtNiMUGwVLJpIbSP4vlMPFBiE2J6s3DGqd8"
-        }
-      ]
-    },
-    {
-      "query": "ha seong kim",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T18:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/ha-seong-kim-tigers-contract",
-        "https://www.freep.com/story/sports/mlb/tigers/2026/11/24/detroit-tigers-infielder-ha-seong-kim/92945065007/",
-        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-ha-seong-kim.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWUs0PP5I1LPUUUe6lupe4QJPSHRnjlRoUxAYR9MVd4F_1l5RoBWpJsCcsV6Y",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/ha-seong-kim-tigers-contract",
-          "title": "Tigers agree to 1-year deal with versatile infielder Kim (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWUs0PP5I1LPUUUe6lupe4QJPSHRnjlRoUxAYR9MVd4F_1l5RoBWpJsCcsV6Y"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/mlb/tigers/2026/11/24/detroit-tigers-infielder-ha-seong-kim/92945065007/",
-          "title": "Detroit Tigers signing infielder Ha-Seong Kim: Report",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3AhHFrWNS32Wb0SXRnSfs2r1QsgWp6scJJw8wA_pp6-nZatEgSB-r293CL5w"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-ha-seong-kim.html",
-          "title": "Tigers To Sign Ha-Seong Kim",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzsgrO8F3r8P7kNIzSqJtWyNBQOA7ZO_EIn8XaqgcYnCTd2m0ODaIESq9Wr_M"
-        }
-      ]
-    },
-    {
-      "query": "trinity rodman",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T18:10:00Z",
-      "related_news_urls": [
-        "https://people.com/ben-shelton-and-trinity-rodman-split-after-two-years-together-12277220",
-        "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
-        "https://extratv.com/2026/11/24/ben-shelton-and-trinity-rodman-split-report/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvyetVw3amDt73cUIowdlnTRz5NaU_MKyAUHnJVmStQfbPz6iVvDQSpEctJaQ",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/ben-shelton-and-trinity-rodman-split-after-two-years-together-12277220",
-          "title": "Ben Shelton and Trinity Rodman Split After Nearly Two Years Together: Report",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQvyetVw3amDt73cUIowdlnTRz5NaU_MKyAUHnJVmStQfbPz6iVvDQSpEctJaQ"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
-          "title": "Trinity Rodman, Ben Shelton Reportedly Split After Dating for Nearly 2 Years",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7O8SqHFUOADMrL_ASnLO3AI_WBcsYcZ88D-lKXfAdmz8OXArxuLglXBunNso"
-        },
-        {
-          "url": "https://extratv.com/2026/11/24/ben-shelton-and-trinity-rodman-split-report/",
-          "title": "Tennis Pro Ben Shelton & Soccer Star Trinity Rodman Split (Report)",
-          "publisher": "Extra",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyxs9tPDs7mzuodQUMrIjKbpWVeIfbSljgfbDwzEiq0t9aJyhq9kPjfcBbgyo"
-        }
-      ]
-    },
-    {
-      "query": "retriever",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T18:00:00Z",
-      "related_news_urls": [
-        "https://people.com/golden-retriever-caught-on-camera-leaping-into-pool-to-save-drowning-toddler-12276754",
-        "https://www.news.com.au/lifestyle/hero-golden-retriever-saves-drowning-twoyearold-toddler-after-leaping-into-backyard-pool/news-story/220da3651b256731cf92f7adc902039b",
-        "https://en.haberler.com/this-dog-is-a-hero-now-he-pulled-him-back-from-2343827/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1NOd1uUg7s1rknAImhln9Gg3RoemENPiVkIme6h5DAmd4vpn-pnzFMGOzSQk",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/golden-retriever-caught-on-camera-leaping-into-pool-to-save-drowning-toddler-12276754",
-          "title": "Golden Retriever Caught on Camera Leaping into Pool to Save Drowning Toddler",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1NOd1uUg7s1rknAImhln9Gg3RoemENPiVkIme6h5DAmd4vpn-pnzFMGOzSQk"
-        },
-        {
-          "url": "https://www.news.com.au/lifestyle/hero-golden-retriever-saves-drowning-twoyearold-toddler-after-leaping-into-backyard-pool/news-story/220da3651b256731cf92f7adc902039b",
-          "title": "Hero dog saves toddler from drowning",
-          "publisher": "News.com.au",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qwruRspkTqQ5rgWBSjqaWkiPfr3S-lJDHMoVWkmJH-Fld5v7BWZZRyNRJSM"
-        },
-        {
-          "url": "https://en.haberler.com/this-dog-is-a-hero-now-he-pulled-him-back-from-2343827/",
-          "title": "This dog is a hero now! He pulled him back from death.",
-          "publisher": "Haberler.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYn81s4VduQkJC1puzM_ERWUZ0vsgLYIoixtOnyGSvA8YBe8RICBPHOWOjJaE"
-        }
-      ]
-    },
-    {
-      "query": "mitch mcconnell",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T17:50:00Z",
-      "related_news_urls": [
-        "https://www.semafor.com/article/11/23/2026/mcconnell-may-block-former-rivals-year-end-ambassadorial-confirmation",
-        "https://www.courier-journal.com/story/news/politics/mitch-mcconnell/2026/11/23/mitch-mcconnell-nate-morris-ambassador-confirmation/92932898007/",
-        "https://www.the-independent.com/news/world/americas/us-politics/mitch-mcconnell-trump-ambassador-nominee-b3090627.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNe5qeKdYfwp2V-jG5DoePBbCEr3QQpRW4wFIIKlNupUNqArX_S0lqrc2e3IM",
-      "image_credit": "Semafor",
-      "news": [
-        {
-          "url": "https://www.semafor.com/article/11/23/2026/mcconnell-may-block-former-rivals-year-end-ambassadorial-confirmation",
-          "title": "McConnell may block his conservative critic’s year-end ambassadorial confirmation",
-          "publisher": "Semafor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNe5qeKdYfwp2V-jG5DoePBbCEr3QQpRW4wFIIKlNupUNqArX_S0lqrc2e3IM"
-        },
-        {
-          "url": "https://www.courier-journal.com/story/news/politics/mitch-mcconnell/2026/11/23/mitch-mcconnell-nate-morris-ambassador-confirmation/92932898007/",
-          "title": "Could Mitch McConnell block ex-Senate candidate's ambassadorship?",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoX9m1sq9yEAYmXsbzllSTD3gcyDBjH_vFIuZ1eFHWwQi4kiyLI6rE4qiq3dQ"
-        },
-        {
-          "url": "https://www.the-independent.com/news/world/americas/us-politics/mitch-mcconnell-trump-ambassador-nominee-b3090627.html",
-          "title": "Mitch McConnell takes a parting shot at Trump as he heads into retirement",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcWrXqyKL3eLmMCIqgWAP_DOEiqC6qzmE5p3D-kyFaqpYl2yjudKVgigQh4UA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAp4UHw4J5rIRrDOrduWRzHaV4o0WAhDs8vb7ZfKFCDU6QpgeUIvjZFTDfzE0"
         }
       ]
     }
