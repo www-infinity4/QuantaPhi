@@ -3,52 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T23:01:16.602655Z",
+  "checked_at": "2026-11-24T23:30:28.421832Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tyrone taylor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T22:40:00Z",
+      "query": "miami oh vs wmu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T23:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/report-teams-showing-interest-in-tyler-austin",
-        "https://www.mlbtraderumors.com/2026/11/multiple-teams-showing-interest-in-tyler-austin.html",
-        "https://nypost.com/2026/11/23/sports/ex-yankee-tyler-austin-looking-for-stateside-return/"
+        "https://www.cbssports.com/betting/news/polymarket-promo-code-cbssports-claim-25-bonus-miami-oh-western-michigan-college-football-tuesday/",
+        "https://www.cbssports.com/betting/news/western-michigan-vs-miami-oh-prediction-odds-picks-college-football-betting-preview-for-nov-24-maction/",
+        "https://sports.yahoo.com/college-football/articles/watch-miami-oh-vs-western-230000432.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/report-teams-showing-interest-in-tyler-austin",
-          "title": "Report: Teams showing interest in Tyler Austin",
-          "publisher": "NBC Sports",
+          "url": "https://www.cbssports.com/betting/news/polymarket-promo-code-cbssports-claim-25-bonus-miami-oh-western-michigan-college-football-tuesday/",
+          "title": "Polymarket promo code CBSSPORTS: Claim $25 bonus for Miami (OH) vs. Western Michigan, college football Tuesday",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSw3P1_ngq8Kf5qyNSVcJ0KJ-Qf99Hd4Ig7DVcB2m5Eo7uqIFfN14BnE_0Wu7w"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc1N3pgRbYNrAxfLu_5nWNnQ17Nx5Il6KQaAs6Fd1CL3L19uUvkkZZtbUzlpg"
         },
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/multiple-teams-showing-interest-in-tyler-austin.html",
-          "title": "Multiple Teams Showing Interest In Tyler Austin",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.cbssports.com/betting/news/western-michigan-vs-miami-oh-prediction-odds-picks-college-football-betting-preview-for-nov-24-maction/",
+          "title": "Western Michigan vs. Miami (OH) prediction, odds, picks: College football betting preview for Nov. 24 MACtion",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8aJGjWV2CRwjlhTdG35lAck38lE_7go375GdvpFBdnxHaCsFMx4CDj-brtQA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSyyeDrRUUFzZXGpCSNqjgJhqnRhihZzFtd5bOqXZoW9d203iIaYO5Yi9B1mlA"
         },
         {
-          "url": "https://nypost.com/2026/11/23/sports/ex-yankee-tyler-austin-looking-for-stateside-return/",
-          "title": "Ex-Yankee Tyler Austin looking for stateside return — and both New York clubs are interested",
-          "publisher": "New York Post",
+          "url": "https://sports.yahoo.com/college-football/articles/watch-miami-oh-vs-western-230000432.html",
+          "title": "How to watch Miami (OH) vs Western Michigan: Live stream College Football, TV channel",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0tdauC19l6HjA_pUOoumYsKaNYpxcQ3HmUi3YpLw7uuaOOzqn8YnxYQwc5k4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9Q8Wd4N54a2CTsAl6D-jeT6ap_Qtqt34wGN2wBadbBmLXsZo9w9Cj1Qk8eA"
         }
       ]
     },
     {
-      "query": "creighton basketball",
+      "query": "dusty may",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/",
+        "https://sports.yahoo.com/nba/articles/walter-clayton-jr-confidence-makes-215842509.html",
+        "https://www.nba.com/mavs/news/jazz-coach-not-surprised-by-self-made-guy-claytons-journey-to-mavericks"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYk9SCRW3UzYxR9FCw8xdgRcqfL6EKutKi84XGyaIYQGcxJZID4OfIuRIEwRs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/",
+          "title": "Why Walter Clayton Jr. spurned other West teams and joined his college roommate on the Mavs - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYk9SCRW3UzYxR9FCw8xdgRcqfL6EKutKi84XGyaIYQGcxJZID4OfIuRIEwRs"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/walter-clayton-jr-confidence-makes-215842509.html",
+          "title": "Walter Clayton Jr. Confidence Makes Him A Dallas Mavericks Staple",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSm4ivvXzxhpUZbfkXUcOoXPeaeV-sY0J37Qu8-WjLqyrqkPWlvub6LEK_oGaM"
+        },
+        {
+          "url": "https://www.nba.com/mavs/news/jazz-coach-not-surprised-by-self-made-guy-claytons-journey-to-mavericks",
+          "title": "Jazz coach not surprised by 'self-made guy' Clayton's journey to Mavericks",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6H8l96_JQimeXZ5zz6fvETLBjG6ABueS1gN8ZVEzXGfiRnvKo-Zi4a2ojUcA"
+        }
+      ]
+    },
+    {
+      "query": "pistons vs magic",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/3-storylines-magic-cades-pistons-184759854.html",
+        "https://www.cbssports.com/betting/news/pistons-magic-prediction-odds-time-2026-nba-cup-picks-best-bets-tuesday-november-24/",
+        "https://www.nba.com/magic/news/orlando-magic-detroit-pistons-game-preview-injury-report-20261124"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5mVIQpUVM14WaHt-Au-flkmZQpmik41y50RiPGx_MpfOzRYGNUGTJouX5_XE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/3-storylines-magic-cades-pistons-184759854.html",
+          "title": "3 Storylines for Magic as They Take on Cade's Pistons and AD's Wizards This Week",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5mVIQpUVM14WaHt-Au-flkmZQpmik41y50RiPGx_MpfOzRYGNUGTJouX5_XE"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/pistons-magic-prediction-odds-time-2026-nba-cup-picks-best-bets-tuesday-november-24/",
+          "title": "Pistons vs. Magic prediction, odds, time: 2026 NBA Cup picks for Tuesday, Nov. 24 from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeCZpCMxoOZIKfDF8cuzHGsVWxxy6N9bbETWc1v-X238J-_vpdIfUm8g2IHsE"
+        },
+        {
+          "url": "https://www.nba.com/magic/news/orlando-magic-detroit-pistons-game-preview-injury-report-20261124",
+          "title": "Orlando Magic vs. Detroit Pistons: Game Preview",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQimt3_vww4MKIOK7ywIMW5G-JrRCvIz_W8w49eicwjSQU2OFbhnG12q4U48qo"
+        }
+      ]
+    },
+    {
+      "query": "depaul vs purdue",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T22:40:00Z",
+      "published_at": "2026-11-24T23:00:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/college/purdue/2026/11/23/purdue-basketball-game-today-vs-depaul-where-to-watch-start-time-stream-schedule/92924810007/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/purdue-men-basketball-watch-purdue-220000315.html",
+        "https://www.on3.com/teams/purdue-boilermakers/news/goldandblack-com-purdue-basketball-preview-depaul-in-fort-myers/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGJfd1PFxZxf7bsSXMK9g-BC7MRdQAt6GhgLEcmuz4_Cibp47Zt2VJwMaQcI",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/23/purdue-basketball-game-today-vs-depaul-where-to-watch-start-time-stream-schedule/92924810007/",
+          "title": "Where to watch Purdue basketball game vs. DePaul in Fort Myers Tip-Off: Start time tonight, Nov. 24",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOGJfd1PFxZxf7bsSXMK9g-BC7MRdQAt6GhgLEcmuz4_Cibp47Zt2VJwMaQcI"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/purdue-men-basketball-watch-purdue-220000315.html",
+          "title": "Purdue Men’s Basketball: How to Watch Purdue (4-2) vs. DePaul (5-0) & Fan Discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtIAcUJjMCaJ5SW2DQ4sJCkvpK1A-ZaxKkNEGE-SLmnkLySwg2CudBLt4h-WI"
+        },
+        {
+          "url": "https://www.on3.com/teams/purdue-boilermakers/news/goldandblack-com-purdue-basketball-preview-depaul-in-fort-myers/",
+          "title": "GoldandBlack.com Purdue Basketball Preview: DePaul in Fort Myers",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7gRaM8Q6h3OYpMelrTwwh7RPpVsx3VXXxYzwe0QpBVo5VaRsBwzDPMdYSfbQ"
+        }
+      ]
+    },
+    {
+      "query": "eastern michigan football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/watch-eastern-michigan-vs-kent-230000606.html",
+        "https://www.cbssports.com/betting/news/eastern-michigan-kent-state-prediction-odds-2026-rivalry-week-maction-tuesday-picks-bets/",
+        "https://kentstater.com/146599/sports/football-looks-to-avoid-total-flameout-in-season-finale/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIAjqPKSlCvu15sfCDu3Mz8JaV8BHxZarS4bfB4ggmWzdL0d-ql_yjRxG99xU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/watch-eastern-michigan-vs-kent-230000606.html",
+          "title": "How to watch Eastern Michigan vs Kent State: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIAjqPKSlCvu15sfCDu3Mz8JaV8BHxZarS4bfB4ggmWzdL0d-ql_yjRxG99xU"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/eastern-michigan-kent-state-prediction-odds-2026-rivalry-week-maction-tuesday-picks-bets/",
+          "title": "Eastern Michigan vs. Kent State prediction, odds: Rivalry Week MACtion Tuesday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTW_Nmu4HzJnx0slSbIdC85aybQE6-6o8dnGzEhTzoafpVnBUsxarLi_B7hIIw"
+        },
+        {
+          "url": "https://kentstater.com/146599/sports/football-looks-to-avoid-total-flameout-in-season-finale/",
+          "title": "Football looks to avoid total flameout in season finale",
+          "publisher": "KentStater",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFByfktS4NLgCNhDByg5m0Ixf2Mj3WWTIVzajIEYvwu2qxM-mkk7GUCJJsl5A"
+        }
+      ]
+    },
+    {
+      "query": "vanderbilt basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T23:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-michigan-wolverines-the-game-ryan-day-kyle-whittingham--293256335/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/ohio-state-hosts-no-14-210100040.html",
+        "https://www.cleveland.com/tv/2026/11/where-to-watch-vanderbilt-vs-ohio-state-basketball-today.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYqrQyZzF7Y6yoVPpGYXA6NTy9pWi9mewdgmyD-i_Vp3nmlygAxURj2UK45ak",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-michigan-wolverines-the-game-ryan-day-kyle-whittingham--293256335/",
+          "title": "BH: Told us so | Defensive stance",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYqrQyZzF7Y6yoVPpGYXA6NTy9pWi9mewdgmyD-i_Vp3nmlygAxURj2UK45ak"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/ohio-state-hosts-no-14-210100040.html",
+          "title": "Ohio State hosts No. 14 Vanderbilt: Live updates, score and highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5QG-wBdpeXuw0UFlU9bVr_WjXeK9E6b5QcGnuhHl1h9VneZiW5RTUPynFmMM"
+        },
+        {
+          "url": "https://www.cleveland.com/tv/2026/11/where-to-watch-vanderbilt-vs-ohio-state-basketball-today.html",
+          "title": "Where to watch Vanderbilt vs. Ohio State basketball today",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwYshLK7fzUPg7pdkdO_j0buwWJivXZtf8phVyBcQFTwojKo12jXfhN1SX1Ao"
+        }
+      ]
+    },
+    {
+      "query": "kent state basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T23:00:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/wyoming-cowboys-vs-kent-state-golden-flashes-prediction-odds-2026-11-24/",
+        "https://www.bleachernation.com/picks/2026/11/23/mac-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+        "https://www.sweetwaternow.com/cowboys-head-into-sunshine-slam-finale/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/wyoming-cowboys-vs-kent-state-golden-flashes-prediction-odds-2026-11-24/",
+          "title": "Wyoming vs Kent State Prediction, Picks & Odds | 24 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/23/mac-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+          "title": "MAC Basketball Predictions, Computer Picks and Best Bets | November 24",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ1sp-MfgyouZqMVNQog7FMsd777mTx54BC8tVv7iBUBGLXSdTWtRNEUE7ZXA"
+        },
+        {
+          "url": "https://www.sweetwaternow.com/cowboys-head-into-sunshine-slam-finale/",
+          "title": "Cowboys Head Into Sunshine Slam Finale",
+          "publisher": "SweetwaterNOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8Kw1gO7j5cIyDlFFWwF8d5KfG9ztTTJoa1n6FcuNG31kxpp30osbpGThYRWk"
+        }
+      ]
+    },
+    {
+      "query": "michigan vs creighton",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T22:50:00Z",
       "related_news_urls": [
         "https://umhoops.com/2026/11/23/five-thoughts-on-michigan-as-it-heads-to-las-vegas-with-questions-to-answer/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/watch-creighton-vs-michigan-live-213000039.html",
-        "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/"
+        "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/watch-creighton-vs-michigan-live-213000039.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_ncURny0299Jvnua0zE2cG6mX0qlHjn-iSyHN0kvkB04rYCy_uJEBb1IO3Ho",
       "image_credit": "UM Hoops.com",
@@ -61,298 +271,88 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_ncURny0299Jvnua0zE2cG6mX0qlHjn-iSyHN0kvkB04rYCy_uJEBb1IO3Ho"
         },
         {
+          "url": "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/",
+          "title": "Michigan men's basketball vs. Creighton: Preview and live thread",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWuzVsLyYfr495js6HU4AGubiQkOF8XR8N2e8HNmrMP1U5PfDur9pP1CsJBOw"
+        },
+        {
           "url": "https://sports.yahoo.com/mens-college-basketball/articles/watch-creighton-vs-michigan-live-213000039.html",
           "title": "How to watch Creighton vs Michigan: Live stream Players Era 16, College Basketball, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTVqjf7ICdajRrK7Fngb_eCnFBFW8i7MMIMx8619BywncoIFtI1vWj35crAD4"
+        }
+      ]
+    },
+    {
+      "query": "arizona basketball",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T22:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25537202-bryce-james-box-score-stats-highlights-arizonas-win-vs-csu",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909743",
+        "https://247sports.com/college/arizona/article/arizona-wildcats-mens-basketball-maui-invitational-colorado-state-rams-tommy-lloyd-jj-mandaquit-postgame-press-conference-quotes-2026-27-293242268/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0fwEyMzaP5z_JMdywD661aD-aPMgW9urO8vEDWHSbGV4vxRFHd3EzKoXAjM",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25537202-bryce-james-box-score-stats-highlights-arizonas-win-vs-csu",
+          "title": "Bryce James' Box Score Stats, Highlights from Arizona's Win vs. CSU",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0fwEyMzaP5z_JMdywD661aD-aPMgW9urO8vEDWHSbGV4vxRFHd3EzKoXAjM"
         },
         {
-          "url": "https://247sports.com/college/michigan/article/michigan-mens-basketball-vs-creighton-preview-and-live-thread-293256372/",
-          "title": "Michigan men's basketball vs. Creighton: Preview and live thread",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909743",
+          "title": "Arizona 96-83 Colorado State (Nov 23, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB0WrnH5TR-8ARvpWOzstbySaw_SbdQZsZtlEvS2xFHHCthgnBDIMg69-VnZQ"
+        },
+        {
+          "url": "https://247sports.com/college/arizona/article/arizona-wildcats-mens-basketball-maui-invitational-colorado-state-rams-tommy-lloyd-jj-mandaquit-postgame-press-conference-quotes-2026-27-293242268/",
+          "title": "Tommy Lloyd and JJ Mandaquit break down Maui Invitational win over Colorado State",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8gVuCBxeU8HrhV-GCxj2mZPfDwJVoAGh5CZPNoffsP-bm-SIoOT6xKoqEdPQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdtH8O9PYdtrhdnWOs_wYGyRvUPYCR0vIGLiOpvVWeOvX-xY4nVlJwvblA1I"
         }
       ]
     },
     {
-      "query": "millonarios - bucaramanga",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T22:40:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
-        "https://opanoticias.com/el-clasico-vallecaucano-enciende-la-fecha-2-de-los-cuadrangulares-en-una-jornada-decisiva-del-grupo-b/456850",
-        "https://www.rtvc.gov.co/noticias/millonarios-bucaramanga-radio-nacional"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC2iChqqOeha695Gb35AlsO_xUMiiA8fPrlBWZCSvtC3wgTge-eyGzJVHak1g",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17554477/millonarios-convocados-bucaramanga-bajas-cuadrado-mackalister-silva-daniel-ruiz",
-          "title": "Millonarios pierde a tres piezas del mediocampo y anuncia sus 20 convocados ante Bucaramanga",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC2iChqqOeha695Gb35AlsO_xUMiiA8fPrlBWZCSvtC3wgTge-eyGzJVHak1g"
-        },
-        {
-          "url": "https://opanoticias.com/el-clasico-vallecaucano-enciende-la-fecha-2-de-los-cuadrangulares-en-una-jornada-decisiva-del-grupo-b/456850",
-          "title": "El clásico vallecaucano enciende la Fecha 2 de los cuadrangulares en una jornada decisiva del Grupo B",
-          "publisher": "Opanoticias",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUl7UaI0Tuhrsd2yP_STA8cR0jc4JMP8cFwQtgZvcJrfukBxiHc26twxE8_eA"
-        },
-        {
-          "url": "https://www.rtvc.gov.co/noticias/millonarios-bucaramanga-radio-nacional",
-          "title": "Radio Nacional de Colombia transmite un choque determinante entre Millonarios y Bucaramanga por los cuadrangulares",
-          "publisher": "RTVC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3uwt-rfpZWct5Amh0WhV1sbgQ8-hOukyN8p9suKQhV-VR1lt5jEuBkHMzcOM"
-        }
-      ]
-    },
-    {
-      "query": "dow jones industrial average",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-24T22:20:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-        "https://finance.yahoo.com/markets/stocks/articles/trading-day-nvidia-bounce-fades-220752904.html",
-        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOpWxP5WXXx-qCuIW4smVrto7FJyD7D0hQjxmxuivnTUsxuQ0jaFNP-YGNHU",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-          "title": "Nasdaq slumps about 1.5% as Nvidia comeback reverses course and Anthropic breaks IPO price: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaOpWxP5WXXx-qCuIW4smVrto7FJyD7D0hQjxmxuivnTUsxuQ0jaFNP-YGNHU"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/trading-day-nvidia-bounce-fades-220752904.html",
-          "title": "Trading Day: Nvidia bounce fades",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVCIMBFaCHO89019WDe4dlrXGT-seeuWgx8ICM5yr7qIPej1SxdTkYmNVBTIo"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
-          "title": "Markets Slide as Tech Stocks Partly Reverse Nvidia-Sparked Rally",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
-        }
-      ]
-    },
-    {
-      "query": "dólar estadounidense",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T22:20:00Z",
-      "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-martes-24-tipo-cambio-22547366.php",
-        "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
-        "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-cae-a-nuevos-minimos-de-cinco-meses-frente-al-dolar-a-pesar-de-la-subida-de-la-inflacion-de-mexico-202611241613"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo",
-      "image_credit": "Dallas News",
-      "news": [
-        {
-          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-martes-24-tipo-cambio-22547366.php",
-          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo"
-        },
-        {
-          "url": "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
-          "title": "Peso liga 5 jornadas de bajas ante el dólar: Así cierra HOY",
-          "publisher": "El Financiero",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPRy-vBRhpECNFMykKm9CWhDAAyXVD47DpLDkQ5bWcarAVbGWiGOzN_LRxCgw"
-        },
-        {
-          "url": "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-cae-a-nuevos-minimos-de-cinco-meses-frente-al-dolar-a-pesar-de-la-subida-de-la-inflacion-de-mexico-202611241613",
-          "title": "USD/MXN: El Peso mexicano cae a nuevos mínimos de cinco meses frente al Dólar a pesar de la subida de la inflación de México",
-          "publisher": "FXStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRywaRcq1i4d6gikJrLKcLZWze5Fkanmb-BrU3iwzvgxqIUBZMJXxvM7lszKzg"
-        }
-      ]
-    },
-    {
-      "query": "classement real madrid – psv eindhoven",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T22:20:00Z",
-      "related_news_urls": [
-        "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/real-madrid-psv_mtc21878582/live-commentary.shtml",
-        "https://www.france24.com/fr/info-en-continu/20261124-ligue-des-champions-le-real-madrid-fait-imploser-le-psv-avec-un-doubl%C3%A9-de-mbapp%C3%A9",
-        "https://www.footmercato.net/a8174654027359470089-real-madrid-fede-valverde-recadre-ses-coequipiers"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4PxEJqvZHoY-VrgRmjcm2ADWg9l0YJt2D7zX8BMn6GZ4iKfUqZxFkZsdMS8",
-      "image_credit": "Eurosport",
-      "news": [
-        {
-          "url": "https://www.eurosport.fr/football/ligue-des-champions/2026-2027/real-madrid-psv_mtc21878582/live-commentary.shtml",
-          "title": "Suivez Real Madrid - PSV EN DIRECT, Ligue des champions, saison 2026/2027, 5e journée",
-          "publisher": "Eurosport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR4PxEJqvZHoY-VrgRmjcm2ADWg9l0YJt2D7zX8BMn6GZ4iKfUqZxFkZsdMS8"
-        },
-        {
-          "url": "https://www.france24.com/fr/info-en-continu/20261124-ligue-des-champions-le-real-madrid-fait-imploser-le-psv-avec-un-doubl%C3%A9-de-mbapp%C3%A9",
-          "title": "Ligue des champions : le Real Madrid fait imploser le PSV avec un doublé de Mbappé",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoQDVZOnkFH62xIeyyrbgteDTg4e2yyaeHaBgnXUnhLUaraaLfZHex3bDX6js"
-        },
-        {
-          "url": "https://www.footmercato.net/a8174654027359470089-real-madrid-fede-valverde-recadre-ses-coequipiers",
-          "title": "Real Madrid : Fede Valverde recadre ses coéquipiers",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFn16WrRg6_iRy6WGv0tNwVzjfFMeV-yT_9G2dfrQbJMW5_Mas6RYNuYuwYyw"
-        }
-      ]
-    },
-    {
-      "query": "iowa state basketball",
+      "query": "rob lowe",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T22:10:00Z",
+      "published_at": "2026-11-24T22:50:00Z",
       "related_news_urls": [
-        "https://cyclones.com/news/2026/11/23/mens-basketball-primer-iowa-state-vs-san-diego-state",
-        "https://www.sandiegouniontribune.com/2026/11/23/aztecs-get-ornery-iowa-state-in-opener-of-basketballs-players-era-16-in-las-vegas/",
-        "https://sports.yahoo.com/articles/iowa-state-basketball-vs-san-203026317.html"
+        "https://people.com/rob-lowe-recalls-warren-beatty-comparing-then-girlfriend-melissa-gilbert-to-natalie-wood-12275642",
+        "https://www.telegraph.co.uk/tv/0/rob-lowe-outsider-netflix-review/",
+        "https://www.eonline.com/news/1438374/rob-lowe-makes-rare-comment-about-his-sex-tape-scandal"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA4W32txt2OluL0Eb0WUXmWvs_voPD-z2Wxm7204XkHKMEQqPuHnfJunRM5N4",
-      "image_credit": "Iowa State Athletics",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2MiMlFpPSaULHLjUAiyXgtnnzAkyKzQzViDmdl7TCsnGy5mT74xjj83_dNuU",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://cyclones.com/news/2026/11/23/mens-basketball-primer-iowa-state-vs-san-diego-state",
-          "title": "PRIMER: Iowa State vs. San Diego State",
-          "publisher": "Iowa State Athletics",
+          "url": "https://people.com/rob-lowe-recalls-warren-beatty-comparing-then-girlfriend-melissa-gilbert-to-natalie-wood-12275642",
+          "title": "Rob Lowe Recalls Awkward Moment Warren Beatty Compared Then-Girlfriend Melissa Gilbert to Natalie Wood",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA4W32txt2OluL0Eb0WUXmWvs_voPD-z2Wxm7204XkHKMEQqPuHnfJunRM5N4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2MiMlFpPSaULHLjUAiyXgtnnzAkyKzQzViDmdl7TCsnGy5mT74xjj83_dNuU"
         },
         {
-          "url": "https://www.sandiegouniontribune.com/2026/11/23/aztecs-get-ornery-iowa-state-in-opener-of-basketballs-players-era-16-in-las-vegas/",
-          "title": "Aztecs get ‘ornery’ Iowa State in opener of basketball’s Players Era 16 in Las Vegas",
-          "publisher": "San Diego Union-Tribune",
+          "url": "https://www.telegraph.co.uk/tv/0/rob-lowe-outsider-netflix-review/",
+          "title": "Drugs, excess and a sex-tape scandal: How Rob Lowe survived the Eighties",
+          "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMShJiqnnCknFYZLt-CGKVKbGAwAQPYAmh7dkTgVNrmlWWEL4iP3sjQLuRGwc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLggNlV37bUqMr2k5K5EO7mcu6PS0hEawvVxLXrFnaeVVkzkQuiKzCvScGxTo"
         },
         {
-          "url": "https://sports.yahoo.com/articles/iowa-state-basketball-vs-san-203026317.html",
-          "title": "Iowa State basketball vs San Diego State, score, live updates, TV info",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.eonline.com/news/1438374/rob-lowe-makes-rare-comment-about-his-sex-tape-scandal",
+          "title": "Rob Lowe Makes Rare Comment About His Sex Tape Scandal",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkv8FbpHiM6qB2-gcpbfXLg0rXkSAhkzWWhIGGxqzM7v3W3XSzm9d3IO7sTf8"
-        }
-      ]
-    },
-    {
-      "query": "como 1907 vs aek athens f.c. standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T22:10:00Z",
-      "related_news_urls": [
-        "https://www.tallahatchienews.ms/node/457362",
-        "https://www.reutersconnect.com/item/soccer-2026-como-vs-aek-athens/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBVR1VFSko",
-        "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY",
-      "image_credit": "Charleston Sun-Sentinel",
-      "news": [
-        {
-          "url": "https://www.tallahatchienews.ms/node/457362",
-          "title": "Replace Your Title Here",
-          "publisher": "Charleston Sun-Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/soccer-2026-como-vs-aek-athens/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVpVTUEwMDBVR1VFSko",
-          "title": "Licensable picture: Soccer 2026: Como Vs AEK Athens",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzujjM7UQFuzaWTplvuwArJgx-oMVQ607m8RzqibWaw1ZzYqXmPrf3wew-MPU"
-        },
-        {
-          "url": "https://www.goal.com/en/news/alvini-criticised-after-milan-frosinone-fabregas-defends-him-i-do-the-same-as-him-and-want-to-keep-hearing-he-s-an-excellent-coach/bltafe3b7eaa0ca6755",
-          "title": "Alvini criticised after Milan-Frosinone? Fabregas defends him: \"I do the same as him and want to keep hearing he's an excellent coach\"",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkar14at7kWXXUB6YnrvW9l7LrUZNyPyRdEaQBW-DH7XYBwczG8rt_NKEpQhc"
-        }
-      ]
-    },
-    {
-      "query": "players era 16 bracket",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T22:10:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/news/basketball-men/article/2026-11-23/2026-players-era-16-bracket-schedule-scores",
-        "https://sports.yahoo.com/general/videos/players-era-16-offers-early-164353125.html",
-        "https://www.forbes.com/sites/adamzagoria/2026/11/24/players-era-16-kicks-off-with-7-ranked-teams-players-era-8-viewership-up-43/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/news/basketball-men/article/2026-11-23/2026-players-era-16-bracket-schedule-scores",
-          "title": "2026 Players Era 16: Bracket, schedule, scores",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzX6kT5Y2MBjvIYTjV_R6G8Yzc1b--634l3rob17aHMopO0fro0zDUCaFHB6s"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/videos/players-era-16-offers-early-164353125.html",
-          "title": "Players Era 16 Offers an Early NCAA Tournament Test",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLuQPl1QLxkzIu3WpSLg3-rwKbV5GyFQafgbGTLFecA1P2tLhbh_tY39eN0rM"
-        },
-        {
-          "url": "https://www.forbes.com/sites/adamzagoria/2026/11/24/players-era-16-kicks-off-with-7-ranked-teams-players-era-8-viewership-up-43/",
-          "title": "Players Era 16 Kicks Off With 7 Ranked Teams; Players Era 8 Viewership Up 43%",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhn6fZUCGsmvCYzLmVVRSj_wYVlv2udAXKE5ZM-ngQ3Y3-KRXG5vF9I3htgC0"
-        }
-      ]
-    },
-    {
-      "query": "friendsgiving",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T22:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/life/culture/2026/11/24/friendsgiving-bailing-culture/92924652007/",
-        "https://www.yahoo.com/lifestyle/articles/14-people-rsvp-d-yes-204300638.html",
-        "https://demokratis.co.id/en/friendsgiving-guests-fail-attend"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGF2kXO02wveYSYZHoDjmIEvi1zZ27pypqA_K7m5QeGkn2UUfqPaGLfQ6h8OI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/life/culture/2026/11/24/friendsgiving-bailing-culture/92924652007/",
-          "title": "Almost no one showed up to his Friendsgiving. What it says about 'bailing culture'",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGF2kXO02wveYSYZHoDjmIEvi1zZ27pypqA_K7m5QeGkn2UUfqPaGLfQ6h8OI"
-        },
-        {
-          "url": "https://www.yahoo.com/lifestyle/articles/14-people-rsvp-d-yes-204300638.html",
-          "title": "‘14 People RSVP’d Yes’: Redditor Says Friendsgiving Plans Took an Unexpected Turn When Guests Failed to Follow Through",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOaGkSBFeruu0KOXww9A7IUcLWuc4HAoLaUoVNhuF_QrUsI3ngKn-iDr4tYrE"
-        },
-        {
-          "url": "https://demokratis.co.id/en/friendsgiving-guests-fail-attend",
-          "title": "Friendsgiving Host Welcomes Five Guests After 25 Invitations",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv78A1zOriIU9nTigVxzvj-skcCkFt5WvPxHpf4sFvwc3fQV68YouSDPAPYEs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTB_XaZzKxvJzEGOMo5pLxglj2YFY8Rrj0dlk0X7YOxDJNGtaMR0qT8Fpx7Wx0"
         }
       ]
     }
