@@ -204,3 +204,43 @@ test('portable ticket compare-and-swap is transaction-only and rolls back with r
   assert.equal(await state.get('absent'),1);
  }finally{await state.close();}
 });
+
+
+const shadowTicket=(now,overrides={})=>({synthetic:true,id:'fixture-ticket',owner_hash:'fixture-owner',created_at:now,status:'ready',context:{kind:'robot-directions',color_jobs:[{id:'TASK-1',repository:'www-infinity4/QuantaPhi',agent:'greenbeans',executor:'repository-engine',status:'queued',instructions:'Repair synthetic fixture',dependencies:[],...overrides}]}});
+test('portable rehearsal admits a scoped job and atomically fences duplicate attempts after restart',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {rehearsePortableClaim}=await import('../distributed-vault/portable-brain-claim.mjs');
+ const {dir}=queueSnapshot(t),path=join(dir,'brain-state.sqlite'),now=Date.now();
+ let state=openPortableBrainState(path);
+ const key='rehearsal:ticket:fixture-owner:fixture-ticket';
+ const input={ownerHash:'fixture-owner',ticketId:'fixture-ticket',jobId:'TASK-1',runId:'123',runAttempt:1,now};
+ try{
+  await state.put(key,shadowTicket(now));
+  const results=await Promise.all([rehearsePortableClaim(state,input),rehearsePortableClaim(state,input)]);
+  assert.equal(results[0].reserved,true);assert.equal(results[0].executionAuthorized,false);
+  assert.equal(results[1].reason,'runner_attempt_already_claimed');
+  await state.close();state=openPortableBrainState(path);
+  assert.equal((await state.get(key)).context.color_jobs[0].status,'working');
+  assert.equal((await rehearsePortableClaim(state,{...input,runId:'124'})).reserved,false);
+  assert.equal((await state.list({prefix:'rehearsal:repository-lease:'})).size,1);
+ }finally{await state.close();}
+});
+test('portable rehearsal preserves dependency and owner security holds and rejects foreign scope',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {rehearsePortableClaim}=await import('../distributed-vault/portable-brain-claim.mjs');
+ const {dir}=queueSnapshot(t),state=openPortableBrainState(join(dir,'brain-state.sqlite')),now=Date.now();
+ const key='rehearsal:ticket:fixture-owner:fixture-ticket';
+ const input={ownerHash:'fixture-owner',ticketId:'fixture-ticket',jobId:'TASK-1',runId:'123',runAttempt:1,now};
+ try{
+  const pending=shadowTicket(now,{dependencies:['TASK-0']});
+  pending.context.color_jobs.unshift({id:'TASK-0',status:'committed_unverified'});
+  await state.put(key,pending);
+  assert.equal((await rehearsePortableClaim(state,input)).reason,'dependency_pending');
+  await state.put(key,shadowTicket(now,{progress:{blocker:'security_hold'}}));
+  assert.equal((await rehearsePortableClaim(state,input)).reason,'owner_decision_required');
+  assert.equal((await rehearsePortableClaim(state,{...input,ownerHash:'other-owner'})).reserved,false);
+  await state.put(key,{...shadowTicket(now),synthetic:false});
+  assert.equal((await rehearsePortableClaim(state,input)).reserved,false);
+  assert.equal((await state.list({prefix:'rehearsal:repository-lease:'})).size,0);
+ }finally{await state.close();}
+});
