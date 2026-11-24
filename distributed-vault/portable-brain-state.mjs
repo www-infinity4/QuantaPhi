@@ -34,6 +34,18 @@ export function openPortableBrainState(dbPath){
  const put=(key,value)=>{const json=JSON.stringify(value);if(typeof json!=='string')throw Error('invalid_state_value');db.prepare('INSERT INTO portable_brain_state(key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').run(validKey(key),json);};
  const del=key=>db.prepare('DELETE FROM portable_brain_state WHERE key=?').run(validKey(key)).changes>0;
  const list=({prefix=''}={})=>{if(typeof prefix!=='string'||prefix.length>1024)throw Error('invalid_state_prefix');return new Map(db.prepare('SELECT key,value FROM portable_brain_state WHERE substr(key,1,length(?))=? ORDER BY key').all(prefix,prefix).map(row=>[row.key,JSON.parse(row.value)]));};
+ // Compare the exact stored JSON representation, not a lossy partial match.
+ // Undefined denotes an absent key; JSON null is a distinct stored value.
+ const compareAndSwap=(key,expected,next)=>{
+  validKey(key);
+  const encoded=expected===undefined?undefined:JSON.stringify(expected);
+  const replacement=JSON.stringify(next);
+  if(expected!==undefined&&typeof encoded!=='string'||typeof replacement!=='string')throw Error('invalid_state_value');
+  const row=db.prepare('SELECT value FROM portable_brain_state WHERE key=?').get(key);
+  if(row?.value!==encoded)return false;
+  db.prepare('INSERT INTO portable_brain_state(key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').run(key,replacement);
+  return true;
+ };
  const ops={get,put,delete:del,list};
  const state=Object.fromEntries(Object.entries(ops).map(([name,fn])=>[name,(...args)=>enqueue(()=>{ensureOpen();return fn(...args);})]));
  // Callbacks must use only tx methods, never outer state or network calls.
@@ -41,7 +53,7 @@ export function openPortableBrainState(dbPath){
  // fails closed on SQLITE_BUSY instead of waiting inside an async callback.
  state.transaction=callback=>enqueue(async()=>{
   ensureOpen();db.exec('BEGIN IMMEDIATE');let active=true;
-  const tx=Object.freeze(Object.fromEntries(Object.entries(ops).map(([name,fn])=>[name,async(...args)=>{if(!active)throw Error('transaction_closed');return fn(...args);}])));
+  const tx=Object.freeze(Object.fromEntries(Object.entries({...ops,compareAndSwap}).map(([name,fn])=>[name,async(...args)=>{if(!active)throw Error('transaction_closed');return fn(...args);}])));
   try{const result=await callback(tx);active=false;db.exec('COMMIT');return result;}
   catch(error){active=false;try{db.exec('ROLLBACK');}catch{closed=true;db.close();}throw error;}
  });
