@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T21:01:00.839234Z",
+  "checked_at": "2026-11-24T21:31:13.637076Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ruben van bommel",
+      "query": "dell earnings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:00:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
+        "https://finance.yahoo.com/markets/stocks/articles/why-dell-technologies-stock-falling-134017599.html",
+        "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4EPMEkhwlXKWoeW_Ma9v855dU1kxpGThtx3ArrWrofWWdhLQTDuGH05Fl-nk",
+      "image_credit": "Bloomberg.com",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
+          "title": "Dell Ups Annual Sales Forecast Again on Rising AI Server Demand",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4EPMEkhwlXKWoeW_Ma9v855dU1kxpGThtx3ArrWrofWWdhLQTDuGH05Fl-nk"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-dell-technologies-stock-falling-134017599.html",
+          "title": "Why Is Dell Technologies Stock Falling 5.9% Today?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy8JPH2ispct_q-N9ukH2m9zkjuBT5juQpRsaGq29Z0paVAzFCwZxT2y9_xc0"
+        },
+        {
+          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
+          "title": "Dell, HPE results to put AI demand to the test after tech rout",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlSjbUIptRjtVOrnrGmC8DsSg4F-oGn6Icn_JKd_mqZpSvp3aPuQ76bIdTQk"
+        }
+      ]
+    },
+    {
+      "query": "todd blanche",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
+        "https://www.bbc.com/news/articles/crpdw1qx7jgxo",
+        "https://www.cnn.com/2026/11/24/politics/trump-jensen-huang-nvidia-messaging"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUX1JJYa19OYrWd8qUkKllc233uRQlvXElDLPwimmvP40dut3m31LVLzJevM8",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
+          "title": "AG Blanche, FBI’s Patel dodge questions about Jensen Huang investigation",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUX1JJYa19OYrWd8qUkKllc233uRQlvXElDLPwimmvP40dut3m31LVLzJevM8"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/crpdw1qx7jgxo",
+          "title": "US attorney general dodges questions about Nvidia investigation",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfvtOnitUM66-ftLs5xiBQWj6bbhrHxuUkJLf1nX1fux6NhJ4I4BL4XBaux-g"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/24/politics/trump-jensen-huang-nvidia-messaging",
+          "title": "The Trump team is getting more and more evasive about Jensen Huang",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQK2RD8oB0OUT8N2rhHbbrWoarmT-4vth2lsYLXV8ecvlXBgu9rieD4bszfSs"
+        }
+      ]
+    },
+    {
+      "query": "miss universe 2026 where to watch",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:40:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
+        "https://wwd.com/shop/shop-fashion/watch-miss-universe-2026-livestream-online-free-streaming-1239462551/",
+        "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMNrKwGGYEfTqjvEnWW6_dfetmvQJqMPS6vapX7-0XAWaKS4_UTLy615FcS6U",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
+          "title": "Meet the 116 women competing to be Miss Universe 2026",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMNrKwGGYEfTqjvEnWW6_dfetmvQJqMPS6vapX7-0XAWaKS4_UTLy615FcS6U"
+        },
+        {
+          "url": "https://wwd.com/shop/shop-fashion/watch-miss-universe-2026-livestream-online-free-streaming-1239462551/",
+          "title": "Where to Watch the Miss Universe 2026 Pageant Streaming Online for Free",
+          "publisher": "WWD",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2BpJvFiGuncj3rRWyTX_L0AfToUO5P58VlCxZCgCIncbAYb0v6slfU3WjQD4"
+        },
+        {
+          "url": "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/",
+          "title": "The Big Night Is Almost Here! Telemundo Unveils Unprecedented Coverage for the Historic 75th Miss Universe® Competition, Live Coast-to-Coast from Puerto Rico on Tuesday, November 2",
+          "publisher": "NBCUniversal News Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ_bZrtUQrKzR-gGAa9pazS7pH055bk4E2Rd5I598Km5xjfId5GSdFozGVSZA"
+        }
+      ]
+    },
+    {
+      "query": "real",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:40:00Z",
+      "related_news_urls": [
+        "https://kvnutalk.com/the-threat-is-finally-real-judge-rips-white-house-weaponization/",
+        "https://sandhillsexpress.com/abc_national/the-threat-is-finally-real-judge-rips-white-house-weaponization-abcid71bf3988/",
+        "https://www.yardbarker.com/general_sports/articles/jay_cutler_rampage_jackson_leah_pruett_among_ten_confirmed_for_dodge_sno_brawl_celebrity_race/s1_17615_44610889"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQge_81DYndEnpCQP7aIAPwTEBiR1MaXXUHvvNhtAMtZLqKLTF8tjT_ECUBtuU",
+      "image_credit": "KVNU News Talk",
+      "news": [
+        {
+          "url": "https://kvnutalk.com/the-threat-is-finally-real-judge-rips-white-house-weaponization/",
+          "title": "‘The threat is finally real’: Judge rips White House ‘weaponization’",
+          "publisher": "KVNU News Talk",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQge_81DYndEnpCQP7aIAPwTEBiR1MaXXUHvvNhtAMtZLqKLTF8tjT_ECUBtuU"
+        },
+        {
+          "url": "https://sandhillsexpress.com/abc_national/the-threat-is-finally-real-judge-rips-white-house-weaponization-abcid71bf3988/",
+          "title": "‘The threat is finally real’: Judge rips White House ‘weaponization’",
+          "publisher": "Sandhills Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTga-bdzkrdM3YHbJ3-KNRn8n6h0vO_INj4JcFEUiIN-MiTS_NA3CGcmuIEp7Y"
+        },
+        {
+          "url": "https://www.yardbarker.com/general_sports/articles/jay_cutler_rampage_jackson_leah_pruett_among_ten_confirmed_for_dodge_sno_brawl_celebrity_race/s1_17615_44610889",
+          "title": "Jay Cutler, Rampage Jackson, Leah Pruett, Among Ten Confirmed for Dodge Sno-Brawl Celebrity Race",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRFMQr91Sqk_Oc99pb7_xi_v4BD8WNrxxTj0cfyaMNke2JapeyZujFf9B1bak"
+        }
+      ]
+    },
+    {
+      "query": "stewart mclean",
       "approx_searches": "200+",
       "published_at": "2026-11-24T20:40:00Z",
       "related_news_urls": [
-        "https://www.voetbalprimeur.nl/nieuws/2162226/valentijn-driessen-en-mike-verweij-zijn-lovend-over-ruben-van-bommel-en-dichten-de.html",
-        "https://www.psvfans.nl/pascal-jansen-ziet-psver-stappen-maken-toen-was-hij-figurant/",
-        "https://www.voetbalkrant.com/nieuws/2026-11-24/mark-van-bommel-kan-fier-zijn-hij-wordt-een-absolute-recordtransfer"
+        "https://www.cbc.ca/news/canada/british-columbia/b-c-actor-stewart-mclean-murder-charge-9.7432598",
+        "https://www.theglobeandmail.com/canada/article-vancouver-actor-stewart-mclean-murder/",
+        "https://vancouversun.com/news/man-charged-murder-death-bc-actor-stewart-mclean"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvCa9WBFzJGCXhfGhi69VYk7JPPMYWx1l_32JjHOACU4dcP3vPT80HIKd4Qw",
-      "image_credit": "VoetbalPrimeur",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxFDoEwIFswax4db0sZk31TohpFlhQLto2qjwfiMz5h1rUopuryc5ak_pQTlc",
+      "image_credit": "CBC",
       "news": [
         {
-          "url": "https://www.voetbalprimeur.nl/nieuws/2162226/valentijn-driessen-en-mike-verweij-zijn-lovend-over-ruben-van-bommel-en-dichten-de.html",
-          "title": "Verweij verwacht megatransfer bij PSV: 'Hij gaat de recordverkoop worden'",
-          "publisher": "VoetbalPrimeur",
+          "url": "https://www.cbc.ca/news/canada/british-columbia/b-c-actor-stewart-mclean-murder-charge-9.7432598",
+          "title": "Murder charge laid in connection to death of B.C. actor Stewart McLean",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvCa9WBFzJGCXhfGhi69VYk7JPPMYWx1l_32JjHOACU4dcP3vPT80HIKd4Qw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxFDoEwIFswax4db0sZk31TohpFlhQLto2qjwfiMz5h1rUopuryc5ak_pQTlc"
         },
         {
-          "url": "https://www.psvfans.nl/pascal-jansen-ziet-psver-stappen-maken-toen-was-hij-figurant/",
-          "title": "Pascal Jansen ziet PSV'er stappen maken: \"Hij had het heel zwaar\"",
-          "publisher": "PSVFans",
+          "url": "https://www.theglobeandmail.com/canada/article-vancouver-actor-stewart-mclean-murder/",
+          "title": "B.C. man charged with murder in actor Stewart McLean’s death",
+          "publisher": "The Globe and Mail",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuVNWYStj4us9YFBu-WEwwcMehFPH5LzPP-kQZx_hCvwNc2qNQIr7lejDKLO0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLDq67piacpRNzYCShBraECu_hmN2eCNiKpYcTvMbtdSHawsKA0Z4kdtRf2OY"
         },
         {
-          "url": "https://www.voetbalkrant.com/nieuws/2026-11-24/mark-van-bommel-kan-fier-zijn-hij-wordt-een-absolute-recordtransfer",
-          "title": "Mark van Bommel kan fier zijn: \"Hij wordt een absolute recordtransfer\"",
-          "publisher": "Voetbalkrant.com",
+          "url": "https://vancouversun.com/news/man-charged-murder-death-bc-actor-stewart-mclean",
+          "title": "Man charged with murder in death of B.C. actor Stewart McLean",
+          "publisher": "Vancouver Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0nYM9T0JhS0PoOVsq8x1hd9rXBSNaStY7pGeP2I05OdAZyiMBrOo5kff1SkI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvXy5Ru1Zx-wYNFSRayKNYSb96XSWtZX9nKeObRe9wBf3WyQt5EakqwC0fGc"
         }
       ]
     },
@@ -48,7 +188,7 @@
       "related_news_urls": [
         "https://www.kcur.org/sports/2026-11-24/kansas-city-current-parade-rally-nwsl-championship",
         "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
-        "https://www.nytimes.com/athletic/7802175/2026/11/22/washington-spirit-nwsl-finals-rodman/"
+        "https://www.espn.com/soccer/story/_/id/50561566/kansas-city-nwsl-championship-final-washington-spirit"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0x_pAmgCxUzZM_28runf01PCUzq0btI2DYoLKfl4Zgj_ee5KSjAvWuQT7mA",
       "image_credit": "KCUR",
@@ -62,62 +202,27 @@
         },
         {
           "url": "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
-          "title": "TEAL TUESDAY: KC Current celebrates NWSL victory with march, rally",
+          "title": "TEAL TUESDAY: Crowd of KC Current fans celebrates NWSL victory with march, rally",
           "publisher": "KMBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPVmKAC4wLjLuaZhh6F1jdtw9bq0IOU77sIjdmF_sBJ0H6eTJmTPk0-KR8e_E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnuhDY-ZS3aZwbOjjSpzgQPO5Q9_t0cW6GZUxdPHhuXlAQ4ROMBQU3eqeW0rw"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7802175/2026/11/22/washington-spirit-nwsl-finals-rodman/",
-          "title": "Current silence Rowdy Audi, Spirit fall short in final again: ‘It hurts way worse than the others’",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/soccer/story/_/id/50561566/kansas-city-nwsl-championship-final-washington-spirit",
+          "title": "Kansas City's NWSL title shows investing in women's soccer pays off",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmxyB20-4i0qYjltyp9XWsR1GGxnnBH84sgTMZJeIpHriu6CUTKSnYCy9G4Ac"
-        }
-      ]
-    },
-    {
-      "query": "uic vs rice",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
-        "https://www.dimers.com/cbb/news/illinois-chicago-vs-rice-prediction-11-24-2026-ac",
-        "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8",
-      "image_credit": "BVM Sports",
-      "news": [
-        {
-          "url": "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
-          "title": "Men’s Basketball Continues Play at Scout Jacksonville Classic against UIC",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8"
-        },
-        {
-          "url": "https://www.dimers.com/cbb/news/illinois-chicago-vs-rice-prediction-11-24-2026-ac",
-          "title": "Illinois-Chicago vs. Rice prediction favors Flames on Nov. 24, 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlJIzFf5eQmBorrKeqJVnkJvCJkL-faOv5jvrFgZ0Qy84-q_Iw7bxo4Cpnsn8"
-        },
-        {
-          "url": "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408",
-          "title": "UIC vs. Rice Odds & Betting Predictions November 24, 2026",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhomg7dX1-F1Ri1ejXbb-CzcUcOjwUPGK2MpVOho4nXpbajwnMGyQ3VcnNRqA"
         }
       ]
     },
     {
       "query": "chapecoense x palmeiras",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-24T20:30:00Z",
       "related_news_urls": [
         "https://ge.globo.com/sc/futebol/brasileirao-serie-a/noticia/2026/11/24/chapecoense-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.tvbv.com.br/chapecoense-prepara-homenagem-aos-10-anos-do-acidente-aereo-para-proximo-jogo/",
+        "https://www.band.com.br/esportes/futebol/times/palmeiras/palmeiras-e-chape-relembram-tragedia-e-fazem-homenagem-a-alan-ruschel",
         "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA",
@@ -131,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA"
         },
         {
-          "url": "https://www.tvbv.com.br/chapecoense-prepara-homenagem-aos-10-anos-do-acidente-aereo-para-proximo-jogo/",
-          "title": "Chapecoense prepara homenagem aos 10 anos do acidente aéreo para próximo jogo",
-          "publisher": "TVBV ONLINE",
+          "url": "https://www.band.com.br/esportes/futebol/times/palmeiras/palmeiras-e-chape-relembram-tragedia-e-fazem-homenagem-a-alan-ruschel",
+          "title": "Palmeiras e Chape relembram tragédia e fazem homenagem a Alan Ruschel",
+          "publisher": "Band",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5Mo-SkFXQHJZf8QsICyNeYmVHKBBQfYynqVaO1mydvrtE_NagYtz8OpaAQXg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMa6fzmjEZAEuN0lbO5YXvnrN0mfHI0pHTN0eAUuD5HvL6ktymvc5ZRNEESCE"
         },
         {
           "url": "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/",
@@ -147,13 +252,48 @@
       ]
     },
     {
+      "query": "huawei",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T20:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/news/us-news/chinese-tech-company-huawei-convicted-federal-charges-rcna611189",
+        "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
+        "https://www.pbs.org/newshour/nation/u-s-jury-finds-chinese-tech-giant-huawei-guilty-of-conspiracy-to-steal-trade-secrets-bank-fraud"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHY-2RnwHuO9JYgZ_wBcFadrPXFoS4UYY63RZJND36tQqsdpdx78JLTOfBnM",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/chinese-tech-company-huawei-convicted-federal-charges-rcna611189",
+          "title": "Chinese tech company Huawei convicted on federal charges",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHY-2RnwHuO9JYgZ_wBcFadrPXFoS4UYY63RZJND36tQqsdpdx78JLTOfBnM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
+          "title": "Huawei Found Guilty of US Criminal Charges in Landmark Case",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/nation/u-s-jury-finds-chinese-tech-giant-huawei-guilty-of-conspiracy-to-steal-trade-secrets-bank-fraud",
+          "title": "U.S. jury finds Chinese tech giant Huawei guilty of conspiracy to steal trade secrets, bank fraud",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCgS0JSeBJM_3p7DxlT3Qch3PRWCfSD3dNXYvrgGJt_79RJeP_sYV6-UHFajY"
+        }
+      ]
+    },
+    {
       "query": "rihanna",
       "approx_searches": "500+",
       "published_at": "2026-11-24T20:30:00Z",
       "related_news_urls": [
         "https://www.vogue.com/article/rihanna-asap-rocky-outfit-formula-2026-11-23",
         "https://www.harpersbazaar.com/celebrity/latest/a74519263/rihanna-asap-rocky-coordinating-outfits-coats-big-pants-street-style-date-night-photos/",
-        "https://www.wmagazine.com/fashion/rihanna-2010s-celine-jacket-asap-rocky-date"
+        "https://www.wmagazine.com/fashion/rihanna-green-jacket-celine-asap-rocky-date"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8T6AXbJsfJuhsJCuFhi3Vx2RTIL1mdTUkdcq0khL67HNMsjUxYxcqFm0f44",
       "image_credit": "Vogue",
@@ -173,186 +313,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKeRuWsXLVAztM-KrraUEXhq51GTf9bG63Cn_VyaqwD4ODU945gkY_hTdYOU4"
         },
         {
-          "url": "https://www.wmagazine.com/fashion/rihanna-2010s-celine-jacket-asap-rocky-date",
+          "url": "https://www.wmagazine.com/fashion/rihanna-green-jacket-celine-asap-rocky-date",
           "title": "Rihanna Reimagines a 2010s Trend on Date With A$AP Rocky",
           "publisher": "W Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNF6g3krhHWpJKi1R-oH0c6mF-Q9_M7P6UvEeBKXPoE-dmemhDX5OD6MCW_tM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIFGegeX6kVAu98_mB9T5jpszndq4PJIZMorKlLegJl_f_31GbGpuz_fZCeOY"
         }
       ]
     },
     {
-      "query": "huawei",
+      "query": "uic vs rice",
       "approx_searches": "500+",
       "published_at": "2026-11-24T20:30:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
-        "https://www.nytimes.com/2026/11/24/nyregion/huawei-guilty-new-york.html",
-        "https://www.bostonherald.com/2026/11/24/huawei-guilty-conspiracy-trial/"
+        "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
+        "https://www.accuscore.com/game/cmwtuyc251kc7qp011ud4cn1i",
+        "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8",
+      "image_credit": "BVM Sports",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
-          "title": "Huawei Found Guilty of US Criminal Charges in Landmark Case",
-          "publisher": "Bloomberg.com",
+          "url": "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
+          "title": "Men’s Basketball Continues Play at Scout Jacksonville Classic against UIC",
+          "publisher": "BVM Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/24/nyregion/huawei-guilty-new-york.html",
-          "title": "Huawei Found Guilty of Stealing Trade Secrets in U.S. Trial",
-          "publisher": "The New York Times",
+          "url": "https://www.accuscore.com/game/cmwtuyc251kc7qp011ud4cn1i",
+          "title": "Rice vs UIC Prediction (Nov 24): Rice 65% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz48I2hj7DPMm6kOvuyhcaecua4f4CrRWqV46CwY_jtn_ZD-wBL84TLetLjMI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5h6PtsysicWn1SOW0MQCkLFJjmmWk1g2tH1201U64oYc16A_8CURgC6Rm3SE"
         },
         {
-          "url": "https://www.bostonherald.com/2026/11/24/huawei-guilty-conspiracy-trial/",
-          "title": "Chinese tech giant Huawei is guilty of conspiracy to steal trade secrets, US jury finds",
-          "publisher": "Boston Herald",
+          "url": "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408",
+          "title": "UIC vs. Rice Odds & Betting Predictions November 24, 2026",
+          "publisher": "Action Network",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyJckslN0L0Mz8ODrMkWDq14cqwh5rE-z_A89tw0KApakLRrnaGjQUha8O9-k"
-        }
-      ]
-    },
-    {
-      "query": "fc porto",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://www.abola.pt/noticias/ganhar-ou-ganhar-no-regresso-a-champions-o-onze-provavel-do-fc-porto-2026112313591425072",
-        "https://www.goal.com/br/not%C3%ADcias/santiago-gimenez-o-que-mais-sinto-falta-no-feyenoord-e/bltad5b160c4803652a",
-        "https://www.sporttv.pt/noticias/887936/farioli-temos-de-reduzir-o-barulho-do-estadio"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0bTqVyOaDKXazcb7sGa7jZDUWUegXt4QNFknHXyL839rfIhfcJwBJP2pdI_w",
-      "image_credit": "A Bola",
-      "news": [
-        {
-          "url": "https://www.abola.pt/noticias/ganhar-ou-ganhar-no-regresso-a-champions-o-onze-provavel-do-fc-porto-2026112313591425072",
-          "title": "Ganhar... ou ganhar no regresso à Champions: o onze provável do FC Porto",
-          "publisher": "A Bola",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0bTqVyOaDKXazcb7sGa7jZDUWUegXt4QNFknHXyL839rfIhfcJwBJP2pdI_w"
-        },
-        {
-          "url": "https://www.goal.com/br/not%C3%ADcias/santiago-gimenez-o-que-mais-sinto-falta-no-feyenoord-e/bltad5b160c4803652a",
-          "title": "Santiago Gimenez: ‘O que mais sinto falta no Feyenoord é…’",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeusC2ckMyngYNEndNNXWayQU_5Ec_QWubnKrElWnelFm9TXwW_WHYLk9fSc4"
-        },
-        {
-          "url": "https://www.sporttv.pt/noticias/887936/farioli-temos-de-reduzir-o-barulho-do-estadio",
-          "title": "Farioli: \"Temos de reduzir o barulho do estádio\"",
-          "publisher": "Sport TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8EmUiE2RZ5I3H7QBm6IYic3MpHb7YVlOc0sPmEmhj5-fsNfvNJaYhTb-YGYY"
-        }
-      ]
-    },
-    {
-      "query": "tcu vs miami fl",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/no-17-miami-against-tcu-160004844.html",
-        "https://www.si.com/college/tcu/basketball/tcu-basketball-opens-players-era-16-against-no-17-miami-01m879z426hc",
-        "https://247sports.com/college/miami/article/video-insight-on-tcu-heading-into-players-era-16-tournament-vs-no-17-miami-hurricanes-basketball-293187163/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K3ZCIPZQNIaSN_Ro-KV8mPrC94HNkppUDk6TTSUdoTNejnqnoVw5uK2HtXc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/no-17-miami-against-tcu-160004844.html",
-          "title": "No. 17 Miami Against TCU at the Players Era 16 Tournament: Game Central, Updates, and Analysis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6K3ZCIPZQNIaSN_Ro-KV8mPrC94HNkppUDk6TTSUdoTNejnqnoVw5uK2HtXc"
-        },
-        {
-          "url": "https://www.si.com/college/tcu/basketball/tcu-basketball-opens-players-era-16-against-no-17-miami-01m879z426hc",
-          "title": "TCU and 15 other teams suit up for the Players Era 16 Tournament",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRob_5ODUDx0EF16MDv58l4cYc8aYV-XFqeOf8mh6Jq0PeMXdSrwNrs8-XsS80"
-        },
-        {
-          "url": "https://247sports.com/college/miami/article/video-insight-on-tcu-heading-into-players-era-16-tournament-vs-no-17-miami-hurricanes-basketball-293187163/",
-          "title": "VIDEO: Insight on TCU heading into Players Era 16 tournament vs. No. 17 Miami",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMFM_pYn5ZKM6M03KMq8xv91NxvyPLUDsyogbZylghbFXUlwXkprZ2CWfxpGQ"
-        }
-      ]
-    },
-    {
-      "query": "como vs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/champions-league-line-ups-como-184800716.html",
-        "https://sports.yahoo.com/articles/champions-league-como-vs-aek-092900283.html",
-        "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261124-como-vs-aek-athens-lineups-prediction-betting-picks-odds"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBWb1q-oMVB9QJsTgb7CsarpBSzkIQxkERhXcNURLSz-wcnsPsOsI9QtmWZU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/champions-league-line-ups-como-184800716.html",
-          "title": "Champions League line-ups: Como vs. AEK Athens",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBWb1q-oMVB9QJsTgb7CsarpBSzkIQxkERhXcNURLSz-wcnsPsOsI9QtmWZU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/champions-league-como-vs-aek-092900283.html",
-          "title": "Champions League: Como vs. AEK – Probable line-ups and where to watch on TV",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKwd2Ifzt4VXzdofr7uAgSQfbh20O8UolKp0ONZN-eq8yqTcVYApLIEmRujUE"
-        },
-        {
-          "url": "https://www.oddschecker.com/us/picks-parlays/soccer/cng201-20261124-como-vs-aek-athens-lineups-prediction-betting-picks-odds",
-          "title": "Como vs AEK Athens: Lineups, Prediction, Betting Picks & Odds",
-          "publisher": "Oddschecker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNwmEL5gRhskQR5j0BMh1AAofJ9xUaSV01wRbg68P6nDnQXqOHitn17S5EkOw"
-        }
-      ]
-    },
-    {
-      "query": "cia",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T20:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
-        "https://www.wavy.com/news/national/ap-us-news/ap-an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
-        "https://www.usnews.com/news/top-news/articles/2026-11-24/us-cia-odni-suffer-cybersecurity-breach-of-some-unclassified-information-nyt-reports"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf93_2L1bFALiFdtmVOUyblQqw2uVwPmx4NAhOH1i7F1M_-OtkSBgt4Zz2XbA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/24/us/politics/spy-agencies-computer-network-breaches.html",
-          "title": "U.S. Spy Agencies Suffer Breach of Some Unclassified Information",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf93_2L1bFALiFdtmVOUyblQqw2uVwPmx4NAhOH1i7F1M_-OtkSBgt4Zz2XbA"
-        },
-        {
-          "url": "https://www.wavy.com/news/national/ap-us-news/ap-an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
-          "title": "An unclassified CIA system was breached in a cyberattack, AP source says",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl5kE7sFCpQ2yYHHfPN0qfJO-7wbKcasxXQnTNjbv3gTtQuLiuv7UEjJeAaZc"
-        },
-        {
-          "url": "https://www.usnews.com/news/top-news/articles/2026-11-24/us-cia-odni-suffer-cybersecurity-breach-of-some-unclassified-information-nyt-reports",
-          "title": "US CIA, ODNI Suffer Cybersecurity Breach of Some Unclassified Information, NYT Reports",
-          "publisher": "U.S. News & World Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzG8t_xr50WTnYB6HnXA6ydI6jdzSCmZiljoURPvgfJdDNlHEp2xbyKPomIV8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
         }
       ]
     }
