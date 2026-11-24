@@ -29,3 +29,45 @@ test('deployment runbook never claims repos provide always-on compute or D1 data
  assert.match(cfg,/not.*production.*cutover/i);
  assert.match(cfg,/separate.*permanent.*host/i);
 });
+
+
+import {DatabaseSync} from 'node:sqlite';
+import {mkdtempSync,rmSync,existsSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+function queueSnapshot(t){
+ const dir=mkdtempSync(join(tmpdir(),'qp-portable-queue-'));
+ t.after(()=>rmSync(dir,{recursive:true,force:true}));
+ const dbPath=join(dir,'private.sqlite'),db=new DatabaseSync(dbPath);
+ db.exec('CREATE TABLE work_tickets(id TEXT PRIMARY KEY,owner_hash TEXT,context_json TEXT,request TEXT,created_at INTEGER,status TEXT)');
+ const add=db.prepare('INSERT INTO work_tickets VALUES(?,?,?,?,?,?)');
+ for(let i=0;i<105;i++)add.run('job-'+i,'owner-a',JSON.stringify({kind:'robot-directions',color_jobs:[]}), 'private fixture',i,'ready');
+ add.run('foreign','owner-b','{"kind":"robot-directions"}','other private fixture',999,'ready');
+ add.run('complete','owner-a','{"kind":"robot-directions"}','complete',998,'complete');
+ add.run('other-kind','owner-a','{"kind":"other"}','other kind',997,'ready');
+ db.close();
+ return {dir,dbPath};
+}
+test('portable queue reuses owner-scoped Brain selection across SQLite pages without network or writes',async t=>{
+ const {readPortableQueue}=await import('../distributed-vault/portable-brain-queue.mjs');
+ const {dbPath}=queueSnapshot(t);
+ const before=readFileSync(dbPath);
+ const q=await readPortableQueue({dbPath,ownerHash:'owner-a'});
+ assert.equal(q.results.length,105);
+ assert.equal(q.pagesRead,2);
+ assert.equal(q.scanLimited,false);
+ assert.equal(q.results[0].id,'job-104');
+ assert.equal(q.results.at(-1).id,'job-0');
+ const foreign=await readPortableQueue({dbPath,ownerHash:'owner-a',requestedTicketId:'foreign',order:'oldest'});
+ assert.equal(foreign.results.length,105);
+ assert.equal(foreign.results[0].id,'job-0');
+ assert.ok(!foreign.results.some(r=>['foreign','complete','other-kind'].includes(r.id)));
+ assert.deepEqual(readFileSync(dbPath),before);
+});
+test('portable queue refuses absent snapshots and missing owner scope without creating files',async t=>{
+ const {readPortableQueue}=await import('../distributed-vault/portable-brain-queue.mjs');
+ const {dir,dbPath}=queueSnapshot(t),missing=join(dir,'absent.sqlite');
+ await assert.rejects(readPortableQueue({dbPath:missing,ownerHash:'owner-a'}));
+ assert.equal(existsSync(missing),false);
+ await assert.rejects(readPortableQueue({dbPath,ownerHash:''}),/scope/i);
+});
