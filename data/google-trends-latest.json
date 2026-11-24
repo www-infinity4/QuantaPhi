@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T21:31:13.637076Z",
+  "checked_at": "2026-11-24T22:01:22.964932Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dell earnings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T21:00:00Z",
+      "query": "jk dobbins",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T21:40:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
-        "https://finance.yahoo.com/markets/stocks/articles/why-dell-technologies-stock-falling-134017599.html",
-        "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/"
+        "https://sports.yahoo.com/nfl/breaking-news/article/sean-payton-suspends-rb-jk-dobbins-for-fridays-game-vs-steelers-due-to-conduct-detrimental-to-the-team-214323353.html",
+        "https://thednvr.com/broncos/sean-payton-jk-dobbins-jonah-colemans-denver-broncos/",
+        "https://www.profootballrumors.com/2026/11/broncos-suspend-rb-j-k-dobbins-for-week-12"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4EPMEkhwlXKWoeW_Ma9v855dU1kxpGThtx3ArrWrofWWdhLQTDuGH05Fl-nk",
-      "image_credit": "Bloomberg.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOSHmIWEOqT57dTqrFa2WVPd1JDh94TTLQWnuNBfOWHIDGv-MmwQfEgG2eiec",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/dell-ups-annual-sales-forecast-again-on-rising-ai-server-demand",
-          "title": "Dell Ups Annual Sales Forecast Again on Rising AI Server Demand",
-          "publisher": "Bloomberg.com",
+          "url": "https://sports.yahoo.com/nfl/breaking-news/article/sean-payton-suspends-rb-jk-dobbins-for-fridays-game-vs-steelers-due-to-conduct-detrimental-to-the-team-214323353.html",
+          "title": "Sean Payton suspends RB JK Dobbins for Friday's game vs. Steelers due to 'conduct detrimental to the team'",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4EPMEkhwlXKWoeW_Ma9v855dU1kxpGThtx3ArrWrofWWdhLQTDuGH05Fl-nk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOSHmIWEOqT57dTqrFa2WVPd1JDh94TTLQWnuNBfOWHIDGv-MmwQfEgG2eiec"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-dell-technologies-stock-falling-134017599.html",
-          "title": "Why Is Dell Technologies Stock Falling 5.9% Today?",
-          "publisher": "Yahoo Finance",
+          "url": "https://thednvr.com/broncos/sean-payton-jk-dobbins-jonah-colemans-denver-broncos/",
+          "title": "Sean Payton sends a message to J.K. Dobbins following Jonah Coleman's emergence for the Denver Broncos",
+          "publisher": "DNVR",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy8JPH2ispct_q-N9ukH2m9zkjuBT5juQpRsaGq29Z0paVAzFCwZxT2y9_xc0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEh0jMGkNV5ql5ZjVxYgeRCyjFbumM6CYRfxY638K1rGOJVhmT9IkKL-MsB9A"
         },
         {
-          "url": "https://www.reuters.com/business/dell-hpe-results-put-ai-demand-test-after-tech-rout-2026-11-23/",
-          "title": "Dell, HPE results to put AI demand to the test after tech rout",
-          "publisher": "Reuters",
+          "url": "https://www.profootballrumors.com/2026/11/broncos-suspend-rb-j-k-dobbins-for-week-12",
+          "title": "Broncos Suspend RB J.K. Dobbins For Week 12",
+          "publisher": "ProFootballRumors.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRlSjbUIptRjtVOrnrGmC8DsSg4F-oGn6Icn_JKd_mqZpSvp3aPuQ76bIdTQk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcWDHLOj2gb2m7o5tRLitxd-iT_sayXfoXtzw04MPo6oQB-ZLvOn39pmMzRK8"
         }
       ]
     },
     {
-      "query": "todd blanche",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T21:00:00Z",
+      "query": "tracker - season 4",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T21:40:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
-        "https://www.bbc.com/news/articles/crpdw1qx7jgxo",
-        "https://www.cnn.com/2026/11/24/politics/trump-jensen-huang-nvidia-messaging"
+        "https://www.imdb.com/news/ni66124096/?ref_=int_nwr_1",
+        "https://www.yahoo.com/entertainment/tv/articles/justin-hartley-tracker-kills-off-033625302.html",
+        "https://parade.com/tv/who-plays-luke-kelso-on-tracker-heres-why-josh-holloway-looks-so-familiar"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUX1JJYa19OYrWd8qUkKllc233uRQlvXElDLPwimmvP40dut3m31LVLzJevM8",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf_ZgY2SjK3IpmzR0uqKQTSWyFflYBpbJGXsmbgArLAp_6p31EZoGSGZk8c-g",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-fbi-doj-patel-blanche.html",
-          "title": "AG Blanche, FBI’s Patel dodge questions about Jensen Huang investigation",
-          "publisher": "CNBC",
+          "url": "https://www.imdb.com/news/ni66124096/?ref_=int_nwr_1",
+          "title": "‘Tracker’ Season 4 Episode 7 Recap and Ending Explained: Colter Shaw Faces a Reckless Rival",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUX1JJYa19OYrWd8qUkKllc233uRQlvXElDLPwimmvP40dut3m31LVLzJevM8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf_ZgY2SjK3IpmzR0uqKQTSWyFflYBpbJGXsmbgArLAp_6p31EZoGSGZk8c-g"
         },
         {
-          "url": "https://www.bbc.com/news/articles/crpdw1qx7jgxo",
-          "title": "US attorney general dodges questions about Nvidia investigation",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/justin-hartley-tracker-kills-off-033625302.html",
+          "title": "Justin Hartley’s ‘Tracker’ Kills Off Surprise Character in Shocking Twist Before Fall Finale",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwYfRSGTaxTSx7UHnDQLUFMHRy12codsYm8F25epCKYtc-0X5dRO8xu89ohnM"
+        },
+        {
+          "url": "https://parade.com/tv/who-plays-luke-kelso-on-tracker-heres-why-josh-holloway-looks-so-familiar",
+          "title": "Who Plays Luke Kelso on ‘Tracker’? Here’s Why Josh Holloway Looks So Familiar",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCgAGKBDVDYtQd_UBc152_PDWGqPlhS3wSvd_-OCQWnbEy9JbCfQXQRT923u0"
+        }
+      ]
+    },
+    {
+      "query": "kylian mbappé",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/videos/cx24eqr8p4m0o",
+        "https://www.goal.com/en/news/did-the-referee-favour-real-archivo-var-settles-debate-over-mbappe-penalty/blte4e05da75ce16579",
+        "https://www.gazetaexpress.com/en/Yamal-and-Mbappe-in-the-running-for-the-Golden-Ball--worrying-statistics-from-the-white-point/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsq-IT7EIiQkrEX-ZWtAsNr4bh-y-x9HOf7V40fh-zNHOibK__ySWOYG47mBs",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/videos/cx24eqr8p4m0o",
+          "title": "La Liga: Real Madrid 2-1 Celta Vigo - Kylian Mbappe missed penalty",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfvtOnitUM66-ftLs5xiBQWj6bbhrHxuUkJLf1nX1fux6NhJ4I4BL4XBaux-g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsq-IT7EIiQkrEX-ZWtAsNr4bh-y-x9HOf7V40fh-zNHOibK__ySWOYG47mBs"
         },
         {
-          "url": "https://www.cnn.com/2026/11/24/politics/trump-jensen-huang-nvidia-messaging",
-          "title": "The Trump team is getting more and more evasive about Jensen Huang",
+          "url": "https://www.goal.com/en/news/did-the-referee-favour-real-archivo-var-settles-debate-over-mbappe-penalty/blte4e05da75ce16579",
+          "title": "Did the referee favour Real? Archivo VAR settles debate over Mbappé penalty",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJr988wN3E4zsrEkPcMXYXp2b8z2Rai0d70Ohuo-qOKzoFfU_cbnIcCu9b8a8"
+        },
+        {
+          "url": "https://www.gazetaexpress.com/en/Yamal-and-Mbappe-in-the-running-for-the-Golden-Ball--worrying-statistics-from-the-white-point/",
+          "title": "Yamal and Mbappe targeted for the Ballon d'Or, worrying statistics from the penalty spot",
+          "publisher": "Gazeta Express",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQLFe2dPkg35ntoO-6O4yGbM-R5CLR0Zi__QRbAjQosd_QBeLCF4Nymue__tQ"
+        }
+      ]
+    },
+    {
+      "query": "airbag",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T21:40:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/ap/more-than-800k-hondas-recalled-airbag-issue-november-2026/",
+        "https://hondanews.com/en-US/honda-corporate/releases/release-b26ae02ff5dca50cb32a1f47831d8dd1-statement-by-american-honda-regarding-takata-desiccated-airbag-inflator-recall",
+        "https://apnews.com/article/honda-recall-takata-airbag-2b22dc69ff3d92502ebd8de57532b241"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PlylOa8S9LU82wMALSuF6enlSS0E4G9OsW_SDKb1fcIAkfD_bqib1FEFHxw",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/ap/more-than-800k-hondas-recalled-airbag-issue-november-2026/",
+          "title": "More than 800K Honda vehicles recalled for airbag issue",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-PlylOa8S9LU82wMALSuF6enlSS0E4G9OsW_SDKb1fcIAkfD_bqib1FEFHxw"
+        },
+        {
+          "url": "https://hondanews.com/en-US/honda-corporate/releases/release-b26ae02ff5dca50cb32a1f47831d8dd1-statement-by-american-honda-regarding-takata-desiccated-airbag-inflator-recall",
+          "title": "Statement by American Honda Regarding Takata Desiccated Airbag Inflator Recall",
+          "publisher": "Honda Newsroom",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSubWsvid34x9Z1BRWC7q43AirWHXavbE_rPYBGOjFMxMEBaYW1rCBCdRx4KDs"
+        },
+        {
+          "url": "https://apnews.com/article/honda-recall-takata-airbag-2b22dc69ff3d92502ebd8de57532b241",
+          "title": "Honda recalling more than 810,000 vehicles due to airbag inflator issue",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpmumkIDGCvO9Y35-JvXUIb-CALUK3CoBsfXzYwgluw26TTRpbChOnYLeyeB8"
+        }
+      ]
+    },
+    {
+      "query": "anya taylor-joy",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:30:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/anya-taylor-joy-lord-of-the-rings-gollum-ian-mckellen-1236956723/",
+        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/anya-taylor-joy-says-she-went-mute-after-meeting-ian-mckellen-on-the-lord-of-the-rings-the-hunt-for-gollum-set/articleshow/136132645.cms",
+        "https://tribune.com.pk/story/2642089/anya-taylor-joy-recalls-going-silent-when-ian-mckellen-appeared-as-gandalf-on-set"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8UsLGUh-q5Tb9Zig58jWk8iANjOa9NOTL6OU9yWNn4Os-E0WKAtaSnpGR1tM",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/anya-taylor-joy-lord-of-the-rings-gollum-ian-mckellen-1236956723/",
+          "title": "Anya Taylor-Joy Met Ian McKellen on 'Lord of the Rings' Set",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8UsLGUh-q5Tb9Zig58jWk8iANjOa9NOTL6OU9yWNn4Os-E0WKAtaSnpGR1tM"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/anya-taylor-joy-says-she-went-mute-after-meeting-ian-mckellen-on-the-lord-of-the-rings-the-hunt-for-gollum-set/articleshow/136132645.cms",
+          "title": "Anya Taylor-Joy says she went mute after Meeting Ian McKellen on The Lord Of The Rings: The Hunt for Goll",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWbTQ2ApWyCpybJmB_jZSNXY5TpPPXTCyj6kcKfsCIHXmADVtNnhLDnMfLC4k"
+        },
+        {
+          "url": "https://tribune.com.pk/story/2642089/anya-taylor-joy-recalls-going-silent-when-ian-mckellen-appeared-as-gandalf-on-set",
+          "title": "Anya Taylor-Joy recalls going silent when Ian McKellen appeared as Gandalf on set",
+          "publisher": "The Express Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcrGH1rtOxMMzzylOvr6eWYnVLI-HtgSrvxjJH1GjfOUYnlc_GXnwBWoJCkV4"
+        }
+      ]
+    },
+    {
+      "query": "arda güler",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:30:00Z",
+      "related_news_urls": [
+        "https://www.dogayidinle.com/spor/real-madrid-psv-macinda-ilk-11ler-belli-oldu-arda-guler-ilk-11de/10362",
+        "https://www.vietnam.vn/tr/lich-thi-dau-luot-5-champions-league-hlv-mourinho-chiem-ngoi-dau",
+        "https://www.hurriyet.com.tr/sporarena/real-madrid-psv-eindhoven-maci-ne-zaman-saat-kacta-hangi-kanalda-43388752"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFdgw3hZujFv2UPoShFPMPKh5xPm7-CF5shab1xOSBxzZcFVpz7JmvjWA3g74",
+      "image_credit": "Doğayı Dinle",
+      "news": [
+        {
+          "url": "https://www.dogayidinle.com/spor/real-madrid-psv-macinda-ilk-11ler-belli-oldu-arda-guler-ilk-11de/10362",
+          "title": "Real Madrid – PSV Maçında İlk 11’ler Belli Oldu! Arda Güler İlk 11’de",
+          "publisher": "Doğayı Dinle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFdgw3hZujFv2UPoShFPMPKh5xPm7-CF5shab1xOSBxzZcFVpz7JmvjWA3g74"
+        },
+        {
+          "url": "https://www.vietnam.vn/tr/lich-thi-dau-luot-5-champions-league-hlv-mourinho-chiem-ngoi-dau",
+          "title": "Şampiyonlar Ligi 5. Hafta Maçları: Mourinho zirveye çıkabilecek mi?",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR621HrCPDl1iJN4pe7XGZ4kybRQ7ENzD_d87x4t0IAR99GuvjNUdk7Q09XDME"
+        },
+        {
+          "url": "https://www.hurriyet.com.tr/sporarena/real-madrid-psv-eindhoven-maci-ne-zaman-saat-kacta-hangi-kanalda-43388752",
+          "title": "Real Madrid PSV Eindhoven maçı ne zaman saat kaçta hangi kanalda?",
+          "publisher": "Hürriyet",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqm1WllH6_G2Et73O43qFyFDf0Ltmq_8hDmZlr_Iwvbx5CEGBiqh_1XNaK9S4"
+        }
+      ]
+    },
+    {
+      "query": "christa pike",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T21:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/24/us/christa-pike-condition-update",
+        "https://people.com/christa-pike-court-appearance-says-prison-isolated-her-12258432",
+        "https://www.eastidahonews.com/2026/11/from-death-row-to-a-botched-execution-and-back-a-timeline-of-christa-pikes-case/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqJDT9QrVw81Y7IRa-JgHJxcbrjx-UboHHdPMI5494cT7-i6UYhGGPQdJdyfs",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/24/us/christa-pike-condition-update",
+          "title": "Full extent of Christa Pike injuries ‘still unknown’ 2 months after her botched execution, her attorney says in legal filing",
           "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQK2RD8oB0OUT8N2rhHbbrWoarmT-4vth2lsYLXV8ecvlXBgu9rieD4bszfSs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqJDT9QrVw81Y7IRa-JgHJxcbrjx-UboHHdPMI5494cT7-i6UYhGGPQdJdyfs"
+        },
+        {
+          "url": "https://people.com/christa-pike-court-appearance-says-prison-isolated-her-12258432",
+          "title": "Christa Pike Gets Court Date After Prison ‘Isolated’ Her Following Botched Execution",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEGQPiRYh9tNYPnvP9mvcygc-waM8pb4qqfLX3oNXDaKBgoHE1ydnWY5Fc-a0"
+        },
+        {
+          "url": "https://www.eastidahonews.com/2026/11/from-death-row-to-a-botched-execution-and-back-a-timeline-of-christa-pikes-case/",
+          "title": "From death row to a botched execution and back: A timeline of Christa Pike’s case",
+          "publisher": "East Idaho News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbJzhaqBE8Ng-AI7CDt1pvWdxGpjjvrFIsNrK5iB0kGg6hQyEAbFAWlZCBFEM"
         }
       ]
     },
     {
-      "query": "miss universe 2026 where to watch",
+      "query": "bellingham",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T20:40:00Z",
+      "published_at": "2026-11-24T21:20:00Z",
       "related_news_urls": [
-        "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
-        "https://wwd.com/shop/shop-fashion/watch-miss-universe-2026-livestream-online-free-streaming-1239462551/",
-        "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/"
+        "https://www.nytimes.com/athletic/6696492/2026/11/23/jude-bellingham-contract-real-madrid/",
+        "https://inshorts.com/en/news/midfielder-jude-bellingham-agrees-to-extend-real-madrid-contract-till-2031--report-1795521034778",
+        "https://www.si.com/soccer/jude-bellingham-proposed-real-madrid-salary-compares-vinicius-jr-mbappe"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMNrKwGGYEfTqjvEnWW6_dfetmvQJqMPS6vapX7-0XAWaKS4_UTLy615FcS6U",
-      "image_credit": "Business Insider",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJj_f2hJgpMHT0IGMiLrCN8QpTSpud4ba01C_a5gvQruBy35Ha3MUnzxL9r5g",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.businessinsider.com/miss-universe-pageant-contestants-photos-2026-11",
-          "title": "Meet the 116 women competing to be Miss Universe 2026",
-          "publisher": "Business Insider",
+          "url": "https://www.nytimes.com/athletic/6696492/2026/11/23/jude-bellingham-contract-real-madrid/",
+          "title": "Jude Bellingham in advanced talks over Real Madrid long-term contract renewal - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMNrKwGGYEfTqjvEnWW6_dfetmvQJqMPS6vapX7-0XAWaKS4_UTLy615FcS6U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJj_f2hJgpMHT0IGMiLrCN8QpTSpud4ba01C_a5gvQruBy35Ha3MUnzxL9r5g"
         },
         {
-          "url": "https://wwd.com/shop/shop-fashion/watch-miss-universe-2026-livestream-online-free-streaming-1239462551/",
-          "title": "Where to Watch the Miss Universe 2026 Pageant Streaming Online for Free",
-          "publisher": "WWD",
+          "url": "https://inshorts.com/en/news/midfielder-jude-bellingham-agrees-to-extend-real-madrid-contract-till-2031--report-1795521034778",
+          "title": "Midfielder Jude Bellingham agrees to extend Real Madrid contract till 2031: Report | He recently made his 100th La Liga appearance | Inshorts",
+          "publisher": "Inshorts",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2BpJvFiGuncj3rRWyTX_L0AfToUO5P58VlCxZCgCIncbAYb0v6slfU3WjQD4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR0YBe76amjpmoaAPDmL2xpLWfWXPQWps5ZwNJ4fnod-vBkxpfj4YmbKCdM2g"
         },
         {
-          "url": "https://nbcuniversalnewsgroup.com/telemundo/2026/11/17/the-big-night-is-almost-here-telemundo-unveils-unprecedented-coverage-for-the-historic-75th-miss-universe-competition-live-coast-to-coast-from-puerto-rico-on-tuesday-november-24-startin/",
-          "title": "The Big Night Is Almost Here! Telemundo Unveils Unprecedented Coverage for the Historic 75th Miss Universe® Competition, Live Coast-to-Coast from Puerto Rico on Tuesday, November 2",
-          "publisher": "NBCUniversal News Group",
+          "url": "https://www.si.com/soccer/jude-bellingham-proposed-real-madrid-salary-compares-vinicius-jr-mbappe",
+          "title": "‘Significant’—How Jude Bellingham’s Proposed Real Madrid Salary Compares to Vinicius Jr, Mbappe",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ_bZrtUQrKzR-gGAa9pazS7pH055bk4E2Rd5I598Km5xjfId5GSdFozGVSZA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlLJIIGkDDJ9lGW3bSJk0iSzd4zTnHORAS4HyOIr3FgTFDqZA152mfdloGVT8"
         }
       ]
     },
     {
-      "query": "real",
+      "query": "wday stock",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T20:40:00Z",
+      "published_at": "2026-11-24T21:20:00Z",
       "related_news_urls": [
-        "https://kvnutalk.com/the-threat-is-finally-real-judge-rips-white-house-weaponization/",
-        "https://sandhillsexpress.com/abc_national/the-threat-is-finally-real-judge-rips-white-house-weaponization-abcid71bf3988/",
-        "https://www.yardbarker.com/general_sports/articles/jay_cutler_rampage_jackson_leah_pruett_among_ten_confirmed_for_dodge_sno_brawl_celebrity_race/s1_17615_44610889"
+        "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3",
+        "https://finance.yahoo.com/markets/stocks/articles/workday-wday-resilient-fundamentals-private-151302738.html",
+        "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Announces-Fiscal-2027-Third-Quarter-Financial-Results/default.aspx"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQge_81DYndEnpCQP7aIAPwTEBiR1MaXXUHvvNhtAMtZLqKLTF8tjT_ECUBtuU",
-      "image_credit": "KVNU News Talk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNgn5bc2ylmAgpUhv5Lhi50zWZNG7cYbZ7PRFqCHuM4VOt-GpLNFSrnCNlko",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://kvnutalk.com/the-threat-is-finally-real-judge-rips-white-house-weaponization/",
-          "title": "‘The threat is finally real’: Judge rips White House ‘weaponization’",
-          "publisher": "KVNU News Talk",
+          "url": "https://www.wsj.com/business/earnings/workday-raises-full-year-subscription-outlook-after-sales-rise-625a54e3",
+          "title": "Workday Raises Full-Year Subscription Outlook After Sales Rise",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQge_81DYndEnpCQP7aIAPwTEBiR1MaXXUHvvNhtAMtZLqKLTF8tjT_ECUBtuU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNgn5bc2ylmAgpUhv5Lhi50zWZNG7cYbZ7PRFqCHuM4VOt-GpLNFSrnCNlko"
         },
         {
-          "url": "https://sandhillsexpress.com/abc_national/the-threat-is-finally-real-judge-rips-white-house-weaponization-abcid71bf3988/",
-          "title": "‘The threat is finally real’: Judge rips White House ‘weaponization’",
-          "publisher": "Sandhills Express",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/workday-wday-resilient-fundamentals-private-151302738.html",
+          "title": "Workday (WDAY): Resilient Fundamentals and Private Equity Take Over Talks Drive Q3 Rally",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTga-bdzkrdM3YHbJ3-KNRn8n6h0vO_INj4JcFEUiIN-MiTS_NA3CGcmuIEp7Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgAjZUhacziKv4IkMi7a_4RI9E3rYJI--A5xOLQFOXN7X9ddayjfotcXJ52t4"
         },
         {
-          "url": "https://www.yardbarker.com/general_sports/articles/jay_cutler_rampage_jackson_leah_pruett_among_ten_confirmed_for_dodge_sno_brawl_celebrity_race/s1_17615_44610889",
-          "title": "Jay Cutler, Rampage Jackson, Leah Pruett, Among Ten Confirmed for Dodge Sno-Brawl Celebrity Race",
-          "publisher": "Yardbarker",
+          "url": "https://investor.workday.com/news-and-events/press-releases/news-details/2026/Workday-Announces-Fiscal-2027-Third-Quarter-Financial-Results/default.aspx",
+          "title": "Workday Announces Fiscal 2027 Third Quarter Financial Results",
+          "publisher": "Workday",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRFMQr91Sqk_Oc99pb7_xi_v4BD8WNrxxTj0cfyaMNke2JapeyZujFf9B1bak"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ1UgygbYZhtTl3tdP74bmjSkwXo29rzXvGGHOEhNZiqFzF6uhTK6Bn584UGs"
         }
       ]
     },
     {
-      "query": "stewart mclean",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T20:40:00Z",
-      "related_news_urls": [
-        "https://www.cbc.ca/news/canada/british-columbia/b-c-actor-stewart-mclean-murder-charge-9.7432598",
-        "https://www.theglobeandmail.com/canada/article-vancouver-actor-stewart-mclean-murder/",
-        "https://vancouversun.com/news/man-charged-murder-death-bc-actor-stewart-mclean"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxFDoEwIFswax4db0sZk31TohpFlhQLto2qjwfiMz5h1rUopuryc5ak_pQTlc",
-      "image_credit": "CBC",
-      "news": [
-        {
-          "url": "https://www.cbc.ca/news/canada/british-columbia/b-c-actor-stewart-mclean-murder-charge-9.7432598",
-          "title": "Murder charge laid in connection to death of B.C. actor Stewart McLean",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxFDoEwIFswax4db0sZk31TohpFlhQLto2qjwfiMz5h1rUopuryc5ak_pQTlc"
-        },
-        {
-          "url": "https://www.theglobeandmail.com/canada/article-vancouver-actor-stewart-mclean-murder/",
-          "title": "B.C. man charged with murder in actor Stewart McLean’s death",
-          "publisher": "The Globe and Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLDq67piacpRNzYCShBraECu_hmN2eCNiKpYcTvMbtdSHawsKA0Z4kdtRf2OY"
-        },
-        {
-          "url": "https://vancouversun.com/news/man-charged-murder-death-bc-actor-stewart-mclean",
-          "title": "Man charged with murder in death of B.C. actor Stewart McLean",
-          "publisher": "Vancouver Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXvXy5Ru1Zx-wYNFSRayKNYSb96XSWtZX9nKeObRe9wBf3WyQt5EakqwC0fGc"
-        }
-      ]
-    },
-    {
-      "query": "championship",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T20:40:00Z",
-      "related_news_urls": [
-        "https://www.kcur.org/sports/2026-11-24/kansas-city-current-parade-rally-nwsl-championship",
-        "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
-        "https://www.espn.com/soccer/story/_/id/50561566/kansas-city-nwsl-championship-final-washington-spirit"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0x_pAmgCxUzZM_28runf01PCUzq0btI2DYoLKfl4Zgj_ee5KSjAvWuQT7mA",
-      "image_credit": "KCUR",
-      "news": [
-        {
-          "url": "https://www.kcur.org/sports/2026-11-24/kansas-city-current-parade-rally-nwsl-championship",
-          "title": "Thousands of Current fans join championship parade: 'Kansas City is a great sports town'",
-          "publisher": "KCUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0x_pAmgCxUzZM_28runf01PCUzq0btI2DYoLKfl4Zgj_ee5KSjAvWuQT7mA"
-        },
-        {
-          "url": "https://www.kmbc.com/article/kc-current-celebrates-nwsl-victory-with-a-march-and-rally/74517300",
-          "title": "TEAL TUESDAY: Crowd of KC Current fans celebrates NWSL victory with march, rally",
-          "publisher": "KMBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnuhDY-ZS3aZwbOjjSpzgQPO5Q9_t0cW6GZUxdPHhuXlAQ4ROMBQU3eqeW0rw"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50561566/kansas-city-nwsl-championship-final-washington-spirit",
-          "title": "Kansas City's NWSL title shows investing in women's soccer pays off",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhomg7dX1-F1Ri1ejXbb-CzcUcOjwUPGK2MpVOho4nXpbajwnMGyQ3VcnNRqA"
-        }
-      ]
-    },
-    {
-      "query": "chapecoense x palmeiras",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/sc/futebol/brasileirao-serie-a/noticia/2026/11/24/chapecoense-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.band.com.br/esportes/futebol/times/palmeiras/palmeiras-e-chape-relembram-tragedia-e-fazem-homenagem-a-alan-ruschel",
-        "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA",
-      "image_credit": "ge",
-      "news": [
-        {
-          "url": "https://ge.globo.com/sc/futebol/brasileirao-serie-a/noticia/2026/11/24/chapecoense-x-palmeiras-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Chapecoense x Palmeiras: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIdxThts2epzCAV522-webAJueWH5enP550hlDy4WHCaAmHyHhwPTbaRmusqA"
-        },
-        {
-          "url": "https://www.band.com.br/esportes/futebol/times/palmeiras/palmeiras-e-chape-relembram-tragedia-e-fazem-homenagem-a-alan-ruschel",
-          "title": "Palmeiras e Chape relembram tragédia e fazem homenagem a Alan Ruschel",
-          "publisher": "Band",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMa6fzmjEZAEuN0lbO5YXvnrN0mfHI0pHTN0eAUuD5HvL6ktymvc5ZRNEESCE"
-        },
-        {
-          "url": "https://www.gazetaesportiva.com/times/palmeiras/escalacoes-chapecoense-x-palmeiras-brasileirao-37-rodada/",
-          "title": "Abel define Palmeiras com sete jogadores formados na base para enfrentar a Chape; veja escalações",
-          "publisher": "Gazeta Esportiva",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmOuAWY6-2sfVL274QVc0Xp-7aw7m8dho5-1QRIgPq7T1sfkzXMhEjqtHCxb8"
-        }
-      ]
-    },
-    {
-      "query": "huawei",
+      "query": "real madrid standings",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
+      "published_at": "2026-11-24T21:20:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/chinese-tech-company-huawei-convicted-federal-charges-rcna611189",
-        "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
-        "https://www.pbs.org/newshour/nation/u-s-jury-finds-chinese-tech-giant-huawei-guilty-of-conspiracy-to-steal-trade-secrets-bank-fraud"
+        "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-23-11-2026",
+        "https://www.si.com/soccer/real-madrid-vs-psv-eindhoven-predictions-los-blancos-10th-consecutive-victory-11-24-26",
+        "https://www.managingmadrid.com/115760/real-madrid-vs-psv-eindhoven-2026-champions-league-live-online-stream"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHY-2RnwHuO9JYgZ_wBcFadrPXFoS4UYY63RZJND36tQqsdpdx78JLTOfBnM",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuEN5bw1s4zMHJolRzSWt0ik6w-p_N6Mg5TNz20yFEfkE2jXgwBBwH14ZLYrI",
+      "image_credit": "Real Madrid CF | Web Oficial",
       "news": [
         {
-          "url": "https://www.nbcnews.com/news/us-news/chinese-tech-company-huawei-convicted-federal-charges-rcna611189",
-          "title": "Chinese tech company Huawei convicted on federal charges",
-          "publisher": "NBC News",
+          "url": "https://www.realmadrid.com/en-US/news/football/first-team/press-conference/mourinho-23-11-2026",
+          "title": "Mourinho: ‘The 12 points give us some breathing space, but we don’t want to be in the Champions League play-offs’",
+          "publisher": "Real Madrid CF | Web Oficial",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJHY-2RnwHuO9JYgZ_wBcFadrPXFoS4UYY63RZJND36tQqsdpdx78JLTOfBnM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuEN5bw1s4zMHJolRzSWt0ik6w-p_N6Mg5TNz20yFEfkE2jXgwBBwH14ZLYrI"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/huawei-found-guilty-of-us-criminal-charges-in-landmark-case",
-          "title": "Huawei Found Guilty of US Criminal Charges in Landmark Case",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.si.com/soccer/real-madrid-vs-psv-eindhoven-predictions-los-blancos-10th-consecutive-victory-11-24-26",
+          "title": "Real Madrid vs. PSV Eindhoven Predictions: Perfect Los Blancos Aiming for 10th Consecutive Victory",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkMC5PQIDYI32lblbIDCYgJHfBcdfShJ7hoffOSCLs9vgSqyIahurKFyEFoUo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR48xYrBl4xrEeJoeTwdJWKo4lVbg1QXfAskMrTxRsgwWKFDaaDPji0E5g_IZI"
         },
         {
-          "url": "https://www.pbs.org/newshour/nation/u-s-jury-finds-chinese-tech-giant-huawei-guilty-of-conspiracy-to-steal-trade-secrets-bank-fraud",
-          "title": "U.S. jury finds Chinese tech giant Huawei guilty of conspiracy to steal trade secrets, bank fraud",
-          "publisher": "PBS",
+          "url": "https://www.managingmadrid.com/115760/real-madrid-vs-psv-eindhoven-2026-champions-league-live-online-stream",
+          "title": "CONFIRMED lineups: Real Madrid vs PSV Eindhoven, 2026 Champions League",
+          "publisher": "Managing Madrid",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCgS0JSeBJM_3p7DxlT3Qch3PRWCfSD3dNXYvrgGJt_79RJeP_sYV6-UHFajY"
-        }
-      ]
-    },
-    {
-      "query": "rihanna",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/rihanna-asap-rocky-outfit-formula-2026-11-23",
-        "https://www.harpersbazaar.com/celebrity/latest/a74519263/rihanna-asap-rocky-coordinating-outfits-coats-big-pants-street-style-date-night-photos/",
-        "https://www.wmagazine.com/fashion/rihanna-green-jacket-celine-asap-rocky-date"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8T6AXbJsfJuhsJCuFhi3Vx2RTIL1mdTUkdcq0khL67HNMsjUxYxcqFm0f44",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/rihanna-asap-rocky-outfit-formula-2026-11-23",
-          "title": "Rihanna and A$AP Rocky Are in Physical and Sartorial Lockstep",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD8T6AXbJsfJuhsJCuFhi3Vx2RTIL1mdTUkdcq0khL67HNMsjUxYxcqFm0f44"
-        },
-        {
-          "url": "https://www.harpersbazaar.com/celebrity/latest/a74519263/rihanna-asap-rocky-coordinating-outfits-coats-big-pants-street-style-date-night-photos/",
-          "title": "Rihanna Seemingly Borrows Her Stylist’s Coat for a Date With A$AP Rocky",
-          "publisher": "Harper's BAZAAR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKeRuWsXLVAztM-KrraUEXhq51GTf9bG63Cn_VyaqwD4ODU945gkY_hTdYOU4"
-        },
-        {
-          "url": "https://www.wmagazine.com/fashion/rihanna-green-jacket-celine-asap-rocky-date",
-          "title": "Rihanna Reimagines a 2010s Trend on Date With A$AP Rocky",
-          "publisher": "W Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIFGegeX6kVAu98_mB9T5jpszndq4PJIZMorKlLegJl_f_31GbGpuz_fZCeOY"
-        }
-      ]
-    },
-    {
-      "query": "uic vs rice",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T20:30:00Z",
-      "related_news_urls": [
-        "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
-        "https://www.accuscore.com/game/cmwtuyc251kc7qp011ud4cn1i",
-        "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8",
-      "image_credit": "BVM Sports",
-      "news": [
-        {
-          "url": "https://bvmsports.com/2026/11/23/mens-basketball-continues-play-at-scout-jacksonville-classic-against-uic/",
-          "title": "Men’s Basketball Continues Play at Scout Jacksonville Classic against UIC",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxphWsZYIAgLnrCZ-_rwSlFROhR-PWE-Pjjk8rTpiQ97fw-4BiWywyq2a5Ci8"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmwtuyc251kc7qp011ud4cn1i",
-          "title": "Rice vs UIC Prediction (Nov 24): Rice 65% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5h6PtsysicWn1SOW0MQCkLFJjmmWk1g2tH1201U64oYc16A_8CURgC6Rm3SE"
-        },
-        {
-          "url": "https://www.actionnetwork.com/ncaab-game/uic-rice-score-odds-november-24-2026/302408",
-          "title": "UIC vs. Rice Odds & Betting Predictions November 24, 2026",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvK__moXJ9DfHWqIDrcPIAoUh_LrhpgHJTGK4bg44xDT2G14RLI8VdFvk9B_Q"
         }
       ]
     }
