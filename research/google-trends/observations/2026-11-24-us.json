@@ -3,51 +3,261 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T15:31:27.481383Z",
+  "checked_at": "2026-11-24T16:01:09.517774Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "seiya suzuki",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T15:10:00Z",
+      "query": "kris bubic",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T15:40:00Z",
       "related_news_urls": [
-        "https://www.si.com/mlb/five-best-fits-seiya-suzuki-free-agency-mariners-cubs-padres",
-        "https://sports.yahoo.com/articles/cubs-strong-verdict-seiya-suzuki-072643560.html",
-        "https://www.mlb.com/news/seiya-suzuki-declines-qualifying-offer-from-cubs"
+        "https://www.si.com/mlb/braves/onsi/is-kris-bubic-worth-the-risk-for-the-braves-at-his-rising-price",
+        "https://clutchpoints.com/mlb/los-angeles-dodgers/mlb-rumors-tarik-skubal-dodgers-free-agent-pitcher-so-hot-right-now-cardinals",
+        "https://heavy.com/sports/mlb/st-louis-cardinals/cardinals-linked-group-starters-potential-upgrades/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2bmxbcdGy9wC7DwrfZfdZ4aD_zbiJ5DCHI63d3xJgjVjOEAQwQLncNLN7Yd8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLbpuS4I8B6rRuj9ziEntbjkY3JZawQ89vXNFt1CwM1nqppMUv0ItY6o4xC34",
       "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.si.com/mlb/five-best-fits-seiya-suzuki-free-agency-mariners-cubs-padres",
-          "title": "The Five Best Fits for Seiya Suzuki in MLB Free Agency",
+          "url": "https://www.si.com/mlb/braves/onsi/is-kris-bubic-worth-the-risk-for-the-braves-at-his-rising-price",
+          "title": "Is Kris Bubic Worth the Risk For the Braves at His Rising Price?",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS2bmxbcdGy9wC7DwrfZfdZ4aD_zbiJ5DCHI63d3xJgjVjOEAQwQLncNLN7Yd8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLbpuS4I8B6rRuj9ziEntbjkY3JZawQ89vXNFt1CwM1nqppMUv0ItY6o4xC34"
         },
         {
-          "url": "https://sports.yahoo.com/articles/cubs-strong-verdict-seiya-suzuki-072643560.html",
-          "title": "Cubs Get Strong Verdict on Seiya Suzuki Amid Blue Jays Rumor",
+          "url": "https://clutchpoints.com/mlb/los-angeles-dodgers/mlb-rumors-tarik-skubal-dodgers-free-agent-pitcher-so-hot-right-now-cardinals",
+          "title": "MLB rumors: A non-Tarik Skubal Dodgers free agent pitcher is so hot right now - watch out for Cardinals",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqFSE7g9cK4oeXQundzkZXBNbieEthWNgo4AFgs1VUYEC6LQ4oqcAcoBHf3UU"
+        },
+        {
+          "url": "https://heavy.com/sports/mlb/st-louis-cardinals/cardinals-linked-group-starters-potential-upgrades/",
+          "title": "Cardinals Linked to Group of Starters as Potential Upgrades",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9uFycFyGfP7PIyzmh-Ihp2JqZDDIjDhXUvPHyODzUOAyzmoC8PsNAYqfv_Go"
+        }
+      ]
+    },
+    {
+      "query": "freddy peralta",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T15:40:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25536774-2026-mlb-free-agents-rumors-predictions-freddy-peralta-and-more-after-skubals-mets-contract",
+        "https://sports.yahoo.com/articles/freddy-peralta-orioles-best-bet-140000182.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/passan-cubs-sign-teruaki-sato-to-six-year-deal"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf0BvOzgDsyf8HIRNx2XqNVModw7mKfNUO4nP-mUhw0SreS44E4jo9BS2a7Io",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25536774-2026-mlb-free-agents-rumors-predictions-freddy-peralta-and-more-after-skubals-mets-contract",
+          "title": "2026 MLB Free Agents Rumors, Predictions for Freddy Peralta and More After Skubal's Mets Contract",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRf0BvOzgDsyf8HIRNx2XqNVModw7mKfNUO4nP-mUhw0SreS44E4jo9BS2a7Io"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/freddy-peralta-orioles-best-bet-140000182.html",
+          "title": "Freddy Peralta is the Orioles’ best bet for improving their rotation",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2nrMkoBqJpRaWNOwjlcfMe1cEUxjoEmD3SwqXXPT0T82PDW_b5P4q336DePE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRP-hH4CGJl0XbxZPmgMP2IDEkmTBh_8HP5N0EA-fruWXQ_l6Em0P9ccHSyESw"
         },
         {
-          "url": "https://www.mlb.com/news/seiya-suzuki-declines-qualifying-offer-from-cubs",
-          "title": "Seiya Suzuki declines qualifying offer from Cubs",
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-24/passan-cubs-sign-teruaki-sato-to-six-year-deal",
+          "title": "Passan: Cubs sign Teruaki Sato to six-year deal",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7LNvVFT4_Y-5cBe9oQC5HJVFfq8qy2NkmEevHHEfcGuwsrnORjKLDqp9oxqA"
+        }
+      ]
+    },
+    {
+      "query": "ian happ",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T15:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/potential-free-agent-target-ian-154016379.html",
+        "https://www.royalsreview.com/kansas-city-royals-analysis/108385/one-mans-trash-non-tendered-targets-for-kansas-city-royals",
+        "https://kingsofkauffman.com/4-non-tendered-players-the-royals-must-sign-this-offseason"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/potential-free-agent-target-ian-154016379.html",
+          "title": "Potential free agent target: Ian Happ",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1jKA5Bla_F_rhZq2y6hVRgVk_DC94DeGnMXCM4S86wZZ5q7QQu6-XvkNOl1s"
+        },
+        {
+          "url": "https://www.royalsreview.com/kansas-city-royals-analysis/108385/one-mans-trash-non-tendered-targets-for-kansas-city-royals",
+          "title": "Potential non-tendered free agent targets for the Royals",
+          "publisher": "Royals Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSgkKtWoaIm9_VKwcUAa75I_KIfG9S4s9pLFzP68Ox5jtH4_qcmZWqAbMLLgYs"
+        },
+        {
+          "url": "https://kingsofkauffman.com/4-non-tendered-players-the-royals-must-sign-this-offseason",
+          "title": "4 non-tendered players the Royals must sign this offseason",
+          "publisher": "Kings of Kauffman",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX1onIb5z54w_UehrJQgS29O7U0qeURvCVHIOIFoJwOIQjLDtktEBGRGD66HM"
+        }
+      ]
+    },
+    {
+      "query": "jonbenet ramsey",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T15:30:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/",
+        "https://theplaylist.net/the-murder-of-jonbenet-ramsey-trailer-melissa-mccarthy-clive-owen-netflix-20261124/",
+        "https://deadline.com/2026/11/the-murder-of-jonbenet-ramsey-trailer-netflix-series-1237232085/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4CqnVs5R0q_nMLzsRqiodtjzNf7eATOuh7OAF7HQNaapzLJcmgiGJ5iR-Cbc",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/tv-shows/the-murder-of-jonbenet-ramsey-trailer-netflix/",
+          "title": "‘The Murder of JonBenét Ramsey’ Trailer: Netflix’s True Crime Series Stars Melissa McCarthy, Clive Owen",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4CqnVs5R0q_nMLzsRqiodtjzNf7eATOuh7OAF7HQNaapzLJcmgiGJ5iR-Cbc"
+        },
+        {
+          "url": "https://theplaylist.net/the-murder-of-jonbenet-ramsey-trailer-melissa-mccarthy-clive-owen-netflix-20261124/",
+          "title": "‘The Murder Of JonBenét Ramsey’ Trailer: Melissa McCarthy & Clive Owen Revisit An Infamous American Tragedy In Netflix’s New Series",
+          "publisher": "The Playlist",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGcDe7hu1LDxJC4X2got_3nZatTGTIpJLtMLsjaFOZcmgCSByDFF-kWGL3Nt8"
+        },
+        {
+          "url": "https://deadline.com/2026/11/the-murder-of-jonbenet-ramsey-trailer-netflix-series-1237232085/",
+          "title": "'The Murder of JonBenét Ramsey' Trailer Puts Spotlight On Parents",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTny_S4AiqgEy-qs5cwzWjjDH8K8HIcJHl_JDzWfwLapSglkvc7j2mSLLuCOsk"
+        }
+      ]
+    },
+    {
+      "query": "rudy giuliani",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T15:20:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/story/trump-will-give-medal-freedom-giuliani-fierce-political-ally-led-new-york-911/20074751/",
+        "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/",
+        "https://komonews.com/news/nation-world/president-donald-trump-to-award-former-new-york-mayor-rudy-giuliani-presidential-medal-of-freedom-for-september-11-2001-leadership-terrorist-attacks-man-in-red-bandana-charlie-kirk"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8rHgDpr4toTW_rpmxWtqnVPFZTCKpV0bBN12wmGIk1YyTc06uftTRsSkSJkU",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/story/trump-will-give-medal-freedom-giuliani-fierce-political-ally-led-new-york-911/20074751/",
+          "title": "Trump will give Medal of Freedom to Giuliani, a fierce political ally who led New York through 9/11",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8rHgDpr4toTW_rpmxWtqnVPFZTCKpV0bBN12wmGIk1YyTc06uftTRsSkSJkU"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/politics/2026/11/24/trump-rudy-giuliani-medal-freedom/92939924007/",
+          "title": "Trump to award Rudy Giuliani, former NY mayor, Medal of Freedom",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZUbc6usz-0URU7vBXddViasfsVYHUshCqEDEDcXAEo1o446OvijyTOnU0o2M"
+        },
+        {
+          "url": "https://komonews.com/news/nation-world/president-donald-trump-to-award-former-new-york-mayor-rudy-giuliani-presidential-medal-of-freedom-for-september-11-2001-leadership-terrorist-attacks-man-in-red-bandana-charlie-kirk",
+          "title": "Trump to award Rudy Giuliani Presidential Medal of Freedom for 9/11 leadership",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxozs4iNgyLpej_Ms7OOqEEl3KPsTN1--Zy-kUhBDFeF_XyIKGKhOKbpValuQ"
+        }
+      ]
+    },
+    {
+      "query": "nasdaq index",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T15:20:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-23/stock-market-today-dow-s-p-live-updates",
+        "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
+        "https://finance.yahoo.com/markets/stocks/articles/stock-traders-brace-more-volatility-230442405.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgW9xPTQmbK0IVMD4ICvig_KwXeJuHpCEpRnUWrM-844Zv4bNiUukg9F9bM",
+      "image_credit": "Bloomberg",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/stock-market-today-dow-s-p-live-updates",
+          "title": "Stocks Turn Lower as Nvidia Euphoria Wears Off: Markets Wrap",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwgW9xPTQmbK0IVMD4ICvig_KwXeJuHpCEpRnUWrM-844Zv4bNiUukg9F9bM"
+        },
+        {
+          "url": "https://www.reuters.com/business/view-nasdaq-plunges-5-day-after-anthropic-debut-investors-still-believe-ai-2026-11-20/",
+          "title": "Instant view: Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYFPfBR4GUEPyXzD-m-0Ws1xzBiLl4kFt8Ky3T8IvPSk1jdIkJwXkZ7oNDnuQ"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stock-traders-brace-more-volatility-230442405.html",
+          "title": "Stock Traders Brace For More Volatility After Tech-Driven Rout",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0iDpRi4bMxsmyQ8rZ6nKZokAr3uknrwUcKAXvyE1AJdjYn6cfh8ubTxtECPA"
+        }
+      ]
+    },
+    {
+      "query": "seiya suzuki",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T15:10:00Z",
+      "related_news_urls": [
+        "https://www.lookoutlanding.com/seattle-mariners-news/151203/tarik-skubal-scott-servais-luis-gil-maikel-garcia-randy-arozarena",
+        "https://www.mlb.com/news/randy-arozarena-vs-seiya-suzuki-free-agent-breakdown",
+        "https://www.seattletimes.com/sports/mariners/why-seiya-suzuki-is-worth-a-100-million-gamble-for-the-mariners/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj0QBmSJiVin21NBJRrCSWSQZmLYXWdAeLoKRVgdCdgDejeCcFSwu7CMpQqJw",
+      "image_credit": "Lookout Landing",
+      "news": [
+        {
+          "url": "https://www.lookoutlanding.com/seattle-mariners-news/151203/tarik-skubal-scott-servais-luis-gil-maikel-garcia-randy-arozarena",
+          "title": "Mariners News: Tarik Skubal, Scott Servais, and Luis Gil",
+          "publisher": "Lookout Landing",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj0QBmSJiVin21NBJRrCSWSQZmLYXWdAeLoKRVgdCdgDejeCcFSwu7CMpQqJw"
+        },
+        {
+          "url": "https://www.mlb.com/news/randy-arozarena-vs-seiya-suzuki-free-agent-breakdown",
+          "title": "Two free-agent outfielders, identical stat lines. Which one will teams covet more?",
           "publisher": "MLB.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwphSRGxNwn0XuSVByzrOWtmfnvOLMS9x8Lqy-p8T-wzwW_22jIHIMQx851hA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ0PGK8a5lgIicyAm3-v63wKklST8GqXmAHmnSQOfNgipBvQuvOw3qQ2PjzGI"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/mariners/why-seiya-suzuki-is-worth-a-100-million-gamble-for-the-mariners/",
+          "title": "Why Seiya Suzuki is worth a $100 million gamble for the Mariners",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZRCZtRTPEEL4RChcNopXACq_aDht5vtmLhvo6hQj2gdba1mIR3ZtUepFTN5Q"
         }
       ]
     },
     {
       "query": "nasdaq today",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-24T15:10:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-        "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
+        "https://www.wsj.com/cio-journal/ais-unanswered-questions-0000937c",
         "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E",
@@ -61,15 +271,15 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ758nLXM_WV-asW7utFIhiV--IRry_gjSvCrb-Pf_9JdmUMod9OKFWhlGoi-E"
         },
         {
-          "url": "https://finance.yahoo.com/markets/stocks/live/nvidia-live-updates-nvidia-stock-falls-as-exuberance-fades-after-jensen-huangs-return-as-ceo-142100906.html",
-          "title": "Nvidia live updates: Nvidia stock falls as exuberance fades after Jensen Huang's return as CEO",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.wsj.com/cio-journal/ais-unanswered-questions-0000937c",
+          "title": "AI’s Unanswered Questions",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjrtlBwBB3X-tIVWwT4FGlcTjI4VFef_smr29X0yh8xx3lOPI0VV4QD5Jxnbg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXcN-4_vEmC2nb7D69msDHwAVxOjgViTZ6vW2WCsvakJ8BwtukX9eWnTjXDyA"
         },
         {
           "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
-          "title": "Markets Slide as Tech Stocks Partly Reverse Nvidia-Sparked Rally",
+          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
@@ -77,256 +287,72 @@
       ]
     },
     {
-      "query": "trev alberts",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T15:00:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-ad-hire-falls-through-search-reopens/92940230007/",
-        "https://www.si.com/college/michigan/football/michigan-will-no-longer-hire-trev-alberts-as-new-ad-per-report",
-        "https://www.nytimes.com/athletic/7791056/2026/11/17/michigan-trev-alberts-athletic-director-search/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQVNezkOM3170-2Ei-PDUPTTSyKlNEgtYW_JrlKV7PfUO0w8i0lcE-pkjqCLE",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-ad-hire-falls-through-search-reopens/92940230007/",
-          "title": "Michigan athletic director hire falls through; search reopens",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQVNezkOM3170-2Ei-PDUPTTSyKlNEgtYW_JrlKV7PfUO0w8i0lcE-pkjqCLE"
-        },
-        {
-          "url": "https://www.si.com/college/michigan/football/michigan-will-no-longer-hire-trev-alberts-as-new-ad-per-report",
-          "title": "Michigan Will No Longer Hire Trev Alberts as New AD, per Report",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxRTEGHANeJHXeVGg2V_lNbUqrraV50PqDTnqi8geoJ4cjaOflC8e06Hv6-uI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7791056/2026/11/17/michigan-trev-alberts-athletic-director-search/",
-          "title": "Texas A&M’s Trev Alberts agrees to become Michigan’s athletic director: Source",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxgKbXyoBqV7L_znxoWGbVXFC2EJ_luUgCjmWYOKesX2ZHkcvVFLxfD5gB6HQ"
-        }
-      ]
-    },
-    {
-      "query": "teruaki sato",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T14:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
-        "https://sports.yahoo.com/mlb/breaking-news/article/japanese-star-teruaki-sato-cubs-reportedly-agree-to-6-year-120m-contract-151119609.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
-          "title": "Why Teruaki Sato will be the top MLB free-agent value this offseason",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw"
-        },
-        {
-          "url": "https://sports.yahoo.com/mlb/breaking-news/article/japanese-star-teruaki-sato-cubs-reportedly-agree-to-6-year-120m-contract-151119609.html",
-          "title": "Japanese star Teruaki Satō, Cubs reportedly agree to 6-year, $120M contract",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3ruQbpebXTz-g4gcWlNK3lQBXf6B9IW5Ev3E8BwiKPMHVxeKmkPrjXknytBM"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato",
-          "title": "Report: Cubs still ‘in the mix’ for Teruaki Sato",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7LNvVFT4_Y-5cBe9oQC5HJVFfq8qy2NkmEevHHEfcGuwsrnORjKLDqp9oxqA"
-        }
-      ]
-    },
-    {
-      "query": "rivals",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [
-        "https://goheels.com/news/2026/11/23/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
-        "https://godeacs.com/news/2026/11/24/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
-        "https://jaysbrickblog.com/news/lego-67023-jeff-the-land-shark-from-marvel-rivals-revealed/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HHdfCbM_uwd8eXkddchejo0s70edfHVZmVJ1PU3R8aeN9Gk6FVdVHD2NOg",
-      "image_credit": "University of North Carolina Athletics",
-      "news": [
-        {
-          "url": "https://goheels.com/news/2026/11/23/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
-          "title": "Rivals Unite For Legacy-Inspired Tobacco Road Merchandise Collection - University of North Carolina Athletics",
-          "publisher": "University of North Carolina Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN8HHdfCbM_uwd8eXkddchejo0s70edfHVZmVJ1PU3R8aeN9Gk6FVdVHD2NOg"
-        },
-        {
-          "url": "https://godeacs.com/news/2026/11/24/general-rivals-unite-for-legacy-inspired-tobacco-road-merchandise-collection-celebrating-college-athletics-heritage",
-          "title": "Rivals Unite for Legacy-Inspired Tobacco Road Merchandise Collection Celebrating College Athletics Heritage",
-          "publisher": "Wake Forest University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG5-NSNeNEedLdcmdiberuHzp2LoltDcPfGUWEJ6DHq8L6m3ycN35p9VUHtm8"
-        },
-        {
-          "url": "https://jaysbrickblog.com/news/lego-67023-jeff-the-land-shark-from-marvel-rivals-revealed/",
-          "title": "LEGO 67023 Jeff the Land Shark from Marvel Rivals revealed!",
-          "publisher": "Jay's Brick Blog",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGZPb7RJ2kVJ0mAdTDp9cfbW0Dc2EAyAjeEUrReU0tb-DWVQQaVKzs-ouqeA"
-        }
-      ]
-    },
-    {
-      "query": "popcaan concert",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "u2 tour 2027",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [
-        "https://www.u2.com/blogs/news/the-greatest-show-on-earth-set-for-north-america",
-        "https://consequence.net/2026/11/u2-north-american-dates-the-greatest-show-on-earth-world-tour/",
-        "https://www.cbsnews.com/boston/news/u2-carnaval-de-luz-2027-tour-gillette-stadium-tickets/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTmBg1-laqZ11MW1r0eyxk_Gu7Kbg3klBUjapCGThpnpJEaKC-coZwIUbIiBI",
-      "image_credit": "U2.com",
-      "news": [
-        {
-          "url": "https://www.u2.com/blogs/news/the-greatest-show-on-earth-set-for-north-america",
-          "title": "The Greatest Show on Earth set for North America",
-          "publisher": "U2.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTmBg1-laqZ11MW1r0eyxk_Gu7Kbg3klBUjapCGThpnpJEaKC-coZwIUbIiBI"
-        },
-        {
-          "url": "https://consequence.net/2026/11/u2-north-american-dates-the-greatest-show-on-earth-world-tour/",
-          "title": "U2 Announce North American Dates for \"The Greatest Show On Earth World Tour\"",
-          "publisher": "Consequence of Sound",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmEld_XxUofAHB1N3shnMSfvTCgovuQfzKh5fHeY0VbjKO1IcDqtL3-fy4NBc"
-        },
-        {
-          "url": "https://www.cbsnews.com/boston/news/u2-carnaval-de-luz-2027-tour-gillette-stadium-tickets/",
-          "title": "U2 to bring Carnaval de Luz 2027 tour to Gillette Stadium in Foxboro in September",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGOM-ay53FpvwXnDvH-oL9sXSVG9roZke68mrM526W9z_0C4_dZBxvpqqRBDg"
-        }
-      ]
-    },
-    {
-      "query": "xbox game pass new games november",
+      "query": "honduras sub-17 - colombia sub-17",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T14:40:00Z",
+      "published_at": "2026-11-24T15:10:00Z",
       "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
-        "https://www.purexbox.com/news/2026/11/two-more-games-confirmed-for-xbox-game-pass-in-early-2027",
-        "https://godisageek.com/2026/11/game-pass-november-games-motorslice-arkheron/"
+        "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17552748/colombia-vs-honduras-fecha-2-mundial-sub-17-equipo-fecha-hora-y-tv-en-vivo",
+        "https://spanish.news.cn/20261123/9080ba5c05264783a9b7e914f5bd8665/c.html",
+        "https://es-us.noticias.yahoo.com/vencer-jap%C3%B3n-t%C3%A9cnico-fredy-hurtado-181938799.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFje6v_eOXJh_wi2H6obT8Du_nhlIwfjNvDnxEclLetfMvUxPYQIX1993uRA",
-      "image_credit": "XBOX Wire",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3kkzBA8NhwFbyYNmMiDTfvoFDlWnPdekuSX9Iua4paN_uJQBKXaHcS_Z45M",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://news.xbox.com/en-us/2026/11/17/xbox-game-pass-november-2026-wave-2/",
-          "title": "Coming to XBOX Game Pass: Hela: of Mice & Magic, The Outlast Trials, Sniper Ghost Warrior Contracts 2, and More",
-          "publisher": "XBOX Wire",
+          "url": "https://espndeportes.espn.com/futbol/mundial/nota/_/id/17552748/colombia-vs-honduras-fecha-2-mundial-sub-17-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Colombia vs Honduras por fecha 2 del Mundial Sub 17: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKFje6v_eOXJh_wi2H6obT8Du_nhlIwfjNvDnxEclLetfMvUxPYQIX1993uRA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE3kkzBA8NhwFbyYNmMiDTfvoFDlWnPdekuSX9Iua4paN_uJQBKXaHcS_Z45M"
         },
         {
-          "url": "https://www.purexbox.com/news/2026/11/two-more-games-confirmed-for-xbox-game-pass-in-early-2027",
-          "title": "Two More Games Confirmed For Xbox Game Pass In Early 2027",
-          "publisher": "Pure Xbox",
+          "url": "https://spanish.news.cn/20261123/9080ba5c05264783a9b7e914f5bd8665/c.html",
+          "title": "Copa Mundial de la FIFA Sub-17: Japón vs Colombia",
+          "publisher": "新华网",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJI6ybU0z2mIaq3WT41sdphe1FPk29HQOs49p_7E-CY4t5_sz4AjFapgNspe8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3UBZOZWrSgxt-NQ954gK5IGMm023nDx5mEe_u8QCKVSjjfw57KQHJoAO6X5g"
         },
         {
-          "url": "https://godisageek.com/2026/11/game-pass-november-games-motorslice-arkheron/",
-          "title": "Game Pass Late November: MOTORSLICE, Arkheron and More",
-          "publisher": "GodisaGeek.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZNTJQLp-13I85vpHkqVDED8QOY1Bos1LQJ4ClxU5PXixX8-Zam9J5giZIjD0"
-        }
-      ]
-    },
-    {
-      "query": "billy ray cyrus miley wedding tribute",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/23/style/miley-cyrus-married-maxx-morando.html",
-        "https://people.com/billy-ray-cyrus-attend-miley-cyrus-maxx-morando-palm-springs-wedding-12267149",
-        "https://www.vogue.com/article/miley-cyrus-and-maxx-morando-are-married"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzebDtOGuStDnxFth6bdoj3szmgThVv2lwEG4_AY4MQQptQ4Pei85VkOt7Ig",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/23/style/miley-cyrus-married-maxx-morando.html",
-          "title": "Miley Cyrus Marries Maxx Morando in Palm Springs",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlzebDtOGuStDnxFth6bdoj3szmgThVv2lwEG4_AY4MQQptQ4Pei85VkOt7Ig"
-        },
-        {
-          "url": "https://people.com/billy-ray-cyrus-attend-miley-cyrus-maxx-morando-palm-springs-wedding-12267149",
-          "title": "Billy Ray Cyrus and Girlfriend Elizabeth Hurley Attend Miley Cyrus and Maxx Morando’s Palm Springs Wedding",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQphxXTemKwAQXwBTbtGeUrbmDULhM7HLPlzjEW15dglEPJfaT6sdCatPInhp8"
-        },
-        {
-          "url": "https://www.vogue.com/article/miley-cyrus-and-maxx-morando-are-married",
-          "title": "Miley Cyrus and Maxx Morando Are Married! See All the Photos Here",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNQWs7W6lnOPsi4bFROJupeo5W5kh1lw3avYaNmGL_za9WxWPRF6AGB1-pEv4"
-        }
-      ]
-    },
-    {
-      "query": "kelly ripa",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T14:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-        "https://www.imdb.com/fr/news/ni66125044/?ref_=nm_nwr_1",
-        "https://www.imdb.com/es/news/ni66120989/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-          "title": "Kelly Ripa's lookalike daughter twins with boyfriend in unexpected look",
+          "url": "https://es-us.noticias.yahoo.com/vencer-jap%C3%B3n-t%C3%A9cnico-fredy-hurtado-181938799.html",
+          "title": "Tras vencer a Japón, el técnico Fredy Hurtado habló del objetivo de Colombia en el Mundial Sub-17 y de su próximo rival",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqaaW01Vmd0f4Ph-OQaGFSKTX7BV9aRpCak7hf5SgBO0dcdC7FCjrzXOSR9B8"
+        }
+      ]
+    },
+    {
+      "query": "trev alberts",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T15:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50583155/attorney-trev-alberts-told-next-ad-michigan",
+        "https://www.cbssports.com/college-football/news/michigan-will-not-hire-texas-a-m-ad-trev-alberts-could-still-owe-full-buyout/",
+        "https://www.mlive.com/wolverines/football/2026/11/michigan-reverses-course-on-hiring-trev-alberts-as-next-athletic-director.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToNgSjF6MLPY-qFbvrkV7vzHysuv9Nezl4DHVlZmji92J8V0zXybXPy6Gy-Ds",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50583155/attorney-trev-alberts-told-next-ad-michigan",
+          "title": "Attorney - Trev Alberts told he won't be next AD at Michigan",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToNgSjF6MLPY-qFbvrkV7vzHysuv9Nezl4DHVlZmji92J8V0zXybXPy6Gy-Ds"
         },
         {
-          "url": "https://www.imdb.com/fr/news/ni66125044/?ref_=nm_nwr_1",
-          "title": "Live with Kelly and Mark: Caitriona Balfe, Leo Woodall",
-          "publisher": "IMDb",
+          "url": "https://www.cbssports.com/college-football/news/michigan-will-not-hire-texas-a-m-ad-trev-alberts-could-still-owe-full-buyout/",
+          "title": "Michigan will not hire Texas A&M AD Trev Alberts, could still owe full buyout",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsfVKmf6pNuXG-HcRBb_C_xrv7EgxOmFmZmrJXgAnJ0Hyyc6yC0ZpEvJ1ElG0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9NGuQs-dUCTO_AZSSfIfV6_LbVdWO4M7X2Q-z7g1EtEuyHIvDGoTTpOm7Pfo"
         },
         {
-          "url": "https://www.imdb.com/es/news/ni66120989/?ref_=nwc_art_perm",
-          "title": "Michael Gelman Breaks Down Kelly Ripa’s Hosting Evolution & His Own ‘Live’ Journey",
-          "publisher": "IMDb",
+          "url": "https://www.mlive.com/wolverines/football/2026/11/michigan-reverses-course-on-hiring-trev-alberts-as-next-athletic-director.html",
+          "title": "Michigan reverses course on hiring Trev Alberts as next athletic director",
+          "publisher": "MLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsHfiALoblMzpclRftg6chtW-jBm8yYpgRgEXnG-yXevgWkuNq9JNH7zl4wIM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcBUN8goa_3-WfcPM0D3W8mi_YuPLzG4rGJXPOEYXwR8xQu1yi7LLUdTjMrXU"
         }
       ]
     }
