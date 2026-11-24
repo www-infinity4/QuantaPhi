@@ -3,27 +3,272 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T17:01:30.118246Z",
+  "checked_at": "2026-11-24T17:31:20.404209Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "microsoft code red",
+      "query": "micron",
       "approx_searches": "200+",
+      "published_at": "2026-11-24T17:10:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
+        "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-dove-today-164752382.html",
+        "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
+          "title": "Why Did Micron Technology Stock Fall?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-dove-today-164752382.html",
+          "title": "Why Micron Stock Dove Today",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQCDzlNUIoVzF9tMA9_Ee6VeYBurcyo9kRX8b9QokBZ-pPzQ5qvNno7VHEtrI"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price",
+          "title": "Micron: You Can't Argue With The Price (NASDAQ:MU)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRozKgmmQfgfWxe0n2FAQe1K9xPQ0jbERVRxAMOrXsz4gYU8x8FowJeNa3CMAg"
+        }
+      ]
+    },
+    {
+      "query": "college football playoff",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T17:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
+        "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
+        "https://www.ncaa.com/news/football/article/2026-11-22/college-football-playoff-rankings-predictions-what-2026s-fourth-cfp-top-25-bracket"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
+          "title": "2026-27 Week 12 College Football Playoff, bowl projections",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
+          "title": "College Football Playoff rankings predictions, latest bracket: How far will Indiana, UCLA fall? - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdSYG9yp6vcP2wCGfw3C1q3BMEygUtmETo1-lgRrAMlBsXT2l0ZkWpbLN7Vs"
+        },
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-22/college-football-playoff-rankings-predictions-what-2026s-fourth-cfp-top-25-bracket",
+          "title": "College Football Playoff rankings predictions: Bracket, top 25 projections for Week 13",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpt-yBOoWqCdiYgmp2r_NiwuyUCnX7-FxXkS1Qm9u4KzZI2B11vTZ8b5KSP1o"
+        }
+      ]
+    },
+    {
+      "query": "galatasaray vs aston villa",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T16:50:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
+        "https://www.espn.com/soccer/story/_/id/50572850/aston-villa-unai-emery-galatasaray-champions-league",
+        "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJA3u60fG2CPSgCSOOw8h-qKM_hVw8OmiHOcX7mIYhnXANl2EAzRbIy6GgOtc",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
+          "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJA3u60fG2CPSgCSOOw8h-qKM_hVw8OmiHOcX7mIYhnXANl2EAzRbIy6GgOtc"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50572850/aston-villa-unai-emery-galatasaray-champions-league",
+          "title": "Aston Villa's Unai Emery on Galatasaray pitch fear: 'I don't know' how bad it is",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVjdVL-rXRm0QrKAJzym6YgUzN2ApCdpmF66HtHjwwTWgDw7z2sqW-TpcJxzc"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
+          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdGMc_7YIl4c5FNpFBN6WDg8c2d08oGZ8Q2CDD4ZwMCG3Q8eKVpchmu_C9vg"
+        }
+      ]
+    },
+    {
+      "query": "galatasaray - aston villa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T16:50:00Z",
+      "related_news_urls": [
+        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
+        "https://www.hurriyet.com.tr/sporarena/unai-emery-galatasaray-farkli-turkiyenin-en-iyi-takimi-43388478",
+        "https://www.ntvspor.net/futbol/galeri-ve-okan-buruk-osimheni-resmen-acikladi-tum-soru-isaretlerini-yok-etti-433481"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ",
+      "image_credit": "Sözcü Gazetesi",
+      "news": [
+        {
+          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
+          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
+          "publisher": "Sözcü Gazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
+        },
+        {
+          "url": "https://www.hurriyet.com.tr/sporarena/unai-emery-galatasaray-farkli-turkiyenin-en-iyi-takimi-43388478",
+          "title": "Unai Emery: 'Galatasaray farklı, Türkiye'nin en iyi takımı'",
+          "publisher": "Hürriyet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8FltHlDkqjTDL311-aIeT0y3hM1tj_S-uMnmJ8Rkp8Rav_SNEiVN_0Uhq1n0"
+        },
+        {
+          "url": "https://www.ntvspor.net/futbol/galeri-ve-okan-buruk-osimheni-resmen-acikladi-tum-soru-isaretlerini-yok-etti-433481",
+          "title": "Ve Okan Buruk, Osimhen'i resmen açıkladı! Tüm soru işaretlerini yok etti",
+          "publisher": "NTVSpor",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwZlfGloamJ4PSqkdbLb2IiyIWPJPis6_aqheP4VGHAJVmhLKjEqHZ_PClow"
+        }
+      ]
+    },
+    {
+      "query": "bioware",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T16:50:00Z",
+      "related_news_urls": [
+        "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
+        "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/",
+        "https://foro3d.com/en/2026/noviembre/jennifer-hale-propone-vender-mass-effect-a-un-colectivo-de-fans.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4",
+      "image_credit": "PC Gamer",
+      "news": [
+        {
+          "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
+          "title": "Dragon Age's former boss says that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4"
+        },
+        {
+          "url": "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/",
+          "title": "EA should sell the Mass Effect IP straight to the community, Shepard actor Jennifer Hale says: \"You cannot buy that kind of goodwill\"",
+          "publisher": "GamesRadar+",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSB3jKUohnZUJZYTJEoqm3mtOUPMwqw4tNnB71tqV07Ycg8gJkh9KMtxGUnN_4"
+        },
+        {
+          "url": "https://foro3d.com/en/2026/noviembre/jennifer-hale-propone-vender-mass-effect-a-un-colectivo-de-fans.html",
+          "title": "Jennifer Hale proposes selling Mass Effect to a fan collective",
+          "publisher": "Foro3D",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOw4TJ4Z75JeRXoHo0hYzENjITyKA8DNXcbgvBocy_XIMOqi_x0MkBxKeDKOQ"
+        }
+      ]
+    },
+    {
+      "query": "guy fieri",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T16:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
+        "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
+        "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4",
+      "image_credit": "NBC Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
+          "title": "Guy Fieri's favorite restaurant in America is in Chicago, ranking says",
+          "publisher": "NBC Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4"
+        },
+        {
+          "url": "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
+          "title": "Guy Fieri Shares Birthday Tribute for Late Father Jim, Who Died in 2024: ‘Miss Him Every Day’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4pLzJ1AZt9ADVOUn_WK1mKUtSuZK13funbamPV4j-b6ax2AW-RQiGuG6utX8"
+        },
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
+          "title": "Guy Fieri’s heartbreaking post has fans sending prayers: ‘He is looking down’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo"
+        }
+      ]
+    },
+    {
+      "query": "the view",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T16:50:00Z",
+      "related_news_urls": [
+        "https://www.fccincinnati.com/news/fc-cincinnati-to-honor-fiona-the-hippo-at-saturday-s-mls-cup-playoffs-game-2",
+        "https://www.espn.com/soccer/story/_/id/50581745/fiona-hippo-fc-cincinnati-tifo-death-honoured-mls",
+        "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDsoqh0S4ck2UM7Muik6y4u2gpZOkdJh_VQO4bDWxI5RsP51lImWgA6_0s380",
+      "image_credit": "FC Cincinnati",
+      "news": [
+        {
+          "url": "https://www.fccincinnati.com/news/fc-cincinnati-to-honor-fiona-the-hippo-at-saturday-s-mls-cup-playoffs-game-2",
+          "title": "FC Cincinnati to honor Fiona the hippo at Saturday’s MLS Cup Playoffs Game 2",
+          "publisher": "FC Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDsoqh0S4ck2UM7Muik6y4u2gpZOkdJh_VQO4bDWxI5RsP51lImWgA6_0s380"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50581745/fiona-hippo-fc-cincinnati-tifo-death-honoured-mls",
+          "title": "Fiona the hippo to be honored by FC Cincinnati with tifo after untimely death",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9m-JLI0KgRF7CoQMfHyLCMbcmAfxsvU9FxFVoL8Kkha8PAcZlFmfb6poa9l0"
+        },
+        {
+          "url": "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo",
+          "title": "Witness recounts what happened when hat landed in Fiona's Cincinnati Zoo habitat",
+          "publisher": "WCPO 9 Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhm708HUv7t3eqWmzhp0HZMldgZpbMJUm36JB3ZZdQCi-jbUyKLVeiA1uHtZc"
+        }
+      ]
+    },
+    {
+      "query": "microsoft code red",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T16:40:00Z",
       "related_news_urls": [
-        "https://www.seattletimes.com/business/microsoft/microsoft-explains-tech-failures-that-triggered-global-outage/",
+        "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
         "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
         "https://www.theregister.com/saas/2026/11/23/microsoft-mega-outage-report-reveals-testing-gaps-and-emails-that-never-arrived/5311656"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzw2XprWvHqoRlJHt_7l1BNCteduh6D8lyCYnH-c2y9_Q3BzpWhtD7RIOJasU",
-      "image_credit": "The Seattle Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZajGeZ3Q1CYfYVEduLKaYeKbO9xDgN9maUxWb2GCF2yo3Uk2Xxg0pAvrx3E",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://www.seattletimes.com/business/microsoft/microsoft-explains-tech-failures-that-triggered-global-outage/",
-          "title": "Microsoft explains tech failures that triggered global outage",
-          "publisher": "The Seattle Times",
+          "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
+          "title": "EXCLUSIVE: Microsoft declares 'Code Red' after historic outage, internal memos show",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzw2XprWvHqoRlJHt_7l1BNCteduh6D8lyCYnH-c2y9_Q3BzpWhtD7RIOJasU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZajGeZ3Q1CYfYVEduLKaYeKbO9xDgN9maUxWb2GCF2yo3Uk2Xxg0pAvrx3E"
         },
         {
           "url": "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
@@ -38,6 +283,41 @@
           "publisher": "The Register",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZIJfkuIYxM8v-dU5RG09rvnDrwpWFoPm0WCEmOL03UUqPmuvzfKulEPftfU"
+        }
+      ]
+    },
+    {
+      "query": "christie miller",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T16:20:00Z",
+      "related_news_urls": [
+        "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
+        "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
+        "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
+          "title": "Influencer, 60, Announces Her Own Death in Pre-Recorded Video, 4 Years After Stage 4 Breast Cancer Diagnosis",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg"
+        },
+        {
+          "url": "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
+          "title": "Influencer Christie Miller, 60, announces her own death in tragic video after four-year breast cancer battle",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0_W3epskQs_S2EZsL0SE1uYekvNLVrM9N2_bF1sd5M1FE8V9Q2di5uC9bZ8"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
+          "title": "Influencer Christie Miller Announces Her Own Death at 60 After Cancer Battle",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNhiYd_T7PNm6-Feh-0hTpAAIfR8rmiJjc9U4TOZ3LFSez_DaAwrhH6wIVA4"
         }
       ]
     },
@@ -73,286 +353,6 @@
           "publisher": "Josh At The Movies",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI7vNT-H3EEdfV8SCsbX_z98lrC5H0s90KfsfSRhlddmLwl0rXvrW0-2JdkHI"
-        }
-      ]
-    },
-    {
-      "query": "christie miller",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T16:20:00Z",
-      "related_news_urls": [
-        "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
-        "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
-        "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
-          "title": "Influencer, 60, Announces Her Own Death in Pre-Recorded Video, 4 Years After Stage 4 Breast Cancer Diagnosis",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
-          "title": "Influencer Christie Miller Announces Her Own Death at 60 After Cancer Battle",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNhiYd_T7PNm6-Feh-0hTpAAIfR8rmiJjc9U4TOZ3LFSez_DaAwrhH6wIVA4"
-        },
-        {
-          "url": "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
-          "title": "Influencer Christie Miller, 60, announces her own death in tragic video after four-year breast cancer battle",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0_W3epskQs_S2EZsL0SE1uYekvNLVrM9N2_bF1sd5M1FE8V9Q2di5uC9bZ8"
-        }
-      ]
-    },
-    {
-      "query": "playstation plus",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T16:20:00Z",
-      "related_news_urls": [
-        "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
-        "https://www.digitalfoundry.net/features/the-big-gta-6-console-comparison-ps5-vs-ps5-pro-xbox-series-x-and-series-s",
-        "https://www.pcmag.com/news/cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk",
-      "image_credit": "XBOX Wire",
-      "news": [
-        {
-          "url": "https://news.xbox.com/en-us/2026/11/23/grand-theft-auto-vi-xbox-cloud-and-remote-play/",
-          "title": "How to Play Grand Theft Auto VI in the Cloud and with Remote Play",
-          "publisher": "XBOX Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvJLazt_Gsd3aeWuXVyrWhlKRLr91217yAereMatpXKK7e8M1yddYhftApbAk"
-        },
-        {
-          "url": "https://www.digitalfoundry.net/features/the-big-gta-6-console-comparison-ps5-vs-ps5-pro-xbox-series-x-and-series-s",
-          "title": "The Big GTA 6 Console Comparison: PS5 vs PS5 Pro, Xbox Series X and Series S",
-          "publisher": "Digital Foundry",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFy8HCNr5nf9X333WJBZ1oKaptht3euJSrsZcPvOwg7rEmWQIJ3-2xMkrMSKE"
-        },
-        {
-          "url": "https://www.pcmag.com/news/cant-wait-to-live-stream-gta-6-this-trick-lets-you-play-it-on-your-pc-now",
-          "title": "Can't Wait to Live Stream GTA 6? This Trick Lets You Play It On Your PC Now",
-          "publisher": "PCMag",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmoZbZyTxKqtn9cKvt3zJcGua-tJxzKwvfgHy8sKug8RHHXezjWKEA8vyi0o"
-        }
-      ]
-    },
-    {
-      "query": "liv morgan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T16:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/hooters-the-movie-sets-cast-1237232108/",
-        "https://www.foxnews.com/outkick-sports/wwe-star-uniquely-suited-role-hooters-movie",
-        "https://www.yahoo.com/entertainment/movies/articles/wwe-liv-morgan-returns-old-112003038.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Q5cdzm-GERq64cn8YICNQNpX3-nK42TsPJIT6MfhmMbHvJD0DcNInBtfsV8",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/hooters-the-movie-sets-cast-1237232108/",
-          "title": "‘Hooters: The Movie’ Sets Owen Patrick Joyner, Kyle Clark & Audrey Trullinger",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3Q5cdzm-GERq64cn8YICNQNpX3-nK42TsPJIT6MfhmMbHvJD0DcNInBtfsV8"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/wwe-star-uniquely-suited-role-hooters-movie",
-          "title": "WWE star uniquely suited for role in 'Hooters: The Movie'",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFgOXJNsd-UHzgzqgxvDcYLtM-J6Gk9i74fjLwTJKOOgTWm_OFABxlJGtDpbs"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/wwe-liv-morgan-returns-old-112003038.html",
-          "title": "WWE’s Liv Morgan returns to old job in Hooters: The Movie",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSva__vQW8jFzvINyKKvTe3UvqkddPxxVYCB4-ALoeJlb3qZQjPi6qWgBqJ5PU"
-        }
-      ]
-    },
-    {
-      "query": "michael king",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T16:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-19",
-        "https://sports.yahoo.com/articles/mets-reportedly-interested-3-23-144250828.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-have-interest-in-jazz-chisholm-jr"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROW9vRyVMuKXUMGMSWXVw8NV-e2RFcQlW91lbMBfQTH__dYofGSS5-rHzkC2E",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/mlb-rumors-and-2026-27-free-agent-news-november-19",
-          "title": "Hot Stove Rumors: Lowe, Skubal, Cubs, Sato, Mariners, Mets, Bubic",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROW9vRyVMuKXUMGMSWXVw8NV-e2RFcQlW91lbMBfQTH__dYofGSS5-rHzkC2E"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mets-reportedly-interested-3-23-144250828.html",
-          "title": "Mets Reportedly Interested In 3.23 ERA Starting Pitcher After Signing Tarik Skubal",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnVhcCQBcaF0l1lnPjB6djVmBFRLkA5PgJwDfJtaabTNtMsVQ-GDn4Ev_WVRs"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-mets-have-interest-in-jazz-chisholm-jr",
-          "title": "Report: Mets have interest in Jazz Chisholm Jr.",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqk0N3aO_3rJtDjFGgsho320yZcubfOU7Is1-F9n8_GnsZK47KtdpbeXey2iw"
-        }
-      ]
-    },
-    {
-      "query": "ohio basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T16:00:00Z",
-      "related_news_urls": [
-        "https://ohiobobcats.com/news/2026/11/23/ohio-mens-basketball-set-to-take-on-new-mexico-state-rice-at-2026-scout-jacksonville-classic",
-        "https://www.accuscore.com/game/cmwtuybtn1k97qp018y6rx5fw",
-        "https://www.thepostathens.com/article/2026/11/ohio-mens-basketball-preview-jacksonville-classic"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTet7c0tOZPg8O53wAFFQi0ItqXFafE8mVaUEFh8gapCirACDXAoa2qtefcloE",
-      "image_credit": "ohiobobcats.com",
-      "news": [
-        {
-          "url": "https://ohiobobcats.com/news/2026/11/23/ohio-mens-basketball-set-to-take-on-new-mexico-state-rice-at-2026-scout-jacksonville-classic",
-          "title": "Ohio Men's Basketball Set to Take on New Mexico State, Rice at 2026 Scout Jacksonville Classic",
-          "publisher": "ohiobobcats.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTet7c0tOZPg8O53wAFFQi0ItqXFafE8mVaUEFh8gapCirACDXAoa2qtefcloE"
-        },
-        {
-          "url": "https://www.accuscore.com/game/cmwtuybtn1k97qp018y6rx5fw",
-          "title": "Ohio vs New Mexico State Prediction (Nov 24): Ohio 66% — Odds & Live Score",
-          "publisher": "AccuScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQj9nJFaOiYEIVJzx61TadctnldME58JRTctB_8USN63xKN0UVhXRrYDLYOFrQ"
-        },
-        {
-          "url": "https://www.thepostathens.com/article/2026/11/ohio-mens-basketball-preview-jacksonville-classic",
-          "title": "Men’s Basketball: Ohio set to face off in the Jacksonville Classic for the first time",
-          "publisher": "The Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIsiVUl6zH_My3JgcgWyX4Vtb5lx_-zLnF90BLw2jCgu3JGUaIFPv48k6aLko"
-        }
-      ]
-    },
-    {
-      "query": "aldi festive holiday merchandise release",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T16:00:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/aldi-bogg-bag-copycat-12267395",
-        "https://shopping.yahoo.com/style/accessories/articles/aldis-cute-15-haul-bags-182208834.html",
-        "https://www.homesandgardens.com/decor/seasonal/aldi-merry-moments-holiday-paper-trees"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh0ZH3Ilz-374NXTU0bNLSl2apmzKy82lNEhUs3b9N--mVAr2lhYX_z0xhbbk",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/aldi-bogg-bag-copycat-12267395",
-          "title": "Aldi’s New Holiday Copycat Looks Straight Out of a High-End Store",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTh0ZH3Ilz-374NXTU0bNLSl2apmzKy82lNEhUs3b9N--mVAr2lhYX_z0xhbbk"
-        },
-        {
-          "url": "https://shopping.yahoo.com/style/accessories/articles/aldis-cute-15-haul-bags-182208834.html",
-          "title": "Aldi's Cute New $15 'Haul It All' Bags Look Just Like a Designer Brand 4x the Price",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPOZ46an4LdrtKijOaGZBcOV5_PuGS766l0PVpwfesoD9MrpeNu_8OlMIHFpg"
-        },
-        {
-          "url": "https://www.homesandgardens.com/decor/seasonal/aldi-merry-moments-holiday-paper-trees",
-          "title": "ALDI Just Brought Back a Nostalgic Victorian Christmas Trend for Under $7 – and It’s Guaranteed to Sell Out Fast",
-          "publisher": "Homes and Gardens",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsPPtI4rtW4FzDzXqJD6RvYopiDXOw67Sz3aZnQAZ4Oh7ELYbD4a-ne9bcBN4"
-        }
-      ]
-    },
-    {
-      "query": "ai safety",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T15:50:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/legal/litigation/amazons-aws-ceo-says-engineering-not-kill-switches-is-path-ai-safety-2026-11-23/",
-        "https://www.pymnts.com/news/artificial-intelligence/2026/aws-ceo-matt-garman-says-ai-models-need-external-boundaries/",
-        "https://www.powermotiontech.com/technologies/artificial-intelligence/article/55417819/expert-commentary-an-ai-controlled-machine-needs-a-brake-outside-its-ai-brain"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4_ZHuoDbbf9jsGtau9Lq_ZlkcZV7wGUNXy500PTUat3GCMBMNGriLJpZ4oqk",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/legal/litigation/amazons-aws-ceo-says-engineering-not-kill-switches-is-path-ai-safety-2026-11-23/",
-          "title": "Amazon’s AWS CEO says engineering, not kill switches, is path to AI safety",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4_ZHuoDbbf9jsGtau9Lq_ZlkcZV7wGUNXy500PTUat3GCMBMNGriLJpZ4oqk"
-        },
-        {
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/aws-ceo-matt-garman-says-ai-models-need-external-boundaries/",
-          "title": "AWS CEO Matt Garman Says AI Models Need External Boundaries",
-          "publisher": "PYMNTS.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6EjrS6MezjiGvRsBayDg4NHiin1kZH3FZYs3JQGg2D4jaqlYt9If1vlRS4Kk"
-        },
-        {
-          "url": "https://www.powermotiontech.com/technologies/artificial-intelligence/article/55417819/expert-commentary-an-ai-controlled-machine-needs-a-brake-outside-its-ai-brain",
-          "title": "Expert Commentary: An AI-Controlled Machine Needs a Brake Outside its AI Brain",
-          "publisher": "www.powermotiontech.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLZH8_cDNGlIuXSzf6VAqubAVw0Gegk90bsvUZRrzwFvm4hLI4PUx1wu0C5kA"
-        }
-      ]
-    },
-    {
-      "query": "shabab alahli vs al qadsiah",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T15:50:00Z",
-      "related_news_urls": [
-        "https://www.voiceofemirates.com/en/sport/2026/11/24/todays-match-schedule-and-broadcast-channels-al-ahli-vs-al-qadisiyah-and-real-madrid-vs-psv-eindhoven/",
-        "https://www.thestatszone.com/shabab-al-ahli-vs-al-qadsiah-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240980",
-        "https://www.voiceofemirates.com/en/emirates/2026/11/24/shabab-al-ahli-seeks-to-regain-its-continental-footing-against-al-qadsia-in-the-afc-champions-league-elite/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3BW3p1Nyn-umbIRit5I-ZnRRecxwMTFwKF7ejUVW7vmwwneK0V2SiyPag9EM",
-      "image_credit": "صوت الإمارات",
-      "news": [
-        {
-          "url": "https://www.voiceofemirates.com/en/sport/2026/11/24/todays-match-schedule-and-broadcast-channels-al-ahli-vs-al-qadisiyah-and-real-madrid-vs-psv-eindhoven/",
-          "title": "Today's match schedule and broadcast channels: Al-Ahli vs Al-Qadisiyah and Real Madrid vs PSV Eindhoven",
-          "publisher": "صوت الإمارات",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3BW3p1Nyn-umbIRit5I-ZnRRecxwMTFwKF7ejUVW7vmwwneK0V2SiyPag9EM"
-        },
-        {
-          "url": "https://www.thestatszone.com/shabab-al-ahli-vs-al-qadsiah-preview-prediction-2026-27-afc-champions-league-elite-league-stage-240980",
-          "title": "Shabab Al Ahli vs Al Qadsiah Preview & Prediction | 2026-27 AFC Champions League Elite | League Stage",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXkjZLqWfHqjBIxSxZxyvzfEJ5RWi3geXZiUkXR_qkGxXzbaN9QmU__DsnIPo"
-        },
-        {
-          "url": "https://www.voiceofemirates.com/en/emirates/2026/11/24/shabab-al-ahli-seeks-to-regain-its-continental-footing-against-al-qadsia-in-the-afc-champions-league-elite/",
-          "title": "Shabab Al-Ahli seeks to regain its continental footing against Al-Qadsia in the AFC Champions League Elite",
-          "publisher": "صوت الإمارات",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpYvPWZ3opDM_2e8zlTk2R6IEBll7qfu5Xr8i1IeOQWPWAwElPmN6ACVGXZLM"
         }
       ]
     }
