@@ -3,9 +3,254 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T06:01:36.381667Z",
+  "checked_at": "2026-11-24T06:38:02.763976Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "seth rogen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T06:00:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438354/seth-rogen-says-dawsons-creek-cast-had-feud-tension-with-showrunners",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/seth-rogen-explains-why-hated-170000879.html",
+        "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438354/seth-rogen-says-dawsons-creek-cast-had-feud-tension-with-showrunners",
+          "title": "Seth Rogen Reveals “Very Bad Dynamic” on Dawson’s Creek During Guest Role",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/seth-rogen-explains-why-hated-170000879.html",
+          "title": "Seth Rogen explains why he ‘hated’ playing Bob on “Dawson’s Creek”: ‘There was a lot of resentment’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_PJF8n8x_7Ms8pWOCtFXGOsY9vNXt_T1MAwNrgMFKf14qCNA382bHMPVlLbY"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/",
+          "title": "Seth Rogen says starring in hit ’90s show was so bad he had a ‘nervous breakdown’",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxE_HeCjAjIuEMczaOeETBorvpD5fswlbYUgnxI0aki5tBV5D3Huai2pM4OqA"
+        }
+      ]
+    },
+    {
+      "query": "adam driver",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/creative-content/movies/adam-driver-steven-soderbergh-worked-for-free-ben-solo-star-wars-movie/",
+        "https://variety.com/2026/film/news/adam-driver-never-paid-hunt-for-ben-solo-development-star-wars-1236955936/",
+        "https://screenrant.com/star-wars-the-hunt-for-ben-solo-adam-driver-character-fate-revealed/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBeHc_K36p-1q6PQMq83y2oy5hf6j1CI-D7ShyCnALzPRXUgr1pbiBYX0xhA",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/movies/adam-driver-steven-soderbergh-worked-for-free-ben-solo-star-wars-movie/",
+          "title": "Adam Driver and Steven Soderbergh Worked for Free on Scrapped 'Star Wars' Ben Solo Movie",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBeHc_K36p-1q6PQMq83y2oy5hf6j1CI-D7ShyCnALzPRXUgr1pbiBYX0xhA"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/adam-driver-never-paid-hunt-for-ben-solo-development-star-wars-1236955936/",
+          "title": "Adam Driver: ‘No One Was Paying Us’ to Develop ‘The Hunt for Ben Solo’ and ‘Star Wars’ Boss Said ‘We Have a 100% Approval’ to Make It, Then Disney Killed It",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6nix4eYz6z6iiDxrkmG0qaWT95F9i8SPm4CaLL-6-aAQnplzdDzHDYw7yCt0"
+        },
+        {
+          "url": "https://screenrant.com/star-wars-the-hunt-for-ben-solo-adam-driver-character-fate-revealed/",
+          "title": "Major Star Wars Character’s Fate Revealed Amid Cancellation Controversy",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNQHVc3HYwobecKhom0IeNwn7GObEd6RSCKX67osPLf_A1Q8ZA6HpAM8Lfvo"
+        }
+      ]
+    },
+    {
+      "query": "ucl",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.uefa.com/uefachampionsleague/news/02ab-2219497a67d6-4ad6623df0a1-1000--champions-league-matchday-5-key-stats-and-what-to-look-o/",
+        "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
+        "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMz2A746cY5M0OwViYVf64wTqcNw6xtOSzmnCMOXDCVqP_-tczHq_V9AsRA",
+      "image_credit": "UEFA.com",
+      "news": [
+        {
+          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-2219497a67d6-4ad6623df0a1-1000--champions-league-matchday-5-key-stats-and-what-to-look-o/",
+          "title": "Champions League Matchday 5: Key stats and what to look out for in every game",
+          "publisher": "UEFA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMz2A746cY5M0OwViYVf64wTqcNw6xtOSzmnCMOXDCVqP_-tczHq_V9AsRA"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
+          "title": "UEFA Champions League Matchday 5 Predictions Including Roma vs PSG",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyLP9CpROM-kUkh0AJR5CcYLpkCX3jfao1SYakvw62qxxBua4V6UKwqDW9CXw"
+        },
+        {
+          "url": "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city",
+          "title": "Champions League Predictions 11/24: Perfect Real Madrid in Action, Man City Seek Response",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kD6veGoy_2wnsKYoJmDijFghCSDJTecBmvJHnG_oRTd9OV4JHz0yy5hdnp8"
+        }
+      ]
+    },
+    {
+      "query": "lakers standings",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
+        "https://abc7.com/tag/all-star-format/",
+        "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
+          "title": "Too-early NBA All-Star picks: The 24 most deserving players right now",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
+        },
+        {
+          "url": "https://abc7.com/tag/all-star-format/",
+          "title": "All Star Format",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html",
+          "title": "And-Ones: Early All-Stars, Neto, Nunnally, Perry",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEdtqaPquIeaanfoef5PFF18CEIh_dvT-6g8Xmn3E1UhKA-YWmk-7pgjhfkGE"
+        }
+      ]
+    },
+    {
+      "query": "singapore",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
+        "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
+        "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYNS6iJVpkcXCSARMeGy6eroF9P2NmNIIQGxhSKNCdL8jR-rOhvU8S91aK-wI",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
+          "title": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYNS6iJVpkcXCSARMeGy6eroF9P2NmNIIQGxhSKNCdL8jR-rOhvU8S91aK-wI"
+        },
+        {
+          "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
+          "title": "US adds Megaspeed to trade blacklist as Nvidia’s Huang returns as CEO",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp_OSDB1dTt6pi-W042rK1n_BLMkQpP2olzAdazcTnx-8v5g6YlvgeLx4DdhE"
+        },
+        {
+          "url": "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/",
+          "title": "US blacklists Alibaba subsidiary and Megaspeed linked to Nvidia scandal",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo38j9UMNrxD-o8DxQaKv4LJBdd8iBgswnQf-mK9L86TCnk0BHHRy9BoD6DtQ"
+        }
+      ]
+    },
+    {
+      "query": "vespucci island gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
+        "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+        "https://beebom.com/gta-6-doms-charger-location/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
+          "title": "Where to Find Paul Walker’s 1995 Mitsubishi Eclipse in GTA 6",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM"
+        },
+        {
+          "url": "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
+          "title": "Where To Find The Paul Walker 'Fast And Furious' Tribute Car In GTA 6",
+          "publisher": "Jalopnik",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbmWQD2Q_uY_E2qC0vkQ_YNl9iCmdn6ss1nSP97gYiLlE3178NZELPUar1ayU"
+        },
+        {
+          "url": "https://beebom.com/gta-6-doms-charger-location/",
+          "title": "How to Find Dom Toretto’s Charger in GTA 6 (Location Guide)",
+          "publisher": "Beebom",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8KHi1xilhXZ6rdCgB44T3NFbHPtKSMo1fniKAcBR1GXiXtTv3UlpofeHTdqw"
+        }
+      ]
+    },
+    {
+      "query": "nosedive",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T05:40:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
+        "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
+        "https://www.kcbd.com/2026/11/21/one-more-beautiful-warm-day-before-much-chillier-trend-takes-over-thanksgiving-week/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS3U6TqEjXe0p-rjwVrkegAG24VCZUNqomUJnKypD7-1R0dsONFvJkvzzSeQ8",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
+          "title": "Cold snap looms as temperatures take a nosedive for more than 200 million Americans ahead of Thanksgiving",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS3U6TqEjXe0p-rjwVrkegAG24VCZUNqomUJnKypD7-1R0dsONFvJkvzzSeQ8"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
+          "title": "Tracking widespread showers before a chilly Thanksgiving",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBZo14P7w7vAPmyJEg5pY08gizqCfVQhrgDtN_cj9oYyYb2OHmVlaOs6C0EA"
+        },
+        {
+          "url": "https://www.kcbd.com/2026/11/21/one-more-beautiful-warm-day-before-much-chillier-trend-takes-over-thanksgiving-week/",
+          "title": "Overnight cold front ushers in a chilly forecast for Sunday, Thanksgiving week",
+          "publisher": "KCBD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXd8ZHGfrn-pOHPRjwP4Ud30yGcZ1-E_N8x0IQZLwgE_7zBoBoDwr3GpokZgA"
+        }
+      ]
+    },
     {
       "query": "collin sexton",
       "approx_searches": "500+",
@@ -38,41 +283,6 @@
           "publisher": "TalkBasket.net",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjjciTPbks2X7onclSzylnryekeDihmAMwzO29UFxjsTSHsfRGX4_ATID5ABw"
-        }
-      ]
-    },
-    {
-      "query": "nosedive",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:40:00Z",
-      "related_news_urls": [
-        "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
-        "https://www.wdsu.com/article/louisiana-weather-forecast-rain-clouds-storms-thanksgiving-friday-cold/74502384",
-        "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBZo14P7w7vAPmyJEg5pY08gizqCfVQhrgDtN_cj9oYyYb2OHmVlaOs6C0EA",
-      "image_credit": "WAFB",
-      "news": [
-        {
-          "url": "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
-          "title": "Tracking widespread showers before a chilly Thanksgiving",
-          "publisher": "WAFB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBZo14P7w7vAPmyJEg5pY08gizqCfVQhrgDtN_cj9oYyYb2OHmVlaOs6C0EA"
-        },
-        {
-          "url": "https://www.wdsu.com/article/louisiana-weather-forecast-rain-clouds-storms-thanksgiving-friday-cold/74502384",
-          "title": "Rain and clouds to start the week, arctic plunge for Louisiana's weather forecast for Thanksgiving",
-          "publisher": "WDSU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqR6fGLuLgck8EisfqZc11jK7j8udx7i6nFbWmMjEvp-onBsqQD8SuOqDG--s"
-        },
-        {
-          "url": "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
-          "title": "Cold snap looms as temperatures take a nosedive for more than 200 million Americans ahead of Thanksgiving",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS3U6TqEjXe0p-rjwVrkegAG24VCZUNqomUJnKypD7-1R0dsONFvJkvzzSeQ8"
         }
       ]
     },
@@ -112,41 +322,6 @@
       ]
     },
     {
-      "query": "walker kessler",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/one-walker-kessler-greatest-skills-002235852.html",
-        "https://lakersnation.com/walker-kessler-reveals-his-immediate-reaction-to-being-traded-to-lakers/",
-        "https://nypost.com/2026/11/19/sports/lakers-star-gets-honest-on-public-scrutiny-weighing-nba-players-down/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzx-d9zCUHu8aYidtsCBNZPa3o1aGRdnGEHf7ys_SHuOifyWtxfPlPpKkJV0g",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/one-walker-kessler-greatest-skills-002235852.html",
-          "title": "One of Walker Kessler’s greatest skills? Helping the Lakers’ build chemistry",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzx-d9zCUHu8aYidtsCBNZPa3o1aGRdnGEHf7ys_SHuOifyWtxfPlPpKkJV0g"
-        },
-        {
-          "url": "https://lakersnation.com/walker-kessler-reveals-his-immediate-reaction-to-being-traded-to-lakers/",
-          "title": "Walker Kessler Reveals His Immediate Reaction To Being Traded To Lakers",
-          "publisher": "Lakers Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ25wJccDUoqxX5Ccl-tDZb-lUMk_phohL8EWeZD_PiZemqSVn25yCNbfBKdiI"
-        },
-        {
-          "url": "https://nypost.com/2026/11/19/sports/lakers-star-gets-honest-on-public-scrutiny-weighing-nba-players-down/",
-          "title": "Lakers star gets honest on public scrutiny weighing NBA players down",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIHy2umxFqSwSBWnZV0GMHe-3W6G8h_Xixlw2emgwd173MvvuCzAR-JJDlvsU"
-        }
-      ]
-    },
-    {
       "query": "criminal profile gta 6",
       "approx_searches": "500+",
       "published_at": "2026-11-24T05:30:00Z",
@@ -178,181 +353,6 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq7ehWendwqylRThKsA7w8mSMAKk6OiqwNc1lUeYzcMTz3u5n6jSWUCzABG2c"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 chapter 2 mission list",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:30:00Z",
-      "related_news_urls": [
-        "https://www.gamespot.com/articles/gta-6-dont-finish-chapter-2-before-doing-these-things/",
-        "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
-        "https://www.mmoexp.com/News/gta-6-chapter-2-guide-15-000-goal-missable-collectibles-and-tips.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ87fLjNrAsNlFtGkP9WBchxN1dYcUt5oWRqpY695rfRvCSthWRPpla70ZCsZo",
-      "image_credit": "GameSpot",
-      "news": [
-        {
-          "url": "https://www.gamespot.com/articles/gta-6-dont-finish-chapter-2-before-doing-these-things/",
-          "title": "GTA 6: Don’t Finish Chapter 2 Before Doing These Things",
-          "publisher": "GameSpot",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ87fLjNrAsNlFtGkP9WBchxN1dYcUt5oWRqpY695rfRvCSthWRPpla70ZCsZo"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
-          "title": "How Long Is Chapter 2 in GTA 6? All Missables and Mission List",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfa4x4lE5BSjIx_nroZlYhkGCHr0Mr5ROv81qkxH4_h0VLzofYfb2n9w10Y8"
-        },
-        {
-          "url": "https://www.mmoexp.com/News/gta-6-chapter-2-guide-15-000-goal-missable-collectibles-and-tips.html",
-          "title": "GTA 6 Chapter 2 Guide: $15,000 Goal, Missable Collectibles and Tips",
-          "publisher": "MMOEXP",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJc8oirMEqPsHPWXU1-F5mCgRKXL0Y5BxNHdbw3U4MEIyp0W0bQQalahrEErI"
-        }
-      ]
-    },
-    {
-      "query": "paul walker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:30:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-        "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
-        "https://www.techeblog.com/how-to-find-paul-walker-eclipse-grand-theft-auto-6/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-          "title": "Where to Find Paul Walker’s 1995 Mitsubishi Eclipse in GTA 6",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM"
-        },
-        {
-          "url": "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
-          "title": "Where To Find The Paul Walker 'Fast And Furious' Tribute Car In GTA 6",
-          "publisher": "Jalopnik",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbmWQD2Q_uY_E2qC0vkQ_YNl9iCmdn6ss1nSP97gYiLlE3178NZELPUar1ayU"
-        },
-        {
-          "url": "https://www.techeblog.com/how-to-find-paul-walker-eclipse-grand-theft-auto-6/",
-          "title": "Players Discover Paul Walker’s Iconic Eclipse Hidden in a Grand Theft Auto 6 Garage",
-          "publisher": "TechEBlog -",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlLKMcWHvpfdwlShhDJ8AvaAiNq1QqPifGASf21LqMTZGybFSzd1udZzdMOGs"
-        }
-      ]
-    },
-    {
-      "query": "ind-a vs uae",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:20:00Z",
-      "related_news_urls": [
-        "https://timesofindia.indiatimes.com/sports/cricket/news/lost-to-pakistan-now-what-how-tilak-varma-led-india-a-can-reach-asia-cup-rising-stars-semi-finals-qualification-scenarios/articleshow/136088275.cms",
-        "https://www.rediff.com/cricket/report/asia-cup-rising-stars-india-as-crucial-uae-clash-for-semifinals/20261123.htm",
-        "https://www.cricketworld.com/match-predictions-acc-mens-asia-cup-rising-stars-2026-11th-12th-match-india-a-vs-uae-pakistan-a-vs-nepal-november-24th/114500.htm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6X8cbNeKu-FLlZHluj3V-qixNB45WYxqoCYQQEsLMPyG7hPW8il6ajh2jZ0w",
-      "image_credit": "The Times of India",
-      "news": [
-        {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/news/lost-to-pakistan-now-what-how-tilak-varma-led-india-a-can-reach-asia-cup-rising-stars-semi-finals-qualification-scenarios/articleshow/136088275.cms",
-          "title": "Lost to Pakistan, now what? How Tilak Varma-led India A can reach Asia Cup Rising Stars semi-finals | Qua",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6X8cbNeKu-FLlZHluj3V-qixNB45WYxqoCYQQEsLMPyG7hPW8il6ajh2jZ0w"
-        },
-        {
-          "url": "https://www.rediff.com/cricket/report/asia-cup-rising-stars-india-as-crucial-uae-clash-for-semifinals/20261123.htm",
-          "title": "India A seek redemption against UAE after bowling letdown against Pakistan",
-          "publisher": "Rediff.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAB6yOLO0vaEWaeFG0y_UNbVwf_x8n8x-ByoF38faUiI9bnElFxkxVJ8wEYNQ"
-        },
-        {
-          "url": "https://www.cricketworld.com/match-predictions-acc-mens-asia-cup-rising-stars-2026-11th-12th-match-india-a-vs-uae-pakistan-a-vs-nepal-november-24th/114500.htm",
-          "title": "ACC Men's Asia Cup Rising Stars 2026 match predictions: India A vs UAE and Pakistan A vs Nepal – November 24",
-          "publisher": "Cricket World",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_haUT_IdXxV016_E5V4uFCJaxhBUUmZ18GTaVujwryXF6ALDTc8O7lZQ6zHA"
-        }
-      ]
-    },
-    {
-      "query": "anthony mackie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:20:00Z",
-      "related_news_urls": [
-        "https://www.cinemablend.com/movies/anthony-mackie-ranked-mcu-screen-partners-threw-shade-sebastian-stan",
-        "https://www.yahoo.com/news/videos/anthony-mackie-picks-between-marvel-033116713.html",
-        "https://screenrant.com/scarlet-witchs-mcu-return-officially-addressed-by-avengers-doomsday-star/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4ytNMRgio57crUVml9eRntMK18ip3qJTk92GQlk4aVd-3ctj_poI0diBd1fg",
-      "image_credit": "Cinemablend",
-      "news": [
-        {
-          "url": "https://www.cinemablend.com/movies/anthony-mackie-ranked-mcu-screen-partners-threw-shade-sebastian-stan",
-          "title": "Anthony Mackie Ranked His MCU Screen Partners (And Shots Fired At Sebastian Stan)",
-          "publisher": "Cinemablend",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4ytNMRgio57crUVml9eRntMK18ip3qJTk92GQlk4aVd-3ctj_poI0diBd1fg"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/anthony-mackie-picks-between-marvel-033116713.html",
-          "title": "Anthony Mackie Picks Between His Marvel Co-Stars",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpbIjQg3Mnea2yLmnJWbzew6cveGX7BKm-gfQZTE7SJYco_EkvuQjV5hTWpCM"
-        },
-        {
-          "url": "https://screenrant.com/scarlet-witchs-mcu-return-officially-addressed-by-avengers-doomsday-star/",
-          "title": "Scarlet Witch's MCU Return Officially Addressed By Avengers: Doomsday Star",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlrp6solNAHZoPbPHs6bdaGyPdYgyj00Ir4-1gmnxZc-ItDr6HPnZLSqfiW-o"
-        }
-      ]
-    },
-    {
-      "query": "dubious provenance gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:20:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
-        "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
-          "title": "GTA 6 Trust Halifax or Not? All Outcomes and Missable Rewards",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
-          "title": "Should you kill or spare Benedict Halifax in GTA 6?",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
-          "title": "Should you give the statue to Benedict Halifax in GTA 6?",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs"
         }
       ]
     }
