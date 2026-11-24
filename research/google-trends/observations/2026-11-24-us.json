@@ -3,12 +3,171 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T18:01:20.462301Z",
+  "checked_at": "2026-11-24T18:31:26.007283Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "victoria broderick",
+      "query": "trinity rodman",
       "approx_searches": "1000+",
+      "published_at": "2026-11-24T18:10:00Z",
+      "related_news_urls": [
+        "https://www.dailymail.com/sport/tennis/article-16318175/ben-shelton-trinity-rodman-split.html",
+        "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
+        "https://extratv.com/2026/11/24/ben-shelton-and-trinity-rodman-split-report/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2of_gMUgTElepwo8DFlBt6MBOgD9_dnfhX-8OR47T3Q6FRp-cJovO49ahmOM",
+      "image_credit": "Daily Mail",
+      "news": [
+        {
+          "url": "https://www.dailymail.com/sport/tennis/article-16318175/ben-shelton-trinity-rodman-split.html",
+          "title": "Ben Shelton and Trinity Rodman SPLIT: Sports' biggest power couple call time on romance after two years",
+          "publisher": "Daily Mail",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2of_gMUgTElepwo8DFlBt6MBOgD9_dnfhX-8OR47T3Q6FRp-cJovO49ahmOM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537294-trinity-rodman-ben-shelton-reportedly-split-after-dating-nearly-2-years",
+          "title": "Trinity Rodman, Ben Shelton Reportedly Split After Dating for Nearly 2 Years",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7O8SqHFUOADMrL_ASnLO3AI_WBcsYcZ88D-lKXfAdmz8OXArxuLglXBunNso"
+        },
+        {
+          "url": "https://extratv.com/2026/11/24/ben-shelton-and-trinity-rodman-split-report/",
+          "title": "Tennis Pro Ben Shelton & Soccer Star Trinity Rodman Split (Report)",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyxs9tPDs7mzuodQUMrIjKbpWVeIfbSljgfbDwzEiq0t9aJyhq9kPjfcBbgyo"
+        }
+      ]
+    },
+    {
+      "query": "ha seong kim",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T18:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/braves-gold-glover-mauricio-dubon-120000728.html",
+        "https://fansided.com/mlb/mlb-insider-free-agent-mauricio-dubon-still-drawing-rave-reviews-from-former-manager",
+        "https://housethathankbuilt.com/previous-lockout-showed-braves-move-with-urgency-re-sign-mauricio-dubon"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpaGNGMH-bcHFWd2Rt_vMFQ8opjpNnitaVezwNHmsf4HWwwGPOpYJaarmkgo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/braves-gold-glover-mauricio-dubon-120000728.html",
+          "title": "Braves Gold Glover Mauricio Dubon Praised By Former Skipper After Exit",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlpaGNGMH-bcHFWd2Rt_vMFQ8opjpNnitaVezwNHmsf4HWwwGPOpYJaarmkgo"
+        },
+        {
+          "url": "https://fansided.com/mlb/mlb-insider-free-agent-mauricio-dubon-still-drawing-rave-reviews-from-former-manager",
+          "title": "MLB Insider: Free agent Mauricio Dubon still drawing rave reviews from former manager",
+          "publisher": "FanSided",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcH_Uf-6DPDNKUmYI4P1mYkOd56HIWXbenSgIlEo-Ew1QaVnJRvIai59fnyXg"
+        },
+        {
+          "url": "https://housethathankbuilt.com/previous-lockout-showed-braves-move-with-urgency-re-sign-mauricio-dubon",
+          "title": "Previous lockout showed Braves must move with urgency to re-sign Mauricio Dubon",
+          "publisher": "House That Hank Built",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWOwE51Hkw0cyFPeiCvsLxlgkrNtFd54qpJeDSzlggC0jZw66mRSFpSoXEvaA"
+        }
+      ]
+    },
+    {
+      "query": "mitch mcconnell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:50:00Z",
+      "related_news_urls": [
+        "https://www.semafor.com/article/11/23/2026/mcconnell-may-block-former-rivals-year-end-ambassadorial-confirmation",
+        "https://www.courier-journal.com/story/news/politics/mitch-mcconnell/2026/11/23/mitch-mcconnell-nate-morris-ambassador-confirmation/92932898007/",
+        "https://www.the-independent.com/news/world/americas/us-politics/mitch-mcconnell-trump-ambassador-nominee-b3090627.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNe5qeKdYfwp2V-jG5DoePBbCEr3QQpRW4wFIIKlNupUNqArX_S0lqrc2e3IM",
+      "image_credit": "Semafor",
+      "news": [
+        {
+          "url": "https://www.semafor.com/article/11/23/2026/mcconnell-may-block-former-rivals-year-end-ambassadorial-confirmation",
+          "title": "McConnell may block his conservative critic’s year-end ambassadorial confirmation",
+          "publisher": "Semafor",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNe5qeKdYfwp2V-jG5DoePBbCEr3QQpRW4wFIIKlNupUNqArX_S0lqrc2e3IM"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/news/politics/mitch-mcconnell/2026/11/23/mitch-mcconnell-nate-morris-ambassador-confirmation/92932898007/",
+          "title": "Could Mitch McConnell block ex-Senate candidate's ambassadorship?",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoX9m1sq9yEAYmXsbzllSTD3gcyDBjH_vFIuZ1eFHWwQi4kiyLI6rE4qiq3dQ"
+        },
+        {
+          "url": "https://www.the-independent.com/news/world/americas/us-politics/mitch-mcconnell-trump-ambassador-nominee-b3090627.html",
+          "title": "Mitch McConnell takes a parting shot at Trump as he heads into retirement",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcWrXqyKL3eLmMCIqgWAP_DOEiqC6qzmE5p3D-kyFaqpYl2yjudKVgigQh4UA"
+        }
+      ]
+    },
+    {
+      "query": "jalen hurts",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:50:00Z",
+      "related_news_urls": [
+        "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
+        "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-update-super-bowl-mvp-qb-team-facility-good-spirits/",
+        "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/22/jalen-hurts-injury-update-eagles/92912332007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA",
+      "image_credit": "WHYY",
+      "news": [
+        {
+          "url": "https://whyy.org/articles/delaware-sen-lisa-blunt-rochester-nfl-jalen-hurts-blood-clots/",
+          "title": "NFL tells Delaware U.S. senator that experts will review Philly QB Jalen Hurts’ care for blood clots",
+          "publisher": "WHYY",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTGaAbkgNoRaQpzSp1kGfxBM-GiecB7jtrXzoGwN2wx3KusP2xptktm6CAFgA"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/eagles-jalen-hurts-update-super-bowl-mvp-qb-team-facility-good-spirits/",
+          "title": "Eagles' Jalen Hurts update: Super Bowl MVP QB has been in team facility, 'in good spirits'",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMivrKUjpY4l9pIXTJOzJ3qBkEiadlN2kOTCdm1eDlwXT1zFtlwk3V7mL7Ehg"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/eagles/2026/11/22/jalen-hurts-injury-update-eagles/92912332007/",
+          "title": "How long is Jalen Hurts out? Injury update as Eagles QB recovers from blood clots",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQl6_Cxl3V2IFbcGRbVhnAvOj5P-u_BS37JEvS0qf8TG42607TJo0pwoigOJLc"
+        }
+      ]
+    },
+    {
+      "query": "natalie portman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T17:50:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/natalie-portman-oprah-winter-loungewear-12274768"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDM2IUPN14mSWXW8B18xT2pPZTGK9G1zkwu6VTW3y_0j2tDwfP9L8EOfKy44",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/natalie-portman-oprah-winter-loungewear-12274768",
+          "title": "Oprah and Natalie Portman Saved My Chilly Morning Walks—Shop Cozy, Elevated Finds They’d Totally Wear",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrDM2IUPN14mSWXW8B18xT2pPZTGK9G1zkwu6VTW3y_0j2tDwfP9L8EOfKy44"
+        }
+      ]
+    },
+    {
+      "query": "victoria broderick",
+      "approx_searches": "2000+",
       "published_at": "2026-11-24T17:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
@@ -43,12 +202,12 @@
     },
     {
       "query": "donte divincenzo",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T17:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
-        "https://sports.yahoo.com/articles/minnesota-timberwolves-donte-divincenzo-172458014.html",
-        "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/"
+        "https://sports.yahoo.com/articles/minnesota-timberwolves-guard-donte-divincenzo-174358919.html",
+        "https://bleacherreport.com/articles/25537296-donte-divincenzo-injury-update-latest-nba-rumors-reveal-timeline-return-t-wolves-guard"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo",
       "image_credit": "ESPN",
@@ -61,18 +220,53 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo"
         },
         {
-          "url": "https://sports.yahoo.com/articles/minnesota-timberwolves-donte-divincenzo-172458014.html",
-          "title": "Minnesota Timberwolves say Donte DiVincenzo (right …",
+          "url": "https://sports.yahoo.com/articles/minnesota-timberwolves-guard-donte-divincenzo-174358919.html",
+          "title": "Minnesota Timberwolves guard Donte DiVincenzo is …",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1nZG2viM7GDuG2SjXOEQ9rtQSGGKfpblKOKwwqIOsN8B_xmfdV2YQeGbnCKg"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
-          "title": "Donte DiVincenzo eyes January return from torn Achilles after being cleared to practice: Sources",
-          "publisher": "The New York Times",
+          "url": "https://bleacherreport.com/articles/25537296-donte-divincenzo-injury-update-latest-nba-rumors-reveal-timeline-return-t-wolves-guard",
+          "title": "Donte DiVincenzo Injury Update, Latest NBA Rumors Reveal Timeline to Return for T-Wolves Guard",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPagWWVnmr4FL23CdaEkfAaDwQPrvJ6XM81CW13dEEya1gC52Fosx4k2wL5JE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSAZBrvoYXkcSYdpkP-U915xxFs3fvQSitZL240bc83O_USM8GGM6ETU7qPHo"
+        }
+      ]
+    },
+    {
+      "query": "northern colorado basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T17:40:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/southeastern-louisiana-lions-vs-northern-colorado-bears-prediction-odds-2026-11-24/",
+        "https://lionsports.net/news/2026/11/23/mens-basketball-lions-set-to-face-northern-colorado-in-opening-round-of-cancun-challenge.aspx",
+        "https://knup.com/sports/cbb/predictions/northern-colorado-vs-southeastern-louisiana-prediction-betting-tips-11-24-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/southeastern-louisiana-lions-vs-northern-colorado-bears-prediction-odds-2026-11-24/",
+          "title": "Southeastern Louisiana vs Northern Colorado Prediction, Picks & Odds | 24 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
+        },
+        {
+          "url": "https://lionsports.net/news/2026/11/23/mens-basketball-lions-set-to-face-northern-colorado-in-opening-round-of-cancun-challenge.aspx",
+          "title": "Lions Set to Face Northern Colorado in Opening Round of Cancun Challenge",
+          "publisher": "Southeastern Louisiana University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQaQl8TunK_tHTzS0PCoICTyHPt5rw_TEDiu62sJafvLR_zfViAlFjfFlfXoU"
+        },
+        {
+          "url": "https://knup.com/sports/cbb/predictions/northern-colorado-vs-southeastern-louisiana-prediction-betting-tips-11-24-2026/",
+          "title": "Northern Colorado vs Southeastern Louisiana Prediction on 11/24/2026 - CBB Betting Tips & Pick",
+          "publisher": "Knup.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
         }
       ]
     },
@@ -81,19 +275,26 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-24T17:30:00Z",
       "related_news_urls": [
-        "https://www.fubo.tv/news/ncaam/belmont-vs-akron-where-to-watch-stream-info-tv-channel-and-live-updates-november-24-2026/",
-        "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/",
-        "https://knup.com/sports/cbb/predictions/akron-vs-belmont-prediction-betting-tips-11-24-2026/"
+        "https://www.sportsgambler.com/betting-tips/basketball/belmont-bruins-vs-akron-zips-prediction-odds-2026-11-24/",
+        "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+        "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ankUHb91TV8elC5syPRacM3ppcnjTNGo1026sfN2iIGmsW59t5kisCXH8S8",
-      "image_credit": "Fubo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.fubo.tv/news/ncaam/belmont-vs-akron-where-to-watch-stream-info-tv-channel-and-live-updates-november-24-2026/",
-          "title": "Belmont vs Akron - Where to Watch, Stream Info, TV Channel, and Live Updates (November 24, 2026)",
-          "publisher": "Fubo",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/belmont-bruins-vs-akron-zips-prediction-odds-2026-11-24/",
+          "title": "Belmont vs Akron Prediction, Picks & Odds | 24 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ankUHb91TV8elC5syPRacM3ppcnjTNGo1026sfN2iIGmsW59t5kisCXH8S8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 24",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
         },
         {
           "url": "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/",
@@ -101,35 +302,21 @@
           "publisher": "BVM Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCd2tnGkeRH1VM_6_lPo1oNJk8yGBeuvZ69__TEdRgEUOo8z5GDDqqd6m4bs"
-        },
-        {
-          "url": "https://knup.com/sports/cbb/predictions/akron-vs-belmont-prediction-betting-tips-11-24-2026/",
-          "title": "Akron vs Belmont Prediction on 11/24/2026 - CBB Betting Tips & Pick",
-          "publisher": "Knup.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
         }
       ]
     },
     {
       "query": "belmont basketball",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T17:30:00Z",
       "related_news_urls": [
-        "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
         "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
+        "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
         "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E",
-      "image_credit": "BVM Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38fV41CkVxk9tTP7YdFJ2kAUk4qJDNVPAjhOKGTYysxCuAhLzm-Ms4RdgDYc",
+      "image_credit": "Belmont Bruins",
       "news": [
-        {
-          "url": "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
-          "title": "LSU’s Kim Mulkey, Mikaylah Williams and ZaKiyah Johnson after 103-45 rout of Belmont",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E"
-        },
         {
           "url": "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
           "title": "Kenley McCarn Scores Season-High 25 in Loss at Top-10 Ranked LSU Monday Night",
@@ -138,221 +325,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38fV41CkVxk9tTP7YdFJ2kAUk4qJDNVPAjhOKGTYysxCuAhLzm-Ms4RdgDYc"
         },
         {
+          "url": "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
+          "title": "LSU’s Kim Mulkey, Mikaylah Williams and ZaKiyah Johnson after 103-45 rout of Belmont",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E"
+        },
+        {
           "url": "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ",
           "title": "Licensable picture: 11 ZaKiyah Johnson, LSU Tigers Womens Basketball take on the Belmont Bruins. November 23, 2026; Baton Rouge, LA; at the Pete",
           "publisher": "Reuters Connect",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRZKT9-xaykkqHyDORbJHqWG8y2o00k40uFRm9-H_Hu7GkKpFtIfXEj96VSLM"
-        }
-      ]
-    },
-    {
-      "query": "al-nassr vs al sadd",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T17:20:00Z",
-      "related_news_urls": [
-        "https://www.goal.com/en/news/al-nassr-handed-gifts-by-al-sadd-five-absences-hit-the-qatari-side/bltbe8bd5dac117f3d0",
-        "https://www.yardbarker.com/soccer/articles/africas_champion_returns_sadio_mane_leads_al_nassr_in_asian_showdown_with_al_sadd/s1_17790_44612232",
-        "https://www.thechronicle.com.au/sport/ronaldo-trains-as-al-nassr-prepare-to-host-al-sadd/video/55c189e0de79a792cedea2051e6541c3"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWCbMnhM95rhvgZ8nChFA48zo1p8SqUknb5PFMxaEbvotDEavGyj00DVmWcFM",
-      "image_credit": "Goal.com",
-      "news": [
-        {
-          "url": "https://www.goal.com/en/news/al-nassr-handed-gifts-by-al-sadd-five-absences-hit-the-qatari-side/bltbe8bd5dac117f3d0",
-          "title": "Al-Nassr handed gifts by Al-Sadd: five absences hit the Qatari side",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWCbMnhM95rhvgZ8nChFA48zo1p8SqUknb5PFMxaEbvotDEavGyj00DVmWcFM"
-        },
-        {
-          "url": "https://www.yardbarker.com/soccer/articles/africas_champion_returns_sadio_mane_leads_al_nassr_in_asian_showdown_with_al_sadd/s1_17790_44612232",
-          "title": "Africa's champion returns: Sadio Mane leads Al-Nassr in Asian showdown with Al-Sadd",
-          "publisher": "Yardbarker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7ahRvnl7dqc1FUkRn5M8hsZ5-O35oPLAm7qJMSuw3k_3V9hTfkqjXkffixZ4"
-        },
-        {
-          "url": "https://www.thechronicle.com.au/sport/ronaldo-trains-as-al-nassr-prepare-to-host-al-sadd/video/55c189e0de79a792cedea2051e6541c3",
-          "title": "Ronaldo trains as Al Nassr prepare to host Al Sadd",
-          "publisher": "Toowoomba Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpjJOubp0GwALVN2ojOgTAk3mYagT7vQ5bZjsi6lKoFrZoeIOyOFwZGD7dPF4"
-        }
-      ]
-    },
-    {
-      "query": "trump tariffs china",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T17:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/economy/trade/u-s-prepares-to-raise-tariffs-on-china-and-other-countries-37981740",
-        "https://www.bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted",
-        "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTK6qj9tl8qgTJbtbaLJ9hb8NX8rX9QsNVAiiKqErA3_0xVriQw8fgLWSCO38",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/economy/trade/u-s-prepares-to-raise-tariffs-on-china-and-other-countries-37981740",
-          "title": "Exclusive | U.S. Prepares to Raise Tariffs on China and Other Countries",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTK6qj9tl8qgTJbtbaLJ9hb8NX8rX9QsNVAiiKqErA3_0xVriQw8fgLWSCO38"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted",
-          "title": "New Trump Tariffs Won’t Top Trade Deal Levels, Will Be Targeted",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjZh6Ty5aylFGdYDkfZur8iabb4Mv-rWNGTdIv36JipfZ5fmL7tb0uqsxpkks"
-        },
-        {
-          "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685",
-          "title": "Trump administration tees up tariff hikes on EU, China, others",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3BnYqOrjuyjiHULL0Q10Xtw8c9qTN4HdW-xbKHVUadvgYQpYxcfZJGwpdeM"
-        }
-      ]
-    },
-    {
-      "query": "bodø/glimt - lask",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T17:20:00Z",
-      "related_news_urls": [
-        "https://www.tallahatchienews.ms/node/457313?df",
-        "https://news.bet365.com/en-us/article/samuel-adenirans-odds-to-score-vs-bodoglimt-today/2026112416261141336",
-        "https://www.tufutbolero.com/en/news/bod-glimt-lask-linz-bod-glimt-arrives-with-three-absences-e50455"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY",
-      "image_credit": "Charleston Sun-Sentinel",
-      "news": [
-        {
-          "url": "https://www.tallahatchienews.ms/node/457313?df",
-          "title": "Aston Villa vs Galatasaray Live Free Soccer Champions League 2026",
-          "publisher": "Charleston Sun-Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
-        },
-        {
-          "url": "https://news.bet365.com/en-us/article/samuel-adenirans-odds-to-score-vs-bodoglimt-today/2026112416261141336",
-          "title": "Samuel Adeniran's Odds to Score vs. Bodo/Glimt Today",
-          "publisher": "news.bet365.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5uomcN2fznaeC5t7UGS4d6p9vZ2PK-zbROy-03n1VFadlFv2a4TtQjv3xIug"
-        },
-        {
-          "url": "https://www.tufutbolero.com/en/news/bod-glimt-lask-linz-bod-glimt-arrives-with-three-absences-e50455",
-          "title": "Bodø/Glimt-Lask Linz: Bodø/Glimt arrives with three absences",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiB-Z4UGzm0m7EXm8Pq5bF81Wa6WH70eLzB3zBIUnvu7GOxJpQcq8GM6501Uc"
-        }
-      ]
-    },
-    {
-      "query": "micron",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T17:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/micron-stock-just-hit-lowest-211202300.html",
-        "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
-        "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFt_DulHopbBrWzVtaeAWJ06FISXZt4Ep0_3_-62Vhw-w0sB2CqAE1hcT9Ubs",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-just-hit-lowest-211202300.html",
-          "title": "Micron Stock Just Hit Its Lowest Price Since May. I'd Buy More Now.",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFt_DulHopbBrWzVtaeAWJ06FISXZt4Ep0_3_-62Vhw-w0sB2CqAE1hcT9Ubs"
-        },
-        {
-          "url": "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
-          "title": "Why Did Micron Technology Stock Fall?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4"
-        },
-        {
-          "url": "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price",
-          "title": "Micron: You Can't Argue With The Price (NASDAQ:MU)",
-          "publisher": "Seeking Alpha",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRozKgmmQfgfWxe0n2FAQe1K9xPQ0jbERVRxAMOrXsz4gYU8x8FowJeNa3CMAg"
-        }
-      ]
-    },
-    {
-      "query": "college football playoff",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T17:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
-        "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
-        "https://www.ncaa.com/news/football/article/2026-11-22/college-football-playoff-rankings-predictions-what-2026s-fourth-cfp-top-25-bracket"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdiM93TaSA4M9RvTPj5ma7rJS4a_i8wWyqSNVCtXoSjmtNgztnHIu7CbRb96o",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
-          "title": "2026-27 Week 12 College Football Playoff, bowl projections",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdiM93TaSA4M9RvTPj5ma7rJS4a_i8wWyqSNVCtXoSjmtNgztnHIu7CbRb96o"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
-          "title": "College Football Playoff rankings predictions, latest bracket: How far will Indiana, UCLA fall? - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdSYG9yp6vcP2wCGfw3C1q3BMEygUtmETo1-lgRrAMlBsXT2l0ZkWpbLN7Vs"
-        },
-        {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-22/college-football-playoff-rankings-predictions-what-2026s-fourth-cfp-top-25-bracket",
-          "title": "College Football Playoff rankings predictions: Bracket, top 25 projections for Week 13",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpt-yBOoWqCdiYgmp2r_NiwuyUCnX7-FxXkS1Qm9u4KzZI2B11vTZ8b5KSP1o"
-        }
-      ]
-    },
-    {
-      "query": "joel hofer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/edmonton-oilers-st-louis-blues-game-recap-november-22-2026",
-        "https://www.sportsline.com/nba/game-forecast/NBA_20261123_MEM@CHA/",
-        "https://www.espn.com/nhl/recap/_/gameId/401892770"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWKVi9fSc-u--hRG8M2sHAEHEL5Cq4cbzAoG2KBFkDdOtVX1aqblS2H3XN-zU",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/edmonton-oilers-st-louis-blues-game-recap-november-22-2026",
-          "title": "Blues rally from three down in third period, defeat Oilers in shootout",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWKVi9fSc-u--hRG8M2sHAEHEL5Cq4cbzAoG2KBFkDdOtVX1aqblS2H3XN-zU"
-        },
-        {
-          "url": "https://www.sportsline.com/nba/game-forecast/NBA_20261123_MEM@CHA/",
-          "title": "Memphis Grizzlies vs. Charlotte Hornets Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Monday 11/23 7:00 PM ET",
-          "publisher": "SportsLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM39cJQumzQ8N5sY8S_cVG5hDUlWeNVaNomkoKWmaDYFiQT2TC-7gNFOJhVU8"
-        },
-        {
-          "url": "https://www.espn.com/nhl/recap/_/gameId/401892770",
-          "title": "Blues 5-4 Oilers (Nov 22, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQevTySMpE5VnsC9vOhd8fv3jDg38ZsKLQ-xHKgiDxNfS_9S9MENj5TnnBESLE"
         }
       ]
     }
