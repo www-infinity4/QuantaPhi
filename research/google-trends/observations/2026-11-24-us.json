@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T19:31:16.640974Z",
+  "checked_at": "2026-11-24T20:01:25.001587Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "man city vs napoli",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T19:10:00Z",
+      "query": "voyager 1 data glitch nasa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:40:00Z",
       "related_news_urls": [
-        "https://www.mancity.com/news/mens/enzo-maresca-napoli-presser-63931031",
-        "https://www.theguardian.com/football/live/2026/nov/24/manchester-city-v-napoli-real-madrid-v-psv-champions-league-clockwatch-live",
-        "https://global.espn.com/football/story/_/id/50573261/kevin-de-bruyne-man-city-napoli"
+        "https://www.cnn.com/2026/11/24/science/voyager-1-nasa-communication-breakdown-data-glitch",
+        "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+        "https://www.theatlantic.com/science/2026/11/voyager-light-day-life-earth/689481/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQukyhdyUj8HQJANxBKaSQKgOGmUsu2jM6jltY2jgh69xKNz9ysJZPzfpTf6-M",
-      "image_credit": "Manchester City FC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrgYME01rkIfIogfMLz6hm3Y67VN25aSyI3nsnuIPmqobT4ujlqLKA6CCLtVI",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://www.mancity.com/news/mens/enzo-maresca-napoli-presser-63931031",
-          "title": "Nunes ready for Napoli, confirms Maresca",
-          "publisher": "Manchester City FC",
+          "url": "https://www.cnn.com/2026/11/24/science/voyager-1-nasa-communication-breakdown-data-glitch",
+          "title": "Voyager 1 hits new data glitch while making history",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQukyhdyUj8HQJANxBKaSQKgOGmUsu2jM6jltY2jgh69xKNz9ysJZPzfpTf6-M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrgYME01rkIfIogfMLz6hm3Y67VN25aSyI3nsnuIPmqobT4ujlqLKA6CCLtVI"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/24/manchester-city-v-napoli-real-madrid-v-psv-champions-league-clockwatch-live",
-          "title": "(1) Manchester City v Napoli, Real Madrid v PSV: Champions League clockwatch – live",
-          "publisher": "The Guardian",
+          "url": "https://science.nasa.gov/image-article/apod-2026-november-20-v-g-r/",
+          "title": "APOD: 2026 November 20 – V-G-R",
+          "publisher": "NASA Science (.gov)",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR2FcaDrkVniSO_0CSxavrdIonYiW3Ot0rh1_Ekm_d5Rs3fSz8kifGP_ABbIjo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGgVVDnfvbAu6xFyDf1puQqCkWIhmIy97JpGKgpHG8gotsmssBLg5RTDn6Q2M"
         },
         {
-          "url": "https://global.espn.com/football/story/_/id/50573261/kevin-de-bruyne-man-city-napoli",
-          "title": "Maresca calls Man City's league slump 'a shame' before De Bruyne reunion",
-          "publisher": "ESPN Global",
+          "url": "https://www.theatlantic.com/science/2026/11/voyager-light-day-life-earth/689481/",
+          "title": "A New Milestone for Life on Earth",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjrD5C4xLUWPnye4GhUQeO92G4Jwdxpc3eu72idWacqALgIbUElGLeeT8BOzM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRwMgZEDE5nXzAut6FGRqbW4HS6sFyqlDhQqldGvfy8E5okYam9xg_iBxGqBI"
         }
       ]
     },
     {
-      "query": "como vs aek",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T19:10:00Z",
+      "query": "skyler gill howard",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T19:40:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/champions/como-aek-en-directo-champions-league-hoy-en-vivo-f202611-d/",
-        "https://es-us.noticias.yahoo.com/deportes/fabregas-hago-alvini-milan-grand%C3%ADsimo-144412762.html",
-        "https://www.tufutbolero.com/novedades/el-aek-atenas-entrena-en-el-sinigaglia-con-tres-bajas-ante-e-a38fbf"
+        "https://sports.yahoo.com/articles/lions-dt-skyler-gill-howard-193159904.html",
+        "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/24/lions-lose-skyler-gill-howard-for-season-with-knee-injury/92945965007/",
+        "https://www.si.com/nfl/lions/onsi/detroit-lions-rookie-skyler-gill-howard-lost-for-2026-season"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjWXtUtcu_Fw7iaahlpH5V-0aOrN6OCG7zhtYTcu8yge9Laq5jkehFgxVt5rA",
-      "image_credit": "Diario AS",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSis0bZha-afTsZ6_9T2v8UDLsFDCCMU5VzkJYP3NLWbhBOkU8NoslbZVSlrZI",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://as.com/futbol/champions/como-aek-en-directo-champions-league-hoy-en-vivo-f202611-d/",
-          "title": "Como - AEK, en directo: Champions League hoy en vivo",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjWXtUtcu_Fw7iaahlpH5V-0aOrN6OCG7zhtYTcu8yge9Laq5jkehFgxVt5rA"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/fabregas-hago-alvini-milan-grand%C3%ADsimo-144412762.html",
-          "title": "Como, Fabregas: «Hago como Alvini ante el Milan, un grandísimo entrenador»",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLdc_CSPwDHVB3QVl8lT1IhRjeAJne85X1K0d5SVi8jYZm3cXfg-ziTzXazT0"
-        },
-        {
-          "url": "https://www.tufutbolero.com/novedades/el-aek-atenas-entrena-en-el-sinigaglia-con-tres-bajas-ante-e-a38fbf",
-          "title": "El AEK Atenas entrena en el Sinigaglia con tres bajas ante el Como",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfZ8tGHhyG7G9Xumo9ulene51rlhC5rvSQna4aV6X6ty7dJgVVqHB5VR0uXLY"
-        }
-      ]
-    },
-    {
-      "query": "manchester city - napoli",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T19:10:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/Calcio/Champions-League/23-11-2026/napoli-allegri-prima-del-city-speriamo-nel-risultato-ma-non-basta-e-su-de-bruyne.shtml",
-        "https://www.eurosport.it/calcio/champions-league/2026-2027/manchester-city-napoli-champions-league-le-formazioni-ufficiali-de-bruyne-titolare-nel-suo-ritorno-alletihad_sto23358420/story.shtml",
-        "https://www.vietnam.vn/it/link-xem-truc-tiep-man-city-vs-napoli-3h00-ngay-25-11-champions-league"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5-z_nSBVlKG7TW3hmDfdLLRKqVZ6-ojzfW5j74bAV-NkF0dV7aJ9NA6zQ4w",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/Calcio/Champions-League/23-11-2026/napoli-allegri-prima-del-city-speriamo-nel-risultato-ma-non-basta-e-su-de-bruyne.shtml",
-          "title": "Allegri: \"City davvero fortissimo\". De Bruyne: \"Non ho più 20 anni\". Poi attacca la stampa",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz5-z_nSBVlKG7TW3hmDfdLLRKqVZ6-ojzfW5j74bAV-NkF0dV7aJ9NA6zQ4w"
-        },
-        {
-          "url": "https://www.eurosport.it/calcio/champions-league/2026-2027/manchester-city-napoli-champions-league-le-formazioni-ufficiali-de-bruyne-titolare-nel-suo-ritorno-alletihad_sto23358420/story.shtml",
-          "title": "Manchester City-Napoli, Champions League, le formazioni ufficiali: De Bruyne titolare nel suo ritorno all'Etihad",
-          "publisher": "Eurosport.it",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT06efXsSJBWbiS1MwvygSskC7z-yVf0PUbugePtGtPloTLkUmd8KmYdLOnpv0"
-        },
-        {
-          "url": "https://www.vietnam.vn/it/link-xem-truc-tiep-man-city-vs-napoli-3h00-ngay-25-11-champions-league",
-          "title": "Link per la diretta streaming di Manchester City-Napoli, ore 3:00 del mattino del 25 novembre - Champions League",
-          "publisher": "Vietnam.vn",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTsKGF6qGUW9ppW87bHPb4fBLormSJBFqGcmTtOEhg6hzqsEGFu5U8Y_gv4BJw"
-        }
-      ]
-    },
-    {
-      "query": "slovan bratislava vs betis",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T19:10:00Z",
-      "related_news_urls": [
-        "https://www.besoccer.com/new/yaya-toure-relishes-reunion-with-former-man-city-boss-pellegrini-1443061",
-        "https://sports.yahoo.com/articles/betis-squad-bratislava-pellegrini-almost-164200660.html",
-        "https://www.sofascore.com/news/slovan-vs-real-betis-preview-form-stats-odds"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdC-E9MNxubediFsOXXRtHJLA8j0OemUCytSMO4xXpqOx07x9XUqnfcMbSiKM",
-      "image_credit": "BeSoccer Livescore",
-      "news": [
-        {
-          "url": "https://www.besoccer.com/new/yaya-toure-relishes-reunion-with-former-man-city-boss-pellegrini-1443061",
-          "title": "Yaya Toure relishes reunion with former Man City boss Pellegrini",
-          "publisher": "BeSoccer Livescore",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdC-E9MNxubediFsOXXRtHJLA8j0OemUCytSMO4xXpqOx07x9XUqnfcMbSiKM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/betis-squad-bratislava-pellegrini-almost-164200660.html",
-          "title": "📋 Betis squad for Bratislava: Pellegrini has almost everyone 🤔",
+          "url": "https://sports.yahoo.com/articles/lions-dt-skyler-gill-howard-193159904.html",
+          "title": "Lions DT Skyler Gill-Howard out for season with knee injury",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh0FFKVIUKcuS44Xo9YGXEezt0YPh7kq2z5WMkhECsVV6tPHsY9JuTSf2mdWk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSis0bZha-afTsZ6_9T2v8UDLsFDCCMU5VzkJYP3NLWbhBOkU8NoslbZVSlrZI"
         },
         {
-          "url": "https://www.sofascore.com/news/slovan-vs-real-betis-preview-form-stats-odds",
-          "title": "Slovan vs Betis: UCL preview, stats and odds",
-          "publisher": "Sofascore",
+          "url": "https://www.detroitnews.com/story/sports/nfl/lions/2026/11/24/lions-lose-skyler-gill-howard-for-season-with-knee-injury/92945965007/",
+          "title": "Lions lose another defensive lineman for season with knee injury",
+          "publisher": "The Detroit News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1nGXuGu5Ls02KNcDRDInlN2_WzkcbmNTXChInJyauFdlonHKGv_tow9EqkI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR86d3TAE6YWYV1Wuad5oUhPaR4a8XLXxUTeGBjJF96orodnvHP-px5xO4kBFo"
+        },
+        {
+          "url": "https://www.si.com/nfl/lions/onsi/detroit-lions-rookie-skyler-gill-howard-lost-for-2026-season",
+          "title": "Detroit Lions Rookie DT Skyler Gill-Howard Lost For 2026 Season",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScw1uauEP938m28HzcPSRUQCtoSwlsp-YC0MJJn0XDFfmjR-788N3SSrDq2qE"
         }
       ]
     },
     {
-      "query": "feyenoord vs porto",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T19:10:00Z",
+      "query": "rb leipzig vs lens",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:30:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/soccer/uefa-champions-league/feyenoord-v-porto-36288672",
-        "https://onefootball.com/en/video/santi-gimenez-vuelve-a-roterdam-si-marco-no-festejare-43829501",
-        "https://www.tufutbolero.com/en/news/feyenoord-porto-five-absences-for-feyenoord-three-for-porto-e50451"
+        "https://sports.yahoo.com/articles/confirmed-ucl-lineups-rb-leipzig-185700162.html",
+        "https://www.bbc.com/sport/football/live/c8qlqy06yzzrt",
+        "https://www.reutersconnect.com/item/rb-leipzigs-final-training-session/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0RQQUFQSVMyNjExMjNYOTlYMzY4MzQz"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvkvHAzoXQqNkHFMS3GOJmnPS12WSauaP-Cd4eHXg-nqEgkuBG9rQiOyIaBNc",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/soccer/uefa-champions-league/feyenoord-v-porto-36288672",
-          "title": "Feyenoord v Porto Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://sports.yahoo.com/articles/confirmed-ucl-lineups-rb-leipzig-185700162.html",
+          "title": "Confirmed UCL lineups: RB Leipzig vs. RC Lens",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvkvHAzoXQqNkHFMS3GOJmnPS12WSauaP-Cd4eHXg-nqEgkuBG9rQiOyIaBNc"
         },
         {
-          "url": "https://onefootball.com/en/video/santi-gimenez-vuelve-a-roterdam-si-marco-no-festejare-43829501",
-          "title": "Santi Giménez vuelve a Róterdam: \"Si marco, no festejaré\"",
-          "publisher": "OneFootball",
+          "url": "https://www.bbc.com/sport/football/live/c8qlqy06yzzrt",
+          "title": "RB Leipzig vs Lens: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSI7YQ9pHCjFqkdE5GRCn9J466hy0FiS7Is5Ubzl_NTIIwHwrOkHhUEzh1Et3I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/feyenoord-porto-five-absences-for-feyenoord-three-for-porto-e50451",
-          "title": "Feyenoord-Porto: five absences for Feyenoord, three for Porto",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.reutersconnect.com/item/rb-leipzigs-final-training-session/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX0RQQUFQSVMyNjExMjNYOTlYMzY4MzQz",
+          "title": "Licensable picture: RB Leipzig's Final Training Session",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu8aMuC8l5GcIlZsoI0BJqg3zUKmTxF4iqVh09wiM6go78Gl8dY7x7gDcfh1o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5tF2Emx_5zsgkhJkpZXXZEyQYOQYfgTzvcksl9RJdjl_sAGdEYffZRptYWjg"
         }
       ]
     },
     {
-      "query": "ole miss basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T19:10:00Z",
+      "query": "lincoln fa'alafi",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:30:00Z",
       "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/24/byu-basketball-ole-miss-maui-invitational-2026-how-to-watch/",
-        "https://www.cbssports.com/college-basketball/news/rankings-top-25-and-1-ole-miss-rebels/",
-        "https://www.vanquishthefoe.com/byu-basketball/28182/byu-basketball-vs-ole-miss-preview-byu-faces-toughest-test-in-young-season-maui-invitational"
+        "https://www.espn.com/college-football/story/_/id/50584881/notre-dame-gets-2028-commitment-ot-lincoln-faalafi",
+        "https://sports.yahoo.com/articles/top-50-ol-lincoln-fa-190311989.html",
+        "https://247sports.com/article/notre-dame-commitment-no-1-ot-lincoln-faalafi-293242067/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuAcEqJwddd4pdquh1g65hfOj10XIeisZzn_c76Wss5gmxgKcxy_SVFaAlehU",
-      "image_credit": "Deseret News",
-      "news": [
-        {
-          "url": "https://www.deseret.com/sports/2026/11/24/byu-basketball-ole-miss-maui-invitational-2026-how-to-watch/",
-          "title": "How to watch No. 19 BYU play Ole Miss in the Maui Invitational",
-          "publisher": "Deseret News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuAcEqJwddd4pdquh1g65hfOj10XIeisZzn_c76Wss5gmxgKcxy_SVFaAlehU"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/rankings-top-25-and-1-ole-miss-rebels/",
-          "title": "College basketball rankings: Keep an eye on the 5-0 Ole Miss Rebels scratching right outside the Top 25 And 1",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTi4FPhpmNOdO8rYEKVrZqI4An9EaMEiJNntW1M9Tmi7sIT8qIrqL-RVYBC3bU"
-        },
-        {
-          "url": "https://www.vanquishthefoe.com/byu-basketball/28182/byu-basketball-vs-ole-miss-preview-byu-faces-toughest-test-in-young-season-maui-invitational",
-          "title": "BYU vs Ole Miss Preview: BYU Faces Toughest Test in Early Season",
-          "publisher": "Vanquish The Foe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-iQ6Fq2s0tWWn1ydMJWaBJ3jHbozzyrjp92lxE9eNPaUc4SDt3vnLr5CCJlA"
-        }
-      ]
-    },
-    {
-      "query": "fotmob",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T19:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50573929/usmnt-players-pochettino-manchester-united",
-        "https://www.thetimes.com/sport/football/article/mauricio-pochettino-targets-new-striker-in-january-transfer-window-kl0lht5vx",
-        "https://www.si.com/soccer/strikers-man-utd-mauricio-pochettino-january-budget-blow"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwvTn_jOQuz3hQaN80zjwfDdkzJ71F4JjAvoj1GTrKANsIoQqljNdBrJMRXU",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZtb8i6YNSwnSjx6FUSdks10LvvASiY9yAlFSkf-7AiahS60RTQLMBscAvFI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50573929/usmnt-players-pochettino-manchester-united",
-          "title": "Which USMNT players could follow Mauricio Pochettino to Manchester United?",
+          "url": "https://www.espn.com/college-football/story/_/id/50584881/notre-dame-gets-2028-commitment-ot-lincoln-faalafi",
+          "title": "Five-star OT Lincoln Fa'alafi commits to Notre Dame, to join 2028 class",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwvTn_jOQuz3hQaN80zjwfDdkzJ71F4JjAvoj1GTrKANsIoQqljNdBrJMRXU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlZtb8i6YNSwnSjx6FUSdks10LvvASiY9yAlFSkf-7AiahS60RTQLMBscAvFI"
         },
         {
-          "url": "https://www.thetimes.com/sport/football/article/mauricio-pochettino-targets-new-striker-in-january-transfer-window-kl0lht5vx",
-          "title": "Mauricio Pochettino targets new striker in January transfer window",
-          "publisher": "The Times",
+          "url": "https://sports.yahoo.com/articles/top-50-ol-lincoln-fa-190311989.html",
+          "title": "Top 50 OL Lincoln Fa’alafi commits to Notre Dame, goes in-depth on why he chose the Irish",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQI_Sl5iOxyoPHSF_pUGqtDl6HS5P0jMq-XleIwQ_RBEuP_RbabpW6zGfUbtSc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIWOiIHcQFiYOVHXtJ6qXezytsVAA6yeKT4nmNet7e_Muo_4Vds-X3by07Wmw"
         },
         {
-          "url": "https://www.si.com/soccer/strikers-man-utd-mauricio-pochettino-january-budget-blow",
-          "title": "The Strikers Man Utd Can Afford After Mauricio Pochettino Dealt ‘January Budget’ Blow",
-          "publisher": "Sports Illustrated",
+          "url": "https://247sports.com/article/notre-dame-commitment-no-1-ot-lincoln-faalafi-293242067/",
+          "title": "Notre Dame goes global for blockbuster win, securing commitment from No. 1 OT Lincoln Fa'alafi",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhX0Leiwqk_by6x9DihTy_JlTaq3hUhSZxms4uTXWUidhiC17XMc2OIyRfIWk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTl-Yz9N3fFtynCfLKgKMS-9AdiWBoTkV0cCcBIDle6TIHJ2SAIKKdpAX1xQhI"
         }
       ]
     },
     {
-      "query": "lawsuit",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T19:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/23/metro/boston-hud-immigrant-subsidized-housing-lawsuit/",
-        "https://www.wbur.org/news/2026/11/24/states-sue-hud-housing-aid-immigrants-mixed-status",
-        "https://calmatters.org/housing/2026/11/hud-mixed-status-lawsuit/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwEPodsHZ-t1l8py-2OM8TKNIipnzJTirj4ApBXo6UgMubHuWufaqPrJGIWdI",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/23/metro/boston-hud-immigrant-subsidized-housing-lawsuit/",
-          "title": "New rule could force immigrants out of federally subsidized housing",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwEPodsHZ-t1l8py-2OM8TKNIipnzJTirj4ApBXo6UgMubHuWufaqPrJGIWdI"
-        },
-        {
-          "url": "https://www.wbur.org/news/2026/11/24/states-sue-hud-housing-aid-immigrants-mixed-status",
-          "title": "Mass. joins 20 states in suing HUD over a rule that could cut off housing aid for mixed-status families",
-          "publisher": "WBUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOEYSZVkHFWkqAwtPPOhr9y1QhZjraqoENp029En26dfQJGh2jru9H6lgGj5M"
-        },
-        {
-          "url": "https://calmatters.org/housing/2026/11/hud-mixed-status-lawsuit/",
-          "title": "California sues to block Trump rule denying aid to families with mixed immigration statuses",
-          "publisher": "CalMatters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlZm1qrY2zJxt_Zg1AqdnSix32GpKQYCsIa0ii_QlKh8UpvLfprHo1Yrx-m18"
-        }
-      ]
-    },
-    {
-      "query": "portsmouth vs west ham",
+      "query": "middlesbrough vs swansea",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T19:00:00Z",
+      "published_at": "2026-11-24T19:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cxj05qmzq474t",
-        "https://www.expressfm.com/news/football/this-weeks-opposition-west-ham-united1/",
-        "https://www.tufutbolero.com/en/news/portsmouth-west-ham-portsmouth-arrive-with-six-injury-fdbceb"
+        "https://www.bbc.com/sport/football/live/cmkgd1j51wx1t",
+        "https://www.swanseacity.com/news/ashley-williams-we-know-size-task-and-it-will-need-our-full-focus",
+        "https://www.tvguide.co.uk/schedule/3e55f9f2-a598-5fe6-b152-911085203b6c/live-efl"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwkMo4pFIB6jolwzvzNlJib5LNOIZ7lqSaJQhVnrwIU0NaZNeLvX3spBbzydI",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQSnC2EtQ_Ifg55aJmnb_s8ymt0Db-66FC1gfhpuFafz4e53SgOY8po-3G4Ro",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cxj05qmzq474t",
-          "title": "Portsmouth v West Ham United: Championship stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cmkgd1j51wx1t",
+          "title": "Middlesbrough v Swansea City: Championship stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwkMo4pFIB6jolwzvzNlJib5LNOIZ7lqSaJQhVnrwIU0NaZNeLvX3spBbzydI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQSnC2EtQ_Ifg55aJmnb_s8ymt0Db-66FC1gfhpuFafz4e53SgOY8po-3G4Ro"
         },
         {
-          "url": "https://www.expressfm.com/news/football/this-weeks-opposition-west-ham-united1/",
-          "title": "This Week's Opposition: West Ham United",
-          "publisher": "Express FM - Portsmouth",
+          "url": "https://www.swanseacity.com/news/ashley-williams-we-know-size-task-and-it-will-need-our-full-focus",
+          "title": "Ashley Williams | We know the size of the task, and it will need our full focus",
+          "publisher": "Swansea City",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrStLpIyn12vkBVxLvz5oxfKf_t0cMj3ux7i-1ZN5zVZsDqndRV6bESbD8IZw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWYQ8oc_G2LIrMv77JBqmwz7K8CTvFSF3BYzCypbHTKHEuV22rc8LYL89YUNQ"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/portsmouth-west-ham-portsmouth-arrive-with-six-injury-fdbceb",
-          "title": "Portsmouth-West Ham: Portsmouth arrive with six injury absences",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.tvguide.co.uk/schedule/3e55f9f2-a598-5fe6-b152-911085203b6c/live-efl",
+          "title": "Live EFL on Sky Sports + HD: full details and when it's on",
+          "publisher": "TVGuide.co.uk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3ieU-MHVsa-EtospZEpNCH1OBA9Wefn6e7mOFqDNYiTkJ6ZdODLIMRb99v5c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3JSfAgkwLbDpro_WiZsiiRsuIuokr3tVCQfRvg5luXE4xsP7pbnE6Mtm-JZ8"
         }
       ]
     },
     {
-      "query": "grand theft auto gta vi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T19:00:00Z",
+      "query": "jerricho cotchery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T19:30:00Z",
       "related_news_urls": [
-        "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
-        "https://variety.com/2026/gaming/reviews/grand-theft-auto-vi-review-gta-6-1236955932/"
+        "https://www.wral.com/sports/ncstate-jerricho-cotchery-wide-receivers-coach-philip-rivers-staff-november-2026/",
+        "https://247sports.com/college/north-carolina-state/article/nc-state-hires-wolfpack-legend-jerricho-cotchery-as-next-wide-receivers-coach-292953886/",
+        "https://packinsider.com/2026/11/24/jerricho-cotchery-will-reunite-with-philip-rivers-as-nc-states-wide-receivers-coach/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE",
-      "image_credit": "Rockstar Games",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiYjCz5nr0fh03ZxWqbPfr1x7rkobrI82gA9a6_aVhVcFMW_LSDMzDmXKUMjk",
+      "image_credit": "WRAL",
       "news": [
         {
-          "url": "https://www.rockstargames.com/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
-          "title": "Grand Theft Auto VI Now Available",
-          "publisher": "Rockstar Games",
+          "url": "https://www.wral.com/sports/ncstate-jerricho-cotchery-wide-receivers-coach-philip-rivers-staff-november-2026/",
+          "title": "Another former Wolfpack football player joins new NC State coach Rivers’ staff",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgurHaHj_OU0e4LlPYWHudStLQmVAZI6-ib1n5lcCqgRzt3YksmAix04DoOmE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiYjCz5nr0fh03ZxWqbPfr1x7rkobrI82gA9a6_aVhVcFMW_LSDMzDmXKUMjk"
         },
         {
-          "url": "https://variety.com/2026/gaming/reviews/grand-theft-auto-vi-review-gta-6-1236955932/",
-          "title": "‘Grand Theft Auto VI’ Review: A Bloody, Boundary-Shifting Reclamation of the American Dream",
-          "publisher": "Variety",
+          "url": "https://247sports.com/college/north-carolina-state/article/nc-state-hires-wolfpack-legend-jerricho-cotchery-as-next-wide-receivers-coach-292953886/",
+          "title": "NC State hires Wolfpack legend Jerricho Cotchery as next wide receivers coach",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAp4UHw4J5rIRrDOrduWRzHaV4o0WAhDs8vb7ZfKFCDU6QpgeUIvjZFTDfzE0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMaS60vQ2YWTO4odt1TjnmnIl7iX5xnMVlXsVrq1Jlmn75-1Z_oLj0Uat4DiA"
+        },
+        {
+          "url": "https://packinsider.com/2026/11/24/jerricho-cotchery-will-reunite-with-philip-rivers-as-nc-states-wide-receivers-coach/",
+          "title": "Jerricho Cotchery Will Reunite With Philip Rivers as NC State’s Wide Receivers Coach",
+          "publisher": "PackInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD7bB7bQenX1mTf0hH5FFikA3XAE9Vbr5xpUe3IKpcLYjMSxq7MI0WluZo3zg"
+        }
+      ]
+    },
+    {
+      "query": "class action",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T19:20:00Z",
+      "related_news_urls": [
+        "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/9-5m-natera-genetic-screening-class-action-settlement/",
+        "https://www.forbes.com/sites/adamminsky/2026/11/24/these-student-loan-borrowers-would-be-covered-by-new-class-action-lawsuit-against-education-department/",
+        "https://www.wsna.org/news/2026/aft-sues-education-department-over-mismanagement-of-public-service-loan-forgiveness-program"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IJhnQvt2YmOK20sewC3Uo-yEatZOjnLObPcRyH_J7RdHC84rpUEIbnhjdPI",
+      "image_credit": "Top Class Actions",
+      "news": [
+        {
+          "url": "https://topclassactions.com/lawsuit-settlements/open-lawsuit-settlements/9-5m-natera-genetic-screening-class-action-settlement/",
+          "title": "$9.5M Natera genetic screening class action settlement",
+          "publisher": "Top Class Actions",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IJhnQvt2YmOK20sewC3Uo-yEatZOjnLObPcRyH_J7RdHC84rpUEIbnhjdPI"
+        },
+        {
+          "url": "https://www.forbes.com/sites/adamminsky/2026/11/24/these-student-loan-borrowers-would-be-covered-by-new-class-action-lawsuit-against-education-department/",
+          "title": "These Student Loan Borrowers Would Be Covered By New Class Action Lawsuit Against Education Department",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyU--BlSALeZsBjB8nueQD-CF93_gT9WiApLBTU4Pn2ttZcuk116bgDrjpVBY"
+        },
+        {
+          "url": "https://www.wsna.org/news/2026/aft-sues-education-department-over-mismanagement-of-public-service-loan-forgiveness-program",
+          "title": "AFT sues Education Department over mismanagement of Public Service Loan Forgiveness program",
+          "publisher": "Washington State Nurses Association - WSNA",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl3f3qMIMxL-yUbved6sGcyINjmF7kHhMEvk7lBAcit3y18CrO9wu6VFsnE98"
+        }
+      ]
+    },
+    {
+      "query": "adrian morejon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/padres-could-face-unexpected-challenge-181313216.html",
+        "https://www.nydailynews.com/2026/11/24/yankees-bullpen-moves-shouldnt-prevent-pursuit-of-adrian-morejon/",
+        "https://www.pinstripealley.com/yankees-roster/215313/yankees-free-agent-target-rumors-adrian-morejon-bullpen-padres"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNHIKOOngWfagmqGIVWNK297ZNywz2Qr0REz0DUBh1Ef8cSmkaRwbVn9Y44Ho",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/padres-could-face-unexpected-challenge-181313216.html",
+          "title": "Padres could face unexpected challenge from Yankees in Adrian Morejon sweepstakes",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNHIKOOngWfagmqGIVWNK297ZNywz2Qr0REz0DUBh1Ef8cSmkaRwbVn9Y44Ho"
+        },
+        {
+          "url": "https://www.nydailynews.com/2026/11/24/yankees-bullpen-moves-shouldnt-prevent-pursuit-of-adrian-morejon/",
+          "title": "Yankees’ bullpen moves shouldn’t prevent pursuit of Adrian Morejon",
+          "publisher": "New York Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5BjSYNVaZd2KVR3gNNoJ2MyO-yBsEE8dmnld49whT7vAzVMVuQdPQrz_ZxQk"
+        },
+        {
+          "url": "https://www.pinstripealley.com/yankees-roster/215313/yankees-free-agent-target-rumors-adrian-morejon-bullpen-padres",
+          "title": "Yankees Potential Free Agent Target: Adrián Morejón",
+          "publisher": "Pinstripe Alley",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOv1308MpKeC0nCXMpWOvhNWx1BGQRcPJPOTcOqVJJqXzhgWSJtT8QMAmfjB4"
+        }
+      ]
+    },
+    {
+      "query": "wolves vs derby county",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cm9q84xw47z5t",
+        "https://www.wolves.co.uk/news/mens-first-team/20261123-peixoto-we-re-building-a-winning-mentality/",
+        "https://uk.sports.yahoo.com/news/efl-expert-singles-very-good-113514049.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQSnC2EtQ_Ifg55aJmnb_s8ymt0Db-66FC1gfhpuFafz4e53SgOY8po-3G4Ro",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cm9q84xw47z5t",
+          "title": "Wolverhampton Wanderers v Derby County: Championship stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQSnC2EtQ_Ifg55aJmnb_s8ymt0Db-66FC1gfhpuFafz4e53SgOY8po-3G4Ro"
+        },
+        {
+          "url": "https://www.wolves.co.uk/news/mens-first-team/20261123-peixoto-we-re-building-a-winning-mentality/",
+          "title": "Peixoto | 'We’re building a winning mentality' | Men's First-Team | Latest News",
+          "publisher": "Wolverhampton Wanderers FC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjKHrRjEj3lXEOC_wzQJxpRuzHHHmgK_SNfmGRc35Yx4I48bU3BxtASqWY_cQ"
+        },
+        {
+          "url": "https://uk.sports.yahoo.com/news/efl-expert-singles-very-good-113514049.html",
+          "title": "EFL expert singles out ‘very good’ Wolves man for high praise ahead of Derby County clash",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoJt5lnXhSzrTudTdXbbO-gX7tewxv-iyeZTNUo2wV1nDZ-WyAHvlTbf1ydzo"
+        }
+      ]
+    },
+    {
+      "query": "high wind warning",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T19:20:00Z",
+      "related_news_urls": [
+        "https://www.syracuse.com/weather-alerts/2026/11/wind-advisory-for-rockland-and-westchester-counties-for-thursday-and-friday-gusts-could-peak-at-55-m.html",
+        "https://www.thestate.com/news/weather-news/article318226826.html",
+        "https://www.islandpacket.com/news/weather-news/article318234690.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1hSLjHnU0FWE2cyB16xP4VziRraaKaLXgU896k6BIPYjzxjMn3xmvCkh2tOA",
+      "image_credit": "Syracuse.com",
+      "news": [
+        {
+          "url": "https://www.syracuse.com/weather-alerts/2026/11/wind-advisory-for-rockland-and-westchester-counties-for-thursday-and-friday-gusts-could-peak-at-55-m.html",
+          "title": "Wind advisory for Rockland and Westchester counties for Thursday and Friday — gusts could peak at 55 mph",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1hSLjHnU0FWE2cyB16xP4VziRraaKaLXgU896k6BIPYjzxjMn3xmvCkh2tOA"
+        },
+        {
+          "url": "https://www.thestate.com/news/weather-news/article318226826.html",
+          "title": "Lake wind advisory issued for Inland Berkeley until 2 a.m. Thursday",
+          "publisher": "The State",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa5UQK7Kv0Dj_8guq7MMcWR1E7KId_Z8uAoneQrLtz-G_BKMKb3KuXWVLRgQ0"
+        },
+        {
+          "url": "https://www.islandpacket.com/news/weather-news/article318234690.html",
+          "title": "Lake wind advisory for Southeastern Orangeburg and Clarendon County for Wednesday and Thursday",
+          "publisher": "Hilton Head Island Packet",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdFuHSmSgQqcM9KfQDXNsgoeMb54LgnCIclOXAVQBMZvhxXCn-yEdjS3vFqCU"
         }
       ]
     }
