@@ -459,3 +459,12 @@ next_action: "Obtain independent source/rights review, reconcile latest main, ve
 - **State:** 🔴 `implementing`, estimated 2/6 scoped acceptance gates (source link + matching test staged; CI, review/merge, release, browser/Android remain). One documented engineering session, remaining sessions unknown.
 - **Next single executable action:** Open PR and inspect the exact-head Creator Quick Cards and required CI checks, review isolated diff, then guarded merge and independently verify production and physical Android playback. No claim of production release or owner-device acceptance.
 
+
+
+## 2026-11-24 · exact owner video DL6EKfSqOa4
+
+- Original owner URL: https://youtu.be/DL6EKfSqOa4?is=Nyr9NNMaxOKXEzqM ; canonical https://www.youtube.com/watch?v=DL6EKfSqOa4 .
+- Issue #1603; isolated branch `feat/owner-youtube-DL6EKfSqOa4-1603-20261124`. Authenticated GitHub connector, no signed Moltnook lease asserted.
+- One new owner source record, using existing Oracle Public/Media card, click-to-play and original link. No replacement or channel import. Watch-page retrieval failed; title, creator, content classification, rights and playback not independently verified. General-media is existing catalog routing, not a content safety certification.
+- Test-first commit a4fd56503c14ce5159495ac7d7cd2d145f939197; source commit a07a9ca306630dcafa27a60d64f73980be5a1018. RED execution not observed; exact-head CI, review, merge, production and Android acceptance remain unverified.
+- State: implementing, 2/6 scoped gates estimated; one session, remaining unknown. Next: verify exact-head required CI and source review, then eligible guarded merge and public/Android acceptance.

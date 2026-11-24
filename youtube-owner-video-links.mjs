@@ -228,6 +228,12 @@ const reviewedLinks=[{
  observedAt:'2026-11-22',publishedAt:null,publisherVerified:false,
  titleVerified:false,contentBoundary:'general-media'
 }
+,{
+ videoId:'DL6EKfSqOa4',title:'YouTube video DL6EKfSqOa4 (title unverified)',
+ sourceUrl:'https://www.youtube.com/watch?v=DL6EKfSqOa4',
+ observedAt:'2026-11-24',publishedAt:null,publisherVerified:false,
+ titleVerified:false,contentBoundary:'general-media'
+}
 ];
 export function validateOwnerYouTubeLink(row){
  if(!row||typeof row!=='object')return false;
