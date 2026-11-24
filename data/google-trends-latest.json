@@ -3,41 +3,305 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T11:31:07.812996Z",
+  "checked_at": "2026-11-24T12:01:43.207819Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dow jones futures",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-24T11:10:00Z",
+      "query": "storm watch",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-        "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-rebound-090614276.html",
-        "https://robinjbrooks.substack.com/p/how-markets-are-trading-jensens-return"
+        "https://www.basenor.com/blogs/news/tesla-powerwall-storm-watch-mode-how-it-works"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvdKXxk_bBWpeUeQti150Bxds7QPAkEkbOvj5k4GrxnobMItxzM3u0X29Y78g",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ9Lb-yBFnAshNJwKaCgrYmbArnuJCK2rhqddFIvhTALN_Paek0H32lmBuxaI",
+      "image_credit": "BASENOR - Tesla Accessories",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/23/stock-market-today-live-updates.html",
-          "title": "Nasdaq futures turn lower after Nvidia rally as Jensen Huang returns: Live updates",
-          "publisher": "CNBC",
+          "url": "https://www.basenor.com/blogs/news/tesla-powerwall-storm-watch-mode-how-it-works",
+          "title": "Tesla Powerwall Storm Watch Mode: How It Works",
+          "publisher": "BASENOR - Tesla Accessories",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvdKXxk_bBWpeUeQti150Bxds7QPAkEkbOvj5k4GrxnobMItxzM3u0X29Y78g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZ9Lb-yBFnAshNJwKaCgrYmbArnuJCK2rhqddFIvhTALN_Paek0H32lmBuxaI"
+        }
+      ]
+    },
+    {
+      "query": "k-ci",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
+      "related_news_urls": [
+        "https://www.lpm.org/news/2026-11-23/jodeci-concert-at-louisville-palace-canceled-after-fans-wait-more-than-two-hours",
+        "https://www.yahoo.com/entertainment/music/concerts/articles/jodeci-forced-cancel-louisville-concert-212214900.html",
+        "https://people.com/k-ci-truly-sorry-after-severe-dehydration-forces-jodeci-concert-cancellation-12275726"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzkctPtuIoYjNM1DhXeAXJjTarwNM_JjbMAB8G6N3Uyx47zOy_XKZ1-7JYXtA",
+      "image_credit": "Louisville Public Media",
+      "news": [
+        {
+          "url": "https://www.lpm.org/news/2026-11-23/jodeci-concert-at-louisville-palace-canceled-after-fans-wait-more-than-two-hours",
+          "title": "Jodeci concert at Louisville Palace canceled after fans wait more than two hours",
+          "publisher": "Louisville Public Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzkctPtuIoYjNM1DhXeAXJjTarwNM_JjbMAB8G6N3Uyx47zOy_XKZ1-7JYXtA"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-24-dow-sp-500-nasdaq-rebound-090614276.html",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures mixed as investors test Nvidia-fueled rally",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.yahoo.com/entertainment/music/concerts/articles/jodeci-forced-cancel-louisville-concert-212214900.html",
+          "title": "Jodeci forced to cancel Louisville concert after K-Ci Hailey suffers medical emergency",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwHhuTwd6tCp7ukq89Z48ww_dFP-zRcAIKB_k2MsnI6RGsAmp-F5Q1uFHoOw8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaDmqoZz2tLDJOJ-UnV4ktt2_5-l9NE0Efr2Xg0bLvQLSJequHm9HgJFw8MIE"
         },
         {
-          "url": "https://robinjbrooks.substack.com/p/how-markets-are-trading-jensens-return",
-          "title": "How Markets Are Trading Jensen’s Return",
-          "publisher": "Robin J Brooks | Substack",
+          "url": "https://people.com/k-ci-truly-sorry-after-severe-dehydration-forces-jodeci-concert-cancellation-12275726",
+          "title": "K-Ci ‘Truly Sorry’ to Disappoint Fans After His ‘Severe Dehydration’ Forces Last-Minute Jodeci Concert Cancellation",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG-ah5YwpLDCmpMhvW9YDnIEQiSfHrLUrqojCwDOCoJm2P41SrYn9U5y4K9Z4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxVmsLRGGkqk-rB9fv7oBWjV96CSrWgkgpNX9k-CUx0JkvZ2KbTRO1PG138JI"
+        }
+      ]
+    },
+    {
+      "query": "daryl ruiter",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
+      "related_news_urls": [
+        "https://www.audacy.com/923thefan/sports/cleveland-browns/daryl-ruiter-ryan-day-is-done-in-columbus",
+        "https://www.cbssports.com/college-football/news/ryan-day-buyout-contract-ohio-state-coach/",
+        "https://sports.yahoo.com/articles/ryan-day-ross-bjork-lighting-151500092.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5gMXbl8ZBYOuvsSEVGMzi-iGnau0ibRMI_sCG2WaKeVG9xv4Q6T94-PueXw",
+      "image_credit": "Audacy",
+      "news": [
+        {
+          "url": "https://www.audacy.com/923thefan/sports/cleveland-browns/daryl-ruiter-ryan-day-is-done-in-columbus",
+          "title": "Daryl Ruiter: “Ryan Day Is Done in Columbus”",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5gMXbl8ZBYOuvsSEVGMzi-iGnau0ibRMI_sCG2WaKeVG9xv4Q6T94-PueXw"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/ryan-day-buyout-contract-ohio-state-coach/",
+          "title": "Ryan Day buyout, contract details: How much it would cost Ohio State to fire coach after 4th loss in 2026",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJdrQqBXHHotexVUtReYdr-xdjsRDQdOZARHTo4lME-7WlD4x_kyF9b3HzZuk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/ryan-day-ross-bjork-lighting-151500092.html",
+          "title": "Ryan Day and Ross Bjork are lighting money on fire",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWenAgt5jEmPcBqJdaSCBE7vgZuyQrAWCyD_RRTDLfdH73A-_aG4Fm8MpJynQ"
+        }
+      ]
+    },
+    {
+      "query": "'d andre swift",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/nfl/bears/onsi/d-andre-swift-headed-punishment-ben-johnson-response-latest-fumble",
+        "https://dawindycity.com/bears-officially-have-a-d-andre-swift-problem",
+        "https://bvmsports.com/2026/11/23/ben-johnson-sends-message-swift-benched-zavion-thomas-breakout-bears-lions-showdown/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX3YJAW6_4MNuWBSZHkLUl8AIzmH6iXizEYwdNu1xLi8-71xMyDeE8eQnHsIo",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/nfl/bears/onsi/d-andre-swift-headed-punishment-ben-johnson-response-latest-fumble",
+          "title": "D'Andre Swift Could be Headed for Punishment After Ben Johnson's Response to Latest Fumble",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX3YJAW6_4MNuWBSZHkLUl8AIzmH6iXizEYwdNu1xLi8-71xMyDeE8eQnHsIo"
+        },
+        {
+          "url": "https://dawindycity.com/bears-officially-have-a-d-andre-swift-problem",
+          "title": "Bears officially have a D'Andre Swift problem",
+          "publisher": "Da Windy City",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkfJtVeCSsX1w32tbnrROX4K92YaTMlyGrPRObW-t8vg6tFfJsAgQtZVXCOg4"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/23/ben-johnson-sends-message-swift-benched-zavion-thomas-breakout-bears-lions-showdown/",
+          "title": "BEN JOHNSON SENDS MESSAGE?! Swift BENCHED, Zavion Thomas BREAKOUT + Bears-Lions SHOWDOWN!",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0PFiLSIAAPA_4MUtseCLkB2XZfFlSiMSTqevjPTQ5OJ-PDKEeS97zeJ3dPAQ"
+        }
+      ]
+    },
+    {
+      "query": "gisele pelicot",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cm3eg502nxw2o",
+        "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
+        "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cm3eg502nxw2o",
+          "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw"
+        },
+        {
+          "url": "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
+          "title": "Gisèle Pelicot to sue publisher over unauthorized use of nude photographs",
+          "publisher": "Le Monde.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrcKbszYeXra9PlaFyRgL4zo-f2G4WEbm__6fx41XCY8rLGT48J-FX4VCj_M"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
+          "title": "Gisèle Pelicot ‘deeply shocked’ after nude images used to promote book",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73d4xj9mx-7Ij-CgFQ8-_X5wjeB-TgPhTmS_K1rvsEXS6Zx6v5Pex5GuQtlg"
+        }
+      ]
+    },
+    {
+      "query": "home depot black friday",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:40:00Z",
+      "related_news_urls": [
+        "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depots-black-friday-deals-include-mattresses-throw-blankets-decor-and-more-125025622.html",
+        "https://www.bobvila.com/reviews/home-depot-black-friday-free-ryobi-deals-2026/",
+        "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/the-home-depots-black-friday-deals-include-mattresses-throw-blankets-decor-and-more-125025622.html",
+          "title": "The Home Depot's Black Friday deals include mattresses, throw blankets, decor and more",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpf2jX8F1iy79R8cOq-w4HGkcRC_k4fG9tTt59aVTx5JNdyhYxVtlc-6S79MU"
+        },
+        {
+          "url": "https://www.bobvila.com/reviews/home-depot-black-friday-free-ryobi-deals-2026/",
+          "title": "Home Depot Is Giving Away Free Ryobi Tools for Black Friday—Batteries, Impact Wrench, Routers, and More",
+          "publisher": "BobVila.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTf1TDahmeUg2M4rbTbl4W2OqDxKhltvcoCHkloVm39lk_uCss3PPVwiveSnI"
+        },
+        {
+          "url": "https://lifehacker.com/home/best-home-depot-tool-deals-early-black-friday-2026",
+          "title": "These Are the Best Early Black Friday Tool Deals at Home Depot",
+          "publisher": "Lifehacker",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdccuuXCE8AMIUGAGqz8mXjxhMmHk_uSr1t8aNf1bk-OlbwttmfRwfDyG6lZw"
+        }
+      ]
+    },
+    {
+      "query": "陈吉宁",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T11:30:00Z",
+      "related_news_urls": [
+        "https://m.voc.com.cn/xhn/news/202611/34340923.html",
+        "https://www.stheadline.com/zh-hans/realtime-china/3640753/%E6%94%BF%E6%B2%BB%E5%B1%80%E5%A7%94%E5%91%98%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%A7%94%E4%B9%A6%E8%AE%B0%E9%99%88%E5%90%89%E5%AE%81%E5%8F%97%E6%9F%A5-%E6%B6%89%E4%B8%A5%E9%87%8D%E8%BF%9D%E7%BA%AA%E8%BF%9D%E6%B3%95",
+        "https://www.zhengguannews.cn/news/511141.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokR5Gre0dhg32cIc-pwegZB5BlOvOoZy2EULaqzuNwF6MakmidTZEeziyL2E",
+      "image_credit": "新湖南",
+      "news": [
+        {
+          "url": "https://m.voc.com.cn/xhn/news/202611/34340923.html",
+          "title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
+          "publisher": "新湖南",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTokR5Gre0dhg32cIc-pwegZB5BlOvOoZy2EULaqzuNwF6MakmidTZEeziyL2E"
+        },
+        {
+          "url": "https://www.stheadline.com/zh-hans/realtime-china/3640753/%E6%94%BF%E6%B2%BB%E5%B1%80%E5%A7%94%E5%91%98%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%A7%94%E4%B9%A6%E8%AE%B0%E9%99%88%E5%90%89%E5%AE%81%E5%8F%97%E6%9F%A5-%E6%B6%89%E4%B8%A5%E9%87%8D%E8%BF%9D%E7%BA%AA%E8%BF%9D%E6%B3%95",
+          "title": "政治局委员、上海市委书记陈吉宁受查 涉严重违纪违法",
+          "publisher": "星島頭條",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrYWeDP3hbWVe_pdyV7v2YpJHwTzg8aHvoej8mQEkgvKSuVoFCl9-Cf7dLlsg"
+        },
+        {
+          "url": "https://www.zhengguannews.cn/news/511141.html",
+          "title": "陈吉宁涉嫌严重违纪违法正接受中央纪委国家监委审查调查",
+          "publisher": "正观新闻",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrCfEl_jGLhn93UglqTN2oK12KaZO-fxGrpDhxqa9FYxj5p4ZY6HuI4d0p-pE"
+        }
+      ]
+    },
+    {
+      "query": "lakers rumors",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T11:20:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
+        "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
+        "https://sports.yahoo.com/articles/lakers-linked-125m-nba-star-033820084.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeNmHdn6Cgmdw752zSLV84lGFruSpoYFYHW3BSFoUBT4G1sdSdff6f8-voMQU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
+          "title": "NBA trade rumors: Lakers planning to be active, Jazz looking elsewhere after Kyrie Irving buzz",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeNmHdn6Cgmdw752zSLV84lGFruSpoYFYHW3BSFoUBT4G1sdSdff6f8-voMQU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
+          "title": "New Lakers Trade Rumors Update Strategy to Improve Roster by 2027 NBA Deadline",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKxn5frvfM6ADBvdwZnmnlB0Cz0_YYBdQ4oetvrxbWdkmnYV50j8BZqd2qB44"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lakers-linked-125m-nba-star-033820084.html",
+          "title": "Lakers Linked to $125M NBA Star After Rob Pelinka Confirms Trade Plans for Luka Doncic & Co.",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTX6elxa3jgXfmJNgx1zBGolZz5AYAQGfrkD8zqbV8VJadxpKZo9JH0uRlLZKA"
+        }
+      ]
+    },
+    {
+      "query": "st louis weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T11:20:00Z",
+      "related_news_urls": [
+        "https://www.komu.com/weather/forecast-quiet-and-cold-for-tuesday-first-alert-weather-day-issued-for-thanksgiving/article_fba5e8ca-38c2-4237-987a-2c68e8c04133.html",
+        "https://www.kcrg.com/2026/11/23/chilly-start-week-holiday-travel-system-way/",
+        "https://fox2now.com/news/storm-threatens-st-louis-with-possible-rain-or-snow-for-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK0t9WXfGPkrBq-6cdmrbYPgWSXPp6rYHzMoKVXV-wC56iY8VfYGnTIYAc0BE",
+      "image_credit": "KOMU 8",
+      "news": [
+        {
+          "url": "https://www.komu.com/weather/forecast-quiet-and-cold-for-tuesday-first-alert-weather-day-issued-for-thanksgiving/article_fba5e8ca-38c2-4237-987a-2c68e8c04133.html",
+          "title": "Forecast: Quiet and cold for Tuesday, First Alert Weather Day issued for Thanksgiving",
+          "publisher": "KOMU 8",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK0t9WXfGPkrBq-6cdmrbYPgWSXPp6rYHzMoKVXV-wC56iY8VfYGnTIYAc0BE"
+        },
+        {
+          "url": "https://www.kcrg.com/2026/11/23/chilly-start-week-holiday-travel-system-way/",
+          "title": "Chilly Start to Week, Holiday Travel System on the Way",
+          "publisher": "KCRG",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxJv0wy7EIUKOpEUvpe5-FR6J57ptH5CURSuwzIaJYD20HwdfwH9457spvxZk"
+        },
+        {
+          "url": "https://fox2now.com/news/storm-threatens-st-louis-with-possible-rain-or-snow-for-thanksgiving/",
+          "title": "Storm threatens St. Louis with possible rain or snow for Thanksgiving",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRm4qiB6EdCQdVugaUS0IubyJkmtQ14OXSZfZ4D2eiIp4eEIMjK-VQzuDP-j_Y"
         }
       ]
     },
@@ -73,286 +337,6 @@
           "publisher": "Los Angeles Times",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAxaML1Nj1RDs9KlrvAWSJYcgpTDjdlG9ZBlLjKFxAYx9ObH6vN7keQyG9l6o"
-        }
-      ]
-    },
-    {
-      "query": "binge-watching",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:10:00Z",
-      "related_news_urls": [
-        "https://collider.com/netflix-shows-binge-week-november-23-2026/",
-        "https://www.yahoo.com/entertainment/tv/articles/grab-popcorn-8-best-netflix-185600496.html",
-        "https://parade.com/tv/new-netflix-shows-to-watch-this-weekend-november-20-22-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwHpi1D2pYEUh33q3lTRI_grUD6Tvf09wXgchKTgRvYJEzhbO88S_1YAeHd5k",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/netflix-shows-binge-week-november-23-2026/",
-          "title": "3 Elite Netflix Series to Binge This Week (Nov 23-27)",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwHpi1D2pYEUh33q3lTRI_grUD6Tvf09wXgchKTgRvYJEzhbO88S_1YAeHd5k"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/grab-popcorn-8-best-netflix-185600496.html",
-          "title": "Grab the Popcorn! The 8 Best Netflix Shows To Watch In November 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh7bvm5N46s9kIjf06ZME1lgMDY5GI6yC7kieeOQOH__izHhsQ4k15MfOTQDg"
-        },
-        {
-          "url": "https://parade.com/tv/new-netflix-shows-to-watch-this-weekend-november-20-22-2026",
-          "title": "Netflix Just Dropped ‘Big Brother’ in a Mall — Here’s What’s New to Watch This Weekend",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL94wUktZaPXUWe_064BZwMCrwFRz0g0m8UzysRLF-JUfGfSHBR-Drf6B0P4U"
-        }
-      ]
-    },
-    {
-      "query": "angel reese",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/angel-reese-shares-nickname-offseason-031647726.html",
-        "https://www.thebiglead.com/angel-reese-gushes-over-stunning-family-photo-during-wnba-offseason/",
-        "https://www.newsbreak.com/essentially-sports-363861119/5019715965199-angel-reese-makes-public-appeal-to-fans-after-her-offseason-content-plans-take-an-unexpected-hit"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyka-CTbSCHAQd66C-dvPU9yjt8Mbj-BffELXxCGqUP9iCilmqmXW1EXnuF4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/angel-reese-shares-nickname-offseason-031647726.html",
-          "title": "Angel Reese Shares New Nickname After Offseason Move to Florida",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMyka-CTbSCHAQd66C-dvPU9yjt8Mbj-BffELXxCGqUP9iCilmqmXW1EXnuF4"
-        },
-        {
-          "url": "https://www.thebiglead.com/angel-reese-gushes-over-stunning-family-photo-during-wnba-offseason/",
-          "title": "Angel Reese gushes over stunning family photo during WNBA offseason",
-          "publisher": "The Big Lead",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRT4dJU_WIdSgtyT16T0ovrwOxoJKKP_8f8AM6_mjYGAMF7bhig3P9iuJ8C7I4"
-        },
-        {
-          "url": "https://www.newsbreak.com/essentially-sports-363861119/5019715965199-angel-reese-makes-public-appeal-to-fans-after-her-offseason-content-plans-take-an-unexpected-hit",
-          "title": "Angel Reese Makes Public Appeal to Fans After Her Offseason Content Plans Take an Unexpected Hit",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP9bFtU_u_y0zhbtWbIHTUz8yGcnV2P2jAcUt74m81K20f_LPenBPDc2giBRQ"
-        }
-      ]
-    },
-    {
-      "query": "anne heche",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T11:00:00Z",
-      "related_news_urls": [
-        "https://mynewsla.com/business/2026/11/23/owners-of-home-destroyed-in-anne-heche-crash-join-in-seeking-estate-accounting/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/anne-heche-creditors-object-her-090058575.html",
-        "https://demokratis.co.id/en/durand-estate-settlement-challenge"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ62dLIARPkyum6CIukFFF2IWTs3rVhZQbFCD8sHt1TR40eQw0GXZytJkEbFPI",
-      "image_credit": "MyNewsLA.com",
-      "news": [
-        {
-          "url": "https://mynewsla.com/business/2026/11/23/owners-of-home-destroyed-in-anne-heche-crash-join-in-seeking-estate-accounting/",
-          "title": "Owners of Home Destroyed in Anne Heche Crash Join In Seeking Estate Accounting",
-          "publisher": "MyNewsLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ62dLIARPkyum6CIukFFF2IWTs3rVhZQbFCD8sHt1TR40eQw0GXZytJkEbFPI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/anne-heche-creditors-object-her-090058575.html",
-          "title": "Anne Heche Creditors Object to Her Son's Petition For Settlement",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpvuUnlTUtEDDlb7F0FggjYvq18HgtWZGVUEn5Nj6mLjNIDMLmpslr5KPQBeA"
-        },
-        {
-          "url": "https://demokratis.co.id/en/durand-estate-settlement-challenge",
-          "title": "Durand Family Challenges Anne Heche Estate Settlement",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQZOtCp6xXfDZr3_tagKEWEed7LJPieaX3diRaDrTUKp76ft3dS2ppXOy-pAs"
-        }
-      ]
-    },
-    {
-      "query": "phillies",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T10:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
-        "https://sports.yahoo.com/articles/yankees-could-teruaki-sato-answer-191144629.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7798757/2026/11/23/teruaki-sato-mlb-free-agency-profile/",
-          "title": "Why Teruaki Sato will be the top MLB free-agent value this offseason",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZKzbrYtq4JD1lgPE5wJtttVhBF0waELEXe_zeUtGyKRHf4Cnvx9Yicwv-kw"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/yankees-could-teruaki-sato-answer-191144629.html",
-          "title": "Yankees could have Teruaki Sato answer 'before Thanksgiving'",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQT5eZqjRGNgGvp5kBjDrErePzaNMCdc33hQ9lU0cLAwX0mzSeti7oqaohxAY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-23/report-cubs-still-in-the-mix-for-teruaki-sato",
-          "title": "Report: Cubs still ‘in the mix’ for Teruaki Sato",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7LNvVFT4_Y-5cBe9oQC5HJVFfq8qy2NkmEevHHEfcGuwsrnORjKLDqp9oxqA"
-        }
-      ]
-    },
-    {
-      "query": "black friday tv deals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T10:50:00Z",
-      "related_news_urls": [
-        "https://www.techradar.com/televisions/i-tested-three-new-5-star-oled-tvs-from-lg-and-samsung-side-by-side-and-i-know-which-is-my-top-pick-for-black-friday-2026",
-        "https://www.rtings.com/tv/deal-articles/tvs-black-friday-cyber-monday-2026",
-        "https://www.insightnews.com/business/consumer-reports-maps-early-black-friday-deals-on-tvs-soundbars-and-streaming-gear/article_c1618d89-9885-480f-a531-8c0fef955b3b.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSin5YBkrGgqtVxApEQ94LvE4MahR0aRHWGbYmWKsaKYEa11HGD7EooxyfDVVA",
-      "image_credit": "TechRadar",
-      "news": [
-        {
-          "url": "https://www.techradar.com/televisions/i-tested-three-new-5-star-oled-tvs-from-lg-and-samsung-side-by-side-and-i-know-which-is-my-top-pick-for-black-friday-2026",
-          "title": "I’m a TV calibrator, and I tested LG and Samsung’s 5-star OLED TVs side by side, to see which is the best Black Friday TV bargain — here’s my winner",
-          "publisher": "TechRadar",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSin5YBkrGgqtVxApEQ94LvE4MahR0aRHWGbYmWKsaKYEa11HGD7EooxyfDVVA"
-        },
-        {
-          "url": "https://www.rtings.com/tv/deal-articles/tvs-black-friday-cyber-monday-2026",
-          "title": "How To Buy The Right TV This Black Friday Season",
-          "publisher": "RTINGS.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBjGnKlQp22uIKxAVTT_ytvNeBBfDe4kKYHKg6JDKqdQMpXCXcvwlxnXEEORs"
-        },
-        {
-          "url": "https://www.insightnews.com/business/consumer-reports-maps-early-black-friday-deals-on-tvs-soundbars-and-streaming-gear/article_c1618d89-9885-480f-a531-8c0fef955b3b.html",
-          "title": "Consumer Reports maps early Black Friday deals on TVs, soundbars and streaming gear",
-          "publisher": "Insight News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbeyp19sHY2kRgIdjAEmDHD-YJk4Znn01tbQa0_vzpv4ONAOSuGWSUFbdTHoY"
-        }
-      ]
-    },
-    {
-      "query": "focker in law reviews",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T10:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-        "https://editorial.rottentomatoes.com/article/focker-in-law-first-reviews/",
-        "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-          "title": "Focker In-Law review – triangle of sadness as Ariana Grande joins Stiller and De Niro in the circle of trust",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ"
-        },
-        {
-          "url": "https://editorial.rottentomatoes.com/article/focker-in-law-first-reviews/",
-          "title": "Focker In-Law First Reviews: The Same Old Schtick, but Ariana Grande Is Great",
-          "publisher": "Rotten Tomatoes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSF5gRWJ1sRyR5md8vf-QNKcuHXJPKR_fl6_1ROPvxDwcHjkrKRC9yDqhgbes"
-        },
-        {
-          "url": "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0",
-          "title": "Movie Review: Ariana Grande gives a moribund franchise a pair of shock paddles in 'Focker In-Law'",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_f4vcGWKXDHmD-6a8KZPSvzhsp3RuJehQNp7Y5QdlSZcKuZ_J3uP58W0__Tc"
-        }
-      ]
-    },
-    {
-      "query": "insmed",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T10:30:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-        "https://www.wsj.com/business/deals/sanofi-to-buy-insmed-for-41-0-billion-36d6b07d",
-        "https://www.reuters.com/legal/litigation/sanofi-acquire-insmed-41-billion-deal-2026-11-24/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIx2Q8iQq2JQLESiEkJ6bENIIKSvw99BuOXf3fc9IKEaMUw_vFvLyUq1sv1Q",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/24/insmed-sanofi-deal-stock-pharma.html",
-          "title": "Drugmaker Insmed shares rally 14% after Sanofi agrees to buy it in pharma’s biggest deal in three years",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPIx2Q8iQq2JQLESiEkJ6bENIIKSvw99BuOXf3fc9IKEaMUw_vFvLyUq1sv1Q"
-        },
-        {
-          "url": "https://www.wsj.com/business/deals/sanofi-to-buy-insmed-for-41-0-billion-36d6b07d",
-          "title": "Sanofi Strikes $41 Billion Deal to Buy U.S. Drugmaker Insmed",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRD19K25Rk2BcibaW5ukZksWUErT4SPL5NxPSJNaOPvov09-LkXVTADJrmrkA"
-        },
-        {
-          "url": "https://www.reuters.com/legal/litigation/sanofi-acquire-insmed-41-billion-deal-2026-11-24/",
-          "title": "Sanofi strikes $41 billion deal for Insmed as CEO Garijo makes her mark",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTttdFDodglfJ3OqnmtkZ_IGgIiiOLVvDIWHOOSCaeIZYZ7ehN7-rp1d8FsQc4"
-        }
-      ]
-    },
-    {
-      "query": "pakistan a vs nepal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T10:10:00Z",
-      "related_news_urls": [
-        "https://demokratis.co.id/en/nepal-removes-shamyl-hussain",
-        "https://www.ndtvprofit.com/sports/pakistan-a-vs-nepal-live-streaming-when-and-where-to-watch-rising-stars-asia-cup-match-12369526",
-        "https://sports.ndtv.com/cricket/pakistan-vs-nepal-live-score-asia-cup-rising-stars-live-updates-12370170"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGmVnMyUL-wf1W93t19tGhLJX9ITOt5naOaSqN3sDvCDx6z-T89lh7ghD5jU",
-      "image_credit": "Demokratis.co.id",
-      "news": [
-        {
-          "url": "https://demokratis.co.id/en/nepal-removes-shamyl-hussain",
-          "title": "Nepal Removes Shamyl Hussain in First Over Against Pakistan A",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGmVnMyUL-wf1W93t19tGhLJX9ITOt5naOaSqN3sDvCDx6z-T89lh7ghD5jU"
-        },
-        {
-          "url": "https://www.ndtvprofit.com/sports/pakistan-a-vs-nepal-live-streaming-when-and-where-to-watch-rising-stars-asia-cup-match-12369526",
-          "title": "Pakistan A vs Nepal Live Streaming: When And Where To Watch Rising Stars Asia Cup Match?",
-          "publisher": "NDTV Profit",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8UsfCK0KEycsEE7nQlYsNcTTFzre2gHRPTJu2AkQ965LRRftzL-5kpmKUL7g"
-        },
-        {
-          "url": "https://sports.ndtv.com/cricket/pakistan-vs-nepal-live-score-asia-cup-rising-stars-live-updates-12370170",
-          "title": "Pakistan vs Nepal Live Score, Asia Cup Rising Stars Live Updates:Pakistan Shocked, 3-Down In 7 Overs vs Nepal",
-          "publisher": "NDTV Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAGLfp8EvKEbUxrd9ndGMxqT4a-C5gCbime5guumoTuVk--mstbizWc7G1EDQ"
         }
       ]
     }
