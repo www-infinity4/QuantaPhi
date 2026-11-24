@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T06:38:02.763976Z",
+  "checked_at": "2026-11-24T07:01:11.669652Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "high wind watch",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T06:30:00Z",
+      "related_news_urls": [
+        "https://www.vvng.com/strong-winds-arrive-wednesday-night-ahead-of-thursday-rain-in-victor-valley/",
+        "https://www.sacbee.com/news/weather-news/article318217664.html",
+        "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_PvIoorZwlszMQ_YnC7V0ZXBnsCtyJ7t_JPTIL-NcIVPrewefRhxtacjnhQ",
+      "image_credit": "VVNG",
+      "news": [
+        {
+          "url": "https://www.vvng.com/strong-winds-arrive-wednesday-night-ahead-of-thursday-rain-in-victor-valley/",
+          "title": "Strong Winds Arrive Wednesday Night Ahead Of Thursday Rain In Victor Valley",
+          "publisher": "VVNG",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_PvIoorZwlszMQ_YnC7V0ZXBnsCtyJ7t_JPTIL-NcIVPrewefRhxtacjnhQ"
+        },
+        {
+          "url": "https://www.sacbee.com/news/weather-news/article318217664.html",
+          "title": "UPDATE: Wind advisory in place for Coastal Del Norte until early Tuesday evening",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfAWm9758fsGfjdAiICGlY7GXHCgEZtITFKh0wCI83fjsUtCay_ViP968VLY"
+        },
+        {
+          "url": "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/",
+          "title": "Wind advisory in place for Los Angeles County for Thursday – wind gusts up to 45 mph",
+          "publisher": "Los Angeles Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXmPBCiLCH4FHElnY_4efiNlq7ujKsj0aBLZylA2jqRKOdVaLCTq_sWTwJd8"
+        }
+      ]
+    },
+    {
+      "query": "colombia",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T06:30:00Z",
+      "related_news_urls": [
+        "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
+        "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
+        "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk",
+      "image_credit": "EL PAÍS",
+      "news": [
+        {
+          "url": "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
+          "title": "Un carro bomba explota frente a la Gobernación del Meta en Villavicencio",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk"
+        },
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
+          "title": "Un atentado con coche bomba deja edificios destruidos y caos en Colombia",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE"
+        },
+        {
+          "url": "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625",
+          "title": "Videos muestran gravedad del atentado con explosivos contra la Gobernación del Meta en la noche de este 23 de noviembre: hay varios locales afectados",
+          "publisher": "El Tiempo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu9skCGXdro_p-FJ86wD7IqGlP6Tfce7hYv7MktArcyqXocKEBWzAt6DP-xWU"
+        }
+      ]
+    },
     {
       "query": "seth rogen",
       "approx_searches": "200+",
@@ -81,19 +151,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-24T05:50:00Z",
       "related_news_urls": [
-        "https://www.uefa.com/uefachampionsleague/news/02ab-2219497a67d6-4ad6623df0a1-1000--champions-league-matchday-5-key-stats-and-what-to-look-o/",
+        "https://www.uefa.com/uefachampionsleague/news/02ab-2223c67db015-c4f7874e074e-1000--champions-league-predicted-line-ups-matchday-5-team-news-/",
         "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
         "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMz2A746cY5M0OwViYVf64wTqcNw6xtOSzmnCMOXDCVqP_-tczHq_V9AsRA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQounOBkcRkEG408rr9MhCObUbYwuERxuZkWKgKw_RmwTuhyX8Jt2o0UI4MSQ",
       "image_credit": "UEFA.com",
       "news": [
         {
-          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-2219497a67d6-4ad6623df0a1-1000--champions-league-matchday-5-key-stats-and-what-to-look-o/",
-          "title": "Champions League Matchday 5: Key stats and what to look out for in every game",
+          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-2223c67db015-c4f7874e074e-1000--champions-league-predicted-line-ups-matchday-5-team-news-/",
+          "title": "Champions League predicted line-ups: Matchday 5 team news, injuries, suspensions",
           "publisher": "UEFA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxMz2A746cY5M0OwViYVf64wTqcNw6xtOSzmnCMOXDCVqP_-tczHq_V9AsRA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQounOBkcRkEG408rr9MhCObUbYwuERxuZkWKgKw_RmwTuhyX8Jt2o0UI4MSQ"
         },
         {
           "url": "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
@@ -108,76 +178,6 @@
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kD6veGoy_2wnsKYoJmDijFghCSDJTecBmvJHnG_oRTd9OV4JHz0yy5hdnp8"
-        }
-      ]
-    },
-    {
-      "query": "lakers standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
-        "https://abc7.com/tag/all-star-format/",
-        "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
-          "title": "Too-early NBA All-Star picks: The 24 most deserving players right now",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
-        },
-        {
-          "url": "https://abc7.com/tag/all-star-format/",
-          "title": "All Star Format",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html",
-          "title": "And-Ones: Early All-Stars, Neto, Nunnally, Perry",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEdtqaPquIeaanfoef5PFF18CEIh_dvT-6g8Xmn3E1UhKA-YWmk-7pgjhfkGE"
-        }
-      ]
-    },
-    {
-      "query": "singapore",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-        "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
-        "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYNS6iJVpkcXCSARMeGy6eroF9P2NmNIIQGxhSKNCdL8jR-rOhvU8S91aK-wI",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/22/us/politics/alice-huang-china-spy-agency-nvidia.html",
-          "title": "U.S. Tracked Alice Huang’s Contacts With China Spy Agency During Nvidia Affair",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYNS6iJVpkcXCSARMeGy6eroF9P2NmNIIQGxhSKNCdL8jR-rOhvU8S91aK-wI"
-        },
-        {
-          "url": "https://www.aljazeera.com/economy/2026/11/24/us-adds-megaspeed-firm-at-centre-of-nvidia-scandal-to-export-control-list",
-          "title": "US adds Megaspeed to trade blacklist as Nvidia’s Huang returns as CEO",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQp_OSDB1dTt6pi-W042rK1n_BLMkQpP2olzAdazcTnx-8v5g6YlvgeLx4DdhE"
-        },
-        {
-          "url": "https://www.reuters.com/business/us-blacklist-megaspeed-chip-firm-linked-nvidia-scandal-source-says-2026-11-23/",
-          "title": "US blacklists Alibaba subsidiary and Megaspeed linked to Nvidia scandal",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQo38j9UMNrxD-o8DxQaKv4LJBdd8iBgswnQf-mK9L86TCnk0BHHRy9BoD6DtQ"
         }
       ]
     },
@@ -217,8 +217,43 @@
       ]
     },
     {
-      "query": "nosedive",
+      "query": "lakers standings",
       "approx_searches": "200+",
+      "published_at": "2026-11-24T05:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
+        "https://abc7.com/tag/all-star-format/",
+        "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
+          "title": "Too-early NBA All-Star picks: The 24 most deserving players right now",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
+        },
+        {
+          "url": "https://abc7.com/tag/all-star-format/",
+          "title": "All Star Format",
+          "publisher": "ABC7 Los Angeles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
+        },
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html",
+          "title": "And-Ones: Early All-Stars, Neto, Nunnally, Perry",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEdtqaPquIeaanfoef5PFF18CEIh_dvT-6g8Xmn3E1UhKA-YWmk-7pgjhfkGE"
+        }
+      ]
+    },
+    {
+      "query": "nosedive",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T05:40:00Z",
       "related_news_urls": [
         "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
@@ -318,41 +353,6 @@
           "publisher": "Heavy.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9VngXPd-gcNd5RxvaVGPSVcgJ2okANqf53o3avKk4At4PPr0Lxkdi4YpDp3M"
-        }
-      ]
-    },
-    {
-      "query": "criminal profile gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:30:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-        "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
-        "https://www.forbes.com/sites/paultassi/2026/11/23/clearing-up-false-info-about-the-gta-6-criminal-profile-system/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-          "title": "GTA 6 Criminal Profile: How the system works",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
-        },
-        {
-          "url": "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
-          "title": "GTA VI Does What Most Video Games With Choice And Morality Systems Don't",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTS3ovd2xYejn0MgHW0gFmPA76RKumlKSYa7LQ2Qfw4hC-LU6ShcYX4lH5SG9U"
-        },
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/23/clearing-up-false-info-about-the-gta-6-criminal-profile-system/",
-          "title": "Clearing Up False Info About The ‘GTA 6’ Criminal Profile System",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSq7ehWendwqylRThKsA7w8mSMAKk6OiqwNc1lUeYzcMTz3u5n6jSWUCzABG2c"
         }
       ]
     }
