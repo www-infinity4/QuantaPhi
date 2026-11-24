@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T01:31:21.164610Z",
+  "checked_at": "2026-11-24T02:01:29.154893Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "commanders stadium",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:10:00Z",
+      "query": "frankie luvu",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T01:40:00Z",
       "related_news_urls": [
-        "https://www.wusa9.com/article/news/investigations/commanders-stadium/rfk-stadium-final-four-womens-world-cup-washington-commanders-events-dc/65-39758810-7b19-4ed0-9704-060c42fded48",
-        "https://www.washingtonsun.com/sports/colleges/rfk-commanders-stadium-final-four",
-        "https://www.wusa9.com/video/news/investigations/commanders-stadium/dc-promised-major-sporting-events-at-the-new-rfk-but-first-big-bid-came-up-short/65-c88424d9-5f33-4163-87d2-da7bc57636e9"
+        "https://www.hogshaven.com/washington-commanders-news/456538/frankie-luvu-fine-nfl-commanders-giants",
+        "https://sports.yahoo.com/articles/nfl-hands-down-punishment-over-143756511.html",
+        "https://heavy.com/sports/nfl/washington-commanders/commanders-veteran-hit-with-nfl-punishment/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo",
-      "image_credit": "WUSA9",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6a4jwxjHmI2UsHhqHBsTjUKUC__eiryUmR5oLUPS8-NJlOwKqR3JYtCT2DIo",
+      "image_credit": "Hogs Haven",
       "news": [
         {
-          "url": "https://www.wusa9.com/article/news/investigations/commanders-stadium/rfk-stadium-final-four-womens-world-cup-washington-commanders-events-dc/65-39758810-7b19-4ed0-9704-060c42fded48",
-          "title": "DC promised major sporting events at the new RFK, but first big bid came up short",
-          "publisher": "WUSA9",
+          "url": "https://www.hogshaven.com/washington-commanders-news/456538/frankie-luvu-fine-nfl-commanders-giants",
+          "title": "Frankie Luvu fined by NFL for hit in Commanders victory over Giants",
+          "publisher": "Hogs Haven",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6a4jwxjHmI2UsHhqHBsTjUKUC__eiryUmR5oLUPS8-NJlOwKqR3JYtCT2DIo"
         },
         {
-          "url": "https://www.washingtonsun.com/sports/colleges/rfk-commanders-stadium-final-four",
-          "title": "The New RFK Stadium Made an Unsuccessful Bid to Host the Final Four",
-          "publisher": "NOTUS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmQIOXPJ1G3dUvp6k5Ege2KOIX86M5gFTOUnhyptMSqitC3iToTUr8kWw40Q"
-        },
-        {
-          "url": "https://www.wusa9.com/video/news/investigations/commanders-stadium/dc-promised-major-sporting-events-at-the-new-rfk-but-first-big-bid-came-up-short/65-c88424d9-5f33-4163-87d2-da7bc57636e9",
-          "title": "DC promised major sporting events at the new RFK, but first big bid came up short",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo"
-        }
-      ]
-    },
-    {
-      "query": "meet the parents",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T01:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-        "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0",
-        "https://www.forbes.com/sites/timlammers/2026/11/23/focker-in-law-rotten-tomatoes-critics-splatter-meet-the-parents-sequel/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
-          "title": "Focker In-Law review – triangle of sadness as Ariana Grande joins Stiller and De Niro in the circle of trust",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ"
-        },
-        {
-          "url": "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0",
-          "title": "Movie Review: Ariana Grande gives a moribund franchise a pair of shock paddles in 'Focker In-Law'",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_f4vcGWKXDHmD-6a8KZPSvzhsp3RuJehQNp7Y5QdlSZcKuZ_J3uP58W0__Tc"
-        },
-        {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/23/focker-in-law-rotten-tomatoes-critics-splatter-meet-the-parents-sequel/",
-          "title": "‘Focker In-Law’: Rotten Tomatoes Critics Splatter ‘Meet The Parents’ Sequel",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiPIwFvv5a6Q942-pqEcr_wCHhGK-aiMZwum3TQjO0UGsSrYEAtyn03jGxk3c"
-        }
-      ]
-    },
-    {
-      "query": "monmouth basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:10:00Z",
-      "related_news_urls": [
-        "https://goheels.com/news/2026/11/22/mens-basketball-welcomes-monmouth-monday",
-        "https://sports.yahoo.com/articles/unc-vs-monmouth-live-discussion-000000968.html",
-        "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-monmouth-basketball-preview-familiar-faces-chapel-hill/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCYE9tY25XzL7bGEtrUwEOy1uQ1-2dtSORLvMfxBJkI1g_vIVWNYhrUBjKNk",
-      "image_credit": "University of North Carolina Athletics",
-      "news": [
-        {
-          "url": "https://goheels.com/news/2026/11/22/mens-basketball-welcomes-monmouth-monday",
-          "title": "Men's Basketball Welcomes Monmouth Monday - University of North Carolina Athletics",
-          "publisher": "University of North Carolina Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCYE9tY25XzL7bGEtrUwEOy1uQ1-2dtSORLvMfxBJkI1g_vIVWNYhrUBjKNk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/unc-vs-monmouth-live-discussion-000000968.html",
-          "title": "UNC vs. Monmouth Live Discussion",
+          "url": "https://sports.yahoo.com/articles/nfl-hands-down-punishment-over-143756511.html",
+          "title": "NFL Hands Down Punishment Over New York Giants Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5Xocl5f7_bBRi66gDD7psiMMl8UqM71YSj6zm30l5M9dMngPfnojXNCmzbAE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_yk1WhKl3wyqb3gDSZerwUc7SwiXzKq62cVzy7bnL4MAMxA9tJ2uCur7noGc"
         },
         {
-          "url": "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-monmouth-basketball-preview-familiar-faces-chapel-hill/",
-          "title": "UNC-Monmouth Preview: Tar Heels Welcome Back Familiar Faces for Final Tune-Up",
-          "publisher": "On3",
+          "url": "https://heavy.com/sports/nfl/washington-commanders/commanders-veteran-hit-with-nfl-punishment/",
+          "title": "Commanders Veteran Hit With NFL Punishment Ahead of Bengals Game",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWVG8Uo8Ni6PQSIf8m5m5t91h1QdKxWxYyQqKquuegnVCCZe3wXm8rBTGWfCY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQHVa63H6KT2YUVKT7Dt0PXU3udRUxhIHys8XdX-9IoZ-OXN97MheHE9Ql3d8"
         }
       ]
     },
     {
-      "query": "laudanum",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T01:10:00Z",
+      "query": "samaje perine",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T01:40:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/1304998/the-gilded-age-season-4-interview-morgan-spector-blake-ritson-george-russell-oscar-van-rhijn-exclusive/",
-        "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-star-morgan-spector-130000652.html",
-        "https://deadline.com/2026/11/the-gilded-age-george-laudanum-addiction-season-4-1237231274/"
+        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=carson-beck-new-yorkjets",
+        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=jacory-croskeymerritt-roman-wilson",
+        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=roman-wilson-mark-andrews"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGuoxBIxtST3JV80EId9oO3YikQwu4dGCoKNzTSbym8_OkjIuENIArXxMzh9c",
-      "image_credit": "TV Insider",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE",
+      "image_credit": "RotoBaller",
       "news": [
         {
-          "url": "https://www.tvinsider.com/1304998/the-gilded-age-season-4-interview-morgan-spector-blake-ritson-george-russell-oscar-van-rhijn-exclusive/",
-          "title": "‘The Gilded Age’ Stars Break Down Oscar’s Secret Grief & George’s Addiction",
-          "publisher": "TV Insider",
+          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=carson-beck-new-yorkjets",
+          "title": "Carson Beck or New York Jets: Who Should I Pick Up? Fantasy Football (2026)",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGuoxBIxtST3JV80EId9oO3YikQwu4dGCoKNzTSbym8_OkjIuENIArXxMzh9c"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-star-morgan-spector-130000652.html",
-          "title": "‘Gilded Age’ star Morgan Spector based George’s ‘inspired’ laudanum mania on a real 19th century drug addict",
+          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=jacory-croskeymerritt-roman-wilson",
+          "title": "Jacory Croskey-Merritt or Roman Wilson: Who Should I Pick Up? Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+        },
+        {
+          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=roman-wilson-mark-andrews",
+          "title": "Mark Andrews or Roman Wilson: Who Should I Pick Up? Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+        }
+      ]
+    },
+    {
+      "query": "anfernee simons",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T01:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/sixers-anfernee-simons-singles-blazers-193718594.html",
+        "https://sports.yahoo.com/articles/anfernee-simons-continues-76ers-most-011507293.html",
+        "https://www.fantasypros.com/nba/news/621157/anfernee-simons-racks-up-18-points-win-over-magic.php"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhwJ6z_Tw2OJ3ymTGutuNVspPM9t-ZohTPLGavb-2NEIVjMpSJ1x7h3AxcOs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/sixers-anfernee-simons-singles-blazers-193718594.html",
+          "title": "Sixers' Anfernee Simons singles out Blazers star Damian Lillard",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhwJ6z_Tw2OJ3ymTGutuNVspPM9t-ZohTPLGavb-2NEIVjMpSJ1x7h3AxcOs"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/anfernee-simons-continues-76ers-most-011507293.html",
+          "title": "Anfernee Simons Continues To Be 76ers’ Most Underrated Signing",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3s72lgoxJM7jF82X_Mtdk6JMH2AYG28FTArv2-yTr-3-QBSJPn1ojzkudXuE"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/621157/anfernee-simons-racks-up-18-points-win-over-magic.php",
+          "title": "Anfernee Simons racks up 18 points in win over Magic",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfE6fXV6oNjLUGMLQs-EM4siccUfCbPFL2epHYVJ_RUjGzmZ67Xsd3lUhZVkE"
+        }
+      ]
+    },
+    {
+      "query": "washington weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T01:40:00Z",
+      "related_news_urls": [
+        "https://komonews.com/weather/king-tides-storms-thanksgiving-week-raise-coastal-tidal-flooding-risk-in-western-washington-grays-harbor-willapa-bay-westport-ocean-shores-long-beach-peninsula-puget-sound",
+        "https://www.seattletimes.com/seattle-news/weather/seattle-forecast-thanksgiving-week-serves-up-storms-coastal-flooding/",
+        "https://www.kiro7.com/news/local/holiday-travel-warning-storm-systems-bring-rain-wind-coastal-flooding-mountain-snow/NLTWHK6H6VE5NMRWDBTJD6QPGQ/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtyDkgTChHQxYH7CqN2W-DJ1wW20P6J3rDWL5Wu4tinFGWyN8iAAwtcjOryek",
+      "image_credit": "KOMO",
+      "news": [
+        {
+          "url": "https://komonews.com/weather/king-tides-storms-thanksgiving-week-raise-coastal-tidal-flooding-risk-in-western-washington-grays-harbor-willapa-bay-westport-ocean-shores-long-beach-peninsula-puget-sound",
+          "title": "King tides, storms raise flooding risk in parts of Western Washington Thanksgiving week",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtyDkgTChHQxYH7CqN2W-DJ1wW20P6J3rDWL5Wu4tinFGWyN8iAAwtcjOryek"
+        },
+        {
+          "url": "https://www.seattletimes.com/seattle-news/weather/seattle-forecast-thanksgiving-week-serves-up-storms-coastal-flooding/",
+          "title": "Thanksgiving week weather serves up storms, astronomical tides",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0kh3Bik2tfZ4Ta7DQ7Geq_hRiIxumnrfb9bLZfmHzO76VIoucDXONQEeUFA"
+        },
+        {
+          "url": "https://www.kiro7.com/news/local/holiday-travel-warning-storm-systems-bring-rain-wind-coastal-flooding-mountain-snow/NLTWHK6H6VE5NMRWDBTJD6QPGQ/",
+          "title": "Holiday Travel Warning: Storm systems bring rain, wind, coastal flooding, mountain snow",
+          "publisher": "KIRO 7 News Seattle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqlTB834d6uAWH2wjS4abONTWRUoUA-oOB_La9Qt4hxxzb8Ly9eK8_R7wKXg"
+        }
+      ]
+    },
+    {
+      "query": "john candy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T01:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/21-planes-trains-automobiles-memes-100000878.html",
+        "https://www.slashfilm.com/2323368/john-candy-best-line-greatest-thanksgiving-movie-quote/",
+        "https://www.myjournalcourier.com/opinion/article/john-a-tures-getting-hacked-holidays-22538349.php"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJi0hDmBWGa-8a5M1ZmW9QvEmAhF_xceF9oTIKTxjGL1BCrhbAaUEVOZW9V3c",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/21-planes-trains-automobiles-memes-100000878.html",
+          "title": "21 'Planes, Trains and Automobiles' Memes for Anyone Who Thought Air Travel Couldn't Get Worse",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5hzZkdyib4IxwMTpAQnZUekOOiTUAuYGxZvKjZkX-5aQPa8bAZYhffa5MRQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJi0hDmBWGa-8a5M1ZmW9QvEmAhF_xceF9oTIKTxjGL1BCrhbAaUEVOZW9V3c"
         },
         {
-          "url": "https://deadline.com/2026/11/the-gilded-age-george-laudanum-addiction-season-4-1237231274/",
-          "title": "'The Gilded Age' Star Morgan Spector Unpacks George's [Spoiler]",
-          "publisher": "Deadline",
+          "url": "https://www.slashfilm.com/2323368/john-candy-best-line-greatest-thanksgiving-movie-quote/",
+          "title": "39 Years Later, John Candy's Best Line Is Still The Greatest Thanksgiving Movie Quote Ever",
+          "publisher": "SlashFilm",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSr7aYWNZy-Tho7YbF1LGm5fAQEARDhoOz2vd8UOowkKkWCYJOhz3a7G5EKdA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6271HGKwOkXEpAW0kwdsjMnp06fhOpAVPguXGeW9nW9LWOi-BDvMcoQlnv8"
+        },
+        {
+          "url": "https://www.myjournalcourier.com/opinion/article/john-a-tures-getting-hacked-holidays-22538349.php",
+          "title": "Commentary: John A. Tures: Planes, banks and automobiles: Getting hacked for the holidays",
+          "publisher": "Jacksonville Journal-Courier",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgkcKaq_cx1lKeIxKoj6ypRTgn1D1ufF7pcvTcPXxYxIF6ivrdkyn4QjQOPHQ"
         }
       ]
     },
     {
-      "query": "dominick barlow",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:10:00Z",
+      "query": "bengals",
+      "approx_searches": "200000+",
+      "published_at": "2026-11-24T01:30:00Z",
       "related_news_urls": [
-        "https://www.inquirer.com/sixers/sixers-lebron-james-dominick-barlow-nba-injury-20261122.html",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/dominick-barlow-sixers-season-debut-injury-update/768284/",
-        "https://thesixersense.com/dominick-barlow-dials-pressure-on-multiple-76ers-after-season-debut"
+        "https://www.nytimes.com/athletic/live-blogs/bengals-vs-commanders-live-score-updates-nfl-mnf-result/v10Hk2ucEP09/",
+        "https://www.thefantasyfootballers.com/dfs/dfs-monday-night-football-draftkings-for-week-11-fantasy-football-2/",
+        "https://www.fanduel.com/research/3-best-anytime-touchdown-nfl-player-prop-bets-tonight-for-mnf-bengals-vs-commanders"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq8EEnNRTcvt7DAt-Cz1n7CPLhExTWaX_nSdm0rG1lvo349Cqm6hvL3qWlsi4",
-      "image_credit": "Inquirer.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZUFH0ArDbQxNndWM9wfD4T3aswQZplDb1qdJe6_gm0W7YT-kOvaPrzejG03o",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.inquirer.com/sixers/sixers-lebron-james-dominick-barlow-nba-injury-20261122.html",
-          "title": "Dominick Barlow was ‘excellent’ in his Sixers season debut against the Milwaukee Bucks",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq8EEnNRTcvt7DAt-Cz1n7CPLhExTWaX_nSdm0rG1lvo349Cqm6hvL3qWlsi4"
-        },
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/dominick-barlow-sixers-season-debut-injury-update/768284/",
-          "title": "Barlow looks set for season debut with Sixers after long days, ‘miserable' weeks",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRPdDmAAKtwWysckyHmtvZL4JTEGmN4iax7IiFbZti-FZUd9Ydn-TuziXMUVg"
-        },
-        {
-          "url": "https://thesixersense.com/dominick-barlow-dials-pressure-on-multiple-76ers-after-season-debut",
-          "title": "Dominick Barlow dials up pressure on multiple 76ers after season debut",
-          "publisher": "The Sixer Sense",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxA1xwkUqDRxaR_z2vdA9zAL-mwMQ9dgKYxxAPU3Cbn2y88HnW2K0GIijuYKI"
-        }
-      ]
-    },
-    {
-      "query": "lsu women's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/womens-college-basketball/news/lsu-milaysia-fulwiley-returns-team-felony-charges-dropped-arrest/",
-        "https://www.nytimes.com/athletic/7806574/2026/11/23/lsu-milaysia-fulwiley-rejoin-womens-basketball-team-arrest/",
-        "https://www.wafb.com/2026/11/20/some-charges-dropped-against-lsu-guard-milaysia-fulwiley/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyK9RJRF5ez_CFrBQZFrpVtPjuwlWcR0kmwgZZnIoTTIsDHOUKveHPqYs-eUY",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/womens-college-basketball/news/lsu-milaysia-fulwiley-returns-team-felony-charges-dropped-arrest/",
-          "title": "LSU's MiLaysia Fulwiley back with Tigers, cleared to play after felony charges dropped",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyK9RJRF5ez_CFrBQZFrpVtPjuwlWcR0kmwgZZnIoTTIsDHOUKveHPqYs-eUY"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7806574/2026/11/23/lsu-milaysia-fulwiley-rejoin-womens-basketball-team-arrest/",
-          "title": "LSU’s MiLaysia Fulwiley rejoins women’s basketball team after arrest - The Athletic",
+          "url": "https://www.nytimes.com/athletic/live-blogs/bengals-vs-commanders-live-score-updates-nfl-mnf-result/v10Hk2ucEP09/",
+          "title": "Bengals vs. Commanders live score updates: NFL latest with defenses on top after scoreless first quarter - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Ale7eXxw5BeISeppt08LGwwkJ5uKcbsOyQq8wl1OZXGAdBRN1UEley94FcI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZUFH0ArDbQxNndWM9wfD4T3aswQZplDb1qdJe6_gm0W7YT-kOvaPrzejG03o"
         },
         {
-          "url": "https://www.wafb.com/2026/11/20/some-charges-dropped-against-lsu-guard-milaysia-fulwiley/",
-          "title": "Felony charges dropped against LSU guard MiLaysia Fulwiley",
-          "publisher": "WAFB",
+          "url": "https://www.thefantasyfootballers.com/dfs/dfs-monday-night-football-draftkings-for-week-11-fantasy-football-2/",
+          "title": "DFS Monday Night Football: DraftKings for Week 11 (Fantasy Football)",
+          "publisher": "Fantasy Footballers Podcast",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq9Rlc6FTo7aGQMBPEWSjPkT6Mbqa_BEB7SWs8DnCZ_x_EwkFTBKw9swJWXTc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxxcX5zkmd0T-EVsf6PQ_IYcVy35MbLRzlZCGzw67aWuapFkp_AXfUUua1SpY"
+        },
+        {
+          "url": "https://www.fanduel.com/research/3-best-anytime-touchdown-nfl-player-prop-bets-tonight-for-mnf-bengals-vs-commanders",
+          "title": "3 Best Anytime Touchdown NFL Player Prop Bets Tonight for MNF Bengals vs Commanders",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2lsih9xZdotSHG9qbjzvhuM1eC0L-D4uDcWRDsJVBdXJh6MHITQxpif0_lEA"
         }
       ]
     },
     {
-      "query": "high potential",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:10:00Z",
-      "related_news_urls": [
-        "https://www.goodhousekeeping.com/entertainment/tv-shows/a74443331/high-potential-cast-season-3-kaitlin-olson-hair-instagram/",
-        "https://cwibc.co.id/en/abc-2027-midseason-return-dates",
-        "https://karlobag.eu/en/entertainment/high-potential-season-3-new-trailer-previews-kaitlin-olson-s-return-and-january-of03y/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRphUMTCk5aXvOq_ysnebSphiJ3r2LCc9XgTI0P6qeDcOWQdMR8egPRPpdx30",
-      "image_credit": "Good Housekeeping",
-      "news": [
-        {
-          "url": "https://www.goodhousekeeping.com/entertainment/tv-shows/a74443331/high-potential-cast-season-3-kaitlin-olson-hair-instagram/",
-          "title": "‘High Potential’ Fans Have So Many Questions About Kaitlin Olson’s New Look Ahead of Season 3",
-          "publisher": "Good Housekeeping",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRphUMTCk5aXvOq_ysnebSphiJ3r2LCc9XgTI0P6qeDcOWQdMR8egPRPpdx30"
-        },
-        {
-          "url": "https://cwibc.co.id/en/abc-2027-midseason-return-dates",
-          "title": "ABC Sets 2027 Return Dates for High Potential and The Rookie",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqactJChIbx-3bowJfymtTgNHTEDGjxnFmvpoEkDQHbL8f4JpV7mi5nz0-Ic"
-        },
-        {
-          "url": "https://karlobag.eu/en/entertainment/high-potential-season-3-new-trailer-previews-kaitlin-olson-s-return-and-january-of03y/",
-          "title": "High Potential Season 3: Kaitlin Olson Returns to ABC",
-          "publisher": "KarloBag.eu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Q7aRvMxxJl_fFhYyLdCiB43eSYK78gXm8yPa_1KPlL1vbZuv5P4O8CKLOfY"
-        }
-      ]
-    },
-    {
-      "query": "winthrop vs illinois",
+      "query": "dexter lawrence",
       "approx_searches": "2000+",
-      "published_at": "2026-11-24T01:00:00Z",
+      "published_at": "2026-11-24T01:30:00Z",
       "related_news_urls": [
-        "https://fightingillini.com/news/2026/11/22/mens-basketball-no-10-illini-continue-homestand-monday-vs-winthrop",
-        "https://www.thechampaignroom.com/illinois-fighting-illini-basketball-news/59005/brad-underwood-gives-update-on-sick-illini-brad-underwood-quentin-coleman-illinois-fighting-illini-college-basketball",
-        "https://www.foxsports.com/stories/mens-college-basketball/how-watch-winthrop-vs-illinois-tv-channel-live-stream-time-nov-23-2026"
+        "https://www.hogshaven.com/washington-commanders-news/456184/dexter-lawrence-brings-huge-test-for-commanders-ol-nick-allegretti-lucas-patrick-antonio-williams-stefon-diggs",
+        "https://riggosrag.com/sam-cosmi-must-keep-dexter-lawrence-wrecking-washington-commanders-game-plan",
+        "https://heavy.com/sports/nfl/washington-commanders/sam-cosmi-titanic-dexter-lawrence-bengals/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOdSW53QwSAUHU95KxoKF9lWWQ630mmOUQp-BunINav2OfvFNuBOFftOI1NA",
-      "image_credit": "University of Illinois Athletics",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvj-w2WC1enWGH-GGD-IFdXAZ7KjYQXU2O2v_2lucnD_oXKfhRBB-XKvzQXg",
+      "image_credit": "Hogs Haven",
       "news": [
         {
-          "url": "https://fightingillini.com/news/2026/11/22/mens-basketball-no-10-illini-continue-homestand-monday-vs-winthrop",
-          "title": "No. 4 Illini Continue Homestand Monday vs. Winthrop",
-          "publisher": "University of Illinois Athletics",
+          "url": "https://www.hogshaven.com/washington-commanders-news/456184/dexter-lawrence-brings-huge-test-for-commanders-ol-nick-allegretti-lucas-patrick-antonio-williams-stefon-diggs",
+          "title": "Cutting pressure in half and beating Cover-0: Washington’s OL is finding answers at the right time - Daily Slop",
+          "publisher": "Hogs Haven",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOdSW53QwSAUHU95KxoKF9lWWQ630mmOUQp-BunINav2OfvFNuBOFftOI1NA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvj-w2WC1enWGH-GGD-IFdXAZ7KjYQXU2O2v_2lucnD_oXKfhRBB-XKvzQXg"
         },
         {
-          "url": "https://www.thechampaignroom.com/illinois-fighting-illini-basketball-news/59005/brad-underwood-gives-update-on-sick-illini-brad-underwood-quentin-coleman-illinois-fighting-illini-college-basketball",
-          "title": "Brad Underwood gives update on sick Illini",
-          "publisher": "The Champaign Room",
+          "url": "https://riggosrag.com/sam-cosmi-must-keep-dexter-lawrence-wrecking-washington-commanders-game-plan",
+          "title": "Sam Cosmi must keep Dexter Lawrence from wrecking the Commanders' game plan",
+          "publisher": "Riggo's Rag",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHa1dhmR9dATPepzIrmTbthrL-IeC0X58xATZlZzH9XbfJdZqChwQeu5awfdw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY3c5HKpT8-jKmRQKI7cbPz0Zahl6ZxFP3-3KzaxLeUOXu9CrOGQzZA-v8El4"
         },
         {
-          "url": "https://www.foxsports.com/stories/mens-college-basketball/how-watch-winthrop-vs-illinois-tv-channel-live-stream-time-nov-23-2026",
-          "title": "How to Watch Winthrop vs. Illinois: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
+          "url": "https://heavy.com/sports/nfl/washington-commanders/sam-cosmi-titanic-dexter-lawrence-bengals/",
+          "title": "Commanders Have ‘Quality’ Solution for ‘Titanic’ Dexter Lawrence vs. Bengals",
+          "publisher": "Heavy.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5axy-JN4iyRSpjJIcQlkkMXX3EVsNzg0yKwduhTtOxZEveGdfUMT4DdRgXlc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShUvnt7Y8hRmW-LjrB4aSVrtVfFnphiQcRr6hlXBHYXb--xiS6Z-p1c3uPnEk"
         }
       ]
     },
     {
-      "query": "denver vs kansas",
+      "query": "rasul douglas",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T01:00:00Z",
+      "published_at": "2026-11-24T01:30:00Z",
       "related_news_urls": [
-        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318206376.html",
-        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/21/preview-ku-back-home-to-host-denver-on-monday/",
-        "https://www.khou.com/video/sports/locked-on/lo-kansas-city/kansas-jayhawks-show/kansas-vs-denver-preview-will-jayhawks-bounceback-vs-pioneers-after-first-loss-of-the-season/535-3866715e-d66b-449e-8adf-600c50f00a36"
+        "https://www.hogshaven.com/washington-commanders-analysis/456553/has-rasul-douglas-been-the-washington-commanders-best-free-agent-addition",
+        "https://sports.yahoo.com/articles/3-commanders-playing-way-contract-165209040.html",
+        "https://riggosrag.com/quan-martin-resurgence-washington-commanders-unexpected-offseason-dilemma"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKad6UXQMvbYRIructHl6plo9M6AitREhPDQ99munJ3vUrKbNC_MNNM1Ilob0",
-      "image_credit": "Kansas City Star",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNsjUr_ncml061brJDk_XSTeiGDZQD73b6xNuLujmILGluzP1SIG6qphLIbyY",
+      "image_credit": "Hogs Haven",
       "news": [
         {
-          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318206376.html",
-          "title": "Denver Pioneers vs. KU Jayhawks basketball: Probable starters, tipoff time, TV",
-          "publisher": "Kansas City Star",
+          "url": "https://www.hogshaven.com/washington-commanders-analysis/456553/has-rasul-douglas-been-the-washington-commanders-best-free-agent-addition",
+          "title": "Has Rasul Douglas been Adam Peters’ best off season addition?",
+          "publisher": "Hogs Haven",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKad6UXQMvbYRIructHl6plo9M6AitREhPDQ99munJ3vUrKbNC_MNNM1Ilob0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNsjUr_ncml061brJDk_XSTeiGDZQD73b6xNuLujmILGluzP1SIG6qphLIbyY"
         },
         {
-          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/21/preview-ku-back-home-to-host-denver-on-monday/",
-          "title": "Preview: KU back home to host Denver on Monday",
-          "publisher": "KU Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSulfo0dBJ7nF6sPDMPQbxJDHsaaTDFDyzHTMOkKD4b6PHDUnodMpExJhVFVmU"
-        },
-        {
-          "url": "https://www.khou.com/video/sports/locked-on/lo-kansas-city/kansas-jayhawks-show/kansas-vs-denver-preview-will-jayhawks-bounceback-vs-pioneers-after-first-loss-of-the-season/535-3866715e-d66b-449e-8adf-600c50f00a36",
-          "title": "KANSAS vs DENVER PREVIEW: Will Jayhawks Bounceback vs Pioneers After First Loss of the Season?",
-          "publisher": "KHOU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUVVefB8uwBuLZNvxHnJ14bbWWZ4qWngEhhSOr0PpefJKkf9sVhgyZpps6Lfk"
-        }
-      ]
-    },
-    {
-      "query": "joe buck",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T01:00:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/sports/media/2026/11/23/troy-aikman-joe-buck-feud-espn-super-bowl-61/92914253007/",
-        "https://sports.yahoo.com/nfl/article/troy-aikman-makes-dig-at-joe-buck-on-dallas-radio-show-amid-ongoing-tensions-i-know-joes-always-wanted-a-one-man-booth-172632272.html",
-        "https://www.sportsmediawatch.com/2026/11/troy-aikman-comments-joe-buck-relationship-salvage/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k0ott23elLzh7ZRLZvTZM6SyeJV_Bt3nePY3mSgWle9JiFLIFh81BKjYwYE",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/sports/media/2026/11/23/troy-aikman-joe-buck-feud-espn-super-bowl-61/92914253007/",
-          "title": "Clock ticking on ESPN to salvage Troy Aikman, Joe Buck feud before Super Bowl",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k0ott23elLzh7ZRLZvTZM6SyeJV_Bt3nePY3mSgWle9JiFLIFh81BKjYwYE"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/troy-aikman-makes-dig-at-joe-buck-on-dallas-radio-show-amid-ongoing-tensions-i-know-joes-always-wanted-a-one-man-booth-172632272.html",
-          "title": "Troy Aikman makes dig at Joe Buck on Dallas radio show amid ongoing tensions: 'I know Joe's always wanted a one-man booth'",
+          "url": "https://sports.yahoo.com/articles/3-commanders-playing-way-contract-165209040.html",
+          "title": "3 Commanders Playing Their Way to a Contract Extension",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAMJi2orKAPK4oU7dvKcqlF8MmQ4r83a1z8XxIox0ozt8FX1hdr3iRHMAtU8Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq2RqvtV7lWi9kNwumt9sWB3lUynJTvsuR9vXVwz3N3dwcnUZyVzAGDjWRAUY"
         },
         {
-          "url": "https://www.sportsmediawatch.com/2026/11/troy-aikman-comments-joe-buck-relationship-salvage/",
-          "title": "Is Troy Aikman serious?",
-          "publisher": "Sports Media Watch",
+          "url": "https://riggosrag.com/quan-martin-resurgence-washington-commanders-unexpected-offseason-dilemma",
+          "title": "Quan Martin’s resurgence gives Commanders an unexpected offseason dilemma",
+          "publisher": "Riggo's Rag",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBY6_OwjwD4C046ZWclaKs2Jwf_rkLzw3nyncNgJNBWtdInv5v57jeZkhhYw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJspDuA5oTvfF3TMJrnF9bAnY2Z4krxAn6uasq3IaxU-W7l49H35SQkmBFC2M"
+        }
+      ]
+    },
+    {
+      "query": "goldie hawn",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T01:30:00Z",
+      "related_news_urls": [
+        "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
+        "https://www.yahoo.com/lifestyle/articles/goldie-hawn-details-no-nonsense-112648308.html",
+        "https://www.thedailybeast.com/goldie-hawn-reveals-fitness-secret-that-changed-her-body-completely"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4",
+      "image_credit": "Women's Health",
+      "news": [
+        {
+          "url": "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
+          "title": "‘It changed my body’: Goldie Hawn’s strength routine at 81 – and the 90-second move she does daily",
+          "publisher": "Women's Health",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/goldie-hawn-details-no-nonsense-112648308.html",
+          "title": "Goldie Hawn details no-nonsense workout routine at 80: ‘Changed my body completely’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOaVPdLxHKg2A9mewU6_9WO78rjdq6OAYqGDI8VYQ-lemPMunT6pOeIuxMJQ"
+        },
+        {
+          "url": "https://www.thedailybeast.com/goldie-hawn-reveals-fitness-secret-that-changed-her-body-completely",
+          "title": "‘70s Sex Symbol Reveals How She ‘Changed Her Body Completely’",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLkWQVHKhYixCcAxrXPgzXjQ8ESibfxhom2DGowOccJHoGpVnxkhA1T7hI6vU"
+        }
+      ]
+    },
+    {
+      "query": "where are the washington commanders from",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T01:30:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/week-11-monday-night-inactives-cincinnati-bengals-at-washington-commanders?remove_header",
+        "https://www.packers.com/news/mike-s-mid-week-chat-nov-24-2026",
+        "https://www.nfl.com/videos/dan-campbell-discusses-thanksgiving-day-game-vs-bears"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvugbuALjanJlLNWHSz8bEatdYczJG78N1SjGwgefB9g48gHdb0Ta1yIf8lAI",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/week-11-monday-night-inactives-cincinnati-bengals-at-washington-commanders?remove_header",
+          "title": "Week 11 Monday night inactives: Cincinnati Bengals at Washington Commanders",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvugbuALjanJlLNWHSz8bEatdYczJG78N1SjGwgefB9g48gHdb0Ta1yIf8lAI"
+        },
+        {
+          "url": "https://www.packers.com/news/mike-s-mid-week-chat-nov-24-2026",
+          "title": "Mike's Mid-Week Chat | Nov. 24, 2026",
+          "publisher": "Green Bay Packers – packers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrlgYGqmvIzp7-CfCJgt7PuuyeLIzsgNKkFs_jlenD7rSgd_-4TcWy2nDkSSk"
+        },
+        {
+          "url": "https://www.nfl.com/videos/dan-campbell-discusses-thanksgiving-day-game-vs-bears",
+          "title": "Detroit Lions head coach Dan Campbell discusses Thanksgiving Day game vs. Chicago Bears",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_MdP5y9xC2Dxaw4U5C2FwG7QddyUg8kig_fHqRfV82b0llNhn5jD6WOh9Bc"
         }
       ]
     }
