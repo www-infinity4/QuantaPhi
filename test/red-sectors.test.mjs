@@ -51,3 +51,45 @@ test('owner authentication precedes Red sectors, all actual writes remain owner 
  assert.match(client,/syncRedSectors\(/);
  assert.match(client,/brainTools.executionMessage/);
 });
+
+test('Black-proof ledger separates an owner red-sync response from verified execution',async()=>{
+ const db=store(),now=1700000000000;
+ const empty=await redExchange(db,req(),now);
+ assert.equal(empty.ok,true);
+ assert.equal(empty.proof.channel,'red_sync_replied');
+ assert.equal(empty.proof.runner,'no_heartbeat');
+ assert.equal(empty.proof.dispatch,'no_dispatch_receipt');
+ assert.equal(empty.proof.source,'no_commit_evidence');
+ assert.equal(empty.proof.tests,'unverified');
+ assert.equal(empty.proof.merge,'unverified');
+ assert.equal(empty.proof.deployment,'unverified');
+ assert.equal(empty.proof.android,'unverified');
+ assert.equal(empty.proof.completionVerified,false);
+ assert.equal(empty.redBrain.connectionMeaning,'telemetry_only_not_execution_proof');
+});
+
+test('fresh heartbeat and an apparent commit do not fabricate tested or deployed status',async()=>{
+ const db=store(),now=1700000000000;
+ db.m.set('writerHeartbeat',{when:now-5000,runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/3'});
+ db.m.set('last-owner-dispatch',{status:'dispatch_accepted',when:now-6000});
+ await recordRedBrain(db,{kind:'runner_receipt',state:'committed_unverified',commitSha:'b'.repeat(40),testsPassed:true},now-1000);
+ const view=await redExchange(db,req(),now);
+ assert.equal(view.proof.runner,'heartbeat_only');
+ assert.equal(view.proof.dispatch,'dispatched_unverified');
+ assert.equal(view.proof.source,'commit_sha_reported_not_independently_verified');
+ assert.equal(view.proof.tests,'reported_pass_not_independently_verified');
+ assert.equal(view.proof.merge,'unverified');
+ assert.equal(view.proof.deployment,'unverified');
+ assert.equal(view.proof.completionVerified,false);
+});
+
+test('stale heartbeat and blocked dispatch cannot become green from connected flags',async()=>{
+ const db=store(),now=1700000000000;
+ db.m.set('writerHeartbeat',{when:now-91000,runUrl:'https://github.com/www-infinity4/QuantaPhi/actions/runs/4'});
+ db.m.set('last-owner-dispatch',{status:'scheduled_fallback',error:'github_credential_not_connected',when:now-91000});
+ const view=await redExchange(db,req(),now);
+ assert.equal(view.redBrain.connected,true);
+ assert.equal(view.proof.runner,'stale_heartbeat');
+ assert.equal(view.proof.dispatch,'awaiting_repository_runner');
+ assert.equal(view.proof.completionVerified,false);
+});

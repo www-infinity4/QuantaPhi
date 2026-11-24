@@ -21,6 +21,26 @@ export async function recordRedBrain(storage,input,now=Date.now()){
   reason:clip(input.reason,180)};
  await storage.put('red-brain-event',event);return event;
 }
+// Black verification is intentionally stricter than an authenticated sync.
+// A heartbeat, queued dispatch and worker-reported SHA are observations, not
+// independent CI, merged code, Cloudflare deployment, or physical Android proof.
+export function redProofLevels({event=null,heartbeat=null,dispatch=null,now=Date.now()}={}){
+ const heartbeatTime=heartbeat?.when;
+ const age=typeof heartbeatTime==='number'&&Number.isFinite(heartbeatTime)&&
+  heartbeatTime>0&&heartbeatTime<=now?now-heartbeatTime:null;
+ const runner=age===null?'no_heartbeat':age>90000?'stale_heartbeat':'heartbeat_only';
+ const dispatchState=dispatch?classifyDispatch(dispatch).state:'no_dispatch_receipt';
+ const reportedCommit=event?.kind==='runner_receipt'&&/^[a-f0-9]{40}$/.test(event?.commitSha||'');
+ return {
+  channel:'red_sync_replied',
+  runner,
+  dispatch:dispatchState,
+  source:reportedCommit?'commit_sha_reported_not_independently_verified':'no_commit_evidence',
+  tests:reportedCommit&&event.testsPassed===true?'reported_pass_not_independently_verified':'unverified',
+  merge:'unverified',deployment:'unverified',android:'unverified',
+  completionVerified:false
+ };
+}
 export async function redExchange(storage,body,now=Date.now()){
  if(!body||typeof body!=='object'||Array.isArray(body)||body.protocol!==RED_PROTOCOL||
   body.sector!=='red-bubbles'||!/^bubbles-(?:android|website)-[A-Za-z0-9_-]{8,80}$/.test(body.clientId||''))
@@ -40,8 +60,9 @@ export async function redExchange(storage,body,now=Date.now()){
  const runnerAge=typeof heartbeat?.when==='number'?Math.max(0,now-heartbeat.when):null;
  const dispatchAge=typeof dispatch?.when==='number'?Math.max(0,now-dispatch.when):null;
  return {ok:true,protocol:RED_PROTOCOL,serverAt:now,
+  proof:redProofLevels({event,heartbeat,dispatch,now}),
   redBubbles:{sector:'red-bubbles',connected:true,ackRevision:bubble.ackRevision,seenAt:bubble.seenAt},
-  redBrain:{sector:'red-brain',connected:true,revision:event?.revision||0,
+  redBrain:{sector:'red-brain',connected:true,connectionMeaning:'telemetry_only_not_execution_proof',revision:event?.revision||0,
    event:event&&event.revision>bubble.ackRevision?event:null,
    lastRequestedJob:request?{ticketId:clip(request.ticketId,80),jobId:clip(request.jobId,30)}:null,
    alarmRetry:alarmRetry?{state:alarmRetry.state,attempts:alarmRetry.attempts,lastAttemptAt:alarmRetry.lastAttemptAt,nextAt:alarmRetry.nextAt,reason:alarmRetry.reason,ticketId:alarmRetry.ticketId,jobId:alarmRetry.jobId}:null,
