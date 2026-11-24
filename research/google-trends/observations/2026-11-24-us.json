@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T01:01:30.385070Z",
+  "checked_at": "2026-11-24T01:31:21.164610Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "clippers vs rockets",
+      "query": "commanders stadium",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.wusa9.com/article/news/investigations/commanders-stadium/rfk-stadium-final-four-womens-world-cup-washington-commanders-events-dc/65-39758810-7b19-4ed0-9704-060c42fded48",
+        "https://www.washingtonsun.com/sports/colleges/rfk-commanders-stadium-final-four",
+        "https://www.wusa9.com/video/news/investigations/commanders-stadium/dc-promised-major-sporting-events-at-the-new-rfk-but-first-big-bid-came-up-short/65-c88424d9-5f33-4163-87d2-da7bc57636e9"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo",
+      "image_credit": "WUSA9",
+      "news": [
+        {
+          "url": "https://www.wusa9.com/article/news/investigations/commanders-stadium/rfk-stadium-final-four-womens-world-cup-washington-commanders-events-dc/65-39758810-7b19-4ed0-9704-060c42fded48",
+          "title": "DC promised major sporting events at the new RFK, but first big bid came up short",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo"
+        },
+        {
+          "url": "https://www.washingtonsun.com/sports/colleges/rfk-commanders-stadium-final-four",
+          "title": "The New RFK Stadium Made an Unsuccessful Bid to Host the Final Four",
+          "publisher": "NOTUS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZmQIOXPJ1G3dUvp6k5Ege2KOIX86M5gFTOUnhyptMSqitC3iToTUr8kWw40Q"
+        },
+        {
+          "url": "https://www.wusa9.com/video/news/investigations/commanders-stadium/dc-promised-major-sporting-events-at-the-new-rfk-but-first-big-bid-came-up-short/65-c88424d9-5f33-4163-87d2-da7bc57636e9",
+          "title": "DC promised major sporting events at the new RFK, but first big bid came up short",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Yyn50qWlCaRtdU_0scSVmV0lfyEtAsYkIxpYs3yVfUV2n1HbJdnJHBllwvo"
+        }
+      ]
+    },
+    {
+      "query": "meet the parents",
       "approx_searches": "2000+",
-      "published_at": "2026-11-24T00:30:00Z",
+      "published_at": "2026-11-24T01:10:00Z",
       "related_news_urls": [
-        "https://www.thedreamshake.com/rockets-game-previews/42679/houston-rockets-vs-los-angeles-clippers-game-preview",
-        "https://sports.yahoo.com/articles/clippers-vs-rockets-prediction-pick-152424640.html",
-        "https://sportstalk790.iheart.com/content/2026-11-23-clippers-vs-rockets-injury-report-nov-23/"
+        "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
+        "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0",
+        "https://www.forbes.com/sites/timlammers/2026/11/23/focker-in-law-rotten-tomatoes-critics-splatter-meet-the-parents-sequel/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgN5eU8ImgesI9K6g1Dx4jTAdIkFMDcjXm7Ff_roWtSoGtUg4kqtFlDiXfprg",
-      "image_credit": "The Dream Shake",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.thedreamshake.com/rockets-game-previews/42679/houston-rockets-vs-los-angeles-clippers-game-preview",
-          "title": "Houston Rockets vs. Los Angeles Clippers game preview",
-          "publisher": "The Dream Shake",
+          "url": "https://www.theguardian.com/film/2026/nov/23/focker-in-law-review-triangle-of-sadness-as-ariana-grande-joins-stiller-and-de-niro-in-the-circle-of-trust",
+          "title": "Focker In-Law review – triangle of sadness as Ariana Grande joins Stiller and De Niro in the circle of trust",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgN5eU8ImgesI9K6g1Dx4jTAdIkFMDcjXm7Ff_roWtSoGtUg4kqtFlDiXfprg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ-RUg3dVDWdywvibiCuyyLXCArvvuUHgyAX5RjaAX2vB1lXpLMFUIhnFrXKQ"
         },
         {
-          "url": "https://sports.yahoo.com/articles/clippers-vs-rockets-prediction-pick-152424640.html",
-          "title": "Clippers vs Rockets Prediction, Pick, NBA Odds for Monday, November 23",
+          "url": "https://apnews.com/article/focker-inlaw-movie-review-ariana-grande-f81f0f866ec1ab50f1896996dd04cbf0",
+          "title": "Movie Review: Ariana Grande gives a moribund franchise a pair of shock paddles in 'Focker In-Law'",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_f4vcGWKXDHmD-6a8KZPSvzhsp3RuJehQNp7Y5QdlSZcKuZ_J3uP58W0__Tc"
+        },
+        {
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/23/focker-in-law-rotten-tomatoes-critics-splatter-meet-the-parents-sequel/",
+          "title": "‘Focker In-Law’: Rotten Tomatoes Critics Splatter ‘Meet The Parents’ Sequel",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiPIwFvv5a6Q942-pqEcr_wCHhGK-aiMZwum3TQjO0UGsSrYEAtyn03jGxk3c"
+        }
+      ]
+    },
+    {
+      "query": "monmouth basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T01:10:00Z",
+      "related_news_urls": [
+        "https://goheels.com/news/2026/11/22/mens-basketball-welcomes-monmouth-monday",
+        "https://sports.yahoo.com/articles/unc-vs-monmouth-live-discussion-000000968.html",
+        "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-monmouth-basketball-preview-familiar-faces-chapel-hill/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCYE9tY25XzL7bGEtrUwEOy1uQ1-2dtSORLvMfxBJkI1g_vIVWNYhrUBjKNk",
+      "image_credit": "University of North Carolina Athletics",
+      "news": [
+        {
+          "url": "https://goheels.com/news/2026/11/22/mens-basketball-welcomes-monmouth-monday",
+          "title": "Men's Basketball Welcomes Monmouth Monday - University of North Carolina Athletics",
+          "publisher": "University of North Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBCYE9tY25XzL7bGEtrUwEOy1uQ1-2dtSORLvMfxBJkI1g_vIVWNYhrUBjKNk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/unc-vs-monmouth-live-discussion-000000968.html",
+          "title": "UNC vs. Monmouth Live Discussion",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTm4KBxZwU_DR5T0S0fonIqei7Ke2q29dKNNpU7Iy9WP7h75_9cr6n_ZqXTWKE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5Xocl5f7_bBRi66gDD7psiMMl8UqM71YSj6zm30l5M9dMngPfnojXNCmzbAE"
         },
         {
-          "url": "https://sportstalk790.iheart.com/content/2026-11-23-clippers-vs-rockets-injury-report-nov-23/",
-          "title": "Clippers vs. Rockets Injury Report – Nov. 23",
-          "publisher": "SportsTalk 790",
+          "url": "https://www.on3.com/teams/north-carolina-tar-heels/news/unc-monmouth-basketball-preview-familiar-faces-chapel-hill/",
+          "title": "UNC-Monmouth Preview: Tar Heels Welcome Back Familiar Faces for Final Tune-Up",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjatAMVOTs0jZ9aZE6mPH71M07FQN1jNkb2nb3P4UHXQi5ZNW_8TuOX9BeVi8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWVG8Uo8Ni6PQSIf8m5m5t91h1QdKxWxYyQqKquuegnVCCZe3wXm8rBTGWfCY"
         }
       ]
     },
     {
-      "query": "joe burrow stats",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T00:30:00Z",
+      "query": "laudanum",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T01:10:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/bengals-joe-burrow-chasing-history-mvp-super-bowl-monday-night-football",
-        "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
-        "https://sports.yahoo.com/articles/steelers-cameron-heyward-adds-fuel-164754094.html"
+        "https://www.tvinsider.com/1304998/the-gilded-age-season-4-interview-morgan-spector-blake-ritson-george-russell-oscar-van-rhijn-exclusive/",
+        "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-star-morgan-spector-130000652.html",
+        "https://deadline.com/2026/11/the-gilded-age-george-laudanum-addiction-season-4-1237231274/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sBE_Rn9zmtMeMweUc2r1k9kMARqwcuZjUUSKmLQSKXJYU2LsIIFmmgsbpM0",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGuoxBIxtST3JV80EId9oO3YikQwu4dGCoKNzTSbym8_OkjIuENIArXxMzh9c",
+      "image_credit": "TV Insider",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/bengals-joe-burrow-chasing-history-mvp-super-bowl-monday-night-football",
-          "title": "Bengals Joe Burrow is chasing history, an MVP and a Super Bowl on Monday Night Football",
-          "publisher": "Fox News",
+          "url": "https://www.tvinsider.com/1304998/the-gilded-age-season-4-interview-morgan-spector-blake-ritson-george-russell-oscar-van-rhijn-exclusive/",
+          "title": "‘The Gilded Age’ Stars Break Down Oscar’s Secret Grief & George’s Addiction",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sBE_Rn9zmtMeMweUc2r1k9kMARqwcuZjUUSKmLQSKXJYU2LsIIFmmgsbpM0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGuoxBIxtST3JV80EId9oO3YikQwu4dGCoKNzTSbym8_OkjIuENIArXxMzh9c"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7664501/2026/11/16/nfl-mvp-odds-tracker-favorites/",
-          "title": "Joe Burrow clear NFL MVP odds favorite over Josh Allen, Brock Purdy",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2S402ghoWH7zJevGtezhKFu6bAld4z755lH0XIhUDChLnT4fuqTF6qplPxGM"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/steelers-cameron-heyward-adds-fuel-164754094.html",
-          "title": "Steelers' Cameron Heyward Adds Fuel to Joe Burrow's 2026 MVP Case With High Praise",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlnr2OX-490TlIQvIDjv0CujBvCGw4YpUqXzrBIvHsokZ0nK-2eab_wI5oEMY"
-        }
-      ]
-    },
-    {
-      "query": "immigration",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T00:30:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/23/new-york-city-and-other-local-governments-sue-to-block-trumps-immigrant-housing-rule-01180609",
-        "https://www.seattletimes.com/business/real-estate/wa-sues-over-hud-housing-rule-targeting-immigrant-households/",
-        "https://www.azfamily.com/2026/11/23/arizona-sues-over-federal-rule-ending-housing-aid-mixed-status-families/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWyV1X7DvYYGkLvqMJMeQfhtdhN-B90yF7LHXOMwDReE-UHBK6R60ScWn-zQ",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/23/new-york-city-and-other-local-governments-sue-to-block-trumps-immigrant-housing-rule-01180609",
-          "title": "Mamdani joins cities in suing to block Trump’s housing rule for mixed-status families",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOWyV1X7DvYYGkLvqMJMeQfhtdhN-B90yF7LHXOMwDReE-UHBK6R60ScWn-zQ"
-        },
-        {
-          "url": "https://www.seattletimes.com/business/real-estate/wa-sues-over-hud-housing-rule-targeting-immigrant-households/",
-          "title": "WA sues over HUD housing rule targeting immigrant households",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlo-4ZUoESoAVGBX3eu0ATASE1gFyFmlUFgHpW_PEdAE_SVvPRuMoXsB4f8rg"
-        },
-        {
-          "url": "https://www.azfamily.com/2026/11/23/arizona-sues-over-federal-rule-ending-housing-aid-mixed-status-families/",
-          "title": "Arizona sues over federal rule ending housing aid for mixed-status families",
-          "publisher": "AZ Family",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRULS3-UwjgJkyYMm2jfeHCC57vupo29vOIos5fwLi0N_Cq8LrFuVqJxt3m3Nk"
-        }
-      ]
-    },
-    {
-      "query": "sol ruca",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T00:30:00Z",
-      "related_news_urls": [
-        "https://lindyssports.com/other-sports/sol-ruca-making-her-own-wwe-gear",
-        "https://www.fightful.com/wrestling/sol-ruca-names-her-favorite-part-of-creating-her-own-ring-gear/",
-        "https://411mania.com/wrestling/sol-ruca-favorite-part-making-own-ring-gear/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLZuK7eNDhs6XBO-a2GNXJiwjnBtG5-R7LvcEiWXW6IXTpT9Wpwp9XmXopg-s",
-      "image_credit": "Lyndy's Sports Annuals",
-      "news": [
-        {
-          "url": "https://lindyssports.com/other-sports/sol-ruca-making-her-own-wwe-gear",
-          "title": "Sol Ruca shares personal message on WWE gear",
-          "publisher": "Lyndy's Sports Annuals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLZuK7eNDhs6XBO-a2GNXJiwjnBtG5-R7LvcEiWXW6IXTpT9Wpwp9XmXopg-s"
-        },
-        {
-          "url": "https://www.fightful.com/wrestling/sol-ruca-names-her-favorite-part-of-creating-her-own-ring-gear/",
-          "title": "Sol Ruca Names Her Favorite Part Of Creating Her Own Ring Gear",
-          "publisher": "Fightful",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1wqg-0hzcw4pW5pQ7lCHb4_ucPMJiz5Qhmw2ULloK1UZ3zaBBZZOCB4cPbvo"
-        },
-        {
-          "url": "https://411mania.com/wrestling/sol-ruca-favorite-part-making-own-ring-gear/",
-          "title": "Sol Ruca Explains Her Favorite Part Of Making Her Own Ring Gear",
-          "publisher": "411Mania.",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0fzhRCNBkp8eLhHBvVjjpqHKlGuJdc0eZ4ugR8_jBulUCWiGvkIsCiMHlaPo"
-        }
-      ]
-    },
-    {
-      "query": "santa clara basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T00:30:00Z",
-      "related_news_urls": [
-        "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
-        "https://www.rgj.com/story/sports/college/wolf-pack/2026/11/23/nevada-races-past-san-francisco-71-62-in-acrisure-series/92934232007/",
-        "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ",
-      "image_credit": "Nevada Sports Net",
-      "news": [
-        {
-          "url": "https://nevadasportsnet.com/news/reporters/nevada-basketball-versus-san-francisco-three-keys-to-victory-and-a-prediction",
-          "title": "Nevada basketball versus San Francisco: Three keys to victory and a prediction",
-          "publisher": "Nevada Sports Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYlDvTfX6i_z5MtP8P7QAttFSErMSZ6f3QyoL-_VlQx_PQzaXTmF3XOhFByzQ"
-        },
-        {
-          "url": "https://www.rgj.com/story/sports/college/wolf-pack/2026/11/23/nevada-races-past-san-francisco-71-62-in-acrisure-series/92934232007/",
-          "title": "Nevada races past San Francisco, 71-62, in Acrisure Series",
-          "publisher": "Reno Gazette Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnCZDzvhHA7dsjg2NHXg3mFfU7B3jiKMEnEskUSTFMGzWJcizYf5mITxnhBa4"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/san-francisco-dons-vs-nevada-wolf-pack-prediction-odds-2026-11-23/",
-          "title": "San Francisco vs Nevada Prediction, Picks & Odds | 23 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnTK4eFdPE1SvYEbvFwOHkLfEeQvcYAIDIiLh2O-A13r6dm0UAfdFBTQX-81M"
-        }
-      ]
-    },
-    {
-      "query": "seth rollins",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T00:30:00Z",
-      "related_news_urls": [
-        "https://www.wwe.com/videos/exclusive-danhausen-invites-hacksaw-jim-duggan-to-his-friendsgiving-smackdown-nov-20-2026",
-        "https://www.si.com/fannation/wrestling/wwe/wwe-raw-results-seth-rollins-completes-team-usa-cm-punk-walks-nov23",
-        "https://sports.yahoo.com/articles/5th-member-team-usa-wwe-130752863.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMZDc-AcakmgU_uoftxFk00t11bjIsZQjfXrYS11zgO2OG6o6fTi8Dp1MdrHU",
-      "image_credit": "WWE",
-      "news": [
-        {
-          "url": "https://www.wwe.com/videos/exclusive-danhausen-invites-hacksaw-jim-duggan-to-his-friendsgiving-smackdown-nov-20-2026",
-          "title": "EXCLUSIVE: Danhausen invites “Hacksaw” Jim Duggan to his Friendsgiving: SmackDown, Nov. 20, 2026",
-          "publisher": "WWE",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRMZDc-AcakmgU_uoftxFk00t11bjIsZQjfXrYS11zgO2OG6o6fTi8Dp1MdrHU"
-        },
-        {
-          "url": "https://www.si.com/fannation/wrestling/wwe/wwe-raw-results-seth-rollins-completes-team-usa-cm-punk-walks-nov23",
-          "title": "WWE Raw Results [11/23/26]: Seth Rollins Completes Team USA, CM Punk Walks Out",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwoZIOhIhABEGEWO5dpt3p4qusKgmSXaqN4o10U0v0ZhufVzjFoHCSqFVNUgs"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/5th-member-team-usa-wwe-130752863.html",
-          "title": "Who Will Be the 5th Member of Team USA at WWE Survivor Series 2026? All Possible Candidates",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjVNhvIus_4HnWFfl7bUajl1INiUOoEOadkxKb3NGGlcvlQUSY5-3xktzRKCM"
-        }
-      ]
-    },
-    {
-      "query": "student loans news",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T00:20:00Z",
-      "related_news_urls": [
-        "https://www.silive.com/news/2026/11/ny-offers-up-to-50k-in-student-loan-forgiveness-heres-who-can-apply.html",
-        "https://www.yahoo.com/news/us/articles/nys-announces-student-loan-relief-152251384.html",
-        "https://wabcradio.com/2026/11/20/new-york-nursing-faculty-can-apply-for-up-to-40000-in-student-loan-forgiveness/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_Q0sjTp4OPraG7ms505zIiETjlWS2uv5cK3norO8mCP1cX-O3cmTsmO8bcM",
-      "image_credit": "SILive.com",
-      "news": [
-        {
-          "url": "https://www.silive.com/news/2026/11/ny-offers-up-to-50k-in-student-loan-forgiveness-heres-who-can-apply.html",
-          "title": "N.Y. offers up to $50K in student loan forgiveness. Here’s who can apply",
-          "publisher": "SILive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_Q0sjTp4OPraG7ms505zIiETjlWS2uv5cK3norO8mCP1cX-O3cmTsmO8bcM"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/nys-announces-student-loan-relief-152251384.html",
-          "title": "NYS announces student loan relief for nurses and farmers",
+          "url": "https://www.yahoo.com/entertainment/tv/reviews/articles/gilded-age-star-morgan-spector-130000652.html",
+          "title": "‘Gilded Age’ star Morgan Spector based George’s ‘inspired’ laudanum mania on a real 19th century drug addict",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdJEaKscZMjjK04x4soTDJh0Oiz3DKBg5hQCrad08IkrcIcBbfhtvEYadvY84"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn5hzZkdyib4IxwMTpAQnZUekOOiTUAuYGxZvKjZkX-5aQPa8bAZYhffa5MRQ"
         },
         {
-          "url": "https://wabcradio.com/2026/11/20/new-york-nursing-faculty-can-apply-for-up-to-40000-in-student-loan-forgiveness/",
-          "title": "New York Nursing Educators Could Qualify for $40,000 in Debt Relief",
-          "publisher": "WABC Radio",
+          "url": "https://deadline.com/2026/11/the-gilded-age-george-laudanum-addiction-season-4-1237231274/",
+          "title": "'The Gilded Age' Star Morgan Spector Unpacks George's [Spoiler]",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdBMjsn1HsQjjRKJAWaIFEFoPmIld-rD9wT43_5gUCll5X0pzg8pvwPEY6XI4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSr7aYWNZy-Tho7YbF1LGm5fAQEARDhoOz2vd8UOowkKkWCYJOhz3a7G5EKdA"
         }
       ]
     },
     {
-      "query": "jabari walker",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T00:20:00Z",
+      "query": "dominick barlow",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T01:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/joel-embiid-injury-update-sixers-vs-trail-blazers-nba/769069/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/phi-starts-maxey-edgecombe-brown-james-walker"
+        "https://www.inquirer.com/sixers/sixers-lebron-james-dominick-barlow-nba-injury-20261122.html",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/dominick-barlow-sixers-season-debut-injury-update/768284/",
+        "https://thesixersense.com/dominick-barlow-dials-pressure-on-multiple-76ers-after-season-debut"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXWTDxhQwagagP6dYdz-8Z87TcUOZ-PWFDIM44hqM5Ce9fVksu42GWMW64Bw",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq8EEnNRTcvt7DAt-Cz1n7CPLhExTWaX_nSdm0rG1lvo349Cqm6hvL3qWlsi4",
+      "image_credit": "Inquirer.com",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-          "title": "76ers rule out Joel Embiid (illness) for game vs. Trail Blazers",
-          "publisher": "ESPN",
+          "url": "https://www.inquirer.com/sixers/sixers-lebron-james-dominick-barlow-nba-injury-20261122.html",
+          "title": "Dominick Barlow was ‘excellent’ in his Sixers season debut against the Milwaukee Bucks",
+          "publisher": "Inquirer.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOXWTDxhQwagagP6dYdz-8Z87TcUOZ-PWFDIM44hqM5Ce9fVksu42GWMW64Bw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq8EEnNRTcvt7DAt-Cz1n7CPLhExTWaX_nSdm0rG1lvo349Cqm6hvL3qWlsi4"
         },
         {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/joel-embiid-injury-update-sixers-vs-trail-blazers-nba/769069/",
-          "title": "Embiid sidelined for Sixers-Blazers with illness",
+          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/dominick-barlow-sixers-season-debut-injury-update/768284/",
+          "title": "Barlow looks set for season debut with Sixers after long days, ‘miserable' weeks",
           "publisher": "NBC Sports Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRP6e4LqJkyU_cmVSzI6ucGBP9M8BnUJ7mvMyM0FdNisOGec_y9SF_fhHfyWk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRPdDmAAKtwWysckyHmtvZL4JTEGmN4iax7IiFbZti-FZUd9Ydn-TuziXMUVg"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/phi-starts-maxey-edgecombe-brown-james-walker",
-          "title": "PHI starts Maxey, Edgecombe, Brown, James, Walker",
-          "publisher": "NBC Sports",
+          "url": "https://thesixersense.com/dominick-barlow-dials-pressure-on-multiple-76ers-after-season-debut",
+          "title": "Dominick Barlow dials up pressure on multiple 76ers after season debut",
+          "publisher": "The Sixer Sense",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYewsuR92K_fKALEpDQIUmUEiLWpqdp24cLb_MhvnqgT0jZMc82B6bDzEazFg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxA1xwkUqDRxaR_z2vdA9zAL-mwMQ9dgKYxxAPU3Cbn2y88HnW2K0GIijuYKI"
         }
       ]
     },
     {
-      "query": "zac taylor",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
-        "https://www.bengals.com/news/game-within-the-game-zac-taylor-s-coaching-collaboration-justin-hill-justin-rascati-brad-kragthore-defines-bengals-hottest-offense-in-all-the-land",
-        "https://www.fox19.com/2026/11/20/continuity-is-hidden-superpower-bengals-offense/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/bengals-joe-flacco-makes-eye-223306878.html",
-          "title": "Bengals’ Joe Flacco Makes Eye-Opening Claim About Zac Taylor’s Staff",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjBwCZtUG23NCP9GWq4NdCsn5Y7iitKWGnvqx2K0nIgEAic4qYqxBKXz706-8"
-        },
-        {
-          "url": "https://www.bengals.com/news/game-within-the-game-zac-taylor-s-coaching-collaboration-justin-hill-justin-rascati-brad-kragthore-defines-bengals-hottest-offense-in-all-the-land",
-          "title": "Game Within The Game | Zac Taylor's Coaching Collaboration Defines Bengals' Hottest Offense In All The Land",
-          "publisher": "Cincinnati Bengals",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw__zPxrh5TUDwCLEVo1RmYFbdtLxU4-g-CukjNSSa6WSDhc3q2Y6Z2NuZ3gM"
-        },
-        {
-          "url": "https://www.fox19.com/2026/11/20/continuity-is-hidden-superpower-bengals-offense/",
-          "title": "Continuity is the hidden superpower of the Bengals’ offense",
-          "publisher": "FOX19 | Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ3cqW7ABMXF2XWSWwXyimvZDXpQtA4_BIwuaqfbZMPjHMk7mBus5xFndii14"
-        }
-      ]
-    },
-    {
-      "query": "russia news",
+      "query": "lsu women's basketball",
       "approx_searches": "500+",
-      "published_at": "2026-11-24T00:20:00Z",
+      "published_at": "2026-11-24T01:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-        "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks",
-        "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html"
+        "https://www.cbssports.com/womens-college-basketball/news/lsu-milaysia-fulwiley-returns-team-felony-charges-dropped-arrest/",
+        "https://www.nytimes.com/athletic/7806574/2026/11/23/lsu-milaysia-fulwiley-rejoin-womens-basketball-team-arrest/",
+        "https://www.wafb.com/2026/11/20/some-charges-dropped-against-lsu-guard-milaysia-fulwiley/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZe0i_OBQR_AE6W-m5MW4QKB2LjA_i5m6UjXgoDpPQ94sgpdIimqP9yhrCgI",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyK9RJRF5ez_CFrBQZFrpVtPjuwlWcR0kmwgZZnIoTTIsDHOUKveHPqYs-eUY",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/23/world/europe/ukraine-libya-russian-ships.html",
-          "title": "Ukraine’s Attack Off Coast of Libya Shows Reach of Its Naval Drones",
+          "url": "https://www.cbssports.com/womens-college-basketball/news/lsu-milaysia-fulwiley-returns-team-felony-charges-dropped-arrest/",
+          "title": "LSU's MiLaysia Fulwiley back with Tigers, cleared to play after felony charges dropped",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyK9RJRF5ez_CFrBQZFrpVtPjuwlWcR0kmwgZZnIoTTIsDHOUKveHPqYs-eUY"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7806574/2026/11/23/lsu-milaysia-fulwiley-rejoin-womens-basketball-team-arrest/",
+          "title": "LSU’s MiLaysia Fulwiley rejoins women’s basketball team after arrest - The Athletic",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwZe0i_OBQR_AE6W-m5MW4QKB2LjA_i5m6UjXgoDpPQ94sgpdIimqP9yhrCgI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8Ale7eXxw5BeISeppt08LGwwkJ5uKcbsOyQq8wl1OZXGAdBRN1UEley94FcI"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/23/russia-warns-ukraine-of-dangerous-trend-after-libya-and-baltic-attacks",
-          "title": "Russia warns Ukraine of ‘dangerous trend’ after Libya and Baltic attacks",
-          "publisher": "Al Jazeera",
+          "url": "https://www.wafb.com/2026/11/20/some-charges-dropped-against-lsu-guard-milaysia-fulwiley/",
+          "title": "Felony charges dropped against LSU guard MiLaysia Fulwiley",
+          "publisher": "WAFB",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAE8ap02FgD5aJ7Ny5Z1eatxPymEdF9gaHS_ZR1hSZbHeb_dZc7JIFxSRh7d8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq9Rlc6FTo7aGQMBPEWSjPkT6Mbqa_BEB7SWs8DnCZ_x_EwkFTBKw9swJWXTc"
+        }
+      ]
+    },
+    {
+      "query": "high potential",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T01:10:00Z",
+      "related_news_urls": [
+        "https://www.goodhousekeeping.com/entertainment/tv-shows/a74443331/high-potential-cast-season-3-kaitlin-olson-hair-instagram/",
+        "https://cwibc.co.id/en/abc-2027-midseason-return-dates",
+        "https://karlobag.eu/en/entertainment/high-potential-season-3-new-trailer-previews-kaitlin-olson-s-return-and-january-of03y/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRphUMTCk5aXvOq_ysnebSphiJ3r2LCc9XgTI0P6qeDcOWQdMR8egPRPpdx30",
+      "image_credit": "Good Housekeeping",
+      "news": [
+        {
+          "url": "https://www.goodhousekeeping.com/entertainment/tv-shows/a74443331/high-potential-cast-season-3-kaitlin-olson-hair-instagram/",
+          "title": "‘High Potential’ Fans Have So Many Questions About Kaitlin Olson’s New Look Ahead of Season 3",
+          "publisher": "Good Housekeeping",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRphUMTCk5aXvOq_ysnebSphiJ3r2LCc9XgTI0P6qeDcOWQdMR8egPRPpdx30"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/23/ukraine-russia-warship-libya.html",
-          "title": "Zelenskyy praises ‘exemplary’ drone operation that sank Russian warship in a Libyan port",
-          "publisher": "CNBC",
+          "url": "https://cwibc.co.id/en/abc-2027-midseason-return-dates",
+          "title": "ABC Sets 2027 Return Dates for High Potential and The Rookie",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMQP5sbH0Qk0wDBoxgCIO3Zfbrwx9ILmnkTJJWSXRXHylygJTB0fXqMOWs9co"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjqactJChIbx-3bowJfymtTgNHTEDGjxnFmvpoEkDQHbL8f4JpV7mi5nz0-Ic"
+        },
+        {
+          "url": "https://karlobag.eu/en/entertainment/high-potential-season-3-new-trailer-previews-kaitlin-olson-s-return-and-january-of03y/",
+          "title": "High Potential Season 3: Kaitlin Olson Returns to ABC",
+          "publisher": "KarloBag.eu",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Q7aRvMxxJl_fFhYyLdCiB43eSYK78gXm8yPa_1KPlL1vbZuv5P4O8CKLOfY"
+        }
+      ]
+    },
+    {
+      "query": "winthrop vs illinois",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T01:00:00Z",
+      "related_news_urls": [
+        "https://fightingillini.com/news/2026/11/22/mens-basketball-no-10-illini-continue-homestand-monday-vs-winthrop",
+        "https://www.thechampaignroom.com/illinois-fighting-illini-basketball-news/59005/brad-underwood-gives-update-on-sick-illini-brad-underwood-quentin-coleman-illinois-fighting-illini-college-basketball",
+        "https://www.foxsports.com/stories/mens-college-basketball/how-watch-winthrop-vs-illinois-tv-channel-live-stream-time-nov-23-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOdSW53QwSAUHU95KxoKF9lWWQ630mmOUQp-BunINav2OfvFNuBOFftOI1NA",
+      "image_credit": "University of Illinois Athletics",
+      "news": [
+        {
+          "url": "https://fightingillini.com/news/2026/11/22/mens-basketball-no-10-illini-continue-homestand-monday-vs-winthrop",
+          "title": "No. 4 Illini Continue Homestand Monday vs. Winthrop",
+          "publisher": "University of Illinois Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkOdSW53QwSAUHU95KxoKF9lWWQ630mmOUQp-BunINav2OfvFNuBOFftOI1NA"
+        },
+        {
+          "url": "https://www.thechampaignroom.com/illinois-fighting-illini-basketball-news/59005/brad-underwood-gives-update-on-sick-illini-brad-underwood-quentin-coleman-illinois-fighting-illini-college-basketball",
+          "title": "Brad Underwood gives update on sick Illini",
+          "publisher": "The Champaign Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHa1dhmR9dATPepzIrmTbthrL-IeC0X58xATZlZzH9XbfJdZqChwQeu5awfdw"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/mens-college-basketball/how-watch-winthrop-vs-illinois-tv-channel-live-stream-time-nov-23-2026",
+          "title": "How to Watch Winthrop vs. Illinois: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5axy-JN4iyRSpjJIcQlkkMXX3EVsNzg0yKwduhTtOxZEveGdfUMT4DdRgXlc"
+        }
+      ]
+    },
+    {
+      "query": "denver vs kansas",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T01:00:00Z",
+      "related_news_urls": [
+        "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318206376.html",
+        "https://www2.kusports.com/sports/college/basketball-men/2026/nov/21/preview-ku-back-home-to-host-denver-on-monday/",
+        "https://www.khou.com/video/sports/locked-on/lo-kansas-city/kansas-jayhawks-show/kansas-vs-denver-preview-will-jayhawks-bounceback-vs-pioneers-after-first-loss-of-the-season/535-3866715e-d66b-449e-8adf-600c50f00a36"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKad6UXQMvbYRIructHl6plo9M6AitREhPDQ99munJ3vUrKbNC_MNNM1Ilob0",
+      "image_credit": "Kansas City Star",
+      "news": [
+        {
+          "url": "https://www.kansascity.com/sports/college/big-12/university-of-kansas/article318206376.html",
+          "title": "Denver Pioneers vs. KU Jayhawks basketball: Probable starters, tipoff time, TV",
+          "publisher": "Kansas City Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKad6UXQMvbYRIructHl6plo9M6AitREhPDQ99munJ3vUrKbNC_MNNM1Ilob0"
+        },
+        {
+          "url": "https://www2.kusports.com/sports/college/basketball-men/2026/nov/21/preview-ku-back-home-to-host-denver-on-monday/",
+          "title": "Preview: KU back home to host Denver on Monday",
+          "publisher": "KU Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSulfo0dBJ7nF6sPDMPQbxJDHsaaTDFDyzHTMOkKD4b6PHDUnodMpExJhVFVmU"
+        },
+        {
+          "url": "https://www.khou.com/video/sports/locked-on/lo-kansas-city/kansas-jayhawks-show/kansas-vs-denver-preview-will-jayhawks-bounceback-vs-pioneers-after-first-loss-of-the-season/535-3866715e-d66b-449e-8adf-600c50f00a36",
+          "title": "KANSAS vs DENVER PREVIEW: Will Jayhawks Bounceback vs Pioneers After First Loss of the Season?",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUVVefB8uwBuLZNvxHnJ14bbWWZ4qWngEhhSOr0PpefJKkf9sVhgyZpps6Lfk"
+        }
+      ]
+    },
+    {
+      "query": "joe buck",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-24T01:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/sports/media/2026/11/23/troy-aikman-joe-buck-feud-espn-super-bowl-61/92914253007/",
+        "https://sports.yahoo.com/nfl/article/troy-aikman-makes-dig-at-joe-buck-on-dallas-radio-show-amid-ongoing-tensions-i-know-joes-always-wanted-a-one-man-booth-172632272.html",
+        "https://www.sportsmediawatch.com/2026/11/troy-aikman-comments-joe-buck-relationship-salvage/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k0ott23elLzh7ZRLZvTZM6SyeJV_Bt3nePY3mSgWle9JiFLIFh81BKjYwYE",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/sports/media/2026/11/23/troy-aikman-joe-buck-feud-espn-super-bowl-61/92914253007/",
+          "title": "Clock ticking on ESPN to salvage Troy Aikman, Joe Buck feud before Super Bowl",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2k0ott23elLzh7ZRLZvTZM6SyeJV_Bt3nePY3mSgWle9JiFLIFh81BKjYwYE"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/troy-aikman-makes-dig-at-joe-buck-on-dallas-radio-show-amid-ongoing-tensions-i-know-joes-always-wanted-a-one-man-booth-172632272.html",
+          "title": "Troy Aikman makes dig at Joe Buck on Dallas radio show amid ongoing tensions: 'I know Joe's always wanted a one-man booth'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAMJi2orKAPK4oU7dvKcqlF8MmQ4r83a1z8XxIox0ozt8FX1hdr3iRHMAtU8Q"
+        },
+        {
+          "url": "https://www.sportsmediawatch.com/2026/11/troy-aikman-comments-joe-buck-relationship-salvage/",
+          "title": "Is Troy Aikman serious?",
+          "publisher": "Sports Media Watch",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxBY6_OwjwD4C046ZWclaKs2Jwf_rkLzw3nyncNgJNBWtdInv5v57jeZkhhYw"
         }
       ]
     }
