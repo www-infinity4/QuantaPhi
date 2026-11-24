@@ -3,17 +3,141 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T08:01:35.557395Z",
+  "checked_at": "2026-11-24T08:32:02.868564Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "google play",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T08:10:00Z",
+      "related_news_urls": [
+        "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
+        "https://www.digitaltoday.co.kr/en/view/127628/plaud-wins-google-play-2026-productivity-partner-app-award",
+        "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA",
+      "image_credit": "The Korea Daily",
+      "news": [
+        {
+          "url": "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
+          "title": "Plaud — AI Voice Recorder Wins Google Play’s 2026 Best App",
+          "publisher": "The Korea Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA"
+        },
+        {
+          "url": "https://www.digitaltoday.co.kr/en/view/127628/plaud-wins-google-play-2026-productivity-partner-app-award",
+          "title": "Plaud wins Google Play 2026 Productivity Partner App award",
+          "publisher": "디지털투데이",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVtrHalNSyxv6wXMbf2oY1S2w43pnlXR-yIBSGLKqW-aGLfK3jN4J-VJbd9Ik"
+        },
+        {
+          "url": "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/",
+          "title": "Jeje Studios Launches Wild West Brawl, a Free PvP Auto Battler Card Game for iPhone and Android, on the App Store and Google Play",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz83-4kC-K7qA5OPZOMvcaq4kg06QNKHOtHrRj1aPLBDj5sAG7sqqJKdMPBeo"
+        }
+      ]
+    },
+    {
+      "query": "play store",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T08:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz83-4kC-K7qA5OPZOMvcaq4kg06QNKHOtHrRj1aPLBDj5sAG7sqqJKdMPBeo",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/press-release/story/60620/jeje-studios-launches-wild-west-brawl-a-free-pvp-auto-battler-card-game-for-iphone-and-android-on-the-app-store-and-google-play/",
+          "title": "Jeje Studios Launches Wild West Brawl, a Free PvP Auto Battler Card Game for iPhone and Android, on the App Store and Google Play",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRz83-4kC-K7qA5OPZOMvcaq4kg06QNKHOtHrRj1aPLBDj5sAG7sqqJKdMPBeo"
+        }
+      ]
+    },
+    {
+      "query": "lucia voice actor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T08:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66124628/?ref_=ttnw_art_perm",
+        "https://www.tvline.com/2325622/gta-6-lucia-actress-manni-l-perez-law-and-order-special-victims-unit-role/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-female-protagonist-in-gta-6/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfEzS20trSP5swNTkk2TcE2n9UvfsMwytv-Azgjd8p5asYutszCOouxjvIXUA",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66124628/?ref_=ttnw_art_perm",
+          "title": "GTA 6 Cast List: Who plays Jason, Lucia and More",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfEzS20trSP5swNTkk2TcE2n9UvfsMwytv-Azgjd8p5asYutszCOouxjvIXUA"
+        },
+        {
+          "url": "https://www.tvline.com/2325622/gta-6-lucia-actress-manni-l-perez-law-and-order-special-victims-unit-role/",
+          "title": "GTA 6's Lucia Actress Had A Role On Law & Order: Special Victims Unit",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvKLRVL1iFf0qHAsed9E1OwcNkTCiFrko_fxIuSgQeBHDpkwFZDrhreA82Rms"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gtas-treatment-of-women-has-not-been-good-says-rockstar-vet-delighted-by-long-overdue-female-protagonist-in-gta-6/",
+          "title": "Older GTAs weren't good to women, says Rockstar vet delighted by Lucia",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKlWeh5Ow5RAz5xbkGwabzN9ZwmdBBA8fiIVMBrO-PgcTD979dZ7URPzL_DRs"
+        }
+      ]
+    },
+    {
+      "query": "justin timberlake",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T08:00:00Z",
+      "related_news_urls": [
+        "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+        "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
+        "https://www.instyle.com/jessica-biel-justin-timberlake-marriage-documentary-trailer-12274735"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc",
+      "image_credit": "Apple",
+      "news": [
+        {
+          "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+          "title": "Apple TV announces four-part documentary event “TIMBERLAKE”",
+          "publisher": "Apple",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
+          "title": "Justin Timberlake Documentary Trailer: “He’s Not Who I Thought He Was”",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8"
+        },
+        {
+          "url": "https://www.instyle.com/jessica-biel-justin-timberlake-marriage-documentary-trailer-12274735",
+          "title": "Jessica Biel Says She Needs to “Address Some Things” About Justin Timberlake Marriage in Rare Comments",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIEP7FlB8t4nwxUeFM5lG6b1b22SmtoJSgYDQY06nQWvE8b9X2Pigv0WsiuhE"
+        }
+      ]
+    },
     {
       "query": "aus vs eng",
       "approx_searches": "1000+",
       "published_at": "2026-11-24T07:40:00Z",
       "related_news_urls": [
         "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2nd-t20i-1528707/match-preview",
-        "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live",
-        "https://www.bbc.com/sport/cricket/articles/cme39qlevnrqo"
+        "https://www.bbc.com/sport/cricket/live/cly85gv8qpet",
+        "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRynNvT8o5nVK8WXrgCuwraj94bvibnwvRYZO18ndOpXv_u6OsoX8cZ-8qXbc",
       "image_credit": "Cricinfo",
@@ -26,18 +150,53 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRynNvT8o5nVK8WXrgCuwraj94bvibnwvRYZO18ndOpXv_u6OsoX8cZ-8qXbc"
         },
         {
+          "url": "https://www.bbc.com/sport/cricket/live/cly85gv8qpet",
+          "title": "Australia vs England LIVE: Second T20, Carrara, Queensland - cricket score, commentary & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmMHGSgP7wHJQH4LicH4y5KIedt6z8III8wlIlK36I64_KCqFop8IcygJgwfI"
+        },
+        {
           "url": "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live",
           "title": "Australia v England: second men’s Twenty20 international – live",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRr7wUKrqD9XcjWrhABxQqGQfnICF09QEwOveTlGPHJPw0RrNdD_oPo8cyzwk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB16-BTfG7C6ZP3I-T2Eoej7hz8iNeqTk5Q55vhv1tVoixVXH6tNOjKbaAa0Y"
+        }
+      ]
+    },
+    {
+      "query": "the hunger games the ballad of songbirds & snakes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T07:30:00Z",
+      "related_news_urls": [
+        "https://editorial.rottentomatoes.com/article/weekend-box-office-the-hunger-games-sunrise-on-the-reaping-week-1/",
+        "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
+        "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ov1lf_ZsD3mYdhCfIZjKEoacnrU_fmpNDwDO-5oQQW4nZZ0UC5JwGxKRDEY",
+      "image_credit": "Rotten Tomatoes",
+      "news": [
+        {
+          "url": "https://editorial.rottentomatoes.com/article/weekend-box-office-the-hunger-games-sunrise-on-the-reaping-week-1/",
+          "title": "Weekend Box Office: The Hunger Games Dominates with $120 Million Debut",
+          "publisher": "Rotten Tomatoes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ov1lf_ZsD3mYdhCfIZjKEoacnrU_fmpNDwDO-5oQQW4nZZ0UC5JwGxKRDEY"
         },
         {
-          "url": "https://www.bbc.com/sport/cricket/articles/cme39qlevnrqo",
-          "title": "England in Australia: Nikhil Chaudhary stars as hosts win T20 series opener",
-          "publisher": "BBC",
+          "url": "https://www.nytimes.com/2026/11/22/business/media/hunger-games-box-office.html",
+          "title": "‘Hunger Games’ Rebounds With $120 Million Opening for ‘Sunrise on the Reaping’ at Box Office",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTFyWwerFaM1ZOd1Bsd0N_qPgWenTl1zsawbvtPfXyKQSFs5aXiTVq1JQ4JFw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ12dO5pH53RfAQp9Yhvy5AH_J4yAwSCvijcldrN9l5a_C_qG9jyrE7RtJAuYA"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-22/-hunger-games-prequel-snags-120-million-in-domestic-debut",
+          "title": "‘Hunger Games’ Prequel Snags $120 Million in Domestic Debut",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY9ZxJYPk0WO2XC4Gjbed5BVsXBbVn7VqJXUlQb4PzUg2gzL4raAHaqZkQquc"
         }
       ]
     },
@@ -112,13 +271,48 @@
       ]
     },
     {
+      "query": "gta 6 criminal profile",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T07:20:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+        "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
+        "https://tech.yahoo.com/gaming/articles/playing-gta-6-villain-makes-163251499.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+          "title": "GTA 6 Criminal Profile: How the system works",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
+        },
+        {
+          "url": "https://aftermath.site/gta-6-criminal-profile-mechanic-vi-grand-theft-auto-jason-lucia-rockstar/",
+          "title": "GTA VI Does What Most Video Games With Choice And Morality Systems Don't",
+          "publisher": "Aftermath",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTS3ovd2xYejn0MgHW0gFmPA76RKumlKSYa7LQ2Qfw4hC-LU6ShcYX4lH5SG9U"
+        },
+        {
+          "url": "https://tech.yahoo.com/gaming/articles/playing-gta-6-villain-makes-163251499.html",
+          "title": "Playing GTA 6 as a Villain Makes Escaping the Police Much Harder",
+          "publisher": "Yahoo Tech",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXw4GW5Q53yt6TaofzZ1oM-PbPPglcvVafRAQ5BJK2g0wyPaOGCb2IyL-ilE8"
+        }
+      ]
+    },
+    {
       "query": "whitney peak",
       "approx_searches": "200+",
       "published_at": "2026-11-24T07:20:00Z",
       "related_news_urls": [
         "https://people.com/sunrise-on-the-reaping-cast-real-life-loves-12274423",
-        "https://www.yahoo.com/entertainment/celebrity/articles/does-hunger-games-star-joseph-181355078.html",
-        "https://www.cosmopolitan.com/entertainment/celebs/a74286490/hunger-games-sunrise-on-the-reaping-cast-partners/"
+        "https://www.nj.com/entertainment/2026/11/does-the-hunger-games-star-joseph-zada-have-a-girlfriend.html",
+        "https://sg.news.yahoo.com/sunrise-reaping-cast-dating-let-162349933.html"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgKOeKu_aamKPFO_N2Xk9fD4yIPfTANTGyBR_Rilxw2JAQc0r2Q2Z-4upkJE",
       "image_credit": "People.com",
@@ -131,228 +325,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgKOeKu_aamKPFO_N2Xk9fD4yIPfTANTGyBR_Rilxw2JAQc0r2Q2Z-4upkJE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/does-hunger-games-star-joseph-181355078.html",
+          "url": "https://www.nj.com/entertainment/2026/11/does-the-hunger-games-star-joseph-zada-have-a-girlfriend.html",
           "title": "Does ‘The Hunger Games’ star Joseph Zada have a girlfriend?",
-          "publisher": "Yahoo",
+          "publisher": "NJ.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5Yi_LvjxyZ2gRbsDn_usa15oeVxgzQo7Mjx8aYrYMEYvNt3fYf5BSXOBwzA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4tlOcIdoVsvXPkh355c43LaY7dYR58ljessMARV_Oj0kRmbgCmhypdDSHmY0"
         },
         {
-          "url": "https://www.cosmopolitan.com/entertainment/celebs/a74286490/hunger-games-sunrise-on-the-reaping-cast-partners/",
-          "title": "‘Hunger Games: Sunrise on the Reaping’ Cast Partners",
-          "publisher": "Cosmopolitan",
+          "url": "https://sg.news.yahoo.com/sunrise-reaping-cast-dating-let-162349933.html",
+          "title": "Who Is the ‘Sunrise on the Reaping’ Cast Dating? Let’s Get Into Their IRL Love Lives",
+          "publisher": "Yahoo News Singapore",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcZkJxWOu5Wo3-T5ep5kE4E4W4iS5F2_8edLylS3QkElgJj_AqXeTem0xNIeE"
-        }
-      ]
-    },
-    {
-      "query": "galatasaray",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T07:10:00Z",
-      "related_news_urls": [
-        "https://m.dongqiudi.com/tr/article/100054539",
-        "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757",
-        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA",
-      "image_credit": "懂球帝",
-      "news": [
-        {
-          "url": "https://m.dongqiudi.com/tr/article/100054539",
-          "title": "Şampiyonlar Ligi 5. Hafta Önizlemesi: Real Madrid 10. peşinde, Man City Napoli'yi ağırlıyor",
-          "publisher": "懂球帝",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA"
-        },
-        {
-          "url": "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757",
-          "title": "Unai Emery'den Galatasaray'a övgü: 'Türkiye'nin en iyisi'",
-          "publisher": "Cumhuriyet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRkoBf8FM5iSkg5tH9CNaWWaxZy8c0zZWhS4YvBIX4AxEz1B8LdcJDB-QycqY"
-        },
-        {
-          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
-          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
-        }
-      ]
-    },
-    {
-      "query": "andrew tate",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T07:10:00Z",
-      "related_news_urls": [
-        "https://www.the-independent.com/news/uk/crime/andrew-tate-tristan-tate-extradition-hearing-b3085979.html",
-        "https://speaks.co.in/business/andrew-tate-challenges-uk-extradition-as-lawyers-question-evidence-in-us-court/",
-        "https://cwibc.co.id/en/tate-brothers-uk-extradition-challenge"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ",
-      "image_credit": "The Independent",
-      "news": [
-        {
-          "url": "https://www.the-independent.com/news/uk/crime/andrew-tate-tristan-tate-extradition-hearing-b3085979.html",
-          "title": "Andrew and Tristan Tate’s final extradition hearings delayed as brothers fight removal to UK",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ"
-        },
-        {
-          "url": "https://speaks.co.in/business/andrew-tate-challenges-uk-extradition-as-lawyers-question-evidence-in-us-court/",
-          "title": "Andrew Tate Challenges UK Extradition as Lawyers Question Evidence in US Court",
-          "publisher": "Speaks Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lNlS8IO8ceLlInvoM6MXB1UMrTLKvDlUushxQnnmECQ-uyc4WJnIAjPgGuU"
-        },
-        {
-          "url": "https://cwibc.co.id/en/tate-brothers-uk-extradition-challenge",
-          "title": "Tate Brothers Challenge UK Extradition in US Court",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSheHKuQICLbNu3ig0eloQLkT1krTSFaKTWa4Mrsrc1s8n3_HaWhwYiiDNSI"
-        }
-      ]
-    },
-    {
-      "query": "ralph fiennes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T07:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66119991/",
-        "https://apnews.com/video/ralph-fiennes-jokes-new-bond-robert-pattinson-should-play-voldemort-in-harry-potter-series-420166fe340d4ddc94e9aded08f63010",
-        "https://www.yahoo.com/entertainment/articles/weekly-magical-book-26-harry-140300800.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmIDUXgTYhElRnAHa0-ahQDlPUdx72CzFzU_Juo6YQiBxlHadvneMfEIDi3t0",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66119991/",
-          "title": "Ralph Fiennes Shades Robert Pattinson As New James Bond: ‘I’m Still In Love With Daniel Craig’",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmIDUXgTYhElRnAHa0-ahQDlPUdx72CzFzU_Juo6YQiBxlHadvneMfEIDi3t0"
-        },
-        {
-          "url": "https://apnews.com/video/ralph-fiennes-jokes-new-bond-robert-pattinson-should-play-voldemort-in-harry-potter-series-420166fe340d4ddc94e9aded08f63010",
-          "title": "Ralph Fiennes jokes new Bond Robert Pattinson should play Voldemort in Harry Potter series",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMlgpQDg7BY6n0FW4Od7QE4viXydHCekaZ2ZmKdDsaQFT5i1b4w3zQC90Vp6k"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/weekly-magical-book-26-harry-140300800.html",
-          "title": "Your Weekly Magical Book of 26 'Harry Potter' Memes (November 21, 2026)",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPwWKnvqR0y78ZERpsxn8MhLN52Iksm6gpdKplygUBee2WElQpHO1UeyExGMY"
-        }
-      ]
-    },
-    {
-      "query": "slog",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T06:40:00Z",
-      "related_news_urls": [
-        "https://www.svt.se/sport/konstakning/succe-for-svensken-i-finland-ryssar-stoppades",
-        "https://www.sverigesradio.se/artikel/nordeback-slog-personbasta-och-tog-forsta-pallplatsen",
-        "https://www.skatesweden.se/nyheter/nyheter/2026-11-21-andreas-nordeback-skrev-svensk-konstakningshistoria---tog-silver-i-grand-prix"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReSJIarIRi5ZwytEKsesIV9r2LDTUMxFR966pfRJivEkv8CakAtJAikWZ-sto",
-      "image_credit": "SVT Nyheter",
-      "news": [
-        {
-          "url": "https://www.svt.se/sport/konstakning/succe-for-svensken-i-finland-ryssar-stoppades",
-          "title": "Konståkning: Succé för svensken i Finland – ryssar stoppades",
-          "publisher": "SVT Nyheter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReSJIarIRi5ZwytEKsesIV9r2LDTUMxFR966pfRJivEkv8CakAtJAikWZ-sto"
-        },
-        {
-          "url": "https://www.sverigesradio.se/artikel/nordeback-slog-personbasta-och-tog-forsta-pallplatsen",
-          "title": "Nordebäck slog personbästa – och tog första pallplatsen",
-          "publisher": "Sveriges Radio",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd-u90JktRYrBE78GjxUzxvLgzqZCyWtG3cLhsOAhzqRCf0xOvEZNXpuPXqgQ"
-        },
-        {
-          "url": "https://www.skatesweden.se/nyheter/nyheter/2026-11-21-andreas-nordeback-skrev-svensk-konstakningshistoria---tog-silver-i-grand-prix",
-          "title": "Andreas Nordebäck skrev svensk konståkningshistoria - tog silver i Grand Prix",
-          "publisher": "Svenska Konståkningsförbundet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeUBMMmmcD4_5NK9kM88KuoEtEoxo9_x6a0zS-tx5wm_YOoAm2aRkilR7Dv3A"
-        }
-      ]
-    },
-    {
-      "query": "high wind watch",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T06:30:00Z",
-      "related_news_urls": [
-        "https://www.sacbee.com/news/weather-news/article318217664.html",
-        "https://patch.com/california/banning-beaumont/ie-braces-heavy-rain-55-mph-winds-thursday",
-        "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfAWm9758fsGfjdAiICGlY7GXHCgEZtITFKh0wCI83fjsUtCay_ViP968VLY",
-      "image_credit": "Sacramento Bee",
-      "news": [
-        {
-          "url": "https://www.sacbee.com/news/weather-news/article318217664.html",
-          "title": "UPDATE: Wind advisory in place for Coastal Del Norte until early Tuesday evening",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfAWm9758fsGfjdAiICGlY7GXHCgEZtITFKh0wCI83fjsUtCay_ViP968VLY"
-        },
-        {
-          "url": "https://patch.com/california/banning-beaumont/ie-braces-heavy-rain-55-mph-winds-thursday",
-          "title": "IE Braces For Heavy Rain, 55 MPH Winds This Week",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKmLDZ-x0o3A1E8-83Gf3fynbNPcNMF1mK_6A8mN2zErSI4IkVH3zPRLkV5DQ"
-        },
-        {
-          "url": "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/",
-          "title": "Wind advisory in place for Los Angeles County for Thursday – wind gusts up to 45 mph",
-          "publisher": "Los Angeles Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFXmPBCiLCH4FHElnY_4efiNlq7ujKsj0aBLZylA2jqRKOdVaLCTq_sWTwJd8"
-        }
-      ]
-    },
-    {
-      "query": "colombia",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T06:30:00Z",
-      "related_news_urls": [
-        "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
-        "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
-        "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE",
-      "image_credit": "France 24",
-      "news": [
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
-          "title": "Un atentado con coche bomba deja edificios destruidos y caos en Colombia",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE"
-        },
-        {
-          "url": "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
-          "title": "Un carro bomba explota frente a la Gobernación del Meta en Villavicencio",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk"
-        },
-        {
-          "url": "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625",
-          "title": "Videos muestran gravedad del atentado con explosivos contra la Gobernación del Meta en la noche de este 23 de noviembre: hay varios locales afectados",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu9skCGXdro_p-FJ86wD7IqGlP6Tfce7hYv7MktArcyqXocKEBWzAt6DP-xWU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT64O3H-gs8IE7VUZdVhtBKNK7pkyFMjGQlAcsY7G0LLLnpG90V5Eq9qUdkk0Q"
         }
       ]
     }
