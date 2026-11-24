@@ -296,3 +296,13 @@ test('portable rehearsal rejects expired, foreign, changed-ticket and replaced-l
   assert.equal((await state.get(key)).context.color_jobs[0].status,'working');
  }finally{await state.close();}
 });
+
+
+test('owner host check runs actual mesh HTTP and restart roundtrip without production credentials',async ()=>{
+ const {execFileSync}=await import('node:child_process');
+ const {fileURLToPath}=await import('node:url');
+ const output=execFileSync(process.execPath,[fileURLToPath(new URL('../distributed-vault/mesh-host-check.mjs',import.meta.url))],{encoding:'utf8',timeout:25000,env:{...process.env,MESH_OWNER_TOKEN:'not-a-real-token',MESH_DB:'/nonexistent/production-do-not-use.sqlite'}});
+ const receipt=JSON.parse(output);
+ assert.deepEqual(receipt,{ok:true,scope:'local-synthetic-host-check',service:'infinity-mesh-local-v1',anonymousDenied:true,encryptedRoundtrip:true,restartVerified:true,productionVerified:false});
+ assert.doesNotMatch(output,/not-a-real-token|production-do-not-use/);
+});
