@@ -3,12 +3,47 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T09:31:25.169464Z",
+  "checked_at": "2026-11-24T10:01:22.233770Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "travel",
+      "query": "is fortnite down right now",
       "approx_searches": "100+",
+      "published_at": "2026-11-24T09:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/nightly-news/video/outages-spread-to-video-games-as-government-officials-cite-software-patches-273773125706",
+        "https://windowsreport.com/is-fortnite-servers-down-and-not-working-right-now-heres-why/",
+        "https://www.nacionale.com/en/articles/is-fortnite-down-login-matchmaking-outage-november-18"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvDexZla2OfUrvsDFPdtZvC0b1W_4kVBH9kCRRKXtq_ttJ1vRkRPq-5cunCE",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/nightly-news/video/outages-spread-to-video-games-as-government-officials-cite-software-patches-273773125706",
+          "title": "Outages spread to video games as government officials cite software patches",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNvDexZla2OfUrvsDFPdtZvC0b1W_4kVBH9kCRRKXtq_ttJ1vRkRPq-5cunCE"
+        },
+        {
+          "url": "https://windowsreport.com/is-fortnite-servers-down-and-not-working-right-now-heres-why/",
+          "title": "Is Fortnite servers down and not working right now? Here's why",
+          "publisher": "Windows Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0Y-p20iTsR4LH4rjr4PbMLLzq1xC3lHxiGpPc1Ad-HywLzBxZfHlm3VnqxdI"
+        },
+        {
+          "url": "https://www.nacionale.com/en/articles/is-fortnite-down-login-matchmaking-outage-november-18",
+          "title": "Is Fortnite down? Yes, Epic reports a major outage hitting login and matchmaking",
+          "publisher": "Nacionale",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSy9xMX2cLNxDg8TNiIPHKlm--CYx9JpiYI2LVa5WTTyE0Aec58WRAOcI7aToU"
+        }
+      ]
+    },
+    {
+      "query": "travel",
+      "approx_searches": "200+",
       "published_at": "2026-11-24T09:10:00Z",
       "related_news_urls": [
         "https://www.cnn.com/2026/11/23/travel/video/delta-glitch-looming-storms-threaten-travel-chaos-over-holiday-week",
@@ -77,13 +112,48 @@
       ]
     },
     {
+      "query": "ticket",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:10:00Z",
+      "related_news_urls": [
+        "https://nypost.com/2026/11/23/us-news/lirr-riders-sharing-phone-location-get-ticket-warnings-despite-claims-of-no-tracking/",
+        "https://www.yahoo.com/news/us/articles/said-daughter-disney-ticket-covered-143125518.html",
+        "https://www.ticketnews.com/2026/11/reliaquest-bowl-tampa-tickets-on-sale-at-raymond-james-stadium/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0Ioo3VPaqPJWPWiRqFlAWT9Xhk-rNoR3ISAXMoYZfKTqVPtD30sYkNjbR-Z0",
+      "image_credit": "New York Post",
+      "news": [
+        {
+          "url": "https://nypost.com/2026/11/23/us-news/lirr-riders-sharing-phone-location-get-ticket-warnings-despite-claims-of-no-tracking/",
+          "title": "Exclusive | LIRR riders sharing phone location get $8 ticket warnings — despite claims of no tracking",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0Ioo3VPaqPJWPWiRqFlAWT9Xhk-rNoR3ISAXMoYZfKTqVPtD30sYkNjbR-Z0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/articles/said-daughter-disney-ticket-covered-143125518.html",
+          "title": "He Said His Daughter’s Disney Ticket Covered Him, Too. Deputies Arrested Him for Theft",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgqd-WKp7EX3uGxXdUd_xtuTUyg4Aq79F4pppAdVGpqdkc-dCRx2F1OQ8FLxE"
+        },
+        {
+          "url": "https://www.ticketnews.com/2026/11/reliaquest-bowl-tampa-tickets-on-sale-at-raymond-james-stadium/",
+          "title": "ReliaQuest Bowl Tampa tickets on sale at Raymond James Stadium",
+          "publisher": "TicketNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe6Dtfkaek5zl4hGoLuB4fJ3cUXm6GgTo7Q0snw0Or8TMXsTdRVuiPrAs3BSg"
+        }
+      ]
+    },
+    {
       "query": "dinner",
       "approx_searches": "100+",
       "published_at": "2026-11-24T09:00:00Z",
       "related_news_urls": [
         "https://www.npr.org/2026/11/23/nx-s1-6044207/thanksgiving-meal-costs",
         "https://time.com/article/2026/11/23/thanksgiving-set-to-cost-americans-more-this-year-farm-bureau/",
-        "https://www.kcci.com/article/is-a-thanksgiving-meal-more-expensive-this-year-it-depends/74513063"
+        "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQu72l3xoVOlB0nZUnx9wxNCl-unjxP-9U7LGSVo20YA9DPl1DLFUMKPXsQgY",
       "image_credit": "NPR",
@@ -103,11 +173,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOyukk2YO7NxHCPrkpgeuEGGitKLw66iXtX9DmbrQkj9ekSdlL0SVWh3JpNuA"
         },
         {
-          "url": "https://www.kcci.com/article/is-a-thanksgiving-meal-more-expensive-this-year-it-depends/74513063",
-          "title": "Is a Thanksgiving meal more expensive this year? It depends",
-          "publisher": "KCCI",
+          "url": "https://www.fb.org/intel/markets/thanksgiving-dinner-cost-ticks-upward-in-2026",
+          "title": "Thanksgiving Dinner Cost Ticks Upward in 2026",
+          "publisher": "American Farm Bureau Federation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxNuYDMveJl_RmPyaLUyZuMcF3JhLBu8DuHEErNq33NQZn8vEmbEQusOpAh9w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzsfjR9s0oq88XOiVT4HSTM-eyB623gPl51vy_wgn9fKw3sSYjYn20-dvlQzA"
         }
       ]
     },
@@ -116,19 +186,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-24T09:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/deboer-family",
+        "https://www.espn.com/soccer/story/_/id/50571732/womens-world-cup-united-states-united-kindgom",
         "https://www.theguardian.com/football/2026/nov/23/2035-womens-world-cup-potential-women-girls-uk",
-        "https://www.nbc4i.com/sports/united-states-officially-chosen-as-co-host-for-2031-fifa-womens-world-cup/"
+        "https://ussoccer.com/stories/2026/11/federation/united-states-mexico-costa-rica-jamaica-awarded-fifa-womens-world-cup-2031"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWWRcMCX8ux0vHiaMS7J2agsIYy7XfyzVi-yGSDzKafkB_VNPfI1hqda6p2nA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT87dCEjufTBKj8hDDFK-gBg8Su_2aLc5x4bapGyGmlfmdemrYy6VX9DeKq_Fs",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/deboer-family",
-          "title": "Richter throws TD pass to Dabbs, Griffith kicks 4 FGs for Toledo in 19-0 win over BGSU",
+          "url": "https://www.espn.com/soccer/story/_/id/50571732/womens-world-cup-united-states-united-kindgom",
+          "title": "U.S. to co-host Women's World Cup in 2031; U.K. wins bid for 2035",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWWRcMCX8ux0vHiaMS7J2agsIYy7XfyzVi-yGSDzKafkB_VNPfI1hqda6p2nA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT87dCEjufTBKj8hDDFK-gBg8Su_2aLc5x4bapGyGmlfmdemrYy6VX9DeKq_Fs"
         },
         {
           "url": "https://www.theguardian.com/football/2026/nov/23/2035-womens-world-cup-potential-women-girls-uk",
@@ -138,11 +208,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQrgBHPysJUlFz82phk18PDaTooKKITcXtZMSiAJvcBdr7vaKr1JsZluMNw81E"
         },
         {
-          "url": "https://www.nbc4i.com/sports/united-states-officially-chosen-as-co-host-for-2031-fifa-womens-world-cup/",
-          "title": "United States officially chosen as co-host for 2031 FIFA Women’s World Cup",
-          "publisher": "NBC4 WCMH-TV",
+          "url": "https://ussoccer.com/stories/2026/11/federation/united-states-mexico-costa-rica-jamaica-awarded-fifa-womens-world-cup-2031",
+          "title": "United States, Mexico, Costa Rica and Jamaica Awarded FIFA Women’s World Cup 2031™",
+          "publisher": "US Soccer",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRacWjizc9JhfUVfqNXg_vOoxcX12x5za93yC0OQZ1rEV_tWnY67_1IyWWdvlc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_th2Rw7ZFCYBcqkPXlL6otjMgR8IQIBtgoeQZBYndXAWIYo2r_CDixEsdrc"
+        }
+      ]
+    },
+    {
+      "query": "sun",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T09:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/alabama-football-cfp-projections-iron-090255233.html",
+        "https://247sports.com/college/alabama/article/what-are-alabamas-scenarios-for-sec-championship-game-entering-the-iron-bowl-293131468/",
+        "https://www.saturdaydownsouth.com/news/college-football/3-big-alabama-storylines-with-a-playoff-berth-well-in-reach/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYN0ropWHvEmJu9qkfYUJHwelEltulX2xNBs6Pgf2XNsdYv4IAnW4obUrmWlI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/alabama-football-cfp-projections-iron-090255233.html",
+          "title": "Alabama football CFP projections before Iron Bowl",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYN0ropWHvEmJu9qkfYUJHwelEltulX2xNBs6Pgf2XNsdYv4IAnW4obUrmWlI"
+        },
+        {
+          "url": "https://247sports.com/college/alabama/article/what-are-alabamas-scenarios-for-sec-championship-game-entering-the-iron-bowl-293131468/",
+          "title": "What are Alabama's scenarios for SEC championship game entering the Iron Bowl?",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT7JLdITe5Vn_WLbaSA5IAI1E6kQ4vc3MNU1M6aixB0Ai617U8NF41BxQ0yHk"
+        },
+        {
+          "url": "https://www.saturdaydownsouth.com/news/college-football/3-big-alabama-storylines-with-a-playoff-berth-well-in-reach/",
+          "title": "3 big Alabama storylines with a Playoff berth well in reach",
+          "publisher": "Saturday Down South",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgOCS4lOhvHXM-n6D9MNBuA70gpiW40sTcb33KvtkTcVvMCyAyfNsJPj1kfsE"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "New York Post",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmBm4KOx2Pi5VWqN5JYvUkpH1OiT72VqN6UwYVErZVlDcktEG7Uhvb5EyFF38"
-        }
-      ]
-    },
-    {
-      "query": "book",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T08:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm3eg502nxw2o",
-        "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
-        "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm3eg502nxw2o",
-          "title": "Gisèle Pelicot 'humiliated' after nude photos sent to media to promote book",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrtVZTLimxzFUTvbBqxafXTW8ktXb_HTneRId64yl55LiZqrWAq3zlVmlsNyw"
-        },
-        {
-          "url": "https://www.theguardian.com/world/2026/nov/23/gisele-pelicot-deeply-shocked-nude-images-book-france",
-          "title": "Gisèle Pelicot ‘deeply shocked’ after nude images used to promote book",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR73d4xj9mx-7Ij-CgFQ8-_X5wjeB-TgPhTmS_K1rvsEXS6Zx6v5Pex5GuQtlg"
-        },
-        {
-          "url": "https://www.lemonde.fr/en/france/article/2026/11/23/gisele-pelicot-threatens-legal-action-against-publisher-over-use-of-nude-images_6787340_7.html",
-          "title": "Gisèle Pelicot to sue publisher over unauthorized use of nude photographs",
-          "publisher": "Le Monde.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmrcKbszYeXra9PlaFyRgL4zo-f2G4WEbm__6fx41XCY8rLGT48J-FX4VCj_M"
-        }
-      ]
-    },
-    {
-      "query": "philippines",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T08:20:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-24/philippines-to-upgrade-airport-near-taiwan-for-easier-us-access",
-        "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-        "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpfpfsRhGq32xUiTShBb_qQyVJW4BOxBZO9IZOJEDYM-g9v3sI54NjcsrhGiU",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/philippines-to-upgrade-airport-near-taiwan-for-easier-us-access",
-          "title": "Philippines to Upgrade Airport Near Taiwan for Easier US Access",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpfpfsRhGq32xUiTShBb_qQyVJW4BOxBZO9IZOJEDYM-g9v3sI54NjcsrhGiU"
-        },
-        {
-          "url": "https://news.usni.org/2026/11/23/u-s-commits-2b-defense-loan-for-philippine-military-luzon-strait-development",
-          "title": "U.S. Commits $2B Defense Loan for Philippine Military, Luzon Strait Development",
-          "publisher": "USNI News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjN-oBKVf6jDWlMNUR3FOmEe_Nv2MNpKDocoeuUpMU2n5gz13AYIx_Pflj_yg"
-        },
-        {
-          "url": "https://www.scmp.com/news/asia/southeast-asia/article/3375471/trumps-us24bn-defence-package-philippines-push-self-reliance",
-          "title": "Trump offers the Philippines US$2.4 billion for self-defence – with a catch",
-          "publisher": "South China Morning Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV9jsxRZBMJfu-Gvh7yorpDi7H7I1KleGi2VLfxhZm-9rzlxEUGvAHtFTkcqg"
-        }
-      ]
-    },
-    {
-      "query": "google play",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T08:10:00Z",
-      "related_news_urls": [
-        "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
-        "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
-        "https://demokratis.co.id/en/plaud-google-play-productivity-award"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA",
-      "image_credit": "The Korea Daily",
-      "news": [
-        {
-          "url": "https://en.koreadaily.com/plaud-google-play-best-app-2026/",
-          "title": "Plaud — AI Voice Recorder Wins Google Play’s 2026 Best App",
-          "publisher": "The Korea Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHvRCvFTu248qnqo46K9uAWpmGY9vTBkroeibMawUHp29QWj7DFlHzXKsRhTA"
-        },
-        {
-          "url": "https://demokratis.co.id/en/plaud-google-play-productivity-award-2026",
-          "title": "Plaud Wins Google Play Productivity Award for 2026",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRMLq82s5y7jKud0zZZ3s0MI4tPhWqd4ETcNR6LRobARdFaYi2OVb9_BFmoOk"
-        },
-        {
-          "url": "https://demokratis.co.id/en/plaud-google-play-productivity-award",
-          "title": "Plaud Wins Google Play 2026 Productivity Partner Award",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjZ5n_DBSAe19Q4eASdsKEJ_yfDUhkHP4vFcU1xfvJ-I8vpS93dOrV_FO7Qrs"
         }
       ]
     }
