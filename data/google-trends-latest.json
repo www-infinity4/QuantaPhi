@@ -3,34 +3,174 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T07:01:11.669652Z",
+  "checked_at": "2026-11-24T07:31:29.001246Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "high wind watch",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T06:30:00Z",
+      "query": "galatasaray",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T07:10:00Z",
       "related_news_urls": [
-        "https://www.vvng.com/strong-winds-arrive-wednesday-night-ahead-of-thursday-rain-in-victor-valley/",
-        "https://www.sacbee.com/news/weather-news/article318217664.html",
-        "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/"
+        "https://m.dongqiudi.com/tr/article/100054539",
+        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
+        "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_PvIoorZwlszMQ_YnC7V0ZXBnsCtyJ7t_JPTIL-NcIVPrewefRhxtacjnhQ",
-      "image_credit": "VVNG",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA",
+      "image_credit": "懂球帝",
       "news": [
         {
-          "url": "https://www.vvng.com/strong-winds-arrive-wednesday-night-ahead-of-thursday-rain-in-victor-valley/",
-          "title": "Strong Winds Arrive Wednesday Night Ahead Of Thursday Rain In Victor Valley",
-          "publisher": "VVNG",
+          "url": "https://m.dongqiudi.com/tr/article/100054539",
+          "title": "Şampiyonlar Ligi 5. Hafta Önizlemesi: Real Madrid 10. peşinde, Man City Napoli'yi ağırlıyor",
+          "publisher": "懂球帝",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_PvIoorZwlszMQ_YnC7V0ZXBnsCtyJ7t_JPTIL-NcIVPrewefRhxtacjnhQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA"
         },
+        {
+          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
+          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
+          "publisher": "Sözcü Gazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
+        },
+        {
+          "url": "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757",
+          "title": "Unai Emery'den Galatasaray'a övgü: 'Türkiye'nin en iyisi'",
+          "publisher": "Cumhuriyet",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRkoBf8FM5iSkg5tH9CNaWWaxZy8c0zZWhS4YvBIX4AxEz1B8LdcJDB-QycqY"
+        }
+      ]
+    },
+    {
+      "query": "andrew tate",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T07:10:00Z",
+      "related_news_urls": [
+        "https://www.the-independent.com/news/uk/crime/andrew-tate-tristan-tate-extradition-hearing-b3085979.html",
+        "https://www.dumbartonreporter.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
+        "https://www.bromsgroveadvertiser.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ",
+      "image_credit": "The Independent",
+      "news": [
+        {
+          "url": "https://www.the-independent.com/news/uk/crime/andrew-tate-tristan-tate-extradition-hearing-b3085979.html",
+          "title": "Andrew and Tristan Tate’s final extradition hearings delayed as brothers fight removal to UK",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ"
+        },
+        {
+          "url": "https://www.dumbartonreporter.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
+          "title": "Andrew and Tristan Tate’s ‘hands tied’ in UK extradition fight, say lawyers",
+          "publisher": "Dumbarton Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRr6Gg2ebT4OsBNG-GZGpb--qtKquLe1bVNDzLt0WlYhTp75XlPMngK9YMjW8"
+        },
+        {
+          "url": "https://www.bromsgroveadvertiser.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
+          "title": "Andrew and Tristan Tate’s ‘hands tied’ in UK extradition fight, say lawyers",
+          "publisher": "bromsgroveadvertiser.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR96UgYLExo39eNEYfQwWOGteuorczPFHUV8g_KMS2I20UURcM7nin9M0Q-OJU"
+        }
+      ]
+    },
+    {
+      "query": "ralph fiennes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T07:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66119991/",
+        "https://apnews.com/video/ralph-fiennes-jokes-new-bond-robert-pattinson-should-play-voldemort-in-harry-potter-series-420166fe340d4ddc94e9aded08f63010",
+        "https://www.yahoo.com/entertainment/articles/weekly-magical-book-26-harry-140300800.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmIDUXgTYhElRnAHa0-ahQDlPUdx72CzFzU_Juo6YQiBxlHadvneMfEIDi3t0",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66119991/",
+          "title": "Ralph Fiennes Shades Robert Pattinson As New James Bond: ‘I’m Still In Love With Daniel Craig’",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmIDUXgTYhElRnAHa0-ahQDlPUdx72CzFzU_Juo6YQiBxlHadvneMfEIDi3t0"
+        },
+        {
+          "url": "https://apnews.com/video/ralph-fiennes-jokes-new-bond-robert-pattinson-should-play-voldemort-in-harry-potter-series-420166fe340d4ddc94e9aded08f63010",
+          "title": "Ralph Fiennes jokes new Bond Robert Pattinson should play Voldemort in Harry Potter series",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMlgpQDg7BY6n0FW4Od7QE4viXydHCekaZ2ZmKdDsaQFT5i1b4w3zQC90Vp6k"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/weekly-magical-book-26-harry-140300800.html",
+          "title": "Your Weekly Magical Book of 26 'Harry Potter' Memes (November 21, 2026)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPwWKnvqR0y78ZERpsxn8MhLN52Iksm6gpdKplygUBee2WElQpHO1UeyExGMY"
+        }
+      ]
+    },
+    {
+      "query": "slog",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T06:40:00Z",
+      "related_news_urls": [
+        "https://www.inquirer.com/eagles/live/eagles-news-saquon-barkley-injury-updates-thanksgiving-cowboys-20261123.html",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/saquon-barkley-i-wont-be-100-percent-healthy-this-season-but-will-keep-playing",
+        "https://www.delawareonline.com/story/sports/nfl/eagles/2026/11/22/saquon-barkley-injured-in-eagles-win-what-happened/92916061007/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2h9eY96BC3WQpDbUaiPKRiqw4yyMHp6VL43NvRDWN1f7ehjddft7_NZsZXQ",
+      "image_credit": "Inquirer.com",
+      "news": [
+        {
+          "url": "https://www.inquirer.com/eagles/live/eagles-news-saquon-barkley-injury-updates-thanksgiving-cowboys-20261123.html",
+          "title": "Eagles news: Injury concerns at cornerback; Nick Sirianni on Daniel Jones, more; national media rips DK Metcalf",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2h9eY96BC3WQpDbUaiPKRiqw4yyMHp6VL43NvRDWN1f7ehjddft7_NZsZXQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/saquon-barkley-i-wont-be-100-percent-healthy-this-season-but-will-keep-playing",
+          "title": "Saquon Barkley: I won’t be 100 percent healthy this season, but will keep playing",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpnZnAKpqH8RuYm4MiDXXbY1xzhn7XJ1sdWaafzlGZb55NUqIDoXQByk3tXaw"
+        },
+        {
+          "url": "https://www.delawareonline.com/story/sports/nfl/eagles/2026/11/22/saquon-barkley-injured-in-eagles-win-what-happened/92916061007/",
+          "title": "Saquon Barkley injured in Eagles' victory. What happened to star RB",
+          "publisher": "Delawareonline.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuFDAYeauXmhAJ9_p-hiyZzSrAva-7qNYi7aREGlX5j9GLMWkEf2ngeogqR60"
+        }
+      ]
+    },
+    {
+      "query": "high wind watch",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T06:30:00Z",
+      "related_news_urls": [
+        "https://www.sacbee.com/news/weather-news/article318217664.html",
+        "https://patch.com/california/banning-beaumont/ie-braces-heavy-rain-55-mph-winds-thursday",
+        "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfAWm9758fsGfjdAiICGlY7GXHCgEZtITFKh0wCI83fjsUtCay_ViP968VLY",
+      "image_credit": "Sacramento Bee",
+      "news": [
         {
           "url": "https://www.sacbee.com/news/weather-news/article318217664.html",
           "title": "UPDATE: Wind advisory in place for Coastal Del Norte until early Tuesday evening",
           "publisher": "Sacramento Bee",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfAWm9758fsGfjdAiICGlY7GXHCgEZtITFKh0wCI83fjsUtCay_ViP968VLY"
+        },
+        {
+          "url": "https://patch.com/california/banning-beaumont/ie-braces-heavy-rain-55-mph-winds-thursday",
+          "title": "IE Braces For Heavy Rain, 55 MPH Winds This Week",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKmLDZ-x0o3A1E8-83Gf3fynbNPcNMF1mK_6A8mN2zErSI4IkVH3zPRLkV5DQ"
         },
         {
           "url": "https://www.dailynews.com/2026/11/18/wind-advisory-in-place-for-los-angeles-county-for-thursday-wind-gusts-up-to-45-mph/",
@@ -48,7 +188,7 @@
       "related_news_urls": [
         "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
         "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
-        "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625"
+        "https://www.ntn24.com/noticias-actualidad/abelardo-de-la-espriella-informa-que-este-lunes-en-la-noche-hubo-un-atentado-con-explosivos-contra-la-gobernacion-del-meta-668269"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk",
       "image_credit": "EL PAÍS",
@@ -68,11 +208,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE"
         },
         {
-          "url": "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625",
-          "title": "Videos muestran gravedad del atentado con explosivos contra la Gobernación del Meta en la noche de este 23 de noviembre: hay varios locales afectados",
-          "publisher": "El Tiempo",
+          "url": "https://www.ntn24.com/noticias-actualidad/abelardo-de-la-espriella-informa-que-este-lunes-en-la-noche-hubo-un-atentado-con-explosivos-contra-la-gobernacion-del-meta-668269",
+          "title": "Abelardo de la Espriella informa que este lunes en la noche hubo un \"atentado con explosivos contra la Gobernación del Meta\"",
+          "publisher": "NTN24",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu9skCGXdro_p-FJ86wD7IqGlP6Tfce7hYv7MktArcyqXocKEBWzAt6DP-xWU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFAuzjG3d5MWE9b9Xz3mq76rqVoY0FeRy2sgfQVnMFx85lvwuQC1jQ949LIoA"
+        }
+      ]
+    },
+    {
+      "query": "savannah james",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T06:30:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/",
+        "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
+        "https://www.basketballnetwork.net/latest-news/lebron-james-wife-savannah-seeks-restraining-orders-against-two-men"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqG0pKwWKBiC5gZ0qyAXQwnieBB6DPQGhSn3MIPE2VWMm1ai7Utsa_Rn_uhNw",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/",
+          "title": "LeBron James' Wife Savannah Seeks Restraining Orders Over Alleged Trespassers",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqG0pKwWKBiC5gZ0qyAXQwnieBB6DPQGhSn3MIPE2VWMm1ai7Utsa_Rn_uhNw"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
+          "title": "LeBron James’ wife Savannah makes desperate plea to court: ‘The James family faces imminent danger’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaOw9gbyXQa2jZ81xVWRjcf6DP364Hlua-Vtx2WkkfBS0piNLWagMBXvP1j8"
+        },
+        {
+          "url": "https://www.basketballnetwork.net/latest-news/lebron-james-wife-savannah-seeks-restraining-orders-against-two-men",
+          "title": "LeBron James’ wife Savannah seeks restraining orders against two men",
+          "publisher": "Basketball Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuq-a3XohTS090laN90Yqotj7SdTX04a4aKgzVgElFVnnrYQ3IB9P7zhbXEhg"
         }
       ]
     },
@@ -82,8 +257,8 @@
       "published_at": "2026-11-24T06:00:00Z",
       "related_news_urls": [
         "https://www.eonline.com/news/1438354/seth-rogen-says-dawsons-creek-cast-had-feud-tension-with-showrunners",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/seth-rogen-explains-why-hated-170000879.html",
-        "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/"
+        "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/",
+        "https://ew.com/seth-rogen-hated-playing-bob-on-dawsons-creek-12261946"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E",
       "image_credit": "E! News",
@@ -96,18 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/seth-rogen-explains-why-hated-170000879.html",
-          "title": "Seth Rogen explains why he ‘hated’ playing Bob on “Dawson’s Creek”: ‘There was a lot of resentment’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_PJF8n8x_7Ms8pWOCtFXGOsY9vNXt_T1MAwNrgMFKf14qCNA382bHMPVlLbY"
-        },
-        {
           "url": "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/",
           "title": "Seth Rogen says starring in hit ’90s show was so bad he had a ‘nervous breakdown’",
           "publisher": "Page Six",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxE_HeCjAjIuEMczaOeETBorvpD5fswlbYUgnxI0aki5tBV5D3Huai2pM4OqA"
+        },
+        {
+          "url": "https://ew.com/seth-rogen-hated-playing-bob-on-dawsons-creek-12261946",
+          "title": "Seth Rogen says he ‘hated’ his ‘Dawson’s Creek’ experience: ‘It was so weird’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE6nCj6gnyc34u-8TBMGq_i8GxCUklPLgLBG5E9kdQxohyqeD0FA21rmKPvCM"
         }
       ]
     },
@@ -148,7 +323,7 @@
     },
     {
       "query": "ucl",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T05:50:00Z",
       "related_news_urls": [
         "https://www.uefa.com/uefachampionsleague/news/02ab-2223c67db015-c4f7874e074e-1000--champions-league-predicted-line-ups-matchday-5-team-news-/",
@@ -178,181 +353,6 @@
           "publisher": "Sports Illustrated",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kD6veGoy_2wnsKYoJmDijFghCSDJTecBmvJHnG_oRTd9OV4JHz0yy5hdnp8"
-        }
-      ]
-    },
-    {
-      "query": "vespucci island gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-        "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
-        "https://beebom.com/gta-6-doms-charger-location/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-paul-walker-mitsubishi-eclipse-location/",
-          "title": "Where to Find Paul Walker’s 1995 Mitsubishi Eclipse in GTA 6",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmi-Tpd3A7eHbLdk6deRgqxLTnDR3oF793IbC-ogsyWrqpcwWr3hcRueZDwKM"
-        },
-        {
-          "url": "https://www.jalopnik.com/2322396/gta-6-grand-theft-auto-paul-walker-fast-and-furious-toyota-supra-turbo-tribute/",
-          "title": "Where To Find The Paul Walker 'Fast And Furious' Tribute Car In GTA 6",
-          "publisher": "Jalopnik",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbmWQD2Q_uY_E2qC0vkQ_YNl9iCmdn6ss1nSP97gYiLlE3178NZELPUar1ayU"
-        },
-        {
-          "url": "https://beebom.com/gta-6-doms-charger-location/",
-          "title": "How to Find Dom Toretto’s Charger in GTA 6 (Location Guide)",
-          "publisher": "Beebom",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8KHi1xilhXZ6rdCgB44T3NFbHPtKSMo1fniKAcBR1GXiXtTv3UlpofeHTdqw"
-        }
-      ]
-    },
-    {
-      "query": "lakers standings",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
-        "https://abc7.com/tag/all-star-format/",
-        "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
-          "title": "Too-early NBA All-Star picks: The 24 most deserving players right now",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
-        },
-        {
-          "url": "https://abc7.com/tag/all-star-format/",
-          "title": "All Star Format",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMUojL-_CpeQ4frgY58DAv0GWIgtX8VoE0rvIvR638Qo9foMlZ2pe7TdwRI_o"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/and-ones-early-all-stars-neto-nunnally-perry.html",
-          "title": "And-Ones: Early All-Stars, Neto, Nunnally, Perry",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEdtqaPquIeaanfoef5PFF18CEIh_dvT-6g8Xmn3E1UhKA-YWmk-7pgjhfkGE"
-        }
-      ]
-    },
-    {
-      "query": "nosedive",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:40:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
-        "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
-        "https://www.kcbd.com/2026/11/21/one-more-beautiful-warm-day-before-much-chillier-trend-takes-over-thanksgiving-week/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS3U6TqEjXe0p-rjwVrkegAG24VCZUNqomUJnKypD7-1R0dsONFvJkvzzSeQ8",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/weather-news/thanksgiving-cold-snap-looms-temperatures-nosedive-millions-us",
-          "title": "Cold snap looms as temperatures take a nosedive for more than 200 million Americans ahead of Thanksgiving",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS3U6TqEjXe0p-rjwVrkegAG24VCZUNqomUJnKypD7-1R0dsONFvJkvzzSeQ8"
-        },
-        {
-          "url": "https://www.wafb.com/2026/11/23/dense-fog-cold-front-kickoff-week/",
-          "title": "Tracking widespread showers before a chilly Thanksgiving",
-          "publisher": "WAFB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtBZo14P7w7vAPmyJEg5pY08gizqCfVQhrgDtN_cj9oYyYb2OHmVlaOs6C0EA"
-        },
-        {
-          "url": "https://www.kcbd.com/2026/11/21/one-more-beautiful-warm-day-before-much-chillier-trend-takes-over-thanksgiving-week/",
-          "title": "Overnight cold front ushers in a chilly forecast for Sunday, Thanksgiving week",
-          "publisher": "KCBD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXd8ZHGfrn-pOHPRjwP4Ud30yGcZ1-E_N8x0IQZLwgE_7zBoBoDwr3GpokZgA"
-        }
-      ]
-    },
-    {
-      "query": "collin sexton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/collin-sexton-reveals-secret-helped-042152576.html",
-        "https://lakersnation.com/collin-sexton-focused-on-getting-lakers-more-organized-when-luka-doncic-rests/",
-        "https://www.talkbasket.net/229765-collin-sexton-on-lakers-role-jj-redick-talks-and-walker-kessler"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBL3dtMAHsqmrZf1NcMhhcb5Oa1bc8utUbSVXQnUheB2QVqFF5d0wJlHg56Uw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/collin-sexton-reveals-secret-helped-042152576.html",
-          "title": "Collin Sexton reveals secret that’s helped Lakers surge in standings",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBL3dtMAHsqmrZf1NcMhhcb5Oa1bc8utUbSVXQnUheB2QVqFF5d0wJlHg56Uw"
-        },
-        {
-          "url": "https://lakersnation.com/collin-sexton-focused-on-getting-lakers-more-organized-when-luka-doncic-rests/",
-          "title": "Collin Sexton discusses his focus when Luka Doncic is off court",
-          "publisher": "Lakers Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStEoh83QPg6cgR9-jQoPTwQPWwOYFNjAqSiQujH233e1wJvIiSZreUpjHBXa8"
-        },
-        {
-          "url": "https://www.talkbasket.net/229765-collin-sexton-on-lakers-role-jj-redick-talks-and-walker-kessler",
-          "title": "Collin Sexton on Lakers role, JJ Redick talks and Walker Kessler",
-          "publisher": "TalkBasket.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjjciTPbks2X7onclSzylnryekeDihmAMwzO29UFxjsTSHsfRGX4_ATID5ABw"
-        }
-      ]
-    },
-    {
-      "query": "jake laravia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jake-laravia-returns-to-starting-lineup-vs-utah",
-        "https://demokratis.co.id/en/redick-williams-starting-role-kings",
-        "https://heavy.com/sports/nba/los-angeles-lakers/lakers-big-starting-lineup-change-jazz/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS-nJuQbOKO2CXAF6VgRoVFwP-1DRuZV5LuinhHzU9ObEBJxWg2_0HwQH_xQs",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jake-laravia-returns-to-starting-lineup-vs-utah",
-          "title": "Jake LaRavia returns to starting lineup vs. Utah",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS-nJuQbOKO2CXAF6VgRoVFwP-1DRuZV5LuinhHzU9ObEBJxWg2_0HwQH_xQs"
-        },
-        {
-          "url": "https://demokratis.co.id/en/redick-williams-starting-role-kings",
-          "title": "Redick Explains Williams Starting Role Against Kings",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChW3Vsfthp-Vpry9iYbJnfogbpo9qkDijcwewMda7PDr-WemU1maNNy31Qio"
-        },
-        {
-          "url": "https://heavy.com/sports/nba/los-angeles-lakers/lakers-big-starting-lineup-change-jazz/",
-          "title": "Lakers Make Big Starting Lineup Change Monday Vs Jazz",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9VngXPd-gcNd5RxvaVGPSVcgJ2okANqf53o3avKk4At4PPr0Lxkdi4YpDp3M"
         }
       ]
     }
