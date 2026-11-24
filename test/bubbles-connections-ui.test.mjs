@@ -157,8 +157,8 @@ test('account page starts consent with the selected provider permissions',async 
  assert.equal(fullCloudflareConfigured,true);
  await fullClientButton.listeners.click();
  assert.deepEqual(calls.filter(call=>call.path==='/start').at(-1).body,
-  {provider:'cloudflare',actions:['owner.full']},
-  'A fully configured Cloudflare client requests the full toolkit through the first sign-in button');
+  {provider:'cloudflare',actions:['account.read']},
+  'A fully configured Cloudflare client must not request project permissions through ordinary sign-in');
  panel.client.cancelConnect();
 
 
