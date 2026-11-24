@@ -116,3 +116,40 @@ test('portable Brain rolls back incomplete reservations and invalidates escaped 
   assert.equal(await state.get('writer:fixture'),undefined);
  }finally{await state.close();}
 });
+
+
+test('portable Brain competing database handles fail closed and can proceed after commit',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),dbPath=join(dir,'brain-state.sqlite');
+ const first=openPortableBrainState(dbPath),second=openPortableBrainState(dbPath);
+ try{
+  await first.transaction(async tx=>{
+   await tx.put('runner-claim:fixture:1','first');
+   await assert.rejects(second.transaction(async other=>{
+    await other.put('runner-claim:fixture:1','duplicate');
+   }),/locked|busy/i);
+  });
+  assert.equal(await second.get('runner-claim:fixture:1'),'first');
+  await second.transaction(async tx=>{await tx.put('runner-claim:fixture:2','second');});
+  assert.equal(await first.get('runner-claim:fixture:2'),'second');
+ }finally{await first.close();await second.close();}
+});
+test('portable Brain rejects a private database with an incompatible reservation schema',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dir}=queueSnapshot(t),dbPath=join(dir,'wrong-state.sqlite');
+ const {chmodSync}=await import('node:fs');
+ const db=new DatabaseSync(dbPath);
+ db.exec('CREATE TABLE portable_brain_state (key TEXT,value TEXT)');
+ db.close();chmodSync(dbPath,0o600);
+ const before=readFileSync(dbPath);
+ assert.throws(()=>openPortableBrainState(dbPath),/incompatible_state_schema/);
+ assert.deepEqual(readFileSync(dbPath),before);
+});
+test('portable Brain rejects a separate private work-ticket database without adding state tables',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {dbPath}=queueSnapshot(t);
+ const {chmodSync}=await import('node:fs');chmodSync(dbPath,0o600);
+ const before=readFileSync(dbPath);
+ assert.throws(()=>openPortableBrainState(dbPath),/dedicated_state_database_required/);
+ assert.deepEqual(readFileSync(dbPath),before);
+});
