@@ -3,17 +3,157 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T07:31:29.001246Z",
+  "checked_at": "2026-11-24T08:01:35.557395Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "aus vs eng",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T07:40:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2nd-t20i-1528707/match-preview",
+        "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live",
+        "https://www.bbc.com/sport/cricket/articles/cme39qlevnrqo"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRynNvT8o5nVK8WXrgCuwraj94bvibnwvRYZO18ndOpXv_u6OsoX8cZ-8qXbc",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-2nd-t20i-1528707/match-preview",
+          "title": "AUS vs ENG 2026/27, AUS vs ENG 2nd T20I Match Preview - Last-over MCG finish suggests a series of fine margins",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRynNvT8o5nVK8WXrgCuwraj94bvibnwvRYZO18ndOpXv_u6OsoX8cZ-8qXbc"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/24/australia-vs-england-second-mens-twenty20-international-live",
+          "title": "Australia v England: second men’s Twenty20 international – live",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRr7wUKrqD9XcjWrhABxQqGQfnICF09QEwOveTlGPHJPw0RrNdD_oPo8cyzwk"
+        },
+        {
+          "url": "https://www.bbc.com/sport/cricket/articles/cme39qlevnrqo",
+          "title": "England in Australia: Nikhil Chaudhary stars as hosts win T20 series opener",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTFyWwerFaM1ZOd1Bsd0N_qPgWenTl1zsawbvtPfXyKQSFs5aXiTVq1JQ4JFw"
+        }
+      ]
+    },
+    {
+      "query": "jordan",
+      "approx_searches": "100+",
+      "published_at": "2026-11-24T07:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/politics/new-york-dem-addresses-bizarre-lizard-people-claims-after-viral-clip-behind-mamdani",
+        "https://nypost.com/2026/11/22/us-news/nyc-pol-sets-record-straight-as-viral-eyes-video-sparks-looney-lizard-people-theories/",
+        "https://thehill.com/homenews/state-watch/6238050-wright-addresses-lizard-people-theory/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3zAVAYnPzSV2Bc3kJ5444gVMjB7qa87dH2fpYjjZG-g_cctGv92kCK9_AXhY",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/politics/new-york-dem-addresses-bizarre-lizard-people-claims-after-viral-clip-behind-mamdani",
+          "title": "New York Dem addresses bizarre 'lizard people' claims after viral clip behind Mamdani",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3zAVAYnPzSV2Bc3kJ5444gVMjB7qa87dH2fpYjjZG-g_cctGv92kCK9_AXhY"
+        },
+        {
+          "url": "https://nypost.com/2026/11/22/us-news/nyc-pol-sets-record-straight-as-viral-eyes-video-sparks-looney-lizard-people-theories/",
+          "title": "NYC pol sets record straight as viral ‘eyes’ video sparks looney lizard people theories: ‘Full-blown ‘Men In Black”",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-Xn89cekYW7v9Aygd9F4oBK8hjQu7zDYeYbvsENrqil1V-aiOvskjUmEQHAE"
+        },
+        {
+          "url": "https://thehill.com/homenews/state-watch/6238050-wright-addresses-lizard-people-theory/",
+          "title": "NY Democrat who sparked ‘lizard people’ talk: ‘Obviously I’m a human being’",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw5PM3p_dsWO0dgUvOQxoXo9rvItOWcEB2noA-SsiMrPqZBjBm8gtAsPCccIU"
+        }
+      ]
+    },
+    {
+      "query": "iowa army lead azide detonation",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T07:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/articles/president-donald-trump-says-ordered-182436842.html",
+        "https://www.nytimes.com/2026/11/23/climate/iowa-army-ammunition-explosion.html",
+        "https://www.wqad.com/article/news/national/military-news/lead-azide-detonation-iowa-judge-ruling-stay-lifted-epa-permit/526-7ecb9fa2-2ba4-4fc4-986c-da2d54a37143"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkht6zog5scLcW3p4v_D03qL4E8U8vMu12Nse9nBSU-xchVHqSpnMIt5Lw5Ww",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/articles/president-donald-trump-says-ordered-182436842.html",
+          "title": "US Army to detonate degraded bomb-making material in Iowa after getting court approval",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkht6zog5scLcW3p4v_D03qL4E8U8vMu12Nse9nBSU-xchVHqSpnMIt5Lw5Ww"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/23/climate/iowa-army-ammunition-explosion.html",
+          "title": "Court Clears the Way for Iowa Ammunition Detonation; Trump Addresses the Crisis",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQD08TJvyry3ZKnvZ-1A36qLSzCblCI97_sD9NsntKhDjsaeeGcc1aLtLJLGPk"
+        },
+        {
+          "url": "https://www.wqad.com/article/news/national/military-news/lead-azide-detonation-iowa-judge-ruling-stay-lifted-epa-permit/526-7ecb9fa2-2ba4-4fc4-986c-da2d54a37143",
+          "title": "Army to move forward with lead azide detonation in Iowa on Wednesday following court ruling",
+          "publisher": "WQAD",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhPQzTz0lAnIUeryyQeodeT2P0QrwltGk1q9CmAoaHZZ-8NUNUpfLrvNkCKYk"
+        }
+      ]
+    },
+    {
+      "query": "whitney peak",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T07:20:00Z",
+      "related_news_urls": [
+        "https://people.com/sunrise-on-the-reaping-cast-real-life-loves-12274423",
+        "https://www.yahoo.com/entertainment/celebrity/articles/does-hunger-games-star-joseph-181355078.html",
+        "https://www.cosmopolitan.com/entertainment/celebs/a74286490/hunger-games-sunrise-on-the-reaping-cast-partners/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgKOeKu_aamKPFO_N2Xk9fD4yIPfTANTGyBR_Rilxw2JAQc0r2Q2Z-4upkJE",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/sunrise-on-the-reaping-cast-real-life-loves-12274423",
+          "title": "Meet the Real-Life Partners of ‘The Hunger Games: Sunrise on the Reaping’ Cast",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPgKOeKu_aamKPFO_N2Xk9fD4yIPfTANTGyBR_Rilxw2JAQc0r2Q2Z-4upkJE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/does-hunger-games-star-joseph-181355078.html",
+          "title": "Does ‘The Hunger Games’ star Joseph Zada have a girlfriend?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5Yi_LvjxyZ2gRbsDn_usa15oeVxgzQo7Mjx8aYrYMEYvNt3fYf5BSXOBwzA"
+        },
+        {
+          "url": "https://www.cosmopolitan.com/entertainment/celebs/a74286490/hunger-games-sunrise-on-the-reaping-cast-partners/",
+          "title": "‘Hunger Games: Sunrise on the Reaping’ Cast Partners",
+          "publisher": "Cosmopolitan",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTcZkJxWOu5Wo3-T5ep5kE4E4W4iS5F2_8edLylS3QkElgJj_AqXeTem0xNIeE"
+        }
+      ]
+    },
     {
       "query": "galatasaray",
       "approx_searches": "200+",
       "published_at": "2026-11-24T07:10:00Z",
       "related_news_urls": [
         "https://m.dongqiudi.com/tr/article/100054539",
-        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
-        "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757"
+        "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757",
+        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA",
       "image_credit": "懂球帝",
@@ -26,18 +166,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5DKoXF-7aYxtc2WceuONriTFz__AIf-btDq5HIF27ItVWufiwcVRzRRt4znA"
         },
         {
-          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
-          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
-        },
-        {
           "url": "https://www.cumhuriyet.com.tr/spor/unai-emery-den-galatasaray-a-ovgu-turkiye-nin-en-iyisi-2558757",
           "title": "Unai Emery'den Galatasaray'a övgü: 'Türkiye'nin en iyisi'",
           "publisher": "Cumhuriyet",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRkoBf8FM5iSkg5tH9CNaWWaxZy8c0zZWhS4YvBIX4AxEz1B8LdcJDB-QycqY"
+        },
+        {
+          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
+          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
+          "publisher": "Sözcü Gazetesi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
         }
       ]
     },
@@ -47,8 +187,8 @@
       "published_at": "2026-11-24T07:10:00Z",
       "related_news_urls": [
         "https://www.the-independent.com/news/uk/crime/andrew-tate-tristan-tate-extradition-hearing-b3085979.html",
-        "https://www.dumbartonreporter.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
-        "https://www.bromsgroveadvertiser.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/"
+        "https://speaks.co.in/business/andrew-tate-challenges-uk-extradition-as-lawyers-question-evidence-in-us-court/",
+        "https://cwibc.co.id/en/tate-brothers-uk-extradition-challenge"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ",
       "image_credit": "The Independent",
@@ -61,18 +201,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1cai75Iyaxr76QEDTuPiWn7ARXtao22NV9NKkesJXPsNA4s_M3HPUjZNK9mQ"
         },
         {
-          "url": "https://www.dumbartonreporter.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
-          "title": "Andrew and Tristan Tate’s ‘hands tied’ in UK extradition fight, say lawyers",
-          "publisher": "Dumbarton Reporter",
+          "url": "https://speaks.co.in/business/andrew-tate-challenges-uk-extradition-as-lawyers-question-evidence-in-us-court/",
+          "title": "Andrew Tate Challenges UK Extradition as Lawyers Question Evidence in US Court",
+          "publisher": "Speaks Media",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRr6Gg2ebT4OsBNG-GZGpb--qtKquLe1bVNDzLt0WlYhTp75XlPMngK9YMjW8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8lNlS8IO8ceLlInvoM6MXB1UMrTLKvDlUushxQnnmECQ-uyc4WJnIAjPgGuU"
         },
         {
-          "url": "https://www.bromsgroveadvertiser.co.uk/news/national/26755885.andrew-tristan-tates-hands-tied-uk-extradition-fight-say-lawyers/",
-          "title": "Andrew and Tristan Tate’s ‘hands tied’ in UK extradition fight, say lawyers",
-          "publisher": "bromsgroveadvertiser.co.uk",
+          "url": "https://cwibc.co.id/en/tate-brothers-uk-extradition-challenge",
+          "title": "Tate Brothers Challenge UK Extradition in US Court",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR96UgYLExo39eNEYfQwWOGteuorczPFHUV8g_KMS2I20UURcM7nin9M0Q-OJU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdSheHKuQICLbNu3ig0eloQLkT1krTSFaKTWa4Mrsrc1s8n3_HaWhwYiiDNSI"
         }
       ]
     },
@@ -113,36 +253,36 @@
     },
     {
       "query": "slog",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-24T06:40:00Z",
       "related_news_urls": [
-        "https://www.inquirer.com/eagles/live/eagles-news-saquon-barkley-injury-updates-thanksgiving-cowboys-20261123.html",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/saquon-barkley-i-wont-be-100-percent-healthy-this-season-but-will-keep-playing",
-        "https://www.delawareonline.com/story/sports/nfl/eagles/2026/11/22/saquon-barkley-injured-in-eagles-win-what-happened/92916061007/"
+        "https://www.svt.se/sport/konstakning/succe-for-svensken-i-finland-ryssar-stoppades",
+        "https://www.sverigesradio.se/artikel/nordeback-slog-personbasta-och-tog-forsta-pallplatsen",
+        "https://www.skatesweden.se/nyheter/nyheter/2026-11-21-andreas-nordeback-skrev-svensk-konstakningshistoria---tog-silver-i-grand-prix"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2h9eY96BC3WQpDbUaiPKRiqw4yyMHp6VL43NvRDWN1f7ehjddft7_NZsZXQ",
-      "image_credit": "Inquirer.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReSJIarIRi5ZwytEKsesIV9r2LDTUMxFR966pfRJivEkv8CakAtJAikWZ-sto",
+      "image_credit": "SVT Nyheter",
       "news": [
         {
-          "url": "https://www.inquirer.com/eagles/live/eagles-news-saquon-barkley-injury-updates-thanksgiving-cowboys-20261123.html",
-          "title": "Eagles news: Injury concerns at cornerback; Nick Sirianni on Daniel Jones, more; national media rips DK Metcalf",
-          "publisher": "Inquirer.com",
+          "url": "https://www.svt.se/sport/konstakning/succe-for-svensken-i-finland-ryssar-stoppades",
+          "title": "Konståkning: Succé för svensken i Finland – ryssar stoppades",
+          "publisher": "SVT Nyheter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ2h9eY96BC3WQpDbUaiPKRiqw4yyMHp6VL43NvRDWN1f7ehjddft7_NZsZXQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReSJIarIRi5ZwytEKsesIV9r2LDTUMxFR966pfRJivEkv8CakAtJAikWZ-sto"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/saquon-barkley-i-wont-be-100-percent-healthy-this-season-but-will-keep-playing",
-          "title": "Saquon Barkley: I won’t be 100 percent healthy this season, but will keep playing",
-          "publisher": "NBC Sports",
+          "url": "https://www.sverigesradio.se/artikel/nordeback-slog-personbasta-och-tog-forsta-pallplatsen",
+          "title": "Nordebäck slog personbästa – och tog första pallplatsen",
+          "publisher": "Sveriges Radio",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpnZnAKpqH8RuYm4MiDXXbY1xzhn7XJ1sdWaafzlGZb55NUqIDoXQByk3tXaw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQd-u90JktRYrBE78GjxUzxvLgzqZCyWtG3cLhsOAhzqRCf0xOvEZNXpuPXqgQ"
         },
         {
-          "url": "https://www.delawareonline.com/story/sports/nfl/eagles/2026/11/22/saquon-barkley-injured-in-eagles-win-what-happened/92916061007/",
-          "title": "Saquon Barkley injured in Eagles' victory. What happened to star RB",
-          "publisher": "Delawareonline.com",
+          "url": "https://www.skatesweden.se/nyheter/nyheter/2026-11-21-andreas-nordeback-skrev-svensk-konstakningshistoria---tog-silver-i-grand-prix",
+          "title": "Andreas Nordebäck skrev svensk konståkningshistoria - tog silver i Grand Prix",
+          "publisher": "Svenska Konståkningsförbundet",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuFDAYeauXmhAJ9_p-hiyZzSrAva-7qNYi7aREGlX5j9GLMWkEf2ngeogqR60"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeUBMMmmcD4_5NK9kM88KuoEtEoxo9_x6a0zS-tx5wm_YOoAm2aRkilR7Dv3A"
         }
       ]
     },
@@ -186,20 +326,13 @@
       "approx_searches": "200+",
       "published_at": "2026-11-24T06:30:00Z",
       "related_news_urls": [
-        "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
         "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
-        "https://www.ntn24.com/noticias-actualidad/abelardo-de-la-espriella-informa-que-este-lunes-en-la-noche-hubo-un-atentado-con-explosivos-contra-la-gobernacion-del-meta-668269"
+        "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
+        "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk",
-      "image_credit": "EL PAÍS",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE",
+      "image_credit": "France 24",
       "news": [
-        {
-          "url": "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
-          "title": "Un carro bomba explota frente a la Gobernación del Meta en Villavicencio",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk"
-        },
         {
           "url": "https://www.france24.com/es/minuto-a-minuto/20261124-un-atentado-con-coche-bomba-deja-edificios-destruidos-y-caos-en-colombia-1",
           "title": "Un atentado con coche bomba deja edificios destruidos y caos en Colombia",
@@ -208,151 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmrHOXHhiDkyMLaqxRnRbkXT0STmwtYFZPHAMnGszKg1TUMyBz2ujA-l8ArrE"
         },
         {
-          "url": "https://www.ntn24.com/noticias-actualidad/abelardo-de-la-espriella-informa-que-este-lunes-en-la-noche-hubo-un-atentado-con-explosivos-contra-la-gobernacion-del-meta-668269",
-          "title": "Abelardo de la Espriella informa que este lunes en la noche hubo un \"atentado con explosivos contra la Gobernación del Meta\"",
-          "publisher": "NTN24",
+          "url": "https://elpais.com/america-colombia/2026-11-24/un-carro-bomba-explota-frente-a-la-gobernacion-del-meta-en-villavicencio.html",
+          "title": "Un carro bomba explota frente a la Gobernación del Meta en Villavicencio",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFAuzjG3d5MWE9b9Xz3mq76rqVoY0FeRy2sgfQVnMFx85lvwuQC1jQ949LIoA"
-        }
-      ]
-    },
-    {
-      "query": "savannah james",
-      "approx_searches": "100+",
-      "published_at": "2026-11-24T06:30:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/",
-        "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
-        "https://www.basketballnetwork.net/latest-news/lebron-james-wife-savannah-seeks-restraining-orders-against-two-men"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqG0pKwWKBiC5gZ0qyAXQwnieBB6DPQGhSn3MIPE2VWMm1ai7Utsa_Rn_uhNw",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/",
-          "title": "LeBron James' Wife Savannah Seeks Restraining Orders Over Alleged Trespassers",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqG0pKwWKBiC5gZ0qyAXQwnieBB6DPQGhSn3MIPE2VWMm1ai7Utsa_Rn_uhNw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWa7jBff6U7ZgLM49U7FqRWE6lopCOzAoJyBHMZjLzZhluYdJDIebnoPbfRBk"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
-          "title": "LeBron James’ wife Savannah makes desperate plea to court: ‘The James family faces imminent danger’",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.eltiempo.com/colombia/otras-ciudades/imagenes-del-atentado-con-explosivos-contra-la-gobernacion-del-meta-en-la-noche-de-este-lunes-23-de-noviembre-3603625",
+          "title": "Videos muestran gravedad del atentado con explosivos contra la Gobernación del Meta en la noche de este 23 de noviembre: hay varios locales afectados",
+          "publisher": "El Tiempo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaOw9gbyXQa2jZ81xVWRjcf6DP364Hlua-Vtx2WkkfBS0piNLWagMBXvP1j8"
-        },
-        {
-          "url": "https://www.basketballnetwork.net/latest-news/lebron-james-wife-savannah-seeks-restraining-orders-against-two-men",
-          "title": "LeBron James’ wife Savannah seeks restraining orders against two men",
-          "publisher": "Basketball Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuq-a3XohTS090laN90Yqotj7SdTX04a4aKgzVgElFVnnrYQ3IB9P7zhbXEhg"
-        }
-      ]
-    },
-    {
-      "query": "seth rogen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T06:00:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438354/seth-rogen-says-dawsons-creek-cast-had-feud-tension-with-showrunners",
-        "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/",
-        "https://ew.com/seth-rogen-hated-playing-bob-on-dawsons-creek-12261946"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438354/seth-rogen-says-dawsons-creek-cast-had-feud-tension-with-showrunners",
-          "title": "Seth Rogen Reveals “Very Bad Dynamic” on Dawson’s Creek During Guest Role",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfWSbWTqEL1oemw_g1Q1CsHqJBsfIiFIjMc-5rhpYpU-tyr6NNtkQy1fG0t0E"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/23/entertainment/seth-rogen-says-starring-in-hit-90s-show-was-so-bad-he-had-a-nervous-breakdown/",
-          "title": "Seth Rogen says starring in hit ’90s show was so bad he had a ‘nervous breakdown’",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxE_HeCjAjIuEMczaOeETBorvpD5fswlbYUgnxI0aki5tBV5D3Huai2pM4OqA"
-        },
-        {
-          "url": "https://ew.com/seth-rogen-hated-playing-bob-on-dawsons-creek-12261946",
-          "title": "Seth Rogen says he ‘hated’ his ‘Dawson’s Creek’ experience: ‘It was so weird’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE6nCj6gnyc34u-8TBMGq_i8GxCUklPLgLBG5E9kdQxohyqeD0FA21rmKPvCM"
-        }
-      ]
-    },
-    {
-      "query": "adam driver",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.thewrap.com/creative-content/movies/adam-driver-steven-soderbergh-worked-for-free-ben-solo-star-wars-movie/",
-        "https://variety.com/2026/film/news/adam-driver-never-paid-hunt-for-ben-solo-development-star-wars-1236955936/",
-        "https://screenrant.com/star-wars-the-hunt-for-ben-solo-adam-driver-character-fate-revealed/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBeHc_K36p-1q6PQMq83y2oy5hf6j1CI-D7ShyCnALzPRXUgr1pbiBYX0xhA",
-      "image_credit": "TheWrap",
-      "news": [
-        {
-          "url": "https://www.thewrap.com/creative-content/movies/adam-driver-steven-soderbergh-worked-for-free-ben-solo-star-wars-movie/",
-          "title": "Adam Driver and Steven Soderbergh Worked for Free on Scrapped 'Star Wars' Ben Solo Movie",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSBeHc_K36p-1q6PQMq83y2oy5hf6j1CI-D7ShyCnALzPRXUgr1pbiBYX0xhA"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/adam-driver-never-paid-hunt-for-ben-solo-development-star-wars-1236955936/",
-          "title": "Adam Driver: ‘No One Was Paying Us’ to Develop ‘The Hunt for Ben Solo’ and ‘Star Wars’ Boss Said ‘We Have a 100% Approval’ to Make It, Then Disney Killed It",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6nix4eYz6z6iiDxrkmG0qaWT95F9i8SPm4CaLL-6-aAQnplzdDzHDYw7yCt0"
-        },
-        {
-          "url": "https://screenrant.com/star-wars-the-hunt-for-ben-solo-adam-driver-character-fate-revealed/",
-          "title": "Major Star Wars Character’s Fate Revealed Amid Cancellation Controversy",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwNQHVc3HYwobecKhom0IeNwn7GObEd6RSCKX67osPLf_A1Q8ZA6HpAM8Lfvo"
-        }
-      ]
-    },
-    {
-      "query": "ucl",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T05:50:00Z",
-      "related_news_urls": [
-        "https://www.uefa.com/uefachampionsleague/news/02ab-2223c67db015-c4f7874e074e-1000--champions-league-predicted-line-ups-matchday-5-team-news-/",
-        "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
-        "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQounOBkcRkEG408rr9MhCObUbYwuERxuZkWKgKw_RmwTuhyX8Jt2o0UI4MSQ",
-      "image_credit": "UEFA.com",
-      "news": [
-        {
-          "url": "https://www.uefa.com/uefachampionsleague/news/02ab-2223c67db015-c4f7874e074e-1000--champions-league-predicted-line-ups-matchday-5-team-news-/",
-          "title": "Champions League predicted line-ups: Matchday 5 team news, injuries, suspensions",
-          "publisher": "UEFA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQounOBkcRkEG408rr9MhCObUbYwuERxuZkWKgKw_RmwTuhyX8Jt2o0UI4MSQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/uefa-champions-league-matchday-5-052439155.html",
-          "title": "UEFA Champions League Matchday 5 Predictions Including Roma vs PSG",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTyLP9CpROM-kUkh0AJR5CcYLpkCX3jfao1SYakvw62qxxBua4V6UKwqDW9CXw"
-        },
-        {
-          "url": "https://www.si.com/soccer/champions-league-predictions-11-24-26-real-madrid-man-city",
-          "title": "Champions League Predictions 11/24: Perfect Real Madrid in Action, Man City Seek Response",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-kD6veGoy_2wnsKYoJmDijFghCSDJTecBmvJHnG_oRTd9OV4JHz0yy5hdnp8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu9skCGXdro_p-FJ86wD7IqGlP6Tfce7hYv7MktArcyqXocKEBWzAt6DP-xWU"
         }
       ]
     }
