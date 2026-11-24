@@ -303,7 +303,7 @@ function continuityRunnerFixture(t, entries, env={}, beforeWrite=()=>{}) {
   const statement=sqlite.prepare(sql);
   return {first:async()=>statement.get(...values),all:async()=>({results:statement.all(...values)}),
    run:async()=>{
-    beforeWrite(sql,sqlite);
+    beforeWrite(sql,sqlite,values);
     return {meta:{changes:statement.run(...values).changes}};
    }};
  }}}};
@@ -341,6 +341,37 @@ function continuityRunnerFixture(t, entries, env={}, beforeWrite=()=>{}) {
 const continuityJob=(id,repository='www-infinity4/QuantaPhi')=>({
  id,repository,status:'queued',instructions:'Update the scoped file for '+id,dependencies:[],acceptance:['Verify the changed file'],
 });
+
+// Inject a D1 acknowledgement failure on either side of the commit boundary.
+// These are synthetic SQLite fixtures, never production ticket or lease writes.
+for(const committed of [false,true]){
+ test('claim returns a sanitized unavailable response and retains the fence after '+(committed?'ambiguous committed':'failed uncommitted')+' D1 update',async t=>{
+  let injected=false;
+  const fixture=continuityRunnerFixture(t,[
+   continuityJob('FIRST'),continuityJob('OVERLAP'),continuityJob('DISJOINT','www-infinity4/Moltnook')
+  ],{},(sql,sqlite,values)=>{
+   if(!injected&&sql.startsWith("UPDATE work_tickets SET context_json=?,status='working'")){
+    injected=true;
+    if(committed)sqlite.prepare(sql).run(...values);
+    throw Error('synthetic private database exception');
+   }
+  });
+  const response=await fixture.send('/runner/claim','800');
+  assert.equal(response.status,503);
+  assert.deepEqual(await response.json(),{ok:false,error:'runner_operation_unavailable'});
+  assert.ok(injected);
+  const fence=fixture.memory.get('runner-claim:www-infinity4/Moltnook:800:1');
+  assert.ok(fence,'ambiguous outcome must retain the original attempt fence');
+  const lock=fixture.memory.get('repository-lease:www-infinity4/quantaphi');
+  assert.equal(lock?.leaseId,fence);
+  assert.equal(fixture.job(0).status,committed?'working':'queued');
+  assert.equal((await fixture.claim('800')).lease,null,'same attempt cannot replay an ambiguous claim');
+  const next=(await fixture.claim('801')).lease;
+  assert.equal(next.jobId,'DISJOINT','independent repository can proceed without dropping the ambiguous lock');
+  assert.equal(fixture.job(1).status,'queued');
+  assert.equal(fixture.memory.get('repository-lease:www-infinity4/quantaphi')?.leaseId,fence);
+ });
+}
 
 test('one signed run attempt cannot claim a second durable job, and the next run continues',async t=>{
  const fixture=continuityRunnerFixture(t,[continuityJob('FIRST'),continuityJob('SECOND','www-infinity4/Moltnook')]);
