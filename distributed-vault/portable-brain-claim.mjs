@@ -45,3 +45,55 @@ export async function rehearsePortableClaim(state,{ownerHash,ticketId,jobId,runI
   return {reserved:true,executionAuthorized:false,reason:'synthetic_reservation',reservation};
  });
 }
+
+
+// Record a fixture result, never a real execution or deployment receipt.
+// Only the matching current reservation may change the shadow ticket.
+export async function recordPortableRehearsalResult(state,{ownerHash,ticketId,jobId,runId,runAttempt,now,leaseId,outcome}={}){
+ const reject=reason=>({recorded:false,executionVerified:false,productionVerified:false,reason});
+ if(!fixtureId(ownerHash)||!fixtureId(ticketId)||typeof jobId!=='string'||!/^TASK-[0-9]{1,4}$/.test(jobId)||
+  typeof runId!=='string'||!/^\d{1,24}$/.test(runId)||!Number.isSafeInteger(runAttempt)||runAttempt<1||runAttempt>9999||
+  !Number.isSafeInteger(now)||now<0||typeof leaseId!=='string'||!/^[0-9a-f-]{36}$/.test(leaseId)||
+  !['fixture_passed','fixture_failed'].includes(outcome))return reject('invalid_fixture_result');
+ return state.transaction(async tx=>{
+  const ticketKey='rehearsal:ticket:'+ownerHash+':'+ticketId;
+  const runKey='rehearsal:runner-claim:Moltnook:'+runId+':'+runAttempt;
+  const resultKey='rehearsal:result:'+runId+':'+runAttempt;
+  const previous=await tx.get(resultKey);
+  if(previous!==undefined)return reject(previous.ownerHash===ownerHash&&previous.ticketId===ticketId&&
+   previous.jobId===jobId&&previous.leaseId===leaseId?'fixture_result_already_recorded':'fixture_reservation_mismatch');
+  if(await tx.get(runKey)!==leaseId)return reject('fixture_reservation_mismatch');
+  const ticket=await tx.get(ticketKey),context=ticket?.context;
+  if(ticket?.synthetic!==true||ticket.id!==ticketId||ticket.owner_hash!==ownerHash||
+   ticket.status!=='working'||context?.kind!=='robot-directions'||!Array.isArray(context.color_jobs))
+   return reject('fixture_ticket_unavailable');
+  const job=context.color_jobs.find(j=>j?.id===jobId);
+  if(!job||context.color_jobs.filter(j=>j?.id===jobId).length!==1||
+   job.status!=='working'||job.agent!=='greenbeans'||job.executor!=='repository-engine'||
+   typeof job.repository!=='string'||!/^www-infinity4\/[A-Za-z0-9_.-]+$/.test(job.repository))
+   return reject('fixture_job_unsupported');
+  const revision=createHash('sha256').update(JSON.stringify({instructions:job.instructions,acceptance:job.acceptance,repository:job.repository})).digest('hex');
+  const key='rehearsal:writer:'+ownerHash+':'+ticketId+':'+jobId+':'+revision;
+  const lockKey='rehearsal:repository-lease:'+job.repository.toLowerCase();
+  const current=await tx.get(key),lock=await tx.get(lockKey);
+  if(current?.kind!=='synthetic-reservation'||current.executionAuthorized!==false||
+   current.leaseId!==leaseId||current.ticketId!==ticketId||current.jobId!==jobId||
+   current.repository!==job.repository||current.revision!==revision||current.runId!==runId||current.runAttempt!==runAttempt||
+   JSON.stringify(current)!==JSON.stringify(lock))return reject('fixture_reservation_mismatch');
+  if(!Number.isSafeInteger(current.leaseUntil)||now>=current.leaseUntil||now<current.leaseUntil-40*60*1000)
+   return reject('fixture_reservation_expired');
+  const receipt={kind:'synthetic-result',ownerHash,ticketId,jobId,runId,runAttempt,leaseId,revision,outcome,when:now,
+   executionVerified:false,productionVerified:false};
+  const after=structuredClone(ticket);
+  after.status='blocked';
+  const finished=after.context.color_jobs.find(j=>j.id===jobId);
+  finished.status='blocked';
+  finished.progress={...finished.progress,blocker:'synthetic_rehearsal_only',rehearsalOutcome:outcome};
+  if(!await tx.compareAndSwap(ticketKey,ticket,after))return reject('ticket_update_conflict');
+  await tx.put(resultKey,receipt);
+  await tx.put(key,{...current,kind:'synthetic-reservation-recorded',receipt});
+  await tx.delete(lockKey);
+  // Keep the run marker and historical reservation for replay protection.
+  return {recorded:true,executionVerified:false,productionVerified:false,reason:'synthetic_result_recorded',receipt};
+ });
+}
