@@ -3,34 +3,279 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T17:31:20.404209Z",
+  "checked_at": "2026-11-24T18:01:20.462301Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "micron",
+      "query": "victoria broderick",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
+        "https://newschannel9.com/news/local/victoria-broderick-officially-wins-tennessees-4th-congressional-district-per-ap",
+        "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerVn5yoky-owJ5GKiY2fTcMX_6BwDsdD4eNq7TrPZ5Oi-yDAmYIXpcVMNv4s",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/24/us/politics/tennessee-house-election-results-broderick-wins.html",
+          "title": "Win in Tennessee Gives Democrats Largest House Majority in 3 Decades",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQerVn5yoky-owJ5GKiY2fTcMX_6BwDsdD4eNq7TrPZ5Oi-yDAmYIXpcVMNv4s"
+        },
+        {
+          "url": "https://newschannel9.com/news/local/victoria-broderick-officially-wins-tennessees-4th-congressional-district-per-ap",
+          "title": "Victoria Broderick officially wins Tennessee’s 4th Congressional District, per AP",
+          "publisher": "WTVC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQDdllglSUrGrjeEvdg8Nz0Ehh9N59v01amG8Nwa6P3sxS-Z8_QtLOJ5kd_dA"
+        },
+        {
+          "url": "https://tennesseelookout.com/2026/11/16/desjarlais-concedes-tennessee-4th-congressional-district-to-democrat-victoria-broderick/",
+          "title": "DesJarlais concedes Tennessee 4th Congressional District to Democrat Victoria Broderick",
+          "publisher": "Tennessee Lookout",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnGQt0JcXuAVXrPcYqpKDKpo-MxBxt1i6mDf1s_T8prO4unBofYdtLxJoYPkY"
+        }
+      ]
+    },
+    {
+      "query": "donte divincenzo",
       "approx_searches": "200+",
+      "published_at": "2026-11-24T17:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+        "https://sports.yahoo.com/articles/minnesota-timberwolves-donte-divincenzo-172458014.html",
+        "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+          "title": "Wolves' Donte DiVincenzo cleared for basketball activities",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxMfkdHwkT3Pa0tU6hri5ffG782SFcx5U5B-GkJUXUxh6KC8G9pK2Yg5mzEyo"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/minnesota-timberwolves-donte-divincenzo-172458014.html",
+          "title": "Minnesota Timberwolves say Donte DiVincenzo (right …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1nZG2viM7GDuG2SjXOEQ9rtQSGGKfpblKOKwwqIOsN8B_xmfdV2YQeGbnCKg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
+          "title": "Donte DiVincenzo eyes January return from torn Achilles after being cleared to practice: Sources",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPagWWVnmr4FL23CdaEkfAaDwQPrvJ6XM81CW13dEEya1gC52Fosx4k2wL5JE"
+        }
+      ]
+    },
+    {
+      "query": "akron basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:30:00Z",
+      "related_news_urls": [
+        "https://www.fubo.tv/news/ncaam/belmont-vs-akron-where-to-watch-stream-info-tv-channel-and-live-updates-november-24-2026/",
+        "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/",
+        "https://knup.com/sports/cbb/predictions/akron-vs-belmont-prediction-betting-tips-11-24-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ankUHb91TV8elC5syPRacM3ppcnjTNGo1026sfN2iIGmsW59t5kisCXH8S8",
+      "image_credit": "Fubo",
+      "news": [
+        {
+          "url": "https://www.fubo.tv/news/ncaam/belmont-vs-akron-where-to-watch-stream-info-tv-channel-and-live-updates-november-24-2026/",
+          "title": "Belmont vs Akron - Where to Watch, Stream Info, TV Channel, and Live Updates (November 24, 2026)",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6ankUHb91TV8elC5syPRacM3ppcnjTNGo1026sfN2iIGmsW59t5kisCXH8S8"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/24/akron-vs-belmont-espn-events-invitational-game-preview/",
+          "title": "Akron vs. Belmont: ESPN Events Invitational Game Preview",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJCd2tnGkeRH1VM_6_lPo1oNJk8yGBeuvZ69__TEdRgEUOo8z5GDDqqd6m4bs"
+        },
+        {
+          "url": "https://knup.com/sports/cbb/predictions/akron-vs-belmont-prediction-betting-tips-11-24-2026/",
+          "title": "Akron vs Belmont Prediction on 11/24/2026 - CBB Betting Tips & Pick",
+          "publisher": "Knup.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
+        }
+      ]
+    },
+    {
+      "query": "belmont basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T17:30:00Z",
+      "related_news_urls": [
+        "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
+        "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
+        "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E",
+      "image_credit": "BVM Sports",
+      "news": [
+        {
+          "url": "https://bvmsports.com/2026/11/23/lsus-kim-mulkey-mikaylah-williams-and-zakiyah-johnson-after-103-45-rout-of-belmont/",
+          "title": "LSU’s Kim Mulkey, Mikaylah Williams and ZaKiyah Johnson after 103-45 rout of Belmont",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUboiRztTFKyU5wSnZ92yveE19ypikCtuZ0fC2ErjVVKGIk3III35IYYL541E"
+        },
+        {
+          "url": "https://belmontbruins.com/news/2026/11/23/womens-basketball-kenley-mccarn-scores-season-high-25-in-loss-at-top-10-ranked-lsu-monday-night.aspx",
+          "title": "Kenley McCarn Scores Season-High 25 in Loss at Top-10 Ranked LSU Monday Night",
+          "publisher": "Belmont Bruins",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT38fV41CkVxk9tTP7YdFJ2kAUk4qJDNVPAjhOKGTYysxCuAhLzm-Ms4RdgDYc"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/11-zakiyah-johnson-lsu-tigers-womens-basketball-take-on-the-belmont-bruins-november-23-2026-baton-rouge-la-at-the-pete/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0MzYwMzQ",
+          "title": "Licensable picture: 11 ZaKiyah Johnson, LSU Tigers Womens Basketball take on the Belmont Bruins. November 23, 2026; Baton Rouge, LA; at the Pete",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRZKT9-xaykkqHyDORbJHqWG8y2o00k40uFRm9-H_Hu7GkKpFtIfXEj96VSLM"
+        }
+      ]
+    },
+    {
+      "query": "al-nassr vs al sadd",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T17:20:00Z",
+      "related_news_urls": [
+        "https://www.goal.com/en/news/al-nassr-handed-gifts-by-al-sadd-five-absences-hit-the-qatari-side/bltbe8bd5dac117f3d0",
+        "https://www.yardbarker.com/soccer/articles/africas_champion_returns_sadio_mane_leads_al_nassr_in_asian_showdown_with_al_sadd/s1_17790_44612232",
+        "https://www.thechronicle.com.au/sport/ronaldo-trains-as-al-nassr-prepare-to-host-al-sadd/video/55c189e0de79a792cedea2051e6541c3"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWCbMnhM95rhvgZ8nChFA48zo1p8SqUknb5PFMxaEbvotDEavGyj00DVmWcFM",
+      "image_credit": "Goal.com",
+      "news": [
+        {
+          "url": "https://www.goal.com/en/news/al-nassr-handed-gifts-by-al-sadd-five-absences-hit-the-qatari-side/bltbe8bd5dac117f3d0",
+          "title": "Al-Nassr handed gifts by Al-Sadd: five absences hit the Qatari side",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWCbMnhM95rhvgZ8nChFA48zo1p8SqUknb5PFMxaEbvotDEavGyj00DVmWcFM"
+        },
+        {
+          "url": "https://www.yardbarker.com/soccer/articles/africas_champion_returns_sadio_mane_leads_al_nassr_in_asian_showdown_with_al_sadd/s1_17790_44612232",
+          "title": "Africa's champion returns: Sadio Mane leads Al-Nassr in Asian showdown with Al-Sadd",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7ahRvnl7dqc1FUkRn5M8hsZ5-O35oPLAm7qJMSuw3k_3V9hTfkqjXkffixZ4"
+        },
+        {
+          "url": "https://www.thechronicle.com.au/sport/ronaldo-trains-as-al-nassr-prepare-to-host-al-sadd/video/55c189e0de79a792cedea2051e6541c3",
+          "title": "Ronaldo trains as Al Nassr prepare to host Al Sadd",
+          "publisher": "Toowoomba Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpjJOubp0GwALVN2ojOgTAk3mYagT7vQ5bZjsi6lKoFrZoeIOyOFwZGD7dPF4"
+        }
+      ]
+    },
+    {
+      "query": "trump tariffs china",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/economy/trade/u-s-prepares-to-raise-tariffs-on-china-and-other-countries-37981740",
+        "https://www.bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted",
+        "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTK6qj9tl8qgTJbtbaLJ9hb8NX8rX9QsNVAiiKqErA3_0xVriQw8fgLWSCO38",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/economy/trade/u-s-prepares-to-raise-tariffs-on-china-and-other-countries-37981740",
+          "title": "Exclusive | U.S. Prepares to Raise Tariffs on China and Other Countries",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTK6qj9tl8qgTJbtbaLJ9hb8NX8rX9QsNVAiiKqErA3_0xVriQw8fgLWSCO38"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/new-trump-tariffs-won-t-top-trade-deal-levels-will-be-targeted",
+          "title": "New Trump Tariffs Won’t Top Trade Deal Levels, Will Be Targeted",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjZh6Ty5aylFGdYDkfZur8iabb4Mv-rWNGTdIv36JipfZ5fmL7tb0uqsxpkks"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/24/trump-tariffs-china-eu-mexico-manufacturing-01181685",
+          "title": "Trump administration tees up tariff hikes on EU, China, others",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi3BnYqOrjuyjiHULL0Q10Xtw8c9qTN4HdW-xbKHVUadvgYQpYxcfZJGwpdeM"
+        }
+      ]
+    },
+    {
+      "query": "bodø/glimt - lask",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T17:20:00Z",
+      "related_news_urls": [
+        "https://www.tallahatchienews.ms/node/457313?df",
+        "https://news.bet365.com/en-us/article/samuel-adenirans-odds-to-score-vs-bodoglimt-today/2026112416261141336",
+        "https://www.tufutbolero.com/en/news/bod-glimt-lask-linz-bod-glimt-arrives-with-three-absences-e50455"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY",
+      "image_credit": "Charleston Sun-Sentinel",
+      "news": [
+        {
+          "url": "https://www.tallahatchienews.ms/node/457313?df",
+          "title": "Aston Villa vs Galatasaray Live Free Soccer Champions League 2026",
+          "publisher": "Charleston Sun-Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
+        },
+        {
+          "url": "https://news.bet365.com/en-us/article/samuel-adenirans-odds-to-score-vs-bodoglimt-today/2026112416261141336",
+          "title": "Samuel Adeniran's Odds to Score vs. Bodo/Glimt Today",
+          "publisher": "news.bet365.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5uomcN2fznaeC5t7UGS4d6p9vZ2PK-zbROy-03n1VFadlFv2a4TtQjv3xIug"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/bod-glimt-lask-linz-bod-glimt-arrives-with-three-absences-e50455",
+          "title": "Bodø/Glimt-Lask Linz: Bodø/Glimt arrives with three absences",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiB-Z4UGzm0m7EXm8Pq5bF81Wa6WH70eLzB3zBIUnvu7GOxJpQcq8GM6501Uc"
+        }
+      ]
+    },
+    {
+      "query": "micron",
+      "approx_searches": "500+",
       "published_at": "2026-11-24T17:10:00Z",
       "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/micron-stock-just-hit-lowest-211202300.html",
         "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
-        "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-dove-today-164752382.html",
         "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4",
-      "image_credit": "Trefis",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFt_DulHopbBrWzVtaeAWJ06FISXZt4Ep0_3_-62Vhw-w0sB2CqAE1hcT9Ubs",
+      "image_credit": "Yahoo Finance",
       "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/micron-stock-just-hit-lowest-211202300.html",
+          "title": "Micron Stock Just Hit Its Lowest Price Since May. I'd Buy More Now.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFt_DulHopbBrWzVtaeAWJ06FISXZt4Ep0_3_-62Vhw-w0sB2CqAE1hcT9Ubs"
+        },
         {
           "url": "https://www.trefis.com/stock/mu/articles/627777/why-is-micron-technology-stock-falling/2026-11-23",
           "title": "Why Did Micron Technology Stock Fall?",
           "publisher": "Trefis",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ8wbJFrf9kYr435wYed1gDQWqmSwDajPjEZnfM3HyU8eZsGfQo7c8OXs3xp4"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-micron-stock-dove-today-164752382.html",
-          "title": "Why Micron Stock Dove Today",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQCDzlNUIoVzF9tMA9_Ee6VeYBurcyo9kRX8b9QokBZ-pPzQ5qvNno7VHEtrI"
         },
         {
           "url": "https://seekingalpha.com/article/4971212-micron-you-cant-argue-with-the-price",
@@ -50,7 +295,7 @@
         "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
         "https://www.ncaa.com/news/football/article/2026-11-22/college-football-playoff-rankings-predictions-what-2026s-fourth-cfp-top-25-bracket"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdiM93TaSA4M9RvTPj5ma7rJS4a_i8wWyqSNVCtXoSjmtNgztnHIu7CbRb96o",
       "image_credit": "ESPN",
       "news": [
         {
@@ -58,7 +303,7 @@
           "title": "2026-27 Week 12 College Football Playoff, bowl projections",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdiM93TaSA4M9RvTPj5ma7rJS4a_i8wWyqSNVCtXoSjmtNgztnHIu7CbRb96o"
         },
         {
           "url": "https://www.nytimes.com/athletic/7807476/2026/11/24/college-football-playoff-bracket-predictions-latest/",
@@ -77,282 +322,37 @@
       ]
     },
     {
-      "query": "galatasaray vs aston villa",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-24T16:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
-        "https://www.espn.com/soccer/story/_/id/50572850/aston-villa-unai-emery-galatasaray-champions-league",
-        "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJA3u60fG2CPSgCSOOw8h-qKM_hVw8OmiHOcX7mIYhnXANl2EAzRbIy6GgOtc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c8wy5dq7dn3wt",
-          "title": "Galatasaray vs Aston Villa: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJA3u60fG2CPSgCSOOw8h-qKM_hVw8OmiHOcX7mIYhnXANl2EAzRbIy6GgOtc"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50572850/aston-villa-unai-emery-galatasaray-champions-league",
-          "title": "Aston Villa's Unai Emery on Galatasaray pitch fear: 'I don't know' how bad it is",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVjdVL-rXRm0QrKAJzym6YgUzN2ApCdpmF66HtHjwwTWgDw7z2sqW-TpcJxzc"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/23/unai-emery-no-change-of-plan-aston-villa-galatasaray-surface",
-          "title": "Emery insists no change of plan for Aston Villa despite Galatasaray surface",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOdGMc_7YIl4c5FNpFBN6WDg8c2d08oGZ8Q2CDD4ZwMCG3Q8eKVpchmu_C9vg"
-        }
-      ]
-    },
-    {
-      "query": "galatasaray - aston villa",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T16:50:00Z",
-      "related_news_urls": [
-        "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
-        "https://www.hurriyet.com.tr/sporarena/unai-emery-galatasaray-farkli-turkiyenin-en-iyi-takimi-43388478",
-        "https://www.ntvspor.net/futbol/galeri-ve-okan-buruk-osimheni-resmen-acikladi-tum-soru-isaretlerini-yok-etti-433481"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ",
-      "image_credit": "Sözcü Gazetesi",
-      "news": [
-        {
-          "url": "https://www.sozcu.com.tr/aston-villa-da-kritik-eksikler-galatasaray-maci-oncesi-4-futbolcu-istanbul-a-getirilmedi-p383807",
-          "title": "Aston Villa’da kritik eksikler! Galatasaray maçı öncesi 4 futbolcu İstanbul’a getirilmedi",
-          "publisher": "Sözcü Gazetesi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTPlz1xkLKSyDfKL-KfyKbFVrg6ArOs4mbO364QXkDENdS9DW_sZkj3LnWOQ"
-        },
-        {
-          "url": "https://www.hurriyet.com.tr/sporarena/unai-emery-galatasaray-farkli-turkiyenin-en-iyi-takimi-43388478",
-          "title": "Unai Emery: 'Galatasaray farklı, Türkiye'nin en iyi takımı'",
-          "publisher": "Hürriyet",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8FltHlDkqjTDL311-aIeT0y3hM1tj_S-uMnmJ8Rkp8Rav_SNEiVN_0Uhq1n0"
-        },
-        {
-          "url": "https://www.ntvspor.net/futbol/galeri-ve-okan-buruk-osimheni-resmen-acikladi-tum-soru-isaretlerini-yok-etti-433481",
-          "title": "Ve Okan Buruk, Osimhen'i resmen açıkladı! Tüm soru işaretlerini yok etti",
-          "publisher": "NTVSpor",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSwZlfGloamJ4PSqkdbLb2IiyIWPJPis6_aqheP4VGHAJVmhLKjEqHZ_PClow"
-        }
-      ]
-    },
-    {
-      "query": "bioware",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T16:50:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
-        "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/",
-        "https://foro3d.com/en/2026/noviembre/jennifer-hale-propone-vender-mass-effect-a-un-colectivo-de-fans.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
-          "title": "Dragon Age's former boss says that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4"
-        },
-        {
-          "url": "https://www.gamesradar.com/games/mass-effect/ea-should-sell-the-mass-effect-ip-straight-to-the-community-shepard-actor-jennifer-hale-says-you-cannot-buy-that-kind-of-goodwill/",
-          "title": "EA should sell the Mass Effect IP straight to the community, Shepard actor Jennifer Hale says: \"You cannot buy that kind of goodwill\"",
-          "publisher": "GamesRadar+",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSB3jKUohnZUJZYTJEoqm3mtOUPMwqw4tNnB71tqV07Ycg8gJkh9KMtxGUnN_4"
-        },
-        {
-          "url": "https://foro3d.com/en/2026/noviembre/jennifer-hale-propone-vender-mass-effect-a-un-colectivo-de-fans.html",
-          "title": "Jennifer Hale proposes selling Mass Effect to a fan collective",
-          "publisher": "Foro3D",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOw4TJ4Z75JeRXoHo0hYzENjITyKA8DNXcbgvBocy_XIMOqi_x0MkBxKeDKOQ"
-        }
-      ]
-    },
-    {
-      "query": "guy fieri",
+      "query": "joel hofer",
       "approx_searches": "200+",
-      "published_at": "2026-11-24T16:50:00Z",
+      "published_at": "2026-11-24T17:10:00Z",
       "related_news_urls": [
-        "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
-        "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-        "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2"
+        "https://www.nhl.com/news/edmonton-oilers-st-louis-blues-game-recap-november-22-2026",
+        "https://www.sportsline.com/nba/game-forecast/NBA_20261123_MEM@CHA/",
+        "https://www.espn.com/nhl/recap/_/gameId/401892770"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4",
-      "image_credit": "NBC Chicago",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWKVi9fSc-u--hRG8M2sHAEHEL5Cq4cbzAoG2KBFkDdOtVX1aqblS2H3XN-zU",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
-          "title": "Guy Fieri's favorite restaurant in America is in Chicago, ranking says",
-          "publisher": "NBC Chicago",
+          "url": "https://www.nhl.com/news/edmonton-oilers-st-louis-blues-game-recap-november-22-2026",
+          "title": "Blues rally from three down in third period, defeat Oilers in shootout",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWKVi9fSc-u--hRG8M2sHAEHEL5Cq4cbzAoG2KBFkDdOtVX1aqblS2H3XN-zU"
         },
         {
-          "url": "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-          "title": "Guy Fieri Shares Birthday Tribute for Late Father Jim, Who Died in 2024: ‘Miss Him Every Day’",
-          "publisher": "People.com",
+          "url": "https://www.sportsline.com/nba/game-forecast/NBA_20261123_MEM@CHA/",
+          "title": "Memphis Grizzlies vs. Charlotte Hornets Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Monday 11/23 7:00 PM ET",
+          "publisher": "SportsLine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4pLzJ1AZt9ADVOUn_WK1mKUtSuZK13funbamPV4j-b6ax2AW-RQiGuG6utX8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM39cJQumzQ8N5sY8S_cVG5hDUlWeNVaNomkoKWmaDYFiQT2TC-7gNFOJhVU8"
         },
         {
-          "url": "https://www.pennlive.com/entertainment/2026/11/guy-fieris-heartbreaking-post-has-fans-sending-prayers-he-is-looking-down.html-2",
-          "title": "Guy Fieri’s heartbreaking post has fans sending prayers: ‘He is looking down’",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo"
-        }
-      ]
-    },
-    {
-      "query": "the view",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T16:50:00Z",
-      "related_news_urls": [
-        "https://www.fccincinnati.com/news/fc-cincinnati-to-honor-fiona-the-hippo-at-saturday-s-mls-cup-playoffs-game-2",
-        "https://www.espn.com/soccer/story/_/id/50581745/fiona-hippo-fc-cincinnati-tifo-death-honoured-mls",
-        "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDsoqh0S4ck2UM7Muik6y4u2gpZOkdJh_VQO4bDWxI5RsP51lImWgA6_0s380",
-      "image_credit": "FC Cincinnati",
-      "news": [
-        {
-          "url": "https://www.fccincinnati.com/news/fc-cincinnati-to-honor-fiona-the-hippo-at-saturday-s-mls-cup-playoffs-game-2",
-          "title": "FC Cincinnati to honor Fiona the hippo at Saturday’s MLS Cup Playoffs Game 2",
-          "publisher": "FC Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDsoqh0S4ck2UM7Muik6y4u2gpZOkdJh_VQO4bDWxI5RsP51lImWgA6_0s380"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50581745/fiona-hippo-fc-cincinnati-tifo-death-honoured-mls",
-          "title": "Fiona the hippo to be honored by FC Cincinnati with tifo after untimely death",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892770",
+          "title": "Blues 5-4 Oilers (Nov 22, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9m-JLI0KgRF7CoQMfHyLCMbcmAfxsvU9FxFVoL8Kkha8PAcZlFmfb6poa9l0"
-        },
-        {
-          "url": "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo",
-          "title": "Witness recounts what happened when hat landed in Fiona's Cincinnati Zoo habitat",
-          "publisher": "WCPO 9 Cincinnati",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhm708HUv7t3eqWmzhp0HZMldgZpbMJUm36JB3ZZdQCi-jbUyKLVeiA1uHtZc"
-        }
-      ]
-    },
-    {
-      "query": "microsoft code red",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T16:40:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
-        "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
-        "https://www.theregister.com/saas/2026/11/23/microsoft-mega-outage-report-reveals-testing-gaps-and-emails-that-never-arrived/5311656"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZajGeZ3Q1CYfYVEduLKaYeKbO9xDgN9maUxWb2GCF2yo3Uk2Xxg0pAvrx3E",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/microsoft-declares-code-red-after-historic-outage-internal-memos-show-2026-11-24/",
-          "title": "EXCLUSIVE: Microsoft declares 'Code Red' after historic outage, internal memos show",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGZajGeZ3Q1CYfYVEduLKaYeKbO9xDgN9maUxWb2GCF2yo3Uk2Xxg0pAvrx3E"
-        },
-        {
-          "url": "https://www.nytimes.com/video/business/dealbook/100000011290885/satya-nadella-microsoft-dealbook-outages.html",
-          "title": "Video: Microsoft’s C.E.O. Satya Nadella Addresses Global Outlook Outage",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ8b9qj8ViALdGVxNLvsuOndJNUR8X8GiC1S24riDfsV2o5Q4rpra4Zh5FmZEE"
-        },
-        {
-          "url": "https://www.theregister.com/saas/2026/11/23/microsoft-mega-outage-report-reveals-testing-gaps-and-emails-that-never-arrived/5311656",
-          "title": "Microsoft mega outage: Report reveals testing gaps and emails that never arrived",
-          "publisher": "The Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJZIJfkuIYxM8v-dU5RG09rvnDrwpWFoPm0WCEmOL03UUqPmuvzfKulEPftfU"
-        }
-      ]
-    },
-    {
-      "query": "christie miller",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T16:20:00Z",
-      "related_news_urls": [
-        "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
-        "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
-        "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/influencer-announces-her-own-death-in-pre-recorded-message-12276526",
-          "title": "Influencer, 60, Announces Her Own Death in Pre-Recorded Video, 4 Years After Stage 4 Breast Cancer Diagnosis",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1zLkVOkZhVP7JQkhl6hNW6GpXuRSOtaOo103xlZAGvXoh68H88kTAwh99Ojg"
-        },
-        {
-          "url": "https://www.dailymail.com/lifestyle/article-16318309/influencer-christie-miller-death-dead-breast-cancer.html",
-          "title": "Influencer Christie Miller, 60, announces her own death in tragic video after four-year breast cancer battle",
-          "publisher": "Daily Mail",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv0_W3epskQs_S2EZsL0SE1uYekvNLVrM9N2_bF1sd5M1FE8V9Q2di5uC9bZ8"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438369/christie-miller-dead-at-60-after-cancer-battle-announces-own-death",
-          "title": "Influencer Christie Miller Announces Her Own Death at 60 After Cancer Battle",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcNhiYd_T7PNm6-Feh-0hTpAAIfR8rmiJjc9U4TOZ3LFSez_DaAwrhH6wIVA4"
-        }
-      ]
-    },
-    {
-      "query": "angela bassett",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T16:20:00Z",
-      "related_news_urls": [
-        "https://www.instagram.com/p/DgBP0tEAQIV/",
-        "https://dancemagazine.com/chelsey-arce-wanted/",
-        "https://joshatthemovies.com/2026/11/18/theater-review-wanted/"
-      ],
-      "image_url": null,
-      "image_credit": "Instagram",
-      "news": [
-        {
-          "url": "https://www.instagram.com/p/DgBP0tEAQIV/",
-          "title": "#AngelaBassett Looks amazing 🤩! She recently stopped by #Broadway in #NYC to watch the #WANTED musical and greet the cast! @wantedmusical",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://dancemagazine.com/chelsey-arce-wanted/",
-          "title": "From Kill Bill to “Bridgerton”: Choreographer Chelsey Arce on Her Inspirations for the New Broadway Musical WANTED",
-          "publisher": "Dance Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROrwEjKzzFd3SCzgSvj06GAsbcL1Vp1qccDJpug_usvaRW1_dNzt-D86lrK_8"
-        },
-        {
-          "url": "https://joshatthemovies.com/2026/11/18/theater-review-wanted/",
-          "title": "Theater Review: Wanted",
-          "publisher": "Josh At The Movies",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRI7vNT-H3EEdfV8SCsbX_z98lrC5H0s90KfsfSRhlddmLwl0rXvrW0-2JdkHI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQevTySMpE5VnsC9vOhd8fv3jDg38ZsKLQ-xHKgiDxNfS_9S9MENj5TnnBESLE"
         }
       ]
     }
