@@ -341,3 +341,26 @@ test('Nov 22 owner-submitted djgY5YE6RKU registers one original-video Quick Card
  assert.ok(ALL_FEED_CARDS.some(row=>row.id===c.id));
  assert.equal(departmentFor(c),'media');
 });
+
+
+test('Nov 24 exact owner video DL6EKfSqOa4 creates one Oracle Public Media card',()=>{
+ const id='DL6EKfSqOa4';
+ const records=REVIEWED_OWNER_VIDEO_LINKS.filter(v=>v.videoId===id);
+ assert.equal(records.length,1);
+ const v=records[0];
+ assert.equal(v.sourceUrl,'https://www.youtube.com/watch?v='+id);
+ assert.equal(v.observedAt,'2026-11-24');
+ assert.equal(v.titleVerified,false);
+ assert.equal(v.publisherVerified,false);
+ assert.equal(v.publishedAt,null);
+ assert.ok(validateOwnerYouTubeLink(v));
+ const cards=REVIEWED_OWNER_VIDEO_CARDS.filter(c=>c.reviewedYouTubeVideoId===id);
+ assert.equal(cards.length,1);
+ const c=cards[0];
+ assert.equal(c.featureUrl,v.sourceUrl);
+ assert.equal(c.image,'https://i.ytimg.com/vi/'+id+'/hqdefault.jpg');
+ assert.ok(isPublicSourceCard(c)&&validSourceCard(c));
+ assert.equal(findSourceCard(c.id)?.id,c.id);
+ assert.equal(ALL_FEED_CARDS.filter(row=>row.id===c.id).length,1);
+ assert.equal(departmentFor(c),'media');
+});
