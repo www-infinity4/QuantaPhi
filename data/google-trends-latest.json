@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-24T02:01:29.154893Z",
+  "checked_at": "2026-11-24T02:31:59.587117Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "frankie luvu",
+      "query": "wild vs sharks",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T01:40:00Z",
+      "published_at": "2026-11-24T02:10:00Z",
       "related_news_urls": [
-        "https://www.hogshaven.com/washington-commanders-news/456538/frankie-luvu-fine-nfl-commanders-giants",
-        "https://sports.yahoo.com/articles/nfl-hands-down-punishment-over-143756511.html",
-        "https://heavy.com/sports/nfl/washington-commanders/commanders-veteran-hit-with-nfl-punishment/"
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-23-2026",
+        "https://sports.yahoo.com/videos/lineups-game-notes-more-sharks-013325840.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-san-jose-sharks-prediction-odds-2026-11-23/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6a4jwxjHmI2UsHhqHBsTjUKUC__eiryUmR5oLUPS8-NJlOwKqR3JYtCT2DIo",
-      "image_credit": "Hogs Haven",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuarz-ve_AvPwU6VoHRZeHsjE9soCbmY4ac1b41V0QbwiQDnOSgIAs6G3iK-M",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.hogshaven.com/washington-commanders-news/456538/frankie-luvu-fine-nfl-commanders-giants",
-          "title": "Frankie Luvu fined by NFL for hit in Commanders victory over Giants",
-          "publisher": "Hogs Haven",
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-23-2026",
+          "title": "NHL On Tap: Kaprizov, Wild seek to extend point streaks to 15",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6a4jwxjHmI2UsHhqHBsTjUKUC__eiryUmR5oLUPS8-NJlOwKqR3JYtCT2DIo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTuarz-ve_AvPwU6VoHRZeHsjE9soCbmY4ac1b41V0QbwiQDnOSgIAs6G3iK-M"
         },
         {
-          "url": "https://sports.yahoo.com/articles/nfl-hands-down-punishment-over-143756511.html",
-          "title": "NFL Hands Down Punishment Over New York Giants Game",
+          "url": "https://sports.yahoo.com/videos/lineups-game-notes-more-sharks-013325840.html",
+          "title": "Lineups, Game Notes & More: Sharks vs Wild 11/23/26",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_yk1WhKl3wyqb3gDSZerwUc7SwiXzKq62cVzy7bnL4MAMxA9tJ2uCur7noGc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwxjIJOlkXTbtCcBskly9LO82rl6UFTrhdD-q6Mc8gPUwkPDBrnyLuzAVk9HI"
         },
         {
-          "url": "https://heavy.com/sports/nfl/washington-commanders/commanders-veteran-hit-with-nfl-punishment/",
-          "title": "Commanders Veteran Hit With NFL Punishment Ahead of Bengals Game",
-          "publisher": "Heavy.com",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/minnesota-wild-vs-san-jose-sharks-prediction-odds-2026-11-23/",
+          "title": "Minnesota Wild vs San Jose Sharks Prediction, Picks & Odds | 23 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQHVa63H6KT2YUVKT7Dt0PXU3udRUxhIHys8XdX-9IoZ-OXN97MheHE9Ql3d8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyT8MRlery3Y1GkTGV4vSwzO1JX-n5622LOpSc3qLe3dpdy7AA2S_w5IAIDfE"
         }
       ]
     },
     {
-      "query": "samaje perine",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T01:40:00Z",
+      "query": "swayze bozeman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:10:00Z",
       "related_news_urls": [
-        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=carson-beck-new-yorkjets",
-        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=jacory-croskeymerritt-roman-wilson",
-        "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=roman-wilson-mark-andrews"
+        "https://www.bengals.com/news/swayze-bozeman-brian-parker-ii-activated-reserve-injured-list-bengals-roster-update",
+        "https://www.cbssports.com/fantasy/football/news/bengals-brian-parker-active-for-mnf/",
+        "https://www.cincyjungle.com/cincinnati-bengals-roster/206385/swayze-bozeman-brian-parker-josh-kattus-practice-squad-commanders-game"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE",
-      "image_credit": "RotoBaller",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREaVU8Q0YFLx38YLlQKFFtq0zDfwceEn3IHGHlbpN1dLjO1gwHV0YKdyCm0MA",
+      "image_credit": "Cincinnati Bengals",
       "news": [
         {
-          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=carson-beck-new-yorkjets",
-          "title": "Carson Beck or New York Jets: Who Should I Pick Up? Fantasy Football (2026)",
-          "publisher": "RotoBaller",
+          "url": "https://www.bengals.com/news/swayze-bozeman-brian-parker-ii-activated-reserve-injured-list-bengals-roster-update",
+          "title": "Swayze Bozeman, Brian Parker II Activated off Reserve/Injured List | BENGALS ROSTER UPDATE",
+          "publisher": "Cincinnati Bengals",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREaVU8Q0YFLx38YLlQKFFtq0zDfwceEn3IHGHlbpN1dLjO1gwHV0YKdyCm0MA"
         },
         {
-          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=jacory-croskeymerritt-roman-wilson",
-          "title": "Jacory Croskey-Merritt or Roman Wilson: Who Should I Pick Up? Fantasy Football (2026)",
-          "publisher": "RotoBaller",
+          "url": "https://www.cbssports.com/fantasy/football/news/bengals-brian-parker-active-for-mnf/",
+          "title": "Bengals' Brian Parker: Active for MNF",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
         },
         {
-          "url": "https://www.rotoballer.com/who-should-i-pickup-fantasy-football-waiver-wire?nfl=roman-wilson-mark-andrews",
-          "title": "Mark Andrews or Roman Wilson: Who Should I Pick Up? Fantasy Football (2026)",
-          "publisher": "RotoBaller",
+          "url": "https://www.cincyjungle.com/cincinnati-bengals-roster/206385/swayze-bozeman-brian-parker-josh-kattus-practice-squad-commanders-game",
+          "title": "Bengals make 3 roster moves ahead of Commanders game",
+          "publisher": "Cincy Jungle",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS6Rk1UQ2Ai7qvd1AqMztv-YryWwI0o2eBl76d9i_OqkQDR-gx8ycn1uux-xE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzpDoqRre5H8i2m1iu7VoXbaFXhgIhzIiXEHL56vUAajSvwjnXgLOWoufWK4g"
         }
       ]
     },
     {
-      "query": "anfernee simons",
+      "query": "jrue holiday",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T01:40:00Z",
+      "published_at": "2026-11-24T02:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/sixers-anfernee-simons-singles-blazers-193718594.html",
-        "https://sports.yahoo.com/articles/anfernee-simons-continues-76ers-most-011507293.html",
-        "https://www.fantasypros.com/nba/news/621157/anfernee-simons-racks-up-18-points-win-over-magic.php"
+        "https://sports.yahoo.com/articles/celtics-derrick-white-alarm-bells-202858791.html",
+        "https://www.masslive.com/celtics/2026/11/joe-mazzulla-makes-surprising-admission-after-warriors-upset-celtics.html",
+        "https://985thesportshub.com/2026/11/23/the-celtics-have-a-derrick-white-problem/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhwJ6z_Tw2OJ3ymTGutuNVspPM9t-ZohTPLGavb-2NEIVjMpSJ1x7h3AxcOs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNw_6hFplCyi7DvZHHSWsczbtiTAXxLOJQXpULGwxP5zAeM7rT6uR7QSMXrc",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/sixers-anfernee-simons-singles-blazers-193718594.html",
-          "title": "Sixers' Anfernee Simons singles out Blazers star Damian Lillard",
+          "url": "https://sports.yahoo.com/articles/celtics-derrick-white-alarm-bells-202858791.html",
+          "title": "Celtics’ Derrick White alarm bells are going off as brick fest continues for another season",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhwJ6z_Tw2OJ3ymTGutuNVspPM9t-ZohTPLGavb-2NEIVjMpSJ1x7h3AxcOs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNw_6hFplCyi7DvZHHSWsczbtiTAXxLOJQXpULGwxP5zAeM7rT6uR7QSMXrc"
         },
         {
-          "url": "https://sports.yahoo.com/articles/anfernee-simons-continues-76ers-most-011507293.html",
-          "title": "Anfernee Simons Continues To Be 76ers’ Most Underrated Signing",
+          "url": "https://www.masslive.com/celtics/2026/11/joe-mazzulla-makes-surprising-admission-after-warriors-upset-celtics.html",
+          "title": "Joe Mazzulla makes surprising admission after Warriors upset Celtics",
+          "publisher": "MassLive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzB3DWvsDLtV0W8xZjCoTkrRmNlxp2r8qD_Bp1TKn_OMHjx4OOhOR7Vjg1c8c"
+        },
+        {
+          "url": "https://985thesportshub.com/2026/11/23/the-celtics-have-a-derrick-white-problem/",
+          "title": "The Celtics have a Derrick White problem",
+          "publisher": "98.5 The Sports Hub",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3a5JOY7NF8gPC0TOPLOlOPlLlvq0C1W53Ub9FJzP026UEi8qjacbKTJq176A"
+        }
+      ]
+    },
+    {
+      "query": "where is the super bowl 2027",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+        "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
+        "https://espnpressroom.com/press-release/espn-the-walt-disney-company-the-nfl-and-imax-to-bring-the-super-bowl-to-imax-for-the-first-time/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
+        },
+        {
+          "url": "https://ktla.com/news/nationworld/super-bowl-lxi-imax-theaters/",
+          "title": "Moviegoers are getting a front-row seat to the Super Bowl",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSHVU98hWjeW5rFDJeUcTdqepfJwsQdbQFjIKFcGmPjEIxmXoRzNZe8Kzr3rFI"
+        },
+        {
+          "url": "https://espnpressroom.com/press-release/espn-the-walt-disney-company-the-nfl-and-imax-to-bring-the-super-bowl-to-imax-for-the-first-time/",
+          "title": "ESPN, The Walt Disney Company, the NFL and IMAX to bring the Super Bowl to IMAX for the first time",
+          "publisher": "ESPN Press Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5u1QTRZQ4UKSgV6-qirYIxBftAUDOVFDapNlU32t5HPtgPpV0MJOlTwFxKUA"
+        }
+      ]
+    },
+    {
+      "query": "jaden mcdaniels",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/jaden-played-against-223057312.html",
+        "https://dunkingwithwolves.com/jaden-mcdaniels-blunt-comments-about-lamelo-ball-s-defensive-leap-are-spot-on",
+        "https://www.si.com/nba/timberwolves/onsi/sneaky-lamelo-ball-improvement-elate-timberwolves-despite-offensive-concerns-01m80qgfvf8z"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/jaden-played-against-223057312.html",
+          "title": "And Jaden is like, ’We played against you in …",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3s72lgoxJM7jF82X_Mtdk6JMH2AYG28FTArv2-yTr-3-QBSJPn1ojzkudXuE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8"
         },
         {
-          "url": "https://www.fantasypros.com/nba/news/621157/anfernee-simons-racks-up-18-points-win-over-magic.php",
-          "title": "Anfernee Simons racks up 18 points in win over Magic",
+          "url": "https://dunkingwithwolves.com/jaden-mcdaniels-blunt-comments-about-lamelo-ball-s-defensive-leap-are-spot-on",
+          "title": "Jaden McDaniels' blunt comments about LaMelo Ball's defensive leap are spot on",
+          "publisher": "Dunking with Wolves",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWTT4BMF-sxAj_Fronb1Yx5uu14SNI-ZTFgecR8STErkMhGdMtp8ENARGZrtI"
+        },
+        {
+          "url": "https://www.si.com/nba/timberwolves/onsi/sneaky-lamelo-ball-improvement-elate-timberwolves-despite-offensive-concerns-01m80qgfvf8z",
+          "title": "Sneaky LaMelo Ball Improvement Should Elate Timberwolves Despite Offensive Concerns",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnScRLviHwvBFZb9vHwDlWflOHMU-M2Gi4h_gqkY95iq90zYaUJLsFEHHBCuU"
+        }
+      ]
+    },
+    {
+      "query": "mark rutte",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://www.c-span.org/program/international-telecasts/nato-secretary-general-rutte-and-german-chancellor-merz-hold-news-conference/688237",
+        "https://www.foxnews.com/world/nato-warns-putin-could-strike-european-army-responds-points-us-military-model",
+        "https://www.yahoo.com/news/politics/articles/rutte-sceptical-single-european-military-150400352.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8LtYlrKliGB6CyCMJjy1bZdPe22uVTeoVef-ZgC3DaCMPNo8Y6pAHJuw4zp8",
+      "image_credit": "C-SPAN",
+      "news": [
+        {
+          "url": "https://www.c-span.org/program/international-telecasts/nato-secretary-general-rutte-and-german-chancellor-merz-hold-news-conference/688237",
+          "title": "NATO Secy. General Mark Rutte & German Chancellor Hold Press Conference Amid Military Escalation in Ukraine",
+          "publisher": "C-SPAN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8LtYlrKliGB6CyCMJjy1bZdPe22uVTeoVef-ZgC3DaCMPNo8Y6pAHJuw4zp8"
+        },
+        {
+          "url": "https://www.foxnews.com/world/nato-warns-putin-could-strike-european-army-responds-points-us-military-model",
+          "title": "NATO warns Putin could strike before European army responds, points to US as military model",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRR2Cug1sSXObEyM6O_N54-4AP5C-f4gvkNc5Pp3t8bFOuCZKwqOuvwG-LjBo"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/rutte-sceptical-single-european-military-150400352.html",
+          "title": "Rutte sceptical of single European military idea: Putin would be in Rotterdam by the time we decided what to do",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpMOrINLiwdRGLf2fvTmOydR0dWl6VQ13D6IKyn4X5IS7wZcDwdvp6CMheWlQ"
+        }
+      ]
+    },
+    {
+      "query": "providence basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://www.golocalprov.com/sports/preview-of-pcs-critical-trip-to-hawaii-kevin-stacom",
+        "https://www.sportsgambler.com/betting-tips/basketball/vcu-rams-vs-providence-friars-prediction-odds-2026-11-23/",
+        "https://sports.yahoo.com/videos/vcu-vs-providence-over-155-185848404.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqp5hSlPoTwclvwy6y1Uvqgv0fBT6Qcl-pphGs-O-jXAhysZXONaNETmR_FoY",
+      "image_credit": "Go Local Prov",
+      "news": [
+        {
+          "url": "https://www.golocalprov.com/sports/preview-of-pcs-critical-trip-to-hawaii-kevin-stacom",
+          "title": "Preview of PC's Critical Trip to Hawaii — Kevin Stacom",
+          "publisher": "Go Local Prov",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqp5hSlPoTwclvwy6y1Uvqgv0fBT6Qcl-pphGs-O-jXAhysZXONaNETmR_FoY"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/vcu-rams-vs-providence-friars-prediction-odds-2026-11-23/",
+          "title": "VCU vs Providence Prediction, Picks & Odds | 23 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmVVvWgDDMndJfMsh5OiBiS3OjMdMzIzpO1SnbQ6m9Yk42_rBugTDJl2arQBM"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/vcu-vs-providence-over-155-185848404.html",
+          "title": "VCU vs. Providence Over 155 in Maui",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdQLcXJyO_cbQRjDoEIJau8-pEwXkxiKkslxI-iB2Z0hKym0OH2PVepWCR74"
+        }
+      ]
+    },
+    {
+      "query": "chase young",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://www.chicagobears.com/news/bears-win-fifth-straight-game-move-to-8-2-with-victory-over-saints-game-recap",
+        "https://sports.yahoo.com/videos/5-offensive-takeaways-saints-loss-015416443.html",
+        "https://www.espn.com/nfl/story/_/id/50567207/jeffery-simmons-matches-career-high-3-sacks-bears-win"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeU3jnjZpfD6SQBVdaQUGIZN6EO7-TUQHhxybDXEiOVkb5vdwxxzkPZFbEF54",
+      "image_credit": "Chicago Bears",
+      "news": [
+        {
+          "url": "https://www.chicagobears.com/news/bears-win-fifth-straight-game-move-to-8-2-with-victory-over-saints-game-recap",
+          "title": "Bears win fifth straight game, move to 8-2 with victory over Saints | Game Recap",
+          "publisher": "Chicago Bears",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeU3jnjZpfD6SQBVdaQUGIZN6EO7-TUQHhxybDXEiOVkb5vdwxxzkPZFbEF54"
+        },
+        {
+          "url": "https://sports.yahoo.com/videos/5-offensive-takeaways-saints-loss-015416443.html",
+          "title": "5 Offensive Takeaways From the Saints’ Loss to the Bears",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQHzNYYFvN9FO9zZARfl8ZPOa_bkeebKrQc9RA0W3oX8vH06Wt9JcgHxFcyWs"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50567207/jeffery-simmons-matches-career-high-3-sacks-bears-win",
+          "title": "Jeffery Simmons matches career high with 3 sacks in Bears' win",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQpQk6_E39Ee_CUW0jB4iakzTtzcsR0nMeLf85KvgQARcBF5_uxXHDn3TH2CxM"
+        }
+      ]
+    },
+    {
+      "query": "trey hendrickson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T02:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/trey-hendrickson-injury-latest-news-005120263.html",
+        "https://www.fantasypros.com/nfl/news/621877/trey-hendrickson-knee-questionable-to-return.php",
+        "https://clutchpoints.com/nfl/baltimore-ravens/trey-hendrickson-injury-adds-to-ravens-train-wreck-season"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLVNb8WSEXurwO23WPt6rEJ12sHodplKkvE9r1EuV1utHfpeCqt3o--TqPBEo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/trey-hendrickson-injury-latest-news-005120263.html",
+          "title": "Trey Hendrickson Injury Update: Latest News on Ravens DE After Leaving Panthers Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLVNb8WSEXurwO23WPt6rEJ12sHodplKkvE9r1EuV1utHfpeCqt3o--TqPBEo"
+        },
+        {
+          "url": "https://www.fantasypros.com/nfl/news/621877/trey-hendrickson-knee-questionable-to-return.php",
+          "title": "Trey Hendrickson (knee) questionable to return",
           "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfE6fXV6oNjLUGMLQs-EM4siccUfCbPFL2epHYVJ_RUjGzmZ67Xsd3lUhZVkE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo5dwFGGgfMcoPCjuPqhp2I_wSQrtkPlL05VEspPQdlJKBelBGPsqTNj8UMN8"
+        },
+        {
+          "url": "https://clutchpoints.com/nfl/baltimore-ravens/trey-hendrickson-injury-adds-to-ravens-train-wreck-season",
+          "title": "Ravens news: Trey Hendrickson suffers injury scare amid BAL's train-wreck season",
+          "publisher": "ClutchPoints",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjBBgReaRVZKeYorOt61gh9zkzqzEbdeu3y0T0c6FKc29YMvpvbPR9AT9dFLU"
         }
       ]
     },
     {
-      "query": "washington weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T01:40:00Z",
+      "query": "spurs vs kings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-24T02:00:00Z",
       "related_news_urls": [
-        "https://komonews.com/weather/king-tides-storms-thanksgiving-week-raise-coastal-tidal-flooding-risk-in-western-washington-grays-harbor-willapa-bay-westport-ocean-shores-long-beach-peninsula-puget-sound",
-        "https://www.seattletimes.com/seattle-news/weather/seattle-forecast-thanksgiving-week-serves-up-storms-coastal-flooding/",
-        "https://www.kiro7.com/news/local/holiday-travel-warning-storm-systems-bring-rain-wind-coastal-flooding-mountain-snow/NLTWHK6H6VE5NMRWDBTJD6QPGQ/"
+        "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-missing-first-game-of-season-due-to-back-tightness-deaaron-fox-also-out-for-game-vs-kings-021655694.html",
+        "https://sports.yahoo.com/articles/spurs-ruled-victor-wembanyama-aaron-015354344.html",
+        "https://www.poundingtherock.com/spurs-game-previews/110591/game-preview-san-antonio-spurs-vs-sacramento-kings"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtyDkgTChHQxYH7CqN2W-DJ1wW20P6J3rDWL5Wu4tinFGWyN8iAAwtcjOryek",
-      "image_credit": "KOMO",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEwMbS7anEacn5mTICfAIInQLG4csYpAvQ4KIymu2TRqpQ3XhCwoebCjWBo0Y",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://komonews.com/weather/king-tides-storms-thanksgiving-week-raise-coastal-tidal-flooding-risk-in-western-washington-grays-harbor-willapa-bay-westport-ocean-shores-long-beach-peninsula-puget-sound",
-          "title": "King tides, storms raise flooding risk in parts of Western Washington Thanksgiving week",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtyDkgTChHQxYH7CqN2W-DJ1wW20P6J3rDWL5Wu4tinFGWyN8iAAwtcjOryek"
-        },
-        {
-          "url": "https://www.seattletimes.com/seattle-news/weather/seattle-forecast-thanksgiving-week-serves-up-storms-coastal-flooding/",
-          "title": "Thanksgiving week weather serves up storms, astronomical tides",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD0kh3Bik2tfZ4Ta7DQ7Geq_hRiIxumnrfb9bLZfmHzO76VIoucDXONQEeUFA"
-        },
-        {
-          "url": "https://www.kiro7.com/news/local/holiday-travel-warning-storm-systems-bring-rain-wind-coastal-flooding-mountain-snow/NLTWHK6H6VE5NMRWDBTJD6QPGQ/",
-          "title": "Holiday Travel Warning: Storm systems bring rain, wind, coastal flooding, mountain snow",
-          "publisher": "KIRO 7 News Seattle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWqlTB834d6uAWH2wjS4abONTWRUoUA-oOB_La9Qt4hxxzb8Ly9eK8_R7wKXg"
-        }
-      ]
-    },
-    {
-      "query": "john candy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T01:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/21-planes-trains-automobiles-memes-100000878.html",
-        "https://www.slashfilm.com/2323368/john-candy-best-line-greatest-thanksgiving-movie-quote/",
-        "https://www.myjournalcourier.com/opinion/article/john-a-tures-getting-hacked-holidays-22538349.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJi0hDmBWGa-8a5M1ZmW9QvEmAhF_xceF9oTIKTxjGL1BCrhbAaUEVOZW9V3c",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/21-planes-trains-automobiles-memes-100000878.html",
-          "title": "21 'Planes, Trains and Automobiles' Memes for Anyone Who Thought Air Travel Couldn't Get Worse",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJi0hDmBWGa-8a5M1ZmW9QvEmAhF_xceF9oTIKTxjGL1BCrhbAaUEVOZW9V3c"
-        },
-        {
-          "url": "https://www.slashfilm.com/2323368/john-candy-best-line-greatest-thanksgiving-movie-quote/",
-          "title": "39 Years Later, John Candy's Best Line Is Still The Greatest Thanksgiving Movie Quote Ever",
-          "publisher": "SlashFilm",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSl6271HGKwOkXEpAW0kwdsjMnp06fhOpAVPguXGeW9nW9LWOi-BDvMcoQlnv8"
-        },
-        {
-          "url": "https://www.myjournalcourier.com/opinion/article/john-a-tures-getting-hacked-holidays-22538349.php",
-          "title": "Commentary: John A. Tures: Planes, banks and automobiles: Getting hacked for the holidays",
-          "publisher": "Jacksonville Journal-Courier",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgkcKaq_cx1lKeIxKoj6ypRTgn1D1ufF7pcvTcPXxYxIF6ivrdkyn4QjQOPHQ"
-        }
-      ]
-    },
-    {
-      "query": "bengals",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-24T01:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/live-blogs/bengals-vs-commanders-live-score-updates-nfl-mnf-result/v10Hk2ucEP09/",
-        "https://www.thefantasyfootballers.com/dfs/dfs-monday-night-football-draftkings-for-week-11-fantasy-football-2/",
-        "https://www.fanduel.com/research/3-best-anytime-touchdown-nfl-player-prop-bets-tonight-for-mnf-bengals-vs-commanders"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZUFH0ArDbQxNndWM9wfD4T3aswQZplDb1qdJe6_gm0W7YT-kOvaPrzejG03o",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/bengals-vs-commanders-live-score-updates-nfl-mnf-result/v10Hk2ucEP09/",
-          "title": "Bengals vs. Commanders live score updates: NFL latest with defenses on top after scoreless first quarter - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZUFH0ArDbQxNndWM9wfD4T3aswQZplDb1qdJe6_gm0W7YT-kOvaPrzejG03o"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/dfs/dfs-monday-night-football-draftkings-for-week-11-fantasy-football-2/",
-          "title": "DFS Monday Night Football: DraftKings for Week 11 (Fantasy Football)",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxxcX5zkmd0T-EVsf6PQ_IYcVy35MbLRzlZCGzw67aWuapFkp_AXfUUua1SpY"
-        },
-        {
-          "url": "https://www.fanduel.com/research/3-best-anytime-touchdown-nfl-player-prop-bets-tonight-for-mnf-bengals-vs-commanders",
-          "title": "3 Best Anytime Touchdown NFL Player Prop Bets Tonight for MNF Bengals vs Commanders",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2lsih9xZdotSHG9qbjzvhuM1eC0L-D4uDcWRDsJVBdXJh6MHITQxpif0_lEA"
-        }
-      ]
-    },
-    {
-      "query": "dexter lawrence",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T01:30:00Z",
-      "related_news_urls": [
-        "https://www.hogshaven.com/washington-commanders-news/456184/dexter-lawrence-brings-huge-test-for-commanders-ol-nick-allegretti-lucas-patrick-antonio-williams-stefon-diggs",
-        "https://riggosrag.com/sam-cosmi-must-keep-dexter-lawrence-wrecking-washington-commanders-game-plan",
-        "https://heavy.com/sports/nfl/washington-commanders/sam-cosmi-titanic-dexter-lawrence-bengals/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvj-w2WC1enWGH-GGD-IFdXAZ7KjYQXU2O2v_2lucnD_oXKfhRBB-XKvzQXg",
-      "image_credit": "Hogs Haven",
-      "news": [
-        {
-          "url": "https://www.hogshaven.com/washington-commanders-news/456184/dexter-lawrence-brings-huge-test-for-commanders-ol-nick-allegretti-lucas-patrick-antonio-williams-stefon-diggs",
-          "title": "Cutting pressure in half and beating Cover-0: Washington’s OL is finding answers at the right time - Daily Slop",
-          "publisher": "Hogs Haven",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfvj-w2WC1enWGH-GGD-IFdXAZ7KjYQXU2O2v_2lucnD_oXKfhRBB-XKvzQXg"
-        },
-        {
-          "url": "https://riggosrag.com/sam-cosmi-must-keep-dexter-lawrence-wrecking-washington-commanders-game-plan",
-          "title": "Sam Cosmi must keep Dexter Lawrence from wrecking the Commanders' game plan",
-          "publisher": "Riggo's Rag",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSY3c5HKpT8-jKmRQKI7cbPz0Zahl6ZxFP3-3KzaxLeUOXu9CrOGQzZA-v8El4"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/washington-commanders/sam-cosmi-titanic-dexter-lawrence-bengals/",
-          "title": "Commanders Have ‘Quality’ Solution for ‘Titanic’ Dexter Lawrence vs. Bengals",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShUvnt7Y8hRmW-LjrB4aSVrtVfFnphiQcRr6hlXBHYXb--xiS6Z-p1c3uPnEk"
-        }
-      ]
-    },
-    {
-      "query": "rasul douglas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T01:30:00Z",
-      "related_news_urls": [
-        "https://www.hogshaven.com/washington-commanders-analysis/456553/has-rasul-douglas-been-the-washington-commanders-best-free-agent-addition",
-        "https://sports.yahoo.com/articles/3-commanders-playing-way-contract-165209040.html",
-        "https://riggosrag.com/quan-martin-resurgence-washington-commanders-unexpected-offseason-dilemma"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNsjUr_ncml061brJDk_XSTeiGDZQD73b6xNuLujmILGluzP1SIG6qphLIbyY",
-      "image_credit": "Hogs Haven",
-      "news": [
-        {
-          "url": "https://www.hogshaven.com/washington-commanders-analysis/456553/has-rasul-douglas-been-the-washington-commanders-best-free-agent-addition",
-          "title": "Has Rasul Douglas been Adam Peters’ best off season addition?",
-          "publisher": "Hogs Haven",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNsjUr_ncml061brJDk_XSTeiGDZQD73b6xNuLujmILGluzP1SIG6qphLIbyY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/3-commanders-playing-way-contract-165209040.html",
-          "title": "3 Commanders Playing Their Way to a Contract Extension",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/victor-wembanyama-missing-first-game-of-season-due-to-back-tightness-deaaron-fox-also-out-for-game-vs-kings-021655694.html",
+          "title": "Victor Wembanyama missing first game of season due to back tightness, De'Aaron Fox also out for game vs. Kings",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQq2RqvtV7lWi9kNwumt9sWB3lUynJTvsuR9vXVwz3N3dwcnUZyVzAGDjWRAUY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEwMbS7anEacn5mTICfAIInQLG4csYpAvQ4KIymu2TRqpQ3XhCwoebCjWBo0Y"
         },
         {
-          "url": "https://riggosrag.com/quan-martin-resurgence-washington-commanders-unexpected-offseason-dilemma",
-          "title": "Quan Martin’s resurgence gives Commanders an unexpected offseason dilemma",
-          "publisher": "Riggo's Rag",
+          "url": "https://sports.yahoo.com/articles/spurs-ruled-victor-wembanyama-aaron-015354344.html",
+          "title": "Spurs have ruled Victor Wembanyama and De’Aaron Fox …",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJspDuA5oTvfF3TMJrnF9bAnY2Z4krxAn6uasq3IaxU-W7l49H35SQkmBFC2M"
-        }
-      ]
-    },
-    {
-      "query": "goldie hawn",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T01:30:00Z",
-      "related_news_urls": [
-        "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
-        "https://www.yahoo.com/lifestyle/articles/goldie-hawn-details-no-nonsense-112648308.html",
-        "https://www.thedailybeast.com/goldie-hawn-reveals-fitness-secret-that-changed-her-body-completely"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4",
-      "image_credit": "Women's Health",
-      "news": [
-        {
-          "url": "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
-          "title": "‘It changed my body’: Goldie Hawn’s strength routine at 81 – and the 90-second move she does daily",
-          "publisher": "Women's Health",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6P9XuBwe9Yxl9F1wHN2rYq4wxAggxgydsoZgs3AX79r8sGqrhsSOi3C27ih4"
         },
         {
-          "url": "https://www.yahoo.com/lifestyle/articles/goldie-hawn-details-no-nonsense-112648308.html",
-          "title": "Goldie Hawn details no-nonsense workout routine at 80: ‘Changed my body completely’",
-          "publisher": "Yahoo",
+          "url": "https://www.poundingtherock.com/spurs-game-previews/110591/game-preview-san-antonio-spurs-vs-sacramento-kings",
+          "title": "Game Preview: San Antonio Spurs vs. Sacramento Kings",
+          "publisher": "Pounding The Rock",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDOaVPdLxHKg2A9mewU6_9WO78rjdq6OAYqGDI8VYQ-lemPMunT6pOeIuxMJQ"
-        },
-        {
-          "url": "https://www.thedailybeast.com/goldie-hawn-reveals-fitness-secret-that-changed-her-body-completely",
-          "title": "‘70s Sex Symbol Reveals How She ‘Changed Her Body Completely’",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLkWQVHKhYixCcAxrXPgzXjQ8ESibfxhom2DGowOccJHoGpVnxkhA1T7hI6vU"
-        }
-      ]
-    },
-    {
-      "query": "where are the washington commanders from",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-24T01:30:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/week-11-monday-night-inactives-cincinnati-bengals-at-washington-commanders?remove_header",
-        "https://www.packers.com/news/mike-s-mid-week-chat-nov-24-2026",
-        "https://www.nfl.com/videos/dan-campbell-discusses-thanksgiving-day-game-vs-bears"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvugbuALjanJlLNWHSz8bEatdYczJG78N1SjGwgefB9g48gHdb0Ta1yIf8lAI",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/week-11-monday-night-inactives-cincinnati-bengals-at-washington-commanders?remove_header",
-          "title": "Week 11 Monday night inactives: Cincinnati Bengals at Washington Commanders",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvugbuALjanJlLNWHSz8bEatdYczJG78N1SjGwgefB9g48gHdb0Ta1yIf8lAI"
-        },
-        {
-          "url": "https://www.packers.com/news/mike-s-mid-week-chat-nov-24-2026",
-          "title": "Mike's Mid-Week Chat | Nov. 24, 2026",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrlgYGqmvIzp7-CfCJgt7PuuyeLIzsgNKkFs_jlenD7rSgd_-4TcWy2nDkSSk"
-        },
-        {
-          "url": "https://www.nfl.com/videos/dan-campbell-discusses-thanksgiving-day-game-vs-bears",
-          "title": "Detroit Lions head coach Dan Campbell discusses Thanksgiving Day game vs. Chicago Bears",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl_MdP5y9xC2Dxaw4U5C2FwG7QddyUg8kig_fHqRfV82b0llNhn5jD6WOh9Bc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT380pcwRiY5-qEl3IHKEjGT_H_b7kKbHJIHj-WbR9C_0tI3D0LdkCb1SlhS2Q"
         }
       ]
     }
