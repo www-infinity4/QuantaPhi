@@ -3,281 +3,272 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T15:01:14.961497Z",
+  "checked_at": "2026-11-25T15:31:09.881190Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "vix index",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T14:30:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
-        "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-        "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQAl4qNcHVks3Pf6zpVH_nOLlUvYjFnOS2s9AIRXZZ3gY-Sy-k02ZpGY1VZ0",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
-          "title": "Buy the stock dip? Options market signals say wait",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQAl4qNcHVks3Pf6zpVH_nOLlUvYjFnOS2s9AIRXZZ3gY-Sy-k02ZpGY1VZ0"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84"
-        },
-        {
-          "url": "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1",
-          "title": "What the Fear Index Is Telling Us About the Market",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ9tl3VCOtBHKnKOMIyVXg0j-rx9BAyIYupl_y8IR6qq7skOpbg0dhvE9jva4"
-        }
-      ]
-    },
-    {
-      "query": "weatherford aerospace",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T14:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/texas/news/fire-weatherford-aerospace-texas-nov-25/",
-        "https://www.fox4news.com/news/fire-breaks-out-weatherford-aerospace-after-series-explosions",
-        "https://www.wfaa.com/article/news/local/weatherford-explosion-fire-weatherford-aerospace-texas/287-38028d8f-74ae-4628-a211-61a152b39b2b"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTTo8Prp_wfFyNdvAkhNEgZMIeWLqNtdH1_3DGeb6x7HGtDmyv8tMjHpnzs3A",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/texas/news/fire-weatherford-aerospace-texas-nov-25/",
-          "title": "Residents asked to shelter in place as crews respond to fire at Weatherford Aerospace, city officials say",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTTo8Prp_wfFyNdvAkhNEgZMIeWLqNtdH1_3DGeb6x7HGtDmyv8tMjHpnzs3A"
-        },
-        {
-          "url": "https://www.fox4news.com/news/fire-breaks-out-weatherford-aerospace-after-series-explosions",
-          "title": "Fire breaks out at Weatherford Aerospace after series of explosions",
-          "publisher": "FOX 4 News Dallas-Fort Worth",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIgvWSfIMz7vE5P2Fyh_0JI4hDXSxkmQzjUHoUaqBRzOy84VwAAjE6MUmtuc"
-        },
-        {
-          "url": "https://www.wfaa.com/article/news/local/weatherford-explosion-fire-weatherford-aerospace-texas/287-38028d8f-74ae-4628-a211-61a152b39b2b",
-          "title": "Emergency crews respond to a fire at Weatherford Aerospace",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq-gj87sFF8WTedZJEDnRqgmCST9gzkQXcLhhtdHIU68aPUWjyrjfRYUbPtnM"
-        }
-      ]
-    },
-    {
-      "query": "hershey chocolate bars",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T14:20:00Z",
-      "related_news_urls": [
-        "https://www.thehersheycompany.com/en_us/home/newsroom/press-release/2026-11-18-Hersheys-Celebrates-Its-Story-with-Five-Cent-Milk-Chocolate-Bars-Ahead-of-the-HERSHEY-Movie.html",
-        "https://www.tampabay.com/news/business/2026/11/24/hershey-chocolate-5-cents-amazon-walmart/",
-        "https://www.audacy.com/national/news/hersey-is-offering-5-cent-chocolate-bars-and-here-s-how-to-get-yours"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQtLN_sjP9NxjnChBEQ1bhEkcBZ67gByJUPZg4gLA3c_6xJ9JBZg3JxoGzfk",
-      "image_credit": "The Hershey Company",
-      "news": [
-        {
-          "url": "https://www.thehersheycompany.com/en_us/home/newsroom/press-release/2026-11-18-Hersheys-Celebrates-Its-Story-with-Five-Cent-Milk-Chocolate-Bars-Ahead-of-the-HERSHEY-Movie.html",
-          "title": "Hershey's Celebrates Its Story with Five-Cent Milk Chocolate Bars Ahead of the HERSHEY Movie",
-          "publisher": "The Hershey Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQtLN_sjP9NxjnChBEQ1bhEkcBZ67gByJUPZg4gLA3c_6xJ9JBZg3JxoGzfk"
-        },
-        {
-          "url": "https://www.tampabay.com/news/business/2026/11/24/hershey-chocolate-5-cents-amazon-walmart/",
-          "title": "How to get Hershey chocolates for 5 cents on Wednesday",
-          "publisher": "Tampa Bay Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8Go96MqCIRuNgu7AdWD-neENyjZjAhfjJ48jhqby9H2T-PjRT6VVH9F4YdR8"
-        },
-        {
-          "url": "https://www.audacy.com/national/news/hersey-is-offering-5-cent-chocolate-bars-and-here-s-how-to-get-yours",
-          "title": "Hersey is offering 5 cent chocolate bars, and here's how to get yours",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR3I09m0JC6RydrCiS7Me3_6b79IykQUdsiTDpnCD3_J1uze10Il71s3K40BA"
-        }
-      ]
-    },
-    {
-      "query": "salmonella",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T14:20:00Z",
-      "related_news_urls": [
-        "https://bioengineer.org/salmonella-persists-across-broiler-slaughter-stages-despite-significant-processing-reductions/",
-        "https://suaragarut.id/en/salmonella-poultry-control-research",
-        "https://peradaban.id/en/uk-researchers-test-salmonella-phages"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFK63PWLw9QnrfMuS7j1Nn2gLqaMjSVrIns0wgiWzf4dmsP6g1Sf6lrzHwYgU",
-      "image_credit": "Bioengineer.org",
-      "news": [
-        {
-          "url": "https://bioengineer.org/salmonella-persists-across-broiler-slaughter-stages-despite-significant-processing-reductions/",
-          "title": "Salmonella Persists Across Broiler Slaughter Stages Despite Significant Processing Reductions",
-          "publisher": "Bioengineer.org",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFK63PWLw9QnrfMuS7j1Nn2gLqaMjSVrIns0wgiWzf4dmsP6g1Sf6lrzHwYgU"
-        },
-        {
-          "url": "https://suaragarut.id/en/salmonella-poultry-control-research",
-          "title": "Researchers Advance New Methods to Reduce Salmonella in Poultry",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSx3KmtEKYgbwOc5MajwiIHEYiflzXFDVTL0ouiRyX7Jsa0vBSqaBVMiIrWC1g"
-        },
-        {
-          "url": "https://peradaban.id/en/uk-researchers-test-salmonella-phages",
-          "title": "UK Researchers Test Phages Against Drug-Resistant Salmonella",
-          "publisher": "Peradaban.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkR6lWv5yjhVUN6XDKGBeh6cWlklhsIMDvyGRIDGNiaa3JwTjoXZjoeaIh2aE"
-        }
-      ]
-    },
-    {
-      "query": "action thriller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T14:20:00Z",
-      "related_news_urls": [
-        "https://movieweb.com/onslaught-action-thriller-stream-hbo-max-november-2026/",
-        "https://bloody-disgusting.com/home-video/3976457/adam-wingards-onslaught-sets-holiday-streaming-debut/",
-        "https://www.cbr.com/onslaught-hbo-max-streaming-release-date/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ox0ICl-xsn__ARCPPSUvR6n73vXdDClbEO3V7MumFviX_DKSzQYnXb-pbUQ",
-      "image_credit": "MovieWeb",
-      "news": [
-        {
-          "url": "https://movieweb.com/onslaught-action-thriller-stream-hbo-max-november-2026/",
-          "title": "Forget Terminator, 2026's 93-Minute Action Thriller Substitute Officially Sets New Streaming Release",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ox0ICl-xsn__ARCPPSUvR6n73vXdDClbEO3V7MumFviX_DKSzQYnXb-pbUQ"
-        },
-        {
-          "url": "https://bloody-disgusting.com/home-video/3976457/adam-wingards-onslaught-sets-holiday-streaming-debut/",
-          "title": "Adam Wingard’s ‘Onslaught’ Sets Holiday Streaming Debut",
-          "publisher": "Bloody Disgusting",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://www.cbr.com/onslaught-hbo-max-streaming-release-date/",
-          "title": "HBO Max Sets Streaming Release Date for R-Rated Sci-Fi 'Love Letter to John Carpenter'",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw-LjlqtiSPY5-Fp24_YV1O8uHnWYrU5xtyK5whfZcBGH3BJhcMi8TcRrYoNc"
-        }
-      ]
-    },
-    {
-      "query": "john stamos",
+      "query": "voo stock",
       "approx_searches": "1000+",
-      "published_at": "2026-11-25T14:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "is stock market open today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T14:10:00Z",
+      "published_at": "2026-11-25T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
-        "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026"
+        "https://finance.yahoo.com/markets/stocks/articles/voo-heading-record-2026-140-193502189.html",
+        "https://www.benzinga.com/news/26/11/63567022/1000-invested-state-street-spdr-portfolio-s-p-500-growth-etf-15-years-ago-would-be-worth-much-today",
+        "https://pluang.com/en/news-feed/apakah-investasi-di-etf-sp-500-cukup-pendapat-jujur"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SgM0kuscDJroqrTLyHWntNT1HXPihlLuOtyASI4Ks_Ewlb5hHcCDJVMQIQM",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-          "title": "Is the stock market open on Thanksgiving and Black Friday?",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/voo-heading-record-2026-140-193502189.html",
+          "title": "VOO Is Heading for a Record Year in 2026: $140 Billion of Inflows (So Far)",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SgM0kuscDJroqrTLyHWntNT1HXPihlLuOtyASI4Ks_Ewlb5hHcCDJVMQIQM"
         },
         {
-          "url": "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
-          "title": "NYSE and Nasdaq Close Early on Black Friday",
-          "publisher": "bsinews.id",
+          "url": "https://www.benzinga.com/news/26/11/63567022/1000-invested-state-street-spdr-portfolio-s-p-500-growth-etf-15-years-ago-would-be-worth-much-today",
+          "title": "$1000 Invested In State Street SPDR Portfolio S&P 500 Growth ETF 15 Years Ago Would Be Worth This Much To",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCspxNj4oVIp6-nxGHAHbn81YSTzQ2OWXexg2fWGAHy1HDHIob92vZcwWSPc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LjkTI5A-Uwv4H5fexFYUqvDbfgmaUf6kx_86avQhl50af-x8Gdg3-9qhSpo"
         },
         {
-          "url": "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
-          "title": "US Public Holiday Trading Hours Adjustment Notice | 26 Nov 2026",
-          "publisher": "EBC Financial Group",
+          "url": "https://pluang.com/en/news-feed/apakah-investasi-di-etf-sp-500-cukup-pendapat-jujur",
+          "title": "S&P 500 ETFs offer broad market exposure, but a...",
+          "publisher": "Pluang",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDw47nDCE7q_HwW1a7A_F66g508QPiiT-Rrq5XxcO5xYkSfaArj6swjcfF18"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfVElLtynDpC8ZiyxyvwBkyuC_1mcswgQVlCiZbCA0ZW9rso3EjpgOYed9jiQ"
         }
       ]
     },
     {
-      "query": "tell me more about the recent federal crackdown on international cyber scam networks.",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T14:10:00Z",
+      "query": "november beaver moon supermoon",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T15:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/doj-announces-largest-anti-scam-013718375.html",
-        "https://www.c-span.org/event/news-conference/attorney-general-todd-blanche-announces-justice-department-crackdown-on-cyber-enabled-scams/449864",
-        "https://www.wmbfnews.com/2026/11/24/prosecutors-highlight-three-sc-fraud-cases-including-myrtle-beach-case-anti-scam-effort/"
+        "https://www.bostonglobe.com/2026/11/25/metro/beaver-supermoon-photos-peak/",
+        "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
+        "https://www.space.com/stargazing/novembers-full-moon-dazzles-skywatchers-with-a-stunning-beaver-moon-supermoon-photos-nov-24-2026"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBMGCzfsnwSd9i9rCwmp5sESqeoFZEWYa9pB6n8t33SbxiJKoi1E6vINH_sIo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRncFBHWzyJRGwY2VDqdsqTqMXTGt4v6g7ZjXT1wWShdL3UgulY4n3EiqAYkw8",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/25/metro/beaver-supermoon-photos-peak/",
+          "title": "See photos of the Beaver Supermoon shining bright in the night sky",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRncFBHWzyJRGwY2VDqdsqTqMXTGt4v6g7ZjXT1wWShdL3UgulY4n3EiqAYkw8"
+        },
+        {
+          "url": "https://www.forbes.com/sites/jamiecartereurope/2026/11/23/supermoon-meets-the-seven-sisters-the-night-sky-this-week/",
+          "title": "A Supermoon Is About To Meet The ‘Seven Sisters’ In The Night Sky",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_2LpBm3gW2zcn8bppZLXxL4OFnpbau2xz1p5xZsw2kvtPX6F3Quyz8uwk4n8"
+        },
+        {
+          "url": "https://www.space.com/stargazing/novembers-full-moon-dazzles-skywatchers-with-a-stunning-beaver-moon-supermoon-photos-nov-24-2026",
+          "title": "November's full moon dazzles skywatchers with a stunning Beaver Moon supermoon (photos)",
+          "publisher": "Space",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNic4tjufG5vAFFKTHvK9aYeitWFhBT9Mmvxz1nQvyvwW2EaSN42jCp-nqs9Y"
+        }
+      ]
+    },
+    {
+      "query": "schd",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/dividend-etf-paid-77-monthly-140356630.html",
+        "https://pluang.com/en/news-feed/kebanyakan-saham-dividen-bayar-per-kuartal-3-etf-ini-jadikan-bulanan",
+        "https://247wallst.com/investing/etf/2026/11/20/most-dividend-stocks-pay-quarterly-these-3-etfs-turn-them-into-a-monthly-check/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ80NTJDdLpXGLgaiM2563b-ohWNK95VBNRNhmbJiY6WQelI1zCMCJYrxf3T_M",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/dividend-etf-paid-77-monthly-140356630.html",
+          "title": "This Dividend ETF Has Paid 77 Monthly Checks in a Row. 2 More to Pair With It for Retirement",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ80NTJDdLpXGLgaiM2563b-ohWNK95VBNRNhmbJiY6WQelI1zCMCJYrxf3T_M"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/kebanyakan-saham-dividen-bayar-per-kuartal-3-etf-ini-jadikan-bulanan",
+          "title": "These 3 ETFs convert quarterly dividends into m...",
+          "publisher": "Pluang",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEnL0lyTTXx9-Dog6axB5xTg9V8RjcsEgcAxG9O88pdhFEKVrYZkyDbWJUJfQ"
+        },
+        {
+          "url": "https://247wallst.com/investing/etf/2026/11/20/most-dividend-stocks-pay-quarterly-these-3-etfs-turn-them-into-a-monthly-check/",
+          "title": "Most Dividend Stocks Pay Quarterly. These 3 ETFs Turn Them Into a Monthly Check",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3E6kNWSwYRzWnIAir8huHTuc6xwluT6I5sZam5INl9WPrdnyKnxJZhRxMiV4"
+        }
+      ]
+    },
+    {
+      "query": "jenna bush hager",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T15:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenna-bush-hager-says-parents-164419208.html",
+        "https://ew.com/jenna-bush-hager-reveals-weird-thing-she-did-on-toilet-as-child-12274580",
+        "https://pagesix.com/2026/11/21/entertainment/jenna-bush-hager-reveals-bizarre-childhood-toilet-habit-that-left-george-w-and-laura-bush-worried/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS516KFwWjJyy8lXszKTwkmAigkheBxAITUvXbRTvantnbEJev0BZQ5sNY_XOM",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/us/articles/doj-announces-largest-anti-scam-013718375.html",
-          "title": "DOJ Announces Largest Anti-Scam Surge in History",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jenna-bush-hager-says-parents-164419208.html",
+          "title": "Jenna Bush Hager Says Parents George W. and Laura Bush Were “Worried” by Weird Childhood Bathroom Habit",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBMGCzfsnwSd9i9rCwmp5sESqeoFZEWYa9pB6n8t33SbxiJKoi1E6vINH_sIo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS516KFwWjJyy8lXszKTwkmAigkheBxAITUvXbRTvantnbEJev0BZQ5sNY_XOM"
         },
         {
-          "url": "https://www.c-span.org/event/news-conference/attorney-general-todd-blanche-announces-justice-department-crackdown-on-cyber-enabled-scams/449864",
-          "title": "Attorney General Todd Blanche Announces Justice Department Crackdown on Cyber-Enabled Scams",
-          "publisher": "C-SPAN",
+          "url": "https://ew.com/jenna-bush-hager-reveals-weird-thing-she-did-on-toilet-as-child-12274580",
+          "title": "Jenna Bush Hager reveals the weird thing she did on the toilet as a child",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqHhXWiJ8oqKhf9UtstocsQ8NIBMTyUcLjsB6Wop2VegIpv_zshwApoRB40I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTtI4JR5QDJVOqlaDpY3mnPQOysVg6ZGnQxf4iB53AT675L0PFMOSaHF7-Br8A"
         },
         {
-          "url": "https://www.wmbfnews.com/2026/11/24/prosecutors-highlight-three-sc-fraud-cases-including-myrtle-beach-case-anti-scam-effort/",
-          "title": "Prosecutors highlight three SC fraud cases, including Myrtle Beach case, in anti-scam effort",
-          "publisher": "WMBF",
+          "url": "https://pagesix.com/2026/11/21/entertainment/jenna-bush-hager-reveals-bizarre-childhood-toilet-habit-that-left-george-w-and-laura-bush-worried/",
+          "title": "Jenna Bush Hager reveals strange childhood toilet habit that left George W. and Laura Bush ‘worried’",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTMG1KihUQFQFbr-bfjyDf7VSvOyyGvyvFxMKUXGBCuEcnJhJUifP3Rsx6nTM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJC0G_-qaVu32a2xzFJuhg90BQJV236OQnuPP3rYyMfkqp-MhY0brgh4bFRx8"
         }
       ]
     },
     {
-      "query": "is the stock market open today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T14:00:00Z",
+      "query": "soxl stock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T15:00:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
-        "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/",
-        "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html"
+        "https://www.tokenpost.com/news/investing/62509",
+        "https://suaragarut.id/en/soxl-onchain-stock-premium-november-23",
+        "https://www.tokenpost.com/news/investing/62460"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqbl8C1coLNZbM5-gmH3C5tV3zY-4FFz4h9QgHaAuuj7-hUR1fJ6JwP0iy14",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOFWR-rYrycfbAsLdONUrlAvqy_nuHsKmjUucUd8r28RJa-NeY8qliPnwPJE",
+      "image_credit": "TOKENPOST",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
-          "title": "Does the Nvidia-led rip mark the market bottom? Maybe not",
-          "publisher": "CNBC",
+          "url": "https://www.tokenpost.com/news/investing/62509",
+          "title": "On-chain stock futures: SOXL trades 13.68% below cash close",
+          "publisher": "TOKENPOST",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqbl8C1coLNZbM5-gmH3C5tV3zY-4FFz4h9QgHaAuuj7-hUR1fJ6JwP0iy14"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcOFWR-rYrycfbAsLdONUrlAvqy_nuHsKmjUucUd8r28RJa-NeY8qliPnwPJE"
+        },
+        {
+          "url": "https://suaragarut.id/en/soxl-onchain-stock-premium-november-23",
+          "title": "SOXL Leads On-Chain Stocks With 17.39 Percent Premium",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLla7MbEK9qbi21qHjfNXRO1tyC2hy_cC7haVb4DS8FV8QfwulAjNDiGUQBN4"
+        },
+        {
+          "url": "https://www.tokenpost.com/news/investing/62460",
+          "title": "On-chain stock futures: SOXL trades 10.09% below regular-session close",
+          "publisher": "TOKENPOST",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP8YizK2fxs-cEewzDYsai8QoaDjzSbULBt4IA8i9c6x4V_n1-2neg5mosUDQ"
+        }
+      ]
+    },
+    {
+      "query": "schd stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/options/articles/own-schd-why-own-7-132201246.html",
+        "https://247wallst.com/investing/etf/2026/11/23/3-dividend-etfs-retirees-can-buy-before-the-end-of-november-for-hands-off-income/",
+        "https://seekingalpha.com/article/4971746-schd-still-a-solid-income-play-but-getting-pricier-downgrade"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8FZFpvJNpweweFVTWfI63Ity5qRby4Me-dgaibNaacX90S1AFMqdFQ362AYU",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/options/articles/own-schd-why-own-7-132201246.html",
+          "title": "I Own SCHD. Here’s Why I Also Own This 7%-Yielding Income ETF.",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8FZFpvJNpweweFVTWfI63Ity5qRby4Me-dgaibNaacX90S1AFMqdFQ362AYU"
+        },
+        {
+          "url": "https://247wallst.com/investing/etf/2026/11/23/3-dividend-etfs-retirees-can-buy-before-the-end-of-november-for-hands-off-income/",
+          "title": "3 Dividend ETFs Retirees Can Buy Before the End of November for Hands-Off Income",
+          "publisher": "24/7 Wall St.",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXRtmuHcdrGIXW9B6wxGBHemHu_vAvr32Q7bvqCULbyG3cJaWLKAoj_KKffp4"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4971746-schd-still-a-solid-income-play-but-getting-pricier-downgrade",
+          "title": "SCHD: Still A Solid Income Play, But Getting Pricier (Rating Downgrade) (NYSEARCA:SCHD)",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzDzVXZeb54y639fJucMXSIZ-4a5rDQQuVoSPEJv9P6uJIm829NlwEWBMueTM"
+        }
+      ]
+    },
+    {
+      "query": "mstr stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-stock-trades-discount-020908385.html",
+        "https://www.bloomberg.com/news/articles/2026-11-23/strategy-mstr-enterprise-value-falls-below-its-851-305-btc-holding",
+        "https://beincrypto.com/bitcoin-crash-microstrategy-457-btc-strc/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4XLnXhWCeWMrUDMR6Jou-FFyOZtP40vkSXZ2Z9scD1kvXP5WMYRGljmQbqEM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/strategy-mstr-stock-trades-discount-020908385.html",
+          "title": "Strategy (MSTR) Stock Trades At A Discount To Book Value",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4XLnXhWCeWMrUDMR6Jou-FFyOZtP40vkSXZ2Z9scD1kvXP5WMYRGljmQbqEM"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-23/strategy-mstr-enterprise-value-falls-below-its-851-305-btc-holding",
+          "title": "Strategy’s Value Falls Below Its Bitcoin Holdings in Latest Stumble for Founder",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyQY3TF3MIWKkzGm81i4cNbPbsCdwYzmi9N2zlZ9oGTdXLvxBOEZBgAmQS2f0"
+        },
+        {
+          "url": "https://beincrypto.com/bitcoin-crash-microstrategy-457-btc-strc/",
+          "title": "Bitcoin Crashed to $55,000 and MicroStrategy Bought Only 457 BTC. Why?",
+          "publisher": "BeInCrypto",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_53WgdThqsB5R8sGib2-zvZxyQd296TlaEqbSvDSyIGY65nTGh-9JjG67hbs"
+        }
+      ]
+    },
+    {
+      "query": "qqq stock",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T14:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
+        "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/",
+        "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-huang-relief-rally-fades-9fa9750a"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8-wmci2YAhFWvWJwDsLc67GUIw77C2zWnNEOeQnISUxfE09aTbGx3v4EPz80",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq post best day since April 2025 as Nvidia stock soars 31% on Jensen Huang's return",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8-wmci2YAhFWvWJwDsLc67GUIw77C2zWnNEOeQnISUxfE09aTbGx3v4EPz80"
         },
         {
           "url": "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/",
@@ -287,46 +278,81 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxyGYZfq-8vqPGZxr5lcVrK49iZcnmbsbZCnwlH8U0ZRkzVNzDJ2ircDToXHc"
         },
         {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq post best day since April 2025 as Nvidia stock soars 31% on Jensen Huang's return",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-huang-relief-rally-fades-9fa9750a",
+          "title": "U.S. Stocks Mixed as Huang Relief Rally Fades",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8-wmci2YAhFWvWJwDsLc67GUIw77C2zWnNEOeQnISUxfE09aTbGx3v4EPz80"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRY82ks7kgqmoMpKFV4iPEbpmK4l9_p7CvuKEnJd3lYe4xjmAxQMHhmHnID9gQ"
         }
       ]
     },
     {
-      "query": "keltie knight",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:50:00Z",
+      "query": "why is the stock market down today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T14:50:00Z",
       "related_news_urls": [
-        "https://fashionweekdaily.com/keltie-knight-celebrates-upcoming-book-launch-with-star-studded-wellness-event-at-the-pearl/",
-        "https://demokratis.co.id/en/keltie-knight-book-rejection-self-worth",
-        "https://variety.com/2026/tv/news/keltie-knight-superfan-new-book-f-them-theory-1236952695/"
+        "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html",
+        "https://www.cnn.com/2026/11/25/business/ai-sell-off-despite-huang-nvidia-return",
+        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-AcTyEXwYs45FIMEx6JIEN_IOvIP9kd1CEg1w9ozp4uEgeW4wcNQtzWSQSrI",
-      "image_credit": "Daily Front Row",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2QjiWV8uFLxLSApifvR6eo9KUBdiZ3AGJBpz_THdJzoXPNPM5Jnr7b77yJk",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://fashionweekdaily.com/keltie-knight-celebrates-upcoming-book-launch-with-star-studded-wellness-event-at-the-pearl/",
-          "title": "Keltie Knight Celebrates Upcoming Book Launch With Star-Studded Wellness Event at The Pearl",
-          "publisher": "Daily Front Row",
+          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html",
+          "title": "Dow tumbles 700 points, Nasdaq loses 3% as Nvidia leads resumption of AI sell-off: Live updates",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-AcTyEXwYs45FIMEx6JIEN_IOvIP9kd1CEg1w9ozp4uEgeW4wcNQtzWSQSrI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2QjiWV8uFLxLSApifvR6eo9KUBdiZ3AGJBpz_THdJzoXPNPM5Jnr7b77yJk"
         },
         {
-          "url": "https://demokratis.co.id/en/keltie-knight-book-rejection-self-worth",
-          "title": "Keltie Knight Releases Book on Rejection and Self Worth",
-          "publisher": "Demokratis.co.id",
+          "url": "https://www.cnn.com/2026/11/25/business/ai-sell-off-despite-huang-nvidia-return",
+          "title": "Tech stock selloff deepens as AI fears outweigh Huang’s Nvidia return | CNN Business",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkcJmOvLgmB1zoe8P7kyyLvyLEjh3sYz7Iv5x-hSxKBvDsEdyLfQ7vI-p9js"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGZplMmLpEJTPnO1iqWMuKHC5g_dvW_BNcghEl7J-Nce9gPqweht8TvXBFf8A"
         },
         {
-          "url": "https://variety.com/2026/tv/news/keltie-knight-superfan-new-book-f-them-theory-1236952695/",
-          "title": "How TV Personality Keltie Knight Turned a Reality Show Flop Into a Masterclass in Redirection (EXCLUSIVE)",
-          "publisher": "Variety",
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq sink on hot inflation, new Trump tariffs as chip rout continues",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaNmcLiZv5fvUAiiazC7P7UA1auNHEH01mPeI_3J3htaN3_WgavcXxl4dcQ3Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE"
+        }
+      ]
+    },
+    {
+      "query": "why is the market down today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T14:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
+        "https://finance.yahoo.com/markets/article/the-2-trillion-chip-rally-is-getting-wiped-out--heres-what-history-says-comes-next-145306996.html",
+        "https://news.sbs.co.kr/english/article.do?news_id=N1008863569"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
+          "title": "Stock Market Today: Tech-Led Slide Deepens as Confidence in AI Trade Weakens",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/article/the-2-trillion-chip-rally-is-getting-wiped-out--heres-what-history-says-comes-next-145306996.html",
+          "title": "The $2 trillion chip rally is getting wiped out — here's what history says comes next",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYCnn5xeTjAR_2RA-cV8WIurXCh_l_El8MsrZ7MvgiW3Jo-690Ccn4obWYx6I"
+        },
+        {
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008863569",
+          "title": "Jensen Huang Effect Lasts Only a Day... KOSPI Plummets Below 4,700",
+          "publisher": "SBS 뉴스",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPkGDTtBQ_FZqARVhkpE0OfrPpIzxliMFf4ikSQBcilC1lusmu1ZuGExEEdp4"
         }
       ]
     }
