@@ -3,13 +3,328 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T00:01:41.669775Z",
+  "checked_at": "2026-11-25T00:46:05.968787Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ohio state basketball",
+      "query": "clashing through the snow 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T00:30:00Z",
+      "related_news_urls": [
+        "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+        "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908",
+        "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg",
+      "image_credit": "ABC10",
+      "news": [
+        {
+          "url": "https://www.abc10.com/article/entertainment/in-the-spotlight/clashing-through-the-snow-michelle-randolph-christopher-briney-interview-holiday-romantic-comedy-amazon-prime-video/507-3fa70130-dd5d-4dcb-9820-dccf32e3d260",
+          "title": "'Clashing Through the Snow' co-stars, director preview holiday romantic comedy",
+          "publisher": "ABC10",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGlsQuEoWyPWyKjQ2L5slVE-3DIb05iDwvd279t-TvJShLRFENTz4bv5I6nDg"
+        },
+        {
+          "url": "https://www.today.com/popculture/movies/christopher-briney-magic-trick-today-jenna-sheinelle-reaction-rcna610908",
+          "title": "Christopher Briney Shocks Jenna and Sheinelle With a Magic Trick on TODAY: ‘What?!’",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRcf-eBZ7b_MMJAzF571NS6U0B7FeqdxiePZBzMDihOBwsv0KUa-ipaYF1jvM"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/23/clashing-through-the-snow-review-amazon",
+          "title": "Clashing Through the Snow review – Amazon’s Christmas romcom is a bust",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBxe5TnZlJAtlkanq_OqUUg2veUrvNmrqIRBBU3FfLReTM6ygDRF5tYkC3e8o"
+        }
+      ]
+    },
+    {
+      "query": "sec volleyball tournament",
       "approx_searches": "1000+",
-      "published_at": "2026-11-24T23:40:00Z",
+      "published_at": "2026-11-25T00:30:00Z",
+      "related_news_urls": [
+        "https://georgiadogs.com/news/2026/11/23/volleyball-georgia-punches-ticket-to-sec-tournament-championship-down-lady-vols-3-2",
+        "https://www.ajc.com/news/2026/11/sec-womens-volleyball-championship-takes-hold-in-savannah/",
+        "https://sports.yahoo.com/college-sports/articles/only-3-uga-volleyball-coach-231913033.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-BchxITgHEjugx1QiVg3gTYKLbHMslrUX3wcBuLSRfd2raItZECMbiwdkfQ",
+      "image_credit": "University of Georgia Athletics",
+      "news": [
+        {
+          "url": "https://georgiadogs.com/news/2026/11/23/volleyball-georgia-punches-ticket-to-sec-tournament-championship-down-lady-vols-3-2",
+          "title": "University of Georgia",
+          "publisher": "University of Georgia Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM-BchxITgHEjugx1QiVg3gTYKLbHMslrUX3wcBuLSRfd2raItZECMbiwdkfQ"
+        },
+        {
+          "url": "https://www.ajc.com/news/2026/11/sec-womens-volleyball-championship-takes-hold-in-savannah/",
+          "title": "As sun sets on SEC football title game, volleyball rises in its place",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3VpmxUXVApJPJ9wcT7bttvcjaG-R4QDKjVLuBD-rJi0leoOktgDwmj6b1Xsc"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-sports/articles/only-3-uga-volleyball-coach-231913033.html",
+          "title": "Only on 3: UGA volleyball coach says, ‘100%’ team has done enough to secure NCAA bid",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWgRU1qGHDQtkGT29lHHmALsiaO8tjIDzLeNiFYN_8ryd7WNbBrNO0_Yqe-W0"
+        }
+      ]
+    },
+    {
+      "query": "tristan da silva",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T00:20:00Z",
+      "related_news_urls": [
+        "https://orlandomagic.com/news/magic-four-point-play-follow-up-at-wizards-20261123",
+        "https://www.winchesterstar.com/davis/image_ee5336d5-24e1-5c5f-befb-c0787dfeee01.html",
+        "https://sports.yahoo.com/articles/wizards-vs-magic-discussion-230000176.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7oFgO1GlwrjyoBoDXcjPz1hB88SKHcRj-JeYD5L3RMDQmqAJ50Qiro1fhZNo",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://orlandomagic.com/news/magic-four-point-play-follow-up-at-wizards-20261123",
+          "title": "Magic Four-Point Play: Follow-Up at Wizards",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7oFgO1GlwrjyoBoDXcjPz1hB88SKHcRj-JeYD5L3RMDQmqAJ50Qiro1fhZNo"
+        },
+        {
+          "url": "https://www.winchesterstar.com/davis/image_ee5336d5-24e1-5c5f-befb-c0787dfeee01.html",
+          "title": "Davis",
+          "publisher": "The Winchester Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlrg9kyrKwUkh52TNQSb391kqp12iKVqtu6fqiqY2Bn_t_o1OyE1iExL0Um8"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/wizards-vs-magic-discussion-230000176.html",
+          "title": "Wizards vs Magic Discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUmOWbZm9_lfWdjXsP2fAbSN5HshNzOrhvahFI9o7Y5mEVsO9V1qj01PBqmk"
+        }
+      ]
+    },
+    {
+      "query": "golden knights vs oilers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50575154/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+        "https://www.nhl.com/news/mark-stone-epitome-of-being-a-vegas-golden-knights-captain",
+        "https://www.nytimes.com/athletic/7809623/2026/11/24/golden-knights-vs-oilers-stream-how-to-watch-nov-24/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BjB49LKAa0zkGkePM9bEp3irqcbMeP1AD-SkpBCXww7wpukmvUB0t4sueq0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50575154/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+          "title": "NHL Tonight: Golden Knights-Oilers takes center stage on Tuesday",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BjB49LKAa0zkGkePM9bEp3irqcbMeP1AD-SkpBCXww7wpukmvUB0t4sueq0"
+        },
+        {
+          "url": "https://www.nhl.com/news/mark-stone-epitome-of-being-a-vegas-golden-knights-captain",
+          "title": "Stone 'epitome of being a Golden Knight' ahead of key division game at Oilers",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy9vuQDiqtAVQ-tiiQTd0lHA0PtcWA8tMUgvht_t2rgQbF0nUvfvo2TFcJxko"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7809623/2026/11/24/golden-knights-vs-oilers-stream-how-to-watch-nov-24/",
+          "title": "How to watch Golden Knights vs. Oilers: TV channel and streaming options for November 24",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQR8YldA7S_pRvWIcAJayf0lFp2fjeYI0KiVG3aOfPYqo3Ol6s4scO8NjC60mc"
+        }
+      ]
+    },
+    {
+      "query": "phony show",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66125859/?ref_=int_nwr_3",
+        "https://www.vulture.com/article/phony-tv-series-mystery-storytelling-clues.html",
+        "https://collider.com/hulu-phony-mystery-series-binge-watch/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbk6pnjmJSsLlF7ek3LSrSvJWrAHsfhfjChEyKyuwN0Kp5A5V3cOhldlVvuU",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66125859/?ref_=int_nwr_3",
+          "title": "‘Phony’ Episode 8 Release Date, Time and Where to Watch the Finale",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXbk6pnjmJSsLlF7ek3LSrSvJWrAHsfhfjChEyKyuwN0Kp5A5V3cOhldlVvuU"
+        },
+        {
+          "url": "https://www.vulture.com/article/phony-tv-series-mystery-storytelling-clues.html",
+          "title": "Phony Keeps Moving Forward",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRI0awP8JBrA0u6KFzL0eq5Ufta3dKdrbtVASZFYiSImzmdEjp3YiyUTuhPRI"
+        },
+        {
+          "url": "https://collider.com/hulu-phony-mystery-series-binge-watch/",
+          "title": "Hulu’s 8-Part Mystery Series Feels Like It Was Made To Be Binged",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXdoKl6HEpuZB53bEfPx1tzBXRt6KmSLGxHAnsX_XhWeJWji1GW3YV1HdHbXU"
+        }
+      ]
+    },
+    {
+      "query": "ncaa volleyball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/volleyball-women/article/2026-11-21/2026-dii-womens-volleyball-championship-bracket-schedule-scores",
+        "https://www.espn.com/college-sports/story/_/id/50513460/2026-ncaa-womens-volleyball-bracketology-top-seedings",
+        "https://www.ncaa.org/news/more-than-a-moment-how-womens-college-volleyball-reached-new-heights/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT656_57VER-_PvRL6Q0508Yte-tFB5SLYJE1aIEtg0-7W2w6ln2iu1u0nBEXA",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/volleyball-women/article/2026-11-21/2026-dii-womens-volleyball-championship-bracket-schedule-scores",
+          "title": "2026 DII women’s volleyball championship: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT656_57VER-_PvRL6Q0508Yte-tFB5SLYJE1aIEtg0-7W2w6ln2iu1u0nBEXA"
+        },
+        {
+          "url": "https://www.espn.com/college-sports/story/_/id/50513460/2026-ncaa-womens-volleyball-bracketology-top-seedings",
+          "title": "Women's college volleyball Bracketology: 2026 NCAA tournament predictions",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDVob_MwVJ8SZyuqdG1kDDSAuyRYH7xd1gGI2lkv_IufgUwjo41wZeA9WgRqY"
+        },
+        {
+          "url": "https://www.ncaa.org/news/more-than-a-moment-how-womens-college-volleyball-reached-new-heights/",
+          "title": "More than a moment: How women’s college volleyball reached new heights",
+          "publisher": "NCAA.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2X6-yPypyRNWPoA7qVwXTeAkYkjoUdDZFqL2jFLhwF9Uw6aPi9PGVDSYzREw"
+        }
+      ]
+    },
+    {
+      "query": "nba starting lineups",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T00:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401910036",
+        "https://dailymemphian.com/article/68862/ty-jerome-gives-memphis-grizzlies-confidence-boost",
+        "https://sports.yahoo.com/articles/hornets-rookie-breakout-headlines-two-162909976.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiwOANh0EU9_ZYq7iNf1pEwvDX7BFVQerWkgEQmWMPpx9JFdqu5xC-u1Z80tM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401910036",
+          "title": "Grizzlies 117-111 Hornets (Nov 23, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiwOANh0EU9_ZYq7iNf1pEwvDX7BFVQerWkgEQmWMPpx9JFdqu5xC-u1Z80tM"
+        },
+        {
+          "url": "https://dailymemphian.com/article/68862/ty-jerome-gives-memphis-grizzlies-confidence-boost",
+          "title": "Ty Jerome gives Grizzlies confidence boost in win at Charlotte",
+          "publisher": "Daily Memphian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFgOgw49FtIT2WNXZn8FdEqIkvKDu_4t-9YKBo8X9-UG0Q7HYaP5zmqwzZXd0"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/hornets-rookie-breakout-headlines-two-162909976.html",
+          "title": "Hornets' Rookie Breakout Headlines Two Studs and a Dud After Loss to Grizzlies",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbpkPRjJ7q_WEnuzVJCT9PLaaj3l_IvqR2CBjmPtAZfgqF1JXG7YNR9szfVO8"
+        }
+      ]
+    },
+    {
+      "query": "celtics vs wizards",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T00:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/boston-celtics-11-6-washington-220000301.html",
+        "https://sports.yahoo.com/nba/articles/final-injury-report-celtics-wizards-210000744.html",
+        "https://www.cbssports.com/betting/news/celtics-wizards-prediction-odds-time-2026-nba-cup-picks-best-bets-tuesday-november-24/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_NWUlrHfuxexNyw4E9GnIJ4RrMP9askYIn4dF62qaC3cbH7qK4VUgfWKSOlU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/boston-celtics-11-6-washington-220000301.html",
+          "title": "Boston Celtics (11-6) at Washington Wizards (7-11) Game #18 11/24/26",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_NWUlrHfuxexNyw4E9GnIJ4RrMP9askYIn4dF62qaC3cbH7qK4VUgfWKSOlU"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/final-injury-report-celtics-wizards-210000744.html",
+          "title": "Final Injury Report for Celtics-Wizards: Will Paul George, Mitchell Robinson Play?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8YqnNuWfU7FdsQ78fWzAiCE9wHLBX9jKE3T2NWBCO7wrswwcgLeRrw98BCoU"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/celtics-wizards-prediction-odds-time-2026-nba-cup-picks-best-bets-tuesday-november-24/",
+          "title": "Celtics vs. Wizards prediction, odds, time: 2026 NBA Cup picks for Tuesday, Nov. 24 from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT59H5d7y9Ir5vZ6SNB6oIfqC3qHymfON68TFMjo-LCVsdkdecjcY92jgUuNCM"
+        }
+      ]
+    },
+    {
+      "query": "jacksonville vs indiana",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T00:00:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/college/indiana/2026/11/24/indiana-basketball-score-jacksonville-player-stats-start-time-where-to-watch-b1g-streams-iu-radio--live/92939693007/",
+        "https://www.insidethehall.com/2026/11/23/game-7-iu-basketball-vs-jacksonville-preview/",
+        "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-no-23-indiana-vs-jacksonsville-293241116/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgwQgx129u25vKnIkzuEFl7E8dW8j34x5qS0EYvC8sc2V8-f9VM-XmQNRkyxc",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/college/indiana/2026/11/24/indiana-basketball-score-jacksonville-player-stats-start-time-where-to-watch-b1g-streams-iu-radio--live/92939693007/",
+          "title": "Jacksonville-Indiana basketball score tonight: Where to watch live, start time, player stats",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgwQgx129u25vKnIkzuEFl7E8dW8j34x5qS0EYvC8sc2V8-f9VM-XmQNRkyxc"
+        },
+        {
+          "url": "https://www.insidethehall.com/2026/11/23/game-7-iu-basketball-vs-jacksonville-preview/",
+          "title": "Game 7: IU basketball vs. Jacksonville preview",
+          "publisher": "Inside the Hall",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReZdTBjVFYcOnxbzuq3r9qDimZUjPyQZM_-w2lSwa0_nPAObhCjkH9O_3zKjE"
+        },
+        {
+          "url": "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-no-23-indiana-vs-jacksonsville-293241116/",
+          "title": "Scouting report & preview: No. 23 Indiana vs. Jacksonsville",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFXXVeUKYhaeX21aGprmC-7QmPciU2ZMIEq7y4zR7qIkOJWohg32RL4VN7ea8"
+        }
+      ]
+    },
+    {
+      "query": "vanderbilt vs ohio state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T00:00:00Z",
       "related_news_urls": [
         "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-michigan-wolverines-the-game-ryan-day-kyle-whittingham--293256335/",
         "https://sports.yahoo.com/mens-college-basketball/articles/game-7-vanderbilt-commodores-ohio-233000387.html",
@@ -38,305 +353,6 @@
           "publisher": "Cleveland.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwYshLK7fzUPg7pdkdO_j0buwWJivXZtf8phVyBcQFTwojKo12jXfhN1SX1Ao"
-        }
-      ]
-    },
-    {
-      "query": "cooper flagg stats",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T23:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/betting/articles/mmbets-game-week-mavs-nuggets-205705032.html",
-        "https://www.9news.com/article/sports/nba/denver-nuggets/nuggets-vs-mavericks-how-to-watch-the-nba-cup-game-on-tuesday/73-ef398357-166e-4f7b-8950-ce63a6615d76",
-        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-mavericks-vs-nuggets-louisville-vs-texas-tech-and-more/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3NJu_5aTquS9Grnfwy-PUDFAQTAatRZ0RW86qs_fR8ayCtVoetZrRf5lMlDA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/betting/articles/mmbets-game-week-mavs-nuggets-205705032.html",
-          "title": "MMBets Game of the Week: Mavs and Nuggets battle for Group A supremacy",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3NJu_5aTquS9Grnfwy-PUDFAQTAatRZ0RW86qs_fR8ayCtVoetZrRf5lMlDA"
-        },
-        {
-          "url": "https://www.9news.com/article/sports/nba/denver-nuggets/nuggets-vs-mavericks-how-to-watch-the-nba-cup-game-on-tuesday/73-ef398357-166e-4f7b-8950-ce63a6615d76",
-          "title": "Nuggets vs. Mavericks: How to watch the NBA Cup game on Tuesday",
-          "publisher": "9NEWS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5-dgqKWSyRLcswd9HkQprXx84n7ifqC4-aPZTJ0cH9GW6jEejtFUwgU3IrVU"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-mavericks-vs-nuggets-louisville-vs-texas-tech-and-more/",
-          "title": "Today's top games to watch, best bets, odds: Mavericks vs. Nuggets, Louisville vs. Texas Tech and more",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMYdzJOY9Cbys-g1PXtj_mOjE-KT1bMHNfhtvPBi858MddpxH2swGHHp7iHH4"
-        }
-      ]
-    },
-    {
-      "query": "david muir",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T23:40:00Z",
-      "related_news_urls": [
-        "https://www.hellomagazine.com/us/936733/david-muir-glimpse-lake-house/",
-        "https://sports.yahoo.com/nfl/article/the-nfl-is-taking-over-thanksgiving-but-how-much-football-is-too-much-football-142940475.html",
-        "https://www.smithsonianmag.com/history/why-thanksgiving-football-emerged-as-an-american-tradition-in-the-aftermath-of-the-civil-war-180989897/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhhYWabD23zainqox7-RrQpLB_RFBVUZaCkc3uNz2FfP4aBJM11E_zWgcaNA",
-      "image_credit": "HELLO!",
-      "news": [
-        {
-          "url": "https://www.hellomagazine.com/us/936733/david-muir-glimpse-lake-house/",
-          "title": "David Muir's photo from $7 million lake house in upstate New York impresses fans",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhhYWabD23zainqox7-RrQpLB_RFBVUZaCkc3uNz2FfP4aBJM11E_zWgcaNA"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/the-nfl-is-taking-over-thanksgiving-but-how-much-football-is-too-much-football-142940475.html",
-          "title": "The NFL is taking over Thanksgiving. But how much football is too much football?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsiLswKjUhWd0iEX1_UGWoME2fYLDkDj2-hiC-GZBFHSVD34I8O5aum8hUBAY"
-        },
-        {
-          "url": "https://www.smithsonianmag.com/history/why-thanksgiving-football-emerged-as-an-american-tradition-in-the-aftermath-of-the-civil-war-180989897/",
-          "title": "Why Thanksgiving Football Emerged as an American Tradition in the Aftermath of the Civil War",
-          "publisher": "Smithsonian Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK4FHT9Cm4_Ugi2A9Z9YcjoWJKSn7ZA6A4aKf4l5fAjI9EqoZoxYwhh04F_PE"
-        }
-      ]
-    },
-    {
-      "query": "treasury",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T23:40:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/transferring-student-loans-to-treasury-top-challenge-oig-report-repayment-2026-11",
-        "https://www.forbes.com/sites/adamminsky/2026/11/23/education-departments-plan-to-transfer-student-loans-raises-alarms/",
-        "https://www.k12dive.com/news/education-department-faces-management-challenges-from-recent-changes-watch/875253/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFD3wSTEMK-twpmZVgN6gPmE_ZlG3pUfmxpJOkrkwD1mTslKxmjw6vbuzYiQ",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/transferring-student-loans-to-treasury-top-challenge-oig-report-repayment-2026-11",
-          "title": "Transferring millions of student-loan accounts to the Treasury is a key challenge next year, a federal watchdog says",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFD3wSTEMK-twpmZVgN6gPmE_ZlG3pUfmxpJOkrkwD1mTslKxmjw6vbuzYiQ"
-        },
-        {
-          "url": "https://www.forbes.com/sites/adamminsky/2026/11/23/education-departments-plan-to-transfer-student-loans-raises-alarms/",
-          "title": "Education Department’s Plan To Transfer Student Loans Raises Alarms",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRkEZjB0hIZX1B7DAqcfO_y6wpqssnkpuXSqvyng7qW6NW6FSLslCD_5c8pec"
-        },
-        {
-          "url": "https://www.k12dive.com/news/education-department-faces-management-challenges-from-recent-changes-watch/875253/",
-          "title": "Education Department faces management challenges from recent changes, watchdog says",
-          "publisher": "K-12 Dive",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReNd5kx_CVaY1461ObavIY_xic1WYV-7fzP3Vo10Mx3ur8rZzMFv2jikKxB8Y"
-        }
-      ]
-    },
-    {
-      "query": "pistons injury report",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T23:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
-        "https://www.nytimes.com/athletic/7806723/2026/11/24/detroit-pistons-jalen-duren-hamstring-injury/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jalen-duren-hamstring-assigned-to-g-league"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUZCtqJJyDFtl6iUfEmLvGpYdhKs0zYPU3khRRDtNfeZnLMOaZ_1nfnHOD5e8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
-          "title": "Jalen Duren to begin rehab assignment in next step to return from injury",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUZCtqJJyDFtl6iUfEmLvGpYdhKs0zYPU3khRRDtNfeZnLMOaZ_1nfnHOD5e8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7806723/2026/11/24/detroit-pistons-jalen-duren-hamstring-injury/",
-          "title": "Jalen Duren assigned to G League, nearing Pistons return from hamstring injury",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfUjsZkSlWZXAYDnjnhA6ilNnlMJ24j0UGnT-tz6noaTKASQRDG7Fj6VGyKyc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jalen-duren-hamstring-assigned-to-g-league",
-          "title": "Jalen Duren (hamstring) assigned to G League",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlzyu6rg9K-uEkf7OUuToSLOLgrJzHiGC3A4LHnMZiyya0tbxPl7rmoIMUrA"
-        }
-      ]
-    },
-    {
-      "query": "nebraska volleyball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-24T23:30:00Z",
-      "related_news_urls": [
-        "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
-        "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal",
-        "https://omaha.com/sports/huskers/volleyball/article_7fc15e4c-9546-482b-a45e-2e42d1af9a3e.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
-          "title": "Four Left in Pursuit for Inaugural Tournament Title",
-          "publisher": "Big Ten Conference",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ"
-        },
-        {
-          "url": "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal",
-          "title": "No. 1 Huskers Advance to Big Ten Semifinal - University of Nebraska - Official Athletics Website",
-          "publisher": "huskers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBxVl12dAw1c4B8uAZZaPBlUaIj2DgpeMzx_ZfTNFTuZEhgfHJ3hur7VtTDik"
-        },
-        {
-          "url": "https://omaha.com/sports/huskers/volleyball/article_7fc15e4c-9546-482b-a45e-2e42d1af9a3e.html",
-          "title": "How to watch Nebraska volleyball vs. Purdue: Time, TV and streaming info for Big Ten tournament",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYILvfH-fE8gfctANTYIjQ2ypjYQb2nJ00XmrvY7yzLiw89O7kauv5Kgk5Y4w"
-        }
-      ]
-    },
-    {
-      "query": "is cade cunningham playing tonight",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-24T23:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jaylin-williams-back-spasms-out-vs-timberwolves",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/cade-cunningham-knee-downgraded-to-out-tuesday",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/det-starts-jenkins-joe-huerter-ausar-collins"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jaylin-williams-back-spasms-out-vs-timberwolves",
-          "title": "Jaylin Williams (back spasms) out vs. Timberwolves",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/cade-cunningham-knee-downgraded-to-out-tuesday",
-          "title": "Cade Cunningham (knee) downgraded to out Tuesday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ30tU9dTfIL4tU1IyBCr2wQJIKfpsxy_iDZJnxJyBtrobX8CdaxHoBWx2WO_s"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/det-starts-jenkins-joe-huerter-ausar-collins",
-          "title": "DET starts Jenkins, Joe, Huerter, Ausar, Collins",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTofIqe1JdAQZAbrq92tjI3BFVQ0zKI_VuV4gqXWMcnoWsTdSg8GMH711kViqQ"
-        }
-      ]
-    },
-    {
-      "query": "tyrese haliburton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T23:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/nba/news/nba-injury-updates-tyrese-haliburton-kawhi-leonard-dylan-harper-brandon-ingram/",
-        "https://sports.yahoo.com/nba/articles/nba-injury-latest-news-tyrese-230305832.html",
-        "https://fox59.com/sports/pacers/haliburton-assigned-to-boom-as-signs-point-to-upcoming-return/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_hbvVuiawTd4LUhyUKBxa-arWZv-9eL_tgb3K-R3JJZA3oKuZha5GeeG9zw",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/nba/news/nba-injury-updates-tyrese-haliburton-kawhi-leonard-dylan-harper-brandon-ingram/",
-          "title": "NBA injury updates: The latest on Tyrese Haliburton, Anthony Edwards, Kawhi Leonard, Dylan Harper, more",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_hbvVuiawTd4LUhyUKBxa-arWZv-9eL_tgb3K-R3JJZA3oKuZha5GeeG9zw"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/articles/nba-injury-latest-news-tyrese-230305832.html",
-          "title": "NBA Injury Update: Latest news on Tyrese Haliburton, Jalen Duren, Donte DiVincenzo",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSejqwKu4aaUhxC9uPsT8HtGhrtaLJ2FBnRegYAsIfkuUbnx7qezfEMRkoaQPo"
-        },
-        {
-          "url": "https://fox59.com/sports/pacers/haliburton-assigned-to-boom-as-signs-point-to-upcoming-return/",
-          "title": "Pacers: Haliburton, McConnell, Furphy recalled from Boom",
-          "publisher": "Fox 59",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxvTjzqmGVlCWvCFd602mSAF8ZlGFgdrOELmStYN3CP3CTN4nPVR5VxwX6B84"
-        }
-      ]
-    },
-    {
-      "query": "josé eduardo derbez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-24T23:30:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/famosos/jose-eduardo-derbez-habria-dejado-sola-mariana-bo-en-restaurante-tras-cita-con-ella-detalles-video",
-        "https://es-us.vida-estilo.yahoo.com/mariana-bo-deshace-elogios-victoria-102045656.html",
-        "https://tvaztecaguate.com/espectaculos/2026/11/24/video-artista-revela-que-cancelo-un-vuelo-a-guatemala-para-escaparse-con-hijo-de-derbez/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOe9Dx0FfpbYRwfu3zol5l2ARtEV8MX4jh_VBAFWuI0p2IIpEERuuFIAKiqL0",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/famosos/jose-eduardo-derbez-habria-dejado-sola-mariana-bo-en-restaurante-tras-cita-con-ella-detalles-video",
-          "title": "José Eduardo Derbez habría dejado sola Mariana BO en restaurante tras cita con ella: detalles",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOe9Dx0FfpbYRwfu3zol5l2ARtEV8MX4jh_VBAFWuI0p2IIpEERuuFIAKiqL0"
-        },
-        {
-          "url": "https://es-us.vida-estilo.yahoo.com/mariana-bo-deshace-elogios-victoria-102045656.html",
-          "title": "Mariana BO se deshace en elogios para Victoria Ruffo y su hijo",
-          "publisher": "Yahoo en Español Vida y Estilo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61GTA4vLg3awiixBLcMA5fbfg_kPsq0GR9PA4RVIx1U5wnpmd_7EGD8t_doQ"
-        },
-        {
-          "url": "https://tvaztecaguate.com/espectaculos/2026/11/24/video-artista-revela-que-cancelo-un-vuelo-a-guatemala-para-escaparse-con-hijo-de-derbez/",
-          "title": "VIDEO: Artista cancela vuelo a Guatemala para escaparse con hijo de Derbez",
-          "publisher": "Tv Azteca Guatemala",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtNFgZajf7JM5CzVwZv9d2Vr9p_cokSEcy6Mq-xcwtyGV-CVVPa_khQxTTxBg"
-        }
-      ]
-    },
-    {
-      "query": "diana gutiérrez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-24T23:20:00Z",
-      "related_news_urls": [
-        "https://www.bizjournals.com/milwaukee/news/2026/11/24/diana-gutierrez-leaving-wisn-12.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbF58IL5ZkyY0pEZqw6ZsMSt23d3XAHgmo3MhOTn-_FTZLZkFWJiDuVTmlig",
-      "image_credit": "The Business Journals",
-      "news": [
-        {
-          "url": "https://www.bizjournals.com/milwaukee/news/2026/11/24/diana-gutierrez-leaving-wisn-12.html",
-          "title": "Another anchor leaving WISN-TV (Channel 12)",
-          "publisher": "The Business Journals",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbF58IL5ZkyY0pEZqw6ZsMSt23d3XAHgmo3MhOTn-_FTZLZkFWJiDuVTmlig"
         }
       ]
     }
