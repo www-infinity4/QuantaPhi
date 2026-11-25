@@ -94,7 +94,7 @@ export async function consultGeminiWriter(env,options,fetcher=fetch){
   throw Error('invalid_writer_input');
  let res;
  try{res=await fetcher('https://generativelanguage.googleapis.com/v1beta/models/'+MODEL_GEMINI+':generateContent',{
-  method:'POST',redirect:'error',signal:AbortSignal.timeout(90000),
+  method:'POST',redirect:'manual',signal:AbortSignal.timeout(90000),
   headers:{'Content-Type':'application/json','x-goog-api-key':env.GEMINI_API_KEY},
   body:JSON.stringify({systemInstruction:{parts:[{text:messages[0].content}]},
    contents:messages.slice(1).map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),
