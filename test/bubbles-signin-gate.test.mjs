@@ -467,3 +467,27 @@ test('unverified wallet payload never grants a GitHub or Cloudflare connected ba
  assert.equal(gate.providers.cloudflare.approved,false);
  assert.equal(gate.ready,false);
 });
+
+test('owner chat reconnect uses current verified headers, not the original settled ready promise',async()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const match=source.match(/async function connectOwner\(\)\{[\s\S]*?\n\}\n\/\/ Provider OAuth changes/);
+ assert.ok(match,'actual owner connect function present');
+ const fn=match[0].replace(/\n\/\/ Provider OAuth changes$/,'');
+ const harness=new Function('bridge',`const window={QuantaBrainOwner:bridge,dispatchEvent(){}};
+ const embedded=false,nativeOverlay=false,repositoryCatalogComplete=true;
+ let ownerHeaders=null,ownerReady=false;
+ const workButton={},ownerMode={},workStatus={};
+ const syncOwnerIdentity=()=>{},persistChat=()=>{},sharedMemory=()=>{},checkSharedVoiceStatus=()=>{};
+ const CustomEvent=class {};
+ ${fn}
+ return async()=>{await connectOwner();return {ownerHeaders,ownerReady}};`);
+ const first={Authorization:'Bearer synthetic-old'},current={Authorization:'Bearer synthetic-new'};
+ assert.deepEqual(await harness({ready:Promise.resolve(first),currentHeaders:()=>current})(),{ownerHeaders:current,ownerReady:true});
+ assert.deepEqual(await harness({ready:Promise.resolve(first),currentHeaders:()=>null})(),{ownerHeaders:null,ownerReady:false});
+ assert.deepEqual(await harness({ready:Promise.resolve(current)})(),{ownerHeaders:current,ownerReady:true});
+ let release;const pending=new Promise(resolve=>{release=resolve});
+ let latest=null;
+ const reconnect=harness({ready:pending,currentHeaders:()=>latest})();
+ latest=current;release(first);
+ assert.deepEqual(await reconnect,{ownerHeaders:current,ownerReady:true});
+});
