@@ -69,6 +69,15 @@
       "state": "implemented_in_source_pending_live_deployment",
       "requires": "Deploy exact reviewed bubbles-tools Worker version and confirm real /v1/assist and authenticated MCP receipts; software-only",
       "sourceUrl": "https://github.com/www-infinity4/Organic-Computation"
+    },
+    {
+      "id": "bubbles:swat",
+      "label": "SwaT — Swarm Telepathy research",
+      "description": "Experimental cross-family KV-cache transfer using a trained mapper between frozen models. Authors report 4× speed and 40% relative accuracy gains for SwaT plus Attention Matching versus matched-budget text summaries; no Bubbles benchmark or live cache transfer has been verified.",
+      "origin": "MIT CSAIL / MIT-IBM research",
+      "state": "not_connected",
+      "requires": "Owner-controlled compatible model runtimes with direct KV-cache access, pair-specific trained mapper, isolated synthetic benchmark, and authorized deployment. Existing text handoffs remain available.",
+      "sourceUrl": "https://github.com/Ar-Kareem/SwaT"
     }
   ],
   "referenceSkills": [
