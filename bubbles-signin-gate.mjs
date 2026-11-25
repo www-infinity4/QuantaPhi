@@ -84,18 +84,19 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
  let returnIssue=returned?.result==='declined'?
   returnedProviderName+' authorization was declined. No account permission was granted.':
   returned?.result==='failed'?
-  returnedProviderName+' returned an authorization error: '+(Object.hasOwn(reasonTexts,returned?.reason)?reasonTexts[returned.reason].replaceAll('Cloudflare',returnedProviderName):'Callback could not complete.')+' Your Bubbles account is not connected.':
+  returnedProviderName+' returned an authorization error: '+(Object.hasOwn(reasonTexts,returned?.reason)?reasonTexts[returned.reason].replaceAll('Cloudflare',returnedProviderName):'Callback could not complete.')+' This provider authorization was not verified.':
   returned?.result==='received'?
   returnedProviderName+' returned to Bubbles. Waiting to verify your account with the server.':'';
  const clearReturnNote=()=>{try{host.sessionStorage?.removeItem(NOTE_KEY);}catch{}};
  const setStatus=text=>{status.textContent=text;};
+ const providerReturnStatus=(message,summary)=>message+(summary?.walletVerified===true?' Your Unified Wallet is verified; this result concerns the provider connection only.':'');
  const finalizeReturn=async(id,error)=>{
   oauthInProgress=false;
   const providerName={cloudflare:'Cloudflare',github:'GitHub',google:'Google'}[id]||'Account';
   const summary=await refresh();
   if(error){
    returnIssue=providerName+' sign-in did not complete: '+String(error.message||'Authorization could not be verified.')+
-    ' Your account remains unverified.';
+    ' This provider connection remains unverified.';
   }else if(summary?.providers?.[id]?.connected){
    clearReturnNote();
    returnIssue=summary.providers[id].approved?
@@ -106,7 +107,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   }else{
    returnIssue=providerName+' returned, but Bubbles could not verify a connected account. Check that you are in the original wallet-authorized Chrome tab.';
   }
-  setStatus(returnIssue);
+  setStatus(providerReturnStatus(returnIssue,summary));
   updateButtons();
  };
  const updateButtons=()=>{
@@ -158,7 +159,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
   if(summary.ready){
    clearReturnNote();returnIssue='';
    setStatus('You’re signed in with the required permissions.');
-  }else if(returnIssue)setStatus(returnIssue);
+  }else if(returnIssue)setStatus(providerReturnStatus(returnIssue,summary));
   else if(summary.signedIn)setStatus('Your accounts are signed in. Optional project permissions are managed in Account Connections.');
   else if(summary.providers.github.connected)setStatus('Continue with Cloudflare.');
   else setStatus('Sign in to connect your accounts.');
@@ -204,7 +205,7 @@ export function mountBubblesSigninGate({root=document,host=window,prefix=''}={})
        }
       }catch(error){
        returnIssue='Cloudflare authorization recovery failed: '+String(error?.message||'unverified')+
-        '. Your connection remains unverified.';
+        '. This Cloudflare connection remains unverified.';
       }
     }
     lastChecked=Date.now();
