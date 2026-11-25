@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T09:01:26.978540Z",
+  "checked_at": "2026-11-25T09:31:33.909168Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "bob seger & the silver bullet band",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T09:10:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/news/local/michigan/2026/11/22/silver-bullet-band-bassist-has-died-bandmate-posts/92918262007/",
+        "https://www.rollingstone.com/music/music-news/bob-seger-silver-bullet-band-bassist-chris-campbell-dead-1235662929/",
+        "https://www.pennlive.com/entertainment/2026/11/rock-music-icon-dies-at-78-he-was-one-of-the-best-ever.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeqivNq35YiDihl78yWqwgxsv2Riy-DcuVx0Z0QgJNoLH3RvCNeE_KLGxwlvE",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/news/local/michigan/2026/11/22/silver-bullet-band-bassist-has-died-bandmate-posts/92918262007/",
+          "title": "Silver Bullet Band bassist has died, bandmate posts",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeqivNq35YiDihl78yWqwgxsv2Riy-DcuVx0Z0QgJNoLH3RvCNeE_KLGxwlvE"
+        },
+        {
+          "url": "https://www.rollingstone.com/music/music-news/bob-seger-silver-bullet-band-bassist-chris-campbell-dead-1235662929/",
+          "title": "Bob Seger and the Silver Bullet Band Bassist Chris Campbell Dead at 78",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtsYiyWqShiZOlmqHbGt9P5dlco3GRyf72jBAPSDx4Vho2U67fmwx_CKGTCb0"
+        },
+        {
+          "url": "https://www.pennlive.com/entertainment/2026/11/rock-music-icon-dies-at-78-he-was-one-of-the-best-ever.html",
+          "title": "Rock music icon dies at 78: ‘He was one of the best ever’",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6pm5Rb3KPvGb0KAkh2QqiGMzt35LRwoiDXkfGO96r7TjaXifu4zMlBTvL8Eg"
+        }
+      ]
+    },
+    {
+      "query": "eastern florida floods",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T09:10:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/20/news/weather/video/oak-hill-florida-flooding-drone-volusia-county",
+        "https://www.wptv.com/weather/forecast-flood-watch-posted-for-the-palm-beaches-and-treasure-coast-through-thursday-morning",
+        "https://www.cfpublic.org/housing-homelessness/2026-11-22/central-florida-floods-weekend"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQMa1tELS4i-WD-AaxowFdlLfbpkxrsjDTNUVN17yEI9XrCiQDnSGAhDk2tCU",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/20/news/weather/video/oak-hill-florida-flooding-drone-volusia-county",
+          "title": "Flooding in Oak Hill, Florida submerges homes and farms",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQMa1tELS4i-WD-AaxowFdlLfbpkxrsjDTNUVN17yEI9XrCiQDnSGAhDk2tCU"
+        },
+        {
+          "url": "https://www.wptv.com/weather/forecast-flood-watch-posted-for-the-palm-beaches-and-treasure-coast-through-thursday-morning",
+          "title": "FORECAST: Flood Watch for the Palm Beaches and Treasure Coast through Thursday morning",
+          "publisher": "WPTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1wbBDvA4e7rTWerYO-4r7JsBBwZm9HTN4-BIG-b-d2VL1r2GpjeJDgDeGz4"
+        },
+        {
+          "url": "https://www.cfpublic.org/housing-homelessness/2026-11-22/central-florida-floods-weekend",
+          "title": "Floods strand hundreds in Central Florida over weekend following heavy rains",
+          "publisher": "Central Florida Public Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-uUXyfog9wrDqac6ogr_tPCcw71xs1aJIPCGSnFySBRETtu7wDmELwzLbJQw"
+        }
+      ]
+    },
     {
       "query": "criminal profile gta 6",
       "approx_searches": "100+",
@@ -78,7 +148,7 @@
     },
     {
       "query": "the mosquito bowl",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-25T08:20:00Z",
       "related_news_urls": [
         "https://www.jsonline.com/story/sports/college/uw/2026/11/24/new-netflix-movie-the-mosquito-bowl-wisconsin-football/92915134007/",
@@ -152,8 +222,8 @@
       "published_at": "2026-11-25T08:10:00Z",
       "related_news_urls": [
         "https://www.pcgamer.com/games/grand-theft-auto/gta-6-kitty-litter-lab-locations/",
-        "https://demokratis.co.id/en/gta6-kitty-litter-lab-locations",
-        "https://www.videogameschronicle.com/guide/gta-6-tyrone-mission-walkthrough-where-to-find-tyrone/"
+        "https://www.videogameschronicle.com/guide/gta-6-tyrone-mission-walkthrough-where-to-find-tyrone/",
+        "https://demokratis.co.id/en/gta6-kitty-litter-lab-locations"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ14s4GSzJ_wMuSbLT6p7zRduUKgmYaET-NrwhqyFJlyWNS2opHnK7XyHztH4",
       "image_credit": "PC Gamer",
@@ -166,24 +236,24 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQQ14s4GSzJ_wMuSbLT6p7zRduUKgmYaET-NrwhqyFJlyWNS2opHnK7XyHztH4"
         },
         {
-          "url": "https://demokratis.co.id/en/gta6-kitty-litter-lab-locations",
-          "title": "GTA 6 Walkthroughs Reveal Kitty Litter Lab Locations",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVPsLzNTSRFAy_hIYCpsolRg6kegvtsoWE0XnIZlQ0umWkibl5BbxtEN12p2s"
-        },
-        {
           "url": "https://www.videogameschronicle.com/guide/gta-6-tyrone-mission-walkthrough-where-to-find-tyrone/",
           "title": "GTA 6 Tyrone Mission Walkthrough: Where to Find Tyrone",
           "publisher": "Video Games Chronicle",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRh8gROoKpNZRtY0hazE45_-r371U_5qssDhboQ6IF1gSzjGDyoxGkMCMLrjxo"
+        },
+        {
+          "url": "https://demokratis.co.id/en/gta6-kitty-litter-lab-locations",
+          "title": "GTA 6 Walkthroughs Reveal Kitty Litter Lab Locations",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVPsLzNTSRFAy_hIYCpsolRg6kegvtsoWE0XnIZlQ0umWkibl5BbxtEN12p2s"
         }
       ]
     },
     {
       "query": "how to open vaults in gta 6",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-25T07:50:00Z",
       "related_news_urls": [
         "https://www.ign.com/wikis/gta-6/The_Cartel_Heist_Walkthrough",
@@ -283,76 +353,6 @@
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4g8kiILK_dH8CN0n1vZd85pR5au6ZLSsrQ1ouq077trO1XK8Tve9Fen2Uxuw"
-        }
-      ]
-    },
-    {
-      "query": "hunger games 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T07:40:00Z",
-      "related_news_urls": [
-        "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
-        "https://fortune.com/2026/11/24/hunger-games-sunrise-on-the-reaping-box-office-gta-vi/",
-        "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek",
-      "image_credit": "In Review Online",
-      "news": [
-        {
-          "url": "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
-          "title": "The Hunger Games: Sunrise on the Reaping — Francis Lawrence [Review]",
-          "publisher": "In Review Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek"
-        },
-        {
-          "url": "https://fortune.com/2026/11/24/hunger-games-sunrise-on-the-reaping-box-office-gta-vi/",
-          "title": "‘Hunger Games: Sunrise on the Reaping’ opens to $120 million despite GTA VI—and its audience explains why",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlRg0DPfiecAcU9DHI55XxfMBvQZR-zMwpIGOFlxHQ0-4MHqSEUfBvOhBaIA"
-        },
-        {
-          "url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
-          "title": "Weekend Box Office: HUNGER GAMES: SUNRISE ON THE REAPING Sweeps the Competition with $120M Debut",
-          "publisher": "Boxoffice Pro",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPDeJvOFDfXWkESCaY87JAWFnxnGWEuJiXa94EhYH38uJ-iGGsStir3x4wQ5Y"
-        }
-      ]
-    },
-    {
-      "query": "president snow",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T07:20:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
-        "https://foro3d.com/en/2026/noviembre/ralph-fiennes-compara-la-maldad-de-snow-y-voldemort-tras-el-estreno-de.html",
-        "https://peradaban.id/en/president-snow-actor-ranking"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV1Z6BrFFC8mLwjG7IzMU7Sn0s6tQt6AscG_EBKMAcfOPWwmCPQbeTsitF5s0",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
-          "title": "All 3 Versions Of Coriolanus Snow In The Hunger Games Movies, Ranked",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV1Z6BrFFC8mLwjG7IzMU7Sn0s6tQt6AscG_EBKMAcfOPWwmCPQbeTsitF5s0"
-        },
-        {
-          "url": "https://foro3d.com/en/2026/noviembre/ralph-fiennes-compara-la-maldad-de-snow-y-voldemort-tras-el-estreno-de.html",
-          "title": "Ralph Fiennes compares Snow's and Voldemort's evil after the premiere of Az aratás hajnala",
-          "publisher": "Foro3D",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyJ_HpiKyzlbMy4WQJ6aJydwxoA6GZ_Exw4hCKeLXp9A4vCJC2gynf5olDuH4"
-        },
-        {
-          "url": "https://peradaban.id/en/president-snow-actor-ranking",
-          "title": "Screen Rant Ranks Three Actors Who Portrayed President Snow",
-          "publisher": "Peradaban.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbA9XVB0z-KWjC-dqF-7eg2E5FvfuLr0lv0JNGCpqWsATYS-vxSruJgsRVbJM"
         }
       ]
     }
