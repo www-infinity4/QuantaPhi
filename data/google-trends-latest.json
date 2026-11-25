@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T22:01:12.117365Z",
+  "checked_at": "2026-11-25T22:31:03.901019Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "scott bessent",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T21:40:00Z",
-      "related_news_urls": [
-        "https://www.politico.com/news/2026/11/25/bessent-debt-treasury-trump-democrats-congress-01182853",
-        "https://www.nytimes.com/2026/11/18/business/economy/us-debt-limit.html",
-        "https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTksQSDUSKCdzUYRZ2Z1C2D82X7y_hUjBPH9W3mAjhnLHIBl1GjzggpiWtpJgo",
-      "image_credit": "Politico",
-      "news": [
-        {
-          "url": "https://www.politico.com/news/2026/11/25/bessent-debt-treasury-trump-democrats-congress-01182853",
-          "title": "Bessent insulted Democrats. Now he needs to make a deal with them.",
-          "publisher": "Politico",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTksQSDUSKCdzUYRZ2Z1C2D82X7y_hUjBPH9W3mAjhnLHIBl1GjzggpiWtpJgo"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/18/business/economy/us-debt-limit.html",
-          "title": "The U.S. Could Hit Its Debt Limit by February",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tG7QiwhY6YKBvoTyO4RCkWIiBMlutuctrZEchWpuI_nDzmsm9PRIeIoDuf4"
-        },
-        {
-          "url": "https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt",
-          "title": "Thune: Trump and Democrats will have to negotiate on debt",
-          "publisher": "Semafor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4RiaiW4SjugXpnuSsxgSm2h4Z50rKRdz-6fwvyfjqKQmpX41YRzOkpR0Hwdg"
-        }
-      ]
-    },
-    {
-      "query": "akron basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T21:40:00Z",
-      "related_news_urls": [
-        "https://www.beaconjournal.com/story/sports/college/zips/2026/11/24/akron-zips-basketball-score-belmont-game-kamrin-oriol-stats/92946185007/",
-        "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
-        "https://www.espn.com/video/clip/_/id/50585282/game-highlights"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtoh2f--l5yld5MiUkS3AJ_C7hpQc2MrybuAN7gigq-9cBJUFiipf9Hh6QW7E",
-      "image_credit": "Akron Beacon Journal",
-      "news": [
-        {
-          "url": "https://www.beaconjournal.com/story/sports/college/zips/2026/11/24/akron-zips-basketball-score-belmont-game-kamrin-oriol-stats/92946185007/",
-          "title": "Kamrin Oriol lights up in Orlando, Akron men's basketball routs Belmont",
-          "publisher": "Akron Beacon Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtoh2f--l5yld5MiUkS3AJ_C7hpQc2MrybuAN7gigq-9cBJUFiipf9Hh6QW7E"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
-          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 24",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50585282/game-highlights",
-          "title": "Belmont Bruins vs. Akron Zips: Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQY5cSWZgRGRdPW5IxCcowGB5_4FvqSUpbkpJzBqWoHEJ2x15qm2mvbXXAK4Y"
-        }
-      ]
-    },
-    {
-      "query": "motiejus krivas",
+      "query": "memphis basketball",
       "approx_searches": "1000+",
-      "published_at": "2026-11-25T21:40:00Z",
+      "published_at": "2026-11-25T22:10:00Z",
       "related_news_urls": [
-        "https://www.fanduel.com/research/arizona-vs-providence-college-basketball-predictions-odds-picks-best-bets-for-11-24-2026",
-        "https://theprovidencecrier.com/2026/11/24/arizonas-big-three-too-much-for-friars/",
-        "https://www.couriernews.com/sports/providence-arizona-basketball/image_29193aff-d415-5882-b649-0a55f9ef5026.html"
+        "https://gopsusports.com/news/2026/11/24/game-day-penn-state-mbb-vs-memphis",
+        "https://dailymemphian.com/article/68870/memphis-tigers-basketball-penn-state-preview",
+        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/25/memphis-basketball-penn-state-game-delayed-at-battle-4-atlantis/92961482007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qggVjhyv01XkcAxVBPQMWPVzsia-tsmAg2mw6QcCPt5md3EdHCMgrcn-CAw",
-      "image_credit": "FanDuel",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzRho6gL8TdDEHUqzWyq81gCQumiYctqwqCotJViFOIQaTphHwntQFYyQMhU",
+      "image_credit": "gopsusports.com",
       "news": [
         {
-          "url": "https://www.fanduel.com/research/arizona-vs-providence-college-basketball-predictions-odds-picks-best-bets-for-11-24-2026",
-          "title": "Arizona vs Providence College Basketball Prediction, Odds, Picks, Best Bets for Nov. 24",
-          "publisher": "FanDuel",
+          "url": "https://gopsusports.com/news/2026/11/24/game-day-penn-state-mbb-vs-memphis",
+          "title": "GAME DAY: Penn State MBB vs. Memphis",
+          "publisher": "gopsusports.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qggVjhyv01XkcAxVBPQMWPVzsia-tsmAg2mw6QcCPt5md3EdHCMgrcn-CAw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzRho6gL8TdDEHUqzWyq81gCQumiYctqwqCotJViFOIQaTphHwntQFYyQMhU"
         },
         {
-          "url": "https://theprovidencecrier.com/2026/11/24/arizonas-big-three-too-much-for-friars/",
-          "title": "Arizona’s Big Three Too Much for Friars",
-          "publisher": "The Providence Crier",
+          "url": "https://dailymemphian.com/article/68870/memphis-tigers-basketball-penn-state-preview",
+          "title": "Memphis vs. Penn State: What to know for Tigers’ first Battle 4 Atlantis game",
+          "publisher": "Daily Memphian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYvf1WCGmp0Fm9rRKcOOSr_HifaAzYfGmAjojxUWON5qhjmpGHcxnZ-eHbjkY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhntK9MWOw4ILJN1zBZRipRGnJQ2szAxS-1byXR0dxfd6WzqzAHSAl-q0mhG0"
         },
         {
-          "url": "https://www.couriernews.com/sports/providence-arizona-basketball/image_29193aff-d415-5882-b649-0a55f9ef5026.html",
-          "title": "Providence Arizona Basketball",
-          "publisher": "couriernews.com",
+          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/25/memphis-basketball-penn-state-game-delayed-at-battle-4-atlantis/92961482007/",
+          "title": "Memphis basketball game vs Penn State delayed. What we know",
+          "publisher": "The Commercial Appeal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2s3_ltDVV8Zxp-1zewX38CKw5PSGwg8IAtwAf54OULPZ683MroznzdXgGB4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQd3aXQsYRoy4pTwLFtHf43pyxDr6h3ZDWN6PPWCt9xkNMCEI6lkJ7vncktBVI"
         }
       ]
     },
     {
-      "query": "thanksgiving dog show",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T21:30:00Z",
-      "related_news_urls": [
-        "https://www.9news.com/article/life/holidays/thankful/how-to-watch-the-2026-national-dog-show-this-thanksgiving/73-758f3dcf-eeba-4ace-8c98-25b86a37f15a",
-        "https://www.nbcsports.com/national-dog-show/news/can-soleil-the-belgian-sheepdog-shine-again-at-the-2026-national-dog-show",
-        "https://www.today.com/video/meet-the-3-new-breeds-debuting-at-the-25th-national-dog-show-274161221615"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR83VTeR5ZBMN670Fbi9oKd50HiPBU-JLCVecyg1LCa_N1mwVSQMrE2ZP-qWHM",
-      "image_credit": "9News",
-      "news": [
-        {
-          "url": "https://www.9news.com/article/life/holidays/thankful/how-to-watch-the-2026-national-dog-show-this-thanksgiving/73-758f3dcf-eeba-4ace-8c98-25b86a37f15a",
-          "title": "How to watch the 2026 National Dog Show this Thanksgiving",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR83VTeR5ZBMN670Fbi9oKd50HiPBU-JLCVecyg1LCa_N1mwVSQMrE2ZP-qWHM"
-        },
-        {
-          "url": "https://www.nbcsports.com/national-dog-show/news/can-soleil-the-belgian-sheepdog-shine-again-at-the-2026-national-dog-show",
-          "title": "Can Soleil the Belgian Sheepdog shine again at the 2026 National Dog Show?",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMoV8KW1k0nSBfh-yomWOAnab1t7QxRIBfPGu5wRBEq5I0nMiN9BcBQ4-U3U"
-        },
-        {
-          "url": "https://www.today.com/video/meet-the-3-new-breeds-debuting-at-the-25th-national-dog-show-274161221615",
-          "title": "Meet the 3 New Breeds Debuting at the 25th National Dog Show",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkyCQHO_ZyYWjE-djb-nKNY1s7G3lJct4gaOOpOZy0PRafV7UxT0gO8D0Esnw"
-        }
-      ]
-    },
-    {
-      "query": "krivas",
+      "query": "byu vs providence prediction",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T21:30:00Z",
+      "published_at": "2026-11-25T22:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/ncaa-hoops-picks-predictions-duke-vs-uconn-virginia-marquette-top-games-wednesday/",
-        "https://www.ctinsider.com/sports/uconn-mens-basketball/article/duke-game-contract-amazon-las-vegas-22548425.php",
-        "https://247sports.com/college/basketball/article/the-breakfast-buffet-duke-vs-uconn-arizona-motiejus-krivas-ole-miss-depaul-293290606/"
+        "https://www.deseret.com/sports/2026/11/25/byu-basketball-providence-maui-invitational-how-to-watch/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/previewing-byu-basketball-vs-providence-170005027.html",
+        "https://www.cbssports.com/college-basketball/news/no-19-byu-providence-look-to-rebound-in-maui-third-place-game/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqYQ817V5me05EpGbhi6BrQPRj6DM-aTxAHZl5elqjJeSNgPRL2HVkZEWBBw",
+      "image_credit": "Deseret News",
       "news": [
         {
-          "url": "https://www.cbssports.com/college-basketball/news/ncaa-hoops-picks-predictions-duke-vs-uconn-virginia-marquette-top-games-wednesday/",
-          "title": "College basketball picks: Predictions for Duke vs. UConn, Virginia vs. Marquette, more top games Wednesday",
+          "url": "https://www.deseret.com/sports/2026/11/25/byu-basketball-providence-maui-invitational-how-to-watch/",
+          "title": "How to watch No. 19 BYU play Providence in the Maui Invitational",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqYQ817V5me05EpGbhi6BrQPRj6DM-aTxAHZl5elqjJeSNgPRL2HVkZEWBBw"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/previewing-byu-basketball-vs-providence-170005027.html",
+          "title": "Previewing BYU Basketball vs Providence in Maui Invitational",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQwS2xFxk-F6dx4Ec5hCQJiDA7Mfq-Vuhp8f3fLvoV2Q41vpJ2TvS1jDXRvBM"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/no-19-byu-providence-look-to-rebound-in-maui-third-place-game/",
+          "title": "No. 19 BYU, Providence look to rebound in Maui third-place game",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
-        },
-        {
-          "url": "https://www.ctinsider.com/sports/uconn-mens-basketball/article/duke-game-contract-amazon-las-vegas-22548425.php",
-          "title": "Inside the UConn-Duke men's basketball contract: $333K and Amazon introduction",
-          "publisher": "CT Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn_pcGw3OvaG8-4Mk56DB8W-e3Udtf3Xx7LQTLWKk8gmAeTp-WUwjxLtLvQdY"
-        },
-        {
-          "url": "https://247sports.com/college/basketball/article/the-breakfast-buffet-duke-vs-uconn-arizona-motiejus-krivas-ole-miss-depaul-293290606/",
-          "title": "The Breakfast Buffet: Duke vs. UConn, Arizona's Motiejus Krivas vs. Ole Miss and DePaul's program-changing win",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4P5MsE3-J1s0NJaKTaSjJKBjbyLAsFo-jRuaRgDVZQUjrJvXcx-6uCYojOJ0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNkoOPt7cae5ONMo6pg_kM5HRNsswpwTfbBDilZZjyTLMiG31kL_HJ-8KBZCc"
         }
       ]
     },
     {
-      "query": "andy taylor",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T21:20:00Z",
+      "query": "north dakota basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T22:00:00Z",
       "related_news_urls": [
-        "https://www.rollingstone.com/music/music-news/duran-duran-guitarist-andy-taylor-dead-obituary-1234634531/",
-        "https://news.sky.com/story/duran-duran-guitarist-andy-taylor-has-died-aged-65-13616421",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/duran-duran-guitarist-andy-taylor-212545025.html"
+        "https://www.sportsgambler.com/betting-tips/basketball/north-dakota-fighting-hawks-vs-detroit-mercy-titans-prediction-odds-2026-11-24/",
+        "https://fightinghawks.com/news/2026/11/24/mens-basketball-fighting-hawks-defeat-detroit-mercy-to-kick-off-cancun-challenge.aspx",
+        "https://www.covers.com/sport/basketball/ncaab/matchup/390751/picks"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIiyS8cvd89BeNgiE4l9kH5Ajtq2Hv6E6mOWTnYxISA-mq9M2aC6CFflP5cg",
-      "image_credit": "Rolling Stone",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://www.rollingstone.com/music/music-news/duran-duran-guitarist-andy-taylor-dead-obituary-1234634531/",
-          "title": "Duran Duran Guitarist Andy Taylor Dead at 65",
-          "publisher": "Rolling Stone",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/north-dakota-fighting-hawks-vs-detroit-mercy-titans-prediction-odds-2026-11-24/",
+          "title": "North Dakota vs Detroit Prediction, Picks & Odds | 24 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIiyS8cvd89BeNgiE4l9kH5Ajtq2Hv6E6mOWTnYxISA-mq9M2aC6CFflP5cg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
         },
         {
-          "url": "https://news.sky.com/story/duran-duran-guitarist-andy-taylor-has-died-aged-65-13616421",
-          "title": "Duran Duran guitarist Andy Taylor has died at the age of 65.",
-          "publisher": "Sky News",
+          "url": "https://fightinghawks.com/news/2026/11/24/mens-basketball-fighting-hawks-defeat-detroit-mercy-to-kick-off-cancun-challenge.aspx",
+          "title": "Fighting Hawks Defeat Detroit Mercy to Kick Off Cancun Challenge",
+          "publisher": "University of North Dakota Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpRs0oKvelCanY9cN-jTFJbj6IlqhuKtVxN8OXZaXFQkl7WGIu5xP_x1MFUKw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTE-IfdGICxBRqp7mL2BkXf8j4UdDwSbNu3_qL7ElGlIcVSdW2f832bzukct6Q"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/duran-duran-guitarist-andy-taylor-212545025.html",
-          "title": "Duran Duran Guitarist Andy Taylor Dies At 65",
-          "publisher": "Yahoo",
+          "url": "https://www.covers.com/sport/basketball/ncaab/matchup/390751/picks",
+          "title": "North Dakota Fighting Hawks vs Detroit Mercy Titans Picks, Prop Bets For November 24, 2026 - NCAAB Predictions",
+          "publisher": "Covers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRW6ABad0DCAFIlty8MZfSkrCHIxszplS9Ti5a6HIHIgEktvOklZj94VmQiTg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvb58gaEEq43FwJ7Ke5R3pq8Nolpnb6bFf4HRmN58DQ3xU82WP3XF2iWIYnbw"
         }
       ]
     },
     {
-      "query": "philadelphia thanksgiving day parade",
+      "query": "elly de la cruz",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T22:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50541491/offseason-trades-lockout-red-sox-yankees",
+        "https://sports.yahoo.com/mlb/article/the-padres-phillies-astros-and-rangers-need-to-hurry-up-and-make-some-offseason-moves-200822718.html",
+        "https://arizonasports.com/mlb/arizona-diamondbacks/diamondbacks-should-trade-for-jarren-duran-ahead-of-looming-mlb-lockout-espn-expert-says"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgCrgz2OrtGRxaT9P26YDz6lxEEmnopDDBL1c2tuOZldUhP3RcRvChNH90Ic",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50541491/offseason-trades-lockout-red-sox-yankees",
+          "title": "Trades we want to see before MLB lockout",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOgCrgz2OrtGRxaT9P26YDz6lxEEmnopDDBL1c2tuOZldUhP3RcRvChNH90Ic"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/article/the-padres-phillies-astros-and-rangers-need-to-hurry-up-and-make-some-offseason-moves-200822718.html",
+          "title": "The Padres, Phillies, Astros and Rangers need to hurry up and make some offseason moves",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-bkBJL0j5LXIWE9yMqc8iO4ymQ0hn8QPhNaXQO2nbAujRpxG3JiMXNgXjfc0"
+        },
+        {
+          "url": "https://arizonasports.com/mlb/arizona-diamondbacks/diamondbacks-should-trade-for-jarren-duran-ahead-of-looming-mlb-lockout-espn-expert-says",
+          "title": "Diamondbacks should trade for Jarren Duran ahead of looming MLB lockout, ESPN expert says",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9C-atWovx5x-BDCUxwjfsa4MvKV_GG2Aas9SwemkQnu3Dh3Yy3CY4sVO5Y7Q"
+        }
+      ]
+    },
+    {
+      "query": "champions league table",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T22:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c3j4rne5ny5et",
+        "https://www.espn.com/soccer/story/_/id/50574152/uefa-champions-league-live-updates",
+        "https://www.nytimes.com/athletic/7803364/2026/11/24/manchester-city-2-napoli-2-cherki-doku-de-bruyne/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSVkl_Uy_FJ5TTCY8BJTG8qrLb5UW36dCtjyW3Lm8HqUXFk94Ct_s9bt3gkNQ",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c3j4rne5ny5et",
+          "title": "Man City 2-2 Napoli: Ayyoub Bouaddi and Rayan Cherki score for hosts",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSVkl_Uy_FJ5TTCY8BJTG8qrLb5UW36dCtjyW3Lm8HqUXFk94Ct_s9bt3gkNQ"
+        },
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50574152/uefa-champions-league-live-updates",
+          "title": "Champions League recap: Arsenal drop points vs. Dortmund, Madrid go top",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFRPVwhlMUvc9HgHQg87sZ0gsDaKU2gX0eXQFMo5jW7X6tMp0KQd5Em5xfiYY"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7803364/2026/11/24/manchester-city-2-napoli-2-cherki-doku-de-bruyne/",
+          "title": "Manchester City 2 Napoli 2: Cherki and Doku provide a spark, but City still labour - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGZGrmCBBwOowGm0WKG1UXAPqMtYtsmfpvVTw2TOQcp5QW6_1-FALaPZxpIf4"
+        }
+      ]
+    },
+    {
+      "query": "stock markets",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T21:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html",
+        "https://www.bloomberg.com/news/videos/2026-11-25/bloomberg-businessweek-daily-11-25-2026-video",
+        "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFGBikquZxJVelgWez8uLDxd_QP4BUsWgs1axl6O6G2rLw7DwCbpZPzdTy4k",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html",
+          "title": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFGBikquZxJVelgWez8uLDxd_QP4BUsWgs1axl6O6G2rLw7DwCbpZPzdTy4k"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/videos/2026-11-25/bloomberg-businessweek-daily-11-25-2026-video",
+          "title": "Watch Nasdaq 100 Bounces Off Tech-Driven Lows",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjs5pXOtUPCZi6f1dVRvF4t4ZnFQYUK8sCJgA9ULakBdKsPjNEOL3nyOVTbpY"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html",
+          "title": "Dow closes higher Wednesday, wiping out 1,100-point loss in stunning rebound: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFuK0xGt6g6SMJOIEZuQzj6v2qUMZ-GCZwEUmoNP5XPL_mUjAIlKm__2PhWM0"
+        }
+      ]
+    },
+    {
+      "query": "diet",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T21:20:00Z",
+      "published_at": "2026-11-25T21:50:00Z",
       "related_news_urls": [
-        "https://6abc.com/post/weather-preps-ahead-6abc-dunkin-thanksgiving-day-parade-philadelphia/20076761/",
-        "https://www.nbcphiladelphia.com/news/local/thanksgiving-in-philly-what-to-know-for-the-parade-travel-and-a-looming-storm/4502324/",
-        "https://www.usatoday.com/story/news/2026/11/25/traffic-road-closure-updates-philadelphia-thanksgiving-parade-2026/92958470007/"
+        "https://www.washingtonpost.com/health/interactive/2026/11/17/see-how-minutes-daily-exercise-could-extend-your-lifespan/",
+        "https://www.eurekalert.org/news-releases/1152522",
+        "https://www.sciencealert.com/what-matters-more-for-lifespan-a-healthy-diet-or-exercise-a-new-review-says-its-not-even-close"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEC0tv_FTa9ImQk9yfSSFznsZ6e30GzCgGLW4EblKaCerVvjL1yBZG6I4mVH8",
-      "image_credit": "6abc Philadelphia",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR64nGa7tGzAvAzVN8hMhJi9fTJmKQkQfcCla_c1MHfcQkjGo5sxUx8sR5u96c",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://6abc.com/post/weather-preps-ahead-6abc-dunkin-thanksgiving-day-parade-philadelphia/20076761/",
-          "title": "Balloons grounded for 6abc Dunkin' Thanksgiving Day Parade in Philadelphia out of abundance of safety: Organizers",
-          "publisher": "6abc Philadelphia",
+          "url": "https://www.washingtonpost.com/health/interactive/2026/11/17/see-how-minutes-daily-exercise-could-extend-your-lifespan/",
+          "title": "Column | How much life could a 10-minute walk buy you? Try our calculator.",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEC0tv_FTa9ImQk9yfSSFznsZ6e30GzCgGLW4EblKaCerVvjL1yBZG6I4mVH8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR64nGa7tGzAvAzVN8hMhJi9fTJmKQkQfcCla_c1MHfcQkjGo5sxUx8sR5u96c"
         },
         {
-          "url": "https://www.nbcphiladelphia.com/news/local/thanksgiving-in-philly-what-to-know-for-the-parade-travel-and-a-looming-storm/4502324/",
-          "title": "Storms to impact Philly Thanksgiving parade, Macy's postpones NYC parade",
-          "publisher": "NBC10 Philadelphia",
+          "url": "https://www.eurekalert.org/news-releases/1152522",
+          "title": "You aren’t just what you eat",
+          "publisher": "EurekAlert!",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWKwn10SABrd-CfrtQncj9JjOhhdpX03T3a66qDNLuRsWJQoQgmX_QGNmhB6A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI4AaTE1c5OtuLljmmR89WP38KejoRIaakK4VBtJF9QjgTe_5HCbSjic2Uksk"
         },
         {
-          "url": "https://www.usatoday.com/story/news/2026/11/25/traffic-road-closure-updates-philadelphia-thanksgiving-parade-2026/92958470007/",
-          "title": "When is the Philadelphia Thanksgiving Parade 2026? Road closures, more",
-          "publisher": "USA Today",
+          "url": "https://www.sciencealert.com/what-matters-more-for-lifespan-a-healthy-diet-or-exercise-a-new-review-says-its-not-even-close",
+          "title": "What Matters More For Lifespan, a Healthy Diet or Exercise? A New Review Says It's Not Even Close",
+          "publisher": "ScienceAlert",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgbGzrOTaiOjTk6RNT2zGYj9bHLPNyFnKjMfAdV6v1EvpeG3i2glVxGQP0tIw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvphpASbiZSmnk8ivv4v6oDB9Ajd9KjVoqNlcNbZ57HULEt0FahJ-bWpdOoJU"
         }
       ]
     },
     {
-      "query": "is cvs open on thanksgiving",
+      "query": "mike mccarthy ice cream sandwiches",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T21:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/ex-steelers-player-reveals-text-211600100.html",
+        "https://bleacherreport.com/articles/25537668-mike-mccarthys-ice-cream-sandwich-assistant-detailed-nfl-rumors-after-aaron-rodgers-comments",
+        "https://demokratis.co.id/en/fehoko-mccarthy-ice-cream-claim"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvSKOESuo5G8ZEMf2ZVUmLtXBuXSEDlVD8A3mte4P-eqVzWX59QNhJEd9eqYI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/ex-steelers-player-reveals-text-211600100.html",
+          "title": "Ex-Steelers player reveals text from current player claiming Mike McCarthy has personal assistant bring him ice cream sandwiches on demand",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvSKOESuo5G8ZEMf2ZVUmLtXBuXSEDlVD8A3mte4P-eqVzWX59QNhJEd9eqYI"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537668-mike-mccarthys-ice-cream-sandwich-assistant-detailed-nfl-rumors-after-aaron-rodgers-comments",
+          "title": "Mike McCarthy's 'Ice Cream Sandwich' Assistant Detailed in NFL Rumors After Aaron Rodgers' Comments",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOmQBA1ks_gQ7gBmOBxEJ0LHah2-A9PEKlqxVbBY9zO8bPwNmFJk_FV6Kl_Xo"
+        },
+        {
+          "url": "https://demokratis.co.id/en/fehoko-mccarthy-ice-cream-claim",
+          "title": "Fehoko Reveals Ice Cream Assistant Claim Against Steelers Coach",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZT7_DEcbZ6kK6wT0JEo74KGNykxFI6KXGImJWCj10nWznP_fNDeRkPFNzXq4"
+        }
+      ]
+    },
+    {
+      "query": "teslarati",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T21:20:00Z",
+      "published_at": "2026-11-25T21:50:00Z",
       "related_news_urls": [
-        "https://www.khou.com/article/news/local/texas/houston-texas-stores-open-on-thanksgiving-2026/285-90871b79-c030-4ce9-bd48-c19c40e7f347",
-        "https://www.kcentv.com/article/news/local/whats-open-thanksgiving-waco-temple-killeen-surrounding-area/500-f50eaaf2-6e64-48ca-9f9f-b320020fa08e",
-        "https://www.click2houston.com/news/local/2026/11/23/thanksgiving-day-2026-whats-open-and-whats-not/"
+        "https://www.caranddriver.com/news/a74510768/tesla-driver-assistance-software-video-game/",
+        "https://finance.yahoo.com/markets/stocks/article/teslas-autonomy-ambitions-just-got-a-wall-street-vote-of-confidence-130035595.html",
+        "https://www.teslarati.com/tesla-removed-most-annoying-part-full-self-driving/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1L0E8S0-btYiXG8NHC9zCQhl2nw8i1AH6SK5GR2xz-31oY5eyn9kxYqmQ3M",
-      "image_credit": "KHOU",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIP63PyOK1O0oqF5faxa6_LZJPzBhSnHo4sO-CjnVQiNBxqWbXxc3P1Nssr7M",
+      "image_credit": "Car and Driver",
       "news": [
         {
-          "url": "https://www.khou.com/article/news/local/texas/houston-texas-stores-open-on-thanksgiving-2026/285-90871b79-c030-4ce9-bd48-c19c40e7f347",
-          "title": "Here are the Houston stores open and closed on Thanksgiving 2026",
-          "publisher": "KHOU",
+          "url": "https://www.caranddriver.com/news/a74510768/tesla-driver-assistance-software-video-game/",
+          "title": "Tesla’s Latest Edition of Its Driver-Assistance Software Now Looks Like a Video Game",
+          "publisher": "Car and Driver",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1L0E8S0-btYiXG8NHC9zCQhl2nw8i1AH6SK5GR2xz-31oY5eyn9kxYqmQ3M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIP63PyOK1O0oqF5faxa6_LZJPzBhSnHo4sO-CjnVQiNBxqWbXxc3P1Nssr7M"
         },
         {
-          "url": "https://www.kcentv.com/article/news/local/whats-open-thanksgiving-waco-temple-killeen-surrounding-area/500-f50eaaf2-6e64-48ca-9f9f-b320020fa08e",
-          "title": "Here's what's open on Thanksgiving in Waco, Temple, Killeen and the surrounding area",
-          "publisher": "kcentv.com",
+          "url": "https://finance.yahoo.com/markets/stocks/article/teslas-autonomy-ambitions-just-got-a-wall-street-vote-of-confidence-130035595.html",
+          "title": "Tesla's autonomy ambitions just got a Wall Street vote of confidence",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmefNetXJQJg6zltS-_VqWHrt9VAO1tNPXus2YH8qIm_weJ_TlbFQOG-g6ghE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTttOC-RB10VZ41SyWa2116U_gjfoxejaN2On_xu_8lJl8yb6jj-MRyDaqNKQ4"
         },
         {
-          "url": "https://www.click2houston.com/news/local/2026/11/23/thanksgiving-day-2026-whats-open-and-whats-not/",
-          "title": "Thanksgiving Day 2026: What’s open and closed across Greater Houston? Grocery stores, restaurants, retailers and more",
-          "publisher": "Click2Houston",
+          "url": "https://www.teslarati.com/tesla-removed-most-annoying-part-full-self-driving/",
+          "title": "Tesla removed the most annoying part of Full Self-Driving",
+          "publisher": "Teslarati",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTna3IH-yQCYy7trh-CTpDCkXrhNbXp_A0oMSgJaciCLJ-3R0iuZwh0Kub6xRQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a4eYL43ZX2xKK1QIU01nR1-ZDdDThatGVoNByYWeOVRG1XXfKkJYT705Y08"
         }
       ]
     },
     {
-      "query": "jojo romero",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T21:10:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/padres/video/jojo-romero-reportedly-signs-with-the-padres",
-        "https://www.mlbtraderumors.com/2026/11/padres-to-sign-jojo-romero.html",
-        "https://www.si.com/mlb/brewers/onsi/lefty-reliever-jojo-romero-signs-padres-free-agency-michael3"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScmsiNN8cbzfjK9fitphcjVge5GIc3FWbFWBlbXL-Np13TXVOaYJjPwZlVhEk",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/padres/video/jojo-romero-reportedly-signs-with-the-padres",
-          "title": "JoJo Romero reportedly signs with the Padres",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScmsiNN8cbzfjK9fitphcjVge5GIc3FWbFWBlbXL-Np13TXVOaYJjPwZlVhEk"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/padres-to-sign-jojo-romero.html",
-          "title": "Padres To Sign JoJo Romero",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG0ScrtaDvGelsx2pXqwVkgc6q7GedQq8vY6g3cc0nxx8XpMscg0JhlYbe-kM"
-        },
-        {
-          "url": "https://www.si.com/mlb/brewers/onsi/lefty-reliever-jojo-romero-signs-padres-free-agency-michael3",
-          "title": "Brewers Lose Lefty JoJo Romero to Padres in Free Agency",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS247Bmr8zzc61mEwwD1MGZSZJRemxT15okWrbUTejvYi7IUO7vK8ZUgeW9FpM"
-        }
-      ]
-    },
-    {
-      "query": "mindhunter",
+      "query": "donyell malen",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T21:10:00Z",
+      "published_at": "2026-11-25T21:50:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/david-fincher-reveals-real-reason-143235432.html",
-        "https://www.darkhorizons.com/fincher-netflix-wanted-mindhunter-to-be-csi/",
-        "https://www.toy-people.com/en/?p=116918"
+        "https://nos.nl/artikel/2641034-goal-malen-levert-roma-punt-op-bij-paris-saint-germain-liverpool-wint-ruim-in-brugge",
+        "https://www.nu.nl/voetbal/6417770/champions-league-barcelona-overloopt-sabah-met-0-4-voorsprong.html",
+        "https://www.telegraaf.nl/sport/voetbal/live-champions-league-as-roma-binnen-vijf-minuten-op-voorsprong-op-bezoek-bij-psg-liverpool-leidt-in-brugge/165047345.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPd02Bj9H79kcLoU9SVagrqgkaOdwh3Lc4P31Jw67XKhHmeIGNMwlFHwyiTB8",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp4ssSaOUfSEyXPIQnACDXV_fcVbrnx1vRuLp23l4FYwvKTGd6Za4CipsmLJQ",
+      "image_credit": "NOS",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/david-fincher-reveals-real-reason-143235432.html",
-          "title": "David Fincher Reveals the Real Reason Netflix Canceled 'Mindhunter' and Whether the Series Will Ever Return",
-          "publisher": "Yahoo",
+          "url": "https://nos.nl/artikel/2641034-goal-malen-levert-roma-punt-op-bij-paris-saint-germain-liverpool-wint-ruim-in-brugge",
+          "title": "Goal Malen levert Roma punt op bij Paris Saint-Germain, Liverpool wint ruim in Brugge",
+          "publisher": "NOS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPd02Bj9H79kcLoU9SVagrqgkaOdwh3Lc4P31Jw67XKhHmeIGNMwlFHwyiTB8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTp4ssSaOUfSEyXPIQnACDXV_fcVbrnx1vRuLp23l4FYwvKTGd6Za4CipsmLJQ"
         },
         {
-          "url": "https://www.darkhorizons.com/fincher-netflix-wanted-mindhunter-to-be-csi/",
-          "title": "Fincher: Netflix Wanted \"Mindhunter\" To Be CSI",
-          "publisher": "Dark Horizons",
+          "url": "https://www.nu.nl/voetbal/6417770/champions-league-barcelona-overloopt-sabah-met-0-4-voorsprong.html",
+          "title": "Champions League | Barcelona overloopt Sabah met 0-4-voorsprong",
+          "publisher": "NU",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGFkBtgH5eaowfMNddN8vyLH9DAYF622vkxn3aQ9RFhdYWrvcjYFwmLnXG540"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjDdjiHRvRhzMBX9nEAPFi-rKqFL9py1-_O6tjlFwB83fXJ9kIkUTN_fbUMuo"
         },
         {
-          "url": "https://www.toy-people.com/en/?p=116918",
-          "title": "David Fincher Says \"Mindhunter\" Drew Too Few Viewers for Its $100M-Plus Budget — Netflix Wanted More Guns and a \"CSI\" Makeover",
-          "publisher": "玩具人 TOY PEOPLE",
+          "url": "https://www.telegraaf.nl/sport/voetbal/live-champions-league-as-roma-binnen-vijf-minuten-op-voorsprong-op-bezoek-bij-psg-liverpool-leidt-in-brugge/165047345.html",
+          "title": "LIVE Champions League | AS Roma binnen vijf minuten op voorsprong op bezoek bij PSG, Liverpool leidt in Brugge",
+          "publisher": "De Telegraaf",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUkwR9Zdu9AE5iPt1LmOxa-NVWmUtBmWovHGs7mhcz0O1ss7vha7IV3uvJ6Vs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQa7vRbc3TBK7-JkqTZ9HmU-KXYW17iiiwzFTqOfzEuIikOAxHv-tnUmEKM9Lc"
         }
       ]
     }
