@@ -499,7 +499,7 @@ test('GitHub backup uses a separate protected field and a restricted context rou
  const panel=ui.slice(ui.indexOf('// The PAT never enters the composer'),ui.indexOf('// Chats and messages share a dedicated touch-scrolling viewport.'));
  assert.match(panel,/field\.type='password'/);
  assert.match(panel,/const pat=field\.value\.trim\(\);field\.value=''/);
- assert.match(panel,/fetch\(BRAIN\+'\/owner\/github-chat-session'/);
+ assert.match(panel,/backupFetch\(BRAIN\+'\/owner\/github-chat-session'/);
  assert.doesNotMatch(panel,/ownerReady\s*=\s*true|localStorage\.|sessionStorage\.|persistChat\(/);
  const generic=worker.slice(worker.indexOf('async function ownerAuthorized('),worker.indexOf('export default{'));
  assert.doesNotMatch(generic,/gc_|github-chat/);
