@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T19:01:25.454035Z",
+  "checked_at": "2026-11-25T19:31:07.026318Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kevin porter jr",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T18:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
-        "https://marcstein.substack.com/p/another-thanksgiving-week-helping",
-        "https://sports.yahoo.com/nba/articles/kevin-porter-jr-orlando-183459373.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvCQdjwZqbpg_P8Ft3MjEg2U4B3e4RhlnJ6iVsTuX_6vLA5K1CAbAVFJrhoYg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
-          "title": "Ex-Bucks guard Kevin Porter Jr. finalizing 2-year deal to join Magic, agent says",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvCQdjwZqbpg_P8Ft3MjEg2U4B3e4RhlnJ6iVsTuX_6vLA5K1CAbAVFJrhoYg"
-        },
-        {
-          "url": "https://marcstein.substack.com/p/another-thanksgiving-week-helping",
-          "title": "Another Thanksgiving Week helping of the latest Late Night NBA Intel",
-          "publisher": "The Stein Line",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZT2hGVvRq7C-dQVgNbQG57TfYoUtndzL2eYex5Sy18Wte6xQGR2OZqlehqFs"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/articles/kevin-porter-jr-orlando-183459373.html",
-          "title": "Kevin Porter Jr. to Orlando",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH8IjdidrbC6G99gne_0f0JKlGXTEu9w5nhMjirxAMSpTixDwzoRe8094aRKk"
-        }
-      ]
-    },
-    {
-      "query": "dow stocks",
+      "query": "sporting vs man utd",
       "approx_searches": "5000+",
-      "published_at": "2026-11-25T18:30:00Z",
+      "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
-        "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
-        "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html"
+        "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
+        "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/",
+        "https://www.si.com/soccer/sporting-cp-vs-man-utd-predictions-mauricio-pochettino-forget-nightmare-debut-11-25-26"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq pare losses as AI-fueled rout continues",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
-          "title": "Futures sink further into the red as tech worries resurge",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html",
-          "title": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFGBikquZxJVelgWez8uLDxd_QP4BUsWgs1axl6O6G2rLw7DwCbpZPzdTy4k"
-        }
-      ]
-    },
-    {
-      "query": "brandon aiyuk",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T18:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
-        "https://www.nfl.com/news/brandon-aiyuk-commanders-to-sign-ex-49ers-wr-practice-squad",
-        "https://www.nytimes.com/athletic/7811836/2026/11/25/adam-peters-brandon-aiyuk-commanders/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
-          "title": "Brandon Aiyuk finishes visit with Commanders; \"discussions ongoing,\" per agent",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns"
-        },
-        {
-          "url": "https://www.nfl.com/news/brandon-aiyuk-commanders-to-sign-ex-49ers-wr-practice-squad",
-          "title": "Commanders to sign ex-49ers WR Brandon Aiyuk to practice squad",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvsVwAISB3issDa1tx7kSOkXy6mBghglvwJHTSsAMw-Q7zFY_4woeS0T5MOME"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7811836/2026/11/25/adam-peters-brandon-aiyuk-commanders/",
-          "title": "Commanders GM Adam Peters praises Brandon Aiyuk, says team has ‘genuine interest’ - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrFSliYobooWeN0ts96g2koowArvrMTR5CiUzDs5G5rVdU5H3n-nsvJgt7KXI"
-        }
-      ]
-    },
-    {
-      "query": "rickea jackson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T18:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50595254/falcons-aware-insinuations-pearce-trying-call-ex-gf",
-        "https://www.usatoday.com/story/sports/nfl/falcons/2026/11/25/james-pearce-jr-rickea-jackson-social-media-post-comment/92959552007/",
-        "https://www.instagram.com/p/DgJOhfxgZfN/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKNTpDd1GhCW41EPdVpagUvSCm33W3zn7Cbpwd8Jg6URIwoxGPWkvAS-CPIo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50595254/falcons-aware-insinuations-pearce-trying-call-ex-gf",
-          "title": "Falcons 'aware' of insinuations Pearce still trying to contact ex-gf Jackson",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKNTpDd1GhCW41EPdVpagUvSCm33W3zn7Cbpwd8Jg6URIwoxGPWkvAS-CPIo"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/falcons/2026/11/25/james-pearce-jr-rickea-jackson-social-media-post-comment/92959552007/",
-          "title": "Falcons address comment made by ex-girlfriend of previously-suspended player",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsyb6kxlJmMPfwUPke9vT8T8GyjH44z_IC8eKcoM4ZUjtiEp0hALxzz4XLQfk"
-        },
-        {
-          "url": "https://www.instagram.com/p/DgJOhfxgZfN/",
-          "title": "#Roommates, WNBA star #RickeaJackson is opening up about an ongoing situation involving unwanted phone calls. ____________________________________ After reposting a TikTok showing ",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoO55bKhLyi0g7nABbBzxmNB0pYy3dk3byPLA9D9AEyHcGrGtIf8NAgl4qg8Q"
-        }
-      ]
-    },
-    {
-      "query": "champions",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T18:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/crd6151l6y7zt",
-        "https://www.chiesaditotti.com/roma-matchday-coverage/44407/psg-is-missing-its-biggest-difference-makers-roma-must-seize-the-opportunity",
-        "https://www.getfootballnewsfrance.com/2026/achraf-hakimi-says-that-psg-will-replace-desire-doue-and-khvicha-kvaratskhelia-all-together/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySTf2huYhL0dhjvyIZxFqSH6bAn0UlKe8oTFZnyO8hVDWam95ALp04Gu74PU",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt",
-          "title": "Paris Saint-Germain vs Roma: UEFA Champions League stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
+          "title": "Champions League: Pochettino's Man Utd visit Sporting, Brugge host Liverpool",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySTf2huYhL0dhjvyIZxFqSH6bAn0UlKe8oTFZnyO8hVDWam95ALp04Gu74PU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds"
         },
         {
-          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/44407/psg-is-missing-its-biggest-difference-makers-roma-must-seize-the-opportunity",
-          "title": "PSG Is Missing Its Biggest Difference-Makers. Roma Must Seize the Opportunity",
-          "publisher": "Chiesa Di Totti",
+          "url": "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/",
+          "title": "Sporting CP vs. Man United: Livestream Champions League Soccer From Anywhere",
+          "publisher": "CNET",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWwuulX8RUE6Z4ZrfZwQpNTockM0K1fXP-DpSopsLbHQAytyLmedkrwvK74n8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsBQRwCgImcXYYjd_GDvwg60VWx04njhjvoMXjd6DNzim7oJCg23xYKw-lrE"
         },
         {
-          "url": "https://www.getfootballnewsfrance.com/2026/achraf-hakimi-says-that-psg-will-replace-desire-doue-and-khvicha-kvaratskhelia-all-together/",
-          "title": "Achraf Hakimi says that PSG will replace Désiré Doué and Khvicha Kvaratskhelia 'all together'",
-          "publisher": "Get French Football News",
+          "url": "https://www.si.com/soccer/sporting-cp-vs-man-utd-predictions-mauricio-pochettino-forget-nightmare-debut-11-25-26",
+          "title": "Sporting CP vs. Man Utd Predictions: Mauricio Pochettino Out to Forget Nightmare Debut",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKFRPOL1NowSuO11kbu4Fr0zEDjWtvqltu_P8JxSe8_B-6_U4a04TTlNsYvY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0B-W_txwOnca0wNxZANQwejm0QxG28rmDdd3nXIh4hpgkf6SgWMfQZNVNZCY"
         }
       ]
     },
     {
-      "query": "chris creighton",
+      "query": "atlético vs viking",
       "approx_searches": "2000+",
-      "published_at": "2026-11-25T18:20:00Z",
+      "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
-        "https://www.detroitnews.com/story/sports/college/more-colleges/2026/11/25/chris-creighton-out-after-13-years-as-eastern-michigan-football-coach/92960236007/",
-        "https://sports.yahoo.com/college-football/articles/eastern-michigan-football-fires-coach-181856267.html",
-        "https://www.nytimes.com/athletic/7812225/2026/11/25/eastern-michigan-fires-coach-chris-creighton/"
+        "https://espndeportes.espn.com/futbol/europa/nota/_/id/17556159/atletico-madrid-vs-viking-fecha-5-uefa-champions-league-equipo-fecha-hora-y-tv-en-vivo",
+        "https://www.si.com/es-us/a-que-hora-es-el-partido-atletico-de-madrid-vs-viking-y-como-verlo-en-tv-y-streaming-online-25-11-2026",
+        "https://www.reutersconnect.com/item/simeone-los-nuevos-records-y-su-futuro-no-tengo-otro-plazo-que-el-viking/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzM4NDQwMDE"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXXa8oZroOmKSpg5at6O0kXo6rswiYBQLitQD5w95chM_GLTtIE5B2w2wWJo8",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/sports/college/more-colleges/2026/11/25/chris-creighton-out-after-13-years-as-eastern-michigan-football-coach/92960236007/",
-          "title": "Chris Creighton out after 13 seasons as EMU's football coach",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXXa8oZroOmKSpg5at6O0kXo6rswiYBQLitQD5w95chM_GLTtIE5B2w2wWJo8"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/eastern-michigan-football-fires-coach-181856267.html",
-          "title": "Eastern Michigan football fires coach Chris Creighton: Report",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-jTgQ-IkBtksLAaMvDziPcnOm3Ys0SFar8iT4XukhnSGqS9fTS1cwmzNUCXI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7812225/2026/11/25/eastern-michigan-fires-coach-chris-creighton/",
-          "title": "Eastern Michigan parts ways with coach Chris Creighton after 13 seasons",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8LM2WmUZjKB2HZopiyxJTGqu82QmMsJKlWOUtNeVzrpbnuCjpgu5Gk-NjUm4"
-        }
-      ]
-    },
-    {
-      "query": "barcelona",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T18:00:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league",
-        "https://www.france24.com/es/minuto-a-minuto/20261125-el-bar%C3%A7a-viaja-a-los-confines-de-la-uefa-para-enfrentarse-al-sabah-en-champions",
-        "https://elpais.com/deportes/futbol/2026-11-25/sabah-fc-barcelona-en-directo-el-partido-de-la-champions-league-en-vivo.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QWfn5RiKUoIiORMn_0sjIvh4E4VDreztfj4-3YqU7p2CDWZg1y_pLkGZjtk",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA71mXqhsxWwkhk9KUAWqFaPqXMbmkHemzU5NXdZ8XBFWgvn9M7sIfkgyWpyI",
       "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league",
-          "title": "Barcelona: posible alineación y probabilidades vs Sabah para la Champions",
+          "url": "https://espndeportes.espn.com/futbol/europa/nota/_/id/17556159/atletico-madrid-vs-viking-fecha-5-uefa-champions-league-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juegan Atlético Madrid vs. Viking por la fecha 5 de la UEFA Champions League: equipo, fecha, hora y TV en vivo",
           "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QWfn5RiKUoIiORMn_0sjIvh4E4VDreztfj4-3YqU7p2CDWZg1y_pLkGZjtk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA71mXqhsxWwkhk9KUAWqFaPqXMbmkHemzU5NXdZ8XBFWgvn9M7sIfkgyWpyI"
         },
         {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261125-el-bar%C3%A7a-viaja-a-los-confines-de-la-uefa-para-enfrentarse-al-sabah-en-champions",
-          "title": "El Barça viaja a los confines de la UEFA para enfrentarse al Sabah en Champions",
+          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-atletico-de-madrid-vs-viking-y-como-verlo-en-tv-y-streaming-online-25-11-2026",
+          "title": "¿A qué hora es el partido Atlético de Madrid vs Viking y cómo verlo en TV y streaming online?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvEYh_EGiLfEQdRhhHH3kQt4URUxB7tz3LNPkzePS6A9mXhCccPhk3Z4-pfrQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/simeone-los-nuevos-records-y-su-futuro-no-tengo-otro-plazo-que-el-viking/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzM4NDQwMDE",
+          "title": "Licensable video: Simeone, los nuevos récords y su futuro: “No tengo otro plazo que el Viking”",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjpfAbxC8I_BIVKED0XJELU80Yz6nMhETdIEVU1fMCmbqea5KjvXblo5_EzI"
+        }
+      ]
+    },
+    {
+      "query": "atlético madrid - viking",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T19:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c678292r8lddt",
+        "https://en.atleticodemadrid.com/noticias/targeting-three-crucial-points-at-the-ucl",
+        "https://www.besoccer.com/new/simeone-my-next-record-beating-viking-1443189"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL-OITnyPTvWu0jfMNga0coAOXzB5LZk5z8BF09DE6p3rGmk0Z-CBuog0U7gE",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c678292r8lddt",
+          "title": "Atlético Madrid vs Viking: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL-OITnyPTvWu0jfMNga0coAOXzB5LZk5z8BF09DE6p3rGmk0Z-CBuog0U7gE"
+        },
+        {
+          "url": "https://en.atleticodemadrid.com/noticias/targeting-three-crucial-points-at-the-ucl",
+          "title": "Club Atlético de Madrid - Targeting three crucial points at the UCL",
+          "publisher": "Club Atlético de Madrid",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC00P_Z22uOj9qJg7tiHN-3Jt6LIp72dqydv7e2fSI6CpzeXlLxxm6rGVcKw8"
+        },
+        {
+          "url": "https://www.besoccer.com/new/simeone-my-next-record-beating-viking-1443189",
+          "title": "Simeone: \"My next record? Beating Viking\"",
+          "publisher": "BeSoccer Livescore",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCn2c1zzHd1BNBonpWPpLnkH4tusq649K5Udqm7AE7hB6-d9RE1JdPMbyJl-E"
+        }
+      ]
+    },
+    {
+      "query": "losc - bayern",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T19:10:00Z",
+      "related_news_urls": [
+        "https://www.lemonde.fr/sport/live/2026/11/25/en-direct-psg-as-roma-et-lille-bayern-munich-suivez-les-matchs-de-ligue-des-champions-de-football_6815159_3242.html",
+        "https://www.footmercato.net/a6998334376709282955-lille-osc-bayern-munich-les-compositions-officielles",
+        "https://www.france24.com/fr/info-en-continu/20261125-ligue-des-champions-lille-en-qu%C3%AAte-d-un-exploit-face-%C3%A0-un-bayern-amoindri"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKuMy2hPot3_jp754qg-X0gHtpcVpAKn2bYOsn8Un4JM95q9f7JrFdizuoxa0",
+      "image_credit": "Le Monde.fr",
+      "news": [
+        {
+          "url": "https://www.lemonde.fr/sport/live/2026/11/25/en-direct-psg-as-roma-et-lille-bayern-munich-suivez-les-matchs-de-ligue-des-champions-de-football_6815159_3242.html",
+          "title": "EN DIRECT, PSG-AS Roma et Lille-Bayern Munich : suivez les matchs de Ligue des champions de football",
+          "publisher": "Le Monde.fr",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKuMy2hPot3_jp754qg-X0gHtpcVpAKn2bYOsn8Un4JM95q9f7JrFdizuoxa0"
+        },
+        {
+          "url": "https://www.footmercato.net/a6998334376709282955-lille-osc-bayern-munich-les-compositions-officielles",
+          "title": "Lille OSC - Bayern Munich : les compositions officielles",
+          "publisher": "Foot Mercato",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvNCvKp5pI5vaXqVq4HSXC29o9iGGicHTstW04FxzTUxPRWByp2VyuDwL0Sug"
+        },
+        {
+          "url": "https://www.france24.com/fr/info-en-continu/20261125-ligue-des-champions-lille-en-qu%C3%AAte-d-un-exploit-face-%C3%A0-un-bayern-amoindri",
+          "title": "Ligue des champions : Lille en quête d'un exploit face à un Bayern amoindri",
           "publisher": "France 24",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZHEVIMWOKnRWvfFfVqBcefv55pO6DunSBjy9jogRfxNfv5b0gAubt4oMXoQM"
-        },
-        {
-          "url": "https://elpais.com/deportes/futbol/2026-11-25/sabah-fc-barcelona-en-directo-el-partido-de-la-champions-league-en-vivo.html",
-          "title": "Sabah - FC Barcelona, en directo, el partido de la Champions League en vivo |Comienza el segundo tiempo",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbvvDLt7dfhGs3Hz53LDe5lE4_e9EPkqnM6p3bgO3BiY4NmofnGKbcqhvkn_w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBUlLMa7cTXLYfj1kw21IcSXSwTjUJw46dOgo09S9pzaE9jE98jDaBy62s1Yk"
         }
       ]
     },
     {
-      "query": "lebron james",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T18:00:00Z",
+      "query": "inter vs vfb stuttgart",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
-        "https://basketnews.com/news-260171-erik-spoelstra-gets-honest-about-lebron-james-ahead-of-miami-heat-76ers-game.html",
-        "https://www.nba.com/heat/videos/coach-spo-on-building-consistency-on-defense-and-facing-lebron-and-the-76ers",
-        "https://cwibc.co.id/en/spoelstra-heat-lebron-james"
+        "https://www.bbc.com/sport/football/live/ck9q848dq75xt",
+        "https://sports.yahoo.com/soccer/articles/confirmed-lineups-inter-vs-vfb-185000723.html",
+        "https://www.inter.it/en/news/inter-stuttgart-stadium-and-ticket-info-champions-league-2026-27"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlkNciH_N6yNO-64VR9_kiA4iWxEXn5rADjwcY3w444RkswMIv_GGnzVqkPR8",
-      "image_credit": "BasketNews.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThQfl35ro1lr_rki2aSMzZdHFS94dZPNrNwRU3-eD0yCZ1fbhgH_-F0UwEfcY",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://basketnews.com/news-260171-erik-spoelstra-gets-honest-about-lebron-james-ahead-of-miami-heat-76ers-game.html",
-          "title": "Erik Spoelstra gets honest about LeBron James ahead of Miami Heat, 76ers game",
-          "publisher": "BasketNews.com",
+          "url": "https://www.bbc.com/sport/football/live/ck9q848dq75xt",
+          "title": "Inter Milan vs Stuttgart: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlkNciH_N6yNO-64VR9_kiA4iWxEXn5rADjwcY3w444RkswMIv_GGnzVqkPR8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThQfl35ro1lr_rki2aSMzZdHFS94dZPNrNwRU3-eD0yCZ1fbhgH_-F0UwEfcY"
         },
         {
-          "url": "https://www.nba.com/heat/videos/coach-spo-on-building-consistency-on-defense-and-facing-lebron-and-the-76ers",
-          "title": "Coach Spo on building consistency on defense, and facing Lebron and the 76ers",
-          "publisher": "NBA.com",
+          "url": "https://sports.yahoo.com/soccer/articles/confirmed-lineups-inter-vs-vfb-185000723.html",
+          "title": "Confirmed lineups: Inter vs. VfB Stuttgart",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7jQFDIw3nUXN2cRbdqiCDBiujN2RXIXIjUEDJKrHvEp7saJH6KLLKIeI-0Ac"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVkU38gk7u7rbFr_2b9jzYuCxgHvtkTUDyc8oMIRgKAg_03dNlan9U4y8DyME"
         },
         {
-          "url": "https://cwibc.co.id/en/spoelstra-heat-lebron-james",
-          "title": "Spoelstra Warns Heat Against Underestimating LeBron James",
-          "publisher": "cwibc.co.id",
+          "url": "https://www.inter.it/en/news/inter-stuttgart-stadium-and-ticket-info-champions-league-2026-27",
+          "title": "Inter vs. Stuttgart: Last remaining tickets and information for fans",
+          "publisher": "Inter.it",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgMpvmq_IOfclj5yNB2nbJQ2xsTk-bCYI9sG_ALsid6oFljzC7KUBZyGl3bcw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBdVgVkYu0tgoQqXGwynyXXkFYoWAFklCaAf70zP_NJeuzlS-8QafyM-m1w5k"
         }
       ]
     },
     {
-      "query": "wright state basketball",
+      "query": "club brugge vs liverpool",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T18:00:00Z",
+      "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401927398",
-        "https://gobonnies.com/news/2026/11/24/mens-basketball-au-dukes-game-winner-lifts-bonnies-past-wright-state-72-70-in-overtime-thriller.aspx",
-        "https://www.daytondailynews.com/tncms/asset/editorial/3d8a7236-20b8-5850-ae3c-ba65eceb8830"
+        "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live?page=with:block-6b07315f8f082c4b24a3666c",
+        "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE_BfFQJSF3bI4nwt-zdgKwQv6mZYmKnlVa6hANqaZIh3ftx8gGvP9FJ1RFZc",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401927398",
-          "title": "St. Bonaventure 72-70 Wright State (Nov 24, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
+          "title": "Club Brugge vs Liverpool: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRE_BfFQJSF3bI4nwt-zdgKwQv6mZYmKnlVa6hANqaZIh3ftx8gGvP9FJ1RFZc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A"
         },
         {
-          "url": "https://gobonnies.com/news/2026/11/24/mens-basketball-au-dukes-game-winner-lifts-bonnies-past-wright-state-72-70-in-overtime-thriller.aspx",
-          "title": "Au-Duke’s Game-Winner Lifts Bonnies Past Wright State, 72-70, in Overtime Thriller",
-          "publisher": "St. Bonaventure",
+          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live?page=with:block-6b07315f8f082c4b24a3666c",
+          "title": "Club Brugge v Liverpool, Lille v Bayern Munich and more: Champions League clockwatch – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbVtwdDhFWc6rKBfjFMTXuQRER-6ad84YrNrOjeQtLBrXcPIxRDYaKlu_0slE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1XsVezEG1uch-zNwrgaHoC-2ixYxNQ5Lb3OvWiMerxSYoKq7rZhlyc6amAek"
         },
         {
-          "url": "https://www.daytondailynews.com/tncms/asset/editorial/3d8a7236-20b8-5850-ae3c-ba65eceb8830",
-          "title": "Wright State basketball: St. Bonaventure hands Raiders first loss with last-second shot in OT",
-          "publisher": "Dayton Daily News",
+          "url": "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update",
+          "title": "Ryan Gravenberch and Cody Gakpo injury update",
+          "publisher": "Liverpool FC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTq33YJeCXBcHd2syB9QQqGxZ0DAfaRpoKRunZiCSstzqXLs-2PRqJdLVluZU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS0GA2WZuLHUJteCgsLRt5IRRPoQVp8clOnNuo1NXG4drEawm_wZHld_5JbDg"
         }
       ]
     },
     {
-      "query": "pedri",
+      "query": "sporting lisboa - manchester united",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T18:00:00Z",
+      "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
-        "https://www.sport.es/es/videos/barca/20261125/marc-bernal-confiesa-regalo-barcelona/136850016.shtml",
-        "https://www.elnacional.cat/enblau/es/television/pedri-cumple-24-anos-dedicatoria-mas-romantica-alejandra-su-pareja-mi-persona-favorita_1731041_102.html",
-        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league"
+        "https://www.courant.com/2026/11/23/pochettino-vuelve-a-la-champions-con-un-united-en-apuros-psg-y-real-madrid-siguen-perfectos/",
+        "https://es-us.noticias.yahoo.com/deportes/sporting-cp-vs-manchester-united-124200178.html",
+        "https://www.goal.com/es-mx/noticias/es-imposible-hacer-un-analisis-fonseca-admite-que-el-manchester-united-de-pochettino-es-una-incognita-antes-de-la-champions-league/blt2d81e2a620ed49b7"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanm9R96vmDvpFzsJydZcbzIs1aFBzJV3ZZJBwzQPS4ysRWAcw0zKHVS4duxs",
-      "image_credit": "SPORT",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7XwboCynAdPfngL8F4RZD8LcEEbyvsXGoR4pQCFLerFiTUWsjcqRJXZXVsdo",
+      "image_credit": "Hartford Courant",
       "news": [
         {
-          "url": "https://www.sport.es/es/videos/barca/20261125/marc-bernal-confiesa-regalo-barcelona/136850016.shtml",
-          "title": "Marc Bernal confiesa el regalo del Barcelona a Pedri para su cumpleaños: \"Un par de collejas\"",
-          "publisher": "SPORT",
+          "url": "https://www.courant.com/2026/11/23/pochettino-vuelve-a-la-champions-con-un-united-en-apuros-psg-y-real-madrid-siguen-perfectos/",
+          "title": "Pochettino vuelve a la Champions con un United en apuros. PSG y Real Madrid siguen perfectos",
+          "publisher": "Hartford Courant",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanm9R96vmDvpFzsJydZcbzIs1aFBzJV3ZZJBwzQPS4ysRWAcw0zKHVS4duxs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7XwboCynAdPfngL8F4RZD8LcEEbyvsXGoR4pQCFLerFiTUWsjcqRJXZXVsdo"
         },
         {
-          "url": "https://www.elnacional.cat/enblau/es/television/pedri-cumple-24-anos-dedicatoria-mas-romantica-alejandra-su-pareja-mi-persona-favorita_1731041_102.html",
-          "title": "Pedri cumple 24 años, la dedicatoria más romántica de Alejandra, su pareja: \"Mi persona favorita, te quiero\"",
-          "publisher": "El Nacional.cat",
+          "url": "https://es-us.noticias.yahoo.com/deportes/sporting-cp-vs-manchester-united-124200178.html",
+          "title": "SPORTING CP vs. MANCHESTER UNITED: LA GRAN OPORTUNIDAD DE LOS RED DEVILS PARA DAR EL GOLPE Y ENDEREZAR EL RUMBO",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCfpmQx53ITYptKZjoF0sig6y7oMXb67Ij0r1H05-YKQ8eztIoVdVWhMQ_IQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS1GJQnJpjcmJqT6MNghdqEm3HKMEpvRZ6Iaaxwzjk_O5Mq4EefEqt1pTn6Wo"
         },
         {
-          "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league",
-          "title": "Barcelona: posible alineación y probabilidades vs Sabah para la Champions",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.goal.com/es-mx/noticias/es-imposible-hacer-un-analisis-fonseca-admite-que-el-manchester-united-de-pochettino-es-una-incognita-antes-de-la-champions-league/blt2d81e2a620ed49b7",
+          "title": "«Es imposible hacer un análisis»: Fonseca admite que el Manchester United de Pochettino es una incógnita antes de la Champions League",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QWfn5RiKUoIiORMn_0sjIvh4E4VDreztfj4-3YqU7p2CDWZg1y_pLkGZjtk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtLEVmEnwm-zXq_h6jVnllCo3aletCeqPqtQpFCsS21VoH8VQ-6qdDterK4U"
+        }
+      ]
+    },
+    {
+      "query": "shakhtar donetsk vs fenerbahçe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T19:10:00Z",
+      "related_news_urls": [
+        "https://www.reutersconnect.com/item/uefa-champions-league-shakhtar-donetsk-v-fenerbahce/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxR09CREU",
+        "https://www.idman.biz/en/news/world-football/168489",
+        "https://en.haberler.com/bombshell-prediction-from-artificial-intelligence-2344466/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStuBkWySJvFV7V6qpEHeURsBWPqiW_crA849xvSeSwW0joJRdkwhwUWs4-Ufw",
+      "image_credit": "Reuters Connect",
+      "news": [
+        {
+          "url": "https://www.reutersconnect.com/item/uefa-champions-league-shakhtar-donetsk-v-fenerbahce/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxR09CREU",
+          "title": "Licensable picture: UEFA Champions League - Shakhtar Donetsk v Fenerbahce",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStuBkWySJvFV7V6qpEHeURsBWPqiW_crA849xvSeSwW0joJRdkwhwUWs4-Ufw"
+        },
+        {
+          "url": "https://www.idman.biz/en/news/world-football/168489",
+          "title": "Arda Turan and Emre Belozoglu will make history at Stamford Bridge",
+          "publisher": "İdman.Biz",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs-jMHT7V_gePJYfQpd9aEyYQDbzjhohHnabe3wUMh-CLG7QNOxMZg4rN2R6A"
+        },
+        {
+          "url": "https://en.haberler.com/bombshell-prediction-from-artificial-intelligence-2344466/",
+          "title": "Bombshell prediction from artificial intelligence for the Fenerbahçe match! It announced the score and goalscorers.",
+          "publisher": "Haberler.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-F5Z3qXvnOLJuE3GXAlnv5gNT5pGYdGiNZMXzbaIoO0wcqNExcnGvOcnHvA"
+        }
+      ]
+    },
+    {
+      "query": "arizona state vs lsu",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T19:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/arizona-state-sun-devils-vs-lsu-tigers-prediction-odds-2026-11-25/",
+        "https://www.star-telegram.com/sports/article318252284.html",
+        "https://www.cbssports.com/betting/news/arizona-state-vs-no-20-lsu-cbb-picks-sun-devils-should-hang-in-matinee-game-of-unbeatens-from-palm-springs/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBLB9elsi5eXEC7UXfVphPWgbAHIFTHx6GY4ldMBo1daSRScGXdRQTGodUSi0",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/arizona-state-sun-devils-vs-lsu-tigers-prediction-odds-2026-11-25/",
+          "title": "Arizona State vs LSU Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBLB9elsi5eXEC7UXfVphPWgbAHIFTHx6GY4ldMBo1daSRScGXdRQTGodUSi0"
+        },
+        {
+          "url": "https://www.star-telegram.com/sports/article318252284.html",
+          "title": "How to watch LSU basketball vs. Arizona State: TV channel, stream",
+          "publisher": "Fort Worth Star-Telegram",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4iHaY3GlZ9hxd9f5xEbGPnLHbrsv8vyNzyKU0DbowfLFApYauSEsOYal-s0"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/arizona-state-vs-no-20-lsu-cbb-picks-sun-devils-should-hang-in-matinee-game-of-unbeatens-from-palm-springs/",
+          "title": "Arizona State vs. No. 20 LSU CBB picks: Sun Devils should hang in matinee game of unbeatens from Palm Springs",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiQALc-P4IxxMofSqIefGe8htF4yYpsMqBLZC_e4KvMhrSFR1WuqHVD03ELfA"
+        }
+      ]
+    },
+    {
+      "query": "yale vs wright state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T19:10:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/basketball/yale-bulldogs-vs-wright-state-raiders-prediction-odds-2026-11-25/",
+        "https://www.actionnetwork.com/ncaab/college-basketball-odds-pick-parlay-wednesday-11-25-2026",
+        "https://kayosports.com.au/en-AU/competitor/Competitor:a614b5crp7dvejv6no1el1yt2"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/yale-bulldogs-vs-wright-state-raiders-prediction-odds-2026-11-25/",
+          "title": "Yale vs Wright State Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
+        },
+        {
+          "url": "https://www.actionnetwork.com/ncaab/college-basketball-odds-pick-parlay-wednesday-11-25-2026",
+          "title": "College Basketball Wednesday Predictions: 3 Picks & Boosted Parlay",
+          "publisher": "Action Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMe6ATbl8VYSdsVTytk0-OwxsUEmY_yRguAk2Gupkxd0P6bGPeXI7HtzqD2Q"
+        },
+        {
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:a614b5crp7dvejv6no1el1yt2",
+          "title": "Watch Wright state Live",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTM4qKGs4xtq3XMzVNuw4lapLnjZLIjO4VLu4tx-H6viUG7oJs7nAEunkrC4Vs"
         }
       ]
     }
