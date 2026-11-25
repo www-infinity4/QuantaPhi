@@ -128,3 +128,15 @@ and rollback are actually verified. Merging a deployment template does not
 install a server, export data, repair D1 limits, reduce a bill, or recover a
 wallet. No new Cloudflare subscription or Google paid resource is required
 for this source-only work.
+
+## 4. Independent model readiness (synthetic only)
+
+On the verified owner host, configure an already installed local Ollama runtime to listen on loopback only, with cloud features disabled. Install a suitable local model separately under the owner's hardware, storage and licensing constraints. The probe does not install packages, pull models, expose a port, or choose a paid provider.
+
+```bash
+node distributed-vault/local-inference-probe.mjs YOUR_INSTALLED_MODEL_TAG
+```
+
+Use the exact installed model tag; this check sends only a fixed arithmetic question to 127.0.0.1:11434/api/chat and requires a completed matching model response and generated-token count. No real conversation, private source, wallet token or credential is sent. A successful receipt verifies only that this loopback API responded to a synthetic check; it does not establish offline-only runtime configuration, owner authentication, signed repository execution, or production routing. Verify network isolation and model provenance separately before routing real owner prompts. The existing Cloudflare path remains unchanged.
+
+API contract: https://docs.ollama.com/api/chat
