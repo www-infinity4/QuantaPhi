@@ -3,17 +3,192 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T13:30:51.373126Z",
+  "checked_at": "2026-11-25T14:01:27.939438Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kids can community center",
+      "query": "wizards of the coast lawsuit printmtg",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:40:00Z",
+      "related_news_urls": [
+        "https://www.king5.com/article/news/local/renton-based-wizards-of-the-coast-sues-utah-family-alleged-counterfeit-magic-cards/281-40f960a8-658a-4775-b1a4-15e26ceaf8a6",
+        "https://aftermath.site/wizards-of-the-coast-magic-the-gathering-proxies-lawsuit/",
+        "https://www.polygon.com/wizards-of-the-coast-magic-proxy-lawsuit/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFQw8A28sq7o21FaTSyQU4v6gm_dA8qLo0Vo8D0rA2mDCKO5k-DmOSrovgrE",
+      "image_credit": "KING5.com",
+      "news": [
+        {
+          "url": "https://www.king5.com/article/news/local/renton-based-wizards-of-the-coast-sues-utah-family-alleged-counterfeit-magic-cards/281-40f960a8-658a-4775-b1a4-15e26ceaf8a6",
+          "title": "Renton-based Wizards of the Coast sues Utah family for $26.5 million over alleged counterfeit Magic cards",
+          "publisher": "KING5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFQw8A28sq7o21FaTSyQU4v6gm_dA8qLo0Vo8D0rA2mDCKO5k-DmOSrovgrE"
+        },
+        {
+          "url": "https://aftermath.site/wizards-of-the-coast-magic-the-gathering-proxies-lawsuit/",
+          "title": "Wizards of the Coast Suing Alleged Magic: The Gathering Counterfeiters",
+          "publisher": "Aftermath",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSQOMexZ3jMnCJDmTFE2jsyMO0GLtXJtNe_8koh7NdJHoBwVBXRKAz26jdOa8"
+        },
+        {
+          "url": "https://www.polygon.com/wizards-of-the-coast-magic-proxy-lawsuit/",
+          "title": "Wizards of the Coast's War Against MTG Proxies Isn't as Bad as It Sounds",
+          "publisher": "Polygon.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNxq4GR5_UhE6mNV-P88YGS-dpASZvd9-aOW6LucNtgBBgw_-sic6ArD1lFX4"
+        }
+      ]
+    },
+    {
+      "query": "pce report today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
+        "https://www.bloomberg.com/news/articles/2026-11-25/treasuries-rise-across-curve-as-ai-concerns-dent-risk-sentiment",
+        "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
+          "title": "Treasury and European Government Bond Yields Fall Ahead of PCE Inflation Data",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-25/treasuries-rise-across-curve-as-ai-concerns-dent-risk-sentiment",
+          "title": "Treasuries Rise Across Curve as AI Concerns Dent Risk Sentiment",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI"
+        },
+        {
+          "url": "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/",
+          "title": "Rates Spark: Treasuries with blinkers on",
+          "publisher": "ING Think",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoJUMfz11Ki48LCWIwrd4cFL0kkVhjHOLlIgWPxH42SynqbYT3heMlLMN6iOc"
+        }
+      ]
+    },
+    {
+      "query": "pce data",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/india/gold-ticks-lower-ahead-us-inflation-data-2026-11-25/",
+        "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
+        "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf_vKEzZifQC1-iccrG7yNiA_9TzF-ShRdwFhAbExu4A0Nr__MkK8LcOlW9Y",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/india/gold-ticks-lower-ahead-us-inflation-data-2026-11-25/",
+          "title": "Gold falters ahead of key US inflation print",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf_vKEzZifQC1-iccrG7yNiA_9TzF-ShRdwFhAbExu4A0Nr__MkK8LcOlW9Y"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
+          "title": "Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq0ABwZiayajcCetGMK8gD7nLg4Ym9xsvtqQ1YVlE7lz-0shBgUXFvL8m0hvg"
+        },
+        {
+          "url": "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
+          "title": "Gold Futures Rebound as Nvidia News Lifts Markets",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BACqMVovQtbRsVJPRSl4x1l8cmrjABBN9BuB8b9yBpQ278ZKa98HC-p5G4g"
+        }
+      ]
+    },
+    {
+      "query": "brooks koepka bryson dechambeau feud",
       "approx_searches": "500+",
+      "published_at": "2026-11-25T13:20:00Z",
+      "related_news_urls": [
+        "https://www.golfchannel.com/pga-tour/news/brooks-koepka-takes-another-bryson-dig-my-teammate-didnt-hole-a-putt-the-entire-time",
+        "https://www.golfdigest.com/story/bryson-dechambeau-catches-stray-from-brooks-koepka-during-skins-game-press-conference",
+        "https://peradaban.id/en/koepka-dechambeau-feud-showdown"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FyUQiuUDO_JhyMVjho7dtZ0U5vz6w9QHUuqwK8JxTG8bbx-KdTEvZwlnMKE",
+      "image_credit": "Golf Channel",
+      "news": [
+        {
+          "url": "https://www.golfchannel.com/pga-tour/news/brooks-koepka-takes-another-bryson-dig-my-teammate-didnt-hole-a-putt-the-entire-time",
+          "title": "'My teammate didn't hole a putt the entire time': Koepka takes another dig at DeChambeau",
+          "publisher": "Golf Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FyUQiuUDO_JhyMVjho7dtZ0U5vz6w9QHUuqwK8JxTG8bbx-KdTEvZwlnMKE"
+        },
+        {
+          "url": "https://www.golfdigest.com/story/bryson-dechambeau-catches-stray-from-brooks-koepka-during-skins-game-press-conference",
+          "title": "Bryson DeChambeau catches stray from Brooks Koepka during Skins Game press conference",
+          "publisher": "Golf Digest",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQ88uvtRf8AyrZ2B7fWAT2VGlXeVlYi7k_EYDWZ_8cbhrDMPtfjEQdCNYTg-4"
+        },
+        {
+          "url": "https://peradaban.id/en/koepka-dechambeau-feud-showdown",
+          "title": "Koepka Renews DeChambeau Feud After 2024 Exhibition Defeat",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHxMbcvRB-leLAEd7kA2Oy3VJ54UwVAHnTm6C0vMiJ1dfraNl2qf0nCj3rViM"
+        }
+      ]
+    },
+    {
+      "query": "pce",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T13:10:00Z",
+      "related_news_urls": [
+        "https://www.bloomberg.com/news/articles/2026-11-25/us-consumer-spending-stalls-core-pce-rises-0-3-for-third-month",
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026/card/the-fed-s-inflation-problem-worsened-last-month-RxwnpRG4LHJZkJzTlwDm",
+        "https://www.investors.com/news/pce-inflation-oct-federal-reserve-sp-500-ai-nvidia-liquidity-crunch/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOghF2FVIgpBqziykU95CaMFEnYa_jhe0GINesTU0EH4ekF1ZjYEXbudV3zEY",
+      "image_credit": "Bloomberg",
+      "news": [
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-25/us-consumer-spending-stalls-core-pce-rises-0-3-for-third-month",
+          "title": "US Consumer Spending Stalls, Core PCE Rises 0.3% for Third Month",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOghF2FVIgpBqziykU95CaMFEnYa_jhe0GINesTU0EH4ekF1ZjYEXbudV3zEY"
+        },
+        {
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026/card/the-fed-s-inflation-problem-worsened-last-month-RxwnpRG4LHJZkJzTlwDm",
+          "title": "The Fed's Inflation Problem Worsened Last Month",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
+        },
+        {
+          "url": "https://www.investors.com/news/pce-inflation-oct-federal-reserve-sp-500-ai-nvidia-liquidity-crunch/",
+          "title": "Inflation Data Due As Fed Fears Worsen Market Volatility",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgcBJYOsIQuJjPmSF3qcFxvivTq4KlpQ2tGHyA_dUlMGlmV7hg7roCGl3xkos"
+        }
+      ]
+    },
+    {
+      "query": "kids can community center",
+      "approx_searches": "1000+",
       "published_at": "2026-11-25T13:10:00Z",
       "related_news_urls": [
         "https://www.wowt.com/2026/11/25/south-omaha-childrens-center-homicide-suspect-arrested-attempting-fly-france/",
-        "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
-        "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html"
+        "https://www.wowt.com/2026/11/25/live-11-am-omaha-police-give-update-suspect-brutal-homicide-outside-childrens-center/",
+        "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818",
       "image_credit": "WOWT",
@@ -26,53 +201,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818"
         },
         {
+          "url": "https://www.wowt.com/2026/11/25/live-11-am-omaha-police-give-update-suspect-brutal-homicide-outside-childrens-center/",
+          "title": "LIVE AT 11 A.M. - Omaha Police to give update on suspect in 'brutal' homicide outside children's center",
+          "publisher": "WOWT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkFncAqp7AblsR1vtnL9g7WP-KNJhQGLlUxDySt684ahm6x5XHdvzYQwGRdU"
+        },
+        {
           "url": "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
           "title": "Omaha police arrest man connected to homicide at Kids Can Community Center",
           "publisher": "KETV",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXDMqN3kGSdLuVbLeN4VIce94ePdGlMLsWk_IpoAJ0hiow99FEgeHUohrZFk0"
-        },
-        {
-          "url": "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html",
-          "title": "Woman, 22, fatally stabbed in Omaha early childhood education center parking lot",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15-nBz5AtUlacsYL0gfjETUvaRhQhRyiZpOTNr53aWeBpLrAkx4D89qmxDj4"
-        }
-      ]
-    },
-    {
-      "query": "pce",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:10:00Z",
-      "related_news_urls": [
-        "https://investinglive.com/central-banks/us-pce-preview-inflation-seen-near-3-8-in-the-fed-s-last-read-before-a-december-hike/",
-        "https://www.yardeniquicktakes.com/economic-week-ahead-november-23-27/",
-        "https://www.bloomberg.com/news/articles/2026-11-21/us-consumers-are-holding-up-against-inflation-going-into-holiday-season"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD2uLGk811gLVFdii161G0Y8PJVCxme5XEp9u3sQlWnXtynGYzTVLG2506Ww",
-      "image_credit": "investingLive",
-      "news": [
-        {
-          "url": "https://investinglive.com/central-banks/us-pce-preview-inflation-seen-near-3-8-in-the-fed-s-last-read-before-a-december-hike/",
-          "title": "US PCE preview: inflation seen near 3.8% in the Fed's last read before a December hike",
-          "publisher": "investingLive",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD2uLGk811gLVFdii161G0Y8PJVCxme5XEp9u3sQlWnXtynGYzTVLG2506Ww"
-        },
-        {
-          "url": "https://www.yardeniquicktakes.com/economic-week-ahead-november-23-27/",
-          "title": "ECONOMIC WEEK AHEAD: November 23-27",
-          "publisher": "Yardeni QuickTakes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTynayYvOvnR6dZhIU-Xdpp3H8D11t6LYkDW4bnY32-i5AJlP5CmtDZsis3wDE"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-21/us-consumers-are-holding-up-against-inflation-going-into-holiday-season",
-          "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRVrGMD_ksXcaSkjr2whiBf2r8jvfajx71p1nC975Wz4HWNm3Cubk40Ihre6c"
         }
       ]
     },
@@ -82,8 +222,8 @@
       "published_at": "2026-11-25T13:10:00Z",
       "related_news_urls": [
         "https://www.pushsquare.com/news/2026/11/final-4-ps-plus-extra-games-for-november-2026-available-to-download-now",
-        "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch",
-        "https://www.operationsports.com/motogp-26-and-cricket-26-now-included-with-playstation-plus-extra-and-premium/"
+        "https://digg.com/gaming/w9l9a6p5",
+        "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic",
       "image_credit": "Push Square",
@@ -96,18 +236,88 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic"
         },
         {
+          "url": "https://digg.com/gaming/w9l9a6p5",
+          "title": "PS Plus Extra reportedly wraps November with four games and a pirate on board",
+          "publisher": "Digg",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYPLu0GhSnS3MC3fn-jcAwHgEVfo67zznUC6B9uxEEdK2Kcy0rap7dMZcBXk"
+        },
+        {
           "url": "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch",
           "title": "PS Plus Adds Acclaimed 2025 Adventure Game to Catalog",
           "publisher": "PlayStation LifeStyle",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcqFwEody4FpBVEarJNVxIvqofyIJQezv6H2S9hdneoR-gqXYBGx-8oGw9lfs"
+        }
+      ]
+    },
+    {
+      "query": "2028 crv",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:00:00Z",
+      "related_news_urls": [
+        "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
+        "https://www.newsbreak.com/carbuzz-com-510675/5021833436274-honda-s-new-three-row-suv-for-japan-previews-hybrid-tech-for-america",
+        "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA",
+      "image_credit": "Car and Driver",
+      "news": [
+        {
+          "url": "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
+          "title": "Next-Gen 2028 Honda CR-V Goes Hybrid Only, and It’s a Fuel-Sipping Family SUV Worth Waiting For",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA"
         },
         {
-          "url": "https://www.operationsports.com/motogp-26-and-cricket-26-now-included-with-playstation-plus-extra-and-premium/",
-          "title": "MotoGP 26 and Cricket 26 Now Included with PlayStation Plus Extra and Premium",
-          "publisher": "Operation Sports",
+          "url": "https://www.newsbreak.com/carbuzz-com-510675/5021833436274-honda-s-new-three-row-suv-for-japan-previews-hybrid-tech-for-america",
+          "title": "Honda's New Three-Row SUV For Japan Previews Hybrid Tech For America",
+          "publisher": "NewsBreak: Local News & Alerts",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVrcJ3UR8lWZ16J-7euMXpZm8RMVPrAVE4dlZRZnF0fDvUdKI5G4kDGWrg3Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCp11v-hFXh41q5dTBkZlhpNZwkRPZZkpRaI9Lmc50Pn59Zi3gR40_BKtSVZs"
+        },
+        {
+          "url": "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
+          "title": "Honda Details 2028 CR-V's 2.0L Hybrid Powertrain With Available DualPower eAWD",
+          "publisher": "autoevolution",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_xrtxRM-YV13cZuacRkWMVA2MkZnbRxx3XtmyAYSpHqQyUHDOv9X4c0e7dDM"
+        }
+      ]
+    },
+    {
+      "query": "nolan wells",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:00:00Z",
+      "related_news_urls": [
+        "https://edition.cnn.com/2026/11/24/us/horn-island-mississippi-nolan-wells",
+        "https://www.sunherald.com/news/local/crime/article318161078.html",
+        "https://www.shatterthestandards.com/p/we-will-not-stop-talking-about-nolan"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eFhp1JoPdxf0VjN7zvwiDB8UbHJldn0VcN_AhOUXfpBE9JniCcCWX9YbWDo",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://edition.cnn.com/2026/11/24/us/horn-island-mississippi-nolan-wells",
+          "title": "Horn Island, where beauty and serenity meet the mystery surrounding Nolan Wells’ death",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eFhp1JoPdxf0VjN7zvwiDB8UbHJldn0VcN_AhOUXfpBE9JniCcCWX9YbWDo"
+        },
+        {
+          "url": "https://www.sunherald.com/news/local/crime/article318161078.html",
+          "title": "‘Bullets in your head.’ Arrest made over threat to kill Jackson County DA",
+          "publisher": "Sun Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS2nlHDjr_zLNQSe-fAEKZ5zUHHCt10IUib97S2Kwgk_O13TcChuCr76qmVl0"
+        },
+        {
+          "url": "https://www.shatterthestandards.com/p/we-will-not-stop-talking-about-nolan",
+          "title": "We Will Not Stop Talking About Nolan Wells",
+          "publisher": "Shatter the Standards",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTgrenCZADkgHqp7ZjWADIynIleYwL63vudnMXdMZuMGzLb-uCKQEZm_UzbMs"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "Oceania Football Confederation",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUJe6cKZBMsMTm0Tldz8rNZbuYMXC-K_l5BABg2X5XNkSbqLxxQmHmq7GFFSE"
-        }
-      ]
-    },
-    {
-      "query": "2028 crv",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T13:00:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
-        "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
-        "https://www.caranddriver.com/honda/cr-v-hybrid-2028"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
-          "title": "Next-Gen 2028 Honda CR-V Goes Hybrid Only, and It’s a Fuel-Sipping Family SUV Worth Waiting For",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA"
-        },
-        {
-          "url": "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
-          "title": "Honda Details 2028 CR-V's 2.0L Hybrid Powertrain With Available DualPower eAWD",
-          "publisher": "autoevolution",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_xrtxRM-YV13cZuacRkWMVA2MkZnbRxx3XtmyAYSpHqQyUHDOv9X4c0e7dDM"
-        },
-        {
-          "url": "https://www.caranddriver.com/honda/cr-v-hybrid-2028",
-          "title": "Brand New and Hybrid Only, the 2028 Honda CR-V’s Arrival Is Imminent",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZMc-inWDVF3b3Gggx27zfRuUWDkiP34LBPl5yTRL1s9trDHwTW1uMWsW5fA"
-        }
-      ]
-    },
-    {
-      "query": "stock market hours today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T13:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
-        "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-          "title": "Is the stock market open on Thanksgiving and Black Friday?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ"
-        },
-        {
-          "url": "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
-          "title": "NYSE and Nasdaq Close Early on Black Friday",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCspxNj4oVIp6-nxGHAHbn81YSTzQ2OWXexg2fWGAHy1HDHIob92vZcwWSPc"
-        },
-        {
-          "url": "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
-          "title": "US Public Holiday Trading Hours Adjustment Notice | 26 Nov 2026",
-          "publisher": "EBC Financial Group",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDw47nDCE7q_HwW1a7A_F66g508QPiiT-Rrq5XxcO5xYkSfaArj6swjcfF18"
-        }
-      ]
-    },
-    {
-      "query": "target black friday 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T12:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
-        "https://www.abc4.com/news/local-news/free-gift-cards-target-utah/",
-        "https://www.today.com/shop/best-target-black-friday-deals-2026-rcna601845"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
-          "title": "I cover Target sales all year long — these Black Friday deals are actually impressive",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs"
-        },
-        {
-          "url": "https://www.abc4.com/news/local-news/free-gift-cards-target-utah/",
-          "title": "First 100 Utah shoppers at Target will receive free gift cards worth up to $1,000",
-          "publisher": "ABC4 Utah",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeE2uJM6Cr4QbzFUl2jmNtxUbPSSMOMjW3OE72k3nvtriBEtxBQTnU6ig8OgA"
-        },
-        {
-          "url": "https://www.today.com/shop/best-target-black-friday-deals-2026-rcna601845",
-          "title": "Target’s Black Friday Sale Starts Now: Up to 56% off TVs, Toys, More",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL6ZhbXdQ-jYynUa28stFENScR2ii8EpPgcXwIrO3ev0guWJu9I1WXUaco-UE"
-        }
-      ]
-    },
-    {
-      "query": "stock futures today",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T12:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
-        "https://www.nytimes.com/2026/11/25/business/dealbook/nvidia-huang-ai-rally.html",
-        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
-          "title": "Stock Market Today: Tech-Led Slide Continues as Confidence in AI Trade Weakens — Live Updates",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/25/business/dealbook/nvidia-huang-ai-rally.html",
-          "title": "Why the Nvidia Rally Fizzled",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7GwUXDatVFPN3arwTabfYQntOShhmOh_98VKX9uleAo-WVRB4urAdadC4fCQ"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
-          "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall ahead of inflation data",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE"
-        }
-      ]
-    },
-    {
-      "query": "start em sit em",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T12:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573676/nfl-fantasy-football-rankings-2026-rb-running-back",
-        "https://sports.yahoo.com/fantasy/articles/fantasy-football-start-em-sit-121107929.html",
-        "https://www.nytimes.com/athletic/7809813/2026/11/25/nfl-week-12-fantasy-football-rankings-thanksgiving-for-a-full-schedule-and-food-rankings/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoyIScTiQZW5sbsP75GG_J8GtNnyJWTLS5gTkAD_NZ7EygWYNLQGMt8k5m_pc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573676/nfl-fantasy-football-rankings-2026-rb-running-back",
-          "title": "Fantasy football rankings for Week 12: Running back",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoyIScTiQZW5sbsP75GG_J8GtNnyJWTLS5gTkAD_NZ7EygWYNLQGMt8k5m_pc"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/articles/fantasy-football-start-em-sit-121107929.html",
-          "title": "Fantasy Football Start 'Em, Sit 'Em: Week 12 lineup advice, best matchups, DFS picks",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkdsYZ_LjV1b2qzZAHHvitHf1cBJfSa5Kzj4X1KQSL4haq5qajfdrRaJhxye4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7809813/2026/11/25/nfl-week-12-fantasy-football-rankings-thanksgiving-for-a-full-schedule-and-food-rankings/",
-          "title": "NFL Week 12 fantasy football rankings: A stuffed slate, plus best Thanksgiving dishes - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSlhoRcnrDfMKSI7EuMTUiwgmoJMCsQDlK1pJa5VVrsnDdrRdhylxNwlxv3rk"
-        }
-      ]
-    },
-    {
-      "query": "hailey bieber nyt interview",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:50:00Z",
-      "related_news_urls": [
-        "https://www.businessoffashion.com/articles/beauty/hailey-bieber-rhode-dealbook-andrew-sorkin/",
-        "https://www.inc.com/bryan-elliott/hailey-bieber-rhode-1-billion-nyt-dealbook-summit-customer-demand/91442449",
-        "https://people.com/hailey-bieber-says-delusion-led-her-to-manifest-billion-dollar-rhode-deal-12265566"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQk3rz7ZsOXjJN5GC95LB3NbfCm6NnDdttEBEXWEkI1KRoO49T6qwGRtm2HQ",
-      "image_credit": "The Business of Fashion",
-      "news": [
-        {
-          "url": "https://www.businessoffashion.com/articles/beauty/hailey-bieber-rhode-dealbook-andrew-sorkin/",
-          "title": "How Hailey Bieber’s Critics Missed the Point",
-          "publisher": "The Business of Fashion",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQk3rz7ZsOXjJN5GC95LB3NbfCm6NnDdttEBEXWEkI1KRoO49T6qwGRtm2HQ"
-        },
-        {
-          "url": "https://www.inc.com/bryan-elliott/hailey-bieber-rhode-1-billion-nyt-dealbook-summit-customer-demand/91442449",
-          "title": "Hailey Bieber Sold Rhode for $1 Billion. 'The New York Times' Asked Her the Wrong Question",
-          "publisher": "Inc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShU2fCVqUFl5KGkk4XnnjrB1jglONPcZ9-50DDqqAD93SCLGfsUilv6PVrJi8"
-        },
-        {
-          "url": "https://people.com/hailey-bieber-says-delusion-led-her-to-manifest-billion-dollar-rhode-deal-12265566",
-          "title": "Hailey Bieber Admits to Having ‘Delusion’ When Manifesting Billion-Dollar Rhode Deal",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh5mKu2ovM9JBWZWp0CP8o1GXoKNqnPPBCjBnk6lwwiSOye8UGqWQm_BZ2eQA"
         }
       ]
     }
