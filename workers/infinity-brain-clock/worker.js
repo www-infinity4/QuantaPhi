@@ -15,6 +15,7 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} 
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
+import {ownerGithubChatConfig,verifyGithubChatPat,admitGithubChatAttempt,issueGithubChatSession,checkGithubChatSession,revokeGithubChatSession} from './github-owner-chat-auth.mjs';
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
@@ -1216,6 +1217,23 @@ export class BrainClock extends DurableObject{
    return Response.json(result,{status:result.httpStatus||200});
   }
   if(new URL(request.url).pathname==='/owner/red-sync')return Response.json(await redExchange(this.ctx.storage,await request.json()));
+  if(new URL(request.url).pathname==='/owner/github-chat-attempt')
+   return Response.json({ok:await admitGithubChatAttempt(this.ctx.storage)});
+  if(new URL(request.url).pathname==='/owner/github-chat-create'){
+   const cfg=ownerGithubChatConfig(this.env);
+   if(!cfg)return Response.json({ok:false},{status:503});
+   return Response.json(await issueGithubChatSession(this.ctx.storage,cfg));
+  }
+  if(new URL(request.url).pathname==='/owner/github-chat-revoke'){
+   const {token}=await request.json();
+   const ok=await revokeGithubChatSession(this.ctx.storage,ownerGithubChatConfig(this.env),token);
+   return Response.json({ok},{status:ok?200:401});
+  }
+  if(new URL(request.url).pathname==='/owner/github-chat-check'){
+   const {token}=await request.json();
+   const ok=await checkGithubChatSession(this.ctx.storage,ownerGithubChatConfig(this.env),token);
+   return Response.json({ok},{status:ok?200:401});
+  }
   if(new URL(request.url).pathname==='/owner/session-create'){
    const body=await request.json(),recipient=await this.ctx.storage.get('bot-work-recipient');
    // Never let the first wallet to visit a public website claim Robot Brain.
@@ -1953,6 +1971,55 @@ export default{
     const result=calculateResonance(args);
     return output(request,{ok:true,tool:'resonance.calculate',result,sourceUrl:CALCULATOR_SOURCE,queued:false,minted:false});
    }catch(error){return output(request,{ok:false,error:String(error?.message||'invalid_calculation').slice(0,120)},400)}
+  }
+  // Independent backup login is deliberately restricted to owner chat context.
+  // Neither a stored runner credential nor a gc_ token enters ownerAuthorized.
+  if(path==='/owner/github-chat-status'&&request.method==='GET'){
+   if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false},403);
+   return output(request,{ok:true,enabled:!!ownerGithubChatConfig(env)});
+  }
+  if(path==='/owner/github-chat-session'&&request.method==='POST'){
+   if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const cfg=ownerGithubChatConfig(env);
+   if(!cfg)return output(request,{ok:false,error:'github_backup_disabled'},503);
+   const token=request.headers.get('Authorization')?.match(/^Bearer ([A-Za-z0-9_]{20,220})$/)?.[1];
+   if(!token)return output(request,{ok:false,error:'github_credential_rejected'},401);
+   try{
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const admitted=await clock.fetch('https://clock.internal/owner/github-chat-attempt',{method:'POST'});
+    if(!admitted.ok||(await admitted.json()).ok!==true)return output(request,{ok:false,error:'github_backup_rate_limited'},429);
+    const proof=await verifyGithubChatPat(token,cfg);
+    if(!proof.ok)return output(request,{ok:false,error:proof.error},proof.status);
+    const issued=await clock.fetch('https://clock.internal/owner/github-chat-create',{method:'POST'});
+    return output(request,await issued.json(),issued.status);
+   }catch{return output(request,{ok:false,error:'github_verifier_unavailable'},503)}
+  }
+  if(path==='/owner/github-chat-disconnect'&&request.method==='POST'){
+   if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (gc_[a-f0-9]{64})$/)?.[1];
+   if(!token)return output(request,{ok:false},401);
+   try{
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const result=await clock.fetch('https://clock.internal/owner/github-chat-revoke',{method:'POST',body:JSON.stringify({token})});
+    return output(request,{ok:result.ok},result.status);
+   }catch{return output(request,{ok:false,error:'github_backup_disconnect_unavailable'},503)}
+  }
+  if(path==='/owner/github-chat-context'&&request.method==='POST'){
+   if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false,error:'origin_not_allowed'},403);
+   const cfg=ownerGithubChatConfig(env);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (gc_[a-f0-9]{64})$/)?.[1];
+   if(!cfg||!token)return output(request,{ok:false,error:'github_chat_session_required'},401);
+   try{
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const verified=await clock.fetch('https://clock.internal/owner/github-chat-check',{method:'POST',body:JSON.stringify({token})});
+    if(!verified.ok||(await verified.json()).ok!==true)return output(request,{ok:false,error:'github_chat_session_required'},401);
+    if(Number(request.headers.get('Content-Length')||0)>8192)return output(request,{ok:false,error:'request_too_large'},413);
+    const raw=await request.text();if(raw.length>8192)return output(request,{ok:false,error:'request_too_large'},413);
+    const body=JSON.parse(raw);
+    if(!body||typeof body.query!=='string'||body.query.length>6000||typeof body.sessionId!=='string'||!/^[a-zA-Z0-9_-]{10,80}$/.test(body.sessionId)||Object.keys(body).some(key=>!['query','sessionId'].includes(key)))return output(request,{ok:false,error:'invalid_chat_context'},400);
+    const result=await conversationMemory(env.WORK_DB,cfg.ownerHash,{messages:[],query:body.query,sessionId:body.sessionId});
+    return output(request,{ok:true,related:result.related||[],userInstructions:result.userInstructions||[],capabilities:result.capabilities||[]});
+   }catch{return output(request,{ok:false,error:'github_chat_context_unavailable'},503)}
   }
   if(path==='/owner/session'&&request.method==='POST'){
    // This endpoint cannot enroll an owner. It only recognizes a previously
