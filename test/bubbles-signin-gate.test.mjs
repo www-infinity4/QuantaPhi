@@ -491,3 +491,21 @@ test('owner chat reconnect uses current verified headers, not the original settl
  latest=current;release(first);
  assert.deepEqual(await reconnect,{ownerHeaders:current,ownerReady:true});
 });
+
+
+test('legacy Android WebView can check stored wallet candidates without AbortSignal.timeout',async()=>{
+ const source=readFileSync(new URL('../cloud-wallet-client.js',import.meta.url),'utf8');
+ const start=source.indexOf('const ENDPOINT=');
+ const end=source.indexOf('function hasAccountProfile()');
+ const fakeEntries=new Map([['starquest_ledger_device_v1:owner','sq_'+'a'.repeat(40)],['starquest_ledger_device_v1:other','sq_'+'b'.repeat(40)]]);
+ const storage={get length(){return fakeEntries.size},key:i=>[...fakeEntries.keys()][i],getItem:k=>fakeEntries.get(k)||null,setItem:(k,v)=>fakeEntries.set(k,v)};
+ const calls=[];
+ const fetcher=async(url,options)=>{calls.push(options);return {ok:true,json:async()=>({ok:true,state:{username:options.headers.authorization.endsWith('a')?'owner':'not-other'}})}};
+ const resolve=new Function('localStorage','fetch','AbortSignal','AbortController','setTimeout','clearTimeout',source.slice(start,end)+'\nreturn resolveDeviceToken;')(storage,fetcher,{},AbortController,setTimeout,clearTimeout);
+ assert.equal(await resolve(),'sq_'+'a'.repeat(40));
+ assert.equal(calls.length,2);
+ assert.ok(calls.every(c=>c.signal instanceof AbortSignal));
+ fakeEntries.set('starquest_session',JSON.stringify({key:'missing'}));
+ assert.equal(await resolve(),'');
+ assert.equal(calls.length,2,'selected missing account cannot fall back to another account');
+});
