@@ -110,7 +110,11 @@ test('website uses same-origin verified owner gate for Brain calls and keeps gue
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
  assert.match(js,/if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
  assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
- assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
+ const ownerConnect=js.match(/async function connectOwner\(\)\{[\s\S]*?\n\}\n\/\/ Provider OAuth changes/)?.[0]||'';
+ assert.match(ownerConnect,/if\(embedded\)return/);
+ assert.match(ownerConnect,/if\(window\.QuantaBrainOwner!==bridge\)return/);
+ assert.match(ownerConnect,/const headers=typeof bridge\.currentHeaders==='function'\?bridge\.currentHeaders\(\):waited/);
+ assert.match(ownerConnect,/if\(!headers\?\.Authorization\)return/);
  assert.match(js,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(js,/await verifiedOwnerHeaders\(\)/);
  assert.match(js,/BRAIN\+'\/work\/tickets\/list'/);
