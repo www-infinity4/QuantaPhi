@@ -3,340 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T12:01:34.002862Z",
+  "checked_at": "2026-11-25T12:35:28.873361Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "precio del dolar en mexico",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T11:40:00Z",
+      "query": "bangladesh vs south africa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T12:20:00Z",
       "related_news_urls": [
-        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-miercoles-25-cambio-22549398.php",
-        "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
-        "https://www.fxstreet.es/news/peso-mexicano-se-esperan-ganancias-frente-al-dolar-estadounidense-mientras-se-desvanecen-las-expectativas-de-una-subida-de-tasas-de-la-fed-rabobank-202611241003"
+        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-2nd-test-1525663/ball-by-ball-commentary",
+        "https://sports.yahoo.com/cricket/articles/wiaan-mulder-strikes-south-africa-110658233.html",
+        "https://www.espn.com/cricket/series/19430/report/1525663/day/1/south-africa-vs-bangladesh-2nd-test-19430"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOH4VmMOIhfJtqt0Gsix__nwCyzykkF_yRNj9KV5ezJfjfE8-nBEzYmzSSgg",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-2nd-test-1525663/ball-by-ball-commentary",
+          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 2nd Test",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOH4VmMOIhfJtqt0Gsix__nwCyzykkF_yRNj9KV5ezJfjfE8-nBEzYmzSSgg"
+        },
+        {
+          "url": "https://sports.yahoo.com/cricket/articles/wiaan-mulder-strikes-south-africa-110658233.html",
+          "title": "Wiaan Mulder strikes for South Africa to leave Bangladesh trailing by 294 runs at lunch on day three",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFu8I3b-aoQ7rsUslhxtg6fZGeS3rmZSuUwOvnoUDy6wwb_hb4qN-i9s_Dd0"
+        },
+        {
+          "url": "https://www.espn.com/cricket/series/19430/report/1525663/day/1/south-africa-vs-bangladesh-2nd-test-19430",
+          "title": "Recent Match Report - South Africa vs Bangladesh, Bangladesh tour of South Africa, 2nd Test | ESPN.com",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
+        }
+      ]
+    },
+    {
+      "query": "football games today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T12:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/college-football-games-tv-week-110416898.html",
+        "https://espnpressroom.com/press-release/rivalry-week-takes-over-espn-16-cfp-top-25-teams-including-seven-of-the-top-10-headline-a-stacked-five-day-slate/",
+        "https://www.al.com/sports/2026/11/college-football-tv-schedule-for-week-13-of-2026-season.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkr7WNWYyRBQS9LgF7JgsA01Prw-_35MZEHP434lQbHmZv7ldP8OfOD00obI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/college-football-games-tv-week-110416898.html",
+          "title": "What college football games are on TV this week? College football Week 13 TV schedule",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkr7WNWYyRBQS9LgF7JgsA01Prw-_35MZEHP434lQbHmZv7ldP8OfOD00obI"
+        },
+        {
+          "url": "https://espnpressroom.com/press-release/rivalry-week-takes-over-espn-16-cfp-top-25-teams-including-seven-of-the-top-10-headline-a-stacked-five-day-slate/",
+          "title": "Rivalry Week takes over ESPN: 16 CFP Top 25 teams, including seven of the top 10, headline a stacked five-day slate",
+          "publisher": "ESPN Press Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUAuHP7jS4O8nofS4DREUx5vdpHZGCOBuuCq4ga609wMzsz4nZAjFmkzn9WM"
+        },
+        {
+          "url": "https://www.al.com/sports/2026/11/college-football-tv-schedule-for-week-13-of-2026-season.html",
+          "title": "College football TV schedule for Week 13 of 2026 season",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxnotYJ-keLcMYx8k1waqBNCdJALPqL35R0dgpnb4DD4ckLHSwvJjtFED1YWw"
+        }
+      ]
+    },
+    {
+      "query": "pce report",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:20:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
+        "https://finance.biggo.com/news/79aed0c4-6978-4c7f-a126-27af27a460a5",
+        "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4750GZ:0-euro-zone-yields-inch-lower-as-calm-returns-to-markets/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
+          "title": "Treasury and European Government Bond Yields Fall Ahead of PCE Inflation Data",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls"
+        },
+        {
+          "url": "https://finance.biggo.com/news/79aed0c4-6978-4c7f-a126-27af27a460a5",
+          "title": "Eurozone Bond Yields Flat as Traders Brace for Nvidia Earnings, Anthropic IPO",
+          "publisher": "BigGo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpQIxa92sfqqe3uohg-OrBdpJImlLUawRMC4Yi55KVYhykUUeUEa_8OB_NiqY"
+        },
+        {
+          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4750GZ:0-euro-zone-yields-inch-lower-as-calm-returns-to-markets/",
+          "title": "Euro zone yields inch lower as calm returns to markets",
+          "publisher": "TradingView",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
+        }
+      ]
+    },
+    {
+      "query": "oil refinery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T12:20:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
+        "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-24-2026/",
+        "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0jI8CVc2Vx9ztEl9GWiw2qisSVrz-UaSslPdPAz7BgWlrh4HZh8QqqccGGFs",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
+          "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0jI8CVc2Vx9ztEl9GWiw2qisSVrz-UaSslPdPAz7BgWlrh4HZh8QqqccGGFs"
+        },
+        {
+          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-24-2026/",
+          "title": "Russian Offensive Campaign Assessment, November 24, 2026",
+          "publisher": "Institute for the Study of War",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUnKF4oSItRamJBWmTZsf45gLd67T9YgffClcGp9mLlsAcittLA_M0vHdAHlc"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence",
+          "title": "Russia-Ukraine updates: Moscow will ‘respond’ to attacks on oil refineries",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflXSnCPGYaL86dMIkP6QRzNLH2uyYGnlBFRXJY4qU1S8Su-VQ1ZzpHwImtPo"
+        }
+      ]
+    },
+    {
+      "query": "demarvion overshown",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:20:00Z",
+      "related_news_urls": [
+        "https://www.dallasnews.com/sports/cowboys/article/demarvion-overshown-cowboys-schottenheimer-penalty-22547944.php",
+        "https://thelandryhat.com/justin-barron-stunning-rise-pushing-demarvion-overshown-out-of-cowboys-plans",
+        "https://sports.yahoo.com/nfl/articles/cowboys-brian-schottenheimer-backs-demoted-214800875.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEiz9_ctemV_gUnaZGeVRQcLiUv77K-7ldkhMVnVsWjtXdNcfWZaQuFJUEQZM",
       "image_credit": "Dallas News",
       "news": [
         {
-          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-miercoles-25-cambio-22549398.php",
-          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "url": "https://www.dallasnews.com/sports/cowboys/article/demarvion-overshown-cowboys-schottenheimer-penalty-22547944.php",
+          "title": "DeMarvion Overshown’s once-bright future with Cowboys is now murky after setback-filled 2026",
           "publisher": "Dallas News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVKvpQ1eQop6V2YU7Ft4K9V3s92AE8uomufPU2acP6_XWFXozWsn2UPbxr4Jo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEiz9_ctemV_gUnaZGeVRQcLiUv77K-7ldkhMVnVsWjtXdNcfWZaQuFJUEQZM"
         },
         {
-          "url": "https://www.elfinanciero.com.mx/mercados/2026/11/24/peso-dolar-tipo-de-cambio-precio-hoy-24-de-noviembre-de-2026/",
-          "title": "Peso liga 5 jornadas de bajas ante el dólar: Así cierra HOY",
-          "publisher": "El Financiero",
+          "url": "https://thelandryhat.com/justin-barron-stunning-rise-pushing-demarvion-overshown-out-of-cowboys-plans",
+          "title": "Justin Barron's stunning rise is pushing DeMarvion Overshown out of Cowboys' plans",
+          "publisher": "The Landry Hat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPRy-vBRhpECNFMykKm9CWhDAAyXVD47DpLDkQ5bWcarAVbGWiGOzN_LRxCgw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU51roUHPz5Z1JhQQ3bEKSIM96s_4-R-lDYNYIafTuQzgiqZqJBhuJtEUcrxA"
         },
         {
-          "url": "https://www.fxstreet.es/news/peso-mexicano-se-esperan-ganancias-frente-al-dolar-estadounidense-mientras-se-desvanecen-las-expectativas-de-una-subida-de-tasas-de-la-fed-rabobank-202611241003",
-          "title": "Peso mexicano: Se esperan ganancias frente al Dólar mientras se desvanecen las expectativas de una subida de tasas de la Fed – Rabobank",
-          "publisher": "FXStreet",
+          "url": "https://sports.yahoo.com/nfl/articles/cowboys-brian-schottenheimer-backs-demoted-214800875.html",
+          "title": "Cowboys’ Brian Schottenheimer Backs Demoted Starter on ‘Doghouse’ Claims",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvnQ5d3I3hT3QG8xEYYmQUNXzDNWvZIa5UetjdbvEvx0GzrfN1Oxn-_FVctxU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjNtlKynjvk9SRlHO-0xWiHRB9DkUX1fB03xGVK9E2jnHhcPGcsoYTfRrjSGM"
         }
       ]
     },
     {
-      "query": "regina george",
+      "query": "s and p 500 futures",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:20:00Z",
+      "related_news_urls": [
+        "https://www.benzinga.com/markets/equities/26/11/63615832/stock-market-today-dow-jones-sp-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus",
+        "https://en.yenisafak.com/economy/wall-street-closes-with-losses-after-fed-comment-2582036",
+        "https://www.rttnews.com/3715967/markets-wait-for-fomc-minutes-while-tech-gains.aspx"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMNUb6a5ywIImA2PKV73Ub_lwgMt_xq8OT9u2wmr_dJGNgbG3KHdjXdv7iG4",
+      "image_credit": "Benzinga",
+      "news": [
+        {
+          "url": "https://www.benzinga.com/markets/equities/26/11/63615832/stock-market-today-dow-jones-sp-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus",
+          "title": "Stock Market Today: Dow Jones, S&P 500 Futures Fall as Traders Bet on December Fed Hike; Trump Tells Huan",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMNUb6a5ywIImA2PKV73Ub_lwgMt_xq8OT9u2wmr_dJGNgbG3KHdjXdv7iG4"
+        },
+        {
+          "url": "https://en.yenisafak.com/economy/wall-street-closes-with-losses-after-fed-comment-2582036",
+          "title": "Wall Street closes with losses after Fed comment",
+          "publisher": "Yeni Safak English",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyvSYmDi4q42QR83b1zwkt_AYjYET3e1IdrpDfLo3NDds1qd14YjihHGXLycg"
+        },
+        {
+          "url": "https://www.rttnews.com/3715967/markets-wait-for-fomc-minutes-while-tech-gains.aspx",
+          "title": "Markets Wait For FOMC Minutes While Tech Gains",
+          "publisher": "RTTNews",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5JUnQQ6e9xE8eTRLf2bnvpNfovsI4nl9sg2i3K0p0xyoQC4NplVvyvVB3XH0"
+        }
+      ]
+    },
+    {
+      "query": "ice detainee habeas corpus petitions",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T11:40:00Z",
+      "published_at": "2026-11-25T12:10:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/music/columns/taylor-swift-vanity-fair-hit-piece-journalism-1236956512/",
-        "https://www.usatoday.com/story/opinion/columnist/2026/11/25/vanity-fair-taylor-swift-takedown-flop/92946188007/",
-        "https://www.tmz.com/2026/11/24/taylor-swift-vanity-fair-article-classmate-speaks-out/"
+        "https://www.cbsnews.com/news/ice-detainee-lawsuits-justice-department-non-immigration-attorneys/",
+        "https://www.yahoo.com/news/us/articles/trump-doj-attacks-federal-judges-025104402.html",
+        "https://www.washingtonsun.com/immigration/blanche-resources-immigration-detention"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTzJLvYaLDp3g9KjQFcOWhRFocnPj17UFbE0oV9nthIQ0ZelvugggwGYfnyRc",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYq7vZoH2E3N8bZhTCJPBfjOs5JpFbmsAA-zmhCv8qkwMz5t3qlvTN5EsOoo",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://variety.com/2026/music/columns/taylor-swift-vanity-fair-hit-piece-journalism-1236956512/",
-          "title": "Is Vanity Fair’s Hit Piece on Taylor Swift Really Journalism?",
-          "publisher": "Variety",
+          "url": "https://www.cbsnews.com/news/ice-detainee-lawsuits-justice-department-non-immigration-attorneys/",
+          "title": "Inundated by thousands of ICE detainee lawsuits, DOJ directs non-immigration attorneys to help with caseload",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTzJLvYaLDp3g9KjQFcOWhRFocnPj17UFbE0oV9nthIQ0ZelvugggwGYfnyRc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYq7vZoH2E3N8bZhTCJPBfjOs5JpFbmsAA-zmhCv8qkwMz5t3qlvTN5EsOoo"
         },
         {
-          "url": "https://www.usatoday.com/story/opinion/columnist/2026/11/25/vanity-fair-taylor-swift-takedown-flop/92946188007/",
-          "title": "Stop telling us what we already know about Taylor Swift | Opinion",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRv9qIBMz_82RD0dvL7K-tK8y1kFadGmz5r9FyQkKRlvRxoi0zZ-33MOzpkR4g"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/24/taylor-swift-vanity-fair-article-classmate-speaks-out/",
-          "title": "Taylor Swift's Former Classmate Clears the Air on Vanity Fair Comments",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQTDcXLA_EM3-9mwM2WAbR5reFarBkZDO3awKia18wFerZIAiGwrE4s1s_udRM"
-        }
-      ]
-    },
-    {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T11:30:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/clima-en-los-angeles-hoy-revisa-el-tiempo-en-aeropuertos-y-que-areas-del-pais-tienen-retrasos-video",
-        "https://www.univision.com/noticias/clima-para-manana-y-los-proximos-dias-en-los-angeles-asi-cambiara-el-clima-despues-de-accion-de-gracias-video",
-        "https://www.univision.com/noticias/pronostico-del-tiempo-en-los-angeles-temperaturas-para-accion-de-gracias-y-los-proximos-dias-video"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKywc9qMgqL9jbtckf_oiOhPNO7f_Au4W6zvb5QQfxrdCsyMKPBY8YCq0Pvzg",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/clima-en-los-angeles-hoy-revisa-el-tiempo-en-aeropuertos-y-que-areas-del-pais-tienen-retrasos-video",
-          "title": "Clima en Los Ángeles hoy: Revisa el tiempo en aeropuertos y qué áreas del país tienen retrasos",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKywc9qMgqL9jbtckf_oiOhPNO7f_Au4W6zvb5QQfxrdCsyMKPBY8YCq0Pvzg"
-        },
-        {
-          "url": "https://www.univision.com/noticias/clima-para-manana-y-los-proximos-dias-en-los-angeles-asi-cambiara-el-clima-despues-de-accion-de-gracias-video",
-          "title": "Clima para mañana y los próximos días en Los Ángeles: Así cambiará el clima después de Acción de Gracias",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYdja3ymnD0rZP0SgkZlIg7sOfJC7jshHt0jAMbKzRcadZ5pU24XySDR5jly8"
-        },
-        {
-          "url": "https://www.univision.com/noticias/pronostico-del-tiempo-en-los-angeles-temperaturas-para-accion-de-gracias-y-los-proximos-dias-video",
-          "title": "Pronóstico del tiempo en Los Ángeles: Temperaturas para Acción de Gracias y los próximos días",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpMRMr6tp-G1QVBoVYAAKisDiq5fUhAThaWsJ6kaXJ8jdfuri_8AzO1P1ir5s"
-        }
-      ]
-    },
-    {
-      "query": "christopher payne japan",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T11:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/25/asia/chris-payne-jailed-japan-overturned-conviction-hnk-dst",
-        "https://mezha.net/eng/news/mezha-ca0cd739c4e8b1e3160b4cbd_christopher_payne_remains/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgR8NNz-kOl-EqrP4bQDGdjSm1CJqrrF3LPkxBp_tJnv_Psv80cvSVqcsFc-U",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/25/asia/chris-payne-jailed-japan-overturned-conviction-hnk-dst",
-          "title": "He’s remained jailed in Japan despite an overturned conviction. His family in the US fears for his life",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgR8NNz-kOl-EqrP4bQDGdjSm1CJqrrF3LPkxBp_tJnv_Psv80cvSVqcsFc-U"
-        },
-        {
-          "url": "https://mezha.net/eng/news/mezha-ca0cd739c4e8b1e3160b4cbd_christopher_payne_remains/",
-          "title": "Christopher Payne remains jailed in Japan after conviction was overturned; US family fears for his health",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7nOIPICLHEUHK9YoVXTPwyMZWEwja0FKlWC-TjJsDCy9C0aBf6EIy3h5x9Bs"
-        }
-      ]
-    },
-    {
-      "query": "star wars: ahsoka season 2",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T11:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/it/news/ni66120287/?ref_=nm_nwr_1",
-        "https://thedirect.com/article/ahsoka-season-2-george-lucas-star-wars-powerful-character"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZg3SV7-46xrdxWy9Di9WYqxQfOK7XboDoRcJQh3axtB4wzlSf7IUzbxgYppk",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/it/news/ni66120287/?ref_=nm_nwr_1",
-          "title": "‘Ahsoka’ Season 2 Teases a Mysterious Journey in Haunting New Image",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQZg3SV7-46xrdxWy9Di9WYqxQfOK7XboDoRcJQh3axtB4wzlSf7IUzbxgYppk"
-        },
-        {
-          "url": "https://thedirect.com/article/ahsoka-season-2-george-lucas-star-wars-powerful-character",
-          "title": "Ahsoka Season 2 Resurrects George Lucas' Most Powerful Star Wars Character 15 Years Later",
-          "publisher": "The Direct",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxWmEv74-n_vPFBIFitfgyIoJkef9t6hND_ww8Ut0iInUlX6VyNChaBqBZCzA"
-        }
-      ]
-    },
-    {
-      "query": "nifty 50",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T11:30:00Z",
-      "related_news_urls": [
-        "https://www.ndtv.com/business-news/stock-market-today-sensex-skyrockets-as-foreign-investors-pour-billions-into-indian-tech-stocks-12373777",
-        "https://www.reuters.com/world/india/indian-stocks-seen-falling-nine-month-highs-asia-market-rout-deepens-2026-11-20/",
-        "https://timesofindia.indiatimes.com/business/india-business/stock-market-today-sensex-jumps-over-1700-points-nifty-tops-25850-top-reasons-behind-rally/articleshow/136149156.cms"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AXiSrwfqxkcEl9nusmvAAG_dVEdRIaEK6nUAZibWGiaU4U4QRbt5CVJYgoU",
-      "image_credit": "NDTV",
-      "news": [
-        {
-          "url": "https://www.ndtv.com/business-news/stock-market-today-sensex-skyrockets-as-foreign-investors-pour-billions-into-indian-tech-stocks-12373777",
-          "title": "Stock Market Rally: Sensex Skyrockets As Foreign Investors Pour Billions Into Tech Stocks",
-          "publisher": "NDTV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AXiSrwfqxkcEl9nusmvAAG_dVEdRIaEK6nUAZibWGiaU4U4QRbt5CVJYgoU"
-        },
-        {
-          "url": "https://www.reuters.com/world/india/indian-stocks-seen-falling-nine-month-highs-asia-market-rout-deepens-2026-11-20/",
-          "title": "Indian shares rise for fourth straight week as AI rout deepens",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThi_SJqeuzG_BYluozLYyDeJIK4iVaJ2sE9TLTBa6evduPVoQ0eWI2VPOfbBo"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/business/india-business/stock-market-today-sensex-jumps-over-1700-points-nifty-tops-25850-top-reasons-behind-rally/articleshow/136149156.cms",
-          "title": "Stock market today: Sensex holds over 1,000 point gains after 2,000 point surge, Nifty50 crosses 25,900 -",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmXpE4q_Akf6vKZr9A6vjy7cPQCwx9xgpZgcW7wwLV8rDigneRU2Efb06gpqs"
-        }
-      ]
-    },
-    {
-      "query": "tariffs",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T11:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c893r9ke5p97o",
-        "https://www.bloomberg.com/news/videos/2026-11-25/the-pulse-11-25-2026-video",
-        "https://apnews.com/article/trump-tariffs-china-european-union-d97ed6f4017152ca4c18de5517db6d51"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiHziJYI-7p0o9g4lkE-6R3wpWQfLkQlOPmpLKLLKKgIr-6c1vuRYVU7NHEwc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c893r9ke5p97o",
-          "title": "US preparing to unveil plan for new tariffs on global trading partners",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiHziJYI-7p0o9g4lkE-6R3wpWQfLkQlOPmpLKLLKKgIr-6c1vuRYVU7NHEwc"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/videos/2026-11-25/the-pulse-11-25-2026-video",
-          "title": "Watch China Hits Back at New Trump Tariff Prospects",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl7bLV2AZYYtdCk2uDi85kZB79E9DgXm_v8diAoxPKAXazjEwcYqSNsTigAfY"
-        },
-        {
-          "url": "https://apnews.com/article/trump-tariffs-china-european-union-d97ed6f4017152ca4c18de5517db6d51",
-          "title": "US ready to slap tariffs on China, EU and others over subsidized production, AP sources say",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxnXtqEzH41scvWBHadnEQArlgR18OWHDKyulEY4UvhgJqTc8JOvM0nYkIu94"
-        }
-      ]
-    },
-    {
-      "query": "tampa weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T11:20:00Z",
-      "related_news_urls": [
-        "https://www.fox13news.com/news/thanksgiving-day-forecast-temperatures-drop-across-bay-area-following-mid-week-rain",
-        "https://www.wfla.com/weather/forecast/cloudy-cool-tuesday/",
-        "https://www.yahoo.com/news/weather-news/articles/live-radar-rain-tapers-wednesday-102727265.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdNCy0Ly9BW0oAYrAoUC-638UwlkgNzH2NMDG2A3cOZ6gionzAS2O3LQu2Jk",
-      "image_credit": "FOX 13 Tampa Bay",
-      "news": [
-        {
-          "url": "https://www.fox13news.com/news/thanksgiving-day-forecast-temperatures-drop-across-bay-area-following-mid-week-rain",
-          "title": "Thanksgiving Day forecast: Temperatures to drop across Bay area following mid-week rain",
-          "publisher": "FOX 13 Tampa Bay",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJdNCy0Ly9BW0oAYrAoUC-638UwlkgNzH2NMDG2A3cOZ6gionzAS2O3LQu2Jk"
-        },
-        {
-          "url": "https://www.wfla.com/weather/forecast/cloudy-cool-tuesday/",
-          "title": "Soggy start Wednesday, drier by Thanksgiving",
-          "publisher": "WFLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwdg8kOmm1M2hSgj_11Ty6HDVhH5H1lmspzaAX200LYB4fi6OJhpl8jCxcyGk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/live-radar-rain-tapers-wednesday-102727265.html",
-          "title": "LIVE RADAR: Rain tapers Wednesday afternoon, cooler Thanksgiving",
+          "url": "https://www.yahoo.com/news/us/articles/trump-doj-attacks-federal-judges-025104402.html",
+          "title": "Trump’s DOJ attacks federal judges amid ramped-up deportation push",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUa316Md44Iqm37NseZ4wEKvWekyDoJz1Fa92cFwMi4EOg9ozrZt1x2s71S7s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqauaUBQxTP1Bc4bD3fTt588jQ6pJgXsZp6F8TEN1ub1Hdli0PsCUEaToeSHE"
+        },
+        {
+          "url": "https://www.washingtonsun.com/immigration/blanche-resources-immigration-detention",
+          "title": "Blanche Redirects Resources to Tackle Immigration Detention Challenges",
+          "publisher": "NOTUS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmeQ8ll2apRoa9W3DmBlOSWMHMNUyKUGlnoJHLrpgrnq_5g6PL13wqRocjd-o"
         }
       ]
     },
     {
-      "query": "kroger",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T11:10:00Z",
+      "query": "dow futures now",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T12:10:00Z",
       "related_news_urls": [
-        "https://progressivegrocer.com/kroger-starts-corporate-layoffs-it-builds-india-operations",
-        "https://www.bizjournals.com/cincinnati/news/2026/11/19/kroger-begins-layoffs.html",
-        "https://nypost.com/2026/11/23/business/kroger-axes-3000-us-corporate-jobs-while-hiring-for-dozens-of-positions-in-india/"
+        "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
+        "https://finance.yahoo.com/news/dow-reclaims-50-000-inflation-120000290.html",
+        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxEW0cFd1BmL9qQkpfhwK2-nR31mk7SlneRh9bZXOezthpwUlGXAz6iOoOEog",
-      "image_credit": "Progressive Grocer",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk",
+      "image_credit": "CNBC",
       "news": [
         {
-          "url": "https://progressivegrocer.com/kroger-starts-corporate-layoffs-it-builds-india-operations",
-          "title": "Kroger Starts Corporate Layoffs as It Builds India Operations",
-          "publisher": "Progressive Grocer",
+          "url": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
+          "title": "Futures sink further into the red as tech worries resurge",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxEW0cFd1BmL9qQkpfhwK2-nR31mk7SlneRh9bZXOezthpwUlGXAz6iOoOEog"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk"
         },
         {
-          "url": "https://www.bizjournals.com/cincinnati/news/2026/11/19/kroger-begins-layoffs.html",
-          "title": "Kroger begins layoffs as dozens of roles are listed in India - Cincinnati Business Courier",
-          "publisher": "The Business Journals",
+          "url": "https://finance.yahoo.com/news/dow-reclaims-50-000-inflation-120000290.html",
+          "title": "Dow Reclaims 50,000 as Inflation and GDP Data Land Before Thanksgiving",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQm9opKbg5CqxtVtAD96QRoD49aUReM5jV8Ha6_XPC8f3Rdx4Li6FTHklsqLog"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTwGTtza1z1BHOoDy7P3LMnGOtihjlHCJqAcYtMHC3NKtUzGs9yZ_Bk1wlcw"
         },
         {
-          "url": "https://nypost.com/2026/11/23/business/kroger-axes-3000-us-corporate-jobs-while-hiring-for-dozens-of-positions-in-india/",
-          "title": "Kroger axes 3,000 US corporate jobs while hiring for dozens of positions in India",
-          "publisher": "New York Post",
+          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
+          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHuB2JCzZ4F6HsCFeZET4OYb5Juk5_1WPsaWSXpivWkKltEL4BhFqOUAxTyfM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
         }
       ]
     },
     {
-      "query": "nashville weather",
+      "query": "breeze airways new routes 2026",
       "approx_searches": "100+",
-      "published_at": "2026-11-25T11:10:00Z",
+      "published_at": "2026-11-25T12:10:00Z",
       "related_news_urls": [
-        "https://wreg.com/news/wintry-weather-expected-for-some-heading-into-thanksgiving-day/",
-        "https://www.wkrn.com/weather-headlines/tn-forecast/november-24-2026/",
-        "https://www.wsmv.com/2026/11/24/first-alert-weather-day-widespread-rain-expected-disrupt-holiday-travel-tennessee/"
+        "https://simpleflying.com/breeze-airways-launches-6-new-cities-9-routes/",
+        "https://deeparrival.com/news/breeze-tampa-st-thomas-jamaica-nonstops-december-16-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGNcaAP4-XTMKYqWxu4TPBgHN0-Q7zQTGyX-w8mQRqMnnzXg7SRusFtJxUoA4",
-      "image_credit": "WREG.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBCneQzEjhF0uoqwsEPDrdsnJEdV15hZ-BdmTlXprepBleVpD0F16HvCOCy8",
+      "image_credit": "Simple Flying",
       "news": [
         {
-          "url": "https://wreg.com/news/wintry-weather-expected-for-some-heading-into-thanksgiving-day/",
-          "title": "Wintry weather expected for some heading into Thanksgiving Day",
-          "publisher": "WREG.com",
+          "url": "https://simpleflying.com/breeze-airways-launches-6-new-cities-9-routes/",
+          "title": "Breeze Airways Adds 6 New Cities & 9 Routes: See Full List Now",
+          "publisher": "Simple Flying",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGNcaAP4-XTMKYqWxu4TPBgHN0-Q7zQTGyX-w8mQRqMnnzXg7SRusFtJxUoA4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBCneQzEjhF0uoqwsEPDrdsnJEdV15hZ-BdmTlXprepBleVpD0F16HvCOCy8"
         },
         {
-          "url": "https://www.wkrn.com/weather-headlines/tn-forecast/november-24-2026/",
-          "title": "Rain Wednesday turning to snow showers for Thanksgiving",
-          "publisher": "WKRN News 2",
+          "url": "https://deeparrival.com/news/breeze-tampa-st-thomas-jamaica-nonstops-december-16-2026/",
+          "title": "Breeze Tampa Nonstops to St. Thomas Start Dec. 16, Jamaica Dec. 19",
+          "publisher": "deeparrival.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpe6v0_vYVaSsSF4UcbnSEAJjb8Cu_yxER2RX0uL711IOVcex-02Z39vTcmhE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5qfP3fkbNWcTDhyllcBHQQww1xe1WspBZ6rzZuUvA9Nzg0bMMiLNSLsnRBVU"
+        }
+      ]
+    },
+    {
+      "query": "storm warning",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/briefing/thanksgiving-travel-delays.html",
+        "https://www.cbsnews.com/detroit/video/thanksgiving-holiday-travel-rush-begins/",
+        "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwYVCVQrib-CFK1uNpvg5eTfzl2mjH0K0BJkcKXNahxAWTE0GM0sWQi1irN0I",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/briefing/thanksgiving-travel-delays.html",
+          "title": "Thanksgiving Travel",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwYVCVQrib-CFK1uNpvg5eTfzl2mjH0K0BJkcKXNahxAWTE0GM0sWQi1irN0I"
         },
         {
-          "url": "https://www.wsmv.com/2026/11/24/first-alert-weather-day-widespread-rain-expected-disrupt-holiday-travel-tennessee/",
-          "title": "First Alert Weather Day: Widespread rain expected to disrupt holiday travel in Tennessee",
-          "publisher": "WSMV",
+          "url": "https://www.cbsnews.com/detroit/video/thanksgiving-holiday-travel-rush-begins/",
+          "title": "Thanksgiving holiday travel rush begins",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbNoW26n2_e7ORJ11UdQsRVb3BsXGoTHwnOPCVP86jZ_NIhDBcbYEHg9ygcig"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_yPMxyT2ZzZDrL6mgeEAxHTYCO92em6pDI7Lk7AEFVegs1rOKfktbDXalZtI"
+        },
+        {
+          "url": "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
+          "title": "Travelers are worried about airline tech meltdowns ahead of Thanksgiving. Should they be?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhKfTMBERXBhPQASJP_C6qW60Rbu1DA_LDBiIUKwHKxMREGW7pTEMZJ30Ymr4"
         }
       ]
     }
