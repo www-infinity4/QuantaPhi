@@ -84,7 +84,11 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  assert.match(code,/Only real tool receipts prove repository creation/);
  assert.doesNotMatch(code,/github\.com\/login\/oauth\/authorize\?/);
  assert.doesNotMatch(code,/https:\/\/api\.github\.com\/repos\/.*\/contents/);
- assert.doesNotMatch(code,/ANTHROPIC_API_KEY|OPENAI_API_KEY|ghp_/);
+ // Permit only the exact input-format validator, never a token or another prefix occurrence.
+ const patFormatValidator="  if(!/^(?:github_pat_[A-Za-z0-9_]{20,200}|ghp_[A-Za-z0-9]{20,100})$/.test(pat)){";
+ assert.equal(code.split(patFormatValidator).length,2,'exactly one reviewed format validator');
+ assert.doesNotMatch(code,/(?:ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,})/);
+ assert.doesNotMatch(code.replace(patFormatValidator,''),/ANTHROPIC_API_KEY|OPENAI_API_KEY|ghp_|github_pat_/);
 });
 
 test('existing StarCoin ledger and no-refresh artwork behavior are untouched by new features',()=>{
