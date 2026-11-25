@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-25T16:32:43.780306Z",
+  "checked_at": "2026-11-25T17:04:01.326772Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -52,6 +52,18 @@
       "trend_checked_at": "2026-11-14T20:31:06.368122Z",
       "trend_published_at": "2026-11-14T19:50:00Z",
       "approx_searches": "500+"
+    },
+    {
+      "id": "lgchJrHfIDw",
+      "title": "Lords of War",
+      "video_id": "lgchJrHfIDw",
+      "video_title": "Lords of War Trailer #2 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-25T16:39:13Z",
+      "source_url": "https://www.youtube.com/watch?v=lgchJrHfIDw",
+      "poster": "https://i.ytimg.com/vi/lgchJrHfIDw/hqdefault.jpg",
+      "google_trending": false
     },
     {
       "id": "3OGpbg-_HQU",
