@@ -3,76 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T07:31:18.996289Z",
+  "checked_at": "2026-11-25T08:01:42.717650Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "flood watch",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T07:10:00Z",
+      "query": "hunger games 2026",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:40:00Z",
       "related_news_urls": [
-        "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
-        "https://www.cbsnews.com/losangeles/news/southern-california-king-tides-orange-county-los-angeles-ventura-county-evacuation-warnings/",
-        "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html"
+        "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
+        "https://fortune.com/2026/11/24/hunger-games-sunrise-on-the-reaping-box-office-gta-vi/",
+        "https://ew.com/13-biggest-changes-between-the-sunrise-on-the-reaping-book-movie-12274589"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y",
-      "image_credit": "ABC7 Bay Area",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek",
+      "image_credit": "In Review Online",
       "news": [
         {
-          "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
-          "title": "Live storm updates: Record king tides leave Bay Area roads flooded",
-          "publisher": "ABC7 Bay Area",
+          "url": "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
+          "title": "The Hunger Games: Sunrise on the Reaping — Francis Lawrence [Review]",
+          "publisher": "In Review Online",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek"
         },
         {
-          "url": "https://www.cbsnews.com/losangeles/news/southern-california-king-tides-orange-county-los-angeles-ventura-county-evacuation-warnings/",
-          "title": "Some evacuation warnings in effect as king tides batter Southern California coast",
-          "publisher": "CBS News",
+          "url": "https://fortune.com/2026/11/24/hunger-games-sunrise-on-the-reaping-box-office-gta-vi/",
+          "title": "‘Hunger Games: Sunrise on the Reaping’ opens to $120 million despite GTA VI—and its audience explains why",
+          "publisher": "Fortune",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8GKGwE9IDujBakaPP2XMjqY1AdYmY6WEppu5xu6jluPPDy1vppu3Zo6d-x8Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlRg0DPfiecAcU9DHI55XxfMBvQZR-zMwpIGOFlxHQ0-4MHqSEUfBvOhBaIA"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html",
-          "title": "California King Tides Threaten ‘Extreme’ Coastal Flooding",
-          "publisher": "The New York Times",
+          "url": "https://ew.com/13-biggest-changes-between-the-sunrise-on-the-reaping-book-movie-12274589",
+          "title": "‘Hunger Games: Sunrise on the Reaping’: Biggest changes from book to movie",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTy3bGyEoo51asYaZ9RolOqUUR6r3qhf-Fl3zQ-drF3qV1obmaJWWKOLLW72nw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeeSQv8d7X3XOGqCMFl8zWqUQ_7fSTzfL62E3jXbD7HIp5XomdysytkHEXgQE"
+        }
+      ]
+    },
+    {
+      "query": "president snow",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:20:00Z",
+      "related_news_urls": [
+        "https://demokratis.co.id/en/president-snow-actor-rankings",
+        "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
+        "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa18BsBFySJoGI8OkXcOBqH6WhPbP2-Z72EVzRpjuO4UVV4qVDX-9QTToF-NE",
+      "image_credit": "Demokratis.co.id",
+      "news": [
+        {
+          "url": "https://demokratis.co.id/en/president-snow-actor-rankings",
+          "title": "Screen Rant Ranks Three Actors Who Played President Snow",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa18BsBFySJoGI8OkXcOBqH6WhPbP2-Z72EVzRpjuO4UVV4qVDX-9QTToF-NE"
+        },
+        {
+          "url": "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
+          "title": "All 3 Versions Of Coriolanus Snow In The Hunger Games Movies, Ranked",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV1Z6BrFFC8mLwjG7IzMU7Sn0s6tQt6AscG_EBKMAcfOPWwmCPQbeTsitF5s0"
+        },
+        {
+          "url": "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
+          "title": "The Hunger Games: Sunrise on the Reaping — Francis Lawrence [Review]",
+          "publisher": "In Review Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek"
+        }
+      ]
+    },
+    {
+      "query": "halsey",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:20:00Z",
+      "related_news_urls": [
+        "https://demokratis.co.id/en/halsey-beach-video-online-criticism",
+        "https://www.hellomagazine.com/us/937009/halsey-turns-heads-in-brown-string-bikini-during-sun-soaked-beach-getaway/",
+        "https://peradaban.id/en/halsey-beach-video-horror-film"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S6t4Rp-GMyMf3HSoFcZLAKCiWzgSkUQljCqaCaPiissKWBb0FpFMXACqXU0",
+      "image_credit": "Demokratis.co.id",
+      "news": [
+        {
+          "url": "https://demokratis.co.id/en/halsey-beach-video-online-criticism",
+          "title": "Halsey Faces Online Criticism After Beach Video Sparks Debate",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S6t4Rp-GMyMf3HSoFcZLAKCiWzgSkUQljCqaCaPiissKWBb0FpFMXACqXU0"
+        },
+        {
+          "url": "https://www.hellomagazine.com/us/937009/halsey-turns-heads-in-brown-string-bikini-during-sun-soaked-beach-getaway/",
+          "title": "Halsey turns heads in brown string bikini during sun-soaked beach getaway",
+          "publisher": "HELLO!",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1-e__gOOk3C97ntWVksftcIRaiasuuIGlUMTuNK2kFtS_LFhggQk9hbGgkLU"
+        },
+        {
+          "url": "https://peradaban.id/en/halsey-beach-video-horror-film",
+          "title": "Halsey Shares Beach Video After Wrapping Horror Film",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizCvIP5A-csTaZn4hZyBSd68x-rRpUBuQQTfaGVUEqJ1jEjzX_aWAC6NSZKo"
+        }
+      ]
+    },
+    {
+      "query": "flood watch",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/state/national-seashore-warning-outer-banks-storm-november-2026/",
+        "https://wcti12.com/news/local/stormtrack-12-weather-alert-day-heavy-rain-coastal-flooding-threaten-enc-thanksgiving",
+        "https://www.witn.com/2026/11/22/showers-continue-today-we-clear-out-monday-we-are-breezy/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0muvT4x3LadWFf1r4qb_cuLhRe1iiYsaBeTkrBkxFqAEOtsLgfEFkR90ZEkY",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/state/national-seashore-warning-outer-banks-storm-november-2026/",
+          "title": "National Seashore issues warning to Outer Banks ahead of the storm",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0muvT4x3LadWFf1r4qb_cuLhRe1iiYsaBeTkrBkxFqAEOtsLgfEFkR90ZEkY"
+        },
+        {
+          "url": "https://wcti12.com/news/local/stormtrack-12-weather-alert-day-heavy-rain-coastal-flooding-threaten-enc-thanksgiving",
+          "title": "StormTrack 12 Weather Alert Day: Heavy rain, coastal flooding threaten ENC Thanksgiving",
+          "publisher": "WCTI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjd8tK082IcWMu8_j1eH_-yVNbt-1JgRW7CbT_DBFiuW-r_3fJY8HeeLbeFLg"
+        },
+        {
+          "url": "https://www.witn.com/2026/11/22/showers-continue-today-we-clear-out-monday-we-are-breezy/",
+          "title": "Showers continue this afternoon as we clear out Monday, with breezes returning",
+          "publisher": "WITN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl-v5ZY0e0kyfTffqy7qk8jKTq1Pqjer0NrUttshqxgrv-Zxr3Zr3ptRbOYcc"
         }
       ]
     },
     {
       "query": "white",
-      "approx_searches": "5000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-25T07:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mlb/story/_/id/50587577/white-sox-tyrone-taylor-agree-2-year-17-million-deal",
-        "https://www.mlb.com/news/tyrone-taylor-white-sox-free-agent-contract",
-        "https://sports.yahoo.com/mlb/articles/cubs-lose-8-veteran-outfielder-224527987.html"
+        "https://www.theguardian.com/us-news/2026/nov/24/donald-trump-turkey-pardon",
+        "https://www.pbs.org/newshour/politics/watch-live-trump-holds-2026-white-house-turkey-pardon-with-freedom-and-feathers",
+        "https://www.axios.com/2026/11/24/trump-turkey-pardon-ballroom"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9FXwD02r7jU0cXXNi5wWrF-gh6dDSyK9PW1a47vNLoNLrpxWRH5f6dQOYBc",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywpD5JOE9V5v1h8lTdteOnZa6eP72s6-hOQx990AmFqA-JDO0qb0HWFJq4TY",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://www.espn.com/mlb/story/_/id/50587577/white-sox-tyrone-taylor-agree-2-year-17-million-deal",
-          "title": "Sources: White Sox, OF Tyrone Taylor agree to 2-year, $17 million deal",
-          "publisher": "ESPN",
+          "url": "https://www.theguardian.com/us-news/2026/nov/24/donald-trump-turkey-pardon",
+          "title": "One lame duck and two turkeys as Trump plays the hits at Thanksgiving ceremony",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9FXwD02r7jU0cXXNi5wWrF-gh6dDSyK9PW1a47vNLoNLrpxWRH5f6dQOYBc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTywpD5JOE9V5v1h8lTdteOnZa6eP72s6-hOQx990AmFqA-JDO0qb0HWFJq4TY"
         },
         {
-          "url": "https://www.mlb.com/news/tyrone-taylor-white-sox-free-agent-contract",
-          "title": "Tyrone Taylor agrees to deal with White Sox, sticking in Chicago (source)",
-          "publisher": "MLB.com",
+          "url": "https://www.pbs.org/newshour/politics/watch-live-trump-holds-2026-white-house-turkey-pardon-with-freedom-and-feathers",
+          "title": "WATCH: Trump holds 2026 White House turkey pardon with Freedom and Feathers",
+          "publisher": "PBS",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8AOupIO_xlqZ8HXTUSypyjUzIXDweKLeS6Td7k5Tuktqir7vwfcr0WBrmzRk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShMGs-3rWstjpWjbbpvs9xnHDLkZFasy86wczRev5CaANoEpLZidH1KJbZEhQ"
         },
         {
-          "url": "https://sports.yahoo.com/mlb/articles/cubs-lose-8-veteran-outfielder-224527987.html",
-          "title": "Cubs lose 8-year veteran outfielder to White Sox on $17 million contract",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.axios.com/2026/11/24/trump-turkey-pardon-ballroom",
+          "title": "Trump talks turkey, and his ballroom, at pardoning event",
+          "publisher": "Axios",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScVxb7sELG16daOZ8JKKk5oGeaxNM6xvxoCoH4klFLkvi4HSR3xLotDxM7jr8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSChxp_xlVPOlM6KNBXTuVmUlKPAtzTHOAq8yuiTEpzG0PA9RSk-PdrHuoPSno"
+        }
+      ]
+    },
+    {
+      "query": "день благодарения",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://www.rtvi.com/news/pomilovanie-svobody-tramp-provel-tradiczionnuyu-czeremoniyu-pered-dnem-blagodareniya/",
+        "https://ura.news/news/1053147096",
+        "https://nsn.fm/in-the-world/vybrannye-dlya-pomilovaniya-trampom-indeiki-razmestilis-v-roskoshnom-otele"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZGFQhw8eMQvRRFjlY6lbb_bRHm6TdH1Jm7Dba4oW8pDAjPG62gggyDXkMekw",
+      "image_credit": "RTVI",
+      "news": [
+        {
+          "url": "https://www.rtvi.com/news/pomilovanie-svobody-tramp-provel-tradiczionnuyu-czeremoniyu-pered-dnem-blagodareniya/",
+          "title": "Помилование Свободы: Трамп провел традиционную церемонию перед Днем благодарения",
+          "publisher": "RTVI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZGFQhw8eMQvRRFjlY6lbb_bRHm6TdH1Jm7Dba4oW8pDAjPG62gggyDXkMekw"
+        },
+        {
+          "url": "https://ura.news/news/1053147096",
+          "title": "Трамп раскритиковал клички индеек прямо на церемонии помилования",
+          "publisher": "URA.RU",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdLI0jA99Op5rjvJiqF5usIopn-uN8Ia3Tk81VD6J5U4ulYF-cpAgxez6fxc"
+        },
+        {
+          "url": "https://nsn.fm/in-the-world/vybrannye-dlya-pomilovaniya-trampom-indeiki-razmestilis-v-roskoshnom-otele",
+          "title": "Выбранные для помилования Трампом индейки разместились в роскошном отеле",
+          "publisher": "Национальная Служба Новостей",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRausE2JXKVJLAoB4EahjW-fl9EANPTV3-19QICQ84nnYpaYpifSfoBmn-ANvs"
         }
       ]
     },
@@ -151,33 +291,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-25T07:00:00Z",
       "related_news_urls": [
-        "https://www.firstcoastnews.com/article/news/local/open-and-closed-thanksgiving-2026-in-florida-see-list/77-084459a8-a339-40df-9e74-f37ea8351133",
-        "https://www.miaminewtimes.com/food-drink/miami-grocery-stores-open-and-closed-on-thanksgiving-2026-40599840/",
-        "https://www.tcpalm.com/story/news/local/florida/2026/11/24/walmart-publix-target-costco-aldi-sams-club-winn-dixie-open-thanksgiving-florida-grocery-stores-fl/92612629007/"
+        "https://www.wral.com/news/local/stores-open-on-thanksgiving-november-2026/",
+        "https://abc7ny.com/post/what-stores-are-open-thanksgiving-black-friday-2026-grocery-drugstores-more-list/20071063/",
+        "https://www.news4jax.com/news/local/2026/11/24/stores-open-closed-thanksgiving-2026-publix-walmart-target-more/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPMnHNvgl3OxVJ0QZZO1Wpiclmf6sVgDmvdiqXB1yaIaRZCvsXTWVyTXnJ4p0",
-      "image_credit": "firstcoastnews.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTaE4W-1NWJOrr7414vYJvk5VIs4_5IOavSYw84nddK9JFfgmT6MHpX-kZCU",
+      "image_credit": "WRAL",
       "news": [
         {
-          "url": "https://www.firstcoastnews.com/article/news/local/open-and-closed-thanksgiving-2026-in-florida-see-list/77-084459a8-a339-40df-9e74-f37ea8351133",
-          "title": "What’s open and closed on Thanksgiving 2026 in Florida? See list",
-          "publisher": "firstcoastnews.com",
+          "url": "https://www.wral.com/news/local/stores-open-on-thanksgiving-november-2026/",
+          "title": "Last-minute holiday needs? These stores are open on Thanksgiving",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPMnHNvgl3OxVJ0QZZO1Wpiclmf6sVgDmvdiqXB1yaIaRZCvsXTWVyTXnJ4p0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTaE4W-1NWJOrr7414vYJvk5VIs4_5IOavSYw84nddK9JFfgmT6MHpX-kZCU"
         },
         {
-          "url": "https://www.miaminewtimes.com/food-drink/miami-grocery-stores-open-and-closed-on-thanksgiving-2026-40599840/",
-          "title": "Miami grocery stores open and closed on Thanksgiving 2026",
-          "publisher": "Miami New Times",
+          "url": "https://abc7ny.com/post/what-stores-are-open-thanksgiving-black-friday-2026-grocery-drugstores-more-list/20071063/",
+          "title": "What stores are open on Thanksgiving and Black Friday 2026? Grocery, drugstores and more | List",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhYLCF3H4CxHs55eFpolCjSsuDKZkIOIAySYsLi3wb9F3jWpp6OyA3auPvrI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ90ACaq7BqzMT5zzG5W1PUprGpKg4qc9ENcYR-D9-PFblCmKkdBkpH27VM4oc"
         },
         {
-          "url": "https://www.tcpalm.com/story/news/local/florida/2026/11/24/walmart-publix-target-costco-aldi-sams-club-winn-dixie-open-thanksgiving-florida-grocery-stores-fl/92612629007/",
-          "title": "Are Walmart, Publix, Target, Costco open on Thanksgiving in Florida?",
-          "publisher": "Treasure Coast News",
+          "url": "https://www.news4jax.com/news/local/2026/11/24/stores-open-closed-thanksgiving-2026-publix-walmart-target-more/",
+          "title": "Stores open, closed on Thanksgiving in Florida: Publix, Walmart, Target more",
+          "publisher": "News4JAX",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBWKjsxzFJqjewgAL9tfnmeDmUqKBxqDc9QXJTRAnFdQuGUbeYtzZkSPtUPpE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1H2Fl9SPac93gX37_eJEsk90KxAIZbkTBanT1lyy6h96V61UH4oE_qJfDuI"
         }
       ]
     },
@@ -213,146 +353,6 @@
           "publisher": "The New York Times",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiS_PizM3HNgjzGaV0KwWkOAOXJ4bDFkYX91gFfXl_cX-dIjMe-WkY5WlFEkc"
-        }
-      ]
-    },
-    {
-      "query": "brandin cooks",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T06:50:00Z",
-      "related_news_urls": [
-        "https://www.kcra.com/article/brandin-cooks-turkey-drive-stockton/74525952",
-        "https://www.yahoo.com/news/videos/former-49ers-player-brandin-cooks-043010218.html",
-        "https://fox40.com/news/local-news/stockton/49ers-wide-receiver-brandin-cooks-to-host-thanksgiving-community-drive-in-stockton/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54woWOJuJJPGfUYqfRHQ_DOeoaZa2Zw6JsWWCZxcZuXN0oFAEeD2zwlWxD0E",
-      "image_credit": "KCRA",
-      "news": [
-        {
-          "url": "https://www.kcra.com/article/brandin-cooks-turkey-drive-stockton/74525952",
-          "title": "NFL player Brandin Cooks hosts turkey drive in Stockton",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54woWOJuJJPGfUYqfRHQ_DOeoaZa2Zw6JsWWCZxcZuXN0oFAEeD2zwlWxD0E"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/former-49ers-player-brandin-cooks-043010218.html",
-          "title": "Former 49ers player Brandin Cooks hosts Thanksgiving drive in Stockton",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2hoz2RmfE2Q22HcQA8M8i8PKLTMls4kwK94nzauv9cz74Nq0jq7jFtGNPwjg"
-        },
-        {
-          "url": "https://fox40.com/news/local-news/stockton/49ers-wide-receiver-brandin-cooks-to-host-thanksgiving-community-drive-in-stockton/",
-          "title": "49ers wide receiver Brandin Cooks to host Thanksgiving community drive in Stockton",
-          "publisher": "FOX40",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa_dQae3A-IoXdgpFORIbj73EFxiG8cTpc0FWypuuvSZ9VFRyOD-tE12BqUps"
-        }
-      ]
-    },
-    {
-      "query": "full moon supermoon astrology",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T06:30:00Z",
-      "related_news_urls": [
-        "https://www.space.com/stargazing/watch-novembers-full-beaver-moon-live-online-with-supermoon-livestream-nov-24-2026",
-        "https://www.wmagazine.com/life/november-horoscope-2026-gemini-full-moon-astrology-leo-cancer-taurus-libra-virgo-capricorn",
-        "https://www.9news.com/article/news/nation-world/full-moon-supermoon-november-2026/507-478fefc3-a021-4af9-90c7-8927533e7939"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVHTutqJqExWGzMuh-Wp_rMiSgqOAVS9MbNFh5l9TEKRemq1jda76-bElnQ-Y",
-      "image_credit": "Space",
-      "news": [
-        {
-          "url": "https://www.space.com/stargazing/watch-novembers-full-beaver-moon-live-online-with-supermoon-livestream-nov-24-2026",
-          "title": "Watch November's full Beaver Moon live online today with supermoon livestream",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVHTutqJqExWGzMuh-Wp_rMiSgqOAVS9MbNFh5l9TEKRemq1jda76-bElnQ-Y"
-        },
-        {
-          "url": "https://www.wmagazine.com/life/november-horoscope-2026-gemini-full-moon-astrology-leo-cancer-taurus-libra-virgo-capricorn",
-          "title": "November Horoscope: The 6 Zodiac Signs Getting a Fresh Start With the Gemini Full Moon",
-          "publisher": "W Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_pKEGgwdibmezeq2b88mXjaBoBaz_LGhg0Nd1YbCak5icQRenA0hHRIE7Pys"
-        },
-        {
-          "url": "https://www.9news.com/article/news/nation-world/full-moon-supermoon-november-2026/507-478fefc3-a021-4af9-90c7-8927533e7939",
-          "title": "November's full beaver moon will be the first of four consecutive supermoons",
-          "publisher": "9News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuvCYEQDJoqYVF70sGRTpYD6_RoB8l8xhXeFE4kLlskU7v-B-4I0RnRWc8Yi4"
-        }
-      ]
-    },
-    {
-      "query": "royal caribbean cruise man overboard",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T06:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/royal-caribbean-allure-of-the-seas-man-overboard-bahamas/",
-        "https://www.yahoo.com/news/world/articles/man-overboard-search-underway-passenger-211404923.html",
-        "https://people.com/man-goes-overboard-from-royal-caribbean-ship-during-weeklong-thanksgiving-trip-12277608"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ23TLzr32yyuntGpsnXONRR5ehs352qG-wD1f9t6bRl7l-CdnDkqoIKjZHzx0",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/royal-caribbean-allure-of-the-seas-man-overboard-bahamas/",
-          "title": "Man on cruise ship goes overboard off Bahamas, search underway",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ23TLzr32yyuntGpsnXONRR5ehs352qG-wD1f9t6bRl7l-CdnDkqoIKjZHzx0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/world/articles/man-overboard-search-underway-passenger-211404923.html",
-          "title": "Man Overboard: Search Underway After Passenger Disappears From Royal Caribbean Cruise Ship",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-TNlD6xPbdnq6BJ5DON256Ry3XP7XjIQxsl-Hiq8SHd_pHPN7vP34_cBHpc"
-        },
-        {
-          "url": "https://people.com/man-goes-overboard-from-royal-caribbean-ship-during-weeklong-thanksgiving-trip-12277608",
-          "title": "Man Goes Overboard from Royal Caribbean Ship During Weeklong Thanksgiving Trip",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQLre_aJfa50sBwwnB5KtNWCHFLcbjD7dgppWM0qGaBnKjAe5lQJWpDY0o1IA"
-        }
-      ]
-    },
-    {
-      "query": "margot robbie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T06:20:00Z",
-      "related_news_urls": [
-        "https://graziamagazine.com/articles/margot-robbies-sharp-new-bob-at-chanel-in-sydney-is-a-lesson-in-summer-hair/",
-        "https://suaragarut.id/en/margot-robbie-chanel-sydney-bob",
-        "https://cwibc.co.id/en/margot-robbie-chanel-sydney-bob"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQQ7hodg-DaJeZbFAMMqKbHVEp6UgXewCNmrpAjOfmGp6gYxZdFKm6NUn7cp8",
-      "image_credit": "graziamagazine.com",
-      "news": [
-        {
-          "url": "https://graziamagazine.com/articles/margot-robbies-sharp-new-bob-at-chanel-in-sydney-is-a-lesson-in-summer-hair/",
-          "title": "Margot Robbie’s Sharp New Bob at Chanel in Sydney Is a Lesson in Summer Hair",
-          "publisher": "graziamagazine.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQQ7hodg-DaJeZbFAMMqKbHVEp6UgXewCNmrpAjOfmGp6gYxZdFKm6NUn7cp8"
-        },
-        {
-          "url": "https://suaragarut.id/en/margot-robbie-chanel-sydney-bob",
-          "title": "Margot Robbie Debuts Sharp Bob at Chanel Sydney Show",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8A_O24GGQp56MvVhD5VRJyz0fr1zY1fHBnO042iVA_KrmkgyhtA2fBdAA7Fc"
-        },
-        {
-          "url": "https://cwibc.co.id/en/margot-robbie-chanel-sydney-bob",
-          "title": "Margot Robbie Debuts Sharp Bob at Chanel Sydney Show",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8A_O24GGQp56MvVhD5VRJyz0fr1zY1fHBnO042iVA_KrmkgyhtA2fBdAA7Fc"
         }
       ]
     }
