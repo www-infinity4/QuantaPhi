@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T20:01:26.298384Z",
+  "checked_at": "2026-11-25T20:31:04.376960Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "psg",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T19:30:00Z",
+      "query": "espn",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T20:10:00Z",
       "related_news_urls": [
-        "https://www.lequipe.fr/Football/Actualites/Le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/1746155",
-        "https://www.lequipe.fr/Football/Video/Ligue-des-champions-le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/20246325",
-        "https://www.footmercato.net/a7102560081016581498-psg-as-rome-les-compositions-officielles"
+        "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
+        "https://sports.yahoo.com/college-football/articles/not-close-differing-reports-emerge-191507864.html",
+        "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Za1ekNNK9DaDxJ0bHCy5CLAO0ApZoSy2qgFIl6xUriwdZcLfQhsOwRWt6ls",
-      "image_credit": "L'Équipe",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxyHxyvsaTQB3L13id1lOXH9kUsj2IGMJNpbYW64SDG04FfeEbTVUCKRjMXM",
+      "image_credit": "Front Office Sports",
       "news": [
         {
-          "url": "https://www.lequipe.fr/Football/Actualites/Le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/1746155",
-          "title": "La compo du PSG face à l'AS Rome : avec Mayulu, Akliouche et Zabarnyi, Dembélé et Marquinhos sur le banc",
-          "publisher": "L'Équipe",
+          "url": "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
+          "title": "Kirk Herbstreit Expected to Stay at ESPN Long-Term",
+          "publisher": "Front Office Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Za1ekNNK9DaDxJ0bHCy5CLAO0ApZoSy2qgFIl6xUriwdZcLfQhsOwRWt6ls"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxyHxyvsaTQB3L13id1lOXH9kUsj2IGMJNpbYW64SDG04FfeEbTVUCKRjMXM"
         },
         {
-          "url": "https://www.lequipe.fr/Football/Video/Ligue-des-champions-le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/20246325",
-          "title": "Le PSG avec Mayulu, Akliouche et Zabarnyi face à l'AS Rome, Dembélé et Marquinhos sur le banc au coup d'envoi",
-          "publisher": "L'Équipe",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQERaliT8-CQ7NDbbaTnPHCari_p3DD8dQ4qGsXWWGVoQOgtaQMcJYDVywq4"
-        },
-        {
-          "url": "https://www.footmercato.net/a7102560081016581498-psg-as-rome-les-compositions-officielles",
-          "title": "PSG – AS Rome : les compositions officielles",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt6tPaPJDO-KYPb23QrICRCVdDx6WznQEVlZsTLfEsWoE7YzC5JKu4xo01DBw"
-        }
-      ]
-    },
-    {
-      "query": "mike mccarthy press conference",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T19:30:00Z",
-      "related_news_urls": [
-        "https://www.denverbroncos.com/news/this-is-why-you-play-the-game-broncos-preparing-to-play-in-tough-environment-as-black-friday-matchup-vs-steelers-awaits",
-        "https://sports.yahoo.com/fantasy/articles/broncos-steelers-fantasy-football-week-192327494.html",
-        "https://www.steelers.com/news/steelers-vs-broncos-how-to-watch-listen-to-the-game-x0841"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsbbS45-jUdqV8BFZ_dCgYkCJrjW-xayTs4Yqv9S8CyF7Ufmgx0UhuuLRdtzk",
-      "image_credit": "Denver Broncos",
-      "news": [
-        {
-          "url": "https://www.denverbroncos.com/news/this-is-why-you-play-the-game-broncos-preparing-to-play-in-tough-environment-as-black-friday-matchup-vs-steelers-awaits",
-          "title": "'This is why you play the game': Broncos preparing to play in 'tough environment' as Black Friday matchup vs. Steelers awaits",
-          "publisher": "Denver Broncos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsbbS45-jUdqV8BFZ_dCgYkCJrjW-xayTs4Yqv9S8CyF7Ufmgx0UhuuLRdtzk"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/articles/broncos-steelers-fantasy-football-week-192327494.html",
-          "title": "Broncos-Steelers Fantasy Football Week 12 Start ‘Em, Sit ‘Em",
+          "url": "https://sports.yahoo.com/college-football/articles/not-close-differing-reports-emerge-191507864.html",
+          "title": "'Not close': Differing reports emerge on ESPN legend's future at network",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNrxh3W0lIo4iV-YECkKT93VF1f_6Ct3sQknxcGPAirPOf3VSHrQiDajfP3c"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfO7zw8AbxZCS7T4BAYynai1HDA7_T0XckIrQ5DjR_F0sev5UppoAeJMW9_4"
         },
         {
-          "url": "https://www.steelers.com/news/steelers-vs-broncos-how-to-watch-listen-to-the-game-x0841",
-          "title": "Steelers vs Broncos: How to watch/listen to the game",
-          "publisher": "Steelers.com",
+          "url": "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network",
+          "title": "Kirk Herbstreit Contract Agreement Rumors Denied by ESPN, Timeline for Deal Updated by Network",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdyv-YBgRmK-HrXZ2u26AtaGH5QGgWkRZ5iUTxkgilSHi8DOHzCyhTZ-9Aqeg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_HNEc_T07B6X-OHXlKIeQKyMqNQqd681gKO2usVLYQc6Vh5S4_gm1E1i6bI"
         }
       ]
     },
     {
-      "query": "lsu basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T19:20:00Z",
+      "query": "bayern",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T20:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
-        "https://www.nytimes.com/athletic/7811905/2026/11/25/lsu-rj-luis-sues-greg-sankey-will-wade/",
-        "https://www.wafb.com/2026/11/25/lsus-future-sec-center-federal-court-hearing-today/"
+        "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
+        "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel",
+        "https://www.welt.de/sport/fussball/champions-league/article6b0730d6c75e09cb88d16185/champions-league-ticker-osc-lille-fc-bayern-muenchen-live.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc",
+      "image_credit": "sportschau.de",
+      "news": [
+        {
+          "url": "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
+          "title": "Kreative Lösungen gefragt: Brown, Bischof & Binder - Wer ersetzt Kane und Olise in der Bayern-Offensive?",
+          "publisher": "sportschau.de",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc"
+        },
+        {
+          "url": "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel",
+          "title": "Upamecano als Stürmer? Was den Vorletzten Lille für Bayern gefährlich macht",
+          "publisher": "Kicker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUwNwMMrcVtsV96nDN5cPUrbrenmkeXadoKNp60H1AhB42e5yxF5kxRfzO1ck"
+        },
+        {
+          "url": "https://www.welt.de/sport/fussball/champions-league/article6b0730d6c75e09cb88d16185/champions-league-ticker-osc-lille-fc-bayern-muenchen-live.html",
+          "title": "Champions League, Ticker: OSC Lille – FC Bayern München live",
+          "publisher": "WELT",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4SiCN0yyFFnKm3yUOyVOqmMfcHkuJ-sOwTYQYCIffuY2OcL144k5Y2h4nqXA"
+        }
+      ]
+    },
+    {
+      "query": "kent state golden flashes football",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T20:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/recap/_/gameId/401866470",
+        "https://www.foxnews.com/outkick-sports/absolute-worst-call-college-football-season-happened-last-night-while-you-were-sleeping",
+        "https://sports.yahoo.com/college-football/articles/slow-mo-video-shows-refs-152228707.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJc28NrvKTMcZlCpd6A2aUbMMekVp5n2bPRR6y4xKEv3eY7_kaIk9uxnn9IDg",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
-          "title": "Judge denies SEC's request for TRO against LSU in Dec. 3 vote",
+          "url": "https://www.espn.com/college-football/recap/_/gameId/401866470",
+          "title": "Eastern Michigan 17-12 Kent State (Nov 24, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJc28NrvKTMcZlCpd6A2aUbMMekVp5n2bPRR6y4xKEv3eY7_kaIk9uxnn9IDg"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7811905/2026/11/25/lsu-rj-luis-sues-greg-sankey-will-wade/",
-          "title": "Ex-LSU basketball player RJ Luis sues SEC commissioner Greg Sankey as standoff continues",
-          "publisher": "The New York Times",
+          "url": "https://www.foxnews.com/outkick-sports/absolute-worst-call-college-football-season-happened-last-night-while-you-were-sleeping",
+          "title": "The absolute worst call of the college football season happened last night while you were sleeping",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDuwc7kjWfWN6Nad8mGSfavzkXPSS6t32l0MTzuzmulFwfwupIvgvp_gIKySI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrDJPqZXXRYxneOpPPTG92YsMrNxiW4-qo1CnwoIJdGQR0-VCwY27buDJTuuI"
         },
         {
-          "url": "https://www.wafb.com/2026/11/25/lsus-future-sec-center-federal-court-hearing-today/",
-          "title": "LSU’s future in the SEC at center of federal court hearing today",
-          "publisher": "WAFB",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BHUJhpgcbM3JYBAh7k7oJDOQ-ruY4wkJ3w7F-H1ScqTFquCcPnjQJlBCxg0"
-        }
-      ]
-    },
-    {
-      "query": "inter - stuttgart",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:20:00Z",
-      "related_news_urls": [
-        "https://www.kicker.de/zwei-knifflige-personalfragen-beim-vfb-und-die-sorge-vor-inters-offensive-1274842/artikel",
-        "https://www.sportschau.de/fussball/championsleague/stuttgart-und-hoeness-heiss-aufs-beeindruckende-san-siro,video-mima-inter-stuttgart-100.html",
-        "https://www.gazzetta.it/de/fussball/mannschaften/inter/news/25-11-2026/juergen-klinsmann-im-interview-inter-stuttgart-maradona-thuram-und-pio-esposito.shtml"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf1xzq6GFmyut6ASZLsT7lOu2R6GrUac7L0HKviiHvQIohTY6yo8qCZXW6QD0",
-      "image_credit": "Kicker",
-      "news": [
-        {
-          "url": "https://www.kicker.de/zwei-knifflige-personalfragen-beim-vfb-und-die-sorge-vor-inters-offensive-1274842/artikel",
-          "title": "Zwei knifflige Personalfragen beim VfB - und die Sorge vor Inters Offensive",
-          "publisher": "Kicker",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf1xzq6GFmyut6ASZLsT7lOu2R6GrUac7L0HKviiHvQIohTY6yo8qCZXW6QD0"
-        },
-        {
-          "url": "https://www.sportschau.de/fussball/championsleague/stuttgart-und-hoeness-heiss-aufs-beeindruckende-san-siro,video-mima-inter-stuttgart-100.html",
-          "title": "Duell mit Inter Mailand: Stuttgart und Hoeneß heiß aufs \"beeindruckende\" San Siro",
-          "publisher": "sportschau.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjMqVqET6--grcjzRk6mLb19lALrALsa_N2QIZi09jXVy22gHgIGvy6QfB-6c"
-        },
-        {
-          "url": "https://www.gazzetta.it/de/fussball/mannschaften/inter/news/25-11-2026/juergen-klinsmann-im-interview-inter-stuttgart-maradona-thuram-und-pio-esposito.shtml",
-          "title": "Klinsmann: „Inter, Stuttgart und damals mit Maradona. Thuram ist wie ich, Pio ähnelt ...“",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAe9QU6Kzr3KgW1eNyOJYHnuuhtRRUIA-GfroInNE9n0we8oL--CDCWR1mv7M"
-        }
-      ]
-    },
-    {
-      "query": "todd boehly",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:20:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/25/business/lukoil-sale-todd-boehly-intl",
-        "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
-        "https://www.reuters.com/business/energy/boehly-signs-us-backed-share-swap-deal-buy-lukoil-global-assets-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRHg_nRH8PFvw5nRMb5nyhuXf1QvruN1NA_ZA2qYg-8utyEFTp2BSBsHs1cH4",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/25/business/lukoil-sale-todd-boehly-intl",
-          "title": "Russian oil firm Lukoil’s overseas assets sold to investors led by US billionaire Todd Boehly",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRHg_nRH8PFvw5nRMb5nyhuXf1QvruN1NA_ZA2qYg-8utyEFTp2BSBsHs1cH4"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
-          "title": "Investors led by U.S. billionaire Todd Boehly to buy Lukoil's oil and gas assets outside Russia, sources say",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOPMps2YS9h0BcbI9Kv6nm9dLBBWJ5rRBmrX86UjTmfoLqUyXZg-FUXZ-7iM8"
-        },
-        {
-          "url": "https://www.reuters.com/business/energy/boehly-signs-us-backed-share-swap-deal-buy-lukoil-global-assets-2026-11-25/",
-          "title": "EXCLUSIVE: Boehly signs US-backed share swap deal to buy Lukoil global assets",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSShwqAtGrZOiZsbXVm0YfaCxzI01R5Gtl9YLGejlS4Ne2p7H0p680PkP_R17E"
-        }
-      ]
-    },
-    {
-      "query": "nj state of emergency",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:20:00Z",
-      "related_news_urls": [
-        "https://6abc.com/videoClip/20080420/",
-        "https://www.nbcphiladelphia.com/news/local/state-of-emergency-thanksgiving-storm-new-jersey/4503076/",
-        "https://lancasteronline.com/news/local/rain-high-winds-expected-for-thanksgiving-cold-conditions-for-black-friday/article_f989ce79-ba18-4be4-8c42-e4286ac090d6.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSanisgiPQtvkJGdMyBtoC6sMdBUelGnIKpSqdzT4CJmlPnK4zopSjnnUAAUj8",
-      "image_credit": "6abc Philadelphia",
-      "news": [
-        {
-          "url": "https://6abc.com/videoClip/20080420/",
-          "title": "Jersey Shore braces for Thanksgiving storm",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSanisgiPQtvkJGdMyBtoC6sMdBUelGnIKpSqdzT4CJmlPnK4zopSjnnUAAUj8"
-        },
-        {
-          "url": "https://www.nbcphiladelphia.com/news/local/state-of-emergency-thanksgiving-storm-new-jersey/4503076/",
-          "title": "New Jersey issues State of Emergency for Thanksgiving storm",
-          "publisher": "NBC10 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQK6q6AugdxWENgbSR5ja3uoYcr4aD1o1L7iNlwO07La8o7e_8coLteZGFTYw"
-        },
-        {
-          "url": "https://lancasteronline.com/news/local/rain-high-winds-expected-for-thanksgiving-cold-conditions-for-black-friday/article_f989ce79-ba18-4be4-8c42-e4286ac090d6.html",
-          "title": "Rain, high winds expected for Thanksgiving, cold conditions for Black Friday",
-          "publisher": "LancasterOnline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCefPvlzjbS9fiQ7xBvjRmQIN2hIjJWMnAPXStS_PTtP5arP5aqP6iUnB1RH8"
-        }
-      ]
-    },
-    {
-      "query": "burnley vs birmingham",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ckqx505l5x4qt",
-        "https://www.tufutbolero.com/en/news/burnley-birmingham-preview-burnley-arrive-with-eight-fdbceb",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-burnley-v-birmingham-city/blt1016992c796604bf"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDt1Zq6NUuKoAQnMKGeP74s5ccOOBLsSamPuhpPuQc209nEQdEe_fTFrlPWc0",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ckqx505l5x4qt",
-          "title": "Burnley v Birmingham City: Championship stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDt1Zq6NUuKoAQnMKGeP74s5ccOOBLsSamPuhpPuQc209nEQdEe_fTFrlPWc0"
-        },
-        {
-          "url": "https://www.tufutbolero.com/en/news/burnley-birmingham-preview-burnley-arrive-with-eight-fdbceb",
-          "title": "Burnley-Birmingham, preview: Burnley arrive with eight absences",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqwMQB2w7Fy0PhBqVXmxKUotuxIS3DZBusSImcdo5NdKrtGdC62nfi-pl6kG4"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-burnley-v-birmingham-city/blt1016992c796604bf",
-          "title": "Watch Burnley vs Birmingham City live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNccY4GH5rEGMHsXynPqpux_09Ucr3esanmSDovXJoPsFdKeFDUPtwh9dKPI"
-        }
-      ]
-    },
-    {
-      "query": "fotmob",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T19:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/football/2026/nov/25/alejandro-garnacho-aston-villa-loanees-unai-emery",
-        "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
-        "https://sports.yahoo.com/articles/aston-villa-manager-unai-emery-150000903.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PZ7B8CSHwVGIPusKWHjr-9b42p93dT4pwfUPN70m9VpFjXJN7U4rk75OzWw",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/25/alejandro-garnacho-aston-villa-loanees-unai-emery",
-          "title": "Alejandro Garnacho and the curious case of Aston Villa’s outcast loanees",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PZ7B8CSHwVGIPusKWHjr-9b42p93dT4pwfUPN70m9VpFjXJN7U4rk75OzWw"
-        },
-        {
-          "url": "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
-          "title": "Alejandro Garnacho Reaches Point of No Return at Aston Villa",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrLO15GpXB712FGwhR1zK8POpWulHwFs-TLEDoSlimQ9TdjzKDKNuWEaK8Mk4"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/aston-villa-manager-unai-emery-150000903.html",
-          "title": "Aston Villa manager Unai Emery drops 'humiliating' update on Alejandro Garnacho",
+          "url": "https://sports.yahoo.com/college-football/articles/slow-mo-video-shows-refs-152228707.html",
+          "title": "Slow-Mo Video Shows Refs Made Clear Mistake at End of Kent State-Eastern Michigan Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbd6j1dQSGBgy5qd90rPgCmspoPrKaBDnlfQqhEKMLVHNzOcRYPtKhP7Fxkmw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRYvVjRUZQDehFYWbVk2iTggBwj2uvpl7IzSMZgKwAE-LYb3k4hQZaWp7G8hMM"
         }
       ]
     },
     {
-      "query": "sporting vs man utd",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T19:10:00Z",
+      "query": "matt damon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T20:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
-        "https://www.skysports.com/football/live-blog/13616485/sporting-vs-man-utd-live-champions-league-match-updates-news-and-score",
-        "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/"
+        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+        "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-claims-odyssey-came-144015520.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
-          "title": "Champions League: Pochettino's Man Utd visit Sporting, Brugge host Liverpool",
-          "publisher": "BBC",
+          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
         },
         {
-          "url": "https://www.skysports.com/football/live-blog/13616485/sporting-vs-man-utd-live-champions-league-match-updates-news-and-score",
-          "title": "Sporting vs Man Utd LIVE! Champions League match updates, news and score",
-          "publisher": "Sky Sports",
+          "url": "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+          "title": "Matt Damon says it was ‘difficult’ returning home to his family after ‘The Odyssey’ isolation",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfrgRNH9fm1qdLTBo3W_D3ciOFX-5_CzNzQxdUmsvGRO8dxKAeN8LxsSxk3TM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
         },
         {
-          "url": "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/",
-          "title": "Sporting CP vs. Man United: Livestream Champions League Soccer From Anywhere",
-          "publisher": "CNET",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-claims-odyssey-came-144015520.html",
+          "title": "Matt Damon Claims ‘The Odyssey’ Came With Major Family Cost",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsBQRwCgImcXYYjd_GDvwg60VWx04njhjvoMXjd6DNzim7oJCg23xYKw-lrE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1X4pZ91t2WZpwtl0w_ZmSECABgb2srX62hz_s8laXR5LhubKuibazEklwCiw"
         }
       ]
     },
     {
-      "query": "club brugge vs liverpool",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T19:10:00Z",
+      "query": "roma",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T20:00:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
-        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
-        "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update"
+        "https://www.gazzetta.it/Calcio/Serie-A/Roma/24-11-2026/gasperini-e-roma-psg-il-valore-dei-francesi-e-altissimo.shtml",
+        "https://www.corrieredellosport.it/foto/calcio/champions-league/2026/11/25-152834230/da_cristian_totti_a_pizarro_alle_mogli_di_malen_mancini_cristante_e_pisilli_quanti_vip_per_psg-roma",
+        "https://www.libero.it/tv/tifosi-della-roma-entrano-allo-stadio-a-parigi-scortati-dalla-polizia_msFD00000000554788"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGURz_aLqIjU15RNFMk6TJCDJ4vmdm67FNScFjTAjzYzzYAKhG2nLcWTiw5Y0",
+      "image_credit": "La Gazzetta dello Sport",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
-          "title": "Club Brugge vs Liverpool: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.gazzetta.it/Calcio/Serie-A/Roma/24-11-2026/gasperini-e-roma-psg-il-valore-dei-francesi-e-altissimo.shtml",
+          "title": "Roma, Gasperini: \"Il valore del Psg è molto alto, in Champions gli episodi incidono di più\"",
+          "publisher": "La Gazzetta dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGURz_aLqIjU15RNFMk6TJCDJ4vmdm67FNScFjTAjzYzzYAKhG2nLcWTiw5Y0"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
-          "title": "Club Brugge v Liverpool, Lille v Bayern Munich and more: Champions League clockwatch – live",
-          "publisher": "The Guardian",
+          "url": "https://www.corrieredellosport.it/foto/calcio/champions-league/2026/11/25-152834230/da_cristian_totti_a_pizarro_alle_mogli_di_malen_mancini_cristante_e_pisilli_quanti_vip_per_psg-roma",
+          "title": "Da Cristian Totti a Pizarro alle mogli di Malen, Mancini, Cristante e Pisilli, quanti vip per Psg-Roma",
+          "publisher": "Corriere dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA6KIgmtIeq74lRSNCPg8VHgOAbwx7Z73KEWBXA-H496mn2ew9g9DxRvlWXKw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmZ9cwaIkJojYK9pdZU-7znGjRnkaF-UU6gO3DX72FJwKUkiSAy2lZaJhrFTI"
         },
         {
-          "url": "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update",
-          "title": "Ryan Gravenberch and Cody Gakpo injury update",
-          "publisher": "Liverpool FC",
+          "url": "https://www.libero.it/tv/tifosi-della-roma-entrano-allo-stadio-a-parigi-scortati-dalla-polizia_msFD00000000554788",
+          "title": "Tifosi della Roma entrano allo stadio a Parigi scortati dalla polizia",
+          "publisher": "Libero",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS0GA2WZuLHUJteCgsLRt5IRRPoQVp8clOnNuo1NXG4drEawm_wZHld_5JbDg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0pj8jOgn8tz70O90K2xNjXSgi12u20xTmYeSvoML3-3PpDbKWNEIvD9YfS2I"
+        }
+      ]
+    },
+    {
+      "query": "brock purdy injury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T20:00:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/brock-purdy-sits-out-practice-ankle-sprain-49ers-seahawks",
+        "https://www.nytimes.com/athletic/7812454/2026/11/25/brock-purdy-injury-49ers-seahawks/",
+        "https://sports.yahoo.com/nfl/articles/brock-purdy-misses-practice-wednesday-193511343.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9qTP9HJALTaj_hlz65E1arvW_hQ3xtROvdU69bgO-Vlv1BqMuhHcMVcoirzA",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/brock-purdy-sits-out-practice-ankle-sprain-49ers-seahawks",
+          "title": "Brock Purdy sits out practice with ankle sprain; 'possibility' 49ers QB won't play vs. Seahawks",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9qTP9HJALTaj_hlz65E1arvW_hQ3xtROvdU69bgO-Vlv1BqMuhHcMVcoirzA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7812454/2026/11/25/brock-purdy-injury-49ers-seahawks/",
+          "title": "49ers QB Brock Purdy injured ankle vs. Vikings, uncertain to face Seahawks",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjTBsjRdlHsSlsMkbhKY4xlGDcB9o-35znMvM245i1B-EWV8XGTZH76ujSuCw"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/brock-purdy-misses-practice-wednesday-193511343.html",
+          "title": "Brock Purdy misses practice on Wednesday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpZ5Yo1cz2KDoOTIb7kyPMheH-Ww46hU0Wh6Q5I4E_EY1UQ0U8ztS3BIqlOw8"
+        }
+      ]
+    },
+    {
+      "query": "rogers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T20:00:00Z",
+      "related_news_urls": [
+        "https://www.tmz.com/2026/11/24/mr-rogers-son-john-rogers-dead/",
+        "https://people.com/john-rogers-youngest-son-mister-rogers-neighborhood-star-fred-rogers-dead-at-65-12278379",
+        "https://www.cleveland.com/entertainment/2026/11/beloved-childrens-tv-icons-son-dies-at-65.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvfiEAIZVKqF8OqLz94VLwzlipS-FF9MIeETmS7fZpK24VCuP0GX-W1x3ewE",
+      "image_credit": "TMZ",
+      "news": [
+        {
+          "url": "https://www.tmz.com/2026/11/24/mr-rogers-son-john-rogers-dead/",
+          "title": "Mister Rogers' Son, John, Dead at 65",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvfiEAIZVKqF8OqLz94VLwzlipS-FF9MIeETmS7fZpK24VCuP0GX-W1x3ewE"
+        },
+        {
+          "url": "https://people.com/john-rogers-youngest-son-mister-rogers-neighborhood-star-fred-rogers-dead-at-65-12278379",
+          "title": "John Rogers, Youngest Son of ‘Mister Rogers’ Neighborhood’ Star Fred Rogers, Dies at 65",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVYXMTt4mtXrUa67wPg4SdlA4Ab-6RVfAqgBk6W89mfsgVRW0W9InboXjN1lI"
+        },
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/beloved-childrens-tv-icons-son-dies-at-65.html",
+          "title": "Beloved children’s TV icon’s son dies at 65",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIjMkg2e3_oEshn0pPFPGSzbUFVDDAUvYnwqWtsJBD-OR4b8YkUGi_1FIrG2Y"
+        }
+      ]
+    },
+    {
+      "query": "lotería",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:00:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/noticias/inmigracion/arrestan-a-ganador-de-un-millon-de-dolares-de-la-loteria-en-massachusetts-tras-persecucion-de-ice",
+        "https://elpais.com/us/migracion/2026-11-25/gano-un-millon-de-dolares-en-la-loteria-pero-el-ice-lo-arresto-por-tener-una-orden-de-deportacion.html",
+        "https://us.marca.com/actualidad/dinero/2026/11/25/ariel-antonio-velasquez-morales-salvadoreno-gano-millon-dolares-loteria-arrestado-ice.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5eGZb3fdPoCCmrJnr9AKGzkYh64esYKGu8hgg8D6BFrCAY5YZJjqYLmX32V0",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/noticias/inmigracion/arrestan-a-ganador-de-un-millon-de-dolares-de-la-loteria-en-massachusetts-tras-persecucion-de-ice",
+          "title": "Ganó un millón de dólares en la lotería; ICE vio la foto de su premio y terminó arrestándolo",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5eGZb3fdPoCCmrJnr9AKGzkYh64esYKGu8hgg8D6BFrCAY5YZJjqYLmX32V0"
+        },
+        {
+          "url": "https://elpais.com/us/migracion/2026-11-25/gano-un-millon-de-dolares-en-la-loteria-pero-el-ice-lo-arresto-por-tener-una-orden-de-deportacion.html",
+          "title": "Ganó un millón de dólares en la lotería, pero el ICE lo arrestó por tener una orden de deportación",
+          "publisher": "EL PAÍS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQtLMKfNuinzcA6dMITtW7WYAaUm4KZDxTUMYDVX4o2Y_39llLCU0DV7Jrfv8"
+        },
+        {
+          "url": "https://us.marca.com/actualidad/dinero/2026/11/25/ariel-antonio-velasquez-morales-salvadoreno-gano-millon-dolares-loteria-arrestado-ice.html",
+          "title": "¿Quién es Ariel Antonio Velásquez-Morales? El salvadoreño que ganó un millón de dólares en la lotería y fue arrestado por el ICE",
+          "publisher": "marca usa",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrnn54I6d03_-_zPl5hbOnR2r-0IiMrIbGtmNWpVi3LjmSG4GjkBnIwXO3quY"
+        }
+      ]
+    },
+    {
+      "query": "dragon age",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:00:00Z",
+      "related_news_urls": [
+        "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
+        "https://kotaku.com/dragon-age-dev-explains-biowares-struggles-ea-doesnt-shoot-you-it-puts-a-gun-on-the-table-and-then-comes-in-every-day-and-asks-you-if-youll-shoot-yourself-2001000008",
+        "https://www.ign.com/articles/its-such-a-shame-blade-runner-2099s-lewis-gribben-mourns-eas-closure-of-bioware"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4",
+      "image_credit": "PC Gamer",
+      "news": [
+        {
+          "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
+          "title": "Dragon Age's former boss says that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4"
+        },
+        {
+          "url": "https://kotaku.com/dragon-age-dev-explains-biowares-struggles-ea-doesnt-shoot-you-it-puts-a-gun-on-the-table-and-then-comes-in-every-day-and-asks-you-if-youll-shoot-yourself-2001000008",
+          "title": "Dragon Age Dev Explains BioWare's Struggles: 'EA Doesn’t Shoot You, It Puts A Gun On The Table And Then Comes In Every Day And Asks You If You’ll Shoot Yourself'",
+          "publisher": "Kotaku",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5RRQojwvzg_VNqgi49GnuqozJqPcuzXz-bwzpdQMU0CbflfOSwnqHY6mvXE"
+        },
+        {
+          "url": "https://www.ign.com/articles/its-such-a-shame-blade-runner-2099s-lewis-gribben-mourns-eas-closure-of-bioware",
+          "title": "'It's Such a Shame' — Blade Runner 2099's Lewis Gribben Mourns EA's Closure of BioWare",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdiE77JB6to9eKGPzvaha-q2MAhw2xr8r_FsXIukBGfk_2WK0Bhr1nfx1X36s"
+        }
+      ]
+    },
+    {
+      "query": "ole miss basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T19:50:00Z",
+      "related_news_urls": [
+        "https://tucson.com/sports/arizonawildcats/basketball/article_b6ce433b-2ca4-4477-b69e-370959cca39d.html",
+        "https://sports.yahoo.com/mens-college-basketball/articles/arizona-men-basketball-vs-ole-184500731.html",
+        "https://www.cbssports.com/college-basketball/news/ole-miss-no-8-arizona-clash-for-maui-invitational-title/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Q37p-xQkUhxmyIRla0OoVse-6GUplcUNSs-y4LCkk6Ip9u4eL7NXDTDloK4",
+      "image_credit": "Arizona Daily Star",
+      "news": [
+        {
+          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_b6ce433b-2ca4-4477-b69e-370959cca39d.html",
+          "title": "Arizona-Ole Miss scouting report: On Rebels' big jump, fired-up fans and beauty sleep",
+          "publisher": "Arizona Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Q37p-xQkUhxmyIRla0OoVse-6GUplcUNSs-y4LCkk6Ip9u4eL7NXDTDloK4"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/arizona-men-basketball-vs-ole-184500731.html",
+          "title": "Arizona men’s basketball vs. Ole Miss at Maui Invitational fan discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP8qqkhk_OXOriIwYEY2Kplb0CuDLZ0WN_Jn_y-7n9LAJbYD2DDmUHed1k8aQ"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/ole-miss-no-8-arizona-clash-for-maui-invitational-title/",
+          "title": "Ole Miss, No. 8 Arizona clash for Maui Invitational title",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNkoOPt7cae5ONMo6pg_kM5HRNsswpwTfbBDilZZjyTLMiG31kL_HJ-8KBZCc"
         }
       ]
     }
