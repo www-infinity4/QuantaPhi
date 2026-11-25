@@ -410,7 +410,18 @@ let currentBitContext=null;
 async function currentOwnerContext(query){
  currentBitContext=null;
  const empty={related:[],userInstructions:[],capabilities:[],state:'unavailable'};
- if(embedded||!ownerReady||!ownerHeaders)return empty;
+ if(embedded)return empty;
+ if(!ownerReady||!ownerHeaders){
+  const session=githubBackupSession,thread=activeThread;
+  if(!session||session.expiresAt<=Date.now())return empty;
+  try{
+   const response=await bubblesFetch(BRAIN+'/owner/github-chat-context',{method:'POST',headers:{Authorization:'Bearer '+session.token,'Content-Type':'application/json'},body:JSON.stringify({query,sessionId:thread})},5000);
+   if(response.status===401&&githubBackupSession===session)clearGithubBackupSession();
+   const result=await response.json();
+   if(!response.ok||!result.ok||githubBackupSession!==session||activeThread!==thread||session.expiresAt<=Date.now())return empty;
+   return {related:Array.isArray(result.related)?result.related:[],userInstructions:Array.isArray(result.userInstructions)?result.userInstructions:[],capabilities:Array.isArray(result.capabilities)?result.capabilities:[],state:'retrieved'};
+  }catch{return empty}
+ }
  const headers=ownerHeaders,thread=activeThread;
  try{
   const response=await bubblesFetch(BRAIN+'/owner/conversation',{method:'POST',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({messages:[],query,sessionId:thread,bitContext:true})},1300);
@@ -1546,6 +1557,70 @@ if(!nativeOverlay&&!embedded){
  // entire phone viewport and clip the permanent five-day approval control.
  if(chatGate)chatScroll.insertBefore(chatGate,ownerMode);
  composer.insertBefore(status,input);
+}
+// The PAT never enters the composer, memory, model, or shared bot credential store.
+let githubBackupSession=null,githubBackupStatus=null,githubBackupTimer=null;
+function clearGithubBackupSession(){
+ githubBackupSession=null;clearTimeout(githubBackupTimer);
+ if(githubBackupStatus)githubBackupStatus.textContent='GitHub backup disconnected. Existing wallet sign-in is unchanged.';
+}
+if(!embedded&&location.origin==='https://quantaphi.org'){
+ const backup=create('details','ba-inline-account-gate');
+ backup.append(create('summary','','GitHub backup verification'));
+ githubBackupStatus=create('p','ba-muted','Checking whether secure backup verification is enabled…');
+ githubBackupStatus.setAttribute('role','status');
+ backup.append(githubBackupStatus);
+ const check=create('button','ba-control','Check backup availability');
+ check.type='button';backup.append(check);
+ const field=create('input','ba-field');
+ field.type='password';field.autocomplete='off';field.spellcheck=false;
+ field.setAttribute('autocapitalize','off');field.setAttribute('autocorrect','off');
+ field.setAttribute('aria-label','GitHub personal access token');
+ field.maxLength=220;field.hidden=true;
+ const verify=create('button','ba-control','Verify with GitHub PAT');
+ verify.type='button';verify.hidden=true;
+ const disconnect=create('button','ba-control','Disconnect backup session');
+ disconnect.type='button';disconnect.hidden=true;
+ backup.append(field,verify,disconnect);
+ chatScroll.insertBefore(backup,ownerMode);
+ let verifying=false;
+ async function checkAvailability(){
+  check.disabled=true;field.hidden=verify.hidden=true;
+  field.value='';
+  try{
+   const response=await fetch(BRAIN+'/owner/github-chat-status',{cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(10000)});
+   const result=await response.json();
+   const enabled=response.ok&&result.ok===true&&result.enabled===true;
+   field.hidden=verify.hidden=!enabled;
+   githubBackupStatus.textContent=enabled?'Use a narrowly scoped personal GitHub PAT. Backup verifies chat context only; it never grants wallet or writer access.':'GitHub backup is not enabled on the server. Do not enter a token in chat.';
+  }catch{githubBackupStatus.textContent='GitHub backup unavailable. Do not enter a token in chat.'}
+  finally{check.disabled=false;}
+ }
+ check.addEventListener('click',()=>void checkAvailability());
+ backup.addEventListener('toggle',()=>{if(!backup.open)field.value='';else void checkAvailability()});
+ disconnect.addEventListener('click',()=>{clearGithubBackupSession();disconnect.hidden=true;});
+ verify.addEventListener('click',async()=>{
+  if(verifying||field.hidden)return;
+  const pat=field.value.trim();field.value='';
+  if(!/^(?:github_pat_[A-Za-z0-9_]{20,200}|ghp_[A-Za-z0-9]{20,100})$/.test(pat)){
+   githubBackupStatus.textContent='Enter a valid GitHub personal access token in this protected field.';return;
+  }
+  verifying=true;verify.disabled=true;
+  try{
+   const response=await fetch(BRAIN+'/owner/github-chat-session',{method:'POST',headers:{Authorization:'Bearer '+pat},cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(20000)});
+   const result=await response.json();
+   if(!response.ok||result.ok!==true||result.scope!=='owner-chat-context'||!/^gc_[a-f0-9]{64}$/.test(result.token||'')||!Number.isSafeInteger(result.expiresAt)||result.expiresAt<=Date.now()||result.expiresAt>Date.now()+11*60000){
+    githubBackupStatus.textContent='GitHub verification did not complete. Existing account is unchanged.';return;
+   }
+   githubBackupSession={token:result.token,expiresAt:result.expiresAt};
+   clearTimeout(githubBackupTimer);
+   githubBackupTimer=setTimeout(()=>{clearGithubBackupSession();disconnect.hidden=true},Math.max(0,result.expiresAt-Date.now()));
+   disconnect.hidden=false;
+   githubBackupStatus.textContent='GitHub backup verified · owner chat context only. Wallet and writer access remain separately protected.';
+  }catch{githubBackupStatus.textContent='GitHub verifier unavailable. No account changes were made.'}
+  finally{verifying=false;verify.disabled=false;field.value='';}
+ });
+ window.addEventListener('pagehide',()=>{field.value='';clearGithubBackupSession();disconnect.hidden=true;});
 }
 if(embedded){
  // Chats and messages share a dedicated touch-scrolling viewport.
