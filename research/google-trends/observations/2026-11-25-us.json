@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-25T00:01:41.669775Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "ohio state basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T23:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-michigan-wolverines-the-game-ryan-day-kyle-whittingham--293256335/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/game-7-vanderbilt-commodores-ohio-233000387.html",
+        "https://www.cleveland.com/tv/2026/11/where-to-watch-vanderbilt-vs-ohio-state-basketball-today.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYqrQyZzF7Y6yoVPpGYXA6NTy9pWi9mewdgmyD-i_Vp3nmlygAxURj2UK45ak",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/ohio-state/article/ohio-state-buckeyes-michigan-wolverines-the-game-ryan-day-kyle-whittingham--293256335/",
+          "title": "BH: Told us so | Defensive stance",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYqrQyZzF7Y6yoVPpGYXA6NTy9pWi9mewdgmyD-i_Vp3nmlygAxURj2UK45ak"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/game-7-vanderbilt-commodores-ohio-233000387.html",
+          "title": "Game 7: Vanderbilt Commodores at Ohio State Buckeyes – Open Game Thread",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeuqOi5OYDFtKZESAaCLr8xiPT4RPMJtb_2BLc6dbmokIBqKPEyajNE7bCq3g"
+        },
+        {
+          "url": "https://www.cleveland.com/tv/2026/11/where-to-watch-vanderbilt-vs-ohio-state-basketball-today.html",
+          "title": "Where to watch Vanderbilt vs. Ohio State basketball today",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwYshLK7fzUPg7pdkdO_j0buwWJivXZtf8phVyBcQFTwojKo12jXfhN1SX1Ao"
+        }
+      ]
+    },
+    {
+      "query": "cooper flagg stats",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T23:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/betting/articles/mmbets-game-week-mavs-nuggets-205705032.html",
+        "https://www.9news.com/article/sports/nba/denver-nuggets/nuggets-vs-mavericks-how-to-watch-the-nba-cup-game-on-tuesday/73-ef398357-166e-4f7b-8950-ce63a6615d76",
+        "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-mavericks-vs-nuggets-louisville-vs-texas-tech-and-more/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3NJu_5aTquS9Grnfwy-PUDFAQTAatRZ0RW86qs_fR8ayCtVoetZrRf5lMlDA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/betting/articles/mmbets-game-week-mavs-nuggets-205705032.html",
+          "title": "MMBets Game of the Week: Mavs and Nuggets battle for Group A supremacy",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR3NJu_5aTquS9Grnfwy-PUDFAQTAatRZ0RW86qs_fR8ayCtVoetZrRf5lMlDA"
+        },
+        {
+          "url": "https://www.9news.com/article/sports/nba/denver-nuggets/nuggets-vs-mavericks-how-to-watch-the-nba-cup-game-on-tuesday/73-ef398357-166e-4f7b-8950-ce63a6615d76",
+          "title": "Nuggets vs. Mavericks: How to watch the NBA Cup game on Tuesday",
+          "publisher": "9NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ5-dgqKWSyRLcswd9HkQprXx84n7ifqC4-aPZTJ0cH9GW6jEejtFUwgU3IrVU"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/todays-top-games-to-watch-best-bets-odds-mavericks-vs-nuggets-louisville-vs-texas-tech-and-more/",
+          "title": "Today's top games to watch, best bets, odds: Mavericks vs. Nuggets, Louisville vs. Texas Tech and more",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTMYdzJOY9Cbys-g1PXtj_mOjE-KT1bMHNfhtvPBi858MddpxH2swGHHp7iHH4"
+        }
+      ]
+    },
+    {
+      "query": "david muir",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T23:40:00Z",
+      "related_news_urls": [
+        "https://www.hellomagazine.com/us/936733/david-muir-glimpse-lake-house/",
+        "https://sports.yahoo.com/nfl/article/the-nfl-is-taking-over-thanksgiving-but-how-much-football-is-too-much-football-142940475.html",
+        "https://www.smithsonianmag.com/history/why-thanksgiving-football-emerged-as-an-american-tradition-in-the-aftermath-of-the-civil-war-180989897/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhhYWabD23zainqox7-RrQpLB_RFBVUZaCkc3uNz2FfP4aBJM11E_zWgcaNA",
+      "image_credit": "HELLO!",
+      "news": [
+        {
+          "url": "https://www.hellomagazine.com/us/936733/david-muir-glimpse-lake-house/",
+          "title": "David Muir's photo from $7 million lake house in upstate New York impresses fans",
+          "publisher": "HELLO!",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVhhYWabD23zainqox7-RrQpLB_RFBVUZaCkc3uNz2FfP4aBJM11E_zWgcaNA"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/the-nfl-is-taking-over-thanksgiving-but-how-much-football-is-too-much-football-142940475.html",
+          "title": "The NFL is taking over Thanksgiving. But how much football is too much football?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSsiLswKjUhWd0iEX1_UGWoME2fYLDkDj2-hiC-GZBFHSVD34I8O5aum8hUBAY"
+        },
+        {
+          "url": "https://www.smithsonianmag.com/history/why-thanksgiving-football-emerged-as-an-american-tradition-in-the-aftermath-of-the-civil-war-180989897/",
+          "title": "Why Thanksgiving Football Emerged as an American Tradition in the Aftermath of the Civil War",
+          "publisher": "Smithsonian Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRK4FHT9Cm4_Ugi2A9Z9YcjoWJKSn7ZA6A4aKf4l5fAjI9EqoZoxYwhh04F_PE"
+        }
+      ]
+    },
+    {
+      "query": "treasury",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T23:40:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/transferring-student-loans-to-treasury-top-challenge-oig-report-repayment-2026-11",
+        "https://www.forbes.com/sites/adamminsky/2026/11/23/education-departments-plan-to-transfer-student-loans-raises-alarms/",
+        "https://www.k12dive.com/news/education-department-faces-management-challenges-from-recent-changes-watch/875253/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFD3wSTEMK-twpmZVgN6gPmE_ZlG3pUfmxpJOkrkwD1mTslKxmjw6vbuzYiQ",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/transferring-student-loans-to-treasury-top-challenge-oig-report-repayment-2026-11",
+          "title": "Transferring millions of student-loan accounts to the Treasury is a key challenge next year, a federal watchdog says",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcFD3wSTEMK-twpmZVgN6gPmE_ZlG3pUfmxpJOkrkwD1mTslKxmjw6vbuzYiQ"
+        },
+        {
+          "url": "https://www.forbes.com/sites/adamminsky/2026/11/23/education-departments-plan-to-transfer-student-loans-raises-alarms/",
+          "title": "Education Department’s Plan To Transfer Student Loans Raises Alarms",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRkEZjB0hIZX1B7DAqcfO_y6wpqssnkpuXSqvyng7qW6NW6FSLslCD_5c8pec"
+        },
+        {
+          "url": "https://www.k12dive.com/news/education-department-faces-management-challenges-from-recent-changes-watch/875253/",
+          "title": "Education Department faces management challenges from recent changes, watchdog says",
+          "publisher": "K-12 Dive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReNd5kx_CVaY1461ObavIY_xic1WYV-7fzP3Vo10Mx3ur8rZzMFv2jikKxB8Y"
+        }
+      ]
+    },
+    {
+      "query": "pistons injury report",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T23:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
+        "https://www.nytimes.com/athletic/7806723/2026/11/24/detroit-pistons-jalen-duren-hamstring-injury/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jalen-duren-hamstring-assigned-to-g-league"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUZCtqJJyDFtl6iUfEmLvGpYdhKs0zYPU3khRRDtNfeZnLMOaZ_1nfnHOD5e8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
+          "title": "Jalen Duren to begin rehab assignment in next step to return from injury",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUZCtqJJyDFtl6iUfEmLvGpYdhKs0zYPU3khRRDtNfeZnLMOaZ_1nfnHOD5e8"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7806723/2026/11/24/detroit-pistons-jalen-duren-hamstring-injury/",
+          "title": "Jalen Duren assigned to G League, nearing Pistons return from hamstring injury",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfUjsZkSlWZXAYDnjnhA6ilNnlMJ24j0UGnT-tz6noaTKASQRDG7Fj6VGyKyc"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jalen-duren-hamstring-assigned-to-g-league",
+          "title": "Jalen Duren (hamstring) assigned to G League",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlzyu6rg9K-uEkf7OUuToSLOLgrJzHiGC3A4LHnMZiyya0tbxPl7rmoIMUrA"
+        }
+      ]
+    },
+    {
+      "query": "nebraska volleyball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-24T23:30:00Z",
+      "related_news_urls": [
+        "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
+        "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal",
+        "https://omaha.com/sports/huskers/volleyball/article_7fc15e4c-9546-482b-a45e-2e42d1af9a3e.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ",
+      "image_credit": "Big Ten Conference",
+      "news": [
+        {
+          "url": "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
+          "title": "Four Left in Pursuit for Inaugural Tournament Title",
+          "publisher": "Big Ten Conference",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/22/no-1-huskers-advance-to-big-ten-semifinal",
+          "title": "No. 1 Huskers Advance to Big Ten Semifinal - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBxVl12dAw1c4B8uAZZaPBlUaIj2DgpeMzx_ZfTNFTuZEhgfHJ3hur7VtTDik"
+        },
+        {
+          "url": "https://omaha.com/sports/huskers/volleyball/article_7fc15e4c-9546-482b-a45e-2e42d1af9a3e.html",
+          "title": "How to watch Nebraska volleyball vs. Purdue: Time, TV and streaming info for Big Ten tournament",
+          "publisher": "Omaha World-Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYILvfH-fE8gfctANTYIjQ2ypjYQb2nJ00XmrvY7yzLiw89O7kauv5Kgk5Y4w"
+        }
+      ]
+    },
+    {
+      "query": "is cade cunningham playing tonight",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-24T23:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jaylin-williams-back-spasms-out-vs-timberwolves",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/cade-cunningham-knee-downgraded-to-out-tuesday",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/det-starts-jenkins-joe-huerter-ausar-collins"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/jaylin-williams-back-spasms-out-vs-timberwolves",
+          "title": "Jaylin Williams (back spasms) out vs. Timberwolves",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDI92hcCvVvW5AsQxOsh3Xy3GdcDuHHJD6H8-tUIlI8b8_v3G7nlXMI5AzdVQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/cade-cunningham-knee-downgraded-to-out-tuesday",
+          "title": "Cade Cunningham (knee) downgraded to out Tuesday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ30tU9dTfIL4tU1IyBCr2wQJIKfpsxy_iDZJnxJyBtrobX8CdaxHoBWx2WO_s"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/det-starts-jenkins-joe-huerter-ausar-collins",
+          "title": "DET starts Jenkins, Joe, Huerter, Ausar, Collins",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTofIqe1JdAQZAbrq92tjI3BFVQ0zKI_VuV4gqXWMcnoWsTdSg8GMH711kViqQ"
+        }
+      ]
+    },
+    {
+      "query": "tyrese haliburton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T23:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/nba/news/nba-injury-updates-tyrese-haliburton-kawhi-leonard-dylan-harper-brandon-ingram/",
+        "https://sports.yahoo.com/nba/articles/nba-injury-latest-news-tyrese-230305832.html",
+        "https://fox59.com/sports/pacers/haliburton-assigned-to-boom-as-signs-point-to-upcoming-return/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_hbvVuiawTd4LUhyUKBxa-arWZv-9eL_tgb3K-R3JJZA3oKuZha5GeeG9zw",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/nba/news/nba-injury-updates-tyrese-haliburton-kawhi-leonard-dylan-harper-brandon-ingram/",
+          "title": "NBA injury updates: The latest on Tyrese Haliburton, Anthony Edwards, Kawhi Leonard, Dylan Harper, more",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1_hbvVuiawTd4LUhyUKBxa-arWZv-9eL_tgb3K-R3JJZA3oKuZha5GeeG9zw"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/nba-injury-latest-news-tyrese-230305832.html",
+          "title": "NBA Injury Update: Latest news on Tyrese Haliburton, Jalen Duren, Donte DiVincenzo",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSejqwKu4aaUhxC9uPsT8HtGhrtaLJ2FBnRegYAsIfkuUbnx7qezfEMRkoaQPo"
+        },
+        {
+          "url": "https://fox59.com/sports/pacers/haliburton-assigned-to-boom-as-signs-point-to-upcoming-return/",
+          "title": "Pacers: Haliburton, McConnell, Furphy recalled from Boom",
+          "publisher": "Fox 59",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxvTjzqmGVlCWvCFd602mSAF8ZlGFgdrOELmStYN3CP3CTN4nPVR5VxwX6B84"
+        }
+      ]
+    },
+    {
+      "query": "josé eduardo derbez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-24T23:30:00Z",
+      "related_news_urls": [
+        "https://www.univision.com/famosos/jose-eduardo-derbez-habria-dejado-sola-mariana-bo-en-restaurante-tras-cita-con-ella-detalles-video",
+        "https://es-us.vida-estilo.yahoo.com/mariana-bo-deshace-elogios-victoria-102045656.html",
+        "https://tvaztecaguate.com/espectaculos/2026/11/24/video-artista-revela-que-cancelo-un-vuelo-a-guatemala-para-escaparse-con-hijo-de-derbez/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOe9Dx0FfpbYRwfu3zol5l2ARtEV8MX4jh_VBAFWuI0p2IIpEERuuFIAKiqL0",
+      "image_credit": "Univision",
+      "news": [
+        {
+          "url": "https://www.univision.com/famosos/jose-eduardo-derbez-habria-dejado-sola-mariana-bo-en-restaurante-tras-cita-con-ella-detalles-video",
+          "title": "José Eduardo Derbez habría dejado sola Mariana BO en restaurante tras cita con ella: detalles",
+          "publisher": "Univision",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSOe9Dx0FfpbYRwfu3zol5l2ARtEV8MX4jh_VBAFWuI0p2IIpEERuuFIAKiqL0"
+        },
+        {
+          "url": "https://es-us.vida-estilo.yahoo.com/mariana-bo-deshace-elogios-victoria-102045656.html",
+          "title": "Mariana BO se deshace en elogios para Victoria Ruffo y su hijo",
+          "publisher": "Yahoo en Español Vida y Estilo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61GTA4vLg3awiixBLcMA5fbfg_kPsq0GR9PA4RVIx1U5wnpmd_7EGD8t_doQ"
+        },
+        {
+          "url": "https://tvaztecaguate.com/espectaculos/2026/11/24/video-artista-revela-que-cancelo-un-vuelo-a-guatemala-para-escaparse-con-hijo-de-derbez/",
+          "title": "VIDEO: Artista cancela vuelo a Guatemala para escaparse con hijo de Derbez",
+          "publisher": "Tv Azteca Guatemala",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtNFgZajf7JM5CzVwZv9d2Vr9p_cokSEcy6Mq-xcwtyGV-CVVPa_khQxTTxBg"
+        }
+      ]
+    },
+    {
+      "query": "diana gutiérrez",
+      "approx_searches": "500+",
+      "published_at": "2026-11-24T23:20:00Z",
+      "related_news_urls": [
+        "https://www.bizjournals.com/milwaukee/news/2026/11/24/diana-gutierrez-leaving-wisn-12.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbF58IL5ZkyY0pEZqw6ZsMSt23d3XAHgmo3MhOTn-_FTZLZkFWJiDuVTmlig",
+      "image_credit": "The Business Journals",
+      "news": [
+        {
+          "url": "https://www.bizjournals.com/milwaukee/news/2026/11/24/diana-gutierrez-leaving-wisn-12.html",
+          "title": "Another anchor leaving WISN-TV (Channel 12)",
+          "publisher": "The Business Journals",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbF58IL5ZkyY0pEZqw6ZsMSt23d3XAHgmo3MhOTn-_FTZLZkFWJiDuVTmlig"
+        }
+      ]
+    }
+  ]
+}
