@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T18:31:12.372289Z",
+  "checked_at": "2026-11-25T19:01:25.454035Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "kevin porter jr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T18:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
+        "https://marcstein.substack.com/p/another-thanksgiving-week-helping",
+        "https://sports.yahoo.com/nba/articles/kevin-porter-jr-orlando-183459373.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvCQdjwZqbpg_P8Ft3MjEg2U4B3e4RhlnJ6iVsTuX_6vLA5K1CAbAVFJrhoYg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
+          "title": "Ex-Bucks guard Kevin Porter Jr. finalizing 2-year deal to join Magic, agent says",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvCQdjwZqbpg_P8Ft3MjEg2U4B3e4RhlnJ6iVsTuX_6vLA5K1CAbAVFJrhoYg"
+        },
+        {
+          "url": "https://marcstein.substack.com/p/another-thanksgiving-week-helping",
+          "title": "Another Thanksgiving Week helping of the latest Late Night NBA Intel",
+          "publisher": "The Stein Line",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZT2hGVvRq7C-dQVgNbQG57TfYoUtndzL2eYex5Sy18Wte6xQGR2OZqlehqFs"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/kevin-porter-jr-orlando-183459373.html",
+          "title": "Kevin Porter Jr. to Orlando",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRH8IjdidrbC6G99gne_0f0JKlGXTEu9w5nhMjirxAMSpTixDwzoRe8094aRKk"
+        }
+      ]
+    },
+    {
+      "query": "dow stocks",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T18:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+        "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
+        "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq pare losses as AI-fueled rout continues",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
+          "title": "Futures sink further into the red as tech worries resurge",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html",
+          "title": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFGBikquZxJVelgWez8uLDxd_QP4BUsWgs1axl6O6G2rLw7DwCbpZPzdTy4k"
+        }
+      ]
+    },
+    {
+      "query": "brandon aiyuk",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T18:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
+        "https://www.nfl.com/news/brandon-aiyuk-commanders-to-sign-ex-49ers-wr-practice-squad",
+        "https://www.nytimes.com/athletic/7811836/2026/11/25/adam-peters-brandon-aiyuk-commanders/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
+          "title": "Brandon Aiyuk finishes visit with Commanders; \"discussions ongoing,\" per agent",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNQvYeloDOnQ2MbG1bifxP2GNi2D8BIdmMPdjwVFxPIy_cPVS3bmG2WGgs2Ns"
+        },
+        {
+          "url": "https://www.nfl.com/news/brandon-aiyuk-commanders-to-sign-ex-49ers-wr-practice-squad",
+          "title": "Commanders to sign ex-49ers WR Brandon Aiyuk to practice squad",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvsVwAISB3issDa1tx7kSOkXy6mBghglvwJHTSsAMw-Q7zFY_4woeS0T5MOME"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7811836/2026/11/25/adam-peters-brandon-aiyuk-commanders/",
+          "title": "Commanders GM Adam Peters praises Brandon Aiyuk, says team has ‘genuine interest’ - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrFSliYobooWeN0ts96g2koowArvrMTR5CiUzDs5G5rVdU5H3n-nsvJgt7KXI"
+        }
+      ]
+    },
+    {
+      "query": "rickea jackson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T18:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50595254/falcons-aware-insinuations-pearce-trying-call-ex-gf",
+        "https://www.usatoday.com/story/sports/nfl/falcons/2026/11/25/james-pearce-jr-rickea-jackson-social-media-post-comment/92959552007/",
+        "https://www.instagram.com/p/DgJOhfxgZfN/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKNTpDd1GhCW41EPdVpagUvSCm33W3zn7Cbpwd8Jg6URIwoxGPWkvAS-CPIo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50595254/falcons-aware-insinuations-pearce-trying-call-ex-gf",
+          "title": "Falcons 'aware' of insinuations Pearce still trying to contact ex-gf Jackson",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUKNTpDd1GhCW41EPdVpagUvSCm33W3zn7Cbpwd8Jg6URIwoxGPWkvAS-CPIo"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/falcons/2026/11/25/james-pearce-jr-rickea-jackson-social-media-post-comment/92959552007/",
+          "title": "Falcons address comment made by ex-girlfriend of previously-suspended player",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsyb6kxlJmMPfwUPke9vT8T8GyjH44z_IC8eKcoM4ZUjtiEp0hALxzz4XLQfk"
+        },
+        {
+          "url": "https://www.instagram.com/p/DgJOhfxgZfN/",
+          "title": "#Roommates, WNBA star #RickeaJackson is opening up about an ongoing situation involving unwanted phone calls. ____________________________________ After reposting a TikTok showing ",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoO55bKhLyi0g7nABbBzxmNB0pYy3dk3byPLA9D9AEyHcGrGtIf8NAgl4qg8Q"
+        }
+      ]
+    },
+    {
+      "query": "champions",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T18:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/crd6151l6y7zt",
+        "https://www.chiesaditotti.com/roma-matchday-coverage/44407/psg-is-missing-its-biggest-difference-makers-roma-must-seize-the-opportunity",
+        "https://www.getfootballnewsfrance.com/2026/achraf-hakimi-says-that-psg-will-replace-desire-doue-and-khvicha-kvaratskhelia-all-together/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySTf2huYhL0dhjvyIZxFqSH6bAn0UlKe8oTFZnyO8hVDWam95ALp04Gu74PU",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/crd6151l6y7zt",
+          "title": "Paris Saint-Germain vs Roma: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTySTf2huYhL0dhjvyIZxFqSH6bAn0UlKe8oTFZnyO8hVDWam95ALp04Gu74PU"
+        },
+        {
+          "url": "https://www.chiesaditotti.com/roma-matchday-coverage/44407/psg-is-missing-its-biggest-difference-makers-roma-must-seize-the-opportunity",
+          "title": "PSG Is Missing Its Biggest Difference-Makers. Roma Must Seize the Opportunity",
+          "publisher": "Chiesa Di Totti",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSWwuulX8RUE6Z4ZrfZwQpNTockM0K1fXP-DpSopsLbHQAytyLmedkrwvK74n8"
+        },
+        {
+          "url": "https://www.getfootballnewsfrance.com/2026/achraf-hakimi-says-that-psg-will-replace-desire-doue-and-khvicha-kvaratskhelia-all-together/",
+          "title": "Achraf Hakimi says that PSG will replace Désiré Doué and Khvicha Kvaratskhelia 'all together'",
+          "publisher": "Get French Football News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJKFRPOL1NowSuO11kbu4Fr0zEDjWtvqltu_P8JxSe8_B-6_U4a04TTlNsYvY"
+        }
+      ]
+    },
+    {
+      "query": "chris creighton",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T18:20:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/sports/college/more-colleges/2026/11/25/chris-creighton-out-after-13-years-as-eastern-michigan-football-coach/92960236007/",
+        "https://sports.yahoo.com/college-football/articles/eastern-michigan-football-fires-coach-181856267.html",
+        "https://www.nytimes.com/athletic/7812225/2026/11/25/eastern-michigan-fires-coach-chris-creighton/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXXa8oZroOmKSpg5at6O0kXo6rswiYBQLitQD5w95chM_GLTtIE5B2w2wWJo8",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/sports/college/more-colleges/2026/11/25/chris-creighton-out-after-13-years-as-eastern-michigan-football-coach/92960236007/",
+          "title": "Chris Creighton out after 13 seasons as EMU's football coach",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXXa8oZroOmKSpg5at6O0kXo6rswiYBQLitQD5w95chM_GLTtIE5B2w2wWJo8"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/eastern-michigan-football-fires-coach-181856267.html",
+          "title": "Eastern Michigan football fires coach Chris Creighton: Report",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-jTgQ-IkBtksLAaMvDziPcnOm3Ys0SFar8iT4XukhnSGqS9fTS1cwmzNUCXI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7812225/2026/11/25/eastern-michigan-fires-coach-chris-creighton/",
+          "title": "Eastern Michigan parts ways with coach Chris Creighton after 13 seasons",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8LM2WmUZjKB2HZopiyxJTGqu82QmMsJKlWOUtNeVzrpbnuCjpgu5Gk-NjUm4"
+        }
+      ]
+    },
     {
       "query": "barcelona",
       "approx_searches": "20000+",
@@ -34,45 +244,45 @@
         },
         {
           "url": "https://elpais.com/deportes/futbol/2026-11-25/sabah-fc-barcelona-en-directo-el-partido-de-la-champions-league-en-vivo.html",
-          "title": "Sabah - FC Barcelona, en directo, el partido de la Champions League en vivo|Flick apuesta por Gabriel Jesus para liderar el ataque azulgrana",
+          "title": "Sabah - FC Barcelona, en directo, el partido de la Champions League en vivo |Comienza el segundo tiempo",
           "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuVPGl9WtW6TnJIw4c74-_TlHpCDxsIejfnB3bC3vIaG4q7xhQy8YPF6LXpto"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbvvDLt7dfhGs3Hz53LDe5lE4_e9EPkqnM6p3bgO3BiY4NmofnGKbcqhvkn_w"
         }
       ]
     },
     {
       "query": "lebron james",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-25T18:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7809718/2026/11/24/lebron-james-trespassing-restraining-orders/",
-        "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
-        "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/"
+        "https://basketnews.com/news-260171-erik-spoelstra-gets-honest-about-lebron-james-ahead-of-miami-heat-76ers-game.html",
+        "https://www.nba.com/heat/videos/coach-spo-on-building-consistency-on-defense-and-facing-lebron-and-the-76ers",
+        "https://cwibc.co.id/en/spoelstra-heat-lebron-james"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTqf2ijmNMl6uOulhkFym-HsNi92N5BCJUXdgTcEbntSnubZtjeloUImrDS6Y",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlkNciH_N6yNO-64VR9_kiA4iWxEXn5rADjwcY3w444RkswMIv_GGnzVqkPR8",
+      "image_credit": "BasketNews.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7809718/2026/11/24/lebron-james-trespassing-restraining-orders/",
-          "title": "L.A. court approves restraining orders for LeBron James’ family after trespassing incidents",
-          "publisher": "The New York Times",
+          "url": "https://basketnews.com/news-260171-erik-spoelstra-gets-honest-about-lebron-james-ahead-of-miami-heat-76ers-game.html",
+          "title": "Erik Spoelstra gets honest about LeBron James ahead of Miami Heat, 76ers game",
+          "publisher": "BasketNews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTqf2ijmNMl6uOulhkFym-HsNi92N5BCJUXdgTcEbntSnubZtjeloUImrDS6Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlkNciH_N6yNO-64VR9_kiA4iWxEXn5rADjwcY3w444RkswMIv_GGnzVqkPR8"
         },
         {
-          "url": "https://sports.yahoo.com/articles/lebron-james-wife-savannah-makes-222753026.html",
-          "title": "LeBron James’ wife Savannah makes desperate plea to court: ‘The James family faces imminent danger’",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nba.com/heat/videos/coach-spo-on-building-consistency-on-defense-and-facing-lebron-and-the-76ers",
+          "title": "Coach Spo on building consistency on defense, and facing Lebron and the 76ers",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCaOw9gbyXQa2jZ81xVWRjcf6DP364Hlua-Vtx2WkkfBS0piNLWagMBXvP1j8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7jQFDIw3nUXN2cRbdqiCDBiujN2RXIXIjUEDJKrHvEp7saJH6KLLKIeI-0Ac"
         },
         {
-          "url": "https://www.tmz.com/2026/11/23/savannah-james-files-restraining-orders/",
-          "title": "LeBron James' Wife Savannah Seeks Restraining Orders Over Alleged Trespassers",
-          "publisher": "TMZ",
+          "url": "https://cwibc.co.id/en/spoelstra-heat-lebron-james",
+          "title": "Spoelstra Warns Heat Against Underestimating LeBron James",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTqG0pKwWKBiC5gZ0qyAXQwnieBB6DPQGhSn3MIPE2VWMm1ai7Utsa_Rn_uhNw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgMpvmq_IOfclj5yNB2nbJQ2xsTk-bCYI9sG_ALsid6oFljzC7KUBZyGl3bcw"
         }
       ]
     },
@@ -112,247 +322,37 @@
       ]
     },
     {
-      "query": "villarreal",
+      "query": "pedri",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T17:50:00Z",
+      "published_at": "2026-11-25T18:00:00Z",
       "related_news_urls": [
-        "https://as.com/futbol/champions/cardona-calendario-asequible-ya-aprendimos-la-leccion-el-ano-pasado-f202611-n/",
-        "https://us.marca.com/soccer/champions-league/sabah-barcelona/2026/11/25/01_0103_20261125_13645_178-directo.html",
-        "https://www.fichajes.com/a5848824330036340944-ya-hay-onces-de-slavia-de-praga-y-villarreal"
+        "https://www.sport.es/es/videos/barca/20261125/marc-bernal-confiesa-regalo-barcelona/136850016.shtml",
+        "https://www.elnacional.cat/enblau/es/television/pedri-cumple-24-anos-dedicatoria-mas-romantica-alejandra-su-pareja-mi-persona-favorita_1731041_102.html",
+        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYIPEvAo_NrkFEB0wo-qrq5M-PUCQrZVK7EPV3BT31Blcxq96DCYYsHGdBwI",
-      "image_credit": "Diario AS",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanm9R96vmDvpFzsJydZcbzIs1aFBzJV3ZZJBwzQPS4ysRWAcw0zKHVS4duxs",
+      "image_credit": "SPORT",
       "news": [
         {
-          "url": "https://as.com/futbol/champions/cardona-calendario-asequible-ya-aprendimos-la-leccion-el-ano-pasado-f202611-n/",
-          "title": "Cardona: “¿Calendario asequible? Ya aprendimos la lección el año pasado”",
-          "publisher": "Diario AS",
+          "url": "https://www.sport.es/es/videos/barca/20261125/marc-bernal-confiesa-regalo-barcelona/136850016.shtml",
+          "title": "Marc Bernal confiesa el regalo del Barcelona a Pedri para su cumpleaños: \"Un par de collejas\"",
+          "publisher": "SPORT",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpYIPEvAo_NrkFEB0wo-qrq5M-PUCQrZVK7EPV3BT31Blcxq96DCYYsHGdBwI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQanm9R96vmDvpFzsJydZcbzIs1aFBzJV3ZZJBwzQPS4ysRWAcw0zKHVS4duxs"
         },
         {
-          "url": "https://us.marca.com/soccer/champions-league/sabah-barcelona/2026/11/25/01_0103_20261125_13645_178-directo.html",
-          "title": "Sabah - Barcelona EN VIVO. Últimas actualizaciones de Champions League en directo",
-          "publisher": "marca usa",
+          "url": "https://www.elnacional.cat/enblau/es/television/pedri-cumple-24-anos-dedicatoria-mas-romantica-alejandra-su-pareja-mi-persona-favorita_1731041_102.html",
+          "title": "Pedri cumple 24 años, la dedicatoria más romántica de Alejandra, su pareja: \"Mi persona favorita, te quiero\"",
+          "publisher": "El Nacional.cat",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2DqPLNLTishJmM9iP_mC7A8oSrxsfI_ImPnFQ478RHqyR0QjmNxVhLVk6NUE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCfpmQx53ITYptKZjoF0sig6y7oMXb67Ij0r1H05-YKQ8eztIoVdVWhMQ_IQ"
         },
-        {
-          "url": "https://www.fichajes.com/a5848824330036340944-ya-hay-onces-de-slavia-de-praga-y-villarreal",
-          "title": "Ya hay onces de Slavia de Praga y Villarreal",
-          "publisher": "Fichajes.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSauGh7aani8D5S_DQo2D2TpJQb4AUGEprEi4hmHHqwdnih8dI0wSSfBCkACZY"
-        }
-      ]
-    },
-    {
-      "query": "barca vs",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league",
-        "https://www.si.com/es-us/por-que-no-juega-lamine-yamal-flick-explica-su-baja-y-anuncia-rotaciones-ante-el-sabah",
-        "https://www.expressnews.com/sports/article/barcelona-yamal-por-dolencia-en-tobillo-se-22545387.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QWfn5RiKUoIiORMn_0sjIvh4E4VDreztfj4-3YqU7p2CDWZg1y_pLkGZjtk",
-      "image_credit": "ESPN Deportes",
-      "news": [
         {
           "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556744/barcelona-alineacion-vs-sabah-champions-league",
-          "title": "Barcelona: alineación y probabilidades vs Sabah para la Champions",
+          "title": "Barcelona: posible alineación y probabilidades vs Sabah para la Champions",
           "publisher": "ESPN Deportes",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2QWfn5RiKUoIiORMn_0sjIvh4E4VDreztfj4-3YqU7p2CDWZg1y_pLkGZjtk"
-        },
-        {
-          "url": "https://www.si.com/es-us/por-que-no-juega-lamine-yamal-flick-explica-su-baja-y-anuncia-rotaciones-ante-el-sabah",
-          "title": "Flick explica la baja de Lamine Yamal y anuncia rotaciones ante el Sabah",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAKdESoCyt3L6sjLdAaBTkkOUuukmulkp3ySwuNRvI5x8YyOisBTEsefU_Kvk"
-        },
-        {
-          "url": "https://www.expressnews.com/sports/article/barcelona-yamal-por-dolencia-en-tobillo-se-22545387.php",
-          "title": "Barcelona: Yamal, por dolencia en tobillo, se pierde visita a Sabah en la Champions",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThqP7ZC9NI5ccsTa2ZCItbyLUw-9HrOrWEaXR76w1hXeZkLwXRbJyeCEwdkAg"
-        }
-      ]
-    },
-    {
-      "query": "azerbaijan",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://oc-media.org/unfit-to-chair-over-40-ngos-oppose-azerbaijans-bid-to-lead-osce/",
-        "https://demokratis.co.id/en/ngos-reject-azerbaijan-osce-chairmanship",
-        "https://suaragarut.id/en/ngos-reject-azerbaijan-osce-chairmanship"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGVF_ezXMZzuv_sP0Ov-W8GWZN4PeIC-1-9_DsXWrfl27WZPKD9qZPVtD6BXM",
-      "image_credit": "OC Media",
-      "news": [
-        {
-          "url": "https://oc-media.org/unfit-to-chair-over-40-ngos-oppose-azerbaijans-bid-to-lead-osce/",
-          "title": "‘Unfit to chair’: Over 40 NGOs oppose Azerbaijan’s bid to lead OSCE",
-          "publisher": "OC Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGVF_ezXMZzuv_sP0Ov-W8GWZN4PeIC-1-9_DsXWrfl27WZPKD9qZPVtD6BXM"
-        },
-        {
-          "url": "https://demokratis.co.id/en/ngos-reject-azerbaijan-osce-chairmanship",
-          "title": "46 NGOs Urge OSCE to Reject Azerbaijan's 2027 Chairmanship",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqYLy0J4jXQ5qV6YZSDitifD3EugKckHDEsYUv5A5J4STDrkGgrAvDGdhLu8"
-        },
-        {
-          "url": "https://suaragarut.id/en/ngos-reject-azerbaijan-osce-chairmanship",
-          "title": "NGOs Urge OSCE to Reject Azerbaijan's 2027 Chairmanship Bid",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTqYLy0J4jXQ5qV6YZSDitifD3EugKckHDEsYUv5A5J4STDrkGgrAvDGdhLu8"
-        }
-      ]
-    },
-    {
-      "query": "barca game",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50591588/fermin-lopez-barcelona-ban-appeal-sources",
-        "https://www.foxsports.com/articles/soccer/barcelonas-fermin-lopez-to-miss-atletico-madrid-clash-after-suspension-for-protesting-to-official",
-        "https://sports.yahoo.com/articles/why-gerard-mart-n-goal-220000679.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI47Gqc8RIMJFUWwKgfgowfQvio64eunBLtntlrcvRio3YM4kPqUV6loBIVYk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50591588/fermin-lopez-barcelona-ban-appeal-sources",
-          "title": "Barcelona to appeal Fermín López's two-match ban - sources",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI47Gqc8RIMJFUWwKgfgowfQvio64eunBLtntlrcvRio3YM4kPqUV6loBIVYk"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/soccer/barcelonas-fermin-lopez-to-miss-atletico-madrid-clash-after-suspension-for-protesting-to-official",
-          "title": "Barcelona's Fermín López to miss Atletico Madrid clash after suspension for protesting to official",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/why-gerard-mart-n-goal-220000679.html",
-          "title": "Why Gerard Martín’s goal was allowed to stand in Barcelona’s win over Villarreal",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfOkNeMdegzHNoTLp_N99XaZHdEcoLkmHRoM00JRN5-j-9GJbPOT48Z8XhcRA"
-        }
-      ]
-    },
-    {
-      "query": "yale basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://demokratis.co.id/en/yale-beats-appalachian-state-defense",
-        "https://www.bleachernation.com/picks/2026/11/24/ivy-league-basketball-predictions-computer-picks-and-best-bets-november-24/",
-        "https://www.espn.com/video/clip/_/id/50586237/game-highlights"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTujte0P4Qdnua4KHXVLz6Njhpxey2wwoeGy_hVQSNCyxpUDjmF_shtBb6xRDw",
-      "image_credit": "Demokratis.co.id",
-      "news": [
-        {
-          "url": "https://demokratis.co.id/en/yale-beats-appalachian-state-defense",
-          "title": "Yale Beats Appalachian State 57-50 Behind Strong Defense",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTujte0P4Qdnua4KHXVLz6Njhpxey2wwoeGy_hVQSNCyxpUDjmF_shtBb6xRDw"
-        },
-        {
-          "url": "https://www.bleachernation.com/picks/2026/11/24/ivy-league-basketball-predictions-computer-picks-and-best-bets-november-24/",
-          "title": "Ivy League Basketball Predictions, Computer Picks and Best Bets | November 24",
-          "publisher": "Bleacher Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQas3vAPhe8fJ7twUC5K-H6tj-Nqa2uu-jZ73t_5AbumOOn8tJ_9-eAkX2GD_I"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50586237/game-highlights",
-          "title": "Appalachian St Mountaineers vs. Yale Bulldogs: Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB4I4dV60xWzkV3rhcMpf8VAswnUsejz2knRu921nXrac-JH2p3DpLdbPxVpQ"
-        }
-      ]
-    },
-    {
-      "query": "gabriel jesus",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/gabriel-jesus-opens-adaptation-barcelona-193000086.html",
-        "https://www.livescore.com/en/news/football/laliga/60-minutes-in-six-matches-flicks-decision-causes-confusion-at-barcelona-goal/",
-        "https://www.gazetaexpress.com/en/Gabriel-Jesus-talks-about-Barca%27s-adaptation--being-part-of-this-group-makes-everything-easier/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFTPnSQKjz5OJar2uajFwxaZSd8v2p1XlL8x-UgasJHvYFuSNYLKwBnEX3Ik",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/gabriel-jesus-opens-adaptation-barcelona-193000086.html",
-          "title": "Gabriel Jesus opens up on adaptation at Barcelona: ‘Being part of this group makes everything easier’",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQFTPnSQKjz5OJar2uajFwxaZSd8v2p1XlL8x-UgasJHvYFuSNYLKwBnEX3Ik"
-        },
-        {
-          "url": "https://www.livescore.com/en/news/football/laliga/60-minutes-in-six-matches-flicks-decision-causes-confusion-at-barcelona-goal/",
-          "title": "60 minutes in six matches: Flick's decision causes confusion at Barcelona",
-          "publisher": "LiveScore",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT34hz9pu47l5rjoVeOVqmRFgOMmugMj1t_K_64v07MQrTk7EX_zTdR2w0Nlok"
-        },
-        {
-          "url": "https://www.gazetaexpress.com/en/Gabriel-Jesus-talks-about-Barca%27s-adaptation--being-part-of-this-group-makes-everything-easier/",
-          "title": "Gabriel Jesus talks about adapting to Barça: Being part of this group makes everything easier",
-          "publisher": "Gazeta Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a-ak5G3Ke0ja9bRowpuXHVJ0Sr51EIr55s1BMFsIF413uQ-sMxKxA_qraQA"
-        }
-      ]
-    },
-    {
-      "query": "chris paul",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T17:40:00Z",
-      "related_news_urls": [
-        "https://www.wxii12.com/article/college-gameday-wake-forest-winston-salem/74533208",
-        "https://inside.wfu.edu/2026/11/parking-availability-espn-college-game-day/",
-        "https://bleacherreport.com/articles/25537587-nba-icon-chris-paul-serve-college-gameday-guest-picker-ahead-wake-forest-vs-duke"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdNw4zvQbH03O3xwkv3w1oqjk-mOWb04dQNH5g1YDkefztsBCPSV7eOcK8O9g",
-      "image_credit": "WXII",
-      "news": [
-        {
-          "url": "https://www.wxii12.com/article/college-gameday-wake-forest-winston-salem/74533208",
-          "title": "College GameDay is coming to Wake Forest this Saturday",
-          "publisher": "WXII",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdNw4zvQbH03O3xwkv3w1oqjk-mOWb04dQNH5g1YDkefztsBCPSV7eOcK8O9g"
-        },
-        {
-          "url": "https://inside.wfu.edu/2026/11/parking-availability-espn-college-game-day/",
-          "title": "Parking availability: ESPN College Game Day",
-          "publisher": "Inside WFU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM2vhOHbtP0XB_Obh8z9LNszVn4MTalGfwHmUUy7-sq3xuYY_xNlzg0zfbAYk"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537587-nba-icon-chris-paul-serve-college-gameday-guest-picker-ahead-wake-forest-vs-duke",
-          "title": "NBA Icon Chris Paul to Serve as 'College GameDay' Guest Picker Ahead of Wake Forest vs. Duke",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDJzxXhCn2iTgzaSb5vKoVv9fIaw_AGV-Rn350HfIQ0Yj4MmzG7Sw8v3gYWec"
         }
       ]
     }
