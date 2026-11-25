@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T01:31:26.015885Z",
+  "checked_at": "2026-11-25T02:01:33.410216Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cfp rankings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-25T01:10:00Z",
+      "query": "the rookie north",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T01:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
-        "https://www.nytimes.com/athletic/live-blogs/college-football-playoff-rankings-live-updates-week-13-predictions-results/0U7oqbOdZYR8/",
-        "https://www.ncaa.com/news/football/article/2026-11-24/when-do-college-football-playoff-rankings-come-out"
+        "https://www.cbr.com/abc-the-rookie-season-9-reset-abandons-old-tv-strategy/",
+        "https://fangirlish.com/2026/11/23/everything-we-know-about-abcs-the-rookie-season-9/",
+        "https://abc.com/video/4ee79d68-9c2a-48ee-a2c8-fad54d1d37c4/playlist/pl557769560"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPXcaXmZtl7FTQB6u5CozyRS40ZddrhHyP5paA-pD-oig0KTOiI3e-ByRyg",
+      "image_credit": "Comic Book Resources",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
-          "title": "2026-27 Week 12 College Football Playoff, bowl projections",
-          "publisher": "ESPN",
+          "url": "https://www.cbr.com/abc-the-rookie-season-9-reset-abandons-old-tv-strategy/",
+          "title": "ABC Is Abandoning The Rookie's Old TV Strategy With a Major Season 9 Reset",
+          "publisher": "Comic Book Resources",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPXcaXmZtl7FTQB6u5CozyRS40ZddrhHyP5paA-pD-oig0KTOiI3e-ByRyg"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/college-football-playoff-rankings-live-updates-week-13-predictions-results/0U7oqbOdZYR8/",
-          "title": "Georgia, Utah stay atop College Football Playoff rankings while Indiana falls out and Alabama, UCLA tumble: Live updates and reaction",
-          "publisher": "The New York Times",
+          "url": "https://fangirlish.com/2026/11/23/everything-we-know-about-abcs-the-rookie-season-9/",
+          "title": "Everything We Know About ABC’s The Rookie Season 9",
+          "publisher": "Fangirlish",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQF-5f4P3yZwLa_sBqYi9d5VqwTrO5omDPfeXhsX3nqTv31W_cgmGzttBdrl4A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0Urc0TFt1n1UIVE7V2UULJ7HdBQW-9-EimmAKe_kuBXUpaHFEFHhDXKEZlUw"
         },
         {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-24/when-do-college-football-playoff-rankings-come-out",
-          "title": "College Football Playoff rankings schedule, release dates",
-          "publisher": "NCAA.com",
+          "url": "https://abc.com/video/4ee79d68-9c2a-48ee-a2c8-fad54d1d37c4/playlist/pl557769560",
+          "title": "WATCH: The Rookie - Season Premiere Jan 6 Video | The Rookie",
+          "publisher": "ABC Network",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbq-Ek8omSEsXGN2wN4XpHtDD29xiG4QDGYYj5KrZzeaTHR334yLEJ8jfcNe4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEJrA6Y4Xp-Q3gNNpc-8reNDV_OcVq8IqNAYzqiBX2iOuNrd3y6GO_gGWXayA"
         }
       ]
     },
     {
-      "query": "dancing with the stars voting",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/does-dancing-with-the-stars-have-a-voting-problem.html",
-        "https://www.eonline.com/news/1438310/dwts-sharna-burgess-accuses-fans-of-using-voting-to-manipulate-show",
-        "https://www.yahoo.com/entertainment/tv/articles/dwts-head-reveals-fan-voting-223401095.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiq0N24cNFi4gei_aDUulOS52YVDuuCg5CqGCIZ0wNc0BLNBLwsZmXI70vd_k",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/does-dancing-with-the-stars-have-a-voting-problem.html",
-          "title": "Does ‘Dancing With the Stars’ Have a Voting Problem?",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiq0N24cNFi4gei_aDUulOS52YVDuuCg5CqGCIZ0wNc0BLNBLwsZmXI70vd_k"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438310/dwts-sharna-burgess-accuses-fans-of-using-voting-to-manipulate-show",
-          "title": "DWTS ’ Sharna Burgess Calls Out Fans for Using Voting System to \"Manipulate the Show\"",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzbdANCPxJ7o7DKEvq12sQHKpCqzZCqBk7Bx4x09qgYHkX1ZH1WVeumhNMEmQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/dwts-head-reveals-fan-voting-223401095.html",
-          "title": "DWTS Head Reveals Fan Voting Trends Changing for Season 35 Finale Contestants",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVSdEv58tXACHEDhVnvPaNi7iAIykV98pMf2_yZjZ-mmPcBrRlcwM4hxvHcVk"
-        }
-      ]
-    },
-    {
-      "query": "texas tech basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://www.cardchronicle.com/basketball/106258/louisville-vs-texas-tech-preview",
-        "https://247sports.com/college/louisville/article/cardinalauthority-predictions-no-25-louisville-vs-no-5-texas-tech--293237414/",
-        "https://www.courier-journal.com/story/sports/college/louisville/2026/11/24/louisville-texas-tech-basketball-game-score-live-updates-players-era-16-highlights/92594635007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUfYlr7tPaMbdg4DbxRygWUaO0-rU_yKzY2YHaG1uWisZ0UhRXJ3V_htYdHZc",
-      "image_credit": "Card Chronicle",
-      "news": [
-        {
-          "url": "https://www.cardchronicle.com/basketball/106258/louisville-vs-texas-tech-preview",
-          "title": "Louisville vs. Texas Tech preview",
-          "publisher": "Card Chronicle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUfYlr7tPaMbdg4DbxRygWUaO0-rU_yKzY2YHaG1uWisZ0UhRXJ3V_htYdHZc"
-        },
-        {
-          "url": "https://247sports.com/college/louisville/article/cardinalauthority-predictions-no-25-louisville-vs-no-5-texas-tech--293237414/",
-          "title": "CardinalAuthority Predictions: No. 25 Louisville vs. No. 5 Texas Tech",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSfGHxtBs3mJpa2b_Gnq6ZPM2UlntRbxT06a8ZTvhiEcQfFsWeHe5KtBBqP5N8"
-        },
-        {
-          "url": "https://www.courier-journal.com/story/sports/college/louisville/2026/11/24/louisville-texas-tech-basketball-game-score-live-updates-players-era-16-highlights/92594635007/",
-          "title": "Louisville-Texas Tech score today, UofL basketball live updates",
-          "publisher": "The Courier-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUK17YylGnUGzwtov8LLcyYct_Kth_zYFJlQeiX-JLZA1iVwUUuj7nvz8S_iI"
-        }
-      ]
-    },
-    {
-      "query": "abc",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://www.tvline.com/2326911/2026-2027-winter-tv-schedule-abc-cbs-fox-nbc-return-dates-midseason-premieres/",
-        "https://blexmedia.com/the-full-2027-midseason-schedule/",
-        "https://www.yahoo.com/entertainment/tv/articles/midseason-2027-tv-schedule-see-120038895.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGBwHOE1zkQ18A531dDx61IXS-k5Viltz1lKMyawbyKIJUNE1hYnVyaK_g_-Q",
-      "image_credit": "TVLine",
-      "news": [
-        {
-          "url": "https://www.tvline.com/2326911/2026-2027-winter-tv-schedule-abc-cbs-fox-nbc-return-dates-midseason-premieres/",
-          "title": "2026–2027 TV Schedule: ABC, CBS, Fox, NBC Fall Finales And Midseason Return Dates",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGBwHOE1zkQ18A531dDx61IXS-k5Viltz1lKMyawbyKIJUNE1hYnVyaK_g_-Q"
-        },
-        {
-          "url": "https://blexmedia.com/the-full-2027-midseason-schedule/",
-          "title": "Your Favorite Show Is Coming Back -- Here's Exactly When: The Full 2027 Midseason Schedule",
-          "publisher": "Blex Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqPdo4Owpoty8L8yYqhZEgfDXnNetY7lus3tQTAnJXBO7JtyOAhDL19srbe-M"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/midseason-2027-tv-schedule-see-120038895.html",
-          "title": "Midseason 2027 TV Schedule: See When ‘Grey’s Anatomy,’ ‘Tracker’ and More Air After Several Changes",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5kXV7FibXblGxPN463nW-UIhprrBZzM2DrACTE061VyvscgBhSDC38luE-Fw"
-        }
-      ]
-    },
-    {
-      "query": "connor dancing with the stars",
+      "query": "kyshawn george",
       "approx_searches": "1000+",
-      "published_at": "2026-11-25T01:10:00Z",
+      "published_at": "2026-11-25T01:40:00Z",
       "related_news_urls": [
-        "https://people.com/rylee-arnold-cries-opening-gift-dancing-with-the-stars-partner-connor-wood-12277771",
-        "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-season-35-finale-190115377.html",
-        "https://pagesix.com/2026/11/24/style/connor-wood-gifts-dwts-partner-rylee-arnold-meaningful-costume-ahead-of-season-35-finale/"
+        "https://www.nba.com/watch/video/game-recap-wizards-116-magic-96-nov-22",
+        "https://www.bulletsforever.com/washington-wizards-statistical-analysis/74282/wizards-beat-magic-for-third-straight-victory",
+        "https://www.washingtonpost.com/sports/2026/11/22/wizards-rout-magic-behind-three-point-barrage/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjapNlFbwvkN0Y7xBCfnZ3oLYx4IUMhLEyuEH6NeClLwnAmNaE8ffPXonb2E0",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2H3INJ19FcU-N_qeK4E6bgFSlGmNyPzQgpm6dqpJ1L0Um6n-iz9_rJ8QcFnE",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://people.com/rylee-arnold-cries-opening-gift-dancing-with-the-stars-partner-connor-wood-12277771",
-          "title": "Rylee Arnold Moved to Tears After Receiving ‘Meaningful’ Gift from Dancing with the Stars Partner Connor Wood",
-          "publisher": "People.com",
+          "url": "https://www.nba.com/watch/video/game-recap-wizards-116-magic-96-nov-22",
+          "title": "Game Recap: Wizards 116, Magic 96 (Nov. 22)",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjapNlFbwvkN0Y7xBCfnZ3oLYx4IUMhLEyuEH6NeClLwnAmNaE8ffPXonb2E0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ2H3INJ19FcU-N_qeK4E6bgFSlGmNyPzQgpm6dqpJ1L0Um6n-iz9_rJ8QcFnE"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/dancing-stars-season-35-finale-190115377.html",
-          "title": "'Dancing With the Stars' season 35 finale: Connor Wood and Rylee Arnold",
-          "publisher": "Yahoo",
+          "url": "https://www.bulletsforever.com/washington-wizards-statistical-analysis/74282/wizards-beat-magic-for-third-straight-victory",
+          "title": "Wizards beat Magic for third straight victory",
+          "publisher": "Bullets Forever",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmZSj2Q430pPKT1vv5KF0CjylKPML1TtV29-5BgIl54nUClE5sskyEJJ7TyZU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3kUgPyphbm1I2ofGznJ39PTLltpUVxyjpqgE8SXjBYClcKp_CRffWaO2mVRY"
         },
         {
-          "url": "https://pagesix.com/2026/11/24/style/connor-wood-gifts-dwts-partner-rylee-arnold-meaningful-costume-ahead-of-season-35-finale/",
-          "title": "Rylee Arnold sobs over ‘DWTS’ partner Connor Wood’s ‘thoughtful and meaningful’ gift ahead of finale",
-          "publisher": "Page Six",
+          "url": "https://www.washingtonpost.com/sports/2026/11/22/wizards-rout-magic-behind-three-point-barrage/",
+          "title": "Wizards make it rain to win third straight game",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5RH7a7jZILM2mtp0FEhDSdUtXR_n4nqK51GKgkZ80VRAZgrntnH_soZohNfM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBd0sk8HBPXJRskHg_wZpnTulMIjLaBmOLOieyNrfEjSGVnhgPMqNhy0-adso"
         }
       ]
     },
     {
-      "query": "bo nix",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T01:10:00Z",
+      "query": "clemson basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T01:40:00Z",
       "related_news_urls": [
-        "https://www.denverbroncos.com/news/next-day-notebook-broncos-find-success-in-run-game-continue-offensive-rhythm-in-win-vs-raiders",
-        "https://www.espn.com/nfl/recap/_/gameId/401873075",
-        "https://thednvr.com/broncos/sean-payton-significant-change-denver-broncos-raiders/"
+        "https://www.tigernet.com/clemson-basketball/news/clemson-washington-in-maui-tv-info-vegas-odds-team-previews-50175",
+        "https://sports.yahoo.com/articles/clemson-vs-washington-basketball-desperation-181450595.html",
+        "https://www.accuscore.com/game/cmwuttig3nct1qp01umm1b01z"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOd31ft5rkvnVLS-AkkHgvyk-mINz-utFPGqH1LSaMIa3CsKjr4w8CTOdbOc",
-      "image_credit": "Denver Broncos",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHc3j6ya1WOIwR6cS9PpvO-vYaxBAao8WwiTEW1enejseZWuPMAZlG_LGUUlk",
+      "image_credit": "TigerNet",
       "news": [
         {
-          "url": "https://www.denverbroncos.com/news/next-day-notebook-broncos-find-success-in-run-game-continue-offensive-rhythm-in-win-vs-raiders",
-          "title": "Next-Day Notebook: Broncos find success in run game, continue offensive rhythm in win vs. Raiders",
-          "publisher": "Denver Broncos",
+          "url": "https://www.tigernet.com/clemson-basketball/news/clemson-washington-in-maui-tv-info-vegas-odds-team-previews-50175",
+          "title": "Clemson-Washington in Maui: TV info, Vegas odds, team previews",
+          "publisher": "TigerNet",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaOd31ft5rkvnVLS-AkkHgvyk-mINz-utFPGqH1LSaMIa3CsKjr4w8CTOdbOc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHc3j6ya1WOIwR6cS9PpvO-vYaxBAao8WwiTEW1enejseZWuPMAZlG_LGUUlk"
         },
         {
-          "url": "https://www.espn.com/nfl/recap/_/gameId/401873075",
-          "title": "Broncos 38-24 Raiders (Nov 22, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBr6QfpGkLR-HFvciO0D4q9jTbRJ9B3P5nDugNumkfeyh3I-h9z_WUlIv74kI"
-        },
-        {
-          "url": "https://thednvr.com/broncos/sean-payton-significant-change-denver-broncos-raiders/",
-          "title": "Sean Payton breaks down the significant change the Denver Broncos made in their win over the Raiders",
-          "publisher": "DNVR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAPeOFFdJD1FExPz-MvWQ-9pqJWCfn_e1EEISeAWzOthWD8KxFrVe1qpVbU6w"
-        }
-      ]
-    },
-    {
-      "query": "bobby bones",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/pictures/every-look-cma-awards-red-carpet-2026-11-19/",
-        "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-        "https://people.com/taylor-swift-sequin-fringe-minidress-2026-cma-awards-12264099"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmBLndD3kkcb06pwX-qWJsvH8kt_gkQmxRUIzVvRgISGfdX13asn95xX2Y0pY",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/pictures/every-look-cma-awards-red-carpet-2026-11-19/",
-          "title": "Every look from the CMA Awards red carpet",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmBLndD3kkcb06pwX-qWJsvH8kt_gkQmxRUIzVvRgISGfdX13asn95xX2Y0pY"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/18/style/cma-country-music-association-awards-red-carpet.html",
-          "title": "The 10 Best Looks From the Country Music Association Awards Red Carpet",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqVAVOZC1YMeRrVE3i_Cbl3QPxcvi1kSMyeCln5ONr_uKWE8aiFG4JgNk0FDQ"
-        },
-        {
-          "url": "https://people.com/taylor-swift-sequin-fringe-minidress-2026-cma-awards-12264099",
-          "title": "Taylor Swift Sparkles in $2,700 Sequin and Fringe Minidress for Her Third Look at 2026 CMA Awards",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoOQn2-fGFKa2YqVznVmN8ATJevc_z_oGsECxZfNiOIxJrZFcAJ5PxUTD4hes"
-        }
-      ]
-    },
-    {
-      "query": "big ten volleyball tournament bracket",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://badgerswire.usatoday.com/story/sports/college/badgers/2026/11/24/updated-4-team-big-ten-volleyball-tournament-bracket-november-24/92914859007/",
-        "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTp1mcqo8OMuWAkqawCplCx1Pwp1vSxjuJvViASOpETprB17cRk3VcnHjsP9w",
-      "image_credit": "Big Ten Conference",
-      "news": [
-        {
-          "url": "https://badgerswire.usatoday.com/story/sports/college/badgers/2026/11/24/updated-4-team-big-ten-volleyball-tournament-bracket-november-24/92914859007/",
-          "title": "Updated Big Ten volleyball semifinal tournament bracket (November 24)",
-          "publisher": "Badgers Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9fiCfSGWQoBsU2jCKbk_1pYQ6fE8wKW9Kw7RRJx_jqiRttFoc3R5JqbWj1GY"
-        },
-        {
-          "url": "https://uwbadgers.com/news/2026/11/20/volleyball-no-9-badgers-prepare-for-inaugural-b1g-tournament",
-          "title": "No. 9 Badgers prepare for inaugural B1G Tournament",
-          "publisher": "Wisconsin Badgers",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwUo_1VJKvtfFQDHzvv18sbUhePwsm0K4TwhEuZkteTzcOTsP0cQqhCVW4Ohw"
-        }
-      ]
-    },
-    {
-      "query": "scottie pippen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T01:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/scottie-pippen-didnt-hesitate-answer-225731329.html",
-        "https://dallassportsjournal.com/michael-jordan-scottie-pippen-trade-request-bulls-nba/",
-        "https://fadeawayworld.net/nba-media/scottie-pippen-picks-michael-jordan-greatest-athlete"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKADSPoWZZfBpbVsnhzzhriOLozmy3FLEz0UhxdUaWqAxaQRcAwWJvUxnr-g4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/scottie-pippen-didnt-hesitate-answer-225731329.html",
-          "title": "Scottie Pippen Didn't Hesitate to Give His Answer on Greatest Athlete Debate Amid Michael Jordan Feud",
+          "url": "https://sports.yahoo.com/articles/clemson-vs-washington-basketball-desperation-181450595.html",
+          "title": "Clemson vs. Washington Basketball: Desperation in Maui",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKADSPoWZZfBpbVsnhzzhriOLozmy3FLEz0UhxdUaWqAxaQRcAwWJvUxnr-g4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD45J5ixgI7V45cV5gvnm58XurExyTrOm0i3Pquo6YsRph5THaMjekbtIH-8Q"
         },
         {
-          "url": "https://dallassportsjournal.com/michael-jordan-scottie-pippen-trade-request-bulls-nba/",
-          "title": "Michael Jordan Wasn’t Happy When Scottie Pippen Requested Trade From Bulls During 1997-98 NBA Season",
-          "publisher": "Dallas Hoops Journal",
+          "url": "https://www.accuscore.com/game/cmwuttig3nct1qp01umm1b01z",
+          "title": "Clemson vs Washington Prediction (Nov 24): Clemson 57% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTefVtsFIpzWN5LSGXx_-JSgeQUMgG9hflnheUNFLTygvBGFQOJ8u0A4tUBzkY"
-        },
-        {
-          "url": "https://fadeawayworld.net/nba-media/scottie-pippen-picks-michael-jordan-greatest-athlete",
-          "title": "Scottie Pippen Picks Michael Jordan As The Greatest Athlete: \"Driving Me And Pushing Me Each And Every Day\"",
-          "publisher": "Fadeaway World",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpLNjFDFlELLn5esIkj8jXQgP6RJNfc1Km851DLpseohjVX4Ni36-5oZ9x92o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmz_YysfWRmUETUIc6yKEHVEd64HFBoNGOqUBmlmaNlAGSIRuOZbCqahLPXmk"
         }
       ]
     },
     {
-      "query": "tatyana ali dancing with the stars",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T01:00:00Z",
+      "query": "wisconsin volleyball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T01:40:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/alfonso-ribeiro-dancing-with-the-stars-finale-criticism-exclusive/92884657007/",
-        "https://www.tvinsider.com/1305167/dancing-with-the-stars-alfonso-ribeiro-top-5-rigged-rumor-reaction/",
-        "https://www.hollywoodreporter.com/tv/tv-features/alfonso-ribeiro-dwts-season-35-tatyana-fan-discourse-all-stars-1236762413/"
+        "https://uwbadgers.com/news/2026/11/23/volleyball-no-8-badgers-set-for-b1g-semifinals",
+        "https://sports.yahoo.com/college-sports/articles/b1g-volleyball-semifinal-wisconsin-vs-230024146.html",
+        "https://www.lansingstatejournal.com/story/sports/college/msu/2026/11/23/msu-volleyball-awaits-ncaa-tournament-fate-after-big-ten-tourney-run-ends/92922426007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA-O0REMqmm_nS8gaIJDkmEp2t8GbdNs1m_LF-lKzZGO8Uu--cumB0HdJApLY",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV0TKkadVrC_zDaHi_gP15THEVVjqgDSTCMsdHZ_9Gw9Q_Q5vz4wgkd8t6zU",
+      "image_credit": "Wisconsin Badgers",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/alfonso-ribeiro-dancing-with-the-stars-finale-criticism-exclusive/92884657007/",
-          "title": "Alfonso Ribeiro shuts down 'incorrect' criticism over 'Dancing with the Stars' | Exclusive",
+          "url": "https://uwbadgers.com/news/2026/11/23/volleyball-no-8-badgers-set-for-b1g-semifinals",
+          "title": "No. 8 Badgers set for B1G Semifinals",
+          "publisher": "Wisconsin Badgers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV0TKkadVrC_zDaHi_gP15THEVVjqgDSTCMsdHZ_9Gw9Q_Q5vz4wgkd8t6zU"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-sports/articles/b1g-volleyball-semifinal-wisconsin-vs-230024146.html",
+          "title": "B1G volleyball semifinal - Wisconsin vs. Penn State: Live updates",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnM-VsAzZfegbAx_J51bsaITwXGdoaBE-otLu-l4QVsUbmkftBfIaeQjksjVE"
+        },
+        {
+          "url": "https://www.lansingstatejournal.com/story/sports/college/msu/2026/11/23/msu-volleyball-awaits-ncaa-tournament-fate-after-big-ten-tourney-run-ends/92922426007/",
+          "title": "Michigan State volleyball's Big Ten tournament run ends, Spartans await NCAA tourney fate",
+          "publisher": "Lansing State Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5jiJovkXpVGXKiqwNi-xiLTLzr6oGlNPhBhepMWDx-Loq9vid0Gfd0afFCq4"
+        }
+      ]
+    },
+    {
+      "query": "sarah jane nader",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T01:40:00Z",
+      "related_news_urls": [
+        "https://www.instyle.com/brooks-nader-reaction-sister-sarah-jane-dating-pete-davidson-12274581",
+        "https://ew.com/brooks-nader-opinion-sisters-romance-with-pete-davidson-12274605",
+        "https://www.eonline.com/news/1438313/brooks-nader-doesnt-want-sister-sarah-jane-nader-dating-pete-davidson"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoZ2aTlSINkupKOiRdTh0qLLTv2wqhTXOOufO7iz9QWeoTgP-rWA0uTwvTo2o",
+      "image_credit": "InStyle",
+      "news": [
+        {
+          "url": "https://www.instyle.com/brooks-nader-reaction-sister-sarah-jane-dating-pete-davidson-12274581",
+          "title": "Brooks Nader Gives Blunt 5-Word Reaction to Her Sister Sarah Jane Dating Pete Davidson",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoZ2aTlSINkupKOiRdTh0qLLTv2wqhTXOOufO7iz9QWeoTgP-rWA0uTwvTo2o"
+        },
+        {
+          "url": "https://ew.com/brooks-nader-opinion-sisters-romance-with-pete-davidson-12274605",
+          "title": "Brooks Nader shares scathing opinion on sister’s rumored romance with Pete Davidson",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnAJ6EphF59ErAt3waZN-3qiBSBjxYDrYIXvmHWylKIWWrJGavVIs6cXvW_XQ"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438313/brooks-nader-doesnt-want-sister-sarah-jane-nader-dating-pete-davidson",
+          "title": "Brooks Nader Reveals If She Approves of Sister Sarah Jane Nader Dating Pete Davidson",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWvdhU8ZI2tRY8qdYkN4Ae5F_OEuoOB_fRiNU-Lc7fWhQUPkgYj_uZAETRR9Y"
+        }
+      ]
+    },
+    {
+      "query": "justus kelley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T01:40:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/miss-usa-justus-kelley-miss-universe-2026-11",
+        "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
+        "https://www.marca.com/en/lifestyle/world-news/2026/11/23/how-voting-works-for-miss-universe-2026-and-when-is-the-deadline-for-this-year-s-pageant.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrJMHPV692BLlIktdcoccqIXEI91JBQNgbw0ygygbdwluoYD4MLtv4idKnA",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/miss-usa-justus-kelley-miss-universe-2026-11",
+          "title": "Meet Miss USA Justus Kelley, who could become the 10th American to win Miss Universe",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUrrJMHPV692BLlIktdcoccqIXEI91JBQNgbw0ygygbdwluoYD4MLtv4idKnA"
+        },
+        {
+          "url": "https://www.foxnews.com/entertainment/beauty-queen-stripped-miss-usa-crown-hidden-husband-kids-unexpected-spotlight-decades-later",
+          "title": "Beauty queen stripped of Miss USA crown over hidden husband, kids gets unexpected spotlight decades later",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3MNocK-tat6xa9GZ9ildciYueyitre9Nbq9uLmrTGWNWeHr_QZKR2F15bVGU"
+        },
+        {
+          "url": "https://www.marca.com/en/lifestyle/world-news/2026/11/23/how-voting-works-for-miss-universe-2026-and-when-is-the-deadline-for-this-year-s-pageant.html",
+          "title": "How voting works for Miss Universe 2026 and when is the deadline for this year's pageant?",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrYEb3FZUuSOD9Xs_2zEMeqmlRiYZM3QNihfWp27e8rf6YFV7W1n-Mht0W-X4"
+        }
+      ]
+    },
+    {
+      "query": "nba scores today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T01:40:00Z",
+      "related_news_urls": [
+        "https://sports.inquirer.net/708342/nba-scores-today-bucks-pacers-halt-slumps-spurs-lakers-prevail",
+        "https://www.gmanetwork.com/news/sports/basketball/1010588/nba-scores-today-blazers-vs-76ers-lakers-vs-jazz-and-other-games/story/",
+        "https://karlobag.eu/en/sports/nba-results-minnesota-routs-brooklyn-phoenix-wins-in-overtime-during-a-ten-game-1bfuf/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSp7rdzJJE-83FqDYpI7TmLdqxzye2PSE1jbXy3969MiQZthEAO8Tm9e7o5eU",
+      "image_credit": "Inquirer.net",
+      "news": [
+        {
+          "url": "https://sports.inquirer.net/708342/nba-scores-today-bucks-pacers-halt-slumps-spurs-lakers-prevail",
+          "title": "NBA scores today: Bucks, Pacers halt slumps; Spurs, Lakers prevail",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSp7rdzJJE-83FqDYpI7TmLdqxzye2PSE1jbXy3969MiQZthEAO8Tm9e7o5eU"
+        },
+        {
+          "url": "https://www.gmanetwork.com/news/sports/basketball/1010588/nba-scores-today-blazers-vs-76ers-lakers-vs-jazz-and-other-games/story/",
+          "title": "NBA scores today: Blazers vs 76ers, Lakers vs Jazz, and other games",
+          "publisher": "GMA Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHTnDp8Cr95S6ULI1pu5t2sUgBJIStG2k1Uy2GK_PmH1tq9ya-9a0-UWhHrAk"
+        },
+        {
+          "url": "https://karlobag.eu/en/sports/nba-results-minnesota-routs-brooklyn-phoenix-wins-in-overtime-during-a-ten-game-1bfuf/",
+          "title": "NBA results: ten games, overtime drama and big wins",
+          "publisher": "KarloBag.eu",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpQKXJKXaO-zsw2FlAuw-ortuHjgBtLSe_HKK8hgEeUfu4H7J-gTBnWZoEpcs"
+        }
+      ]
+    },
+    {
+      "query": "maura higgins",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T01:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cw9879841ev7o",
+        "https://people.com/maura-higgins-will-buy-mark-ballas-hermes-birkin-dancing-with-the-stars-12276983",
+        "https://www.rte.ie/entertainment/2026/1124/1600383-maura-higgins-dwts/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRso2CA0l89H1_cWX9-jDrXW7WyjJdm26kZL2dz4Ta0dF4fK6pKylG0C2wqgG0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cw9879841ev7o",
+          "title": "Irish reality star dances her way to final of Dancing with the Stars",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRso2CA0l89H1_cWX9-jDrXW7WyjJdm26kZL2dz4Ta0dF4fK6pKylG0C2wqgG0"
+        },
+        {
+          "url": "https://people.com/maura-higgins-will-buy-mark-ballas-hermes-birkin-dancing-with-the-stars-12276983",
+          "title": "Maura Higgins Says She’ll Buy Mark Ballas an Hermès Birkin Bag If They Win Dancing with the Stars",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo8oo1Udn5DJZb2Haw8-OjH6XGtp3j_GlPCJmQTfRGdtGAaCpJsRzei8oNYBc"
+        },
+        {
+          "url": "https://www.rte.ie/entertainment/2026/1124/1600383-maura-higgins-dwts/",
+          "title": "Longford's Maura Higgins dances her way to DWTS US finale",
+          "publisher": "RTE.ie",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD_NjEXqI9-VGxAC0IlRnDCY92UEQsgPvTJpS04uMiKUTkA8fIKW8jIKKeOqc"
+        }
+      ]
+    },
+    {
+      "query": "mark ballas",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T01:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/mark-ballas-mom-shirley-66-175933325.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/24/shirley-ballas-giuseppe-nonnis-boyfriend-mark-ballas/92948213007/",
+        "https://www.thesun.co.uk/tv/41139018/shirley-ballas-red-carpet-debut-dancer/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRns6Jm0CF42Wh-POLl5wKYE71WNYxUgXsq6cSGqACyCG_bvr8d6rJfY4eAlaw",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/mark-ballas-mom-shirley-66-175933325.html",
+          "title": "Mark Ballas’ mom Shirley, 66, makes red carpet debut with boyfriend Giuseppe Nonnis — who’s younger than her ‘DWTS’ pro son",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRns6Jm0CF42Wh-POLl5wKYE71WNYxUgXsq6cSGqACyCG_bvr8d6rJfY4eAlaw"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/24/shirley-ballas-giuseppe-nonnis-boyfriend-mark-ballas/92948213007/",
+          "title": "Mark Ballas' mom, 66, makes red carpet debut with rumored boyfriend, 36",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQA-O0REMqmm_nS8gaIJDkmEp2t8GbdNs1m_LF-lKzZGO8Uu--cumB0HdJApLY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDq2UVY8xpeQhmI1Mohu88WJLXA_ZoXKbCwGzexPhJ86ptuVf5u9jcPdFhtXU"
         },
         {
-          "url": "https://www.tvinsider.com/1305167/dancing-with-the-stars-alfonso-ribeiro-top-5-rigged-rumor-reaction/",
-          "title": "‘DWTS’: Alfonso Ribeiro Weighs In on the Top 5 & Shuts Down Theory Show Is Rigged",
-          "publisher": "TV Insider",
+          "url": "https://www.thesun.co.uk/tv/41139018/shirley-ballas-red-carpet-debut-dancer/",
+          "title": "Strictly’s Shirley Ballas, 66, makes red carpet debut with handsome dancer, 36, before leaving afterparty arm in arm",
+          "publisher": "The Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMtj1G4NSMeplQlcGTIkI6LtqBOil2Y5lfVKi9uogM3TBu6dz7qw9AAmPokoU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTf9t4DmciEC8cyL9L5cYop32MA4Kw24QJrPTNFjKQDSOCeao2q7ZQERfmiaM4"
+        }
+      ]
+    },
+    {
+      "query": "martha stewart",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T01:30:00Z",
+      "related_news_urls": [
+        "https://extratv.com/2026/11/24/martha-stewart-s-message-to-little-girl-from-viral-martha-on-the-mantel-video-exclusive/",
+        "https://www.sbsun.com/2026/11/19/first-look-at-marthas-forest-of-wonder-at-yaamava-resort-casino/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/martha-stewart-turning-california-casino-000543154.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Pw8rceGaY8fdGL5L5Q_eVG3Rm6IUZKUazw0Bw0YCVlqCerBbeGNOyTRcvaI",
+      "image_credit": "Extra",
+      "news": [
+        {
+          "url": "https://extratv.com/2026/11/24/martha-stewart-s-message-to-little-girl-from-viral-martha-on-the-mantel-video-exclusive/",
+          "title": "Martha Stewart’s Message to Little Girl from Viral Martha on the Mantel Video (Exclusive)",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Pw8rceGaY8fdGL5L5Q_eVG3Rm6IUZKUazw0Bw0YCVlqCerBbeGNOyTRcvaI"
         },
         {
-          "url": "https://www.hollywoodreporter.com/tv/tv-features/alfonso-ribeiro-dwts-season-35-tatyana-fan-discourse-all-stars-1236762413/",
-          "title": "Alfonso Ribeiro on the “Wild” Ride of ‘DWTS’ Season 35, Reuniting With Tatyana Ali and Why He Won’t Compete in an All-Winners Season",
-          "publisher": "The Hollywood Reporter",
+          "url": "https://www.sbsun.com/2026/11/19/first-look-at-marthas-forest-of-wonder-at-yaamava-resort-casino/",
+          "title": "First look at Martha’s Forest of Wonder at Yaamava’ Resort & Casino",
+          "publisher": "San Bernardino Sun",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ymdp3WILzvDdYbl0pQzlmS6Z5-VTKg1vLwFNqMy3P-JSdAkXj9Zz6Mj9OSg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsj-EOcUDuz7_QixngUDkNlakqWIqSzHHQtCuS8akgx0RZkFS5Tnl89HDK25U"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/martha-stewart-turning-california-casino-000543154.html",
+          "title": "Martha Stewart is turning a California casino into her own winter wonderland",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS59G_PTJ5NOIwf4Wp15TRWZhu1GMVjqKNCao5dLG2Js1bTeidNlsWb5h_2YJM"
         }
       ]
     }
