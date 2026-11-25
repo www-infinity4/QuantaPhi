@@ -1,4 +1,4 @@
-import {SOURCE_STATUSES,filterSources,VERIFIED_COOPERATIVE_ADVERTISERS} from './quanta-sources-data.mjs?v=20261101-1';
+import {SOURCE_STATUSES,filterSources,VERIFIED_COOPERATIVE_ADVERTISERS} from './quanta-sources-data.mjs?v=20261125-swat';
 const container=document.getElementById('sources');
 const count=document.getElementById('sourceCount');
 const search=document.getElementById('sourceSearch');

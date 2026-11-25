@@ -12,6 +12,15 @@ export const SOURCE_STATUSES=Object.freeze({
 });
 export const SOURCES=Object.freeze([
   {
+    "id": "swat",
+    "name": "SwaT — Swarm Telepathy",
+    "category": "automation",
+    "status": "catalog-only",
+    "detail": "Experimental Bubbles agent context transfer research; 4× speed and 40% relative accuracy improvement reported by authors for SwaT + Attention Matching at matched budgets, not measured QuantaPhi performance. No live cache-transfer adapter or model access verified.",
+    "evidence": "https://arxiv.org/abs/2610.15095",
+    "website": "https://github.com/Ar-Kareem/SwaT"
+  },
+  {
     "id": "tinyfish",
     "name": "TinyFish",
     "category": "automation",

@@ -14,3 +14,12 @@ The source asset `/bubbles-skill-catalog.json` contains **64** currently adverti
 
 ## Safe importer behavior
 Re-run `skills__list` from an explicitly authorized developer session to refresh catalog metadata, review changes, and version the JSON in GitHub. The user-visible client must not auto-execute newly discovered skill definitions, import remote arbitrary JavaScript, or enlarge OAuth scopes. When an independent capability is implemented, change its state only after verifying backend receipt and end-to-end account isolation.
+
+
+## SwaT research intake — November 25, 2026 · #1907 / #1192
+
+- Source: [paper](https://arxiv.org/abs/2610.15095) and [author implementation](https://github.com/Ar-Kareem/SwaT). The authors report 4× speed and 40% relative accuracy gains for SwaT + Attention Matching against matched-budget text summaries; these are research outcomes, not Bubbles measurements.
+- Initial delivery is a non-executing catalog entry and public source-directory entry. Existing signed text handoffs are unchanged. Do not treat a reference entry as a model or tool grant.
+- Next executable step: inventory an owner-controlled runtime with direct cache access for the upstream example pair (Granite-3.3-8B → SmolLM3-3B), verify licenses and compute availability without incurring charges; benchmark synthetic inputs with pinned model/mapper versions, matched budgets, accuracy, latency and fallback receipts before connecting the existing Moltnook handoff. Hosted GPT APIs are not assumed to expose KV state.
+- Scope cache transfers to one authorized job/account; never serialize private cache tensors to public GitHub or browser logs. Preserve all leases, permissions and text fallback. Separate source, test, deployment and live acceptance. No verified runtime, GPU, trained mapper or deployment receipt yet.
+- Separate infrastructure evidence: owner screenshot on 2026-11-25 19:32:19 UTC displayed Cloudflare 1027 (Workers daily free request limit); track availability and migration under #2110 / #1110, not SwaT benchmarks. No live request count or recovery was measured by this intake.
