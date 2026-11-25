@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T23:01:28.672503Z",
+  "checked_at": "2026-11-25T23:31:19.940887Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "dow jones industrial average",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T22:40:00Z",
+      "query": "hurricanes vs lightning",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T23:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html",
-        "https://www.bloomberg.com/news/videos/2026-11-25/stocks-pare-ai-driven-losses-as-dip-buyers-emerge-video",
-        "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html"
+        "https://www.nhl.com/hurricanes/news/preview-november-25-at-tampa-bay",
+        "https://sports.yahoo.com/betting/articles/hurricanes-vs-lightning-prediction-picks-184752401.html",
+        "https://www.canescountry.com/general/54747/preview-how-to-watch-game-thread-carolina-hurricanes-tampa-bay-lightning"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2XY-6H3mo0ovdyNTCHRN4yM9b9zi5Y8KWrqRBO39YjBUlQ1EsG-OSiVv6gWQ",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIuwtfDdc10HDxxH0I9tWhHj5VpmHEb9XRBeuKVoxG-0FXbwUL2E1Cpmeoj1A",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/24/stock-market-today-live-updates-.html",
-          "title": "Dow closes higher Wednesday, wiping out 1,100-point loss in stunning rebound: Live updates",
-          "publisher": "CNBC",
+          "url": "https://www.nhl.com/hurricanes/news/preview-november-25-at-tampa-bay",
+          "title": "Preview: November 25 at Tampa Bay | Carolina Hurricanes",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2XY-6H3mo0ovdyNTCHRN4yM9b9zi5Y8KWrqRBO39YjBUlQ1EsG-OSiVv6gWQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIuwtfDdc10HDxxH0I9tWhHj5VpmHEb9XRBeuKVoxG-0FXbwUL2E1Cpmeoj1A"
         },
         {
-          "url": "https://www.bloomberg.com/news/videos/2026-11-25/stocks-pare-ai-driven-losses-as-dip-buyers-emerge-video",
-          "title": "Watch Stocks Pare AI-Driven Losses as Dip Buyers Emerge",
-          "publisher": "Bloomberg",
+          "url": "https://sports.yahoo.com/betting/articles/hurricanes-vs-lightning-prediction-picks-184752401.html",
+          "title": "Hurricanes vs Lightning Prediction, Picks, NHL Odds for Wednesday, November 25",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxe_OdQoSY0LdMsIdEVY5uFujxAbweETIr3UQfi0QH0EBmhYakMAXCxL-kKT0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT13Pp0r5xXyj578tFlU9s6R30zmg0cU-c8QUY4EAbiEd505NVv3F_WlFU8W1w"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/25/business/stocks-sp500-nvidia-ai.html",
-          "title": "Stock Sell-Off Continues as Investors Fret About A.I., Tariffs and Inflation",
+          "url": "https://www.canescountry.com/general/54747/preview-how-to-watch-game-thread-carolina-hurricanes-tampa-bay-lightning",
+          "title": "Preview, How to Watch and Game Thread: Hurricanes @ Lightning",
+          "publisher": "Canes Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_rODtWE8whiGemxQXNDDsARc_qDYtMQeCCHFjc7N5xGZwXgf5QXaygyAm5Ag"
+        }
+      ]
+    },
+    {
+      "query": "jets vs bruins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/jets/news/gameday-jets-at-bruins-x5003",
+        "https://sports.yahoo.com/nhl/articles/public-skate-bruins-vs-jets-220000756.html",
+        "https://www.bostonglobe.com/2026/11/25/sports/bruins-jets-preview-november-25-tv-lines/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEpElW-GxHvEHrN03Hv-AYsRMF5wRBGqLaS2HgDh2ZNLdJ2_AhFTi8eNNOX7c",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/jets/news/gameday-jets-at-bruins-x5003",
+          "title": "GAMEDAY: Jets at Bruins",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEpElW-GxHvEHrN03Hv-AYsRMF5wRBGqLaS2HgDh2ZNLdJ2_AhFTi8eNNOX7c"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/public-skate-bruins-vs-jets-220000756.html",
+          "title": "Public Skate: Bruins vs. Jets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt-D9sbhFol6j4TDkaUnrJUNV2sKkacXGXRQmHoLWIB-EAzrP4dN0P6kD5yUA"
+        },
+        {
+          "url": "https://www.bostonglobe.com/2026/11/25/sports/bruins-jets-preview-november-25-tv-lines/",
+          "title": "Bruins vs. Jets preview, Nov. 25: Boston looks to extend winning streak to three",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ80fRVHfU3S7bhPi06ZyMPCPn-w2k0FZYWoKUI529O-nNQylGdRsYus_JmRxk"
+        }
+      ]
+    },
+    {
+      "query": "devils vs blue jackets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/devils/news/preview-2026020393",
+        "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-25-jersey-220000070.html",
+        "https://www.espn.com/nhl/recap/_/gameId/401892773"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuY9w5_FEjSfgE0SnzdCxy9dZlUl_Mntgdm95TeEWVoHd7qi1uXQG8wEwBIXQ",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/devils/news/preview-2026020393",
+          "title": "A Second Date with the Jackets | MORNING SKATE | New Jersey Devils",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuY9w5_FEjSfgE0SnzdCxy9dZlUl_Mntgdm95TeEWVoHd7qi1uXQG8wEwBIXQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-25-jersey-220000070.html",
+          "title": "2026-27 Gamethread #25: New Jersey Devils at Columbus Blue Jackets",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Qd4EZeaCkZw0cR_xYL_L5ru1RV2z4gqEYbNz4n4tmZKGxWQkQExbye_m3XQ"
+        },
+        {
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892773",
+          "title": "Devils 3-2 Blue Jackets (Nov 23, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXzY3b3HBGtShStqSHug08rVxQG7vwElb8HDjwP4VeH58cWBsYKIEvHXc1sK0"
+        }
+      ]
+    },
+    {
+      "query": "focker in law cast",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
+        "https://editorial.rottentomatoes.com/article/focker-in-law-first-reviews/",
+        "https://www.hollywoodreporter.com/movies/movie-news/focker-in-law-movie-director-ariana-grande-ben-stiller-plot-1236760299/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
+          "title": "‘Focker In-Law’ Review: Ariana Grande Steals the Show",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXFGBikquZxJVelgWez8uLDxd_QP4BUsWgs1axl6O6G2rLw7DwCbpZPzdTy4k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4"
+        },
+        {
+          "url": "https://editorial.rottentomatoes.com/article/focker-in-law-first-reviews/",
+          "title": "Focker In-Law First Reviews: The Same Old Schtick, but Ariana Grande Is Great",
+          "publisher": "Rotten Tomatoes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSF5gRWJ1sRyR5md8vf-QNKcuHXJPKR_fl6_1ROPvxDwcHjkrKRC9yDqhgbes"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/focker-in-law-movie-director-ariana-grande-ben-stiller-plot-1236760299/",
+          "title": "‘Focker-in-Law’ Filmmaker John Hamburg Talks Ariana Grande’s Comedic Timing and the Actor Who Made Ben Stiller Laugh Hardest on Set",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPJ8JAZgX23Irku6cMDerzpb9kftcURKaBRJ5_UlaY244TXpDef8btYAH5b8g"
         }
       ]
     },
     {
-      "query": "is there a football game on tonight",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T22:40:00Z",
+      "query": "flames vs penguins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:10:00Z",
       "related_news_urls": [
-        "https://variety.com/2026/tv/news/netflix-nfl-thanksgiving-eve-u2-1236956485/",
-        "https://www.wbtv.com/2026/11/25/panthers-legend-broadcast-first-ever-nfl-thanksgiving-eve-football-game/",
-        "https://www.sportsvideo.org/2026/11/24/netflix-looks-to-establish-new-holiday-tradition-with-nfls-first-thanksgiving-eve-game/"
+        "https://www.pensburgh.com/penguins-lines-game-time-watch/83549/game-preview-calgary-flames-pittsburgh-penguins-11-25-2026",
+        "https://sports.yahoo.com/nhl/articles/watch-penguins-vs-flames-tonight-163752060.html",
+        "https://www.nytimes.com/athletic/7812056/2026/11/25/flames-vs-penguins-stream-how-to-watch-nov-25/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2f0DbC3Av6OoKyLfEcut1MuFgntHHIi8hPyEt97YySgcw8GHXnq9yVocNi4o",
-      "image_credit": "Variety",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PicZoXPy_157YgApC0wKpRLykeHtKNBgz0laQGogKbGRfRTq__vIuRc2N3g",
+      "image_credit": "PensBurgh",
       "news": [
         {
-          "url": "https://variety.com/2026/tv/news/netflix-nfl-thanksgiving-eve-u2-1236956485/",
-          "title": "How Netflix and the NFL Hope to Establish New Thanksgiving Eve Tradition With Game and U2 Halftime Show: ‘We Want to Create Those Global Water Cooler Moments’",
-          "publisher": "Variety",
+          "url": "https://www.pensburgh.com/penguins-lines-game-time-watch/83549/game-preview-calgary-flames-pittsburgh-penguins-11-25-2026",
+          "title": "Game Preview: Calgary Flames @ Pittsburgh Penguins 11/25/2026",
+          "publisher": "PensBurgh",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2f0DbC3Av6OoKyLfEcut1MuFgntHHIi8hPyEt97YySgcw8GHXnq9yVocNi4o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6PicZoXPy_157YgApC0wKpRLykeHtKNBgz0laQGogKbGRfRTq__vIuRc2N3g"
         },
         {
-          "url": "https://www.wbtv.com/2026/11/25/panthers-legend-broadcast-first-ever-nfl-thanksgiving-eve-football-game/",
-          "title": "Panthers legend to broadcast first-ever NFL Thanksgiving Eve football game",
-          "publisher": "WBTV",
+          "url": "https://sports.yahoo.com/nhl/articles/watch-penguins-vs-flames-tonight-163752060.html",
+          "title": "How to Watch Penguins vs. Flames Tonight: Channel, Live Stream & Start Time for NHL Game",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRovSK9YuKS7dBcF9m_ANxa2HV8-tYFpJlkamuch5CRsEaXO8JE8cnJHt-VMI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCZaK-PgwwfTZ25iIVy27RCQLYOPTb5p6b39Zlo5figr5PCU9qbAIDECcq8II"
         },
         {
-          "url": "https://www.sportsvideo.org/2026/11/24/netflix-looks-to-establish-new-holiday-tradition-with-nfls-first-thanksgiving-eve-game/",
-          "title": "Netflix Looks To Establish New Holiday Tradition With NFL’s First Thanksgiving Eve Game",
-          "publisher": "Sports Video Group",
+          "url": "https://www.nytimes.com/athletic/7812056/2026/11/25/flames-vs-penguins-stream-how-to-watch-nov-25/",
+          "title": "How to watch Flames vs. Penguins: TV channel and streaming options for November 25",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTniabz81ylyVryxVk44SrxDUwnLa_YMHwq_wXNFGLbSZfHQDZ45PbHiOl8VU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdfhX4s4mKnt2PR14PKCK1re09yiETa6MWtQjUN5bHSNvrUTmcwOFsCyMcEm8"
         }
       ]
     },
     {
-      "query": "who plays football tonight",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T22:30:00Z",
+      "query": "blues vs islanders",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/betting/article/bengals-commanders-monday-night-football-betting-odds-picks-and-predictions-best-bets-player-props-143321176.html",
-        "https://www.cbssports.com/nfl/news/commanders-vs-bengals-prediction-odds-how-to-watch-mnf-matchup/",
-        "https://www.espn.com/video/clip/_/id/50583376"
+        "https://www.nhl.com/blues/news/preview-blues-at-islanders-11252026",
+        "https://www.lighthousehockey.com/islanders-news-headlines/45576/islanders-gameday-news-blue-in-the-knee",
+        "https://www.nytimes.com/athletic/7812054/2026/11/25/blues-vs-islanders-stream-how-to-watch-nov-25/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2p2ywKHAW4IIfCummp9TnuMnG6U8EYAc0bLy_ebriFMcQhbcyJumnvmiXgDo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjUKHo-ZM71Odb7y2R1xEeNuBu40mCxT4SEeMRuuBWX57oMOuU9nsGDrT7p6g",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/blues/news/preview-blues-at-islanders-11252026",
+          "title": "Preview: Blues at Islanders | St. Louis Blues",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjUKHo-ZM71Odb7y2R1xEeNuBu40mCxT4SEeMRuuBWX57oMOuU9nsGDrT7p6g"
+        },
+        {
+          "url": "https://www.lighthousehockey.com/islanders-news-headlines/45576/islanders-gameday-news-blue-in-the-knee",
+          "title": "Islanders Gameday News: Blue in the knee",
+          "publisher": "Lighthouse Hockey",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlTj-Pan9xIKGphznC3wd9F438OhVhNrt0Aa-_b6yc9ssou_GZ5qMVKXXixEE"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7812054/2026/11/25/blues-vs-islanders-stream-how-to-watch-nov-25/",
+          "title": "How to watch Blues vs. Islanders: TV channel and streaming options for November 25",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEzxR9Uayk3xgQb-z8WXwgMxEDTwIZ-XvVoX33SgyLaFX3EOj-Pa7Mbjk68jw"
+        }
+      ]
+    },
+    {
+      "query": "bulls vs hornets",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T23:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/3-keys-hornets-salvage-nba-203447009.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/chicago-bulls-vs-charlotte-hornets-prediction-odds-6014973/",
+        "https://www.si.com/nba/hornets/onsi/game-preview-hornets-homestand-continues-vs-bulls-11-25-26"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldtmnYYOH-VIHMUpWUXhbQNVpfm9a44LLE4NaFXJfG6QJNm4k3im7LzNyp6g",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/betting/article/bengals-commanders-monday-night-football-betting-odds-picks-and-predictions-best-bets-player-props-143321176.html",
-          "title": "Bengals-Commanders Monday Night Football betting odds, picks and predictions: Best bets, player props",
+          "url": "https://sports.yahoo.com/nba/articles/3-keys-hornets-salvage-nba-203447009.html",
+          "title": "3 Keys For Hornets to Salvage NBA Cup vs Bulls",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2p2ywKHAW4IIfCummp9TnuMnG6U8EYAc0bLy_ebriFMcQhbcyJumnvmiXgDo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTldtmnYYOH-VIHMUpWUXhbQNVpfm9a44LLE4NaFXJfG6QJNm4k3im7LzNyp6g"
         },
         {
-          "url": "https://www.cbssports.com/nfl/news/commanders-vs-bengals-prediction-odds-how-to-watch-mnf-matchup/",
-          "title": "Commanders vs. Bengals prediction: Cincinnati looks to extend lead in AFC North in 'MNF' matchup",
-          "publisher": "CBS Sports",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/chicago-bulls-vs-charlotte-hornets-prediction-odds-6014973/",
+          "title": "Chicago Bulls vs Charlotte Hornets Prediction, Picks & Odds | NBA Wednesday",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0T8rFNxMWsDwHxyTP2HEAn0-nMvRkxp5mUFY4n08zrLIVRiCQijANZI_C2GA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2oBTXkGEaa1vSRUf6stZE_FL_IXMuhhHaX9N7prz5sv8c5QdXyQB37lpa-bQ"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50583376",
-          "title": "Why Stephen A. isn't counting out the Bengals after loss to Commanders",
+          "url": "https://www.si.com/nba/hornets/onsi/game-preview-hornets-homestand-continues-vs-bulls-11-25-26",
+          "title": "Game Preview: Hornets Homestand Continues vs. Bulls",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ-xnA1HqpReSPM6nJljtZ2s1xU8BXm7w5BZECP0N2Uc2bmrAiLY_-mQp90A4"
+        }
+      ]
+    },
+    {
+      "query": "packers schedule",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T23:00:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/videos/mike-mccarthy-reacts-to-aaron-rodgers-comments-on-pat-mcafee-show-nfl-total-access",
+        "https://www.dallascowboys.com/video/player-s-lounge-season-outlook-x9608",
+        "https://www.nfl.com/videos/philadelphia-eagles-vs-dallas-cowboys-nfl-pro-week-12-preview"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRffr0RuqK1qWBgWv5j9JGodrX9xGjnA7j5k5SQSR7FID3dxxEsEyzCquB7b3g",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/videos/mike-mccarthy-reacts-to-aaron-rodgers-comments-on-pat-mcafee-show-nfl-total-access",
+          "title": "Mike McCarthy reacts to Aaron Rodgers' comments on 'Pat McAfee Show' | 'NFL Total Access'",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRffr0RuqK1qWBgWv5j9JGodrX9xGjnA7j5k5SQSR7FID3dxxEsEyzCquB7b3g"
+        },
+        {
+          "url": "https://www.dallascowboys.com/video/player-s-lounge-season-outlook-x9608",
+          "title": "Player's Lounge: Season Outlook",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB1crHYoRytYpwV3jTLL98yP5KdzcQf3l0dyG94MPRiNgOLUAqZF5g_M28M0Q"
+        },
+        {
+          "url": "https://www.nfl.com/videos/philadelphia-eagles-vs-dallas-cowboys-nfl-pro-week-12-preview",
+          "title": "Philadelphia Eagles vs. Dallas Cowboys NFL Pro Week 12 Preview",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKD3QNuUfxQWFBVLV-AwwkzVMyX6o7N8lArYzZfT1sDHHjU31bG14-YT_TzQg"
+        }
+      ]
+    },
+    {
+      "query": "byu basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T23:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921709",
+        "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20261124_MISS@BYU/",
+        "https://www.deseret.com/sports/2026/11/24/byu-basketball-maui-invitational-loss-against-ole-miss-analysis/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-bycN7ZBbGpOqTCZstVDC3Ji9HfbJ20kdpIue2LLdJa7YHVUaV51iKqGvqSM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401921709",
+          "title": "Ole Miss 73-63 BYU (Nov 24, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQYCAwfWN_A0PVmpsH0S7_4KGI9mVAkHQU44k2UyTCAwfZzsqjkJeTkXem4XE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-bycN7ZBbGpOqTCZstVDC3Ji9HfbJ20kdpIue2LLdJa7YHVUaV51iKqGvqSM"
+        },
+        {
+          "url": "https://www.sportsline.com/college-basketball/game-forecast/NCAAB_20261124_MISS@BYU/",
+          "title": "Ole Miss Rebels vs. BYU Cougars Odds, Betting Lines, Expert picks, Game Projections, DFS Projections and Player Prop Projections - Tuesday 11/24 2:30 PM ET",
+          "publisher": "SportsLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjJJ-M_aVHjbBmFoijlfSI9F9QMAwV8BA46z_6XHgSWkb83hHpHtlSxcMybEI"
+        },
+        {
+          "url": "https://www.deseret.com/sports/2026/11/24/byu-basketball-maui-invitational-loss-against-ole-miss-analysis/",
+          "title": "Analysis: No. 19 BYU melts down late in Maui, struggling mightily against elite Ole Miss defense",
+          "publisher": "Deseret News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcZpiHF50KXQi1TuIaPSMC20185fIz2wMmZGIJLlLy-QoT907LFa3SEZpXX6A"
         }
       ]
     },
     {
-      "query": "davante adams",
+      "query": "albany vs syracuse",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T22:30:00Z",
+      "published_at": "2026-11-25T23:00:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25536381-davante-adams-injury-update-latest-rumors-rams-wrs-return-timeline-after-puka-nacuas-surgery",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/rap-adams-sounds-like-a-long-shot-for-week-13",
-        "https://www.thefantasyfootballers.com/news/648797/davante-adams-not-yet-ready-to-practice/"
+        "https://www.syracuse.com/tv/2026/11/where-to-watch-syracuse-mens-basketball-vs-albany-for-free-today.html",
+        "https://dailyorange.com/2026/11/syracuse-mens-basketball-ualbany-opponent-preview/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/syracuse-men-basketball-game-thread-220000429.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL3ADlYzzjsW5g-iIHA_h0VHMP7DzZgJsr6iIVMwuysaxCRHOwR3C3ONJWwnE",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqGRZcy19mH3gyL7_QQ1walW_qVQTV1vaFqaQCW5HlTnslqEoLNGhChOysbrE",
+      "image_credit": "Syracuse.com",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25536381-davante-adams-injury-update-latest-rumors-rams-wrs-return-timeline-after-puka-nacuas-surgery",
-          "title": "Davante Adams Injury Update, Latest Rumors on Rams WR's Return Timeline After Puka Nacua's Surgery",
-          "publisher": "Bleacher Report",
+          "url": "https://www.syracuse.com/tv/2026/11/where-to-watch-syracuse-mens-basketball-vs-albany-for-free-today.html",
+          "title": "Where to watch Syracuse men’s basketball vs. Albany for free today",
+          "publisher": "Syracuse.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL3ADlYzzjsW5g-iIHA_h0VHMP7DzZgJsr6iIVMwuysaxCRHOwR3C3ONJWwnE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqGRZcy19mH3gyL7_QQ1walW_qVQTV1vaFqaQCW5HlTnslqEoLNGhChOysbrE"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-22/rap-adams-sounds-like-a-long-shot-for-week-13",
-          "title": "Rap: Adams sounds like a long shot for Week 13",
-          "publisher": "NBC Sports",
+          "url": "https://dailyorange.com/2026/11/syracuse-mens-basketball-ualbany-opponent-preview/",
+          "title": "Everything to know about Syracuse’s 2nd straight Quad 4 matchup vs. UAlbany",
+          "publisher": "The Daily Orange",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxOEEGYMj5WoUZqChFJLdIm6hLiZWZ6W74rixLkvaUQ-9jT7RWy5ykpjqwmdM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTSqPuzPX4r202pJr2HdlfptTuyEPeMrvTZfzVboD1r1VHWaH7XKDveDhj9BU"
         },
         {
-          "url": "https://www.thefantasyfootballers.com/news/648797/davante-adams-not-yet-ready-to-practice/",
-          "title": "Davante Adams Not yet ready to practice",
-          "publisher": "Fantasy Footballers Podcast",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/syracuse-men-basketball-game-thread-220000429.html",
+          "title": "Syracuse men’s basketball: game thread vs UAlbany",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLzylKTh0RrIgWMvGg35R8NF7kYBL4bymxsqQ6bsS35w04T4NcEBp0f5egKNg"
-        }
-      ]
-    },
-    {
-      "query": "atlético-mg vs corinthians",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T22:20:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/25/atletico-mg-x-corinthians-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://tnsul.com/2026/11/25/rebaixamento-brasileirao-2026-corinthians-gremio-inter/",
-        "https://www.bol.uol.com.br/esporte/2026/11/25/jogo-do-vasco-hoje-25-pelo-brasileirao-onde-assistir-ao-vivo.htm"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn4GPkcknKBuSrdJ0AlD7lRUTfGf6H4s5LB9mg6fSugDU-xCVwyWamrt3ee9E",
-      "image_credit": "ge",
-      "news": [
-        {
-          "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/25/atletico-mg-x-corinthians-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Atlético-MG x Corinthians: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSn4GPkcknKBuSrdJ0AlD7lRUTfGf6H4s5LB9mg6fSugDU-xCVwyWamrt3ee9E"
-        },
-        {
-          "url": "https://tnsul.com/2026/11/25/rebaixamento-brasileirao-2026-corinthians-gremio-inter/",
-          "title": "Rebaixamento no Brasileirão 2026: veja quem pode cair",
-          "publisher": "Portal TN Sul",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25D3lkCHhgtHU4-kKfa7m9n9wfIVCKa31t2B6OCIpfEh7EWmRf3uq8zJLXwU"
-        },
-        {
-          "url": "https://www.bol.uol.com.br/esporte/2026/11/25/jogo-do-vasco-hoje-25-pelo-brasileirao-onde-assistir-ao-vivo.htm",
-          "title": "Jogo do Vasco hoje (25) pelo Brasileirão: onde assistir ao vivo",
-          "publisher": "BOL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpV0_TZmoJLmOhMnCEX-zEeqX6GxAd64v_F38lS3oEZvs30E7PKRaaXjaFtLE"
-        }
-      ]
-    },
-    {
-      "query": "jabari walker",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T22:20:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jabari-walker-scores-10-points-in-spot-start",
-        "https://knup.com/sports/nba/player-news/performance/jabari-walker-performance-11-23-2026-715472/",
-        "https://www.espn.com/nba/recap/_/gameId/401910037"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYewsuR92K_fKALEpDQIUmUEiLWpqdp24cLb_MhvnqgT0jZMc82B6bDzEazFg",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/jabari-walker-scores-10-points-in-spot-start",
-          "title": "Jabari Walker scores 10 points in spot start",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYewsuR92K_fKALEpDQIUmUEiLWpqdp24cLb_MhvnqgT0jZMc82B6bDzEazFg"
-        },
-        {
-          "url": "https://knup.com/sports/nba/player-news/performance/jabari-walker-performance-11-23-2026-715472/",
-          "title": "Jabari Walker Posts 10 Points in 76ers' Loss vs Trail Blazers on Nov 23",
-          "publisher": "knup.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
-        },
-        {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401910037",
-          "title": "Trail Blazers 128-111 76ers (Nov 23, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2jaqQ0NpFhVZbTVJEBR2eOYDNcipdWMJYpMkw3iLDj_JeLPpY5Bs3wnX4sqc"
-        }
-      ]
-    },
-    {
-      "query": "unmanned combat aerial vehicle",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T22:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/videos/turkey-just-inducted-worlds-first-131439884.html",
-        "https://www.twz.com/air/turkish-kizilelma-fighter-drone-declared-operational",
-        "https://www.aa.com.tr/en/opinion/kizilelma-future-of-air-warfare/4132678"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT__GUx8ALOFYVNyG9kCZknDxuP771TxX5UB9pTk4KvS6HA2i3_24zN72RLvMc",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/videos/turkey-just-inducted-worlds-first-131439884.html",
-          "title": "Turkey Just Inducted the World's First Unmanned Fighter Jet",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT__GUx8ALOFYVNyG9kCZknDxuP771TxX5UB9pTk4KvS6HA2i3_24zN72RLvMc"
-        },
-        {
-          "url": "https://www.twz.com/air/turkish-kizilelma-fighter-drone-declared-operational",
-          "title": "Turkish Kizilelma Fighter Drone Declared Operational",
-          "publisher": "TWZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAfRy7bmBjfLNVRDmVOQf3zBHlvROue-KxW2CT_42Yi9D4Sp6UmL4JcqjU5Lw"
-        },
-        {
-          "url": "https://www.aa.com.tr/en/opinion/kizilelma-future-of-air-warfare/4132678",
-          "title": "Kizilelma, future of air warfare",
-          "publisher": "Anadolu Ajansı",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbttd3n4R6h0DHWqXtweMHpNFoLwCHmdT2MlXTBaaK5mYOihCfFVeFa7uub14"
-        }
-      ]
-    },
-    {
-      "query": "cboe volatility index",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T22:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/options/articles/analysis-buy-stock-dip-options-102530198.html",
-        "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-        "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuaAsrHvbCK2pbwX08GzZuSLquxYd1bkKlqSptIcG0qyqLM-8LhABKs2pcE0",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/options/articles/analysis-buy-stock-dip-options-102530198.html",
-          "title": "Analysis-Buy the stock dip? Options market signals say wait",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuuaAsrHvbCK2pbwX08GzZuSLquxYd1bkKlqSptIcG0qyqLM-8LhABKs2pcE0"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
-          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84"
-        },
-        {
-          "url": "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1",
-          "title": "What the Fear Index Is Telling Us About the Market",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ9tl3VCOtBHKnKOMIyVXg0j-rx9BAyIYupl_y8IR6qq7skOpbg0dhvE9jva4"
-        }
-      ]
-    },
-    {
-      "query": "america vs monterrey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T22:20:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17553948/rayados-vs-america-alineaciones-ida-cuartos-final",
-        "https://www.lavozarizona.com/story/deportes/futbol/2026/11/25/monterrey-vs-america-previa-horario-donde-ver-canal-apertura-2026-liguilla-liga-mx/92943075007/",
-        "https://www.rayados.com/es/news/21689"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQipiUgMBlbzaDgGpOJaMRobCGEQYUOeI6Tduj255OVEmWVifcWu47cicjficc",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17553948/rayados-vs-america-alineaciones-ida-cuartos-final",
-          "title": "Monterrey vs América: posibles alineaciones y probabilidades",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQipiUgMBlbzaDgGpOJaMRobCGEQYUOeI6Tduj255OVEmWVifcWu47cicjficc"
-        },
-        {
-          "url": "https://www.lavozarizona.com/story/deportes/futbol/2026/11/25/monterrey-vs-america-previa-horario-donde-ver-canal-apertura-2026-liguilla-liga-mx/92943075007/",
-          "title": "Monterrey vs América, por un boleto a las semifinales del Apertura 2026. Hora y canal",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgO5TLwiBHJ8UkG1KzEn2eTxiqjXsLlmmJNiACc5XXTB7kUDZZAb_P7Nu9NbE"
-        },
-        {
-          "url": "https://www.rayados.com/es/news/21689",
-          "title": "¡APOYA A RAYADOS EN LA LIGUILLA!",
-          "publisher": "Club de Futbol Monterrey Rayados",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxnt4o8gZjZT1YuRyChkucuwggKAEwUTT1rX8YF7HYz8rj30FWiD5V5M0UZYg"
-        }
-      ]
-    },
-    {
-      "query": "memphis basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T22:10:00Z",
-      "related_news_urls": [
-        "https://gopsusports.com/news/2026/11/24/game-day-penn-state-mbb-vs-memphis",
-        "https://dailymemphian.com/article/68870/memphis-tigers-basketball-penn-state-preview",
-        "https://apnews.com/article/mens-college-basketball-college-basketball-memphis-tigers-memphis-penn-state-nittany-lions-c0bdca7cffd740a39d3fb1ee3d49307b"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzRho6gL8TdDEHUqzWyq81gCQumiYctqwqCotJViFOIQaTphHwntQFYyQMhU",
-      "image_credit": "gopsusports.com",
-      "news": [
-        {
-          "url": "https://gopsusports.com/news/2026/11/24/game-day-penn-state-mbb-vs-memphis",
-          "title": "GAME DAY: Penn State MBB vs. Memphis",
-          "publisher": "gopsusports.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtzRho6gL8TdDEHUqzWyq81gCQumiYctqwqCotJViFOIQaTphHwntQFYyQMhU"
-        },
-        {
-          "url": "https://dailymemphian.com/article/68870/memphis-tigers-basketball-penn-state-preview",
-          "title": "Memphis vs. Penn State: What to know for Tigers’ first Battle 4 Atlantis game",
-          "publisher": "Daily Memphian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhntK9MWOw4ILJN1zBZRipRGnJQ2szAxS-1byXR0dxfd6WzqzAHSAl-q0mhG0"
-        },
-        {
-          "url": "https://apnews.com/article/mens-college-basketball-college-basketball-memphis-tigers-memphis-penn-state-nittany-lions-c0bdca7cffd740a39d3fb1ee3d49307b",
-          "title": "Penn State Nittany Lions and the No. 24 Memphis Tigers meet in Nassau, Bahamas",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFff2Qj-TW38dxtWGflITp2yqp87qOAHeZWKPJ5Hxdws6AGLOrYHGSKoiRSwc"
         }
       ]
     }
