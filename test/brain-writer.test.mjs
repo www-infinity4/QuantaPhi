@@ -58,3 +58,13 @@ test('Brain writer rejects redirects and malformed success without calling it id
  assert.match(source,/readBrainRunnerResponse\(response,path\)/);
  assert.match(source,/redirect:'manual'/);
 });
+
+
+test('Brain writer rejects incomplete or inconsistent active leases before execution',async()=>{
+ const {readBrainRunnerResponse}=await import('../scripts/brain-runner-response.mjs');
+ const lease={"key":"writer:WT-1:TASK-1:revision","leaseId":"synthetic-lease","ticketId":"WT-1","jobId":"TASK-1","repository":"www-infinity4/QuantaPhi","status":"claimed","leaseUntil":2000000000000,"job":{"id":"TASK-1","repository":"www-infinity4/QuantaPhi","instructions":"Test scoped file"}};
+ const malformed=[{}, {key:lease.key}, {...lease,leaseId:''}, {...lease,job:null}, {...lease,job:{...lease.job,id:'TASK-2'}}, {...lease,job:{...lease.job,repository:'www-infinity4/Moltnook'}}, {...lease,job:{...lease.job,instructions:null}}, {...lease,leaseUntil:0}, {...lease,status:'complete'}];
+ for(const invalid of malformed)await assert.rejects(readBrainRunnerResponse(Response.json({ok:true,lease:invalid}),'claim'),/runner_claim_invalid_receipt_http_200/);
+ assert.deepEqual(await readBrainRunnerResponse(Response.json({ok:true,lease}),'claim'),{ok:true,lease});
+ assert.deepEqual(await readBrainRunnerResponse(Response.json({ok:true,lease:null}),'claim'),{ok:true,lease:null});
+});
