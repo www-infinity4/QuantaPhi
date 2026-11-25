@@ -550,7 +550,16 @@ export class BrainClock extends DurableObject{
      const claimedJob=claimedContext.color_jobs.find(j=>j.id===job.id);
      const claimedAt=new Date().toISOString();
      claimedJob.status='working';claimedJob.progress={...claimedJob.progress,attemptedAt:claimedAt,claimedAt,leaseExpiresAt:lease.leaseUntil,runAttempt,summary:'The authenticated runner claimed this order and is inspecting the repository.',blocker:'',next:'Implementation and test receipts will follow automatically.',runUrl};
-     const claimed=await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,status='working',updated_at=? WHERE id=? AND owner_hash=? AND context_json=?").bind(JSON.stringify(claimedContext),Date.now(),ticket.id,this.env.WRITER_OWNER_HASH,ticket.context_json).run();
+     let claimed;
+     try{
+      claimed=await this.env.WORK_DB.prepare("UPDATE work_tickets SET context_json=?,status='working',updated_at=? WHERE id=? AND owner_hash=? AND context_json=?").bind(JSON.stringify(claimedContext),Date.now(),ticket.id,this.env.WRITER_OWNER_HASH,ticket.context_json).run();
+     }catch(error){
+      // The write may have committed before its acknowledgement was lost.
+      // Retain the original run/repository fences; never repeat or release
+      // an uncertain claim. Existing expiry/reconciliation remains authoritative.
+      console.warn('brain_claim_d1_update_unverified');
+      throw error;
+     }
      if(claimed?.meta?.changes!==1){
       noteRunnerSkip(claimBlockedBy,'d1_update_conflict');
       await storage.transaction(async tx=>{
@@ -1308,7 +1317,17 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:true,connected:true,username:state.user.username,payouts:await this.settleWork(),policy:{repair:{asset:'STARCOIN',amount:1},completePage:{asset:'INFINITY',amount:1,requiresVerifiedSiteAndSearch:true}}});
   }
   if(new URL(request.url).pathname==='/quants'){const id=new URL(request.url).searchParams.get('id');if(id){const quant=id.startsWith('job-quant:')?await this.ctx.storage.get(id):null;return Response.json({ok:!!quant,quant});}return Response.json({ok:true,items:await this.ctx.storage.get('job-quant-index')||[]});}
-  if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(()=>this.runner(request));
+  if(new URL(request.url).pathname==='/runner/claim')return this.ctx.blockConcurrencyWhile(async()=>{
+   try{return await this.runner(request);}
+   catch(error){
+    // Contain the failed request INSIDE the concurrency gate. An escaped
+    // exception can reset the Durable Object, disrupting unrelated work.
+    // Preserve every durable fence and the existing sanitized HTTP contract.
+    const quota=workersAiQuotaFailure(error);if(quota)return providerQuotaResponse(quota);
+    console.warn('brain_claim_operation_unavailable');
+    return Response.json({ok:false,error:'runner_operation_unavailable'},{status:503,headers:{'Cache-Control':'no-store'}});
+   }
+  });
   if(new URL(request.url).pathname.startsWith('/runner/')){
    try{return await this.runner(request);}
    catch(error){const quota=workersAiQuotaFailure(error);if(quota)return providerQuotaResponse(quota);throw error;}

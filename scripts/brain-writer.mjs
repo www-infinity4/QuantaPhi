@@ -1,4 +1,5 @@
 import {publishReviewed} from './brain-publish.mjs';
+import {readBrainRunnerResponse} from './brain-runner-response.mjs';
 import {archiveScreenshots} from './archive-screenshots.mjs';
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
@@ -14,8 +15,8 @@ async function call(path,body){
  const identity=await fetch(identityUrl,{headers:{Authorization:'Bearer '+process.env.ACTIONS_ID_TOKEN_REQUEST_TOKEN},signal:AbortSignal.timeout(15000)});
  if(!identity.ok)throw Error('GitHub runner identity HTTP '+identity.status);
  const token=(await identity.json()).value;
- const response=await fetch(API+'/runner/'+path,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify({...body,key:lease?.key,leaseId:lease?.leaseId}),signal:AbortSignal.timeout(120000)});
- const data=await response.json();if(!response.ok||!data.ok)throw Error(data.error||'Runner HTTP '+response.status);return data;
+ const response=await fetch(API+'/runner/'+path,{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify({...body,key:lease?.key,leaseId:lease?.leaseId}),signal:AbortSignal.timeout(120000),redirect:'manual'});
+ return readBrainRunnerResponse(response,path);
 }
 async function event(agent,message,receipt={}){report.events.push({agent,message,when:new Date().toISOString()});await call('event',{agent,message,...receipt});}
 async function browserCheck(){
