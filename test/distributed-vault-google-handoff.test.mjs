@@ -98,3 +98,6 @@ test('even chats-only export requires rechecking that active bearer still matche
   fetchImpl:async()=>({ok:true,json:async()=>({ok:true,profile:OTHER})})
  }),/account mismatch/i);
 });
+
+// The established vault workflow also covers the local session catalog.
+import './distributed-vault-session-catalog.test.mjs';
