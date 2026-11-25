@@ -8,7 +8,9 @@ const chats=[
  {scope:OWNER,id:'chat1',role:'user',text:'How do stars work?',at:1740000000000}
 ];
 const searches=[{scope:OWNER,id:'search1',query:'stellar nucleosynthesis',at:1740000002000,balance:500,token:'private'}];
-test('per-account handoff deduplicates chats/searches without exposing balances or tokens',async()=>{
+test('per-account handoff deduplicates chats/searches without exposing balances or tokens',async t=>{
+ // A valid export timestamp can contain the same digits as a private balance.
+ t.mock.timers.enable({apis:['Date'],now:new Date('2026-11-24T23:34:55.500Z')});
  const archive=await buildUserArchive({ownerScope:OWNER,consent:true,chats,searches});
  assert.equal(archive.format,'quantaphi-personal-archive/v1');
  assert.equal(archive.chats.length,2);
@@ -16,7 +18,13 @@ test('per-account handoff deduplicates chats/searches without exposing balances 
  assert.equal(archive.chats[0].text,'How do stars work?');
  assert.equal(archive.searches[0].query,'stellar nucleosynthesis');
  assert.equal(JSON.stringify(archive).includes('private'),false);
- assert.equal(JSON.stringify(archive).includes('500'),false);
+ assert.equal(archive.exportedAt,'2026-11-24T23:34:55.500Z');
+ assert.deepEqual(Object.keys(archive).sort(),['accountBinding','chats','exportedAt','format','searches','sourceScope']);
+ assert.deepEqual(archive.chats,[
+  {id:'chat1',role:'user',text:'How do stars work?',at:1740000000000},
+  {id:'chat2',role:'assistant',text:'Stars fuse hydrogen.',at:1740000000100}
+ ]);
+ assert.deepEqual(archive.searches,[{id:'search1',query:'stellar nucleosynthesis',at:1740000002000}]);
  assert.equal(JSON.stringify(archive).includes(OWNER),false,'do not publish wallet owner identity');
  assert.match(archive.accountBinding,/^[a-f0-9]{64}$/);
 });
