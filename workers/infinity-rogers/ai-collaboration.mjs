@@ -75,3 +75,42 @@ export async function handleCollaboration(request,env,{fetcher=fetch,verifyOwner
  const result=await collaborate(body,env,fetcher);
  return out(result,result.status||200);
 }
+
+
+// Private writer inference contract. Not a public route, not invoked by the
+// current runner. Explicit server enablement is required after data/cost review.
+// The future signed runner must retain its existing lease and result validators.
+export async function consultGeminiWriter(env,options,fetcher=fetch){
+ if(env.GEMINI_WRITER_ENABLED!=='1')throw Error('gemini_writer_disabled');
+ if(!env.GEMINI_API_KEY)throw Error('gemini_writer_not_configured');
+ const messages=options?.messages,maxTokens=options?.max_tokens;
+ if(!Array.isArray(messages)||messages.length<2||messages.length>12||
+    !Number.isSafeInteger(maxTokens)||maxTokens<1||maxTokens>16000||
+    messages.some(m=>!m||!['system','user','assistant'].includes(m.role)||
+      typeof m.content!=='string'||!m.content.trim()||m.content.length>120000)||
+    messages.reduce((n,m)=>n+m.content.length,0)>180000||
+    messages[0].role!=='system'||messages.slice(1).some(m=>m.role==='system')||
+    messages[1].role!=='user'||messages.at(-1).role!=='user')
+  throw Error('invalid_writer_input');
+ let res;
+ try{res=await fetcher('https://generativelanguage.googleapis.com/v1beta/models/'+MODEL_GEMINI+':generateContent',{
+  method:'POST',redirect:'error',signal:AbortSignal.timeout(90000),
+  headers:{'Content-Type':'application/json','x-goog-api-key':env.GEMINI_API_KEY},
+  body:JSON.stringify({systemInstruction:{parts:[{text:messages[0].content}]},
+   contents:messages.slice(1).map(m=>({role:m.role==='assistant'?'model':'user',parts:[{text:m.content}]})),
+   generationConfig:{maxOutputTokens:maxTokens,responseMimeType:'application/json',temperature:0.1}})
+ });}catch{throw Error('gemini_writer_transport_failed')}
+ if(!res.ok)throw Error(res.status===429?'gemini_writer_rate_limited':'gemini_writer_provider_unavailable');
+ let data;
+ try{data=await res.json()}catch{throw Error('gemini_writer_output_invalid')}
+ const candidate=data.candidates?.[0];
+ const parts=candidate?.content?.parts;
+ if(candidate?.finishReason!=='STOP'||!Array.isArray(parts)||
+    parts.some(p=>!p||typeof p.text!=='string'||p.thought===true))throw Error('gemini_writer_output_invalid');
+ const raw=parts.map(p=>p.text).join('');
+ if(raw.length>150000)throw Error('gemini_writer_output_invalid');
+ let value;
+ try{value=JSON.parse(raw)}catch{throw Error('gemini_writer_output_invalid')}
+ if(!value||typeof value!=='object'||Array.isArray(value))throw Error('gemini_writer_output_invalid');
+ return {response:raw,provider:'gemini',model:MODEL_GEMINI,executionVerified:false,productionVerified:false};
+}
