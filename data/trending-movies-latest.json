@@ -2,7 +2,7 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-25T00:47:31.775285Z",
+  "checked_at": "2026-11-25T01:04:26.762288Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
     {
@@ -17,7 +17,7 @@
       "poster": "https://i.ytimg.com/vi/gKiWSvAjNG0/hqdefault.jpg",
       "google_trending": true,
       "trend_query": "clashing through the snow 2026",
-      "trend_checked_at": "2026-11-25T00:46:05.968787Z",
+      "trend_checked_at": "2026-11-25T01:01:29.853711Z",
       "trend_published_at": "2026-11-25T00:30:00Z",
       "approx_searches": "2000+"
     },
