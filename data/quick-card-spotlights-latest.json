@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-25T10:20:03.762815Z",
+  "checked_at": "2026-11-25T11:19:02.726325Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -795,17 +795,17 @@
     },
     "durable-knipex": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-wera": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-wiha": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.wihatools.com/collections/complete-tool-kits",
@@ -813,7 +813,7 @@
           "title": "Professional tool kits",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -822,7 +822,7 @@
           "title": "Tool storage systems",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -831,7 +831,7 @@
           "title": "Slimline insulated screwdrivers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -840,7 +840,7 @@
           "title": "Drive-Loc bit holding screwdriver",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -849,8 +849,40 @@
           "title": "Wiha Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
+        },
+        {
+          "url": "https://www.wihatools.com/products/master-tech-65-piece-set-esd-handle-mini-ratchet-microbits-in-metal-storage-box",
+          "image": "https://www.wihatools.com/cdn/shop/files/azvh8ajy2qlv4xt7b9is_1024x.jpg?v=1776759905",
+          "title": "65 Piece System 4 ESD Safe Master Technician's Ratchet and MicroBits Set",
+          "kind": "product",
+          "description": "The Wiha master technicians tool set has the tools to get the job done. The set contains common tools for technicians: Micro Bits, 72 Tooth Mini Ratchet, ESD Safe Precision Handle, Micro Bit Extension, 1/4\" to 4mm Adapter, Slotted, Phillips, Hex Inch Metric, T",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "71.98",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2026-12-05T23:59:59+00:00"
+          }
+        },
+        {
+          "url": "https://www.wihatools.com/products/insulated-80-piece-set-in-rolling-tool-case",
+          "image": "https://www.wihatools.com/cdn/shop/files/ozlajprqtmbc7ncvkza1_1024x.jpg?v=1776759900",
+          "title": "80 Piece Master Electrician's Insulated Tools Set in Rolling Hard Case",
+          "kind": "product",
+          "description": "The Wiha 80 Piece Master Electrician's Tool Set will give electricians the comfort of knowing they are equipped with every tool they need to get the job done. All of the tools come conveniently stored in large heavy-duty rolling case. The tools are stored in r",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
+          "category": "Infrastructure & Physical Tools",
+          "offer": {
+            "price": "1567.98",
+            "currency": "USD",
+            "evidence": "jsonld-offer",
+            "availability": "https://schema.org/InStock",
+            "valid_until": "2026-12-05T23:59:59+00:00"
+          }
         },
         {
           "url": "https://www.wihatools.com/products/flip-loc-folding-utility-knife-with-blades",
@@ -867,28 +899,12 @@
             "availability": "https://schema.org/InStock",
             "valid_until": "2026-12-04T23:59:59+00:00"
           }
-        },
-        {
-          "url": "https://www.wihatools.com/products/color-coded-hex-l-keys-inch",
-          "image": "https://www.wihatools.com/cdn/shop/files/yvtc0cdndslpdsaxz8it_1024x.jpg?v=1789589756",
-          "title": "13 Piece Ball End Color Coded Hex L-Key Set - Inch",
-          "kind": "product",
-          "description": "Wiha Color Coded Ball End Hex L-Keys stand out with bright-bold color coding so you can quickly and easily find the right L-Key and feature textured surface shafts for improved grip and slip resistance caused by sweat or oils. Stay organized with the included ",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
-          "category": "Infrastructure & Physical Tools",
-          "offer": {
-            "price": "39.99",
-            "currency": "USD",
-            "evidence": "jsonld-offer",
-            "availability": "https://schema.org/InStock",
-            "valid_until": "2026-12-04T23:59:59+00:00"
-          }
         }
       ]
     },
     "durable-pb-swiss-tools": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.pbswisstools.com/en/tools/quality-hand-tools/vde-and-elektronics-screwdrivers/product/pb-175-0-led",
@@ -896,7 +912,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -905,7 +921,7 @@
           "title": "PB 6464",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -914,7 +930,7 @@
           "title": "PB 900 V01",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -923,7 +939,7 @@
           "title": "PB C6 192",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -932,7 +948,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -941,7 +957,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -950,7 +966,7 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -959,14 +975,14 @@
           "title": "PB 175/0 LED",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-snap-on": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.snapon.com/EN/Makers-and-Fixers",
@@ -974,14 +990,14 @@
           "title": "Snap-on Makers and Fixers",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-lie-nielsen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.lie-nielsen.com/products/1-sp-boggs-con-boggs-spokeshaves",
@@ -989,7 +1005,7 @@
           "title": "Boggs Concave Spokeshave",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -998,7 +1014,7 @@
           "title": "1-SP-Boggs-Con.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1007,7 +1023,7 @@
           "title": "boggs-concave-2021-iso.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1016,7 +1032,7 @@
           "title": "concave-boggs-spokeshave-2019.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1025,7 +1041,7 @@
           "title": "Small Router Plane - Open Throat",
           "kind": "website",
           "description": "Small Router Plane Loosely based on the Stanley No. 271, these small Router Planes are perfect for shallow mortise and small relief work. The compact design makes it easy to guide along narrow edges and fit into tight spaces. 4\" long x 2\" wide O1 blade with 1/",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1034,7 +1050,7 @@
           "title": "small-router-plane-ot-front.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1043,7 +1059,7 @@
           "title": "small-router-plane-ot-iso-l.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1052,14 +1068,14 @@
           "title": "small-router-plane-ot-iso-r.jpg Thumbnail",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-starrett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.starrett.com/",
@@ -1067,7 +1083,7 @@
           "title": "Premium Starrett micrometer resting on an American flag",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1076,7 +1092,7 @@
           "title": "W4900 Animated Gif",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1085,7 +1101,7 @@
           "title": "Starrett Carbide Tipped Reciprocating Saw Blade",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1094,7 +1110,7 @@
           "title": "Starrett and Roush Yates",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1103,7 +1119,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1112,7 +1128,7 @@
           "title": "HG Electronic Height Gages and Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1121,7 +1137,7 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1130,14 +1146,14 @@
           "title": "Made In America",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-mitutoyo": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.mitutoyo.com/services/calibration-repair/calibration-lab/",
@@ -1145,7 +1161,7 @@
           "title": "Mitutoyo Metrology Calibration Lab",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1154,7 +1170,7 @@
           "title": "precision measurement services",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1163,14 +1179,14 @@
           "title": "Coordinate Measuring Machines | Mitutoyo America Corporation",
           "kind": "website",
           "description": "Mitutoyo manufactures top-quality coordinate measuring machines (CMM) that lead the industry in precision. Find the perfect solution for you.",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-leatherman": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.leatherman.com/collections/bestsellers/products/skeletool-cx",
@@ -1178,7 +1194,7 @@
           "title": "Leatherman Skeletool Cx Aurora multitool open with pliers, knife blade, and bit driver visible.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1187,7 +1203,7 @@
           "title": "Nightshade Skeletool® CX multitool open to show pliers, knife blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1196,7 +1212,7 @@
           "title": "Leatherman Skeletool Cx multitool in Nocturnal color with open pliers, blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1205,7 +1221,7 @@
           "title": "Leatherman Skeletool CX multitool in OD Green, open to show pliers, knife blade, and bit driver.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1214,7 +1230,7 @@
           "title": "Leatherman Gift Card",
           "kind": "product",
           "description": "Leatherman's Digital Gift Card is perfect for any occasion. This e-gift card lets recipients pick their favorite products from our online store. Choose how you deliver — email right away, schedule for later, or send to yourself to pass along personally. Simple",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "10.0",
@@ -1229,7 +1245,7 @@
           "title": "Skeletool® CX",
           "kind": "product",
           "description": "The Leatherman Skeletool CX packs only the most essential features into a lightweight, portable design. It’s made for people who want serious function without carrying extra bulk. The premium 154CM stainless steel straight-edge blade has a great balance of cor",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "99.95",
@@ -1244,7 +1260,7 @@
           "title": "ARC®",
           "kind": "product",
           "description": "The ARC is our most advanced multi-tool, built to be both durable and easier to use. It features a MagnaCut steel blade that holds its edge longer and resists rust, making it perfect for both daily tasks and hard outdoor jobs. Every feature is outside-accessib",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools",
           "offer": {
             "price": "249.95",
@@ -1257,7 +1273,7 @@
     },
     "durable-victorinox": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.victorinox.com/en-US/",
@@ -1265,7 +1281,7 @@
           "title": "Victorinox (USA) | Victorinox Homepage",
           "kind": "website",
           "description": "Victorinox ✚ Makers of the Original Swiss Army Knife ✚ High quality products ✚ Watches, Cutlery, Travel Gear and Fragrances ✚ Order online now!",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1274,7 +1290,7 @@
           "title": "Swiss Army Knife™ & Tools",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1283,7 +1299,7 @@
           "title": "CUTLERY",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1292,7 +1308,7 @@
           "title": "WATCHES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1301,7 +1317,7 @@
           "title": "Swiss Army Knives / Pocket Knives from Victorinox | Victorinox (USA)",
           "kind": "website",
           "description": "Since 1897, the Swiss Army Knife has been a trusted tool of adventurers around the world. The Swiss Army Knife is the companion you can count on.",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1310,7 +1326,7 @@
           "title": "Everyday",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1319,7 +1335,7 @@
           "title": "Trades & Crafts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         },
         {
@@ -1328,14 +1344,14 @@
           "title": "Accessories",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T05:19:58.794355Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Infrastructure & Physical Tools"
         }
       ]
     },
     "durable-stabila": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T05:19:58.794355Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-klein-tools": {
@@ -6292,12 +6308,12 @@
     },
     "durable-hydro-flask": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-therm-a-rest": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/blogs/thermarest-gear/ultimate-guide-sleeping-pads",
@@ -6305,7 +6321,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING PADS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6314,7 +6330,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST SLEEPING BAGS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6323,7 +6339,7 @@
           "title": "THE ULTIMATE GUIDE TO THERM-A-REST PILLOWS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6332,7 +6348,7 @@
           "title": "Therm-a-Rest® - Sleeping Pads, Bags & Outdoor Comfort Gear | Cascade Designs",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6341,7 +6357,7 @@
           "title": "NeoLoft™ Sleeping Pad - Regular",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "249.95",
@@ -6356,7 +6372,7 @@
           "title": "NeoLoft™ Sleeping Pad",
           "kind": "product",
           "description": "Merging the cutting-edge innovation of ultralight pads with the supreme comfort of car camping pads, the NeoLoft air pad takes backpacking comfort to a whole new level.",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "249.95",
@@ -6371,7 +6387,7 @@
           "title": "Synergy™ Luxe Sheets - 30\" Coupler - 30 Inch Coupler",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "57.89",
@@ -6386,7 +6402,7 @@
           "title": "Synergy™ Luxe Sheets - 30\" Coupler",
           "kind": "product",
           "description": "Add an exceptional next-to-skin comfort boost for quilt-based sleep systems.",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "57.89",
@@ -6399,7 +6415,7 @@
     },
     "durable-msr-mountain-safety-research": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/blogs/msr-gear-guides/ultimate-guide-msr-tents",
@@ -6407,7 +6423,7 @@
           "title": "THE ULTIMATE GUIDE TO MSR TENTS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6416,7 +6432,7 @@
           "title": "A GUIDE TO MSR BACKPACKING STOVES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6425,7 +6441,7 @@
           "title": "MSR WATER TREATMENT GUIDE",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6434,7 +6450,7 @@
           "title": "THE ULTIMATE GUIDE TO MSR SNOWSHOES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6443,7 +6459,7 @@
           "title": "Dromedary® Bags - 4 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.95",
@@ -6458,7 +6474,7 @@
           "title": "Dromedary® Bags - 6 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "59.95",
@@ -6473,7 +6489,7 @@
           "title": "Dromedary® Bags - 10 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "64.95",
@@ -6488,7 +6504,7 @@
           "title": "Dromedary® Bags",
           "kind": "product",
           "description": "Our burliest medium-to-large capacity water storage and delivery systems.",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.95",
@@ -6501,12 +6517,12 @@
     },
     "durable-coleman-classic-camp-stoves": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-primus": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://primusequipment.com/collections/vandringsutrustning",
@@ -6514,7 +6530,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6523,7 +6539,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6532,7 +6548,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6541,7 +6557,7 @@
           "title": "Primusequipment.com - Ledande inom Friluftskök sedan 1892",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6550,7 +6566,7 @@
           "title": "Lite Ultra Stove System 1.2L",
           "kind": "product",
           "description": "Lite Ultra XL Stove System är ett kompakt stormkök för dig som rör dig snabbt och packar lätt. Med en 1,2-literskastrull och en totalvikt på endast 290 g (brännare + kastrull) passar det lika bra för solovandraren som för det lilla sällskapet. Minimalistisk de",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1599.20",
@@ -6565,7 +6581,7 @@
           "title": "Lite Plus Stove System II 0.8L - BLACK",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1359.20",
@@ -6580,7 +6596,7 @@
           "title": "Lite Plus Stove System II 0.8L - GREEN",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1359.20",
@@ -6595,7 +6611,7 @@
           "title": "Lite Plus Stove System II 0.8L - BLUE",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "1359.20",
@@ -6608,7 +6624,7 @@
     },
     "durable-cascade-designs": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://cascadedesigns.com/pages/gift-guide",
@@ -6616,7 +6632,7 @@
           "title": "Cascade Designs, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6625,7 +6641,7 @@
           "title": "WE ARE HIRING!",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6634,7 +6650,7 @@
           "title": "OUR SUSTAINABILITY INITIATIVES",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6643,7 +6659,7 @@
           "title": "Cascade Designs, Inc.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems"
         },
         {
@@ -6652,7 +6668,7 @@
           "title": "Changing Poncho - Botanical / S/M",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.89",
@@ -6667,7 +6683,7 @@
           "title": "Changing Poncho - Botanical / L/XL",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.89",
@@ -6682,7 +6698,7 @@
           "title": "Changing Poncho - Retro Curve / S/M",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.89",
@@ -6697,7 +6713,7 @@
           "title": "Changing Poncho - Retro Curve / L/XL",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Tactical, Environmental & Transport Systems",
           "offer": {
             "price": "51.89",
@@ -6710,22 +6726,22 @@
     },
     "durable-montblanc": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-lamy": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-fisher-space-pen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-saddleback-leather": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://saddlebackleather.com/",
@@ -6733,7 +6749,7 @@
           "title": "They'll fight over it when you're dead. No breakable parts. 100 year warranty. Over engineered.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6742,7 +6758,7 @@
           "title": "10\" Convertible Crossbody in Tobacco, angled front view with buckled flap and strap",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6751,7 +6767,7 @@
           "title": "10\" Convertible Crossbody in Tobacco, worn as a backpack by a woman in a denim jacket outdoors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6760,7 +6776,7 @@
           "title": "12\" Drawstring Backpack in Dark Coffee Brown, front view with buckled flap and drawstring ties",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6769,7 +6785,7 @@
           "title": "10\" Convertible Crossbody - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6779,7 +6795,7 @@
           "title": "10\" Convertible Crossbody - Chestnut",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.00",
@@ -6794,7 +6810,7 @@
           "title": "10\" Convertible Crossbody - Dark Coffee Brown",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.00",
@@ -6809,7 +6825,7 @@
           "title": "10\" Convertible Crossbody - Tobacco",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.00",
@@ -6822,12 +6838,12 @@
     },
     "durable-tanner-goods": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-fox-umbrellas": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": [
         {
           "url": "https://www.foxumbrellas.com/",
@@ -6835,7 +6851,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6844,7 +6860,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6853,7 +6869,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6862,7 +6878,7 @@
           "title": "www.foxumbrellas.com - MAKERS OF THE WORLD'S FINEST UMBRELLAS",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6871,7 +6887,7 @@
           "title": "GT29 Nickel Dragon Head (NEW 2026)",
           "kind": "product",
           "description": "This umbrella comes with a Nickel (Silver) Finish Dragon Head on a straight stem handle with Nickel Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes wi",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6881,7 +6897,7 @@
           "title": "GT19S Brown Fox Head (NEW 2026)",
           "kind": "product",
           "description": "This umbrella comes with a Brown Finish Fox Head on a straight stem handle with Gilt Tip Cup, the umbrella is made on a 25\" Classic Fox Steel Tube Frame (brown tube with black ribs) with a Best Polyester cover/canopy. This umbrella also comes with a matching o",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -6891,7 +6907,7 @@
           "title": "GT1 Hardwood (4 Handle Choices)",
           "kind": "product",
           "description": "This polished hardwood handle umbrella is available with a choice of four different polished hardwood handles. The handles available are Medium Brown, Dark Brown, Light Grained and Dark Grained. This umbrella is made on a 25\" Classic Fox Steel Tube Frame (brow",
-          "checked_at": "2026-11-25T04:21:30.862727Z",
+          "checked_at": "2026-11-25T11:19:02.726325Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "157.00",
@@ -6905,7 +6921,7 @@
     },
     "durable-kaweco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-25T04:21:30.862727Z",
+      "attempted_at": "2026-11-25T11:19:02.726325Z",
       "items": []
     },
     "durable-s-t-dupont": {
