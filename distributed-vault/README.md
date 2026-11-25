@@ -120,3 +120,29 @@ The CI runs the SQLite coordinator, HTTP tests, lost-phone-cache repair, credent
 The server now uses **coarse, server-observed availability of its own enrolled app cache** to decide where newly encrypted fragments should go. A valid app heartbeat counts at most once in a one-minute activity window. Caches active in more distinct windows are preferred; caches reporting lost fragments are deprioritized. Equal scores retain stable enrollment order. The server does not request browsing history, screen time, location, contacts, or data from other apps. Heartbeat windows are capped at 100 and are **not** evidence of a genuine unique physical phone or a guarantee of future availability.
 
 This is a lightweight heuristic. It cannot wake a phone, evade Android background limits, or restore missing ciphertext from a hash. The owner-held encrypted coordinator copy and multiple app replicas remain required until erasure coding and independent backup/recovery have been proven.
+
+
+## Local Bubbles session catalog (review-stage)
+
+`session-catalog.mjs` extends the existing explicitly exported personal archive. It does not sign in to Bubbles, retrieve protected accounts, discover devices, read other apps, execute tasks, or fetch source labels. The caller must already have lawful access to the selected records. A catalog account binding is a consistency label, not authentication.
+
+- Append a selected session with an explicit session ID, a logical source label (letters, digits, dash or underscore), and the IDs of records already present in the archive. Each entry receives a sequential base-36 label, previous digest, and digest of the selected record contents. A duplicate identical append is idempotent; conflicting session IDs, reused records and altered entries fail.
+- Seal the entire archive with its catalog using the existing AES-GCM personal backup. Choose a fresh private archive passphrase outside chat. Do not derive it from conversation words or the catalog labels. Do not publish the key, plaintext archive, or private catalog on GitHub.
+- Store the last verified digest separately in trusted private storage if rollback detection is required. An internally valid older archive cannot be distinguished from a current archive without that independent checkpoint.
+- Source labels are user-provided storage references, not actual geographic locations or verified remote availability. No physical location is collected.
+- This is source-level local archive handling, not automatic conversation capture, a deployed login method, a Brain execution credential, or migration of live D1.
+
+```js
+import {appendSession,verifySessionCatalog,sealSessionArchive,openSessionArchive} from './session-catalog.mjs';
+// archive is an existing consented personal archive, passphrase is supplied privately.
+const updated = await appendSession(archive, {
+  consent: true, sessionId: 'session-01', source: 'local-export-A',
+  recordIds: ['message-01']
+});
+const checkpoint = await verifySessionCatalog(updated);
+const sealed = await sealSessionArchive(updated, passphrase);
+// Keep sealed and checkpoint privately; do not log the passphrase or plaintext.
+const restored = await openSessionArchive(sealed, passphrase, checkpoint);
+```
+
+Focused test: `node --test test/distributed-vault-session-catalog.test.mjs`.
