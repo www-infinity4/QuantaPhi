@@ -15,7 +15,7 @@ import {checkOwnerRunnerRequest,runnerDispatchReceipt,submitApprovedBridgeWork} 
 import {phoneTool} from './phone-tool.mjs';
 import {githubOperation,directGithubAgent,validateRepository,suggestRepositories} from './direct-github.mjs';
 import {connectGithubCredential,githubEnvironment,githubCredentialStatus} from './github-credential.mjs';
-import {ownerGithubChatConfig,verifyGithubChatPat,admitGithubChatAttempt,issueGithubChatSession,checkGithubChatSession} from './github-owner-chat-auth.mjs';
+import {ownerGithubChatConfig,verifyGithubChatPat,admitGithubChatAttempt,issueGithubChatSession,checkGithubChatSession,revokeGithubChatSession} from './github-owner-chat-auth.mjs';
 import {planCloudflareToken,confirmCloudflareToken,inspectCloudflareTokenManager} from './cloudflare-token-broker.mjs';
 import {planOAuthClient,confirmOAuthClient} from './cloudflare-oauth-bootstrap.mjs';
 import {handleQuickCardBrowser,readBoundedJson} from './quick-card-browser.mjs';
@@ -1224,6 +1224,11 @@ export class BrainClock extends DurableObject{
    if(!cfg)return Response.json({ok:false},{status:503});
    return Response.json(await issueGithubChatSession(this.ctx.storage,cfg));
   }
+  if(new URL(request.url).pathname==='/owner/github-chat-revoke'){
+   const {token}=await request.json();
+   const ok=await revokeGithubChatSession(this.ctx.storage,ownerGithubChatConfig(this.env),token);
+   return Response.json({ok},{status:ok?200:401});
+  }
   if(new URL(request.url).pathname==='/owner/github-chat-check'){
    const {token}=await request.json();
    const ok=await checkGithubChatSession(this.ctx.storage,ownerGithubChatConfig(this.env),token);
@@ -1988,6 +1993,16 @@ export default{
     const issued=await clock.fetch('https://clock.internal/owner/github-chat-create',{method:'POST'});
     return output(request,await issued.json(),issued.status);
    }catch{return output(request,{ok:false,error:'github_verifier_unavailable'},503)}
+  }
+  if(path==='/owner/github-chat-disconnect'&&request.method==='POST'){
+   if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false},403);
+   const token=request.headers.get('Authorization')?.match(/^Bearer (gc_[a-f0-9]{64})$/)?.[1];
+   if(!token)return output(request,{ok:false},401);
+   try{
+    const clock=env.CLOCK.get(env.CLOCK.idFromName('infinity-main'));
+    const result=await clock.fetch('https://clock.internal/owner/github-chat-revoke',{method:'POST',body:JSON.stringify({token})});
+    return output(request,{ok:result.ok},result.status);
+   }catch{return output(request,{ok:false,error:'github_backup_disconnect_unavailable'},503)}
   }
   if(path==='/owner/github-chat-context'&&request.method==='POST'){
    if(request.headers.get('Origin')!=='https://quantaphi.org')return output(request,{ok:false,error:'origin_not_allowed'},403);
