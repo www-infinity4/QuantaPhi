@@ -321,3 +321,34 @@ test('portable Brain rejects unrelated SQLite-prefixed objects without touching 
  finally{await opened?.close();}
  assert.deepEqual(readFileSync(dbPath),before);
 });
+
+
+test('owner local inference probe sends only a synthetic prompt to fixed loopback and verifies generated text',async()=>{
+ const {probeLocalInference}=await import('../distributed-vault/local-inference-probe.mjs');
+ const calls=[];
+ const result=await probeLocalInference({model:'fixture-model:1',fetcher:async(url,opts)=>{
+  calls.push({url,opts});
+  return new Response(JSON.stringify({model:'fixture-model:1',done:true,message:{role:'assistant',content:'4'},eval_count:1}));
+ }});
+ assert.equal(calls.length,1);
+ assert.equal(calls[0].url,'http://127.0.0.1:11434/api/chat');
+ assert.equal(calls[0].opts.redirect,'error');
+ assert.deepEqual(JSON.parse(calls[0].opts.body).messages,[{role:'user',content:'What is 2 + 2? Reply only with the digit.'}]);
+ assert.equal(result.ok,true);
+ assert.equal(result.productionVerified,false);
+ assert.equal(result.executionAuthorized,false);
+});
+
+test('owner local inference probe rejects missing, malformed, unfinished, mismatched or nonlocal model responses',async()=>{
+ const {probeLocalInference}=await import('../distributed-vault/local-inference-probe.mjs');
+ let calls=0;
+ await assert.rejects(probeLocalInference({model:'https://example.org/model',fetcher:async()=>{calls++;}}));
+ assert.equal(calls,0);
+ for(const payload of [{model:'fixture-model:1',done:false,message:{role:'assistant',content:'4'},eval_count:1},
+  {model:'other',done:true,message:{role:'assistant',content:'4'},eval_count:1},
+  {model:'fixture-model:1',done:true,message:{role:'assistant',content:'4'},eval_count:0},
+  {model:'fixture-model:1',done:true,message:{role:'assistant',content:'not 4'},eval_count:1}]){
+  await assert.rejects(probeLocalInference({model:'fixture-model:1',fetcher:async()=>new Response(JSON.stringify(payload))}));
+ }
+ await assert.rejects(probeLocalInference({model:'fixture-model:1',fetcher:async()=>new Response('offline',{status:503})}));
+});
