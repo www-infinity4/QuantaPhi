@@ -1604,7 +1604,14 @@ if(!embedded&&location.origin==='https://quantaphi.org'){
  }
  check.addEventListener('click',()=>void checkAvailability());
  backup.addEventListener('toggle',()=>{if(!backup.open)field.value='';else void checkAvailability()});
- disconnect.addEventListener('click',()=>{clearGithubBackupSession();disconnect.hidden=true;});
+ disconnect.addEventListener('click',async()=>{
+  const session=githubBackupSession;clearGithubBackupSession();disconnect.hidden=true;
+  if(!session)return;
+  try{
+   const result=await backupFetch(BRAIN+'/owner/github-chat-disconnect',{method:'POST',headers:{Authorization:'Bearer '+session.token},cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer'},10000);
+   if(!result.ok&&!githubBackupSession)githubBackupStatus.textContent='Disconnected locally; server revocation not confirmed. Backup expires within ten minutes.';
+  }catch{if(!githubBackupSession)githubBackupStatus.textContent='Disconnected locally; server revocation not confirmed. Backup expires within ten minutes.'}
+ });
  verify.addEventListener('click',async()=>{
   if(verifying||field.hidden)return;
   const pat=field.value.trim();field.value='';
