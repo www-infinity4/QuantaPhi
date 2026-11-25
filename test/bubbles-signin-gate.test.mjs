@@ -509,3 +509,16 @@ test('legacy Android WebView can check stored wallet candidates without AbortSig
  assert.equal(await resolve(),'');
  assert.equal(calls.length,2,'selected missing account cannot fall back to another account');
 });
+
+
+test('failed optional provider callback never labels a verified Bubbles wallet unconnected',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'failed'});
+ await new Promise(setImmediate);
+ const status=ui.get('bubblesSigninStatus').textContent;
+ assert.match(status,/Cloudflare.*authorization error/i);
+ assert.match(status,/Unified Wallet is verified/i);
+ assert.doesNotMatch(status,/Your Bubbles account is not connected|Your account remains unverified/i);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
+});
