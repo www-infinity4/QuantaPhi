@@ -1584,11 +1584,17 @@ if(!embedded&&location.origin==='https://quantaphi.org'){
  backup.append(field,verify,disconnect);
  chatScroll.insertBefore(backup,ownerMode);
  let verifying=false;
+ // Android WebViews do not all support AbortSignal.timeout.
+ async function backupFetch(url,options,ms){
+  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),ms);
+  try{return await fetch(url,{...options,signal:controller.signal});}
+  finally{clearTimeout(timer);}
+ }
  async function checkAvailability(){
   check.disabled=true;field.hidden=verify.hidden=true;
   field.value='';
   try{
-   const response=await fetch(BRAIN+'/owner/github-chat-status',{cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(10000)});
+   const response=await backupFetch(BRAIN+'/owner/github-chat-status',{cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer'},10000);
    const result=await response.json();
    const enabled=response.ok&&result.ok===true&&result.enabled===true;
    field.hidden=verify.hidden=!enabled;
@@ -1607,7 +1613,7 @@ if(!embedded&&location.origin==='https://quantaphi.org'){
   }
   verifying=true;verify.disabled=true;
   try{
-   const response=await fetch(BRAIN+'/owner/github-chat-session',{method:'POST',headers:{Authorization:'Bearer '+pat},cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer',signal:AbortSignal.timeout(20000)});
+   const response=await backupFetch(BRAIN+'/owner/github-chat-session',{method:'POST',headers:{Authorization:'Bearer '+pat},cache:'no-store',credentials:'omit',redirect:'error',referrerPolicy:'no-referrer'},20000);
    const result=await response.json();
    if(!response.ok||result.ok!==true||result.scope!=='owner-chat-context'||!/^gc_[a-f0-9]{64}$/.test(result.token||'')||!Number.isSafeInteger(result.expiresAt)||result.expiresAt<=Date.now()||result.expiresAt>Date.now()+11*60000){
     githubBackupStatus.textContent='GitHub verification did not complete. Existing account is unchanged.';return;
