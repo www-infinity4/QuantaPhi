@@ -50,3 +50,46 @@ test('rejects oversized HTML without fetching its links',async()=>{
 test('rejects more than four entry pages',async()=>{
  await assert.rejects(run(Array(5).fill('https://quantaphi.org/'),{writeReport:false}),/1 to 4/);
 });
+
+
+test('fixed availability comparison separates GitHub origin, custom domain and tools without retrying 429',async()=>{
+ const {compareAvailability}=await import('../scripts/site-health-watch.mjs');
+ const calls=[];
+ const report=await compareAvailability({fetchImpl:async(url,options)=>{
+  calls.push(url);
+  assert.equal(options.redirect,'manual');
+  assert.equal(options.credentials,'omit');
+  assert.ok(options.signal);
+  return url==='https://www-infinity4.github.io/QuantaPhi/'?new Response('public fixture',{status:200}):
+   new Response('rate limited',{status:429,headers:{'Retry-After':'60'}});
+ }});
+ assert.deepEqual(calls,['https://quantaphi.org/','https://www-infinity4.github.io/QuantaPhi/','https://bubbles-tools.marvaseater.workers.dev/health']);
+ assert.deepEqual(report.targets.map(x=>x.status),[429,200,429]);
+ assert.deepEqual(report.targets.map(x=>x.retryAfterSeconds),[60,null,60]);
+ assert.equal(report.originReachableWhileEdgeLimited,true);
+ assert.equal(report.inferenceVerified,false);
+ assert.equal(report.ownerSessionVerified,false);
+});
+
+test('availability comparison never follows redirects or treats a health response as inference proof',async()=>{
+ const {compareAvailability}=await import('../scripts/site-health-watch.mjs');
+ const report=await compareAvailability({fetchImpl:async(url)=>{
+  if(url==='https://quantaphi.org/')return new Response(null,{status:302,headers:{Location:'http://127.0.0.1/private'}});
+  if(url.includes('github.io'))throw Error('fixture unavailable');
+  return new Response('health fixture',{status:200});
+ }});
+ assert.deepEqual(report.targets.map(x=>x.status),[302,null,200]);
+ assert.equal(report.originReachableWhileEdgeLimited,false);
+ assert.equal(report.inferenceVerified,false);
+});
+
+test('ordinary site crawl stops immediately on HTTP 429',async()=>{
+ const calls=[];
+ const report=await run(['https://quantaphi.org/','https://quantaphi.org/about.html'],{writeReport:false,fetchImpl:async(url)=>{
+  calls.push(url);
+  return new Response('limit',{status:429});
+ }});
+ assert.deepEqual(calls,['https://quantaphi.org/']);
+ assert.equal(report.pages[0].status,429);
+ assert.equal(report.links.length,0);
+});
