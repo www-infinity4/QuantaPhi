@@ -18,6 +18,15 @@ function findDeviceToken(){
   return candidates.length===1?candidates[0].token:'';
  }catch{return ''}
 }
+async function readLedgerState(token,timeoutMs){
+ const controller=new AbortController();
+ const timer=setTimeout(()=>controller.abort(),timeoutMs);
+ try{
+  const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+token},cache:'no-store',signal:controller.signal});
+  const payload=await response.json().catch(()=>({}));
+  return {response,payload};
+ }finally{clearTimeout(timer)}
+}
 async function resolveDeviceToken(){
  const exact=findDeviceToken();if(exact)return exact;
  const candidates=deviceCandidates();if(!candidates.length)return '';
@@ -27,8 +36,7 @@ async function resolveDeviceToken(){
  let only=null,valid=0;
  for(const candidate of candidates){
   try{
-   const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+candidate.token},cache:'no-store',signal:AbortSignal.timeout(5000)});
-   const payload=await response.json().catch(()=>({}));if(!response.ok||!payload?.ok||!payload?.state)continue;
+   const {response,payload}=await readLedgerState(candidate.token,5000);if(!response.ok||!payload?.ok||!payload?.state)continue;
    const username=String(payload.state.username||'').trim().toLowerCase();
    if(!username||username!==candidate.username)continue;
    valid++;const entry={candidate,username};
@@ -47,8 +55,7 @@ function hasAccountProfile(){
 async function recoverAccountProfileFromDevice(){
  const token=await resolveDeviceToken();if(!token||hasAccountProfile())return hasAccountProfile();
  try{
-  const response=await fetch('https://starquest-ledger.marvaseater.workers.dev/v1/state',{headers:{authorization:'Bearer '+token},cache:'no-store',signal:AbortSignal.timeout(8000)});
-  const payload=await response.json().catch(()=>({}));
+  const {response,payload}=await readLedgerState(token,8000);
   if(!response.ok||!payload?.ok||!payload?.state)return false;
   const state=payload.state,username=String(state.username||'').trim().toLowerCase();
   if(!username||storedToken(DEVICE_PREFIX+username)!==token)return false;
