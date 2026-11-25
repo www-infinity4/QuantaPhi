@@ -3,12 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T05:31:13.431840Z",
+  "checked_at": "2026-11-25T06:01:28.144057Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "día de acción de gracias",
+      "query": "ben wang",
       "approx_searches": "500+",
+      "published_at": "2026-11-25T05:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/why-wiress-hunger-games-sunrise-193000509.html",
+        "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
+        "https://www.minnesotamonthly.com/arts-entertainment/film-tv/ben-wang/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX9HWG67KPC1raE-I5oe5473YSZw-vQeMCElQRVZq-0O1mMyp5TlCbmoFQEqk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/why-wiress-hunger-games-sunrise-193000509.html",
+          "title": "Why Wiress From The Hunger Games: Sunrise On The Reaping Looks So Familiar",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX9HWG67KPC1raE-I5oe5473YSZw-vQeMCElQRVZq-0O1mMyp5TlCbmoFQEqk"
+        },
+        {
+          "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
+          "title": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSord8QCZ4EbA-TY_iq_Ohry5_FLfQMALEJVly-BI1JH_Kxd4TiDFO1kU9k_hM"
+        },
+        {
+          "url": "https://www.minnesotamonthly.com/arts-entertainment/film-tv/ben-wang/",
+          "title": "In Conversation with \"Sunrise on the Reaping\" Actor Ben Wang",
+          "publisher": "Minnesota Monthly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSETWYlHQHwobRf5xYY51BfhadQR132pV2d7jyEDn9IDA-SJj6X3hstA0M8fY4"
+        }
+      ]
+    },
+    {
+      "query": "dubious provenance gta 6",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T05:40:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
+        "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
+          "title": "GTA 6 Trust Halifax or Not? All Outcomes and Missable Rewards",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
+          "title": "Should you give the statue to Benedict Halifax in GTA 6?",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs"
+        },
+        {
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
+          "title": "Should you kill or spare Benedict Halifax in GTA 6?",
+          "publisher": "Radio Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
+        }
+      ]
+    },
+    {
+      "query": "vcu vs colorado state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T05:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
+        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
+        "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
+          "title": "76ers rally vs. Magic, improve to 11-0 in clutch games",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI"
+        },
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
+          "title": "‘It worked every time': How Sixers found a clutch answer at shootaround",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSvLClrXLgwDS11uAZtvbiOVkNNhVNe9Zrbc9kV_1Xw0eAuAtcADyaD5Hbk20"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html",
+          "title": "VJ Edgecombe stars in Sixers’ comeback win over Orlando Magic",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6PuQX4cbfcBQsNmNiFcJ_XhSp3Ii5APzfqlDztyfK5jsyJApDfYItBLAR-E"
+        }
+      ]
+    },
+    {
+      "query": "colorado state basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T05:30:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25537202-bryce-james-box-score-stats-highlights-arizonas-win-vs-csu",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909743",
+        "https://247sports.com/college/arizona/article/arizona-wildcats-mens-basketball-maui-invitational-colorado-state-rams-tommy-lloyd-jj-mandaquit-postgame-press-conference-quotes-2026-27-293242268/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0fwEyMzaP5z_JMdywD661aD-aPMgW9urO8vEDWHSbGV4vxRFHd3EzKoXAjM",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25537202-bryce-james-box-score-stats-highlights-arizonas-win-vs-csu",
+          "title": "Bryce James' Box Score Stats, Highlights from Arizona's Win vs. CSU",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0fwEyMzaP5z_JMdywD661aD-aPMgW9urO8vEDWHSbGV4vxRFHd3EzKoXAjM"
+        },
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909743",
+          "title": "Arizona 96-83 Colorado State (Nov 23, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQB0WrnH5TR-8ARvpWOzstbySaw_SbdQZsZtlEvS2xFHHCthgnBDIMg69-VnZQ"
+        },
+        {
+          "url": "https://247sports.com/college/arizona/article/arizona-wildcats-mens-basketball-maui-invitational-colorado-state-rams-tommy-lloyd-jj-mandaquit-postgame-press-conference-quotes-2026-27-293242268/",
+          "title": "Tommy Lloyd and JJ Mandaquit break down Maui Invitational win over Colorado State",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdtH8O9PYdtrhdnWOs_wYGyRvUPYCR0vIGLiOpvVWeOvX-xY4nVlJwvblA1I"
+        }
+      ]
+    },
+    {
+      "query": "max christie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T05:30:00Z",
+      "related_news_urls": [
+        "https://thesmokingcuban.com/max-christie-reminds-mavericks-why-they-cant-keep-him-at-end-of-bench",
+        "https://www.wfaa.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/the-mavs-need-max-christie-and-santi-aldama-back-in-the-rotation/535-a4cadcf0-71c2-4721-a13b-82df79bfa4c8",
+        "https://sports.yahoo.com/articles/mavericks-max-christie-trade-stance-184510458.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtZfVvw2APHA1adWo9crNGO0fhSk3IvUYUqQ0Pe-0lfOoAteIYebNf9UJYBDg",
+      "image_credit": "The Smoking Cuban",
+      "news": [
+        {
+          "url": "https://thesmokingcuban.com/max-christie-reminds-mavericks-why-they-cant-keep-him-at-end-of-bench",
+          "title": "Max Christie reminds Mavericks why they can't keep him at the end of the bench",
+          "publisher": "The Smoking Cuban",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtZfVvw2APHA1adWo9crNGO0fhSk3IvUYUqQ0Pe-0lfOoAteIYebNf9UJYBDg"
+        },
+        {
+          "url": "https://www.wfaa.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/the-mavs-need-max-christie-and-santi-aldama-back-in-the-rotation/535-a4cadcf0-71c2-4721-a13b-82df79bfa4c8",
+          "title": "The Mavs Need Max Christie and Santi Aldama Back in the Rotation",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf4ZEVaJan8mHlzzfLP4GZECHtC5Ksh5GZF9DOupr1Jt5MZLxY2BxzwkaL4AY"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/mavericks-max-christie-trade-stance-184510458.html",
+          "title": "Mavericks’ Max Christie Trade Stance Backfires As Stats Slide",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tA5NlHHhuOoicrms8bp54MdfG3NT-BIf5HgWW0HqA1wGeQE4orwXhha_LJs"
+        }
+      ]
+    },
+    {
+      "query": "gonzaga basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T05:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50586725/jalen-davis-no-1-ranked-player-washington-staying-state-gonzaga",
+        "https://www.seattletimes.com/sports/gonzaga-bulldogs/wa-top-ranked-boys-basketball-prospect-jalen-davis-picks-gonzaga/",
+        "https://www.cbssports.com/college-basketball/news/jalen-davis-commits-to-gonzaga-bulldogs-land-no-13-ranked-prospect-in-2027-class/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ3mOruOAyTYMvN_Brx2QMCKni8WxY_044Dnfg-Ll_g3Vp_FUqikgJ74ZbNww",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50586725/jalen-davis-no-1-ranked-player-washington-staying-state-gonzaga",
+          "title": "Jalen Davis, No. 1-ranked player from Washington, staying in state with Gonzaga",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ3mOruOAyTYMvN_Brx2QMCKni8WxY_044Dnfg-Ll_g3Vp_FUqikgJ74ZbNww"
+        },
+        {
+          "url": "https://www.seattletimes.com/sports/gonzaga-bulldogs/wa-top-ranked-boys-basketball-prospect-jalen-davis-picks-gonzaga/",
+          "title": "State's top boys basketball prospect picks Gonzaga over UW",
+          "publisher": "The Seattle Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS11vx-LzfdJYV31nSNpxViI0X8Kn6yDkpbPqMOrlIcb2Zs6Emq_WX3MBkSxgM"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/jalen-davis-commits-to-gonzaga-bulldogs-land-no-13-ranked-prospect-in-2027-class/",
+          "title": "Jalen Davis commits to Gonzaga: Bulldogs land the No. 13-ranked prospect in 2027 class",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
+        }
+      ]
+    },
+    {
+      "query": "kansas state basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T05:20:00Z",
+      "related_news_urls": [
+        "https://www.spokesman.com/stories/2026/nov/23/kansas-state-players-era-16-field-to-provide-stiff/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/kansas-state-basketball-2027-game-050000384.html",
+        "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-preview-score-pick-keys-prediction-vegas-293237189/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdO3hOfNB0HILEb7ms2FqMlH2u5kmktBnvF521UkJ13nrOinRhMmf8Y-fs0dM",
+      "image_credit": "The Spokesman-Review",
+      "news": [
+        {
+          "url": "https://www.spokesman.com/stories/2026/nov/23/kansas-state-players-era-16-field-to-provide-stiff/",
+          "title": "Kansas State, Players Era 16 field to provide stiff test for Gonzaga’s perimeter defense",
+          "publisher": "The Spokesman-Review",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdO3hOfNB0HILEb7ms2FqMlH2u5kmktBnvF521UkJ13nrOinRhMmf8Y-fs0dM"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/kansas-state-basketball-2027-game-050000384.html",
+          "title": "Kansas State Basketball: 2027 Game 6 vs Gonzaga",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHVQm3vaz9IaiuMpWadOk-mHgR40H62__8MvU3CHar1JFufAK4jKApS7jNDPM"
+        },
+        {
+          "url": "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-preview-score-pick-keys-prediction-vegas-293237189/",
+          "title": "Keys & Prediction: Kansas State battles Gonzaga in Vegas",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXTztxChiU6Z5oJn304ojhKi3Vjuj1l5TO9p5O0aC14JQIlTnqN5Cmii_WAn4"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 chapter 3 mission list",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T05:20:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+        "https://insider-gaming.com/gta-6-chapter-1-mission-list-in-order/",
+        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+          "title": "How Long Is Chapter 3 in GTA 6? All Missables and Mission List",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-chapter-1-mission-list-in-order/",
+          "title": "GTA 6 Chapter 1 Mission List - Every Mission in GTA 6 Chapter 1 in Order",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwSWEF4fn4aBdiGCYVWZnWiao3pBl8gzcGVAdJuCx4wG6_VjX5h3euWL6Or2k"
+        },
+        {
+          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
+          "title": "How long it takes to play 'GTA 6': Story playthrough and achievements",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
+        }
+      ]
+    },
+    {
+      "query": "día de acción de gracias",
+      "approx_searches": "2000+",
       "published_at": "2026-11-25T05:10:00Z",
       "related_news_urls": [
         "https://cnnespanol.cnn.com/2026/11/24/eeuu/live-news/viajes-accion-gracias-tormentas-vuelos-trax",
@@ -73,286 +353,6 @@
           "publisher": "SuaraGarut.ID",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcsW-ilxbgqHC0DdeN0bPwrhBXWSW_WpRvocvhVnnP02UT1I3StryTuF_nLU"
-        }
-      ]
-    },
-    {
-      "query": "rings of power season 4",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T05:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/lord-of-the-rings-rings-of-power-renewed-season-4-amazon-1237232657/",
-        "https://www.tvinsider.com/1305580/lord-of-the-rings-the-rings-of-power-season-4-cast-premiere-date-trailer/",
-        "https://www.polygon.com/rings-of-power-amazon-season-4-renewal-confirmed/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMSIyzj5ill8nekS9Q0XHJvE6d6cwklMzHzHztGkoqtR9VdF-dVPFgo0jF4Do",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/lord-of-the-rings-rings-of-power-renewed-season-4-amazon-1237232657/",
-          "title": "‘The Lord Of The Rings: The Rings Of Power’ Renewed For Season 4 At Amazon",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSMSIyzj5ill8nekS9Q0XHJvE6d6cwklMzHzHztGkoqtR9VdF-dVPFgo0jF4Do"
-        },
-        {
-          "url": "https://www.tvinsider.com/1305580/lord-of-the-rings-the-rings-of-power-season-4-cast-premiere-date-trailer/",
-          "title": "‘The Rings of Power’ Renewed Ahead of Finale’s Surprise Early Drop",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSlflAc0U1TdONKg-I0rPYCRvgE_PremF7iEqkfE62lbjR8FuslIWkRLE2JmA"
-        },
-        {
-          "url": "https://www.polygon.com/rings-of-power-amazon-season-4-renewal-confirmed/",
-          "title": "Amazon Confirms Rings of Power Season 4's Status Ahead of Season 3 Finale",
-          "publisher": "Polygon.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJn5mAmLqvZ8kRz5UKXkYI1Cj8W2j1KKaUCam6Iu_lxOayCdG9C9Ck5ecZwi8"
-        }
-      ]
-    },
-    {
-      "query": "stanley tucci",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T05:10:00Z",
-      "related_news_urls": [
-        "https://faroutmagazine.co.uk/the-2009-co-star-stanley-tucci-wanted-to-work-with-forever/",
-        "https://www.express.co.uk/entertainment/films/2268650/hunger-games-cast-stanley-tucci",
-        "https://www.mirror.co.uk/3am/celebrity-news/hunger-games-fans-just-realising-37907127"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8EoinDxmlCxqqT6WetLoEaUbQvA6YXbhfMCcfJf2funycvG8XJf2deD9uNQ",
-      "image_credit": "Far Out Magazine",
-      "news": [
-        {
-          "url": "https://faroutmagazine.co.uk/the-2009-co-star-stanley-tucci-wanted-to-work-with-forever/",
-          "title": "The 2009 co-star Stanley Tucci wanted to work with forever: “We would be so happy”",
-          "publisher": "Far Out Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc8EoinDxmlCxqqT6WetLoEaUbQvA6YXbhfMCcfJf2funycvG8XJf2deD9uNQ"
-        },
-        {
-          "url": "https://www.express.co.uk/entertainment/films/2268650/hunger-games-cast-stanley-tucci",
-          "title": "Film fans just realising who Stanley Tucci played in The Hunger Games",
-          "publisher": "Daily Express",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxIU319Izu3U2BQ9iZxLAJCEX7fmbTYFMbGDagS5r9E-LpH3FKHbjbL85Ffjc"
-        },
-        {
-          "url": "https://www.mirror.co.uk/3am/celebrity-news/hunger-games-fans-just-realising-37907127",
-          "title": "Hunger Games fans are just realising who Stanley Tucci played in film",
-          "publisher": "Mirror",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRDkaleOLeRz3V-DLHXIFYjayNbNER-boIWuIOJn5zfJAYPjBTBtM0fYzCiMk"
-        }
-      ]
-    },
-    {
-      "query": "stanford basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T05:00:00Z",
-      "related_news_urls": [
-        "https://www.newsbreak.com/ball-exclusives-359366719/5027086712867-colorado-hosts-stanford-on-tuesday",
-        "https://www.on3.com/sites/buff-blitz/news/colorado-basketball-buffs-looking-for-answers-at-acrisure-series/",
-        "https://sportssd.iheart.com/content/2026-11-24-stanford-vs-colorado-predictions-nov-25/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzA4oe4tLmfj54dFnHzxwP0o5Eg8C3DSAr5qTSIukM-8Jtlnhg3NjACz49odA",
-      "image_credit": "NewsBreak: Local News & Alerts",
-      "news": [
-        {
-          "url": "https://www.newsbreak.com/ball-exclusives-359366719/5027086712867-colorado-hosts-stanford-on-tuesday",
-          "title": "Colorado Hosts Stanford on Tuesday",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzA4oe4tLmfj54dFnHzxwP0o5Eg8C3DSAr5qTSIukM-8Jtlnhg3NjACz49odA"
-        },
-        {
-          "url": "https://www.on3.com/sites/buff-blitz/news/colorado-basketball-buffs-looking-for-answers-at-acrisure-series/",
-          "title": "Colorado basketball: Buffs looking for answers at Acrisure Series",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkMTjwNEQDekP0NBnu3VFgWm082-reN9lMN9iRGlnmRNWoJOLstlrlsqe0V2k"
-        },
-        {
-          "url": "https://sportssd.iheart.com/content/2026-11-24-stanford-vs-colorado-predictions-nov-25/",
-          "title": "Stanford vs. Colorado Predictions - Nov. 25",
-          "publisher": "San Diego Sports 760",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiiVPuSAax3dnPprSi0dq42LnPa_7LbkECHiERCd6Nj9U6c_YjNxz7vjgSxOc"
-        }
-      ]
-    },
-    {
-      "query": "x men",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T04:50:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
-        "https://arstechnica.com/culture/2026/11/marvel-crams-every-superhero-ever-into-avengers-doomsday-final-trailer/",
-        "https://variety.com/2026/film/news/avengers-doomsday-trailer-captain-america-son-cyclops-x-men-1236893948/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
-          "title": "‘Avengers: Doomsday’ Final Trailer Clocks 563M Views, Best Ever For Disney; 2nd Most Viewed Of All-Time",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8"
-        },
-        {
-          "url": "https://arstechnica.com/culture/2026/11/marvel-crams-every-superhero-ever-into-avengers-doomsday-final-trailer/",
-          "title": "Marvel crams every superhero ever into Avengers: Doomsday final trailer",
-          "publisher": "Ars Technica",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhRtn44Y82_BvHibImidvFSwKuMq401yYFHfpy8CDO1vz_MVGz1CSb8rihEUE"
-        },
-        {
-          "url": "https://variety.com/2026/film/news/avengers-doomsday-trailer-captain-america-son-cyclops-x-men-1236893948/",
-          "title": "‘Avengers: Doomsday’ Final Trailer: Captain America’s Son Revealed, Fantastic Four Rescues Steve Rogers, Cyclops Assembles X-Men",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxgGUSDSOR5eGJKN5ShOSv9LDCz-U4n491u79fXcxXizZc6obB1paDKRJ31Go"
-        }
-      ]
-    },
-    {
-      "query": "steelers depth chart",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T04:30:00Z",
-      "related_news_urls": [
-        "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-12-2/",
-        "https://atozsports.com/nfl-roster-builder/teams/steelers/",
-        "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-11-eagles-game/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpvyfZrsHBQXchwpNEPqWKqa0OVs8IokgEqmBsdCt-wh5K8D9ttW59mAkOkpI",
-      "image_credit": "Steelers Depot",
-      "news": [
-        {
-          "url": "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-12-2/",
-          "title": "Steelers Release Updated Depth Chart For Week 12",
-          "publisher": "Steelers Depot",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpvyfZrsHBQXchwpNEPqWKqa0OVs8IokgEqmBsdCt-wh5K8D9ttW59mAkOkpI"
-        },
-        {
-          "url": "https://atozsports.com/nfl-roster-builder/teams/steelers/",
-          "title": "Pittsburgh Steelers Depth Chart 2026 (Week 11)",
-          "publisher": "A to Z Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfGTXz_AK6mK2za4qIhYjFQaUB_gSBntcjy0LVuVd3APeP9KO81K5d7BolFks"
-        },
-        {
-          "url": "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-11-eagles-game/",
-          "title": "Steelers Release Updated Depth Chart For Week 11 Eagles Game",
-          "publisher": "Steelers Depot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJ8O3fyYc7fRSXn2PvrSpVWG5noxnpNkjqXfttyt2tnnTe8-_XSwG_FO4ysQ"
-        }
-      ]
-    },
-    {
-      "query": "drew allar",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T04:30:00Z",
-      "related_news_urls": [
-        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-draft/178143/steelers-select-dynamic-receiver-in-latest-espn-mock-draft",
-        "https://www.wusa9.com/video/sports/locked-on/lo-national/nfl-draft-show/first-round-lock-dante-moores-potential-impact-for-the-nfl-shakes-2027-draft-rankings/535-596836c4-3565-4720-a674-10cd5987911f",
-        "https://steelersdepot.com/2026/11/beat-writer-outlines-how-steelers-can-create-optimism-for-future/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHtAvADPd5NQfYLRTguw7UhBqCKQ9d-LqVWZ6SgU91jmY3Q5qIEZxM5c5ooKY",
-      "image_credit": "Behind the Steel Curtain",
-      "news": [
-        {
-          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-draft/178143/steelers-select-dynamic-receiver-in-latest-espn-mock-draft",
-          "title": "Steelers select dynamic receiver in latest ESPN mock draft",
-          "publisher": "Behind the Steel Curtain",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHtAvADPd5NQfYLRTguw7UhBqCKQ9d-LqVWZ6SgU91jmY3Q5qIEZxM5c5ooKY"
-        },
-        {
-          "url": "https://www.wusa9.com/video/sports/locked-on/lo-national/nfl-draft-show/first-round-lock-dante-moores-potential-impact-for-the-nfl-shakes-2027-draft-rankings/535-596836c4-3565-4720-a674-10cd5987911f",
-          "title": "FIRST-ROUND LOCK: Dante Moore’s Potential Impact for the NFL SHAKES 2027 Draft Rankings",
-          "publisher": "WUSA9",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXDYL2CvGLIUR6-RjfGFt4DMujt7lwmCMN8Xfl3aduAjvt40vY1_dbpTQbWSw"
-        },
-        {
-          "url": "https://steelersdepot.com/2026/11/beat-writer-outlines-how-steelers-can-create-optimism-for-future/",
-          "title": "Beat Writer Outlines How Steelers Can Create ‘Optimism’ For Future",
-          "publisher": "Steelers Depot",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vX3BlXR6M501d3cC4QhBTgwEYLOJfA5co2h88Jn4OqkCKXKy738zqGOELMs"
-        }
-      ]
-    },
-    {
-      "query": "steelers record",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
-        "https://sports.yahoo.com/nfl/articles/4-patriots-legends-named-pro-035036630.html",
-        "https://abcnews.com/Sports/wireStory/roethlisberger-gronkowski-time-eligibles-advancing-hall-fame-voting-138418127"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
-          "title": "Pro Football Hall of Fame voters trim Class of 2027 nominees to 52",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/4-patriots-legends-named-pro-035036630.html",
-          "title": "4 Patriots legends named Pro Football Hall of Fame nominees",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGtf8D-nxGIG5nXEMv1KPmskEr4Cw_npyMIDnmxYp7yUGId8YZ72CiwyVNeg"
-        },
-        {
-          "url": "https://abcnews.com/Sports/wireStory/roethlisberger-gronkowski-time-eligibles-advancing-hall-fame-voting-138418127",
-          "title": "Roethlisberger, Gronkowski are among first-time eligibles advancing in Hall of Fame voting process",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXFcUstVaOTeXJpcGx3zdNx0GyaP02x92YRA5lL3D1rtETk2lIvtAoFa9cgy0"
-        }
-      ]
-    },
-    {
-      "query": "mega millions numbers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T04:30:00Z",
-      "related_news_urls": [
-        "https://www.freep.com/story/news/lottery/2026/11/24/mega-millions-winning-numbers-tuesday-november-24-2026-results/92661362007/",
-        "https://www.wcnc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
-        "https://www.sctimes.com/story/news/local/2026/11/24/minnesota-lottery-results-tuesday-november-24-2026/92953849007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I",
-      "image_credit": "Detroit Free Press",
-      "news": [
-        {
-          "url": "https://www.freep.com/story/news/lottery/2026/11/24/mega-millions-winning-numbers-tuesday-november-24-2026-results/92661362007/",
-          "title": "Mega Millions winning numbers for Tuesday, Nov. 24, 2026",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
-        },
-        {
-          "url": "https://www.wcnc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
-          "title": "Did anyone win the Mega Millions $629M jackpot? Winning numbers for Friday, Nov. 20",
-          "publisher": "WCNC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBiGUSyuo5gXs8yZ9Rokvlze2pptzNWL92Ulzt4FGlD21zfoiT6t0FC6LP1I"
-        },
-        {
-          "url": "https://www.sctimes.com/story/news/local/2026/11/24/minnesota-lottery-results-tuesday-november-24-2026/92953849007/",
-          "title": "MN Lottery Results: Mega Millions, Pick 3 winning numbers for Nov. 24, 2026",
-          "publisher": "St. Cloud Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdCijAwpHdA0f9AZCTbQyzssa3OrBpz0TzcS2H96OZL6L_GSfQUfmwd6GMwZc"
         }
       ]
     }
