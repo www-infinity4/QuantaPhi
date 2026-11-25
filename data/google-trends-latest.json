@@ -3,76 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T04:31:08.938960Z",
+  "checked_at": "2026-11-25T05:00:52.863923Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "mason rudolph",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T04:10:00Z",
+      "query": "mega millions numbers",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T04:30:00Z",
       "related_news_urls": [
-        "https://www.post-gazette.com/sports/steelers/steelers-quarterback-aaron-rodgers-YSDF2NYFAFDXLENQEGLGSSDLKI/",
-        "https://www.steelers.com/news/from-the-press-room-steelers-at-eagles-x1342",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-mccarthy-aaron-rodgers-is-our-quarterback"
+        "https://www.freep.com/story/news/lottery/2026/11/24/mega-millions-winning-numbers-tuesday-november-24-2026-results/92661362007/",
+        "https://www.wcnc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
+        "https://www.sctimes.com/story/news/local/2026/11/24/minnesota-lottery-results-tuesday-november-24-2026/92953849007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxeYno8Yo_gO_fT1EF2m_W2WXgr6Q-wN96tOQf1J-BWOb7jkJEhiUcQVEbMFw",
-      "image_credit": "Pittsburgh Post-Gazette",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I",
+      "image_credit": "Detroit Free Press",
       "news": [
         {
-          "url": "https://www.post-gazette.com/sports/steelers/steelers-quarterback-aaron-rodgers-YSDF2NYFAFDXLENQEGLGSSDLKI/",
-          "title": "Despite Aaron Rodgers’ struggles and limitations, Mike McCarthy is sticking with the Steelers’ QB",
-          "publisher": "Pittsburgh Post-Gazette",
+          "url": "https://www.freep.com/story/news/lottery/2026/11/24/mega-millions-winning-numbers-tuesday-november-24-2026-results/92661362007/",
+          "title": "Mega Millions winning numbers for Tuesday, Nov. 24, 2026",
+          "publisher": "Detroit Free Press",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxeYno8Yo_gO_fT1EF2m_W2WXgr6Q-wN96tOQf1J-BWOb7jkJEhiUcQVEbMFw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
         },
         {
-          "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-eagles-x1342",
-          "title": "From the Press Room: Steelers at Eagles",
-          "publisher": "Steelers.com",
+          "url": "https://www.wcnc.com/article/news/nation-world/mega-millions-jackpot-winning-numbers-friday-november-20/507-41d422cf-aafb-4133-994f-48daac86c2d4",
+          "title": "Did anyone win the Mega Millions $629M jackpot? Winning numbers for Friday, Nov. 20",
+          "publisher": "WCNC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRsTMEs9Q7PHmN0kqO9V7UAbz5GndSwDiKsc3inV81MIaH3yRgMfKERn74hCs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBiGUSyuo5gXs8yZ9Rokvlze2pptzNWL92Ulzt4FGlD21zfoiT6t0FC6LP1I"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-mccarthy-aaron-rodgers-is-our-quarterback",
-          "title": "Mike McCarthy: Aaron Rodgers is our quarterback",
-          "publisher": "NBC Sports",
+          "url": "https://www.sctimes.com/story/news/local/2026/11/24/minnesota-lottery-results-tuesday-november-24-2026/92953849007/",
+          "title": "MN Lottery Results: Mega Millions, Pick 3 winning numbers for Nov. 24, 2026",
+          "publisher": "St. Cloud Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUAUjxDds11KXcMiKjgf7YSGJKlU6hm6wSzLnE2UuLPqBmZboDIiPGNrNh2dQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdCijAwpHdA0f9AZCTbQyzssa3OrBpz0TzcS2H96OZL6L_GSfQUfmwd6GMwZc"
         }
       ]
     },
     {
-      "query": "aaron rodgers benched",
+      "query": "steelers depth chart",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T04:10:00Z",
+      "published_at": "2026-11-25T04:30:00Z",
       "related_news_urls": [
-        "https://fansided.com/nfl/aaron-rodgers-and-3-more-nfl-qbs-who-deserve-to-be-benched-after-week-11",
-        "https://triblive.com/sports/beyond-the-bylines-dk-metcalfs-contract-is-atop-the-list-of-all-time-pittsburgh-sports-clunkers/",
-        "https://www.post-gazette.com/sports/steelers/dk-metcalf-steelers-EUKSMKIL4BC65LSWK6R24MD2JM/"
+        "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-12-2/",
+        "https://atozsports.com/nfl-roster-builder/teams/steelers/",
+        "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-11-eagles-game/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQG7HsvA-9KgETE0AxhwyXjZUVQUfPf19X-1oJjCiXdp_0dkCxyuAUTUL1teM",
-      "image_credit": "FanSided",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpvyfZrsHBQXchwpNEPqWKqa0OVs8IokgEqmBsdCt-wh5K8D9ttW59mAkOkpI",
+      "image_credit": "Steelers Depot",
       "news": [
         {
-          "url": "https://fansided.com/nfl/aaron-rodgers-and-3-more-nfl-qbs-who-deserve-to-be-benched-after-week-11",
-          "title": "Aaron Rodgers and 3 more NFL QBs who deserve to be benched after Week 11",
-          "publisher": "FanSided",
+          "url": "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-12-2/",
+          "title": "Steelers Release Updated Depth Chart For Week 12",
+          "publisher": "Steelers Depot",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQG7HsvA-9KgETE0AxhwyXjZUVQUfPf19X-1oJjCiXdp_0dkCxyuAUTUL1teM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpvyfZrsHBQXchwpNEPqWKqa0OVs8IokgEqmBsdCt-wh5K8D9ttW59mAkOkpI"
         },
         {
-          "url": "https://triblive.com/sports/beyond-the-bylines-dk-metcalfs-contract-is-atop-the-list-of-all-time-pittsburgh-sports-clunkers/",
-          "title": "Beyond the Bylines: DK Metcalf’s contract is atop the list of all-time Pittsburgh sports clunkers",
-          "publisher": "TribLIVE.com",
+          "url": "https://atozsports.com/nfl-roster-builder/teams/steelers/",
+          "title": "Pittsburgh Steelers Depth Chart 2026 (Week 11)",
+          "publisher": "A to Z Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk_CElamGzjoB67l5Bi3CwwS8mhT0vbieQxh5R0q6rX77gq4PCX-ShL4MSkns"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfGTXz_AK6mK2za4qIhYjFQaUB_gSBntcjy0LVuVd3APeP9KO81K5d7BolFks"
         },
         {
-          "url": "https://www.post-gazette.com/sports/steelers/dk-metcalf-steelers-EUKSMKIL4BC65LSWK6R24MD2JM/",
-          "title": "Going Deep: The Steelers are finding out you can’t win with a player like DK Metcalf",
-          "publisher": "Pittsburgh Post-Gazette",
+          "url": "https://steelersdepot.com/2026/11/steelers-release-updated-depth-chart-for-week-11-eagles-game/",
+          "title": "Steelers Release Updated Depth Chart For Week 11 Eagles Game",
+          "publisher": "Steelers Depot",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStc5D_cRfaiQ-VjjOgZmDa2LVC0StNxUNdaWv8JnU-a2R83qh0acCysf-8lF8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnJ8O3fyYc7fRSXn2PvrSpVWG5noxnpNkjqXfttyt2tnnTe8-_XSwG_FO4ysQ"
+        }
+      ]
+    },
+    {
+      "query": "drew allar",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T04:30:00Z",
+      "related_news_urls": [
+        "https://www.behindthesteelcurtain.com/pittsburgh-steelers-draft/178143/steelers-select-dynamic-receiver-in-latest-espn-mock-draft",
+        "https://www.wusa9.com/video/sports/locked-on/lo-national/nfl-draft-show/first-round-lock-dante-moores-potential-impact-for-the-nfl-shakes-2027-draft-rankings/535-596836c4-3565-4720-a674-10cd5987911f",
+        "https://steelersdepot.com/2026/11/beat-writer-outlines-how-steelers-can-create-optimism-for-future/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHtAvADPd5NQfYLRTguw7UhBqCKQ9d-LqVWZ6SgU91jmY3Q5qIEZxM5c5ooKY",
+      "image_credit": "Behind the Steel Curtain",
+      "news": [
+        {
+          "url": "https://www.behindthesteelcurtain.com/pittsburgh-steelers-draft/178143/steelers-select-dynamic-receiver-in-latest-espn-mock-draft",
+          "title": "Steelers select dynamic receiver in latest ESPN mock draft",
+          "publisher": "Behind the Steel Curtain",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHtAvADPd5NQfYLRTguw7UhBqCKQ9d-LqVWZ6SgU91jmY3Q5qIEZxM5c5ooKY"
+        },
+        {
+          "url": "https://www.wusa9.com/video/sports/locked-on/lo-national/nfl-draft-show/first-round-lock-dante-moores-potential-impact-for-the-nfl-shakes-2027-draft-rankings/535-596836c4-3565-4720-a674-10cd5987911f",
+          "title": "FIRST-ROUND LOCK: Dante Moore’s Potential Impact for the NFL SHAKES 2027 Draft Rankings",
+          "publisher": "WUSA9",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXDYL2CvGLIUR6-RjfGFt4DMujt7lwmCMN8Xfl3aduAjvt40vY1_dbpTQbWSw"
+        },
+        {
+          "url": "https://steelersdepot.com/2026/11/beat-writer-outlines-how-steelers-can-create-optimism-for-future/",
+          "title": "Beat Writer Outlines How Steelers Can Create ‘Optimism’ For Future",
+          "publisher": "Steelers Depot",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vX3BlXR6M501d3cC4QhBTgwEYLOJfA5co2h88Jn4OqkCKXKy738zqGOELMs"
+        }
+      ]
+    },
+    {
+      "query": "steelers record",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T04:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
+        "https://sports.yahoo.com/nfl/articles/4-patriots-legends-named-pro-035036630.html",
+        "https://abcnews.com/Sports/wireStory/roethlisberger-gronkowski-time-eligibles-advancing-hall-fame-voting-138418127"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
+          "title": "Pro Football Hall of Fame voters trim Class of 2027 nominees to 52",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/4-patriots-legends-named-pro-035036630.html",
+          "title": "4 Patriots legends named Pro Football Hall of Fame nominees",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUGtf8D-nxGIG5nXEMv1KPmskEr4Cw_npyMIDnmxYp7yUGId8YZ72CiwyVNeg"
+        },
+        {
+          "url": "https://abcnews.com/Sports/wireStory/roethlisberger-gronkowski-time-eligibles-advancing-hall-fame-voting-138418127",
+          "title": "Roethlisberger, Gronkowski are among first-time eligibles advancing in Hall of Fame voting process",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXFcUstVaOTeXJpcGx3zdNx0GyaP02x92YRA5lL3D1rtETk2lIvtAoFa9cgy0"
+        }
+      ]
+    },
+    {
+      "query": "aaron rodgers",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T04:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50589757/steelers-bench-struggling-qb-aaron-rodgers-start-mason-rudolph",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-bench-aaron-rodgers-for-mason-rudolph",
+        "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-week-11-151927308.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY2-JadU0qh_kq1cHU1HF_cWtHOEs0IDAac-XHNCGSJybrar1X-0Ke-rHrWmU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50589757/steelers-bench-struggling-qb-aaron-rodgers-start-mason-rudolph",
+          "title": "Steelers bench struggling QB Aaron Rodgers, to start Mason Rudolph",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTY2-JadU0qh_kq1cHU1HF_cWtHOEs0IDAac-XHNCGSJybrar1X-0Ke-rHrWmU"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/steelers-bench-aaron-rodgers-for-mason-rudolph",
+          "title": "Steelers bench Aaron Rodgers for Mason Rudolph",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4V4xw4tm9n4beDOvukoj4Xoesxcqh7ygAWl70H8ncAWA3VJf1wtM3LqWg-UI"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/live/nfl-news-injury-updates-week-11-151927308.html",
+          "title": "NFL news, live updates: Steelers bench Aaron Rodgers, will start Mason Rudolph in Week 12; Brandon Aiyuk to visit Commanders as a free agent on Wednesday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTU3zZiTvN7wjwoMaKnS15f0B2p-T-bUCkeAFPH6EE1td351hUG6Sd6bIOSaK0"
+        }
+      ]
+    },
+    {
+      "query": "miss international 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T04:20:00Z",
+      "related_news_urls": [
+        "https://entertainment.inquirer.net/691237/what-to-know-about-miss-international-2026s-final-gala-in-japan",
+        "https://www.gmanetwork.com/lifestyle/news/141515/miss-international-ph-katrina-johnson-says-its-a-dream-come-true-to-represent-the-country/story",
+        "https://philstarlife.com/geeky/332646-where-to-watch-2026-miss-international-pageant"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBfsmBUkql7P1JnEEz3y5GbUX1Wx_iDh2S8JgiFjQ5Pf0_RYQwoMkERKIrVXo",
+      "image_credit": "Inquirer.net",
+      "news": [
+        {
+          "url": "https://entertainment.inquirer.net/691237/what-to-know-about-miss-international-2026s-final-gala-in-japan",
+          "title": "What to know about Miss International 2026’s final gala in Japan",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBfsmBUkql7P1JnEEz3y5GbUX1Wx_iDh2S8JgiFjQ5Pf0_RYQwoMkERKIrVXo"
+        },
+        {
+          "url": "https://www.gmanetwork.com/lifestyle/news/141515/miss-international-ph-katrina-johnson-says-its-a-dream-come-true-to-represent-the-country/story",
+          "title": "Miss International PH Katrina Johnson says it's a dream come true to represent the country",
+          "publisher": "GMA Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtOf85rSp8UYua6yy35eq9iTuL7kcq-URRGg5cq47FRZr8NSeF1cI3p8GQ6cE"
+        },
+        {
+          "url": "https://philstarlife.com/geeky/332646-where-to-watch-2026-miss-international-pageant",
+          "title": "Where to watch the 2026 Miss International pageant",
+          "publisher": "Philstar Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWm9HfVTqZhlwmPLVohuW8Ei3xzlCPMKJEaUPaKJdCFKjRNgOxVB1yPZ9tfg0"
         }
       ]
     },
@@ -81,33 +221,68 @@
       "approx_searches": "200+",
       "published_at": "2026-11-25T04:10:00Z",
       "related_news_urls": [
-        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-        "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
-        "https://www.nytimes.com/athletic/7799686/2026/11/21/f1-las-vegas-gp-qualifying-results/"
+        "https://sports.yahoo.com/mens-college-basketball/articles/depth-delivers-utep-men-win-040559451.html",
+        "https://lufkindailynews.com/news_reuters/state/uteps-reid-cason-24-jumps-for-the-opening-tip-against-the-college-of-charleston-at/image_fd65cd53-6052-5f46-bf5d-d613d831372c.html",
+        "https://www.accuscore.com/game/cmwtuyfit1lfxqp01zbth0myj"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ",
-      "image_credit": "Formula 1",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWCG38pAikl-wWbep0bGZcdgYqHf1DXhml3Abob6kVB5hjUU_LM6vsf0FimU",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
-          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
-          "publisher": "Formula 1",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/depth-delivers-utep-men-win-040559451.html",
+          "title": "Depth Delivers: UTEP men win in Cancun without top scorers",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAWCG38pAikl-wWbep0bGZcdgYqHf1DXhml3Abob6kVB5hjUU_LM6vsf0FimU"
         },
         {
-          "url": "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
-          "title": "Max Verstappen promoted to Las Vegas GP pole as Kimi Antonelli drops to sixth",
-          "publisher": "ESPN",
+          "url": "https://lufkindailynews.com/news_reuters/state/uteps-reid-cason-24-jumps-for-the-opening-tip-against-the-college-of-charleston-at/image_fd65cd53-6052-5f46-bf5d-d613d831372c.html",
+          "title": "UTEP's Reid Cason (24) jumps for the opening tip against the College of Charleston at the Cancun Challenge on Tuesday, Nov. 24.",
+          "publisher": "The Lufkin Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wxv5GN_yrA_kldDehVtXmfd7ryVA5MZR1rYT8H47s_q5hbND0yXwrTXn9cI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpGPdx2l2DBDrfaGEGBMFy2pU8eRxEUP-bcScz9qn1b9gcQjgtMFhR09IWtk"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7799686/2026/11/21/f1-las-vegas-gp-qualifying-results/",
-          "title": "Max Verstappen on pole for Las Vegas Grand Prix as both Ferraris eliminated early - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.accuscore.com/game/cmwtuyfit1lfxqp01zbth0myj",
+          "title": "Charleston vs UTEP Prediction (Nov 24): Charleston 59% — Odds & Live Score",
+          "publisher": "AccuScore",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRat0V920XK0E0DaxF_Y8eeP1zgAKZKh9m99cSoQJXuzMf8gjgoaBibKdpedJ4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTiEmLDY7ERz6EIE7GdDWpy9Gd_JF0q9cjWOQ9zy1t2hPpMfy4d6r3ifs6lFn4"
+        }
+      ]
+    },
+    {
+      "query": "us treasury",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T04:00:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/finance/us-imposes-sanctions-dozens-linked-irans-shadow-banking-networks-2026-11-23/",
+        "https://www.iranintl.com/en/202611245272",
+        "https://nypost.com/2026/11/23/us-news/treasury-uncovers-nearly-15-billion-in-possible-iranian-shadow-banking-networks/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgO3jhZPpi3QHKiMM6eDrB86YwChVkHxXAElSHbXWWB_s86B_GTwHtrKMnEZg",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/finance/us-imposes-sanctions-dozens-linked-irans-shadow-banking-networks-2026-11-23/",
+          "title": "US imposes sanctions on dozens linked to Iran's shadow banking networks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgO3jhZPpi3QHKiMM6eDrB86YwChVkHxXAElSHbXWWB_s86B_GTwHtrKMnEZg"
+        },
+        {
+          "url": "https://www.iranintl.com/en/202611245272",
+          "title": "Iran faces year-end cash squeeze if US blockade holds",
+          "publisher": "Iran International",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsLuxsUyf186gpx-qS4vzM2zxuITHKvBHCR1kzK3bq6PEFRiE1Bd56IsMec7Q"
+        },
+        {
+          "url": "https://nypost.com/2026/11/23/us-news/treasury-uncovers-nearly-15-billion-in-possible-iranian-shadow-banking-networks/",
+          "title": "Treasury uncovers nearly $15B in possible Iranian shadow banking networks",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPfiD4R7E4dfPxQ3IC9XVEcE_42TpHbr4kG4aOIVK5DLk-sB0AltVXZfZNCE"
         }
       ]
     },
@@ -116,103 +291,33 @@
       "approx_searches": "2000+",
       "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://dallassportsjournal.com/david-adelman-kyrie-irving-scoring-range-mavericks-nuggets/",
-        "https://www.yardbarker.com/nba/articles/mavericks_kyrie_irving_draws_extra_help_in_certain_spots_nuggets_coach_explains/s1_17810_44614981",
-        "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/"
+        "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
+        "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
+        "https://www.silverscreenandroll.com/lakers-news/129354/lakers-news-rob-pelinka"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddm0aHASJgWEUeH39mQLhMCFoRGKzkYN8tYXkLhC4Mgjks7awKkgnXQySBxY",
-      "image_credit": "dallassportsjournal.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7nJman_JQnMFMsHpdj4QhmZNKdpLXaDoeFslpY2kXrLSrWl9jwykKm6ITUo",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://dallassportsjournal.com/david-adelman-kyrie-irving-scoring-range-mavericks-nuggets/",
-          "title": "Kyrie Irving Has Three Ways To Score, Nuggets’ Adelman Says",
-          "publisher": "dallassportsjournal.com",
+          "url": "https://www.cbssports.com/nba/news/nba-trade-rumors-lakers-jazz-kyrie-irving-nov-23/",
+          "title": "NBA trade rumors: Lakers planning to be active, Jazz looking elsewhere after Kyrie Irving buzz",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddm0aHASJgWEUeH39mQLhMCFoRGKzkYN8tYXkLhC4Mgjks7awKkgnXQySBxY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt7nJman_JQnMFMsHpdj4QhmZNKdpLXaDoeFslpY2kXrLSrWl9jwykKm6ITUo"
         },
         {
-          "url": "https://www.yardbarker.com/nba/articles/mavericks_kyrie_irving_draws_extra_help_in_certain_spots_nuggets_coach_explains/s1_17810_44614981",
-          "title": "Mavericks' Kyrie Irving Draws Extra Help In Certain Spots, Nuggets Coach Explains",
-          "publisher": "Yardbarker",
+          "url": "https://bleacherreport.com/articles/25536759-new-lakers-trade-rumors-update-strategy-improve-roster-2027-nba-deadline",
+          "title": "New Lakers Trade Rumors Update Strategy to Improve Roster by 2027 NBA Deadline",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXZ5jtOjFJIxXoTRwscUievcuFUEA8R5xjdGI3yBsuxLAYKowrFN8a6UIohTM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKxn5frvfM6ADBvdwZnmnlB0Cz0_YYBdQ4oetvrxbWdkmnYV50j8BZqd2qB44"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/",
-          "title": "Why Walter Clayton Jr. spurned other West teams and joined his college roommate on the Mavs - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.silverscreenandroll.com/lakers-news/129354/lakers-news-rob-pelinka",
+          "title": "Rob Pelinka says the Lakers will be active at the trade deadline",
+          "publisher": "Silver Screen and Roll",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYk9SCRW3UzYxR9FCw8xdgRcqfL6EKutKi84XGyaIYQGcxJZID4OfIuRIEwRs"
-        }
-      ]
-    },
-    {
-      "query": "us treasury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/politics/national-security/trump-administration-officials-debating-targeting-irans-leaders-source-rcna610889",
-        "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
-        "https://newrepublic.com/post/218337/trump-assassination-iranian-leaders-khamenei-end-iran-war"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW0rtFmSZVKRZGxQYF-2CDS6wLlmSvlnfxEKeFGYKJT__nlJ469MXFLCHIZSg",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/politics/national-security/trump-administration-officials-debating-targeting-irans-leaders-source-rcna610889",
-          "title": "Trump administration officials debating targeting Iran’s leaders, sources say",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW0rtFmSZVKRZGxQYF-2CDS6wLlmSvlnfxEKeFGYKJT__nlJ469MXFLCHIZSg"
-        },
-        {
-          "url": "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
-          "title": "Trump administration weighs targeting Iran's top regime leaders in bid to end war: report",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3sWtHNW-nx0iIXWQjU9wjwxiPbRTYwEkMJ73VfPZiX5V6hNIzMVwQ3bYPwFc"
-        },
-        {
-          "url": "https://newrepublic.com/post/218337/trump-assassination-iranian-leaders-khamenei-end-iran-war",
-          "title": "Trump Thinking About Assassinating Iranian Leaders",
-          "publisher": "The New Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtDCF1gw-pt3R_O9RAkyYvNlCC0xgGj9G_QkjmuRenQQTFu4ftOHrSKHDBWU"
-        }
-      ]
-    },
-    {
-      "query": "demar derozan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50546680/demar-derozan-drills-1-nuggets",
-        "https://nugglove.com/demar-derozan-keeps-taking-one-step-forward-two-steps-back-nuggets",
-        "https://milehighsports.com/pickaxe-and-roll-demar-derozan-found-some-success-can-denver-nuggets-maintain-it/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMwQpia25ZXN7nlcqn4VNegRBqfXgJcZaawvdshRVZfQ0PMHXvFyC7GfYv5CM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50546680/demar-derozan-drills-1-nuggets",
-          "title": "DeMar DeRozan drills an and-1 for the Nuggets",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMwQpia25ZXN7nlcqn4VNegRBqfXgJcZaawvdshRVZfQ0PMHXvFyC7GfYv5CM"
-        },
-        {
-          "url": "https://nugglove.com/demar-derozan-keeps-taking-one-step-forward-two-steps-back-nuggets",
-          "title": "DeMar DeRozan keeps taking one step forward and two steps back for Nuggets",
-          "publisher": "Nugg Love",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKnSGywWSVKwfaiqweme9s3L7tw1Dy8hRf9AsgUR1s6YquNtmNyZZ2TomCEz0"
-        },
-        {
-          "url": "https://milehighsports.com/pickaxe-and-roll-demar-derozan-found-some-success-can-denver-nuggets-maintain-it/",
-          "title": "Pickaxe and Roll: DeMar DeRozan found some success, can Denver Nuggets maintain it?",
-          "publisher": "Mile High Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXWDPQBHSEXiKDro_Z35mzXtbVBhGBdnLLCIQKFVx6bCCFDgBuIDpADqu2fQY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIDsCl5dxNkuBeXFpYAs3x5hVPstedLkuQSFtEpd_8vtXIR2TFd-05jSXJ0zw"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Omaha World-Herald",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15-nBz5AtUlacsYL0gfjETUvaRhQhRyiZpOTNr53aWeBpLrAkx4D89qmxDj4"
-        }
-      ]
-    },
-    {
-      "query": "sam houston vs wa state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T04:00:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/washington-state/article/washington-state-basketball-this-week-wsu-hoops-litmus-test-awaits-after-near-upset-of-duke-293239119/",
-        "https://www.sportsgambler.com/betting-tips/basketball/sam-houston-bearkats-vs-washington-state-cougars-prediction-odds-2026-11-24/",
-        "https://wsucougars.com/news/2026/11/23/cougs-and-bearkats-slated-for-tuesday-night-in-beasley"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_AIyYG_BJUZeSDyyb55p6mDWo2BG3QFTNkWDxDxBay_OjBcLWG3rHoBJM0I",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/washington-state/article/washington-state-basketball-this-week-wsu-hoops-litmus-test-awaits-after-near-upset-of-duke-293239119/",
-          "title": "This week in WSU hoops: Litmus test awaits Cougars after near upset of Duke",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_AIyYG_BJUZeSDyyb55p6mDWo2BG3QFTNkWDxDxBay_OjBcLWG3rHoBJM0I"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/sam-houston-bearkats-vs-washington-state-cougars-prediction-odds-2026-11-24/",
-          "title": "Sam Houston vs Washington State Prediction, Picks & Odds | 24 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
-        },
-        {
-          "url": "https://wsucougars.com/news/2026/11/23/cougs-and-bearkats-slated-for-tuesday-night-in-beasley",
-          "title": "Cougs and Bearkats Slated for Tuesday Night in Beasley",
-          "publisher": "Washington State University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNLL6wG8Yl_suTb4st8GuydrVKTrv9OTOFYvbl5D2JKVPB8CNmi2pRWmmV-s4"
-        }
-      ]
-    },
-    {
-      "query": "daniel gafford",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T04:00:00Z",
-      "related_news_urls": [
-        "https://dallassportsjournal.com/daniel-gafford-kyrie-irving-leadership-mavericks/",
-        "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-daniel-gafford-nba-cup-22548460.php",
-        "https://dallassportsjournal.com/daniel-gafford-nba-cup-money-mavericks-nuggets/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nM96ZxxWIdSGeH9nPjLDYpwdoUSUgHenPXGSOSnypCFuYfcP1VgfHdRxX0",
-      "image_credit": "Dallas Hoops Journal",
-      "news": [
-        {
-          "url": "https://dallassportsjournal.com/daniel-gafford-kyrie-irving-leadership-mavericks/",
-          "title": "‘Heads Of Our Snakes’: Daniel Gafford Details Kyrie Irving’s Leadership As Dallas Mavericks Visit Denver Nuggets",
-          "publisher": "Dallas Hoops Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nM96ZxxWIdSGeH9nPjLDYpwdoUSUgHenPXGSOSnypCFuYfcP1VgfHdRxX0"
-        },
-        {
-          "url": "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-daniel-gafford-nba-cup-22548460.php",
-          "title": "Thanks to sustained health, Daniel Gafford has been man in middle Mavs have been missing",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXxqH7clU64djgpNuyXamtmjf4DBFvT1DsPdzi4Aavjh-1Jx59ruYTKTtRJs"
-        },
-        {
-          "url": "https://dallassportsjournal.com/daniel-gafford-nba-cup-money-mavericks-nuggets/",
-          "title": "Mavericks’ Gafford: NBA Cup Money Changes The Competition",
-          "publisher": "Dallas Hoops Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7uRps4Ikid34h-7t_uPDIe2GHHsnfdGzFBb-d8JVpUP5WQyyeeHuk8mK7u44"
-        }
-      ]
-    },
-    {
-      "query": "val chmerkovskiy",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T03:50:00Z",
-      "related_news_urls": [
-        "https://www.eonline.com/news/1438394/dancing-with-the-stars-val-chmerkovskiys-hair-long-not-slicked-on-finale",
-        "https://www.tvinsider.com/1305492/dancing-with-the-stars-val-chmerkovskiy-finale-message-backlash-reaction/",
-        "https://www.eonline.com/news/1438265/dwts-val-chmerkovskiy-reacts-to-jenna-johnsons-elimination-with-nsfw-post"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAk1TYMXZB2kf_8eib-Z0DXV9l-oEVCIbEOqnHVbCtIwtA_lSQKBBJXrBeBfc",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438394/dancing-with-the-stars-val-chmerkovskiys-hair-long-not-slicked-on-finale",
-          "title": "DWTS ’ Val Chmerkovskiy Looks So Different With Hair Transformation on Season 35 Finale",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAk1TYMXZB2kf_8eib-Z0DXV9l-oEVCIbEOqnHVbCtIwtA_lSQKBBJXrBeBfc"
-        },
-        {
-          "url": "https://www.tvinsider.com/1305492/dancing-with-the-stars-val-chmerkovskiy-finale-message-backlash-reaction/",
-          "title": "‘Dancing With the Stars’: Val Chmerkovskiy Faces Backlash for Pre-Finale Message",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBSXw3edkRXjsLVdgKkaeccUiCeDCx_P8uKT5odV98iaDFdx8YZUdai5GPLY"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438265/dwts-val-chmerkovskiy-reacts-to-jenna-johnsons-elimination-with-nsfw-post",
-          "title": "DWTS ’ Val Chmerkovskiy Makes Spicy Comment About Jenna Johnson's Elimination",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUjKr06VWtmYxnbWKppSgavZf_mDEWShor7-zpnWpdT4F1C9yZ_pQBrrEiQaw"
         }
       ]
     }
