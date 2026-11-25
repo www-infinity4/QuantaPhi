@@ -93,7 +93,7 @@ test('private Gemini writer adapter preserves structured output and performs a s
  const result=await consultGeminiWriter(active,options,async(url,opts)=>{
   count++;
   assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');
-  assert.equal(opts.redirect,'error');
+  assert.equal(opts.redirect,'manual');
   assert.equal(opts.headers['x-goog-api-key'],env.GEMINI_API_KEY);
   const body=JSON.parse(opts.body);
   assert.equal(body.systemInstruction.parts[0].text,'Return one JSON object.');
@@ -121,4 +121,41 @@ test('private Gemini writer adapter rejects refusal, incomplete or invalid JSON 
  let count=0;
  await assert.rejects(consultGeminiWriter(active,options,async()=>{count++;return new Response('private provider body',{status:429});}),/gemini_writer_rate_limited/);
  assert.equal(count,1);
+});
+
+
+test('private BrainModels RPC delegates to the gated Gemini writer and does not expose a public HTTP route',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const sourceUrl=new URL('../workers/infinity-rogers/brain-models.js',import.meta.url);
+ const adapterUrl=new URL('../workers/infinity-rogers/ai-collaboration.mjs',import.meta.url).href;
+ const source=(await readFile(sourceUrl,'utf8')).replace("import { WorkerEntrypoint } from 'cloudflare:workers';","class WorkerEntrypoint { constructor(ctx,env){this.env=env;} }").replace('./ai-collaboration.mjs',adapterUrl);
+ const {BrainModels}=await import('data:text/javascript;base64,'+Buffer.from(source).toString('base64'));
+ const options={messages:[{role:'system',content:'Return JSON.'},{role:'user',content:'Synthetic fixture.'}],max_tokens:100};
+ let calls=0;
+ const previous=globalThis.fetch;
+ globalThis.fetch=async(url,opts)=>{
+  calls++;
+  assert.equal(opts.redirect,'manual');
+  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"fixture":true}'}]}}]});
+ };
+ try{
+  await assert.rejects(new BrainModels({},env).writer(options),/gemini_writer_disabled/);
+  assert.equal(calls,0);
+  const receipt=await new BrainModels({},{...env,GEMINI_WRITER_ENABLED:'1'}).writer(options);
+  assert.equal(receipt.provider,'gemini');
+  assert.equal(receipt.executionVerified,false);
+  assert.equal(receipt.productionVerified,false);
+  assert.equal(calls,1);
+ }finally{globalThis.fetch=previous;}
+});
+
+test('private Gemini writer refuses redirects without following provider Location',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ let calls=0;
+ await assert.rejects(consultGeminiWriter({...env,GEMINI_WRITER_ENABLED:'1'},
+  {messages:[{role:'system',content:'Return JSON.'},{role:'user',content:'Fixture.'}],max_tokens:100},async(url,opts)=>{
+   calls++;assert.equal(opts.redirect,'manual');
+   return new Response(null,{status:302,headers:{Location:'https://example.invalid/'}});
+  }),/gemini_writer_provider_unavailable/);
+ assert.equal(calls,1);
 });
