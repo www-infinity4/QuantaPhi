@@ -3,348 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T12:35:28.873361Z",
+  "checked_at": "2026-11-25T13:01:28.740293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "bangladesh vs south africa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T12:20:00Z",
-      "related_news_urls": [
-        "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-2nd-test-1525663/ball-by-ball-commentary",
-        "https://sports.yahoo.com/cricket/articles/wiaan-mulder-strikes-south-africa-110658233.html",
-        "https://www.espn.com/cricket/series/19430/report/1525663/day/1/south-africa-vs-bangladesh-2nd-test-19430"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOH4VmMOIhfJtqt0Gsix__nwCyzykkF_yRNj9KV5ezJfjfE8-nBEzYmzSSgg",
-      "image_credit": "Cricinfo",
-      "news": [
-        {
-          "url": "https://www.cricinfo.com/series/bangladesh-in-south-africa-2026-27-1525637/south-africa-vs-bangladesh-2nd-test-1525663/ball-by-ball-commentary",
-          "title": "Ball by Ball Commentary & Live Score - SA vs BAN, 2nd Test",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmOH4VmMOIhfJtqt0Gsix__nwCyzykkF_yRNj9KV5ezJfjfE8-nBEzYmzSSgg"
-        },
-        {
-          "url": "https://sports.yahoo.com/cricket/articles/wiaan-mulder-strikes-south-africa-110658233.html",
-          "title": "Wiaan Mulder strikes for South Africa to leave Bangladesh trailing by 294 runs at lunch on day three",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFFu8I3b-aoQ7rsUslhxtg6fZGeS3rmZSuUwOvnoUDy6wwb_hb4qN-i9s_Dd0"
-        },
-        {
-          "url": "https://www.espn.com/cricket/series/19430/report/1525663/day/1/south-africa-vs-bangladesh-2nd-test-19430",
-          "title": "Recent Match Report - South Africa vs Bangladesh, Bangladesh tour of South Africa, 2nd Test | ESPN.com",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEWapRM03h0E5hb-3NspdI1QySqIl2hMPgtZHGTLLfU9uBgGPH5UNpES-KZG8"
-        }
-      ]
-    },
-    {
-      "query": "football games today",
+      "query": "ciudadano",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T12:20:00Z",
+      "published_at": "2026-11-25T12:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/college-football-games-tv-week-110416898.html",
-        "https://espnpressroom.com/press-release/rivalry-week-takes-over-espn-16-cfp-top-25-teams-including-seven-of-the-top-10-headline-a-stacked-five-day-slate/",
-        "https://www.al.com/sports/2026/11/college-football-tv-schedule-for-week-13-of-2026-season.html"
+        "https://elpais.com/us/migracion/2026-11-25/nacido-en-denver-y-deportado-pese-a-ser-ciudadano-el-caso-que-ha-hecho-recular-al-gobierno-de-trump.html",
+        "https://www.univision.com/noticias/doj-admite-deportacion-a-mexico-de-un-ciudadano-de-eeuu-en-texas-el-demanda-al-gobierno-video",
+        "https://www.lanacion.com.ar/estados-unidos/migraciones/la-cbp-lo-deporto-a-mexico-ahora-trump-admite-que-es-ciudadano-de-eeuu-la-historia-de-brian-morales-nid25112026/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkr7WNWYyRBQS9LgF7JgsA01Prw-_35MZEHP434lQbHmZv7ldP8OfOD00obI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqyoRLybDgH_pa8zjAdOww0CAF69frCXYHaoEjf7Oeu08WmbkNxF1rC7qNkH4",
+      "image_credit": "EL PAÍS",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/articles/college-football-games-tv-week-110416898.html",
-          "title": "What college football games are on TV this week? College football Week 13 TV schedule",
-          "publisher": "Yahoo Sports",
+          "url": "https://elpais.com/us/migracion/2026-11-25/nacido-en-denver-y-deportado-pese-a-ser-ciudadano-el-caso-que-ha-hecho-recular-al-gobierno-de-trump.html",
+          "title": "Nacido en Denver y deportado pese a ser ciudadano: el caso que ha hecho recular al Gobierno de Trump",
+          "publisher": "EL PAÍS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDkr7WNWYyRBQS9LgF7JgsA01Prw-_35MZEHP434lQbHmZv7ldP8OfOD00obI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqyoRLybDgH_pa8zjAdOww0CAF69frCXYHaoEjf7Oeu08WmbkNxF1rC7qNkH4"
         },
         {
-          "url": "https://espnpressroom.com/press-release/rivalry-week-takes-over-espn-16-cfp-top-25-teams-including-seven-of-the-top-10-headline-a-stacked-five-day-slate/",
-          "title": "Rivalry Week takes over ESPN: 16 CFP Top 25 teams, including seven of the top 10, headline a stacked five-day slate",
-          "publisher": "ESPN Press Room",
+          "url": "https://www.univision.com/noticias/doj-admite-deportacion-a-mexico-de-un-ciudadano-de-eeuu-en-texas-el-demanda-al-gobierno-video",
+          "title": "DOJ admite deportación a México de un ciudadano de EEUU en Texas, él demanda al Gobierno",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTUAuHP7jS4O8nofS4DREUx5vdpHZGCOBuuCq4ga609wMzsz4nZAjFmkzn9WM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTyJOVogIDXKZK4ESRRg4-TlMU55n1HSGrk5OmFlwg9ZcRA1lCiLCZIfcF9rM"
         },
         {
-          "url": "https://www.al.com/sports/2026/11/college-football-tv-schedule-for-week-13-of-2026-season.html",
-          "title": "College football TV schedule for Week 13 of 2026 season",
-          "publisher": "AL.com",
+          "url": "https://www.lanacion.com.ar/estados-unidos/migraciones/la-cbp-lo-deporto-a-mexico-ahora-trump-admite-que-es-ciudadano-de-eeuu-la-historia-de-brian-morales-nid25112026/",
+          "title": "La CBP lo deportó a México, ahora Trump admite que es ciudadano de EE.UU.: la historia de Brian Morales García",
+          "publisher": "La Nación",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxnotYJ-keLcMYx8k1waqBNCdJALPqL35R0dgpnb4DD4ckLHSwvJjtFED1YWw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kWuCS5k2MiEITHTUlAxwT5LEOVfG3zqzQPvmQXpIfN5jo7r6L1a7B7i5q2E"
         }
       ]
     },
     {
-      "query": "pce report",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:20:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
-        "https://finance.biggo.com/news/79aed0c4-6978-4c7f-a126-27af27a460a5",
-        "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4750GZ:0-euro-zone-yields-inch-lower-as-calm-returns-to-markets/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
-          "title": "Treasury and European Government Bond Yields Fall Ahead of PCE Inflation Data",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls"
-        },
-        {
-          "url": "https://finance.biggo.com/news/79aed0c4-6978-4c7f-a126-27af27a460a5",
-          "title": "Eurozone Bond Yields Flat as Traders Brace for Nvidia Earnings, Anthropic IPO",
-          "publisher": "BigGo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpQIxa92sfqqe3uohg-OrBdpJImlLUawRMC4Yi55KVYhykUUeUEa_8OB_NiqY"
-        },
-        {
-          "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N4750GZ:0-euro-zone-yields-inch-lower-as-calm-returns-to-markets/",
-          "title": "Euro zone yields inch lower as calm returns to markets",
-          "publisher": "TradingView",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZGqEdEXbiza7u5Jaebz1GVjk6gT-GC9ABy2KygtfJbALDZWXOqJCG1--8OtY"
-        }
-      ]
-    },
-    {
-      "query": "oil refinery",
+      "query": "raheem sterling",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T12:20:00Z",
+      "published_at": "2026-11-25T12:40:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
-        "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-24-2026/",
-        "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence"
+        "https://www.nytimes.com/athletic/7809387/2026/11/25/raheem-sterling-driving-suspended-sentence/",
+        "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o",
+        "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0jI8CVc2Vx9ztEl9GWiw2qisSVrz-UaSslPdPAz7BgWlrh4HZh8QqqccGGFs",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/25/ukraine-putin-russia-oil-refinery-attacks.html",
-          "title": "Ukraine tells Putin to ‘stop complaining’ over oil refinery attacks as Russia promises retaliation",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0jI8CVc2Vx9ztEl9GWiw2qisSVrz-UaSslPdPAz7BgWlrh4HZh8QqqccGGFs"
-        },
-        {
-          "url": "https://understandingwar.org/research/russia-ukraine/russian-offensive-campaign-assessment-november-24-2026/",
-          "title": "Russian Offensive Campaign Assessment, November 24, 2026",
-          "publisher": "Institute for the Study of War",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRUnKF4oSItRamJBWmTZsf45gLd67T9YgffClcGp9mLlsAcittLA_M0vHdAHlc"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/liveblog/2026/11/24/russia-ukraine-war-live-kyiv-says-attack-on-ships-off-libya-self-delfence",
-          "title": "Russia-Ukraine updates: Moscow will ‘respond’ to attacks on oil refineries",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflXSnCPGYaL86dMIkP6QRzNLH2uyYGnlBFRXJY4qU1S8Su-VQ1ZzpHwImtPo"
-        }
-      ]
-    },
-    {
-      "query": "demarvion overshown",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:20:00Z",
-      "related_news_urls": [
-        "https://www.dallasnews.com/sports/cowboys/article/demarvion-overshown-cowboys-schottenheimer-penalty-22547944.php",
-        "https://thelandryhat.com/justin-barron-stunning-rise-pushing-demarvion-overshown-out-of-cowboys-plans",
-        "https://sports.yahoo.com/nfl/articles/cowboys-brian-schottenheimer-backs-demoted-214800875.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEiz9_ctemV_gUnaZGeVRQcLiUv77K-7ldkhMVnVsWjtXdNcfWZaQuFJUEQZM",
-      "image_credit": "Dallas News",
-      "news": [
-        {
-          "url": "https://www.dallasnews.com/sports/cowboys/article/demarvion-overshown-cowboys-schottenheimer-penalty-22547944.php",
-          "title": "DeMarvion Overshown’s once-bright future with Cowboys is now murky after setback-filled 2026",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEiz9_ctemV_gUnaZGeVRQcLiUv77K-7ldkhMVnVsWjtXdNcfWZaQuFJUEQZM"
-        },
-        {
-          "url": "https://thelandryhat.com/justin-barron-stunning-rise-pushing-demarvion-overshown-out-of-cowboys-plans",
-          "title": "Justin Barron's stunning rise is pushing DeMarvion Overshown out of Cowboys' plans",
-          "publisher": "The Landry Hat",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTU51roUHPz5Z1JhQQ3bEKSIM96s_4-R-lDYNYIafTuQzgiqZqJBhuJtEUcrxA"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/cowboys-brian-schottenheimer-backs-demoted-214800875.html",
-          "title": "Cowboys’ Brian Schottenheimer Backs Demoted Starter on ‘Doghouse’ Claims",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjNtlKynjvk9SRlHO-0xWiHRB9DkUX1fB03xGVK9E2jnHhcPGcsoYTfRrjSGM"
-        }
-      ]
-    },
-    {
-      "query": "s and p 500 futures",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:20:00Z",
-      "related_news_urls": [
-        "https://www.benzinga.com/markets/equities/26/11/63615832/stock-market-today-dow-jones-sp-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus",
-        "https://en.yenisafak.com/economy/wall-street-closes-with-losses-after-fed-comment-2582036",
-        "https://www.rttnews.com/3715967/markets-wait-for-fomc-minutes-while-tech-gains.aspx"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMNUb6a5ywIImA2PKV73Ub_lwgMt_xq8OT9u2wmr_dJGNgbG3KHdjXdv7iG4",
-      "image_credit": "Benzinga",
-      "news": [
-        {
-          "url": "https://www.benzinga.com/markets/equities/26/11/63615832/stock-market-today-dow-jones-sp-500-futures-fall-as-traders-bet-on-december-fed-hike-trump-tells-huang-to-just-tell-the-truth-dell-wday-adsk-in-focus",
-          "title": "Stock Market Today: Dow Jones, S&P 500 Futures Fall as Traders Bet on December Fed Hike; Trump Tells Huan",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBMNUb6a5ywIImA2PKV73Ub_lwgMt_xq8OT9u2wmr_dJGNgbG3KHdjXdv7iG4"
-        },
-        {
-          "url": "https://en.yenisafak.com/economy/wall-street-closes-with-losses-after-fed-comment-2582036",
-          "title": "Wall Street closes with losses after Fed comment",
-          "publisher": "Yeni Safak English",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyvSYmDi4q42QR83b1zwkt_AYjYET3e1IdrpDfLo3NDds1qd14YjihHGXLycg"
-        },
-        {
-          "url": "https://www.rttnews.com/3715967/markets-wait-for-fomc-minutes-while-tech-gains.aspx",
-          "title": "Markets Wait For FOMC Minutes While Tech Gains",
-          "publisher": "RTTNews",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5JUnQQ6e9xE8eTRLf2bnvpNfovsI4nl9sg2i3K0p0xyoQC4NplVvyvVB3XH0"
-        }
-      ]
-    },
-    {
-      "query": "ice detainee habeas corpus petitions",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T12:10:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/ice-detainee-lawsuits-justice-department-non-immigration-attorneys/",
-        "https://www.yahoo.com/news/us/articles/trump-doj-attacks-federal-judges-025104402.html",
-        "https://www.washingtonsun.com/immigration/blanche-resources-immigration-detention"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYq7vZoH2E3N8bZhTCJPBfjOs5JpFbmsAA-zmhCv8qkwMz5t3qlvTN5EsOoo",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/ice-detainee-lawsuits-justice-department-non-immigration-attorneys/",
-          "title": "Inundated by thousands of ICE detainee lawsuits, DOJ directs non-immigration attorneys to help with caseload",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYq7vZoH2E3N8bZhTCJPBfjOs5JpFbmsAA-zmhCv8qkwMz5t3qlvTN5EsOoo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/trump-doj-attacks-federal-judges-025104402.html",
-          "title": "Trump’s DOJ attacks federal judges amid ramped-up deportation push",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqauaUBQxTP1Bc4bD3fTt588jQ6pJgXsZp6F8TEN1ub1Hdli0PsCUEaToeSHE"
-        },
-        {
-          "url": "https://www.washingtonsun.com/immigration/blanche-resources-immigration-detention",
-          "title": "Blanche Redirects Resources to Tackle Immigration Detention Challenges",
-          "publisher": "NOTUS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmeQ8ll2apRoa9W3DmBlOSWMHMNUyKUGlnoJHLrpgrnq_5g6PL13wqRocjd-o"
-        }
-      ]
-    },
-    {
-      "query": "dow futures now",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T12:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
-        "https://finance.yahoo.com/news/dow-reclaims-50-000-inflation-120000290.html",
-        "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/25/futures-sink-further-into-the-red-as-tech-worries-resurge.html",
-          "title": "Futures sink further into the red as tech worries resurge",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt0lIjdbFr8a1lOqxb-iR2rEzKiL0zR-0euShbXgcLlIrhFiKMWs_LWNAl2mk"
-        },
-        {
-          "url": "https://finance.yahoo.com/news/dow-reclaims-50-000-inflation-120000290.html",
-          "title": "Dow Reclaims 50,000 as Inflation and GDP Data Land Before Thanksgiving",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTwGTtza1z1BHOoDy7P3LMnGOtihjlHCJqAcYtMHC3NKtUzGs9yZ_Bk1wlcw"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/24/business/stocks-sp500-huang-nvidia.html",
-          "title": "Stock Markets Slip as Nvidia and A.I. Stocks Erase Some of Monday’s Rally",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQS0ZJ2MZX6cjTHuAoeqjlTg38ElfttKqevptmsDN9sPhxK3NOT_W9CIIMYVA0"
-        }
-      ]
-    },
-    {
-      "query": "breeze airways new routes 2026",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:10:00Z",
-      "related_news_urls": [
-        "https://simpleflying.com/breeze-airways-launches-6-new-cities-9-routes/",
-        "https://deeparrival.com/news/breeze-tampa-st-thomas-jamaica-nonstops-december-16-2026/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBCneQzEjhF0uoqwsEPDrdsnJEdV15hZ-BdmTlXprepBleVpD0F16HvCOCy8",
-      "image_credit": "Simple Flying",
-      "news": [
-        {
-          "url": "https://simpleflying.com/breeze-airways-launches-6-new-cities-9-routes/",
-          "title": "Breeze Airways Adds 6 New Cities & 9 Routes: See Full List Now",
-          "publisher": "Simple Flying",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcBCneQzEjhF0uoqwsEPDrdsnJEdV15hZ-BdmTlXprepBleVpD0F16HvCOCy8"
-        },
-        {
-          "url": "https://deeparrival.com/news/breeze-tampa-st-thomas-jamaica-nonstops-december-16-2026/",
-          "title": "Breeze Tampa Nonstops to St. Thomas Start Dec. 16, Jamaica Dec. 19",
-          "publisher": "deeparrival.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5qfP3fkbNWcTDhyllcBHQQww1xe1WspBZ6rzZuUvA9Nzg0bMMiLNSLsnRBVU"
-        }
-      ]
-    },
-    {
-      "query": "storm warning",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/briefing/thanksgiving-travel-delays.html",
-        "https://www.cbsnews.com/detroit/video/thanksgiving-holiday-travel-rush-begins/",
-        "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwYVCVQrib-CFK1uNpvg5eTfzl2mjH0K0BJkcKXNahxAWTE0GM0sWQi1irN0I",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnkECiYSpHCaV8tDI-J09Z7ysu1170uFUhQruoHLm-0veXTXDm3egBUmf_2Bs",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/25/briefing/thanksgiving-travel-delays.html",
-          "title": "Thanksgiving Travel",
+          "url": "https://www.nytimes.com/athletic/7809387/2026/11/25/raheem-sterling-driving-suspended-sentence/",
+          "title": "Raheem Sterling given suspended prison sentence for dangerous driving, nitrous oxide possession",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwYVCVQrib-CFK1uNpvg5eTfzl2mjH0K0BJkcKXNahxAWTE0GM0sWQi1irN0I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnkECiYSpHCaV8tDI-J09Z7ysu1170uFUhQruoHLm-0veXTXDm3egBUmf_2Bs"
         },
         {
-          "url": "https://www.cbsnews.com/detroit/video/thanksgiving-holiday-travel-rush-begins/",
-          "title": "Thanksgiving holiday travel rush begins",
+          "url": "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o",
+          "title": "Footballer Raheem Sterling given suspended sentence for dangerous driving",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpUQglQ4PPjWjSv10qEa90W41lbXkQ_BAMt2xrt6R-0Qcn4iK7hTad-EJwMgA"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
+          "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEAmo-xg9hF7gLMeyZSeOex0nBvoI2YhnsNXK-PzAn7_0eZE4dEZSafP70QjU"
+        }
+      ]
+    },
+    {
+      "query": "amanda seyfried you can see everything",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T12:40:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
+        "https://www.theguardian.com/commentisfree/2026/nov/24/you-can-see-everything-elizabeth-holmes-eyes",
+        "https://theconversation.com/you-can-see-everything-a-mind-bending-odyssey-that-will-leave-you-questioning-what-you-see-297326"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCx_wi1d0yQgDw1MGcV0Ap8Ua2HRb68DMHCaY8HK4xS_YS1QFOokpvgqtBlo",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
+          "title": "‘You Can See Everything’ Arrives On Streaming: Where To Watch Elizabeth Holmes Documentary",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCx_wi1d0yQgDw1MGcV0Ap8Ua2HRb68DMHCaY8HK4xS_YS1QFOokpvgqtBlo"
+        },
+        {
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/24/you-can-see-everything-elizabeth-holmes-eyes",
+          "title": "You Can See Everything in Elizabeth Holmes’s unblinking eyes. Or can you? | Jason Okundaye",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIR-FCtSuSpL_NZ2OjWcFq6GzzlobjDnBjQ8FU7fKvWchRu1SUUbJtoiQqJo"
+        },
+        {
+          "url": "https://theconversation.com/you-can-see-everything-a-mind-bending-odyssey-that-will-leave-you-questioning-what-you-see-297326",
+          "title": "You Can See Everything – a mind-bending odyssey that will leave you questioning what you see",
+          "publisher": "The Conversation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcr4yHUxRILt-baOT2haXhGLJvLRUJZKffUwFu1pOQLCfClwKqhB5GBuwAJxc"
+        }
+      ]
+    },
+    {
+      "query": "princess cruises",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
+        "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people",
+        "https://www.nbcmiami.com/news/local/passengers-on-board-caribbean-princess/3891844/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgGaHmjmeC95eiM6cHbUScrT6RHz3gJKKPulLFykrcWpZLtEFIAvJQ-5fFnQ",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
+          "title": "Cruise ship returns to Fort Lauderdale with nearly 150 sick passengers, crew members after 12-day journey",
           "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_yPMxyT2ZzZDrL6mgeEAxHTYCO92em6pDI7Lk7AEFVegs1rOKfktbDXalZtI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgGaHmjmeC95eiM6cHbUScrT6RHz3gJKKPulLFykrcWpZLtEFIAvJQ-5fFnQ"
         },
         {
-          "url": "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
-          "title": "Travelers are worried about airline tech meltdowns ahead of Thanksgiving. Should they be?",
+          "url": "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people",
+          "title": "Vomiting and Diarrhea Sweep Through Cruise Ship, Sickening Nearly 150 People",
+          "publisher": "Fodors Travel Guide",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjLcFVKmVl9G9JBhPIwv4VRW9AE9sd7F5HKcq2BFtOc1rQeMk08JfPD4H2RwI"
+        },
+        {
+          "url": "https://www.nbcmiami.com/news/local/passengers-on-board-caribbean-princess/3891844/",
+          "title": "Caribbean Princess cruise ship docks in Port Everglades after 148 sickened by unknown G.I. outbreak",
+          "publisher": "NBC 6 South Florida",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTixr5vqYlysunWIRXpmbt2CXY3zcZr1fhknqqEsAdOMVi1DwjYIM7_ku-Dw6U"
+        }
+      ]
+    },
+    {
+      "query": "lowes black friday ad",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/life/lowes-black-friday-free-mystery-bucket-giveaway-2026",
+        "https://www.cleveland.com/news/2026/11/is-lowes-open-on-thanksgiving-2026.html",
+        "https://www.yahoo.com/news/videos/stores-offer-prizes-attract-shoppers-214652686.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7_bFhyDb6wBBabN9G9XCDPTnEleVrKoSVIEAMASBoG1-eC77FkNcfkQzJi8",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/life/lowes-black-friday-free-mystery-bucket-giveaway-2026",
+          "title": "Lowe’s is giving away $15 million in Black Friday prizes: How to claim free Mystery Buckets and $2,000 appliances",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7_bFhyDb6wBBabN9G9XCDPTnEleVrKoSVIEAMASBoG1-eC77FkNcfkQzJi8"
+        },
+        {
+          "url": "https://www.cleveland.com/news/2026/11/is-lowes-open-on-thanksgiving-2026.html",
+          "title": "Is Lowe’s open on Thanksgiving 2026?",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErniqawHZk7gXwfTPt2cxahwwN42i5GJrV3wk2_qPGVoSz9siaaUj9KuZqAk"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/stores-offer-prizes-attract-shoppers-214652686.html",
+          "title": "Stores offer prizes to attract shoppers amid growing online shopping trend",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhKfTMBERXBhPQASJP_C6qW60Rbu1DA_LDBiIUKwHKxMREGW7pTEMZJ30Ymr4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKR8zrv45VZC9UqitvohELxXLRQTeysIHtF7PI2sgDOOPcjRXEF92JXMwMJy0"
+        }
+      ]
+    },
+    {
+      "query": "giant",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T12:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/legal/litigation/chinas-huawei-convicted-us-criminal-trial-stemming-iran-business-2026-11-24/",
+        "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-63fc5211",
+        "https://www.bbc.com/news/articles/cmy49ngydqzpo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSimjjYLugR4qoUnyF36_KYkzAiXxThKzuJe79a19qGicN3jOnWLd8NaSHMfTM",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/legal/litigation/chinas-huawei-convicted-us-criminal-trial-stemming-iran-business-2026-11-24/",
+          "title": "China's Huawei convicted in sprawling US criminal trial over Iran business",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSimjjYLugR4qoUnyF36_KYkzAiXxThKzuJe79a19qGicN3jOnWLd8NaSHMfTM"
+        },
+        {
+          "url": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-63fc5211",
+          "title": "The Morning Risk Report: China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqCOK9jh9F6-poymfbr--ToO0vdnu8e4p8OqIiWmK4syIreidbwtQprxQlA4o"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cmy49ngydqzpo",
+          "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrWwlsU1guChk4Uh6-FAsF23Y4hvezD-CZi53k15p6frsyc3L6gN4vHNQC1Pw"
+        }
+      ]
+    },
+    {
+      "query": "nvidia share price sell off",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/vanguard-p-500-etf-investors-201202036.html",
+        "https://www.investors.com/etfs-and-funds/etfs/nvidias-stock-is-wild-check-out-these-related-etfs/",
+        "https://seekingalpha.com/article/4971740-nvidia-upheaval-21-percent-yielding-portfolio-changes-and-my-new-watchlist"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDi4Vh-kPsXYPzw1noHSBRyh8hOgerME3x9cL2WnARzgxXrlBppzz8cbx33BE",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/vanguard-p-500-etf-investors-201202036.html",
+          "title": "Should Vanguard S&P 500 ETF Investors Be Worried About the Downturn in Nvidia and AI Stocks?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDi4Vh-kPsXYPzw1noHSBRyh8hOgerME3x9cL2WnARzgxXrlBppzz8cbx33BE"
+        },
+        {
+          "url": "https://www.investors.com/etfs-and-funds/etfs/nvidias-stock-is-wild-check-out-these-related-etfs/",
+          "title": "Think Nvidia's Stock Is Wild? Check Out These Related ETFs",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLsk4Adyj9fLA-4dg8O9gUE7xVxbx-8Gvuk6TZZg6bem_O1raTXVcyTzrJjU"
+        },
+        {
+          "url": "https://seekingalpha.com/article/4971740-nvidia-upheaval-21-percent-yielding-portfolio-changes-and-my-new-watchlist",
+          "title": "Nvidia Upheaval, 21% Yielding Portfolio Changes, And My New Watchlist",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ538F7xciHpYVfxgxzJJO8x9ApOkWWdrBZ0cR0BZTCWsw5F5dSQqMcqsmPQ0"
+        }
+      ]
+    },
+    {
+      "query": "mira star red giant eruption alma",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:30:00Z",
+      "related_news_urls": [
+        "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
+        "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
+        "https://www.skyatnightmagazine.com/news/mira-a-alma-loop-alma-image"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvf1MjpSn6SAgeoIUButPVIZIvEnhCfXHI-ZJooW-nrTL-_ze1kiNERA59oQ",
+      "image_credit": "Phys.org",
+      "news": [
+        {
+          "url": "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
+          "title": "Star's record eruption shows how key elements can spread through space",
+          "publisher": "Phys.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvf1MjpSn6SAgeoIUButPVIZIvEnhCfXHI-ZJooW-nrTL-_ze1kiNERA59oQ"
+        },
+        {
+          "url": "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
+          "title": "A Gigantic Stellar Eruption Spreads Planetary Material Into Space",
+          "publisher": "Universe Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUR25h-Skz9YyLZNT5O-BxBKIFGcA_Q99p3BzKd1nSjrY0r7QG_mgeKLL_nEg"
+        },
+        {
+          "url": "https://www.skyatnightmagazine.com/news/mira-a-alma-loop-alma-image",
+          "title": "This is what a star looks like up close. What's that strange loop shooting outwards? Scientists say it could hold the key to life on Earth",
+          "publisher": "BBC Sky at Night Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXfMSn1Koe27wPocll0_EvikuPQhRkylEDhVEXX_mnUi8bbJ7E29U4ATnnyyY"
+        }
+      ]
+    },
+    {
+      "query": "economic calendar",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:30:00Z",
+      "related_news_urls": [
+        "https://seekingalpha.com/news/4676170-wednesdays-economic-calendar",
+        "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-30112026-06122026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
+      "image_credit": "Seeking Alpha",
+      "news": [
+        {
+          "url": "https://seekingalpha.com/news/4676170-wednesdays-economic-calendar",
+          "title": "Wednesday’s Economic Calendar",
+          "publisher": "Seeking Alpha",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
+        },
+        {
+          "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-30112026-06122026/",
+          "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (30.11.2026–06.12.2026)",
+          "publisher": "LiteFinance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcZnTYloc63gcFH93QdJ5HGkSb3kFl7q-G5CEAS2GvnakweG8-0ZGoWRx5-Dc"
+        }
+      ]
+    },
+    {
+      "query": "buffalo weather",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:30:00Z",
+      "related_news_urls": [
+        "https://www.wgrz.com/article/sports/nfl/bills/buffalo-bills-bringing-back-familiar-holiday-look-for-thanksgiving-day-game-against-kansas-city/71-f99ad4fe-4539-4e5d-8ddb-e3dd1c1c2bd8",
+        "https://sports.yahoo.com/nfl/articles/bills-vs-chiefs-tickets-thanksgiving-220516999.html",
+        "https://www.buffalobills.com/news/buffalo-bills-vs-kansas-city-chiefs-where-to-watch-stream-and-listen-nfl-thanksgiving-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2VPF3xl_9rDO7SL6VDMzGbHF1f3lliabJJBuhRJshn66eRzuAMZa4WXPeVE",
+      "image_credit": "WGRZ",
+      "news": [
+        {
+          "url": "https://www.wgrz.com/article/sports/nfl/bills/buffalo-bills-bringing-back-familiar-holiday-look-for-thanksgiving-day-game-against-kansas-city/71-f99ad4fe-4539-4e5d-8ddb-e3dd1c1c2bd8",
+          "title": "Bills bringing back familiar holiday look for Thanksgiving Day game against Kansas City",
+          "publisher": "WGRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2VPF3xl_9rDO7SL6VDMzGbHF1f3lliabJJBuhRJshn66eRzuAMZa4WXPeVE"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/bills-vs-chiefs-tickets-thanksgiving-220516999.html",
+          "title": "Bills vs. Chiefs tickets Thanksgiving NFL tickets just got a lot cheaper",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT39eZzvENVCuO4mrYknv2J9x_RmwgxFZbCLIUqQMyjafjYFTYuwiTw5xNX1U"
+        },
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-vs-kansas-city-chiefs-where-to-watch-stream-and-listen-nfl-thanksgiving-2026",
+          "title": "Buffalo Bills vs. Kansas City Chiefs | Where to watch, stream and listen | NFL Thanksgiving 2026",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNg3ZR5ixL7wF0FO9T267SyQWnUubzpjeSbMxx3ED-cKlXrBda-iuHqaEK8Qs"
         }
       ]
     }
