@@ -3,76 +3,321 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T21:31:19.598022Z",
+  "checked_at": "2026-11-25T22:01:12.117365Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jojo romero",
+      "query": "scott bessent",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T21:10:00Z",
+      "published_at": "2026-11-25T21:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7812492/2026/11/25/yankees-adrian-morejon-alex-vesia/",
-        "https://bleacherreport.com/articles/25537358-new-yankees-rumors-adrian-morejon-many-suitors-emerge-amid-mlb-free-agency",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-padres-adding-jojo-romero-to-bullpen"
+        "https://www.politico.com/news/2026/11/25/bessent-debt-treasury-trump-democrats-congress-01182853",
+        "https://www.nytimes.com/2026/11/18/business/economy/us-debt-limit.html",
+        "https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNlsIOf3CLBGBeJWMgVHF-zFHC-Zkvb62lhEoaJYP6aDiJcL2-zVePFqlimkY",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTksQSDUSKCdzUYRZ2Z1C2D82X7y_hUjBPH9W3mAjhnLHIBl1GjzggpiWtpJgo",
+      "image_credit": "Politico",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7812492/2026/11/25/yankees-adrian-morejon-alex-vesia/",
-          "title": "Yankees, eyeing reliever Adrian Morejon, are also interested in Alex Vesia: Sources",
+          "url": "https://www.politico.com/news/2026/11/25/bessent-debt-treasury-trump-democrats-congress-01182853",
+          "title": "Bessent insulted Democrats. Now he needs to make a deal with them.",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTksQSDUSKCdzUYRZ2Z1C2D82X7y_hUjBPH9W3mAjhnLHIBl1GjzggpiWtpJgo"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/18/business/economy/us-debt-limit.html",
+          "title": "The U.S. Could Hit Its Debt Limit by February",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNlsIOf3CLBGBeJWMgVHF-zFHC-Zkvb62lhEoaJYP6aDiJcL2-zVePFqlimkY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tG7QiwhY6YKBvoTyO4RCkWIiBMlutuctrZEchWpuI_nDzmsm9PRIeIoDuf4"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537358-new-yankees-rumors-adrian-morejon-many-suitors-emerge-amid-mlb-free-agency",
-          "title": "New Yankees Rumors on Adrian Morejon as 'Many' Suitors Emerge amid MLB Free Agency",
-          "publisher": "Bleacher Report",
+          "url": "https://www.semafor.com/article/11/19/2026/thune-trump-and-democrats-will-have-to-negotiate-on-debt",
+          "title": "Thune: Trump and Democrats will have to negotiate on debt",
+          "publisher": "Semafor",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTAdRpwLDWScbHrTSY73a9oVxoSKj6WJZHNdqL5c3ujgJ4W18O1SRpd-MDCWc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-padres-adding-jojo-romero-to-bullpen",
-          "title": "Report: Padres adding JoJo Romero to bullpen",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaXUkAftQVI-fVQprQAngvBEuRTdiRPG3QNrGiVuXJKI2x3gBik5OJRC2uWTg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4RiaiW4SjugXpnuSsxgSm2h4Z50rKRdz-6fwvyfjqKQmpX41YRzOkpR0Hwdg"
         }
       ]
     },
     {
-      "query": "bruno fernandes",
+      "query": "akron basketball",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T21:10:00Z",
+      "published_at": "2026-11-25T21:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50591059/transfer-rumors-news-manchester-united-fernandes",
-        "https://www.manutd.com/en/news/bruno-fernandes-contract-news-before-sporting-match",
-        "https://www.bbc.com/sport/football/articles/cq8j4e8nlvm1o"
+        "https://www.beaconjournal.com/story/sports/college/zips/2026/11/24/akron-zips-basketball-score-belmont-game-kamrin-oriol-stats/92946185007/",
+        "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+        "https://www.espn.com/video/clip/_/id/50585282/game-highlights"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeW_ijay07tud2ztfwrrXY9BpiI33YOSuv-IezxFW3Y87x7Wg8AoB5FHx1rw0",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtoh2f--l5yld5MiUkS3AJ_C7hpQc2MrybuAN7gigq-9cBJUFiipf9Hh6QW7E",
+      "image_credit": "Akron Beacon Journal",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50591059/transfer-rumors-news-manchester-united-fernandes",
-          "title": "Transfer rumors, news: Manchester United's Bruno Fernandes eyed by Juventus",
+          "url": "https://www.beaconjournal.com/story/sports/college/zips/2026/11/24/akron-zips-basketball-score-belmont-game-kamrin-oriol-stats/92946185007/",
+          "title": "Kamrin Oriol lights up in Orlando, Akron men's basketball routs Belmont",
+          "publisher": "Akron Beacon Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtoh2f--l5yld5MiUkS3AJ_C7hpQc2MrybuAN7gigq-9cBJUFiipf9Hh6QW7E"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/23/mvc-basketball-predictions-computer-picks-and-best-bets-november-24-2/",
+          "title": "MVC Basketball Predictions, Computer Picks and Best Bets | November 24",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPrrFYgJEDfi9ruw9NGIll-lNaRY8cBhxBGwXhFzaVv2y01F8VjhxlYgzH7zg"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50585282/game-highlights",
+          "title": "Belmont Bruins vs. Akron Zips: Game Highlights",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeW_ijay07tud2ztfwrrXY9BpiI33YOSuv-IezxFW3Y87x7Wg8AoB5FHx1rw0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQY5cSWZgRGRdPW5IxCcowGB5_4FvqSUpbkpJzBqWoHEJ2x15qm2mvbXXAK4Y"
+        }
+      ]
+    },
+    {
+      "query": "motiejus krivas",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T21:40:00Z",
+      "related_news_urls": [
+        "https://www.fanduel.com/research/arizona-vs-providence-college-basketball-predictions-odds-picks-best-bets-for-11-24-2026",
+        "https://theprovidencecrier.com/2026/11/24/arizonas-big-three-too-much-for-friars/",
+        "https://www.couriernews.com/sports/providence-arizona-basketball/image_29193aff-d415-5882-b649-0a55f9ef5026.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qggVjhyv01XkcAxVBPQMWPVzsia-tsmAg2mw6QcCPt5md3EdHCMgrcn-CAw",
+      "image_credit": "FanDuel",
+      "news": [
+        {
+          "url": "https://www.fanduel.com/research/arizona-vs-providence-college-basketball-predictions-odds-picks-best-bets-for-11-24-2026",
+          "title": "Arizona vs Providence College Basketball Prediction, Odds, Picks, Best Bets for Nov. 24",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qggVjhyv01XkcAxVBPQMWPVzsia-tsmAg2mw6QcCPt5md3EdHCMgrcn-CAw"
         },
         {
-          "url": "https://www.manutd.com/en/news/bruno-fernandes-contract-news-before-sporting-match",
-          "title": "Fernandes: Wins are important, not my contract",
-          "publisher": "Manchester United",
+          "url": "https://theprovidencecrier.com/2026/11/24/arizonas-big-three-too-much-for-friars/",
+          "title": "Arizona’s Big Three Too Much for Friars",
+          "publisher": "The Providence Crier",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLe4iRWkdB7Z6dA0xZv8_GqpjCkjb6fmYRKk9vhI-ze6sYNIBF1zjkCnktoM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYvf1WCGmp0Fm9rRKcOOSr_HifaAzYfGmAjojxUWON5qhjmpGHcxnZ-eHbjkY"
         },
         {
-          "url": "https://www.bbc.com/sport/football/articles/cq8j4e8nlvm1o",
-          "title": "Football gossip: Fernandes, Matanovic, Odegaard, Havertz, Richarlison, Grealish, Hudson-Odoi, Araujo",
-          "publisher": "BBC",
+          "url": "https://www.couriernews.com/sports/providence-arizona-basketball/image_29193aff-d415-5882-b649-0a55f9ef5026.html",
+          "title": "Providence Arizona Basketball",
+          "publisher": "couriernews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSflvYrEGrCB9kVHKjCk6kXpfSw3cjTO4fjuJwFBBfeAc-usnxfL4cQMZLh6bQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA2s3_ltDVV8Zxp-1zewX38CKw5PSGwg8IAtwAf54OULPZ683MroznzdXgGB4"
+        }
+      ]
+    },
+    {
+      "query": "thanksgiving dog show",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T21:30:00Z",
+      "related_news_urls": [
+        "https://www.9news.com/article/life/holidays/thankful/how-to-watch-the-2026-national-dog-show-this-thanksgiving/73-758f3dcf-eeba-4ace-8c98-25b86a37f15a",
+        "https://www.nbcsports.com/national-dog-show/news/can-soleil-the-belgian-sheepdog-shine-again-at-the-2026-national-dog-show",
+        "https://www.today.com/video/meet-the-3-new-breeds-debuting-at-the-25th-national-dog-show-274161221615"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR83VTeR5ZBMN670Fbi9oKd50HiPBU-JLCVecyg1LCa_N1mwVSQMrE2ZP-qWHM",
+      "image_credit": "9News",
+      "news": [
+        {
+          "url": "https://www.9news.com/article/life/holidays/thankful/how-to-watch-the-2026-national-dog-show-this-thanksgiving/73-758f3dcf-eeba-4ace-8c98-25b86a37f15a",
+          "title": "How to watch the 2026 National Dog Show this Thanksgiving",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR83VTeR5ZBMN670Fbi9oKd50HiPBU-JLCVecyg1LCa_N1mwVSQMrE2ZP-qWHM"
+        },
+        {
+          "url": "https://www.nbcsports.com/national-dog-show/news/can-soleil-the-belgian-sheepdog-shine-again-at-the-2026-national-dog-show",
+          "title": "Can Soleil the Belgian Sheepdog shine again at the 2026 National Dog Show?",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfMoV8KW1k0nSBfh-yomWOAnab1t7QxRIBfPGu5wRBEq5I0nMiN9BcBQ4-U3U"
+        },
+        {
+          "url": "https://www.today.com/video/meet-the-3-new-breeds-debuting-at-the-25th-national-dog-show-274161221615",
+          "title": "Meet the 3 New Breeds Debuting at the 25th National Dog Show",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSkyCQHO_ZyYWjE-djb-nKNY1s7G3lJct4gaOOpOZy0PRafV7UxT0gO8D0Esnw"
+        }
+      ]
+    },
+    {
+      "query": "krivas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T21:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-basketball/news/ncaa-hoops-picks-predictions-duke-vs-uconn-virginia-marquette-top-games-wednesday/",
+        "https://www.ctinsider.com/sports/uconn-mens-basketball/article/duke-game-contract-amazon-las-vegas-22548425.php",
+        "https://247sports.com/college/basketball/article/the-breakfast-buffet-duke-vs-uconn-arizona-motiejus-krivas-ole-miss-depaul-293290606/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/ncaa-hoops-picks-predictions-duke-vs-uconn-virginia-marquette-top-games-wednesday/",
+          "title": "College basketball picks: Predictions for Duke vs. UConn, Virginia vs. Marquette, more top games Wednesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
+        },
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-mens-basketball/article/duke-game-contract-amazon-las-vegas-22548425.php",
+          "title": "Inside the UConn-Duke men's basketball contract: $333K and Amazon introduction",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn_pcGw3OvaG8-4Mk56DB8W-e3Udtf3Xx7LQTLWKk8gmAeTp-WUwjxLtLvQdY"
+        },
+        {
+          "url": "https://247sports.com/college/basketball/article/the-breakfast-buffet-duke-vs-uconn-arizona-motiejus-krivas-ole-miss-depaul-293290606/",
+          "title": "The Breakfast Buffet: Duke vs. UConn, Arizona's Motiejus Krivas vs. Ole Miss and DePaul's program-changing win",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4P5MsE3-J1s0NJaKTaSjJKBjbyLAsFo-jRuaRgDVZQUjrJvXcx-6uCYojOJ0"
+        }
+      ]
+    },
+    {
+      "query": "andy taylor",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T21:20:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/duran-duran-guitarist-andy-taylor-dead-obituary-1234634531/",
+        "https://news.sky.com/story/duran-duran-guitarist-andy-taylor-has-died-aged-65-13616421",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/duran-duran-guitarist-andy-taylor-212545025.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIiyS8cvd89BeNgiE4l9kH5Ajtq2Hv6E6mOWTnYxISA-mq9M2aC6CFflP5cg",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/duran-duran-guitarist-andy-taylor-dead-obituary-1234634531/",
+          "title": "Duran Duran Guitarist Andy Taylor Dead at 65",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYIiyS8cvd89BeNgiE4l9kH5Ajtq2Hv6E6mOWTnYxISA-mq9M2aC6CFflP5cg"
+        },
+        {
+          "url": "https://news.sky.com/story/duran-duran-guitarist-andy-taylor-has-died-aged-65-13616421",
+          "title": "Duran Duran guitarist Andy Taylor has died at the age of 65.",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpRs0oKvelCanY9cN-jTFJbj6IlqhuKtVxN8OXZaXFQkl7WGIu5xP_x1MFUKw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/duran-duran-guitarist-andy-taylor-212545025.html",
+          "title": "Duran Duran Guitarist Andy Taylor Dies At 65",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRW6ABad0DCAFIlty8MZfSkrCHIxszplS9Ti5a6HIHIgEktvOklZj94VmQiTg"
+        }
+      ]
+    },
+    {
+      "query": "philadelphia thanksgiving day parade",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T21:20:00Z",
+      "related_news_urls": [
+        "https://6abc.com/post/weather-preps-ahead-6abc-dunkin-thanksgiving-day-parade-philadelphia/20076761/",
+        "https://www.nbcphiladelphia.com/news/local/thanksgiving-in-philly-what-to-know-for-the-parade-travel-and-a-looming-storm/4502324/",
+        "https://www.usatoday.com/story/news/2026/11/25/traffic-road-closure-updates-philadelphia-thanksgiving-parade-2026/92958470007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEC0tv_FTa9ImQk9yfSSFznsZ6e30GzCgGLW4EblKaCerVvjL1yBZG6I4mVH8",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/post/weather-preps-ahead-6abc-dunkin-thanksgiving-day-parade-philadelphia/20076761/",
+          "title": "Balloons grounded for 6abc Dunkin' Thanksgiving Day Parade in Philadelphia out of abundance of safety: Organizers",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEC0tv_FTa9ImQk9yfSSFznsZ6e30GzCgGLW4EblKaCerVvjL1yBZG6I4mVH8"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/thanksgiving-in-philly-what-to-know-for-the-parade-travel-and-a-looming-storm/4502324/",
+          "title": "Storms to impact Philly Thanksgiving parade, Macy's postpones NYC parade",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWKwn10SABrd-CfrtQncj9JjOhhdpX03T3a66qDNLuRsWJQoQgmX_QGNmhB6A"
+        },
+        {
+          "url": "https://www.usatoday.com/story/news/2026/11/25/traffic-road-closure-updates-philadelphia-thanksgiving-parade-2026/92958470007/",
+          "title": "When is the Philadelphia Thanksgiving Parade 2026? Road closures, more",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgbGzrOTaiOjTk6RNT2zGYj9bHLPNyFnKjMfAdV6v1EvpeG3i2glVxGQP0tIw"
+        }
+      ]
+    },
+    {
+      "query": "is cvs open on thanksgiving",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T21:20:00Z",
+      "related_news_urls": [
+        "https://www.khou.com/article/news/local/texas/houston-texas-stores-open-on-thanksgiving-2026/285-90871b79-c030-4ce9-bd48-c19c40e7f347",
+        "https://www.kcentv.com/article/news/local/whats-open-thanksgiving-waco-temple-killeen-surrounding-area/500-f50eaaf2-6e64-48ca-9f9f-b320020fa08e",
+        "https://www.click2houston.com/news/local/2026/11/23/thanksgiving-day-2026-whats-open-and-whats-not/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1L0E8S0-btYiXG8NHC9zCQhl2nw8i1AH6SK5GR2xz-31oY5eyn9kxYqmQ3M",
+      "image_credit": "KHOU",
+      "news": [
+        {
+          "url": "https://www.khou.com/article/news/local/texas/houston-texas-stores-open-on-thanksgiving-2026/285-90871b79-c030-4ce9-bd48-c19c40e7f347",
+          "title": "Here are the Houston stores open and closed on Thanksgiving 2026",
+          "publisher": "KHOU",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj1L0E8S0-btYiXG8NHC9zCQhl2nw8i1AH6SK5GR2xz-31oY5eyn9kxYqmQ3M"
+        },
+        {
+          "url": "https://www.kcentv.com/article/news/local/whats-open-thanksgiving-waco-temple-killeen-surrounding-area/500-f50eaaf2-6e64-48ca-9f9f-b320020fa08e",
+          "title": "Here's what's open on Thanksgiving in Waco, Temple, Killeen and the surrounding area",
+          "publisher": "kcentv.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmefNetXJQJg6zltS-_VqWHrt9VAO1tNPXus2YH8qIm_weJ_TlbFQOG-g6ghE"
+        },
+        {
+          "url": "https://www.click2houston.com/news/local/2026/11/23/thanksgiving-day-2026-whats-open-and-whats-not/",
+          "title": "Thanksgiving Day 2026: What’s open and closed across Greater Houston? Grocery stores, restaurants, retailers and more",
+          "publisher": "Click2Houston",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTna3IH-yQCYy7trh-CTpDCkXrhNbXp_A0oMSgJaciCLJ-3R0iuZwh0Kub6xRQ"
+        }
+      ]
+    },
+    {
+      "query": "jojo romero",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T21:10:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/padres/video/jojo-romero-reportedly-signs-with-the-padres",
+        "https://www.mlbtraderumors.com/2026/11/padres-to-sign-jojo-romero.html",
+        "https://www.si.com/mlb/brewers/onsi/lefty-reliever-jojo-romero-signs-padres-free-agency-michael3"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScmsiNN8cbzfjK9fitphcjVge5GIc3FWbFWBlbXL-Np13TXVOaYJjPwZlVhEk",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/padres/video/jojo-romero-reportedly-signs-with-the-padres",
+          "title": "JoJo Romero reportedly signs with the Padres",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScmsiNN8cbzfjK9fitphcjVge5GIc3FWbFWBlbXL-Np13TXVOaYJjPwZlVhEk"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/padres-to-sign-jojo-romero.html",
+          "title": "Padres To Sign JoJo Romero",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG0ScrtaDvGelsx2pXqwVkgc6q7GedQq8vY6g3cc0nxx8XpMscg0JhlYbe-kM"
+        },
+        {
+          "url": "https://www.si.com/mlb/brewers/onsi/lefty-reliever-jojo-romero-signs-padres-free-agency-michael3",
+          "title": "Brewers Lose Lefty JoJo Romero to Padres in Free Agency",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS247Bmr8zzc61mEwwD1MGZSZJRemxT15okWrbUTejvYi7IUO7vK8ZUgeW9FpM"
         }
       ]
     },
@@ -108,251 +353,6 @@
           "publisher": "玩具人 TOY PEOPLE",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUkwR9Zdu9AE5iPt1LmOxa-NVWmUtBmWovHGs7mhcz0O1ss7vha7IV3uvJ6Vs"
-        }
-      ]
-    },
-    {
-      "query": "heat vs 76ers",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T21:00:00Z",
-      "related_news_urls": [
-        "https://sixers.com/news/sixers-vs-heat-nba-cup-game-preview-injury-report-and-how-to-watch-11-25-2026",
-        "https://bleacherreport.com/liveblogs/25537647-miami-heat-vs-philadelphia-76ers-live-nba-updates-scores-and-highlights",
-        "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-standings-scores-cup-live-updates-2026/y4wdX360xLpP/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80F3akil83GqXuk4tq_8L8v8mF7TDGQam_StKYhLbwHpkFdZJSOpNQX-8LRk",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://sixers.com/news/sixers-vs-heat-nba-cup-game-preview-injury-report-and-how-to-watch-11-25-2026",
-          "title": "Sixers vs. Heat NBA Cup Preview: Thanksgiving Eve Matchup",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS80F3akil83GqXuk4tq_8L8v8mF7TDGQam_StKYhLbwHpkFdZJSOpNQX-8LRk"
-        },
-        {
-          "url": "https://bleacherreport.com/liveblogs/25537647-miami-heat-vs-philadelphia-76ers-live-nba-updates-scores-and-highlights",
-          "title": "Miami Heat vs. Philadelphia 76ers Live NBA Updates, Scores and Highlights",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzSP4Q6xbn18yqJe4GU0C3fCaXAoJpe8pqtmJSksNWPnpuqGXrFnBRiSSYKXI"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-standings-scores-cup-live-updates-2026/y4wdX360xLpP/",
-          "title": "NBA season live updates: Heat-76ers kicks off NBA Cup play featuring nine games",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-g2WasyUvOb7Wh2c1gBI-XReVeytlPoqjcwYX8WkTQ-jbHPk943KV8R__uM4"
-        }
-      ]
-    },
-    {
-      "query": "molly miller",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T21:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/forks-remain-up-molly-miller-arizona-state-undefeated-court",
-        "https://sports.yahoo.com/womens-college-basketball/articles/molly-miller-continues-delivering-fiery-131802477.html",
-        "https://www.the-sun.com/sport/17326104/molly-miller-arizona-state-basketball/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlTxN8vnOX0LdC7LisGJP2z7kYcgaQq9HLXjBkMgoYBacNv5IYSMmfL0NcqsU",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/forks-remain-up-molly-miller-arizona-state-undefeated-court",
-          "title": "Forks remain up as Molly Miller and Arizona State are still undefeated on and off the court",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlTxN8vnOX0LdC7LisGJP2z7kYcgaQq9HLXjBkMgoYBacNv5IYSMmfL0NcqsU"
-        },
-        {
-          "url": "https://sports.yahoo.com/womens-college-basketball/articles/molly-miller-continues-delivering-fiery-131802477.html",
-          "title": "Molly Miller continues delivering fiery pre-game speeches to Arizona State",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRl8H0OgkcdH8596hbtjE7sQ-NrLkGxp9-eF8YgPJleF3JppzHnQ0Zf7cy7_H0"
-        },
-        {
-          "url": "https://www.the-sun.com/sport/17326104/molly-miller-arizona-state-basketball/",
-          "title": "Arizona State basketball coach Molly Miller wows with gameday fit as team continues to be undefeated - 'gorgeous'",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWEDkRtqHxDF5l-Yno5yo5Hgh8FdE9e9hgNOSuuA35AkKykzdoEG7do1oSabc"
-        }
-      ]
-    },
-    {
-      "query": "start 'em, sit 'em",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T21:00:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-12",
-        "https://sports.yahoo.com/general/articles/week-12-fantasy-football-rankings-001858428.html",
-        "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEy5BFbJ_QaqZucoHwvKo6ovYQJgTBjDCeYDkrnKb5Xt4ChYzAMthlif-iqrI",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-12",
-          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Quarterbacks for Week 12",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEy5BFbJ_QaqZucoHwvKo6ovYQJgTBjDCeYDkrnKb5Xt4ChYzAMthlif-iqrI"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/articles/week-12-fantasy-football-rankings-001858428.html",
-          "title": "Week 12 Fantasy Football Rankings: QB",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCtZBds3zbJVJeykQo9Q8v6HlI8z-0lQ1IjrfnFqo05XqzUn4Pz4b3sOcymOE"
-        },
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow",
-          "title": "Fantasy playbook: Week 12 Shadow Reports, lineup locks and projected scores",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOGlDF21SB350ZrWXXF2XhcSnpwCjU0YlJYslc9WUlbfSZeae_2G2NP97ypnk"
-        }
-      ]
-    },
-    {
-      "query": "south dakota state basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T21:00:00Z",
-      "related_news_urls": [
-        "https://thesummitleague.org/news/2026/11/25/mens-basketball-summitmbb-weekly-notes-week-4-edition.aspx",
-        "https://sdsucollegian.com/35221/sports/jackrabbits-remain-undefeated/",
-        "https://acusports.com/news/2026/11/23/mens-basketball-wildcats-head-north-to-square-off-with-south-dakota-state"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_WbZh78wlPkLWnYkQ_umonSfq792BAAIfqgFmovEkpGa5wTmQPbKy5PIrCkw",
-      "image_credit": "The Summit League",
-      "news": [
-        {
-          "url": "https://thesummitleague.org/news/2026/11/25/mens-basketball-summitmbb-weekly-notes-week-4-edition.aspx",
-          "title": "#SummitMBB Weekly Notes: Week 4 Edition",
-          "publisher": "The Summit League",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_WbZh78wlPkLWnYkQ_umonSfq792BAAIfqgFmovEkpGa5wTmQPbKy5PIrCkw"
-        },
-        {
-          "url": "https://sdsucollegian.com/35221/sports/jackrabbits-remain-undefeated/",
-          "title": "Jackrabbits remain undefeated",
-          "publisher": "SDSU Collegian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREc6VD1oES9t3G0L20iIxM_cyrsvOfUiMCDYjVnswYnc4lIQSan2winmFC6L4"
-        },
-        {
-          "url": "https://acusports.com/news/2026/11/23/mens-basketball-wildcats-head-north-to-square-off-with-south-dakota-state",
-          "title": "Wildcats Head North to Square Off with South Dakota State",
-          "publisher": "Abilene Christian Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0kwVmMyyRGyhhQfQybGGc38SZSz1zOaT8arJUNE2E3xE0YILJXKxwSblKsDs"
-        }
-      ]
-    },
-    {
-      "query": "trump accounts",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T20:50:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-        "https://www.forbes.com/sites/saradorn/2026/11/25/elon-musk-and-spacex-pledge-matching-trump-account-contributions/",
-        "https://www.businessinsider.com/elon-musk-spacex-pledge-share-each-to-active-trump-account-2026-11"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSekuLZaDFTOe-h3vFt3OgtqitlAk72YuGYqT5mvc38JnphTB_YlJQoBTBP784",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/25/spacex-musk-trump-account-stock.html",
-          "title": "SpaceX, Musk pledge to donate a share each to active Trump Accounts",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSekuLZaDFTOe-h3vFt3OgtqitlAk72YuGYqT5mvc38JnphTB_YlJQoBTBP784"
-        },
-        {
-          "url": "https://www.forbes.com/sites/saradorn/2026/11/25/elon-musk-and-spacex-pledge-matching-trump-account-contributions/",
-          "title": "Elon Musk, SpaceX Pledge Stock Contributions To Children With Trump Accounts",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgKeebgVIOTeRa8s_Djuf4ZVMIQ6nDmq0pFAs8QY3DFK84o5QbtZN802Yzh7M"
-        },
-        {
-          "url": "https://www.businessinsider.com/elon-musk-spacex-pledge-share-each-to-active-trump-account-2026-11",
-          "title": "Elon Musk and SpaceX Pledge a Share Each to Every Active Trump Account",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjlI8qnZqox5jO6EDAvalL68GIFvO3PWwoS0KsD_ngRqTOQ1p8zA_34RM-oIo"
-        }
-      ]
-    },
-    {
-      "query": "illia zabarnyi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T20:40:00Z",
-      "related_news_urls": [
-        "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-nassr-club-ksa-2-1-al-sadd-sc-qat",
-        "https://en.as.com/soccer/ronaldo-closes-in-on-1000-as-joao-felix-scores-stunning-puskas-contender-f202611-n/",
-        "https://www.goal.com/en/news/postecoglou-refuses-to-smile-after-al-sadd-win-we-re-frustrated-by-al-ahli-defeat-and-suffering-from-bad-luck/blt1f907506426994bd"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxRghCZKG6YoHxVSi4BWgCAM_qXbwev27Bx9ZnBtmEhogeP7LGU5jv9cMUcjs",
-      "image_credit": "The AFC",
-      "news": [
-        {
-          "url": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-nassr-club-ksa-2-1-al-sadd-sc-qat",
-          "title": "MD5: Al Nassr Club (KSA) 2-1 Al Sadd SC (QAT)",
-          "publisher": "The AFC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxRghCZKG6YoHxVSi4BWgCAM_qXbwev27Bx9ZnBtmEhogeP7LGU5jv9cMUcjs"
-        },
-        {
-          "url": "https://en.as.com/soccer/ronaldo-closes-in-on-1000-as-joao-felix-scores-stunning-puskas-contender-f202611-n/",
-          "title": "Ronaldo closes in on 1,000 as João Félix scores stunning Puskás contender",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr5shOKGdJQgwHQZUMLUB93rOKivpxw9_BOib74gKWIs5x_niix1UflozXoA"
-        },
-        {
-          "url": "https://www.goal.com/en/news/postecoglou-refuses-to-smile-after-al-sadd-win-we-re-frustrated-by-al-ahli-defeat-and-suffering-from-bad-luck/blt1f907506426994bd",
-          "title": "Postecoglou refuses to smile after Al Sadd win: 'We're frustrated by Al-Ahli defeat and suffering from bad luck'",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpvEmSypbB_evSEZPD2BDwddL8ZUeho8M_EmRHeiV4sTbPuEgnPmvvyAqbidQ"
-        }
-      ]
-    },
-    {
-      "query": "is giannis playing today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T20:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/breaking-news/article/shai-gilgeous-alexander-giannis-antetokounmpo-sit-out-heats-victory-over-thunder-020641012.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/giannis-antetokounmpo-groin-now-probable-weds",
-        "https://www.miamiherald.com/sports/nba/miami-heat/article317819635.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9owmd9Fv8gXlK-KBAc1cZIf03M83TSq3QE2qeb-m86B_zpQpEs4Ak6zX_rVA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/shai-gilgeous-alexander-giannis-antetokounmpo-sit-out-heats-victory-over-thunder-020641012.html",
-          "title": "Shai-Gilgeous Alexander, Giannis Antetokounmpo sit out Heat's victory over Thunder",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9owmd9Fv8gXlK-KBAc1cZIf03M83TSq3QE2qeb-m86B_zpQpEs4Ak6zX_rVA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/giannis-antetokounmpo-groin-now-probable-weds",
-          "title": "Giannis Antetokounmpo (groin) now probable Weds.",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRanQyGh496i04uLMwJStfsiE_DbAnPp7XqUcQnAU38laIb0iPduRUqvKFSwVE"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/nba/miami-heat/article317819635.html",
-          "title": "After missing game with groin issue, Giannis feels ‘great’ ahead of Heat’s showdown vs. 76ers",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSWq0ED39D9zzqsyHZfsnPceUtTHZsHW2NTIcjdZneYo6g_Yk-KOdsNf6yLVs"
         }
       ]
     }
