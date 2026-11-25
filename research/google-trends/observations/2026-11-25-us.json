@@ -3,28 +3,336 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T07:01:35.965997Z",
+  "checked_at": "2026-11-25T07:31:18.996289Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "flood watch",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
+        "https://www.cbsnews.com/losangeles/news/southern-california-king-tides-orange-county-los-angeles-ventura-county-evacuation-warnings/",
+        "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y",
+      "image_credit": "ABC7 Bay Area",
+      "news": [
+        {
+          "url": "https://abc7news.com/live-updates/live-bay-area-weather-updates-san-francisco-recovers-severe-flooding-more-storms-king-tides-coming-northern-california/20069742/",
+          "title": "Live storm updates: Record king tides leave Bay Area roads flooded",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+        },
+        {
+          "url": "https://www.cbsnews.com/losangeles/news/southern-california-king-tides-orange-county-los-angeles-ventura-county-evacuation-warnings/",
+          "title": "Some evacuation warnings in effect as king tides batter Southern California coast",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8GKGwE9IDujBakaPP2XMjqY1AdYmY6WEppu5xu6jluPPDy1vppu3Zo6d-x8Q"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/weather/california-storm-king-tides-sf-la.html",
+          "title": "California King Tides Threaten ‘Extreme’ Coastal Flooding",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTy3bGyEoo51asYaZ9RolOqUUR6r3qhf-Fl3zQ-drF3qV1obmaJWWKOLLW72nw"
+        }
+      ]
+    },
+    {
+      "query": "white",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mlb/story/_/id/50587577/white-sox-tyrone-taylor-agree-2-year-17-million-deal",
+        "https://www.mlb.com/news/tyrone-taylor-white-sox-free-agent-contract",
+        "https://sports.yahoo.com/mlb/articles/cubs-lose-8-veteran-outfielder-224527987.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9FXwD02r7jU0cXXNi5wWrF-gh6dDSyK9PW1a47vNLoNLrpxWRH5f6dQOYBc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50587577/white-sox-tyrone-taylor-agree-2-year-17-million-deal",
+          "title": "Sources: White Sox, OF Tyrone Taylor agree to 2-year, $17 million deal",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9FXwD02r7jU0cXXNi5wWrF-gh6dDSyK9PW1a47vNLoNLrpxWRH5f6dQOYBc"
+        },
+        {
+          "url": "https://www.mlb.com/news/tyrone-taylor-white-sox-free-agent-contract",
+          "title": "Tyrone Taylor agrees to deal with White Sox, sticking in Chicago (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8AOupIO_xlqZ8HXTUSypyjUzIXDweKLeS6Td7k5Tuktqir7vwfcr0WBrmzRk"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/articles/cubs-lose-8-veteran-outfielder-224527987.html",
+          "title": "Cubs lose 8-year veteran outfielder to White Sox on $17 million contract",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScVxb7sELG16daOZ8JKKk5oGeaxNM6xvxoCoH4klFLkvi4HSR3xLotDxM7jr8"
+        }
+      ]
+    },
+    {
+      "query": "pink",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://www.indexjournal.com/community/self-regionals-pretty-in-pink-earns-best-of-show-and-golden-tusk-honors/article_53bbd4e7-9fe1-473f-9d3a-46d138c56279.html",
+        "https://oracleoftime.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds-pink-gold/",
+        "https://www.watchpro.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV3DnIZ05ccg11J4Uu6or5sbebm3-6mjiPG6yKGm8hTZfblfhlTH7F86NexY",
+      "image_credit": "Index-Journal",
+      "news": [
+        {
+          "url": "https://www.indexjournal.com/community/self-regionals-pretty-in-pink-earns-best-of-show-and-golden-tusk-honors/article_53bbd4e7-9fe1-473f-9d3a-46d138c56279.html",
+          "title": "Self Regional's Pretty in Pink earns Best of Show and Golden Tusk honors",
+          "publisher": "Index-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV3DnIZ05ccg11J4Uu6or5sbebm3-6mjiPG6yKGm8hTZfblfhlTH7F86NexY"
+        },
+        {
+          "url": "https://oracleoftime.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds-pink-gold/",
+          "title": "Jaeger-LeCoultre Launch Reverso Classic Monoface Small Seconds in Pink Gold",
+          "publisher": "Oracle Time",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYzPo9Zi-08QYwfCxykJxIW97XqdViY4glTTYrFIaEk7d70Aur2xxKnA-kbBA"
+        },
+        {
+          "url": "https://www.watchpro.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds/",
+          "title": "Could This New Jaeger-LeCoultre Reverso Be Bond's Next Watch?",
+          "publisher": "WatchPro",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXYU-dhDWyYAvfVbHSqx2F-ViF6PwquI53zQ61sL0DYSZBIERndVFwBuwf8M"
+        }
+      ]
+    },
+    {
+      "query": "brandon smith",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:10:00Z",
+      "related_news_urls": [
+        "https://www.steelers.com/news/steelers-make-practice-squad-move-x7723",
+        "https://triblive.com/sports/steelers-re-sign-receiver-brandon-smith-to-practice-squad/",
+        "https://www.dkpittsburghsports.com/team/steelers/feed/topic/breakout-steelers-debut-max-hurleman-eager-prove-himself-news-nfl-cah"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIpY_XedNIceyPt9CvliYSV9xVrCyq4NH7-aJNB9rhIOtxyylCxB1MJ4HBGI",
+      "image_credit": "Steelers.com",
+      "news": [
+        {
+          "url": "https://www.steelers.com/news/steelers-make-practice-squad-move-x7723",
+          "title": "Steelers make practice squad move",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVIpY_XedNIceyPt9CvliYSV9xVrCyq4NH7-aJNB9rhIOtxyylCxB1MJ4HBGI"
+        },
+        {
+          "url": "https://triblive.com/sports/steelers-re-sign-receiver-brandon-smith-to-practice-squad/",
+          "title": "Steelers re-sign receiver Brandon Smith to practice squad",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFM-N7KHVynLpW0lkpludOTZA4o4w77Lr4ARpKrCAPt49Eq-FAJoY4DFua2l4"
+        },
+        {
+          "url": "https://www.dkpittsburghsports.com/team/steelers/feed/topic/breakout-steelers-debut-max-hurleman-eager-prove-himself-news-nfl-cah",
+          "title": "After breakout Steelers debut, Max Hurleman eager to prove himself again",
+          "publisher": "DK Pittsburgh Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPptYN8r1FHw8KqvlYW602U4xOzA_5wYYnNgwGvh2z1RUqM0hfz65xiBPAbSE"
+        }
+      ]
+    },
+    {
+      "query": "when is thanksgiving 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T07:00:00Z",
+      "related_news_urls": [
+        "https://www.firstcoastnews.com/article/news/local/open-and-closed-thanksgiving-2026-in-florida-see-list/77-084459a8-a339-40df-9e74-f37ea8351133",
+        "https://www.miaminewtimes.com/food-drink/miami-grocery-stores-open-and-closed-on-thanksgiving-2026-40599840/",
+        "https://www.tcpalm.com/story/news/local/florida/2026/11/24/walmart-publix-target-costco-aldi-sams-club-winn-dixie-open-thanksgiving-florida-grocery-stores-fl/92612629007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPMnHNvgl3OxVJ0QZZO1Wpiclmf6sVgDmvdiqXB1yaIaRZCvsXTWVyTXnJ4p0",
+      "image_credit": "firstcoastnews.com",
+      "news": [
+        {
+          "url": "https://www.firstcoastnews.com/article/news/local/open-and-closed-thanksgiving-2026-in-florida-see-list/77-084459a8-a339-40df-9e74-f37ea8351133",
+          "title": "What’s open and closed on Thanksgiving 2026 in Florida? See list",
+          "publisher": "firstcoastnews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPMnHNvgl3OxVJ0QZZO1Wpiclmf6sVgDmvdiqXB1yaIaRZCvsXTWVyTXnJ4p0"
+        },
+        {
+          "url": "https://www.miaminewtimes.com/food-drink/miami-grocery-stores-open-and-closed-on-thanksgiving-2026-40599840/",
+          "title": "Miami grocery stores open and closed on Thanksgiving 2026",
+          "publisher": "Miami New Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBhYLCF3H4CxHs55eFpolCjSsuDKZkIOIAySYsLi3wb9F3jWpp6OyA3auPvrI"
+        },
+        {
+          "url": "https://www.tcpalm.com/story/news/local/florida/2026/11/24/walmart-publix-target-costco-aldi-sams-club-winn-dixie-open-thanksgiving-florida-grocery-stores-fl/92612629007/",
+          "title": "Are Walmart, Publix, Target, Costco open on Thanksgiving in Florida?",
+          "publisher": "Treasure Coast News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBWKjsxzFJqjewgAL9tfnmeDmUqKBxqDc9QXJTRAnFdQuGUbeYtzZkSPtUPpE"
+        }
+      ]
+    },
+    {
+      "query": "thanksgiving 2026 football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T06:50:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/nfl-playoff-picture-postseason-probabilities-week-12-2026-season",
+        "https://sports.yahoo.com/nfl/article/nfl-thanksgiving-week-games-ranking-the-5-weekday-games-by-whats-on-the-line-205101159.html",
+        "https://www.nytimes.com/athletic/7809458/2026/11/24/super-bowl-odds-bears-lions-chiefs-bills-thanksgiving-nfl/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlvdQRbOhLD_WwPrhThHDN8A-fzqC9Ma8vb9k6Qzzssl7M81y0l_p3Nn_NeVk",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/nfl-playoff-picture-postseason-probabilities-week-12-2026-season",
+          "title": "NFL playoff picture: Postseason probabilities entering Week 12 of the 2026 season",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlvdQRbOhLD_WwPrhThHDN8A-fzqC9Ma8vb9k6Qzzssl7M81y0l_p3Nn_NeVk"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/article/nfl-thanksgiving-week-games-ranking-the-5-weekday-games-by-whats-on-the-line-205101159.html",
+          "title": "NFL Thanksgiving week games: Ranking the 5 weekday games by what's on the line",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSdbFLiYekOKAt_vxpAhd_6RgLCIViXAZYmCyCdkzUtHPqlaUeINV3dB-br4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7809458/2026/11/24/super-bowl-odds-bears-lions-chiefs-bills-thanksgiving-nfl/",
+          "title": "Super Bowl odds: What Bears-Lions, Chiefs-Bills, more Thanksgiving games could mean",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiS_PizM3HNgjzGaV0KwWkOAOXJ4bDFkYX91gFfXl_cX-dIjMe-WkY5WlFEkc"
+        }
+      ]
+    },
+    {
+      "query": "brandin cooks",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T06:50:00Z",
+      "related_news_urls": [
+        "https://www.kcra.com/article/brandin-cooks-turkey-drive-stockton/74525952",
+        "https://www.yahoo.com/news/videos/former-49ers-player-brandin-cooks-043010218.html",
+        "https://fox40.com/news/local-news/stockton/49ers-wide-receiver-brandin-cooks-to-host-thanksgiving-community-drive-in-stockton/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54woWOJuJJPGfUYqfRHQ_DOeoaZa2Zw6JsWWCZxcZuXN0oFAEeD2zwlWxD0E",
+      "image_credit": "KCRA",
+      "news": [
+        {
+          "url": "https://www.kcra.com/article/brandin-cooks-turkey-drive-stockton/74525952",
+          "title": "NFL player Brandin Cooks hosts turkey drive in Stockton",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT54woWOJuJJPGfUYqfRHQ_DOeoaZa2Zw6JsWWCZxcZuXN0oFAEeD2zwlWxD0E"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/former-49ers-player-brandin-cooks-043010218.html",
+          "title": "Former 49ers player Brandin Cooks hosts Thanksgiving drive in Stockton",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2hoz2RmfE2Q22HcQA8M8i8PKLTMls4kwK94nzauv9cz74Nq0jq7jFtGNPwjg"
+        },
+        {
+          "url": "https://fox40.com/news/local-news/stockton/49ers-wide-receiver-brandin-cooks-to-host-thanksgiving-community-drive-in-stockton/",
+          "title": "49ers wide receiver Brandin Cooks to host Thanksgiving community drive in Stockton",
+          "publisher": "FOX40",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTa_dQae3A-IoXdgpFORIbj73EFxiG8cTpc0FWypuuvSZ9VFRyOD-tE12BqUps"
+        }
+      ]
+    },
+    {
+      "query": "full moon supermoon astrology",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T06:30:00Z",
+      "related_news_urls": [
+        "https://www.space.com/stargazing/watch-novembers-full-beaver-moon-live-online-with-supermoon-livestream-nov-24-2026",
+        "https://www.wmagazine.com/life/november-horoscope-2026-gemini-full-moon-astrology-leo-cancer-taurus-libra-virgo-capricorn",
+        "https://www.9news.com/article/news/nation-world/full-moon-supermoon-november-2026/507-478fefc3-a021-4af9-90c7-8927533e7939"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVHTutqJqExWGzMuh-Wp_rMiSgqOAVS9MbNFh5l9TEKRemq1jda76-bElnQ-Y",
+      "image_credit": "Space",
+      "news": [
+        {
+          "url": "https://www.space.com/stargazing/watch-novembers-full-beaver-moon-live-online-with-supermoon-livestream-nov-24-2026",
+          "title": "Watch November's full Beaver Moon live online today with supermoon livestream",
+          "publisher": "Space",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVHTutqJqExWGzMuh-Wp_rMiSgqOAVS9MbNFh5l9TEKRemq1jda76-bElnQ-Y"
+        },
+        {
+          "url": "https://www.wmagazine.com/life/november-horoscope-2026-gemini-full-moon-astrology-leo-cancer-taurus-libra-virgo-capricorn",
+          "title": "November Horoscope: The 6 Zodiac Signs Getting a Fresh Start With the Gemini Full Moon",
+          "publisher": "W Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_pKEGgwdibmezeq2b88mXjaBoBaz_LGhg0Nd1YbCak5icQRenA0hHRIE7Pys"
+        },
+        {
+          "url": "https://www.9news.com/article/news/nation-world/full-moon-supermoon-november-2026/507-478fefc3-a021-4af9-90c7-8927533e7939",
+          "title": "November's full beaver moon will be the first of four consecutive supermoons",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuvCYEQDJoqYVF70sGRTpYD6_RoB8l8xhXeFE4kLlskU7v-B-4I0RnRWc8Yi4"
+        }
+      ]
+    },
+    {
+      "query": "royal caribbean cruise man overboard",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T06:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/royal-caribbean-allure-of-the-seas-man-overboard-bahamas/",
+        "https://www.yahoo.com/news/world/articles/man-overboard-search-underway-passenger-211404923.html",
+        "https://people.com/man-goes-overboard-from-royal-caribbean-ship-during-weeklong-thanksgiving-trip-12277608"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ23TLzr32yyuntGpsnXONRR5ehs352qG-wD1f9t6bRl7l-CdnDkqoIKjZHzx0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/royal-caribbean-allure-of-the-seas-man-overboard-bahamas/",
+          "title": "Man on cruise ship goes overboard off Bahamas, search underway",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ23TLzr32yyuntGpsnXONRR5ehs352qG-wD1f9t6bRl7l-CdnDkqoIKjZHzx0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/world/articles/man-overboard-search-underway-passenger-211404923.html",
+          "title": "Man Overboard: Search Underway After Passenger Disappears From Royal Caribbean Cruise Ship",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm-TNlD6xPbdnq6BJ5DON256Ry3XP7XjIQxsl-Hiq8SHd_pHPN7vP34_cBHpc"
+        },
+        {
+          "url": "https://people.com/man-goes-overboard-from-royal-caribbean-ship-during-weeklong-thanksgiving-trip-12277608",
+          "title": "Man Goes Overboard from Royal Caribbean Ship During Weeklong Thanksgiving Trip",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQLre_aJfa50sBwwnB5KtNWCHFLcbjD7dgppWM0qGaBnKjAe5lQJWpDY0o1IA"
+        }
+      ]
+    },
     {
       "query": "margot robbie",
       "approx_searches": "200+",
       "published_at": "2026-11-25T06:20:00Z",
       "related_news_urls": [
-        "https://www.slashfilm.com/2321945/margot-robbie-time-travel-movie-about-time/",
         "https://graziamagazine.com/articles/margot-robbies-sharp-new-bob-at-chanel-in-sydney-is-a-lesson-in-summer-hair/",
+        "https://suaragarut.id/en/margot-robbie-chanel-sydney-bob",
         "https://cwibc.co.id/en/margot-robbie-chanel-sydney-bob"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNtRT4Dwjd-HDuoZEw9NkbB9EZDA6dgRDdu_mhAZpBkkOJUOy-iVT3ryU_ozE",
-      "image_credit": "SlashFilm",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQQ7hodg-DaJeZbFAMMqKbHVEp6UgXewCNmrpAjOfmGp6gYxZdFKm6NUn7cp8",
+      "image_credit": "graziamagazine.com",
       "news": [
-        {
-          "url": "https://www.slashfilm.com/2321945/margot-robbie-time-travel-movie-about-time/",
-          "title": "Margot Robbie Appeared In A Time Travel Movie The Same Year As Her Big Break",
-          "publisher": "SlashFilm",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNtRT4Dwjd-HDuoZEw9NkbB9EZDA6dgRDdu_mhAZpBkkOJUOy-iVT3ryU_ozE"
-        },
         {
           "url": "https://graziamagazine.com/articles/margot-robbies-sharp-new-bob-at-chanel-in-sydney-is-a-lesson-in-summer-hair/",
           "title": "Margot Robbie’s Sharp New Bob at Chanel in Sydney Is a Lesson in Summer Hair",
@@ -33,326 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQQ7hodg-DaJeZbFAMMqKbHVEp6UgXewCNmrpAjOfmGp6gYxZdFKm6NUn7cp8"
         },
         {
+          "url": "https://suaragarut.id/en/margot-robbie-chanel-sydney-bob",
+          "title": "Margot Robbie Debuts Sharp Bob at Chanel Sydney Show",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8A_O24GGQp56MvVhD5VRJyz0fr1zY1fHBnO042iVA_KrmkgyhtA2fBdAA7Fc"
+        },
+        {
           "url": "https://cwibc.co.id/en/margot-robbie-chanel-sydney-bob",
           "title": "Margot Robbie Debuts Sharp Bob at Chanel Sydney Show",
           "publisher": "cwibc.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8A_O24GGQp56MvVhD5VRJyz0fr1zY1fHBnO042iVA_KrmkgyhtA2fBdAA7Fc"
-        }
-      ]
-    },
-    {
-      "query": "ben stiller",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T06:00:00Z",
-      "related_news_urls": [
-        "https://ew.com/ben-stiller-met-owen-wilson-after-watching-him-bomb-audition-12278849",
-        "https://uk.news.yahoo.com/ben-stiller-first-met-owen-052848808.html",
-        "https://time.com/article/2026/11/25/focker-in-law-review-ariana-grande/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7Un1NHTjlku5S5JYEE18aCEa01Hn03IGs6tAvLZOc0YCt7P_xkzS-JSUlY4",
-      "image_credit": "Entertainment Weekly",
-      "news": [
-        {
-          "url": "https://ew.com/ben-stiller-met-owen-wilson-after-watching-him-bomb-audition-12278849",
-          "title": "Ben Stiller first met Owen Wilson after watching him bomb an audition: ‘He was so cardboard’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo7Un1NHTjlku5S5JYEE18aCEa01Hn03IGs6tAvLZOc0YCt7P_xkzS-JSUlY4"
-        },
-        {
-          "url": "https://uk.news.yahoo.com/ben-stiller-first-met-owen-052848808.html",
-          "title": "Ben Stiller first met Owen Wilson after watching him bomb an audition: ‘He was so cardboard’",
-          "publisher": "Yahoo News UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQV70rsqvCms9NHCaLVxv76kkuZWSOb1O82pxnkbZRliwOebeoF4FxXW1IdcY"
-        },
-        {
-          "url": "https://time.com/article/2026/11/25/focker-in-law-review-ariana-grande/",
-          "title": "Ariana Grande Is the Saving Grace of the Woefully Unfunny 'Focker In-Law'",
-          "publisher": "Time Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmfI9cMVLxMFySaExpWEHD_gqlsR_OAzIDNoniVMgtaCBf4kxAN1d-pZvhzL0"
-        }
-      ]
-    },
-    {
-      "query": "kansas state vs gonzaga",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T05:40:00Z",
-      "related_news_urls": [
-        "https://www.spokesman.com/stories/2026/nov/23/kansas-state-players-era-16-field-to-provide-stiff/",
-        "https://www.slipperstillfits.com/general/31580/gonzaga-vs-kansas-state-open-thread-players-era-16-in-las-vegas-nevada",
-        "https://sports.yahoo.com/mens-college-basketball/articles/kansas-state-basketball-2027-game-050000384.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdO3hOfNB0HILEb7ms2FqMlH2u5kmktBnvF521UkJ13nrOinRhMmf8Y-fs0dM",
-      "image_credit": "The Spokesman-Review",
-      "news": [
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/23/kansas-state-players-era-16-field-to-provide-stiff/",
-          "title": "Kansas State, Players Era 16 field to provide stiff test for Gonzaga’s perimeter defense",
-          "publisher": "The Spokesman-Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdO3hOfNB0HILEb7ms2FqMlH2u5kmktBnvF521UkJ13nrOinRhMmf8Y-fs0dM"
-        },
-        {
-          "url": "https://www.slipperstillfits.com/general/31580/gonzaga-vs-kansas-state-open-thread-players-era-16-in-las-vegas-nevada",
-          "title": "Gonzaga vs. Kansas State Open Thread (Players Era 16 in Las Vegas, Nevada)",
-          "publisher": "The Slipper Still Fits",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQliTioj2YWZCQsUhF1rhR9BOiODV1Mpy2K53yrg_FJ1_Wxxd718JVGJCxiPxE"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/kansas-state-basketball-2027-game-050000384.html",
-          "title": "Kansas State Basketball: 2027 Game 6 vs Gonzaga",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHVQm3vaz9IaiuMpWadOk-mHgR40H62__8MvU3CHar1JFufAK4jKApS7jNDPM"
-        }
-      ]
-    },
-    {
-      "query": "dubious provenance gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T05:40:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
-        "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-trust-halifax-or-not-missable-rewards/",
-          "title": "GTA 6 Trust Halifax or Not? All Outcomes and Missable Rewards",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCI8GwvHN8FpqL55dtb-CkiTC6OB4WDOkipi7GIHvCignMJ3DVzHYR20alS18"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-give-statue-to-benedict-halifax-or-not/",
-          "title": "Should you give the statue to Benedict Halifax in GTA 6?",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKl2fy6qyeTlSn3iUVu1agp2KGBgZtrg-Ub73xoo33qhggokj4_xRx-SX0CQs"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-kill-or-spare-benedict-halifax/",
-          "title": "Should you kill or spare Benedict Halifax in GTA 6?",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDHfUeKW1iQhS3j-XwD22vreaR3d888MZ3H29av2qn179GprUKfz5oAHJ4"
-        }
-      ]
-    },
-    {
-      "query": "ben wang",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T05:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/why-wiress-hunger-games-sunrise-193000509.html",
-        "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
-        "https://www.minnesotamonthly.com/arts-entertainment/film-tv/ben-wang/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX9HWG67KPC1raE-I5oe5473YSZw-vQeMCElQRVZq-0O1mMyp5TlCbmoFQEqk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/why-wiress-hunger-games-sunrise-193000509.html",
-          "title": "Why Wiress From The Hunger Games: Sunrise On The Reaping Looks So Familiar",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSX9HWG67KPC1raE-I5oe5473YSZw-vQeMCElQRVZq-0O1mMyp5TlCbmoFQEqk"
-        },
-        {
-          "url": "https://www.startribune.com/ben-wang-northfield-hunger-games-sunrise-on-the-reaping-karate-kid-x-men-marvel/601902866",
-          "title": "Northfield’s Ben Wang takes us behind the scenes of ‘Hunger Games’ film",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSord8QCZ4EbA-TY_iq_Ohry5_FLfQMALEJVly-BI1JH_Kxd4TiDFO1kU9k_hM"
-        },
-        {
-          "url": "https://www.minnesotamonthly.com/arts-entertainment/film-tv/ben-wang/",
-          "title": "In Conversation with \"Sunrise on the Reaping\" Actor Ben Wang",
-          "publisher": "Minnesota Monthly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSETWYlHQHwobRf5xYY51BfhadQR132pV2d7jyEDn9IDA-SJj6X3hstA0M8fY4"
-        }
-      ]
-    },
-    {
-      "query": "vcu vs colorado state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T05:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
-        "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
-        "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50528417/76ers-rally-vs-magic-improve-11-0-clutch-games",
-          "title": "76ers rally vs. Magic, improve to 11-0 in clutch games",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV41aS2FFUfyZ-EnFRTXfL_TM6pjpDw75DRO_QfdUbwoH65AuhfV-5UXmRqhI"
-        },
-        {
-          "url": "https://www.nbcsportsphiladelphia.com/nba/philadelphia-76ers/sixers-clutch-offense-shootaround-lebron-james-anfernee-simons/768036/",
-          "title": "‘It worked every time': How Sixers found a clutch answer at shootaround",
-          "publisher": "NBC Sports Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSvLClrXLgwDS11uAZtvbiOVkNNhVNe9Zrbc9kV_1Xw0eAuAtcADyaD5Hbk20"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/vj-edgecombe-stars-sixers-comeback-023643012.html",
-          "title": "VJ Edgecombe stars in Sixers’ comeback win over Orlando Magic",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6PuQX4cbfcBQsNmNiFcJ_XhSp3Ii5APzfqlDztyfK5jsyJApDfYItBLAR-E"
-        }
-      ]
-    },
-    {
-      "query": "max christie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T05:30:00Z",
-      "related_news_urls": [
-        "https://thesmokingcuban.com/max-christie-reminds-mavericks-why-they-cant-keep-him-at-end-of-bench",
-        "https://www.wfaa.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/the-mavs-need-max-christie-and-santi-aldama-back-in-the-rotation/535-a4cadcf0-71c2-4721-a13b-82df79bfa4c8",
-        "https://sports.yahoo.com/articles/mavericks-max-christie-trade-stance-184510458.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtZfVvw2APHA1adWo9crNGO0fhSk3IvUYUqQ0Pe-0lfOoAteIYebNf9UJYBDg",
-      "image_credit": "The Smoking Cuban",
-      "news": [
-        {
-          "url": "https://thesmokingcuban.com/max-christie-reminds-mavericks-why-they-cant-keep-him-at-end-of-bench",
-          "title": "Max Christie reminds Mavericks why they can't keep him at the end of the bench",
-          "publisher": "The Smoking Cuban",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtZfVvw2APHA1adWo9crNGO0fhSk3IvUYUqQ0Pe-0lfOoAteIYebNf9UJYBDg"
-        },
-        {
-          "url": "https://www.wfaa.com/video/sports/locked-on/lo-dallas/locked-on-mavericks-hit/the-mavs-need-max-christie-and-santi-aldama-back-in-the-rotation/535-a4cadcf0-71c2-4721-a13b-82df79bfa4c8",
-          "title": "The Mavs Need Max Christie and Santi Aldama Back in the Rotation",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRf4ZEVaJan8mHlzzfLP4GZECHtC5Ksh5GZF9DOupr1Jt5MZLxY2BxzwkaL4AY"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/mavericks-max-christie-trade-stance-184510458.html",
-          "title": "Mavericks’ Max Christie Trade Stance Backfires As Stats Slide",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tA5NlHHhuOoicrms8bp54MdfG3NT-BIf5HgWW0HqA1wGeQE4orwXhha_LJs"
-        }
-      ]
-    },
-    {
-      "query": "gonzaga basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T05:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50586725/jalen-davis-no-1-ranked-player-washington-staying-state-gonzaga",
-        "https://www.seattletimes.com/sports/gonzaga-bulldogs/wa-top-ranked-boys-basketball-prospect-jalen-davis-picks-gonzaga/",
-        "https://www.cbssports.com/college-basketball/news/jalen-davis-commits-to-gonzaga-bulldogs-land-no-13-ranked-prospect-in-2027-class/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ3mOruOAyTYMvN_Brx2QMCKni8WxY_044Dnfg-Ll_g3Vp_FUqikgJ74ZbNww",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50586725/jalen-davis-no-1-ranked-player-washington-staying-state-gonzaga",
-          "title": "Jalen Davis, No. 1-ranked player from Washington, staying in state with Gonzaga",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQ3mOruOAyTYMvN_Brx2QMCKni8WxY_044Dnfg-Ll_g3Vp_FUqikgJ74ZbNww"
-        },
-        {
-          "url": "https://www.seattletimes.com/sports/gonzaga-bulldogs/wa-top-ranked-boys-basketball-prospect-jalen-davis-picks-gonzaga/",
-          "title": "State's top boys basketball prospect picks Gonzaga over UW",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS11vx-LzfdJYV31nSNpxViI0X8Kn6yDkpbPqMOrlIcb2Zs6Emq_WX3MBkSxgM"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/jalen-davis-commits-to-gonzaga-bulldogs-land-no-13-ranked-prospect-in-2027-class/",
-          "title": "Jalen Davis commits to Gonzaga: Bulldogs land the No. 13-ranked prospect in 2027 class",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 chapter 3 mission list",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T05:20:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
-        "https://insider-gaming.com/gta-6-chapter-1-mission-list-in-order/",
-        "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
-          "title": "How Long Is Chapter 3 in GTA 6? All Missables and Mission List",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-chapter-1-mission-list-in-order/",
-          "title": "GTA 6 Chapter 1 Mission List - Every Mission in GTA 6 Chapter 1 in Order",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwSWEF4fn4aBdiGCYVWZnWiao3pBl8gzcGVAdJuCx4wG6_VjX5h3euWL6Or2k"
-        },
-        {
-          "url": "https://mashable.com/entertainment/how-long-will-it-take-to-play-gta-6",
-          "title": "How long it takes to play 'GTA 6': Story playthrough and achievements",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYwZAw5JkiJkkTPtjD09NtC9S4iKG9I8Q0UvM1PrW5NPGnutiuTUsaKd3K8lA"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving 2026",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-25T05:10:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/weather-news/timeline-major-east-coast-thanksgiving-storm-flood-rain-travel",
-        "https://www.bostonglobe.com/2026/11/23/metro/thanksgiving-storm-forecast-new-england/",
-        "https://www.accuweather.com/en/weather-forecasts/powerful-thanksgiving-storm-to-snarl-travel-as-powerful-winds-heavy-rain-sweep-eastern-central-us/1962508"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2wArG2NnWAVG8GCLoMLkmfCO2dvTUaKYnLcUPC_ORI2ZNwto5Emcwh-rdxVk",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/weather-news/timeline-major-east-coast-thanksgiving-storm-flood-rain-travel",
-          "title": "Timeline: See when the major East Coast Thanksgiving week storm will impact your area",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2wArG2NnWAVG8GCLoMLkmfCO2dvTUaKYnLcUPC_ORI2ZNwto5Emcwh-rdxVk"
-        },
-        {
-          "url": "https://www.bostonglobe.com/2026/11/23/metro/thanksgiving-storm-forecast-new-england/",
-          "title": "Thanksgiving storm forecast: Here’s the latest timeline on when the rain and gusty winds arrive",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgR9Fvx2wzrsqNeUXK9gRRZoKcvYJ2utEIamp3sSiJTURAINET-YO3WP-yY8Q"
-        },
-        {
-          "url": "https://www.accuweather.com/en/weather-forecasts/powerful-thanksgiving-storm-to-snarl-travel-as-powerful-winds-heavy-rain-sweep-eastern-central-us/1962508",
-          "title": "Powerful Thanksgiving storm to snarl travel as powerful winds, heavy rain sweep eastern, central US",
-          "publisher": "AccuWeather",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHB4Q4azowNieQWtIRR0jHyWRy-WxIAnxkHiWQ7Aob4qkKQ2C9iMetPU3IXq4"
         }
       ]
     }
