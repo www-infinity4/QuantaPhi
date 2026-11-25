@@ -3,17 +3,297 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T19:31:07.026318Z",
+  "checked_at": "2026-11-25T20:01:26.298384Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "psg",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T19:30:00Z",
+      "related_news_urls": [
+        "https://www.lequipe.fr/Football/Actualites/Le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/1746155",
+        "https://www.lequipe.fr/Football/Video/Ligue-des-champions-le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/20246325",
+        "https://www.footmercato.net/a7102560081016581498-psg-as-rome-les-compositions-officielles"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Za1ekNNK9DaDxJ0bHCy5CLAO0ApZoSy2qgFIl6xUriwdZcLfQhsOwRWt6ls",
+      "image_credit": "L'Équipe",
+      "news": [
+        {
+          "url": "https://www.lequipe.fr/Football/Actualites/Le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/1746155",
+          "title": "La compo du PSG face à l'AS Rome : avec Mayulu, Akliouche et Zabarnyi, Dembélé et Marquinhos sur le banc",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Za1ekNNK9DaDxJ0bHCy5CLAO0ApZoSy2qgFIl6xUriwdZcLfQhsOwRWt6ls"
+        },
+        {
+          "url": "https://www.lequipe.fr/Football/Video/Ligue-des-champions-le-psg-avec-mayulu-akliouche-et-zabarnyi-face-a-l-as-rome-dembele-et-marquinhos-sur-le-banc-au-coup-d-envoi/20246325",
+          "title": "Le PSG avec Mayulu, Akliouche et Zabarnyi face à l'AS Rome, Dembélé et Marquinhos sur le banc au coup d'envoi",
+          "publisher": "L'Équipe",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQERaliT8-CQ7NDbbaTnPHCari_p3DD8dQ4qGsXWWGVoQOgtaQMcJYDVywq4"
+        },
+        {
+          "url": "https://www.footmercato.net/a7102560081016581498-psg-as-rome-les-compositions-officielles",
+          "title": "PSG – AS Rome : les compositions officielles",
+          "publisher": "Foot Mercato",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt6tPaPJDO-KYPb23QrICRCVdDx6WznQEVlZsTLfEsWoE7YzC5JKu4xo01DBw"
+        }
+      ]
+    },
+    {
+      "query": "mike mccarthy press conference",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T19:30:00Z",
+      "related_news_urls": [
+        "https://www.denverbroncos.com/news/this-is-why-you-play-the-game-broncos-preparing-to-play-in-tough-environment-as-black-friday-matchup-vs-steelers-awaits",
+        "https://sports.yahoo.com/fantasy/articles/broncos-steelers-fantasy-football-week-192327494.html",
+        "https://www.steelers.com/news/steelers-vs-broncos-how-to-watch-listen-to-the-game-x0841"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsbbS45-jUdqV8BFZ_dCgYkCJrjW-xayTs4Yqv9S8CyF7Ufmgx0UhuuLRdtzk",
+      "image_credit": "Denver Broncos",
+      "news": [
+        {
+          "url": "https://www.denverbroncos.com/news/this-is-why-you-play-the-game-broncos-preparing-to-play-in-tough-environment-as-black-friday-matchup-vs-steelers-awaits",
+          "title": "'This is why you play the game': Broncos preparing to play in 'tough environment' as Black Friday matchup vs. Steelers awaits",
+          "publisher": "Denver Broncos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsbbS45-jUdqV8BFZ_dCgYkCJrjW-xayTs4Yqv9S8CyF7Ufmgx0UhuuLRdtzk"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/articles/broncos-steelers-fantasy-football-week-192327494.html",
+          "title": "Broncos-Steelers Fantasy Football Week 12 Start ‘Em, Sit ‘Em",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMNrxh3W0lIo4iV-YECkKT93VF1f_6Ct3sQknxcGPAirPOf3VSHrQiDajfP3c"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-vs-broncos-how-to-watch-listen-to-the-game-x0841",
+          "title": "Steelers vs Broncos: How to watch/listen to the game",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdyv-YBgRmK-HrXZ2u26AtaGH5QGgWkRZ5iUTxkgilSHi8DOHzCyhTZ-9Aqeg"
+        }
+      ]
+    },
+    {
+      "query": "lsu basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
+        "https://www.nytimes.com/athletic/7811905/2026/11/25/lsu-rj-luis-sues-greg-sankey-will-wade/",
+        "https://www.wafb.com/2026/11/25/lsus-future-sec-center-federal-court-hearing-today/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
+          "title": "Judge denies SEC's request for TRO against LSU in Dec. 3 vote",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7811905/2026/11/25/lsu-rj-luis-sues-greg-sankey-will-wade/",
+          "title": "Ex-LSU basketball player RJ Luis sues SEC commissioner Greg Sankey as standoff continues",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDuwc7kjWfWN6Nad8mGSfavzkXPSS6t32l0MTzuzmulFwfwupIvgvp_gIKySI"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/25/lsus-future-sec-center-federal-court-hearing-today/",
+          "title": "LSU’s future in the SEC at center of federal court hearing today",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8BHUJhpgcbM3JYBAh7k7oJDOQ-ruY4wkJ3w7F-H1ScqTFquCcPnjQJlBCxg0"
+        }
+      ]
+    },
+    {
+      "query": "inter - stuttgart",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.kicker.de/zwei-knifflige-personalfragen-beim-vfb-und-die-sorge-vor-inters-offensive-1274842/artikel",
+        "https://www.sportschau.de/fussball/championsleague/stuttgart-und-hoeness-heiss-aufs-beeindruckende-san-siro,video-mima-inter-stuttgart-100.html",
+        "https://www.gazzetta.it/de/fussball/mannschaften/inter/news/25-11-2026/juergen-klinsmann-im-interview-inter-stuttgart-maradona-thuram-und-pio-esposito.shtml"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf1xzq6GFmyut6ASZLsT7lOu2R6GrUac7L0HKviiHvQIohTY6yo8qCZXW6QD0",
+      "image_credit": "Kicker",
+      "news": [
+        {
+          "url": "https://www.kicker.de/zwei-knifflige-personalfragen-beim-vfb-und-die-sorge-vor-inters-offensive-1274842/artikel",
+          "title": "Zwei knifflige Personalfragen beim VfB - und die Sorge vor Inters Offensive",
+          "publisher": "Kicker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf1xzq6GFmyut6ASZLsT7lOu2R6GrUac7L0HKviiHvQIohTY6yo8qCZXW6QD0"
+        },
+        {
+          "url": "https://www.sportschau.de/fussball/championsleague/stuttgart-und-hoeness-heiss-aufs-beeindruckende-san-siro,video-mima-inter-stuttgart-100.html",
+          "title": "Duell mit Inter Mailand: Stuttgart und Hoeneß heiß aufs \"beeindruckende\" San Siro",
+          "publisher": "sportschau.de",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjMqVqET6--grcjzRk6mLb19lALrALsa_N2QIZi09jXVy22gHgIGvy6QfB-6c"
+        },
+        {
+          "url": "https://www.gazzetta.it/de/fussball/mannschaften/inter/news/25-11-2026/juergen-klinsmann-im-interview-inter-stuttgart-maradona-thuram-und-pio-esposito.shtml",
+          "title": "Klinsmann: „Inter, Stuttgart und damals mit Maradona. Thuram ist wie ich, Pio ähnelt ...“",
+          "publisher": "La Gazzetta dello Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAe9QU6Kzr3KgW1eNyOJYHnuuhtRRUIA-GfroInNE9n0we8oL--CDCWR1mv7M"
+        }
+      ]
+    },
+    {
+      "query": "todd boehly",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/25/business/lukoil-sale-todd-boehly-intl",
+        "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
+        "https://www.reuters.com/business/energy/boehly-signs-us-backed-share-swap-deal-buy-lukoil-global-assets-2026-11-25/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRHg_nRH8PFvw5nRMb5nyhuXf1QvruN1NA_ZA2qYg-8utyEFTp2BSBsHs1cH4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/25/business/lukoil-sale-todd-boehly-intl",
+          "title": "Russian oil firm Lukoil’s overseas assets sold to investors led by US billionaire Todd Boehly",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRHg_nRH8PFvw5nRMb5nyhuXf1QvruN1NA_ZA2qYg-8utyEFTp2BSBsHs1cH4"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/25/investors-led-by-todd-boehly-to-buy-lukoil-oil-and-gas-assets-outside-russia.html",
+          "title": "Investors led by U.S. billionaire Todd Boehly to buy Lukoil's oil and gas assets outside Russia, sources say",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOPMps2YS9h0BcbI9Kv6nm9dLBBWJ5rRBmrX86UjTmfoLqUyXZg-FUXZ-7iM8"
+        },
+        {
+          "url": "https://www.reuters.com/business/energy/boehly-signs-us-backed-share-swap-deal-buy-lukoil-global-assets-2026-11-25/",
+          "title": "EXCLUSIVE: Boehly signs US-backed share swap deal to buy Lukoil global assets",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSShwqAtGrZOiZsbXVm0YfaCxzI01R5Gtl9YLGejlS4Ne2p7H0p680PkP_R17E"
+        }
+      ]
+    },
+    {
+      "query": "nj state of emergency",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://6abc.com/videoClip/20080420/",
+        "https://www.nbcphiladelphia.com/news/local/state-of-emergency-thanksgiving-storm-new-jersey/4503076/",
+        "https://lancasteronline.com/news/local/rain-high-winds-expected-for-thanksgiving-cold-conditions-for-black-friday/article_f989ce79-ba18-4be4-8c42-e4286ac090d6.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSanisgiPQtvkJGdMyBtoC6sMdBUelGnIKpSqdzT4CJmlPnK4zopSjnnUAAUj8",
+      "image_credit": "6abc Philadelphia",
+      "news": [
+        {
+          "url": "https://6abc.com/videoClip/20080420/",
+          "title": "Jersey Shore braces for Thanksgiving storm",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSanisgiPQtvkJGdMyBtoC6sMdBUelGnIKpSqdzT4CJmlPnK4zopSjnnUAAUj8"
+        },
+        {
+          "url": "https://www.nbcphiladelphia.com/news/local/state-of-emergency-thanksgiving-storm-new-jersey/4503076/",
+          "title": "New Jersey issues State of Emergency for Thanksgiving storm",
+          "publisher": "NBC10 Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQK6q6AugdxWENgbSR5ja3uoYcr4aD1o1L7iNlwO07La8o7e_8coLteZGFTYw"
+        },
+        {
+          "url": "https://lancasteronline.com/news/local/rain-high-winds-expected-for-thanksgiving-cold-conditions-for-black-friday/article_f989ce79-ba18-4be4-8c42-e4286ac090d6.html",
+          "title": "Rain, high winds expected for Thanksgiving, cold conditions for Black Friday",
+          "publisher": "LancasterOnline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSCefPvlzjbS9fiQ7xBvjRmQIN2hIjJWMnAPXStS_PTtP5arP5aqP6iUnB1RH8"
+        }
+      ]
+    },
+    {
+      "query": "burnley vs birmingham",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/ckqx505l5x4qt",
+        "https://www.tufutbolero.com/en/news/burnley-birmingham-preview-burnley-arrive-with-eight-fdbceb",
+        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-burnley-v-birmingham-city/blt1016992c796604bf"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDt1Zq6NUuKoAQnMKGeP74s5ccOOBLsSamPuhpPuQc209nEQdEe_fTFrlPWc0",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/ckqx505l5x4qt",
+          "title": "Burnley v Birmingham City: Championship stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDt1Zq6NUuKoAQnMKGeP74s5ccOOBLsSamPuhpPuQc209nEQdEe_fTFrlPWc0"
+        },
+        {
+          "url": "https://www.tufutbolero.com/en/news/burnley-birmingham-preview-burnley-arrive-with-eight-fdbceb",
+          "title": "Burnley-Birmingham, preview: Burnley arrive with eight absences",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqwMQB2w7Fy0PhBqVXmxKUotuxIS3DZBusSImcdo5NdKrtGdC62nfi-pl6kG4"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-burnley-v-birmingham-city/blt1016992c796604bf",
+          "title": "Watch Burnley vs Birmingham City live today: Who is broadcasting the match on TV and via live stream?",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNccY4GH5rEGMHsXynPqpux_09Ucr3esanmSDovXJoPsFdKeFDUPtwh9dKPI"
+        }
+      ]
+    },
+    {
+      "query": "fotmob",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T19:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/football/2026/nov/25/alejandro-garnacho-aston-villa-loanees-unai-emery",
+        "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
+        "https://sports.yahoo.com/articles/aston-villa-manager-unai-emery-150000903.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PZ7B8CSHwVGIPusKWHjr-9b42p93dT4pwfUPN70m9VpFjXJN7U4rk75OzWw",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/25/alejandro-garnacho-aston-villa-loanees-unai-emery",
+          "title": "Alejandro Garnacho and the curious case of Aston Villa’s outcast loanees",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-PZ7B8CSHwVGIPusKWHjr-9b42p93dT4pwfUPN70m9VpFjXJN7U4rk75OzWw"
+        },
+        {
+          "url": "https://www.si.com/soccer/alejandro-garnacho-point-no-return-aston-villa",
+          "title": "Alejandro Garnacho Reaches Point of No Return at Aston Villa",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrLO15GpXB712FGwhR1zK8POpWulHwFs-TLEDoSlimQ9TdjzKDKNuWEaK8Mk4"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/aston-villa-manager-unai-emery-150000903.html",
+          "title": "Aston Villa manager Unai Emery drops 'humiliating' update on Alejandro Garnacho",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbd6j1dQSGBgy5qd90rPgCmspoPrKaBDnlfQqhEKMLVHNzOcRYPtKhP7Fxkmw"
+        }
+      ]
+    },
+    {
       "query": "sporting vs man utd",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cx98zmzyn0y7t",
-        "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/",
-        "https://www.si.com/soccer/sporting-cp-vs-man-utd-predictions-mauricio-pochettino-forget-nightmare-debut-11-25-26"
+        "https://www.skysports.com/football/live-blog/13616485/sporting-vs-man-utd-live-champions-league-match-updates-news-and-score",
+        "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds",
       "image_credit": "BBC",
@@ -26,168 +306,28 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrjy9YxO8EEZNmL5YzZf4o8paiIjuCuvkfFF8BSfQNzNxOyVHkNcnpo1kx5Ds"
         },
         {
+          "url": "https://www.skysports.com/football/live-blog/13616485/sporting-vs-man-utd-live-champions-league-match-updates-news-and-score",
+          "title": "Sporting vs Man Utd LIVE! Champions League match updates, news and score",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRfrgRNH9fm1qdLTBo3W_D3ciOFX-5_CzNzQxdUmsvGRO8dxKAeN8LxsSxk3TM"
+        },
+        {
           "url": "https://www.cnet.com/tech/services-and-software/sporting-cp-vs-man-united-livestream-champions-league-soccer-from-anywhere/",
           "title": "Sporting CP vs. Man United: Livestream Champions League Soccer From Anywhere",
           "publisher": "CNET",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKsBQRwCgImcXYYjd_GDvwg60VWx04njhjvoMXjd6DNzim7oJCg23xYKw-lrE"
-        },
-        {
-          "url": "https://www.si.com/soccer/sporting-cp-vs-man-utd-predictions-mauricio-pochettino-forget-nightmare-debut-11-25-26",
-          "title": "Sporting CP vs. Man Utd Predictions: Mauricio Pochettino Out to Forget Nightmare Debut",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0B-W_txwOnca0wNxZANQwejm0QxG28rmDdd3nXIh4hpgkf6SgWMfQZNVNZCY"
-        }
-      ]
-    },
-    {
-      "query": "atlético vs viking",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/europa/nota/_/id/17556159/atletico-madrid-vs-viking-fecha-5-uefa-champions-league-equipo-fecha-hora-y-tv-en-vivo",
-        "https://www.si.com/es-us/a-que-hora-es-el-partido-atletico-de-madrid-vs-viking-y-como-verlo-en-tv-y-streaming-online-25-11-2026",
-        "https://www.reutersconnect.com/item/simeone-los-nuevos-records-y-su-futuro-no-tengo-otro-plazo-que-el-viking/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzM4NDQwMDE"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA71mXqhsxWwkhk9KUAWqFaPqXMbmkHemzU5NXdZ8XBFWgvn9M7sIfkgyWpyI",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/europa/nota/_/id/17556159/atletico-madrid-vs-viking-fecha-5-uefa-champions-league-equipo-fecha-hora-y-tv-en-vivo",
-          "title": "Cuándo juegan Atlético Madrid vs. Viking por la fecha 5 de la UEFA Champions League: equipo, fecha, hora y TV en vivo",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA71mXqhsxWwkhk9KUAWqFaPqXMbmkHemzU5NXdZ8XBFWgvn9M7sIfkgyWpyI"
-        },
-        {
-          "url": "https://www.si.com/es-us/a-que-hora-es-el-partido-atletico-de-madrid-vs-viking-y-como-verlo-en-tv-y-streaming-online-25-11-2026",
-          "title": "¿A qué hora es el partido Atlético de Madrid vs Viking y cómo verlo en TV y streaming online?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvEYh_EGiLfEQdRhhHH3kQt4URUxB7tz3LNPkzePS6A9mXhCccPhk3Z4-pfrQ"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/simeone-los-nuevos-records-y-su-futuro-no-tengo-otro-plazo-que-el-viking/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XRUZWQzcwMDE2MzM4NDQwMDE",
-          "title": "Licensable video: Simeone, los nuevos récords y su futuro: “No tengo otro plazo que el Viking”",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgjpfAbxC8I_BIVKED0XJELU80Yz6nMhETdIEVU1fMCmbqea5KjvXblo5_EzI"
-        }
-      ]
-    },
-    {
-      "query": "atlético madrid - viking",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c678292r8lddt",
-        "https://en.atleticodemadrid.com/noticias/targeting-three-crucial-points-at-the-ucl",
-        "https://www.besoccer.com/new/simeone-my-next-record-beating-viking-1443189"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL-OITnyPTvWu0jfMNga0coAOXzB5LZk5z8BF09DE6p3rGmk0Z-CBuog0U7gE",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c678292r8lddt",
-          "title": "Atlético Madrid vs Viking: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTL-OITnyPTvWu0jfMNga0coAOXzB5LZk5z8BF09DE6p3rGmk0Z-CBuog0U7gE"
-        },
-        {
-          "url": "https://en.atleticodemadrid.com/noticias/targeting-three-crucial-points-at-the-ucl",
-          "title": "Club Atlético de Madrid - Targeting three crucial points at the UCL",
-          "publisher": "Club Atlético de Madrid",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQC00P_Z22uOj9qJg7tiHN-3Jt6LIp72dqydv7e2fSI6CpzeXlLxxm6rGVcKw8"
-        },
-        {
-          "url": "https://www.besoccer.com/new/simeone-my-next-record-beating-viking-1443189",
-          "title": "Simeone: \"My next record? Beating Viking\"",
-          "publisher": "BeSoccer Livescore",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCn2c1zzHd1BNBonpWPpLnkH4tusq649K5Udqm7AE7hB6-d9RE1JdPMbyJl-E"
-        }
-      ]
-    },
-    {
-      "query": "losc - bayern",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.lemonde.fr/sport/live/2026/11/25/en-direct-psg-as-roma-et-lille-bayern-munich-suivez-les-matchs-de-ligue-des-champions-de-football_6815159_3242.html",
-        "https://www.footmercato.net/a6998334376709282955-lille-osc-bayern-munich-les-compositions-officielles",
-        "https://www.france24.com/fr/info-en-continu/20261125-ligue-des-champions-lille-en-qu%C3%AAte-d-un-exploit-face-%C3%A0-un-bayern-amoindri"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKuMy2hPot3_jp754qg-X0gHtpcVpAKn2bYOsn8Un4JM95q9f7JrFdizuoxa0",
-      "image_credit": "Le Monde.fr",
-      "news": [
-        {
-          "url": "https://www.lemonde.fr/sport/live/2026/11/25/en-direct-psg-as-roma-et-lille-bayern-munich-suivez-les-matchs-de-ligue-des-champions-de-football_6815159_3242.html",
-          "title": "EN DIRECT, PSG-AS Roma et Lille-Bayern Munich : suivez les matchs de Ligue des champions de football",
-          "publisher": "Le Monde.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKuMy2hPot3_jp754qg-X0gHtpcVpAKn2bYOsn8Un4JM95q9f7JrFdizuoxa0"
-        },
-        {
-          "url": "https://www.footmercato.net/a6998334376709282955-lille-osc-bayern-munich-les-compositions-officielles",
-          "title": "Lille OSC - Bayern Munich : les compositions officielles",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSvNCvKp5pI5vaXqVq4HSXC29o9iGGicHTstW04FxzTUxPRWByp2VyuDwL0Sug"
-        },
-        {
-          "url": "https://www.france24.com/fr/info-en-continu/20261125-ligue-des-champions-lille-en-qu%C3%AAte-d-un-exploit-face-%C3%A0-un-bayern-amoindri",
-          "title": "Ligue des champions : Lille en quête d'un exploit face à un Bayern amoindri",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBUlLMa7cTXLYfj1kw21IcSXSwTjUJw46dOgo09S9pzaE9jE98jDaBy62s1Yk"
-        }
-      ]
-    },
-    {
-      "query": "inter vs vfb stuttgart",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/ck9q848dq75xt",
-        "https://sports.yahoo.com/soccer/articles/confirmed-lineups-inter-vs-vfb-185000723.html",
-        "https://www.inter.it/en/news/inter-stuttgart-stadium-and-ticket-info-champions-league-2026-27"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThQfl35ro1lr_rki2aSMzZdHFS94dZPNrNwRU3-eD0yCZ1fbhgH_-F0UwEfcY",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/ck9q848dq75xt",
-          "title": "Inter Milan vs Stuttgart: UEFA Champions League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThQfl35ro1lr_rki2aSMzZdHFS94dZPNrNwRU3-eD0yCZ1fbhgH_-F0UwEfcY"
-        },
-        {
-          "url": "https://sports.yahoo.com/soccer/articles/confirmed-lineups-inter-vs-vfb-185000723.html",
-          "title": "Confirmed lineups: Inter vs. VfB Stuttgart",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVkU38gk7u7rbFr_2b9jzYuCxgHvtkTUDyc8oMIRgKAg_03dNlan9U4y8DyME"
-        },
-        {
-          "url": "https://www.inter.it/en/news/inter-stuttgart-stadium-and-ticket-info-champions-league-2026-27",
-          "title": "Inter vs. Stuttgart: Last remaining tickets and information for fans",
-          "publisher": "Inter.it",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBdVgVkYu0tgoQqXGwynyXXkFYoWAFklCaAf70zP_NJeuzlS-8QafyM-m1w5k"
         }
       ]
     },
     {
       "query": "club brugge vs liverpool",
-      "approx_searches": "500+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-25T19:10:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/c5vg2w2e2gy1t",
-        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live?page=with:block-6b07315f8f082c4b24a3666c",
+        "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
         "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A",
@@ -201,11 +341,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYwY90css_5rGX1rZiDMt3-rOgp4QjHJ3YWI4ImFG7K3WX9EOomT9f67_mS2A"
         },
         {
-          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live?page=with:block-6b07315f8f082c4b24a3666c",
+          "url": "https://www.theguardian.com/football/live/2026/nov/25/club-brugge-v-liverpool-lille-v-bayern-munich-and-more-champions-league-clockwatch-live",
           "title": "Club Brugge v Liverpool, Lille v Bayern Munich and more: Champions League clockwatch – live",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1XsVezEG1uch-zNwrgaHoC-2ixYxNQ5Lb3OvWiMerxSYoKq7rZhlyc6amAek"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA6KIgmtIeq74lRSNCPg8VHgOAbwx7Z73KEWBXA-H496mn2ew9g9DxRvlWXKw"
         },
         {
           "url": "https://www.liverpoolfc.com/news/ryan-gravenberch-and-cody-gakpo-injury-update",
@@ -213,146 +353,6 @@
           "publisher": "Liverpool FC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS0GA2WZuLHUJteCgsLRt5IRRPoQVp8clOnNuo1NXG4drEawm_wZHld_5JbDg"
-        }
-      ]
-    },
-    {
-      "query": "sporting lisboa - manchester united",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.courant.com/2026/11/23/pochettino-vuelve-a-la-champions-con-un-united-en-apuros-psg-y-real-madrid-siguen-perfectos/",
-        "https://es-us.noticias.yahoo.com/deportes/sporting-cp-vs-manchester-united-124200178.html",
-        "https://www.goal.com/es-mx/noticias/es-imposible-hacer-un-analisis-fonseca-admite-que-el-manchester-united-de-pochettino-es-una-incognita-antes-de-la-champions-league/blt2d81e2a620ed49b7"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7XwboCynAdPfngL8F4RZD8LcEEbyvsXGoR4pQCFLerFiTUWsjcqRJXZXVsdo",
-      "image_credit": "Hartford Courant",
-      "news": [
-        {
-          "url": "https://www.courant.com/2026/11/23/pochettino-vuelve-a-la-champions-con-un-united-en-apuros-psg-y-real-madrid-siguen-perfectos/",
-          "title": "Pochettino vuelve a la Champions con un United en apuros. PSG y Real Madrid siguen perfectos",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7XwboCynAdPfngL8F4RZD8LcEEbyvsXGoR4pQCFLerFiTUWsjcqRJXZXVsdo"
-        },
-        {
-          "url": "https://es-us.noticias.yahoo.com/deportes/sporting-cp-vs-manchester-united-124200178.html",
-          "title": "SPORTING CP vs. MANCHESTER UNITED: LA GRAN OPORTUNIDAD DE LOS RED DEVILS PARA DAR EL GOLPE Y ENDEREZAR EL RUMBO",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS1GJQnJpjcmJqT6MNghdqEm3HKMEpvRZ6Iaaxwzjk_O5Mq4EefEqt1pTn6Wo"
-        },
-        {
-          "url": "https://www.goal.com/es-mx/noticias/es-imposible-hacer-un-analisis-fonseca-admite-que-el-manchester-united-de-pochettino-es-una-incognita-antes-de-la-champions-league/blt2d81e2a620ed49b7",
-          "title": "«Es imposible hacer un análisis»: Fonseca admite que el Manchester United de Pochettino es una incógnita antes de la Champions League",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtLEVmEnwm-zXq_h6jVnllCo3aletCeqPqtQpFCsS21VoH8VQ-6qdDterK4U"
-        }
-      ]
-    },
-    {
-      "query": "shakhtar donetsk vs fenerbahçe",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.reutersconnect.com/item/uefa-champions-league-shakhtar-donetsk-v-fenerbahce/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxR09CREU",
-        "https://www.idman.biz/en/news/world-football/168489",
-        "https://en.haberler.com/bombshell-prediction-from-artificial-intelligence-2344466/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStuBkWySJvFV7V6qpEHeURsBWPqiW_crA849xvSeSwW0joJRdkwhwUWs4-Ufw",
-      "image_credit": "Reuters Connect",
-      "news": [
-        {
-          "url": "https://www.reutersconnect.com/item/uefa-champions-league-shakhtar-donetsk-v-fenerbahce/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxR09CREU",
-          "title": "Licensable picture: UEFA Champions League - Shakhtar Donetsk v Fenerbahce",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStuBkWySJvFV7V6qpEHeURsBWPqiW_crA849xvSeSwW0joJRdkwhwUWs4-Ufw"
-        },
-        {
-          "url": "https://www.idman.biz/en/news/world-football/168489",
-          "title": "Arda Turan and Emre Belozoglu will make history at Stamford Bridge",
-          "publisher": "İdman.Biz",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQs-jMHT7V_gePJYfQpd9aEyYQDbzjhohHnabe3wUMh-CLG7QNOxMZg4rN2R6A"
-        },
-        {
-          "url": "https://en.haberler.com/bombshell-prediction-from-artificial-intelligence-2344466/",
-          "title": "Bombshell prediction from artificial intelligence for the Fenerbahçe match! It announced the score and goalscorers.",
-          "publisher": "Haberler.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9-F5Z3qXvnOLJuE3GXAlnv5gNT5pGYdGiNZMXzbaIoO0wcqNExcnGvOcnHvA"
-        }
-      ]
-    },
-    {
-      "query": "arizona state vs lsu",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/arizona-state-sun-devils-vs-lsu-tigers-prediction-odds-2026-11-25/",
-        "https://www.star-telegram.com/sports/article318252284.html",
-        "https://www.cbssports.com/betting/news/arizona-state-vs-no-20-lsu-cbb-picks-sun-devils-should-hang-in-matinee-game-of-unbeatens-from-palm-springs/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBLB9elsi5eXEC7UXfVphPWgbAHIFTHx6GY4ldMBo1daSRScGXdRQTGodUSi0",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/arizona-state-sun-devils-vs-lsu-tigers-prediction-odds-2026-11-25/",
-          "title": "Arizona State vs LSU Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBLB9elsi5eXEC7UXfVphPWgbAHIFTHx6GY4ldMBo1daSRScGXdRQTGodUSi0"
-        },
-        {
-          "url": "https://www.star-telegram.com/sports/article318252284.html",
-          "title": "How to watch LSU basketball vs. Arizona State: TV channel, stream",
-          "publisher": "Fort Worth Star-Telegram",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv4iHaY3GlZ9hxd9f5xEbGPnLHbrsv8vyNzyKU0DbowfLFApYauSEsOYal-s0"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/arizona-state-vs-no-20-lsu-cbb-picks-sun-devils-should-hang-in-matinee-game-of-unbeatens-from-palm-springs/",
-          "title": "Arizona State vs. No. 20 LSU CBB picks: Sun Devils should hang in matinee game of unbeatens from Palm Springs",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiQALc-P4IxxMofSqIefGe8htF4yYpsMqBLZC_e4KvMhrSFR1WuqHVD03ELfA"
-        }
-      ]
-    },
-    {
-      "query": "yale vs wright state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T19:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/basketball/yale-bulldogs-vs-wright-state-raiders-prediction-odds-2026-11-25/",
-        "https://www.actionnetwork.com/ncaab/college-basketball-odds-pick-parlay-wednesday-11-25-2026",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:a614b5crp7dvejv6no1el1yt2"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/yale-bulldogs-vs-wright-state-raiders-prediction-odds-2026-11-25/",
-          "title": "Yale vs Wright State Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVoFIzuwYVdIUp8rPuEEdXTpoKrvUh2FfH4Ugs0vagYDF51P3fqfy4vAQs1_w"
-        },
-        {
-          "url": "https://www.actionnetwork.com/ncaab/college-basketball-odds-pick-parlay-wednesday-11-25-2026",
-          "title": "College Basketball Wednesday Predictions: 3 Picks & Boosted Parlay",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMe6ATbl8VYSdsVTytk0-OwxsUEmY_yRguAk2Gupkxd0P6bGPeXI7HtzqD2Q"
-        },
-        {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:a614b5crp7dvejv6no1el1yt2",
-          "title": "Watch Wright state Live",
-          "publisher": "Kayo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTM4qKGs4xtq3XMzVNuw4lapLnjZLIjO4VLu4tx-H6viUG7oJs7nAEunkrC4Vs"
         }
       ]
     }
