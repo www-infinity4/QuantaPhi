@@ -66,6 +66,33 @@ async function fetchInfo(url,fetchImpl){
  }
 }
 
+// Fixed public diagnostic targets; never accept caller-provided network URLs.
+// Status-only observations do not establish inference, identity or global uptime.
+const AVAILABILITY_TARGETS=Object.freeze([
+ ['custom-domain','https://quantaphi.org/'],
+ ['github-static-origin','https://www-infinity4.github.io/QuantaPhi/'],
+ ['bubbles-tools-health','https://bubbles-tools.marvaseater.workers.dev/health']
+]);
+export async function compareAvailability({fetchImpl=globalThis.fetch}={}){
+ if(typeof fetchImpl!=='function')throw new TypeError('fetchImpl must be a function');
+ const targets=[];
+ for(const [service,url] of AVAILABILITY_TARGETS){
+  let status=null,retryAfterSeconds=null;
+  const start=performance.now();
+  try{
+   const response=await fetchImpl(url,{method:'GET',redirect:'manual',credentials:'omit',signal:AbortSignal.timeout(TIMEOUT_MS)});
+   status=response.status;
+   const raw=response.headers.get('retry-after');
+   if(raw&&/^\d{1,9}$/.test(raw))retryAfterSeconds=Number(raw);
+   if(response.body)await response.body.cancel().catch(()=>{});
+  }catch{ /* A transport failure is an unknown HTTP status, not a quota receipt. */ }
+  targets.push({service,url,status,retryAfterSeconds,timeMs:Math.round(performance.now()-start)});
+ }
+ return {generatedAt:new Date().toISOString(),scope:'public-http-status-only',targets,
+  originReachableWhileEdgeLimited:targets[0].status===429&&targets[1].status>=200&&targets[1].status<300,
+  inferenceVerified:false,ownerSessionVerified:false};
+}
+
 /** Crawl only approved public QuantaPhi pages; never arbitrary user-supplied hosts.
  * fetchImpl and writeReport support deterministic isolated tests, not extra origins.
  */
@@ -78,11 +105,12 @@ export async function run(entryUrls,options={}){
  if(typeof fetchImpl!=='function')throw new TypeError('fetchImpl must be a function');
  const report={generatedAt:new Date().toISOString(),pages:[],links:[]};
  const seenLinks=new Set();
- for(const pageUrl of entries){
+ pagesLoop: for(const pageUrl of entries){
   const info=await fetchInfo(pageUrl,fetchImpl);
   const page={url:pageUrl,status:info.status,timeMs:info.timeMs,finalUrl:info.finalUrl};
   if(info.error)page.error=info.error;
   report.pages.push(page);
+  if(info.status===429)break;
   if(!info.response||!String(info.response.headers.get('content-type')||'').toLowerCase().includes('text/html'))continue;
   let html;
   try{html=await readLimitedHtml(info.response)}
@@ -95,6 +123,8 @@ export async function run(entryUrls,options={}){
    const item={sourcePage:pageUrl,href,status:link.status,timeMs:link.timeMs};
    if(link.error||!link.status||link.status>=400)item.error=link.error||('HTTP '+link.status);
    report.links.push(item);
+   if(link.response?.body)await link.response.body.cancel().catch(()=>{});
+   if(link.status===429)break pagesLoop;
   }
  }
  if(options.writeReport!==false){
@@ -108,7 +138,8 @@ export async function run(entryUrls,options={}){
 
 // Node 22 does not support import.meta.main; use a portable direct-entry check.
 if(process.argv[1]&&pathToFileURL(resolve(process.argv[1])).href===import.meta.url){
- run().then(()=>{process.exitCode=0}).catch(error=>{
+ const task=process.argv[2]==='--availability'?compareAvailability().then(report=>console.log(JSON.stringify(report,null,2))):run();
+ task.then(()=>{process.exitCode=0}).catch(error=>{
   console.error('Site health watcher failed:',error);
   process.exitCode=1;
  });
