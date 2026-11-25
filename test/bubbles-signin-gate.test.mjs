@@ -467,3 +467,58 @@ test('unverified wallet payload never grants a GitHub or Cloudflare connected ba
  assert.equal(gate.providers.cloudflare.approved,false);
  assert.equal(gate.ready,false);
 });
+
+test('owner chat reconnect uses current verified headers, not the original settled ready promise',async()=>{
+ const source=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const match=source.match(/async function connectOwner\(\)\{[\s\S]*?\n\}\n\/\/ Provider OAuth changes/);
+ assert.ok(match,'actual owner connect function present');
+ const fn=match[0].replace(/\n\/\/ Provider OAuth changes$/,'');
+ const harness=new Function('bridge',`const window={QuantaBrainOwner:bridge,dispatchEvent(){}};
+ const embedded=false,nativeOverlay=false,repositoryCatalogComplete=true;
+ let ownerHeaders=null,ownerReady=false;
+ const workButton={},ownerMode={},workStatus={};
+ const syncOwnerIdentity=()=>{},persistChat=()=>{},sharedMemory=()=>{},checkSharedVoiceStatus=()=>{};
+ const CustomEvent=class {};
+ ${fn}
+ return async()=>{await connectOwner();return {ownerHeaders,ownerReady}};`);
+ const first={Authorization:'Bearer synthetic-old'},current={Authorization:'Bearer synthetic-new'};
+ assert.deepEqual(await harness({ready:Promise.resolve(first),currentHeaders:()=>current})(),{ownerHeaders:current,ownerReady:true});
+ assert.deepEqual(await harness({ready:Promise.resolve(first),currentHeaders:()=>null})(),{ownerHeaders:null,ownerReady:false});
+ assert.deepEqual(await harness({ready:Promise.resolve(current)})(),{ownerHeaders:current,ownerReady:true});
+ let release;const pending=new Promise(resolve=>{release=resolve});
+ let latest=null;
+ const reconnect=harness({ready:pending,currentHeaders:()=>latest})();
+ latest=current;release(first);
+ assert.deepEqual(await reconnect,{ownerHeaders:current,ownerReady:true});
+});
+
+
+test('legacy Android WebView can check stored wallet candidates without AbortSignal.timeout',async()=>{
+ const source=readFileSync(new URL('../cloud-wallet-client.js',import.meta.url),'utf8');
+ const start=source.indexOf('const ENDPOINT=');
+ const end=source.indexOf('function hasAccountProfile()');
+ const fakeEntries=new Map([['starquest_ledger_device_v1:owner','sq_'+'a'.repeat(40)],['starquest_ledger_device_v1:other','sq_'+'b'.repeat(40)]]);
+ const storage={get length(){return fakeEntries.size},key:i=>[...fakeEntries.keys()][i],getItem:k=>fakeEntries.get(k)||null,setItem:(k,v)=>fakeEntries.set(k,v)};
+ const calls=[];
+ const fetcher=async(url,options)=>{calls.push(options);return {ok:true,json:async()=>({ok:true,state:{username:options.headers.authorization.endsWith('a')?'owner':'not-other'}})}};
+ const resolve=new Function('localStorage','fetch','AbortSignal','AbortController','setTimeout','clearTimeout',source.slice(start,end)+'\nreturn resolveDeviceToken;')(storage,fetcher,{},AbortController,setTimeout,clearTimeout);
+ assert.equal(await resolve(),'sq_'+'a'.repeat(40));
+ assert.equal(calls.length,2);
+ assert.ok(calls.every(c=>c.signal instanceof AbortSignal));
+ fakeEntries.set('starquest_session',JSON.stringify({key:'missing'}));
+ assert.equal(await resolve(),'');
+ assert.equal(calls.length,2,'selected missing account cannot fall back to another account');
+});
+
+
+test('failed optional provider callback never labels a verified Bubbles wallet unconnected',async t=>{
+ const ui=mountedGate(t,partialGate(),{oauthReturn:'failed'});
+ await new Promise(setImmediate);
+ const status=ui.get('bubblesSigninStatus').textContent;
+ assert.match(status,/Cloudflare.*authorization error/i);
+ assert.match(status,/Unified Wallet is verified/i);
+ assert.doesNotMatch(status,/Your Bubbles account is not connected|Your account remains unverified/i);
+ assert.equal(ui.get('bubblesSigninGate').dataset.ready,'false');
+ assert.equal(ui.get('bubblesSigninGate').hidden,true);
+ assert.equal(ui.calls.some(c=>c.path==='/start'),false);
+});

@@ -16,7 +16,10 @@ async function request(fetcher,url,options={}) {
  return fetcher(url,{...options,signal:options.signal||AbortSignal.timeout(30000),redirect:'follow'});
 }
 async function jsonResponse(response,label) {
- check(response.headers?.get('content-type')?.includes('application/json'),label+': missing JSON response');
+ const contentType=response.headers?.get('content-type');
+ const media=!contentType?'missing':/^text\/html(?:;|$)/i.test(contentType)?'html':/^text\//i.test(contentType)?'text':'other';
+ const http=Number.isInteger(response.status)&&response.status>=100&&response.status<=599?response.status:'unknown';
+ check(contentType?.includes('application/json'),label+': missing JSON response (HTTP '+http+', media '+media+')');
  try{return await response.json()}catch{throw Error(label+': unreadable JSON')}
 }
 export async function runSmoke({fetcher=fetch,full=false}={}) {

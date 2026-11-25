@@ -4240,7 +4240,12 @@ async function verifiedOwnerHeaders(){
 async function connectOwner(){
  if(embedded)return;
  // Late wallet verification must unlock Bubbles without any manual Brain button.
- const headers=window.QuantaBrainOwner?await window.QuantaBrainOwner.ready:null;
+ const bridge=window.QuantaBrainOwner;
+ if(!bridge)return;
+ const initial=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():null;
+ const waited=initial||await bridge.ready;
+ if(window.QuantaBrainOwner!==bridge)return;
+ const headers=typeof bridge.currentHeaders==='function'?bridge.currentHeaders():waited;
  if(!headers?.Authorization)return;
  ownerHeaders=headers;ownerReady=true;workButton.hidden=nativeOverlay;
  window.dispatchEvent(new CustomEvent('bubbles:owner-ready',{detail:{}}));

@@ -107,3 +107,20 @@ test('live smoke refuses 386/386 counts when active OAuth client identity is abs
   assert.match(report.error,/malformed or inconsistent/);
  }
 });
+
+test('non-JSON live gateway failure reports HTTP status and safe media category without copying body',async()=>{
+ for(const [http,contentType,media] of [[429,'text/html; charset=utf-8','html'],[503,'text/plain','text'],[502,'application/octet-stream','other'],[403,null,'missing']]){
+  let calls=0;
+  const result=await runSmoke({fetcher:async()=>{
+   calls++;
+   const response=new Response('private upstream details',{status:http});
+   if(contentType)response.headers.set('content-type',contentType);
+   else response.headers.delete('content-type');
+   return response;
+  }});
+  assert.equal(result.status,'failed');
+  assert.equal(calls,1);
+  assert.equal(result.error,'Bubbles health: missing JSON response (HTTP '+http+', media '+media+')');
+  assert.doesNotMatch(JSON.stringify(result),/private upstream details/);
+ }
+});

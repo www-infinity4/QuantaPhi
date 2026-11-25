@@ -69,7 +69,11 @@ test('Bubbles never impersonates account sign-in or grants unverified repository
  const code=source('bubbles-ai.js');
  assert.match(code,/Official website ChatGPT sign-in requires partner registration/);
  assert.match(code,/Only real tool receipts prove repository creation, code writes, Actions, tests, merges or deployment/);
- assert.match(code,/const headers=window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready:null/);
+ const ownerConnect=code.match(/async function connectOwner\(\)\{[\s\S]*?\n\}\n\/\/ Provider OAuth changes/)?.[0]||'';
+ assert.match(ownerConnect,/if\(embedded\)return/);
+ assert.match(ownerConnect,/if\(window\.QuantaBrainOwner!==bridge\)return/);
+ assert.match(ownerConnect,/const headers=typeof bridge\.currentHeaders==='function'\?bridge\.currentHeaders\(\):waited/);
+ assert.match(ownerConnect,/if\(!headers\?\.Authorization\)return/);
  assert.match(code,/if\(!headers\?\.Authorization\)return/);
  assert.match(code,/if\(embedded\)throw Error\('Guest embed bubbles cannot access the owner Robot Brain\.'\)/);
  assert.match(code,/ownerHeaders=headers;ownerReady=true;workButton\.hidden=nativeOverlay/);

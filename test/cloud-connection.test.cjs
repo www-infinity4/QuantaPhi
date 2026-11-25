@@ -18,7 +18,7 @@ function ownershipFixture(states,session=null){
  const a='sq_'+'a'.repeat(40),b='sq_'+'b'.repeat(40),map=new Map([['starquest_ledger_device_v1:a',a],['starquest_ledger_device_v1:b',b]]),calls=[];
  if(session)map.set('starquest_session',JSON.stringify({key:session,username:session}));
  const localStorage={getItem:k=>map.get(k)??null,key:i=>[...map.keys()][i],get length(){return map.size},setItem:(k,v)=>map.set(k,v)};
- const window={};vm.runInNewContext(fs.readFileSync('cloud-wallet-client.js','utf8'),{window,localStorage,location:{origin:'https://www-infinity4.github.io'},URL,Set,AbortSignal,console,fetch:async(url,options)=>{calls.push({url,options});const state=states[options.headers.authorization];return{ok:Boolean(state),json:async()=>state?{ok:true,state}:{ok:false}}}});
+ const window={};vm.runInNewContext(fs.readFileSync('cloud-wallet-client.js','utf8'),{window,localStorage,location:{origin:'https://www-infinity4.github.io'},URL,Set,AbortSignal,AbortController,setTimeout,clearTimeout,console,fetch:async(url,options)=>{calls.push({url,options});const state=states[options.headers.authorization];return{ok:Boolean(state),json:async()=>state?{ok:true,state}:{ok:false}}}});
  return{window,calls,a,b,map};
 }
 test('cloud ownership resolves exactly one valid saved account without selecting another session',async()=>{

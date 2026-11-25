@@ -37,3 +37,34 @@ test('a blocked Greenbeans job and dependent queued Pink Panther ticket do not c
  assert.equal(ticketStatusFromJobs([...blocked,{id:'TASK-3',status:'queued',dependencies:[]}]),'ready');
  assert.equal(ticketStatusFromJobs([]),'draft');
 });
+
+
+test('Brain writer diagnoses HTML and invalid JSON without leaking upstream body',async()=>{
+ const {readBrainRunnerResponse}=await import('../scripts/brain-runner-response.mjs');
+ for(const status of [200,403,429,502,503]){
+  await assert.rejects(readBrainRunnerResponse(new Response('<!DOCTYPE html>private upstream marker',{status,headers:{'content-type':'text/html'}}),'claim'),e=>e.message==='runner_claim_non_json_http_'+status);
+ }
+ await assert.rejects(readBrainRunnerResponse(new Response('{broken',{status:503,headers:{'content-type':'application/json'}}),'claim'),/runner_claim_invalid_json_http_503/);
+ await assert.rejects(readBrainRunnerResponse(Response.json({ok:false,error:'private upstream marker'},{status:503}),'claim'),/runner_claim_http_503/);
+ assert.deepEqual(await readBrainRunnerResponse(Response.json({ok:true,lease:null}),'claim'),{ok:true,lease:null});
+ await assert.rejects(readBrainRunnerResponse(Response.json({ok:false,error:'runner_operation_unavailable'},{status:503}),'claim'),/runner_operation_unavailable/);
+});
+test('Brain writer rejects redirects and malformed success without calling it idle',async()=>{
+ const {readBrainRunnerResponse}=await import('../scripts/brain-runner-response.mjs');
+ await assert.rejects(readBrainRunnerResponse(new Response(null,{status:302,headers:{location:'https://untrusted.invalid'}}),'claim'),/runner_claim_redirect_http_302/);
+ for(const data of [{ok:true},{ok:true,lease:42},[],null])
+  await assert.rejects(readBrainRunnerResponse(Response.json(data),'claim'),/runner_claim_invalid_receipt_http_200/);
+ const source=await fs.readFile(new URL('../scripts/brain-writer.mjs',import.meta.url),'utf8');
+ assert.match(source,/readBrainRunnerResponse\(response,path\)/);
+ assert.match(source,/redirect:'manual'/);
+});
+
+
+test('Brain writer rejects incomplete or inconsistent active leases before execution',async()=>{
+ const {readBrainRunnerResponse}=await import('../scripts/brain-runner-response.mjs');
+ const lease={"key":"writer:WT-1:TASK-1:revision","leaseId":"synthetic-lease","ticketId":"WT-1","jobId":"TASK-1","repository":"www-infinity4/QuantaPhi","status":"claimed","leaseUntil":2000000000000,"job":{"id":"TASK-1","repository":"www-infinity4/QuantaPhi","instructions":"Test scoped file"}};
+ const malformed=[{}, {key:lease.key}, {...lease,leaseId:''}, {...lease,job:null}, {...lease,job:{...lease.job,id:'TASK-2'}}, {...lease,job:{...lease.job,repository:'www-infinity4/Moltnook'}}, {...lease,job:{...lease.job,instructions:null}}, {...lease,leaseUntil:0}, {...lease,status:'complete'}];
+ for(const invalid of malformed)await assert.rejects(readBrainRunnerResponse(Response.json({ok:true,lease:invalid}),'claim'),/runner_claim_invalid_receipt_http_200/);
+ assert.deepEqual(await readBrainRunnerResponse(Response.json({ok:true,lease}),'claim'),{ok:true,lease});
+ assert.deepEqual(await readBrainRunnerResponse(Response.json({ok:true,lease:null}),'claim'),{ok:true,lease:null});
+});

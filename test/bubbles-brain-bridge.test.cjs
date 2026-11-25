@@ -15,7 +15,11 @@ test('work is routed only for explicit requests outside embedded mode',()=>{
  assert.match(js,/function isOwnerWorkRequest\(text\)/);
  assert.match(js,/if\(!embedded&&\(isOwnerWorkRequest\(request\)\|\|neuralCoding&&requestsAgents\)\)/);
  assert.match(js,/submitWork\(request,'explicit-user-command',imageWorkEvidence\)/);
- assert.match(js,/window\.QuantaBrainOwner\?await window\.QuantaBrainOwner\.ready/);
+ const ownerConnect=js.match(/async function connectOwner\(\)\{[\s\S]*?\n\}\n\/\/ Provider OAuth changes/)?.[0]||'';
+ assert.match(ownerConnect,/if\(embedded\)return/);
+ assert.match(ownerConnect,/if\(window\.QuantaBrainOwner!==bridge\)return/);
+ assert.match(ownerConnect,/const headers=typeof bridge\.currentHeaders==='function'\?bridge\.currentHeaders\(\):waited/);
+ assert.match(ownerConnect,/if\(!headers\?\.Authorization\)return/);
 });
 
 test('the public /bubbles/ route loads the same authenticated Brain adapter as bubbles.html',()=>{
