@@ -3,7 +3,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),vm=require('node:vm');
 const source=fs.readFileSync('bubbles-ai.js','utf8');
 function setup(fetcher){
- const scope={embedded:false,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},activeThread:'thread-a',BRAIN:'https://brain.test',bubblesFetch:fetcher};
+ const scope={embedded:false,githubBackupSession:null,ownerReady:true,ownerHeaders:{Authorization:'Bearer fixture'},activeThread:'thread-a',BRAIN:'https://brain.test',bubblesFetch:fetcher};
  vm.createContext(scope);
  vm.runInContext(source.slice(source.indexOf('async function currentOwnerContext('),source.indexOf('async function sharedVoice(')),scope);
  return scope;
@@ -38,6 +38,16 @@ test('owner or thread changes discard an in-flight private response',async()=>{
  assert.equal((await pending).related.length,0);
 });
 test('missing owner verification cannot make a private request',async()=>{
- const scope=setup(async()=>{throw Error('must not call')});scope.ownerReady=false;
+ let calls=0;
+ const scope=setup(async()=>{calls++;throw Error('must not call')});scope.ownerReady=false;
  assert.equal((await scope.currentOwnerContext('query')).state,'unavailable');
+ assert.equal(calls,0,'unverified callers must not reach private context');
+});
+
+test('expired GitHub backup cannot make a private request',async()=>{
+ let calls=0;
+ const scope=setup(async()=>{calls++;throw Error('must not call')});scope.ownerReady=false;
+ scope.githubBackupSession={token:'synthetic-expired',expiresAt:Date.now()-1000};
+ assert.equal((await scope.currentOwnerContext('query')).state,'unavailable');
+ assert.equal(calls,0);
 });
