@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T13:01:28.740293Z",
+  "checked_at": "2026-11-25T13:30:51.373126Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ciudadano",
+      "query": "kids can community center",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T13:10:00Z",
+      "related_news_urls": [
+        "https://www.wowt.com/2026/11/25/south-omaha-childrens-center-homicide-suspect-arrested-attempting-fly-france/",
+        "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
+        "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818",
+      "image_credit": "WOWT",
+      "news": [
+        {
+          "url": "https://www.wowt.com/2026/11/25/south-omaha-childrens-center-homicide-suspect-arrested-attempting-fly-france/",
+          "title": "Suspect in ‘brutal’ homicide outside Omaha children’s center arrested in Minneapolis attempting to fly to France, police say",
+          "publisher": "WOWT",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818"
+        },
+        {
+          "url": "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
+          "title": "Omaha police arrest man connected to homicide at Kids Can Community Center",
+          "publisher": "KETV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXDMqN3kGSdLuVbLeN4VIce94ePdGlMLsWk_IpoAJ0hiow99FEgeHUohrZFk0"
+        },
+        {
+          "url": "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html",
+          "title": "Woman, 22, fatally stabbed in Omaha early childhood education center parking lot",
+          "publisher": "Omaha World-Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15-nBz5AtUlacsYL0gfjETUvaRhQhRyiZpOTNr53aWeBpLrAkx4D89qmxDj4"
+        }
+      ]
+    },
+    {
+      "query": "pce",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T12:40:00Z",
+      "published_at": "2026-11-25T13:10:00Z",
       "related_news_urls": [
-        "https://elpais.com/us/migracion/2026-11-25/nacido-en-denver-y-deportado-pese-a-ser-ciudadano-el-caso-que-ha-hecho-recular-al-gobierno-de-trump.html",
-        "https://www.univision.com/noticias/doj-admite-deportacion-a-mexico-de-un-ciudadano-de-eeuu-en-texas-el-demanda-al-gobierno-video",
-        "https://www.lanacion.com.ar/estados-unidos/migraciones/la-cbp-lo-deporto-a-mexico-ahora-trump-admite-que-es-ciudadano-de-eeuu-la-historia-de-brian-morales-nid25112026/"
+        "https://investinglive.com/central-banks/us-pce-preview-inflation-seen-near-3-8-in-the-fed-s-last-read-before-a-december-hike/",
+        "https://www.yardeniquicktakes.com/economic-week-ahead-november-23-27/",
+        "https://www.bloomberg.com/news/articles/2026-11-21/us-consumers-are-holding-up-against-inflation-going-into-holiday-season"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqyoRLybDgH_pa8zjAdOww0CAF69frCXYHaoEjf7Oeu08WmbkNxF1rC7qNkH4",
-      "image_credit": "EL PAÍS",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD2uLGk811gLVFdii161G0Y8PJVCxme5XEp9u3sQlWnXtynGYzTVLG2506Ww",
+      "image_credit": "investingLive",
       "news": [
         {
-          "url": "https://elpais.com/us/migracion/2026-11-25/nacido-en-denver-y-deportado-pese-a-ser-ciudadano-el-caso-que-ha-hecho-recular-al-gobierno-de-trump.html",
-          "title": "Nacido en Denver y deportado pese a ser ciudadano: el caso que ha hecho recular al Gobierno de Trump",
-          "publisher": "EL PAÍS",
+          "url": "https://investinglive.com/central-banks/us-pce-preview-inflation-seen-near-3-8-in-the-fed-s-last-read-before-a-december-hike/",
+          "title": "US PCE preview: inflation seen near 3.8% in the Fed's last read before a December hike",
+          "publisher": "investingLive",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqyoRLybDgH_pa8zjAdOww0CAF69frCXYHaoEjf7Oeu08WmbkNxF1rC7qNkH4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD2uLGk811gLVFdii161G0Y8PJVCxme5XEp9u3sQlWnXtynGYzTVLG2506Ww"
         },
         {
-          "url": "https://www.univision.com/noticias/doj-admite-deportacion-a-mexico-de-un-ciudadano-de-eeuu-en-texas-el-demanda-al-gobierno-video",
-          "title": "DOJ admite deportación a México de un ciudadano de EEUU en Texas, él demanda al Gobierno",
-          "publisher": "Univision",
+          "url": "https://www.yardeniquicktakes.com/economic-week-ahead-november-23-27/",
+          "title": "ECONOMIC WEEK AHEAD: November 23-27",
+          "publisher": "Yardeni QuickTakes",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTyJOVogIDXKZK4ESRRg4-TlMU55n1HSGrk5OmFlwg9ZcRA1lCiLCZIfcF9rM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTynayYvOvnR6dZhIU-Xdpp3H8D11t6LYkDW4bnY32-i5AJlP5CmtDZsis3wDE"
         },
         {
-          "url": "https://www.lanacion.com.ar/estados-unidos/migraciones/la-cbp-lo-deporto-a-mexico-ahora-trump-admite-que-es-ciudadano-de-eeuu-la-historia-de-brian-morales-nid25112026/",
-          "title": "La CBP lo deportó a México, ahora Trump admite que es ciudadano de EE.UU.: la historia de Brian Morales García",
-          "publisher": "La Nación",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-21/us-consumers-are-holding-up-against-inflation-going-into-holiday-season",
+          "title": "US Consumers Are Holding Up Against Inflation Going Into Holiday Season",
+          "publisher": "Bloomberg",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-kWuCS5k2MiEITHTUlAxwT5LEOVfG3zqzQPvmQXpIfN5jo7r6L1a7B7i5q2E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRVrGMD_ksXcaSkjr2whiBf2r8jvfajx71p1nC975Wz4HWNm3Cubk40Ihre6c"
         }
       ]
     },
     {
-      "query": "raheem sterling",
+      "query": "playstation plus december games",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T13:10:00Z",
+      "related_news_urls": [
+        "https://www.pushsquare.com/news/2026/11/final-4-ps-plus-extra-games-for-november-2026-available-to-download-now",
+        "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch",
+        "https://www.operationsports.com/motogp-26-and-cricket-26-now-included-with-playstation-plus-extra-and-premium/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic",
+      "image_credit": "Push Square",
+      "news": [
+        {
+          "url": "https://www.pushsquare.com/news/2026/11/final-4-ps-plus-extra-games-for-november-2026-available-to-download-now",
+          "title": "Final 4 PS Plus Extra Games for November 2026 Available to Download Now",
+          "publisher": "Push Square",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic"
+        },
+        {
+          "url": "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch",
+          "title": "PS Plus Adds Acclaimed 2025 Adventure Game to Catalog",
+          "publisher": "PlayStation LifeStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcqFwEody4FpBVEarJNVxIvqofyIJQezv6H2S9hdneoR-gqXYBGx-8oGw9lfs"
+        },
+        {
+          "url": "https://www.operationsports.com/motogp-26-and-cricket-26-now-included-with-playstation-plus-extra-and-premium/",
+          "title": "MotoGP 26 and Cricket 26 Now Included with PlayStation Plus Extra and Premium",
+          "publisher": "Operation Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAVrcJ3UR8lWZ16J-7euMXpZm8RMVPrAVE4dlZRZnF0fDvUdKI5G4kDGWrg3Q"
+        }
+      ]
+    },
+    {
+      "query": "ecuador u-17 vs south korea u-17",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T12:40:00Z",
+      "published_at": "2026-11-25T13:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7809387/2026/11/25/raheem-sterling-driving-suspended-sentence/",
-        "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o",
-        "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence"
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-ecuador-u17-v-south-korea-u17/bltb0325606a8909305",
+        "https://www.starnewskorea.com/en/sports/2026/11/23/2026112314515747440",
+        "https://www.oceaniafootball.com/korea-republics-fast-start-sinks-new-caledonia-at-fifa-u-17-world-cup/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnkECiYSpHCaV8tDI-J09Z7ysu1170uFUhQruoHLm-0veXTXDm3egBUmf_2Bs",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo3t1QJzcfqcXsxnIHZWSbP_cWJGn3ue5Y-jGkXv-BsPYNG2A4QWs43DE9RU",
+      "image_credit": "Goal.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7809387/2026/11/25/raheem-sterling-driving-suspended-sentence/",
-          "title": "Raheem Sterling given suspended prison sentence for dangerous driving, nitrous oxide possession",
-          "publisher": "The New York Times",
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-ecuador-u17-v-south-korea-u17/bltb0325606a8909305",
+          "title": "Ecuador U17 vs South Korea U17: Where to watch, TV channel and live stream at the World Cup U17",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnkECiYSpHCaV8tDI-J09Z7ysu1170uFUhQruoHLm-0veXTXDm3egBUmf_2Bs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo3t1QJzcfqcXsxnIHZWSbP_cWJGn3ue5Y-jGkXv-BsPYNG2A4QWs43DE9RU"
         },
         {
-          "url": "https://www.bbc.co.uk/news/articles/cv8e04ll9dd3o",
-          "title": "Footballer Raheem Sterling given suspended sentence for dangerous driving",
-          "publisher": "BBC",
+          "url": "https://www.starnewskorea.com/en/sports/2026/11/23/2026112314515747440",
+          "title": "Last year, two goals at the World Cup was the goal, but he finished with none → This year, after just two matches, he has already exploded for four... Foreign media also praise him",
+          "publisher": "스타뉴스",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpUQglQ4PPjWjSv10qEa90W41lbXkQ_BAMt2xrt6R-0Qcn4iK7hTad-EJwMgA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LmnCVOjCJkOK3w_XDVD2hThnUk96sigD4eBveKNNbQkx_0kt4OMFJcIZ3k0"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/25/raheem-sterling-avoids-jail-reckless-driving-nitrous-oxide-sentence",
-          "title": "Raheem Sterling avoids jail over reckless driving while using nitrous oxide",
-          "publisher": "The Guardian",
+          "url": "https://www.oceaniafootball.com/korea-republics-fast-start-sinks-new-caledonia-at-fifa-u-17-world-cup/",
+          "title": "Korea Republic’s fast start sinks New Caledonia at FIFA U-17 World Cup™",
+          "publisher": "Oceania Football Confederation",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEAmo-xg9hF7gLMeyZSeOex0nBvoI2YhnsNXK-PzAn7_0eZE4dEZSafP70QjU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUJe6cKZBMsMTm0Tldz8rNZbuYMXC-K_l5BABg2X5XNkSbqLxxQmHmq7GFFSE"
         }
       ]
     },
     {
-      "query": "amanda seyfried you can see everything",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T12:40:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
-        "https://www.theguardian.com/commentisfree/2026/nov/24/you-can-see-everything-elizabeth-holmes-eyes",
-        "https://theconversation.com/you-can-see-everything-a-mind-bending-odyssey-that-will-leave-you-questioning-what-you-see-297326"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCx_wi1d0yQgDw1MGcV0Ap8Ua2HRb68DMHCaY8HK4xS_YS1QFOokpvgqtBlo",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/timlammers/2026/11/24/you-can-see-everything-passes-100-million-mark-as-doc-goes-digital-this-week/",
-          "title": "‘You Can See Everything’ Arrives On Streaming: Where To Watch Elizabeth Holmes Documentary",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyCx_wi1d0yQgDw1MGcV0Ap8Ua2HRb68DMHCaY8HK4xS_YS1QFOokpvgqtBlo"
-        },
-        {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/24/you-can-see-everything-elizabeth-holmes-eyes",
-          "title": "You Can See Everything in Elizabeth Holmes’s unblinking eyes. Or can you? | Jason Okundaye",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXIR-FCtSuSpL_NZ2OjWcFq6GzzlobjDnBjQ8FU7fKvWchRu1SUUbJtoiQqJo"
-        },
-        {
-          "url": "https://theconversation.com/you-can-see-everything-a-mind-bending-odyssey-that-will-leave-you-questioning-what-you-see-297326",
-          "title": "You Can See Everything – a mind-bending odyssey that will leave you questioning what you see",
-          "publisher": "The Conversation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcr4yHUxRILt-baOT2haXhGLJvLRUJZKffUwFu1pOQLCfClwKqhB5GBuwAJxc"
-        }
-      ]
-    },
-    {
-      "query": "princess cruises",
+      "query": "2028 crv",
       "approx_searches": "100+",
-      "published_at": "2026-11-25T12:40:00Z",
+      "published_at": "2026-11-25T13:00:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
-        "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people",
-        "https://www.nbcmiami.com/news/local/passengers-on-board-caribbean-princess/3891844/"
+        "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
+        "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
+        "https://www.caranddriver.com/honda/cr-v-hybrid-2028"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgGaHmjmeC95eiM6cHbUScrT6RHz3gJKKPulLFykrcWpZLtEFIAvJQ-5fFnQ",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA",
+      "image_credit": "Car and Driver",
       "news": [
         {
-          "url": "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
-          "title": "Cruise ship returns to Fort Lauderdale with nearly 150 sick passengers, crew members after 12-day journey",
-          "publisher": "CBS News",
+          "url": "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
+          "title": "Next-Gen 2028 Honda CR-V Goes Hybrid Only, and It’s a Fuel-Sipping Family SUV Worth Waiting For",
+          "publisher": "Car and Driver",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgGaHmjmeC95eiM6cHbUScrT6RHz3gJKKPulLFykrcWpZLtEFIAvJQ-5fFnQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA"
         },
         {
-          "url": "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people",
-          "title": "Vomiting and Diarrhea Sweep Through Cruise Ship, Sickening Nearly 150 People",
-          "publisher": "Fodors Travel Guide",
+          "url": "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
+          "title": "Honda Details 2028 CR-V's 2.0L Hybrid Powertrain With Available DualPower eAWD",
+          "publisher": "autoevolution",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjLcFVKmVl9G9JBhPIwv4VRW9AE9sd7F5HKcq2BFtOc1rQeMk08JfPD4H2RwI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_xrtxRM-YV13cZuacRkWMVA2MkZnbRxx3XtmyAYSpHqQyUHDOv9X4c0e7dDM"
         },
         {
-          "url": "https://www.nbcmiami.com/news/local/passengers-on-board-caribbean-princess/3891844/",
-          "title": "Caribbean Princess cruise ship docks in Port Everglades after 148 sickened by unknown G.I. outbreak",
-          "publisher": "NBC 6 South Florida",
+          "url": "https://www.caranddriver.com/honda/cr-v-hybrid-2028",
+          "title": "Brand New and Hybrid Only, the 2028 Honda CR-V’s Arrival Is Imminent",
+          "publisher": "Car and Driver",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTixr5vqYlysunWIRXpmbt2CXY3zcZr1fhknqqEsAdOMVi1DwjYIM7_ku-Dw6U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLZMc-inWDVF3b3Gggx27zfRuUWDkiP34LBPl5yTRL1s9trDHwTW1uMWsW5fA"
         }
       ]
     },
     {
-      "query": "lowes black friday ad",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:40:00Z",
+      "query": "stock market hours today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T13:00:00Z",
       "related_news_urls": [
-        "https://mashable.com/life/lowes-black-friday-free-mystery-bucket-giveaway-2026",
-        "https://www.cleveland.com/news/2026/11/is-lowes-open-on-thanksgiving-2026.html",
-        "https://www.yahoo.com/news/videos/stores-offer-prizes-attract-shoppers-214652686.html"
+        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+        "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
+        "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7_bFhyDb6wBBabN9G9XCDPTnEleVrKoSVIEAMASBoG1-eC77FkNcfkQzJi8",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/life/lowes-black-friday-free-mystery-bucket-giveaway-2026",
-          "title": "Lowe’s is giving away $15 million in Black Friday prizes: How to claim free Mystery Buckets and $2,000 appliances",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSc7_bFhyDb6wBBabN9G9XCDPTnEleVrKoSVIEAMASBoG1-eC77FkNcfkQzJi8"
-        },
-        {
-          "url": "https://www.cleveland.com/news/2026/11/is-lowes-open-on-thanksgiving-2026.html",
-          "title": "Is Lowe’s open on Thanksgiving 2026?",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQErniqawHZk7gXwfTPt2cxahwwN42i5GJrV3wk2_qPGVoSz9siaaUj9KuZqAk"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/stores-offer-prizes-attract-shoppers-214652686.html",
-          "title": "Stores offer prizes to attract shoppers amid growing online shopping trend",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKR8zrv45VZC9UqitvohELxXLRQTeysIHtF7PI2sgDOOPcjRXEF92JXMwMJy0"
-        }
-      ]
-    },
-    {
-      "query": "giant",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T12:30:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/legal/litigation/chinas-huawei-convicted-us-criminal-trial-stemming-iran-business-2026-11-24/",
-        "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-63fc5211",
-        "https://www.bbc.com/news/articles/cmy49ngydqzpo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSimjjYLugR4qoUnyF36_KYkzAiXxThKzuJe79a19qGicN3jOnWLd8NaSHMfTM",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/legal/litigation/chinas-huawei-convicted-us-criminal-trial-stemming-iran-business-2026-11-24/",
-          "title": "China's Huawei convicted in sprawling US criminal trial over Iran business",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSimjjYLugR4qoUnyF36_KYkzAiXxThKzuJe79a19qGicN3jOnWLd8NaSHMfTM"
-        },
-        {
-          "url": "https://www.wsj.com/risk-compliance-journal/the-morning-risk-report-chinas-huawei-convicted-of-fraud-in-u-s-criminal-trial-63fc5211",
-          "title": "The Morning Risk Report: China’s Huawei Convicted of Fraud in U.S. Criminal Trial",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqCOK9jh9F6-poymfbr--ToO0vdnu8e4p8OqIiWmK4syIreidbwtQprxQlA4o"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cmy49ngydqzpo",
-          "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrWwlsU1guChk4Uh6-FAsF23Y4hvezD-CZi53k15p6frsyc3L6gN4vHNQC1Pw"
-        }
-      ]
-    },
-    {
-      "query": "nvidia share price sell off",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:30:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/vanguard-p-500-etf-investors-201202036.html",
-        "https://www.investors.com/etfs-and-funds/etfs/nvidias-stock-is-wild-check-out-these-related-etfs/",
-        "https://seekingalpha.com/article/4971740-nvidia-upheaval-21-percent-yielding-portfolio-changes-and-my-new-watchlist"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDi4Vh-kPsXYPzw1noHSBRyh8hOgerME3x9cL2WnARzgxXrlBppzz8cbx33BE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/vanguard-p-500-etf-investors-201202036.html",
-          "title": "Should Vanguard S&P 500 ETF Investors Be Worried About the Downturn in Nvidia and AI Stocks?",
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+          "title": "Is the stock market open on Thanksgiving and Black Friday?",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDi4Vh-kPsXYPzw1noHSBRyh8hOgerME3x9cL2WnARzgxXrlBppzz8cbx33BE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQHQDDIUHht5V9MmuYyGerwQdxQAiTPhb_ug869F7ngIV5lLXaGdVyqTQQzzlQ"
         },
         {
-          "url": "https://www.investors.com/etfs-and-funds/etfs/nvidias-stock-is-wild-check-out-these-related-etfs/",
-          "title": "Think Nvidia's Stock Is Wild? Check Out These Related ETFs",
-          "publisher": "Investor's Business Daily",
+          "url": "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
+          "title": "NYSE and Nasdaq Close Early on Black Friday",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPLsk4Adyj9fLA-4dg8O9gUE7xVxbx-8Gvuk6TZZg6bem_O1raTXVcyTzrJjU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCspxNj4oVIp6-nxGHAHbn81YSTzQ2OWXexg2fWGAHy1HDHIob92vZcwWSPc"
         },
         {
-          "url": "https://seekingalpha.com/article/4971740-nvidia-upheaval-21-percent-yielding-portfolio-changes-and-my-new-watchlist",
-          "title": "Nvidia Upheaval, 21% Yielding Portfolio Changes, And My New Watchlist",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
+          "title": "US Public Holiday Trading Hours Adjustment Notice | 26 Nov 2026",
+          "publisher": "EBC Financial Group",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZ538F7xciHpYVfxgxzJJO8x9ApOkWWdrBZ0cR0BZTCWsw5F5dSQqMcqsmPQ0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDw47nDCE7q_HwW1a7A_F66g508QPiiT-Rrq5XxcO5xYkSfaArj6swjcfF18"
         }
       ]
     },
     {
-      "query": "mira star red giant eruption alma",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:30:00Z",
+      "query": "target black friday 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T12:50:00Z",
       "related_news_urls": [
-        "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
-        "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
-        "https://www.skyatnightmagazine.com/news/mira-a-alma-loop-alma-image"
+        "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
+        "https://www.abc4.com/news/local-news/free-gift-cards-target-utah/",
+        "https://www.today.com/shop/best-target-black-friday-deals-2026-rcna601845"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvf1MjpSn6SAgeoIUButPVIZIvEnhCfXHI-ZJooW-nrTL-_ze1kiNERA59oQ",
-      "image_credit": "Phys.org",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://phys.org/news/2026-11-star-eruption-key-elements-space.html",
-          "title": "Star's record eruption shows how key elements can spread through space",
-          "publisher": "Phys.org",
+          "url": "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
+          "title": "I cover Target sales all year long — these Black Friday deals are actually impressive",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvf1MjpSn6SAgeoIUButPVIZIvEnhCfXHI-ZJooW-nrTL-_ze1kiNERA59oQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs"
         },
         {
-          "url": "https://www.universetoday.com/articles/a-gigantic-stellar-eruption-spreads-planetary-material-into-space",
-          "title": "A Gigantic Stellar Eruption Spreads Planetary Material Into Space",
-          "publisher": "Universe Today",
+          "url": "https://www.abc4.com/news/local-news/free-gift-cards-target-utah/",
+          "title": "First 100 Utah shoppers at Target will receive free gift cards worth up to $1,000",
+          "publisher": "ABC4 Utah",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUR25h-Skz9YyLZNT5O-BxBKIFGcA_Q99p3BzKd1nSjrY0r7QG_mgeKLL_nEg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQeE2uJM6Cr4QbzFUl2jmNtxUbPSSMOMjW3OE72k3nvtriBEtxBQTnU6ig8OgA"
         },
         {
-          "url": "https://www.skyatnightmagazine.com/news/mira-a-alma-loop-alma-image",
-          "title": "This is what a star looks like up close. What's that strange loop shooting outwards? Scientists say it could hold the key to life on Earth",
-          "publisher": "BBC Sky at Night Magazine",
+          "url": "https://www.today.com/shop/best-target-black-friday-deals-2026-rcna601845",
+          "title": "Target’s Black Friday Sale Starts Now: Up to 56% off TVs, Toys, More",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTXfMSn1Koe27wPocll0_EvikuPQhRkylEDhVEXX_mnUi8bbJ7E29U4ATnnyyY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL6ZhbXdQ-jYynUa28stFENScR2ii8EpPgcXwIrO3ev0guWJu9I1WXUaco-UE"
         }
       ]
     },
     {
-      "query": "economic calendar",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:30:00Z",
+      "query": "stock futures today",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-25T12:50:00Z",
       "related_news_urls": [
-        "https://seekingalpha.com/news/4676170-wednesdays-economic-calendar",
-        "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-30112026-06122026/"
+        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
+        "https://www.nytimes.com/2026/11/25/business/dealbook/nvidia-huang-ai-rally.html",
+        "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM",
-      "image_credit": "Seeking Alpha",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto",
+      "image_credit": "WSJ",
       "news": [
         {
-          "url": "https://seekingalpha.com/news/4676170-wednesdays-economic-calendar",
-          "title": "Wednesday’s Economic Calendar",
-          "publisher": "Seeking Alpha",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026",
+          "title": "Stock Market Today: Tech-Led Slide Continues as Confidence in AI Trade Weakens — Live Updates",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStejFtWbvbew8i1bFGDq_ih0-gnitD3esnprLu6g66GnLDWL3eNXEd5EAivHM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
         },
         {
-          "url": "https://www.litefinance.org/blog/analysts-opinions/weekly-economic-calendar-for-30112026-06122026/",
-          "title": "Forex Economic Calendar Overview: Key Events for the Next Trading Week (30.11.2026–06.12.2026)",
-          "publisher": "LiteFinance",
+          "url": "https://www.nytimes.com/2026/11/25/business/dealbook/nvidia-huang-ai-rally.html",
+          "title": "Why the Nvidia Rally Fizzled",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTcZnTYloc63gcFH93QdJ5HGkSb3kFl7q-G5CEAS2GvnakweG8-0ZGoWRx5-Dc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7GwUXDatVFPN3arwTabfYQntOShhmOh_98VKX9uleAo-WVRB4urAdadC4fCQ"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-25-dow-sp-500-nasdaq-pce-inflation-data-091428237.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq futures fall ahead of inflation data",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBEqeEkjGUxp4Ufzwno4OMkUmiUF5JKlC7OQ8FsYhPXYWWkoeX_xXy3zXqkvE"
         }
       ]
     },
     {
-      "query": "buffalo weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T12:30:00Z",
+      "query": "start em sit em",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T12:50:00Z",
       "related_news_urls": [
-        "https://www.wgrz.com/article/sports/nfl/bills/buffalo-bills-bringing-back-familiar-holiday-look-for-thanksgiving-day-game-against-kansas-city/71-f99ad4fe-4539-4e5d-8ddb-e3dd1c1c2bd8",
-        "https://sports.yahoo.com/nfl/articles/bills-vs-chiefs-tickets-thanksgiving-220516999.html",
-        "https://www.buffalobills.com/news/buffalo-bills-vs-kansas-city-chiefs-where-to-watch-stream-and-listen-nfl-thanksgiving-2026"
+        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573676/nfl-fantasy-football-rankings-2026-rb-running-back",
+        "https://sports.yahoo.com/fantasy/articles/fantasy-football-start-em-sit-121107929.html",
+        "https://www.nytimes.com/athletic/7809813/2026/11/25/nfl-week-12-fantasy-football-rankings-thanksgiving-for-a-full-schedule-and-food-rankings/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2VPF3xl_9rDO7SL6VDMzGbHF1f3lliabJJBuhRJshn66eRzuAMZa4WXPeVE",
-      "image_credit": "WGRZ",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoyIScTiQZW5sbsP75GG_J8GtNnyJWTLS5gTkAD_NZ7EygWYNLQGMt8k5m_pc",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.wgrz.com/article/sports/nfl/bills/buffalo-bills-bringing-back-familiar-holiday-look-for-thanksgiving-day-game-against-kansas-city/71-f99ad4fe-4539-4e5d-8ddb-e3dd1c1c2bd8",
-          "title": "Bills bringing back familiar holiday look for Thanksgiving Day game against Kansas City",
-          "publisher": "WGRZ",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573676/nfl-fantasy-football-rankings-2026-rb-running-back",
+          "title": "Fantasy football rankings for Week 12: Running back",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-2VPF3xl_9rDO7SL6VDMzGbHF1f3lliabJJBuhRJshn66eRzuAMZa4WXPeVE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoyIScTiQZW5sbsP75GG_J8GtNnyJWTLS5gTkAD_NZ7EygWYNLQGMt8k5m_pc"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/bills-vs-chiefs-tickets-thanksgiving-220516999.html",
-          "title": "Bills vs. Chiefs tickets Thanksgiving NFL tickets just got a lot cheaper",
+          "url": "https://sports.yahoo.com/fantasy/articles/fantasy-football-start-em-sit-121107929.html",
+          "title": "Fantasy Football Start 'Em, Sit 'Em: Week 12 lineup advice, best matchups, DFS picks",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT39eZzvENVCuO4mrYknv2J9x_RmwgxFZbCLIUqQMyjafjYFTYuwiTw5xNX1U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkdsYZ_LjV1b2qzZAHHvitHf1cBJfSa5Kzj4X1KQSL4haq5qajfdrRaJhxye4"
         },
         {
-          "url": "https://www.buffalobills.com/news/buffalo-bills-vs-kansas-city-chiefs-where-to-watch-stream-and-listen-nfl-thanksgiving-2026",
-          "title": "Buffalo Bills vs. Kansas City Chiefs | Where to watch, stream and listen | NFL Thanksgiving 2026",
-          "publisher": "Buffalo Bills",
+          "url": "https://www.nytimes.com/athletic/7809813/2026/11/25/nfl-week-12-fantasy-football-rankings-thanksgiving-for-a-full-schedule-and-food-rankings/",
+          "title": "NFL Week 12 fantasy football rankings: A stuffed slate, plus best Thanksgiving dishes - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNg3ZR5ixL7wF0FO9T267SyQWnUubzpjeSbMxx3ED-cKlXrBda-iuHqaEK8Qs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSlhoRcnrDfMKSI7EuMTUiwgmoJMCsQDlK1pJa5VVrsnDdrRdhylxNwlxv3rk"
+        }
+      ]
+    },
+    {
+      "query": "hailey bieber nyt interview",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T12:50:00Z",
+      "related_news_urls": [
+        "https://www.businessoffashion.com/articles/beauty/hailey-bieber-rhode-dealbook-andrew-sorkin/",
+        "https://www.inc.com/bryan-elliott/hailey-bieber-rhode-1-billion-nyt-dealbook-summit-customer-demand/91442449",
+        "https://people.com/hailey-bieber-says-delusion-led-her-to-manifest-billion-dollar-rhode-deal-12265566"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQk3rz7ZsOXjJN5GC95LB3NbfCm6NnDdttEBEXWEkI1KRoO49T6qwGRtm2HQ",
+      "image_credit": "The Business of Fashion",
+      "news": [
+        {
+          "url": "https://www.businessoffashion.com/articles/beauty/hailey-bieber-rhode-dealbook-andrew-sorkin/",
+          "title": "How Hailey Bieber’s Critics Missed the Point",
+          "publisher": "The Business of Fashion",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkQk3rz7ZsOXjJN5GC95LB3NbfCm6NnDdttEBEXWEkI1KRoO49T6qwGRtm2HQ"
+        },
+        {
+          "url": "https://www.inc.com/bryan-elliott/hailey-bieber-rhode-1-billion-nyt-dealbook-summit-customer-demand/91442449",
+          "title": "Hailey Bieber Sold Rhode for $1 Billion. 'The New York Times' Asked Her the Wrong Question",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShU2fCVqUFl5KGkk4XnnjrB1jglONPcZ9-50DDqqAD93SCLGfsUilv6PVrJi8"
+        },
+        {
+          "url": "https://people.com/hailey-bieber-says-delusion-led-her-to-manifest-billion-dollar-rhode-deal-12265566",
+          "title": "Hailey Bieber Admits to Having ‘Delusion’ When Manifesting Billion-Dollar Rhode Deal",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSh5mKu2ovM9JBWZWp0CP8o1GXoKNqnPPBCjBnk6lwwiSOye8UGqWQm_BZ2eQA"
         }
       ]
     }
