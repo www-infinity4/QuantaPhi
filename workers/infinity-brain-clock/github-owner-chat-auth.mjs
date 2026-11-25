@@ -39,3 +39,11 @@ export async function checkGithubChatSession(storage,cfg,token,now=Date.now()){
  const record=await storage.get(SESSION);
  return !!(record&&record.id===cfg.id&&record.ownerHash===cfg.ownerHash&&record.expiresAt>now&&record.digest===await hash(token));
 }
+
+export async function revokeGithubChatSession(storage,cfg,token,now=Date.now()){
+ return storage.transaction(async tx=>{
+  if(!await checkGithubChatSession(tx,cfg,token,now))return false;
+  await tx.delete(SESSION);
+  return true;
+ });
+}
