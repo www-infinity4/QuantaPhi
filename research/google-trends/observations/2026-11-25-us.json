@@ -3,17 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T14:30:47.295309Z",
+  "checked_at": "2026-11-25T15:01:14.961497Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "john stamos",
+      "query": "vix index",
       "approx_searches": "500+",
+      "published_at": "2026-11-25T14:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
+        "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
+        "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQAl4qNcHVks3Pf6zpVH_nOLlUvYjFnOS2s9AIRXZZ3gY-Sy-k02ZpGY1VZ0",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/business/buy-stock-dip-options-market-signals-say-wait-2026-11-25/",
+          "title": "Buy the stock dip? Options market signals say wait",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcQAl4qNcHVks3Pf6zpVH_nOLlUvYjFnOS2s9AIRXZZ3gY-Sy-k02ZpGY1VZ0"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/23/wall-streets-fear-gauge-just-flashed-a-buy-sign.html",
+          "title": "Wall Street's 'Fear Gauge' just flashed a buy sign",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6uvz-5oK96jv1_DV4wSL3vJ8osRPFB64yg2IJpU7LlqPa3cBZEu8CM_2LZ84"
+        },
+        {
+          "url": "https://www.barrons.com/articles/fear-index-telling-us-nvidia-market-5c50aeb1",
+          "title": "What the Fear Index Is Telling Us About the Market",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ9tl3VCOtBHKnKOMIyVXg0j-rx9BAyIYupl_y8IR6qq7skOpbg0dhvE9jva4"
+        }
+      ]
+    },
+    {
+      "query": "weatherford aerospace",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T14:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/texas/news/fire-weatherford-aerospace-texas-nov-25/",
+        "https://www.fox4news.com/news/fire-breaks-out-weatherford-aerospace-after-series-explosions",
+        "https://www.wfaa.com/article/news/local/weatherford-explosion-fire-weatherford-aerospace-texas/287-38028d8f-74ae-4628-a211-61a152b39b2b"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTTo8Prp_wfFyNdvAkhNEgZMIeWLqNtdH1_3DGeb6x7HGtDmyv8tMjHpnzs3A",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/texas/news/fire-weatherford-aerospace-texas-nov-25/",
+          "title": "Residents asked to shelter in place as crews respond to fire at Weatherford Aerospace, city officials say",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTTo8Prp_wfFyNdvAkhNEgZMIeWLqNtdH1_3DGeb6x7HGtDmyv8tMjHpnzs3A"
+        },
+        {
+          "url": "https://www.fox4news.com/news/fire-breaks-out-weatherford-aerospace-after-series-explosions",
+          "title": "Fire breaks out at Weatherford Aerospace after series of explosions",
+          "publisher": "FOX 4 News Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeIgvWSfIMz7vE5P2Fyh_0JI4hDXSxkmQzjUHoUaqBRzOy84VwAAjE6MUmtuc"
+        },
+        {
+          "url": "https://www.wfaa.com/article/news/local/weatherford-explosion-fire-weatherford-aerospace-texas/287-38028d8f-74ae-4628-a211-61a152b39b2b",
+          "title": "Emergency crews respond to a fire at Weatherford Aerospace",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRq-gj87sFF8WTedZJEDnRqgmCST9gzkQXcLhhtdHIU68aPUWjyrjfRYUbPtnM"
+        }
+      ]
+    },
+    {
+      "query": "hershey chocolate bars",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T14:20:00Z",
+      "related_news_urls": [
+        "https://www.thehersheycompany.com/en_us/home/newsroom/press-release/2026-11-18-Hersheys-Celebrates-Its-Story-with-Five-Cent-Milk-Chocolate-Bars-Ahead-of-the-HERSHEY-Movie.html",
+        "https://www.tampabay.com/news/business/2026/11/24/hershey-chocolate-5-cents-amazon-walmart/",
+        "https://www.audacy.com/national/news/hersey-is-offering-5-cent-chocolate-bars-and-here-s-how-to-get-yours"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQtLN_sjP9NxjnChBEQ1bhEkcBZ67gByJUPZg4gLA3c_6xJ9JBZg3JxoGzfk",
+      "image_credit": "The Hershey Company",
+      "news": [
+        {
+          "url": "https://www.thehersheycompany.com/en_us/home/newsroom/press-release/2026-11-18-Hersheys-Celebrates-Its-Story-with-Five-Cent-Milk-Chocolate-Bars-Ahead-of-the-HERSHEY-Movie.html",
+          "title": "Hershey's Celebrates Its Story with Five-Cent Milk Chocolate Bars Ahead of the HERSHEY Movie",
+          "publisher": "The Hershey Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQtLN_sjP9NxjnChBEQ1bhEkcBZ67gByJUPZg4gLA3c_6xJ9JBZg3JxoGzfk"
+        },
+        {
+          "url": "https://www.tampabay.com/news/business/2026/11/24/hershey-chocolate-5-cents-amazon-walmart/",
+          "title": "How to get Hershey chocolates for 5 cents on Wednesday",
+          "publisher": "Tampa Bay Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8Go96MqCIRuNgu7AdWD-neENyjZjAhfjJ48jhqby9H2T-PjRT6VVH9F4YdR8"
+        },
+        {
+          "url": "https://www.audacy.com/national/news/hersey-is-offering-5-cent-chocolate-bars-and-here-s-how-to-get-yours",
+          "title": "Hersey is offering 5 cent chocolate bars, and here's how to get yours",
+          "publisher": "Audacy",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTR3I09m0JC6RydrCiS7Me3_6b79IykQUdsiTDpnCD3_J1uze10Il71s3K40BA"
+        }
+      ]
+    },
+    {
+      "query": "salmonella",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T14:20:00Z",
+      "related_news_urls": [
+        "https://bioengineer.org/salmonella-persists-across-broiler-slaughter-stages-despite-significant-processing-reductions/",
+        "https://suaragarut.id/en/salmonella-poultry-control-research",
+        "https://peradaban.id/en/uk-researchers-test-salmonella-phages"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFK63PWLw9QnrfMuS7j1Nn2gLqaMjSVrIns0wgiWzf4dmsP6g1Sf6lrzHwYgU",
+      "image_credit": "Bioengineer.org",
+      "news": [
+        {
+          "url": "https://bioengineer.org/salmonella-persists-across-broiler-slaughter-stages-despite-significant-processing-reductions/",
+          "title": "Salmonella Persists Across Broiler Slaughter Stages Despite Significant Processing Reductions",
+          "publisher": "Bioengineer.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFK63PWLw9QnrfMuS7j1Nn2gLqaMjSVrIns0wgiWzf4dmsP6g1Sf6lrzHwYgU"
+        },
+        {
+          "url": "https://suaragarut.id/en/salmonella-poultry-control-research",
+          "title": "Researchers Advance New Methods to Reduce Salmonella in Poultry",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSx3KmtEKYgbwOc5MajwiIHEYiflzXFDVTL0ouiRyX7Jsa0vBSqaBVMiIrWC1g"
+        },
+        {
+          "url": "https://peradaban.id/en/uk-researchers-test-salmonella-phages",
+          "title": "UK Researchers Test Phages Against Drug-Resistant Salmonella",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkR6lWv5yjhVUN6XDKGBeh6cWlklhsIMDvyGRIDGNiaa3JwTjoXZjoeaIh2aE"
+        }
+      ]
+    },
+    {
+      "query": "action thriller",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T14:20:00Z",
+      "related_news_urls": [
+        "https://movieweb.com/onslaught-action-thriller-stream-hbo-max-november-2026/",
+        "https://bloody-disgusting.com/home-video/3976457/adam-wingards-onslaught-sets-holiday-streaming-debut/",
+        "https://www.cbr.com/onslaught-hbo-max-streaming-release-date/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ox0ICl-xsn__ARCPPSUvR6n73vXdDClbEO3V7MumFviX_DKSzQYnXb-pbUQ",
+      "image_credit": "MovieWeb",
+      "news": [
+        {
+          "url": "https://movieweb.com/onslaught-action-thriller-stream-hbo-max-november-2026/",
+          "title": "Forget Terminator, 2026's 93-Minute Action Thriller Substitute Officially Sets New Streaming Release",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ox0ICl-xsn__ARCPPSUvR6n73vXdDClbEO3V7MumFviX_DKSzQYnXb-pbUQ"
+        },
+        {
+          "url": "https://bloody-disgusting.com/home-video/3976457/adam-wingards-onslaught-sets-holiday-streaming-debut/",
+          "title": "Adam Wingard’s ‘Onslaught’ Sets Holiday Streaming Debut",
+          "publisher": "Bloody Disgusting",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.cbr.com/onslaught-hbo-max-streaming-release-date/",
+          "title": "HBO Max Sets Streaming Release Date for R-Rated Sci-Fi 'Love Letter to John Carpenter'",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw-LjlqtiSPY5-Fp24_YV1O8uHnWYrU5xtyK5whfZcBGH3BJhcMi8TcRrYoNc"
+        }
+      ]
+    },
+    {
+      "query": "john stamos",
+      "approx_searches": "1000+",
       "published_at": "2026-11-25T14:10:00Z",
       "related_news_urls": [],
       "image_url": null,
       "image_credit": "",
       "news": []
+    },
+    {
+      "query": "is stock market open today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T14:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+        "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
+        "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+          "title": "Is the stock market open on Thanksgiving and Black Friday?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
+        },
+        {
+          "url": "https://bsinews.id/en/nyse-nasdaq-black-friday-hours",
+          "title": "NYSE and Nasdaq Close Early on Black Friday",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWCspxNj4oVIp6-nxGHAHbn81YSTzQ2OWXexg2fWGAHy1HDHIob92vZcwWSPc"
+        },
+        {
+          "url": "https://www.ebc.com/forex/us-public-holiday-trading-hours-adjustment-notice-26-nov-2026",
+          "title": "US Public Holiday Trading Hours Adjustment Notice | 26 Nov 2026",
+          "publisher": "EBC Financial Group",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlDw47nDCE7q_HwW1a7A_F66g508QPiiT-Rrq5XxcO5xYkSfaArj6swjcfF18"
+        }
+      ]
+    },
+    {
+      "query": "tell me more about the recent federal crackdown on international cyber scam networks.",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T14:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/doj-announces-largest-anti-scam-013718375.html",
+        "https://www.c-span.org/event/news-conference/attorney-general-todd-blanche-announces-justice-department-crackdown-on-cyber-enabled-scams/449864",
+        "https://www.wmbfnews.com/2026/11/24/prosecutors-highlight-three-sc-fraud-cases-including-myrtle-beach-case-anti-scam-effort/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBMGCzfsnwSd9i9rCwmp5sESqeoFZEWYa9pB6n8t33SbxiJKoi1E6vINH_sIo",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/doj-announces-largest-anti-scam-013718375.html",
+          "title": "DOJ Announces Largest Anti-Scam Surge in History",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSBMGCzfsnwSd9i9rCwmp5sESqeoFZEWYa9pB6n8t33SbxiJKoi1E6vINH_sIo"
+        },
+        {
+          "url": "https://www.c-span.org/event/news-conference/attorney-general-todd-blanche-announces-justice-department-crackdown-on-cyber-enabled-scams/449864",
+          "title": "Attorney General Todd Blanche Announces Justice Department Crackdown on Cyber-Enabled Scams",
+          "publisher": "C-SPAN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPqHhXWiJ8oqKhf9UtstocsQ8NIBMTyUcLjsB6Wop2VegIpv_zshwApoRB40I"
+        },
+        {
+          "url": "https://www.wmbfnews.com/2026/11/24/prosecutors-highlight-three-sc-fraud-cases-including-myrtle-beach-case-anti-scam-effort/",
+          "title": "Prosecutors highlight three SC fraud cases, including Myrtle Beach case, in anti-scam effort",
+          "publisher": "WMBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTMG1KihUQFQFbr-bfjyDf7VSvOyyGvyvFxMKUXGBCuEcnJhJUifP3Rsx6nTM"
+        }
+      ]
     },
     {
       "query": "is the stock market open today",
@@ -82,251 +327,6 @@
           "publisher": "Variety",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaNmcLiZv5fvUAiiazC7P7UA1auNHEH01mPeI_3J3htaN3_WgavcXxl4dcQ3Q"
-        }
-      ]
-    },
-    {
-      "query": "gdp",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:50:00Z",
-      "related_news_urls": [
-        "https://www.axios.com/2026/11/25/economy-gdp-inflation-ai",
-        "https://abcnews.com/Business/gdp-report-provide-revision-3rd-quarter-data-latest/story?id=138410335",
-        "https://www.cnn.com/2026/11/25/economy/us-pce-inflation-spending-gdp"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPAaCBXaTviWlbl9P6tq5_qGybCxR_uyjgpqMISl24-1JcHBceZy2F5zboGo",
-      "image_credit": "Axios",
-      "news": [
-        {
-          "url": "https://www.axios.com/2026/11/25/economy-gdp-inflation-ai",
-          "title": "U.S. economy grew at rapid 4.3% pace in third quarter, new estimate shows",
-          "publisher": "Axios",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPAaCBXaTviWlbl9P6tq5_qGybCxR_uyjgpqMISl24-1JcHBceZy2F5zboGo"
-        },
-        {
-          "url": "https://abcnews.com/Business/gdp-report-provide-revision-3rd-quarter-data-latest/story?id=138410335",
-          "title": "US economy grew more in 3rd quarter than previously estimated, government data shows",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRha-aR0lN5KTf7wVuqwWao5YDT3AoLWDKhadCJsFK2SziaRJAMx9KQ_uDPYVU"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/25/economy/us-pce-inflation-spending-gdp",
-          "title": "US economy grew faster last quarter than initially reported",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp-POvZ6-deImL0Ubj2FzVVdvLvKPXXb617ZtEW3qOXOCuccbLfniq7x8-lkc"
-        }
-      ]
-    },
-    {
-      "query": "wizards of the coast lawsuit printmtg",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:40:00Z",
-      "related_news_urls": [
-        "https://www.king5.com/article/news/local/renton-based-wizards-of-the-coast-sues-utah-family-alleged-counterfeit-magic-cards/281-40f960a8-658a-4775-b1a4-15e26ceaf8a6",
-        "https://aftermath.site/wizards-of-the-coast-magic-the-gathering-proxies-lawsuit/",
-        "https://icv2.com/articles/news/view/63961/wizards-coast-sues-magic-the-gathering-proxy-maker"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFQw8A28sq7o21FaTSyQU4v6gm_dA8qLo0Vo8D0rA2mDCKO5k-DmOSrovgrE",
-      "image_credit": "KING5.com",
-      "news": [
-        {
-          "url": "https://www.king5.com/article/news/local/renton-based-wizards-of-the-coast-sues-utah-family-alleged-counterfeit-magic-cards/281-40f960a8-658a-4775-b1a4-15e26ceaf8a6",
-          "title": "Renton-based Wizards of the Coast sues Utah family for $26.5 million over alleged counterfeit Magic cards",
-          "publisher": "KING5.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFQw8A28sq7o21FaTSyQU4v6gm_dA8qLo0Vo8D0rA2mDCKO5k-DmOSrovgrE"
-        },
-        {
-          "url": "https://aftermath.site/wizards-of-the-coast-magic-the-gathering-proxies-lawsuit/",
-          "title": "Wizards of the Coast Suing Alleged Magic: The Gathering Counterfeiters",
-          "publisher": "Aftermath",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSQOMexZ3jMnCJDmTFE2jsyMO0GLtXJtNe_8koh7NdJHoBwVBXRKAz26jdOa8"
-        },
-        {
-          "url": "https://icv2.com/articles/news/view/63961/wizards-coast-sues-magic-the-gathering-proxy-maker",
-          "title": "WIZARDS OF THE COAST SUES 'MAGIC: THE GATHERING' PROXY MAKER",
-          "publisher": "ICv2",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXj8y9P1kinCQtbibAF86Ab4lIQtb-2dyTpP7mRevTQHM4Rh1r5pG3qCfmXQ"
-        }
-      ]
-    },
-    {
-      "query": "pce report today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
-        "https://www.bloomberg.com/news/articles/2026-11-25/treasuries-rise-across-curve-as-ai-concerns-dent-risk-sentiment",
-        "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/finance/investing/u-s-treasury-yields-fall-ahead-of-pce-inflation-data-dfeb7995",
-          "title": "Treasury and European Government Bond Yields Fall Ahead of PCE Inflation Data",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ58t_YMVVdfLSnowzw_5-vhhokMt93hQSYWwGHPfrbbT5fZLl5XYUl_VIOFls"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-25/treasuries-rise-across-curve-as-ai-concerns-dent-risk-sentiment",
-          "title": "Treasuries Rise Across Curve as AI Concerns Dent Risk Sentiment",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL89nRIAgZh6RiV7rucwFOmRwffhptx-uGjoFlJ1gBvaVYCftKJEfVJ9W4-aI"
-        },
-        {
-          "url": "https://think.ing.com/articles/rates-spark-equity-sentiment-versus-inflation-reality/",
-          "title": "Rates Spark: Treasuries with blinkers on",
-          "publisher": "ING Think",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoJUMfz11Ki48LCWIwrd4cFL0kkVhjHOLlIgWPxH42SynqbYT3heMlLMN6iOc"
-        }
-      ]
-    },
-    {
-      "query": "pce data",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:30:00Z",
-      "related_news_urls": [
-        "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
-        "https://finance.yahoo.com/markets/crypto/articles/bitcoin-slips-below-59k-ahead-123156434.html",
-        "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-risks-fresh-yearly-low-ahead-of-us-pce-202611250835"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68htqefgHJVUfewAl4XdJ07dzWf65OBCrujS8glVJQvtUcukGtnEXqr2YYQ0",
-      "image_credit": "CoinDesk",
-      "news": [
-        {
-          "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
-          "title": "Live updates: Bitcoin slips back under $59,000, with tech rout continuing",
-          "publisher": "CoinDesk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68htqefgHJVUfewAl4XdJ07dzWf65OBCrujS8glVJQvtUcukGtnEXqr2YYQ0"
-        },
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-slips-below-59k-ahead-123156434.html",
-          "title": "Bitcoin Slips Below $59K Ahead Of PCE Report, Heads For Worst Month Since July 2022",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCar3pmaOiQh9wN-D6uMGNhYBPlFzbQbHXleZTP8hRD_ggxxxw3rD_sxDMu8k"
-        },
-        {
-          "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-risks-fresh-yearly-low-ahead-of-us-pce-202611250835",
-          "title": "Bitcoin Price Forecast: BTC risks fresh yearly low ahead of US PCE",
-          "publisher": "FXStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpspIou5u5_VLawPwuM5kNCpeNba6Wb4_oGFvEbRX8UwKv27UTRUy2_NkoGJ4"
-        }
-      ]
-    },
-    {
-      "query": "football today",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T13:30:00Z",
-      "related_news_urls": [
-        "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
-        "https://sports.yahoo.com/college-football/articles/georgia-top-seed-holds-firm-134516647.html",
-        "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI",
-      "image_credit": "NCAA.com",
-      "news": [
-        {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
-          "title": "College Football Playoff bracket, based on current committee rankings",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/georgia-top-seed-holds-firm-134516647.html",
-          "title": "Georgia’s Top Seed Holds Firm As Rivalry Weekend Rankings Drop Oregon",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Fdune4awcDCzM2GxKnLAOXfoO_b2-3zb3TIyhqfzVFCI1glrit9K8W5-NX0"
-        },
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
-          "title": "2026-27 Week 12 College Football Playoff, bowl projections",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50"
-        }
-      ]
-    },
-    {
-      "query": "brooks koepka bryson dechambeau feud",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T13:20:00Z",
-      "related_news_urls": [
-        "https://www.golfchannel.com/pga-tour/news/brooks-koepka-takes-another-bryson-dig-my-teammate-didnt-hole-a-putt-the-entire-time",
-        "https://www.golfdigest.com/story/bryson-dechambeau-catches-stray-from-brooks-koepka-during-skins-game-press-conference",
-        "https://www.limapagi.id/en/koepka-renews-dechambeau-feud-showdown"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FyUQiuUDO_JhyMVjho7dtZ0U5vz6w9QHUuqwK8JxTG8bbx-KdTEvZwlnMKE",
-      "image_credit": "Golf Channel",
-      "news": [
-        {
-          "url": "https://www.golfchannel.com/pga-tour/news/brooks-koepka-takes-another-bryson-dig-my-teammate-didnt-hole-a-putt-the-entire-time",
-          "title": "'My teammate didn't hole a putt the entire time': Koepka takes another dig at DeChambeau",
-          "publisher": "Golf Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FyUQiuUDO_JhyMVjho7dtZ0U5vz6w9QHUuqwK8JxTG8bbx-KdTEvZwlnMKE"
-        },
-        {
-          "url": "https://www.golfdigest.com/story/bryson-dechambeau-catches-stray-from-brooks-koepka-during-skins-game-press-conference",
-          "title": "Bryson DeChambeau catches stray from Brooks Koepka during Skins Game press conference",
-          "publisher": "Golf Digest",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQ88uvtRf8AyrZ2B7fWAT2VGlXeVlYi7k_EYDWZ_8cbhrDMPtfjEQdCNYTg-4"
-        },
-        {
-          "url": "https://www.limapagi.id/en/koepka-renews-dechambeau-feud-showdown",
-          "title": "Koepka Renews DeChambeau Feud After 2024 Showdown",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44eHhmWHpY5RpPO9IhVgufHSx4VM3-3zULHo8jOZ2HfW-aSEieEhpYOo8iLY"
-        }
-      ]
-    },
-    {
-      "query": "kids can community center",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T13:10:00Z",
-      "related_news_urls": [
-        "https://www.wowt.com/2026/11/25/south-omaha-childrens-center-homicide-suspect-arrested-attempting-fly-france/",
-        "https://www.wowt.com/2026/11/25/live-11-am-omaha-police-give-update-suspect-brutal-homicide-outside-childrens-center/",
-        "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818",
-      "image_credit": "WOWT",
-      "news": [
-        {
-          "url": "https://www.wowt.com/2026/11/25/south-omaha-childrens-center-homicide-suspect-arrested-attempting-fly-france/",
-          "title": "Suspect in ‘brutal’ homicide outside Omaha children’s center arrested in Minneapolis attempting to fly to France, police say",
-          "publisher": "WOWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818"
-        },
-        {
-          "url": "https://www.wowt.com/2026/11/25/live-11-am-omaha-police-give-update-suspect-brutal-homicide-outside-childrens-center/",
-          "title": "LIVE AT 11 A.M. - Omaha Police to give update on suspect in 'brutal' homicide outside children's center",
-          "publisher": "WOWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBkFncAqp7AblsR1vtnL9g7WP-KNJhQGLlUxDySt684ahm6x5XHdvzYQwGRdU"
-        },
-        {
-          "url": "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
-          "title": "Omaha police arrest man connected to homicide at Kids Can Community Center",
-          "publisher": "KETV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfIDfmI9r9FtR_tEHDySMzy1NqLIbLA-UTtao0C7tMvlnTVa3vcdqcfajjXXk"
         }
       ]
     }
