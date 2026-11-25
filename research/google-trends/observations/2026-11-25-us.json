@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T08:01:42.717650Z",
+  "checked_at": "2026-11-25T08:32:30.756569Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "hunger games 2026",
+      "query": "how to open vaults in gta 6",
       "approx_searches": "100+",
+      "published_at": "2026-11-25T07:50:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/wikis/gta-6/The_Cartel_Heist_Walkthrough",
+        "https://khelnow.com/gaming/gta-6-secret-bunker-free-tank-guide-202611",
+        "https://beebom.com/gta-6-free-tank-secret-bunker-location/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT_pXoCPvlkHjKQwjNACiq2XBscvDkqghZ3Uej1wbN1flAo3HmgDvrUnvXGyg",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/wikis/gta-6/The_Cartel_Heist_Walkthrough",
+          "title": "The Cartel Heist Walkthrough",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQT_pXoCPvlkHjKQwjNACiq2XBscvDkqghZ3Uej1wbN1flAo3HmgDvrUnvXGyg"
+        },
+        {
+          "url": "https://khelnow.com/gaming/gta-6-secret-bunker-free-tank-guide-202611",
+          "title": "GTA 6 Secret Bunker location - How to unlock a free tank",
+          "publisher": "Khel Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmHWAkaLl7p6UwMXPXfQlXla5YgBNDpc4HGql4be_wXiSiWIehi6FVSRpY3x4"
+        },
+        {
+          "url": "https://beebom.com/gta-6-free-tank-secret-bunker-location/",
+          "title": "How to Get a Free Tank in GTA 6 (Secret Bunker Location)",
+          "publisher": "Beebom",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0AIt6G03ZVYCrZrdBpDH5tuVkmCL9OjEK4ttZnYyo1JpxjCEUFCE3FBYv0Sc"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 chapter 2 mission list",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:50:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
+        "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/",
+        "https://www.notebookcheck.net/GTA-6-Chapter-2-guide-Best-moves-strategies-and-tips-to-progress-faster.1457994.0.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfa4x4lE5BSjIx_nroZlYhkGCHr0Mr5ROv81qkxH4_h0VLzofYfb2n9w10Y8",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
+          "title": "How Long Is Chapter 2 in GTA 6? All Missables and Mission List",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfa4x4lE5BSjIx_nroZlYhkGCHr0Mr5ROv81qkxH4_h0VLzofYfb2n9w10Y8"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/",
+          "title": "GTA 6 Chapter 2 Mission List - Every Mission in GTA 6 Chapter 2 in Order",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkKkgDQJXS0dkXcfP1eTcTEqYXj_WSZC2NJiWt9kLRF_0qNPlEEx6Wqyp6BV8"
+        },
+        {
+          "url": "https://www.notebookcheck.net/GTA-6-Chapter-2-guide-Best-moves-strategies-and-tips-to-progress-faster.1457994.0.html",
+          "title": "GTA 6 Chapter 2 guide: Best moves, strategies and tips to progress faster",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKjkYoMgROBCW8_3fQKJ6zOzSkSyJ__jdIeJYucsW61NIsyacbwhD_Ok1vbJw"
+        }
+      ]
+    },
+    {
+      "query": "cameron brink",
+      "approx_searches": "100+",
+      "published_at": "2026-11-25T07:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/wnba/story/_/id/50587846/cameron-brink-ben-felter-wedding",
+        "https://www.vogue.com/slideshow/cameron-brink-and-ben-felter-wedding",
+        "https://people.com/cameron-brink-wedding-marries-college-sweetheart-ben-felter-12263481"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6NRp9Hty2fd343B31UxTXQaeR066DcyUTJl07lh0hU3RGyxPtp-wyA2KFTqU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/wnba/story/_/id/50587846/cameron-brink-ben-felter-wedding",
+          "title": "Sparks forward Cameron Brink, Ben Felter wed at Stanford",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6NRp9Hty2fd343B31UxTXQaeR066DcyUTJl07lh0hU3RGyxPtp-wyA2KFTqU"
+        },
+        {
+          "url": "https://www.vogue.com/slideshow/cameron-brink-and-ben-felter-wedding",
+          "title": "Inside WNBA Star Cameron Brink and Ben Felter’s Stanford Wedding—and Her Four Bridal Looks",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUGcgt9mZVKtsjZpjivqfP7zP9XL7fsEi6-vfT9Kl2_lIaynHz2o3S6uYgl14"
+        },
+        {
+          "url": "https://people.com/cameron-brink-wedding-marries-college-sweetheart-ben-felter-12263481",
+          "title": "WNBA Star Cameron Brink Marries College Sweetheart Ben Felter in California Spot Where Their Love Story Began",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4g8kiILK_dH8CN0n1vZd85pR5au6ZLSsrQ1ouq077trO1XK8Tve9Fen2Uxuw"
+        }
+      ]
+    },
+    {
+      "query": "hunger games 2026",
+      "approx_searches": "200+",
       "published_at": "2026-11-25T07:40:00Z",
       "related_news_urls": [
         "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
         "https://fortune.com/2026/11/24/hunger-games-sunrise-on-the-reaping-box-office-gta-vi/",
-        "https://ew.com/13-biggest-changes-between-the-sunrise-on-the-reaping-book-movie-12274589"
+        "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek",
       "image_credit": "In Review Online",
@@ -33,11 +138,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBlRg0DPfiecAcU9DHI55XxfMBvQZR-zMwpIGOFlxHQ0-4MHqSEUfBvOhBaIA"
         },
         {
-          "url": "https://ew.com/13-biggest-changes-between-the-sunrise-on-the-reaping-book-movie-12274589",
-          "title": "‘Hunger Games: Sunrise on the Reaping’: Biggest changes from book to movie",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.boxofficepro.com/weekend-box-office-hunger-games-sunrise-on-the-reaping-sweeps-the-competition-with-120m-debut/",
+          "title": "Weekend Box Office: HUNGER GAMES: SUNRISE ON THE REAPING Sweeps the Competition with $120M Debut",
+          "publisher": "Boxoffice Pro",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeeSQv8d7X3XOGqCMFl8zWqUQ_7fSTzfL62E3jXbD7HIp5XomdysytkHEXgQE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPDeJvOFDfXWkESCaY87JAWFnxnGWEuJiXa94EhYH38uJ-iGGsStir3x4wQ5Y"
         }
       ]
     },
@@ -46,20 +151,13 @@
       "approx_searches": "100+",
       "published_at": "2026-11-25T07:20:00Z",
       "related_news_urls": [
-        "https://demokratis.co.id/en/president-snow-actor-rankings",
         "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
-        "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/"
+        "https://foro3d.com/en/2026/noviembre/ralph-fiennes-compara-la-maldad-de-snow-y-voldemort-tras-el-estreno-de.html",
+        "https://www.limapagi.id/en/president-snow-actor-rankings"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa18BsBFySJoGI8OkXcOBqH6WhPbP2-Z72EVzRpjuO4UVV4qVDX-9QTToF-NE",
-      "image_credit": "Demokratis.co.id",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV1Z6BrFFC8mLwjG7IzMU7Sn0s6tQt6AscG_EBKMAcfOPWwmCPQbeTsitF5s0",
+      "image_credit": "ScreenRant",
       "news": [
-        {
-          "url": "https://demokratis.co.id/en/president-snow-actor-rankings",
-          "title": "Screen Rant Ranks Three Actors Who Played President Snow",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa18BsBFySJoGI8OkXcOBqH6WhPbP2-Z72EVzRpjuO4UVV4qVDX-9QTToF-NE"
-        },
         {
           "url": "https://screenrant.com/hunger-games-movies-president-snow-actors-ranked/",
           "title": "All 3 Versions Of Coriolanus Snow In The Hunger Games Movies, Ranked",
@@ -68,11 +166,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV1Z6BrFFC8mLwjG7IzMU7Sn0s6tQt6AscG_EBKMAcfOPWwmCPQbeTsitF5s0"
         },
         {
-          "url": "https://inreviewonline.com/2026/11/23/sunrise-on-the-reaping-review/",
-          "title": "The Hunger Games: Sunrise on the Reaping — Francis Lawrence [Review]",
-          "publisher": "In Review Online",
+          "url": "https://foro3d.com/en/2026/noviembre/ralph-fiennes-compara-la-maldad-de-snow-y-voldemort-tras-el-estreno-de.html",
+          "title": "Ralph Fiennes compares Snow's and Voldemort's evil after the premiere of Az aratás hajnala",
+          "publisher": "Foro3D",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlx2xYuan6BU8bmTSQZsZukl9rj16iL4O6HFfyJxy43YXUT9Xu-QIqDkuv2ek"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTyJ_HpiKyzlbMy4WQJ6aJydwxoA6GZ_Exw4hCKeLXp9A4vCJC2gynf5olDuH4"
+        },
+        {
+          "url": "https://www.limapagi.id/en/president-snow-actor-rankings",
+          "title": "Screen Rant Ranks Three Actors Who Played President Snow",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QWAy1BUrKiIwj6wO_L2VWnYQnU8NOOfyWQu-2GjKcVJT0GoKOX6Arhj_DYk"
         }
       ]
     },
@@ -81,19 +186,19 @@
       "approx_searches": "100+",
       "published_at": "2026-11-25T07:20:00Z",
       "related_news_urls": [
-        "https://demokratis.co.id/en/halsey-beach-video-online-criticism",
+        "https://demokratis.co.id/en/halsey-bikini-beach-vacation",
         "https://www.hellomagazine.com/us/937009/halsey-turns-heads-in-brown-string-bikini-during-sun-soaked-beach-getaway/",
-        "https://peradaban.id/en/halsey-beach-video-horror-film"
+        "https://cwibc.co.id/en/halsey-replacer-horror-film-production"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S6t4Rp-GMyMf3HSoFcZLAKCiWzgSkUQljCqaCaPiissKWBb0FpFMXACqXU0",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizCvIP5A-csTaZn4hZyBSd68x-rRpUBuQQTfaGVUEqJ1jEjzX_aWAC6NSZKo",
       "image_credit": "Demokratis.co.id",
       "news": [
         {
-          "url": "https://demokratis.co.id/en/halsey-beach-video-online-criticism",
-          "title": "Halsey Faces Online Criticism After Beach Video Sparks Debate",
+          "url": "https://demokratis.co.id/en/halsey-bikini-beach-vacation",
+          "title": "Halsey Shares Bikini Photos After Wrapping Horror Movie",
           "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5S6t4Rp-GMyMf3HSoFcZLAKCiWzgSkUQljCqaCaPiissKWBb0FpFMXACqXU0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizCvIP5A-csTaZn4hZyBSd68x-rRpUBuQQTfaGVUEqJ1jEjzX_aWAC6NSZKo"
         },
         {
           "url": "https://www.hellomagazine.com/us/937009/halsey-turns-heads-in-brown-string-bikini-during-sun-soaked-beach-getaway/",
@@ -103,11 +208,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT1-e__gOOk3C97ntWVksftcIRaiasuuIGlUMTuNK2kFtS_LFhggQk9hbGgkLU"
         },
         {
-          "url": "https://peradaban.id/en/halsey-beach-video-horror-film",
-          "title": "Halsey Shares Beach Video After Wrapping Horror Film",
-          "publisher": "Peradaban.id",
+          "url": "https://cwibc.co.id/en/halsey-replacer-horror-film-production",
+          "title": "Halsey Completes Three Month Shoot for Horror Film Replacer",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizCvIP5A-csTaZn4hZyBSd68x-rRpUBuQQTfaGVUEqJ1jEjzX_aWAC6NSZKo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSDlTTeaMlwJaKfYNaYI6pZnqNSwsQ69jClREXRAlzcbCdlf7iZqOGEjbpL_Y"
         }
       ]
     },
@@ -148,7 +253,7 @@
     },
     {
       "query": "white",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-25T07:10:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/us-news/2026/nov/24/donald-trump-turkey-pardon",
@@ -182,48 +287,13 @@
       ]
     },
     {
-      "query": "день благодарения",
-      "approx_searches": "100+",
-      "published_at": "2026-11-25T07:10:00Z",
-      "related_news_urls": [
-        "https://www.rtvi.com/news/pomilovanie-svobody-tramp-provel-tradiczionnuyu-czeremoniyu-pered-dnem-blagodareniya/",
-        "https://ura.news/news/1053147096",
-        "https://nsn.fm/in-the-world/vybrannye-dlya-pomilovaniya-trampom-indeiki-razmestilis-v-roskoshnom-otele"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZGFQhw8eMQvRRFjlY6lbb_bRHm6TdH1Jm7Dba4oW8pDAjPG62gggyDXkMekw",
-      "image_credit": "RTVI",
-      "news": [
-        {
-          "url": "https://www.rtvi.com/news/pomilovanie-svobody-tramp-provel-tradiczionnuyu-czeremoniyu-pered-dnem-blagodareniya/",
-          "title": "Помилование Свободы: Трамп провел традиционную церемонию перед Днем благодарения",
-          "publisher": "RTVI",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZGFQhw8eMQvRRFjlY6lbb_bRHm6TdH1Jm7Dba4oW8pDAjPG62gggyDXkMekw"
-        },
-        {
-          "url": "https://ura.news/news/1053147096",
-          "title": "Трамп раскритиковал клички индеек прямо на церемонии помилования",
-          "publisher": "URA.RU",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpdLI0jA99Op5rjvJiqF5usIopn-uN8Ia3Tk81VD6J5U4ulYF-cpAgxez6fxc"
-        },
-        {
-          "url": "https://nsn.fm/in-the-world/vybrannye-dlya-pomilovaniya-trampom-indeiki-razmestilis-v-roskoshnom-otele",
-          "title": "Выбранные для помилования Трампом индейки разместились в роскошном отеле",
-          "publisher": "Национальная Служба Новостей",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRausE2JXKVJLAoB4EahjW-fl9EANPTV3-19QICQ84nnYpaYpifSfoBmn-ANvs"
-        }
-      ]
-    },
-    {
       "query": "pink",
       "approx_searches": "500+",
       "published_at": "2026-11-25T07:10:00Z",
       "related_news_urls": [
         "https://www.indexjournal.com/community/self-regionals-pretty-in-pink-earns-best-of-show-and-golden-tusk-honors/article_53bbd4e7-9fe1-473f-9d3a-46d138c56279.html",
-        "https://oracleoftime.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds-pink-gold/",
-        "https://www.watchpro.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds/"
+        "https://www.flaunt.com/post/sandro-ss27-lightwave",
+        "https://www.vice.com/en/article/gta-6-pink-porsche-location-garage-code/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV3DnIZ05ccg11J4Uu6or5sbebm3-6mjiPG6yKGm8hTZfblfhlTH7F86NexY",
       "image_credit": "Index-Journal",
@@ -236,18 +306,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCV3DnIZ05ccg11J4Uu6or5sbebm3-6mjiPG6yKGm8hTZfblfhlTH7F86NexY"
         },
         {
-          "url": "https://oracleoftime.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds-pink-gold/",
-          "title": "Jaeger-LeCoultre Launch Reverso Classic Monoface Small Seconds in Pink Gold",
-          "publisher": "Oracle Time",
+          "url": "https://www.flaunt.com/post/sandro-ss27-lightwave",
+          "title": "SANDRO Lightwave | SS27 Ushers in Powder Pink, Pale Yellow, and Blue",
+          "publisher": "Flaunt Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYzPo9Zi-08QYwfCxykJxIW97XqdViY4glTTYrFIaEk7d70Aur2xxKnA-kbBA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9P4x5oy1iMLJH15Dlw6V0nKl5ddfjS0hl-5rfDt-wBPI3zPFmdsx3t8x0JSQ"
         },
         {
-          "url": "https://www.watchpro.com/jaeger-lecoultre-reverso-classic-monoface-small-seconds/",
-          "title": "Could This New Jaeger-LeCoultre Reverso Be Bond's Next Watch?",
-          "publisher": "WatchPro",
+          "url": "https://www.vice.com/en/article/gta-6-pink-porsche-location-garage-code/",
+          "title": "How to Get the Pink Porsche in GTA 6 – Chapter 3 Missable",
+          "publisher": "VICE",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLXYU-dhDWyYAvfVbHSqx2F-ViF6PwquI53zQ61sL0DYSZBIERndVFwBuwf8M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTPA2JPrWXg28ZwIwjRo-4DnRZ3624zKnl6tytbJkh5__ktQUXRTW0aeGVG-Y"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "DK Pittsburgh Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPptYN8r1FHw8KqvlYW602U4xOzA_5wYYnNgwGvh2z1RUqM0hfz65xiBPAbSE"
-        }
-      ]
-    },
-    {
-      "query": "when is thanksgiving 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T07:00:00Z",
-      "related_news_urls": [
-        "https://www.wral.com/news/local/stores-open-on-thanksgiving-november-2026/",
-        "https://abc7ny.com/post/what-stores-are-open-thanksgiving-black-friday-2026-grocery-drugstores-more-list/20071063/",
-        "https://www.news4jax.com/news/local/2026/11/24/stores-open-closed-thanksgiving-2026-publix-walmart-target-more/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTaE4W-1NWJOrr7414vYJvk5VIs4_5IOavSYw84nddK9JFfgmT6MHpX-kZCU",
-      "image_credit": "WRAL",
-      "news": [
-        {
-          "url": "https://www.wral.com/news/local/stores-open-on-thanksgiving-november-2026/",
-          "title": "Last-minute holiday needs? These stores are open on Thanksgiving",
-          "publisher": "WRAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQTaE4W-1NWJOrr7414vYJvk5VIs4_5IOavSYw84nddK9JFfgmT6MHpX-kZCU"
-        },
-        {
-          "url": "https://abc7ny.com/post/what-stores-are-open-thanksgiving-black-friday-2026-grocery-drugstores-more-list/20071063/",
-          "title": "What stores are open on Thanksgiving and Black Friday 2026? Grocery, drugstores and more | List",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ90ACaq7BqzMT5zzG5W1PUprGpKg4qc9ENcYR-D9-PFblCmKkdBkpH27VM4oc"
-        },
-        {
-          "url": "https://www.news4jax.com/news/local/2026/11/24/stores-open-closed-thanksgiving-2026-publix-walmart-target-more/",
-          "title": "Stores open, closed on Thanksgiving in Florida: Publix, Walmart, Target more",
-          "publisher": "News4JAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw1H2Fl9SPac93gX37_eJEsk90KxAIZbkTBanT1lyy6h96V61UH4oE_qJfDuI"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving 2026 football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T06:50:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-playoff-picture-postseason-probabilities-week-12-2026-season",
-        "https://sports.yahoo.com/nfl/article/nfl-thanksgiving-week-games-ranking-the-5-weekday-games-by-whats-on-the-line-205101159.html",
-        "https://www.nytimes.com/athletic/7809458/2026/11/24/super-bowl-odds-bears-lions-chiefs-bills-thanksgiving-nfl/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlvdQRbOhLD_WwPrhThHDN8A-fzqC9Ma8vb9k6Qzzssl7M81y0l_p3Nn_NeVk",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-playoff-picture-postseason-probabilities-week-12-2026-season",
-          "title": "NFL playoff picture: Postseason probabilities entering Week 12 of the 2026 season",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlvdQRbOhLD_WwPrhThHDN8A-fzqC9Ma8vb9k6Qzzssl7M81y0l_p3Nn_NeVk"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/article/nfl-thanksgiving-week-games-ranking-the-5-weekday-games-by-whats-on-the-line-205101159.html",
-          "title": "NFL Thanksgiving week games: Ranking the 5 weekday games by what's on the line",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkSdbFLiYekOKAt_vxpAhd_6RgLCIViXAZYmCyCdkzUtHPqlaUeINV3dB-br4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7809458/2026/11/24/super-bowl-odds-bears-lions-chiefs-bills-thanksgiving-nfl/",
-          "title": "Super Bowl odds: What Bears-Lions, Chiefs-Bills, more Thanksgiving games could mean",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiS_PizM3HNgjzGaV0KwWkOAOXJ4bDFkYX91gFfXl_cX-dIjMe-WkY5WlFEkc"
         }
       ]
     }
