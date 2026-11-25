@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T04:01:19.694715Z",
+  "checked_at": "2026-11-25T04:31:08.938960Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jayson tatum",
+      "query": "mason rudolph",
       "approx_searches": "2000+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "published_at": "2026-11-25T04:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/data-shows-jayson-tatum-makes-223603914.html",
-        "https://www.bostonglobe.com/2026/11/24/sports/celtics-jayson-tatum-michael-jordan/",
-        "https://sports.yahoo.com/articles/jayson-tatum-reveals-illuminating-6-164104118.html"
+        "https://www.post-gazette.com/sports/steelers/steelers-quarterback-aaron-rodgers-YSDF2NYFAFDXLENQEGLGSSDLKI/",
+        "https://www.steelers.com/news/from-the-press-room-steelers-at-eagles-x1342",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-mccarthy-aaron-rodgers-is-our-quarterback"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJt--LSCAJGBLt_m4s9DHv7IAcgZT7Wx5vD2GejhbrPeXKIuyaYuFEr99Vu9Y",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxeYno8Yo_gO_fT1EF2m_W2WXgr6Q-wN96tOQf1J-BWOb7jkJEhiUcQVEbMFw",
+      "image_credit": "Pittsburgh Post-Gazette",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/articles/data-shows-jayson-tatum-makes-223603914.html",
-          "title": "Data Shows Jayson Tatum Makes More Clutch Shots Than Any NBA Player",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.post-gazette.com/sports/steelers/steelers-quarterback-aaron-rodgers-YSDF2NYFAFDXLENQEGLGSSDLKI/",
+          "title": "Despite Aaron Rodgers’ struggles and limitations, Mike McCarthy is sticking with the Steelers’ QB",
+          "publisher": "Pittsburgh Post-Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJt--LSCAJGBLt_m4s9DHv7IAcgZT7Wx5vD2GejhbrPeXKIuyaYuFEr99Vu9Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxeYno8Yo_gO_fT1EF2m_W2WXgr6Q-wN96tOQf1J-BWOb7jkJEhiUcQVEbMFw"
         },
         {
-          "url": "https://www.bostonglobe.com/2026/11/24/sports/celtics-jayson-tatum-michael-jordan/",
-          "title": "Celtics star Jayson Tatum makes most of connection with Michael Jordan through endorsement deal",
-          "publisher": "The Boston Globe",
+          "url": "https://www.steelers.com/news/from-the-press-room-steelers-at-eagles-x1342",
+          "title": "From the Press Room: Steelers at Eagles",
+          "publisher": "Steelers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC7vwx1bGJcAUCxsRhQwD1AO4URNpJpnBMhvFJqNcxlYzOslUJw1WxIbg814E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRsTMEs9Q7PHmN0kqO9V7UAbz5GndSwDiKsc3inV81MIaH3yRgMfKERn74hCs"
         },
         {
-          "url": "https://sports.yahoo.com/articles/jayson-tatum-reveals-illuminating-6-164104118.html",
-          "title": "Jayson Tatum reveals illuminating 6-hour lunch with ‘Uncle Mike’ Jordan",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/mike-mccarthy-aaron-rodgers-is-our-quarterback",
+          "title": "Mike McCarthy: Aaron Rodgers is our quarterback",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBSHvWWWSNxoCJJ97D9LXMF9jZwMtYJlscpXbP6emx8wQ-tx8dkkhFyCldFdU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUAUjxDds11KXcMiKjgf7YSGJKlU6hm6wSzLnE2UuLPqBmZboDIiPGNrNh2dQ"
         }
       ]
     },
     {
-      "query": "helena foulkes",
+      "query": "aaron rodgers benched",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "published_at": "2026-11-25T04:10:00Z",
       "related_news_urls": [
-        "https://rhodeislandcurrent.com/2026/11/22/gov-elect-foulkes-announces-in-person-listening-sessions/",
-        "https://whatsupnewp.com/2026/11/governor-elect-foulkes-to-hold-newport-listening-session-nov-30/",
-        "https://pbn.com/foulkes-slates-4-public-listening-sessions/"
+        "https://fansided.com/nfl/aaron-rodgers-and-3-more-nfl-qbs-who-deserve-to-be-benched-after-week-11",
+        "https://triblive.com/sports/beyond-the-bylines-dk-metcalfs-contract-is-atop-the-list-of-all-time-pittsburgh-sports-clunkers/",
+        "https://www.post-gazette.com/sports/steelers/dk-metcalf-steelers-EUKSMKIL4BC65LSWK6R24MD2JM/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzDSI9eYjLT4-xdDjCOxUrlQTP_BKzMoHcWfmNOtvw5p30rA0M6a7g5vcilrI",
-      "image_credit": "Rhode Island Current",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQG7HsvA-9KgETE0AxhwyXjZUVQUfPf19X-1oJjCiXdp_0dkCxyuAUTUL1teM",
+      "image_credit": "FanSided",
       "news": [
         {
-          "url": "https://rhodeislandcurrent.com/2026/11/22/gov-elect-foulkes-announces-in-person-listening-sessions/",
-          "title": "Gov.-elect Foulkes announces in-person listening sessions",
-          "publisher": "Rhode Island Current",
+          "url": "https://fansided.com/nfl/aaron-rodgers-and-3-more-nfl-qbs-who-deserve-to-be-benched-after-week-11",
+          "title": "Aaron Rodgers and 3 more NFL QBs who deserve to be benched after Week 11",
+          "publisher": "FanSided",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzDSI9eYjLT4-xdDjCOxUrlQTP_BKzMoHcWfmNOtvw5p30rA0M6a7g5vcilrI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQG7HsvA-9KgETE0AxhwyXjZUVQUfPf19X-1oJjCiXdp_0dkCxyuAUTUL1teM"
         },
         {
-          "url": "https://whatsupnewp.com/2026/11/governor-elect-foulkes-to-hold-newport-listening-session-nov-30/",
-          "title": "Governor-elect Foulkes to hold Newport listening session Nov. 30",
-          "publisher": "What's Up Newp",
+          "url": "https://triblive.com/sports/beyond-the-bylines-dk-metcalfs-contract-is-atop-the-list-of-all-time-pittsburgh-sports-clunkers/",
+          "title": "Beyond the Bylines: DK Metcalf’s contract is atop the list of all-time Pittsburgh sports clunkers",
+          "publisher": "TribLIVE.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfwfdz93D7vOid3AmNTMn_u15uuFVMEKyhL9rwOGSYIxpIkyuWeADLAKRjrT8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSk_CElamGzjoB67l5Bi3CwwS8mhT0vbieQxh5R0q6rX77gq4PCX-ShL4MSkns"
         },
         {
-          "url": "https://pbn.com/foulkes-slates-4-public-listening-sessions/",
-          "title": "Foulkes slates 4 public listening sessions",
-          "publisher": "Providence Business News",
+          "url": "https://www.post-gazette.com/sports/steelers/dk-metcalf-steelers-EUKSMKIL4BC65LSWK6R24MD2JM/",
+          "title": "Going Deep: The Steelers are finding out you can’t win with a player like DK Metcalf",
+          "publisher": "Pittsburgh Post-Gazette",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8vnsu_JOJTvXHUCYpA595-nqFPziDH28L993iKkp92Mxk1Lax-A9zFmqDe_k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStc5D_cRfaiQ-VjjOgZmDa2LVC0StNxUNdaWv8JnU-a2R83qh0acCysf-8lF8"
         }
       ]
     },
     {
-      "query": "gen z years",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "query": "utep basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T04:10:00Z",
       "related_news_urls": [
-        "https://abcnews.com/US/pennsylvania-teen-died-2020-become-gen-saint/story?id=138378815",
-        "https://6abc.com/post/maria-middletons-story-bucks-county-teens-journey-canonization-takes-step/20057588/",
-        "https://www.foxnews.com/video/6408843216112"
+        "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+        "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
+        "https://www.nytimes.com/athletic/7799686/2026/11/21/f1-las-vegas-gp-qualifying-results/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWpj8Xm2xOC2Lbyi0SwX0-NCVPT9DXw14Ikx200EqW5DP7vsy8AmEKpOeMF5A",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ",
+      "image_credit": "Formula 1",
       "news": [
         {
-          "url": "https://abcnews.com/US/pennsylvania-teen-died-2020-become-gen-saint/story?id=138378815",
-          "title": "Pennsylvania teen who died in 2020 could become first Gen Z saint",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.formula1.com/en/latest/article/official-grid-who-starts-where-in-las-vegas-after-multiple-penalties.1PRdR9E7qYRjHoRh1NlDR4",
+          "title": "OFFICIAL GRID: Who starts where for the Las Vegas Grand Prix",
+          "publisher": "Formula 1",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWpj8Xm2xOC2Lbyi0SwX0-NCVPT9DXw14Ikx200EqW5DP7vsy8AmEKpOeMF5A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzuySFq4mndcIyE08Mx94h3yhURiQw3JIh9lG3tRCoaX89jPEnqF6Ag0y5twQ"
         },
         {
-          "url": "https://6abc.com/post/maria-middletons-story-bucks-county-teens-journey-canonization-takes-step/20057588/",
-          "title": "Maria Middleton's story: Bucks County teen's journey toward canonization takes next step",
-          "publisher": "6abc Philadelphia",
+          "url": "https://www.espn.com/f1/story/_/id/50472094/kimi-antonelli-max-verstappen-las-vegas-grand-prix-formula-1",
+          "title": "Max Verstappen promoted to Las Vegas GP pole as Kimi Antonelli drops to sixth",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqp8Ctn1PEFCCD1coiid7_zsmmzof_-1l9wdC8Z-Qk8o-BlB6qmLYLBvPWMAY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wxv5GN_yrA_kldDehVtXmfd7ryVA5MZR1rYT8H47s_q5hbND0yXwrTXn9cI"
         },
         {
-          "url": "https://www.foxnews.com/video/6408843216112",
-          "title": "Maria Middleton could become the first Gen Z saint",
-          "publisher": "Fox News",
+          "url": "https://www.nytimes.com/athletic/7799686/2026/11/21/f1-las-vegas-gp-qualifying-results/",
+          "title": "Max Verstappen on pole for Las Vegas Grand Prix as both Ferraris eliminated early - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTd8ghGtn4sghM5mGUA0PHJOQrH7GzuwT01DhBqQbphw4OeBeIMOOVquPNPsLk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRat0V920XK0E0DaxF_Y8eeP1zgAKZKh9m99cSoQJXuzMf8gjgoaBibKdpedJ4"
         }
       ]
     },
     {
-      "query": "jumanji open world",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "query": "kyrie irving",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://drafthouse.com/show/jumanji-open-world",
-        "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/",
-        "https://www.yardbarker.com/entertainment/articles/jumanji_open_world_whos_who_in_the_clash_of_the_video_game_and_reality/s1_17785_44590416"
+        "https://dallassportsjournal.com/david-adelman-kyrie-irving-scoring-range-mavericks-nuggets/",
+        "https://www.yardbarker.com/nba/articles/mavericks_kyrie_irving_draws_extra_help_in_certain_spots_nuggets_coach_explains/s1_17810_44614981",
+        "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnrnl4odfc8Mxziay1uIyEcybfxMFKZrQ63ExYZB3gXjH0BEkieVL_cG8oys",
-      "image_credit": "Alamo Drafthouse",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddm0aHASJgWEUeH39mQLhMCFoRGKzkYN8tYXkLhC4Mgjks7awKkgnXQySBxY",
+      "image_credit": "dallassportsjournal.com",
       "news": [
         {
-          "url": "https://drafthouse.com/show/jumanji-open-world",
-          "title": "Jumanji: Open World",
-          "publisher": "Alamo Drafthouse",
+          "url": "https://dallassportsjournal.com/david-adelman-kyrie-irving-scoring-range-mavericks-nuggets/",
+          "title": "Kyrie Irving Has Three Ways To Score, Nuggets’ Adelman Says",
+          "publisher": "dallassportsjournal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVnrnl4odfc8Mxziay1uIyEcybfxMFKZrQ63ExYZB3gXjH0BEkieVL_cG8oys"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddm0aHASJgWEUeH39mQLhMCFoRGKzkYN8tYXkLhC4Mgjks7awKkgnXQySBxY"
         },
         {
-          "url": "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/",
-          "title": "Jumanji: Open World Trailer Reveals Final Adventure",
-          "publisher": "Explosion Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLyVXjpZoBG7Yd7yYz9s_mRATlDu_-TstD86nFwbU_W1I9zserYYjiaTcOsiw"
-        },
-        {
-          "url": "https://www.yardbarker.com/entertainment/articles/jumanji_open_world_whos_who_in_the_clash_of_the_video_game_and_reality/s1_17785_44590416",
-          "title": "Jumanji: Open World: Who’s Who in the Clash of the Video Game and Reality",
+          "url": "https://www.yardbarker.com/nba/articles/mavericks_kyrie_irving_draws_extra_help_in_certain_spots_nuggets_coach_explains/s1_17810_44614981",
+          "title": "Mavericks' Kyrie Irving Draws Extra Help In Certain Spots, Nuggets Coach Explains",
           "publisher": "Yardbarker",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSeZZaSCJFUvCKZEe5V1ggESftMQGqGvljrN_scXbLaOfXp3Tuhu6gIeXQPTU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXZ5jtOjFJIxXoTRwscUievcuFUEA8R5xjdGI3yBsuxLAYKowrFN8a6UIohTM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7801960/2026/11/22/walter-clayton-mavericks-florida/",
+          "title": "Why Walter Clayton Jr. spurned other West teams and joined his college roommate on the Mavs - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSYk9SCRW3UzYxR9FCw8xdgRcqfL6EKutKi84XGyaIYQGcxJZID4OfIuRIEwRs"
         }
       ]
     },
     {
-      "query": "st john's basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "query": "us treasury",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://www.newsday.com/sports/columnists/roger-rubin/st-johns-players-era-tournament-kncwnf0z",
-        "https://247sports.com/college/oregon/article/how-to-watch-oregon-basketball-vs-no-13-st-johns-tv-channel-tipoff-time-and-betting-odds-293253993/",
-        "https://www.oregonlive.com/betting/2026/11/polymarket-enhances-new-25-referral-code-oregon-for-oregon-st-johns-college-basketball.html"
+        "https://www.nbcnews.com/politics/national-security/trump-administration-officials-debating-targeting-irans-leaders-source-rcna610889",
+        "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
+        "https://newrepublic.com/post/218337/trump-assassination-iranian-leaders-khamenei-end-iran-war"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS0GS4it6OipP06G09u3Q7jo8rrlAZ34jTIAyRYPo5Ydy1VbxpJHEzLp6MBbo",
-      "image_credit": "Newsday",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW0rtFmSZVKRZGxQYF-2CDS6wLlmSvlnfxEKeFGYKJT__nlJ469MXFLCHIZSg",
+      "image_credit": "NBC News",
       "news": [
         {
-          "url": "https://www.newsday.com/sports/columnists/roger-rubin/st-johns-players-era-tournament-kncwnf0z",
-          "title": "It may be early, but this week is significant for St. John's now and next March",
-          "publisher": "Newsday",
+          "url": "https://www.nbcnews.com/politics/national-security/trump-administration-officials-debating-targeting-irans-leaders-source-rcna610889",
+          "title": "Trump administration officials debating targeting Iran’s leaders, sources say",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS0GS4it6OipP06G09u3Q7jo8rrlAZ34jTIAyRYPo5Ydy1VbxpJHEzLp6MBbo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTW0rtFmSZVKRZGxQYF-2CDS6wLlmSvlnfxEKeFGYKJT__nlJ469MXFLCHIZSg"
         },
         {
-          "url": "https://247sports.com/college/oregon/article/how-to-watch-oregon-basketball-vs-no-13-st-johns-tv-channel-tipoff-time-and-betting-odds-293253993/",
-          "title": "How to Watch Oregon basketball vs. No. 13 St. John's: TV channel, tipoff time and betting odds",
-          "publisher": "247Sports",
+          "url": "https://www.foxnews.com/world/trump-administration-weighs-targeting-irans-top-regime-leaders-bid-end-war-report",
+          "title": "Trump administration weighs targeting Iran's top regime leaders in bid to end war: report",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP78BIcyteHUdjyR0Oi2QuvNe7xl_1isOEz5vf-zb4_21w68uTVMV5nG2XmZo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3sWtHNW-nx0iIXWQjU9wjwxiPbRTYwEkMJ73VfPZiX5V6hNIzMVwQ3bYPwFc"
         },
         {
-          "url": "https://www.oregonlive.com/betting/2026/11/polymarket-enhances-new-25-referral-code-oregon-for-oregon-st-johns-college-basketball.html",
-          "title": "Polymarket enhances new $25 referral code “OREGON” for Oregon-St. John’s college basketball",
-          "publisher": "OregonLive.com",
+          "url": "https://newrepublic.com/post/218337/trump-assassination-iranian-leaders-khamenei-end-iran-war",
+          "title": "Trump Thinking About Assassinating Iranian Leaders",
+          "publisher": "The New Republic",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSNTusSS3V6G7nuEEizuFXYGt8b3108Y_WUZZyqAk9jQ9-FHDLrBw1HnKr-qY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtDCF1gw-pt3R_O9RAkyYvNlCC0xgGj9G_QkjmuRenQQTFu4ftOHrSKHDBWU"
         }
       ]
     },
     {
-      "query": "vgk",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "query": "demar derozan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50588204/trevor-connelly-nets-goal-golden-knights",
-        "https://www.nhl.com/video/vgk-edm-eichel-scores-ppg-against-devon-levi-6408849287112",
-        "https://www.hockey.com/news/jack-eichel-extends-point-streak-to-five-games-with-power-play-8ykesv"
+        "https://www.espn.com/video/clip/_/id/50546680/demar-derozan-drills-1-nuggets",
+        "https://nugglove.com/demar-derozan-keeps-taking-one-step-forward-two-steps-back-nuggets",
+        "https://milehighsports.com/pickaxe-and-roll-demar-derozan-found-some-success-can-denver-nuggets-maintain-it/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1O_tbNgPkX1S53rucBRye9ktZLylreBwe5JhkxNsZmfl8HEbGdxxC371rQ90",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMwQpia25ZXN7nlcqn4VNegRBqfXgJcZaawvdshRVZfQ0PMHXvFyC7GfYv5CM",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50588204/trevor-connelly-nets-goal-golden-knights",
-          "title": "Trevor Connelly nets goal for Golden Knights",
+          "url": "https://www.espn.com/video/clip/_/id/50546680/demar-derozan-drills-1-nuggets",
+          "title": "DeMar DeRozan drills an and-1 for the Nuggets",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR1O_tbNgPkX1S53rucBRye9ktZLylreBwe5JhkxNsZmfl8HEbGdxxC371rQ90"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMwQpia25ZXN7nlcqn4VNegRBqfXgJcZaawvdshRVZfQ0PMHXvFyC7GfYv5CM"
         },
         {
-          "url": "https://www.nhl.com/video/vgk-edm-eichel-scores-ppg-against-devon-levi-6408849287112",
-          "title": "Eichel snipes a PPG",
-          "publisher": "NHL.com",
+          "url": "https://nugglove.com/demar-derozan-keeps-taking-one-step-forward-two-steps-back-nuggets",
+          "title": "DeMar DeRozan keeps taking one step forward and two steps back for Nuggets",
+          "publisher": "Nugg Love",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNJzD7Fw1-x8d14tSrj3Czby2LjdxynrySl23DymVyoMlJb03ktrz4KcpOx0I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKnSGywWSVKwfaiqweme9s3L7tw1Dy8hRf9AsgUR1s6YquNtmNyZZ2TomCEz0"
         },
         {
-          "url": "https://www.hockey.com/news/jack-eichel-extends-point-streak-to-five-games-with-power-play-8ykesv",
-          "title": "Jack Eichel extends point streak to five games with power-play goal in Edmonton",
-          "publisher": "Hockey.com",
+          "url": "https://milehighsports.com/pickaxe-and-roll-demar-derozan-found-some-success-can-denver-nuggets-maintain-it/",
+          "title": "Pickaxe and Roll: DeMar DeRozan found some success, can Denver Nuggets maintain it?",
+          "publisher": "Mile High Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjXZuZVT3X5zDrcjKKhliCjOjIl-5-BNc5_ziZ4_hJOqA7HlghyOyhQslWudM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXWDPQBHSEXiKDro_Z35mzXtbVBhGBdnLLCIQKFVx6bCCFDgBuIDpADqu2fQY"
         }
       ]
     },
     {
-      "query": "carlos santana mlb",
+      "query": "lauren becker omaha",
       "approx_searches": "200+",
-      "published_at": "2026-11-25T03:40:00Z",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/mariners-carlos-santana-agree-to-minor-league-deal.html",
-        "https://sports.yahoo.com/articles/former-mlb-star-still-free-184553617.html",
-        "https://sodomojo.com/former-mariners-hero-carlos-santana-is-raging-against-the-dying-of-his-mlb-career"
+        "https://www.wowt.com/2026/11/24/police-investigating-homicide-south-omaha-community-center/",
+        "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
+        "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4dCobQf3tGoQ2MCpPyfXdqx8F8Uy-r_SrQfdCofd_VMFXAtv12Gg3WVIugWk",
-      "image_credit": "MLB Trade Rumors",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818",
+      "image_credit": "WOWT",
       "news": [
         {
-          "url": "https://www.mlbtraderumors.com/2026/11/mariners-carlos-santana-agree-to-minor-league-deal.html",
-          "title": "Mariners Sign Carlos Santana",
-          "publisher": "MLB Trade Rumors",
+          "url": "https://www.wowt.com/2026/11/24/police-investigating-homicide-south-omaha-community-center/",
+          "title": "South Omaha children’s center homicide victim identified; police search for suspect",
+          "publisher": "WOWT",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4dCobQf3tGoQ2MCpPyfXdqx8F8Uy-r_SrQfdCofd_VMFXAtv12Gg3WVIugWk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPRYgp-ZodewvqeaF5dc-uIXfTYbLKA_p2cOgI3WJdwxBCZrtLTFzFau4m818"
         },
         {
-          "url": "https://sports.yahoo.com/articles/former-mlb-star-still-free-184553617.html",
-          "title": "Former MLB All-Star Still a Free Agent After Atlanta Braves Release",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.ketv.com/article/omaha-police-arrest-man-connected-to-homicide-at-kids-can-community-center/74526180",
+          "title": "Omaha police arrest man connected to homicide at Kids Can Community Center",
+          "publisher": "KETV",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNyW9yLYoU9a7nFuQimT_iVjIe-ouhNIT3AUP2h0KRa3Og-LAV9g0cXqV_nGQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSIStCCtDqamQ09-EPnxKlJkFXM6UHrmtCbWieCUaUXvFGG2efs-zKQycaGMCE"
         },
         {
-          "url": "https://sodomojo.com/former-mariners-hero-carlos-santana-is-raging-against-the-dying-of-his-mlb-career",
-          "title": "Former Mariners hero Carlos Santana is raging against the dying of his MLB career",
-          "publisher": "Sodo Mojo",
+          "url": "https://omaha.com/news/local/crime-courts/article_e482ee00-1cd1-4354-843d-a19bae0add8c.html",
+          "title": "Woman, 22, fatally stabbed in Omaha early childhood education center parking lot",
+          "publisher": "Omaha World-Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvlDuc7UfVw3K_ycPT-kV1cP61QbP2dAqbEJTDthafcMyvj_YCltpYYs2XxhM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT15-nBz5AtUlacsYL0gfjETUvaRhQhRyiZpOTNr53aWeBpLrAkx4D89qmxDj4"
         }
       ]
     },
     {
-      "query": "dan koh",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T03:30:00Z",
+      "query": "sam houston vs wa state",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://www.statehousenews.com/news/legislature/a-mayor-a-19-year-old-and-a-bachelorette-alum-beacon-hill-s-incoming-class/article_8a678f66-cfdb-49fb-abf6-0de406f830de.html",
-        "https://www.yahoo.com/news/politics/articles/massachusetts-governor-targets-large-lot-055500293.html",
-        "https://www.ack.net/news/healey-legislature-should-pass-housing-policy-rejected-by-voters/article_feacb302-bf7a-4ebe-811a-590d859022c7.html"
+        "https://247sports.com/college/washington-state/article/washington-state-basketball-this-week-wsu-hoops-litmus-test-awaits-after-near-upset-of-duke-293239119/",
+        "https://www.sportsgambler.com/betting-tips/basketball/sam-houston-bearkats-vs-washington-state-cougars-prediction-odds-2026-11-24/",
+        "https://wsucougars.com/news/2026/11/23/cougs-and-bearkats-slated-for-tuesday-night-in-beasley"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNIkuUqp1HRXwoEoJymRu0ijkTpvkuWLznAikQIzw6U0EabREH1DauUe9wdM",
-      "image_credit": "State House News Service",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_AIyYG_BJUZeSDyyb55p6mDWo2BG3QFTNkWDxDxBay_OjBcLWG3rHoBJM0I",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.statehousenews.com/news/legislature/a-mayor-a-19-year-old-and-a-bachelorette-alum-beacon-hill-s-incoming-class/article_8a678f66-cfdb-49fb-abf6-0de406f830de.html",
-          "title": "A mayor, a 19-year-old and a 'Bachelorette' alum: Beacon Hill’s incoming class",
-          "publisher": "State House News Service",
+          "url": "https://247sports.com/college/washington-state/article/washington-state-basketball-this-week-wsu-hoops-litmus-test-awaits-after-near-upset-of-duke-293239119/",
+          "title": "This week in WSU hoops: Litmus test awaits Cougars after near upset of Duke",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBNIkuUqp1HRXwoEoJymRu0ijkTpvkuWLznAikQIzw6U0EabREH1DauUe9wdM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTh_AIyYG_BJUZeSDyyb55p6mDWo2BG3QFTNkWDxDxBay_OjBcLWG3rHoBJM0I"
         },
         {
-          "url": "https://www.yahoo.com/news/politics/articles/massachusetts-governor-targets-large-lot-055500293.html",
-          "title": "Massachusetts governor targets large-lot zoning rules to make room for 'starter homes'",
-          "publisher": "Yahoo",
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/sam-houston-bearkats-vs-washington-state-cougars-prediction-odds-2026-11-24/",
+          "title": "Sam Houston vs Washington State Prediction, Picks & Odds | 24 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNeAGBQXhC1h2BeJ9455BAiK6QaTWeRPyJKVV_pHK9Htrnlmw3BlgYwvHYd0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
         },
         {
-          "url": "https://www.ack.net/news/healey-legislature-should-pass-housing-policy-rejected-by-voters/article_feacb302-bf7a-4ebe-811a-590d859022c7.html",
-          "title": "Healey: Legislature should pass housing policy rejected by voters",
-          "publisher": "The Inquirer and Mirror",
+          "url": "https://wsucougars.com/news/2026/11/23/cougs-and-bearkats-slated-for-tuesday-night-in-beasley",
+          "title": "Cougs and Bearkats Slated for Tuesday Night in Beasley",
+          "publisher": "Washington State University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeRPPPKyWrtOZ1X4SVMuTunOlNcnor0XYVpvvKPJeN7oI72HeQW_lovcxI6lE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNLL6wG8Yl_suTb4st8GuydrVKTrv9OTOFYvbl5D2JKVPB8CNmi2pRWmmV-s4"
         }
       ]
     },
     {
-      "query": "derrick white",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T03:30:00Z",
+      "query": "daniel gafford",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T04:00:00Z",
       "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/p-j-washington-illness-upgraded-to-available",
-        "https://www.fanduel.com/research/nba/player-news/injuries/grant-williams-dtd-november-25-2026-against-bulls-hamstring",
-        "https://www.cbssports.com/fantasy/basketball/news/hornets-grant-williams-out-again-monday/"
+        "https://dallassportsjournal.com/daniel-gafford-kyrie-irving-leadership-mavericks/",
+        "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-daniel-gafford-nba-cup-22548460.php",
+        "https://dallassportsjournal.com/daniel-gafford-nba-cup-money-mavericks-nuggets/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa9Q18mSz1wPDxRSo-ZxH4x2uKRKLtQv3_ZA3XekDO9sIZxHkt1kYtznNw3L4",
-      "image_credit": "NBC Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nM96ZxxWIdSGeH9nPjLDYpwdoUSUgHenPXGSOSnypCFuYfcP1VgfHdRxX0",
+      "image_credit": "Dallas Hoops Journal",
       "news": [
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-24/p-j-washington-illness-upgraded-to-available",
-          "title": "P.J. Washington (illness) upgraded to available",
-          "publisher": "NBC Sports",
+          "url": "https://dallassportsjournal.com/daniel-gafford-kyrie-irving-leadership-mavericks/",
+          "title": "‘Heads Of Our Snakes’: Daniel Gafford Details Kyrie Irving’s Leadership As Dallas Mavericks Visit Denver Nuggets",
+          "publisher": "Dallas Hoops Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa9Q18mSz1wPDxRSo-ZxH4x2uKRKLtQv3_ZA3XekDO9sIZxHkt1kYtznNw3L4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7nM96ZxxWIdSGeH9nPjLDYpwdoUSUgHenPXGSOSnypCFuYfcP1VgfHdRxX0"
         },
         {
-          "url": "https://www.fanduel.com/research/nba/player-news/injuries/grant-williams-dtd-november-25-2026-against-bulls-hamstring",
-          "title": "Grant Williams DTD For Nov. 25 Against Bulls Due To Hamstring Injury",
-          "publisher": "FanDuel",
+          "url": "https://www.dallasnews.com/sports/mavericks/article/dallas-mavericks-daniel-gafford-nba-cup-22548460.php",
+          "title": "Thanks to sustained health, Daniel Gafford has been man in middle Mavs have been missing",
+          "publisher": "Dallas News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdKpQSKdOy7aM56YY9lN49_CZVz7wxLCR7VFySpbk6mg5N1mLD_gm88iRbVBk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYXxqH7clU64djgpNuyXamtmjf4DBFvT1DsPdzi4Aavjh-1Jx59ruYTKTtRJs"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/hornets-grant-williams-out-again-monday/",
-          "title": "Hornets' Grant Williams: Out again Monday",
-          "publisher": "CBS Sports",
+          "url": "https://dallassportsjournal.com/daniel-gafford-nba-cup-money-mavericks-nuggets/",
+          "title": "Mavericks’ Gafford: NBA Cup Money Changes The Competition",
+          "publisher": "Dallas Hoops Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYbs5wP8zWHCPlAZc-yeQfFzkRfoT4Tz94N2ibwwBvlmXLKHDpV-6ttS3rfMI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT7uRps4Ikid34h-7t_uPDIe2GHHsnfdGzFBb-d8JVpUP5WQyyeeHuk8mK7u44"
         }
       ]
     },
     {
-      "query": "hailey bills",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T03:20:00Z",
+      "query": "val chmerkovskiy",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T03:50:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1438390/dwts-ezra-frech-gives-dating-update-is-single-amid-hailey-bills-rumors",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/dancing-stars-ezra-frech-addresses-151316645.html",
-        "https://www.newsbreak.com/just-jared-291401107/5024789026714-is-ezra-frech-dating-hailey-bills-he-reveals-his-relationship-status"
+        "https://www.eonline.com/news/1438394/dancing-with-the-stars-val-chmerkovskiys-hair-long-not-slicked-on-finale",
+        "https://www.tvinsider.com/1305492/dancing-with-the-stars-val-chmerkovskiy-finale-message-backlash-reaction/",
+        "https://www.eonline.com/news/1438265/dwts-val-chmerkovskiy-reacts-to-jenna-johnsons-elimination-with-nsfw-post"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBEjCZb1iUjvzMFy2XcgXLk3CcX9uz49VZtbCYfxKPRPNEtQzGB6H7YDfn_Y",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAk1TYMXZB2kf_8eib-Z0DXV9l-oEVCIbEOqnHVbCtIwtA_lSQKBBJXrBeBfc",
       "image_credit": "E! News",
       "news": [
         {
-          "url": "https://www.eonline.com/news/1438390/dwts-ezra-frech-gives-dating-update-is-single-amid-hailey-bills-rumors",
-          "title": "DWTS ’ Ezra Frech Shares Update on Dating Life Amid Hailey Bills Romance Rumors",
+          "url": "https://www.eonline.com/news/1438394/dancing-with-the-stars-val-chmerkovskiys-hair-long-not-slicked-on-finale",
+          "title": "DWTS ’ Val Chmerkovskiy Looks So Different With Hair Transformation on Season 35 Finale",
           "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBEjCZb1iUjvzMFy2XcgXLk3CcX9uz49VZtbCYfxKPRPNEtQzGB6H7YDfn_Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAk1TYMXZB2kf_8eib-Z0DXV9l-oEVCIbEOqnHVbCtIwtA_lSQKBBJXrBeBfc"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/dancing-stars-ezra-frech-addresses-151316645.html",
-          "title": "Dancing With the Stars’ Ezra Frech Addresses Hailey Bills Dating Rumors: ‘Internet Is Crazy’",
-          "publisher": "Yahoo",
+          "url": "https://www.tvinsider.com/1305492/dancing-with-the-stars-val-chmerkovskiy-finale-message-backlash-reaction/",
+          "title": "‘Dancing With the Stars’: Val Chmerkovskiy Faces Backlash for Pre-Finale Message",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhX9ec8TAxDUhlskGakBRL5Mda3xdPWs4T34NuXhCcDvMiDDEa3Ll3qoQQns0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpBSXw3edkRXjsLVdgKkaeccUiCeDCx_P8uKT5odV98iaDFdx8YZUdai5GPLY"
         },
         {
-          "url": "https://www.newsbreak.com/just-jared-291401107/5024789026714-is-ezra-frech-dating-hailey-bills-he-reveals-his-relationship-status",
-          "title": "Is Ezra Frech Dating Hailey Bills? He Reveals His Relationship Status",
-          "publisher": "NewsBreak: Local News & Alerts",
+          "url": "https://www.eonline.com/news/1438265/dwts-val-chmerkovskiy-reacts-to-jenna-johnsons-elimination-with-nsfw-post",
+          "title": "DWTS ’ Val Chmerkovskiy Makes Spicy Comment About Jenna Johnson's Elimination",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSkJlu4j7isb1wew0idMoP_jBYGGWXOQigL0Fdv6ezbgQ5dZN07bMBdCUc2k1o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUjKr06VWtmYxnbWKppSgavZf_mDEWShor7-zpnWpdT4F1C9yZ_pQBrrEiQaw"
         }
       ]
     }
