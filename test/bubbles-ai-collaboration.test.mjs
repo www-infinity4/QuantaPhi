@@ -73,3 +73,52 @@ test('Gemini Claude Copilot are honest independent official quick cards',()=>{
  assert.equal(aiCardMode('claude'),'gemini_claude_review');
  assert.equal(aiCardMode('copilot'),null);
 });
+
+
+test('private Gemini writer adapter is disabled by default and validates input before any network call',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ const options={messages:[{role:'system',content:'Return one JSON object.'},{role:'user',content:'Synthetic fixture.'}],max_tokens:1000};
+ const never=()=>assert.fail('unexpected external model call');
+ await assert.rejects(consultGeminiWriter(env,options,never),/gemini_writer_disabled/);
+ const active={...env,GEMINI_WRITER_ENABLED:'1'};
+ await assert.rejects(consultGeminiWriter(active,{...options,max_tokens:16001},never),/invalid_writer_input/);
+ await assert.rejects(consultGeminiWriter(active,{...options,messages:[{role:'tool',content:'fixture'}]},never),/invalid_writer_input/);
+});
+
+test('private Gemini writer adapter preserves structured output and performs a single bounded request',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ const active={...env,GEMINI_WRITER_ENABLED:'1'};
+ const options={messages:[{role:'system',content:'Return one JSON object.'},{role:'user',content:'Synthetic fixture.'}],max_tokens:1200};
+ let count=0;
+ const result=await consultGeminiWriter(active,options,async(url,opts)=>{
+  count++;
+  assert.equal(url,'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent');
+  assert.equal(opts.redirect,'error');
+  assert.equal(opts.headers['x-goog-api-key'],env.GEMINI_API_KEY);
+  const body=JSON.parse(opts.body);
+  assert.equal(body.systemInstruction.parts[0].text,'Return one JSON object.');
+  assert.deepEqual(body.contents,[{role:'user',parts:[{text:'Synthetic fixture.'}]}]);
+  assert.equal(body.generationConfig.maxOutputTokens,1200);
+  assert.equal(body.generationConfig.responseMimeType,'application/json');
+  return Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:'{"fixture":true}'}]}}]});
+ });
+ assert.equal(count,1);
+ assert.equal(result.response,'{"fixture":true}');
+ assert.equal(result.provider,'gemini');
+ assert.equal(result.executionVerified,false);
+ assert.equal(result.productionVerified,false);
+ assert.ok(!JSON.stringify(result).includes(env.GEMINI_API_KEY));
+});
+
+test('private Gemini writer adapter rejects refusal, incomplete or invalid JSON and does not retry quota errors',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ const active={...env,GEMINI_WRITER_ENABLED:'1'};
+ const options={messages:[{role:'system',content:'Return JSON.'},{role:'user',content:'Fixture.'}],max_tokens:100};
+ for(const candidate of [{finishReason:'MAX_TOKENS',content:{parts:[{text:'{"fixture":true}'}]}},
+ {finishReason:'STOP',content:{parts:[{text:'not JSON'}]}},{finishReason:'STOP',content:{parts:[{text:'[]'}]}}]){
+  await assert.rejects(consultGeminiWriter(active,options,async()=>Response.json({candidates:[candidate]})),/gemini_writer_output_invalid/);
+ }
+ let count=0;
+ await assert.rejects(consultGeminiWriter(active,options,async()=>{count++;return new Response('private provider body',{status:429});}),/gemini_writer_rate_limited/);
+ assert.equal(count,1);
+});
