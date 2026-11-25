@@ -3,19 +3,194 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T17:30:54.699724Z",
+  "checked_at": "2026-11-25T18:01:25.576942Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "azerbaijan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T17:40:00Z",
+      "related_news_urls": [
+        "https://oc-media.org/unfit-to-chair-over-40-ngos-oppose-azerbaijans-bid-to-lead-osce/",
+        "https://www.omct.org/en/resources/statements/civil-society-organisations-call-on-osce-participating-states-to-block-an-azerbaijani-bid-for-the-chairpersonship-in-office",
+        "https://news.am/en/news/1077172"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGVF_ezXMZzuv_sP0Ov-W8GWZN4PeIC-1-9_DsXWrfl27WZPKD9qZPVtD6BXM",
+      "image_credit": "OC Media",
+      "news": [
+        {
+          "url": "https://oc-media.org/unfit-to-chair-over-40-ngos-oppose-azerbaijans-bid-to-lead-osce/",
+          "title": "‘Unfit to chair’: Over 40 NGOs oppose Azerbaijan’s bid to lead OSCE",
+          "publisher": "OC Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGVF_ezXMZzuv_sP0Ov-W8GWZN4PeIC-1-9_DsXWrfl27WZPKD9qZPVtD6BXM"
+        },
+        {
+          "url": "https://www.omct.org/en/resources/statements/civil-society-organisations-call-on-osce-participating-states-to-block-an-azerbaijani-bid-for-the-chairpersonship-in-office",
+          "title": "Azerbaijan: Civil society organisations call on OSCE participating…",
+          "publisher": "World Organisation Against Torture | OMCT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTikDOCHNCp_C1cO8r9RMgk89biE_8HkkGKjNiSUiCAHkdPjcoNcoMtrvYo0zA"
+        },
+        {
+          "url": "https://news.am/en/news/1077172",
+          "title": "45 civil society organizations call for blocking Azerbaijan’s potential candidacy for OSCE Chairman-in-Office",
+          "publisher": "NEWS.am",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNrvLylA-01mV6q0IqaQ1U1HuCGnQKtP2hLAXXNxnzIK7WNq4F0bBO3QhYqxw"
+        }
+      ]
+    },
+    {
+      "query": "barca game",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T17:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/barca-quality-win-without-yamal-160544567.html",
+        "https://www.foxsports.com/stories/soccer/barcelona-rule-injured-lamine-yamal-out-champions-league-match-vs-sabah",
+        "https://www.goal.com/en-us/news/frenkie-de-jong-barcelona-centre-back-hansi-flick-starter/blt0f7b1d2d0c8c2847"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ7KRJIcqHigYWTZrsSR1SJ8hQqWa2vaikMoJRUqKrHx93bw2QGB6yp3oAXzw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/barca-quality-win-without-yamal-160544567.html",
+          "title": "Barca have quality to win without Yamal: De Jong",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ7KRJIcqHigYWTZrsSR1SJ8hQqWa2vaikMoJRUqKrHx93bw2QGB6yp3oAXzw"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/soccer/barcelona-rule-injured-lamine-yamal-out-champions-league-match-vs-sabah",
+          "title": "Barcelona Will Sit Injured Lamine Yamal vs. Sabah In Champions League",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZw3xn25op6LY-JVH14xJ_q8lpbGX38M-xNuZLVitd9D8bWvf9wdCquMdJbJ0"
+        },
+        {
+          "url": "https://www.goal.com/en-us/news/frenkie-de-jong-barcelona-centre-back-hansi-flick-starter/blt0f7b1d2d0c8c2847",
+          "title": "'He put me there!' - Frenkie de Jong lifts the lid on Hansi Flick's shock centre-back experiment and demands Barcelona starting spot",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTviJFEJhh9dP00e7F6tN2ApwYgw6BVnpkRNasyuzBa0j-SmrrVhNMK4zyZD4"
+        }
+      ]
+    },
+    {
+      "query": "sophie cunningham maxim photos",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T17:30:00Z",
+      "related_news_urls": [
+        "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
+        "https://nypost.com/2026/11/25/sports/conservative-christian-leaders-turn-on-sophie-cunningham-after-topless-maxim-photo-shoot/",
+        "https://www.thebiglead.com/sophie-cunningham-viral-maxim-cover-shoot-misunderstanding/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTscBTap0geKoIVKpPrr1KH19_GfA8ndRo-CtPDsgznb2bO9c37uoKT4V68P1w",
+      "image_credit": "Christian Post",
+      "news": [
+        {
+          "url": "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
+          "title": "Sophie Cunningham draws pushback from Christian scholars for posing topless in Maxim",
+          "publisher": "Christian Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTscBTap0geKoIVKpPrr1KH19_GfA8ndRo-CtPDsgznb2bO9c37uoKT4V68P1w"
+        },
+        {
+          "url": "https://nypost.com/2026/11/25/sports/conservative-christian-leaders-turn-on-sophie-cunningham-after-topless-maxim-photo-shoot/",
+          "title": "Conservative Christian leaders turn on Sophie Cunningham after topless Maxim photo shoot",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeJe_77Mg8sNvk409PTppFeAREbrha5k7P3PbkhcINubktSxuTZfn59bInwwg"
+        },
+        {
+          "url": "https://www.thebiglead.com/sophie-cunningham-viral-maxim-cover-shoot-misunderstanding/",
+          "title": "Sophie Cunningham nearly turned down viral Maxim cover shoot over misunderstanding",
+          "publisher": "The Big Lead",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvIAz-10PSQUKkxVUczzGJ5Nuwwe08KZWa0FKFWWxoUZporeifFQOmdqVMjg"
+        }
+      ]
+    },
+    {
+      "query": "fenerbahçe",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T17:20:00Z",
+      "related_news_urls": [
+        "https://www.ntvspor.net/futbol/galeri-arda-turan-icin-ayrilik-atesini-yaktilar-fenerbahce-maci-oncesi-ukraynadan-soke-edici-haber-geldi-433597",
+        "https://www.beyazbelgehaber.com/haber/fenerbahce-devler-ligi-nde-shakhtar-donetsk-karsisinda-sahaya-cikiyor",
+        "https://www.goal.com/tr/haber/eski-chelsea-yildizi-n-golo-kante-fenerbahce-ile-stamford-bridge-e-duygusal-bir-donus-yapacak/blt647e0b1410aa5a34"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnsEkNxQOxWVdI9Qq7LR7Y9Enq-UPAWCiFQYzE2A2Vo0SFNq9d8ZCgL6WhOGM",
+      "image_credit": "NTVSpor",
+      "news": [
+        {
+          "url": "https://www.ntvspor.net/futbol/galeri-arda-turan-icin-ayrilik-atesini-yaktilar-fenerbahce-maci-oncesi-ukraynadan-soke-edici-haber-geldi-433597",
+          "title": "Arda Turan için ayrılık ateşini yaktılar! Fenerbahçe maçı öncesi Ukrayna'dan şoke edici haber geldi",
+          "publisher": "NTVSpor",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnsEkNxQOxWVdI9Qq7LR7Y9Enq-UPAWCiFQYzE2A2Vo0SFNq9d8ZCgL6WhOGM"
+        },
+        {
+          "url": "https://www.beyazbelgehaber.com/haber/fenerbahce-devler-ligi-nde-shakhtar-donetsk-karsisinda-sahaya-cikiyor",
+          "title": "Fenerbahçe, Devler Ligi’nde Shakhtar Donetsk karşısında sahaya çıkıyor",
+          "publisher": "https://beyazbelgehaber.com/",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkhg__-f3cTkSK6KJ1GPfIIjfmk-ywTpPitgu5QJKLxR4JiZbsJr6vD-df_o4"
+        },
+        {
+          "url": "https://www.goal.com/tr/haber/eski-chelsea-yildizi-n-golo-kante-fenerbahce-ile-stamford-bridge-e-duygusal-bir-donus-yapacak/blt647e0b1410aa5a34",
+          "title": "Eski Chelsea yıldızı N'Golo Kante, Fenerbahçe ile Stamford Bridge'e duygusal bir dönüş yapacak",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWADIOh1jXgKqua2fQ5srRBqT__4ntKbF0HfaLWw54wUZb_izUfOxxhU96opM"
+        }
+      ]
+    },
+    {
+      "query": "chipotle bogo today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T17:20:00Z",
+      "related_news_urls": [
+        "https://newsroom.chipotle.com/2026-11-20-CHIPOTLE-BRINGS-BACK-BACK-HOME-BOGO-FOR-THE-BIGGEST-REUNION-NIGHT-OF-THE-YEAR",
+        "https://abcnews.com/GMA/Food/free-pizza-night-pre-thanksgiving-food-deals/story?id=138385872",
+        "https://www.yahoo.com/lifestyle/articles/chipotle-thanksgiving-eve-bogo-back-150000211.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0zUKRo1ZBGMAg6f1sQg57Hcz61B7vJxDGmlUxZ1FKlGZICsZfwBEiO9X3y-I",
+      "image_credit": "Chipotle",
+      "news": [
+        {
+          "url": "https://newsroom.chipotle.com/2026-11-20-CHIPOTLE-BRINGS-BACK-BACK-HOME-BOGO-FOR-THE-BIGGEST-REUNION-NIGHT-OF-THE-YEAR",
+          "title": "CHIPOTLE BRINGS BACK \"BACK HOME BOGO\" FOR THE BIGGEST REUNION NIGHT OF THE YEAR",
+          "publisher": "Chipotle",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0zUKRo1ZBGMAg6f1sQg57Hcz61B7vJxDGmlUxZ1FKlGZICsZfwBEiO9X3y-I"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Food/free-pizza-night-pre-thanksgiving-food-deals/story?id=138385872",
+          "title": "Free pizza night and other pre-Thanksgiving food deals",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtBqO3qem9LSnERqikXS6pVWwGnDiv1TsZUXSPG6ZZZ8g4RrGni4qImOVuLDc"
+        },
+        {
+          "url": "https://www.yahoo.com/lifestyle/articles/chipotle-thanksgiving-eve-bogo-back-150000211.html",
+          "title": "Chipotle’s Thanksgiving Eve BOGO Is Back: 4 Hours to Claim Up to 5 Free Entrées",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReTg3RO_GYQBRSkMccqlzhCOCSc9xJgk8_ifA62nkS2FSPOumcCLA9TXWcwTk"
+        }
+      ]
+    },
+    {
       "query": "marquette vs virginia",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-25T17:00:00Z",
       "related_news_urls": [
         "https://virginiasports.com/news/2026/11/24/no-2-cavaliers-battle-marquette-in-the-battle-4-atlantis",
         "https://247sports.com/college/virginia/article/virginia-basketball-behind-enemy-lines-marquette--293257394/",
         "https://sports.yahoo.com/mens-college-basketball/articles/marquette-vs-no-2-virginia-154922071.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-k4TGwAUa0VwB-jO9hGoMNpvRaQAfPdrJnMQ7UtA_dF8QwyRNr50xgn6WwUc",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy9irKeKwShdNyuZ7wxsmNwE9BhQtfEANlM11WAcYs-Wy3KER_IdOQ_1gimEU",
       "image_credit": "Virginia Sports",
       "news": [
         {
@@ -23,7 +198,7 @@
           "title": "No. 2 Cavaliers Battle Marquette in the Battle 4 Atlantis",
           "publisher": "Virginia Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT-k4TGwAUa0VwB-jO9hGoMNpvRaQAfPdrJnMQ7UtA_dF8QwyRNr50xgn6WwUc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTy9irKeKwShdNyuZ7wxsmNwE9BhQtfEANlM11WAcYs-Wy3KER_IdOQ_1gimEU"
         },
         {
           "url": "https://247sports.com/college/virginia/article/virginia-basketball-behind-enemy-lines-marquette--293257394/",
@@ -43,47 +218,47 @@
     },
     {
       "query": "sabah vs barcelona",
-      "approx_searches": "20000+",
+      "approx_searches": "50000+",
       "published_at": "2026-11-25T16:50:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556936/barcelona-flick-de-jong-lamine-cubarsi-champions-league",
-        "https://www.expressnews.com/sports/article/barcelona-yamal-por-dolencia-en-tobillo-se-22545387.php",
-        "https://www.si.com/es-us/por-que-no-juega-lamine-yamal-flick-explica-su-baja-y-anuncia-rotaciones-ante-el-sabah"
+        "https://www.bbc.com/sport/football/live/c674232v2gv3t",
+        "https://www.fcbarcelona.com/en/news/4613291/sabah-fc-v-fc-barcelona-did-you-knowx",
+        "https://www.si.com/soccer/barcelona-predicted-lineup-vs-sabah-champions-league-11-25-26"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/champions-league/nota/_/id/17556936/barcelona-flick-de-jong-lamine-cubarsi-champions-league",
-          "title": "Flick elige cualidad de De Jong y explica estado de Lamine y Cubarsí",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.bbc.com/sport/football/live/c674232v2gv3t",
+          "title": "Sabah FK vs Barcelona: UEFA Champions League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwd3udzetGjxKQFpZuTV4slnIu4PjVbYOUQr8Oz4HhLi62B4WicBeln1ti6E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://www.expressnews.com/sports/article/barcelona-yamal-por-dolencia-en-tobillo-se-22545387.php",
-          "title": "Barcelona: Yamal, por dolencia en tobillo, se pierde visita a Sabah en la Champions",
-          "publisher": "San Antonio Express-News",
+          "url": "https://www.fcbarcelona.com/en/news/4613291/sabah-fc-v-fc-barcelona-did-you-knowx",
+          "title": "Sabah FC v FC Barcelona: Did you know?",
+          "publisher": "Official FC Barcelona Website",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThqP7ZC9NI5ccsTa2ZCItbyLUw-9HrOrWEaXR76w1hXeZkLwXRbJyeCEwdkAg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOa9yA9YhC-4tc8YZtde-Ny0soDURaFLJCemVok3O0Lgn5oKEy-qv2fxgnCCU"
         },
         {
-          "url": "https://www.si.com/es-us/por-que-no-juega-lamine-yamal-flick-explica-su-baja-y-anuncia-rotaciones-ante-el-sabah",
-          "title": "Flick explica la baja de Lamine Yamal y anuncia rotaciones ante el Sabah",
+          "url": "https://www.si.com/soccer/barcelona-predicted-lineup-vs-sabah-champions-league-11-25-26",
+          "title": "Barcelona Predicted Lineup vs. Sabah: Yamal Missing As Raphinha Provides Star Power",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAKdESoCyt3L6sjLdAaBTkkOUuukmulkp3ySwuNRvI5x8YyOisBTEsefU_Kvk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOGrukLuJE7uWE1S9f6aiFGZFuG2nB0JjwPDUiJQslCwGjWAh8S7SFamKZpTQ"
         }
       ]
     },
     {
       "query": "slavia praha vs villarreal",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-25T16:50:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/cmdx121dxr1zt",
-        "https://onefootball.com/en/news/villarreals-ucl-hopes-at-stake-against-a-side-winless-in-it-for-19-years-43835495",
-        "https://www.tufutbolero.com/en/news/slavia-villarreal-preview-slavia-arrive-with-five-injury-e5041c"
+        "https://www.reutersconnect.com/item/uefa-champions-league-slavia-prague-v-villarreal/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxQ1pTQks",
+        "https://onefootball.com/en/news/villarreals-ucl-hopes-at-stake-against-a-side-winless-in-it-for-19-years-43835495"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
       "image_credit": "BBC",
@@ -96,53 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
+          "url": "https://www.reutersconnect.com/item/uefa-champions-league-slavia-prague-v-villarreal/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlAxQ1pTQks",
+          "title": "Licensable picture: UEFA Champions League - Slavia Prague v Villarreal",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlK6W9JhG3L3osYxMBumksaJJAwkK8U0DgTtx4OD3mqs2AsKCnwdIzNcuw3Bs"
+        },
+        {
           "url": "https://onefootball.com/en/news/villarreals-ucl-hopes-at-stake-against-a-side-winless-in-it-for-19-years-43835495",
           "title": "Villarreal's UCL hopes at stake against a side winless in it for 19 years",
           "publisher": "OneFootball",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQmLr4U6boztz0TRmqVFNUgW2gpFotrw4UTjZJ74U2kmAud_DEDVZJyA4flylY"
-        },
-        {
-          "url": "https://www.tufutbolero.com/en/news/slavia-villarreal-preview-slavia-arrive-with-five-injury-e5041c",
-          "title": "Slavia-Villarreal preview: Slavia arrive with five injury absences",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR5ndEAV3CKQOwodH5WoxfAv3MCKEMk8jioN0hjqColqqhaUtnW82cbQTMhEkE"
-        }
-      ]
-    },
-    {
-      "query": "barcelona vs sabah",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T16:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/three-talking-points-ahead-sabah-200000308.html",
-        "https://www.cnet.com/tech/services-and-software/sabah-vs-barcelona-livestream-champions-league-soccer-from-anywhere/",
-        "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/25/sabah-barcelona-prediction-odds-where-to-watch-champions-league/92939350007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_AJcgfutmV5wrbvIOsUp7FB_J3dzpNZaJ-pxUSiPjQ8o8cmdk6g7ynlzBOw",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/three-talking-points-ahead-sabah-200000308.html",
-          "title": "Three talking points ahead of Sabah vs Barcelona | UEFA Champions League",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS_AJcgfutmV5wrbvIOsUp7FB_J3dzpNZaJ-pxUSiPjQ8o8cmdk6g7ynlzBOw"
-        },
-        {
-          "url": "https://www.cnet.com/tech/services-and-software/sabah-vs-barcelona-livestream-champions-league-soccer-from-anywhere/",
-          "title": "Sabah vs. Barcelona: Livestream Champions League Soccer From Anywhere",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdNdGnDBQiMnm3J9HtiRBW_VeHJeaqw-0S278U8LL51gUG-puOaqQI9o7VWJQ"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/soccer/ucl/2026/11/25/sabah-barcelona-prediction-odds-where-to-watch-champions-league/92939350007/",
-          "title": "Sabah vs. Barcelona Champions League prediction, start time, how to watch",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFtKq3U0N45bqLsD_Gmh-Bg4R5YQq-fBl6LHWjyroQUpskSrKxVrQpgFlBfS0"
         }
       ]
     },
@@ -187,8 +327,8 @@
       "published_at": "2026-11-25T16:40:00Z",
       "related_news_urls": [
         "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-tuesday-nov-24",
-        "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-in-line-to-be-out-for-thursdays-game/",
-        "https://bleacherreport.com/articles/25537306-kenneth-walker-iii-injury-update-latest-news-status-chiefs-vs-bills-thanksgiving"
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-25/schultz-kwiii-groin-out-for-thanksgiving-game",
+        "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s",
       "image_credit": "NFL.com",
@@ -201,158 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/chiefs-kenneth-walker-in-line-to-be-out-for-thursdays-game/",
-          "title": "Chiefs' Kenneth Walker: Out for Thursday's game",
-          "publisher": "CBS Sports",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-25/schultz-kwiii-groin-out-for-thanksgiving-game",
+          "title": "Schultz: KWIII (groin) out for Thanksgiving game",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-9LrE34X5TL5qnaL4AM0Z4qfDQetX8wrjzj1LXW3NFGGvG6e7ovBqx4JnqOQ"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537306-kenneth-walker-iii-injury-update-latest-news-status-chiefs-vs-bills-thanksgiving",
-          "title": "Kenneth Walker III Injury Update, Latest News on Status for Chiefs vs. Bills on Thanksgiving",
-          "publisher": "Bleacher Report",
+          "url": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
+          "title": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoGWYvDxYq_Bz9GLKM30luXXi3GbCPPqRgcnFHhBwTly9AtqjkqA30YmKlUrk"
-        }
-      ]
-    },
-    {
-      "query": "josh jacobs",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T16:40:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/packers-list-eight-questionable-vs-rams-week-12-injury-report",
-        "https://sports.yahoo.com/fantasy/articles/start-josh-jacobs-fantasy-against-164953763.html",
-        "https://www.packersnews.com/story/sports/nfl/packers/2026/11/24/micah-parsons-among-eight-packers-listed-as-questionable-vs-rams/92909958007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeVhYVEMcy_XAQkjH6V2X-dyAQ-6XT21F3lFnt2igT_mML1Oy3ROzSFRsoo4",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/packers-list-eight-questionable-vs-rams-week-12-injury-report",
-          "title": "Packers list eight questionable vs. Rams | Week 12 Injury Report",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjeVhYVEMcy_XAQkjH6V2X-dyAQ-6XT21F3lFnt2igT_mML1Oy3ROzSFRsoo4"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/articles/start-josh-jacobs-fantasy-against-164953763.html",
-          "title": "Should you start Josh Jacobs in fantasy against Rams if he's active?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTG6BekLqvMywq0HRnD2tlpuNM39mULTKKv8qUVV-FARlO1RnEzNgl4s2TsApI"
-        },
-        {
-          "url": "https://www.packersnews.com/story/sports/nfl/packers/2026/11/24/micah-parsons-among-eight-packers-listed-as-questionable-vs-rams/92909958007/",
-          "title": "Micah Parsons among eight Packers listed as questionable vs Rams",
-          "publisher": "Packers News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkFa4pPujMOjMYpLMHv3HCiDnv8jMTrlQow77nu_fDvZr3zJZfQEivJ1iHfTA"
-        }
-      ]
-    },
-    {
-      "query": "brandon hyde",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T16:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mlb/articles/yankees-hire-brandon-hyde-bench-170648601.html",
-        "https://www.nytimes.com/athletic/7811897/2026/11/25/yankees-hire-brandon-hyde-bench-coach/",
-        "https://www.mlbtraderumors.com/2026/11/yankees-hire-brandon-hyde-bench-coach-former-orioles-manager.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyJ24NcbC93FJeRve3xxUov8kOWimBC9tW7f-K0LkYroiBweaNKIEQGHbOpls",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mlb/articles/yankees-hire-brandon-hyde-bench-170648601.html",
-          "title": "Yankees to hire Brandon Hyde as bench coach",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyJ24NcbC93FJeRve3xxUov8kOWimBC9tW7f-K0LkYroiBweaNKIEQGHbOpls"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7811897/2026/11/25/yankees-hire-brandon-hyde-bench-coach/",
-          "title": "Yankees hire ex-Orioles manager Brandon Hyde as bench coach: Source",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6xsJXm4XsCOUkqzWx0--Zqx49t70-FI5V6Hb2ud1UeOZqMCE86f6NXmFdY7w"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/yankees-hire-brandon-hyde-bench-coach-former-orioles-manager.html",
-          "title": "Yankees To Hire Brandon Hyde As Bench Coach",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPgmRD66gRpvsUHjUQArQi_jYnQ0p7vm1Nwv1yFReFTaXhnthFyjh69UoCK1Y"
-        }
-      ]
-    },
-    {
-      "query": "iowa women's basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T16:40:00Z",
-      "related_news_urls": [
-        "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/25/iowa-womens-basketball-navy-today-time-tv-stream/92943246007/",
-        "https://sports.yahoo.com/womens-college-basketball/articles/hawkeye-women-basketball-iowa-vs-142112653.html",
-        "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-navy-midshipmen/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtXmY0gQkMXpOMXr3aauyJvUnUs-g7Mef-W75zuXng2IQTcX5e4kR5xWV9VWs",
-      "image_credit": "Hawk Central",
-      "news": [
-        {
-          "url": "https://www.hawkcentral.com/story/sports/college/iowa/basketball-women/2026/11/25/iowa-womens-basketball-navy-today-time-tv-stream/92943246007/",
-          "title": "How to watch Iowa women's basketball vs Navy on Wednesday",
-          "publisher": "Hawk Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtXmY0gQkMXpOMXr3aauyJvUnUs-g7Mef-W75zuXng2IQTcX5e4kR5xWV9VWs"
-        },
-        {
-          "url": "https://sports.yahoo.com/womens-college-basketball/articles/hawkeye-women-basketball-iowa-vs-142112653.html",
-          "title": "Hawkeye Women’s Basketball: Iowa vs Navy Fan Discussion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE10t9AttSdpKAJlQEM_kMM8z6u1-CotpsObB6BHq_QNntPxZmK3JmV4btEFU"
-        },
-        {
-          "url": "https://www.on3.com/teams/iowa-hawkeyes/news/iowa-womens-basketball-tip-time-preview-navy-midshipmen/",
-          "title": "Iowa Women's Basketball Tip Time Preview: Navy Midshipmen",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjgs23y9GVYPg0uc2ehbFh-eZVT-h4I9ks0NrXGpUMACdwHVlkCn2xffG5jtU"
-        }
-      ]
-    },
-    {
-      "query": "the view",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T16:30:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/style/2026/11/25/what-hippos-death-reveals-about-volatility-grieving-online/",
-        "https://people.com/the-mystery-of-macys-thanksgiving-day-parades-blue-hippo-balloon-12279504",
-        "https://www.wlwt.com/article/cincinnati-business-shirts-zoo-fiona-hippo-memorial/74524057"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDCfJyeKPXQjBCUpVsApIaYxn0WbmirhWvec0kzIR1Gbg5Pqcxkj6A0r0JkLM",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/style/2026/11/25/what-hippos-death-reveals-about-volatility-grieving-online/",
-          "title": "What a hippo’s death reveals about the volatility of grieving online",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDCfJyeKPXQjBCUpVsApIaYxn0WbmirhWvec0kzIR1Gbg5Pqcxkj6A0r0JkLM"
-        },
-        {
-          "url": "https://people.com/the-mystery-of-macys-thanksgiving-day-parades-blue-hippo-balloon-12279504",
-          "title": "The Mystery of Macy’s Thanksgiving Day Parade’s Blue Hippo Balloon",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHgezi-VtvnYPUuoBjTEkNkebY3eoC04zzzy929342z6ltghvYW7Z4dNUXilk"
-        },
-        {
-          "url": "https://www.wlwt.com/article/cincinnati-business-shirts-zoo-fiona-hippo-memorial/74524057",
-          "title": "Cincinnati business sells thousands of shirts in honor of Fiona the hippo",
-          "publisher": "WLWT",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlekLvy03ZzH5Tto7C-XXmh3F97ZnyeXITUstVlE72HCBC_CMER798ePaT_48"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHnLjf4n727lKvXcRNyvuScqNUCxHh4Nx0B7B1WMApCSd5w_AiLvEXLwkE_pM"
         }
       ]
     }
