@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-25T00:10:52.074589Z",
+  "checked_at": "2026-11-25T00:47:31.775285Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "gKiWSvAjNG0",
+      "title": "Clashing Through the Snow",
+      "video_id": "gKiWSvAjNG0",
+      "video_title": "Clashing Through the Snow Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-10T16:50:34Z",
+      "source_url": "https://www.youtube.com/watch?v=gKiWSvAjNG0",
+      "poster": "https://i.ytimg.com/vi/gKiWSvAjNG0/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "clashing through the snow 2026",
+      "trend_checked_at": "2026-11-25T00:46:05.968787Z",
+      "trend_published_at": "2026-11-25T00:30:00Z",
+      "approx_searches": "2000+"
+    },
     {
       "id": "o9WWeKSbtAo",
       "title": "The Further Mis-Adventures of Cliff Booth",
@@ -299,18 +315,6 @@
       "published_at": "2026-11-10T20:07:30Z",
       "source_url": "https://www.youtube.com/watch?v=7SO6VhCk5l4",
       "poster": "https://i.ytimg.com/vi/7SO6VhCk5l4/hqdefault.jpg",
-      "google_trending": false
-    },
-    {
-      "id": "gKiWSvAjNG0",
-      "title": "Clashing Through the Snow",
-      "video_id": "gKiWSvAjNG0",
-      "video_title": "Clashing Through the Snow Trailer #1 (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-10T16:50:34Z",
-      "source_url": "https://www.youtube.com/watch?v=gKiWSvAjNG0",
-      "poster": "https://i.ytimg.com/vi/gKiWSvAjNG0/hqdefault.jpg",
       "google_trending": false
     },
     {
