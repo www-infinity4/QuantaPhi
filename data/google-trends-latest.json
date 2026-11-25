@@ -3,9 +3,123 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T14:01:27.939438Z",
+  "checked_at": "2026-11-25T14:30:47.295309Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "john stamos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T14:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "is the stock market open today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T14:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
+        "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/",
+        "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqbl8C1coLNZbM5-gmH3C5tV3zY-4FFz4h9QgHaAuuj7-hUR1fJ6JwP0iy14",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/24/does-the-nvidia-led-rip-mark-the-market-bottom-maybe-not.html",
+          "title": "Does the Nvidia-led rip mark the market bottom? Maybe not",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLqbl8C1coLNZbM5-gmH3C5tV3zY-4FFz4h9QgHaAuuj7-hUR1fJ6JwP0iy14"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/25/is-this-the-bottom-it-may-not-matter-here-s-why/",
+          "title": "Is This the Bottom? It May Not Matter. Here's Why!",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxyGYZfq-8vqPGZxr5lcVrK49iZcnmbsbZCnwlH8U0ZRkzVNzDJ2ircDToXHc"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
+          "title": "Stock market today: Dow, S&P 500, Nasdaq post best day since April 2025 as Nvidia stock soars 31% on Jensen Huang's return",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8-wmci2YAhFWvWJwDsLc67GUIw77C2zWnNEOeQnISUxfE09aTbGx3v4EPz80"
+        }
+      ]
+    },
+    {
+      "query": "keltie knight",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:50:00Z",
+      "related_news_urls": [
+        "https://fashionweekdaily.com/keltie-knight-celebrates-upcoming-book-launch-with-star-studded-wellness-event-at-the-pearl/",
+        "https://demokratis.co.id/en/keltie-knight-book-rejection-self-worth",
+        "https://variety.com/2026/tv/news/keltie-knight-superfan-new-book-f-them-theory-1236952695/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-AcTyEXwYs45FIMEx6JIEN_IOvIP9kd1CEg1w9ozp4uEgeW4wcNQtzWSQSrI",
+      "image_credit": "Daily Front Row",
+      "news": [
+        {
+          "url": "https://fashionweekdaily.com/keltie-knight-celebrates-upcoming-book-launch-with-star-studded-wellness-event-at-the-pearl/",
+          "title": "Keltie Knight Celebrates Upcoming Book Launch With Star-Studded Wellness Event at The Pearl",
+          "publisher": "Daily Front Row",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-AcTyEXwYs45FIMEx6JIEN_IOvIP9kd1CEg1w9ozp4uEgeW4wcNQtzWSQSrI"
+        },
+        {
+          "url": "https://demokratis.co.id/en/keltie-knight-book-rejection-self-worth",
+          "title": "Keltie Knight Releases Book on Rejection and Self Worth",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkcJmOvLgmB1zoe8P7kyyLvyLEjh3sYz7Iv5x-hSxKBvDsEdyLfQ7vI-p9js"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/keltie-knight-superfan-new-book-f-them-theory-1236952695/",
+          "title": "How TV Personality Keltie Knight Turned a Reality Show Flop Into a Masterclass in Redirection (EXCLUSIVE)",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaNmcLiZv5fvUAiiazC7P7UA1auNHEH01mPeI_3J3htaN3_WgavcXxl4dcQ3Q"
+        }
+      ]
+    },
+    {
+      "query": "gdp",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T13:50:00Z",
+      "related_news_urls": [
+        "https://www.axios.com/2026/11/25/economy-gdp-inflation-ai",
+        "https://abcnews.com/Business/gdp-report-provide-revision-3rd-quarter-data-latest/story?id=138410335",
+        "https://www.cnn.com/2026/11/25/economy/us-pce-inflation-spending-gdp"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPAaCBXaTviWlbl9P6tq5_qGybCxR_uyjgpqMISl24-1JcHBceZy2F5zboGo",
+      "image_credit": "Axios",
+      "news": [
+        {
+          "url": "https://www.axios.com/2026/11/25/economy-gdp-inflation-ai",
+          "title": "U.S. economy grew at rapid 4.3% pace in third quarter, new estimate shows",
+          "publisher": "Axios",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXPAaCBXaTviWlbl9P6tq5_qGybCxR_uyjgpqMISl24-1JcHBceZy2F5zboGo"
+        },
+        {
+          "url": "https://abcnews.com/Business/gdp-report-provide-revision-3rd-quarter-data-latest/story?id=138410335",
+          "title": "US economy grew more in 3rd quarter than previously estimated, government data shows",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRha-aR0lN5KTf7wVuqwWao5YDT3AoLWDKhadCJsFK2SziaRJAMx9KQ_uDPYVU"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/25/economy/us-pce-inflation-spending-gdp",
+          "title": "US economy grew faster last quarter than initially reported",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTp-POvZ6-deImL0Ubj2FzVVdvLvKPXXb617ZtEW3qOXOCuccbLfniq7x8-lkc"
+        }
+      ]
+    },
     {
       "query": "wizards of the coast lawsuit printmtg",
       "approx_searches": "200+",
@@ -13,7 +127,7 @@
       "related_news_urls": [
         "https://www.king5.com/article/news/local/renton-based-wizards-of-the-coast-sues-utah-family-alleged-counterfeit-magic-cards/281-40f960a8-658a-4775-b1a4-15e26ceaf8a6",
         "https://aftermath.site/wizards-of-the-coast-magic-the-gathering-proxies-lawsuit/",
-        "https://www.polygon.com/wizards-of-the-coast-magic-proxy-lawsuit/"
+        "https://icv2.com/articles/news/view/63961/wizards-coast-sues-magic-the-gathering-proxy-maker"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIFQw8A28sq7o21FaTSyQU4v6gm_dA8qLo0Vo8D0rA2mDCKO5k-DmOSrovgrE",
       "image_credit": "KING5.com",
@@ -33,11 +147,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSQOMexZ3jMnCJDmTFE2jsyMO0GLtXJtNe_8koh7NdJHoBwVBXRKAz26jdOa8"
         },
         {
-          "url": "https://www.polygon.com/wizards-of-the-coast-magic-proxy-lawsuit/",
-          "title": "Wizards of the Coast's War Against MTG Proxies Isn't as Bad as It Sounds",
-          "publisher": "Polygon.com",
+          "url": "https://icv2.com/articles/news/view/63961/wizards-coast-sues-magic-the-gathering-proxy-maker",
+          "title": "WIZARDS OF THE COAST SUES 'MAGIC: THE GATHERING' PROXY MAKER",
+          "publisher": "ICv2",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNxq4GR5_UhE6mNV-P88YGS-dpASZvd9-aOW6LucNtgBBgw_-sic6ArD1lFX4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlXj8y9P1kinCQtbibAF86Ab4lIQtb-2dyTpP7mRevTQHM4Rh1r5pG3qCfmXQ"
         }
       ]
     },
@@ -81,33 +195,68 @@
       "approx_searches": "200+",
       "published_at": "2026-11-25T13:30:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/india/gold-ticks-lower-ahead-us-inflation-data-2026-11-25/",
-        "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
-        "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87"
+        "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
+        "https://finance.yahoo.com/markets/crypto/articles/bitcoin-slips-below-59k-ahead-123156434.html",
+        "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-risks-fresh-yearly-low-ahead-of-us-pce-202611250835"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf_vKEzZifQC1-iccrG7yNiA_9TzF-ShRdwFhAbExu4A0Nr__MkK8LcOlW9Y",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68htqefgHJVUfewAl4XdJ07dzWf65OBCrujS8glVJQvtUcukGtnEXqr2YYQ0",
+      "image_credit": "CoinDesk",
       "news": [
         {
-          "url": "https://www.reuters.com/world/india/gold-ticks-lower-ahead-us-inflation-data-2026-11-25/",
-          "title": "Gold falters ahead of key US inflation print",
-          "publisher": "Reuters",
+          "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
+          "title": "Live updates: Bitcoin slips back under $59,000, with tech rout continuing",
+          "publisher": "CoinDesk",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXf_vKEzZifQC1-iccrG7yNiA_9TzF-ShRdwFhAbExu4A0Nr__MkK8LcOlW9Y"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS68htqefgHJVUfewAl4XdJ07dzWf65OBCrujS8glVJQvtUcukGtnEXqr2YYQ0"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-24/gold-holds-decline-as-us-tariff-plans-reinforce-rate-hike-bets",
-          "title": "Gold Holds Decline as US Tariff Plans Reinforce Rate-Hike Bets",
-          "publisher": "Bloomberg",
+          "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-slips-below-59k-ahead-123156434.html",
+          "title": "Bitcoin Slips Below $59K Ahead Of PCE Report, Heads For Worst Month Since July 2022",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq0ABwZiayajcCetGMK8gD7nLg4Ym9xsvtqQ1YVlE7lz-0shBgUXFvL8m0hvg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCar3pmaOiQh9wN-D6uMGNhYBPlFzbQbHXleZTP8hRD_ggxxxw3rD_sxDMu8k"
         },
         {
-          "url": "https://www.wsj.com/finance/commodities-futures/gold-rebounds-after-sharpest-weekly-decline-since-march-deaa4b87",
-          "title": "Gold Futures Rebound as Nvidia News Lifts Markets",
-          "publisher": "WSJ",
+          "url": "https://www.fxstreet.com/cryptocurrencies/news/bitcoin-price-forecast-btc-risks-fresh-yearly-low-ahead-of-us-pce-202611250835",
+          "title": "Bitcoin Price Forecast: BTC risks fresh yearly low ahead of US PCE",
+          "publisher": "FXStreet",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8BACqMVovQtbRsVJPRSl4x1l8cmrjABBN9BuB8b9yBpQ278ZKa98HC-p5G4g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSpspIou5u5_VLawPwuM5kNCpeNba6Wb4_oGFvEbRX8UwKv27UTRUy2_NkoGJ4"
+        }
+      ]
+    },
+    {
+      "query": "football today",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T13:30:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
+        "https://sports.yahoo.com/college-football/articles/georgia-top-seed-holds-firm-134516647.html",
+        "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
+          "title": "College Football Playoff bracket, based on current committee rankings",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/georgia-top-seed-holds-firm-134516647.html",
+          "title": "Georgia’s Top Seed Holds Firm As Rivalry Weekend Rankings Drop Oregon",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-Fdune4awcDCzM2GxKnLAOXfoO_b2-3zb3TIyhqfzVFCI1glrit9K8W5-NX0"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50564492/2026-week-12-college-football-playoff-bowl-projections",
+          "title": "2026-27 Week 12 College Football Playoff, bowl projections",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkTEEJWzq1b44K8t2p5VWqLXX4UrPLfqFyPq1XxM2HTjfqHLQZpIbqnZqvS50"
         }
       ]
     },
@@ -118,7 +267,7 @@
       "related_news_urls": [
         "https://www.golfchannel.com/pga-tour/news/brooks-koepka-takes-another-bryson-dig-my-teammate-didnt-hole-a-putt-the-entire-time",
         "https://www.golfdigest.com/story/bryson-dechambeau-catches-stray-from-brooks-koepka-during-skins-game-press-conference",
-        "https://peradaban.id/en/koepka-dechambeau-feud-showdown"
+        "https://www.limapagi.id/en/koepka-renews-dechambeau-feud-showdown"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0FyUQiuUDO_JhyMVjho7dtZ0U5vz6w9QHUuqwK8JxTG8bbx-KdTEvZwlnMKE",
       "image_credit": "Golf Channel",
@@ -138,46 +287,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQ88uvtRf8AyrZ2B7fWAT2VGlXeVlYi7k_EYDWZ_8cbhrDMPtfjEQdCNYTg-4"
         },
         {
-          "url": "https://peradaban.id/en/koepka-dechambeau-feud-showdown",
-          "title": "Koepka Renews DeChambeau Feud After 2024 Exhibition Defeat",
-          "publisher": "Peradaban.id",
+          "url": "https://www.limapagi.id/en/koepka-renews-dechambeau-feud-showdown",
+          "title": "Koepka Renews DeChambeau Feud After 2024 Showdown",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHxMbcvRB-leLAEd7kA2Oy3VJ54UwVAHnTm6C0vMiJ1dfraNl2qf0nCj3rViM"
-        }
-      ]
-    },
-    {
-      "query": "pce",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T13:10:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-25/us-consumer-spending-stalls-core-pce-rises-0-3-for-third-month",
-        "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026/card/the-fed-s-inflation-problem-worsened-last-month-RxwnpRG4LHJZkJzTlwDm",
-        "https://www.investors.com/news/pce-inflation-oct-federal-reserve-sp-500-ai-nvidia-liquidity-crunch/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOghF2FVIgpBqziykU95CaMFEnYa_jhe0GINesTU0EH4ekF1ZjYEXbudV3zEY",
-      "image_credit": "Bloomberg",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-25/us-consumer-spending-stalls-core-pce-rises-0-3-for-third-month",
-          "title": "US Consumer Spending Stalls, Core PCE Rises 0.3% for Third Month",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOghF2FVIgpBqziykU95CaMFEnYa_jhe0GINesTU0EH4ekF1ZjYEXbudV3zEY"
-        },
-        {
-          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-25-2026/card/the-fed-s-inflation-problem-worsened-last-month-RxwnpRG4LHJZkJzTlwDm",
-          "title": "The Fed's Inflation Problem Worsened Last Month",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTbNYR2cEjbzOQI599aCMWgy_RSzi6_pIGljjUP4yn4p1C6-wyxyzl_lWTNto"
-        },
-        {
-          "url": "https://www.investors.com/news/pce-inflation-oct-federal-reserve-sp-500-ai-nvidia-liquidity-crunch/",
-          "title": "Inflation Data Due As Fed Fears Worsen Market Volatility",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgcBJYOsIQuJjPmSF3qcFxvivTq4KlpQ2tGHyA_dUlMGlmV7hg7roCGl3xkos"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR44eHhmWHpY5RpPO9IhVgufHSx4VM3-3zULHo8jOZ2HfW-aSEieEhpYOo8iLY"
         }
       ]
     },
@@ -212,147 +326,7 @@
           "title": "Omaha police arrest man connected to homicide at Kids Can Community Center",
           "publisher": "KETV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXDMqN3kGSdLuVbLeN4VIce94ePdGlMLsWk_IpoAJ0hiow99FEgeHUohrZFk0"
-        }
-      ]
-    },
-    {
-      "query": "playstation plus december games",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T13:10:00Z",
-      "related_news_urls": [
-        "https://www.pushsquare.com/news/2026/11/final-4-ps-plus-extra-games-for-november-2026-available-to-download-now",
-        "https://digg.com/gaming/w9l9a6p5",
-        "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic",
-      "image_credit": "Push Square",
-      "news": [
-        {
-          "url": "https://www.pushsquare.com/news/2026/11/final-4-ps-plus-extra-games-for-november-2026-available-to-download-now",
-          "title": "Final 4 PS Plus Extra Games for November 2026 Available to Download Now",
-          "publisher": "Push Square",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLZRghYExKbVXjOLlXVM2hQYs0Np1XgP7-LccaY5lJOIg_BqqMr5Ksj-OAic"
-        },
-        {
-          "url": "https://digg.com/gaming/w9l9a6p5",
-          "title": "PS Plus Extra reportedly wraps November with four games and a pirate on board",
-          "publisher": "Digg",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBYPLu0GhSnS3MC3fn-jcAwHgEVfo67zznUC6B9uxEEdK2Kcy0rap7dMZcBXk"
-        },
-        {
-          "url": "https://www.playstationlifestyle.net/2026/11/24/ps-plus-game-pirate-yakuza-added-final-batch",
-          "title": "PS Plus Adds Acclaimed 2025 Adventure Game to Catalog",
-          "publisher": "PlayStation LifeStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcqFwEody4FpBVEarJNVxIvqofyIJQezv6H2S9hdneoR-gqXYBGx-8oGw9lfs"
-        }
-      ]
-    },
-    {
-      "query": "2028 crv",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:00:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
-        "https://www.newsbreak.com/carbuzz-com-510675/5021833436274-honda-s-new-three-row-suv-for-japan-previews-hybrid-tech-for-america",
-        "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/news/a74511264/2028-honda-cr-v-future-cars/",
-          "title": "Next-Gen 2028 Honda CR-V Goes Hybrid Only, and It’s a Fuel-Sipping Family SUV Worth Waiting For",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9-_jnVgpq0UnOhYJq50WnZ-CYNmUUcvLjJux7uMNv71bZnnK_xiWUAaVH2jA"
-        },
-        {
-          "url": "https://www.newsbreak.com/carbuzz-com-510675/5021833436274-honda-s-new-three-row-suv-for-japan-previews-hybrid-tech-for-america",
-          "title": "Honda's New Three-Row SUV For Japan Previews Hybrid Tech For America",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCp11v-hFXh41q5dTBkZlhpNZwkRPZZkpRaI9Lmc50Pn59Zi3gR40_BKtSVZs"
-        },
-        {
-          "url": "https://www.autoevolution.com/news/honda-details-2028-cr-v-s-20l-hybrid-powertrain-with-available-dualpower-eawd-278874.html",
-          "title": "Honda Details 2028 CR-V's 2.0L Hybrid Powertrain With Available DualPower eAWD",
-          "publisher": "autoevolution",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_xrtxRM-YV13cZuacRkWMVA2MkZnbRxx3XtmyAYSpHqQyUHDOv9X4c0e7dDM"
-        }
-      ]
-    },
-    {
-      "query": "nolan wells",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:00:00Z",
-      "related_news_urls": [
-        "https://edition.cnn.com/2026/11/24/us/horn-island-mississippi-nolan-wells",
-        "https://www.sunherald.com/news/local/crime/article318161078.html",
-        "https://www.shatterthestandards.com/p/we-will-not-stop-talking-about-nolan"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eFhp1JoPdxf0VjN7zvwiDB8UbHJldn0VcN_AhOUXfpBE9JniCcCWX9YbWDo",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://edition.cnn.com/2026/11/24/us/horn-island-mississippi-nolan-wells",
-          "title": "Horn Island, where beauty and serenity meet the mystery surrounding Nolan Wells’ death",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3eFhp1JoPdxf0VjN7zvwiDB8UbHJldn0VcN_AhOUXfpBE9JniCcCWX9YbWDo"
-        },
-        {
-          "url": "https://www.sunherald.com/news/local/crime/article318161078.html",
-          "title": "‘Bullets in your head.’ Arrest made over threat to kill Jackson County DA",
-          "publisher": "Sun Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSS2nlHDjr_zLNQSe-fAEKZ5zUHHCt10IUib97S2Kwgk_O13TcChuCr76qmVl0"
-        },
-        {
-          "url": "https://www.shatterthestandards.com/p/we-will-not-stop-talking-about-nolan",
-          "title": "We Will Not Stop Talking About Nolan Wells",
-          "publisher": "Shatter the Standards",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTTgrenCZADkgHqp7ZjWADIynIleYwL63vudnMXdMZuMGzLb-uCKQEZm_UzbMs"
-        }
-      ]
-    },
-    {
-      "query": "ecuador u-17 vs south korea u-17",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T13:00:00Z",
-      "related_news_urls": [
-        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-ecuador-u17-v-south-korea-u17/bltb0325606a8909305",
-        "https://www.starnewskorea.com/en/sports/2026/11/23/2026112314515747440",
-        "https://www.oceaniafootball.com/korea-republics-fast-start-sinks-new-caledonia-at-fifa-u-17-world-cup/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo3t1QJzcfqcXsxnIHZWSbP_cWJGn3ue5Y-jGkXv-BsPYNG2A4QWs43DE9RU",
-      "image_credit": "Goal.com",
-      "news": [
-        {
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-ecuador-u17-v-south-korea-u17/bltb0325606a8909305",
-          "title": "Ecuador U17 vs South Korea U17: Where to watch, TV channel and live stream at the World Cup U17",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyo3t1QJzcfqcXsxnIHZWSbP_cWJGn3ue5Y-jGkXv-BsPYNG2A4QWs43DE9RU"
-        },
-        {
-          "url": "https://www.starnewskorea.com/en/sports/2026/11/23/2026112314515747440",
-          "title": "Last year, two goals at the World Cup was the goal, but he finished with none → This year, after just two matches, he has already exploded for four... Foreign media also praise him",
-          "publisher": "스타뉴스",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4LmnCVOjCJkOK3w_XDVD2hThnUk96sigD4eBveKNNbQkx_0kt4OMFJcIZ3k0"
-        },
-        {
-          "url": "https://www.oceaniafootball.com/korea-republics-fast-start-sinks-new-caledonia-at-fifa-u-17-world-cup/",
-          "title": "Korea Republic’s fast start sinks New Caledonia at FIFA U-17 World Cup™",
-          "publisher": "Oceania Football Confederation",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUJe6cKZBMsMTm0Tldz8rNZbuYMXC-K_l5BABg2X5XNkSbqLxxQmHmq7GFFSE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfIDfmI9r9FtR_tEHDySMzy1NqLIbLA-UTtao0C7tMvlnTVa3vcdqcfajjXXk"
         }
       ]
     }
