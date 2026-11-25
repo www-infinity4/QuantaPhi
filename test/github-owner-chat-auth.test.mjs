@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {ownerGithubChatConfig,verifyGithubChatPat,admitGithubChatAttempt,issueGithubChatSession,checkGithubChatSession} from '../workers/infinity-brain-clock/github-owner-chat-auth.mjs';
+import {ownerGithubChatConfig,verifyGithubChatPat,admitGithubChatAttempt,issueGithubChatSession,checkGithubChatSession,revokeGithubChatSession} from '../workers/infinity-brain-clock/github-owner-chat-auth.mjs';
 const env={GITHUB_OWNER_CHAT_ENABLED:'1',GITHUB_OWNER_CHAT_ID:'12345',WRITER_OWNER_HASH:'a'.repeat(64)};
 const cfg=ownerGithubChatConfig(env);
 const pat='github_pat_'+ 'x'.repeat(80);
@@ -41,4 +41,14 @@ test('login attempts are bounded and session is limited, expires, replaces previ
  assert.equal(await checkGithubChatSession(db,cfg,second.token,now+1),true);
  assert.equal(JSON.stringify([...db.rows]).includes(second.token),false);
  assert.equal(JSON.stringify([...db.rows]).includes(pat),false);
+});
+
+test('logout revokes only the matching backup session',async()=>{
+ const db=storage(),now=1000000;
+ const first=await issueGithubChatSession(db,cfg,now);
+ const second=await issueGithubChatSession(db,cfg,now+1);
+ assert.equal(await revokeGithubChatSession(db,cfg,first.token,now+2),false);
+ assert.equal(await checkGithubChatSession(db,cfg,second.token,now+2),true);
+ assert.equal(await revokeGithubChatSession(db,cfg,second.token,now+2),true);
+ assert.equal(await checkGithubChatSession(db,cfg,second.token,now+2),false);
 });
