@@ -71,3 +71,18 @@ export function validateColorThoughtResponse(value,profile){
  if(value.toolRequests.some(x=>!profile.appendages.includes(x)))throw Error('color_model_requested_unlisted_appendage');
  return {finding:value.finding,nextAction:value.nextAction,blockers:value.blockers,toolRequests:value.toolRequests};
 }
+
+
+// Identity is supplied by the server-owned inference adapter, never the
+// model JSON or a caller-provided provider name. Explicit pairs prevent
+// recording Gemini inference as GPT. Role/tool privileges remain unchanged.
+export function colorInferenceReceipt(profile,value,identity){
+ const valid=(identity?.provider==='cloudflare-workers-ai'&&identity.model===COLOR_MODEL)||
+  (identity?.provider==='gemini'&&identity.model==='gemini-2.5-flash');
+ if(!valid)throw Error('color_provider_receipt_invalid');
+ const parsed=validateColorThoughtResponse(value,profile);
+ return {ok:true,status:'model_inference_completed',provider:identity.provider,
+  model:identity.model,color:profile.color,layers:profile.layers,
+  appendages:profile.appendages,toolRequestsAreNotExecution:true,
+  authorizedOperationsPerformed:false,...parsed};
+}
