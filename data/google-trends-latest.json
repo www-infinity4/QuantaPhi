@@ -3,76 +3,251 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-25T20:31:04.376960Z",
+  "checked_at": "2026-11-25T21:01:34.634501Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "espn",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-25T20:10:00Z",
+      "query": "luis suárez",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T20:30:00Z",
       "related_news_urls": [
-        "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
-        "https://sports.yahoo.com/college-football/articles/not-close-differing-reports-emerge-191507864.html",
-        "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network"
+        "https://as.com/us/futbol/luis-suarez-messi-con-39-anos-es-el-mejor-goleador-de-la-mls-y-yo-con-39-soy-el-segundo-del-equipo-f202611-n/",
+        "https://es-us.noticias.yahoo.com/deportes/retirar%C3%A1n-juntos-su%C3%A1rez-revela-clave-203736807.html",
+        "https://www.espn.com.ar/futbol/mls/nota/_/id/17531024/luis-suarez-lionel-messi-inter-miami-retiro-juntos"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxyHxyvsaTQB3L13id1lOXH9kUsj2IGMJNpbYW64SDG04FfeEbTVUCKRjMXM",
-      "image_credit": "Front Office Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_zpAzNP-dGcY5_hcl6YiJ7oZZG-8iyNzWlqCy6WbWkLG-gD7o8YjZW_kDJo",
+      "image_credit": "Diario AS",
       "news": [
         {
-          "url": "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
-          "title": "Kirk Herbstreit Expected to Stay at ESPN Long-Term",
-          "publisher": "Front Office Sports",
+          "url": "https://as.com/us/futbol/luis-suarez-messi-con-39-anos-es-el-mejor-goleador-de-la-mls-y-yo-con-39-soy-el-segundo-del-equipo-f202611-n/",
+          "title": "Luis Suárez: “Messi con 39 años es el mejor goleador de la MLS y yo, con 39, soy el segundo del equipo”",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxyHxyvsaTQB3L13id1lOXH9kUsj2IGMJNpbYW64SDG04FfeEbTVUCKRjMXM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt_zpAzNP-dGcY5_hcl6YiJ7oZZG-8iyNzWlqCy6WbWkLG-gD7o8YjZW_kDJo"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/articles/not-close-differing-reports-emerge-191507864.html",
-          "title": "'Not close': Differing reports emerge on ESPN legend's future at network",
-          "publisher": "Yahoo Sports",
+          "url": "https://es-us.noticias.yahoo.com/deportes/retirar%C3%A1n-juntos-su%C3%A1rez-revela-clave-203736807.html",
+          "title": "¿Se retirarán juntos? Suárez revela la clave que aplaza la retirada de Messi",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVfO7zw8AbxZCS7T4BAYynai1HDA7_T0XckIrQ5DjR_F0sev5UppoAeJMW9_4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTd3G2AJDf84w2t_xAVmr7T-Dpqfp8Na0jFcn2EfZ48j8TvLU-jMxRBjULRrHI"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network",
-          "title": "Kirk Herbstreit Contract Agreement Rumors Denied by ESPN, Timeline for Deal Updated by Network",
-          "publisher": "Bleacher Report",
+          "url": "https://www.espn.com.ar/futbol/mls/nota/_/id/17531024/luis-suarez-lionel-messi-inter-miami-retiro-juntos",
+          "title": "A Luis Suárez le preguntaron si se va a retirar antes o después de Lionel Messi",
+          "publisher": "ESPN Argentina",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1_HNEc_T07B6X-OHXlKIeQKyMqNQqd681gKO2usVLYQc6Vh5S4_gm1E1i6bI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqLDe-iZC5OjVhM1lxthimo2RtfsCUSAoVmyAlr4GF9D9qSpKtKBKL-xuSuwQ"
         }
       ]
     },
     {
-      "query": "bayern",
+      "query": "buck flips bobcat viral video",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T20:10:00Z",
+      "published_at": "2026-11-25T20:30:00Z",
       "related_news_urls": [
-        "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
-        "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel",
-        "https://www.welt.de/sport/fussball/champions-league/article6b0730d6c75e09cb88d16185/champions-league-ticker-osc-lille-fc-bayern-muenchen-live.html"
+        "https://www.foxnews.com/outkick-culture/viral-wildlife-video-captures-deer-flipping-bobcat-air-wild-confrontation",
+        "https://www.foxweather.com/earth-space/watch-protective-buck-launches-bobcat-air-fierce-wildlife-showdown",
+        "https://www.usatoday.com/videos/news/have-you-seen/2026/11/24/trail-camera-captures-buck-battle-bobcat-flip-predator-into-the-air/92940210007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc",
-      "image_credit": "sportschau.de",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1CJ9_yjDEpDqwV8sc0XgKjhZjboBlFzEBUIIhRVvOkR5i8hyHlyrikkza_g",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
-          "title": "Kreative Lösungen gefragt: Brown, Bischof & Binder - Wer ersetzt Kane und Olise in der Bayern-Offensive?",
-          "publisher": "sportschau.de",
+          "url": "https://www.foxnews.com/outkick-culture/viral-wildlife-video-captures-deer-flipping-bobcat-air-wild-confrontation",
+          "title": "Viral wildlife video captures deer flipping bobcat into the air during wild confrontation",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSF1CJ9_yjDEpDqwV8sc0XgKjhZjboBlFzEBUIIhRVvOkR5i8hyHlyrikkza_g"
         },
         {
-          "url": "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel",
-          "title": "Upamecano als Stürmer? Was den Vorletzten Lille für Bayern gefährlich macht",
-          "publisher": "Kicker",
+          "url": "https://www.foxweather.com/earth-space/watch-protective-buck-launches-bobcat-air-fierce-wildlife-showdown",
+          "title": "Watch: Protective buck launches bobcat into the air in fierce wildlife showdown",
+          "publisher": "FOX Weather",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUwNwMMrcVtsV96nDN5cPUrbrenmkeXadoKNp60H1AhB42e5yxF5kxRfzO1ck"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9uA1dIrPaY190-3GM2UtPCu1XqcxxZS_y3PbyQHDbldFw-TTjr2pb13OSv-I"
         },
         {
-          "url": "https://www.welt.de/sport/fussball/champions-league/article6b0730d6c75e09cb88d16185/champions-league-ticker-osc-lille-fc-bayern-muenchen-live.html",
-          "title": "Champions League, Ticker: OSC Lille – FC Bayern München live",
-          "publisher": "WELT",
+          "url": "https://www.usatoday.com/videos/news/have-you-seen/2026/11/24/trail-camera-captures-buck-battle-bobcat-flip-predator-into-the-air/92940210007/",
+          "title": "Brave buck sends bobcat flying to protect doe. See the video",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4SiCN0yyFFnKm3yUOyVOqmMfcHkuJ-sOwTYQYCIffuY2OcL144k5Y2h4nqXA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGms1fRaGD7G9FtEXMGuR2VtJVU5Y29HlFFoJIUKu5q0DD8_fSwf4rJPclH_s"
+        }
+      ]
+    },
+    {
+      "query": "aaron rodgers next team",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/patriots-quickly-emerge-favorite-acquire-200012931.html",
+        "https://www.cbssports.com/prediction/news/aaron-rodgers-next-team-predictions-patriots-ravens-favored-to-land-quarterback-after-steelers-release/",
+        "https://www.nbcsportsboston.com/news/boston-sports/live-updates-celtics-red-sox-patriots-bruins-tommy-devito/815793/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiS30Le60DZ_aK1HWOELrJCnMKRlEmXcL0kEriZ3qu61M3lO4JzQw-yW3FnCE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/patriots-quickly-emerge-favorite-acquire-200012931.html",
+          "title": "Patriots Quickly Emerge as Favorite to Acquire Aaron Rodgers",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiS30Le60DZ_aK1HWOELrJCnMKRlEmXcL0kEriZ3qu61M3lO4JzQw-yW3FnCE"
+        },
+        {
+          "url": "https://www.cbssports.com/prediction/news/aaron-rodgers-next-team-predictions-patriots-ravens-favored-to-land-quarterback-after-steelers-release/",
+          "title": "Aaron Rodgers next team predictions: Patriots, Ravens favored to land quarterback after Steelers release",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSANWx589M0aDisA0wrfkzFqaTnhVkIJ-dHTHGKtpsgZr1lWE_8MIUyIm_iTcQ"
+        },
+        {
+          "url": "https://www.nbcsportsboston.com/news/boston-sports/live-updates-celtics-red-sox-patriots-bruins-tommy-devito/815793/",
+          "title": "C's end losing skid vs. Wizards, DeVito ready to lead Pats | All-Access Daily",
+          "publisher": "NBC Sports Boston",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYu827G-JynNzo9NMNOG2PNt8LTe5Dn5CLhdAuv4dvzwD2Pli2UusuPQRwgUM"
+        }
+      ]
+    },
+    {
+      "query": "patriots record",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50544188/new-england-patriots-highest-paid-players-2026",
+        "https://www.patspulpit.com/new-england-patriots-analysis/144973/patriots-2026-offseason-signings-trade-acquisitions-performance-review",
+        "https://www.eagletribune.com/sports/super-bowl-contenders-taking-shape-patriots-not-among-them/article_24794e67-90b6-4013-82f9-8d8c44efc310.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOLmx_yWUKnJuYlPDwnsQIR5muo0NiWZz7YIiePWvHCBu4XAnV8opQHJ57bc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50544188/new-england-patriots-highest-paid-players-2026",
+          "title": "How Patriots' top 10 earners have fared: A.J. Brown, Christian Gonzalez, more",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpOLmx_yWUKnJuYlPDwnsQIR5muo0NiWZz7YIiePWvHCBu4XAnV8opQHJ57bc"
+        },
+        {
+          "url": "https://www.patspulpit.com/new-england-patriots-analysis/144973/patriots-2026-offseason-signings-trade-acquisitions-performance-review",
+          "title": "Veteran offseason pickups have yet to prove their value to the Patriots",
+          "publisher": "Pats Pulpit",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_l077UoCsQgoTi63u76nJXJOxq8MjjiNuVhzkvsPG3t_poQDvaCFiSkemfM"
+        },
+        {
+          "url": "https://www.eagletribune.com/sports/super-bowl-contenders-taking-shape-patriots-not-among-them/article_24794e67-90b6-4013-82f9-8d8c44efc310.html",
+          "title": "Super Bowl contenders taking shape; Patriots not among them",
+          "publisher": "Eagle-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2aXJoIaRDTuYHuBYKp8z8-jENJwsplgRaLp7UUD8GhXSkYhWO83r9oYAUtiE"
+        }
+      ]
+    },
+    {
+      "query": "nfl tomorrow",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7810763/2026/11/25/nfl-news-rumors-latest-updates/",
+        "https://www.espn.com/radio/play/_/id/50594413",
+        "https://www.cbssports.com/nfl/news/nfl-thanksgiving-injury-report-micah-parsons-cleared-kenneth-walker-iii-practices/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjGLkWMFl1OfB2B-5XhO7sMJv7wUehDkKy0TKZNL2WgzB0mJzIU7lKo1Oy5UA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7810763/2026/11/25/nfl-news-rumors-latest-updates/",
+          "title": "What I’m hearing about Micah Parsons’ return, Puka Nacua’s $30M question, why Brandon Aiyuk may have to wait",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSjGLkWMFl1OfB2B-5XhO7sMJv7wUehDkKy0TKZNL2WgzB0mJzIU7lKo1Oy5UA"
+        },
+        {
+          "url": "https://www.espn.com/radio/play/_/id/50594413",
+          "title": "First Take - Hour 1: Does Micah Parsons give the Packers the edge tonight?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlua4YqR4M1Flq_91Dzlg4VT55mmsa1_FmR5ZRXB6G1uuFO7t5WQShjoPtP2k"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/nfl-thanksgiving-injury-report-micah-parsons-cleared-kenneth-walker-iii-practices/",
+          "title": "NFL Thanksgiving injury report: Micah Parsons cleared for season debut, Chiefs' Kenneth Walker III out",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjmmEKF2oY8-AsG78I4kNgwq1ogbPlriDWkw7Ffh9Lr5mF7FqT_6PAlJyYy7Q"
+        }
+      ]
+    },
+    {
+      "query": "football tonight",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T20:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/betting/article/bengals-commanders-monday-night-football-betting-odds-picks-and-predictions-best-bets-player-props-143321176.html",
+        "https://www.cbssports.com/nfl/news/commanders-vs-bengals-prediction-odds-how-to-watch-mnf-matchup/",
+        "https://www.commanders.com/news/commanders-vs-bengals-how-to-watch-listen-stream"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2p2ywKHAW4IIfCummp9TnuMnG6U8EYAc0bLy_ebriFMcQhbcyJumnvmiXgDo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/betting/article/bengals-commanders-monday-night-football-betting-odds-picks-and-predictions-best-bets-player-props-143321176.html",
+          "title": "Bengals-Commanders Monday Night Football betting odds, picks and predictions: Best bets, player props",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2p2ywKHAW4IIfCummp9TnuMnG6U8EYAc0bLy_ebriFMcQhbcyJumnvmiXgDo"
+        },
+        {
+          "url": "https://www.cbssports.com/nfl/news/commanders-vs-bengals-prediction-odds-how-to-watch-mnf-matchup/",
+          "title": "Commanders vs. Bengals prediction: Cincinnati looks to extend lead in AFC North in 'MNF' matchup",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0T8rFNxMWsDwHxyTP2HEAn0-nMvRkxp5mUFY4n08zrLIVRiCQijANZI_C2GA"
+        },
+        {
+          "url": "https://www.commanders.com/news/commanders-vs-bengals-how-to-watch-listen-stream",
+          "title": "Commanders vs. Bengals | How to watch, listen, stream",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQp2chiMrdeJgerbgA9JVmjOxilcosxr_mhMTAKRiKKARtwCF7O1LkhMfqk44"
+        }
+      ]
+    },
+    {
+      "query": "ethan mbappé",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T20:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7808834/2026/11/25/ethan-mbappe-lille-kylian-brothers-real-madrid-champions-league/",
+        "https://sports.yahoo.com/soccer/articles/davide-ancelotti-says-lille-ethan-094800470.html",
+        "https://onefootball.com/en/video/davide-ancelotti-respalda-a-ethan-mbappe-estamos-aqui-para-acompanarle-y-ayudarle-43834139"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdLIcrixPyM5brh6JQFdpoRt0DciVb1V_rWm1WrmgsXXbJ1v8SiMrLmY3wyA4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7808834/2026/11/25/ethan-mbappe-lille-kylian-brothers-real-madrid-champions-league/",
+          "title": "Liberated in Lille: How Ethan Mbappe has emerged from Kylian’s shadow",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdLIcrixPyM5brh6JQFdpoRt0DciVb1V_rWm1WrmgsXXbJ1v8SiMrLmY3wyA4"
+        },
+        {
+          "url": "https://sports.yahoo.com/soccer/articles/davide-ancelotti-says-lille-ethan-094800470.html",
+          "title": "Davide Ancelotti says Lille’s Ethan Mbappé ‘has to progress physically’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8r0rFMCoskY9fbUUuCwCb7oUL8VlHAkH4SRue-Ouc-7_Rg0KX6E4BhJ2RUtI"
+        },
+        {
+          "url": "https://onefootball.com/en/video/davide-ancelotti-respalda-a-ethan-mbappe-estamos-aqui-para-acompanarle-y-ayudarle-43834139",
+          "title": "Davide Ancelotti respalda a Ethan Mbappé: \"Estamos aquí para acompañarle y ayudarle\"",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDqEc25bLp3klFA-Yj2qZLbIAx5ueRG9bBHniLQv1K0SY0JTdABOKKGNa3ZjI"
         }
       ]
     },
@@ -118,7 +293,7 @@
       "related_news_urls": [
         "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
         "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-claims-odyssey-came-144015520.html"
+        "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
       "image_credit": "People.com",
@@ -138,221 +313,46 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-claims-odyssey-came-144015520.html",
-          "title": "Matt Damon Claims ‘The Odyssey’ Came With Major Family Cost",
-          "publisher": "Yahoo",
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html",
+          "title": "Matt Damon reveals why it was difficult to return home after filming The Odyssey",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1X4pZ91t2WZpwtl0w_ZmSECABgb2srX62hz_s8laXR5LhubKuibazEklwCiw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEe-EnzmYzGm4qZIVxncD-xPZKPDWEz-tbgoa4vDNgfkvHj5aOW7MAuqJlgpE"
         }
       ]
     },
     {
-      "query": "roma",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T20:00:00Z",
-      "related_news_urls": [
-        "https://www.gazzetta.it/Calcio/Serie-A/Roma/24-11-2026/gasperini-e-roma-psg-il-valore-dei-francesi-e-altissimo.shtml",
-        "https://www.corrieredellosport.it/foto/calcio/champions-league/2026/11/25-152834230/da_cristian_totti_a_pizarro_alle_mogli_di_malen_mancini_cristante_e_pisilli_quanti_vip_per_psg-roma",
-        "https://www.libero.it/tv/tifosi-della-roma-entrano-allo-stadio-a-parigi-scortati-dalla-polizia_msFD00000000554788"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGURz_aLqIjU15RNFMk6TJCDJ4vmdm67FNScFjTAjzYzzYAKhG2nLcWTiw5Y0",
-      "image_credit": "La Gazzetta dello Sport",
-      "news": [
-        {
-          "url": "https://www.gazzetta.it/Calcio/Serie-A/Roma/24-11-2026/gasperini-e-roma-psg-il-valore-dei-francesi-e-altissimo.shtml",
-          "title": "Roma, Gasperini: \"Il valore del Psg è molto alto, in Champions gli episodi incidono di più\"",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGURz_aLqIjU15RNFMk6TJCDJ4vmdm67FNScFjTAjzYzzYAKhG2nLcWTiw5Y0"
-        },
-        {
-          "url": "https://www.corrieredellosport.it/foto/calcio/champions-league/2026/11/25-152834230/da_cristian_totti_a_pizarro_alle_mogli_di_malen_mancini_cristante_e_pisilli_quanti_vip_per_psg-roma",
-          "title": "Da Cristian Totti a Pizarro alle mogli di Malen, Mancini, Cristante e Pisilli, quanti vip per Psg-Roma",
-          "publisher": "Corriere dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSmZ9cwaIkJojYK9pdZU-7znGjRnkaF-UU6gO3DX72FJwKUkiSAy2lZaJhrFTI"
-        },
-        {
-          "url": "https://www.libero.it/tv/tifosi-della-roma-entrano-allo-stadio-a-parigi-scortati-dalla-polizia_msFD00000000554788",
-          "title": "Tifosi della Roma entrano allo stadio a Parigi scortati dalla polizia",
-          "publisher": "Libero",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0pj8jOgn8tz70O90K2xNjXSgi12u20xTmYeSvoML3-3PpDbKWNEIvD9YfS2I"
-        }
-      ]
-    },
-    {
-      "query": "brock purdy injury",
+      "query": "bayern",
       "approx_searches": "500+",
-      "published_at": "2026-11-25T20:00:00Z",
+      "published_at": "2026-11-25T20:10:00Z",
       "related_news_urls": [
-        "https://www.nfl.com/news/brock-purdy-sits-out-practice-ankle-sprain-49ers-seahawks",
-        "https://www.nytimes.com/athletic/7812454/2026/11/25/brock-purdy-injury-49ers-seahawks/",
-        "https://sports.yahoo.com/nfl/articles/brock-purdy-misses-practice-wednesday-193511343.html"
+        "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
+        "https://www.bild.de/sport/fussball/jamal-musiala-entscheidung-um-den-superstar-des-fc-bayern-gefallen-6b0702a3d4a4a3142c573877",
+        "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9qTP9HJALTaj_hlz65E1arvW_hQ3xtROvdU69bgO-Vlv1BqMuhHcMVcoirzA",
-      "image_credit": "NFL.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc",
+      "image_credit": "sportschau.de",
       "news": [
         {
-          "url": "https://www.nfl.com/news/brock-purdy-sits-out-practice-ankle-sprain-49ers-seahawks",
-          "title": "Brock Purdy sits out practice with ankle sprain; 'possibility' 49ers QB won't play vs. Seahawks",
-          "publisher": "NFL.com",
+          "url": "https://www.sportschau.de/regional/br/br-brown-bischof--binder-die-jungen-bs-fuer-den-bayern-sturm-102.html",
+          "title": "Kreative Lösungen gefragt: Brown, Bischof & Binder - Wer ersetzt Kane und Olise in der Bayern-Offensive?",
+          "publisher": "sportschau.de",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9qTP9HJALTaj_hlz65E1arvW_hQ3xtROvdU69bgO-Vlv1BqMuhHcMVcoirzA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQKugAeb4i8MkI0x4paEDta-OSbBWo87FzhKv6jujHwUFUhpese8gLcARcUfqc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7812454/2026/11/25/brock-purdy-injury-49ers-seahawks/",
-          "title": "49ers QB Brock Purdy injured ankle vs. Vikings, uncertain to face Seahawks",
-          "publisher": "The New York Times",
+          "url": "https://www.bild.de/sport/fussball/jamal-musiala-entscheidung-um-den-superstar-des-fc-bayern-gefallen-6b0702a3d4a4a3142c573877",
+          "title": "Jamal Musiala: Entscheidung um den Superstar des FC Bayern gefallen",
+          "publisher": "BILD",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjTBsjRdlHsSlsMkbhKY4xlGDcB9o-35znMvM245i1B-EWV8XGTZH76ujSuCw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRSDGb-U-saw0t1_5Ba6kz_M7sxUQprS_bSSTn_5a7c43lBYsqlQSP3Ndp21o"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/brock-purdy-misses-practice-wednesday-193511343.html",
-          "title": "Brock Purdy misses practice on Wednesday",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.kicker.de/upamecano-als-stuermer-was-den-vorletzten-lille-fuer-bayern-gefaehrlich-macht-1274835/artikel",
+          "title": "Upamecano als Stürmer? Was den Vorletzten Lille für Bayern gefährlich macht",
+          "publisher": "Kicker",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpZ5Yo1cz2KDoOTIb7kyPMheH-Ww46hU0Wh6Q5I4E_EY1UQ0U8ztS3BIqlOw8"
-        }
-      ]
-    },
-    {
-      "query": "rogers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-25T20:00:00Z",
-      "related_news_urls": [
-        "https://www.tmz.com/2026/11/24/mr-rogers-son-john-rogers-dead/",
-        "https://people.com/john-rogers-youngest-son-mister-rogers-neighborhood-star-fred-rogers-dead-at-65-12278379",
-        "https://www.cleveland.com/entertainment/2026/11/beloved-childrens-tv-icons-son-dies-at-65.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvfiEAIZVKqF8OqLz94VLwzlipS-FF9MIeETmS7fZpK24VCuP0GX-W1x3ewE",
-      "image_credit": "TMZ",
-      "news": [
-        {
-          "url": "https://www.tmz.com/2026/11/24/mr-rogers-son-john-rogers-dead/",
-          "title": "Mister Rogers' Son, John, Dead at 65",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTvfiEAIZVKqF8OqLz94VLwzlipS-FF9MIeETmS7fZpK24VCuP0GX-W1x3ewE"
-        },
-        {
-          "url": "https://people.com/john-rogers-youngest-son-mister-rogers-neighborhood-star-fred-rogers-dead-at-65-12278379",
-          "title": "John Rogers, Youngest Son of ‘Mister Rogers’ Neighborhood’ Star Fred Rogers, Dies at 65",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTVYXMTt4mtXrUa67wPg4SdlA4Ab-6RVfAqgBk6W89mfsgVRW0W9InboXjN1lI"
-        },
-        {
-          "url": "https://www.cleveland.com/entertainment/2026/11/beloved-childrens-tv-icons-son-dies-at-65.html",
-          "title": "Beloved children’s TV icon’s son dies at 65",
-          "publisher": "Cleveland.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIjMkg2e3_oEshn0pPFPGSzbUFVDDAUvYnwqWtsJBD-OR4b8YkUGi_1FIrG2Y"
-        }
-      ]
-    },
-    {
-      "query": "lotería",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T20:00:00Z",
-      "related_news_urls": [
-        "https://www.univision.com/noticias/inmigracion/arrestan-a-ganador-de-un-millon-de-dolares-de-la-loteria-en-massachusetts-tras-persecucion-de-ice",
-        "https://elpais.com/us/migracion/2026-11-25/gano-un-millon-de-dolares-en-la-loteria-pero-el-ice-lo-arresto-por-tener-una-orden-de-deportacion.html",
-        "https://us.marca.com/actualidad/dinero/2026/11/25/ariel-antonio-velasquez-morales-salvadoreno-gano-millon-dolares-loteria-arrestado-ice.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5eGZb3fdPoCCmrJnr9AKGzkYh64esYKGu8hgg8D6BFrCAY5YZJjqYLmX32V0",
-      "image_credit": "Univision",
-      "news": [
-        {
-          "url": "https://www.univision.com/noticias/inmigracion/arrestan-a-ganador-de-un-millon-de-dolares-de-la-loteria-en-massachusetts-tras-persecucion-de-ice",
-          "title": "Ganó un millón de dólares en la lotería; ICE vio la foto de su premio y terminó arrestándolo",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5eGZb3fdPoCCmrJnr9AKGzkYh64esYKGu8hgg8D6BFrCAY5YZJjqYLmX32V0"
-        },
-        {
-          "url": "https://elpais.com/us/migracion/2026-11-25/gano-un-millon-de-dolares-en-la-loteria-pero-el-ice-lo-arresto-por-tener-una-orden-de-deportacion.html",
-          "title": "Ganó un millón de dólares en la lotería, pero el ICE lo arrestó por tener una orden de deportación",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQtLMKfNuinzcA6dMITtW7WYAaUm4KZDxTUMYDVX4o2Y_39llLCU0DV7Jrfv8"
-        },
-        {
-          "url": "https://us.marca.com/actualidad/dinero/2026/11/25/ariel-antonio-velasquez-morales-salvadoreno-gano-millon-dolares-loteria-arrestado-ice.html",
-          "title": "¿Quién es Ariel Antonio Velásquez-Morales? El salvadoreño que ganó un millón de dólares en la lotería y fue arrestado por el ICE",
-          "publisher": "marca usa",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrnn54I6d03_-_zPl5hbOnR2r-0IiMrIbGtmNWpVi3LjmSG4GjkBnIwXO3quY"
-        }
-      ]
-    },
-    {
-      "query": "dragon age",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T20:00:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
-        "https://kotaku.com/dragon-age-dev-explains-biowares-struggles-ea-doesnt-shoot-you-it-puts-a-gun-on-the-table-and-then-comes-in-every-day-and-asks-you-if-youll-shoot-yourself-2001000008",
-        "https://www.ign.com/articles/its-such-a-shame-blade-runner-2099s-lewis-gribben-mourns-eas-closure-of-bioware"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/gaming-industry/dragon-ages-former-boss-explains-that-poor-management-from-ea-led-to-bioware-shutting-down-because-the-options-on-the-table-were-all-terrible/",
-          "title": "Dragon Age's former boss says that poor management from EA led to BioWare shutting down because 'the options on the table were all terrible'",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRKjBeT6SG6V6-MKw5hEEghNk2os1txvVT9DZ33wERahJUTlkuTZmlChkXBrO4"
-        },
-        {
-          "url": "https://kotaku.com/dragon-age-dev-explains-biowares-struggles-ea-doesnt-shoot-you-it-puts-a-gun-on-the-table-and-then-comes-in-every-day-and-asks-you-if-youll-shoot-yourself-2001000008",
-          "title": "Dragon Age Dev Explains BioWare's Struggles: 'EA Doesn’t Shoot You, It Puts A Gun On The Table And Then Comes In Every Day And Asks You If You’ll Shoot Yourself'",
-          "publisher": "Kotaku",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl5RRQojwvzg_VNqgi49GnuqozJqPcuzXz-bwzpdQMU0CbflfOSwnqHY6mvXE"
-        },
-        {
-          "url": "https://www.ign.com/articles/its-such-a-shame-blade-runner-2099s-lewis-gribben-mourns-eas-closure-of-bioware",
-          "title": "'It's Such a Shame' — Blade Runner 2099's Lewis Gribben Mourns EA's Closure of BioWare",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdiE77JB6to9eKGPzvaha-q2MAhw2xr8r_FsXIukBGfk_2WK0Bhr1nfx1X36s"
-        }
-      ]
-    },
-    {
-      "query": "ole miss basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-25T19:50:00Z",
-      "related_news_urls": [
-        "https://tucson.com/sports/arizonawildcats/basketball/article_b6ce433b-2ca4-4477-b69e-370959cca39d.html",
-        "https://sports.yahoo.com/mens-college-basketball/articles/arizona-men-basketball-vs-ole-184500731.html",
-        "https://www.cbssports.com/college-basketball/news/ole-miss-no-8-arizona-clash-for-maui-invitational-title/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Q37p-xQkUhxmyIRla0OoVse-6GUplcUNSs-y4LCkk6Ip9u4eL7NXDTDloK4",
-      "image_credit": "Arizona Daily Star",
-      "news": [
-        {
-          "url": "https://tucson.com/sports/arizonawildcats/basketball/article_b6ce433b-2ca4-4477-b69e-370959cca39d.html",
-          "title": "Arizona-Ole Miss scouting report: On Rebels' big jump, fired-up fans and beauty sleep",
-          "publisher": "Arizona Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7Q37p-xQkUhxmyIRla0OoVse-6GUplcUNSs-y4LCkk6Ip9u4eL7NXDTDloK4"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/arizona-men-basketball-vs-ole-184500731.html",
-          "title": "Arizona men’s basketball vs. Ole Miss at Maui Invitational fan discussion",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQP8qqkhk_OXOriIwYEY2Kplb0CuDLZ0WN_Jn_y-7n9LAJbYD2DDmUHed1k8aQ"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/ole-miss-no-8-arizona-clash-for-maui-invitational-title/",
-          "title": "Ole Miss, No. 8 Arizona clash for Maui Invitational title",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNkoOPt7cae5ONMo6pg_kM5HRNsswpwTfbBDilZZjyTLMiG31kL_HJ-8KBZCc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUwNwMMrcVtsV96nDN5cPUrbrenmkeXadoKNp60H1AhB42e5yxF5kxRfzO1ck"
         }
       ]
     }
