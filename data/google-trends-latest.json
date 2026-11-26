@@ -3,9 +3,219 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T00:45:14.039622Z",
+  "checked_at": "2026-11-26T01:01:27.127258Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "myles garrett",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/myles-garrett-admits-knee-probably-002746729.html",
+        "https://www.si.com/nfl/rams/onsi/rams-myles-garrett-knee-injury-concerns-playoff-push",
+        "https://www.thefantasyfootballers.com/news/647917/-active-sunday/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxosYW1bOY7CaXTKQvg4R5NRHHVXeVoQM1NvgwX_4uphhTBcX2yypSJ5HBqY8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/myles-garrett-admits-knee-probably-002746729.html",
+          "title": "Myles Garrett admits his knee probably won't be 'even 90% this season'",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxosYW1bOY7CaXTKQvg4R5NRHHVXeVoQM1NvgwX_4uphhTBcX2yypSJ5HBqY8"
+        },
+        {
+          "url": "https://www.si.com/nfl/rams/onsi/rams-myles-garrett-knee-injury-concerns-playoff-push",
+          "title": "Myles Garrett’s Knee Injury Remains a Concern as Rams Enter Critical Stretch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1k6VgrAio1bVVVUMSSrv_q4S73CdZHPjpZSecbDVzeJ6TBIsO-AVOVMRdqp0"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/647917/-active-sunday/",
+          "title": "Myles Garrett Active Sunday",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ3ghMH7RDJFRt3lEYoYs4paHl55kM_Vl8EiazFNNcHoaOSOjh3SFEAGbDOq_Y"
+        }
+      ]
+    },
+    {
+      "query": "is wemby playing tonight",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:40:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
+        "https://sports.yahoo.com/nba/articles/spurs-crucial-victor-wembanyama-injury-233447901.html",
+        "https://sportsbook.fanduel.com/basketball/nba/san-antonio-spurs-@-portland-trail-blazers-36354203"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
+          "title": "Trail Blazers Return Home for Big Matchup Against Spurs",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/spurs-crucial-victor-wembanyama-injury-233447901.html",
+          "title": "Spurs Get Crucial Victor Wembanyama Injury Update Before Blazers Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhG9OZB3Wx2Aw8tpGoVFNgHWe4nHOCGrR71skD6_D1A-hNB2LG3YdJbYk7sD0"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/basketball/nba/san-antonio-spurs-@-portland-trail-blazers-36354203",
+          "title": "San Antonio Spurs @ Portland Trail Blazers Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyp8vVaYb7n3FrFvv7QwJT0qvPMmnzOoiqtSOO-ft41wU65s3vYktazvyQ2a0"
+        }
+      ]
+    },
+    {
+      "query": "florida panthers",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/story/_/id/50594065/aleksander-barkov-brad-marchand-returning-vs-senators",
+        "https://www.nhl.com/panthers/news/what-s-brewing-barkov-marchand-nearing-return-turkey-5kate",
+        "https://sports.yahoo.com/nhl/articles/barkov-marchand-set-return-wednesday-165046339.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03ZA8UDxSpJE5vcR0doyJzqIthk9pnr5gjx0TdD-3c12M0i03roSqW7Hqylc",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50594065/aleksander-barkov-brad-marchand-returning-vs-senators",
+          "title": "Aleksander Barkov, Brad Marchand returning from injuries against Senators",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS03ZA8UDxSpJE5vcR0doyJzqIthk9pnr5gjx0TdD-3c12M0i03roSqW7Hqylc"
+        },
+        {
+          "url": "https://www.nhl.com/panthers/news/what-s-brewing-barkov-marchand-nearing-return-turkey-5kate",
+          "title": "What’s Brewing: Barkov & Marchand nearing return; Turkey 5kate",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8jOehf0vFu1uHoXmyemuBUTz15YMagxiHxgrxgQIMr4KcTkmyZQz_hzlZ1DA"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/barkov-marchand-set-return-wednesday-165046339.html",
+          "title": "Barkov and Marchand Set to Return Wednesday vs Senators",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfVQFRGtPy7WwWjWvACmUtfmD-TVFoiaUDv4IsL--zw0rGTnDxFFlwdG1IptE"
+        }
+      ]
+    },
+    {
+      "query": "tutu atwell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-8-stats-that-may-go-overlooked-from-week-11-including-2-involving-rookie-wideouts-175932069.html",
+        "https://www.nytimes.com/athletic/7806217/2026/11/23/fantasy-football-week-11-recap-waivers-speed-run/",
+        "https://www.thefantasyfootballers.com/analysis/ten-things-we-learned-from-week-11-fantasy-football/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_Wj_xS0sO1hmpCGHqHnMB_m_RU7a0u-OH3qFa7w_syL02xgxRTQfvaiLp2A",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-8-stats-that-may-go-overlooked-from-week-11-including-2-involving-rookie-wideouts-175932069.html",
+          "title": "Fantasy Football: 8 stats that may go overlooked from Week 11, including 2 involving rookie wideouts",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_Wj_xS0sO1hmpCGHqHnMB_m_RU7a0u-OH3qFa7w_syL02xgxRTQfvaiLp2A"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7806217/2026/11/23/fantasy-football-week-11-recap-waivers-speed-run/",
+          "title": "Fantasy football Week 11 recap, early waivers speed run: The time is now to trade McConkey",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCugwT92Xz6BAYta-JDqdUWAGUte1EE1RT6m91VIlM2D7sHPQ1hxYuyJS6h1s"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/analysis/ten-things-we-learned-from-week-11-fantasy-football/",
+          "title": "Ten Things We Learned From Week 11 (Fantasy Football)",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzZFqNp58IgAVTQwcTjP_cpXnvaSGpIW1ofknYF5lWwpYmXwE0GzW6uUN74bI"
+        }
+      ]
+    },
+    {
+      "query": "wake forest basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T00:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/wake-forest/longformarticle/wake-forest-vs-mississippi-state-basketball-preview-293273604/",
+        "https://www.foxsports.com/articles/cbk/mississippi-state-bulldogs-and-the-wake-forest-demon-deacons-meet-in-nassau-bahamas",
+        "https://www.thenewstribune.com/sports/college/article318237502.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD87AP1WpuyqFU93rSx3Cu_jUifP5UHJwa2LHXK0lDteAsFu0WXGtTgV6a1Vs",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/wake-forest/longformarticle/wake-forest-vs-mississippi-state-basketball-preview-293273604/",
+          "title": "Wake Forest vs Mississippi State basketball preview",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD87AP1WpuyqFU93rSx3Cu_jUifP5UHJwa2LHXK0lDteAsFu0WXGtTgV6a1Vs"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/mississippi-state-bulldogs-and-the-wake-forest-demon-deacons-meet-in-nassau-bahamas",
+          "title": "Mississippi State Bulldogs and the Wake Forest Demon Deacons meet in Nassau, Bahamas",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        },
+        {
+          "url": "https://www.thenewstribune.com/sports/college/article318237502.html",
+          "title": "Trip to Bahamas no vacation for Wake Forest, Mississippi State",
+          "publisher": "Tacoma News Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmNeAEM5mDE8tcb1kXvGnVqCEHsz2Jz5KqoAlDkguumYVls6KhOvCzwTezVmk"
+        }
+      ]
+    },
+    {
+      "query": "suns vs rockets",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/betting/articles/suns-rockets-best-bet-night-235945239.html",
+        "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
+        "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTr5fDJgcKD_6-uQZMf4lcuQ_BtuAwl9KixsSjEAm82jcW2lrXhpq5YtINAU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/betting/articles/suns-rockets-best-bet-night-235945239.html",
+          "title": "Suns @ Rockets: Best Bet of the Night and a Look at the Spread",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTr5fDJgcKD_6-uQZMf4lcuQ_BtuAwl9KixsSjEAm82jcW2lrXhpq5YtINAU"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
+          "title": "Updated November 25th Injury Report and Preview for Houston Rockets vs. Phoenix Suns",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xbgsn40Fldj_R7af9PZXrMbJaKGCK1JKz_cPZDnQUB0fmX5aDNaSLCQqS0I"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test",
+          "title": "Game Preview: Surging Suns look to stuff Rockets on Thanksgiving Eve",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR78TvlsagBZlA-Ju6frpiPpKOcC3hL3PwOrugCwteylLlnqpk3yOpsG4aJ0OY"
+        }
+      ]
+    },
     {
       "query": "nebraska volleyball",
       "approx_searches": "5000+",
@@ -42,41 +252,6 @@
       ]
     },
     {
-      "query": "davion mitchell",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T00:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50598222/davion-mitchell-drains-buzzer-beater-close-first-quarter",
-        "https://www.miamiherald.com/sports/nba/miami-heat/article317819582.html",
-        "https://www.hoopsrumors.com/2026/11/heat-notes-antetokounmpo-mitchell-backcourt-depth-wing-rotation.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtML8qftGNRHs3VKUtRi1NOtGSiiZnpuqRdn2A-CsFrfucXzqDmx55BGdj7qo",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50598222/davion-mitchell-drains-buzzer-beater-close-first-quarter",
-          "title": "Davion Mitchell drains a buzzer-beater to close the first quarter",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtML8qftGNRHs3VKUtRi1NOtGSiiZnpuqRdn2A-CsFrfucXzqDmx55BGdj7qo"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/nba/miami-heat/article317819582.html",
-          "title": "From doubted to dynamic: Heat’s backcourt among league leaders. Big tests await",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0vSprc3NJ4S2Aqj9d7yaX9xaCW2lUd_agdwZqNpwuNNoWD89bDRT-zt5tgA"
-        },
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/heat-notes-antetokounmpo-mitchell-backcourt-depth-wing-rotation.html",
-          "title": "Heat Notes: Antetokounmpo, Mitchell, Backcourt, Wing Rotation",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaHHC-zN-_BOtDAya2AHhXTNAW9i6VfPaxXcYHJGilO67u4xdd4aY9bYq0sJA"
-        }
-      ]
-    },
-    {
       "query": "kyren williams",
       "approx_searches": "1000+",
       "published_at": "2026-11-26T00:30:00Z",
@@ -100,7 +275,7 @@
           "title": "Kyren Williams vs. Packers Week 12: Three Expectations for Rams RB",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvgzSpEnqmp8wboCJg7Qfa0veF6SokinHo235ZtXMpzNc4_0Tb9C55n4BfXrk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9GpYORGfJ_-0uv0FTHPxzihT7UMyHbwHw5KIzNQxQ_T8-oQSR5ZCDHVyry3U"
         },
         {
           "url": "https://www.rotoballer.com/player-news/kyren-williams-off-the-injury-report-vs-packers/2002858",
@@ -147,48 +322,13 @@
       ]
     },
     {
-      "query": "suns vs rockets",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T00:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
-        "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test",
-        "https://www.si.com/nba/rockets/onsi/rockets-suns-rivalry-renewed-as-durant-welcomes-brooks-back-to-houston-preview-starters-injuries-how-to-watch-01m8aht3fr7k"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xbgsn40Fldj_R7af9PZXrMbJaKGCK1JKz_cPZDnQUB0fmX5aDNaSLCQqS0I",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
-          "title": "Updated November 25th Injury Report and Preview for Houston Rockets vs. Phoenix Suns",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xbgsn40Fldj_R7af9PZXrMbJaKGCK1JKz_cPZDnQUB0fmX5aDNaSLCQqS0I"
-        },
-        {
-          "url": "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test",
-          "title": "Game Preview: Surging Suns look to stuff Rockets on Thanksgiving Eve",
-          "publisher": "Bright Side Of The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR78TvlsagBZlA-Ju6frpiPpKOcC3hL3PwOrugCwteylLlnqpk3yOpsG4aJ0OY"
-        },
-        {
-          "url": "https://www.si.com/nba/rockets/onsi/rockets-suns-rivalry-renewed-as-durant-welcomes-brooks-back-to-houston-preview-starters-injuries-how-to-watch-01m8aht3fr7k",
-          "title": "Rockets-Suns rivalry renewed as Durant welcomes Brooks back to Houston: Preview, Starters, Injuries, How to Watch",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFCw8JRzIjjdryKvHcO9B9yBQsL7kDB3X9JQOJnBEPIiRk2PuwSp3kLvwLTc"
-        }
-      ]
-    },
-    {
       "query": "angelina jolie",
       "approx_searches": "500+",
       "published_at": "2026-11-26T00:30:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html",
-        "https://www.rollingstone.com/tv-movies/tv-movie-news/brad-pitt-angelina-jolie-miraval-winery-war-settled-abuse-1235664703/",
-        "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052"
+        "https://www.cbc.ca/news/entertainment/pitt-jolie-miraval-lawsuits-allegations-9.7436552",
+        "https://people.com/brad-pitt-and-angelina-jolie-settle-winery-legal-battle-10-years-after-split-12280668"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPSJAJU2cAyndtPdfTxoGkMtfRPNRHzd18Et8Vp1_zOUXSM5RoynAFEHGFrE",
       "image_credit": "The New York Times",
@@ -201,158 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPSJAJU2cAyndtPdfTxoGkMtfRPNRHzd18Et8Vp1_zOUXSM5RoynAFEHGFrE"
         },
         {
-          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/brad-pitt-angelina-jolie-miraval-winery-war-settled-abuse-1235664703/",
-          "title": "Brad Pitt and Angelina Jolie Settle Bitter Winery War That Detailed Abuse Claims",
-          "publisher": "Rolling Stone",
+          "url": "https://www.cbc.ca/news/entertainment/pitt-jolie-miraval-lawsuits-allegations-9.7436552",
+          "title": "Brad Pitt, Angelina Jolie settle dispute over French estate Château Miraval",
+          "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3tQBv7iUfRXv-eUilBmZ_mio3_OobpSAZltz1qdnaFzOvCuvOI03NMRssyA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyu-tHGRHpHmDtQTcVSAqKYrD20ABx76Vn8yAz9YnSO3E5zONtcYFjmr9BHBM"
         },
         {
-          "url": "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052",
-          "title": "Brad Pitt and Angelina Jolie settle legal battle over French winery",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://people.com/brad-pitt-and-angelina-jolie-settle-winery-legal-battle-10-years-after-split-12280668",
+          "title": "Brad Pitt and Angelina Jolie Settle Bitter Winery Legal Battle in Shocking Move 10 Years After Split",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf8zc9ZOgjMxqYVn4ufqgCuyiJ6i4ZxVC50sxyACV_T725lH0GHzbSO79i0jY"
-        }
-      ]
-    },
-    {
-      "query": "andrew wiggins",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T00:30:00Z",
-      "related_news_urls": [
-        "https://www.sun-sentinel.com/2026/11/24/andrew-wiggins-embracing-heat-reserve-role-but-is-it-actually-a-sacrifice/",
-        "https://www.fantasypros.com/nba/news/621155/andrew-wiggins-puts-up-11-points-win-over-bucks.php",
-        "https://www.nba.com/watch/video/andrew-wiggins-rises-up-for-the-dunk-7"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsOH-eorjISdCfwjoiD8eniGoleDqDSjhcQmnN13JdeVh0btoo77P2rfq0Rxc",
-      "image_credit": "Sun Sentinel",
-      "news": [
-        {
-          "url": "https://www.sun-sentinel.com/2026/11/24/andrew-wiggins-embracing-heat-reserve-role-but-is-it-actually-a-sacrifice/",
-          "title": "Andrew Wiggins embracing Heat reserve role, but is it actually a sacrifice?",
-          "publisher": "Sun Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsOH-eorjISdCfwjoiD8eniGoleDqDSjhcQmnN13JdeVh0btoo77P2rfq0Rxc"
-        },
-        {
-          "url": "https://www.fantasypros.com/nba/news/621155/andrew-wiggins-puts-up-11-points-win-over-bucks.php",
-          "title": "Andrew Wiggins puts up 11 points in win over Bucks",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJcJHYdT6lX6IuXHu_dFuF8z9a7-8arH8CXsEMNt5Fl20lttZGoI3CuYENzs4"
-        },
-        {
-          "url": "https://www.nba.com/watch/video/andrew-wiggins-rises-up-for-the-dunk-7",
-          "title": "Andrew Wiggins rises up for the dunk",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrZVL1p6Ogu2DDER71Qb8gQeNhDxZI6PJJACjSUl1UTzDO2JEtCRgpupRscQ"
-        }
-      ]
-    },
-    {
-      "query": "tyler higbee",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T00:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/video/should-tyler-higbee-be-in-fantasy-lineups-against-green-bay-233338083.html",
-        "https://www.si.com/onsi/fantasy/start-em-sit-em/week-12-fantasy-football-start-em-sit-em-colby-parkinson-or-tyler-higbee",
-        "https://foxsports990.iheart.com/content/2026-11-24-chatarius-atwell-week-12-preview-vs-the-packers/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmJovgU-4pCks3GFDmaPiimL5sQpVl33HMQ4O4J2Z8PZGYtBTZZyu8NSehAKs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/video/should-tyler-higbee-be-in-fantasy-lineups-against-green-bay-233338083.html",
-          "title": "Should Tyler Higbee be in fantasy lineups against Green Bay?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmJovgU-4pCks3GFDmaPiimL5sQpVl33HMQ4O4J2Z8PZGYtBTZZyu8NSehAKs"
-        },
-        {
-          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/week-12-fantasy-football-start-em-sit-em-colby-parkinson-or-tyler-higbee",
-          "title": "Week 12 Fantasy Football Start 'Em, Sit 'Em: Colby Parkinson or Tyler Higbee?",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2PJGSZb5giaL2LtOyRJpfpddAm-qrmH3eCs3uG2_EMlPElksCsQ-ae41uekQ"
-        },
-        {
-          "url": "https://foxsports990.iheart.com/content/2026-11-24-chatarius-atwell-week-12-preview-vs-the-packers/",
-          "title": "Chatarius Atwell Week 12 Preview vs. the Packers",
-          "publisher": "Fox Sports 990",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvdQ9W9_58o0AZBB-Dmj0puNQ1sVT3dc7olgkFqnLuHktxgRBrJBOb_qE7SU"
-        }
-      ]
-    },
-    {
-      "query": "nick foles",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T00:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/sport/2026/nov/24/nick-foles-interview-eagles-super-bowl-faith-fatherhood-flow-state",
-        "https://www.nytimes.com/athletic/7811969/2026/11/25/thanksgiving-eve-nfl-netflix-black-friday-moneycall/",
-        "https://sports.yahoo.com/general/articles/u2-brings-album-buzz-packers-000041003.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSx5Du2ZujWHCqFWbncY5AQda0iQT6OU00iyR-bX8TjK5XfGkhe3PICpoHxKs",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/sport/2026/nov/24/nick-foles-interview-eagles-super-bowl-faith-fatherhood-flow-state",
-          "title": "'Something switched inside me': Nick Foles on his Super Bowl flow state and move behind the mic",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSx5Du2ZujWHCqFWbncY5AQda0iQT6OU00iyR-bX8TjK5XfGkhe3PICpoHxKs"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7811969/2026/11/25/thanksgiving-eve-nfl-netflix-black-friday-moneycall/",
-          "title": "‘Thanksgiving Eve’ is the latest and most obvious expansion by NFL: MoneyCall",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIqZcgUi9PybnFgouXPKMV0bFX01gh0lr83XOs2Z2rNW8L1f2NVgXXaPLnJR0"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/articles/u2-brings-album-buzz-packers-000041003.html",
-          "title": "U2 brings new album buzz to Packers-Rams Thanksgiving eve game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhRVNx3SCG7RHF3EbgBsXEckkrTT2O4rsFlcbrOial5iotaXgloaIiiiWF3g"
-        }
-      ]
-    },
-    {
-      "query": "dean wade",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T00:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/dean-wade-available-tonight-game-003855725.html",
-        "https://www.sportingnews.com/us/nba/philadelphia-76ers/news/sixers-veteran-wing-downgraded-ahead-magic-match/90c8f94d2e0c83d26a7e337b",
-        "https://www.si.com/nba/76ers/onsi/dean-wade-s-new-injury-could-be-a-wake-up-call-for-76ers-01m7qzapky2r"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uqIrko1CErtYr8U-BhSWdifI8t8W1I2OpRN7rKV159Q2lUhS3uzQ6uSev9E",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/dean-wade-available-tonight-game-003855725.html",
-          "title": "Dean Wade is AVAILABLE for tonight’s game against the …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uqIrko1CErtYr8U-BhSWdifI8t8W1I2OpRN7rKV159Q2lUhS3uzQ6uSev9E"
-        },
-        {
-          "url": "https://www.sportingnews.com/us/nba/philadelphia-76ers/news/sixers-veteran-wing-downgraded-ahead-magic-match/90c8f94d2e0c83d26a7e337b",
-          "title": "Sixers veteran wing downgraded ahead of Magic match",
-          "publisher": "Sporting News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaloCXUK8yd25XYNtj_GNNO3vfJ64GRHYD1Ty0JJdDbOL_bTTojBlNJjkaCRs"
-        },
-        {
-          "url": "https://www.si.com/nba/76ers/onsi/dean-wade-s-new-injury-could-be-a-wake-up-call-for-76ers-01m7qzapky2r",
-          "title": "Dean Wade's New Injury Could Be a Wake-Up Call for 76ers",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-reMvG2gVA7fvhMCnXT5T6Kb-dCVsS6aHcQPe3gSE1_6NFCVCmS_qCvn_u9g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtiVPiSZ9L_hJ6tiD_hEWg-Q9FEMKNm6Xx2uy4T3zftAHODXcVErCtAJQZim4"
         }
       ]
     }
