@@ -3,348 +3,314 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T03:01:21.491586Z",
+  "checked_at": "2026-11-26T03:31:05.139825Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cliff booth",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T02:40:00Z",
+      "query": "okc",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T03:10:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html",
-        "https://www.theatlantic.com/culture/2026/11/cliff-booth-once-upon-a-time-in-hollywood-sequel-review/689578/",
-        "https://www.theguardian.com/film/2026/nov/25/hollywood-nostalgia-further-mis-adventures-of-cliff-booth-quentin-tarantino"
+        "https://www.startribune.com/minnesota-timberwolves-oklahoma-city-thunder-score-today-lamelo-ball-stats-anthony-edwards-injury/601916813",
+        "https://sports.yahoo.com/nba/articles/watch-wolves-vs-thunder-free-233000472.html",
+        "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-Rnc4GCV7Zp-Tvw2t-NNHw5mn3DFzXTDo5ZwbN2OyusIvaX96Ez62TbcLA",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYq1mjaebDDyfVYOKuuT9fkU_8ta_9WYC1QsPNUUPvm-CE8yo7KemDDVwsSw",
+      "image_credit": "Star Tribune",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html",
-          "title": "‘The Further Mis-Adventures of Cliff Booth’ Review: Golden-Boy Fumes",
-          "publisher": "The New York Times",
+          "url": "https://www.startribune.com/minnesota-timberwolves-oklahoma-city-thunder-score-today-lamelo-ball-stats-anthony-edwards-injury/601916813",
+          "title": "Live: Wolves in tight battle against Thunder in first road game in ages",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-Rnc4GCV7Zp-Tvw2t-NNHw5mn3DFzXTDo5ZwbN2OyusIvaX96Ez62TbcLA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYq1mjaebDDyfVYOKuuT9fkU_8ta_9WYC1QsPNUUPvm-CE8yo7KemDDVwsSw"
         },
         {
-          "url": "https://www.theatlantic.com/culture/2026/11/cliff-booth-once-upon-a-time-in-hollywood-sequel-review/689578/",
-          "title": "A Bizarre Sequel to One of Tarantino’s Best Movies",
-          "publisher": "The Atlantic",
+          "url": "https://sports.yahoo.com/nba/articles/watch-wolves-vs-thunder-free-233000472.html",
+          "title": "How to Watch Wolves vs. Thunder for Free: TV Channels, Live Stream Options",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkD17gi9EVuOFMKk0x7y9CvA0TQwuNnIpwm9ejTQXLGHP7GX9YeCb349Uj1is"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS43H5LQzmWxC31E9P5ajBSD_70iSiwsvacIhoHAMwppQz52Q_bwXCmsfi03po"
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/25/hollywood-nostalgia-further-mis-adventures-of-cliff-booth-quentin-tarantino",
-          "title": "Reeling in the years: how Hollywood fell for its own vanishing glories",
-          "publisher": "The Guardian",
+          "url": "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander",
+          "title": "Game Preview #19: Wolves at Thunder Thread",
+          "publisher": "Canis Hoopus",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZygIiPCV6tZYuAyYE8A-gUuRxU2sUABGgsWGndrPVSjWoGJO_42PiH67uCxI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRraPKqtTvKlugW-OJDtmcc-m800MsLjo7YPuUAzFEM_Y_EHI4wEqsNJFtsNyE"
         }
       ]
     },
     {
-      "query": "nhl standings",
+      "query": "lamelo ball",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T02:40:00Z",
+      "published_at": "2026-11-26T03:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
-        "https://www.nytimes.com/athletic/7809951/2026/11/25/nhl-concern-o-meter-canadiens-maple-leafs/",
-        "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026"
+        "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
+        "https://www.cbssports.com/watch/nba/video/timberwolves-and-lamelo-impress-despite-anthony-edwards-injury",
+        "https://sports.yahoo.com/articles/yeah-said-whole-other-family-100055387.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0UBSf1wWSfLQi1kGrIhpYkf0O6auDbWDdPlxnXpUivn3QDxr0ljrw5UZFE68",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
-          "title": "NHL Thanksgiving Panic Index: Which teams should be most worried?",
+          "url": "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
+          "title": "LaMelo Ball and the 'collective' carrying Minnesota without Anthony Edwards",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0UBSf1wWSfLQi1kGrIhpYkf0O6auDbWDdPlxnXpUivn3QDxr0ljrw5UZFE68"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7809951/2026/11/25/nhl-concern-o-meter-canadiens-maple-leafs/",
-          "title": "Slafkovský’s slow start, Maple Leafs’ woes and more: A Thanksgiving concern-o-meter - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgrEhPcaT3LEz7L6tTdNOGJOeHE6Xi1uNnq_2a4qMHz6ZCvZlzT8rJFMeOeB0"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026",
-          "title": "NHL Power Rankings for Every Team at Thanksgiving 2026",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSTmz-gWbPgkBYypp_5vcM0U3EpNkljvIsfLFq6zS9UD83ijeTjugIOY7zNWQ"
-        }
-      ]
-    },
-    {
-      "query": "james wiseman",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T02:40:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/watch/video/james-wiseman-rises-to-finish-the-alley-oop-2",
-        "https://www.cbssports.com/fantasy/basketball/news/knicks-james-wiseman-returns-to-nba-team/",
-        "https://www.espn.com/video/clip/_/id/50556611/james-wiseman-elevates-slam-dunk"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSt4eDBtfwcPO33m3y5u4Xjb7RcrnPoGZWWbSQ6zOqbs9Hjzk-46B10FnoZo",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/watch/video/james-wiseman-rises-to-finish-the-alley-oop-2",
-          "title": "James Wiseman rises to finish the alley-oop",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSt4eDBtfwcPO33m3y5u4Xjb7RcrnPoGZWWbSQ6zOqbs9Hjzk-46B10FnoZo"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/knicks-james-wiseman-returns-to-nba-team/",
-          "title": "Knicks' James Wiseman: Returns to NBA team",
+          "url": "https://www.cbssports.com/watch/nba/video/timberwolves-and-lamelo-impress-despite-anthony-edwards-injury",
+          "title": "Timberwolves and LaMelo Impress Despite Anthony Edwards' Injury Stream of National Basketball Association",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWO4rastoo2XiwDXkPtRTRBD--SOkEXAfM34FqeQKag4eTC3zJOXS2kMN4xCA"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50556611/james-wiseman-elevates-slam-dunk",
-          "title": "James Wiseman elevates for slam dunk",
+          "url": "https://sports.yahoo.com/articles/yeah-said-whole-other-family-100055387.html",
+          "title": "“Yeah, like you said, it's like a whole other family, …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8"
+        }
+      ]
+    },
+    {
+      "query": "greta gerwig",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:00:00Z",
+      "related_news_urls": [
+        "https://lawliberty.org/a-movie-to-save-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8EeSLVdjkZAXUP5Jt8QrnW02guhBVl6A36-MkJvB6BcOjBiTdKFURb0nVfr4",
+      "image_credit": "Law & Liberty",
+      "news": [
+        {
+          "url": "https://lawliberty.org/a-movie-to-save-thanksgiving/",
+          "title": "A Movie to Save Thanksgiving – Titus Techera",
+          "publisher": "Law & Liberty",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8EeSLVdjkZAXUP5Jt8QrnW02guhBVl6A36-MkJvB6BcOjBiTdKFURb0nVfr4"
+        }
+      ]
+    },
+    {
+      "query": "lamelo ball injury",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/lamelo-ball-injury-timberwolves-guard-030538566.html",
+        "https://bringmethenews.com/minnesota-sports/lamelo-ball-suffers-ugly-ankle-injury-late-in-wolves-nba-cup-win-over-thunder",
+        "https://www.sportsnet.ca/nba/article/timberwolves-lamelo-ball-helped-off-court-after-rolling-ankle-vs-thunder/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_kGUw0V0D6yzPuFDVMZ6AEW8dFDOr0qNDuv1EGTvENyQhaGRSOVY0zNFDew",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/lamelo-ball-injury-timberwolves-guard-030538566.html",
+          "title": "LaMelo Ball injury update: Timberwolves guard limps off vs Thunder in NBA Cup",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_kGUw0V0D6yzPuFDVMZ6AEW8dFDOr0qNDuv1EGTvENyQhaGRSOVY0zNFDew"
+        },
+        {
+          "url": "https://bringmethenews.com/minnesota-sports/lamelo-ball-suffers-ugly-ankle-injury-late-in-wolves-nba-cup-win-over-thunder",
+          "title": "LaMelo Ball suffers ugly ankle injury late in Wolves’ NBA Cup win over Thunder",
+          "publisher": "Bring Me The News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUyahF1ITgAVDaD7B2BJybSdhuxv47TYabwMy7qYBz3JeCvyHkOnmUEPE2o_Y"
+        },
+        {
+          "url": "https://www.sportsnet.ca/nba/article/timberwolves-lamelo-ball-helped-off-court-after-rolling-ankle-vs-thunder/",
+          "title": "Timberwolves' LaMelo Ball helped off court after rolling ankle vs. Thunder",
+          "publisher": "Sportsnet.ca",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiuSZ7kK7ITrpgwusdkxg8lJadtrXuj9b7VsHwkodrW309C-RVM3mwrZkC6hc"
+        }
+      ]
+    },
+    {
+      "query": "nhl schedule",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:00:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-25-2026",
+        "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+        "https://www.dailyfaceoff.com/news/nhl-best-bets-predictions-picks-odds-for-wednesday-november-25"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4ojX-DQLssJK566ZxolgWDPfMZMnTTNtCXhLI5O64yRwooOpUSoKVjnkF8d4",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-25-2026",
+          "title": "NHL On Tap: 14-game feast hits table leading into Thanksgiving",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4ojX-DQLssJK566ZxolgWDPfMZMnTTNtCXhLI5O64yRwooOpUSoKVjnkF8d4"
+        },
+        {
+          "url": "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
+          "title": "NHL Tonight: What to watch in Wednesday's massive 14-game schedule",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgFqnE3efIzz0wPnQSTYxzcua2pNelymNKbIoEQc--1kzxZkl_oWPbuOiglpw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRhxCPFzyf4X3HcFUS5PDZyinzTzNm_NRvoEydxW5yv6k7NRWbr82U9LDy16s"
+        },
+        {
+          "url": "https://www.dailyfaceoff.com/news/nhl-best-bets-predictions-picks-odds-for-wednesday-november-25",
+          "title": "NHL Best Bets, Predictions, Picks, Odds for Wednesday, November 25",
+          "publisher": "Daily Faceoff",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrZrezyo1RR_Te1duMWCN0Fv3IHZlB9IdYoyaMeUzS3U8X55ZcWwnHZep2rT8"
         }
       ]
     },
     {
-      "query": "zach edey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T02:40:00Z",
-      "related_news_urls": [
-        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/25/zach-edey-injury-update-memphis-grizzlies-basketball/92966990007/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-edey-ankle-ruled-out-thursday-vs-warriors",
-        "https://bsinews.id/en/zach-edey-grizzlies-timberwolves-return"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TBkZOhagk0OUK0452gdc4vn8KO3Y3R2LnRT2jfcfDJ5yYseXPulE7FSzqiQ",
-      "image_credit": "The Commercial Appeal",
-      "news": [
-        {
-          "url": "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/25/zach-edey-injury-update-memphis-grizzlies-basketball/92966990007/",
-          "title": "Grizzlies' Zach Edey leaves NBA Cup game vs Clippers with injury",
-          "publisher": "The Commercial Appeal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TBkZOhagk0OUK0452gdc4vn8KO3Y3R2LnRT2jfcfDJ5yYseXPulE7FSzqiQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-edey-ankle-ruled-out-thursday-vs-warriors",
-          "title": "Zach Edey (ankle) ruled out Thursday vs. Warriors",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMpr0mdUtUte6MTl3v8Wkte9Of549V3_odSJl9jE56ftiANX3H01XQrO_O8UQ"
-        },
-        {
-          "url": "https://bsinews.id/en/zach-edey-grizzlies-timberwolves-return",
-          "title": "Zach Edey Returns for Grizzlies Against Timberwolves",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8XtvV12Iux9uibWQRzKdtWE41_yW01wxG2UUHUmfRWMaeF0TNcqLAXp5Ees"
-        }
-      ]
-    },
-    {
-      "query": "jaden mcdaniels",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T02:30:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7808382/2026/11/24/julius-randle-minnesota-timberwolves-return-nets/",
-        "https://www.canishoopus.com/timberwolves-game-previews/72358/game-recap-minnesota-timberwolves-brooklyn-nets-julius-randle",
-        "https://www.nba.com/news/julius-randle-nets-return-minnesota"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCega-7Dsis6lQ8QYUbzc9hivBvcL1dz7HA9rNN5gNg-ZSuLXJLcXWm8tJ_I",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7808382/2026/11/24/julius-randle-minnesota-timberwolves-return-nets/",
-          "title": "Julius Randle returns to Minnesota to find a new Timberwolves team on fire - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCega-7Dsis6lQ8QYUbzc9hivBvcL1dz7HA9rNN5gNg-ZSuLXJLcXWm8tJ_I"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-game-previews/72358/game-recap-minnesota-timberwolves-brooklyn-nets-julius-randle",
-          "title": "Game Recap: Wolves 142, Nets 116: Defense Optional, Vibes Exceptional",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1WcIVij4U9YfVyAgnlFqRLA_f4rBfUfMztmsoPu211aQxULegtMvIsuo1VYU"
-        },
-        {
-          "url": "https://www.nba.com/news/julius-randle-nets-return-minnesota",
-          "title": "Julius Randle returns to Minnesota as veteran leader for Nets",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSSuzlMc-vsVR-rOzfMJNj9Z3rBrXy_cpgoNLBarMRGjdisZ7Jlx3mtGpoes"
-        }
-      ]
-    },
-    {
-      "query": "jose alvarado",
+      "query": "oj simpson",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T02:30:00Z",
+      "published_at": "2026-11-26T03:00:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "knicks standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T03:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7809451/2026/11/25/knicks-jose-alvarado-jalen-brunson-defensive-pressure/",
-        "https://www.newsday.com/sports/basketball/knicks/knicks-jose-alvarado-tyler-kolek-r9u7jdff",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/it-obviously-made-it-10-times-better-that-i-was-a/92956928007/"
+        "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/lead-assistant-chris-jent-is-back-on-the-knicks/92965813007/",
+        "https://basketnews.com/news-260244-knicks-coach-returns-after-long-concerning-absence.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP4sb1mAeToouSGr5q0RGWZKT8lxTbq7CJGhkK22mlB_qjEIWHIEbWpa1PO8",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ03KpzSQmwNgp_7VJ0Jih23AdbMMmpzZ1u0xRSicK2_LUb_qJ1FfjYg6sDJk",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7809451/2026/11/25/knicks-jose-alvarado-jalen-brunson-defensive-pressure/",
-          "title": "How Knicks’ Jose Alvarado has become Jalen Brunson’s secret weapon",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
+          "title": "Knicks assistant coach Chris Jent returns to team",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP4sb1mAeToouSGr5q0RGWZKT8lxTbq7CJGhkK22mlB_qjEIWHIEbWpa1PO8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ03KpzSQmwNgp_7VJ0Jih23AdbMMmpzZ1u0xRSicK2_LUb_qJ1FfjYg6sDJk"
         },
         {
-          "url": "https://www.newsday.com/sports/basketball/knicks/knicks-jose-alvarado-tyler-kolek-r9u7jdff",
-          "title": "Mike Brown pits Jose Alvarado against Tyler Kolek in friendly Knicks competition",
-          "publisher": "Newsday",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-3T0Bu2N20E6B59OBt8XUdP0HqQ_GwIEUmrSuS8UL_3iNAFR5hT7BvvkBBow"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/it-obviously-made-it-10-times-better-that-i-was-a/92956928007/",
-          "title": "“It obviously made it 10 times better that I was a …",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/lead-assistant-chris-jent-is-back-on-the-knicks/92965813007/",
+          "title": "Lead assistant Chris Jent is back on the Knicks …",
           "publisher": "HoopsHype",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRT3pYEL9Z9Sc7S7fe5FmNUOe314QpEvIgGEWK63IwlNfOJfLuaVQxWoSxdpk"
+        },
+        {
+          "url": "https://basketnews.com/news-260244-knicks-coach-returns-after-long-concerning-absence.html",
+          "title": "Knicks coach returns after long concerning absence",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT8GCVhCOGV4GKKynovDZHOblN4TgV7jWRDfunLfPz5hwD0SHrm5c8iQoVqfg"
         }
       ]
     },
     {
-      "query": "tiger woods",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T02:30:00Z",
+      "query": "wolves",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T03:00:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
-        "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/"
+        "https://sports.yahoo.com/nba/article/t-wolves-donte-divincenzo-cleared-for-basketball-activity-7-months-after-rupturing-his-achilles-174833748.html",
+        "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
+        "https://timberwolves.com/news/donte-divincenzo-injury-update-3"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM96h2qtXYtsbNBwzybLVGFOZrVyb_uZ7iMJMIulwO2lFewhoisZW9rn19uCw",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2Y7UYrv7ADnPqauYsm1V9Af7hfZGgVhQ2bMCPTKlPqtTjHr4nAyv-ZFUON4",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
-          "title": "Tiger Woods declawed in courtroom battle over Sun Day Red company logo",
-          "publisher": "Fox News",
+          "url": "https://sports.yahoo.com/nba/article/t-wolves-donte-divincenzo-cleared-for-basketball-activity-7-months-after-rupturing-his-achilles-174833748.html",
+          "title": "T-Wolves' Donte DiVincenzo cleared for basketball activity, 7 months after rupturing his Achilles",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM96h2qtXYtsbNBwzybLVGFOZrVyb_uZ7iMJMIulwO2lFewhoisZW9rn19uCw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2Y7UYrv7ADnPqauYsm1V9Af7hfZGgVhQ2bMCPTKlPqtTjHr4nAyv-ZFUON4"
         },
         {
-          "url": "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/",
-          "title": "Tiger Woods dealt another blow in trademark lawsuit for apparel company",
-          "publisher": "New York Post",
+          "url": "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
+          "title": "Donte DiVincenzo eyes January return from torn Achilles after being cleared to practice: Sources",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uUF4VkUP_Pj_52ppCem3KprkNmrY_R0nPI135i7uYz66uKh3efKIrOU9g2A"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPagWWVnmr4FL23CdaEkfAaDwQPrvJ6XM81CW13dEEya1gC52Fosx4k2wL5JE"
+        },
+        {
+          "url": "https://timberwolves.com/news/donte-divincenzo-injury-update-3",
+          "title": "Donte DiVincenzo Injury Update | Minnesota Timberwolves",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3HuV7fT6tT4KWziyrsTE3VoW3jewoQaKqxhS_mPzzfv3OPPoQVzQOpi2zosE"
         }
       ]
     },
     {
-      "query": "superbowl 2027",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T02:30:00Z",
+      "query": "bob iger",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T03:00:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-        "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
-        "https://variety.com/2026/film/news/super-bowl-jay-z-halftime-show-imax-theaters-1236955971/"
+        "https://www.nytimes.com/2026/11/25/business/media/bob-iger-disney-robbie-whelan.html",
+        "https://www.wsj.com/business/media/disney-iger-perlmutter-house-of-mouse-robbie-whelan-book-59f658f9",
+        "https://www.thewrap.com/culture-lifestyle/culture/bob-iger-had-extramarital-affair-got-employee-pregnant-tell-all/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HOZJhikcffYIsD4qmi_jpHuGejhzhcBemgfNqSUcBQbXnwUR2S2NFROzI2Y",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
-          "publisher": "CNBC",
+          "url": "https://www.nytimes.com/2026/11/25/business/media/bob-iger-disney-robbie-whelan.html",
+          "title": "As Bob Iger Exits Disney for Good, an Unwelcome Biography Arrives",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HOZJhikcffYIsD4qmi_jpHuGejhzhcBemgfNqSUcBQbXnwUR2S2NFROzI2Y"
         },
         {
-          "url": "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
-          "title": "Disney, ESPN and NFL take Super Bowl to IMAX theaters",
-          "publisher": "Reuters",
+          "url": "https://www.wsj.com/business/media/disney-iger-perlmutter-house-of-mouse-robbie-whelan-book-59f658f9",
+          "title": "The Friendship Breakup That Led to Bob Iger’s Biggest Boardroom Fight",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA1qcH_8IyZQn-GiL_ixaHBCQGgOxWh92BSf5_NIhiublS37aFuW8S2SXUHoU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkONAYfhBwRVWR-dqrMrRMYYav1WyYPiX8feboOTAftWYLYrXEb8QbCVpyp6E"
         },
         {
-          "url": "https://variety.com/2026/film/news/super-bowl-jay-z-halftime-show-imax-theaters-1236955971/",
-          "title": "Super Bowl 2027 and Jay-Z Halftime Show to Screen in Imax Theaters",
-          "publisher": "Variety",
+          "url": "https://www.thewrap.com/culture-lifestyle/culture/bob-iger-had-extramarital-affair-got-employee-pregnant-tell-all/",
+          "title": "Bob Iger Had Extramarital Affair and Got Employee Pregnant, Tell-All Says",
+          "publisher": "TheWrap",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_amwpzUcYkbptLyQ49ZTSWIge-Az_T4pxY6CH7fCWLjsYgQeXu_SlYDBzGB0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2jk-N0LmVOru3W_N636ZbTru6TY38DAtUH2cB1dnb3AaOJQPwCJ5_8rhEw4"
         }
       ]
     },
     {
-      "query": "joan smalls",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T02:30:00Z",
+      "query": "bono",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-26T02:50:00Z",
       "related_news_urls": [
-        "https://people.com/joan-smalls-confirms-friend-breakup-candice-swanepoel-amid-tom-brady-romance-12280137",
-        "https://www.eonline.com/news/1438416/joan-smalls-candice-swanepoel-feud-began-over-tom-brady",
-        "https://www.yahoo.com/entertainment/celebrity/articles/joan-smalls-claims-she-planned-004203787.html"
+        "https://es-us.noticias.yahoo.com/gobierno-per%C3%BA-prev%C3%A9-entregar-bonos-180345358.html",
+        "https://www.infobae.com/video/actualidad/viceministro-jesus-barrientos-detalla-entrega-de-bono-a-pescadores-artesanales-ante-el-nino/iuytjJZU/",
+        "https://elperuano.pe/noticia/309726-ministro-requejo-consolida-avances-de-produce-para-reactivar-la-pesca-y-las-mype-frente-a-el-nino"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbt7uG25VuThwmDKvYQvd99nLbwiaxRUgYp8UM1y3J22zE7VRIB7IiwFOMN4",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXsm7Y6w215BDH376Z8Ro0Iqti_6Ic3-KvDk25kbqFA6ZiEGyOIcJ2F9PZW9M",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://people.com/joan-smalls-confirms-friend-breakup-candice-swanepoel-amid-tom-brady-romance-12280137",
-          "title": "Joan Smalls Confirms Friendship Breakup with Candice Swanepoel amid Tom Brady Romance",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbt7uG25VuThwmDKvYQvd99nLbwiaxRUgYp8UM1y3J22zE7VRIB7IiwFOMN4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438416/joan-smalls-candice-swanepoel-feud-began-over-tom-brady",
-          "title": "Joan Smalls Confirms Tom Brady Was \"the Catalyst\" for Candice Swanepoel Fallout",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGRP-3pSw2tktuvoCX4oGetSjkNXeJPFmNRrET5pCOmhpYNWBQGjf3DB5c_I"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/joan-smalls-claims-she-planned-004203787.html",
-          "title": "Joan Smalls Claims She Planned to Buy Vacation Home With Candice Swanepoel Before Tom Brady ‘Betrayal’",
+          "url": "https://es-us.noticias.yahoo.com/gobierno-per%C3%BA-prev%C3%A9-entregar-bonos-180345358.html",
+          "title": "El Gobierno de Perú prevé entregar bonos de setenta dólares a damnificados por El Niño",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfEZcNPHdLgpwwUP3fRJEb77RaL1NxYNWsMgAHMXhSheMUGBsK_mkgBr2GME"
-        }
-      ]
-    },
-    {
-      "query": "colin farrell",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T02:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/25/the-slightest-touch-review-warm-story-of-colin-farrell-and-emma-fogartys-odd-couple-friendship",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/25/colin-farrell-son-james-hbo-max-documentary-the-slightest-touch/92729920007/",
-        "https://people.com/colin-farrell-reflects-on-his-sobriety-journey-and-how-his-son-changed-his-life-i-made-james-my-higher-power-12263907"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgJneI6nwjdIc4wZ7jGdYHEZrIdM0MpTZdV4LOjJnXvhwGVZCrE1v-ihz9Vj0",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/25/the-slightest-touch-review-warm-story-of-colin-farrell-and-emma-fogartys-odd-couple-friendship",
-          "title": "The Slightest Touch review – running marathons in Colin Farrell and Emma Fogarty’s odd-couple friendship",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgJneI6nwjdIc4wZ7jGdYHEZrIdM0MpTZdV4LOjJnXvhwGVZCrE1v-ihz9Vj0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXsm7Y6w215BDH376Z8Ro0Iqti_6Ic3-KvDk25kbqFA6ZiEGyOIcJ2F9PZW9M"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/25/colin-farrell-son-james-hbo-max-documentary-the-slightest-touch/92729920007/",
-          "title": "Colin Farrell gives rare look into life with son James, credits him for sobriety",
-          "publisher": "USA Today",
+          "url": "https://www.infobae.com/video/actualidad/viceministro-jesus-barrientos-detalla-entrega-de-bono-a-pescadores-artesanales-ante-el-nino/iuytjJZU/",
+          "title": "Viceministro Jesús Barrientos detalla entrega de bono a pescadores artesanales ante El Niño",
+          "publisher": "Infobae",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvWfTovp7X_ncvoXiB-BLcEYzeLQnSAvhZj6hzUnnLE1eCKp62GnwAna5vz2I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XPGfv5qvyGPTyr_YyTmWDCmhQTJaKrqWCBxcxyx4Dqsd0RncM3HD0nPvt08"
         },
         {
-          "url": "https://people.com/colin-farrell-reflects-on-his-sobriety-journey-and-how-his-son-changed-his-life-i-made-james-my-higher-power-12263907",
-          "title": "Colin Farrell Reflects on His Sobriety Journey and How His Son Changed His Life: ‘I Made James My Higher Power’",
-          "publisher": "People.com",
+          "url": "https://elperuano.pe/noticia/309726-ministro-requejo-consolida-avances-de-produce-para-reactivar-la-pesca-y-las-mype-frente-a-el-nino",
+          "title": "Ministro Requejo consolida avances de Produce para reactivar la pesca y las mype frente a El Niño",
+          "publisher": "El Peruano",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3jjhBhEY9Zf96lAy8etwTPjG9CdvfGMfRecI6r4O5LQkoku84X3sGKnfQWR4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5eQxVmlBbN8Wna69ui-OyiYcgYpmVvgUQGh04jIXNcsWhlTuOVYPcRur09k"
         }
       ]
     }
