@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T04:01:31.382065Z",
+  "checked_at": "2026-11-26T04:31:06.626960Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "deni avdija",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T04:10:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/game-recap-trail-blazers-128-76ers-111-nov-23",
+        "https://www.libertyballers.com/76ers-scores-results/102632/sixers-bell-ringer-portland-trail-blazers-nba-lebron-james-jaylen-brown-tyrese-maxey",
+        "https://www.inquirer.com/sixers/sixers-joel-embiid-backup-center-blazers-20261124.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRy_2lO9cDV9Tou8v9TTMxaX0FXkx24nDiqssmATabrU95kNB996q7g_mxM2Y0",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-128-76ers-111-nov-23",
+          "title": "Game Recap: Trail Blazers 128, 76ers 111 (Nov. 23)",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRy_2lO9cDV9Tou8v9TTMxaX0FXkx24nDiqssmATabrU95kNB996q7g_mxM2Y0"
+        },
+        {
+          "url": "https://www.libertyballers.com/76ers-scores-results/102632/sixers-bell-ringer-portland-trail-blazers-nba-lebron-james-jaylen-brown-tyrese-maxey",
+          "title": "Sixers Bell Ringer: Sixers undone by Portland’s blazing hot shooting",
+          "publisher": "Liberty Ballers",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgHT74sK_pvsO2o1J0G23Oe-lQ-3n-aESHDBSM8v-X1fDjazAjD7b95-9tQUs"
+        },
+        {
+          "url": "https://www.inquirer.com/sixers/sixers-joel-embiid-backup-center-blazers-20261124.html",
+          "title": "Sixers have a backup center problem. They need to solve it at whatever the cost. | David Murphy",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeV_5ExaZ8Y-VQ9B0qwHS9vkrzXdsMv3S7Fri-izn6tdO627pkUljVAtO56EE"
+        }
+      ]
+    },
+    {
+      "query": "jennifer garner",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T04:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/jennifer-garner-transforms-home-daughter-181653641.html",
+        "https://www.realtor.com/news/celebrity-real-estate/jennifer-garner-christmas-thanksgiving-decorations-los-angeles-home/",
+        "https://pagesix.com/2026/11/23/photos/alias-co-stars-jennifer-garner-victor-garber-share-a-sweet-reunion-and-more-star-snaps/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgzRBgHT2WjhZaJjUneImL2A6bAL5OXeFyG_7qJ3t3Nuy_7tNe03ntglgD7o",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jennifer-garner-transforms-home-daughter-181653641.html",
+          "title": "Jennifer Garner transforms home for daughter Violet's return in photo of holiday traditions",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgzRBgHT2WjhZaJjUneImL2A6bAL5OXeFyG_7qJ3t3Nuy_7tNe03ntglgD7o"
+        },
+        {
+          "url": "https://www.realtor.com/news/celebrity-real-estate/jennifer-garner-christmas-thanksgiving-decorations-los-angeles-home/",
+          "title": "Jennifer Garner Lights Up Her L.A. Home for Christmas Before the Thanksgiving Turkey Hits the Table",
+          "publisher": "Realtor.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4FSBKLdXcEBb-koClYKrvNf798neUUP8DamSBtolFf9M0DB5NAh-Rmiy62H0"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/23/photos/alias-co-stars-jennifer-garner-victor-garber-share-a-sweet-reunion-and-more-star-snaps/",
+          "title": "‘Alias’ co-stars Jennifer Garner, Victor Garber share a sweet reunion and more star snaps",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8INCUO0NtbLr9wrSdGPNcX3FgQUqWuR_5b0fAMnvDTp33HX10DONztrU5FEo"
+        }
+      ]
+    },
+    {
+      "query": "sacramento kings vs golden state warriors match player stats",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T04:00:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
+        "https://www.nba.com/game/min-vs-okc-0022600058/box-score",
+        "https://www.nba.com/game/lac-vs-mem-0022600059/box-score"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYYDQmT43GsgeeiLoQC4CsNu19G0cMrS9EOQH9gBOKa7mJ95384E_ueVl6AsE",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
+          "title": "Miami Heat vs Philadelphia 76ers Nov 25, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYYDQmT43GsgeeiLoQC4CsNu19G0cMrS9EOQH9gBOKa7mJ95384E_ueVl6AsE"
+        },
+        {
+          "url": "https://www.nba.com/game/min-vs-okc-0022600058/box-score",
+          "title": "Minnesota Timberwolves vs Oklahoma City Thunder Nov 25, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh9GipYnDe8Z9SsgBdTFA-nlo_9V5ZxqqZMirGm1MmblHAnCD3aipksyeASUg"
+        },
+        {
+          "url": "https://www.nba.com/game/lac-vs-mem-0022600059/box-score",
+          "title": "LA Clippers vs Memphis Grizzlies Nov 25, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXHJIn58O5fBgDGS6FEwgu9ARoz2Oh7wmSnR5BQ-QGj3gYnrc5vu-mryAuU"
+        }
+      ]
+    },
+    {
+      "query": "bo melton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:00:00Z",
+      "related_news_urls": [
+        "https://www.fantasyguru.com/cowboys-wr-jonathan-mingo-ruled-out-for-week-12",
+        "https://www.rotowire.com/football/headlines/bo-melton-injury-questionable-for-week-12-649598",
+        "https://www.rotowire.com/football/headlines/bo-melton-injury-limited-monday-649419"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo",
+      "image_credit": "Fantasy Guru",
+      "news": [
+        {
+          "url": "https://www.fantasyguru.com/cowboys-wr-jonathan-mingo-ruled-out-for-week-12",
+          "title": "Cowboys | WR Jonathan Mingo ruled out for Week 12",
+          "publisher": "Fantasy Guru",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/bo-melton-injury-questionable-for-week-12-649598",
+          "title": "Bo Melton Injury: Questionable for Week 12",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLsQ7WBFl7q7ldU_46_zkoymC6qKqPHqoODz5McnjCx129cPgq6bYD2vy1lLo"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/bo-melton-injury-limited-monday-649419",
+          "title": "Bo Melton Injury: Limited Monday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLsQ7WBFl7q7ldU_46_zkoymC6qKqPHqoODz5McnjCx129cPgq6bYD2vy1lLo"
+        }
+      ]
+    },
+    {
+      "query": "keegan murray",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:00:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/kings-start-acuff-sharp-hunter-murray-sabonis",
+        "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-earning-first-career-start-wednesday/",
+        "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-shooting-woes-continue-saturday/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/kings-start-acuff-sharp-hunter-murray-sabonis",
+          "title": "Kings start Acuff, Sharp, Hunter, Murray, Sabonis",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-earning-first-career-start-wednesday/",
+          "title": "Kings' Emanuel Sharp: Earning first career start Wednesday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-shooting-woes-continue-saturday/",
+          "title": "Kings' Emanuel Sharp: Shooting woes continue Saturday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
+        }
+      ]
+    },
+    {
+      "query": "quentin lake",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T04:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/rams-captain-quentin-lake-reveals-221643103.html",
+        "https://nypost.com/2026/11/25/sports/rams-quentin-lake-dream-job-travel-influencer/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rams-extend-lead-to-6-0-after-tucker-kraft-fumble"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAHYi8EnteeOnXcjdNMzVvJLqVEywjoMVrkby0siUwbUpJoAmUCDlBf0PvTVA",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/rams-captain-quentin-lake-reveals-221643103.html",
+          "title": "Rams captain Quentin Lake reveals dream job",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAHYi8EnteeOnXcjdNMzVvJLqVEywjoMVrkby0siUwbUpJoAmUCDlBf0PvTVA"
+        },
+        {
+          "url": "https://nypost.com/2026/11/25/sports/rams-quentin-lake-dream-job-travel-influencer/",
+          "title": "Exclusive | Rams captain Quentin Lake reveals dream job as travel influencer",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1z8rdV1ex-RK4G-MWv_AYM7YNDzjXiF31vfUvXg-NusenDq1UTWRpbHJMtMY"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rams-extend-lead-to-6-0-after-tucker-kraft-fumble",
+          "title": "Rams extend lead to 6-0 after Tucker Kraft fumble",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR95Yl8pMPgxJu1PqWPzoepODisuAQOdmYk0IH5iUbjsvUKk4N_hU7tYZ5fg40"
+        }
+      ]
+    },
+    {
+      "query": "john madden",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T03:50:00Z",
+      "related_news_urls": [
+        "https://defector.com/madden-makes-one-of-the-nfls-biggest-characters-feel-silly-and-small",
+        "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
+        "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk0fXKrsrtyPekF06X-7ABHmLDUUsInAlyVYlmwBEplDLnXYVN7K2iElx9ctw",
+      "image_credit": "Defector",
+      "news": [
+        {
+          "url": "https://defector.com/madden-makes-one-of-the-nfls-biggest-characters-feel-silly-and-small",
+          "title": "‘Madden’ Makes One Of The NFL’s Biggest Characters Feel Silly And Small",
+          "publisher": "Defector",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk0fXKrsrtyPekF06X-7ABHmLDUUsInAlyVYlmwBEplDLnXYVN7K2iElx9ctw"
+        },
+        {
+          "url": "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
+          "title": "‘Madden’ is a mess. Nicolas Cage makes it impossible to look away",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz0O0HGjHiH8qD-4ygDRoWDsF4g1_hVK5qZjzZUSFpSBKyiKWHZV72cvfGjj8"
+        },
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html",
+          "title": "Madden: Christian Bale and Nicolas Cage have quietly made the worst film of 2026",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNN5b9ceOF-BcSvEFKJoJcyIOHWcmsghYaiy7IEQgTalhaFc5UeRE2WzdAB-I"
+        }
+      ]
+    },
+    {
+      "query": "de'anthony melton",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:40:00Z",
+      "related_news_urls": [
+        "https://bluemanhoop.com/de-anthony-melton-playing-way-dangerously-close-trade-deja-vu",
+        "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
+        "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8khI0smh1BcAW289PUgOjBhPoFf6s419570X6jN_VWsBAG7XVL2GlKsGHQhI",
+      "image_credit": "Blue Man Hoop",
+      "news": [
+        {
+          "url": "https://bluemanhoop.com/de-anthony-melton-playing-way-dangerously-close-trade-deja-vu",
+          "title": "De’Anthony Melton is playing his way dangerously close to trade déjà vu",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8khI0smh1BcAW289PUgOjBhPoFf6s419570X6jN_VWsBAG7XVL2GlKsGHQhI"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
+          "title": "Warriors' De'Anthony Melton: Makes impact despite shooting woes",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
+        },
+        {
+          "url": "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/",
+          "title": "De'Anthony Melton Records 7 Assists in Warriors' Win Over Celtics",
+          "publisher": "knup.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
+        }
+      ]
+    },
     {
       "query": "damian lillard",
       "approx_searches": "1000+",
@@ -13,7 +293,7 @@
       "related_news_urls": [
         "https://www.nba.com/news/trail-blazers-damian-lillard-perfect-pairing",
         "https://sports.yahoo.com/nba/article/how-damian-lillard-has-boosted-trail-blazers-in-promising-return-from-achilles-injury-144115976.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/22/damian-lillard-reveals-focus-on-weight-loss-and-conditioning-during-injury-recovery/92913702007/"
+        "https://www.blazersedge.com/trail-blazers-analysis/118680/portland-trail-blazers-damian-lillard-nba-analysis-deni-avdija-offensive-leap"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_tKECfQTRbBJR9IZgvcEYOEE1ngmd8belJCpXegdOkgd1sdwzOncRbqPwQAY",
       "image_credit": "NBA.com",
@@ -33,326 +313,46 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF8_UEQNXEUQp3mzPXJa7sYsIX6_gRiMP60S82e9IOgp7Yx9vQAmBsOHBP_KY"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/22/damian-lillard-reveals-focus-on-weight-loss-and-conditioning-during-injury-recovery/92913702007/",
-          "title": "Damian Lillard reveals focus on weight loss and conditioning during injury recovery",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS0T0K5RADf3rCvr4wAXJchlZJzn_C2D3fJixDRSLc-cR0dgTKSyHqM16Q7ZM"
-        }
-      ]
-    },
-    {
-      "query": "pedro pascal",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66123980/?ref_=nwc_art_perm",
-        "https://showsnob.com/gabriel-luna-seemingly-confirms-pedro-pascal-wont-return-the-last-of-us-season-3",
-        "https://www.digitalspy.com/tv/ustv/a74501139/last-of-us-gabriel-luna-season-3-update/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsCXA30QrWxt8-sUPpR0h7dYF7m-m7ezaWUzUe05Q9fG0Puo2Qckc7UUfAD9M",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66123980/?ref_=nwc_art_perm",
-          "title": "Gabriel Luna Shares What It’s Been Like Filming ‘The Last of Us’ Season 3 Without Pedro Pascal & Co-Creator Neil Druckmann",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsCXA30QrWxt8-sUPpR0h7dYF7m-m7ezaWUzUe05Q9fG0Puo2Qckc7UUfAD9M"
-        },
-        {
-          "url": "https://showsnob.com/gabriel-luna-seemingly-confirms-pedro-pascal-wont-return-the-last-of-us-season-3",
-          "title": "Gabriel Luna seemingly confirms Pedro Pascal won't return for The Last of Us season 3",
-          "publisher": "Show Snob",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6ntQLv-ua8N-YOQR7dxyr_62EuIOd_ATKUqMAwwa6LrcYoMNKqVdJO4ytko"
-        },
-        {
-          "url": "https://www.digitalspy.com/tv/ustv/a74501139/last-of-us-gabriel-luna-season-3-update/",
-          "title": "The Last of Us gets exciting season 3 update – does this hint at a highly-anticipated release date?",
-          "publisher": "Digital Spy",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8podvg-X1KFw9EzGOpDDAefaHRyE6oWws_i15Pfsc0aDWcE49HaK97DuXxo"
-        }
-      ]
-    },
-    {
-      "query": "tyson fury schizophrenia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/2026/11/23/sport/tyson-fury-schizophrenia-scli-intl",
-        "https://www.nytimes.com/athletic/7801170/2026/11/23/tyson-fury-netflix-documentary-a-remarkable-powerfully-told-story-with-some-questions-left-unanswered/",
-        "https://www.nbcnews.com/pop-culture/pop-culture-news/tyson-fury-former-boxing-champ-reveals-schizophrenia-diagnosis-rcna610901"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQic28uZ0MTA7x9AbP5KGIyoVeLv7XsExoICkGTMyIaGdp6g7DWXBGWV95pCv4",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/23/sport/tyson-fury-schizophrenia-scli-intl",
-          "title": "Tyson Fury reveals schizophrenia diagnosis",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQic28uZ0MTA7x9AbP5KGIyoVeLv7XsExoICkGTMyIaGdp6g7DWXBGWV95pCv4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7801170/2026/11/23/tyson-fury-netflix-documentary-a-remarkable-powerfully-told-story-with-some-questions-left-unanswered/",
-          "title": "Tyson Fury Netflix documentary: Addiction, schizophrenia and glory – but a big unanswered question",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9eN3j0XZvrgo1L3bR0D1g6954cGLS2Y6lPZIHwXU7zLNv1vqu33EcJ941AK4"
-        },
-        {
-          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/tyson-fury-former-boxing-champ-reveals-schizophrenia-diagnosis-rcna610901",
-          "title": "Tyson Fury, former boxing champ, reveals schizophrenia diagnosis",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ092mu26DeNC1lrLy3qFlwwcHnGefJd8bxcP0Py7TNZ1th7tblsEC_Mf1rsQA"
-        }
-      ]
-    },
-    {
-      "query": "vcu basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/mens-basketball/2026/11/25/washington-huskies-vcu-rams-maui-invitational-time-tv-channel-score-live-updates--live/92965500007/",
-        "https://apnews.com/article/mens-college-basketball-college-basketball-virginia-commonwealth-rams-washington-huskies-college-sports-17c4a7976ed54c3882658427421354b6",
-        "https://sports.betmgm.com/en/blog/ncaab/vcu-washington-prediction-odds-picks-nov-25-college-basketball-jaa/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsrJu-0njHaOxA2YP6m21W-qOuMa2CBVod-qrVX4pASR3BWm3FXs5PBkvWYnQ",
-      "image_credit": "Huskies Wire",
-      "news": [
-        {
-          "url": "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/mens-basketball/2026/11/25/washington-huskies-vcu-rams-maui-invitational-time-tv-channel-score-live-updates--live/92965500007/",
-          "title": "Washington vs VCU live updates: Score, highlights, predictions, analysis",
-          "publisher": "Huskies Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsrJu-0njHaOxA2YP6m21W-qOuMa2CBVod-qrVX4pASR3BWm3FXs5PBkvWYnQ"
-        },
-        {
-          "url": "https://apnews.com/article/mens-college-basketball-college-basketball-virginia-commonwealth-rams-washington-huskies-college-sports-17c4a7976ed54c3882658427421354b6",
-          "title": "Washington Huskies take on the VCU Rams",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/ncaab/vcu-washington-prediction-odds-picks-nov-25-college-basketball-jaa/",
-          "title": "VCU vs Washington Prediction, Odds & Best Bets Today – NCAAB, Nov. 25",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7U45IwyoQbBjoYMJ8C7sFwNppk-4BVJegQZit7gfCrQ3exj87rSVnC9GBksM"
-        }
-      ]
-    },
-    {
-      "query": "tyson fury age",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://www.dailystar.co.uk/sport/boxing/tyson-furys-sons-prince-tutty-37908773",
-        "https://dave.sport/news/prince-fury-amateur-debut-isle-of-man/",
-        "https://bloodyelbow.com/2026/11/23/tyson-furys-15-year-old-son-set-to-make-boxing-debut-on-ppv-this-saturday/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdy2xoAEKVp6SLnz2-LDIVe1M8EhDvj9XXTyRClNVLO1FgFw9mVXwZ2rqy0mA",
-      "image_credit": "Daily Star",
-      "news": [
-        {
-          "url": "https://www.dailystar.co.uk/sport/boxing/tyson-furys-sons-prince-tutty-37908773",
-          "title": "Tyson Fury's sons Prince and Tutty to make boxing debuts in pay-per-view show",
-          "publisher": "Daily Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdy2xoAEKVp6SLnz2-LDIVe1M8EhDvj9XXTyRClNVLO1FgFw9mVXwZ2rqy0mA"
-        },
-        {
-          "url": "https://dave.sport/news/prince-fury-amateur-debut-isle-of-man/",
-          "title": "Prince Fury confirms debut at 15 as coach praises his “great shape”",
-          "publisher": "Dave.Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dpVgbFVzHMgs0aAJh8N6QDtcgb5HDOHrdxJIxGYLTX25HgolYwJu_L-egvg"
-        },
-        {
-          "url": "https://bloodyelbow.com/2026/11/23/tyson-furys-15-year-old-son-set-to-make-boxing-debut-on-ppv-this-saturday/",
-          "title": "Tyson Fury’s 15-year-old son set to make boxing debut on PPV this Saturday",
-          "publisher": "Bloody Elbow",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvcfim3-IOGI5-D8IEm6ngRwPlzHHeRCu938oMrEcSiPClgCqP3iMSqBhuH0"
-        }
-      ]
-    },
-    {
-      "query": "de'anthony melton",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://bluemanhoop.com/a-de-anthony-melton-disappearance-is-the-last-thing-the-warriors-can-afford-right-now",
-        "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
-        "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGQFkaw2jYDB5IIMXRl1y-gJ6csDf-yMEwCOVQ2Tg6qxwT4JreQRmPXLzU1M",
-      "image_credit": "Blue Man Hoop",
-      "news": [
-        {
-          "url": "https://bluemanhoop.com/a-de-anthony-melton-disappearance-is-the-last-thing-the-warriors-can-afford-right-now",
-          "title": "A De'Anthony Melton disappearance is the last thing the Warriors can afford right now",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGQFkaw2jYDB5IIMXRl1y-gJ6csDf-yMEwCOVQ2Tg6qxwT4JreQRmPXLzU1M"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
-          "title": "Warriors' De'Anthony Melton: Makes impact despite shooting woes",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
-        },
-        {
-          "url": "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/",
-          "title": "De'Anthony Melton Records 7 Assists in Warriors' Win Over Celtics",
-          "publisher": "knup.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
-        }
-      ]
-    },
-    {
-      "query": "gui santos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T03:30:00Z",
-      "related_news_urls": [
-        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-western-conference-gm-draft/1981918/",
-        "https://bluemanhoop.com/warriors-matchup-vs-kings-gives-yaxel-lendeborg-a-shot-to-re-assert-his-dominance",
-        "https://www.dallasnews.com/sports/mavericks/article/yaxel-lendeborg-morez-johnson-mavericks-draft-22536356.php"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPIXuqY3ewsSZ0SCesrkzXTSTvXgDi_QVwhdaJrVwPxElX2euN6WxqLK9nheI",
-      "image_credit": "NBC Sports Bay Area & California",
-      "news": [
-        {
-          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-western-conference-gm-draft/1981918/",
-          "title": "Why one NBA GM reportedly shied away from trading up to draft Yaxel Lendeborg",
-          "publisher": "NBC Sports Bay Area & California",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPIXuqY3ewsSZ0SCesrkzXTSTvXgDi_QVwhdaJrVwPxElX2euN6WxqLK9nheI"
-        },
-        {
-          "url": "https://bluemanhoop.com/warriors-matchup-vs-kings-gives-yaxel-lendeborg-a-shot-to-re-assert-his-dominance",
-          "title": "Warriors' matchup vs. Kings gives Yaxel Lendeborg a shot to re-assert his dominance",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbifUxZ1EW6Rnv-k1PETOOPfEXvtIzBCKXFTwE9qDeaQ-0AjYwnqEM7pSMrF4"
-        },
-        {
-          "url": "https://www.dallasnews.com/sports/mavericks/article/yaxel-lendeborg-morez-johnson-mavericks-draft-22536356.php",
-          "title": "Nothing against Morez Johnson Jr., but Mavs could have used a guy like Yaxel Lendeborg",
-          "publisher": "Dallas News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2kM-60JDxBqA7bBDQgRzWoCj0Ei9zZLQQr_ZrEO3HUsVVzc5-0reIu8KjLv4"
-        }
-      ]
-    },
-    {
-      "query": "grand canyon basketball",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T03:30:00Z",
-      "related_news_urls": [
-        "https://slubillikens.com/news/2026/11/24/mens-basketball-late-rally-falls-short-in-loss-to-grand-canyon.aspx",
-        "https://www.stltoday.com/sports/college/slu/article_bfc65334-8307-4ff6-b198-827d983b125b.html",
-        "https://bvmsports.com/2026/11/25/gcu-strikes-back-huge-2nd-half-tops-slu/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGt3wTP_fjo2SX5rGewqoFpkDE8bmHdeYGyE2YwgjZfi12_x9v-SsjTZ2IYsg",
-      "image_credit": "slubillikens.com",
-      "news": [
-        {
-          "url": "https://slubillikens.com/news/2026/11/24/mens-basketball-late-rally-falls-short-in-loss-to-grand-canyon.aspx",
-          "title": "Late Rally Falls Short in Loss to Grand Canyon - Saint Louis University",
-          "publisher": "slubillikens.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGt3wTP_fjo2SX5rGewqoFpkDE8bmHdeYGyE2YwgjZfi12_x9v-SsjTZ2IYsg"
-        },
-        {
-          "url": "https://www.stltoday.com/sports/college/slu/article_bfc65334-8307-4ff6-b198-827d983b125b.html",
-          "title": "More of the same mistakes as SLU beats itself again, falling 91-88 to Grand Canyon",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbDbsHPX45tgAVK3ZpFuCdOOeMk7UrfISWgMuFh2o7fUh99l2w0EabUSgGXAU"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/25/gcu-strikes-back-huge-2nd-half-tops-slu/",
-          "title": "GCU strikes back; huge 2nd half tops SLU",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAV0KdfaYNwKdbu-Noh0FzFR_xhUxaZ5TrJA0mypJsJRzk0B9y_ka3slMqXY"
-        }
-      ]
-    },
-    {
-      "query": "kevin ginkel",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:20:00Z",
-      "related_news_urls": [
-        "https://www.mlbtraderumors.com/2026/11/twins-to-sign-kevin-ginkel.html",
-        "https://www.mlb.com/news/kevin-ginkel-twins-deal",
-        "https://arizonasports.com/mlb/arizona-diamondbacks/kevin-ginkel-diamondbacks-free-agency-twins"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAhywEEuUOI1oVJQpp0vKsG3r3NkfDySXtTXwmJcDmKNtnYXaYbUs6yRpy9T0",
-      "image_credit": "MLB Trade Rumors",
-      "news": [
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/twins-to-sign-kevin-ginkel.html",
-          "title": "Twins To Sign Kevin Ginkel",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAhywEEuUOI1oVJQpp0vKsG3r3NkfDySXtTXwmJcDmKNtnYXaYbUs6yRpy9T0"
-        },
-        {
-          "url": "https://www.mlb.com/news/kevin-ginkel-twins-deal",
-          "title": "Twins add righty reliever Ginkel on 2-year deal (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqDKkp9bWeNIidxLWFzayyETPYP9Cy4domOqGPL5ogQd1TTa-2RRG-N-xOUwM"
-        },
-        {
-          "url": "https://arizonasports.com/mlb/arizona-diamondbacks/kevin-ginkel-diamondbacks-free-agency-twins",
-          "title": "Kevin Ginkel leaves Diamondbacks for Twins, per report",
-          "publisher": "Arizona Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5A2AKQLpUeu0a6RlOwYvnJS1VohE5LHj8l8y9Js2WM3wwmSVlR0SSQxjKFsI"
-        }
-      ]
-    },
-    {
-      "query": "ja morant",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:20:00Z",
-      "related_news_urls": [
-        "https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies",
-        "https://fansided.com/nba/ja-morant-s-return-will-force-big-changes-to-the-blazers-rotation",
-        "https://ripcityproject.com/back-to-back-losses-timberwolves-show-why-blazers-traded-ja-morant"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9axWFReFJJS070XfeGUJWHXkPVHjKcLi8wDAyzOUXDNc1Bvna7jB4JKPaslQ",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies",
-          "title": "Morant Nearing Return From Hamstring Injury",
+          "url": "https://www.blazersedge.com/trail-blazers-analysis/118680/portland-trail-blazers-damian-lillard-nba-analysis-deni-avdija-offensive-leap",
+          "title": "Lillard’s Impact, Adaptability Playing Big Part in Blazers’ Offensive Leap",
           "publisher": "Blazer's Edge",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9axWFReFJJS070XfeGUJWHXkPVHjKcLi8wDAyzOUXDNc1Bvna7jB4JKPaslQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFaUogYb25cx34ENeRkdcUXVxkx4dv2AKv0vPu0oB6yrahhlz36F9qKno25-M"
+        }
+      ]
+    },
+    {
+      "query": "mike lafleur",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:40:00Z",
+      "related_news_urls": [
+        "https://www.denverbroncos.com/video/dl-zach-allen-on-denver-s-black-friday-game-it-s-a-great-opportunity",
+        "https://www.therams.com/video/highlights-jaylen-mccollough-intercepts-packers-qb-jordan-love-pass-in-the-third-quarter-week-12",
+        "https://www.steelers.com/news/statement-from-steelers-spokesman-x8902"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ErlZxmGP9IWvYAUJrIfoE52vEVcGLilwgFRiQUlZLfi4KgQp0tyFPO3Ov-8",
+      "image_credit": "Denver Broncos",
+      "news": [
+        {
+          "url": "https://www.denverbroncos.com/video/dl-zach-allen-on-denver-s-black-friday-game-it-s-a-great-opportunity",
+          "title": "DL Zach Allen on Denver's Black Friday game: 'It's a great opportunity'",
+          "publisher": "Denver Broncos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ErlZxmGP9IWvYAUJrIfoE52vEVcGLilwgFRiQUlZLfi4KgQp0tyFPO3Ov-8"
         },
         {
-          "url": "https://fansided.com/nba/ja-morant-s-return-will-force-big-changes-to-the-blazers-rotation",
-          "title": "Ja Morant’s return will force big changes to the Blazers rotation",
-          "publisher": "FanSided",
+          "url": "https://www.therams.com/video/highlights-jaylen-mccollough-intercepts-packers-qb-jordan-love-pass-in-the-third-quarter-week-12",
+          "title": "HIGHLIGHTS: Rams S Jaylen McCollough intercepts Packers QB Jordan Love's pass in the third quarter",
+          "publisher": "Rams",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPHNukYvkg92POdFw80aE-jfwHen3Ig0-EH6lVGrpn2R5DuH8-WfUBenTgV5o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmHDWbR8uPs38nen_QbURMmooXZhrTWtr7IJxn9qOVIs67KwtudZD3-2XFh8"
         },
         {
-          "url": "https://ripcityproject.com/back-to-back-losses-timberwolves-show-why-blazers-traded-ja-morant",
-          "title": "Back-to-back losses to Timberwolves show why Blazers traded for Ja Morant",
-          "publisher": "Rip City Project",
+          "url": "https://www.steelers.com/news/statement-from-steelers-spokesman-x8902",
+          "title": "Statement from Steelers spokesman",
+          "publisher": "Steelers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmuRhujbMyGY9MikFQyOWRp4co9xLmI7kli7pwvw1yHlLd0iJEozPDc3TKdu0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDBTLCrs6j4NOZzUmgKTTqT75mdpBpFxmF2jEHRcUlj-G0AT7HiU41rLLKMWM"
         }
       ]
     }
