@@ -1490,3 +1490,36 @@ test('signed runner-supplied color findings are reused without duplicate model i
  assert.deepEqual(result.roleHandoffs,[]);
  assert.equal(aiCalls,1);
 });
+
+test('native evidence reaches the color model only with the matching live engine lease',async()=>{
+ const {createHash}=await import('node:crypto');
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  ticketId:'T-NATIVE',jobId:'TASK-COLOR',repository:'www-infinity4/QuantaPhi',job:{instructions:'Check my work'}};
+ const memory=new Map([['key',lease]]),observed=[];
+ const clock=new BrainClock({storage:{get:async key=>memory.get(key),put:async(key,value)=>memory.set(key,value)}},{
+  WRITER_AI:{run:async(model,input)=>{
+   observed.push(JSON.parse(input.messages[1].content).evidence);
+   return {response:JSON.stringify({finding:'Source review pending',nextAction:'Inspect pinned evidence',blockers:[],toolRequests:[]})};
+  }}
+ });
+ const scope={jobId:lease.ticketId+'/'+lease.jobId,repo:lease.repository,baseSha:'a'.repeat(40)};
+ const evidence={baseSha:scope.baseSha,source:'Pinned evidence ∆'};
+ const key=JSON.stringify([scope.jobId,scope.repo,scope.baseSha]),text=JSON.stringify(evidence);
+ const id=createHash('sha256').update(JSON.stringify([key,text])).digest('hex');
+ const packet={version:1,scope,entries:[{id,text}]};
+ const request=(extra={})=>new Request('https://clock/runner/color-think',{
+  method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',
+   key:'key',leaseId:'lease',color:'red',task:'Inspect source carefully',nativeEvidence:packet,...extra})
+ });
+ assert.equal((await clock.runner(request())).status,200);
+ assert.deepEqual(observed,[evidence]);
+ assert.equal((await clock.runner(request({leaseId:'wrong'}))).status,409);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,scope:{...scope,repo:'www-infinity4/Other'}}})),/native_context_scope/);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,entries:[{id,text:text+' '}]}})),/native_context_integrity/);
+ await assert.rejects(clock.runner(request({evidence})),/native_context_invalid/);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,entries:[{id}]}})),/native_context_missing/);
+ lease.leaseUntil=Date.now()-1;
+ assert.equal((await clock.runner(request())).status,409);
+ assert.deepEqual(observed,[evidence],'invalid packets and stale leases never reach the model');
+ assert.equal(memory.has('engine-review:key'),false,'native evidence cannot create an approval receipt');
+});
