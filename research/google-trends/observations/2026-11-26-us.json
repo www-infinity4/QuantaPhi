@@ -3,9 +3,176 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T07:01:30.461180Z",
+  "checked_at": "2026-11-26T07:31:21.105322Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "criminal profile gta 6",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T07:10:00Z",
+      "related_news_urls": [
+        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+        "https://www.eurogamer.net/gta-6-empathy-criminal-profile-why-rockstar-added-it-rob-nelson",
+        "https://www.yahoo.com/entertainment/articles/gta-6-rewards-empathy-because-200144196.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
+      "image_credit": "Red Bull",
+      "news": [
+        {
+          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
+          "title": "GTA 6 Criminal Profile: How the system works",
+          "publisher": "Red Bull",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
+        },
+        {
+          "url": "https://www.eurogamer.net/gta-6-empathy-criminal-profile-why-rockstar-added-it-rob-nelson",
+          "title": "Why did Rockstar Games make empathy a key mechanic in GTA 6? \"Because it's fun\" says head of development Rob Nelson",
+          "publisher": "Eurogamer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT--4h3nTMQasuYtxV9sLp1QqTmCoKT8KvEFZWIkBYY_OACS_0sL9lc-EisRAc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/gta-6-rewards-empathy-because-200144196.html",
+          "title": "GTA 6 rewards empathy because being a \"demigod stomping through the world\" is only fun for so long",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BjhlGt3z03Q7tWioAt8OgdvHy0mtwSD0bpbhxsC0eYeLHkJyesEENgruz0Q"
+        }
+      ]
+    },
+    {
+      "query": "james franco",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T07:10:00Z",
+      "related_news_urls": [
+        "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
+        "https://www.thegospelcoalition.org/article/confession-ebenezer-moral-clarity/",
+        "https://variety.com/2026/film/global/rob-lowe-ben-shapiro-confession-film-script-1236951750/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe8cuLaAn5AJdJkQc4p0n6TdE6BLN48Pkx4h7RBfamVKZqulTFh-2FlZkb6KA",
+      "image_credit": "Fashion Times UK",
+      "news": [
+        {
+          "url": "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
+          "title": "James Franco Admits Sleeping With His Acting Students But Denies Opening School To Lure Women",
+          "publisher": "Fashion Times UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe8cuLaAn5AJdJkQc4p0n6TdE6BLN48Pkx4h7RBfamVKZqulTFh-2FlZkb6KA"
+        },
+        {
+          "url": "https://www.thegospelcoalition.org/article/confession-ebenezer-moral-clarity/",
+          "title": "‘Confession’ and ‘Ebenezer’: Moral Clarity in Murky Times",
+          "publisher": "The Gospel Coalition",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjAUGtRMNmUqBdPXpxDysPlS9MmMS1yRV7mBtSkw28IPtA1BWShYDfy5N1-2g"
+        },
+        {
+          "url": "https://variety.com/2026/film/global/rob-lowe-ben-shapiro-confession-film-script-1236951750/",
+          "title": "Rob Lowe Asked Ben Shapiro if He Could Star in 'Confession'",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9K9zoz9gxkEkfspPATstYC9AAw7a2yUwJagC-MUG731YQsvZyhmO495QqNRI"
+        }
+      ]
+    },
+    {
+      "query": "battlestar galactica",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:50:00Z",
+      "related_news_urls": [
+        "https://movieweb.com/battlestar-galactica-miniseries-recommendation/",
+        "https://collider.com/battlestar-galactica-33-episode-perfect-hour/",
+        "https://staticonthetv.substack.com/p/why-battlestar-galactica-is-the-perfect"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw3YxWastldvRLvu58YOGB0a8DyYqoqiB1-b2WWe_rdMuvqJNGlGb99IwuHTw",
+      "image_credit": "MovieWeb",
+      "news": [
+        {
+          "url": "https://movieweb.com/battlestar-galactica-miniseries-recommendation/",
+          "title": "23 Years Later, the Greatest Space Opera of All Time Was a Three-Hour Miniseries That Still Has No Equal",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw3YxWastldvRLvu58YOGB0a8DyYqoqiB1-b2WWe_rdMuvqJNGlGb99IwuHTw"
+        },
+        {
+          "url": "https://collider.com/battlestar-galactica-33-episode-perfect-hour/",
+          "title": "22 Years Later, This 'Battlestar Galactica' Episode Is Still a Perfect Hour of Television",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjsZgxS00978aOh1CZ7z6U2LdV0IBTludzvIpxxvUwMyGgXIBO4XaNuahuCOU"
+        },
+        {
+          "url": "https://staticonthetv.substack.com/p/why-battlestar-galactica-is-the-perfect",
+          "title": "Why Battlestar Galactica is the perfect rewatch for the looming AI apocalypse",
+          "publisher": "Substack",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SFtaCNt-BJbG9cHOyZFghwLxZsrDRvwS7l9QB7lqy-6VyR06AuhVArfQHac"
+        }
+      ]
+    },
+    {
+      "query": "seattle weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:50:00Z",
+      "related_news_urls": [
+        "https://www.king5.com/article/weather/severe-weather/ground-stop-issued-at-seattle-tacoma-international-airport-due-to-wind/281-3ff22646-b316-4bfe-bc8b-8bb541694e0e",
+        "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
+        "https://www.rentonreporter.com/2026/11/25/pse-preps-for-thanksgiving-storm-impacts/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO_joNO87iWk1QQmbX0MKZkH1hGO6OxeJwZb2OY-fBbBR9cRSACHr-F6uJMc",
+      "image_credit": "KING5.com",
+      "news": [
+        {
+          "url": "https://www.king5.com/article/weather/severe-weather/ground-stop-issued-at-seattle-tacoma-international-airport-due-to-wind/281-3ff22646-b316-4bfe-bc8b-8bb541694e0e",
+          "title": "Ground stop canceled at Seattle-Tacoma International Airport due to wind",
+          "publisher": "KING5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO_joNO87iWk1QQmbX0MKZkH1hGO6OxeJwZb2OY-fBbBR9cRSACHr-F6uJMc"
+        },
+        {
+          "url": "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
+          "title": "Extreme tides start to land on Washington coast",
+          "publisher": "KUOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjPGnRyjmDqwIvX-diarn-78VEflPekcG6-qaMovQLK_7Crg82OUUbii8r1co"
+        },
+        {
+          "url": "https://www.rentonreporter.com/2026/11/25/pse-preps-for-thanksgiving-storm-impacts/",
+          "title": "PSE preps for Thanksgiving storm impacts",
+          "publisher": "Renton Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8wMkGJ6NCVavODSELVobAkTjqYY6zXhjDm_Y1tuLxogvAx_iHT0PUYqQBnhA"
+        }
+      ]
+    },
+    {
+      "query": "lance reddick",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/courtney-b-vance-honors-lance-211242438.html",
+        "https://www.aol.com/articles/courtney-b-vance-taking-over-172926000.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHkWGnNbqXejmWS5tH7ILC7IhdQiecWARcoUko215ke6sjWKdCe1w7aYu846Q",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/courtney-b-vance-honors-lance-211242438.html",
+          "title": "Courtney B. Vance Honors Lance Reddick While Taking Over as Zeus in Percy Jackson",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHkWGnNbqXejmWS5tH7ILC7IhdQiecWARcoUko215ke6sjWKdCe1w7aYu846Q"
+        },
+        {
+          "url": "https://www.aol.com/articles/courtney-b-vance-taking-over-172926000.html",
+          "title": "Courtney B. Vance on Taking Over Late Lance Reddick’s “Percy Jackson” Role: ‘Making Sure That I’m Doing Right by Him’ (Exclusive)",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpH4CBSf99uDXi8mbxt4cBYihH7zBHFt1V4MifE9v_hKBkupsmm_J8CDfHBtE"
+        }
+      ]
+    },
     {
       "query": "medal",
       "approx_searches": "200+",
@@ -42,43 +209,8 @@
       ]
     },
     {
-      "query": "lion",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T06:30:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
-        "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
-        "https://abcnews.com/International/wireStory/turkish-officials-backtrack-after-24-hour-hunt-istanbul-138404359"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
-          "title": "Search on for lioness seen roaming Istanbul's outskirts",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
-          "title": "A Lion on the Loose Near Istanbul? Not So Fast.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFY2NnpuTS18-A--6C3vCWa2sRdBB6baUDwliBCPvOMgQZ9PiY7kqzW9KYTdE"
-        },
-        {
-          "url": "https://abcnews.com/International/wireStory/turkish-officials-backtrack-after-24-hour-hunt-istanbul-138404359",
-          "title": "Turkish officials backtrack after 24-hour hunt for Istanbul lioness, saying she never existed",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3PK7d47pfvB_gk5ViZW9QgysD0cajvDkxvugqRfrnqIZDq3P0CC2GYQTJjik"
-        }
-      ]
-    },
-    {
       "query": "gta6 leonida",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-26T06:30:00Z",
       "related_news_urls": [
         "https://80.lv/articles/leaker-cyberleek-releases-the-xbox-build-executable-for-gta-6",
@@ -117,7 +249,7 @@
       "published_at": "2026-11-26T06:30:00Z",
       "related_news_urls": [
         "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-        "https://fox2now.com/news/missouri/modot-warns-travelers-of-heavy-overnight-snow-risks/",
+        "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
         "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE",
@@ -131,11 +263,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
         },
         {
-          "url": "https://fox2now.com/news/missouri/modot-warns-travelers-of-heavy-overnight-snow-risks/",
-          "title": "MoDOT warns travelers of heavy overnight snow risks",
+          "url": "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
+          "title": "A turkey of a winter storm",
           "publisher": "FOX 2",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTROCr0pTeqWew9pTvOPPQS9xL1nG5dczdfxKys0KA0lwIlgAxOz8WOJfSw9oY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto"
         },
         {
           "url": "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving",
@@ -147,37 +279,37 @@
       ]
     },
     {
-      "query": "radio",
-      "approx_searches": "200+",
+      "query": "lion",
+      "approx_searches": "1000+",
       "published_at": "2026-11-26T06:30:00Z",
       "related_news_urls": [
-        "https://www.wsmv.com/2026/11/20/nashville-rappers-song-featured-popular-video-game-grand-theft-auto-vi-heres-what-know/",
-        "https://www.ign.com/articles/this-gta-6-radio-station-represents-its-florida-inspired-setting-perfectly",
-        "https://www.vice.com/en/article/3-forgotten-southern-rap-classics-getting-a-second-life-in-gta-6/"
+        "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
+        "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
+        "https://www.nbcnews.com/world/europe/turkish-officials-backtrack-24-hour-hunt-istanbul-lioness-saying-never-rcna611043"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlDtIgngYhYIiIToHZqib5nMkX6OrVlVNPhtCSdnF-llhU3U9rEXNgTst53Rg",
-      "image_credit": "WSMV",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks",
+      "image_credit": "CBS News",
       "news": [
         {
-          "url": "https://www.wsmv.com/2026/11/20/nashville-rappers-song-featured-popular-video-game-grand-theft-auto-vi-heres-what-know/",
-          "title": "Nashville rapper’s song featured in popular video game Grand Theft Auto VI. Here’s what to know",
-          "publisher": "WSMV",
+          "url": "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
+          "title": "Search on for lioness seen roaming Istanbul's outskirts",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlDtIgngYhYIiIToHZqib5nMkX6OrVlVNPhtCSdnF-llhU3U9rEXNgTst53Rg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks"
         },
         {
-          "url": "https://www.ign.com/articles/this-gta-6-radio-station-represents-its-florida-inspired-setting-perfectly",
-          "title": "GTA 6's Dirty South Classics Radio Station Shows Love for the Southern Rap Game, Representing Its Setting Perfectly",
-          "publisher": "IGN",
+          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
+          "title": "A Lion on the Loose Near Istanbul? Not So Fast.",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWe7Iqhz3a2uJojFjqx1Hzo05YcCwkOv-bU-MFxKqS0NZhS5NT2Hhcy2dXPM8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFY2NnpuTS18-A--6C3vCWa2sRdBB6baUDwliBCPvOMgQZ9PiY7kqzW9KYTdE"
         },
         {
-          "url": "https://www.vice.com/en/article/3-forgotten-southern-rap-classics-getting-a-second-life-in-gta-6/",
-          "title": "3 Forgotten Southern Rap Classics Getting a Second Life in GTA 6",
-          "publisher": "VICE",
+          "url": "https://www.nbcnews.com/world/europe/turkish-officials-backtrack-24-hour-hunt-istanbul-lioness-saying-never-rcna611043",
+          "title": "Turkish officials backtrack after 24-hour hunt for Istanbul lioness, saying she never existed",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIMdQJlZYtGhtZBS7X-gjEw0F7ahvply6cWw6pDyWOn0UWGktPk8yBrp3wCk8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdmzP0TqTGzEmHCA8uP23PJpkZyNzm7u9fwwZ8p8HLCERjnP_Ljr-RcV0JCM"
         }
       ]
     },
@@ -213,146 +345,6 @@
           "publisher": "KATU",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW_jz7pFvvIjY66TEec5Z-HJkYZTOJxn8x9tXN5YdcSCzdauSAys00kAf1siA"
-        }
-      ]
-    },
-    {
-      "query": "home prices",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:30:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/economy/housing/u-s-home-price-growth-held-steady-in-september-2a6a3676",
-        "https://finance.yahoo.com/real-estate/article/home-prices-rose-26-in-september-even-as-mortgage-rates-moved-higher-152654427.html",
-        "https://www.reuters.com/business/us-single-family-home-prices-flat-september-fhfa-says-2026-11-24/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs2_o3M6egibnD6YNXj-V9x3A3G9zgc-pOf18hxykuax8OYjK_FrSYiuUsQBc",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/economy/housing/u-s-home-price-growth-held-steady-in-september-2a6a3676",
-          "title": "U.S. Home Price Growth Held Steady in September",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs2_o3M6egibnD6YNXj-V9x3A3G9zgc-pOf18hxykuax8OYjK_FrSYiuUsQBc"
-        },
-        {
-          "url": "https://finance.yahoo.com/real-estate/article/home-prices-rose-26-in-september-even-as-mortgage-rates-moved-higher-152654427.html",
-          "title": "Home prices rose 2.6% in September even as mortgage rates moved higher",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOTgXp8bFPjliNDSXWvR8AaOPbAB4QqJEfJBGgyPRvcyHOzG3Ve8nsj17nfd8"
-        },
-        {
-          "url": "https://www.reuters.com/business/us-single-family-home-prices-flat-september-fhfa-says-2026-11-24/",
-          "title": "US single-family home prices flat in September, FHFA says",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbMBqyVdjihOdWpcekC0BBce_5uOIxOy2KXlEQJaFeAX8GsklgPOuMcnzj0Og"
-        }
-      ]
-    },
-    {
-      "query": "robert downey jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:30:00Z",
-      "related_news_urls": [
-        "https://www.cbr.com/doctor-doom-mcu-origin-story/",
-        "https://reactormag.com/the-marvel-comics-explain-iavengers-doomsday-latverian-witches/",
-        "https://www.imdb.com/es/news/ni66126859/?ref_=int_nwr_4"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqEZwqFXfaMJccDpZ0qy5AyrGn5M7dqiULjM_6hvVWcjFIpncO2JlMCnjD4YI",
-      "image_credit": "Comic Book Resources",
-      "news": [
-        {
-          "url": "https://www.cbr.com/doctor-doom-mcu-origin-story/",
-          "title": "Marvel Finally Reveals Robert Downey Jr.'s Doctor Doom Origin & Fantastic Four Connection",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqEZwqFXfaMJccDpZ0qy5AyrGn5M7dqiULjM_6hvVWcjFIpncO2JlMCnjD4YI"
-        },
-        {
-          "url": "https://reactormag.com/the-marvel-comics-explain-iavengers-doomsday-latverian-witches/",
-          "title": "The Marvel Comics That May Help Explain Avengers: Doomsday’s Latverian Witches",
-          "publisher": "reactormag.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyLNxtvBYD2swmUl6aiINCuVFLmCZXOE3Ap3-Fvqif3e3Bn3VnUitSJIf4r78"
-        },
-        {
-          "url": "https://www.imdb.com/es/news/ni66126859/?ref_=int_nwr_4",
-          "title": "Avengers: Doomsday Director Addresses Mystery Latverian Witches Amid Wanda Maximoff’s Return",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEdh5WO17yS9MmnY3MDqZfo5Za3Ay46FxE9AmDbXyR7tBUS7-vV_w5eBzw20"
-        }
-      ]
-    },
-    {
-      "query": "moon",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.space.com/stargazing/december-full-moon-2026-when-where-and-how-to-see-the-cold-moon",
-        "https://time.com/article/2026/11/23/thanksgiving-beaver-supermoon-what-to-know/",
-        "https://www.cnn.com/2026/11/23/science/november-beaver-supermoon-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS88kIxdd9aWW-jKZPwIHjpEq8jwugd7w1ggo2mP4wPEzIovn9YdtyK3pTSKVE",
-      "image_credit": "Space",
-      "news": [
-        {
-          "url": "https://www.space.com/stargazing/december-full-moon-2026-when-where-and-how-to-see-the-cold-moon",
-          "title": "December full moon 2026: When, where and how to see the Cold Moon",
-          "publisher": "Space",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS88kIxdd9aWW-jKZPwIHjpEq8jwugd7w1ggo2mP4wPEzIovn9YdtyK3pTSKVE"
-        },
-        {
-          "url": "https://time.com/article/2026/11/23/thanksgiving-beaver-supermoon-what-to-know/",
-          "title": "What to Know About The Supermoon Appearing This Thanksgiving Week",
-          "publisher": "Time Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyqfDxRWzEdbppZUDhQIV-uKkFvHLblyIjKzb60dQ7TFD0i3MgxU9ImMICeU4"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/23/science/november-beaver-supermoon-2026",
-          "title": "How and when to watch November’s beaver moon",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRML6cLZlbfko0lqRx-I9H72v719WX4p986MXn5WnDm-20BbYyB2L8EJ2PVGi4"
-        }
-      ]
-    },
-    {
-      "query": "ring",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/arts/television/the-rings-of-power-how-the-one-ring.html",
-        "https://www.vulture.com/article/lord-of-the-rings-the-rings-of-power-recap-season-3-episode-8-prime-video-finale.html",
-        "https://www.imdb.com/news/ni66128078/?ref_=int_nwr_3"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJQf5kdZGysfHRwb3av4uOG8DoA9YK8Fvu4ewzQHXK5kO_kzys77qEfgmOiE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/25/arts/television/the-rings-of-power-how-the-one-ring.html",
-          "title": "How ‘The Lord of the Rings: The Rings of Power’ Shot Its Signature Scene",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsJQf5kdZGysfHRwb3av4uOG8DoA9YK8Fvu4ewzQHXK5kO_kzys77qEfgmOiE"
-        },
-        {
-          "url": "https://www.vulture.com/article/lord-of-the-rings-the-rings-of-power-recap-season-3-episode-8-prime-video-finale.html",
-          "title": "The Lord of the Rings: The Rings of Power Season-Finale Recap: The Last Temptation of Gandalf",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxeWcitLo4pp0G61HzddvyPdF_o3peIbxp_StYe8qfXlVqQoBWlyyie-Pv3Y8"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66128078/?ref_=int_nwr_3",
-          "title": "Rings Of Power Season 3 Ending Harshly Divides Audiences Over Sauron's Fate",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqJ9lBJ8J0KvLTXRYODocU0BV57O03BWix9FTsYCXsJ51B8dTjOE7Rrs99K1U"
         }
       ]
     }
