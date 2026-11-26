@@ -107,3 +107,92 @@ test('all four signed Brain recovery paths use owner-partitioned paging instead 
  assert.match(claim,/readRunnerQueue\(this\.env\.WORK_DB/);
  assert.equal((worker.match(/readRunnerQueue\(this\.env\.WORK_DB/g)||[]).length,4);
 });
+
+test('malformed ticket JSON cannot disable the entire signed owner queue',async()=>{
+
+ const {DatabaseSync}=await import('node:sqlite');
+
+ const sql=new DatabaseSync(':memory:');
+
+ try {
+
+  sql.exec(`
+   CREATE TABLE work_tickets (
+    id TEXT PRIMARY KEY,
+    owner_hash TEXT,
+    status TEXT,
+    context_json TEXT,
+    request TEXT,
+    created_at INTEGER
+   )
+  `);
+
+  const insert=sql.prepare(
+   'INSERT INTO work_tickets VALUES(?,?,?,?,?,?)'
+  );
+
+  insert.run(
+   'VALID-OWNER','owner-A','ready',
+   '{"kind":"robot-directions"}',
+   'Repair Bubbles',100
+  );
+
+  insert.run(
+   'MALFORMED','owner-A','ready',
+   '{','Preserve malformed record',200
+  );
+
+  insert.run(
+   'OTHER-OWNER','owner-B','ready',
+   '{"kind":"robot-directions"}',
+   'Private work',300
+  );
+
+  const db={
+   prepare(query){
+    return {
+     bind(...args){
+      return {
+       async all(){
+        return {
+         results:sql.prepare(query).all(...args)
+        };
+       },
+       async first(){
+        return sql.prepare(query).get(...args)||null;
+       }
+      };
+     }
+    };
+   }
+  };
+
+  for(const order of ['newest','oldest']){
+
+   const result=await readRunnerQueue(db,{
+    ownerHash:'owner-A',
+    order,
+    requestedTicketId:'MALFORMED'
+   });
+
+   assert.deepEqual(
+    result.results.map(row=>row.id),
+    ['VALID-OWNER']
+   );
+
+  }
+
+  assert.equal(
+   sql.prepare(
+    'SELECT COUNT(*) AS n FROM work_tickets'
+   ).get().n,
+   3
+  );
+
+ }finally{
+
+  sql.close();
+
+ }
+
+});

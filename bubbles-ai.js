@@ -527,14 +527,55 @@ const connectedAccounts=create('details','ba-account-connections');
 connectedAccounts.append(create('summary','','Connect your accounts'));
 connections.append(connectedAccounts);
 let accountConnectionsUI=null;
-connectedAccounts.addEventListener('toggle',async()=>{
- if(!connectedAccounts.open||accountConnectionsUI)return;
+let accountConnectionsLoading=false;
+const accountRetry=create('button','ba-control','Retry account connections');
+accountRetry.type='button';
+accountRetry.hidden=true;
+connectedAccounts.append(accountRetry);
+
+async function loadAccountConnections(){
+ if(accountConnectionsLoading)return;
+ accountConnectionsLoading=true;
+ accountRetry.hidden=true;
  try{
-  const module=await import('/bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8');
-  accountConnectionsUI=module.mountConnections(connectedAccounts,{token:()=>module.resolveConnectorWalletToken(window)});
+  if(!accountConnectionsUI){
+   const module=await import('/bubbles-connections.mjs?v=20261106-google-multi-cloudflare-full8');
+   accountConnectionsUI=module.mountConnections(connectedAccounts,{
+    token:()=>module.resolveConnectorWalletToken(window)
+   });
+  }
   await accountConnectionsUI.refresh();
- }catch{connectedAccounts.append(create('p','ba-muted','Account connections could not load. Try again after reconnecting your wallet.'));}
+ }catch{
+  accountRetry.hidden=false;
+ }finally{
+  accountConnectionsLoading=false;
+ }
+}
+
+accountRetry.addEventListener('click',()=>{
+ void loadAccountConnections();
 });
+
+connectedAccounts.addEventListener('toggle',()=>{
+ if(connectedAccounts.open&&!accountConnectionsUI)
+  void loadAccountConnections();
+});
+
+function resumeAccountConnection(){
+ try{
+  const pending=JSON.parse(sessionStorage.getItem(
+   'bubbles:oauth-pending:v1')||'null');
+  if(!pending||
+   !['github','cloudflare','google'].includes(pending.provider)||
+   !/^[A-Za-z0-9_-]{43}$/.test(pending.state||'')||
+   !Number.isFinite(pending.expiresAt)||
+   pending.expiresAt<=Date.now()||
+   pending.expiresAt>Date.now()+300000)return;
+  connectedAccounts.open=true;
+  void loadAccountConnections();
+ }catch{}
+}
+resumeAccountConnection();
 
 /* Concept credit: DJ Vertigo · Macro Zoom.
  * One owner-facing settings scope; existing first-party Bubbles handlers remain
@@ -1085,89 +1126,8 @@ const send=create('button','ba-send','Send');send.type='submit';
 const modelChoice={value:'bubbles'};
 
 actions.append(photoRow,mic,speak,send);composer.append(input,photoPreview,actions);
-// === Byte orb and training-wheel assist START ===
-// The owner controls this local helper: opening it does NOT take over typing,
-// submit a chat, read a wallet, or create a model/tool request.
-const byteAssist=create('details','ba-byte-assist');
-const byteAssistSummary=create('summary','','Bubbles typing help');
-const byteAssistInfo=create('p','ba-muted','Training wheels are OFF until you choose them. This displays UTF-8 word size, not thought weight or a wallet key.');
-const byteOrb=create('span','ba-byte-orb','·');
-byteOrb.setAttribute('aria-hidden','true');
-const byteOrbStatus=create('span','ba-byte-orb-status','First word · 0 bytes');
-byteOrbStatus.setAttribute('role','status');
-const byteOrbLine=create('div','ba-byte-orb-line');byteOrbLine.append(byteOrb,byteOrbStatus);
-const assistSuggestion=create('p','ba-byte-suggestion','No suggestion. Your words remain yours.');
-assistSuggestion.setAttribute('role','status');
-const assistEnable=create('button','ba-control ba-assist-enable','Try training wheels');
-assistEnable.type='button';
-const assistFade=create('button','ba-control ba-assist-fade','Fade suggestions');
-assistFade.type='button';
-const assistUse=create('button','ba-control ba-assist-use','Use suggestion');
-assistUse.type='button';assistUse.hidden=true;
-const assistEaseOff=create('button','ba-control ba-assist-off','Ease off');
-assistEaseOff.type='button';
-const assistControls=create('div','ba-byte-assist-controls');
-assistControls.append(assistEnable,assistFade,assistUse,assistEaseOff);
-byteAssist.append(byteAssistSummary,byteAssistInfo,byteOrbLine,assistSuggestion,assistControls);
-composer.insertBefore(byteAssist,photoPreview);
-let mode='off',wordHelper=null,acceptedWordHints=0,skippedWordHints=0;
-let currentWordHint='',assistVersion=0;
-async function updateByteAssist(){
- if(!byteAssist.open)return;
- const current=++assistVersion;
- try{
-  const helper=wordHelper||(wordHelper=await import('./bubbles-byte-assist.mjs'));
-  if(current!==assistVersion||!byteAssist.open)return;
-  const weight=helper.measureWordOrb(input.value);
-  byteOrb.textContent=weight.firstLetter||'·';
-  byteOrb.style.width=weight.orbSizePx+'px';
-  byteOrb.style.height=weight.orbSizePx+'px';
-  byteOrbStatus.textContent='First word · '+weight.bytes+' UTF-8 byte'+(weight.bytes===1?'':'s')+
-   ' · '+weight.graphemes+' grapheme'+(weight.graphemes===1?'':'s')+
-   ' · display only';
-  const choices=helper.suggestFirstWord(input.value,{mode,accepted:acceptedWordHints,skipped:skippedWordHints});
-  currentWordHint=choices[0]?.text||'';
-  assistUse.hidden=!currentWordHint;
-  assistSuggestion.textContent=mode==='off'?'Help is off. Bubbles will not change your draft.':
-   currentWordHint?'Possible local phrase: '+currentWordHint:
-   'No local suggestion. You have the keyboard; Bubbles will not complete or send anything automatically.';
-  assistEnable.disabled=mode!=='off';assistFade.disabled=mode!=='training';
- }catch{
-  currentWordHint='';assistUse.hidden=true;
-  assistSuggestion.textContent='Local typing assistance unavailable; your draft is unchanged.';
- }
-}
-byteAssist.addEventListener('toggle',()=>{if(byteAssist.open)void updateByteAssist()});
-input.addEventListener('input',()=>{if(byteAssist.open)void updateByteAssist()});
-assistEnable.addEventListener('click',()=>{mode='training';skippedWordHints=0;acceptedWordHints=0;void updateByteAssist()});
-assistFade.addEventListener('click',()=>{if(mode==='training')mode='fade';void updateByteAssist()});
-assistEaseOff.addEventListener('click',()=>{
- mode='off';currentWordHint='';skippedWordHints=0;acceptedWordHints=0;
- void updateByteAssist();
-});
-assistUse.addEventListener('click',()=>{
- if(!wordHelper||!currentWordHint||mode==='off')return;
- const before=input.value;
- const after=wordHelper.acceptWordSuggestion(before,currentWordHint,{
-  explicitTap:true,caretAtEnd:input.selectionStart===input.value.length&&input.selectionEnd===input.value.length
- });
- if(after===before)return;
- input.value=after;
- acceptedWordHints+=1;currentWordHint='';
- input.dispatchEvent(new Event('input',{bubbles:true}));
- input.focus();
-});
-byteAssist.addEventListener('keydown',event=>{
- if(event.key==='Escape'){event.stopPropagation();mode='off';byteAssist.open=false;currentWordHint='';input.focus()}
-});
-// An observed session change clears the displayed word hint but does not
-// change a different thread's draft or create any hidden persisted profile.
-window.addEventListener('bubbles:iteration',event=>{
- if(event.detail?.type!=='session_changed')return;
- assistVersion++;mode='off';currentWordHint='';acceptedWordHints=0;skippedWordHints=0;
- byteAssist.open=false;byteOrb.textContent='·';byteOrbStatus.textContent='First word · 0 bytes';
-});
-// === Byte orb and training-wheel assist END ===
+// Typing assistance removed by owner request.
+
 // Account connector pairing stays beside the message box in website and APK chat.
 const connectorCodeButton=create('button','ba-control ba-connector-code','Create one-time connection code');
 connectorCodeButton.type='button';

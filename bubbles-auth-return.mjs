@@ -9,6 +9,23 @@ export function resumeAuthReturn(host=window) {
   let saved=null;
   try {saved=JSON.parse(host.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');}catch{}
   const provider=callbackProvider||saved?.provider||'cloudflare';
+  // Resume the original local conversation only for a matching,
+  // unexpired same-window chat return. This is not authentication.
+  if(result==='received'&&callbackProvider&&
+     saved?.provider===callbackProvider&&
+     saved.flow==='same-window'&&
+     saved.returnPath==='/bubbles.html'&&
+     /^[A-Za-z0-9_-]{43}$/.test(saved.state||'')&&
+     Number.isFinite(saved.expiresAt)&&
+     saved.expiresAt>Date.now()&&
+     saved.expiresAt<=Date.now()+300000){
+    try{
+     host.sessionStorage?.setItem(
+      'quantaphi:bubbles:threads:v2:tab:site-update-reload','1'
+     );
+    }catch{}
+  }
+
   if(result==='received'||result==='failed'||result==='declined'){
    // Only predefined, non-secret reason codes travel into the page session.
    const reasons=['callback_missing_code','callback_state_invalid','callback_handoff_failed',

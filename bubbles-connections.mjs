@@ -82,6 +82,8 @@ export function providerSignInErrorMessage(code,provider='cloudflare'){
     return 'Cloudflare did not return a usable authorization. Retry the Bubbles Cloudflare connection.';
   return 'Bubbles could not confirm the authorization. Retry '+providerName+' sign-in.';
 }
+// One active OAuth attempt per browser window.
+const oauthOwners=new WeakMap();
 export class AccountConnections {
   constructor({token,request = (...args)=>fetch(...args),root = window,timeoutMs=10000}) {
     this.token=token;this.request=request;this.root=root;this.pending=null;this.timeoutMs=Math.max(1,Number(timeoutMs)||10000);
@@ -93,6 +95,8 @@ export class AccountConnections {
     let timer;
     const attempt=async()=>{
       const credential=path==='/pair/redeem'?'':await this.token();
+      if(controller.signal.aborted)
+        throw Error('connection_timeout');
       const response=await this.request(API+path,{method:body?'POST':'GET',cache:'no-store',
         headers:{...(credential?{Authorization:'Bearer '+credential}:{}),...(body?{'Content-Type':'application/json'}:{})},
         ...(body?{body:JSON.stringify(body)}:{}),signal:controller.signal});
@@ -108,6 +112,8 @@ export class AccountConnections {
     } finally {clearTimeout(timer);}
   }
   readPendingHandoff() {
+    if(oauthOwners.has(this.root)&&
+       oauthOwners.get(this.root)!==this)return null;
     try{
       const saved=JSON.parse(this.root.sessionStorage?.getItem('bubbles:oauth-pending:v1')||'null');
       if(saved&&['github','google','cloudflare'].includes(saved.provider)&&
@@ -176,15 +182,18 @@ export class AccountConnections {
     void poll();
   }
   resumePending(onComplete,{recoverGoogle=false,recoverCloudflare=false}={}) {
-    if(this.pending)return false;
+    if(this.pending||oauthOwners.has(this.root))return false;
     const recoveryProvider=recoverGoogle?'google':recoverCloudflare?'cloudflare':null;
     const saved=this.readPendingHandoff()||(recoveryProvider?{provider:recoveryProvider,expiresAt:Date.now()+300000}:null);
     if(!saved)return false;
+    oauthOwners.set(this.root,this);
     this.trackHandoff(saved,null,onComplete);
     return true;
   }
   async connect(provider,actions,onComplete) {
-    if(this.pending)throw Error('Finish the current sign-in window first.');
+    if(this.pending||oauthOwners.has(this.root))
+      throw Error('Finish the current sign-in window first.');
+    oauthOwners.set(this.root,this);
     // Open synchronously on the user's tap where supported. Android WebViews
     // may block window.open; use same-window navigation with session-bound
     // short-lived state as a fallback, never a provider code or wallet token.
@@ -193,11 +202,11 @@ export class AccountConnections {
     // The callback resumes from this tab's sealed short-lived session state.
     const sameWindow=Boolean(this.root.location?.assign&&this.root.sessionStorage);
     let popup=null;
+    try{
     if(!sameWindow){
       try{popup=this.root.open?.('about:blank','bubbles-account-connect','popup,width=520,height=720')||null;}catch{}
       if(!popup)throw Error('This viewer cannot open sign-in. Open Account Connections in Chrome.');
     }
-    try{
       const result=await this.call('/start',{provider,actions});
       const authorization=new URL(result.authorizationUrl),state=authorization.searchParams.get('state');
       const expectedHost=provider==='google'?'accounts.google.com':provider==='github'?'github.com':provider==='cloudflare'?'dash.cloudflare.com':'';
@@ -215,9 +224,13 @@ export class AccountConnections {
       this.cleanup();
       this.clearPendingHandoff();
       throw error;
+    }finally{
+      if(!this.pending&&oauthOwners.get(this.root)===this)
+        oauthOwners.delete(this.root);
     }
   }
   cancelConnect() {
+    if(oauthOwners.get(this.root)!==this||!this.pending)return;
     const pending=this.pending;
     this.cleanup();
     this.clearPendingHandoff();
@@ -227,6 +240,8 @@ export class AccountConnections {
     const pending=this.pending;
     if(!pending)return;
     this.pending=null;
+    if(oauthOwners.get(this.root)===this)
+      oauthOwners.delete(this.root);
     if(pending.timer)this.root.clearTimeout(pending.timer);
     if(pending.pollTimer)this.root.clearTimeout(pending.pollTimer);
     if(pending.onReturn){

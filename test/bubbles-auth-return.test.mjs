@@ -100,3 +100,57 @@ test('Google callback returns to Bubbles chat when a valid chat-originated OAuth
  assert.equal(resumeAuthReturn(host),true);
  assert.equal(destination,'/bubbles.html');
 });
+
+test('successful chat OAuth return preserves original conversation',()=>{
+ for(const provider of ['github','cloudflare','google']){
+  const store=new Map();
+  const pending={
+   provider,state:'s'.repeat(43),
+   returnPath:'/bubbles.html',
+   flow:'same-window',
+   expiresAt:Date.now()+60000
+  };
+  store.set('bubbles:oauth-pending:v1',JSON.stringify(pending));
+  let destination='';
+  const host={
+   sessionStorage:{
+    getItem:k=>store.get(k)||null,
+    setItem:(k,v)=>store.set(k,v)
+   },
+   location:{
+    pathname:'/api/bubbles/connections/'+provider+'/callback',
+    search:'?result=received',
+    replace:v=>destination=v
+   }
+  };
+  assert.equal(resumeAuthReturn(host),true);
+  assert.equal(destination,'/bubbles.html');
+  assert.equal(store.get(
+   'quantaphi:bubbles:threads:v2:tab:site-update-reload'
+  ),'1');
+ }
+});
+
+test('declined authorization cannot create a chat resume marker',()=>{
+ const store=new Map();
+ store.set('bubbles:oauth-pending:v1',JSON.stringify({
+  provider:'github',state:'s'.repeat(43),
+  returnPath:'/bubbles.html',flow:'same-window',
+  expiresAt:Date.now()+60000
+ }));
+ const host={
+  sessionStorage:{
+   getItem:k=>store.get(k)||null,
+   setItem:(k,v)=>store.set(k,v)
+  },
+  location:{
+   pathname:'/api/bubbles/connections/github/callback',
+   search:'?result=declined',
+   replace:()=>assert.fail('must not redirect')
+  }
+ };
+ assert.equal(resumeAuthReturn(host),false);
+ assert.equal(store.has(
+  'quantaphi:bubbles:threads:v2:tab:site-update-reload'
+ ),false);
+});

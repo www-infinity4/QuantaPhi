@@ -126,3 +126,19 @@ A fresh reviewer approved source merge with BUBBLE_BITS_ENABLED absent/OFF after
 - Independent live Bubbles gateway diagnostic: [Test Ground AI run 42544470200](https://github.com/www-infinity4/QuantaPhi/actions/runs/42544470200) reported 7 passed, 8 unverified, 0 failed; response-only behavior is not repository execution. Moltnook [run 42544847722](https://github.com/www-infinity4/Moltnook/actions/runs/42544847722) was idle despite a green job; [run 42545651021](https://github.com/www-infinity4/Moltnook/actions/runs/42545651021) failed `merged_source_review_test_paths_missing`.
 - Status: **source_tested / review_pending**, not merged, not deployed, not visually accepted; no `eye-data` live artifact yet, no surgical source patch applied. A model patch remains a hypothesis until source path/literal/test/review verification. No Cloudflare consent extension or wallet mutation.
 - Next executable action: independent PR review followed by guarded Cloudflare Worker deployment with unchanged bindings, then merge and manual `bubbles-eye` dispatch, examine the real screenshots/capsule and false positives. After visual acceptance, continue the same #1192 Bubbles execution defect with a verified owner job and actual GitHub test/PR/receipt.
+
+### C13B0 018B — Brain claim containment
+
+Base: e585323eb565106d49fd56874343ced52934e020
+
+Observed Moltnook run 45777478407:
+claim / remote / HTTP 503.
+
+Isolate malformed ticket graphs without modifying
+their records, relaxing dependencies or releasing
+existing signed leases.
+
+Local regression tests passed.
+Production cause and deployment remain unverified.
+
+Evidence: QuantaPhi PR #2145. Production verification remains pending.
