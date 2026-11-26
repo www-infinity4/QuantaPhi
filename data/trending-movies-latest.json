@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-26T22:04:25.102251Z",
+  "checked_at": "2026-11-26T22:32:46.248405Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "Jmt9KUqotlo",
+      "title": "The Comeback King",
+      "video_id": "Jmt9KUqotlo",
+      "video_title": "The Comeback King Trailer #1 (2027)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-18T16:36:13Z",
+      "source_url": "https://www.youtube.com/watch?v=Jmt9KUqotlo",
+      "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "the comeback king",
+      "trend_checked_at": "2026-11-26T22:31:16.309606Z",
+      "trend_published_at": "2026-11-26T22:00:00Z",
+      "approx_searches": "5000+"
+    },
     {
       "id": "gKiWSvAjNG0",
       "title": "Clashing Through the Snow",
@@ -183,18 +199,6 @@
       "published_at": "2026-11-18T18:13:50Z",
       "source_url": "https://www.youtube.com/watch?v=pGlzSdv95lI",
       "poster": "https://i.ytimg.com/vi/pGlzSdv95lI/hqdefault.jpg",
-      "google_trending": false
-    },
-    {
-      "id": "Jmt9KUqotlo",
-      "title": "The Comeback King",
-      "video_id": "Jmt9KUqotlo",
-      "video_title": "The Comeback King Trailer #1 (2027)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-18T16:36:13Z",
-      "source_url": "https://www.youtube.com/watch?v=Jmt9KUqotlo",
-      "poster": "https://i.ytimg.com/vi/Jmt9KUqotlo/hqdefault.jpg",
       "google_trending": false
     },
     {
