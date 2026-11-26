@@ -352,3 +352,37 @@ test('owner local inference probe rejects missing, malformed, unfinished, mismat
  }
  await assert.rejects(probeLocalInference({model:'fixture-model:1',fetcher:async()=>new Response('offline',{status:503})}));
 });
+
+
+test('owner-host local chat uses only loopback, bounded text and no tool or execution claims',async()=>{
+ const {localChat}=await import('../distributed-vault/local-inference-probe.mjs');
+ let calls=0;
+ const reply=await localChat({model:'fixture-model:1',prompt:'Explain gravity.',fetcher:async(url,opts)=>{
+  calls++;
+  assert.equal(url,'http://127.0.0.1:11434/api/chat');
+  assert.equal(opts.redirect,'error');
+  assert.equal(opts.headers.Authorization,undefined);
+  const body=JSON.parse(opts.body);
+  assert.equal(body.messages.at(-1).content,'Explain gravity.');
+  assert.equal(body.stream,false);
+  assert.equal(body.tools,undefined);
+  assert.equal(body.options.num_predict,512);
+  return Response.json({model:'fixture-model:1',done:true,message:{role:'assistant',content:'Gravity attracts masses.'},eval_count:5});
+ }});
+ assert.equal(calls,1);
+ assert.equal(reply.reply,'Gravity attracts masses.');
+ assert.equal(reply.executionAuthorized,false);
+ assert.equal(reply.productionVerified,false);
+ assert.equal(reply.offlineRuntimeVerified,false);
+});
+
+test('owner-host local chat refuses remote model names, excessive input, tool calls and oversized output',async()=>{
+ const {localChat}=await import('../distributed-vault/local-inference-probe.mjs');
+ const never=async()=>assert.fail('unexpected request');
+ await assert.rejects(localChat({model:'remote-cloud:1',prompt:'Hello',fetcher:never}));
+ await assert.rejects(localChat({model:'fixture-model:1',prompt:'x'.repeat(16385),fetcher:never}));
+ const options={model:'fixture-model:1',prompt:'Hello'};
+ await assert.rejects(localChat({...options,fetcher:async()=>Response.json({model:options.model,done:true,eval_count:4,message:{role:'assistant',content:'Hello',tool_calls:[{function:{name:'anything'}}]}})}),/local_model_response_unverified/);
+ await assert.rejects(localChat({...options,fetcher:async()=>new Response('x'.repeat(262145))}),/local_model_response_too_large/);
+ await assert.rejects(localChat({...options,fetcher:async()=>new Response('Unavailable',{status:503})}),/local_model_unavailable/);
+});
