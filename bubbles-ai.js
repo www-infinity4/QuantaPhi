@@ -4974,17 +4974,32 @@ function requestAutomaticSiteUpdate(){
  // microphone safety gates decide if a page reload is currently allowed.
  void checkForSiteUpdate();
 }
+let nextBackgroundMemorySync=0,nextBackgroundVoiceCheck=0;
+function syncOwnerInBackground(){
+ if(!ownerReady)return;
+ // Active microphone leases still renew at the existing three-second cadence.
+ if(voiceLeaseWanted)void sharedVoice(false);
+ // A hidden idle chat must not spend requests refreshing unchanged state.
+ if(document.hidden)return;
+ const now=Date.now();
+ // Saving a new turn still calls sharedMemory immediately in persistChat.
+ // This timer only refreshes quiet conversations and retries queued messages.
+ if(!busy&&now>=nextBackgroundMemorySync){
+  nextBackgroundMemorySync=now+60000;
+  void sharedMemory();
+ }
+ if(!nativeOverlay&&now>=nextBackgroundVoiceCheck){
+  nextBackgroundVoiceCheck=now+30000;
+  void checkSharedVoiceStatus();
+ }
+}
 if(!embedded&&typeof setInterval==='function'){
  window.addEventListener('focus',requestAutomaticSiteUpdate);
  document.addEventListener('visibilitychange',()=>{if(!document.hidden)requestAutomaticSiteUpdate()});
  setTimeout(requestAutomaticSiteUpdate,1200);
  setInterval(requestAutomaticSiteUpdate,90000);
- // A short owner-scoped sync loop stops competing microphones and mirrors chat.
- setInterval(()=>{if(ownerReady){
-  if(!busy)void sharedMemory();
-  if(voiceLeaseWanted)void sharedVoice(false);
-  if(!nativeOverlay)void checkSharedVoiceStatus();
- }},3000);
+ // Keep microphone coordination responsive without polling idle memory constantly.
+ setInterval(syncOwnerInBackground,3000);
 }
 if(embedded){launcher.style.bottom='3px';launcher.style.right='3px'};
 // An embed opens inside a sandboxed iframe; only window dimensions are messaged.
