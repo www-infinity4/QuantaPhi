@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T01:31:12.252181Z",
+  "checked_at": "2026-11-26T02:01:28.317233Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nfl scores",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-picks-week-12-2026-nfl-season",
-        "https://www.nytimes.com/athletic/7813199/2026/11/25/predicting-the-nfl-thanksgiving-slate-plus-houstons-60m-question/",
-        "https://www.espn.com/espn/betting/story/_/id/50415106/nfl-week-12-odds-thanksgiving-betting-preview-props"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDjUzdNTEh-OkcbbA_2eeJCpvuXGOs-M2cKPKpnql6kOs61qIyRJxAibA6cu0",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-picks-week-12-2026-nfl-season",
-          "title": "NFL Week 12 picks: Upset and score predictions, matchup breakdowns for every game",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDjUzdNTEh-OkcbbA_2eeJCpvuXGOs-M2cKPKpnql6kOs61qIyRJxAibA6cu0"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7813199/2026/11/25/predicting-the-nfl-thanksgiving-slate-plus-houstons-60m-question/",
-          "title": "Predicting the NFL Thanksgiving slate, plus Houston’s $60M question",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCyNb6IZpwzRIAq7ie-Jrxrl4FBl07KR_OSlUXxjYQ00F1Dnu0bCFfZb9U8Eo"
-        },
-        {
-          "url": "https://www.espn.com/espn/betting/story/_/id/50415106/nfl-week-12-odds-thanksgiving-betting-preview-props",
-          "title": "Best bets and top prop plays for Bears-Lions, Eagles-Cowboys and Chiefs-Bills",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjfcLCaqo7gQp94CtGJuQSXYXSt2p-OU34sTgH5w2eeobhOczjnTg4IitGAvY"
-        }
-      ]
-    },
-    {
-      "query": "puka nacua injury",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50574387/puka-nacua-injury-last-season-los-angeles-rams-week-12",
-        "https://www.nfl.com/news/sean-mcvay-can-t-say-for-certain-anything-on-puka-nacua-s-future-with-rams",
-        "https://www.foxnews.com/outkick-sports/rams-star-puka-nacua-mcl-completely-tore-off-bone-season-ending-injury-report"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTN-W4o1WFooMdpZxVY-RSdtt663UsL6QGn_fIoDdYJOZvZiqDDYbLELgfP8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50574387/puka-nacua-injury-last-season-los-angeles-rams-week-12",
-          "title": "Has Puka Nacua played his final snaps in a Rams uniform?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTN-W4o1WFooMdpZxVY-RSdtt663UsL6QGn_fIoDdYJOZvZiqDDYbLELgfP8"
-        },
-        {
-          "url": "https://www.nfl.com/news/sean-mcvay-can-t-say-for-certain-anything-on-puka-nacua-s-future-with-rams",
-          "title": "Sean McVay 'can't say for certain anything' on Puka Nacua's future with Rams",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdOKtB7A8KTA43A9vnsGxfZ7-On4ZhlQzceEh8XbTU3e0jeC8gNYXFOvlOa8"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/rams-star-puka-nacua-mcl-completely-tore-off-bone-season-ending-injury-report",
-          "title": "Rams star Puka Nacua's MCL completely tore off the bone as details emerge from season-ending injury: report",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRyyIK_jmouH6KARrfDNTBNCDOesC6XDpod1ApJoluWU1kV6miJkez8q67PXsw"
-        }
-      ]
-    },
-    {
-      "query": "liga mx schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50575980/liga-mx-playoff-2026-apertura-preview-cruz-azul",
-        "https://sports.yahoo.com/soccer/articles/click-see-chivas-arrive-where-172600948.html",
-        "https://forzafootball.com/it/news/liga-mx-apertura-2026-playoffs-full-schedule-key-dates-format-teams-159488905"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToQRnhdJt4LATTutYF9m-rzbUZPZYWfHA4K_HclCjmX96ML4CPLzjG4nUim0Y",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50575980/liga-mx-playoff-2026-apertura-preview-cruz-azul",
-          "title": "Liga MX Apertura playoff preview: Will Cruz Azul win back-to-back titles?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToQRnhdJt4LATTutYF9m-rzbUZPZYWfHA4K_HclCjmX96ML4CPLzjG4nUim0Y"
-        },
-        {
-          "url": "https://sports.yahoo.com/soccer/articles/click-see-chivas-arrive-where-172600948.html",
-          "title": "Click here to see when Chivas arrive and where they'll stay in Pachuca",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuBj6w7e3j9qwGv7Ll0AMuPsqMp8LcIrJAwL4sVW3dV2pXHr-mT78aZJWaLyE"
-        },
-        {
-          "url": "https://forzafootball.com/it/news/liga-mx-apertura-2026-playoffs-full-schedule-key-dates-format-teams-159488905",
-          "title": "Liga MX Apertura 2026 Playoffs: Full Schedule, Key Dates, Format, Teams",
-          "publisher": "Forza Football",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJdHRe9KD-Wvti5K8Fq5J6JwXYWq2XIy3t9m-Qk0IikB9reOj7XWFydDfrn8"
-        }
-      ]
-    },
-    {
-      "query": "honda recalls",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
-        "https://abc11.com/story/honda-recalls-more-810000-vehicles-due-airbag-inflator-issue/20074409/",
-        "https://ktla.com/news/nationworld/800000-hondas-recalled-for-potentially-deadly-air-bag-inflators/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS2LFbohMBvvkYf7uqH3iaNwUF11QrZ6nrvji7H9suqr0tbiBQFM7z3Vwe4kE",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/news/a74507977/honda-crv-civic-accord-acura-rdx-ilx-takata-airbag-recall/",
-          "title": "Honda Issues Yet Another Recall for 810,592 Cars Equipped with Takata Airbags That Could Rupture",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRS2LFbohMBvvkYf7uqH3iaNwUF11QrZ6nrvji7H9suqr0tbiBQFM7z3Vwe4kE"
-        },
-        {
-          "url": "https://abc11.com/story/honda-recalls-more-810000-vehicles-due-airbag-inflator-issue/20074409/",
-          "title": "Honda recalls more than 810K vehicles due to airbag inflator issue",
-          "publisher": "ABC11 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRROXUPWyHU_ItxlIC6rAJdj8GRyHSfSASDZvejZxMP77adA7NeMiLf051kPPo"
-        },
-        {
-          "url": "https://ktla.com/news/nationworld/800000-hondas-recalled-for-potentially-deadly-air-bag-inflators/",
-          "title": "800,000 Hondas recalled for potentially deadly air bag inflators",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNuLZn9gSBfkBH_HkB8p_W6EvJyu38WR6zks9Y4oIrlVDz4x5yKPHox89XRY8"
-        }
-      ]
-    },
-    {
-      "query": "mfl",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/football/news/flex-finder-week-12-braelon-allen-antonio-williams-lead-thanksgiving-week-values",
-        "https://www.4for4.com/2026/w12/fantasy-football-week-12-breakout-model-picks",
-        "https://www.footballguys.com/article/2026-the-top-10-week12"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8hoxiHX7CwCoNQk7BxqJwMblwaKCOKRNR2ISH8py_8B1O2vV7tjdTq18NK4Q",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/news/flex-finder-week-12-braelon-allen-antonio-williams-lead-thanksgiving-week-values",
-          "title": "FLEX Finder Week 12: Braelon Allen, Antonio Williams lead Thanksgiving week values",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8hoxiHX7CwCoNQk7BxqJwMblwaKCOKRNR2ISH8py_8B1O2vV7tjdTq18NK4Q"
-        },
-        {
-          "url": "https://www.4for4.com/2026/w12/fantasy-football-week-12-breakout-model-picks",
-          "title": "Fantasy Football Week 12: Breakout Model Picks",
-          "publisher": "4for4",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpmC4ySeGaXjNvLz8nZXAsMQKqPYrE-s1obsk1sqHTkTMd8VHFRttWd14_1Xc"
-        },
-        {
-          "url": "https://www.footballguys.com/article/2026-the-top-10-week12",
-          "title": "The Top 10: Week 12",
-          "publisher": "Footballguys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUIud4G-qUzraHuMq3B20MZy_nMbCO3uVzJ2m6K0N6CsDiDTccyykLMB_Cnzo"
-        }
-      ]
-    },
-    {
-      "query": "nfl+",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.bengals.com/news/quick-hits-bengals-wary-glance-at-saints-edge-defense-seeks-turnovers-risner-cook-day-to-day",
-        "https://www.cbssports.com/nfl/news/bengals-look-to-bounce-back-vs-saints-protect-afc-north-lead/",
-        "https://sports.yahoo.com/nfl/articles/bengals-vs-saints-nfl-week-163009460.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKhJhRDR2-fOoZCmnd6Ev3zqw-txdzoZvjQRhGAovF4Mb23W1fQMRBfaMu9yg",
-      "image_credit": "Cincinnati Bengals",
-      "news": [
-        {
-          "url": "https://www.bengals.com/news/quick-hits-bengals-wary-glance-at-saints-edge-defense-seeks-turnovers-risner-cook-day-to-day",
-          "title": "Quick Hits | Bengals' Wary Glance At Saints' Edge; Defense Seeks Turnovers; Risner, Cook Day-to-Day",
-          "publisher": "Cincinnati Bengals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKhJhRDR2-fOoZCmnd6Ev3zqw-txdzoZvjQRhGAovF4Mb23W1fQMRBfaMu9yg"
-        },
-        {
-          "url": "https://www.cbssports.com/nfl/news/bengals-look-to-bounce-back-vs-saints-protect-afc-north-lead/",
-          "title": "Bengals look to bounce back vs. Saints, protect AFC North lead",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_3gzwG_vdXvmQke0fW-S2-3R3iRU7cMVnPPlB2HhyEU5E_LyTHZf0Mimk4bA"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/bengals-vs-saints-nfl-week-163009460.html",
-          "title": "Bengals vs. Saints NFL Week 12 Broadcast Map: Will you be able to watch on TV?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb8m0vcuy67-J98pPmNxLevSfHw8Pt4_E8ZyQMMtfYYeb6NDzqCT7A1-fgDlY"
-        }
-      ]
-    },
-    {
-      "query": "draftkings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:10:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-packers-vs-rams-nfl-thanksgiving-eve/",
-        "https://www.si.com/betting-promo/draftkings-promo-code-200-bonus-bets-offer-for-thanksgiving-week-12-nfl-01m84te0ac57",
-        "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-25-148192"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-packers-vs-rams-nfl-thanksgiving-eve/",
-          "title": "DraftKings promo code: Claim $200 bonus bets, free NBA League Pass for Packers vs. Rams, NFL Thanksgiving Eve",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8"
-        },
-        {
-          "url": "https://www.si.com/betting-promo/draftkings-promo-code-200-bonus-bets-offer-for-thanksgiving-week-12-nfl-01m84te0ac57",
-          "title": "DraftKings Promo Code: $200 Bonus Bets Offer for Thanksgiving Week 12 NFL",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy9066glMC7QVqrCJwwT47PZWG3Mi8IgTm08-YanJvuKX-09wJ7l_0hvRxYvA"
-        },
-        {
-          "url": "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-25-148192",
-          "title": "NBA League Pass Tree Trial: How to Get a Free Trial of NBA League Pass",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_Zxo-Z8LZ621O1i-RymWquFVLwTR3-ULUDHDesNLTxc6HjFpU66amzTGpT4"
-        }
-      ]
-    },
-    {
-      "query": "luke kuechly",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T01:00:00Z",
-      "related_news_urls": [
-        "https://www.wfmynews2.com/article/sports/nfl/panthers-legend-luke-kuechly-will-be-in-broadcast-booth-nfls-first-thanksgiving-eve-game/83-8da1745e-e2f4-422e-9e8f-3b3b34b7ff56",
-        "https://sports.yahoo.com/nfl/articles/u2-halftime-show-live-updates-003002438.html",
-        "https://variety.com/2026/tv/news/netflix-nfl-thanksgiving-eve-u2-1236956485/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhfEg283YnS5X3QklnKSsL0l2_sTV85WATJ9x8O_fAFKnz6-2LGwxya7Kh-BA",
-      "image_credit": "wfmynews2.com",
-      "news": [
-        {
-          "url": "https://www.wfmynews2.com/article/sports/nfl/panthers-legend-luke-kuechly-will-be-in-broadcast-booth-nfls-first-thanksgiving-eve-game/83-8da1745e-e2f4-422e-9e8f-3b3b34b7ff56",
-          "title": "Panthers legend Luke Kuechly will be in the broadcast booth for NFL's first Thanksgiving-eve game",
-          "publisher": "wfmynews2.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhfEg283YnS5X3QklnKSsL0l2_sTV85WATJ9x8O_fAFKnz6-2LGwxya7Kh-BA"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/u2-halftime-show-live-updates-003002438.html",
-          "title": "U2 halftime show live updates, reviews on 2026 NFL Thanksgiving Eve performance",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJ9dTfiqNrFBbiq-RiM_z6CGkpMXPYvUOjSvaswTDWmW7gtJI977zpQfLzOtg"
-        },
-        {
-          "url": "https://variety.com/2026/tv/news/netflix-nfl-thanksgiving-eve-u2-1236956485/",
-          "title": "How Netflix and the NFL Hope to Establish New Thanksgiving Eve Tradition With Game and U2 Halftime Show: ‘We Want to Create Those Global Water Cooler Moments’",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2f0DbC3Av6OoKyLfEcut1MuFgntHHIi8hPyEt97YySgcw8GHXnq9yVocNi4o"
-        }
-      ]
-    },
-    {
-      "query": "anthony edwards",
+      "query": "jumanji open world",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T00:50:00Z",
+      "published_at": "2026-11-26T01:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/articles/timberwolves-rumors-minnesota-insider-makes-155458613.html",
-        "https://www.si.com/nba/video/can-a-healthy-timberwolves-team-really-challenge-the-spurs-01m881797r7tr6ra25tq",
-        "https://www.nba.com/news/anthony-edwards-working-through-rehab-is-unsure-when-hell-be-back-in-lineup"
+        "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
+        "https://cwibc.co.id/en/jumanji-film-global-vr-launch",
+        "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjs-WmOobLReTwM6OdTv4a9tgHvPZusbNLrKnipRj-p5jNGZkEeZk2zV4c_yQ",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw",
+      "image_credit": "Collider",
       "news": [
         {
-          "url": "https://sports.yahoo.com/articles/timberwolves-rumors-minnesota-insider-makes-155458613.html",
-          "title": "Timberwolves rumors: Minnesota insider makes Anthony Edwards injury return prediction, and it’s looking like 2027",
-          "publisher": "Yahoo Sports",
+          "url": "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
+          "title": "‘Jumanji’ Officially Expands With New Release Ahead of Final Movie",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjs-WmOobLReTwM6OdTv4a9tgHvPZusbNLrKnipRj-p5jNGZkEeZk2zV4c_yQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw"
         },
         {
-          "url": "https://www.si.com/nba/video/can-a-healthy-timberwolves-team-really-challenge-the-spurs-01m881797r7tr6ra25tq",
-          "title": "Can a Healthy Timberwolves Team Really Challenge the Spurs?",
-          "publisher": "Sports Illustrated",
+          "url": "https://cwibc.co.id/en/jumanji-film-global-vr-launch",
+          "title": "Jumanji Expands With Final Film and Global VR Launch",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTUYBIXaMgk8SeQXYK42AiH2cePAQO4NJx_ZmGHzOfrkCU1RM29xvs9H-Eqe7s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREu_vzcOa75IWDOecnT6uYRGSX1T3TD5Ekivw2epXnMmEWiRIyVXH5NeoGZvc"
         },
         {
-          "url": "https://www.nba.com/news/anthony-edwards-working-through-rehab-is-unsure-when-hell-be-back-in-lineup",
-          "title": "Anthony Edwards working through rehab, is unsure when he'll be back in lineup",
-          "publisher": "NBA.com",
+          "url": "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/",
+          "title": "Jumanji: Open World Trailer Reveals Final Adventure",
+          "publisher": "Explosion Network",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2IXc-YIabF_T6kYOJ9R43I7FBUWSi5wgV-hE1zMIsP_DlFKMnK7-07SmfZoE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLyVXjpZoBG7Yd7yYz9s_mRATlDu_-TstD86nFwbU_W1I9zserYYjiaTcOsiw"
         }
       ]
     },
     {
-      "query": "tony romo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T00:50:00Z",
+      "query": "canadiens vs avalanche",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T01:40:00Z",
       "related_news_urls": [
-        "https://www.wfaa.com/article/news/entertainment-news/former-cowboys-quarterback-tony-romo-lands-new-job-two-months-after-cbs-departure/287-e5c9d597-1435-449b-8ac3-3e096f838dd9",
-        "https://www.nytimes.com/athletic/7813071/2026/11/25/tony-romo-betr-jake-paul-sports-betting-chief-predictions-officer/",
-        "https://www.foxnews.com/sports/tony-romo-lands-new-job-sports-gaming-company-betr-months-after-cbs-departure-owi-arrest"
+        "https://www.nhl.com/news/montreal-canadiens-colorado-avalanche-game-preview-november-25-2026",
+        "https://www.milehighhockey.com/colorado-avalanche-game-coverage/68010/preview-sacre-bleu-blanc-et-rouge-part-deux",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/montreal-canadiens-vs-colorado-avalanche-prediction-odds-2026-11-25/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRulmVtBw20sUkbu5ujUIylbUx1bSunZBbEz0isjTjuy4jmYQynCpNYdyeVU",
-      "image_credit": "WFAA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.wfaa.com/article/news/entertainment-news/former-cowboys-quarterback-tony-romo-lands-new-job-two-months-after-cbs-departure/287-e5c9d597-1435-449b-8ac3-3e096f838dd9",
-          "title": "Former Cowboys quarterback Tony Romo lands new job nearly two months after CBS departure",
-          "publisher": "WFAA",
+          "url": "https://www.nhl.com/news/montreal-canadiens-colorado-avalanche-game-preview-november-25-2026",
+          "title": "Canadiens at Avalanche projected lineups",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnRulmVtBw20sUkbu5ujUIylbUx1bSunZBbEz0isjTjuy4jmYQynCpNYdyeVU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7813071/2026/11/25/tony-romo-betr-jake-paul-sports-betting-chief-predictions-officer/",
-          "title": "Tony Romo joins Jake Paul’s sports betting company in first post-CBS job - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.milehighhockey.com/colorado-avalanche-game-coverage/68010/preview-sacre-bleu-blanc-et-rouge-part-deux",
+          "title": "Preview: Sacre Bleu-Blanc-et-Rouge (Part Deux)!",
+          "publisher": "Mile High Hockey",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhjM5exbolDQyUUFl15D4th2_4EfZDEl4LsQ0eBzgcX8a4YyOhQx5GDHNJuI8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwS2HRYSBEt7MrXzgoxrRoUDPVs4bTdC_bWjuVQIqXNR8mpF3F9KwI9f8tuk4"
         },
         {
-          "url": "https://www.foxnews.com/sports/tony-romo-lands-new-job-sports-gaming-company-betr-months-after-cbs-departure-owi-arrest",
-          "title": "Tony Romo lands new job at sports gaming company Betr months after his CBS departure over OWI arrest",
-          "publisher": "Fox News",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/montreal-canadiens-vs-colorado-avalanche-prediction-odds-2026-11-25/",
+          "title": "Montreal Canadiens vs Colorado Avalanche Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXcoPfU0zk3qX7dN8x4Ew20-9L4OUKpQmSf3F9tH8CEk07iJAdO8AUFNiyzvg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNIlljOohQxAAmsZyIG-p0KtwqvOdukyV0pUg1dy96m973gDLKfXBAI5vB0g"
+        }
+      ]
+    },
+    {
+      "query": "harper murray",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T01:40:00Z",
+      "related_news_urls": [
+        "https://www.indystar.com/story/sports/nba/pacers/2026/11/24/tyrese-haliburton-wife-jade-purdue-nebraska-volleyball-match-big-ten-tournament-wisconsin-penn-state/92949665007/",
+        "https://sports.yahoo.com/womens-college-basketball/articles/harper-murray-nba-star-tyrese-125827728.html",
+        "https://www.usatoday.com/videos/sports/college/2026/11/25/nebraska-volleyball-star-talks-friendship-with-pacers-tyrese-haliburton/92957673007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShi6jTTFK-hCk_OP93oKkSpiEj99hQJx9sl5oLmegbuKUv1kPEK_TCDcysT70",
+      "image_credit": "IndyStar",
+      "news": [
+        {
+          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/24/tyrese-haliburton-wife-jade-purdue-nebraska-volleyball-match-big-ten-tournament-wisconsin-penn-state/92949665007/",
+          "title": "Tyrese Haliburton, wife take in Purdue-Nebraska volleyball to support Harper Murray",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShi6jTTFK-hCk_OP93oKkSpiEj99hQJx9sl5oLmegbuKUv1kPEK_TCDcysT70"
+        },
+        {
+          "url": "https://sports.yahoo.com/womens-college-basketball/articles/harper-murray-nba-star-tyrese-125827728.html",
+          "title": "Harper Murray, NBA star Tyrese Haliburton link at Big Ten volleyball tournament",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK1J5LtEuaiAnT8lWkNYalmEhoKx7tkJag4fMpWalOHAFQ77EJ3pGUwit4Rzc"
+        },
+        {
+          "url": "https://www.usatoday.com/videos/sports/college/2026/11/25/nebraska-volleyball-star-talks-friendship-with-pacers-tyrese-haliburton/92957673007/",
+          "title": "Nebraska volleyball star talks friendship with Pacers' Tyrese Haliburton",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ0DliJ3_BULWzuc_8NotNlogm2y7UJ3BtQUEJUn-7jn2ef6pNrgZKLfCuuXg"
+        }
+      ]
+    },
+    {
+      "query": "погода завтра",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T01:40:00Z",
+      "related_news_urls": [
+        "https://www.irk.ru/news/20261124/weather/",
+        "https://irk.today/2026/11/26/v-irkutske-26-noyabrya-ozhidaetsya-nebolshoy-sneg-i-poryvistyy-veter/",
+        "https://baikal24.ru/text/25-11-2026/057/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwK8M1MkmTX6wAq4_dmZvSQgesb8L7Pb9Itfd827ANhnbyFiDG0AN_kbdVcFA",
+      "image_credit": "Твой Иркутск",
+      "news": [
+        {
+          "url": "https://www.irk.ru/news/20261124/weather/",
+          "title": "Сильный снег и порывистый ветер ожидаются в Иркутской области 25 ноября",
+          "publisher": "Твой Иркутск",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwK8M1MkmTX6wAq4_dmZvSQgesb8L7Pb9Itfd827ANhnbyFiDG0AN_kbdVcFA"
+        },
+        {
+          "url": "https://irk.today/2026/11/26/v-irkutske-26-noyabrya-ozhidaetsya-nebolshoy-sneg-i-poryvistyy-veter/",
+          "title": "В Иркутске 26 ноября ожидается небольшой снег, порывистый ветер и -1…-3°",
+          "publisher": "Иркутск Сегодня",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzrOqokqs1I8YeK4TrzCm2ZssghsbzGPRjKj6saqwaHej8TPD2OETOCMaUpFM"
+        },
+        {
+          "url": "https://baikal24.ru/text/25-11-2026/057/",
+          "title": "Метели обрушатся на районы Иркутской области в четверг",
+          "publisher": "Байкал24",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoS7p-vi9CoIPaplZiWv6S6ukkAz4am6VXVkDNyki94RTl5uRbIdtXGUbc3PA"
+        }
+      ]
+    },
+    {
+      "query": "love actually",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T01:40:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/politics/2026/nov/25/max-balegde-how-influencers-cunning-comms-plan-no-10-nightmare",
+        "https://www.bbc.com/news/articles/cwg7l5yv2j73o",
+        "https://www.thetimes.com/uk/politics/article/andy-burnham-max-balegde-luke-hamnett-n2rlvpb8s"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLD1euwCZmC0fbHQOIhdIaK3Q_mCb5XVb8iBfATGO-xB7WEMWcyjHfi44NfU",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/politics/2026/nov/25/max-balegde-how-influencers-cunning-comms-plan-no-10-nightmare",
+          "title": "Max Balegde: how influencer turned a cunning comms plan into a No 10 nightmare",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLD1euwCZmC0fbHQOIhdIaK3Q_mCb5XVb8iBfATGO-xB7WEMWcyjHfi44NfU"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cwg7l5yv2j73o",
+          "title": "Downing Street's dancing TikToker defends visit",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUQrUm-7GRUueAdV_T6GoHrCUuD_quKkA0-hMs6Un9ndOrA6go5Shq57nwZKQ"
+        },
+        {
+          "url": "https://www.thetimes.com/uk/politics/article/andy-burnham-max-balegde-luke-hamnett-n2rlvpb8s",
+          "title": "Influencers are using No 10 as a film set and it’s Grim, Actually",
+          "publisher": "The Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqeHss8FC4pbcWT5hWfGe8bvFcnIoXxIP9q37ASf9IR0Cx3_FfheIkr4o6y0"
+        }
+      ]
+    },
+    {
+      "query": "partidos de liga mx",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T01:40:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17558218/liga-mx-liguilla-apertura-cuartos-finales-antecedentes",
+        "https://www.telemundo.com/deportes/liga-mx/cuartos-de-final-de-la-liga-mx-las-historias-a-seguir-de-las-cuatro-ri-rcna611326",
+        "https://www.si.com/es-us/predicciones-de-la-ida-en-los-cuartos-de-final-del-apertura-2026-de-la-liga-mx"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT30A1Yp0bCJ9SCS4S92QGU3RxYg6M3r3V_xboPVnV8zwrlI5KFyktyfsF0bZw",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17558218/liga-mx-liguilla-apertura-cuartos-finales-antecedentes",
+          "title": "Liga MX: los cruces de liguilla revivirán finales épicas",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT30A1Yp0bCJ9SCS4S92QGU3RxYg6M3r3V_xboPVnV8zwrlI5KFyktyfsF0bZw"
+        },
+        {
+          "url": "https://www.telemundo.com/deportes/liga-mx/cuartos-de-final-de-la-liga-mx-las-historias-a-seguir-de-las-cuatro-ri-rcna611326",
+          "title": "Cuartos de final de la Liga MX: las historias a seguir de las cuatro rivalidades",
+          "publisher": "Telemundo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxEu8GHM7Kv9ACYzuKBgIcofAKH924_kQCzwNfFjr0mRMPDF4G9B7eeL_-lC4"
+        },
+        {
+          "url": "https://www.si.com/es-us/predicciones-de-la-ida-en-los-cuartos-de-final-del-apertura-2026-de-la-liga-mx",
+          "title": "Predicciones de la ida en los cuartos de final del Apertura 2026 de la Liga MX",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbZlMAzSJFUbO4TKBJWLi-tc3E0vQEuBOy85ud4Ehn-2jMkW6pNoGpIQCGBE"
+        }
+      ]
+    },
+    {
+      "query": "are butterball turkeys being recalled",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T01:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
+        "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
+        "https://theonion.com/butterball-recalls-40000-turkeys-for-proper-christian-burial/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
+          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg"
+        },
+        {
+          "url": "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
+          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
+          "publisher": "inkl",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiajHZyI2rzia5Z0od3bmO6VNGEEi8qkzZe_tfSuC1hFaFQj5Y6-1rZOg1U_M"
+        },
+        {
+          "url": "https://theonion.com/butterball-recalls-40000-turkeys-for-proper-christian-burial/",
+          "title": "Butterball Recalls 40,000 Turkeys For Proper Christian Burial",
+          "publisher": "The Onion",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPd3Cyw4QRM0ADPPhm2_Bu3QEzIhDoh-AfWJHe_HSBJhYA0URLTvpSDfyBBPo"
+        }
+      ]
+    },
+    {
+      "query": "météo demain",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T01:30:00Z",
+      "related_news_urls": [
+        "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-22/froid-l-hiver-debarque-en-milieu-de-semaine-vers-les-1ers-jours-sans-degel-dans-l-est-du-pays-94477",
+        "https://selectra.info/energie/actualites/marche/froid-week-end-villes-redoux-lundi-30-gaz",
+        "https://www.journaldugeek.com/2026/11/25/18-c-a-paris-29-c-a-strasbourg-ce-scenario-glacant-si-le-courant-qui-rechauffe-leurope-seffondre/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUR9XrX0q6yqUr2W_bDulLGbpT6isrJkD95yqh53bQefg46ZzzRT5YSUpZ--M",
+      "image_credit": "La Chaîne Météo",
+      "news": [
+        {
+          "url": "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-22/froid-l-hiver-debarque-en-milieu-de-semaine-vers-les-1ers-jours-sans-degel-dans-l-est-du-pays-94477",
+          "title": "Froid : l’hiver débarque en milieu de semaine, vers les 1ers jours sans dégel dans l'est du pays",
+          "publisher": "La Chaîne Météo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUR9XrX0q6yqUr2W_bDulLGbpT6isrJkD95yqh53bQefg46ZzzRT5YSUpZ--M"
+        },
+        {
+          "url": "https://selectra.info/energie/actualites/marche/froid-week-end-villes-redoux-lundi-30-gaz",
+          "title": "Gel dans le Nord et l'Est : jusqu'à quand il va durer dans votre ville, et la date du redoux",
+          "publisher": "Selectra",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJK3Y1-qBu1q36pW72trg9rbP93WupT2fiIjhSfSCABz93syBhVqWfPas4EBg"
+        },
+        {
+          "url": "https://www.journaldugeek.com/2026/11/25/18-c-a-paris-29-c-a-strasbourg-ce-scenario-glacant-si-le-courant-qui-rechauffe-leurope-seffondre/",
+          "title": "-18 °C à Paris, -29 °C à Strasbourg : ce scénario glaçant si le courant qui réchauffe l'Europe s'effondre",
+          "publisher": "Journal du Geek",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJV-OrBWDRdYkPufCMNtYgKavHXbL1LGwBznZLKBdtGKpn6-rggscxPJnIazs"
+        }
+      ]
+    },
+    {
+      "query": "clima para amanhã",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T01:30:00Z",
+      "related_news_urls": [
+        "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-vento-forte-do-quadrante-sul-agita-o-litoral",
+        "https://g1.globo.com/sc/santa-catarina/videos-nsc-noticias/video/confira-a-previsao-do-tempo-em-sc-15281738.ghtml",
+        "https://www.acaert.com.br/noticia/64602/acaert-agora-edicao-04-previsao-do-tempo-com-danielle-lima-chance-de-chuva-diminui-ate-o-fim-da-semana-com-chegada-de-massa-de-ar-seco-a-sc"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw",
+      "image_credit": "Portal do Holanda",
+      "news": [
+        {
+          "url": "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-vento-forte-do-quadrante-sul-agita-o-litoral",
+          "title": "Clima para amanhã em Florianópolis: vento forte do quadrante sul agita o litoral",
+          "publisher": "Portal do Holanda",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
+        },
+        {
+          "url": "https://g1.globo.com/sc/santa-catarina/videos-nsc-noticias/video/confira-a-previsao-do-tempo-em-sc-15281738.ghtml",
+          "title": "Confira a Previsão do Tempo em SC",
+          "publisher": "G1",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhlgj7p9Gc1-uWXpu19hbJkX-qd7_udoEZaPN_u7QPrH15III2FF7Y6m2Z_oY"
+        },
+        {
+          "url": "https://www.acaert.com.br/noticia/64602/acaert-agora-edicao-04-previsao-do-tempo-com-danielle-lima-chance-de-chuva-diminui-ate-o-fim-da-semana-com-chegada-de-massa-de-ar-seco-a-sc",
+          "title": "Edição 04 | Previsão do tempo com Danielle Lima: chance de chuva diminui até o fim da semana com chegada de massa de ar seco a SC",
+          "publisher": "Acaert",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzunYqoC4XXeyqyETpNuJTo5L1b78Hkb-9GcShw6JPXPtNZlNegG0nzlzNWvg"
+        }
+      ]
+    },
+    {
+      "query": "mumpfield",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T01:30:00Z",
+      "related_news_urls": [
+        "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
+        "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
+        "https://cwibc.co.id/en/rams-konata-mumpfield-receiver-role"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA",
+      "image_credit": "RotoBaller",
+      "news": [
+        {
+          "url": "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
+          "title": "Week 12 Waiver Wire Pickups - Konata Mumpfield, CJ Daniels, Tyler Higbee Fantasy Football Outlooks",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
+          "title": "Konata Mumpfield Will maintain larger role sans Nacua",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQriX7bZWkf20b3G6Phe65rn0itKnqEnV2jp6qfp63aFL1aooLCLNYFRRRXHRo"
+        },
+        {
+          "url": "https://cwibc.co.id/en/rams-konata-mumpfield-receiver-role",
+          "title": "Rams Turn to Konata Mumpfield After Losing Top Receivers",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5dMA-mvXeEVHhVEtrHCUk2oQzUZ7QjskrhVBf_hiRSLCafUEqblegebyEM7I"
         }
       ]
     }
