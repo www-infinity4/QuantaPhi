@@ -150,3 +150,15 @@ Added connector retry control without expanding OAuth grants.
 Focused source tests passed locally.
 CI, merge, deployment and Android acceptance remain pending.
 Related ticket: #1927.
+
+### C13B0 Fix 015 — chat continuity
+
+Base: 893027ac232e158cb2ba139f32099ef48ea0f46c
+
+Preserve the original saved conversation on a matching
+same-window OAuth return. Reuse the existing one-time
+conversation resume mechanism.
+
+Local focused tests passed.
+No credentials, permissions or wallet records modified.
+CI and live Android acceptance remain pending.
