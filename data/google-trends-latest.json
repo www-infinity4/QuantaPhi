@@ -3,356 +3,340 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T20:01:27.098891Z",
+  "checked_at": "2026-11-26T20:31:00.591015Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "super bowl halftime show 2027",
+      "query": "avengers doomsday",
       "approx_searches": "10000+",
-      "published_at": "2026-11-26T19:40:00Z",
+      "published_at": "2026-11-26T20:10:00Z",
       "related_news_urls": [
-        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-        "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
-        "https://www.wsj.com/business/media/imax-to-show-super-bowl-lxi-in-theaters-through-partnership-with-disney-the-nfl-997dc4be"
+        "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
+        "https://hypebeast.com/2026/11/marvel-avengers-doomsday-robert-downey-jr-doctor-doom-official-final-trailer-release-info",
+        "https://movieweb.com/avengers-doomsday-international-teaser/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
-      "image_credit": "CNBC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
-          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
-        },
-        {
-          "url": "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
-          "title": "Disney, ESPN and NFL take Super Bowl to IMAX theaters",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA1qcH_8IyZQn-GiL_ixaHBCQGgOxWh92BSf5_NIhiublS37aFuW8S2SXUHoU"
-        },
-        {
-          "url": "https://www.wsj.com/business/media/imax-to-show-super-bowl-lxi-in-theaters-through-partnership-with-disney-the-nfl-997dc4be",
-          "title": "IMAX to Show Super Bowl LXI in Theaters Through Partnership With Disney, the NFL",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7o0AUKEirckG_xoBBag9Elcblv1t6EH_bjVUfrxLjdkZUG1LwJffJ3rzfhiE"
-        }
-      ]
-    },
-    {
-      "query": "will ferrell",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-26T19:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/will-ferrell-golf-show-hawk-canceled-netflix-flopping-first-season",
-        "https://deadline.com/2026/11/will-ferrell-the-hawk-canceled-netflix-one-season-1237233347/",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/happy-thanksgiving-netflix-just-canceled-134231269.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9wtekLzMkofImX1a01LZ7jN_OCBqTRAuD6vfq6ScZKqrMY9wkoj_Nim2xCrs",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/will-ferrell-golf-show-hawk-canceled-netflix-flopping-first-season",
-          "title": "Will Ferrell golf show 'The Hawk' canceled by Netflix after flopping in first season",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9wtekLzMkofImX1a01LZ7jN_OCBqTRAuD6vfq6ScZKqrMY9wkoj_Nim2xCrs"
-        },
-        {
-          "url": "https://deadline.com/2026/11/will-ferrell-the-hawk-canceled-netflix-one-season-1237233347/",
-          "title": "Will Ferrell Comedy ‘The Hawk’ Canceled By Netflix After One Season",
+          "url": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
+          "title": "‘Avengers: Doomsday’ Final Trailer Clocks 563M Views, Best Ever For Disney; 2nd Most Viewed Of All-Time",
           "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLYab22-h_Veh1H2Bb8BcfxPBMRThho9GWrcU_Ij_Ng7UvBpUmkMyvrB6rKSE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/happy-thanksgiving-netflix-just-canceled-134231269.html",
-          "title": "Happy Thanksgiving, Netflix Just Canceled Two Shows With Major Stars",
-          "publisher": "Yahoo",
+          "url": "https://hypebeast.com/2026/11/marvel-avengers-doomsday-robert-downey-jr-doctor-doom-official-final-trailer-release-info",
+          "title": "The Avengers, X-Men, and Fantastic Four Unite in the Final 'Avengers: Doomsday' Trailer",
+          "publisher": "Hypebeast",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZyz7E1dSLK5QcrmTsxyDFGXRR1kCswtQ3TbjREhC0_capdwo7V-uuSgDYAUY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWJ3wlLO93UbISUF4oKDjVeqJhGw2k5pkMJitXDFSHuwQXSoeJXWkTiSOOtPY"
+        },
+        {
+          "url": "https://movieweb.com/avengers-doomsday-international-teaser/",
+          "title": "Thor & Steve Rogers Come Face-To-Face With Doom for the First Time in New 'Avengers' Teaser",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROG2hyVrV3UMcoGeiKwYN4jyThnAGgXkm9KBa_slO4QZnpuWIxD6T41WFN8x0"
         }
       ]
     },
     {
-      "query": "dj jacobs",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:40:00Z",
+      "query": "doomsday tickets",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T20:10:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/tennessee/article/dawson-jacobs-tennessee-recruiting-top247-dl-nearing-decision-after-visiting-vols-again-has-ut-high-up-on-my-list-293293094/",
-        "https://atozsports.com/nashville/volunteers/football-ohio-state-tennessee-5-star-vols-recruiting-target-dj-jacobs-final-decision/",
-        "https://sports.yahoo.com/articles/georgia-may-weekend-hated-rival-142302323.html"
+        "https://thewaltdisneycompany.com/news/movie-ticketing-disney-plus-avengers-doomsday/",
+        "https://qz.com/avengers-doomsday-tickets-disney-plus",
+        "https://indiantelevision.com/iworld/disney-adds-cinema-ticket-booking-through-fandango-integration/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwwyUbu1zaIOQ-6JIX_pK7b1pOnRitwg1cFLclRm78c0Z4yGqj7RJ9K3nllcw",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEHuANw__QYydDaQVkO272-rz7zKRrgAYl92OZAXNP8cXo2_t7ZYghxU1i83o",
+      "image_credit": "The Walt Disney Company",
       "news": [
         {
-          "url": "https://247sports.com/college/tennessee/article/dawson-jacobs-tennessee-recruiting-top247-dl-nearing-decision-after-visiting-vols-again-has-ut-high-up-on-my-list-293293094/",
-          "title": "Top247 DL Jacobs nearing decision after visiting Vols again, has Tennessee 'high up on my list'",
+          "url": "https://thewaltdisneycompany.com/news/movie-ticketing-disney-plus-avengers-doomsday/",
+          "title": "Movie Ticketing Feature Comes to Disney+ for ‘Avengers: Doomsday’",
+          "publisher": "The Walt Disney Company",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEHuANw__QYydDaQVkO272-rz7zKRrgAYl92OZAXNP8cXo2_t7ZYghxU1i83o"
+        },
+        {
+          "url": "https://qz.com/avengers-doomsday-tickets-disney-plus",
+          "title": "3 Ways to Buy Avengers: Doomsday Tickets Inside Disney+ and What to Know",
+          "publisher": "qz.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mu6LeKUctIMwXT3AbmjThsAkMIGgE4UDbD6jy40ul6H-6xtHUpnwEs_l5l4"
+        },
+        {
+          "url": "https://indiantelevision.com/iworld/disney-adds-cinema-ticket-booking-through-fandango-integration/",
+          "title": "Disney+ adds cinema ticket booking through Fandango integration",
+          "publisher": "Indian Television Dot Com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kDORG-w-LSIlKLX3cgO8BBz9wqekI-U0N_kcv9K5zloaccVl3vxh9n69k14"
+        }
+      ]
+    },
+    {
+      "query": "iowa state basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T20:10:00Z",
+      "related_news_urls": [
+        "https://utsports.com/news/2026/11/25/mens-basketball-hoops-central-9-11-tennessee-vs-iowa-state",
+        "https://247sports.com/college/iowa-state/article/iowa-state-basketball-game-day-central-vs-tennessee-293332073/",
+        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/26/iowa-state-basketball-tennessee-time-tv-players-era-channel-stream/92943057007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqnVXuxFkXTzE_Rf3eYP37hWLEeRar9oPZwZOz6VZhZhk7wKfSYbkptS-afaw",
+      "image_credit": "University of Tennessee Athletics",
+      "news": [
+        {
+          "url": "https://utsports.com/news/2026/11/25/mens-basketball-hoops-central-9-11-tennessee-vs-iowa-state",
+          "title": "HOOPS CENTRAL: #9/11 Tennessee vs. Iowa State",
+          "publisher": "University of Tennessee Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqnVXuxFkXTzE_Rf3eYP37hWLEeRar9oPZwZOz6VZhZhk7wKfSYbkptS-afaw"
+        },
+        {
+          "url": "https://247sports.com/college/iowa-state/article/iowa-state-basketball-game-day-central-vs-tennessee-293332073/",
+          "title": "Game Day Central: Iowa State vs. Tennessee in Player's Era 16 semifinals",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwwyUbu1zaIOQ-6JIX_pK7b1pOnRitwg1cFLclRm78c0Z4yGqj7RJ9K3nllcw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNMiG8tun1AOSvRfc27X3oco3J5fEs_mbytaljXy3etcxpz-dQ1EEh9LmDLlw"
         },
         {
-          "url": "https://atozsports.com/nashville/volunteers/football-ohio-state-tennessee-5-star-vols-recruiting-target-dj-jacobs-final-decision/",
-          "title": "'I don't see him doing something before then' - Insider shares the latest on when 5-star Vols recruiting target DJ Jacobs could make a final decision",
-          "publisher": "A to Z Sports",
+          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/26/iowa-state-basketball-tennessee-time-tv-players-era-channel-stream/92943057007/",
+          "title": "How to watch Iowa State basketball vs Tennessee on Thursday | TV info",
+          "publisher": "The Des Moines Register",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhx_OqB6fLMTQ3iQ_XM9v2BWTsKnpNs5Rljcatea-2Rj-2P1ga_39dLBYnaxE"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/georgia-may-weekend-hated-rival-142302323.html",
-          "title": "Georgia May Find Out This Weekend if They or Hated Rival Land Shocking Flip",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOizqUG5iiOW883sOAbNUGP4jmEFj3HYSILzEdri5tPwesJ3_nlU3aK4Y1NWI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELAA3JdVmEOgFUdJ-2Zl-otiVFCiO4Cuh9R4ls5gUgo4ggi4SuU1tpZpmc2c"
         }
       ]
     },
     {
-      "query": "cowboys eagles halftime show",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:40:00Z",
+      "query": "when does avengers doomsday come out",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T20:10:00Z",
       "related_news_urls": [
-        "https://www.detroitnews.com/story/entertainment/music/2026/11/26/video-antonio-cipriano-sings-anthem-before-lions-thanksgiving-game/92971887007/",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/26/bears-lions-national-anthem-singer-antonio-cipriano-thanksgiving-game/92929696007/",
-        "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b"
+        "https://www.imdb.com/es/news/ni66129692/?ref_=int_nwr_1",
+        "https://twistedvoxel.com/avengers-doomsday-review-embargo/",
+        "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsdays-review-embargo-has-been-revealed-heres-when-the-first-reviews-will-drop-a231219"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDRclGOktd_KB7fW8lhBJ3Xdl8FPLo7UE7QnbCbwoQI7XQBrQRmJiUzpwyIfM",
-      "image_credit": "The Detroit News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZn9pw2kdoaWg4et7QI-TVbJhjuwhJnJi57IRCgvu7iN5ElljX058OHLyyAc",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.detroitnews.com/story/entertainment/music/2026/11/26/video-antonio-cipriano-sings-anthem-before-lions-thanksgiving-game/92971887007/",
-          "title": "Antonio Cipriano sings National Anthem before Lions Thanksgiving game",
-          "publisher": "The Detroit News",
+          "url": "https://www.imdb.com/es/news/ni66129692/?ref_=int_nwr_1",
+          "title": "‘Avengers: Doomsday’ Reviews Finally Have a Drop Time, and Marvel Is Cutting It Close",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDRclGOktd_KB7fW8lhBJ3Xdl8FPLo7UE7QnbCbwoQI7XQBrQRmJiUzpwyIfM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZn9pw2kdoaWg4et7QI-TVbJhjuwhJnJi57IRCgvu7iN5ElljX058OHLyyAc"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/26/bears-lions-national-anthem-singer-antonio-cipriano-thanksgiving-game/92929696007/",
-          "title": "Bears vs Lions national anthem singer: What to know about Antonio Cipriano",
+          "url": "https://twistedvoxel.com/avengers-doomsday-review-embargo/",
+          "title": "Avengers: Doomsday Review Embargo Reportedly Lifts Three Days Before US Release",
+          "publisher": "TwistedVoxel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4IStfcEK2QIOAsnFrSYVV6j7UpRXK6WLGNE5l9jtNrz0xYtkDyork5jRoGRE"
+        },
+        {
+          "url": "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsdays-review-embargo-has-been-revealed-heres-when-the-first-reviews-will-drop-a231219",
+          "title": "Avengers: Doomsday's Review Embargo Has Been Revealed — Here's When The First Reviews Will Drop",
+          "publisher": "ComicBookMovie.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuGuOVhCZk7ByIGdHPMwpPdBzwOmT7sCn9Rsgmtp3LlzDLV5NJQpZnjqHIGhk"
+        }
+      ]
+    },
+    {
+      "query": "tornado warning seattle",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T20:00:00Z",
+      "related_news_urls": [
+        "https://www.kiro7.com/news/local/tornado-warning-issaquah-north-bend/5YVGHXMELFHTHFL6IQPJPBW5TY/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6PFDXRMqBWgitHziwS0o412qZwuuyVGu-EsFG7gPmM5uuRoXCGq7K7kAuu8",
+      "image_credit": "KIRO 7 News Seattle",
+      "news": [
+        {
+          "url": "https://www.kiro7.com/news/local/tornado-warning-issaquah-north-bend/5YVGHXMELFHTHFL6IQPJPBW5TY/",
+          "title": "Tornado warning in Issaquah, North Bend",
+          "publisher": "KIRO 7 News Seattle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6PFDXRMqBWgitHziwS0o412qZwuuyVGu-EsFG7gPmM5uuRoXCGq7K7kAuu8"
+        }
+      ]
+    },
+    {
+      "query": "is d'andre swift hurt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T20:00:00Z",
+      "related_news_urls": [
+        "https://www.detroitlions.com/news/inactives-lions-vs-bears-reed-clark-wonnum",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chuck-clark-dj-wonnum-are-inactive-for-the-lions",
+        "https://www.clickondetroit.com/sports/2026/11/25/dan-campbell-provides-detroit-lions-injury-updates-ahead-of-thanksgiving-game-vs-bears/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXUtuGdWrRiVbMRLVMxIVJkFu0jNykTDeCfsA9nC2HyhwokrtNP_hxI57cXQ",
+      "image_credit": "Detroit Lions",
+      "news": [
+        {
+          "url": "https://www.detroitlions.com/news/inactives-lions-vs-bears-reed-clark-wonnum",
+          "title": "INACTIVES: Lions vs. Bears",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXUtuGdWrRiVbMRLVMxIVJkFu0jNykTDeCfsA9nC2HyhwokrtNP_hxI57cXQ"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chuck-clark-dj-wonnum-are-inactive-for-the-lions",
+          "title": "Chuck Clark, DJ Wonnum are inactive for the Lions",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxKS1AC4b_Jqw8efMmliA5JhdgyRG5gNjbzz_Mh_-oifVtYV6mE5s9pThBO0"
+        },
+        {
+          "url": "https://www.clickondetroit.com/sports/2026/11/25/dan-campbell-provides-detroit-lions-injury-updates-ahead-of-thanksgiving-game-vs-bears/",
+          "title": "Dan Campbell provides Detroit Lions injury updates ahead of Thanksgiving game vs. Bears",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckyaUgqJiMwDVBgg73FnmDik5bC0uwFubbzTb70kOp-ZnD71uKu7APJaoqDk"
+        }
+      ]
+    },
+    {
+      "query": "avengers doomsday cast",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T20:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/news/hailee-steinfeld-avengers-doomsday-kate-bishop-1236955585/",
+        "https://www.denofgeek.com/movies/avengers-doomsday-kate-bishop-young-avengers-almost-here/",
+        "https://collider.com/avengers-doomsday-cast-hailee-steinfeld-kate-bishop/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUfexi_RXex5FC-j-XTZ6-e8uqe_6Ye_zJQAjDE9BSOndhJxi0VfomErc7x0I",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/news/hailee-steinfeld-avengers-doomsday-kate-bishop-1236955585/",
+          "title": "'Avengers: Doomsday' Adds Hailee Steinfeld as Kate Bishop to Cast",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUfexi_RXex5FC-j-XTZ6-e8uqe_6Ye_zJQAjDE9BSOndhJxi0VfomErc7x0I"
+        },
+        {
+          "url": "https://www.denofgeek.com/movies/avengers-doomsday-kate-bishop-young-avengers-almost-here/",
+          "title": "Avengers: Doomsday - Kate Bishop Confirmation Means the Young Avengers Are Almost Here",
+          "publisher": "Den of Geek",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkHNvRVWlUYZRV5DPSSCRhRwCrENRhFieTTko_XiG8ydn519HDO7KqU4qfPKQ"
+        },
+        {
+          "url": "https://collider.com/avengers-doomsday-cast-hailee-steinfeld-kate-bishop/",
+          "title": "Marvel Officially Confirms Hawkeye’s Replacement in ‘Avengers: Doomsday’",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvaKuzabZUmsXtJgyZpJQ2CYNDUQx_vPY6MI3kNuDeAo9rX_F7VpowFtEK5ZY"
+        }
+      ]
+    },
+    {
+      "query": "swift",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T20:00:00Z",
+      "related_news_urls": [
+        "https://ftw.usatoday.com/story/sports/nfl/2026/11/26/taylor-swift-hailee-steinfeld-chiefs-bills-thanksgiving/92969729007/",
+        "https://theonion.com/chiefs-broadcast-cuts-to-disheveled-taylor-swift-sitting-at-home/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-status-attending-nwsl-035105100.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapgLC1H9DD1knzUqZmqp3jDCTOkibk8H_MYRhvFG8HyZ82lajyXUDu6_llBw",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://ftw.usatoday.com/story/sports/nfl/2026/11/26/taylor-swift-hailee-steinfeld-chiefs-bills-thanksgiving/92969729007/",
+          "title": "Are Taylor Swift or Hailee Steinfeld coming to Chiefs-Bills on Thanksgiving?",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbRiaV18V2LFXq5slg1gBJake4o8ouHWsAvc1Niu4CtKN0IAN9SosOY1QJKrs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapgLC1H9DD1knzUqZmqp3jDCTOkibk8H_MYRhvFG8HyZ82lajyXUDu6_llBw"
         },
         {
-          "url": "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b",
-          "title": "Cowboys vs. Eagles: Thanksgiving game info, halftime show and national anthem singers",
-          "publisher": "WFAA",
+          "url": "https://theonion.com/chiefs-broadcast-cuts-to-disheveled-taylor-swift-sitting-at-home/",
+          "title": "Chiefs Broadcast Cuts To Disheveled Taylor Swift Sitting At Home",
+          "publisher": "The Onion",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeecwY8404fqLQe32I8lPzgfdZJ3vm1BhzExieHr8Zdj0adC0eJUCQicJOsRM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHek8UfSVZr1p7DCX4fq2tUfz0To0WkkGhCvSYjWX0p40z61KuRJ6Y1LvQSc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-status-attending-nwsl-035105100.html",
+          "title": "Taylor Swift’s Status for Attending NWSL Championship Game",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfEspy1a3NBY2eUrgE_-zpJSmE9rUTQRqGVF6lp6NzlAx-jWJGbJArKIHtYcU"
         }
       ]
     },
     {
-      "query": "john 3:16",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T19:30:00Z",
-      "related_news_urls": [
-        "https://ktul.com/news/local/thankfulness-at-john-316",
-        "https://tulsaworld.com/image_ed0bc5a9-8186-45a1-83f6-2ce329d4dee3.html",
-        "https://tulsaworld.com/image_fcd3a603-9db3-4116-aec1-f0e240ee2cc7.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoGKwdMkki-6lwhKiZZJvQIaa8t9udzCVmmBYtu4Esi0DbZEC_-m7U3xDX84",
-      "image_credit": "KTUL",
-      "news": [
-        {
-          "url": "https://ktul.com/news/local/thankfulness-at-john-316",
-          "title": "Thankfulness at John 3:16",
-          "publisher": "KTUL",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoGKwdMkki-6lwhKiZZJvQIaa8t9udzCVmmBYtu4Esi0DbZEC_-m7U3xDX84"
-        },
-        {
-          "url": "https://tulsaworld.com/image_ed0bc5a9-8186-45a1-83f6-2ce329d4dee3.html",
-          "title": "John 3:16 Mission",
-          "publisher": "Tulsa World",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZQtn3AlnYa8RcW3BC6jM9gaybCGA140LiDkE0TR7Zv4NO68o4rxglarcS2FQ"
-        },
-        {
-          "url": "https://tulsaworld.com/image_fcd3a603-9db3-4116-aec1-f0e240ee2cc7.html",
-          "title": "John 3:16 Mission",
-          "publisher": "Tulsa World",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIYgEV9FlcXgJiuTx4Ey-monm1aTm0tRi6YkMxh1mSieN9vj4CNLYLZxYE8M"
-        }
-      ]
-    },
-    {
-      "query": "cowboys halftime show thanksgiving 2026",
+      "query": "new movies",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T19:30:00Z",
+      "published_at": "2026-11-26T20:00:00Z",
       "related_news_urls": [
-        "https://www.billboard.com/culture/product-recommendations/nfl-thanksgiving-phl-dal-miranda-lambert-halftime-watch-free-1236385793/",
-        "https://www.dallascowboys.com/news/cowboys-celebrate-30-years-of-red-kettle-kickoff-with-the-salvation-army",
-        "https://www.wfaa.com/article/life/holidays/jerry-jones-cowboys-donate-30-million-salvation-army/287-1cb3738f-9334-470a-b4bc-2686a6e9bcb2"
+        "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-focker-in-law-in-theaters-rent-or-buy-you-can-see-everything-stream-the-mosquito-bowl-on-netflix-110000225.html",
+        "https://www.ksl.com/article/51647894/5-new-movies-to-check-out-this-thanksgiving-weekend",
+        "https://www.seattletimes.com/entertainment/movies/new-movies-in-seattle-area-theaters-this-week-focker-in-law-hexed/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgLFnd97tsznd5xlnaH2GQCAQSjhLC1Zb9CLe2qP0vJdidegP_nfwKwjf9a_8",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://www.billboard.com/culture/product-recommendations/nfl-thanksgiving-phl-dal-miranda-lambert-halftime-watch-free-1236385793/",
-          "title": "Miranda Lambert NFL Halftime Show 2026: Where to Watch Philadelphia Eagles vs. Dallas Cowboys Live Online Free",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgLFnd97tsznd5xlnaH2GQCAQSjhLC1Zb9CLe2qP0vJdidegP_nfwKwjf9a_8"
-        },
-        {
-          "url": "https://www.dallascowboys.com/news/cowboys-celebrate-30-years-of-red-kettle-kickoff-with-the-salvation-army",
-          "title": "Cowboys celebrate 30 years of Red Kettle Kickoff with The Salvation Army",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBvPXluCPvAjMjjnP0gjcacRa-B5R2ggLdVhWn2EUmwH99dv9_XysxKHWPVaM"
-        },
-        {
-          "url": "https://www.wfaa.com/article/life/holidays/jerry-jones-cowboys-donate-30-million-salvation-army/287-1cb3738f-9334-470a-b4bc-2686a6e9bcb2",
-          "title": "Jerry Jones, Cowboys donate $30M to Salvation Army in honor of 30 years of partnership",
-          "publisher": "WFAA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ69RlVW_0rOee0AIT8heeIv-ieZz7tN8bo7Nr99n8JBwJ0FJSGSfibRMIsOyM"
-        }
-      ]
-    },
-    {
-      "query": "georgetown vs texas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T19:30:00Z",
-      "related_news_urls": [
-        "https://www.burntorangenation.com/texas-longhorns-basketball/107596/texas-longhorns-rady-invitational-preview",
-        "https://247sports.com/college/texas/article/no-6-texas-mens-basketball-live-game-thread-vs-georgetown-293347736/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/georgetown-vs-texas-prediction-pick-101543565.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrmmAbjtBZTur7CEl_FW8_vI-Qplrmcl1kg1xlhVk4-O_KPqY41MxkGIBMzsE",
-      "image_credit": "Burnt Orange Nation",
-      "news": [
-        {
-          "url": "https://www.burntorangenation.com/texas-longhorns-basketball/107596/texas-longhorns-rady-invitational-preview",
-          "title": "Texas vs. Georgetown preview: Hoyas’ inside-out offense tests the Longhorns in San Diego",
-          "publisher": "Burnt Orange Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrmmAbjtBZTur7CEl_FW8_vI-Qplrmcl1kg1xlhVk4-O_KPqY41MxkGIBMzsE"
-        },
-        {
-          "url": "https://247sports.com/college/texas/article/no-6-texas-mens-basketball-live-game-thread-vs-georgetown-293347736/",
-          "title": "No. 6 Texas Men's Basketball Live Game Thread: vs Georgetown",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjGr_-mzTywTJi5W_lDGoMAUBeUjlO7kR3UuhmL5UtGYzZbcL4bMEpo9SgCY"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/georgetown-vs-texas-prediction-pick-101543565.html",
-          "title": "Georgetown vs Texas Prediction, Pick, College Basketball Odds for Thursday, Nov. 26",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAV9V6yU-K4gfOXROBF8DOXw_nCx3DBIEeWm9wiu8APt87BPZp4bzbKSr-t5U"
-        }
-      ]
-    },
-    {
-      "query": "joe biden",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T19:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/joe-biden-84-pictured-inside-170534890.html",
-        "https://www.wsj.com/politics/policy/shapiro-accuses-biden-of-not-doing-enough-to-rein-in-netanyahu-b139e9de",
-        "https://www.timesofisrael.com/josh-shapiro-set-to-run-in-2028-slams-failed-netanyahu-says-biden-didnt-check-israel-enough/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdv06-RKrMrAQ2v6xWq9IXQbutVY0bsMmpirJ0QAWLVbzbTA09eZCJ3HOgD4U",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5_3dSREFpWXAZvF_Z1xEN6e8kS8an6LZ4ALUgWm30RpsuhpvQb7g5hExuJA4",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/joe-biden-84-pictured-inside-170534890.html",
-          "title": "Joe Biden, 84, pictured inside home amid cancer battle: 'I am humbled'",
+          "url": "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-focker-in-law-in-theaters-rent-or-buy-you-can-see-everything-stream-the-mosquito-bowl-on-netflix-110000225.html",
+          "title": "New movies to watch this weekend: See 'Focker-in-Law' in theaters, rent or buy 'You Can See Everything,' stream 'The Mosquito Bowl' on Netflix",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdv06-RKrMrAQ2v6xWq9IXQbutVY0bsMmpirJ0QAWLVbzbTA09eZCJ3HOgD4U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5_3dSREFpWXAZvF_Z1xEN6e8kS8an6LZ4ALUgWm30RpsuhpvQb7g5hExuJA4"
         },
         {
-          "url": "https://www.wsj.com/politics/policy/shapiro-accuses-biden-of-not-doing-enough-to-rein-in-netanyahu-b139e9de",
-          "title": "Shapiro Accuses Biden of Not Doing Enough to Rein In Netanyahu",
-          "publisher": "WSJ",
+          "url": "https://www.ksl.com/article/51647894/5-new-movies-to-check-out-this-thanksgiving-weekend",
+          "title": "5 new movies to check out this Thanksgiving weekend",
+          "publisher": "KSL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWm91GDGmRuiSFPEalsd9RxYyOuipm6m6VNGXDo7DW-tGHM-4kN7-j2QtqKFA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP6cLzTjrHkOpOQNLPhYAZg60c26KUtlSy5FtFQzQmP5APV7HZrwHsLubOeDg"
         },
         {
-          "url": "https://www.timesofisrael.com/josh-shapiro-set-to-run-in-2028-slams-failed-netanyahu-says-biden-didnt-check-israel-enough/",
-          "title": "Josh Shapiro, set to run in 2028, slams ‘failed’ Netanyahu, says Biden didn’t check Israel enough",
-          "publisher": "The Times of Israel",
+          "url": "https://www.seattletimes.com/entertainment/movies/new-movies-in-seattle-area-theaters-this-week-focker-in-law-hexed/",
+          "title": "8 movies to check out in local theaters over Thanksgiving week",
+          "publisher": "The Seattle Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjvUwaK9bXEcPkJKi9lkdncU4xRkWUUZ8mQ0dPdxOCFObs8hEja_jefGJY5E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRevQEEnt0wv6yhTn4QwtgE7EkfbpFPumUBrZdoKNZi9_kDr--XMubwjNc3yrU"
         }
       ]
     },
     {
-      "query": "laporta",
+      "query": "trabzonspor",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T19:30:00Z",
+      "published_at": "2026-11-26T19:50:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17560012/barcelona-real-madrid-laporta-amenaza-llevar-juicio",
-        "https://www.si.com/es-us/caso-negreira-por-que-el-fc-barcelona-y-florentino-perez-terminaron-en-los-tribunales",
-        "https://www.marca.com/futbol/real-madrid/2026/11/25/florentino-barca-cierran-acuerdo-encuentro-caso-negreira.html"
+        "https://www.hurriyet.com.tr/sporarena/thomas-reisten-konferans-ligi-icin-ilk-8-aciklamasi-43391129",
+        "https://nirvanahaber.com/haber/cska-sofya-trabzonspor-maci-ne-zaman-saat-kacta-ve-hangi-kanalda",
+        "https://www.haber61.net/trabzonspor/thomas-reis-onuachu-ya-guveniyor-o-golu-buldugunda-cok-daha-iyi-olacak/650683"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTseQ9YAP7GxG8ODRo_ZonnDxAg2uNfMtPHd-0VnDCwBWF3WlcsHaWiqfT7PdQ",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4O3RHiGJRemChxazoilkpYtOJDM5CDV9Gm0pSnRUbxlMts2FVieaNA5uE7EU",
+      "image_credit": "Hürriyet",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17560012/barcelona-real-madrid-laporta-amenaza-llevar-juicio",
-          "title": "Barcelona: Laporta atiza a Real Madrid y amenaza con llevar al club a juicio",
-          "publisher": "ESPN Deportes",
+          "url": "https://www.hurriyet.com.tr/sporarena/thomas-reisten-konferans-ligi-icin-ilk-8-aciklamasi-43391129",
+          "title": "Thomas Reis'ten Konferans Ligi için ilk 8 açıklaması!",
+          "publisher": "Hürriyet",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTseQ9YAP7GxG8ODRo_ZonnDxAg2uNfMtPHd-0VnDCwBWF3WlcsHaWiqfT7PdQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4O3RHiGJRemChxazoilkpYtOJDM5CDV9Gm0pSnRUbxlMts2FVieaNA5uE7EU"
         },
         {
-          "url": "https://www.si.com/es-us/caso-negreira-por-que-el-fc-barcelona-y-florentino-perez-terminaron-en-los-tribunales",
-          "title": "Caso Negreira: ¿por qué el FC Barcelona y Florentino Pérez terminaron en los tribunales?",
-          "publisher": "Sports Illustrated",
+          "url": "https://nirvanahaber.com/haber/cska-sofya-trabzonspor-maci-ne-zaman-saat-kacta-ve-hangi-kanalda",
+          "title": "CSKA Sofya Trabzonspor maçı ne zaman, saat kaçta ve hangi kanalda?",
+          "publisher": "NirvanaHaber",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5snxdP8qGQTviE5cPWdAJcveXYuFCpo-LZMEn_MrAJ7-yIvSpefUs2mQ7p_o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE-DAbTi83bai0uUrLEJC_lO0Mm2-ade48hNlK8euk4Rqrp6DUdDV6NkXqjzw"
         },
         {
-          "url": "https://www.marca.com/futbol/real-madrid/2026/11/25/florentino-barca-cierran-acuerdo-encuentro-caso-negreira.html",
-          "title": "Florentino y el Barça cierran sin acuerdo su encuentro por el Caso Negreira",
-          "publisher": "MARCA",
+          "url": "https://www.haber61.net/trabzonspor/thomas-reis-onuachu-ya-guveniyor-o-golu-buldugunda-cok-daha-iyi-olacak/650683",
+          "title": "Thomas Reis, Onuachu'ya güveniyor! \"O golü bulduğunda çok daha iyi olacak\"",
+          "publisher": "Haber61",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrv1GkzRsGS2Hb8CXaPGbN6fIub0pBK_FvWjFWUKwuE7C6npv4iODMFDGYB_8"
-        }
-      ]
-    },
-    {
-      "query": "ol vs lillestrøm",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:30:00Z",
-      "related_news_urls": [
-        "https://www.tallahatchienews.ms/node/461657",
-        "https://www.toffeeweb.com/int/olympique-lyonnais-vs-lillestrom-predictions-picks-odds-26-11-2026/",
-        "https://www.reutersconnect.com/item/uefa-europa-league-olympique-lyonnais-v-lillestrom/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlExSTBPQzU"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6zDs6x30ag3UY5v0rttnDj23c3lT04JYkwfsIiM3Yo5hgCh0J1wq8-P86rRs",
-      "image_credit": "Charleston Sun-Sentinel",
-      "news": [
-        {
-          "url": "https://www.tallahatchienews.ms/node/461657",
-          "title": "[FREE!!] Lyon vs Lillestrøm Live: UEFA Europa League - League Stage",
-          "publisher": "Charleston Sun-Sentinel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6zDs6x30ag3UY5v0rttnDj23c3lT04JYkwfsIiM3Yo5hgCh0J1wq8-P86rRs"
-        },
-        {
-          "url": "https://www.toffeeweb.com/int/olympique-lyonnais-vs-lillestrom-predictions-picks-odds-26-11-2026/",
-          "title": "Olympique Lyonnais vs Lillestrøm Predictions, Picks & Odds – 26/11/2026",
-          "publisher": "ToffeeWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzMDVsfdVnl6bX2IOoqqXxOwYaAZOC-G8plFO326Cr4qREqaV6wpwGncqiMM"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/uefa-europa-league-olympique-lyonnais-v-lillestrom/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlExSTBPQzU",
-          "title": "Licensable picture: UEFA Europa League - Olympique Lyonnais v Lillestrom",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqRYuE7ANRqU-7XULidyJhezAtMczKi3z_TpZsZwT7_Ban6xRcH5SAtjyBBC0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QMGg6WTiKvQW_GkBuTKVnzYzFxwfa0gO8J8MKVvvAPGI42_bLdw_5i30ag8"
         }
       ]
     }
