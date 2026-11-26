@@ -175,3 +175,18 @@ test('Gemini writer bounds actual response bytes before JSON parsing and cancels
  await assert.rejects(consultGeminiWriter(active,options,async()=>new Response(declared,{headers:{'Content-Length':'262145'}})),/gemini_writer_output_too_large/);
  assert.equal(declaredCanceled,true);
 });
+
+test('Gemini writer rejects malformed provider envelopes before accepting candidates',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ const active={...env,GEMINI_WRITER_ENABLED:'1'};
+ const options={messages:[{role:'system',content:'Return JSON.'},{role:'user',content:'Fixture.'}],max_tokens:100};
+ const candidate={finishReason:'STOP',content:{parts:[{text:'{"fixture":true}'}]}};
+ for(const envelope of [null,[],42,{candidates:{0:candidate}}]){
+  let calls=0;
+  await assert.rejects(consultGeminiWriter(active,options,async()=>{calls++;return Response.json(envelope)}),{message:'gemini_writer_output_invalid'});
+  assert.equal(calls,1);
+ }
+ const valid=await consultGeminiWriter(active,options,async()=>Response.json({candidates:[candidate]}));
+ assert.equal(valid.provider,'gemini');
+ assert.equal(valid.executionVerified,false);
+});

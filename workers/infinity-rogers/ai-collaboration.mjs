@@ -131,7 +131,8 @@ export async function consultGeminiWriter(env,options,fetcher=fetch){
  if(!res.ok)throw Error(res.status===429?'gemini_writer_rate_limited':'gemini_writer_provider_unavailable');
  let data;
  data=await readGeminiWriterResponse(res);
- const candidate=data.candidates?.[0];
+ if(!data||typeof data!=='object'||Array.isArray(data)||!Array.isArray(data.candidates))throw Error('gemini_writer_output_invalid');
+ const candidate=data.candidates[0];
  const parts=candidate?.content?.parts;
  if(candidate?.finishReason!=='STOP'||!Array.isArray(parts)||
     parts.some(p=>!p||typeof p.text!=='string'||p.thought===true))throw Error('gemini_writer_output_invalid');
