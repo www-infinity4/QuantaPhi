@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T04:31:06.626960Z",
+  "checked_at": "2026-11-26T05:01:24.602587Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "deni avdija",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T04:10:00Z",
+      "query": "nfl standings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T04:40:00Z",
       "related_news_urls": [
-        "https://www.nba.com/watch/video/game-recap-trail-blazers-128-76ers-111-nov-23",
-        "https://www.libertyballers.com/76ers-scores-results/102632/sixers-bell-ringer-portland-trail-blazers-nba-lebron-james-jaylen-brown-tyrese-maxey",
-        "https://www.inquirer.com/sixers/sixers-joel-embiid-backup-center-blazers-20261124.html"
+        "https://www.cbssports.com/nfl/news/predicting-full-14-team-nfl-playoff-bracket-nfl-week-12/",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-12",
+        "https://sports.yahoo.com/nfl/article/nfl-playoff-picture-entering-week-12-thanksgiving-games-could-shake-up-postseason-seeding-172717898.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRy_2lO9cDV9Tou8v9TTMxaX0FXkx24nDiqssmATabrU95kNB996q7g_mxM2Y0",
-      "image_credit": "NBA.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqr5UlwSrCu4h3O7M9ZXK1q_PqzdOjm8vN90RI_Nt__h8-vDOFmRBfn2RM30",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nba.com/watch/video/game-recap-trail-blazers-128-76ers-111-nov-23",
-          "title": "Game Recap: Trail Blazers 128, 76ers 111 (Nov. 23)",
-          "publisher": "NBA.com",
+          "url": "https://www.cbssports.com/nfl/news/predicting-full-14-team-nfl-playoff-bracket-nfl-week-12/",
+          "title": "Predicting full 14-team NFL playoff bracket for NFL Week 12: How Aaron Rodgers' benching impacts AFC race",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRy_2lO9cDV9Tou8v9TTMxaX0FXkx24nDiqssmATabrU95kNB996q7g_mxM2Y0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqr5UlwSrCu4h3O7M9ZXK1q_PqzdOjm8vN90RI_Nt__h8-vDOFmRBfn2RM30"
         },
         {
-          "url": "https://www.libertyballers.com/76ers-scores-results/102632/sixers-bell-ringer-portland-trail-blazers-nba-lebron-james-jaylen-brown-tyrese-maxey",
-          "title": "Sixers Bell Ringer: Sixers undone by Portland’s blazing hot shooting",
-          "publisher": "Liberty Ballers",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgHT74sK_pvsO2o1J0G23Oe-lQ-3n-aESHDBSM8v-X1fDjazAjD7b95-9tQUs"
-        },
-        {
-          "url": "https://www.inquirer.com/sixers/sixers-joel-embiid-backup-center-blazers-20261124.html",
-          "title": "Sixers have a backup center problem. They need to solve it at whatever the cost. | David Murphy",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeV_5ExaZ8Y-VQ9B0qwHS9vkrzXdsMv3S7Fri-izn6tdO627pkUljVAtO56EE"
-        }
-      ]
-    },
-    {
-      "query": "jennifer garner",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T04:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/jennifer-garner-transforms-home-daughter-181653641.html",
-        "https://www.realtor.com/news/celebrity-real-estate/jennifer-garner-christmas-thanksgiving-decorations-los-angeles-home/",
-        "https://pagesix.com/2026/11/23/photos/alias-co-stars-jennifer-garner-victor-garber-share-a-sweet-reunion-and-more-star-snaps/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgzRBgHT2WjhZaJjUneImL2A6bAL5OXeFyG_7qJ3t3Nuy_7tNe03ntglgD7o",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jennifer-garner-transforms-home-daughter-181653641.html",
-          "title": "Jennifer Garner transforms home for daughter Violet's return in photo of holiday traditions",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMgzRBgHT2WjhZaJjUneImL2A6bAL5OXeFyG_7qJ3t3Nuy_7tNe03ntglgD7o"
-        },
-        {
-          "url": "https://www.realtor.com/news/celebrity-real-estate/jennifer-garner-christmas-thanksgiving-decorations-los-angeles-home/",
-          "title": "Jennifer Garner Lights Up Her L.A. Home for Christmas Before the Thanksgiving Turkey Hits the Table",
-          "publisher": "Realtor.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4FSBKLdXcEBb-koClYKrvNf798neUUP8DamSBtolFf9M0DB5NAh-Rmiy62H0"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/23/photos/alias-co-stars-jennifer-garner-victor-garber-share-a-sweet-reunion-and-more-star-snaps/",
-          "title": "‘Alias’ co-stars Jennifer Garner, Victor Garber share a sweet reunion and more star snaps",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8INCUO0NtbLr9wrSdGPNcX3FgQUqWuR_5b0fAMnvDTp33HX10DONztrU5FEo"
-        }
-      ]
-    },
-    {
-      "query": "sacramento kings vs golden state warriors match player stats",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
-        "https://www.nba.com/game/min-vs-okc-0022600058/box-score",
-        "https://www.nba.com/game/lac-vs-mem-0022600059/box-score"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYYDQmT43GsgeeiLoQC4CsNu19G0cMrS9EOQH9gBOKa7mJ95384E_ueVl6AsE",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
-          "title": "Miami Heat vs Philadelphia 76ers Nov 25, 2026 Box Scores",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYYDQmT43GsgeeiLoQC4CsNu19G0cMrS9EOQH9gBOKa7mJ95384E_ueVl6AsE"
-        },
-        {
-          "url": "https://www.nba.com/game/min-vs-okc-0022600058/box-score",
-          "title": "Minnesota Timberwolves vs Oklahoma City Thunder Nov 25, 2026 Box Scores",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh9GipYnDe8Z9SsgBdTFA-nlo_9V5ZxqqZMirGm1MmblHAnCD3aipksyeASUg"
-        },
-        {
-          "url": "https://www.nba.com/game/lac-vs-mem-0022600059/box-score",
-          "title": "LA Clippers vs Memphis Grizzlies Nov 25, 2026 Box Scores",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRTXHJIn58O5fBgDGS6FEwgu9ARoz2Oh7wmSnR5BQ-QGj3gYnrc5vu-mryAuU"
-        }
-      ]
-    },
-    {
-      "query": "bo melton",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T04:00:00Z",
-      "related_news_urls": [
-        "https://www.fantasyguru.com/cowboys-wr-jonathan-mingo-ruled-out-for-week-12",
-        "https://www.rotowire.com/football/headlines/bo-melton-injury-questionable-for-week-12-649598",
-        "https://www.rotowire.com/football/headlines/bo-melton-injury-limited-monday-649419"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo",
-      "image_credit": "Fantasy Guru",
-      "news": [
-        {
-          "url": "https://www.fantasyguru.com/cowboys-wr-jonathan-mingo-ruled-out-for-week-12",
-          "title": "Cowboys | WR Jonathan Mingo ruled out for Week 12",
-          "publisher": "Fantasy Guru",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyhGq1zrAJsgoXkmbUMgB_IGd6oyQydA9RQLulAyURphjc6yliW9xCdtERIRo"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/bo-melton-injury-questionable-for-week-12-649598",
-          "title": "Bo Melton Injury: Questionable for Week 12",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLsQ7WBFl7q7ldU_46_zkoymC6qKqPHqoODz5McnjCx129cPgq6bYD2vy1lLo"
-        },
-        {
-          "url": "https://www.rotowire.com/football/headlines/bo-melton-injury-limited-monday-649419",
-          "title": "Bo Melton Injury: Limited Monday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLsQ7WBFl7q7ldU_46_zkoymC6qKqPHqoODz5McnjCx129cPgq6bYD2vy1lLo"
-        }
-      ]
-    },
-    {
-      "query": "keegan murray",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T04:00:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/kings-start-acuff-sharp-hunter-murray-sabonis",
-        "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-earning-first-career-start-wednesday/",
-        "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-shooting-woes-continue-saturday/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/kings-start-acuff-sharp-hunter-murray-sabonis",
-          "title": "Kings start Acuff, Sharp, Hunter, Murray, Sabonis",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/nfl-playoff-picture-2026-updated-afc-and-nfc-standings-bracket-tiebreakers-for-week-12",
+          "title": "NFL Playoff Picture 2026: Updated AFC and NFC standings, bracket, tiebreakers for Week 12",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzYR3dpla-xB5qGcNUFp0Uq5nBAkOFsz4Ynf2r28cdR5Fv-XBfjJpGMTaS8l8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRX64ZTBqzBGYLcIOK5yQKCg2Ybu-MIepSFCSXDyJayosj1gZlUG0_xS9jl-N8"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-earning-first-career-start-wednesday/",
-          "title": "Kings' Emanuel Sharp: Earning first career start Wednesday",
-          "publisher": "CBS Sports",
+          "url": "https://sports.yahoo.com/nfl/article/nfl-playoff-picture-entering-week-12-thanksgiving-games-could-shake-up-postseason-seeding-172717898.html",
+          "title": "NFL Playoff Picture entering Week 12: Thanksgiving games could shake up postseason seeding",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/kings-emanuel-sharp-shooting-woes-continue-saturday/",
-          "title": "Kings' Emanuel Sharp: Shooting woes continue Saturday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCp7IkZ6PvzDOg-g6KScjjC0SMrPPRXva9BjjMd3jKWptvJR3DPk1q4Pelrdw"
         }
       ]
     },
     {
-      "query": "quentin lake",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T04:00:00Z",
+      "query": "waymo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/rams-captain-quentin-lake-reveals-221643103.html",
-        "https://nypost.com/2026/11/25/sports/rams-quentin-lake-dream-job-travel-influencer/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rams-extend-lead-to-6-0-after-tucker-kraft-fumble"
+        "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
+        "https://www.9news.com/article/news/local/man-traps-eggs-waymo-vehicles-denver/73-170f60cf-942f-4501-a26d-f2582cfcfdd9",
+        "https://denverite.com/2026/11/24/denver-waymo-egging-laws/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAHYi8EnteeOnXcjdNMzVvJLqVEywjoMVrkby0siUwbUpJoAmUCDlBf0PvTVA",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl0Sc633lPbHvfMVBBOtfOkWpfz4aPlM8ZYGqozvLcbxAe8mBd-AJnYL4AXU0",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
+          "title": "A Man in Denver Has Been Throwing Eggs at Waymo Vehicles",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl0Sc633lPbHvfMVBBOtfOkWpfz4aPlM8ZYGqozvLcbxAe8mBd-AJnYL4AXU0"
+        },
+        {
+          "url": "https://www.9news.com/article/news/local/man-traps-eggs-waymo-vehicles-denver/73-170f60cf-942f-4501-a26d-f2582cfcfdd9",
+          "title": "1 man egging Waymo's robot rideshares around metro, police report says",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHS1G9p6YRZ7yqBgYXmk9gamigWIvxppjxQ61GhSkew7MboLPlAHiLPorx1E"
+        },
+        {
+          "url": "https://denverite.com/2026/11/24/denver-waymo-egging-laws/",
+          "title": "Is Denver’s ponytailed Waymo avenger actually committing a crime?",
+          "publisher": "Denverite",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNBD58AkVLaGkzTMzyJfUI4k8qckSHO3re1Y2tJp1Qcb1FzZPpkb8ini9X63I"
+        }
+      ]
+    },
+    {
+      "query": "luis cárdenas",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T04:40:00Z",
+      "related_news_urls": [
+        "https://www.si.com/es-us/rayados-sufriria-una-dura-baja-para-el-monterrey-vs-america",
+        "https://es-us.noticias.yahoo.com/recibimiento-afici%C3%B3n-rayada-monterrey-012728477.html",
+        "https://www.record.com.mx/historia/adios-torneo-esteban-andrada-fue-sometido-a-cirugia-de-rodilla-2026112600562533455"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqlVlQ-RfqfhHMRG9-bXWvAgEptCbrb9oLQXbIn8LrW8h5HnlWFVVK1_2xqfc",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/es-us/rayados-sufriria-una-dura-baja-para-el-monterrey-vs-america",
+          "title": "Rayados sufriría una baja sensible para la ida contra el América en los cuartos de final por el Apertura 2026",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqlVlQ-RfqfhHMRG9-bXWvAgEptCbrb9oLQXbIn8LrW8h5HnlWFVVK1_2xqfc"
+        },
+        {
+          "url": "https://es-us.noticias.yahoo.com/recibimiento-afici%C3%B3n-rayada-monterrey-012728477.html",
+          "title": "Gran recibimiento de la afición rayada al Monterrey",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUjGVhQeoc9MMPc4WFNfOKhYgy-M315V-AV0LyuT4BO6obH0wUAu8gn9_XX74"
+        },
+        {
+          "url": "https://www.record.com.mx/historia/adios-torneo-esteban-andrada-fue-sometido-a-cirugia-de-rodilla-2026112600562533455",
+          "title": "¿Adiós torneo? Esteban Andrada fue sometido a cirugía de rodilla",
+          "publisher": "Récord",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxYUySNXyEWX8Cq0iIZWN0a0-n9TvpHyZkoFDVEKCag5eL6Wmgsx-199aIW1w"
+        }
+      ]
+    },
+    {
+      "query": "portland trail blazers",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T04:30:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/gameday-threads-2/118891/discussion-portland-trail-blazers-san-antonio-spurs-time-tv-injury-report",
+        "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
+        "https://www.espn.com/video/clip/_/id/50597175/the-spurs-look-stay-undefeated-road-take-trail-blazers"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStinp3I4qCd5iER-Ww7p2ky7iaZyxAJc4nwNVHobtdLD_2ClqlsulzTOoSiKg",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/gameday-threads-2/118891/discussion-portland-trail-blazers-san-antonio-spurs-time-tv-injury-report",
+          "title": "Discuss the Portland Trail Blazers Taking on the Mighty Spurs Here!",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStinp3I4qCd5iER-Ww7p2ky7iaZyxAJc4nwNVHobtdLD_2ClqlsulzTOoSiKg"
+        },
+        {
+          "url": "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
+          "title": "Game Preview: San Antonio Spurs vs Portland Trail Blazers",
+          "publisher": "Pounding The Rock",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8SuMy9AZ1T75H0nwWlubkOpjhX4lgEW4-txAjc5Fvq3qMLHtyqL-Jk8mhHLs"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50597175/the-spurs-look-stay-undefeated-road-take-trail-blazers",
+          "title": "The Spurs look to stay undefeated on the road as they take on the Trail Blazers.",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIcEf3LG6yMQ06gvcfp0j_GyN6t-_oqmQLJCEBDvtANMYT-mRs2808MOAGXZs"
+        }
+      ]
+    },
+    {
+      "query": "zelda ocarina of time update",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:30:00Z",
+      "related_news_urls": [
+        "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
+        "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
+        "https://www.neoteo.com/en/ocarina-of-time-remake-review-update-112-fixes-a-progress-blocker"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3s4pg4pyG57j0o9pQS55Qkh2uqDmUMuf3q_MA7c4AvELrrBKNR1Nt54epji4",
+      "image_credit": "GoNintendo",
+      "news": [
+        {
+          "url": "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
+          "title": "Zelda: Ocarina of Time updated to Ver. 1.1.2",
+          "publisher": "GoNintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3s4pg4pyG57j0o9pQS55Qkh2uqDmUMuf3q_MA7c4AvELrrBKNR1Nt54epji4"
+        },
+        {
+          "url": "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
+          "title": "The Legend Of Zelda: Ocarina Of Time Switch 2 Updated (Version 1.1.2), Here Are The Patch Notes",
+          "publisher": "Nintendo Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQznO1h2ivwu9lUbGrf26pT79v_jj7ZIZQcN6pqIkD2bqHrtCo_zagpA4ATdrc"
+        },
+        {
+          "url": "https://www.neoteo.com/en/ocarina-of-time-remake-review-update-112-fixes-a-progress-blocker",
+          "title": "Ocarina of Time remake review: Update 1.1.2 fixes a progress blocker",
+          "publisher": "NeoTeo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSTihMZQPFjR0uMOszwpNRopAVCyeKfuZ1OoxJma9kS2elfo-hZXfroIVRhpBs"
+        }
+      ]
+    },
+    {
+      "query": "dillon brooks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/breaking-news/article/dillon-brooks-gets-ejected-with-23-seconds-left-vs-rockets-after-getting-into-it-with-kevin-durant-044033904.html",
+        "https://bleacherreport.com/articles/25537854-dillon-brooks-ejected-after-exchange-kevin-durant-trending-video-during-rockets-vs-suns",
+        "https://burncitysports.com/2026/11/25/phoenix-suns-kevin-durant-brooks-mat/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyVGuLeEbtrigXiCOaRPlrEFJzeyNsdy4cjLd-CtQ49OYqUw7OnTvfP1H9l4U",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/articles/rams-captain-quentin-lake-reveals-221643103.html",
-          "title": "Rams captain Quentin Lake reveals dream job",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/dillon-brooks-gets-ejected-with-23-seconds-left-vs-rockets-after-getting-into-it-with-kevin-durant-044033904.html",
+          "title": "Dillon Brooks gets ejected with 23 seconds left vs. Rockets after getting into it with Kevin Durant",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAHYi8EnteeOnXcjdNMzVvJLqVEywjoMVrkby0siUwbUpJoAmUCDlBf0PvTVA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyVGuLeEbtrigXiCOaRPlrEFJzeyNsdy4cjLd-CtQ49OYqUw7OnTvfP1H9l4U"
         },
         {
-          "url": "https://nypost.com/2026/11/25/sports/rams-quentin-lake-dream-job-travel-influencer/",
-          "title": "Exclusive | Rams captain Quentin Lake reveals dream job as travel influencer",
-          "publisher": "New York Post",
+          "url": "https://bleacherreport.com/articles/25537854-dillon-brooks-ejected-after-exchange-kevin-durant-trending-video-during-rockets-vs-suns",
+          "title": "Dillon Brooks Ejected After Exchange With Kevin Durant in Trending Video During Rockets vs. Suns",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1z8rdV1ex-RK4G-MWv_AYM7YNDzjXiF31vfUvXg-NusenDq1UTWRpbHJMtMY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGWrOmVhYv-29dSuGrdsr0VE26KVPgmpElqE8BvF-vOz12NQtcTQctH_VvT0k"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/rams-extend-lead-to-6-0-after-tucker-kraft-fumble",
-          "title": "Rams extend lead to 6-0 after Tucker Kraft fumble",
-          "publisher": "NBC Sports",
+          "url": "https://burncitysports.com/2026/11/25/phoenix-suns-kevin-durant-brooks-mat/",
+          "title": "What’s next in the Phoenix Suns and Kevin Durant feud?",
+          "publisher": "Burn City Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR95Yl8pMPgxJu1PqWPzoepODisuAQOdmYk0IH5iUbjsvUKk4N_hU7tYZ5fg40"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgpZKGz_VrEj2pYbcM-T_upl6Cngdz9kfPV9XuN-r5bYdRGneA8wnNv-I9qSw"
         }
       ]
     },
     {
-      "query": "john madden",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T03:50:00Z",
+      "query": "domantas sabonis",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T04:30:00Z",
       "related_news_urls": [
-        "https://defector.com/madden-makes-one-of-the-nfls-biggest-characters-feel-silly-and-small",
-        "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
-        "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html"
+        "https://knup.com/sports/nba/player-news/performance/domantas-sabonis-performance-11-23-2026-715946/",
+        "https://www.fantasypros.com/nba/news/622367/domantas-sabonis-logs-double-double-monday.php",
+        "https://www.nba.com/watch/video/domantas-sabonis-11-21-26-vs-celtics"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk0fXKrsrtyPekF06X-7ABHmLDUUsInAlyVYlmwBEplDLnXYVN7K2iElx9ctw",
-      "image_credit": "Defector",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk",
+      "image_credit": "knup.com",
       "news": [
         {
-          "url": "https://defector.com/madden-makes-one-of-the-nfls-biggest-characters-feel-silly-and-small",
-          "title": "‘Madden’ Makes One Of The NFL’s Biggest Characters Feel Silly And Small",
-          "publisher": "Defector",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk0fXKrsrtyPekF06X-7ABHmLDUUsInAlyVYlmwBEplDLnXYVN7K2iElx9ctw"
-        },
-        {
-          "url": "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
-          "title": "‘Madden’ is a mess. Nicolas Cage makes it impossible to look away",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz0O0HGjHiH8qD-4ygDRoWDsF4g1_hVK5qZjzZUSFpSBKyiKWHZV72cvfGjj8"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html",
-          "title": "Madden: Christian Bale and Nicolas Cage have quietly made the worst film of 2026",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNN5b9ceOF-BcSvEFKJoJcyIOHWcmsghYaiy7IEQgTalhaFc5UeRE2WzdAB-I"
-        }
-      ]
-    },
-    {
-      "query": "de'anthony melton",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://bluemanhoop.com/de-anthony-melton-playing-way-dangerously-close-trade-deja-vu",
-        "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
-        "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8khI0smh1BcAW289PUgOjBhPoFf6s419570X6jN_VWsBAG7XVL2GlKsGHQhI",
-      "image_credit": "Blue Man Hoop",
-      "news": [
-        {
-          "url": "https://bluemanhoop.com/de-anthony-melton-playing-way-dangerously-close-trade-deja-vu",
-          "title": "De’Anthony Melton is playing his way dangerously close to trade déjà vu",
-          "publisher": "Blue Man Hoop",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8khI0smh1BcAW289PUgOjBhPoFf6s419570X6jN_VWsBAG7XVL2GlKsGHQhI"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
-          "title": "Warriors' De'Anthony Melton: Makes impact despite shooting woes",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
-        },
-        {
-          "url": "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/",
-          "title": "De'Anthony Melton Records 7 Assists in Warriors' Win Over Celtics",
+          "url": "https://knup.com/sports/nba/player-news/performance/domantas-sabonis-performance-11-23-2026-715946/",
+          "title": "Domantas Sabonis Scores 20 in Kings' Loss vs Spurs on Nov 23",
           "publisher": "knup.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
-        }
-      ]
-    },
-    {
-      "query": "damian lillard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:40:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/trail-blazers-damian-lillard-perfect-pairing",
-        "https://sports.yahoo.com/nba/article/how-damian-lillard-has-boosted-trail-blazers-in-promising-return-from-achilles-injury-144115976.html",
-        "https://www.blazersedge.com/trail-blazers-analysis/118680/portland-trail-blazers-damian-lillard-nba-analysis-deni-avdija-offensive-leap"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_tKECfQTRbBJR9IZgvcEYOEE1ngmd8belJCpXegdOkgd1sdwzOncRbqPwQAY",
-      "image_credit": "NBA.com",
-      "news": [
+        },
         {
-          "url": "https://www.nba.com/news/trail-blazers-damian-lillard-perfect-pairing",
-          "title": "Damian Lillard and Portland thankful to be reunited",
+          "url": "https://www.fantasypros.com/nba/news/622367/domantas-sabonis-logs-double-double-monday.php",
+          "title": "Domantas Sabonis logs double-double Monday",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbcDLQ2WF-Wbc3c_P7jw3tSQbmXpxwUnyvJ0rD9wiYCF-iQoPKBWEpdwT5vw4"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/domantas-sabonis-11-21-26-vs-celtics",
+          "title": "Domantas Sabonis - 11/21/26 vs Celtics",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_tKECfQTRbBJR9IZgvcEYOEE1ngmd8belJCpXegdOkgd1sdwzOncRbqPwQAY"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/article/how-damian-lillard-has-boosted-trail-blazers-in-promising-return-from-achilles-injury-144115976.html",
-          "title": "How Damian Lillard has boosted Trail Blazers in promising return from Achilles injury",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF8_UEQNXEUQp3mzPXJa7sYsIX6_gRiMP60S82e9IOgp7Yx9vQAmBsOHBP_KY"
-        },
-        {
-          "url": "https://www.blazersedge.com/trail-blazers-analysis/118680/portland-trail-blazers-damian-lillard-nba-analysis-deni-avdija-offensive-leap",
-          "title": "Lillard’s Impact, Adaptability Playing Big Part in Blazers’ Offensive Leap",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFaUogYb25cx34ENeRkdcUXVxkx4dv2AKv0vPu0oB6yrahhlz36F9qKno25-M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWeMHUDgqK8ln50Ct_lm5bzQm4HP7FbfQ__yfcCHeU5X-UubkmqNAADFupB9c"
         }
       ]
     },
     {
-      "query": "mike lafleur",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:40:00Z",
+      "query": "amazing race",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T04:30:00Z",
       "related_news_urls": [
-        "https://www.denverbroncos.com/video/dl-zach-allen-on-denver-s-black-friday-game-it-s-a-great-opportunity",
-        "https://www.therams.com/video/highlights-jaylen-mccollough-intercepts-packers-qb-jordan-love-pass-in-the-third-quarter-week-12",
-        "https://www.steelers.com/news/statement-from-steelers-spokesman-x8902"
+        "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-amazing-race/video?watch=efnaip5xjs",
+        "https://www.tvinsider.com/1305855/the-amazing-race-2026-episode-10-recap-daisha-dalton-eliminated/",
+        "https://www.imdb.com/news/ni66128325/?ref_=int_nwr_1"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ErlZxmGP9IWvYAUJrIfoE52vEVcGLilwgFRiQUlZLfi4KgQp0tyFPO3Ov-8",
-      "image_credit": "Denver Broncos",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQB0xaTSJqWkm4nZSAGxndcStcjAL9B9BtvAwC_yxrmtnyHyRE2eIquxaRdUQ",
+      "image_credit": "Paramount Press Express",
       "news": [
         {
-          "url": "https://www.denverbroncos.com/video/dl-zach-allen-on-denver-s-black-friday-game-it-s-a-great-opportunity",
-          "title": "DL Zach Allen on Denver's Black Friday game: 'It's a great opportunity'",
-          "publisher": "Denver Broncos",
+          "url": "https://www.paramountpressexpress.com/cbs-entertainment/shows/the-amazing-race/video?watch=efnaip5xjs",
+          "title": "CBS Entertainment | The Amazing Race | We’re Not Their Friends",
+          "publisher": "Paramount Press Express",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-ErlZxmGP9IWvYAUJrIfoE52vEVcGLilwgFRiQUlZLfi4KgQp0tyFPO3Ov-8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQB0xaTSJqWkm4nZSAGxndcStcjAL9B9BtvAwC_yxrmtnyHyRE2eIquxaRdUQ"
         },
         {
-          "url": "https://www.therams.com/video/highlights-jaylen-mccollough-intercepts-packers-qb-jordan-love-pass-in-the-third-quarter-week-12",
-          "title": "HIGHLIGHTS: Rams S Jaylen McCollough intercepts Packers QB Jordan Love's pass in the third quarter",
-          "publisher": "Rams",
+          "url": "https://www.tvinsider.com/1305855/the-amazing-race-2026-episode-10-recap-daisha-dalton-eliminated/",
+          "title": "'The Amazing Race' Recap: Bad Karma Takes a Toll on One Team",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKmHDWbR8uPs38nen_QbURMmooXZhrTWtr7IJxn9qOVIs67KwtudZD3-2XFh8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVgvs3OAIrI8P4Mm1mlMjY-EEBt_0t8MNm_HkqmWOiT473EJfdvmbkTVimxmE"
         },
         {
-          "url": "https://www.steelers.com/news/statement-from-steelers-spokesman-x8902",
-          "title": "Statement from Steelers spokesman",
-          "publisher": "Steelers.com",
+          "url": "https://www.imdb.com/news/ni66128325/?ref_=int_nwr_1",
+          "title": "Amazing Race November 25 New Episode 10 To Feature A Head To Head Roadblock Challenge & More",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDBTLCrs6j4NOZzUmgKTTqT75mdpBpFxmF2jEHRcUlj-G0AT7HiU41rLLKMWM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQyUWZ1mRnlOecdFxlynVVzO2-68E_crA3jPdCGDHEfvJOXBXpBpDcmp87_m0"
+        }
+      ]
+    },
+    {
+      "query": "minnesota",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T04:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-1-results",
+        "https://kstp.com/kstp-news/top-news/deadly-crash-on-169-near-shakopee-closes-road-during-thanksgiving-eve-commute/",
+        "https://www.fox9.com/news/fatal-crash-highway-169-causes-major-backup-night-before-thanksgiving-nov-25-2026"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0LQCJiOwziMhLwOxZDM-uL9GTRweh5lAdm2e2vTJUk7zXxydKuvcPLcaLoo",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/politics/2026-elections/minnesota-us-house-district-1-results",
+          "title": "Minnesota House District 1 Midterm Election 2026: Live Results",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK0LQCJiOwziMhLwOxZDM-uL9GTRweh5lAdm2e2vTJUk7zXxydKuvcPLcaLoo"
+        },
+        {
+          "url": "https://kstp.com/kstp-news/top-news/deadly-crash-on-169-near-shakopee-closes-road-during-thanksgiving-eve-commute/",
+          "title": "Deadly crash on 169 near Shakopee closes road during Thanksgiving Eve commute",
+          "publisher": "5 EYEWITNESS NEWS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6EcM8K-ss0C_1DPPhPJmWNmhu79kA-7HR3FdWcPFsiCR1H6fOqsye09aVUw"
+        },
+        {
+          "url": "https://www.fox9.com/news/fatal-crash-highway-169-causes-major-backup-night-before-thanksgiving-nov-25-2026",
+          "title": "Fatal crash on Highway 169 causes major backup the night before Thanksgiving",
+          "publisher": "FOX 9 Minneapolis-St. Paul",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIL8qrdnSwAtxRV1fEsl18emymPspzlREf77mh-jwHAvDuhdreEg2UhtToW3s"
+        }
+      ]
+    },
+    {
+      "query": "the hunting wives season 2",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T04:30:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
+        "https://www.elle.com/culture/movies-tv/a74507738/brittany-snow-malin-akerman-the-hunting-wives-season-2-interview/",
+        "https://people.com/malin-akerman-says-the-hunting-wives-cast-was-shocked-by-who-dies-in-season-2-exclusive-12268808"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
+          "title": "'It appeals across demographics': How steamy soap The Hunting Wives took on sex, scandal and the US's blue-red divide",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU"
+        },
+        {
+          "url": "https://www.elle.com/culture/movies-tv/a74507738/brittany-snow-malin-akerman-the-hunting-wives-season-2-interview/",
+          "title": "Brittany Snow Says ‘The Hunting Wives’ Season 2 Takes Sophie to a ‘Dangerous’ Place",
+          "publisher": "ELLE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8vuS5H5EfsP0mPxa3pouDFsVIqvlazDV8JpCQkw9rt3KbsrcN1daWALn_6M"
+        },
+        {
+          "url": "https://people.com/malin-akerman-says-the-hunting-wives-cast-was-shocked-by-who-dies-in-season-2-exclusive-12268808",
+          "title": "Malin Akerman Says The Hunting Wives Cast Was Shocked by Who Lives and Who Dies in Season 2 (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfV79CX-820Ldl9BTING7HXsT9YUkjyefYIhojemVEE_fXYCXfqz9QMlNVMiY"
         }
       ]
     }
