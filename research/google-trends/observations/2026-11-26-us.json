@@ -3,41 +3,181 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T11:01:24.965741Z",
+  "checked_at": "2026-11-26T11:31:10.989077Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "butterball turkey recall 2026",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T10:30:00Z",
+      "query": "manuel neuer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:10:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
-        "https://www.nacionale.com/en/articles/why-is-salmonella-allowed-in-raw-turkey-butterball-usda-rules-no-recall",
-        "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer"
+        "https://www.bild.de/sport/fussball/fc-bayern-nach-brasilien-trip-mit-junger-frau-neuer-zurueck-bei-bayern-6b06a6d4c75e09cb88d15081",
+        "https://www.spiegel.de/partnerschaft/manuel-neuer-soll-partnerin-verlassen-haben-paarberaterin-ruth-marquardt-ueber-ihr-virales-video-a-e9912a58-40f2-4b6e-99ad-6860f367b92f",
+        "https://www.oe24.at/a/familie-zerstoert-anika-neuer-meldet-sich-auf-instagram-900136544"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxH8b2fIyIH9isRQCz0lEkzRmfs_X8LVQObOEiUF9PcYRL26D5vYvXLdVgEw",
+      "image_credit": "BILD",
       "news": [
         {
-          "url": "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
-          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
-          "publisher": "The Guardian",
+          "url": "https://www.bild.de/sport/fussball/fc-bayern-nach-brasilien-trip-mit-junger-frau-neuer-zurueck-bei-bayern-6b06a6d4c75e09cb88d15081",
+          "title": "FC Bayern: Nach Brasilien-Trip mit junger Frau – Neuer zurück bei Bayern",
+          "publisher": "BILD",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxH8b2fIyIH9isRQCz0lEkzRmfs_X8LVQObOEiUF9PcYRL26D5vYvXLdVgEw"
         },
         {
-          "url": "https://www.nacionale.com/en/articles/why-is-salmonella-allowed-in-raw-turkey-butterball-usda-rules-no-recall",
-          "title": "Why is salmonella allowed in raw turkey? The US rules behind the Butterball findings",
-          "publisher": "Nacionale",
+          "url": "https://www.spiegel.de/partnerschaft/manuel-neuer-soll-partnerin-verlassen-haben-paarberaterin-ruth-marquardt-ueber-ihr-virales-video-a-e9912a58-40f2-4b6e-99ad-6860f367b92f",
+          "title": "Manuel Neuer soll Partnerin verlassen haben: Paarberaterin Ruth Marquardt über ihr virales Video",
+          "publisher": "Spiegel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGFzyvIvIg6fxD-RsPDheBFrAx46lf1ONSZhFfhP50So80S8aMBQJVbOBo2VQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbBxiSEJO2RHI-SO-cUeq_fXnP_b_4bMO1g1o1YmOuwDqKJ5vYx37sHukNzmE"
         },
         {
-          "url": "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
-          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
-          "publisher": "inkl",
+          "url": "https://www.oe24.at/a/familie-zerstoert-anika-neuer-meldet-sich-auf-instagram-900136544",
+          "title": "Familie zerstört: Anika Neuer meldet sich auf Instagram",
+          "publisher": "oe24",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiajHZyI2rzia5Z0od3bmO6VNGEEi8qkzZe_tfSuC1hFaFQj5Y6-1rZOg1U_M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVmy8reyXqFl7Dna798uzN9HxyZpJbv_BBu9YVJThFCLOwnOYi63-xnBXwlFY"
+        }
+      ]
+    },
+    {
+      "query": "lowes black friday 2026",
+      "approx_searches": "50000+",
+      "published_at": "2026-11-26T11:00:00Z",
+      "related_news_urls": [
+        "https://mashable.com/life/black-friday-2026-store-freebies",
+        "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
+        "https://www.nytimes.com/wirecutter/money/target-black-friday-deals-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb75cT1GB0ApRPL9T7Jz5EPsIu-oTYdOpEao8_2h8gldSd-P2EyXgSMwI7vak",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/life/black-friday-2026-store-freebies",
+          "title": "Black Friday 2026 deals: The best store freebies from Kohl’s, Target, Lowe’s, and more",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb75cT1GB0ApRPL9T7Jz5EPsIu-oTYdOpEao8_2h8gldSd-P2EyXgSMwI7vak"
+        },
+        {
+          "url": "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
+          "title": "I cover Target sales all year long — these Black Friday deals are actually impressive",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs"
+        },
+        {
+          "url": "https://www.nytimes.com/wirecutter/money/target-black-friday-deals-2026/",
+          "title": "All the Best Black Friday Discounts at Target This Week",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaJCLuEZrd2tasVSVnXPr7U8RrnOBGPAoP14ItzaUV5ZeP4-MGs_ZaM6rIhws"
+        }
+      ]
+    },
+    {
+      "query": "radar",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:00:00Z",
+      "related_news_urls": [
+        "https://www.miamiherald.com/news/weather-news/article318230502.html",
+        "https://www.fox35orlando.com/video/fmc-oxxwj3s94lxtrbuw",
+        "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-miami-fort-lauderdale-miami-dade-broward-november-26-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4kWjen3k0GHcy3dJzImX2lsXFtxMeQkhfZCSOWxsIj0QqHUUfyc73fhsI2s4",
+      "image_credit": "Miami Herald",
+      "news": [
+        {
+          "url": "https://www.miamiherald.com/news/weather-news/article318230502.html",
+          "title": "More rain is coming: South Florida flood watch issued ahead of Thanksgiving Day",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4kWjen3k0GHcy3dJzImX2lsXFtxMeQkhfZCSOWxsIj0QqHUUfyc73fhsI2s4"
+        },
+        {
+          "url": "https://www.fox35orlando.com/video/fmc-oxxwj3s94lxtrbuw",
+          "title": "Orlando Weather Forecast: Big rain, winds, storms to Florida",
+          "publisher": "FOX 35 Orlando",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs6KCJz8wBKJxpprtq7z7S7IXJ3t8WdtPaWq1wx1fLfnanKuz89g1rsfXFvw8"
+        },
+        {
+          "url": "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-miami-fort-lauderdale-miami-dade-broward-november-26-2026/",
+          "title": "South Florida sees another round of significant flooding after heavy rain, storms pound region",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDC4PntFdG9-icU5Y34TSGPIu5mRKgG-cHhuOafaSH-DWbBHm4rK1hDM2eMZg"
+        }
+      ]
+    },
+    {
+      "query": "عيد الشكر",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T10:50:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261126-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%AA%D8%A4%D8%AC%D9%84-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D9%83%D8%B1-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%85%D9%86%D8%B0-%D9%82%D8%B1%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A7%D8%B5%D9%81%D8%A9-%D9%82%D9%88%D9%8A%D8%A9",
+        "https://www.aljazeera.net/news/2026/11/25/%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%AA%D9%88%D9%82%D9%81-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D9%88%D9%89",
+        "https://arabic.cnn.com/travel/article/2026/11/26/thanksgiving-holiday-travel-busy-digvid-vrtc"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvRm3xPqVEK1b7Lx0p9Bg5GwNgEI2hFxnDhdCmIMSNUkXsWEdPxRaav9_rkHg",
+      "image_credit": "France 24",
+      "news": [
+        {
+          "url": "https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261126-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%AA%D8%A4%D8%AC%D9%84-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D9%83%D8%B1-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%85%D9%86%D8%B0-%D9%82%D8%B1%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A7%D8%B5%D9%81%D8%A9-%D9%82%D9%88%D9%8A%D8%A9",
+          "title": "نيويورك تؤجل مسيرة عيد الشكر لأول مرة منذ قرن بسبب عاصفة قوية",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvRm3xPqVEK1b7Lx0p9Bg5GwNgEI2hFxnDhdCmIMSNUkXsWEdPxRaav9_rkHg"
+        },
+        {
+          "url": "https://www.aljazeera.net/news/2026/11/25/%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%AA%D9%88%D9%82%D9%81-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D9%88%D9%89",
+          "title": "سي إن إن: تحقيق يكشف سبب شلل الطيران على مستوى الولايات المتحدة",
+          "publisher": "الجزيرة نت",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh8wTz0b4wATb5klULDFT0opI2d_vvC3yb7yUyn_XWFtFwANNCVRQdOvWJF4I"
+        },
+        {
+          "url": "https://arabic.cnn.com/travel/article/2026/11/26/thanksgiving-holiday-travel-busy-digvid-vrtc",
+          "title": "أمريكا.. ازدحامات خانقة وأحوال جوية قاسية تربك حركة السفر خلال عيد الشكر",
+          "publisher": "CNN Arabic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7J9bORDWsZIwk-oUQqE85VLnxWEJaW5Ej8t8-jyAEhHNwV-gFJXAr5yulc4k"
+        }
+      ]
+    },
+    {
+      "query": "home depot black friday ad",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T10:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/select/shopping/home-depot-black-friday-sale-2026-rcna611349",
+        "https://www.bobvila.com/reviews/best-home-depot-black-friday-deals-2026/",
+        "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-deals-from-the-home-depot-include-mattresses-throw-blankets-decor-and-more-155118998.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLhCo9J34bBQ_GrgfIlHUiquSgpF4xgBLc65E7GOWawSiAZgnOPkBLjaIA1jg",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/select/shopping/home-depot-black-friday-sale-2026-rcna611349",
+          "title": "The 21+ best Home Depot Black Friday deals on holiday decor, tools and more",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLhCo9J34bBQ_GrgfIlHUiquSgpF4xgBLc65E7GOWawSiAZgnOPkBLjaIA1jg"
+        },
+        {
+          "url": "https://www.bobvila.com/reviews/best-home-depot-black-friday-deals-2026/",
+          "title": "Home Depot’s Best Black Friday Deals Include Free Tools and Savings on Ryobi, Milwaukee, and More",
+          "publisher": "BobVila.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGSQX8yWzfqK_wl_U_RDM1hfJ8i9YDvV1Y8RUgwrBcT9CFFoOCDSTIsz3fPBE"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-deals-from-the-home-depot-include-mattresses-throw-blankets-decor-and-more-155118998.html",
+          "title": "Black Friday deals from The Home Depot include mattresses, throw blankets, decor and more",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBu_Jc_7h8z0yu6cZtdmLd8F_hPvX7PhepE2RzOKMrMACJEdrPY65pWB3HLio"
         }
       ]
     },
@@ -113,7 +253,7 @@
     },
     {
       "query": "alabama power",
-      "approx_searches": "200+",
+      "approx_searches": "100+",
       "published_at": "2026-11-26T10:00:00Z",
       "related_news_urls": [
         "https://www.wvtm13.com/article/alabama-landowner-uses-18-wheelers-to-block-power-company-access/74514204",
@@ -148,12 +288,12 @@
     },
     {
       "query": "india a vs sri lanka a",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-26T09:50:00Z",
       "related_news_urls": [
         "https://m.cricbuzz.com/live-cricket-scores/177210/inda-vs-sla-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
-        "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
-        "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html"
+        "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
+        "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE",
       "image_credit": "Cricbuzz",
@@ -166,18 +306,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE"
         },
         {
-          "url": "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
-          "title": "Sri Lanka A vs India A at Doha, DP World Men's Asia Cup Rising Stars, Semi-Final, 26 Nov 2026",
-          "publisher": "BCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a6ITVl39nsRlxE08QJ9fgMNCWjLUZGjZOc1Jcij_Kikm2zzsMGt-Axbk9eM"
-        },
-        {
           "url": "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
           "title": "India A vs Sri Lanka A ACC Men's Asia Cup Rising Stars live score, toss winner, winning probability, result and highlights from Doha",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGR24PcZ6gmwcatnLVDOOqtssfLENgpM57MCtpYYSa0_N5MAzdOFI-5Zue8vM"
+        },
+        {
+          "url": "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
+          "title": "Sri Lanka A vs India A at Doha, DP World Men's Asia Cup Rising Stars, Semi-Final, 26 Nov 2026",
+          "publisher": "BCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a6ITVl39nsRlxE08QJ9fgMNCWjLUZGjZOc1Jcij_Kikm2zzsMGt-Axbk9eM"
         }
       ]
     },
@@ -186,20 +326,13 @@
       "approx_searches": "5000+",
       "published_at": "2026-11-26T09:40:00Z",
       "related_news_urls": [
-        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
         "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
-        "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving"
+        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+        "https://www.accuweather.com/en/winter-weather/major-snowstorm-is-set-to-bury-st-louis-in-time-for-thanksgiving/1964313"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE",
-      "image_credit": "KSDK",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto",
+      "image_credit": "FOX 2",
       "news": [
-        {
-          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
-          "publisher": "KSDK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
-        },
         {
           "url": "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
           "title": "A turkey of a winter storm",
@@ -208,151 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto"
         },
         {
-          "url": "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving",
-          "title": "Winter Weather Advisory for Springfield area heading into Thanksgiving",
-          "publisher": "NPR Illinois",
+          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
+          "publisher": "KSDK",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX7tevYiIZCLmMrdnPNxBPOj_00h-pAiLGNdhh1J0MgMBWWINxcQ5ROhs2v84"
-        }
-      ]
-    },
-    {
-      "query": "buckingham jubilee gta 6 location",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T09:40:00Z",
-      "related_news_urls": [
-        "https://www.vice.com/en/article/buckingham-jubilee-gta-6-location/",
-        "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGNf-0j0Yd_kVRgvB8wwv-H_hj20gOL_y728DSJqAV8pj6oceHAFdpGV1cyLQ",
-      "image_credit": "VICE",
-      "news": [
-        {
-          "url": "https://www.vice.com/en/article/buckingham-jubilee-gta-6-location/",
-          "title": "Buckingham Jubilee GTA 6 Location – Where to Find the Rolls-Royce SUV",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGNf-0j0Yd_kVRgvB8wwv-H_hj20gOL_y728DSJqAV8pj6oceHAFdpGV1cyLQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
         },
         {
-          "url": "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
-          "title": "Where to Find All of Randy’s Wishlist Supercars in GTA 6—Car Locations & Tips",
-          "publisher": "Insider Gaming",
+          "url": "https://www.accuweather.com/en/winter-weather/major-snowstorm-is-set-to-bury-st-louis-in-time-for-thanksgiving/1964313",
+          "title": "Major snowstorm is set to bury St. Louis in time for Thanksgiving",
+          "publisher": "AccuWeather",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKkyyQugbw078Lz92TrkLbaDIfTqSmFTr0cJ4-l3JC7wYcHOqWVbrda2qEJQ"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/",
-          "title": "How to steal the Pegassi Infernus in GTA 6",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmBPjLjWCIFxpO0HKNlOJwdL7k3aiRang-7xa5YjhQyvYbiWdjzxEHq1_Nap4"
-        }
-      ]
-    },
-    {
-      "query": "3",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T09:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/crypto/articles/top-3-crypto-stocks-watch-101104165.html",
-        "https://www.marketbeat.com/instant-alerts/list-cryptocurrency-stocks-to-watch-today-november-24th-2026-11-24/",
-        "https://www.marketbeat.com/instant-alerts/list-best-cryptocurrency-stocks-worth-watching-november-25th-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmUGa_Ev_7jj3e1eA7H1j9EuPNpH4h8QChdEtEbTpFaHDG03LfO10-SfFQEcM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/crypto/articles/top-3-crypto-stocks-watch-101104165.html",
-          "title": "Top 3 Crypto Stocks To Watch In November 2026",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmUGa_Ev_7jj3e1eA7H1j9EuPNpH4h8QChdEtEbTpFaHDG03LfO10-SfFQEcM"
-        },
-        {
-          "url": "https://www.marketbeat.com/instant-alerts/list-cryptocurrency-stocks-to-watch-today-november-24th-2026-11-24/",
-          "title": "Cryptocurrency Stocks To Watch Today - November 24th",
-          "publisher": "MarketBeat",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgq7KjZpnzlg7mK_R57d78bweo47fHn24xNkzkBn5vWeqGa1EcezeNX76PZmU"
-        },
-        {
-          "url": "https://www.marketbeat.com/instant-alerts/list-best-cryptocurrency-stocks-worth-watching-november-25th-2026-11-25/",
-          "title": "Best Cryptocurrency Stocks Worth Watching - November 25th",
-          "publisher": "MarketBeat",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYj9tQVOkS0agAbUZYKYVp3oMG_8XktDRzBeAsUBGba-2UMfexFDpTdl_y_E"
-        }
-      ]
-    },
-    {
-      "query": "the legend of zelda wind waker",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T08:50:00Z",
-      "related_news_urls": [
-        "https://www.xda-developers.com/one-of-best-zelda-games-you-probably-forgot-about-just-got-unofficial-pc-port/",
-        "https://demokratis.co.id/en/wind-waker-recomp-native-pc",
-        "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRuMgMBCt5bNnw3Ya-bY9Eyt7jSvYhCZ-4FDNgA9NEduzI1vZIghEZv4dR4sU",
-      "image_credit": "XDA",
-      "news": [
-        {
-          "url": "https://www.xda-developers.com/one-of-best-zelda-games-you-probably-forgot-about-just-got-unofficial-pc-port/",
-          "title": "One of the best Zelda games you probably forgot about just got an unofficial PC port",
-          "publisher": "XDA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRuMgMBCt5bNnw3Ya-bY9Eyt7jSvYhCZ-4FDNgA9NEduzI1vZIghEZv4dR4sU"
-        },
-        {
-          "url": "https://demokratis.co.id/en/wind-waker-recomp-native-pc",
-          "title": "Wind Waker Recomp Brings Zelda Game to Native PC",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AEFo3osRrIX4NS0PqaG_gD79avjS2Z4wf6Ld03HHJWtUu5g5kJFehGWeek0"
-        },
-        {
-          "url": "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
-          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo"
-        }
-      ]
-    },
-    {
-      "query": "georgia basketball",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T08:50:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/articles/cbk/ucf-squares-off-against-boston-college",
-        "https://www.sportsgambler.com/betting-tips/basketball/boston-college-eagles-vs-ucf-knights-prediction-odds-2026-11-26/",
-        "https://247sports.com/college/florida/article/undefeated-boston-college-seeks-seventh-straight-win-against-ucf-in-espn-invitational-293319067/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/articles/cbk/ucf-squares-off-against-boston-college",
-          "title": "UCF squares off against Boston College",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/boston-college-eagles-vs-ucf-knights-prediction-odds-2026-11-26/",
-          "title": "Boston College vs UCF Prediction, Picks & Odds | 26 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
-        },
-        {
-          "url": "https://247sports.com/college/florida/article/undefeated-boston-college-seeks-seventh-straight-win-against-ucf-in-espn-invitational-293319067/",
-          "title": "Undefeated Boston College Seeks Seventh Straight Win Against UCF in ESPN Invitational",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD7q0PT-VXMMx_tbrs5i9PhiyjW3jH9k7FbbbpLGwkZ-3cTTU2XTzLc-GTiQA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJwlNUgd01qEoq6jP6lDc3sN9BzFbxG5W7w6H7L8g4tSDS3opwdjBnEEVMmdQ"
         }
       ]
     }
