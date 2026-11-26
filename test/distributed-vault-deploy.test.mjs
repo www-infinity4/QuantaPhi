@@ -386,3 +386,30 @@ test('owner-host local chat refuses remote model names, excessive input, tool ca
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('x'.repeat(262145))}),/local_model_response_too_large/);
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('Unavailable',{status:503})}),/local_model_unavailable/);
 });
+
+
+test('local Bubbles browser pilot serves a private same-origin text chat and never trusts browser model or URL overrides',async()=>{
+ const {createLocalChatServer}=await import('../distributed-vault/local-chat-server.mjs');
+ let calls=0;
+ const server=createLocalChatServer({model:'fixture:1',chat:async options=>{
+  calls++;assert.equal(options.model,'fixture:1');assert.equal(options.prompt,'Hello');
+  return {ok:true,reply:'Fixture reply',model:options.model,executionAuthorized:false,productionVerified:false,offlineRuntimeVerified:false};
+ }});
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ const base='http://127.0.0.1:'+server.address().port;
+ const post=(body,origin=base)=>fetch(base+'/chat',{method:'POST',headers:{'Content-Type':'application/json',Origin:origin},body:JSON.stringify(body)});
+ try{
+  const home=await fetch(base);
+  assert.equal(home.status,200);assert.match(home.headers.get('content-security-policy'),/connect-src 'self'/);
+  assert.match(await home.text(),/Local Bubbles/);
+  assert.equal((await fetch(base+'/client.js')).status,200);
+  assert.equal((await post({prompt:'Hello'},'https://example.invalid')).status,403);
+  assert.equal((await post({prompt:'Hello',model:'other'})).status,400);
+  assert.equal((await post({prompt:'x'.repeat(17000)})).status,413);
+  assert.equal(calls,0);
+  const reply=await post({prompt:'Hello'});
+  assert.equal(reply.status,200);assert.equal((await reply.json()).reply,'Fixture reply');assert.equal(calls,1);
+  assert.equal(reply.headers.get('cache-control'),'no-store');
+  assert.equal(reply.headers.get('access-control-allow-origin'),null);
+ }finally{await new Promise(resolve=>server.close(resolve));}
+});
