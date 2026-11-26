@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T02:31:31.647030Z",
+  "checked_at": "2026-11-26T03:01:21.491586Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sharks vs ducks",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T02:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/ducks/news/topic/game-previews/preview-ducks-back-on-home-ice-against-sharks",
-        "https://sports.yahoo.com/nhl/articles/game-26-ducks-vs-sharks-213157503.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/san-jose-sharks-vs-anaheim-ducks-prediction-odds-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRP4Ox9-dRKRu24iAo6B3MnzVSvxplwLXdctDHwcZlm3nJf6bKhpmIw-2_fj7g",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/ducks/news/topic/game-previews/preview-ducks-back-on-home-ice-against-sharks",
-          "title": "PREVIEW: Ducks Back on Home Ice Against Sharks",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRP4Ox9-dRKRu24iAo6B3MnzVSvxplwLXdctDHwcZlm3nJf6bKhpmIw-2_fj7g"
-        },
-        {
-          "url": "https://sports.yahoo.com/nhl/articles/game-26-ducks-vs-sharks-213157503.html",
-          "title": "Game #26: Ducks vs. Sharks Gameday Preview (11/25/26)",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPYGJmR_50ase5fBU4K7A_hw6NS62TkhYOFUQ7ENZq62rWPFZJy6WeymlXzaA"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/san-jose-sharks-vs-anaheim-ducks-prediction-odds-2026-11-25/",
-          "title": "San Jose Sharks vs Anaheim Ducks Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptRmJxCuTx8jPwORNOCmu0pvSL7nlI3tKoi06s100a3NkS7ULBmv0NDuddJ0"
-        }
-      ]
-    },
-    {
-      "query": "tyson fury",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T02:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/boxing/story/_/id/50591366/tyson-fury-anthony-joshua-ring-walk-cardiff",
-        "https://www.bbc.com/news/articles/c5kg73d2px7mo",
-        "https://www.nytimes.com/athletic/7812070/2026/11/25/anthony-joshua-tyson-fury-fight-cardiff/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK1Flsk5GBAu1-Hb3r58WUanoG3eHinsI1v320n52NzBmawG4D3FzcuapBb5Q",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/boxing/story/_/id/50591366/tyson-fury-anthony-joshua-ring-walk-cardiff",
-          "title": "Tyson Fury vs. Anthony Joshua start time approved by Cardiff Council",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK1Flsk5GBAu1-Hb3r58WUanoG3eHinsI1v320n52NzBmawG4D3FzcuapBb5Q"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c5kg73d2px7mo",
-          "title": "Fury vs Joshua fight to go ahead despite objections over 3am finish",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKoJAxfDaCsIxFc5u9H_xow8Gf8AeN8Iw1W0tjSXvR1VneC-xZGLbv0LpbcYc"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7812070/2026/11/25/anthony-joshua-tyson-fury-fight-cardiff/",
-          "title": "Fury vs Joshua: 1.30am fight start approved, breathalysers for ‘worse for wear’ fans - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTntXPIm52YPHHPL_QqivBTDwbrr2V9xtBK3QywSdOEmKOalC8r7pLhkNxwtGk"
-        }
-      ]
-    },
-    {
-      "query": "bill murray",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T02:10:00Z",
-      "related_news_urls": [
-        "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
-        "https://demokratis.co.id/en/bill-murray-music-film-television",
-        "https://cwibc.co.id/en/bill-murray-blues-rock-tour"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M",
-      "image_credit": "FOX 2",
-      "news": [
-        {
-          "url": "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
-          "title": "Mike Zito Joins Studio STL to Talk About Bill Murray and the Blood Brothers Bringing their Blues-Rock Tour Finale to St. Louis",
-          "publisher": "FOX 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M"
-        },
-        {
-          "url": "https://demokratis.co.id/en/bill-murray-music-film-television",
-          "title": "Bill Murray Expands His Career Through Music Film and Television",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
-        },
-        {
-          "url": "https://cwibc.co.id/en/bill-murray-blues-rock-tour",
-          "title": "Bill Murray Joins Blues Rock Tour in St Louis",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
-        }
-      ]
-    },
-    {
-      "query": "spurs vs trail blazers",
+      "query": "cliff booth",
       "approx_searches": "10000+",
-      "published_at": "2026-11-26T02:00:00Z",
+      "published_at": "2026-11-26T02:40:00Z",
       "related_news_urls": [
-        "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
-        "https://sports.yahoo.com/nba/articles/watch-spurs-vs-trail-blazers-012000578.html",
-        "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers"
+        "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html",
+        "https://www.theatlantic.com/culture/2026/11/cliff-booth-once-upon-a-time-in-hollywood-sequel-review/689578/",
+        "https://www.theguardian.com/film/2026/nov/25/hollywood-nostalgia-further-mis-adventures-of-cliff-booth-quentin-tarantino"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w",
-      "image_credit": "Blazer's Edge",
-      "news": [
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
-          "title": "Trail Blazers Return Home for Big Matchup Against Spurs",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/articles/watch-spurs-vs-trail-blazers-012000578.html",
-          "title": "How to watch Spurs vs Trail Blazers: Live stream NBA, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFak4Aq95q1XxeStjO5P8lJ3nL0gC1amdT4oAC9ghJilC2foOi84v4OyuUGcI"
-        },
-        {
-          "url": "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
-          "title": "Game Preview: San Antonio Spurs vs Portland Trail Blazers",
-          "publisher": "Pounding The Rock",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8SuMy9AZ1T75H0nwWlubkOpjhX4lgEW4-txAjc5Fvq3qMLHtyqL-Jk8mhHLs"
-        }
-      ]
-    },
-    {
-      "query": "kings vs warriors",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T02:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/final-injury-report-kings-warriors-230000917.html",
-        "https://kingsherald.com/game-preview/kings-vs-warriors-thread-prepping-that-thanksgiving-turkey/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/karl-anthony-towns-knee-probable-vs-cavs"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvuyV5l9JwbFLWFUdxQkp_2cxJMvnMEUAb1hGnNi1Duhf6UtCKWju2dsSYRSU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/final-injury-report-kings-warriors-230000917.html",
-          "title": "Final Injury Report for Kings-Warriors: Will Stephen Curry, Yaxel Lendeborg Play?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvuyV5l9JwbFLWFUdxQkp_2cxJMvnMEUAb1hGnNi1Duhf6UtCKWju2dsSYRSU"
-        },
-        {
-          "url": "https://kingsherald.com/game-preview/kings-vs-warriors-thread-prepping-that-thanksgiving-turkey/",
-          "title": "Kings vs Warriors Thread: Prepping That Thanksgiving Turkey",
-          "publisher": "The Kings Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_W1CVeH6dbxn5XsYsnrGLQpHHSv5UPB1_D-4Ea_oor6EVSwWan7OPmJr7VBA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/karl-anthony-towns-knee-probable-vs-cavs",
-          "title": "Karl-Anthony Towns (knee) probable vs. Cavs",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0"
-        }
-      ]
-    },
-    {
-      "query": "miami airport",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T02:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/miami/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
-        "https://bnonews.com/index.php/2026/11/miami-airport-closes-after-fedex-plane-goes-off-runway/",
-        "https://bnonews.com/index.php/2026/11/fedex-cargo-plane-goes-off-runway-at-miami-airport/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8ZtCKkmF37oZ0Rf5WtOnbM5c_Huam8l93fAIPbdaknQjsNB6HDRBkmS_wol0",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/miami/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
-          "title": "FAA orders ground stop for Miami-bound flights after FedEx cargo plane goes off runway",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8ZtCKkmF37oZ0Rf5WtOnbM5c_Huam8l93fAIPbdaknQjsNB6HDRBkmS_wol0"
-        },
-        {
-          "url": "https://bnonews.com/index.php/2026/11/miami-airport-closes-after-fedex-plane-goes-off-runway/",
-          "title": "Ground stop issued at Miami airport after FedEx plane goes off runway",
-          "publisher": "BNO News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo_KWXbuGNlZ2jmsJBA6Lt7STKfok5PrYQeMFgOqLzj_Z-0-K9ECpwAdcgnN0"
-        },
-        {
-          "url": "https://bnonews.com/index.php/2026/11/fedex-cargo-plane-goes-off-runway-at-miami-airport/",
-          "title": "FedEx cargo plane goes off runway at Miami airport",
-          "publisher": "BNO News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRftSLt9x5huRLuvY8oLl0rEtnCxEQDQkc0kU72dlh64rzpoiE27zVOwrU94zw"
-        }
-      ]
-    },
-    {
-      "query": "wild hockey",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T02:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7806468/2026/11/24/minnesota-wild-news-updates/",
-        "https://www.startribune.com/minnesota-wild-trade-targets-dylan-larkin-nikita-kucherov-quinn-hughes-injury-news-stanley-cup-odds/601921506",
-        "https://bleacherreport.com/articles/25537167-7-plan-b-trade-options-nhl-teams-missed-out-dylan-larkin"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_OqiQJc8BqICc6fzSwhpbpLC9IT5urBmnPval4AUhLDnAPiLpnuMw78UKFzc",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-Rnc4GCV7Zp-Tvw2t-NNHw5mn3DFzXTDo5ZwbN2OyusIvaX96Ez62TbcLA",
       "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7806468/2026/11/24/minnesota-wild-news-updates/",
-          "title": "Minnesota Wild mailbag, Part 1: What’s Plan B after Dylan Larkin, and what if Quinn Hughes leaves? - The Athletic",
+          "url": "https://www.nytimes.com/2026/11/24/movies/the-further-mis-adventures-of-cliff-booth-review.html",
+          "title": "‘The Further Mis-Adventures of Cliff Booth’ Review: Golden-Boy Fumes",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_OqiQJc8BqICc6fzSwhpbpLC9IT5urBmnPval4AUhLDnAPiLpnuMw78UKFzc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu7-Rnc4GCV7Zp-Tvw2t-NNHw5mn3DFzXTDo5ZwbN2OyusIvaX96Ez62TbcLA"
         },
         {
-          "url": "https://www.startribune.com/minnesota-wild-trade-targets-dylan-larkin-nikita-kucherov-quinn-hughes-injury-news-stanley-cup-odds/601921506",
-          "title": "Neal: Dylan Larkin is off the board. Wild should look at Nikita Kucherov next.",
-          "publisher": "Star Tribune",
+          "url": "https://www.theatlantic.com/culture/2026/11/cliff-booth-once-upon-a-time-in-hollywood-sequel-review/689578/",
+          "title": "A Bizarre Sequel to One of Tarantino’s Best Movies",
+          "publisher": "The Atlantic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPcMCeXxL7LWZpZnXVJLStV4Ch4D8kw2VAlGLhIsCAfxb5KZXw_qI_0_jNuSU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRkD17gi9EVuOFMKk0x7y9CvA0TQwuNnIpwm9ejTQXLGHP7GX9YeCb349Uj1is"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537167-7-plan-b-trade-options-nhl-teams-missed-out-dylan-larkin",
-          "title": "7 Plan B Trade Options for NHL Teams That Missed Out on Dylan Larkin",
-          "publisher": "Bleacher Report",
+          "url": "https://www.theguardian.com/film/2026/nov/25/hollywood-nostalgia-further-mis-adventures-of-cliff-booth-quentin-tarantino",
+          "title": "Reeling in the years: how Hollywood fell for its own vanishing glories",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn6zW5PGRofy3hy5WLY0xw5051vr-PTeWNBqEpKGUOfQg7_Jh1rzMofSIcFFk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZygIiPCV6tZYuAyYE8A-gUuRxU2sUABGgsWGndrPVSjWoGJO_42PiH67uCxI"
         }
       ]
     },
     {
-      "query": "rams coach",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T02:00:00Z",
+      "query": "nhl standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T02:40:00Z",
       "related_news_urls": [
-        "https://www.mensjournal.com/news/sean-mcvay-wife-veronika-swimsuit-photo-rams-packers",
-        "https://www.espn.com/nfl/story/_/id/50597187/sources-confirm-aaron-rodgers-allegations-mike-mccarthy",
-        "https://sports.yahoo.com/nfl/articles/mason-rudolph-issues-pointless-wild-014727945.html"
+        "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
+        "https://www.nytimes.com/athletic/7809951/2026/11/25/nhl-concern-o-meter-canadiens-maple-leafs/",
+        "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq5L4bFmTmq-hGhxuK70IJ1jWFJ90icJpW_MhOj6dY42COhV5yDXVzFaXZwk0",
-      "image_credit": "Men's Journal",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.mensjournal.com/news/sean-mcvay-wife-veronika-swimsuit-photo-rams-packers",
-          "title": "Sean McVay Wife: Rams Coach Took Viral Swimsuit Photo With Veronika",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq5L4bFmTmq-hGhxuK70IJ1jWFJ90icJpW_MhOj6dY42COhV5yDXVzFaXZwk0"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50597187/sources-confirm-aaron-rodgers-allegations-mike-mccarthy",
-          "title": "Sources corroborate Aaron Rodgers' allegations about Steelers HC Mike McCarthy",
+          "url": "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
+          "title": "NHL Thanksgiving Panic Index: Which teams should be most worried?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNU-RoPuN6KyPUrPyEdAxkh03Rr-vOX0Kmf84NO9G3ackpwjFHvjEYZHpEgdo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/mason-rudolph-issues-pointless-wild-014727945.html",
-          "title": "Mason Rudolph issues ‘pointless’ take on wild Mike McCarthy, Steelers story",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7809951/2026/11/25/nhl-concern-o-meter-canadiens-maple-leafs/",
+          "title": "Slafkovský’s slow start, Maple Leafs’ woes and more: A Thanksgiving concern-o-meter - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeYhLKoIsJ5oPLDPzXEmWVm7kcO5XN7kigh97J-Xh2fmeKjdwXytNuDvGxvHM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgrEhPcaT3LEz7L6tTdNOGJOeHE6Xi1uNnq_2a4qMHz6ZCvZlzT8rJFMeOeB0"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026",
+          "title": "NHL Power Rankings for Every Team at Thanksgiving 2026",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSTmz-gWbPgkBYypp_5vcM0U3EpNkljvIsfLFq6zS9UD83ijeTjugIOY7zNWQ"
         }
       ]
     },
     {
-      "query": "blackhawks vs kraken",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T01:50:00Z",
+      "query": "james wiseman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T02:40:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/kraken/news/chicago-blackhawks-vs-seattle-kraken-game-preview-projected-lines-112526",
-        "https://sports.yahoo.com/nhl/articles/blackhawks-teuvo-tervinen-x-factor-175236964.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-seattle-kraken-prediction-odds-2026-11-25/"
+        "https://www.nba.com/watch/video/james-wiseman-rises-to-finish-the-alley-oop-2",
+        "https://www.cbssports.com/fantasy/basketball/news/knicks-james-wiseman-returns-to-nba-team/",
+        "https://www.espn.com/video/clip/_/id/50556611/james-wiseman-elevates-slam-dunk"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXtu4nLCCMt0TF_ug4i6LKmeWDAqLaKttQTWjLwpOmCqHvkKWb0qMjpgVuIk",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSt4eDBtfwcPO33m3y5u4Xjb7RcrnPoGZWWbSQ6zOqbs9Hjzk-46B10FnoZo",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://www.nhl.com/kraken/news/chicago-blackhawks-vs-seattle-kraken-game-preview-projected-lines-112526",
-          "title": "Blackhawks (8-14-2) vs Kraken (11-9-1) | 6:40 p.m. | Seattle Kraken",
-          "publisher": "NHL.com",
+          "url": "https://www.nba.com/watch/video/james-wiseman-rises-to-finish-the-alley-oop-2",
+          "title": "James Wiseman rises to finish the alley-oop",
+          "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXtu4nLCCMt0TF_ug4i6LKmeWDAqLaKttQTWjLwpOmCqHvkKWb0qMjpgVuIk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSt4eDBtfwcPO33m3y5u4Xjb7RcrnPoGZWWbSQ6zOqbs9Hjzk-46B10FnoZo"
         },
         {
-          "url": "https://sports.yahoo.com/nhl/articles/blackhawks-teuvo-tervinen-x-factor-175236964.html",
-          "title": "Blackhawks need Teuvo Tervinen to be the X-Factor to end dismal history against Kraken",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/knicks-james-wiseman-returns-to-nba-team/",
+          "title": "Knicks' James Wiseman: Returns to NBA team",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNlFHE9a39_CXTcfayiyP3V8M5ymF6-qICRVwMEajhwR5ivTWRHXp08r61aH8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmVlnTgy-at8QR8QyC_oBi6cPObtNqM-vpbsRfOHh5LeUSHhkeJlsmVvYswtA"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-seattle-kraken-prediction-odds-2026-11-25/",
-          "title": "Chicago Blackhawks vs Seattle Kraken Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.espn.com/video/clip/_/id/50556611/james-wiseman-elevates-slam-dunk",
+          "title": "James Wiseman elevates for slam dunk",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlhHrRNry0V3bqwiGfVLU3Z-hcRNZDtZxdXIJVrjHfg4nvJo1PJ3DdjZdiBk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgFqnE3efIzz0wPnQSTYxzcua2pNelymNKbIoEQc--1kzxZkl_oWPbuOiglpw"
         }
       ]
     },
     {
-      "query": "kurt russell",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T01:50:00Z",
+      "query": "zach edey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T02:40:00Z",
       "related_news_urls": [
-        "https://faroutmagazine.co.uk/kurt-russell-refused-one-note-role-9-years-later-most-satisfying-career/",
-        "https://bsinews.id/en/kurt-russell-dark-blue-role",
-        "https://www.limapagi.id/en/kurt-russell-dark-blue-role"
+        "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/25/zach-edey-injury-update-memphis-grizzlies-basketball/92966990007/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-edey-ankle-ruled-out-thursday-vs-warriors",
+        "https://bsinews.id/en/zach-edey-grizzlies-timberwolves-return"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4obie7rtZZdgPAFM6ET4mkGgn_Zuz2J6qKyzhZwALpNA0a2kG-DEtIn1FoxA",
-      "image_credit": "Far Out Magazine",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TBkZOhagk0OUK0452gdc4vn8KO3Y3R2LnRT2jfcfDJ5yYseXPulE7FSzqiQ",
+      "image_credit": "The Commercial Appeal",
       "news": [
         {
-          "url": "https://faroutmagazine.co.uk/kurt-russell-refused-one-note-role-9-years-later-most-satisfying-career/",
-          "title": "In 1993, Kurt Russell instantly refused a “one-note” role. Nine years later, he called it the “most satisfying” of his career",
-          "publisher": "Far Out Magazine",
+          "url": "https://www.commercialappeal.com/story/sports/nba/grizzlies/2026/11/25/zach-edey-injury-update-memphis-grizzlies-basketball/92966990007/",
+          "title": "Grizzlies' Zach Edey leaves NBA Cup game vs Clippers with injury",
+          "publisher": "The Commercial Appeal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4obie7rtZZdgPAFM6ET4mkGgn_Zuz2J6qKyzhZwALpNA0a2kG-DEtIn1FoxA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8TBkZOhagk0OUK0452gdc4vn8KO3Y3R2LnRT2jfcfDJ5yYseXPulE7FSzqiQ"
         },
         {
-          "url": "https://bsinews.id/en/kurt-russell-dark-blue-role",
-          "title": "Kurt Russell Reversed His Decision on Dark Blue After Rewrite",
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-19/zach-edey-ankle-ruled-out-thursday-vs-warriors",
+          "title": "Zach Edey (ankle) ruled out Thursday vs. Warriors",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMpr0mdUtUte6MTl3v8Wkte9Of549V3_odSJl9jE56ftiANX3H01XQrO_O8UQ"
+        },
+        {
+          "url": "https://bsinews.id/en/zach-edey-grizzlies-timberwolves-return",
+          "title": "Zach Edey Returns for Grizzlies Against Timberwolves",
           "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNagalkmFWErk5rPAxNtsZ3l8EwZef9BWHT6VHdLU1ndwQsh46qpQ71FI983U"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQi8XtvV12Iux9uibWQRzKdtWE41_yW01wxG2UUHUmfRWMaeF0TNcqLAXp5Ees"
+        }
+      ]
+    },
+    {
+      "query": "jaden mcdaniels",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7808382/2026/11/24/julius-randle-minnesota-timberwolves-return-nets/",
+        "https://www.canishoopus.com/timberwolves-game-previews/72358/game-recap-minnesota-timberwolves-brooklyn-nets-julius-randle",
+        "https://www.nba.com/news/julius-randle-nets-return-minnesota"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCega-7Dsis6lQ8QYUbzc9hivBvcL1dz7HA9rNN5gNg-ZSuLXJLcXWm8tJ_I",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7808382/2026/11/24/julius-randle-minnesota-timberwolves-return-nets/",
+          "title": "Julius Randle returns to Minnesota to find a new Timberwolves team on fire - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdCega-7Dsis6lQ8QYUbzc9hivBvcL1dz7HA9rNN5gNg-ZSuLXJLcXWm8tJ_I"
         },
         {
-          "url": "https://www.limapagi.id/en/kurt-russell-dark-blue-role",
-          "title": "Kurt Russell Rejects Dark Blue Script Before Embracing Role",
-          "publisher": "Limapagi",
+          "url": "https://www.canishoopus.com/timberwolves-game-previews/72358/game-recap-minnesota-timberwolves-brooklyn-nets-julius-randle",
+          "title": "Game Recap: Wolves 142, Nets 116: Defense Optional, Vibes Exceptional",
+          "publisher": "Canis Hoopus",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lrbmNM7usRoY194r_YvslZBtlokKX0TQCXJNkBUFG7TMSxxs0orm7oTM0_I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1WcIVij4U9YfVyAgnlFqRLA_f4rBfUfMztmsoPu211aQxULegtMvIsuo1VYU"
+        },
+        {
+          "url": "https://www.nba.com/news/julius-randle-nets-return-minnesota",
+          "title": "Julius Randle returns to Minnesota as veteran leader for Nets",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLSSuzlMc-vsVR-rOzfMJNj9Z3rBrXy_cpgoNLBarMRGjdisZ7Jlx3mtGpoes"
+        }
+      ]
+    },
+    {
+      "query": "jose alvarado",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7809451/2026/11/25/knicks-jose-alvarado-jalen-brunson-defensive-pressure/",
+        "https://www.newsday.com/sports/basketball/knicks/knicks-jose-alvarado-tyler-kolek-r9u7jdff",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/it-obviously-made-it-10-times-better-that-i-was-a/92956928007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP4sb1mAeToouSGr5q0RGWZKT8lxTbq7CJGhkK22mlB_qjEIWHIEbWpa1PO8",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7809451/2026/11/25/knicks-jose-alvarado-jalen-brunson-defensive-pressure/",
+          "title": "How Knicks’ Jose Alvarado has become Jalen Brunson’s secret weapon",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUP4sb1mAeToouSGr5q0RGWZKT8lxTbq7CJGhkK22mlB_qjEIWHIEbWpa1PO8"
+        },
+        {
+          "url": "https://www.newsday.com/sports/basketball/knicks/knicks-jose-alvarado-tyler-kolek-r9u7jdff",
+          "title": "Mike Brown pits Jose Alvarado against Tyler Kolek in friendly Knicks competition",
+          "publisher": "Newsday",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR-3T0Bu2N20E6B59OBt8XUdP0HqQ_GwIEUmrSuS8UL_3iNAFR5hT7BvvkBBow"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/it-obviously-made-it-10-times-better-that-i-was-a/92956928007/",
+          "title": "“It obviously made it 10 times better that I was a …",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRT3pYEL9Z9Sc7S7fe5FmNUOe314QpEvIgGEWK63IwlNfOJfLuaVQxWoSxdpk"
+        }
+      ]
+    },
+    {
+      "query": "tiger woods",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
+        "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM96h2qtXYtsbNBwzybLVGFOZrVyb_uZ7iMJMIulwO2lFewhoisZW9rn19uCw",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
+          "title": "Tiger Woods declawed in courtroom battle over Sun Day Red company logo",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM96h2qtXYtsbNBwzybLVGFOZrVyb_uZ7iMJMIulwO2lFewhoisZW9rn19uCw"
+        },
+        {
+          "url": "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/",
+          "title": "Tiger Woods dealt another blow in trademark lawsuit for apparel company",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uUF4VkUP_Pj_52ppCem3KprkNmrY_R0nPI135i7uYz66uKh3efKIrOU9g2A"
+        }
+      ]
+    },
+    {
+      "query": "superbowl 2027",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+        "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
+        "https://variety.com/2026/film/news/super-bowl-jay-z-halftime-show-imax-theaters-1236955971/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
+        },
+        {
+          "url": "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
+          "title": "Disney, ESPN and NFL take Super Bowl to IMAX theaters",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA1qcH_8IyZQn-GiL_ixaHBCQGgOxWh92BSf5_NIhiublS37aFuW8S2SXUHoU"
+        },
+        {
+          "url": "https://variety.com/2026/film/news/super-bowl-jay-z-halftime-show-imax-theaters-1236955971/",
+          "title": "Super Bowl 2027 and Jay-Z Halftime Show to Screen in Imax Theaters",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_amwpzUcYkbptLyQ49ZTSWIge-Az_T4pxY6CH7fCWLjsYgQeXu_SlYDBzGB0"
+        }
+      ]
+    },
+    {
+      "query": "joan smalls",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://people.com/joan-smalls-confirms-friend-breakup-candice-swanepoel-amid-tom-brady-romance-12280137",
+        "https://www.eonline.com/news/1438416/joan-smalls-candice-swanepoel-feud-began-over-tom-brady",
+        "https://www.yahoo.com/entertainment/celebrity/articles/joan-smalls-claims-she-planned-004203787.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbt7uG25VuThwmDKvYQvd99nLbwiaxRUgYp8UM1y3J22zE7VRIB7IiwFOMN4",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/joan-smalls-confirms-friend-breakup-candice-swanepoel-amid-tom-brady-romance-12280137",
+          "title": "Joan Smalls Confirms Friendship Breakup with Candice Swanepoel amid Tom Brady Romance",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLbt7uG25VuThwmDKvYQvd99nLbwiaxRUgYp8UM1y3J22zE7VRIB7IiwFOMN4"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438416/joan-smalls-candice-swanepoel-feud-began-over-tom-brady",
+          "title": "Joan Smalls Confirms Tom Brady Was \"the Catalyst\" for Candice Swanepoel Fallout",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGRP-3pSw2tktuvoCX4oGetSjkNXeJPFmNRrET5pCOmhpYNWBQGjf3DB5c_I"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/joan-smalls-claims-she-planned-004203787.html",
+          "title": "Joan Smalls Claims She Planned to Buy Vacation Home With Candice Swanepoel Before Tom Brady ‘Betrayal’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSfEZcNPHdLgpwwUP3fRJEb77RaL1NxYNWsMgAHMXhSheMUGBsK_mkgBr2GME"
+        }
+      ]
+    },
+    {
+      "query": "colin farrell",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T02:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/film/2026/nov/25/the-slightest-touch-review-warm-story-of-colin-farrell-and-emma-fogartys-odd-couple-friendship",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/25/colin-farrell-son-james-hbo-max-documentary-the-slightest-touch/92729920007/",
+        "https://people.com/colin-farrell-reflects-on-his-sobriety-journey-and-how-his-son-changed-his-life-i-made-james-my-higher-power-12263907"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgJneI6nwjdIc4wZ7jGdYHEZrIdM0MpTZdV4LOjJnXvhwGVZCrE1v-ihz9Vj0",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/25/the-slightest-touch-review-warm-story-of-colin-farrell-and-emma-fogartys-odd-couple-friendship",
+          "title": "The Slightest Touch review – running marathons in Colin Farrell and Emma Fogarty’s odd-couple friendship",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgJneI6nwjdIc4wZ7jGdYHEZrIdM0MpTZdV4LOjJnXvhwGVZCrE1v-ihz9Vj0"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/25/colin-farrell-son-james-hbo-max-documentary-the-slightest-touch/92729920007/",
+          "title": "Colin Farrell gives rare look into life with son James, credits him for sobriety",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvWfTovp7X_ncvoXiB-BLcEYzeLQnSAvhZj6hzUnnLE1eCKp62GnwAna5vz2I"
+        },
+        {
+          "url": "https://people.com/colin-farrell-reflects-on-his-sobriety-journey-and-how-his-son-changed-his-life-i-made-james-my-higher-power-12263907",
+          "title": "Colin Farrell Reflects on His Sobriety Journey and How His Son Changed His Life: ‘I Made James My Higher Power’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3jjhBhEY9Zf96lAy8etwTPjG9CdvfGMfRecI6r4O5LQkoku84X3sGKnfQWR4"
         }
       ]
     }
