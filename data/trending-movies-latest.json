@@ -2,25 +2,9 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-26T20:32:56.465567Z",
+  "checked_at": "2026-11-26T21:03:49.810997Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
-    {
-      "id": "EVpDHKCbmlQ",
-      "title": "Avengers: Doomsday",
-      "video_id": "EVpDHKCbmlQ",
-      "video_title": "Avengers: Doomsday Final Trailer (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-23T14:17:28Z",
-      "source_url": "https://www.youtube.com/watch?v=EVpDHKCbmlQ",
-      "poster": "https://i.ytimg.com/vi/EVpDHKCbmlQ/hqdefault.jpg",
-      "google_trending": true,
-      "trend_query": "avengers doomsday",
-      "trend_checked_at": "2026-11-26T20:31:00.591015Z",
-      "trend_published_at": "2026-11-26T20:10:00Z",
-      "approx_searches": "10000+"
-    },
     {
       "id": "gKiWSvAjNG0",
       "title": "Clashing Through the Snow",
@@ -127,6 +111,18 @@
       "published_at": "2026-11-23T18:09:09Z",
       "source_url": "https://www.youtube.com/watch?v=nnliYPIV8PY",
       "poster": "https://i.ytimg.com/vi/nnliYPIV8PY/hqdefault.jpg",
+      "google_trending": false
+    },
+    {
+      "id": "EVpDHKCbmlQ",
+      "title": "Avengers: Doomsday",
+      "video_id": "EVpDHKCbmlQ",
+      "video_title": "Avengers: Doomsday Final Trailer (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-23T14:17:28Z",
+      "source_url": "https://www.youtube.com/watch?v=EVpDHKCbmlQ",
+      "poster": "https://i.ytimg.com/vi/EVpDHKCbmlQ/hqdefault.jpg",
       "google_trending": false
     },
     {
