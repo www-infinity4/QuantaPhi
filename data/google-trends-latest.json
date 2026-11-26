@@ -3,17 +3,52 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T08:32:25.540225Z",
+  "checked_at": "2026-11-26T09:01:41.520921Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "dominion power outage",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T08:20:00Z",
+      "related_news_urls": [
+        "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
+        "https://www.wavy.com/news/local-news/parking-garages-open-in-chesapeake-vb-as-flooding-is-incoming/",
+        "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrCmdtet7Yqrp620ZvC20BSbywwsvpZ_xRuDkMqeiUXffxvI6V9-fLA3sdumM",
+      "image_credit": "13newsnow.com",
+      "news": [
+        {
+          "url": "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
+          "title": "Virginia Beach braces for Thanksgiving storm as officials warn of flooding, strong winds and rough surf",
+          "publisher": "13newsnow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrCmdtet7Yqrp620ZvC20BSbywwsvpZ_xRuDkMqeiUXffxvI6V9-fLA3sdumM"
+        },
+        {
+          "url": "https://www.wavy.com/news/local-news/parking-garages-open-in-chesapeake-vb-as-flooding-is-incoming/",
+          "title": "Cities to open parking garages ahead of coastal storms, flooding",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT04S4aDviMGfGhDdjwjwTJHnu14Gt7CAUwXMnB6zNPwVqcSjAgH2DvJ8rs9LE"
+        },
+        {
+          "url": "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/",
+          "title": "Damaging winds, heavy rain and flooding expected ahead of Thanksgiving storm in Hampton Roads",
+          "publisher": "The Virginian-Pilot",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLgz37HFJNo91iee19ijJ3MczjEpdJZPKBvZHLDYXEedHSGWTvIgPow1Lwp6s"
+        }
+      ]
+    },
     {
       "query": "dennys",
       "approx_searches": "500+",
       "published_at": "2026-11-26T08:10:00Z",
       "related_news_urls": [
         "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-        "https://www.yahoo.com/entertainment/celebrity/articles/jensen-huang-receives-support-dennys-011556037.html",
-        "https://gizmodo.com/dennys-wants-everyone-to-know-its-proud-of-jensen-huang-2000845700"
+        "https://gizmodo.com/dennys-wants-everyone-to-know-its-proud-of-jensen-huang-2000845700",
+        "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShpTFrpXzpE01P5kEMSYqsoOLhfS1MfZS-_rBZKNaqcarKRl9mY_qFOsVrPMM",
       "image_credit": "CNBC",
@@ -26,18 +61,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShpTFrpXzpE01P5kEMSYqsoOLhfS1MfZS-_rBZKNaqcarKRl9mY_qFOsVrPMM"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jensen-huang-receives-support-dennys-011556037.html",
-          "title": "Jensen Huang Receives Support From Denny's Diner Amid Affair Scandal",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4y2fbSqiSblKCW2xp8cNc3OjIlE0Wv5jVBnL0Ho2XpJ10l5xn6A1TTF8Zsvk"
-        },
-        {
           "url": "https://gizmodo.com/dennys-wants-everyone-to-know-its-proud-of-jensen-huang-2000845700",
           "title": "Denny's Says It's 'Proud' of Its Association With Jensen Huang, X Post Says",
           "publisher": "Gizmodo",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC98FuE1c82HsvCANL_wBmcHgHTLVJy3FmCcR31Fv0fHq_dkYsxN0pOhFUMm8"
+        },
+        {
+          "url": "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/",
+          "title": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: 'Just put the pancakes on bro'",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkQZ67XsJtGG_8OsZ24hs90RvPamD4yzk8jqHT74ITB_CJI_Q1av5MY9wQFN0"
+        }
+      ]
+    },
+    {
+      "query": "st louis basketball",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T08:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7807947/2026/11/24/robbie-avila-saint-louis-tcu-college-basketball-eligibility/",
+        "https://www.cbssports.com/college-basketball/news/trotters-trends-big-tens-rough-start-robbie-avila-tcu-michigan-purdue/",
+        "https://unewsonline.com/2026/11/robbie-avila-snatched-away-by-tcu/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWjhIj22YH6v3PZj3AoAmtbp3g6RdFeQglB_3K9mZHB61YlNrqA8AKYV_HRE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7807947/2026/11/24/robbie-avila-saint-louis-tcu-college-basketball-eligibility/",
+          "title": "How Robbie Avila went from Saint Louis to TCU in strange start to college basketball season - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWjhIj22YH6v3PZj3AoAmtbp3g6RdFeQglB_3K9mZHB61YlNrqA8AKYV_HRE"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/trotters-trends-big-tens-rough-start-robbie-avila-tcu-michigan-purdue/",
+          "title": "Trotter's Trends: Inside the Big Ten's rough start; Robbie Avila is doing Robbie Avila things already",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSp_VFYZDSMhB3m9TPmDsCrRSobrKZdgPd0HpI1ta0LUoe-AMDJttYXIGJX7I"
+        },
+        {
+          "url": "https://unewsonline.com/2026/11/robbie-avila-snatched-away-by-tcu/",
+          "title": "Robbie Avila snatched away by TCU",
+          "publisher": "The University News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRckG4--csFQGwORmu7sQ0UwBKeOyNzvWhQou_B1TuUEKVLfAucqgHLqBR5ejs"
         }
       ]
     },
@@ -46,33 +116,33 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-26T07:50:00Z",
       "related_news_urls": [
-        "https://www.azfamily.com/2026/11/24/husband-hears-screams-stops-man-attacking-wife-in-n-out-restroom-police-say/",
-        "https://www.kptv.com/2026/11/23/man-attacks-woman-vancouver-in-n-out-restroom/",
-        "https://people.com/man-choked-stranger-in-n-out-bathroom-claiming-she-was-girl-for-him-police-12278357"
+        "https://www.nbclosangeles.com/news/local/sherman-oaks-in-n-out-racist-attack/3974349/",
+        "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/",
+        "https://people.com/woman-allegedly-yelled-racial-slurs-at-mother-and-daughter-in-l-a-in-n-out-burger-complaint-12277337"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLA__8wEF9KvHPJyBZPb-nK_vJHmiJypjWhORboOeMgG4olSH8oIfPUO70s8o",
-      "image_credit": "AZ Family",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZWTCbZmICcCQO4g0zPFAxLLVFyz9Gfeq7KdzdhIobbbpoxoLTIjK05CWwcNA",
+      "image_credit": "NBC Los Angeles",
       "news": [
         {
-          "url": "https://www.azfamily.com/2026/11/24/husband-hears-screams-stops-man-attacking-wife-in-n-out-restroom-police-say/",
-          "title": "Husband hears screams, stops man from attacking wife in In-N-Out restroom, police say",
-          "publisher": "AZ Family",
+          "url": "https://www.nbclosangeles.com/news/local/sherman-oaks-in-n-out-racist-attack/3974349/",
+          "title": "LAPD looking for hate crime suspect after apparent racist tirade at Sherman Oaks In-N-Out",
+          "publisher": "NBC Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLA__8wEF9KvHPJyBZPb-nK_vJHmiJypjWhORboOeMgG4olSH8oIfPUO70s8o"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZWTCbZmICcCQO4g0zPFAxLLVFyz9Gfeq7KdzdhIobbbpoxoLTIjK05CWwcNA"
         },
         {
-          "url": "https://www.kptv.com/2026/11/23/man-attacks-woman-vancouver-in-n-out-restroom/",
-          "title": "Man attacks woman in Vancouver In-N-Out restroom; witnesses intervene",
-          "publisher": "KPTV",
+          "url": "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/",
+          "title": "Woman targeted in racist attack at In-N-Out in Los Angeles speaks out",
+          "publisher": "KTLA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLA__8wEF9KvHPJyBZPb-nK_vJHmiJypjWhORboOeMgG4olSH8oIfPUO70s8o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToEGfl8RG7hSUUNCy-r5-fWWjZfCcgKQelF1Kpi5I9GmMPIjNXEM9TUD3-6YY"
         },
         {
-          "url": "https://people.com/man-choked-stranger-in-n-out-bathroom-claiming-she-was-girl-for-him-police-12278357",
-          "title": "Man Choked Stranger in In-N-Out Burger Bathroom, Claiming She Was ‘the Girl for Him’: Police",
+          "url": "https://people.com/woman-allegedly-yelled-racial-slurs-at-mother-and-daughter-in-l-a-in-n-out-burger-complaint-12277337",
+          "title": "Woman Allegedly Yelled Anti-Asian Slurs at Mom, Daughter at In-N-Out Burger, Now Being Investigated as Hate Crime",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR04Dz7KNBtulcmD_30-mEj0iTWPuAaLirxrLz3UVziFF3sj3SU19TFwYQsIOo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFyKfYAz3kawEDhqq91dTxgu-FGKoorOStf7vZmO_ULW5DLdNqUbzAPp1wrQU"
         }
       ]
     },
@@ -148,7 +218,7 @@
     },
     {
       "query": "criminal profile gta 6",
-      "approx_searches": "500+",
+      "approx_searches": "200+",
       "published_at": "2026-11-26T07:10:00Z",
       "related_news_urls": [
         "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
@@ -223,7 +293,7 @@
       "related_news_urls": [
         "https://corporate.mcdonalds.com/corpmcd/our-stories/article/mcdonalds-home-alone-meal.html",
         "https://www.today.com/food/restaurants/mcdonalds-home-alone-meal-2026-macaulay-culkin-ads-rcna609668",
-        "https://www.cincinnati.com/story/entertainment/dining/2026/11/26/mcdonalds-home-alone-meal-ohio-date/92826373007/"
+        "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekTlPvBAZKt6OfWOTLXU9BG7jtS8l2Su1DZcjTzhe1hCZODSTxObtrSSx2Lk",
       "image_credit": "McDonald’s Corporation",
@@ -243,11 +313,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiui6wMSWQioimG_5Z05ydj-nwrS2nvKSutXQClfPdZgGq7d9BPXOVEqJCksc"
         },
         {
-          "url": "https://www.cincinnati.com/story/entertainment/dining/2026/11/26/mcdonalds-home-alone-meal-ohio-date/92826373007/",
-          "title": "Here's what McDonald's 'Home Alone Meal' has inside",
-          "publisher": "Cincinnati Enquirer",
+          "url": "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400",
+          "title": "McDonald’s Is Releasing an All-New Holiday Meal for a Limited Time",
+          "publisher": "Allrecipes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn3RUuVrLhf_Fq9RvTGIz6CxmxgaU8hyhDXn_buek13bFL4dVwY20MfURXMnk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvkFcjNM7Johz1MwJLVjPhNmCThwu7rinit9TeRSbw-x6Z1bbvaDMR5ASO7Lg"
         }
       ]
     },
@@ -283,76 +353,6 @@
           "publisher": "AL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwBgVxWXnkJ0CUfmVsxGBEZsAZM3XPCioncEwuPKAJnkKRIAxAN7ndoglhWqU"
-        }
-      ]
-    },
-    {
-      "query": "battlestar galactica",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:50:00Z",
-      "related_news_urls": [
-        "https://cwibc.co.id/en/ronald-moore-battlestar-galactica-scenes",
-        "https://www.limapagi.id/en/battlestar-galactica-creator-scenes",
-        "https://www.tvline.com/2321643/battlestar-galactica-showrunner-loved-scene-sci-fi-channel-wanted-cut/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJsQ4PxoGhCi6hBYiFzfOzawrUwNGJovKY_AWF8WsENPW4tSuaWrnWD7Xous",
-      "image_credit": "cwibc.co.id",
-      "news": [
-        {
-          "url": "https://cwibc.co.id/en/ronald-moore-battlestar-galactica-scenes",
-          "title": "Ronald D Moore Defended Battlestar Galactica's Quiet Scenes",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJsQ4PxoGhCi6hBYiFzfOzawrUwNGJovKY_AWF8WsENPW4tSuaWrnWD7Xous"
-        },
-        {
-          "url": "https://www.limapagi.id/en/battlestar-galactica-creator-scenes",
-          "title": "Battlestar Galactica Creator Defends Slow Character Scenes",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZ_kLbtB2gBoogqml301e9x9ZnNAHSN9vaWr-iR-Kwe9Izoebj7JbFWK_WEmc"
-        },
-        {
-          "url": "https://www.tvline.com/2321643/battlestar-galactica-showrunner-loved-scene-sci-fi-channel-wanted-cut/",
-          "title": "Battlestar Galactica's Showrunner Loved One Scene The Sci-Fi Channel Wanted To Cut",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_rodNvhuxW-K_00ifN5mwqmdjgvjOzP_1RreJ3_7DRz7N0nlKjQKVc_Pxl6Q"
-        }
-      ]
-    },
-    {
-      "query": "seattle weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:50:00Z",
-      "related_news_urls": [
-        "https://www.king5.com/article/weather/severe-weather/thanksgiving-travel-could-be-impacted-heavy-rain-strong-winds-western-washington/281-a74ef4bb-8722-4fad-966a-3d464b6d4bb6",
-        "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
-        "https://www.seattletimes.com/seattle-news/weather/western-wa-hit-by-coastal-flooding-before-thanksgiving/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy_S6JB3ccDfFjhe5BC2rsBNizcTUSLMGF3V-8ZAmjqIovAxFSZLDpj-KCFqk",
-      "image_credit": "KING5.com",
-      "news": [
-        {
-          "url": "https://www.king5.com/article/weather/severe-weather/thanksgiving-travel-could-be-impacted-heavy-rain-strong-winds-western-washington/281-a74ef4bb-8722-4fad-966a-3d464b6d4bb6",
-          "title": "Thanksgiving travel could be impacted by heavy rain, strong winds arriving in western Washington",
-          "publisher": "KING5.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQy_S6JB3ccDfFjhe5BC2rsBNizcTUSLMGF3V-8ZAmjqIovAxFSZLDpj-KCFqk"
-        },
-        {
-          "url": "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
-          "title": "Extreme tides start to land on Washington coast",
-          "publisher": "KUOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjPGnRyjmDqwIvX-diarn-78VEflPekcG6-qaMovQLK_7Crg82OUUbii8r1co"
-        },
-        {
-          "url": "https://www.seattletimes.com/seattle-news/weather/western-wa-hit-by-coastal-flooding-before-thanksgiving/",
-          "title": "Coastal flooding swamps Western WA before Thanksgiving",
-          "publisher": "The Seattle Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRH-JC7pnLsAtzShKRfEHWAPj-jtNU0l92D3YCdHtGfGHUSnQSuZ0tWC4eNpRA"
         }
       ]
     }
