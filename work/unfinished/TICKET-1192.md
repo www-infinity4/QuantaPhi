@@ -5,7 +5,7 @@ state: blocked
 dot: "🟠"
 progress_percent: unknown
 progress_basis: "Merged credential-bridge recovery verified; context/skill checks exercised; live signed runner remains blocked by upstream HTTP 429"
-sessions_spent: unknown
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -149,4 +149,4 @@ Evidence: QuantaPhi PR #2145. Production verification remains pending.
 - Moltnook #284 merged with expected-head protection as `ca27f870eccc59f15f3eabe884f2d06fabc522af`, preserving current main. The bridge now reports HTTP 429 explicitly, sanitizes invalid JSON errors and rejects non-Boolean success. Current-main integration checks passed 36/36; context, source windows, native handoff, skill routing and isolation checks passed 51/51.
 - Actual post-merge signed workflow [45855118316](https://github.com/www-infinity4/Moltnook/actions/runs/45855118316), job `140031341280`, passed its 48 bridge/runner/promotion tests and then failed with `brain_runner_rate_limited_http_429`. This is a verified failure classification, not successful Brain execution or model inference. Public QuantaPhi independently returned HTTP 429 with Cloudflare error 1027.
 - The QuantaPhi context/skills sweep exposed a stale Organic Computation catalog test: it still asserted that no executor source existed after merged #889 implemented the read-only adapter. Correct only that test to require the current source-implemented/pending-deployment status and live-verification wording, continuing #891. Do not change the capability to deployed or connected.
-- Overall progress and historical session count remain unknown. No production Worker promotion, credential reset, paid plan, DNS change, owner grant renewal or physical Android acceptance occurred. The next live recovery dependency is upstream quota recovery or an actually verified replacement runtime under #2110.
+- Overall progress and historical session total remain unknown; `sessions_spent: 2` retains the prior recorded session plus this documented session. No production Worker promotion, credential reset, paid plan, DNS change, owner grant renewal or physical Android acceptance occurred. The next live recovery dependency is upstream quota recovery or an actually verified replacement runtime under #2110.
