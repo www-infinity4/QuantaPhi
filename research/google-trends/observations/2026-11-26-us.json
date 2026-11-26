@@ -3,9 +3,289 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T06:38:40.073845Z",
+  "checked_at": "2026-11-26T07:01:30.461180Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "medal",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/arts/television/late-night-trump-giuliani.html",
+        "https://www.politico.com/news/2026/11/24/rudy-giuliani-presidential-medal-of-freedom-01182011",
+        "https://abcnews.com/Politics/trump-award-medal-freedom-former-nyc-mayor-rudy/story?id=138411544"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQugMti8waDd8Rro2pUxIqGuscQjNJgPl4qij29wJX2wkT8ChedktjMI8NlVko",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/arts/television/late-night-trump-giuliani.html",
+          "title": "Late Night Rips Into Trump for Honoring Rudy Giuliani",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQugMti8waDd8Rro2pUxIqGuscQjNJgPl4qij29wJX2wkT8ChedktjMI8NlVko"
+        },
+        {
+          "url": "https://www.politico.com/news/2026/11/24/rudy-giuliani-presidential-medal-of-freedom-01182011",
+          "title": "Giuliani awarded Presidential Medal of Freedom",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSiNgGqaiPzRIxBYg3teqiMWZrUXUL7YxaIysgtHo2qtIDFy9fUP0h2cnPHMes"
+        },
+        {
+          "url": "https://abcnews.com/Politics/trump-award-medal-freedom-former-nyc-mayor-rudy/story?id=138411544",
+          "title": "Trump awards Medal of Freedom to former NYC Mayor Rudy Giuliani",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSp8_z_zDUtR23yPno5mZ78fK8eZ6B1qKqpQsCh9odwtfUXVugLys8w0UKgXtI"
+        }
+      ]
+    },
+    {
+      "query": "lion",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
+        "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
+        "https://abcnews.com/International/wireStory/turkish-officials-backtrack-after-24-hour-hunt-istanbul-138404359"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/lioness-istanbul-turkey-outskirts-search/",
+          "title": "Search on for lioness seen roaming Istanbul's outskirts",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7Edv6BONi9PKSed3S4repdQn1m6ZCpX4IXhwAt143rJePAH4Z_DqfnJN8_ks"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/24/world/middleeast/turkey-istanbul-lion.html",
+          "title": "A Lion on the Loose Near Istanbul? Not So Fast.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFY2NnpuTS18-A--6C3vCWa2sRdBB6baUDwliBCPvOMgQZ9PiY7kqzW9KYTdE"
+        },
+        {
+          "url": "https://abcnews.com/International/wireStory/turkish-officials-backtrack-after-24-hour-hunt-istanbul-138404359",
+          "title": "Turkish officials backtrack after 24-hour hunt for Istanbul lioness, saying she never existed",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3PK7d47pfvB_gk5ViZW9QgysD0cajvDkxvugqRfrnqIZDq3P0CC2GYQTJjik"
+        }
+      ]
+    },
+    {
+      "query": "gta6 leonida",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://80.lv/articles/leaker-cyberleek-releases-the-xbox-build-executable-for-gta-6",
+        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+        "https://www.techpowerup.com/355211/gta-vi-console-graphics-settings-revealed-higher-framerate-theoretically-possible-on-ps5-pro"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjOQQsHrT4Oww59RyTvHLBvKV48muiTvLvLVlMh4q3_-X31JAwSZwp0kcXDQ",
+      "image_credit": "80 Level",
+      "news": [
+        {
+          "url": "https://80.lv/articles/leaker-cyberleek-releases-the-xbox-build-executable-for-gta-6",
+          "title": "Leaker Cyberleek Releases The Xbox Build Executable for GTA 6",
+          "publisher": "80 Level",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjOQQsHrT4Oww59RyTvHLBvKV48muiTvLvLVlMh4q3_-X31JAwSZwp0kcXDQ"
+        },
+        {
+          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
+        },
+        {
+          "url": "https://www.techpowerup.com/355211/gta-vi-console-graphics-settings-revealed-higher-framerate-theoretically-possible-on-ps5-pro",
+          "title": "GTA VI Console Graphics Settings Revealed: Higher Framerate Theoretically Possible on PS5 Pro",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvaletgowRgxGTQZcbGjM7PSaVSCGeOfGaGy_JJvWZwxxM86O9eSYC2SpiCl8"
+        }
+      ]
+    },
+    {
+      "query": "winter",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+        "https://fox2now.com/news/missouri/modot-warns-travelers-of-heavy-overnight-snow-risks/",
+        "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE",
+      "image_credit": "KSDK",
+      "news": [
+        {
+          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
+          "publisher": "KSDK",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
+        },
+        {
+          "url": "https://fox2now.com/news/missouri/modot-warns-travelers-of-heavy-overnight-snow-risks/",
+          "title": "MoDOT warns travelers of heavy overnight snow risks",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTROCr0pTeqWew9pTvOPPQS9xL1nG5dczdfxKys0KA0lwIlgAxOz8WOJfSw9oY"
+        },
+        {
+          "url": "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving",
+          "title": "Winter Weather Advisory for Springfield area heading into Thanksgiving",
+          "publisher": "NPR Illinois",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX7tevYiIZCLmMrdnPNxBPOj_00h-pAiLGNdhh1J0MgMBWWINxcQ5ROhs2v84"
+        }
+      ]
+    },
+    {
+      "query": "radio",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://www.wsmv.com/2026/11/20/nashville-rappers-song-featured-popular-video-game-grand-theft-auto-vi-heres-what-know/",
+        "https://www.ign.com/articles/this-gta-6-radio-station-represents-its-florida-inspired-setting-perfectly",
+        "https://www.vice.com/en/article/3-forgotten-southern-rap-classics-getting-a-second-life-in-gta-6/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlDtIgngYhYIiIToHZqib5nMkX6OrVlVNPhtCSdnF-llhU3U9rEXNgTst53Rg",
+      "image_credit": "WSMV",
+      "news": [
+        {
+          "url": "https://www.wsmv.com/2026/11/20/nashville-rappers-song-featured-popular-video-game-grand-theft-auto-vi-heres-what-know/",
+          "title": "Nashville rapper’s song featured in popular video game Grand Theft Auto VI. Here’s what to know",
+          "publisher": "WSMV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlDtIgngYhYIiIToHZqib5nMkX6OrVlVNPhtCSdnF-llhU3U9rEXNgTst53Rg"
+        },
+        {
+          "url": "https://www.ign.com/articles/this-gta-6-radio-station-represents-its-florida-inspired-setting-perfectly",
+          "title": "GTA 6's Dirty South Classics Radio Station Shows Love for the Southern Rap Game, Representing Its Setting Perfectly",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWe7Iqhz3a2uJojFjqx1Hzo05YcCwkOv-bU-MFxKqS0NZhS5NT2Hhcy2dXPM8"
+        },
+        {
+          "url": "https://www.vice.com/en/article/3-forgotten-southern-rap-classics-getting-a-second-life-in-gta-6/",
+          "title": "3 Forgotten Southern Rap Classics Getting a Second Life in GTA 6",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIMdQJlZYtGhtZBS7X-gjEw0F7ahvply6cWw6pDyWOn0UWGktPk8yBrp3wCk8"
+        }
+      ]
+    },
+    {
+      "query": "travel",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://apnews.com/article/travel-thanksgiving-airports-highways-041a81e33ed10df50e89dc04705a6dcc",
+        "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
+        "https://katu.com/news/local/higher-travel-costs-put-a-dent-in-thanksgiving-travel-plans-aaa-pdx-portland-international-airport"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPw1lLDJ-U0aV_sDcMISOMa501mnxfz9N_fyqS7uxFbsBxdIcYwT2XcR3YGW4",
+      "image_credit": "AP News",
+      "news": [
+        {
+          "url": "https://apnews.com/article/travel-thanksgiving-airports-highways-041a81e33ed10df50e89dc04705a6dcc",
+          "title": "US travelers facing long airport lines, bad weather in the run up to Thanksgiving",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPw1lLDJ-U0aV_sDcMISOMa501mnxfz9N_fyqS7uxFbsBxdIcYwT2XcR3YGW4"
+        },
+        {
+          "url": "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
+          "title": "Travelers are worried about airline tech meltdowns ahead of Thanksgiving. Should they be?",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhKfTMBERXBhPQASJP_C6qW60Rbu1DA_LDBiIUKwHKxMREGW7pTEMZJ30Ymr4"
+        },
+        {
+          "url": "https://katu.com/news/local/higher-travel-costs-put-a-dent-in-thanksgiving-travel-plans-aaa-pdx-portland-international-airport",
+          "title": "Higher travel costs put a dent in Thanksgiving travel plans",
+          "publisher": "KATU",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW_jz7pFvvIjY66TEec5Z-HJkYZTOJxn8x9tXN5YdcSCzdauSAys00kAf1siA"
+        }
+      ]
+    },
+    {
+      "query": "home prices",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/economy/housing/u-s-home-price-growth-held-steady-in-september-2a6a3676",
+        "https://finance.yahoo.com/real-estate/article/home-prices-rose-26-in-september-even-as-mortgage-rates-moved-higher-152654427.html",
+        "https://www.reuters.com/business/us-single-family-home-prices-flat-september-fhfa-says-2026-11-24/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs2_o3M6egibnD6YNXj-V9x3A3G9zgc-pOf18hxykuax8OYjK_FrSYiuUsQBc",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/economy/housing/u-s-home-price-growth-held-steady-in-september-2a6a3676",
+          "title": "U.S. Home Price Growth Held Steady in September",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQs2_o3M6egibnD6YNXj-V9x3A3G9zgc-pOf18hxykuax8OYjK_FrSYiuUsQBc"
+        },
+        {
+          "url": "https://finance.yahoo.com/real-estate/article/home-prices-rose-26-in-september-even-as-mortgage-rates-moved-higher-152654427.html",
+          "title": "Home prices rose 2.6% in September even as mortgage rates moved higher",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOTgXp8bFPjliNDSXWvR8AaOPbAB4QqJEfJBGgyPRvcyHOzG3Ve8nsj17nfd8"
+        },
+        {
+          "url": "https://www.reuters.com/business/us-single-family-home-prices-flat-september-fhfa-says-2026-11-24/",
+          "title": "US single-family home prices flat in September, FHFA says",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbMBqyVdjihOdWpcekC0BBce_5uOIxOy2KXlEQJaFeAX8GsklgPOuMcnzj0Og"
+        }
+      ]
+    },
+    {
+      "query": "robert downey jr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T06:30:00Z",
+      "related_news_urls": [
+        "https://www.cbr.com/doctor-doom-mcu-origin-story/",
+        "https://reactormag.com/the-marvel-comics-explain-iavengers-doomsday-latverian-witches/",
+        "https://www.imdb.com/es/news/ni66126859/?ref_=int_nwr_4"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqEZwqFXfaMJccDpZ0qy5AyrGn5M7dqiULjM_6hvVWcjFIpncO2JlMCnjD4YI",
+      "image_credit": "Comic Book Resources",
+      "news": [
+        {
+          "url": "https://www.cbr.com/doctor-doom-mcu-origin-story/",
+          "title": "Marvel Finally Reveals Robert Downey Jr.'s Doctor Doom Origin & Fantastic Four Connection",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqEZwqFXfaMJccDpZ0qy5AyrGn5M7dqiULjM_6hvVWcjFIpncO2JlMCnjD4YI"
+        },
+        {
+          "url": "https://reactormag.com/the-marvel-comics-explain-iavengers-doomsday-latverian-witches/",
+          "title": "The Marvel Comics That May Help Explain Avengers: Doomsday’s Latverian Witches",
+          "publisher": "reactormag.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyLNxtvBYD2swmUl6aiINCuVFLmCZXOE3Ap3-Fvqif3e3Bn3VnUitSJIf4r78"
+        },
+        {
+          "url": "https://www.imdb.com/es/news/ni66126859/?ref_=int_nwr_4",
+          "title": "Avengers: Doomsday Director Addresses Mystery Latverian Witches Amid Wanda Maximoff’s Return",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBEdh5WO17yS9MmnY3MDqZfo5Za3Ay46FxE9AmDbXyR7tBUS7-vV_w5eBzw20"
+        }
+      ]
+    },
     {
       "query": "moon",
       "approx_searches": "5000+",
@@ -73,286 +353,6 @@
           "publisher": "IMDb",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqJ9lBJ8J0KvLTXRYODocU0BV57O03BWix9FTsYCXsJ51B8dTjOE7Rrs99K1U"
-        }
-      ]
-    },
-    {
-      "query": "sun",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
-        "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
-        "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS-N83rWEzS87fKw8bWhQqEjKDb0NEi2mZXLyx8sJtN4_hFFcCHX8SYBU-tA0",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/25/world/africa/maritius-stray-dogs.html",
-          "title": "Island Paradise of Mauritius Has Sun, Beaches and Too Many Dogs",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQS-N83rWEzS87fKw8bWhQqEjKDb0NEi2mZXLyx8sJtN4_hFFcCHX8SYBU-tA0"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/tiger-woods-declawed-courtroom-battle-sun-day-red-company-logo",
-          "title": "Tiger Woods declawed in courtroom battle over Sun Day Red company logo",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTM96h2qtXYtsbNBwzybLVGFOZrVyb_uZ7iMJMIulwO2lFewhoisZW9rn19uCw"
-        },
-        {
-          "url": "https://nypost.com/2026/11/25/sports/tiger-woods-dealt-another-blow-in-california-trademark-lawsuit/",
-          "title": "Tiger Woods dealt another blow in trademark lawsuit for apparel company",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6uUF4VkUP_Pj_52ppCem3KprkNmrY_R0nPI135i7uYz66uKh3efKIrOU9g2A"
-        }
-      ]
-    },
-    {
-      "query": "ticket",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.eyeonannapolis.net/2026/11/annapolis-baygrass-festival-announces-holiday-ticket-sale-for-2027-event/",
-        "https://www.myarkansaslottery.com/press-release/wednesday%E2%80%99s-lotto-jackpot-surges-3122-million-several-winning-mega-millions-tickets",
-        "https://neareport.com/2026/11/25/5-ticket-bought-in-blytheville-wins-100000-after-sitting-in-car-for-days/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjhUIrdnK4-YVZwJPSnoWtsjm1Nt2h1zkqZZJ8YztOuzkH_5csm-mBLsKatQ",
-      "image_credit": "Eye On Annapolis",
-      "news": [
-        {
-          "url": "https://www.eyeonannapolis.net/2026/11/annapolis-baygrass-festival-announces-holiday-ticket-sale-for-2027-event/",
-          "title": "Annapolis Baygrass Festival Announces Holiday Ticket Sale for 2027 Event",
-          "publisher": "Eye On Annapolis",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjhUIrdnK4-YVZwJPSnoWtsjm1Nt2h1zkqZZJ8YztOuzkH_5csm-mBLsKatQ"
-        },
-        {
-          "url": "https://www.myarkansaslottery.com/press-release/wednesday%E2%80%99s-lotto-jackpot-surges-3122-million-several-winning-mega-millions-tickets",
-          "title": "Wednesday’s LOTTO Jackpot Surges to $3.122 Million; Several Winning Mega Millions Tickets Sold for Tuesday Draw",
-          "publisher": "Arkansas Lottery",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRaw81HmCsur1NKUlUvT0mVPhlnpiZsaAPNxCsZdKlMUMjaqDKu-6GUxiavuCE"
-        },
-        {
-          "url": "https://neareport.com/2026/11/25/5-ticket-bought-in-blytheville-wins-100000-after-sitting-in-car-for-days/",
-          "title": "$5 Ticket Bought in Blytheville Wins $100,000 After Sitting in Car for Days",
-          "publisher": "NEA Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAiiAR9LpVl-h0GYeX-U3pVb1B53BHNx6yVyQT1H8k7Wyea6itZnLBPj3OhfQ"
-        }
-      ]
-    },
-    {
-      "query": "ship",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/ukraine-russia-war-warship-cargo-ship-attacks-nato-allies-anxiety/",
-        "https://apnews.com/article/russia-ukraine-war-libya-drone-attack-warship-officers-5719d6750c0619695c7f23a373cecd7b",
-        "https://www.reuters.com/world/africa/libyas-messy-frozen-conflict-2026-11-24/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHnm5tZr_CxnGZxbeRz_ywii5gDkXH64fLJ-CfOXZu6FmDe2TLA4qV18hqTLU",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/ukraine-russia-war-warship-cargo-ship-attacks-nato-allies-anxiety/",
-          "title": "As Ukraine sinks Russian ships, some NATO nations voice anxiety over war's spread to new regions",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTHnm5tZr_CxnGZxbeRz_ywii5gDkXH64fLJ-CfOXZu6FmDe2TLA4qV18hqTLU"
-        },
-        {
-          "url": "https://apnews.com/article/russia-ukraine-war-libya-drone-attack-warship-officers-5719d6750c0619695c7f23a373cecd7b",
-          "title": "Libyan army vows retaliation after 2 naval officers die of wounds from Ukrainian drone attack",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStV9IZvmrVJ3aOhrTz1xYojyRFn9GbmUvnBsdYtWgz42_vEZ4At-2GBUDVk3w"
-        },
-        {
-          "url": "https://www.reuters.com/world/africa/libyas-messy-frozen-conflict-2026-11-24/",
-          "title": "Explainer: Libya's messy frozen conflict",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRN0nxmnjxTl_EThtjlo5ENDOZVA7YQi4y1xrOwUrT3bP5KgLR01kYhAmIEf2Q"
-        }
-      ]
-    },
-    {
-      "query": "palace",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/royals/articles/palace-infuriated-prince-harry-latest-122846932.html",
-        "https://www.thetimes.com/uk/royal-family/article/prince-harry-royal-shadow-skrfjrvz2",
-        "https://www.cosmopolitan.com/uk/reports/a74516486/prince-harry-royal-grid/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBtxOs3T4fJofO7y3QcZ3Q2pJ4LOkEaV3OnaoXidHrSiQAAR8wJKLLmvdhlWc",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/royals/articles/palace-infuriated-prince-harry-latest-122846932.html",
-          "title": "Palace Has Right To Be ‘Infuriated’ by Prince Harry’s Latest Moves, Expert Says",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBtxOs3T4fJofO7y3QcZ3Q2pJ4LOkEaV3OnaoXidHrSiQAAR8wJKLLmvdhlWc"
-        },
-        {
-          "url": "https://www.thetimes.com/uk/royal-family/article/prince-harry-royal-shadow-skrfjrvz2",
-          "title": "Will overshadowing the royal tour get Prince Harry back in the fold?",
-          "publisher": "The Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgVxG2RW_f1v6ps92EStrAB6WEmNuhO8D9CEEu0dx-s9Kex1aDYuF9Zxugvks"
-        },
-        {
-          "url": "https://www.cosmopolitan.com/uk/reports/a74516486/prince-harry-royal-grid/",
-          "title": "What is the royal \"grid\" and why is the Palace apparently \"infuriated\" over Prince Harry wanting to join it?",
-          "publisher": "Cosmopolitan",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRwYRgWf9oGRP2TY03kYRT1Eb_ULBUq99YozUTHpFKfBt0DTUqvOL1ZBcKBY10"
-        }
-      ]
-    },
-    {
-      "query": "digimon alysion",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:20:00Z",
-      "related_news_urls": [
-        "https://www.gematsu.com/2026/11/digimon-alysion-now-available",
-        "https://www.cbr.com/digimon-alysion-hands-on-preview/",
-        "https://essential-japan.com/news/digimons-new-free-to-play-trading-card-game-app-gets-surprise-worldwide-release/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoAzggynZ23qtFvlcU3_-GJdcnSmNduz08-PqMeqeVHrBg1Fl3yq-iCKHe9Y",
-      "image_credit": "Gematsu",
-      "news": [
-        {
-          "url": "https://www.gematsu.com/2026/11/digimon-alysion-now-available",
-          "title": "Digimon Alysion now available",
-          "publisher": "Gematsu",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoAzggynZ23qtFvlcU3_-GJdcnSmNduz08-PqMeqeVHrBg1Fl3yq-iCKHe9Y"
-        },
-        {
-          "url": "https://www.cbr.com/digimon-alysion-hands-on-preview/",
-          "title": "The Most Underrated TCG of All Time Finally Gets Its Due",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBA8OAw6-9-yvircJ3BVb6rI24Xmfvl1G-wbsK2K4RgKT2SlbTQevkYLjdzAY"
-        },
-        {
-          "url": "https://essential-japan.com/news/digimons-new-free-to-play-trading-card-game-app-gets-surprise-worldwide-release/",
-          "title": "Digimon’s New Free-to-Play Trading Card Game App Gets Surprise Worldwide Release",
-          "publisher": "Essential Japan",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe8j_Rs2uCMGSapz6Esspa5iSDdVLBJEQk1VL2wkbde_t_STkvV4eDSUbb27w"
-        }
-      ]
-    },
-    {
-      "query": "matt rogers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:10:00Z",
-      "related_news_urls": [
-        "https://people.com/ariana-grande-still-working-on-rem-beauty-amid-stepping-back-spotlight-12280951",
-        "https://news.iheart.com/featured/on-the-move-with-enrique-santos/content/2026-11-25-ariana-grande-jokes-about-stepping-away-admits-i-do-need-a-break-on-las-culturistas/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/ariana-grande-jokes-retiring-break-000142578.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdp64isMsU-DvheLM8PK0zKlz4r9uENAzS1HKycfE5JHlj5PRxSNAMcUViLuc",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/ariana-grande-still-working-on-rem-beauty-amid-stepping-back-spotlight-12280951",
-          "title": "Ariana Grande Says She’ll Still Be ‘Very Visible’ with Her Beauty Brand amid Break from the Spotlight",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdp64isMsU-DvheLM8PK0zKlz4r9uENAzS1HKycfE5JHlj5PRxSNAMcUViLuc"
-        },
-        {
-          "url": "https://news.iheart.com/featured/on-the-move-with-enrique-santos/content/2026-11-25-ariana-grande-jokes-about-stepping-away-admits-i-do-need-a-break-on-las-culturistas/",
-          "title": "Ariana Grande Jokes About Stepping Away, Admits 'I Do Need A Break' On 'Las Culturistas'",
-          "publisher": "iHeart",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSW-LddE29lUzJzzc7ykFdB6FYDnVyIsd4SMFgK39FMMOMa1aCwnVD_5tQkW2k"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/ariana-grande-jokes-retiring-break-000142578.html",
-          "title": "Ariana Grande Jokes About ‘Retiring’ After Break From Spotlight",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCNZiG0aDaqBNMgTe6CY-_pFkemtakBAWCxjT01raRaNie7NRyf_-F4DiMnG8"
-        }
-      ]
-    },
-    {
-      "query": "mirror",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:10:00Z",
-      "related_news_urls": [
-        "https://www.azfamily.com/2026/11/26/passengers-pin-down-man-phoenix-diverted-flight-dramatic-video/",
-        "https://abc7chicago.com/post/chicago-bound-american-airlines-flight-san-diego-diverted-phoenix-video-shows-man-being-detained/20078795/",
-        "https://www.wlky.com/article/marine-stops-passenger-midflight-louisville-holiday-trip/74535008"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv3dLtDkirCnxOe7rW8_8ZqxnDfk5_yDEReJFd4guJpJL-9yJLvL1CPT3EJJU",
-      "image_credit": "AZ Family",
-      "news": [
-        {
-          "url": "https://www.azfamily.com/2026/11/26/passengers-pin-down-man-phoenix-diverted-flight-dramatic-video/",
-          "title": "Passengers pin down man on Phoenix-diverted flight in dramatic video",
-          "publisher": "AZ Family",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQv3dLtDkirCnxOe7rW8_8ZqxnDfk5_yDEReJFd4guJpJL-9yJLvL1CPT3EJJU"
-        },
-        {
-          "url": "https://abc7chicago.com/post/chicago-bound-american-airlines-flight-san-diego-diverted-phoenix-video-shows-man-being-detained/20078795/",
-          "title": "Passenger on Chicago-bound American Airlines flight attempted to manipulate door, police say; flight diverted to Phoenix",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoD7tvsbV982WJyy2r28MTDT7RroxhcggYKmgO0Zfhp274SVL1zbp9fuIKaYg"
-        },
-        {
-          "url": "https://www.wlky.com/article/marine-stops-passenger-midflight-louisville-holiday-trip/74535008",
-          "title": "Marine flying to Louisville for holidays restrains passenger trying to open door mid-flight",
-          "publisher": "WLKY",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTogP4nuOlXpE7ls_NUmIWAPydtJpZW7PfCN1vIELgMlj7p2AdacrU757AaWPA"
-        }
-      ]
-    },
-    {
-      "query": "duck",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:10:00Z",
-      "related_news_urls": [
-        "https://goducks.com/news/2026/11/24/football-ducks-move-into-cfp-top-12",
-        "https://www.addictedtoquack.com/college-football-playoff/65321/oregon-ducks-football-2026-college-football-playoff-rooting-interest-guide",
-        "https://www.oregonlive.com/ducks/2026/11/oregon-has-8-different-paths-to-the-big-ten-championship-some-even-with-a-loss.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkBpPE27qjJ3fmjZThKJ956QyEXq8_Ab1d-D5erdJBPxYzLp2RiptGuQLHa54",
-      "image_credit": "University of Oregon Athletics",
-      "news": [
-        {
-          "url": "https://goducks.com/news/2026/11/24/football-ducks-move-into-cfp-top-12",
-          "title": "Ducks Move Into CFP Top 12",
-          "publisher": "University of Oregon Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkBpPE27qjJ3fmjZThKJ956QyEXq8_Ab1d-D5erdJBPxYzLp2RiptGuQLHa54"
-        },
-        {
-          "url": "https://www.addictedtoquack.com/college-football-playoff/65321/oregon-ducks-football-2026-college-football-playoff-rooting-interest-guide",
-          "title": "Oregon Ducks Football: 2026 College Football Playoff Rooting Interest Guide",
-          "publisher": "Addicted To Quack",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxhvakK5_cQjOZJ_ur8VQ7Ls9FupJ3SM1FFvbuEA5vzCQlzibgROZY5-7kfS8"
-        },
-        {
-          "url": "https://www.oregonlive.com/ducks/2026/11/oregon-has-8-different-paths-to-the-big-ten-championship-some-even-with-a-loss.html",
-          "title": "Oregon has 8 different paths to the Big Ten championship — some even with a loss",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRtQKnMDen8eXGwDD5jQgh3FP3vb3dKRzrwlsHpHH59mp4oUrr_rBZGZy6QRc"
         }
       ]
     }
