@@ -678,3 +678,68 @@ test('Google OAuth redirect status stays sanitized across Worker completion boun
  assert.match(providerSignInErrorMessage(code,'google'),/unexpected redirect/);
  assert.ok(!providerSignInErrorMessage(code,'google').includes('private-code'));
 });
+
+test('competing panels cannot start or cancel another OAuth attempt',async()=>{
+ const data=new Map();
+ let release,starts=0;
+ const root={
+  location:{assign(){}},
+  sessionStorage:{
+   getItem:k=>data.get(k)||null,
+   setItem:(k,v)=>data.set(k,v),
+   removeItem:k=>data.delete(k)
+  },
+  setTimeout:()=>1,
+  clearTimeout(){},
+  addEventListener(){},
+  removeEventListener(){}
+ };
+ const request=async url=>{
+  if(url.endsWith('/start')){
+   starts++;
+   if(starts===1)
+    await new Promise(r=>release=r);
+   return Response.json({
+    ok:true,
+    authorizationUrl:'https://github.com/login/oauth/authorize?state='+'a'.repeat(43)
+   });
+  }
+  return Response.json({ok:true,status:'pending'});
+ };
+ const a=new AccountConnections({root,request,token:()=> 'test'});
+ const b=new AccountConnections({root,request,token:()=> 'test'});
+ const first=a.connect('github',['repository.read'],()=>{});
+ await new Promise(r=>setImmediate(r));
+ try{
+  await assert.rejects(
+   b.connect('github',['repository.read'],()=>{}),
+   /Finish the current sign-in/
+  );
+ }finally{release();}
+ await first;
+ assert.equal(starts,1);
+ assert.equal(b.resumePending(()=>{}),false);
+ b.cancelConnect();
+ assert.ok(data.has('bubbles:oauth-pending:v1'));
+ a.cancelConnect();
+ assert.equal(data.has('bubbles:oauth-pending:v1'),false);
+ await b.connect('github',['repository.read'],()=>{});
+ assert.equal(starts,2);
+ b.cancelConnect();
+});
+
+test('timed out wallet lookup cannot initiate a late request',async()=>{
+ let release,calls=0;
+ const client=new AccountConnections({
+  root:{},timeoutMs:20,
+  token:()=>new Promise(r=>release=r),
+  request:async()=>{
+   calls++;
+   return Response.json({ok:true});
+  }
+ });
+ await assert.rejects(client.call('/start',{}),/connection_timeout/);
+ release('test');
+ await new Promise(r=>setImmediate(r));
+ assert.equal(calls,0);
+});
