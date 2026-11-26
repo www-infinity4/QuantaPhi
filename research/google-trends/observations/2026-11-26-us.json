@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T13:01:27.628467Z",
+  "checked_at": "2026-11-26T13:31:25.013502Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "aeropuerto internacional de miami",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T12:40:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/miami-aeropuerto-fedex-avion-sale-de-pista-693f96d01ac09ba0e31e44cabcf6a8ca",
-        "https://www.telemundo51.com/video/noticiero-t51/retrasos-en-vuelos-luego-de-que-un-avion-de-fedex-se-saliera-de-la-pista-en-aeropuerto-de-miami/2854430/",
-        "https://www.univision.com/noticias/lo-mejor-de-n-univision-de-la-noche-miercoles-25-de-noviembre-de-2026-video"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbkd1Vwu6TRb3hbOJFKSgfbz4hMdnT8-LyQeUrulUqlnaQ7gEIZt9qYIKxuE",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/miami-aeropuerto-fedex-avion-sale-de-pista-693f96d01ac09ba0e31e44cabcf6a8ca",
-          "title": "Avión FedEx se sale de pista en aeropuerto de Miami, que cierra temporalmente casi todas sus pistas",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbkd1Vwu6TRb3hbOJFKSgfbz4hMdnT8-LyQeUrulUqlnaQ7gEIZt9qYIKxuE"
-        },
-        {
-          "url": "https://www.telemundo51.com/video/noticiero-t51/retrasos-en-vuelos-luego-de-que-un-avion-de-fedex-se-saliera-de-la-pista-en-aeropuerto-de-miami/2854430/",
-          "title": "Retrasos en vuelos luego de que un avión de FedEx se saliera de la pista en aeropuerto de Miami",
-          "publisher": "Telemundo Miami",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwBK04i5iSZ6B6K6DK8-rG7m26zvUFiRydnIw0O1ZGVKFkxgSgFeqig7j3cN8"
-        },
-        {
-          "url": "https://www.univision.com/noticias/lo-mejor-de-n-univision-de-la-noche-miercoles-25-de-noviembre-de-2026-video",
-          "title": "Lo mejor de N+ Univision de la noche | miércoles 25 de noviembre de 2026",
-          "publisher": "Univision",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9h82sb4BC5RA1Q1bbQGgW1HE1S8H6whJCLwbVhDM30S2Fn5e979Uoc4Kiui0"
-        }
-      ]
-    },
-    {
-      "query": "is food city open on thanksgiving",
+      "query": "celtics mitchell robinson trade proposal",
       "approx_searches": "100+",
-      "published_at": "2026-11-26T12:40:00Z",
+      "published_at": "2026-11-26T13:10:00Z",
       "related_news_urls": [
-        "https://www.knoxnews.com/story/grocery/shopping/2026/11/26/knoxville-grocery-stores-open-on-thanksgiving-2026-hours-and-closures/92762168007/",
-        "https://www.wbir.com/article/news/community/transportation/knox-area-transit-closed-on-thanksgiving/51-4bc329d4-0f48-419f-b2a9-dbd9acd2f959",
-        "https://insideofknoxville.com/2026/11/city-of-knoxville-thanksgiving-closures-holiday-happenings/"
+        "https://nesn.com/boston-celtics/news/celtics-great-news-potential-mitchell-robinson-trade/566ce0cd9a8c6b8a58d2df1a",
+        "https://sports.yahoo.com/nba/articles/celtics-trade-idea-moves-mitchell-005001136.html",
+        "https://bleacherreport.com/articles/25533652-every-nba-teams-top-3-trade-targets-after-1-month"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwX_Snf3NZayvBhvbwYiBNy-3d5pZdDKU_vCaujZOH1sbYufWXx2HAb8Nq2Aw",
-      "image_credit": "Knoxville News Sentinel",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIYAhI_b6oVXDYq1CPjWQULQzR89p8BBpNHgeBRDh5hG15eby0j0Z6LO5oYX4",
+      "image_credit": "NESN",
       "news": [
         {
-          "url": "https://www.knoxnews.com/story/grocery/shopping/2026/11/26/knoxville-grocery-stores-open-on-thanksgiving-2026-hours-and-closures/92762168007/",
-          "title": "Which Knoxville grocery stores are open on Thanksgiving? A full list",
-          "publisher": "Knoxville News Sentinel",
+          "url": "https://nesn.com/boston-celtics/news/celtics-great-news-potential-mitchell-robinson-trade/566ce0cd9a8c6b8a58d2df1a",
+          "title": "Celtics Get Great News About Potential Mitchell Robinson Trade",
+          "publisher": "NESN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwX_Snf3NZayvBhvbwYiBNy-3d5pZdDKU_vCaujZOH1sbYufWXx2HAb8Nq2Aw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIYAhI_b6oVXDYq1CPjWQULQzR89p8BBpNHgeBRDh5hG15eby0j0Z6LO5oYX4"
         },
         {
-          "url": "https://www.wbir.com/article/news/community/transportation/knox-area-transit-closed-on-thanksgiving/51-4bc329d4-0f48-419f-b2a9-dbd9acd2f959",
-          "title": "Knox Area Transit will be closed on Thanksgiving",
-          "publisher": "WBIR",
+          "url": "https://sports.yahoo.com/nba/articles/celtics-trade-idea-moves-mitchell-005001136.html",
+          "title": "Celtics Trade Idea Moves Mitchell Robinson Already for $112M Wing",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbt01Nzaa6FNdbmziToQEt0nK6Y2cQhyq_3yB6ft_gfJ0rap-9L3ojhBFyqGw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL-zvPa4Q1Dn2eXP4WQETGr0NdWtda09_9tiIsrVRXjWWJZW1578vnoXkI_qU"
         },
         {
-          "url": "https://insideofknoxville.com/2026/11/city-of-knoxville-thanksgiving-closures-holiday-happenings/",
-          "title": "City of Knoxville Thanksgiving Closures & Holiday Happenings",
-          "publisher": "Inside of Knoxville",
+          "url": "https://bleacherreport.com/articles/25533652-every-nba-teams-top-3-trade-targets-after-1-month",
+          "title": "Every NBA Team's Top 3 Trade Targets After 1 Month",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIDwfjqAG3Rf4_TH7rnBZnsbbqnweU6gNmgq518_yw9Oi8gZemMKi1H8RNP8A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiCFj-pdz7O9iDMDvQAtBKgDGGHm49iNpnSN_rilu2y3EK_bjK1aqfrnPlTGA"
         }
       ]
     },
     {
-      "query": "is weis open on thanksgiving",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T12:40:00Z",
+      "query": "cameroon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T13:00:00Z",
       "related_news_urls": [
-        "https://www.statecollege.com/articles/business/what-grocery-stores-are-open-on-thanksgiving-heres-a-look-around-centre-county/",
-        "https://www.wgal.com/article/whats-open-closed-thanksgiving-day-pennsylvania/74518526",
-        "https://www.pennlive.com/news/2026/11/need-some-last-minute-groceries-heres-what-to-know-for-thanksgiving-shopping-in-central-pa.html"
+        "https://people.com/hiker-hides-tree-stump-2-hours-elephants-gore-fellow-tourist-death-remote-national-park-12279274",
+        "https://www.theguardian.com/environment/2026/nov/25/swiss-tourist-killed-british-americans-injured-elephants-cameroon",
+        "https://abcnews.com/video/138435167/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPhcKo_mI_DxI36c7wIk1mZF8OKZmmMV2t-yU1aoNZtGvq9L1tQ6zih47018",
-      "image_credit": "StateCollege.com",
-      "news": [
-        {
-          "url": "https://www.statecollege.com/articles/business/what-grocery-stores-are-open-on-thanksgiving-heres-a-look-around-centre-county/",
-          "title": "What Grocery Stores Are Open on Thanksgiving? Here’s a Look Around Centre County",
-          "publisher": "StateCollege.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPhcKo_mI_DxI36c7wIk1mZF8OKZmmMV2t-yU1aoNZtGvq9L1tQ6zih47018"
-        },
-        {
-          "url": "https://www.wgal.com/article/whats-open-closed-thanksgiving-day-pennsylvania/74518526",
-          "title": "What’s open and closed on Thanksgiving Day in the Susquehanna Valley?",
-          "publisher": "WGAL",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVbSPrEMDZtnVc6LLm-wXSrTHt8wBayyv7fkZbrpIUsM4r3WRqyx0Q-Zow480"
-        },
-        {
-          "url": "https://www.pennlive.com/news/2026/11/need-some-last-minute-groceries-heres-what-to-know-for-thanksgiving-shopping-in-central-pa.html",
-          "title": "Need some last-minute groceries? Here’s what to know for Thanksgiving shopping in central Pa.",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0Dcs9hzAeLYruTJy6-1U-_1oIB-JWGBBtbh4QdMNvekbHxhpVTiwVivkPRFs"
-        }
-      ]
-    },
-    {
-      "query": "matt damon family home life",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T12:30:00Z",
-      "related_news_urls": [
-        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-        "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
-        "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGncnLJsYUL5Puk17cndx4NCYW7ZdDvydHb8rDppTiceTXLkZ9K5nRh1LLF8I",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
+          "url": "https://people.com/hiker-hides-tree-stump-2-hours-elephants-gore-fellow-tourist-death-remote-national-park-12279274",
+          "title": "Hiker Hides in Tree Stump for 2 Hours as Elephants Gore Fellow Tourist to Death in Remote National Park",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGncnLJsYUL5Puk17cndx4NCYW7ZdDvydHb8rDppTiceTXLkZ9K5nRh1LLF8I"
         },
         {
-          "url": "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
-          "title": "Matt Damon says it was ‘difficult’ returning home to his family after ‘The Odyssey’ isolation",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.theguardian.com/environment/2026/nov/25/swiss-tourist-killed-british-americans-injured-elephants-cameroon",
+          "title": "Swiss tourist killed and British and Americans injured by elephants in Cameroon",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWE1mXCxtG8VSjvyjSJ1E1Fl2LkFwoPoO6idA775DrW0ESQq2nwXSDnhJ4XFI"
         },
         {
-          "url": "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html",
-          "title": "Matt Damon reveals why it was difficult to return home after filming The Odyssey",
-          "publisher": "The Independent",
+          "url": "https://abcnews.com/video/138435167/",
+          "title": "Video Tourist killed in wild elephant attack while hiking with tour group",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEe-EnzmYzGm4qZIVxncD-xPZKPDWEz-tbgoa4vDNgfkvHj5aOW7MAuqJlgpE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr-jDyl6LVg90IH1rhxVKZropSbY1AG2N_rLkUifGxXrKXl4ydoh6iafiB9Q4"
         }
       ]
     },
     {
-      "query": "matt bevin child support ruling",
+      "query": "houston thanksgiving parade",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T12:30:00Z",
+      "published_at": "2026-11-26T13:00:00Z",
       "related_news_urls": [
-        "https://www.wlky.com/article/matt-bevin-adopted-son-child-support-ruling/74536486",
-        "https://www.courier-journal.com/story/news/politics/2026/11/25/matt-bevin-child-support-request-denied/92965159007/",
-        "https://www.wdrbwave.com/2026/11/26/family-court-judge-makes-ruling-former-gov-bevins-child-support-case/"
+        "https://abc13.com/live-updates/thanksgiving-houston-77th-annual-day-parade-whats-open-closed-heres-full-holiday-guide/20020602/",
+        "https://www.click2houston.com/news/local/2026/11/24/houston-thanksgiving-day-parade-2026-road-closures-parade-route-parking-and-more/",
+        "https://www.houstonpress.com/news/get-your-game-face-on-houston/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE2t1pAFPzxzNKgkmpaBSic2RUWhfOwBOQj1T2VKSkcjaKl8OrZV4NGqubrEM",
-      "image_credit": "WLKY",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLfbBZ-_kPexOVmGafjJ5Fe46NGbtkKn2Gsv33lH_pRGrX-HAd0vCysWWbtNg",
+      "image_credit": "ABC13 Houston",
       "news": [
         {
-          "url": "https://www.wlky.com/article/matt-bevin-adopted-son-child-support-ruling/74536486",
-          "title": "Judge rules Matt Bevin does not owe adopted son child support",
-          "publisher": "WLKY",
+          "url": "https://abc13.com/live-updates/thanksgiving-houston-77th-annual-day-parade-whats-open-closed-heres-full-holiday-guide/20020602/",
+          "title": "From annual Thanksgiving parade to what's open & closed, here's your guide to Turkey Day in Houston",
+          "publisher": "ABC13 Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE2t1pAFPzxzNKgkmpaBSic2RUWhfOwBOQj1T2VKSkcjaKl8OrZV4NGqubrEM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLfbBZ-_kPexOVmGafjJ5Fe46NGbtkKn2Gsv33lH_pRGrX-HAd0vCysWWbtNg"
         },
         {
-          "url": "https://www.courier-journal.com/story/news/politics/2026/11/25/matt-bevin-child-support-request-denied/92965159007/",
-          "title": "Matt Bevin does not owe adopted son child support, judge rules",
-          "publisher": "The Courier-Journal",
+          "url": "https://www.click2houston.com/news/local/2026/11/24/houston-thanksgiving-day-parade-2026-road-closures-parade-route-parking-and-more/",
+          "title": "Houston Thanksgiving Day Parade 2026: Road closures, parade route, parking and more",
+          "publisher": "Click2Houston",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Lv3eQC9vfrjXWbjkDp5jdmYHRdM3w2dNX0yjevEHkJvjDEtQh2ujDeld7do"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLwr3pn7RqpLckoPnplQzpE4FhuhQN8vW04wb41KnIRAOx69cAFBc9imd-eec"
         },
         {
-          "url": "https://www.wdrbwave.com/2026/11/26/family-court-judge-makes-ruling-former-gov-bevins-child-support-case/",
-          "title": "Family court judge makes ruling in former Kentucky Gov. Bevin’s child support case",
-          "publisher": "WDRB",
+          "url": "https://www.houstonpress.com/news/get-your-game-face-on-houston/",
+          "title": "Get Your Game Face On, Houston!",
+          "publisher": "Houston Press",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBz0QWrnHSS85F4jM1c5l4SG1-5gu4WU3UMQmN0sxc71LO966VXi3nrbDdd-g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjlosLqQWkhlAg7nbKqqfnVY7J7qTZy1PZV2LmEmRtT1LKV5wC2TyWI3EjQEk"
         }
       ]
     },
     {
-      "query": "trump account for kids",
+      "query": "is it thanksgiving today",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T12:30:00Z",
+      "published_at": "2026-11-26T13:00:00Z",
       "related_news_urls": [
-        "https://helenair.com/news/state-regional/government-politics/article_0073baf5-1437-485d-ae13-9168954134a4.html",
-        "https://lifestylesmagazine.com/latest-news/22081000-gift-from-brenda-and-frank-slootman-gives-every-montana-child-born-in-2023-and-2024-a-1000-start/",
-        "https://nbcmontana.com/news/local/nbc-mt-today-police-chief-on-leave-montana-kids-trump-accounts-receive-funds-snow"
+        "https://www.presidentialprayerteam.org/2026/11/26/thanksgiving-day-presidential-proclamation-3-2/",
+        "https://pcusa.org/news-storytelling/news/2026/11/25/through-lens",
+        "https://www.mainstreetnews.com/barrow/bridges-a-full-month-of-giving-thanks/article_16e34f13-c9b1-4a4b-be3e-75b5a830370b.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSir5-L8R8MiB--np5d68Uin0cW3f5mRKFvZEs2PER_IzhuVYdTrTJAHrdvZMg",
-      "image_credit": "The Independent Record",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyqL5kzbc-HSS0SAGRdpjTIt13jAWNEXKpb05jzp_m_lEe6-LoZTu69ZWBmqI",
+      "image_credit": "The Presidential Prayer Team",
       "news": [
         {
-          "url": "https://helenair.com/news/state-regional/government-politics/article_0073baf5-1437-485d-ae13-9168954134a4.html",
-          "title": "Tech billionaire couple gives a total of $22M to thousands of Montana children",
-          "publisher": "The Independent Record",
+          "url": "https://www.presidentialprayerteam.org/2026/11/26/thanksgiving-day-presidential-proclamation-3-2/",
+          "title": "Thanksgiving Day Presidential Proclamation",
+          "publisher": "The Presidential Prayer Team",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSir5-L8R8MiB--np5d68Uin0cW3f5mRKFvZEs2PER_IzhuVYdTrTJAHrdvZMg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyqL5kzbc-HSS0SAGRdpjTIt13jAWNEXKpb05jzp_m_lEe6-LoZTu69ZWBmqI"
         },
         {
-          "url": "https://lifestylesmagazine.com/latest-news/22081000-gift-from-brenda-and-frank-slootman-gives-every-montana-child-born-in-2023-and-2024-a-1000-start/",
-          "title": "$22,081,000 gift from Brenda and Frank Slootman gives every Montana child born in 2023 and 2024 a $1,000 start",
-          "publisher": "Lifestyles Magazine",
+          "url": "https://pcusa.org/news-storytelling/news/2026/11/25/through-lens",
+          "title": "Through a lens",
+          "publisher": "Presbyterian Church (U.S.A.)",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8UHZxN0DYyR4ixCz_OpZIQaHK0vNgpSz7WlPNi6KZ6lmUmScJf096JLjV1xc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIT9ATWcSo_ivss9AUs86XJc1HV1w_gGmvL2CeRoj7e2A4zYNpWiyTTaaa3G4"
         },
         {
-          "url": "https://nbcmontana.com/news/local/nbc-mt-today-police-chief-on-leave-montana-kids-trump-accounts-receive-funds-snow",
-          "title": "NBC MT Today: Police chief on leave, Montana kids' Trump accounts receive funds, snow",
-          "publisher": "NBC Montana",
+          "url": "https://www.mainstreetnews.com/barrow/bridges-a-full-month-of-giving-thanks/article_16e34f13-c9b1-4a4b-be3e-75b5a830370b.html",
+          "title": "BRIDGES: A full month of giving thanks",
+          "publisher": "mainstreetnews.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs7mChfWUAI9GxIbA-Ekscbg7BAyiNQTBO2xDFf2FGemBzvAFAJCmeTUIaN50"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWMwRn01oz_m_Ps1WUoRDJTkMzca1_k-DlCLkBxhZkg1T8YDObqp7Uhewqg0Q"
         }
       ]
     },
     {
-      "query": "milwaukee brewers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:30:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/antonio-senzatela-brewers-contract",
-        "https://www.brewcrewball.com/milwaukee-brewers-news/93134/brewers-re-sign-one-of-their-trade-deadline-additions-in-first-free-agent-sign-of-offseason",
-        "https://www.mlbtraderumors.com/2026/11/brewers-sign-antonio-senzatela.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP-5Cbmk8gKx_fsL2xfI5VAF05jI-XgDJod5bemkoCQQ9sIVcDXAZj_GhdfgU",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/antonio-senzatela-brewers-contract",
-          "title": "Brewers bring back righty Senzatela on 1-year contract",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP-5Cbmk8gKx_fsL2xfI5VAF05jI-XgDJod5bemkoCQQ9sIVcDXAZj_GhdfgU"
-        },
-        {
-          "url": "https://www.brewcrewball.com/milwaukee-brewers-news/93134/brewers-re-sign-one-of-their-trade-deadline-additions-in-first-free-agent-sign-of-offseason",
-          "title": "Brewers re-sign one of their Trade Deadline additions in first free agent sign of offseason",
-          "publisher": "Brew Crew Ball",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdDT7SgthWgfHubzy1vgIqPgMK3Cw5dIaTsu9Z8dtDt1kOSCJVt1g9D0Rk14"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/brewers-sign-antonio-senzatela.html",
-          "title": "Brewers Sign Antonio Senzatela",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv_O5r7hqeSEFbS2FthQ_POIOwEHhTqvV57rmsMsHIBTgmM2gxWp0gcOx-60"
-        }
-      ]
-    },
-    {
-      "query": "ocarina of time update",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T12:30:00Z",
-      "related_news_urls": [
-        "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
-        "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
-        "https://www.notebookcheck.net/Nintendo-fixes-the-Ocarina-of-Time-remake-bug-that-left-players-stuck-at-Lon-Lon-Ranch.1460662.0.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQznO1h2ivwu9lUbGrf26pT79v_jj7ZIZQcN6pqIkD2bqHrtCo_zagpA4ATdrc",
-      "image_credit": "Nintendo Life",
-      "news": [
-        {
-          "url": "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
-          "title": "The Legend Of Zelda: Ocarina Of Time Switch 2 Updated (Version 1.1.2), Here Are The Patch Notes",
-          "publisher": "Nintendo Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQznO1h2ivwu9lUbGrf26pT79v_jj7ZIZQcN6pqIkD2bqHrtCo_zagpA4ATdrc"
-        },
-        {
-          "url": "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
-          "title": "Zelda: Ocarina of Time updated to Ver. 1.1.2",
-          "publisher": "GoNintendo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3s4pg4pyG57j0o9pQS55Qkh2uqDmUMuf3q_MA7c4AvELrrBKNR1Nt54epji4"
-        },
-        {
-          "url": "https://www.notebookcheck.net/Nintendo-fixes-the-Ocarina-of-Time-remake-bug-that-left-players-stuck-at-Lon-Lon-Ranch.1460662.0.html",
-          "title": "Nintendo fixes the Ocarina of Time remake bug that left players stuck at Lon Lon Ranch",
-          "publisher": "Notebookcheck",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuyvls2NQuRGrJFIVNCRdhXuoFEFutdOVCnSbhJUD-nYoxA5Wa2gP0Q0USlwk"
-        }
-      ]
-    },
-    {
-      "query": "bravo",
+      "query": "manchester road race 2026",
       "approx_searches": "100+",
-      "published_at": "2026-11-26T12:30:00Z",
+      "published_at": "2026-11-26T13:00:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/24/peacock-black-friday-streaming-deal/92942072007/",
-        "https://variety.com/2026/shopping/news/peacock-black-friday-deal-sign-up-online-1236958024/",
-        "https://www.cyclingweekly.com/deals/watch-every-minute-live-of-the-2027-tour-de-france-for-just-usd89-99-save-usd40-on-peacock-premium-for-black-friday"
+        "https://sports.yahoo.com/general/articles/more-14-000-runners-part-100021836.html",
+        "https://www.courant.com/2026/11/25/at-42-this-two-time-olympian-is-set-to-run-the-manchester-road-race-lets-see-what-i-can-do/",
+        "https://www.fox61.com/article/sports/manchester-road-race/90th-manchester-road-race-similarities-to-the-inaugural-race-in-1927/520-0b1c4ce9-8f7c-4053-ae3b-f3662ebe30ac"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7xIA-b9pfcvoCG45o0r9XW3IiEUAY7co5stMS7XLDSxpDFL025UXBAW906fw",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5j6sjuYXM1lcMwSERR1JeMsE-4-IfImoNuWsM_Y0BGX6jpGaMiOLdkpB9Xfw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/general/articles/more-14-000-runners-part-100021836.html",
+          "title": "More than 14,000 runners to take part in Manchester Road Race Thanksgiving Day",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5j6sjuYXM1lcMwSERR1JeMsE-4-IfImoNuWsM_Y0BGX6jpGaMiOLdkpB9Xfw"
+        },
+        {
+          "url": "https://www.courant.com/2026/11/25/at-42-this-two-time-olympian-is-set-to-run-the-manchester-road-race-lets-see-what-i-can-do/",
+          "title": "At 42, this two-time Olympian is set to run the Manchester Road Race: ‘Let’s see what I can do’",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQx-rY4ZxWlj22TzzHUMbnSllJC-jCjpPesifKQZkXJb5vJJtUhG77s09qn78"
+        },
+        {
+          "url": "https://www.fox61.com/article/sports/manchester-road-race/90th-manchester-road-race-similarities-to-the-inaugural-race-in-1927/520-0b1c4ce9-8f7c-4053-ae3b-f3662ebe30ac",
+          "title": "90th Manchester Road Race has similarities to the inaugural race in 1927",
+          "publisher": "fox61.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9-bIe5nWiVfqJC0XhLTOOAF-XDeCQJTvEM_3MOnt_b7pUkURRJQfMVQ4ssrc"
+        }
+      ]
+    },
+    {
+      "query": "h1b green card perm overhaul",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T13:00:00Z",
+      "related_news_urls": [
+        "https://timesofindia.indiatimes.com/education/study-abroad/us-green-card-process-may-get-tougher-for-indian-workers-as-labor-department-releases-revised-perm-form-ahead-of-overhaul-what-f-1-opt-and-h-1b-graduates-must-knoww/articleshow/136181379.cms",
+        "https://corporateimmigrationpartners.com/us-immigration-news-update-november-25-2026/",
+        "https://workpermit.com/news/us-labor-department-proposes-perm-recruitment-overhaul-20261121"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZZU7deCu1DzHLJvqH2ZnjHFLTDQfcsN-ZnlweVtjsBJAZb0fU3jPtbaoBAi8",
+      "image_credit": "The Times of India",
+      "news": [
+        {
+          "url": "https://timesofindia.indiatimes.com/education/study-abroad/us-green-card-process-may-get-tougher-for-indian-workers-as-labor-department-releases-revised-perm-form-ahead-of-overhaul-what-f-1-opt-and-h-1b-graduates-must-knoww/articleshow/136181379.cms",
+          "title": "US green card process may get tougher for Indian workers as Labor Department releases revised PERM form a",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZZU7deCu1DzHLJvqH2ZnjHFLTDQfcsN-ZnlweVtjsBJAZb0fU3jPtbaoBAi8"
+        },
+        {
+          "url": "https://corporateimmigrationpartners.com/us-immigration-news-update-november-25-2026/",
+          "title": "US: Immigration News Update – November 25, 2026",
+          "publisher": "Corporate Immigration Partners, PC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ7FGtZJmXYJc5LOPER_XztpTi_C1L3r89b0-SJlWa2Y9PhrS_wVcPeFhJvzT4"
+        },
+        {
+          "url": "https://workpermit.com/news/us-labor-department-proposes-perm-recruitment-overhaul-20261121",
+          "title": "U.S. Green Card Sponsorship Could Get Harder Under PERM Plan",
+          "publisher": "Workpermit.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vOOatEYTQlBIGlbIMX996qGhwpRgEUbpmQI4UGNFX7yZMywRLypiRulcIxs"
+        }
+      ]
+    },
+    {
+      "query": "savannah guthrie",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T13:00:00Z",
+      "related_news_urls": [
+        "https://sg.news.yahoo.com/savannah-guthrie-made-jenna-bush-161105726.html",
+        "https://www.the-sun.com/tv/17345514/today-jenna-savannah-piercings-holiday-party/",
+        "https://suaragarut.id/en/jenna-savannah-piercing-exchange"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl6emwIS1oBPu9jd2Z3uohzjv78-FfgCNu2cBNGMrC8VItDwTd59yvvmkEadE",
+      "image_credit": "Yahoo News Singapore",
+      "news": [
+        {
+          "url": "https://sg.news.yahoo.com/savannah-guthrie-made-jenna-bush-161105726.html",
+          "title": "Savannah Guthrie Made Jenna Bush Hager “Jealous” After Bonding With A-List Friend",
+          "publisher": "Yahoo News Singapore",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTl6emwIS1oBPu9jd2Z3uohzjv78-FfgCNu2cBNGMrC8VItDwTd59yvvmkEadE"
+        },
+        {
+          "url": "https://www.the-sun.com/tv/17345514/today-jenna-savannah-piercings-holiday-party/",
+          "title": "Two Today hosts got piercings together after show's wild holiday bash",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCIkk9itTTGwRseA4qGKY8bLQxTicqxn7VfVKxDtvMIacd_VLV1EYcGfng3U"
+        },
+        {
+          "url": "https://suaragarut.id/en/jenna-savannah-piercing-exchange",
+          "title": "Jenna Bush Hager Teases Savannah Guthrie Over Gwyneth Paltrow Piercing",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0U6k2CwbRUSCi5LpqO_WsZbyYwXsdBLr6Ls-wbpOXbUh2JpvcycqpI1yqfog"
+        }
+      ]
+    },
+    {
+      "query": "mike collins house ethics report",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T13:00:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/news/state/georgia/2026/11/25/is-mike-collins-still-under-a-house-investigation-report-released/92956072007/",
+        "https://www.11alive.com/article/news/politics/us-house-ethics-committee-recommends-contempt-finding-against-former-chief-of-staff-rep-mike-collins/85-2c88caaa-70ac-4c02-89a1-fd1ece7e8a9a",
+        "https://www.cbsnews.com/atlanta/news/mike-collins-ex-chief-of-staff-broke-rules-when-paying-girlfriend-as-intern-committee-finds/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTy8RAYrZvDMIFsp7435y3Y6U3f7OCDkQ5iuqzeI-QwVG5U-jLlfU1OL8bKT_g",
       "image_credit": "USA Today",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/24/peacock-black-friday-streaming-deal/92942072007/",
-          "title": "Peacock's Black Friday deals offer 66% off and start at just $2.99",
+          "url": "https://www.usatoday.com/story/news/state/georgia/2026/11/25/is-mike-collins-still-under-a-house-investigation-report-released/92956072007/",
+          "title": "Mike Collins' House ethics investigation finds misuse of taxpayer funds",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7xIA-b9pfcvoCG45o0r9XW3IiEUAY7co5stMS7XLDSxpDFL025UXBAW906fw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTy8RAYrZvDMIFsp7435y3Y6U3f7OCDkQ5iuqzeI-QwVG5U-jLlfU1OL8bKT_g"
         },
         {
-          "url": "https://variety.com/2026/shopping/news/peacock-black-friday-deal-sign-up-online-1236958024/",
-          "title": "Peacock Is $2.99 a Month With This Black Friday Deal",
-          "publisher": "Variety",
+          "url": "https://www.11alive.com/article/news/politics/us-house-ethics-committee-recommends-contempt-finding-against-former-chief-of-staff-rep-mike-collins/85-2c88caaa-70ac-4c02-89a1-fd1ece7e8a9a",
+          "title": "U.S. House Ethics Committee recommends contempt finding against former chief of staff to Rep. Mike Collins",
+          "publisher": "11Alive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXyBXQ1p3ip93Esgmcs3_tzsQXoU5_EERpiZpYtatVCyxk71Zyekk6d0rS_s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlIxPXUSyiSTap_SdlOUTLyEktzPDK4uPx9k18pii6KU6i7YBQEIVXTZRBX2w"
         },
         {
-          "url": "https://www.cyclingweekly.com/deals/watch-every-minute-live-of-the-2027-tour-de-france-for-just-usd89-99-save-usd40-on-peacock-premium-for-black-friday",
-          "title": "Watch every minute live of the 2027 Tour de France for just $89.99 – Save $40 on Peacock Premium for Black Friday",
-          "publisher": "Cycling Weekly",
+          "url": "https://www.cbsnews.com/atlanta/news/mike-collins-ex-chief-of-staff-broke-rules-when-paying-girlfriend-as-intern-committee-finds/",
+          "title": "Mike Collins' ex-chief of staff broke rules when paying girlfriend as intern, committee finds",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSeQQYB7TzxGDgOvQ7rp5NGTi6HDP2vuphOq-VoF6wWnFBZPiWY2us2wmD0Fk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzsKmVLnkGztf5DaQodT8ZqoQf94Biao0Wl4UJveYxd_mI1Yal7AXmf4BLTDg"
         }
       ]
     },
     {
-      "query": "the rookie",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:30:00Z",
+      "query": "tehran",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T12:50:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66128799/?ref_=nm_nwr_1",
-        "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355",
-        "https://ew.com/jay-ellis-previews-high-octane-spinoff-the-rookie-north-new-teaser-12263486"
+        "https://www.washingtonpost.com/world/2026/11/26/tehran-imposes-austerity-under-us-pressure-iranians-frustrations-grow/",
+        "https://www.aljazeera.com/features/2026/11/25/iran-rations-electricity-how-deeply-are-us-sanctions-blockade-biting",
+        "https://www.ynetnews.com/article/hjzx7gs17g"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4Za7eleqSPcb3pgfIGooTgX_Ax_FT3HwE4krZFV0KZzQeeM-AMwh7B0WONk",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRJpyNw5QC_Bq5D1Ofxd0Ez8ACjD0GtmnEDfd5plkT0H-Tv5nhoFTq_ZlLaKw",
+      "image_credit": "The Washington Post",
       "news": [
         {
-          "url": "https://www.imdb.com/es/news/ni66128799/?ref_=nm_nwr_1",
-          "title": "Nathan Fillion’s The Rookie Spinoff Officially Hits Major Filming Milestone Ahead Of January Release",
-          "publisher": "IMDb",
+          "url": "https://www.washingtonpost.com/world/2026/11/26/tehran-imposes-austerity-under-us-pressure-iranians-frustrations-grow/",
+          "title": "Iranians’ frustrations grow as Tehran, under U.S. pressure, imposes austerity",
+          "publisher": "The Washington Post",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4Za7eleqSPcb3pgfIGooTgX_Ax_FT3HwE4krZFV0KZzQeeM-AMwh7B0WONk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRJpyNw5QC_Bq5D1Ofxd0Ez8ACjD0GtmnEDfd5plkT0H-Tv5nhoFTq_ZlLaKw"
         },
         {
-          "url": "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355",
-          "title": "WATCH: The Rookie North - Series Premiere Jan 6 Video | The Rookie North",
-          "publisher": "ABC Network",
+          "url": "https://www.aljazeera.com/features/2026/11/25/iran-rations-electricity-how-deeply-are-us-sanctions-blockade-biting",
+          "title": "Iran rations electricity: How deeply are US sanctions, blockade biting?",
+          "publisher": "Al Jazeera",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1mP397FedN7ngkXdTogn_eZUBkBeYuktOGlfEdYw5klKg1RtXC6pE5VBQK0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTErIHGa1iGXMNXAWskDTBybGKE67NA5BxNI6jCTmt6PXvjFx7QzRGrkXvFHU"
         },
         {
-          "url": "https://ew.com/jay-ellis-previews-high-octane-spinoff-the-rookie-north-new-teaser-12263486",
-          "title": "Jay Ellis welcomes ‘Rookie’ fans to car-chasing, joke-cracking spinoff ‘The Rookie North’ in teaser",
-          "publisher": "Entertainment Weekly",
+          "url": "https://www.ynetnews.com/article/hjzx7gs17g",
+          "title": "‘Scenes you wouldn’t see even in Africa’: Video of Iran’s president sparks outrage",
+          "publisher": "Ynetnews",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4nzdnl1ZqpAkt9I_1yXIBbKjRo1Rcst1Bo26UHiJPJLYj_lMSm63UYIl89Ds"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKkKaiVwq5QZ_p4ke6wYjCDdzbmN9iN8l2Z89gts1NcqUsNhWRoI9NhXVZ7Ns"
+        }
+      ]
+    },
+    {
+      "query": "washington",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T12:50:00Z",
+      "related_news_urls": [
+        "https://www.king5.com/article/weather/severe-weather/ground-stop-issued-at-seattle-tacoma-international-airport-due-to-wind/281-3ff22646-b316-4bfe-bc8b-8bb541694e0e",
+        "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
+        "https://www.rentonreporter.com/2026/11/25/pse-preps-for-thanksgiving-storm-impacts/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO_joNO87iWk1QQmbX0MKZkH1hGO6OxeJwZb2OY-fBbBR9cRSACHr-F6uJMc",
+      "image_credit": "KING5.com",
+      "news": [
+        {
+          "url": "https://www.king5.com/article/weather/severe-weather/ground-stop-issued-at-seattle-tacoma-international-airport-due-to-wind/281-3ff22646-b316-4bfe-bc8b-8bb541694e0e",
+          "title": "Ground stop canceled at Seattle-Tacoma International Airport due to wind",
+          "publisher": "KING5.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSVO_joNO87iWk1QQmbX0MKZkH1hGO6OxeJwZb2OY-fBbBR9cRSACHr-F6uJMc"
+        },
+        {
+          "url": "https://www.kuow.org/environment/2026-11-24/extreme-tides-start-to-land-on-washington-coast",
+          "title": "Extreme tides start to land on Washington coast",
+          "publisher": "KUOW",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjPGnRyjmDqwIvX-diarn-78VEflPekcG6-qaMovQLK_7Crg82OUUbii8r1co"
+        },
+        {
+          "url": "https://www.rentonreporter.com/2026/11/25/pse-preps-for-thanksgiving-storm-impacts/",
+          "title": "PSE preps for Thanksgiving storm impacts",
+          "publisher": "Renton Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8wMkGJ6NCVavODSELVobAkTjqYY6zXhjDm_Y1tuLxogvAx_iHT0PUYqQBnhA"
         }
       ]
     }
