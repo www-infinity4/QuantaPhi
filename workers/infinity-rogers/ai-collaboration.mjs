@@ -80,6 +80,34 @@ export async function handleCollaboration(request,env,{fetcher=fetch,verifyOwner
 // Private writer inference contract. Not a public route, not invoked by the
 // current runner. Explicit server enablement is required after data/cost review.
 // The future signed runner must retain its existing lease and result validators.
+const GEMINI_WRITER_RESPONSE_BYTES=262144;
+async function readGeminiWriterResponse(res){
+ const declared=Number(res.headers.get('Content-Length'));
+ if(Number.isFinite(declared)&&declared>GEMINI_WRITER_RESPONSE_BYTES){
+  await res.body?.cancel().catch(()=>{});
+  throw Error('gemini_writer_output_too_large');
+ }
+ if(!res.body)throw Error('gemini_writer_output_invalid');
+ const reader=res.body.getReader(),chunks=[];
+ let total=0;
+ try{
+  while(true){
+   const {done,value}=await reader.read();
+   if(done)break;
+   total+=value.byteLength;
+   if(total>GEMINI_WRITER_RESPONSE_BYTES)throw Error('gemini_writer_output_too_large');
+   chunks.push(value);
+  }
+  const bytes=new Uint8Array(total);
+  let offset=0;
+  for(const chunk of chunks){bytes.set(chunk,offset);offset+=chunk.byteLength;}
+  return JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(bytes));
+ }catch(error){
+  await reader.cancel().catch(()=>{});
+  if(error?.message==='gemini_writer_output_too_large')throw error;
+  throw Error('gemini_writer_output_invalid');
+ }finally{reader.releaseLock();}
+}
 export async function consultGeminiWriter(env,options,fetcher=fetch){
  if(env.GEMINI_WRITER_ENABLED!=='1')throw Error('gemini_writer_disabled');
  if(!env.GEMINI_API_KEY)throw Error('gemini_writer_not_configured');
@@ -102,7 +130,7 @@ export async function consultGeminiWriter(env,options,fetcher=fetch){
  });}catch{throw Error('gemini_writer_transport_failed')}
  if(!res.ok)throw Error(res.status===429?'gemini_writer_rate_limited':'gemini_writer_provider_unavailable');
  let data;
- try{data=await res.json()}catch{throw Error('gemini_writer_output_invalid')}
+ data=await readGeminiWriterResponse(res);
  const candidate=data.candidates?.[0];
  const parts=candidate?.content?.parts;
  if(candidate?.finishReason!=='STOP'||!Array.isArray(parts)||
