@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T22:01:16.509325Z",
+  "checked_at": "2026-11-26T22:31:16.309606Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "arkansas vs mi state",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T21:40:00Z",
+      "query": "quinnen williams",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:10:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/michigan-state-arkansas-prediction-pick-odds-spread/",
-        "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/25/msu-arkansas-thanksgiving-detroit-sports-little-caesars-arena/92932044007/",
-        "https://www.freep.com/story/sports/college/michigan-state/spartans/2026/11/25/cam-ward-michigan-state-spartans-basketball-arkansas-razorbacks-tom-izzo-john-calipari-thanksgiving/92955315007/"
+        "https://www.dallascowboys.com/news/even-with-recent-success-quinnen-williams-expecting-more-from-himself-for-cowboys-defense",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/quinnen-williams-we-executed-better-on-defense-but-we-still-gave-up-30-points",
+        "https://www.star-telegram.com/sports/nfl/dallas-cowboys/article318233129.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEK6MCHjRUvkUBATeNDVmUnsCl-OKZgeUUE-yzRQVkpZ-zUpiNPl4pi0jcVSc",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/michigan-state-arkansas-prediction-pick-odds-spread/",
-          "title": "Michigan State vs. Arkansas prediction, pick, odds: SEC, Big Ten foes meet in CBS Sports Thanksgiving Classic",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEK6MCHjRUvkUBATeNDVmUnsCl-OKZgeUUE-yzRQVkpZ-zUpiNPl4pi0jcVSc"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/college/michigan-state-university/2026/11/25/msu-arkansas-thanksgiving-detroit-sports-little-caesars-arena/92932044007/",
-          "title": "Izzo thankful for MSU-Arkansas to join ‘great day’ of Detroit sports on Thanksgiving",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQh_20yicpuPPXLPTX_6vIl--le5veAAdrr5bZiPbMWFSh6QFDu3eEqTL9iYO0"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/college/michigan-state/spartans/2026/11/25/cam-ward-michigan-state-spartans-basketball-arkansas-razorbacks-tom-izzo-john-calipari-thanksgiving/92955315007/",
-          "title": "Cam Ward returning to form as Michigan State basketball prepares for Thanksgiving clash",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57enI0_aLFt-t2-wuooqqemJB0HLTMXNLzgNkilti_AT0Q9eQGPgWPSt_m8U"
-        }
-      ]
-    },
-    {
-      "query": "madden movie",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
-        "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
-        "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/18/movies/madden-review-nicolas-cage.html",
-          "title": "‘Madden’ Review: Nicolas Cage Goes Big in N.F.L. Biopic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRb0_j5f4XskieENAWNz3IyDZDRT6U23z1kozopwcN-bFyJJpizr9-eWIJRqU4"
-        },
-        {
-          "url": "https://www.azcentral.com/story/entertainment/television-movies/2026/11/25/madden-review/92937439007/",
-          "title": "‘Madden’ is a mess. Nicolas Cage makes it impossible to look away",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz0O0HGjHiH8qD-4ygDRoWDsF4g1_hVK5qZjzZUSFpSBKyiKWHZV72cvfGjj8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/nfl/raiders/2026/11/20/mark-davis-says-madden-movie-unfairly-portrays-late-raiders-owner-al-davis/92887586007/",
-          "title": "Raiders owner Mark Davis 'hurt' by 'Madden' movie's Al Davis portrayal | Exclusive",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS28fSxYQrFQ6Ofx_AQ6YdgtEBcK5Atnxd_l3uvc9dkFcAw-fjFky9xWP4p0As"
-        }
-      ]
-    },
-    {
-      "query": "nfc north standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-does-lions-151406174.html",
-        "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
-        "https://atozsports.com/nfl/detroit-lions-news/lions-playoff-picture-detroit-has-a-huge-opportunity-waiting-on-thanksgiving/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExb52paBl1Ra8jxQInK15yk5b6y4JXUqvxHS1xDc6FZeYSAdhuGHeHhY2nYI",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/nfl-playoff-picture-does-lions-151406174.html",
-          "title": "NFL playoff picture: What does Lions-Bears mean for NFC standings?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTExb52paBl1Ra8jxQInK15yk5b6y4JXUqvxHS1xDc6FZeYSAdhuGHeHhY2nYI"
-        },
-        {
-          "url": "https://www.prideofdetroit.com/detroit-lions-nfl-playoffs/182137/nfc-playoff-picture-detroit-lions-postseason-standings-nfc-north",
-          "title": "Here is where the Lions fit in the NFC playoff picture right now",
-          "publisher": "Pride Of Detroit",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLCLg0-gFYEAlvUo_iE17YmDq49NN-w25EAXuhRMtkE3l8SJr5smGdW56qrRk"
-        },
-        {
-          "url": "https://atozsports.com/nfl/detroit-lions-news/lions-playoff-picture-detroit-has-a-huge-opportunity-waiting-on-thanksgiving/",
-          "title": "Lions playoff picture: Detroit has a huge opportunity waiting on Thanksgiving",
-          "publisher": "A to Z Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSkzaoq0JcuUP9KI5Zyd3rGo_jGxZWVnQ7lf6D7SsvhPGm01KpWC61wlGq-no"
-        }
-      ]
-    },
-    {
-      "query": "michigan basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/michigan-worst-start-ncaa-tournament-winner-reigning-national-champion-mike-boynton/",
-        "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-basketball-shot-down-by-creighton-in-players-era-opener/92943055007/",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909495"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJKJaYz7DlkKvI_6BScrpxZcgRb5nkGe4w6Pww27lAWDzeX0b7Y65RaeyaEpw",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/michigan-worst-start-ncaa-tournament-winner-reigning-national-champion-mike-boynton/",
-          "title": "Michigan matches worst start by reigning national champion in last 40 years: Why pressure is on Mike Boynton",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJKJaYz7DlkKvI_6BScrpxZcgRb5nkGe4w6Pww27lAWDzeX0b7Y65RaeyaEpw"
-        },
-        {
-          "url": "https://www.detroitnews.com/story/sports/college/university-michigan/2026/11/24/michigan-basketball-shot-down-by-creighton-in-players-era-opener/92943055007/",
-          "title": "Michigan basketball shot down by Creighton in Players Era opener",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5M29FRa4Ki3b6PIiKg6h-N2qKX2QW5Lk5Ui5g8s_qHRyO970qlmOZkC9X4Ec"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909495",
-          "title": "Creighton 99-73 Michigan (Nov 24, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT13E8QPYf5aWdz9dbg8i7N3BAk1yWw0r8QvXImKJ6Ve3OklznV_ECjAqympfc"
-        }
-      ]
-    },
-    {
-      "query": "william, prince of wales",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706",
-        "https://www.bbc.com/news/articles/cwvg2nmd9n8yo",
-        "https://www.marieclaire.com/celebrity/royals/princess-diana-award-legacy-prince-william-very-sorry/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThjoNdRtSyntLGp3_pZsPpUm7yOKu3O1nakR1gij-W3mIuusHXldFgRkNgf_I",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706",
-          "title": "Prince William Reacts as Princess Diana’s Namesake Charity He Backs with Prince Harry Faces Closure",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThjoNdRtSyntLGp3_pZsPpUm7yOKu3O1nakR1gij-W3mIuusHXldFgRkNgf_I"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cwvg2nmd9n8yo",
-          "title": "Diana Award charity placed into administration after 27 years",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROd9uq4oCzFwhPYwiGWZZ_naOJ9zCfeNa05JtqF0AhFUiwwQaNXQC1JzdFTqE"
-        },
-        {
-          "url": "https://www.marieclaire.com/celebrity/royals/princess-diana-award-legacy-prince-william-very-sorry/",
-          "title": "Princess Diana's Legacy Is Hit With \"Terribly Sad News\" as Prince William Says He's \"Very Sorry\"",
-          "publisher": "Marie Claire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUFogQq0Ads40BLw14OCOsByC_vEHSe3p5rXp7y5207nIOO7aIto0EaxP0XhQ"
-        }
-      ]
-    },
-    {
-      "query": "fox",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/world/ukrainian-intelligence-north-korea-paused-missile-deliveries-russia-friction-south-korea",
-        "https://www.reuters.com/business/aerospace-defense/ukraine-says-north-korea-temporarily-halted-missile-shipments-ally-russia-2026-11-26/",
-        "https://www.pravda.com.ua/eng/news/2026/11/26/8064748/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5V1uYMW6HPLqUoDfXXAQ-gPFFELM-3uEvnOg2TF5txuIsA1FkvplDZyuiUQQ",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/world/ukrainian-intelligence-north-korea-paused-missile-deliveries-russia-friction-south-korea",
-          "title": "Ukrainian intelligence says North Korea paused missile deliveries to Russia amid friction over South Korea",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5V1uYMW6HPLqUoDfXXAQ-gPFFELM-3uEvnOg2TF5txuIsA1FkvplDZyuiUQQ"
-        },
-        {
-          "url": "https://www.reuters.com/business/aerospace-defense/ukraine-says-north-korea-temporarily-halted-missile-shipments-ally-russia-2026-11-26/",
-          "title": "Ukraine says North Korea temporarily halted missile shipments to ally Russia",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS8xZ5jJ3GUMxnT0MZguX-z86hPRRhqdqbqwTnYJwg28RQ22PeNggENm6Jt144"
-        },
-        {
-          "url": "https://www.pravda.com.ua/eng/news/2026/11/26/8064748/",
-          "title": "North Korea pauses deliveries of ballistic missiles and artillery ammunition to Russia",
-          "publisher": "Українська правда",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLItOjqUIbnpzthl6j8kLcwr2q5xGwVK9ImW9BrEuSx_67sft37yqWfB78DPw"
-        }
-      ]
-    },
-    {
-      "query": "cooper dejean",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T21:40:00Z",
-      "related_news_urls": [
-        "https://www.dallascowboys.com/news/schottenheimer-s-review-of-pettine-parker-after-cowboys-shakeup",
-        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
-        "https://www.dallasnews.com/sports/cowboys/article/mike-pettine-defense-play-call-cowboys-22548156.php"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZpwjx6VDGaR49IK0YbczzYpZF01m9sLwMvDpLmoaN8UTky29ANulhiD_xLQQ",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5_R56euWf6NLDPJdwTLubbTqPc_GPF0c5Mt7lrk3BcckkNHlLWt8qVv2hRAU",
       "image_credit": "Dallas Cowboys | Official Site of the Dallas Cowboys",
       "news": [
         {
-          "url": "https://www.dallascowboys.com/news/schottenheimer-s-review-of-pettine-parker-after-cowboys-shakeup",
-          "title": "Schottenheimer's review of Pettine, Parker after Cowboys shakeup",
+          "url": "https://www.dallascowboys.com/news/even-with-recent-success-quinnen-williams-expecting-more-from-himself-for-cowboys-defense",
+          "title": "Even with recent success, Quinnen Williams expecting more from himself for Cowboys defense",
           "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZpwjx6VDGaR49IK0YbczzYpZF01m9sLwMvDpLmoaN8UTky29ANulhiD_xLQQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5_R56euWf6NLDPJdwTLubbTqPc_GPF0c5Mt7lrk3BcckkNHlLWt8qVv2hRAU"
         },
         {
-          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
-          "title": "Cowboys’ Christian Parker Trolled by Eagles' Big Dom After Play-Calling Demotion",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/quinnen-williams-we-executed-better-on-defense-but-we-still-gave-up-30-points",
+          "title": "Quinnen Williams: We executed better on defense, but we still gave up 30 points",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk0RY9F10lzt2TxeKI9ZEhUHqUnsbQjxCDGWcD7Xwj8GasVP-8k7DnTsdLiBc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrNvGWRyLCZlgHbS7CU0XfpgO2pOFQit9eXFqr2L49jaAsw8sMcuaxJprwKa8"
         },
         {
-          "url": "https://www.dallasnews.com/sports/cowboys/article/mike-pettine-defense-play-call-cowboys-22548156.php",
-          "title": "In an unpredictable world around the Dallas Cowboys, it's all business for Mike Pettine",
-          "publisher": "Dallas News",
+          "url": "https://www.star-telegram.com/sports/nfl/dallas-cowboys/article318233129.html",
+          "title": "Dallas Cowboys' Quinnen Williams emerging as a defensive force (Video)",
+          "publisher": "Fort Worth Star-Telegram",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdiOY384Ou6SghGkA_RcicPP-mF29kT666z8ptxf5qP98hC2FniXWRoATvFpw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxQpxY_0HIJUKo1Y6IELJvUe1uL9cTaqYl6iKhoX4l-o0kiXt3PY0vy1Ko_lI"
         }
       ]
     },
     {
-      "query": "who is singing the national anthem at the cowboys game today",
+      "query": "sunderland a.f.c. vs jagiellonia białystok standings",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T21:40:00Z",
+      "published_at": "2026-11-26T22:10:00Z",
       "related_news_urls": [
-        "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b",
-        "https://www.usatoday.com/story/sports/nfl/2026/11/26/lauren-daigle-national-anthem-eagles-cowboys-thanksgiving/92929861007/",
-        "https://uk.sports.yahoo.com/news/singing-national-anthem-eagles-cowboys-210524781.html"
+        "https://www.espn.com/soccer/report/_/gameId/401915513",
+        "https://www.bbc.com/sport/football/live/c893r4n7622et",
+        "https://rokerreport.sbnation.com/match-previews/160519/starting-xi-seven-changes-predicted-for-sunderland-tonight"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeecwY8404fqLQe32I8lPzgfdZJ3vm1BhzExieHr8Zdj0adC0eJUCQicJOsRM",
-      "image_credit": "WFAA",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZJPiEQC3uA5K4fawp9q3TuV2WEzBrx8pI1E5t5kWULqnl3_liXdeWO61aJc8",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b",
-          "title": "Cowboys vs. Eagles: Thanksgiving game info, halftime show and national anthem singers",
-          "publisher": "WFAA",
+          "url": "https://www.espn.com/soccer/report/_/gameId/401915513",
+          "title": "Sunderland 1-1 Jagiellonia (Nov 26, 2026) Game Analysis",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeecwY8404fqLQe32I8lPzgfdZJ3vm1BhzExieHr8Zdj0adC0eJUCQicJOsRM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZJPiEQC3uA5K4fawp9q3TuV2WEzBrx8pI1E5t5kWULqnl3_liXdeWO61aJc8"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/26/lauren-daigle-national-anthem-eagles-cowboys-thanksgiving/92929861007/",
-          "title": "Cowboys vs Eagles national anthem singer: What to know about Lauren Daigle",
-          "publisher": "USA Today",
+          "url": "https://www.bbc.com/sport/football/live/c893r4n7622et",
+          "title": "Sunderland vs Jagiellonia Bialystok: UEFA Europa League stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW2Zu8fgLMOlOdXWPMrCbIbmEBDcJ3C3TPnMkAiRjxCj8wxecD6Of63y12YIU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnyMp4zk7kVYOluWMBVIvT4MDaPfY8UaA-pQUKvfrUMQTtxY_rHyegV1GW8Mw"
         },
         {
-          "url": "https://uk.sports.yahoo.com/news/singing-national-anthem-eagles-cowboys-210524781.html",
-          "title": "Who is singing the national anthem for Eagles-Cowboys on Thanksgiving?",
-          "publisher": "Yahoo",
+          "url": "https://rokerreport.sbnation.com/match-previews/160519/starting-xi-seven-changes-predicted-for-sunderland-tonight",
+          "title": "Starting XI: Seven Changes Predicted For Sunderland Tonight",
+          "publisher": "Roker Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy-61CpJbyoLIlpGjuBqJBrnFG2Q2EdEWVcmkIorvIRQzyaOWjF0FeAdwC23Q"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtKgzLIdkO8yW8qFXDicGSu8JRbCjCDEhTT1yaK6-15QAUYNmWXjPgMskVct4"
         }
       ]
     },
     {
-      "query": "usc basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T21:40:00Z",
+      "query": "eagles coach",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:10:00Z",
       "related_news_urls": [
-        "https://www.deseret.com/sports/2026/11/25/utah-state-basketball-feast-week-acrisure-series-smu-usc/",
-        "https://www.sportsgambler.com/betting-tips/basketball/utah-state-aggies-vs-usc-trojans-prediction-odds-2026-11-26/",
-        "https://www.cbssports.com/college-basketball/news/high-scoring-utah-state-faces-no-18-usc-in-battle-of-unbeatens/"
+        "https://www.bleedinggreennation.com/news/191249/eagles-coaches-reportedly-got-in-a-scuffle-during-the-steelers-game",
+        "https://nypost.com/2026/11/25/sports/eagles-coaches-fought-on-sideline-during-steelers-win-punched-in-the-neck/",
+        "https://www.newsbreak.com/essentially-sports-363861119/5027533921836-things-turn-ugly-at-eagles-as-coaching-staff-get-into-physical-brawl-during-steelers-game-report"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3T1eiX3N2RjAS3Pg24SnsIbtp_HD_1O5bq96T9Cg4QRXnfeo1itGxypuQfbY",
-      "image_credit": "Deseret News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzkszozwTgjrhiSagNzAgSvm0vy9JSLtIXVuMoui-E6yjgVl6FigZyTucs2LY",
+      "image_credit": "Bleeding Green Nation",
       "news": [
         {
-          "url": "https://www.deseret.com/sports/2026/11/25/utah-state-basketball-feast-week-acrisure-series-smu-usc/",
-          "title": "It’s a feast of fantastic opportunities for Utah State during Thanksgiving week",
-          "publisher": "Deseret News",
+          "url": "https://www.bleedinggreennation.com/news/191249/eagles-coaches-reportedly-got-in-a-scuffle-during-the-steelers-game",
+          "title": "Eagles coaches reportedly got in a scuffle during the Steelers game",
+          "publisher": "Bleeding Green Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3T1eiX3N2RjAS3Pg24SnsIbtp_HD_1O5bq96T9Cg4QRXnfeo1itGxypuQfbY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzkszozwTgjrhiSagNzAgSvm0vy9JSLtIXVuMoui-E6yjgVl6FigZyTucs2LY"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/utah-state-aggies-vs-usc-trojans-prediction-odds-2026-11-26/",
-          "title": "Utah State vs USC Prediction, Picks & Odds | 26 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://nypost.com/2026/11/25/sports/eagles-coaches-fought-on-sideline-during-steelers-win-punched-in-the-neck/",
+          "title": "Eagles coaches had ‘intense’ sideline fight during Steelers win: ‘Punched in the neck’",
+          "publisher": "New York Post",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCH3rnA9A8cYyr7m4Eazv4gsqo0Wug2AX1YCslySQTpg4rAXxbmvNRpefj9lc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXf33G1szBBygXZZBxFUWXQg2JINROu59YNZDPfcr0DrEUjb4NIfKOoFBuzMw"
         },
         {
-          "url": "https://www.cbssports.com/college-basketball/news/high-scoring-utah-state-faces-no-18-usc-in-battle-of-unbeatens/",
-          "title": "High-scoring Utah State faces No. 18 USC in battle of unbeatens",
+          "url": "https://www.newsbreak.com/essentially-sports-363861119/5027533921836-things-turn-ugly-at-eagles-as-coaching-staff-get-into-physical-brawl-during-steelers-game-report",
+          "title": "Things Turn Ugly at Eagles as Coaching Staff Get Into Physical Brawl During Steelers Game: Report",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSM3IsB_hVnhVr0-6-CDRvH63io6w7PW6EVvLRR6w1FS7ECmR9Vxwn3HFIYYp4"
+        }
+      ]
+    },
+    {
+      "query": "jalen thompson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:10:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/football/news/cowboys-jalen-thompson-back-in-action/",
+        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-get-major-boost-on-defense-before-eagles-game",
+        "https://thelandryhat.com/cowboys-injury-report-jalen-thompson-finally-returns-winters-barham-good-to-go"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/cowboys-jalen-thompson-back-in-action/",
+          "title": "Cowboys' Jalen Thompson: Back in action",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
+        },
+        {
+          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-get-major-boost-on-defense-before-eagles-game",
+          "title": "Dallas Cowboys Get Major Boost on Defense Before Eagles Game",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzl6Gh6-3eLcwSJ95m3S-4kucM6eCrxgONH2kZZOjg0QE7PDK0YzmnwVG93bg"
+        },
+        {
+          "url": "https://thelandryhat.com/cowboys-injury-report-jalen-thompson-finally-returns-winters-barham-good-to-go",
+          "title": "Cowboys injury status: Jalen Thompson finally returns, Winters and Barham good to go",
+          "publisher": "The Landry Hat",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQzi7DklM2igLrgqrBrJulPkTwLgwO3SJxGZxo5ErNyR92K473_3H_irhiN9v0"
         }
       ]
     },
     {
-      "query": "nfl mvp odds",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T21:40:00Z",
+      "query": "jashaun corbin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:10:00Z",
       "related_news_urls": [
-        "https://www.49ers.com/news/morning-reports/morning-report-purdy-runs-it-back-as-nfc-offensive-player-of-the-week",
-        "https://www.nfl.com/news/players-of-the-week-2026-week-11-brock-purdy-jonah-coleman",
-        "https://www.foxsports.com/stories/nfl/qb-stock-market-week-12-brock-purdy-playing-like-mvp-why-isnt-josh-allen"
+        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-sign-promising-rb-thanksgiving-game-tyler-goodson",
+        "https://thelandryhat.com/jashaun-corbin-gave-cowboys-no-choice-but-expand-his-role-after-impressive-debut",
+        "https://dallassportsjournal.com/cowboys-jashaun-corbin-backup-running-back-thanksgiving-eagles/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToTVEou_mkXh35bi-PynEhQe6vQp1fMpqQshxLurpHuNOkRPFi2EWWyWXqVoU",
-      "image_credit": "San Francisco 49ers",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuYwwJgmGeCDa6_EOY8RuM3HYMXjU77TN9H6Fng71E15dz_5hDhCiL6F7_Zoc",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.49ers.com/news/morning-reports/morning-report-purdy-runs-it-back-as-nfc-offensive-player-of-the-week",
-          "title": "Morning Report: Purdy Runs It Back as NFC Offensive Player of the Week 🗞️",
-          "publisher": "San Francisco 49ers",
+          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-sign-promising-rb-thanksgiving-game-tyler-goodson",
+          "title": "Dallas Cowboys Sign Promising RB For Thanksgiving Game After Flashing Signs of Brilliance",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcToTVEou_mkXh35bi-PynEhQe6vQp1fMpqQshxLurpHuNOkRPFi2EWWyWXqVoU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSuYwwJgmGeCDa6_EOY8RuM3HYMXjU77TN9H6Fng71E15dz_5hDhCiL6F7_Zoc"
         },
         {
-          "url": "https://www.nfl.com/news/players-of-the-week-2026-week-11-brock-purdy-jonah-coleman",
-          "title": "Niners QB Brock Purdy, Broncos RB Jonah Coleman highlight Players of the Week",
-          "publisher": "NFL.com",
+          "url": "https://thelandryhat.com/jashaun-corbin-gave-cowboys-no-choice-but-expand-his-role-after-impressive-debut",
+          "title": "Jashaun Corbin gave Cowboys no choice but to expand his role after impressive debut",
+          "publisher": "The Landry Hat",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCsP3RnIXrLworfgg_TLOzKeR79-qZ_XSwj394x-wZ0nZ_xGsmghhbwXv7X7E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUpIB3Z6fCfkemhQTEJ2GTJnVmfawBGvpEcZqITzendxFO9G1o-KNRIXpXM9E"
         },
         {
-          "url": "https://www.foxsports.com/stories/nfl/qb-stock-market-week-12-brock-purdy-playing-like-mvp-why-isnt-josh-allen",
-          "title": "QB Stock Market Week 12: Brock Purdy Is Playing Like The MVP. Why Isn't Josh Allen?",
-          "publisher": "FOX Sports",
+          "url": "https://dallassportsjournal.com/cowboys-jashaun-corbin-backup-running-back-thanksgiving-eagles/",
+          "title": "Why Jashaun Corbin Is Likely Cowboys’ Backup RB vs. Eagles",
+          "publisher": "dallassportsjournal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0gujgmLgu3B6Wzgq6p2SQNqaKUo4BEwlSFbAyEeRzMygv6W-lrb_LGaqyb-E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwEujmZh75o-d7SyssWErO5vy-KzJG9lkImPasF7Ra1XLEhj2bYYom3JBbUpI"
+        }
+      ]
+    },
+    {
+      "query": "utah state vs usc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T22:10:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/sports/highschool/story/2026-11-25/st-john-bosco-corona-centennial-matchup-highlights-championship-weekend",
+        "https://www.maxpreps.com/news/aRhKm4sJcEivzIZZ2-VUyg/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+        "https://www.si.com/college/usc/football/usc-trojans-recruits-make-waves-cif-southern-section-championship"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYRJKpbnpDiVNvOQfrQlNATDGDouPPj925_UYYTiXW_0QXD8_Lo_6wCEIz-Jk",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/sports/highschool/story/2026-11-25/st-john-bosco-corona-centennial-matchup-highlights-championship-weekend",
+          "title": "St. John Bosco-Centennial matchup highlights championship weekend",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYRJKpbnpDiVNvOQfrQlNATDGDouPPj925_UYYTiXW_0QXD8_Lo_6wCEIz-Jk"
+        },
+        {
+          "url": "https://www.maxpreps.com/news/aRhKm4sJcEivzIZZ2-VUyg/high-school-football-top-10-games-this-week-on-the-nfhs-network.htm",
+          "title": "High school football: Top 10 games this week on the NFHS Network",
+          "publisher": "MaxPreps",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuS_I8sv6RmJetVB-nAsu8DlQYoDT7BNan5XZSdB_vsuCubsCI6NyABf2rY6U"
+        },
+        {
+          "url": "https://www.si.com/college/usc/football/usc-trojans-recruits-make-waves-cif-southern-section-championship",
+          "title": "USC Trojans Recruits Make Waves in CIF Southern Section Championship",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4KJKg8BuGM6TbYmNa1sB9ZaFRQWXTyyipr0Yq_KXFyKJrtI3cPmlN5FlIuxs"
+        }
+      ]
+    },
+    {
+      "query": "team cherry",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T22:10:00Z",
+      "related_news_urls": [
+        "https://www.teamcherry.com.au/blog/cherrytimeannounce",
+        "https://gameinformer.com/2026/11/25/hollow-knight-developer-team-cherry-to-air-special-presentation-featuring-silksong-dlc",
+        "https://www.pcgamer.com/games/action/dev-team-who-delayed-their-game-a-year-to-avoid-silksong-says-they-wont-do-it-again-for-whatever-team-cherry-announces-tomorrow-this-time-were-staying-put/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo",
+      "image_credit": "Team Cherry",
+      "news": [
+        {
+          "url": "https://www.teamcherry.com.au/blog/cherrytimeannounce",
+          "title": "Join us in 48 hours for Cherry Time!",
+          "publisher": "Team Cherry",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo"
+        },
+        {
+          "url": "https://gameinformer.com/2026/11/25/hollow-knight-developer-team-cherry-to-air-special-presentation-featuring-silksong-dlc",
+          "title": "Hollow Knight Developer Team Cherry To Air Special Presentation Featuring Silksong DLC News And More",
+          "publisher": "Game Informer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQnCpa-5dQjnviwPdy42nRmkti3CZB8OePzWfwvhoa4YKrBAR_IwCpeEvbPOc"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/action/dev-team-who-delayed-their-game-a-year-to-avoid-silksong-says-they-wont-do-it-again-for-whatever-team-cherry-announces-tomorrow-this-time-were-staying-put/",
+          "title": "Dev team who delayed their game a year to avoid Silksong says they won't do it again for whatever Team Cherry announces tomorrow: 'This time we're staying put'",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvMLgYpBtJtl0tpfhKCfxnBonLkGvHBzO5RI8CMFUZYrSzjX2ui5VLKp6G0hI"
+        }
+      ]
+    },
+    {
+      "query": "the comeback king",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T22:00:00Z",
+      "related_news_urls": [
+        "https://www.indiewire.com/news/trailers/the-comeback-king-trailer-glen-powell-judd-apatow-1235229108/",
+        "https://tasteofcountry.com/glen-powell-comeback-king-cast/",
+        "https://backstagecountry.com/2026/11/24/from-hollywood-to-nashville-glen-powell-says-hes-found-a-home-in-country-music/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY9lIXZ8Qz3hPI4IHL1rCkUQl9HtqCvKFX289uyG8uFeDg_moXVC0yRl7sqi4",
+      "image_credit": "IndieWire",
+      "news": [
+        {
+          "url": "https://www.indiewire.com/news/trailers/the-comeback-king-trailer-glen-powell-judd-apatow-1235229108/",
+          "title": "‘The Comeback King’ Trailer: Glen Powell Is a Cancelled Country Star in Judd Apatow’s Latest Directing Project",
+          "publisher": "IndieWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRY9lIXZ8Qz3hPI4IHL1rCkUQl9HtqCvKFX289uyG8uFeDg_moXVC0yRl7sqi4"
+        },
+        {
+          "url": "https://tasteofcountry.com/glen-powell-comeback-king-cast/",
+          "title": "Glenn Powell Names the Country Stars He Got to Hang Out With on 'The Comeback King'",
+          "publisher": "Taste of Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSitoPeuZCqzh9lnV5sxDoy5-r3Yiuru96Kr5Ye4eamC48jeqVFrQpfOBX0vjE"
+        },
+        {
+          "url": "https://backstagecountry.com/2026/11/24/from-hollywood-to-nashville-glen-powell-says-hes-found-a-home-in-country-music/",
+          "title": "From Hollywood to Nashville: Glen Powell Says He’s Found a Home in Country Music",
+          "publisher": "Backstage Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT79uHgsoNUIU6v2TumUQQUN_3BcchlWZkg2yD3eGzjPNgzO30Hbn2iNX3UZXA"
+        }
+      ]
+    },
+    {
+      "query": "glen powell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T22:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/articles/glen-powell-ex-gigi-paris-191827121.html",
+        "https://www.newsbreak.com/just-jared-291401107/5031713907458-gigi-paris-is-engaged-to-former-nfl-player-cooper-helfet",
+        "https://www.yahoo.com/entertainment/celebrity/articles/gigi-paris-engaged-former-nfl-164837968.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Y1o41NKdjes97OJio0ky-VsxYuD3PzjGW8DVFMTJI67yR5pm19RTPiSsoro",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/articles/glen-powell-ex-gigi-paris-191827121.html",
+          "title": "Glen Powell’s Ex Gigi Paris Drops Major Relationship News 3 Years After Their Split",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Y1o41NKdjes97OJio0ky-VsxYuD3PzjGW8DVFMTJI67yR5pm19RTPiSsoro"
+        },
+        {
+          "url": "https://www.newsbreak.com/just-jared-291401107/5031713907458-gigi-paris-is-engaged-to-former-nfl-player-cooper-helfet",
+          "title": "Gigi Paris Is Engaged to Former NFL Player Cooper Helfet!",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRb1fBiZ6wekwIzIsBKJoYrnYbMKH_63QrV5CAr9JGGo1__6HuG4GfAPwJXCFA"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/gigi-paris-engaged-former-nfl-164837968.html",
+          "title": "Gigi Paris Is Engaged to Former NFL Player Cooper Helfet!",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0Xn-F0h6UK69Yo5d9_uTU2xmK2Cfq6L8pmv4-8qJ_zxtcq6hYtYdLMDd8lK0"
+        }
+      ]
+    },
+    {
+      "query": "makai lemon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7799229/2026/11/21/eagles-steelers-questions-makai-lemon-2027-nfl-draft-preview/",
+        "https://www.inquirer.com/eagles/eagles-steelers-what-to-know-nfl-week-11-2026-20261121.html",
+        "https://dallassportsjournal.com/nick-sirianni-makai-lemon-cowboys-secondary-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZBjsOQRlXalO33fuR3S_YN_H1fYGzIpeZ5pjxXZrJpVQZ0pHe5DJIk8MPOkw",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7799229/2026/11/21/eagles-steelers-questions-makai-lemon-2027-nfl-draft-preview/",
+          "title": "Eagles-Steelers questions: Reflecting on the Makai Lemon pick, previewing 2027 NFL Draft - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZBjsOQRlXalO33fuR3S_YN_H1fYGzIpeZ5pjxXZrJpVQZ0pHe5DJIk8MPOkw"
+        },
+        {
+          "url": "https://www.inquirer.com/eagles/eagles-steelers-what-to-know-nfl-week-11-2026-20261121.html",
+          "title": "An alternate reality where Max Iheanachor is on the Eagles, and everything else to know about Eagles-Steelers",
+          "publisher": "Inquirer.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDMPHYKV44jRH3eg30-7M5Xe666DE6MAO5-4W22BFrDLt-dHOSe-zcWD3wxiU"
+        },
+        {
+          "url": "https://dallassportsjournal.com/nick-sirianni-makai-lemon-cowboys-secondary-thanksgiving/",
+          "title": "Sirianni Explains How Eagles Must Attack Cowboys’ Secondary",
+          "publisher": "Dallas Hoops Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAWXMiJM7hsZirNIGiDlZg_GaQTGZN-1cXE0mrrstVOxpILNjKmA1jTun9k88"
         }
       ]
     }
