@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T19:31:21.997248Z",
+  "checked_at": "2026-11-26T20:01:27.098891Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "palace vs real sociedad",
+      "query": "super bowl halftime show 2027",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T19:40:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+        "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
+        "https://www.wsj.com/business/media/imax-to-show-super-bowl-lxi-in-theaters-through-partnership-with-disney-the-nfl-997dc4be"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/23/espn-nfl-super-bowl-imax.html",
+          "title": "ESPN, NFL to show Super Bowl 61 in Imax theaters",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4_GGIgnDQ0V8f7omilYIOQDyS4GT0omlinUKNX4uz3Z-VgbDvR7JsmnH7qcE"
+        },
+        {
+          "url": "https://www.reuters.com/sports/disney-espn-nfl-take-super-bowl-imax-theaters-2026-11-23/",
+          "title": "Disney, ESPN and NFL take Super Bowl to IMAX theaters",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA1qcH_8IyZQn-GiL_ixaHBCQGgOxWh92BSf5_NIhiublS37aFuW8S2SXUHoU"
+        },
+        {
+          "url": "https://www.wsj.com/business/media/imax-to-show-super-bowl-lxi-in-theaters-through-partnership-with-disney-the-nfl-997dc4be",
+          "title": "IMAX to Show Super Bowl LXI in Theaters Through Partnership With Disney, the NFL",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7o0AUKEirckG_xoBBag9Elcblv1t6EH_bjVUfrxLjdkZUG1LwJffJ3rzfhiE"
+        }
+      ]
+    },
+    {
+      "query": "will ferrell",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-26T19:40:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/outkick-sports/will-ferrell-golf-show-hawk-canceled-netflix-flopping-first-season",
+        "https://deadline.com/2026/11/will-ferrell-the-hawk-canceled-netflix-one-season-1237233347/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/happy-thanksgiving-netflix-just-canceled-134231269.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9wtekLzMkofImX1a01LZ7jN_OCBqTRAuD6vfq6ScZKqrMY9wkoj_Nim2xCrs",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/outkick-sports/will-ferrell-golf-show-hawk-canceled-netflix-flopping-first-season",
+          "title": "Will Ferrell golf show 'The Hawk' canceled by Netflix after flopping in first season",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9wtekLzMkofImX1a01LZ7jN_OCBqTRAuD6vfq6ScZKqrMY9wkoj_Nim2xCrs"
+        },
+        {
+          "url": "https://deadline.com/2026/11/will-ferrell-the-hawk-canceled-netflix-one-season-1237233347/",
+          "title": "Will Ferrell Comedy ‘The Hawk’ Canceled By Netflix After One Season",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLYab22-h_Veh1H2Bb8BcfxPBMRThho9GWrcU_Ij_Ng7UvBpUmkMyvrB6rKSE"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/happy-thanksgiving-netflix-just-canceled-134231269.html",
+          "title": "Happy Thanksgiving, Netflix Just Canceled Two Shows With Major Stars",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZyz7E1dSLK5QcrmTsxyDFGXRR1kCswtQ3TbjREhC0_capdwo7V-uuSgDYAUY"
+        }
+      ]
+    },
+    {
+      "query": "dj jacobs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T19:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/tennessee/article/dawson-jacobs-tennessee-recruiting-top247-dl-nearing-decision-after-visiting-vols-again-has-ut-high-up-on-my-list-293293094/",
+        "https://atozsports.com/nashville/volunteers/football-ohio-state-tennessee-5-star-vols-recruiting-target-dj-jacobs-final-decision/",
+        "https://sports.yahoo.com/articles/georgia-may-weekend-hated-rival-142302323.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwwyUbu1zaIOQ-6JIX_pK7b1pOnRitwg1cFLclRm78c0Z4yGqj7RJ9K3nllcw",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/tennessee/article/dawson-jacobs-tennessee-recruiting-top247-dl-nearing-decision-after-visiting-vols-again-has-ut-high-up-on-my-list-293293094/",
+          "title": "Top247 DL Jacobs nearing decision after visiting Vols again, has Tennessee 'high up on my list'",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwwyUbu1zaIOQ-6JIX_pK7b1pOnRitwg1cFLclRm78c0Z4yGqj7RJ9K3nllcw"
+        },
+        {
+          "url": "https://atozsports.com/nashville/volunteers/football-ohio-state-tennessee-5-star-vols-recruiting-target-dj-jacobs-final-decision/",
+          "title": "'I don't see him doing something before then' - Insider shares the latest on when 5-star Vols recruiting target DJ Jacobs could make a final decision",
+          "publisher": "A to Z Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhx_OqB6fLMTQ3iQ_XM9v2BWTsKnpNs5Rljcatea-2Rj-2P1ga_39dLBYnaxE"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/georgia-may-weekend-hated-rival-142302323.html",
+          "title": "Georgia May Find Out This Weekend if They or Hated Rival Land Shocking Flip",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOizqUG5iiOW883sOAbNUGP4jmEFj3HYSILzEdri5tPwesJ3_nlU3aK4Y1NWI"
+        }
+      ]
+    },
+    {
+      "query": "cowboys eagles halftime show",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T19:40:00Z",
+      "related_news_urls": [
+        "https://www.detroitnews.com/story/entertainment/music/2026/11/26/video-antonio-cipriano-sings-anthem-before-lions-thanksgiving-game/92971887007/",
+        "https://www.usatoday.com/story/sports/nfl/2026/11/26/bears-lions-national-anthem-singer-antonio-cipriano-thanksgiving-game/92929696007/",
+        "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDRclGOktd_KB7fW8lhBJ3Xdl8FPLo7UE7QnbCbwoQI7XQBrQRmJiUzpwyIfM",
+      "image_credit": "The Detroit News",
+      "news": [
+        {
+          "url": "https://www.detroitnews.com/story/entertainment/music/2026/11/26/video-antonio-cipriano-sings-anthem-before-lions-thanksgiving-game/92971887007/",
+          "title": "Antonio Cipriano sings National Anthem before Lions Thanksgiving game",
+          "publisher": "The Detroit News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDRclGOktd_KB7fW8lhBJ3Xdl8FPLo7UE7QnbCbwoQI7XQBrQRmJiUzpwyIfM"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/2026/11/26/bears-lions-national-anthem-singer-antonio-cipriano-thanksgiving-game/92929696007/",
+          "title": "Bears vs Lions national anthem singer: What to know about Antonio Cipriano",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbRiaV18V2LFXq5slg1gBJake4o8ouHWsAvc1Niu4CtKN0IAN9SosOY1QJKrs"
+        },
+        {
+          "url": "https://www.wfaa.com/article/sports/nfl/cowboys/dallas-cowboys-game-today-thanksgiving-eagles-watch-stream-live-halftime-show-national-anthem-singer/287-3c692e3e-4f46-4b2a-8e23-f32418737b9b",
+          "title": "Cowboys vs. Eagles: Thanksgiving game info, halftime show and national anthem singers",
+          "publisher": "WFAA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeecwY8404fqLQe32I8lPzgfdZJ3vm1BhzExieHr8Zdj0adC0eJUCQicJOsRM"
+        }
+      ]
+    },
+    {
+      "query": "john 3:16",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T19:30:00Z",
+      "related_news_urls": [
+        "https://ktul.com/news/local/thankfulness-at-john-316",
+        "https://tulsaworld.com/image_ed0bc5a9-8186-45a1-83f6-2ce329d4dee3.html",
+        "https://tulsaworld.com/image_fcd3a603-9db3-4116-aec1-f0e240ee2cc7.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoGKwdMkki-6lwhKiZZJvQIaa8t9udzCVmmBYtu4Esi0DbZEC_-m7U3xDX84",
+      "image_credit": "KTUL",
+      "news": [
+        {
+          "url": "https://ktul.com/news/local/thankfulness-at-john-316",
+          "title": "Thankfulness at John 3:16",
+          "publisher": "KTUL",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPoGKwdMkki-6lwhKiZZJvQIaa8t9udzCVmmBYtu4Esi0DbZEC_-m7U3xDX84"
+        },
+        {
+          "url": "https://tulsaworld.com/image_ed0bc5a9-8186-45a1-83f6-2ce329d4dee3.html",
+          "title": "John 3:16 Mission",
+          "publisher": "Tulsa World",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQZQtn3AlnYa8RcW3BC6jM9gaybCGA140LiDkE0TR7Zv4NO68o4rxglarcS2FQ"
+        },
+        {
+          "url": "https://tulsaworld.com/image_fcd3a603-9db3-4116-aec1-f0e240ee2cc7.html",
+          "title": "John 3:16 Mission",
+          "publisher": "Tulsa World",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEIYgEV9FlcXgJiuTx4Ey-monm1aTm0tRi6YkMxh1mSieN9vj4CNLYLZxYE8M"
+        }
+      ]
+    },
+    {
+      "query": "cowboys halftime show thanksgiving 2026",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T19:10:00Z",
+      "published_at": "2026-11-26T19:30:00Z",
       "related_news_urls": [
-        "https://sportsbook.fanduel.com/soccer/uefa-europa-league/crystal-palace-v-real-sociedad-36324244?tab=saves",
-        "https://www.goal.com/en-us/betting/tips/crystal-palace-vs-real-sociedad-predictions-11-26-2026/A%3Abltc6e0b3193ddbf82c",
-        "https://www.tufutbolero.com/en/news/crystal-palace-real-sociedad-palace-arrive-with-four-e4fdfd"
+        "https://www.billboard.com/culture/product-recommendations/nfl-thanksgiving-phl-dal-miranda-lambert-halftime-watch-free-1236385793/",
+        "https://www.dallascowboys.com/news/cowboys-celebrate-30-years-of-red-kettle-kickoff-with-the-salvation-army",
+        "https://www.wfaa.com/article/life/holidays/jerry-jones-cowboys-donate-30-million-salvation-army/287-1cb3738f-9334-470a-b4bc-2686a6e9bcb2"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8",
-      "image_credit": "FanDuel Sportsbook",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgLFnd97tsznd5xlnaH2GQCAQSjhLC1Zb9CLe2qP0vJdidegP_nfwKwjf9a_8",
+      "image_credit": "Billboard",
       "news": [
         {
-          "url": "https://sportsbook.fanduel.com/soccer/uefa-europa-league/crystal-palace-v-real-sociedad-36324244?tab=saves",
-          "title": "Crystal Palace v Real Sociedad Saves Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.billboard.com/culture/product-recommendations/nfl-thanksgiving-phl-dal-miranda-lambert-halftime-watch-free-1236385793/",
+          "title": "Miranda Lambert NFL Halftime Show 2026: Where to Watch Philadelphia Eagles vs. Dallas Cowboys Live Online Free",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_asqy2BYc_BIgUg7QaOf2-zSJNnFjZcBlFu6eMo_xBvUyXLh_nNb7R2sn5q8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgLFnd97tsznd5xlnaH2GQCAQSjhLC1Zb9CLe2qP0vJdidegP_nfwKwjf9a_8"
         },
         {
-          "url": "https://www.goal.com/en-us/betting/tips/crystal-palace-vs-real-sociedad-predictions-11-26-2026/A%3Abltc6e0b3193ddbf82c",
-          "title": "Crystal Palace vs Real Sociedad Predictions: Goals to flow at Selhurst",
-          "publisher": "Goal.com",
+          "url": "https://www.dallascowboys.com/news/cowboys-celebrate-30-years-of-red-kettle-kickoff-with-the-salvation-army",
+          "title": "Cowboys celebrate 30 years of Red Kettle Kickoff with The Salvation Army",
+          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSLmTliJQwfEaXtdV2oNMzMGtfo5eCCu4FsH2OAMRfduGb9T83sJyYr-asL8X4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBvPXluCPvAjMjjnP0gjcacRa-B5R2ggLdVhWn2EUmwH99dv9_XysxKHWPVaM"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/crystal-palace-real-sociedad-palace-arrive-with-four-e4fdfd",
-          "title": "Crystal Palace-Real Sociedad: Palace arrive with four absentees",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.wfaa.com/article/life/holidays/jerry-jones-cowboys-donate-30-million-salvation-army/287-1cb3738f-9334-470a-b4bc-2686a6e9bcb2",
+          "title": "Jerry Jones, Cowboys donate $30M to Salvation Army in honor of 30 years of partnership",
+          "publisher": "WFAA",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6W4FPVgKVSw34WFiW81GteT6a8fmwP0sRJPDe9jfM71yfgLAm5pgkuqROCFE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ69RlVW_0rOee0AIT8heeIv-ieZz7tN8bo7Nr99n8JBwJ0FJSGSfibRMIsOyM"
         }
       ]
     },
     {
-      "query": "juventus vs omonoia",
+      "query": "georgetown vs texas",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T19:10:00Z",
+      "published_at": "2026-11-26T19:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/general/videos/juventus-complete-final-training-session-141100371.html",
-        "https://www.goal.com/en/news/juventus-ekhator-to-start-before-possible-monza-move-for-varela/blt1598f6e72b309393",
-        "https://www.tufutbolero.com/en/news/spalletti-makes-eight-changes-for-juventus-against-omonia-4b9b42"
+        "https://www.burntorangenation.com/texas-longhorns-basketball/107596/texas-longhorns-rady-invitational-preview",
+        "https://247sports.com/college/texas/article/no-6-texas-mens-basketball-live-game-thread-vs-georgetown-293347736/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/georgetown-vs-texas-prediction-pick-101543565.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIEMh01Df6FUlS06JUNLHrw2wEo8YFmZWim57f8mwKDlLd7K43Y1QGETW4vII",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrmmAbjtBZTur7CEl_FW8_vI-Qplrmcl1kg1xlhVk4-O_KPqY41MxkGIBMzsE",
+      "image_credit": "Burnt Orange Nation",
       "news": [
         {
-          "url": "https://sports.yahoo.com/general/videos/juventus-complete-final-training-session-141100371.html",
-          "title": "Juventus complete final training session ahead of Omonia",
+          "url": "https://www.burntorangenation.com/texas-longhorns-basketball/107596/texas-longhorns-rady-invitational-preview",
+          "title": "Texas vs. Georgetown preview: Hoyas’ inside-out offense tests the Longhorns in San Diego",
+          "publisher": "Burnt Orange Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTrmmAbjtBZTur7CEl_FW8_vI-Qplrmcl1kg1xlhVk4-O_KPqY41MxkGIBMzsE"
+        },
+        {
+          "url": "https://247sports.com/college/texas/article/no-6-texas-mens-basketball-live-game-thread-vs-georgetown-293347736/",
+          "title": "No. 6 Texas Men's Basketball Live Game Thread: vs Georgetown",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnjGr_-mzTywTJi5W_lDGoMAUBeUjlO7kR3UuhmL5UtGYzZbcL4bMEpo9SgCY"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/georgetown-vs-texas-prediction-pick-101543565.html",
+          "title": "Georgetown vs Texas Prediction, Pick, College Basketball Odds for Thursday, Nov. 26",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIEMh01Df6FUlS06JUNLHrw2wEo8YFmZWim57f8mwKDlLd7K43Y1QGETW4vII"
-        },
-        {
-          "url": "https://www.goal.com/en/news/juventus-ekhator-to-start-before-possible-monza-move-for-varela/blt1598f6e72b309393",
-          "title": "Juventus, Ekhator to start before possible Monza move for Varela",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6mbQsnPbgf-V2MTFYxRXRS5NigL3XeWnzRndPuMlh5_FIw3Y2Bw1ebzU3dZI"
-        },
-        {
-          "url": "https://www.tufutbolero.com/en/news/spalletti-makes-eight-changes-for-juventus-against-omonia-4b9b42",
-          "title": "Spalletti makes eight changes for Juventus against Omonia",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSjOwUrPWIzZRXUQYVVoPYNY-voqJVM81lW1KKXYgMtADT06gKjKTrl8No61zo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAV9V6yU-K4gfOXROBF8DOXw_nCx3DBIEeWm9wiu8APt87BPZp4bzbKSr-t5U"
         }
       ]
     },
     {
-      "query": "tuskegee vs alabama state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:10:00Z",
+      "query": "joe biden",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T19:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/watch-alabama-state-football-vs-120152350.html",
-        "https://dothaneagle.com/news/state-regional/alabama/article_14ea91ea-17f5-5af8-9314-af41644c4b09.html",
-        "https://www.montgomeryadvertiser.com/story/news/local/alabama/2026/11/24/asu-tuskegee-band-announcers-at-turkey-day-classic-share-deep-bond/92800521007/"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/joe-biden-84-pictured-inside-170534890.html",
+        "https://www.wsj.com/politics/policy/shapiro-accuses-biden-of-not-doing-enough-to-rein-in-netanyahu-b139e9de",
+        "https://www.timesofisrael.com/josh-shapiro-set-to-run-in-2028-slams-failed-netanyahu-says-biden-didnt-check-israel-enough/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGVy4NlLIqjB-VBo8LOKglc-gCPDLEPoZM049cecLAiNWl6WcUVyFAKSVIpnA",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/watch-alabama-state-football-vs-120152350.html",
-          "title": "How to watch Alabama State football vs Tuskegee in Turkey Day Classic",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGVy4NlLIqjB-VBo8LOKglc-gCPDLEPoZM049cecLAiNWl6WcUVyFAKSVIpnA"
-        },
-        {
-          "url": "https://dothaneagle.com/news/state-regional/alabama/article_14ea91ea-17f5-5af8-9314-af41644c4b09.html",
-          "title": "How Jonathon Peterson brings Turkey Day Classic to life | Exclusive",
-          "publisher": "Dothan Eagle",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYzuz_eH-02Qrk_AJq1xG-3sEOQ5H1zuja5B8L_cEDEru0LyzSnyyNKecxE4I"
-        },
-        {
-          "url": "https://www.montgomeryadvertiser.com/story/news/local/alabama/2026/11/24/asu-tuskegee-band-announcers-at-turkey-day-classic-share-deep-bond/92800521007/",
-          "title": "'Brothers' announce for rival bands at Turkey Day Classic halftime",
-          "publisher": "Montgomery Advertiser",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS57qibGoi4lIoQNl0VTLW_MFAGU0tluqwu9axNY_ATwp4SG66aAUIAjAIt2vI"
-        }
-      ]
-    },
-    {
-      "query": "guy fieri",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:10:00Z",
-      "related_news_urls": [
-        "https://www.pennlive.com/entertainment/2026/11/guy-fieris-emotional-social-media-post-has-fans-sending-prayers-and-love.html",
-        "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-        "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo",
-      "image_credit": "PennLive.com",
-      "news": [
-        {
-          "url": "https://www.pennlive.com/entertainment/2026/11/guy-fieris-emotional-social-media-post-has-fans-sending-prayers-and-love.html",
-          "title": "Guy Fieri’s emotional social media post has fans sending prayers and love",
-          "publisher": "PennLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOvHnkZK3d-NITe4mB0AGi07SxGMGVSsxirEFTDye1T13nI1HvCAuJRnd7Abo"
-        },
-        {
-          "url": "https://people.com/guy-fieri-shares-birthday-tribute-for-late-father-jim-who-died-in-2024-miss-him-every-day-12265479",
-          "title": "Guy Fieri Shares Birthday Tribute for Late Father Jim, Who Died in 2024: ‘Miss Him Every Day’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT4pLzJ1AZt9ADVOUn_WK1mKUtSuZK13funbamPV4j-b6ax2AW-RQiGuG6utX8"
-        },
-        {
-          "url": "https://www.delish.com/food-news/a74479582/guy-fieri-jim-ferry-84th-birthday-instagram-tribute/",
-          "title": "Guy Fieri Honors His Late Father With A Heartbreaking Tribute On Instagram: ‘Miss Him Everyday’",
-          "publisher": "Delish",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhl0blc485AEZtaVub98uck5YYPouXVq3B_FD5w0dRTJ8n3qzwIelqt-Ob4x4"
-        }
-      ]
-    },
-    {
-      "query": "cska sofia vs trabzonspor",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T19:10:00Z",
-      "related_news_urls": [
-        "https://www.voiceofemirates.com/en/sport/2026/11/26/trabzonspors-expected-lineup-against-cska-sofia-mohamed-salahs-status/",
-        "https://www.reutersconnect.com/item/trabzonspor-holds-pre-match-press-conference-ahead-of-cska-sofia-clash-in-sofia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwVVk1TjA5",
-        "https://bnrnews.bg/en/post/563317/cska-sofia-to-host-trabzonspor-in-conference-league"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcYs3fTNJ-LsxoRnzxfN6oQIShnlIdIeDRGafB4Sdi3zcLVwziJULY8XJ4kRM",
-      "image_credit": "صوت الإمارات",
-      "news": [
-        {
-          "url": "https://www.voiceofemirates.com/en/sport/2026/11/26/trabzonspors-expected-lineup-against-cska-sofia-mohamed-salahs-status/",
-          "title": "Trabzonspor’s expected lineup against CSKA Sofia.. Mohamed Salah’s status",
-          "publisher": "صوت الإمارات",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcYs3fTNJ-LsxoRnzxfN6oQIShnlIdIeDRGafB4Sdi3zcLVwziJULY8XJ4kRM"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/trabzonspor-holds-pre-match-press-conference-ahead-of-cska-sofia-clash-in-sofia/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMUFOQURMMDAwVVk1TjA5",
-          "title": "Licensable picture: Trabzonspor holds pre-match press conference ahead of CSKA Sofia clash in Sofia",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlsBgTIXb03ztwFwHD5-QhnPDeoON-2wnW9nhBRgZtmPHrbUSjmrLqYezjFo8"
-        },
-        {
-          "url": "https://bnrnews.bg/en/post/563317/cska-sofia-to-host-trabzonspor-in-conference-league",
-          "title": "CSKA Sofia to host Trabzonspor in Conference League",
-          "publisher": "БНР Новини",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQID7JrCuygnyUOF51IWlgMyKzfvgO3cD2oIznXLOqCTyl56PqH3MrpAN5esq0"
-        }
-      ]
-    },
-    {
-      "query": "universal studios orlando",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T19:10:00Z",
-      "related_news_urls": [
-        "https://www.audacy.com/mix1051/contests/mix-105-1-wants-to-send-you-to-universal-orlando-resort-2678186823",
-        "https://www.wesh.com/article/enter-to-win-wesh-universal-2026/74534102",
-        "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGQ0kp35i-X-2I-bdWTXQ28QSwtvi2gwS7o8lxEF6-4M5v1h9pE-ADbCpK8a8",
-      "image_credit": "Audacy",
-      "news": [
-        {
-          "url": "https://www.audacy.com/mix1051/contests/mix-105-1-wants-to-send-you-to-universal-orlando-resort-2678186823",
-          "title": "MIX 105.1 WANTS TO SEND YOU TO UNIVERSAL ORLANDO RESORT!",
-          "publisher": "Audacy",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGQ0kp35i-X-2I-bdWTXQ28QSwtvi2gwS7o8lxEF6-4M5v1h9pE-ADbCpK8a8"
-        },
-        {
-          "url": "https://www.wesh.com/article/enter-to-win-wesh-universal-2026/74534102",
-          "title": "WESH 2 wants to send you to Universal Orlando Resort!",
-          "publisher": "WESH",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9A8QK4gajU9_qXEidkPKZxSQX5pvGnnwCiCPBk4x65eC_e1fGzm5YXX7w3vA"
-        },
-        {
-          "url": "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/",
-          "title": "5 Changes Confirmed for Universal Theme Parks in 2027",
-          "publisher": "AllEars.Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclC4l97_BhLrAnVKRHsqOUQ36Jfwf2tJRzPDan2nYssut9QoTEWi6bun52w0"
-        }
-      ]
-    },
-    {
-      "query": "robin williams",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T19:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jimmy-kimmel-pulls-pre-blink-213425248.html",
-        "https://www.slashfilm.com/2322070/robin-williams-best-aladdin-line-funniest-disney-quote/",
-        "https://www.yahoo.com/entertainment/articles/robin-williams-wore-mosquito-net-200700836.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSub2aUjGx9_zCud6-sBcCWRL-zxR4uxL_u38PKsTJxojrnRXzQo9RrQ7PGUyk",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdv06-RKrMrAQ2v6xWq9IXQbutVY0bsMmpirJ0QAWLVbzbTA09eZCJ3HOgD4U",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/jimmy-kimmel-pulls-pre-blink-213425248.html",
-          "title": "Jimmy Kimmel Pulls Out Pre-Blink-182 Photo of Travis Barker Dressed as a Superhero Beside Robin Williams",
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/joe-biden-84-pictured-inside-170534890.html",
+          "title": "Joe Biden, 84, pictured inside home amid cancer battle: 'I am humbled'",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSub2aUjGx9_zCud6-sBcCWRL-zxR4uxL_u38PKsTJxojrnRXzQo9RrQ7PGUyk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdv06-RKrMrAQ2v6xWq9IXQbutVY0bsMmpirJ0QAWLVbzbTA09eZCJ3HOgD4U"
         },
         {
-          "url": "https://www.slashfilm.com/2322070/robin-williams-best-aladdin-line-funniest-disney-quote/",
-          "title": "34 Years Later, Robin Williams' Best Aladdin Line Is Still The Funniest Disney Quote Ever",
-          "publisher": "SlashFilm",
+          "url": "https://www.wsj.com/politics/policy/shapiro-accuses-biden-of-not-doing-enough-to-rein-in-netanyahu-b139e9de",
+          "title": "Shapiro Accuses Biden of Not Doing Enough to Rein In Netanyahu",
+          "publisher": "WSJ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPi1kkqoZ0FCvxpnoJk5GfA_Lw1tZRQ5LZB7kS1LqIvLmfCL_R5CgxHUuN_rA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWm91GDGmRuiSFPEalsd9RxYyOuipm6m6VNGXDo7DW-tGHM-4kN7-j2QtqKFA"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/articles/robin-williams-wore-mosquito-net-200700836.html",
-          "title": "Robin Williams Wore a Mosquito Net to Dinner in Provence, Reveals Eric Idle",
-          "publisher": "Yahoo",
+          "url": "https://www.timesofisrael.com/josh-shapiro-set-to-run-in-2028-slams-failed-netanyahu-says-biden-didnt-check-israel-enough/",
+          "title": "Josh Shapiro, set to run in 2028, slams ‘failed’ Netanyahu, says Biden didn’t check Israel enough",
+          "publisher": "The Times of Israel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGT6cpolJkjkBqXOpRqR8xOi_C0cokOjbmXSO76g3pOtI2G9WNza3JJlC0buk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZjvUwaK9bXEcPkJKi9lkdncU4xRkWUUZ8mQ0dPdxOCFObs8hEja_jefGJY5E"
         }
       ]
     },
     {
-      "query": "ps5 black friday deals",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T19:00:00Z",
+      "query": "laporta",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T19:30:00Z",
       "related_news_urls": [
-        "https://www.techradar.com/live/news/black-friday-ps5-deals-live-2026-nov-26",
-        "https://www.pushsquare.com/features/80plus-ps5-ps4-games-to-buy-in-ps-stores-updated-black-friday-sale-north-americaeurope",
-        "https://screenrant.com/playstation-accessories-black-friday-wishlist/"
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17560012/barcelona-real-madrid-laporta-amenaza-llevar-juicio",
+        "https://www.si.com/es-us/caso-negreira-por-que-el-fc-barcelona-y-florentino-perez-terminaron-en-los-tribunales",
+        "https://www.marca.com/futbol/real-madrid/2026/11/25/florentino-barca-cierran-acuerdo-encuentro-caso-negreira.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt58UL77xQ4dj4B2O90YwTDPNwxAdo84oSkHHNHjzfKcQoakB3KSfBQ0pjajY",
-      "image_credit": "TechRadar",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTseQ9YAP7GxG8ODRo_ZonnDxAg2uNfMtPHd-0VnDCwBWF3WlcsHaWiqfT7PdQ",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.techradar.com/live/news/black-friday-ps5-deals-live-2026-nov-26",
-          "title": "I'm gathering all of this year's best Black Friday PS5 deals in one place — covering games, peripherals, storage, and console stock updates",
-          "publisher": "TechRadar",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17560012/barcelona-real-madrid-laporta-amenaza-llevar-juicio",
+          "title": "Barcelona: Laporta atiza a Real Madrid y amenaza con llevar al club a juicio",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt58UL77xQ4dj4B2O90YwTDPNwxAdo84oSkHHNHjzfKcQoakB3KSfBQ0pjajY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTseQ9YAP7GxG8ODRo_ZonnDxAg2uNfMtPHd-0VnDCwBWF3WlcsHaWiqfT7PdQ"
         },
         {
-          "url": "https://www.pushsquare.com/features/80plus-ps5-ps4-games-to-buy-in-ps-stores-updated-black-friday-sale-north-americaeurope",
-          "title": "80+ PS5, PS4 Games to Buy in PS Store's Updated Black Friday Sale (North America/Europe)",
-          "publisher": "Push Square",
+          "url": "https://www.si.com/es-us/caso-negreira-por-que-el-fc-barcelona-y-florentino-perez-terminaron-en-los-tribunales",
+          "title": "Caso Negreira: ¿por qué el FC Barcelona y Florentino Pérez terminaron en los tribunales?",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRlb4ZuXR4wYElie12WnWSZcIqnX76jWUVRqwIcwxvITw6rkHOiVC4dpf8rdC8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5snxdP8qGQTviE5cPWdAJcveXYuFCpo-LZMEn_MrAJ7-yIvSpefUs2mQ7p_o"
         },
         {
-          "url": "https://screenrant.com/playstation-accessories-black-friday-wishlist/",
-          "title": "8 Must-Have PlayStation Accessories To Add to Your Black Friday Wishlist",
-          "publisher": "ScreenRant",
+          "url": "https://www.marca.com/futbol/real-madrid/2026/11/25/florentino-barca-cierran-acuerdo-encuentro-caso-negreira.html",
+          "title": "Florentino y el Barça cierran sin acuerdo su encuentro por el Caso Negreira",
+          "publisher": "MARCA",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH3J-MiVdEP_eeUnET2nium2bYxYuVrrKV3DlS8TrErvEh8RHz6gRhCfFqsLU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrv1GkzRsGS2Hb8CXaPGbN6fIub0pBK_FvWjFWUKwuE7C6npv4iODMFDGYB_8"
         }
       ]
     },
     {
-      "query": "waymo car",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T19:00:00Z",
+      "query": "ol vs lillestrøm",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T19:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
-        "https://www.9news.com/article/news/local/man-traps-eggs-waymo-vehicles-denver/73-170f60cf-942f-4501-a26d-f2582cfcfdd9",
-        "https://denverite.com/2026/11/24/denver-waymo-egging-laws/"
+        "https://www.tallahatchienews.ms/node/461657",
+        "https://www.toffeeweb.com/int/olympique-lyonnais-vs-lillestrom-predictions-picks-odds-26-11-2026/",
+        "https://www.reutersconnect.com/item/uefa-europa-league-olympique-lyonnais-v-lillestrom/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlExSTBPQzU"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl0Sc633lPbHvfMVBBOtfOkWpfz4aPlM8ZYGqozvLcbxAe8mBd-AJnYL4AXU0",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6zDs6x30ag3UY5v0rttnDj23c3lT04JYkwfsIiM3Yo5hgCh0J1wq8-P86rRs",
+      "image_credit": "Charleston Sun-Sentinel",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/25/us/waymo-denver-egg-throwing.html",
-          "title": "A Man in Denver Has Been Throwing Eggs at Waymo Vehicles",
-          "publisher": "The New York Times",
+          "url": "https://www.tallahatchienews.ms/node/461657",
+          "title": "[FREE!!] Lyon vs Lillestrøm Live: UEFA Europa League - League Stage",
+          "publisher": "Charleston Sun-Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl0Sc633lPbHvfMVBBOtfOkWpfz4aPlM8ZYGqozvLcbxAe8mBd-AJnYL4AXU0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6zDs6x30ag3UY5v0rttnDj23c3lT04JYkwfsIiM3Yo5hgCh0J1wq8-P86rRs"
         },
         {
-          "url": "https://www.9news.com/article/news/local/man-traps-eggs-waymo-vehicles-denver/73-170f60cf-942f-4501-a26d-f2582cfcfdd9",
-          "title": "1 man egging Waymo's robot rideshares around metro, police report says",
-          "publisher": "9News",
+          "url": "https://www.toffeeweb.com/int/olympique-lyonnais-vs-lillestrom-predictions-picks-odds-26-11-2026/",
+          "title": "Olympique Lyonnais vs Lillestrøm Predictions, Picks & Odds – 26/11/2026",
+          "publisher": "ToffeeWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHS1G9p6YRZ7yqBgYXmk9gamigWIvxppjxQ61GhSkew7MboLPlAHiLPorx1E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEzMDVsfdVnl6bX2IOoqqXxOwYaAZOC-G8plFO326Cr4qREqaV6wpwGncqiMM"
         },
         {
-          "url": "https://denverite.com/2026/11/24/denver-waymo-egging-laws/",
-          "title": "Is Denver’s ponytailed Waymo avenger actually committing a crime?",
-          "publisher": "Denverite",
+          "url": "https://www.reutersconnect.com/item/uefa-europa-league-olympique-lyonnais-v-lillestrom/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlExSTBPQzU",
+          "title": "Licensable picture: UEFA Europa League - Olympique Lyonnais v Lillestrom",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNBD58AkVLaGkzTMzyJfUI4k8qckSHO3re1Y2tJp1Qcb1FzZPpkb8ini9X63I"
-        }
-      ]
-    },
-    {
-      "query": "jacob rodriguez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T19:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/jacob-rodriguez-chasing-zach-thomas-163100456.html",
-        "https://www.thephinsider.com/miami-dolphins-roster/125269/jacob-rodriguez-coming-for-dolphins-record-held-by-zach-thomas",
-        "https://www.newsbreak.com/giggle-byte-349327565/5024841811588-class-act-buffalo-bills-superstar-quarterback-josh-allen-waited-after-his-postgame-interview-to-find-dolphins-star-rookie-linebacker-jacob-rodriguez-and-show-him-respect"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQkCbsx97u71hotcTcX3M1knEq_aFsXAO8d7P_duk7lD_bRAOUJJ4gt58WOM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/jacob-rodriguez-chasing-zach-thomas-163100456.html",
-          "title": "Jacob Rodriguez Chasing Zach Thomas Tackle Record In Miami",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQkCbsx97u71hotcTcX3M1knEq_aFsXAO8d7P_duk7lD_bRAOUJJ4gt58WOM"
-        },
-        {
-          "url": "https://www.thephinsider.com/miami-dolphins-roster/125269/jacob-rodriguez-coming-for-dolphins-record-held-by-zach-thomas",
-          "title": "Jacob Rodriguez coming for Dolphins record held by Zach Thomas",
-          "publisher": "The Phinsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSvENki7sug249PYsWUjVYZtChDVDnGPH3X0WaqG9KTY7n7E-GJdgqhTzItP0"
-        },
-        {
-          "url": "https://www.newsbreak.com/giggle-byte-349327565/5024841811588-class-act-buffalo-bills-superstar-quarterback-josh-allen-waited-after-his-postgame-interview-to-find-dolphins-star-rookie-linebacker-jacob-rodriguez-and-show-him-respect",
-          "title": "CLASS ACT: Buffalo #Bills superstar quarterback Josh Allen waited after his postgame interview to find #Dolphins star rookie linebacker Jacob Rodriguez and show him respect.",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIgVOHpsMgrGSjixRxZJyfS1qB01ZhnyN5tLGPLt_d2C2G9dLfb-D_k_Amok"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqRYuE7ANRqU-7XULidyJhezAtMczKi3z_TpZsZwT7_Ban6xRcH5SAtjyBBC0"
         }
       ]
     }
