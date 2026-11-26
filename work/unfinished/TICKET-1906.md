@@ -139,3 +139,14 @@ Security/release blockers: signed account session proof remains external to this
 Owner extended the color-window metaphor to a black standby buffer, white signal inside yellow incoming guide, red inspection, orange selection and blue/green/purple output routes, with a Boolean cavity whose control color need not be rendered as a physical pixel. This is now **synthetic-only** `bubbles-color-cavity.mjs` attached to the existing source-stage PR [#2120](https://github.com/www-infinity4/QuantaPhi/pull/2120), and a new opted-in receiver section on `wallet-color-passage-lab.html`. It accepts bounded metadata-only frames (max 128 items, max 32 aperture Booleans), rejects payloads/unauthorized channel names, emits counts and routing labels only, supports manual frame stepping and accessible paused-on-hide slow playback. Nothing reads actual TV broadcasts, encrypted phone fragments, other user records, or identity credentials; color route matches do not authorize financial data reads. Tests `test/bubbles-color-cavity.test.mjs` and updated `test/wallet-color-passage-lab.test.mjs` are wired into existing Bubbles unified workflow. See `docs/BUBBLES-BYTE-ORB-PASSAGEWAYS.md` for the difference between this control-plane analogy and actual LCD/OLED RGB physics.
 
 **Prior exact-head receipt**: earlier #2120 source head `77741533f4a2114bc064b76ecfa41f06981ecb45` had 27/29 workflows passing, with two real endpoint smoke workflows failing `Bubbles health: missing JSON response` ([45085720440](https://github.com/www-infinity4/QuantaPhi/actions/runs/45085720440) and [45085720431](https://github.com/www-infinity4/QuantaPhi/actions/runs/45085720431)). That is still a hard hold for source promotion. No new HEAD CI/production/device claim until a separate receipt exists; PR remains **draft and unmerged**.
+
+### C13B0 Fix 013 — owner-requested chat repair
+
+Base: ad2526af305d505de02a4bc002ba1b7c4e04b06e
+
+Removed composer training-wheel controls and listeners.
+Resume existing pending provider handoffs automatically.
+Added connector retry control without expanding OAuth grants.
+Focused source tests passed locally.
+CI, merge, deployment and Android acceptance remain pending.
+Related ticket: #1927.
