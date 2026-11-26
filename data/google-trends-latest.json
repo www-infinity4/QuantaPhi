@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T12:35:07.760197Z",
+  "checked_at": "2026-11-26T13:01:27.628467Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "is dollar general open today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T12:20:00Z",
+      "query": "aeropuerto internacional de miami",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T12:40:00Z",
       "related_news_urls": [
-        "https://www.al.com/news/2026/11/thanksgiving-2026-dollar-store-hours-for-dollar-general-dollar-tree-more.html",
-        "https://parade.com/living/dollar-tree-thanksgiving-hours-2026",
-        "https://massmarketretailers.com/dollar-general-pairs-black-friday-deals-with-delivery-discounts/"
+        "https://apnews.com/article/miami-aeropuerto-fedex-avion-sale-de-pista-693f96d01ac09ba0e31e44cabcf6a8ca",
+        "https://www.telemundo51.com/video/noticiero-t51/retrasos-en-vuelos-luego-de-que-un-avion-de-fedex-se-saliera-de-la-pista-en-aeropuerto-de-miami/2854430/",
+        "https://www.univision.com/noticias/lo-mejor-de-n-univision-de-la-noche-miercoles-25-de-noviembre-de-2026-video"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpiN0HMWUaHoA8wJG4Q2SWP9v7GvLuEqCou3MFnTgXlr5Qy95xgNTu2oERwsI",
-      "image_credit": "AL.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbkd1Vwu6TRb3hbOJFKSgfbz4hMdnT8-LyQeUrulUqlnaQ7gEIZt9qYIKxuE",
+      "image_credit": "AP News",
       "news": [
         {
-          "url": "https://www.al.com/news/2026/11/thanksgiving-2026-dollar-store-hours-for-dollar-general-dollar-tree-more.html",
-          "title": "Thanksgiving 2026: Dollar store hours for Dollar General, Dollar Tree, more",
-          "publisher": "AL.com",
+          "url": "https://apnews.com/article/miami-aeropuerto-fedex-avion-sale-de-pista-693f96d01ac09ba0e31e44cabcf6a8ca",
+          "title": "Avión FedEx se sale de pista en aeropuerto de Miami, que cierra temporalmente casi todas sus pistas",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpiN0HMWUaHoA8wJG4Q2SWP9v7GvLuEqCou3MFnTgXlr5Qy95xgNTu2oERwsI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbbkd1Vwu6TRb3hbOJFKSgfbz4hMdnT8-LyQeUrulUqlnaQ7gEIZt9qYIKxuE"
         },
         {
-          "url": "https://parade.com/living/dollar-tree-thanksgiving-hours-2026",
-          "title": "Can I Shop at Dollar Tree on Thanksgiving?",
-          "publisher": "Parade Magazine",
+          "url": "https://www.telemundo51.com/video/noticiero-t51/retrasos-en-vuelos-luego-de-que-un-avion-de-fedex-se-saliera-de-la-pista-en-aeropuerto-de-miami/2854430/",
+          "title": "Retrasos en vuelos luego de que un avión de FedEx se saliera de la pista en aeropuerto de Miami",
+          "publisher": "Telemundo Miami",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAdS5Fl6BoTVe0UA3uv3YzljC5UVHz91Jz3ZoidNsEMxrAhKS6gjaFAZIISUA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQwBK04i5iSZ6B6K6DK8-rG7m26zvUFiRydnIw0O1ZGVKFkxgSgFeqig7j3cN8"
         },
         {
-          "url": "https://massmarketretailers.com/dollar-general-pairs-black-friday-deals-with-delivery-discounts/",
-          "title": "Dollar General pairs Black Friday deals with delivery discounts",
-          "publisher": "Mass Market Retailers",
+          "url": "https://www.univision.com/noticias/lo-mejor-de-n-univision-de-la-noche-miercoles-25-de-noviembre-de-2026-video",
+          "title": "Lo mejor de N+ Univision de la noche | miércoles 25 de noviembre de 2026",
+          "publisher": "Univision",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXsH7YROT5CvV8Ssk_umgHF12WPByzduNrpuNv61hMVG7yAYGg7hjOhkHrfeE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9h82sb4BC5RA1Q1bbQGgW1HE1S8H6whJCLwbVhDM30S2Fn5e979Uoc4Kiui0"
         }
       ]
     },
     {
-      "query": "washington post",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:20:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/world/2026/11/26/tehran-imposes-austerity-under-us-pressure-iranians-frustrations-grow/",
-        "https://www.aljazeera.com/features/2026/11/25/iran-rations-electricity-how-deeply-are-us-sanctions-blockade-biting",
-        "https://www.ynetnews.com/article/hjzx7gs17g"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRJpyNw5QC_Bq5D1Ofxd0Ez8ACjD0GtmnEDfd5plkT0H-Tv5nhoFTq_ZlLaKw",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/26/tehran-imposes-austerity-under-us-pressure-iranians-frustrations-grow/",
-          "title": "Iranians’ frustrations grow as Tehran, under U.S. pressure, imposes austerity",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRJpyNw5QC_Bq5D1Ofxd0Ez8ACjD0GtmnEDfd5plkT0H-Tv5nhoFTq_ZlLaKw"
-        },
-        {
-          "url": "https://www.aljazeera.com/features/2026/11/25/iran-rations-electricity-how-deeply-are-us-sanctions-blockade-biting",
-          "title": "Iran rations electricity: How deeply are US sanctions, blockade biting?",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTErIHGa1iGXMNXAWskDTBybGKE67NA5BxNI6jCTmt6PXvjFx7QzRGrkXvFHU"
-        },
-        {
-          "url": "https://www.ynetnews.com/article/hjzx7gs17g",
-          "title": "‘Scenes you wouldn’t see even in Africa’: Video of Iran’s president sparks outrage",
-          "publisher": "Ynetnews",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKkKaiVwq5QZ_p4ke6wYjCDdzbmN9iN8l2Z89gts1NcqUsNhWRoI9NhXVZ7Ns"
-        }
-      ]
-    },
-    {
-      "query": "ridley scott alien netflix removal",
+      "query": "is food city open on thanksgiving",
       "approx_searches": "100+",
-      "published_at": "2026-11-26T12:20:00Z",
+      "published_at": "2026-11-26T12:40:00Z",
       "related_news_urls": [
-        "https://www.polygon.com/ridley-scott-alien-leaving-netflix/",
-        "https://movieweb.com/aliens-james-cameron-streaming-netflix-november-2026/",
-        "https://www.cbr.com/ridley-scott-james-cameron-alien-leaving-netflix-december-2026/"
+        "https://www.knoxnews.com/story/grocery/shopping/2026/11/26/knoxville-grocery-stores-open-on-thanksgiving-2026-hours-and-closures/92762168007/",
+        "https://www.wbir.com/article/news/community/transportation/knox-area-transit-closed-on-thanksgiving/51-4bc329d4-0f48-419f-b2a9-dbd9acd2f959",
+        "https://insideofknoxville.com/2026/11/city-of-knoxville-thanksgiving-closures-holiday-happenings/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRm8UQcapMDGvvcTb0O7B5BEgCrfDfXivJUZUlJvmX4WPd3ulR2STzgH13o30",
-      "image_credit": "Polygon.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwX_Snf3NZayvBhvbwYiBNy-3d5pZdDKU_vCaujZOH1sbYufWXx2HAb8Nq2Aw",
+      "image_credit": "Knoxville News Sentinel",
       "news": [
         {
-          "url": "https://www.polygon.com/ridley-scott-alien-leaving-netflix/",
-          "title": "Ridley Scott’s Sci-Fi Thriller Masterpiece Is Officially Being Removed From Netflix",
-          "publisher": "Polygon.com",
+          "url": "https://www.knoxnews.com/story/grocery/shopping/2026/11/26/knoxville-grocery-stores-open-on-thanksgiving-2026-hours-and-closures/92762168007/",
+          "title": "Which Knoxville grocery stores are open on Thanksgiving? A full list",
+          "publisher": "Knoxville News Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRm8UQcapMDGvvcTb0O7B5BEgCrfDfXivJUZUlJvmX4WPd3ulR2STzgH13o30"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQwX_Snf3NZayvBhvbwYiBNy-3d5pZdDKU_vCaujZOH1sbYufWXx2HAb8Nq2Aw"
         },
         {
-          "url": "https://movieweb.com/aliens-james-cameron-streaming-netflix-november-2026/",
-          "title": "James Cameron's (Very) Action-Packed Sequel Is Officially Being Pulled From Netflix",
-          "publisher": "MovieWeb",
+          "url": "https://www.wbir.com/article/news/community/transportation/knox-area-transit-closed-on-thanksgiving/51-4bc329d4-0f48-419f-b2a9-dbd9acd2f959",
+          "title": "Knox Area Transit will be closed on Thanksgiving",
+          "publisher": "WBIR",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPJkbme5-J978kFY5kQDFMbY8GgbLWt6CKSL01HQSqhzlbDIDkfLt6TRCvBEQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbt01Nzaa6FNdbmziToQEt0nK6Y2cQhyq_3yB6ft_gfJ0rap-9L3ojhBFyqGw"
         },
         {
-          "url": "https://www.cbr.com/ridley-scott-james-cameron-alien-leaving-netflix-december-2026/",
-          "title": "Netflix Is Losing Ridley Scott & James Cameron's 2 Alien Classics on the Same Day",
-          "publisher": "Comic Book Resources",
+          "url": "https://insideofknoxville.com/2026/11/city-of-knoxville-thanksgiving-closures-holiday-happenings/",
+          "title": "City of Knoxville Thanksgiving Closures & Holiday Happenings",
+          "publisher": "Inside of Knoxville",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRAH2a3rrx-8Ctwt_KW-kRwjSlOTkpecyyfz07zGNG9YAcn_eOkHTqsrZ1-qg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIDwfjqAG3Rf4_TH7rnBZnsbbqnweU6gNmgq518_yw9Oi8gZemMKi1H8RNP8A"
         }
       ]
     },
     {
-      "query": "commodore barry bridge",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:10:00Z",
+      "query": "is weis open on thanksgiving",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T12:40:00Z",
       "related_news_urls": [
-        "https://6abc.com/post/commodore-barry-bridge-shut-down-emergency-repairs/20084527/",
-        "https://www.cbsnews.com/philadelphia/news/commodore-barry-bridge-closed-both-directions-high-winds/",
-        "https://deeparrival.com/news/commodore-barry-bridge-closed-both-directions-wind-thanksgiving/"
+        "https://www.statecollege.com/articles/business/what-grocery-stores-are-open-on-thanksgiving-heres-a-look-around-centre-county/",
+        "https://www.wgal.com/article/whats-open-closed-thanksgiving-day-pennsylvania/74518526",
+        "https://www.pennlive.com/news/2026/11/need-some-last-minute-groceries-heres-what-to-know-for-thanksgiving-shopping-in-central-pa.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYOPAO6h6mpsyuiv6K7aMaB2PAz0no38g7R1obTsFIbvX_WIz3u8NqujqQUSs",
-      "image_credit": "6abc Philadelphia",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPhcKo_mI_DxI36c7wIk1mZF8OKZmmMV2t-yU1aoNZtGvq9L1tQ6zih47018",
+      "image_credit": "StateCollege.com",
       "news": [
         {
-          "url": "https://6abc.com/post/commodore-barry-bridge-shut-down-emergency-repairs/20084527/",
-          "title": "Commodore Barry Bridge shut down for emergency repairs",
-          "publisher": "6abc Philadelphia",
+          "url": "https://www.statecollege.com/articles/business/what-grocery-stores-are-open-on-thanksgiving-heres-a-look-around-centre-county/",
+          "title": "What Grocery Stores Are Open on Thanksgiving? Here’s a Look Around Centre County",
+          "publisher": "StateCollege.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQYOPAO6h6mpsyuiv6K7aMaB2PAz0no38g7R1obTsFIbvX_WIz3u8NqujqQUSs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgPhcKo_mI_DxI36c7wIk1mZF8OKZmmMV2t-yU1aoNZtGvq9L1tQ6zih47018"
         },
         {
-          "url": "https://www.cbsnews.com/philadelphia/news/commodore-barry-bridge-closed-both-directions-high-winds/",
-          "title": "Commodore Barry Bridge shut down in both directions after painting project setup comes loose",
-          "publisher": "CBS News",
+          "url": "https://www.wgal.com/article/whats-open-closed-thanksgiving-day-pennsylvania/74518526",
+          "title": "What’s open and closed on Thanksgiving Day in the Susquehanna Valley?",
+          "publisher": "WGAL",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnQ3fQZRDukCR98QWKvjbC8eBudK3pOuDq0Qe3vQ8gzOU6cWkm8X_YZLlsrg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVbSPrEMDZtnVc6LLm-wXSrTHt8wBayyv7fkZbrpIUsM4r3WRqyx0Q-Zow480"
         },
         {
-          "url": "https://deeparrival.com/news/commodore-barry-bridge-closed-both-directions-wind-thanksgiving/",
-          "title": "Commodore Barry Bridge Closed Both Ways as Wind Loosens Rigging",
-          "publisher": "deeparrival.com",
+          "url": "https://www.pennlive.com/news/2026/11/need-some-last-minute-groceries-heres-what-to-know-for-thanksgiving-shopping-in-central-pa.html",
+          "title": "Need some last-minute groceries? Here’s what to know for Thanksgiving shopping in central Pa.",
+          "publisher": "PennLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVzxi4ZDEz6XkeAS1bAr0ZrUzH0GzZeXoSEZ3VCT8BEXW4fhcJD7sEYjdnT4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0Dcs9hzAeLYruTJy6-1U-_1oIB-JWGBBtbh4QdMNvekbHxhpVTiwVivkPRFs"
         }
       ]
     },
     {
-      "query": "paramount plus black friday",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T12:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/",
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-25/disney-hulu-apple-tv-peacock-offer-black-friday-deals-but-netflix-sits-it-out",
-        "https://www.goodmorningamerica.com/shop/story/black-friday-disney-plus-hulu-bundle-deal-2026-138379985"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2Xz3uI-8-Cbg1Y2BFYGR4lN7U21UZ-_pDiT_D7Mf0Hiu9DbkN6NhrTYCWzY",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/",
-          "title": "Black Friday Streaming Deals Offered By Disney+, HBO Max, Paramount+, Peacock & More",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2Xz3uI-8-Cbg1Y2BFYGR4lN7U21UZ-_pDiT_D7Mf0Hiu9DbkN6NhrTYCWzY"
-        },
-        {
-          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-25/disney-hulu-apple-tv-peacock-offer-black-friday-deals-but-netflix-sits-it-out",
-          "title": "Disney+, Hulu, Apple TV and Peacock offer Black Friday deals — but Netflix sits it out",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAXUwyy52It87nmCGntKePMDPsaqIklvzj4XaHkHsOFKQF_0DZK8PCXsL6xE0"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/black-friday-disney-plus-hulu-bundle-deal-2026-138379985",
-          "title": "Disney+, Hulu Bundle Black Friday deal 2026: $4.99 per month for 1 year",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjozQvGXvRjImdCTPVzemApCRBrzsxWUUyiv-nkJfk6oWhIo4Jtakyjnxauvs"
-        }
-      ]
-    },
-    {
-      "query": "is hannaford open on thanksgiving",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:00:00Z",
-      "related_news_urls": [
-        "https://www.wmur.com/article/new-hampshire-stores-open-thanksgiving-2026/74534590",
-        "https://www.yahoo.com/news/us/articles/forgot-thanksgiving-ingredient-heres-whats-100819237.html",
-        "https://www.ctpost.com/news/article/thanksgiving-connecticut-open-closed-2026-22545299.php"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3CKcd2yzh6DaI0Ti0RE8Bxx9CeEuHfL5uDBo87fHv9HmYIz8ZZtDrOYp03HI",
-      "image_credit": "WMUR",
-      "news": [
-        {
-          "url": "https://www.wmur.com/article/new-hampshire-stores-open-thanksgiving-2026/74534590",
-          "title": "See what New Hampshire stores will still be open on Thanksgiving",
-          "publisher": "WMUR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3CKcd2yzh6DaI0Ti0RE8Bxx9CeEuHfL5uDBo87fHv9HmYIz8ZZtDrOYp03HI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/forgot-thanksgiving-ingredient-heres-whats-100819237.html",
-          "title": "Forgot a Thanksgiving ingredient? Here's what's open in RI",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoTG9b9JabQiKYhZHteS09A0sGlNFqPuyYih3HekSJ_1Rd7FB1mYjVWlfvJm0"
-        },
-        {
-          "url": "https://www.ctpost.com/news/article/thanksgiving-connecticut-open-closed-2026-22545299.php",
-          "title": "Here's what's open and closed on Thanksgiving Day 2026 in Connecticut",
-          "publisher": "CTPost",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAuPKu0XvEZZekI8NxulFOHeQglglRcoFx7vZYrDBUkSfpP-UaFkilUj9HoSs"
-        }
-      ]
-    },
-    {
-      "query": "alex bowman",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T12:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nascar/articles/alex-bowman-reveals-one-reason-010040074.html",
-        "https://www.on3.com/nascar/news/alex-bowman-has-been-watching-the-comments-his-answer-goes-deeper-than-a-clapback/",
-        "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwKtXaM3ScM8mIzMUonoJOECmlKcub2AxwtleFfbS7llHDnDI0YR0ioavbEY",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nascar/articles/alex-bowman-reveals-one-reason-010040074.html",
-          "title": "Alex Bowman Reveals One Reason He’s Walking Away From NASCAR",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYwKtXaM3ScM8mIzMUonoJOECmlKcub2AxwtleFfbS7llHDnDI0YR0ioavbEY"
-        },
-        {
-          "url": "https://www.on3.com/nascar/news/alex-bowman-has-been-watching-the-comments-his-answer-goes-deeper-than-a-clapback/",
-          "title": "Alex Bowman has been watching the comments. His answer goes deeper than a clapback",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKms_erxezj4cJs_zRgz1itITiRcWs7xU-uSsAC-Oy6xGYOZPk7W9ZBQHSXq4"
-        },
-        {
-          "url": "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles",
-          "title": "\"Part of the Reason That I'm Retiring\"- Alex Bowman Shuts Down Critics as He Makes Raw Admission on Cup Struggles",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6AYA4kthU46B1dyGHzX1haLWR3JQU6qRnCPBFgCT2cea286NaENUtdb_edqE"
-        }
-      ]
-    },
-    {
-      "query": "clima",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-26T11:50:00Z",
-      "related_news_urls": [
-        "https://www.eldestapeweb.com/sociedad/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-jueves-26-de-noviembre-202611263015",
-        "https://vive.click/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-martes-24-de-noviembre/",
-        "https://www.eldestapeweb.com/sociedad/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-martes-24-de-noviembre-202611243026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHJ1hGE_JrftGHhj3oIo2VDJ8N-fJVtOb8rNwTmYcW0WUexgGUjPqDOoiEL1E",
-      "image_credit": "El Destape",
-      "news": [
-        {
-          "url": "https://www.eldestapeweb.com/sociedad/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-jueves-26-de-noviembre-202611263015",
-          "title": "Clima en Buenos Aires hoy: cielo despejado y una máxima de 24 grados",
-          "publisher": "El Destape",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRHJ1hGE_JrftGHhj3oIo2VDJ8N-fJVtOb8rNwTmYcW0WUexgGUjPqDOoiEL1E"
-        },
-        {
-          "url": "https://vive.click/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-martes-24-de-noviembre/",
-          "title": "Clima en Buenos Aires hoy: pronóstico del tiempo en vivo de este Martes, 24 de noviembre",
-          "publisher": "Vive Click",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF7DggQxeNDWP_HTsrubwzrrR9D9k7m8eX7zfOO8TJPoRxhRVZtXOEzT6S1Go"
-        },
-        {
-          "url": "https://www.eldestapeweb.com/sociedad/clima-en-buenos-aires-hoy-pronostico-del-tiempo-en-vivo-de-este-martes-24-de-noviembre-202611243026",
-          "title": "Clima en Buenos Aires hoy: jornada soleada y máxima de 28 grados",
-          "publisher": "El Destape",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwslr0BUzSZA1QkzvYol5x3uGyh53T_MN7swEv_FyaDNYj8Os2ZEP8E1eu8kE"
-        }
-      ]
-    },
-    {
-      "query": "shane gillis",
+      "query": "matt damon family home life",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T11:50:00Z",
+      "published_at": "2026-11-26T12:30:00Z",
       "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/story/2026-11-24/shane-gillis-ex-says-shes-in-therapy-after-nightmare-relationship",
-        "https://www.thecut.com/article/what-it-was-like-to-date-comedian-shane-gillis.html",
-        "https://www.thewrap.com/culture-lifestyle/culture/shane-gillis-responds-ex-girlfriend-relationship-essay/"
+        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+        "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+        "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEqCIp_ccToMz4b2BLjtOqsr-lu74urIdHeWm7Q0998rtjBMZFIWSLwxysuHo",
-      "image_credit": "Los Angeles Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
+      "image_credit": "People.com",
       "news": [
         {
-          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-24/shane-gillis-ex-says-shes-in-therapy-after-nightmare-relationship",
-          "title": "Shane Gillis’ ex says she’s in therapy to ‘deprogram’ after nightmare romance",
-          "publisher": "Los Angeles Times",
+          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQEqCIp_ccToMz4b2BLjtOqsr-lu74urIdHeWm7Q0998rtjBMZFIWSLwxysuHo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
         },
         {
-          "url": "https://www.thecut.com/article/what-it-was-like-to-date-comedian-shane-gillis.html",
-          "title": "The Shane Gillis Experience",
-          "publisher": "The Cut",
+          "url": "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+          "title": "Matt Damon says it was ‘difficult’ returning home to his family after ‘The Odyssey’ isolation",
+          "publisher": "Entertainment Weekly",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr5nHGQfqFRJsO9qJdB0wXk5ptrl9W4DVHzHl7JIst0fXd7x_ZxbmJWbhl3x0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
         },
         {
-          "url": "https://www.thewrap.com/culture-lifestyle/culture/shane-gillis-responds-ex-girlfriend-relationship-essay/",
-          "title": "Shane Gillis Responds After Ex-Girlfriend Details Relationship ‘Red Flags,’ Says Comedian Doesn’t Like Women",
-          "publisher": "TheWrap",
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/matt-damon-the-odyssey-christopher-nolan-b3091661.html",
+          "title": "Matt Damon reveals why it was difficult to return home after filming The Odyssey",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnEyzqShwugn1M7EtGyRTYYu597ZxLEHAgkcx912Bwq0ytOcYuvs8sGVfqoKU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEe-EnzmYzGm4qZIVxncD-xPZKPDWEz-tbgoa4vDNgfkvHj5aOW7MAuqJlgpE"
         }
       ]
     },
     {
-      "query": "pittsburgh weather",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T11:50:00Z",
+      "query": "matt bevin child support ruling",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T12:30:00Z",
       "related_news_urls": [
-        "https://www.cbsnews.com/pittsburgh/news/pittsburgh-winter-weather-2026-snowy-cold-forecast/",
-        "https://patch.com/new-jersey/across-nj/4-snow-predictions-nj-when-will-it-arrive",
-        "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/24/noaa-forecast-prediction-el-nio-winter-weather-pittsburgh/92938942007/"
+        "https://www.wlky.com/article/matt-bevin-adopted-son-child-support-ruling/74536486",
+        "https://www.courier-journal.com/story/news/politics/2026/11/25/matt-bevin-child-support-request-denied/92965159007/",
+        "https://www.wdrbwave.com/2026/11/26/family-court-judge-makes-ruling-former-gov-bevins-child-support-case/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSstkRynAr1sx_3pW6QkQkgL86IILub19rcJyj9PGJ2YllVIjRv5OTCAvJhMo",
-      "image_credit": "CBS News",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE2t1pAFPzxzNKgkmpaBSic2RUWhfOwBOQj1T2VKSkcjaKl8OrZV4NGqubrEM",
+      "image_credit": "WLKY",
       "news": [
         {
-          "url": "https://www.cbsnews.com/pittsburgh/news/pittsburgh-winter-weather-2026-snowy-cold-forecast/",
-          "title": "Will Pittsburgh's winter be snowy and cold? Here's the 2026 winter weather forecast.",
-          "publisher": "CBS News",
+          "url": "https://www.wlky.com/article/matt-bevin-adopted-son-child-support-ruling/74536486",
+          "title": "Judge rules Matt Bevin does not owe adopted son child support",
+          "publisher": "WLKY",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSstkRynAr1sx_3pW6QkQkgL86IILub19rcJyj9PGJ2YllVIjRv5OTCAvJhMo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQE2t1pAFPzxzNKgkmpaBSic2RUWhfOwBOQj1T2VKSkcjaKl8OrZV4NGqubrEM"
         },
         {
-          "url": "https://patch.com/new-jersey/across-nj/4-snow-predictions-nj-when-will-it-arrive",
-          "title": "4 Snow Predictions For NJ: When Will It Arrive?",
-          "publisher": "Patch",
+          "url": "https://www.courier-journal.com/story/news/politics/2026/11/25/matt-bevin-child-support-request-denied/92965159007/",
+          "title": "Matt Bevin does not owe adopted son child support, judge rules",
+          "publisher": "The Courier-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_bUuFi-6uNf90ixCA42dWSVZJHfr2SpRFcs3_6PbjFjWNLcc0OYjvQSorc_I"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8Lv3eQC9vfrjXWbjkDp5jdmYHRdM3w2dNX0yjevEHkJvjDEtQh2ujDeld7do"
         },
         {
-          "url": "https://www.usatoday.com/story/news/state/pennsylvania/pittsburgh/2026/11/24/noaa-forecast-prediction-el-nio-winter-weather-pittsburgh/92938942007/",
-          "title": "NOAA map shows Pittsburgh winter weather prediction, El Niño impacts",
+          "url": "https://www.wdrbwave.com/2026/11/26/family-court-judge-makes-ruling-former-gov-bevins-child-support-case/",
+          "title": "Family court judge makes ruling in former Kentucky Gov. Bevin’s child support case",
+          "publisher": "WDRB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQBz0QWrnHSS85F4jM1c5l4SG1-5gu4WU3UMQmN0sxc71LO966VXi3nrbDdd-g"
+        }
+      ]
+    },
+    {
+      "query": "trump account for kids",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T12:30:00Z",
+      "related_news_urls": [
+        "https://helenair.com/news/state-regional/government-politics/article_0073baf5-1437-485d-ae13-9168954134a4.html",
+        "https://lifestylesmagazine.com/latest-news/22081000-gift-from-brenda-and-frank-slootman-gives-every-montana-child-born-in-2023-and-2024-a-1000-start/",
+        "https://nbcmontana.com/news/local/nbc-mt-today-police-chief-on-leave-montana-kids-trump-accounts-receive-funds-snow"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSir5-L8R8MiB--np5d68Uin0cW3f5mRKFvZEs2PER_IzhuVYdTrTJAHrdvZMg",
+      "image_credit": "The Independent Record",
+      "news": [
+        {
+          "url": "https://helenair.com/news/state-regional/government-politics/article_0073baf5-1437-485d-ae13-9168954134a4.html",
+          "title": "Tech billionaire couple gives a total of $22M to thousands of Montana children",
+          "publisher": "The Independent Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSir5-L8R8MiB--np5d68Uin0cW3f5mRKFvZEs2PER_IzhuVYdTrTJAHrdvZMg"
+        },
+        {
+          "url": "https://lifestylesmagazine.com/latest-news/22081000-gift-from-brenda-and-frank-slootman-gives-every-montana-child-born-in-2023-and-2024-a-1000-start/",
+          "title": "$22,081,000 gift from Brenda and Frank Slootman gives every Montana child born in 2023 and 2024 a $1,000 start",
+          "publisher": "Lifestyles Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8UHZxN0DYyR4ixCz_OpZIQaHK0vNgpSz7WlPNi6KZ6lmUmScJf096JLjV1xc"
+        },
+        {
+          "url": "https://nbcmontana.com/news/local/nbc-mt-today-police-chief-on-leave-montana-kids-trump-accounts-receive-funds-snow",
+          "title": "NBC MT Today: Police chief on leave, Montana kids' Trump accounts receive funds, snow",
+          "publisher": "NBC Montana",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs7mChfWUAI9GxIbA-Ekscbg7BAyiNQTBO2xDFf2FGemBzvAFAJCmeTUIaN50"
+        }
+      ]
+    },
+    {
+      "query": "milwaukee brewers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T12:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/antonio-senzatela-brewers-contract",
+        "https://www.brewcrewball.com/milwaukee-brewers-news/93134/brewers-re-sign-one-of-their-trade-deadline-additions-in-first-free-agent-sign-of-offseason",
+        "https://www.mlbtraderumors.com/2026/11/brewers-sign-antonio-senzatela.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP-5Cbmk8gKx_fsL2xfI5VAF05jI-XgDJod5bemkoCQQ9sIVcDXAZj_GhdfgU",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/antonio-senzatela-brewers-contract",
+          "title": "Brewers bring back righty Senzatela on 1-year contract",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP-5Cbmk8gKx_fsL2xfI5VAF05jI-XgDJod5bemkoCQQ9sIVcDXAZj_GhdfgU"
+        },
+        {
+          "url": "https://www.brewcrewball.com/milwaukee-brewers-news/93134/brewers-re-sign-one-of-their-trade-deadline-additions-in-first-free-agent-sign-of-offseason",
+          "title": "Brewers re-sign one of their Trade Deadline additions in first free agent sign of offseason",
+          "publisher": "Brew Crew Ball",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAdDT7SgthWgfHubzy1vgIqPgMK3Cw5dIaTsu9Z8dtDt1kOSCJVt1g9D0Rk14"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/brewers-sign-antonio-senzatela.html",
+          "title": "Brewers Sign Antonio Senzatela",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTUv_O5r7hqeSEFbS2FthQ_POIOwEHhTqvV57rmsMsHIBTgmM2gxWp0gcOx-60"
+        }
+      ]
+    },
+    {
+      "query": "ocarina of time update",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T12:30:00Z",
+      "related_news_urls": [
+        "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
+        "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
+        "https://www.notebookcheck.net/Nintendo-fixes-the-Ocarina-of-Time-remake-bug-that-left-players-stuck-at-Lon-Lon-Ranch.1460662.0.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQznO1h2ivwu9lUbGrf26pT79v_jj7ZIZQcN6pqIkD2bqHrtCo_zagpA4ATdrc",
+      "image_credit": "Nintendo Life",
+      "news": [
+        {
+          "url": "https://www.nintendolife.com/news/2026/11/the-legend-of-zelda-ocarina-of-time-switch-2-updated-version-1-1-2-here-are-the-patch-notes",
+          "title": "The Legend Of Zelda: Ocarina Of Time Switch 2 Updated (Version 1.1.2), Here Are The Patch Notes",
+          "publisher": "Nintendo Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQznO1h2ivwu9lUbGrf26pT79v_jj7ZIZQcN6pqIkD2bqHrtCo_zagpA4ATdrc"
+        },
+        {
+          "url": "https://gonintendo.com/contents/67568-zelda-ocarina-of-time-updated-to-ver-1-1-2",
+          "title": "Zelda: Ocarina of Time updated to Ver. 1.1.2",
+          "publisher": "GoNintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT3s4pg4pyG57j0o9pQS55Qkh2uqDmUMuf3q_MA7c4AvELrrBKNR1Nt54epji4"
+        },
+        {
+          "url": "https://www.notebookcheck.net/Nintendo-fixes-the-Ocarina-of-Time-remake-bug-that-left-players-stuck-at-Lon-Lon-Ranch.1460662.0.html",
+          "title": "Nintendo fixes the Ocarina of Time remake bug that left players stuck at Lon Lon Ranch",
+          "publisher": "Notebookcheck",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuyvls2NQuRGrJFIVNCRdhXuoFEFutdOVCnSbhJUD-nYoxA5Wa2gP0Q0USlwk"
+        }
+      ]
+    },
+    {
+      "query": "bravo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T12:30:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/24/peacock-black-friday-streaming-deal/92942072007/",
+        "https://variety.com/2026/shopping/news/peacock-black-friday-deal-sign-up-online-1236958024/",
+        "https://www.cyclingweekly.com/deals/watch-every-minute-live-of-the-2027-tour-de-france-for-just-usd89-99-save-usd40-on-peacock-premium-for-black-friday"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7xIA-b9pfcvoCG45o0r9XW3IiEUAY7co5stMS7XLDSxpDFL025UXBAW906fw",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/24/peacock-black-friday-streaming-deal/92942072007/",
+          "title": "Peacock's Black Friday deals offer 66% off and start at just $2.99",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRk5MqQtSf3vGOE6TndgKeMllC7jkPgypzOaw0MkRuueG7eqoR_bshhdG91NqE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7xIA-b9pfcvoCG45o0r9XW3IiEUAY7co5stMS7XLDSxpDFL025UXBAW906fw"
+        },
+        {
+          "url": "https://variety.com/2026/shopping/news/peacock-black-friday-deal-sign-up-online-1236958024/",
+          "title": "Peacock Is $2.99 a Month With This Black Friday Deal",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDXyBXQ1p3ip93Esgmcs3_tzsQXoU5_EERpiZpYtatVCyxk71Zyekk6d0rS_s"
+        },
+        {
+          "url": "https://www.cyclingweekly.com/deals/watch-every-minute-live-of-the-2027-tour-de-france-for-just-usd89-99-save-usd40-on-peacock-premium-for-black-friday",
+          "title": "Watch every minute live of the 2027 Tour de France for just $89.99 – Save $40 on Peacock Premium for Black Friday",
+          "publisher": "Cycling Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSeQQYB7TzxGDgOvQ7rp5NGTi6HDP2vuphOq-VoF6wWnFBZPiWY2us2wmD0Fk"
+        }
+      ]
+    },
+    {
+      "query": "the rookie",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T12:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/es/news/ni66128799/?ref_=nm_nwr_1",
+        "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355",
+        "https://ew.com/jay-ellis-previews-high-octane-spinoff-the-rookie-north-new-teaser-12263486"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4Za7eleqSPcb3pgfIGooTgX_Ax_FT3HwE4krZFV0KZzQeeM-AMwh7B0WONk",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/es/news/ni66128799/?ref_=nm_nwr_1",
+          "title": "Nathan Fillion’s The Rookie Spinoff Officially Hits Major Filming Milestone Ahead Of January Release",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4Za7eleqSPcb3pgfIGooTgX_Ax_FT3HwE4krZFV0KZzQeeM-AMwh7B0WONk"
+        },
+        {
+          "url": "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355",
+          "title": "WATCH: The Rookie North - Series Premiere Jan 6 Video | The Rookie North",
+          "publisher": "ABC Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1mP397FedN7ngkXdTogn_eZUBkBeYuktOGlfEdYw5klKg1RtXC6pE5VBQK0"
+        },
+        {
+          "url": "https://ew.com/jay-ellis-previews-high-octane-spinoff-the-rookie-north-new-teaser-12263486",
+          "title": "Jay Ellis welcomes ‘Rookie’ fans to car-chasing, joke-cracking spinoff ‘The Rookie North’ in teaser",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4nzdnl1ZqpAkt9I_1yXIBbKjRo1Rcst1Bo26UHiJPJLYj_lMSm63UYIl89Ds"
         }
       ]
     }
