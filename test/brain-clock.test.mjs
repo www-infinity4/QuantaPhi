@@ -1490,3 +1490,45 @@ test('signed runner-supplied color findings are reused without duplicate model i
  assert.deepEqual(result.roleHandoffs,[]);
  assert.equal(aiCalls,1);
 });
+
+test('C13B0 malformed ticket graph cannot stop independent valid work',async t=>{
+ const fixture=continuityRunnerFixture(t,[
+  continuityJob('BROKEN'),
+  continuityJob('VALID','www-infinity4/Moltnook')
+ ]);
+ fixture.setGraph(0,[null,continuityJob('BROKEN')]);
+ const response=await fixture.send('/runner/claim','918');
+ assert.equal(response.status,200);
+ const result=await response.json();
+ assert.equal(result.lease.jobId,'VALID');
+ assert.equal(fixture.job(0),null);
+ assert.equal(fixture.job(0,1).status,'queued');
+});
+
+test('C13B0 malformed dependency graph remains blocked and unchanged',async t=>{
+ const fixture=continuityRunnerFixture(t,[
+  continuityJob('BROKEN'),
+  continuityJob('VALID','www-infinity4/Moltnook')
+ ]);
+ fixture.setGraph(0,[{
+  ...continuityJob('BROKEN'),
+  dependencies:'invalid'
+ }]);
+ const response=await fixture.send('/runner/claim','919');
+ assert.equal(response.status,200);
+ const result=await response.json();
+ assert.equal(result.lease.jobId,'VALID');
+ assert.equal(fixture.job(0).dependencies,'invalid');
+ assert.equal(fixture.job(0).status,'queued');
+});
+
+test('C13B0 malformed queue is never reported as empty',async t=>{
+ const fixture=continuityRunnerFixture(t,[
+  continuityJob('BROKEN')
+ ]);
+ fixture.setGraph(0,[null]);
+ const response=await fixture.send('/runner/claim','920');
+ assert.equal(response.status,503);
+ assert.equal((await response.json()).ok,false);
+ assert.equal(fixture.job(0),null);
+});

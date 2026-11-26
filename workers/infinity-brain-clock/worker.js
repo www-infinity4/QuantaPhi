@@ -493,7 +493,33 @@ export class BrainClock extends DurableObject{
     ownerHash:this.env.WRITER_OWNER_HASH,order:'newest',
     requestedTicketId:requested?.ticketId||''
    });
-   const candidates=(rows.results||[]).flatMap(ticket=>{let context;try{context=JSON.parse(ticket.context_json)}catch{return []}const jobs=Array.isArray(context.color_jobs)?context.color_jobs:[];return jobs.map(job=>({ticket,jobs,job,context}))});
+   let malformedGraphs=0;
+   const candidates=(rows.results||[]).flatMap(ticket=>{
+    let context;
+    try{context=JSON.parse(ticket.context_json);}
+    catch{malformedGraphs++;return [];}
+    if(!context||!Array.isArray(context.color_jobs)){
+     malformedGraphs++;
+     return [];
+    }
+    const jobs=context.color_jobs;
+    const ids=new Set();
+    for(const job of jobs){
+     if(!job||typeof job!=='object'||Array.isArray(job)||
+        typeof job.id!=='string'||!job.id.trim()||
+        ids.has(job.id)||
+        (job.dependencies!=null&&
+         !Array.isArray(job.dependencies))){
+      malformedGraphs++;
+      return [];
+     }
+     ids.add(job.id);
+    }
+    return jobs.map(job=>({ticket,jobs,job,context}));
+   });
+   if(malformedGraphs)
+    console.warn('brain_claim_malformed_graphs',
+     Math.min(malformedGraphs,500));
    sortCandidates(candidates,requested);
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
@@ -584,6 +610,8 @@ export class BrainClock extends DurableObject{
     !['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status)&&
     (engine?/^www-infinity4\/[\w.-]+$/.test(job.repository||''):supported(job)))
     .length;
+   if(malformedGraphs)
+    throw Error('runner_queue_graph_unavailable');
    const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
     adapterMatches,claimBlockedBy,dependencyStates,scanLimited:rows.scanLimited});
    await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
