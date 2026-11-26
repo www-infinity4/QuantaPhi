@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T02:01:28.317233Z",
+  "checked_at": "2026-11-26T02:31:31.647030Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "jumanji open world",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T01:40:00Z",
+      "query": "sharks vs ducks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T02:10:00Z",
       "related_news_urls": [
-        "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
-        "https://cwibc.co.id/en/jumanji-film-global-vr-launch",
-        "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/"
+        "https://www.nhl.com/ducks/news/topic/game-previews/preview-ducks-back-on-home-ice-against-sharks",
+        "https://sports.yahoo.com/nhl/articles/game-26-ducks-vs-sharks-213157503.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/san-jose-sharks-vs-anaheim-ducks-prediction-odds-2026-11-25/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
-          "title": "‘Jumanji’ Officially Expands With New Release Ahead of Final Movie",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw"
-        },
-        {
-          "url": "https://cwibc.co.id/en/jumanji-film-global-vr-launch",
-          "title": "Jumanji Expands With Final Film and Global VR Launch",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREu_vzcOa75IWDOecnT6uYRGSX1T3TD5Ekivw2epXnMmEWiRIyVXH5NeoGZvc"
-        },
-        {
-          "url": "https://explosionnetwork.com/jumanji-open-world-trailer-revealed-ahead-of-boxing-day-australian-release/",
-          "title": "Jumanji: Open World Trailer Reveals Final Adventure",
-          "publisher": "Explosion Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLyVXjpZoBG7Yd7yYz9s_mRATlDu_-TstD86nFwbU_W1I9zserYYjiaTcOsiw"
-        }
-      ]
-    },
-    {
-      "query": "canadiens vs avalanche",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T01:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/montreal-canadiens-colorado-avalanche-game-preview-november-25-2026",
-        "https://www.milehighhockey.com/colorado-avalanche-game-coverage/68010/preview-sacre-bleu-blanc-et-rouge-part-deux",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/montreal-canadiens-vs-colorado-avalanche-prediction-odds-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRP4Ox9-dRKRu24iAo6B3MnzVSvxplwLXdctDHwcZlm3nJf6bKhpmIw-2_fj7g",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/news/montreal-canadiens-colorado-avalanche-game-preview-november-25-2026",
-          "title": "Canadiens at Avalanche projected lineups",
+          "url": "https://www.nhl.com/ducks/news/topic/game-previews/preview-ducks-back-on-home-ice-against-sharks",
+          "title": "PREVIEW: Ducks Back on Home Ice Against Sharks",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRP4Ox9-dRKRu24iAo6B3MnzVSvxplwLXdctDHwcZlm3nJf6bKhpmIw-2_fj7g"
         },
         {
-          "url": "https://www.milehighhockey.com/colorado-avalanche-game-coverage/68010/preview-sacre-bleu-blanc-et-rouge-part-deux",
-          "title": "Preview: Sacre Bleu-Blanc-et-Rouge (Part Deux)!",
-          "publisher": "Mile High Hockey",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwS2HRYSBEt7MrXzgoxrRoUDPVs4bTdC_bWjuVQIqXNR8mpF3F9KwI9f8tuk4"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/montreal-canadiens-vs-colorado-avalanche-prediction-odds-2026-11-25/",
-          "title": "Montreal Canadiens vs Colorado Avalanche Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgNIlljOohQxAAmsZyIG-p0KtwqvOdukyV0pUg1dy96m973gDLKfXBAI5vB0g"
-        }
-      ]
-    },
-    {
-      "query": "harper murray",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T01:40:00Z",
-      "related_news_urls": [
-        "https://www.indystar.com/story/sports/nba/pacers/2026/11/24/tyrese-haliburton-wife-jade-purdue-nebraska-volleyball-match-big-ten-tournament-wisconsin-penn-state/92949665007/",
-        "https://sports.yahoo.com/womens-college-basketball/articles/harper-murray-nba-star-tyrese-125827728.html",
-        "https://www.usatoday.com/videos/sports/college/2026/11/25/nebraska-volleyball-star-talks-friendship-with-pacers-tyrese-haliburton/92957673007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShi6jTTFK-hCk_OP93oKkSpiEj99hQJx9sl5oLmegbuKUv1kPEK_TCDcysT70",
-      "image_credit": "IndyStar",
-      "news": [
-        {
-          "url": "https://www.indystar.com/story/sports/nba/pacers/2026/11/24/tyrese-haliburton-wife-jade-purdue-nebraska-volleyball-match-big-ten-tournament-wisconsin-penn-state/92949665007/",
-          "title": "Tyrese Haliburton, wife take in Purdue-Nebraska volleyball to support Harper Murray",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShi6jTTFK-hCk_OP93oKkSpiEj99hQJx9sl5oLmegbuKUv1kPEK_TCDcysT70"
-        },
-        {
-          "url": "https://sports.yahoo.com/womens-college-basketball/articles/harper-murray-nba-star-tyrese-125827728.html",
-          "title": "Harper Murray, NBA star Tyrese Haliburton link at Big Ten volleyball tournament",
+          "url": "https://sports.yahoo.com/nhl/articles/game-26-ducks-vs-sharks-213157503.html",
+          "title": "Game #26: Ducks vs. Sharks Gameday Preview (11/25/26)",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK1J5LtEuaiAnT8lWkNYalmEhoKx7tkJag4fMpWalOHAFQ77EJ3pGUwit4Rzc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPYGJmR_50ase5fBU4K7A_hw6NS62TkhYOFUQ7ENZq62rWPFZJy6WeymlXzaA"
         },
         {
-          "url": "https://www.usatoday.com/videos/sports/college/2026/11/25/nebraska-volleyball-star-talks-friendship-with-pacers-tyrese-haliburton/92957673007/",
-          "title": "Nebraska volleyball star talks friendship with Pacers' Tyrese Haliburton",
-          "publisher": "USA Today",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/san-jose-sharks-vs-anaheim-ducks-prediction-odds-2026-11-25/",
+          "title": "San Jose Sharks vs Anaheim Ducks Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJ0DliJ3_BULWzuc_8NotNlogm2y7UJ3BtQUEJUn-7jn2ef6pNrgZKLfCuuXg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRptRmJxCuTx8jPwORNOCmu0pvSL7nlI3tKoi06s100a3NkS7ULBmv0NDuddJ0"
         }
       ]
     },
     {
-      "query": "погода завтра",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:40:00Z",
+      "query": "tyson fury",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T02:10:00Z",
       "related_news_urls": [
-        "https://www.irk.ru/news/20261124/weather/",
-        "https://irk.today/2026/11/26/v-irkutske-26-noyabrya-ozhidaetsya-nebolshoy-sneg-i-poryvistyy-veter/",
-        "https://baikal24.ru/text/25-11-2026/057/"
+        "https://www.espn.com/boxing/story/_/id/50591366/tyson-fury-anthony-joshua-ring-walk-cardiff",
+        "https://www.bbc.com/news/articles/c5kg73d2px7mo",
+        "https://www.nytimes.com/athletic/7812070/2026/11/25/anthony-joshua-tyson-fury-fight-cardiff/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwK8M1MkmTX6wAq4_dmZvSQgesb8L7Pb9Itfd827ANhnbyFiDG0AN_kbdVcFA",
-      "image_credit": "Твой Иркутск",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK1Flsk5GBAu1-Hb3r58WUanoG3eHinsI1v320n52NzBmawG4D3FzcuapBb5Q",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.irk.ru/news/20261124/weather/",
-          "title": "Сильный снег и порывистый ветер ожидаются в Иркутской области 25 ноября",
-          "publisher": "Твой Иркутск",
+          "url": "https://www.espn.com/boxing/story/_/id/50591366/tyson-fury-anthony-joshua-ring-walk-cardiff",
+          "title": "Tyson Fury vs. Anthony Joshua start time approved by Cardiff Council",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSwK8M1MkmTX6wAq4_dmZvSQgesb8L7Pb9Itfd827ANhnbyFiDG0AN_kbdVcFA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK1Flsk5GBAu1-Hb3r58WUanoG3eHinsI1v320n52NzBmawG4D3FzcuapBb5Q"
         },
         {
-          "url": "https://irk.today/2026/11/26/v-irkutske-26-noyabrya-ozhidaetsya-nebolshoy-sneg-i-poryvistyy-veter/",
-          "title": "В Иркутске 26 ноября ожидается небольшой снег, порывистый ветер и -1…-3°",
-          "publisher": "Иркутск Сегодня",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzrOqokqs1I8YeK4TrzCm2ZssghsbzGPRjKj6saqwaHej8TPD2OETOCMaUpFM"
-        },
-        {
-          "url": "https://baikal24.ru/text/25-11-2026/057/",
-          "title": "Метели обрушатся на районы Иркутской области в четверг",
-          "publisher": "Байкал24",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoS7p-vi9CoIPaplZiWv6S6ukkAz4am6VXVkDNyki94RTl5uRbIdtXGUbc3PA"
-        }
-      ]
-    },
-    {
-      "query": "love actually",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:40:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/politics/2026/nov/25/max-balegde-how-influencers-cunning-comms-plan-no-10-nightmare",
-        "https://www.bbc.com/news/articles/cwg7l5yv2j73o",
-        "https://www.thetimes.com/uk/politics/article/andy-burnham-max-balegde-luke-hamnett-n2rlvpb8s"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLD1euwCZmC0fbHQOIhdIaK3Q_mCb5XVb8iBfATGO-xB7WEMWcyjHfi44NfU",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/politics/2026/nov/25/max-balegde-how-influencers-cunning-comms-plan-no-10-nightmare",
-          "title": "Max Balegde: how influencer turned a cunning comms plan into a No 10 nightmare",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRLD1euwCZmC0fbHQOIhdIaK3Q_mCb5XVb8iBfATGO-xB7WEMWcyjHfi44NfU"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cwg7l5yv2j73o",
-          "title": "Downing Street's dancing TikToker defends visit",
+          "url": "https://www.bbc.com/news/articles/c5kg73d2px7mo",
+          "title": "Fury vs Joshua fight to go ahead despite objections over 3am finish",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUQrUm-7GRUueAdV_T6GoHrCUuD_quKkA0-hMs6Un9ndOrA6go5Shq57nwZKQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKoJAxfDaCsIxFc5u9H_xow8Gf8AeN8Iw1W0tjSXvR1VneC-xZGLbv0LpbcYc"
         },
         {
-          "url": "https://www.thetimes.com/uk/politics/article/andy-burnham-max-balegde-luke-hamnett-n2rlvpb8s",
-          "title": "Influencers are using No 10 as a film set and it’s Grim, Actually",
-          "publisher": "The Times",
+          "url": "https://www.nytimes.com/athletic/7812070/2026/11/25/anthony-joshua-tyson-fury-fight-cardiff/",
+          "title": "Fury vs Joshua: 1.30am fight start approved, breathalysers for ‘worse for wear’ fans - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROqeHss8FC4pbcWT5hWfGe8bvFcnIoXxIP9q37ASf9IR0Cx3_FfheIkr4o6y0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTntXPIm52YPHHPL_QqivBTDwbrr2V9xtBK3QywSdOEmKOalC8r7pLhkNxwtGk"
         }
       ]
     },
     {
-      "query": "partidos de liga mx",
+      "query": "bill murray",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T01:40:00Z",
+      "published_at": "2026-11-26T02:10:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17558218/liga-mx-liguilla-apertura-cuartos-finales-antecedentes",
-        "https://www.telemundo.com/deportes/liga-mx/cuartos-de-final-de-la-liga-mx-las-historias-a-seguir-de-las-cuatro-ri-rcna611326",
-        "https://www.si.com/es-us/predicciones-de-la-ida-en-los-cuartos-de-final-del-apertura-2026-de-la-liga-mx"
+        "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
+        "https://demokratis.co.id/en/bill-murray-music-film-television",
+        "https://cwibc.co.id/en/bill-murray-blues-rock-tour"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT30A1Yp0bCJ9SCS4S92QGU3RxYg6M3r3V_xboPVnV8zwrlI5KFyktyfsF0bZw",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M",
+      "image_credit": "FOX 2",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17558218/liga-mx-liguilla-apertura-cuartos-finales-antecedentes",
-          "title": "Liga MX: los cruces de liguilla revivirán finales épicas",
-          "publisher": "ESPN Deportes",
+          "url": "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
+          "title": "Mike Zito Joins Studio STL to Talk About Bill Murray and the Blood Brothers Bringing their Blues-Rock Tour Finale to St. Louis",
+          "publisher": "FOX 2",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT30A1Yp0bCJ9SCS4S92QGU3RxYg6M3r3V_xboPVnV8zwrlI5KFyktyfsF0bZw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M"
         },
         {
-          "url": "https://www.telemundo.com/deportes/liga-mx/cuartos-de-final-de-la-liga-mx-las-historias-a-seguir-de-las-cuatro-ri-rcna611326",
-          "title": "Cuartos de final de la Liga MX: las historias a seguir de las cuatro rivalidades",
-          "publisher": "Telemundo",
+          "url": "https://demokratis.co.id/en/bill-murray-music-film-television",
+          "title": "Bill Murray Expands His Career Through Music Film and Television",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxEu8GHM7Kv9ACYzuKBgIcofAKH924_kQCzwNfFjr0mRMPDF4G9B7eeL_-lC4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
         },
         {
-          "url": "https://www.si.com/es-us/predicciones-de-la-ida-en-los-cuartos-de-final-del-apertura-2026-de-la-liga-mx",
-          "title": "Predicciones de la ida en los cuartos de final del Apertura 2026 de la Liga MX",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZbZlMAzSJFUbO4TKBJWLi-tc3E0vQEuBOy85ud4Ehn-2jMkW6pNoGpIQCGBE"
-        }
-      ]
-    },
-    {
-      "query": "are butterball turkeys being recalled",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T01:30:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
-        "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
-        "https://theonion.com/butterball-recalls-40000-turkeys-for-proper-christian-burial/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
-          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg"
-        },
-        {
-          "url": "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
-          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
-          "publisher": "inkl",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiajHZyI2rzia5Z0od3bmO6VNGEEi8qkzZe_tfSuC1hFaFQj5Y6-1rZOg1U_M"
-        },
-        {
-          "url": "https://theonion.com/butterball-recalls-40000-turkeys-for-proper-christian-burial/",
-          "title": "Butterball Recalls 40,000 Turkeys For Proper Christian Burial",
-          "publisher": "The Onion",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPd3Cyw4QRM0ADPPhm2_Bu3QEzIhDoh-AfWJHe_HSBJhYA0URLTvpSDfyBBPo"
-        }
-      ]
-    },
-    {
-      "query": "météo demain",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:30:00Z",
-      "related_news_urls": [
-        "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-22/froid-l-hiver-debarque-en-milieu-de-semaine-vers-les-1ers-jours-sans-degel-dans-l-est-du-pays-94477",
-        "https://selectra.info/energie/actualites/marche/froid-week-end-villes-redoux-lundi-30-gaz",
-        "https://www.journaldugeek.com/2026/11/25/18-c-a-paris-29-c-a-strasbourg-ce-scenario-glacant-si-le-courant-qui-rechauffe-leurope-seffondre/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUR9XrX0q6yqUr2W_bDulLGbpT6isrJkD95yqh53bQefg46ZzzRT5YSUpZ--M",
-      "image_credit": "La Chaîne Météo",
-      "news": [
-        {
-          "url": "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-22/froid-l-hiver-debarque-en-milieu-de-semaine-vers-les-1ers-jours-sans-degel-dans-l-est-du-pays-94477",
-          "title": "Froid : l’hiver débarque en milieu de semaine, vers les 1ers jours sans dégel dans l'est du pays",
-          "publisher": "La Chaîne Météo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUR9XrX0q6yqUr2W_bDulLGbpT6isrJkD95yqh53bQefg46ZzzRT5YSUpZ--M"
-        },
-        {
-          "url": "https://selectra.info/energie/actualites/marche/froid-week-end-villes-redoux-lundi-30-gaz",
-          "title": "Gel dans le Nord et l'Est : jusqu'à quand il va durer dans votre ville, et la date du redoux",
-          "publisher": "Selectra",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJK3Y1-qBu1q36pW72trg9rbP93WupT2fiIjhSfSCABz93syBhVqWfPas4EBg"
-        },
-        {
-          "url": "https://www.journaldugeek.com/2026/11/25/18-c-a-paris-29-c-a-strasbourg-ce-scenario-glacant-si-le-courant-qui-rechauffe-leurope-seffondre/",
-          "title": "-18 °C à Paris, -29 °C à Strasbourg : ce scénario glaçant si le courant qui réchauffe l'Europe s'effondre",
-          "publisher": "Journal du Geek",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJV-OrBWDRdYkPufCMNtYgKavHXbL1LGwBznZLKBdtGKpn6-rggscxPJnIazs"
-        }
-      ]
-    },
-    {
-      "query": "clima para amanhã",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T01:30:00Z",
-      "related_news_urls": [
-        "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-vento-forte-do-quadrante-sul-agita-o-litoral",
-        "https://g1.globo.com/sc/santa-catarina/videos-nsc-noticias/video/confira-a-previsao-do-tempo-em-sc-15281738.ghtml",
-        "https://www.acaert.com.br/noticia/64602/acaert-agora-edicao-04-previsao-do-tempo-com-danielle-lima-chance-de-chuva-diminui-ate-o-fim-da-semana-com-chegada-de-massa-de-ar-seco-a-sc"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw",
-      "image_credit": "Portal do Holanda",
-      "news": [
-        {
-          "url": "https://novo2026.portaldoholanda.com.br/florianopolis/clima-para-amanha-em-florianopolis-vento-forte-do-quadrante-sul-agita-o-litoral",
-          "title": "Clima para amanhã em Florianópolis: vento forte do quadrante sul agita o litoral",
-          "publisher": "Portal do Holanda",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBuVxEY40d8VbE0COlDm4gAk2-JbAV6ynWQ6ZOnL_3M5dZqD1pE3-UERXMybw"
-        },
-        {
-          "url": "https://g1.globo.com/sc/santa-catarina/videos-nsc-noticias/video/confira-a-previsao-do-tempo-em-sc-15281738.ghtml",
-          "title": "Confira a Previsão do Tempo em SC",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhlgj7p9Gc1-uWXpu19hbJkX-qd7_udoEZaPN_u7QPrH15III2FF7Y6m2Z_oY"
-        },
-        {
-          "url": "https://www.acaert.com.br/noticia/64602/acaert-agora-edicao-04-previsao-do-tempo-com-danielle-lima-chance-de-chuva-diminui-ate-o-fim-da-semana-com-chegada-de-massa-de-ar-seco-a-sc",
-          "title": "Edição 04 | Previsão do tempo com Danielle Lima: chance de chuva diminui até o fim da semana com chegada de massa de ar seco a SC",
-          "publisher": "Acaert",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzunYqoC4XXeyqyETpNuJTo5L1b78Hkb-9GcShw6JPXPtNZlNegG0nzlzNWvg"
-        }
-      ]
-    },
-    {
-      "query": "mumpfield",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T01:30:00Z",
-      "related_news_urls": [
-        "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
-        "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
-        "https://cwibc.co.id/en/rams-konata-mumpfield-receiver-role"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
-          "title": "Week 12 Waiver Wire Pickups - Konata Mumpfield, CJ Daniels, Tyler Higbee Fantasy Football Outlooks",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
-          "title": "Konata Mumpfield Will maintain larger role sans Nacua",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQriX7bZWkf20b3G6Phe65rn0itKnqEnV2jp6qfp63aFL1aooLCLNYFRRRXHRo"
-        },
-        {
-          "url": "https://cwibc.co.id/en/rams-konata-mumpfield-receiver-role",
-          "title": "Rams Turn to Konata Mumpfield After Losing Top Receivers",
+          "url": "https://cwibc.co.id/en/bill-murray-blues-rock-tour",
+          "title": "Bill Murray Joins Blues Rock Tour in St Louis",
           "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5dMA-mvXeEVHhVEtrHCUk2oQzUZ7QjskrhVBf_hiRSLCafUEqblegebyEM7I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
+        }
+      ]
+    },
+    {
+      "query": "spurs vs trail blazers",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T02:00:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
+        "https://sports.yahoo.com/nba/articles/watch-spurs-vs-trail-blazers-012000578.html",
+        "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/gameday-coverage/118876/portland-trail-blazers-san-antonio-spurs-time-tv-streaming-latest-injury-report-nba-cup-standings",
+          "title": "Trail Blazers Return Home for Big Matchup Against Spurs",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZB8_R-19wVBZXtlu5-7cCLFj6OKdE5ppfYYpwzxXOfN-_jyndd_z1qRSor3w"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/watch-spurs-vs-trail-blazers-012000578.html",
+          "title": "How to watch Spurs vs Trail Blazers: Live stream NBA, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFak4Aq95q1XxeStjO5P8lJ3nL0gC1amdT4oAC9ghJilC2foOi84v4OyuUGcI"
+        },
+        {
+          "url": "https://www.poundingtherock.com/spurs-game-previews/110709/game-preview-san-antonio-spurs-vs-portland-trail-blazers",
+          "title": "Game Preview: San Antonio Spurs vs Portland Trail Blazers",
+          "publisher": "Pounding The Rock",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8SuMy9AZ1T75H0nwWlubkOpjhX4lgEW4-txAjc5Fvq3qMLHtyqL-Jk8mhHLs"
+        }
+      ]
+    },
+    {
+      "query": "kings vs warriors",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T02:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/final-injury-report-kings-warriors-230000917.html",
+        "https://kingsherald.com/game-preview/kings-vs-warriors-thread-prepping-that-thanksgiving-turkey/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/karl-anthony-towns-knee-probable-vs-cavs"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvuyV5l9JwbFLWFUdxQkp_2cxJMvnMEUAb1hGnNi1Duhf6UtCKWju2dsSYRSU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/final-injury-report-kings-warriors-230000917.html",
+          "title": "Final Injury Report for Kings-Warriors: Will Stephen Curry, Yaxel Lendeborg Play?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvuyV5l9JwbFLWFUdxQkp_2cxJMvnMEUAb1hGnNi1Duhf6UtCKWju2dsSYRSU"
+        },
+        {
+          "url": "https://kingsherald.com/game-preview/kings-vs-warriors-thread-prepping-that-thanksgiving-turkey/",
+          "title": "Kings vs Warriors Thread: Prepping That Thanksgiving Turkey",
+          "publisher": "The Kings Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_W1CVeH6dbxn5XsYsnrGLQpHHSv5UPB1_D-4Ea_oor6EVSwWan7OPmJr7VBA"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-25/karl-anthony-towns-knee-probable-vs-cavs",
+          "title": "Karl-Anthony Towns (knee) probable vs. Cavs",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSaGSnOv0oIK0UdIyBIXHuP-jk-4XlBXyDVfxPK0MUiiUTJ3lRS90ARGvp94D0"
+        }
+      ]
+    },
+    {
+      "query": "miami airport",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T02:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/miami/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
+        "https://bnonews.com/index.php/2026/11/miami-airport-closes-after-fedex-plane-goes-off-runway/",
+        "https://bnonews.com/index.php/2026/11/fedex-cargo-plane-goes-off-runway-at-miami-airport/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8ZtCKkmF37oZ0Rf5WtOnbM5c_Huam8l93fAIPbdaknQjsNB6HDRBkmS_wol0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/miami/news/miami-international-airport-ground-stop-fedex-md-11-runway-excursion-faa/",
+          "title": "FAA orders ground stop for Miami-bound flights after FedEx cargo plane goes off runway",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT8ZtCKkmF37oZ0Rf5WtOnbM5c_Huam8l93fAIPbdaknQjsNB6HDRBkmS_wol0"
+        },
+        {
+          "url": "https://bnonews.com/index.php/2026/11/miami-airport-closes-after-fedex-plane-goes-off-runway/",
+          "title": "Ground stop issued at Miami airport after FedEx plane goes off runway",
+          "publisher": "BNO News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo_KWXbuGNlZ2jmsJBA6Lt7STKfok5PrYQeMFgOqLzj_Z-0-K9ECpwAdcgnN0"
+        },
+        {
+          "url": "https://bnonews.com/index.php/2026/11/fedex-cargo-plane-goes-off-runway-at-miami-airport/",
+          "title": "FedEx cargo plane goes off runway at Miami airport",
+          "publisher": "BNO News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRftSLt9x5huRLuvY8oLl0rEtnCxEQDQkc0kU72dlh64rzpoiE27zVOwrU94zw"
+        }
+      ]
+    },
+    {
+      "query": "wild hockey",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7806468/2026/11/24/minnesota-wild-news-updates/",
+        "https://www.startribune.com/minnesota-wild-trade-targets-dylan-larkin-nikita-kucherov-quinn-hughes-injury-news-stanley-cup-odds/601921506",
+        "https://bleacherreport.com/articles/25537167-7-plan-b-trade-options-nhl-teams-missed-out-dylan-larkin"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_OqiQJc8BqICc6fzSwhpbpLC9IT5urBmnPval4AUhLDnAPiLpnuMw78UKFzc",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7806468/2026/11/24/minnesota-wild-news-updates/",
+          "title": "Minnesota Wild mailbag, Part 1: What’s Plan B after Dylan Larkin, and what if Quinn Hughes leaves? - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_OqiQJc8BqICc6fzSwhpbpLC9IT5urBmnPval4AUhLDnAPiLpnuMw78UKFzc"
+        },
+        {
+          "url": "https://www.startribune.com/minnesota-wild-trade-targets-dylan-larkin-nikita-kucherov-quinn-hughes-injury-news-stanley-cup-odds/601921506",
+          "title": "Neal: Dylan Larkin is off the board. Wild should look at Nikita Kucherov next.",
+          "publisher": "Star Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPcMCeXxL7LWZpZnXVJLStV4Ch4D8kw2VAlGLhIsCAfxb5KZXw_qI_0_jNuSU"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537167-7-plan-b-trade-options-nhl-teams-missed-out-dylan-larkin",
+          "title": "7 Plan B Trade Options for NHL Teams That Missed Out on Dylan Larkin",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn6zW5PGRofy3hy5WLY0xw5051vr-PTeWNBqEpKGUOfQg7_Jh1rzMofSIcFFk"
+        }
+      ]
+    },
+    {
+      "query": "rams coach",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T02:00:00Z",
+      "related_news_urls": [
+        "https://www.mensjournal.com/news/sean-mcvay-wife-veronika-swimsuit-photo-rams-packers",
+        "https://www.espn.com/nfl/story/_/id/50597187/sources-confirm-aaron-rodgers-allegations-mike-mccarthy",
+        "https://sports.yahoo.com/nfl/articles/mason-rudolph-issues-pointless-wild-014727945.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq5L4bFmTmq-hGhxuK70IJ1jWFJ90icJpW_MhOj6dY42COhV5yDXVzFaXZwk0",
+      "image_credit": "Men's Journal",
+      "news": [
+        {
+          "url": "https://www.mensjournal.com/news/sean-mcvay-wife-veronika-swimsuit-photo-rams-packers",
+          "title": "Sean McVay Wife: Rams Coach Took Viral Swimsuit Photo With Veronika",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSq5L4bFmTmq-hGhxuK70IJ1jWFJ90icJpW_MhOj6dY42COhV5yDXVzFaXZwk0"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50597187/sources-confirm-aaron-rodgers-allegations-mike-mccarthy",
+          "title": "Sources corroborate Aaron Rodgers' allegations about Steelers HC Mike McCarthy",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNU-RoPuN6KyPUrPyEdAxkh03Rr-vOX0Kmf84NO9G3ackpwjFHvjEYZHpEgdo"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/mason-rudolph-issues-pointless-wild-014727945.html",
+          "title": "Mason Rudolph issues ‘pointless’ take on wild Mike McCarthy, Steelers story",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTeYhLKoIsJ5oPLDPzXEmWVm7kcO5XN7kigh97J-Xh2fmeKjdwXytNuDvGxvHM"
+        }
+      ]
+    },
+    {
+      "query": "blackhawks vs kraken",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T01:50:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/kraken/news/chicago-blackhawks-vs-seattle-kraken-game-preview-projected-lines-112526",
+        "https://sports.yahoo.com/nhl/articles/blackhawks-teuvo-tervinen-x-factor-175236964.html",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-seattle-kraken-prediction-odds-2026-11-25/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXtu4nLCCMt0TF_ug4i6LKmeWDAqLaKttQTWjLwpOmCqHvkKWb0qMjpgVuIk",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/kraken/news/chicago-blackhawks-vs-seattle-kraken-game-preview-projected-lines-112526",
+          "title": "Blackhawks (8-14-2) vs Kraken (11-9-1) | 6:40 p.m. | Seattle Kraken",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMXtu4nLCCMt0TF_ug4i6LKmeWDAqLaKttQTWjLwpOmCqHvkKWb0qMjpgVuIk"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/blackhawks-teuvo-tervinen-x-factor-175236964.html",
+          "title": "Blackhawks need Teuvo Tervinen to be the X-Factor to end dismal history against Kraken",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNlFHE9a39_CXTcfayiyP3V8M5ymF6-qICRVwMEajhwR5ivTWRHXp08r61aH8"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/chicago-blackhawks-vs-seattle-kraken-prediction-odds-2026-11-25/",
+          "title": "Chicago Blackhawks vs Seattle Kraken Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqlhHrRNry0V3bqwiGfVLU3Z-hcRNZDtZxdXIJVrjHfg4nvJo1PJ3DdjZdiBk"
+        }
+      ]
+    },
+    {
+      "query": "kurt russell",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T01:50:00Z",
+      "related_news_urls": [
+        "https://faroutmagazine.co.uk/kurt-russell-refused-one-note-role-9-years-later-most-satisfying-career/",
+        "https://bsinews.id/en/kurt-russell-dark-blue-role",
+        "https://www.limapagi.id/en/kurt-russell-dark-blue-role"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4obie7rtZZdgPAFM6ET4mkGgn_Zuz2J6qKyzhZwALpNA0a2kG-DEtIn1FoxA",
+      "image_credit": "Far Out Magazine",
+      "news": [
+        {
+          "url": "https://faroutmagazine.co.uk/kurt-russell-refused-one-note-role-9-years-later-most-satisfying-career/",
+          "title": "In 1993, Kurt Russell instantly refused a “one-note” role. Nine years later, he called it the “most satisfying” of his career",
+          "publisher": "Far Out Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4obie7rtZZdgPAFM6ET4mkGgn_Zuz2J6qKyzhZwALpNA0a2kG-DEtIn1FoxA"
+        },
+        {
+          "url": "https://bsinews.id/en/kurt-russell-dark-blue-role",
+          "title": "Kurt Russell Reversed His Decision on Dark Blue After Rewrite",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNagalkmFWErk5rPAxNtsZ3l8EwZef9BWHT6VHdLU1ndwQsh46qpQ71FI983U"
+        },
+        {
+          "url": "https://www.limapagi.id/en/kurt-russell-dark-blue-role",
+          "title": "Kurt Russell Rejects Dark Blue Script Before Embracing Role",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_lrbmNM7usRoY194r_YvslZBtlokKX0TQCXJNkBUFG7TMSxxs0orm7oTM0_I"
         }
       ]
     }
