@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-26T18:32:59.361924Z",
+  "checked_at": "2026-11-26T19:03:43.943056Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "nnliYPIV8PY",
+      "title": "Mr. Irrelevant",
+      "video_id": "nnliYPIV8PY",
+      "video_title": "Mr. Irrelevant New Trailer (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-23T18:09:09Z",
+      "source_url": "https://www.youtube.com/watch?v=nnliYPIV8PY",
+      "poster": "https://i.ytimg.com/vi/nnliYPIV8PY/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "mr irrelevant",
+      "trend_checked_at": "2026-11-26T19:01:06.790110Z",
+      "trend_published_at": "2026-11-26T18:40:00Z",
+      "approx_searches": "10000+"
+    },
     {
       "id": "gKiWSvAjNG0",
       "title": "Clashing Through the Snow",
@@ -99,18 +115,6 @@
       "published_at": "2026-11-23T18:41:55Z",
       "source_url": "https://www.youtube.com/watch?v=dotg5b0oOSk",
       "poster": "https://i.ytimg.com/vi/dotg5b0oOSk/hqdefault.jpg",
-      "google_trending": false
-    },
-    {
-      "id": "nnliYPIV8PY",
-      "title": "Mr. Irrelevant",
-      "video_id": "nnliYPIV8PY",
-      "video_title": "Mr. Irrelevant New Trailer (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-23T18:09:09Z",
-      "source_url": "https://www.youtube.com/watch?v=nnliYPIV8PY",
-      "poster": "https://i.ytimg.com/vi/nnliYPIV8PY/hqdefault.jpg",
       "google_trending": false
     },
     {
