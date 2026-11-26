@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T15:31:18.794643Z",
+  "checked_at": "2026-11-26T16:01:37.045999Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "trader joe's",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T15:10:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/shopped-trader-joes-thanksgiving-grocery-nyc-northwest-price-difference-2026-11",
-        "https://malaysia.news.yahoo.com/trader-joes-open-thanksgiving-day-110000462.html",
-        "https://parade.com/food/trader-joes-thanksgiving-hours-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM9-n7wC3loPDb-HJcHKmdADAj1sHChIbGUmO9zjy5AfUkfVjUI8BJ1mftRfQ",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/shopped-trader-joes-thanksgiving-grocery-nyc-northwest-price-difference-2026-11",
-          "title": "We shopped for Thanksgiving at Trader Joe's in NYC and a smaller Northwest city. Here's the cheaper one.",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQM9-n7wC3loPDb-HJcHKmdADAj1sHChIbGUmO9zjy5AfUkfVjUI8BJ1mftRfQ"
-        },
-        {
-          "url": "https://malaysia.news.yahoo.com/trader-joes-open-thanksgiving-day-110000462.html",
-          "title": "Will Trader Joe's be open on Thanksgiving Day 2026?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUMeJt2oc4e4vqWptuOnxqAwg2fEEGeJ45WZNQ58U0TFAkOhRfSBFin_2z6PI"
-        },
-        {
-          "url": "https://parade.com/food/trader-joes-thanksgiving-hours-2026",
-          "title": "Is Trader Joe's Open on Thanksgiving? 2026 Holiday Hours",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTTB3sQpM3ouR_Mgwj1f7mD5DPP9qwwl1247vCS6fVSjKUsQmfCGpo3mjePfO8"
-        }
-      ]
-    },
-    {
-      "query": "fanduel",
+      "query": "gta vi endings",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T15:10:00Z",
+      "published_at": "2026-11-26T15:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-cowboys-eagles-bills-chiefs-nfl-thanksgiving/",
-        "https://www.foxnews.com/outkick-betting/fanduel-promo-code-bet-5-get-200-when-you-bet-nfl-thanksgiving-week-starting-rams-packer",
-        "https://www.wsn.com/promos/fanduel-promo-code-thanksgiving-nfl-11-26-2026/"
+        "https://variety.com/2026/gaming/news/gta-6-endings-possible-jason-lucia-1236958026/",
+        "https://www.forbes.com/sites/paultassi/2026/11/23/how-to-get-the-best-ending-in-gta-6/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-endings-end-of-the-road-swim-for-it-no-surrender/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ49V2Rx1h-vGohJ1u-aNyoChPPXmK4qXVbvQIOYgSpVTkR_KFo2ulsys1iSg8",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDFMxzgUnjO8yfMS0WQDJ1c_Bcee6oMwAGXKx2z3v9-6T5FbF7li4PZMfzKKo",
+      "image_credit": "Variety",
       "news": [
         {
-          "url": "https://www.cbssports.com/betting/news/use-fanduel-promo-code-to-get-250-bonus-bets-cowboys-eagles-bills-chiefs-nfl-thanksgiving/",
-          "title": "Use FanDuel promo code to get $250 bonus bets by targeting Cowboys-Eagles, Bills-Chiefs, NFL Thanksgiving",
-          "publisher": "CBS Sports",
+          "url": "https://variety.com/2026/gaming/news/gta-6-endings-possible-jason-lucia-1236958026/",
+          "title": "‘GTA 6’ Has At Least 9 Distinct Endings",
+          "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ49V2Rx1h-vGohJ1u-aNyoChPPXmK4qXVbvQIOYgSpVTkR_KFo2ulsys1iSg8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDFMxzgUnjO8yfMS0WQDJ1c_Bcee6oMwAGXKx2z3v9-6T5FbF7li4PZMfzKKo"
         },
         {
-          "url": "https://www.foxnews.com/outkick-betting/fanduel-promo-code-bet-5-get-200-when-you-bet-nfl-thanksgiving-week-starting-rams-packer",
-          "title": "FanDuel Promo Code: Bet $5, Get $200 When You Bet on the NFL This Thanksgiving Week, Starting With Rams-Packer",
-          "publisher": "Fox News",
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/23/how-to-get-the-best-ending-in-gta-6/",
+          "title": "How To Get The Best Ending In ‘GTA 6’",
+          "publisher": "Forbes",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR79WgqMR93tohsYasvy4SfmDHYvw7AuQn2-GW5Lq9gzmBYFb8Mkk95C7vWmRw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTygdUI-j9CNs5q1aLtcyAexIn8Qj2qWF-lEApOzTHKcoPY2q3MssZy1sFu1a4"
         },
         {
-          "url": "https://www.wsn.com/promos/fanduel-promo-code-thanksgiving-nfl-11-26-2026/",
-          "title": "FanDuel Promo Code for Thanksgiving NFL Games (Nov. 26)",
-          "publisher": "WSN.com",
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-endings-end-of-the-road-swim-for-it-no-surrender/",
+          "title": "GTA 6 The End of the Road: Should you swim for it, or choose no surrender?",
+          "publisher": "PC Gamer",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc1fbnVxJ2KlivAJKqJlq_-h_oIxSvFsbAE8j4hclZw7TgBaLUkmgR27r2VEo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMUp_WwxAxBoROaF2hrt1yRGQ1TVV83Zqsu8qpYTKAJzEF_V6ulSK2XQ3G7CY"
         }
       ]
     },
     {
-      "query": "local weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T15:00:00Z",
-      "related_news_urls": [
-        "https://www.kpax.com/weather/rain-and-snow-move-back-into-western-montana-on-thanksgiving",
-        "https://www.kbzk.com/weather/quiet-wednesday-ahead-of-a-slightly-more-active-weekend",
-        "https://www.ktvq.com/weather/todays-forecast/q2-billings-area-weather-a-mostly-quiet-cloudy-wednesday"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdw8-0W8AkDzQabhY80gf7iwXFUvhxGqaDc2URzoOcj-OMN4ENoyC5VDv5go",
-      "image_credit": "KPAX News",
-      "news": [
-        {
-          "url": "https://www.kpax.com/weather/rain-and-snow-move-back-into-western-montana-on-thanksgiving",
-          "title": "Rain and snow move back into western Montana on Thanksgiving",
-          "publisher": "KPAX News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcdw8-0W8AkDzQabhY80gf7iwXFUvhxGqaDc2URzoOcj-OMN4ENoyC5VDv5go"
-        },
-        {
-          "url": "https://www.kbzk.com/weather/quiet-wednesday-ahead-of-a-slightly-more-active-weekend",
-          "title": "Quiet Wednesday Ahead of a slightly more active weekend",
-          "publisher": "KBZK News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSnHi9rlUP3sKSGmFG7P6x3MNAzVB1Cv8EaAAyEvZVuNNbwN72vTfkLzhBBAM"
-        },
-        {
-          "url": "https://www.ktvq.com/weather/todays-forecast/q2-billings-area-weather-a-mostly-quiet-cloudy-wednesday",
-          "title": "Q2 Billings Area Weather: A mostly quiet, cloudy Wednesday",
-          "publisher": "KTVQ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4OmX1L3ljhq8arL6tOCwBtqN9r3byS2rXJ1NlxUNa65OHgHq3OBuGYy4bRRQ"
-        }
-      ]
-    },
-    {
-      "query": "georgia vs cincinnati predictions",
+      "query": "nba games today",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T14:50:00Z",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
-        "https://www.basketunderreview.com/thanksgiving-watchlist-november-26-2026/"
+        "https://sports.yahoo.com/nba/article/nba-cup-2026-standings-schedule-stakes-entering-the-final-day-of-group-play-054335497.html",
+        "https://bleacherreport.com/articles/25537516-nba-cup-2026-standings-bracket-predictions-after-november-24-group-play",
+        "https://www.nba.com/news/emirates-nba-cup-2026-live-updates-november-25"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlGWDqx5LTFEJGbuBiuxpaXSPJ5NtOck2P4VAHogAjlERV_6XXms3YiQINC7o",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
-          "title": "Georgia basketball takes on Cincinnati to open ESPN Events Invitational",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
-          "title": "Georgia vs Cincinnati Prediction, Pick, College Basketball Odds for Thursday, Nov. 26",
+          "url": "https://sports.yahoo.com/nba/article/nba-cup-2026-standings-schedule-stakes-entering-the-final-day-of-group-play-054335497.html",
+          "title": "NBA Cup 2026: Standings, schedule, stakes entering the final day of group play",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE0w0BVZBve0YU8TelH65ObYI8kn7uIdIwnqt3c0LyLM76e3NBGKBNleOheVs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlGWDqx5LTFEJGbuBiuxpaXSPJ5NtOck2P4VAHogAjlERV_6XXms3YiQINC7o"
         },
         {
-          "url": "https://www.basketunderreview.com/thanksgiving-watchlist-november-26-2026/",
-          "title": "Thanksgiving Watchlist: November 26, 2026",
-          "publisher": "Basket Under Review",
+          "url": "https://bleacherreport.com/articles/25537516-nba-cup-2026-standings-bracket-predictions-after-november-24-group-play",
+          "title": "NBA Cup 2026 Standings, Bracket Predictions After November 24 Group Play",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg2GV6UziOm1hl5viAtkUSljVw6PbUJ1tWmQSiEvQ_U5Asw7Q0vIxYzHAGElc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENMjZmz0ECvqvlyobxIWpZZ46omX7G-N06Fd_3ujJqvMCuk9_wkKRhVae7CU"
+        },
+        {
+          "url": "https://www.nba.com/news/emirates-nba-cup-2026-live-updates-november-25",
+          "title": "Wednesday's Emirates NBA Cup recap: Blazers deliver late",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyJyn1b46k78h7mot5Lfsq845xJX8OKlmsJgcd8LgESZsBB8oG-wc06cP8znQ"
         }
       ]
     },
     {
-      "query": "kaley cuoco",
+      "query": "d'andre swift",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T14:50:00Z",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
-        "https://www.yahoo.com/entertainment/celebrity/articles/kaley-cuoco-had-crush-big-020813511.html",
-        "https://bsinews.id/en/cuoco-galecki-real-life-romance"
+        "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ben-johnson-dandre-swift-doesnt-need-to-regain-trust-after-fumble",
+        "https://chicago.suntimes.com/bears/2026/11/24/bears-dandre-swift-ben-johnson-fumbles-running-back-hold-ball-nfl-kyle-monangai-salvon-ahmed"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAWz_djH16mWubE98GQyNi4Y6IQ-hgfi12HWa92pvjC1yV0wbb9CYClnmtDk",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
-          "title": "Kaley Cuoco Introduces 6-Week-Old Philomena to DWTS, as Her Sister Matilda, 3, Dresses Up for Thanksgiving",
-          "publisher": "People.com",
+          "url": "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
+          "title": "Bears' Johnson has no plan to stop using Swift in run game despite costly fumbles",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAWz_djH16mWubE98GQyNi4Y6IQ-hgfi12HWa92pvjC1yV0wbb9CYClnmtDk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/kaley-cuoco-had-crush-big-020813511.html",
-          "title": "Kaley Cuoco Had A Crush On A Big Bang Theory Co-Star",
-          "publisher": "Yahoo",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ben-johnson-dandre-swift-doesnt-need-to-regain-trust-after-fumble",
+          "title": "Ben Johnson: D’Andre Swift doesn’t need to regain trust after fumble",
+          "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTARkph4_xlrJUj_g31QjRMV5om5fPVJIVgL8fUqnSjSXfR-Xub6FY750n3EqY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmQ-ma4movm4GwQzLFma1wtuHv3ImMTnSR947v_sTbxx4Iz4iJ8z11dS3-hnY"
         },
         {
-          "url": "https://bsinews.id/en/cuoco-galecki-real-life-romance",
-          "title": "Kaley Cuoco and Johnny Galecki Reveal Their Big Bang Theory Romance",
-          "publisher": "bsinews.id",
+          "url": "https://chicago.suntimes.com/bears/2026/11/24/bears-dandre-swift-ben-johnson-fumbles-running-back-hold-ball-nfl-kyle-monangai-salvon-ahmed",
+          "title": "After another fumble, what do Bears do with D'Andre Swift now?",
+          "publisher": "Chicago Sun-Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu8CrNDGrBajDeCjIaBzt2beow4ZQWQlaKrF4KnyewG9E8q2c46gZ6Sa5meFo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQftcIFATHhcDEiYyYCOdgFuPr6S6j3nNRfvAgyA3E3E63uy4KdqlP07w8OhSA"
         }
       ]
     },
     {
-      "query": "jared kushner",
+      "query": "paw patrol",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T14:40:00Z",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/26/world/putin-showed-restraint-by-not-using-nuclear-weapons-kushner-says",
-        "https://www.ms.now/the-briefing-with-jen-psaki/watch/warped-kushner-offers-weirdly-pro-russian-perspective-in-interview-2522089027509",
-        "https://thehill.com/policy/international/6244109-kushner-calls-putin-grandmaster/"
+        "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
+        "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLNOrfDaEO9LUDcMRgNiWCGbcJezLr42sgwCL1nCVUBMQIvUF103wK5pzZko",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY",
+      "image_credit": "Yahoo News UK",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/26/world/putin-showed-restraint-by-not-using-nuclear-weapons-kushner-says",
-          "title": "Putin showed ‘restraint’ by not using nuclear weapons, Kushner says",
-          "publisher": "CNN",
+          "url": "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
+          "title": "PAW Patrol Live! is on a roll up north as popular kids TV show hits UK venues",
+          "publisher": "Yahoo News UK",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLNOrfDaEO9LUDcMRgNiWCGbcJezLr42sgwCL1nCVUBMQIvUF103wK5pzZko"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY"
         },
         {
-          "url": "https://www.ms.now/the-briefing-with-jen-psaki/watch/warped-kushner-offers-weirdly-pro-russian-perspective-in-interview-2522089027509",
-          "title": "'WARPED': Kushner offers weirdly pro-Russian perspective in interview",
-          "publisher": "MS NOW",
+          "url": "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0",
+          "title": "PAW Patrol Live!Black Friday offer - save 20% on London tickets",
+          "publisher": "LondonWorld",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ7bhH4eajZC5E9TnV3E7RKRjf9nmt7WQlajjYUW5CDL_rzMmecjEkxnuYIYU"
-        },
-        {
-          "url": "https://thehill.com/policy/international/6244109-kushner-calls-putin-grandmaster/",
-          "title": "Kushner calls Putin ‘grandmaster of politics’",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNkBC_94wqNQXqzofmyatJbkQXl-sFkFZ9utquUMS96fpihmMO4KlYCguQdoQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuJU3KDZQl5-JFjgPgUUGNUuGJq4GnAAmmgqpgvWKLF0-9f7TBr67c0tJBfqw"
         }
       ]
     },
     {
-      "query": "switch 2 black friday",
+      "query": "rome odunze",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T14:40:00Z",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/nintendo-switch-black-friday-deals-2026-11-25",
-        "https://mashable.com/tech/nov-25-nintendo-switch-2-mario-kart-black-friday-deal",
-        "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/"
+        "https://www.si.com/nfl/bears/onsi/fantasy-start-sit-week-12-monangai-swift-burden-williams-loveland-odunze",
+        "https://www.sharpfootballanalysis.com/betting/nfl-player-props-picks-week-12-2026/",
+        "https://sports.yahoo.com/video/does-dandre-swift-hit-in-fantasy-in-revenge-game-against-the-lions-000459470.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U5VoclHfvCeqhtFDoRo-i_koGX_jZ0Cens2N1IzB87dnWrkHBcZlP8TJeNI",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPD_5uzShZWD7CoHrkVmFtk9o6DdRosQvep183D-Z-a_h-2xcIWqRbQs2uTVk",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/nintendo-switch-black-friday-deals-2026-11-25",
-          "title": "Here are my 17 favorite Nintendo Switch Black Friday deals based on hundreds of hours of playing",
-          "publisher": "CNN",
+          "url": "https://www.si.com/nfl/bears/onsi/fantasy-start-sit-week-12-monangai-swift-burden-williams-loveland-odunze",
+          "title": "Fantasy Start or Sit Week 12: Monangai, Swift, Burden, Williams, Loveland, Odunze",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U5VoclHfvCeqhtFDoRo-i_koGX_jZ0Cens2N1IzB87dnWrkHBcZlP8TJeNI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPD_5uzShZWD7CoHrkVmFtk9o6DdRosQvep183D-Z-a_h-2xcIWqRbQs2uTVk"
         },
         {
-          "url": "https://mashable.com/tech/nov-25-nintendo-switch-2-mario-kart-black-friday-deal",
-          "title": "Best Nintendo deal: Save $50.99 on the Nintendo Switch 2 and Mario Kart World bundle",
-          "publisher": "Mashable",
+          "url": "https://www.sharpfootballanalysis.com/betting/nfl-player-props-picks-week-12-2026/",
+          "title": "Week 12 NFL Player Props: Best Prop Bets & Predictions",
+          "publisher": "Sharp Football Analysis",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNP_AjLtJbEGjICLvWY6teKSw65y1rFWL7q7zPyX85FvAToGBLz2ZDP8kuao"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYkStAENLShLmsSMqm5h4nbObdD_6D0zKbLEDvhcE0_QZre1BqqPyCC-iDs1A"
         },
         {
-          "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
-          "title": "Adventure Awaits: Save on a daring selection of digital games",
-          "publisher": "Nintendo",
+          "url": "https://sports.yahoo.com/video/does-dandre-swift-hit-in-fantasy-in-revenge-game-against-the-lions-000459470.html",
+          "title": "Does D'Andre Swift hit in fantasy in revenge game against the Lions?",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSttzOeog3cW6cBchzbl3hSNl7CJxCO_HcTx1sXggNzJrahT_LJ3Dq1mD9BN7o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUOODRYgCg5fSVfa3Q6uslyu8aef2W3bVBrpNKNReNHOmdwC1nqz4t4xVoVvg"
         }
       ]
     },
     {
-      "query": "tornado warning",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-26T14:30:00Z",
+      "query": "ciudadano",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://www.13newsnow.com/article/weather/severe-weather/tornado-warning-issued-chesapeake-norfolk-portsmouth-virginia-beach/291-e40772dd-692a-427f-ac95-e5c1c80074e1",
-        "https://www.wavy.com/news/local-news/severe-weather-leaves-thousands-of-dominion-customers-without-power-in-hampton-roads/",
-        "https://www.13newsnow.com/article/weather/weather-impact/power-outages-ramp-up-as-noreaster-rolls-in/291-c71b9d9f-9745-41cb-8780-9ca857b5c53f"
+        "https://es-us.noticias.yahoo.com/ciudadano-ucraniano-22-a%C3%B1os-prende-115532141.html",
+        "https://mezha.net/es/news/mezha-75c6471682ee9892370d0612_hospitalizaron-en-varsovia-a-un-hombre/",
+        "https://www.democracynow.org/es/2026/11/25/titulares/lawsuits_allege_ice_brutalized_us_citizens_and_prisoners_at_for_profit_jail"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hLiNbFbeFcvm83aFG9eLX2J6UWZgxyQiOMOHLieoPD1ANGWj-ZQpwxb7mVg",
-      "image_credit": "13newsnow.com",
-      "news": [
-        {
-          "url": "https://www.13newsnow.com/article/weather/severe-weather/tornado-warning-issued-chesapeake-norfolk-portsmouth-virginia-beach/291-e40772dd-692a-427f-ac95-e5c1c80074e1",
-          "title": "Tornado warning issued for Chesapeake, Norfolk, Portsmouth, Virginia Beach",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hLiNbFbeFcvm83aFG9eLX2J6UWZgxyQiOMOHLieoPD1ANGWj-ZQpwxb7mVg"
-        },
-        {
-          "url": "https://www.wavy.com/news/local-news/severe-weather-leaves-thousands-of-dominion-customers-without-power-in-hampton-roads/",
-          "title": "Severe weather leaves thousands of Dominion customers without power in Hampton Roads",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNq__nOvlot-HBXVkJ_63hdOuCGTeA-2rIzbyO3jxW-Y-plMq0quRKMLnL9Y"
-        },
-        {
-          "url": "https://www.13newsnow.com/article/weather/weather-impact/power-outages-ramp-up-as-noreaster-rolls-in/291-c71b9d9f-9745-41cb-8780-9ca857b5c53f",
-          "title": "Power outages ramp up as nor'easter rolls in",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMwfgISkIuKwXiCnxctxhnXgrT-6sEifW-WjLbOEnRr8QEW3IKbfKfjG_KGkY"
-        }
-      ]
-    },
-    {
-      "query": "ciara",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T14:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/ciara-russell-wilson-kick-off-200203691.html",
-        "https://www.instagram.com/p/DgFfhxhlmUy/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-ciara-t-stop-cradling-121953423.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb6H04hdeDohy6CM63MKThrIRsN2V3N5IytOxiLSRgO10A3TbSwVonyP3qam8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR__JtZbLAyu8hn3wLUAE9e-_KUjZP76sy-0F0R5pkSTNRdlg81JVjBsRjgVCg",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/ciara-russell-wilson-kick-off-200203691.html",
-          "title": "Ciara and Russell Wilson Kick Off Christmas at Macy's",
+          "url": "https://es-us.noticias.yahoo.com/ciudadano-ucraniano-22-a%C3%B1os-prende-115532141.html",
+          "title": "Un ciudadano ucraniano de 22 años se prende fuego frente al Palacio Presidencial en Varsovia y está grave",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb6H04hdeDohy6CM63MKThrIRsN2V3N5IytOxiLSRgO10A3TbSwVonyP3qam8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR__JtZbLAyu8hn3wLUAE9e-_KUjZP76sy-0F0R5pkSTNRdlg81JVjBsRjgVCg"
         },
         {
-          "url": "https://www.instagram.com/p/DgFfhxhlmUy/",
-          "title": "#TSRPregnantAndGettinIt: #Ciara shares some cute bump moments for the gram. 😍 (SWIPE) ✍🏾: #TSRStaffJW",
-          "publisher": "Instagram",
+          "url": "https://mezha.net/es/news/mezha-75c6471682ee9892370d0612_hospitalizaron-en-varsovia-a-un-hombre/",
+          "title": "Hospitalizaron en Varsovia a un hombre que se prendió fuego frente al Palacio Presidencial",
+          "publisher": "Mezha.net",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJlUXIewI4zi0dj-RwWlcFj_P4mHknog2YpMMSiU8atWycbKruXme9DjOZ84"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-ciara-t-stop-cradling-121953423.html",
-          "title": "Pregnant Ciara Can’t Stop Cradling Baby Bump for ‘Little Joys in Life’",
-          "publisher": "Yahoo",
+          "url": "https://www.democracynow.org/es/2026/11/25/titulares/lawsuits_allege_ice_brutalized_us_citizens_and_prisoners_at_for_profit_jail",
+          "title": "Varias demandas alegan que el ICE maltrató a ciudadanos estadounidenses y a reclusos en un centro de detención con fines de lucro",
+          "publisher": "Democracy Now!",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4WFMjTiaDAJHkrlvOv4zwVQFWobYGAdacWZgISy41Y6xV-8jujInZz5_cpaI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10CcqYRHsdVBK3lTJ0u1P26K9XPdoBMnhwU999LKVHi-v95D-m1qtrrK6OoM"
         }
       ]
     },
     {
-      "query": "north carolina",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T14:30:00Z",
+      "query": "whos playing football tonight",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/live/2026/11/26/nyregion/thanksgiving-weather-storm",
-        "https://www.wral.com/news/local/thousands-lose-power-thanksgiving-day-november-2026/",
-        "https://www.cnn.com/2026/11/24/us/live-news/thanksgiving-travel"
+        "https://www.cbssports.com/betting/news/caesars-sportsbook-promo-code-cbssportsbr250-get-up-to-250-bonus-chiefs-bills-nfl-thanksgiving-day/",
+        "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-joe-burrow-jayden-daniels-meet-in-big-game-for-bengals-and-commanders-155713162.html",
+        "https://www.espn.com/video/clip/_/id/50583376"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpYqBgVr7o6XZoaDfRDkf52FYrmtW1hbvsa8ZWvo16_RW7WpvxNUKeYnnK0Ys",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcqEFfLCdN66axS2MsVSi5Oe2F1SlFGiYxRolgdoJ-yiTJlx6KTFB0TTSE1i4",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nytimes.com/live/2026/11/26/nyregion/thanksgiving-weather-storm",
-          "title": "Thanksgiving Storm Hits the East Coast Bringing Rain, Wind and Power Outages: Live Weather Updates",
-          "publisher": "The New York Times",
+          "url": "https://www.cbssports.com/betting/news/caesars-sportsbook-promo-code-cbssportsbr250-get-up-to-250-bonus-chiefs-bills-nfl-thanksgiving-day/",
+          "title": "Caesars Sportsbook promo code CBSSPORTSBR250: Get up to $250 bonus for Chiefs-Bills, NFL Thanksgiving Day",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQpYqBgVr7o6XZoaDfRDkf52FYrmtW1hbvsa8ZWvo16_RW7WpvxNUKeYnnK0Ys"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcqEFfLCdN66axS2MsVSi5Oe2F1SlFGiYxRolgdoJ-yiTJlx6KTFB0TTSE1i4"
         },
         {
-          "url": "https://www.wral.com/news/local/thousands-lose-power-thanksgiving-day-november-2026/",
-          "title": "Trees down, thousands still without power Thanksgiving morning across the Triangle",
-          "publisher": "WRAL",
+          "url": "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-joe-burrow-jayden-daniels-meet-in-big-game-for-bengals-and-commanders-155713162.html",
+          "title": "NFL Monday Night Football preview: Joe Burrow, Jayden Daniels meet in big game for Bengals and Commanders",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj4_GWodcjsaVrG4GmfA_ToOr9Vb1S1Pkm4_4xACsE3xq2yA-lJAM1CRNASnM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXEfFh4uNbDBNwV4TWSF4NAbrMh5ZKBlKOsUcI3nTaAO-5KynwN_5j-CrXlhk"
         },
         {
-          "url": "https://www.cnn.com/2026/11/24/us/live-news/thanksgiving-travel",
-          "title": "Holiday travel delays and power outages mount as massive storm slams eastern US",
-          "publisher": "CNN",
+          "url": "https://www.espn.com/video/clip/_/id/50583376",
+          "title": "Why Stephen A. isn't counting out the Bengals after loss to Commanders",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRv0RN4rngXigW050R54_PpwhcFwwLnAw1GnrVQxaHP34vPCCl8BtX-3klwTfc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQYCAwfWN_A0PVmpsH0S7_4KGI9mVAkHQU44k2UyTCAwfZzsqjkJeTkXem4XE"
+        }
+      ]
+    },
+    {
+      "query": "charlie brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T15:20:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/tv/article/where-to-stream-a-charlie-brown-thanksgiving-today-for-free-how-to-watch-all-the-peanuts-holiday-specials-in-2026-131541123.html",
+        "https://www.mensjournal.com/news/a-charlie-brown-thanksgiving-fans-face-a-streaming-catch-this-year",
+        "https://www.walb.com/2026/11/24/how-watch-charlie-brown-christmas-free/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBwFnRjlVKEZpubJs2vj3tlbQV7lOtByhBofryITPZchYF2-VMJB1-64vfL4",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/article/where-to-stream-a-charlie-brown-thanksgiving-today-for-free-how-to-watch-all-the-peanuts-holiday-specials-in-2026-131541123.html",
+          "title": "Where to stream 'A Charlie Brown Thanksgiving' today for free: How to watch all the Peanuts holiday specials in 2026",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBwFnRjlVKEZpubJs2vj3tlbQV7lOtByhBofryITPZchYF2-VMJB1-64vfL4"
+        },
+        {
+          "url": "https://www.mensjournal.com/news/a-charlie-brown-thanksgiving-fans-face-a-streaming-catch-this-year",
+          "title": "‘A Charlie Brown Thanksgiving’ Fans Face a Streaming Catch This Year",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9g-Lw4TM5EHrNb0cpIGQvJQ_0y1_a2i2pQF4YD_kRImbsKUL1r0WDtJxXqME"
+        },
+        {
+          "url": "https://www.walb.com/2026/11/24/how-watch-charlie-brown-christmas-free/",
+          "title": "How to watch ‘A Charlie Brown Christmas’ for free",
+          "publisher": "WALB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktDnnnjE4cJIr3ETTNcWkEQjz1-HjbbbgXEVvBKOJzwpvvEtSS-9XjWIxKAk"
+        }
+      ]
+    },
+    {
+      "query": "ras tanura refinery",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T15:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
+        "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
+        "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiJG-R46KJglQfqPqMIQlSgo3gXUM_GsZ1jdL-Hmbm3Jfr254XjKWI4TA7QXQ",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
+          "title": "Yemen's Houthis claim attack on Saudi Arabia's largest refinery",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiJG-R46KJglQfqPqMIQlSgo3gXUM_GsZ1jdL-Hmbm3Jfr254XjKWI4TA7QXQ"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
+          "title": "Saudi civil defence says 11 injured in Houthi drone attack on Riyadh tower",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbF1b2qs8JMUI05VDGV1a-wl1S5NNR-CUtvX9qR8J1tPL6DsUH1SpuvVWrgFE"
+        },
+        {
+          "url": "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c",
+          "title": "Yemen’s Houthis Take Second Swipe at Tallest Tower in Saudi Capital",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRibXreTJ7JQTiHHLScYVGK1V1oQJY7qtfL72NQaUaiWlCFfShfYOGk20_58K8"
+        }
+      ]
+    },
+    {
+      "query": "gordon ramsay",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T15:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/cjr4gw100d52o",
+        "https://deadline.com/2026/11/richard-hammond-approached-bbc-top-gear-return-1237233965/",
+        "https://www.reuters.com/business/media-telecom/top-gear-return-2028-with-celebrity-chef-gordon-ramsay-lead-host-2026-11-25/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSeKCf0gELprs2hdQArAsbFW4GLikJ9y59ca1hBGNdR7FHAlDWaguRyZTCr3E",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/cjr4gw100d52o",
+          "title": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSeKCf0gELprs2hdQArAsbFW4GLikJ9y59ca1hBGNdR7FHAlDWaguRyZTCr3E"
+        },
+        {
+          "url": "https://deadline.com/2026/11/richard-hammond-approached-bbc-top-gear-return-1237233965/",
+          "title": "Richard Hammond Says He Was Approached By BBC About ‘Top Gear’ Return",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ43K1CMmkeN7gFPa46wbxfJLhv_84P_eT2Ea_UAK6KBZ9-pyGQfte1g2gqTY"
+        },
+        {
+          "url": "https://www.reuters.com/business/media-telecom/top-gear-return-2028-with-celebrity-chef-gordon-ramsay-lead-host-2026-11-25/",
+          "title": "Top Gear to return in 2028 with celebrity chef Gordon Ramsay as lead host",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuwQldqunoBCM1yZvXSuhpbtCElv294TDEK94H0TO6JX_Se2VkjfDlt8fgMN4"
         }
       ]
     }
