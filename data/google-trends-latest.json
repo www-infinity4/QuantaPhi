@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T11:31:10.989077Z",
+  "checked_at": "2026-11-26T12:01:26.940846Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "manuel neuer",
+      "query": "northampton catasauqua thanksgiving game postponed",
       "approx_searches": "100+",
-      "published_at": "2026-11-26T11:10:00Z",
+      "published_at": "2026-11-26T11:40:00Z",
       "related_news_urls": [
-        "https://www.bild.de/sport/fussball/fc-bayern-nach-brasilien-trip-mit-junger-frau-neuer-zurueck-bei-bayern-6b06a6d4c75e09cb88d15081",
-        "https://www.spiegel.de/partnerschaft/manuel-neuer-soll-partnerin-verlassen-haben-paarberaterin-ruth-marquardt-ueber-ihr-virales-video-a-e9912a58-40f2-4b6e-99ad-6860f367b92f",
-        "https://www.oe24.at/a/familie-zerstoert-anika-neuer-meldet-sich-auf-instagram-900136544"
+        "https://www.wfmz.com/news/area/lehighvalley/northampton-county/nazareth-northampton-area/two-annual-thanksgiving-day-games-postponed-due-to-incoming-severe-weather/article_d827b72c-b822-4e6f-9eb5-a62ad8d76ba9.html",
+        "https://www.mcall.com/2026/11/25/northampton-catasauqua-thanksgiving-football-game-postponed/",
+        "https://cumberlink.com/news/state-regional/pennsylvania/article_e2108bc7-f2ed-5e60-9064-a54ec52878b9.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxH8b2fIyIH9isRQCz0lEkzRmfs_X8LVQObOEiUF9PcYRL26D5vYvXLdVgEw",
-      "image_credit": "BILD",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGrgXKDHzuV7LWbH4xlUjB2sCg7m5Z9VybFq_qwlhVPQgtsnZLTUrzevFRLls",
+      "image_credit": "WFMZ.com",
       "news": [
         {
-          "url": "https://www.bild.de/sport/fussball/fc-bayern-nach-brasilien-trip-mit-junger-frau-neuer-zurueck-bei-bayern-6b06a6d4c75e09cb88d15081",
-          "title": "FC Bayern: Nach Brasilien-Trip mit junger Frau – Neuer zurück bei Bayern",
-          "publisher": "BILD",
+          "url": "https://www.wfmz.com/news/area/lehighvalley/northampton-county/nazareth-northampton-area/two-annual-thanksgiving-day-games-postponed-due-to-incoming-severe-weather/article_d827b72c-b822-4e6f-9eb5-a62ad8d76ba9.html",
+          "title": "Two annual Thanksgiving Day games postponed due to incoming severe weather",
+          "publisher": "WFMZ.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGxH8b2fIyIH9isRQCz0lEkzRmfs_X8LVQObOEiUF9PcYRL26D5vYvXLdVgEw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGrgXKDHzuV7LWbH4xlUjB2sCg7m5Z9VybFq_qwlhVPQgtsnZLTUrzevFRLls"
         },
         {
-          "url": "https://www.spiegel.de/partnerschaft/manuel-neuer-soll-partnerin-verlassen-haben-paarberaterin-ruth-marquardt-ueber-ihr-virales-video-a-e9912a58-40f2-4b6e-99ad-6860f367b92f",
-          "title": "Manuel Neuer soll Partnerin verlassen haben: Paarberaterin Ruth Marquardt über ihr virales Video",
-          "publisher": "Spiegel",
+          "url": "https://www.mcall.com/2026/11/25/northampton-catasauqua-thanksgiving-football-game-postponed/",
+          "title": "Thanksgiving Day football game between Northampton, Catasauqua postponed due to storm",
+          "publisher": "The Morning Call",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbBxiSEJO2RHI-SO-cUeq_fXnP_b_4bMO1g1o1YmOuwDqKJ5vYx37sHukNzmE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqdoZOuJcHpU-tQPKvrFfEOZXrv17nIaJ2-En7EYfDNsOSLiy-DhpmaobHJ2A"
         },
         {
-          "url": "https://www.oe24.at/a/familie-zerstoert-anika-neuer-meldet-sich-auf-instagram-900136544",
-          "title": "Familie zerstört: Anika Neuer meldet sich auf Instagram",
-          "publisher": "oe24",
+          "url": "https://cumberlink.com/news/state-regional/pennsylvania/article_e2108bc7-f2ed-5e60-9064-a54ec52878b9.html",
+          "title": "Pennridge-Quakertown game postponed; Bristol-Morrisville cancelled",
+          "publisher": "Carlisle Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVmy8reyXqFl7Dna798uzN9HxyZpJbv_BBu9YVJThFCLOwnOYi63-xnBXwlFY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmKzlKDZBi9uY2dE8gv4UkLQ_W0u39AQRU6vjKeOxkQdg1pHxzXzszE3LdFnc"
         }
       ]
     },
     {
-      "query": "lowes black friday 2026",
-      "approx_searches": "50000+",
-      "published_at": "2026-11-26T11:00:00Z",
+      "query": "derrick white celtics trade rumors",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T11:30:00Z",
       "related_news_urls": [
-        "https://mashable.com/life/black-friday-2026-store-freebies",
-        "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
-        "https://www.nytimes.com/wirecutter/money/target-black-friday-deals-2026/"
+        "https://nesn.com/boston-celtics/news/celtics-trade-idea-moves-mitchell-robinson-already-112m-wing/c309d8f923447c3473a6d419",
+        "https://clutchpoints.com/nba/boston-celtics/nba-rumors-bill-simmons-celtics-trading-derrick-white-he-really-trey-murphy-iii-scenario",
+        "https://bvmsports.com/2026/11/18/do-celtics-need-to-make-a-trade-to-balance-roster-celtics-daily/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb75cT1GB0ApRPL9T7Jz5EPsIu-oTYdOpEao8_2h8gldSd-P2EyXgSMwI7vak",
-      "image_credit": "Mashable",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7VJkhDf1MnDvRjKw4a511vnZykZO1HUVqeVfufDzX4D_QUeNNnI3q1VCnp2k",
+      "image_credit": "NESN",
       "news": [
         {
-          "url": "https://mashable.com/life/black-friday-2026-store-freebies",
-          "title": "Black Friday 2026 deals: The best store freebies from Kohl’s, Target, Lowe’s, and more",
-          "publisher": "Mashable",
+          "url": "https://nesn.com/boston-celtics/news/celtics-trade-idea-moves-mitchell-robinson-already-112m-wing/c309d8f923447c3473a6d419",
+          "title": "Celtics Trade Idea Moves Mitchell Robinson Already for $112M Wing",
+          "publisher": "NESN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTb75cT1GB0ApRPL9T7Jz5EPsIu-oTYdOpEao8_2h8gldSd-P2EyXgSMwI7vak"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7VJkhDf1MnDvRjKw4a511vnZykZO1HUVqeVfufDzX4D_QUeNNnI3q1VCnp2k"
         },
         {
-          "url": "https://www.nbcnews.com/select/shopping/target-black-friday-deals-2026-rcna611155",
-          "title": "I cover Target sales all year long — these Black Friday deals are actually impressive",
-          "publisher": "NBC News",
+          "url": "https://clutchpoints.com/nba/boston-celtics/nba-rumors-bill-simmons-celtics-trading-derrick-white-he-really-trey-murphy-iii-scenario",
+          "title": "NBA rumors: Bill Simmons ponders Celtics trading Derrick White, but he really wants this Trey Murphy III scenario",
+          "publisher": "ClutchPoints",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA-9Tch7oAqnw8H2dAScN-GfszgWlczNv4Lbd8G-PVowEgHpEE59exoQOeRbs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQghbxfAqUyOKS0XUCBHiWanVHpp3QR-NNaEa8IF0iROjZ7IWkNCR47vvZEcTk"
         },
         {
-          "url": "https://www.nytimes.com/wirecutter/money/target-black-friday-deals-2026/",
-          "title": "All the Best Black Friday Discounts at Target This Week",
+          "url": "https://bvmsports.com/2026/11/18/do-celtics-need-to-make-a-trade-to-balance-roster-celtics-daily/",
+          "title": "Do Celtics Need to MAKE A TRADE to Balance Roster? | Celtics Daily",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO-DDten21gNcLs-ROpFvSTLmpwxNXyNkKyY9ji_Pl9x0nZs2cgv3AAooLMvA"
+        }
+      ]
+    },
+    {
+      "query": "météo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T11:30:00Z",
+      "related_news_urls": [
+        "https://tgplus.fr/article/chamrousse-et-les-7-laux-anticipent-leur-ouverture/",
+        "https://www.meteoconsult.fr/actualites-meteo/2026-11-26/94619-point-meteo-montagne-quelle-meteo-ce-week-end-pour-les-ouvertures-de-val-d-isere-les-2-alpes-et-montgenevre",
+        "https://www.chamonix.net/francais/actualite/station-ski-la-flegere-ouvre-28-novembre-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTavH7CiMYjIHzIcZzRy6sp8TnXnJN3dFU2THd2n5Hf7MI9LJmqLwFzTuhp-8g",
+      "image_credit": "TG+",
+      "news": [
+        {
+          "url": "https://tgplus.fr/article/chamrousse-et-les-7-laux-anticipent-leur-ouverture/",
+          "title": "Chamrousse et Les 7 Laux anticipent leur ouverture",
+          "publisher": "TG+",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTavH7CiMYjIHzIcZzRy6sp8TnXnJN3dFU2THd2n5Hf7MI9LJmqLwFzTuhp-8g"
+        },
+        {
+          "url": "https://www.meteoconsult.fr/actualites-meteo/2026-11-26/94619-point-meteo-montagne-quelle-meteo-ce-week-end-pour-les-ouvertures-de-val-d-isere-les-2-alpes-et-montgenevre",
+          "title": "Point météo montagne : quelle météo ce week-end pour les ouvertures de Val d'Isère, Les 2 Alpes et Montgenèvre ?",
+          "publisher": "METEO CONSULT",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRvBSb-X9eD7t_iUAKBKWEELEAnxTEMIhsCXHrZIsLblvle4QOB1AEgAw6-j4"
+        },
+        {
+          "url": "https://www.chamonix.net/francais/actualite/station-ski-la-flegere-ouvre-28-novembre-2026",
+          "title": "La station de ski de La Flégère ouvre le 28 novembre 2026!",
+          "publisher": "Chamonix.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAsV0GD-OnszNYQIXh4D8SjZenPCge-o3o8E4M06m35ydpmJZVh8RDqJLBqSY"
+        }
+      ]
+    },
+    {
+      "query": "fiona hippo cincinnati zoo",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:30:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/style/2026/11/25/what-hippos-death-reveals-about-volatility-grieving-online/",
+        "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo",
+        "https://www.nytimes.com/2026/11/20/us/fiona-hippo-internet-justice.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDCfJyeKPXQjBCUpVsApIaYxn0WbmirhWvec0kzIR1Gbg5Pqcxkj6A0r0JkLM",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/style/2026/11/25/what-hippos-death-reveals-about-volatility-grieving-online/",
+          "title": "After death of Fiona the hippo, online grieving quickly turned to blame",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDCfJyeKPXQjBCUpVsApIaYxn0WbmirhWvec0kzIR1Gbg5Pqcxkj6A0r0JkLM"
+        },
+        {
+          "url": "https://www.wcpo.com/news/local-news/hamilton-county/cincinnati/eyewitness-recounts-what-happened-when-hat-landed-in-fionas-hippo-habitat-at-cincinnati-zoo",
+          "title": "Witness recounts what happened when hat landed in Fiona's Cincinnati Zoo habitat",
+          "publisher": "WCPO 9 Cincinnati",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOkb07uQLuRAzJUGF8fV9YYLMG67ATCrdNb8okgxkFwTU0eREFYYOSU6OP3rE"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/20/us/fiona-hippo-internet-justice.html",
+          "title": "Fiona the Hippo Died After Eating a Hat. Some Want Justice.",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaJCLuEZrd2tasVSVnXPr7U8RrnOBGPAoP14ItzaUV5ZeP4-MGs_ZaM6rIhws"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMD2qTrA3CBVgIZ5Ade8_CtIzpe4MGINLviRxf-esAJr-8_vBJA8IvepN-Dk"
         }
       ]
     },
     {
-      "query": "radar",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T11:00:00Z",
-      "related_news_urls": [
-        "https://www.miamiherald.com/news/weather-news/article318230502.html",
-        "https://www.fox35orlando.com/video/fmc-oxxwj3s94lxtrbuw",
-        "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-miami-fort-lauderdale-miami-dade-broward-november-26-2026/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4kWjen3k0GHcy3dJzImX2lsXFtxMeQkhfZCSOWxsIj0QqHUUfyc73fhsI2s4",
-      "image_credit": "Miami Herald",
-      "news": [
-        {
-          "url": "https://www.miamiherald.com/news/weather-news/article318230502.html",
-          "title": "More rain is coming: South Florida flood watch issued ahead of Thanksgiving Day",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4kWjen3k0GHcy3dJzImX2lsXFtxMeQkhfZCSOWxsIj0QqHUUfyc73fhsI2s4"
-        },
-        {
-          "url": "https://www.fox35orlando.com/video/fmc-oxxwj3s94lxtrbuw",
-          "title": "Orlando Weather Forecast: Big rain, winds, storms to Florida",
-          "publisher": "FOX 35 Orlando",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRs6KCJz8wBKJxpprtq7z7S7IXJ3t8WdtPaWq1wx1fLfnanKuz89g1rsfXFvw8"
-        },
-        {
-          "url": "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-miami-fort-lauderdale-miami-dade-broward-november-26-2026/",
-          "title": "South Florida sees another round of significant flooding after heavy rain, storms pound region",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDC4PntFdG9-icU5Y34TSGPIu5mRKgG-cHhuOafaSH-DWbBHm4rK1hDM2eMZg"
-        }
-      ]
-    },
-    {
-      "query": "عيد الشكر",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T10:50:00Z",
-      "related_news_urls": [
-        "https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261126-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%AA%D8%A4%D8%AC%D9%84-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D9%83%D8%B1-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%85%D9%86%D8%B0-%D9%82%D8%B1%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A7%D8%B5%D9%81%D8%A9-%D9%82%D9%88%D9%8A%D8%A9",
-        "https://www.aljazeera.net/news/2026/11/25/%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%AA%D9%88%D9%82%D9%81-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D9%88%D9%89",
-        "https://arabic.cnn.com/travel/article/2026/11/26/thanksgiving-holiday-travel-busy-digvid-vrtc"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvRm3xPqVEK1b7Lx0p9Bg5GwNgEI2hFxnDhdCmIMSNUkXsWEdPxRaav9_rkHg",
-      "image_credit": "France 24",
-      "news": [
-        {
-          "url": "https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261126-%D9%86%D9%8A%D9%88%D9%8A%D9%88%D8%B1%D9%83-%D8%AA%D8%A4%D8%AC%D9%84-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D9%83%D8%B1-%D9%84%D8%A3%D9%88%D9%84-%D9%85%D8%B1%D8%A9-%D9%85%D9%86%D8%B0-%D9%82%D8%B1%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%B9%D8%A7%D8%B5%D9%81%D8%A9-%D9%82%D9%88%D9%8A%D8%A9",
-          "title": "نيويورك تؤجل مسيرة عيد الشكر لأول مرة منذ قرن بسبب عاصفة قوية",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvRm3xPqVEK1b7Lx0p9Bg5GwNgEI2hFxnDhdCmIMSNUkXsWEdPxRaav9_rkHg"
-        },
-        {
-          "url": "https://www.aljazeera.net/news/2026/11/25/%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D8%AA%D9%88%D9%82%D9%81-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D8%B3%D8%AA%D9%88%D9%89",
-          "title": "سي إن إن: تحقيق يكشف سبب شلل الطيران على مستوى الولايات المتحدة",
-          "publisher": "الجزيرة نت",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh8wTz0b4wATb5klULDFT0opI2d_vvC3yb7yUyn_XWFtFwANNCVRQdOvWJF4I"
-        },
-        {
-          "url": "https://arabic.cnn.com/travel/article/2026/11/26/thanksgiving-holiday-travel-busy-digvid-vrtc",
-          "title": "أمريكا.. ازدحامات خانقة وأحوال جوية قاسية تربك حركة السفر خلال عيد الشكر",
-          "publisher": "CNN Arabic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7J9bORDWsZIwk-oUQqE85VLnxWEJaW5Ej8t8-jyAEhHNwV-gFJXAr5yulc4k"
-        }
-      ]
-    },
-    {
-      "query": "home depot black friday ad",
+      "query": "天气",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T10:50:00Z",
+      "published_at": "2026-11-26T11:30:00Z",
       "related_news_urls": [
-        "https://www.nbcnews.com/select/shopping/home-depot-black-friday-sale-2026-rcna611349",
-        "https://www.bobvila.com/reviews/best-home-depot-black-friday-deals-2026/",
-        "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-deals-from-the-home-depot-include-mattresses-throw-blankets-decor-and-more-155118998.html"
+        "https://newswav.com/article/%E4%B9%8C%E9%9B%AA%E5%8F%8A%E5%A4%9A%E5%B7%9E%E4%B8%8B%E5%8D%88%E8%BF%8E%E9%9B%B7%E9%9B%A8%E5%A4%A9%E6%B0%94%E8%87%B35pm-A2611_0RiMz5",
+        "https://www.orientaldaily.com.my/news/nation/2026/11/24/865514",
+        "https://news.seehua.com/post/1612442/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLhCo9J34bBQ_GrgfIlHUiquSgpF4xgBLc65E7GOWawSiAZgnOPkBLjaIA1jg",
-      "image_credit": "NBC News",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuDVBLhPESTSNrNBwaJtfOsqnSKIN8LeZWWEl-PE27THV7PLM9KM3zVyXl4qo",
+      "image_credit": "Newswav",
       "news": [
         {
-          "url": "https://www.nbcnews.com/select/shopping/home-depot-black-friday-sale-2026-rcna611349",
-          "title": "The 21+ best Home Depot Black Friday deals on holiday decor, tools and more",
-          "publisher": "NBC News",
+          "url": "https://newswav.com/article/%E4%B9%8C%E9%9B%AA%E5%8F%8A%E5%A4%9A%E5%B7%9E%E4%B8%8B%E5%8D%88%E8%BF%8E%E9%9B%B7%E9%9B%A8%E5%A4%A9%E6%B0%94%E8%87%B35pm-A2611_0RiMz5",
+          "title": "乌雪及多州下午迎雷雨天气至5pm",
+          "publisher": "Newswav",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLhCo9J34bBQ_GrgfIlHUiquSgpF4xgBLc65E7GOWawSiAZgnOPkBLjaIA1jg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuDVBLhPESTSNrNBwaJtfOsqnSKIN8LeZWWEl-PE27THV7PLM9KM3zVyXl4qo"
         },
         {
-          "url": "https://www.bobvila.com/reviews/best-home-depot-black-friday-deals-2026/",
-          "title": "Home Depot’s Best Black Friday Deals Include Free Tools and Savings on Ryobi, Milwaukee, and More",
-          "publisher": "BobVila.com",
+          "url": "https://www.orientaldaily.com.my/news/nation/2026/11/24/865514",
+          "title": "气象局对吉兰丹及登嘉楼 发出持续降雨警报料至周五",
+          "publisher": "马来西亚东方日报",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGSQX8yWzfqK_wl_U_RDM1hfJ8i9YDvV1Y8RUgwrBcT9CFFoOCDSTIsz3fPBE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmavgrA-sWSua5jEHAngsgGmS9Br_c8wISfFmqwNlEKIdarlYWCOWnHhDOrUo"
         },
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/black-friday-deals-from-the-home-depot-include-mattresses-throw-blankets-decor-and-more-155118998.html",
-          "title": "Black Friday deals from The Home Depot include mattresses, throw blankets, decor and more",
+          "url": "https://news.seehua.com/post/1612442/",
+          "title": "气象局发雷暴警报 全国7州3直辖区料迎豪雨强风",
+          "publisher": "诗华日报",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaV5r9GFHHP7w0C7VDCCTY0WtZr_AnIgviay3r-b01Q41hi9VMDXAWvpIQb9g"
+        }
+      ]
+    },
+    {
+      "query": "trust",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:30:00Z",
+      "related_news_urls": [
+        "https://www.politico.com/news/2026/11/24/greens-hand-australian-government-win-with-deals-on-trusts-health-rebates-01182881",
+        "https://www.afr.com/rear-window/the-billionaires-in-line-to-pay-new-private-jet-tax-20261126-p61hgt",
+        "https://www.theguardian.com/australia-news/2026/nov/25/labor-greens-deal-discretionary-trust-changes-jet-fuel-subsidies-scrapped-for-private-jet-owners"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8av0lX0lD7DjAhvO8ZCebHAC7-MXYkVuzrYgLuLspKrbF6B77Fy3umf_aLrY",
+      "image_credit": "Politico",
+      "news": [
+        {
+          "url": "https://www.politico.com/news/2026/11/24/greens-hand-australian-government-win-with-deals-on-trusts-health-rebates-01182881",
+          "title": "Greens hand Australian government wins on trusts tax, health rebates",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8av0lX0lD7DjAhvO8ZCebHAC7-MXYkVuzrYgLuLspKrbF6B77Fy3umf_aLrY"
+        },
+        {
+          "url": "https://www.afr.com/rear-window/the-billionaires-in-line-to-pay-new-private-jet-tax-20261126-p61hgt",
+          "title": "Gina Rinehart, Frank Lowy, Anthony Pratt and the other billionaires in line to pay the new private jet tax",
+          "publisher": "AFR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRke-HnLOl54qaOH-DI3BjypfYZCsGlPRaSVG7HM67JGGfayWTSr6mJ5W_ZmPA"
+        },
+        {
+          "url": "https://www.theguardian.com/australia-news/2026/nov/25/labor-greens-deal-discretionary-trust-changes-jet-fuel-subsidies-scrapped-for-private-jet-owners",
+          "title": "Labor wins Greens support for trust changes in exchange for scrapping jet fuel subsidies for the wealthy",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmzzC1E4Tr7ZWjMi2PyZgCxfIV8h84yMCTS4tgbHxxU45kPnBiAl7Neh7ZCZw"
+        }
+      ]
+    },
+    {
+      "query": "westworld",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:30:00Z",
+      "related_news_urls": [
+        "https://screenrant.com/person-of-interest-better-westworld-jonathan-nolan-shows/",
+        "https://collider.com/most-important-sci-fi-thriller-series-2026-person-of-interest/",
+        "https://screenrant.com/jonathan-nolan-person-of-interest-westworld-ending-problem/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WmFWyZGKH5OCwwuCNEGVHMozRHlxxA2DAJXFjq9uWiFWVeGTrf7FrwHt40Q",
+      "image_credit": "ScreenRant",
+      "news": [
+        {
+          "url": "https://screenrant.com/person-of-interest-better-westworld-jonathan-nolan-shows/",
+          "title": "Jonathan Nolan's 103-Episode Sci-Fi Series Is Westworld But Better",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9WmFWyZGKH5OCwwuCNEGVHMozRHlxxA2DAJXFjq9uWiFWVeGTrf7FrwHt40Q"
+        },
+        {
+          "url": "https://collider.com/most-important-sci-fi-thriller-series-2026-person-of-interest/",
+          "title": "J.J. Abrams’ 5-Season Sci-Fi Thriller Is Even More Important in 2026",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWLuIWEbgVc7OOjmh8HiPYruzURybjz3Pu7Kw0WiX6zNccKBl6tHXOmMk0IGs"
+        },
+        {
+          "url": "https://screenrant.com/jonathan-nolan-person-of-interest-westworld-ending-problem/",
+          "title": "Jonathan Nolan's Longest-Running Sci-Fi Shows Both Share The Same Weakness",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWLrz_DApWhkVGIEfQnaAfsso4LtdYOUFy6Bno-eP0xiZzmT748cxenXtv2lg"
+        }
+      ]
+    },
+    {
+      "query": "report power outage",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T11:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/articles/over-600-without-power-two-040947001.html",
+        "https://www.waff.com/2026/11/26/joe-wheeler-emc-reports-two-large-power-outages/",
+        "https://www.wavy.com/news/local-news/severe-weather-leaves-thousands-of-dominion-customers-without-power-in-hampton-roads/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdUGdYNzavEvkgQncUtzQHLbnTBo6IWbxzmDPnzRtRQLUR-nA5gK5tT-Nf8h0",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/articles/over-600-without-power-two-040947001.html",
+          "title": "Over 600 without power in two Joe Wheeler outages",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBu_Jc_7h8z0yu6cZtdmLd8F_hPvX7PhepE2RzOKMrMACJEdrPY65pWB3HLio"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTdUGdYNzavEvkgQncUtzQHLbnTBo6IWbxzmDPnzRtRQLUR-nA5gK5tT-Nf8h0"
+        },
+        {
+          "url": "https://www.waff.com/2026/11/26/joe-wheeler-emc-reports-two-large-power-outages/",
+          "title": "Joe Wheeler EMC reports two large power outages",
+          "publisher": "WAFF",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStB7OTd_Wf5z3M8lELN-5GBwLdQcwZN5ftjZRnR_GIKANiwpFdUl2LMTNJUGc"
+        },
+        {
+          "url": "https://www.wavy.com/news/local-news/severe-weather-leaves-thousands-of-dominion-customers-without-power-in-hampton-roads/",
+          "title": "Severe weather leaves thousands of Dominion customers without power in Hampton Roads",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBNq__nOvlot-HBXVkJ_63hdOuCGTeA-2rIzbyO3jxW-Y-plMq0quRKMLnL9Y"
         }
       ]
     },
     {
-      "query": "sophie cunningham maxim photos",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T10:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/wnba/articles/sophie-cunningham-could-one-christian-132102797.html",
-        "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
-        "https://swimsuit.si.com/swimnews/sophie-cunningham-maxim-cover-si-swimsuit-throwback"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmSgGDqot9rmbauCyWXihCJ0WEvM4fTq80Q4U3RCGIR2mx1p2sPc4r_dugMLs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/wnba/articles/sophie-cunningham-could-one-christian-132102797.html",
-          "title": "\"Sophie Cunningham could have been one\" – Christian figures drop Fever star as role model after provocative Maxim shoot",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmSgGDqot9rmbauCyWXihCJ0WEvM4fTq80Q4U3RCGIR2mx1p2sPc4r_dugMLs"
-        },
-        {
-          "url": "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
-          "title": "Sophie Cunningham draws pushback from Christian scholars for posing topless in Maxim",
-          "publisher": "Christian Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTscBTap0geKoIVKpPrr1KH19_GfA8ndRo-CtPDsgznb2bO9c37uoKT4V68P1w"
-        },
-        {
-          "url": "https://swimsuit.si.com/swimnews/sophie-cunningham-maxim-cover-si-swimsuit-throwback",
-          "title": "Sophie Cunningham’s New ‘Maxim’ Cover Is Bringing Us Back to Her SI Swimsuit Debut",
-          "publisher": "Sports Illustrated Swimsuit",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeAyKaL1FanzipPse6JsReoJ_c0oKcBFHMFVMsWexoOa6Fi98db1b3pB-3JU"
-        }
-      ]
-    },
-    {
-      "query": "trump-xi summit",
+      "query": "winter weather advisory",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T10:10:00Z",
+      "published_at": "2026-11-26T11:20:00Z",
       "related_news_urls": [
-        "https://www.economist.com/the-world-this-week/2026/11/19/cartoon-the-meeting-of-donald-trump-xi-jinping-and-vladimir-putin",
-        "https://www.theatlantic.com/ideas/2026/11/trump-xi-putin-summit/689503/",
-        "https://apnews.com/article/trump-xi-putin-china-apec-25e17ec8d9c55fbff960d5631eaba71d"
+        "https://www.mychamplainvalley.com/news/minor-to-moderate-travel-impacts-by-thursday-night/",
+        "https://www.durhamradionews.com/archives/220435",
+        "https://www.informnny.com/weather/winter-weather-advisory-issued-for-part-of-st-lawrence-county/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFvTDx0s6OUsAPoDE7GpZjU9db4coo--v2WJWcd8BfXHyOX4pKvUFOqCLUMlQ",
-      "image_credit": "The Economist",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCAd11VJOvvcstLrej-dYjEkUVtCe6sRnWgjRI2Rm6cH2k1oTWdOUN1OV-r7c",
+      "image_credit": "MyChamplainValley.com",
       "news": [
         {
-          "url": "https://www.economist.com/the-world-this-week/2026/11/19/cartoon-the-meeting-of-donald-trump-xi-jinping-and-vladimir-putin",
-          "title": "Cartoon: The meeting of Donald Trump, Xi Jinping and Vladimir Putin",
-          "publisher": "The Economist",
+          "url": "https://www.mychamplainvalley.com/news/minor-to-moderate-travel-impacts-by-thursday-night/",
+          "title": "Minor to moderate travel impacts by Thursday night",
+          "publisher": "MyChamplainValley.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFvTDx0s6OUsAPoDE7GpZjU9db4coo--v2WJWcd8BfXHyOX4pKvUFOqCLUMlQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCAd11VJOvvcstLrej-dYjEkUVtCe6sRnWgjRI2Rm6cH2k1oTWdOUN1OV-r7c"
         },
         {
-          "url": "https://www.theatlantic.com/ideas/2026/11/trump-xi-putin-summit/689503/",
-          "title": "Trump’s Embarrassing, Inconsequential Summit",
-          "publisher": "The Atlantic",
+          "url": "https://www.durhamradionews.com/archives/220435",
+          "title": "Special weather statement in effect for Durham Region",
+          "publisher": "Durham Radio News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZTpN2a9y55zuiHATET1tcpIkl58Lk6asTZv7i-HEVZppbDTdEBhLDyDL0LLk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKdFfbHREIaAtC9w6USWrSuwetD0U9a3pWn_Y3RhLV9H_0cpiPcKDseez_s0U"
         },
         {
-          "url": "https://apnews.com/article/trump-xi-putin-china-apec-25e17ec8d9c55fbff960d5631eaba71d",
-          "title": "Takeaways from the historic summit among Trump, Xi and Putin",
-          "publisher": "AP News",
+          "url": "https://www.informnny.com/weather/winter-weather-advisory-issued-for-part-of-st-lawrence-county/",
+          "title": "Winter Weather Advisory issued for part of St. Lawrence County",
+          "publisher": "InformNNY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdCzk8W77uo4d5cJRG4ADxI-_IFQPQq6kmNB60f_35YD4P2-XEWeudTJXGiE4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2kx45QVZQ3sD7X3YyWIQpGUBEdm513QVUrwYMZhKNI34l4y_5Zniz5zI6SUg"
         }
       ]
     },
     {
-      "query": "alabama power",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T10:00:00Z",
+      "query": "sunrise",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T11:10:00Z",
       "related_news_urls": [
-        "https://www.wvtm13.com/article/alabama-landowner-uses-18-wheelers-to-block-power-company-access/74514204",
-        "https://cdllife.com/2026/landowner-blocks-power-company-from-running-new-lines-across-his-property-with-strategic-parking-of-two-semi-trucks/",
-        "https://www.al.com/news/birmingham/2026/11/fenn-church-extremely-disappointed-ivey-defended-aldot-siding-with-alabama-power.html"
+        "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+        "https://www.mediaversityreviews.com/film-reviews/2026/11/25/the-hunger-games-sunrise-on-the-reaping",
+        "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-thanksgiving-box-office-1236762317/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkNChdc2m2k7rjpuSGPTtcDyVfWcuX8ASeKSWkDkGMWjvEi5m-xcBv8k_Xamo",
-      "image_credit": "wvtm",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFZtAotsDxvA6_JCylmlBp8kc7m6pn3ORWGFxJAAyxPpna6-QiFYxWPJa2e5g",
+      "image_credit": "Deadline",
       "news": [
         {
-          "url": "https://www.wvtm13.com/article/alabama-landowner-uses-18-wheelers-to-block-power-company-access/74514204",
-          "title": "Alabama landowner uses semi-truck trailers to block power company access",
-          "publisher": "wvtm",
+          "url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+          "title": "‘Sunrise On The Reaping’ Firing Up Thanksgiving With $85M+ 5-Day, 2nd Best Holiday Haul For Franchise – Update",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkNChdc2m2k7rjpuSGPTtcDyVfWcuX8ASeKSWkDkGMWjvEi5m-xcBv8k_Xamo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFZtAotsDxvA6_JCylmlBp8kc7m6pn3ORWGFxJAAyxPpna6-QiFYxWPJa2e5g"
         },
         {
-          "url": "https://cdllife.com/2026/landowner-blocks-power-company-from-running-new-lines-across-his-property-with-strategic-parking-of-two-semi-trucks/",
-          "title": "Landowner blocks power company from running new lines across his property with strategic parking of two semi trailers",
-          "publisher": "CDLLife",
+          "url": "https://www.mediaversityreviews.com/film-reviews/2026/11/25/the-hunger-games-sunrise-on-the-reaping",
+          "title": "The Hunger Games: Sunrise on the Reaping",
+          "publisher": "Mediaversity Reviews",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfMTHiJ1HAK0fD_fKYEmxpwOzsACikO5Od5bJWkXwhWuDOdUxSP2x9kX6WjKU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8oFUlA4trthR4JmFREBTps5LAlN3vXei_l4aZlDZdsdFy0icc3J2My4tP2IU"
         },
         {
-          "url": "https://www.al.com/news/birmingham/2026/11/fenn-church-extremely-disappointed-ivey-defended-aldot-siding-with-alabama-power.html",
-          "title": "Fenn Church ‘extremely disappointed’ in Ivey as ALDOT sides with Alabama Power",
-          "publisher": "AL.com",
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-thanksgiving-box-office-1236762317/",
+          "title": "‘Hunger Games: Sunrise on the Reaping’ to Dominate Thanksgiving Box Office as ‘Focker In-Law,’ ‘Hexed’ Join Fray",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdJT5T6ifdy51CFgT45xE8in2oXp4tt3c02luAIcL5vnBr9a5sTXbM4so4Ikc"
-        }
-      ]
-    },
-    {
-      "query": "india a vs sri lanka a",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T09:50:00Z",
-      "related_news_urls": [
-        "https://m.cricbuzz.com/live-cricket-scores/177210/inda-vs-sla-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
-        "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
-        "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE",
-      "image_credit": "Cricbuzz",
-      "news": [
-        {
-          "url": "https://m.cricbuzz.com/live-cricket-scores/177210/inda-vs-sla-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
-          "title": "SLA vs INDA, 1st Semi-Final (A1 v B2), ACC Men's Asia Cup Rising Stars 2026 - Commentary",
-          "publisher": "Cricbuzz",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE"
-        },
-        {
-          "url": "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
-          "title": "India A vs Sri Lanka A ACC Men's Asia Cup Rising Stars live score, toss winner, winning probability, result and highlights from Doha",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGR24PcZ6gmwcatnLVDOOqtssfLENgpM57MCtpYYSa0_N5MAzdOFI-5Zue8vM"
-        },
-        {
-          "url": "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
-          "title": "Sri Lanka A vs India A at Doha, DP World Men's Asia Cup Rising Stars, Semi-Final, 26 Nov 2026",
-          "publisher": "BCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a6ITVl39nsRlxE08QJ9fgMNCWjLUZGjZOc1Jcij_Kikm2zzsMGt-Axbk9eM"
-        }
-      ]
-    },
-    {
-      "query": "modot",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T09:40:00Z",
-      "related_news_urls": [
-        "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
-        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-        "https://www.accuweather.com/en/winter-weather/major-snowstorm-is-set-to-bury-st-louis-in-time-for-thanksgiving/1964313"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto",
-      "image_credit": "FOX 2",
-      "news": [
-        {
-          "url": "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
-          "title": "A turkey of a winter storm",
-          "publisher": "FOX 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto"
-        },
-        {
-          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
-          "publisher": "KSDK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
-        },
-        {
-          "url": "https://www.accuweather.com/en/winter-weather/major-snowstorm-is-set-to-bury-st-louis-in-time-for-thanksgiving/1964313",
-          "title": "Major snowstorm is set to bury St. Louis in time for Thanksgiving",
-          "publisher": "AccuWeather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJwlNUgd01qEoq6jP6lDc3sN9BzFbxG5W7w6H7L8g4tSDS3opwdjBnEEVMmdQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtSCKQrp0uXZ-1BA2TE9NlKIUhivjsAOP7BhAiqkqIGmJF2Giqdy60qzp5-kA"
         }
       ]
     }
