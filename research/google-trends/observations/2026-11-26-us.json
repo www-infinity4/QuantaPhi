@@ -3,17 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T23:01:27.952248Z",
+  "checked_at": "2026-11-26T23:31:10.035344Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "zendaya",
+      "query": "jeremiah trotter",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/jeremiah-trotter-jr-switch-linebacker-nfl-clemson-jihaad-campbell-zack-baun-cooper-dejean/769364/",
+        "https://sports.yahoo.com/nfl/articles/top-nfl-lb-list-backs-184135611.html",
+        "https://www.nytimes.com/athletic/7807887/2026/11/24/eagles-thoughts-jeremiah-trotter-riq-woolen-cowboys/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLmiV4L2RbGukV6fkcYFuKkumT1f6Y-9r2Kesj5r33ArQ1skvi_ALoPmE1-h8",
+      "image_credit": "NBC Sports Philadelphia",
+      "news": [
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/jeremiah-trotter-jr-switch-linebacker-nfl-clemson-jihaad-campbell-zack-baun-cooper-dejean/769364/",
+          "title": "The switch that flips for Jeremiah Trotter Jr. when he takes the field",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLmiV4L2RbGukV6fkcYFuKkumT1f6Y-9r2Kesj5r33ArQ1skvi_ALoPmE1-h8"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/top-nfl-lb-list-backs-184135611.html",
+          "title": "Top NFL LB List Backs Eagles’ Confidence In Jeremiah Trotter Jr.",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgvImywtR06CISm6vYz0JfH3vpgiEEIZ4MGRi990I7FDNi0BVUT9evzEekqaY"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7807887/2026/11/24/eagles-thoughts-jeremiah-trotter-riq-woolen-cowboys/",
+          "title": "Eagles thoughts: Jeremiah Trotter Jr. shines, Riq Woolen’s role in question - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFsMW716BVcT-WRSs7PqC2favphmKUkZNpeV9oqIqoAS_3mzjRMA5Gn-UPeQc"
+        }
+      ]
+    },
+    {
+      "query": "ucla basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:10:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/college-basketball/rady-childrens-invitational-saint-marys-gaels-vs-ucla-bruins-nov-26-2026-game-boxscore-266094",
+        "https://247sports.com/college/ucla/article/ucla-mens-basketball-saint-marys-preview-293316594/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/3-st-marys-players-ucla-110005324.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/college-basketball/rady-childrens-invitational-saint-marys-gaels-vs-ucla-bruins-nov-26-2026-game-boxscore-266094",
+          "title": "Saint Mary's vs. UCLA - Live Score - November 26, 2026",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT2vm00qfvjHaesQTmd1LZ8FBmomcyZru2G_E00jimEmER3HNOKEiyX79WGqos"
+        },
+        {
+          "url": "https://247sports.com/college/ucla/article/ucla-mens-basketball-saint-marys-preview-293316594/",
+          "title": "UCLA Men's Basketball: Saint Mary's Preview",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPCOlV_5b9ObGhjtdleN7QYKVtNdw5qbOPzFDsivkpxbA43RtLD8GaXXjJ-Xg"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/3-st-marys-players-ucla-110005324.html",
+          "title": "3 St. Mary's Players UCLA Must Worry About",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRClMAy4DKXF3Mtm_RfcGjGDTf0j8mWYnuBaqk3JQu6Zze2fYKmZX3O_hopNc0"
+        }
+      ]
+    },
+    {
+      "query": "riq woolen",
       "approx_searches": "500+",
+      "published_at": "2026-11-26T23:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50567158/eagles-riq-woolen-benched-missed-tackles-vs-steelers",
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/riq-woolen-annoyed-frustrated-benched-steelers-jonathan-jones-secondary-cornerback/768885/",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-analysis/191150/eagles-steelers-snap-counts-riq-woolen-benched"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4s2pjnGgid-nnuawTu3CfHCIFrYNhBZT6lS6hrNkWs4oVhHRiOG-87oRg210",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50567158/eagles-riq-woolen-benched-missed-tackles-vs-steelers",
+          "title": "Eagles' Riq Woolen benched after missed tackles vs. Steelers",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4s2pjnGgid-nnuawTu3CfHCIFrYNhBZT6lS6hrNkWs4oVhHRiOG-87oRg210"
+        },
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/riq-woolen-annoyed-frustrated-benched-steelers-jonathan-jones-secondary-cornerback/768885/",
+          "title": "Riq Woolen ‘annoyed' by benching but happy for an Eagles win",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7U6zfsGs6eqvq6tBFHQCsoid9LxSkpDUwUQGjFlllXGhniCYt3FmFsH6JfHo"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-analysis/191150/eagles-steelers-snap-counts-riq-woolen-benched",
+          "title": "Eagles-Steelers snap counts: Riq Woolen benched",
+          "publisher": "Bleeding Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQfXxFYV1onExPYaS9TNxhKSUm0Pu6W8ho7w2ub6NhREjhxpCz32sGbHVNUpU"
+        }
+      ]
+    },
+    {
+      "query": "netflix the body global number one",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:00:00Z",
+      "related_news_urls": [
+        "https://www.theatlantic.com/culture/2026/11/the-body-netflix-show-girlhood-catholicism/689595/",
+        "https://www.thewrap.com/creative-content/tv-shows/the-body-netflix-tv-ratings-second-week/",
+        "https://www.wmagazine.com/culture/the-body-netflix-costumes-y2k-fashion-photos"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlXyZj1-dAXvXexWR8dLhwz9OZWUGXijYHVt7xQYE-F2i3ziCIZXDpM-cfhAY",
+      "image_credit": "The Atlantic",
+      "news": [
+        {
+          "url": "https://www.theatlantic.com/culture/2026/11/the-body-netflix-show-girlhood-catholicism/689595/",
+          "title": "A Little The Crucible. A Little The Craft. A Lot of Catholic Guilt.",
+          "publisher": "The Atlantic",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQlXyZj1-dAXvXexWR8dLhwz9OZWUGXijYHVt7xQYE-F2i3ziCIZXDpM-cfhAY"
+        },
+        {
+          "url": "https://www.thewrap.com/creative-content/tv-shows/the-body-netflix-tv-ratings-second-week/",
+          "title": "‘The Body’ Rises to No. 1 on Netflix TV List in 2nd Week With 9.5 Million Views",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTmOe1KL_9_sgUWWnT2qx1CGYxENb1AjoZ0ymS8lLwt411LrlEsL9cQ4aCIffQ"
+        },
+        {
+          "url": "https://www.wmagazine.com/culture/the-body-netflix-costumes-y2k-fashion-photos",
+          "title": "How Netflix's 'The Body' Fashion Brings Rebellious Y2K Girlhood to Life",
+          "publisher": "W Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS91uxoEUlDL0YKnk4vg5MseLFNsEwMw3eZriXvkMtFs6RX0F-i6BPZ_jUtNSs"
+        }
+      ]
+    },
+    {
+      "query": "alabama crimson tide football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T23:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/tennessee/article/tennessee-vols-college-football-playoff-rankings-alabama-hunter-yurachek-293301951/",
+        "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/24/alabama-football-cfp-ranking-drop-tennessee/92951199007/",
+        "https://www.nytimes.com/athletic/7810655/2026/11/24/college-football-playoff-rankings-alabama-tennessee/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7cjFZWArAWb0K997Rqq_ivHCLXqyC-qL0gzY1keSQTgA0sFSErv4WM1Foig",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/tennessee/article/tennessee-vols-college-football-playoff-rankings-alabama-hunter-yurachek-293301951/",
+          "title": "Why Tennessee finally moved ahead of Alabama (and others) in latest CFP rankings",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRj7cjFZWArAWb0K997Rqq_ivHCLXqyC-qL0gzY1keSQTgA0sFSErv4WM1Foig"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/sec/2026/11/24/alabama-football-cfp-ranking-drop-tennessee/92951199007/",
+          "title": "Alabama’s CFP ranking finally changed. Here’s what triggered the drop",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCImuGm7G1dtDvketQ9nh9-GIo2CWRUpyh-UMRVG6urxg_iM1M86ccGemoqOM"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7810655/2026/11/24/college-football-playoff-rankings-alabama-tennessee/",
+          "title": "Tennessee leapfrogs Alabama, and we can stop screaming at the committee (for a moment) - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSiIcpV9egvthwPuErkvGZ69WyWBkMDp_T7fwkbL4EASuCNqwxNAtsDrEHBeew"
+        }
+      ]
+    },
+    {
+      "query": "new movies 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T23:00:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/24/netflixs-best-new-christmas-movie-has-a-near-record-rotten-tomatoes-score/",
+        "https://www.hollywoodreporter.com/movies/movie-features/jared-padalecki-guarding-stars-netflix-holiday-1236760738/",
+        "https://www.netflix.com/tudum/articles/top-10-november-16-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfMXGMwbN3ldnO9GL_DUGh7zOM7h-49SHo6V7QQJN_oLB5UrI6BcmW37cWvIY",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/24/netflixs-best-new-christmas-movie-has-a-near-record-rotten-tomatoes-score/",
+          "title": "Netflix’s Best New Christmas Movie Has A Near-Record Rotten Tomatoes Score",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfMXGMwbN3ldnO9GL_DUGh7zOM7h-49SHo6V7QQJN_oLB5UrI6BcmW37cWvIY"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-features/jared-padalecki-guarding-stars-netflix-holiday-1236760738/",
+          "title": "With ‘Guarding Stars,’ Jared Padalecki Finally Takes A Break From All That Action",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaaVQUX4y3wL-FzFzosheWwC6VnHLx-5_uQGW5_yIiB7W8cxDUXKfs8ddO6YI"
+        },
+        {
+          "url": "https://www.netflix.com/tudum/articles/top-10-november-16-2026",
+          "title": "Guarding Stars Secures the No. 1 Spot in This Week’s Top 10",
+          "publisher": "Netflix",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP22hxlw9zM2ZUVdRjyG7slNbl-SqK--RUebm77SrZ0YM3FgxzHJ5tdeoYZnA"
+        }
+      ]
+    },
+    {
+      "query": "timothee chalamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T22:50:00Z",
+      "related_news_urls": [
+        "https://www.9news.com/article/entertainment/television/amanda-seyfried-robert-de-niro-timothee-chalamet-host-december-snl-episodes/73-26eaeedd-5fa2-4e60-ab01-5c0c50d888b1",
+        "https://variety.com/2026/tv/news/snl-next-hosts-timothee-chalamet-robert-de-niro-1236956234/",
+        "https://www.rollingstone.com/tv-movies/tv-movie-news/snl-december-hosts-timothee-chalamet-amanda-seyfried-1235663031/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KEvHtUR3ADLTxBpXPcBt0KWh_klchulcPx6EZ5dR-pCrGrvgIx_2Dqqoojo",
+      "image_credit": "9News",
+      "news": [
+        {
+          "url": "https://www.9news.com/article/entertainment/television/amanda-seyfried-robert-de-niro-timothee-chalamet-host-december-snl-episodes/73-26eaeedd-5fa2-4e60-ab01-5c0c50d888b1",
+          "title": "'Saturday Night Live' sets star-studded December lineup",
+          "publisher": "9News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KEvHtUR3ADLTxBpXPcBt0KWh_klchulcPx6EZ5dR-pCrGrvgIx_2Dqqoojo"
+        },
+        {
+          "url": "https://variety.com/2026/tv/news/snl-next-hosts-timothee-chalamet-robert-de-niro-1236956234/",
+          "title": "‘SNL’ Sets Timothée Chalamet and Robert De Niro as Final Hosts of 2026",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_dqzBO-UeWlGuxYDs_e0wmpt7qHNvTmBYe5B8p0pA_-leZoejoJzhltHBH98"
+        },
+        {
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/snl-december-hosts-timothee-chalamet-amanda-seyfried-1235663031/",
+          "title": "'Saturday Night Live' Taps Amanda Seyfried, Robert De Niro, Timothée Chalamet as Holiday Hosts",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnJojCC3VVl0KXuj3OAnrXB9ujq2IbM-NluzUfYGZLsTYRNwbWSQdvZCJ4FD0"
+        }
+      ]
+    },
+    {
+      "query": "cruz azul vs leon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T22:50:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17557187/leon-vs-cruz-azul-alineaciones-cuartos-final-ida",
+        "https://www.tudn.com/futbol/liga-mx/leon-vs-cruz-azul-a-que-hora-y-donde-ver-el-partido-de-cuartos-de-final-ida-de-la-liga-mx-apertura-2026",
+        "https://www.azcentral.com/story/deportes/futbol/2026/11/26/leon-vs-cruz-azul-hora-donde-ver-apertura-2026-liga-mx-liguilla-cuartos-de-final/92945049007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVIBZnR-Ps6kSp3IekqafrHYJcZwt5ciJ-OdFok0zHFHOCw1gO6RZ5HqhQmLg",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17557187/leon-vs-cruz-azul-alineaciones-cuartos-final-ida",
+          "title": "León vs Cruz Azul: posibles alineaciones y probabilidades",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVIBZnR-Ps6kSp3IekqafrHYJcZwt5ciJ-OdFok0zHFHOCw1gO6RZ5HqhQmLg"
+        },
+        {
+          "url": "https://www.tudn.com/futbol/liga-mx/leon-vs-cruz-azul-a-que-hora-y-donde-ver-el-partido-de-cuartos-de-final-ida-de-la-liga-mx-apertura-2026",
+          "title": "A qué hora y dónde ver el León vs. Cruz Azul de Cuartos de Final Ida",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgwx-LAo4i63v9xp7548XhT6qTULeSFgSJSW0h_6mXp9ZOadJJYCEyzQUMxJo"
+        },
+        {
+          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/26/leon-vs-cruz-azul-hora-donde-ver-apertura-2026-liga-mx-liguilla-cuartos-de-final/92945049007/",
+          "title": "¿Dónde ver Léon vs Cruz Azul en los cuartos de final del Apertura 2026?",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTwUYUciaaMVA1tpCd0saDHrW3f9poqBhYgvbyAfFbcOJzLUJAnTeeB9znf50"
+        }
+      ]
+    },
+    {
+      "query": "black friday tv deals 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T22:50:00Z",
+      "related_news_urls": [
+        "https://mashable.com/tech/best-black-friday-tv-deals-2026",
+        "https://www.cnet.com/news-live/black-friday-deals-live-blog-2026-11-26/",
+        "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/26/costco-black-friday-hisense-tv-deals-2026/92911222007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReJ60eVjWeoonDeNFndcb21XzpxeX2jdJJ_gUYn9Zyu9APHHEg_zWt7l0UbfI",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/tech/best-black-friday-tv-deals-2026",
+          "title": "17 best Black Friday TV deals 2026: OLED TVs start at $799",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcReJ60eVjWeoonDeNFndcb21XzpxeX2jdJJ_gUYn9Zyu9APHHEg_zWt7l0UbfI"
+        },
+        {
+          "url": "https://www.cnet.com/news-live/black-friday-deals-live-blog-2026-11-26/",
+          "title": "Black Friday Deals 2026 Live: Sales, Price Drops, Sellouts",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK8c4gbaUY5OpwHB-JCiXJBTS_J8wsr91BS4zxF6WCHiRumC54NaWGgmHycmY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/shopping/deals/black-friday/2026/11/26/costco-black-friday-hisense-tv-deals-2026/92911222007/",
+          "title": "100-inch Costco-exclusive Hisense TVs are under $1,000 for members",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsBZ0p1Ywre0XNlI9wuu7cU2EFPVHccgSDa7eQA8FlZWhtVSZo0NPbcyJg4ys"
+        }
+      ]
+    },
+    {
+      "query": "zendaya",
+      "approx_searches": "1000+",
       "published_at": "2026-11-26T22:40:00Z",
       "related_news_urls": [
         "https://www.buzzfeed.com/leylamohammed/zendaya-natural-teeth-message-wins-praise-monet-mcmichael",
-        "https://www.theguardian.com/film/2026/nov/24/who-next-bond-girl-robert-pattinson",
-        "https://www.imdb.com/news/ni66119564/"
+        "https://demokratis.co.id/en/zendaya-monet-natural-teeth-praise",
+        "https://bsinews.id/en/zendaya-monet-mcmichael-natural-teeth"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5oPsiPxpTDHAepuAj6-8yz6AEvJrxM8QDtaOftgP1XfBDy0tUSgLqGYETxg",
       "image_credit": "BuzzFeed",
@@ -26,317 +341,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY5oPsiPxpTDHAepuAj6-8yz6AEvJrxM8QDtaOftgP1XfBDy0tUSgLqGYETxg"
         },
         {
-          "url": "https://www.theguardian.com/film/2026/nov/24/who-next-bond-girl-robert-pattinson",
-          "title": "Robert Pattinson is not enough: who should become the new Bond girl?",
-          "publisher": "The Guardian",
+          "url": "https://demokratis.co.id/en/zendaya-monet-natural-teeth-praise",
+          "title": "Zendaya Praises Monet McMichael for Keeping Her Natural Teeth",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBRURhqcHyFMfrKD99xB1-WskLmvDZEmLBDX76ukd3rMPobo2cqvCovzJ4tgY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDsjMdof-RkJCp4DHq6xp57BHAOKl904VkxW9zDk7h8OlTnaq_dWA1f7MOGn4"
         },
         {
-          "url": "https://www.imdb.com/news/ni66119564/",
-          "title": "‘Dune’ Star Zendaya and Margaret Qualley Are Neck and Neck in the Race to Become the Next Bond Girl",
-          "publisher": "IMDb",
+          "url": "https://bsinews.id/en/zendaya-monet-mcmichael-natural-teeth",
+          "title": "Zendaya Encourages Monet McMichael to Embrace Natural Teeth",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS25iUr4K6F52nxaifdZd7g8LwrkA_YJpSqUnjapr3RrgTgOpKQE7vaNn5xmAU"
-        }
-      ]
-    },
-    {
-      "query": "marshawn lynch",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T22:30:00Z",
-      "related_news_urls": [
-        "https://komonews.com/sports/seahawks/seahawk-greats-richard-sherman-earl-thomas-marshawn-lynch-advance-in-hall-of-fame-voting",
-        "https://www.fieldgulls.com/seattle-seahawks-nfl-history/180727/marshawn-lynch-richard-sherman-among-former-seahawks-advanced-pro-football-hall-of-fame-voting",
-        "https://sports.yahoo.com/nfl/articles/seahawks-quartet-line-pro-football-003616180.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7xNQT8pH190EgBl0Rt0mrKfWTTJFjTtMq-UrfhrnbFn4ixqzH--lYV6YTAc",
-      "image_credit": "KOMO",
-      "news": [
-        {
-          "url": "https://komonews.com/sports/seahawks/seahawk-greats-richard-sherman-earl-thomas-marshawn-lynch-advance-in-hall-of-fame-voting",
-          "title": "Seahawk greats Richard Sherman, Earl Thomas, Marshawn Lynch advance in Hall of Fame voting",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK7xNQT8pH190EgBl0Rt0mrKfWTTJFjTtMq-UrfhrnbFn4ixqzH--lYV6YTAc"
-        },
-        {
-          "url": "https://www.fieldgulls.com/seattle-seahawks-nfl-history/180727/marshawn-lynch-richard-sherman-among-former-seahawks-advanced-pro-football-hall-of-fame-voting",
-          "title": "Several former Seahawks advanced in Pro Football Hall of Fame voting",
-          "publisher": "Field Gulls",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSbcarjScqF-5DWK86XgaW-Cx8uc3ve3DUzhJ8hHRJuExfV2Ll7KIT4ysoFfNU"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/seahawks-quartet-line-pro-football-003616180.html",
-          "title": "Seahawks Quartet In Line For Pro Football Hall Of Fame Honors",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ37u9-3uPg5Y1aqzuwm-8G8KuKENbd7oEtf8tuGlkouM8i_88HPtMr6gF2psQ"
-        }
-      ]
-    },
-    {
-      "query": "jada pinkett smith",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T22:30:00Z",
-      "related_news_urls": [
-        "https://people.com/jada-pinkett-smith-shares-photo-of-thanksgiving-set-up-at-family-abode-days-after-barn-fire-12282117",
-        "https://pagesix.com/2026/11/23/celebrity-news/will-smiths-42-million-calabasas-compound-engulfed-by-enormous-fire/",
-        "https://www.nbclosangeles.com/news/local/will-smiths-shed-barn-fire/3974410/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAT-OK9qE5GJH_qK4qPWn6PaHYSva_KP-hi3g977ZFpVGEURrOj38PK45cHrs",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jada-pinkett-smith-shares-photo-of-thanksgiving-set-up-at-family-abode-days-after-barn-fire-12282117",
-          "title": "Jada Pinkett Smith Shares Photos of Thanksgiving Set Up Days After Fire on Property",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAT-OK9qE5GJH_qK4qPWn6PaHYSva_KP-hi3g977ZFpVGEURrOj38PK45cHrs"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/23/celebrity-news/will-smiths-42-million-calabasas-compound-engulfed-by-enormous-fire/",
-          "title": "Exclusive | Will Smith’s $42 million Calabasas compound engulfed by enormous fire",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpOeewOlYdBcbtvjGvQkT42vyXIdpNd392p4Z0_AIbRrbWkIaFQnr7sjU0PXU"
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/local/will-smiths-shed-barn-fire/3974410/",
-          "title": "Will Smith's shed destroyed after overnight fire in Los Angeles County",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzm1u7iOruyEnRo0dkiasPof0_OrVtT5isi2ad0yvoAA-e0sA8CziJLzVu-e8"
-        }
-      ]
-    },
-    {
-      "query": "pamela anderson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T22:30:00Z",
-      "related_news_urls": [
-        "https://www.harpersbazaar.com/uk/fashion/shopping/a74539871/pamela-anderson-skinny-jeans/",
-        "https://www.hellomagazine.com/fashion/celebrity-style/937134/pamela-anderson-59-wears-skinny-jeans-make-up-free/",
-        "https://www.harpersbazaar.com/uk/fashion/shopping/a74539871/pamela-anderson-jeans/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY7VMY5oheEn6BJIhf4RlJr3mGr3YHGGe1tnJgwBqk5TFhg_Bzd1lUNxEYuBM",
-      "image_credit": "Harper's BAZAAR",
-      "news": [
-        {
-          "url": "https://www.harpersbazaar.com/uk/fashion/shopping/a74539871/pamela-anderson-skinny-jeans/",
-          "title": "Pamela Anderson proves skinny jeans are winter's most elegant denim style for women over 50",
-          "publisher": "Harper's BAZAAR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY7VMY5oheEn6BJIhf4RlJr3mGr3YHGGe1tnJgwBqk5TFhg_Bzd1lUNxEYuBM"
-        },
-        {
-          "url": "https://www.hellomagazine.com/fashion/celebrity-style/937134/pamela-anderson-59-wears-skinny-jeans-make-up-free/",
-          "title": "Pamela Anderson, 59, proves skinny jeans are officially back in new makeup-free photo",
-          "publisher": "HELLO!",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf8cKyw9lxLma8YWZLr9w0sZabsrub8k9QQSgxIFgdYEFZ7Z3EkZnBwms_gUk"
-        },
-        {
-          "url": "https://www.harpersbazaar.com/uk/fashion/shopping/a74539871/pamela-anderson-jeans/",
-          "title": "Pamela Anderson's new 'drainpipe' jeans are the sleek, do-it-all denim style perfect for winter",
-          "publisher": "Harper's BAZAAR",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTY7VMY5oheEn6BJIhf4RlJr3mGr3YHGGe1tnJgwBqk5TFhg_Bzd1lUNxEYuBM"
-        }
-      ]
-    },
-    {
-      "query": "new movies to stream",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T22:30:00Z",
-      "related_news_urls": [
-        "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
-        "https://www.yahoo.com/entertainment/tv/articles/weekend-watchlist-netflix-true-crime-190000895.html",
-        "https://www.houstonpress.com/arts/on-our-streaming-radar-altruist-yellowjackets-and-percy-jackson/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqfcdwNh-HanBiLz-gtz52QcIt3JBX92dWS_uwloaHKel6yZcML6fCbW80bQ",
-      "image_credit": "Decider",
-      "news": [
-        {
-          "url": "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
-          "title": "New movies on streaming: ‘The Odyssey,’ ‘A Talent For Murder’ and more",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqfcdwNh-HanBiLz-gtz52QcIt3JBX92dWS_uwloaHKel6yZcML6fCbW80bQ"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/weekend-watchlist-netflix-true-crime-190000895.html",
-          "title": "Weekend watchlist: Netflix true crime drama, Anthony Bourdain biopic and hit thriller's final season",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4uOtncnbmuqLhKZZOCDgOnu2XPNutH6hP__BFJEwnsDn-t7qqzaovb8sYyc"
-        },
-        {
-          "url": "https://www.houstonpress.com/arts/on-our-streaming-radar-altruist-yellowjackets-and-percy-jackson/",
-          "title": "On Our Streaming Radar: Altruist, Yellowjackets and Percy Jackson",
-          "publisher": "Houston Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2T3ueonedmt8LuyeGybCfw1VBvidv-JMBmRLqUQ4ywrOf89zoDC1WYZ6zeDY"
-        }
-      ]
-    },
-    {
-      "query": "super bowl winners",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T22:30:00Z",
-      "related_news_urls": [
-        "https://www.dailynorseman.com/general/102053/what-are-the-worst-losses-for-each-super-bowl-winning-team"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK3kaWiL75JD03Cjau3DZbmFfWquxN1BC59b5tFaPzjteAWqOEgQVQW0h30SE",
-      "image_credit": "Daily Norseman",
-      "news": [
-        {
-          "url": "https://www.dailynorseman.com/general/102053/what-are-the-worst-losses-for-each-super-bowl-winning-team",
-          "title": "What are the worst losses for each Super Bowl-winning team?",
-          "publisher": "Daily Norseman",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRK3kaWiL75JD03Cjau3DZbmFfWquxN1BC59b5tFaPzjteAWqOEgQVQW0h30SE"
-        }
-      ]
-    },
-    {
-      "query": "kavontae turpin",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T22:20:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/watch-vertical/fmc-bi02ymw0zngoiwr5",
-        "https://www.wvnews.com/sports/pro/titans-cowboys-football/image_7951849e-6797-5329-a916-0633c26567e3.html",
-        "https://www.dallascowboys.com/video/kavontae-turpin-s-22-yard-race-to-the-pylon-results-in-cowboys-second-td-of-day"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCymlZTPf8G73vtXAWsvh1p7o0bX2H7pVw5aaCds2H7wGwjt8FUsFrukQoAfY",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/watch-vertical/fmc-bi02ymw0zngoiwr5",
-          "title": "KaVontae Turpin takes jet sweep 22 yards for TD to extend Cowboys' lead over Titans | NFL Highlights",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCymlZTPf8G73vtXAWsvh1p7o0bX2H7pVw5aaCds2H7wGwjt8FUsFrukQoAfY"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/titans-cowboys-football/image_7951849e-6797-5329-a916-0633c26567e3.html",
-          "title": "Titans Cowboys Football",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvOb6kizUPCA_D4Y9U5pcE4gySmik9L-jMkwihfzK_ox6hGJI96B-esLvXhLI"
-        },
-        {
-          "url": "https://www.dallascowboys.com/video/kavontae-turpin-s-22-yard-race-to-the-pylon-results-in-cowboys-second-td-of-day",
-          "title": "KaVontae Turpin's 22-yard race to the pylon results in Cowboys' second TD of day",
-          "publisher": "Dallas Cowboys | Official Site of the Dallas Cowboys",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxS_ZDvUCFBdQ9KAjE4Kg3da0V5JUMxwNYN7SrS1-3iQbTYiW_qptBuK_Scn0"
-        }
-      ]
-    },
-    {
-      "query": "zach ertz",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-26T22:20:00Z",
-      "related_news_urls": [
-        "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/25/finnie-scores-twice-as-red-wings-stuff-canucks-5-1/92966878007/",
-        "https://www.freep.com/story/sports/nhl/red-wings/2026/11/25/red-wings-canucks-game-emmitt-finnie/92957694007/",
-        "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxdFS0rQGnp0wynCJtTjWjkBwlfKfGOUP5Exjpw7I72xF2G2VOTLyg-dVCMAk",
-      "image_credit": "The Detroit News",
-      "news": [
-        {
-          "url": "https://www.detroitnews.com/story/sports/nhl/red-wings/2026/11/25/finnie-scores-twice-as-red-wings-stuff-canucks-5-1/92966878007/",
-          "title": "Finnie scores twice as Red Wings stuff Canucks 5-1",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxdFS0rQGnp0wynCJtTjWjkBwlfKfGOUP5Exjpw7I72xF2G2VOTLyg-dVCMAk"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/nhl/red-wings/2026/11/25/red-wings-canucks-game-emmitt-finnie/92957694007/",
-          "title": "Emmitt Finnie dazzles, Red Wings win 1st game since Dylan Larkin trade",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMfx2AUHqp7L2HMN_CMELPPfLOpP_CQkxKsr95bMJpgAco6XMYpZhLGoSvXM"
-        },
-        {
-          "url": "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026",
-          "title": "Canucks at Red Wings projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        }
-      ]
-    },
-    {
-      "query": "will shipley",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T22:20:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-        "https://sports.yahoo.com/general/videos/week-12-shipley-fantasy-start-184823540.html",
-        "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/news/steelers-vs-eagles-inactives-nfl-2026-week-11-salute-to-service",
-          "title": "Steelers vs. Eagles Inactives",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwL8ByzRiOnmk7y3KsMBkeKKfa7ysKBLZLEBgsl24yDRYrpSLF0iNACfBIryY"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/videos/week-12-shipley-fantasy-start-184823540.html",
-          "title": "Week 12 Will Shipley Fantasy Start or Sit 2026",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRFmHxuHlt4XIU9ifvdHuZl5KRCHcWLBI_XazJoG1kyJnFAspkOtiqLLLzAC8"
-        },
-        {
-          "url": "https://www.theclemsoninsider.com/2026/11/22/former-clemson-star-activated-from-ir/",
-          "title": "Former Clemson Star Activated from Injured Reserve",
-          "publisher": "The Clemson Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXBiYyGR0Lr_yR7uIShTmLvy0KrE56d-T1BzyRFzIXvpWWSZsV_cxKQ_HRG9g"
-        }
-      ]
-    },
-    {
-      "query": "george pickens",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T22:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/cowboys-thankful-george-pickens-played-144116159.html",
-        "https://heavy.com/sports/nfl/dallas-cowboys/cowboys-jerry-jones-makes-curious-george-pickens-statement/",
-        "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/george-pickens-could-rare-free-agent-if-cowboys-balk-33m-tag/3b790bf01df2a84d25d2cf83"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4xI_-My97dBmeZ_JBxSN3pB9ys-YmiHpsLqspPqzytASSdV3HN0VkqMoU1M",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/cowboys-thankful-george-pickens-played-144116159.html",
-          "title": "Cowboys Should Be Thankful George Pickens Played on the Franchise Tag Without a Holdout",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4xI_-My97dBmeZ_JBxSN3pB9ys-YmiHpsLqspPqzytASSdV3HN0VkqMoU1M"
-        },
-        {
-          "url": "https://heavy.com/sports/nfl/dallas-cowboys/cowboys-jerry-jones-makes-curious-george-pickens-statement/",
-          "title": "Cowboys’ Jerry Jones Makes Curious George Pickens Statement",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAFGj_YwIjC5MvNzNdR2lcvLl2uE79jpNFh5hwplnodqACee8PXIrWdkXEy0c"
-        },
-        {
-          "url": "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/george-pickens-could-rare-free-agent-if-cowboys-balk-33m-tag/3b790bf01df2a84d25d2cf83",
-          "title": "George Pickens could be 'rare' free agent if Cowboys balk at $33M price tag",
-          "publisher": "Sporting News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwtdrqdxHqZFLGP4Tm9BgnSnZujuFnqHDwnIUN2G1nTtHoqesoPq6gXeNc5UU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtpPpvhoR_Nmf-Ah2LQZBvbG1KH77MPf1lgiQtzpMYrkAlhwijyYADGzbY828"
         }
       ]
     }
