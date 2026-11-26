@@ -3,9 +3,114 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T09:01:41.520921Z",
+  "checked_at": "2026-11-26T09:31:17.427853Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "3",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T09:00:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/foster-griffin-guardians-contract",
+        "https://www.espn.com/mlb/story/_/id/50600391/foster-griffin-agrees-3-year-48-million-deal-stay-guardians",
+        "https://www.nytimes.com/athletic/7730655/2026/11/25/foster-griffin-signs-guardians-mlb-offseason/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/foster-griffin-guardians-contract",
+          "title": "Guardians bringing back lefty Griffin on 3-year, $48 million deal (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk"
+        },
+        {
+          "url": "https://www.espn.com/mlb/story/_/id/50600391/foster-griffin-agrees-3-year-48-million-deal-stay-guardians",
+          "title": "Foster Griffin agrees to 3-year, $48 million deal to stay with Guardians",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvGPAvhdaEDxDIOnZ8IeCAYQdcWabO_pB2myuAJ1EZtRuAE8h6I0fVAi8GXyI"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7730655/2026/11/25/foster-griffin-signs-guardians-mlb-offseason/",
+          "title": "Foster Griffin returns to Cleveland on 3-year deal with Guardians: Sources - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd2Ntum9W4daAv_PzFpYB5PAmhKCzw8oUC4BoWlnzM59kzMjvLvnLi6GmDRSY"
+        }
+      ]
+    },
+    {
+      "query": "the legend of zelda wind waker",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T08:50:00Z",
+      "related_news_urls": [
+        "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
+        "https://screenrant.com/legend-of-zelda-wind-waker-pc-remaster/",
+        "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo",
+      "image_credit": "OpenCritic",
+      "news": [
+        {
+          "url": "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
+          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo"
+        },
+        {
+          "url": "https://screenrant.com/legend-of-zelda-wind-waker-pc-remaster/",
+          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyjRYUcRhWbG_FGKs57iTgBu5achh_PIeG1AXaDjhV5BrmBzOKlCaRoJSpfj8"
+        },
+        {
+          "url": "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
+          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
+          "publisher": "OpenCritic",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo"
+        }
+      ]
+    },
+    {
+      "query": "georgia basketball",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T08:50:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
+        "https://www.cincinnati.com/story/sports/college/university-of-cincinnati/2026/11/24/cincinnati-bearcats-face-georgia-boston-college-espn-events-games/92918908007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
+          "title": "Georgia basketball takes on Cincinnati to open ESPN Events Invitational",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
+          "title": "Georgia vs Cincinnati Prediction, Pick, College Basketball Odds for Thursday, Nov. 26",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE0w0BVZBve0YU8TelH65ObYI8kn7uIdIwnqt3c0LyLM76e3NBGKBNleOheVs"
+        },
+        {
+          "url": "https://www.cincinnati.com/story/sports/college/university-of-cincinnati/2026/11/24/cincinnati-bearcats-face-georgia-boston-college-espn-events-games/92918908007/",
+          "title": "UC Bearcats face Georgia, Boston College in Thanksgiving holiday hoops",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAfy9jDypPUYwEkVpnIMh58uqP2QB28K8DIh6XXVfPEX5B3ZCsDuuz6I5skdc"
+        }
+      ]
+    },
     {
       "query": "dominion power outage",
       "approx_searches": "200+",
@@ -81,39 +186,39 @@
       "approx_searches": "100+",
       "published_at": "2026-11-26T08:00:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7807947/2026/11/24/robbie-avila-saint-louis-tcu-college-basketball-eligibility/",
-        "https://www.cbssports.com/college-basketball/news/trotters-trends-big-tens-rough-start-robbie-avila-tcu-michigan-purdue/",
-        "https://unewsonline.com/2026/11/robbie-avila-snatched-away-by-tcu/"
+        "https://www.cbssports.com/college-basketball/news/saint-louis-holds-off-stanford-despite-julius-prices-31-points/",
+        "https://www.stltoday.com/sports/college/slu/video_53249085-4ea7-4f8d-986e-2d75bb8b48d9.html",
+        "https://www.sportsgambler.com/betting-tips/basketball/stanford-cardinal-vs-saint-louis-billikens-prediction-odds-2026-11-25/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWjhIj22YH6v3PZj3AoAmtbp3g6RdFeQglB_3K9mZHB61YlNrqA8AKYV_HRE",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew",
+      "image_credit": "CBS Sports",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7807947/2026/11/24/robbie-avila-saint-louis-tcu-college-basketball-eligibility/",
-          "title": "How Robbie Avila went from Saint Louis to TCU in strange start to college basketball season - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRWjhIj22YH6v3PZj3AoAmtbp3g6RdFeQglB_3K9mZHB61YlNrqA8AKYV_HRE"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/trotters-trends-big-tens-rough-start-robbie-avila-tcu-michigan-purdue/",
-          "title": "Trotter's Trends: Inside the Big Ten's rough start; Robbie Avila is doing Robbie Avila things already",
+          "url": "https://www.cbssports.com/college-basketball/news/saint-louis-holds-off-stanford-despite-julius-prices-31-points/",
+          "title": "Saint Louis holds off Stanford despite Julius Price's 31 points",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSp_VFYZDSMhB3m9TPmDsCrRSobrKZdgPd0HpI1ta0LUoe-AMDJttYXIGJX7I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew"
         },
         {
-          "url": "https://unewsonline.com/2026/11/robbie-avila-snatched-away-by-tcu/",
-          "title": "Robbie Avila snatched away by TCU",
-          "publisher": "The University News",
+          "url": "https://www.stltoday.com/sports/college/slu/video_53249085-4ea7-4f8d-986e-2d75bb8b48d9.html",
+          "title": "'There's growth': Josh Schertz describes SLU's improvements vs. Stanford",
+          "publisher": "STLtoday.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRckG4--csFQGwORmu7sQ0UwBKeOyNzvWhQou_B1TuUEKVLfAucqgHLqBR5ejs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTucsmcbuWvZxOaWeEoLj_MEdYIyLchxFId15mcS6D5Sag6u_AdPEyrrwx6W0"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/stanford-cardinal-vs-saint-louis-billikens-prediction-odds-2026-11-25/",
+          "title": "Stanford vs Saint Louis Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
         }
       ]
     },
     {
       "query": "in n out",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-26T07:50:00Z",
       "related_news_urls": [
         "https://www.nbclosangeles.com/news/local/sherman-oaks-in-n-out-racist-attack/3974349/",
@@ -153,7 +258,7 @@
       "related_news_urls": [
         "https://www.theguardian.com/film/2026/nov/26/the-fox-australian-movie-review-olivia-colman-sam-neill-dario-russo-emily-browning-jai-courtney",
         "https://theconversation.com/the-fox-is-an-absurd-fable-like-comedy-that-explores-the-weirdness-of-being-human-290435",
-        "https://www.flicks.com.au/news/the-fox-is-a-gloriously-deranged-australian-fairy-tale/"
+        "https://if.com.au/dario-russo-embraces-the-australian-and-the-absurd-with-the-fox/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJDAJsA-PjIYAWyhC9hQx7Ub0foyH283QLuYi3Ak55a8W6o4vy6Ort2WPsas4",
       "image_credit": "The Guardian",
@@ -173,11 +278,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Ji6FyrQabWOp_IDSd5j8YFt0ABGU9dZu8jLz2Mty-mW-eRw9yv1yz-Kp-9Y"
         },
         {
-          "url": "https://www.flicks.com.au/news/the-fox-is-a-gloriously-deranged-australian-fairy-tale/",
-          "title": "The Fox movie review: a gloriously deranged Australian fairy tale",
-          "publisher": "Flicks.com.au",
+          "url": "https://if.com.au/dario-russo-embraces-the-australian-and-the-absurd-with-the-fox/",
+          "title": "Dario Russo embraces the Australian and the absurd with ‘The Fox’",
+          "publisher": "IF Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVYMjaIH-gBoqAybBjNZt-ce3l_SIhm7b31CLLX8X_JmgTZRtqHCs9mUz8pE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkyCWUG8slzZcvKPbCk6id6L-lJ60wLinBTjJsjYXEX7qL5hf_A8r19jnHqUM"
         }
       ]
     },
@@ -187,8 +292,8 @@
       "published_at": "2026-11-26T07:50:00Z",
       "related_news_urls": [
         "https://mashable.com/entertainment/gta-grand-theft-auto-6-chapter-1-so-good",
-        "https://www.theguardian.com/games/2026/nov/25/the-secret-to-grand-theft-auto-vi-routine-rockstar-games",
-        "https://www.lwlies.com/cut-scenes/the-slow-cinema-of-grand-theft-auto-vi"
+        "https://www.lwlies.com/cut-scenes/the-slow-cinema-of-grand-theft-auto-vi",
+        "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmlvqiG3VUYSxreokP38qJscIixGDvEFvSW0rDWlLxDt6MHB4umAlHpIoXCmE",
       "image_credit": "Mashable",
@@ -201,18 +306,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmlvqiG3VUYSxreokP38qJscIixGDvEFvSW0rDWlLxDt6MHB4umAlHpIoXCmE"
         },
         {
-          "url": "https://www.theguardian.com/games/2026/nov/25/the-secret-to-grand-theft-auto-vi-routine-rockstar-games",
-          "title": "The unexpected joy hiding in Grand Theft Auto VI’s chaos? A little routine",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_eQveTD96aYhdNLA9u2cHjJnix6yC80MTylcWvEdOS48Z4PspmsDeqNSCD2M"
-        },
-        {
           "url": "https://www.lwlies.com/cut-scenes/the-slow-cinema-of-grand-theft-auto-vi",
           "title": "The 'Slow Cinema' of Grand Theft Auto VI",
           "publisher": "Little White Lies",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__o4oBpC9fdfqXmHpxFlhTjRE4x5Y6xLoK3DQdS-mRu8O52BDlF8O3ehT718"
+        },
+        {
+          "url": "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment",
+          "title": "Opinion: Grand Theft Auto VI and World of Warcraft: Forever show that mundanity is having a moment",
+          "publisher": "Game Developer",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfU3CUvOO71iIPc980GSDDXD9icigUpmpgXfIzQniSgi9MW-aq0T37dI7XUw"
         }
       ]
     },
@@ -248,111 +353,6 @@
           "publisher": "Yahoo",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BjhlGt3z03Q7tWioAt8OgdvHy0mtwSD0bpbhxsC0eYeLHkJyesEENgruz0Q"
-        }
-      ]
-    },
-    {
-      "query": "james franco",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T07:10:00Z",
-      "related_news_urls": [
-        "https://suaragarut.id/en/franco-studio-four-student-relationships",
-        "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
-        "https://demokratis.co.id/en/franco-studio-four-student-admissions"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0",
-      "image_credit": "SuaraGarut.ID",
-      "news": [
-        {
-          "url": "https://suaragarut.id/en/franco-studio-four-student-relationships",
-          "title": "James Franco Admits Student Relationships Crossed Boundaries",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0"
-        },
-        {
-          "url": "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
-          "title": "James Franco Admits Sleeping With His Acting Students But Denies Opening School To Lure Women",
-          "publisher": "Fashion Times UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe8cuLaAn5AJdJkQc4p0n6TdE6BLN48Pkx4h7RBfamVKZqulTFh-2FlZkb6KA"
-        },
-        {
-          "url": "https://demokratis.co.id/en/franco-studio-four-student-admissions",
-          "title": "James Franco Admits Sleeping With Studio 4 Students",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0"
-        }
-      ]
-    },
-    {
-      "query": "mcdonalds",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T07:00:00Z",
-      "related_news_urls": [
-        "https://corporate.mcdonalds.com/corpmcd/our-stories/article/mcdonalds-home-alone-meal.html",
-        "https://www.today.com/food/restaurants/mcdonalds-home-alone-meal-2026-macaulay-culkin-ads-rcna609668",
-        "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekTlPvBAZKt6OfWOTLXU9BG7jtS8l2Su1DZcjTzhe1hCZODSTxObtrSSx2Lk",
-      "image_credit": "McDonald’s Corporation",
-      "news": [
-        {
-          "url": "https://corporate.mcdonalds.com/corpmcd/our-stories/article/mcdonalds-home-alone-meal.html",
-          "title": "McDonald’s Invites Fans to Leave Adulthood Behind with the Home Alone Meal",
-          "publisher": "McDonald’s Corporation",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSekTlPvBAZKt6OfWOTLXU9BG7jtS8l2Su1DZcjTzhe1hCZODSTxObtrSSx2Lk"
-        },
-        {
-          "url": "https://www.today.com/food/restaurants/mcdonalds-home-alone-meal-2026-macaulay-culkin-ads-rcna609668",
-          "title": "McDonald’s Launches ‘Home Alone’ Meal Inspired by Kevin’s Cravings",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRiui6wMSWQioimG_5Z05ydj-nwrS2nvKSutXQClfPdZgGq7d9BPXOVEqJCksc"
-        },
-        {
-          "url": "https://www.allrecipes.com/mcdonalds-home-alone-meal-12258400",
-          "title": "McDonald’s Is Releasing an All-New Holiday Meal for a Limited Time",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvkFcjNM7Johz1MwJLVjPhNmCThwu7rinit9TeRSbw-x6Z1bbvaDMR5ASO7Lg"
-        }
-      ]
-    },
-    {
-      "query": "hayden panettiere cause of death",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T07:00:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
-        "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
-        "https://www.al.com/life/2026/11/hayden-panettieres-net-worth-revealed-after-her-death.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
-          "title": "Hayden Panettiere left behind a massive fortune for her 11-year-old daughter, new court docs reveal",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA"
-        },
-        {
-          "url": "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
-          "title": "Hayden Panettiere’s Estate Valued at Over $6 Million, Ex Wladimir Klitschko Claims",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTa239G78IcDE7ZJXdWI46Myt8PSykWNQFfeon_7_yFr1ofyzWqBdApG8grpE"
-        },
-        {
-          "url": "https://www.al.com/life/2026/11/hayden-panettieres-net-worth-revealed-after-her-death.html",
-          "title": "Hayden Panettiere’s net worth revealed after her death",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwBgVxWXnkJ0CUfmVsxGBEZsAZM3XPCioncEwuPKAJnkKRIAxAN7ndoglhWqU"
         }
       ]
     }
