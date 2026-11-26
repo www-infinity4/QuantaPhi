@@ -3,82 +3,301 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T18:01:27.046448Z",
+  "checked_at": "2026-11-26T18:31:14.429605Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "is kenneth walker playing this week",
+      "query": "san diego st vs maryland",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T17:40:00Z",
+      "published_at": "2026-11-26T18:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
-        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-25",
-        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-12-rb-preview/"
+        "https://247sports.com/college/maryland/article/point-spread-and-preview-facing-high-powered-san-diego-state-maryland-cant-afford-another-early-loss-293334451/",
+        "https://www.testudotimes.com/maryland-terps-basketball/96085/maryland-mens-basketball-vs-san-diego-state-preview",
+        "https://www.cbssports.com/college-basketball/news/san-diego-state-looks-to-bounce-back-against-maryland/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtZSghnho812TDL79XiKF6dEnyE9DjTObIIT481WLAYDLyq08DdCasXPs9x7M",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMedHIjtxt7C4XHufpLU_3TpnIw2LYRclpA_IUoKfPV2Mv96c1hGy2uFa1mPk",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
-          "title": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills",
-          "publisher": "ESPN",
+          "url": "https://247sports.com/college/maryland/article/point-spread-and-preview-facing-high-powered-san-diego-state-maryland-cant-afford-another-early-loss-293334451/",
+          "title": "Point spread and preview: Facing high-powered San Diego State, Maryland can't afford another early loss",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtZSghnho812TDL79XiKF6dEnyE9DjTObIIT481WLAYDLyq08DdCasXPs9x7M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMedHIjtxt7C4XHufpLU_3TpnIw2LYRclpA_IUoKfPV2Mv96c1hGy2uFa1mPk"
         },
         {
-          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-25",
-          "title": "NFL news roundup: Chiefs RB Kenneth Walker III (groin) to miss Thanksgiving game vs. Bills",
-          "publisher": "NFL.com",
+          "url": "https://www.testudotimes.com/maryland-terps-basketball/96085/maryland-mens-basketball-vs-san-diego-state-preview",
+          "title": "Maryland men’s basketball vs. San Diego State preview",
+          "publisher": "Testudo Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1_HHsb56KnFRdWlMrjKx0zip72eK3yPFQMh7ULicVwWDrFobS-SC0h4qgOpU"
         },
         {
-          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-12-rb-preview/",
-          "title": "Fantasy football Week 12 RB preview puts Emmett Johnson's upside in the hands of Kenneth Walker's health",
+          "url": "https://www.cbssports.com/college-basketball/news/san-diego-state-looks-to-bounce-back-against-maryland/",
+          "title": "San Diego State looks to bounce back against Maryland",
           "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7bCQ207YzgFjEAQwphM3gFp1fnT9tPdOT4r0KEUTawldL20hPsX5xCbIKPFc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew"
         }
       ]
     },
     {
-      "query": "patrick mahomes stats",
+      "query": "jake bates",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T17:40:00Z",
+      "published_at": "2026-11-26T18:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "jameson williams",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T18:00:00Z",
       "related_news_urls": [
-        "https://uk.sports.yahoo.com/news/aaron-rodgers-head-head-stat-113000871.html",
-        "https://athlonsports.com/nfl/trending/patrick-mahomes-development-emerges-after-steelers-release-aaron-rodgers",
-        "https://www.hitc.com/the-aaron-rodgers-head-to-head-stat-against-patrick-mahomes-that-seems-unbelievable/"
+        "https://sports.yahoo.com/fantasy/articles/fantasy-football-week-12-start-155717763.html",
+        "https://www.espn.com/video/clip/_/id/50584332/is-stefon-diggs-jameson-williams-better-fantasy-play-week-12",
+        "https://www.rotoballer.com/player-news/jameson-williams-could-be-well-positioned-for-big-plays-in-week-12/2004807"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnTySmZA--edPP0RHgo6O2v7HQ8LuRkGfhMBuhN7mbtxNf3cRjetRhz-PZ5oA",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWZMLOGr7mljhOdUG6SPnr0q7_IEIylRE3I_mvFrR3zSThPF4TNxz4jRY8Fk",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://uk.sports.yahoo.com/news/aaron-rodgers-head-head-stat-113000871.html",
-          "title": "The Aaron Rodgers’ head-to-head stat against Patrick Mahomes that seems unbelievable",
-          "publisher": "Yahoo",
+          "url": "https://sports.yahoo.com/fantasy/articles/fantasy-football-week-12-start-155717763.html",
+          "title": "Fantasy Football Week 12 Start 'Em, Sit 'Em: Jameson Williams vs. DeVonta Smith",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnTySmZA--edPP0RHgo6O2v7HQ8LuRkGfhMBuhN7mbtxNf3cRjetRhz-PZ5oA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQWZMLOGr7mljhOdUG6SPnr0q7_IEIylRE3I_mvFrR3zSThPF4TNxz4jRY8Fk"
         },
         {
-          "url": "https://athlonsports.com/nfl/trending/patrick-mahomes-development-emerges-after-steelers-release-aaron-rodgers",
-          "title": "Patrick Mahomes Development Emerges After Steelers Release Aaron Rodgers",
-          "publisher": "Athlon Sports",
+          "url": "https://www.espn.com/video/clip/_/id/50584332/is-stefon-diggs-jameson-williams-better-fantasy-play-week-12",
+          "title": "Is Stefon Diggs or Jameson Williams a better fantasy play in Week 12?",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBjaMAul9nW7aHaE5I2VdYZTRkfGOYHK2i0vHICkmD4vPfexCKE2EGarTHeZM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSyx6qQgxuIaWTB7xgDTITRb7MAri93_uDRQZ9ZMNObvTNJMj7lsNLkWwPxHM"
         },
         {
-          "url": "https://www.hitc.com/the-aaron-rodgers-head-to-head-stat-against-patrick-mahomes-that-seems-unbelievable/",
-          "title": "The Aaron Rodgers’ head-to-head stat against Patrick Mahomes that seems unbelievable",
-          "publisher": "HITC",
+          "url": "https://www.rotoballer.com/player-news/jameson-williams-could-be-well-positioned-for-big-plays-in-week-12/2004807",
+          "title": "Jameson Williams Week 12 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyCpyDvjz0BNvH5JkzdRrwRi6vs7z499dLEMkRHjXqyJdGL9wm99VKBBWC5AA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSZne71ZcKqPcIGx13deK--0CxcgJqPF-IWBgjtOloIEkhVVHWzYfN_oe5am8"
+        }
+      ]
+    },
+    {
+      "query": "jeffrey simmons",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T18:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50597866/bears-jeffery-simmons-defense-super-bowl",
+        "https://www.nytimes.com/athletic/7808919/2026/11/25/bears-lineman-jeffery-simmons-jersey/",
+        "https://www.freep.com/story/sports/nfl/lions/2026/11/24/detroit-lions-chicago-bears-jeffery-simmons/92943370007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNbOBXviljh2aclzoRvuzZV7DnzzPWZeyjzN9UOPY8fF2sdPDj3Jd9sIe0p10",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50597866/bears-jeffery-simmons-defense-super-bowl",
+          "title": "How Jeffery Simmons changed the Bears' defensive identity",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNbOBXviljh2aclzoRvuzZV7DnzzPWZeyjzN9UOPY8fF2sdPDj3Jd9sIe0p10"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7808919/2026/11/25/bears-lineman-jeffery-simmons-jersey/",
+          "title": "Jeffery Simmons is the dominant force the NFL can’t unsee - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRU2_7nGCA8d0l_PTVQSc6dxccxsjYY2c2DxSOq4z8ti3tBLtU3BfLiPXjph1c"
+        },
+        {
+          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/24/detroit-lions-chicago-bears-jeffery-simmons/92943370007/",
+          "title": "Lions will see whole new Bears defense in Thanksgiving game thanks to Jeffery Simmons",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSNQFgZ5wRoGltOSr11ZkLBWpDiow0MMCG0cEDrj-bnq5fr1A3Pxdyfiu6Cq3A"
+        }
+      ]
+    },
+    {
+      "query": "jack campbell",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T17:50:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/sports/nfl/lions/2026/11/26/jack-campbell-updates-detroit-lions-thanksgiving/92929179007/",
+        "https://www.usatoday.com/story/sports/nfl/lions/2026/11/26/jack-campbell-injury-update-lions-46-wristbands/92963101007/",
+        "https://www.cbsnews.com/detroit/video/detroit-lions-playing-for-jack-campbell-on-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MSskHcF4g-GS5gb__XyuKgMno8oPnaGmMvybrZv7fEKGqAKZz6HxLvYAwzA",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/sports/nfl/lions/2026/11/26/jack-campbell-updates-detroit-lions-thanksgiving/92929179007/",
+          "title": "What's the latest on Detroit Lions LB Jack Campbell? What we know at Thanksgiving",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MSskHcF4g-GS5gb__XyuKgMno8oPnaGmMvybrZv7fEKGqAKZz6HxLvYAwzA"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/nfl/lions/2026/11/26/jack-campbell-injury-update-lions-46-wristbands/92963101007/",
+          "title": "Lions honoring Jack Campbell by wearing No. 46 wristbands on Thanksgiving",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVWJqVCF3PsQX-yLPzVxKEWWGsTZoFtXBrE46wDT813mxCEWh5yrEXj7G4WkA"
+        },
+        {
+          "url": "https://www.cbsnews.com/detroit/video/detroit-lions-playing-for-jack-campbell-on-thanksgiving/",
+          "title": "Detroit Lions playing for Jack Campbell on Thanksgiving",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6eAMnHlmIgUjB-ZHrlwfodWiRB40pHygvMg1Y-cfO2nGh56tQyoi7lFWGV04"
+        }
+      ]
+    },
+    {
+      "query": "fubo",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T17:50:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/it/news/ni66128914/?ref_=nwc_art_perm",
+        "https://www.hindustantimes.com/entertainment/tv/jiostar-takes-indian-entertainment-films-and-news-to-us-viewers-through-fubo-101795682590648.html",
+        "https://www.telegraphindia.com/entertainment/jiostar-brings-star-plus-colors-and-more-television-channels-to-us-homes-via-fubo/cid/2191399"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1azqeYjDz6GAvHCSpNXZ8rTedeiwYhxPU_cDcEykir6ScGHvHH4p9pJ37X6U",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/it/news/ni66128914/?ref_=nwc_art_perm",
+          "title": "JioStar Brings Star Plus, Colors and Five More Indian TV Channels to Fubo in the U.S.",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1azqeYjDz6GAvHCSpNXZ8rTedeiwYhxPU_cDcEykir6ScGHvHH4p9pJ37X6U"
+        },
+        {
+          "url": "https://www.hindustantimes.com/entertainment/tv/jiostar-takes-indian-entertainment-films-and-news-to-us-viewers-through-fubo-101795682590648.html",
+          "title": "JioStar takes Indian entertainment, films and news to US viewers through Fubo | Hindustan Times",
+          "publisher": "Hindustan Times",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.telegraphindia.com/entertainment/jiostar-brings-star-plus-colors-and-more-television-channels-to-us-homes-via-fubo/cid/2191399",
+          "title": "JioStar brings Star Plus, Colors and more television channels to US homes via Fubo",
+          "publisher": "Telegraph India",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK4Ow2jgP0mW82kEdV14vNdpRM14iM1VcXmIVtc6wSYnLaaL0aIhybnR3KVAw"
+        }
+      ]
+    },
+    {
+      "query": "why do the lions always play on thanksgiving",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T17:50:00Z",
+      "related_news_urls": [
+        "https://www.fox2detroit.com/news/lions-thanksgiving-ford-field-menu-2026",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-lions-despite-their-resurgence-are-1-8-in-their-last-nine-thanksgiving-games",
+        "https://www.foxsports.com/stories/nfl/why-lions-cowboys-host-nfl-thanksgiving-games"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPgktsUuf8c--kc6N5awCt8DQ0GIaP56wEpE18Iw6qCPK5g6mWlxcdvwrilDU",
+      "image_credit": "FOX 2 Detroit",
+      "news": [
+        {
+          "url": "https://www.fox2detroit.com/news/lions-thanksgiving-ford-field-menu-2026",
+          "title": "Lions on Thanksgiving: Here’s what Ford Field is serving for dinner",
+          "publisher": "FOX 2 Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPgktsUuf8c--kc6N5awCt8DQ0GIaP56wEpE18Iw6qCPK5g6mWlxcdvwrilDU"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/the-lions-despite-their-resurgence-are-1-8-in-their-last-nine-thanksgiving-games",
+          "title": "The Lions, despite their resurgence, are 1-8 in their last nine Thanksgiving games",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROhf80O_y9VDc_Hh0XYmvodfyxZC69yhIQWlo6Z_z-xJzQrBSr7S9Q28g-f6U"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/nfl/why-lions-cowboys-host-nfl-thanksgiving-games",
+          "title": "Why The Lions And Cowboys Host NFL Thanksgiving Games Every Year",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSwC6ap2f8BJd_r8mRs6eA3u4i-6RSHtU1cEaQEuckVCVRPgDPYDMNbdhYepI"
+        }
+      ]
+    },
+    {
+      "query": "dalton kincaid",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T17:50:00Z",
+      "related_news_urls": [
+        "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
+        "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-christian-benford-among-five-bills-listed-as-questionable"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw",
+      "image_credit": "Buffalo Bills",
+      "news": [
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
+          "title": "Buffalo Bills injury report vs. Chiefs | Week 12 Thanksgiving",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
+          "title": "Bills TE Kincaid, CB Benford among 5 starters who are questionable vs. Chiefs",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP9hYXCzZR7RooYyfIsdmnT7gQ0oytxJbhHHPPC-5Z0DGt7fNA5hCg7XHI5t4"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-christian-benford-among-five-bills-listed-as-questionable",
+          "title": "Dalton Kincaid, Christian Benford among five Bills listed as questionable",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5vYj59G0tGebO4IiuLbIpS3wpnZeYaW8YdY5U5h_7msKhgzwxpQ6tIatBz5w"
+        }
+      ]
+    },
+    {
+      "query": "benfica",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T17:40:00Z",
+      "related_news_urls": [
+        "https://24horas.pt/noticia/fora-de-jogo-marco-silva-com-medo-de-perder-prestianni",
+        "https://sapo.pt/artigo/lenglet-e-a-final-da-europa-league-temos-condicoes-para-la-chegar-6b0864fbed7962199d344a91",
+        "https://maisfutebol.iol.pt/jogo/aominuto/13841071"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6ZhTJBurZALbvZwizzq3On7U9IodSYxWnLUaKXRobgoPwCx1zo8w-nhYQzE",
+      "image_credit": "24Horas.pt",
+      "news": [
+        {
+          "url": "https://24horas.pt/noticia/fora-de-jogo-marco-silva-com-medo-de-perder-prestianni",
+          "title": "FORA DE JOGO: MARCO SILVA COM MEDO DE PERDER PRESTIANNI",
+          "publisher": "24Horas.pt",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc6ZhTJBurZALbvZwizzq3On7U9IodSYxWnLUaKXRobgoPwCx1zo8w-nhYQzE"
+        },
+        {
+          "url": "https://sapo.pt/artigo/lenglet-e-a-final-da-europa-league-temos-condicoes-para-la-chegar-6b0864fbed7962199d344a91",
+          "title": "Lenglet e a final da Europa League: «Temos condições para lá chegar»",
+          "publisher": "SAPO",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaQx6JF8VNZMPwlIk_aSmq_MjSExgJt-yfJD20GtxkpZVJmHlaMu18Y4MHld0"
+        },
+        {
+          "url": "https://maisfutebol.iol.pt/jogo/aominuto/13841071",
+          "title": "Viktoria Plzen X Benfica - AO MINUTO",
+          "publisher": "Maisfutebol",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcbRqo8id4kyQvsIQRcse54FBWuy9qh7iUMagrKrD1BhfsY3gU5WujdTh9NIM"
         }
       ]
     },
     {
       "query": "penei sewell",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-26T17:40:00Z",
       "related_news_urls": [
         "https://www.espn.com/nfl/recap/_/gameId/401873072",
@@ -108,251 +327,6 @@
           "publisher": "Detroit Lions",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA0zjZyxuNEF1BN9zQ0JL637n1SIhfrWuARMSy4e9x93TkB41rS4R86FyJTHw"
-        }
-      ]
-    },
-    {
-      "query": "youtube tv",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T17:30:00Z",
-      "related_news_urls": [
-        "https://www.androidpolice.com/youtube-tv-black-friday-promotion/",
-        "https://9to5google.com/2026/11/26/youtube-streaming-black-friday-sales/",
-        "https://cordcuttersnews.com/save-75-on-youtube-tv-with-this-deal/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb70iskZ7y9h-uV26fRTPSMzeFl9vj2t2NKmDz7Qy6jPYWehL6I5N0GkQlSQ",
-      "image_credit": "Android Police",
-      "news": [
-        {
-          "url": "https://www.androidpolice.com/youtube-tv-black-friday-promotion/",
-          "title": "YouTube TV's latest promotion could save you $132 over six months",
-          "publisher": "Android Police",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb70iskZ7y9h-uV26fRTPSMzeFl9vj2t2NKmDz7Qy6jPYWehL6I5N0GkQlSQ"
-        },
-        {
-          "url": "https://9to5google.com/2026/11/26/youtube-streaming-black-friday-sales/",
-          "title": "YouTube’s Black Friday sale could save you as much as $66 on streaming services",
-          "publisher": "9to5Google",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSK58A0LTvLpY-842XE4geDl4P_cBULMV1AerIFkBzy9f-rg0jocImaomqx1hg"
-        },
-        {
-          "url": "https://cordcuttersnews.com/save-75-on-youtube-tv-with-this-deal/",
-          "title": "Save $75 on YouTube TV With This Deal",
-          "publisher": "| Cord Cutters News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWI67p4IhTKbPgRQii4PJ_nbEIhmWk9L1vx1VOFlWyxKpJocwehpc5uxjafro"
-        }
-      ]
-    },
-    {
-      "query": "father",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T17:30:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/california/story/2026-11-24/father-plunges-500-feet-while-helping-son-on-icy-california-mountain",
-        "https://www.theguardian.com/us-news/2026/nov/27/california-father-dies-helping-son-mountain-hike",
-        "https://ktla.com/news/california/mount-baden-powell-hiker-fatal-fall-teenage-son/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfO6tx_tfnEEWn2eeSt3wvsUhvfuEo2lYQvkHr2aoqJLwisDwT2fAhQy_giJg",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-24/father-plunges-500-feet-while-helping-son-on-icy-california-mountain",
-          "title": "Father dies in 500-foot fall while helping son on icy California mountain trail",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfO6tx_tfnEEWn2eeSt3wvsUhvfuEo2lYQvkHr2aoqJLwisDwT2fAhQy_giJg"
-        },
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/27/california-father-dies-helping-son-mountain-hike",
-          "title": "Father dies while trying to save teen son on icy California mountain hike",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DH_OWbKEb_7l7qz1tObC3yhLzQkUMdnb8na5mH36DO-THpqGbov5OMAG-ws"
-        },
-        {
-          "url": "https://ktla.com/news/california/mount-baden-powell-hiker-fatal-fall-teenage-son/",
-          "title": "California father falls 500 feet to his death while trying to help son",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBwzwjTYKq3kMdjZb48upAyhtBy0luu7cmSEwOnF9mRWHVWYMoJwQKz1kI-ig"
-        }
-      ]
-    },
-    {
-      "query": "wladimir klitschko hayden panettiere probate",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T17:30:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
-        "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
-        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
-          "title": "Hayden Panettiere left behind a massive fortune for her 11-year-old daughter, new court docs reveal",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA"
-        },
-        {
-          "url": "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
-          "title": "Hayden Panettiere’s Estate Valued at Over $6 Million, Ex Wladimir Klitschko Claims",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTa239G78IcDE7ZJXdWI46Myt8PSykWNQFfeon_7_yFr1ofyzWqBdApG8grpE"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/",
-          "title": "Hayden Panettiere left behind $6.2M estate after her death at 36",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdHBSXpnmwgAs4I9MvA3iO5WibYCCdjLU4dZCEwasHEYzYmVViv4PjRChaeHc"
-        }
-      ]
-    },
-    {
-      "query": "nfl weather",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T17:30:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/weather-news/weather-nfl-football-holiday-thanksgiving-matchups-sports",
-        "https://weather.com/2026/11/25/sports-recreation/thanksgiving-tailgate-ncaa-nfl-football-forecast",
-        "https://www.fox.com/watch/clip/fmc-suqg21nthxjdr1ls/wake-up-barstool-hosts-debate-the-whether-or-not-betting-system"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnXklof-tpZs25nn-ZFYp30PhktnFpdDKQii4eHr7ZBIkgn6I9_REmFhcW0Y",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/weather-news/weather-nfl-football-holiday-thanksgiving-matchups-sports",
-          "title": "Weather could be a game changer for these 5 NFL matchups over a stormy Thanksgiving weekend",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnXklof-tpZs25nn-ZFYp30PhktnFpdDKQii4eHr7ZBIkgn6I9_REmFhcW0Y"
-        },
-        {
-          "url": "https://weather.com/2026/11/25/sports-recreation/thanksgiving-tailgate-ncaa-nfl-football-forecast",
-          "title": "Tailgate forecast: Thanksgiving football to college rivalry weekend",
-          "publisher": "The Weather Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUZFUP2sBgpZpY0efVbP2DmsvQosnqyFJuGbm6aU47fgobBj2yf4C-qMyJi8"
-        },
-        {
-          "url": "https://www.fox.com/watch/clip/fmc-suqg21nthxjdr1ls/wake-up-barstool-hosts-debate-the-whether-or-not-betting-system",
-          "title": "Wake Up Barstool hosts debate the 'Whether or Not' betting system",
-          "publisher": "FOX One",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3EtMw0s3FnurEMP89JB2aRBDxzPpLUynDsoAg0ekzSmD9PLX3m0KfkIzSqIc"
-        }
-      ]
-    },
-    {
-      "query": "dan campbell",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T17:20:00Z",
-      "related_news_urls": [
-        "https://www.mlive.com/lions/2026/11/hall-of-fame-coach-brings-dan-campbell-to-tears-with-powerful-message.html",
-        "https://www.si.com/nfl/lions/navigate-two-big-losses-dan-campbell-leadership",
-        "https://sports.yahoo.com/nfl/articles/dont-change-bill-cowher-praises-150050403.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6-aOHAyUNMMM--9sC3GFz5dW_1f_tTlnoaxp_3khlmNiBP9vvq71ZJ_--hhg",
-      "image_credit": "MLive.com",
-      "news": [
-        {
-          "url": "https://www.mlive.com/lions/2026/11/hall-of-fame-coach-brings-dan-campbell-to-tears-with-powerful-message.html",
-          "title": "Hall of Fame coach brings Dan Campbell to tears with powerful message",
-          "publisher": "MLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6-aOHAyUNMMM--9sC3GFz5dW_1f_tTlnoaxp_3khlmNiBP9vvq71ZJ_--hhg"
-        },
-        {
-          "url": "https://www.si.com/nfl/lions/navigate-two-big-losses-dan-campbell-leadership",
-          "title": "As Lions Navigate Two Big Losses, Dan Campbell’s Leadership Proving More Valuable Than Ever",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqo1XLZmROkMANecmAvdQIxqkSKNeXVeCE8ylRuHrmWj9i6_qLhNKTFY7czEo"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/dont-change-bill-cowher-praises-150050403.html",
-          "title": "'Don't you change': Bill Cowher praises Dan Campbell",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMmUMtEOW13ch5dNbTXUWpoRMdgCrLD-txm2A-B-OoifVbMxFjZ5mrqy-PQKs"
-        }
-      ]
-    },
-    {
-      "query": "cbs",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T17:20:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/news/explainer-china-got-access-nvidias-193901126.html",
-        "https://www.ft.com/content/e6557cf5-1c02-4ff7-abdd-f0682298b8c1",
-        "https://www.nytimes.com/video/world/100000011305753/how-the-nvidia-scandal-fits-into-a-chinese-spy-campaign.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeD3MezUOfVlYb-5HXwyM2zWqjMeVBY2ajvXa7bRV4hA_2yZi5tZTCuOfFLKM",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/news/explainer-china-got-access-nvidias-193901126.html",
-          "title": "Explainer-How China got access to Nvidia's AI chips despite rules to stop them",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeD3MezUOfVlYb-5HXwyM2zWqjMeVBY2ajvXa7bRV4hA_2yZi5tZTCuOfFLKM"
-        },
-        {
-          "url": "https://www.ft.com/content/e6557cf5-1c02-4ff7-abdd-f0682298b8c1",
-          "title": "Nvidia fallout exposes China’s fragility on frontier AI",
-          "publisher": "Financial Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzY3G3EQp6YlMH_9EcepMNFD868cnqYSzeCBkjbk56e_RtgkXCPJUl4uRzOM0"
-        },
-        {
-          "url": "https://www.nytimes.com/video/world/100000011305753/how-the-nvidia-scandal-fits-into-a-chinese-spy-campaign.html",
-          "title": "Video: How the Nvidia Scandal Fits Into a Chinese Spy Campaign",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQZLxwnNW1I1-hTNg8a3rMb4BuMrUL0bNdFGbKD6XewQxk_tGbPvDP-n0QfM"
-        }
-      ]
-    },
-    {
-      "query": "john o'hurley",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T17:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/john-o-hurley-wife-lisa-160023257.html",
-        "https://www.imdb.com/de/news/ni66129446/?ref_=nwc_art_perm",
-        "https://www.imdb.com/news/ni66129446/?ref_=nwc_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDm_bpIL_m9RlFaWq-6vn7pqJE5MlzHhExQ6lr9OAeJ7ovTTmh5peJYvtB1Kw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/john-o-hurley-wife-lisa-160023257.html",
-          "title": "All About John O’Hurley’s Wife Lisa Mesloh",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDm_bpIL_m9RlFaWq-6vn7pqJE5MlzHhExQ6lr9OAeJ7ovTTmh5peJYvtB1Kw"
-        },
-        {
-          "url": "https://www.imdb.com/de/news/ni66129446/?ref_=nwc_art_perm",
-          "title": "All About John O’Hurley’s Wife Lisa Mesloh, Their Relationship & More",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-csDVbM4U8qCT5UXzPlNzxj9kW5bXgG45qOtYRxBg-bTJ9M6wAWEzN8kY5OI"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66129446/?ref_=nwc_art_perm",
-          "title": "All About John O’Hurley’s Wife Lisa Mesloh, Their Relationship & More",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-csDVbM4U8qCT5UXzPlNzxj9kW5bXgG45qOtYRxBg-bTJ9M6wAWEzN8kY5OI"
         }
       ]
     }
