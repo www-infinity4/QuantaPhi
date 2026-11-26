@@ -159,3 +159,19 @@ test('private Gemini writer refuses redirects without following provider Locatio
   }),/gemini_writer_provider_unavailable/);
  assert.equal(calls,1);
 });
+
+
+test('Gemini writer bounds actual response bytes before JSON parsing and cancels oversized streams',async()=>{
+ const {consultGeminiWriter}=await import('../workers/infinity-rogers/ai-collaboration.mjs');
+ const active={...env,GEMINI_WRITER_ENABLED:'1'};
+ const options={messages:[{role:'system',content:'Return JSON.'},{role:'user',content:'Fixture.'}],max_tokens:100};
+ let canceled=false,pulls=0;
+ const stream=new ReadableStream({pull(controller){pulls++;controller.enqueue(new Uint8Array(262145));},cancel(){canceled=true;}});
+ await assert.rejects(consultGeminiWriter(active,options,async()=>new Response(stream)),/gemini_writer_output_too_large/);
+ assert.equal(canceled,true);
+ assert.ok(pulls<=2);
+ let declaredCanceled=false;
+ const declared=new ReadableStream({start(controller){controller.enqueue(new Uint8Array(1));},cancel(){declaredCanceled=true;}});
+ await assert.rejects(consultGeminiWriter(active,options,async()=>new Response(declared,{headers:{'Content-Length':'262145'}})),/gemini_writer_output_too_large/);
+ assert.equal(declaredCanceled,true);
+});
