@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T10:31:13.151555Z",
+  "checked_at": "2026-11-26T11:01:24.965741Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "butterball turkey recall 2026",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T10:30:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
+        "https://www.nacionale.com/en/articles/why-is-salmonella-allowed-in-raw-turkey-butterball-usda-rules-no-recall",
+        "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/environment/2026/nov/25/turkey-salmonella-butterball",
+          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE8Yis4JwgQrAexgmLFA6Ic3Hd5j7lOWoXAn6z5J_EMjxDDpJFz98PUsNlYTg"
+        },
+        {
+          "url": "https://www.nacionale.com/en/articles/why-is-salmonella-allowed-in-raw-turkey-butterball-usda-rules-no-recall",
+          "title": "Why is salmonella allowed in raw turkey? The US rules behind the Butterball findings",
+          "publisher": "Nacionale",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGFzyvIvIg6fxD-RsPDheBFrAx46lf1ONSZhFfhP50So80S8aMBQJVbOBo2VQ"
+        },
+        {
+          "url": "https://www.inkl.com/news/high-levels-of-salmonella-found-in-some-products-from-nations-biggest-turkey-producer",
+          "title": "High levels of salmonella found in some products from nation’s biggest turkey producer",
+          "publisher": "inkl",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiajHZyI2rzia5Z0od3bmO6VNGEEi8qkzZe_tfSuC1hFaFQj5Y6-1rZOg1U_M"
+        }
+      ]
+    },
+    {
+      "query": "sophie cunningham maxim photos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T10:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/wnba/articles/sophie-cunningham-could-one-christian-132102797.html",
+        "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
+        "https://swimsuit.si.com/swimnews/sophie-cunningham-maxim-cover-si-swimsuit-throwback"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmSgGDqot9rmbauCyWXihCJ0WEvM4fTq80Q4U3RCGIR2mx1p2sPc4r_dugMLs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/wnba/articles/sophie-cunningham-could-one-christian-132102797.html",
+          "title": "\"Sophie Cunningham could have been one\" – Christian figures drop Fever star as role model after provocative Maxim shoot",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmSgGDqot9rmbauCyWXihCJ0WEvM4fTq80Q4U3RCGIR2mx1p2sPc4r_dugMLs"
+        },
+        {
+          "url": "https://www.christianpost.com/news/sophie-cunningham-draws-pushback-for-going-topless-in-maxim.html",
+          "title": "Sophie Cunningham draws pushback from Christian scholars for posing topless in Maxim",
+          "publisher": "Christian Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTscBTap0geKoIVKpPrr1KH19_GfA8ndRo-CtPDsgznb2bO9c37uoKT4V68P1w"
+        },
+        {
+          "url": "https://swimsuit.si.com/swimnews/sophie-cunningham-maxim-cover-si-swimsuit-throwback",
+          "title": "Sophie Cunningham’s New ‘Maxim’ Cover Is Bringing Us Back to Her SI Swimsuit Debut",
+          "publisher": "Sports Illustrated Swimsuit",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCeAyKaL1FanzipPse6JsReoJ_c0oKcBFHMFVMsWexoOa6Fi98db1b3pB-3JU"
+        }
+      ]
+    },
     {
       "query": "trump-xi summit",
       "approx_searches": "200+",
@@ -78,12 +148,12 @@
     },
     {
       "query": "india a vs sri lanka a",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-26T09:50:00Z",
       "related_news_urls": [
         "https://m.cricbuzz.com/live-cricket-scores/177210/inda-vs-sla-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
         "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
-        "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms"
+        "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE",
       "image_credit": "Cricbuzz",
@@ -103,52 +173,17 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a6ITVl39nsRlxE08QJ9fgMNCWjLUZGjZOc1Jcij_Kikm2zzsMGt-Axbk9eM"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/sports/cricket/india-a-vs-sri-lanka-a-1st-semi-final-acc-mens-asia-cup-rising-stars-2026-live-score-match-today-scorecard-result-asian-town-cricket-stadium/liveblog/136181967.cms",
-          "title": "India A vs Sri Lanka A Live Score, 1st Semi Final Asia Cup Rising Stars 2026: Vaibhav Sooryavanshi, Abhishek Sharma off to solid start vs Sri Lanka A",
-          "publisher": "The Times of India",
+          "url": "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
+          "title": "India A vs Sri Lanka A ACC Men's Asia Cup Rising Stars live score, toss winner, winning probability, result and highlights from Doha",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1eR8T_SBWx5ndE-N9OPNt6VdqeuBMov7y0xLukwMIwNp7uMRL9N7cRWpnV40"
-        }
-      ]
-    },
-    {
-      "query": "gma",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T09:50:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-free-shipping-bonanza-138326554",
-        "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-        "https://abcnews.com/video/138245558/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPjf9vNFmYGEDZMi6TP9MvK-NVjaNt4hwWfn45cVtO7cdwPiJzmUlnnD9qdo",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/gma-deals-steals-free-shipping-bonanza-138326554",
-          "title": "'GMA' Deals & Steals Free Shipping Bonanza",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwPjf9vNFmYGEDZMi6TP9MvK-NVjaNt4hwWfn45cVtO7cdwPiJzmUlnnD9qdo"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-          "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
-        },
-        {
-          "url": "https://abcnews.com/video/138245558/",
-          "title": "'GMA' Deals & Steals for $20 and under",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRV7uct1ft_-I92xNN2Cmx0XYKxs4-fBymnAets7vfEGAxFg7hTaXK-ELFanxI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGR24PcZ6gmwcatnLVDOOqtssfLENgpM57MCtpYYSa0_N5MAzdOFI-5Zue8vM"
         }
       ]
     },
     {
       "query": "modot",
-      "approx_searches": "10000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-26T09:40:00Z",
       "related_news_urls": [
         "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
@@ -217,6 +252,41 @@
       ]
     },
     {
+      "query": "3",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T09:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/crypto/articles/top-3-crypto-stocks-watch-101104165.html",
+        "https://www.marketbeat.com/instant-alerts/list-cryptocurrency-stocks-to-watch-today-november-24th-2026-11-24/",
+        "https://www.marketbeat.com/instant-alerts/list-best-cryptocurrency-stocks-worth-watching-november-25th-2026-11-25/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmUGa_Ev_7jj3e1eA7H1j9EuPNpH4h8QChdEtEbTpFaHDG03LfO10-SfFQEcM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/crypto/articles/top-3-crypto-stocks-watch-101104165.html",
+          "title": "Top 3 Crypto Stocks To Watch In November 2026",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmUGa_Ev_7jj3e1eA7H1j9EuPNpH4h8QChdEtEbTpFaHDG03LfO10-SfFQEcM"
+        },
+        {
+          "url": "https://www.marketbeat.com/instant-alerts/list-cryptocurrency-stocks-to-watch-today-november-24th-2026-11-24/",
+          "title": "Cryptocurrency Stocks To Watch Today - November 24th",
+          "publisher": "MarketBeat",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgq7KjZpnzlg7mK_R57d78bweo47fHn24xNkzkBn5vWeqGa1EcezeNX76PZmU"
+        },
+        {
+          "url": "https://www.marketbeat.com/instant-alerts/list-best-cryptocurrency-stocks-worth-watching-november-25th-2026-11-25/",
+          "title": "Best Cryptocurrency Stocks Worth Watching - November 25th",
+          "publisher": "MarketBeat",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYj9tQVOkS0agAbUZYKYVp3oMG_8XktDRzBeAsUBGba-2UMfexFDpTdl_y_E"
+        }
+      ]
+    },
+    {
       "query": "the legend of zelda wind waker",
       "approx_searches": "200+",
       "published_at": "2026-11-26T08:50:00Z",
@@ -256,103 +326,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-26T08:50:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
-        "https://www.cincinnati.com/story/sports/college/university-of-cincinnati/2026/11/24/cincinnati-bearcats-face-georgia-boston-college-espn-events-games/92918908007/"
+        "https://www.foxsports.com/articles/cbk/ucf-squares-off-against-boston-college",
+        "https://www.sportsgambler.com/betting-tips/basketball/boston-college-eagles-vs-ucf-knights-prediction-odds-2026-11-26/",
+        "https://247sports.com/college/florida/article/undefeated-boston-college-seeks-seventh-straight-win-against-ucf-in-espn-invitational-293319067/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk",
+      "image_credit": "FOX Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/georgia/article/georgia-basketball-takes-on-cincinnati-to-open-espn-events-invitational-293294548/",
-          "title": "Georgia basketball takes on Cincinnati to open ESPN Events Invitational",
+          "url": "https://www.foxsports.com/articles/cbk/ucf-squares-off-against-boston-college",
+          "title": "UCF squares off against Boston College",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/boston-college-eagles-vs-ucf-knights-prediction-odds-2026-11-26/",
+          "title": "Boston College vs UCF Prediction, Picks & Odds | 26 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ6UDqjKXIbW7x9dQN8Ss3-Y6v-vrwu1qj2_Q5yqnYAK2950VubtMmtj6A4Mzo"
+        },
+        {
+          "url": "https://247sports.com/college/florida/article/undefeated-boston-college-seeks-seventh-straight-win-against-ucf-in-espn-invitational-293319067/",
+          "title": "Undefeated Boston College Seeks Seventh Straight Win Against UCF in ESPN Invitational",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRN0Q6KnrNv_8jCzVvqcbeIfaPpC6qBQ8hghgMbUrReBPfGp7rao09so3Hzp6s"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/georgia-vs-cincinnati-prediction-pick-040040715.html",
-          "title": "Georgia vs Cincinnati Prediction, Pick, College Basketball Odds for Thursday, Nov. 26",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSE0w0BVZBve0YU8TelH65ObYI8kn7uIdIwnqt3c0LyLM76e3NBGKBNleOheVs"
-        },
-        {
-          "url": "https://www.cincinnati.com/story/sports/college/university-of-cincinnati/2026/11/24/cincinnati-bearcats-face-georgia-boston-college-espn-events-games/92918908007/",
-          "title": "UC Bearcats face Georgia, Boston College in Thanksgiving holiday hoops",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAfy9jDypPUYwEkVpnIMh58uqP2QB28K8DIh6XXVfPEX5B3ZCsDuuz6I5skdc"
-        }
-      ]
-    },
-    {
-      "query": "dominion power outage",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T08:20:00Z",
-      "related_news_urls": [
-        "https://www.wavy.com/weather/severe-weather/coastal-storm-warning-expected-to-have-significant-impacts-on-region/",
-        "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
-        "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLJ2GftSDG_4P2VvZY3AVinEi36o16xOwWpZtLSjpPQAJZ3NjNblXbuGBfRI",
-      "image_credit": "WAVY.com",
-      "news": [
-        {
-          "url": "https://www.wavy.com/weather/severe-weather/coastal-storm-warning-expected-to-have-significant-impacts-on-region/",
-          "title": "Coastal storm warning expected to have significant impacts on region",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLJ2GftSDG_4P2VvZY3AVinEi36o16xOwWpZtLSjpPQAJZ3NjNblXbuGBfRI"
-        },
-        {
-          "url": "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
-          "title": "Virginia Beach braces for Thanksgiving storm as officials warn of flooding, strong winds and rough surf",
-          "publisher": "13newsnow.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrCmdtet7Yqrp620ZvC20BSbywwsvpZ_xRuDkMqeiUXffxvI6V9-fLA3sdumM"
-        },
-        {
-          "url": "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/",
-          "title": "Damaging winds, heavy rain and flooding expected ahead of Thanksgiving storm in Hampton Roads",
-          "publisher": "The Virginian-Pilot",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLgz37HFJNo91iee19ijJ3MczjEpdJZPKBvZHLDYXEedHSGWTvIgPow1Lwp6s"
-        }
-      ]
-    },
-    {
-      "query": "dennys",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T08:10:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-        "https://gizmodo.com/dennys-wants-everyone-to-know-its-proud-of-jensen-huang-2000845700",
-        "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShpTFrpXzpE01P5kEMSYqsoOLhfS1MfZS-_rBZKNaqcarKRl9mY_qFOsVrPMM",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/26/dennys-jensen-huang-nvidia.html",
-          "title": "‘Your booth is waiting’: Denny’s welcomes Jensen Huang back as Nvidia CEO",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShpTFrpXzpE01P5kEMSYqsoOLhfS1MfZS-_rBZKNaqcarKRl9mY_qFOsVrPMM"
-        },
-        {
-          "url": "https://gizmodo.com/dennys-wants-everyone-to-know-its-proud-of-jensen-huang-2000845700",
-          "title": "Denny's Says It's 'Proud' of Its Association With Jensen Huang, X Post Says",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC98FuE1c82HsvCANL_wBmcHgHTLVJy3FmCcR31Fv0fHq_dkYsxN0pOhFUMm8"
-        },
-        {
-          "url": "https://nypost.com/2026/11/26/us-news/dennys-faces-heat-over-gushy-tribute-to-nvidia-ceo-jensen-huang-just-put-the-pancakes-on-bro/",
-          "title": "Denny’s faces heat over gushy tribute to Nvidia CEO Jensen Huang: 'Just put the pancakes on bro'",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkQZ67XsJtGG_8OsZ24hs90RvPamD4yzk8jqHT74ITB_CJI_Q1av5MY9wQFN0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTD7q0PT-VXMMx_tbrs5i9PhiyjW3jH9k7FbbbpLGwkZ-3cTTU2XTzLc-GTiQA"
         }
       ]
     }
