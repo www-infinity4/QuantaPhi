@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T09:31:17.427853Z",
+  "checked_at": "2026-11-26T10:01:33.166893Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "sl-a vs ind-a",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T09:40:00Z",
+      "related_news_urls": [
+        "https://www.cricbuzz.com/live-cricket-scores/177210/sla-vs-inda-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
+        "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
+        "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE",
+      "image_credit": "Cricbuzz",
+      "news": [
+        {
+          "url": "https://www.cricbuzz.com/live-cricket-scores/177210/sla-vs-inda-1st-semi-final-a1-v-b2-acc-mens-asia-cup-rising-stars-2026",
+          "title": "SLA vs INDA, 1st Semi-Final (A1 v B2), ACC Men's Asia Cup Rising Stars 2026 - Commentary",
+          "publisher": "Cricbuzz",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFCVRewPlB1g1cDEJndj0ecw8sS8pvly1_J1aMgR_WkDr5pruDMlWgboJdIxE"
+        },
+        {
+          "url": "https://sports.yahoo.com/cricket/articles/india-vs-sri-lanka-acc-070001370.html",
+          "title": "India A vs Sri Lanka A ACC Men's Asia Cup Rising Stars live score, toss winner, winning probability, result and highlights from Doha",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGR24PcZ6gmwcatnLVDOOqtssfLENgpM57MCtpYYSa0_N5MAzdOFI-5Zue8vM"
+        },
+        {
+          "url": "https://www.bcci.tv/matches/58d97fcd-1799-4ee2-9b5e-ae4faeb49467/sri-lanka-a-vs-india-a",
+          "title": "Sri Lanka A vs India A at Doha, DP World Men's Asia Cup Rising Stars, Semi-Final, 26 Nov 2026",
+          "publisher": "BCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8a6ITVl39nsRlxE08QJ9fgMNCWjLUZGjZOc1Jcij_Kikm2zzsMGt-Axbk9eM"
+        }
+      ]
+    },
+    {
+      "query": "modot",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T09:40:00Z",
+      "related_news_urls": [
+        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+        "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
+        "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE",
+      "image_credit": "KSDK",
+      "news": [
+        {
+          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
+          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
+          "publisher": "KSDK",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
+        },
+        {
+          "url": "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
+          "title": "A turkey of a winter storm",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto"
+        },
+        {
+          "url": "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving",
+          "title": "Winter Weather Advisory for Springfield area heading into Thanksgiving",
+          "publisher": "NPR Illinois",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX7tevYiIZCLmMrdnPNxBPOj_00h-pAiLGNdhh1J0MgMBWWINxcQ5ROhs2v84"
+        }
+      ]
+    },
+    {
+      "query": "buckingham jubilee gta 6 location",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T09:40:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/buckingham-jubilee-gta-6-location/",
+        "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
+        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGNf-0j0Yd_kVRgvB8wwv-H_hj20gOL_y728DSJqAV8pj6oceHAFdpGV1cyLQ",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/buckingham-jubilee-gta-6-location/",
+          "title": "Buckingham Jubilee GTA 6 Location – Where to Find the Rolls-Royce SUV",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGNf-0j0Yd_kVRgvB8wwv-H_hj20gOL_y728DSJqAV8pj6oceHAFdpGV1cyLQ"
+        },
+        {
+          "url": "https://insider-gaming.com/where-to-find-all-of-randys-wishlist-supercars-in-gta-6-car-locations-tips/",
+          "title": "Where to Find All of Randy’s Wishlist Supercars in GTA 6—Car Locations & Tips",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCKkyyQugbw078Lz92TrkLbaDIfTqSmFTr0cJ4-l3JC7wYcHOqWVbrda2qEJQ"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-pegassi-infernus-location/",
+          "title": "How to steal the Pegassi Infernus in GTA 6",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmBPjLjWCIFxpO0HKNlOJwdL7k3aiRang-7xa5YjhQyvYbiWdjzxEHq1_Nap4"
+        }
+      ]
+    },
+    {
+      "query": "egypt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T09:10:00Z",
+      "related_news_urls": [
+        "https://edition.cnn.com/2026/11/25/middleeast/cairo-egypt-tanker-fire-latam-intl",
+        "https://www.nbcnews.com/world/africa/fuel-tanker-crash-ignites-massive-fire-highway-surrounding-cairo-killi-rcna611418",
+        "https://www.reuters.com/world/africa/least-21-killed-blaze-after-vehicle-overturns-egypt-health-ministry-says-2026-11-25/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQw1lJi6KltvLQNKrAk1YUBBlQ-8l_XTlL2uwy82emXShovzNowl_MLBLabORU",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://edition.cnn.com/2026/11/25/middleeast/cairo-egypt-tanker-fire-latam-intl",
+          "title": "At least 31 killed in fuel tanker fire near Cairo, Egyptian authorities say",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQw1lJi6KltvLQNKrAk1YUBBlQ-8l_XTlL2uwy82emXShovzNowl_MLBLabORU"
+        },
+        {
+          "url": "https://www.nbcnews.com/world/africa/fuel-tanker-crash-ignites-massive-fire-highway-surrounding-cairo-killi-rcna611418",
+          "title": "Fuel tanker crash ignites a massive fire on a highway surrounding Cairo, killing at least 31 people",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMhbekPLwYkSF_gqPutRkHqG9PAjXUx0FJDoJEyH_QCFwXcScoMOtyWqVRTLM"
+        },
+        {
+          "url": "https://www.reuters.com/world/africa/least-21-killed-blaze-after-vehicle-overturns-egypt-health-ministry-says-2026-11-25/",
+          "title": "Thirty-one killed in fire after vehicle overturns in Egypt",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2vY7_eMo-Gfss8GY2Mr4JneFbEuHG9tSytTr4ShuHfNxiB_-KxjBlqWqtZ8"
+        }
+      ]
+    },
     {
       "query": "3",
       "approx_searches": "1000+",
@@ -46,26 +186,19 @@
       "approx_searches": "200+",
       "published_at": "2026-11-26T08:50:00Z",
       "related_news_urls": [
+        "https://demokratis.co.id/en/wind-waker-recomp-native-pc",
         "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
-        "https://screenrant.com/legend-of-zelda-wind-waker-pc-remaster/",
-        "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves"
+        "https://cwibc.co.id/en/wind-waker-recomp-pc-release"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo",
-      "image_credit": "OpenCritic",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AEFo3osRrIX4NS0PqaG_gD79avjS2Z4wf6Ld03HHJWtUu5g5kJFehGWeek0",
+      "image_credit": "Demokratis.co.id",
       "news": [
         {
-          "url": "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
-          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
-          "publisher": "OpenCritic",
+          "url": "https://demokratis.co.id/en/wind-waker-recomp-native-pc",
+          "title": "Wind Waker Recomp Brings Zelda Game to Native PC",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo"
-        },
-        {
-          "url": "https://screenrant.com/legend-of-zelda-wind-waker-pc-remaster/",
-          "title": "Legend Of Zelda: Wind Waker Is Finally Getting The Remaster It Deserves",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyjRYUcRhWbG_FGKs57iTgBu5achh_PIeG1AXaDjhV5BrmBzOKlCaRoJSpfj8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2AEFo3osRrIX4NS0PqaG_gD79avjS2Z4wf6Ld03HHJWtUu5g5kJFehGWeek0"
         },
         {
           "url": "https://opencritic.com/news/40302/legend-of-zelda-wind-waker-is-finally-getting-the-remaster-it-deserves",
@@ -73,6 +206,13 @@
           "publisher": "OpenCritic",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhELGaL5y2QOiWTLPIjyN9RPrNAVfH6Qw5-xJxj2JMBznJUL08dIMaZ5LWmCo"
+        },
+        {
+          "url": "https://cwibc.co.id/en/wind-waker-recomp-pc-release",
+          "title": "Wind Waker Recomp Brings Game to Native PC",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSzZK-y43t8EaVq7jCU3cwWf_UsSAqxHbujDbRkPdzQL1IEE2tHouYhGJmwc4w"
         }
       ]
     },
@@ -113,29 +253,29 @@
     },
     {
       "query": "dominion power outage",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-26T08:20:00Z",
       "related_news_urls": [
+        "https://www.wavy.com/weather/severe-weather/coastal-storm-warning-expected-to-have-significant-impacts-on-region/",
         "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
-        "https://www.wavy.com/news/local-news/parking-garages-open-in-chesapeake-vb-as-flooding-is-incoming/",
         "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrCmdtet7Yqrp620ZvC20BSbywwsvpZ_xRuDkMqeiUXffxvI6V9-fLA3sdumM",
-      "image_credit": "13newsnow.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLJ2GftSDG_4P2VvZY3AVinEi36o16xOwWpZtLSjpPQAJZ3NjNblXbuGBfRI",
+      "image_credit": "WAVY.com",
       "news": [
+        {
+          "url": "https://www.wavy.com/weather/severe-weather/coastal-storm-warning-expected-to-have-significant-impacts-on-region/",
+          "title": "Coastal storm warning expected to have significant impacts on region",
+          "publisher": "WAVY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQLLJ2GftSDG_4P2VvZY3AVinEi36o16xOwWpZtLSjpPQAJZ3NjNblXbuGBfRI"
+        },
         {
           "url": "https://www.13newsnow.com/article/weather/severe-weather/virginia-beach-braces-for-thanksgiving-storm-as-officials-warn-of-flooding-strong-winds-and-rough-surf/291-1351fd8f-3765-49b7-9146-cf3eda651538",
           "title": "Virginia Beach braces for Thanksgiving storm as officials warn of flooding, strong winds and rough surf",
           "publisher": "13newsnow.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrCmdtet7Yqrp620ZvC20BSbywwsvpZ_xRuDkMqeiUXffxvI6V9-fLA3sdumM"
-        },
-        {
-          "url": "https://www.wavy.com/news/local-news/parking-garages-open-in-chesapeake-vb-as-flooding-is-incoming/",
-          "title": "Cities to open parking garages ahead of coastal storms, flooding",
-          "publisher": "WAVY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT04S4aDviMGfGhDdjwjwTJHnu14Gt7CAUwXMnB6zNPwVqcSjAgH2DvJ8rs9LE"
         },
         {
           "url": "https://www.pilotonline.com/2026/11/25/thanksgiving-storm-could-bring-heavy-rain-flooding-to-hampton-roads/",
@@ -182,48 +322,13 @@
       ]
     },
     {
-      "query": "st louis basketball",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T08:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-basketball/news/saint-louis-holds-off-stanford-despite-julius-prices-31-points/",
-        "https://www.stltoday.com/sports/college/slu/video_53249085-4ea7-4f8d-986e-2d75bb8b48d9.html",
-        "https://www.sportsgambler.com/betting-tips/basketball/stanford-cardinal-vs-saint-louis-billikens-prediction-odds-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/saint-louis-holds-off-stanford-despite-julius-prices-31-points/",
-          "title": "Saint Louis holds off Stanford despite Julius Price's 31 points",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST5gIRgTUC8OhQ2VTDnBijsvQer7K0V15neqrmD1i-XJnod7ggl40LRLjItew"
-        },
-        {
-          "url": "https://www.stltoday.com/sports/college/slu/video_53249085-4ea7-4f8d-986e-2d75bb8b48d9.html",
-          "title": "'There's growth': Josh Schertz describes SLU's improvements vs. Stanford",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTTucsmcbuWvZxOaWeEoLj_MEdYIyLchxFId15mcS6D5Sag6u_AdPEyrrwx6W0"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/basketball/stanford-cardinal-vs-saint-louis-billikens-prediction-odds-2026-11-25/",
-          "title": "Stanford vs Saint Louis Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdL5CltRpJtMnW1mBgWhGBDOYJPsZVqIx0pSEXY7nmxg3NJRl1f9y9NZqd0Kk"
-        }
-      ]
-    },
-    {
       "query": "in n out",
       "approx_searches": "2000+",
       "published_at": "2026-11-26T07:50:00Z",
       "related_news_urls": [
         "https://www.nbclosangeles.com/news/local/sherman-oaks-in-n-out-racist-attack/3974349/",
-        "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/",
-        "https://people.com/woman-allegedly-yelled-racial-slurs-at-mother-and-daughter-in-l-a-in-n-out-burger-complaint-12277337"
+        "https://people.com/woman-allegedly-yelled-racial-slurs-at-mother-and-daughter-in-l-a-in-n-out-burger-complaint-12277337",
+        "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZWTCbZmICcCQO4g0zPFAxLLVFyz9Gfeq7KdzdhIobbbpoxoLTIjK05CWwcNA",
       "image_credit": "NBC Los Angeles",
@@ -236,123 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTZWTCbZmICcCQO4g0zPFAxLLVFyz9Gfeq7KdzdhIobbbpoxoLTIjK05CWwcNA"
         },
         {
-          "url": "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/",
-          "title": "Woman targeted in racist attack at In-N-Out in Los Angeles speaks out",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToEGfl8RG7hSUUNCy-r5-fWWjZfCcgKQelF1Kpi5I9GmMPIjNXEM9TUD3-6YY"
-        },
-        {
           "url": "https://people.com/woman-allegedly-yelled-racial-slurs-at-mother-and-daughter-in-l-a-in-n-out-burger-complaint-12277337",
           "title": "Woman Allegedly Yelled Anti-Asian Slurs at Mom, Daughter at In-N-Out Burger, Now Being Investigated as Hate Crime",
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTFyKfYAz3kawEDhqq91dTxgu-FGKoorOStf7vZmO_ULW5DLdNqUbzAPp1wrQU"
-        }
-      ]
-    },
-    {
-      "query": "sam neill",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T07:50:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/film/2026/nov/26/the-fox-australian-movie-review-olivia-colman-sam-neill-dario-russo-emily-browning-jai-courtney",
-        "https://theconversation.com/the-fox-is-an-absurd-fable-like-comedy-that-explores-the-weirdness-of-being-human-290435",
-        "https://if.com.au/dario-russo-embraces-the-australian-and-the-absurd-with-the-fox/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJDAJsA-PjIYAWyhC9hQx7Ub0foyH283QLuYi3Ak55a8W6o4vy6Ort2WPsas4",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/26/the-fox-australian-movie-review-olivia-colman-sam-neill-dario-russo-emily-browning-jai-courtney",
-          "title": "The Fox review – talking animals are the least weird thing in this delightfully peculiar comedy",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJDAJsA-PjIYAWyhC9hQx7Ub0foyH283QLuYi3Ak55a8W6o4vy6Ort2WPsas4"
         },
         {
-          "url": "https://theconversation.com/the-fox-is-an-absurd-fable-like-comedy-that-explores-the-weirdness-of-being-human-290435",
-          "title": "The Fox is an absurd, fable-like comedy that explores the weirdness of being human",
-          "publisher": "The Conversation",
+          "url": "https://ktla.com/news/local-news/socal-mother-targeted-racist-attack-in-n-out/",
+          "title": "Woman targeted in racist attack at In-N-Out in Los Angeles speaks out",
+          "publisher": "KTLA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9Ji6FyrQabWOp_IDSd5j8YFt0ABGU9dZu8jLz2Mty-mW-eRw9yv1yz-Kp-9Y"
-        },
-        {
-          "url": "https://if.com.au/dario-russo-embraces-the-australian-and-the-absurd-with-the-fox/",
-          "title": "Dario Russo embraces the Australian and the absurd with ‘The Fox’",
-          "publisher": "IF Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkyCWUG8slzZcvKPbCk6id6L-lJ60wLinBTjJsjYXEX7qL5hf_A8r19jnHqUM"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 chapter 2 mission list",
-      "approx_searches": "100+",
-      "published_at": "2026-11-26T07:50:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/gta-grand-theft-auto-6-chapter-1-so-good",
-        "https://www.lwlies.com/cut-scenes/the-slow-cinema-of-grand-theft-auto-vi",
-        "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmlvqiG3VUYSxreokP38qJscIixGDvEFvSW0rDWlLxDt6MHB4umAlHpIoXCmE",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/gta-grand-theft-auto-6-chapter-1-so-good",
-          "title": "'GTA 6' chapter 1 is so good that I'm afraid to move on to chapter 2",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQmlvqiG3VUYSxreokP38qJscIixGDvEFvSW0rDWlLxDt6MHB4umAlHpIoXCmE"
-        },
-        {
-          "url": "https://www.lwlies.com/cut-scenes/the-slow-cinema-of-grand-theft-auto-vi",
-          "title": "The 'Slow Cinema' of Grand Theft Auto VI",
-          "publisher": "Little White Lies",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS__o4oBpC9fdfqXmHpxFlhTjRE4x5Y6xLoK3DQdS-mRu8O52BDlF8O3ehT718"
-        },
-        {
-          "url": "https://www.gamedeveloper.com/design/grand-theft-auto-vi-and-world-of-warcraft-forever-show-that-mundanity-is-having-a-moment",
-          "title": "Opinion: Grand Theft Auto VI and World of Warcraft: Forever show that mundanity is having a moment",
-          "publisher": "Game Developer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWfU3CUvOO71iIPc980GSDDXD9icigUpmpgXfIzQniSgi9MW-aq0T37dI7XUw"
-        }
-      ]
-    },
-    {
-      "query": "criminal profile gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T07:10:00Z",
-      "related_news_urls": [
-        "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-        "https://www.eurogamer.net/gta-6-empathy-criminal-profile-why-rockstar-added-it-rob-nelson",
-        "https://www.yahoo.com/entertainment/articles/gta-6-rewards-empathy-because-200144196.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y",
-      "image_credit": "Red Bull",
-      "news": [
-        {
-          "url": "https://www.redbull.com/us-en/gta-6-criminal-profile-levels-explained",
-          "title": "GTA 6 Criminal Profile: How the system works",
-          "publisher": "Red Bull",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJNjQbG0-B-AiOnJri-HG4MRRKAPSBmeVwci9ciMQpEyyUnEfyYjiQM0Yrx-Y"
-        },
-        {
-          "url": "https://www.eurogamer.net/gta-6-empathy-criminal-profile-why-rockstar-added-it-rob-nelson",
-          "title": "Why did Rockstar Games make empathy a key mechanic in GTA 6? \"Because it's fun\" says head of development Rob Nelson",
-          "publisher": "Eurogamer.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT--4h3nTMQasuYtxV9sLp1QqTmCoKT8KvEFZWIkBYY_OACS_0sL9lc-EisRAc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/articles/gta-6-rewards-empathy-because-200144196.html",
-          "title": "GTA 6 rewards empathy because being a \"demigod stomping through the world\" is only fun for so long",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BjhlGt3z03Q7tWioAt8OgdvHy0mtwSD0bpbhxsC0eYeLHkJyesEENgruz0Q"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToEGfl8RG7hSUUNCy-r5-fWWjZfCcgKQelF1Kpi5I9GmMPIjNXEM9TUD3-6YY"
         }
       ]
     }
