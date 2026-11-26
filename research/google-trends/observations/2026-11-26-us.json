@@ -3,48 +3,258 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T17:31:15.887530Z",
+  "checked_at": "2026-11-26T18:01:27.046448Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "russell wilson",
+      "query": "is kenneth walker playing this week",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T17:10:00Z",
+      "published_at": "2026-11-26T17:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/russell-wilson-says-taylor-swift-183936008.html",
-        "https://www.aol.com/articles/bout-trouble-down-stretch-ryan-085939000.html",
-        "https://www.hitc.com/taylor-swift-is-happier-russell-wilson-shares-his-thoughts-on-chiefs-amid-patrick-mahomes-form/"
+        "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
+        "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-25",
+        "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-12-rb-preview/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBwC99PfcS-TENGpws2SF6uqw9gjJbepxchhpD3CfHay-husQj5aq6BpKYJRs",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtZSghnho812TDL79XiKF6dEnyE9DjTObIIT481WLAYDLyq08DdCasXPs9x7M",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/articles/russell-wilson-says-taylor-swift-183936008.html",
-          "title": "Russell Wilson says Taylor Swift ‘happier’ than Travis Kelce as Chiefs’ Patrick Mahomes heats up",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.espn.com/nfl/story/_/id/50594656/chiefs-rb-kenneth-walker-iii-groin-thursday-vs-bills",
+          "title": "Chiefs rule RB Kenneth Walker III (groin) out for showdown vs. Bills",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBwC99PfcS-TENGpws2SF6uqw9gjJbepxchhpD3CfHay-husQj5aq6BpKYJRs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtZSghnho812TDL79XiKF6dEnyE9DjTObIIT481WLAYDLyq08DdCasXPs9x7M"
         },
         {
-          "url": "https://www.aol.com/articles/bout-trouble-down-stretch-ryan-085939000.html",
-          "title": "“Bout To Be Trouble Down the Stretch”: Ryan Clark Warns NFL Teams About Patrick Mahomes With “Real Old School” Chiefs QB Back",
-          "publisher": "AOL.com",
+          "url": "https://www.nfl.com/news/nfl-news-roundup-latest-league-updates-from-wednesday-nov-25",
+          "title": "NFL news roundup: Chiefs RB Kenneth Walker III (groin) to miss Thanksgiving game vs. Bills",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT1WIcjDvuFbhM3k61-qsXIZajGChVOF0FSmrlNwRTodSptaFxgkVOdSP_hnk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6v-iv6QUTx1ICdMYzw1ULFOTWyhKWRWRvhwTTvPBbIBZXdKvBkyfcHn3g13s"
         },
         {
-          "url": "https://www.hitc.com/taylor-swift-is-happier-russell-wilson-shares-his-thoughts-on-chiefs-amid-patrick-mahomes-form/",
-          "title": "‘Taylor Swift is happier’ – Russell Wilson shares his thoughts on Chiefs amid Patrick Mahomes’ form",
-          "publisher": "HITC",
+          "url": "https://www.cbssports.com/fantasy/football/news/fantasy-football-2026-week-12-rb-preview/",
+          "title": "Fantasy football Week 12 RB preview puts Emmett Johnson's upside in the hands of Kenneth Walker's health",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT24-HykXjhbSKzt80FyE51tvyt9oaWrxE7ApA3TMRXcCBqj1gN2s93t2ehm1I"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7bCQ207YzgFjEAQwphM3gFp1fnT9tPdOT4r0KEUTawldL20hPsX5xCbIKPFc"
         }
       ]
     },
     {
-      "query": "bill cowher",
+      "query": "patrick mahomes stats",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T17:10:00Z",
+      "published_at": "2026-11-26T17:40:00Z",
+      "related_news_urls": [
+        "https://uk.sports.yahoo.com/news/aaron-rodgers-head-head-stat-113000871.html",
+        "https://athlonsports.com/nfl/trending/patrick-mahomes-development-emerges-after-steelers-release-aaron-rodgers",
+        "https://www.hitc.com/the-aaron-rodgers-head-to-head-stat-against-patrick-mahomes-that-seems-unbelievable/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnTySmZA--edPP0RHgo6O2v7HQ8LuRkGfhMBuhN7mbtxNf3cRjetRhz-PZ5oA",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://uk.sports.yahoo.com/news/aaron-rodgers-head-head-stat-113000871.html",
+          "title": "The Aaron Rodgers’ head-to-head stat against Patrick Mahomes that seems unbelievable",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnTySmZA--edPP0RHgo6O2v7HQ8LuRkGfhMBuhN7mbtxNf3cRjetRhz-PZ5oA"
+        },
+        {
+          "url": "https://athlonsports.com/nfl/trending/patrick-mahomes-development-emerges-after-steelers-release-aaron-rodgers",
+          "title": "Patrick Mahomes Development Emerges After Steelers Release Aaron Rodgers",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBjaMAul9nW7aHaE5I2VdYZTRkfGOYHK2i0vHICkmD4vPfexCKE2EGarTHeZM"
+        },
+        {
+          "url": "https://www.hitc.com/the-aaron-rodgers-head-to-head-stat-against-patrick-mahomes-that-seems-unbelievable/",
+          "title": "The Aaron Rodgers’ head-to-head stat against Patrick Mahomes that seems unbelievable",
+          "publisher": "HITC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyCpyDvjz0BNvH5JkzdRrwRi6vs7z499dLEMkRHjXqyJdGL9wm99VKBBWC5AA"
+        }
+      ]
+    },
+    {
+      "query": "penei sewell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T17:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/recap/_/gameId/401873072",
+        "https://www.si.com/nfl/albert-breer-on-robert-saleh-s-job-security-texans-playoff-hopes-and-nfc-north-superiority-01m874yva4wde3xh74xy",
+        "https://www.detroitlions.com/news/four-downs-goff-catalyst-lions-offense-win-over-bucs-gibbs-williams"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1Wi8U5KurE0ba5nz5iqEGDRMqNx-AFx33jCTXscMBTQ7YaXzMgjRr-g3TVQo",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873072",
+          "title": "Lions 31-21 Buccaneers (Nov 22, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1Wi8U5KurE0ba5nz5iqEGDRMqNx-AFx33jCTXscMBTQ7YaXzMgjRr-g3TVQo"
+        },
+        {
+          "url": "https://www.si.com/nfl/albert-breer-on-robert-saleh-s-job-security-texans-playoff-hopes-and-nfc-north-superiority-01m874yva4wde3xh74xy",
+          "title": "Albert Breer on Robert Saleh’s Job Security, Texans’ Playoff Hopes and NFC North Superiority",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXt6ScyTH4GOaKBqKZ0-JcfFuqYIqZ_cfYRsDO3pi6W25tWmSzEDBTSVyHyn8"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/four-downs-goff-catalyst-lions-offense-win-over-bucs-gibbs-williams",
+          "title": "FOUR DOWNS: Goff a catalyst for Lions' offense in win over Bucs",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTA0zjZyxuNEF1BN9zQ0JL637n1SIhfrWuARMSy4e9x93TkB41rS4R86FyJTHw"
+        }
+      ]
+    },
+    {
+      "query": "youtube tv",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T17:30:00Z",
+      "related_news_urls": [
+        "https://www.androidpolice.com/youtube-tv-black-friday-promotion/",
+        "https://9to5google.com/2026/11/26/youtube-streaming-black-friday-sales/",
+        "https://cordcuttersnews.com/save-75-on-youtube-tv-with-this-deal/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb70iskZ7y9h-uV26fRTPSMzeFl9vj2t2NKmDz7Qy6jPYWehL6I5N0GkQlSQ",
+      "image_credit": "Android Police",
+      "news": [
+        {
+          "url": "https://www.androidpolice.com/youtube-tv-black-friday-promotion/",
+          "title": "YouTube TV's latest promotion could save you $132 over six months",
+          "publisher": "Android Police",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb70iskZ7y9h-uV26fRTPSMzeFl9vj2t2NKmDz7Qy6jPYWehL6I5N0GkQlSQ"
+        },
+        {
+          "url": "https://9to5google.com/2026/11/26/youtube-streaming-black-friday-sales/",
+          "title": "YouTube’s Black Friday sale could save you as much as $66 on streaming services",
+          "publisher": "9to5Google",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSK58A0LTvLpY-842XE4geDl4P_cBULMV1AerIFkBzy9f-rg0jocImaomqx1hg"
+        },
+        {
+          "url": "https://cordcuttersnews.com/save-75-on-youtube-tv-with-this-deal/",
+          "title": "Save $75 on YouTube TV With This Deal",
+          "publisher": "| Cord Cutters News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWI67p4IhTKbPgRQii4PJ_nbEIhmWk9L1vx1VOFlWyxKpJocwehpc5uxjafro"
+        }
+      ]
+    },
+    {
+      "query": "father",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T17:30:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/california/story/2026-11-24/father-plunges-500-feet-while-helping-son-on-icy-california-mountain",
+        "https://www.theguardian.com/us-news/2026/nov/27/california-father-dies-helping-son-mountain-hike",
+        "https://ktla.com/news/california/mount-baden-powell-hiker-fatal-fall-teenage-son/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfO6tx_tfnEEWn2eeSt3wvsUhvfuEo2lYQvkHr2aoqJLwisDwT2fAhQy_giJg",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/california/story/2026-11-24/father-plunges-500-feet-while-helping-son-on-icy-california-mountain",
+          "title": "Father dies in 500-foot fall while helping son on icy California mountain trail",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfO6tx_tfnEEWn2eeSt3wvsUhvfuEo2lYQvkHr2aoqJLwisDwT2fAhQy_giJg"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/27/california-father-dies-helping-son-mountain-hike",
+          "title": "Father dies while trying to save teen son on icy California mountain hike",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-DH_OWbKEb_7l7qz1tObC3yhLzQkUMdnb8na5mH36DO-THpqGbov5OMAG-ws"
+        },
+        {
+          "url": "https://ktla.com/news/california/mount-baden-powell-hiker-fatal-fall-teenage-son/",
+          "title": "California father falls 500 feet to his death while trying to help son",
+          "publisher": "KTLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBwzwjTYKq3kMdjZb48upAyhtBy0luu7cmSEwOnF9mRWHVWYMoJwQKz1kI-ig"
+        }
+      ]
+    },
+    {
+      "query": "wladimir klitschko hayden panettiere probate",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T17:30:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
+        "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
+          "title": "Hayden Panettiere left behind a massive fortune for her 11-year-old daughter, new court docs reveal",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA"
+        },
+        {
+          "url": "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
+          "title": "Hayden Panettiere’s Estate Valued at Over $6 Million, Ex Wladimir Klitschko Claims",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTa239G78IcDE7ZJXdWI46Myt8PSykWNQFfeon_7_yFr1ofyzWqBdApG8grpE"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/",
+          "title": "Hayden Panettiere left behind $6.2M estate after her death at 36",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdHBSXpnmwgAs4I9MvA3iO5WibYCCdjLU4dZCEwasHEYzYmVViv4PjRChaeHc"
+        }
+      ]
+    },
+    {
+      "query": "nfl weather",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T17:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/weather-news/weather-nfl-football-holiday-thanksgiving-matchups-sports",
+        "https://weather.com/2026/11/25/sports-recreation/thanksgiving-tailgate-ncaa-nfl-football-forecast",
+        "https://www.fox.com/watch/clip/fmc-suqg21nthxjdr1ls/wake-up-barstool-hosts-debate-the-whether-or-not-betting-system"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnXklof-tpZs25nn-ZFYp30PhktnFpdDKQii4eHr7ZBIkgn6I9_REmFhcW0Y",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/weather-news/weather-nfl-football-holiday-thanksgiving-matchups-sports",
+          "title": "Weather could be a game changer for these 5 NFL matchups over a stormy Thanksgiving weekend",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnXklof-tpZs25nn-ZFYp30PhktnFpdDKQii4eHr7ZBIkgn6I9_REmFhcW0Y"
+        },
+        {
+          "url": "https://weather.com/2026/11/25/sports-recreation/thanksgiving-tailgate-ncaa-nfl-football-forecast",
+          "title": "Tailgate forecast: Thanksgiving football to college rivalry weekend",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYUZFUP2sBgpZpY0efVbP2DmsvQosnqyFJuGbm6aU47fgobBj2yf4C-qMyJi8"
+        },
+        {
+          "url": "https://www.fox.com/watch/clip/fmc-suqg21nthxjdr1ls/wake-up-barstool-hosts-debate-the-whether-or-not-betting-system",
+          "title": "Wake Up Barstool hosts debate the 'Whether or Not' betting system",
+          "publisher": "FOX One",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3EtMw0s3FnurEMP89JB2aRBDxzPpLUynDsoAg0ekzSmD9PLX3m0KfkIzSqIc"
+        }
+      ]
+    },
+    {
+      "query": "dan campbell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T17:20:00Z",
       "related_news_urls": [
         "https://www.mlive.com/lions/2026/11/hall-of-fame-coach-brings-dan-campbell-to-tears-with-powerful-message.html",
         "https://www.si.com/nfl/lions/navigate-two-big-losses-dan-campbell-leadership",
@@ -77,282 +287,72 @@
       ]
     },
     {
-      "query": "dinamo zagreb vs leverkusen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T17:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/soccer/articles/confirmed-lineups-gnk-dinamo-zagreb-164400988.html",
-        "https://www.reutersconnect.com/item/bayer-04-leverkusen-press-uefa-europa-league-202627-league-phase-md5/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBaVEtCVTk",
-        "https://www.bayer04.de/en-us/news/werkself-tv/interview-with-moussa-diaby-ahead-of-the-europa-league-clash-at-dinamo-zagreb"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG32_IH97pdhzxal_Sl8nG82LzKjarmm0D24FYlRJl3PRq0K687_JevI2_qYk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/soccer/articles/confirmed-lineups-gnk-dinamo-zagreb-164400988.html",
-          "title": "Confirmed Lineups: GNK Dinamo Zagreb vs. Bayer Leverkusen",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSG32_IH97pdhzxal_Sl8nG82LzKjarmm0D24FYlRJl3PRq0K687_JevI2_qYk"
-        },
-        {
-          "url": "https://www.reutersconnect.com/item/bayer-04-leverkusen-press-uefa-europa-league-202627-league-phase-md5/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVNJUEEwMDBaVEtCVTk",
-          "title": "Licensable picture: Bayer 04 Leverkusen press: UEFA Europa League 2026/27 League Phase MD5",
-          "publisher": "Reuters Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRneScfMEuBTzejEQtk_4PpYoCncJh967GxUYWnzGO5gEc9BWw89ehy3lQFf1k"
-        },
-        {
-          "url": "https://www.bayer04.de/en-us/news/werkself-tv/interview-with-moussa-diaby-ahead-of-the-europa-league-clash-at-dinamo-zagreb",
-          "title": "Interview with Moussa Diaby ahead of the Europa League clash at Dinamo Zagreb",
-          "publisher": "Bayer04.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2NjnW2MuydXgPl7oHg6j3IlGQMznwuyMoGdv1CDf8zhw9nIn01LL2ICePTns"
-        }
-      ]
-    },
-    {
-      "query": "hearts vs monaco",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T17:10:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c3vg27k5zpjzt",
-        "https://www.asmonaco.com/en/news/honours-european-run-08-everything-you-need-to-know-about-hearts",
-        "https://www.heartsstandard.co.uk/news/26765111.hearts-make-change-euro-squad-list-injury/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIbHECb0-PydAC13NDHNR4lPuNjtKt2GKIvIte5Q7NDD-3o1u78jYTqOJACeY",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/c3vg27k5zpjzt",
-          "title": "Heart of Midlothian vs Monaco: UEFA Conference League stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIbHECb0-PydAC13NDHNR4lPuNjtKt2GKIvIte5Q7NDD-3o1u78jYTqOJACeY"
-        },
-        {
-          "url": "https://www.asmonaco.com/en/news/honours-european-run-08-everything-you-need-to-know-about-hearts",
-          "title": "Honours, European run, 0–8… Everything you need to know about Hearts",
-          "publisher": "AS Monaco",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnY_gVbkt0eqpluh9KNoAPNQsmhIjXdI1rdrPq0XeW3_wi4NOptO8j6HYlPwg"
-        },
-        {
-          "url": "https://www.heartsstandard.co.uk/news/26765111.hearts-make-change-euro-squad-list-injury/",
-          "title": "Hearts make goalkeeper change to European squad list due to injury",
-          "publisher": "Hearts Standard",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR7He6pW4jEOLQ5runs8-lsOFTVlt8VKRT4QXO2V4nVOk6_7EaxMwTrf9ewp2U"
-        }
-      ]
-    },
-    {
-      "query": "oklahoma vs purdue",
+      "query": "cbs",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T17:00:00Z",
+      "published_at": "2026-11-26T17:20:00Z",
       "related_news_urls": [
-        "https://www.indystar.com/story/sports/college/purdue/2026/11/26/purdue-basketball-game-today-vs-oklahoma-start-time-where-to-watch-fox/92957505007/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/ou-basketball-vs-purdue-score-165645132.html",
-        "https://www.jconline.com/story/sports/college/purdue/basketball/2026/11/26/purdue-basketball-starting-lineup-oklahoma-luke-ertel-gicarri-harris/92942627007/"
+        "https://finance.yahoo.com/news/explainer-china-got-access-nvidias-193901126.html",
+        "https://www.ft.com/content/e6557cf5-1c02-4ff7-abdd-f0682298b8c1",
+        "https://www.nytimes.com/video/world/100000011305753/how-the-nvidia-scandal-fits-into-a-chinese-spy-campaign.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL00gK0WTHPcAm31glzLhCFjmVwiGxwqPLkL25QqOOwNlOKKebU5jPfd2ilLY",
-      "image_credit": "IndyStar",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeD3MezUOfVlYb-5HXwyM2zWqjMeVBY2ajvXa7bRV4hA_2yZi5tZTCuOfFLKM",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.indystar.com/story/sports/college/purdue/2026/11/26/purdue-basketball-game-today-vs-oklahoma-start-time-where-to-watch-fox/92957505007/",
-          "title": "Where to watch Purdue basketball vs. Oklahoma today: Start time, schedule, roster",
-          "publisher": "IndyStar",
+          "url": "https://finance.yahoo.com/news/explainer-china-got-access-nvidias-193901126.html",
+          "title": "Explainer-How China got access to Nvidia's AI chips despite rules to stop them",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQL00gK0WTHPcAm31glzLhCFjmVwiGxwqPLkL25QqOOwNlOKKebU5jPfd2ilLY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeD3MezUOfVlYb-5HXwyM2zWqjMeVBY2ajvXa7bRV4hA_2yZi5tZTCuOfFLKM"
         },
         {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/ou-basketball-vs-purdue-score-165645132.html",
-          "title": "OU basketball vs Purdue score, live updates from Sooners-Boilermakers",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.ft.com/content/e6557cf5-1c02-4ff7-abdd-f0682298b8c1",
+          "title": "Nvidia fallout exposes China’s fragility on frontier AI",
+          "publisher": "Financial Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZK1DRSetj2SvAhGTq93CyX70zz3Hqoqs2dyUljtmMjtUXbT2-tm4GmvJ3ilc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzY3G3EQp6YlMH_9EcepMNFD868cnqYSzeCBkjbk56e_RtgkXCPJUl4uRzOM0"
         },
         {
-          "url": "https://www.jconline.com/story/sports/college/purdue/basketball/2026/11/26/purdue-basketball-starting-lineup-oklahoma-luke-ertel-gicarri-harris/92942627007/",
-          "title": "Purdue basketball introduces new starting lineup vs Oklahoma",
-          "publisher": "Journal & Courier",
+          "url": "https://www.nytimes.com/video/world/100000011305753/how-the-nvidia-scandal-fits-into-a-chinese-spy-campaign.html",
+          "title": "Video: How the Nvidia Scandal Fits Into a Chinese Spy Campaign",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxYhM6eCDN874I4h6NDjY9gfFBCAkMY5GsSS5cEsJBzVdrAx_aAEeBrsAQDJs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXQZLxwnNW1I1-hTNg8a3rMb4BuMrUL0bNdFGbKD6XewQxk_tGbPvDP-n0QfM"
         }
       ]
     },
     {
-      "query": "brighton - u craiova",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T17:00:00Z",
-      "related_news_urls": [
-        "https://www.gsp.ro/international/conference-league/live-brighton-universitatea-craiova-conference-league-1003162.html",
-        "https://www.digisport.ro/fotbal/conference-league/rodion-camataru-e-sigur-dupa-ce-al-hamlawi-s-a-accidentat-si-rateaza-meciul-cu-brighton-4626417",
-        "https://cvlpress.ro/25.11.2026/edi-iordanescu-in-avion-cu-fanii-craiovei-exclusiv/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStH2UItUzqKyiwzUY8CbfU9GoTRFNx8PxVQxJMx1bWtuzdDWOu2N9dXcP0LHE",
-      "image_credit": "GSP",
-      "news": [
-        {
-          "url": "https://www.gsp.ro/international/conference-league/live-brighton-universitatea-craiova-conference-league-1003162.html",
-          "title": "LIVE Brighton - Universitatea Craiova, duel de cinci stele în Conference League",
-          "publisher": "GSP",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStH2UItUzqKyiwzUY8CbfU9GoTRFNx8PxVQxJMx1bWtuzdDWOu2N9dXcP0LHE"
-        },
-        {
-          "url": "https://www.digisport.ro/fotbal/conference-league/rodion-camataru-e-sigur-dupa-ce-al-hamlawi-s-a-accidentat-si-rateaza-meciul-cu-brighton-4626417",
-          "title": "Rodion Cămătaru e sigur, după ce Al-Hamlawi s-a accidentat și ratează meciul cu Brighton",
-          "publisher": "Digi Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFCqblRQdigx516igqUriivNOQCPLzI62p279a8fNoPqtIyoaASqpP54sZedA"
-        },
-        {
-          "url": "https://cvlpress.ro/25.11.2026/edi-iordanescu-in-avion-cu-fanii-craiovei-exclusiv/",
-          "title": "Edi Iordănescu, în avion cu fanii Craiovei. Exclusiv",
-          "publisher": "Cuvantul Libertatii",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjExBDhkyayIfFRChdPUv5KN0GYI0h-KXj4pO6phkRe6Ia8xqra5WfarHDwzA"
-        }
-      ]
-    },
-    {
-      "query": "viktoria plzeň vs benfica",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T17:00:00Z",
-      "related_news_urls": [
-        "https://www.slbenfica.pt/en-us/agora/noticias/2026/11/25/futebol-bah-antevisao-viktoria-plzen-benfica-5-jornada-fase-de-liga-liga-europa",
-        "https://www.toffeeweb.com/int/viktoria-plzen-vs-benfica-predictions-picks-odds-26-11-2026/",
-        "https://bolavip.com/en/soccer/lineups-for-viktoria-vs-benfica-today-in-2026-27-uefa-europa-league-on-november-26"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN8ZOl6o5fhPvXst8u-E7-OMnuUf_ByLLMEsKfFEAKSjNjxtueRUFwzgoY7S8",
-      "image_credit": "Site Oficial do Sport Lisboa e Benfica",
-      "news": [
-        {
-          "url": "https://www.slbenfica.pt/en-us/agora/noticias/2026/11/25/futebol-bah-antevisao-viktoria-plzen-benfica-5-jornada-fase-de-liga-liga-europa",
-          "title": "\"Play with courage and keep moving forward on our path\"",
-          "publisher": "Site Oficial do Sport Lisboa e Benfica",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRN8ZOl6o5fhPvXst8u-E7-OMnuUf_ByLLMEsKfFEAKSjNjxtueRUFwzgoY7S8"
-        },
-        {
-          "url": "https://www.toffeeweb.com/int/viktoria-plzen-vs-benfica-predictions-picks-odds-26-11-2026/",
-          "title": "Viktoria Plzeň vs Benfica Predictions, Picks & Odds – 26/11/2026",
-          "publisher": "ToffeeWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTa7fZSo0b9SubMJ9z3Qx8Fq0NSQZAI1Nb8S5dhIGD6RhSC49fA65krsX2D5A"
-        },
-        {
-          "url": "https://bolavip.com/en/soccer/lineups-for-viktoria-vs-benfica-today-in-2026-27-uefa-europa-league-on-november-26",
-          "title": "Predicted lineups for Viktoria vs Benfica today in 2026-27 UEFA Europa League on November 26",
-          "publisher": "Bolavip US",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4r9pJTqRC2ADpS7sthYRoaKJK3PWt67O6ubTOZE4zi6VbPo2X36AWJ71wtd0"
-        }
-      ]
-    },
-    {
-      "query": "kim jong un",
+      "query": "john o'hurley",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T17:00:00Z",
+      "published_at": "2026-11-26T17:20:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/25/asia/north-korea-nuclear-weapons-latam-intl",
-        "https://www.aljazeera.com/news/2026/11/26/kim-jong-un-says-north-korea-should-widen-deployment-of-tactical-nukes",
-        "https://www.bloomberg.com/news/articles/2026-11-26/kim-jong-un-makes-rare-show-of-nuclear-warheads-after-snubbing-trump-talks"
+        "https://www.yahoo.com/entertainment/celebrity/articles/john-o-hurley-wife-lisa-160023257.html",
+        "https://www.imdb.com/de/news/ni66129446/?ref_=nwc_art_perm",
+        "https://www.imdb.com/news/ni66129446/?ref_=nwc_art_perm"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNrrNMkl6LZhZbr9Acov1mHHrHAkB8SStXExKTpPAe_6KBiEouip2kMDdMFA",
-      "image_credit": "CNN",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDm_bpIL_m9RlFaWq-6vn7pqJE5MlzHhExQ6lr9OAeJ7ovTTmh5peJYvtB1Kw",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.cnn.com/2026/11/25/asia/north-korea-nuclear-weapons-latam-intl",
-          "title": "North Korea’s Kim Jong Un urges wider tactical nuclear deployment during inspection of weapons facilities",
-          "publisher": "CNN",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/john-o-hurley-wife-lisa-160023257.html",
+          "title": "All About John O’Hurley’s Wife Lisa Mesloh",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNrrNMkl6LZhZbr9Acov1mHHrHAkB8SStXExKTpPAe_6KBiEouip2kMDdMFA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDm_bpIL_m9RlFaWq-6vn7pqJE5MlzHhExQ6lr9OAeJ7ovTTmh5peJYvtB1Kw"
         },
         {
-          "url": "https://www.aljazeera.com/news/2026/11/26/kim-jong-un-says-north-korea-should-widen-deployment-of-tactical-nukes",
-          "title": "Kim Jong Un says North Korea should widen deployment of tactical nukes",
-          "publisher": "Al Jazeera",
+          "url": "https://www.imdb.com/de/news/ni66129446/?ref_=nwc_art_perm",
+          "title": "All About John O’Hurley’s Wife Lisa Mesloh, Their Relationship & More",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnlSuxyIgfgd0DYuZ0u3VO4E-N7gTAfUGrzx2gH2f4dgiX1q7XS7Ky8yX1aBQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-csDVbM4U8qCT5UXzPlNzxj9kW5bXgG45qOtYRxBg-bTJ9M6wAWEzN8kY5OI"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-26/kim-jong-un-makes-rare-show-of-nuclear-warheads-after-snubbing-trump-talks",
-          "title": "Kim Jong Un Makes Rare Show of Nuclear Warheads After Snubbing Trump Talks",
-          "publisher": "Bloomberg",
+          "url": "https://www.imdb.com/news/ni66129446/?ref_=nwc_art_perm",
+          "title": "All About John O’Hurley’s Wife Lisa Mesloh, Their Relationship & More",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRb1vLr1skaNeIAKG1SYJfSnJQrFDwNZgivtUZONDFTOxjrKLnfcLXaq5Lg74"
-        }
-      ]
-    },
-    {
-      "query": "luther burden",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T17:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/expect-luther-burden-iii-bears-123135214.html",
-        "https://www.fantasypros.com/nfl/news/621994/luther-burden-iii-bottled-up-week-11-win.php",
-        "https://www.rotoballer.com/player-news/luther-burden-iii-in-line-for-bounce-back-effort/2004750"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOCm56JMu5sRizvrhvIofuQH1F351gf5eQ5J-ZAnWmrKsbAsRprQumH1EKF48",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/expect-luther-burden-iii-bears-123135214.html",
-          "title": "What to Expect From Luther Burden III When the Bears Visit the Lions on Thanksgiving",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOCm56JMu5sRizvrhvIofuQH1F351gf5eQ5J-ZAnWmrKsbAsRprQumH1EKF48"
-        },
-        {
-          "url": "https://www.fantasypros.com/nfl/news/621994/luther-burden-iii-bottled-up-week-11-win.php",
-          "title": "Luther Burden III bottled up in Week 11 win",
-          "publisher": "FantasyPros",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJyWscDzaQ1W07GwCNRLkJ1OS514yUFZ2aJ53n84z6UOMnbrWjbY2-MjpCCpw"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/luther-burden-iii-in-line-for-bounce-back-effort/2004750",
-          "title": "Luther Burden III Week 12 Outlook for Fantasy Football (2026)",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTx09FF5qM7jds5dMG1KLa41nlgQMbtj8WnDM87khXOEKy_X1EXo0bO1yNRVQ"
-        }
-      ]
-    },
-    {
-      "query": "kyle monangai",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T17:00:00Z",
-      "related_news_urls": [
-        "https://www.southshorepress.com/sports/kyle-monangai-is-back-and-healthy-6381a0d5",
-        "https://dawindycity.com/kyle-monangai-s-return-fails-to-live-up-to-bears-expectations",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/monangai-not-on-final-injury-report-good-to-go"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8UJbCS4ggXAHtuX4V3RHaXCCMeir6dWIk1Pt4xTnKyBoetOE-zYgL-pZLe0",
-      "image_credit": "The South Shore Press",
-      "news": [
-        {
-          "url": "https://www.southshorepress.com/sports/kyle-monangai-is-back-and-healthy-6381a0d5",
-          "title": "Kyle Monangai is Back and Healthy",
-          "publisher": "The South Shore Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO8UJbCS4ggXAHtuX4V3RHaXCCMeir6dWIk1Pt4xTnKyBoetOE-zYgL-pZLe0"
-        },
-        {
-          "url": "https://dawindycity.com/kyle-monangai-s-return-fails-to-live-up-to-bears-expectations",
-          "title": "Kyle Monangai's return fails to live up to Bears expectations",
-          "publisher": "Da Windy City",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_EVnJdtkdVWqLvGBmF2T1JuzMJR6oyc2ca3b8RTRJuagdgyGW79ePnbo4KbA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-20/monangai-not-on-final-injury-report-good-to-go",
-          "title": "Monangai not on final injury report, good to go",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTqxkmZC9Mh_RCxJd2ryLsVk7lMzPA7L2Rzcu-1qQajHadgGOn2Rh0BcysEQw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-csDVbM4U8qCT5UXzPlNzxj9kW5bXgG45qOtYRxBg-bTJ9M6wAWEzN8kY5OI"
         }
       ]
     }
