@@ -3,52 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T14:01:22.583549Z",
+  "checked_at": "2026-11-26T14:31:10.555534Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "when did savannah guthrie's mom disappear",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:40:00Z",
+      "query": "sarah hyland",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T14:10:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/de/news/ni66120795/",
-        "https://www.tvinsider.com/1304219/nancy-guthrie-case-retired-fbi-agent-what-really-struck-her-crime-scene-maureen-oconnell/",
-        "https://www.mensjournal.com/news/nancy-guthrie-update-fbi-agent-shares-bad-news"
+        "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-24-2026-includes-celebrities-colin-hanks-sarah-hyland.html",
+        "https://www.usatoday.com/story/life/horoscopes/2026/11/24/horoscopes-today/92938004007/",
+        "https://www.ctinsider.com/horoscope/article/horoscope-tuesday-11-24-26-georgia-nicols-22539668.php"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaJoPd8PxkyqBoBOnVHKflHwAiJNCuIbOFiljkQ71gXXA61gnVMUo7nOXwius",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRdCrZAaI2NIlwz1Chcr7chQ68iFaD2ih7E5xwXW2UDF-8fSF_8rzYVFB6J9o",
+      "image_credit": "Cleveland.com",
       "news": [
         {
-          "url": "https://www.imdb.com/de/news/ni66120795/",
-          "title": "Savannah Guthrie’s Thanksgiving Plans Confirmed as Mom Nancy Remains Missing",
-          "publisher": "IMDb",
+          "url": "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-24-2026-includes-celebrities-colin-hanks-sarah-hyland.html",
+          "title": "Today’s famous birthdays list for November 24, 2026 includes celebrities Colin Hanks, Sarah Hyland",
+          "publisher": "Cleveland.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaJoPd8PxkyqBoBOnVHKflHwAiJNCuIbOFiljkQ71gXXA61gnVMUo7nOXwius"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRdCrZAaI2NIlwz1Chcr7chQ68iFaD2ih7E5xwXW2UDF-8fSF_8rzYVFB6J9o"
         },
         {
-          "url": "https://www.tvinsider.com/1304219/nancy-guthrie-case-retired-fbi-agent-what-really-struck-her-crime-scene-maureen-oconnell/",
-          "title": "Nancy Guthrie Case: What 'Really Struck' Retired FBI Agent About Crime Scene",
-          "publisher": "TV Insider",
+          "url": "https://www.usatoday.com/story/life/horoscopes/2026/11/24/horoscopes-today/92938004007/",
+          "title": "Horoscopes Today, November 24, 2026",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuykfJiNJacXfck8VuQuWUxTeu-8eQpnR-_w1MuCD-mkONA0rhxu5cEEYDwV4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOydvico0icwKf-5VG0S7vrsT8i_AvQKkdvavh0FKeQeoh71_3_oft_lXd1e4"
         },
         {
-          "url": "https://www.mensjournal.com/news/nancy-guthrie-update-fbi-agent-shares-bad-news",
-          "title": "Nancy Guthrie Update: FBI Agent Shares Bad News",
-          "publisher": "Men's Journal",
+          "url": "https://www.ctinsider.com/horoscope/article/horoscope-tuesday-11-24-26-georgia-nicols-22539668.php",
+          "title": "Horoscope for Tuesday, 11/24/26 by Georgia Nicols",
+          "publisher": "CT Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwdSALJ5akOUFgeLp3xC6LqzIpqRNq8w84L0cLqGSKKn8KENQ6Wf89ZivOlAU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT5gA48Jz63oIqbxS9mEvYCfe9lHsYUXrYXbbkeoSwdb4H3ybecVBkQhrTIcE"
         }
       ]
     },
     {
-      "query": "mortgage interest rates",
+      "query": "ken jeong",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T13:40:00Z",
+      "published_at": "2026-11-26T14:10:00Z",
+      "related_news_urls": [
+        "https://www.mediapost.com/publications/article/419669/checkoutcom-campaign-assures-retailers-the-holida.html?edition=144571",
+        "https://www.digitaltransactions.net/checkout-coms-everything-campaign-enlists-ken-jeong-and-other-digital-transactions-news-briefs-from-11-25-26/",
+        "https://www.retailtechinnovationhub.com/home/2026/11/26/checkoutcom-hires-the-hangover-and-community-star-ken-jeong-as-chief-everythings-going-to-be-alright-officer"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNfATnm9AyFo0YIXSH6KH92BLwchMYrSUg80-fBta0v7F3tMVkYI_c9_3EF5E",
+      "image_credit": "MediaPost",
+      "news": [
+        {
+          "url": "https://www.mediapost.com/publications/article/419669/checkoutcom-campaign-assures-retailers-the-holida.html?edition=144571",
+          "title": "Checkout.com Campaign Assures Retailers The Holiday Season Will Be 'Alright' 11/25/2026",
+          "publisher": "MediaPost",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNfATnm9AyFo0YIXSH6KH92BLwchMYrSUg80-fBta0v7F3tMVkYI_c9_3EF5E"
+        },
+        {
+          "url": "https://www.digitaltransactions.net/checkout-coms-everything-campaign-enlists-ken-jeong-and-other-digital-transactions-news-briefs-from-11-25-26/",
+          "title": "Checkout.com’s ‘Everything’ Campaign Enlists Ken Jeong and other Digital Transactions News briefs from 11/25/26",
+          "publisher": "Digital Transactions",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt2SU5HXLpmTlIf8TmGdyGXmXAqd0-yGeSkhq-pULn7Bk8fqg0XTH_JiQWDZs"
+        },
+        {
+          "url": "https://www.retailtechinnovationhub.com/home/2026/11/26/checkoutcom-hires-the-hangover-and-community-star-ken-jeong-as-chief-everythings-going-to-be-alright-officer",
+          "title": "Checkout.com hires The Hangover and Community star Ken Jeong as Chief Everything's Going To Be Alright Officer",
+          "publisher": "Retail Technology Innovation Hub",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtb6o87wWuGdQtqCnKotOR9JNcItVlrNXGhgdMdlKp13eLMlgiqkz--hqUWfs"
+        }
+      ]
+    },
+    {
+      "query": "college football today",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T14:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/college-football-teams-thankful-this-2026-season/",
+        "https://dailyemerald.com/195559/sports/the-thankful-ducks/",
+        "https://autzenzoo.com/5-things-oregon-football-fans-should-be-thankful-for-this-thanksgiving"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEU50K2bN_448YWDu1Ejq7oGVbpnrSGY0_OpIB79eT7C9INjNn7Fx7B2fA4A",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/college-football-teams-thankful-this-2026-season/",
+          "title": "Most, least thankful teams this season: Oregon counts its blessings, while LSU feels holiday hangover",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEU50K2bN_448YWDu1Ejq7oGVbpnrSGY0_OpIB79eT7C9INjNn7Fx7B2fA4A"
+        },
+        {
+          "url": "https://dailyemerald.com/195559/sports/the-thankful-ducks/",
+          "title": "The thankful Ducks",
+          "publisher": "Daily Emerald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbQfRPvAcqnC_iWsETDPH3Mf7FUkHYJh4rnanbH3h5IpFdA42m1KewWJS298"
+        },
+        {
+          "url": "https://autzenzoo.com/5-things-oregon-football-fans-should-be-thankful-for-this-thanksgiving",
+          "title": "5 things Oregon Football fans should be thankful for this Thanksgiving",
+          "publisher": "Autzen Zoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJCUxS7esJeWOyIUDnwhLynF2nHQaJdPJV2AQakhAozwL5NdkT1AeE_rMpT40"
+        }
+      ]
+    },
+    {
+      "query": "click on detroit.com",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T14:00:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/news/local/michigan/detroit/2026/11/26/i-75-fatal-crash-detroit/92969570007/",
+        "https://www.clickondetroit.com/news/local/2026/11/26/woman-killed-man-seriously-injured-in-crash-on-i-75-near-michigan-avenue-in-detroit/",
+        "https://www.fox2detroit.com/news/woman-killed-after-being-struck-while-waiting-tow-truck-i-75"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREb-c-6CGGG5Iu_1ia6FDuTSO7djJwk28xijoBYWCrIKvjAe5MIVi56LTZVl0",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/news/local/michigan/detroit/2026/11/26/i-75-fatal-crash-detroit/92969570007/",
+          "title": "Woman waiting for tow truck on I-75 killed in Thanksgiving Day crash",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREb-c-6CGGG5Iu_1ia6FDuTSO7djJwk28xijoBYWCrIKvjAe5MIVi56LTZVl0"
+        },
+        {
+          "url": "https://www.clickondetroit.com/news/local/2026/11/26/woman-killed-man-seriously-injured-in-crash-on-i-75-near-michigan-avenue-in-detroit/",
+          "title": "Woman killed, man seriously injured in crash on I-75 near Michigan Avenue in Detroit",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSew_L_Y3D96FHy_hBIUjDEjPIih3y4k9Ym1gIJY32IVg78sgIlkt_RfMqSFGE"
+        },
+        {
+          "url": "https://www.fox2detroit.com/news/woman-killed-after-being-struck-while-waiting-tow-truck-i-75",
+          "title": "Woman killed after being struck while waiting for tow truck on I-75",
+          "publisher": "FOX 2 Detroit",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRZXPD-G2diPq5ftmKBFwGkXpDQ0eG9gKTolZ5ZwGcMaxTXnS0uckK5lsWYs"
+        }
+      ]
+    },
+    {
+      "query": "wdiv",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T14:00:00Z",
+      "related_news_urls": [
+        "https://www.clickondetroit.com/weather/2026/11/26/wet-and-windy-thanksgiving-across-metro-detroit-rain-may-mix-with-snow-tonight/",
+        "https://www.wxyz.com/weather/forecast/todays-forecast/metro-detroit-weather-not-as-cold-today-with-thanksgiving-rain-closing-in",
+        "https://www.wzzm13.com/article/weather/weather-impact/widespread-rain-gusty-winds-expected-in-west-michigan-for-thanksgiving/69-9481c4bd-5f5b-49f8-8369-3dd0a2fbcc24"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SH0tWBzyPdWedvHqUvsYFbS-KwYar5Uek6R475vJjl6-54QU91LbOn8UsbA",
+      "image_credit": "ClickOnDetroit | WDIV Local 4",
+      "news": [
+        {
+          "url": "https://www.clickondetroit.com/weather/2026/11/26/wet-and-windy-thanksgiving-across-metro-detroit-rain-may-mix-with-snow-tonight/",
+          "title": "Wet and Windy Thanksgiving Across Metro Detroit; Rain May Mix With Snow Tonight",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SH0tWBzyPdWedvHqUvsYFbS-KwYar5Uek6R475vJjl6-54QU91LbOn8UsbA"
+        },
+        {
+          "url": "https://www.wxyz.com/weather/forecast/todays-forecast/metro-detroit-weather-not-as-cold-today-with-thanksgiving-rain-closing-in",
+          "title": "Metro Detroit Weather: Wet turkeys for late dinner",
+          "publisher": "WXYZ Channel 7",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToALH-IIJbqMl6kcCtmzupM_DNBd2orv7oGqAtWYRyUaZaFSre3LQKF4r6rPo"
+        },
+        {
+          "url": "https://www.wzzm13.com/article/weather/weather-impact/widespread-rain-gusty-winds-expected-in-west-michigan-for-thanksgiving/69-9481c4bd-5f5b-49f8-8369-3dd0a2fbcc24",
+          "title": "Widespread rain, gusty winds expected in West Michigan for Thanksgiving",
+          "publisher": "WZZM13.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGPCN-3LS9i8g2jq8Qv5OSRAOAuefUZphBWj8FMf7sGCDTbYtYEcen4CydODA"
+        }
+      ]
+    },
+    {
+      "query": "george washington thanksgiving proclamation",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T14:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/26/opinion/thanksgiving-gratitude-lincoln-loss/",
+        "https://www.duluthnewstribune.com/opinion/editorials/our-view-there-are-reasons-for-thanks-even-163-years-later",
+        "https://www.nola.com/opinions/our_views/editorial-thanksgiving-lincoln/article_31caa146-ecf9-42ed-bafa-a1b0ddac8a6a.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpFHmfn2ZyMQaK4FTaHSR7yExEamcaxkgATCs2aheIyigJJLfatyhnviWv7Vs",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/26/opinion/thanksgiving-gratitude-lincoln-loss/",
+          "title": "Opinion | Learning to be grateful, even when life gets hard",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpFHmfn2ZyMQaK4FTaHSR7yExEamcaxkgATCs2aheIyigJJLfatyhnviWv7Vs"
+        },
+        {
+          "url": "https://www.duluthnewstribune.com/opinion/editorials/our-view-there-are-reasons-for-thanks-even-163-years-later",
+          "title": "Our View: There are reasons for thanks — even 163 years later",
+          "publisher": "Duluth News Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7ikr1rO58XoWu3n-hgj3PjxdJ57aEYPrPYtobQAlsUhv0h3duO7H2OcOz-Q0"
+        },
+        {
+          "url": "https://www.nola.com/opinions/our_views/editorial-thanksgiving-lincoln/article_31caa146-ecf9-42ed-bafa-a1b0ddac8a6a.html",
+          "title": "Editorial: In land of plenty, we look to the origins of Thanksgiving",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD81WnspD1ED13a2kgfk3SM8vD1I8A2_x-FnafLzoVLET0JBCbC1AJmIXmtvM"
+        }
+      ]
+    },
+    {
+      "query": "mortgage rates today",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T13:50:00Z",
       "related_news_urls": [
         "https://abcnews.com/Business/wireStory/average-us-30-year-mortgage-rate-eases-721-138446333",
         "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11252026",
-        "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-thursday-november-26-2026-mortgage-rates-mostly-move-lower-110000766.html"
+        "https://finance.yahoo.com/personal-finance/mortgages/article/the-ai-sell-off-is-sending-mortgage-rates-lower-mortgage-and-refinance-interest-rates-today-wednesday-november-25-2026-170019861.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs",
       "image_credit": "ABC News - Breaking News, Latest News and Videos",
@@ -68,291 +243,116 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjtScukkrsD0TAovW7Xi6Xqhu7CXs_heEX5h2W-9jH3aM8NivfHkZgMFK2mY"
         },
         {
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-thursday-november-26-2026-mortgage-rates-mostly-move-lower-110000766.html",
-          "title": "Mortgage and refinance interest rates today, Thursday, November 26, 2026: Mortgage rates mostly move lower",
+          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/the-ai-sell-off-is-sending-mortgage-rates-lower-mortgage-and-refinance-interest-rates-today-wednesday-november-25-2026-170019861.html",
+          "title": "The AI sell-off is sending mortgage rates lower: Mortgage and refinance interest rates today, Wednesday, November 25, 2026",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTSCdeRLHX9IPZVN6wLjwuK2pv1i-LaoFC3olo1ljlMwEEYWvYe60302Dgsc6M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC2ttOts9gUHgzE9XeJSIn-RwXn2RoFe1wvVXtdaU63-DwFBmfWYaRglEq03Y"
         }
       ]
     },
     {
-      "query": "the tonight show starring jimmy fallon justin timberlake",
+      "query": "good morning america",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T13:40:00Z",
+      "published_at": "2026-11-26T13:50:00Z",
       "related_news_urls": [
-        "https://people.com/justin-timberlake-jimmy-fallon-cha-cha-slide-tonight-show-sneak-peek-12280001",
-        "https://themusicuniverse.com/justin-timberlake-performs-party-songs-medley-with-jimmy-fallon/",
-        "https://www.billboard.com/culture/tv-film/justin-timberlake-jimmy-fallon-cha-cha-slide-thanksgiving-1236389549/"
+        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
+        "https://cwibc.co.id/en/gma-holiday-gifts-under-20",
+        "https://aktualita.co/en/money/gma-deals-steals-free-shipping-bonanza"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBi4tdm2Nw71WeLcGnQ0uWBcchR_Pa7jid5Y9A5TABEIlEAmC-0P2ZGX4K4TI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
+      "image_credit": "Good Morning America",
+      "news": [
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
+          "title": "Deals & Steals for Thanksgiving",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
+        },
+        {
+          "url": "https://cwibc.co.id/en/gma-holiday-gifts-under-20",
+          "title": "GMA Highlights Holiday Gifts Under 20 Dollars for 2026",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6S9pWEQEQ2KrnfrPrrueeHQaBXQXU0A4Q-qyyN0p9_lTfnAnawXExsYKP1aM"
+        },
+        {
+          "url": "https://aktualita.co/en/money/gma-deals-steals-free-shipping-bonanza",
+          "title": "GMA Deals & Steals Free Shipping Bonanza: Save Up to 78% Ahead of Black Friday",
+          "publisher": "Aktualita.co",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrrWAAqt7h0L4wDRotqIaJQvNxyMHITSl1FK4FA9szSzbWbQuqhsGudgBCVbo"
+        }
+      ]
+    },
+    {
+      "query": "rockettes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T13:50:00Z",
+      "related_news_urls": [
+        "https://people.com/identical-twins-rockettes-found-out-made-team-seconds-apart-exclusive-12267264",
+        "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
+        "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ37LnHIhksPUpdxrZFobw1UCuW0AeZ_xZaRdbTbEfd00f6evcWjpChgWjSsa4",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/justin-timberlake-jimmy-fallon-cha-cha-slide-tonight-show-sneak-peek-12280001",
-          "title": "Justin Timberlake and Jimmy Fallon Do the ‘Cha Cha Slide’ in ‘Tonight Show’ Sneak Peek",
+          "url": "https://people.com/identical-twins-rockettes-found-out-made-team-seconds-apart-exclusive-12267264",
+          "title": "Identical Twins Found Out They Made the Rockettes Seconds Apart (Exclusive)",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBi4tdm2Nw71WeLcGnQ0uWBcchR_Pa7jid5Y9A5TABEIlEAmC-0P2ZGX4K4TI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ37LnHIhksPUpdxrZFobw1UCuW0AeZ_xZaRdbTbEfd00f6evcWjpChgWjSsa4"
         },
         {
-          "url": "https://themusicuniverse.com/justin-timberlake-performs-party-songs-medley-with-jimmy-fallon/",
-          "title": "Justin Timberlake performs party songs medley with Jimmy Fallon",
-          "publisher": "The Music Universe",
+          "url": "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
+          "title": "PETA supporters crash Rockettes Christmas performance",
+          "publisher": "PIX11",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYmov71_Bv8QIPJgI1eUiF2TZ0eeHpjZbpwb5AavlcY_ilGmHz-iRSPZGA0Pw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI"
         },
         {
-          "url": "https://www.billboard.com/culture/tv-film/justin-timberlake-jimmy-fallon-cha-cha-slide-thanksgiving-1236389549/",
-          "title": "Watch Justin Timberlake & Jimmy Fallon Do the ‘Cha Cha Slide’ in Thanksgiving Special Sneak Peek",
-          "publisher": "Billboard",
+          "url": "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html",
+          "title": "PETA Activists Storm Rockettes Show",
+          "publisher": "Newser",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKauyy2zOIS-V2qVkF48qbxTWHNmajwzjiS1bTs20Lpkrs2SEcqPvuoZ232sc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReUvKct4L_H3X8UTeZWzfJV_oytCLI5jznnGhkwnpAlgDIUsMq3BhLkWNuTTQ"
         }
       ]
     },
     {
-      "query": "autumn reeser",
-      "approx_searches": "200+",
+      "query": "when did savannah guthrie's mom disappear",
+      "approx_searches": "1000+",
       "published_at": "2026-11-26T13:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/articles/hallmark-fans-rejoice-autumn-reeser-003800067.html",
-        "https://texaslifestylemag.com/entertainment/wes-brown-christmas-delivered/",
-        "https://www.fantasylandnews.com/2026/11/26/christmas-delivered-review-hallmark/"
+        "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
+        "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing",
+        "https://m.economictimes.com/world/us/solving-nancy-guthrie-case-much-more-difficult-now-for-two-reasons-seasoned-investigator-explains/articleshow/136185064.cms"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCxzrJEOEjTY3UqomA4pDi5qdV0Pp5CTQ_cBBNkOIAOM55Z9IiuC6iS2oy01k",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s",
+      "image_credit": "TV Insider",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/hallmark-fans-rejoice-autumn-reeser-003800067.html",
-          "title": "Hallmark Fans, Rejoice: Autumn Reeser and Wes Brown Team Up for Thanksgiving Movie 'Christmas Delivered'",
-          "publisher": "Yahoo",
+          "url": "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
+          "title": "Savannah Guthrie’s Thanksgiving Plans Confirmed as Mom Nancy Remains Missing",
+          "publisher": "TV Insider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCxzrJEOEjTY3UqomA4pDi5qdV0Pp5CTQ_cBBNkOIAOM55Z9IiuC6iS2oy01k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s"
         },
         {
-          "url": "https://texaslifestylemag.com/entertainment/wes-brown-christmas-delivered/",
-          "title": "From Texas Roots to Holiday Magic: Wes Brown Talks Texas Ties, Career Milestones, and His New Hallmark Movie, “Christmas Delivered”",
-          "publisher": "Texas Lifestyle Magazine",
+          "url": "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing",
+          "title": "Savannah Guthrie Returns to the Macy’s Parade with Her Mom Still Missing",
+          "publisher": "Parade Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqRaXWaS13F7CB-W7NpXGLlyNXibZnI1hjiikMNMhXrFSVlfm841W99hDUpHs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrKsDG8vuGdrUeAM20aphDEZ0dFNCeMYtM7_S8kbd66f1EDFUsHOKSBYzAtI"
         },
         {
-          "url": "https://www.fantasylandnews.com/2026/11/26/christmas-delivered-review-hallmark/",
-          "title": "Christmas Delivered Review: Yes, Watch It for Autumn Reeser, Wes Brown and Real Snow",
-          "publisher": "Fantasy Land News",
+          "url": "https://m.economictimes.com/world/us/solving-nancy-guthrie-case-much-more-difficult-now-for-two-reasons-seasoned-investigator-explains/articleshow/136185064.cms",
+          "title": "Solving Nancy Guthrie case ‘much more difficult’ now for two reasons, seasoned investigator explains",
+          "publisher": "The Economic Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSMcbqHV6jfaLMtiGzbUbdVBdGv-7Hdtpkb9U96lYgVeXwNrRGLyHZXNdPC8Qg"
-        }
-      ]
-    },
-    {
-      "query": "mortgages",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:40:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/video/2026/11/25/october-new-home-sales-come-in-above-estimates.html",
-        "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october",
-        "https://www.wsj.com/economy/housing/new-home-sales-surged-in-october-907a2e0b"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZO2_p3gVHrsg8SVNWftNQ6I8itAe3--6Z9SwmsPkz5m9VY4ihzA-GR4eZmA",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/video/2026/11/25/october-new-home-sales-come-in-above-estimates.html",
-          "title": "October new home sales come in above estimates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaZO2_p3gVHrsg8SVNWftNQ6I8itAe3--6Z9SwmsPkz5m9VY4ihzA-GR4eZmA"
-        },
-        {
-          "url": "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october",
-          "title": "Gold price falls to session lows as U.S. New Home Sales rise 14.2% in October",
-          "publisher": "Kitco",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyl_lVgnmHe1nMkvl_6pVCy_ZRFmfY1vRyzWHOX8lIBpV_HAlq4lgnhqOEhME"
-        },
-        {
-          "url": "https://www.wsj.com/economy/housing/new-home-sales-surged-in-october-907a2e0b",
-          "title": "New Home Sales Surged in October",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk26cjlpbfcrLcDKhOMySeBg4xEO3U1DYHHe6wE6968E9r-amJWVPkum6K7Yg"
-        }
-      ]
-    },
-    {
-      "query": "is cub foods open on thanksgiving",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:40:00Z",
-      "related_news_urls": [
-        "https://bringmethenews.com/minnesota-lifestyle/whats-open-and-closed-in-minnesota-on-thanksgiving-day-2026",
-        "https://www.kare11.com/article/life/holidays/whats-open-closed-twin-cities-2026-thanksgiving/89-a6359f2b-2954-4ca5-b64e-0b153c450e11",
-        "https://www.aol.com/articles/major-retailers-open-minnesota-black-184338000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMrr5LdepnL-QBh9vYKMAVVy87W1LJy7SKRbfNi_mWBK85GzJcFCzD15cO7xs",
-      "image_credit": "Bring Me The News",
-      "news": [
-        {
-          "url": "https://bringmethenews.com/minnesota-lifestyle/whats-open-and-closed-in-minnesota-on-thanksgiving-day-2026",
-          "title": "What’s open and closed in Minnesota on Thanksgiving Day 2026",
-          "publisher": "Bring Me The News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMrr5LdepnL-QBh9vYKMAVVy87W1LJy7SKRbfNi_mWBK85GzJcFCzD15cO7xs"
-        },
-        {
-          "url": "https://www.kare11.com/article/life/holidays/whats-open-closed-twin-cities-2026-thanksgiving/89-a6359f2b-2954-4ca5-b64e-0b153c450e11",
-          "title": "What's open, closed in the Twin Cities this Thanksgiving?",
-          "publisher": "kare11.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbZmEe9noCNKZTk19rjWxQvXv1XaKdT2JIWQzphRmE_yZqoG3OdLkViKeXkuU"
-        },
-        {
-          "url": "https://www.aol.com/articles/major-retailers-open-minnesota-black-184338000.html",
-          "title": "When do major retailers open in Minnesota on Black Friday 2026?",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb97FUku1mgo0rfUQC_eM3M3kHmoGOa70rfLIgct-YBLb_PjgRY7C_rDOvOeM"
-        }
-      ]
-    },
-    {
-      "query": "amazon black friday deals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:30:00Z",
-      "related_news_urls": [
-        "https://www.cnn.com/cnn-underscored/deals/amazon-black-friday-2026-11-25",
-        "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html",
-        "https://www.allrecipes.com/best-amazon-outlet-overstock-black-friday-deals-2026-12215772"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/cnn-underscored/deals/amazon-black-friday-2026-11-25",
-          "title": "I found the 86 best Amazon Black Friday deals on AirPods, Dyson vacuums and more",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbi2c2gsNFSy5RPBvsMnXqOtn3yWoool6lOSDe34NVegbiXD_ct7kLOiKo9gY"
-        },
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html",
-          "title": "Amazon Black Friday deals: Live updates on the biggest sales from Apple, Yeti, Ninja, Ring, KitchenAid and more during Cyber Week 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORpvwj1j-4EgaJJaveH09QkO-6tuLeU305kw-YPa9u7gnqcVFIn_jw6TDH6Y"
-        },
-        {
-          "url": "https://www.allrecipes.com/best-amazon-outlet-overstock-black-friday-deals-2026-12215772",
-          "title": "Amazon’s Secret Overstock Outlet Is Hiding Black Friday Deals—Save Up to 75% on KitchenAid, OXO, and More",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWi4KNLUtBIs07VUPcqwKyZ-Yp2A_z4x5_naErO5CttmqZSCwjcRJ-LjrPR5M"
-        }
-      ]
-    },
-    {
-      "query": "martha stewart turkey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:20:00Z",
-      "related_news_urls": [
-        "https://abc7.com/post/stop-washing-turkey-want-safe-thanksgiving-2026-heres-what-do/20066800/",
-        "https://wtop.com/food-restaurant/2026/11/theres-no-need-to-melt-down-if-your-turkey-isnt-thawed-yet/",
-        "https://www.prevention.com/food-nutrition/healthy-eating/a74518988/food-safety-mistakes-holidays/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAXsnrEX-9VMsUUxXGQRyx-uR0Ry2-Mp8aBIAQ1EvBK3i0kxYULw-Jk18050o",
-      "image_credit": "ABC7 Los Angeles",
-      "news": [
-        {
-          "url": "https://abc7.com/post/stop-washing-turkey-want-safe-thanksgiving-2026-heres-what-do/20066800/",
-          "title": "Stop washing your turkey. If you want a safe Thanksgiving 2026, here's what to do instead",
-          "publisher": "ABC7 Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAXsnrEX-9VMsUUxXGQRyx-uR0Ry2-Mp8aBIAQ1EvBK3i0kxYULw-Jk18050o"
-        },
-        {
-          "url": "https://wtop.com/food-restaurant/2026/11/theres-no-need-to-melt-down-if-your-turkey-isnt-thawed-yet/",
-          "title": "There’s no need to melt down if your turkey isn’t thawed yet",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH7FrrYRdFRCrM8d5xtrzElHylDeG-DTecUTWqtDLETbB3T5K-O5bYxoeoEbI"
-        },
-        {
-          "url": "https://www.prevention.com/food-nutrition/healthy-eating/a74518988/food-safety-mistakes-holidays/",
-          "title": "A Food Safety Expert Reveals the Number-1 Mistake at Holiday Dinners That Can Make Everyone Sick",
-          "publisher": "Prevention",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9rA_PFNzPy_vQ6qPO4c8mT50u1kBN65brPeZiQpQcSwmFbe7RiE4-6KDhQs"
-        }
-      ]
-    },
-    {
-      "query": "today show",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:20:00Z",
-      "related_news_urls": [
-        "https://www.al.com/news/2026/11/will-alabamas-million-dollar-band-march-in-the-rescheduled-macys-day-parade.html",
-        "https://www.waff.com/2026/11/26/denial-100-denial-macys-parade-delay-sends-madison-county-families-back-home/",
-        "https://www.today.com/video/univ-of-alabama-director-of-bands-talks-macy-s-parade-prep-274159173771"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1yNojnBSU1s4gQZEyMv7E7PtlFkp1EusVeuaFKmjKtYrQVFarBZ7YxEvWrzk",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/news/2026/11/will-alabamas-million-dollar-band-march-in-the-rescheduled-macys-day-parade.html",
-          "title": "Alabama’s Million Dollar Band reaches decision on marching in postponed Macy’s Thanksgiving Day Parade",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ1yNojnBSU1s4gQZEyMv7E7PtlFkp1EusVeuaFKmjKtYrQVFarBZ7YxEvWrzk"
-        },
-        {
-          "url": "https://www.waff.com/2026/11/26/denial-100-denial-macys-parade-delay-sends-madison-county-families-back-home/",
-          "title": "‘Denial. 100% denial’: Macy’s parade delay sends Madison County families back home",
-          "publisher": "WAFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuAtcTpR7nDd5cQbH0bm9hMEL9Rdc4jaU2zmY7n9uUcSiO0_2wiD6_ycjKpmA"
-        },
-        {
-          "url": "https://www.today.com/video/univ-of-alabama-director-of-bands-talks-macy-s-parade-prep-274159173771",
-          "title": "Univ. of Alabama Director of Bands Talks Macy’s Parade Prep",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTitEQ-Xagh5VvV0Q-6DO5Ud5T4ttcz15TZjLd_Pbhy3PG313g9su4-5JFPwgU"
-        }
-      ]
-    },
-    {
-      "query": "u17 world cup",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:20:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/olympics/articles/brazil-u17s-begin-preparations-costa-184500457.html",
-        "https://www.bbc.com/sport/football/live/cmn4k8lj8zqyt",
-        "https://www.ippmedia.co.tz/the-guardian/sports/football/read/serengeti-boys-face-brazil-test-after-costa-rica-comeback-2026-11-24-170541"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiJVbM5Wm41G5HHFrJiV4GH5GOJqmVriZRKj5AhViLWQ2xHL7_q5cIHv6RS2M",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/olympics/articles/brazil-u17s-begin-preparations-costa-184500457.html",
-          "title": "Brazil U17s begin preparations for Costa Rica after beating Tanzania",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiJVbM5Wm41G5HHFrJiV4GH5GOJqmVriZRKj5AhViLWQ2xHL7_q5cIHv6RS2M"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmn4k8lj8zqyt",
-          "title": "Brazil U17 vs Tanzania U17: FIFA U17 World Cup stats & head-to-head",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfczYRLJVRbwk22lLnv_nJdZOIqFErYPYH8W0pouZ83J3du-AiJyC0jqtvFnE"
-        },
-        {
-          "url": "https://www.ippmedia.co.tz/the-guardian/sports/football/read/serengeti-boys-face-brazil-test-after-costa-rica-comeback-2026-11-24-170541",
-          "title": "Serengeti Boys face Brazil test after Costa Rica comeback",
-          "publisher": "https://ippmedia.co.tz/",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtUiUy3EsPXeyPGQDjrpgib5LgQKeOuHf9ekPSnrweFi988RjrwxNaCxf1WJQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAggkaXmARj_bqoP0uLdXk1ddBn-xtlN1g4YeF9g9KOkiSKqz8N7vEbBzyRP4"
         }
       ]
     }
