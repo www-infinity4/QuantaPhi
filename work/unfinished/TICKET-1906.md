@@ -162,3 +162,12 @@ conversation resume mechanism.
 Local focused tests passed.
 No credentials, permissions or wallet records modified.
 CI and live Android acceptance remain pending.
+
+### C13B0 Fix 016 — OAuth request coordination
+
+Base: 3aecf9105ee8c22d6d94a39221b9065c1359d6a6
+Prevent competing connector instances from initiating
+or cancelling the same browser-window authorization.
+Prevent delayed requests after wallet lookup timeout.
+Focused local tests passed.
+CI, security review and live acceptance pending.
