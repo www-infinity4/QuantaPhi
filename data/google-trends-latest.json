@@ -3,314 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T03:31:05.139825Z",
+  "checked_at": "2026-11-26T04:01:31.382065Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "okc",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T03:10:00Z",
-      "related_news_urls": [
-        "https://www.startribune.com/minnesota-timberwolves-oklahoma-city-thunder-score-today-lamelo-ball-stats-anthony-edwards-injury/601916813",
-        "https://sports.yahoo.com/nba/articles/watch-wolves-vs-thunder-free-233000472.html",
-        "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYq1mjaebDDyfVYOKuuT9fkU_8ta_9WYC1QsPNUUPvm-CE8yo7KemDDVwsSw",
-      "image_credit": "Star Tribune",
-      "news": [
-        {
-          "url": "https://www.startribune.com/minnesota-timberwolves-oklahoma-city-thunder-score-today-lamelo-ball-stats-anthony-edwards-injury/601916813",
-          "title": "Live: Wolves in tight battle against Thunder in first road game in ages",
-          "publisher": "Star Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRDYq1mjaebDDyfVYOKuuT9fkU_8ta_9WYC1QsPNUUPvm-CE8yo7KemDDVwsSw"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/articles/watch-wolves-vs-thunder-free-233000472.html",
-          "title": "How to Watch Wolves vs. Thunder for Free: TV Channels, Live Stream Options",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS43H5LQzmWxC31E9P5ajBSD_70iSiwsvacIhoHAMwppQz52Q_bwXCmsfi03po"
-        },
-        {
-          "url": "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander",
-          "title": "Game Preview #19: Wolves at Thunder Thread",
-          "publisher": "Canis Hoopus",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRraPKqtTvKlugW-OJDtmcc-m800MsLjo7YPuUAzFEM_Y_EHI4wEqsNJFtsNyE"
-        }
-      ]
-    },
-    {
-      "query": "lamelo ball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
-        "https://www.cbssports.com/watch/nba/video/timberwolves-and-lamelo-impress-despite-anthony-edwards-injury",
-        "https://sports.yahoo.com/articles/yeah-said-whole-other-family-100055387.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0UBSf1wWSfLQi1kGrIhpYkf0O6auDbWDdPlxnXpUivn3QDxr0ljrw5UZFE68",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
-          "title": "LaMelo Ball and the 'collective' carrying Minnesota without Anthony Edwards",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0UBSf1wWSfLQi1kGrIhpYkf0O6auDbWDdPlxnXpUivn3QDxr0ljrw5UZFE68"
-        },
-        {
-          "url": "https://www.cbssports.com/watch/nba/video/timberwolves-and-lamelo-impress-despite-anthony-edwards-injury",
-          "title": "Timberwolves and LaMelo Impress Despite Anthony Edwards' Injury Stream of National Basketball Association",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWO4rastoo2XiwDXkPtRTRBD--SOkEXAfM34FqeQKag4eTC3zJOXS2kMN4xCA"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/yeah-said-whole-other-family-100055387.html",
-          "title": "“Yeah, like you said, it's like a whole other family, …",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDldkPUJJXGUZkmkft4nHoCtczEo0emWIf6t__5DEeXtPXDf-yM_o0M55Edh8"
-        }
-      ]
-    },
-    {
-      "query": "greta gerwig",
+      "query": "damian lillard",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:00:00Z",
+      "published_at": "2026-11-26T03:40:00Z",
       "related_news_urls": [
-        "https://lawliberty.org/a-movie-to-save-thanksgiving/"
+        "https://www.nba.com/news/trail-blazers-damian-lillard-perfect-pairing",
+        "https://sports.yahoo.com/nba/article/how-damian-lillard-has-boosted-trail-blazers-in-promising-return-from-achilles-injury-144115976.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/22/damian-lillard-reveals-focus-on-weight-loss-and-conditioning-during-injury-recovery/92913702007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8EeSLVdjkZAXUP5Jt8QrnW02guhBVl6A36-MkJvB6BcOjBiTdKFURb0nVfr4",
-      "image_credit": "Law & Liberty",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_tKECfQTRbBJR9IZgvcEYOEE1ngmd8belJCpXegdOkgd1sdwzOncRbqPwQAY",
+      "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://lawliberty.org/a-movie-to-save-thanksgiving/",
-          "title": "A Movie to Save Thanksgiving – Titus Techera",
-          "publisher": "Law & Liberty",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8EeSLVdjkZAXUP5Jt8QrnW02guhBVl6A36-MkJvB6BcOjBiTdKFURb0nVfr4"
-        }
-      ]
-    },
-    {
-      "query": "lamelo ball injury",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/lamelo-ball-injury-timberwolves-guard-030538566.html",
-        "https://bringmethenews.com/minnesota-sports/lamelo-ball-suffers-ugly-ankle-injury-late-in-wolves-nba-cup-win-over-thunder",
-        "https://www.sportsnet.ca/nba/article/timberwolves-lamelo-ball-helped-off-court-after-rolling-ankle-vs-thunder/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_kGUw0V0D6yzPuFDVMZ6AEW8dFDOr0qNDuv1EGTvENyQhaGRSOVY0zNFDew",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/lamelo-ball-injury-timberwolves-guard-030538566.html",
-          "title": "LaMelo Ball injury update: Timberwolves guard limps off vs Thunder in NBA Cup",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6_kGUw0V0D6yzPuFDVMZ6AEW8dFDOr0qNDuv1EGTvENyQhaGRSOVY0zNFDew"
-        },
-        {
-          "url": "https://bringmethenews.com/minnesota-sports/lamelo-ball-suffers-ugly-ankle-injury-late-in-wolves-nba-cup-win-over-thunder",
-          "title": "LaMelo Ball suffers ugly ankle injury late in Wolves’ NBA Cup win over Thunder",
-          "publisher": "Bring Me The News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUyahF1ITgAVDaD7B2BJybSdhuxv47TYabwMy7qYBz3JeCvyHkOnmUEPE2o_Y"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nba/article/timberwolves-lamelo-ball-helped-off-court-after-rolling-ankle-vs-thunder/",
-          "title": "Timberwolves' LaMelo Ball helped off court after rolling ankle vs. Thunder",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQiuSZ7kK7ITrpgwusdkxg8lJadtrXuj9b7VsHwkodrW309C-RVM3mwrZkC6hc"
-        }
-      ]
-    },
-    {
-      "query": "nhl schedule",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-25-2026",
-        "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-        "https://www.dailyfaceoff.com/news/nhl-best-bets-predictions-picks-odds-for-wednesday-november-25"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4ojX-DQLssJK566ZxolgWDPfMZMnTTNtCXhLI5O64yRwooOpUSoKVjnkF8d4",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-25-2026",
-          "title": "NHL On Tap: 14-game feast hits table leading into Thanksgiving",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4ojX-DQLssJK566ZxolgWDPfMZMnTTNtCXhLI5O64yRwooOpUSoKVjnkF8d4"
-        },
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50584038/nhl-2026-27-tonight-games-schedule-matchups-stats-top-players-betting",
-          "title": "NHL Tonight: What to watch in Wednesday's massive 14-game schedule",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRhxCPFzyf4X3HcFUS5PDZyinzTzNm_NRvoEydxW5yv6k7NRWbr82U9LDy16s"
-        },
-        {
-          "url": "https://www.dailyfaceoff.com/news/nhl-best-bets-predictions-picks-odds-for-wednesday-november-25",
-          "title": "NHL Best Bets, Predictions, Picks, Odds for Wednesday, November 25",
-          "publisher": "Daily Faceoff",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrZrezyo1RR_Te1duMWCN0Fv3IHZlB9IdYoyaMeUzS3U8X55ZcWwnHZep2rT8"
-        }
-      ]
-    },
-    {
-      "query": "oj simpson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "knicks standings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/lead-assistant-chris-jent-is-back-on-the-knicks/92965813007/",
-        "https://basketnews.com/news-260244-knicks-coach-returns-after-long-concerning-absence.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ03KpzSQmwNgp_7VJ0Jih23AdbMMmpzZ1u0xRSicK2_LUb_qJ1FfjYg6sDJk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
-          "title": "Knicks assistant coach Chris Jent returns to team",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ03KpzSQmwNgp_7VJ0Jih23AdbMMmpzZ1u0xRSicK2_LUb_qJ1FfjYg6sDJk"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/lead-assistant-chris-jent-is-back-on-the-knicks/92965813007/",
-          "title": "Lead assistant Chris Jent is back on the Knicks …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRT3pYEL9Z9Sc7S7fe5FmNUOe314QpEvIgGEWK63IwlNfOJfLuaVQxWoSxdpk"
-        },
-        {
-          "url": "https://basketnews.com/news-260244-knicks-coach-returns-after-long-concerning-absence.html",
-          "title": "Knicks coach returns after long concerning absence",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRT8GCVhCOGV4GKKynovDZHOblN4TgV7jWRDfunLfPz5hwD0SHrm5c8iQoVqfg"
-        }
-      ]
-    },
-    {
-      "query": "wolves",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T03:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/article/t-wolves-donte-divincenzo-cleared-for-basketball-activity-7-months-after-rupturing-his-achilles-174833748.html",
-        "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
-        "https://timberwolves.com/news/donte-divincenzo-injury-update-3"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2Y7UYrv7ADnPqauYsm1V9Af7hfZGgVhQ2bMCPTKlPqtTjHr4nAyv-ZFUON4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/article/t-wolves-donte-divincenzo-cleared-for-basketball-activity-7-months-after-rupturing-his-achilles-174833748.html",
-          "title": "T-Wolves' Donte DiVincenzo cleared for basketball activity, 7 months after rupturing his Achilles",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZ2Y7UYrv7ADnPqauYsm1V9Af7hfZGgVhQ2bMCPTKlPqtTjHr4nAyv-ZFUON4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7808965/2026/11/24/donte-divincenzo-injury-timberwolves-achilles-practice/",
-          "title": "Donte DiVincenzo eyes January return from torn Achilles after being cleared to practice: Sources",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPagWWVnmr4FL23CdaEkfAaDwQPrvJ6XM81CW13dEEya1gC52Fosx4k2wL5JE"
-        },
-        {
-          "url": "https://timberwolves.com/news/donte-divincenzo-injury-update-3",
-          "title": "Donte DiVincenzo Injury Update | Minnesota Timberwolves",
+          "url": "https://www.nba.com/news/trail-blazers-damian-lillard-perfect-pairing",
+          "title": "Damian Lillard and Portland thankful to be reunited",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS3HuV7fT6tT4KWziyrsTE3VoW3jewoQaKqxhS_mPzzfv3OPPoQVzQOpi2zosE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_tKECfQTRbBJR9IZgvcEYOEE1ngmd8belJCpXegdOkgd1sdwzOncRbqPwQAY"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/article/how-damian-lillard-has-boosted-trail-blazers-in-promising-return-from-achilles-injury-144115976.html",
+          "title": "How Damian Lillard has boosted Trail Blazers in promising return from Achilles injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF8_UEQNXEUQp3mzPXJa7sYsIX6_gRiMP60S82e9IOgp7Yx9vQAmBsOHBP_KY"
+        },
+        {
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/22/damian-lillard-reveals-focus-on-weight-loss-and-conditioning-during-injury-recovery/92913702007/",
+          "title": "Damian Lillard reveals focus on weight loss and conditioning during injury recovery",
+          "publisher": "HoopsHype",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS0T0K5RADf3rCvr4wAXJchlZJzn_C2D3fJixDRSLc-cR0dgTKSyHqM16Q7ZM"
         }
       ]
     },
     {
-      "query": "bob iger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T03:00:00Z",
+      "query": "pedro pascal",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/business/media/bob-iger-disney-robbie-whelan.html",
-        "https://www.wsj.com/business/media/disney-iger-perlmutter-house-of-mouse-robbie-whelan-book-59f658f9",
-        "https://www.thewrap.com/culture-lifestyle/culture/bob-iger-had-extramarital-affair-got-employee-pregnant-tell-all/"
+        "https://www.imdb.com/news/ni66123980/?ref_=nwc_art_perm",
+        "https://showsnob.com/gabriel-luna-seemingly-confirms-pedro-pascal-wont-return-the-last-of-us-season-3",
+        "https://www.digitalspy.com/tv/ustv/a74501139/last-of-us-gabriel-luna-season-3-update/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HOZJhikcffYIsD4qmi_jpHuGejhzhcBemgfNqSUcBQbXnwUR2S2NFROzI2Y",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsCXA30QrWxt8-sUPpR0h7dYF7m-m7ezaWUzUe05Q9fG0Puo2Qckc7UUfAD9M",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/25/business/media/bob-iger-disney-robbie-whelan.html",
-          "title": "As Bob Iger Exits Disney for Good, an Unwelcome Biography Arrives",
+          "url": "https://www.imdb.com/news/ni66123980/?ref_=nwc_art_perm",
+          "title": "Gabriel Luna Shares What It’s Been Like Filming ‘The Last of Us’ Season 3 Without Pedro Pascal & Co-Creator Neil Druckmann",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRsCXA30QrWxt8-sUPpR0h7dYF7m-m7ezaWUzUe05Q9fG0Puo2Qckc7UUfAD9M"
+        },
+        {
+          "url": "https://showsnob.com/gabriel-luna-seemingly-confirms-pedro-pascal-wont-return-the-last-of-us-season-3",
+          "title": "Gabriel Luna seemingly confirms Pedro Pascal won't return for The Last of Us season 3",
+          "publisher": "Show Snob",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs6ntQLv-ua8N-YOQR7dxyr_62EuIOd_ATKUqMAwwa6LrcYoMNKqVdJO4ytko"
+        },
+        {
+          "url": "https://www.digitalspy.com/tv/ustv/a74501139/last-of-us-gabriel-luna-season-3-update/",
+          "title": "The Last of Us gets exciting season 3 update – does this hint at a highly-anticipated release date?",
+          "publisher": "Digital Spy",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR8podvg-X1KFw9EzGOpDDAefaHRyE6oWws_i15Pfsc0aDWcE49HaK97DuXxo"
+        }
+      ]
+    },
+    {
+      "query": "tyson fury schizophrenia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T03:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/23/sport/tyson-fury-schizophrenia-scli-intl",
+        "https://www.nytimes.com/athletic/7801170/2026/11/23/tyson-fury-netflix-documentary-a-remarkable-powerfully-told-story-with-some-questions-left-unanswered/",
+        "https://www.nbcnews.com/pop-culture/pop-culture-news/tyson-fury-former-boxing-champ-reveals-schizophrenia-diagnosis-rcna610901"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQic28uZ0MTA7x9AbP5KGIyoVeLv7XsExoICkGTMyIaGdp6g7DWXBGWV95pCv4",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/23/sport/tyson-fury-schizophrenia-scli-intl",
+          "title": "Tyson Fury reveals schizophrenia diagnosis",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQic28uZ0MTA7x9AbP5KGIyoVeLv7XsExoICkGTMyIaGdp6g7DWXBGWV95pCv4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7801170/2026/11/23/tyson-fury-netflix-documentary-a-remarkable-powerfully-told-story-with-some-questions-left-unanswered/",
+          "title": "Tyson Fury Netflix documentary: Addiction, schizophrenia and glory – but a big unanswered question",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6HOZJhikcffYIsD4qmi_jpHuGejhzhcBemgfNqSUcBQbXnwUR2S2NFROzI2Y"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9eN3j0XZvrgo1L3bR0D1g6954cGLS2Y6lPZIHwXU7zLNv1vqu33EcJ941AK4"
         },
         {
-          "url": "https://www.wsj.com/business/media/disney-iger-perlmutter-house-of-mouse-robbie-whelan-book-59f658f9",
-          "title": "The Friendship Breakup That Led to Bob Iger’s Biggest Boardroom Fight",
-          "publisher": "WSJ",
+          "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/tyson-fury-former-boxing-champ-reveals-schizophrenia-diagnosis-rcna610901",
+          "title": "Tyson Fury, former boxing champ, reveals schizophrenia diagnosis",
+          "publisher": "NBC News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkONAYfhBwRVWR-dqrMrRMYYav1WyYPiX8feboOTAftWYLYrXEb8QbCVpyp6E"
-        },
-        {
-          "url": "https://www.thewrap.com/culture-lifestyle/culture/bob-iger-had-extramarital-affair-got-employee-pregnant-tell-all/",
-          "title": "Bob Iger Had Extramarital Affair and Got Employee Pregnant, Tell-All Says",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_2jk-N0LmVOru3W_N636ZbTru6TY38DAtUH2cB1dnb3AaOJQPwCJ5_8rhEw4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ092mu26DeNC1lrLy3qFlwwcHnGefJd8bxcP0Py7TNZ1th7tblsEC_Mf1rsQA"
         }
       ]
     },
     {
-      "query": "bono",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-26T02:50:00Z",
+      "query": "vcu basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T03:40:00Z",
       "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/gobierno-per%C3%BA-prev%C3%A9-entregar-bonos-180345358.html",
-        "https://www.infobae.com/video/actualidad/viceministro-jesus-barrientos-detalla-entrega-de-bono-a-pescadores-artesanales-ante-el-nino/iuytjJZU/",
-        "https://elperuano.pe/noticia/309726-ministro-requejo-consolida-avances-de-produce-para-reactivar-la-pesca-y-las-mype-frente-a-el-nino"
+        "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/mens-basketball/2026/11/25/washington-huskies-vcu-rams-maui-invitational-time-tv-channel-score-live-updates--live/92965500007/",
+        "https://apnews.com/article/mens-college-basketball-college-basketball-virginia-commonwealth-rams-washington-huskies-college-sports-17c4a7976ed54c3882658427421354b6",
+        "https://sports.betmgm.com/en/blog/ncaab/vcu-washington-prediction-odds-picks-nov-25-college-basketball-jaa/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXsm7Y6w215BDH376Z8Ro0Iqti_6Ic3-KvDk25kbqFA6ZiEGyOIcJ2F9PZW9M",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsrJu-0njHaOxA2YP6m21W-qOuMa2CBVod-qrVX4pASR3BWm3FXs5PBkvWYnQ",
+      "image_credit": "Huskies Wire",
       "news": [
         {
-          "url": "https://es-us.noticias.yahoo.com/gobierno-per%C3%BA-prev%C3%A9-entregar-bonos-180345358.html",
-          "title": "El Gobierno de Perú prevé entregar bonos de setenta dólares a damnificados por El Niño",
-          "publisher": "Yahoo",
+          "url": "https://uwhuskieswire.usatoday.com/story/sports/college/huskies/mens-basketball/2026/11/25/washington-huskies-vcu-rams-maui-invitational-time-tv-channel-score-live-updates--live/92965500007/",
+          "title": "Washington vs VCU live updates: Score, highlights, predictions, analysis",
+          "publisher": "Huskies Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXsm7Y6w215BDH376Z8Ro0Iqti_6Ic3-KvDk25kbqFA6ZiEGyOIcJ2F9PZW9M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsrJu-0njHaOxA2YP6m21W-qOuMa2CBVod-qrVX4pASR3BWm3FXs5PBkvWYnQ"
         },
         {
-          "url": "https://www.infobae.com/video/actualidad/viceministro-jesus-barrientos-detalla-entrega-de-bono-a-pescadores-artesanales-ante-el-nino/iuytjJZU/",
-          "title": "Viceministro Jesús Barrientos detalla entrega de bono a pescadores artesanales ante El Niño",
-          "publisher": "Infobae",
+          "url": "https://apnews.com/article/mens-college-basketball-college-basketball-virginia-commonwealth-rams-washington-huskies-college-sports-17c4a7976ed54c3882658427421354b6",
+          "title": "Washington Huskies take on the VCU Rams",
+          "publisher": "AP News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6XPGfv5qvyGPTyr_YyTmWDCmhQTJaKrqWCBxcxyx4Dqsd0RncM3HD0nPvt08"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyxytuQ4aGf2BOxfux9vnLUnsxmXV6_4vU1gfZLf7dr_vdaPit7PYKHCUsALk"
         },
         {
-          "url": "https://elperuano.pe/noticia/309726-ministro-requejo-consolida-avances-de-produce-para-reactivar-la-pesca-y-las-mype-frente-a-el-nino",
-          "title": "Ministro Requejo consolida avances de Produce para reactivar la pesca y las mype frente a El Niño",
-          "publisher": "El Peruano",
+          "url": "https://sports.betmgm.com/en/blog/ncaab/vcu-washington-prediction-odds-picks-nov-25-college-basketball-jaa/",
+          "title": "VCU vs Washington Prediction, Odds & Best Bets Today – NCAAB, Nov. 25",
+          "publisher": "sports.betmgm.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5eQxVmlBbN8Wna69ui-OyiYcgYpmVvgUQGh04jIXNcsWhlTuOVYPcRur09k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7U45IwyoQbBjoYMJ8C7sFwNppk-4BVJegQZit7gfCrQ3exj87rSVnC9GBksM"
+        }
+      ]
+    },
+    {
+      "query": "tyson fury age",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T03:40:00Z",
+      "related_news_urls": [
+        "https://www.dailystar.co.uk/sport/boxing/tyson-furys-sons-prince-tutty-37908773",
+        "https://dave.sport/news/prince-fury-amateur-debut-isle-of-man/",
+        "https://bloodyelbow.com/2026/11/23/tyson-furys-15-year-old-son-set-to-make-boxing-debut-on-ppv-this-saturday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdy2xoAEKVp6SLnz2-LDIVe1M8EhDvj9XXTyRClNVLO1FgFw9mVXwZ2rqy0mA",
+      "image_credit": "Daily Star",
+      "news": [
+        {
+          "url": "https://www.dailystar.co.uk/sport/boxing/tyson-furys-sons-prince-tutty-37908773",
+          "title": "Tyson Fury's sons Prince and Tutty to make boxing debuts in pay-per-view show",
+          "publisher": "Daily Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTdy2xoAEKVp6SLnz2-LDIVe1M8EhDvj9XXTyRClNVLO1FgFw9mVXwZ2rqy0mA"
+        },
+        {
+          "url": "https://dave.sport/news/prince-fury-amateur-debut-isle-of-man/",
+          "title": "Prince Fury confirms debut at 15 as coach praises his “great shape”",
+          "publisher": "Dave.Sport",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8dpVgbFVzHMgs0aAJh8N6QDtcgb5HDOHrdxJIxGYLTX25HgolYwJu_L-egvg"
+        },
+        {
+          "url": "https://bloodyelbow.com/2026/11/23/tyson-furys-15-year-old-son-set-to-make-boxing-debut-on-ppv-this-saturday/",
+          "title": "Tyson Fury’s 15-year-old son set to make boxing debut on PPV this Saturday",
+          "publisher": "Bloody Elbow",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGvcfim3-IOGI5-D8IEm6ngRwPlzHHeRCu938oMrEcSiPClgCqP3iMSqBhuH0"
+        }
+      ]
+    },
+    {
+      "query": "de'anthony melton",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T03:40:00Z",
+      "related_news_urls": [
+        "https://bluemanhoop.com/a-de-anthony-melton-disappearance-is-the-last-thing-the-warriors-can-afford-right-now",
+        "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
+        "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGQFkaw2jYDB5IIMXRl1y-gJ6csDf-yMEwCOVQ2Tg6qxwT4JreQRmPXLzU1M",
+      "image_credit": "Blue Man Hoop",
+      "news": [
+        {
+          "url": "https://bluemanhoop.com/a-de-anthony-melton-disappearance-is-the-last-thing-the-warriors-can-afford-right-now",
+          "title": "A De'Anthony Melton disappearance is the last thing the Warriors can afford right now",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKGQFkaw2jYDB5IIMXRl1y-gJ6csDf-yMEwCOVQ2Tg6qxwT4JreQRmPXLzU1M"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/warriors-deanthony-melton-makes-impact-despite-shooting-woes/",
+          "title": "Warriors' De'Anthony Melton: Makes impact despite shooting woes",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
+        },
+        {
+          "url": "https://knup.com/sports/nba/player-news/performance/de-anthony-melton-performance-11-22-2026-715224/",
+          "title": "De'Anthony Melton Records 7 Assists in Warriors' Win Over Celtics",
+          "publisher": "knup.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
+        }
+      ]
+    },
+    {
+      "query": "gui santos",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T03:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-western-conference-gm-draft/1981918/",
+        "https://bluemanhoop.com/warriors-matchup-vs-kings-gives-yaxel-lendeborg-a-shot-to-re-assert-his-dominance",
+        "https://www.dallasnews.com/sports/mavericks/article/yaxel-lendeborg-morez-johnson-mavericks-draft-22536356.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPIXuqY3ewsSZ0SCesrkzXTSTvXgDi_QVwhdaJrVwPxElX2euN6WxqLK9nheI",
+      "image_credit": "NBC Sports Bay Area & California",
+      "news": [
+        {
+          "url": "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/yaxel-lendeborg-western-conference-gm-draft/1981918/",
+          "title": "Why one NBA GM reportedly shied away from trading up to draft Yaxel Lendeborg",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSPIXuqY3ewsSZ0SCesrkzXTSTvXgDi_QVwhdaJrVwPxElX2euN6WxqLK9nheI"
+        },
+        {
+          "url": "https://bluemanhoop.com/warriors-matchup-vs-kings-gives-yaxel-lendeborg-a-shot-to-re-assert-his-dominance",
+          "title": "Warriors' matchup vs. Kings gives Yaxel Lendeborg a shot to re-assert his dominance",
+          "publisher": "Blue Man Hoop",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbifUxZ1EW6Rnv-k1PETOOPfEXvtIzBCKXFTwE9qDeaQ-0AjYwnqEM7pSMrF4"
+        },
+        {
+          "url": "https://www.dallasnews.com/sports/mavericks/article/yaxel-lendeborg-morez-johnson-mavericks-draft-22536356.php",
+          "title": "Nothing against Morez Johnson Jr., but Mavs could have used a guy like Yaxel Lendeborg",
+          "publisher": "Dallas News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2kM-60JDxBqA7bBDQgRzWoCj0Ei9zZLQQr_ZrEO3HUsVVzc5-0reIu8KjLv4"
+        }
+      ]
+    },
+    {
+      "query": "grand canyon basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T03:30:00Z",
+      "related_news_urls": [
+        "https://slubillikens.com/news/2026/11/24/mens-basketball-late-rally-falls-short-in-loss-to-grand-canyon.aspx",
+        "https://www.stltoday.com/sports/college/slu/article_bfc65334-8307-4ff6-b198-827d983b125b.html",
+        "https://bvmsports.com/2026/11/25/gcu-strikes-back-huge-2nd-half-tops-slu/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGt3wTP_fjo2SX5rGewqoFpkDE8bmHdeYGyE2YwgjZfi12_x9v-SsjTZ2IYsg",
+      "image_credit": "slubillikens.com",
+      "news": [
+        {
+          "url": "https://slubillikens.com/news/2026/11/24/mens-basketball-late-rally-falls-short-in-loss-to-grand-canyon.aspx",
+          "title": "Late Rally Falls Short in Loss to Grand Canyon - Saint Louis University",
+          "publisher": "slubillikens.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGt3wTP_fjo2SX5rGewqoFpkDE8bmHdeYGyE2YwgjZfi12_x9v-SsjTZ2IYsg"
+        },
+        {
+          "url": "https://www.stltoday.com/sports/college/slu/article_bfc65334-8307-4ff6-b198-827d983b125b.html",
+          "title": "More of the same mistakes as SLU beats itself again, falling 91-88 to Grand Canyon",
+          "publisher": "STLtoday.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbDbsHPX45tgAVK3ZpFuCdOOeMk7UrfISWgMuFh2o7fUh99l2w0EabUSgGXAU"
+        },
+        {
+          "url": "https://bvmsports.com/2026/11/25/gcu-strikes-back-huge-2nd-half-tops-slu/",
+          "title": "GCU strikes back; huge 2nd half tops SLU",
+          "publisher": "BVM Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHAV0KdfaYNwKdbu-Noh0FzFR_xhUxaZ5TrJA0mypJsJRzk0B9y_ka3slMqXY"
+        }
+      ]
+    },
+    {
+      "query": "kevin ginkel",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:20:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/twins-to-sign-kevin-ginkel.html",
+        "https://www.mlb.com/news/kevin-ginkel-twins-deal",
+        "https://arizonasports.com/mlb/arizona-diamondbacks/kevin-ginkel-diamondbacks-free-agency-twins"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAhywEEuUOI1oVJQpp0vKsG3r3NkfDySXtTXwmJcDmKNtnYXaYbUs6yRpy9T0",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/twins-to-sign-kevin-ginkel.html",
+          "title": "Twins To Sign Kevin Ginkel",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAhywEEuUOI1oVJQpp0vKsG3r3NkfDySXtTXwmJcDmKNtnYXaYbUs6yRpy9T0"
+        },
+        {
+          "url": "https://www.mlb.com/news/kevin-ginkel-twins-deal",
+          "title": "Twins add righty reliever Ginkel on 2-year deal (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqDKkp9bWeNIidxLWFzayyETPYP9Cy4domOqGPL5ogQd1TTa-2RRG-N-xOUwM"
+        },
+        {
+          "url": "https://arizonasports.com/mlb/arizona-diamondbacks/kevin-ginkel-diamondbacks-free-agency-twins",
+          "title": "Kevin Ginkel leaves Diamondbacks for Twins, per report",
+          "publisher": "Arizona Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS5A2AKQLpUeu0a6RlOwYvnJS1VohE5LHj8l8y9Js2WM3wwmSVlR0SSQxjKFsI"
+        }
+      ]
+    },
+    {
+      "query": "ja morant",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T03:20:00Z",
+      "related_news_urls": [
+        "https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies",
+        "https://fansided.com/nba/ja-morant-s-return-will-force-big-changes-to-the-blazers-rotation",
+        "https://ripcityproject.com/back-to-back-losses-timberwolves-show-why-blazers-traded-ja-morant"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9axWFReFJJS070XfeGUJWHXkPVHjKcLi8wDAyzOUXDNc1Bvna7jB4JKPaslQ",
+      "image_credit": "Blazer's Edge",
+      "news": [
+        {
+          "url": "https://www.blazersedge.com/trail-blazers-news/118895/portland-trail-blazers-ja-morant-nba-injury-news-return-micah-nori-spurs-grizzlies",
+          "title": "Morant Nearing Return From Hamstring Injury",
+          "publisher": "Blazer's Edge",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9axWFReFJJS070XfeGUJWHXkPVHjKcLi8wDAyzOUXDNc1Bvna7jB4JKPaslQ"
+        },
+        {
+          "url": "https://fansided.com/nba/ja-morant-s-return-will-force-big-changes-to-the-blazers-rotation",
+          "title": "Ja Morant’s return will force big changes to the Blazers rotation",
+          "publisher": "FanSided",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPHNukYvkg92POdFw80aE-jfwHen3Ig0-EH6lVGrpn2R5DuH8-WfUBenTgV5o"
+        },
+        {
+          "url": "https://ripcityproject.com/back-to-back-losses-timberwolves-show-why-blazers-traded-ja-morant",
+          "title": "Back-to-back losses to Timberwolves show why Blazers traded for Ja Morant",
+          "publisher": "Rip City Project",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmuRhujbMyGY9MikFQyOWRp4co9xLmI7kli7pwvw1yHlLd0iJEozPDc3TKdu0"
         }
       ]
     }
