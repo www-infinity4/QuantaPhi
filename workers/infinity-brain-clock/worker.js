@@ -1,4 +1,5 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
+import {decodeNativeEvidence} from './native-context.mjs';
 import {ownerContinuitySnapshot} from './continuity-snapshot.mjs';
 import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
@@ -655,6 +656,8 @@ export class BrainClock extends DurableObject{
   }
   if(['/runner/color-think','/runner/plan','/runner/build','/runner/engine-review','/runner/arbitrate','/runner/capability','/runner/github-credential','/runner/merge-result','/runner/merge-candidates'].includes(path)){
    if(!engine||!lease.engine)throw Error('repository_engine_identity_required');
+   // Only the existing authenticated, live job lease may decode native evidence.
+   if(Object.hasOwn(body,'nativeEvidence'))body.evidence=await decodeNativeEvidence(body,lease,path);
    // Every color shares the same actual Workers AI GPT model. Its spectrum
    // changes the reasoning role, not the signed runner's existing tool scope.
    if(path==='/runner/color-think'){

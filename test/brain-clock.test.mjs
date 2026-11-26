@@ -43,7 +43,7 @@ const colorHandoffUrl='data:text/javascript;base64,'+Buffer.from(colorHandoffSou
 const assignedJobScopeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/assigned-job-scope.mjs',import.meta.url))).toString('base64');
 const ownerAuditDraftUrl='data:text/javascript;base64,'+Buffer.from((await fs.readFile(new URL('../workers/infinity-brain-clock/owner-audit-draft.mjs',import.meta.url),'utf8')).replace('./conversation-work-audit.mjs',new URL('../workers/infinity-brain-clock/conversation-work-audit.mjs',import.meta.url).href)).toString('base64');
 const source=(await fs.readFile(new URL('../workers/infinity-brain-clock/worker.js',import.meta.url),'utf8')).replace("./github-read-transport.mjs",new URL("../workers/infinity-brain-clock/github-read-transport.mjs",import.meta.url).href).replace("./continuity-snapshot.mjs",new URL("../workers/infinity-brain-clock/continuity-snapshot.mjs",import.meta.url).href).replace("./color-core.mjs",colorCoreUrl).replace("./color-handoff.mjs",colorHandoffUrl).replace("./assigned-job-scope.mjs",assignedJobScopeUrl).replace("./technical-handoff.mjs",handoffUrl).replace('./source-review.mjs',sourceReviewUrl).replace("./phone-tool.mjs",phoneUrl).replace("./conversation-memory.mjs",conversationUrl).replace('./owner-audit-draft.mjs',ownerAuditDraftUrl).replace("./red-sectors.mjs",redUrl).replace("./alarm-retry.mjs",alarmUrl).replace("./owner-task-clock.mjs",clockUrl).replace("./autopilot-triage.mjs",autopilotUrl).replace("./agent-skills.mjs",agentSkillsUrl).replace("./runner-request.mjs",runnerRequestUrl).replace("import { DurableObject } from 'cloudflare:workers';","class DurableObject { constructor() {} }").replace("./runner-auth.mjs",authUrl).replace("./preview-contract.mjs",previewUrl).replace('./job-quant.mjs',quantUrl).replace('./bot-work-policy.mjs',policyUrl).replace('./brain-rag-memory.mjs',episodicUrl).replace('./evidence-store.mjs',evidenceUrl).replace('./evidence-db.mjs',evidenceDbUrl).replace('./queue-order.mjs',queueUrl).replace('./ticket-selector.mjs',selectorUrl).replace('./runner-candidate-page.mjs',new URL('../workers/infinity-brain-clock/runner-candidate-page.mjs',import.meta.url).href).replace('./runner-claim-idle.mjs',runnerIdleUrl).replace('./deferred-recovery.mjs',recoveryUrl).replace('./ticket-status.mjs',ticketStatusUrl).replace('./arbitration-evidence.mjs',arbitrationUrl).replace('../bubbles-tools/resonance.mjs',resonanceUrl);
-const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
+const {default:brainWorker,BrainClock,validateInstruction,readRunnerBody,ownerTickets}=await import('data:text/javascript;base64,'+Buffer.from(source.replace('./native-context.mjs',new URL('../workers/infinity-brain-clock/native-context.mjs',import.meta.url).href).replace('./runner-progress.mjs',new URL('../workers/infinity-brain-clock/runner-progress.mjs',import.meta.url).href).replace('./quick-card-browser.mjs',new URL('../workers/infinity-brain-clock/quick-card-browser.mjs',import.meta.url).href).replace('./direct-github.mjs',directGithubUrl).replace('./github-credential.mjs',credentialUrl).replace('./cloudflare-token-broker.mjs',cloudflareBrokerUrl).replace('./cloudflare-oauth-bootstrap.mjs',cloudflareBootstrapUrl).replace('./merge-receipt.mjs',mergeUrl)).toString('base64'));
 
 async function withQuotaRunnerIdentity(callback){
  const priorFetch=globalThis.fetch;
@@ -1489,4 +1489,37 @@ test('signed runner-supplied color findings are reused without duplicate model i
  assert.equal(result.authorizedColorOperationsPerformed,false);
  assert.deepEqual(result.roleHandoffs,[]);
  assert.equal(aiCalls,1);
+});
+
+test('native evidence reaches the color model only with the matching live engine lease',async()=>{
+ const {createHash}=await import('node:crypto');
+ const lease={key:'key',leaseId:'lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,
+  ticketId:'T-NATIVE',jobId:'TASK-COLOR',repository:'www-infinity4/QuantaPhi',job:{instructions:'Check my work'}};
+ const memory=new Map([['key',lease]]),observed=[];
+ const clock=new BrainClock({storage:{get:async key=>memory.get(key),put:async(key,value)=>memory.set(key,value)}},{
+  WRITER_AI:{run:async(model,input)=>{
+   observed.push(JSON.parse(input.messages[1].content).evidence);
+   return {response:JSON.stringify({finding:'Source review pending',nextAction:'Inspect pinned evidence',blockers:[],toolRequests:[]})};
+  }}
+ });
+ const scope={jobId:lease.ticketId+'/'+lease.jobId,repo:lease.repository,baseSha:'a'.repeat(40)};
+ const evidence={baseSha:scope.baseSha,source:'Pinned evidence ∆'};
+ const key=JSON.stringify([scope.jobId,scope.repo,scope.baseSha]),text=JSON.stringify(evidence);
+ const id=createHash('sha256').update(JSON.stringify([key,text])).digest('hex');
+ const packet={version:1,scope,entries:[{id,text}]};
+ const request=(extra={})=>new Request('https://clock/runner/color-think',{
+  method:'POST',body:JSON.stringify({runId:'42',runnerRepository:'www-infinity4/Moltnook',
+   key:'key',leaseId:'lease',color:'red',task:'Inspect source carefully',nativeEvidence:packet,...extra})
+ });
+ assert.equal((await clock.runner(request())).status,200);
+ assert.deepEqual(observed,[evidence]);
+ assert.equal((await clock.runner(request({leaseId:'wrong'}))).status,409);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,scope:{...scope,repo:'www-infinity4/Other'}}})),/native_context_scope/);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,entries:[{id,text:text+' '}]}})),/native_context_integrity/);
+ await assert.rejects(clock.runner(request({evidence})),/native_context_invalid/);
+ await assert.rejects(clock.runner(request({nativeEvidence:{...packet,entries:[{id}]}})),/native_context_missing/);
+ lease.leaseUntil=Date.now()-1;
+ assert.equal((await clock.runner(request())).status,409);
+ assert.deepEqual(observed,[evidence],'invalid packets and stale leases never reach the model');
+ assert.equal(memory.has('engine-review:key'),false,'native evidence cannot create an approval receipt');
 });
