@@ -3,340 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T20:31:00.591015Z",
+  "checked_at": "2026-11-26T21:01:08.591055Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "avengers doomsday",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T20:10:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
-        "https://hypebeast.com/2026/11/marvel-avengers-doomsday-robert-downey-jr-doctor-doom-official-final-trailer-release-info",
-        "https://movieweb.com/avengers-doomsday-international-teaser/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
-          "title": "‘Avengers: Doomsday’ Final Trailer Clocks 563M Views, Best Ever For Disney; 2nd Most Viewed Of All-Time",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSj7NV1lZIJ8HdojdVZpyhQ77iLlB4hfme2HrkpMwaYpba3wVLB1B3NOG5CtD8"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/marvel-avengers-doomsday-robert-downey-jr-doctor-doom-official-final-trailer-release-info",
-          "title": "The Avengers, X-Men, and Fantastic Four Unite in the Final 'Avengers: Doomsday' Trailer",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWJ3wlLO93UbISUF4oKDjVeqJhGw2k5pkMJitXDFSHuwQXSoeJXWkTiSOOtPY"
-        },
-        {
-          "url": "https://movieweb.com/avengers-doomsday-international-teaser/",
-          "title": "Thor & Steve Rogers Come Face-To-Face With Doom for the First Time in New 'Avengers' Teaser",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROG2hyVrV3UMcoGeiKwYN4jyThnAGgXkm9KBa_slO4QZnpuWIxD6T41WFN8x0"
-        }
-      ]
-    },
-    {
-      "query": "doomsday tickets",
+      "query": "juventus",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T20:10:00Z",
+      "published_at": "2026-11-26T20:40:00Z",
       "related_news_urls": [
-        "https://thewaltdisneycompany.com/news/movie-ticketing-disney-plus-avengers-doomsday/",
-        "https://qz.com/avengers-doomsday-tickets-disney-plus",
-        "https://indiantelevision.com/iworld/disney-adds-cinema-ticket-booking-through-fandango-integration/"
+        "https://video.gazzetta.it/juventus-omonia-probabili-formazioni-ekhator-titolare/1b8fcb51-3e01-44bb-8424-a45cf7305xlk",
+        "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/25-152825235/probabili_formazioni_juve-omonia_spalletti_tra_rientri_e_turnover_tutte_le_scelte",
+        "https://www.juventus.com/it/news/articoli/uefa-europa-league-juventus-omonia-le-formazioni-ufficiali"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEHuANw__QYydDaQVkO272-rz7zKRrgAYl92OZAXNP8cXo2_t7ZYghxU1i83o",
-      "image_credit": "The Walt Disney Company",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkMOg_IOqOHNRro13hN1mP8rKcHRt3EKKqyhXhHmi7AtJanSuf4gLKNfk5xYU",
+      "image_credit": "La Gazzetta dello Sport",
       "news": [
         {
-          "url": "https://thewaltdisneycompany.com/news/movie-ticketing-disney-plus-avengers-doomsday/",
-          "title": "Movie Ticketing Feature Comes to Disney+ for ‘Avengers: Doomsday’",
-          "publisher": "The Walt Disney Company",
+          "url": "https://video.gazzetta.it/juventus-omonia-probabili-formazioni-ekhator-titolare/1b8fcb51-3e01-44bb-8424-a45cf7305xlk",
+          "title": "Juventus-Omonia, probabili formazioni: Ekhator titolare",
+          "publisher": "La Gazzetta dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEHuANw__QYydDaQVkO272-rz7zKRrgAYl92OZAXNP8cXo2_t7ZYghxU1i83o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkMOg_IOqOHNRro13hN1mP8rKcHRt3EKKqyhXhHmi7AtJanSuf4gLKNfk5xYU"
         },
         {
-          "url": "https://qz.com/avengers-doomsday-tickets-disney-plus",
-          "title": "3 Ways to Buy Avengers: Doomsday Tickets Inside Disney+ and What to Know",
-          "publisher": "qz.com",
+          "url": "https://www.tuttosport.com/foto/calcio/serie-a/juventus/2026/11/25-152825235/probabili_formazioni_juve-omonia_spalletti_tra_rientri_e_turnover_tutte_le_scelte",
+          "title": "Probabili formazioni Juve-Omonia, Spalletti tra rientri e turnover: tutte le scelte",
+          "publisher": "Tuttosport",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8mu6LeKUctIMwXT3AbmjThsAkMIGgE4UDbD6jy40ul6H-6xtHUpnwEs_l5l4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJW0gpTEQgk-XFBOixmiseRaLc1zdiFFkXg6QXn2-y4xpq6LzCCGUmWulpnOs"
         },
         {
-          "url": "https://indiantelevision.com/iworld/disney-adds-cinema-ticket-booking-through-fandango-integration/",
-          "title": "Disney+ adds cinema ticket booking through Fandango integration",
-          "publisher": "Indian Television Dot Com",
+          "url": "https://www.juventus.com/it/news/articoli/uefa-europa-league-juventus-omonia-le-formazioni-ufficiali",
+          "title": "UEFA Europa League | Juventus-Omonia | Le formazioni ufficiali",
+          "publisher": "Juventus.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4kDORG-w-LSIlKLX3cgO8BBz9wqekI-U0N_kcv9K5zloaccVl3vxh9n69k14"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSz04A5BTAlpLE1UaVL3ewPyTbwLqUvV_16NCB7spwyD-brAP4AO1NvIAy5Gqk"
         }
       ]
     },
     {
-      "query": "iowa state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T20:10:00Z",
+      "query": "tj watt",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T20:40:00Z",
       "related_news_urls": [
-        "https://utsports.com/news/2026/11/25/mens-basketball-hoops-central-9-11-tennessee-vs-iowa-state",
-        "https://247sports.com/college/iowa-state/article/iowa-state-basketball-game-day-central-vs-tennessee-293332073/",
-        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/26/iowa-state-basketball-tennessee-time-tv-players-era-channel-stream/92943057007/"
+        "https://www.steelers.com/news/steelers-fall-to-eagles-19-16",
+        "https://sports.yahoo.com/nfl/article/nfl-week-11-winners-and-losers-steelers-have-another-horrible-loss-and-it-seems-obvious-how-their-season-will-end-212715612.html",
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqnVXuxFkXTzE_Rf3eYP37hWLEeRar9oPZwZOz6VZhZhk7wKfSYbkptS-afaw",
-      "image_credit": "University of Tennessee Athletics",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQacyxPKh7xsrqL2n49gnKAMJ0fmlFx0NnJK7BnAjVQ01naGUqttFQ8_Xvp4Cg",
+      "image_credit": "Steelers.com",
       "news": [
         {
-          "url": "https://utsports.com/news/2026/11/25/mens-basketball-hoops-central-9-11-tennessee-vs-iowa-state",
-          "title": "HOOPS CENTRAL: #9/11 Tennessee vs. Iowa State",
-          "publisher": "University of Tennessee Athletics",
+          "url": "https://www.steelers.com/news/steelers-fall-to-eagles-19-16",
+          "title": "Steelers fall to Eagles, 19-16",
+          "publisher": "Steelers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqnVXuxFkXTzE_Rf3eYP37hWLEeRar9oPZwZOz6VZhZhk7wKfSYbkptS-afaw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQacyxPKh7xsrqL2n49gnKAMJ0fmlFx0NnJK7BnAjVQ01naGUqttFQ8_Xvp4Cg"
         },
         {
-          "url": "https://247sports.com/college/iowa-state/article/iowa-state-basketball-game-day-central-vs-tennessee-293332073/",
-          "title": "Game Day Central: Iowa State vs. Tennessee in Player's Era 16 semifinals",
-          "publisher": "247Sports",
+          "url": "https://sports.yahoo.com/nfl/article/nfl-week-11-winners-and-losers-steelers-have-another-horrible-loss-and-it-seems-obvious-how-their-season-will-end-212715612.html",
+          "title": "NFL Week 11 Winners and Losers: Steelers have another horrible loss, and it seems obvious how their season will end",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNMiG8tun1AOSvRfc27X3oco3J5fEs_mbytaljXy3etcxpz-dQ1EEh9LmDLlw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3vco1yf3Ddpo6ficP0XtLLJWA-dfNXIqKqsQ8kypfvUyu9Ci7jhNb7CNce20"
         },
         {
-          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/26/iowa-state-basketball-tennessee-time-tv-players-era-channel-stream/92943057007/",
-          "title": "How to watch Iowa State basketball vs Tennessee on Thursday | TV info",
-          "publisher": "The Des Moines Register",
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/",
+          "title": "Did the Eagles just end Aaron Rodgers' Hall of Fame career?",
+          "publisher": "NBC Sports Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTELAA3JdVmEOgFUdJ-2Zl-otiVFCiO4Cuh9R4ls5gUgo4ggi4SuU1tpZpmc2c"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0SPvL1Ipl2qSKfZeBxa34PvzfufdK2BDN3-rWgdB40cc350UqxGybYzVjBb0"
         }
       ]
     },
     {
-      "query": "when does avengers doomsday come out",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T20:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66129692/?ref_=int_nwr_1",
-        "https://twistedvoxel.com/avengers-doomsday-review-embargo/",
-        "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsdays-review-embargo-has-been-revealed-heres-when-the-first-reviews-will-drop-a231219"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZn9pw2kdoaWg4et7QI-TVbJhjuwhJnJi57IRCgvu7iN5ElljX058OHLyyAc",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/es/news/ni66129692/?ref_=int_nwr_1",
-          "title": "‘Avengers: Doomsday’ Reviews Finally Have a Drop Time, and Marvel Is Cutting It Close",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRIZn9pw2kdoaWg4et7QI-TVbJhjuwhJnJi57IRCgvu7iN5ElljX058OHLyyAc"
-        },
-        {
-          "url": "https://twistedvoxel.com/avengers-doomsday-review-embargo/",
-          "title": "Avengers: Doomsday Review Embargo Reportedly Lifts Three Days Before US Release",
-          "publisher": "TwistedVoxel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4IStfcEK2QIOAsnFrSYVV6j7UpRXK6WLGNE5l9jtNrz0xYtkDyork5jRoGRE"
-        },
-        {
-          "url": "https://comicbookmovie.com/avengers/avengers-doomsday/avengers-doomsdays-review-embargo-has-been-revealed-heres-when-the-first-reviews-will-drop-a231219",
-          "title": "Avengers: Doomsday's Review Embargo Has Been Revealed — Here's When The First Reviews Will Drop",
-          "publisher": "ComicBookMovie.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuGuOVhCZk7ByIGdHPMwpPdBzwOmT7sCn9Rsgmtp3LlzDLV5NJQpZnjqHIGhk"
-        }
-      ]
-    },
-    {
-      "query": "tornado warning seattle",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T20:00:00Z",
-      "related_news_urls": [
-        "https://www.kiro7.com/news/local/tornado-warning-issaquah-north-bend/5YVGHXMELFHTHFL6IQPJPBW5TY/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6PFDXRMqBWgitHziwS0o412qZwuuyVGu-EsFG7gPmM5uuRoXCGq7K7kAuu8",
-      "image_credit": "KIRO 7 News Seattle",
-      "news": [
-        {
-          "url": "https://www.kiro7.com/news/local/tornado-warning-issaquah-north-bend/5YVGHXMELFHTHFL6IQPJPBW5TY/",
-          "title": "Tornado warning in Issaquah, North Bend",
-          "publisher": "KIRO 7 News Seattle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa6PFDXRMqBWgitHziwS0o412qZwuuyVGu-EsFG7gPmM5uuRoXCGq7K7kAuu8"
-        }
-      ]
-    },
-    {
-      "query": "is d'andre swift hurt",
+      "query": "home alone",
       "approx_searches": "2000+",
-      "published_at": "2026-11-26T20:00:00Z",
+      "published_at": "2026-11-26T20:40:00Z",
       "related_news_urls": [
-        "https://www.detroitlions.com/news/inactives-lions-vs-bears-reed-clark-wonnum",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chuck-clark-dj-wonnum-are-inactive-for-the-lions",
-        "https://www.clickondetroit.com/sports/2026/11/25/dan-campbell-provides-detroit-lions-injury-updates-ahead-of-thanksgiving-game-vs-bears/"
+        "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/",
+        "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
+        "https://www.today.com/popculture/news/macaulay-culkin-home-alone-sequel-seth-rogen-rcna610558"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXUtuGdWrRiVbMRLVMxIVJkFu0jNykTDeCfsA9nC2HyhwokrtNP_hxI57cXQ",
-      "image_credit": "Detroit Lions",
-      "news": [
-        {
-          "url": "https://www.detroitlions.com/news/inactives-lions-vs-bears-reed-clark-wonnum",
-          "title": "INACTIVES: Lions vs. Bears",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXUtuGdWrRiVbMRLVMxIVJkFu0jNykTDeCfsA9nC2HyhwokrtNP_hxI57cXQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chuck-clark-dj-wonnum-are-inactive-for-the-lions",
-          "title": "Chuck Clark, DJ Wonnum are inactive for the Lions",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMxKS1AC4b_Jqw8efMmliA5JhdgyRG5gNjbzz_Mh_-oifVtYV6mE5s9pThBO0"
-        },
-        {
-          "url": "https://www.clickondetroit.com/sports/2026/11/25/dan-campbell-provides-detroit-lions-injury-updates-ahead-of-thanksgiving-game-vs-bears/",
-          "title": "Dan Campbell provides Detroit Lions injury updates ahead of Thanksgiving game vs. Bears",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSckyaUgqJiMwDVBgg73FnmDik5bC0uwFubbzTb70kOp-ZnD71uKu7APJaoqDk"
-        }
-      ]
-    },
-    {
-      "query": "avengers doomsday cast",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T20:00:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/news/hailee-steinfeld-avengers-doomsday-kate-bishop-1236955585/",
-        "https://www.denofgeek.com/movies/avengers-doomsday-kate-bishop-young-avengers-almost-here/",
-        "https://collider.com/avengers-doomsday-cast-hailee-steinfeld-kate-bishop/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUfexi_RXex5FC-j-XTZ6-e8uqe_6Ye_zJQAjDE9BSOndhJxi0VfomErc7x0I",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTE3UVXUgrMjkPaXFExVfaYVgVUSxQeyeyklLZ2--3E8R5nq6KznsYw8NZgRI",
       "image_credit": "Variety",
       "news": [
         {
-          "url": "https://variety.com/2026/film/news/hailee-steinfeld-avengers-doomsday-kate-bishop-1236955585/",
-          "title": "'Avengers: Doomsday' Adds Hailee Steinfeld as Kate Bishop to Cast",
+          "url": "https://variety.com/2026/film/news/home-alone-reboot-disney-macaulay-culkin-seth-rogen-1236954344/",
+          "title": "‘Home Alone’ Reboot in the Works at Disney from Macaulay Culkin, Seth Rogen and Evan Goldberg",
           "publisher": "Variety",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUfexi_RXex5FC-j-XTZ6-e8uqe_6Ye_zJQAjDE9BSOndhJxi0VfomErc7x0I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTE3UVXUgrMjkPaXFExVfaYVgVUSxQeyeyklLZ2--3E8R5nq6KznsYw8NZgRI"
         },
         {
-          "url": "https://www.denofgeek.com/movies/avengers-doomsday-kate-bishop-young-avengers-almost-here/",
-          "title": "Avengers: Doomsday - Kate Bishop Confirmation Means the Young Avengers Are Almost Here",
-          "publisher": "Den of Geek",
+          "url": "https://deadline.com/2026/11/home-alone-macaulay-culkin-seth-rogen-evan-goldberg-1237230258/",
+          "title": "‘Home Alone’ Sequel With Macaulay Culkin In Early Works With Seth Rogen & Evan Goldberg Writing & Producing",
+          "publisher": "Deadline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkHNvRVWlUYZRV5DPSSCRhRwCrENRhFieTTko_XiG8ydn519HDO7KqU4qfPKQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMihPfifjGIosfsqhZ__s8uvQ6Xeykn1r3lnOj9hj58zxLrrm5I8qLP_3taWA"
         },
         {
-          "url": "https://collider.com/avengers-doomsday-cast-hailee-steinfeld-kate-bishop/",
-          "title": "Marvel Officially Confirms Hawkeye’s Replacement in ‘Avengers: Doomsday’",
-          "publisher": "Collider",
+          "url": "https://www.today.com/popculture/news/macaulay-culkin-home-alone-sequel-seth-rogen-rcna610558",
+          "title": "Merry Christmas, Ya Filthy Animals! Macaulay Culkin To Return To Star in ‘Home Alone’ Sequel",
+          "publisher": "TODAY.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvaKuzabZUmsXtJgyZpJQ2CYNDUQx_vPY6MI3kNuDeAo9rX_F7VpowFtEK5ZY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQlEhzJ_xA9P_QHFBWKAnMANyKxe9E2eITVqrEX5y_ayuCtXYDQ7ap4PRfPK_o"
         }
       ]
     },
     {
-      "query": "swift",
+      "query": "ny lottery",
       "approx_searches": "500+",
-      "published_at": "2026-11-26T20:00:00Z",
+      "published_at": "2026-11-26T20:40:00Z",
       "related_news_urls": [
-        "https://ftw.usatoday.com/story/sports/nfl/2026/11/26/taylor-swift-hailee-steinfeld-chiefs-bills-thanksgiving/92969729007/",
-        "https://theonion.com/chiefs-broadcast-cuts-to-disheveled-taylor-swift-sitting-at-home/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-status-attending-nwsl-035105100.html"
+        "https://www.lohud.com/story/news/local/2026/11/25/new-york-lottery-results-wednesday-november-25-2026/92967969007/",
+        "https://www.wktv.com/news/local-business/new-york-lottery-take-5-winning-ticket-sold-in-new-hartford/article_29980f8b-e5b8-4a28-9026-25b1d8d77755.html",
+        "https://www.silive.com/lottery/2026/11/ny-lottery-where-prize-winning-take-5-tickets-were-sold-in-nyc-this-week.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapgLC1H9DD1knzUqZmqp3jDCTOkibk8H_MYRhvFG8HyZ82lajyXUDu6_llBw",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZRqg5O4VF3fL_KyQjcg1BJRshqGi3ItQyK7m6DPpwW6oAnEPJWWH153L6dg",
+      "image_credit": "Lohud",
       "news": [
         {
-          "url": "https://ftw.usatoday.com/story/sports/nfl/2026/11/26/taylor-swift-hailee-steinfeld-chiefs-bills-thanksgiving/92969729007/",
-          "title": "Are Taylor Swift or Hailee Steinfeld coming to Chiefs-Bills on Thanksgiving?",
+          "url": "https://www.lohud.com/story/news/local/2026/11/25/new-york-lottery-results-wednesday-november-25-2026/92967969007/",
+          "title": "NY Lotto, Win 4, Take 5 winning numbers for Wednesday, Nov. 25",
+          "publisher": "Lohud",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUZRqg5O4VF3fL_KyQjcg1BJRshqGi3ItQyK7m6DPpwW6oAnEPJWWH153L6dg"
+        },
+        {
+          "url": "https://www.wktv.com/news/local-business/new-york-lottery-take-5-winning-ticket-sold-in-new-hartford/article_29980f8b-e5b8-4a28-9026-25b1d8d77755.html",
+          "title": "New York Lottery TAKE 5 Winning Ticket Sold in New Hartford",
+          "publisher": "WKTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL3k0HDVD0bRkYZcFv4d-yVzzxB3SX9NWWaYMCe5TwBYFQ7m-aZ2OPc6K8IaU"
+        },
+        {
+          "url": "https://www.silive.com/lottery/2026/11/ny-lottery-where-prize-winning-take-5-tickets-were-sold-in-nyc-this-week.html",
+          "title": "N.Y. Lottery: Where prize winning Take 5 tickets were sold in NYC this week",
+          "publisher": "SILive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTItiH1FlxDNvqz4wrDVdvyBdRCzdEhz39IdWFcPuEm0b6Mi8IwNh9ScUrI-U8"
+        }
+      ]
+    },
+    {
+      "query": "andy reid",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T20:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7807044/2026/11/24/andy-reid-mac-and-cheese-recipe-pablo-torre/",
+        "https://bleacherreport.com/articles/25537215-pablo-torre-uncovers-mystery-andy-reids-notoriously-delicious-mac-and-cheese-recipe-video",
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/217555/chiefs-news-andy-reids-mac-cheese-recipe-exposed"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTNSgtFg2ndsJroXRtkNIeCQ7QM54Xp22iHtOFP8UX8SMH2LRBgc2CwmEDjqs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7807044/2026/11/24/andy-reid-mac-and-cheese-recipe-pablo-torre/",
+          "title": "A connection to Andy Reid, and his mac-and-cheese recipe, that began in an airport",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTNSgtFg2ndsJroXRtkNIeCQ7QM54Xp22iHtOFP8UX8SMH2LRBgc2CwmEDjqs"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537215-pablo-torre-uncovers-mystery-andy-reids-notoriously-delicious-mac-and-cheese-recipe-video",
+          "title": "Pablo Torre Uncovers 'Mystery' of Andy Reid's 'Notoriously Delicious Mac-and-Cheese Recipe' in Video",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3sVILms-sGXXgQ-7rJ-tRwMgyqU_T7ejCoGzJZ-7dJHyKrE8CHqk8WE8l8c"
+        },
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-news/217555/chiefs-news-andy-reids-mac-cheese-recipe-exposed",
+          "title": "Chiefs News: Andy Reid’s Mac & Cheese recipe is exposed",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSI5MThky7U1gqpBN0anMmPfkYtAGGJIapBwuM86WnBP2saqFDyU2TY48NH8fA"
+        }
+      ]
+    },
+    {
+      "query": "cillian murphy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T20:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66129547/?ref_=int_nwr_1",
+        "https://foro3d.com/en/2026/noviembre/in-time-llega-a-paramount-el-1-de-diciembre-el-tiempo-como-moneda.html",
+        "https://movieweb.com/in-time-cillian-murphy-streaming-november-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP4oS7FDGc7fs3cUpvqvRMvCGXsftyO6Uj5-j6s_IzIHWRHCzvfxfuj8oHK9s",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66129547/?ref_=int_nwr_1",
+          "title": "Cillian Murphy's Underrated 109-Minute Sci-Fi Thriller Officially Hits Streaming Next Month",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP4oS7FDGc7fs3cUpvqvRMvCGXsftyO6Uj5-j6s_IzIHWRHCzvfxfuj8oHK9s"
+        },
+        {
+          "url": "https://foro3d.com/en/2026/noviembre/in-time-llega-a-paramount-el-1-de-diciembre-el-tiempo-como-moneda.html",
+          "title": "In Time arrives on Paramount+ on December 1: time as currency",
+          "publisher": "Foro3D",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxcJoCW8yGf9-wB8m7yNSCjdAvlbSegcQkNi0gHG3uMQ8O1vsbAef4ywpRHvk"
+        },
+        {
+          "url": "https://movieweb.com/in-time-cillian-murphy-streaming-november-2026/",
+          "title": "Amanda Seyfried's 109-Minute Sci-Fi Action Thriller Officially Scores New Streaming Home",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7J7w6SugJUcijs4DeMhQC0nsZDd-OVAcMQhGj7xCA6wACa_PeGhqGt_3kH9M"
+        }
+      ]
+    },
+    {
+      "query": "kurt russell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T20:30:00Z",
+      "related_news_urls": [
+        "https://people.com/goldie-hawn-has-no-idea-what-kurt-russell-will-get-for-her-birthday-exclusive-12258169",
+        "https://extratv.com/2026/11/19/goldie-hawn-on-new-book-30th-anniversary-of-first-wives-club-and-81st-birthday-exclusive/",
+        "https://tvovermind.com/10-movies-and-tv-shows-that-defined-goldie-hawns-career/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9OZgcvF7dzhzOjbhjp2iD_1v9c3G5wnbHZ6_NUop1qYYm7pQKkxpaaXtEzGk",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/goldie-hawn-has-no-idea-what-kurt-russell-will-get-for-her-birthday-exclusive-12258169",
+          "title": "Goldie Hawn Has ‘No Idea’ What Kurt Russell Will Get for Her Birthday (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9OZgcvF7dzhzOjbhjp2iD_1v9c3G5wnbHZ6_NUop1qYYm7pQKkxpaaXtEzGk"
+        },
+        {
+          "url": "https://extratv.com/2026/11/19/goldie-hawn-on-new-book-30th-anniversary-of-first-wives-club-and-81st-birthday-exclusive/",
+          "title": "Goldie Hawn on New Book, 81st Birthday & 30th Anniversary of ‘First Wives Club' (Exclusive)",
+          "publisher": "Extra",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74-U_f7cgqU0kVqjyBUeVSb_9mxDa3kttrsB1JuJDIX1ymqtYdM1eagRfqjo"
+        },
+        {
+          "url": "https://tvovermind.com/10-movies-and-tv-shows-that-defined-goldie-hawns-career/",
+          "title": "10 Movies and TV Shows That Defined Goldie Hawn’s Career",
+          "publisher": "TVovermind",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2qe3yMJbw7EujJC2beSTFIw8tBMdHUcyFQnXcNJ4B0JOHJMjw9pEIlOs7ud4"
+        }
+      ]
+    },
+    {
+      "query": "michigan vs miami fl",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T20:30:00Z",
+      "related_news_urls": [
+        "https://mgoblue.com/news/2026/11/25/mens-basketball-wolverines-to-spend-thanksgiving-with-no-17-miami-in-las-vegas",
+        "https://247sports.com/college/miami/article/live-updates-no-17-miami-hurricanes-basketball-vs-michigan-293336458/",
+        "https://umhoops.com/2026/11/26/game-7-michigan-vs-miami-open-thread/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxc6m1o5lt_rX2RFxgwVf2ubIFCjBHnObaO1oil73gOkv4bEtehUOwDvXVq4",
+      "image_credit": "University of Michigan Athletics",
+      "news": [
+        {
+          "url": "https://mgoblue.com/news/2026/11/25/mens-basketball-wolverines-to-spend-thanksgiving-with-no-17-miami-in-las-vegas",
+          "title": "Wolverines to Spend Thanksgiving with No. 17 Miami in Las Vegas",
+          "publisher": "University of Michigan Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxc6m1o5lt_rX2RFxgwVf2ubIFCjBHnObaO1oil73gOkv4bEtehUOwDvXVq4"
+        },
+        {
+          "url": "https://247sports.com/college/miami/article/live-updates-no-17-miami-hurricanes-basketball-vs-michigan-293336458/",
+          "title": "Live Updates: No. 17 Miami basketball vs. Michigan",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR43OIFBLrY7IUsY_ETJ96hB4f8FwEtlCGTJ_BoJiNU71xaz8LGuvM9ie2BpBY"
+        },
+        {
+          "url": "https://umhoops.com/2026/11/26/game-7-michigan-vs-miami-open-thread/",
+          "title": "Game 7: Michigan vs. Miami Open Thread",
+          "publisher": "UM Hoops.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6zjLKpDLi7j-BncUwd3C03yLJCKkuDLmMzQmV7gtASrSiq-MT_BjS6bxSYbs"
+        }
+      ]
+    },
+    {
+      "query": "goldie hawn",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T20:30:00Z",
+      "related_news_urls": [
+        "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/goldie-hawn-fitness-routine-khloe-in-wonderland-kardashian/92940081007/",
+        "https://www.goodhousekeeping.com/uk/health/a74519119/goldie-hawn-strength-training-routine-1795530114/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4",
+      "image_credit": "Women's Health",
+      "news": [
+        {
+          "url": "https://www.womenshealthmag.com/uk/fitness/strength-training/a74506315/goldie-hawn-strength-training-routine/",
+          "title": "‘It changed my body’: Goldie Hawn’s strength routine at 81 – and the 90-second move she does daily",
+          "publisher": "Women's Health",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK9xNXmAYvFLSoOnR_FMYKsljyzYu2jOMIus7o-WteFqob3bWJUg8NUEIm6j4"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/goldie-hawn-fitness-routine-khloe-in-wonderland-kardashian/92940081007/",
+          "title": "Goldie Hawn reveals the 'critical' workout she swears by at 81",
           "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQapgLC1H9DD1knzUqZmqp3jDCTOkibk8H_MYRhvFG8HyZ82lajyXUDu6_llBw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSu0AFytvccHjAlwtr_G5iQjipJe_d3ntPHnN7rbfjAJ_PICT_0odGGGVJ4ckQ"
         },
         {
-          "url": "https://theonion.com/chiefs-broadcast-cuts-to-disheveled-taylor-swift-sitting-at-home/",
-          "title": "Chiefs Broadcast Cuts To Disheveled Taylor Swift Sitting At Home",
-          "publisher": "The Onion",
+          "url": "https://www.goodhousekeeping.com/uk/health/a74519119/goldie-hawn-strength-training-routine-1795530114/",
+          "title": "‘It's critical for your bones’: Goldie Hawn, 81, on the strength-training move she’s sworn by for 50 years",
+          "publisher": "Good Housekeeping",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKHek8UfSVZr1p7DCX4fq2tUfz0To0WkkGhCvSYjWX0p40z61KuRJ6Y1LvQSc"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/taylor-swift-status-attending-nwsl-035105100.html",
-          "title": "Taylor Swift’s Status for Attending NWSL Championship Game",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfEspy1a3NBY2eUrgE_-zpJSmE9rUTQRqGVF6lp6NzlAx-jWJGbJArKIHtYcU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEMx1qCl5IzFTSw51x-XAoloHsvK9R-Bmt0IQp1-SFYeHBEJZ8gCqWNDLhnZ8"
         }
       ]
     },
     {
-      "query": "new movies",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T20:00:00Z",
+      "query": "nick saban",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T20:30:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-focker-in-law-in-theaters-rent-or-buy-you-can-see-everything-stream-the-mosquito-bowl-on-netflix-110000225.html",
-        "https://www.ksl.com/article/51647894/5-new-movies-to-check-out-this-thanksgiving-weekend",
-        "https://www.seattletimes.com/entertainment/movies/new-movies-in-seattle-area-theaters-this-week-focker-in-law-hexed/"
+        "https://www.foxnews.com/outkick-sports/nick-saban-suddenly-singing-different-tune-winning-national-championships",
+        "https://sports.yahoo.com/college-football/articles/nick-saban-defends-sec-despite-162121886.html",
+        "https://www.cbssports.com/college-football/news/nick-saban-alabama-elite-tier-national-championship-contenders/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5_3dSREFpWXAZvF_Z1xEN6e8kS8an6LZ4ALUgWm30RpsuhpvQb7g5hExuJA4",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd7_UnSEhnuk3NBv4uQtXK_27gG65y3PCka7hJKnYLY-TH-LtBMDOvnpkOlA4",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/movies/article/new-movies-to-watch-this-weekend-see-focker-in-law-in-theaters-rent-or-buy-you-can-see-everything-stream-the-mosquito-bowl-on-netflix-110000225.html",
-          "title": "New movies to watch this weekend: See 'Focker-in-Law' in theaters, rent or buy 'You Can See Everything,' stream 'The Mosquito Bowl' on Netflix",
-          "publisher": "Yahoo",
+          "url": "https://www.foxnews.com/outkick-sports/nick-saban-suddenly-singing-different-tune-winning-national-championships",
+          "title": "Nick Saban is suddenly singing a very different tune about winning national championships",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5_3dSREFpWXAZvF_Z1xEN6e8kS8an6LZ4ALUgWm30RpsuhpvQb7g5hExuJA4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd7_UnSEhnuk3NBv4uQtXK_27gG65y3PCka7hJKnYLY-TH-LtBMDOvnpkOlA4"
         },
         {
-          "url": "https://www.ksl.com/article/51647894/5-new-movies-to-check-out-this-thanksgiving-weekend",
-          "title": "5 new movies to check out this Thanksgiving weekend",
-          "publisher": "KSL",
+          "url": "https://sports.yahoo.com/college-football/articles/nick-saban-defends-sec-despite-162121886.html",
+          "title": "Nick Saban Defends SEC Despite Big Ten's 3 Straight Titles",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP6cLzTjrHkOpOQNLPhYAZg60c26KUtlSy5FtFQzQmP5APV7HZrwHsLubOeDg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc6DYqWzXu2i-UfJ4-XE1jLLHrfDS84pKu1VXrfxYXzMSaM2xXJa58YDzMr-A"
         },
         {
-          "url": "https://www.seattletimes.com/entertainment/movies/new-movies-in-seattle-area-theaters-this-week-focker-in-law-hexed/",
-          "title": "8 movies to check out in local theaters over Thanksgiving week",
-          "publisher": "The Seattle Times",
+          "url": "https://www.cbssports.com/college-football/news/nick-saban-alabama-elite-tier-national-championship-contenders/",
+          "title": "Nick Saban says Alabama isn't in the elite tier of national championship contenders",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRevQEEnt0wv6yhTn4QwtgE7EkfbpFPumUBrZdoKNZi9_kDr--XMubwjNc3yrU"
-        }
-      ]
-    },
-    {
-      "query": "trabzonspor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T19:50:00Z",
-      "related_news_urls": [
-        "https://www.hurriyet.com.tr/sporarena/thomas-reisten-konferans-ligi-icin-ilk-8-aciklamasi-43391129",
-        "https://nirvanahaber.com/haber/cska-sofya-trabzonspor-maci-ne-zaman-saat-kacta-ve-hangi-kanalda",
-        "https://www.haber61.net/trabzonspor/thomas-reis-onuachu-ya-guveniyor-o-golu-buldugunda-cok-daha-iyi-olacak/650683"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4O3RHiGJRemChxazoilkpYtOJDM5CDV9Gm0pSnRUbxlMts2FVieaNA5uE7EU",
-      "image_credit": "Hürriyet",
-      "news": [
-        {
-          "url": "https://www.hurriyet.com.tr/sporarena/thomas-reisten-konferans-ligi-icin-ilk-8-aciklamasi-43391129",
-          "title": "Thomas Reis'ten Konferans Ligi için ilk 8 açıklaması!",
-          "publisher": "Hürriyet",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4O3RHiGJRemChxazoilkpYtOJDM5CDV9Gm0pSnRUbxlMts2FVieaNA5uE7EU"
-        },
-        {
-          "url": "https://nirvanahaber.com/haber/cska-sofya-trabzonspor-maci-ne-zaman-saat-kacta-ve-hangi-kanalda",
-          "title": "CSKA Sofya Trabzonspor maçı ne zaman, saat kaçta ve hangi kanalda?",
-          "publisher": "NirvanaHaber",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRE-DAbTi83bai0uUrLEJC_lO0Mm2-ade48hNlK8euk4Rqrp6DUdDV6NkXqjzw"
-        },
-        {
-          "url": "https://www.haber61.net/trabzonspor/thomas-reis-onuachu-ya-guveniyor-o-golu-buldugunda-cok-daha-iyi-olacak/650683",
-          "title": "Thomas Reis, Onuachu'ya güveniyor! \"O golü bulduğunda çok daha iyi olacak\"",
-          "publisher": "Haber61",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2QMGg6WTiKvQW_GkBuTKVnzYzFxwfa0gO8J8MKVvvAPGI42_bLdw_5i30ag8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQlJMoUZR_lWunW9BmGqyNv4odCmwV-A8atEpYc9VhYOoxL8Rytl1shk4SMCE"
         }
       ]
     }
