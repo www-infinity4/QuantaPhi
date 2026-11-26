@@ -5,7 +5,7 @@
  * retry limits, leases, wallet balances, or the immutable work log.
  */
 const ACTIVE="status IN ('ready','working','blocked')";
-const KIND="json_extract(context_json,'$.kind')='robot-directions'";
+const KIND="(CASE WHEN json_valid(context_json) THEN json_extract(context_json,'$.kind')='robot-directions' ELSE 0 END)";
 const PAGE_SIZE=100,MAX_PAGES=4;
 const safeTicketId=value=>typeof value==='string'&&/^[A-Za-z0-9_-]{1,80}$/.test(value);
 
