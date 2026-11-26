@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-26T00:01:29.486189Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "canucks vs red wings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-detroit-red-wings-prediction-odds-2026-11-25/",
+        "https://www.nytimes.com/athletic/7812072/2026/11/25/canucks-vs-red-wings-stream-how-to-watch-nov-25/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026",
+          "title": "Canucks at Red Wings projected lineups",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-detroit-red-wings-prediction-odds-2026-11-25/",
+          "title": "Vancouver Canucks vs Detroit Red Wings Prediction, Picks & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FBPGZ88o6XTp9enIAsrsutM5E4b9zaN__44xn8Omej7KzF0UXS7yES7NwbA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7812072/2026/11/25/canucks-vs-red-wings-stream-how-to-watch-nov-25/",
+          "title": "How to watch Canucks vs. Red Wings: TV channel and streaming options for November 25",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSisYBgo4tJrpW7pFGUUDLw3t93nuUeqzcmAFhhH6EnvUVvcU7l4eIScEKqAKM"
+        }
+      ]
+    },
+    {
+      "query": "blake corum",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyren-williams-off-injury-report-set-to-play-wednesday-vs-packers",
+        "https://sports.yahoo.com/fantasy/articles/blake-corum-making-kyren-williams-183321907.html",
+        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-12-start-em-sit-em-kyren-williams-vs-blake-corum"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzDvIJcwCrKs9pGN5dVmsukfF2dwYrqsyjNCpg48MqdlAvZ1AAiqHLaz4YfrU",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyren-williams-off-injury-report-set-to-play-wednesday-vs-packers",
+          "title": "Kyren Williams off injury report, set to play Wednesday vs. Packers",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzDvIJcwCrKs9pGN5dVmsukfF2dwYrqsyjNCpg48MqdlAvZ1AAiqHLaz4YfrU"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/articles/blake-corum-making-kyren-williams-183321907.html",
+          "title": "Is Blake Corum making Kyren Williams irrelevant in fantasy football?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj1fyc1lINc2MsU6Jb-uGEyAUuycdqqBePoSv8OS_yK8ayYyZeLj13qCFH2BE"
+        },
+        {
+          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-12-start-em-sit-em-kyren-williams-vs-blake-corum",
+          "title": "Fantasy Football Week 12 Start ‘Em, Sit ‘Em: Kyren Williams vs. Blake Corum",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc2c6A5m6lFbe88-096PSNU-_AdvX_5XnYjhz2OOs7LtKp_1JEik2_lCm2_Dw"
+        }
+      ]
+    },
+    {
+      "query": "konata mumpfield",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [
+        "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
+        "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/155558/konata-mumpfield-davante-adams-rams-depth",
+        "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA",
+      "image_credit": "RotoBaller",
+      "news": [
+        {
+          "url": "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
+          "title": "Week 12 Waiver Wire Pickups - Konata Mumpfield, CJ Daniels, Tyler Higbee Fantasy Football Outlooks",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA"
+        },
+        {
+          "url": "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/155558/konata-mumpfield-davante-adams-rams-depth",
+          "title": "Konata Mumpfield might be better than he gets credit for",
+          "publisher": "Turf Show Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsAqGBXIQ47PuDiW5-vzWNGJpkcIP1qqbtOPE0aOP9BMEhopeQ-1Gsz2ceRM4"
+        },
+        {
+          "url": "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
+          "title": "Konata Mumpfield Will maintain larger role sans Nacua",
+          "publisher": "Fantasy Footballers Podcast",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQriX7bZWkf20b3G6Phe65rn0itKnqEnV2jp6qfp63aFL1aooLCLNYFRRRXHRo"
+        }
+      ]
+    },
+    {
+      "query": "packers inactives",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "the pitt season 3",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/the-pitt-season-3-release-date-hbo-max-1236958110/",
+        "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
+        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/pitt-season-3-release-date-190620472.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXk3XXeMX2AB7qMD6L7b4Coj8b4CFie5DuUhT5EjEb_oK9L2KRDG3Bf9e3qkg",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/the-pitt-season-3-release-date-hbo-max-1236958110/",
+          "title": "‘The Pitt’ Sets Season 3 Release Date at HBO Max",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXk3XXeMX2AB7qMD6L7b4Coj8b4CFie5DuUhT5EjEb_oK9L2KRDG3Bf9e3qkg"
+        },
+        {
+          "url": "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
+          "title": "‘The Pitt’ Sets Season 3 Premiere Date",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYwxPq41l3Yfl1Wzy-cxiqyX0y597NxoLQnIfGi3DmcGgLc9inPYni8I6h9s"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/pitt-season-3-release-date-190620472.html",
+          "title": "The Pitt Season 3 Release Date Set, HBO Max Confirms Main Cast After Supriya Ganesh Exit",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ55hZ-fQ59EI0_oeUKUeOVJMLLg0J5RHc3hTDW2V_P731i-9nb8C-hfTZvQrY"
+        }
+      ]
+    },
+    {
+      "query": "guy fieri",
+      "approx_searches": "200+",
+      "published_at": "2026-11-25T23:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
+        "https://www.nbcboston.com/news/local/guy-fieris-top-restaurants-in-new-england-ranking-says/4054222/",
+        "https://demokratis.co.id/en/chicago-restaurants-fieri-favorites-ranking"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4",
+      "image_credit": "NBC 5 Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
+          "title": "Guy Fieri's favorite restaurant in America is in Chicago, ranking says",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4"
+        },
+        {
+          "url": "https://www.nbcboston.com/news/local/guy-fieris-top-restaurants-in-new-england-ranking-says/4054222/",
+          "title": "2 of Guy Fieri's favorite restaurants are in New England, ranking says",
+          "publisher": "NBC Boston",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOz_HOfpMdNMgD8BYarP5aGLX6X06jAgMe63w6HZ6uPD9IGobUrd0zgy2DkVM"
+        },
+        {
+          "url": "https://demokratis.co.id/en/chicago-restaurants-fieri-favorites-ranking",
+          "title": "LOVEFood Ranks Two Chicago Restaurants Among Fieri Favorites",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmKEqv-CDfLlDLBzCuZ0yxU-2VmRQLM5Q42YC6IFd_8u0NHswl3cv5B0L-QI"
+        }
+      ]
+    },
+    {
+      "query": "timberwolves vs thunder",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-25T23:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50597092/the-thunder-look-get-back-win-column-take-timberwolves",
+        "https://sportsbook.fanduel.com/basketball/nba/minnesota-timberwolves-@-oklahoma-city-thunder-36354196",
+        "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQarOPkToLIeJs9oYEbKKakaI88ZFsr3-JGTQCE70SrQ4nZyyyzt6Cu3pvRMs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50597092/the-thunder-look-get-back-win-column-take-timberwolves",
+          "title": "The Thunder look to get back in the win column as they take on the Timberwolves",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQarOPkToLIeJs9oYEbKKakaI88ZFsr3-JGTQCE70SrQ4nZyyyzt6Cu3pvRMs"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/basketball/nba/minnesota-timberwolves-@-oklahoma-city-thunder-36354196",
+          "title": "Minnesota Timberwolves @ Oklahoma City Thunder Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyp8vVaYb7n3FrFvv7QwJT0qvPMmnzOoiqtSOO-ft41wU65s3vYktazvyQ2a0"
+        },
+        {
+          "url": "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander",
+          "title": "Game Preview #19: Wolves at Thunder Thread",
+          "publisher": "Canis Hoopus",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRraPKqtTvKlugW-OJDtmcc-m800MsLjo7YPuUAzFEM_Y_EHI4wEqsNJFtsNyE"
+        }
+      ]
+    },
+    {
+      "query": "kevin gausman",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-25T23:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/kevin-gausman-tigers-deal",
+        "https://bleacherreport.com/articles/25505011-kevin-gausman-tigers-agree-contract-after-cubs-stint-mlb-rumors-reveal-full-details",
+        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-kevin-gausman.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6HXqtlgj4CUqDi2PA2DUGjTerJSF7ULiemszrFMV0i56bwL9pRwX8qU2XP6s",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/kevin-gausman-tigers-deal",
+          "title": "Tigers agree to 1-year deal with veteran righty Gausman (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6HXqtlgj4CUqDi2PA2DUGjTerJSF7ULiemszrFMV0i56bwL9pRwX8qU2XP6s"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25505011-kevin-gausman-tigers-agree-contract-after-cubs-stint-mlb-rumors-reveal-full-details",
+          "title": "Kevin Gausman, Tigers Agree to Contract After Cubs Stint, MLB Rumors Reveal Full Details",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX5MOeM2nxV9f57Sc82CmW6xUk5yWAH_QPrFHj8t65akuS4eTAPcqBcmKqem0"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-kevin-gausman.html",
+          "title": "Tigers To Sign Kevin Gausman",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZlmVwh9YVmRl9GXu2hHD3p3ZEIuu_JSOAgqcrc9Z9vslCFLoUvHjR3HM3nos"
+        }
+      ]
+    },
+    {
+      "query": "barcelona sc - independiente del valle",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-25T23:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17560979/habra-pasillo-de-barcelona-a-independiente-esto-respondio-joaquin-papa",
+        "https://onefootball.com/es/noticias/bsc-vs-idv-las-claves-que-anticipa-el-predictor-1xbet-43839173",
+        "https://www.ecuavisa.com/liveblogs/barcelona-sc-vs.-independiente-del-valle-por-la-ligapro-lb202611250002.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4zuPxu7SGk8CZjt-usyqZcu30LVzV77VQWZSIzStfkAQrfQi0SQqINGHg090",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17560979/habra-pasillo-de-barcelona-a-independiente-esto-respondio-joaquin-papa",
+          "title": "¿Habrá pasillo de Barcelona a Independiente? Esto respondió Joaquín Papa",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4zuPxu7SGk8CZjt-usyqZcu30LVzV77VQWZSIzStfkAQrfQi0SQqINGHg090"
+        },
+        {
+          "url": "https://onefootball.com/es/noticias/bsc-vs-idv-las-claves-que-anticipa-el-predictor-1xbet-43839173",
+          "title": "BSC vs IDV: Las claves que anticipa el Predictor 1xBet",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdEbeiR6Hrh8CJDp21oKLeOSnGXgwDw1HlCJ7DnaisngvMWA8h8npuXrLUrDc"
+        },
+        {
+          "url": "https://www.ecuavisa.com/liveblogs/barcelona-sc-vs.-independiente-del-valle-por-la-ligapro-lb202611250002.html",
+          "title": "Barcelona SC vs. Independiente del Valle por la LigaPro",
+          "publisher": "Ecuavisa",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5MgvRYzUmc6q86Q4ZxjDrG6Eykp6Cg-QrOJ8Z_ocqsv7lfxT_KkDNLU0k1AI"
+        }
+      ]
+    },
+    {
+      "query": "foster griffin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-25T23:30:00Z",
+      "related_news_urls": [
+        "https://www.mlb.com/news/foster-griffin-guardians-contract",
+        "https://www.mlbtraderumors.com/2026/11/guardians-to-sign-foster-griffin.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-tigers-sign-gausman-for-one-year-25mm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk",
+      "image_credit": "MLB.com",
+      "news": [
+        {
+          "url": "https://www.mlb.com/news/foster-griffin-guardians-contract",
+          "title": "Guardians bringing back lefty Griffin on 3-year, $48 million deal (source)",
+          "publisher": "MLB.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk"
+        },
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/guardians-to-sign-foster-griffin.html",
+          "title": "Guardians To Sign Foster Griffin",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOBjmKfu8mjzKOXoktn4EgrovRoE9YMAXpmIx0RJo8YjCOlwhJoAspYmPXc7A"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-tigers-sign-gausman-for-one-year-25mm",
+          "title": "Report: Tigers sign Gausman for one year, $25MM",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChjQj9s-nub8ulNWyfRPl6RG8TB4coOkh1fTCJkrcHY1ZW-m6ZkEOHIz0cSM"
+        }
+      ]
+    }
+  ]
+}
