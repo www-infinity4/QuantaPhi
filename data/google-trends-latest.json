@@ -3,12 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T14:31:10.555534Z",
+  "checked_at": "2026-11-26T15:01:32.319306Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "sarah hyland",
+      "query": "tornado",
       "approx_searches": "500+",
+      "published_at": "2026-11-26T14:40:00Z",
+      "related_news_urls": [
+        "https://www.13newsnow.com/article/weather/severe-weather/tornado-warning-issued-chesapeake-norfolk-portsmouth-virginia-beach/291-e40772dd-692a-427f-ac95-e5c1c80074e1",
+        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/entry/20045498/?userab=abcn_article_nfy_v2-691*control-3727,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,abcn_verts_postmvp_ux-672*variant_b_recency_promo-3591,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*control-3787,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_a_control-4000&userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-35",
+        "https://weather.com/2026/11/17/news/trending/video/san-francisco-bay-twin-waterspouts-caught-on-camera"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hLiNbFbeFcvm83aFG9eLX2J6UWZgxyQiOMOHLieoPD1ANGWj-ZQpwxb7mVg",
+      "image_credit": "13newsnow.com",
+      "news": [
+        {
+          "url": "https://www.13newsnow.com/article/weather/severe-weather/tornado-warning-issued-chesapeake-norfolk-portsmouth-virginia-beach/291-e40772dd-692a-427f-ac95-e5c1c80074e1",
+          "title": "Tornado warning issued for Chesapeake, Norfolk, Portsmouth, Virginia Beach",
+          "publisher": "13newsnow.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1hLiNbFbeFcvm83aFG9eLX2J6UWZgxyQiOMOHLieoPD1ANGWj-ZQpwxb7mVg"
+        },
+        {
+          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/entry/20045498/?userab=abcn_article_nfy_v2-691*control-3727,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,abcn_verts_postmvp_ux-672*variant_b_recency_promo-3591,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*control-3787,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_a_control-4000&userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-35",
+          "title": "Waterspouts spotted over SF Bay amid severe weather",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+        },
+        {
+          "url": "https://weather.com/2026/11/17/news/trending/video/san-francisco-bay-twin-waterspouts-caught-on-camera",
+          "title": "‘That’s so cool’: Waterspouts spotted over San Francisco Bay",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kmDI6JyS_PxjXZ_JIx0eLlelbYekDWY7pVBzzDFiClw17JzubzlB2nERfto"
+        }
+      ]
+    },
+    {
+      "query": "switch 2 black friday",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T14:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/cnn-underscored/deals/nintendo-switch-black-friday-deals-2026-11-25",
+        "https://mashable.com/tech/nov-25-nintendo-switch-2-mario-kart-black-friday-deal",
+        "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U5VoclHfvCeqhtFDoRo-i_koGX_jZ0Cens2N1IzB87dnWrkHBcZlP8TJeNI",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/nintendo-switch-black-friday-deals-2026-11-25",
+          "title": "Here are my 17 favorite Nintendo Switch Black Friday deals based on hundreds of hours of playing",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5U5VoclHfvCeqhtFDoRo-i_koGX_jZ0Cens2N1IzB87dnWrkHBcZlP8TJeNI"
+        },
+        {
+          "url": "https://mashable.com/tech/nov-25-nintendo-switch-2-mario-kart-black-friday-deal",
+          "title": "Best Nintendo deal: Save $50.99 on the Nintendo Switch 2 and Mario Kart World bundle",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPNP_AjLtJbEGjICLvWY6teKSw65y1rFWL7q7zPyX85FvAToGBLz2ZDP8kuao"
+        },
+        {
+          "url": "https://www.nintendo.com/us/whatsnew/adventure-awaits-save-on-a-daring-selection-of-digital-games/",
+          "title": "Adventure Awaits: Save on a daring selection of digital games",
+          "publisher": "Nintendo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSttzOeog3cW6cBchzbl3hSNl7CJxCO_HcTx1sXggNzJrahT_LJ3Dq1mD9BN7o"
+        }
+      ]
+    },
+    {
+      "query": "peloton",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T14:40:00Z",
+      "related_news_urls": [
+        "https://tradersunion.com/news/companies/show/4417799-peloton-run-analysis-launch/",
+        "https://www.tmz.com/2026/11/24/julianne-hough-splits-from-adrian-williams/",
+        "https://www.eonline.com/news/1438412/julianne-hough-shares-trust-quote-after-adrian-williams-breakup"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrBnOkqz9dF1MY5_ANIm0npYd0gJDYvlw1rP2fGj-JBGZmloUAeBBzdew86-c",
+      "image_credit": "Traders Union",
+      "news": [
+        {
+          "url": "https://tradersunion.com/news/companies/show/4417799-peloton-run-analysis-launch/",
+          "title": "PELOTON INTERACTIVE launches Run Analysis with personalized Running Efficiency Score",
+          "publisher": "Traders Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrBnOkqz9dF1MY5_ANIm0npYd0gJDYvlw1rP2fGj-JBGZmloUAeBBzdew86-c"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/24/julianne-hough-splits-from-adrian-williams/",
+          "title": "Julianne Hough’s Romance With Peloton Instructor Adrian Williams Ends",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQJCnuV-knf3Q2tpWP4jDj20uR-0LfDPSPhNJMki0aq4QeGHiAgQNIXF3gtwBo"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438412/julianne-hough-shares-trust-quote-after-adrian-williams-breakup",
+          "title": "Julianne Hough Shares Cryptic Message About Trust After Adrian Williams Breakup",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-nMe3-ehjqx8bz0-FZ6dx1vrheDNYW4Lbh_KsHic7o9xSbCuZEQFHSHp4HWg"
+        }
+      ]
+    },
+    {
+      "query": "tornado warning",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-26T14:30:00Z",
+      "related_news_urls": [
+        "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/entry/20045498/?userab=abcn_article_nfy_v2-691*control-3727,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,abcn_verts_postmvp_ux-672*variant_b_recency_promo-3591,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*control-3787,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_a_control-4000&userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-35",
+        "https://weather.com/2026/11/17/news/trending/video/san-francisco-bay-twin-waterspouts-caught-on-camera",
+        "https://www.sfgate.com/weather/article/waterspouts-waves-california-weather-22536087.php"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y",
+      "image_credit": "ABC7 Bay Area",
+      "news": [
+        {
+          "url": "https://abc7news.com/live-updates/live-bay-area-storm-updates-tornado-warning-issued-santa-cruz-county-waterspouts-spotted-san-francisco/20045464/entry/20045498/?userab=abcn_article_nfy_v2-691*control-3727,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_c_share_plus_google_button-3496,abcn_verts_postmvp_ux-672*variant_b_recency_promo-3591,otv_search_page_design_unification-546*variant_b_search_redesign-2300,otv_web_content_rec_v2-703*control-3787,otv_web_live-581*variant_b_live_redesign-2511,follow_otv_on_google-683*variant_c_share_plus_google_button-3662,otvlink_abcnnav-576*variant_c_localnews-3316,abcn_verts_duration_badge-748*variant_a_control-4000&userab=abcn_article_nfy_v2-691*v2_model_enabled-3729,otv_web_content_rec-539*variant_c_trending-2268,otv_web_topic-580*variant_b_topic_redesign-2509,follow_abcnews_otv_on_google-654*variant_a_control-3493,abcn_verts_postmvp_ux-672*variant_a_control-35",
+          "title": "Waterspouts spotted over SF Bay amid severe weather",
+          "publisher": "ABC7 Bay Area",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWZHWKnTNjmL3uQ2eW4lLpeo7ozeUocb4GK_rfXE5gS_Sp5uzWCCy80MvfK3Y"
+        },
+        {
+          "url": "https://weather.com/2026/11/17/news/trending/video/san-francisco-bay-twin-waterspouts-caught-on-camera",
+          "title": "‘That’s so cool’: Waterspouts spotted over San Francisco Bay",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kmDI6JyS_PxjXZ_JIx0eLlelbYekDWY7pVBzzDFiClw17JzubzlB2nERfto"
+        },
+        {
+          "url": "https://www.sfgate.com/weather/article/waterspouts-waves-california-weather-22536087.php",
+          "title": "Waterspouts, flash floods and wild waves: Meet The Weather Front",
+          "publisher": "SFGATE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRixrGfTp_sRaOcba00blL5-WE4SPLGpIHeZM03mM1wkVGx9yx29hVYx-Gg7gI"
+        }
+      ]
+    },
+    {
+      "query": "ciara",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T14:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/ciara-russell-wilson-kick-off-200203691.html",
+        "https://www.instagram.com/p/DgFfhxhlmUy/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-ciara-t-stop-cradling-121953423.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb6H04hdeDohy6CM63MKThrIRsN2V3N5IytOxiLSRgO10A3TbSwVonyP3qam8",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/ciara-russell-wilson-kick-off-200203691.html",
+          "title": "Ciara and Russell Wilson Kick Off Christmas at Macy's",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQb6H04hdeDohy6CM63MKThrIRsN2V3N5IytOxiLSRgO10A3TbSwVonyP3qam8"
+        },
+        {
+          "url": "https://www.instagram.com/p/DgFfhxhlmUy/",
+          "title": "#TSRPregnantAndGettinIt: #Ciara shares some cute bump moments for the gram. 😍 (SWIPE) ✍🏾: #TSRStaffJW",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/pregnant-ciara-t-stop-cradling-121953423.html",
+          "title": "Pregnant Ciara Can’t Stop Cradling Baby Bump for ‘Little Joys in Life’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4WFMjTiaDAJHkrlvOv4zwVQFWobYGAdacWZgISy41Y6xV-8jujInZz5_cpaI"
+        }
+      ]
+    },
+    {
+      "query": "north carolina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T14:30:00Z",
+      "related_news_urls": [
+        "https://www.wral.com/news/local/thousands-lose-power-thanksgiving-day-november-2026/",
+        "https://www.wxii12.com/article/thursday-rain-wind-weather-cool-thanksgiving-north-carolina/74539594",
+        "https://www.nbcwashington.com/weather/weather-stories/storm-team4-forecast-strong-gusts-arrive-as-thanksgiving-day-storm-set-to-bring-heavy-rain/4188284/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj4_GWodcjsaVrG4GmfA_ToOr9Vb1S1Pkm4_4xACsE3xq2yA-lJAM1CRNASnM",
+      "image_credit": "WRAL",
+      "news": [
+        {
+          "url": "https://www.wral.com/news/local/thousands-lose-power-thanksgiving-day-november-2026/",
+          "title": "Trees down, thousands still without power Thanksgiving morning across the Triangle",
+          "publisher": "WRAL",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTj4_GWodcjsaVrG4GmfA_ToOr9Vb1S1Pkm4_4xACsE3xq2yA-lJAM1CRNASnM"
+        },
+        {
+          "url": "https://www.wxii12.com/article/thursday-rain-wind-weather-cool-thanksgiving-north-carolina/74539594",
+          "title": "Widespread showers and gusty winds continue into Thanksgiving",
+          "publisher": "WXII",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRBD9sKpJuJ80yy-JSdxd9vRevCg5L-RdkX6yCZRjSQhbZdR9_t8ixtK83z2FY"
+        },
+        {
+          "url": "https://www.nbcwashington.com/weather/weather-stories/storm-team4-forecast-strong-gusts-arrive-as-thanksgiving-day-storm-set-to-bring-heavy-rain/4188284/",
+          "title": "Storm Team4 Forecast: Strong gusts arrive as Thanksgiving Day storm set to bring heavy rain",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvqLpzkAAOYzz3l2uPwPT52_YoFei-75YzTftJUGOREgcKJ6T5NLCaW6a7vQc"
+        }
+      ]
+    },
+    {
+      "query": "charlotte arnould",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T14:20:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
+        "https://www.jeanmarcmorandini.com/article-658415-urgent-la-justice-confirme-la-tenue-d-un-proces-criminel-contre-l-acteur-gerard-depardieu-qui-sera-juge-pour-viol-sur-la-comedienne-charlotte-arnould.html",
+        "https://mezha.net/fr/news/mezha-ba0d9b52233f84d8a914ae0e_l-acteur-francais-gerard-depardieu-sera/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl7MIpdyHOF49E_HO_iA3HKtNy8qWJtcqk8lktJsIW4wYvjX6UOjWReSYeZRs",
+      "image_credit": "France 24",
+      "news": [
+        {
+          "url": "https://www.france24.com/fr/france/20261126-gerard-depardieu-renvoy%C3%A9-en-appel-pour-une-partie-des-viols-dont-il-est-accuse-par-charlotte-arnould",
+          "title": "Gérard Depardieu renvoyé en procès pour une partie des viols dont il est accusé par Charlotte Arnould",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSl7MIpdyHOF49E_HO_iA3HKtNy8qWJtcqk8lktJsIW4wYvjX6UOjWReSYeZRs"
+        },
+        {
+          "url": "https://www.jeanmarcmorandini.com/article-658415-urgent-la-justice-confirme-la-tenue-d-un-proces-criminel-contre-l-acteur-gerard-depardieu-qui-sera-juge-pour-viol-sur-la-comedienne-charlotte-arnould.html",
+          "title": "URGENT - La justice confirme la tenue d'un procès criminel contre l'acteur Gérard Depardieu, qui sera jug...",
+          "publisher": "Jean-Marc Morandini",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ2Mwa9x8d1gRUaftsRX5t1IlBVUHNYhkPFEnSPt17RWbfGlIi2VvhXT2mCkp8"
+        },
+        {
+          "url": "https://mezha.net/fr/news/mezha-ba0d9b52233f84d8a914ae0e_l-acteur-francais-gerard-depardieu-sera/",
+          "title": "L’acteur français Gérard Depardieu sera jugé pour viol, selon son avocat",
+          "publisher": "Mezha.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVSZZ3j_S-SKy-6W46nk-oGNkBU2U3Zjt5cPRzDqdo_4DqYDJYvEYor_WH1VM"
+        }
+      ]
+    },
+    {
+      "query": "sarah hyland",
+      "approx_searches": "1000+",
       "published_at": "2026-11-26T14:10:00Z",
       "related_news_urls": [
         "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-24-2026-includes-celebrities-colin-hanks-sarah-hyland.html",
@@ -42,317 +287,72 @@
       ]
     },
     {
-      "query": "ken jeong",
+      "query": "national day of mourning",
       "approx_searches": "200+",
       "published_at": "2026-11-26T14:10:00Z",
       "related_news_urls": [
-        "https://www.mediapost.com/publications/article/419669/checkoutcom-campaign-assures-retailers-the-holida.html?edition=144571",
-        "https://www.digitaltransactions.net/checkout-coms-everything-campaign-enlists-ken-jeong-and-other-digital-transactions-news-briefs-from-11-25-26/",
-        "https://www.retailtechinnovationhub.com/home/2026/11/26/checkoutcom-hires-the-hangover-and-community-star-ken-jeong-as-chief-everythings-going-to-be-alright-officer"
+        "https://www.bostonherald.com/2026/11/25/massachusetts-judge-rules-plymouth-owes-no-stage-for-thanksgiving-protest-in-americas-hometown/",
+        "https://www.cbsnews.com/boston/news/plymouth-national-day-of-mourning-dispute-uaine/",
+        "https://www.theguardian.com/us-news/2026/nov/25/native-americans-national-day-of-mourning-thanksgiving"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNfATnm9AyFo0YIXSH6KH92BLwchMYrSUg80-fBta0v7F3tMVkYI_c9_3EF5E",
-      "image_credit": "MediaPost",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCP_8cS1XEW8yXpkcPIK3tz1K1IcvyI_Ut7FHDPKziyssxC1-BqjWms1zRmz4",
+      "image_credit": "Boston Herald",
       "news": [
         {
-          "url": "https://www.mediapost.com/publications/article/419669/checkoutcom-campaign-assures-retailers-the-holida.html?edition=144571",
-          "title": "Checkout.com Campaign Assures Retailers The Holiday Season Will Be 'Alright' 11/25/2026",
-          "publisher": "MediaPost",
+          "url": "https://www.bostonherald.com/2026/11/25/massachusetts-judge-rules-plymouth-owes-no-stage-for-thanksgiving-protest-in-americas-hometown/",
+          "title": "Massachusetts judge rules Plymouth owes no stage for Thanksgiving protest in America's Hometown",
+          "publisher": "Boston Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNfATnm9AyFo0YIXSH6KH92BLwchMYrSUg80-fBta0v7F3tMVkYI_c9_3EF5E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCP_8cS1XEW8yXpkcPIK3tz1K1IcvyI_Ut7FHDPKziyssxC1-BqjWms1zRmz4"
         },
         {
-          "url": "https://www.digitaltransactions.net/checkout-coms-everything-campaign-enlists-ken-jeong-and-other-digital-transactions-news-briefs-from-11-25-26/",
-          "title": "Checkout.com’s ‘Everything’ Campaign Enlists Ken Jeong and other Digital Transactions News briefs from 11/25/26",
-          "publisher": "Digital Transactions",
+          "url": "https://www.cbsnews.com/boston/news/plymouth-national-day-of-mourning-dispute-uaine/",
+          "title": "Plymouth can't require insurance for Native American National day of Mourning protest on Thanksgiving, judge rules",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQt2SU5HXLpmTlIf8TmGdyGXmXAqd0-yGeSkhq-pULn7Bk8fqg0XTH_JiQWDZs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxJzdAB4pbv85O9EBa75LX7AeB2kFGnnlOg-EejC2iVefsvtcnoA8WVLBCTYc"
         },
         {
-          "url": "https://www.retailtechinnovationhub.com/home/2026/11/26/checkoutcom-hires-the-hangover-and-community-star-ken-jeong-as-chief-everythings-going-to-be-alright-officer",
-          "title": "Checkout.com hires The Hangover and Community star Ken Jeong as Chief Everything's Going To Be Alright Officer",
-          "publisher": "Retail Technology Innovation Hub",
+          "url": "https://www.theguardian.com/us-news/2026/nov/25/native-americans-national-day-of-mourning-thanksgiving",
+          "title": "‘This is political oppression’: Native Americans accuse Massachusetts town in Thanksgiving dispute",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtb6o87wWuGdQtqCnKotOR9JNcItVlrNXGhgdMdlKp13eLMlgiqkz--hqUWfs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjfHm6WPKozvfb9MrPiDJtwhj50dm4zeBEYP5cLyVY3IR0ySEfolDyufa63Yw"
         }
       ]
     },
     {
-      "query": "college football today",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T14:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/college-football-teams-thankful-this-2026-season/",
-        "https://dailyemerald.com/195559/sports/the-thankful-ducks/",
-        "https://autzenzoo.com/5-things-oregon-football-fans-should-be-thankful-for-this-thanksgiving"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEU50K2bN_448YWDu1Ejq7oGVbpnrSGY0_OpIB79eT7C9INjNn7Fx7B2fA4A",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-teams-thankful-this-2026-season/",
-          "title": "Most, least thankful teams this season: Oregon counts its blessings, while LSU feels holiday hangover",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcROEU50K2bN_448YWDu1Ejq7oGVbpnrSGY0_OpIB79eT7C9INjNn7Fx7B2fA4A"
-        },
-        {
-          "url": "https://dailyemerald.com/195559/sports/the-thankful-ducks/",
-          "title": "The thankful Ducks",
-          "publisher": "Daily Emerald",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbQfRPvAcqnC_iWsETDPH3Mf7FUkHYJh4rnanbH3h5IpFdA42m1KewWJS298"
-        },
-        {
-          "url": "https://autzenzoo.com/5-things-oregon-football-fans-should-be-thankful-for-this-thanksgiving",
-          "title": "5 things Oregon Football fans should be thankful for this Thanksgiving",
-          "publisher": "Autzen Zoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJCUxS7esJeWOyIUDnwhLynF2nHQaJdPJV2AQakhAozwL5NdkT1AeE_rMpT40"
-        }
-      ]
-    },
-    {
-      "query": "click on detroit.com",
+      "query": "delmarva power outage",
       "approx_searches": "200+",
-      "published_at": "2026-11-26T14:00:00Z",
+      "published_at": "2026-11-26T14:10:00Z",
       "related_news_urls": [
-        "https://www.freep.com/story/news/local/michigan/detroit/2026/11/26/i-75-fatal-crash-detroit/92969570007/",
-        "https://www.clickondetroit.com/news/local/2026/11/26/woman-killed-man-seriously-injured-in-crash-on-i-75-near-michigan-avenue-in-detroit/",
-        "https://www.fox2detroit.com/news/woman-killed-after-being-struck-while-waiting-tow-truck-i-75"
+        "https://www.wboc.com/news/power-outages-steadily-increasing-across-delmarva/article_cc5ebcfc-445c-4010-9021-b45fe3fcae4d.html",
+        "https://www.wdel.com/news/power-outages-steadily-increasing-due-to-storm/article_7edee96c-c2ba-5dcd-8119-4b6c21749570.html",
+        "https://www.wsls.com/news/local/2026/11/26/power-outages-in-southwest-central-virginia-on-nov-26-2026/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREb-c-6CGGG5Iu_1ia6FDuTSO7djJwk28xijoBYWCrIKvjAe5MIVi56LTZVl0",
-      "image_credit": "Detroit Free Press",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQna8MCvt3TnCt12GL4jCkNuyxTBhfcCzF_zKoo7aBriBSFibd4pmqp5eYoCpo",
+      "image_credit": "WBOC TV",
       "news": [
         {
-          "url": "https://www.freep.com/story/news/local/michigan/detroit/2026/11/26/i-75-fatal-crash-detroit/92969570007/",
-          "title": "Woman waiting for tow truck on I-75 killed in Thanksgiving Day crash",
-          "publisher": "Detroit Free Press",
+          "url": "https://www.wboc.com/news/power-outages-steadily-increasing-across-delmarva/article_cc5ebcfc-445c-4010-9021-b45fe3fcae4d.html",
+          "title": "Power outages steadily increasing across Delmarva",
+          "publisher": "WBOC TV",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREb-c-6CGGG5Iu_1ia6FDuTSO7djJwk28xijoBYWCrIKvjAe5MIVi56LTZVl0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQna8MCvt3TnCt12GL4jCkNuyxTBhfcCzF_zKoo7aBriBSFibd4pmqp5eYoCpo"
         },
         {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/26/woman-killed-man-seriously-injured-in-crash-on-i-75-near-michigan-avenue-in-detroit/",
-          "title": "Woman killed, man seriously injured in crash on I-75 near Michigan Avenue in Detroit",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "url": "https://www.wdel.com/news/power-outages-steadily-increasing-due-to-storm/article_7edee96c-c2ba-5dcd-8119-4b6c21749570.html",
+          "title": "Power outages steadily increasing due to storm",
+          "publisher": "WDEL",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSew_L_Y3D96FHy_hBIUjDEjPIih3y4k9Ym1gIJY32IVg78sgIlkt_RfMqSFGE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIZ9Qp2B2iiTWF53OUEGBRgGGVSqvE47LyoyP0y8VJg9q-e0bgfol6sK9HumY"
         },
         {
-          "url": "https://www.fox2detroit.com/news/woman-killed-after-being-struck-while-waiting-tow-truck-i-75",
-          "title": "Woman killed after being struck while waiting for tow truck on I-75",
-          "publisher": "FOX 2 Detroit",
+          "url": "https://www.wsls.com/news/local/2026/11/26/power-outages-in-southwest-central-virginia-on-nov-26-2026/",
+          "title": "Power outages in Southwest, Central Virginia on Nov. 26, 2026",
+          "publisher": "WSLS",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDRZXPD-G2diPq5ftmKBFwGkXpDQ0eG9gKTolZ5ZwGcMaxTXnS0uckK5lsWYs"
-        }
-      ]
-    },
-    {
-      "query": "wdiv",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T14:00:00Z",
-      "related_news_urls": [
-        "https://www.clickondetroit.com/weather/2026/11/26/wet-and-windy-thanksgiving-across-metro-detroit-rain-may-mix-with-snow-tonight/",
-        "https://www.wxyz.com/weather/forecast/todays-forecast/metro-detroit-weather-not-as-cold-today-with-thanksgiving-rain-closing-in",
-        "https://www.wzzm13.com/article/weather/weather-impact/widespread-rain-gusty-winds-expected-in-west-michigan-for-thanksgiving/69-9481c4bd-5f5b-49f8-8369-3dd0a2fbcc24"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SH0tWBzyPdWedvHqUvsYFbS-KwYar5Uek6R475vJjl6-54QU91LbOn8UsbA",
-      "image_credit": "ClickOnDetroit | WDIV Local 4",
-      "news": [
-        {
-          "url": "https://www.clickondetroit.com/weather/2026/11/26/wet-and-windy-thanksgiving-across-metro-detroit-rain-may-mix-with-snow-tonight/",
-          "title": "Wet and Windy Thanksgiving Across Metro Detroit; Rain May Mix With Snow Tonight",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4SH0tWBzyPdWedvHqUvsYFbS-KwYar5Uek6R475vJjl6-54QU91LbOn8UsbA"
-        },
-        {
-          "url": "https://www.wxyz.com/weather/forecast/todays-forecast/metro-detroit-weather-not-as-cold-today-with-thanksgiving-rain-closing-in",
-          "title": "Metro Detroit Weather: Wet turkeys for late dinner",
-          "publisher": "WXYZ Channel 7",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcToALH-IIJbqMl6kcCtmzupM_DNBd2orv7oGqAtWYRyUaZaFSre3LQKF4r6rPo"
-        },
-        {
-          "url": "https://www.wzzm13.com/article/weather/weather-impact/widespread-rain-gusty-winds-expected-in-west-michigan-for-thanksgiving/69-9481c4bd-5f5b-49f8-8369-3dd0a2fbcc24",
-          "title": "Widespread rain, gusty winds expected in West Michigan for Thanksgiving",
-          "publisher": "WZZM13.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGPCN-3LS9i8g2jq8Qv5OSRAOAuefUZphBWj8FMf7sGCDTbYtYEcen4CydODA"
-        }
-      ]
-    },
-    {
-      "query": "george washington thanksgiving proclamation",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T14:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/26/opinion/thanksgiving-gratitude-lincoln-loss/",
-        "https://www.duluthnewstribune.com/opinion/editorials/our-view-there-are-reasons-for-thanks-even-163-years-later",
-        "https://www.nola.com/opinions/our_views/editorial-thanksgiving-lincoln/article_31caa146-ecf9-42ed-bafa-a1b0ddac8a6a.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpFHmfn2ZyMQaK4FTaHSR7yExEamcaxkgATCs2aheIyigJJLfatyhnviWv7Vs",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/26/opinion/thanksgiving-gratitude-lincoln-loss/",
-          "title": "Opinion | Learning to be grateful, even when life gets hard",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpFHmfn2ZyMQaK4FTaHSR7yExEamcaxkgATCs2aheIyigJJLfatyhnviWv7Vs"
-        },
-        {
-          "url": "https://www.duluthnewstribune.com/opinion/editorials/our-view-there-are-reasons-for-thanks-even-163-years-later",
-          "title": "Our View: There are reasons for thanks — even 163 years later",
-          "publisher": "Duluth News Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7ikr1rO58XoWu3n-hgj3PjxdJ57aEYPrPYtobQAlsUhv0h3duO7H2OcOz-Q0"
-        },
-        {
-          "url": "https://www.nola.com/opinions/our_views/editorial-thanksgiving-lincoln/article_31caa146-ecf9-42ed-bafa-a1b0ddac8a6a.html",
-          "title": "Editorial: In land of plenty, we look to the origins of Thanksgiving",
-          "publisher": "NOLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRD81WnspD1ED13a2kgfk3SM8vD1I8A2_x-FnafLzoVLET0JBCbC1AJmIXmtvM"
-        }
-      ]
-    },
-    {
-      "query": "mortgage rates today",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T13:50:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/Business/wireStory/average-us-30-year-mortgage-rate-eases-721-138446333",
-        "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11252026",
-        "https://finance.yahoo.com/personal-finance/mortgages/article/the-ai-sell-off-is-sending-mortgage-rates-lower-mortgage-and-refinance-interest-rates-today-wednesday-november-25-2026-170019861.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/Business/wireStory/average-us-30-year-mortgage-rate-eases-721-138446333",
-          "title": "The average US 30-year mortgage rate eases to 7.21%, not far from 2026 high",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTnAXuNjFpZC1-r3b4tjIgOqXdrgCSTTew6u5rc3xoVkPvrQ-uxkBhne9UckDs"
-        },
-        {
-          "url": "https://www.mortgagenewsdaily.com/markets/mortgage-rates-11252026",
-          "title": "Mortgage Rates Improve Again as Stock Slide Continues",
-          "publisher": "Mortgage News Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmjtScukkrsD0TAovW7Xi6Xqhu7CXs_heEX5h2W-9jH3aM8NivfHkZgMFK2mY"
-        },
-        {
-          "url": "https://finance.yahoo.com/personal-finance/mortgages/article/the-ai-sell-off-is-sending-mortgage-rates-lower-mortgage-and-refinance-interest-rates-today-wednesday-november-25-2026-170019861.html",
-          "title": "The AI sell-off is sending mortgage rates lower: Mortgage and refinance interest rates today, Wednesday, November 25, 2026",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQC2ttOts9gUHgzE9XeJSIn-RwXn2RoFe1wvVXtdaU63-DwFBmfWYaRglEq03Y"
-        }
-      ]
-    },
-    {
-      "query": "good morning america",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T13:50:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-        "https://cwibc.co.id/en/gma-holiday-gifts-under-20",
-        "https://aktualita.co/en/money/gma-deals-steals-free-shipping-bonanza"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-          "title": "Deals & Steals for Thanksgiving",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
-        },
-        {
-          "url": "https://cwibc.co.id/en/gma-holiday-gifts-under-20",
-          "title": "GMA Highlights Holiday Gifts Under 20 Dollars for 2026",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6S9pWEQEQ2KrnfrPrrueeHQaBXQXU0A4Q-qyyN0p9_lTfnAnawXExsYKP1aM"
-        },
-        {
-          "url": "https://aktualita.co/en/money/gma-deals-steals-free-shipping-bonanza",
-          "title": "GMA Deals & Steals Free Shipping Bonanza: Save Up to 78% Ahead of Black Friday",
-          "publisher": "Aktualita.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSrrWAAqt7h0L4wDRotqIaJQvNxyMHITSl1FK4FA9szSzbWbQuqhsGudgBCVbo"
-        }
-      ]
-    },
-    {
-      "query": "rockettes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T13:50:00Z",
-      "related_news_urls": [
-        "https://people.com/identical-twins-rockettes-found-out-made-team-seconds-apart-exclusive-12267264",
-        "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
-        "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ37LnHIhksPUpdxrZFobw1UCuW0AeZ_xZaRdbTbEfd00f6evcWjpChgWjSsa4",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/identical-twins-rockettes-found-out-made-team-seconds-apart-exclusive-12267264",
-          "title": "Identical Twins Found Out They Made the Rockettes Seconds Apart (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ37LnHIhksPUpdxrZFobw1UCuW0AeZ_xZaRdbTbEfd00f6evcWjpChgWjSsa4"
-        },
-        {
-          "url": "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
-          "title": "PETA supporters crash Rockettes Christmas performance",
-          "publisher": "PIX11",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI"
-        },
-        {
-          "url": "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html",
-          "title": "PETA Activists Storm Rockettes Show",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReUvKct4L_H3X8UTeZWzfJV_oytCLI5jznnGhkwnpAlgDIUsMq3BhLkWNuTTQ"
-        }
-      ]
-    },
-    {
-      "query": "when did savannah guthrie's mom disappear",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T13:40:00Z",
-      "related_news_urls": [
-        "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
-        "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing",
-        "https://m.economictimes.com/world/us/solving-nancy-guthrie-case-much-more-difficult-now-for-two-reasons-seasoned-investigator-explains/articleshow/136185064.cms"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s",
-      "image_credit": "TV Insider",
-      "news": [
-        {
-          "url": "https://www.tvinsider.com/1304851/savannah-guthrie-thanksgiving-parade-plans-mom-nancy-remains-missing/",
-          "title": "Savannah Guthrie’s Thanksgiving Plans Confirmed as Mom Nancy Remains Missing",
-          "publisher": "TV Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWnvxQ-vl4WbKtBEcmjLSZ1qKJiWKCsqenotzFOnEHLsEC5JDQEAf8uuDVX9s"
-        },
-        {
-          "url": "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing",
-          "title": "Savannah Guthrie Returns to the Macy’s Parade with Her Mom Still Missing",
-          "publisher": "Parade Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrKsDG8vuGdrUeAM20aphDEZ0dFNCeMYtM7_S8kbd66f1EDFUsHOKSBYzAtI"
-        },
-        {
-          "url": "https://m.economictimes.com/world/us/solving-nancy-guthrie-case-much-more-difficult-now-for-two-reasons-seasoned-investigator-explains/articleshow/136185064.cms",
-          "title": "Solving Nancy Guthrie case ‘much more difficult’ now for two reasons, seasoned investigator explains",
-          "publisher": "The Economic Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAggkaXmARj_bqoP0uLdXk1ddBn-xtlN1g4YeF9g9KOkiSKqz8N7vEbBzyRP4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTD9MtgSwJcPvuRXksL8upWLDiNmqDIM1j6cz2b4Zwno-LVitSBEXXbRuxEvU"
         }
       ]
     }
