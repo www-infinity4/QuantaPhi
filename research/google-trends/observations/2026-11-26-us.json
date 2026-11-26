@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T00:01:29.486189Z",
+  "checked_at": "2026-11-26T00:45:14.039622Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "canucks vs red wings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-detroit-red-wings-prediction-odds-2026-11-25/",
-        "https://www.nytimes.com/athletic/7812072/2026/11/25/canucks-vs-red-wings-stream-how-to-watch-nov-25/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/news/vancouver-canucks-detroit-red-wings-game-preview-november-25-2026",
-          "title": "Canucks at Red Wings projected lineups",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vancouver-canucks-vs-detroit-red-wings-prediction-odds-2026-11-25/",
-          "title": "Vancouver Canucks vs Detroit Red Wings Prediction, Picks & Odds | 25 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FBPGZ88o6XTp9enIAsrsutM5E4b9zaN__44xn8Omej7KzF0UXS7yES7NwbA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7812072/2026/11/25/canucks-vs-red-wings-stream-how-to-watch-nov-25/",
-          "title": "How to watch Canucks vs. Red Wings: TV channel and streaming options for November 25",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSisYBgo4tJrpW7pFGUUDLw3t93nuUeqzcmAFhhH6EnvUVvcU7l4eIScEKqAKM"
-        }
-      ]
-    },
-    {
-      "query": "blake corum",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyren-williams-off-injury-report-set-to-play-wednesday-vs-packers",
-        "https://sports.yahoo.com/fantasy/articles/blake-corum-making-kyren-williams-183321907.html",
-        "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-12-start-em-sit-em-kyren-williams-vs-blake-corum"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzDvIJcwCrKs9pGN5dVmsukfF2dwYrqsyjNCpg48MqdlAvZ1AAiqHLaz4YfrU",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/kyren-williams-off-injury-report-set-to-play-wednesday-vs-packers",
-          "title": "Kyren Williams off injury report, set to play Wednesday vs. Packers",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzDvIJcwCrKs9pGN5dVmsukfF2dwYrqsyjNCpg48MqdlAvZ1AAiqHLaz4YfrU"
-        },
-        {
-          "url": "https://sports.yahoo.com/fantasy/articles/blake-corum-making-kyren-williams-183321907.html",
-          "title": "Is Blake Corum making Kyren Williams irrelevant in fantasy football?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTj1fyc1lINc2MsU6Jb-uGEyAUuycdqqBePoSv8OS_yK8ayYyZeLj13qCFH2BE"
-        },
-        {
-          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/fantasy-football-week-12-start-em-sit-em-kyren-williams-vs-blake-corum",
-          "title": "Fantasy Football Week 12 Start ‘Em, Sit ‘Em: Kyren Williams vs. Blake Corum",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQc2c6A5m6lFbe88-096PSNU-_AdvX_5XnYjhz2OOs7LtKp_1JEik2_lCm2_Dw"
-        }
-      ]
-    },
-    {
-      "query": "konata mumpfield",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [
-        "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
-        "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/155558/konata-mumpfield-davante-adams-rams-depth",
-        "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA",
-      "image_credit": "RotoBaller",
-      "news": [
-        {
-          "url": "https://www.rotoballer.com/week-12-waiver-wire-pickups-konata-mumpfield-cj-daniels-tyler-higbee-fantasy-football-outlooks/2002991",
-          "title": "Week 12 Waiver Wire Pickups - Konata Mumpfield, CJ Daniels, Tyler Higbee Fantasy Football Outlooks",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKAEuHPNM_l_weoq6XPsKomYeWCeMzZ6ppi_kev0DzUPJaHrWeMAnJfAgCryA"
-        },
-        {
-          "url": "https://www.turfshowtimes.com/los-angeles-rams-depth-chart/155558/konata-mumpfield-davante-adams-rams-depth",
-          "title": "Konata Mumpfield might be better than he gets credit for",
-          "publisher": "Turf Show Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsAqGBXIQ47PuDiW5-vzWNGJpkcIP1qqbtOPE0aOP9BMEhopeQ-1Gsz2ceRM4"
-        },
-        {
-          "url": "https://www.thefantasyfootballers.com/news/648883/konata-mumpfield-will-maintain-larger-role-sans-nacua/",
-          "title": "Konata Mumpfield Will maintain larger role sans Nacua",
-          "publisher": "Fantasy Footballers Podcast",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQriX7bZWkf20b3G6Phe65rn0itKnqEnV2jp6qfp63aFL1aooLCLNYFRRRXHRo"
-        }
-      ]
-    },
-    {
-      "query": "packers inactives",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "the pitt season 3",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/tv/news/the-pitt-season-3-release-date-hbo-max-1236958110/",
-        "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
-        "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/pitt-season-3-release-date-190620472.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXk3XXeMX2AB7qMD6L7b4Coj8b4CFie5DuUhT5EjEb_oK9L2KRDG3Bf9e3qkg",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/tv/news/the-pitt-season-3-release-date-hbo-max-1236958110/",
-          "title": "‘The Pitt’ Sets Season 3 Release Date at HBO Max",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXk3XXeMX2AB7qMD6L7b4Coj8b4CFie5DuUhT5EjEb_oK9L2KRDG3Bf9e3qkg"
-        },
-        {
-          "url": "https://deadline.com/2026/11/the-pitt-season-3-premiere-date-1237233493/",
-          "title": "‘The Pitt’ Sets Season 3 Premiere Date",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYwxPq41l3Yfl1Wzy-cxiqyX0y597NxoLQnIfGi3DmcGgLc9inPYni8I6h9s"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/renewed-canceled/articles/pitt-season-3-release-date-190620472.html",
-          "title": "The Pitt Season 3 Release Date Set, HBO Max Confirms Main Cast After Supriya Ganesh Exit",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ55hZ-fQ59EI0_oeUKUeOVJMLLg0J5RHc3hTDW2V_P731i-9nb8C-hfTZvQrY"
-        }
-      ]
-    },
-    {
-      "query": "guy fieri",
-      "approx_searches": "200+",
-      "published_at": "2026-11-25T23:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
-        "https://www.nbcboston.com/news/local/guy-fieris-top-restaurants-in-new-england-ranking-says/4054222/",
-        "https://demokratis.co.id/en/chicago-restaurants-fieri-favorites-ranking"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4",
-      "image_credit": "NBC 5 Chicago",
-      "news": [
-        {
-          "url": "https://www.nbcchicago.com/news/local/guy-fieris-top-5-restaurants-include-2-chicago-spots-ranking-says/4020598/",
-          "title": "Guy Fieri's favorite restaurant in America is in Chicago, ranking says",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwolKS42opNCKMKRUKtCc16miN1w2NJi6gE84ene_UV0Jrat3Ilj9-8jqacg4"
-        },
-        {
-          "url": "https://www.nbcboston.com/news/local/guy-fieris-top-restaurants-in-new-england-ranking-says/4054222/",
-          "title": "2 of Guy Fieri's favorite restaurants are in New England, ranking says",
-          "publisher": "NBC Boston",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOz_HOfpMdNMgD8BYarP5aGLX6X06jAgMe63w6HZ6uPD9IGobUrd0zgy2DkVM"
-        },
-        {
-          "url": "https://demokratis.co.id/en/chicago-restaurants-fieri-favorites-ranking",
-          "title": "LOVEFood Ranks Two Chicago Restaurants Among Fieri Favorites",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmKEqv-CDfLlDLBzCuZ0yxU-2VmRQLM5Q42YC6IFd_8u0NHswl3cv5B0L-QI"
-        }
-      ]
-    },
-    {
-      "query": "timberwolves vs thunder",
+      "query": "nebraska volleyball",
       "approx_searches": "5000+",
-      "published_at": "2026-11-25T23:30:00Z",
+      "published_at": "2026-11-26T00:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50597092/the-thunder-look-get-back-win-column-take-timberwolves",
-        "https://sportsbook.fanduel.com/basketball/nba/minnesota-timberwolves-@-oklahoma-city-thunder-36354196",
-        "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander"
+        "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
+        "https://huskers.com/news/2026/11/24/no-1-huskers-advance-to-big-ten-championship",
+        "https://247sports.com/college/nebraska/article/nebraska-volleyball-purdue-big-ten-tournament-championship-rally-2026-293285276/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQarOPkToLIeJs9oYEbKKakaI88ZFsr3-JGTQCE70SrQ4nZyyyzt6Cu3pvRMs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ",
+      "image_credit": "Big Ten Conference",
+      "news": [
+        {
+          "url": "https://bigten.org/news/2026/11/23/volleyball-four-left-in-pursuit-for-inaugural-tournament-title.aspx",
+          "title": "Four Left in Pursuit for Inaugural Tournament Title",
+          "publisher": "Big Ten Conference",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZ35VUBofI5100DartYecOXSoDlXcSJMqtMpRqwTHvBpUA7GevGDeqfPv5MuQ"
+        },
+        {
+          "url": "https://huskers.com/news/2026/11/24/no-1-huskers-advance-to-big-ten-championship",
+          "title": "No. 1 Huskers Advance to Big Ten Championship - University of Nebraska - Official Athletics Website",
+          "publisher": "huskers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbsEjMau_4BllvJkujUG-GIE77JJUj4m3QQH1IePdhlEkBT9t95W0DopHn1K8"
+        },
+        {
+          "url": "https://247sports.com/college/nebraska/article/nebraska-volleyball-purdue-big-ten-tournament-championship-rally-2026-293285276/",
+          "title": "Nebraska rallies past Purdue to reach Big Ten tournament title match",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYE7aesldYh8agX-r09BjHbvvE8Hxp1H2PaurdkYAkpqndQrZRgJFRvPt5ovo"
+        }
+      ]
+    },
+    {
+      "query": "davion mitchell",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50598222/davion-mitchell-drains-buzzer-beater-close-first-quarter",
+        "https://www.miamiherald.com/sports/nba/miami-heat/article317819582.html",
+        "https://www.hoopsrumors.com/2026/11/heat-notes-antetokounmpo-mitchell-backcourt-depth-wing-rotation.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtML8qftGNRHs3VKUtRi1NOtGSiiZnpuqRdn2A-CsFrfucXzqDmx55BGdj7qo",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50597092/the-thunder-look-get-back-win-column-take-timberwolves",
-          "title": "The Thunder look to get back in the win column as they take on the Timberwolves",
+          "url": "https://www.espn.com/video/clip/_/id/50598222/davion-mitchell-drains-buzzer-beater-close-first-quarter",
+          "title": "Davion Mitchell drains a buzzer-beater to close the first quarter",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQarOPkToLIeJs9oYEbKKakaI88ZFsr3-JGTQCE70SrQ4nZyyyzt6Cu3pvRMs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtML8qftGNRHs3VKUtRi1NOtGSiiZnpuqRdn2A-CsFrfucXzqDmx55BGdj7qo"
         },
         {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/minnesota-timberwolves-@-oklahoma-city-thunder-36354196",
-          "title": "Minnesota Timberwolves @ Oklahoma City Thunder Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.miamiherald.com/sports/nba/miami-heat/article317819582.html",
+          "title": "From doubted to dynamic: Heat’s backcourt among league leaders. Big tests await",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyp8vVaYb7n3FrFvv7QwJT0qvPMmnzOoiqtSOO-ft41wU65s3vYktazvyQ2a0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0vSprc3NJ4S2Aqj9d7yaX9xaCW2lUd_agdwZqNpwuNNoWD89bDRT-zt5tgA"
         },
         {
-          "url": "https://www.canishoopus.com/timberwolves-game-previews/72311/nba-thread-oklahoma-city-thunder-shai-gilgeous-alexander",
-          "title": "Game Preview #19: Wolves at Thunder Thread",
-          "publisher": "Canis Hoopus",
+          "url": "https://www.hoopsrumors.com/2026/11/heat-notes-antetokounmpo-mitchell-backcourt-depth-wing-rotation.html",
+          "title": "Heat Notes: Antetokounmpo, Mitchell, Backcourt, Wing Rotation",
+          "publisher": "Hoops Rumors",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRraPKqtTvKlugW-OJDtmcc-m800MsLjo7YPuUAzFEM_Y_EHI4wEqsNJFtsNyE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaHHC-zN-_BOtDAya2AHhXTNAW9i6VfPaxXcYHJGilO67u4xdd4aY9bYq0sJA"
         }
       ]
     },
     {
-      "query": "kevin gausman",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-25T23:30:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/kevin-gausman-tigers-deal",
-        "https://bleacherreport.com/articles/25505011-kevin-gausman-tigers-agree-contract-after-cubs-stint-mlb-rumors-reveal-full-details",
-        "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-kevin-gausman.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6HXqtlgj4CUqDi2PA2DUGjTerJSF7ULiemszrFMV0i56bwL9pRwX8qU2XP6s",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/kevin-gausman-tigers-deal",
-          "title": "Tigers agree to 1-year deal with veteran righty Gausman (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT6HXqtlgj4CUqDi2PA2DUGjTerJSF7ULiemszrFMV0i56bwL9pRwX8qU2XP6s"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25505011-kevin-gausman-tigers-agree-contract-after-cubs-stint-mlb-rumors-reveal-full-details",
-          "title": "Kevin Gausman, Tigers Agree to Contract After Cubs Stint, MLB Rumors Reveal Full Details",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX5MOeM2nxV9f57Sc82CmW6xUk5yWAH_QPrFHj8t65akuS4eTAPcqBcmKqem0"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/tigers-to-sign-kevin-gausman.html",
-          "title": "Tigers To Sign Kevin Gausman",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZlmVwh9YVmRl9GXu2hHD3p3ZEIuu_JSOAgqcrc9Z9vslCFLoUvHjR3HM3nos"
-        }
-      ]
-    },
-    {
-      "query": "barcelona sc - independiente del valle",
+      "query": "kyren williams",
       "approx_searches": "1000+",
-      "published_at": "2026-11-25T23:30:00Z",
+      "published_at": "2026-11-26T00:30:00Z",
       "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17560979/habra-pasillo-de-barcelona-a-independiente-esto-respondio-joaquin-papa",
-        "https://onefootball.com/es/noticias/bsc-vs-idv-las-claves-que-anticipa-el-predictor-1xbet-43839173",
-        "https://www.ecuavisa.com/liveblogs/barcelona-sc-vs.-independiente-del-valle-por-la-ligapro-lb202611250002.html"
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-25/pelissero-kyren-williams-dealing-with-turf-toe",
+        "https://sports.yahoo.com/nfl/articles/kyren-williams-vs-packers-week-205203078.html",
+        "https://www.rotoballer.com/player-news/kyren-williams-off-the-injury-report-vs-packers/2002858"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4zuPxu7SGk8CZjt-usyqZcu30LVzV77VQWZSIzStfkAQrfQi0SQqINGHg090",
-      "image_credit": "ESPN Deportes",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrdR_m8zopf1AOdWOfkG-UrOGc2pTsIfx0RZXouViRHhZXJgBSiVqC0CDbEIg",
+      "image_credit": "NBC Sports",
       "news": [
         {
-          "url": "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17560979/habra-pasillo-de-barcelona-a-independiente-esto-respondio-joaquin-papa",
-          "title": "¿Habrá pasillo de Barcelona a Independiente? Esto respondió Joaquín Papa",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4zuPxu7SGk8CZjt-usyqZcu30LVzV77VQWZSIzStfkAQrfQi0SQqINGHg090"
-        },
-        {
-          "url": "https://onefootball.com/es/noticias/bsc-vs-idv-las-claves-que-anticipa-el-predictor-1xbet-43839173",
-          "title": "BSC vs IDV: Las claves que anticipa el Predictor 1xBet",
-          "publisher": "OneFootball",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdEbeiR6Hrh8CJDp21oKLeOSnGXgwDw1HlCJ7DnaisngvMWA8h8npuXrLUrDc"
-        },
-        {
-          "url": "https://www.ecuavisa.com/liveblogs/barcelona-sc-vs.-independiente-del-valle-por-la-ligapro-lb202611250002.html",
-          "title": "Barcelona SC vs. Independiente del Valle por la LigaPro",
-          "publisher": "Ecuavisa",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ5MgvRYzUmc6q86Q4ZxjDrG6Eykp6Cg-QrOJ8Z_ocqsv7lfxT_KkDNLU0k1AI"
-        }
-      ]
-    },
-    {
-      "query": "foster griffin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-25T23:30:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/foster-griffin-guardians-contract",
-        "https://www.mlbtraderumors.com/2026/11/guardians-to-sign-foster-griffin.html",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-tigers-sign-gausman-for-one-year-25mm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/foster-griffin-guardians-contract",
-          "title": "Guardians bringing back lefty Griffin on 3-year, $48 million deal (source)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wKuKDANuprpofhzaFACUjSYK09EbBeCnyH5wouspSIHeVFZ4kqaevCckrZk"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/guardians-to-sign-foster-griffin.html",
-          "title": "Guardians To Sign Foster Griffin",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTOBjmKfu8mjzKOXoktn4EgrovRoE9YMAXpmIx0RJo8YjCOlwhJoAspYmPXc7A"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-25/report-tigers-sign-gausman-for-one-year-25mm",
-          "title": "Report: Tigers sign Gausman for one year, $25MM",
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-25/pelissero-kyren-williams-dealing-with-turf-toe",
+          "title": "Pelissero: Kyren Williams dealing with turf toe",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChjQj9s-nub8ulNWyfRPl6RG8TB4coOkh1fTCJkrcHY1ZW-m6ZkEOHIz0cSM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrdR_m8zopf1AOdWOfkG-UrOGc2pTsIfx0RZXouViRHhZXJgBSiVqC0CDbEIg"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/kyren-williams-vs-packers-week-205203078.html",
+          "title": "Kyren Williams vs. Packers Week 12: Three Expectations for Rams RB",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvgzSpEnqmp8wboCJg7Qfa0veF6SokinHo235ZtXMpzNc4_0Tb9C55n4BfXrk"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/kyren-williams-off-the-injury-report-vs-packers/2002858",
+          "title": "Kyren Williams Off the Injury Report vs. Packers - NFL News | Fantasy Football",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRaIZNo1uJ6TugPPPCHBRnGuOV6C2_SR-PWqXs0Bk0mkjaq64tKD-uKys7XQwo"
+        }
+      ]
+    },
+    {
+      "query": "club america",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://www.sportsgambler.com/betting-tips/football/monterrey-vs-club-america-prediction-lineups-odds-2026-11-25/",
+        "https://www.soyfutbol.com/en/leagues/rayados-host-america-without-andrada-or-salcedo-in-quarterfinals-first-leg-how-will-almeyda-shake-up-his-lineup-20261125-0037.html",
+        "https://demokratis.co.id/en/monterrey-america-quarterfinal-tickets"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtXfBaYvwU8kp_FRPO4RaWHUBSYhTyMifkx8ylAevXPldrNuh8fHRQ4qRUrm4",
+      "image_credit": "Sportsgambler",
+      "news": [
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/football/monterrey-vs-club-america-prediction-lineups-odds-2026-11-25/",
+          "title": "Monterrey vs América Prediction, Betting Tips, Lineups & Odds | 25 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtXfBaYvwU8kp_FRPO4RaWHUBSYhTyMifkx8ylAevXPldrNuh8fHRQ4qRUrm4"
+        },
+        {
+          "url": "https://www.soyfutbol.com/en/leagues/rayados-host-america-without-andrada-or-salcedo-in-quarterfinals-first-leg-how-will-almeyda-shake-up-his-lineup-20261125-0037.html",
+          "title": "Rayados Host América Without Andrada or Salcedo in Quarterfinals First Leg: How Will Almeyda Shake Up His Lineup?",
+          "publisher": "Soy Futbol",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQO7l4MIBiZ6zLznCdVxD7eF6nHRO8357g0RmJSVUnpcnyk-Xq0b6Cm1tqOMqk"
+        },
+        {
+          "url": "https://demokratis.co.id/en/monterrey-america-quarterfinal-tickets",
+          "title": "Monterrey Opens Ticket Sales for America Quarterfinal Clash",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1vwG6mWBeAlMwByaU39znaDkbelNnAZD0QLXnKMA3mUTiaQ_KGOUj0bG3Hjw"
+        }
+      ]
+    },
+    {
+      "query": "suns vs rockets",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
+        "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test",
+        "https://www.si.com/nba/rockets/onsi/rockets-suns-rivalry-renewed-as-durant-welcomes-brooks-back-to-houston-preview-starters-injuries-how-to-watch-01m8aht3fr7k"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xbgsn40Fldj_R7af9PZXrMbJaKGCK1JKz_cPZDnQUB0fmX5aDNaSLCQqS0I",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/updated-november-25th-injury-report-222003752.html",
+          "title": "Updated November 25th Injury Report and Preview for Houston Rockets vs. Phoenix Suns",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xbgsn40Fldj_R7af9PZXrMbJaKGCK1JKz_cPZDnQUB0fmX5aDNaSLCQqS0I"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-game/114418/phoenix-suns-rockets-preview-kevin-durant-rebounding-test",
+          "title": "Game Preview: Surging Suns look to stuff Rockets on Thanksgiving Eve",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR78TvlsagBZlA-Ju6frpiPpKOcC3hL3PwOrugCwteylLlnqpk3yOpsG4aJ0OY"
+        },
+        {
+          "url": "https://www.si.com/nba/rockets/onsi/rockets-suns-rivalry-renewed-as-durant-welcomes-brooks-back-to-houston-preview-starters-injuries-how-to-watch-01m8aht3fr7k",
+          "title": "Rockets-Suns rivalry renewed as Durant welcomes Brooks back to Houston: Preview, Starters, Injuries, How to Watch",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAFCw8JRzIjjdryKvHcO9B9yBQsL7kDB3X9JQOJnBEPIiRk2PuwSp3kLvwLTc"
+        }
+      ]
+    },
+    {
+      "query": "angelina jolie",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html",
+        "https://www.rollingstone.com/tv-movies/tv-movie-news/brad-pitt-angelina-jolie-miraval-winery-war-settled-abuse-1235664703/",
+        "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPSJAJU2cAyndtPdfTxoGkMtfRPNRHzd18Et8Vp1_zOUXSM5RoynAFEHGFrE",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html",
+          "title": "Angelina Jolie and Brad Pitt Settle Lawsuit That Aired Abuse Allegations",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPSJAJU2cAyndtPdfTxoGkMtfRPNRHzd18Et8Vp1_zOUXSM5RoynAFEHGFrE"
+        },
+        {
+          "url": "https://www.rollingstone.com/tv-movies/tv-movie-news/brad-pitt-angelina-jolie-miraval-winery-war-settled-abuse-1235664703/",
+          "title": "Brad Pitt and Angelina Jolie Settle Bitter Winery War That Detailed Abuse Claims",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL3tQBv7iUfRXv-eUilBmZ_mio3_OobpSAZltz1qdnaFzOvCuvOI03NMRssyA"
+        },
+        {
+          "url": "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052",
+          "title": "Brad Pitt and Angelina Jolie settle legal battle over French winery",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf8zc9ZOgjMxqYVn4ufqgCuyiJ6i4ZxVC50sxyACV_T725lH0GHzbSO79i0jY"
+        }
+      ]
+    },
+    {
+      "query": "andrew wiggins",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://www.sun-sentinel.com/2026/11/24/andrew-wiggins-embracing-heat-reserve-role-but-is-it-actually-a-sacrifice/",
+        "https://www.fantasypros.com/nba/news/621155/andrew-wiggins-puts-up-11-points-win-over-bucks.php",
+        "https://www.nba.com/watch/video/andrew-wiggins-rises-up-for-the-dunk-7"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsOH-eorjISdCfwjoiD8eniGoleDqDSjhcQmnN13JdeVh0btoo77P2rfq0Rxc",
+      "image_credit": "Sun Sentinel",
+      "news": [
+        {
+          "url": "https://www.sun-sentinel.com/2026/11/24/andrew-wiggins-embracing-heat-reserve-role-but-is-it-actually-a-sacrifice/",
+          "title": "Andrew Wiggins embracing Heat reserve role, but is it actually a sacrifice?",
+          "publisher": "Sun Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsOH-eorjISdCfwjoiD8eniGoleDqDSjhcQmnN13JdeVh0btoo77P2rfq0Rxc"
+        },
+        {
+          "url": "https://www.fantasypros.com/nba/news/621155/andrew-wiggins-puts-up-11-points-win-over-bucks.php",
+          "title": "Andrew Wiggins puts up 11 points in win over Bucks",
+          "publisher": "FantasyPros",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRJcJHYdT6lX6IuXHu_dFuF8z9a7-8arH8CXsEMNt5Fl20lttZGoI3CuYENzs4"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/andrew-wiggins-rises-up-for-the-dunk-7",
+          "title": "Andrew Wiggins rises up for the dunk",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThrZVL1p6Ogu2DDER71Qb8gQeNhDxZI6PJJACjSUl1UTzDO2JEtCRgpupRscQ"
+        }
+      ]
+    },
+    {
+      "query": "tyler higbee",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T00:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/video/should-tyler-higbee-be-in-fantasy-lineups-against-green-bay-233338083.html",
+        "https://www.si.com/onsi/fantasy/start-em-sit-em/week-12-fantasy-football-start-em-sit-em-colby-parkinson-or-tyler-higbee",
+        "https://foxsports990.iheart.com/content/2026-11-24-chatarius-atwell-week-12-preview-vs-the-packers/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmJovgU-4pCks3GFDmaPiimL5sQpVl33HMQ4O4J2Z8PZGYtBTZZyu8NSehAKs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/video/should-tyler-higbee-be-in-fantasy-lineups-against-green-bay-233338083.html",
+          "title": "Should Tyler Higbee be in fantasy lineups against Green Bay?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmJovgU-4pCks3GFDmaPiimL5sQpVl33HMQ4O4J2Z8PZGYtBTZZyu8NSehAKs"
+        },
+        {
+          "url": "https://www.si.com/onsi/fantasy/start-em-sit-em/week-12-fantasy-football-start-em-sit-em-colby-parkinson-or-tyler-higbee",
+          "title": "Week 12 Fantasy Football Start 'Em, Sit 'Em: Colby Parkinson or Tyler Higbee?",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR2PJGSZb5giaL2LtOyRJpfpddAm-qrmH3eCs3uG2_EMlPElksCsQ-ae41uekQ"
+        },
+        {
+          "url": "https://foxsports990.iheart.com/content/2026-11-24-chatarius-atwell-week-12-preview-vs-the-packers/",
+          "title": "Chatarius Atwell Week 12 Preview vs. the Packers",
+          "publisher": "Fox Sports 990",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuvdQ9W9_58o0AZBB-Dmj0puNQ1sVT3dc7olgkFqnLuHktxgRBrJBOb_qE7SU"
+        }
+      ]
+    },
+    {
+      "query": "nick foles",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:20:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/sport/2026/nov/24/nick-foles-interview-eagles-super-bowl-faith-fatherhood-flow-state",
+        "https://www.nytimes.com/athletic/7811969/2026/11/25/thanksgiving-eve-nfl-netflix-black-friday-moneycall/",
+        "https://sports.yahoo.com/general/articles/u2-brings-album-buzz-packers-000041003.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSx5Du2ZujWHCqFWbncY5AQda0iQT6OU00iyR-bX8TjK5XfGkhe3PICpoHxKs",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/sport/2026/nov/24/nick-foles-interview-eagles-super-bowl-faith-fatherhood-flow-state",
+          "title": "'Something switched inside me': Nick Foles on his Super Bowl flow state and move behind the mic",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSx5Du2ZujWHCqFWbncY5AQda0iQT6OU00iyR-bX8TjK5XfGkhe3PICpoHxKs"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7811969/2026/11/25/thanksgiving-eve-nfl-netflix-black-friday-moneycall/",
+          "title": "‘Thanksgiving Eve’ is the latest and most obvious expansion by NFL: MoneyCall",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRIqZcgUi9PybnFgouXPKMV0bFX01gh0lr83XOs2Z2rNW8L1f2NVgXXaPLnJR0"
+        },
+        {
+          "url": "https://sports.yahoo.com/general/articles/u2-brings-album-buzz-packers-000041003.html",
+          "title": "U2 brings new album buzz to Packers-Rams Thanksgiving eve game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNhRVNx3SCG7RHF3EbgBsXEckkrTT2O4rsFlcbrOial5iotaXgloaIiiiWF3g"
+        }
+      ]
+    },
+    {
+      "query": "dean wade",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T00:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/dean-wade-available-tonight-game-003855725.html",
+        "https://www.sportingnews.com/us/nba/philadelphia-76ers/news/sixers-veteran-wing-downgraded-ahead-magic-match/90c8f94d2e0c83d26a7e337b",
+        "https://www.si.com/nba/76ers/onsi/dean-wade-s-new-injury-could-be-a-wake-up-call-for-76ers-01m7qzapky2r"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uqIrko1CErtYr8U-BhSWdifI8t8W1I2OpRN7rKV159Q2lUhS3uzQ6uSev9E",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/dean-wade-available-tonight-game-003855725.html",
+          "title": "Dean Wade is AVAILABLE for tonight’s game against the …",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_uqIrko1CErtYr8U-BhSWdifI8t8W1I2OpRN7rKV159Q2lUhS3uzQ6uSev9E"
+        },
+        {
+          "url": "https://www.sportingnews.com/us/nba/philadelphia-76ers/news/sixers-veteran-wing-downgraded-ahead-magic-match/90c8f94d2e0c83d26a7e337b",
+          "title": "Sixers veteran wing downgraded ahead of Magic match",
+          "publisher": "Sporting News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaloCXUK8yd25XYNtj_GNNO3vfJ64GRHYD1Ty0JJdDbOL_bTTojBlNJjkaCRs"
+        },
+        {
+          "url": "https://www.si.com/nba/76ers/onsi/dean-wade-s-new-injury-could-be-a-wake-up-call-for-76ers-01m7qzapky2r",
+          "title": "Dean Wade's New Injury Could Be a Wake-Up Call for 76ers",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR-reMvG2gVA7fvhMCnXT5T6Kb-dCVsS6aHcQPe3gSE1_6NFCVCmS_qCvn_u9g"
         }
       ]
     }
