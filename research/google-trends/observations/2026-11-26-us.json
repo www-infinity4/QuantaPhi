@@ -3,12 +3,117 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T16:01:37.045999Z",
+  "checked_at": "2026-11-26T16:31:27.318872Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gta vi endings",
+      "query": "mariska hargitay",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T16:00:00Z",
+      "related_news_urls": [
+        "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
+        "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
+        "https://www.instyle.com/mariska-hargitay-husband-peter-hermann-cast-in-daughter-amaya-nutcracker-play-12277317"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5TRwATod7utwQEsl3qnnLP4ctkf-IapP1DnBpOzrngjarxbZcL2I2krkhLh8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
+          "title": "Mariska Hargitay and Peter Hermann Were Cast in Daughter’s Production of ‘The Nutcracker’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5TRwATod7utwQEsl3qnnLP4ctkf-IapP1DnBpOzrngjarxbZcL2I2krkhLh8"
+        },
+        {
+          "url": "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
+          "title": "Mariska Hargitay Joins Her Daughter’s Production of THE NUTCRACKER With Husband Peter Hermann",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEppKq1EIHPgJqMq9qkOtbPw-6MOe9ZunGt2rMF51PHR95WWZajEvkZlpyybI"
+        },
+        {
+          "url": "https://www.instyle.com/mariska-hargitay-husband-peter-hermann-cast-in-daughter-amaya-nutcracker-play-12277317",
+          "title": "Mariska Hargitay and Peter Hermann Make a Surprising Appearance in Daughter Amaya’s Holiday Play",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_EB6XNnraGUIVg8-Zrob1_5d2o7YLC8YaDug2wVDvTrhiqGqFT4AVyKhqSA"
+        }
+      ]
+    },
+    {
+      "query": "full house",
       "approx_searches": "200+",
+      "published_at": "2026-11-26T16:00:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/tv/news/candace-cameron-bure-full-house-residuals-olsen-twins-1236958774/",
+        "https://www.yahoo.com/entertainment/celebrity/articles/candace-cameron-bure-tells-jodie-193922437.html",
+        "https://www.usmagazine.com/entertainment/news/candace-cameron-bure-explains-mary-kate-ashley-olsen-distance/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTqaPFFmJ6_3Dcf7QhIMqnwVevEXsrpS0TElbpde1kumWUR7X2x-EAWAvEhFM",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/tv/news/candace-cameron-bure-full-house-residuals-olsen-twins-1236958774/",
+          "title": "Candace Cameron Bure Says She Still Gets ‘Substantial’ ‘Full House’ Residuals and Wasn’t Surprised the Olsen Twins Skipped ‘Fuller House’: No One ‘Stayed Close’ With Them",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTqaPFFmJ6_3Dcf7QhIMqnwVevEXsrpS0TElbpde1kumWUR7X2x-EAWAvEhFM"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/candace-cameron-bure-tells-jodie-193922437.html",
+          "title": "Candace Cameron Bure tells Jodie Sweetin to check with her agent as she ‘still gets residuals’ from “Full House”",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3CDdOL3R0SG3fL-SoOOhBqa9tzlC1eE6XtcnAQTT5SOf486Pxq9PT6tWJ6-A"
+        },
+        {
+          "url": "https://www.usmagazine.com/entertainment/news/candace-cameron-bure-explains-mary-kate-ashley-olsen-distance/",
+          "title": "Candace Cameron Bure Makes Rare Comment About ‘Full House’ Cast’s Distance From Mary-Kate, Ashley Olsen",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9Vwu4BQxWOajhJ1k-MTrp9RAXvNH-b7CXULM-pIRvtRhqJsgud-JmsgbvP8"
+        }
+      ]
+    },
+    {
+      "query": "carving a turkey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T16:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/20/well/thanksgiving-emergency-room-er.html",
+        "https://www.washingtonpost.com/wellness/2026/11/23/im-an-er-physician-here-are-5-cooking-injuries-i-see-most-during-holidays/",
+        "https://www.foxnews.com/video/6408864063112"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_3KHsrR7-EvTpfHr7NUeOknQAqnQ-GuxazoCsY7sJmYFAHDLy-RNR7CLoNk",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/20/well/thanksgiving-emergency-room-er.html",
+          "title": "To Avoid the E.R. This Thanksgiving, Follow These Expert Tips",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_3KHsrR7-EvTpfHr7NUeOknQAqnQ-GuxazoCsY7sJmYFAHDLy-RNR7CLoNk"
+        },
+        {
+          "url": "https://www.washingtonpost.com/wellness/2026/11/23/im-an-er-physician-here-are-5-cooking-injuries-i-see-most-during-holidays/",
+          "title": "Column | I’m an ER physician. Here are the 5 cooking injuries I see most during the holidays.",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR9LBU7qwPGzu9IW-OCnqOFmsHLabgDtU3GJeTbLtbTIgfSVXJ5YYr_ep4m_PI"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408864063112",
+          "title": "Emergency medicine expert shares safety tips to avoid the ER this Thanksgiving",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-HcEcUHcbCWpDrM6z7r8jObnfwa2b7bouXXBYIkdiXGO0iHfsyzyjBbQGPaA"
+        }
+      ]
+    },
+    {
+      "query": "gta vi endings",
+      "approx_searches": "500+",
       "published_at": "2026-11-26T15:40:00Z",
       "related_news_urls": [
         "https://variety.com/2026/gaming/news/gta-6-endings-possible-jason-lucia-1236958026/",
@@ -38,6 +143,41 @@
           "publisher": "PC Gamer",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMUp_WwxAxBoROaF2hrt1yRGQ1TVV83Zqsu8qpYTKAJzEF_V6ulSK2XQ3G7CY"
+        }
+      ]
+    },
+    {
+      "query": "november 26",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T15:40:00Z",
+      "related_news_urls": [
+        "https://theweek.com/cartoons/political-cartoons-for-november-23-2026",
+        "https://www.politico.com/gallery/2026/11/20/the-nations-cartoonists-on-the-week-in-politics-01177665",
+        "https://www.syracuse.com/opinion/2026/11/editorial-cartoons-for-nov-22-2026-tech-meltdown-china-summit-measles-comeback.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbFJ7BubQYUdfXWNPVbJuNAM37zRHd68Jigbfh-LvVjDEvROC6a0ulX7eExc",
+      "image_credit": "The Week",
+      "news": [
+        {
+          "url": "https://theweek.com/cartoons/political-cartoons-for-november-23-2026",
+          "title": "Political cartoons for November 23",
+          "publisher": "The Week",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSbFJ7BubQYUdfXWNPVbJuNAM37zRHd68Jigbfh-LvVjDEvROC6a0ulX7eExc"
+        },
+        {
+          "url": "https://www.politico.com/gallery/2026/11/20/the-nations-cartoonists-on-the-week-in-politics-01177665",
+          "title": "The nation’s cartoonists on the week in politics",
+          "publisher": "Politico",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ9nWtQUiz0N2XjX5uNmEXhiKcf2F1JWPCKOYJW9IdVsuqclMRSKy34sQxIqMc"
+        },
+        {
+          "url": "https://www.syracuse.com/opinion/2026/11/editorial-cartoons-for-nov-22-2026-tech-meltdown-china-summit-measles-comeback.html",
+          "title": "Editorial cartoons for Nov. 22, 2026: Tech meltdown, China summit, measles comeback",
+          "publisher": "Syracuse.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQq_UVs7UFAYBVKvhskXXIV_p1p1V5X2HQwVa3_OK3HI4CYFrl5Suts_dKhSkU"
         }
       ]
     },
@@ -77,6 +217,33 @@
       ]
     },
     {
+      "query": "paw patrol",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T15:30:00Z",
+      "related_news_urls": [
+        "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
+        "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY",
+      "image_credit": "Yahoo News UK",
+      "news": [
+        {
+          "url": "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
+          "title": "PAW Patrol Live! is on a roll up north as popular kids TV show hits UK venues",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY"
+        },
+        {
+          "url": "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0",
+          "title": "PAW Patrol Live!Black Friday offer - save 20% on London tickets",
+          "publisher": "LondonWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuJU3KDZQl5-JFjgPgUUGNUuGJq4GnAAmmgqpgvWKLF0-9f7TBr67c0tJBfqw"
+        }
+      ]
+    },
+    {
       "query": "d'andre swift",
       "approx_searches": "200+",
       "published_at": "2026-11-26T15:30:00Z",
@@ -112,99 +279,37 @@
       ]
     },
     {
-      "query": "paw patrol",
-      "approx_searches": "200+",
+      "query": "conference league",
+      "approx_searches": "2000+",
       "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
-        "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
-        "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0"
+        "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+        "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-nassr-club-ksa-2-1-al-sadd-sc-qat",
+        "https://en.as.com/soccer/ronaldo-closes-in-on-1000-as-joao-felix-scores-stunning-puskas-contender-f202611-n/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY",
-      "image_credit": "Yahoo News UK",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy20mstDFjROwfMqE6qAtfuITLtKOTqF9e7zAHYYgmuE8LjHph02BHH67AgKo",
+      "image_credit": "Reuters",
       "news": [
         {
-          "url": "https://uk.news.yahoo.com/paw-patrol-live-roll-north-204609033.html",
-          "title": "PAW Patrol Live! is on a roll up north as popular kids TV show hits UK venues",
-          "publisher": "Yahoo News UK",
+          "url": "https://www.reuters.com/sports/soccer/spectacular-felix-strike-earns-al-nassr-asian-champions-league-win-2026-11-24/",
+          "title": "Spectacular Felix strike earns Al-Nassr Asian Champions League win",
+          "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTZCBMdKYK1_-QsHL68rOnFfjmaoRZzdBvz264_4PFwpAG9Fi3zyZu6LAGWbZY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQy20mstDFjROwfMqE6qAtfuITLtKOTqF9e7zAHYYgmuE8LjHph02BHH67AgKo"
         },
         {
-          "url": "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=homepage_banner&itm_content=0",
-          "title": "PAW Patrol Live!Black Friday offer - save 20% on London tickets",
-          "publisher": "LondonWorld",
+          "url": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/md5-al-nassr-club-ksa-2-1-al-sadd-sc-qat",
+          "title": "MD5: Al Nassr Club (KSA) 2-1 Al Sadd SC (QAT)",
+          "publisher": "The AFC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuJU3KDZQl5-JFjgPgUUGNUuGJq4GnAAmmgqpgvWKLF0-9f7TBr67c0tJBfqw"
-        }
-      ]
-    },
-    {
-      "query": "rome odunze",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T15:30:00Z",
-      "related_news_urls": [
-        "https://www.si.com/nfl/bears/onsi/fantasy-start-sit-week-12-monangai-swift-burden-williams-loveland-odunze",
-        "https://www.sharpfootballanalysis.com/betting/nfl-player-props-picks-week-12-2026/",
-        "https://sports.yahoo.com/video/does-dandre-swift-hit-in-fantasy-in-revenge-game-against-the-lions-000459470.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPD_5uzShZWD7CoHrkVmFtk9o6DdRosQvep183D-Z-a_h-2xcIWqRbQs2uTVk",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/nfl/bears/onsi/fantasy-start-sit-week-12-monangai-swift-burden-williams-loveland-odunze",
-          "title": "Fantasy Start or Sit Week 12: Monangai, Swift, Burden, Williams, Loveland, Odunze",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQPD_5uzShZWD7CoHrkVmFtk9o6DdRosQvep183D-Z-a_h-2xcIWqRbQs2uTVk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQX7kFqBAO0MsO0AlQ0xhjtgBArwk87rKK_TQpdaQfTu6QXEy3Zw_Z9xo1p5xI"
         },
         {
-          "url": "https://www.sharpfootballanalysis.com/betting/nfl-player-props-picks-week-12-2026/",
-          "title": "Week 12 NFL Player Props: Best Prop Bets & Predictions",
-          "publisher": "Sharp Football Analysis",
+          "url": "https://en.as.com/soccer/ronaldo-closes-in-on-1000-as-joao-felix-scores-stunning-puskas-contender-f202611-n/",
+          "title": "Ronaldo closes in on 1,000 as João Félix scores stunning Puskás contender",
+          "publisher": "Diario AS",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYkStAENLShLmsSMqm5h4nbObdD_6D0zKbLEDvhcE0_QZre1BqqPyCC-iDs1A"
-        },
-        {
-          "url": "https://sports.yahoo.com/video/does-dandre-swift-hit-in-fantasy-in-revenge-game-against-the-lions-000459470.html",
-          "title": "Does D'Andre Swift hit in fantasy in revenge game against the Lions?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUOODRYgCg5fSVfa3Q6uslyu8aef2W3bVBrpNKNReNHOmdwC1nqz4t4xVoVvg"
-        }
-      ]
-    },
-    {
-      "query": "ciudadano",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T15:30:00Z",
-      "related_news_urls": [
-        "https://es-us.noticias.yahoo.com/ciudadano-ucraniano-22-a%C3%B1os-prende-115532141.html",
-        "https://mezha.net/es/news/mezha-75c6471682ee9892370d0612_hospitalizaron-en-varsovia-a-un-hombre/",
-        "https://www.democracynow.org/es/2026/11/25/titulares/lawsuits_allege_ice_brutalized_us_citizens_and_prisoners_at_for_profit_jail"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR__JtZbLAyu8hn3wLUAE9e-_KUjZP76sy-0F0R5pkSTNRdlg81JVjBsRjgVCg",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://es-us.noticias.yahoo.com/ciudadano-ucraniano-22-a%C3%B1os-prende-115532141.html",
-          "title": "Un ciudadano ucraniano de 22 años se prende fuego frente al Palacio Presidencial en Varsovia y está grave",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR__JtZbLAyu8hn3wLUAE9e-_KUjZP76sy-0F0R5pkSTNRdlg81JVjBsRjgVCg"
-        },
-        {
-          "url": "https://mezha.net/es/news/mezha-75c6471682ee9892370d0612_hospitalizaron-en-varsovia-a-un-hombre/",
-          "title": "Hospitalizaron en Varsovia a un hombre que se prendió fuego frente al Palacio Presidencial",
-          "publisher": "Mezha.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnJlUXIewI4zi0dj-RwWlcFj_P4mHknog2YpMMSiU8atWycbKruXme9DjOZ84"
-        },
-        {
-          "url": "https://www.democracynow.org/es/2026/11/25/titulares/lawsuits_allege_ice_brutalized_us_citizens_and_prisoners_at_for_profit_jail",
-          "title": "Varias demandas alegan que el ICE maltrató a ciudadanos estadounidenses y a reclusos en un centro de detención con fines de lucro",
-          "publisher": "Democracy Now!",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR10CcqYRHsdVBK3lTJ0u1P26K9XPdoBMnhwU999LKVHi-v95D-m1qtrrK6OoM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr5shOKGdJQgwHQZUMLUB93rOKivpxw9_BOib74gKWIs5x_niix1UflozXoA"
         }
       ]
     },
@@ -214,8 +319,8 @@
       "published_at": "2026-11-26T15:30:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/betting/news/caesars-sportsbook-promo-code-cbssportsbr250-get-up-to-250-bonus-chiefs-bills-nfl-thanksgiving-day/",
-        "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-joe-burrow-jayden-daniels-meet-in-big-game-for-bengals-and-commanders-155713162.html",
-        "https://www.espn.com/video/clip/_/id/50583376"
+        "https://www.sling.com/whatson/sports/nfl/how-to-watch-bengals-vs-commanders-live",
+        "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-joe-burrow-jayden-daniels-meet-in-big-game-for-bengals-and-commanders-155713162.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcqEFfLCdN66axS2MsVSi5Oe2F1SlFGiYxRolgdoJ-yiTJlx6KTFB0TTSE1i4",
       "image_credit": "CBS Sports",
@@ -228,123 +333,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRcqEFfLCdN66axS2MsVSi5Oe2F1SlFGiYxRolgdoJ-yiTJlx6KTFB0TTSE1i4"
         },
         {
+          "url": "https://www.sling.com/whatson/sports/nfl/how-to-watch-bengals-vs-commanders-live",
+          "title": "Bengals at Commanders on Monday Night Football: How to watch with Sling",
+          "publisher": "Sling TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_Q9bdxR4k55Jd8-6oguVl4uJc8KzILeGEAJPhaFhyNRctRNZqMaWNFUlJVSs"
+        },
+        {
           "url": "https://sports.yahoo.com/nfl/article/nfl-monday-night-football-preview-joe-burrow-jayden-daniels-meet-in-big-game-for-bengals-and-commanders-155713162.html",
           "title": "NFL Monday Night Football preview: Joe Burrow, Jayden Daniels meet in big game for Bengals and Commanders",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTXEfFh4uNbDBNwV4TWSF4NAbrMh5ZKBlKOsUcI3nTaAO-5KynwN_5j-CrXlhk"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50583376",
-          "title": "Why Stephen A. isn't counting out the Bengals after loss to Commanders",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQYCAwfWN_A0PVmpsH0S7_4KGI9mVAkHQU44k2UyTCAwfZzsqjkJeTkXem4XE"
-        }
-      ]
-    },
-    {
-      "query": "charlie brown",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T15:20:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/tv/article/where-to-stream-a-charlie-brown-thanksgiving-today-for-free-how-to-watch-all-the-peanuts-holiday-specials-in-2026-131541123.html",
-        "https://www.mensjournal.com/news/a-charlie-brown-thanksgiving-fans-face-a-streaming-catch-this-year",
-        "https://www.walb.com/2026/11/24/how-watch-charlie-brown-christmas-free/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBwFnRjlVKEZpubJs2vj3tlbQV7lOtByhBofryITPZchYF2-VMJB1-64vfL4",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/article/where-to-stream-a-charlie-brown-thanksgiving-today-for-free-how-to-watch-all-the-peanuts-holiday-specials-in-2026-131541123.html",
-          "title": "Where to stream 'A Charlie Brown Thanksgiving' today for free: How to watch all the Peanuts holiday specials in 2026",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUBwFnRjlVKEZpubJs2vj3tlbQV7lOtByhBofryITPZchYF2-VMJB1-64vfL4"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/a-charlie-brown-thanksgiving-fans-face-a-streaming-catch-this-year",
-          "title": "‘A Charlie Brown Thanksgiving’ Fans Face a Streaming Catch This Year",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9g-Lw4TM5EHrNb0cpIGQvJQ_0y1_a2i2pQF4YD_kRImbsKUL1r0WDtJxXqME"
-        },
-        {
-          "url": "https://www.walb.com/2026/11/24/how-watch-charlie-brown-christmas-free/",
-          "title": "How to watch ‘A Charlie Brown Christmas’ for free",
-          "publisher": "WALB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQktDnnnjE4cJIr3ETTNcWkEQjz1-HjbbbgXEVvBKOJzwpvvEtSS-9XjWIxKAk"
-        }
-      ]
-    },
-    {
-      "query": "ras tanura refinery",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T15:20:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
-        "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
-        "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiJG-R46KJglQfqPqMIQlSgo3gXUM_GsZ1jdL-Hmbm3Jfr254XjKWI4TA7QXQ",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-oil-refinery-riyadh-financial-district-2026-11-25/",
-          "title": "Yemen's Houthis claim attack on Saudi Arabia's largest refinery",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQiJG-R46KJglQfqPqMIQlSgo3gXUM_GsZ1jdL-Hmbm3Jfr254XjKWI4TA7QXQ"
-        },
-        {
-          "url": "https://www.aljazeera.com/news/2026/11/24/saudi-led-coalition-condemns-terrorist-attack-on-tower-in-riyadh",
-          "title": "Saudi civil defence says 11 injured in Houthi drone attack on Riyadh tower",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbF1b2qs8JMUI05VDGV1a-wl1S5NNR-CUtvX9qR8J1tPL6DsUH1SpuvVWrgFE"
-        },
-        {
-          "url": "https://www.wsj.com/world/middle-east/yemens-houthis-take-second-swipe-at-tallest-tower-in-saudi-capital-11cc288c",
-          "title": "Yemen’s Houthis Take Second Swipe at Tallest Tower in Saudi Capital",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRibXreTJ7JQTiHHLScYVGK1V1oQJY7qtfL72NQaUaiWlCFfShfYOGk20_58K8"
-        }
-      ]
-    },
-    {
-      "query": "gordon ramsay",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T15:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cjr4gw100d52o",
-        "https://deadline.com/2026/11/richard-hammond-approached-bbc-top-gear-return-1237233965/",
-        "https://www.reuters.com/business/media-telecom/top-gear-return-2028-with-celebrity-chef-gordon-ramsay-lead-host-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSeKCf0gELprs2hdQArAsbFW4GLikJ9y59ca1hBGNdR7FHAlDWaguRyZTCr3E",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cjr4gw100d52o",
-          "title": "Gordon Ramsay to host Top Gear as show revived after Flintoff crash",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSeKCf0gELprs2hdQArAsbFW4GLikJ9y59ca1hBGNdR7FHAlDWaguRyZTCr3E"
-        },
-        {
-          "url": "https://deadline.com/2026/11/richard-hammond-approached-bbc-top-gear-return-1237233965/",
-          "title": "Richard Hammond Says He Was Approached By BBC About ‘Top Gear’ Return",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ43K1CMmkeN7gFPa46wbxfJLhv_84P_eT2Ea_UAK6KBZ9-pyGQfte1g2gqTY"
-        },
-        {
-          "url": "https://www.reuters.com/business/media-telecom/top-gear-return-2028-with-celebrity-chef-gordon-ramsay-lead-host-2026-11-25/",
-          "title": "Top Gear to return in 2028 with celebrity chef Gordon Ramsay as lead host",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRuwQldqunoBCM1yZvXSuhpbtCElv294TDEK94H0TO6JX_Se2VkjfDlt8fgMN4"
         }
       ]
     }
