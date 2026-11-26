@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-26T07:31:21.105322Z",
+  "checked_at": "2026-11-26T08:01:32.847861Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "tobey maguire",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T07:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/articles/wolverine-fans-now-positive-hugh-180925483.html",
+        "https://nerdist.com/article/robert-downey-jr-thanksgiving-post-confirm-spider-man-avengers-doomsday-rdj/",
+        "https://reactormag.com/missing-characters-final-avengers-doomsday-trailer/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9IS8MiQdpx3s2BKEHusNfxrJLCimWXUBfbucpYyy5bu0SGrjL_bTx4eQwOTI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/wolverine-fans-now-positive-hugh-180925483.html",
+          "title": "Wolverine Fans Are Now Positive Hugh Jackman Shows Up in Avengers: Doomsday, Here’s Why",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9IS8MiQdpx3s2BKEHusNfxrJLCimWXUBfbucpYyy5bu0SGrjL_bTx4eQwOTI"
+        },
+        {
+          "url": "https://nerdist.com/article/robert-downey-jr-thanksgiving-post-confirm-spider-man-avengers-doomsday-rdj/",
+          "title": "RDJ’s Thanksgiving Post May Confirm Spider-Man in DOOMSDAY",
+          "publisher": "Nerdist",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIYMaeZU4QN0wpcAdv7MTfOowLXiFikqN9Q1r54ELXPMJnfq25cGemucZ465I"
+        },
+        {
+          "url": "https://reactormag.com/missing-characters-final-avengers-doomsday-trailer/",
+          "title": "The Biggest Characters Still Missing From the Final Avengers: Doomsday Trailer",
+          "publisher": "reactormag.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSYRtMDWahzY4cjHPTDGm3naylBrzt-6sBDPuk1r3Ug_yHwIhWFSP2ukiiCKKA"
+        }
+      ]
+    },
     {
       "query": "criminal profile gta 6",
       "approx_searches": "500+",
@@ -46,13 +81,20 @@
       "approx_searches": "100+",
       "published_at": "2026-11-26T07:10:00Z",
       "related_news_urls": [
+        "https://suaragarut.id/en/franco-studio-four-student-relationships",
         "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
-        "https://www.thegospelcoalition.org/article/confession-ebenezer-moral-clarity/",
-        "https://variety.com/2026/film/global/rob-lowe-ben-shapiro-confession-film-script-1236951750/"
+        "https://demokratis.co.id/en/franco-studio-four-student-admissions"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe8cuLaAn5AJdJkQc4p0n6TdE6BLN48Pkx4h7RBfamVKZqulTFh-2FlZkb6KA",
-      "image_credit": "Fashion Times UK",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0",
+      "image_credit": "SuaraGarut.ID",
       "news": [
+        {
+          "url": "https://suaragarut.id/en/franco-studio-four-student-relationships",
+          "title": "James Franco Admits Student Relationships Crossed Boundaries",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0"
+        },
         {
           "url": "https://www.fashiontimes.co.uk/james-franco-admits-sleeping-students-acting-school-1768537",
           "title": "James Franco Admits Sleeping With His Acting Students But Denies Opening School To Lure Women",
@@ -61,18 +103,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRe8cuLaAn5AJdJkQc4p0n6TdE6BLN48Pkx4h7RBfamVKZqulTFh-2FlZkb6KA"
         },
         {
-          "url": "https://www.thegospelcoalition.org/article/confession-ebenezer-moral-clarity/",
-          "title": "‘Confession’ and ‘Ebenezer’: Moral Clarity in Murky Times",
-          "publisher": "The Gospel Coalition",
+          "url": "https://demokratis.co.id/en/franco-studio-four-student-admissions",
+          "title": "James Franco Admits Sleeping With Studio 4 Students",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjAUGtRMNmUqBdPXpxDysPlS9MmMS1yRV7mBtSkw28IPtA1BWShYDfy5N1-2g"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS65ddEfHOdVjypujO653axz2gpQnm8S0Nx-ZqLe8wIrr7XUVMB-W3VMVTppW0"
+        }
+      ]
+    },
+    {
+      "query": "hayden panettiere cause of death",
+      "approx_searches": "100+",
+      "published_at": "2026-11-26T07:00:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
+        "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
+        "https://www.eonline.com/news/1438391/hayden-panettieres-net-worth-after-death-daughter-inherits-s6-2-million"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/24/celebrity-news/hayden-panettiere-left-behind-6m-fortune-for-11-year-old-daughter-kaya/",
+          "title": "Hayden Panettiere left behind a massive fortune for her 11-year-old daughter, new court docs reveal",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDIxc-43QNfEXyDhEKaaQaoa-kNhdJHFSWpuRuMgpOsMftUK4XvowNKuAHBIA"
         },
         {
-          "url": "https://variety.com/2026/film/global/rob-lowe-ben-shapiro-confession-film-script-1236951750/",
-          "title": "Rob Lowe Asked Ben Shapiro if He Could Star in 'Confession'",
-          "publisher": "Variety",
+          "url": "https://people.com/hayden-panettiere-estate-valued-at-over-usd6-million-ex-wladimir-klitschko-claims-12278551",
+          "title": "Hayden Panettiere’s Estate Valued at Over $6 Million, Ex Wladimir Klitschko Claims",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9K9zoz9gxkEkfspPATstYC9AAw7a2yUwJagC-MUG731YQsvZyhmO495QqNRI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTa239G78IcDE7ZJXdWI46Myt8PSykWNQFfeon_7_yFr1ofyzWqBdApG8grpE"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438391/hayden-panettieres-net-worth-after-death-daughter-inherits-s6-2-million",
+          "title": "Hayden Panettiere’s Net Worth Revealed: How Much Money Her Daughter Inherited After Her Death",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlYLnadm1AaGw3iPdRQc-KIghQChuE6EvlnjvdiAEZtyO2QJ_8SMOGf4fcf0U"
         }
       ]
     },
@@ -81,33 +151,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-26T06:50:00Z",
       "related_news_urls": [
-        "https://movieweb.com/battlestar-galactica-miniseries-recommendation/",
-        "https://collider.com/battlestar-galactica-33-episode-perfect-hour/",
-        "https://staticonthetv.substack.com/p/why-battlestar-galactica-is-the-perfect"
+        "https://cwibc.co.id/en/ronald-moore-battlestar-galactica-scenes",
+        "https://www.limapagi.id/en/battlestar-galactica-creator-scenes",
+        "https://www.tvline.com/2321643/battlestar-galactica-showrunner-loved-scene-sci-fi-channel-wanted-cut/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw3YxWastldvRLvu58YOGB0a8DyYqoqiB1-b2WWe_rdMuvqJNGlGb99IwuHTw",
-      "image_credit": "MovieWeb",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJsQ4PxoGhCi6hBYiFzfOzawrUwNGJovKY_AWF8WsENPW4tSuaWrnWD7Xous",
+      "image_credit": "cwibc.co.id",
       "news": [
         {
-          "url": "https://movieweb.com/battlestar-galactica-miniseries-recommendation/",
-          "title": "23 Years Later, the Greatest Space Opera of All Time Was a Three-Hour Miniseries That Still Has No Equal",
-          "publisher": "MovieWeb",
+          "url": "https://cwibc.co.id/en/ronald-moore-battlestar-galactica-scenes",
+          "title": "Ronald D Moore Defended Battlestar Galactica's Quiet Scenes",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw3YxWastldvRLvu58YOGB0a8DyYqoqiB1-b2WWe_rdMuvqJNGlGb99IwuHTw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCJsQ4PxoGhCi6hBYiFzfOzawrUwNGJovKY_AWF8WsENPW4tSuaWrnWD7Xous"
         },
         {
-          "url": "https://collider.com/battlestar-galactica-33-episode-perfect-hour/",
-          "title": "22 Years Later, This 'Battlestar Galactica' Episode Is Still a Perfect Hour of Television",
-          "publisher": "Collider",
+          "url": "https://www.limapagi.id/en/battlestar-galactica-creator-scenes",
+          "title": "Battlestar Galactica Creator Defends Slow Character Scenes",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjsZgxS00978aOh1CZ7z6U2LdV0IBTludzvIpxxvUwMyGgXIBO4XaNuahuCOU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQZ_kLbtB2gBoogqml301e9x9ZnNAHSN9vaWr-iR-Kwe9Izoebj7JbFWK_WEmc"
         },
         {
-          "url": "https://staticonthetv.substack.com/p/why-battlestar-galactica-is-the-perfect",
-          "title": "Why Battlestar Galactica is the perfect rewatch for the looming AI apocalypse",
-          "publisher": "Substack",
+          "url": "https://www.tvline.com/2321643/battlestar-galactica-showrunner-loved-scene-sci-fi-channel-wanted-cut/",
+          "title": "Battlestar Galactica's Showrunner Loved One Scene The Sci-Fi Channel Wanted To Cut",
+          "publisher": "TVLine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7SFtaCNt-BJbG9cHOyZFghwLxZsrDRvwS7l9QB7lqy-6VyR06AuhVArfQHac"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_rodNvhuxW-K_00ifN5mwqmdjgvjOzP_1RreJ3_7DRz7N0nlKjQKVc_Pxl6Q"
         }
       ]
     },
@@ -204,7 +274,7 @@
           "title": "Trump awards Medal of Freedom to former NYC Mayor Rudy Giuliani",
           "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSp8_z_zDUtR23yPno5mZ78fK8eZ6B1qKqpQsCh9odwtfUXVugLys8w0UKgXtI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShMHUxzTSAmKrk-KUtnMBhvHZdRr7E4-e2Aq-DTPQBIBGmXzwFdP5fSXuvCsY"
         }
       ]
     },
@@ -244,41 +314,6 @@
       ]
     },
     {
-      "query": "winter",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-26T06:30:00Z",
-      "related_news_urls": [
-        "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-        "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
-        "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE",
-      "image_credit": "KSDK",
-      "news": [
-        {
-          "url": "https://www.ksdk.com/article/weather/live-snow-radar-st-louis-thanksgiving-weather-forecast/63-539ce31e-124b-4c99-a0e8-12e835eb54c0",
-          "title": "LIVE RADAR: Snow moves into St. Louis as Thanksgiving travel ramps up",
-          "publisher": "KSDK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjU1_H2LkM6Xgc0B8g2AncgX3VBNJagM3SCwFgy5EB9U3NN01fzB2lRZIizPE"
-        },
-        {
-          "url": "https://fox2now.com/news/weather/a-turkey-of-a-storm/",
-          "title": "A turkey of a winter storm",
-          "publisher": "FOX 2",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQupisOYXxS8Qv5_MqJb4yWSIWiInHrBBGW5Z4D6q6OXaGY6l3zc82uUBk-lto"
-        },
-        {
-          "url": "https://www.nprillinois.org/illinois/2026-11-24/winter-storm-watch-for-springfield-area-heading-into-thanksgiving",
-          "title": "Winter Weather Advisory for Springfield area heading into Thanksgiving",
-          "publisher": "NPR Illinois",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX7tevYiIZCLmMrdnPNxBPOj_00h-pAiLGNdhh1J0MgMBWWINxcQ5ROhs2v84"
-        }
-      ]
-    },
-    {
       "query": "lion",
       "approx_searches": "1000+",
       "published_at": "2026-11-26T06:30:00Z",
@@ -310,41 +345,6 @@
           "publisher": "NBC News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScdmzP0TqTGzEmHCA8uP23PJpkZyNzm7u9fwwZ8p8HLCERjnP_Ljr-RcV0JCM"
-        }
-      ]
-    },
-    {
-      "query": "travel",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T06:30:00Z",
-      "related_news_urls": [
-        "https://apnews.com/article/travel-thanksgiving-airports-highways-041a81e33ed10df50e89dc04705a6dcc",
-        "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
-        "https://katu.com/news/local/higher-travel-costs-put-a-dent-in-thanksgiving-travel-plans-aaa-pdx-portland-international-airport"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPw1lLDJ-U0aV_sDcMISOMa501mnxfz9N_fyqS7uxFbsBxdIcYwT2XcR3YGW4",
-      "image_credit": "AP News",
-      "news": [
-        {
-          "url": "https://apnews.com/article/travel-thanksgiving-airports-highways-041a81e33ed10df50e89dc04705a6dcc",
-          "title": "US travelers facing long airport lines, bad weather in the run up to Thanksgiving",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPw1lLDJ-U0aV_sDcMISOMa501mnxfz9N_fyqS7uxFbsBxdIcYwT2XcR3YGW4"
-        },
-        {
-          "url": "https://travel.yahoo.com/flights/article/aviation-tech-outages-thanksgiving-travel-205820796.html",
-          "title": "Travelers are worried about airline tech meltdowns ahead of Thanksgiving. Should they be?",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQhKfTMBERXBhPQASJP_C6qW60Rbu1DA_LDBiIUKwHKxMREGW7pTEMZJ30Ymr4"
-        },
-        {
-          "url": "https://katu.com/news/local/higher-travel-costs-put-a-dent-in-thanksgiving-travel-plans-aaa-pdx-portland-international-airport",
-          "title": "Higher travel costs put a dent in Thanksgiving travel plans",
-          "publisher": "KATU",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW_jz7pFvvIjY66TEec5Z-HJkYZTOJxn8x9tXN5YdcSCzdauSAys00kAf1siA"
         }
       ]
     }
