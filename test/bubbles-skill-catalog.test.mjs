@@ -20,8 +20,11 @@ test('search discovers real memory and connection boundaries',()=>{
 test('Organic Computation is discoverable without pretending execution is connected',()=>{
  const match=filterCatalog(catalog.localCapabilities,'organic computation');
  assert.equal(match.length,1);
- assert.equal(match[0].state,'source_ready_not_deployed');
- assert.match(match[0].description,/no live Bubbles executor/i);
+ assert.equal(match[0].state,'implemented_in_source_pending_live_deployment');
+ assert.match(match[0].description,/read-only JavaScript execution adapter is implemented/i);
+ assert.match(match[0].description,/Live Cloudflare deployment is not yet verified/i);
+ assert.match(match[0].requires,/exact reviewed bubbles-tools Worker version/);
+ assert.match(match[0].requires,/authenticated MCP receipts/);
  assert.equal(approvedSourceLink(match[0].sourceUrl),'https://github.com/www-infinity4/Organic-Computation');
 });
 test('catalog cannot create an arbitrary external link',()=>{

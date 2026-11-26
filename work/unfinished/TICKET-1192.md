@@ -1,11 +1,11 @@
 ---
 issue: 1192
 project: "Bubbles and Robot Brain — real execution recovery"
-state: review_pending
-dot: "🟡"
+state: blocked
+dot: "🟠"
 progress_percent: unknown
-progress_basis: "Source-level continuation and admission diagnostics staged; no production job execution or live Android acceptance proved"
-sessions_spent: 1
+progress_basis: "Merged credential-bridge recovery verified; context/skill checks exercised; live signed runner remains blocked by upstream HTTP 429"
+sessions_spent: 2
 sessions_remaining_estimate: unknown
 agent: ChatGPT
 lease_id: null
@@ -13,13 +13,13 @@ lease_expires_at: null
 task_session_id: null
 fence: null
 repo: www-infinity4/QuantaPhi
-branch: fix/brain-github-manual-redirect-1907
+branch: fix/bubbles-skill-catalog-recovery-20261126
 head_sha: null
 merged: false
 deployed: false
 live_verified: false
-next_action: "Review PR #2069 final source and exact-head CI, then stage and canary the exact merged Brain source through existing Moltnook release gates"
-blocker: "Live Brain still serves the November 19 CT candidate with unsupported redirect modes; source repair, guarded deployment and signed result acceptance are distinct gates."
+next_action: "Verify signed Brain admission after upstream quota recovery or a verified replacement host, then continue existing guarded source release and live acceptance"
+blocker: "Post-merge Moltnook run 45855118316 reports brain_runner_rate_limited_http_429; QuantaPhi returns Cloudflare 1027. Replacement Google/local inference host remains unverified."
 ---
 
 # Canonical issue
@@ -142,3 +142,11 @@ Local regression tests passed.
 Production cause and deployment remain unverified.
 
 Evidence: QuantaPhi PR #2145. Production verification remains pending.
+
+## November 26 CT · context, skills and credential-bridge recovery
+
+- Continued canonical #1907/#1192 and existing Moltnook PR #284; no new execution ticket or signed lease was invented. Exact-head CI 45736377427 succeeded. Independent Pink source review found no introduced blocker; the five bridge regressions failed against main before the patch and passed afterward.
+- Moltnook #284 merged with expected-head protection as `ca27f870eccc59f15f3eabe884f2d06fabc522af`, preserving current main. The bridge now reports HTTP 429 explicitly, sanitizes invalid JSON errors and rejects non-Boolean success. Current-main integration checks passed 36/36; context, source windows, native handoff, skill routing and isolation checks passed 51/51.
+- Actual post-merge signed workflow [45855118316](https://github.com/www-infinity4/Moltnook/actions/runs/45855118316), job `140031341280`, passed its 48 bridge/runner/promotion tests and then failed with `brain_runner_rate_limited_http_429`. This is a verified failure classification, not successful Brain execution or model inference. Public QuantaPhi independently returned HTTP 429 with Cloudflare error 1027.
+- The QuantaPhi context/skills sweep exposed a stale Organic Computation catalog test: it still asserted that no executor source existed after merged #889 implemented the read-only adapter. Correct only that test to require the current source-implemented/pending-deployment status and live-verification wording, continuing #891. Do not change the capability to deployed or connected.
+- Overall progress and historical session total remain unknown; `sessions_spent: 2` retains the prior recorded session plus this documented session. No production Worker promotion, credential reset, paid plan, DNS change, owner grant renewal or physical Android acceptance occurred. The next live recovery dependency is upstream quota recovery or an actually verified replacement runtime under #2110.
