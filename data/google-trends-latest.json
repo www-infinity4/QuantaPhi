@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T01:01:18.155036Z",
+  "checked_at": "2026-11-27T01:31:39.489769Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "lsu basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T00:30:00Z",
+      "query": "morgan freeman",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T01:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
-        "https://www.wbrz.com/news/gov-jeff-landry-goes-quiet-on-lsu-standoff-with-sec/",
-        "https://www.wafb.com/2026/11/25/rj-luis-jr-sues-sec-commissioner-greg-sankey-personally-seeks-damages-over-lsu-removal/"
+        "https://www.yahoo.com/entertainment/celebrity/articles/morgan-freeman-accused-ignoring-pleas-135542381.html",
+        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/morgan-freemans-grandchildren-enter-emergency-housing-after-adviser-rejects-mothers-5000-plea-for-rent-help-she-says-100000-divorce-settlement-could-secure-a-home/articleshow/136172203.cms",
+        "https://www.mensjournal.com/news/morgan-freeman-accused-of-refusing-5000-as-grandchildren-face-eviction"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjCa5N87SN7YnaTZ9RilJrdhf-7Hd2Z1txTZAhVZVr5al4s6XHdLhRvdI_gQ",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/morgan-freeman-accused-ignoring-pleas-135542381.html",
+          "title": "Morgan Freeman Accused of Ignoring Pleas To Help Grandchildren: ‘Trying To Get Help to Not Get Evicted’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjCa5N87SN7YnaTZ9RilJrdhf-7Hd2Z1txTZAhVZVr5al4s6XHdLhRvdI_gQ"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/morgan-freemans-grandchildren-enter-emergency-housing-after-adviser-rejects-mothers-5000-plea-for-rent-help-she-says-100000-divorce-settlement-could-secure-a-home/articleshow/136172203.cms",
+          "title": "Morgan Freeman’s grandchildren enter emergency housing after adviser rejects mother’s $5,000 plea for ren",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRZW-GBRu5KSXJhmVq4u3mt4tzwFPi_07T2oKCgyALIvzbkw2tn47aOaom3fU"
+        },
+        {
+          "url": "https://www.mensjournal.com/news/morgan-freeman-accused-of-refusing-5000-as-grandchildren-face-eviction",
+          "title": "Morgan Freeman Accused of Refusing $5,000 as Grandchildren Face Eviction",
+          "publisher": "Men's Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY1bA58ZOzK5LyQwPQ6Ge3u_3Q-ZFoNxOe14xUdMCal72Wqa0pxBjMIFyRnfc"
+        }
+      ]
+    },
+    {
+      "query": "wisniewski eagles",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T01:10:00Z",
+      "related_news_urls": [
+        "https://www.bleedinggreennation.com/news/191448/eagles-roster-news-3-moves-announced-ahead-of-cowboys-game",
+        "https://sports.yahoo.com/nfl/articles/eagles-sign-gabe-hall-elevate-210613913.html",
+        "https://www.bignewsnetwork.com/news/279454528/eagles-sign-dt-gabe-hall-to-active-roster"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpvI0gJloyttfe8d_5bg7c_s0dWvz_QRY0KhRpV0p8f1Jvrkvn4HJPrjipUgM",
+      "image_credit": "Bleeding Green Nation",
+      "news": [
+        {
+          "url": "https://www.bleedinggreennation.com/news/191448/eagles-roster-news-3-moves-announced-ahead-of-cowboys-game",
+          "title": "Eagles roster news: 3 moves announced ahead of Cowboys game",
+          "publisher": "Bleeding Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpvI0gJloyttfe8d_5bg7c_s0dWvz_QRY0KhRpV0p8f1Jvrkvn4HJPrjipUgM"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/eagles-sign-gabe-hall-elevate-210613913.html",
+          "title": "Eagles sign Gabe Hall, elevate two defenders for Thanksgiving Day game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsw0zvL67TCPh63JkepL-R9wWaVlHgj5Aa0UYV9-sBdJYzN4OcRvSQCSJUH6s"
+        },
+        {
+          "url": "https://www.bignewsnetwork.com/news/279454528/eagles-sign-dt-gabe-hall-to-active-roster",
+          "title": "Eagles sign DT Gabe Hall to active roster",
+          "publisher": "Big News Network.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbBHockY3Ud_kgvxF6nHeT3nNaL7dXa4usj8EVwClWhB5JhZTloGAYseIFLBc"
+        }
+      ]
+    },
+    {
+      "query": "jake ferguson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:10:00Z",
+      "related_news_urls": [
+        "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-inactives-thanksgiving-2026-nfl-week-12",
+        "https://sports.yahoo.com/nfl/articles/dallas-cowboys-week-12-inactives-201328691.html",
+        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-26/cowboys-declare-te-jake-ferguson-inactive-in-wk-12"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr1xvYmotB40zwlBczC8mMiZQqUNffqnXXZj17VZp6V1_TD7azqsW7YX1KShg",
+      "image_credit": "Philadelphia Eagles",
+      "news": [
+        {
+          "url": "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-inactives-thanksgiving-2026-nfl-week-12",
+          "title": "Eagles at Cowboys Inactives",
+          "publisher": "Philadelphia Eagles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr1xvYmotB40zwlBczC8mMiZQqUNffqnXXZj17VZp6V1_TD7azqsW7YX1KShg"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/dallas-cowboys-week-12-inactives-201328691.html",
+          "title": "Dallas Cowboys' Week 12 Inactives: 4 Starters Out, But Good News For Jalen Thompson",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZLqbsYC_4EbxdtbsseBNAmQ3mTyqDL5DhM9KfmqSk2nH2yOictdVzEmWiJhc"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-26/cowboys-declare-te-jake-ferguson-inactive-in-wk-12",
+          "title": "Cowboys declare TE Jake Ferguson inactive in Wk 12",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhz6KBMcLl6vXXBzpub-f5-h1aEmCIBDaBNiFQiEBEjO6r6EFmso58wZb_nsg"
+        }
+      ]
+    },
+    {
+      "query": "ttu football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:10:00Z",
+      "related_news_urls": [
+        "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
+        "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
+        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/26/texas-tech-football-cpf-season-finale-projections/92862249007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E",
+      "image_credit": "Lubbock Avalanche-Journal",
+      "news": [
+        {
+          "url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
+          "title": "Finally! CFP committee gives Texas Tech football a long-awaited bump",
+          "publisher": "Lubbock Avalanche-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E"
+        },
+        {
+          "url": "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
+          "title": "Who should Texas Tech root for this week? Every game that impacts the Red Raiders' CFP chances",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjfFyiDNtN-piAzpqSLawz2qZjsoo46LjewZO9IqOSxbg5JQQ5J3pHkdFPqbE"
+        },
+        {
+          "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/26/texas-tech-football-cpf-season-finale-projections/92862249007/",
+          "title": "Texas Tech projected to be outside of playoffs entering season finale",
+          "publisher": "Red Raiders Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU8T6voDXSRhQPH5-1trLFg_pkb-t4UQhJ9Y_CDdF8gmoqdy9W2OwNvxeRZRI"
+        }
+      ]
+    },
+    {
+      "query": "skip bayless",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T01:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
+        "https://www.nfl.com/news/micah-parsons-on-packers-playoff-hopes-we-probably-have-to-win-out",
+        "https://sports.yahoo.com/nfl/articles/exact-reason-why-cowboys-traded-153709620.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6wP4EfxfR3DYkdG-UT4c_Mtn32A2WQDl5P08jTFgWe6k9kkIPFO37pxJY2Q",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
-          "title": "Judge denies SEC's request for TRO against LSU in Dec. 3 vote",
+          "url": "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
+          "title": "Packers' Parsons calls for accountability after Rams run wild",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6wP4EfxfR3DYkdG-UT4c_Mtn32A2WQDl5P08jTFgWe6k9kkIPFO37pxJY2Q"
         },
         {
-          "url": "https://www.wbrz.com/news/gov-jeff-landry-goes-quiet-on-lsu-standoff-with-sec/",
-          "title": "Gov. Jeff Landry goes quiet on LSU standoff with SEC",
-          "publisher": "WBRZ",
+          "url": "https://www.nfl.com/news/micah-parsons-on-packers-playoff-hopes-we-probably-have-to-win-out",
+          "title": "Micah Parsons on Packers' playoff hopes: 'We probably have to win out'",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ta9vTAKVZ-bCiy4YevggdTvwxgQfU_oGlZ7SUxO8IFdMKzIcTrgmyBS7dTs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJQzAbHRHeSePs3_8AqdzUIn_1cILVqT7mQwVdlGexS1o9mX8CyApZNi5NQYA"
         },
         {
-          "url": "https://www.wafb.com/2026/11/25/rj-luis-jr-sues-sec-commissioner-greg-sankey-personally-seeks-damages-over-lsu-removal/",
-          "title": "RJ Luis Jr. sues SEC Commissioner Greg Sankey personally, seeks damages over LSU removal",
-          "publisher": "WAFB",
+          "url": "https://sports.yahoo.com/nfl/articles/exact-reason-why-cowboys-traded-153709620.html",
+          "title": "“The Exact Reason Why the Cowboys Traded Him”: NFL Fans React As Micah Parsons Calls Out Packers Teammates for Giving Up 241 Rushing Yards vs. Rams",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStGZnh8aWedtJrzcTCudt0pJQYBLW0DiFskucnr-BYedXvDDOqXcehvsiTV84"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWyAYQwZbuEe0EVT37ySc1FT7SeRSxNGb9BhrwDgLj7-rWWxih2dmFhBmP49Q"
         }
       ]
     },
     {
-      "query": "jerry jones",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T00:20:00Z",
+      "query": "michelle obama",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T01:10:00Z",
       "related_news_urls": [
-        "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
-        "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
-        "https://www.espn.com/nfl/story/_/id/50588773/long-lions-owner-martha-firestone-ford-dies-age-101"
+        "https://abc7chicago.com/post/former-president-barack-obama-michelle-surprise-englewood-nonprofit-workers-before-thanksgiving/20082069/",
+        "https://wgntv.com/news/chicago-news/the-obamas-help-out-at-south-side-nonprofit-in-thanksgiving-eve-surprise/",
+        "https://www.cbsnews.com/chicago/news/obamas-dions-chicago-dream/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU",
-      "image_credit": "Detroit Lions",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW5KPAC2bAp6wSO6jwshvStG2LcE-WtcHMM9eqWZW1phthYxtAKhEKJG8lJXg",
+      "image_credit": "ABC7 Chicago",
       "news": [
         {
-          "url": "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
-          "title": "Lions Owner/Chair Emeritus Martha Firestone Ford passes away at 101",
-          "publisher": "Detroit Lions",
+          "url": "https://abc7chicago.com/post/former-president-barack-obama-michelle-surprise-englewood-nonprofit-workers-before-thanksgiving/20082069/",
+          "title": "Former President Barack Obama, Michelle Obama surprise Englewood nonprofit workers before Thanksgiving",
+          "publisher": "ABC7 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW5KPAC2bAp6wSO6jwshvStG2LcE-WtcHMM9eqWZW1phthYxtAKhEKJG8lJXg"
         },
         {
-          "url": "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
-          "title": "Statement from the Green Bay Packers",
-          "publisher": "Green Bay Packers – packers.com",
+          "url": "https://wgntv.com/news/chicago-news/the-obamas-help-out-at-south-side-nonprofit-in-thanksgiving-eve-surprise/",
+          "title": "The Obamas help out at South Side nonprofit in Thanksgiving Eve surprise",
+          "publisher": "WGN-TV",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EUiFenTEQuC3rR0tmymU-t--QxmO_xKnbVQR-y-u6Dmu7aBNQ6fbO7htUD8"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50588773/long-lions-owner-martha-firestone-ford-dies-age-101",
-          "title": "Longtime Lions owner Martha Firestone Ford dies at age 101",
-          "publisher": "ESPN",
+          "url": "https://www.cbsnews.com/chicago/news/obamas-dions-chicago-dream/",
+          "title": "Barack, Michelle Obama makes surprise appearance, volunteer at South Side food bank",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWClwe3k8j-iEtnxGwn_jo-4TtCD7lxwVtp9t2cr4J5LCR5vbiQ4a86V4t_TI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2bzwwgDmVUmvXxRglJ8BHuaVLtpJAZudKsGPNQoaN-4iOIMC84uV4V0pfl8g"
         }
       ]
     },
     {
-      "query": "jason statham",
+      "query": "cruz azul",
       "approx_searches": "1000+",
-      "published_at": "2026-11-27T00:20:00Z",
+      "published_at": "2026-11-27T01:00:00Z",
       "related_news_urls": [
-        "https://movieweb.com/jason-statham-mechanic-resurrection-leaving-streaming-november-2026/",
-        "https://screenrant.com/jason-statham-crank-high-voltage-starz-top-movie-2026-streaming-chart/",
-        "https://foro3d.com/en/2026/noviembre/el-apicultor-2-presenta-su-poster-con-un-aguijon-que-necesita-vehiculo.html"
+        "https://www.vavel.com/en-us/soccer/2026/11/26/1280746-leon-vs-cruz-azul-live-score-liga-mx.html",
+        "https://www.soyfutbol.com/en/news/sebastian-vegas-sends-a-warning-to-cruz-azul-before-quarterfinals-can-leon-pull-off-the-upset-20261126-0020.html",
+        "https://www.transfermarkt.com/betting/tips/club-leon-vs-cruz-azul-prediction-27-11-2026/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn4cJJhrNBclSFIbpTXCjgJ4EYoTBSpgf0IvE7ZySlfbWJKp6N4Pqv3vhlbQE",
-      "image_credit": "MovieWeb",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRl_FtUb5JdSGby9nEia8vq9kp7WK58epDPj_f8lNlg9Y_QPqnpiDJ85eAOJM",
+      "image_credit": "VAVEL.com",
       "news": [
         {
-          "url": "https://movieweb.com/jason-statham-mechanic-resurrection-leaving-streaming-november-2026/",
-          "title": "Jason Statham's 98-Minute Assassin Action Thriller Sequel Is Officially Being Cut From Streaming",
-          "publisher": "MovieWeb",
+          "url": "https://www.vavel.com/en-us/soccer/2026/11/26/1280746-leon-vs-cruz-azul-live-score-liga-mx.html",
+          "title": "Leon vs Cruz Azul LIVE, Latest Score, Goals and Liga MX Updates",
+          "publisher": "VAVEL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn4cJJhrNBclSFIbpTXCjgJ4EYoTBSpgf0IvE7ZySlfbWJKp6N4Pqv3vhlbQE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRl_FtUb5JdSGby9nEia8vq9kp7WK58epDPj_f8lNlg9Y_QPqnpiDJ85eAOJM"
         },
         {
-          "url": "https://screenrant.com/jason-statham-crank-high-voltage-starz-top-movie-2026-streaming-chart/",
-          "title": "Jason Statham’s 96-Minute Action Thriller Thoroughly Dominates As Streaming’s #1 Movie Of 2026",
-          "publisher": "ScreenRant",
+          "url": "https://www.soyfutbol.com/en/news/sebastian-vegas-sends-a-warning-to-cruz-azul-before-quarterfinals-can-leon-pull-off-the-upset-20261126-0020.html",
+          "title": "Sebastián Vegas Sends a Warning to Cruz Azul Before Quarterfinals: Can León Pull Off the Upset?",
+          "publisher": "Soy Futbol",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkSqqnSKOHatX_-Uvofq0QOynxy9qtcrBEpsCWAjGAjvZyqBMUTPB5um65YuQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTFSdLGdPf5klyKV2ZCNtE9BLGtR5w3fBp-ebOnKA4fzzBFsgNzw-SWbDkWw"
         },
         {
-          "url": "https://foro3d.com/en/2026/noviembre/el-apicultor-2-presenta-su-poster-con-un-aguijon-que-necesita-vehiculo.html",
-          "title": "The Beekeeper 2 unveils its poster with a stinger that needs a vehicle",
-          "publisher": "Foro3D",
+          "url": "https://www.transfermarkt.com/betting/tips/club-leon-vs-cruz-azul-prediction-27-11-2026/",
+          "title": "Club León - Cruz Azul prediction & tips 27.11.2026",
+          "publisher": "Transfermarkt",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnpIy3696FnFLwigYsDInzsmIod7n94NUJmVXMpQV_nyzvEkcu4w5uQc4CNXI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ypu8HKREWYOqzQdqd2aNlTwjMbtbRyVSIbqXiipf7Nha9zl2Dl7G-5eSN-w"
         }
       ]
     },
     {
-      "query": "smu basketball",
+      "query": "damar hamlin",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T00:20:00Z",
+      "published_at": "2026-11-27T01:00:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/mens-college-basketball/articles/no-20-lsu-mens-basketball-230145225.html",
-        "https://www.nytimes.com/athletic/7814633/2026/11/26/smu-vs-lsu-stream-how-to-watch-nov-26/",
-        "https://www.tallahatchienews.ms/node/463793"
+        "https://sports.yahoo.com/nfl/articles/bills-damar-hamlin-announces-personal-014149274.html",
+        "https://www.fantasypros.com/nfl/news/621425/damar-hamlin-toe-considered-questionable-sunday.php",
+        "https://cwibc.co.id/en/hamlin-returns-dolphins-toe-injury"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR2oAg7OqB3zD0LAPtIhNmxQSwUjvmv5zz58EnxXaukB8rZPOwL-akozqgVrw",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB8bVfMXnKMIZVAABGbuM9cD-yxTy6KETBN5GcBIWMaSZfDIK8mG6dkYcmXk",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/no-20-lsu-mens-basketball-230145225.html",
-          "title": "No. 20 LSU men's basketball vs SMU | How to watch, live score from Acrisure Series",
+          "url": "https://sports.yahoo.com/nfl/articles/bills-damar-hamlin-announces-personal-014149274.html",
+          "title": "Bills Damar Hamlin Announces Personal News Before Thanksgiving Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR2oAg7OqB3zD0LAPtIhNmxQSwUjvmv5zz58EnxXaukB8rZPOwL-akozqgVrw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB8bVfMXnKMIZVAABGbuM9cD-yxTy6KETBN5GcBIWMaSZfDIK8mG6dkYcmXk"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7814633/2026/11/26/smu-vs-lsu-stream-how-to-watch-nov-26/",
-          "title": "How to watch SMU vs. LSU men’s basketball: TV channel and streaming options for November 26 - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.fantasypros.com/nfl/news/621425/damar-hamlin-toe-considered-questionable-sunday.php",
+          "title": "Damar Hamlin (toe) considered questionable for Sunday",
+          "publisher": "FantasyPros",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31aGWnzhy8foupczCdxhl0fdsnN_bgakgJs9GTw72oUuBoaZuR16Tgs4bwNo"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLbhAgiClyDqsQzo3wF6gwrw2GYznSgXONkCU0a__d_B6r89Xsi92JwDxMCGg"
         },
         {
-          "url": "https://www.tallahatchienews.ms/node/463793",
-          "title": "[-STREAM] (WAY) TO WATCH Tigers vs Mustangs LIVE Streams ON TV CHANNEL Ｓｔｒｅａｍｓ ＯＮ ＴＶ Cast",
-          "publisher": "tallahatchienews.ms",
+          "url": "https://cwibc.co.id/en/hamlin-returns-dolphins-toe-injury",
+          "title": "Damar Hamlin Returns Against Dolphins After Toe Injury",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCVJOoIwl8bOYomwiwRbktWdHMwA5JBm_7MsjVl9G3qerVD3ty2IklHNPb5gA"
         }
       ]
     },
     {
-      "query": "pachuca - guadalajara",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-27T00:10:00Z",
+      "query": "rashee rice",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:00:00Z",
       "related_news_urls": [
-        "https://www.tudn.com/futbol/liga-mx/pachuca-vs-chivas-en-vivo-ida-de-cuartos-de-final-apertura-2026-de-liga-mx-minuto-a-minuto-del-partido",
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17556896/pachuca-vs-chivas-alineaciones-ida-cuartos-final",
-        "https://www.azcentral.com/story/deportes/futbol/2026/11/26/pachuca-vs-chivas-hora-donde-ver-liguilla-2026-cuartos-de-final/92943473007/"
+        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573508/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-12-211412865.html",
+        "https://www.si.com/fantasy/week-12-start-em-sit-em-wide-receivers"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuWFBbQhtHvTV0yJUnaQ_g9xXMm3ojvoTnJ_VL5TLBVcirKcJnysWJcvBdBRE",
-      "image_credit": "TUDN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.tudn.com/futbol/liga-mx/pachuca-vs-chivas-en-vivo-ida-de-cuartos-de-final-apertura-2026-de-liga-mx-minuto-a-minuto-del-partido",
-          "title": "Pachuca vs. Chivas EN VIVO Ida de Cuartos de final Apertura 2026 de Liga MX: minuto a minuto del partido",
-          "publisher": "TUDN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuWFBbQhtHvTV0yJUnaQ_g9xXMm3ojvoTnJ_VL5TLBVcirKcJnysWJcvBdBRE"
-        },
-        {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17556896/pachuca-vs-chivas-alineaciones-ida-cuartos-final",
-          "title": "Pachuca vs Chivas: posibles alineaciones y probabilidades",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2gNZ_qpxwuau5HNCjUVpKJFxPQDm0LA4dxJkZmf4b69SVY1egfvGgswQ70h4"
-        },
-        {
-          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/26/pachuca-vs-chivas-hora-donde-ver-liguilla-2026-cuartos-de-final/92943473007/",
-          "title": "¿Cuándo juegan las Chivas? Arrancan el camino por el campeonato ante Pachuca",
-          "publisher": "azcentral.com and The Arizona Republic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj3W3rj6kkU6Eik7FigH8uKzcpS6g4B86TBd7LuhQhKeC7VC0B_VKVx4sy6VI"
-        }
-      ]
-    },
-    {
-      "query": "pitt basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
-        "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
-        "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
-          "title": "Staff Picks: Can Pitt overcome DePaul in a showdown of undefeated teams?",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY"
-        },
-        {
-          "url": "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
-          "title": "7-0 Pitt To Face 6-0 DePaul On Thanksgiving Day",
-          "publisher": "PittsburghPanthers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPj7e7APfGqWHJ6CcYXdSBuCYMIHzTW7J21sekS-HDLQAg1AZ8EkdIonV_0G0"
-        },
-        {
-          "url": "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/",
-          "title": "Undefeated Pitt, DePaul set to collide in Florida",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQyt2xQwbbKpsP0vR98BIQPZtB1k2caoZhgUrK0LC1OlY42B5Vq-4XBKHavU"
-        }
-      ]
-    },
-    {
-      "query": "brandon aubrey",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-kickers-for-week-12",
-        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573224/nfl-fantasy-football-rankings-2026-k-kicker",
-        "https://sports.yahoo.com/fantasy/article/justin-boone-week-12-fantasy-football-kicker-rankings-155422467.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJGta69y77TNx-U_iNpCy5yu484HAg9sbnbxxXaWXnc1s-1yM8qx4-aym8JEQ",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-kickers-for-week-12",
-          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Kickers for Week 12",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJGta69y77TNx-U_iNpCy5yu484HAg9sbnbxxXaWXnc1s-1yM8qx4-aym8JEQ"
-        },
-        {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573224/nfl-fantasy-football-rankings-2026-k-kicker",
-          "title": "Fantasy football rankings for Week 12: Kicker",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573508/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
+          "title": "Fantasy football rankings for Week 12: Wide receiver",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiDF391o7viT5GJ4Dq4_fUaRQI_w_bNqQFoGUnBzYBIl_t99IKy2AjkAQ9YBk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs"
         },
         {
-          "url": "https://sports.yahoo.com/fantasy/article/justin-boone-week-12-fantasy-football-kicker-rankings-155422467.html",
-          "title": "Justin Boone's Week 12 Fantasy Football Kicker Rankings",
+          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-12-211412865.html",
+          "title": "Fantasy Football Rankings: Hayden Winks' WR Blueprint for Week 12",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnYAVasGBdhXduSgas9DeNpwRx6kOGOI_5mm27sxTr1GevCfBbB27iegI-Ric"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwJ7C924IXmVOZA_ZaL0kd43Z586Lk8Pq-b_O918j3xAt4KNNKYkCrEaSmDqo"
+        },
+        {
+          "url": "https://www.si.com/fantasy/week-12-start-em-sit-em-wide-receivers",
+          "title": "Week 12 Start ’Em, Sit ’Em Wide Receivers",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6-qXFMkcNLgBN8gTEnFKiXAtTyon8VbbAvmX6uYbT6tGgKFhos6kOgjQT5g"
         }
       ]
     },
     {
-      "query": "drake",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T00:10:00Z",
+      "query": "ring",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T01:00:00Z",
       "related_news_urls": [
-        "https://www.chron.com/news/houston-texas/article/drake-video-rice-university-22545964.php",
-        "https://www.complex.com/music/a/treyalston/drake-rice-university-skyspace-ya-hit-video",
-        "https://hoodline.com/2026/11/drake-appears-to-film-future-video-at-rice-s-skyspace/"
+        "https://www.postwrestling.com/2026/11/26/ring-boy-lawsuit-put-on-hold-pending-private-mediation-with-mcmahons-and-wwe/",
+        "https://www.insidehighered.com/news/government/politics-elections/2026/11/25/mcmahon-eyes-potential-settlement-ring-boys",
+        "https://www.fightful.com/wrestling/ring-boy-lawsuit-put-on-hold-private-mediation-with-mcmahons-and-wwe-to-take-place/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS6_UB18BJwDE91SRS8L5mlIW3y_KK8HMsr5SfpiHPGxnCNeAnZPo3pOr68oQ",
-      "image_credit": "Chron",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafGakLpISFQZBgZT4hzFR68NJwl4L1Cz9wEX-02UUZyjExD4CTDK_2ZZtd20",
+      "image_credit": "POST Wrestling",
       "news": [
         {
-          "url": "https://www.chron.com/news/houston-texas/article/drake-video-rice-university-22545964.php",
-          "title": "Grammy-winning rapper may have snuck onto Rice campus for secret shoot",
-          "publisher": "Chron",
+          "url": "https://www.postwrestling.com/2026/11/26/ring-boy-lawsuit-put-on-hold-pending-private-mediation-with-mcmahons-and-wwe/",
+          "title": "Ring boy lawsuit put on hold pending private mediation with McMahons and WWE",
+          "publisher": "POST Wrestling",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS6_UB18BJwDE91SRS8L5mlIW3y_KK8HMsr5SfpiHPGxnCNeAnZPo3pOr68oQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafGakLpISFQZBgZT4hzFR68NJwl4L1Cz9wEX-02UUZyjExD4CTDK_2ZZtd20"
         },
         {
-          "url": "https://www.complex.com/music/a/treyalston/drake-rice-university-skyspace-ya-hit-video",
-          "title": "Rice University Claims Drake Shot Video at School Without Its Knowledge",
-          "publisher": "Complex",
+          "url": "https://www.insidehighered.com/news/government/politics-elections/2026/11/25/mcmahon-eyes-potential-settlement-ring-boys",
+          "title": "McMahon Eyes Potential Settlement With “Ring Boys”",
+          "publisher": "Inside Higher Ed",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ51OnAd9oMVK7vuw-uNxkOsX24Pwha7vkJveY-nQbBeQi50gouX7Y0Hw0Psc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1t3NqEQtZHIQCsCEsLM9ii-wZWgCvcTWJod3_ac_nZ9iVAOS1nhxOPUg_F0Y"
         },
         {
-          "url": "https://hoodline.com/2026/11/drake-appears-to-film-future-video-at-rice-s-skyspace/",
-          "title": "Drake Appears to Film Future Video at Rice's Skyspace",
-          "publisher": "Hoodline",
+          "url": "https://www.fightful.com/wrestling/ring-boy-lawsuit-put-on-hold-private-mediation-with-mcmahons-and-wwe-to-take-place/",
+          "title": "Ring Boy Lawsuit Put On Hold, Private Mediation With McMahons and WWE To Take Place",
+          "publisher": "Fightful",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6drEQ0vJZIPOX0Ts5xhUiZYGKDCyXeoiXVJLUgkkHuISvnhoqhu4J3KqpFVA"
-        }
-      ]
-    },
-    {
-      "query": "best movies to stream right now",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/erikkain/2026/11/26/what-to-watch-this-weekend-new-shows-and-movies-to-stream-on-netflix-hulu-prime-video-apple-tv-and-more/",
-        "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
-        "https://www.imdb.com/news/ni66125291/?ref_=ttnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSq-OuR4A82ON-S8rsWPHKoctWvQiNOQn6elYC46qimkl_m4isbSDK5YD0eU",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/26/what-to-watch-this-weekend-new-shows-and-movies-to-stream-on-netflix-hulu-prime-video-apple-tv-and-more/",
-          "title": "What To Watch This Weekend: New Shows And Movies To Stream On Netflix, Hulu, Prime Video, Apple TV And More",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSq-OuR4A82ON-S8rsWPHKoctWvQiNOQn6elYC46qimkl_m4isbSDK5YD0eU"
-        },
-        {
-          "url": "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
-          "title": "New movies on streaming: ‘The Odyssey,’ ‘A Talent For Murder’ and more",
-          "publisher": "Decider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqfcdwNh-HanBiLz-gtz52QcIt3JBX92dWS_uwloaHKel6yZcML6fCbW80bQ"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66125291/?ref_=ttnw_art_perm",
-          "title": "8 New TV Shows to Watch This Weekend on Netflix, Disney, and Paramount (November 20-22)",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmxdDDQx1-AxQCLoCV25YRHBQoH8G_4VEn5hqDRoSLrUUiPkTUCOMvIGiBhLs"
-        }
-      ]
-    },
-    {
-      "query": "nicolas cage",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://collider.com/longlegs-nicolas-cage-leaving-hulu-netflix-december-2026/",
-        "https://collider.com/longlegs-nicolas-cage-netflix-december-2026/",
-        "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBqdzftViyqu-XAR-mK6TFbMOREMciSRcSdtSGT62KthzoTt0XEmeNOnrNOP4",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/longlegs-nicolas-cage-leaving-hulu-netflix-december-2026/",
-          "title": "Nicolas Cage’s ‘The Silence of the Lambs’ Replacement Officially Hits Netflix in 2 Weeks",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBqdzftViyqu-XAR-mK6TFbMOREMciSRcSdtSGT62KthzoTt0XEmeNOnrNOP4"
-        },
-        {
-          "url": "https://collider.com/longlegs-nicolas-cage-netflix-december-2026/",
-          "title": "Nicolas Cage’s Terrifying Serial Killer Thriller Officially Comes to Netflix",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36ILwaDggQ0x5ynbBkF0jKBw05ffIT2vFLM2R-lD4sHp5wBRmk84jIqEy-eY"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html",
-          "title": "Madden: Christian Bale and Nicolas Cage have quietly made the worst film of 2026",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNN5b9ceOF-BcSvEFKJoJcyIOHWcmsghYaiy7IEQgTalhaFc5UeRE2WzdAB-I"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvgu1thzY5G4OfALJsT-HAfSfLoFo4P2fFonHTu8VYm5s8RpASRFRq7y6O96g"
         }
       ]
     }
