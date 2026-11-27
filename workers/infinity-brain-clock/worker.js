@@ -830,7 +830,8 @@ export class BrainClock extends DurableObject{
   try{await this.payWork(quant,body.verificationToken||'')}catch(e){await this.ctx.storage.put('bot-work-credit-error',{when:Date.now(),error:String(e.message).slice(0,200),quantId:quant.id})}
   await this.projectRunnerResult(receipt);
   try{
-    const memory=await rememberOutcome(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
+    const cooldown=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+    const memory=await rememberOutcome(cooldown?{...this.env,WRITER_AI:undefined}:this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
       repository:lease.repository,ticketId:lease.ticketId,jobId:lease.jobId,
       status:body.status,task:lease.job.instructions,summary:message,commitSha:receipt.commitSha,occurredAt:Date.now()});
     await this.ctx.storage.put('last-episodic-memory',{when:Date.now(),status:memory.vector,jobId:lease.jobId});

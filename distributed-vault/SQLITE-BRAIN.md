@@ -297,6 +297,8 @@ the existing reservation transaction. Already pinned source-only Pink reviews
 can still claim under the original dependency/security rules and use saved
 memory without a new vector inference request. Owner-partitioned queue reads
 still occur to find those reviews; this does not bypass D1 failures.
+Result receipts still save their durable outcome row while a known cooldown
+defers that row's vector inference to the existing pending-memory path.
 
 The scheduled retry is one minute after the next UTC day, matching the existing
 per-job policy. Expiry only permits a fresh attempt; it does not establish

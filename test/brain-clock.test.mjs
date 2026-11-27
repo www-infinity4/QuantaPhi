@@ -100,8 +100,11 @@ test('unavailable OIDC signing keys remain a service failure with no downstream 
 test('actual provider exhaustion preserves its current fenced job and pauses it until the scheduled retry',async()=>{
  const job={id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Repair source',acceptance:['Regression passes']};
  const lease={key:'quota-key',leaseId:'quota-lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:job.id,ticketId:'IW-20261122-F0E68B20',repository:job.repository,revision:'a'.repeat(64),job};
- const memory=new Map([[lease.key,lease]]);let modelCalls=0,projected;
- const clock=new BrainClock({storage:testStorage(memory)},{WRITER_AI:{run:async()=>{modelCalls++;throw Error('4006: you have used up your daily free allocation of 10,000 neurons');}}});
+ const memory=new Map([[lease.key,lease]]);let modelCalls=0,projected,outcomeRows=0;
+ const clock=new BrainClock({storage:testStorage(memory)},{WRITER_OWNER_HASH:'a'.repeat(64),
+  WORK_DB:{prepare:sql=>({bind(){return this;},run:async()=>{if(sql.startsWith('INSERT OR IGNORE INTO brain_experiences'))outcomeRows++;return {meta:{changes:1}};}})},
+  BRAIN_MEMORY:{upsert:async()=>assert.fail('no vector upload while provider is exhausted')},
+  WRITER_AI:{run:async()=>{modelCalls++;throw Error('4006: you have used up your daily free allocation of 10,000 neurons');}}});
  const send=(path,body={})=>clock.runner(new Request('https://clock.internal/runner/'+path,{method:'POST',body:JSON.stringify({key:lease.key,leaseId:lease.leaseId,runId:lease.runId,runnerRepository:'www-infinity4/Moltnook',evidence:{colorFindings:{},runtime:{baseSha:'b'.repeat(40)}},...body})}));
  await assert.rejects(send('plan'),error=>error.message==='provider_quota_exhausted'&&error.status===429);
  const marker=memory.get(lease.key).providerQuota;
@@ -116,6 +119,9 @@ test('actual provider exhaustion preserves its current fenced job and pauses it 
  clock.payWork=async()=>{};clock.emit=async()=>{};
  const result=await send('result',{status:'blocked',message:'provider_quota_exhausted'});
  assert.equal(result.status,200);
+ assert.equal(outcomeRows,1,'save the pending outcome even when its embedding is deferred');
+ assert.equal(modelCalls,1,'recording the result must not repeat exhausted-provider embedding inference');
+ assert.equal(memory.get('last-episodic-memory').status,'unbound');
  const saved=memory.get(lease.key);
  assert.equal(saved.retryAt,marker.retryAt);
  assert.equal(saved.status,'blocked');assert.equal(saved.leaseUntil,0);
