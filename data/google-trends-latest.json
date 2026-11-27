@@ -3,12 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T21:01:22.927421Z",
+  "checked_at": "2026-11-27T21:31:11.997006Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "air force vs new mexico",
+      "query": "michael pittman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T21:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50606063/steelers-activate-michael-pittman-jr-ir-sign-max-hurleman-active-roster-practice-squad",
+        "https://www.cbssports.com/fantasy/football/news/steelers-kaden-wetjen-inactive-while-hurleman-plays/",
+        "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-broncos-game"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSKmbnpFfTbbc_2F4M3kKG0XACx3Pb3LyAxo-OVtFUCaH422FxDvBg6EQ6d8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50606063/steelers-activate-michael-pittman-jr-ir-sign-max-hurleman-active-roster-practice-squad",
+          "title": "Steelers activate Michael Pittman Jr. off IR, sign Max Hurleman to active roster",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHSKmbnpFfTbbc_2F4M3kKG0XACx3Pb3LyAxo-OVtFUCaH422FxDvBg6EQ6d8"
+        },
+        {
+          "url": "https://www.cbssports.com/fantasy/football/news/steelers-kaden-wetjen-inactive-while-hurleman-plays/",
+          "title": "Steelers' Kaden Wetjen: Inactive while Hurleman plays",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
+        },
+        {
+          "url": "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-broncos-game",
+          "title": "Steelers make roster moves ahead of Broncos game",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI"
+        }
+      ]
+    },
+    {
+      "query": "jadan baugh",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T21:10:00Z",
+      "related_news_urls": [
+        "https://floridagators.com/news/2026/11/26/football-the-opening-kickoff-no-20-gators-at-florida-state-a-friday-afternoon-sunshine-showdown",
+        "https://apnews.com/article/florida-jadan-baugh-68bdf4f36f8beaac2e523f8c2b1bb072",
+        "https://247sports.com/college/florida/article/florida-gators-football-eye-milestone-jadan-baugh-before-nfl-decision-293218611/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSexVJNAayD5brOAqVR-jGO-nPRIWhIpVh2Ao6PILY2jqAupox4ni_UVj_oJrI",
+      "image_credit": "Florida Gators",
+      "news": [
+        {
+          "url": "https://floridagators.com/news/2026/11/26/football-the-opening-kickoff-no-20-gators-at-florida-state-a-friday-afternoon-sunshine-showdown",
+          "title": "The Opening Kickoff: No. 20 Gators at Florida State — A Friday To Run The Baugh",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSexVJNAayD5brOAqVR-jGO-nPRIWhIpVh2Ao6PILY2jqAupox4ni_UVj_oJrI"
+        },
+        {
+          "url": "https://apnews.com/article/florida-jadan-baugh-68bdf4f36f8beaac2e523f8c2b1bb072",
+          "title": "Florida’s Jadan Baugh can make school history in what likely will be his collegiate finale",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUOK1YmOp3L2VVnQIwFb8oluvbhmzdGyLgsdQFkcA57GqVHMtzPZ5lJUInWNk"
+        },
+        {
+          "url": "https://247sports.com/college/florida/article/florida-gators-football-eye-milestone-jadan-baugh-before-nfl-decision-293218611/",
+          "title": "'He's laid it on the line for us': Gators eye milestone for Baugh before NFL decision",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGHqrMYtnMbwk-HX3b5YvXhLZ2qFkGtCgdNEyG0V5OV1Br3ELd9Qm-MJ-_1c"
+        }
+      ]
+    },
+    {
+      "query": "fsu score",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T21:10:00Z",
+      "related_news_urls": [
+        "https://seminoles.com/news/2026/11/26/womens-soccer-no-5-fsu-meets-no-4-south-carolina-in-ncaa-second-round",
+        "https://gamecocksonline.com/news/2026/11/26/south-carolina-to-face-florida-state-in-ncaa-second-round/",
+        "https://247sports.com/college/florida-state/longformarticle/fsu-soccer-south-carolina-ncaa-tournament-game-preview-293335739/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvFesxco6zyAmvNSYiNQXuWTBXl-koyhvA-DQ5Tpkvyf93ly3VuodCgGDkFmU",
+      "image_credit": "Seminoles.com",
+      "news": [
+        {
+          "url": "https://seminoles.com/news/2026/11/26/womens-soccer-no-5-fsu-meets-no-4-south-carolina-in-ncaa-second-round",
+          "title": "No. 5 FSU Meets No. 4 South Carolina in NCAA Second Round - Florida State University",
+          "publisher": "Seminoles.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvFesxco6zyAmvNSYiNQXuWTBXl-koyhvA-DQ5Tpkvyf93ly3VuodCgGDkFmU"
+        },
+        {
+          "url": "https://gamecocksonline.com/news/2026/11/26/south-carolina-to-face-florida-state-in-ncaa-second-round/",
+          "title": "South Carolina to Face Florida State in NCAA Second Round",
+          "publisher": "University of South Carolina Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQj44l3-g3Xs-2g-js06tedWrcHCa4VlSAGB5zgWqfzEZkY-KBSAueFZDg34Vc"
+        },
+        {
+          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-soccer-south-carolina-ncaa-tournament-game-preview-293335739/",
+          "title": "No. 5 seed FSU Soccer set to face No. 4 seed South Carolina in NCAA Tournament Second Round action on Friday",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSrqQyqx9s6Y1OfU0igYYx2mhNCTER8vsxMXRo5DaMAZK7Xw8d6xqBCsmAMTqs"
+        }
+      ]
+    },
+    {
+      "query": "uf football",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T21:00:00Z",
+      "related_news_urls": [
+        "https://www.miamiherald.com/sports/article318283451.html",
+        "https://floridagators.com/news/2026/11/27/football-game-day-florida-at-florida-state-rivalry-enters-new-era",
+        "https://sports.yahoo.com/college-football/articles/florida-state-seminoles-vs-no-201500263.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRC8rSqVYLbSgt4hXBdTZO6wiEj9PnsTKSy4ZlXSeXjS5QZ_TjyEyHYCdpPM",
+      "image_credit": "Miami Herald",
+      "news": [
+        {
+          "url": "https://www.miamiherald.com/sports/article318283451.html",
+          "title": "Florida football injury report: S DJ Coleman, TE Lacota Dippre out for FSU",
+          "publisher": "Miami Herald",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZRC8rSqVYLbSgt4hXBdTZO6wiEj9PnsTKSy4ZlXSeXjS5QZ_TjyEyHYCdpPM"
+        },
+        {
+          "url": "https://floridagators.com/news/2026/11/27/football-game-day-florida-at-florida-state-rivalry-enters-new-era",
+          "title": "Game Day: Florida at Florida State — Rivalry Enters New Era",
+          "publisher": "Florida Gators",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRP4_5BPKS20XmjCb-OEVmdLsEPrqEEebUGF8nhu4GKQVJBt1nAvGB0Kc2H4Nw"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/florida-state-seminoles-vs-no-201500263.html",
+          "title": "Florida State Seminoles vs. No. 20 Florida Gators: Open thread and live game discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQ-IYiJ3oQgHlJX6i9--DRlfJ61wp-f2Z-h9jNs-rKbwMrIHg4o1CsVUU10_8"
+        }
+      ]
+    },
+    {
+      "query": "jazz chisholm jr",
       "approx_searches": "5000+",
+      "published_at": "2026-11-27T20:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/mlb/news/mlb-rumors-jazz-chisholm-jr-padres-yankees/",
+        "https://sports.yahoo.com/mlb/articles/blue-jays-reportedly-closing-deal-205929811.html",
+        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-27/report-blue-jays-jazz-chisholm-jr-close-to-deal"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfMH_15fb_sS0HMh4JteG8ouWUh0b8BLZqDAbOnUezbqVtshOwLjwfIVyCKVM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/mlb/news/mlb-rumors-jazz-chisholm-jr-padres-yankees/",
+          "title": "MLB rumors: Jazz Chisholm Jr. getting interest out West, Yankees looking for catching depth",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQfMH_15fb_sS0HMh4JteG8ouWUh0b8BLZqDAbOnUezbqVtshOwLjwfIVyCKVM"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/articles/blue-jays-reportedly-closing-deal-205929811.html",
+          "title": "Blue Jays reportedly closing in on deal for All-Star Yankees' FA infielder",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSN0vRONSlH1oZLHZnJdjI2KWuo7F5IX-nmrRnYQAitApORnkfVll9N7hulyB4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-27/report-blue-jays-jazz-chisholm-jr-close-to-deal",
+          "title": "Report: Blue Jays, Jazz Chisholm Jr. close to deal",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqk0N3aO_3rJtDjFGgsho320yZcubfOU7Is1-F9n8_GnsZK47KtdpbeXey2iw"
+        }
+      ]
+    },
+    {
+      "query": "alex singleton",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T20:50:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/week-12-black-friday-inactives-denver-broncos-at-pittsburgh-steelers",
+        "https://www.49ers.com/news/morning-reports/morning-report-49ers-top-power-rankings-ahead-of-seahawks-matchup",
+        "https://www.dailynorseman.com/minnesota-vikings-news/102023/week-11-observations-dont-despair-minnesota-vikings"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpMtd5yRFMPzfXKC004SbusCZFaosvFBHiFgAl5S95zefOAGv8Yrzzqzf4tGs",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/week-12-black-friday-inactives-denver-broncos-at-pittsburgh-steelers",
+          "title": "Week 12 Black Friday inactives: Denver Broncos at Pittsburgh Steelers",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpMtd5yRFMPzfXKC004SbusCZFaosvFBHiFgAl5S95zefOAGv8Yrzzqzf4tGs"
+        },
+        {
+          "url": "https://www.49ers.com/news/morning-reports/morning-report-49ers-top-power-rankings-ahead-of-seahawks-matchup",
+          "title": "Morning Report: 49ers Top Power Rankings Ahead of Seahawks Matchup 🗞️",
+          "publisher": "49ers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQAWt_x265UmH-oyMKKEj-7d3jmJ75aY0I62Tjl57d-SUa7nYofz6iixksLJfc"
+        },
+        {
+          "url": "https://www.dailynorseman.com/minnesota-vikings-news/102023/week-11-observations-dont-despair-minnesota-vikings",
+          "title": "Week 11 Observations: Don’t Despair",
+          "publisher": "Daily Norseman",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMbRnxfcP-36Vwa_XBQXTVbxqSzaUHuM5lHH4tskBPrXfsK9Fo9Otc7RisIM0"
+        }
+      ]
+    },
+    {
+      "query": "courtland sutton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:50:00Z",
+      "related_news_urls": [
+        "https://bleacherreport.com/articles/25537547-courtland-suttons-cryptic-ig-photos-go-viral-after-broncos-win-vs-raiders",
+        "https://www.rotoballer.com/player-news/courtland-sutton-a-risky-start-in-week-12/2005684",
+        "https://sports.yahoo.com/nfl/articles/broncos-wr-courtland-sutton-shares-133047878.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz8YMevEQ2v5O1Y1OwvsBdUCzpl15tFSDX4vZ62Y6YviRkXHR946F7XcRR8uM",
+      "image_credit": "Bleacher Report",
+      "news": [
+        {
+          "url": "https://bleacherreport.com/articles/25537547-courtland-suttons-cryptic-ig-photos-go-viral-after-broncos-win-vs-raiders",
+          "title": "Courtland Sutton's Cryptic IG Photos Go Viral After Broncos' Win vs. Raiders",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQz8YMevEQ2v5O1Y1OwvsBdUCzpl15tFSDX4vZ62Y6YviRkXHR946F7XcRR8uM"
+        },
+        {
+          "url": "https://www.rotoballer.com/player-news/courtland-sutton-a-risky-start-in-week-12/2005684",
+          "title": "Courtland Sutton Week 12 Outlook for Fantasy Football (2026)",
+          "publisher": "RotoBaller",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT2-MBzrUoX1F5dx0ZR8MTyauvgqxLsVNboI6oEjeR7oUmD8PtST2Q7gWS3iDY"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/broncos-wr-courtland-sutton-shares-133047878.html",
+          "title": "Broncos WR Courtland Sutton shares his 'highlights' after zero-catch game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_IjH-u73YRigLqpSq8X1WXyIqrOEL6PVgClKVNr9ZT53KRUDr8mL_tzbvgA"
+        }
+      ]
+    },
+    {
+      "query": "air force vs new mexico",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T20:40:00Z",
       "related_news_urls": [
         "https://golobos.com/news/2026/11/26/game-day-info-game-12-lobos-hosting-air-force",
@@ -42,317 +287,72 @@
       ]
     },
     {
-      "query": "rick stockstill",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T20:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/florida-state-coach-leaves-door-170946838.html",
-        "https://247sports.com/college/florida-state/article/rick-stockstill-backs-ashton-daniels-as-florida-states-starting-quarterback-for-final-game-against-florida-293214059/",
-        "https://www.tallahassee.com/story/sports/college/fsu/football/2026/11/22/rick-stockstill-florida-state-seminoles-football-nc-state-florida-preview/92804352007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZbkp4qNBv6VZu70MAIOLswiZUyAeptd0y6OGbZrTI6rG5ojIER_gILXbFomQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/florida-state-coach-leaves-door-170946838.html",
-          "title": "Florida State Coach Leaves Door Open for Major Change Ahead of Florida Showdown",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZbkp4qNBv6VZu70MAIOLswiZUyAeptd0y6OGbZrTI6rG5ojIER_gILXbFomQ"
-        },
-        {
-          "url": "https://247sports.com/college/florida-state/article/rick-stockstill-backs-ashton-daniels-as-florida-states-starting-quarterback-for-final-game-against-florida-293214059/",
-          "title": "Rick Stockstill backs Ashton Daniels as Florida State's starting quarterback for final game against Florida",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkP18IqNrl3B2OeG9SXmzGby10kA0qpcNYOKaz1ezbdLNZgqRH9X5Fki4DM1A"
-        },
-        {
-          "url": "https://www.tallahassee.com/story/sports/college/fsu/football/2026/11/22/rick-stockstill-florida-state-seminoles-football-nc-state-florida-preview/92804352007/",
-          "title": "Rick Stockstill: FSU football has no excuses as focus shifts to Florida",
-          "publisher": "Tallahassee Democrat",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTeMoOwfeZorsHCgwooDFLzey9qyY_KHgkr-gupYxL1ZhmS8gV-rI143gpdcf8"
-        }
-      ]
-    },
-    {
-      "query": "sean payton",
+      "query": "tyler badie",
       "approx_searches": "500+",
       "published_at": "2026-11-27T20:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/athletic/7810146/2026/11/24/jk-dobbins-suspended-broncos-sean-payton/",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/broncos-officially-put-jk-dobbins-on-suspended-list",
-        "https://www.denverbroncos.com/news/broncos-designate-rb-tyler-badie-for-return-from-ir"
+        "https://www.denverbroncos.com/news/broncos-activate-rb-tyler-badie-from-ir-promote-rb-cody-schrader-to-active-roster-ahead-of-week-12-game-vs-steelers",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/26/denver-broncos-news-saivion-jones-placed-on-injured-reserve/92973384007/",
+        "https://www.si.com/nfl/broncos/onsi/broncos-address-j-k-dobbins-fallout-with-11th-hour-roster-moves"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_dLLJ2fCSgFH5wn-VwzkV-9W_M0GO_mUP-VpbfjSdkX3sGZVqVJaDor0cGUs",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMg4ku0uHmtRlWgd9GdiMXBQ0pk9IXvLex1w83cpGw-sTSdffwfeVpuef9FU",
+      "image_credit": "Denver Broncos",
       "news": [
         {
-          "url": "https://www.nytimes.com/athletic/7810146/2026/11/24/jk-dobbins-suspended-broncos-sean-payton/",
-          "title": "Broncos suspend RB J.K. Dobbins vs. Steelers for conduct detrimental to team",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_dLLJ2fCSgFH5wn-VwzkV-9W_M0GO_mUP-VpbfjSdkX3sGZVqVJaDor0cGUs"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/broncos-officially-put-jk-dobbins-on-suspended-list",
-          "title": "Broncos officially put JK Dobbins on suspended list",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQutm6EFhxzO1aop_VFM45M_kn6OeIuuGViGIi99p99rJ_7xPwDfp0J-GlOJE"
-        },
-        {
-          "url": "https://www.denverbroncos.com/news/broncos-designate-rb-tyler-badie-for-return-from-ir",
-          "title": "Broncos designate RB Tyler Badie for return from IR",
+          "url": "https://www.denverbroncos.com/news/broncos-activate-rb-tyler-badie-from-ir-promote-rb-cody-schrader-to-active-roster-ahead-of-week-12-game-vs-steelers",
+          "title": "Broncos activate RB Tyler Badie from IR, promote RB Cody Schrader to active roster ahead of Week 12 game vs. Steelers",
           "publisher": "Denver Broncos",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNGi6BBVaHpF_2FhVRcYQURc0Qp5Bw4wp5Z1Zhp3Jjh_7c6pZ1CgRDlv08HJY"
-        }
-      ]
-    },
-    {
-      "query": "nick herbig",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
-        "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
-        "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI",
-      "image_credit": "Steelers.com",
-      "news": [
-        {
-          "url": "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
-          "title": "Steelers make roster moves ahead of Eagles game",
-          "publisher": "Steelers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMg4ku0uHmtRlWgd9GdiMXBQ0pk9IXvLex1w83cpGw-sTSdffwfeVpuef9FU"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
-          "title": "Steelers get massive defensive boost vs. Broncos",
-          "publisher": "Yahoo Sports",
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/26/denver-broncos-news-saivion-jones-placed-on-injured-reserve/92973384007/",
+          "title": "Broncos place DL on injured reserve, promote RB to 53-man roster",
+          "publisher": "Broncos Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUhPnCvPd2c2g6IzE1LKDrB5Hz5QGETPlqZQx9IYTYkV6ExfrWs4xZMGRrF4A"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtNdYK-mSH43TVJ3rUaW7SEaSZTi1MP0Nvs70MBbFI9EUwPOY37Cn8E9JeLk"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
-          "title": "Steelers activate WR Roman Wilson off IR for Eagles game",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHgRXSi9I3YMbWRTnMKMmPeGh-bmnlT3SeHftVjWyzsuuv-fRYYNr_RGR9N5o"
-        }
-      ]
-    },
-    {
-      "query": "germie bernard",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/steelers-rookie-continues-grow-increased-205425773.html",
-        "https://steelersnow.com/steelers-rookie-wr-among-team-captains-vs-broncos/",
-        "https://www.steelernation.com/2026/11/20/steelers-germie-bernard-unexpected-reason"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx-EXZubEIk6p6-pHUM2Y1XTYt5imy5APFgGtZ50QwzwlQl100m0_wF2g_J_k",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/steelers-rookie-continues-grow-increased-205425773.html",
-          "title": "Steelers Rookie Continues to Grow with Increased Opportunities",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTx-EXZubEIk6p6-pHUM2Y1XTYt5imy5APFgGtZ50QwzwlQl100m0_wF2g_J_k"
-        },
-        {
-          "url": "https://steelersnow.com/steelers-rookie-wr-among-team-captains-vs-broncos/",
-          "title": "Steelers Rookie WR Among Team Captains vs. Broncos",
-          "publisher": "Steelers Now",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAqh-sGvN9m8Gi0a1UsDY-KzcI-fIm7XBAJpHjQcF6nAtjfpNHBW6KMslgD0k"
-        },
-        {
-          "url": "https://www.steelernation.com/2026/11/20/steelers-germie-bernard-unexpected-reason",
-          "title": "Steelers' Germie Bernard Could Seriously Benefit From Returning Players For An Unexpected Reason",
-          "publisher": "Steeler Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTi6gsQffchK4itcnhAHRcQvUb78TLpRq0BlHkKWok7I5uhugsJFYB6rw88Dh8"
-        }
-      ]
-    },
-    {
-      "query": "dk metcalf suspension",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.nfl.com/news/steelers-dk-metcalf-not-expected-to-be-suspended-after-ejection-wr-subject-to-fines",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dk-metcalf-should-have-been-ejected-earlier-than-he-was-for-contact-with-official",
-        "https://www.espn.com/nfl/story/_/id/50564475/steelers-wr-dk-metcalf-ejected-game-eagles"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgmeXXEs2WM23CCZM6ZKmft54sbbPukXLJ5ehIeZfokC1X7P1XOQHPwzIMmeQ",
-      "image_credit": "NFL.com",
-      "news": [
-        {
-          "url": "https://www.nfl.com/news/steelers-dk-metcalf-not-expected-to-be-suspended-after-ejection-wr-subject-to-fines",
-          "title": "NFL Network: Steelers' DK Metcalf not expected to be suspended after ejection; WR subject to fines",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQgmeXXEs2WM23CCZM6ZKmft54sbbPukXLJ5ehIeZfokC1X7P1XOQHPwzIMmeQ"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dk-metcalf-should-have-been-ejected-earlier-than-he-was-for-contact-with-official",
-          "title": "DK Metcalf should have been ejected earlier than he was, for contact with official",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpI4EMDbbzQzFCi_6peVIv_ky4Y5Mt9p9NIsLhLJVD_wuj9dEAKdV8RZn6DYM"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50564475/steelers-wr-dk-metcalf-ejected-game-eagles",
-          "title": "Steelers' DK Metcalf ejected for trying to poke Eagles' Cooper DeJean in eye",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyV9zS01Orhza6l2JotoQLptHcRGEb91CMQVdaOkob5eHBFUyqvSASofQrjUw"
-        }
-      ]
-    },
-    {
-      "query": "kirk herbstreit",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
-        "https://sports.yahoo.com/college-football/articles/espn-makes-surprise-statement-kirk-134441327.html",
-        "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCqiaRSNnaeJIx1PVFbqhAE7J6hZtwUSLStN3qx96nxnNmmcRj1SoU9xpNtk",
-      "image_credit": "Front Office Sports",
-      "news": [
-        {
-          "url": "https://frontofficesports.com/article/kirk-herbstreit-espn-new-deal/",
-          "title": "Kirk Herbstreit Expected to Stay at ESPN Long-Term",
-          "publisher": "Front Office Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsCqiaRSNnaeJIx1PVFbqhAE7J6hZtwUSLStN3qx96nxnNmmcRj1SoU9xpNtk"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/espn-makes-surprise-statement-kirk-134441327.html",
-          "title": "ESPN Makes Surprise Statement on Kirk Herbstreit's 'College GameDay' Contract Future",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDjIE7sCkja1y6Cq3t1VYJhVtMp4-LUxgqGSgbxnuvxaGeWLqZq21saAvLCk0"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537631-kirk-herbstreit-contract-agreement-rumors-denied-espn-timeline-deal-updated-network",
-          "title": "Kirk Herbstreit Contract Agreement Rumors Denied by ESPN, Timeline for Deal Updated by Network",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7P2fTgB21VXH0AmChACV6bUNFOmJf2_3-842Mfl7nBB9iy_4u14_305ttgw4"
-        }
-      ]
-    },
-    {
-      "query": "will howard",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/football/news/steelers-drew-allar-emergency-third-qb-for-week-12/",
-        "https://triblive.com/sports/drew-allar-in-uniform-for-1st-time-will-howard-just-1-snap-away-from-playing-for-steelers-vs-broncos/",
-        "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-qb2-decision-will-howard-drew-allar"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/football/news/steelers-drew-allar-emergency-third-qb-for-week-12/",
-          "title": "Steelers' Drew Allar: Emergency third QB for Week 12",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
-        },
-        {
-          "url": "https://triblive.com/sports/drew-allar-in-uniform-for-1st-time-will-howard-just-1-snap-away-from-playing-for-steelers-vs-broncos/",
-          "title": "Drew Allar in uniform for 1st time, Will Howard just 1 snap away from playing for Steelers vs. Broncos",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSxXegl_m3da2eCA0BdMPoR9A93hRRKUKzA_MLmRLaPz6hJ-aNrOp_v_c19GFA"
-        },
-        {
-          "url": "https://www.si.com/nfl/steelers/onsi/pittsburgh-steelers-qb2-decision-will-howard-drew-allar",
-          "title": "Steelers Make QB2 Decision Between Will Howard, Drew Allar",
+          "url": "https://www.si.com/nfl/broncos/onsi/broncos-address-j-k-dobbins-fallout-with-11th-hour-roster-moves",
+          "title": "Broncos Address J.K. Dobbins Fallout With 11th-Hour Roster Moves",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgd81-x2vdlbXGq-nkjMs7vdXU13j7qd-j7m2PIcQfadPGZkvbfBoEncZGil8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwuE53pYHcAgNfD3IaZHHvUX1PqA3VSUpf07wDeItTpvX02s7RLPWikVLlUqs"
         }
       ]
     },
     {
-      "query": "mason rudolph myles garrett",
+      "query": "joe moorhead",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T20:30:00Z",
+      "published_at": "2026-11-27T20:40:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/browns/2026/11/welcome-to-the-bizarro-afc-north-where-the-browns-are-standing-out.html",
-        "https://www.cleveland19.com/2026/11/25/cleveland-browns-news-rumors-112526-thanks-im-full/",
-        "https://www.dawgsbynature.com/cleveland-browns-news/138966/cleveland-browns-news-the-afc-north-is-a-wacky-and-wild-place"
+        "https://www.espn.com/college-football/story/_/id/50614041/akron-coach-joe-moorhead-resigns-pursue-other-opportunities",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/joe-moorhead-akron-football-coach-leaves-social-media/92981020007/",
+        "https://onwardstate.com/2026/11/27/former-penn-state-football-offensive-coordinator-joe-moorehead-parting-ways-with-akron/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVutSfa5_NSqjqSnqLwaViVSZmL0OV1DAwu3CT7zI8JQT05gMc6PENv3P-IMI",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0JywFt1RNvSHIXZAcMpWdM4XGfBcdQouhv6Yk9cFZPh89GkEsHTcAn0qvS5c",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.cleveland.com/browns/2026/11/welcome-to-the-bizarro-afc-north-where-the-browns-are-standing-out.html",
-          "title": "Welcome to the bizarro AFC North, where the Browns are standing out: Dan Labbe",
-          "publisher": "Cleveland.com",
+          "url": "https://www.espn.com/college-football/story/_/id/50614041/akron-coach-joe-moorhead-resigns-pursue-other-opportunities",
+          "title": "Akron coach Joe Moorhead resigns after 5 seasons to pursue other opportunities",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVutSfa5_NSqjqSnqLwaViVSZmL0OV1DAwu3CT7zI8JQT05gMc6PENv3P-IMI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0JywFt1RNvSHIXZAcMpWdM4XGfBcdQouhv6Yk9cFZPh89GkEsHTcAn0qvS5c"
         },
         {
-          "url": "https://www.cleveland19.com/2026/11/25/cleveland-browns-news-rumors-112526-thanks-im-full/",
-          "title": "Cleveland Browns News and Rumors 11/25/26: Thanks, I’m Full",
-          "publisher": "Cleveland 19 News",
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/joe-moorhead-akron-football-coach-leaves-social-media/92981020007/",
+          "title": "Joe Moorhead announces he’s leaving Akron football minutes after season-ending loss",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJK8UH_WStDtu3pC6QtAcrgiEbH2GMlQY85af6T0MAx6IzOkUbWHCZk0SmcFQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTYsjsHXma5dJG_Tbf9mrsfwOYic7HYcL_8cPZ1RmEKrB6dR5U77WHWjyGmsWo"
         },
         {
-          "url": "https://www.dawgsbynature.com/cleveland-browns-news/138966/cleveland-browns-news-the-afc-north-is-a-wacky-and-wild-place",
-          "title": "Cleveland Browns news: The AFC North is a wacky and wild place",
-          "publisher": "Dawgs By Nature",
+          "url": "https://onwardstate.com/2026/11/27/former-penn-state-football-offensive-coordinator-joe-moorehead-parting-ways-with-akron/",
+          "title": "Former Penn State Football Offensive Coordinator Joe Moorehead Parting Ways With Akron",
+          "publisher": "Onward State",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdcOKWmiLsPL-8bZGpo9fxsFYlpl6Br25_MMAJi2YnbM_CBHkbMo3SAF6M-iY"
-        }
-      ]
-    },
-    {
-      "query": "ohio football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T20:30:00Z",
-      "related_news_urls": [
-        "https://www.dispatch.com/story/sports/college/football/2026/11/27/ohio-state-vs-michigan-3-keys-to-buckeyes-victory/92961206007/",
-        "https://www.nbc4i.com/sports/buckeyes/can-selling-tickets-to-the-game-pay-off-season-ticket-costs/",
-        "https://www.10tv.com/video/sports/football/ohio-state-football/bold-predictions-ohio-state-michigan-meet-in-a-game-that-means-nothing-except-for-everything/530-c181d729-a417-4184-a948-bd4e238c0e09"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlie2RZSW-uDeQa8ckpQ2UsDH9cJE4sVTtyTQKtKyonZH8556u2K-CJ6jcWVs",
-      "image_credit": "The Columbus Dispatch",
-      "news": [
-        {
-          "url": "https://www.dispatch.com/story/sports/college/football/2026/11/27/ohio-state-vs-michigan-3-keys-to-buckeyes-victory/92961206007/",
-          "title": "How can Ohio State football beat Michigan? 3 keys for annual rivalry game",
-          "publisher": "The Columbus Dispatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQlie2RZSW-uDeQa8ckpQ2UsDH9cJE4sVTtyTQKtKyonZH8556u2K-CJ6jcWVs"
-        },
-        {
-          "url": "https://www.nbc4i.com/sports/buckeyes/can-selling-tickets-to-the-game-pay-off-season-ticket-costs/",
-          "title": "Can selling tickets to The Game pay off season ticket costs?",
-          "publisher": "NBC4 WCMH-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeWFx18Rxux8ofricJSrTNbIjzj_MEqsge9WFsJuP5k5NksqeNTgi6zh4rioE"
-        },
-        {
-          "url": "https://www.10tv.com/video/sports/football/ohio-state-football/bold-predictions-ohio-state-michigan-meet-in-a-game-that-means-nothing-except-for-everything/530-c181d729-a417-4184-a948-bd4e238c0e09",
-          "title": "Bold Predictions: Ohio State, Michigan meet in a game that means nothing except for everything",
-          "publisher": "10TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsOFkJcl1FWYFz9QtFBYintWOo_6P7y8NiOzwJaMnUw4gbOIkZZycPZ0NBVT8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLzn-4gy1uU7azhrXws2dDvgax4YuyK37cMqHPpKIDBimrXJ1TPmuufhQMG9Y"
         }
       ]
     }
