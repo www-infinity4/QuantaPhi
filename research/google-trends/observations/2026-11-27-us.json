@@ -3,41 +3,286 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T11:01:18.915796Z",
+  "checked_at": "2026-11-27T11:31:09.241076Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "strobe talbott",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T11:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
+        "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/",
+        "https://www.theguardian.com/us-news/2026/nov/26/strobe-talbott-time-secretary-of-state-dead"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWB8aV8FkNC_Kw0tLg3BQrFOFyDKB6os_N3KOZWAKJsACHvlGV4p7SCxs31fs",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
+          "title": "Strobe Talbott, Journalist Who Joined Clinton’s State Department, Has Died",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWB8aV8FkNC_Kw0tLg3BQrFOFyDKB6os_N3KOZWAKJsACHvlGV4p7SCxs31fs"
+        },
+        {
+          "url": "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/",
+          "title": "Strobe Talbott, who helped shape Clinton-era foreign policy, dies at 80",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyg5ZD9aEVPxYXi9PObp1ABalaIdMuWMnnme5fNA6pP7sJo-o-0kbDHPOgmHw"
+        },
+        {
+          "url": "https://www.theguardian.com/us-news/2026/nov/26/strobe-talbott-time-secretary-of-state-dead",
+          "title": "Strobe Talbott, Time magazine reporter and deputy US secretary of state, dies aged 80",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjRMMKpEvi54CP3OMtMgrqj3AiW8BvMG8YjNfdGO6WJ9_HzyAW0buWJykUSU"
+        }
+      ]
+    },
+    {
+      "query": "walmart black friday pokemon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T11:10:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/articles/pokemon-deluxe-character-guide-book-deal-black-friday-2026-gift-idea",
+        "https://www.pcgamer.com/games/card-games/i-managed-to-convince-my-boss-to-let-me-talk-about-pokemon-tcg-on-pc-gamer-so-in-return-here-are-all-the-best-deals-i-found/",
+        "https://www.gamingbible.com/news/platform/nintendo/pokemon-black-friday-tcg-lego-switch-game-deals-741580-20261126"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHHpRvT3eWnJ3zIUxZsFA0IF6JlbURd-_FlIVO9uxSbOg4CSe4Z5zjT8tEDDM",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/articles/pokemon-deluxe-character-guide-book-deal-black-friday-2026-gift-idea",
+          "title": "This Official Deluxe Pokémon Guide Book Is a Super-Effective Gift — Now Cheaper Than Ever for Black Friday",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHHpRvT3eWnJ3zIUxZsFA0IF6JlbURd-_FlIVO9uxSbOg4CSe4Z5zjT8tEDDM"
+        },
+        {
+          "url": "https://www.pcgamer.com/games/card-games/i-managed-to-convince-my-boss-to-let-me-talk-about-pokemon-tcg-on-pc-gamer-so-in-return-here-are-all-the-best-deals-i-found/",
+          "title": "I managed to convince my boss to let me talk about Pokémon TCG on PC Gamer, so in return here are all the best deals I found",
+          "publisher": "PC Gamer",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXIEdsXDi5EwkGl__5o2LgQFLwvg-PE4h8OuMC_u7g-bBhfzkyAgVcsLMLJvA"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/platform/nintendo/pokemon-black-friday-tcg-lego-switch-game-deals-741580-20261126",
+          "title": "Pokémon Black Friday sale: Battle Academy trading cards, LEGO, Switch games, and merch slashed at Amazon",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo2FVCRWbOrrqsKV8u7uENwEfK1LGMj5SeJMR5Zo0YlZ3BdGSOE4mklDVNntI"
+        }
+      ]
+    },
+    {
+      "query": "tj maxx black friday 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T11:10:00Z",
+      "related_news_urls": [
+        "https://www.realsimple.com/tj-maxx-black-friday-fashion-deals-2026-12179753",
+        "https://www.travelandleisure.com/tj-maxx-double-discount-clearance-sale-november-2026-12275611",
+        "https://www.aol.com/articles/ive-seen-lot-black-friday-174311000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7KVbjQXwUjg12QkJRjQpROrOLlfc0-Me-rwv9yD1lNXMD4oChoz4C-p5wQMI",
+      "image_credit": "Real Simple",
+      "news": [
+        {
+          "url": "https://www.realsimple.com/tj-maxx-black-friday-fashion-deals-2026-12179753",
+          "title": "We Came to TJ Maxx’s Black Friday Sale for the Sweater Dresses, but Left With Boots, Bags, and More in Our Cart",
+          "publisher": "Real Simple",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7KVbjQXwUjg12QkJRjQpROrOLlfc0-Me-rwv9yD1lNXMD4oChoz4C-p5wQMI"
+        },
+        {
+          "url": "https://www.travelandleisure.com/tj-maxx-double-discount-clearance-sale-november-2026-12275611",
+          "title": "TJ Maxx’s Secret Clearance Section Is Double Discounted for Black Friday—Shop the 14 Best Deals From $10",
+          "publisher": "Travel + Leisure",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPs1G2a5MMJOKM9wFrgRBEL9v9Ra-PScWCj9_xG0ShKrZHEs52A4oNm9Za9Y"
+        },
+        {
+          "url": "https://www.aol.com/articles/ive-seen-lot-black-friday-174311000.html",
+          "title": "I've Seen a Lot of Black Friday Discounts, but These 16 TJ Maxx and Marshalls Deals Take the Cake",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDVytWgOLiK-fshATzIrccPs80GikpmIAzZKUNiephMpeEsITt0dNceJXCl1Y"
+        }
+      ]
+    },
+    {
+      "query": "kaley cuoco",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T11:10:00Z",
+      "related_news_urls": [
+        "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
+        "https://www.instyle.com/kaley-cuoco-daughter-matilda-follows-mom-footsteps-12282535",
+        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/kaley-cuoco-shares-glimpses-of-thanksgiving-celebrations-with-daughters-matilda-and-philomena-i-just-wish-she-had-more-fun/articleshow/136207547.cms"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
+          "title": "Kaley Cuoco Introduces 6-Week-Old Philomena to DWTS, as Her Sister Matilda, 3, Dresses Up for Thanksgiving",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8"
+        },
+        {
+          "url": "https://www.instyle.com/kaley-cuoco-daughter-matilda-follows-mom-footsteps-12282535",
+          "title": "Kaley Cuoco’s Daughter Matilda, 3, Follows in Her Mom’s Footsteps in Her First Play at Thanksgiving",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrB76vhho44TlwxhjUCnUdiIHcrQOuR3d6pMBRg07WvO2CuwkdiNczkIzHOWw"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/kaley-cuoco-shares-glimpses-of-thanksgiving-celebrations-with-daughters-matilda-and-philomena-i-just-wish-she-had-more-fun/articleshow/136207547.cms",
+          "title": "Kaley Cuoco shares glimpses of Thanksgiving celebrations with daughters Matilda and Philomena: ‘I just WI",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt6g3TmRwCCOBDfNuxyJ_441cm_VYQ2__qzsggk3_Mab2yQRhfyNjI3LueZRQ"
+        }
+      ]
+    },
+    {
+      "query": "bangladesh a vs pakistan a",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T11:00:00Z",
+      "related_news_urls": [
+        "https://wenewsenglish.com/pakistan-bangladesh-rising-stars-semi-final/",
+        "https://www.ai11.in/cricket/series/asia-cup-rising-stars-2026-27/match/bangladesh-a-vs-pakistan-shaheen-2nd-semi-final-2026",
+        "https://robinhood.com/us/en/prediction-markets/cricket/events/pakistan-a-vs-bangladesh-a-nov-27-2026/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFi3EGy1g2ea5pGQNQIgSkc32Ef1dLsEtU2g-NtXcOs1hgPdAmx9nB47QTOkQ",
+      "image_credit": "WE News English",
+      "news": [
+        {
+          "url": "https://wenewsenglish.com/pakistan-bangladesh-rising-stars-semi-final/",
+          "title": "Bangladesh A Elect To Bat First Against Pakistan Shaheens In Rising Stars Semi-Final",
+          "publisher": "WE News English",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFi3EGy1g2ea5pGQNQIgSkc32Ef1dLsEtU2g-NtXcOs1hgPdAmx9nB47QTOkQ"
+        },
+        {
+          "url": "https://www.ai11.in/cricket/series/asia-cup-rising-stars-2026-27/match/bangladesh-a-vs-pakistan-shaheen-2nd-semi-final-2026",
+          "title": "SHA vs BAN-A 2nd Semi-Final: Pitch Report, Player Stats & Form",
+          "publisher": "AI11",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR75QeOM75nNIdynTP7fr0a_VlEfFs0UMaX6HwHzCqWDb-oSyTKlVnotVKokpE"
+        },
+        {
+          "url": "https://robinhood.com/us/en/prediction-markets/cricket/events/pakistan-a-vs-bangladesh-a-nov-27-2026/",
+          "title": "November 27, 2026: Pakistan A vs Bangladesh A Cricket Prediction Market",
+          "publisher": "Robinhood",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSX4gQJuw3WPW69AjAvn_HMdgtZhK6sGtL88fve051ieBiJqQdZr84EGGXElZM"
+        }
+      ]
+    },
+    {
+      "query": "academy black friday deals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T11:00:00Z",
+      "related_news_urls": [
+        "https://wset.com/lifestyle/living-in-the-heart-of-virginia/black-friday-just-got-sweeter-with-academy-sports-outdoors",
+        "https://www.houstonchronicle.com/news/houston-texas/trending/article/academy-sports-black-friday-22548057.php",
+        "https://shopping.yahoo.com/deals/articles/academy-sports-outdoors-offer-bonus-145439982.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6IU-8k8TEgSxOB_b7KA4Iod9CR6mE3aFsG8LUEa5GTYDhf9S_rmwcEb_Wq8M",
+      "image_credit": "WSET",
+      "news": [
+        {
+          "url": "https://wset.com/lifestyle/living-in-the-heart-of-virginia/black-friday-just-got-sweeter-with-academy-sports-outdoors",
+          "title": "Black Friday Just Got Sweeter with Academy Sports & Outdoors",
+          "publisher": "WSET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6IU-8k8TEgSxOB_b7KA4Iod9CR6mE3aFsG8LUEa5GTYDhf9S_rmwcEb_Wq8M"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-texas/trending/article/academy-sports-black-friday-22548057.php",
+          "title": "Houston Academy stores offer bonus cards worth up to $500 on Black Friday",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7OmiGavRrr7M43cp_NndmcdVVLeJDNPuCda1FdUb5C8ES9y4PrlwhD6wzz9k"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/articles/academy-sports-outdoors-offer-bonus-145439982.html",
+          "title": "Academy Sports + Outdoors to offer bonus cards to first 100 Black Friday shoppers",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTefuPwn7M4ZPsW-xZ3V94WJ7fkfXZiaCz9AYyaj55zKXLhMMUoeMzFC0tIVo"
+        }
+      ]
+    },
+    {
+      "query": "walmart pokemon black friday",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T10:50:00Z",
+      "related_news_urls": [
+        "https://blog.paniniamerica.net/score-exclusive-collectibles-through-paninis-black-friday-program/",
+        "https://www.si.com/collectibles/2026-black-friday-cyber-monday-cards-collectibles-deal-sales-tracker",
+        "https://www.sportscollectorsdaily.com/panini-launches-2026-black-friday-free-pack-promotion/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjwa8Pfc5BgMZWmRC6S5fWk6VQATYCUtcxx0mnn3q_ZOmek_GCExYTlN3CyUs",
+      "image_credit": "Panini America",
+      "news": [
+        {
+          "url": "https://blog.paniniamerica.net/score-exclusive-collectibles-through-paninis-black-friday-program/",
+          "title": "Score Exclusive Collectibles Through Panini’s Black Friday Program",
+          "publisher": "Panini America",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjwa8Pfc5BgMZWmRC6S5fWk6VQATYCUtcxx0mnn3q_ZOmek_GCExYTlN3CyUs"
+        },
+        {
+          "url": "https://www.si.com/collectibles/2026-black-friday-cyber-monday-cards-collectibles-deal-sales-tracker",
+          "title": "2026 Black Friday Tracker: Pokemon, Trading Cards, and Collectibles",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx5_7JvbhqeqQKTCQZARDsNKyaonlOMxDUzccA2zqt8stg9WTE0rLOL1tkdi0"
+        },
+        {
+          "url": "https://www.sportscollectorsdaily.com/panini-launches-2026-black-friday-free-pack-promotion/",
+          "title": "Panini Launches 2026 Black Friday Free Pack Promotion",
+          "publisher": "Sports Collectors Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRp3U8uX19SQg3BKwP2k6m69KhEK4v-_9wLWqNJGPTtOa7Ut0mLOy2IWTaVaM"
+        }
+      ]
+    },
     {
       "query": "marc marquez",
       "approx_searches": "200+",
       "published_at": "2026-11-27T10:40:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
-        "https://www.motogp.com/en/videos/2026/11/27/marc-marquez-announces-his-retirement-from-motogp/1268532",
-        "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o"
+        "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o",
+        "https://www.motogp.com/en/news/2026/11/27/marc-marquez-announces-retirement-from-motogp/1268528",
+        "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbD99t_mg07bXRIle1owoQeKlIFy__WOVxFqTPWG4_0IjVQLFmniyz3Td06uA",
+      "image_credit": "BBC",
       "news": [
-        {
-          "url": "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
-          "title": "MotoGP champion Marquez to retire after 2026 season",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4"
-        },
-        {
-          "url": "https://www.motogp.com/en/videos/2026/11/27/marc-marquez-announces-his-retirement-from-motogp/1268532",
-          "title": "Marc Marquez announces his retirement from MotoGP",
-          "publisher": "motogp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqlArzyfaOpu0WIFxO-TZ5vKWALsBObH9D8rm98N8LPPb3_vxPxBYc5YW47Co"
-        },
         {
           "url": "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o",
           "title": "MotoGP: Marc Marquez to retire after final race of 2026 season",
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbD99t_mg07bXRIle1owoQeKlIFy__WOVxFqTPWG4_0IjVQLFmniyz3Td06uA"
+        },
+        {
+          "url": "https://www.motogp.com/en/news/2026/11/27/marc-marquez-announces-retirement-from-motogp/1268528",
+          "title": "Marc Marquez announces retirement from MotoGP",
+          "publisher": "motogp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR3yPWRil4ItZYktroaZKmaEg_I2phPdOre-NiaFg5ZFLx1wDpXJGO_9hPmII"
+        },
+        {
+          "url": "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
+          "title": "MotoGP champion Marquez to retire after 2026 season",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4"
         }
       ]
     },
@@ -77,50 +322,15 @@
       ]
     },
     {
-      "query": "gta6 walkthrough",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T10:00:00Z",
-      "related_news_urls": [
-        "https://www.ign.com/wikis/gta-6/Chapter_2_Walkthrough_and_Guide",
-        "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
-        "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfzNz_UmShCmFPMJgA0oi1NGpm8GeiYqdHUxmIDbiusMtDtWmhxMN7PcGpgNM",
-      "image_credit": "IGN",
-      "news": [
-        {
-          "url": "https://www.ign.com/wikis/gta-6/Chapter_2_Walkthrough_and_Guide",
-          "title": "Chapter 2 Walkthrough and Guide",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfzNz_UmShCmFPMJgA0oi1NGpm8GeiYqdHUxmIDbiusMtDtWmhxMN7PcGpgNM"
-        },
-        {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
-          "title": "How Long Is Chapter 2 in GTA 6? All Missables and Mission List",
-          "publisher": "VICE",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfa4x4lE5BSjIx_nroZlYhkGCHr0Mr5ROv81qkxH4_h0VLzofYfb2n9w10Y8"
-        },
-        {
-          "url": "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/",
-          "title": "GTA 6 Chapter 2 Mission List - Every Mission in GTA 6 Chapter 2 in Order",
-          "publisher": "Insider Gaming",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkKkgDQJXS0dkXcfP1eTcTEqYXj_WSZC2NJiWt9kLRF_0qNPlEEx6Wqyp6BV8"
-        }
-      ]
-    },
-    {
       "query": "winter weather advisory",
-      "approx_searches": "1000+",
+      "approx_searches": "500+",
       "published_at": "2026-11-27T10:00:00Z",
       "related_news_urls": [
         "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
         "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
-        "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/"
+        "https://sumnercountysource.com/11-26-26-moderate-snowfall-with-highs-near-47-winds-up-to-12-current-temp-36-7-precip-total-1-06-inches-expected/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIgfdVjCnKcLxxdaq1ZfPBoy_zfli0PVY0gj3bImItrnWfGftssyAYS4aFUB4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E",
       "image_credit": "News Channel 5 Nashville",
       "news": [
         {
@@ -128,7 +338,7 @@
           "title": "November 26, 2026: Winter Weather Advisory for most of Middle TN, Winter Storm Warning for the Plateau.",
           "publisher": "News Channel 5 Nashville",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIgfdVjCnKcLxxdaq1ZfPBoy_zfli0PVY0gj3bImItrnWfGftssyAYS4aFUB4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E"
         },
         {
           "url": "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
@@ -138,205 +348,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY"
         },
         {
-          "url": "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/",
-          "title": "11/26/26: Moderate Rain and 43, With Highs of 46 and Lows Near 39; 100% Precip Chance Today, Drizzle Tonight",
-          "publisher": "Davidson County Source",
+          "url": "https://sumnercountysource.com/11-26-26-moderate-snowfall-with-highs-near-47-winds-up-to-12-current-temp-36-7-precip-total-1-06-inches-expected/",
+          "title": "11/26/26: Moderate Snowfall With Highs Near 47, Winds Up to 12; Current Temp 36.7, Precip Total 1.06 Inches Expected",
+          "publisher": "Sumner County Source",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYteAIzGw4zJ5CEwclqlMo0m6gaRBb05qHSA_2GC-k4wzNcf2wZsP5zF4kUc"
-        }
-      ]
-    },
-    {
-      "query": "sun",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T10:00:00Z",
-      "related_news_urls": [
-        "https://lasvegassun.com/news/2026/nov/27/coronado-gorman-headline-suns-preseason-boys-baske/",
-        "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
-        "https://www.wqow.com/weather/forecast/clearing-skies-bring-warmer-temperatures/article_fdff0bda-3efa-524f-8462-729d5b86140a.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivvuPDMgMqfRI1aqg8lLBKq8JGywhvzFWiFFYFH9I3CKx_gpF-FHKf3qiSWA",
-      "image_credit": "Las Vegas Sun",
-      "news": [
-        {
-          "url": "https://lasvegassun.com/news/2026/nov/27/coronado-gorman-headline-suns-preseason-boys-baske/",
-          "title": "Coronado, Bishop Gorman headline Sun's preseason boys' basketball top 10",
-          "publisher": "Las Vegas Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivvuPDMgMqfRI1aqg8lLBKq8JGywhvzFWiFFYFH9I3CKx_gpF-FHKf3qiSWA"
-        },
-        {
-          "url": "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
-          "title": "FIRST ALERT: Cool and breezy Black Friday, plenty of sun this weekend",
-          "publisher": "WMBF",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSZg7pzWk9_HtMCvnSkU5CyZYflq1VToB4VYWOqeZc46eJ3DuQI5S2tMILGLE"
-        },
-        {
-          "url": "https://www.wqow.com/weather/forecast/clearing-skies-bring-warmer-temperatures/article_fdff0bda-3efa-524f-8462-729d5b86140a.html",
-          "title": "Clearing skies bring warmer temperatures",
-          "publisher": "WQOW",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSPg7R-8VeDkzr76VnKLLOKQrNi-UE_Y9x0uOTYm0MZZEPJUOhtBRX2b3XV0I"
-        }
-      ]
-    },
-    {
-      "query": "gma",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T09:40:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-        "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-        "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-          "title": "Deals & Steals for Thanksgiving",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-          "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
-        },
-        {
-          "url": "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/",
-          "title": "'GMA' Deals & Steals on gifts $20 and under",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_7PcZLhaxsvZt_2mEVq-Ibid8b_NFa58TwhF4UTlsYIa19CvhTA2o_xSafWI"
-        }
-      ]
-    },
-    {
-      "query": "is the stock market open today",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T09:10:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/",
-        "https://www.nj.com/news/2026/11/is-the-stock-market-open-on-black-friday-2026.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-          "title": "Is the stock market open on Thanksgiving and Black Friday?",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
-        },
-        {
-          "url": "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/",
-          "title": "Stock Market Trading Hours For Thanksgiving And Black Friday",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpe143F8JfRZZeOstU_9EJPIcugmFrPxUmPK02-s9V_KDENNsbP28eyAHQ3bA"
-        },
-        {
-          "url": "https://www.nj.com/news/2026/11/is-the-stock-market-open-on-black-friday-2026.html",
-          "title": "Is the stock market open on Black Friday 2026?",
-          "publisher": "NJ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Nr5efbIyytZWhnMotw1-8Q3Yzz26PuQB3EtMNHMzs3Zpvd6q2_D-J1BQXd8"
-        }
-      ]
-    },
-    {
-      "query": "what time does old navy open on black friday",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T08:50:00Z",
-      "related_news_urls": [
-        "https://shopping.yahoo.com/deals/breaking-news/article/old-navys-black-friday-sale-has-nearly-everything-at-half-off-including-its-popular-wide-leg-jeans-212411652.html",
-        "https://demokratis.co.id/en/old-navy-black-friday-sale",
-        "https://www.today.com/shop/old-navy-black-friday-2026-sale-rcna610928"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuZROYDDjvUNceAv4lwdzBVrz3UzBtPMAV_AGzQlDOOU9UaP649FntZlY1BM",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/article/old-navys-black-friday-sale-has-nearly-everything-at-half-off-including-its-popular-wide-leg-jeans-212411652.html",
-          "title": "Old Navy's Black Friday sale has nearly everything at half off, including its popular wide-leg jeans",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuZROYDDjvUNceAv4lwdzBVrz3UzBtPMAV_AGzQlDOOU9UaP649FntZlY1BM"
-        },
-        {
-          "url": "https://demokratis.co.id/en/old-navy-black-friday-sale",
-          "title": "Old Navy Launches Black Friday Sale With Discounts Up to 50 Percent",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxaWGwoah3w57Lm_W23MjA9HK3EEwYjTA5woboenrCwPQtKPKtXEWzJVcxzE"
-        },
-        {
-          "url": "https://www.today.com/shop/old-navy-black-friday-2026-sale-rcna610928",
-          "title": "Shop Old Navy’s Black Friday Deals on Cozy Sweaters, Boots and More From $3",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfboJQN-Bb0gwa9zH50gIQDlwb9ZIWEy94CEbpPMuDwhFKSqoZ7uCCU-qneI0"
-        }
-      ]
-    },
-    {
-      "query": "russian ukraine war",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T08:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/c820q9wgrpyyo",
-        "https://www.theguardian.com/world/live/2026/nov/27/zelenskyy-putin-trump-comments-russia-ukraine-latest-news-updates",
-        "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9KZAgM2abip1rQu1Y3aTuS6hp8R2RDrnypNQstQT5tgX0aQohKZPX18w2hXU",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/c820q9wgrpyyo",
-          "title": "Zelensky tells BBC US too focused on Middle East and not pushing Russia hard enough",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9KZAgM2abip1rQu1Y3aTuS6hp8R2RDrnypNQstQT5tgX0aQohKZPX18w2hXU"
-        },
-        {
-          "url": "https://www.theguardian.com/world/live/2026/nov/27/zelenskyy-putin-trump-comments-russia-ukraine-latest-news-updates",
-          "title": "Trump calling Putin ‘friend’ like declaring friendship with Hitler during WW2, Zelenskyy says – Europe live",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnqRI2izBA44iR2dfEduF_BbDIADYUBUNhLLOZYG-xGriW6prsjcFkvfIXxFg"
-        },
-        {
-          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
-          "title": "Zelensky on Trump calling Putin ‘friend’: ‘Same as somebody saying about Hitler’ in WWII",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxFlDTwUrhyoiCmrQHYJ-Fw0kNnHPjaOqPZoyVlUg38J6nDLGx7rbc4PjWc8"
-        }
-      ]
-    },
-    {
-      "query": "shead",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T08:20:00Z",
-      "related_news_urls": [
-        "https://raptorsrapture.com/raptors-davion-mitchell-trade-looks-awful-as-he-emerges-as-the-point-guard-they-need"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmepXgtzdPsLtDp2RPE_Ebxg22QnpY0gHZtmvbxub08xWwqxmRbV-QsSVyZdU",
-      "image_credit": "Raptors Rapture",
-      "news": [
-        {
-          "url": "https://raptorsrapture.com/raptors-davion-mitchell-trade-looks-awful-as-he-emerges-as-the-point-guard-they-need",
-          "title": "Raptors' Davion Mitchell trade looks awful as he emerges as the point guard they need",
-          "publisher": "Raptors Rapture",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmepXgtzdPsLtDp2RPE_Ebxg22QnpY0gHZtmvbxub08xWwqxmRbV-QsSVyZdU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3trUZ19y0v4qMYU6azqJt-6bEGMJYmiObDdrnkkjbYY-RZDdLts_XdrLnhk"
         }
       ]
     }
