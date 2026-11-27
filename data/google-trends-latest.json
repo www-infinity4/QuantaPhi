@@ -3,9 +3,184 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T13:01:21.960091Z",
+  "checked_at": "2026-11-27T13:31:05.644453Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "cyberattack",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T13:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack",
+        "https://www.theguardian.com/football/2026/nov/26/fifa-cyberattack-hack-personal-information",
+        "https://www.bbc.com/sport/football/articles/crd61nvg4d84o"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWAqU3nTW2_eU_lqg_Yb62zFiiNMjpkCvGe9DYdN9am8xiBHD0P6W19ySebo8",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack",
+          "title": "FIFA hit by cyberattack as hackers gain access to personal and business data",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWAqU3nTW2_eU_lqg_Yb62zFiiNMjpkCvGe9DYdN9am8xiBHD0P6W19ySebo8"
+        },
+        {
+          "url": "https://www.theguardian.com/football/2026/nov/26/fifa-cyberattack-hack-personal-information",
+          "title": "Fifa confirms cyber-attack exposed ‘personal and business information’",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzRPs1rJl9mga5IY9h78jDZx3E_HVuHNjseOLlFkQF-8l9NGxOFSLBu9Q0axc"
+        },
+        {
+          "url": "https://www.bbc.com/sport/football/articles/crd61nvg4d84o",
+          "title": "Fifa confirms internal data stolen in cyber attack",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAK8ZTTisP0HNm9CkvSmUW7bNNiStzohMbzXw3Z_rFw3Yrsw4A3-9w79Q0quY"
+        }
+      ]
+    },
+    {
+      "query": "presley gerber",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:10:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/26/presley-gerber-death-sober-living-home-addiction-treatment/92972464007/",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/founder-behind-sober-house-where-213130314.html",
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/presley-gerber-sober-home-founder-165446712.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjAz2PFZxQy_fETsLb0YmpYf3CFNmMuAlukmsSEXW3nKYRWlww_NU8Lfa1XLI",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/26/presley-gerber-death-sober-living-home-addiction-treatment/92972464007/",
+          "title": "Presley Gerber died at a sober living home. It wasn't designed to treat addiction",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjAz2PFZxQy_fETsLb0YmpYf3CFNmMuAlukmsSEXW3nKYRWlww_NU8Lfa1XLI"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/founder-behind-sober-house-where-213130314.html",
+          "title": "Founder behind sober house where Presley Gerber died lists Malibu home for $5M",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG5FjoA9Wos1wX7vwH2KqmrByT-5vGDoO6-OdxkLNgWYo5Vt4hD018FXaRWCc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/presley-gerber-sober-home-founder-165446712.html",
+          "title": "Presley Gerber’s Sober Home Founder Lists $5 Million Malibu Property 2 Months After Model’s Death",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYjlOPMjdiBBzSqrUKyoF8v7ShkSGdAP-aNXUF00EaVOoUZm4doij9RitoB48"
+        }
+      ]
+    },
+    {
+      "query": "tulsa king episode 7",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:00:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66120275/",
+        "https://readysteadycut.com/2026/11/27/tulsa-king-season-4-episode-7-recap/",
+        "https://www.cbr.com/tulsa-king-season-4-main-villain-agent-musso/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66120275/",
+          "title": "‘Tulsa King’ Season 4 Episode 7 Release Date, Time, Where to Watch and Preview",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc"
+        },
+        {
+          "url": "https://readysteadycut.com/2026/11/27/tulsa-king-season-4-episode-7-recap/",
+          "title": "‘Tulsa King’ Season 4, Episode 7 Recap – Unfortunately, Tyson Is Still In This",
+          "publisher": "Ready Steady Cut",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuRMGYeEPsD-ndDPM5p5IJuBRQHdS9C7vCoYwADj_LywLkYzteCWFMoQlKnw"
+        },
+        {
+          "url": "https://www.cbr.com/tulsa-king-season-4-main-villain-agent-musso/",
+          "title": "Taylor Sheridan Confirms Tulsa King Season 4's New Main Villain",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwFMf0rhlFCZCCu27anzhfz5nCfDE8csZ1YvruHiUEHRQSbVKp5khn0bnSbKM"
+        }
+      ]
+    },
+    {
+      "query": "happy black friday",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:00:00Z",
+      "related_news_urls": [
+        "https://linedrivemedia.com/news/rankings-news-happy-black-friday-2027-hot-100-schedule-change-nov-26-2026/",
+        "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-moving-up-with-s-30-21-nov-25-2026/",
+        "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-more-of-the-best-with-s-40-31-nov-24-2026/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqraNvxu1ASl8LBqMPQkFMX6WWJVn_JvO2cSJjvea7WrXv0lUurGScSY3SpCo",
+      "image_credit": "Line Drive Media",
+      "news": [
+        {
+          "url": "https://linedrivemedia.com/news/rankings-news-happy-black-friday-2027-hot-100-schedule-change-nov-26-2026/",
+          "title": "Rankings News: Happy Black Friday + 2027 HOT 100 Schedule Change (Nov. 26, 2026)",
+          "publisher": "Line Drive Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqraNvxu1ASl8LBqMPQkFMX6WWJVn_JvO2cSJjvea7WrXv0lUurGScSY3SpCo"
+        },
+        {
+          "url": "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-moving-up-with-s-30-21-nov-25-2026/",
+          "title": "The 2027 Line Drive Media HOT 100 Player Rankings… Moving Up With #’s 30-21 (Nov. 25, 2026)",
+          "publisher": "Line Drive Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzmFWzUXlRh1HSwP3ydZ4sVL9Yx5hV-niedzyOz8gH-ixL6W5G5AxqTktRySg"
+        },
+        {
+          "url": "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-more-of-the-best-with-s-40-31-nov-24-2026/",
+          "title": "The 2027 Line Drive Media HOT 100 Player Rankings… More of the Best With #’s 40-31 (Nov. 24, 2026)",
+          "publisher": "Line Drive Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTfPYaOdANs2CA1yw9ATxiIPp7nrq27UvYSBLym0DLfhRg-7FDIhNrQPwtbNs"
+        }
+      ]
+    },
+    {
+      "query": "grace tame",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T13:00:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/news/articles/ckr5grlq78n9o",
+        "https://www.theguardian.com/australia-news/2026/nov/27/grace-tame-responds-former-murdoch-executive-nephew-rape-comment-ntwnfb",
+        "https://ozarab.media/grace-tame-confronts-matt-handbury-over-offensive-remark/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs7O0aDc0SYfkTBof7NAikJUbu9NS4zHuuc9WGIbFrDhATZ9mGZyrRWhK94gs",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/news/articles/ckr5grlq78n9o",
+          "title": "Grace Tame: Media mogul admits saying child sex abuse survivor 'looking to get raped again'",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs7O0aDc0SYfkTBof7NAikJUbu9NS4zHuuc9WGIbFrDhATZ9mGZyrRWhK94gs"
+        },
+        {
+          "url": "https://www.theguardian.com/australia-news/2026/nov/27/grace-tame-responds-former-murdoch-executive-nephew-rape-comment-ntwnfb",
+          "title": "Grace Tame calls out ex-Murdoch media executive who said she ‘must be looking to be raped again’",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfUMUHniVEAPIe4o9KDHBlMDcnwYaVaapZEPQwka4upg-u_r488G7iR8iAFhY"
+        },
+        {
+          "url": "https://ozarab.media/grace-tame-confronts-matt-handbury-over-offensive-remark/",
+          "title": "Grace Tame Confronts Matt Handbury Over Offensive Remark",
+          "publisher": "Oz Arab Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Aqv-cvFczZBjRt-tcmWapVqHqre5tDPkXhm18fyhui6dvMoGL2c7lQuiEoU"
+        }
+      ]
+    },
     {
       "query": "knox family death",
       "approx_searches": "200+",
@@ -43,12 +218,12 @@
     },
     {
       "query": "le creuset black friday",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-27T12:40:00Z",
       "related_news_urls": [
         "https://www.al.com/shopping/2026/11/le-creusets-gorgeous-christmas-dutch-oven-is-on-sale-for-black-friday.html",
-        "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
-        "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026"
+        "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026",
+        "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U",
       "image_credit": "AL.com",
@@ -61,53 +236,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U"
         },
         {
-          "url": "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
-          "title": "Le Creuset Dropped Prices on Dutch Ovens, Tea Kettles, Holiday Gear, and More — Up to 40% Off",
-          "publisher": "Food & Wine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfih87K14WN9qcE0jylcrNCXrMbkj-jygz67oxn1txjpNCRLUCwFADQcpGosk"
-        },
-        {
           "url": "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026",
           "title": "Le Creuset’s Black Friday Sale Includes the Signature Dutch Oven, And It's Going Quickly",
           "publisher": "Bon Appétit: Recipes, Cooking, Entertaining, Restaurants | Bon Appétit",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-31dF3hn_2QdN_5havtwXxG-xSqrMRw7QYlS9m2H8JlCeitk47eJIjnTax5o"
-        }
-      ]
-    },
-    {
-      "query": "home goods black friday",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:40:00Z",
-      "related_news_urls": [
-        "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
-        "https://www.cnn.com/cnn-underscored/deals/black-friday-furniture-deals-2026-11-26",
-        "https://www.wsj.com/buyside/shopping-holidays/deals-sales/best-black-friday-home-kitchen-deals-2026"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA",
-      "image_credit": "New York Magazine",
-      "news": [
-        {
-          "url": "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
-          "title": "Make That Big Home-Upgrade Purchase This Black Friday",
-          "publisher": "New York Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA"
         },
         {
-          "url": "https://www.cnn.com/cnn-underscored/deals/black-friday-furniture-deals-2026-11-26",
-          "title": "Save on big-ticket furniture items from Article, West Elm and more this Black Friday",
-          "publisher": "CNN",
+          "url": "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
+          "title": "Le Creuset Dropped Prices on Dutch Ovens, Tea Kettles, Holiday Gear, and More — Up to 40% Off",
+          "publisher": "Food & Wine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQatjT2K_QgdHXOEVL7Oze9Kc9S_zu7KXjmSDBy3DVif5bYf1aFDJLuq_BThhE"
-        },
-        {
-          "url": "https://www.wsj.com/buyside/shopping-holidays/deals-sales/best-black-friday-home-kitchen-deals-2026",
-          "title": "The 121 Best Black Friday Home and Kitchen Deals",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRvPNRSLoaDIbG6iVAc59jrCtcbwAikXHv3cUfYlacINmyQ8Jvl2gQmADso_M"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfih87K14WN9qcE0jylcrNCXrMbkj-jygz67oxn1txjpNCRLUCwFADQcpGosk"
         }
       ]
     },
@@ -147,12 +287,47 @@
       ]
     },
     {
+      "query": "home goods black friday",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T12:40:00Z",
+      "related_news_urls": [
+        "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
+        "https://www.forbes.com/sites/forbes-personal-shopper/2026/11/27/black-friday-furniture-deals/",
+        "https://www.goodmorningamerica.com/shop/story/black-friday-mattresses-kitchen-furniture-138290792"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA",
+      "image_credit": "New York Magazine",
+      "news": [
+        {
+          "url": "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
+          "title": "Make That Big Home-Upgrade Purchase This Black Friday",
+          "publisher": "New York Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA"
+        },
+        {
+          "url": "https://www.forbes.com/sites/forbes-personal-shopper/2026/11/27/black-friday-furniture-deals/",
+          "title": "We’re Live-Tracking The Best Black Friday Furniture Deals All Day",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjYVhLr9_VENOqmNm12azWcBGNgQIXi02tS01e-IerR4sDFafKkoIZNEvmRu4"
+        },
+        {
+          "url": "https://www.goodmorningamerica.com/shop/story/black-friday-mattresses-kitchen-furniture-138290792",
+          "title": "Early Black Friday deals for the home: Mattresses, kitchen must-haves and more",
+          "publisher": "Good Morning America",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVKhRCBZxfs9F8Xuj8_wfqhrpy4gQL_Ux6HKaPDQrSGQ3i7rgqI0sHJxvEtTY"
+        }
+      ]
+    },
+    {
       "query": "us air force cloud one breach",
       "approx_searches": "500+",
       "published_at": "2026-11-27T12:30:00Z",
       "related_news_urls": [
         "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-        "https://www.bloomberg.com/news/articles/2026-11-27/hackers-breached-us-air-force-s-cloud-platform",
+        "https://finance.yahoo.com/technology/articles/hackers-breached-us-air-force-112039671.html",
         "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
@@ -166,11 +341,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
         },
         {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-27/hackers-breached-us-air-force-s-cloud-platform",
+          "url": "https://finance.yahoo.com/technology/articles/hackers-breached-us-air-force-112039671.html",
           "title": "Hackers Breached US Air Force’s Cloud Platform, Report Says",
-          "publisher": "Bloomberg.com",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJYrzo95roK8-idihEbsKGHjWZFCitesTLa9ht_u3zTVMDzChpQibrVwdTY0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6O6Wmm9BpYjXtIkdOcEOqj3hrh6RMZH0xhpWlNM-6vEDhsp1YoJB-Xv5FtRY"
         },
         {
           "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
@@ -178,181 +353,6 @@
           "publisher": "Sky News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGLuqvv-Ez0cmtDoowaAPs968_KgJSmz7LUtsaovEfiNQgxp1bL5vKZ-aeeQ"
-        }
-      ]
-    },
-    {
-      "query": "apple tv 4k",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:30:00Z",
-      "related_news_urls": [
-        "https://www.vulture.com/article/apple-tv-4k-4th-generation-review.html",
-        "https://www.bloomberg.com/news/features/2026-11-21/apple-tv-4k-review-new-299-streaming-box-is-excellent-but-too-expensive",
-        "https://www.pocket-lint.com/apple-tv-4k-changed-settings-and-it-was-like-a-free-upgrade/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb7Gco8oVIKnTwvP7oGiV5PER4UUHLsfqKawrXs0klNM0IEMDgAED9E-vwabU",
-      "image_credit": "Vulture",
-      "news": [
-        {
-          "url": "https://www.vulture.com/article/apple-tv-4k-4th-generation-review.html",
-          "title": "You Don’t Need the New Apple TV Device",
-          "publisher": "Vulture",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb7Gco8oVIKnTwvP7oGiV5PER4UUHLsfqKawrXs0klNM0IEMDgAED9E-vwabU"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/features/2026-11-21/apple-tv-4k-review-new-299-streaming-box-is-excellent-but-too-expensive",
-          "title": "The New Apple TV 4K Is a Great Streaming Box at a Bad Price: Review",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17sjvd9Y261M6_rIcCz2Di7sPgWMfkuLh9fsTCIWABBRFsXDnqD1ciphdi6I"
-        },
-        {
-          "url": "https://www.pocket-lint.com/apple-tv-4k-changed-settings-and-it-was-like-a-free-upgrade/",
-          "title": "I changed 5 settings and it was like a free upgrade for my Apple TV 4K",
-          "publisher": "Pocket-lint",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ5rWPN29_mW4QSGG0Gq44QKCiT7nvow8OJwCDlMXe_bSgDBFkenN4IpomtEI"
-        }
-      ]
-    },
-    {
-      "query": "macbook neo black friday deals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:30:00Z",
-      "related_news_urls": [
-        "https://www.macrumors.com/2026/11/26/macbook-air-black-friday-deals-3/",
-        "https://gizmodo.com/cheaper-than-a-basic-iphone-the-m5-macbook-air-512gb-just-got-another-black-friday-price-cut-2000845988",
-        "https://appleinsider.com/articles/26/11/26/amazons-599-black-friday-macbook-neo-deal-is-back"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlc8S807CqzXWTeTYCa756bj3xqkr30A6ZDDjAcjxhncorzjOB11OToxkwr6s",
-      "image_credit": "MacRumors",
-      "news": [
-        {
-          "url": "https://www.macrumors.com/2026/11/26/macbook-air-black-friday-deals-3/",
-          "title": "MacBook Air Black Friday Deals Now Live With Massive $399 Savings",
-          "publisher": "MacRumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlc8S807CqzXWTeTYCa756bj3xqkr30A6ZDDjAcjxhncorzjOB11OToxkwr6s"
-        },
-        {
-          "url": "https://gizmodo.com/cheaper-than-a-basic-iphone-the-m5-macbook-air-512gb-just-got-another-black-friday-price-cut-2000845988",
-          "title": "Cheaper Than a Basic iPhone, the M5 MacBook Air 512GB Just Got Another Black Friday Price Cut",
-          "publisher": "Gizmodo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiAZLhuH9OFWLKTKv21_EKT6UqQs8ODZoTvns6-ZHmiJ0keEUZ75HDxaRH8g8"
-        },
-        {
-          "url": "https://appleinsider.com/articles/26/11/26/amazons-599-black-friday-macbook-neo-deal-is-back",
-          "title": "Apple's ultra-portable MacBook Neo is $99 off for Black Friday 2026",
-          "publisher": "AppleInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQonYd_WL5FjRI4T99RA6x5H28celNET7WxqXFz5p5pX9pWzXH4-3UmPFP_AZk"
-        }
-      ]
-    },
-    {
-      "query": "natalie harp",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:20:00Z",
-      "related_news_urls": [
-        "https://nymag.com/intelligencer/article/is-james-bond-conservative-trump-asks-natalie-to-find-out.html",
-        "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
-        "https://www.the-independent.com/news/world/americas/us-politics/trump-natalie-harp-robert-pattinson-printouts-b3091450.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3NpgNMAs8wjyJSEv-NwA5g1U4Vt2e8pXAlAjqpy1uKZBgWLB2vzl8rR6rwvw",
-      "image_credit": "New York Magazine",
-      "news": [
-        {
-          "url": "https://nymag.com/intelligencer/article/is-james-bond-conservative-trump-asks-natalie-to-find-out.html",
-          "title": "‘Is James Bond Conservative?’ Trump Asks Natalie Harp to Find Out",
-          "publisher": "New York Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3NpgNMAs8wjyJSEv-NwA5g1U4Vt2e8pXAlAjqpy1uKZBgWLB2vzl8rR6rwvw"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
-          "title": "Trump praises ‘nice-looking’ Robert Pattinson as new Bond",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqsf1hAFgImhhNjU4dxdutFsWEfUPVzcpNZL3Tjbq8PGmRETrQvWPH1gT1uE"
-        },
-        {
-          "url": "https://www.the-independent.com/news/world/americas/us-politics/trump-natalie-harp-robert-pattinson-printouts-b3091450.html",
-          "title": "On Her Majesty’s Service: Trump sends Natalie Harp on mission to find out more about new James Bond",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0fVaFx3T0E13yvjvW0oIAIG05adN8nQ-ILfBOd61TWb7_goscg96TTPDbKPU"
-        }
-      ]
-    },
-    {
-      "query": "apple stock price",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T12:10:00Z",
-      "related_news_urls": [
-        "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
-        "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
-        "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw",
-      "image_credit": "Trefis",
-      "news": [
-        {
-          "url": "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
-          "title": "Why Should Apple Stock Holders Watch The December Quarter?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw"
-        },
-        {
-          "url": "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
-          "title": "Global Memory Chip Shortage Drives Prices Up, Affects Electronics (AAPL)",
-          "publisher": "GuruFocus",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXjgi3z6zA9T5J-sUaaAJvDy_gMFc5zJc96aAR1-1m063gyUFPGTxmW1Ieat0"
-        },
-        {
-          "url": "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/",
-          "title": "Apple (NASDAQ: AAPL) Faces Unprecedented Memory Cost Pressure As Gross Margin Guidance Drops To 45%-46%",
-          "publisher": "Foreign Policy Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZPCJYKLhVNPqLHvga9bsl_WgTsQJKqykDmQ5A8NMTaMwG4oOCPmLHfV03-vw"
-        }
-      ]
-    },
-    {
-      "query": "courtney cronin",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T12:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ben-johnson-dandre-swift-doesnt-need-to-regain-trust-after-fumble",
-        "https://chicago.suntimes.com/bears/2026/11/24/bears-dandre-swift-ben-johnson-fumbles-running-back-hold-ball-nfl-kyle-monangai-salvon-ahmed"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAWz_djH16mWubE98GQyNi4Y6IQ-hgfi12HWa92pvjC1yV0wbb9CYClnmtDk",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50587324/bears-johnson-stick-swift-role-bears-run-game",
-          "title": "Bears' Johnson has no plan to stop using Swift in run game despite costly fumbles",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAWz_djH16mWubE98GQyNi4Y6IQ-hgfi12HWa92pvjC1yV0wbb9CYClnmtDk"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/ben-johnson-dandre-swift-doesnt-need-to-regain-trust-after-fumble",
-          "title": "Ben Johnson: D’Andre Swift doesn’t need to regain trust after fumble",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmQ-ma4movm4GwQzLFma1wtuHv3ImMTnSR947v_sTbxx4Iz4iJ8z11dS3-hnY"
-        },
-        {
-          "url": "https://chicago.suntimes.com/bears/2026/11/24/bears-dandre-swift-ben-johnson-fumbles-running-back-hold-ball-nfl-kyle-monangai-salvon-ahmed",
-          "title": "After another fumble, what do Bears do with D'Andre Swift now?",
-          "publisher": "Chicago Sun-Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQftcIFATHhcDEiYyYCOdgFuPr6S6j3nNRfvAgyA3E3E63uy4KdqlP07w8OhSA"
         }
       ]
     }
