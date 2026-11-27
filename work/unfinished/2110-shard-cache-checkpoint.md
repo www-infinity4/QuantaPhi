@@ -86,3 +86,36 @@ Next: exact-head source review, source-only guarded merge, Android verification 
 A dedicated regression now checks a fresh profile read for a **chats-only** export, not just the combined chat/search exporter. Both paths recheck a single currently active wallet bearer against the wallet-scoped Bubbles profile; mismatches abort. A proposed Bubbles asset-version bump was reverted because it violated existing cross-entrypoint version contract tests; a coordinated cache-refresh/browser/Android release remains a separate verification step. No new APK or WebView cache is assumed updated. As of this checkpoint, no real Android/Google account export has been verified; every background Google transfer remains disabled.
 
 - New finding: Android OS Auto Backup offers up to 25 MB per app user at no charge, independent of restricted Drive developer APIs and not connected to Gemini chat memory. Current Bubbles native Android manifest explicitly sets `android:allowBackup=false`. It is intentionally **left unchanged**: no backup rule/verified encrypted app-private directory or real restore test yet. No claim of native Google backup activation.
+
+
+## Repository-first execution / phone-independent operation · November 27, 2026
+
+Owner direction: pressing a Bubbles button should invoke the relevant versioned program; the owner phone must not be the sole compute host. Keep #2110 as migration coordinator and #1907 as Brain implementation, no duplicate ticket. A- is the proposed automation catalog/router, not an observed deployed backend.
+
+### Placement and trust boundary
+
+| Lane | Program source | Execution placement | Result |
+| --- | --- | --- | --- |
+| Pure public calculation, formatting, local UI | QuantaPhi | Browser JS; no privileged code | Immediate answer with explicit local provenance |
+| Private conversation, provider tool calls | Existing Bubbles gateway/tools and model adapter | Verified continuously reachable private API/inference host; not GitHub Pages or per-message CI | User-scoped private response, durable request ID |
+| Authorized engineering | Moltnook repository-engine, existing signed OIDC and lease/fence | GitHub Actions only for legitimate repository development, tests, builds and maintenance | Existing job-scoped PR/test receipts |
+| Monitoring and bounded repair | A- catalog/automation + existing watchers | Allowed repository CI or independently hosted scheduler as appropriate; no phone dependency | Sanitized status, deduplication and retry deadlines |
+
+Browser cannot hold repository-write credentials or dispatch privileged code directly. A button identifies an allowlisted operation, not an arbitrary command, workflow, repository or URL. The authenticated API derives account scope and authorization server-side, applies quotas, deduplicates by user/request ID, records bounded status and returns only that user's results. Signed repo engineering uses existing OIDC, current approval and exact lease/fence, no automatic grant renewal. Never put private prompts, wallet data, bearer credentials or answer transcripts in repository issues/commits, workflow inputs, logs or artifacts. Public GitHub artifacts may contain only deliberately public, sanitized engineering evidence. GitHub Pages is static, GitHub Actions is bounded CI, a repository is versioned source rather than an always-on server; no CI-as-public-chat-server or idle keepalive scheme.
+
+### Verified / missing
+
+- #2157 merged at 28f3840c50d8c0670e677d350b3051f30a17ae86. Owner Termux Node 26.3.1 tested its source head fa64afec5fccc00d4f0ef96a0a4282973114161e: 45/45, no forced shutdown, exit 0. CI 94/94. Synthetic source tests do not verify production provider, actual private database import or continuous Android operation.
+- Owner gateway health returned HTTP 429; existing Workers AI bindings present; actual inference unverified. Do not infer a specific billing quota or attempt to evade rate limits.
+- A- README exists; repository name alone proves neither runnable router nor deployed service. Inspect its actual program tree before choosing integration paths.
+- No continuously reachable independent API/inference host or complete private authoritative state export/fence verified. No new paid resource, token, model, DNS or origin change authorized or made. Keep existing phone mesh/tunnel as optional staging and recovery, not production dependency.
+
+### Ordered implementation gates
+
+1. Inventory existing browser-local programs and signed repo workflows; reuse their source/permissions. First source-only pilot: explicit allowlisted public deterministic operation on existing QuantaPhi UI, with phone offline and no GitHub workflow dispatch or model claim; verify output and error behavior in a separate preview.
+2. Identify a verified owner-approved non-phone host with HTTPS, persistent private disk, acceptable cost/terms, and existing model access. Prove a single non-sensitive prompt with real provider receipt before enabling public traffic; no silent model substitution.
+3. Reuse original private API, consent, owner/session checks and signed repository-engine transport on staging. Prove unauthorized/revoked/foreign/replayed requests rejected, quota/backoff, duplicate results, and private response isolation.
+4. Verify complete original state export, rollback, old-writer fence and in-flight reconciliation; no second active writer. Run one authorized engineering job through existing Moltnook runner with real source/test/PR evidence.
+5. Acceptance with owner phone completely offline: two distinct test accounts receive their own genuine responses, one authorized repo job completes, restart retains private state and receipt, no private payload is present in public GitHub, and rollback works. Only then consider explicit production routing cutover.
+
+State: scoped / production blocked; completion percentage unknown (no replacement always-on host), sessions remaining unknown. No production coordinator lease, task/session ID, fence or expiry claimed. Next executable source action: inspect the existing QuantaPhi local-program dispatcher and A- executable tree, choose one deterministic browser operation for the pilot; keep real chat separate until host verification. This checkpoint is a design decision, not a server installation or runtime repair.
