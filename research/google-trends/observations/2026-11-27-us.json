@@ -3,34 +3,104 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T17:31:12.268482Z",
+  "checked_at": "2026-11-27T18:01:16.094602Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "hank brown",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:20:00Z",
+      "related_news_urls": [
+        "https://www.kcci.com/article/iowa-football-hank-brown-high-school-coach-trent-dilfer/74542685",
+        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+        "https://sports.yahoo.com/college-football/articles/good-vs-evil-nebraska-vs-164500381.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0",
+      "image_credit": "KCCI",
+      "news": [
+        {
+          "url": "https://www.kcci.com/article/iowa-football-hank-brown-high-school-coach-trent-dilfer/74542685",
+          "title": "Super Bowl champ Trent Dilfer reflects on coaching Hank Brown in high school",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0"
+        },
+        {
+          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+          "title": "Nebraska-Iowa: What we're looking for and final predictions",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/good-vs-evil-nebraska-vs-164500381.html",
+          "title": "Good vs Evil: Nebraska vs Iowa – Live Discussion",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL6cV7voA82bI7j3MVajEhgcPcxmdSJ_j4jU0yM8nNWB2O2CjjLJhUdLJccM4"
+        }
+      ]
+    },
+    {
+      "query": "ncaaf",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:20:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-steelers-broncos-nfl-black-friday/",
+        "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-26-148399",
+        "https://www.crossingbroad.com/news/sports-gambling/draftkings-promo-code-claim-200-bonus-for-thanksgiving-nfl-nov-26/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-steelers-broncos-nfl-black-friday/",
+          "title": "DraftKings promo code: Claim $200 bonus bets, free NBA League Pass for Steelers-Broncos, NFL on Black Friday",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8"
+        },
+        {
+          "url": "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-26-148399",
+          "title": "NBA League Pass Tree Trial: How to Get a Free Trial of NBA League Pass",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_Zxo-Z8LZ621O1i-RymWquFVLwTR3-ULUDHDesNLTxc6HjFpU66amzTGpT4"
+        },
+        {
+          "url": "https://www.crossingbroad.com/news/sports-gambling/draftkings-promo-code-claim-200-bonus-for-thanksgiving-nfl-nov-26/",
+          "title": "DraftKings Promo Code: Claim $200 Bonus for Thanksgiving NFL (Nov. 26)",
+          "publisher": "Crossing Broad",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNjJLbO0nFg90lbfhotUzZAm8vVWfIXpqL1lTn2i7oTz5dDzpMI0De33KLnEU"
+        }
+      ]
+    },
+    {
       "query": "maple leafs vs bruins",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T17:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nhl/articles/bruins-vs-maple-leafs-score-170001928.html",
-        "https://www.nhl.com/mapleleafs/news/leafs-bruins-nov-27-2026",
+        "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
+        "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112",
         "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCU473jVN8ntS2Mt0_-r_onvgOEk8z9g5vJQSjEvGJfDEQaQxwD6ASDdqBDa8",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWn9Zz4GmPuZNko9_I5_vsT152f8jD8qwFw9W1hcUoL47fO4ezrNexkNIlENA",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nhl/articles/bruins-vs-maple-leafs-score-170001928.html",
-          "title": "Bruins vs. Maple Leafs Score, Live Updates, Highlights From NHL Game",
+          "url": "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
+          "title": "Black Friday Rivalry Showdown: Bruins Host Maple Leafs",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCU473jVN8ntS2Mt0_-r_onvgOEk8z9g5vJQSjEvGJfDEQaQxwD6ASDdqBDa8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWn9Zz4GmPuZNko9_I5_vsT152f8jD8qwFw9W1hcUoL47fO4ezrNexkNIlENA"
         },
         {
-          "url": "https://www.nhl.com/mapleleafs/news/leafs-bruins-nov-27-2026",
-          "title": "Leafs @ Bruins | Nov. 27, 2026",
+          "url": "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112",
+          "title": "Jim Hiller | Pre Game vs Boston Bruins | November 27, 2026",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQOKgGqm2-umGWRe2iIkYImgqTkyU1PHHTOvEbXTSANvfJd0hLTuW7KlYrcvg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHBgVMiMwnR9UWPM5J1cKhpBDzFbEwFqgjNxcqDAt59UrKvM_ZgLF2ZV0Ahqs"
         },
         {
           "url": "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs",
@@ -43,12 +113,12 @@
     },
     {
       "query": "mammoth vs predators",
-      "approx_searches": "500+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T17:10:00Z",
       "related_news_urls": [
         "https://www.nhl.com/utah/news/utah-starts-back-to-back-in-nashville-game-preview-11-27-26",
         "https://sports.yahoo.com/nhl/articles/nashville-predators-vs-utah-mammoth-110117845.html",
-        "https://www.si.com/nhl/predators/onsi/news/utah-mammoth-nashville-predators-game-central-how-watch-injury-updates"
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-nashville-predators-prediction-odds-2026-11-27/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1EEs7DCQL2eWWRAL2IcdvC87twY-zDvh61wa_M3NvURujnw4DAoaZtUayXD0",
       "image_credit": "NHL.com",
@@ -68,46 +138,46 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKSCrXGGYMZuRLc5J-Rn8wQ8sytxjb4Ehk1kap6z8AV62wJGvK5LDkdl3-hKk"
         },
         {
-          "url": "https://www.si.com/nhl/predators/onsi/news/utah-mammoth-nashville-predators-game-central-how-watch-injury-updates",
-          "title": "Utah Mammoth at Nashville Predators: Game Central, How To Watch, Injury Updates",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-nashville-predators-prediction-odds-2026-11-27/",
+          "title": "Utah Mammoth vs Nashville Predators Prediction, Picks & Odds | 27 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqHTicHZoWU52LNvgzNSDmBKiGs3fkpRVg7I9vxXsjypmDveilDuyU-S9YaII"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF9CohVz3WZ1eDnyahzOT5jUgYlJeeVqv_d93QDYx-LgvgvCh63w8-5qEGdiU"
         }
       ]
     },
     {
-      "query": "trinidad chambliss",
-      "approx_searches": "500+",
+      "query": "flames vs devils",
+      "approx_searches": "1000+",
       "published_at": "2026-11-27T17:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/ole-miss-qb-trinidad-chambliss-140105743.html",
-        "https://www.krem.com/video/sports/locked-on/lo-southeast/ole-miss-rebels-show/trinidad-chamblisss-last-home-game-has-to-end-with-the-golden-egg/535-eb65bb73-e319-4af4-a07c-45b4d3ba7790",
-        "https://nflmocks.com/todd-mcshay-trinidad-chambliss-take-raises-big-2027-nfl-draft-question-01m84vj46fdz"
+        "https://www.nhl.com/devils/news/preview-2026020401",
+        "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
+        "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb-Tuo0tdEMbl5lCRf81QvXAP6QnRc_w3UsRuu1FCfE5iTGmrq0X8F42hsLEE",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/articles/ole-miss-qb-trinidad-chambliss-140105743.html",
-          "title": "How Ole Miss QB Trinidad Chambliss reacted when jersey was stolen before Egg Bowl",
+          "url": "https://www.nhl.com/devils/news/preview-2026020401",
+          "title": "Kolyachonok, Silayev to Play vs. Flames | PREVIEW",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
+          "title": "2026-27 Gamethread #26: New Jersey Devils vs. Calgary Flames",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb-Tuo0tdEMbl5lCRf81QvXAP6QnRc_w3UsRuu1FCfE5iTGmrq0X8F42hsLEE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNT8byS-tOsoRbz-Yl4pTatrZ2_PEne0Wvhn4UmWkywN_4s53xK17VD902wM8"
         },
         {
-          "url": "https://www.krem.com/video/sports/locked-on/lo-southeast/ole-miss-rebels-show/trinidad-chamblisss-last-home-game-has-to-end-with-the-golden-egg/535-eb65bb73-e319-4af4-a07c-45b4d3ba7790",
-          "title": "Trinidad Chambliss's Last Home Game Has To End With The Golden Egg",
-          "publisher": "KREM",
+          "url": "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames",
+          "title": "Game Preview #26: New Jersey Devils vs. Calgary Flames",
+          "publisher": "All About The Jersey",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV2e_y3Vuc762XDVO49zJvDK1u_w03rk1NmlH6-bDXkcZy36c_PubOlwoues4"
-        },
-        {
-          "url": "https://nflmocks.com/todd-mcshay-trinidad-chambliss-take-raises-big-2027-nfl-draft-question-01m84vj46fdz",
-          "title": "Todd McShay's Trinidad Chambliss take raises a big 2027 NFL Draft question",
-          "publisher": "NFL Mocks",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGRxFDSBGP8XoF1mOmOvehy7f_C_7bf3HcdU3xZD5x-Ve-3HfK2I8XTRjxZJQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwrdi3ABvBcVdvFVjGNI95kHjb1wKNkxb5EZB_AA3DobU2fN5-JRPxjCYG9I"
         }
       ]
     },
@@ -147,47 +217,12 @@
       ]
     },
     {
-      "query": "flames vs devils",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/devils/news/preview-2026020401",
-        "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
-        "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/devils/news/preview-2026020401",
-          "title": "Devils Host Flames, Nemec in Matinee | PREVIEW",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE"
-        },
-        {
-          "url": "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
-          "title": "2026-27 Gamethread #26: New Jersey Devils vs. Calgary Flames",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNT8byS-tOsoRbz-Yl4pTatrZ2_PEne0Wvhn4UmWkywN_4s53xK17VD902wM8"
-        },
-        {
-          "url": "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames",
-          "title": "Game Preview #26: New Jersey Devils vs. Calgary Flames",
-          "publisher": "All About The Jersey",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwrdi3ABvBcVdvFVjGNI95kHjb1wKNkxb5EZB_AA3DobU2fN5-JRPxjCYG9I"
-        }
-      ]
-    },
-    {
       "query": "college football",
       "approx_searches": "20000+",
       "published_at": "2026-11-27T17:00:00Z",
       "related_news_urls": [
         "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-week-13-bold-predictions-cfp-rivalry-week-upsets/92928423007/",
+        "https://www.cbssports.com/college-football/news/college-football-schedule-2026-rivalry-week-13-tv-channels-streaming-saturday-kickoff-times/",
         "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
@@ -201,11 +236,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
         },
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-week-13-bold-predictions-cfp-rivalry-week-upsets/92928423007/",
-          "title": "College football bold predictions: Rivalry weekend could wreck some playoff dreams",
-          "publisher": "USA Today",
+          "url": "https://www.cbssports.com/college-football/news/college-football-schedule-2026-rivalry-week-13-tv-channels-streaming-saturday-kickoff-times/",
+          "title": "College football schedule 2026: What to watch in Week 13, TV channels, streaming, Saturday kickoff times",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwtYuJ3jwrLPOGT1bLfPWDZp-PhocKZAQLix3WzvULkKvuF1LeA0vi4sDAjMk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUlWv8ouRBpV9RoMHDLv2K7CbIFDaslTZkh2GjnONRZ6qEQ3gFsxPMx364H0"
         },
         {
           "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
@@ -213,6 +248,41 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
+        }
+      ]
+    },
+    {
+      "query": "deb fischer",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T17:00:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/sen-deb-fischer-husband-bruce-suicide/",
+        "https://nypost.com/2026/11/27/us-news/real-cause-of-death-of-deb-fischers-husband-revealed-after-nebraska-senators-office-first-said-he-passed-away-peacefully/",
+        "https://www.yahoo.com/news/politics/articles/republican-senator-releases-grim-death-172831774.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBgOau16aNwz7-dK1g2UAwsyhre5-jqEnEhIuxfoZlug8zBKop6siR4UZy3oI",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/sen-deb-fischer-husband-bruce-suicide/",
+          "title": "Sen. Deb Fischer's husband died by suicide, her office says",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBgOau16aNwz7-dK1g2UAwsyhre5-jqEnEhIuxfoZlug8zBKop6siR4UZy3oI"
+        },
+        {
+          "url": "https://nypost.com/2026/11/27/us-news/real-cause-of-death-of-deb-fischers-husband-revealed-after-nebraska-senators-office-first-said-he-passed-away-peacefully/",
+          "title": "Real cause of death of Deb Fischer’s husband revealed after Nebraska senator’s office first said he ‘passed away peacefully’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUljBg9xxBwRTm-3_6yslb8nDErqgK9s6hnHb3uHrd0UShJEQwAjoiT7ZPoCI"
+        },
+        {
+          "url": "https://www.yahoo.com/news/politics/articles/republican-senator-releases-grim-death-172831774.html",
+          "title": "Republican Senator Releases Grim Update After Death of Husband: ‘Upon Further Investigation…’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQenypV9Rcx32Jz0j9lQvhYBiBLO1wKF7W87z_zz1yEsoJf15XWLwjSrelf_xI"
         }
       ]
     },
@@ -252,107 +322,37 @@
       ]
     },
     {
-      "query": "deb fischer",
-      "approx_searches": "500+",
+      "query": "klarna",
+      "approx_searches": "1000+",
       "published_at": "2026-11-27T17:00:00Z",
       "related_news_urls": [
-        "https://www.klkntv.com/loving-husband-devoted-father-sen-deb-fischer-announces-husbands-passing/",
-        "https://thehill.com/homenews/senate/6239912-senator-deb-fischer-husband-dies/",
-        "https://journalstar.com/news/state-regional/government-politics/article_f0568ec9-e4b9-40c2-b181-7cfe1e6bacc1.html"
+        "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
+        "https://www.benzinga.com/trading-ideas/long-ideas/26/11/63663014/affirm-stock-holiday-bnpl-growth",
+        "https://fox4beaumont.com/news/nation-world/looking-for-holiday-deals-adobe-forecasts-peak-discounts-on-electronics-toys-and-more"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQELWQ25YXRzM_hKmUcj9vxyMEBMnH4Mnv64go9CiWRAcloa1INARtK1XwMLGM",
-      "image_credit": "KLKN-TV",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuPuVXphbjZsktDc7UOrvWbEdcdz9WxTD7MDl4Yf5lKb4c16xl1qz_kegnwLM",
+      "image_credit": "Digital Commerce 360",
       "news": [
         {
-          "url": "https://www.klkntv.com/loving-husband-devoted-father-sen-deb-fischer-announces-husbands-passing/",
-          "title": "“Loving husband, devoted father”; Sen. Deb Fischer announces husband’s passing",
-          "publisher": "KLKN-TV",
+          "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
+          "title": "Adobe data shows online holiday spending up 9.1% ahead of Thanksgiving",
+          "publisher": "Digital Commerce 360",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQELWQ25YXRzM_hKmUcj9vxyMEBMnH4Mnv64go9CiWRAcloa1INARtK1XwMLGM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuPuVXphbjZsktDc7UOrvWbEdcdz9WxTD7MDl4Yf5lKb4c16xl1qz_kegnwLM"
         },
         {
-          "url": "https://thehill.com/homenews/senate/6239912-senator-deb-fischer-husband-dies/",
-          "title": "Nebraska senator announces husband’s death: ‘Our family is heartbroken’",
-          "publisher": "The Hill",
+          "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/11/63663014/affirm-stock-holiday-bnpl-growth",
+          "title": "Affirm Stock: Should Investors Bet on Holiday BNPL Growth? - PayPal Holdings (NASDAQ:PYPL), Affirm Holdin",
+          "publisher": "Benzinga",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJg6tUTODCjxex0J8AgVRIA898FV3_w1CYkSIA2JW3PpgsrKUGNEu2xkTnoE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp07ewZ-M_ewLGgMYVgmEuvkwv5UAO4uaLegDtDEt_3F213ShWgDgp-1AHfMI"
         },
         {
-          "url": "https://journalstar.com/news/state-regional/government-politics/article_f0568ec9-e4b9-40c2-b181-7cfe1e6bacc1.html",
-          "title": "Sen. Deb Fischer's office says her husband died by suicide",
-          "publisher": "Lincoln Journal Star",
+          "url": "https://fox4beaumont.com/news/nation-world/looking-for-holiday-deals-adobe-forecasts-peak-discounts-on-electronics-toys-and-more",
+          "title": "Looking for holiday deals? Adobe forecasts peak discounts on electronics, toys and more",
+          "publisher": "KBTV Fox 4 Beaumont",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX0f6qJ-_y6uZOcIhMfr6QhOtAUkIS_aRsy19NJwYQf20_Lq9D2VPwqCnEX5c"
-        }
-      ]
-    },
-    {
-      "query": "black friday food deals",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T16:40:00Z",
-      "related_news_urls": [
-        "https://mashable.com/life/black-friday-2026-free-food-deals",
-        "https://wtop.com/business-money/2026/11/friday-freebies-where-to-find-free-and-cheap-eats-through-cyber-monday/",
-        "https://www.thekitchn.com/best-black-friday-cyber-monday-deals-chefs-23856094"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHGXV_3HZHj3sHhPQKGVBzSbH0noY-jc-sLxyzNVvrF5XNxASIotmWeJXe1IM",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/life/black-friday-2026-free-food-deals",
-          "title": "Black Friday 2026 deals: Score free food from Burger King, Wendy's, 7-Eleven, Krispy Kreme, and more",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHGXV_3HZHj3sHhPQKGVBzSbH0noY-jc-sLxyzNVvrF5XNxASIotmWeJXe1IM"
-        },
-        {
-          "url": "https://wtop.com/business-money/2026/11/friday-freebies-where-to-find-free-and-cheap-eats-through-cyber-monday/",
-          "title": "Friday Freebies: Where to find free and cheap eats through Cyber Monday",
-          "publisher": "WTOP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJiAKYx9rWYzVBenWSo16EU_v8b2XI6PiDrTpWxfDavLSUduoOGwb9Rzd7ESM"
-        },
-        {
-          "url": "https://www.thekitchn.com/best-black-friday-cyber-monday-deals-chefs-23856094",
-          "title": "Chefs Agree: These Are the 9 Best Black Friday Food Deals You Can Shop",
-          "publisher": "The Kitchn",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRYCkWiYkmZwxy9bzaLQrI08Fu7e0Kf-ho1PgeIwwlz7I4Q44FGxYa_CZmKH8"
-        }
-      ]
-    },
-    {
-      "query": "thriller television series",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T16:30:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66119665/",
-        "https://demokratis.co.id/en/netflix-i-will-find-you-thriller",
-        "https://screenrant.com/i-will-find-you-netflix-thriller-series-best-cast-binge/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC80hkUQ6vFDL5OsTppV7nHJbNYayOwx1iI97jq5FJQBNK0GbzBjAcohe9BsY",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66119665/",
-          "title": "Julia Garner's New 8-Part Netflix Series Debuts To Rare Rotten Tomatoes Score",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC80hkUQ6vFDL5OsTppV7nHJbNYayOwx1iI97jq5FJQBNK0GbzBjAcohe9BsY"
-        },
-        {
-          "url": "https://demokratis.co.id/en/netflix-i-will-find-you-thriller",
-          "title": "Netflix Releases Eight Episode Thriller I Will Find You",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJqLjgea6R4AtsL-aEXdGE8RDPEUMjY2aQ-7aC_63PBJ0rLtLqlYwy5AcaBM"
-        },
-        {
-          "url": "https://screenrant.com/i-will-find-you-netflix-thriller-series-best-cast-binge/",
-          "title": "Netflix's 8-Part Thriller Series Has One Of Its Best Casts & It's The Perfect Binge",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQgHhCW6EwlKt7Q9yCn9IE8vetLOn60Ps__wQN33MMv5pNCCiBWyz_yohXxcU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5wZM9HUMNNbfCERp4-SmGraQLcyDEhiFJQvyI0xo16RFFqq6osF148-APa0"
         }
       ]
     }
