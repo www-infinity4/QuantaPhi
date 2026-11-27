@@ -3,17 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T18:01:16.094602Z",
+  "checked_at": "2026-11-27T18:31:27.402202Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "stars vs blues",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T18:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcdfw.com/news/local/st-louis-blues-take-on-dallas-stars-looking-to-extend-home-win-streak/4111292/",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/",
+        "https://www.nytimes.com/athletic/7816328/2026/11/27/stars-vs-blues-stream-how-to-watch-nov-27/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH64Vv_CpT88MBQ8rL3PqLiufwJTwlH3hwLcvtMiBysij6MwR88p99gW-a84U",
+      "image_credit": "NBC 5 Dallas-Fort Worth",
+      "news": [
+        {
+          "url": "https://www.nbcdfw.com/news/local/st-louis-blues-take-on-dallas-stars-looking-to-extend-home-win-streak/4111292/",
+          "title": "St. Louis Blues take on Dallas Stars, looking to extend home win streak",
+          "publisher": "NBC 5 Dallas-Fort Worth",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH64Vv_CpT88MBQ8rL3PqLiufwJTwlH3hwLcvtMiBysij6MwR88p99gW-a84U"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/",
+          "title": "Dallas Stars vs St Louis Blues Prediction, Picks & Odds | 27 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc_qkI_OX-BWf_xO8dcX8yIDIGWh-kERCo_29rP9Bbq7MPY1QUQltyw51kmZg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7816328/2026/11/27/stars-vs-blues-stream-how-to-watch-nov-27/",
+          "title": "How to watch Stars vs. Blues: TV channel and streaming options for November 27",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRKmAi41GfdTRuDyMk8k0Mmb9G0WATtAf5pJwWFR71x0oZ-R21IphGCXM28to"
+        }
+      ]
+    },
+    {
+      "query": "kirk ferentz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:10:00Z",
+      "related_news_urls": [
+        "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska",
+        "https://www.si.com/college/iowa/football/iowa-football-big-ten-championship-10-wins",
+        "https://www.fox.com/watch/clip/fmc-ijvg5804nxnrscup/kirk-ferentz-on-being-the-longest-tenured-head-coach-in-college-football"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQomD0a2AWTnbRMjygAXNaR_fargDUrIcJhLHMOXxVusUdObpW2HNIIOtWqyXg",
+      "image_credit": "Black Heart Gold Pants",
+      "news": [
+        {
+          "url": "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska",
+          "title": "KIRK SPEAKS: Nebraska",
+          "publisher": "Black Heart Gold Pants",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQomD0a2AWTnbRMjygAXNaR_fargDUrIcJhLHMOXxVusUdObpW2HNIIOtWqyXg"
+        },
+        {
+          "url": "https://www.si.com/college/iowa/football/iowa-football-big-ten-championship-10-wins",
+          "title": "'If We Don't Have 10 Wins, Forget About It': Iowa Football Not Worried About Big Ten Championship",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXYNZgsYgM-OwSceyPYLjSJ67icte-N29_DUGhJJMmjrmPPv7xXr_M_LKJQ9Y"
+        },
+        {
+          "url": "https://www.fox.com/watch/clip/fmc-ijvg5804nxnrscup/kirk-ferentz-on-being-the-longest-tenured-head-coach-in-college-football",
+          "title": "Watch Kirk Ferentz on being the longest-tenured head coach in college football - Wake Up Barstool",
+          "publisher": "FOX One",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBcQat1KgPl7V5r3Mys70bn8n_qFyH5LmS4u6eskUrjl1PVn_k8iZP4fjag-4"
+        }
+      ]
+    },
+    {
+      "query": "matt rhule",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:10:00Z",
+      "related_news_urls": [
+        "https://www.on3.com/teams/nebraska-cornhuskers/news/tunnel-talk-the-latest-intel-on-nebraska-football-recruiting-and-more-23/",
+        "https://sports.yahoo.com/college-football/articles/nebraska-recruiting-difference-week-makes-131721286.html",
+        "https://www.cornnation.com/football/106240/nebraska-football-one-for-the-road"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2cfNInDETHy3ZqbLZ240rkDIPw8Tv49FnxM1UATTlPw2CoeQrLf4k2uJxlAA",
+      "image_credit": "On3",
+      "news": [
+        {
+          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/tunnel-talk-the-latest-intel-on-nebraska-football-recruiting-and-more-23/",
+          "title": "Tunnel Talk: The latest intel on Nebraska football, recruiting, and more",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2cfNInDETHy3ZqbLZ240rkDIPw8Tv49FnxM1UATTlPw2CoeQrLf4k2uJxlAA"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/nebraska-recruiting-difference-week-makes-131721286.html",
+          "title": "Nebraska Recruiting: What a Difference a Week Makes",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FW-YGeupkUjGNpCL5UJ_bijoUeYlcapSnwWCLKAzoO0z5FxT9iMPMpYxprw"
+        },
+        {
+          "url": "https://www.cornnation.com/football/106240/nebraska-football-one-for-the-road",
+          "title": "Nebraska Football: One for the Road",
+          "publisher": "Corn Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3ytSC3p561Qe1vdukCGZEU4uaeWgJmk99BKn3np6gPUJYuhAoM-CIPu3k5kY"
+        }
+      ]
+    },
+    {
+      "query": "benjamin netanyahu",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:00:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
+        "https://www.timesofisrael.com/in-spectacular-flip-flop-liberman-has-become-the-architect-of-a-minority-government/",
+        "https://www.reuters.com/world/middle-east/israels-eisenkot-clinches-first-coalition-agreement-bid-form-government-2026-11-24/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa5bb9bZuBPnRWQ05qhf_OWxFZ2gQEIIunCRKBjimu-2ycEGrHjEXUTp-NDzs",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
+          "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa5bb9bZuBPnRWQ05qhf_OWxFZ2gQEIIunCRKBjimu-2ycEGrHjEXUTp-NDzs"
+        },
+        {
+          "url": "https://www.timesofisrael.com/in-spectacular-flip-flop-liberman-has-become-the-architect-of-a-minority-government/",
+          "title": "In spectacular flip-flop, Liberman has become the architect of a minority government",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw0RHLzeyXZtdNNvbvedvCyWHgZHjnamWl5SFRPhs0D2sjqHdY1kP3NrUmHEA"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/israels-eisenkot-clinches-first-coalition-agreement-bid-form-government-2026-11-24/",
+          "title": "Israel's Eisenkot faces new coalition challenge as left-wing faction suspends talks",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIKl8n9QH11pa9FPM94X7urXmP8-MIAR7u6KV22EtiqCzVztPMYI2iqrdLLZc"
+        }
+      ]
+    },
+    {
+      "query": "weather thanksgiving storm",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-27T17:50:00Z",
+      "related_news_urls": [
+        "https://weather.com/2026/11/27/holiday/thanksgiving/east-coast-thanksgiving-storm-wind-rain-flooding",
+        "https://www.wbur.org/hereandnow/2026/11/27/storms-power-outages-flooding",
+        "https://www.foxweather.com/weather-news/watch-hectic-holiday-coastal-chaos-travel-thanksgiving"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1kyPXVqGIKdMXwMNh3rWEMXbc5QuYgOg9HR0p7PZ3gHHp1wYx5GsEleWZpZw",
+      "image_credit": "The Weather Channel",
+      "news": [
+        {
+          "url": "https://weather.com/2026/11/27/holiday/thanksgiving/east-coast-thanksgiving-storm-wind-rain-flooding",
+          "title": "Thanksgiving storm moves to Northeast, bringing snow, winds, flooding",
+          "publisher": "The Weather Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1kyPXVqGIKdMXwMNh3rWEMXbc5QuYgOg9HR0p7PZ3gHHp1wYx5GsEleWZpZw"
+        },
+        {
+          "url": "https://www.wbur.org/hereandnow/2026/11/27/storms-power-outages-flooding",
+          "title": "From power outages to flooding, how storms are impacting both coasts",
+          "publisher": "WBUR",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmhv2o30ks84UZY1PGo--05uTHrDq1A46vZMxmwqY9n08VU3IT0vAXtqECb84"
+        },
+        {
+          "url": "https://www.foxweather.com/weather-news/watch-hectic-holiday-coastal-chaos-travel-thanksgiving",
+          "title": "Watch: Thanksgiving storm inundates coastal towns, crashes trees into homes and upends holiday travel",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrtk1cFtUXUCVViEeev5aH1BS3ZzfwIlhxF3Y8iZcWsq_Tu5_sIlf_Dw0Tqi4"
+        }
+      ]
+    },
+    {
+      "query": "kamario taylor",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:50:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/college-football/news/mississippi-state-football-2027-roster-spending-kamario-taylor/",
+        "https://247sports.com/college/mississippi-state/article/2027-mississippi-state-commits-scoreboard--293338800/",
+        "https://www.si.com/college/mississippistate/football/four-recruits-mississippi-state-cannot-afford-to-lose-before-signing-day"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/college-football/news/mississippi-state-football-2027-roster-spending-kamario-taylor/",
+          "title": "Mississippi State's dream season went up in smoke. It should overspend in 2027",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
+        },
+        {
+          "url": "https://247sports.com/college/mississippi-state/article/2027-mississippi-state-commits-scoreboard--293338800/",
+          "title": "Mississippi State commitment scoreboard",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGBQ4IYw3aZ4He-3AVs5v4-CUa0S35MkFXJm6T6-udq8H2ikZ-aJ9GP96K_ek"
+        },
+        {
+          "url": "https://www.si.com/college/mississippistate/football/four-recruits-mississippi-state-cannot-afford-to-lose-before-signing-day",
+          "title": "Four Recruits Mississippi State Cannot Afford to Lose Before Signing Day",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTruvtYvdcSkzHqh0R_D26NCk1EQotWhNIJJ3ErjHrIxBQlhtSM1hyUB6_Uil4"
+        }
+      ]
+    },
+    {
+      "query": "jonathan frakes",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:30:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/entertainment-arts/story/2026-11-27/star-trek-jonathan-frakes-reveals-cancer-battle",
+        "https://people.com/star-trek-actor-jonathan-frakes-says-an-unexpected-symptom-led-to-his-bladder-cancer-diagnosis-12281233",
+        "https://ew.com/star-trek-jonathan-frakes-bladder-cancer-diagnosis-symptoms-12279884"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJLukKYUh-JeiJpGWv9lbIxo4KaR3mMIcXPze1RCzTPunC32Ri7bQKW3OW-o",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-27/star-trek-jonathan-frakes-reveals-cancer-battle",
+          "title": "Beloved ‘Star Trek’ No. 1 Jonathan Frakes reveals his battle with cancer",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJLukKYUh-JeiJpGWv9lbIxo4KaR3mMIcXPze1RCzTPunC32Ri7bQKW3OW-o"
+        },
+        {
+          "url": "https://people.com/star-trek-actor-jonathan-frakes-says-an-unexpected-symptom-led-to-his-bladder-cancer-diagnosis-12281233",
+          "title": "‘Star Trek’ Actor Jonathan Frakes Says an Unexpected Symptom Led to His Bladder Cancer Diagnosis",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdC8UV4gahn3UU_X8DxXmbLkCrCftDqUoxem29OYjPn4QgHRu-0_MiFttk5bk"
+        },
+        {
+          "url": "https://ew.com/star-trek-jonathan-frakes-bladder-cancer-diagnosis-symptoms-12279884",
+          "title": "‘Star Trek’ actor Jonathan Frakes reveals unusual symptom before bladder cancer diagnosis",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_miwOteeyrLb4kaEonRqQtEsgREsXTThYGu97Nlq2dbYIHLI5nqwnr_KSW-A"
+        }
+      ]
+    },
     {
       "query": "hank brown",
       "approx_searches": "500+",
       "published_at": "2026-11-27T17:20:00Z",
       "related_news_urls": [
         "https://www.kcci.com/article/iowa-football-hank-brown-high-school-coach-trent-dilfer/74542685",
-        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-        "https://sports.yahoo.com/college-football/articles/good-vs-evil-nebraska-vs-164500381.html"
+        "https://www.limapagi.id/en/dilfer-praises-iowa-quarterback-brown",
+        "https://247sports.com/video/the-use-of-hank-browns-running-ability-in-iowas-offense-swarmcast-14744667/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0",
       "image_credit": "KCCI",
@@ -26,18 +271,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0"
         },
         {
-          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-          "title": "Nebraska-Iowa: What we're looking for and final predictions",
-          "publisher": "247Sports",
+          "url": "https://www.limapagi.id/en/dilfer-praises-iowa-quarterback-brown",
+          "title": "Dilfer Praises Iowa QB Brown Ahead of Nebraska Rivalry Game",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4t-WRQj1c9ag7jvmTUaDur38s-O8db-SVS6hbuv_3cR4smY3gajJMOGjibXg"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/articles/good-vs-evil-nebraska-vs-164500381.html",
-          "title": "Good vs Evil: Nebraska vs Iowa – Live Discussion",
-          "publisher": "Yahoo Sports",
+          "url": "https://247sports.com/video/the-use-of-hank-browns-running-ability-in-iowas-offense-swarmcast-14744667/",
+          "title": "The Use Of Hank Brown's Running Ability In Iowa's Offense | SwarmCast",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSL6cV7voA82bI7j3MVajEhgcPcxmdSJ_j4jU0yM8nNWB2O2CjjLJhUdLJccM4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSJ33E3rTbD5Ra8HyGEWMPCufWxiJj-7fBeroC6_TrgMl19EBjLp6a4tvteQ"
         }
       ]
     },
@@ -78,16 +323,23 @@
     },
     {
       "query": "maple leafs vs bruins",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-27T17:10:00Z",
       "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/27/sports/bruins-maple-leafs-preview-november-27-matinee/",
         "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
-        "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112",
-        "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs"
+        "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWn9Zz4GmPuZNko9_I5_vsT152f8jD8qwFw9W1hcUoL47fO4ezrNexkNIlENA",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs8V5fOQdzpkTHp9WkXYXoNq9jQeYunmMZ-EO_9CGXOND1K74Rp9ePL_qU3bo",
+      "image_credit": "The Boston Globe",
       "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/27/sports/bruins-maple-leafs-preview-november-27-matinee/",
+          "title": "Maple Leafs at Bruins preview: Can Boston end its home struggles in Friday’s matinee?",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs8V5fOQdzpkTHp9WkXYXoNq9jQeYunmMZ-EO_9CGXOND1K74Rp9ePL_qU3bo"
+        },
         {
           "url": "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
           "title": "Black Friday Rivalry Showdown: Bruins Host Maple Leafs",
@@ -101,258 +353,6 @@
           "publisher": "NHL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHBgVMiMwnR9UWPM5J1cKhpBDzFbEwFqgjNxcqDAt59UrKvM_ZgLF2ZV0Ahqs"
-        },
-        {
-          "url": "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs",
-          "title": "Public Skate: Bruins vs. Leafs",
-          "publisher": "Stanley Cup of Chowder",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykrEI9Pd8nogBqjJW2gkGgwAelm_ob75Gbp2kfM4iLL0-1Ux6c-dNuBaFTwA"
-        }
-      ]
-    },
-    {
-      "query": "mammoth vs predators",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/utah/news/utah-starts-back-to-back-in-nashville-game-preview-11-27-26",
-        "https://sports.yahoo.com/nhl/articles/nashville-predators-vs-utah-mammoth-110117845.html",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-nashville-predators-prediction-odds-2026-11-27/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1EEs7DCQL2eWWRAL2IcdvC87twY-zDvh61wa_M3NvURujnw4DAoaZtUayXD0",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/utah/news/utah-starts-back-to-back-in-nashville-game-preview-11-27-26",
-          "title": "Utah Starts Back-to-Back in Nashville",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1EEs7DCQL2eWWRAL2IcdvC87twY-zDvh61wa_M3NvURujnw4DAoaZtUayXD0"
-        },
-        {
-          "url": "https://sports.yahoo.com/nhl/articles/nashville-predators-vs-utah-mammoth-110117845.html",
-          "title": "Nashville Predators vs Utah Mammoth, live updates, stats, how to watch",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKSCrXGGYMZuRLc5J-Rn8wQ8sytxjb4Ehk1kap6z8AV62wJGvK5LDkdl3-hKk"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/utah-mammoth-vs-nashville-predators-prediction-odds-2026-11-27/",
-          "title": "Utah Mammoth vs Nashville Predators Prediction, Picks & Odds | 27 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF9CohVz3WZ1eDnyahzOT5jUgYlJeeVqv_d93QDYx-LgvgvCh63w8-5qEGdiU"
-        }
-      ]
-    },
-    {
-      "query": "flames vs devils",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/devils/news/preview-2026020401",
-        "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
-        "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE",
-      "image_credit": "NHL.com",
-      "news": [
-        {
-          "url": "https://www.nhl.com/devils/news/preview-2026020401",
-          "title": "Kolyachonok, Silayev to Play vs. Flames | PREVIEW",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE"
-        },
-        {
-          "url": "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
-          "title": "2026-27 Gamethread #26: New Jersey Devils vs. Calgary Flames",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNT8byS-tOsoRbz-Yl4pTatrZ2_PEne0Wvhn4UmWkywN_4s53xK17VD902wM8"
-        },
-        {
-          "url": "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames",
-          "title": "Game Preview #26: New Jersey Devils vs. Calgary Flames",
-          "publisher": "All About The Jersey",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwrdi3ABvBcVdvFVjGNI95kHjb1wKNkxb5EZB_AA3DobU2fN5-JRPxjCYG9I"
-        }
-      ]
-    },
-    {
-      "query": "brian kelly",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T17:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7814726/2026/11/27/lsu-sec-membership-independence/",
-        "https://frontofficesports.com/article/sec-coordinated-media-campaign-against-lsu-emails-show/",
-        "https://www.cbssports.com/college-basketball/news/sec-vs-lsu-drama-nate-oats-jamie-dixon-eligibility-cases-will-wade-rj-luis/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPowDUx5OuyR1LSrOPwrKjQxPPcm1eiYJ8rrZCnrsAIiNdmCRzWoa3IhM5BRM",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7814726/2026/11/27/lsu-sec-membership-independence/",
-          "title": "Could LSU survive as an independent? Experts are skeptical",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPowDUx5OuyR1LSrOPwrKjQxPPcm1eiYJ8rrZCnrsAIiNdmCRzWoa3IhM5BRM"
-        },
-        {
-          "url": "https://frontofficesports.com/article/sec-coordinated-media-campaign-against-lsu-emails-show/",
-          "title": "SEC Coordinated Media Campaign Against LSU, Emails Show",
-          "publisher": "Front Office Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTevpIdBhMG7WZ1Inr1ia3I131SJIqQ0VlLm5h49MOfCO3VjqIKVv76oZIgI4E"
-        },
-        {
-          "url": "https://www.cbssports.com/college-basketball/news/sec-vs-lsu-drama-nate-oats-jamie-dixon-eligibility-cases-will-wade-rj-luis/",
-          "title": "As college sports world waits on SEC vs. LSU drama, Nate Oats and Jamie Dixon sound off on eligibility cases",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNkoOPt7cae5ONMo6pg_kM5HRNsswpwTfbBDilZZjyTLMiG31kL_HJ-8KBZCc"
-        }
-      ]
-    },
-    {
-      "query": "college football",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-27T17:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-        "https://www.cbssports.com/college-football/news/college-football-schedule-2026-rivalry-week-13-tv-channels-streaming-saturday-kickoff-times/",
-        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/college-football-schedule-2026-rivalry-week-13-tv-channels-streaming-saturday-kickoff-times/",
-          "title": "College football schedule 2026: What to watch in Week 13, TV channels, streaming, Saturday kickoff times",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUlWv8ouRBpV9RoMHDLv2K7CbIFDaslTZkh2GjnONRZ6qEQ3gFsxPMx364H0"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
-        }
-      ]
-    },
-    {
-      "query": "deb fischer",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T17:00:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/sen-deb-fischer-husband-bruce-suicide/",
-        "https://nypost.com/2026/11/27/us-news/real-cause-of-death-of-deb-fischers-husband-revealed-after-nebraska-senators-office-first-said-he-passed-away-peacefully/",
-        "https://www.yahoo.com/news/politics/articles/republican-senator-releases-grim-death-172831774.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBgOau16aNwz7-dK1g2UAwsyhre5-jqEnEhIuxfoZlug8zBKop6siR4UZy3oI",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/sen-deb-fischer-husband-bruce-suicide/",
-          "title": "Sen. Deb Fischer's husband died by suicide, her office says",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBgOau16aNwz7-dK1g2UAwsyhre5-jqEnEhIuxfoZlug8zBKop6siR4UZy3oI"
-        },
-        {
-          "url": "https://nypost.com/2026/11/27/us-news/real-cause-of-death-of-deb-fischers-husband-revealed-after-nebraska-senators-office-first-said-he-passed-away-peacefully/",
-          "title": "Real cause of death of Deb Fischer’s husband revealed after Nebraska senator’s office first said he ‘passed away peacefully’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUljBg9xxBwRTm-3_6yslb8nDErqgK9s6hnHb3uHrd0UShJEQwAjoiT7ZPoCI"
-        },
-        {
-          "url": "https://www.yahoo.com/news/politics/articles/republican-senator-releases-grim-death-172831774.html",
-          "title": "Republican Senator Releases Grim Update After Death of Husband: ‘Upon Further Investigation…’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQenypV9Rcx32Jz0j9lQvhYBiBLO1wKF7W87z_zz1yEsoJf15XWLwjSrelf_xI"
-        }
-      ]
-    },
-    {
-      "query": "ariana grande",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T17:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
-        "https://www.instyle.com/meet-the-parents-franchise-cast-then-and-now-12249517",
-        "https://www.cbc.ca/news/entertainment/focker-in-law-review-9.7438169"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
-          "title": "‘Focker In-Law’ Review: Ariana Grande Steals the Show",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4"
-        },
-        {
-          "url": "https://www.instyle.com/meet-the-parents-franchise-cast-then-and-now-12249517",
-          "title": "The ‘Meet the Parents’ Cast, Then and Now (and Who Didn’t Return for ‘Focker-in-Law’)",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCiZ_etR6WpA3i612aPDdYnadE752WvmKa67jZsr3BGpz_9leLkaj-u28OfA"
-        },
-        {
-          "url": "https://www.cbc.ca/news/entertainment/focker-in-law-review-9.7438169",
-          "title": "Focker-In-Law isn't terrible. It's just a sitcom",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvAoSbPDnTRBWsHOUh_kyMx8UNtAYNgZ1hc5WSCOxa4u9k-G6pdqfY8frWQa8"
-        }
-      ]
-    },
-    {
-      "query": "klarna",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T17:00:00Z",
-      "related_news_urls": [
-        "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
-        "https://www.benzinga.com/trading-ideas/long-ideas/26/11/63663014/affirm-stock-holiday-bnpl-growth",
-        "https://fox4beaumont.com/news/nation-world/looking-for-holiday-deals-adobe-forecasts-peak-discounts-on-electronics-toys-and-more"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuPuVXphbjZsktDc7UOrvWbEdcdz9WxTD7MDl4Yf5lKb4c16xl1qz_kegnwLM",
-      "image_credit": "Digital Commerce 360",
-      "news": [
-        {
-          "url": "https://www.digitalcommerce360.com/2026/11/25/adobe-online-holiday-spending-data/",
-          "title": "Adobe data shows online holiday spending up 9.1% ahead of Thanksgiving",
-          "publisher": "Digital Commerce 360",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuPuVXphbjZsktDc7UOrvWbEdcdz9WxTD7MDl4Yf5lKb4c16xl1qz_kegnwLM"
-        },
-        {
-          "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/11/63663014/affirm-stock-holiday-bnpl-growth",
-          "title": "Affirm Stock: Should Investors Bet on Holiday BNPL Growth? - PayPal Holdings (NASDAQ:PYPL), Affirm Holdin",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRp07ewZ-M_ewLGgMYVgmEuvkwv5UAO4uaLegDtDEt_3F213ShWgDgp-1AHfMI"
-        },
-        {
-          "url": "https://fox4beaumont.com/news/nation-world/looking-for-holiday-deals-adobe-forecasts-peak-discounts-on-electronics-toys-and-more",
-          "title": "Looking for holiday deals? Adobe forecasts peak discounts on electronics, toys and more",
-          "publisher": "KBTV Fox 4 Beaumont",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg5wZM9HUMNNbfCERp4-SmGraQLcyDEhiFJQvyI0xo16RFFqq6osF148-APa0"
         }
       ]
     }
