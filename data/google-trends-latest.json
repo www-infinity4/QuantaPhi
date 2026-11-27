@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T22:01:05.319964Z",
+  "checked_at": "2026-11-27T22:31:13.215293Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "rangers vs blackhawks",
+      "query": "villanova vs kansas",
       "approx_searches": "1000+",
-      "published_at": "2026-11-27T21:40:00Z",
+      "published_at": "2026-11-27T22:10:00Z",
       "related_news_urls": [
-        "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-27-2026",
-        "https://sports.yahoo.com/nhl/articles/blackhawks-vs-rangers-projected-lineup-174357702.html",
-        "https://www.si.com/nhl/rangers/onsi/gameday/banged-up-ny-rangers-change-lineup-ahead-of-play-at-chicago"
+        "https://www.vuhoops.com/villanova-basketball/35794/villanovas-last-win-looking-worse-wildcats-with-another-chance-friday",
+        "https://sports.yahoo.com/mens-college-basketball/articles/villanova-kansas-open-game-thread-205700976.html",
+        "https://www2.ljworld.com/sports/ku-mens-basketball/2026/nov/25/preview-ku-mens-basketball-to-host-villanova-on-black-friday/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGkapr6h92iFnIvBIC8Oext6d7xd31nyap9OPk1dfqX8FnpcC0fTx0FTe1q6E",
-      "image_credit": "NHL.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvZC-3pcrgbGHBVSrJ0Ru82Lg2NDdePxHrFe2mvcI9MwQFODWlaMU_dVFivg",
+      "image_credit": "VU Hoops",
       "news": [
         {
-          "url": "https://www.nhl.com/news/nhl-on-tap-news-and-notes-november-27-2026",
-          "title": "NHL On Tap: Kantserov looks to stay hot for Blackhawks against Rangers",
-          "publisher": "NHL.com",
+          "url": "https://www.vuhoops.com/villanova-basketball/35794/villanovas-last-win-looking-worse-wildcats-with-another-chance-friday",
+          "title": "Villanova’s Last Win Looking Worse, Wildcats With Another Chance Friday",
+          "publisher": "VU Hoops",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGkapr6h92iFnIvBIC8Oext6d7xd31nyap9OPk1dfqX8FnpcC0fTx0FTe1q6E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvZC-3pcrgbGHBVSrJ0Ru82Lg2NDdePxHrFe2mvcI9MwQFODWlaMU_dVFivg"
         },
         {
-          "url": "https://sports.yahoo.com/nhl/articles/blackhawks-vs-rangers-projected-lineup-174357702.html",
-          "title": "Blackhawks Vs Rangers: Projected Lineup, How To Watch, & More Ahead Of Game 26",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/villanova-kansas-open-game-thread-205700976.html",
+          "title": "Villanova at Kansas: Open Game Thread",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM7usbibCBMxtUQjOW3aUz_bcffnKETykdZNNq_0Oths5eRNs3OQVsfWJKQgE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFDZnMvhr8h9Tl9mGT728dU01gH-EQSdMbFd5lFTLeQ5TG1-28vatvO8Iqrvs"
         },
         {
-          "url": "https://www.si.com/nhl/rangers/onsi/gameday/banged-up-ny-rangers-change-lineup-ahead-of-play-at-chicago",
-          "title": "Banged-up NY Rangers Change Lineup Ahead of Play at Chicago",
-          "publisher": "Sports Illustrated",
+          "url": "https://www2.ljworld.com/sports/ku-mens-basketball/2026/nov/25/preview-ku-mens-basketball-to-host-villanova-on-black-friday/",
+          "title": "Preview: KU men’s basketball to host Villanova on Black Friday",
+          "publisher": "Lawrence Journal-World",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuzCMCNGy3ssWLQ53ddJP8rYu3ajPxqsadxWvJwPNui2z9I0qMDF-I9wmN6XM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6V6qWm-M0cKFaCUsEgUqKcThaxDxeGW_tDuuXqVZeGBlVUxSKrjCcNy3HZcg"
         }
       ]
     },
     {
-      "query": "lsu vs villanova",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T21:40:00Z",
+      "query": "roman wilson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T22:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/womens-college-basketball/story/_/id/50586432/womens-basketball-2026-2027-power-rankings-top-16-teams",
-        "https://sports.yahoo.com/womens-college-basketball/articles/kim-mulkeys-lsu-team-answers-200002266.html",
-        "https://www.espnlacrosse.com/2026/11/25/power-rankings-south-carolina-still-the-1-and-lsus-schedule-heating-up/"
+        "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
+        "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
+        "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjI1KSf3K7uLBLwqEfapgOlOSoh52wbTj1ASMxGcPgdUkTkSBFC4SLP5wNkzQ",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI",
+      "image_credit": "Steelers.com",
       "news": [
         {
-          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50586432/womens-basketball-2026-2027-power-rankings-top-16-teams",
-          "title": "UConn lost again, South Carolina still No. 1, and LSU's schedule is heating up",
+          "url": "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
+          "title": "Steelers make roster moves ahead of Eagles game",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
+          "title": "Steelers get massive defensive boost vs. Broncos",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUhPnCvPd2c2g6IzE1LKDrB5Hz5QGETPlqZQx9IYTYkV6ExfrWs4xZMGRrF4A"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
+          "title": "Steelers activate WR Roman Wilson off IR for Eagles game",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjI1KSf3K7uLBLwqEfapgOlOSoh52wbTj1ASMxGcPgdUkTkSBFC4SLP5wNkzQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/womens-college-basketball/articles/kim-mulkeys-lsu-team-answers-200002266.html",
-          "title": "Kim Mulkey's LSU Team Is About to Get Answers It Has Been Waiting For",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4sAF--wYM_WU-37553QGfH0RcGiKiKoa0nR5Dyak0Rp4kCnZ22ofEHKJim9k"
-        },
-        {
-          "url": "https://www.espnlacrosse.com/2026/11/25/power-rankings-south-carolina-still-the-1-and-lsus-schedule-heating-up/",
-          "title": "Power Rankings: South Carolina still the 1 and LSU’s schedule heating up",
-          "publisher": "ESPN La Crosse 105.5",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzeQiIi1-rl5SnByyQLyZe-At3BSPZXRE1a6oo9HehO3QaPGsvYYWMLmFnXdw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHgRXSi9I3YMbWRTnMKMmPeGh-bmnlT3SeHftVjWyzsuuv-fRYYNr_RGR9N5o"
         }
       ]
     },
     {
-      "query": "st louis blues",
+      "query": "fluminense vs cruzeiro",
       "approx_searches": "1000+",
-      "published_at": "2026-11-27T21:40:00Z",
+      "published_at": "2026-11-27T22:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nhl/articles/blues-grit-beat-stars-tight-204813329.html",
-        "https://www.nhl.com/blues/news/preview-blues-vs-stars-11272026",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/"
+        "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/27/fluminense-x-cruzeiro-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+        "https://www.otempo.com.br/sports/cruzeiro/2026/11/27/cruzeiro-enfrenta-fabio-pela-10-vez-desde-quando-goleiro-foi-para-o-fluminense",
+        "https://www.terra.com.br/esportes/fluminense/marcao-recebe-lista-com-12-jogadores-no-fluminense,53046b014ec7d81274457bf9017da9f5m0zkj2fj.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpIVy8u_KBgWUPz5RAz3Sbt3kTcJemkE14RpaohwbOlifo886VKJ0MdvwJkjc",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkcvxrFcWgmw7ghWgpNR0mmd3nRO46vyh79FYcWd-trTojkwveqtQT4s_Lih0",
+      "image_credit": "ge",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nhl/articles/blues-grit-beat-stars-tight-204813329.html",
-          "title": "Blues Need Grit To Beat Stars In Tight Central Race",
-          "publisher": "Yahoo Sports",
+          "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/27/fluminense-x-cruzeiro-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "title": "Fluminense x Cruzeiro: onde assistir ao vivo, horário e escalações",
+          "publisher": "ge",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpIVy8u_KBgWUPz5RAz3Sbt3kTcJemkE14RpaohwbOlifo886VKJ0MdvwJkjc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkcvxrFcWgmw7ghWgpNR0mmd3nRO46vyh79FYcWd-trTojkwveqtQT4s_Lih0"
         },
         {
-          "url": "https://www.nhl.com/blues/news/preview-blues-vs-stars-11272026",
-          "title": "Preview: Blues vs. Stars | St. Louis Blues",
-          "publisher": "NHL.com",
+          "url": "https://www.otempo.com.br/sports/cruzeiro/2026/11/27/cruzeiro-enfrenta-fabio-pela-10-vez-desde-quando-goleiro-foi-para-o-fluminense",
+          "title": "Cruzeiro enfrenta Fábio pela 10ª vez desde quando goleiro foi para o Fluminense",
+          "publisher": "O Tempo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQzBMLqXJE_7xvBT2GRY3KvyJyCA5CBni64zbgdvqoeq7R-lqdJVwWFm7tDeg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrt6TMcpEeQ258SJi-7-1p1VH0k0J9UpRhWJcTJx7AJtx2tQuiTN_VcmdXS8"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/",
-          "title": "Dallas Stars vs St Louis Blues Prediction, Picks & Odds | 27 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.terra.com.br/esportes/fluminense/marcao-recebe-lista-com-12-jogadores-no-fluminense,53046b014ec7d81274457bf9017da9f5m0zkj2fj.html",
+          "title": "Marcão recebe lista com 12 jogadores no Fluminense",
+          "publisher": "Terra",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhqz9JTzwHH6B89-x75QW28PC7N10OZN9LS_Avv7dYqa_MvTsojiVXXIY3ZHE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFEoEDYgCYyBHzrKh0JnrHOoG9xRWO9kwWkpmDI7GWp-idwsGt_FZIPDhoiFQ"
         }
       ]
     },
     {
-      "query": "cam heyward",
+      "query": "dj uiagalelei",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T21:40:00Z",
+      "published_at": "2026-11-27T22:10:00Z",
       "related_news_urls": [
-        "https://bleacherreport.com/articles/25538089-steelers-players-reaction-aaron-rodgers-exit-mike-mccarthy-remarks-revealed-new-nfl-rumors",
-        "https://www.espn.com/video/clip/_/id/50611852/does-mike-mccarthy-players-backing-steelers-locker-room",
-        "https://sports.yahoo.com/nfl/articles/cam-heyward-drops-obvious-admission-204649655.html"
+        "https://www.chargers.com/news/sign-quarterback-jake-browning-to-active-roster",
+        "https://bleacherreport.com/articles/25537921-chargers-sign-new-qb-contract-justin-herbert-injured-concussion-protocol",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-sign-jake-browning-to-active-roster"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM0WGxQrGYWVCOGaJvjyNSXzOvUKwfO7DOMGZrHvL7NEXtBot8HmH9wRVH3I8",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q9wQ4LJ_mb6yrw2vCNBiLVtno6ZKEnZGF_ah8lu0aN7_0vzicexDKwnjspY",
+      "image_credit": "Los Angeles Chargers",
       "news": [
         {
-          "url": "https://bleacherreport.com/articles/25538089-steelers-players-reaction-aaron-rodgers-exit-mike-mccarthy-remarks-revealed-new-nfl-rumors",
-          "title": "Steelers' Players Reaction to Aaron Rodgers' Exit, Mike McCarthy Remarks Revealed in New NFL Rumors",
+          "url": "https://www.chargers.com/news/sign-quarterback-jake-browning-to-active-roster",
+          "title": "Los Angeles Chargers Sign Quarterback Jake Browning to Active Roster",
+          "publisher": "Los Angeles Chargers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q9wQ4LJ_mb6yrw2vCNBiLVtno6ZKEnZGF_ah8lu0aN7_0vzicexDKwnjspY"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537921-chargers-sign-new-qb-contract-justin-herbert-injured-concussion-protocol",
+          "title": "Chargers Sign New QB to Contract with Justin Herbert Injured in Concussion Protocol",
           "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTM0WGxQrGYWVCOGaJvjyNSXzOvUKwfO7DOMGZrHvL7NEXtBot8HmH9wRVH3I8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFd-A5kI505NKkxKJ0AG7jjHFas4DqYrKazUYz5JAXliKgp8FRGaP1UyVhCyU"
         },
         {
-          "url": "https://www.espn.com/video/clip/_/id/50611852/does-mike-mccarthy-players-backing-steelers-locker-room",
-          "title": "Does Mike McCarthy still have players' backing in Steelers locker room?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNDuOC8NeAju9U4e9qaFAvvAEmPHLTRu4CwJHX380DO_6WWdSQ3YaYXcVCNBQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/cam-heyward-drops-obvious-admission-204649655.html",
-          "title": "Cam Heyward drops obvious admission on Steelers’ current situation",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyGxiG6AczoDz_IvBKaw6Yvoym-7eH76Z5w-f_okKSK8_aE-uNt7NRoVNTlBA"
-        }
-      ]
-    },
-    {
-      "query": "wwe survivor series 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T21:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/wwe/story/_/id/50601087/wwe-survivor-series-wargames-2026-roundtable",
-        "https://bleacherreport.com/articles/25537602-final-picks-bloodline-vs-946-usa-vs-mexico-and-wwe-survivor-series-wargames-2026-match-card",
-        "https://www.cbssports.com/wwe/news/wwe-survivor-series-2026-predictions-card-matches/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRofd_ZXLov85kDk0oychnhUOsYh7h-DbtnIdvjcNG3gEL1sJ9aXzP6y9G7eEw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/wwe/story/_/id/50601087/wwe-survivor-series-wargames-2026-roundtable",
-          "title": "WWE Survivor Series 2026 roundtable: Can The 946 beat The Bloodline in WarGames?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRofd_ZXLov85kDk0oychnhUOsYh7h-DbtnIdvjcNG3gEL1sJ9aXzP6y9G7eEw"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537602-final-picks-bloodline-vs-946-usa-vs-mexico-and-wwe-survivor-series-wargames-2026-match-card",
-          "title": "Final Picks for Bloodline vs. 946, USA vs. Mexico and WWE Survivor Series WarGames 2026 Match Card",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_ZFMgtwKTn0oX44oyD81oppBHmhESL2kdrS4JPLyopQ-N0Ok6xPehiFBFdsM"
-        },
-        {
-          "url": "https://www.cbssports.com/wwe/news/wwe-survivor-series-2026-predictions-card-matches/",
-          "title": "WWE Survivor Series 2026 predictions: Match card breakdown with expert picks in Houston",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
-        }
-      ]
-    },
-    {
-      "query": "jumanji open world",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T21:30:00Z",
-      "related_news_urls": [
-        "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
-        "https://www.imdb.com/video/vi635292185/",
-        "https://www.96fm.com.au/competition/win-tickets-to-a-special-preview-screening-event-of-jumanji-open-world/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/jumanji-open-world-vr-experience-december-2026/",
-          "title": "‘Jumanji’ Officially Expands With New Release Ahead of Final Movie",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8xpCuhyc5Wh_hS9PiW2JDAToPqkgAKK6v1OLdoJgo3oK2pJoD14LoKkjUSUw"
-        },
-        {
-          "url": "https://www.imdb.com/video/vi635292185/",
-          "title": "Jumanji: Open World: One Last Adventure - Featurette",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq2PKpsBmgx4Ko00Jg5dA8DxKwySjzLItZf-CrHER8fwsMyHS91AlM26yZ6Xs"
-        },
-        {
-          "url": "https://www.96fm.com.au/competition/win-tickets-to-a-special-preview-screening-event-of-jumanji-open-world/",
-          "title": "Win tickets to a special preview screening event of Jumanji: Open World",
-          "publisher": "GOLD96FM",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5ZZpGEdZ7Y-IUIiqjS25S5nJphQmOxzyrzUt4K21V4Iz_y-9S16VgnTiFGh0"
-        }
-      ]
-    },
-    {
-      "query": "emmanuel emegha",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T21:30:00Z",
-      "related_news_urls": [
-        "https://www.chelseafc.com/en/news/article/xabi-alonso-on-changes-for-forest-and-fundamentals-of-football",
-        "https://weaintgotnohistory.sbnation.com/premier-league/174351/moises-caicedo-wesley-fofana-available-for-selection-for-chelsea-against-nottingham-forest",
-        "https://www.espn.com/soccer/story/_/id/50554949/chelsea-leeds-united-moises-caicedo-injury-xabi-alonso"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3lPH6pUDMcmQGZJ5DiQNAsFZRKKOic_vqZtaaxgHYYbIFq2MAvNGvN9hSfM",
-      "image_credit": "Chelsea Football Club",
-      "news": [
-        {
-          "url": "https://www.chelseafc.com/en/news/article/xabi-alonso-on-changes-for-forest-and-fundamentals-of-football",
-          "title": "Xabi Alonso on changes for Forest and 'fundamentals of football' | News | Official Site",
-          "publisher": "Chelsea Football Club",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU3lPH6pUDMcmQGZJ5DiQNAsFZRKKOic_vqZtaaxgHYYbIFq2MAvNGvN9hSfM"
-        },
-        {
-          "url": "https://weaintgotnohistory.sbnation.com/premier-league/174351/moises-caicedo-wesley-fofana-available-for-selection-for-chelsea-against-nottingham-forest",
-          "title": "Moisés Caicedo, Wesley Fofana available for selection for Chelsea against Nottingham Forest",
-          "publisher": "We Ain't Got No History",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj9F_drJT68XaTpQOUH_NO0L7jgH_G5UsTIhPn9X4Fx6X-zgTQvbqYHVZ3eNU"
-        },
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50554949/chelsea-leeds-united-moises-caicedo-injury-xabi-alonso",
-          "title": "Chelsea in 'fragile moment' as Caicedo injury adds to pain of Leeds rout",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QhuRZP5Cu0np-xeYpZpnKASQKZ9FDx3wabpHM19LTQBCz3NXDoNDJz4p-5o"
-        }
-      ]
-    },
-    {
-      "query": "thanksgiving food poisoning florida",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T21:20:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/us-news/2026/nov/27/thanksgiving-meal-florida-mass-casualty-food-poisoning",
-        "https://www.nbcmiami.com/news/local/10-sick-after-possible-food-poisoning-at-leon-medical-center-fire-rescue-says/3892963/",
-        "https://www.miamiherald.com/news/local/community/miami-dade/article318259454.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFOsncjkPv1QoIfApcYx1H-ZxwovUsRy5zQc7OEYFYy05Rraxukm9U3HL2mtM",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/us-news/2026/nov/27/thanksgiving-meal-florida-mass-casualty-food-poisoning",
-          "title": "Thanksgiving meal in Florida leads to mass food poisoning incident",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSFOsncjkPv1QoIfApcYx1H-ZxwovUsRy5zQc7OEYFYy05Rraxukm9U3HL2mtM"
-        },
-        {
-          "url": "https://www.nbcmiami.com/news/local/10-sick-after-possible-food-poisoning-at-leon-medical-center-fire-rescue-says/3892963/",
-          "title": "18 sick after possible food poisoning during luncheon at Leon Medical HQ; patients not affected",
-          "publisher": "NBC 6 South Florida",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMXTmOTT1qu9wpRm1zNqWEVCfcYWjLbjWQpfgQdwsDNQ9NAKlSVbjVUsqkB10"
-        },
-        {
-          "url": "https://www.miamiherald.com/news/local/community/miami-dade/article318259454.html",
-          "title": "18 sickened with food poisoning at Leon Health in Doral, medics say",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTIfmpmqRRH4lFwviKiPO3CFhBKn19QIDlamPfYfe6Bks1R5dTIIIuhiL-2mgM"
-        }
-      ]
-    },
-    {
-      "query": "kona takahashi",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T21:20:00Z",
-      "related_news_urls": [
-        "https://www.mlb.com/news/kona-takahashi-diamondbacks-deal",
-        "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-27/brewers-bring-in-sem-robberse-on-minor-league-deal",
-        "https://www.mlbtraderumors.com/2026/11/diamondbacks-to-sign-kona-takahashi.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRvOhzp9VQ9j9NtYiHH3wvnA4B4T2GjsHVnL8bzuBPmU60ffEmBv9UCA7EjQA",
-      "image_credit": "MLB.com",
-      "news": [
-        {
-          "url": "https://www.mlb.com/news/kona-takahashi-diamondbacks-deal",
-          "title": "D-backs nab Japanese righty Takahashi on 1-year deal (report)",
-          "publisher": "MLB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRvOhzp9VQ9j9NtYiHH3wvnA4B4T2GjsHVnL8bzuBPmU60ffEmBv9UCA7EjQA"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/baseball/player-news/2026-11-27/brewers-bring-in-sem-robberse-on-minor-league-deal",
-          "title": "Brewers bring in Sem Robberse on minor league deal",
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-sign-jake-browning-to-active-roster",
+          "title": "Chargers sign Jake Browning to active roster",
           "publisher": "NBC Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4PQ2AimQjCFk4sO8BIhd7RVgSknjBl5VfkD_AEAty1tzI5LHXZtf52vbgZaY"
-        },
-        {
-          "url": "https://www.mlbtraderumors.com/2026/11/diamondbacks-to-sign-kona-takahashi.html",
-          "title": "Diamondbacks To Sign Kona Takahashi",
-          "publisher": "MLB Trade Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdIO9lSjmPH5gW9Yxjm3_KJ1X3CLOnis2G7J2PVkXfMRtP0x6RUZssuiGleI4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc5FmBMV3LcJX3SwGoA55MB-9N3FI6DEnx4MWPUq9aIWFSyyMRHwbGd0YRg70"
         }
       ]
     },
     {
-      "query": "kristen bell",
+      "query": "kentucky vs maine",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T21:20:00Z",
+      "published_at": "2026-11-27T22:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/dax-shepard-admits-depression-amid-065042686.html",
-        "https://www.the-independent.com/bulletin/culture/dax-shepard-viral-instagram-kristen-bell-b3091469.html",
-        "https://www.imdb.com/news/ni66125727/?ref_=ttnw_art_perm"
+        "https://ukathletics.com/news/2026/11/26/big-blue-preview-no-11-9-kentucky-plays-maine-south-dakota-state-in-daytona-beach-classic/",
+        "https://www.aseaofblue.com/kentucky-womens-basketball/189127/no-11-kentucky-womens-basketball-vs-maine-preview-and-how-to-watch",
+        "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-11-kentucky-wbb-heads-south-for-two-games-at-the-daytona-beach-classic/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MTsrl0r17EJmUCm80boNThhJ7pl6CQsuy4UBb3Jl3UI47touzus3LRDQaAI",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy8M0WyNvZ_f_sCSzPX2N2MFxYf1CLQnq7Fkf9-v_GHkkr5wftKKUbXJtqRI",
+      "image_credit": "UKAthletics",
+      "news": [
+        {
+          "url": "https://ukathletics.com/news/2026/11/26/big-blue-preview-no-11-9-kentucky-plays-maine-south-dakota-state-in-daytona-beach-classic/",
+          "title": "Big Blue Preview: No. 11/9 Kentucky Plays Maine, South Dakota State in Daytona Beach Classic",
+          "publisher": "UKAthletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy8M0WyNvZ_f_sCSzPX2N2MFxYf1CLQnq7Fkf9-v_GHkkr5wftKKUbXJtqRI"
+        },
+        {
+          "url": "https://www.aseaofblue.com/kentucky-womens-basketball/189127/no-11-kentucky-womens-basketball-vs-maine-preview-and-how-to-watch",
+          "title": "No. 11 Kentucky Women’s Basketball vs. Maine preview and how to watch",
+          "publisher": "A Sea Of Blue",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVCQbAo5OBY3mMVG7aam2X4uW4s8hiAwy9s3TO_JiC9nPnaiBzck9RyhN0dzQ"
+        },
+        {
+          "url": "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-11-kentucky-wbb-heads-south-for-two-games-at-the-daytona-beach-classic/",
+          "title": "PREVIEW: No. 11 Kentucky WBB heads south for two games at the Daytona Beach Classic",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOH0tpoa79SRwO3pwi-BVfnsS-QR9qkdS-AxOoqY8MMz3XJvsAhpk60ocB1JQ"
+        }
+      ]
+    },
+    {
+      "query": "dow jones industrial average",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T22:00:00Z",
+      "related_news_urls": [
+        "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
+        "https://www.barrons.com/articles/u-s-indexes-moved-upward-friday-sandisk-led-increases-bd5a0755",
+        "https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJZ_YetqtPfN1ikbdOefZHqsX7yY5kvDtuHKjoIng9T2jole8dsHYqdLtQ8Y",
+      "image_credit": "CNBC",
+      "news": [
+        {
+          "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
+          "title": "Dow rallies nearly 600 points to close out best week since 2022: Live updates",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJZ_YetqtPfN1ikbdOefZHqsX7yY5kvDtuHKjoIng9T2jole8dsHYqdLtQ8Y"
+        },
+        {
+          "url": "https://www.barrons.com/articles/u-s-indexes-moved-upward-friday-sandisk-led-increases-bd5a0755",
+          "title": "U.S. Indexes Moved Upward Friday; Sandisk Led Increases",
+          "publisher": "Barron's",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4Z09NNyLZgi8D5A-WkxTBGwh3NeFzp7OKkIEbwXtbKWr8NiA9UQOBba_acM4"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap",
+          "title": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap",
+          "publisher": "Bloomberg",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF7zj_DY3amPlroMmrBAvfGjcBmJa5KY02yJmo_7pgtHyBLf0BV9VDSkaByBs"
+        }
+      ]
+    },
+    {
+      "query": "martha stewart",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T22:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/martha-stewart-calls-one-type-212251193.html",
+        "https://pagesix.com/2026/11/27/celebrity-news/martha-stewart-reveals-what-she-loves-and-cant-stand-about-new-yorkers/",
+        "https://www.aol.com/articles/martha-stewart-says-she-considers-175306000.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwRDEqa1KbV1NvTQOT179Jj9_gLpAN8XQ0u_kUVaTxgJQ_LqO_mEvwBAzyRSU",
       "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dax-shepard-admits-depression-amid-065042686.html",
-          "title": "Dax Shepard Admits He’s in ‘Depression’ Amid Backlash Over His Marriage to Kristen Bell",
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/martha-stewart-calls-one-type-212251193.html",
+          "title": "Martha Stewart Calls Out the One Type of New Yorker She Can’t Stand",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MTsrl0r17EJmUCm80boNThhJ7pl6CQsuy4UBb3Jl3UI47touzus3LRDQaAI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwRDEqa1KbV1NvTQOT179Jj9_gLpAN8XQ0u_kUVaTxgJQ_LqO_mEvwBAzyRSU"
         },
         {
-          "url": "https://www.the-independent.com/bulletin/culture/dax-shepard-viral-instagram-kristen-bell-b3091469.html",
-          "title": "Dax Shepard makes candid admission about backlash over Kristen Bell marriage",
-          "publisher": "The Independent",
+          "url": "https://pagesix.com/2026/11/27/celebrity-news/martha-stewart-reveals-what-she-loves-and-cant-stand-about-new-yorkers/",
+          "title": "Exclusive | Martha Stewart reveals what she loves — and can’t stand — about New Yorkers",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfMWE-OG64osR_h5CRW4q5q0FQPTI5igHfUl0nKw6JFXTFPorH4hSjp1Xrk-A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlofVvpYwFqo-Zxs2xp5iiQYyNJCkVdm08aSKByzf75G3P0lbW6fDcbgnK8xI"
         },
         {
-          "url": "https://www.imdb.com/news/ni66125727/?ref_=ttnw_art_perm",
-          "title": "Dax Shepard Responds To ‘Very Offensive’ Claims He’s An ‘Abusive Husband’ To Kristen Bell",
-          "publisher": "IMDb",
+          "url": "https://www.aol.com/articles/martha-stewart-says-she-considers-175306000.html",
+          "title": "Martha Stewart Says She Considers Herself a 'New Yorker': 'We're a Real Breed of People'",
+          "publisher": "AOL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQibXpIrXtHizaiQm4R5YMEBpo92LnxmcshQA646fl4wXEzXdI1-g0N8zx84no"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7YEg_9GWZNRR-u4PSplB35kOx5GL0LF77fG7trRYX3_SoHkKB19rNHL_PpIQ"
+        }
+      ]
+    },
+    {
+      "query": "kevin harvick",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T22:00:00Z",
+      "related_news_urls": [
+        "https://www.caranddriver.com/news/a74532859/stellantis-exits-wec-formula-e-racing/",
+        "https://sports.yahoo.com/nascar/articles/teeth-completely-knocked-kevin-harvick-184652401.html",
+        "https://www.motorsport.com/wec/news/what-peugeot-had-planned-for-its-abandoned-2027-wec-hypercar-/10877664/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx6IzJ65ITLFYbnD3vjvycVwjKa8ZzdjPZZlIyuzuYlb9dMkxbbl6cNV2_6eI",
+      "image_credit": "Car and Driver",
+      "news": [
+        {
+          "url": "https://www.caranddriver.com/news/a74532859/stellantis-exits-wec-formula-e-racing/",
+          "title": "Stellantis Exiting the WEC and Formula E to Focus on New Hi-Po Cars",
+          "publisher": "Car and Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx6IzJ65ITLFYbnD3vjvycVwjKa8ZzdjPZZlIyuzuYlb9dMkxbbl6cNV2_6eI"
+        },
+        {
+          "url": "https://sports.yahoo.com/nascar/articles/teeth-completely-knocked-kevin-harvick-184652401.html",
+          "title": "\"Get Your Teeth Completely Knocked In\"- Kevin Harvick Issues Blunt Warning Over Dodge's Cup Series Return",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj1iwqi_TMG-o0uTToU2f_EjU2aJeGV6Hd4Cl0ZuwEU9awqO6yQTB3_JPvWaw"
+        },
+        {
+          "url": "https://www.motorsport.com/wec/news/what-peugeot-had-planned-for-its-abandoned-2027-wec-hypercar-/10877664/",
+          "title": "What Peugeot had planned for its abandoned 2027 WEC Hypercar",
+          "publisher": "Motorsport.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZYqBnE0NWvCnMDjVbOcWeDI8H1Gq-XTETxsMmo7z_nxzKWkr0bn-qRfL3j0"
+        }
+      ]
+    },
+    {
+      "query": "duck hodges",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T21:50:00Z",
+      "related_news_urls": [
+        "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
+        "https://www.usmagazine.com/stylish/pictures/hottest-cmas-2026-couples-lainey-wilson-husband-duck-more/",
+        "https://journalarta.com/en/2026/11/19/devlin-hodges-lainey-wilson-marriage-football-career/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
+          "title": "All About Lainey Wilson’s Husband, Former NFL Player Devlin ‘Duck’ Hodges",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg"
+        },
+        {
+          "url": "https://www.usmagazine.com/stylish/pictures/hottest-cmas-2026-couples-lainey-wilson-husband-duck-more/",
+          "title": "Hottest Couples at the 2026 CMA Awards: Host Lainey Wilson and Husband Duck Hodges and More Sizzle",
+          "publisher": "Us Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRTLQmDoGu0XGI7kaED_5RLeu8J2M60HrD0D2BBuvqjwoRDDTcFkdJTD8A_lE"
+        },
+        {
+          "url": "https://journalarta.com/en/2026/11/19/devlin-hodges-lainey-wilson-marriage-football-career/",
+          "title": "Lainey Wilson and Devlin Hodges Married in Tennessee Cave",
+          "publisher": "JournalArta",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGHDZl3Da1o4BGlijfjoVwXfmD_GBtnBHKO3bJg_9aYwrOZTO6cOLXbf84rYQ"
+        }
+      ]
+    },
+    {
+      "query": "philadelphia phillies",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T21:50:00Z",
+      "related_news_urls": [
+        "https://www.si.com/mlb/phillies/onsi/phillies-must-sign-one-of-these-two-free-agents",
+        "https://sports.yahoo.com/mlb/articles/phillies-shift-scouting-focus-japan-140000818.html",
+        "https://www.thegoodphight.com/philadelphia-phillies-news/89670/phillies-news-teruaki-sato-corey-seager-freddy-peralta"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3KRqtX06D34j75ZjrukwAhvn5kP8pIqXX5d67mSeVeX5D5UseIsRDw1rdog",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/mlb/phillies/onsi/phillies-must-sign-one-of-these-two-free-agents",
+          "title": "Phillies Must Sign One of These Two Free Agents",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3KRqtX06D34j75ZjrukwAhvn5kP8pIqXX5d67mSeVeX5D5UseIsRDw1rdog"
+        },
+        {
+          "url": "https://sports.yahoo.com/mlb/articles/phillies-shift-scouting-focus-japan-140000818.html",
+          "title": "Should the Phillies shift their scouting focus from Japan to Latin America?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2hnHoL5udxy3jg6H79X7M7bz-7xMcOZAijiFdMyG70QqQuE_O-yn2GBoHWB8"
+        },
+        {
+          "url": "https://www.thegoodphight.com/philadelphia-phillies-news/89670/phillies-news-teruaki-sato-corey-seager-freddy-peralta",
+          "title": "Phillies news: Teruaki Sato, Corey Seager, Freddy Peralta",
+          "publisher": "The Good Phight",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNsmoh9ut8p3CAryBQ1m6hM4wITSkK2P5flsquTwTAUhg_ePOS5_6CrEsD9LA"
         }
       ]
     }
