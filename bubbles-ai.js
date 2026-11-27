@@ -10,6 +10,8 @@ window.__QuantaBubblesMounted=true;
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const FOLDER_API='https://bubbles-chat-folders.marvaseater.workers.dev/v1/folders';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
+// Vendored A- catalog, commit 70d23d8d109931eb40c3128d59e3501b9ed23a3e; routing metadata, never authorization.
+const LOCAL_PROGRAM_ROUTER_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-program-router.mjs');
 const LOCAL_RESONANCE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'workers/bubbles-tools/resonance.mjs');
 let streamVoice=null,voiceGeneration=0;
 // Core job acknowledgements must work in Android WebView even if module imports fail.
@@ -2623,6 +2625,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const thread=activeThread;
   let result;
   try{
+   const {routeProgram}=await import(LOCAL_PROGRAM_ROUTER_URL);
+   const route=routeProgram('resonance.calculate');
+   if(route.lane!=='browser'||route.status!=='route_only')throw Error('local_program_route_unavailable');
    const {localResonanceReply}=await import(LOCAL_RESONANCE_URL);
    result=localResonanceReply(spoken);
   }catch{
