@@ -3,16 +3,121 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T14:31:15.904670Z",
+  "checked_at": "2026-11-27T15:01:16.747575Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "al qadsiah vs al-fayha",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T14:30:00Z",
+      "related_news_urls": [
+        "https://www.football.com/ng/news/158760",
+        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
+        "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdqJjFF8ir_mHRU6qqKgOkzRe0ORKt97blOj_sGcIuIijm4ilJ0IuNXWHW190",
+      "image_credit": "Football.com",
+      "news": [
+        {
+          "url": "https://www.football.com/ng/news/158760",
+          "title": "Al Qadsiah vs Al-Fayha Preview and Betting Tips",
+          "publisher": "Football.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdqJjFF8ir_mHRU6qqKgOkzRe0ORKt97blOj_sGcIuIijm4ilJ0IuNXWHW190"
+        },
+        {
+          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
+          "title": "Al Qadsiah vs Al-Fayha: Where to Watch, TV Channel, Live Stream and Kick-Off Time",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE"
+        },
+        {
+          "url": "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412",
+          "title": "Al Qadsiah vs Al Fayha Preview & Prediction",
+          "publisher": "The Stats Zone",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaTw1Hc6DtJOa55-PeXzh24JSNVI8JkoLfjAGpPD-ab6d11TLKRHAWPgXsLx8"
+        }
+      ]
+    },
+    {
+      "query": "hackers breach air force",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T14:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+        "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/",
+        "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+          "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
+        },
+        {
+          "url": "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/",
+          "title": "Hackers break into US Air Force cloud computing platform: Report",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMZ4AP9qLy8KuUE8dv67nk6SL2wfQqZ_1m4oxADJno39badoBUGyF1VBQu_NQ"
+        },
+        {
+          "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+          "title": "US Air Force's cloud computing platform hacked",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGLuqvv-Ez0cmtDoowaAPs968_KgJSmz7LUtsaovEfiNQgxp1bL5vKZ-aeeQ"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 black friday",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T14:10:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal",
+        "https://www.imdb.com/news/ni66103001/",
+        "https://www.benzinga.com/news/retail-sales/26/11/63666474/gta-black-friday-deals-2026-best-gta-6-gta-5-and-gta-trilogy-discounts-on-ps5-xbox-pc-and-nintendo-switch"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP79ehX6vmZB6qmoxHEupuWXTwk_kJuLA-TCl7U-3F3Vwjs4Y5JyZv9pfBpwE",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal",
+          "title": "This Black Friday shopping hack could help you save $15 on 'GTA 6' for PS5",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP79ehX6vmZB6qmoxHEupuWXTwk_kJuLA-TCl7U-3F3Vwjs4Y5JyZv9pfBpwE"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66103001/",
+          "title": "GTA 6 Gets Its First Official Black Friday Discount",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpHCRle3l_J1nMyvoK03CDEiRMbLkkJY-cF15XgqA1FJbeD_AVh2WF0cFGRvg"
+        },
+        {
+          "url": "https://www.benzinga.com/news/retail-sales/26/11/63666474/gta-black-friday-deals-2026-best-gta-6-gta-5-and-gta-trilogy-discounts-on-ps5-xbox-pc-and-nintendo-switch",
+          "title": "GTA Black Friday Deals 2026: Best GTA 6, GTA 5 and GTA Trilogy Discounts on PS5, Xbox, PC and Nintendo Switch",
+          "publisher": "Benzinga",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVft80SzAAgJM2Y6NzcfgXGGZfpZzWQjs21ILdgzDg_OPbM-UQMHxOfkdJ3j0"
+        }
+      ]
+    },
     {
       "query": "kelly ripa",
       "approx_searches": "200+",
       "published_at": "2026-11-27T14:10:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-        "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
+        "https://www.limapagi.id/en/kelly-ripa-lola-fashion-style",
         "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
@@ -26,11 +131,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
         },
         {
-          "url": "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
-          "title": "Lola Consuelos Matches Tweed Outfits With Boyfriend in London",
+          "url": "https://www.limapagi.id/en/kelly-ripa-lola-fashion-style",
+          "title": "Kelly Ripa Shows Yacht Style as Daughter Lola Matches Boyfriend",
           "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSea1bARiLrAfjSC9Rdvnb5dRq77Ckk1yQT2HtXEth5OmxrFql061RQ5Zqku-0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSuH_sciyTgkLsGfC5HYwr8il6J0Pv6-wm-jB5UmmVJjHF4nJhnfUupwTbxYo"
         },
         {
           "url": "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/",
@@ -78,42 +183,42 @@
     },
     {
       "query": "pga tour",
-      "approx_searches": "5000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-27T13:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/golf/story/_/id/50583808/brooks-koepka-return-helps-3-golfers-improve-2027-status",
-        "https://golf.com/news/brooks-koepka-return-gift-max-mcgreevy/",
-        "https://theaugustapress.com/koepkas-return-allowed-3-players-to-move-up-a-spot-in-the-final-fedex-cup-standings/"
+        "https://www.pgatour.com/article/news/latest/2026/11/24/the-farmers-insurance-skins-game-black-friday-amazon-prime-video-brooks-koepka-jackson-koivun-wyndham-clark-justin-thomas",
+        "https://golf.com/news/2026-skins-game-primer-format-schedule-players-and-more/",
+        "https://golfwrx.com/790504/justin-thomas-the-skins-game-2026-witb/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA-jQG4BTID_8xJKw98ftFYQfMHz4aVso21b761H7Ll2EA1o6Bw_mwRbK0-8k",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkupLXFf62KsbL5-zzfH1Gk0_O-sx5bkMu6nCTQimKMt147Lj8BaV658yQIs",
+      "image_credit": "PGA Tour",
       "news": [
         {
-          "url": "https://www.espn.com/golf/story/_/id/50583808/brooks-koepka-return-helps-3-golfers-improve-2027-status",
-          "title": "Brooks Koepka's return helps 3 golfers improve 2027 status",
-          "publisher": "ESPN",
+          "url": "https://www.pgatour.com/article/news/latest/2026/11/24/the-farmers-insurance-skins-game-black-friday-amazon-prime-video-brooks-koepka-jackson-koivun-wyndham-clark-justin-thomas",
+          "title": "Expect big personalities, bigger stakes at 'The Farmers Insurance Skins Game'",
+          "publisher": "PGA Tour",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA-jQG4BTID_8xJKw98ftFYQfMHz4aVso21b761H7Ll2EA1o6Bw_mwRbK0-8k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkupLXFf62KsbL5-zzfH1Gk0_O-sx5bkMu6nCTQimKMt147Lj8BaV658yQIs"
         },
         {
-          "url": "https://golf.com/news/brooks-koepka-return-gift-max-mcgreevy/",
-          "title": "Brooks Koepka rule improves pro’s PGA Tour status for 2027",
+          "url": "https://golf.com/news/2026-skins-game-primer-format-schedule-players-and-more/",
+          "title": "2026 Skins Game primer: Format, schedule, players and more",
           "publisher": "GOLF.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQutvPKuxkOvPaBTB8EPOueVNjRv1PL3RFV6_Wv9h4_AHh6n2p3nOMEkJttg-4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXqoQdiUGouBPJ7BBf4-oTxRoL1kKo0ZKkZgtj09jbbHtJZD5Exx3LDpkcRJY"
         },
         {
-          "url": "https://theaugustapress.com/koepkas-return-allowed-3-players-to-move-up-a-spot-in-the-final-fedex-cup-standings/",
-          "title": "Koepka’s return allowed 3 players to move up a spot in the final FedEx Cup standings",
-          "publisher": "The Augusta Press",
+          "url": "https://golfwrx.com/790504/justin-thomas-the-skins-game-2026-witb/",
+          "title": "Justin Thomas’ The Skins Game 2026 WITB",
+          "publisher": "GolfWRX",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLkVpkQnmmVAZtWBeubXO_d2NiLOY__4PMXchv3S7F5DeAYLTiCrNG1y40WE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH7I9a6rLUBkeUgL_i1rge5sY0IaKpNGacYLzJ1EMql9TMg5jb1_1HWRcPVsM"
         }
       ]
     },
     {
       "query": "ron harper",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T13:40:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
@@ -221,138 +326,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-27T13:40:00Z",
       "related_news_urls": [
-        "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/",
-        "https://www.newsbreak.com/the-happiness-delivery-323615495/5007944196429-when-cardi-b-was-trying-to-show-the-cameras-their-new-mansion-but-offset-couldn-t-keep-his-hands-off-her",
-        "https://www.complex.com/music/a/alex-ocho/cardi-b-offset-like-what-mansion-lawsuit-settlement"
+        "https://www.complex.com/music/a/jose-martinez/cardi-b-responds-wealth-claim",
+        "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
+        "https://www.thespec.com/entertainment/music/hamilton-td-coliseum-cardi-b-concert/article_557564ff-b6b1-586e-946c-9ec285f9a461.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCfn62pckNGW_pGKT7zoiQsgVe3jdOoZz-mFqA-YSG3yImPTEYZhvyvvsfNI",
-      "image_credit": "Rolling Stone",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSJzYd5hapqzcikyn1hWTkLcgr0DWPsJu9Kjws_DmxFFiXhMbl5tuj6zrEX4A",
+      "image_credit": "Complex",
       "news": [
         {
-          "url": "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/",
-          "title": "Cardi B and Offset See Beverly Hills Mansion Lawsuit Dismissed After Settlement",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCfn62pckNGW_pGKT7zoiQsgVe3jdOoZz-mFqA-YSG3yImPTEYZhvyvvsfNI"
-        },
-        {
-          "url": "https://www.newsbreak.com/the-happiness-delivery-323615495/5007944196429-when-cardi-b-was-trying-to-show-the-cameras-their-new-mansion-but-offset-couldn-t-keep-his-hands-off-her",
-          "title": "When Cardi B was trying to show the cameras their new mansion, but Offset couldn’t keep his hands off her",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5weAGo74i01mAyJaj--wcJ1B8Nmn4WGTrJqA8617AKOnBdeycuvmHl0ZENw"
-        },
-        {
-          "url": "https://www.complex.com/music/a/alex-ocho/cardi-b-offset-like-what-mansion-lawsuit-settlement",
-          "title": "Cardi B and Offset Settle \"Like What\" Mansion Lawsuit Weeks Before Trial",
+          "url": "https://www.complex.com/music/a/jose-martinez/cardi-b-responds-wealth-claim",
+          "title": "Cardi B Responds to Fan Criticizing Her Year of Accomplishments Possible",
           "publisher": "Complex",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkim6fnnbcSwzFHvEeBJon1-25hM3U5uPOmcX9atUs1TyKYv11aaEL-RK-a0"
-        }
-      ]
-    },
-    {
-      "query": "gma deals and steals",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-        "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-        "https://cwibc.co.id/en/abc-news-black-friday-deals"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
-      "image_credit": "Good Morning America",
-      "news": [
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
-          "title": "Deals & Steals for Thanksgiving",
-          "publisher": "Good Morning America",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSJzYd5hapqzcikyn1hWTkLcgr0DWPsJu9Kjws_DmxFFiXhMbl5tuj6zrEX4A"
         },
         {
-          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-          "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
-          "publisher": "Yahoo",
+          "url": "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
+          "title": "Billboard Canada Women in Music 2026: Cardi B Is 'Globally That B—' & More Best Moments",
+          "publisher": "Billboard",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc"
         },
         {
-          "url": "https://cwibc.co.id/en/abc-news-black-friday-deals",
-          "title": "ABC News Features Black Friday Deals on Home and Travel Products",
-          "publisher": "cwibc.co.id",
+          "url": "https://www.thespec.com/entertainment/music/hamilton-td-coliseum-cardi-b-concert/article_557564ff-b6b1-586e-946c-9ec285f9a461.html",
+          "title": "Cardi B wondered ‘where is Hamilton?’ Now she says our crowd beat Toronto for her top Canadian memory",
+          "publisher": "The Spec",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwd08CM8PQCrQ4OO9qwgj0aLdX1dskrC-tqu9VnQtp7LCzImBOomVs_HMEiNI"
-        }
-      ]
-    },
-    {
-      "query": "ncaa football today",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://www.stltoday.com/sports/column/media-views/article_4c6b20fd-d1e4-44c5-b578-08afb0d61a2e.html",
-        "https://sports.yahoo.com/nfl/articles/black-friday-football-schedule-broncos-120019078.html",
-        "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-games-today-schedule-week-13-black-friday/92962503007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqYCG7kJz83OhGIXyhE0T3_XaXIZ9efEdZWfUQ9TwdwxHO4KiXuHMI79dutg",
-      "image_credit": "STLtoday.com",
-      "news": [
-        {
-          "url": "https://www.stltoday.com/sports/column/media-views/article_4c6b20fd-d1e4-44c5-b578-08afb0d61a2e.html",
-          "title": "Why the heck is there a Friday afternoon, not primetime, NFL game this week? Media Views",
-          "publisher": "STLtoday.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqYCG7kJz83OhGIXyhE0T3_XaXIZ9efEdZWfUQ9TwdwxHO4KiXuHMI79dutg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/black-friday-football-schedule-broncos-120019078.html",
-          "title": "Black Friday Football Schedule: Broncos vs. Steelers, Texas vs. Texas A&M and Every NFL and College Game on TV",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQapwANkdEv0JOIThhXwyoPFrCk7oG7NjNc5077SQKQr7bZWVAnQ22DNm4KcjQ"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-games-today-schedule-week-13-black-friday/92962503007/",
-          "title": "Are college football games on today? Time, TV, streaming for Black Friday schedule",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5ErYWseiHgcT8ZiwMPqMg33Lyd0Jm_gzJjEE5COxJFAMubsgbpscvrpCoz8I"
-        }
-      ]
-    },
-    {
-      "query": "dolar hoje",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://www1.folha.uol.com.br/mercado/2026/11/lula-indicou-trabuco-a-dilma-que-rejeitou-e-escolheu-levy-historia-e-contada-em-livro.shtml",
-        "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-repercute-mundo.ghtml",
-        "https://www.infomoney.com.br/mercados/trabuco-na-fazenda-pode-levar-a-rotacao-para-acoes-financeiras-diz-citi-veja-acoes/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32zwgDLhvBcNJwG8NcGRZc7JhJqeEFHzcfiwqf3Ee0F2RR3KrT8aYgTFyg78",
-      "image_credit": "Folha de S.Paulo",
-      "news": [
-        {
-          "url": "https://www1.folha.uol.com.br/mercado/2026/11/lula-indicou-trabuco-a-dilma-que-rejeitou-e-escolheu-levy-historia-e-contada-em-livro.shtml",
-          "title": "Lula indicou Trabuco a Dilma, que rejeitou e escolheu Levy; história é contada em livro",
-          "publisher": "Folha de S.Paulo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32zwgDLhvBcNJwG8NcGRZc7JhJqeEFHzcfiwqf3Ee0F2RR3KrT8aYgTFyg78"
-        },
-        {
-          "url": "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-repercute-mundo.ghtml",
-          "title": "A reação da imprensa internacional à indicação de Trabuco para o Ministério da Fazenda",
-          "publisher": "G1",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtUHWHpNzGP0s5f71y_cLOxDUU4xbXH1e64zDzvOqCXDhfSN1tuAGpf12FNpY"
-        },
-        {
-          "url": "https://www.infomoney.com.br/mercados/trabuco-na-fazenda-pode-levar-a-rotacao-para-acoes-financeiras-diz-citi-veja-acoes/",
-          "title": "Trabuco na Fazenda pode levar à rotação para ações financeiras, diz Citi; veja ações",
-          "publisher": "InfoMoney",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OFNO-XRO3EN1D3Kf4i3IWf3OMCvloyzCdJGiJexlD00TFuuQujU-B-8nim8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjsto-ecR-EjLmS1-KGKZQS_q22w9GSBXU2ftCv9tsKpSE6ThetHINmp-F0_E"
         }
       ]
     }
