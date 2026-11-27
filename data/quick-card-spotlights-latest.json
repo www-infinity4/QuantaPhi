@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-11-27T19:18:13.187142Z",
+  "checked_at": "2026-11-27T20:18:50.887154Z",
   "cards": {
     "pepe-brooke": {
       "schema_version": 1,
@@ -197,7 +197,7 @@
     },
     "burger-king-chicken-2026": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://news.bk.com/",
@@ -205,7 +205,7 @@
           "title": "Burger King® Expands Its Iconic Original Chicken Sandwich Lineup with Two Bold New Flavors",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Restaurants"
         },
         {
@@ -214,7 +214,7 @@
           "title": "Burger King® Unwraps a Limited-Time Peanuts Holiday Menu, Bringing Snoopy and the Gang to the Table This Season",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Restaurants"
         },
         {
@@ -223,7 +223,7 @@
           "title": "Burger King® is Rebuilding and Modernizing More Restaurants, With Guests Helping Decide Which Ones Are Next",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Restaurants"
         },
         {
@@ -232,14 +232,14 @@
           "title": "Hello Kitty® and Friends Are Coming to Burger King®",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Restaurants"
         }
       ]
     },
     "kraft-mac-cheese": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.kraftheinz.com/kraft-mac-and-cheese",
@@ -247,7 +247,7 @@
           "title": "Site Logo",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -256,7 +256,7 @@
           "title": "An image displaying two Kraft Mac & Cheese products. On the left, against a solid blue background, the word \"products\" is written in large white text. To the right, on a split blue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -265,7 +265,7 @@
           "title": "An image featuring two limited-edition Kraft Mac & Cheese boxes: a red \"Pizza Flavored\" box with pizza slice graphics and a green \"Jalapeño Flavored\" box with a jalapeño pepper gra",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -274,7 +274,7 @@
           "title": "Kraft PowerMac and Original Mac & Cheese boxes next to a prepared bowl of macaroni on a blue and yellow background.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -283,7 +283,7 @@
           "title": "Kraft Heinz logo on a purple background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -292,7 +292,7 @@
           "title": "Collage with packages from all the Kraft Heinz brands on a red background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
@@ -301,43 +301,43 @@
           "title": "A plate of pasta and meat on a yellow background",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         },
         {
-          "url": "https://www.kraftheinz.com/philadelphia/recipes/500340-philadelphia-no-bake-pumpkin-cheesecake",
-          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/image/upload/f_auto/q_auto/c_limit,w_3840/v1/Cheesecake_Mobile_mmhxgn?_a=BAVMn6ID0",
-          "title": "A slice of pumpkin cheesecake topped with whipped cream, served on a plate next to a gold fork.",
+          "url": "https://www.kraftheinz.com/jell-o/recipes/7MP66JJYAQJyyFyrm9KB6B-chocolate-crinkle-cookies",
+          "image": "https://res.cloudinary.com/kraft-heinz-whats-cooking-ca/image/upload/f_auto/q_auto/c_limit,w_3840/v1/Chocolate_cookies_-_desktop_2_kfkale?_a=BAVMn6ID0",
+          "title": "A white baking dish filled with chocolate crinkle cookies dusted in powdered sugar on a cooling rack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Food & recipes"
         }
       ]
     },
     "heritage": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "topps": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "beckett": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "christies": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "shoplc-premium": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.shoplc.com/products/chairman-vault-collection-rhapsody-aaaa-santa-maria-aquamarine-and-diamond-ef-vs-8-00-ctw-ring-in-950-platinum-size-7-0-12-90-grams",
@@ -345,7 +345,7 @@
           "title": "Chairman Vault Collection Rhapsody AAAA Santa Maria Aquamarine and Diamond EF-VS 8.00 ctw Ring in 950 Platinum (Size 7.0) 12.90 Grams",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
@@ -355,7 +355,7 @@
           "title": "Chairman Vault Collection Rhapsody AAAA Santa Maria Aquamarine and Diamond EF-VS 7.20 ctw Ring in 950 Platinum (Size 7.0) 14.30 Grams",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
@@ -365,7 +365,7 @@
           "title": "Chairman Vault Collection Rhapsody AAAA Santa Maria Aquamarine and Diamond EF-VS 6.35 ctw Ring in 950 Platinum (Size 7.0) 12.10 Grams",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
@@ -375,47 +375,47 @@
           "title": "Chairman Vault Collection Rhapsody AAAA Santa Maria Aquamarine and Diamond EF-VS 7.15 ctw Ring in 950 Platinum (Size 7.0) 9.00 Grams",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
         {
-          "url": "https://www.shoplc.com/products/certified-appraised-rhapsody-950-platinum-aaaa-tanzanite-and-e-f-vs-diamond-pendant-necklace-18-inches-25-75-grams-22-15-ctw",
-          "image": "https://www.shoplc.com/cdn/shop/files/7779279.jpg?v=1782718360&width=1200",
-          "title": "Certified & Appraised Rhapsody 950 Platinum AAAA Tanzanite and E-F VS Diamond Pendant Necklace 18 Inches 25.75 Grams 22.15 ctw",
+          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-appraised-aaaa-ouro-fino-rubellite-ovl-free-size-10-66-ctw",
+          "image": "https://www.shoplc.com/cdn/shop/files/8613998.jpg?v=1778956022&width=1200",
+          "title": "Chairman Vault Collection Certified & Appraised AAAA Ouro Fino Rubellite (Ovl Free Size) 10.66 ctw",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
         {
-          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-appraised-rhapsody-950-platinum-aaaa-tanzanite-and-e-f-vs-diamond-pendant-necklace-18-inches-30-12-grams-24-39-ctw",
-          "image": "https://www.shoplc.com/cdn/shop/files/7768370.jpg?v=1776457964&width=1200",
-          "title": "Chairman Vault Collection Certified & Appraised Rhapsody 950 Platinum AAAA Tanzanite and E-F VS Diamond Pendant Necklace 18 Inches 30.12 Grams 24.39 ctw",
+          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-and-appraised-aaaa-ruby-ovl-9x5-mm-2-06-ctw",
+          "image": "https://www.shoplc.com/cdn/shop/files/8522139.jpg?v=1776461900&width=1200",
+          "title": "Chairman Vault Collection Certified and Appraised AAAA Ruby (Ovl 9x5 mm) 2.06 ctw",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
         {
-          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-appraised-rhapsody-950-platinum-aaaa-tanzanite-and-e-f-vs-diamond-necklace-18-inches-26-75-grams-35-06-ctw",
-          "image": "https://www.shoplc.com/cdn/shop/files/7768364.jpg?v=1776457980&width=1200",
-          "title": "Chairman Vault Collection Certified & Appraised Rhapsody 950 Platinum AAAA Tanzanite and E-F VS Diamond Necklace 18 Inches 26.75 Grams 35.06 ctw",
+          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-and-appraised-aaaa-ruby-pear-11x6-mm-2-21-ctw",
+          "image": "https://www.shoplc.com/cdn/shop/files/8522134.jpg?v=1776461910&width=1200",
+          "title": "Chairman Vault Collection Certified and Appraised AAAA Ruby (Pear 11x6 mm) 2.21 ctw",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         },
         {
-          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-appraised-rhapsody-950-platinum-aaaa-tanzanite-and-e-f-vs-diamond-pendant-necklace-18-inches-18-30-grams-27-39-ctw",
-          "image": "https://www.shoplc.com/cdn/shop/files/7768360.jpg?v=1776457973&width=1200",
-          "title": "Chairman Vault Collection Certified & Appraised Rhapsody 950 Platinum AAAA Tanzanite and E-F VS Diamond Pendant Necklace 18 Inches 18.30 Grams 27.39 ctw",
+          "url": "https://www.shoplc.com/products/chairman-vault-collection-certified-appraised-aaaa-ouro-fino-rubellite-oct-free-size-8-20-ctw",
+          "image": "https://www.shoplc.com/cdn/shop/files/8613996.jpg?v=1778956026&width=1200",
+          "title": "Chairman Vault Collection Certified & Appraised AAAA Ouro Fino Rubellite (Oct Free Size) 8.20 ctw",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T14:19:06.183522Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Shopping",
           "offer": null
         }
@@ -423,22 +423,22 @@
     },
     "kohls-coupons": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "honda-vehicles": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "oakley-meta": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "gmc-trucks": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T14:19:06.183522Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "gmc-sierra-2026": {
@@ -6919,7 +6919,7 @@
     },
     "durable-s-t-dupont": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.st-dupont.com/collections/christmas",
@@ -6927,7 +6927,7 @@
           "title": "Magical gifts",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6936,7 +6936,7 @@
           "title": "Gift for him",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6945,7 +6945,7 @@
           "title": "Gift for her",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6954,7 +6954,7 @@
           "title": "Customisable pens",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -6963,7 +6963,7 @@
           "title": "Guilloche lighter",
           "kind": "product",
           "description": "Double flame yellow lighter. Decorated with vertical guilloche and yellow gold finish. Associated lighter stone: black (REF 900601). Associated gas refill: yellow (REF 900432). Lighter delivered empty of gas, refill sold separately.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1410.00",
@@ -6978,7 +6978,7 @@
           "title": "Perfect cut",
           "kind": "product",
           "description": "Cutter Slim Perfect Cut cigar cutter, decorated in black lacquer and chrome finish. 23 mm diameter and 2.7 mm adjustable cutting depth",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "200.00",
@@ -6993,7 +6993,7 @@
           "title": "Chrome",
           "kind": "product",
           "description": "The new S.T. Dupont accessories collection draws inspiration from the Maison's iconic codes, creating pieces with distinctive refinement and elegance. Silver-finish money clip decorated with vertical guilloché and engraved with the new S.T. Dupont logo.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "220.00",
@@ -7006,7 +7006,7 @@
     },
     "durable-duluth-pack": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://duluthpack.com/products/pack-2-duluth",
@@ -7014,7 +7014,7 @@
           "title": "#2 Original Canoe Pack - 59 L in tough 15-ounce canvas with rugged leather straps, designed for outdoor hiking and canoeing by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7023,7 +7023,7 @@
           "title": "#3 Monarch Pack - 54 L in durable olive canvas with rich brown leather straps, showcasing handcrafted rugged outdoor design by Duluth Pack for adventure use.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7032,7 +7032,7 @@
           "title": "#3 Original Pack - 72 L in tough green canvas with rugged leather straps, crafted by Duluth Pack for durable outdoor use and heritage-inspired adventure gear.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7041,7 +7041,7 @@
           "title": "#3-70 Utility Pack - 60 L in olive canvas with leather straps, designed for rugged outdoor use and durable everyday carry by Duluth Pack.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7050,7 +7050,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "One of the original designs created by Duluth Pack's founder, Camille Poirier. The #2 Original Pack by Duluth Pack has been time-tested for over a century. Constructed of our rugged canvas, the #2 Original Pack sports three guaranteed-for-life buckle strap clo",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "249.95",
@@ -7066,7 +7066,7 @@
           "title": "#2 Original Canoe Pack - 56 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7076,7 +7076,7 @@
           "title": "#3 Monarch Pack - 54 L",
           "kind": "product",
           "description": "A traditional-style canvas canoe pack that has been essential for outdoor travel for generations. The craftsmanship of the #3 Monarch Pack by Duluth Pack is in its own class. The rugged design is built with hardcore use in mind. Built to be used, the #3 Monarc",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "524.95",
@@ -7092,7 +7092,7 @@
           "title": "#3 Original Canoe Pack - 72 L",
           "kind": "product",
           "description": "The #3 Original Canvas Duluth Pack has been the time-tested favorite for generations of wilderness travelers and explorers. The rugged durability of this canvas canoe pack allows you to carry the canoe while wearing the pack and is made to fit the confines of ",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "274.95",
@@ -7106,7 +7106,7 @@
     },
     "durable-swaine-adeney-brigg": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://us.swaine.london/products/fur-felt-6-inch-top-hat",
@@ -7114,7 +7114,7 @@
           "title": "6 Inch Fur Felt Top Hat - Swaine",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7123,7 +7123,7 @@
           "title": "Acajou Mahogany Umbrella - Black - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7132,7 +7132,7 @@
           "title": "Adeney Fedora - Chestnut - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7141,7 +7141,7 @@
           "title": "Things Worth Giving and Things Worth Having... - Swaine Group Ltd",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7150,7 +7150,7 @@
           "title": "Fur Felt 6 Inch Top Hat - 56",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "690.00",
@@ -7165,7 +7165,7 @@
           "title": "Mahogany Acajou Umbrella - Black",
           "kind": "product",
           "description": "Sourced from the tropical mahogany tree and shaped from a single solid piece, with deep browns and gentle red undertones.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2340.00",
@@ -7180,7 +7180,7 @@
           "title": "Adeney Fedora - Chestnut - 56cm",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "460.00",
@@ -7193,12 +7193,12 @@
     },
     "durable-herman-miller-aeron-eames-line": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "durable-steelcase": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.steelcase.com/",
@@ -7206,7 +7206,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "The leading manufacturer of furniture for offices, hospitals, and classrooms. Our furniture is inspired by innovative research in workspace design.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7215,7 +7215,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7224,7 +7224,7 @@
           "title": "A New Mindset​",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7233,7 +7233,7 @@
           "title": "Steelcase - Office Furniture Solutions, Education & Healthcare Furniture",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7242,7 +7242,7 @@
           "title": "Vetona Height-Adjustable Side Tables | Steelcase",
           "kind": "website",
           "description": "Vetona personal tables adapt to the way people work and connect with a height-adjustable personal worksurface ideal for laptops, coffee cups, and more.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7251,7 +7251,7 @@
           "title": "Viccarbe Missiva Sofa",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7260,7 +7260,7 @@
           "title": "Viccarbe Vetona Low Table",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7269,14 +7269,14 @@
           "title": "Viccarbe Vetona Low Table",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-usm-modular-furniture": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://us.usm.com",
@@ -7284,7 +7284,7 @@
           "title": "USM Modular Furniture",
           "kind": "website",
           "description": "Discover modular furniture solutions designed for elegance and functionality. Explore USM home and office solutions online.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7293,7 +7293,7 @@
           "title": "Quick Ship All",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7302,7 +7302,7 @@
           "title": "Quick Ship All",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7311,7 +7311,7 @@
           "title": "USM Haller Modern Steel Nightstand (P) in Beige",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7320,7 +7320,7 @@
           "title": "USM Haller nightstand (P)",
           "kind": "product",
           "description": "This popular bedside table offers a 6\"H open shelf and a 13\"H drop down door on the bottom offers plenty of storage. The door locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1677.0",
@@ -7335,7 +7335,7 @@
           "title": "USM Haller nightstand (P2)",
           "kind": "product",
           "description": "The classic nightstand with a 6\"H drop down door that locks with the twist of a coin. Available in 14 standard surface colors.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1545.0",
@@ -7350,7 +7350,7 @@
           "title": "USM Haller Nightstand (P1)",
           "kind": "product",
           "description": "A modern and adaptable nightstand or side table with two drop down doors that locks with the twist of a coin. Available in 6 Quick Ship colors.",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "2131.0",
@@ -7363,7 +7363,7 @@
     },
     "durable-vitsoe": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.vitsoe.com/us/606",
@@ -7371,7 +7371,7 @@
           "title": "Modular wall-mounted shelving system for book with off-white shelves, cabinets and drawers.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7380,7 +7380,7 @@
           "title": "Vitsœ 620 modular sofa in cinnamon leather upholstery with off-white shell and two 621 tables on both sides",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7389,7 +7389,7 @@
           "title": "Vitsœ 621 nesting tables in off-white used as a side table in the living room",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7398,14 +7398,14 @@
           "title": "Vitsœ planner and 606 Universal Shelving System behind.",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-artek": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.artek.fi/en/",
@@ -7413,7 +7413,7 @@
           "title": "Artek - Artek",
           "kind": "website",
           "description": "Art & Technology since 1935",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7422,7 +7422,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7431,7 +7431,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7440,7 +7440,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7449,7 +7449,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7458,7 +7458,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "Find an overview of all Artek products",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7467,7 +7467,7 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7476,24 +7476,24 @@
           "title": "Products - Artek",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
     },
     "durable-carl-hansen-son": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "durable-knoll": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": []
     },
     "durable-fritz-hansen": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://fritzhansen.com/pages/spare-parts",
@@ -7501,7 +7501,7 @@
           "title": "Small spare parts, spacers, glides, feet arranged on a sheet of paper",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7510,7 +7510,7 @@
           "title": "Ant™ chair, designed by Arne Jacobsen for Fritz Hansen, paired with the Superellipse™ table. The setting features moulded wood veneer chairs arranged around a dark tabletop with a ",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7519,7 +7519,7 @@
           "title": "Lighting season",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7528,7 +7528,7 @@
           "title": "Egg™ 3316 Lounge Chair, Leather - Essential - Black, Aluminium - Matt Brushed",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7537,7 +7537,7 @@
           "title": "Egg™ 3316 Lounge Chair, Leather - Essential - Black / Aluminium - Matt Brushed",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "72999.00",
@@ -7552,7 +7552,7 @@
           "title": "Egg™ 3316 Lounge Chair, Leather - Essential - Black / Powder Coated Aluminium - Brown Bronze",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "72999.00",
@@ -7567,7 +7567,7 @@
           "title": "Egg™ 3316 Lounge Chair, Leather - Essential - Black / Powder Coated Aluminium - Black",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "72999.00",
@@ -7582,7 +7582,7 @@
           "title": "Egg™ 3316 Lounge Chair, Leather - Essential - Lava / Aluminium - Matt Brushed",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "72999.00",
@@ -7595,7 +7595,7 @@
     },
     "durable-thonet": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.thonet.de/shop/de",
@@ -7603,7 +7603,7 @@
           "title": "Basecap Beige",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7613,7 +7613,7 @@
           "title": "Basecap Navy",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7623,7 +7623,7 @@
           "title": "Poster Overview 2025",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": null
         },
@@ -7633,7 +7633,7 @@
           "title": "S 64 V",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1457.75",
@@ -7648,7 +7648,7 @@
           "title": "214",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1011.50",
@@ -7663,7 +7663,7 @@
           "title": "209",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "1374.45",
@@ -7678,7 +7678,7 @@
           "title": "S 35 L",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3403.40",
@@ -7693,7 +7693,7 @@
           "title": "Set B 9",
           "kind": "product",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering",
           "offer": {
             "price": "3070.20",
@@ -7706,7 +7706,7 @@
     },
     "durable-emeco": {
       "schema_version": 1,
-      "attempted_at": "2026-11-27T13:18:57.050772Z",
+      "attempted_at": "2026-11-27T20:18:50.887154Z",
       "items": [
         {
           "url": "https://www.emeco.net/products/chairs",
@@ -7714,7 +7714,7 @@
           "title": "Browse Emeco's product catalogue",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7723,7 +7723,7 @@
           "title": "Studio image of Kito by Naoto Fukasawa close up of back",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7732,7 +7732,7 @@
           "title": "ZaZa bench collection by Naoto Fukasawa",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         },
         {
@@ -7741,7 +7741,7 @@
           "title": "outdoor setting with navy lounge armchairs, tables and rocker on a patio",
           "kind": "website",
           "description": "",
-          "checked_at": "2026-11-27T13:18:57.050772Z",
+          "checked_at": "2026-11-27T20:18:50.887154Z",
           "category": "Materials, Lifestyle & Furniture Engineering"
         }
       ]
