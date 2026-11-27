@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T10:31:11.912724Z",
+  "checked_at": "2026-11-27T11:01:18.915796Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "marc marquez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T10:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
+        "https://www.motogp.com/en/videos/2026/11/27/marc-marquez-announces-his-retirement-from-motogp/1268532",
+        "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
+          "title": "MotoGP champion Marquez to retire after 2026 season",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4"
+        },
+        {
+          "url": "https://www.motogp.com/en/videos/2026/11/27/marc-marquez-announces-his-retirement-from-motogp/1268532",
+          "title": "Marc Marquez announces his retirement from MotoGP",
+          "publisher": "motogp.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqlArzyfaOpu0WIFxO-TZ5vKWALsBObH9D8rm98N8LPPb3_vxPxBYc5YW47Co"
+        },
+        {
+          "url": "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o",
+          "title": "MotoGP: Marc Marquez to retire after final race of 2026 season",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbD99t_mg07bXRIle1owoQeKlIFy__WOVxFqTPWG4_0IjVQLFmniyz3Td06uA"
+        }
+      ]
+    },
+    {
+      "query": "car accident lawyer",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T10:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/press-release/story/60939/queens-car-accident-lawyer-keetick-l-sanchez-explains-the-90-day-notice-of-claim-deadline-for-nyc-accident-claims/",
+        "https://www.usatoday.com/press-release/story/60950/roanoke-car-accident-attorney-john-p-fishwick-jr-explains-why-virginia-doesnt-have-dram-shop-liability/",
+        "https://timesofindia.indiatimes.com/world/us/an-ohio-woman-fired-her-lawyers-secured-a-250000-car-accident-settlement-herself-and-faced-legal-fee-claims-november-25-judges-ruled-her-firm-must-prove-the-reasonable-value-of-its-work-not-a-contract-percentage/articleshow/136201097.cms"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqo_jRQtLTQvmEy5YJ33ZW7PyPLZN9WP7zl4rsvv93PxWTUU5jj-74L_TrgJE",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/press-release/story/60939/queens-car-accident-lawyer-keetick-l-sanchez-explains-the-90-day-notice-of-claim-deadline-for-nyc-accident-claims/",
+          "title": "Queens Car Accident Lawyer Keetick L. Sanchez Explains the 90-Day Notice of Claim Deadline for NYC Accident Claims",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqo_jRQtLTQvmEy5YJ33ZW7PyPLZN9WP7zl4rsvv93PxWTUU5jj-74L_TrgJE"
+        },
+        {
+          "url": "https://www.usatoday.com/press-release/story/60950/roanoke-car-accident-attorney-john-p-fishwick-jr-explains-why-virginia-doesnt-have-dram-shop-liability/",
+          "title": "Roanoke Car Accident Attorney John P. Fishwick Jr. Explains Why Virginia Doesn’t Have Dram Shop Liability",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaAf3OcVKZU-Ysr7Ccux2Y0f_p7WikRmNz8lmJrecumk7-AuJ4szq_KlW-_c"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/world/us/an-ohio-woman-fired-her-lawyers-secured-a-250000-car-accident-settlement-herself-and-faced-legal-fee-claims-november-25-judges-ruled-her-firm-must-prove-the-reasonable-value-of-its-work-not-a-contract-percentage/articleshow/136201097.cms",
+          "title": "An Ohio woman fired her lawyers, secured a $250,000 car-accident settlement herself and faced legal-fee c",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQu0jbcjWMAhGINW_5olVlTvT6PLZhQeKfY_qBimXme2l_QVa_7lf3LJtunmLk"
+        }
+      ]
+    },
     {
       "query": "gta6 walkthrough",
       "approx_searches": "200+",
@@ -46,26 +116,26 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-27T10:00:00Z",
       "related_news_urls": [
-        "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
         "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
+        "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
         "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY",
-      "image_credit": "WTVC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIgfdVjCnKcLxxdaq1ZfPBoy_zfli0PVY0gj3bImItrnWfGftssyAYS4aFUB4",
+      "image_credit": "News Channel 5 Nashville",
       "news": [
+        {
+          "url": "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
+          "title": "November 26, 2026: Winter Weather Advisory for most of Middle TN, Winter Storm Warning for the Plateau.",
+          "publisher": "News Channel 5 Nashville",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIgfdVjCnKcLxxdaq1ZfPBoy_zfli0PVY0gj3bImItrnWfGftssyAYS4aFUB4"
+        },
         {
           "url": "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
           "title": "Weather Alert: Winter Storm Warning for local Plateau counties",
           "publisher": "WTVC",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY"
-        },
-        {
-          "url": "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
-          "title": "November 26, 2026: Winter Weather Advisory for most of Middle TN, Winter Storm Warning for the Plateau.",
-          "publisher": "News Channel 5 Nashville",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E"
         },
         {
           "url": "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/",
@@ -81,13 +151,20 @@
       "approx_searches": "100+",
       "published_at": "2026-11-27T10:00:00Z",
       "related_news_urls": [
+        "https://lasvegassun.com/news/2026/nov/27/coronado-gorman-headline-suns-preseason-boys-baske/",
         "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
-        "https://www.houstonchronicle.com/news/houston-weather/article/houston-black-friday-forecast-december-outlook-22544834.php",
-        "https://www.wtok.com/2026/11/27/dress-warmly-if-you-plan-be-out-early-black-friday-shopping/"
+        "https://www.wqow.com/weather/forecast/clearing-skies-bring-warmer-temperatures/article_fdff0bda-3efa-524f-8462-729d5b86140a.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSZg7pzWk9_HtMCvnSkU5CyZYflq1VToB4VYWOqeZc46eJ3DuQI5S2tMILGLE",
-      "image_credit": "WMBF",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivvuPDMgMqfRI1aqg8lLBKq8JGywhvzFWiFFYFH9I3CKx_gpF-FHKf3qiSWA",
+      "image_credit": "Las Vegas Sun",
       "news": [
+        {
+          "url": "https://lasvegassun.com/news/2026/nov/27/coronado-gorman-headline-suns-preseason-boys-baske/",
+          "title": "Coronado, Bishop Gorman headline Sun's preseason boys' basketball top 10",
+          "publisher": "Las Vegas Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivvuPDMgMqfRI1aqg8lLBKq8JGywhvzFWiFFYFH9I3CKx_gpF-FHKf3qiSWA"
+        },
         {
           "url": "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
           "title": "FIRST ALERT: Cool and breezy Black Friday, plenty of sun this weekend",
@@ -96,53 +173,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSZg7pzWk9_HtMCvnSkU5CyZYflq1VToB4VYWOqeZc46eJ3DuQI5S2tMILGLE"
         },
         {
-          "url": "https://www.houstonchronicle.com/news/houston-weather/article/houston-black-friday-forecast-december-outlook-22544834.php",
-          "title": "Houston warms up for Black Friday, but what does December have in store?",
-          "publisher": "Houston Chronicle",
+          "url": "https://www.wqow.com/weather/forecast/clearing-skies-bring-warmer-temperatures/article_fdff0bda-3efa-524f-8462-729d5b86140a.html",
+          "title": "Clearing skies bring warmer temperatures",
+          "publisher": "WQOW",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHYMmAHVT3CzBpxvoqe1vqba-PrDsd_wfyEp_IuKa6BHLkLDx9dq5gGoaX96I"
-        },
-        {
-          "url": "https://www.wtok.com/2026/11/27/dress-warmly-if-you-plan-be-out-early-black-friday-shopping/",
-          "title": "Dress warmly if you plan to be out early Black Friday shopping",
-          "publisher": "WTOK",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4E-KIXNsdQnZe7ZCXDVBIcexsLT7O6fHU_7ffLx19dwCDERUeqx1oIdwM8o"
-        }
-      ]
-    },
-    {
-      "query": "soccer",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T10:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50610066/transfer-rumors-news-nico-paz-man-united-real-madrid-como",
-        "https://www.si.com/soccer/transfer-rumors-olise-real-madrid-man-utd-paz-move",
-        "https://www.nytimes.com/athletic/7814337/2026/11/27/nico-paz-manchester-united-premier-league-analysis/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNr02-4JMkkZ9vl-_9491G_OjtyiqGU5gT2QYf5NWjQFZlMC5wz7YP7_OP9s",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/soccer/story/_/id/50610066/transfer-rumors-news-nico-paz-man-united-real-madrid-como",
-          "title": "Transfer rumors, news:Transfer rumors, news: Nico Paz open to Man United; against Real Madrid return",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNr02-4JMkkZ9vl-_9491G_OjtyiqGU5gT2QYf5NWjQFZlMC5wz7YP7_OP9s"
-        },
-        {
-          "url": "https://www.si.com/soccer/transfer-rumors-olise-real-madrid-man-utd-paz-move",
-          "title": "Transfer Rumors: Olise Wants Real Madrid; Man Utd Plot Paz Move",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRF-qjaldSJZ-jR92hrSm6HnbPcl4W1nVVvB6_VyqAkJXjinnC4KJEN9Vmb7oU"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7814337/2026/11/27/nico-paz-manchester-united-premier-league-analysis/",
-          "title": "Nico Paz is a rare talent. Man Utd and his other suitors would benefit from his arrival",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGqDhdykOsjpE8gBS1iksF4ZXwm2jiQaEb7vLe7_jUUEYFqDRGadgZ8UPwxgM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTSPg7R-8VeDkzr76VnKLLOKQrNi-UE_Y9x0uOTYm0MZZEPJUOhtBRX2b3XV0I"
         }
       ]
     },
@@ -178,41 +213,6 @@
           "publisher": "ABC7 New York",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_7PcZLhaxsvZt_2mEVq-Ibid8b_NFa58TwhF4UTlsYIa19CvhTA2o_xSafWI"
-        }
-      ]
-    },
-    {
-      "query": "google play",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T09:30:00Z",
-      "related_news_urls": [
-        "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
-        "https://www.thelec.net/news/articleView.html?idxno=15908",
-        "https://digg.com/tech/0589lz7m"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZEkAz4wxfyNkNC8fYZdEJMdpjR8kqYYzzEXdHBqnUuJ8G_iuLjnlDfboxEzo",
-      "image_credit": "The Verge",
-      "news": [
-        {
-          "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
-          "title": "Android app developers will soon have to share their address publicly",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZEkAz4wxfyNkNC8fYZdEJMdpjR8kqYYzzEXdHBqnUuJ8G_iuLjnlDfboxEzo"
-        },
-        {
-          "url": "https://www.thelec.net/news/articleView.html?idxno=15908",
-          "title": "Google Faces Privacy Concerns Over Global Disclosure of Developers’ Home Addresses",
-          "publisher": "THE ELEC, Korea Electronics Industry Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW-tvoc6lAiV7mkot-igxV8-H3ns_bzqII9xknK60lc7LkslLSVAb5xLpDSbA"
-        },
-        {
-          "url": "https://digg.com/tech/0589lz7m",
-          "title": "Google will publish some Android developers’ addresses worldwide, The Verge reports",
-          "publisher": "Digg",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYGMt2Cneqj467DBiMN4zD1ieoNTlDRzEB-Xv5LS_QVlXe2eKDkXl1-D0Dm2Y"
         }
       ]
     },
