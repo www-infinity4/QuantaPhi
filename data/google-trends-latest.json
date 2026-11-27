@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T13:31:05.644453Z",
+  "checked_at": "2026-11-27T14:01:14.858746Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cyberattack",
+      "query": "ron harper",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
+        "https://fadeawayworld.net/nba-trade-rumors/san-antonio-spurs/nba-trade-proposal-lands-spurs-a-defensive-wing-and-veteran-center-from-clippers",
+        "https://sports.yahoo.com/nba/articles/hell-no-spurs-star-father-115500605.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
+          "title": "Prayers Pour in From Robert Griffin III & More as NBA & Chicago Bulls Legend Mourns Tragic Loss",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck"
+        },
+        {
+          "url": "https://fadeawayworld.net/nba-trade-rumors/san-antonio-spurs/nba-trade-proposal-lands-spurs-a-defensive-wing-and-veteran-center-from-clippers",
+          "title": "NBA Trade Proposal Lands Spurs A Defensive Wing And Veteran Center From Clippers",
+          "publisher": "Fadeaway World",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMsaup16l8sk5V2SpgRlQvCrWAooniWQhx8OQsRMhWdrpAkRZ0JnOnnr5difU"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/hell-no-spurs-star-father-115500605.html",
+          "title": "“Hell No!”: Spurs Star’s Father Rejects Trade Proposal Pairing Victor Wembanyama With 2x All-Defensive Center",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQquMSEt2EHDX37jACfsRxKoBKTb5NyKEAMTeOFbCF6SGrOUEbLzi7JKAzyZrE"
+        }
+      ]
+    },
+    {
+      "query": "cardi b",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
+        "https://www.xxlmag.com/cardi-b-global-woman-of-the-year-speech-billboard-canada/",
+        "https://torontolife.com/culture/toronto-cardi-b-bad-bitches/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc",
+      "image_credit": "Billboard",
+      "news": [
+        {
+          "url": "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
+          "title": "Billboard Canada Women in Music 2026: Cardi B Is 'Globally That B—' & More Best Moments",
+          "publisher": "Billboard",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc"
+        },
+        {
+          "url": "https://www.xxlmag.com/cardi-b-global-woman-of-the-year-speech-billboard-canada/",
+          "title": "Cardi B Delivers Empowering Speech to ‘Go Get It’ as Billboard Canada’s Global Woman of the Year",
+          "publisher": "XXL Mag",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9_h3ARrsNQkvAtXUixmY_s9NBW3dt5VgpFI8uBXgfEVZ5y0-AYC91OUWa7Qk"
+        },
+        {
+          "url": "https://torontolife.com/culture/toronto-cardi-b-bad-bitches/",
+          "title": "\"Toronto, you have beautiful women\": Cardi B shouts out the city's high concentration of baddies",
+          "publisher": "Toronto Life",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCFsB041LERbJOe3c_FnrM0zo8F31Fk2LtQfG3Wq2JXKSmFHWyTEm4CZyHjc"
+        }
+      ]
+    },
+    {
+      "query": "iowa vs nebraska",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+        "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
+        "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+          "title": "Nebraska-Iowa: What we're looking for and final predictions",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
+          "title": "Iowa vs. Nebraska odds, prediction, time: Rivalry Week Friday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgHrK1qerNapb0hIRy6SE5KMj8osCCxwFUtJ95daZBBbN1F8L7u77IrGj1Nbo"
+        },
+        {
+          "url": "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026",
+          "title": "Huskers' Surging Ground Game Heads for Hawkeye Wall",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMdK-z2O01QMnks-P3dZ_EQ1dLpkgeRjYDzg0_A6M2G-JKiyTIV98zKGwyUMk"
+        }
+      ]
+    },
+    {
+      "query": "green bay packers statement martha ford",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
+        "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
+        "https://www.clickondetroit.com/news/local/2026/11/26/detroit-lions-honor-late-owner-martha-firestone-ford-with-special-helmet-decal-on-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8",
+      "image_credit": "Green Bay Packers – packers.com",
+      "news": [
+        {
+          "url": "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
+          "title": "Statement from the Green Bay Packers",
+          "publisher": "Green Bay Packers – packers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8"
+        },
+        {
+          "url": "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
+          "title": "Lions Owner/Chair Emeritus Martha Firestone Ford passes away at 101",
+          "publisher": "Detroit Lions",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU"
+        },
+        {
+          "url": "https://www.clickondetroit.com/news/local/2026/11/26/detroit-lions-honor-late-owner-martha-firestone-ford-with-special-helmet-decal-on-thanksgiving/",
+          "title": "Detroit Lions honor late owner Martha Firestone Ford with special helmet decal on Thanksgiving",
+          "publisher": "ClickOnDetroit | WDIV Local 4",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnn-jWtkZ6SkvqLmgH6Rwj2SJ-bnajtOjf3MRab9Lh1zEEVFgBiTSx7jf9nxc"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals",
       "approx_searches": "2000+",
-      "published_at": "2026-11-27T13:10:00Z",
+      "published_at": "2026-11-27T13:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack",
-        "https://www.theguardian.com/football/2026/nov/26/fifa-cyberattack-hack-personal-information",
-        "https://www.bbc.com/sport/football/articles/crd61nvg4d84o"
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
+        "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
+        "https://www.goodmorningamerica.com/video/138395996"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWAqU3nTW2_eU_lqg_Yb62zFiiNMjpkCvGe9DYdN9am8xiBHD0P6W19ySebo8",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
       "news": [
         {
-          "url": "https://www.espn.com/soccer/story/_/id/50603612/fifa-cyber-attack",
-          "title": "FIFA hit by cyberattack as hackers gain access to personal and business data",
-          "publisher": "ESPN",
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
+          "title": "'GMA' Deals & Steals for Black Friday",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWAqU3nTW2_eU_lqg_Yb62zFiiNMjpkCvGe9DYdN9am8xiBHD0P6W19ySebo8"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI"
         },
         {
-          "url": "https://www.theguardian.com/football/2026/nov/26/fifa-cyberattack-hack-personal-information",
-          "title": "Fifa confirms cyber-attack exposed ‘personal and business information’",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzRPs1rJl9mga5IY9h78jDZx3E_HVuHNjseOLlFkQF-8l9NGxOFSLBu9Q0axc"
-        },
-        {
-          "url": "https://www.bbc.com/sport/football/articles/crd61nvg4d84o",
-          "title": "Fifa confirms internal data stolen in cyber attack",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAK8ZTTisP0HNm9CkvSmUW7bNNiStzohMbzXw3Z_rFw3Yrsw4A3-9w79Q0quY"
-        }
-      ]
-    },
-    {
-      "query": "presley gerber",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:10:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/celebrities/2026/11/26/presley-gerber-death-sober-living-home-addiction-treatment/92972464007/",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/founder-behind-sober-house-where-213130314.html",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/presley-gerber-sober-home-founder-165446712.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjAz2PFZxQy_fETsLb0YmpYf3CFNmMuAlukmsSEXW3nKYRWlww_NU8Lfa1XLI",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/celebrities/2026/11/26/presley-gerber-death-sober-living-home-addiction-treatment/92972464007/",
-          "title": "Presley Gerber died at a sober living home. It wasn't designed to treat addiction",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjAz2PFZxQy_fETsLb0YmpYf3CFNmMuAlukmsSEXW3nKYRWlww_NU8Lfa1XLI"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/founder-behind-sober-house-where-213130314.html",
-          "title": "Founder behind sober house where Presley Gerber died lists Malibu home for $5M",
+          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
+          "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRG5FjoA9Wos1wX7vwH2KqmrByT-5vGDoO6-OdxkLNgWYo5Vt4hD018FXaRWCc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/presley-gerber-sober-home-founder-165446712.html",
-          "title": "Presley Gerber’s Sober Home Founder Lists $5 Million Malibu Property 2 Months After Model’s Death",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYjlOPMjdiBBzSqrUKyoF8v7ShkSGdAP-aNXUF00EaVOoUZm4doij9RitoB48"
-        }
-      ]
-    },
-    {
-      "query": "tulsa king episode 7",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:00:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66120275/",
-        "https://readysteadycut.com/2026/11/27/tulsa-king-season-4-episode-7-recap/",
-        "https://www.cbr.com/tulsa-king-season-4-main-villain-agent-musso/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66120275/",
-          "title": "‘Tulsa King’ Season 4 Episode 7 Release Date, Time, Where to Watch and Preview",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpBZV5hw1tuWm1jg7glvbx_rhN9bkymB2UaTtCmOicfFVsUpphuenpmOncqmc"
-        },
-        {
-          "url": "https://readysteadycut.com/2026/11/27/tulsa-king-season-4-episode-7-recap/",
-          "title": "‘Tulsa King’ Season 4, Episode 7 Recap – Unfortunately, Tyson Is Still In This",
-          "publisher": "Ready Steady Cut",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuRMGYeEPsD-ndDPM5p5IJuBRQHdS9C7vCoYwADj_LywLkYzteCWFMoQlKnw"
-        },
-        {
-          "url": "https://www.cbr.com/tulsa-king-season-4-main-villain-agent-musso/",
-          "title": "Taylor Sheridan Confirms Tulsa King Season 4's New Main Villain",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwFMf0rhlFCZCCu27anzhfz5nCfDE8csZ1YvruHiUEHRQSbVKp5khn0bnSbKM"
-        }
-      ]
-    },
-    {
-      "query": "happy black friday",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:00:00Z",
-      "related_news_urls": [
-        "https://linedrivemedia.com/news/rankings-news-happy-black-friday-2027-hot-100-schedule-change-nov-26-2026/",
-        "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-moving-up-with-s-30-21-nov-25-2026/",
-        "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-more-of-the-best-with-s-40-31-nov-24-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqraNvxu1ASl8LBqMPQkFMX6WWJVn_JvO2cSJjvea7WrXv0lUurGScSY3SpCo",
-      "image_credit": "Line Drive Media",
-      "news": [
-        {
-          "url": "https://linedrivemedia.com/news/rankings-news-happy-black-friday-2027-hot-100-schedule-change-nov-26-2026/",
-          "title": "Rankings News: Happy Black Friday + 2027 HOT 100 Schedule Change (Nov. 26, 2026)",
-          "publisher": "Line Drive Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqraNvxu1ASl8LBqMPQkFMX6WWJVn_JvO2cSJjvea7WrXv0lUurGScSY3SpCo"
-        },
-        {
-          "url": "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-moving-up-with-s-30-21-nov-25-2026/",
-          "title": "The 2027 Line Drive Media HOT 100 Player Rankings… Moving Up With #’s 30-21 (Nov. 25, 2026)",
-          "publisher": "Line Drive Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzmFWzUXlRh1HSwP3ydZ4sVL9Yx5hV-niedzyOz8gH-ixL6W5G5AxqTktRySg"
-        },
-        {
-          "url": "https://linedrivemedia.com/news/the-2027-line-drive-media-hot-100-player-rankings-more-of-the-best-with-s-40-31-nov-24-2026/",
-          "title": "The 2027 Line Drive Media HOT 100 Player Rankings… More of the Best With #’s 40-31 (Nov. 24, 2026)",
-          "publisher": "Line Drive Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTfPYaOdANs2CA1yw9ATxiIPp7nrq27UvYSBLym0DLfhRg-7FDIhNrQPwtbNs"
-        }
-      ]
-    },
-    {
-      "query": "grace tame",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T13:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/ckr5grlq78n9o",
-        "https://www.theguardian.com/australia-news/2026/nov/27/grace-tame-responds-former-murdoch-executive-nephew-rape-comment-ntwnfb",
-        "https://ozarab.media/grace-tame-confronts-matt-handbury-over-offensive-remark/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs7O0aDc0SYfkTBof7NAikJUbu9NS4zHuuc9WGIbFrDhATZ9mGZyrRWhK94gs",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/ckr5grlq78n9o",
-          "title": "Grace Tame: Media mogul admits saying child sex abuse survivor 'looking to get raped again'",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs7O0aDc0SYfkTBof7NAikJUbu9NS4zHuuc9WGIbFrDhATZ9mGZyrRWhK94gs"
-        },
-        {
-          "url": "https://www.theguardian.com/australia-news/2026/nov/27/grace-tame-responds-former-murdoch-executive-nephew-rape-comment-ntwnfb",
-          "title": "Grace Tame calls out ex-Murdoch media executive who said she ‘must be looking to be raped again’",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfUMUHniVEAPIe4o9KDHBlMDcnwYaVaapZEPQwka4upg-u_r488G7iR8iAFhY"
-        },
-        {
-          "url": "https://ozarab.media/grace-tame-confronts-matt-handbury-over-offensive-remark/",
-          "title": "Grace Tame Confronts Matt Handbury Over Offensive Remark",
-          "publisher": "Oz Arab Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS4Aqv-cvFczZBjRt-tcmWapVqHqre5tDPkXhm18fyhui6dvMoGL2c7lQuiEoU"
-        }
-      ]
-    },
-    {
-      "query": "knox family death",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T12:40:00Z",
-      "related_news_urls": [
-        "https://www.nbcnews.com/news/us-news/mississippi-plane-crash-victims-members-prominent-florida-family-rcna611318",
-        "https://www.gulfcoastnewsnow.com/article/remains-found-plane-crash-new-orleans-fort-myers-horn-island/74529786",
-        "https://nypost.com/2026/11/26/us-news/air-traffic-controller-gave-pilot-dad-chilling-warning-before-plane-crash-killed-6-family-members/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTclNRkLFeMg7D5zcGxY11oogGNIlYmdPOYE0ihMr0VhReEOtKMuTQJJCe65g",
-      "image_credit": "NBC News",
-      "news": [
-        {
-          "url": "https://www.nbcnews.com/news/us-news/mississippi-plane-crash-victims-members-prominent-florida-family-rcna611318",
-          "title": "Mississippi plane crash victims were members of a Florida family returning from a fishing trip",
-          "publisher": "NBC News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTclNRkLFeMg7D5zcGxY11oogGNIlYmdPOYE0ihMr0VhReEOtKMuTQJJCe65g"
-        },
-        {
-          "url": "https://www.gulfcoastnewsnow.com/article/remains-found-plane-crash-new-orleans-fort-myers-horn-island/74529786",
-          "title": "Remains of 6 people found after plane crashes en route to Fort Myers",
-          "publisher": "Gulf Coast News and Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2t9FQnYACQM4WKXK-9V4LQNFQPWBzU8D3Ub79kfj9oqJOLwkFZ03xsnRGVWQ"
-        },
-        {
-          "url": "https://nypost.com/2026/11/26/us-news/air-traffic-controller-gave-pilot-dad-chilling-warning-before-plane-crash-killed-6-family-members/",
-          "title": "Air traffic controller gave pilot dad chilling warning before plane crash killed 6 family members",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbaaFIbgEIIE4DAYJDNWdFNnzdB8RP2FKLH_ER6C_lIUJrsI5wUVBQYokHoNU"
-        }
-      ]
-    },
-    {
-      "query": "le creuset black friday",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T12:40:00Z",
-      "related_news_urls": [
-        "https://www.al.com/shopping/2026/11/le-creusets-gorgeous-christmas-dutch-oven-is-on-sale-for-black-friday.html",
-        "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026",
-        "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U",
-      "image_credit": "AL.com",
-      "news": [
-        {
-          "url": "https://www.al.com/shopping/2026/11/le-creusets-gorgeous-christmas-dutch-oven-is-on-sale-for-black-friday.html",
-          "title": "Le Creuset’s gorgeous Christmas Dutch oven is on sale for Black Friday",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U"
-        },
-        {
-          "url": "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026",
-          "title": "Le Creuset’s Black Friday Sale Includes the Signature Dutch Oven, And It's Going Quickly",
-          "publisher": "Bon Appétit: Recipes, Cooking, Entertaining, Restaurants | Bon Appétit",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-31dF3hn_2QdN_5havtwXxG-xSqrMRw7QYlS9m2H8JlCeitk47eJIjnTax5o"
-        },
-        {
-          "url": "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
-          "title": "Le Creuset Dropped Prices on Dutch Ovens, Tea Kettles, Holiday Gear, and More — Up to 40% Off",
-          "publisher": "Food & Wine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfih87K14WN9qcE0jylcrNCXrMbkj-jygz67oxn1txjpNCRLUCwFADQcpGosk"
-        }
-      ]
-    },
-    {
-      "query": "erling haaland",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T12:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/c9zr568gje67o",
-        "https://www.telegraph.co.uk/football/2026/11/27/savour-erling-haaland-while-can-may-not-premier-league/",
-        "https://www.goal.com/en/news/england-legend-haaland-will-join-real-madrid-within-18-months-and-vinicius-will-leave/blt48106015e0503a85"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4xuglPDMIRgKbddh317fywdEhcnf7cF_nLHYw3AeSOR174UIKxQXsHeauCc",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/c9zr568gje67o",
-          "title": "Football gossip: Haaland, Musiala, Araujo, Alvarez, Rudiger, Owusu",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4xuglPDMIRgKbddh317fywdEhcnf7cF_nLHYw3AeSOR174UIKxQXsHeauCc"
-        },
-        {
-          "url": "https://www.telegraph.co.uk/football/2026/11/27/savour-erling-haaland-while-can-may-not-premier-league/",
-          "title": "Are we about to lose the Premier League’s last superstar in Erling Haaland?",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5cSO099L185PFAenaj8JwPQwxWdOE4V8QOXYEacHhpVzNAo3VIyr-QnISX0U"
-        },
-        {
-          "url": "https://www.goal.com/en/news/england-legend-haaland-will-join-real-madrid-within-18-months-and-vinicius-will-leave/blt48106015e0503a85",
-          "title": "England legend: Haaland will join Real Madrid within 18 months and Vinicius will leave",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVFYTy5poaanmPXGFgf6en_LWg9MNVELGl4LwAFY3O8xopaQ2ZkQ7XYiZMQHY"
-        }
-      ]
-    },
-    {
-      "query": "home goods black friday",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:40:00Z",
-      "related_news_urls": [
-        "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
-        "https://www.forbes.com/sites/forbes-personal-shopper/2026/11/27/black-friday-furniture-deals/",
-        "https://www.goodmorningamerica.com/shop/story/black-friday-mattresses-kitchen-furniture-138290792"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA",
-      "image_credit": "New York Magazine",
-      "news": [
-        {
-          "url": "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
-          "title": "Make That Big Home-Upgrade Purchase This Black Friday",
-          "publisher": "New York Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA"
-        },
-        {
-          "url": "https://www.forbes.com/sites/forbes-personal-shopper/2026/11/27/black-friday-furniture-deals/",
-          "title": "We’re Live-Tracking The Best Black Friday Furniture Deals All Day",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQjYVhLr9_VENOqmNm12azWcBGNgQIXi02tS01e-IerR4sDFafKkoIZNEvmRu4"
-        },
-        {
-          "url": "https://www.goodmorningamerica.com/shop/story/black-friday-mattresses-kitchen-furniture-138290792",
-          "title": "Early Black Friday deals for the home: Mattresses, kitchen must-haves and more",
+          "url": "https://www.goodmorningamerica.com/video/138395996",
+          "title": "Deals & Steals for Thanksgiving",
           "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVKhRCBZxfs9F8Xuj8_wfqhrpy4gQL_Ux6HKaPDQrSGQ3i7rgqI0sHJxvEtTY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppFo3oZQK-bNxpH_OWp6If1Nuv6wbVcdLhQYkWbH3mzmI2mEbMKnJG7GoYhc"
         }
       ]
     },
     {
-      "query": "us air force cloud one breach",
+      "query": "ncaa football today",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T12:30:00Z",
+      "published_at": "2026-11-27T13:30:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-        "https://finance.yahoo.com/technology/articles/hackers-breached-us-air-force-112039671.html",
-        "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
+        "https://www.stltoday.com/sports/column/media-views/article_4c6b20fd-d1e4-44c5-b578-08afb0d61a2e.html",
+        "https://sports.yahoo.com/nfl/articles/black-friday-football-schedule-broncos-120019078.html",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-games-today-schedule-week-13-black-friday/92962503007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqYCG7kJz83OhGIXyhE0T3_XaXIZ9efEdZWfUQ9TwdwxHO4KiXuHMI79dutg",
+      "image_credit": "STLtoday.com",
       "news": [
         {
-          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-          "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
-          "publisher": "Reuters",
+          "url": "https://www.stltoday.com/sports/column/media-views/article_4c6b20fd-d1e4-44c5-b578-08afb0d61a2e.html",
+          "title": "Why the heck is there a Friday afternoon, not primetime, NFL game this week? Media Views",
+          "publisher": "STLtoday.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGqYCG7kJz83OhGIXyhE0T3_XaXIZ9efEdZWfUQ9TwdwxHO4KiXuHMI79dutg"
         },
         {
-          "url": "https://finance.yahoo.com/technology/articles/hackers-breached-us-air-force-112039671.html",
-          "title": "Hackers Breached US Air Force’s Cloud Platform, Report Says",
-          "publisher": "Yahoo Finance",
+          "url": "https://sports.yahoo.com/nfl/articles/black-friday-football-schedule-broncos-120019078.html",
+          "title": "Black Friday Football Schedule: Broncos vs. Steelers, Texas vs. Texas A&M and Every NFL and College Game on TV",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6O6Wmm9BpYjXtIkdOcEOqj3hrh6RMZH0xhpWlNM-6vEDhsp1YoJB-Xv5FtRY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQapwANkdEv0JOIThhXwyoPFrCk7oG7NjNc5077SQKQr7bZWVAnQ22DNm4KcjQ"
         },
         {
-          "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
-          "title": "US Air Force's cloud computing platform hacked",
-          "publisher": "Sky News",
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-games-today-schedule-week-13-black-friday/92962503007/",
+          "title": "Are college football games on today? Time, TV, streaming for Black Friday schedule",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGLuqvv-Ez0cmtDoowaAPs968_KgJSmz7LUtsaovEfiNQgxp1bL5vKZ-aeeQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5ErYWseiHgcT8ZiwMPqMg33Lyd0Jm_gzJjEE5COxJFAMubsgbpscvrpCoz8I"
+        }
+      ]
+    },
+    {
+      "query": "black friday ipad deals 2026",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:30:00Z",
+      "related_news_urls": [
+        "https://www.wired.com/story/best-black-friday-ipad-deals-11-27-2026/",
+        "https://appleinsider.com/articles/26/11/26/apples-ipad-11-inch-dips-to-379-during-amazons-black-friday-sale",
+        "https://www.techradar.com/seasonal-sales/black-friday-ipad-deals-save-big-on-ipad-a16-ipad-air-and-ipad-pro-plus-discounts-on-the-brand-new-oled-ipad-mini"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTRAPwBEXkbYv5HhCOQvaN6dsumXDaaZkzYSBw0wWUUENvr9cZp4Ufy3jyx8",
+      "image_credit": "WIRED",
+      "news": [
+        {
+          "url": "https://www.wired.com/story/best-black-friday-ipad-deals-11-27-2026/",
+          "title": "The Best Black Friday iPad Deals On the Latest Models",
+          "publisher": "WIRED",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTRAPwBEXkbYv5HhCOQvaN6dsumXDaaZkzYSBw0wWUUENvr9cZp4Ufy3jyx8"
+        },
+        {
+          "url": "https://appleinsider.com/articles/26/11/26/apples-ipad-11-inch-dips-to-379-during-amazons-black-friday-sale",
+          "title": "Apple iPad A16 drops to $379 in Amazon Black Friday deal",
+          "publisher": "AppleInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Yqxyql-671xQoSHIFzgl1CKIov83FC-0YARKcNqJ2hhyUzKhW5GNu2kcBZs"
+        },
+        {
+          "url": "https://www.techradar.com/seasonal-sales/black-friday-ipad-deals-save-big-on-ipad-a16-ipad-air-and-ipad-pro-plus-discounts-on-the-brand-new-oled-ipad-mini",
+          "title": "16 of the best Black Friday iPad deals: save big on iPad A16, iPad Air, iPad Pro, and more",
+          "publisher": "TechRadar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfj8wmHGSR-DgAAI8s7i8ukhfsDvnkS5bgZE1p1b4A14I7wb8sihCYT5YnI0"
+        }
+      ]
+    },
+    {
+      "query": "dolar hoje",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:30:00Z",
+      "related_news_urls": [
+        "https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
+        "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/11/flavio-e-nikolas-ironizam-lula-apos-acerto-com-trabuco-para-fazenda-virou-faria-limer.ghtml",
+        "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/27/haddad-trabuco-fazenda.ghtm"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRucJdr-4YKf4ej0YO8kqE0Ob5XZEjtDrSoxW2mOkeQrbgcO75Apu-gIAwYSjA",
+      "image_credit": "Folha de S.Paulo",
+      "news": [
+        {
+          "url": "https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
+          "title": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
+          "publisher": "Folha de S.Paulo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRucJdr-4YKf4ej0YO8kqE0Ob5XZEjtDrSoxW2mOkeQrbgcO75Apu-gIAwYSjA"
+        },
+        {
+          "url": "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/11/flavio-e-nikolas-ironizam-lula-apos-acerto-com-trabuco-para-fazenda-virou-faria-limer.ghtml",
+          "title": "Flávio e Nikolas ironizam Lula após acerto com Trabuco para Fazenda: 'Virou Faria Limer'",
+          "publisher": "O GLOBO",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkXE_lMHSeoczAaZpvvpYeyzKb7prN4RnP4-CO-tAb9H7Xo-lZVlzbOU9XYdk"
+        },
+        {
+          "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/27/haddad-trabuco-fazenda.ghtm",
+          "title": "Haddad parabeniza Trabuco e diz que Brasil precisa de 'uma Fazenda forte'",
+          "publisher": "UOL Notícias",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA24zM3U2FNQUIridzPi0imdf2HripxQSJfLZmBONn1x-VS0QZcmm8RZmqBIU"
+        }
+      ]
+    },
+    {
+      "query": "who is matt rogers",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:30:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/video/138479627/",
+        "https://www.broadwayworld.com/bwwtv/article/Matt-Rogers-on-Christmas-Tour-Mug-Stack-and-Golden-Globe-Bid-20261126"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNooB_FhhGSFigTD0MS2-h1IcNeQ7xRI64ry8378DTOqiD_TBLW144UD084M",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/video/138479627/",
+          "title": "Video Matt Rogers talks 'This Time It's Really Christmas' tour",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNooB_FhhGSFigTD0MS2-h1IcNeQ7xRI64ry8378DTOqiD_TBLW144UD084M"
+        },
+        {
+          "url": "https://www.broadwayworld.com/bwwtv/article/Matt-Rogers-on-Christmas-Tour-Mug-Stack-and-Golden-Globe-Bid-20261126",
+          "title": "Matt Rogers on Christmas Tour, Mug Stack and Golden Globe Bid",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgF03SAjKNdxisWLkP21xC8AnSJa8GCYAuKzTZi07JVEvHrhzC-qQP20MAE3c"
+        }
+      ]
+    },
+    {
+      "query": "the pitt season 3",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:30:00Z",
+      "related_news_urls": [
+        "https://www.today.com/video/hbo-max-sets-release-date-for-the-pitt-season-3-274261573580",
+        "https://www.post-gazette.com/culture/film-tv-radio/the-pitt-season-3-release-jan-7-KMAMMUCCDJFFFPGYXCZWUIJGDA/",
+        "https://hypebeast.com/2026/11/hbo-max-the-pitt-season-3-premiere-release-date-announcement"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt3kOQTIn0dNnDsXXUwcjdylKNC2FfKUWlv1vwt-RDi0OP2sQhq5Jr3sXwn_U",
+      "image_credit": "TODAY.com",
+      "news": [
+        {
+          "url": "https://www.today.com/video/hbo-max-sets-release-date-for-the-pitt-season-3-274261573580",
+          "title": "‘The Pitt’ to Return for Season 3 Sooner Than You Might Think",
+          "publisher": "TODAY.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt3kOQTIn0dNnDsXXUwcjdylKNC2FfKUWlv1vwt-RDi0OP2sQhq5Jr3sXwn_U"
+        },
+        {
+          "url": "https://www.post-gazette.com/culture/film-tv-radio/the-pitt-season-3-release-jan-7-KMAMMUCCDJFFFPGYXCZWUIJGDA/",
+          "title": "‘The Pitt’ announces Season 3 premiere date",
+          "publisher": "Pittsburgh Post-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRV2H2YVyuUBA6gI5XsuNzvToy-ps-7PWwsF9AvhsL_aYmJqbXSdsicyC_fds"
+        },
+        {
+          "url": "https://hypebeast.com/2026/11/hbo-max-the-pitt-season-3-premiere-release-date-announcement",
+          "title": "The Clock Starts Again as ‘The Pitt’ Season 3 Locks Its Premiere Date",
+          "publisher": "Hypebeast",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPVQItm7zmbHJwPPyAntmWkKflFWy2yrK64Xy-0qhKLoA0htZ-m2SBeiFvyA0"
         }
       ]
     }
