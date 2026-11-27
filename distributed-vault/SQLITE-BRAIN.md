@@ -84,3 +84,58 @@ Physical Android, supervisor restart/reboot, actual imported owner records,
 signed production inference, end-to-end ticket engineering, HTTPS deployment
 and Bubbles conversation acceptance remain unverified. GitHub source/CI does
 not establish these receipts.
+
+## Private queue and durable-state import
+
+`brain-private-import.mjs` stages an **owner-provided offline snapshot pair**
+into a new private bundle. The existing work SQLite file is copied byte for
+byte, preserving every table, owner partition, BLOB, index and trigger. Durable
+JSON values are inserted into the existing portable state schema in one
+transaction, including encrypted credentials, existing session expiries,
+repository leases, run replay markers and result history. No credential or
+consent is renewed, and no ticket status is rewritten.
+
+Input files must be regular non-symlink files with private permissions. The
+destination root must already be a private directory. Use the existing
+`d1-stage.py snapshot` on a private staged SQLite database if a standalone
+snapshot is needed: this importer rejects WAL/journal sidecars and non-DELETE
+journal mode. It reads no Cloudflare API, phone archive or public GitHub data.
+Its command is part of the repository source, not another recovery installer:
+
+```bash
+node distributed-vault/brain-private-import.mjs stage PRIVATE_WORK.sqlite PRIVATE_STATE.json PRIVATE_DIRECTORY
+node distributed-vault/brain-private-import.mjs verify PRIVATE_BUNDLE_DIRECTORY
+```
+
+Both commands read the **existing** `WRITER_OWNER_HASH` from private environment
+configuration. Do not paste its value into a public command, issue or log. The
+receipt returns bundle paths and aggregate counts, never state values or keys.
+All snapshots, bundles and receipt files remain private; they are not encrypted
+backups by this module and must not be uploaded to public repositories.
+
+The JSON input contract is `format: "infinity-brain-private-state/v1"`, the
+existing `ownerHash`, immutable 40-character `sourceSha`, a bounded `snapshotId`,
+`complete: true`, `entryCount`, `entriesSha256`, `workSha256`, and `entries` as
+`[[key, JSON_value], ...]`. `entriesSha256` is SHA-256 of UTF-8
+`JSON.stringify(entries)`; `workSha256` identifies the exact standalone SQLite
+file. Exports are bounded to 32 MiB / 100,000 entries and JSON values of depth
+at most 128. Duplicate keys, incomplete counts, mismatched hashes, invalid
+values and owner mismatches fail before a bundle is accepted. Exporters must
+preserve any unsupported typed values explicitly in a separately reviewed
+format; this importer never silently drops them.
+
+The completion marker is written and synchronized last. Repeated imports
+verify and reuse only the exact same snapshot. Changed or incomplete existing
+bundles, including another same-owner snapshot moved into the expected path,
+are preserved and refused. New imports never overwrite prior files. Verification
+is for an untouched staged copy; once a runtime legitimately writes into a
+bundle, its original snapshot checksum is expected to stop matching.
+
+**The supplied complete flag, counts and hashes do not authenticate an export
+or prove a shared consistency boundary across D1 and Durable Objects.** A real
+complete private cloud export and old-writer fence still need implementation
+and live receipts. Every import/verification result explicitly reports
+`sourceAuthorityVerified:false`, `sourceFenceVerified:false`,
+`productionVerified:false` and `writerEnabled:false`. Staging does not start a
+listener, choose a model, install a supervisor, change the runner origin,
+replace the original Brain or enable execution.
