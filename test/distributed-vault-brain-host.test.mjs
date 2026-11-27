@@ -19,14 +19,16 @@ const runtime=fileURLToPath(new URL('../distributed-vault/sqlite-brain-runtime.m
 const delay=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const digest=value=>createHash('sha256').update(value).digest('hex');
 async function fixture(t){
- const root=mkdtempSync(join(tmpdir(),'brain-host-'));t.after(()=>rmSync(root,{recursive:true,force:true}));
+ const root=mkdtempSync(join(tmpdir(),'brain-host-')),cleanup=[];
+ // Stop fixture processes before removing their private stop marker and databases.
+ t.after(async()=>{for(const fn of cleanup.reverse())await fn();rmSync(root,{recursive:true,force:true});});
  const work=join(root,'work.sqlite'),statePath=join(root,'state.sqlite'),modulePath=join(root,'bindings.mjs');
  const db=new DatabaseSync(work);db.exec('CREATE TABLE work_tickets(id TEXT PRIMARY KEY,owner_hash TEXT,context_json TEXT,request TEXT,created_at INTEGER,updated_at INTEGER,status TEXT)');db.close();chmodSync(work,0o600);
  const state=openPortableBrainState(statePath);await state.put('owner-session:fixture',{expires:42,tokenHash:'preserve-existing-session'});await state.close();
  writeFileSync(modulePath,"const marker='private-fixture-marker'; export const WRITER_AI={marker,async run(model,input){if(this.marker!==marker)throw Error('lost receiver');return {response:'fixture answer',model,input};}};",{mode:0o600});
  const env={...process.env,BRAIN_WORK_DB:work,BRAIN_STATE_DB:statePath,WRITER_OWNER_HASH:owner,BRAIN_SQLITE_WRITER_ENABLED:'0',BRAIN_BINDINGS_MODULE:modulePath,BRAIN_SUPERVISOR_DB:join(root,'supervisor.sqlite'),BRAIN_STOP_FILE:join(root,'stop')};
  delete env.BRAIN_BINDINGS_SHA256;delete env.BOT_WORK_SECRET;
- return {root,work,statePath,modulePath,env};
+ return {root,work,statePath,modulePath,env,cleanup};
 }
 async function unusedPort(){const s=createServer();await new Promise(resolve=>s.listen(0,'127.0.0.1',resolve));const port=s.address().port;await new Promise(resolve=>s.close(resolve));return port;}
 function http(url,method='GET'){
@@ -35,22 +37,27 @@ function http(url,method='GET'){
 function launch(env,program=supervisor){
  const child=spawn(program===runtime?process.execPath:'python3',[program],{env,stdio:['ignore','pipe','pipe']});
  let output='';child.stdout.on('data',part=>output+=part);child.stderr.on('data',part=>output+=part);
- const done=new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',(code,signal)=>resolve({code,signal,output}));});
+ const done=new Promise((resolve,reject)=>{child.once('error',reject);child.once('close',(code,signal)=>resolve({code,signal,output}));});
  return {child,done,output:()=>output};
 }
 async function waitForHealth(url,process){
- const deadline=Date.now()+12000;
- while(Date.now()<deadline){
-  if(process.child.exitCode!==null)throw Error(process.output());
+ // Android startup and durable SQLite sync can take several seconds per attempt.
+ // Allow all three real starts and both backoffs; never count a timeout as success.
+ const deadline=performance.now()+60000;
+ while(performance.now()<deadline){
+  if(process.child.exitCode!==null||process.child.signalCode!==null)throw Error(process.output());
   try{const result=await http(url+'/local/health');if(result.status===200)return JSON.parse(result.body);}catch{}
   await delay(100);
  }
  throw Error('local host health deadline exceeded: '+process.output());
 }
 async function stop(process,env){
- if(process.child.exitCode===null){writeFileSync(env.BRAIN_STOP_FILE,'stop',{mode:0o600});}
+ if(process.child.exitCode===null&&process.child.signalCode===null){
+  try{writeFileSync(env.BRAIN_STOP_FILE,'stop',{mode:0o600});}
+  catch(error){process.child.kill('SIGTERM');throw error;}
+ }
  let timer;
- try{return await Promise.race([process.done,new Promise((resolve,reject)=>{timer=setTimeout(()=>{if(process.child.exitCode===null)process.child.kill('SIGTERM');reject(Error('supervisor did not stop'));},12000);})]);}
+ try{return await Promise.race([process.done,new Promise((resolve,reject)=>{timer=setTimeout(()=>{if(process.child.exitCode===null&&process.child.signalCode===null)process.child.kill('SIGTERM');reject(Error('supervisor did not stop'));},30000);})]);}
  finally{clearTimeout(timer);}
 }
 function starts(env){const db=new DatabaseSync(env.BRAIN_SUPERVISOR_DB,{readOnly:true});try{return db.prepare('SELECT * FROM brain_starts ORDER BY id').all();}finally{db.close();}}
@@ -122,7 +129,7 @@ test('enabled CLI refuses a missing model adapter before opening the original da
 });
 test('supervisor holds one process, respects manual stop and preserves the original session',async t=>{
  const f=await fixture(t);f.env.BRAIN_PORT=String(await unusedPort());const url='http://127.0.0.1:'+f.env.BRAIN_PORT;
- const first=launch(f.env);t.after(()=>stop(first,f.env));
+ const first=launch(f.env);f.cleanup.push(()=>stop(first,f.env));
  const health=await waitForHealth(url,first);assert.equal(health.modelConfigured,true);assert.equal(health.writerEnabled,false);
  const second=await launch(f.env).done;assert.equal(second.code,73);assert.equal(starts(f.env).length,1);
  assert.equal((await http(url+'/runner/claim','POST')).status,503);assert.equal(starts(f.env).length,1,'HTTP service errors must not restart the child');
@@ -133,7 +140,7 @@ test('supervisor holds one process, respects manual stop and preserves the origi
 test('unexpected child failures recover with the same databases and a persisted attempt budget',async t=>{
  const f=await fixture(t),counter=join(f.root,'counter');
  writeFileSync(f.modulePath,"import {readFileSync,writeFileSync} from 'node:fs'; const file="+JSON.stringify(counter)+"; let n=0;try{n=Number(readFileSync(file,'utf8'))}catch{};writeFileSync(file,String(n+1));if(n<2)process.exit(1);export const WRITER_AI={async run(){return {response:'fixture'}}};",{mode:0o600});
- f.env.BRAIN_PORT=String(await unusedPort());const process=launch(f.env);t.after(()=>stop(process,f.env));
+ f.env.BRAIN_PORT=String(await unusedPort());const process=launch(f.env);f.cleanup.push(()=>stop(process,f.env));
  await waitForHealth('http://127.0.0.1:'+f.env.BRAIN_PORT,process);
  assert.equal(readFileSync(counter,'utf8'),'3');assert.deepEqual(starts(f.env).map(x=>x.exit_code),[1,1,null]);
  await stop(process,f.env);
@@ -143,7 +150,7 @@ test('unexpected child failures recover with the same databases and a persisted 
 });
 test('configuration and occupied ports stop without retrying or killing the existing service',async t=>{
  const f=await fixture(t),existing=createServer((req,res)=>res.end('existing preserved'));
- await new Promise(resolve=>existing.listen(0,'127.0.0.1',resolve));t.after(()=>new Promise(resolve=>existing.close(resolve)));
+ await new Promise(resolve=>existing.listen(0,'127.0.0.1',resolve));f.cleanup.push(()=>new Promise(resolve=>existing.close(resolve)));
  f.env.BRAIN_PORT=String(existing.address().port);
  const result=await launch(f.env).done;assert.equal(result.code,78);assert.equal(starts(f.env).length,1);
  assert.equal((await http('http://127.0.0.1:'+f.env.BRAIN_PORT)).body,'existing preserved');
