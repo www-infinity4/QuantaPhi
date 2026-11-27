@@ -63,7 +63,7 @@ function jsonValues(value){
   if(next&&typeof next==='object')for(const item of Object.values(next))pending.push([item,depth+1]);
  }
 }
-function validateDocument(document,ownerHash){
+export function validateBrainStateDocument(document,ownerHash){
  const fields=['format','ownerHash','sourceSha','snapshotId','complete','entryCount','entriesSha256','workSha256','entries'];
  if(!document||typeof document!=='object'||Array.isArray(document)||Object.keys(document).some(key=>!fields.includes(key))||
   document.format!==FORMAT||document.ownerHash!==ownerHash||document.complete!==true||
@@ -89,6 +89,18 @@ function workFacts(file){
    throw Error('brain_import_database_invalid');
   return {workTickets:db.prepare('SELECT COUNT(*) AS amount FROM work_tickets').get().amount};
  }finally{db.close();}
+}
+export async function inspectPrivateBrainWorkSnapshot(file){
+ offline(file);const fd=privateFile(file);
+ try{
+  const before=fstatSync(fd);
+  if(typeof process.getuid==='function'&&before.uid!==process.getuid())throw Error('private_snapshot_required');
+  const facts=workFacts(file),workSha256=await hashFd(fd),after=lstatSync(file);
+  offline(file);
+  if(!after.isFile()||after.dev!==before.dev||after.ino!==before.ino||after.size!==before.size||
+     after.mtimeMs!==before.mtimeMs)throw Error('brain_import_work_snapshot_changed');
+  return {...facts,workSha256};
+ }finally{closeSync(fd);}
 }
 function stateFacts(file,entries){
  const db=new DatabaseSync(file,{readOnly:true});
@@ -130,7 +142,7 @@ export async function verifyBrainImport({directory,ownerHash}={}){
 }
 export async function stageBrainImport({workDbPath,exportPath,destinationRoot,ownerHash}={}){
  ownerRequired(ownerHash);privateDirectory(destinationRoot);offline(workDbPath);
- const document=validateDocument(privateJson(exportPath,32*1024*1024),ownerHash);
+ const document=validateBrainStateDocument(privateJson(exportPath,32*1024*1024),ownerHash);
  const source=privateFile(workDbPath);let directory,owned=false,state;
  try{
   if(await hashFd(source)!==document.workSha256)throw Error('brain_import_work_snapshot_mismatch');

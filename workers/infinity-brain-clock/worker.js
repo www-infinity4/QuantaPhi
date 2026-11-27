@@ -1167,6 +1167,19 @@ export class BrainClock extends DurableObject{
   return record;
  }
  async fetch(request){
+  if(new URL(request.url).pathname==='/migration/state-export'&&request.method==='POST'){
+   const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'};
+   if(this.env.BRAIN_PRIVATE_EXPORT_ENABLED!=='1')return new Response('Not found',{status:404,headers});
+   try{
+    const metadata=await readBoundedJson(request,4096);
+    if(metadata?.ownerHash!==this.env.WRITER_OWNER_HASH)throw Error('owner_scope_mismatch');
+    const {createPrivateBrainStateExport}=await import('./private-state-export.mjs');
+    const snapshot=await createPrivateBrainStateExport(this.ctx.storage,metadata);
+    return new Response(snapshot.serialized,{headers:{...headers,'Content-Disposition':'attachment; filename="brain-private-state.json"',
+     'X-Brain-KV-Snapshot':'complete','X-Brain-Source-Authority-Verified':'false','X-Brain-Source-Fence-Verified':'false',
+     'X-Brain-Work-Consistency-Verified':'false','X-Brain-Production-Verified':'false'}});
+   }catch{return Response.json({ok:false,error:'brain_private_state_export_unavailable'},{status:503,headers});}
+  }
   // Service-internal only: the outer Worker verifies bridge signature and
   // live consent. Serialize submission IDs so conflicting concurrent retries
   // cannot each insert a different ticket before either sees the other.
@@ -1846,6 +1859,29 @@ export default{
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  if(path==='/work/migration/state-export'&&request.method==='POST'){
+   const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
+   if(env.BRAIN_PRIVATE_EXPORT_ENABLED!=='1')return new Response('Not found',{status:404,headers});
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return Response.json({ok:false,error:'origin_rejected'},{status:403,headers});
+   const token=request.headers.get('Authorization')?.match(/^Bearer ([\x21-\x7e]{1,256})$/)?.[1];
+   // Full private-state backup requires the original master preimage. Do not
+   // reuse ownerAuthorized: its phone/bridge session fallback is not this grant.
+   if(!token||!/^[a-f0-9]{64}$/.test(env.WRITER_OWNER_HASH||'')||await digest(token)!==env.WRITER_OWNER_HASH)
+    return Response.json({ok:false,error:'owner_migration_authorization_required'},{status:401,headers});
+   let metadata;
+   try{
+    const body=await readBoundedJson(request,4096);
+    if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).length!==3||
+     Object.keys(body).some(key=>!['sourceSha','snapshotId','workSha256'].includes(key)))throw Error();
+    const {validatePrivateBrainExportMetadata}=await import('./private-state-export.mjs');
+    metadata=validatePrivateBrainExportMetadata({...body,ownerHash:env.WRITER_OWNER_HASH});
+   }catch(error){return Response.json({ok:false,error:'brain_export_metadata_invalid'},{status:error.message==='browser_result_oversize'?413:400,headers});}
+   try{
+    return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/migration/state-export',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(metadata)});
+   }catch{return Response.json({ok:false,error:'brain_private_state_export_unavailable'},{status:503,headers});}
+  }
   if(path==='/owner/bridge-work'&&request.method==='POST'){
    try{
     const claims=await authenticateOwnerBridge(request);

@@ -276,3 +276,68 @@ with private persistent disk and the existing model access. Repository source
 and passing CI do not provide an always-on private inference service. Follow
 the repository-first placement and offline-phone acceptance gates in
 `work/unfinished/2110-shard-cache-checkpoint.md` before production adoption.
+
+## Privileged private JSON-KV export
+
+The original Worker has an **inactive-by-default** export surface at
+`POST /work/migration/state-export`. It is available only when its private
+operator configuration explicitly sets `BRAIN_PRIVATE_EXPORT_ENABLED=1` and
+the bearer token is the original master preimage of `WRITER_OWNER_HASH`.
+Device/session tokens, GitHub OIDC and five-day conversation grants do not
+authorize it. The handler checks the existing origin allowlist and never
+falls back to phone/session verification. No new credential is created.
+
+This is privileged backup of the `infinity-main` object's **JSON KV**, including
+private session records, phone state, encrypted credentials, leases and receipt
+history. The internal handler reads all pages through one storage transaction,
+using UTF-8 key ordering. It reads one value per page to avoid loading many
+maximum-sized values before checking the budget, resets buffers on transaction
+retry, and continues until an empty terminal page. It writes no source state,
+alarm, D1 record or model request. Metadata and failures are bounded/sanitized;
+private values are never printed to logs or public GitHub receipts.
+
+The output uses the existing `infinity-brain-private-state/v1` format. Limits
+are 16 MiB of serialized UTF-8, 100,000 records, JSON depth 128 and 200,000 value
+nodes. Exceeding a limit refuses the export rather than truncating it. Values
+must be lossless JSON trees: unsupported structured-clone types, cycles,
+shared-reference aliasing within a value, sparse/extended arrays, accessors,
+non-enumerable data, non-finite numbers and negative zero are refused. Larger
+or typed snapshots need a separately implemented format, not silent conversion.
+
+`brain-private-export.mjs` is the matching operator download utility. It uses
+the original fixed HTTPS Worker endpoint, the existing master value from the
+private `BRAIN_OWNER_TOKEN` environment, and `redirect:error`. The input is an
+existing standalone private work SQLite snapshot and an existing private output
+directory. It verifies that snapshot's bytes before and after the download,
+validates owner/labels/counts/hash and explicit qualification headers, bounds
+and fatally decodes UTF-8, writes exclusive 0600 `state.json`, then synchronizes
+the private completion receipt last. Existing files are never overwritten.
+Errors do not print response bodies, private paths or credentials. On failure
+a partial private output may remain, without an accepted completion receipt.
+
+```bash
+node distributed-vault/brain-private-export.mjs PRIVATE_WORK.sqlite PRIVATE_DIRECTORY SOURCE_SHA
+```
+
+Do not put the master value in the command, chat, repository, workflow input,
+log or artifact. This utility belongs on a verified private operator host; it
+is not a public GitHub Actions task or an installed service. Its `state.json`
+can be staged through the existing private importer. It does not start Brain.
+
+**Completeness refers only to JSON KV in this one transaction.** DO SQL
+tables, alarms, environment encryption secrets, in-memory operations, D1 and
+other objects are excluded. Caller-supplied source SHA, snapshot ID and work
+hash are labels, not deployed-version or source-D1 attestation. HTTP headers
+and the separate private receipt explicitly report source authority, source
+fence, common work-snapshot consistency and production verification as false,
+and report `writerActivationPerformed:false`. The export neither stops the
+source writer nor activates a target. A stable local hash is not a common D1/DO consistency
+boundary. Original private export execution, consistent authoritative work
+export, rollback, old-writer fence and in-flight reconciliation remain required.
+
+No export is enabled, deployed or executed by a source merge. The existing
+Cloudflare health gate and approved host/inference requirements still apply.
+The current Durable Objects [storage API](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/)
+documents transaction-scoped KV reads and UTF-8 pagination. Tests exercise the
+existing Node/SQLite harness and original Worker; they do not establish live
+Cloudflare export or physical Android acceptance.
