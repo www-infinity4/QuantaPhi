@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T02:01:34.422024Z",
+  "checked_at": "2026-11-27T02:31:37.783086Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nfl standings cowboys",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-27T01:40:00Z",
+      "query": "tina fey",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T02:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
-        "https://www.cbssports.com/betting/news/thanksgiving-nfl-anytime-touchdown-scorer-picks-2026-josh-allen-best-td-bets-bills-chiefs/",
-        "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/"
+        "https://www.yahoo.com/entertainment/tv/articles/seth-meyers-welcomes-tina-fey-120000497.html",
+        "https://latenighter.com/news/seth-meyers-thanksgiving-tina-fey-amy-poehler/",
+        "https://ca.style.yahoo.com/tina-fey-amy-poehler-reunite-034526528.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrAm8a5I_xPMfE3tskVtk5qGfbeyo51MkNDJ2MguWvwk7BO2Teemewph7bv4",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
-          "title": "2026 NFL Thanksgiving preview: Picks, predictions, schedule, odds, fantasy tips",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/thanksgiving-nfl-anytime-touchdown-scorer-picks-2026-josh-allen-best-td-bets-bills-chiefs/",
-          "title": "Thanksgiving NFL anytime touchdown scorer picks 2026: Josh Allen among best TD bets for Bills vs. Chiefs",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDVO97y_nLRjBWimo2q5W4WGVAI60ObACAWG3NwqxjosE6ijXyr3Iqe9fSKJE"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/",
-          "title": "NFL staff picks for Week 12: Bears-Lions, Chiefs-Bills, Seahawks-49ers, more - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmnbEBwdqlOPGiR48yzeHrq7VXSNBR8qrFI83EQEoo7t48g3zUhetltBujffo"
-        }
-      ]
-    },
-    {
-      "query": "jason kelce",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/travis-kelce-makes-retirement-admission-183147193.html",
-        "https://people.com/travis-kelce-reflects-on-playing-100th-game-at-arrowhead-stadium-with-nod-to-wife-taylor-swift-12279293",
-        "https://www.eonline.com/news/1438413/is-travis-kelce-retiring-from-nfl-chiefs-player-addresses-football-future"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsil6Be4DVEM4QMg6VaFQeMmlMRdlfW7k68IOeKnaYhNTnH7US0Q2Iyoq_6g",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/travis-kelce-makes-retirement-admission-183147193.html",
-          "title": "Travis Kelce Makes Retirement Admission on Eve of Chiefs-Bills Thanksgiving Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsil6Be4DVEM4QMg6VaFQeMmlMRdlfW7k68IOeKnaYhNTnH7US0Q2Iyoq_6g"
-        },
-        {
-          "url": "https://people.com/travis-kelce-reflects-on-playing-100th-game-at-arrowhead-stadium-with-nod-to-wife-taylor-swift-12279293",
-          "title": "Travis Kelce Reflects on Playing in 100th Game at Arrowhead Stadium with Sweet Nod to Wife Taylor Swift",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-qM6EwhBB861I_qBuMSpLfYh7oyn6_t_AzMeExHgL09orlYrM-_Sfg6qH_TQ"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438413/is-travis-kelce-retiring-from-nfl-chiefs-player-addresses-football-future",
-          "title": "Is Travis Kelce Retiring From NFL? Kansas City Chiefs Star Teases Football Future",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxKC03RaL6qO-m9wY8iWSdt7-1KXHGjD3aaZ3rA_Ildl3O3A8bKy6Nn8wVsqU"
-        }
-      ]
-    },
-    {
-      "query": "xavier worthy",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:40:00Z",
-      "related_news_urls": [
-        "https://dknetwork.draftkings.com/2026/11/26/xavier-worthy-fantasy-football-start-or-sit-advice-for-week-12/",
-        "https://www.yahoo.com/news/videos/patrick-mahomes-xavier-worthys-touchdown-015910778.html",
-        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/22/xavier-worthy-touchdown-video-kansas-city-chiefs-arizona-cardinals-nfl-week-11/92915219007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5KTz1lSap8QD3mDZ0aI6bn-xFlJSn9U39o6DWyzHiTdLmyhklabAdTEcSbMU",
-      "image_credit": "DraftKings Network",
-      "news": [
-        {
-          "url": "https://dknetwork.draftkings.com/2026/11/26/xavier-worthy-fantasy-football-start-or-sit-advice-for-week-12/",
-          "title": "Xavier Worthy Fantasy Football Start or Sit Advice for Week 12",
-          "publisher": "DraftKings Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5KTz1lSap8QD3mDZ0aI6bn-xFlJSn9U39o6DWyzHiTdLmyhklabAdTEcSbMU"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/patrick-mahomes-xavier-worthys-touchdown-015910778.html",
-          "title": "Patrick Mahomes on Xavier Worthy's touchdown: 'Not many guys in this league' could score on that play",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/seth-meyers-welcomes-tina-fey-120000497.html",
+          "title": "Seth Meyers Welcomes Tina Fey and Amy Poehler, Changing 13-Year Thanksgiving Tradition",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdfQRysb4W1npxgUxtHYztMo4lqNGLQbg8naVuSk3iB-Pk5eiE9aifpuqIYKA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrAm8a5I_xPMfE3tskVtk5qGfbeyo51MkNDJ2MguWvwk7BO2Teemewph7bv4"
         },
         {
-          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/22/xavier-worthy-touchdown-video-kansas-city-chiefs-arizona-cardinals-nfl-week-11/92915219007/",
-          "title": "Chiefs vs. Cardinals: Xavier Worthy scores spectacular TD in Week 11",
-          "publisher": "Chiefs Wire",
+          "url": "https://latenighter.com/news/seth-meyers-thanksgiving-tina-fey-amy-poehler/",
+          "title": "Tina Fey, Amy Poehler to Join Meyers Family Thanksgiving Episode",
+          "publisher": "LateNighter",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ65_h4mHRDloiuaaW0nsNJVg0a09hVc62jz0gZkgD-ToRd4z5ui4poU4Fpuc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjPR3PCIvujAJMG3WrjxK4pXv2bnaRvpTJH_BzV512chgCI0Jvzdjzw7GMGQ"
+        },
+        {
+          "url": "https://ca.style.yahoo.com/tina-fey-amy-poehler-reunite-034526528.html",
+          "title": "Tina Fey and Amy Poehler to Reunite With Former ‘SNL' Costar Seth Meyers for His Thanksgiving ‘Late Night' Episode",
+          "publisher": "Yahoo Lifestyle Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_s2a66Ve4TbcIIfwLFju5fF2_608M0BIdV3GTosmOPjjx5uDz1k0ipM2BJDw"
         }
       ]
     },
     {
-      "query": "patrick mahomes kids",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T01:40:00Z",
+      "query": "emmett johnson",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T02:10:00Z",
       "related_news_urls": [
-        "https://people.com/brittany-and-patrick-mahomes-and-their-3-kids-giggle-uncontrollably-as-they-try-viral-reflex-test-12281559",
-        "https://timesofindia.indiatimes.com/sports/nfl/news/patrick-mahomes-makes-the-most-of-family-time-with-brittany-mahomes-and-their-children-ahead-of-thanksgiving-night-bills-showdown/articleshow/136183963.cms",
-        "https://sports.yahoo.com/nfl/articles/patrick-mahomes-gets-honest-mvp-181843806.html"
+        "https://www.pff.com/news/grading-all-32-nfl-first-round-rookies-after-week-11",
+        "https://sports.yahoo.com/nfl/articles/emmett-johnson-5-nfl-draft-194730544.html",
+        "https://fansided.com/nfl/grading-every-nfl-first-round-pick-at-thanksgiving"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBH8rng5-vu99JoPyrLAzmCu8LP0g7xCn2JoSDBW2QYwnB_yOeZtoYKLrdyc4",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_t-ClyBn8MzFhqOLbT87Q5eUfrYDALsH0Mc2pEaJ1RQeBTjf0QcjNiF6e7s",
+      "image_credit": "PFF",
       "news": [
         {
-          "url": "https://people.com/brittany-and-patrick-mahomes-and-their-3-kids-giggle-uncontrollably-as-they-try-viral-reflex-test-12281559",
-          "title": "Brittany and Patrick Mahomes and Their 3 Kids Giggle Uncontrollably as They Try Viral Reflex Test",
-          "publisher": "People.com",
+          "url": "https://www.pff.com/news/grading-all-32-nfl-first-round-rookies-after-week-11",
+          "title": "Grading all 32 NFL first-round rookies after Week 11",
+          "publisher": "PFF",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBH8rng5-vu99JoPyrLAzmCu8LP0g7xCn2JoSDBW2QYwnB_yOeZtoYKLrdyc4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_t-ClyBn8MzFhqOLbT87Q5eUfrYDALsH0Mc2pEaJ1RQeBTjf0QcjNiF6e7s"
         },
         {
-          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/patrick-mahomes-makes-the-most-of-family-time-with-brittany-mahomes-and-their-children-ahead-of-thanksgiving-night-bills-showdown/articleshow/136183963.cms",
-          "title": "Patrick Mahomes makes the most of family time with Brittany Mahomes and their children ahead of Thanksgiv",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7ycuWbHzXQAQo6KXy_FhcUn-hQvBPhfgffbeOfvCSYxKM9bgop-ZPTGl8GI4"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/patrick-mahomes-gets-honest-mvp-181843806.html",
-          "title": "Patrick Mahomes gets honest MVP assessment before Chiefs-Bills showdown",
+          "url": "https://sports.yahoo.com/nfl/articles/emmett-johnson-5-nfl-draft-194730544.html",
+          "title": "Emmett Johnson and the 5 NFL Draft steals changing the playoff race",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuFdxScnuhj_Lt1uB_mDX0xzxV_h6fY5tewOH-AU25I5jkeo56-Kvq7C2sacs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRdp-36Zin4vjCUXNgIIarZxnMVemuUu6kdtkqJ3epO-hBraQM0Kmf9YWgTWJU"
+        },
+        {
+          "url": "https://fansided.com/nfl/grading-every-nfl-first-round-pick-at-thanksgiving",
+          "title": "Grading every first-round pick in the 2026 NFL Draft at Thanksgiving",
+          "publisher": "FanSided",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEd9wraVR0NDbL5ToZ-l2JSboWeO3aS5AA3zXKJTgt6FFPOB7riIlk0THkGyI"
         }
       ]
     },
     {
-      "query": "nfc east standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T01:30:00Z",
-      "related_news_urls": [
-        "https://www.commanders.com/news/nfc-east-roundup-week-12-commanders-giants-cowboys-eagles",
-        "https://www.bleedinggreennation.com/philadelphia-eagles-nfl-playoffs/191321/nfl-playoff-picture-which-team-is-going-to-win-the-nfc-east",
-        "https://sports.yahoo.com/general/videos/giants-stay-playoff-race-despite-191752660.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00Lz9JzJuk9sFI-EuTbiVWs3YR9GM1KtA1bK9JQxSy00BU1yl_UuCl_YVOx8",
-      "image_credit": "Washington Commanders",
-      "news": [
-        {
-          "url": "https://www.commanders.com/news/nfc-east-roundup-week-12-commanders-giants-cowboys-eagles",
-          "title": "NFC East roundup | Commanders begin critical stretch",
-          "publisher": "Washington Commanders",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00Lz9JzJuk9sFI-EuTbiVWs3YR9GM1KtA1bK9JQxSy00BU1yl_UuCl_YVOx8"
-        },
-        {
-          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-nfl-playoffs/191321/nfl-playoff-picture-which-team-is-going-to-win-the-nfc-east",
-          "title": "NFL Playoff Picture: Which team is going to win the NFC East?",
-          "publisher": "Bleeding Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTultCrubF-_tB5cwu040weDTOhrjk4vVk5QEqn4gObQjOeJT_aAxm2axWyaX8"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/videos/giants-stay-playoff-race-despite-191752660.html",
-          "title": "Giants Stay in Playoff Race Despite Losing Starting Quarterback",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQty_6oRQNylns6bCHxqZ0bO58C5TI77Y7uSY_BFySIGmGnuWvhnbbj1kOrjNY"
-        }
-      ]
-    },
-    {
-      "query": "bills schedule",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T01:30:00Z",
-      "related_news_urls": [
-        "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
-        "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-active-christian-benford-inactive-for-bills-chiefs"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw",
-      "image_credit": "Buffalo Bills",
-      "news": [
-        {
-          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
-          "title": "Buffalo Bills injury report vs. Chiefs | Week 12 Thanksgiving",
-          "publisher": "Buffalo Bills",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
-          "title": "Bills TE Kincaid, CB Benford among 5 starters who are questionable vs. Chiefs",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP9hYXCzZR7RooYyfIsdmnT7gQ0oytxJbhHHPPC-5Z0DGt7fNA5hCg7XHI5t4"
-        },
-        {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-active-christian-benford-inactive-for-bills-chiefs",
-          "title": "Dalton Kincaid active, Christian Benford inactive for Bills-Chiefs",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhD2AJbNiO0_9ns3y3bArkVGPzQYnGZpbEdRrij_yebYxhdy5T4XAbXnduKc0"
-        }
-      ]
-    },
-    {
-      "query": "melissa stark",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T01:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/nfl-fans-loved-melissa-starks-172032603.html",
-        "https://www.newsbreak.com/total-pro-sports-313944020/5025865004232-melissa-stark-s-outfit-was-causing-a-major-stir-on-the-sideline-during-snf-game-in-mexico-city-photo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUTgfj19N-mkb3omkBosGIcQtbWvrEbqrxtVcrlJAqagsLJ2lArrTcz29Irs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/nfl-fans-loved-melissa-starks-172032603.html",
-          "title": "NFL Fans Loved Melissa Stark's Special Outfit for Mexico City Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUTgfj19N-mkb3omkBosGIcQtbWvrEbqrxtVcrlJAqagsLJ2lArrTcz29Irs"
-        },
-        {
-          "url": "https://www.newsbreak.com/total-pro-sports-313944020/5025865004232-melissa-stark-s-outfit-was-causing-a-major-stir-on-the-sideline-during-snf-game-in-mexico-city-photo",
-          "title": "Melissa Stark’s Outfit Was Causing a Major Stir on the Sideline During SNF Game in Mexico City [PHOTO]",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn3MvTuVXwgR_6kUSsYji5e97-RwtDTc1LIlMmI5389q_w5eiZW_hRvWkghco"
-        }
-      ]
-    },
-    {
-      "query": "who did the bills lose to",
+      "query": "kimi antonelli",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T01:30:00Z",
+      "published_at": "2026-11-27T02:00:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/recap/_/gameId/401873070",
-        "https://www.buffalobills.com/video/eric-wood-recapping-bills-win-over-miami-tough-matchup-with-the-chiefs-ahead",
-        "https://www.buffalorumblings.com/buffalo-bills-scores-results/146289/buffalo-bills-week-11-game-balls-greg-rousseau-and-james-cook-reach-career-milestones"
+        "https://www.the-race.com/formula-1/i-was-overconfident-antonelli-battling-post-title-hangover/",
+        "https://www.si.com/racing/kimi-antonelli-historic-f1-championship-future-digital-cover",
+        "https://www.motorsportmagazine.com/archive/article/january-2027/32/when-ascari-left-mike-hawthorn-struggling-to-keep-up-at-spa/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXpATMNbDasgdao1ceZvFqc_HXga67c0-UxfVU9XjdAewusQdGYSFn-6b4eRo",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9r8QvWg-GRn33Iio0ixVTgr9PashjvoaXkK1lz6Yk5ixtlU7Ft70R_a4Awvs",
+      "image_credit": "The Race",
+      "news": [
+        {
+          "url": "https://www.the-race.com/formula-1/i-was-overconfident-antonelli-battling-post-title-hangover/",
+          "title": "'I was overconfident' - Antonelli battling post-title hangover",
+          "publisher": "The Race",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9r8QvWg-GRn33Iio0ixVTgr9PashjvoaXkK1lz6Yk5ixtlU7Ft70R_a4Awvs"
+        },
+        {
+          "url": "https://www.si.com/racing/kimi-antonelli-historic-f1-championship-future-digital-cover",
+          "title": "Kimi Antonelli Won’t Let His Historic F1 Championship Change Who He Is",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOJcymJLAxDSP1vMyRMV55XV06--p3pyh459FBqs7W_UvSXqb4MTlElHcV6NI"
+        },
+        {
+          "url": "https://www.motorsportmagazine.com/archive/article/january-2027/32/when-ascari-left-mike-hawthorn-struggling-to-keep-up-at-spa/",
+          "title": "When Ascari left Mike Hawthorn struggling to keep up at Spa January 2027",
+          "publisher": "Motor Sport Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8x9TWyal6TS2i7Z5Dn9V4qS3qYUg3NvFIIF6KjBT93M0ZwrAA5oQkF-5kOqU"
+        }
+      ]
+    },
+    {
+      "query": "linda cardellini",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T02:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
+        "https://www.cbs8.com/article/entertainment/movies/way-of-the-warrior-kid-san-diego-movie-chris-pratt-jude-hill/509-a4006254-5bcc-42ac-8b67-58f06e703af9",
+        "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
+          "title": "‘Way of the Warrior Kid’ Review: Dispensing Martial Wisdom",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA"
+        },
+        {
+          "url": "https://www.cbs8.com/article/entertainment/movies/way-of-the-warrior-kid-san-diego-movie-chris-pratt-jude-hill/509-a4006254-5bcc-42ac-8b67-58f06e703af9",
+          "title": "New Apple TV movie featuring Chris Pratt shot in San Diego coming out day before Thanksgiving",
+          "publisher": "cbs8.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcoP1LSN9-3oWqGg4FXNbvqA5cWo3ptnzOwbeo97AUsQrJa7C6cFUQdSbPO4g"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt",
+          "title": "Way of the Warrior Kid review - Chris Pratt’s family film is as subtle as a military recruitment video",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzvWnLlc_5ShLSM347g8t3u4vvIgNIjn4A95X6i5X2iE-mBeNRY3Lk6XoAlk"
+        }
+      ]
+    },
+    {
+      "query": "who did buffalo lose to",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T02:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nhl/recap/_/gameId/401892782",
+        "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-new-york-rangers-lineups",
+        "https://www.nytimes.com/athletic/7813453/2026/11/26/new-york-rangers-standings-playoffs/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-txf_weRqc6Wle1_QbQV2cJdmONXoi-s6g0eBlABTe8JCzcXq3gTUo2YoHuI",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/recap/_/gameId/401873070",
-          "title": "Bills 26-9 Dolphins (Nov 22, 2026) Game Recap",
+          "url": "https://www.espn.com/nhl/recap/_/gameId/401892782",
+          "title": "Sabres 5-1 Rangers (Nov 25, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXpATMNbDasgdao1ceZvFqc_HXga67c0-UxfVU9XjdAewusQdGYSFn-6b4eRo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-txf_weRqc6Wle1_QbQV2cJdmONXoi-s6g0eBlABTe8JCzcXq3gTUo2YoHuI"
         },
         {
-          "url": "https://www.buffalobills.com/video/eric-wood-recapping-bills-win-over-miami-tough-matchup-with-the-chiefs-ahead",
-          "title": "Eric Wood: Recapping Bills Win Over Miami, Tough Matchup With The Chiefs Ahead",
-          "publisher": "Buffalo Bills",
+          "url": "https://www.nhl.com/sabres/news/how-to-watch-buffalo-sabres-new-york-rangers-lineups",
+          "title": "Sabres vs. Rangers | How to watch, lineup notes, and storylines | Buffalo Sabres",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTklEZojW3itVw-x_8KQ55al2wXEBLh4oDYXKbnCGxXPCg9ToP34GkW9FQ4NXU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnBwYRZ9UiwFguZIjuleA6ce1z-VPlu-QMbah5D7KFX7vJFW9BLX7BY6k_FBE"
         },
         {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-scores-results/146289/buffalo-bills-week-11-game-balls-greg-rousseau-and-james-cook-reach-career-milestones",
-          "title": "Bills Week 11 game balls: Greg Rousseau and James Cook reach career milestones",
-          "publisher": "Buffalo Rumblings",
+          "url": "https://www.nytimes.com/athletic/7813453/2026/11/26/new-york-rangers-standings-playoffs/",
+          "title": "The Rangers are outside the NHL playoff picture at Thanksgiving. Here’s one bright spot for 23 players",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynX-1b1vLgl63WjXlrfMOf6MO8bc8F2zIlHTT8OVJFL-uvqYyfdIKNuQGxlI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT04GGOvMw_OpUEBNbr5TPgCKDefTZHbQ8jZOWWN-cf3_YB35ZeYN7gPUeQGY4"
         }
       ]
     },
     {
-      "query": "buffalo new york",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:30:00Z",
+      "query": "louisville basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T01:50:00Z",
       "related_news_urls": [
-        "https://www.wivb.com/news/local-news/volunteers-distribute-thanksgiving-meals-across-wny/",
-        "https://www.wgrz.com/article/life/holidays/local-missions-prepping-thousands-of-thanksgiving-meals-for-those-in-need/71-ab7d794f-f680-41c1-83a4-4d96aa21c963",
-        "https://www.wnypapers.com/news/article/current/2026/11/19/167571/ryan-highmark-west-herr-tops-friendly-markets-team-up-to-provide-300-thanksgiving-dinners-to-local-block-clubs"
+        "https://www.courier-journal.com/story/sports/college/louisville/2026/11/26/louisville-st-johns-prediction-pick-uofl-basketball-score-today-odds-players-era-16-rick-pitino/92645489007/",
+        "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-st-johns-rick-pitino-louisville-players-era-16/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/open-thread-louisville-vs-st-015149675.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ODUSWGDOBgI6BR30k-jlXjw4fLiVLJlSjQM0mz1T6eR3Z1ok7LY6RkNX3E",
-      "image_credit": "WIVB News 4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzIFU7s3-ffQtC7LFiiOQS6Ay1k0H2TwRGNDsUkX3yDfoTm229eVSFkSil1rQ",
+      "image_credit": "The Courier-Journal",
       "news": [
         {
-          "url": "https://www.wivb.com/news/local-news/volunteers-distribute-thanksgiving-meals-across-wny/",
-          "title": "Volunteers distribute Thanksgiving meals across WNY",
-          "publisher": "WIVB News 4",
+          "url": "https://www.courier-journal.com/story/sports/college/louisville/2026/11/26/louisville-st-johns-prediction-pick-uofl-basketball-score-today-odds-players-era-16-rick-pitino/92645489007/",
+          "title": "Will Louisville basketball beat St. John's today? Our expert prediction",
+          "publisher": "The Courier-Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ODUSWGDOBgI6BR30k-jlXjw4fLiVLJlSjQM0mz1T6eR3Z1ok7LY6RkNX3E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzIFU7s3-ffQtC7LFiiOQS6Ay1k0H2TwRGNDsUkX3yDfoTm229eVSFkSil1rQ"
         },
         {
-          "url": "https://www.wgrz.com/article/life/holidays/local-missions-prepping-thousands-of-thanksgiving-meals-for-those-in-need/71-ab7d794f-f680-41c1-83a4-4d96aa21c963",
-          "title": "Local missions prepping thousands of Thanksgiving meals for those in need",
-          "publisher": "WGRZ",
+          "url": "https://www.cbssports.com/college-basketball/news/college-basketball-rankings-st-johns-rick-pitino-louisville-players-era-16/",
+          "title": "College basketball rankings: St. John's coach Rick Pitino gets shot at Louisville after it fired him in 2017",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTZjoYCVbjBfVcH1puhq5u9FL0ZGoUMDFa_BUK7mZ7uRtPRt4DeyqjugWKtbk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFxTUb9gN1ZaIFGzw-sxJukKQKDD6mSkyydyJvI6pw6MHQ-Ni96Lbr_wXH9ig"
         },
         {
-          "url": "https://www.wnypapers.com/news/article/current/2026/11/19/167571/ryan-highmark-west-herr-tops-friendly-markets-team-up-to-provide-300-thanksgiving-dinners-to-local-block-clubs",
-          "title": "Ryan, Highmark, West Herr & Tops Friendly Markets team-up to provide 300 Thanksgiving dinners to local block clubs",
-          "publisher": "Niagara Frontier Publications",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwb6_OEuuOfDRe07yzS2FKsvcy9raMquaYc4pOT_l9ES7d6l1J0sbszZk56Q"
-        }
-      ]
-    },
-    {
-      "query": "big dom eagles",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/eagles-face-defensive-play-caller-183922248.html",
-        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
-        "https://dallassportsjournal.com/eagles-staffers-line-up-christian-parker-cowboys-thanksgiving/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFklnFqbM6NzNdBhT80dInMCge5L6Sy_6bwkiL0Iy-NSEA0pIdtSARwhBgBQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/eagles-face-defensive-play-caller-183922248.html",
-          "title": "Eagles face a new defensive play-caller in their rematch with Dallas",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/open-thread-louisville-vs-st-015149675.html",
+          "title": "Open Thread: Louisville vs. St. John’s",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFklnFqbM6NzNdBhT80dInMCge5L6Sy_6bwkiL0Iy-NSEA0pIdtSARwhBgBQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppAT90GdrmBDwkElHvxNt-jjevSxgNB5J0P0ETS7h7wxYrZ3W_BfRKDzSZG0"
+        }
+      ]
+    },
+    {
+      "query": "bills coach",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:50:00Z",
+      "related_news_urls": [
+        "https://athlonsports.com/nfl/buffalo-bills/best-worst-bills-coaches",
+        "https://www.nfl.com/videos/joe-brady-discusses-preparations-for-bills-thanksgiving-day-game-vs-chiefs",
+        "https://www.nytimes.com/athletic/7804672/2026/11/23/buffalo-bills-chiefs-schedule/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5lbw1S1SnpeVB4vYlim0iX7M4y1Erd7OSmCAEu2AIsovLFQ-LUQFb9EdYQs",
+      "image_credit": "Athlon Sports",
+      "news": [
+        {
+          "url": "https://athlonsports.com/nfl/buffalo-bills/best-worst-bills-coaches",
+          "title": "Best and Worst Coaches in Buffalo Bills History, Ranked",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw5lbw1S1SnpeVB4vYlim0iX7M4y1Erd7OSmCAEu2AIsovLFQ-LUQFb9EdYQs"
         },
         {
-          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
-          "title": "Cowboys’ Christian Parker Trolled by Eagles' Big Dom After Play-Calling Demotion",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.nfl.com/videos/joe-brady-discusses-preparations-for-bills-thanksgiving-day-game-vs-chiefs",
+          "title": "Buffalo Bills head coach Joe Brady discusses preparations for Bills' Thanksgiving Day game vs. the Kansas City Chiefs",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk0RY9F10lzt2TxeKI9ZEhUHqUnsbQjxCDGWcD7Xwj8GasVP-8k7DnTsdLiBc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQB8eDeZYm_185yrtkCfpanfkEMABykV0LpL92fFDOtzQkDdxsH-ZG2diMgvA"
         },
         {
-          "url": "https://dallassportsjournal.com/eagles-staffers-line-up-christian-parker-cowboys-thanksgiving/",
-          "title": "Eagles Staffers Line Up For Cowboys DC Christian Parker",
-          "publisher": "Dallas Hoops Journal",
+          "url": "https://www.nytimes.com/athletic/7804672/2026/11/23/buffalo-bills-chiefs-schedule/",
+          "title": "What the Buffalo Bills need to clean up before Patrick Mahomes, Chiefs arrive - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvHddM7UTY5Li3q0SPgvkTfTwTenBIPZZR_YWkpWLYwGk82LCkQ5o2j-JKbbc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTSvkvfyjsfKSRV0tO8ol9LGtBUHraTQXO-jXdXMF60QRlrlPVyM0soU9kEbtI"
+        }
+      ]
+    },
+    {
+      "query": "george karlaftis",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T01:50:00Z",
+      "related_news_urls": [
+        "https://www.chiefs.com/video/back-to-back-sacks-george-karlaftis-brings-down-josh-johnson-for-second-sack-in-two-plays",
+        "https://purduesports.com/news/2026/11/24/pro-boilers-nfl-week-11",
+        "https://www.nytimes.com/athletic/video/fRFv3osDCI9Qi9q/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUx-4z-tFRHeUohLLjJcF-Oq78nNfEFsVZlkRxWJJcpJkfYi84GVz5IQqi_kI",
+      "image_credit": "Kansas City Chiefs",
+      "news": [
+        {
+          "url": "https://www.chiefs.com/video/back-to-back-sacks-george-karlaftis-brings-down-josh-johnson-for-second-sack-in-two-plays",
+          "title": "Back-to-Back Sacks! George Karlaftis Brings Down Josh Johnson for Second Sack in Two Plays",
+          "publisher": "Kansas City Chiefs",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUx-4z-tFRHeUohLLjJcF-Oq78nNfEFsVZlkRxWJJcpJkfYi84GVz5IQqi_kI"
+        },
+        {
+          "url": "https://purduesports.com/news/2026/11/24/pro-boilers-nfl-week-11",
+          "title": "Pro Boilers: NFL Week 11",
+          "publisher": "Purdue Boilermakers",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSo9RrhBbMew2_pHHMsWV4Mylc3fkcb87LPOqMSLNlKLJedL_wa2K2swWQRqwU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/video/fRFv3osDCI9Qi9q/",
+          "title": "Video: The Kansas City Chiefs defense is exciting again",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRxhH4MYOW5Sh55lpad04ocwfdqU22kTc51NSW_cZhksngsejYyry9hm5DegQ8"
+        }
+      ]
+    },
+    {
+      "query": "adam schobel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:50:00Z",
+      "related_news_urls": [
+        "https://bismarcktribune.com/sports/college/football/image_d0007e15-6aa0-5cf2-943d-cfd363701c05.html",
+        "https://helenair.com/sports/college/football/image_dfd8c548-42f2-5613-ac8f-fa9e7387cc99.html",
+        "https://billingsgazette.com/sports/college/football/image_9572f8b1-2a80-5bd9-9ddb-3841d4c426db.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2xiQNixgpOMYhugTQ1ym--lcTAvmUEWDOzZq5TFlDfcdYlG1FDi7CDrKygM",
+      "image_credit": "The Bismarck Tribune",
+      "news": [
+        {
+          "url": "https://bismarcktribune.com/sports/college/football/image_d0007e15-6aa0-5cf2-943d-cfd363701c05.html",
+          "title": "FOOTBALL-NCAA/",
+          "publisher": "The Bismarck Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2xiQNixgpOMYhugTQ1ym--lcTAvmUEWDOzZq5TFlDfcdYlG1FDi7CDrKygM"
+        },
+        {
+          "url": "https://helenair.com/sports/college/football/image_dfd8c548-42f2-5613-ac8f-fa9e7387cc99.html",
+          "title": "FOOTBALL-NCAA/",
+          "publisher": "The Independent Record",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2xiQNixgpOMYhugTQ1ym--lcTAvmUEWDOzZq5TFlDfcdYlG1FDi7CDrKygM"
+        },
+        {
+          "url": "https://billingsgazette.com/sports/college/football/image_9572f8b1-2a80-5bd9-9ddb-3841d4c426db.html",
+          "title": "FOOTBALL-NCAA/",
+          "publisher": "Billings Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI2xiQNixgpOMYhugTQ1ym--lcTAvmUEWDOzZq5TFlDfcdYlG1FDi7CDrKygM"
+        }
+      ]
+    },
+    {
+      "query": "kansas city weather",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:50:00Z",
+      "related_news_urls": [
+        "https://www.kmbc.com/article/kansas-city-weather-some-areas-see-snow-to-start-thanksgiving/74540809",
+        "https://www.foxnews.com/outkick-betting/patrick-mahomes-josh-allen-set-up-another-shootout-chiefs-face-bills-thanksgiving",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/james-cook-touchdown-gives-bills-7-0-lead-over-chiefs"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3u3pdxQIP4svkhAJ6cU-yPni0dNrrkzyiWjZdSBCXHxfXMoZOokmGTWsKdgg",
+      "image_credit": "KMBC",
+      "news": [
+        {
+          "url": "https://www.kmbc.com/article/kansas-city-weather-some-areas-see-snow-to-start-thanksgiving/74540809",
+          "title": "Kansas City weather: Sunny Black Friday before weekend rain arrives",
+          "publisher": "KMBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ3u3pdxQIP4svkhAJ6cU-yPni0dNrrkzyiWjZdSBCXHxfXMoZOokmGTWsKdgg"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-betting/patrick-mahomes-josh-allen-set-up-another-shootout-chiefs-face-bills-thanksgiving",
+          "title": "Patrick Mahomes and Josh Allen set up for another shootout as Chiefs face Bills on Thanksgiving",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj4rSwZ1agYJN1D-aEKRcDHXwI2P9YNx5rXfl_n4r2yR38ULGrG9_U_MA3MVg"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/james-cook-touchdown-gives-bills-7-0-lead-over-chiefs",
+          "title": "James Cook touchdown gives Bills 7-0 lead over Chiefs",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgU_ua1AOcose2zwimBtye_-coCAfTfpqS-5DFOdzxR_pD9SSm-nZE5L_alXE"
         }
       ]
     }
