@@ -3,7 +3,7 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T00:45:18.475644Z",
+  "checked_at": "2026-11-27T01:01:18.155036Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
@@ -11,33 +11,33 @@
       "approx_searches": "1000+",
       "published_at": "2026-11-27T00:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/game/_/gameId/401921669/lsu-arizona-st",
-        "https://lsusports.net/news/2026/11/25/no-20-tiger-basketball-outlasts-arizona-state-in-double-overtime-94-92",
-        "https://www.wbrz.com/news/lsu-men-s-basketball-escapes-double-overtime-thriller-with-arizona-state/"
+        "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
+        "https://www.wbrz.com/news/gov-jeff-landry-goes-quiet-on-lsu-standoff-with-sec/",
+        "https://www.wafb.com/2026/11/25/rj-luis-jr-sues-sec-commissioner-greg-sankey-personally-seeks-damages-over-lsu-removal/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5PnPwGHglo-_xwwbKa1znZckYhQRqhfLbHQQ8bDCX82BC8cwwPOdptJNxx0",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921669/lsu-arizona-st",
-          "title": "LSU 94-92 Arizona State (Nov 25, 2026) Final Score",
+          "url": "https://www.espn.com/college-sports/story/_/id/50595702/judge-denies-sec-request-tro-lsu-dec-3-vote",
+          "title": "Judge denies SEC's request for TRO against LSU in Dec. 3 vote",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5PnPwGHglo-_xwwbKa1znZckYhQRqhfLbHQQ8bDCX82BC8cwwPOdptJNxx0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtf5mNvDvHY-cM5jDiddImxS_ZecOskhvMbsrwspj_HjWkch1DdXAg9Eobuzo"
         },
         {
-          "url": "https://lsusports.net/news/2026/11/25/no-20-tiger-basketball-outlasts-arizona-state-in-double-overtime-94-92",
-          "title": "No. 20 Tiger Basketball Outlasts Arizona State in Double-Overtime, 94-92",
-          "publisher": "LSUsports.net",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0znybfw3O6SwFhKs8APJ3tOglPZJD9iUpYFcz-M8bGWaEMhm2NtYmtAUywO8"
-        },
-        {
-          "url": "https://www.wbrz.com/news/lsu-men-s-basketball-escapes-double-overtime-thriller-with-arizona-state/",
-          "title": "LSU men's basketball escapes double-overtime thriller with Arizona State",
+          "url": "https://www.wbrz.com/news/gov-jeff-landry-goes-quiet-on-lsu-standoff-with-sec/",
+          "title": "Gov. Jeff Landry goes quiet on LSU standoff with SEC",
           "publisher": "WBRZ",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCOGr8FJIFod9pEQNUdJNTZq5FNiIVvRvutbyCZhd1-x2fCKPd35uuCnvqHs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2ta9vTAKVZ-bCiy4YevggdTvwxgQfU_oGlZ7SUxO8IFdMKzIcTrgmyBS7dTs"
+        },
+        {
+          "url": "https://www.wafb.com/2026/11/25/rj-luis-jr-sues-sec-commissioner-greg-sankey-personally-seeks-damages-over-lsu-removal/",
+          "title": "RJ Luis Jr. sues SEC Commissioner Greg Sankey personally, seeks damages over LSU removal",
+          "publisher": "WAFB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStGZnh8aWedtJrzcTCudt0pJQYBLW0DiFskucnr-BYedXvDDOqXcehvsiTV84"
         }
       ]
     },
@@ -48,7 +48,7 @@
       "related_news_urls": [
         "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
         "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
-        "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html"
+        "https://www.espn.com/nfl/story/_/id/50588773/long-lions-owner-martha-firestone-ford-dies-age-101"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU",
       "image_credit": "Detroit Lions",
@@ -68,11 +68,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8"
         },
         {
-          "url": "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html",
-          "title": "Martha Firestone Ford, Owner of Detroit Lions, Dies at 101",
-          "publisher": "The New York Times",
+          "url": "https://www.espn.com/nfl/story/_/id/50588773/long-lions-owner-martha-firestone-ford-dies-age-101",
+          "title": "Longtime Lions owner Martha Firestone Ford dies at age 101",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ8aVixTl7mciFQzNwPQ7k1VS1xf98Lw7sDawOW_q0d7LJmxPrJKbAD3lpNRo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWClwe3k8j-iEtnxGwn_jo-4TtCD7lxwVtp9t2cr4J5LCR5vbiQ4a86V4t_TI"
         }
       ]
     },
@@ -113,7 +113,7 @@
     },
     {
       "query": "smu basketball",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-27T00:20:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/mens-college-basketball/articles/no-20-lsu-mens-basketball-230145225.html",
@@ -143,6 +143,76 @@
           "publisher": "tallahatchienews.ms",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
+        }
+      ]
+    },
+    {
+      "query": "pachuca - guadalajara",
+      "approx_searches": "100000+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://www.tudn.com/futbol/liga-mx/pachuca-vs-chivas-en-vivo-ida-de-cuartos-de-final-apertura-2026-de-liga-mx-minuto-a-minuto-del-partido",
+        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17556896/pachuca-vs-chivas-alineaciones-ida-cuartos-final",
+        "https://www.azcentral.com/story/deportes/futbol/2026/11/26/pachuca-vs-chivas-hora-donde-ver-liguilla-2026-cuartos-de-final/92943473007/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuWFBbQhtHvTV0yJUnaQ_g9xXMm3ojvoTnJ_VL5TLBVcirKcJnysWJcvBdBRE",
+      "image_credit": "TUDN",
+      "news": [
+        {
+          "url": "https://www.tudn.com/futbol/liga-mx/pachuca-vs-chivas-en-vivo-ida-de-cuartos-de-final-apertura-2026-de-liga-mx-minuto-a-minuto-del-partido",
+          "title": "Pachuca vs. Chivas EN VIVO Ida de Cuartos de final Apertura 2026 de Liga MX: minuto a minuto del partido",
+          "publisher": "TUDN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSuWFBbQhtHvTV0yJUnaQ_g9xXMm3ojvoTnJ_VL5TLBVcirKcJnysWJcvBdBRE"
+        },
+        {
+          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17556896/pachuca-vs-chivas-alineaciones-ida-cuartos-final",
+          "title": "Pachuca vs Chivas: posibles alineaciones y probabilidades",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2gNZ_qpxwuau5HNCjUVpKJFxPQDm0LA4dxJkZmf4b69SVY1egfvGgswQ70h4"
+        },
+        {
+          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/26/pachuca-vs-chivas-hora-donde-ver-liguilla-2026-cuartos-de-final/92943473007/",
+          "title": "¿Cuándo juegan las Chivas? Arrancan el camino por el campeonato ante Pachuca",
+          "publisher": "azcentral.com and The Arizona Republic",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSj3W3rj6kkU6Eik7FigH8uKzcpS6g4B86TBd7LuhQhKeC7VC0B_VKVx4sy6VI"
+        }
+      ]
+    },
+    {
+      "query": "pitt basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
+        "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
+        "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
+          "title": "Staff Picks: Can Pitt overcome DePaul in a showdown of undefeated teams?",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY"
+        },
+        {
+          "url": "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
+          "title": "7-0 Pitt To Face 6-0 DePaul On Thanksgiving Day",
+          "publisher": "PittsburghPanthers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPj7e7APfGqWHJ6CcYXdSBuCYMIHzTW7J21sekS-HDLQAg1AZ8EkdIonV_0G0"
+        },
+        {
+          "url": "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/",
+          "title": "Undefeated Pitt, DePaul set to collide in Florida",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQyt2xQwbbKpsP0vR98BIQPZtB1k2caoZhgUrK0LC1OlY42B5Vq-4XBKHavU"
         }
       ]
     },
@@ -178,76 +248,6 @@
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnYAVasGBdhXduSgas9DeNpwRx6kOGOI_5mm27sxTr1GevCfBbB27iegI-Ric"
-        }
-      ]
-    },
-    {
-      "query": "pitt basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
-        "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
-        "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
-          "title": "Staff Picks: Can Pitt overcome DePaul in a showdown of undefeated teams?",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY"
-        },
-        {
-          "url": "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
-          "title": "7-0 Pitt To Face 6-0 DePaul On Thanksgiving Day",
-          "publisher": "PittsburghPanthers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPj7e7APfGqWHJ6CcYXdSBuCYMIHzTW7J21sekS-HDLQAg1AZ8EkdIonV_0G0"
-        },
-        {
-          "url": "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/",
-          "title": "Undefeated Pitt, DePaul set to collide in Florida",
-          "publisher": "TribLIVE.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQyt2xQwbbKpsP0vR98BIQPZtB1k2caoZhgUrK0LC1OlY42B5Vq-4XBKHavU"
-        }
-      ]
-    },
-    {
-      "query": "depaul basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T00:10:00Z",
-      "related_news_urls": [
-        "https://www.chicagotribune.com/2026/11/24/depaul-purdue-fort-myers-tip-off/",
-        "https://www.on3.com/teams/purdue-boilermakers/news/acre-pro-wednesday-night-live-purdue-hoops-and-football-chat/",
-        "https://www.hammerandrails.com/purdue-mens-basketball/62501/second-half-mistakes-cost-purdue-losing-65-to-56-to-depaul"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWMCwSAT4uW4Z4fcLDesPFjrDftWByfzWPvqLITbtYOXjhKzBQxjiZETDSN5Q",
-      "image_credit": "Chicago Tribune",
-      "news": [
-        {
-          "url": "https://www.chicagotribune.com/2026/11/24/depaul-purdue-fort-myers-tip-off/",
-          "title": "DePaul improves to 6-0 with 65-56 win against Purdue in Fort Myers Tip-Off",
-          "publisher": "Chicago Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWMCwSAT4uW4Z4fcLDesPFjrDftWByfzWPvqLITbtYOXjhKzBQxjiZETDSN5Q"
-        },
-        {
-          "url": "https://www.on3.com/teams/purdue-boilermakers/news/acre-pro-wednesday-night-live-purdue-hoops-and-football-chat/",
-          "title": "Acre Pro Wednesday Night LIVE: Purdue hoops and football chat",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-8BHWTFWYJafK-xOpSch-nMV65yEIbh42bn-ddwERrWaStK_p4ORyzGu2kLA"
-        },
-        {
-          "url": "https://www.hammerandrails.com/purdue-mens-basketball/62501/second-half-mistakes-cost-purdue-losing-65-to-56-to-depaul",
-          "title": "Second-Half Mistakes Cost Purdue, Losing 65 to 56 to DePaul",
-          "publisher": "Hammer and Rails",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0EOUIkmbhT8WTsYCN-Sd0j96MXbAqZATr6UMeLtOWeeLX088_ZTEJT4Zwfts"
         }
       ]
     },
@@ -322,37 +322,37 @@
       ]
     },
     {
-      "query": "nina jacobson mockingjay split regret",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T00:00:00Z",
+      "query": "nicolas cage",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T00:10:00Z",
       "related_news_urls": [
-        "https://www.empireonline.com/movies/news/hunger-games-producer-would-adapt-mockingjay-all-in-one-today-exclusive/",
-        "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
-        "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-admits-mockingjay-154348187.html"
+        "https://collider.com/longlegs-nicolas-cage-leaving-hulu-netflix-december-2026/",
+        "https://collider.com/longlegs-nicolas-cage-netflix-december-2026/",
+        "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeVf7UgCgrWbYoEGmtiB7riT7VQUJfanuBdKYQjp7atvwH9dBP9U70qhKtdTM",
-      "image_credit": "Empire",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBqdzftViyqu-XAR-mK6TFbMOREMciSRcSdtSGT62KthzoTt0XEmeNOnrNOP4",
+      "image_credit": "Collider",
       "news": [
         {
-          "url": "https://www.empireonline.com/movies/news/hunger-games-producer-would-adapt-mockingjay-all-in-one-today-exclusive/",
-          "title": "The Hunger Games producer would make a major change to the Mockingjay adaptation today (Exclusive)",
-          "publisher": "Empire",
+          "url": "https://collider.com/longlegs-nicolas-cage-leaving-hulu-netflix-december-2026/",
+          "title": "Nicolas Cage’s ‘The Silence of the Lambs’ Replacement Officially Hits Netflix in 2 Weeks",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeVf7UgCgrWbYoEGmtiB7riT7VQUJfanuBdKYQjp7atvwH9dBP9U70qhKtdTM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBqdzftViyqu-XAR-mK6TFbMOREMciSRcSdtSGT62KthzoTt0XEmeNOnrNOP4"
         },
         {
-          "url": "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
-          "title": "'Hunger Games' Producer Regrets Splitting 'Mockingjay' As Fans Felt It Was A \"Play To Make Them See Two Films Instead Of One\"",
-          "publisher": "Deadline",
+          "url": "https://collider.com/longlegs-nicolas-cage-netflix-december-2026/",
+          "title": "Nicolas Cage’s Terrifying Serial Killer Thriller Officially Comes to Netflix",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXM_CtsLBXkXxxKT-Z0VaKbhGoF2sOnii-2FKxFrGWhBpAydl-ExkXtRpaohU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT36ILwaDggQ0x5ynbBkF0jKBw05ffIT2vFLM2R-lD4sHp5wBRmk84jIqEy-eY"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-admits-mockingjay-154348187.html",
-          "title": "‘Hunger Games’ Producer Admits ‘Mockingjay’ Should Have Been One Movie",
-          "publisher": "Yahoo",
+          "url": "https://www.the-independent.com/arts-entertainment/films/features/madden-nicolas-cage-christian-bale-review-b3090110.html",
+          "title": "Madden: Christian Bale and Nicolas Cage have quietly made the worst film of 2026",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdNZJEQPDjOqSkQQgHOqATC3PsRqsAK3y-L1cX8LMWXRHHlrcj5Nm9dSsn39s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNN5b9ceOF-BcSvEFKJoJcyIOHWcmsghYaiy7IEQgTalhaFc5UeRE2WzdAB-I"
         }
       ]
     }
