@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T08:01:34.027849Z",
+  "checked_at": "2026-11-27T08:31:52.319814Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "aus vs eng",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T07:50:00Z",
+      "related_news_urls": [
+        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
+        "https://www.bbc.co.uk/sport/cricket/live/cly85gv8qpet",
+        "https://www.theguardian.com/sport/2026/nov/21/england-australia-first-t20-international-report-cricket"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGs1BnioeTZo9muNJuNSfG3dTCfwNce76q3WtIEH6KN45tDUZTPcJ_8AEqZlY",
+      "image_credit": "Cricinfo",
+      "news": [
+        {
+          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
+          "title": "England return to the Gabbatoir with onus on Australia to bounce back",
+          "publisher": "Cricinfo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGs1BnioeTZo9muNJuNSfG3dTCfwNce76q3WtIEH6KN45tDUZTPcJ_8AEqZlY"
+        },
+        {
+          "url": "https://www.bbc.co.uk/sport/cricket/live/cly85gv8qpet",
+          "title": "Australia vs England LIVE: Second T20, Carrara, Queensland - cricket score, commentary & updates",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSUditWMIkl9EUGL_pchz8fIwI16hCBLNbEz4WRBSG3QzTs3cOmn6XIJP_5bpo"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/2026/nov/21/england-australia-first-t20-international-report-cricket",
+          "title": "Chaudhary outshines Brook as Australia pip England in gripping T20 opener",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjJwexxucQJV0UNyi2M81juy5hfoaKvVXBUVCNAU2M64bHN3c13Wb0WD7EYi8"
+        }
+      ]
+    },
     {
       "query": "gta6 pc port",
       "approx_searches": "1000+",
@@ -13,7 +48,7 @@
       "related_news_urls": [
         "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
         "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two"
+        "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0",
       "image_credit": "TechPowerUp",
@@ -33,46 +68,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
         },
         {
-          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
-          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
-          "publisher": "Mashable",
+          "url": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown",
+          "title": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
+          "publisher": "Decrypt",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
-        }
-      ]
-    },
-    {
-      "query": "white",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T07:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/look-trumps-spend-thanksgiving-holiday-through-years",
-        "https://www.yahoo.com/news/videos/trump-tells-deployed-marine-thankful-235510817.html",
-        "https://www.palmbeachpost.com/story/news/trump/2026/11/26/trump-hosts-lois-frankel-county-officials-at-mar-a-lago-on-thanksgiving/92974284007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkjEEs3C694xqple7_oMAYotOjAQBhmyojauQCKEU7mn2agN_Ugp4iBRnAR7o",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/look-trumps-spend-thanksgiving-holiday-through-years",
-          "title": "A look at how the Trumps spend their Thanksgiving holiday through the years",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkjEEs3C694xqple7_oMAYotOjAQBhmyojauQCKEU7mn2agN_Ugp4iBRnAR7o"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/trump-tells-deployed-marine-thankful-235510817.html",
-          "title": "Trump Tells Deployed Marine He’s Thankful for ‘The Highest Stock Markets’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH27nIZEb70gMgHOn3WpFPf_LGKPopEnegV3rZxJEenaoa5iW86dUgU-Zd8Wo"
-        },
-        {
-          "url": "https://www.palmbeachpost.com/story/news/trump/2026/11/26/trump-hosts-lois-frankel-county-officials-at-mar-a-lago-on-thanksgiving/92974284007/",
-          "title": "Trump hosts Frankel, county officials at Mar-a-Lago on Thanksgiving",
-          "publisher": "The Palm Beach Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhf39WBjgh81WfiFuV7W0VH3c63AU50ukVdc3yYtojr_MLgrkxqoyDDVdU2vg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IlqXMZKDIdYzZpf-ER-McOBbNqkfSCPbea3voeN2YqplSZ5rDALg5jqGGfI"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "published_at": "2026-11-27T07:10:00Z",
       "related_news_urls": [
         "https://www.local10.com/news/local/2026/11/24/ex-broward-daycare-worker-confesses-to-touching-7-year-old-girls-vagina-deputies-say/",
-        "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
+        "https://hoodline.com/2026/11/pompano-beach-day-care-worker-denied-bond-after-7-year-old-s-abuse-report/",
         "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U",
@@ -96,11 +96,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U"
         },
         {
-          "url": "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
-          "title": "Former worker at Pompano Beach day care arrested after 7-year-old girl reports abuse, deputies say",
-          "publisher": "WSVN",
+          "url": "https://hoodline.com/2026/11/pompano-beach-day-care-worker-denied-bond-after-7-year-old-s-abuse-report/",
+          "title": "Pompano Beach Day Care Worker Denied Bond After 7-Year-Old's Abuse Report",
+          "publisher": "Hoodline",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4kZntBjM1y4k-tnZ8c4nP9pW91pvHdL5K8wKxkA_3nFnfUxRrXp0WggRNOIk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1GIMB1lxIFVuNR6x0oBWwbi7SuSPnZe1j93PfR2GWGjMOGZjuCw-DBCwCNeI"
         },
         {
           "url": "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges",
@@ -113,12 +113,12 @@
     },
     {
       "query": "iran attacks kuwait",
-      "approx_searches": "10000+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-27T06:30:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
         "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
-        "https://www.cnn.com/2026/11/26/middleeast/italians-killed-iranian-attack-kuwait-intl"
+        "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ75Sa1AWaewLJjBlvWbvX86HSceZ2c1ohT90zuMBb1iOGgOwkB4MRPHVQKFuc",
       "image_credit": "Al Jazeera",
@@ -138,11 +138,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0qWT-bc1orYIeRX-z0WmibxAGh4wL_ZUC3lOqDPhYvIxyV46E2U1uT4wwj0I"
         },
         {
-          "url": "https://www.cnn.com/2026/11/26/middleeast/italians-killed-iranian-attack-kuwait-intl",
-          "title": "Two Italians killed in alleged Iranian drone attack on Kuwait; Tehran denies involvement",
-          "publisher": "CNN",
+          "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+          "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOT314go5dOZwGNL1kq6BZQjsVWN2i-oOM0v86u9sYuSnNgWUxCN74ybl5zgk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYVGBpxOEN8xgn7jFZEolgzMQsB0PiIwUGlPGIwVDIC1-2BXfVaL4njh7lLc"
         }
       ]
     },
@@ -257,7 +257,7 @@
       "published_at": "2026-11-27T05:40:00Z",
       "related_news_urls": [
         "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
-        "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
+        "https://www.dailystar.co.uk/showbiz/michael-douglas-brutal-health-battle-37893625",
         "https://suaragarut.id/en/michael-douglas-family-struggles"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM",
@@ -271,11 +271,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
         },
         {
-          "url": "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
-          "title": "Michael Douglas' health after stage-four cancer diagnosis",
-          "publisher": "Daily Express",
+          "url": "https://www.dailystar.co.uk/showbiz/michael-douglas-brutal-health-battle-37893625",
+          "title": "Michael Douglas' brutal health battle after fighting stage four cancer",
+          "publisher": "Daily Star",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vxaQ0aNiI6oy4BrEyMmuiymuShtH4SNzGvFNgekBZygGYQouBilI0YXoY0w"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuH4LBWCH0wbxigumwj27FHD2uOYl4OdJYLGdLwDZgb4C1ztiasbDK1WXoCVY"
         },
         {
           "url": "https://suaragarut.id/en/michael-douglas-family-struggles",
@@ -293,7 +293,7 @@
       "related_news_urls": [
         "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
         "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
-        "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/"
+        "https://pagesix.com/2026/11/23/celebrity-news/justin-timberlake-shares-rare-insight-into-bitter-britney-spears-breakup/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8",
       "image_credit": "The Hollywood Reporter",
@@ -313,11 +313,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc"
         },
         {
-          "url": "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/",
-          "title": "Justin Timberlake opens up about ex Britney Spears in docuseries trailer",
-          "publisher": "Global News",
+          "url": "https://pagesix.com/2026/11/23/celebrity-news/justin-timberlake-shares-rare-insight-into-bitter-britney-spears-breakup/",
+          "title": "Justin Timberlake shares rare insight into bitter Britney Spears breakup: ‘Really hard to talk about’",
+          "publisher": "Page Six",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-5o_OGl7sNzJrvfnRUkiVMTRkMFh11uhtAOEV3i324_-5xxcdYdNxHq3VpU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5YOtsUGs-un3eHFonwdtTPpT70QeCGqmAowmmsWp99pMlFmlzixpvWSkDvLE"
         }
       ]
     },
