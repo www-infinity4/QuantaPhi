@@ -2,9 +2,25 @@
   "schema_version": 1,
   "source": "Google Trends RSS + publisher trailer RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
-  "checked_at": "2026-11-27T03:33:27.337677Z",
+  "checked_at": "2026-11-27T04:05:13.803544Z",
   "source_note": "Google trending titles are independently matched to source-backed trailer uploads. Other cards are labelled NEW TRAILER, not Google-trending. These are previews, not full movies.",
   "items": [
+    {
+      "id": "gKiWSvAjNG0",
+      "title": "Clashing Through the Snow",
+      "video_id": "gKiWSvAjNG0",
+      "video_title": "Clashing Through the Snow Trailer #1 (2026)",
+      "kind": "trailer",
+      "publisher": "Rotten Tomatoes Trailers",
+      "published_at": "2026-11-10T16:50:34Z",
+      "source_url": "https://www.youtube.com/watch?v=gKiWSvAjNG0",
+      "poster": "https://i.ytimg.com/vi/gKiWSvAjNG0/hqdefault.jpg",
+      "google_trending": true,
+      "trend_query": "clashing through the snow cast",
+      "trend_checked_at": "2026-11-27T04:01:29.939489Z",
+      "trend_published_at": "2026-11-27T03:20:00Z",
+      "approx_searches": "500+"
+    },
     {
       "id": "Jmt9KUqotlo",
       "title": "The Comeback King",
@@ -20,22 +36,6 @@
       "trend_checked_at": "2026-11-26T22:31:16.309606Z",
       "trend_published_at": "2026-11-26T22:00:00Z",
       "approx_searches": "5000+"
-    },
-    {
-      "id": "gKiWSvAjNG0",
-      "title": "Clashing Through the Snow",
-      "video_id": "gKiWSvAjNG0",
-      "video_title": "Clashing Through the Snow Trailer #1 (2026)",
-      "kind": "trailer",
-      "publisher": "Rotten Tomatoes Trailers",
-      "published_at": "2026-11-10T16:50:34Z",
-      "source_url": "https://www.youtube.com/watch?v=gKiWSvAjNG0",
-      "poster": "https://i.ytimg.com/vi/gKiWSvAjNG0/hqdefault.jpg",
-      "google_trending": true,
-      "trend_query": "clashing through the snow 2026",
-      "trend_checked_at": "2026-11-25T01:01:29.853711Z",
-      "trend_published_at": "2026-11-25T00:30:00Z",
-      "approx_searches": "2000+"
     },
     {
       "id": "o9WWeKSbtAo",
