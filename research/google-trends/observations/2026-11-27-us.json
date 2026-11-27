@@ -3,34 +3,174 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T04:01:29.939489Z",
+  "checked_at": "2026-11-27T04:31:19.040890Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "charles barkley",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T04:10:00Z",
+      "related_news_urls": [
+        "https://www.haaretz.com/sports/2026-11-26/ty-article/.premium/baruch-hashem-shaq-greets-deni-avdija-in-hebrew-after-33-point-night/000001a2-1720-d205-a1ef-3f7d22070000",
+        "https://sports.yahoo.com/nba/articles/doesnt-conscience-charles-barkley-compares-102631259.html",
+        "https://www.timesofisrael.com/shaquille-oneal-shows-off-hebrew-skills-in-talk-with-deni-avdija/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ul2Ca_pAswdHGokrdAvyaRbFmQcuMZNHe7XXz5akGYNcmw6viXMSyy1ZPE0",
+      "image_credit": "Haaretz",
+      "news": [
+        {
+          "url": "https://www.haaretz.com/sports/2026-11-26/ty-article/.premium/baruch-hashem-shaq-greets-deni-avdija-in-hebrew-after-33-point-night/000001a2-1720-d205-a1ef-3f7d22070000",
+          "title": "'Baruch Hashem': Shaq Greets Deni Avdija in Hebrew After 33-Point Night",
+          "publisher": "Haaretz",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0Ul2Ca_pAswdHGokrdAvyaRbFmQcuMZNHe7XXz5akGYNcmw6viXMSyy1ZPE0"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/doesnt-conscience-charles-barkley-compares-102631259.html",
+          "title": "\"He doesn't have a conscience\" – Charles Barkley compares Deni Avdija to Drazen Petrovic after his game-winner vs. Spurs",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCQhd7rTr2TM6oSabl7StSM0h10lx3Tbb4VJIqNkTYILKRAiTg8dfcyu8XKpg"
+        },
+        {
+          "url": "https://www.timesofisrael.com/shaquille-oneal-shows-off-hebrew-skills-in-talk-with-deni-avdija/",
+          "title": "Shaquille O’Neal shows off Hebrew skills in talk with Deni Avdija",
+          "publisher": "The Times of Israel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3TlpIHO8CyFXu7C3yLx1XLq9MEivckxR4BQmn1aqV4DQ-GmDGyRqFWR4ByQ"
+        }
+      ]
+    },
+    {
+      "query": "kelly stafford",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T04:10:00Z",
+      "related_news_urls": [
+        "https://www.si.com/onsi/athlete-lifestyle/matthew-staffords-wife-kelly-surprises-family-with-epic-night-out",
+        "https://www.reutersconnect.com/item/detroit-lions-owner-martha-firestone-ford-plays-with-matthew-staffords-daughter-sawyer-stafford-as-wife-kelly-stafford-holds/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NDc0NTQ",
+        "https://www.eonline.com/news/1438118/kelly-stafford-nfl-star-matthew-staffords-wife-reacts-to-facelift-post"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWGB74OmafbuJq5uKdYxodfmwo-vnjmSCTQeFQyDrcbqa2os-yGtlu_MoSBvQ",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/onsi/athlete-lifestyle/matthew-staffords-wife-kelly-surprises-family-with-epic-night-out",
+          "title": "Matthew Stafford's Wife Kelly Surprises Family With Absolutely Epic Night Out",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRWGB74OmafbuJq5uKdYxodfmwo-vnjmSCTQeFQyDrcbqa2os-yGtlu_MoSBvQ"
+        },
+        {
+          "url": "https://www.reutersconnect.com/item/detroit-lions-owner-martha-firestone-ford-plays-with-matthew-staffords-daughter-sawyer-stafford-as-wife-kelly-stafford-holds/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NDc0NTQ",
+          "title": "Licensable picture: Detroit Lions owner Martha Firestone Ford plays with Matthew Stafford's daughter, Sawyer Stafford, as wife Kelly Stafford holds",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWqQYWoXxR-oJTJR5VVWMlM3LcDfqfEogIT0qNz6Oof_1nhwZBjFeM7p0nbrQ"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438118/kelly-stafford-nfl-star-matthew-staffords-wife-reacts-to-facelift-post",
+          "title": "NFL Star Matthew Stafford’s Wife Kelly Stafford Tackles Facelift Speculation With One Comment",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNY8YSA-cF-8QnKwO8Ptaqtq6rS5DVfYmEgkMnfm3a3uCmJqNNAcvi6xoRmK0"
+        }
+      ]
+    },
+    {
+      "query": "adam levine",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T04:00:00Z",
+      "related_news_urls": [
+        "https://people.com/riley-green-adam-levine-trade-playful-jabs-on-the-voice-12277576",
+        "https://holler.country/news/general/riley-green-on-his-people-magazines-sexiest-man-alive-feature-i-already-signed-one-for-adam/",
+        "https://www.usatoday.com/videos/entertainment/tv-streaming/2026/11/17/the-voice-judges-adam-levine-riley-green-banter/92817615007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1KoIAwU2PwCG6uoB4R-WPqSpIUW11xPtZG4a_HmbRpxCEnR6MvmdZZPsm8PY",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/riley-green-adam-levine-trade-playful-jabs-on-the-voice-12277576",
+          "title": "Riley Green and Adam Levine Trade Playful Jabs as The Voice Names Top 8: ‘I Want Him to Lose’ (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ1KoIAwU2PwCG6uoB4R-WPqSpIUW11xPtZG4a_HmbRpxCEnR6MvmdZZPsm8PY"
+        },
+        {
+          "url": "https://holler.country/news/general/riley-green-on-his-people-magazines-sexiest-man-alive-feature-i-already-signed-one-for-adam/",
+          "title": "Riley Green On His People Magazine's Sexiest Man Alive Feature: \"I Already Signed One For Adam\"",
+          "publisher": "Holler Country",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHFeDl17iG-lUjWaCTPfn_-8i-JnEolhoH4F0ELYxIyrpF0FrwjZsodUuCEro"
+        },
+        {
+          "url": "https://www.usatoday.com/videos/entertainment/tv-streaming/2026/11/17/the-voice-judges-adam-levine-riley-green-banter/92817615007/",
+          "title": "Adam Levine, Riley Green crash each other's 'The Voice' interviews",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQl0_LMnDBLHGyA5uymE2-2jyKKifKe-yAjMzxXTMAu60xaslWLbnL1r2va82I"
+        }
+      ]
+    },
+    {
+      "query": "fred johnson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T03:50:00Z",
+      "related_news_urls": [
+        "https://www.arrowheadpride.com/kansas-city-chiefs-news/217493/chiefs-sign-tackle-fred-johnson-to-active-roster",
+        "https://www.kctv5.com/2026/11/24/chiefs-sign-ot-fred-johnson-practice-squad-move-fullback-injured-reserve/",
+        "https://sports.yahoo.com/articles/chiefs-promoting-1-time-eagles-165951606.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfJltaYnx0QtxkBFpcWO91A-enLsCJXGYsjl4WkZ7z-3GS_cu6hQ1w2FehM4c",
+      "image_credit": "Arrowhead Pride",
+      "news": [
+        {
+          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-news/217493/chiefs-sign-tackle-fred-johnson-to-active-roster",
+          "title": "Chiefs sign tackle Fred Johnson to active roster",
+          "publisher": "Arrowhead Pride",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfJltaYnx0QtxkBFpcWO91A-enLsCJXGYsjl4WkZ7z-3GS_cu6hQ1w2FehM4c"
+        },
+        {
+          "url": "https://www.kctv5.com/2026/11/24/chiefs-sign-ot-fred-johnson-practice-squad-move-fullback-injured-reserve/",
+          "title": "Chiefs sign OT Fred Johnson from practice squad, move fullback to injured reserve",
+          "publisher": "KCTV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTsyIQSGr9ClQPSbB3BkFLt-xMUkpOelAkVukyVGxQB30eBjobyNGkBiSNH7gk"
+        },
+        {
+          "url": "https://sports.yahoo.com/articles/chiefs-promoting-1-time-eagles-165951606.html",
+          "title": "Chiefs promoting 1-time Eagles Super Bowl champion to roster for Thanksgiving showdown vs. Bills",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfX5STXlFc4MMUQjegdP1c7wPb6BnFFbFBRxjKnDQMvHF5t9zCWnx2PFvhAnE"
+        }
+      ]
+    },
+    {
       "query": "rockford files reboot",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-27T03:40:00Z",
       "related_news_urls": [
+        "https://collider.com/david-boreanaz-rockford-files-brandon-t-jackson-angel/",
         "https://deadline.com/2026/11/brandon-t-jackson-the-rockford-files-recurring-cast-1237229451/",
-        "https://screenrant.com/david-boreanaz-rockford-files-nbc-reboot-angel-recast-brandon-t-jackson/",
         "https://www.broadwayworld.com/bwwtv/article/THE-ROCKFORD-FILES-Firebird-Display-at-LA-Auto-Show-Draws-David-Boreanaz-Appearance-20261123"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMEUQ68tRyCjiVNpn_fuDgemDrBjDbLAZdZdbW_w-auoSjYitxTHe3WMWzu0",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ0sEJhZyW4PdAAlpTU1mFNLeoz14Ox6LjGyRDdY-70kSbJtDAWB95nJnoePk",
+      "image_credit": "Collider",
       "news": [
+        {
+          "url": "https://collider.com/david-boreanaz-rockford-files-brandon-t-jackson-angel/",
+          "title": "47 Years Later, David Boreanaz’s ‘Rockford Files’ Reboot Officially Replaces Key Character",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJ0sEJhZyW4PdAAlpTU1mFNLeoz14Ox6LjGyRDdY-70kSbJtDAWB95nJnoePk"
+        },
         {
           "url": "https://deadline.com/2026/11/brandon-t-jackson-the-rockford-files-recurring-cast-1237229451/",
           "title": "Brandon T. Jackson Joins ‘The Rockford Files’ In Recurring Role",
           "publisher": "Deadline",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMEUQ68tRyCjiVNpn_fuDgemDrBjDbLAZdZdbW_w-auoSjYitxTHe3WMWzu0"
-        },
-        {
-          "url": "https://screenrant.com/david-boreanaz-rockford-files-nbc-reboot-angel-recast-brandon-t-jackson/",
-          "title": "David Boreanaz’s New Reboot Of Classic NBC Detective Series Recasts Iconic Original Character",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRE9MUW-d89yjFqAEGUmb_zkBmMCSPDO_nhZckUzzlZcXP2VyLEtEWNuNWOoEI"
         },
         {
           "url": "https://www.broadwayworld.com/bwwtv/article/THE-ROCKFORD-FILES-Firebird-Display-at-LA-Auto-Show-Draws-David-Boreanaz-Appearance-20261123",
@@ -42,43 +182,8 @@
       ]
     },
     {
-      "query": "tyler bass",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T03:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/tyler-bass-nearly-perfect-bills-134500185.html",
-        "https://www.nytimes.com/athletic/live-blogs/chiefs-vs-bills-live-score-updates-nfl-thanksgiving-result/aFRcHisy7sku/",
-        "https://www.nfl.com/videos/emmett-johnson-hurdles-into-bills-territory-on-13-yard-run-early-in-third-quarter"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDpss6wBdJAV0lFag01cn5z89jlpMdT40Qlr81tOltE5kLHT17I-oZXhL6xK4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/tyler-bass-nearly-perfect-bills-134500185.html",
-          "title": "Tyler Bass Has Been Nearly Perfect for Bills After Taking a Pay Cut",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQDpss6wBdJAV0lFag01cn5z89jlpMdT40Qlr81tOltE5kLHT17I-oZXhL6xK4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/live-blogs/chiefs-vs-bills-live-score-updates-nfl-thanksgiving-result/aFRcHisy7sku/",
-          "title": "Chiefs vs. Bills live updates: NFL Thanksgiving game score, prediction, odds and latest - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSSvMpOzlNhu-d6qy4LukRz48yyuGQVQbObNeNYx81YFMzqRy347f-CM70DvzQ"
-        },
-        {
-          "url": "https://www.nfl.com/videos/emmett-johnson-hurdles-into-bills-territory-on-13-yard-run-early-in-third-quarter",
-          "title": "Emmett Johnson hurdles into Bills' territory on 13-yard run early in third quarter",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP6bchu5Q9KtzfP7lQroT8uNdbcQvtyq2tBNJ-g0JUU-jr_FSKnD7i_d0DgX8"
-        }
-      ]
-    },
-    {
       "query": "carson schwesinger",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-27T03:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/general/videos/carson-schwesinger-browns-midseason-mvp-191045095.html",
@@ -117,7 +222,7 @@
       "published_at": "2026-11-27T03:30:00Z",
       "related_news_urls": [
         "https://creepycatalog.com/violent-night-2-puts-david-harbours-santa-on-his-own-naughty-list-and-kristen-bells-mrs-claus-brings-a-sword/",
-        "https://www.cabletv.com/entertainment/where-to-watch-violent-night-2",
+        "https://demokratis.co.id/en/violent-night-2-theatrical-release",
         "https://www.abc4.com/contests/ktvx-kucws-violent-night-2-sweepstakes/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOE0rA3kCaTOzD0asrg5anc_4QTINAJDk9Ie7f39dXLSeSjbqhDRZa6_LVWCM",
@@ -131,11 +236,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOE0rA3kCaTOzD0asrg5anc_4QTINAJDk9Ie7f39dXLSeSjbqhDRZa6_LVWCM"
         },
         {
-          "url": "https://www.cabletv.com/entertainment/where-to-watch-violent-night-2",
-          "title": "Where To Watch ‘Violent Night 2’: Theaters and Streaming Rights",
-          "publisher": "CableTV.com",
+          "url": "https://demokratis.co.id/en/violent-night-2-theatrical-release",
+          "title": "Violent Night 2 Brings Sword-Wielding Mrs Claus to Theaters",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEbkWvuwpCBYgEmcZbjh_h4qeS3TE3DezNSFGlNiFxFhQGAFP5cz77eZw1A4E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQL_UWTp1_FM7XfjncnJgnadXpKXCMqFn2WxPrKGbsKAltm8J4Omdfhr2w0w7U"
         },
         {
           "url": "https://www.abc4.com/contests/ktvx-kucws-violent-night-2-sweepstakes/",
@@ -151,33 +256,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-27T03:30:00Z",
       "related_news_urls": [
-        "https://www.cleveland.com/betting/2026/11/browns-vs-raiders-prediction-draftkings-odds-snf.html",
-        "https://sports.yahoo.com/general/videos/fernando-mendozas-first-three-starts-010548648.html",
-        "https://www.raiders.com/news/raiders-unofficial-depth-chart-for-week-12-vs-cleveland-browns"
+        "https://247sports.com/nfl/cleveland-browns/article/cleveland-browns-2027-nfl-draft-examining-the-quarterback-class-293255805/",
+        "https://www.dawgsbynature.com/cleveland-browns-nfl-draft/138952/2027-browns-mock-draft-lanorris-sellers-boubacar-traore",
+        "https://dawgpounddaily.com/5-quarterbacks-the-browns-could-turn-to-in-2027-and-one-dream-scenario-01m87gg4akw1"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG95gfQEXE7HsgrA7aYDAbnSHq5CUKO9879IOnX3C_ytsvE-74pAzNVIArnz8",
-      "image_credit": "Cleveland.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSf51hi94aPfbhoJd8R0pcNdXNpbQwQgUynqphwZUlVNZb8LHWqwbp8bFQsT2s",
+      "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://www.cleveland.com/betting/2026/11/browns-vs-raiders-prediction-draftkings-odds-snf.html",
-          "title": "Experts release Raiders vs. Browns SNF predictions after Brock Bowers injury update",
-          "publisher": "Cleveland.com",
+          "url": "https://247sports.com/nfl/cleveland-browns/article/cleveland-browns-2027-nfl-draft-examining-the-quarterback-class-293255805/",
+          "title": "Browns NFL Draft: Examining This Year's QB Class",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG95gfQEXE7HsgrA7aYDAbnSHq5CUKO9879IOnX3C_ytsvE-74pAzNVIArnz8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSf51hi94aPfbhoJd8R0pcNdXNpbQwQgUynqphwZUlVNZb8LHWqwbp8bFQsT2s"
         },
         {
-          "url": "https://sports.yahoo.com/general/videos/fernando-mendozas-first-three-starts-010548648.html",
-          "title": "Fernando Mendoza's First Three Starts Are a Rookie Gauntlet",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.dawgsbynature.com/cleveland-browns-nfl-draft/138952/2027-browns-mock-draft-lanorris-sellers-boubacar-traore",
+          "title": "2027 Browns mock draft: Selecting a potential turkey at quarterback",
+          "publisher": "Dawgs By Nature",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuPGLqHckQCip7p4k1sMxD0NS3NsM6axzazH44ib7yeNDz16OlpMsmYxmHy3k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSooxZIQIsMiYPePgsUbqVH825uh7bb7SU5jHziA62F8LNgj24Ji8LMZq4iWzQ"
         },
         {
-          "url": "https://www.raiders.com/news/raiders-unofficial-depth-chart-for-week-12-vs-cleveland-browns",
-          "title": "Raiders' unofficial depth chart for Week 12 vs. Cleveland Browns",
-          "publisher": "Raiders.com",
+          "url": "https://dawgpounddaily.com/5-quarterbacks-the-browns-could-turn-to-in-2027-and-one-dream-scenario-01m87gg4akw1",
+          "title": "5 quarterbacks the Browns could turn to in 2027 (and one dream scenario)",
+          "publisher": "Dawg Pound Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_45C_yzpYxsAR1sWGLFDnt_7Qu2oiPI2QST35UJMSDAqFh7FBsr94TldMLk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8q5_Pj56m-FTGgHSJaOBPmL2D_RHPfCKgeX5y54a0_Vx98WmHGjigcSyM-a4"
         }
       ]
     },
@@ -202,7 +307,7 @@
     },
     {
       "query": "nohl williams",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-27T03:20:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/athletic/7803650/2026/11/22/nohl-williams-wrestling-tackle-elijah-higgins-chiefs-cardinals/",
@@ -232,111 +337,6 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS46SLbWXUbMkA3Tb3IYEyNkbG7eb11_RU6ieJhC9SDCmZZC4NQ0y-lIIvxEpY"
-        }
-      ]
-    },
-    {
-      "query": "clashing through the snow cast",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T03:20:00Z",
-      "related_news_urls": [
-        "https://www.timesunion.com/movies/article/clashing-through-the-snow-amazon-locations-22541310.php",
-        "https://collider.com/landman-star-michelle-randolph-clashing-through-the-snow-streaming-success-prime-video-november-2026/",
-        "https://deadline.com/2026/11/clashing-through-the-snow-director-interview-chatgpt-1237232740/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxoFRj0B6mOlSB5lgNXjIKmPIf9ZSFxXNZUC-VJ55kvhW2ccj9tQJotepGk94",
-      "image_credit": "Times Union",
-      "news": [
-        {
-          "url": "https://www.timesunion.com/movies/article/clashing-through-the-snow-amazon-locations-22541310.php",
-          "title": "‘Clashing Through the Snow’ turned a Hudson Valley blizzard into a holiday rom-com",
-          "publisher": "Times Union",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxoFRj0B6mOlSB5lgNXjIKmPIf9ZSFxXNZUC-VJ55kvhW2ccj9tQJotepGk94"
-        },
-        {
-          "url": "https://collider.com/landman-star-michelle-randolph-clashing-through-the-snow-streaming-success-prime-video-november-2026/",
-          "title": "‘Landman’ Star’s New Movie Officially Debuts at No. 1 in the World on Prime Video",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYAAi1Wj4o19Dk9In45lpdyPJjAg9z_WyEw3wKh9EDrNt96hpRtaTWCfYrALQ"
-        },
-        {
-          "url": "https://deadline.com/2026/11/clashing-through-the-snow-director-interview-chatgpt-1237232740/",
-          "title": "'Clashing Through The Snow' Director Carlson Young Talks Film Meaning",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRjsVonuHDaLU6-GKI2hLWdWqQxj7_ukSFDE-ibEsl5pq2uUxxNxmy8UDbTSdI"
-        }
-      ]
-    },
-    {
-      "query": "emmet johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T03:10:00Z",
-      "related_news_urls": [
-        "https://www.pff.com/news/grading-all-32-nfl-first-round-rookies-after-week-11",
-        "https://fansided.com/nfl/grading-every-nfl-first-round-pick-at-thanksgiving",
-        "https://www.si.com/nfl/nfl-rookie-report-chiefs-emmett-johnson-broncos-jonah-coleman-running-wild"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_t-ClyBn8MzFhqOLbT87Q5eUfrYDALsH0Mc2pEaJ1RQeBTjf0QcjNiF6e7s",
-      "image_credit": "PFF",
-      "news": [
-        {
-          "url": "https://www.pff.com/news/grading-all-32-nfl-first-round-rookies-after-week-11",
-          "title": "Grading all 32 NFL first-round rookies after Week 11",
-          "publisher": "PFF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_t-ClyBn8MzFhqOLbT87Q5eUfrYDALsH0Mc2pEaJ1RQeBTjf0QcjNiF6e7s"
-        },
-        {
-          "url": "https://fansided.com/nfl/grading-every-nfl-first-round-pick-at-thanksgiving",
-          "title": "Grading every first-round pick in the 2026 NFL Draft at Thanksgiving",
-          "publisher": "FanSided",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEd9wraVR0NDbL5ToZ-l2JSboWeO3aS5AA3zXKJTgt6FFPOB7riIlk0THkGyI"
-        },
-        {
-          "url": "https://www.si.com/nfl/nfl-rookie-report-chiefs-emmett-johnson-broncos-jonah-coleman-running-wild",
-          "title": "NFL Rookie Report: Chiefs’ Emmett Johnson, Broncos’ Jonah Coleman Running Wild",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXK5xteiMui1Vav0YGWpRowclnayJxu9ICZeYlHrAg3RSqsKqARQO-tVYWCWM"
-        }
-      ]
-    },
-    {
-      "query": "josh downs",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T03:10:00Z",
-      "related_news_urls": [
-        "https://www.arrowheadpride.com/kansas-city-chiefs-news/217574/josh-downs-cyrus-allen-providing-a-boost-chiefs-wide-receiver-corps",
-        "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318236077.html",
-        "https://www.hitc.com/josh-downs-shares-what-travis-kelce-is-doing-to-help-him-during-games-for-the-chiefs/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMNp2gT5g_fYrKizsGHTvxviwnslYl0hROcwTD5Ifl4Q5A3IdrQBQ5ULBUZQ",
-      "image_credit": "Arrowhead Pride",
-      "news": [
-        {
-          "url": "https://www.arrowheadpride.com/kansas-city-chiefs-news/217574/josh-downs-cyrus-allen-providing-a-boost-chiefs-wide-receiver-corps",
-          "title": "Josh Downs and Cyrus Allen providing a boost to Chiefs’ wide receiver corps",
-          "publisher": "Arrowhead Pride",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMNp2gT5g_fYrKizsGHTvxviwnslYl0hROcwTD5Ifl4Q5A3IdrQBQ5ULBUZQ"
-        },
-        {
-          "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article318236077.html",
-          "title": "Chiefs have a growing X-factor in Josh Downs ahead of Bills showdown",
-          "publisher": "Kansas City Star",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSgGG3OoFf_n0i2Brmjr6ke-UcBtxNSunCW60g3h4GXux-ACveXEQl5drAgKsE"
-        },
-        {
-          "url": "https://www.hitc.com/josh-downs-shares-what-travis-kelce-is-doing-to-help-him-during-games-for-the-chiefs/",
-          "title": "Josh Downs shares what Travis Kelce is doing to help him during games for the Chiefs",
-          "publisher": "HITC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMdzhhHTBdqICUCJ86eC1-NGIsDHH_Fv9qisxGrDOQuzi8A9hV6_SgUg4svqA"
         }
       ]
     }
