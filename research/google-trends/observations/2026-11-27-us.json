@@ -3,47 +3,241 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T15:31:05.557132Z",
+  "checked_at": "2026-11-27T16:01:26.393213Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta vi pc port",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T15:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+        "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
+        },
+        {
+          "url": "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges",
+          "title": "GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuRToii54l7Deix7HDKynpvjgurf_8sQRXn5aR91fQJXc_pJ2TXblsi02t_fw"
+        }
+      ]
+    },
+    {
+      "query": "parker washington",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T15:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/parker-washington-sunday-shoulder-injury-153935148.html",
+        "https://www.news4jax.com/sports/2026/11/27/jaguars-wr-parker-washington-out-for-titans-game-with-shoulder-injury-coen-says-hes-week-to-week/",
+        "https://www.si.com/nfl/jaguars/onsi/parker-washington-lands-on-jacksonville-injury-report-leaving-them-potentially-slim-options"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwIqVkGQFGdMbQI2QwFt7sKNmznisVAR3D8AFJ8vgDoaVR92PeyXQwGFnLV7U",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/parker-washington-sunday-shoulder-injury-153935148.html",
+          "title": "Parker Washington out on Sunday with a shoulder injury",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwIqVkGQFGdMbQI2QwFt7sKNmznisVAR3D8AFJ8vgDoaVR92PeyXQwGFnLV7U"
+        },
+        {
+          "url": "https://www.news4jax.com/sports/2026/11/27/jaguars-wr-parker-washington-out-for-titans-game-with-shoulder-injury-coen-says-hes-week-to-week/",
+          "title": "Jaguars WR Parker Washington out for Titans game with shoulder injury; Coen says he’s week to week",
+          "publisher": "News4JAX",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzGxXnRIBg2cxPZpzUCPEsckmDsLsnMpmqgBwiRtywYfItzAWl6qa4U-_ZZJA"
+        },
+        {
+          "url": "https://www.si.com/nfl/jaguars/onsi/parker-washington-lands-on-jacksonville-injury-report-leaving-them-potentially-slim-options",
+          "title": "Parker Washington Lands on Jaguars Injury Report, Leaving Them Potentially Slim Options",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaP87aJcEsMeNrpGyKiyZmbgIa4sWmhteRL3DA2elHI6l4eRmfrtM6BgaoW_8"
+        }
+      ]
+    },
+    {
+      "query": "canelo álvarez",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T15:30:00Z",
+      "related_news_urls": [
+        "https://www.infobae.com/mexico/deportes/2026/11/27/dmitry-bivol-exhibe-a-canelo-alvarez-no-ha-recibido-oferta-para-la-revancha/",
+        "https://unanimodeportes.com/deportes/boxeo/bivol-esta-dispuesto-a-concederle-la-revancha-a-canelo-alvarez/",
+        "https://www.latimes.com/espanol/deportes/articulo/2026-11-25/canelo-alvarez-salma-hayek-productores-cortometraje-boxeo-tepito"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyB24pqTYPZCDhz_ixn_9bXf-kHJkyu2KnzLVszi2jkmprXJu4vpEfY0el0JA",
+      "image_credit": "Infobae",
+      "news": [
+        {
+          "url": "https://www.infobae.com/mexico/deportes/2026/11/27/dmitry-bivol-exhibe-a-canelo-alvarez-no-ha-recibido-oferta-para-la-revancha/",
+          "title": "Dmitry Bivol exhibe a Canelo Álvarez: no ha recibido oferta para la revancha",
+          "publisher": "Infobae",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRyB24pqTYPZCDhz_ixn_9bXf-kHJkyu2KnzLVszi2jkmprXJu4vpEfY0el0JA"
+        },
+        {
+          "url": "https://unanimodeportes.com/deportes/boxeo/bivol-esta-dispuesto-a-concederle-la-revancha-a-canelo-alvarez/",
+          "title": "Bivol está dispuesto a concederle la revancha a \"Canelo\" Álvarez",
+          "publisher": "UNANIMO Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQhEzVicMS6nqFqBof1JfjLc-WYc0_x-f49OyXvBfv4iq28z9hzM1X_-OctW8s"
+        },
+        {
+          "url": "https://www.latimes.com/espanol/deportes/articulo/2026-11-25/canelo-alvarez-salma-hayek-productores-cortometraje-boxeo-tepito",
+          "title": "Canelo Álvarez y Salma Hayek se unen a un cortometraje sobre un chico boxeador en Tepito",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlvvqFQQRyo1iPNny5oVd8hXSjfRfZk1QwClF1XtssU53SrtVWhCCMwoXmBQ"
+        }
+      ]
+    },
+    {
+      "query": "konstantin lifschitz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T15:30:00Z",
+      "related_news_urls": [
+        "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY",
+      "image_credit": "BR Klassik",
+      "news": [
+        {
+          "url": "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html",
+          "title": "Konstantin Lifschitz mit 49 gestorben: Angesehener Pianist und beliebter Lehrer",
+          "publisher": "BR Klassik",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY"
+        }
+      ]
+    },
+    {
+      "query": "nicole scherzinger",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T15:30:00Z",
+      "related_news_urls": [
+        "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
+        "https://www.tmz.com/2026/11/27/nicole-scherzinger-and-thom-evans-split/",
+        "https://www.thedailybeast.com/nicole-scherzinger-dumps-her-fiance-thom-evans-after-7-years"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
+          "title": "Nicole Scherzinger and Fiancé Thom Evans End Engagement After 7 Years Together",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/27/nicole-scherzinger-and-thom-evans-split/",
+          "title": "Nicole Scherzinger Calls Off Engagement to Fiancé After Seven-Year Relationship",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSpdWPhqzuUUobKy2NDJ4bomCblqKPJCVaOQE8-BXgdZ5der0ctd5ijZ6Wk3E"
+        },
+        {
+          "url": "https://www.thedailybeast.com/nicole-scherzinger-dumps-her-fiance-thom-evans-after-7-years",
+          "title": "Nicole Scherzinger Dumps Her Rugby Star Fiancé After 7 Years",
+          "publisher": "The Daily Beast",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRk8jECpv1sYhFqI0MR1u2ddVBcnMoUZXnsUrrfdSq2QHzxM6NdMRn7DYc37E"
+        }
+      ]
+    },
+    {
+      "query": "sea of sorrow",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T15:20:00Z",
+      "related_news_urls": [
+        "https://www.teamcherry.com.au/blog/cherrytimeannounce",
+        "https://80.lv/articles/creators-of-the-hollow-knight-series-will-host-a-livestream-showcase",
+        "https://www.theverge.com/news/1044004/hollow-knight-silksong-sea-of-sorrow-release-date"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo",
+      "image_credit": "Team Cherry",
+      "news": [
+        {
+          "url": "https://www.teamcherry.com.au/blog/cherrytimeannounce",
+          "title": "Join us in 48 hours for Cherry Time!",
+          "publisher": "Team Cherry",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo"
+        },
+        {
+          "url": "https://80.lv/articles/creators-of-the-hollow-knight-series-will-host-a-livestream-showcase",
+          "title": "Creators of the Hollow Knight Series Will Host a Livestream Showcase",
+          "publisher": "80 Level",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmq7H6rzDxEtHLby4wmpD_PdjVdKCAwb_DIpAMYTCu49rkBj6beIg_RO8XS-k"
+        },
+        {
+          "url": "https://www.theverge.com/news/1044004/hollow-knight-silksong-sea-of-sorrow-release-date",
+          "title": "Silksong’s free expansion arrives next month.",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjZhTZG6VoqTimjeK9fPJZ4ULL1FNzrQKzL0jBSTDLGuxiRBbHv7ETsCiETs0"
+        }
+      ]
+    },
     {
       "query": "nasdaq composite",
       "approx_searches": "500+",
       "published_at": "2026-11-27T15:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/stocks-retreat-ai-rebound-stumbles-015155560.html",
-        "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-26/",
-        "https://www.bloomberg.com/news/videos/2026-11-27/insight-with-haslinda-amin-11-27-2026-video"
+        "https://www.moomoo.com/news/post/1005539376/us-stocks-surge-6-5-as-crypto-markets-shed-1",
+        "https://kalkinemedia.com/news/cryptocurrency/crypto-news-why-is-gold-rallying-while-bitcoin-btc-sees-little-change",
+        "https://www.fxstreet.com/analysis/five-reasons-stocks-soared-while-bitcoin-and-gold-slid-202611240854"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz1btiVY3PBnnsYGellEkb6y9g1honD7jBeXiEtabZNi9kkmAMAy7z1n0Cm5A",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpzaZToh58zQiZhBR5QDYCY7PENsxdYm8VCbWrJ53Yt-YWO4FtnStXEB7WTn4",
+      "image_credit": "Moomoo",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-retreat-ai-rebound-stumbles-015155560.html",
-          "title": "World stocks tumble as Trump tariffs rattle markets, AI rally fades",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.moomoo.com/news/post/1005539376/us-stocks-surge-6-5-as-crypto-markets-shed-1",
+          "title": "U.S. stocks surge 6.5% as crypto markets shed $1.8 billion; why is BTC absent from the rebound?",
+          "publisher": "Moomoo",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz1btiVY3PBnnsYGellEkb6y9g1honD7jBeXiEtabZNi9kkmAMAy7z1n0Cm5A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpzaZToh58zQiZhBR5QDYCY7PENsxdYm8VCbWrJ53Yt-YWO4FtnStXEB7WTn4"
         },
         {
-          "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-26/",
-          "title": "Morning Bid: Hey, it could have been worse",
-          "publisher": "Reuters",
+          "url": "https://kalkinemedia.com/news/cryptocurrency/crypto-news-why-is-gold-rallying-while-bitcoin-btc-sees-little-change",
+          "title": "Crypto News: Why Is Gold Rallying While Bitcoin (BTC) Sees Little Change?",
+          "publisher": "Kalkine Media",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nZttDNaJq_DlextxgEq-ZlBdH80x1czGQjbrUfs1D4Flpxxz4MSlF2_SJnA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4GWkKd0ZC-kvZWzTINebPmkl49fIK7EjMtWSPbqUNwEVpwT1AXGSFkcKtfw"
         },
         {
-          "url": "https://www.bloomberg.com/news/videos/2026-11-27/insight-with-haslinda-amin-11-27-2026-video",
-          "title": "Watch AI Rally Faces Fresh Test: Nvidia Curbs & Trump Tariffs",
-          "publisher": "Bloomberg.com",
+          "url": "https://www.fxstreet.com/analysis/five-reasons-stocks-soared-while-bitcoin-and-gold-slid-202611240854",
+          "title": "Five reasons stocks soared while Bitcoin and Gold slid",
+          "publisher": "FXStreet",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5H2PhwKtKljeOL91Pi5CBu3LhzG7Rb43YEYtkr0TKfT9XxJGD8CGG-g_ePs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLeFRPobjGY3VUCwuwTp9MnsaxL2WHyPc-rua1zeHFe7grQJVOWWdGf8qWMvA"
         }
       ]
     },
     {
       "query": "matt damon family home life",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T15:00:00Z",
       "related_news_urls": [
         "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
@@ -73,6 +267,41 @@
           "publisher": "Global News",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdVzuLybd_7dFuPIKR5_89WTr71YfnFrmvudacpcuJR6z-YyxFczFvJyx1jWM"
+        }
+      ]
+    },
+    {
+      "query": "lawson lovering",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T15:00:00Z",
+      "related_news_urls": [
+        "https://www.hoopsrumors.com/2026/11/grizzlies-sign-lawson-lovering-to-10-day-hardship-deal.html",
+        "https://dailymemphian.com/section/sportsmemphis-grizzlies/article/68950/memphis-grizzlies-sign-center-with-hardship-exception",
+        "https://basketnews.com/news-260329-former-lakers-7-footer-lands-new-nba-deal.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfHmgBB5gkYjQtTPbU3MN9Z2ZOZrtMPOf_50G8wmk06-aDt3MSTNNv9BTSZg0",
+      "image_credit": "Hoops Rumors",
+      "news": [
+        {
+          "url": "https://www.hoopsrumors.com/2026/11/grizzlies-sign-lawson-lovering-to-10-day-hardship-deal.html",
+          "title": "Grizzlies Sign Lawson Lovering To 10-Day Hardship Deal",
+          "publisher": "Hoops Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfHmgBB5gkYjQtTPbU3MN9Z2ZOZrtMPOf_50G8wmk06-aDt3MSTNNv9BTSZg0"
+        },
+        {
+          "url": "https://dailymemphian.com/section/sportsmemphis-grizzlies/article/68950/memphis-grizzlies-sign-center-with-hardship-exception",
+          "title": "Grizzlies sign center with hardship exception",
+          "publisher": "Daily Memphian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ79urj6_HIlBZX2KM3MZBcVDbktQzwupmUW0uI9WGifR9WtiTeNC0R7kt_pk"
+        },
+        {
+          "url": "https://basketnews.com/news-260329-former-lakers-7-footer-lands-new-nba-deal.html",
+          "title": "Former Lakers 7-footer lands new NBA deal",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkdVKYT60g_Zb7pdjjYfK4P47nNEJC0LXJjOOGDv6xDHPLod5DIQoB0AO5wKk"
         }
       ]
     },
@@ -108,251 +337,6 @@
           "publisher": "Investor's Business Daily",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5wX1d6HrNfCF4G7hp-eYv7dDzy1spVkjwoEA0a7FrijYiLCR3g7AxFd5AD4E"
-        }
-      ]
-    },
-    {
-      "query": "law",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T14:50:00Z",
-      "related_news_urls": [
-        "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test",
-        "https://www.bbc.com/news/articles/cq3dgpy9lem3o",
-        "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnR3iAYl-E3UtCUB8xyZuPf46nwPrBrjG8TgPVQWrxWSYTpNCuQ8cuh1BiHaI",
-      "image_credit": "Al Jazeera",
-      "news": [
-        {
-          "url": "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test",
-          "title": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
-          "publisher": "Al Jazeera",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnR3iAYl-E3UtCUB8xyZuPf46nwPrBrjG8TgPVQWrxWSYTpNCuQ8cuh1BiHaI"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/cq3dgpy9lem3o",
-          "title": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvJjb2RGK6FxK9y80Rv746Vqa787rHjlzLA6C3OPuOqbF0GPcdLBqFMPpjs0"
-        },
-        {
-          "url": "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/",
-          "title": "Canada's Supreme Court to rule on Quebec's law on religious symbols in test of Canadian unity",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTso__HzBl7pa9O7M7SSJ32x0l_ta7ZgvUDv_vQDBmn4McdyaHvZkWd7sEkHwA"
-        }
-      ]
-    },
-    {
-      "query": "college games today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T14:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-        "https://www.cbssports.com/betting/news/college-football-odds-picks-predictions-lines-best-bets-today-rivalry-week-2026/",
-        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/college-football-odds-picks-predictions-lines-best-bets-today-rivalry-week-2026/",
-          "title": "College football odds, picks, predictions for Rivalry Week, 2026: Computer likes North Carolina, Arizona",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGG7etmjcb9ib7MGdMxKjXv3Rql1y0WjFl71T14o-2Hj8_Fj4NgQ5CTU32Xzk"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
-        }
-      ]
-    },
-    {
-      "query": "al qadsiah vs al-fayha",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T14:30:00Z",
-      "related_news_urls": [
-        "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
-        "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412",
-        "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/blt4b1228005f5d66e7"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE",
-      "image_credit": "Goal.com",
-      "news": [
-        {
-          "url": "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
-          "title": "Watch Al Qadsiah vs Al-Fayha live today: Who is broadcasting the match on TV and via live stream?",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE"
-        },
-        {
-          "url": "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412",
-          "title": "Al Qadsiah vs Al Fayha Preview & Prediction",
-          "publisher": "The Stats Zone",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaTw1Hc6DtJOa55-PeXzh24JSNVI8JkoLfjAGpPD-ab6d11TLKRHAWPgXsLx8"
-        },
-        {
-          "url": "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/blt4b1228005f5d66e7",
-          "title": "WATCH HERE! Al Qadsiah vs Al-Fayha Saudi Pro League Matchday 13: Live stream, team news, kick-off time",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE"
-        }
-      ]
-    },
-    {
-      "query": "hackers breach air force",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T14:20:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-        "https://www.forbes.com/sites/saradorn/2026/11/27/air-forces-cloud-one-platform-hacked-report-says/",
-        "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-          "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
-        },
-        {
-          "url": "https://www.forbes.com/sites/saradorn/2026/11/27/air-forces-cloud-one-platform-hacked-report-says/",
-          "title": "Hackers Attacked Air Force’s Cloud System, Report Says",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn-jvv1nLSBwlViX_Q4PeuecGGTZdAffVGYZCqZrScp0ydTyUiqoa-QchTKLc"
-        },
-        {
-          "url": "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/",
-          "title": "Hackers break into US Air Force cloud computing platform: Report",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMZ4AP9qLy8KuUE8dv67nk6SL2wfQqZ_1m4oxADJno39badoBUGyF1VBQu_NQ"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 black friday",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T14:10:00Z",
-      "related_news_urls": [
-        "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal",
-        "https://www.imdb.com/news/ni66103001/",
-        "https://www.benzinga.com/news/retail-sales/26/11/63666474/gta-black-friday-deals-2026-best-gta-6-gta-5-and-gta-trilogy-discounts-on-ps5-xbox-pc-and-nintendo-switch"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP79ehX6vmZB6qmoxHEupuWXTwk_kJuLA-TCl7U-3F3Vwjs4Y5JyZv9pfBpwE",
-      "image_credit": "Mashable",
-      "news": [
-        {
-          "url": "https://mashable.com/entertainment/black-friday-deal-2026-costco-sony-playstation-gift-card-deal",
-          "title": "This Black Friday shopping hack could help you save $15 on 'GTA 6' for PS5",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTP79ehX6vmZB6qmoxHEupuWXTwk_kJuLA-TCl7U-3F3Vwjs4Y5JyZv9pfBpwE"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66103001/",
-          "title": "GTA 6 Gets Its First Official Black Friday Discount",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpHCRle3l_J1nMyvoK03CDEiRMbLkkJY-cF15XgqA1FJbeD_AVh2WF0cFGRvg"
-        },
-        {
-          "url": "https://www.benzinga.com/news/retail-sales/26/11/63666474/gta-black-friday-deals-2026-best-gta-6-gta-5-and-gta-trilogy-discounts-on-ps5-xbox-pc-and-nintendo-switch",
-          "title": "GTA Black Friday Deals 2026: Best GTA 6, GTA 5 and GTA Trilogy Discounts on PS5, Xbox, PC and Nintendo Switch",
-          "publisher": "Benzinga",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVft80SzAAgJM2Y6NzcfgXGGZfpZzWQjs21ILdgzDg_OPbM-UQMHxOfkdJ3j0"
-        }
-      ]
-    },
-    {
-      "query": "kelly ripa",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T14:10:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-        "https://demokratis.co.id/en/kelly-ripa-lola-fashion-appearances",
-        "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-          "title": "Kelly Ripa's lookalike daughter twins with boyfriend in unexpected look",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
-        },
-        {
-          "url": "https://demokratis.co.id/en/kelly-ripa-lola-fashion-appearances",
-          "title": "Kelly Ripa Shows Yacht Style as Lola Coordinates Couple Outfits",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR4Ec5JzlpjPfdNPg3lSbl2abdRtt_qSnnM5o3mOYBOX_UF6CHIw8-PloZmAE"
-        },
-        {
-          "url": "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
-          "title": "Lola Consuelos Matches Tweed Outfits With Boyfriend in London",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSea1bARiLrAfjSC9Rdvnb5dRq77Ckk1yQT2HtXEth5OmxrFql061RQ5Zqku-0"
-        }
-      ]
-    },
-    {
-      "query": "hunting",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T14:00:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
-        "https://www.out.com/celebs/brittany-snow-the-hunting-wives",
-        "https://www.npr.org/2026/11/26/nx-s1-6053125/sex-and-murder-are-everywhere-in-the-hunting-wives"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
-          "title": "'It appeals across demographics': How steamy soap The Hunting Wives took on sex, scandal and the US's blue-red divide",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU"
-        },
-        {
-          "url": "https://www.out.com/celebs/brittany-snow-the-hunting-wives",
-          "title": "Brittany Snow & Malin Åkerman tease their sexy sapphic scenes on 'The Hunting Wives'",
-          "publisher": "Out Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSggZNG2VKb7kzfpqZSxqDsMClLHi9vA_0qHQYYqNzxCSgl6L5ELSA43-OBYs4"
-        },
-        {
-          "url": "https://www.npr.org/2026/11/26/nx-s1-6053125/sex-and-murder-are-everywhere-in-the-hunting-wives",
-          "title": "Sex and murder are everywhere in 'The Hunting Wives' : Pop Culture Happy Hour",
-          "publisher": "NPR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRMp-KjQlQvfNTMBidxptlpLrXozOWjFnDyc3CZsoj8KkZdSHgwgwhlWf8oOI"
         }
       ]
     }
