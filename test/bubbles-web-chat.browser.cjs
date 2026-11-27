@@ -106,3 +106,38 @@ test('real inline chat sign-in settles at phone and desktop widths without grant
   }
  }finally{await browser.close();await new Promise(r=>server.close(r));}
 });
+
+
+test('real Bubbles composer executes pinned browser program with external services unavailable',async()=>{
+ const served=new Set();
+ const server=http.createServer((req,res)=>{
+  const path=new URL(req.url,'http://localhost').pathname;
+  const allowed=/^\/[a-zA-Z0-9.-]+$/.test(path)||path==='/workers/bubbles-tools/resonance.mjs';
+  if(!allowed||!fs.existsSync('.'+path)){res.writeHead(404);return res.end();}
+  served.add(path);
+  res.setHeader('Content-Type',/\.m?js$/.test(path)?'text/javascript':path.endsWith('.css')?'text/css':'text/html');
+  res.end(fs.readFileSync('.'+path));
+ });
+ await new Promise(r=>server.listen(0,'127.0.0.1',r));
+ let browser;
+ try{
+  browser=await chromium.launch({headless:true});
+  const page=await browser.newPage({viewport:{width:360,height:760},isMobile:true,hasTouch:true,serviceWorkers:'block'});
+  const requests=[];
+  await page.route('https://**/*',route=>{requests.push(route.request().url());return route.abort();});
+  await page.goto('http://127.0.0.1:'+server.address().port+'/bubbles.html');
+  await page.waitForFunction(()=>window.QuantaBubbles);
+  await page.locator('.ba-launcher').click();
+  const field=page.getByRole('textbox',{name:'Message Bubbles',exact:true});
+  const send=page.getByRole('button',{name:'Send',exact:true});
+  await field.fill('local resonance: 10 uH, 22 pF');await send.click();
+  await page.locator('.ba-thread').getByText(/Ideal LC resonance: 10\.730 MHz/).waitFor();
+  assert.equal(await field.inputValue(),'');
+  assert.ok(served.has('/bubbles-program-router.mjs'));
+  assert.ok(served.has('/workers/bubbles-tools/resonance.mjs'));
+  await field.fill('local resonance: -10 uH, 22 pF');await send.click();
+  await page.getByText(/Enter local resonance: 10 uH, 22 pF/).first().waitFor();
+  assert.equal(await field.inputValue(),'local resonance: -10 uH, 22 pF');
+  assert.equal(requests.filter(url=>url.includes('/v1/assist')).length,0);
+ }finally{if(browser)await browser.close();await new Promise(r=>server.close(r));}
+});

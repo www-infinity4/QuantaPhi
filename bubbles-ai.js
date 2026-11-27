@@ -10,6 +10,9 @@ window.__QuantaBubblesMounted=true;
 const AI='https://bubbles-tools.marvaseater.workers.dev/v1/assist';
 const FOLDER_API='https://bubbles-chat-folders.marvaseater.workers.dev/v1/folders';
 const STREAM_VOICE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-stream-voice.js?v=20261019-words1');
+// Vendored A- catalog, commit 70d23d8d109931eb40c3128d59e3501b9ed23a3e; routing metadata, never authorization.
+const LOCAL_PROGRAM_ROUTER_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'bubbles-program-router.mjs');
+const LOCAL_RESONANCE_URL=(document.currentScript?.src||location.origin+'/bubbles-ai.js').replace(/[^/]*$/,'workers/bubbles-tools/resonance.mjs');
 let streamVoice=null,voiceGeneration=0;
 // Core job acknowledgements must work in Android WebView even if module imports fail.
 const humanReplies=()=>({
@@ -2615,6 +2618,30 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   const confirmed=await askClaudeSteward(decision.prompt,decision.mode);
   if(confirmed)clearSentComposer();
   return;
+ }
+ // Explicit local resonance program: no owner-context, AI or remote execution request.
+ if(/^local resonance\s*:/i.test(spoken)){
+  if(pendingImage||pendingImages.length){status.textContent='Local resonance accepts numbers only. Your attachment and draft were preserved.';return;}
+  const thread=activeThread;
+  let result;
+  try{
+   const {routeProgram}=await import(LOCAL_PROGRAM_ROUTER_URL);
+   const route=routeProgram('resonance.calculate');
+   if(route.lane!=='browser'||route.status!=='route_only')throw Error('local_program_route_unavailable');
+   const {localResonanceReply}=await import(LOCAL_RESONANCE_URL);
+   result=localResonanceReply(spoken);
+  }catch{
+   status.textContent='Local resonance program unavailable. Your draft was preserved.';return;
+  }
+  if(thread!==activeThread)return;
+  if(!result?.ok){status.textContent=result?.text||'Invalid local resonance request.';return;}
+  display(spoken,'you');display(result.text,'ai');clearSentComposer();
+  messages.push({role:'user',text:spoken},{role:'assistant',text:result.text});messages=messages.slice(-400);
+  persistChat(); // Existing user-selected history/sync policy; not required for computation.
+  status.textContent=result.text;
+  if(nativeOverlay&&fromVoice)nativeSpeechReply=result.text;
+  else if(fromVoice&&config.voice&&!nativeOverlay)speakText(result.text);
+  nativeSpeechPending=false;return;
  }
  // A new turn begins without granting credits; Personal Context must verify first.
  if(typeof CustomEvent==='function')window.dispatchEvent(new CustomEvent('bubbles:iteration',{detail:{type:'turn_started'}}));

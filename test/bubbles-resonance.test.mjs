@@ -62,3 +62,49 @@ test('foreign pages cannot call the public Bubbles tool endpoint',async()=>{
  const r=await worker.fetch(new Request('https://tools/v1/assist',{method:'POST',headers:{Origin:'https://other.example'},body:'{}'}),{});
  assert.equal(r.status,403);
 });
+
+
+test('explicit browser program invocation returns a real local resonance result without guessing inputs',async()=>{
+ const {localResonanceReply}=await import('../workers/bubbles-tools/resonance.mjs');
+ const reply=localResonanceReply('local resonance: 10 uH, 22 pF');
+ assert.equal(reply.ok,true);
+ assert.match(reply.text,/10\.730 MHz/);
+ assert.match(reply.text,/browser/i);
+ assert.match(reply.text,/ideal/i);
+ assert.equal(localResonanceReply('repair the resonance repository'),null);
+ for(const input of ['local resonance: -10 uH, 22 pF','local resonance: 10 uH','local resonance: 10 uH, 22 pF; fetch("x")','local resonance: 0 uH, 22 pF','local resonance: '+ '9'.repeat(300)+' uH, 22 pF']){
+  assert.equal(localResonanceReply(input).ok,false,input);
+ }
+});
+test('browser resonance dispatch precedes remote owner context and preserves attachments',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const start=ui.indexOf('// Explicit local resonance program');
+ const end=ui.indexOf('// A new turn begins without granting credits',start);
+ assert.ok(start>0&&end>start);
+ const route=ui.slice(start,end);
+ assert.match(route,/pendingImage\|\|pendingImages\.length/);
+ assert.match(route,/localResonanceReply\(spoken\)/);
+ assert.match(route,/display\(result\.text,'ai'\)/);
+ assert.doesNotMatch(route,/bubblesFetch|directGithubOperation|submitWork|currentOwnerContext|eval\(/);
+ assert.ok(end<ui.indexOf('const firstOwnerContext=await currentOwnerContext',end));
+});
+
+
+test('A- program registry is the pinned merged source and browser dispatch uses only its local lane',async()=>{
+ const {readFileSync}=await import('node:fs');
+ const {createHash}=await import('node:crypto');
+ const bytes=readFileSync(new URL('../bubbles-program-router.mjs',import.meta.url));
+ const sha=createHash('sha1').update('blob '+bytes.length+'\\0'.replace('\\0','\0')).update(bytes).digest('hex');
+ assert.equal(sha,'db6485debc25204da93fb8af21f4ee80cd36e163');
+ const {routeProgram}=await import('../bubbles-program-router.mjs');
+ assert.equal(routeProgram('resonance.calculate').lane,'browser');
+ assert.equal(routeProgram('conversation.reply').status,'host_unverified');
+ assert.equal(routeProgram('repository.engineer').executionAuthorized,false);
+ const ui=readFileSync(new URL('../bubbles-ai.js',import.meta.url),'utf8');
+ const route=ui.slice(ui.indexOf('// Explicit local resonance program'),ui.indexOf('// A new turn begins without granting credits'));
+ assert.match(route,/routeProgram\('resonance\.calculate'\)/);
+ assert.match(route,/route\.lane!=='browser'/);
+ assert.match(route,/route\.status!=='route_only'/);
+ assert.doesNotMatch(route,/import\(route\.source\)/);
+});
