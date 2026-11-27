@@ -3,41 +3,216 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T10:01:25.823860Z",
+  "checked_at": "2026-11-27T10:31:11.912724Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta6 walkthrough",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T10:00:00Z",
+      "related_news_urls": [
+        "https://www.ign.com/wikis/gta-6/Chapter_2_Walkthrough_and_Guide",
+        "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
+        "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfzNz_UmShCmFPMJgA0oi1NGpm8GeiYqdHUxmIDbiusMtDtWmhxMN7PcGpgNM",
+      "image_credit": "IGN",
+      "news": [
+        {
+          "url": "https://www.ign.com/wikis/gta-6/Chapter_2_Walkthrough_and_Guide",
+          "title": "Chapter 2 Walkthrough and Guide",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfzNz_UmShCmFPMJgA0oi1NGpm8GeiYqdHUxmIDbiusMtDtWmhxMN7PcGpgNM"
+        },
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-2-length-missions-missables/",
+          "title": "How Long Is Chapter 2 in GTA 6? All Missables and Mission List",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTbfa4x4lE5BSjIx_nroZlYhkGCHr0Mr5ROv81qkxH4_h0VLzofYfb2n9w10Y8"
+        },
+        {
+          "url": "https://insider-gaming.com/gta-6-chapter-2-mission-list-in-order/",
+          "title": "GTA 6 Chapter 2 Mission List - Every Mission in GTA 6 Chapter 2 in Order",
+          "publisher": "Insider Gaming",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQkKkgDQJXS0dkXcfP1eTcTEqYXj_WSZC2NJiWt9kLRF_0qNPlEEx6Wqyp6BV8"
+        }
+      ]
+    },
+    {
+      "query": "winter weather advisory",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T10:00:00Z",
+      "related_news_urls": [
+        "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
+        "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
+        "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY",
+      "image_credit": "WTVC",
+      "news": [
+        {
+          "url": "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
+          "title": "Weather Alert: Winter Storm Warning for local Plateau counties",
+          "publisher": "WTVC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY"
+        },
+        {
+          "url": "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
+          "title": "November 26, 2026: Winter Weather Advisory for most of Middle TN, Winter Storm Warning for the Plateau.",
+          "publisher": "News Channel 5 Nashville",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E"
+        },
+        {
+          "url": "https://davidsoncountysource.com/11-26-26-moderate-rain-and-43-with-highs-of-46-and-lows-near-39-100-precip-chance-today-drizzle-tonight/",
+          "title": "11/26/26: Moderate Rain and 43, With Highs of 46 and Lows Near 39; 100% Precip Chance Today, Drizzle Tonight",
+          "publisher": "Davidson County Source",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcYteAIzGw4zJ5CEwclqlMo0m6gaRBb05qHSA_2GC-k4wzNcf2wZsP5zF4kUc"
+        }
+      ]
+    },
+    {
+      "query": "sun",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T10:00:00Z",
+      "related_news_urls": [
+        "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
+        "https://www.houstonchronicle.com/news/houston-weather/article/houston-black-friday-forecast-december-outlook-22544834.php",
+        "https://www.wtok.com/2026/11/27/dress-warmly-if-you-plan-be-out-early-black-friday-shopping/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSZg7pzWk9_HtMCvnSkU5CyZYflq1VToB4VYWOqeZc46eJ3DuQI5S2tMILGLE",
+      "image_credit": "WMBF",
+      "news": [
+        {
+          "url": "https://www.wmbfnews.com/2026/11/27/first-alert-cool-breezy-black-friday-plenty-sun-this-weekend/",
+          "title": "FIRST ALERT: Cool and breezy Black Friday, plenty of sun this weekend",
+          "publisher": "WMBF",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSZg7pzWk9_HtMCvnSkU5CyZYflq1VToB4VYWOqeZc46eJ3DuQI5S2tMILGLE"
+        },
+        {
+          "url": "https://www.houstonchronicle.com/news/houston-weather/article/houston-black-friday-forecast-december-outlook-22544834.php",
+          "title": "Houston warms up for Black Friday, but what does December have in store?",
+          "publisher": "Houston Chronicle",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHYMmAHVT3CzBpxvoqe1vqba-PrDsd_wfyEp_IuKa6BHLkLDx9dq5gGoaX96I"
+        },
+        {
+          "url": "https://www.wtok.com/2026/11/27/dress-warmly-if-you-plan-be-out-early-black-friday-shopping/",
+          "title": "Dress warmly if you plan to be out early Black Friday shopping",
+          "publisher": "WTOK",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW4E-KIXNsdQnZe7ZCXDVBIcexsLT7O6fHU_7ffLx19dwCDERUeqx1oIdwM8o"
+        }
+      ]
+    },
+    {
+      "query": "soccer",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T10:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/soccer/story/_/id/50610066/transfer-rumors-news-nico-paz-man-united-real-madrid-como",
+        "https://www.si.com/soccer/transfer-rumors-olise-real-madrid-man-utd-paz-move",
+        "https://www.nytimes.com/athletic/7814337/2026/11/27/nico-paz-manchester-united-premier-league-analysis/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNr02-4JMkkZ9vl-_9491G_OjtyiqGU5gT2QYf5NWjQFZlMC5wz7YP7_OP9s",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/soccer/story/_/id/50610066/transfer-rumors-news-nico-paz-man-united-real-madrid-como",
+          "title": "Transfer rumors, news:Transfer rumors, news: Nico Paz open to Man United; against Real Madrid return",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRTNr02-4JMkkZ9vl-_9491G_OjtyiqGU5gT2QYf5NWjQFZlMC5wz7YP7_OP9s"
+        },
+        {
+          "url": "https://www.si.com/soccer/transfer-rumors-olise-real-madrid-man-utd-paz-move",
+          "title": "Transfer Rumors: Olise Wants Real Madrid; Man Utd Plot Paz Move",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRF-qjaldSJZ-jR92hrSm6HnbPcl4W1nVVvB6_VyqAkJXjinnC4KJEN9Vmb7oU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7814337/2026/11/27/nico-paz-manchester-united-premier-league-analysis/",
+          "title": "Nico Paz is a rare talent. Man Utd and his other suitors would benefit from his arrival",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGqDhdykOsjpE8gBS1iksF4ZXwm2jiQaEb7vLe7_jUUEYFqDRGadgZ8UPwxgM"
+        }
+      ]
+    },
     {
       "query": "gma",
       "approx_searches": "100+",
       "published_at": "2026-11-27T09:40:00Z",
       "related_news_urls": [
-        "https://www.reuters.com/world/airasia-delays-staff-salary-payments-end-month-internal-email-shows-2026-11-27/",
-        "https://newsinfo.inquirer.net/2347824/labor-group-seeks-probe-into-airasias-retrenchment-of-90-pilots",
-        "https://www.pna.gov.ph/article/dole-creates-task-force-for-planned-airasia-strike"
+        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
+        "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
+        "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2TVpPSZuV5iiAfauAomY31m5qOkzhDtuWfeqF4cqzbibIZtJXH-XPfku7tmA",
-      "image_credit": "Reuters",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
+      "image_credit": "Good Morning America",
       "news": [
         {
-          "url": "https://www.reuters.com/world/airasia-delays-staff-salary-payments-end-month-internal-email-shows-2026-11-27/",
-          "title": "AirAsia delays staff salary payments to end of month, internal email shows",
-          "publisher": "Reuters",
+          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
+          "title": "Deals & Steals for Thanksgiving",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2TVpPSZuV5iiAfauAomY31m5qOkzhDtuWfeqF4cqzbibIZtJXH-XPfku7tmA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
         },
         {
-          "url": "https://newsinfo.inquirer.net/2347824/labor-group-seeks-probe-into-airasias-retrenchment-of-90-pilots",
-          "title": "Labor group seeks probe into AirAsia’s retrenchment of 90 pilots",
-          "publisher": "Inquirer.net",
+          "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
+          "title": "'GMA' Deals & Steals: Holiday gifts with free shipping",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUyEBngxnYyrAQP_VaUXy2RentHcWzHYrBf61IjxIiAmOJeNntjaaUxq0iL0g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
         },
         {
-          "url": "https://www.pna.gov.ph/article/dole-creates-task-force-for-planned-airasia-strike",
-          "title": "DOLE creates task force for planned AirAsia strike",
-          "publisher": "Philippine News Agency",
+          "url": "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/",
+          "title": "'GMA' Deals & Steals on gifts $20 and under",
+          "publisher": "ABC7 New York",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2Hm2ThbYOvjArX6IHPAyHhjP1DG5Xe1GmCn4LAZ9fNAqjZ3fike316vuvFQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_7PcZLhaxsvZt_2mEVq-Ibid8b_NFa58TwhF4UTlsYIa19CvhTA2o_xSafWI"
+        }
+      ]
+    },
+    {
+      "query": "google play",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T09:30:00Z",
+      "related_news_urls": [
+        "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+        "https://www.thelec.net/news/articleView.html?idxno=15908",
+        "https://digg.com/tech/0589lz7m"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZEkAz4wxfyNkNC8fYZdEJMdpjR8kqYYzzEXdHBqnUuJ8G_iuLjnlDfboxEzo",
+      "image_credit": "The Verge",
+      "news": [
+        {
+          "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu",
+          "title": "Android app developers will soon have to share their address publicly",
+          "publisher": "The Verge",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZEkAz4wxfyNkNC8fYZdEJMdpjR8kqYYzzEXdHBqnUuJ8G_iuLjnlDfboxEzo"
+        },
+        {
+          "url": "https://www.thelec.net/news/articleView.html?idxno=15908",
+          "title": "Google Faces Privacy Concerns Over Global Disclosure of Developers’ Home Addresses",
+          "publisher": "THE ELEC, Korea Electronics Industry Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW-tvoc6lAiV7mkot-igxV8-H3ns_bzqII9xknK60lc7LkslLSVAb5xLpDSbA"
+        },
+        {
+          "url": "https://digg.com/tech/0589lz7m",
+          "title": "Google will publish some Android developers’ addresses worldwide, The Verge reports",
+          "publisher": "Digg",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYGMt2Cneqj467DBiMN4zD1ieoNTlDRzEB-Xv5LS_QVlXe2eKDkXl1-D0Dm2Y"
         }
       ]
     },
@@ -47,8 +222,8 @@
       "published_at": "2026-11-27T09:10:00Z",
       "related_news_urls": [
         "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
-        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-thanksgiving-holiday-shortened-black-friday-trading",
-        "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/"
+        "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/",
+        "https://www.nj.com/news/2026/11/is-the-stock-market-open-on-black-friday-2026.html"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
       "image_credit": "Yahoo Finance",
@@ -61,24 +236,24 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
         },
         {
-          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-thanksgiving-holiday-shortened-black-friday-trading",
-          "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set to rally ahead of shortened Black Friday trading: live updates",
-          "publisher": "MarketWatch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWpLtxMpAOsv0qLkH0I5gMgfPPTQc-7isCGzxPEfgvB-kDUWjV02wL3LG_-bc"
-        },
-        {
           "url": "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/",
           "title": "Stock Market Trading Hours For Thanksgiving And Black Friday",
           "publisher": "Investor's Business Daily",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpe143F8JfRZZeOstU_9EJPIcugmFrPxUmPK02-s9V_KDENNsbP28eyAHQ3bA"
+        },
+        {
+          "url": "https://www.nj.com/news/2026/11/is-the-stock-market-open-on-black-friday-2026.html",
+          "title": "Is the stock market open on Black Friday 2026?",
+          "publisher": "NJ.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6Nr5efbIyytZWhnMotw1-8Q3Yzz26PuQB3EtMNHMzs3Zpvd6q2_D-J1BQXd8"
         }
       ]
     },
     {
       "query": "what time does old navy open on black friday",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-27T08:50:00Z",
       "related_news_urls": [
         "https://shopping.yahoo.com/deals/breaking-news/article/old-navys-black-friday-sale-has-nearly-everything-at-half-off-including-its-popular-wide-leg-jeans-212411652.html",
@@ -116,33 +291,33 @@
       "approx_searches": "500+",
       "published_at": "2026-11-27T08:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/news/articles/trump-says-putin-come-g20-003505934.html",
-        "https://www.rte.ie/news/2026/1127/1600845-trump-putin/",
-        "https://www.kyivpost.com/post/91344"
+        "https://www.bbc.com/news/articles/c820q9wgrpyyo",
+        "https://www.theguardian.com/world/live/2026/nov/27/zelenskyy-putin-trump-comments-russia-ukraine-latest-news-updates",
+        "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3RU7IVhNIpLC3pbsx4zgOgxWdI34FTEudzLQ6LNPDHkXGDi8o1rbn3KNWTA",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9KZAgM2abip1rQu1Y3aTuS6hp8R2RDrnypNQstQT5tgX0aQohKZPX18w2hXU",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.yahoo.com/news/articles/trump-says-putin-come-g20-003505934.html",
-          "title": "Trump says Putin can come to G20 if he wants",
-          "publisher": "Yahoo",
+          "url": "https://www.bbc.com/news/articles/c820q9wgrpyyo",
+          "title": "Zelensky tells BBC US too focused on Middle East and not pushing Russia hard enough",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3RU7IVhNIpLC3pbsx4zgOgxWdI34FTEudzLQ6LNPDHkXGDi8o1rbn3KNWTA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9KZAgM2abip1rQu1Y3aTuS6hp8R2RDrnypNQstQT5tgX0aQohKZPX18w2hXU"
         },
         {
-          "url": "https://www.rte.ie/news/2026/1127/1600845-trump-putin/",
-          "title": "Trump says Putin can attend Florida G20 meeting, Kremlin says 'no decision' made",
-          "publisher": "RTE.ie",
+          "url": "https://www.theguardian.com/world/live/2026/nov/27/zelenskyy-putin-trump-comments-russia-ukraine-latest-news-updates",
+          "title": "Trump calling Putin ‘friend’ like declaring friendship with Hitler during WW2, Zelenskyy says – Europe live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLTmxBTAzKpjg61aOGfAmlbkymVcJcPdIU7fBWq_sHGcHRrKESiPZdbHikKl8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnqRI2izBA44iR2dfEduF_BbDIADYUBUNhLLOZYG-xGriW6prsjcFkvfIXxFg"
         },
         {
-          "url": "https://www.kyivpost.com/post/91344",
-          "title": "Trump Says He Wants Putin at Miami G20 Summit Despite Growing Bipartisan Opposition in Congress",
-          "publisher": "Kyiv Post",
+          "url": "https://thehill.com/policy/international/6245089-zelensky-calls-for-us-peace-progress/",
+          "title": "Zelensky on Trump calling Putin ‘friend’: ‘Same as somebody saying about Hitler’ in WWII",
+          "publisher": "The Hill",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_Ue9DfEDuzEq1AC6JyiWrIoFkkcQqiJyu2GCyaKUC47L0xcuVciNZIGjqz5E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrxFlDTwUrhyoiCmrQHYJ-Fw0kNnHPjaOqPZoyVlUg38J6nDLGx7rbc4PjWc8"
         }
       ]
     },
@@ -162,155 +337,6 @@
           "publisher": "Raptors Rapture",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmepXgtzdPsLtDp2RPE_Ebxg22QnpY0gHZtmvbxub08xWwqxmRbV-QsSVyZdU"
-        }
-      ]
-    },
-    {
-      "query": "mirror",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T08:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/cwp809d7yp4go",
-        "https://www.nytimes.com/athletic/7811952/2026/11/25/manchester-city-case-independent-football-regulator/",
-        "https://www.reuters.com/sports/soccer/english-regulator-wont-shy-away-action-against-man-city-says-kogan-2026-11-25/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyz9woQINg_xJLTPjkD0Q-hoh9AQTLO-AfrLJLLaQl9zI_eeQWLfUtN3m-VBQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/articles/cwp809d7yp4go",
-          "title": "Manchester City charges: Owners should be forced to sell, say Premier League rivals",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyz9woQINg_xJLTPjkD0Q-hoh9AQTLO-AfrLJLLaQl9zI_eeQWLfUtN3m-VBQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7811952/2026/11/25/manchester-city-case-independent-football-regulator/",
-          "title": "Regulator chair insists body has the stomach to act against Manchester City owners",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRCezMq8SNudGrAvMr6_DoMFfUeM42dE-OGyGQQT-2k6U92K32wX07PRvR3AkQ"
-        },
-        {
-          "url": "https://www.reuters.com/sports/soccer/english-regulator-wont-shy-away-action-against-man-city-says-kogan-2026-11-25/",
-          "title": "English regulator won't shy away from action against Man City, says Kogan",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmvQs9splk8D0DgtxT0jvVyY-ufwkrVncMCcx_z6Icya82pRe9jsYSUzN_Jcc"
-        }
-      ]
-    },
-    {
-      "query": "aus vs eng",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T07:50:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "australia vs england",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T07:50:00Z",
-      "related_news_urls": [
-        "https://www.bbc.co.uk/sport/cricket/live/cwylrwj2zd9t",
-        "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
-        "https://www.bbc.com/sport/cricket/articles/cw1mdzn9dzpzo"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr_rWowFa7Y5KBAinLt77Zy1vYOior73DE-UV-c7jwFmb6iHy4ox4KmTuSqWI",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.co.uk/sport/cricket/live/cwylrwj2zd9t",
-          "title": "Australia vs England LIVE: Third T20, Brisbane - cricket score, commentary & updates",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr_rWowFa7Y5KBAinLt77Zy1vYOior73DE-UV-c7jwFmb6iHy4ox4KmTuSqWI"
-        },
-        {
-          "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
-          "title": "England return to the Gabbatoir with onus on Australia to bounce back",
-          "publisher": "Cricinfo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGs1BnioeTZo9muNJuNSfG3dTCfwNce76q3WtIEH6KN45tDUZTPcJ_8AEqZlY"
-        },
-        {
-          "url": "https://www.bbc.com/sport/cricket/articles/cw1mdzn9dzpzo",
-          "title": "The England opening batting pair made in Wales",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfkGMBk6X3f_ogHJCjio3C1OLMAaaEzNln8ePPa5pH2GXJ1aneH-XdVdzjzdc"
-        }
-      ]
-    },
-    {
-      "query": "gta6 pc port",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T07:30:00Z",
-      "related_news_urls": [
-        "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
-        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-        "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0",
-      "image_credit": "TechPowerUp",
-      "news": [
-        {
-          "url": "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
-          "title": "Rockstar Squashes \"Leonida,\" the Biggest GTA 6 PC Recompilation Effort",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0"
-        },
-        {
-          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
-        },
-        {
-          "url": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown",
-          "title": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
-          "publisher": "Decrypt",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IlqXMZKDIdYzZpf-ER-McOBbNqkfSCPbea3voeN2YqplSZ5rDALg5jqGGfI"
-        }
-      ]
-    },
-    {
-      "query": "white",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T07:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/politics/look-trumps-spend-thanksgiving-holiday-through-years",
-        "https://www.yahoo.com/news/videos/trump-tells-deployed-marine-thankful-235510817.html",
-        "https://www.palmbeachpost.com/story/news/trump/2026/11/26/trump-hosts-lois-frankel-county-officials-at-mar-a-lago-on-thanksgiving/92974284007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkjEEs3C694xqple7_oMAYotOjAQBhmyojauQCKEU7mn2agN_Ugp4iBRnAR7o",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/politics/look-trumps-spend-thanksgiving-holiday-through-years",
-          "title": "A look at how the Trumps spend their Thanksgiving holiday through the years",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkjEEs3C694xqple7_oMAYotOjAQBhmyojauQCKEU7mn2agN_Ugp4iBRnAR7o"
-        },
-        {
-          "url": "https://www.yahoo.com/news/videos/trump-tells-deployed-marine-thankful-235510817.html",
-          "title": "Trump Tells Deployed Marine He’s Thankful for ‘The Highest Stock Markets’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSH27nIZEb70gMgHOn3WpFPf_LGKPopEnegV3rZxJEenaoa5iW86dUgU-Zd8Wo"
-        },
-        {
-          "url": "https://www.palmbeachpost.com/story/news/trump/2026/11/26/trump-hosts-lois-frankel-county-officials-at-mar-a-lago-on-thanksgiving/92974284007/",
-          "title": "Trump hosts Frankel, county officials at Mar-a-Lago on Thanksgiving",
-          "publisher": "The Palm Beach Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhf39WBjgh81WfiFuV7W0VH3c63AU50ukVdc3yYtojr_MLgrkxqoyDDVdU2vg"
         }
       ]
     }
