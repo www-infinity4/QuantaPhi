@@ -3,17 +3,332 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T17:01:24.232853Z",
+  "checked_at": "2026-11-27T17:31:12.268482Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "maple leafs vs bruins",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T17:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nhl/articles/bruins-vs-maple-leafs-score-170001928.html",
+        "https://www.nhl.com/mapleleafs/news/leafs-bruins-nov-27-2026",
+        "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCU473jVN8ntS2Mt0_-r_onvgOEk8z9g5vJQSjEvGJfDEQaQxwD6ASDdqBDa8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/bruins-vs-maple-leafs-score-170001928.html",
+          "title": "Bruins vs. Maple Leafs Score, Live Updates, Highlights From NHL Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRCU473jVN8ntS2Mt0_-r_onvgOEk8z9g5vJQSjEvGJfDEQaQxwD6ASDdqBDa8"
+        },
+        {
+          "url": "https://www.nhl.com/mapleleafs/news/leafs-bruins-nov-27-2026",
+          "title": "Leafs @ Bruins | Nov. 27, 2026",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQOKgGqm2-umGWRe2iIkYImgqTkyU1PHHTOvEbXTSANvfJd0hLTuW7KlYrcvg"
+        },
+        {
+          "url": "https://www.stanleycupofchowder.com/gameday-open-threads/59833/public-skate-bruins-vs-leafs",
+          "title": "Public Skate: Bruins vs. Leafs",
+          "publisher": "Stanley Cup of Chowder",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSykrEI9Pd8nogBqjJW2gkGgwAelm_ob75Gbp2kfM4iLL0-1Ux6c-dNuBaFTwA"
+        }
+      ]
+    },
+    {
+      "query": "mammoth vs predators",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/utah/news/utah-starts-back-to-back-in-nashville-game-preview-11-27-26",
+        "https://sports.yahoo.com/nhl/articles/nashville-predators-vs-utah-mammoth-110117845.html",
+        "https://www.si.com/nhl/predators/onsi/news/utah-mammoth-nashville-predators-game-central-how-watch-injury-updates"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1EEs7DCQL2eWWRAL2IcdvC87twY-zDvh61wa_M3NvURujnw4DAoaZtUayXD0",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/utah/news/utah-starts-back-to-back-in-nashville-game-preview-11-27-26",
+          "title": "Utah Starts Back-to-Back in Nashville",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1EEs7DCQL2eWWRAL2IcdvC87twY-zDvh61wa_M3NvURujnw4DAoaZtUayXD0"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/nashville-predators-vs-utah-mammoth-110117845.html",
+          "title": "Nashville Predators vs Utah Mammoth, live updates, stats, how to watch",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQKSCrXGGYMZuRLc5J-Rn8wQ8sytxjb4Ehk1kap6z8AV62wJGvK5LDkdl3-hKk"
+        },
+        {
+          "url": "https://www.si.com/nhl/predators/onsi/news/utah-mammoth-nashville-predators-game-central-how-watch-injury-updates",
+          "title": "Utah Mammoth at Nashville Predators: Game Central, How To Watch, Injury Updates",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqHTicHZoWU52LNvgzNSDmBKiGs3fkpRVg7I9vxXsjypmDveilDuyU-S9YaII"
+        }
+      ]
+    },
+    {
+      "query": "trinidad chambliss",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/ole-miss-qb-trinidad-chambliss-140105743.html",
+        "https://www.krem.com/video/sports/locked-on/lo-southeast/ole-miss-rebels-show/trinidad-chamblisss-last-home-game-has-to-end-with-the-golden-egg/535-eb65bb73-e319-4af4-a07c-45b4d3ba7790",
+        "https://nflmocks.com/todd-mcshay-trinidad-chambliss-take-raises-big-2027-nfl-draft-question-01m84vj46fdz"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb-Tuo0tdEMbl5lCRf81QvXAP6QnRc_w3UsRuu1FCfE5iTGmrq0X8F42hsLEE",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/ole-miss-qb-trinidad-chambliss-140105743.html",
+          "title": "How Ole Miss QB Trinidad Chambliss reacted when jersey was stolen before Egg Bowl",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQb-Tuo0tdEMbl5lCRf81QvXAP6QnRc_w3UsRuu1FCfE5iTGmrq0X8F42hsLEE"
+        },
+        {
+          "url": "https://www.krem.com/video/sports/locked-on/lo-southeast/ole-miss-rebels-show/trinidad-chamblisss-last-home-game-has-to-end-with-the-golden-egg/535-eb65bb73-e319-4af4-a07c-45b4d3ba7790",
+          "title": "Trinidad Chambliss's Last Home Game Has To End With The Golden Egg",
+          "publisher": "KREM",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTV2e_y3Vuc762XDVO49zJvDK1u_w03rk1NmlH6-bDXkcZy36c_PubOlwoues4"
+        },
+        {
+          "url": "https://nflmocks.com/todd-mcshay-trinidad-chambliss-take-raises-big-2027-nfl-draft-question-01m84vj46fdz",
+          "title": "Todd McShay's Trinidad Chambliss take raises a big 2027 NFL Draft question",
+          "publisher": "NFL Mocks",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRGRxFDSBGP8XoF1mOmOvehy7f_C_7bf3HcdU3xZD5x-Ve-3HfK2I8XTRjxZJQ"
+        }
+      ]
+    },
+    {
+      "query": "brian kelly",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T17:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7814726/2026/11/27/lsu-sec-membership-independence/",
+        "https://frontofficesports.com/article/sec-coordinated-media-campaign-against-lsu-emails-show/",
+        "https://www.cbssports.com/college-basketball/news/sec-vs-lsu-drama-nate-oats-jamie-dixon-eligibility-cases-will-wade-rj-luis/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPowDUx5OuyR1LSrOPwrKjQxPPcm1eiYJ8rrZCnrsAIiNdmCRzWoa3IhM5BRM",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7814726/2026/11/27/lsu-sec-membership-independence/",
+          "title": "Could LSU survive as an independent? Experts are skeptical",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPowDUx5OuyR1LSrOPwrKjQxPPcm1eiYJ8rrZCnrsAIiNdmCRzWoa3IhM5BRM"
+        },
+        {
+          "url": "https://frontofficesports.com/article/sec-coordinated-media-campaign-against-lsu-emails-show/",
+          "title": "SEC Coordinated Media Campaign Against LSU, Emails Show",
+          "publisher": "Front Office Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTevpIdBhMG7WZ1Inr1ia3I131SJIqQ0VlLm5h49MOfCO3VjqIKVv76oZIgI4E"
+        },
+        {
+          "url": "https://www.cbssports.com/college-basketball/news/sec-vs-lsu-drama-nate-oats-jamie-dixon-eligibility-cases-will-wade-rj-luis/",
+          "title": "As college sports world waits on SEC vs. LSU drama, Nate Oats and Jamie Dixon sound off on eligibility cases",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNkoOPt7cae5ONMo6pg_kM5HRNsswpwTfbBDilZZjyTLMiG31kL_HJ-8KBZCc"
+        }
+      ]
+    },
+    {
+      "query": "flames vs devils",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T17:10:00Z",
+      "related_news_urls": [
+        "https://www.nhl.com/devils/news/preview-2026020401",
+        "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
+        "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE",
+      "image_credit": "NHL.com",
+      "news": [
+        {
+          "url": "https://www.nhl.com/devils/news/preview-2026020401",
+          "title": "Devils Host Flames, Nemec in Matinee | PREVIEW",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStWQZUyr9lW9dZV1gw8eCEd9d2qJ26PK4IBBMlF_PHfvplvTr2YuOKM0N8CVE"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/2026-27-gamethread-26-jersey-160000372.html",
+          "title": "2026-27 Gamethread #26: New Jersey Devils vs. Calgary Flames",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNT8byS-tOsoRbz-Yl4pTatrZ2_PEne0Wvhn4UmWkywN_4s53xK17VD902wM8"
+        },
+        {
+          "url": "https://www.allaboutthejersey.com/devils-game-previews/75700/game-preview-26-new-jersey-devils-vs-calgary-flames",
+          "title": "Game Preview #26: New Jersey Devils vs. Calgary Flames",
+          "publisher": "All About The Jersey",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkwrdi3ABvBcVdvFVjGNI95kHjb1wKNkxb5EZB_AA3DobU2fN5-JRPxjCYG9I"
+        }
+      ]
+    },
+    {
+      "query": "college football",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-27T17:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+        "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-week-13-bold-predictions-cfp-rivalry-week-upsets/92928423007/",
+        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/2026/11/27/college-football-week-13-bold-predictions-cfp-rivalry-week-upsets/92928423007/",
+          "title": "College football bold predictions: Rivalry weekend could wreck some playoff dreams",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwtYuJ3jwrLPOGT1bLfPWDZp-PhocKZAQLix3WzvULkKvuF1LeA0vi4sDAjMk"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
+          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
+        }
+      ]
+    },
+    {
+      "query": "ariana grande",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T17:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
+        "https://www.instyle.com/meet-the-parents-franchise-cast-then-and-now-12249517",
+        "https://www.cbc.ca/news/entertainment/focker-in-law-review-9.7438169"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/focker-in-law-review.html",
+          "title": "‘Focker In-Law’ Review: Ariana Grande Steals the Show",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSsszstR530I47kgHXZLfXbEpU0KsVTAvASN8xQxqsEfaDyRBKZjvAECZt7Uo4"
+        },
+        {
+          "url": "https://www.instyle.com/meet-the-parents-franchise-cast-then-and-now-12249517",
+          "title": "The ‘Meet the Parents’ Cast, Then and Now (and Who Didn’t Return for ‘Focker-in-Law’)",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfCiZ_etR6WpA3i612aPDdYnadE752WvmKa67jZsr3BGpz_9leLkaj-u28OfA"
+        },
+        {
+          "url": "https://www.cbc.ca/news/entertainment/focker-in-law-review-9.7438169",
+          "title": "Focker-In-Law isn't terrible. It's just a sitcom",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvAoSbPDnTRBWsHOUh_kyMx8UNtAYNgZ1hc5WSCOxa4u9k-G6pdqfY8frWQa8"
+        }
+      ]
+    },
+    {
+      "query": "deb fischer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T17:00:00Z",
+      "related_news_urls": [
+        "https://www.klkntv.com/loving-husband-devoted-father-sen-deb-fischer-announces-husbands-passing/",
+        "https://thehill.com/homenews/senate/6239912-senator-deb-fischer-husband-dies/",
+        "https://journalstar.com/news/state-regional/government-politics/article_f0568ec9-e4b9-40c2-b181-7cfe1e6bacc1.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQELWQ25YXRzM_hKmUcj9vxyMEBMnH4Mnv64go9CiWRAcloa1INARtK1XwMLGM",
+      "image_credit": "KLKN-TV",
+      "news": [
+        {
+          "url": "https://www.klkntv.com/loving-husband-devoted-father-sen-deb-fischer-announces-husbands-passing/",
+          "title": "“Loving husband, devoted father”; Sen. Deb Fischer announces husband’s passing",
+          "publisher": "KLKN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQELWQ25YXRzM_hKmUcj9vxyMEBMnH4Mnv64go9CiWRAcloa1INARtK1XwMLGM"
+        },
+        {
+          "url": "https://thehill.com/homenews/senate/6239912-senator-deb-fischer-husband-dies/",
+          "title": "Nebraska senator announces husband’s death: ‘Our family is heartbroken’",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJg6tUTODCjxex0J8AgVRIA898FV3_w1CYkSIA2JW3PpgsrKUGNEu2xkTnoE"
+        },
+        {
+          "url": "https://journalstar.com/news/state-regional/government-politics/article_f0568ec9-e4b9-40c2-b181-7cfe1e6bacc1.html",
+          "title": "Sen. Deb Fischer's office says her husband died by suicide",
+          "publisher": "Lincoln Journal Star",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX0f6qJ-_y6uZOcIhMfr6QhOtAUkIS_aRsy19NJwYQf20_Lq9D2VPwqCnEX5c"
+        }
+      ]
+    },
+    {
+      "query": "black friday food deals",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T16:40:00Z",
+      "related_news_urls": [
+        "https://mashable.com/life/black-friday-2026-free-food-deals",
+        "https://wtop.com/business-money/2026/11/friday-freebies-where-to-find-free-and-cheap-eats-through-cyber-monday/",
+        "https://www.thekitchn.com/best-black-friday-cyber-monday-deals-chefs-23856094"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHGXV_3HZHj3sHhPQKGVBzSbH0noY-jc-sLxyzNVvrF5XNxASIotmWeJXe1IM",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/life/black-friday-2026-free-food-deals",
+          "title": "Black Friday 2026 deals: Score free food from Burger King, Wendy's, 7-Eleven, Krispy Kreme, and more",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHGXV_3HZHj3sHhPQKGVBzSbH0noY-jc-sLxyzNVvrF5XNxASIotmWeJXe1IM"
+        },
+        {
+          "url": "https://wtop.com/business-money/2026/11/friday-freebies-where-to-find-free-and-cheap-eats-through-cyber-monday/",
+          "title": "Friday Freebies: Where to find free and cheap eats through Cyber Monday",
+          "publisher": "WTOP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJiAKYx9rWYzVBenWSo16EU_v8b2XI6PiDrTpWxfDavLSUduoOGwb9Rzd7ESM"
+        },
+        {
+          "url": "https://www.thekitchn.com/best-black-friday-cyber-monday-deals-chefs-23856094",
+          "title": "Chefs Agree: These Are the 9 Best Black Friday Food Deals You Can Shop",
+          "publisher": "The Kitchn",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRYCkWiYkmZwxy9bzaLQrI08Fu7e0Kf-ho1PgeIwwlz7I4Q44FGxYa_CZmKH8"
+        }
+      ]
+    },
     {
       "query": "thriller television series",
       "approx_searches": "500+",
       "published_at": "2026-11-27T16:30:00Z",
       "related_news_urls": [
         "https://www.imdb.com/news/ni66119665/",
-        "https://screenrant.com/i-will-find-you-netflix-thriller-series-best-cast-binge/",
-        "https://www.geo.tv/latest/692765-netflixs-this-thriller-series-leaves-one-mystery-is-he-still-alive"
+        "https://demokratis.co.id/en/netflix-i-will-find-you-thriller",
+        "https://screenrant.com/i-will-find-you-netflix-thriller-series-best-cast-binge/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC80hkUQ6vFDL5OsTppV7nHJbNYayOwx1iI97jq5FJQBNK0GbzBjAcohe9BsY",
       "image_credit": "IMDb",
@@ -26,333 +341,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRC80hkUQ6vFDL5OsTppV7nHJbNYayOwx1iI97jq5FJQBNK0GbzBjAcohe9BsY"
         },
         {
+          "url": "https://demokratis.co.id/en/netflix-i-will-find-you-thriller",
+          "title": "Netflix Releases Eight Episode Thriller I Will Find You",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJqLjgea6R4AtsL-aEXdGE8RDPEUMjY2aQ-7aC_63PBJ0rLtLqlYwy5AcaBM"
+        },
+        {
           "url": "https://screenrant.com/i-will-find-you-netflix-thriller-series-best-cast-binge/",
           "title": "Netflix's 8-Part Thriller Series Has One Of Its Best Casts & It's The Perfect Binge",
           "publisher": "ScreenRant",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQgHhCW6EwlKt7Q9yCn9IE8vetLOn60Ps__wQN33MMv5pNCCiBWyz_yohXxcU"
-        },
-        {
-          "url": "https://www.geo.tv/latest/692765-netflixs-this-thriller-series-leaves-one-mystery-is-he-still-alive",
-          "title": "Netflix's THIS thriller series leaves one mystery: Is he still alive?",
-          "publisher": "Geo News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFOcIng8hHm5Z86OXdq-rCuJZdJx0DH2LPxCQFfdiHlmepyMC4cWd3KkQD5P0"
-        }
-      ]
-    },
-    {
-      "query": "college football schedule",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T16:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7816800/2026/11/27/college-football-schedule-black-friday-until-saturday/",
-        "https://defector.com/its-familiar-at-the-top",
-        "https://sports.yahoo.com/general/videos/team-top-12-most-likely-142532760.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQWrizfQYEF1VTxg9BMP-l24sEkUl0NVTBDyc5hjLm3aTZvQaDROG22nxyQc",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7816800/2026/11/27/college-football-schedule-black-friday-until-saturday/",
-          "title": "No such thing as a bad college football Rivalry Weekend schedule, plus LSU stuff",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJQWrizfQYEF1VTxg9BMP-l24sEkUl0NVTBDyc5hjLm3aTZvQaDROG22nxyQc"
-        },
-        {
-          "url": "https://defector.com/its-familiar-at-the-top",
-          "title": "It’s Familiar At The Top",
-          "publisher": "Defector",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT22pnBW8PMbmbsKktsF1eygwZxouIpFyCCpfmW5uY0wXSbLn58325AggqatWM"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/videos/team-top-12-most-likely-142532760.html",
-          "title": "Which team in the top-12 is most likely to MISS the playoffs?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_pWZT3gDynmFNtlAdu8bnymTrA0fo5g5gSRhDK_p2VRJPhKnIG8sfluAHyqA"
-        }
-      ]
-    },
-    {
-      "query": "the great british bake off",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T16:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/news/articles/cm894exd27j2o",
-        "https://www.theguardian.com/tv-and-radio/2026/nov/24/how-nigella-lawson-saved-bake-off",
-        "https://www.yahoo.com/entertainment/tv/articles/great-british-baking-show-crowns-125903816.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtOIftOHu7zobx97428sZEm4pqGt1PvXjoLAw12cmd7YEiUDMncZxWjT9eE",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/news/articles/cm894exd27j2o",
-          "title": "Great British Bake Off winner crowned after high-stakes final",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4gtOIftOHu7zobx97428sZEm4pqGt1PvXjoLAw12cmd7YEiUDMncZxWjT9eE"
-        },
-        {
-          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/24/how-nigella-lawson-saved-bake-off",
-          "title": "‘The icing on the cake’: how Nigella saved Bake Off",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1lF0LYrh_o8Bsyc20arYYkiWWRRucFGQmRgyjBxlCXpnvL0t2pRzRKI3Xoz4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/great-british-baking-show-crowns-125903816.html",
-          "title": "‘The Great British Baking Show’ Crowns New Champion in Emotional Finale",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNlU-lPeCmARb-NnPEXMQK0pB_1emaZcyhtR3zaYIg5_guNhwMKqlXbh-pn6E"
-        }
-      ]
-    },
-    {
-      "query": "u17 world cup",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T16:20:00Z",
-      "related_news_urls": [
-        "https://www.jamaicaobserver.com/2026/11/26/u-17-boyz-play-pride-ivory-coast/",
-        "https://www.the-afc.com/en/national/fifa_u-17_world_cup.html/news/uzbekistan-back-on-track-historic-point-for-vietnam",
-        "https://nationwideradiojm.com/reggae-boyz-loss-again-at-u17-world-cup/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1yn1iDFu3Y_2FdggPRI8sLr48U7hVVeVTyH56LsiE8OjappUjKVHLxz84WE",
-      "image_credit": "Jamaica Observer",
-      "news": [
-        {
-          "url": "https://www.jamaicaobserver.com/2026/11/26/u-17-boyz-play-pride-ivory-coast/",
-          "title": "U-17 Boyz play for pride against Ivory Coast",
-          "publisher": "Jamaica Observer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1yn1iDFu3Y_2FdggPRI8sLr48U7hVVeVTyH56LsiE8OjappUjKVHLxz84WE"
-        },
-        {
-          "url": "https://www.the-afc.com/en/national/fifa_u-17_world_cup.html/news/uzbekistan-back-on-track-historic-point-for-vietnam",
-          "title": "FIFA U-17 World Cup - Uzbekistan back on track; historic point for Vietnam",
-          "publisher": "The AFC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRM-NLpv2eSDjAHCiVLednTJjE7Z8Bb2Fws9YiL5SaWBMrrgYUcu-36Kr31Jgk"
-        },
-        {
-          "url": "https://nationwideradiojm.com/reggae-boyz-loss-again-at-u17-world-cup/",
-          "title": "Reggae Boyz loss again at U17 World Cup",
-          "publisher": "nationwideradiojm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoym3r4_W6pyJLUrrS0U5DZADIGolkRkTkzsz0p9QS-xxAp_z4CUyu0oJLyRE"
-        }
-      ]
-    },
-    {
-      "query": "toledo vs ohio",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T16:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/recap/_/gameId/401866471",
-        "https://www.toledoblade.com/sports/ut/2026/11/22/briggs-toledo-staring-down-another-wild-convoluted-mac-football-tiebreaker/stories/20261122117",
-        "https://www.actionnetwork.com/news/betmgm-bonus-code-actionget-get-150-in-bonus-bets-for-tuesday-maction-cfb-week-13"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYgfp8bRkBu0ruROysiIGJcCY5S23aUO7t0EoPXc5cyi5jgpGZDfYoeoeTxM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/recap/_/gameId/401866471",
-          "title": "Miami (OH) 28-24 Western Michigan (Nov 24, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKYgfp8bRkBu0ruROysiIGJcCY5S23aUO7t0EoPXc5cyi5jgpGZDfYoeoeTxM"
-        },
-        {
-          "url": "https://www.toledoblade.com/sports/ut/2026/11/22/briggs-toledo-staring-down-another-wild-convoluted-mac-football-tiebreaker/stories/20261122117",
-          "title": "Briggs: Toledo is staring down another wild — and puzzling — MAC football tiebreaker. Can the Rockets make it through?",
-          "publisher": "Toledo Blade",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEGxgbUVNg4CFOgM2Fy_IWyR2tRwjinKwNqHaM_ySn2WmrZwwONRRK24NTOWk"
-        },
-        {
-          "url": "https://www.actionnetwork.com/news/betmgm-bonus-code-actionget-get-150-in-bonus-bets-for-tuesday-maction-cfb-week-13",
-          "title": "BetMGM Bonus Code ACTIONGET: Get $150 in Bonus Bets for Tuesday MACtion, CFB Week 13",
-          "publisher": "Action Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQK2lXldgeAZnh4QWoM0zXYO73c3PwzRfEE3W3ehnM8_UwcissFZqGlVh8Nu4s"
-        }
-      ]
-    },
-    {
-      "query": "kyle palmieri",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T16:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nhl/story/_/id/50612273/islanders-kyle-palmieri-acl-meniscus-6-8-months",
-        "https://www.nhl.com/news/islanders-kyle-palmieri-expected-out-for-season-with-right-knee-injury",
-        "https://www.sportsnet.ca/nhl/article/islanders-place-kyle-palmieri-on-injured-reserve-recall-calum-ritchie/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOG4EGYkxef0unuG_kMNoYXEkQxStAPoMTa1Gr3pJo0kTIRL_yAkfkEU8t89o",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nhl/story/_/id/50612273/islanders-kyle-palmieri-acl-meniscus-6-8-months",
-          "title": "Islanders forward Kyle Palmieri (ACL, meniscus) out 6-8 months",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOG4EGYkxef0unuG_kMNoYXEkQxStAPoMTa1Gr3pJo0kTIRL_yAkfkEU8t89o"
-        },
-        {
-          "url": "https://www.nhl.com/news/islanders-kyle-palmieri-expected-out-for-season-with-right-knee-injury",
-          "title": "Palmieri expected out rest of season for Islanders with right knee injury",
-          "publisher": "NHL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSbCiTBfJnE9SMg0_aUpcdhXCK2nVqtGYX8MrzA2M6jvldDpvubEu_Q9GguXg"
-        },
-        {
-          "url": "https://www.sportsnet.ca/nhl/article/islanders-place-kyle-palmieri-on-injured-reserve-recall-calum-ritchie/",
-          "title": "Islanders place Kyle Palmieri on injured reserve, recall Calum Ritchie",
-          "publisher": "Sportsnet.ca",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvxIPnaMg_g9g0WGkBqKIKvBrVsyTFsTeJqBOpgzuG_uzzEVXwRJ359eMmhP4"
-        }
-      ]
-    },
-    {
-      "query": "ms state vs ole miss",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-27T16:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/watch-mississippi-state-vs-ole-160000150.html",
-        "https://www.cbssports.com/betting/news/ole-miss-mississippi-state-prediction-odds-timer-2026-egg-bowl-college-football-picks-bets/",
-        "https://www.al.com/betting/2026/11/polymarket-promo-code-al25bonus-unlocks-25-to-trade-mississippi-state-vs-ole-miss.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlntorZU7QWkUfp-jt-xoa26GXQwkew-26uAufBDhUhsIzlZsEcWz2P5koiIo",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/watch-mississippi-state-vs-ole-160000150.html",
-          "title": "How to watch Mississippi State vs Ole Miss: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlntorZU7QWkUfp-jt-xoa26GXQwkew-26uAufBDhUhsIzlZsEcWz2P5koiIo"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/ole-miss-mississippi-state-prediction-odds-timer-2026-egg-bowl-college-football-picks-bets/",
-          "title": "Ole Miss vs. Mississippi State prediction, odds: 2026 Egg Bowl picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgePPbOufgjdMa43TcWTzUobtNoUQ8rpBUjsKRhVTZ_6xrF28F9HDjXD-XLVk"
-        },
-        {
-          "url": "https://www.al.com/betting/2026/11/polymarket-promo-code-al25bonus-unlocks-25-to-trade-mississippi-state-vs-ole-miss.html",
-          "title": "Polymarket promo code AL25BONUS unlocks $25 to trade Mississippi State vs. Ole Miss",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqiEGTBb_UuGGMSi3IN8_Z3Qy_XatmItNXmSdxL7lwZBsxc2waHhVCct62InY"
-        }
-      ]
-    },
-    {
-      "query": "tulsa vs utsa",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T16:00:00Z",
-      "related_news_urls": [
-        "https://goutsa.com/news/2026/11/25/utsa-to-host-tulsa-on-friday-for-senior-day",
-        "https://kayosports.com.au/en-AU/competitor/Competitor:d0yl1lqtwip7pcxavqc9a4xz5/1ra05s8n1b0fk1xw1squidl0uj",
-        "https://www.espn.com/watch/player/_/eventCalendarId/401862840"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl0WhgMps9i8Yi46x3ZA4ywPdYMUkLG97sWDMAXaLON37QHdk41Snc19szH4k",
-      "image_credit": "UTSA Athletics",
-      "news": [
-        {
-          "url": "https://goutsa.com/news/2026/11/25/utsa-to-host-tulsa-on-friday-for-senior-day",
-          "title": "UTSA to host Tulsa on Friday for Senior Day",
-          "publisher": "UTSA Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSl0WhgMps9i8Yi46x3ZA4ywPdYMUkLG97sWDMAXaLON37QHdk41Snc19szH4k"
-        },
-        {
-          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:d0yl1lqtwip7pcxavqc9a4xz5/1ra05s8n1b0fk1xw1squidl0uj",
-          "title": "Watch Tulsa Live",
-          "publisher": "Kayo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9MOfFT36QZD9Oriow5OVomtHpNNsC5w9V4UWhlNic0_kJ3AWppiJ51sJ-tTw"
-        },
-        {
-          "url": "https://www.espn.com/watch/player/_/eventCalendarId/401862840",
-          "title": "Tulsa vs. UTSA 11/27/26 - Stream the Game Live - Watch ESPN",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnaTuZElkMYkdypNGCQ3C7n-Y1deovBppKWIRwDf7vglLI2SbWLAYr4I_ajF0"
-        }
-      ]
-    },
-    {
-      "query": "virginia vs xavier",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T16:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mens-college-basketball/articles/no-2-virginia-vs-xavier-113000625.html",
-        "https://www.cincinnati.com/story/sports/college/xavier/2026/11/26/xavier-musketeers-virginia-cavaliers-atlantis-basketball-predictions/92960481007/",
-        "https://www.foxsports.com/articles/cbk/xavier-musketeers-and-the-no-2-virginia-cavaliers-square-off-in-nassau-bahamas"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0INWOZAGQrExttiNK32-ERcH3CVdrfOcTW3RDCkxQuLD9uS3CupIUcZBSBd4",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/no-2-virginia-vs-xavier-113000625.html",
-          "title": "No. 2 Virginia vs Xavier: Game Preview and Final Score Prediction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0INWOZAGQrExttiNK32-ERcH3CVdrfOcTW3RDCkxQuLD9uS3CupIUcZBSBd4"
-        },
-        {
-          "url": "https://www.cincinnati.com/story/sports/college/xavier/2026/11/26/xavier-musketeers-virginia-cavaliers-atlantis-basketball-predictions/92960481007/",
-          "title": "Bold predictions for Xavier vs. No. 2 Virginia in Battle 4 Atlantis",
-          "publisher": "Cincinnati Enquirer",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8rZelj1UUB_ywJj73mEMdZ5rEA2BtE8ah-9IoMWpvSuL4dS_OnyEUvwD-3Gc"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cbk/xavier-musketeers-and-the-no-2-virginia-cavaliers-square-off-in-nassau-bahamas",
-          "title": "Xavier Musketeers and the No. 2 Virginia Cavaliers square off in Nassau, Bahamas",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
-        }
-      ]
-    },
-    {
-      "query": "tear gas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T16:00:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/global-development/2026/nov/27/thousands-of-girls-and-women-report-bleeding-and-miscarriages-after-french-police-use-of-teargas",
-        "https://www.bdtonline.com/sports/pro_sports/france-tear-gas-what-to-know/image_ad783734-80e9-58c8-ac90-201817dbb70c.html",
-        "https://newscord.org/article/french-police-fired-22000-tear-gas-grenades-women-report-heavy-bleeding-and-misc--Story_20261127_c0e1625d"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZMEboufp-F8c5YOmAw61SMY8qAA3VQRH7X8mJB6yF26at4aoBQLQlCPURZQ",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/global-development/2026/nov/27/thousands-of-girls-and-women-report-bleeding-and-miscarriages-after-french-police-use-of-teargas",
-          "title": "Thousands of girls and women report bleeding and miscarriages after French police use of teargas",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZMEboufp-F8c5YOmAw61SMY8qAA3VQRH7X8mJB6yF26at4aoBQLQlCPURZQ"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/pro_sports/france-tear-gas-what-to-know/image_ad783734-80e9-58c8-ac90-201817dbb70c.html",
-          "title": "France Tear Gas What to Know",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh7AyLbzHKYLSz5FePqc8F9xUHHn7bj7MeqPOFiT_bzQoTI5TFgvL1WJLubZM"
-        },
-        {
-          "url": "https://newscord.org/article/french-police-fired-22000-tear-gas-grenades-women-report-heavy-bleeding-and-misc--Story_20261127_c0e1625d",
-          "title": "French Police Fired 22,000 Tear Gas Grenades; Women Report Heavy Bleeding and Miscarriages: 5 outlets compared",
-          "publisher": "NewsCord",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw2pu9im9yay1eL9Zep8TeVQdHb1d6df8WuAvtn4HI20HwMS6Fy7dQZ3z0Dao"
         }
       ]
     }
