@@ -1,4 +1,5 @@
 import test from 'node:test';
+import './brain-runner-origin.test.mjs';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import {checkClaims,supported,authenticate} from '../workers/infinity-brain-clock/runner-auth.mjs';
