@@ -3,11 +3,11 @@
 import {register} from 'node:module';
 import {realpathSync} from 'node:fs';
 import {createServer} from 'node:http';
-import {Readable} from 'node:stream';
 import {pathToFileURL} from 'node:url';
 import {openPortableBrainState} from './portable-brain-state.mjs';
 import {openBrainDatabase,requirePrivateDatabase} from './sqlite-brain-db.mjs';
 import {loadBrainHostBindings} from './brain-host-bindings.mjs';
+import {serveBrainRequest} from './brain-http.mjs';
 
 let source;
 async function loadBrain(){
@@ -55,16 +55,7 @@ export async function createSqliteBrain({workDbPath,statePath,ownerHash,writerEn
     if(closed||server)throw Error('sqlite_brain_listener_unavailable');
     if(!['127.0.0.1','::1'].includes(host))throw Error('loopback_required');
     if(!Number.isInteger(port)||port<0||port>65535)throw Error('invalid_brain_port');
-    server=createServer({requestTimeout:190000,headersTimeout:10000,maxHeaderSize:20000},async(req,res)=>{
-     try{
-      const options={method:req.method,headers:req.headers};
-      if(!['GET','HEAD'].includes(req.method)){options.body=Readable.toWeb(req);options.duplex='half';}
-      const response=await fetchRequest(new Request('http://localhost'+req.url,options));
-      res.writeHead(response.status,Object.fromEntries(response.headers));
-      if(response.body)for await(const chunk of response.body){if(!res.write(chunk))await new Promise(resolve=>res.once('drain',resolve));}
-      res.end();
-     }catch{if(!res.headersSent)res.writeHead(503,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end('{"ok":false,"error":"local_brain_unavailable"}');}
-    });
+    server=createServer({requestTimeout:190000,headersTimeout:10000,maxHeaderSize:20000},(req,res)=>void serveBrainRequest({fetch:fetchRequest},req,res));
     try{await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(port,host,()=>{server.off('error',reject);resolve();});});}
     catch(error){server=undefined;throw error;}
     const bound=server.address();

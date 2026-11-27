@@ -173,7 +173,9 @@ been verified. It installs nothing and does not start at merge time:
 python3 distributed-vault/brain-supervisor.py
 ```
 
-It launches only `sqlite-brain-runtime.mjs`, uses a kernel lock, and records
+By default it launches only `sqlite-brain-runtime.mjs`; explicit mesh mode
+selects only the fixed `mesh-runner.mjs` entry point described below. It uses
+a kernel lock and records
 every launch in a separate private SQLite ledger before starting its child.
 The maximum is **three starts per rolling hour**, including the initial start
 and manual relaunches. The budget survives supervisor restarts and conservatively
@@ -190,6 +192,7 @@ HTTP authentication, provider and 503 responses do not trigger process restarts.
 | `BRAIN_SUPERVISOR_DB` | Separate private launch ledger; defaults beside the state DB as `brain-supervisor.sqlite`. |
 | `BRAIN_STOP_FILE` | Persistent manual-stop marker; defaults to the launch-ledger path plus `.stop`. |
 | `BRAIN_PORT`, `BRAIN_SQLITE_WRITER_ENABLED` | Existing local port and explicit activation flag; writer still defaults off. |
+| `BRAIN_HOST_MODE` | `standalone` by default; explicit `mesh` selects the existing storage listener with optional Brain routes. Unknown values fail. |
 
 The supervisor preserves an existing stop file. On SIGINT/SIGTERM or a stop
 marker it terminates only the child it launched, allowing up to ten seconds
@@ -212,3 +215,64 @@ together. Physical phone background/reboot behavior, original host deployment,
 complete private source export, writer fencing, TLS and end-to-end Bubbles
 conversation/engineering remain unverified. No origin or writer is switched
 by loading these source files.
+
+## Share the existing mesh listener
+
+The observed staging `/health` response identified `infinity-mesh-local-v1`,
+the encrypted storage coordinator. It did not establish a connected model or
+an executing Brain. Starting a second process on the same port cannot add
+those capabilities. `mesh-runner.mjs` now exports `createConfiguredMeshHost`
+so the existing listener can host the original Brain explicitly.
+
+For the existing host configuration, `BRAIN_HOST_MODE=mesh` selects this fixed
+entry point in the supervisor. It uses the original `MESH_DB`,
+`MESH_OWNER_TOKEN`, `MESH_HOST`, `MESH_PORT`, replica count and TLS settings.
+`MESH_PORT` controls the **single listener**; `BRAIN_PORT` is unused in this
+mode. No new listener, token, tunnel or installation is created at merge time.
+Without explicit mesh mode the direct mesh runner remains storage-only.
+
+In mesh mode all three database paths must already exist as separate,
+current-user private regular files. The factory checks real paths and inode
+identity, including hardlinks, before opening either Brain database. A
+read-only mesh schema/integrity check prevents an empty or unrelated database
+from being converted into storage. The coordinator retains its existing
+additive schema upgrades only for the verified mesh database. Its database
+cannot be used as the supervisor launch ledger or lock, including aliases.
+
+| Request surface | Existing authority |
+| --- | --- |
+| `/health` and storage app assets | Existing mesh response and app behavior, unchanged. |
+| `/v1/owner/*`, `/v1/node/*` | Existing mesh owner and per-node credentials. |
+| `/runner/*` | Original Brain Worker OIDC verification, owner scoping and lease checks; writer still defaults off. |
+| `/local/health` | Aggregate Brain configuration status only when explicitly cohosted. |
+
+Mesh tokens cannot claim Brain work, and a GitHub runner JWT does not grant
+mesh-owner access. The shared HTTP adapter streams the request into the
+original Brain Worker, preserving its own per-route body limits rather than
+applying the encrypted-shard limit. Internal DO, owner pairing, wallet,
+phone and conversation routes remain unexposed. Shutdown drains the shared
+HTTP server before closing Brain state. An occupied listener is preserved and
+exits with configuration code 78, without a retry loop.
+
+Request transport uses a bounded byte-counted bridge. If the original Worker
+rejects an upload before consuming it, only that connection closes after the
+response. A cancelled Web body cannot destroy the raw HTTP socket before the
+size-limit error is returned. Both declared-length and chunked oversized
+signed requests return the original 413, and subsequent requests and shutdown
+remain responsive. Fully consumed requests retain normal keepalive behavior.
+
+Tests use one real loopback listener with synthetic encrypted shards,
+retained node credentials, signed fixture claim/plan, wrong-lease rejection,
+replay fences and result readback across restarts. They also exercise the
+actual supervisor selecting mesh mode while a separate `BRAIN_PORT` listener
+stays untouched. These prove source behavior, **not installation on the
+phone, actual provider inference or live Bubbles conversation**. Private
+source export, original adapter verification, old-writer fencing, controlled
+host adoption and signed HTTPS execution remain required before cutover.
+
+The owner phone is optional staging/recovery, not a required production host.
+This same Node entry point may run on a verified owner-approved non-phone host
+with private persistent disk and the existing model access. Repository source
+and passing CI do not provide an always-on private inference service. Follow
+the repository-first placement and offline-phone acceptance gates in
+`work/unfinished/2110-shard-cache-checkpoint.md` before production adoption.
