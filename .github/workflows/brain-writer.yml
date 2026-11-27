@@ -33,6 +33,7 @@ jobs:
       - name: Claim, repair, review, test, commit and verify deployed Android page
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          BRAIN_RUNNER_ORIGIN: ${{ vars.BRAIN_RUNNER_ORIGIN }}
         run: node scripts/brain-writer.mjs
       - name: Save browser screenshots and repair evidence
         if: always()
