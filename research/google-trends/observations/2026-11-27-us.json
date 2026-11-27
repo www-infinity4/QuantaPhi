@@ -3,31 +3,199 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T15:01:16.747575Z",
+  "checked_at": "2026-11-27T15:31:05.557132Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "nasdaq composite",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T15:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/stocks-retreat-ai-rebound-stumbles-015155560.html",
+        "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-26/",
+        "https://www.bloomberg.com/news/videos/2026-11-27/insight-with-haslinda-amin-11-27-2026-video"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz1btiVY3PBnnsYGellEkb6y9g1honD7jBeXiEtabZNi9kkmAMAy7z1n0Cm5A",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/stocks-retreat-ai-rebound-stumbles-015155560.html",
+          "title": "World stocks tumble as Trump tariffs rattle markets, AI rally fades",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz1btiVY3PBnnsYGellEkb6y9g1honD7jBeXiEtabZNi9kkmAMAy7z1n0Cm5A"
+        },
+        {
+          "url": "https://www.reuters.com/world/china/global-markets-view-europe-2026-11-26/",
+          "title": "Morning Bid: Hey, it could have been worse",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0nZttDNaJq_DlextxgEq-ZlBdH80x1czGQjbrUfs1D4Flpxxz4MSlF2_SJnA"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/videos/2026-11-27/insight-with-haslinda-amin-11-27-2026-video",
+          "title": "Watch AI Rally Faces Fresh Test: Nvidia Curbs & Trump Tariffs",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd5H2PhwKtKljeOL91Pi5CBu3LhzG7Rb43YEYtkr0TKfT9XxJGD8CGG-g_ePs"
+        }
+      ]
+    },
+    {
+      "query": "matt damon family home life",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T15:00:00Z",
+      "related_news_urls": [
+        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+        "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+        "https://globalnews.ca/video/12162768/bourne-to-shine-matt-damon-on-fandom-fatherhood-and-maybe-winning-an-oscar-for-the-odyssey/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
+        },
+        {
+          "url": "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
+          "title": "Matt Damon says it was ‘difficult’ returning home to his family after ‘The Odyssey’ isolation",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
+        },
+        {
+          "url": "https://globalnews.ca/video/12162768/bourne-to-shine-matt-damon-on-fandom-fatherhood-and-maybe-winning-an-oscar-for-the-odyssey/",
+          "title": "Bourne to shine: Matt Damon on fandom, fatherhood, and (maybe) winning an Oscar for The Odyssey",
+          "publisher": "Global News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdVzuLybd_7dFuPIKR5_89WTr71YfnFrmvudacpcuJR6z-YyxFczFvJyx1jWM"
+        }
+      ]
+    },
+    {
+      "query": "mstr stock",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T15:00:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/why-strategy-rebound-175-2027-174554314.html",
+        "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
+        "https://www.investors.com/news/mstr-stock-worth-5-billion-less-than-bitcoin-value-liquidity-squeeze-gld-ibit/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApa9snMAIMoLGN1PfSgQLIyHLNTrxPvCNiy7ogumT-YyBdg0eKkPqB0OlKn0",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-strategy-rebound-175-2027-174554314.html",
+          "title": "Why Strategy Can Rebound to $175 in 2027 Even If Bitcoin Stays Below Peak",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApa9snMAIMoLGN1PfSgQLIyHLNTrxPvCNiy7ogumT-YyBdg0eKkPqB0OlKn0"
+        },
+        {
+          "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
+          "title": "JPMorgan says bitcoin 'capitulation' signaled by Strategy's record-low NAV multiple",
+          "publisher": "The Block",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNwLi78NiNRzyGavL6wAjQjfIF8Toty94Pq8onTi1GA6Z_B68h-xFjsN6-YUU"
+        },
+        {
+          "url": "https://www.investors.com/news/mstr-stock-worth-5-billion-less-than-bitcoin-value-liquidity-squeeze-gld-ibit/",
+          "title": "Strategy Is Worth $4 Billion Less Than Its Bitcoin Amid Liquidity Squeeze",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5wX1d6HrNfCF4G7hp-eYv7dDzy1spVkjwoEA0a7FrijYiLCR3g7AxFd5AD4E"
+        }
+      ]
+    },
+    {
+      "query": "law",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T14:50:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test",
+        "https://www.bbc.com/news/articles/cq3dgpy9lem3o",
+        "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnR3iAYl-E3UtCUB8xyZuPf46nwPrBrjG8TgPVQWrxWSYTpNCuQ8cuh1BiHaI",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/features/2026/11/26/in-canada-quebecs-religious-symbols-ban-faces-a-supreme-court-test",
+          "title": "In Canada, Quebec’s religious symbols ban faces a Supreme Court test",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnR3iAYl-E3UtCUB8xyZuPf46nwPrBrjG8TgPVQWrxWSYTpNCuQ8cuh1BiHaI"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/cq3dgpy9lem3o",
+          "title": "Canada's top court largely upholds Quebec ban on religious symbols for public servants",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQNvJjb2RGK6FxK9y80Rv746Vqa787rHjlzLA6C3OPuOqbF0GPcdLBqFMPpjs0"
+        },
+        {
+          "url": "https://www.reuters.com/legal/government/canadas-supreme-court-rule-quebecs-law-religious-symbols-test-canadian-unity-2026-11-27/",
+          "title": "Canada's Supreme Court to rule on Quebec's law on religious symbols in test of Canadian unity",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTso__HzBl7pa9O7M7SSJ32x0l_ta7ZgvUDv_vQDBmn4McdyaHvZkWd7sEkHwA"
+        }
+      ]
+    },
+    {
+      "query": "college games today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T14:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+        "https://www.cbssports.com/betting/news/college-football-odds-picks-predictions-lines-best-bets-today-rivalry-week-2026/",
+        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/college-football-odds-picks-predictions-lines-best-bets-today-rivalry-week-2026/",
+          "title": "College football odds, picks, predictions for Rivalry Week, 2026: Computer likes North Carolina, Arizona",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGG7etmjcb9ib7MGdMxKjXv3Rql1y0WjFl71T14o-2Hj8_Fj4NgQ5CTU32Xzk"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
+          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
+        }
+      ]
+    },
     {
       "query": "al qadsiah vs al-fayha",
       "approx_searches": "200+",
       "published_at": "2026-11-27T14:30:00Z",
       "related_news_urls": [
-        "https://www.football.com/ng/news/158760",
-        "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
-        "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412"
+        "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
+        "https://www.thestatszone.com/al-qadsiah-vs-al-fayha-preview-prediction-241412",
+        "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/blt4b1228005f5d66e7"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdqJjFF8ir_mHRU6qqKgOkzRe0ORKt97blOj_sGcIuIijm4ilJ0IuNXWHW190",
-      "image_credit": "Football.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE",
+      "image_credit": "Goal.com",
       "news": [
         {
-          "url": "https://www.football.com/ng/news/158760",
-          "title": "Al Qadsiah vs Al-Fayha Preview and Betting Tips",
-          "publisher": "Football.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRdqJjFF8ir_mHRU6qqKgOkzRe0ORKt97blOj_sGcIuIijm4ilJ0IuNXWHW190"
-        },
-        {
-          "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
-          "title": "Al Qadsiah vs Al-Fayha: Where to Watch, TV Channel, Live Stream and Kick-Off Time",
+          "url": "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/bltbaef372bfb5e5570",
+          "title": "Watch Al Qadsiah vs Al-Fayha live today: Who is broadcasting the match on TV and via live stream?",
           "publisher": "Goal.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE"
@@ -38,17 +206,24 @@
           "publisher": "The Stats Zone",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSaTw1Hc6DtJOa55-PeXzh24JSNVI8JkoLfjAGpPD-ab6d11TLKRHAWPgXsLx8"
+        },
+        {
+          "url": "https://www.goal.com/en-gb/news/live-stream-online-tv-where-to-watch-al-qadsiah-v-al-fayha/blt4b1228005f5d66e7",
+          "title": "WATCH HERE! Al Qadsiah vs Al-Fayha Saudi Pro League Matchday 13: Live stream, team news, kick-off time",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQwgTtzKOYoTYMGFLbkNISuhdUJeGIjX_alXs8OnnmMhTzoyM8KoG9e40g-oE"
         }
       ]
     },
     {
       "query": "hackers breach air force",
-      "approx_searches": "2000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-27T14:20:00Z",
       "related_news_urls": [
         "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
-        "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/",
-        "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
+        "https://www.forbes.com/sites/saradorn/2026/11/27/air-forces-cloud-one-platform-hacked-report-says/",
+        "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
       "image_credit": "Reuters",
@@ -61,18 +236,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
         },
         {
+          "url": "https://www.forbes.com/sites/saradorn/2026/11/27/air-forces-cloud-one-platform-hacked-report-says/",
+          "title": "Hackers Attacked Air Force’s Cloud System, Report Says",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTn-jvv1nLSBwlViX_Q4PeuecGGTZdAffVGYZCqZrScp0ydTyUiqoa-QchTKLc"
+        },
+        {
           "url": "https://thehill.com/policy/defense/6245197-air-force-cloud-one-hack/",
           "title": "Hackers break into US Air Force cloud computing platform: Report",
           "publisher": "The Hill",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQMZ4AP9qLy8KuUE8dv67nk6SL2wfQqZ_1m4oxADJno39badoBUGyF1VBQu_NQ"
-        },
-        {
-          "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
-          "title": "US Air Force's cloud computing platform hacked",
-          "publisher": "Sky News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGLuqvv-Ez0cmtDoowaAPs968_KgJSmz7LUtsaovEfiNQgxp1bL5vKZ-aeeQ"
         }
       ]
     },
@@ -113,12 +288,12 @@
     },
     {
       "query": "kelly ripa",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-27T14:10:00Z",
       "related_news_urls": [
         "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
-        "https://www.limapagi.id/en/kelly-ripa-lola-fashion-style",
-        "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/"
+        "https://demokratis.co.id/en/kelly-ripa-lola-fashion-appearances",
+        "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
       "image_credit": "Yahoo",
@@ -131,228 +306,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
         },
         {
-          "url": "https://www.limapagi.id/en/kelly-ripa-lola-fashion-style",
-          "title": "Kelly Ripa Shows Yacht Style as Daughter Lola Matches Boyfriend",
+          "url": "https://demokratis.co.id/en/kelly-ripa-lola-fashion-appearances",
+          "title": "Kelly Ripa Shows Yacht Style as Lola Coordinates Couple Outfits",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSR4Ec5JzlpjPfdNPg3lSbl2abdRtt_qSnnM5o3mOYBOX_UF6CHIw8-PloZmAE"
+        },
+        {
+          "url": "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
+          "title": "Lola Consuelos Matches Tweed Outfits With Boyfriend in London",
           "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSuH_sciyTgkLsGfC5HYwr8il6J0Pv6-wm-jB5UmmVJjHF4nJhnfUupwTbxYo"
-        },
-        {
-          "url": "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/",
-          "title": "Kelly Ripa’s Daughter Lola Turns Heads With Matching Tweed Look Alongside Boyfriend",
-          "publisher": "Speaks Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoWyAgx-PwAfL2qEvPA3Bxh1vGZ9rVuiF4AxSj9k3JzT2A8Dzgk9r_Y0pgfcE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSea1bARiLrAfjSC9Rdvnb5dRq77Ckk1yQT2HtXEth5OmxrFql061RQ5Zqku-0"
         }
       ]
     },
     {
-      "query": "delcy rodríguez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:50:00Z",
-      "related_news_urls": [
-        "https://runrun.es/noticias/626407/gobierno-insta-a-uso-equilibrado-de-equipos-por-pico-en-demanda-electrica/",
-        "https://talcualdigital.com/noticias/delcy-rodriguez-senala-cultura-de-derroche-en-servicios-y-pide-consumo-responsable/",
-        "https://elinformadorve.com/26/11/2026/venezuela/delcy-rodriguez-asegura-que-existe-un-uso-irracional-de-la-electricidad/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqASpLAJDsTbFrmAzh0ZL4bxiEDGxQfKYbfr5lf68sHC4UA5aW_SSnkrQyuzk",
-      "image_credit": "Runrun.es",
-      "news": [
-        {
-          "url": "https://runrun.es/noticias/626407/gobierno-insta-a-uso-equilibrado-de-equipos-por-pico-en-demanda-electrica/",
-          "title": "Gobierno insta a “uso equilibrado de equipos” por pico en demanda eléctrica",
-          "publisher": "Runrun.es",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqASpLAJDsTbFrmAzh0ZL4bxiEDGxQfKYbfr5lf68sHC4UA5aW_SSnkrQyuzk"
-        },
-        {
-          "url": "https://talcualdigital.com/noticias/delcy-rodriguez-senala-cultura-de-derroche-en-servicios-y-pide-consumo-responsable/",
-          "title": "Delcy Rodríguez señala cultura de derroche en servicios y pide consumo responsable",
-          "publisher": "TalCual Digital",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_E9vvB-V4pu4znq5S6ohdcL3q6s8Iaug6aZ2OglbNy-dIz0T9ZSkRo9SqNs"
-        },
-        {
-          "url": "https://elinformadorve.com/26/11/2026/venezuela/delcy-rodriguez-asegura-que-existe-un-uso-irracional-de-la-electricidad/",
-          "title": "Delcy Rodríguez asegura que existe un uso «irracional de la electricidad»",
-          "publisher": "El Informador Venezuela",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCcx8z1O_iQ2bKEd6enG5P6yIHa525BG5vU4iTLOOETQDuFO8SMkCXdhQZhu8"
-        }
-      ]
-    },
-    {
-      "query": "pga tour",
+      "query": "hunting",
       "approx_searches": "10000+",
-      "published_at": "2026-11-27T13:40:00Z",
+      "published_at": "2026-11-27T14:00:00Z",
       "related_news_urls": [
-        "https://www.pgatour.com/article/news/latest/2026/11/24/the-farmers-insurance-skins-game-black-friday-amazon-prime-video-brooks-koepka-jackson-koivun-wyndham-clark-justin-thomas",
-        "https://golf.com/news/2026-skins-game-primer-format-schedule-players-and-more/",
-        "https://golfwrx.com/790504/justin-thomas-the-skins-game-2026-witb/"
+        "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
+        "https://www.out.com/celebs/brittany-snow-the-hunting-wives",
+        "https://www.npr.org/2026/11/26/nx-s1-6053125/sex-and-murder-are-everywhere-in-the-hunting-wives"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkupLXFf62KsbL5-zzfH1Gk0_O-sx5bkMu6nCTQimKMt147Lj8BaV658yQIs",
-      "image_credit": "PGA Tour",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.pgatour.com/article/news/latest/2026/11/24/the-farmers-insurance-skins-game-black-friday-amazon-prime-video-brooks-koepka-jackson-koivun-wyndham-clark-justin-thomas",
-          "title": "Expect big personalities, bigger stakes at 'The Farmers Insurance Skins Game'",
-          "publisher": "PGA Tour",
+          "url": "https://www.bbc.com/culture/article/20261124-how-steamy-soap-the-hunting-wives-took-on-sex-scandal-and-the-uss-blue-red-divide",
+          "title": "'It appeals across demographics': How steamy soap The Hunting Wives took on sex, scandal and the US's blue-red divide",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIkupLXFf62KsbL5-zzfH1Gk0_O-sx5bkMu6nCTQimKMt147Lj8BaV658yQIs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEf55ouJiNQ24TgsByuYbjZKn8SpnBUXPG_yZmgztUYQrksXg0KvKOh4DpurU"
         },
         {
-          "url": "https://golf.com/news/2026-skins-game-primer-format-schedule-players-and-more/",
-          "title": "2026 Skins Game primer: Format, schedule, players and more",
-          "publisher": "GOLF.com",
+          "url": "https://www.out.com/celebs/brittany-snow-the-hunting-wives",
+          "title": "Brittany Snow & Malin Åkerman tease their sexy sapphic scenes on 'The Hunting Wives'",
+          "publisher": "Out Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXqoQdiUGouBPJ7BBf4-oTxRoL1kKo0ZKkZgtj09jbbHtJZD5Exx3LDpkcRJY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSggZNG2VKb7kzfpqZSxqDsMClLHi9vA_0qHQYYqNzxCSgl6L5ELSA43-OBYs4"
         },
         {
-          "url": "https://golfwrx.com/790504/justin-thomas-the-skins-game-2026-witb/",
-          "title": "Justin Thomas’ The Skins Game 2026 WITB",
-          "publisher": "GolfWRX",
+          "url": "https://www.npr.org/2026/11/26/nx-s1-6053125/sex-and-murder-are-everywhere-in-the-hunting-wives",
+          "title": "Sex and murder are everywhere in 'The Hunting Wives' : Pop Culture Happy Hour",
+          "publisher": "NPR",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQH7I9a6rLUBkeUgL_i1rge5sY0IaKpNGacYLzJ1EMql9TMg5jb1_1HWRcPVsM"
-        }
-      ]
-    },
-    {
-      "query": "ron harper",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
-        "https://www.limapagi.id/en/ron-harper-family-spurs-roster",
-        "https://cwibc.co.id/en/ron-harper-family-loss-griffin-support"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
-          "title": "Prayers Pour in From Robert Griffin III & More as NBA & Chicago Bulls Legend Mourns Tragic Loss",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck"
-        },
-        {
-          "url": "https://www.limapagi.id/en/ron-harper-family-spurs-roster",
-          "title": "Ron Harper Mourns Aunt and Defends Spurs Roster",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPECJCkVv0nXdF9pww6KpfMp1wDUDDwivWvyYQc2ygtUV9ht204UxKpZe5TA"
-        },
-        {
-          "url": "https://cwibc.co.id/en/ron-harper-family-loss-griffin-support",
-          "title": "Ron Harper Mourns Aunt as Robert Griffin III Sends Support",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPECJCkVv0nXdF9pww6KpfMp1wDUDDwivWvyYQc2ygtUV9ht204UxKpZe5TA"
-        }
-      ]
-    },
-    {
-      "query": "green bay packers statement martha ford",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
-        "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
-        "https://www.clickondetroit.com/news/local/2026/11/26/detroit-lions-honor-late-owner-martha-firestone-ford-with-special-helmet-decal-on-thanksgiving/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8",
-      "image_credit": "Green Bay Packers – packers.com",
-      "news": [
-        {
-          "url": "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
-          "title": "Statement from the Green Bay Packers",
-          "publisher": "Green Bay Packers – packers.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8"
-        },
-        {
-          "url": "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
-          "title": "Lions Owner/Chair Emeritus Martha Firestone Ford passes away at 101",
-          "publisher": "Detroit Lions",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU"
-        },
-        {
-          "url": "https://www.clickondetroit.com/news/local/2026/11/26/detroit-lions-honor-late-owner-martha-firestone-ford-with-special-helmet-decal-on-thanksgiving/",
-          "title": "Detroit Lions honor late owner Martha Firestone Ford with special helmet decal on Thanksgiving",
-          "publisher": "ClickOnDetroit | WDIV Local 4",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSnn-jWtkZ6SkvqLmgH6Rwj2SJ-bnajtOjf3MRab9Lh1zEEVFgBiTSx7jf9nxc"
-        }
-      ]
-    },
-    {
-      "query": "iowa vs nebraska",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-        "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
-        "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-          "title": "Nebraska-Iowa: What we're looking for and final predictions",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
-          "title": "Iowa vs. Nebraska odds, prediction, time: Rivalry Week Friday picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzfELqqKHs1LXwZKx-_eC1yj-UqZqy75ys6hW3Si1noNDCnbIDOgybfGBiVzs"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026",
-          "title": "Huskers' Surging Ground Game Heads for Hawkeye Wall",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMdK-z2O01QMnks-P3dZ_EQ1dLpkgeRjYDzg0_A6M2G-JKiyTIV98zKGwyUMk"
-        }
-      ]
-    },
-    {
-      "query": "cardi b",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://www.complex.com/music/a/jose-martinez/cardi-b-responds-wealth-claim",
-        "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
-        "https://www.thespec.com/entertainment/music/hamilton-td-coliseum-cardi-b-concert/article_557564ff-b6b1-586e-946c-9ec285f9a461.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSJzYd5hapqzcikyn1hWTkLcgr0DWPsJu9Kjws_DmxFFiXhMbl5tuj6zrEX4A",
-      "image_credit": "Complex",
-      "news": [
-        {
-          "url": "https://www.complex.com/music/a/jose-martinez/cardi-b-responds-wealth-claim",
-          "title": "Cardi B Responds to Fan Criticizing Her Year of Accomplishments Possible",
-          "publisher": "Complex",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSJzYd5hapqzcikyn1hWTkLcgr0DWPsJu9Kjws_DmxFFiXhMbl5tuj6zrEX4A"
-        },
-        {
-          "url": "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
-          "title": "Billboard Canada Women in Music 2026: Cardi B Is 'Globally That B—' & More Best Moments",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc"
-        },
-        {
-          "url": "https://www.thespec.com/entertainment/music/hamilton-td-coliseum-cardi-b-concert/article_557564ff-b6b1-586e-946c-9ec285f9a461.html",
-          "title": "Cardi B wondered ‘where is Hamilton?’ Now she says our crowd beat Toronto for her top Canadian memory",
-          "publisher": "The Spec",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjsto-ecR-EjLmS1-KGKZQS_q22w9GSBXU2ftCv9tsKpSE6ThetHINmp-F0_E"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRMp-KjQlQvfNTMBidxptlpLrXozOWjFnDyc3CZsoj8KkZdSHgwgwhlWf8oOI"
         }
       ]
     }
