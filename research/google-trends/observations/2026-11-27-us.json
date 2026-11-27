@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T11:31:09.241076Z",
+  "checked_at": "2026-11-27T12:01:29.716754Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "are banks open today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T11:30:00Z",
+      "related_news_urls": [
+        "https://www.freep.com/story/news/local/michigan/2026/11/26/thanksgiving-federal-holiday-open-closed-store-mail-2026/92940261007/",
+        "https://www.mentalfloss.com/holidays/thanksgiving/what-open-thanksgiving-banks-stores-businesses-closed",
+        "https://www.cleveland.com/news/2026/11/is-the-post-office-open-on-black-friday-2026.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxegTM1XxCvpo1osYohDNEBknKGRgVdhO16By1aVjXWI4I4leIQSMz5hcxRU",
+      "image_credit": "Detroit Free Press",
+      "news": [
+        {
+          "url": "https://www.freep.com/story/news/local/michigan/2026/11/26/thanksgiving-federal-holiday-open-closed-store-mail-2026/92940261007/",
+          "title": "Is there mail on Thanksgiving? What's open on federal holiday",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaxegTM1XxCvpo1osYohDNEBknKGRgVdhO16By1aVjXWI4I4leIQSMz5hcxRU"
+        },
+        {
+          "url": "https://www.mentalfloss.com/holidays/thanksgiving/what-open-thanksgiving-banks-stores-businesses-closed",
+          "title": "What's Open on Thanksgiving? Banks, Stores, and Businesses That Are Closed",
+          "publisher": "Mental Floss",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwIBB8V59_T6x1M7c-0VzaqMJ2Z9vPmZcDZDzmHVSps9TeNUUjNojOpAbvS7I"
+        },
+        {
+          "url": "https://www.cleveland.com/news/2026/11/is-the-post-office-open-on-black-friday-2026.html",
+          "title": "Is the post office open on Black Friday 2026?",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3YU6BUw0Pd253N3g6CaaygGqnoknPWB1zAnKbBMx0E0mZdjnA70zb_FkKg4Y"
+        }
+      ]
+    },
+    {
+      "query": "météo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T11:30:00Z",
+      "related_news_urls": [
+        "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-27/meteo-demain-redoux-dans-le-sud-ouest-froid-persistant-dans-le-nord-est-et-soleil-en-montagne-94673",
+        "https://www.tameteo.com/actualites/previsions/nouvelle-pertubation-dimanche-en-france-un-risque-de-neige-ou-bien-simplement-de-la-pluie-les-previsions.html",
+        "https://www.meteoetradar.com/actualites-meteo/lactualite-meteo-du-jour-le-soleil-revient-en-force-par-le-nord-est--2066369e-24e6-4d9e-bf6c-6b684f7d6f3f"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjb2uw0LF1IlhfmHBoXwzeQhf3I-Bvp4ps0TtWJ_WCFo4gjVitam3Avk2Hpg",
+      "image_credit": "La Chaîne Météo",
+      "news": [
+        {
+          "url": "https://actualite.lachainemeteo.com/actualite-meteo/2026-11-27/meteo-demain-redoux-dans-le-sud-ouest-froid-persistant-dans-le-nord-est-et-soleil-en-montagne-94673",
+          "title": "Météo demain : redoux dans le sud-ouest, froid persistant dans le nord-est et soleil en montagne",
+          "publisher": "La Chaîne Météo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGjb2uw0LF1IlhfmHBoXwzeQhf3I-Bvp4ps0TtWJ_WCFo4gjVitam3Avk2Hpg"
+        },
+        {
+          "url": "https://www.tameteo.com/actualites/previsions/nouvelle-pertubation-dimanche-en-france-un-risque-de-neige-ou-bien-simplement-de-la-pluie-les-previsions.html",
+          "title": "Perturbation dimanche 29 en France ! Un risque de neige ou bien simplement de la pluie ? Les prévisions",
+          "publisher": "Tameteo.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQdPVYQE3JYnANqpmXgOP7GNGDYN-3FCM6bZ2YHznvKxumujp0UZHqWSvVBes4"
+        },
+        {
+          "url": "https://www.meteoetradar.com/actualites-meteo/lactualite-meteo-du-jour-le-soleil-revient-en-force-par-le-nord-est--2066369e-24e6-4d9e-bf6c-6b684f7d6f3f",
+          "title": "L'actualité météo du jour - Le soleil revient en force par le Nord-Est",
+          "publisher": "Météo & Radar",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTVwRbe7TxzxonBEvFCbRAoGsJIqsp4kAuRRcQMaB9x2ZzFjJVA9eW42jFLI8o"
+        }
+      ]
+    },
+    {
+      "query": "geno auriemma",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T11:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
+        "https://www.nbcconnecticut.com/news/local/geno-auriemma-frustrated-as-uconn-womens-basketball-searches-for-answers/3799796/",
+        "https://www.nytimes.com/athletic/7810858/2026/11/24/uconn-south-carolina-rematch-tessa-johnson/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1Zld4_5kjmEEYlS8i38945XqbXcHv3N1TL1rCvyDTE7jibOBr6TzMu_4vd0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
+          "title": "South Carolina topples UConn behind Tessa Johnson's career-high 32",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1Zld4_5kjmEEYlS8i38945XqbXcHv3N1TL1rCvyDTE7jibOBr6TzMu_4vd0"
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/local/geno-auriemma-frustrated-as-uconn-womens-basketball-searches-for-answers/3799796/",
+          "title": "Geno Auriemma frustrated as UConn women's basketball searches for answers",
+          "publisher": "NBC Connecticut",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIDYtzpigqhYsHmlXJBCPbnk6b7CGJhJaBsP9WP0yHwR11RtSn9xi9uPRe8tA"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7810858/2026/11/24/uconn-south-carolina-rematch-tessa-johnson/",
+          "title": "No. 1 South Carolina controls UConn again in rematch of dramatic Final Four showdown - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8m1HRpcwu6cpyQ7A6GXKCtYC2fEFsjFyYmIjQSq2wm7NaKWrcHe-i3CgmV98"
+        }
+      ]
+    },
     {
       "query": "strobe talbott",
       "approx_searches": "500+",
       "published_at": "2026-11-27T11:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/26/us/politics/strobe-talbott-dead.html",
-        "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/",
-        "https://www.theguardian.com/us-news/2026/nov/26/strobe-talbott-time-secretary-of-state-dead"
+        "https://www.theguardian.com/us-news/2026/nov/26/strobe-talbott-time-secretary-of-state-dead",
+        "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWB8aV8FkNC_Kw0tLg3BQrFOFyDKB6os_N3KOZWAKJsACHvlGV4p7SCxs31fs",
       "image_credit": "The New York Times",
@@ -26,18 +131,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTWB8aV8FkNC_Kw0tLg3BQrFOFyDKB6os_N3KOZWAKJsACHvlGV4p7SCxs31fs"
         },
         {
-          "url": "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/",
-          "title": "Strobe Talbott, who helped shape Clinton-era foreign policy, dies at 80",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyg5ZD9aEVPxYXi9PObp1ABalaIdMuWMnnme5fNA6pP7sJo-o-0kbDHPOgmHw"
-        },
-        {
           "url": "https://www.theguardian.com/us-news/2026/nov/26/strobe-talbott-time-secretary-of-state-dead",
           "title": "Strobe Talbott, Time magazine reporter and deputy US secretary of state, dies aged 80",
           "publisher": "The Guardian",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjRMMKpEvi54CP3OMtMgrqj3AiW8BvMG8YjNfdGO6WJ9_HzyAW0buWJykUSU"
+        },
+        {
+          "url": "https://www.washingtonpost.com/obituaries/2026/11/26/strobe-talbott-who-helped-shape-clinton-era-foreign-policy-dies-80/",
+          "title": "Strobe Talbott, who helped shape Clinton-era foreign policy, dies at 80",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyg5ZD9aEVPxYXi9PObp1ABalaIdMuWMnnme5fNA6pP7sJo-o-0kbDHPOgmHw"
         }
       ]
     },
@@ -46,13 +151,20 @@
       "approx_searches": "200+",
       "published_at": "2026-11-27T11:10:00Z",
       "related_news_urls": [
+        "https://mashable.com/life/nov-27-pokemon-tcg-30th-celebration-elite-trainer-box-black-friday-deal",
         "https://www.ign.com/articles/pokemon-deluxe-character-guide-book-deal-black-friday-2026-gift-idea",
-        "https://www.pcgamer.com/games/card-games/i-managed-to-convince-my-boss-to-let-me-talk-about-pokemon-tcg-on-pc-gamer-so-in-return-here-are-all-the-best-deals-i-found/",
-        "https://www.gamingbible.com/news/platform/nintendo/pokemon-black-friday-tcg-lego-switch-game-deals-741580-20261126"
+        "https://www.pcgamer.com/games/card-games/i-managed-to-convince-my-boss-to-let-me-talk-about-pokemon-tcg-on-pc-gamer-so-in-return-here-are-all-the-best-deals-i-found/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQHHpRvT3eWnJ3zIUxZsFA0IF6JlbURd-_FlIVO9uxSbOg4CSe4Z5zjT8tEDDM",
-      "image_credit": "IGN",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmo6xDAtwaUZoMmS59gC0pN1z3UN2xe-CoCJ8o-7bDhbMHrxi4Uri-G2C8o8I",
+      "image_credit": "Mashable",
       "news": [
+        {
+          "url": "https://mashable.com/life/nov-27-pokemon-tcg-30th-celebration-elite-trainer-box-black-friday-deal",
+          "title": "The Pokémon TCG 30th Celebration Elite Trainer Box is back in stock for Black Friday: Buy at market price",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSmo6xDAtwaUZoMmS59gC0pN1z3UN2xe-CoCJ8o-7bDhbMHrxi4Uri-G2C8o8I"
+        },
         {
           "url": "https://www.ign.com/articles/pokemon-deluxe-character-guide-book-deal-black-friday-2026-gift-idea",
           "title": "This Official Deluxe Pokémon Guide Book Is a Super-Effective Gift — Now Cheaper Than Ever for Black Friday",
@@ -66,48 +178,6 @@
           "publisher": "PC Gamer",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXIEdsXDi5EwkGl__5o2LgQFLwvg-PE4h8OuMC_u7g-bBhfzkyAgVcsLMLJvA"
-        },
-        {
-          "url": "https://www.gamingbible.com/news/platform/nintendo/pokemon-black-friday-tcg-lego-switch-game-deals-741580-20261126",
-          "title": "Pokémon Black Friday sale: Battle Academy trading cards, LEGO, Switch games, and merch slashed at Amazon",
-          "publisher": "GAMINGbible",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo2FVCRWbOrrqsKV8u7uENwEfK1LGMj5SeJMR5Zo0YlZ3BdGSOE4mklDVNntI"
-        }
-      ]
-    },
-    {
-      "query": "tj maxx black friday 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T11:10:00Z",
-      "related_news_urls": [
-        "https://www.realsimple.com/tj-maxx-black-friday-fashion-deals-2026-12179753",
-        "https://www.travelandleisure.com/tj-maxx-double-discount-clearance-sale-november-2026-12275611",
-        "https://www.aol.com/articles/ive-seen-lot-black-friday-174311000.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7KVbjQXwUjg12QkJRjQpROrOLlfc0-Me-rwv9yD1lNXMD4oChoz4C-p5wQMI",
-      "image_credit": "Real Simple",
-      "news": [
-        {
-          "url": "https://www.realsimple.com/tj-maxx-black-friday-fashion-deals-2026-12179753",
-          "title": "We Came to TJ Maxx’s Black Friday Sale for the Sweater Dresses, but Left With Boots, Bags, and More in Our Cart",
-          "publisher": "Real Simple",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7KVbjQXwUjg12QkJRjQpROrOLlfc0-Me-rwv9yD1lNXMD4oChoz4C-p5wQMI"
-        },
-        {
-          "url": "https://www.travelandleisure.com/tj-maxx-double-discount-clearance-sale-november-2026-12275611",
-          "title": "TJ Maxx’s Secret Clearance Section Is Double Discounted for Black Friday—Shop the 14 Best Deals From $10",
-          "publisher": "Travel + Leisure",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPs1G2a5MMJOKM9wFrgRBEL9v9Ra-PScWCj9_xG0ShKrZHEs52A4oNm9Za9Y"
-        },
-        {
-          "url": "https://www.aol.com/articles/ive-seen-lot-black-friday-174311000.html",
-          "title": "I've Seen a Lot of Black Friday Discounts, but These 16 TJ Maxx and Marshalls Deals Take the Cake",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDVytWgOLiK-fshATzIrccPs80GikpmIAzZKUNiephMpeEsITt0dNceJXCl1Y"
         }
       ]
     },
@@ -116,19 +186,19 @@
       "approx_searches": "500+",
       "published_at": "2026-11-27T11:10:00Z",
       "related_news_urls": [
-        "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
+        "https://people.com/kaley-cuoco-celebrates-6-week-old-daughter-philomena-first-thanksgiving-cute-family-photos-12282946",
         "https://www.instyle.com/kaley-cuoco-daughter-matilda-follows-mom-footsteps-12282535",
         "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/kaley-cuoco-shares-glimpses-of-thanksgiving-celebrations-with-daughters-matilda-and-philomena-i-just-wish-she-had-more-fun/articleshow/136207547.cms"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrBYF-SfJ-tCwk1YcebINyPXJBuC40hE0AXdPVPTkIDMnFgPMJWISygdXn9NQ",
       "image_credit": "People.com",
       "news": [
         {
-          "url": "https://people.com/kaley-cuoco-shares-cute-family-photos-daughters-thanksgiving-dwts-12281528",
-          "title": "Kaley Cuoco Introduces 6-Week-Old Philomena to DWTS, as Her Sister Matilda, 3, Dresses Up for Thanksgiving",
+          "url": "https://people.com/kaley-cuoco-celebrates-6-week-old-daughter-philomena-first-thanksgiving-cute-family-photos-12282946",
+          "title": "Kaley Cuoco Celebrates 6-Week-Old Daughter Philomena’s First Thanksgiving with Cute Family Photos: ‘Grateful’",
           "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcROmltiAcvAsmFF3ALzag7KRhFBf91F7nA_wS6dpaqP_TBEgJSEkcwyMtb8wl8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrBYF-SfJ-tCwk1YcebINyPXJBuC40hE0AXdPVPTkIDMnFgPMJWISygdXn9NQ"
         },
         {
           "url": "https://www.instyle.com/kaley-cuoco-daughter-matilda-follows-mom-footsteps-12282535",
@@ -147,23 +217,58 @@
       ]
     },
     {
-      "query": "bangladesh a vs pakistan a",
+      "query": "weather chicago",
       "approx_searches": "100+",
+      "published_at": "2026-11-27T11:10:00Z",
+      "related_news_urls": [
+        "https://wgntv.com/weather/chicago-weather-wednesday-11252026/",
+        "https://www.nbcchicago.com/weather/chicago-forecast-rain-possible-snow-and-coldest-air-of-the-season-for-thanksgiving-week/4020302/",
+        "https://www.cbsnews.com/chicago/video/temps-upper-30s-wednesday-night-in-chicago/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGIC13QR1Iw6DMvbI6MXNxn5c4J8_lZ4AuqRORlB-buXBODSiFnCcamlUzrts",
+      "image_credit": "WGN-TV",
+      "news": [
+        {
+          "url": "https://wgntv.com/weather/chicago-weather-wednesday-11252026/",
+          "title": "Wednesday: Chilliest daytime high since early April; Autumn 2026 second-warmest on the books with 5 days remaining",
+          "publisher": "WGN-TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGIC13QR1Iw6DMvbI6MXNxn5c4J8_lZ4AuqRORlB-buXBODSiFnCcamlUzrts"
+        },
+        {
+          "url": "https://www.nbcchicago.com/weather/chicago-forecast-rain-possible-snow-and-coldest-air-of-the-season-for-thanksgiving-week/4020302/",
+          "title": "Chicago forecast: Rain, possible snow and ‘coldest air of the season' for Thanksgiving week",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQg6k3T1kmcoEB4aBY0ICMNmeWJ7oTZHx_Wq_oLsIJ2KC0SmqIWjFFpQWbRIBk"
+        },
+        {
+          "url": "https://www.cbsnews.com/chicago/video/temps-upper-30s-wednesday-night-in-chicago/",
+          "title": "Temps upper 30s Wednesday night in Chicago",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTCypThQcWxTPHWEYylpcL8hbQZbLGuVui4Ba7gmIjRRqMcUtBJh4Bz5bTOzfs"
+        }
+      ]
+    },
+    {
+      "query": "bangladesh a vs pakistan a",
+      "approx_searches": "200+",
       "published_at": "2026-11-27T11:00:00Z",
       "related_news_urls": [
-        "https://wenewsenglish.com/pakistan-bangladesh-rising-stars-semi-final/",
+        "https://sports.ndtv.com/cricket/pakistan-a-vs-bangladesh-a-live-streaming-asia-cup-rising-stars-semifinal-live-telecast-when-and-where-to-watch-pak-vs-ban-12384093",
         "https://www.ai11.in/cricket/series/asia-cup-rising-stars-2026-27/match/bangladesh-a-vs-pakistan-shaheen-2nd-semi-final-2026",
         "https://robinhood.com/us/en/prediction-markets/cricket/events/pakistan-a-vs-bangladesh-a-nov-27-2026/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFi3EGy1g2ea5pGQNQIgSkc32Ef1dLsEtU2g-NtXcOs1hgPdAmx9nB47QTOkQ",
-      "image_credit": "WE News English",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbOFyoXPGYWDtZRzfqarA06vvckN0vTVRMkNvHnlNY1-HLW-LyY65C2-ec0Q",
+      "image_credit": "NDTV Sports",
       "news": [
         {
-          "url": "https://wenewsenglish.com/pakistan-bangladesh-rising-stars-semi-final/",
-          "title": "Bangladesh A Elect To Bat First Against Pakistan Shaheens In Rising Stars Semi-Final",
-          "publisher": "WE News English",
+          "url": "https://sports.ndtv.com/cricket/pakistan-a-vs-bangladesh-a-live-streaming-asia-cup-rising-stars-semifinal-live-telecast-when-and-where-to-watch-pak-vs-ban-12384093",
+          "title": "Pakistan A vs Bangladesh A LIVE Streaming, Asia Cup Rising Stars Semifinal LIVE Telecast: When And Where To Watch PAK vs BAN",
+          "publisher": "NDTV Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRFi3EGy1g2ea5pGQNQIgSkc32Ef1dLsEtU2g-NtXcOs1hgPdAmx9nB47QTOkQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbOFyoXPGYWDtZRzfqarA06vvckN0vTVRMkNvHnlNY1-HLW-LyY65C2-ec0Q"
         },
         {
           "url": "https://www.ai11.in/cricket/series/asia-cup-rising-stars-2026-27/match/bangladesh-a-vs-pakistan-shaheen-2nd-semi-final-2026",
@@ -248,111 +353,6 @@
           "publisher": "Sports Collectors Daily",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRp3U8uX19SQg3BKwP2k6m69KhEK4v-_9wLWqNJGPTtOa7Ut0mLOy2IWTaVaM"
-        }
-      ]
-    },
-    {
-      "query": "marc marquez",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T10:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o",
-        "https://www.motogp.com/en/news/2026/11/27/marc-marquez-announces-retirement-from-motogp/1268528",
-        "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbD99t_mg07bXRIle1owoQeKlIFy__WOVxFqTPWG4_0IjVQLFmniyz3Td06uA",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/motorsport/articles/c539gd3r3mk2o",
-          "title": "MotoGP: Marc Marquez to retire after final race of 2026 season",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbD99t_mg07bXRIle1owoQeKlIFy__WOVxFqTPWG4_0IjVQLFmniyz3Td06uA"
-        },
-        {
-          "url": "https://www.motogp.com/en/news/2026/11/27/marc-marquez-announces-retirement-from-motogp/1268528",
-          "title": "Marc Marquez announces retirement from MotoGP",
-          "publisher": "motogp.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSR3yPWRil4ItZYktroaZKmaEg_I2phPdOre-NiaFg5ZFLx1wDpXJGO_9hPmII"
-        },
-        {
-          "url": "https://www.reuters.com/sports/motogp-champion-marquez-retire-after-2026-season-2026-11-27/",
-          "title": "MotoGP champion Marquez to retire after 2026 season",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnT5DCVNcpiVo1xZ7J97UuhaAUTVZcf6iaunHslVtn34Hn5jWoD0Tq5RW57I4"
-        }
-      ]
-    },
-    {
-      "query": "car accident lawyer",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T10:40:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/press-release/story/60939/queens-car-accident-lawyer-keetick-l-sanchez-explains-the-90-day-notice-of-claim-deadline-for-nyc-accident-claims/",
-        "https://www.usatoday.com/press-release/story/60950/roanoke-car-accident-attorney-john-p-fishwick-jr-explains-why-virginia-doesnt-have-dram-shop-liability/",
-        "https://timesofindia.indiatimes.com/world/us/an-ohio-woman-fired-her-lawyers-secured-a-250000-car-accident-settlement-herself-and-faced-legal-fee-claims-november-25-judges-ruled-her-firm-must-prove-the-reasonable-value-of-its-work-not-a-contract-percentage/articleshow/136201097.cms"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqo_jRQtLTQvmEy5YJ33ZW7PyPLZN9WP7zl4rsvv93PxWTUU5jj-74L_TrgJE",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/press-release/story/60939/queens-car-accident-lawyer-keetick-l-sanchez-explains-the-90-day-notice-of-claim-deadline-for-nyc-accident-claims/",
-          "title": "Queens Car Accident Lawyer Keetick L. Sanchez Explains the 90-Day Notice of Claim Deadline for NYC Accident Claims",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTqo_jRQtLTQvmEy5YJ33ZW7PyPLZN9WP7zl4rsvv93PxWTUU5jj-74L_TrgJE"
-        },
-        {
-          "url": "https://www.usatoday.com/press-release/story/60950/roanoke-car-accident-attorney-john-p-fishwick-jr-explains-why-virginia-doesnt-have-dram-shop-liability/",
-          "title": "Roanoke Car Accident Attorney John P. Fishwick Jr. Explains Why Virginia Doesn’t Have Dram Shop Liability",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdaAf3OcVKZU-Ysr7Ccux2Y0f_p7WikRmNz8lmJrecumk7-AuJ4szq_KlW-_c"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/world/us/an-ohio-woman-fired-her-lawyers-secured-a-250000-car-accident-settlement-herself-and-faced-legal-fee-claims-november-25-judges-ruled-her-firm-must-prove-the-reasonable-value-of-its-work-not-a-contract-percentage/articleshow/136201097.cms",
-          "title": "An Ohio woman fired her lawyers, secured a $250,000 car-accident settlement herself and faced legal-fee c",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQu0jbcjWMAhGINW_5olVlTvT6PLZhQeKfY_qBimXme2l_QVa_7lf3LJtunmLk"
-        }
-      ]
-    },
-    {
-      "query": "winter weather advisory",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T10:00:00Z",
-      "related_news_urls": [
-        "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
-        "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
-        "https://sumnercountysource.com/11-26-26-moderate-snowfall-with-highs-near-47-winds-up-to-12-current-temp-36-7-precip-total-1-06-inches-expected/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E",
-      "image_credit": "News Channel 5 Nashville",
-      "news": [
-        {
-          "url": "https://www.newschannel5.com/weather/november-26-2026-winter-weather-advisory-for-most-of-middle-tn-winter-storm-warning-for-the-plateau",
-          "title": "November 26, 2026: Winter Weather Advisory for most of Middle TN, Winter Storm Warning for the Plateau.",
-          "publisher": "News Channel 5 Nashville",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIuGFc8DyqtL-EB4lWTLACepPcN97wQDRNQXjoyXYj8N59mJd61MIgP88jh-E"
-        },
-        {
-          "url": "https://newschannel9.com/weather/stormtrack-9-blog/weather-alert-winter-storm-warning-for-local-plateau-counties",
-          "title": "Weather Alert: Winter Storm Warning for local Plateau counties",
-          "publisher": "WTVC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQAxK8sob6DaP76DyMZh50BiEZ_YsLjX8YMinwV2xRKaXBbWuYNaUzh4Umb6eY"
-        },
-        {
-          "url": "https://sumnercountysource.com/11-26-26-moderate-snowfall-with-highs-near-47-winds-up-to-12-current-temp-36-7-precip-total-1-06-inches-expected/",
-          "title": "11/26/26: Moderate Snowfall With Highs Near 47, Winds Up to 12; Current Temp 36.7, Precip Total 1.06 Inches Expected",
-          "publisher": "Sumner County Source",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQW3trUZ19y0v4qMYU6azqJt-6bEGMJYmiObDdrnkkjbYY-RZDdLts_XdrLnhk"
         }
       ]
     }
