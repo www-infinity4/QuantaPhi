@@ -1,6 +1,11 @@
 import { WorkerEntrypoint } from 'cloudflare:workers';
+import { consultGeminiWriter } from './ai-collaboration.mjs';
 // Private RPC entrypoint; never exposed through the public fetch router.
 export class BrainModels extends WorkerEntrypoint {
+ // Private service RPC only; no HTTP route and no automatic provider fallback.
+ async writer(options){
+  return consultGeminiWriter(this.env,options);
+ }
  async plan(snapshot){
   if(!this.env.GEMINI_API_KEY)throw Error('gemini_key_not_configured');
   const list=await fetch('https://generativelanguage.googleapis.com/v1beta/models',{

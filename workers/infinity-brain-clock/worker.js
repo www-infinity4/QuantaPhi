@@ -1,6 +1,6 @@
 import {attachTechnicalHandoff} from './technical-handoff.mjs';
 import {ownerContinuitySnapshot} from './continuity-snapshot.mjs';
-import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,validateColorThoughtResponse} from './color-core.mjs';
+import {COLOR_MODEL,colorCoreProfile,colorCoreSystemPrompt,validateColorThoughtRequest,colorInferenceReceipt} from './color-core.mjs';
 import {scopedRepositoryJob} from './assigned-job-scope.mjs';
 import {extractAssignedColorTask,runColorHandoffs} from './color-handoff.mjs';
 import {pinnedPinkReview,pinkReviewHasActiveRepair,validatePinkSourceReceipt,completePinkReviewInContext,prioritizeReadOnlyPinkReviews,verifyPinkTestProvenance} from './source-review.mjs';
@@ -693,11 +693,8 @@ export class BrainClock extends DurableObject{
      {role:'user',content:JSON.stringify({job:{id:lease.jobId,repository:lease.repository},
        task:input.task,evidence:input.evidence})}
     ],max_tokens:1600,temperature:0.1});
-    const parsed=validateColorThoughtResponse(rawParsed,input.profile);
-    return Response.json({ok:true,status:'model_inference_completed',provider:input.profile.provider,
-     model:input.profile.model,color:input.profile.color,layers:input.profile.layers,
-     appendages:input.profile.appendages,toolRequestsAreNotExecution:true,
-     authorizedOperationsPerformed:false,...parsed});
+    return Response.json(colorInferenceReceipt(input.profile,rawParsed,
+     {provider:'cloudflare-workers-ai',model:COLOR_MODEL}));
    }
    // A single ticket can contain unrelated subjobs. Prevent a broad parent
    // request from silently becoming mandatory acceptance for each child.

@@ -54,3 +54,23 @@ test('model inputs cannot change own color schema or include unbounded evidence'
  const p=validateColorThoughtRequest({color:'green',task:'Fix the card',evidence:{sourceDigest:'abc'}});
  assert.deepEqual(p.profile.layers,['green','yellow','blue','pink','red','white']);
 });
+
+
+test('color receipt records the actual server-selected provider, not a model-supplied label',async()=>{
+ const {colorInferenceReceipt}=await import('../workers/infinity-brain-clock/color-core.mjs');
+ const p=colorCoreProfile('green');
+ const result={finding:'Fixture',nextAction:'Inspect source',blockers:[],toolRequests:[]};
+ const existing=colorInferenceReceipt(p,result,{provider:'cloudflare-workers-ai',model:COLOR_MODEL});
+ assert.equal(existing.provider,'cloudflare-workers-ai');
+ assert.equal(existing.model,COLOR_MODEL);
+ const alternate=colorInferenceReceipt(p,result,{provider:'gemini',model:'gemini-2.5-flash'});
+ assert.equal(alternate.provider,'gemini');
+ assert.equal(alternate.model,'gemini-2.5-flash');
+ assert.equal(alternate.status,'model_inference_completed');
+ assert.equal(alternate.toolRequestsAreNotExecution,true);
+ assert.equal(alternate.authorizedOperationsPerformed,false);
+ assert.deepEqual(alternate.layers,p.layers);
+ assert.throws(()=>colorInferenceReceipt(p,{...result,provider:'gemini'},{provider:'cloudflare-workers-ai',model:COLOR_MODEL}),/schema_invalid/);
+ assert.throws(()=>colorInferenceReceipt(p,result,{provider:'gemini',model:COLOR_MODEL}),/provider_receipt_invalid/);
+ assert.throws(()=>colorInferenceReceipt(p,result,{}),/provider_receipt_invalid/);
+});
