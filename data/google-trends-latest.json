@@ -3,157 +3,131 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T05:30:49.768710Z",
+  "checked_at": "2026-11-27T06:01:32.443953Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "cox",
+      "query": "michael douglas",
       "approx_searches": "200+",
-      "published_at": "2026-11-27T05:10:00Z",
+      "published_at": "2026-11-27T05:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "gta 6 pc port",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T05:40:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
-        "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
-        "https://californiaglobe.com/fr/charter-cox-mergers-billion-dollar-cuts-will-likely-cost-california-jobs-while-expanding-a-broadband-monopoly/"
+        "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges",
+        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k",
-      "image_credit": "Yahoo Finance",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuRToii54l7Deix7HDKynpvjgurf_8sQRXn5aR91fQJXc_pJ2TXblsi02t_fw",
+      "image_credit": "TechPowerUp",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
-          "title": "Why Charter Communications Stock Is Back In Focus After $2 Billion Cost Saving Plan",
-          "publisher": "Yahoo Finance",
+          "url": "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges",
+          "title": "GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges",
+          "publisher": "TechPowerUp",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuRToii54l7Deix7HDKynpvjgurf_8sQRXn5aR91fQJXc_pJ2TXblsi02t_fw"
         },
         {
-          "url": "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
-          "title": "CHTR climbs around 3.5% after major advisory firms boost holdings and technical signals turn bullish",
-          "publisher": "Traders Union",
+          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+          "publisher": "IGN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6-umvx5F4O1OCWVtQk_wk5jg0XD6mVK5rzSv7rknlixwMdK-JYF92j116g94"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
         },
         {
-          "url": "https://californiaglobe.com/fr/charter-cox-mergers-billion-dollar-cuts-will-likely-cost-california-jobs-while-expanding-a-broadband-monopoly/",
-          "title": "Charter-Cox Merger’s Billion-Dollar Cuts Will Likely Cost California Jobs While Expanding a Broadband Monopoly",
-          "publisher": "California Globe",
+          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL6GFyWPLomKNL0o1rSIJXGAXu5dO29RfNX-nv5bzzmv_gKVRFzQvE6oH8zRY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
         }
       ]
     },
     {
-      "query": "jd",
+      "query": "jessica biel",
       "approx_searches": "1000+",
-      "published_at": "2026-11-27T05:00:00Z",
+      "published_at": "2026-11-27T05:30:00Z",
       "related_news_urls": [
-        "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
-        "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
-        "https://thehill.com/homenews/administration/6244532-trump-obama-cnn-army-iowa-lead-azide-detonation/"
+        "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
+        "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+        "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18",
-      "image_credit": "WQAD",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8",
+      "image_credit": "The Hollywood Reporter",
       "news": [
         {
-          "url": "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
-          "title": "US Army releases post-detonation maps of potential lead dust exposure",
-          "publisher": "WQAD",
+          "url": "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
+          "title": "Justin Timberlake Documentary Trailer: “He’s Not Who I Thought He Was”",
+          "publisher": "The Hollywood Reporter",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8"
         },
         {
-          "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
-          "title": "Iowa lead detonation testing results expected soon, EPA says",
-          "publisher": "CBS News",
+          "url": "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
+          "title": "Apple TV announces four-part documentary event “TIMBERLAKE”",
+          "publisher": "Apple",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj6xIWUDJ-rIYD33dRDEpfQCEEolarwHnaD1nDdbppjqkIro-SBM0eay0bJ2Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc"
         },
         {
-          "url": "https://thehill.com/homenews/administration/6244532-trump-obama-cnn-army-iowa-lead-azide-detonation/",
-          "title": "Trump rips Obama, CNN as he touts ‘perfect’ Iowa detonation",
-          "publisher": "The Hill",
+          "url": "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/",
+          "title": "Justin Timberlake opens up about ex Britney Spears in docuseries trailer",
+          "publisher": "Global News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM7WNrrmuV8vZqXSmnAM0yhbjqCltrgZOngX6wagsE45tTXmnq-U-cEZ9kiE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-5o_OGl7sNzJrvfnRUkiVMTRkMFh11uhtAOEV3i324_-5xxcdYdNxHq3VpU"
         }
       ]
     },
     {
-      "query": "bill murray",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T04:50:00Z",
+      "query": "andy richter",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T05:30:00Z",
       "related_news_urls": [
-        "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
-        "https://demokratis.co.id/en/bill-murray-music-film-television",
-        "https://hoodline.com/2026/11/bill-murray-brings-blues-rock-tour-to-st-louis-for-mike-zito-s-hometown-show/"
+        "https://www.imdb.com/de/news/ni66129781/?ref_=tt_nwr_1",
+        "https://wgnradio.com/dave-plier/andy-richter-on-his-new-elf-book-and-20-years-of-late-night-television-with-conan-obrien/",
+        "https://www.cinemablend.com/movies/elf-holiday-classic-now-andy-richter-jon-favreau-admits-risky-business-movie-release"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M",
-      "image_credit": "FOX 2",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAS4LCoKV9pgaSRMoNgqLyVzUWKp-rXUBxEuWsJ3By2QdZEO7fLpl8exJ46gg",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
-          "title": "Mike Zito Joins Studio STL to Talk About Bill Murray and the Blood Brothers Bringing their Blues-Rock Tour Finale to St. Louis",
-          "publisher": "FOX 2",
+          "url": "https://www.imdb.com/de/news/ni66129781/?ref_=tt_nwr_1",
+          "title": "Beloved Christmas Classic’s Surprising Original Casting Plans Revealed 23 Years Later",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAS4LCoKV9pgaSRMoNgqLyVzUWKp-rXUBxEuWsJ3By2QdZEO7fLpl8exJ46gg"
         },
         {
-          "url": "https://demokratis.co.id/en/bill-murray-music-film-television",
-          "title": "Bill Murray Expands His Career Through Music Film and Television",
-          "publisher": "Demokratis.co.id",
+          "url": "https://wgnradio.com/dave-plier/andy-richter-on-his-new-elf-book-and-20-years-of-late-night-television-with-conan-obrien/",
+          "title": "Andy Richter on his new ‘Elf’ Book and 20 years of Late Night Television with Conan O’Brien",
+          "publisher": "WGN Radio 720",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhZ5frvXZL30HwDM34dLiQ5VF0sL8jQNRkdasU6BZZDPtJTcUpFTH6bMB3JK8"
         },
         {
-          "url": "https://hoodline.com/2026/11/bill-murray-brings-blues-rock-tour-to-st-louis-for-mike-zito-s-hometown-show/",
-          "title": "Bill Murray & Blood Brothers Play The Factory in St. Louis",
-          "publisher": "Hoodline",
+          "url": "https://www.cinemablend.com/movies/elf-holiday-classic-now-andy-richter-jon-favreau-admits-risky-business-movie-release",
+          "title": "Elf Is A Holiday Classic Now, But One Star Admits It Was ‘Risky’ Business At The Time",
+          "publisher": "Cinemablend",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXack2-mSxr0wmav0SCZhv3KcLi_X-NfO5-4kJxLS5PVhktalIeVoTZryQDw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC5CWg797Upu-0odwKOp0I5RyWnOLJMbtbuQ-e7vdWmm4IsAbVJzpKJ5f5IlU"
         }
       ]
     },
     {
-      "query": "deion sanders",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T04:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50585728/colorado-sanders-shrugs-hot-seat-chatter-ucf",
-        "https://www.foxnews.com/outkick-sports/colorado-buffaloes-coach-deion-sanders-latest-arrogant-comments-raise-serious-concerns-ability-lead",
-        "https://sports.yahoo.com/general/articles/deion-sanders-reportedly-likely-fired-014741563.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2PHCy-F3aME43m2Gz9DuUVxbHqIRj7ZfxEuzAyx_ddbVJqc7MRXmQ9hACx0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50585728/colorado-sanders-shrugs-hot-seat-chatter-ucf",
-          "title": "Colorado's Deion Sanders shrugs off hot-seat chatter before UCF",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2PHCy-F3aME43m2Gz9DuUVxbHqIRj7ZfxEuzAyx_ddbVJqc7MRXmQ9hACx0"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/colorado-buffaloes-coach-deion-sanders-latest-arrogant-comments-raise-serious-concerns-ability-lead",
-          "title": "Colorado Buffaloes coach Deion Sanders' latest arrogant comments raise serious concerns over ability to lead",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVRMB3FAGZbvzOg89iIoJcwbvuuThaY4693oeAORG80dBUrw-EqUVY05V6mXg"
-        },
-        {
-          "url": "https://sports.yahoo.com/general/articles/deion-sanders-reportedly-likely-fired-014741563.html",
-          "title": "Deion Sanders reportedly likely to get fired this weekend no matter what",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTwsKCreQDBnFiDXoPZFkYxOmES3cq5Nwyelm7fWr30KTyquLD4CKNlw45TM0U"
-        }
-      ]
-    },
-    {
-      "query": "iran war",
+      "query": "kuwait attack today",
       "approx_searches": "10000+",
-      "published_at": "2026-11-27T04:40:00Z",
+      "published_at": "2026-11-27T05:20:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
         "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
-        "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html"
+        "https://www.cnn.com/2026/11/26/middleeast/italians-killed-iranian-attack-kuwait-intl"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ75Sa1AWaewLJjBlvWbvX86HSceZ2c1ohT90zuMBb1iOGgOwkB4MRPHVQKFuc",
       "image_credit": "Al Jazeera",
@@ -173,186 +147,186 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0qWT-bc1orYIeRX-z0WmibxAGh4wL_ZUC3lOqDPhYvIxyV46E2U1uT4wwj0I"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-          "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
-          "publisher": "CNBC",
+          "url": "https://www.cnn.com/2026/11/26/middleeast/italians-killed-iranian-attack-kuwait-intl",
+          "title": "Two Italians killed in alleged Iranian drone attack on Kuwait; Tehran denies involvement",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYVGBpxOEN8xgn7jFZEolgzMQsB0PiIwUGlPGIwVDIC1-2BXfVaL4njh7lLc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTOT314go5dOZwGNL1kq6BZQjsVWN2i-oOM0v86u9sYuSnNgWUxCN74ybl5zgk"
         }
       ]
     },
     {
-      "query": "omaha basketball",
+      "query": "cox",
       "approx_searches": "200+",
-      "published_at": "2026-11-27T04:40:00Z",
+      "published_at": "2026-11-27T05:10:00Z",
       "related_news_urls": [
-        "https://www.unothegateway.com/sports/mavs-aggies-engage-in-overtime-thriller-to-kick-off-feast-week/article_3234c4ae-8769-4575-a285-4416dd7a77c9.html",
-        "https://www.kens5.com/article/syndication/associatedpress/stokes-esso-essis-lead-uc-davis-to-80-78-ot-win-over-omaha/616-1043749e-4893-4ddc-84fb-0c103f5ae64a",
-        "https://www.flohoops.com/articles/16451899-2026-resorts-world-las-vegas-classic-everything-to-know"
+        "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
+        "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
+        "https://www.quiverquant.com/news/Charter+Communications+Rises+as+Investors+Weigh+Cost+Cuts%2C+Cox+Integration%2C+and+Recent+Analyst+Support"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8vVwB_777ejS5EMp_xKQUeg8OZD2rAut4lPUoDwj0yZ8b-W-c-2_xDIay6aw",
-      "image_credit": "The Gateway",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.unothegateway.com/sports/mavs-aggies-engage-in-overtime-thriller-to-kick-off-feast-week/article_3234c4ae-8769-4575-a285-4416dd7a77c9.html",
-          "title": "Mavs, Aggies engage in overtime thriller to kick off ‘Feast Week’",
-          "publisher": "The Gateway",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
+          "title": "Why Charter Communications Stock Is Back In Focus After $2 Billion Cost Saving Plan",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8vVwB_777ejS5EMp_xKQUeg8OZD2rAut4lPUoDwj0yZ8b-W-c-2_xDIay6aw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k"
         },
         {
-          "url": "https://www.kens5.com/article/syndication/associatedpress/stokes-esso-essis-lead-uc-davis-to-80-78-ot-win-over-omaha/616-1043749e-4893-4ddc-84fb-0c103f5ae64a",
-          "title": "Stokes, Esso-Essis lead UC Davis to 80-78 OT win over Omaha",
-          "publisher": "kens5.com",
+          "url": "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
+          "title": "CHTR climbs around 3.5% after major advisory firms boost holdings and technical signals turn bullish",
+          "publisher": "Traders Union",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn9YbFxZ2ObFzc8x6KJ7Qhw2lBGv_OmRRuEu5BdLs9jG7pVFLhLh78aGUNaGg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6-umvx5F4O1OCWVtQk_wk5jg0XD6mVK5rzSv7rknlixwMdK-JYF92j116g94"
         },
         {
-          "url": "https://www.flohoops.com/articles/16451899-2026-resorts-world-las-vegas-classic-everything-to-know",
-          "title": "2026 Resorts World Las Vegas Classic: Everything To Know, Why And How To Watch",
-          "publisher": "FloHoops",
+          "url": "https://www.quiverquant.com/news/Charter+Communications+Rises+as+Investors+Weigh+Cost+Cuts%2C+Cox+Integration%2C+and+Recent+Analyst+Support",
+          "title": "Charter Communications Rises as Investors Weigh Cost Cuts, Cox Integration, and Recent Analyst Support",
+          "publisher": "Quiver Quantitative",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6_LTscQbwjZD2S87UUMll0nN0H-IO6ez5DBrI9QM4805Mpw-j7_j6uPzLCEc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLBE_sQyujp_BZquHlymSnfTsLkUXHhxBlorrcY513qzKgLM4FIr1GLC9DE5Q"
         }
       ]
     },
     {
-      "query": "from tv show netflix ranking",
+      "query": "alphonso smith",
       "approx_searches": "200+",
-      "published_at": "2026-11-27T04:40:00Z",
+      "published_at": "2026-11-27T05:10:00Z",
       "related_news_urls": [
-        "https://collider.com/from-streaming-success-netflix-november-2026/",
-        "https://deadline.com/2026/11/from-mgm-series-netflix-streaming-viewership-1237229607/",
-        "https://screenrant.com/from-tv-stephen-king-comparisons-7-billion-minutes-streaming/"
+        "https://www.tmz.com/2026/11/24/alphonso-smith-jr-cause-of-death-revealed/",
+        "https://www.pennlive.com/sports/2026/11/cause-of-death-revealed-for-former-nfl-player-who-died-at-40.html",
+        "https://dailyvoice.com/article/former-nfl-player-dies-suddenly-at-40-new-report-details-tragic-circumstances/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkaLQH11fCx3I9Zkop4okuDiJvrsfp7zvXEP1BGNOhkQeixWS6sJSDaVsE9E",
-      "image_credit": "Collider",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXZeDWUlHTMZksXP4bBfe-bb4MVJywSiM8mGclGLjAbQH5GTLxUp8tFG7LJY",
+      "image_credit": "TMZ",
       "news": [
         {
-          "url": "https://collider.com/from-streaming-success-netflix-november-2026/",
-          "title": "TV’s Best Sci-Fi Thriller Is Officially the New King of Netflix",
-          "publisher": "Collider",
+          "url": "https://www.tmz.com/2026/11/24/alphonso-smith-jr-cause-of-death-revealed/",
+          "title": "Former NFL Player Alphonso Smith Jr. Cause of Death Revealed",
+          "publisher": "TMZ",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkaLQH11fCx3I9Zkop4okuDiJvrsfp7zvXEP1BGNOhkQeixWS6sJSDaVsE9E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRDXZeDWUlHTMZksXP4bBfe-bb4MVJywSiM8mGclGLjAbQH5GTLxUp8tFG7LJY"
         },
         {
-          "url": "https://deadline.com/2026/11/from-mgm-series-netflix-streaming-viewership-1237229607/",
-          "title": "‘From’ Lures Over 5 Billion Minutes Viewed In 3 Weeks After MGM+ Series Lands On Netflix",
-          "publisher": "Deadline",
+          "url": "https://www.pennlive.com/sports/2026/11/cause-of-death-revealed-for-former-nfl-player-who-died-at-40.html",
+          "title": "Cause of death revealed for former NFL player who died at 40",
+          "publisher": "PennLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVouwuIf32cKezrjHJwh-52ga-KPdtGP_cbqe9A7u9wYDi5Oj90oYXN0puSqg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTI2sVXxsuW3h7Ln1JJNcZDiQCbpMishxwFWIanf3AGtiYt2wpKHrJKF9V-AVA"
         },
         {
-          "url": "https://screenrant.com/from-tv-stephen-king-comparisons-7-billion-minutes-streaming/",
-          "title": "Stephen King-Like Horror Series Nears 7 Billion Minutes Viewed Ahead Of 2027 Return",
-          "publisher": "ScreenRant",
+          "url": "https://dailyvoice.com/article/former-nfl-player-dies-suddenly-at-40-new-report-details-tragic-circumstances/",
+          "title": "Former NFL Player Dies Suddenly At 40: New Report Details Tragic Circumstances",
+          "publisher": "DailyVoice.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMZvLAi0fUBfCOZ2Yd-wlHwpLLeEvu82QjAIsQIRXIWn37tNOz8VzwruNM_v0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6RihKprreS37-Qkg-QhPzfnuGHUCFTiZRZopww5XmlYtOe1nB5dEjgK8H-es"
         }
       ]
     },
     {
-      "query": "bills nfl standings",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-27T04:30:00Z",
+      "query": "jd",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T05:00:00Z",
       "related_news_urls": [
-        "https://www.buffalorumblings.com/buffalo-bills-nfl-playoffs/146497/afc-playoff-picture-buffalo-bills-one-seed-chiefs-thanksgiving",
-        "https://www.nfl.com/videos/marc-ross-examines-bills-path-to-potentially-clinching-afc-s-no-1-seed-in-2026-nfl-gameday-final",
-        "https://www.sportsline.com/insiders/nfl-odds-picks-bills-are-the-team-to-beat-in-the-afc-but-the-projections-say-another-team-provides-the-value/"
+        "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
+        "https://www.cbsnews.com/chicago/news/iowa-army-blast-lead-epa-zero/",
+        "https://www.cnn.com/2026/11/25/us/iowa-lead-detonation-what-next"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46zM3C2mNi3d-K2YFoVK3qKPWwie5qKftWt1VQTgtxBjVKminkW2XwiswrCM",
-      "image_credit": "Buffalo Rumblings",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18",
+      "image_credit": "WQAD",
       "news": [
         {
-          "url": "https://www.buffalorumblings.com/buffalo-bills-nfl-playoffs/146497/afc-playoff-picture-buffalo-bills-one-seed-chiefs-thanksgiving",
-          "title": "AFC Playoff Picture: Bills secure a big conference win in chase for one seed",
-          "publisher": "Buffalo Rumblings",
+          "url": "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
+          "title": "US Army releases post-detonation maps of potential lead dust exposure",
+          "publisher": "WQAD",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46zM3C2mNi3d-K2YFoVK3qKPWwie5qKftWt1VQTgtxBjVKminkW2XwiswrCM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18"
         },
         {
-          "url": "https://www.nfl.com/videos/marc-ross-examines-bills-path-to-potentially-clinching-afc-s-no-1-seed-in-2026-nfl-gameday-final",
-          "title": "Marc Ross examines Bills' path to potentially clinching AFC's No. 1 seed in 2026 | 'NFL GameDay Final'",
-          "publisher": "NFL.com",
+          "url": "https://www.cbsnews.com/chicago/news/iowa-army-blast-lead-epa-zero/",
+          "title": "Scientists Question EPA 'Zero' Lead Readings After Iowa Army Chemical Blast",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT82zjXrmeFK-bkp2i4BagoZrSDMy8p6vVhaAV2XGthXrQR4wNzNilS-1sGSPk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1r8fvo1JKbQziIYWsSm97HjFqOxiEEAQj3RVrppl6V-gbw1QJdT09kE5Lh8"
         },
         {
-          "url": "https://www.sportsline.com/insiders/nfl-odds-picks-bills-are-the-team-to-beat-in-the-afc-but-the-projections-say-another-team-provides-the-value/",
-          "title": "NFL odds, picks: Bills are the team to beat in the AFC, but the projections say another team provides the value",
-          "publisher": "SportsLine",
+          "url": "https://www.cnn.com/2026/11/25/us/iowa-lead-detonation-what-next",
+          "title": "The government says Iowa detonation results exceeded expectations. Now what?",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6jdoGPgRTXPOvrqszFjN6N7bij5Qee2236VyIbrYBJEUpsPGdarOnbH3sawU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS24ZVrdf2DT_K7l-KZSC1u976QyYjwsb5Uv76U-qe9bO7ljzQr1WY_rtzrFNE"
         }
       ]
     },
     {
-      "query": "gonzaga basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T04:30:00Z",
-      "related_news_urls": [
-        "https://www.spokesman.com/stories/2026/nov/25/gonzaga-expecting-much-bigger-challenge-from-secon/",
-        "https://www.slipperstillfits.com/gonzaga-mens-basketball/31658/no-22-gonzaga-to-face-surging-baylor-in-semifinals-of-players-era-16",
-        "https://sports.yahoo.com/mens-college-basketball/articles/watch-baylor-basketball-vs-gonzaga-185554127.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXJTSaPUrJ0QvP1TTBUxiMnkNgukgvWZ5Rk6A4tdeF1wgnVcTwGMHxV3FFRX0",
-      "image_credit": "The Spokesman-Review",
-      "news": [
-        {
-          "url": "https://www.spokesman.com/stories/2026/nov/25/gonzaga-expecting-much-bigger-challenge-from-secon/",
-          "title": "Gonzaga expecting much bigger challenge from second Big 12 opponent at Players Era 16",
-          "publisher": "The Spokesman-Review",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXJTSaPUrJ0QvP1TTBUxiMnkNgukgvWZ5Rk6A4tdeF1wgnVcTwGMHxV3FFRX0"
-        },
-        {
-          "url": "https://www.slipperstillfits.com/gonzaga-mens-basketball/31658/no-22-gonzaga-to-face-surging-baylor-in-semifinals-of-players-era-16",
-          "title": "No. 22 Gonzaga to face surging Baylor in semifinals of Players Era 16",
-          "publisher": "The Slipper Still Fits",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSZtmFmQNc4kMkLwcZWHNXv3EKEFAmsSao4NF2amTq213iz9pgUpe4l_jeYS8M"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/watch-baylor-basketball-vs-gonzaga-185554127.html",
-          "title": "How to Watch Baylor Basketball vs. Gonzaga: TV, Storylines, Prediction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ-WK6UI7bheKSo7Um5k8VYVqGsDkv5Ld04oi_eBDQmnmqjaSZ9VGvqsGW7C8s"
-        }
-      ]
-    },
-    {
-      "query": "texas tech basketball",
+      "query": "bill murray",
       "approx_searches": "2000+",
-      "published_at": "2026-11-27T04:30:00Z",
+      "published_at": "2026-11-27T04:50:00Z",
       "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/where-to-watch-texas-tech-vs-oregon-basketball-for-free-today.html",
-        "https://247sports.com/college/texas-tech/article/texas-tech-red-raiders-college-basketball-louisville-loss-oregon-preview-293343197/",
-        "https://kcfmradio.com/2026/11/26/turkey-day-sports/"
+        "https://www.telegraph.co.uk/tv/2026/11/25/bill-murray-tom-coyne-interview/",
+        "https://www.donegaldaily.com/lifestyle/hollywood-star-bill-murrays-donegal-adventure-hits-bbc-screens-tonight-658522",
+        "https://www.limapagi.id/en/bill-murray-film-golf-music"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIdyt-wO6zi1Yi0n_QN1cY3r2Q2SZd1vXYzArapOCRPo2Y_gxfIRVTdmA8jes",
-      "image_credit": "OregonLive.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC8DbkrzubNns_tqpFJth9RJ90cScaEoZrFX6nWhGIGdUeDv0SiPGZn9iSaQE",
+      "image_credit": "The Telegraph",
       "news": [
         {
-          "url": "https://www.oregonlive.com/tv/2026/11/where-to-watch-texas-tech-vs-oregon-basketball-for-free-today.html",
-          "title": "Where to watch Texas Tech vs. Oregon basketball for free today",
-          "publisher": "OregonLive.com",
+          "url": "https://www.telegraph.co.uk/tv/2026/11/25/bill-murray-tom-coyne-interview/",
+          "title": "Bill Murray: ‘I’m not always a good guy. My friends probably suffer a great deal’",
+          "publisher": "The Telegraph",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIdyt-wO6zi1Yi0n_QN1cY3r2Q2SZd1vXYzArapOCRPo2Y_gxfIRVTdmA8jes"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQC8DbkrzubNns_tqpFJth9RJ90cScaEoZrFX6nWhGIGdUeDv0SiPGZn9iSaQE"
         },
         {
-          "url": "https://247sports.com/college/texas-tech/article/texas-tech-red-raiders-college-basketball-louisville-loss-oregon-preview-293343197/",
-          "title": "Mighty Joe and Jarret Recap Texas Tech's Loss to Louisville, Preview Oregon Matchup",
-          "publisher": "247Sports",
+          "url": "https://www.donegaldaily.com/lifestyle/hollywood-star-bill-murrays-donegal-adventure-hits-bbc-screens-tonight-658522",
+          "title": "Hollywood star Bill Murray’s Donegal adventure hits BBC screens tonight",
+          "publisher": "Donegal Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZCQdXZijMM51E26L33TshunTMWePwTtRkW08KdNEmdl-pbLhbqA0Nta2w-4g"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWV2lyOpWOPjmTVbo1mwoKBXh-pUFCDlgUVjwHpZrq4KgbClbIh0dOT8H3kxw"
         },
         {
-          "url": "https://kcfmradio.com/2026/11/26/turkey-day-sports/",
-          "title": "Turkey Day Sports",
-          "publisher": "Coast Radio",
+          "url": "https://www.limapagi.id/en/bill-murray-film-golf-music",
+          "title": "Bill Murray Expands His Career Through Film Golf and Blues Music",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymUpMi4la6-5egAQvGUPhK2Gpj1dlcDUAgqhXnR1t8n9R8fpSv1VMakqZdy8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
+        }
+      ]
+    },
+    {
+      "query": "cos",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T04:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/26/business/ecb-pablo-hernandez-de-cos.html",
+        "https://www.reuters.com/world/europe/spains-de-cos-set-be-nominated-by-eu-leaders-new-head-ecb-2026-11-26/",
+        "https://apnews.com/article/ecb-eurozone-pablo-hernandez-de-cos-lagarde-d308b6cfbe6399b131255f2a678b10e4"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_xfF1IU7kslAbloc8BvR6vbEgq54F9DeqoLN856Ep26GXgC3NoaqJrs_naGc",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/26/business/ecb-pablo-hernandez-de-cos.html",
+          "title": "European Central Bank Chooses Pablo Hernández de Cos as Next President",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_xfF1IU7kslAbloc8BvR6vbEgq54F9DeqoLN856Ep26GXgC3NoaqJrs_naGc"
+        },
+        {
+          "url": "https://www.reuters.com/world/europe/spains-de-cos-set-be-nominated-by-eu-leaders-new-head-ecb-2026-11-26/",
+          "title": "Spain's De Cos to take over as ECB president from Lagarde",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKy0wP7QgHI_bPR6y8tw01BOqMZg4M-OmY759YO-2WuAguNls4Q5DIJFJQxag"
+        },
+        {
+          "url": "https://apnews.com/article/ecb-eurozone-pablo-hernandez-de-cos-lagarde-d308b6cfbe6399b131255f2a678b10e4",
+          "title": "Leaders choose Spain’s former central bank head as next European Central Bank president",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQJd1H7R3oEyd6sot2qlDiqlIk2-raOQ-YffvImZilctp3pDCIivRa6zLMDXzM"
         }
       ]
     }
