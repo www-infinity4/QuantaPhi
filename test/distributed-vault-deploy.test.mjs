@@ -1,4 +1,5 @@
 import test from 'node:test';
+import './distributed-vault-brain-runtime.test.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=name=>readFileSync(new URL('../distributed-vault/deploy/'+name,import.meta.url),'utf8');
