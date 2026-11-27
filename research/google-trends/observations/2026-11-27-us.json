@@ -3,157 +3,52 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T18:31:27.402202Z",
+  "checked_at": "2026-11-27T19:00:59.816380Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "stars vs blues",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T18:10:00Z",
+      "query": "nhl",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T18:40:00Z",
       "related_news_urls": [
-        "https://www.nbcdfw.com/news/local/st-louis-blues-take-on-dallas-stars-looking-to-extend-home-win-streak/4111292/",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/",
-        "https://www.nytimes.com/athletic/7816328/2026/11/27/stars-vs-blues-stream-how-to-watch-nov-27/"
+        "https://www.nhl.com/utah/news/utah-vs-nashville-live-blog-11-27-26",
+        "https://sports.yahoo.com/general/videos/highly-touted-utah-prospect-gregor-172134479.html",
+        "https://thehockeynews.com/nhl/utah/latest-news/mammoth-call-up-talented-prospect-amid-growing-injury-concerns"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH64Vv_CpT88MBQ8rL3PqLiufwJTwlH3hwLcvtMiBysij6MwR88p99gW-a84U",
-      "image_credit": "NBC 5 Dallas-Fort Worth",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWwGZS7tVjCWDk7QHlbt2KFYzM2cesdpuN469wT77r_dPjQJkaLGCXuDLPU8E",
+      "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nbcdfw.com/news/local/st-louis-blues-take-on-dallas-stars-looking-to-extend-home-win-streak/4111292/",
-          "title": "St. Louis Blues take on Dallas Stars, looking to extend home win streak",
-          "publisher": "NBC 5 Dallas-Fort Worth",
+          "url": "https://www.nhl.com/utah/news/utah-vs-nashville-live-blog-11-27-26",
+          "title": "FOLLOW LIVE: Utah vs Nashville",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSH64Vv_CpT88MBQ8rL3PqLiufwJTwlH3hwLcvtMiBysij6MwR88p99gW-a84U"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWwGZS7tVjCWDk7QHlbt2KFYzM2cesdpuN469wT77r_dPjQJkaLGCXuDLPU8E"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/dallas-stars-vs-st-louis-blues-prediction-odds-2026-11-27/",
-          "title": "Dallas Stars vs St Louis Blues Prediction, Picks & Odds | 27 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTc_qkI_OX-BWf_xO8dcX8yIDIGWh-kERCo_29rP9Bbq7MPY1QUQltyw51kmZg"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7816328/2026/11/27/stars-vs-blues-stream-how-to-watch-nov-27/",
-          "title": "How to watch Stars vs. Blues: TV channel and streaming options for November 27",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRKmAi41GfdTRuDyMk8k0Mmb9G0WATtAf5pJwWFR71x0oZ-R21IphGCXM28to"
-        }
-      ]
-    },
-    {
-      "query": "kirk ferentz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T18:10:00Z",
-      "related_news_urls": [
-        "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska",
-        "https://www.si.com/college/iowa/football/iowa-football-big-ten-championship-10-wins",
-        "https://www.fox.com/watch/clip/fmc-ijvg5804nxnrscup/kirk-ferentz-on-being-the-longest-tenured-head-coach-in-college-football"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQomD0a2AWTnbRMjygAXNaR_fargDUrIcJhLHMOXxVusUdObpW2HNIIOtWqyXg",
-      "image_credit": "Black Heart Gold Pants",
-      "news": [
-        {
-          "url": "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska",
-          "title": "KIRK SPEAKS: Nebraska",
-          "publisher": "Black Heart Gold Pants",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQomD0a2AWTnbRMjygAXNaR_fargDUrIcJhLHMOXxVusUdObpW2HNIIOtWqyXg"
-        },
-        {
-          "url": "https://www.si.com/college/iowa/football/iowa-football-big-ten-championship-10-wins",
-          "title": "'If We Don't Have 10 Wins, Forget About It': Iowa Football Not Worried About Big Ten Championship",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXYNZgsYgM-OwSceyPYLjSJ67icte-N29_DUGhJJMmjrmPPv7xXr_M_LKJQ9Y"
-        },
-        {
-          "url": "https://www.fox.com/watch/clip/fmc-ijvg5804nxnrscup/kirk-ferentz-on-being-the-longest-tenured-head-coach-in-college-football",
-          "title": "Watch Kirk Ferentz on being the longest-tenured head coach in college football - Wake Up Barstool",
-          "publisher": "FOX One",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBcQat1KgPl7V5r3Mys70bn8n_qFyH5LmS4u6eskUrjl1PVn_k8iZP4fjag-4"
-        }
-      ]
-    },
-    {
-      "query": "matt rhule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T18:10:00Z",
-      "related_news_urls": [
-        "https://www.on3.com/teams/nebraska-cornhuskers/news/tunnel-talk-the-latest-intel-on-nebraska-football-recruiting-and-more-23/",
-        "https://sports.yahoo.com/college-football/articles/nebraska-recruiting-difference-week-makes-131721286.html",
-        "https://www.cornnation.com/football/106240/nebraska-football-one-for-the-road"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2cfNInDETHy3ZqbLZ240rkDIPw8Tv49FnxM1UATTlPw2CoeQrLf4k2uJxlAA",
-      "image_credit": "On3",
-      "news": [
-        {
-          "url": "https://www.on3.com/teams/nebraska-cornhuskers/news/tunnel-talk-the-latest-intel-on-nebraska-football-recruiting-and-more-23/",
-          "title": "Tunnel Talk: The latest intel on Nebraska football, recruiting, and more",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2cfNInDETHy3ZqbLZ240rkDIPw8Tv49FnxM1UATTlPw2CoeQrLf4k2uJxlAA"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/nebraska-recruiting-difference-week-makes-131721286.html",
-          "title": "Nebraska Recruiting: What a Difference a Week Makes",
+          "url": "https://sports.yahoo.com/general/videos/highly-touted-utah-prospect-gregor-172134479.html",
+          "title": "Highly-Touted Utah Prospect Gregor Biber Set to Make NHL Debut Against Nashville",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2FW-YGeupkUjGNpCL5UJ_bijoUeYlcapSnwWCLKAzoO0z5FxT9iMPMpYxprw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4XBVBivVIh8A4VCkQZG_P1GnwXCWNJ_5HuoYos1XmSK6PATM1JUDwDxp9bEM"
         },
         {
-          "url": "https://www.cornnation.com/football/106240/nebraska-football-one-for-the-road",
-          "title": "Nebraska Football: One for the Road",
-          "publisher": "Corn Nation",
+          "url": "https://thehockeynews.com/nhl/utah/latest-news/mammoth-call-up-talented-prospect-amid-growing-injury-concerns",
+          "title": "Mammoth Call Up Talented Prospect Amid Growing Injury Concerns",
+          "publisher": "The Hockey News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3ytSC3p561Qe1vdukCGZEU4uaeWgJmk99BKn3np6gPUJYuhAoM-CIPu3k5kY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7_BAvf_uz6MmaZMd9jyCw5U1cEA_WxmFh_oCFxLckUADdk-goMV3X0E-9ZzI"
         }
       ]
     },
     {
-      "query": "benjamin netanyahu",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T18:00:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
-        "https://www.timesofisrael.com/in-spectacular-flip-flop-liberman-has-become-the-architect-of-a-minority-government/",
-        "https://www.reuters.com/world/middle-east/israels-eisenkot-clinches-first-coalition-agreement-bid-form-government-2026-11-24/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa5bb9bZuBPnRWQ05qhf_OWxFZ2gQEIIunCRKBjimu-2ycEGrHjEXUTp-NDzs",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/world/2026/11/26/he-races-unseat-netanyahu-eisenkot-reaches-deal-with-left-wing-party/",
-          "title": "As he races to unseat Netanyahu, Eisenkot reaches deal with left-wing party",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQa5bb9bZuBPnRWQ05qhf_OWxFZ2gQEIIunCRKBjimu-2ycEGrHjEXUTp-NDzs"
-        },
-        {
-          "url": "https://www.timesofisrael.com/in-spectacular-flip-flop-liberman-has-become-the-architect-of-a-minority-government/",
-          "title": "In spectacular flip-flop, Liberman has become the architect of a minority government",
-          "publisher": "The Times of Israel",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRw0RHLzeyXZtdNNvbvedvCyWHgZHjnamWl5SFRPhs0D2sjqHdY1kP3NrUmHEA"
-        },
-        {
-          "url": "https://www.reuters.com/world/middle-east/israels-eisenkot-clinches-first-coalition-agreement-bid-form-government-2026-11-24/",
-          "title": "Israel's Eisenkot faces new coalition challenge as left-wing faction suspends talks",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIKl8n9QH11pa9FPM94X7urXmP8-MIAR7u6KV22EtiqCzVztPMYI2iqrdLLZc"
-        }
-      ]
-    },
-    {
-      "query": "weather thanksgiving storm",
+      "query": "storm",
       "approx_searches": "20000+",
-      "published_at": "2026-11-27T17:50:00Z",
+      "published_at": "2026-11-27T18:40:00Z",
       "related_news_urls": [
         "https://weather.com/2026/11/27/holiday/thanksgiving/east-coast-thanksgiving-storm-wind-rain-flooding",
-        "https://www.wbur.org/hereandnow/2026/11/27/storms-power-outages-flooding",
-        "https://www.foxweather.com/weather-news/watch-hectic-holiday-coastal-chaos-travel-thanksgiving"
+        "https://6abc.com/post/cleanup-begins-coastal-storm-brings-widespread-flooding-wind-damage-beach-erosion-jersey-shore/20090562/",
+        "https://www.nytimes.com/live/2026/11/26/nyregion/thanksgiving-weather-storm"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1kyPXVqGIKdMXwMNh3rWEMXbc5QuYgOg9HR0p7PZ3gHHp1wYx5GsEleWZpZw",
       "image_credit": "The Weather Channel",
@@ -166,193 +61,298 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1kyPXVqGIKdMXwMNh3rWEMXbc5QuYgOg9HR0p7PZ3gHHp1wYx5GsEleWZpZw"
         },
         {
-          "url": "https://www.wbur.org/hereandnow/2026/11/27/storms-power-outages-flooding",
-          "title": "From power outages to flooding, how storms are impacting both coasts",
-          "publisher": "WBUR",
+          "url": "https://6abc.com/post/cleanup-begins-coastal-storm-brings-widespread-flooding-wind-damage-beach-erosion-jersey-shore/20090562/",
+          "title": "Cleanup begins after coastal storm brings widespread flooding, wind damage, and beach erosion to the Jersey Shore",
+          "publisher": "6abc Philadelphia",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmhv2o30ks84UZY1PGo--05uTHrDq1A46vZMxmwqY9n08VU3IT0vAXtqECb84"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ1Lt2LX0nm-QRZj6f7heMaAnKXdWFRjsrltxM2HW_n2ZELBPJycwdnJH20anI"
         },
         {
-          "url": "https://www.foxweather.com/weather-news/watch-hectic-holiday-coastal-chaos-travel-thanksgiving",
-          "title": "Watch: Thanksgiving storm inundates coastal towns, crashes trees into homes and upends holiday travel",
-          "publisher": "FOX Weather",
+          "url": "https://www.nytimes.com/live/2026/11/26/nyregion/thanksgiving-weather-storm",
+          "title": "More Than 650,000 Without Power on East Coast",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrtk1cFtUXUCVViEeev5aH1BS3ZzfwIlhxF3Y8iZcWsq_Tu5_sIlf_Dw0Tqi4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA5xlzy6KjBeygCTFo5qMbsr8TwdJ6nGRag9FBBKk6vN1GmMZWHPs5jPejiGI"
         }
       ]
     },
     {
-      "query": "kamario taylor",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T17:50:00Z",
+      "query": "peso mexicano",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T18:40:00Z",
       "related_news_urls": [
-        "https://www.cbssports.com/college-football/news/mississippi-state-football-2027-roster-spending-kamario-taylor/",
-        "https://247sports.com/college/mississippi-state/article/2027-mississippi-state-commits-scoreboard--293338800/",
-        "https://www.si.com/college/mississippistate/football/four-recruits-mississippi-state-cannot-afford-to-lose-before-signing-day"
+        "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-viernes-27-cambio-22551964.php",
+        "https://www.milenio.com/negocios/precio-del-dolar-hoy-27-noviembre-2026-a-cuanto-cotiza-en-vivo-atm",
+        "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-retoma-la-senda-ganadora-y-alcanza-maximos-de-dos-dias-202611271750"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE",
-      "image_credit": "CBS Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRvUjMU8YjWIKO07PvecKiv2LaeDT_cjI_fFSNb-zRC5CAyW8UzzoaHekCIM8",
+      "image_credit": "Dallas News",
       "news": [
         {
-          "url": "https://www.cbssports.com/college-football/news/mississippi-state-football-2027-roster-spending-kamario-taylor/",
-          "title": "Mississippi State's dream season went up in smoke. It should overspend in 2027",
-          "publisher": "CBS Sports",
+          "url": "https://www.dallasnews.com/espanol/al-dia/mexico/article/dolar-hoy-mexico-noviembre-viernes-27-cambio-22551964.php",
+          "title": "Así está el dólar en México hoy: tipo de cambio y cotizaciones en bancos",
+          "publisher": "Dallas News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPxebwG31gSeuUljAflEjwR7wH8HAAgOgTBK--qC8yCmz1HwbIbCrSrFemupE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRvUjMU8YjWIKO07PvecKiv2LaeDT_cjI_fFSNb-zRC5CAyW8UzzoaHekCIM8"
         },
         {
-          "url": "https://247sports.com/college/mississippi-state/article/2027-mississippi-state-commits-scoreboard--293338800/",
-          "title": "Mississippi State commitment scoreboard",
+          "url": "https://www.milenio.com/negocios/precio-del-dolar-hoy-27-noviembre-2026-a-cuanto-cotiza-en-vivo-atm",
+          "title": "Precio del dólar HOY 27 de noviembre: Peso mexicano se recupera atento a tasas con UE | Tipo de cambio",
+          "publisher": "MILENIO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzo5fZrPwnC17VzKkI4VWg34gOrkHcGzqdpybws49lLOz982fVjNjfj1eo6UY"
+        },
+        {
+          "url": "https://www.fxstreet.es/news/usd-mxn-el-peso-mexicano-retoma-la-senda-ganadora-y-alcanza-maximos-de-dos-dias-202611271750",
+          "title": "USD/MXN: El Peso mexicano retoma la senda ganadora y alcanza máximos de dos días",
+          "publisher": "FXStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHAJZZG-jIgAsH2PS9DgSur5kalymBNRWDdLytBaMq4O4XlBD7eik4HZlw3Z0"
+        }
+      ]
+    },
+    {
+      "query": "iowa state basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T18:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/iowa-state/article/iowa-state-basketball-preview-vs-st-johns--293370815/",
+        "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/27/iowa-state-st-johns-basketball-tv-channel-how-to-watch/92975797007/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/players-era-festival-game-thread-171348667.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTyTyg50WZPAAP5cyYSvnhlX4eSUn-j260VXqxmScDyU553E3xqEtF2-BG4Q",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/iowa-state/article/iowa-state-basketball-preview-vs-st-johns--293370815/",
+          "title": "Pick and Preview: Iowa State vs. St. John's in Player's Era",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGBQ4IYw3aZ4He-3AVs5v4-CUa0S35MkFXJm6T6-udq8H2ikZ-aJ9GP96K_ek"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFTyTyg50WZPAAP5cyYSvnhlX4eSUn-j260VXqxmScDyU553E3xqEtF2-BG4Q"
         },
         {
-          "url": "https://www.si.com/college/mississippistate/football/four-recruits-mississippi-state-cannot-afford-to-lose-before-signing-day",
-          "title": "Four Recruits Mississippi State Cannot Afford to Lose Before Signing Day",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/basketball-mens/2026/11/27/iowa-state-st-johns-basketball-tv-channel-how-to-watch/92975797007/",
+          "title": "How to watch Iowa State basketball vs St. John's on Friday | TV info",
+          "publisher": "The Des Moines Register",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTruvtYvdcSkzHqh0R_D26NCk1EQotWhNIJJ3ErjHrIxBQlhtSM1hyUB6_Uil4"
-        }
-      ]
-    },
-    {
-      "query": "jonathan frakes",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T17:30:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/story/2026-11-27/star-trek-jonathan-frakes-reveals-cancer-battle",
-        "https://people.com/star-trek-actor-jonathan-frakes-says-an-unexpected-symptom-led-to-his-bladder-cancer-diagnosis-12281233",
-        "https://ew.com/star-trek-jonathan-frakes-bladder-cancer-diagnosis-symptoms-12279884"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJLukKYUh-JeiJpGWv9lbIxo4KaR3mMIcXPze1RCzTPunC32Ri7bQKW3OW-o",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/story/2026-11-27/star-trek-jonathan-frakes-reveals-cancer-battle",
-          "title": "Beloved ‘Star Trek’ No. 1 Jonathan Frakes reveals his battle with cancer",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJLukKYUh-JeiJpGWv9lbIxo4KaR3mMIcXPze1RCzTPunC32Ri7bQKW3OW-o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZcS7lVF3CovD3ZyaOgVwS82m1TkaOvDPrgX8GjsS3g5aqMWmuHiEbA18MQhU"
         },
         {
-          "url": "https://people.com/star-trek-actor-jonathan-frakes-says-an-unexpected-symptom-led-to-his-bladder-cancer-diagnosis-12281233",
-          "title": "‘Star Trek’ Actor Jonathan Frakes Says an Unexpected Symptom Led to His Bladder Cancer Diagnosis",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSdC8UV4gahn3UU_X8DxXmbLkCrCftDqUoxem29OYjPn4QgHRu-0_MiFttk5bk"
-        },
-        {
-          "url": "https://ew.com/star-trek-jonathan-frakes-bladder-cancer-diagnosis-symptoms-12279884",
-          "title": "‘Star Trek’ actor Jonathan Frakes reveals unusual symptom before bladder cancer diagnosis",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_miwOteeyrLb4kaEonRqQtEsgREsXTThYGu97Nlq2dbYIHLI5nqwnr_KSW-A"
-        }
-      ]
-    },
-    {
-      "query": "hank brown",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T17:20:00Z",
-      "related_news_urls": [
-        "https://www.kcci.com/article/iowa-football-hank-brown-high-school-coach-trent-dilfer/74542685",
-        "https://www.limapagi.id/en/dilfer-praises-iowa-quarterback-brown",
-        "https://247sports.com/video/the-use-of-hank-browns-running-ability-in-iowas-offense-swarmcast-14744667/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0",
-      "image_credit": "KCCI",
-      "news": [
-        {
-          "url": "https://www.kcci.com/article/iowa-football-hank-brown-high-school-coach-trent-dilfer/74542685",
-          "title": "Super Bowl champ Trent Dilfer reflects on coaching Hank Brown in high school",
-          "publisher": "KCCI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiWr5kIx9n_HFuhe3CsMCFzGbTS_ypu_VoCwvsXoF2tcWtBQybOM0Dv6FANs0"
-        },
-        {
-          "url": "https://www.limapagi.id/en/dilfer-praises-iowa-quarterback-brown",
-          "title": "Dilfer Praises Iowa QB Brown Ahead of Nebraska Rivalry Game",
-          "publisher": "Limapagi",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4t-WRQj1c9ag7jvmTUaDur38s-O8db-SVS6hbuv_3cR4smY3gajJMOGjibXg"
-        },
-        {
-          "url": "https://247sports.com/video/the-use-of-hank-browns-running-ability-in-iowas-offense-swarmcast-14744667/",
-          "title": "The Use Of Hank Brown's Running Ability In Iowa's Offense | SwarmCast",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSSJ33E3rTbD5Ra8HyGEWMPCufWxiJj-7fBeroC6_TrgMl19EBjLp6a4tvteQ"
-        }
-      ]
-    },
-    {
-      "query": "ncaaf",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T17:20:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-steelers-broncos-nfl-black-friday/",
-        "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-26-148399",
-        "https://www.crossingbroad.com/news/sports-gambling/draftkings-promo-code-claim-200-bonus-for-thanksgiving-nfl-nov-26/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/draftkings-promo-code-claim-200-bonus-bets-free-nba-league-pass-steelers-broncos-nfl-black-friday/",
-          "title": "DraftKings promo code: Claim $200 bonus bets, free NBA League Pass for Steelers-Broncos, NFL on Black Friday",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0UWtdjR6YwDAMqpPYBonf3U36cjy-A2fRzC9-eptGCgHyrNjDbkB88O0umi8"
-        },
-        {
-          "url": "https://www.rotowire.com/news/nba-league-pass-free-trial-3-months-of-nba-league-pass-free-nov-26-148399",
-          "title": "NBA League Pass Tree Trial: How to Get a Free Trial of NBA League Pass",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4_Zxo-Z8LZ621O1i-RymWquFVLwTR3-ULUDHDesNLTxc6HjFpU66amzTGpT4"
-        },
-        {
-          "url": "https://www.crossingbroad.com/news/sports-gambling/draftkings-promo-code-claim-200-bonus-for-thanksgiving-nfl-nov-26/",
-          "title": "DraftKings Promo Code: Claim $200 Bonus for Thanksgiving NFL (Nov. 26)",
-          "publisher": "Crossing Broad",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRNjJLbO0nFg90lbfhotUzZAm8vVWfIXpqL1lTn2i7oTz5dDzpMI0De33KLnEU"
-        }
-      ]
-    },
-    {
-      "query": "maple leafs vs bruins",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T17:10:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/27/sports/bruins-maple-leafs-preview-november-27-matinee/",
-        "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
-        "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs8V5fOQdzpkTHp9WkXYXoNq9jQeYunmMZ-EO_9CGXOND1K74Rp9ePL_qU3bo",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/27/sports/bruins-maple-leafs-preview-november-27-matinee/",
-          "title": "Maple Leafs at Bruins preview: Can Boston end its home struggles in Friday’s matinee?",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSs8V5fOQdzpkTHp9WkXYXoNq9jQeYunmMZ-EO_9CGXOND1K74Rp9ePL_qU3bo"
-        },
-        {
-          "url": "https://sports.yahoo.com/nhl/articles/black-friday-rivalry-showdown-bruins-165719098.html",
-          "title": "Black Friday Rivalry Showdown: Bruins Host Maple Leafs",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/players-era-festival-game-thread-171348667.html",
+          "title": "Players Era Festival game thread: St. John’s men’s basketball vs. Iowa State",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWn9Zz4GmPuZNko9_I5_vsT152f8jD8qwFw9W1hcUoL47fO4ezrNexkNIlENA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS7PRSCT_Ys4hO1bPuVKD96NWJfwl8PnHREwB2PH4eKMX1Ixma582Sr0wUKPjY"
+        }
+      ]
+    },
+    {
+      "query": "memphis basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T18:40:00Z",
+      "related_news_urls": [
+        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/26/memphis-basketball-vs-wake-forest-preview-prediction/92733639007/",
+        "https://247sports.com/college/wake-forest/article/wake-forest-seeks-battle-4-atlantis-title-in-matchup-versus-no-24-memphis--293342171/",
+        "https://www.sportsgambler.com/betting-tips/basketball/wake-forest-demon-deacons-vs-memphis-tigers-prediction-odds-2026-11-27/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLif070YOwHY5WoO5-r0n4xOopZa6_Ctfgj0T4zG0N4pLkvErpla5uDFqxxUk",
+      "image_credit": "The Commercial Appeal",
+      "news": [
+        {
+          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/26/memphis-basketball-vs-wake-forest-preview-prediction/92733639007/",
+          "title": "Will Memphis basketball avenge last season's loss to Wake Forest? Our prediction",
+          "publisher": "The Commercial Appeal",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQLif070YOwHY5WoO5-r0n4xOopZa6_Ctfgj0T4zG0N4pLkvErpla5uDFqxxUk"
         },
         {
-          "url": "https://www.nhl.com/mapleleafs/video/hiller-pre-game-vs-boston-bruins-november-27-2026-6408956246112",
-          "title": "Jim Hiller | Pre Game vs Boston Bruins | November 27, 2026",
-          "publisher": "NHL.com",
+          "url": "https://247sports.com/college/wake-forest/article/wake-forest-seeks-battle-4-atlantis-title-in-matchup-versus-no-24-memphis--293342171/",
+          "title": "Wake Forest seeks Battle 4 Atlantis title in matchup versus No. 24 Memphis",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHBgVMiMwnR9UWPM5J1cKhpBDzFbEwFqgjNxcqDAt59UrKvM_ZgLF2ZV0Ahqs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQf6jCcSWLekjHY__nsYr24xtdUqyElAB7v4edWqfgdVHivRtMj7ZlyP81Ygh4"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/basketball/wake-forest-demon-deacons-vs-memphis-tigers-prediction-odds-2026-11-27/",
+          "title": "Wake Forest vs Memphis Prediction, Picks & Odds | 27 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUkYa8HbfQjTdus_beAWWPjH8t3NqKWY1DCmdyN1VRMnTTUMoBGvbeafj5Nm4"
+        }
+      ]
+    },
+    {
+      "query": "jojo siwa",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:40:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/jojo-siwa-chris-hughes-split-181500020.html",
+        "https://www.eonline.com/photos/38421/jojo-siwa-chris-hughes-romance-rewind",
+        "https://www.thesun.co.uk/tvandshowbiz/41168946/jojo-siwa-chris-hughes-split-fears/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfAPppc2GruRTb-qUmodXRxy51E31NMxdOFZ3VCyh3xP-fWZOcFNNmnQ3NzT8",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/jojo-siwa-chris-hughes-split-181500020.html",
+          "title": "JoJo Siwa and Chris Hughes Split After a Year and a Half Together: ‘She Needed to Choose Herself’ (Exclusive Source)",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfAPppc2GruRTb-qUmodXRxy51E31NMxdOFZ3VCyh3xP-fWZOcFNNmnQ3NzT8"
+        },
+        {
+          "url": "https://www.eonline.com/photos/38421/jojo-siwa-chris-hughes-romance-rewind",
+          "title": "Jojo Siwa & Chris Hughes: Romance Rewind",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQunUvyrXGIt3FpQ8XVgz7QFlpr6WoZso2S6uglORVDATFEgONxgoahHg-0u_s"
+        },
+        {
+          "url": "https://www.thesun.co.uk/tvandshowbiz/41168946/jojo-siwa-chris-hughes-split-fears/",
+          "title": "Is this proof that JoJo Siwa and Chris Hughes have SPLIT? Brother’s ‘snub’, clashing futures & podcast spat spark fears",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCW1R1YtGVJghOERfCeW1YBgOoDHQwutvhkOR4857VnyMJKTB-ryaP9rqKRUg"
+        }
+      ]
+    },
+    {
+      "query": "aleksandr lukashenko",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:40:00Z",
+      "related_news_urls": [
+        "https://nashaniva.com/en/410242",
+        "https://president.gov.by/en/events/vizity-v-gosudarstva-persidskogo-zaliva-i-ugo-vostocnoj-azii",
+        "https://www.vietnam.vn/en/tong-thong-belarus-aleksandr-lukashenko-lan-thu-4-tham-viet-nam-dinh-vi-thuoc-do-thanh-cong-cua-quan-he-doi-tac-chien-luoc"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAoq4r2grNZRlNtrWgh-ASrLYK5DkEO_M29FNgkxq3VoVCm9W3yE2mFF7XqME",
+      "image_credit": "Наша Ніва",
+      "news": [
+        {
+          "url": "https://nashaniva.com/en/410242",
+          "title": "Lukashenka's Plane Departs for Oman",
+          "publisher": "Наша Ніва",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAoq4r2grNZRlNtrWgh-ASrLYK5DkEO_M29FNgkxq3VoVCm9W3yE2mFF7XqME"
+        },
+        {
+          "url": "https://president.gov.by/en/events/vizity-v-gosudarstva-persidskogo-zaliva-i-ugo-vostocnoj-azii",
+          "title": "Tour of the Persian Gulf and Southeast Asia",
+          "publisher": "Официальный интернет-портал Президента Республики Беларусь",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSsvUEwLULwtX5SfUbZQca0vx86TFR9CN7mcoAg_bG5O0_itDtQbm-AaA1dGM"
+        },
+        {
+          "url": "https://www.vietnam.vn/en/tong-thong-belarus-aleksandr-lukashenko-lan-thu-4-tham-viet-nam-dinh-vi-thuoc-do-thanh-cong-cua-quan-he-doi-tac-chien-luoc",
+          "title": "Belarusian President Aleksandr Lukashenko's 4th visit to Vietnam: Setting the benchmark for the success of the Strategic Partnership.",
+          "publisher": "Vietnam.vn",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQDjaMYidBep-3TU81Mc_arrCzxp3Wf3XAYl4t1ROzbbI6dwZJc2l0eMEongY"
+        }
+      ]
+    },
+    {
+      "query": "matvei michkov",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7817096/2026/11/27/flyers-matvei-michkov-scratched-team-violation/",
+        "https://bleacherreport.com/articles/25538099-matvei-michkov-suspended-flyers-canucks-game-latest-nhl-rumors-amid-trade-buzz",
+        "https://www.tsn.ca/nhl/article/flyers-michkov-out-of-canucks-game-over-internal-team-matter/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZicM3k3IECBfP8ELXLIb7mvbIj7yN8HtZ6_wjXwhOsuYubRubnUG_DyzD1dQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7817096/2026/11/27/flyers-matvei-michkov-scratched-team-violation/",
+          "title": "Flyers’ Matvei Michkov scratched vs. Canucks due to internal team matter",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZicM3k3IECBfP8ELXLIb7mvbIj7yN8HtZ6_wjXwhOsuYubRubnUG_DyzD1dQ"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25538099-matvei-michkov-suspended-flyers-canucks-game-latest-nhl-rumors-amid-trade-buzz",
+          "title": "Matvei Michkov Suspended by Flyers For Canucks Game, Latest NHL Rumors Amid Trade Buzz",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIX0yLl7aceSXi8W-7rnf2hx__tsC2VO__H4Aezn_Ftv5YJMO4QjMJ2V6R6yQ"
+        },
+        {
+          "url": "https://www.tsn.ca/nhl/article/flyers-michkov-out-of-canucks-game-over-internal-team-matter/",
+          "title": "Flyers’ Michkov removed from Canucks game over ‘internal team matter’",
+          "publisher": "TSN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkjQk5a_lKmGULPeirYVlbRxhGJiiGKErJIj7kJ3Qkdf6UreklhrXxSdBLt2Q"
+        }
+      ]
+    },
+    {
+      "query": "bill nye",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/articles/fans-t-believe-young-bill-110000856.html",
+        "https://www.hellomagazine.com/us/937479/you-wont-believe-what-a-young-bill-nye-looks-like-in-unearthed-video/",
+        "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-27-2026-includes-celebrities-bill-nye-jaleel-white.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSj8yPvutN2SJ4rf-jdnL_ydio6qTGAQMARvbiOvgVzuU1gEZtqFSXAiFoe-w",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/fans-t-believe-young-bill-110000856.html",
+          "title": "Fans can’t believe what a young Bill Nye looks like in an unearthed video from his early career: ‘I think we’d have chemistry!’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSj8yPvutN2SJ4rf-jdnL_ydio6qTGAQMARvbiOvgVzuU1gEZtqFSXAiFoe-w"
+        },
+        {
+          "url": "https://www.hellomagazine.com/us/937479/you-wont-believe-what-a-young-bill-nye-looks-like-in-unearthed-video/",
+          "title": "Fans can’t believe what a young Bill Nye looks like in an unearthed video from his early career: ‘I think we’d have chemistry!’",
+          "publisher": "HELLO!",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7kDYSev6ym2ZDvyKFl-PbwZ4CSP5wHfKiCQuFruV7GYRXJLfVznpXjoMB_4k"
+        },
+        {
+          "url": "https://www.cleveland.com/entertainment/2026/11/todays-famous-birthdays-list-for-november-27-2026-includes-celebrities-bill-nye-jaleel-white.html",
+          "title": "Today’s famous birthdays list for November 27, 2026 includes celebrities Bill Nye, Jaleel White",
+          "publisher": "Cleveland.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjBDOzsuoV54XI2PGAj8EbhhkOrwxjWLJMbI3vwnl2POwpuoESKEo6a01Kwkc"
+        }
+      ]
+    },
+    {
+      "query": "ilia malinin",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7816475/2026/11/27/ilia-malinin-figure-skating-short-program-world-record-olympics/",
+        "https://www.nbcsports.com/olympics/news/ilia-malinin-world-record-short-program-nhk-trophy-2026",
+        "https://www.foxsports.com/articles/soccer/american-figure-skater-ilia-malinin-gets-worldrecord-score-in-short-program-at-nhk-trophy"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA-zaKbLeVqrvbokziwIfibfwYU3Cfuc0bNDQxPnhE7yPkyD1Ydbq2BHIzPEY",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7816475/2026/11/27/ilia-malinin-figure-skating-short-program-world-record-olympics/",
+          "title": "Ilia Malinin, U.S. figure skating star, breaks short program world record",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA-zaKbLeVqrvbokziwIfibfwYU3Cfuc0bNDQxPnhE7yPkyD1Ydbq2BHIzPEY"
+        },
+        {
+          "url": "https://www.nbcsports.com/olympics/news/ilia-malinin-world-record-short-program-nhk-trophy-2026",
+          "title": "Ilia Malinin posts record short program score to lead NHK Trophy",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJB4fQqQvvnwDKMlUjzsP7bJA2MCq1Ybcq_ebMiZqUuz8XE7tsvWZWQ_kqQlI"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/soccer/american-figure-skater-ilia-malinin-gets-worldrecord-score-in-short-program-at-nhk-trophy",
+          "title": "American figure skater Ilia Malinin gets world-record score in short program at NHK Trophy",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
         }
       ]
     }
