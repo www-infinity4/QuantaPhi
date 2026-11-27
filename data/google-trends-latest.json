@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T01:31:39.489769Z",
+  "checked_at": "2026-11-27T02:01:34.422024Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "morgan freeman",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T01:10:00Z",
+      "query": "nfl standings cowboys",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-27T01:40:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/articles/morgan-freeman-accused-ignoring-pleas-135542381.html",
-        "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/morgan-freemans-grandchildren-enter-emergency-housing-after-adviser-rejects-mothers-5000-plea-for-rent-help-she-says-100000-divorce-settlement-could-secure-a-home/articleshow/136172203.cms",
-        "https://www.mensjournal.com/news/morgan-freeman-accused-of-refusing-5000-as-grandchildren-face-eviction"
+        "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
+        "https://www.cbssports.com/betting/news/thanksgiving-nfl-anytime-touchdown-scorer-picks-2026-josh-allen-best-td-bets-bills-chiefs/",
+        "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjCa5N87SN7YnaTZ9RilJrdhf-7Hd2Z1txTZAhVZVr5al4s6XHdLhRvdI_gQ",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/morgan-freeman-accused-ignoring-pleas-135542381.html",
-          "title": "Morgan Freeman Accused of Ignoring Pleas To Help Grandchildren: ‘Trying To Get Help to Not Get Evicted’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVjCa5N87SN7YnaTZ9RilJrdhf-7Hd2Z1txTZAhVZVr5al4s6XHdLhRvdI_gQ"
-        },
-        {
-          "url": "https://timesofindia.indiatimes.com/entertainment/english/hollywood/news/morgan-freemans-grandchildren-enter-emergency-housing-after-adviser-rejects-mothers-5000-plea-for-rent-help-she-says-100000-divorce-settlement-could-secure-a-home/articleshow/136172203.cms",
-          "title": "Morgan Freeman’s grandchildren enter emergency housing after adviser rejects mother’s $5,000 plea for ren",
-          "publisher": "The Times of India",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRZW-GBRu5KSXJhmVq4u3mt4tzwFPi_07T2oKCgyALIvzbkw2tn47aOaom3fU"
-        },
-        {
-          "url": "https://www.mensjournal.com/news/morgan-freeman-accused-of-refusing-5000-as-grandchildren-face-eviction",
-          "title": "Morgan Freeman Accused of Refusing $5,000 as Grandchildren Face Eviction",
-          "publisher": "Men's Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRY1bA58ZOzK5LyQwPQ6Ge3u_3Q-ZFoNxOe14xUdMCal72Wqa0pxBjMIFyRnfc"
-        }
-      ]
-    },
-    {
-      "query": "wisniewski eagles",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T01:10:00Z",
-      "related_news_urls": [
-        "https://www.bleedinggreennation.com/news/191448/eagles-roster-news-3-moves-announced-ahead-of-cowboys-game",
-        "https://sports.yahoo.com/nfl/articles/eagles-sign-gabe-hall-elevate-210613913.html",
-        "https://www.bignewsnetwork.com/news/279454528/eagles-sign-dt-gabe-hall-to-active-roster"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpvI0gJloyttfe8d_5bg7c_s0dWvz_QRY0KhRpV0p8f1Jvrkvn4HJPrjipUgM",
-      "image_credit": "Bleeding Green Nation",
-      "news": [
-        {
-          "url": "https://www.bleedinggreennation.com/news/191448/eagles-roster-news-3-moves-announced-ahead-of-cowboys-game",
-          "title": "Eagles roster news: 3 moves announced ahead of Cowboys game",
-          "publisher": "Bleeding Green Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpvI0gJloyttfe8d_5bg7c_s0dWvz_QRY0KhRpV0p8f1Jvrkvn4HJPrjipUgM"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/eagles-sign-gabe-hall-elevate-210613913.html",
-          "title": "Eagles sign Gabe Hall, elevate two defenders for Thanksgiving Day game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTsw0zvL67TCPh63JkepL-R9wWaVlHgj5Aa0UYV9-sBdJYzN4OcRvSQCSJUH6s"
-        },
-        {
-          "url": "https://www.bignewsnetwork.com/news/279454528/eagles-sign-dt-gabe-hall-to-active-roster",
-          "title": "Eagles sign DT Gabe Hall to active roster",
-          "publisher": "Big News Network.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbBHockY3Ud_kgvxF6nHeT3nNaL7dXa4usj8EVwClWhB5JhZTloGAYseIFLBc"
-        }
-      ]
-    },
-    {
-      "query": "jake ferguson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:10:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-inactives-thanksgiving-2026-nfl-week-12",
-        "https://sports.yahoo.com/nfl/articles/dallas-cowboys-week-12-inactives-201328691.html",
-        "https://www.nbcsports.com/fantasy/football/player-news/2026-11-26/cowboys-declare-te-jake-ferguson-inactive-in-wk-12"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr1xvYmotB40zwlBczC8mMiZQqUNffqnXXZj17VZp6V1_TD7azqsW7YX1KShg",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/news/eagles-at-cowboys-inactives-thanksgiving-2026-nfl-week-12",
-          "title": "Eagles at Cowboys Inactives",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQr1xvYmotB40zwlBczC8mMiZQqUNffqnXXZj17VZp6V1_TD7azqsW7YX1KShg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nfl/articles/dallas-cowboys-week-12-inactives-201328691.html",
-          "title": "Dallas Cowboys' Week 12 Inactives: 4 Starters Out, But Good News For Jalen Thompson",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRZLqbsYC_4EbxdtbsseBNAmQ3mTyqDL5DhM9KfmqSk2nH2yOictdVzEmWiJhc"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/football/player-news/2026-11-26/cowboys-declare-te-jake-ferguson-inactive-in-wk-12",
-          "title": "Cowboys declare TE Jake Ferguson inactive in Wk 12",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQhz6KBMcLl6vXXBzpub-f5-h1aEmCIBDaBNiFQiEBEjO6r6EFmso58wZb_nsg"
-        }
-      ]
-    },
-    {
-      "query": "ttu football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T01:10:00Z",
-      "related_news_urls": [
-        "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
-        "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
-        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/26/texas-tech-football-cpf-season-finale-projections/92862249007/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E",
-      "image_credit": "Lubbock Avalanche-Journal",
-      "news": [
-        {
-          "url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
-          "title": "Finally! CFP committee gives Texas Tech football a long-awaited bump",
-          "publisher": "Lubbock Avalanche-Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E"
-        },
-        {
-          "url": "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
-          "title": "Who should Texas Tech root for this week? Every game that impacts the Red Raiders' CFP chances",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjfFyiDNtN-piAzpqSLawz2qZjsoo46LjewZO9IqOSxbg5JQQ5J3pHkdFPqbE"
-        },
-        {
-          "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/football/2026/11/26/texas-tech-football-cpf-season-finale-projections/92862249007/",
-          "title": "Texas Tech projected to be outside of playoffs entering season finale",
-          "publisher": "Red Raiders Wire",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQU8T6voDXSRhQPH5-1trLFg_pkb-t4UQhJ9Y_CDdF8gmoqdy9W2OwNvxeRZRI"
-        }
-      ]
-    },
-    {
-      "query": "skip bayless",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T01:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
-        "https://www.nfl.com/news/micah-parsons-on-packers-playoff-hopes-we-probably-have-to-win-out",
-        "https://sports.yahoo.com/nfl/articles/exact-reason-why-cowboys-traded-153709620.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6wP4EfxfR3DYkdG-UT4c_Mtn32A2WQDl5P08jTFgWe6k9kkIPFO37pxJY2Q",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
-          "title": "Packers' Parsons calls for accountability after Rams run wild",
+          "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
+          "title": "2026 NFL Thanksgiving preview: Picks, predictions, schedule, odds, fantasy tips",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRd6wP4EfxfR3DYkdG-UT4c_Mtn32A2WQDl5P08jTFgWe6k9kkIPFO37pxJY2Q"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24"
         },
         {
-          "url": "https://www.nfl.com/news/micah-parsons-on-packers-playoff-hopes-we-probably-have-to-win-out",
-          "title": "Micah Parsons on Packers' playoff hopes: 'We probably have to win out'",
-          "publisher": "NFL.com",
+          "url": "https://www.cbssports.com/betting/news/thanksgiving-nfl-anytime-touchdown-scorer-picks-2026-josh-allen-best-td-bets-bills-chiefs/",
+          "title": "Thanksgiving NFL anytime touchdown scorer picks 2026: Josh Allen among best TD bets for Bills vs. Chiefs",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJQzAbHRHeSePs3_8AqdzUIn_1cILVqT7mQwVdlGexS1o9mX8CyApZNi5NQYA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTDVO97y_nLRjBWimo2q5W4WGVAI60ObACAWG3NwqxjosE6ijXyr3Iqe9fSKJE"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/exact-reason-why-cowboys-traded-153709620.html",
-          "title": "“The Exact Reason Why the Cowboys Traded Him”: NFL Fans React As Micah Parsons Calls Out Packers Teammates for Giving Up 241 Rushing Yards vs. Rams",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/",
+          "title": "NFL staff picks for Week 12: Bears-Lions, Chiefs-Bills, Seahawks-49ers, more - The Athletic",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWyAYQwZbuEe0EVT37ySc1FT7SeRSxNGb9BhrwDgLj7-rWWxih2dmFhBmP49Q"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmnbEBwdqlOPGiR48yzeHrq7VXSNBR8qrFI83EQEoo7t48g3zUhetltBujffo"
         }
       ]
     },
     {
-      "query": "michelle obama",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T01:10:00Z",
-      "related_news_urls": [
-        "https://abc7chicago.com/post/former-president-barack-obama-michelle-surprise-englewood-nonprofit-workers-before-thanksgiving/20082069/",
-        "https://wgntv.com/news/chicago-news/the-obamas-help-out-at-south-side-nonprofit-in-thanksgiving-eve-surprise/",
-        "https://www.cbsnews.com/chicago/news/obamas-dions-chicago-dream/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW5KPAC2bAp6wSO6jwshvStG2LcE-WtcHMM9eqWZW1phthYxtAKhEKJG8lJXg",
-      "image_credit": "ABC7 Chicago",
-      "news": [
-        {
-          "url": "https://abc7chicago.com/post/former-president-barack-obama-michelle-surprise-englewood-nonprofit-workers-before-thanksgiving/20082069/",
-          "title": "Former President Barack Obama, Michelle Obama surprise Englewood nonprofit workers before Thanksgiving",
-          "publisher": "ABC7 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSW5KPAC2bAp6wSO6jwshvStG2LcE-WtcHMM9eqWZW1phthYxtAKhEKJG8lJXg"
-        },
-        {
-          "url": "https://wgntv.com/news/chicago-news/the-obamas-help-out-at-south-side-nonprofit-in-thanksgiving-eve-surprise/",
-          "title": "The Obamas help out at South Side nonprofit in Thanksgiving Eve surprise",
-          "publisher": "WGN-TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0EUiFenTEQuC3rR0tmymU-t--QxmO_xKnbVQR-y-u6Dmu7aBNQ6fbO7htUD8"
-        },
-        {
-          "url": "https://www.cbsnews.com/chicago/news/obamas-dions-chicago-dream/",
-          "title": "Barack, Michelle Obama makes surprise appearance, volunteer at South Side food bank",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2bzwwgDmVUmvXxRglJ8BHuaVLtpJAZudKsGPNQoaN-4iOIMC84uV4V0pfl8g"
-        }
-      ]
-    },
-    {
-      "query": "cruz azul",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T01:00:00Z",
-      "related_news_urls": [
-        "https://www.vavel.com/en-us/soccer/2026/11/26/1280746-leon-vs-cruz-azul-live-score-liga-mx.html",
-        "https://www.soyfutbol.com/en/news/sebastian-vegas-sends-a-warning-to-cruz-azul-before-quarterfinals-can-leon-pull-off-the-upset-20261126-0020.html",
-        "https://www.transfermarkt.com/betting/tips/club-leon-vs-cruz-azul-prediction-27-11-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRl_FtUb5JdSGby9nEia8vq9kp7WK58epDPj_f8lNlg9Y_QPqnpiDJ85eAOJM",
-      "image_credit": "VAVEL.com",
-      "news": [
-        {
-          "url": "https://www.vavel.com/en-us/soccer/2026/11/26/1280746-leon-vs-cruz-azul-live-score-liga-mx.html",
-          "title": "Leon vs Cruz Azul LIVE, Latest Score, Goals and Liga MX Updates",
-          "publisher": "VAVEL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRRl_FtUb5JdSGby9nEia8vq9kp7WK58epDPj_f8lNlg9Y_QPqnpiDJ85eAOJM"
-        },
-        {
-          "url": "https://www.soyfutbol.com/en/news/sebastian-vegas-sends-a-warning-to-cruz-azul-before-quarterfinals-can-leon-pull-off-the-upset-20261126-0020.html",
-          "title": "Sebastián Vegas Sends a Warning to Cruz Azul Before Quarterfinals: Can León Pull Off the Upset?",
-          "publisher": "Soy Futbol",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPTFSdLGdPf5klyKV2ZCNtE9BLGtR5w3fBp-ebOnKA4fzzBFsgNzw-SWbDkWw"
-        },
-        {
-          "url": "https://www.transfermarkt.com/betting/tips/club-leon-vs-cruz-azul-prediction-27-11-2026/",
-          "title": "Club León - Cruz Azul prediction & tips 27.11.2026",
-          "publisher": "Transfermarkt",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4ypu8HKREWYOqzQdqd2aNlTwjMbtbRyVSIbqXiipf7Nha9zl2Dl7G-5eSN-w"
-        }
-      ]
-    },
-    {
-      "query": "damar hamlin",
+      "query": "jason kelce",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T01:00:00Z",
+      "published_at": "2026-11-27T01:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/bills-damar-hamlin-announces-personal-014149274.html",
-        "https://www.fantasypros.com/nfl/news/621425/damar-hamlin-toe-considered-questionable-sunday.php",
-        "https://cwibc.co.id/en/hamlin-returns-dolphins-toe-injury"
+        "https://sports.yahoo.com/nfl/articles/travis-kelce-makes-retirement-admission-183147193.html",
+        "https://people.com/travis-kelce-reflects-on-playing-100th-game-at-arrowhead-stadium-with-nod-to-wife-taylor-swift-12279293",
+        "https://www.eonline.com/news/1438413/is-travis-kelce-retiring-from-nfl-chiefs-player-addresses-football-future"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB8bVfMXnKMIZVAABGbuM9cD-yxTy6KETBN5GcBIWMaSZfDIK8mG6dkYcmXk",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsil6Be4DVEM4QMg6VaFQeMmlMRdlfW7k68IOeKnaYhNTnH7US0Q2Iyoq_6g",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/articles/bills-damar-hamlin-announces-personal-014149274.html",
-          "title": "Bills Damar Hamlin Announces Personal News Before Thanksgiving Game",
+          "url": "https://sports.yahoo.com/nfl/articles/travis-kelce-makes-retirement-admission-183147193.html",
+          "title": "Travis Kelce Makes Retirement Admission on Eve of Chiefs-Bills Thanksgiving Game",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB8bVfMXnKMIZVAABGbuM9cD-yxTy6KETBN5GcBIWMaSZfDIK8mG6dkYcmXk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsil6Be4DVEM4QMg6VaFQeMmlMRdlfW7k68IOeKnaYhNTnH7US0Q2Iyoq_6g"
         },
         {
-          "url": "https://www.fantasypros.com/nfl/news/621425/damar-hamlin-toe-considered-questionable-sunday.php",
-          "title": "Damar Hamlin (toe) considered questionable for Sunday",
-          "publisher": "FantasyPros",
+          "url": "https://people.com/travis-kelce-reflects-on-playing-100th-game-at-arrowhead-stadium-with-nod-to-wife-taylor-swift-12279293",
+          "title": "Travis Kelce Reflects on Playing in 100th Game at Arrowhead Stadium with Sweet Nod to Wife Taylor Swift",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLbhAgiClyDqsQzo3wF6gwrw2GYznSgXONkCU0a__d_B6r89Xsi92JwDxMCGg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-qM6EwhBB861I_qBuMSpLfYh7oyn6_t_AzMeExHgL09orlYrM-_Sfg6qH_TQ"
         },
         {
-          "url": "https://cwibc.co.id/en/hamlin-returns-dolphins-toe-injury",
-          "title": "Damar Hamlin Returns Against Dolphins After Toe Injury",
-          "publisher": "cwibc.co.id",
+          "url": "https://www.eonline.com/news/1438413/is-travis-kelce-retiring-from-nfl-chiefs-player-addresses-football-future",
+          "title": "Is Travis Kelce Retiring From NFL? Kansas City Chiefs Star Teases Football Future",
+          "publisher": "E! News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCVJOoIwl8bOYomwiwRbktWdHMwA5JBm_7MsjVl9G3qerVD3ty2IklHNPb5gA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTxKC03RaL6qO-m9wY8iWSdt7-1KXHGjD3aaZ3rA_Ildl3O3A8bKy6Nn8wVsqU"
         }
       ]
     },
     {
-      "query": "rashee rice",
+      "query": "xavier worthy",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T01:00:00Z",
+      "published_at": "2026-11-27T01:40:00Z",
       "related_news_urls": [
-        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573508/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-        "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-12-211412865.html",
-        "https://www.si.com/fantasy/week-12-start-em-sit-em-wide-receivers"
+        "https://dknetwork.draftkings.com/2026/11/26/xavier-worthy-fantasy-football-start-or-sit-advice-for-week-12/",
+        "https://www.yahoo.com/news/videos/patrick-mahomes-xavier-worthys-touchdown-015910778.html",
+        "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/22/xavier-worthy-touchdown-video-kansas-city-chiefs-arizona-cardinals-nfl-week-11/92915219007/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5KTz1lSap8QD3mDZ0aI6bn-xFlJSn9U39o6DWyzHiTdLmyhklabAdTEcSbMU",
+      "image_credit": "DraftKings Network",
+      "news": [
+        {
+          "url": "https://dknetwork.draftkings.com/2026/11/26/xavier-worthy-fantasy-football-start-or-sit-advice-for-week-12/",
+          "title": "Xavier Worthy Fantasy Football Start or Sit Advice for Week 12",
+          "publisher": "DraftKings Network",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT5KTz1lSap8QD3mDZ0aI6bn-xFlJSn9U39o6DWyzHiTdLmyhklabAdTEcSbMU"
+        },
+        {
+          "url": "https://www.yahoo.com/news/videos/patrick-mahomes-xavier-worthys-touchdown-015910778.html",
+          "title": "Patrick Mahomes on Xavier Worthy's touchdown: 'Not many guys in this league' could score on that play",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdfQRysb4W1npxgUxtHYztMo4lqNGLQbg8naVuSk3iB-Pk5eiE9aifpuqIYKA"
+        },
+        {
+          "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/11/22/xavier-worthy-touchdown-video-kansas-city-chiefs-arizona-cardinals-nfl-week-11/92915219007/",
+          "title": "Chiefs vs. Cardinals: Xavier Worthy scores spectacular TD in Week 11",
+          "publisher": "Chiefs Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJ65_h4mHRDloiuaaW0nsNJVg0a09hVc62jz0gZkgD-ToRd4z5ui4poU4Fpuc"
+        }
+      ]
+    },
+    {
+      "query": "patrick mahomes kids",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T01:40:00Z",
+      "related_news_urls": [
+        "https://people.com/brittany-and-patrick-mahomes-and-their-3-kids-giggle-uncontrollably-as-they-try-viral-reflex-test-12281559",
+        "https://timesofindia.indiatimes.com/sports/nfl/news/patrick-mahomes-makes-the-most-of-family-time-with-brittany-mahomes-and-their-children-ahead-of-thanksgiving-night-bills-showdown/articleshow/136183963.cms",
+        "https://sports.yahoo.com/nfl/articles/patrick-mahomes-gets-honest-mvp-181843806.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBH8rng5-vu99JoPyrLAzmCu8LP0g7xCn2JoSDBW2QYwnB_yOeZtoYKLrdyc4",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/brittany-and-patrick-mahomes-and-their-3-kids-giggle-uncontrollably-as-they-try-viral-reflex-test-12281559",
+          "title": "Brittany and Patrick Mahomes and Their 3 Kids Giggle Uncontrollably as They Try Viral Reflex Test",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBH8rng5-vu99JoPyrLAzmCu8LP0g7xCn2JoSDBW2QYwnB_yOeZtoYKLrdyc4"
+        },
+        {
+          "url": "https://timesofindia.indiatimes.com/sports/nfl/news/patrick-mahomes-makes-the-most-of-family-time-with-brittany-mahomes-and-their-children-ahead-of-thanksgiving-night-bills-showdown/articleshow/136183963.cms",
+          "title": "Patrick Mahomes makes the most of family time with Brittany Mahomes and their children ahead of Thanksgiv",
+          "publisher": "The Times of India",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7ycuWbHzXQAQo6KXy_FhcUn-hQvBPhfgffbeOfvCSYxKM9bgop-ZPTGl8GI4"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/patrick-mahomes-gets-honest-mvp-181843806.html",
+          "title": "Patrick Mahomes gets honest MVP assessment before Chiefs-Bills showdown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTuFdxScnuhj_Lt1uB_mDX0xzxV_h6fY5tewOH-AU25I5jkeo56-Kvq7C2sacs"
+        }
+      ]
+    },
+    {
+      "query": "nfc east standings",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T01:30:00Z",
+      "related_news_urls": [
+        "https://www.commanders.com/news/nfc-east-roundup-week-12-commanders-giants-cowboys-eagles",
+        "https://www.bleedinggreennation.com/philadelphia-eagles-nfl-playoffs/191321/nfl-playoff-picture-which-team-is-going-to-win-the-nfc-east",
+        "https://sports.yahoo.com/general/videos/giants-stay-playoff-race-despite-191752660.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00Lz9JzJuk9sFI-EuTbiVWs3YR9GM1KtA1bK9JQxSy00BU1yl_UuCl_YVOx8",
+      "image_credit": "Washington Commanders",
+      "news": [
+        {
+          "url": "https://www.commanders.com/news/nfc-east-roundup-week-12-commanders-giants-cowboys-eagles",
+          "title": "NFC East roundup | Commanders begin critical stretch",
+          "publisher": "Washington Commanders",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ00Lz9JzJuk9sFI-EuTbiVWs3YR9GM1KtA1bK9JQxSy00BU1yl_UuCl_YVOx8"
+        },
+        {
+          "url": "https://www.bleedinggreennation.com/philadelphia-eagles-nfl-playoffs/191321/nfl-playoff-picture-which-team-is-going-to-win-the-nfc-east",
+          "title": "NFL Playoff Picture: Which team is going to win the NFC East?",
+          "publisher": "Bleeding Green Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTultCrubF-_tB5cwu040weDTOhrjk4vVk5QEqn4gObQjOeJT_aAxm2axWyaX8"
+        },
+        {
+          "url": "https://sports.yahoo.com/general/videos/giants-stay-playoff-race-despite-191752660.html",
+          "title": "Giants Stay in Playoff Race Despite Losing Starting Quarterback",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQty_6oRQNylns6bCHxqZ0bO58C5TI77Y7uSY_BFySIGmGnuWvhnbbj1kOrjNY"
+        }
+      ]
+    },
+    {
+      "query": "bills schedule",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T01:30:00Z",
+      "related_news_urls": [
+        "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
+        "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-active-christian-benford-inactive-for-bills-chiefs"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw",
+      "image_credit": "Buffalo Bills",
+      "news": [
+        {
+          "url": "https://www.buffalobills.com/news/buffalo-bills-injury-report-vs-chiefs-week-12-thanksgiving",
+          "title": "Buffalo Bills injury report vs. Chiefs | Week 12 Thanksgiving",
+          "publisher": "Buffalo Bills",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN7yt_50P8bTiKeI1Bzov9gg8HDkTWLsANtJyYPI3I36eeQFNkuRgMj6naiLw"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50596159/bills-kincaid-benford-5-starters-listed-questionable",
+          "title": "Bills TE Kincaid, CB Benford among 5 starters who are questionable vs. Chiefs",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQP9hYXCzZR7RooYyfIsdmnT7gQ0oytxJbhHHPPC-5Z0DGt7fNA5hCg7XHI5t4"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/dalton-kincaid-active-christian-benford-inactive-for-bills-chiefs",
+          "title": "Dalton Kincaid active, Christian Benford inactive for Bills-Chiefs",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRhD2AJbNiO0_9ns3y3bArkVGPzQYnGZpbEdRrij_yebYxhdy5T4XAbXnduKc0"
+        }
+      ]
+    },
+    {
+      "query": "melissa stark",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/nfl-fans-loved-melissa-starks-172032603.html",
+        "https://www.newsbreak.com/total-pro-sports-313944020/5025865004232-melissa-stark-s-outfit-was-causing-a-major-stir-on-the-sideline-during-snf-game-in-mexico-city-photo"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUTgfj19N-mkb3omkBosGIcQtbWvrEbqrxtVcrlJAqagsLJ2lArrTcz29Irs",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/nfl-fans-loved-melissa-starks-172032603.html",
+          "title": "NFL Fans Loved Melissa Stark's Special Outfit for Mexico City Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUTgfj19N-mkb3omkBosGIcQtbWvrEbqrxtVcrlJAqagsLJ2lArrTcz29Irs"
+        },
+        {
+          "url": "https://www.newsbreak.com/total-pro-sports-313944020/5025865004232-melissa-stark-s-outfit-was-causing-a-major-stir-on-the-sideline-during-snf-game-in-mexico-city-photo",
+          "title": "Melissa Stark’s Outfit Was Causing a Major Stir on the Sideline During SNF Game in Mexico City [PHOTO]",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRn3MvTuVXwgR_6kUSsYji5e97-RwtDTc1LIlMmI5389q_w5eiZW_hRvWkghco"
+        }
+      ]
+    },
+    {
+      "query": "who did the bills lose to",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/recap/_/gameId/401873070",
+        "https://www.buffalobills.com/video/eric-wood-recapping-bills-win-over-miami-tough-matchup-with-the-chiefs-ahead",
+        "https://www.buffalorumblings.com/buffalo-bills-scores-results/146289/buffalo-bills-week-11-game-balls-greg-rousseau-and-james-cook-reach-career-milestones"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXpATMNbDasgdao1ceZvFqc_HXga67c0-UxfVU9XjdAewusQdGYSFn-6b4eRo",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573508/nfl-fantasy-football-rankings-2026-wr-wide-receiver",
-          "title": "Fantasy football rankings for Week 12: Wide receiver",
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873070",
+          "title": "Bills 26-9 Dolphins (Nov 22, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLBHCY7M403PzN62mK9hCN2jLKk3yUCQXZSjayM-9fW0YYQtlfozGYUDLNrDs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSXpATMNbDasgdao1ceZvFqc_HXga67c0-UxfVU9XjdAewusQdGYSFn-6b4eRo"
         },
         {
-          "url": "https://sports.yahoo.com/fantasy/article/fantasy-football-rankings-hayden-winks-wr-blueprint-for-week-12-211412865.html",
-          "title": "Fantasy Football Rankings: Hayden Winks' WR Blueprint for Week 12",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.buffalobills.com/video/eric-wood-recapping-bills-win-over-miami-tough-matchup-with-the-chiefs-ahead",
+          "title": "Eric Wood: Recapping Bills Win Over Miami, Tough Matchup With The Chiefs Ahead",
+          "publisher": "Buffalo Bills",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwJ7C924IXmVOZA_ZaL0kd43Z586Lk8Pq-b_O918j3xAt4KNNKYkCrEaSmDqo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTklEZojW3itVw-x_8KQ55al2wXEBLh4oDYXKbnCGxXPCg9ToP34GkW9FQ4NXU"
         },
         {
-          "url": "https://www.si.com/fantasy/week-12-start-em-sit-em-wide-receivers",
-          "title": "Week 12 Start ’Em, Sit ’Em Wide Receivers",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.buffalorumblings.com/buffalo-bills-scores-results/146289/buffalo-bills-week-11-game-balls-greg-rousseau-and-james-cook-reach-career-milestones",
+          "title": "Bills Week 11 game balls: Greg Rousseau and James Cook reach career milestones",
+          "publisher": "Buffalo Rumblings",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTw6-qXFMkcNLgBN8gTEnFKiXAtTyon8VbbAvmX6uYbT6tGgKFhos6kOgjQT5g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSynX-1b1vLgl63WjXlrfMOf6MO8bc8F2zIlHTT8OVJFL-uvqYyfdIKNuQGxlI"
         }
       ]
     },
     {
-      "query": "ring",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T01:00:00Z",
+      "query": "buffalo new york",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:30:00Z",
       "related_news_urls": [
-        "https://www.postwrestling.com/2026/11/26/ring-boy-lawsuit-put-on-hold-pending-private-mediation-with-mcmahons-and-wwe/",
-        "https://www.insidehighered.com/news/government/politics-elections/2026/11/25/mcmahon-eyes-potential-settlement-ring-boys",
-        "https://www.fightful.com/wrestling/ring-boy-lawsuit-put-on-hold-private-mediation-with-mcmahons-and-wwe-to-take-place/"
+        "https://www.wivb.com/news/local-news/volunteers-distribute-thanksgiving-meals-across-wny/",
+        "https://www.wgrz.com/article/life/holidays/local-missions-prepping-thousands-of-thanksgiving-meals-for-those-in-need/71-ab7d794f-f680-41c1-83a4-4d96aa21c963",
+        "https://www.wnypapers.com/news/article/current/2026/11/19/167571/ryan-highmark-west-herr-tops-friendly-markets-team-up-to-provide-300-thanksgiving-dinners-to-local-block-clubs"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafGakLpISFQZBgZT4hzFR68NJwl4L1Cz9wEX-02UUZyjExD4CTDK_2ZZtd20",
-      "image_credit": "POST Wrestling",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ODUSWGDOBgI6BR30k-jlXjw4fLiVLJlSjQM0mz1T6eR3Z1ok7LY6RkNX3E",
+      "image_credit": "WIVB News 4",
       "news": [
         {
-          "url": "https://www.postwrestling.com/2026/11/26/ring-boy-lawsuit-put-on-hold-pending-private-mediation-with-mcmahons-and-wwe/",
-          "title": "Ring boy lawsuit put on hold pending private mediation with McMahons and WWE",
-          "publisher": "POST Wrestling",
+          "url": "https://www.wivb.com/news/local-news/volunteers-distribute-thanksgiving-meals-across-wny/",
+          "title": "Volunteers distribute Thanksgiving meals across WNY",
+          "publisher": "WIVB News 4",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTafGakLpISFQZBgZT4hzFR68NJwl4L1Cz9wEX-02UUZyjExD4CTDK_2ZZtd20"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTO-ODUSWGDOBgI6BR30k-jlXjw4fLiVLJlSjQM0mz1T6eR3Z1ok7LY6RkNX3E"
         },
         {
-          "url": "https://www.insidehighered.com/news/government/politics-elections/2026/11/25/mcmahon-eyes-potential-settlement-ring-boys",
-          "title": "McMahon Eyes Potential Settlement With “Ring Boys”",
-          "publisher": "Inside Higher Ed",
+          "url": "https://www.wgrz.com/article/life/holidays/local-missions-prepping-thousands-of-thanksgiving-meals-for-those-in-need/71-ab7d794f-f680-41c1-83a4-4d96aa21c963",
+          "title": "Local missions prepping thousands of Thanksgiving meals for those in need",
+          "publisher": "WGRZ",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1t3NqEQtZHIQCsCEsLM9ii-wZWgCvcTWJod3_ac_nZ9iVAOS1nhxOPUg_F0Y"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQTZjoYCVbjBfVcH1puhq5u9FL0ZGoUMDFa_BUK7mZ7uRtPRt4DeyqjugWKtbk"
         },
         {
-          "url": "https://www.fightful.com/wrestling/ring-boy-lawsuit-put-on-hold-private-mediation-with-mcmahons-and-wwe-to-take-place/",
-          "title": "Ring Boy Lawsuit Put On Hold, Private Mediation With McMahons and WWE To Take Place",
-          "publisher": "Fightful",
+          "url": "https://www.wnypapers.com/news/article/current/2026/11/19/167571/ryan-highmark-west-herr-tops-friendly-markets-team-up-to-provide-300-thanksgiving-dinners-to-local-block-clubs",
+          "title": "Ryan, Highmark, West Herr & Tops Friendly Markets team-up to provide 300 Thanksgiving dinners to local block clubs",
+          "publisher": "Niagara Frontier Publications",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvgu1thzY5G4OfALJsT-HAfSfLoFo4P2fFonHTu8VYm5s8RpASRFRq7y6O96g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtwb6_OEuuOfDRe07yzS2FKsvcy9raMquaYc4pOT_l9ES7d6l1J0sbszZk56Q"
+        }
+      ]
+    },
+    {
+      "query": "big dom eagles",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T01:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nfl/articles/eagles-face-defensive-play-caller-183922248.html",
+        "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
+        "https://dallassportsjournal.com/eagles-staffers-line-up-christian-parker-cowboys-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFklnFqbM6NzNdBhT80dInMCge5L6Sy_6bwkiL0Iy-NSEA0pIdtSARwhBgBQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/eagles-face-defensive-play-caller-183922248.html",
+          "title": "Eagles face a new defensive play-caller in their rematch with Dallas",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpFklnFqbM6NzNdBhT80dInMCge5L6Sy_6bwkiL0Iy-NSEA0pIdtSARwhBgBQ"
+        },
+        {
+          "url": "https://www.si.com/nfl/cowboys/onsi/dallas-cowboys-christian-parker-trolled-eagles-big-dom-play-calling-demotion",
+          "title": "Cowboys’ Christian Parker Trolled by Eagles' Big Dom After Play-Calling Demotion",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQk0RY9F10lzt2TxeKI9ZEhUHqUnsbQjxCDGWcD7Xwj8GasVP-8k7DnTsdLiBc"
+        },
+        {
+          "url": "https://dallassportsjournal.com/eagles-staffers-line-up-christian-parker-cowboys-thanksgiving/",
+          "title": "Eagles Staffers Line Up For Cowboys DC Christian Parker",
+          "publisher": "Dallas Hoops Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvHddM7UTY5Li3q0SPgvkTfTwTenBIPZZR_YWkpWLYwGk82LCkQ5o2j-JKbbc"
         }
       ]
     }
