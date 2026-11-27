@@ -3,17 +3,122 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T14:01:14.858746Z",
+  "checked_at": "2026-11-27T14:31:15.904670Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "ron harper",
+      "query": "kelly ripa",
       "approx_searches": "200+",
+      "published_at": "2026-11-27T14:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
+        "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
+        "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/kelly-ripas-lookalike-daughter-twins-101542342.html",
+          "title": "Kelly Ripa's lookalike daughter twins with boyfriend in unexpected look",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPZ-qs533M80ZdKIz0fzqrnkCeCfKr_Qeigo55cvN4IEdTsXAK01xQOz1kMmk"
+        },
+        {
+          "url": "https://www.limapagi.id/en/lola-consuelos-tweed-couple-style",
+          "title": "Lola Consuelos Matches Tweed Outfits With Boyfriend in London",
+          "publisher": "Limapagi",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSea1bARiLrAfjSC9Rdvnb5dRq77Ckk1yQT2HtXEth5OmxrFql061RQ5Zqku-0"
+        },
+        {
+          "url": "https://speaks.co.in/entertainment/kelly-ripas-daughter-lola-turns-heads-with-matching-tweed-look-alongside-boyfriend/",
+          "title": "Kelly Ripa’s Daughter Lola Turns Heads With Matching Tweed Look Alongside Boyfriend",
+          "publisher": "Speaks Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSoWyAgx-PwAfL2qEvPA3Bxh1vGZ9rVuiF4AxSj9k3JzT2A8Dzgk9r_Y0pgfcE"
+        }
+      ]
+    },
+    {
+      "query": "delcy rodríguez",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:50:00Z",
+      "related_news_urls": [
+        "https://runrun.es/noticias/626407/gobierno-insta-a-uso-equilibrado-de-equipos-por-pico-en-demanda-electrica/",
+        "https://talcualdigital.com/noticias/delcy-rodriguez-senala-cultura-de-derroche-en-servicios-y-pide-consumo-responsable/",
+        "https://elinformadorve.com/26/11/2026/venezuela/delcy-rodriguez-asegura-que-existe-un-uso-irracional-de-la-electricidad/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqASpLAJDsTbFrmAzh0ZL4bxiEDGxQfKYbfr5lf68sHC4UA5aW_SSnkrQyuzk",
+      "image_credit": "Runrun.es",
+      "news": [
+        {
+          "url": "https://runrun.es/noticias/626407/gobierno-insta-a-uso-equilibrado-de-equipos-por-pico-en-demanda-electrica/",
+          "title": "Gobierno insta a “uso equilibrado de equipos” por pico en demanda eléctrica",
+          "publisher": "Runrun.es",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqASpLAJDsTbFrmAzh0ZL4bxiEDGxQfKYbfr5lf68sHC4UA5aW_SSnkrQyuzk"
+        },
+        {
+          "url": "https://talcualdigital.com/noticias/delcy-rodriguez-senala-cultura-de-derroche-en-servicios-y-pide-consumo-responsable/",
+          "title": "Delcy Rodríguez señala cultura de derroche en servicios y pide consumo responsable",
+          "publisher": "TalCual Digital",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi_E9vvB-V4pu4znq5S6ohdcL3q6s8Iaug6aZ2OglbNy-dIz0T9ZSkRo9SqNs"
+        },
+        {
+          "url": "https://elinformadorve.com/26/11/2026/venezuela/delcy-rodriguez-asegura-que-existe-un-uso-irracional-de-la-electricidad/",
+          "title": "Delcy Rodríguez asegura que existe un uso «irracional de la electricidad»",
+          "publisher": "El Informador Venezuela",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCcx8z1O_iQ2bKEd6enG5P6yIHa525BG5vU4iTLOOETQDuFO8SMkCXdhQZhu8"
+        }
+      ]
+    },
+    {
+      "query": "pga tour",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/golf/story/_/id/50583808/brooks-koepka-return-helps-3-golfers-improve-2027-status",
+        "https://golf.com/news/brooks-koepka-return-gift-max-mcgreevy/",
+        "https://theaugustapress.com/koepkas-return-allowed-3-players-to-move-up-a-spot-in-the-final-fedex-cup-standings/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA-jQG4BTID_8xJKw98ftFYQfMHz4aVso21b761H7Ll2EA1o6Bw_mwRbK0-8k",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/golf/story/_/id/50583808/brooks-koepka-return-helps-3-golfers-improve-2027-status",
+          "title": "Brooks Koepka's return helps 3 golfers improve 2027 status",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSA-jQG4BTID_8xJKw98ftFYQfMHz4aVso21b761H7Ll2EA1o6Bw_mwRbK0-8k"
+        },
+        {
+          "url": "https://golf.com/news/brooks-koepka-return-gift-max-mcgreevy/",
+          "title": "Brooks Koepka rule improves pro’s PGA Tour status for 2027",
+          "publisher": "GOLF.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQutvPKuxkOvPaBTB8EPOueVNjRv1PL3RFV6_Wv9h4_AHh6n2p3nOMEkJttg-4"
+        },
+        {
+          "url": "https://theaugustapress.com/koepkas-return-allowed-3-players-to-move-up-a-spot-in-the-final-fedex-cup-standings/",
+          "title": "Koepka’s return allowed 3 players to move up a spot in the final FedEx Cup standings",
+          "publisher": "The Augusta Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLkVpkQnmmVAZtWBeubXO_d2NiLOY__4PMXchv3S7F5DeAYLTiCrNG1y40WE"
+        }
+      ]
+    },
+    {
+      "query": "ron harper",
+      "approx_searches": "1000+",
       "published_at": "2026-11-27T13:40:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/nba/articles/prayers-pour-robert-griffin-iii-014308100.html",
-        "https://fadeawayworld.net/nba-trade-rumors/san-antonio-spurs/nba-trade-proposal-lands-spurs-a-defensive-wing-and-veteran-center-from-clippers",
-        "https://sports.yahoo.com/nba/articles/hell-no-spurs-star-father-115500605.html"
+        "https://www.limapagi.id/en/ron-harper-family-spurs-roster",
+        "https://cwibc.co.id/en/ron-harper-family-loss-griffin-support"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck",
       "image_credit": "Yahoo Sports",
@@ -26,88 +131,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9hPQZNl9hgduKW0o-1u1DDJdfE2UmniDYEr5dTnHveqSEXLCqlwQfJXpf4ck"
         },
         {
-          "url": "https://fadeawayworld.net/nba-trade-rumors/san-antonio-spurs/nba-trade-proposal-lands-spurs-a-defensive-wing-and-veteran-center-from-clippers",
-          "title": "NBA Trade Proposal Lands Spurs A Defensive Wing And Veteran Center From Clippers",
-          "publisher": "Fadeaway World",
+          "url": "https://www.limapagi.id/en/ron-harper-family-spurs-roster",
+          "title": "Ron Harper Mourns Aunt and Defends Spurs Roster",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMsaup16l8sk5V2SpgRlQvCrWAooniWQhx8OQsRMhWdrpAkRZ0JnOnnr5difU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPECJCkVv0nXdF9pww6KpfMp1wDUDDwivWvyYQc2ygtUV9ht204UxKpZe5TA"
         },
         {
-          "url": "https://sports.yahoo.com/nba/articles/hell-no-spurs-star-father-115500605.html",
-          "title": "“Hell No!”: Spurs Star’s Father Rejects Trade Proposal Pairing Victor Wembanyama With 2x All-Defensive Center",
-          "publisher": "Yahoo Sports",
+          "url": "https://cwibc.co.id/en/ron-harper-family-loss-griffin-support",
+          "title": "Ron Harper Mourns Aunt as Robert Griffin III Sends Support",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQquMSEt2EHDX37jACfsRxKoBKTb5NyKEAMTeOFbCF6SGrOUEbLzi7JKAzyZrE"
-        }
-      ]
-    },
-    {
-      "query": "cardi b",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
-        "https://www.xxlmag.com/cardi-b-global-woman-of-the-year-speech-billboard-canada/",
-        "https://torontolife.com/culture/toronto-cardi-b-bad-bitches/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc",
-      "image_credit": "Billboard",
-      "news": [
-        {
-          "url": "https://ca.billboard.com/music/billboard-canada-women-in-music-2026-highlights-cardi-b",
-          "title": "Billboard Canada Women in Music 2026: Cardi B Is 'Globally That B—' & More Best Moments",
-          "publisher": "Billboard",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRsPsQ2UVHNwpTqfAU8EvviXQvheh86tWuAuLbzCy5zy7N0MGwYTThmVoKM_yc"
-        },
-        {
-          "url": "https://www.xxlmag.com/cardi-b-global-woman-of-the-year-speech-billboard-canada/",
-          "title": "Cardi B Delivers Empowering Speech to ‘Go Get It’ as Billboard Canada’s Global Woman of the Year",
-          "publisher": "XXL Mag",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9_h3ARrsNQkvAtXUixmY_s9NBW3dt5VgpFI8uBXgfEVZ5y0-AYC91OUWa7Qk"
-        },
-        {
-          "url": "https://torontolife.com/culture/toronto-cardi-b-bad-bitches/",
-          "title": "\"Toronto, you have beautiful women\": Cardi B shouts out the city's high concentration of baddies",
-          "publisher": "Toronto Life",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoCFsB041LERbJOe3c_FnrM0zo8F31Fk2LtQfG3Wq2JXKSmFHWyTEm4CZyHjc"
-        }
-      ]
-    },
-    {
-      "query": "iowa vs nebraska",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:40:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-        "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
-        "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
-          "title": "Nebraska-Iowa: What we're looking for and final predictions",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
-          "title": "Iowa vs. Nebraska odds, prediction, time: Rivalry Week Friday picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgHrK1qerNapb0hIRy6SE5KMj8osCCxwFUtJ95daZBBbN1F8L7u77IrGj1Nbo"
-        },
-        {
-          "url": "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026",
-          "title": "Huskers' Surging Ground Game Heads for Hawkeye Wall",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMdK-z2O01QMnks-P3dZ_EQ1dLpkgeRjYDzg0_A6M2G-JKiyTIV98zKGwyUMk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyPECJCkVv0nXdF9pww6KpfMp1wDUDDwivWvyYQc2ygtUV9ht204UxKpZe5TA"
         }
       ]
     },
@@ -147,23 +182,93 @@
       ]
     },
     {
+      "query": "iowa vs nebraska",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+        "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
+        "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/nebraska/longformarticle/nebraska-huskers-football-iowa-hawkeyes-football-predictions-keys-to-the-game-picks-to-click-293336948/",
+          "title": "Nebraska-Iowa: What we're looking for and final predictions",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRgvuvHMq0VYKavn5YXjyskbv5NxX35WySNPsnL_r72IaJlG26fqAR0mP7t_ow"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/iowa-nebraska-odds-prediction-time-2026-rivalry-week-college-football-friday-picks/",
+          "title": "Iowa vs. Nebraska odds, prediction, time: Rivalry Week Friday picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzfELqqKHs1LXwZKx-_eC1yj-UqZqy75ys6hW3Si1noNDCnbIDOgybfGBiVzs"
+        },
+        {
+          "url": "https://www.si.com/college/nebraska/football/huskers-surging-ground-game-heads-for-hawkeye-wall-2026",
+          "title": "Huskers' Surging Ground Game Heads for Hawkeye Wall",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMdK-z2O01QMnks-P3dZ_EQ1dLpkgeRjYDzg0_A6M2G-JKiyTIV98zKGwyUMk"
+        }
+      ]
+    },
+    {
+      "query": "cardi b",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T13:40:00Z",
+      "related_news_urls": [
+        "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/",
+        "https://www.newsbreak.com/the-happiness-delivery-323615495/5007944196429-when-cardi-b-was-trying-to-show-the-cameras-their-new-mansion-but-offset-couldn-t-keep-his-hands-off-her",
+        "https://www.complex.com/music/a/alex-ocho/cardi-b-offset-like-what-mansion-lawsuit-settlement"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCfn62pckNGW_pGKT7zoiQsgVe3jdOoZz-mFqA-YSG3yImPTEYZhvyvvsfNI",
+      "image_credit": "Rolling Stone",
+      "news": [
+        {
+          "url": "https://www.rollingstone.com/music/music-news/cardi-b-offset-beverly-hills-mansion-lawsuit-settlement-1235664297/",
+          "title": "Cardi B and Offset See Beverly Hills Mansion Lawsuit Dismissed After Settlement",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiCfn62pckNGW_pGKT7zoiQsgVe3jdOoZz-mFqA-YSG3yImPTEYZhvyvvsfNI"
+        },
+        {
+          "url": "https://www.newsbreak.com/the-happiness-delivery-323615495/5007944196429-when-cardi-b-was-trying-to-show-the-cameras-their-new-mansion-but-offset-couldn-t-keep-his-hands-off-her",
+          "title": "When Cardi B was trying to show the cameras their new mansion, but Offset couldn’t keep his hands off her",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF5weAGo74i01mAyJaj--wcJ1B8Nmn4WGTrJqA8617AKOnBdeycuvmHl0ZENw"
+        },
+        {
+          "url": "https://www.complex.com/music/a/alex-ocho/cardi-b-offset-like-what-mansion-lawsuit-settlement",
+          "title": "Cardi B and Offset Settle \"Like What\" Mansion Lawsuit Weeks Before Trial",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTkim6fnnbcSwzFHvEeBJon1-25hM3U5uPOmcX9atUs1TyKYv11aaEL-RK-a0"
+        }
+      ]
+    },
+    {
       "query": "gma deals and steals",
       "approx_searches": "2000+",
       "published_at": "2026-11-27T13:30:00Z",
       "related_news_urls": [
-        "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
+        "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
         "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
-        "https://www.goodmorningamerica.com/video/138395996"
+        "https://cwibc.co.id/en/abc-news-black-friday-deals"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI",
+      "image_credit": "Good Morning America",
       "news": [
         {
-          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
-          "title": "'GMA' Deals & Steals for Black Friday",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "url": "https://www.goodmorningamerica.com/shop/story/deals-steals-thanksgiving-138395996",
+          "title": "Deals & Steals for Thanksgiving",
+          "publisher": "Good Morning America",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjCvOHGg74xpDuDdBg78h-FUpPQRsEJrkr5RQ8ZwjT1j-Vx_JgH3I_lAwjToI"
         },
         {
           "url": "https://www.yahoo.com/news/videos/gma-deals-steals-holiday-gifts-083537512.html",
@@ -173,11 +278,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ4C9ExkRfhAl6lJO8BVh1tDAJyR0uDxXeOFtbGMRe-r10QOnSf2CC25hg5tG4"
         },
         {
-          "url": "https://www.goodmorningamerica.com/video/138395996",
-          "title": "Deals & Steals for Thanksgiving",
-          "publisher": "Good Morning America",
+          "url": "https://cwibc.co.id/en/abc-news-black-friday-deals",
+          "title": "ABC News Features Black Friday Deals on Home and Travel Products",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTppFo3oZQK-bNxpH_OWp6If1Nuv6wbVcdLhQYkWbH3mzmI2mEbMKnJG7GoYhc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwd08CM8PQCrQ4OO9qwgj0aLdX1dskrC-tqu9VnQtp7LCzImBOomVs_HMEiNI"
         }
       ]
     },
@@ -217,134 +322,37 @@
       ]
     },
     {
-      "query": "black friday ipad deals 2026",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://www.wired.com/story/best-black-friday-ipad-deals-11-27-2026/",
-        "https://appleinsider.com/articles/26/11/26/apples-ipad-11-inch-dips-to-379-during-amazons-black-friday-sale",
-        "https://www.techradar.com/seasonal-sales/black-friday-ipad-deals-save-big-on-ipad-a16-ipad-air-and-ipad-pro-plus-discounts-on-the-brand-new-oled-ipad-mini"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTRAPwBEXkbYv5HhCOQvaN6dsumXDaaZkzYSBw0wWUUENvr9cZp4Ufy3jyx8",
-      "image_credit": "WIRED",
-      "news": [
-        {
-          "url": "https://www.wired.com/story/best-black-friday-ipad-deals-11-27-2026/",
-          "title": "The Best Black Friday iPad Deals On the Latest Models",
-          "publisher": "WIRED",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMTRAPwBEXkbYv5HhCOQvaN6dsumXDaaZkzYSBw0wWUUENvr9cZp4Ufy3jyx8"
-        },
-        {
-          "url": "https://appleinsider.com/articles/26/11/26/apples-ipad-11-inch-dips-to-379-during-amazons-black-friday-sale",
-          "title": "Apple iPad A16 drops to $379 in Amazon Black Friday deal",
-          "publisher": "AppleInsider",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5Yqxyql-671xQoSHIFzgl1CKIov83FC-0YARKcNqJ2hhyUzKhW5GNu2kcBZs"
-        },
-        {
-          "url": "https://www.techradar.com/seasonal-sales/black-friday-ipad-deals-save-big-on-ipad-a16-ipad-air-and-ipad-pro-plus-discounts-on-the-brand-new-oled-ipad-mini",
-          "title": "16 of the best Black Friday iPad deals: save big on iPad A16, iPad Air, iPad Pro, and more",
-          "publisher": "TechRadar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIfj8wmHGSR-DgAAI8s7i8ukhfsDvnkS5bgZE1p1b4A14I7wb8sihCYT5YnI0"
-        }
-      ]
-    },
-    {
       "query": "dolar hoje",
       "approx_searches": "200+",
       "published_at": "2026-11-27T13:30:00Z",
       "related_news_urls": [
-        "https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
-        "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/11/flavio-e-nikolas-ironizam-lula-apos-acerto-com-trabuco-para-fazenda-virou-faria-limer.ghtml",
-        "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/27/haddad-trabuco-fazenda.ghtm"
+        "https://www1.folha.uol.com.br/mercado/2026/11/lula-indicou-trabuco-a-dilma-que-rejeitou-e-escolheu-levy-historia-e-contada-em-livro.shtml",
+        "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-repercute-mundo.ghtml",
+        "https://www.infomoney.com.br/mercados/trabuco-na-fazenda-pode-levar-a-rotacao-para-acoes-financeiras-diz-citi-veja-acoes/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRucJdr-4YKf4ej0YO8kqE0Ob5XZEjtDrSoxW2mOkeQrbgcO75Apu-gIAwYSjA",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32zwgDLhvBcNJwG8NcGRZc7JhJqeEFHzcfiwqf3Ee0F2RR3KrT8aYgTFyg78",
       "image_credit": "Folha de S.Paulo",
       "news": [
         {
-          "url": "https://www1.folha.uol.com.br/mercado/2026/11/ativos-brasileiros-disparam-em-ny-apos-escolha-de-trabuco-xp-e-bradesco-saltam-18.shtml",
-          "title": "Ativos brasileiros disparam em NY após escolha de Trabuco; XP e Bradesco saltam 18%",
+          "url": "https://www1.folha.uol.com.br/mercado/2026/11/lula-indicou-trabuco-a-dilma-que-rejeitou-e-escolheu-levy-historia-e-contada-em-livro.shtml",
+          "title": "Lula indicou Trabuco a Dilma, que rejeitou e escolheu Levy; história é contada em livro",
           "publisher": "Folha de S.Paulo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRucJdr-4YKf4ej0YO8kqE0Ob5XZEjtDrSoxW2mOkeQrbgcO75Apu-gIAwYSjA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32zwgDLhvBcNJwG8NcGRZc7JhJqeEFHzcfiwqf3Ee0F2RR3KrT8aYgTFyg78"
         },
         {
-          "url": "https://oglobo.globo.com/blogs/sonar-a-escuta-das-redes/post/2026/11/flavio-e-nikolas-ironizam-lula-apos-acerto-com-trabuco-para-fazenda-virou-faria-limer.ghtml",
-          "title": "Flávio e Nikolas ironizam Lula após acerto com Trabuco para Fazenda: 'Virou Faria Limer'",
-          "publisher": "O GLOBO",
+          "url": "https://g1.globo.com/economia/noticia/2026/11/27/trabuco-repercute-mundo.ghtml",
+          "title": "A reação da imprensa internacional à indicação de Trabuco para o Ministério da Fazenda",
+          "publisher": "G1",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkXE_lMHSeoczAaZpvvpYeyzKb7prN4RnP4-CO-tAb9H7Xo-lZVlzbOU9XYdk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtUHWHpNzGP0s5f71y_cLOxDUU4xbXH1e64zDzvOqCXDhfSN1tuAGpf12FNpY"
         },
         {
-          "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/11/27/haddad-trabuco-fazenda.ghtm",
-          "title": "Haddad parabeniza Trabuco e diz que Brasil precisa de 'uma Fazenda forte'",
-          "publisher": "UOL Notícias",
+          "url": "https://www.infomoney.com.br/mercados/trabuco-na-fazenda-pode-levar-a-rotacao-para-acoes-financeiras-diz-citi-veja-acoes/",
+          "title": "Trabuco na Fazenda pode levar à rotação para ações financeiras, diz Citi; veja ações",
+          "publisher": "InfoMoney",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQA24zM3U2FNQUIridzPi0imdf2HripxQSJfLZmBONn1x-VS0QZcmm8RZmqBIU"
-        }
-      ]
-    },
-    {
-      "query": "who is matt rogers",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://abcnews.com/video/138479627/",
-        "https://www.broadwayworld.com/bwwtv/article/Matt-Rogers-on-Christmas-Tour-Mug-Stack-and-Golden-Globe-Bid-20261126"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNooB_FhhGSFigTD0MS2-h1IcNeQ7xRI64ry8378DTOqiD_TBLW144UD084M",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
-      "news": [
-        {
-          "url": "https://abcnews.com/video/138479627/",
-          "title": "Video Matt Rogers talks 'This Time It's Really Christmas' tour",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWNooB_FhhGSFigTD0MS2-h1IcNeQ7xRI64ry8378DTOqiD_TBLW144UD084M"
-        },
-        {
-          "url": "https://www.broadwayworld.com/bwwtv/article/Matt-Rogers-on-Christmas-Tour-Mug-Stack-and-Golden-Globe-Bid-20261126",
-          "title": "Matt Rogers on Christmas Tour, Mug Stack and Golden Globe Bid",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgF03SAjKNdxisWLkP21xC8AnSJa8GCYAuKzTZi07JVEvHrhzC-qQP20MAE3c"
-        }
-      ]
-    },
-    {
-      "query": "the pitt season 3",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T13:30:00Z",
-      "related_news_urls": [
-        "https://www.today.com/video/hbo-max-sets-release-date-for-the-pitt-season-3-274261573580",
-        "https://www.post-gazette.com/culture/film-tv-radio/the-pitt-season-3-release-jan-7-KMAMMUCCDJFFFPGYXCZWUIJGDA/",
-        "https://hypebeast.com/2026/11/hbo-max-the-pitt-season-3-premiere-release-date-announcement"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt3kOQTIn0dNnDsXXUwcjdylKNC2FfKUWlv1vwt-RDi0OP2sQhq5Jr3sXwn_U",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/video/hbo-max-sets-release-date-for-the-pitt-season-3-274261573580",
-          "title": "‘The Pitt’ to Return for Season 3 Sooner Than You Might Think",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRt3kOQTIn0dNnDsXXUwcjdylKNC2FfKUWlv1vwt-RDi0OP2sQhq5Jr3sXwn_U"
-        },
-        {
-          "url": "https://www.post-gazette.com/culture/film-tv-radio/the-pitt-season-3-release-jan-7-KMAMMUCCDJFFFPGYXCZWUIJGDA/",
-          "title": "‘The Pitt’ announces Season 3 premiere date",
-          "publisher": "Pittsburgh Post-Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQRV2H2YVyuUBA6gI5XsuNzvToy-ps-7PWwsF9AvhsL_aYmJqbXSdsicyC_fds"
-        },
-        {
-          "url": "https://hypebeast.com/2026/11/hbo-max-the-pitt-season-3-premiere-release-date-announcement",
-          "title": "The Clock Starts Again as ‘The Pitt’ Season 3 Locks Its Premiere Date",
-          "publisher": "Hypebeast",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPVQItm7zmbHJwPPyAntmWkKflFWy2yrK64Xy-0qhKLoA0htZ-m2SBeiFvyA0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4OFNO-XRO3EN1D3Kf4i3IWf3OMCvloyzCdJGiJexlD00TFuuQujU-B-8nim8"
         }
       ]
     }
