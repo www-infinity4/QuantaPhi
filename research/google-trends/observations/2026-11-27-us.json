@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T00:01:30.687607Z",
+  "checked_at": "2026-11-27T00:45:18.475644Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "beyonce",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T23:40:00Z",
+      "query": "lsu basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T00:30:00Z",
       "related_news_urls": [
-        "https://foxsanantonio.com/news/entertainment/from-a-record-breaking-grammy-milestone-to-a-holiday-special-and-a-new-musical-era",
-        "https://www.ad-hoc-news.de/unterhaltung/musik/beyonce-reaches-100-grammy-nominations-on-november-16/70557763",
-        "https://www.aol.com/articles/beyonce-taylor-swift-more-stars-011752000.html"
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401921669/lsu-arizona-st",
+        "https://lsusports.net/news/2026/11/25/no-20-tiger-basketball-outlasts-arizona-state-in-double-overtime-94-92",
+        "https://www.wbrz.com/news/lsu-men-s-basketball-escapes-double-overtime-thriller-with-arizona-state/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbO_fk2w4V0ifKGmtIGH_xZa3lGtL-qPkVKNLL6JVfDlzlTUJ-HULN66K4UAU",
-      "image_credit": "KABB",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5PnPwGHglo-_xwwbKa1znZckYhQRqhfLbHQQ8bDCX82BC8cwwPOdptJNxx0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://foxsanantonio.com/news/entertainment/from-a-record-breaking-grammy-milestone-to-a-holiday-special-and-a-new-musical-era",
-          "title": "From a record-breaking Grammy milestone to a holiday special and a new musical era",
-          "publisher": "KABB",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbO_fk2w4V0ifKGmtIGH_xZa3lGtL-qPkVKNLL6JVfDlzlTUJ-HULN66K4UAU"
-        },
-        {
-          "url": "https://www.ad-hoc-news.de/unterhaltung/musik/beyonce-reaches-100-grammy-nominations-on-november-16/70557763",
-          "title": "Beyoncé reaches 100 Grammy nominations on November 16",
-          "publisher": "ad-hoc-news.de",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuet6UoMUMFsUyH_qoRK1z8pGOSBONJE599n977e0_nZp1tkCkrYdXlD9bpI0"
-        },
-        {
-          "url": "https://www.aol.com/articles/beyonce-taylor-swift-more-stars-011752000.html",
-          "title": "Beyonce, Taylor Swift and More Stars Who Have Broken Grammy Records Through the Years",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeEdlzSAviqZcOe2KYnSdU-v1Y0vtGoPO67W9H2oSDdzhD-fjl_zodCVvMETg"
-        }
-      ]
-    },
-    {
-      "query": "jensen huang foundation stock value jump",
-      "approx_searches": "200+",
-      "published_at": "2026-11-26T23:40:00Z",
-      "related_news_urls": [
-        "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
-        "https://www.pbs.org/newshour/nation/nvidia-ceos-comeback-fuels-debate-over-misogyny-and-impunity-for-the-rich-and-powerful",
-        "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUg44WZPDEthU2JtwYfMLszupKzEbMLEamEbCFJ-OPK5sOHwyrSBphyVal6o",
-      "image_credit": "The Washington Post",
-      "news": [
-        {
-          "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
-          "title": "Hegseth, Pentagon officials floated using wartime law to reappoint Nvidia CEO",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUg44WZPDEthU2JtwYfMLszupKzEbMLEamEbCFJ-OPK5sOHwyrSBphyVal6o"
-        },
-        {
-          "url": "https://www.pbs.org/newshour/nation/nvidia-ceos-comeback-fuels-debate-over-misogyny-and-impunity-for-the-rich-and-powerful",
-          "title": "Nvidia CEO's comeback fuels debate over misogyny and impunity for the rich and powerful",
-          "publisher": "PBS",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzSeVIeG7WpUulwJsgSvr9p8LTx06uI4PPiZultGSJ96_JCQf25MKPkQJlEpk"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html",
-          "title": "Trump Rejoiced in the Market’s Nvidia Surge. It Didn’t Last Long.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSik-9rH8B31WbHQyZZDCK_1kELZA6mUdEmmuCTLyH_qRtBgtNAnD4PgCBZDeY"
-        }
-      ]
-    },
-    {
-      "query": "dallas cowboys cheerleaders",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T23:30:00Z",
-      "related_news_urls": [
-        "https://people.com/dallas-cowboys-cheerleaders-game-day-hair-secrets-exclusive-12274500",
-        "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-eagles-at-cowboys-nfl-thanksgiving-week-12-2026-joe-milton-saquon-barkley-dak-prescott",
-        "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYIjytgsJo8wJti4PIfz0VAOFVaVbg_M8nJFbs12AOwWO_KlNOfM0pk_xqZKI",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/dallas-cowboys-cheerleaders-game-day-hair-secrets-exclusive-12274500",
-          "title": "4 Dallas Cowboys Cheerleaders Dish on Their Best Game-Day Hair Secrets (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYIjytgsJo8wJti4PIfz0VAOFVaVbg_M8nJFbs12AOwWO_KlNOfM0pk_xqZKI"
-        },
-        {
-          "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-eagles-at-cowboys-nfl-thanksgiving-week-12-2026-joe-milton-saquon-barkley-dak-prescott",
-          "title": "How to watch, stream, and listen | Eagles at Cowboys",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5cMD9Pl9vwJ4fYb2pOZ8PIwqN6PT9bDFiKWz6nEGh1M8lQlfrIjOS0NLkr84"
-        },
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
-          "title": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401921669/lsu-arizona-st",
+          "title": "LSU 94-92 Arizona State (Nov 25, 2026) Final Score",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOSTIcy000bbKXJGgSoMVmP306l9bvXFyA7up_di1-4Gl_wO5041zL0FqkPA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq5PnPwGHglo-_xwwbKa1znZckYhQRqhfLbHQQ8bDCX82BC8cwwPOdptJNxx0"
+        },
+        {
+          "url": "https://lsusports.net/news/2026/11/25/no-20-tiger-basketball-outlasts-arizona-state-in-double-overtime-94-92",
+          "title": "No. 20 Tiger Basketball Outlasts Arizona State in Double-Overtime, 94-92",
+          "publisher": "LSUsports.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR0znybfw3O6SwFhKs8APJ3tOglPZJD9iUpYFcz-M8bGWaEMhm2NtYmtAUywO8"
+        },
+        {
+          "url": "https://www.wbrz.com/news/lsu-men-s-basketball-escapes-double-overtime-thriller-with-arizona-state/",
+          "title": "LSU men's basketball escapes double-overtime thriller with Arizona State",
+          "publisher": "WBRZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLCOGr8FJIFod9pEQNUdJNTZq5FNiIVvRvutbyCZhd1-x2fCKPd35uuCnvqHs"
         }
       ]
     },
     {
-      "query": "brendan mcloughlin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T23:30:00Z",
+      "query": "jerry jones",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T00:20:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/music/articles/miranda-lambert-makes-rare-appearance-033144154.html",
-        "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/miranda-lambert-husband-nypd-officer-married/24b851553de2878afca55d24",
-        "https://www.foxnews.com/video/6408578258112"
+        "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
+        "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
+        "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh5u8PlR6HW7tCTJbUYzZhAlD8AVhaPzw0Rz_eLQTrB6DBsj8wuPiBUKwSxc",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU",
+      "image_credit": "Detroit Lions",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/music/articles/miranda-lambert-makes-rare-appearance-033144154.html",
-          "title": "Miranda Lambert Makes Rare Appearance With Husband Brendan McLoughlin at 2026 CMA Awards",
-          "publisher": "Yahoo",
+          "url": "https://www.detroitlions.com/news/lions-owner-chair-emeritus-martha-firestone-ford-passes-away-at-101",
+          "title": "Lions Owner/Chair Emeritus Martha Firestone Ford passes away at 101",
+          "publisher": "Detroit Lions",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh5u8PlR6HW7tCTJbUYzZhAlD8AVhaPzw0Rz_eLQTrB6DBsj8wuPiBUKwSxc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQOVfA5bTQEiYnsILZyYsowtSIiQjqnyFeXFGjQaz11DZBdjnVu9CZ7UasynU"
         },
         {
-          "url": "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/miranda-lambert-husband-nypd-officer-married/24b851553de2878afca55d24",
-          "title": "Who is Miranda Lambert’s husband? Meet the former NYPD officer married to country star",
-          "publisher": "Sporting News",
+          "url": "https://www.packers.com/news/statement-from-the-green-bay-packers-nov-25-2026",
+          "title": "Statement from the Green Bay Packers",
+          "publisher": "Green Bay Packers – packers.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0BeFyGOznSO4Iald5SBSwojy7-ksN3Y83fCZHc_dTojZaoxJ5lKPkfMqzcyE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRj00ci0Onx6Dk2s0DNd6Bs5V1t0wQX6umCaY3s6mNST1gyUV4puFUGUxOixm8"
         },
         {
-          "url": "https://www.foxnews.com/video/6408578258112",
-          "title": "Miranda Lambert poses with her CMA Awards following her wins",
-          "publisher": "Fox News",
+          "url": "https://www.nytimes.com/2026/11/24/business/martha-firestone-ford-dead.html",
+          "title": "Martha Firestone Ford, Owner of Detroit Lions, Dies at 101",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ltTI0iumlnSr45vYKDzwnt2hDSzv4vnwhCYI_Mym-RGxL6s3RidKVq-EvBg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJ8aVixTl7mciFQzNwPQ7k1VS1xf98Lw7sDawOW_q0d7LJmxPrJKbAD3lpNRo"
         }
       ]
     },
     {
-      "query": "the mayflower",
+      "query": "jason statham",
       "approx_searches": "1000+",
-      "published_at": "2026-11-26T23:30:00Z",
+      "published_at": "2026-11-27T00:20:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/entertainment/billy-bob-thornton-says-hes-holiday-purist-he-brings-back-traditional-thanksgiving-home",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/billy-bob-thornton-the-mayflower-fox-nation-docudrama-interview/92852255007/",
-        "https://movieweb.com/billy-bob-thornton-mayflower-recommendation/"
+        "https://movieweb.com/jason-statham-mechanic-resurrection-leaving-streaming-november-2026/",
+        "https://screenrant.com/jason-statham-crank-high-voltage-starz-top-movie-2026-streaming-chart/",
+        "https://foro3d.com/en/2026/noviembre/el-apicultor-2-presenta-su-poster-con-un-aguijon-que-necesita-vehiculo.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSExKTnTGGp1nlsBiSBEW29CZXRRS4JZx6OUvC069wWWg9BBdYsyvvy2NZfog8",
-      "image_credit": "Fox News",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn4cJJhrNBclSFIbpTXCjgJ4EYoTBSpgf0IvE7ZySlfbWJKp6N4Pqv3vhlbQE",
+      "image_credit": "MovieWeb",
       "news": [
         {
-          "url": "https://www.foxnews.com/entertainment/billy-bob-thornton-says-hes-holiday-purist-he-brings-back-traditional-thanksgiving-home",
-          "title": "Billy Bob Thornton says he’s a holiday ‘purist’ as he brings back ‘traditional’ Thanksgiving at home",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSExKTnTGGp1nlsBiSBEW29CZXRRS4JZx6OUvC069wWWg9BBdYsyvvy2NZfog8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/billy-bob-thornton-the-mayflower-fox-nation-docudrama-interview/92852255007/",
-          "title": "Billy Bob Thornton reveals truth about 'Mayflower' and those Demi Moore stories",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl-KSVbJZg6TI2YGdN-TyXDD6XgN8aS4AaEjkKWUgJCVJ4WHHgXnpGZFnIWI"
-        },
-        {
-          "url": "https://movieweb.com/billy-bob-thornton-mayflower-recommendation/",
-          "title": "Billy Bob Thornton's New 'Landman' Replacement Is the Perfect Thanksgiving Weekend Binge",
+          "url": "https://movieweb.com/jason-statham-mechanic-resurrection-leaving-streaming-november-2026/",
+          "title": "Jason Statham's 98-Minute Assassin Action Thriller Sequel Is Officially Being Cut From Streaming",
           "publisher": "MovieWeb",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTie8UoR63GIetnfbO51ztiwZBZaYQl_62bTeCNk_tJuL8roBPhVf7dJcw7FeE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRn4cJJhrNBclSFIbpTXCjgJ4EYoTBSpgf0IvE7ZySlfbWJKp6N4Pqv3vhlbQE"
+        },
+        {
+          "url": "https://screenrant.com/jason-statham-crank-high-voltage-starz-top-movie-2026-streaming-chart/",
+          "title": "Jason Statham’s 96-Minute Action Thriller Thoroughly Dominates As Streaming’s #1 Movie Of 2026",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkSqqnSKOHatX_-Uvofq0QOynxy9qtcrBEpsCWAjGAjvZyqBMUTPB5um65YuQ"
+        },
+        {
+          "url": "https://foro3d.com/en/2026/noviembre/el-apicultor-2-presenta-su-poster-con-un-aguijon-que-necesita-vehiculo.html",
+          "title": "The Beekeeper 2 unveils its poster with a stinger that needs a vehicle",
+          "publisher": "Foro3D",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnpIy3696FnFLwigYsDInzsmIod7n94NUJmVXMpQV_nyzvEkcu4w5uQc4CNXI"
         }
       ]
     },
     {
-      "query": "macaulay culkin",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-26T23:30:00Z",
+      "query": "smu basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T00:20:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
-        "https://www.yahoo.com/entertainment/movies/articles/macaulay-culkin-returns-acting-ahead-004940711.html",
-        "https://www.imdb.com/news/ni66127332/?ref_=tt_nwr_1"
+        "https://sports.yahoo.com/mens-college-basketball/articles/no-20-lsu-mens-basketball-230145225.html",
+        "https://www.nytimes.com/athletic/7814633/2026/11/26/smu-vs-lsu-stream-how-to-watch-nov-26/",
+        "https://www.tallahatchienews.ms/node/463793"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVTjaX2dSzFhRGlotoxHtgD9cFEdU5KFl3-yYF5-3ojPnFPD5AgBWyDlLbBBw",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR2oAg7OqB3zD0LAPtIhNmxQSwUjvmv5zz58EnxXaukB8rZPOwL-akozqgVrw",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
-          "title": "Constance Wu, Macaulay Culkin, Ken Leung And Ethan Eng To Star In New A24 Film From Director Walter Woodman",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVTjaX2dSzFhRGlotoxHtgD9cFEdU5KFl3-yYF5-3ojPnFPD5AgBWyDlLbBBw"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/macaulay-culkin-returns-acting-ahead-004940711.html",
-          "title": "Macaulay Culkin Returns to Acting Ahead of Home Alone Sequel for A24 Movie With Constance Wu",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjtHbSBTvsmrAcekcEah5nktf6vuzxIOdKZUk2rp_najnXGeuxCit9iaRbGE"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66127332/?ref_=tt_nwr_1",
-          "title": "From screen-life shorts to A24: Walter Woodman’s debut lands Constance Wu and Macaulay Culkin",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW_3PlxdiyH6UMGsCIvcsQyy_jGU929Ln7cVu0S0QXR_krMc2Z_gLNDXUq2J0"
-        }
-      ]
-    },
-    {
-      "query": "jessica simpson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T23:30:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-simpson-flaunts-darkest-hair-190458416.html",
-        "https://people.com/jessica-simpson-changes-her-signature-blonde-hair-to-brown-photo-12270072",
-        "https://www.instyle.com/jessica-simpson-chocolate-brown-hair-transformation-new-photo-12275363"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoyqseN3Hd4XoNDTfEdUDCJ_4s4UYtnaEfjmGAm9clQOgUI7A_2fBU7nK4iVs",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-simpson-flaunts-darkest-hair-190458416.html",
-          "title": "Jessica Simpson flaunts darkest hair color in two decades: ‘Billionaire brunette’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoyqseN3Hd4XoNDTfEdUDCJ_4s4UYtnaEfjmGAm9clQOgUI7A_2fBU7nK4iVs"
-        },
-        {
-          "url": "https://people.com/jessica-simpson-changes-her-signature-blonde-hair-to-brown-photo-12270072",
-          "title": "Jessica Simpson Shares a Closer Look at Her New Brunette Hair After Ditching Her Signature Blonde Locks",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQivz3FoHZt2vmd3A3lR45sKkvyHCsuLv_GXral1hdPq1uKsk4kpLSsILv9GzU"
-        },
-        {
-          "url": "https://www.instyle.com/jessica-simpson-chocolate-brown-hair-transformation-new-photo-12275363",
-          "title": "Jessica Simpson Looks Nearly Unrecognizable With Darkest Hair Transformation in Years",
-          "publisher": "InStyle",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5_rCChcCKSR-7lFLF115VKPaOog_Q-FPcwAf1kky-226bsZ5GnZHGXtoul4"
-        }
-      ]
-    },
-    {
-      "query": "tcu vs texas tech",
-      "approx_searches": "500+",
-      "published_at": "2026-11-26T23:30:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/betting/news/tcu-texas-tech-odds-prediction-time-rivalry-week-best-bets-college-football-picks/",
-        "https://www.kcbd.com/2026/11/25/texas-tech-sells-out-thanksgiving-matchup-against-tcu/",
-        "https://sports.yahoo.com/college-football/articles/tcu-injury-report-horned-frogs-224907251.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD-qAXxjZfElXSfXjnrjvIoAizHwh0LFHMM9m2N_KavxiZR07yd9CE-pSQBxM",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/betting/news/tcu-texas-tech-odds-prediction-time-rivalry-week-best-bets-college-football-picks/",
-          "title": "TCU vs. Texas Tech odds, prediction, time: Rivalry week college football picks from proven model",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD-qAXxjZfElXSfXjnrjvIoAizHwh0LFHMM9m2N_KavxiZR07yd9CE-pSQBxM"
-        },
-        {
-          "url": "https://www.kcbd.com/2026/11/25/texas-tech-sells-out-thanksgiving-matchup-against-tcu/",
-          "title": "Texas Tech sells out Thanksgiving matchup against TCU",
-          "publisher": "KCBD",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6yxLVVUGtRUhHwXrUZb4KXzNVSzx9Eea4qGCKYm5ISjIAPXMaREXI_hq80eE"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/tcu-injury-report-horned-frogs-224907251.html",
-          "title": "TCU Injury Report: Horned Frogs Face Texas Tech in Thanksgiving Battle",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/no-20-lsu-mens-basketball-230145225.html",
+          "title": "No. 20 LSU men's basketball vs SMU | How to watch, live score from Acrisure Series",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNM4MkdIGt0tw_m8995R39Yp2AivN-HtfJ_tPn9MgysgBA43R6wUKh05am6Bw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTR2oAg7OqB3zD0LAPtIhNmxQSwUjvmv5zz58EnxXaukB8rZPOwL-akozqgVrw"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7814633/2026/11/26/smu-vs-lsu-stream-how-to-watch-nov-26/",
+          "title": "How to watch SMU vs. LSU men’s basketball: TV channel and streaming options for November 26 - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT31aGWnzhy8foupczCdxhl0fdsnN_bgakgJs9GTw72oUuBoaZuR16Tgs4bwNo"
+        },
+        {
+          "url": "https://www.tallahatchienews.ms/node/463793",
+          "title": "[-STREAM] (WAY) TO WATCH Tigers vs Mustangs LIVE Streams ON TV CHANNEL Ｓｔｒｅａｍｓ ＯＮ ＴＶ Cast",
+          "publisher": "tallahatchienews.ms",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqwUVc_qWy2yjiUxMYKwXAE7QXTqOEWWaZQ4UGRVw35yxI5AzXRLJTBvXcgUY"
         }
       ]
     },
     {
-      "query": "black friday deals on thanksgiving day",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-26T23:20:00Z",
+      "query": "brandon aubrey",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T00:10:00Z",
       "related_news_urls": [
-        "https://nymag.com/strategist/article/amazon-thanksgiving-black-friday-sale-2026.html",
-        "https://www.southernliving.com/what-to-buy-amazon-black-friday-deals-2026-12243834",
-        "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html"
+        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-kickers-for-week-12",
+        "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573224/nfl-fantasy-football-rankings-2026-k-kicker",
+        "https://sports.yahoo.com/fantasy/article/justin-boone-week-12-fantasy-football-kicker-rankings-155422467.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecU_Rq0JDEbDciS2MbSD7_eQmY2J_TQUlvARgnetptWgNFBggtGwevzwXmvQ",
-      "image_credit": "New York Magazine",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJGta69y77TNx-U_iNpCy5yu484HAg9sbnbxxXaWXnc1s-1yM8qx4-aym8JEQ",
+      "image_credit": "NFL.com",
       "news": [
         {
-          "url": "https://nymag.com/strategist/article/amazon-thanksgiving-black-friday-sale-2026.html",
-          "title": "Many New Amazon Black Friday Deals Have Dropped Today",
-          "publisher": "New York Magazine",
+          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-kickers-for-week-12",
+          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Kickers for Week 12",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecU_Rq0JDEbDciS2MbSD7_eQmY2J_TQUlvARgnetptWgNFBggtGwevzwXmvQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJGta69y77TNx-U_iNpCy5yu484HAg9sbnbxxXaWXnc1s-1yM8qx4-aym8JEQ"
         },
         {
-          "url": "https://www.southernliving.com/what-to-buy-amazon-black-friday-deals-2026-12243834",
-          "title": "Don’t Let Amazon’s Black Friday Sale Overwhelm You—These 15 Finds Are The Best Place To Start",
-          "publisher": "Southern Living",
+          "url": "https://www.espn.com/fantasy/football/story/_/page/FFWeeklyPlayerRank26-50573224/nfl-fantasy-football-rankings-2026-k-kicker",
+          "title": "Fantasy football rankings for Week 12: Kicker",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-UQT1Be-xryUZKEa4O8f-GTkT1cF7Rt1uvGbkYgfH7xYTpGcVBAbQ5myJDw4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiDF391o7viT5GJ4Dq4_fUaRQI_w_bNqQFoGUnBzYBIl_t99IKy2AjkAQ9YBk"
         },
         {
-          "url": "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html",
-          "title": "Amazon Black Friday deals: Live updates on the biggest sales from Apple, Yeti, Ninja, Ring, KitchenAid and more during Cyber Week 2026",
+          "url": "https://sports.yahoo.com/fantasy/article/justin-boone-week-12-fantasy-football-kicker-rankings-155422467.html",
+          "title": "Justin Boone's Week 12 Fantasy Football Kicker Rankings",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnYAVasGBdhXduSgas9DeNpwRx6kOGOI_5mm27sxTr1GevCfBbB27iegI-Ric"
+        }
+      ]
+    },
+    {
+      "query": "pitt basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
+        "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
+        "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/pittsburgh/article/pitt-depaul-basketball-staff-picks-preview-where-to-watch-jeff-capel-chris-holtmann-baye-ndongo-293311891/",
+          "title": "Staff Picks: Can Pitt overcome DePaul in a showdown of undefeated teams?",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzLZ0HklA_LyWZRjq1wXlk7QoQTWAtH1Qs1SondwKFEPFRCA0pl5ZI6b6JydY"
+        },
+        {
+          "url": "https://pittsburghpanthers.com/news/2026/11/25/mens-basketball-7-0-pitt-to-face-6-0-depaul-on-thanksgiving-day",
+          "title": "7-0 Pitt To Face 6-0 DePaul On Thanksgiving Day",
+          "publisher": "PittsburghPanthers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQPj7e7APfGqWHJ6CcYXdSBuCYMIHzTW7J21sekS-HDLQAg1AZ8EkdIonV_0G0"
+        },
+        {
+          "url": "https://triblive.com/sports/undefeated-pitt-depaul-set-to-collide-in-florida/",
+          "title": "Undefeated Pitt, DePaul set to collide in Florida",
+          "publisher": "TribLIVE.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTBQyt2xQwbbKpsP0vR98BIQPZtB1k2caoZhgUrK0LC1OlY42B5Vq-4XBKHavU"
+        }
+      ]
+    },
+    {
+      "query": "depaul basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://www.chicagotribune.com/2026/11/24/depaul-purdue-fort-myers-tip-off/",
+        "https://www.on3.com/teams/purdue-boilermakers/news/acre-pro-wednesday-night-live-purdue-hoops-and-football-chat/",
+        "https://www.hammerandrails.com/purdue-mens-basketball/62501/second-half-mistakes-cost-purdue-losing-65-to-56-to-depaul"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWMCwSAT4uW4Z4fcLDesPFjrDftWByfzWPvqLITbtYOXjhKzBQxjiZETDSN5Q",
+      "image_credit": "Chicago Tribune",
+      "news": [
+        {
+          "url": "https://www.chicagotribune.com/2026/11/24/depaul-purdue-fort-myers-tip-off/",
+          "title": "DePaul improves to 6-0 with 65-56 win against Purdue in Fort Myers Tip-Off",
+          "publisher": "Chicago Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWMCwSAT4uW4Z4fcLDesPFjrDftWByfzWPvqLITbtYOXjhKzBQxjiZETDSN5Q"
+        },
+        {
+          "url": "https://www.on3.com/teams/purdue-boilermakers/news/acre-pro-wednesday-night-live-purdue-hoops-and-football-chat/",
+          "title": "Acre Pro Wednesday Night LIVE: Purdue hoops and football chat",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-8BHWTFWYJafK-xOpSch-nMV65yEIbh42bn-ddwERrWaStK_p4ORyzGu2kLA"
+        },
+        {
+          "url": "https://www.hammerandrails.com/purdue-mens-basketball/62501/second-half-mistakes-cost-purdue-losing-65-to-56-to-depaul",
+          "title": "Second-Half Mistakes Cost Purdue, Losing 65 to 56 to DePaul",
+          "publisher": "Hammer and Rails",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR0EOUIkmbhT8WTsYCN-Sd0j96MXbAqZATr6UMeLtOWeeLX088_ZTEJT4Zwfts"
+        }
+      ]
+    },
+    {
+      "query": "drake",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://www.chron.com/news/houston-texas/article/drake-video-rice-university-22545964.php",
+        "https://www.complex.com/music/a/treyalston/drake-rice-university-skyspace-ya-hit-video",
+        "https://hoodline.com/2026/11/drake-appears-to-film-future-video-at-rice-s-skyspace/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS6_UB18BJwDE91SRS8L5mlIW3y_KK8HMsr5SfpiHPGxnCNeAnZPo3pOr68oQ",
+      "image_credit": "Chron",
+      "news": [
+        {
+          "url": "https://www.chron.com/news/houston-texas/article/drake-video-rice-university-22545964.php",
+          "title": "Grammy-winning rapper may have snuck onto Rice campus for secret shoot",
+          "publisher": "Chron",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSS6_UB18BJwDE91SRS8L5mlIW3y_KK8HMsr5SfpiHPGxnCNeAnZPo3pOr68oQ"
+        },
+        {
+          "url": "https://www.complex.com/music/a/treyalston/drake-rice-university-skyspace-ya-hit-video",
+          "title": "Rice University Claims Drake Shot Video at School Without Its Knowledge",
+          "publisher": "Complex",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ51OnAd9oMVK7vuw-uNxkOsX24Pwha7vkJveY-nQbBeQi50gouX7Y0Hw0Psc"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/drake-appears-to-film-future-video-at-rice-s-skyspace/",
+          "title": "Drake Appears to Film Future Video at Rice's Skyspace",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6drEQ0vJZIPOX0Ts5xhUiZYGKDCyXeoiXVJLUgkkHuISvnhoqhu4J3KqpFVA"
+        }
+      ]
+    },
+    {
+      "query": "best movies to stream right now",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T00:10:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/erikkain/2026/11/26/what-to-watch-this-weekend-new-shows-and-movies-to-stream-on-netflix-hulu-prime-video-apple-tv-and-more/",
+        "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
+        "https://www.imdb.com/news/ni66125291/?ref_=ttnw_art_perm"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSq-OuR4A82ON-S8rsWPHKoctWvQiNOQn6elYC46qimkl_m4isbSDK5YD0eU",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/26/what-to-watch-this-weekend-new-shows-and-movies-to-stream-on-netflix-hulu-prime-video-apple-tv-and-more/",
+          "title": "What To Watch This Weekend: New Shows And Movies To Stream On Netflix, Hulu, Prime Video, Apple TV And More",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSq-OuR4A82ON-S8rsWPHKoctWvQiNOQn6elYC46qimkl_m4isbSDK5YD0eU"
+        },
+        {
+          "url": "https://decider.com/2026/11/20/new-movies-on-streaming-where-to-watch-the-odyssey-a-talent-for-murder-and-more/",
+          "title": "New movies on streaming: ‘The Odyssey,’ ‘A Talent For Murder’ and more",
+          "publisher": "Decider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJqfcdwNh-HanBiLz-gtz52QcIt3JBX92dWS_uwloaHKel6yZcML6fCbW80bQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66125291/?ref_=ttnw_art_perm",
+          "title": "8 New TV Shows to Watch This Weekend on Netflix, Disney, and Paramount (November 20-22)",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmxdDDQx1-AxQCLoCV25YRHBQoH8G_4VEn5hqDRoSLrUUiPkTUCOMvIGiBhLs"
+        }
+      ]
+    },
+    {
+      "query": "nina jacobson mockingjay split regret",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T00:00:00Z",
+      "related_news_urls": [
+        "https://www.empireonline.com/movies/news/hunger-games-producer-would-adapt-mockingjay-all-in-one-today-exclusive/",
+        "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
+        "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-admits-mockingjay-154348187.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeVf7UgCgrWbYoEGmtiB7riT7VQUJfanuBdKYQjp7atvwH9dBP9U70qhKtdTM",
+      "image_credit": "Empire",
+      "news": [
+        {
+          "url": "https://www.empireonline.com/movies/news/hunger-games-producer-would-adapt-mockingjay-all-in-one-today-exclusive/",
+          "title": "The Hunger Games producer would make a major change to the Mockingjay adaptation today (Exclusive)",
+          "publisher": "Empire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeVf7UgCgrWbYoEGmtiB7riT7VQUJfanuBdKYQjp7atvwH9dBP9U70qhKtdTM"
+        },
+        {
+          "url": "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
+          "title": "'Hunger Games' Producer Regrets Splitting 'Mockingjay' As Fans Felt It Was A \"Play To Make Them See Two Films Instead Of One\"",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXM_CtsLBXkXxxKT-Z0VaKbhGoF2sOnii-2FKxFrGWhBpAydl-ExkXtRpaohU"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-admits-mockingjay-154348187.html",
+          "title": "‘Hunger Games’ Producer Admits ‘Mockingjay’ Should Have Been One Movie",
           "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORpvwj1j-4EgaJJaveH09QkO-6tuLeU305kw-YPa9u7gnqcVFIn_jw6TDH6Y"
-        }
-      ]
-    },
-    {
-      "query": "tcu basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-26T23:20:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
-        "https://www.si.com/college/tcu/basketball/tcu-creighton-basketball-how-to-watch-players-era-2026",
-        "https://cwibc.co.id/en/tcu-creighton-players-era-showdown"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
-          "title": "TCU Horned Frogs play the Creighton Bluejays",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
-        },
-        {
-          "url": "https://www.si.com/college/tcu/basketball/tcu-creighton-basketball-how-to-watch-players-era-2026",
-          "title": "TCU vs. Creighton Basketball Preview and How to Watch the Players Era 16",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbOuQTMc_uQCKh-iopm0eNcoJL4jPOdlVf2kOyg4cIkADWHb1YS3l1xG7cKZ8"
-        },
-        {
-          "url": "https://cwibc.co.id/en/tcu-creighton-players-era-showdown",
-          "title": "TCU Faces Creighton in Players Era Tournament Showdown",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUeC6WQJKJaQfXleLxe0fjoQ2hY686XuKIyc-AvECn6litsmOk2dlc0PzJhP0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdNZJEQPDjOqSkQQgHOqATC3PsRqsAK3y-L1cX8LMWXRHHlrcj5Nm9dSsn39s"
         }
       ]
     }
