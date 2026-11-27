@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T05:01:09.158623Z",
+  "checked_at": "2026-11-27T05:30:49.768710Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "texas tech red raiders football standings",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T04:40:00Z",
+      "query": "cox",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T05:10:00Z",
       "related_news_urls": [
-        "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
-        "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
-        "https://247sports.com/college/texas-tech/article/texas-tech-red-raiders-college-football-playoff-rankings-fourth-week-293279365/"
+        "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
+        "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
+        "https://californiaglobe.com/fr/charter-cox-mergers-billion-dollar-cuts-will-likely-cost-california-jobs-while-expanding-a-broadband-monopoly/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E",
-      "image_credit": "Lubbock Avalanche-Journal",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k",
+      "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://www.lubbockonline.com/story/sports/college/red-raiders/2026/11/24/texas-tech-football-cfp-ranking/92869669007/",
-          "title": "Finally! CFP committee gives Texas Tech football a long-awaited bump",
-          "publisher": "Lubbock Avalanche-Journal",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/why-charter-communications-stock-back-191436804.html",
+          "title": "Why Charter Communications Stock Is Back In Focus After $2 Billion Cost Saving Plan",
+          "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSWMJfHNhrxswqO7mbSzPvXcNyBORuz8MEzo__7Fe9EsNIj3cu_pGoDB1ppv_E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTKDG-FcAl-cJl9ae95O0skUc0JpeTMjqm8GUbRsfzkSxj_qeI26GLzaFyyZ6k"
         },
         {
-          "url": "https://www.on3.com/sites/red-raider-sports/news/who-should-texas-tech-root-for-this-weekend-every-game-that-impacts-the-red-raiders-cfp-chances/",
-          "title": "Who should Texas Tech root for this week? Every game that impacts the Red Raiders' CFP chances",
-          "publisher": "On3",
+          "url": "https://tradersunion.com/news/stocks/show/4416536-charter-surges-3-53percent-today-to/",
+          "title": "CHTR climbs around 3.5% after major advisory firms boost holdings and technical signals turn bullish",
+          "publisher": "Traders Union",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRjfFyiDNtN-piAzpqSLawz2qZjsoo46LjewZO9IqOSxbg5JQQ5J3pHkdFPqbE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6-umvx5F4O1OCWVtQk_wk5jg0XD6mVK5rzSv7rknlixwMdK-JYF92j116g94"
         },
         {
-          "url": "https://247sports.com/college/texas-tech/article/texas-tech-red-raiders-college-football-playoff-rankings-fourth-week-293279365/",
-          "title": "Texas Tech rises to 11th in CFP rankings",
-          "publisher": "247Sports",
+          "url": "https://californiaglobe.com/fr/charter-cox-mergers-billion-dollar-cuts-will-likely-cost-california-jobs-while-expanding-a-broadband-monopoly/",
+          "title": "Charter-Cox Merger’s Billion-Dollar Cuts Will Likely Cost California Jobs While Expanding a Broadband Monopoly",
+          "publisher": "California Globe",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnlpnevCDAqNARyqfoBu3Yy1h41OnySUiUpVMg7aWV6Ripv-F0R6BXACMwU-E"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRL6GFyWPLomKNL0o1rSIJXGAXu5dO29RfNX-nv5bzzmv_gKVRFzQvE6oH8zRY"
+        }
+      ]
+    },
+    {
+      "query": "jd",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T05:00:00Z",
+      "related_news_urls": [
+        "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
+        "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
+        "https://thehill.com/homenews/administration/6244532-trump-obama-cnn-army-iowa-lead-azide-detonation/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18",
+      "image_credit": "WQAD",
+      "news": [
+        {
+          "url": "https://www.wqad.com/article/news/local/public-safety/latest-maps-provided-by-us-army-show-potential-locations-of-lead-exposure-during-wednesdays-controlled-detonation/526-4a4b35c3-242d-44fe-88e5-a5f16ef61311",
+          "title": "US Army releases post-detonation maps of potential lead dust exposure",
+          "publisher": "WQAD",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTq075BTeCsNccw1J5It3dZemLKeeVSaPvu2f7GZoEkbi8xUisxr_aby1Sb18"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/iowa-lead-detonation-epa-testing-results-soon/",
+          "title": "Iowa lead detonation testing results expected soon, EPA says",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTj6xIWUDJ-rIYD33dRDEpfQCEEolarwHnaD1nDdbppjqkIro-SBM0eay0bJ2Q"
+        },
+        {
+          "url": "https://thehill.com/homenews/administration/6244532-trump-obama-cnn-army-iowa-lead-azide-detonation/",
+          "title": "Trump rips Obama, CNN as he touts ‘perfect’ Iowa detonation",
+          "publisher": "The Hill",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkM7WNrrmuV8vZqXSmnAM0yhbjqCltrgZOngX6wagsE45tTXmnq-U-cEZ9kiE"
+        }
+      ]
+    },
+    {
+      "query": "bill murray",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T04:50:00Z",
+      "related_news_urls": [
+        "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
+        "https://demokratis.co.id/en/bill-murray-music-film-television",
+        "https://hoodline.com/2026/11/bill-murray-brings-blues-rock-tour-to-st-louis-for-mike-zito-s-hometown-show/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M",
+      "image_credit": "FOX 2",
+      "news": [
+        {
+          "url": "https://fox2now.com/studiostl/mike-zito-joins-studio-stl-to-talk-about-bill-murray-and-the-blood-brothers-bringing-their-blues-rock-tour-finale-to-st-louis/",
+          "title": "Mike Zito Joins Studio STL to Talk About Bill Murray and the Blood Brothers Bringing their Blues-Rock Tour Finale to St. Louis",
+          "publisher": "FOX 2",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGelWH0vUblgNYzF49Tra4XLGCp8HFqyIyRG0Tp59LtYYS-mtlgtpdBcA7H-M"
+        },
+        {
+          "url": "https://demokratis.co.id/en/bill-murray-music-film-television",
+          "title": "Bill Murray Expands His Career Through Music Film and Television",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS1pP35Wb_8qpg5vFlg6IE8B12ZgKzqUAd2aETiIYWwPTULMI3edFHQQXjBuTA"
+        },
+        {
+          "url": "https://hoodline.com/2026/11/bill-murray-brings-blues-rock-tour-to-st-louis-for-mike-zito-s-hometown-show/",
+          "title": "Bill Murray & Blood Brothers Play The Factory in St. Louis",
+          "publisher": "Hoodline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXack2-mSxr0wmav0SCZhv3KcLi_X-NfO5-4kJxLS5PVhktalIeVoTZryQDw"
         }
       ]
     },
@@ -82,8 +152,8 @@
       "published_at": "2026-11-27T04:40:00Z",
       "related_news_urls": [
         "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
-        "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-        "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/"
+        "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
+        "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ75Sa1AWaewLJjBlvWbvX86HSceZ2c1ohT90zuMBb1iOGgOwkB4MRPHVQKFuc",
       "image_credit": "Al Jazeera",
@@ -96,18 +166,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ75Sa1AWaewLJjBlvWbvX86HSceZ2c1ohT90zuMBb1iOGgOwkB4MRPHVQKFuc"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
-          "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYVGBpxOEN8xgn7jFZEolgzMQsB0PiIwUGlPGIwVDIC1-2BXfVaL4njh7lLc"
-        },
-        {
           "url": "https://www.cbsnews.com/live-updates/iran-war-us-military-ai-weapons-oil/",
           "title": "Live Updates: Iran accused of deadly drone attack in Kuwait that sparks EU call to step up pressure on Tehran",
           "publisher": "CBS News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0qWT-bc1orYIeRX-z0WmibxAGh4wL_ZUC3lOqDPhYvIxyV46E2U1uT4wwj0I"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/11/27/us-iran-war-trump-hormuz-italian-killed-trump.html",
+          "title": "Two Italians killed in Kuwait drone attack; Trump says Iran war ends ‘whenever I want it’",
+          "publisher": "CNBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtYVGBpxOEN8xgn7jFZEolgzMQsB0PiIwUGlPGIwVDIC1-2BXfVaL4njh7lLc"
         }
       ]
     },
@@ -116,68 +186,103 @@
       "approx_searches": "200+",
       "published_at": "2026-11-27T04:40:00Z",
       "related_news_urls": [
-        "https://www.foxsports.com/articles/cbk/pacific-squares-off-against-omaha",
-        "https://www.bleachernation.com/how-to-watch/2026/11/26/pacific-vs-omaha-start-time-streaming-live-tv-channel-how-to-watch/",
-        "https://www.actionnetwork.com/ncaab-game/omaha-pacific-score-odds-november-26-2026/299443"
+        "https://www.unothegateway.com/sports/mavs-aggies-engage-in-overtime-thriller-to-kick-off-feast-week/article_3234c4ae-8769-4575-a285-4416dd7a77c9.html",
+        "https://www.kens5.com/article/syndication/associatedpress/stokes-esso-essis-lead-uc-davis-to-80-78-ot-win-over-omaha/616-1043749e-4893-4ddc-84fb-0c103f5ae64a",
+        "https://www.flohoops.com/articles/16451899-2026-resorts-world-las-vegas-classic-everything-to-know"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk",
-      "image_credit": "FOX Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8vVwB_777ejS5EMp_xKQUeg8OZD2rAut4lPUoDwj0yZ8b-W-c-2_xDIay6aw",
+      "image_credit": "The Gateway",
       "news": [
         {
-          "url": "https://www.foxsports.com/articles/cbk/pacific-squares-off-against-omaha",
-          "title": "Pacific squares off against Omaha",
-          "publisher": "FOX Sports",
+          "url": "https://www.unothegateway.com/sports/mavs-aggies-engage-in-overtime-thriller-to-kick-off-feast-week/article_3234c4ae-8769-4575-a285-4416dd7a77c9.html",
+          "title": "Mavs, Aggies engage in overtime thriller to kick off ‘Feast Week’",
+          "publisher": "The Gateway",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8vVwB_777ejS5EMp_xKQUeg8OZD2rAut4lPUoDwj0yZ8b-W-c-2_xDIay6aw"
         },
         {
-          "url": "https://www.bleachernation.com/how-to-watch/2026/11/26/pacific-vs-omaha-start-time-streaming-live-tv-channel-how-to-watch/",
-          "title": "Pacific vs. Omaha: Start Time, Streaming Live, TV Channel, How to Watch",
-          "publisher": "Bleacher Nation",
+          "url": "https://www.kens5.com/article/syndication/associatedpress/stokes-esso-essis-lead-uc-davis-to-80-78-ot-win-over-omaha/616-1043749e-4893-4ddc-84fb-0c103f5ae64a",
+          "title": "Stokes, Esso-Essis lead UC Davis to 80-78 OT win over Omaha",
+          "publisher": "kens5.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIYCuiXlsE0SkfJP6w1ki3GNkJZaIf6eSgY0ysI0VkvsWPC7btqgSsLzgB6xk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn9YbFxZ2ObFzc8x6KJ7Qhw2lBGv_OmRRuEu5BdLs9jG7pVFLhLh78aGUNaGg"
         },
         {
-          "url": "https://www.actionnetwork.com/ncaab-game/omaha-pacific-score-odds-november-26-2026/299443",
-          "title": "Omaha vs. Pacific Odds & Betting Predictions November 27, 2026",
-          "publisher": "Action Network",
+          "url": "https://www.flohoops.com/articles/16451899-2026-resorts-world-las-vegas-classic-everything-to-know",
+          "title": "2026 Resorts World Las Vegas Classic: Everything To Know, Why And How To Watch",
+          "publisher": "FloHoops",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQ4jaNiz_58QYF0T5L5CXQxtWNLk-E8MJWwNYjuWUgfCFe9oFZSZgkz_yB30s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6_LTscQbwjZD2S87UUMll0nN0H-IO6ez5DBrI9QM4805Mpw-j7_j6uPzLCEc"
+        }
+      ]
+    },
+    {
+      "query": "from tv show netflix ranking",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T04:40:00Z",
+      "related_news_urls": [
+        "https://collider.com/from-streaming-success-netflix-november-2026/",
+        "https://deadline.com/2026/11/from-mgm-series-netflix-streaming-viewership-1237229607/",
+        "https://screenrant.com/from-tv-stephen-king-comparisons-7-billion-minutes-streaming/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkaLQH11fCx3I9Zkop4okuDiJvrsfp7zvXEP1BGNOhkQeixWS6sJSDaVsE9E",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/from-streaming-success-netflix-november-2026/",
+          "title": "TV’s Best Sci-Fi Thriller Is Officially the New King of Netflix",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfkaLQH11fCx3I9Zkop4okuDiJvrsfp7zvXEP1BGNOhkQeixWS6sJSDaVsE9E"
+        },
+        {
+          "url": "https://deadline.com/2026/11/from-mgm-series-netflix-streaming-viewership-1237229607/",
+          "title": "‘From’ Lures Over 5 Billion Minutes Viewed In 3 Weeks After MGM+ Series Lands On Netflix",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVouwuIf32cKezrjHJwh-52ga-KPdtGP_cbqe9A7u9wYDi5Oj90oYXN0puSqg"
+        },
+        {
+          "url": "https://screenrant.com/from-tv-stephen-king-comparisons-7-billion-minutes-streaming/",
+          "title": "Stephen King-Like Horror Series Nears 7 Billion Minutes Viewed Ahead Of 2027 Return",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMZvLAi0fUBfCOZ2Yd-wlHwpLLeEvu82QjAIsQIRXIWn37tNOz8VzwruNM_v0"
         }
       ]
     },
     {
       "query": "bills nfl standings",
-      "approx_searches": "50000+",
+      "approx_searches": "10000+",
       "published_at": "2026-11-27T04:30:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
-        "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/",
-        "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/"
+        "https://www.buffalorumblings.com/buffalo-bills-nfl-playoffs/146497/afc-playoff-picture-buffalo-bills-one-seed-chiefs-thanksgiving",
+        "https://www.nfl.com/videos/marc-ross-examines-bills-path-to-potentially-clinching-afc-s-no-1-seed-in-2026-nfl-gameday-final",
+        "https://www.sportsline.com/insiders/nfl-odds-picks-bills-are-the-team-to-beat-in-the-afc-but-the-projections-say-another-team-provides-the-value/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46zM3C2mNi3d-K2YFoVK3qKPWwie5qKftWt1VQTgtxBjVKminkW2XwiswrCM",
+      "image_credit": "Buffalo Rumblings",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50582822/thanksgiving-games-picks-schedule-fantasy-odds-2026",
-          "title": "2026 NFL Thanksgiving preview: Picks, predictions, schedule, odds, fantasy tips",
-          "publisher": "ESPN",
+          "url": "https://www.buffalorumblings.com/buffalo-bills-nfl-playoffs/146497/afc-playoff-picture-buffalo-bills-one-seed-chiefs-thanksgiving",
+          "title": "AFC Playoff Picture: Bills secure a big conference win in chase for one seed",
+          "publisher": "Buffalo Rumblings",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNDjknNdUrWajw7b77Nd6n_cpTPUeAc0Z4XaqyvKAmjiFz0toZRMlDSMaFm24"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ46zM3C2mNi3d-K2YFoVK3qKPWwie5qKftWt1VQTgtxBjVKminkW2XwiswrCM"
         },
         {
-          "url": "https://www.cbssports.com/nfl/news/thanksgiving-games-black-friday-nfl-expert-picks-lions-bears-steelers/",
-          "title": "Thanksgiving and Black Friday NFL expert picks: Can Eagles pull upset? Do Steelers save their season?",
-          "publisher": "CBS Sports",
+          "url": "https://www.nfl.com/videos/marc-ross-examines-bills-path-to-potentially-clinching-afc-s-no-1-seed-in-2026-nfl-gameday-final",
+          "title": "Marc Ross examines Bills' path to potentially clinching AFC's No. 1 seed in 2026 | 'NFL GameDay Final'",
+          "publisher": "NFL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1KWhmNvWe9xxavh5HMQDztL9QU0MRu9GkCyqmyUKvaGYnn271HmNC0SGl1kc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT82zjXrmeFK-bkp2i4BagoZrSDMy8p6vVhaAV2XGthXrQR4wNzNilS-1sGSPk"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7809697/2026/11/25/nfl-staff-picks-week-12-bears-lions-chiefs-bills-seahawks-49ers/",
-          "title": "NFL staff picks for Week 12: Bears-Lions, Chiefs-Bills, Seahawks-49ers, more - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.sportsline.com/insiders/nfl-odds-picks-bills-are-the-team-to-beat-in-the-afc-but-the-projections-say-another-team-provides-the-value/",
+          "title": "NFL odds, picks: Bills are the team to beat in the AFC, but the projections say another team provides the value",
+          "publisher": "SportsLine",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmnbEBwdqlOPGiR48yzeHrq7VXSNBR8qrFI83EQEoo7t48g3zUhetltBujffo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6jdoGPgRTXPOvrqszFjN6N7bij5Qee2236VyIbrYBJEUpsPGdarOnbH3sawU"
         }
       ]
     },
@@ -218,42 +323,7 @@
     },
     {
       "query": "texas tech basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T04:30:00Z",
-      "related_news_urls": [
-        "https://www.kcbd.com/2026/11/23/texas-tech-moves-up-no-5-latest-ap-poll-first-time-program-history/",
-        "https://texastech.com/news/2026/11/23/mens-basketball-red-raiders-ranked-in-top-5-for-first-time-in-program-history",
-        "https://www.bdtonline.com/sports/national_sports/texas-tech-mens-basketball/image_b8ba603f-01dc-595a-afba-16c497b23f25.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDXChOhWpTr6sG0aIYiffUGhDgkL5NEkn0CTPvUtf14nO43Qfem7pgRNC6vek",
-      "image_credit": "KCBD",
-      "news": [
-        {
-          "url": "https://www.kcbd.com/2026/11/23/texas-tech-moves-up-no-5-latest-ap-poll-first-time-program-history/",
-          "title": "Texas Tech moves up to No. 5 in latest AP Poll for first time in program history",
-          "publisher": "KCBD",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDXChOhWpTr6sG0aIYiffUGhDgkL5NEkn0CTPvUtf14nO43Qfem7pgRNC6vek"
-        },
-        {
-          "url": "https://texastech.com/news/2026/11/23/mens-basketball-red-raiders-ranked-in-top-5-for-first-time-in-program-history",
-          "title": "Red Raiders ranked in Top 5 for first time in program history",
-          "publisher": "Texas Tech Red Raiders",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTD1B44VpzhOcGXWhmIBHr0WoL-1gsnAmcYU8jrPvsRPKexwPsci23SZOWnKLE"
-        },
-        {
-          "url": "https://www.bdtonline.com/sports/national_sports/texas-tech-mens-basketball/image_b8ba603f-01dc-595a-afba-16c497b23f25.html",
-          "title": "Texas Tech Men's Basketball",
-          "publisher": "Bluefield Daily Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-5a6bSVMTtpOvW3G9hva8DwN3RbSLrVu4Pqr6SqvfqRl_dodNK9gYApx6R4E"
-        }
-      ]
-    },
-    {
-      "query": "oregon basketball",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T04:30:00Z",
       "related_news_urls": [
         "https://www.oregonlive.com/tv/2026/11/where-to-watch-texas-tech-vs-oregon-basketball-for-free-today.html",
@@ -283,76 +353,6 @@
           "publisher": "Coast Radio",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTymUpMi4la6-5egAQvGUPhK2Gpj1dlcDUAgqhXnR1t8n9R8fpSv1VMakqZdy8"
-        }
-      ]
-    },
-    {
-      "query": "nick wright",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T04:30:00Z",
-      "related_news_urls": [
-        "https://www.fox29.com/news/sports-analyst-nick-wright-gifts-courtside-sixers-tickets-kindhearted-fans-who-offered-help",
-        "https://www.inquirer.com/sixers/nick-wright-sixers-courtside-tickets-fans-giveaway-20261124.html",
-        "https://awfulannouncing.com/nba/nick-wright-viral-76ers-ticket-giveaway.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIH_tJO8h99pRGiaBqJUpHKzxijSC_D-_9qPCy48R8lrLpvtqNjhUEoYk8Fms",
-      "image_credit": "FOX 29 Philadelphia",
-      "news": [
-        {
-          "url": "https://www.fox29.com/news/sports-analyst-nick-wright-gifts-courtside-sixers-tickets-kindhearted-fans-who-offered-help",
-          "title": "Sports analyst Nick Wright gifts courtside Sixers tickets to kindhearted fans who offered help",
-          "publisher": "FOX 29 Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIH_tJO8h99pRGiaBqJUpHKzxijSC_D-_9qPCy48R8lrLpvtqNjhUEoYk8Fms"
-        },
-        {
-          "url": "https://www.inquirer.com/sixers/nick-wright-sixers-courtside-tickets-fans-giveaway-20261124.html",
-          "title": "TV host Nick Wright asked Philly for a favor. Instead, ‘sicko fans’ who offered to help got courtside Sixers tickets.",
-          "publisher": "Inquirer.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqKh8Q_a3GDS6hRxFpGi37Gu6J5YhdNEvocm5j75bAYAABaHYlfBOIGQKPO6U"
-        },
-        {
-          "url": "https://awfulannouncing.com/nba/nick-wright-viral-76ers-ticket-giveaway.html",
-          "title": "Nick Wright staged the most genuine 76ers ticket giveaway you’ll ever see",
-          "publisher": "Awful Announcing",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_KTEmwBYw7vENOl5S3N08wuLQRQJIyjkL4-W6eI6qcTx2g7ssRidraVRG4Io"
-        }
-      ]
-    },
-    {
-      "query": "alabama basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50609072/game-highlights",
-        "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/87147/alabama-basketball-vs-kansas-state-3-keys-how-to-watch",
-        "https://247sports.com/college/alabama/article/alabama-defeats-kansas-state-to-play-miami-in-consecutive-games-upcoming-293366879/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfUma07IRUequVRlaJr4XSyhBVdGYKLILW237DW0WIWAN6w_1ZvJtgiV9lM80",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50609072/game-highlights",
-          "title": "Alabama Crimson Tide vs. Kansas State Wildcats: Game Highlights",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfUma07IRUequVRlaJr4XSyhBVdGYKLILW237DW0WIWAN6w_1ZvJtgiV9lM80"
-        },
-        {
-          "url": "https://www.rollbamaroll.com/alabama-crimson-tide-basketball/87147/alabama-basketball-vs-kansas-state-3-keys-how-to-watch",
-          "title": "Alabama Basketball vs Kansas State: 3 Keys, How to Watch",
-          "publisher": "Roll 'Bama Roll",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgdnZ1D1MkreppSCmgK6g-PrxLs2877_zwAPZQS4jRO3WnAqxFjc8eDs_UJWQ"
-        },
-        {
-          "url": "https://247sports.com/college/alabama/article/alabama-defeats-kansas-state-to-play-miami-in-consecutive-games-upcoming-293366879/",
-          "title": "Alabama defeats Kansas State, to play Miami in consecutive games upcoming",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRTxGkQYgQ_exSsBZgJO3gAkIoRvl3I1ZqfaKnwlBmKqz_m3vwEo9alOGj00p0"
         }
       ]
     }
