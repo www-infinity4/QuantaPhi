@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T20:01:05.980077Z",
+  "checked_at": "2026-11-27T20:31:16.478636Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nd state vs sjsu",
+      "query": "avalanche vs wild",
       "approx_searches": "1000+",
-      "published_at": "2026-11-27T19:40:00Z",
+      "published_at": "2026-11-27T20:10:00Z",
       "related_news_urls": [
-        "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-san-jose-state-on-friday-nov-27",
-        "https://sports.yahoo.com/college-football/articles/north-dakota-state-vs-san-124523974.html",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-san-jose-state-spartans-v-north-dakota-state-bison/bltcbe819b81c45791c"
+        "https://www.nhl.com/wild/news/game-preview-wild-vs-avalanche-112726",
+        "https://www.nhl.com/wild/news/projected-lineup-wild-vs-avalanche-112726",
+        "https://www.startribune.com/minnesota-wild-colorado-avalanche-score-today-live-quinn-hughes-injury-update-kirill-kaprizov-stats/601918901"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZLgaJ6DzNJdJfqThzAb32xR8vbWVhXKdQp_w1HeEY6Vrhzfz4lzSEm-wG75U",
-      "image_credit": "InForum",
-      "news": [
-        {
-          "url": "https://www.inforum.com/sports/bison-media-zone/mens-sports/how-to-watch-ndsu-play-san-jose-state-on-friday-nov-27",
-          "title": "How to watch NDSU play San Jose State on Friday, Nov. 27",
-          "publisher": "InForum",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRZLgaJ6DzNJdJfqThzAb32xR8vbWVhXKdQp_w1HeEY6Vrhzfz4lzSEm-wG75U"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/north-dakota-state-vs-san-124523974.html",
-          "title": "North Dakota State vs San Jose State Prediction, Pick, College Football Odds for Friday, Nov. 27",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMRg4I17G38LWppuqSAMbHwCdxSob1nniQGLDDo-qaHUUkrM_h0zppv76cPAU"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-san-jose-state-spartans-v-north-dakota-state-bison/bltcbe819b81c45791c",
-          "title": "Watch San Jose State Spartans vs North Dakota State Bison NCAAF game LIVE: Online stream, TV channels, and kick-off time",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTsqrO8AIOzvNEbSOBB135bsABWRsZxnsZz3F4dhHHPxDlVh_y9tSUL5e12dc"
-        }
-      ]
-    },
-    {
-      "query": "temple vs memphis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T19:40:00Z",
-      "related_news_urls": [
-        "https://dailymemphian.com/article/68901/university-of-memphis-tigers-football-temple-preview-ncaa",
-        "https://sports.yahoo.com/college-football/articles/watch-temple-vs-memphis-live-191500264.html",
-        "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/27/memphis-football-temple-american-conference-tigers--live/92884291007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9dbWQ_7IC55xFPdgcFbV8dJ_fKBx0hts3ardYvjDhI-l3Fv73R-N7bsY1TEg",
-      "image_credit": "Daily Memphian",
-      "news": [
-        {
-          "url": "https://dailymemphian.com/article/68901/university-of-memphis-tigers-football-temple-preview-ncaa",
-          "title": "Memphis vs. Temple: What to know for Tigers’ final regular-season game",
-          "publisher": "Daily Memphian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9dbWQ_7IC55xFPdgcFbV8dJ_fKBx0hts3ardYvjDhI-l3Fv73R-N7bsY1TEg"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/watch-temple-vs-memphis-live-191500264.html",
-          "title": "How to watch Temple vs Memphis: Live stream College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReEgZ0J_bFrOBchAlsYptY6sixU-eeSr9K5wTA3qF-G7D0KXmsazyb_phSXUQ"
-        },
-        {
-          "url": "https://www.commercialappeal.com/story/sports/college/memphis-tigers/2026/11/27/memphis-football-temple-american-conference-tigers--live/92884291007/",
-          "title": "Memphis football vs Temple score, live updates, start time, TV channel in Week 13",
-          "publisher": "The Commercial Appeal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdiEfERDPK177y1SRPwYZYke-smFAcgom0nklOcc7cRDCdt-SGwGHjTYq8rQ8"
-        }
-      ]
-    },
-    {
-      "query": "andrew whitworth",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T19:40:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50574387/puka-nacua-injury-last-season-los-angeles-rams-week-12",
-        "https://www.nfl.com/news/sean-mcvay-can-t-say-for-certain-anything-on-puka-nacua-s-future-with-rams",
-        "https://www.nytimes.com/athletic/7799526/2026/11/21/nfl-news-puka-cowboys-daniel-jones-colts/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTN-W4o1WFooMdpZxVY-RSdtt663UsL6QGn_fIoDdYJOZvZiqDDYbLELgfP8",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nfl/story/_/id/50574387/puka-nacua-injury-last-season-los-angeles-rams-week-12",
-          "title": "Has Puka Nacua played his final snaps in a Rams uniform?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxTN-W4o1WFooMdpZxVY-RSdtt663UsL6QGn_fIoDdYJOZvZiqDDYbLELgfP8"
-        },
-        {
-          "url": "https://www.nfl.com/news/sean-mcvay-can-t-say-for-certain-anything-on-puka-nacua-s-future-with-rams",
-          "title": "Sean McVay 'can't say for certain anything' on Puka Nacua's future with Rams",
-          "publisher": "NFL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFdOKtB7A8KTA43A9vnsGxfZ7-On4ZhlQzceEh8XbTU3e0jeC8gNYXFOvlOa8"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7799526/2026/11/21/nfl-news-puka-cowboys-daniel-jones-colts/",
-          "title": "What I’m Hearing on Puka Nacua’s suspension, Cowboys coaching pressure, Colts’ surprise Daniel Jones release",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJj3Y1oeLxSAO5mdfb-sRunbf1zKDeOGHLCzMGWzwWcgSUPg7E02FF5CmpYPc"
-        }
-      ]
-    },
-    {
-      "query": "awkwafina",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T19:40:00Z",
-      "related_news_urls": [
-        "https://variety.com/2026/film/global/awkwafina-cancer-drama-kate-might-die-mercedes-bryce-morgan-1236951703/",
-        "https://tribune.com.pk/story/2642341/awkwafina-explores-cancer-and-dark-comedy-in-kate-might-die",
-        "https://www.ioncinema.com/news/festival-predictions/2027-sundance-film-festival-mercedes-bryce-morgan-kate-might-die"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpbUSzHm8Iy33i0Pt2GW27gbB7XI9Xi6xjLc6cN6kKPvJGBlgDsr3JZiGmzw",
-      "image_credit": "Variety",
-      "news": [
-        {
-          "url": "https://variety.com/2026/film/global/awkwafina-cancer-drama-kate-might-die-mercedes-bryce-morgan-1236951703/",
-          "title": "Awkwafina ‘Really Goes for It’ in Surrealist Cancer Drama ‘Kate Might Die,’ Says Director Mercedes Bryce Morgan",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSpbUSzHm8Iy33i0Pt2GW27gbB7XI9Xi6xjLc6cN6kKPvJGBlgDsr3JZiGmzw"
-        },
-        {
-          "url": "https://tribune.com.pk/story/2642341/awkwafina-explores-cancer-and-dark-comedy-in-kate-might-die",
-          "title": "Awkwafina explores cancer and dark comedy in 'Kate Might Die'",
-          "publisher": "The Express Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmS2vMEWty5zoooLgwbN6TJLaUF4w6knIcUafo6HYP-pRn6luNyw0OUQmmwLA"
-        },
-        {
-          "url": "https://www.ioncinema.com/news/festival-predictions/2027-sundance-film-festival-mercedes-bryce-morgan-kate-might-die",
-          "title": "2027 Sundance Film Festival Predictions: Mercedes Bryce Morgan’s Kate Might Die",
-          "publisher": "- IONCINEMA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZRNj_fpiS04UZqJoNPOBTwPFpX4HOHX_cslHpPGNcRjVI6Fs__WArxMQ64k"
-        }
-      ]
-    },
-    {
-      "query": "southampton vs middlesbrough",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T19:40:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmy49kg7d98qt",
-        "https://www.nytimes.com/athletic/7814581/2026/11/27/middlesbrough-southampton-tree-spygate-hellberg-eckert/",
-        "https://www.southamptonfc.com/en/video/downes-relishing-middlesbrough-rematch"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3oglu9LF9qsc3VF_0BOBX6uyai11re9ZGgjiHC1n_z_-IVHsfVWPl8vos_RQ",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/football/live/cmy49kg7d98qt",
-          "title": "Southampton v Middlesbrough LIVE: Text commentary & radio analysis",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3oglu9LF9qsc3VF_0BOBX6uyai11re9ZGgjiHC1n_z_-IVHsfVWPl8vos_RQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7814581/2026/11/27/middlesbrough-southampton-tree-spygate-hellberg-eckert/",
-          "title": "Middlesbrough, Southampton and a tree. The making of a very modern rivalry - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw7C9uvehbuJuiSI9cigfN-CwyPfCQx7290ALdIT8N7SgSL2aciMx0g9emLVc"
-        },
-        {
-          "url": "https://www.southamptonfc.com/en/video/downes-relishing-middlesbrough-rematch",
-          "title": "Downes relishing Middlesbrough rematch",
-          "publisher": "Southampton FC Official Site",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQADnB-scYf_oXSVbDeCyTClQ7XJxT0X8kdnVQXNwf8LR9gG1x9MrfKGK1QvSo"
-        }
-      ]
-    },
-    {
-      "query": "ireland vs australia",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T19:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/rugby-union/articles/c65y1k8428qdo",
-        "https://www.espn.com/rugby/story/_/id/50610521/ireland-australia-rugby-live-rugby-nations-championship-updates",
-        "https://www.skysports.com/rugby-union/news/13616429/nations-championship-steve-borthwick-targets-world-cup-preparation-against-all-blacks-as-andy-farrell-plays-down-irelands-title-credentials"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4Q4EHwanRxmCCkLYhulNhy-etHnKgj2elFrzDzggaq9D3XI1rgamayXEr31c",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/sport/rugby-union/articles/c65y1k8428qdo",
-          "title": "Twickenham set to be half empty for Nations Championship finals opening night",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ4Q4EHwanRxmCCkLYhulNhy-etHnKgj2elFrzDzggaq9D3XI1rgamayXEr31c"
-        },
-        {
-          "url": "https://www.espn.com/rugby/story/_/id/50610521/ireland-australia-rugby-live-rugby-nations-championship-updates",
-          "title": "Ireland vs. Australia LIVE: Nations Championship updates, score, commentary",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRWxW6hx1CvuEag4W8F2LtVq3LZGJGEexriiSH-O5WbbBQKeX3Odbmq2dB6xVU"
-        },
-        {
-          "url": "https://www.skysports.com/rugby-union/news/13616429/nations-championship-steve-borthwick-targets-world-cup-preparation-against-all-blacks-as-andy-farrell-plays-down-irelands-title-credentials",
-          "title": "Ireland's Farrell: We still aren't World Cup contenders despite win vs Springboks",
-          "publisher": "Sky Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRpLKBmEB7PPG-Gz3ceHu6ZWRsywVzRcMPu2G2Bp_Vcmk9XFHeoMSgWecS8TpE"
-        }
-      ]
-    },
-    {
-      "query": "app state vs south alabama",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T19:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/betting/articles/app-state-vs-south-alabama-120123925.html",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-vs-appalachian-state.html",
-        "https://theappalachianonline.com/mountaineers-aim-to-conquer-jaguars-territory-in-season-finale/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYj5L4jysvUiQoIh-qYK1v008JIircpFQdw0mVAkhLxmnrqrazs2q6c0K8tPE",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/betting/articles/app-state-vs-south-alabama-120123925.html",
-          "title": "App State vs South Alabama Prediction, Pick, College Football Odds for Friday, Nov. 27",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYj5L4jysvUiQoIh-qYK1v008JIircpFQdw0mVAkhLxmnrqrazs2q6c0K8tPE"
-        },
-        {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-south-alabamas-game-vs-appalachian-state.html",
-          "title": "Scouting report: What you need to know for South Alabama’s game vs. Appalachian State",
-          "publisher": "AL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSNFPZwQkrh5W6SIZyxnBNBSyGokieVnmALGt296MK7HXyUXtvWy5dXB7ghtA"
-        },
-        {
-          "url": "https://theappalachianonline.com/mountaineers-aim-to-conquer-jaguars-territory-in-season-finale/",
-          "title": "Mountaineers aim to conquer Jaguars’ territory in season finale",
-          "publisher": "The Appalachian Online",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTfE_9EC8Bbl1VbQUwScReeobWEohSJaWfobesOCZoegM167bJv5stA3nzfUh4"
-        }
-      ]
-    },
-    {
-      "query": "panthers vs capitals",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T19:10:00Z",
-      "related_news_urls": [
-        "https://www.nhl.com/capitals/news/caps-power-play-quietly-surging",
-        "https://www.sportsgambler.com/betting-tips/ice-hockey/florida-panthers-vs-washington-capitals-prediction-odds-2026-11-27/",
-        "https://www.nytimes.com/athletic/7816340/2026/11/27/panthers-vs-capitals-stream-how-to-watch-nov-27/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNneWcr20l04FDyBOEdo6ArXW7s9DxqsWPONKryBNcFOs7qw10pkSEntzoYAs",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2SaG7lkSava5gr63MbU33B9RrE10wY9goc_JKhLIZPNbOQ3L08uXyehtbWc",
       "image_credit": "NHL.com",
       "news": [
         {
-          "url": "https://www.nhl.com/capitals/news/caps-power-play-quietly-surging",
-          "title": "Caps Power Play Quietly Surging",
+          "url": "https://www.nhl.com/wild/news/game-preview-wild-vs-avalanche-112726",
+          "title": "Game Preview: Wild vs Avalanche",
           "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNneWcr20l04FDyBOEdo6ArXW7s9DxqsWPONKryBNcFOs7qw10pkSEntzoYAs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm2SaG7lkSava5gr63MbU33B9RrE10wY9goc_JKhLIZPNbOQ3L08uXyehtbWc"
         },
         {
-          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/florida-panthers-vs-washington-capitals-prediction-odds-2026-11-27/",
-          "title": "Florida Panthers vs Washington Capitals Prediction, Picks & Odds | 27 Nov 2026",
-          "publisher": "Sportsgambler",
+          "url": "https://www.nhl.com/wild/news/projected-lineup-wild-vs-avalanche-112726",
+          "title": "Projected Lineup: Wild vs Avalanche",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQAwQZkjE87ApqJpcinTi7W2IdqlxNudnkPDWIWvHzoiZK6gcuRCwnUYUZyUGg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3v37W2OQAa8hvz5_qSzz0Ao0wnibpiKokXs81Vo8Yn6eT_04w6d4cYuVAdHU"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7816340/2026/11/27/panthers-vs-capitals-stream-how-to-watch-nov-27/",
-          "title": "How to watch Panthers vs. Capitals: TV channel and streaming options for November 27 - The Athletic",
-          "publisher": "The New York Times",
+          "url": "https://www.startribune.com/minnesota-wild-colorado-avalanche-score-today-live-quinn-hughes-injury-update-kirill-kaprizov-stats/601918901",
+          "title": "Live: Wild look to bounce back against Avalanche in playoff rematch",
+          "publisher": "Star Tribune",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSdRKlG-xRzV-rP3ZAZp8mr5vDadGpA2ZH-3BWArUTNv-990Lpba5DeJ7O6ml8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3WkDb0r2Bedn86oCUyI2XiVb1UzmjEGJav1tBHEnFdQzHx7JHelir8CwORNg"
         }
       ]
     },
     {
-      "query": "levante - racing de santander",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T19:10:00Z",
+      "query": "golden knights vs sharks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T20:10:00Z",
       "related_news_urls": [
-        "https://www.dazn.com/es-ES/news/futbol/levante-vs-racing-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1qfhvbxt2bart1jpza2cdeg3cw",
-        "https://www.superdeporte.es/levante-ud/2026/11/27/rabia-caer-frustracion-136886094.html",
-        "https://www.levanteud.com/noticias/la-previa-levante-ud-real-racing-club"
+        "https://sports.yahoo.com/general/videos/game-preview-lines-sharks-vs-195111719.html",
+        "https://www.nhl.com/sharks/news/vegas-golden-knights-san-jose-sharks-game-preview-november-27-2026",
+        "https://www.sportsgambler.com/betting-tips/ice-hockey/vegas-golden-knights-vs-san-jose-sharks-prediction-odds-2026-11-27/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI",
-      "image_credit": "DAZN",
-      "news": [
-        {
-          "url": "https://www.dazn.com/es-ES/news/futbol/levante-vs-racing-horario-donde-ver-hoy-tv-online-partido-laliga-2026-2027/1qfhvbxt2bart1jpza2cdeg3cw",
-          "title": "Levante vs Racing de Santander: horario y dónde ver hoy por TV y online el partido de LaLiga 2026/27",
-          "publisher": "DAZN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSC7RzQQMyXfjkuxWoA8JBUAQ9yE9yOlGf--4Pd-peYlVkrYr-P4rQ2zS18wUI"
-        },
-        {
-          "url": "https://www.superdeporte.es/levante-ud/2026/11/27/rabia-caer-frustracion-136886094.html",
-          "title": "Demasiada rabia como para caer en la frustración",
-          "publisher": "Superdeporte",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQpmhys6q1ecBksnoslhFKRbrc3CuP9xndpa3nXktwLpbmXissP8NI971oCB7E"
-        },
-        {
-          "url": "https://www.levanteud.com/noticias/la-previa-levante-ud-real-racing-club",
-          "title": "La previa: Levante UD-Real Racing Club",
-          "publisher": "Levante UD | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQgNJYbFhmtkU9p7_4hdqZaRIFB28DzqsmZ9SKrUwObAh6Yd7g7gN1y_fpuWlU"
-        }
-      ]
-    },
-    {
-      "query": "red wings vs blue jackets",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T19:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nhl/articles/columbus-blue-jackets-lines-defensive-172640419.html",
-        "https://www.nhl.com/redwings/news/detroit-red-wings-columbus-blue-jackets-game-preview-november-27-2026",
-        "https://www.nytimes.com/athletic/7816336/2026/11/27/red-wings-vs-blue-jackets-stream-how-to-watch-nov-27/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-i-320HIJY6VTrttyiK9zLMInqPJydUO_ZfiuTPbmheaGiwitwxFcIniDv68",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwxjIJOlkXTbtCcBskly9LO82rl6UFTrhdD-q6Mc8gPUwkPDBrnyLuzAVk9HI",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nhl/articles/columbus-blue-jackets-lines-defensive-172640419.html",
-          "title": "Columbus Blue Jackets Lines, Defensive Pairings, & Scratches For Tonight's Game vs. Detroit Red Wings",
+          "url": "https://sports.yahoo.com/general/videos/game-preview-lines-sharks-vs-195111719.html",
+          "title": "Game Preview & Lines: Sharks vs Golden Knights",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-i-320HIJY6VTrttyiK9zLMInqPJydUO_ZfiuTPbmheaGiwitwxFcIniDv68"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwxjIJOlkXTbtCcBskly9LO82rl6UFTrhdD-q6Mc8gPUwkPDBrnyLuzAVk9HI"
         },
         {
-          "url": "https://www.nhl.com/redwings/news/detroit-red-wings-columbus-blue-jackets-game-preview-november-27-2026",
-          "title": "Red Wings at Blue Jackets projected lineups",
+          "url": "https://www.nhl.com/sharks/news/vegas-golden-knights-san-jose-sharks-game-preview-november-27-2026",
+          "title": "Golden Knights at Sharks projected lineups",
           "publisher": "NHL.com",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtlZWU9UlgU_M2ivJapjJvARReyO_D7wzWSo0bLumct7Vl-s5Bjr3YJ1pESlc"
         },
         {
-          "url": "https://www.nytimes.com/athletic/7816336/2026/11/27/red-wings-vs-blue-jackets-stream-how-to-watch-nov-27/",
-          "title": "How to watch Red Wings vs. Blue Jackets: TV channel and streaming options for November 27",
+          "url": "https://www.sportsgambler.com/betting-tips/ice-hockey/vegas-golden-knights-vs-san-jose-sharks-prediction-odds-2026-11-27/",
+          "title": "Vegas Golden Knights vs San Jose Sharks Prediction, Picks & Odds | 27 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ3psawmgXs0IgLPqzFlmVTLAciNiDSbZCDPapDta3MjCvUbGeG8EA0CrNCfws"
+        }
+      ]
+    },
+    {
+      "query": "kings vs ducks",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:10:00Z",
+      "related_news_urls": [
+        "https://lakingsinsider.com/2026/11/27/11-27-preview-freeway-faceoff-implications-no-morning-skate-kuempers-road-performance-laviolette-on-kirsanov/",
+        "https://www.nhl.com/ducks/news/preview-ducks-take-on-kings-in-freeway-face-off",
+        "https://sports.yahoo.com/nhl/articles/kings-turn-red-hot-darcy-180003759.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh8grDHbgjL_mELWck75JD5o76dPPGe7YaKN-y8DRGQm81m4EicbfrhiLuvno",
+      "image_credit": "LA Kings Insider",
+      "news": [
+        {
+          "url": "https://lakingsinsider.com/2026/11/27/11-27-preview-freeway-faceoff-implications-no-morning-skate-kuempers-road-performance-laviolette-on-kirsanov/",
+          "title": "11/27 Preview - Freeway Faceoff Implications + No Morning Skate, Kuemper's Road Performance, Laviolette on Kirsanov",
+          "publisher": "LA Kings Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh8grDHbgjL_mELWck75JD5o76dPPGe7YaKN-y8DRGQm81m4EicbfrhiLuvno"
+        },
+        {
+          "url": "https://www.nhl.com/ducks/news/preview-ducks-take-on-kings-in-freeway-face-off",
+          "title": "PREVIEW: Ducks Take On Kings in Freeway Face-Off | Anaheim Ducks",
+          "publisher": "NHL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmDQHXrEYOgucakiDbCD_efqcpYSgHUn7BeFOgZRAZmvVZq9AjaR-lzrxDzdQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/kings-turn-red-hot-darcy-180003759.html",
+          "title": "Kings Turn to Red-Hot Darcy Kuemper for Freeway Faceoff Against Ducks",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvya2l2lwo1MLb_XUMxjuxiRXKfpzdDBROUD096s0Gx9cUE0D7vfuXntHVEoY"
+        }
+      ]
+    },
+    {
+      "query": "rico dowdle",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow",
+        "https://sports.yahoo.com/fantasy/article/week-12-fantasy-football-start-em-sit-em-justin-boones-lineup-advice-161255368.html",
+        "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-12"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXoGUhFNFM6qI2S-J98tdrp0BOC2w3YGVDvaPj3TGqaQBNI9xQ5bi0to9_L60",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow",
+          "title": "Fantasy playbook: Week 12 Shadow Reports, lineup locks and projected scores",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRXoGUhFNFM6qI2S-J98tdrp0BOC2w3YGVDvaPj3TGqaQBNI9xQ5bi0to9_L60"
+        },
+        {
+          "url": "https://sports.yahoo.com/fantasy/article/week-12-fantasy-football-start-em-sit-em-justin-boones-lineup-advice-161255368.html",
+          "title": "Week 12 Fantasy Football Start 'Em, Sit 'Em: Justin Boone's lineup advice",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-aXipel8vHeFRVzd2gZOXBcXxO8GsFG2edGddYagaDWD9MCzAM9OgBubVyA"
+        },
+        {
+          "url": "https://www.nfl.com/news/nfl-fantasy-2026-start-em-sit-em-quarterbacks-for-week-12",
+          "title": "NFL Fantasy 2026 Start 'Em, Sit 'Em: Quarterbacks for Week 12",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEy5BFbJ_QaqZucoHwvKo6ovYQJgTBjDCeYDkrnKb5Xt4ChYzAMthlif-iqrI"
+        }
+      ]
+    },
+    {
+      "query": "big ten championship game",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:10:00Z",
+      "related_news_urls": [
+        "https://www.kcci.com/article/hawkeyes-make-jump-in-latest-cfp-rankings/74525631",
+        "https://hawkeyeswire.usatoday.com/story/sports/college/hawkeyes/football/2026/11/25/iowa-football-big-ten-championship-game-scenarios/92953903007/",
+        "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ8ue_Wi8JHIOkCMY3WpvfjkOh-gdhuCtAVWwNKOLuUJ6lqN2IQHlkZ5SYfWg",
+      "image_credit": "KCCI",
+      "news": [
+        {
+          "url": "https://www.kcci.com/article/hawkeyes-make-jump-in-latest-cfp-rankings/74525631",
+          "title": "Hawkeyes make jump in latest CFP rankings",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ8ue_Wi8JHIOkCMY3WpvfjkOh-gdhuCtAVWwNKOLuUJ6lqN2IQHlkZ5SYfWg"
+        },
+        {
+          "url": "https://hawkeyeswire.usatoday.com/story/sports/college/hawkeyes/football/2026/11/25/iowa-football-big-ten-championship-game-scenarios/92953903007/",
+          "title": "Iowa football scenarios to reach Big Ten Championship Game",
+          "publisher": "Hawkeyes Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcToI8EAL3zsXc8P_J2Oyx2EGm--juWjyXnu_mxVjc1qABGtWI_i5jnZEVIWsqs"
+        },
+        {
+          "url": "https://www.blackheartgoldpants.com/football/73085/kirk-speaks-nebraska",
+          "title": "KIRK SPEAKS: Nebraska",
+          "publisher": "Black Heart Gold Pants",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQomD0a2AWTnbRMjygAXNaR_fargDUrIcJhLHMOXxVusUdObpW2HNIIOtWqyXg"
+        }
+      ]
+    },
+    {
+      "query": "paris fc",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:10:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c68j4gywmm0vt",
+        "https://rg.org/en-ca/news/soccer/psg-vs-lorient-le-mans-vs-lille-ligue-1-matchweek-12-odds-picks",
+        "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-stade-brest-vs-paris-fc-ligue-1-2026-11-27"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c68j4gywmm0vt",
+          "title": "Brest vs Paris FC: French Ligue 1 stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
+        },
+        {
+          "url": "https://rg.org/en-ca/news/soccer/psg-vs-lorient-le-mans-vs-lille-ligue-1-matchweek-12-odds-picks",
+          "title": "Ligue 1 Matchweek 12 Odds In Canada: PSG, Lille, Lyon Picks",
+          "publisher": "RG.org",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQn0uMWbpLdFM72SfkuUkobVKRl6BrCOU7R6WyJRPdWLFFAf5VMpPEqIuXf98s"
+        },
+        {
+          "url": "https://www.beinsports.com/en-us/soccer/ligue-1/articles/live-stade-brest-vs-paris-fc-ligue-1-2026-11-27",
+          "title": "Live: Stade Brest vs Paris FC | Ligue 1",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThSsMaLBRH3NpOHnp4r5HR6oBJhCSZzem0bO763I_QWrmmWIHjVLYxLrpspFs"
+        }
+      ]
+    },
+    {
+      "query": "primevideo",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:00:00Z",
+      "related_news_urls": [
+        "https://people.com/new-prime-video-christmas-movies-2026-12267942",
+        "https://screenrealm.com/prime-video-australia-december-2026-release-schedule/",
+        "https://www.indianbroadcastingworld.com/18-movies-shows-to-watch-during-h/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBe3gPLbXrGGQgS2jDN6ggUR910mCUNL6jAvjVtyBSmDrWAUrvmWjgJHNIung",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/new-prime-video-christmas-movies-2026-12267942",
+          "title": "2 New Christmas Movies to Watch on Prime Video This Holiday Season (Including a Santa Heist!)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBe3gPLbXrGGQgS2jDN6ggUR910mCUNL6jAvjVtyBSmDrWAUrvmWjgJHNIung"
+        },
+        {
+          "url": "https://screenrealm.com/prime-video-australia-december-2026-release-schedule/",
+          "title": "Prime Video Australia December 2026: Complete Movie & TV Release Schedule",
+          "publisher": "Screen Realm",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFR0zi-1c3N4aYYOQRmuYLoEZgdKvzXQ87l1-xKLvjuTJzzgNKmjO9n76tja4"
+        },
+        {
+          "url": "https://www.indianbroadcastingworld.com/18-movies-shows-to-watch-during-h/",
+          "title": "18 movies & shows to watch during holiday season on Prime Video",
+          "publisher": "Indian Broadcasting World",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbG5E3CwNCBsKrjTkWE9x432QN9ceKpT_03plQFmpqk7D6wzT62DgRjnXX-5A"
+        }
+      ]
+    },
+    {
+      "query": "virgin atlantic",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:00:00Z",
+      "related_news_urls": [
+        "https://uk.news.yahoo.com/heathrow-plane-circles-over-cornwall-114743847.html",
+        "https://airlive.net/tracking/2026/11/27/virgin-atlantic-boeing-787-to-jfk-just-returned-to-london-heathrow-after-3-5-hours-in-the-air/",
+        "https://www.cornwalllive.com/news/cornwall-news/new-york-bound-flight-circles-11258246"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbkFcZIsPWqad1QGAdYhKCXYdydBxLbAwbwxgnnBcXLioRt9neKXYfhWzeyTg",
+      "image_credit": "Yahoo News UK",
+      "news": [
+        {
+          "url": "https://uk.news.yahoo.com/heathrow-plane-circles-over-cornwall-114743847.html",
+          "title": "Heathrow plane circles over Cornwall as Virgin Atlantic flight 'dumps' fuel",
+          "publisher": "Yahoo News UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbkFcZIsPWqad1QGAdYhKCXYdydBxLbAwbwxgnnBcXLioRt9neKXYfhWzeyTg"
+        },
+        {
+          "url": "https://airlive.net/tracking/2026/11/27/virgin-atlantic-boeing-787-to-jfk-just-returned-to-london-heathrow-after-3-5-hours-in-the-air/",
+          "title": "Virgin Atlantic Boeing 787 to JFK just returned to London Heathrow after 3.5 hours in the air",
+          "publisher": "airlive",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTmQpx9yvbMjKqhVmFUIUqqB0-AYMR2FQ4VtTvjOGheTdhEJyF8q722yKNvqKk"
+        },
+        {
+          "url": "https://www.cornwalllive.com/news/cornwall-news/new-york-bound-flight-circles-11258246",
+          "title": "New York-bound flight circles over Cornwall due to 'technical issue'",
+          "publisher": "Cornwall Live",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhF1l07pECNeYLYbUeflBBcloCOyEitMhh_W4qah_U7po843EyX1G4Ua3ARDY"
+        }
+      ]
+    },
+    {
+      "query": "gayle king",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T20:00:00Z",
+      "related_news_urls": [
+        "https://people.com/gayle-king-son-in-law-virgil-miller-dead-45-12283443",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/gayle-king-virgil-miller-death-cause-kirby-bumpas-cancer/92980618007/",
+        "https://twaslnews1.twaslnews.com/8408163/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlgvHn8MoRWGwLfsEfpus2waw-ac20Fxe8L7duwg9t7ekXrQwJdaSqB0qqcyo",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/gayle-king-son-in-law-virgil-miller-dead-45-12283443",
+          "title": "Gayle King’s Son-in-Law Virgil Miller Dies from Cancer at 45",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlgvHn8MoRWGwLfsEfpus2waw-ac20Fxe8L7duwg9t7ekXrQwJdaSqB0qqcyo"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/gayle-king-virgil-miller-death-cause-kirby-bumpas-cancer/92980618007/",
+          "title": "Gayle King's son-in-law dies after 'brief, but courageous' cancer bout",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTQmBjJ7LmIS-hOZMwTJeVizB7t8TT784xOL2pde92ZZ_AV_xoPtd9DkwWONNw"
+        },
+        {
+          "url": "https://twaslnews1.twaslnews.com/8408163/",
+          "title": "Gayle King to Take Week Off from ‘CBS Mornings’ After Death of Son-in-Law Virgil Miller",
+          "publisher": "شبكة تواصل الإخبارية",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrWFo6kGjYVO1aCQ0DrTWrCfOL6IVIeSmAL-AanXMCUIox6DnpJv8h0n4lvik"
+        }
+      ]
+    },
+    {
+      "query": "prime video",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T19:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/arts/blade-runner-2099-set-design-prague.html",
+        "https://editorial.rottentomatoes.com/article/blade-runner-2099-first-reviews/",
+        "https://www.theguardian.com/tv-and-radio/2026/nov/25/blade-runner-2099-review-tv-version-terrifying-visual-beauty"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqNiDDYdIu6Mnwgx7K8meIVLAG0H41ARA__mqPAI1wmBiDC4DIq1ffz9XZxV8",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/arts/blade-runner-2099-set-design-prague.html",
+          "title": "In ‘Blade Runner 2099,’ the Future Is Hot and Sticky",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRU8RoUbLAhFlRnXsEGInzFe8O2AiWLryWrV07-_PgXZebyYkjYFnLQEg2OdLs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqNiDDYdIu6Mnwgx7K8meIVLAG0H41ARA__mqPAI1wmBiDC4DIq1ffz9XZxV8"
+        },
+        {
+          "url": "https://editorial.rottentomatoes.com/article/blade-runner-2099-first-reviews/",
+          "title": "Blade Runner 2099 First Reviews: Hunter Schafer Shines in a Fresh Take on Familiar Material",
+          "publisher": "Rotten Tomatoes",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9qJVr64v_WgR2o3BBTFqO7_NLMy_NSpmjJoeKHoxrrNFnJF8IOCNU3Qa-TzQ"
+        },
+        {
+          "url": "https://www.theguardian.com/tv-and-radio/2026/nov/25/blade-runner-2099-review-tv-version-terrifying-visual-beauty",
+          "title": "Blade Runner 2099 review – every scene of this TV version is packed with terrifying visual beauty",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR8alyrl3AwM11O0Uhfss9YOoQh8JqpJpnEfIeMs9VZTlLyG4FHnw1fBxeI-GU"
         }
       ]
     }
