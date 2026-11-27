@@ -8,6 +8,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {randomBytes,randomUUID,createHash,timingSafeEqual} from 'node:crypto';
 import {mkdirSync,readFileSync,chmodSync,closeSync,openSync} from 'node:fs';
 import {dirname} from 'node:path';
+import {serveBrainRequest} from './brain-http.mjs';
 
 const MAX_BODY=1_400_000; // Encrypted shard request bound; use small source chunks
 const MAX_FILE_BYTES=64*1024*1024;
@@ -51,7 +52,8 @@ function send(res,status,data){
  res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'});
  res.end(JSON.stringify(data));
 }
-export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,peerTtlMs=120000,now=Date.now,tls=null}={}){
+export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,peerTtlMs=120000,now=Date.now,tls=null,brain=null}={}){
+ requireTrue(brain===null||typeof brain?.fetch==='function','brain_fetch_required');
  requireTrue(typeof dbPath==='string'&&dbPath.length>0,'dbPath required');
  requireTrue(typeof ownerToken==='string'&&Buffer.byteLength(ownerToken)>=32,'owner token must have 32+ bytes');
  requireTrue(Number.isInteger(replicas)&&replicas>=1&&replicas<=4,'replicas must be 1..4');
@@ -175,6 +177,9 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
  async function handle(req,res){
   const path=new URL(req.url||'/', 'http://loopback.invalid').pathname;
   if(req.method==='GET'&&path==='/health')return send(res,200,{ok:true,service:'infinity-mesh-local-v1'});
+  // Opt-in cohosting delegates only the existing runner surface. Mesh bearer
+  // tokens never become Brain identity; its outer Worker still checks OIDC.
+  if(brain&&(path.startsWith('/runner/')||path==='/local/health'))return serveBrainRequest(brain,req,res);
   // Same-origin installed app page and modules; no public cross-origin
   // credential access. CSP blocks inline scripts and third-party code.
   const staticFiles={
@@ -318,8 +323,9 @@ export function createMeshServer({dbPath,ownerToken,host='127.0.0.1',replicas=2,
   }
   throw Object.assign(Error('not found'),{status:404});
  }
- const server=(tls?createHttpsServer(tls,(req,res)=>void handle(req,res).catch(e=>send(res,e.status||500,{error:e.status?e.message:'internal error'}))):
-  createHttpServer((req,res)=>void handle(req,res).catch(e=>send(res,e.status||500,{error:e.status?e.message:'internal error'}))));
+ const serverOptions=brain?{requestTimeout:190000,headersTimeout:10000,maxHeaderSize:20000}:{};
+ const listener=(req,res)=>void handle(req,res).catch(e=>send(res,e.status||500,{error:e.status?e.message:'internal error'}));
+ const server=tls?createHttpsServer({...tls,...serverOptions},listener):createHttpServer(serverOptions,listener);
  let closed=false,started=false;
  return {
   server,

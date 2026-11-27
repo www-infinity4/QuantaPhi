@@ -37,8 +37,11 @@ def private_directory(path):
 
 
 def configuration(env):
+    mode = env.get("BRAIN_HOST_MODE", "standalone")
+    if mode not in ("standalone", "mesh"):
+        raise ValueError("brain_host_mode_invalid")
     paths = []
-    for key in ("BRAIN_WORK_DB", "BRAIN_STATE_DB"):
+    for key in ("BRAIN_WORK_DB", "BRAIN_STATE_DB") + (("MESH_DB",) if mode == "mesh" else ()):
         value = env.get(key)
         if not value or not Path(value).is_absolute():
             raise ValueError("existing_brain_paths_required")
@@ -56,7 +59,8 @@ def configuration(env):
     stop = Path(env.get("BRAIN_STOP_FILE") or str(ledger) + ".stop")
     if not stop.is_absolute():
         raise ValueError("private_stop_path_required")
-    return ledger, stop
+    runtime = "mesh-runner.mjs" if mode == "mesh" else "sqlite-brain-runtime.mjs"
+    return ledger, stop, Path(__file__).resolve().with_name(runtime)
 
 
 def open_ledger(path):
@@ -99,7 +103,7 @@ def reserve_start(db):
 
 
 def supervise(env):
-    ledger, stop = configuration(env)
+    ledger, stop, runtime = configuration(env)
     if stop.exists():
         emit("manual_stop_preserved")
         return 0
@@ -124,7 +128,6 @@ def supervise(env):
 
         signal.signal(signal.SIGINT, requested_stop)
         signal.signal(signal.SIGTERM, requested_stop)
-        runtime = Path(__file__).resolve().with_name("sqlite-brain-runtime.mjs")
         try:
             while not stopping and not stop.exists():
                 reserved = reserve_start(db)
