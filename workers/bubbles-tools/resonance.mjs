@@ -138,3 +138,20 @@ export function describeResonance(result){
    +(e.transformer?' Ideal turns ratio '+e.transformer.idealTurnsRatio.toPrecision(6)+':1.':'')
    +' Conceptual material comparisons are not physical measurements.';
 }
+
+
+// Explicit browser program; same scientific implementation as the gateway.
+export function localResonanceReply(prompt){
+ if(typeof prompt!=='string'||!/^local resonance\s*:/i.test(prompt))return null;
+ const invalid={ok:false,text:'Enter local resonance: 10 uH, 22 pF. Use positive inductance (H, mH, uH) and capacitance (F, uF, nF, pF).'};
+ if(prompt.length>160)return invalid;
+ const m=/^local resonance\s*:\s*(\d+(?:\.\d+)?|\.\d+)\s*(H|mH|uH|µH)\s*,\s*(\d+(?:\.\d+)?|\.\d+)\s*(F|uF|µF|nF|pF)\s*$/i.exec(prompt);
+ if(!m)return invalid;
+ const units={h:'H',mh:'mH',uh:'uH','µh':'uH',f:'F',uf:'uF','µf':'uF',nf:'nF',pf:'pF'};
+ try{
+  const value=calculateResonance({l:m[1],lUnit:units[m[2].toLowerCase()],c:m[3],cUnit:units[m[4].toLowerCase()]});
+  const f=value.engineering.frequencyHz;
+  const formatted=f>=1e9?(f/1e9).toFixed(3)+' GHz':f>=1e6?(f/1e6).toFixed(3)+' MHz':f>=1e3?(f/1e3).toFixed(3)+' kHz':f.toPrecision(6)+' Hz';
+  return {ok:true,text:'Ideal LC resonance: '+formatted+'. Calculated in this browser using the QuantaPhi resonance program; no AI inference or repository job performed. '+value.warnings[0]};
+ }catch{return invalid;}
+}
