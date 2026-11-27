@@ -64,13 +64,14 @@ and retain a private restorable backup and rollback plan. A flag is a request
 to activate, not proof that these migration conditions were met. This source
 does not implement or assert an authoritative-state export or cutover.
 
-The factory accepts explicit existing service bindings. The CLI deliberately
-has **no inference provider, wallet service or background alarm adapter**.
-`WRITER_AI.run`, when supplied by an embedding host, receives the original
-model name and prompts. No substitute model or paid fallback is selected.
-Thus the CLI can serve authenticated claim/result persistence once enabled,
-but cannot yet plan/build, serve Bubbles conversation, replace the existing
-supervisor, or settle wallet work. Treat those as unresolved integrations.
+The factory accepts explicit existing service bindings. The CLI can load the
+original `WRITER_AI.run` adapter from explicit private host configuration, as
+described below. Without that configuration it has no inference provider;
+enabled CLI startup refuses a missing model binding before opening databases.
+No substitute model or paid fallback is selected. The wallet service,
+background alarms and Bubbles owner-session/conversation routes are not
+connected by this host. Actual inference, installation into the existing
+supervisor and live engineering remain separate acceptance requirements.
 
 Moltnook's companion origin configuration uses the same selected HTTPS origin
 for credential connection, job calls and result handling. Before setting its
@@ -139,3 +140,75 @@ and live receipts. Every import/verification result explicitly reports
 `productionVerified:false` and `writerEnabled:false`. Staging does not start a
 listener, choose a model, install a supervisor, change the runner origin,
 replace the original Brain or enable execution.
+
+## Original model binding and supervised host entry point
+
+`brain-host-bindings.mjs` connects an explicitly configured existing host
+adapter to the original Brain CLI. Set `BRAIN_BINDINGS_MODULE` in the existing
+private host environment to an absolute `.mjs` path owned by the current user,
+with no group/world permissions. It must export only `WRITER_AI`, whose
+`run(model, input)` method is the existing inference adapter. This is trusted
+server code, not a ticket/model-supplied module, downloaded skill or API URL.
+No provider, model, account, endpoint or key is invented by the loader.
+
+The loader preserves the model name, arguments and receiver. An optional
+`BRAIN_BINDINGS_SHA256` must match the entrypoint's SHA-256. The exact checked
+bytes are loaded through a narrow Node hook, so swapping the file after the
+check does not execute replacement code. Relative imports retain the original
+file location. **Dependencies remain trusted host code and are not covered by
+the entrypoint checksum.** Confirm the existing adapter and its dependencies
+before supplying them; this is not a sandbox for untrusted JavaScript.
+
+Missing/invalid/private-incompatible modules fail with sanitized messages.
+They cannot override `WORK_DB`, `CLOCK`, the owner hash or wallet bindings via
+exports. The CLI inherits the original private environment and credential
+encryption key. Host-side JavaScript has normal server-process access; never
+pass a path from a public conversation or job as its configuration.
+
+`brain-supervisor.py` is a source entry point for the **same** Node runtime,
+usable by the owner's existing host launcher once the real configuration has
+been verified. It installs nothing and does not start at merge time:
+
+```bash
+python3 distributed-vault/brain-supervisor.py
+```
+
+It launches only `sqlite-brain-runtime.mjs`, uses a kernel lock, and records
+every launch in a separate private SQLite ledger before starting its child.
+The maximum is **three starts per rolling hour**, including the initial start
+and manual relaunches. The budget survives supervisor restarts and conservatively
+counts future entries after clock rollback. Unexpected child exits may recover
+within that budget; normal exit and configuration/occupied-port exit 78 stop
+without retry. Another active supervisor exits 73; an exhausted budget exits 75.
+HTTP authentication, provider and 503 responses do not trigger process restarts.
+
+| Host variable | Purpose |
+| --- | --- |
+| `BRAIN_WORK_DB`, `BRAIN_STATE_DB` | The original private queue and durable state; both must already exist. |
+| `WRITER_OWNER_HASH`, `BOT_WORK_SECRET` | Existing identity and original encryption configuration; no values are generated or reset. |
+| `BRAIN_BINDINGS_MODULE`, optional `BRAIN_BINDINGS_SHA256` | Existing private model adapter and optional entrypoint checksum. |
+| `BRAIN_SUPERVISOR_DB` | Separate private launch ledger; defaults beside the state DB as `brain-supervisor.sqlite`. |
+| `BRAIN_STOP_FILE` | Persistent manual-stop marker; defaults to the launch-ledger path plus `.stop`. |
+| `BRAIN_PORT`, `BRAIN_SQLITE_WRITER_ENABLED` | Existing local port and explicit activation flag; writer still defaults off. |
+
+The supervisor preserves an existing stop file. On SIGINT/SIGTERM or a stop
+marker it terminates only the child it launched, allowing up to ten seconds
+for shutdown before stopping that same child. It never kills an existing
+port listener or an unrelated server. It cannot be pointed at either original
+database as its launch ledger. It does not reset credentials or alter leases.
+
+Tests use real local subprocesses and synthetic data: a child fails twice and
+recovers using the same state, a second supervisor is refused, the launch cap
+survives parent restart, manual stop and occupied ports are preserved, and
+signed original Brain claim/lease checks precede the configured fixture model
+call. The fixture receives the unchanged `@cf/openai/gpt-oss-120b` model ID.
+These are **not actual provider inference or owner engineering receipts**.
+
+`modelConfigured` in local health means a `run()` function was supplied, not
+that the original provider/model has been independently attested or answered.
+The supervisor reacts to child exit; startup hangs and application/model
+health recovery are not verified. Android may stop Termux and its supervisor
+together. Physical phone background/reboot behavior, original host deployment,
+complete private source export, writer fencing, TLS and end-to-end Bubbles
+conversation/engineering remain unverified. No origin or writer is switched
+by loading these source files.

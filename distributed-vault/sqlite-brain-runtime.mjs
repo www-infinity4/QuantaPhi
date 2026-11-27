@@ -7,6 +7,7 @@ import {Readable} from 'node:stream';
 import {pathToFileURL} from 'node:url';
 import {openPortableBrainState} from './portable-brain-state.mjs';
 import {openBrainDatabase,requirePrivateDatabase} from './sqlite-brain-db.mjs';
+import {loadBrainHostBindings} from './brain-host-bindings.mjs';
 
 let source;
 async function loadBrain(){
@@ -79,16 +80,23 @@ export async function createSqliteBrain({workDbPath,statePath,ownerHash,writerEn
  }catch(error){await state.close();db.close();throw error;}
 }
 
+export async function createConfiguredBrain(env=process.env){
+ if(env.BRAIN_SQLITE_WRITER_ENABLED!==undefined&&!['0','1'].includes(env.BRAIN_SQLITE_WRITER_ENABLED))throw Error('writer_mode_invalid');
+ const bindings=await loadBrainHostBindings({modulePath:env.BRAIN_BINDINGS_MODULE,expectedSha256:env.BRAIN_BINDINGS_SHA256});
+ const writerEnabled=env.BRAIN_SQLITE_WRITER_ENABLED==='1';
+ if(writerEnabled&&!bindings.WRITER_AI)throw Error('existing_model_binding_required');
+ return createSqliteBrain({workDbPath:env.BRAIN_WORK_DB,statePath:env.BRAIN_STATE_DB,ownerHash:env.WRITER_OWNER_HASH,
+  writerEnabled,bindings:{...bindings,BOT_WORK_SECRET:env.BOT_WORK_SECRET}});
+}
+
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
  try{
   // Explicit private snapshot paths prevent a typo from replacing the original
   // Brain with empty state. Import/fence/reconciliation is a separate operation.
-  const brain=await createSqliteBrain({workDbPath:process.env.BRAIN_WORK_DB,statePath:process.env.BRAIN_STATE_DB,
-   ownerHash:process.env.WRITER_OWNER_HASH,writerEnabled:process.env.BRAIN_SQLITE_WRITER_ENABLED==='1',
-   bindings:{BOT_WORK_SECRET:process.env.BOT_WORK_SECRET}});
+  const brain=await createConfiguredBrain();
   try{const url=await brain.listen(Number(process.env.BRAIN_PORT||18789));console.log('Existing Brain source serving '+url+'; production acceptance remains unverified.');}
   catch(error){await brain.close();throw error;}
   const stop=()=>void brain.close().catch(()=>{process.exitCode=1;});
   process.once('SIGINT',stop);process.once('SIGTERM',stop);
- }catch(error){console.error('SQLite Brain startup blocked: '+(error.code==='EADDRINUSE'?'port_in_use_existing_server_preserved':error.message));process.exitCode=1;}
+ }catch(error){console.error('SQLite Brain startup blocked: '+(error.code==='EADDRINUSE'?'port_in_use_existing_server_preserved':error.message));process.exitCode=78;}
 }
