@@ -115,6 +115,30 @@ test('the original signed Brain claims local SQLite work and preserves fences ac
  }finally{await brain.close();}
 });
 
+test('shared provider cooldown survives private SQLite restart and expires without fabricating recovery',async t=>{
+ const f=await fixture(t),sign=await signer(t);let calls=0,refused=true,now=Date.now();
+ t.mock.method(Date,'now',()=>now);
+ const bindings={WRITER_AI:{async run(){calls++;if(refused)throw Error('AiError: 4006: you have used up your daily free allocation of 10,000 neurons');return {response:JSON.stringify({summary:'Fixture model retried after deadline',requirements:[],subtasks:[],files:[],acceptance:[],blockers:[],notes:[]})};}}};
+ let brain=await createSqliteBrain({...f,ownerHash:owner,writerEnabled:true,bindings});
+ try{
+  const token=await sign('601'),claim=await (await brain.fetch(request(token))).json(),lease=claim.lease;
+  const evidence={colorFindings:{},runtime:{baseSha:'c'.repeat(40)}},body={key:lease.key,leaseId:lease.leaseId,evidence};
+  const failure=await brain.fetch(request(token,'plan',body));assert.equal(failure.status,429);const quota=await failure.json();assert.equal(quota.error,'provider_quota_exhausted');assert.equal(calls,1);
+  assert.equal((await brain.fetch(request(token,'plan',{...body,leaseId:'wrong'}))).status,409,'quota cannot bypass lease authentication');
+  await brain.close();
+  const db=new DatabaseSync(f.workDbPath),job={id:'TASK-2',repository:'www-infinity4/Moltnook',agent:'greenbeans',executor:'repository-engine',instructions:'Repair the other fixture source.',acceptance:['Test it.'],dependencies:[],status:'queued'};
+  db.prepare('INSERT INTO work_tickets VALUES(?,?,?,?,?,?,?)').run('IW-another-local',owner,JSON.stringify({kind:'robot-directions',color_jobs:[job]}),'Synthetic queued repair',now,'ready',now);db.close();
+  brain=await createSqliteBrain({...f,ownerHash:owner,writerEnabled:true,bindings});
+  const deferred=await brain.fetch(request(await sign('602')));assert.equal(deferred.status,429);assert.equal((await deferred.json()).retryAt,quota.retryAt);assert.equal(calls,1);
+  const state=openPortableBrainState(f.statePath);assert.equal((await state.get('runner-provider-quota:cloudflare-workers-ai')).retryAt,quota.retryAt);assert.equal(await state.get('runner-claim:www-infinity4/Moltnook:602:1'),undefined);assert.ok(await state.get(lease.key));await state.close();
+  const view=openBrainDatabase(f.workDbPath);assert.equal((await view.prepare('SELECT status FROM work_tickets WHERE id=?').bind('IW-another-local').first()).status,'ready');view.close();
+  now=quota.retryAt+1;refused=false;
+  const nextToken=await sign('603'),nextClaim=await brain.fetch(request(nextToken));assert.equal(nextClaim.status,200);const next=(await nextClaim.json()).lease;assert.ok(next);
+  assert.equal(calls,1,'deadline expiry permits a retry but cannot stand in for inference');
+  const answer=await brain.fetch(request(nextToken,'plan',{key:next.key,leaseId:next.leaseId,evidence}));assert.equal(answer.status,200);assert.equal((await answer.json()).summary,'Fixture model retried after deadline');assert.equal(calls,2);
+ }finally{await brain.close();}
+});
+
 test('real loopback HTTP preserves existing listeners and requires signed runner identity',async t=>{
  const f=await fixture(t),sign=await signer(t),brain=await createSqliteBrain({...f,ownerHash:owner,writerEnabled:true});
  const occupied=createServer((req,res)=>res.end('existing service'));

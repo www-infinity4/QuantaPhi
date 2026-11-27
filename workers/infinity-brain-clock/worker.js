@@ -72,6 +72,14 @@ function workersAiQuotaFailure(error,now=Date.now()){
 const providerQuotaError=quota=>Object.assign(Error(quota.error),quota,{status:429});
 const providerQuotaResponse=quota=>Response.json({ok:false,...quota},{status:429,
  headers:{'Cache-Control':'no-store','Retry-After':String(Math.max(1,Math.ceil((quota.retryAt-Date.now())/1000)))}});
+const RUNNER_PROVIDER_QUOTA='runner-provider-quota:cloudflare-workers-ai';
+function activeRunnerProviderQuota(value,now=Date.now()){
+ const next=new Date(now);next.setUTCHours(24,1,0,0);
+ if(value?.error!=='provider_quota_exhausted'||value.provider!=='cloudflare-workers-ai'||
+    !Number.isSafeInteger(value.retryAt)||value.retryAt<=now||value.retryAt>next.getTime())return null;
+ return {error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:value.retryAt,
+  retryScheduled:true,recoveryVerified:false};
+}
 function malformedRunnerCredential(request){
  const token=(request.headers.get('Authorization')||'').replace(/^Bearer /,''),parts=token.split('.');
  if(token.length>16000||parts.length!==3||parts.some(part=>!/^[A-Za-z0-9_-]+$/.test(part)))return true;
@@ -120,7 +128,7 @@ async function updateRunnerLease(storage,lease,update){
   const lockKey=current.lockKey||legacyRepositoryLockKey(lease.repository);
   const lock=await tx.get(lockKey);
   if(current.lockKey&&lock?.leaseId!==lease.leaseId)return null;
-  const next=update(current,now);
+  const next=await update(current,now,tx);
   await tx.put(lease.key,next);
   if(lock?.leaseId===lease.leaseId)await tx.put(lockKey,next);
   return next;
@@ -381,6 +389,8 @@ export class BrainClock extends DurableObject{
    mergeSha:tentative.mergeSha,testCount:tentative.testPaths.length});
  }
  async runnerModel(lease,model,options){
+  const shared=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+  if(shared)throw providerQuotaError(shared);
   if(lease.providerQuota?.error==='provider_quota_exhausted'&&lease.providerQuota.retryAt>Date.now())
    throw providerQuotaError(lease.providerQuota);
   try{return await this.env.WRITER_AI.run(model,options);}
@@ -389,7 +399,12 @@ export class BrainClock extends DurableObject{
    if(!quota)throw error;
    // Only an actual failed inference under this current fenced lease can
    // create the marker. A runner-supplied message cannot extend its backoff.
-   const saved=await updateRunnerLease(this.ctx.storage,lease,current=>({...current,providerQuota:quota,retryAt:quota.retryAt}));
+   const saved=await updateRunnerLease(this.ctx.storage,lease,async(current,now,tx)=>{
+    // The shared marker and current job fence commit together. Only an actual
+    // refusal under this still-valid lease creates it; runner text cannot.
+    await tx.put(RUNNER_PROVIDER_QUOTA,quota);
+    return {...current,providerQuota:quota,retryAt:quota.retryAt};
+   });
    if(!saved)throw Error('writer_lease_rejected');
    lease.providerQuota=quota;
    throw providerQuotaError(quota);
@@ -524,6 +539,7 @@ export class BrainClock extends DurableObject{
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
    const claimBlockedBy={},dependencyStates={};
+   let providerCooldown=activeRunnerProviderQuota(await storage.get(RUNNER_PROVIDER_QUOTA)),quotaDeferred=null;
    for(const {ticket,jobs,job,context} of prioritizeReadOnlyPinkReviews(admission.allowed,{requested})){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status))continue;
@@ -551,18 +567,25 @@ export class BrainClock extends DurableObject{
       if(eligibility.reason==='dependency_pending')noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);
       continue;
      }
+     if(!sourceReview&&providerCooldown){
+      quotaDeferred=providerCooldown;noteRunnerSkip(claimBlockedBy,'provider_quota_exhausted');continue;
+     }
      const lockKey=repositoryLockKey(job.repository);
      const lease={adapterVersion:VERSION,key,lockKey,ticketId:ticket.id,jobId:job.id,revision,runId,runAttempt,runUrl,leaseId:crypto.randomUUID(),leaseUntil:0,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
      let experientialMemory=[];
      try{
-       experientialMemory=await recallOutcomes(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
+       // Source-only verification can use saved memory without spending the
+       // same exhausted provider's embedding allocation.
+       experientialMemory=await recallOutcomes(providerCooldown?{...this.env,WRITER_AI:undefined}:this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
      const reserved=await storage.transaction(async tx=>{
       const now=Date.now();
+      const cooldown=activeRunnerProviderQuota(await tx.get(RUNNER_PROVIDER_QUOTA),now);
+      if(!sourceReview&&cooldown){quotaDeferred=cooldown;providerCooldown=cooldown;return false;}
       if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now)||
        await this.generatedRepairHasPendingPink(ticket.id,context,job,tx))return false;
       lease.leaseUntil=now+runnerLeaseDuration(engine);
@@ -571,7 +594,7 @@ export class BrainClock extends DurableObject{
       await tx.put(runKey,lease.leaseId);
       return true;
      });
-     if(!reserved){noteRunnerSkip(claimBlockedBy,'repository_lease_active');continue;}
+     if(!reserved){noteRunnerSkip(claimBlockedBy,quotaDeferred?'provider_quota_exhausted':'repository_lease_active');continue;}
      const claimedContext=JSON.parse(ticket.context_json);
      const claimedJob=claimedContext.color_jobs.find(j=>j.id===job.id);
      const claimedAt=new Date().toISOString();
@@ -612,6 +635,7 @@ export class BrainClock extends DurableObject{
     .length;
    if(malformedGraphs)
     throw Error('runner_queue_graph_unavailable');
+   if(quotaDeferred)return providerQuotaResponse(quotaDeferred);
    const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
     adapterMatches,claimBlockedBy,dependencyStates,scanLimited:rows.scanLimited});
    await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),

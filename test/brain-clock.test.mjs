@@ -97,7 +97,7 @@ test('unavailable OIDC signing keys remain a service failure with no downstream 
  assert.equal(malformedCredential.status,401);
 }));
 
-test('actual provider exhaustion persists only its current fenced job and pauses it until the scheduled retry',async()=>{
+test('actual provider exhaustion preserves its current fenced job and pauses it until the scheduled retry',async()=>{
  const job={id:'TASK-1',repository:'www-infinity4/QuantaPhi',instructions:'Repair source',acceptance:['Regression passes']};
  const lease={key:'quota-key',leaseId:'quota-lease',runId:'42',engine:true,leaseUntil:Date.now()+60000,jobId:job.id,ticketId:'IW-20261122-F0E68B20',repository:job.repository,revision:'a'.repeat(64),job};
  const memory=new Map([[lease.key,lease]]);let modelCalls=0,projected;
@@ -136,7 +136,62 @@ test('caller-supplied quota wording does not create a provider marker or replace
  assert.equal(response.status,200);
  const saved=memory.get(lease.key);
  assert.equal(saved.providerQuota,undefined);
+ assert.equal(memory.has('runner-provider-quota:cloudflare-workers-ai'),false);
  assert.ok(saved.retryAt>=before+30*60000&&saved.retryAt<=Date.now()+30*60000);
+});
+
+test('actual runner provider refusal is shared across jobs and clock instances, without trusting generic errors',async()=>{
+ const key='runner-provider-quota:cloudflare-workers-ai',memory=new Map(),storage=testStorage(memory);
+ const makeLease=id=>({key:id,leaseId:id,runId:id,engine:true,leaseUntil:Date.now()+60000,repository:'www-infinity4/'+id,jobId:'TASK-1',job:{}});
+ const one=makeLease('one'),two=makeLease('two');memory.set(one.key,one);memory.set(two.key,two);
+ let calls=0,failure=Error('429: temporary rate limit');
+ const env={WRITER_AI:{async run(){calls++;if(failure)throw failure;return {response:'actual fixture reply'};}}};
+ let clock=new BrainClock({storage},env);
+ await assert.rejects(clock.runnerModel(one,'original',{}),/temporary rate limit/);assert.equal(memory.has(key),false);
+ failure=Error('AiError: 4006: you have used up your daily free allocation of 10,000 neurons');
+ await assert.rejects(clock.runnerModel(one,'original',{}),/provider_quota_exhausted/);
+ const marker=memory.get(key);assert.equal(marker.error,'provider_quota_exhausted');assert.equal(marker.recoveryVerified,false);
+ clock=new BrainClock({storage},env);
+ await assert.rejects(clock.runnerModel(two,'original',{}),/provider_quota_exhausted/);assert.equal(calls,2,'another job must not repeat the same exhausted provider call');
+ assert.equal(memory.get(two.key).providerQuota,undefined,'shared cooldown cannot rewrite another lease');
+ assert.doesNotMatch(JSON.stringify(marker),/AiError|upgrade|paid plan/);
+});
+
+test('a replaced lease cannot publish a shared provider marker after an in-flight model refusal',async()=>{
+ const lease={key:'replaced-key',leaseId:'old-fence',leaseUntil:Date.now()+60000,repository:'www-infinity4/QuantaPhi'};
+ const replacement={...lease,leaseId:'new-fence'},memory=new Map([[lease.key,lease]]);
+ const clock=new BrainClock({storage:testStorage(memory)},{WRITER_AI:{async run(){memory.set(lease.key,replacement);throw Error('4006: you have used up your daily free allocation of 10,000 neurons');}}});
+ await assert.rejects(clock.runnerModel(lease,'original',{}),/writer_lease_rejected/);
+ assert.deepEqual(memory.get(lease.key),replacement);assert.equal(memory.has('runner-provider-quota:cloudflare-workers-ai'),false);
+});
+
+test('provider cooldown leaves normal work queued and still permits pinned read-only Pink verification',async t=>{
+ const queued=continuityJob('TASK-9','www-infinity4/Project9');let calls=0;
+ const f=continuityRunnerFixture(t,[queued],{WRITER_AI:{async run(){calls++;throw Error('must not infer');}},BRAIN_MEMORY:{query:async()=>assert.fail('no vector call during cooldown')}});
+ f.sqlite.exec('CREATE TABLE brain_experiences(experience_id TEXT,owner_hash TEXT,repository TEXT,ticket_id TEXT,job_id TEXT,status TEXT,metadata_json TEXT,summary TEXT,occurred_at INTEGER)');
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ const quota={error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime(),retryScheduled:true,recoveryVerified:false};
+ f.memory.set('runner-provider-quota:cloudflare-workers-ai',quota);
+ const denied=await f.send('/runner/claim','cooldown-1');assert.equal(denied.status,429);assert.equal((await denied.json()).retryAt,quota.retryAt);
+ assert.equal(f.job(0).status,'queued');assert.equal(calls,0);
+ assert.equal([...f.memory.keys()].some(key=>key.startsWith('runner-claim:')||key.startsWith('repository-lease:')||key.startsWith('writer:')),false);
+ const repo=queued.repository;
+ f.setGraph(0,[queued,{id:'TASK-1',agent:'greenbeans',repository:repo,status:'merged_verified',progress:{testsPassed:true,mergeSha:'a'.repeat(40),commitSha:'b'.repeat(40),prUrl:'https://github.com/'+repo+'/pull/418'}},
+  {id:'TASK-2',agent:'pink-panther',repository:repo,status:'queued',dependencies:['TASK-1'],instructions:'After TASK-1, independently verify the requested work: scoped source.',acceptance:['Test pinned source.']}]);
+ const review=await f.claim('cooldown-2');assert.equal(review.lease.jobId,'TASK-2');assert.equal(review.lease.job.sourceReview.mayWrite,false);assert.equal(calls,0);
+ assert.equal(f.job(0).status,'queued');assert.equal(f.memory.get('runner-provider-quota:cloudflare-workers-ai').retryAt,quota.retryAt);
+});
+
+test('a provider refusal arriving during claim preparation is rechecked before reserving any job',async()=>{
+ const memory=new Map(),storage=testStorage(memory),transaction=storage.transaction.bind(storage);let writes=0;
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ const quota={error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime(),retryScheduled:true,recoveryVerified:false};
+ storage.transaction=callback=>{memory.set('runner-provider-quota:cloudflare-workers-ai',quota);return transaction(callback);};
+ const job=continuityJob('TASK-race');
+ const clock=new BrainClock({storage},{WRITER_OWNER_HASH:'synthetic-owner',WORK_DB:{prepare:()=>({bind(){return this;},all:async()=>({results:[{id:'race-ticket',request:'Fixture repair',context_json:JSON.stringify({color_jobs:[job]})}]}),run:async()=>{writes++;return {meta:{changes:1}};}})}});
+ const response=await clock.runner(new Request('https://clock/runner/claim',{method:'POST',body:JSON.stringify({runId:'race',runnerRepository:'www-infinity4/Moltnook'})}));
+ assert.equal(response.status,429);assert.equal(writes,0);
+ assert.equal([...memory.keys()].some(key=>key.startsWith('runner-claim:')||key.startsWith('repository-lease:')||key.startsWith('writer:')),false);
 });
 
 test('quota receipt projects the same job with preserved source progress and no recursive repair',async()=>{
@@ -322,7 +377,7 @@ function continuityRunnerFixture(t, entries, env={}, beforeWrite=()=>{}) {
   method:'POST',body:JSON.stringify({runId,runnerRepository:'www-infinity4/Moltnook',...body})
  }));
  return {
-  memory,send,
+  memory,send,sqlite,
   claim:async runId=>(await send('/runner/claim',runId)).json(),
   job:(index,jobIndex=0)=>JSON.parse(sqlite.prepare('SELECT context_json FROM work_tickets WHERE id=?').get('ticket-'+index).context_json).color_jobs[jobIndex],
   restart:async()=>{clock=restart();return clock.reconcilePendingWork();},
