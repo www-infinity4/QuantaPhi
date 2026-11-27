@@ -3,219 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T23:01:21.588055Z",
+  "checked_at": "2026-11-27T23:31:05.140883Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "texas basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T22:40:00Z",
+      "query": "steelers nfl standings",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T23:10:00Z",
       "related_news_urls": [
-        "https://www.burntorangenation.com/texas-longhorns-basketball/107921/texas-longhorns-saint-marys-gaels-game-time-television",
-        "https://247sports.com/college/texas/article/how-to-watch-betting-line-for-no-7-texas-basketballs-friday-afternoon-contest-against-saint-marys-293364319/",
-        "https://sports.yahoo.com/mens-college-basketball/articles/texas-basketball-faces-major-test-173140809.html"
+        "https://www.espn.com/nfl/story/_/id/50606625/aaron-rodgers-officially-free-agent-clearing-waivers",
+        "https://bleacherreport.com/articles/25538133-kevin-durant-floats-potential-aaron-rodgers-landing-spot-after-qbs-dramatic-steelers-exit",
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aaron-rodgers-clears-waivers"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQikRn1tDGzyCmi9OKRgMhguGhreEWZ0gSma81pufRkMl8sjwjaA7ZjiGFlZhc",
-      "image_credit": "Burnt Orange Nation",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvqk4JCEmFiSB40Y_dgmpRGn_kwPaJV1VKjqWzfzyiZKl9h48aG1R19VbcSs0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.burntorangenation.com/texas-longhorns-basketball/107921/texas-longhorns-saint-marys-gaels-game-time-television",
-          "title": "No. 7 Texas to face Saint Mary’s in the Rady Children’s Invitational championship",
-          "publisher": "Burnt Orange Nation",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQikRn1tDGzyCmi9OKRgMhguGhreEWZ0gSma81pufRkMl8sjwjaA7ZjiGFlZhc"
-        },
-        {
-          "url": "https://247sports.com/college/texas/article/how-to-watch-betting-line-for-no-7-texas-basketballs-friday-afternoon-contest-against-saint-marys-293364319/",
-          "title": "How to watch, betting line for No. 7 Texas basketball's Friday afternoon contest against Saint Mary's",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSy96yw6qU3XSD4XHwkwpot_pJJ2XVOuSul6ygR604neOomWWAYR96a8pOkg"
-        },
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/texas-basketball-faces-major-test-173140809.html",
-          "title": "Texas Basketball Faces Major Test in Black Friday Tournament Championship",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREj_5fVKBUxa0DTMDjeRKdtnUPYx_x_KySkLbUJTs2P0pOt1u3-4dyacULnxI"
-        }
-      ]
-    },
-    {
-      "query": "anthony ellis philly marathon",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T22:40:00Z",
-      "related_news_urls": [
-        "https://patch.com/pennsylvania/media/delco-man-25-dies-after-collapsing-end-2026-philadelphia-marathon",
-        "https://marathonhandbook.com/anthony-ellis-philadelphia-marathon-death/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0ZWRh_h4CCgpx_mqKPTNiRG8jVIDGmP41M2hKwQuwCWNghzWr-cWTv6_sfsw",
-      "image_credit": "Patch",
-      "news": [
-        {
-          "url": "https://patch.com/pennsylvania/media/delco-man-25-dies-after-collapsing-end-2026-philadelphia-marathon",
-          "title": "Delco Man, 25, Dies After Collapsing At The End Of The 2026 Philadelphia Marathon",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0ZWRh_h4CCgpx_mqKPTNiRG8jVIDGmP41M2hKwQuwCWNghzWr-cWTv6_sfsw"
-        },
-        {
-          "url": "https://marathonhandbook.com/anthony-ellis-philadelphia-marathon-death/",
-          "title": "Former Sun Valley Quarterback Dies After Philly Marathon",
-          "publisher": "Marathon Handbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicEAU9vBKf2k9TktQASPbrJQwAtZDjVHCNOdYUiRUFLGemNwRDK6NY-HrflU"
-        }
-      ]
-    },
-    {
-      "query": "texas high school football playoffs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T22:40:00Z",
-      "related_news_urls": [
-        "https://www.ksat.com/sports/big-game-coverage/2026/11/25/bgc-scores-and-schedule-week-3-playoffs-2026/",
-        "https://sports.yahoo.com/high-school-sports/articles/san-antonio-area-high-school-220725968.html",
-        "https://www.expressnews.com/sports/high-school/article/football-playoffs-schedule-san-antonio-third-round-22551959.php"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0",
-      "image_credit": "KSAT",
-      "news": [
-        {
-          "url": "https://www.ksat.com/sports/big-game-coverage/2026/11/25/bgc-scores-and-schedule-week-3-playoffs-2026/",
-          "title": "BGC Scores and Schedule: Week 3 Playoffs, 2026",
-          "publisher": "KSAT",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0"
-        },
-        {
-          "url": "https://sports.yahoo.com/high-school-sports/articles/san-antonio-area-high-school-220725968.html",
-          "title": "San Antonio-area high school football third round playoff scoreboard",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtafHaxfmpFAMSNq5OVVZLV5Z3HemNWEgk1ZGKuTzMZfKG8WtMBKMVAfn05Dg"
-        },
-        {
-          "url": "https://www.expressnews.com/sports/high-school/article/football-playoffs-schedule-san-antonio-third-round-22551959.php",
-          "title": "High school football playoffs regional schedule for San Antonio teams",
-          "publisher": "San Antonio Express-News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuJ-YxL9IIErRXeUy6ajp6iP4WO4k76v6BXVZfXK3t9LRSc0aLmTiQaj2gz7k"
-        }
-      ]
-    },
-    {
-      "query": "patrick queen",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T22:40:00Z",
-      "related_news_urls": [
-        "https://www.philadelphiaeagles.com/video/game-highlights-eagles-19-steelers-16-2026-nfl-regular-season-week-11",
-        "https://www.espn.com/nfl/recap/_/gameId/401873076",
-        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRctjh0kUu47er45EzGY-pB-FjnZcrdY8F5kf6brJZbpluzV14x6h2Whi2f5VM",
-      "image_credit": "Philadelphia Eagles",
-      "news": [
-        {
-          "url": "https://www.philadelphiaeagles.com/video/game-highlights-eagles-19-steelers-16-2026-nfl-regular-season-week-11",
-          "title": "Game Highlights: Eagles 19, Steelers 16",
-          "publisher": "Philadelphia Eagles",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRctjh0kUu47er45EzGY-pB-FjnZcrdY8F5kf6brJZbpluzV14x6h2Whi2f5VM"
-        },
-        {
-          "url": "https://www.espn.com/nfl/recap/_/gameId/401873076",
-          "title": "Eagles 19-16 Steelers (Nov 22, 2026) Game Recap",
+          "url": "https://www.espn.com/nfl/story/_/id/50606625/aaron-rodgers-officially-free-agent-clearing-waivers",
+          "title": "Aaron Rodgers officially a free agent after clearing waivers",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSse0edD-MBJycdfKeBrWO9O-YMh2GM3OOlwxTN91vB2rvbTruFIBSB6m3dtSI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvqk4JCEmFiSB40Y_dgmpRGn_kwPaJV1VKjqWzfzyiZKl9h48aG1R19VbcSs0"
         },
         {
-          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/",
-          "title": "Did the Eagles just end Aaron Rodgers' Hall of Fame career?",
-          "publisher": "NBC Sports Philadelphia",
+          "url": "https://bleacherreport.com/articles/25538133-kevin-durant-floats-potential-aaron-rodgers-landing-spot-after-qbs-dramatic-steelers-exit",
+          "title": "Kevin Durant Floats Potential Aaron Rodgers Landing Spot After QB's Dramatic Steelers Exit",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0SPvL1Ipl2qSKfZeBxa34PvzfufdK2BDN3-rWgdB40cc350UqxGybYzVjBb0"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ95_VHxWBdQ5LdVGhAXPFbNgxKBI73Wco_HFT8cHTCTgYx8hrpEXEIMwR36Vg"
+        },
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/aaron-rodgers-clears-waivers",
+          "title": "Aaron Rodgers clears waivers",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQR3Gfk16gM5QSMReeTXti0IZIysjn_1iB9ir1aNasH_jKjJcHtZerikd_qbDE"
         }
       ]
     },
     {
-      "query": "pj gallagher",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T22:30:00Z",
+      "query": "chicago blackhawks",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T23:10:00Z",
       "related_news_urls": [
-        "https://www.rte.ie/entertainment/2026/1127/1600964-pj-gallagher/",
-        "https://www.independent.ie/entertainment/obituary-pj-gallagher-stand-up-career-to-success-on-the-airwaves/a/165241425.html",
-        "https://www.thejournal.ie/pj-gallagher-dies-7240976-Nov2026/"
+        "https://www.espn.com/nhl/story/_/id/50615550/chicago-blackhawks-place-patrick-kane-injured-reserve",
+        "https://www.nhl.com/blackhawks/news/release-blackhawks-recall-forward-landon-slaggert-from-rockford-place-forward-patrick-kane-on-ir",
+        "https://www.sportsnet.ca/nhl/article/blackhawks-place-patrick-kane-on-ir-with-lower-body-injury/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZlQOu2sXf6YDIBtVEy5eiD14NHU0e5SSnOQJT2P69tzfRCdTNmy-iElus7k",
-      "image_credit": "RTE.ie",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe6aE-Hc4jvqO6R4ZSaY46Zl9_ulo1Ab6JYnfcXdMvjlJGW-z_78d72urvlEM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.rte.ie/entertainment/2026/1127/1600964-pj-gallagher/",
-          "title": "Comedian and presenter PJ Gallagher dies aged 51",
-          "publisher": "RTE.ie",
+          "url": "https://www.espn.com/nhl/story/_/id/50615550/chicago-blackhawks-place-patrick-kane-injured-reserve",
+          "title": "Short-handed Chicago Blackhawks place Patrick Kane, 38, on injured reserve",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZlQOu2sXf6YDIBtVEy5eiD14NHU0e5SSnOQJT2P69tzfRCdTNmy-iElus7k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRe6aE-Hc4jvqO6R4ZSaY46Zl9_ulo1Ab6JYnfcXdMvjlJGW-z_78d72urvlEM"
         },
         {
-          "url": "https://www.independent.ie/entertainment/obituary-pj-gallagher-stand-up-career-to-success-on-the-airwaves/a/165241425.html",
-          "title": "Obituary: PJ Gallagher, stand-up career to success on the airwaves",
-          "publisher": "Irish Independent",
+          "url": "https://www.nhl.com/blackhawks/news/release-blackhawks-recall-forward-landon-slaggert-from-rockford-place-forward-patrick-kane-on-ir",
+          "title": "RELEASE: Blackhawks Recall Forward Landon Slaggert from Rockford, Place Forward Patrick Kane on IR",
+          "publisher": "NHL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScpgD532ABr4FBvtKdfuuNCImu8wwL70DpnzSzUW7ksAabvc7J6OBMB_xhcmY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3_nW7BIusN5FyBm-o8iLjwMIuHP6bjLwUDJCMvJvf0YUOhGPPbx5iFYc6UiI"
         },
         {
-          "url": "https://www.thejournal.ie/pj-gallagher-dies-7240976-Nov2026/",
-          "title": "Comedian and presenter PJ Gallgher dies aged 51",
-          "publisher": "The Journal",
+          "url": "https://www.sportsnet.ca/nhl/article/blackhawks-place-patrick-kane-on-ir-with-lower-body-injury/",
+          "title": "Blackhawks place Patrick Kane on IR with lower-body injury",
+          "publisher": "Sportsnet.ca",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TyFvvVlrdhq7F4g51m2pvnsLAbOf-Pii_y6dXpJvQb65sIUJpPqILeUFEPg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRngVibIhfjIWNqwzCCDhJe_m4m1kHeT0mwOtgWrJy-XwO56eD7J2AZ_vp3BBQ"
         }
       ]
     },
     {
-      "query": "old dominion vs virginia tech",
+      "query": "drummer",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T22:30:00Z",
+      "published_at": "2026-11-27T23:10:00Z",
       "related_news_urls": [
-        "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-old-dominion-live-updates-score-and-analysis-01m8fes5m5j0",
-        "https://www.foxsports.com/articles/cbk/virginia-tech-plays-old-dominion-after-hammonds-24point-game",
-        "https://techlunchpail.com/blog/mike-youngs-coaching-tree-in-the-spotlight-as-virginia-tech-faces-odu"
+        "https://www.rollingstone.com/music/music-news/phil-barker-buzzcocks-drummer-obituary-1235665168/",
+        "https://www.independent.co.uk/bulletin/culture/buzzcocks-phil-barker-death-tributes-b3092746.html",
+        "https://www.the-independent.com/arts-entertainment/music/news/phil-barker-buzzcocks-death-age-cause-b3092667.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_YOkFMx0pZLvhTW520g_QmMBAP1YlNBuVgjPBL1mWfN3S3s-0U-8lANRreE",
-      "image_credit": "Sports Illustrated",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7HsvGEdNBaib9Njk2iQt1ZDkSkWOk9T4Nf__wfJbLZFNhluu0u1EZaLqEf0",
+      "image_credit": "Rolling Stone",
       "news": [
         {
-          "url": "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-old-dominion-live-updates-score-and-analysis-01m8fes5m5j0",
-          "title": "Virginia Tech MBB vs. Old Dominion Live Updates: Score and Analysis",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.rollingstone.com/music/music-news/phil-barker-buzzcocks-drummer-obituary-1235665168/",
+          "title": "Former Buzzcocks Drummer Phil Barker Dead at 65",
+          "publisher": "Rolling Stone",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_YOkFMx0pZLvhTW520g_QmMBAP1YlNBuVgjPBL1mWfN3S3s-0U-8lANRreE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ7HsvGEdNBaib9Njk2iQt1ZDkSkWOk9T4Nf__wfJbLZFNhluu0u1EZaLqEf0"
         },
         {
-          "url": "https://www.foxsports.com/articles/cbk/virginia-tech-plays-old-dominion-after-hammonds-24point-game",
-          "title": "Virginia Tech plays Old Dominion after Hammond's 24-point game",
-          "publisher": "FOX Sports",
+          "url": "https://www.independent.co.uk/bulletin/culture/buzzcocks-phil-barker-death-tributes-b3092746.html",
+          "title": "Tributes paid to punk rock star following death after long cancer battle",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyep68xpWMyFJg84j-aFkjDgAyT0j8r6O3E0TVkAfwgvyFNJq7rmOhEk94BYw"
         },
         {
-          "url": "https://techlunchpail.com/blog/mike-youngs-coaching-tree-in-the-spotlight-as-virginia-tech-faces-odu",
-          "title": "Mike Young's Coaching Tree in the Spotlight as Virginia Tech Faces ODU",
-          "publisher": "The Tech Lunch Pail",
+          "url": "https://www.the-independent.com/arts-entertainment/music/news/phil-barker-buzzcocks-death-age-cause-b3092667.html",
+          "title": "Former Buzzcocks legend dies after ‘five-year battle with cancer’",
+          "publisher": "The Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzdrbt70UjX4luZdIzNjRjo00pLyOeJTe8gmVUVMDUZ6BTVWgDr1SIN_3l-ug"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaBIHFFd3nlskoK8liNIEGe7F6pzbI7VVLLQFwzOeF8f9ybuWnxS665wSutpo"
         }
       ]
     },
     {
-      "query": "brock purdy injury",
+      "query": "mike norvell",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T23:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50577665/uga-defensive-coordinator-schumann-coach-florida-state",
+        "https://247sports.com/college/florida-state/longformarticle/fsu-football-intel-glenn-schumann-introduction-high-school-recruiting-and-coordinator-hires-293339652/",
+        "https://www.dawgnation.com/football/around-the-dawghouse/travaris-robinson-andrew-thacker-both-make-strong-cases-georgia-dc-opening/LGTRO3S4L5ACXKWIOSOVY2TVGI/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWVBxNgui1cBAp1CQK0CkjUglpcgW4xQZZbzmAyQr5_gsL11jtXLwPjNA_bNs",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50577665/uga-defensive-coordinator-schumann-coach-florida-state",
+          "title": "Georgia defensive coordinator Glenn Schumann agrees to coach Florida State",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWVBxNgui1cBAp1CQK0CkjUglpcgW4xQZZbzmAyQr5_gsL11jtXLwPjNA_bNs"
+        },
+        {
+          "url": "https://247sports.com/college/florida-state/longformarticle/fsu-football-intel-glenn-schumann-introduction-high-school-recruiting-and-coordinator-hires-293339652/",
+          "title": "Intel: Schumann's FSU introduction, recruiting, and coordinators",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRa0Us6Xrvy0DQOBSC8JwA2O8i_AsrTIQIBF_hutmfhQxBvhopceEuDQ0SlKyQ"
+        },
+        {
+          "url": "https://www.dawgnation.com/football/around-the-dawghouse/travaris-robinson-andrew-thacker-both-make-strong-cases-georgia-dc-opening/LGTRO3S4L5ACXKWIOSOVY2TVGI/",
+          "title": "What to know about the two key internal candidates for Georgia DC opening",
+          "publisher": "DawgNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlVCSK5Z7RkfgKeMHSMDSIM3E9_i9y_c9ZU4TC3qP5xI0TuCl4yirdvCSppaE"
+        }
+      ]
+    },
+    {
+      "query": "bowling green vs indiana",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T23:00:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-no-23-indiana-vs-bowling-green-293361781/",
+        "https://www.indystar.com/story/sports/college/indiana/2026/11/27/indiana-basketball-game-tonight-vs-bowling-green-start-time-where-to-watch-btn/92958513007/",
+        "https://www.thedailyhoosier.com/iu-basketball-gameday-essentials-hoosiers-take-on-bowling-green-on-black-friday/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0ptF79gt4r9gPg58INOoGhJi67zg2rUpP44j2Y2hAUZyKCNTKd-TKQ15Tx8",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/indiana/longformarticle/scouting-report-preview-no-23-indiana-vs-bowling-green-293361781/",
+          "title": "Scouting report & preview: No. 23 Indiana vs. Bowling Green",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV0ptF79gt4r9gPg58INOoGhJi67zg2rUpP44j2Y2hAUZyKCNTKd-TKQ15Tx8"
+        },
+        {
+          "url": "https://www.indystar.com/story/sports/college/indiana/2026/11/27/indiana-basketball-game-tonight-vs-bowling-green-start-time-where-to-watch-btn/92958513007/",
+          "title": "Where to watch Indiana basketball vs Bowling Green tonight: Start time",
+          "publisher": "IndyStar",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTak0p3wKXnvpQ_CmJAkPuNh2r_N9Oq7zTwG0sjLJlJNxprVp9ssDLCTe5edCU"
+        },
+        {
+          "url": "https://www.thedailyhoosier.com/iu-basketball-gameday-essentials-hoosiers-take-on-bowling-green-on-black-friday/",
+          "title": "IU basketball gameday essentials: Hoosiers take on Bowling Green on Black Friday",
+          "publisher": "The Daily Hoosier",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTX5F6OzoIw3IMaLKtbPx4w3Ocil9otT7PCutNMdhI5g3z-n8cDzY3g-t-PRno"
+        }
+      ]
+    },
+    {
+      "query": "strait of hormuz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T23:00:00Z",
+      "related_news_urls": [
+        "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
+        "https://www.reuters.com/world/middle-east/irans-revolutionary-guards-say-two-oil-tankers-hit-sea-mines-near-omans-khasab-2026-11-26/",
+        "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaAHdcGXcEVJdYaTC0lNkFp5WpkOJy7kekUCATS9FSuPtZpjx9m8PdCy6cMg",
+      "image_credit": "Al Jazeera",
+      "news": [
+        {
+          "url": "https://www.aljazeera.com/news/liveblog/2026/11/27/iran-war-live-irans-araghchi-calls-deadly-kuwait-attack-suspicious",
+          "title": "Iran war live: IRGC says tanker hit in Hormuz, drone downed in southeast",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSDaAHdcGXcEVJdYaTC0lNkFp5WpkOJy7kekUCATS9FSuPtZpjx9m8PdCy6cMg"
+        },
+        {
+          "url": "https://www.reuters.com/world/middle-east/irans-revolutionary-guards-say-two-oil-tankers-hit-sea-mines-near-omans-khasab-2026-11-26/",
+          "title": "Iran's Revolutionary Guards say two oil tankers hit sea mines near Oman’s Khasab",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7TLvqDSQdJi7JzArGqC1rRIgGUv4M1X5kJZjgtPMV6_Os2sA0_obclSUOTMs"
+        },
+        {
+          "url": "https://abcnews.com/International/strait-hormuz-attacks-increased-highest-level-iran-war/story?id=138304456",
+          "title": "Strait of Hormuz attacks have increased to highest level since Iran war began",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTorAHmWNg8UCbaOdHi94jqx-0wZVrA-qR2R5IKXw1IFCfRFaOZZ4eOJVDrfJs"
+        }
+      ]
+    },
+    {
+      "query": "heat vs knicks",
       "approx_searches": "10000+",
-      "published_at": "2026-11-27T22:20:00Z",
+      "published_at": "2026-11-27T22:50:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/giannis-antetokounmpo-good-against-knicks-223259169.html",
+        "https://bleacherreport.com/liveblogs/25538160-miami-heat-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
+        "https://www.cbssports.com/betting/news/knicks-heat-prediction-odds-time-2026-nba-cup-picks-for-friday-november-27/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHg7zR2kcFmOWx8HQgT-C9RQAbedR8HliA79pHuKxTmPx0EeC981Bf_zfrh4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/giannis-antetokounmpo-good-against-knicks-223259169.html",
+          "title": "Giannis Antetokounmpo good to go against Knicks",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRHg7zR2kcFmOWx8HQgT-C9RQAbedR8HliA79pHuKxTmPx0EeC981Bf_zfrh4"
+        },
+        {
+          "url": "https://bleacherreport.com/liveblogs/25538160-miami-heat-vs-new-york-knicks-live-nba-updates-scores-and-highlights",
+          "title": "Miami Heat vs. New York Knicks Live NBA Updates, Scores and Highlights",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQVuI5vyk7EmHEE2pa-MAvWUV2NghKH_tUpKpikRAynIRq3EVUbeqekxFZnK2c"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/knicks-heat-prediction-odds-time-2026-nba-cup-picks-for-friday-november-27/",
+          "title": "Knicks vs. Heat prediction, odds, time: 2026 NBA Cup picks for Friday, Nov. 27 from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqLXuCWYWBxfgI4Tmnn01XUojblteUL4yEvv0bOBZ56fmiv3gOBKpU2FUhXCk"
+        }
+      ]
+    },
+    {
+      "query": "brock purdy",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-27T22:50:00Z",
       "related_news_urls": [
         "https://www.nfl.com/news/brock-purdy-ankle-out-49ers-seahawks-mac-jones-start",
-        "https://komonews.com/sports/sports-content/49ers-qb-brock-purdy-to-miss-sundays-game-against-seahawks-report",
-        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-injury-report-week-12-seahawks/1983372/"
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-injury-report-week-12-seahawks/1983372/",
+        "https://www.nytimes.com/athletic/7817451/2026/11/27/49ers-brock-purdy-seahawks-mac-jones/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF5dYlUP-XgZyR2omYexHicm2xIJ_i2YOfutLQlEZ-FauG4wsVe59YQs6qjRo",
       "image_credit": "NFL.com",
@@ -228,123 +271,88 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF5dYlUP-XgZyR2omYexHicm2xIJ_i2YOfutLQlEZ-FauG4wsVe59YQs6qjRo"
         },
         {
-          "url": "https://komonews.com/sports/sports-content/49ers-qb-brock-purdy-to-miss-sundays-game-against-seahawks-report",
-          "title": "49ers QB Brock Purdy to miss Sunday's game against Seahawks: Report",
-          "publisher": "KOMO",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSphX3xuHe7DV4krIqfbDVo18t4aM90U8gABdPF1_nls6xjLkgxSLznZR19t4"
-        },
-        {
           "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-injury-report-week-12-seahawks/1983372/",
           "title": "49ers QB Brock Purdy misses second consecutive practice with ankle injury",
           "publisher": "NBC Sports Bay Area & California",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpEgqAqok-lKSnStVpO0lcZRW2u2pXghX4JO1-cVRHLk4Mdh8-swkPpS3TGSc"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7817451/2026/11/27/49ers-brock-purdy-seahawks-mac-jones/",
+          "title": "49ers QB Brock Purdy in jeopardy of missing Seahawks game with ankle injury",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBYV6eN-0J3z1C_ipHdcAi0rfiIuSzFv_ti60WsUid4KXlehOmBaKBMO7NIXQ"
         }
       ]
     },
     {
-      "query": "chris boswell",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T22:20:00Z",
+      "query": "cody schrader",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T22:50:00Z",
       "related_news_urls": [
-        "https://www.dkpittsburghsports.com/team/steelers/feed/topic/112726-steelers-vs-broncos-score-news-coverage-nfl-football-dk",
-        "https://www.nfl.com/videos/steelers-increase-their-lead-with-chris-boswell-33-yard-fg",
-        "https://www.steelers.com/news/boswell-ties-steelers-all-time-scoring-record"
+        "https://www.denverbroncos.com/news/broncos-activate-rb-tyler-badie-from-ir-promote-rb-cody-schrader-to-active-roster-ahead-of-week-12-game-vs-steelers",
+        "https://denversports.com/nfl/denver-broncos/broncos-bring-back-badie",
+        "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/26/denver-broncos-news-saivion-jones-placed-on-injured-reserve/92973384007/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtp-W4me6uFmqqHF-frOqfTzta2GzcFx1RAwN8y68pM5bYdhGMdQXY0mUmJLE",
-      "image_credit": "DK Pittsburgh Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMg4ku0uHmtRlWgd9GdiMXBQ0pk9IXvLex1w83cpGw-sTSdffwfeVpuef9FU",
+      "image_credit": "Denver Broncos",
       "news": [
         {
-          "url": "https://www.dkpittsburghsports.com/team/steelers/feed/topic/112726-steelers-vs-broncos-score-news-coverage-nfl-football-dk",
-          "title": "LIVE: Steelers 27, Broncos 5, fourth quarter",
-          "publisher": "DK Pittsburgh Sports",
+          "url": "https://www.denverbroncos.com/news/broncos-activate-rb-tyler-badie-from-ir-promote-rb-cody-schrader-to-active-roster-ahead-of-week-12-game-vs-steelers",
+          "title": "Broncos activate RB Tyler Badie from IR, promote RB Cody Schrader to active roster ahead of Week 12 game vs. Steelers",
+          "publisher": "Denver Broncos",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtp-W4me6uFmqqHF-frOqfTzta2GzcFx1RAwN8y68pM5bYdhGMdQXY0mUmJLE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMg4ku0uHmtRlWgd9GdiMXBQ0pk9IXvLex1w83cpGw-sTSdffwfeVpuef9FU"
         },
         {
-          "url": "https://www.nfl.com/videos/steelers-increase-their-lead-with-chris-boswell-33-yard-fg",
-          "title": "Steelers increase their lead with Chris Boswell 33-yard FG",
-          "publisher": "NFL.com",
+          "url": "https://denversports.com/nfl/denver-broncos/broncos-bring-back-badie",
+          "title": "Broncos bring Badie back from injured reserve in flurry of Thanksgiving roster moves – Denver Sports",
+          "publisher": "Denver Sports 104.3 The Fan",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ1AGboErZde5f2eNcllj6c4Re3WL2jXc1BVi91kWdh9dVLY82FPouYePQqQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQA2gAUlIFOQ-f0W5mo9ooIJZ11sKNWk2ZdJLhy3DtjOA8vM0eVoWYM_OzccM"
         },
         {
-          "url": "https://www.steelers.com/news/boswell-ties-steelers-all-time-scoring-record",
-          "title": "Boswell ties Steelers all-time scoring record",
-          "publisher": "Steelers.com",
+          "url": "https://broncoswire.usatoday.com/story/sports/nfl/broncos/2026/11/26/denver-broncos-news-saivion-jones-placed-on-injured-reserve/92973384007/",
+          "title": "Broncos place DL on injured reserve, promote RB to 53-man roster",
+          "publisher": "Broncos Wire",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtNCsmO3txLPwvtgJppsoaHeeoVX618Au7DZAYOIXxY753fs-OUOdjfgWYEac"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjtNdYK-mSH43TVJ3rUaW7SEaSZTi1MP0Nvs70MBbFI9EUwPOY37Cn8E9JeLk"
         }
       ]
     },
     {
-      "query": "stephen nedoroscik",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T22:20:00Z",
+      "query": "nhl standings",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-27T22:50:00Z",
       "related_news_urls": [
-        "https://www.eonline.com/news/1438439/stephen-nedoroscik-debuts-relationship-after-tess-mccracken-breakup",
-        "https://www.yahoo.com/entertainment/celebrity/articles/dwts-alum-stephen-nedoroscik-hints-183157753.html",
-        "https://people.com/olympian-stephen-nedoroscik-hard-launches-new-romance-10-months-after-tess-mccracken-breakup-12283325"
+        "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
+        "https://www.nytimes.com/athletic/7811059/2026/11/27/nhl-playoffs-trade-deadline-thanksgiving/",
+        "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TeX6boIzlAl-ZKgElQDkO2Q_uZW_eyzUpTYn5iUZgZrHR5IuceMxhOaC4K0",
-      "image_credit": "E! News",
-      "news": [
-        {
-          "url": "https://www.eonline.com/news/1438439/stephen-nedoroscik-debuts-relationship-after-tess-mccracken-breakup",
-          "title": "Olympian Stephen Nedoroscik Hard Launches New Romance 10 Months After Tess McCracken Breakup",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TeX6boIzlAl-ZKgElQDkO2Q_uZW_eyzUpTYn5iUZgZrHR5IuceMxhOaC4K0"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dwts-alum-stephen-nedoroscik-hints-183157753.html",
-          "title": "DWTS Alum Stephen Nedoroscik Hints at New Flame After 10-Year Split",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIZTYE3-1ARMkf_i_pDIBvvQEB1vY9DMRYQe3zWBoT0w9iqDk72s0__Vfslsg"
-        },
-        {
-          "url": "https://people.com/olympian-stephen-nedoroscik-hard-launches-new-romance-10-months-after-tess-mccracken-breakup-12283325",
-          "title": "Stephen Nedoroscik Hard Launches New Romance 10 Months After Split from Girlfriend of Nearly 10 Years",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-SdijsASZF_KdTNnCd54VX-L_nRbwhVNnPSi3Z586gsOlE62QDUWrBWlwVM"
-        }
-      ]
-    },
-    {
-      "query": "levante ud vs racing santander standings",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T22:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
-        "https://www.marca.com/en/soccer/laliga-ea-sports/levante-racing-santander/2026/11/27/01_0101_20261127_855_189-live.html",
-        "https://cwibc.co.id/en/levante-faces-racing-santander-valencia"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzV4kG04tqFlfTEFaHVx3Tf5EZlYgY088cLHYnVePgKGwpe3ufkTU-xOLuYKA",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
-          "title": "Levante vs. Racing Santander - Game Highlights",
+          "url": "https://www.espn.com/nhl/story/_/id/50587368/nhl-2026-27-playoffs-standings-all-32-thanksgiving-panic-index-rankings-tiers",
+          "title": "NHL Thanksgiving Panic Index: Which teams should be most worried?",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzV4kG04tqFlfTEFaHVx3Tf5EZlYgY088cLHYnVePgKGwpe3ufkTU-xOLuYKA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNLasw04zup55o3_X_zdod8coAAuvSjEoWcspLXwKujG2IACFY6HX_OKdyN5s"
         },
         {
-          "url": "https://www.marca.com/en/soccer/laliga-ea-sports/levante-racing-santander/2026/11/27/01_0101_20261127_855_189-live.html",
-          "title": "Levante - Racing Santander LIVE. LALIGA EA Sports latest updates",
-          "publisher": "MARCA",
+          "url": "https://www.nytimes.com/athletic/7811059/2026/11/27/nhl-playoffs-trade-deadline-thanksgiving/",
+          "title": "NHL playoff tiers, buyers and sellers: Where each team stands at U.S. Thanksgiving",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-7e4ONuwuLeScbPSkzdc-iXh8UQJKEuJxMQaEX3FlNpisH2eg77JE0_rrQBI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQL7SYy-5-XgmQI0Si6Hu0E6gd1Ilbwo2Eij5FtygMd13j_ShqLlCZk3SY1FMk"
         },
         {
-          "url": "https://cwibc.co.id/en/levante-faces-racing-santander-valencia",
-          "title": "Levante Faces Racing Santander With Defensive Injuries in Valencia",
-          "publisher": "cwibc.co.id",
+          "url": "https://bleacherreport.com/articles/25536708-nhl-power-rankings-every-team-thanksgiving-2026",
+          "title": "NHL Power Rankings for Every Team at Thanksgiving 2026",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlLNu-50lvU09QPfGhPvxC5U65k-RJFgmT6rK8wNYNprf3Z3rzyDbpYNdzc9w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQSTmz-gWbPgkBYypp_5vcM0U3EpNkljvIsfLFq6zS9UD83ijeTjugIOY7zNWQ"
         }
       ]
     }
