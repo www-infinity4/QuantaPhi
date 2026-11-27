@@ -3,17 +3,227 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T16:01:26.393213Z",
+  "checked_at": "2026-11-27T16:30:59.572344Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "gta vi pc port",
+      "query": "toledo vs ohio",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T16:10:00Z",
+      "related_news_urls": [
+        "https://www.toledoblade.com/sports/ut/2026/11/25/2026-week-12-scouting-report-football-ohio/stories/20261125025",
+        "https://sports.yahoo.com/betting/articles/toledo-vs-ohio-prediction-pick-112040844.html",
+        "https://www.bythebelt.com/toledo-rockets-at-ohio-bobcats-mac-football-game-preview-how-to-watch-stream-listen-odds-2026/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw1KpmeAsjmxCAuxHAFON6Ay2DYVnSQfB24iSyJcmXIOaqVkh5R0HCF4iWEIk",
+      "image_credit": "Toledo Blade",
+      "news": [
+        {
+          "url": "https://www.toledoblade.com/sports/ut/2026/11/25/2026-week-12-scouting-report-football-ohio/stories/20261125025",
+          "title": "2026 Week 12 scouting report: Toledo football at Ohio",
+          "publisher": "Toledo Blade",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw1KpmeAsjmxCAuxHAFON6Ay2DYVnSQfB24iSyJcmXIOaqVkh5R0HCF4iWEIk"
+        },
+        {
+          "url": "https://sports.yahoo.com/betting/articles/toledo-vs-ohio-prediction-pick-112040844.html",
+          "title": "Toledo vs Ohio Prediction, Pick, College Football Odds for Friday, Nov. 27",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEjCJWGw0GXh6pxBkrDkWDLuyg_BgCjGTvmRTzBhfBa8gOVNno1hyzAy8FJbo"
+        },
+        {
+          "url": "https://www.bythebelt.com/toledo-rockets-at-ohio-bobcats-mac-football-game-preview-how-to-watch-stream-listen-odds-2026/",
+          "title": "2026 MAC Football Week 13 Game Preview: Toledo Rockets at Ohio Bobcats",
+          "publisher": "www.bythebelt.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMJyygwFfKk1s6ynRgVqu241eSXWWqTn1c2gW6KW-8ek5Nblk2BMa1dYKh7a8"
+        }
+      ]
+    },
+    {
+      "query": "ms state vs ole miss",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-27T16:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/watch-mississippi-state-vs-ole-160000150.html",
+        "https://www.cbssports.com/betting/news/ole-miss-mississippi-state-prediction-odds-timer-2026-egg-bowl-college-football-picks-bets/",
+        "https://247sports.com/college/mississippi-state/article/bulldog-football-jeff-lebby-battle-for-the-golden-egg-mississippi-state-293365081/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlntorZU7QWkUfp-jt-xoa26GXQwkew-26uAufBDhUhsIzlZsEcWz2P5koiIo",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/watch-mississippi-state-vs-ole-160000150.html",
+          "title": "How to watch Mississippi State vs Ole Miss: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlntorZU7QWkUfp-jt-xoa26GXQwkew-26uAufBDhUhsIzlZsEcWz2P5koiIo"
+        },
+        {
+          "url": "https://www.cbssports.com/betting/news/ole-miss-mississippi-state-prediction-odds-timer-2026-egg-bowl-college-football-picks-bets/",
+          "title": "Ole Miss vs. Mississippi State prediction, odds: 2026 Egg Bowl picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgePPbOufgjdMa43TcWTzUobtNoUQ8rpBUjsKRhVTZ_6xrF28F9HDjXD-XLVk"
+        },
+        {
+          "url": "https://247sports.com/college/mississippi-state/article/bulldog-football-jeff-lebby-battle-for-the-golden-egg-mississippi-state-293365081/",
+          "title": "Bulldog Game Day: Mississippi State regular season ends in Oxford with Golden Egg the goal",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnFvf37ynJyucyVGUER9HYKpE_WSrwx8d6U0mxryhO4H78Vc_RQaKETaaqOJI"
+        }
+      ]
+    },
+    {
+      "query": "tulsa vs utsa",
       "approx_searches": "1000+",
+      "published_at": "2026-11-27T16:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/tulsa-vs-utsa-prediction-pick-112519805.html",
+        "https://tulsaworld.com/sports/college/tu/article_e674d8e7-10d3-41da-abd4-fd9958059eb4.html",
+        "https://kayosports.com.au/en-AU/competitor/Competitor:d0yl1lqtwip7pcxavqc9a4xz5/ArticleId:dvynyoqwcwgzgx36jmmu8nk5g"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bdFXIDBqDL-dryhupY0EDY8DbdbIwd_m8snldFyY1pa1s4-E3Hu5LWZddP8",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/tulsa-vs-utsa-prediction-pick-112519805.html",
+          "title": "Tulsa vs UTSA Prediction, Pick, NCAAF Odds for Friday, Nov. 27",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4bdFXIDBqDL-dryhupY0EDY8DbdbIwd_m8snldFyY1pa1s4-E3Hu5LWZddP8"
+        },
+        {
+          "url": "https://tulsaworld.com/sports/college/tu/article_e674d8e7-10d3-41da-abd4-fd9958059eb4.html",
+          "title": "Tulsa at UTSA: Hot Hurricane tests UTSA's homefield advantage",
+          "publisher": "Tulsa World",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0sZQ0-JW1629S6gsJCErWY4tp2tB9bxzD1Hz-c6rL56bLoM8NEaAnJKZ2i_M"
+        },
+        {
+          "url": "https://kayosports.com.au/en-AU/competitor/Competitor:d0yl1lqtwip7pcxavqc9a4xz5/ArticleId:dvynyoqwcwgzgx36jmmu8nk5g",
+          "title": "Watch Tulsa Live",
+          "publisher": "Kayo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9MOfFT36QZD9Oriow5OVomtHpNNsC5w9V4UWhlNic0_kJ3AWppiJ51sJ-tTw"
+        }
+      ]
+    },
+    {
+      "query": "virginia vs xavier",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T16:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mens-college-basketball/articles/no-2-virginia-vs-xavier-113000625.html",
+        "https://www.cincinnati.com/story/sports/college/xavier/2026/11/26/xavier-musketeers-virginia-cavaliers-atlantis-basketball-predictions/92960481007/",
+        "https://www.foxsports.com/articles/cbk/xavier-musketeers-and-the-no-2-virginia-cavaliers-square-off-in-nassau-bahamas"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0INWOZAGQrExttiNK32-ERcH3CVdrfOcTW3RDCkxQuLD9uS3CupIUcZBSBd4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/no-2-virginia-vs-xavier-113000625.html",
+          "title": "No. 2 Virginia vs Xavier: Game Preview and Final Score Prediction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0INWOZAGQrExttiNK32-ERcH3CVdrfOcTW3RDCkxQuLD9uS3CupIUcZBSBd4"
+        },
+        {
+          "url": "https://www.cincinnati.com/story/sports/college/xavier/2026/11/26/xavier-musketeers-virginia-cavaliers-atlantis-basketball-predictions/92960481007/",
+          "title": "Bold predictions for Xavier vs. No. 2 Virginia in Battle 4 Atlantis",
+          "publisher": "Cincinnati Enquirer",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS8rZelj1UUB_ywJj73mEMdZ5rEA2BtE8ah-9IoMWpvSuL4dS_OnyEUvwD-3Gc"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/xavier-musketeers-and-the-no-2-virginia-cavaliers-square-off-in-nassau-bahamas",
+          "title": "Xavier Musketeers and the No. 2 Virginia Cavaliers square off in Nassau, Bahamas",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        }
+      ]
+    },
+    {
+      "query": "tear gas",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T16:00:00Z",
+      "related_news_urls": [
+        "https://www.theguardian.com/global-development/2026/nov/27/thousands-of-girls-and-women-report-bleeding-and-miscarriages-after-french-police-use-of-teargas",
+        "https://www.bdtonline.com/sports/pro_sports/france-tear-gas-what-to-know/image_ad783734-80e9-58c8-ac90-201817dbb70c.html",
+        "https://newscord.org/article/french-police-fired-22000-tear-gas-grenades-women-report-heavy-bleeding-and-misc--Story_20261127_c0e1625d"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZMEboufp-F8c5YOmAw61SMY8qAA3VQRH7X8mJB6yF26at4aoBQLQlCPURZQ",
+      "image_credit": "The Guardian",
+      "news": [
+        {
+          "url": "https://www.theguardian.com/global-development/2026/nov/27/thousands-of-girls-and-women-report-bleeding-and-miscarriages-after-french-police-use-of-teargas",
+          "title": "Thousands of girls and women report bleeding and miscarriages after French police use of teargas",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRHZMEboufp-F8c5YOmAw61SMY8qAA3VQRH7X8mJB6yF26at4aoBQLQlCPURZQ"
+        },
+        {
+          "url": "https://www.bdtonline.com/sports/pro_sports/france-tear-gas-what-to-know/image_ad783734-80e9-58c8-ac90-201817dbb70c.html",
+          "title": "France Tear Gas What to Know",
+          "publisher": "Bluefield Daily Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh7AyLbzHKYLSz5FePqc8F9xUHHn7bj7MeqPOFiT_bzQoTI5TFgvL1WJLubZM"
+        },
+        {
+          "url": "https://newscord.org/article/french-police-fired-22000-tear-gas-grenades-women-report-heavy-bleeding-and-misc--Story_20261127_c0e1625d",
+          "title": "French Police Fired 22,000 Tear Gas Grenades; Women Report Heavy Bleeding and Miscarriages: 5 outlets compared",
+          "publisher": "NewsCord",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTw2pu9im9yay1eL9Zep8TeVQdHb1d6df8WuAvtn4HI20HwMS6Fy7dQZ3z0Dao"
+        }
+      ]
+    },
+    {
+      "query": "cfb games today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T16:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/college-football-games-today-time-110502787.html",
+        "https://www.rotowire.com/cfootball/article/college-football-dfs-week-13-friday-slate-picks-and-strategy-for-draftkings-and-fanduel-148365",
+        "https://www.bettingnews.com/articles/ncaaf/ncaa-football-expert-picks-predictions-2026-11-27/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnbSArHXQ_oD8C5Y6xPQPEurUwjm-efAuPRMnepYJI87qH-MihvtnoQVA0Uw",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/college-football-games-today-time-110502787.html",
+          "title": "Are college football games on today? Time, TV, streaming for Black Friday schedule",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpnbSArHXQ_oD8C5Y6xPQPEurUwjm-efAuPRMnepYJI87qH-MihvtnoQVA0Uw"
+        },
+        {
+          "url": "https://www.rotowire.com/cfootball/article/college-football-dfs-week-13-friday-slate-picks-and-strategy-for-draftkings-and-fanduel-148365",
+          "title": "Week 13 CFB Friday DFS Picks: DraftKings & FanDuel Plays",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0YEYrDXj1xsrvbR7xtoolJ8gnnWDudhv5bS4u_HFwilLrUySSIkuMkZhiZ70"
+        },
+        {
+          "url": "https://www.bettingnews.com/articles/ncaaf/ncaa-football-expert-picks-predictions-2026-11-27/",
+          "title": "NCAA Football Expert Picks and Predictions (11/27)",
+          "publisher": "Betting News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRmvaw8oqbGe0XPa1eOL4kr0ST3qKK6qJOqAuZw7yb4oMaOOLhLNt4XNx-GXsI"
+        }
+      ]
+    },
+    {
+      "query": "gta vi pc port",
+      "approx_searches": "2000+",
       "published_at": "2026-11-27T15:40:00Z",
       "related_news_urls": [
         "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
-        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-        "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges"
+        "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges",
+        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw",
       "image_credit": "Mashable",
@@ -26,18 +236,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
         },
         {
-          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
-        },
-        {
           "url": "https://www.techpowerup.com/355251/gta-6-fan-ports-climb-to-20-fps-on-pc-still-rough-around-the-edges",
           "title": "GTA 6 Fan Ports Climb to 20 FPS on PC, Still Rough Around the Edges",
           "publisher": "TechPowerUp",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRuRToii54l7Deix7HDKynpvjgurf_8sQRXn5aR91fQJXc_pJ2TXblsi02t_fw"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
         }
       ]
     },
@@ -46,39 +256,66 @@
       "approx_searches": "10000+",
       "published_at": "2026-11-27T15:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nfl/articles/parker-washington-sunday-shoulder-injury-153935148.html",
-        "https://www.news4jax.com/sports/2026/11/27/jaguars-wr-parker-washington-out-for-titans-game-with-shoulder-injury-coen-says-hes-week-to-week/",
-        "https://www.si.com/nfl/jaguars/onsi/parker-washington-lands-on-jacksonville-injury-report-leaving-them-potentially-slim-options"
+        "https://www.espn.com/nfl/story/_/id/50612050/jaguars-wr-parker-washington-shoulder-week-week",
+        "https://sports.yahoo.com/nfl/articles/jaguars-announce-bad-parker-washington-154621334.html",
+        "https://www.cbssports.com/fantasy/football/news/jaguars-parker-washington-out-vs-titans-considered-week-to-week/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwIqVkGQFGdMbQI2QwFt7sKNmznisVAR3D8AFJ8vgDoaVR92PeyXQwGFnLV7U",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz0-HksI6LVKvzsAPpO8x6eZ2hvV5Ec3-L3Pu_b3sb8n47C79mcAZW9QHFRyg",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nfl/articles/parker-washington-sunday-shoulder-injury-153935148.html",
-          "title": "Parker Washington out on Sunday with a shoulder injury",
+          "url": "https://www.espn.com/nfl/story/_/id/50612050/jaguars-wr-parker-washington-shoulder-week-week",
+          "title": "Jaguars WR Parker Washington (shoulder) is 'week-to-week'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTz0-HksI6LVKvzsAPpO8x6eZ2hvV5Ec3-L3Pu_b3sb8n47C79mcAZW9QHFRyg"
+        },
+        {
+          "url": "https://sports.yahoo.com/nfl/articles/jaguars-announce-bad-parker-washington-154621334.html",
+          "title": "Jaguars announce bad Parker Washington news amid new week-to-week injury",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwIqVkGQFGdMbQI2QwFt7sKNmznisVAR3D8AFJ8vgDoaVR92PeyXQwGFnLV7U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPvMpCXQaAEobKKVIRcrhQV5VKadhwmTlJn-KyF3I9a-3WXMsrfpDJQX2hb8U"
         },
         {
-          "url": "https://www.news4jax.com/sports/2026/11/27/jaguars-wr-parker-washington-out-for-titans-game-with-shoulder-injury-coen-says-hes-week-to-week/",
-          "title": "Jaguars WR Parker Washington out for Titans game with shoulder injury; Coen says he’s week to week",
-          "publisher": "News4JAX",
+          "url": "https://www.cbssports.com/fantasy/football/news/jaguars-parker-washington-out-vs-titans-considered-week-to-week/",
+          "title": "Jaguars' Parker Washington: Out vs. Titans, considered week-to-week",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzGxXnRIBg2cxPZpzUCPEsckmDsLsnMpmqgBwiRtywYfItzAWl6qa4U-_ZZJA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS34LTh5Ksa6DFZxq5xdCqYZ_uPLWfFvJVVU7HvLvdGo0xRQnj6I_qAogiKhHg"
+        }
+      ]
+    },
+    {
+      "query": "konstantin lifschitz",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T15:30:00Z",
+      "related_news_urls": [
+        "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html",
+        "https://www.pizzicato.lu/pianist-konstantin-lifschitz-im-alter-von-49-jahren-verstorben/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY",
+      "image_credit": "BR Klassik",
+      "news": [
+        {
+          "url": "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html",
+          "title": "Konstantin Lifschitz mit 49 gestorben: Angesehener Pianist und beliebter Lehrer",
+          "publisher": "BR Klassik",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY"
         },
         {
-          "url": "https://www.si.com/nfl/jaguars/onsi/parker-washington-lands-on-jacksonville-injury-report-leaving-them-potentially-slim-options",
-          "title": "Parker Washington Lands on Jaguars Injury Report, Leaving Them Potentially Slim Options",
-          "publisher": "Sports Illustrated",
+          "url": "https://www.pizzicato.lu/pianist-konstantin-lifschitz-im-alter-von-49-jahren-verstorben/",
+          "title": "Pianist Konstantin Lifschitz im Alter von 49 Jahren verstorben",
+          "publisher": "pizzicato.lu",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaP87aJcEsMeNrpGyKiyZmbgIa4sWmhteRL3DA2elHI6l4eRmfrtM6BgaoW_8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCxhO1vWHjHIbDzP4V0GsRYSsHLrmuDoxQC_lmZxZN0g3gCurGHRa8ImPxY0I"
         }
       ]
     },
     {
       "query": "canelo álvarez",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-27T15:30:00Z",
       "related_news_urls": [
         "https://www.infobae.com/mexico/deportes/2026/11/27/dmitry-bivol-exhibe-a-canelo-alvarez-no-ha-recibido-oferta-para-la-revancha/",
@@ -108,235 +345,6 @@
           "publisher": "Los Angeles Times",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtlvvqFQQRyo1iPNny5oVd8hXSjfRfZk1QwClF1XtssU53SrtVWhCCMwoXmBQ"
-        }
-      ]
-    },
-    {
-      "query": "konstantin lifschitz",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T15:30:00Z",
-      "related_news_urls": [
-        "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY",
-      "image_credit": "BR Klassik",
-      "news": [
-        {
-          "url": "https://www.br-klassik.de/aktuell/news-kritik/pianist-konstantin-lifschitz-gestorben-luzern-100.html",
-          "title": "Konstantin Lifschitz mit 49 gestorben: Angesehener Pianist und beliebter Lehrer",
-          "publisher": "BR Klassik",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQge_H8JGorpjcG18JIh4QQg0ikMhl-VRMIAku3ZyX_VDO8vglFKnHb9EbTXY"
-        }
-      ]
-    },
-    {
-      "query": "nicole scherzinger",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T15:30:00Z",
-      "related_news_urls": [
-        "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
-        "https://www.tmz.com/2026/11/27/nicole-scherzinger-and-thom-evans-split/",
-        "https://www.thedailybeast.com/nicole-scherzinger-dumps-her-fiance-thom-evans-after-7-years"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
-          "title": "Nicole Scherzinger and Fiancé Thom Evans End Engagement After 7 Years Together",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/27/nicole-scherzinger-and-thom-evans-split/",
-          "title": "Nicole Scherzinger Calls Off Engagement to Fiancé After Seven-Year Relationship",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRSpdWPhqzuUUobKy2NDJ4bomCblqKPJCVaOQE8-BXgdZ5der0ctd5ijZ6Wk3E"
-        },
-        {
-          "url": "https://www.thedailybeast.com/nicole-scherzinger-dumps-her-fiance-thom-evans-after-7-years",
-          "title": "Nicole Scherzinger Dumps Her Rugby Star Fiancé After 7 Years",
-          "publisher": "The Daily Beast",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRk8jECpv1sYhFqI0MR1u2ddVBcnMoUZXnsUrrfdSq2QHzxM6NdMRn7DYc37E"
-        }
-      ]
-    },
-    {
-      "query": "sea of sorrow",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T15:20:00Z",
-      "related_news_urls": [
-        "https://www.teamcherry.com.au/blog/cherrytimeannounce",
-        "https://80.lv/articles/creators-of-the-hollow-knight-series-will-host-a-livestream-showcase",
-        "https://www.theverge.com/news/1044004/hollow-knight-silksong-sea-of-sorrow-release-date"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo",
-      "image_credit": "Team Cherry",
-      "news": [
-        {
-          "url": "https://www.teamcherry.com.au/blog/cherrytimeannounce",
-          "title": "Join us in 48 hours for Cherry Time!",
-          "publisher": "Team Cherry",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTOs_ZLQ_wdrUsybd5Cmba0T3vEtwKKNpdDOus1AvDUiVRcdvRW0MdVCbeHTHo"
-        },
-        {
-          "url": "https://80.lv/articles/creators-of-the-hollow-knight-series-will-host-a-livestream-showcase",
-          "title": "Creators of the Hollow Knight Series Will Host a Livestream Showcase",
-          "publisher": "80 Level",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTmq7H6rzDxEtHLby4wmpD_PdjVdKCAwb_DIpAMYTCu49rkBj6beIg_RO8XS-k"
-        },
-        {
-          "url": "https://www.theverge.com/news/1044004/hollow-knight-silksong-sea-of-sorrow-release-date",
-          "title": "Silksong’s free expansion arrives next month.",
-          "publisher": "The Verge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQjZhTZG6VoqTimjeK9fPJZ4ULL1FNzrQKzL0jBSTDLGuxiRBbHv7ETsCiETs0"
-        }
-      ]
-    },
-    {
-      "query": "nasdaq composite",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T15:10:00Z",
-      "related_news_urls": [
-        "https://www.moomoo.com/news/post/1005539376/us-stocks-surge-6-5-as-crypto-markets-shed-1",
-        "https://kalkinemedia.com/news/cryptocurrency/crypto-news-why-is-gold-rallying-while-bitcoin-btc-sees-little-change",
-        "https://www.fxstreet.com/analysis/five-reasons-stocks-soared-while-bitcoin-and-gold-slid-202611240854"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpzaZToh58zQiZhBR5QDYCY7PENsxdYm8VCbWrJ53Yt-YWO4FtnStXEB7WTn4",
-      "image_credit": "Moomoo",
-      "news": [
-        {
-          "url": "https://www.moomoo.com/news/post/1005539376/us-stocks-surge-6-5-as-crypto-markets-shed-1",
-          "title": "U.S. stocks surge 6.5% as crypto markets shed $1.8 billion; why is BTC absent from the rebound?",
-          "publisher": "Moomoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTpzaZToh58zQiZhBR5QDYCY7PENsxdYm8VCbWrJ53Yt-YWO4FtnStXEB7WTn4"
-        },
-        {
-          "url": "https://kalkinemedia.com/news/cryptocurrency/crypto-news-why-is-gold-rallying-while-bitcoin-btc-sees-little-change",
-          "title": "Crypto News: Why Is Gold Rallying While Bitcoin (BTC) Sees Little Change?",
-          "publisher": "Kalkine Media",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_4GWkKd0ZC-kvZWzTINebPmkl49fIK7EjMtWSPbqUNwEVpwT1AXGSFkcKtfw"
-        },
-        {
-          "url": "https://www.fxstreet.com/analysis/five-reasons-stocks-soared-while-bitcoin-and-gold-slid-202611240854",
-          "title": "Five reasons stocks soared while Bitcoin and Gold slid",
-          "publisher": "FXStreet",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLeFRPobjGY3VUCwuwTp9MnsaxL2WHyPc-rua1zeHFe7grQJVOWWdGf8qWMvA"
-        }
-      ]
-    },
-    {
-      "query": "matt damon family home life",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T15:00:00Z",
-      "related_news_urls": [
-        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-        "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
-        "https://globalnews.ca/video/12162768/bourne-to-shine-matt-damon-on-fandom-fatherhood-and-maybe-winning-an-oscar-for-the-odyssey/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
-        },
-        {
-          "url": "https://ew.com/matt-damon-difficulty-returning-home-family-after-the-odyssey-isolation-12279732",
-          "title": "Matt Damon says it was ‘difficult’ returning home to his family after ‘The Odyssey’ isolation",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQeLEblOsF0dC-FB62TH_gUXTz7RzoK1dq8Xuie0qPDJnwuERdaA14O_0V88SM"
-        },
-        {
-          "url": "https://globalnews.ca/video/12162768/bourne-to-shine-matt-damon-on-fandom-fatherhood-and-maybe-winning-an-oscar-for-the-odyssey/",
-          "title": "Bourne to shine: Matt Damon on fandom, fatherhood, and (maybe) winning an Oscar for The Odyssey",
-          "publisher": "Global News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTdVzuLybd_7dFuPIKR5_89WTr71YfnFrmvudacpcuJR6z-YyxFczFvJyx1jWM"
-        }
-      ]
-    },
-    {
-      "query": "lawson lovering",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T15:00:00Z",
-      "related_news_urls": [
-        "https://www.hoopsrumors.com/2026/11/grizzlies-sign-lawson-lovering-to-10-day-hardship-deal.html",
-        "https://dailymemphian.com/section/sportsmemphis-grizzlies/article/68950/memphis-grizzlies-sign-center-with-hardship-exception",
-        "https://basketnews.com/news-260329-former-lakers-7-footer-lands-new-nba-deal.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfHmgBB5gkYjQtTPbU3MN9Z2ZOZrtMPOf_50G8wmk06-aDt3MSTNNv9BTSZg0",
-      "image_credit": "Hoops Rumors",
-      "news": [
-        {
-          "url": "https://www.hoopsrumors.com/2026/11/grizzlies-sign-lawson-lovering-to-10-day-hardship-deal.html",
-          "title": "Grizzlies Sign Lawson Lovering To 10-Day Hardship Deal",
-          "publisher": "Hoops Rumors",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfHmgBB5gkYjQtTPbU3MN9Z2ZOZrtMPOf_50G8wmk06-aDt3MSTNNv9BTSZg0"
-        },
-        {
-          "url": "https://dailymemphian.com/section/sportsmemphis-grizzlies/article/68950/memphis-grizzlies-sign-center-with-hardship-exception",
-          "title": "Grizzlies sign center with hardship exception",
-          "publisher": "Daily Memphian",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJ79urj6_HIlBZX2KM3MZBcVDbktQzwupmUW0uI9WGifR9WtiTeNC0R7kt_pk"
-        },
-        {
-          "url": "https://basketnews.com/news-260329-former-lakers-7-footer-lands-new-nba-deal.html",
-          "title": "Former Lakers 7-footer lands new NBA deal",
-          "publisher": "BasketNews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkdVKYT60g_Zb7pdjjYfK4P47nNEJC0LXJjOOGDv6xDHPLod5DIQoB0AO5wKk"
-        }
-      ]
-    },
-    {
-      "query": "mstr stock",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T15:00:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/why-strategy-rebound-175-2027-174554314.html",
-        "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
-        "https://www.investors.com/news/mstr-stock-worth-5-billion-less-than-bitcoin-value-liquidity-squeeze-gld-ibit/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApa9snMAIMoLGN1PfSgQLIyHLNTrxPvCNiy7ogumT-YyBdg0eKkPqB0OlKn0",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/why-strategy-rebound-175-2027-174554314.html",
-          "title": "Why Strategy Can Rebound to $175 in 2027 Even If Bitcoin Stays Below Peak",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApa9snMAIMoLGN1PfSgQLIyHLNTrxPvCNiy7ogumT-YyBdg0eKkPqB0OlKn0"
-        },
-        {
-          "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
-          "title": "JPMorgan says bitcoin 'capitulation' signaled by Strategy's record-low NAV multiple",
-          "publisher": "The Block",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNwLi78NiNRzyGavL6wAjQjfIF8Toty94Pq8onTi1GA6Z_B68h-xFjsN6-YUU"
-        },
-        {
-          "url": "https://www.investors.com/news/mstr-stock-worth-5-billion-less-than-bitcoin-value-liquidity-squeeze-gld-ibit/",
-          "title": "Strategy Is Worth $4 Billion Less Than Its Bitcoin Amid Liquidity Squeeze",
-          "publisher": "Investor's Business Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5wX1d6HrNfCF4G7hp-eYv7dDzy1spVkjwoEA0a7FrijYiLCR3g7AxFd5AD4E"
         }
       ]
     }
