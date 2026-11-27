@@ -3,28 +3,266 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T12:34:36.059695Z",
+  "checked_at": "2026-11-27T13:01:21.960091Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "knox family death",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T12:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcnews.com/news/us-news/mississippi-plane-crash-victims-members-prominent-florida-family-rcna611318",
+        "https://www.gulfcoastnewsnow.com/article/remains-found-plane-crash-new-orleans-fort-myers-horn-island/74529786",
+        "https://nypost.com/2026/11/26/us-news/air-traffic-controller-gave-pilot-dad-chilling-warning-before-plane-crash-killed-6-family-members/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTclNRkLFeMg7D5zcGxY11oogGNIlYmdPOYE0ihMr0VhReEOtKMuTQJJCe65g",
+      "image_credit": "NBC News",
+      "news": [
+        {
+          "url": "https://www.nbcnews.com/news/us-news/mississippi-plane-crash-victims-members-prominent-florida-family-rcna611318",
+          "title": "Mississippi plane crash victims were members of a Florida family returning from a fishing trip",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQTclNRkLFeMg7D5zcGxY11oogGNIlYmdPOYE0ihMr0VhReEOtKMuTQJJCe65g"
+        },
+        {
+          "url": "https://www.gulfcoastnewsnow.com/article/remains-found-plane-crash-new-orleans-fort-myers-horn-island/74529786",
+          "title": "Remains of 6 people found after plane crashes en route to Fort Myers",
+          "publisher": "Gulf Coast News and Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2t9FQnYACQM4WKXK-9V4LQNFQPWBzU8D3Ub79kfj9oqJOLwkFZ03xsnRGVWQ"
+        },
+        {
+          "url": "https://nypost.com/2026/11/26/us-news/air-traffic-controller-gave-pilot-dad-chilling-warning-before-plane-crash-killed-6-family-members/",
+          "title": "Air traffic controller gave pilot dad chilling warning before plane crash killed 6 family members",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbaaFIbgEIIE4DAYJDNWdFNnzdB8RP2FKLH_ER6C_lIUJrsI5wUVBQYokHoNU"
+        }
+      ]
+    },
+    {
+      "query": "le creuset black friday",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T12:40:00Z",
+      "related_news_urls": [
+        "https://www.al.com/shopping/2026/11/le-creusets-gorgeous-christmas-dutch-oven-is-on-sale-for-black-friday.html",
+        "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
+        "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/shopping/2026/11/le-creusets-gorgeous-christmas-dutch-oven-is-on-sale-for-black-friday.html",
+          "title": "Le Creuset’s gorgeous Christmas Dutch oven is on sale for Black Friday",
+          "publisher": "AL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGLNfhxl8KKIqnSS3j5oQ2XNDLz2Qk9nKQh0PrkaGke30fiO7JXvMOVCa_m-U"
+        },
+        {
+          "url": "https://www.foodandwine.com/best-le-creuset-black-friday-deals-2026-12217732",
+          "title": "Le Creuset Dropped Prices on Dutch Ovens, Tea Kettles, Holiday Gear, and More — Up to 40% Off",
+          "publisher": "Food & Wine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfih87K14WN9qcE0jylcrNCXrMbkj-jygz67oxn1txjpNCRLUCwFADQcpGosk"
+        },
+        {
+          "url": "https://www.bonappetit.com/story/black-friday-le-creuset-deals-11-27-2026",
+          "title": "Le Creuset’s Black Friday Sale Includes the Signature Dutch Oven, And It's Going Quickly",
+          "publisher": "Bon Appétit: Recipes, Cooking, Entertaining, Restaurants | Bon Appétit",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-31dF3hn_2QdN_5havtwXxG-xSqrMRw7QYlS9m2H8JlCeitk47eJIjnTax5o"
+        }
+      ]
+    },
+    {
+      "query": "home goods black friday",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T12:40:00Z",
+      "related_news_urls": [
+        "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
+        "https://www.cnn.com/cnn-underscored/deals/black-friday-furniture-deals-2026-11-26",
+        "https://www.wsj.com/buyside/shopping-holidays/deals-sales/best-black-friday-home-kitchen-deals-2026"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA",
+      "image_credit": "New York Magazine",
+      "news": [
+        {
+          "url": "https://nymag.com/strategist/article/best-black-friday-home-deals-2026.html",
+          "title": "Make That Big Home-Upgrade Purchase This Black Friday",
+          "publisher": "New York Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS4tTCe7Ie5BNmv7ljGJpSfpngY3XfhLNYLMLYtqQCARzMsiFSy9RsGc2mqJgA"
+        },
+        {
+          "url": "https://www.cnn.com/cnn-underscored/deals/black-friday-furniture-deals-2026-11-26",
+          "title": "Save on big-ticket furniture items from Article, West Elm and more this Black Friday",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQatjT2K_QgdHXOEVL7Oze9Kc9S_zu7KXjmSDBy3DVif5bYf1aFDJLuq_BThhE"
+        },
+        {
+          "url": "https://www.wsj.com/buyside/shopping-holidays/deals-sales/best-black-friday-home-kitchen-deals-2026",
+          "title": "The 121 Best Black Friday Home and Kitchen Deals",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQRvPNRSLoaDIbG6iVAc59jrCtcbwAikXHv3cUfYlacINmyQ8Jvl2gQmADso_M"
+        }
+      ]
+    },
+    {
+      "query": "erling haaland",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T12:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/articles/c9zr568gje67o",
+        "https://www.telegraph.co.uk/football/2026/11/27/savour-erling-haaland-while-can-may-not-premier-league/",
+        "https://www.goal.com/en/news/england-legend-haaland-will-join-real-madrid-within-18-months-and-vinicius-will-leave/blt48106015e0503a85"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4xuglPDMIRgKbddh317fywdEhcnf7cF_nLHYw3AeSOR174UIKxQXsHeauCc",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/articles/c9zr568gje67o",
+          "title": "Football gossip: Haaland, Musiala, Araujo, Alvarez, Rudiger, Owusu",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4xuglPDMIRgKbddh317fywdEhcnf7cF_nLHYw3AeSOR174UIKxQXsHeauCc"
+        },
+        {
+          "url": "https://www.telegraph.co.uk/football/2026/11/27/savour-erling-haaland-while-can-may-not-premier-league/",
+          "title": "Are we about to lose the Premier League’s last superstar in Erling Haaland?",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5cSO099L185PFAenaj8JwPQwxWdOE4V8QOXYEacHhpVzNAo3VIyr-QnISX0U"
+        },
+        {
+          "url": "https://www.goal.com/en/news/england-legend-haaland-will-join-real-madrid-within-18-months-and-vinicius-will-leave/blt48106015e0503a85",
+          "title": "England legend: Haaland will join Real Madrid within 18 months and Vinicius will leave",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTVFYTy5poaanmPXGFgf6en_LWg9MNVELGl4LwAFY3O8xopaQ2ZkQ7XYiZMQHY"
+        }
+      ]
+    },
+    {
+      "query": "us air force cloud one breach",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T12:30:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+        "https://www.bloomberg.com/news/articles/2026-11-27/hackers-breached-us-air-force-s-cloud-platform",
+        "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/hackers-breach-us-air-force-flagship-cloud-one-computing-platform-2026-11-27/",
+          "title": "EXCLUSIVE: Hackers breach US Air Force flagship Cloud One computing platform",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc2VZNBGFB_AbNp5b33QaYe6OJSmVABOtX5cFZsSP6jbbTZPFmE4QB7H157tg"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/articles/2026-11-27/hackers-breached-us-air-force-s-cloud-platform",
+          "title": "Hackers Breached US Air Force’s Cloud Platform, Report Says",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXJYrzo95roK8-idihEbsKGHjWZFCitesTLa9ht_u3zTVMDzChpQibrVwdTY0"
+        },
+        {
+          "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
+          "title": "US Air Force's cloud computing platform hacked",
+          "publisher": "Sky News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyGLuqvv-Ez0cmtDoowaAPs968_KgJSmz7LUtsaovEfiNQgxp1bL5vKZ-aeeQ"
+        }
+      ]
+    },
+    {
+      "query": "apple tv 4k",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T12:30:00Z",
+      "related_news_urls": [
+        "https://www.vulture.com/article/apple-tv-4k-4th-generation-review.html",
+        "https://www.bloomberg.com/news/features/2026-11-21/apple-tv-4k-review-new-299-streaming-box-is-excellent-but-too-expensive",
+        "https://www.pocket-lint.com/apple-tv-4k-changed-settings-and-it-was-like-a-free-upgrade/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb7Gco8oVIKnTwvP7oGiV5PER4UUHLsfqKawrXs0klNM0IEMDgAED9E-vwabU",
+      "image_credit": "Vulture",
+      "news": [
+        {
+          "url": "https://www.vulture.com/article/apple-tv-4k-4th-generation-review.html",
+          "title": "You Don’t Need the New Apple TV Device",
+          "publisher": "Vulture",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRb7Gco8oVIKnTwvP7oGiV5PER4UUHLsfqKawrXs0klNM0IEMDgAED9E-vwabU"
+        },
+        {
+          "url": "https://www.bloomberg.com/news/features/2026-11-21/apple-tv-4k-review-new-299-streaming-box-is-excellent-but-too-expensive",
+          "title": "The New Apple TV 4K Is a Great Streaming Box at a Bad Price: Review",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS17sjvd9Y261M6_rIcCz2Di7sPgWMfkuLh9fsTCIWABBRFsXDnqD1ciphdi6I"
+        },
+        {
+          "url": "https://www.pocket-lint.com/apple-tv-4k-changed-settings-and-it-was-like-a-free-upgrade/",
+          "title": "I changed 5 settings and it was like a free upgrade for my Apple TV 4K",
+          "publisher": "Pocket-lint",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQ5rWPN29_mW4QSGG0Gq44QKCiT7nvow8OJwCDlMXe_bSgDBFkenN4IpomtEI"
+        }
+      ]
+    },
+    {
+      "query": "macbook neo black friday deals",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T12:30:00Z",
+      "related_news_urls": [
+        "https://www.macrumors.com/2026/11/26/macbook-air-black-friday-deals-3/",
+        "https://gizmodo.com/cheaper-than-a-basic-iphone-the-m5-macbook-air-512gb-just-got-another-black-friday-price-cut-2000845988",
+        "https://appleinsider.com/articles/26/11/26/amazons-599-black-friday-macbook-neo-deal-is-back"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlc8S807CqzXWTeTYCa756bj3xqkr30A6ZDDjAcjxhncorzjOB11OToxkwr6s",
+      "image_credit": "MacRumors",
+      "news": [
+        {
+          "url": "https://www.macrumors.com/2026/11/26/macbook-air-black-friday-deals-3/",
+          "title": "MacBook Air Black Friday Deals Now Live With Massive $399 Savings",
+          "publisher": "MacRumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRlc8S807CqzXWTeTYCa756bj3xqkr30A6ZDDjAcjxhncorzjOB11OToxkwr6s"
+        },
+        {
+          "url": "https://gizmodo.com/cheaper-than-a-basic-iphone-the-m5-macbook-air-512gb-just-got-another-black-friday-price-cut-2000845988",
+          "title": "Cheaper Than a Basic iPhone, the M5 MacBook Air 512GB Just Got Another Black Friday Price Cut",
+          "publisher": "Gizmodo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTiAZLhuH9OFWLKTKv21_EKT6UqQs8ODZoTvns6-ZHmiJ0keEUZ75HDxaRH8g8"
+        },
+        {
+          "url": "https://appleinsider.com/articles/26/11/26/amazons-599-black-friday-macbook-neo-deal-is-back",
+          "title": "Apple's ultra-portable MacBook Neo is $99 off for Black Friday 2026",
+          "publisher": "AppleInsider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQonYd_WL5FjRI4T99RA6x5H28celNET7WxqXFz5p5pX9pWzXH4-3UmPFP_AZk"
+        }
+      ]
+    },
     {
       "query": "natalie harp",
       "approx_searches": "100+",
       "published_at": "2026-11-27T12:20:00Z",
       "related_news_urls": [
-        "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
         "https://nymag.com/intelligencer/article/is-james-bond-conservative-trump-asks-natalie-to-find-out.html",
+        "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
         "https://www.the-independent.com/news/world/americas/us-politics/trump-natalie-harp-robert-pattinson-printouts-b3091450.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqsf1hAFgImhhNjU4dxdutFsWEfUPVzcpNZL3Tjbq8PGmRETrQvWPH1gT1uE",
-      "image_credit": "The Telegraph",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3NpgNMAs8wjyJSEv-NwA5g1U4Vt2e8pXAlAjqpy1uKZBgWLB2vzl8rR6rwvw",
+      "image_credit": "New York Magazine",
       "news": [
-        {
-          "url": "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
-          "title": "Trump praises ‘nice-looking’ Robert Pattinson as new Bond",
-          "publisher": "The Telegraph",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqsf1hAFgImhhNjU4dxdutFsWEfUPVzcpNZL3Tjbq8PGmRETrQvWPH1gT1uE"
-        },
         {
           "url": "https://nymag.com/intelligencer/article/is-james-bond-conservative-trump-asks-natalie-to-find-out.html",
           "title": "‘Is James Bond Conservative?’ Trump Asks Natalie Harp to Find Out",
@@ -33,11 +271,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR3NpgNMAs8wjyJSEv-NwA5g1U4Vt2e8pXAlAjqpy1uKZBgWLB2vzl8rR6rwvw"
         },
         {
+          "url": "https://www.telegraph.co.uk/us/news/2026/11/25/trump-praises-robert-pattinson-new-james-bond/",
+          "title": "Trump praises ‘nice-looking’ Robert Pattinson as new Bond",
+          "publisher": "The Telegraph",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVqsf1hAFgImhhNjU4dxdutFsWEfUPVzcpNZL3Tjbq8PGmRETrQvWPH1gT1uE"
+        },
+        {
           "url": "https://www.the-independent.com/news/world/americas/us-politics/trump-natalie-harp-robert-pattinson-printouts-b3091450.html",
           "title": "On Her Majesty’s Service: Trump sends Natalie Harp on mission to find out more about new James Bond",
           "publisher": "The Independent",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0fVaFx3T0E13yvjvW0oIAIG05adN8nQ-ILfBOd61TWb7_goscg96TTPDbKPU"
+        }
+      ]
+    },
+    {
+      "query": "apple stock price",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T12:10:00Z",
+      "related_news_urls": [
+        "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
+        "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
+        "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw",
+      "image_credit": "Trefis",
+      "news": [
+        {
+          "url": "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
+          "title": "Why Should Apple Stock Holders Watch The December Quarter?",
+          "publisher": "Trefis",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw"
+        },
+        {
+          "url": "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
+          "title": "Global Memory Chip Shortage Drives Prices Up, Affects Electronics (AAPL)",
+          "publisher": "GuruFocus",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXjgi3z6zA9T5J-sUaaAJvDy_gMFc5zJc96aAR1-1m063gyUFPGTxmW1Ieat0"
+        },
+        {
+          "url": "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/",
+          "title": "Apple (NASDAQ: AAPL) Faces Unprecedented Memory Cost Pressure As Gross Margin Guidance Drops To 45%-46%",
+          "publisher": "Foreign Policy Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZPCJYKLhVNPqLHvga9bsl_WgTsQJKqykDmQ5A8NMTaMwG4oOCPmLHfV03-vw"
         }
       ]
     },
@@ -73,286 +353,6 @@
           "publisher": "Chicago Sun-Times",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQftcIFATHhcDEiYyYCOdgFuPr6S6j3nNRfvAgyA3E3E63uy4KdqlP07w8OhSA"
-        }
-      ]
-    },
-    {
-      "query": "apple stock price",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:10:00Z",
-      "related_news_urls": [
-        "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
-        "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
-        "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw",
-      "image_credit": "Trefis",
-      "news": [
-        {
-          "url": "https://www.trefis.com/stock/aapl/articles/629378/why-should-apple-stock-holders-watch-the-december-quarter/2026-11-27",
-          "title": "Why Should Apple Stock Holders Watch The December Quarter?",
-          "publisher": "Trefis",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcST9jc13KqUNdDKnjYKkO9v9Kq9xxCA-8scTzv-ywmSDlM8gEMQTpvUJfJ5pjw"
-        },
-        {
-          "url": "https://www.gurufocus.com/news/9227742/global-memory-chip-shortage-drives-prices-up-affects-electronics-aapl",
-          "title": "Global Memory Chip Shortage Drives Prices Up, Affects Electronics (AAPL)",
-          "publisher": "GuruFocus",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRXjgi3z6zA9T5J-sUaaAJvDy_gMFc5zJc96aAR1-1m063gyUFPGTxmW1Ieat0"
-        },
-        {
-          "url": "https://www.foreignpolicyjournal.com/2026/11/25/apple-nasdaq-aapl-faces-unprecedented-memory-cost-pressure-as-gross-margin-guidance-drops-to-45-46/",
-          "title": "Apple (NASDAQ: AAPL) Faces Unprecedented Memory Cost Pressure As Gross Margin Guidance Drops To 45%-46%",
-          "publisher": "Foreign Policy Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSZPCJYKLhVNPqLHvga9bsl_WgTsQJKqykDmQ5A8NMTaMwG4oOCPmLHfV03-vw"
-        }
-      ]
-    },
-    {
-      "query": "kevin o'leary",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://fortune.com/2026/11/27/kevin-oleary-gen-z-worker-jubilee-debate-profits-equity/",
-        "https://thehill.com/video-clips/kevin-oleary-debates-gen-z-fetterman-says-van-hollen-as-leader-is-red-line-rising-cpllb_hfeno/",
-        "https://finance.yahoo.com/small-business/articles/gen-z-worker-confronts-kevin-223006879.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_wx4BvGv4KnsE5jRPnTnGc4KKavQMwdcuN11NiX4mpHRQ-sCHxW7i1Tf1xg",
-      "image_credit": "Fortune",
-      "news": [
-        {
-          "url": "https://fortune.com/2026/11/27/kevin-oleary-gen-z-worker-jubilee-debate-profits-equity/",
-          "title": "Kevin O’Leary told Gen Z to invest 15% of each paycheck. One worker asked why investors get the profits",
-          "publisher": "Fortune",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa_wx4BvGv4KnsE5jRPnTnGc4KKavQMwdcuN11NiX4mpHRQ-sCHxW7i1Tf1xg"
-        },
-        {
-          "url": "https://thehill.com/video-clips/kevin-oleary-debates-gen-z-fetterman-says-van-hollen-as-leader-is-red-line-rising-cpllb_hfeno/",
-          "title": "Kevin O’Leary DEBATES Gen-Z; Fetterman says Van Hollen as leader is RED LINE | RISING",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUf_Nr1_hS-NHvaQ1i9PezStCPFBeRSV3YI_LyuMkCcBmHY30kAV4YSw0_owE"
-        },
-        {
-          "url": "https://finance.yahoo.com/small-business/articles/gen-z-worker-confronts-kevin-223006879.html",
-          "title": "Gen Z Worker Confronts Kevin O’Leary Over Why Investors Get Rich While Employees Miss Out: ‘Why Should You Be the Only One Getting Wealthy?’",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTxm0qJw9w0vlF9Tgb0Q8Q5JrcsFFoCTdZHrcmZGaFC3VUD5Mf4x4pws9vz0yU"
-        }
-      ]
-    },
-    {
-      "query": "playstation 5",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://www.windowscentral.com/gaming/microsofts-github-promoted-a-project-bringing-ps5-games-to-pc-but-quickly-deleted-the-post-after-backlash",
-        "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
-        "https://digg.com/gaming/20aicdm4"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Z8GZgzcHYYt-I1kHQ-EevdGzRH1B9ep5j5Rv3ElBMWoHLQJlZGkhpVEldXE",
-      "image_credit": "Windows Central",
-      "news": [
-        {
-          "url": "https://www.windowscentral.com/gaming/microsofts-github-promoted-a-project-bringing-ps5-games-to-pc-but-quickly-deleted-the-post-after-backlash",
-          "title": "GitHub's AnyPS5 Post Sparks Double Standard Debate",
-          "publisher": "Windows Central",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT3Z8GZgzcHYYt-I1kHQ-EevdGzRH1B9ep5j5Rv3ElBMWoHLQJlZGkhpVEldXE"
-        },
-        {
-          "url": "https://www.pcgamer.com/games/microsofts-github-posts-message-celebrating-efforts-to-port-playstation-5-version-of-grand-theft-auto-6-to-pc-then-quickly-deletes-it/",
-          "title": "Microsoft's Github posts message celebrating efforts to port PlayStation 5 version of Grand Theft Auto 6 to PC, then quickly deletes it",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRxncAKMvnq3_NAmbBlEN84qgQpc-n6VxByzdsrigdBSRcU95X_a25Jt_b5QQ"
-        },
-        {
-          "url": "https://digg.com/gaming/20aicdm4",
-          "title": "GitHub cheers a GTA 6-linked PS5 emulator, then hits delete, Kotaku reports",
-          "publisher": "Digg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXF_l0YcpoZ2uIPUSkQyoV96be_1kxk3m65RbGtMJzO1Kdn-404Poj3AzEFSw"
-        }
-      ]
-    },
-    {
-      "query": "black friday flight deals",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/travel/black-friday-deals.html",
-        "https://www.fastcompany.com/91641318/travel-deals-sales-flights-best-day-to-shop-black-friday-cyber-monday",
-        "https://www.gearpatrol.com/deals/best-early-black-friday-travel-luggage-accessory-deals-2026/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ22--MWx51-Ag8T3c98k92PmlM7v_KXrtvIOwJkjWTev5B9naT45n6j2ngUwE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/24/travel/black-friday-deals.html",
-          "title": "A Bumper Crop of Black Friday Travel Deals",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ22--MWx51-Ag8T3c98k92PmlM7v_KXrtvIOwJkjWTev5B9naT45n6j2ngUwE"
-        },
-        {
-          "url": "https://www.fastcompany.com/91641318/travel-deals-sales-flights-best-day-to-shop-black-friday-cyber-monday",
-          "title": "Here’s the best day to shop for travel deals—and it isn’t Black Friday or Travel Tuesday",
-          "publisher": "Fast Company",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW53RrLvE4U4jnez_e9xXt3PbbWEaWSN0g1LkqhA-E7aAklRz7qPSfwz4npDY"
-        },
-        {
-          "url": "https://www.gearpatrol.com/deals/best-early-black-friday-travel-luggage-accessory-deals-2026/",
-          "title": "The Best Early Black Friday Travel and Luggage Deals Including Away, Peak Design, Filson and More",
-          "publisher": "Gear Patrol",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIL7tOt5Rrz3yewaGr0mcTZodnhpOqAb7nXdP56zmrd6CyBEVInNUjCeUecaU"
-        }
-      ]
-    },
-    {
-      "query": "melissa gilbert",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://deadline.com/2026/11/melissa-gilbert-gives-thanks-husband-timothy-busfield-1237234187/",
-        "https://www.imdb.com/news/ni66130012/?ref_=hm_tpnw_tp_2",
-        "https://pagesix.com/2026/11/26/celebrity-news/melissa-gilbert-expresses-undying-gratitude-in-thanksgiving-post-after-husband-timothy-busfields-child-sex-abuse-charges-dismissed/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2SF1lStGDP8jmAqdD-kjirj1KvyVqcTO7am3qlOvwSnMXFrgT5481AJPwkf4",
-      "image_credit": "Deadline",
-      "news": [
-        {
-          "url": "https://deadline.com/2026/11/melissa-gilbert-gives-thanks-husband-timothy-busfield-1237234187/",
-          "title": "Melissa Gilbert Gives Thanks To Those Who “Spoke Up, Testified” In Support Of Husband Timothy Busfield",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR2SF1lStGDP8jmAqdD-kjirj1KvyVqcTO7am3qlOvwSnMXFrgT5481AJPwkf4"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66130012/?ref_=hm_tpnw_tp_2",
-          "title": "Melissa Gilbert Expresses “Undying Gratitude” After Timothy Busfield’s Child Sex Abuse Case Dismissed",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": null
-        },
-        {
-          "url": "https://pagesix.com/2026/11/26/celebrity-news/melissa-gilbert-expresses-undying-gratitude-in-thanksgiving-post-after-husband-timothy-busfields-child-sex-abuse-charges-dismissed/",
-          "title": "Melissa Gilbert makes emotional Thanksgiving post after Timothy Busfield’s child sex abuse charges dropped",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXHceguoaip5zJXbsfzf4xFGKmuRxD-FDBuzHU162Wft-4TuvRMzXHiDEgsuE"
-        }
-      ]
-    },
-    {
-      "query": "justine lupe",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://people.com/justine-lupe-pregnant-expecting-baby-no-2-with-husband-ben-soffer-12282253",
-        "https://pagesix.com/2026/11/26/parents/nobody-wants-this-and-succession-star-justine-lupe-announces-pregnancy-on-thanksgiving/",
-        "https://ew.com/nobody-wants-this-star-justine-lupe-announces-pregnancy-second-child-12282685"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvwz_YkqecTKizH1GFII2aeTL8Xpj2jwIPuVDrOOSjkcFydIACKqK_sFIIk5Q",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/justine-lupe-pregnant-expecting-baby-no-2-with-husband-ben-soffer-12282253",
-          "title": "‘Nobody Wants This’ Star Justine Lupe Is Pregnant, Expecting Baby No. 2 with Husband Tyson Mason",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvwz_YkqecTKizH1GFII2aeTL8Xpj2jwIPuVDrOOSjkcFydIACKqK_sFIIk5Q"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/26/parents/nobody-wants-this-and-succession-star-justine-lupe-announces-pregnancy-on-thanksgiving/",
-          "title": "‘Nobody Wants This’ and ‘Succession’ star announces pregnancy on Thanksgiving",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSF-KcILm1gABNzy9m7Xz3jv4-P-Jb2WzEZ42NYdMbLYvMVrsuaQVVypK7i05I"
-        },
-        {
-          "url": "https://ew.com/nobody-wants-this-star-justine-lupe-announces-pregnancy-second-child-12282685",
-          "title": "‘Nobody Wants This’ star Justine Lupe announces she’s pregnant with second child",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4kgh-PK_vREQUn0kXHjfORgvGqp1qY9C_3PuEPK86AdOXyhIig-detyQAg8"
-        }
-      ]
-    },
-    {
-      "query": "ted lasso",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T12:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/espn/story/_/id/50576889/top-fictional-sports-series-21st-century",
-        "https://screenrant.com/friday-night-lights-best-tv-sports-drama/",
-        "https://demokratis.co.id/en/friday-night-lights-sports-shows-poll"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9DBqrQNLC4hRzToImkXgvMKBGBCMazWxUTd_RtZYG0BpyfmS1CKeThERCWL4",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/espn/story/_/id/50576889/top-fictional-sports-series-21st-century",
-          "title": "'Friday Night Lights' tops poll ranking 21st-century sports shows",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS9DBqrQNLC4hRzToImkXgvMKBGBCMazWxUTd_RtZYG0BpyfmS1CKeThERCWL4"
-        },
-        {
-          "url": "https://screenrant.com/friday-night-lights-best-tv-sports-drama/",
-          "title": "Forget Ted Lasso, TV's Best Sports Drama Still Hasn't Been Topped",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOhiq90ZiseyfdS90VyEKoG5SJ7veLLI6aWrDMclZ9SAAchldxVLrB0OmLi5k"
-        },
-        {
-          "url": "https://demokratis.co.id/en/friday-night-lights-sports-shows-poll",
-          "title": "Friday Night Lights Leads Poll of 21st Century Sports Shows",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLqqBJxs7dWrx6qozjXUj-j9NDrc--FkMJFnsr29QJww3-F6uWvlPOiLHqVxA"
-        }
-      ]
-    },
-    {
-      "query": "ll bean black friday",
-      "approx_searches": "100+",
-      "published_at": "2026-11-27T11:50:00Z",
-      "related_news_urls": [
-        "https://wgme.com/news/local/thanksgiving-night-shoppers-flock-to-ll-bean-as-freeport-flagship-draws-early-deals",
-        "https://www.theguardian.com/thefilter-us/2026/nov/22/black-friday-buy-it-for-life",
-        "https://shopping.yahoo.com/deals/articles/shopping-black-friday-4-items-170041738.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJPYNryx6NGST1AThzi8Ra51dfXh_BJttxLXHxcsqzLCzeBnFj2b3Ct0dpjfQ",
-      "image_credit": "WGME",
-      "news": [
-        {
-          "url": "https://wgme.com/news/local/thanksgiving-night-shoppers-flock-to-ll-bean-as-freeport-flagship-draws-early-deals",
-          "title": "Thanksgiving night shoppers flock to L.L. Bean for some early Black Friday shopping",
-          "publisher": "WGME",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJPYNryx6NGST1AThzi8Ra51dfXh_BJttxLXHxcsqzLCzeBnFj2b3Ct0dpjfQ"
-        },
-        {
-          "url": "https://www.theguardian.com/thefilter-us/2026/nov/22/black-friday-buy-it-for-life",
-          "title": "The 16 best US Black Friday deals on durable products you’ll own for life",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuAkNUmjRJax224OhuLQ_Qsv8yZS8ysgI-NnXwAtbUKELILnMo-dMfPLgPuMo"
-        },
-        {
-          "url": "https://shopping.yahoo.com/deals/articles/shopping-black-friday-4-items-170041738.html",
-          "title": "Shopping Black Friday? These 4 Items Could Hold Their Value for Years",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUie8A_ndcGPcog1sCNUar09EC3zbUN2jDopW1usaULxO-yu_-ZjTyWqTrZeE"
         }
       ]
     }
