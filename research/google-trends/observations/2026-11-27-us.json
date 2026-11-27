@@ -1,0 +1,360 @@
+{
+  "schema_version": 1,
+  "source": "Google Trends Trending Now RSS",
+  "source_url": "https://trends.google.com/trending/rss?geo=US",
+  "region": "US",
+  "checked_at": "2026-11-27T00:01:30.687607Z",
+  "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
+  "topics": [
+    {
+      "query": "beyonce",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T23:40:00Z",
+      "related_news_urls": [
+        "https://foxsanantonio.com/news/entertainment/from-a-record-breaking-grammy-milestone-to-a-holiday-special-and-a-new-musical-era",
+        "https://www.ad-hoc-news.de/unterhaltung/musik/beyonce-reaches-100-grammy-nominations-on-november-16/70557763",
+        "https://www.aol.com/articles/beyonce-taylor-swift-more-stars-011752000.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbO_fk2w4V0ifKGmtIGH_xZa3lGtL-qPkVKNLL6JVfDlzlTUJ-HULN66K4UAU",
+      "image_credit": "KABB",
+      "news": [
+        {
+          "url": "https://foxsanantonio.com/news/entertainment/from-a-record-breaking-grammy-milestone-to-a-holiday-special-and-a-new-musical-era",
+          "title": "From a record-breaking Grammy milestone to a holiday special and a new musical era",
+          "publisher": "KABB",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbO_fk2w4V0ifKGmtIGH_xZa3lGtL-qPkVKNLL6JVfDlzlTUJ-HULN66K4UAU"
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/unterhaltung/musik/beyonce-reaches-100-grammy-nominations-on-november-16/70557763",
+          "title": "Beyoncé reaches 100 Grammy nominations on November 16",
+          "publisher": "ad-hoc-news.de",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSuet6UoMUMFsUyH_qoRK1z8pGOSBONJE599n977e0_nZp1tkCkrYdXlD9bpI0"
+        },
+        {
+          "url": "https://www.aol.com/articles/beyonce-taylor-swift-more-stars-011752000.html",
+          "title": "Beyonce, Taylor Swift and More Stars Who Have Broken Grammy Records Through the Years",
+          "publisher": "AOL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTeEdlzSAviqZcOe2KYnSdU-v1Y0vtGoPO67W9H2oSDdzhD-fjl_zodCVvMETg"
+        }
+      ]
+    },
+    {
+      "query": "jensen huang foundation stock value jump",
+      "approx_searches": "200+",
+      "published_at": "2026-11-26T23:40:00Z",
+      "related_news_urls": [
+        "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
+        "https://www.pbs.org/newshour/nation/nvidia-ceos-comeback-fuels-debate-over-misogyny-and-impunity-for-the-rich-and-powerful",
+        "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUg44WZPDEthU2JtwYfMLszupKzEbMLEamEbCFJ-OPK5sOHwyrSBphyVal6o",
+      "image_credit": "The Washington Post",
+      "news": [
+        {
+          "url": "https://www.washingtonpost.com/technology/2026/11/25/hegseth-pentagon-officials-floated-using-wartime-law-reappoint-nvidia-ceo/",
+          "title": "Hegseth, Pentagon officials floated using wartime law to reappoint Nvidia CEO",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUg44WZPDEthU2JtwYfMLszupKzEbMLEamEbCFJ-OPK5sOHwyrSBphyVal6o"
+        },
+        {
+          "url": "https://www.pbs.org/newshour/nation/nvidia-ceos-comeback-fuels-debate-over-misogyny-and-impunity-for-the-rich-and-powerful",
+          "title": "Nvidia CEO's comeback fuels debate over misogyny and impunity for the rich and powerful",
+          "publisher": "PBS",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzSeVIeG7WpUulwJsgSvr9p8LTx06uI4PPiZultGSJ96_JCQf25MKPkQJlEpk"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/25/us/politics/trump-nvidia-stock-market.html",
+          "title": "Trump Rejoiced in the Market’s Nvidia Surge. It Didn’t Last Long.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSik-9rH8B31WbHQyZZDCK_1kELZA6mUdEmmuCTLyH_qRtBgtNAnD4PgCBZDeY"
+        }
+      ]
+    },
+    {
+      "query": "dallas cowboys cheerleaders",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://people.com/dallas-cowboys-cheerleaders-game-day-hair-secrets-exclusive-12274500",
+        "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-eagles-at-cowboys-nfl-thanksgiving-week-12-2026-joe-milton-saquon-barkley-dak-prescott",
+        "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYIjytgsJo8wJti4PIfz0VAOFVaVbg_M8nJFbs12AOwWO_KlNOfM0pk_xqZKI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/dallas-cowboys-cheerleaders-game-day-hair-secrets-exclusive-12274500",
+          "title": "4 Dallas Cowboys Cheerleaders Dish on Their Best Game-Day Hair Secrets (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTYIjytgsJo8wJti4PIfz0VAOFVaVbg_M8nJFbs12AOwWO_KlNOfM0pk_xqZKI"
+        },
+        {
+          "url": "https://www.philadelphiaeagles.com/news/how-to-watch-stream-and-listen-eagles-at-cowboys-nfl-thanksgiving-week-12-2026-joe-milton-saquon-barkley-dak-prescott",
+          "title": "How to watch, stream, and listen | Eagles at Cowboys",
+          "publisher": "Philadelphia Eagles",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5cMD9Pl9vwJ4fYb2pOZ8PIwqN6PT9bDFiKWz6nEGh1M8lQlfrIjOS0NLkr84"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50583319/joe-milton-build-momentum-thanksgiving-start-dallas-cowboys",
+          "title": "From practice squad to prime time: A look at Milton's big chance on Thanksgiving",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQOSTIcy000bbKXJGgSoMVmP306l9bvXFyA7up_di1-4Gl_wO5041zL0FqkPA"
+        }
+      ]
+    },
+    {
+      "query": "brendan mcloughlin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/music/articles/miranda-lambert-makes-rare-appearance-033144154.html",
+        "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/miranda-lambert-husband-nypd-officer-married/24b851553de2878afca55d24",
+        "https://www.foxnews.com/video/6408578258112"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh5u8PlR6HW7tCTJbUYzZhAlD8AVhaPzw0Rz_eLQTrB6DBsj8wuPiBUKwSxc",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/music/articles/miranda-lambert-makes-rare-appearance-033144154.html",
+          "title": "Miranda Lambert Makes Rare Appearance With Husband Brendan McLoughlin at 2026 CMA Awards",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJh5u8PlR6HW7tCTJbUYzZhAlD8AVhaPzw0Rz_eLQTrB6DBsj8wuPiBUKwSxc"
+        },
+        {
+          "url": "https://www.sportingnews.com/us/nfl/dallas-cowboys/news/miranda-lambert-husband-nypd-officer-married/24b851553de2878afca55d24",
+          "title": "Who is Miranda Lambert’s husband? Meet the former NYPD officer married to country star",
+          "publisher": "Sporting News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0BeFyGOznSO4Iald5SBSwojy7-ksN3Y83fCZHc_dTojZaoxJ5lKPkfMqzcyE"
+        },
+        {
+          "url": "https://www.foxnews.com/video/6408578258112",
+          "title": "Miranda Lambert poses with her CMA Awards following her wins",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4ltTI0iumlnSr45vYKDzwnt2hDSzv4vnwhCYI_Mym-RGxL6s3RidKVq-EvBg"
+        }
+      ]
+    },
+    {
+      "query": "the mayflower",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/entertainment/billy-bob-thornton-says-hes-holiday-purist-he-brings-back-traditional-thanksgiving-home",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/billy-bob-thornton-the-mayflower-fox-nation-docudrama-interview/92852255007/",
+        "https://movieweb.com/billy-bob-thornton-mayflower-recommendation/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSExKTnTGGp1nlsBiSBEW29CZXRRS4JZx6OUvC069wWWg9BBdYsyvvy2NZfog8",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/entertainment/billy-bob-thornton-says-hes-holiday-purist-he-brings-back-traditional-thanksgiving-home",
+          "title": "Billy Bob Thornton says he’s a holiday ‘purist’ as he brings back ‘traditional’ Thanksgiving at home",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSExKTnTGGp1nlsBiSBEW29CZXRRS4JZx6OUvC069wWWg9BBdYsyvvy2NZfog8"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/23/billy-bob-thornton-the-mayflower-fox-nation-docudrama-interview/92852255007/",
+          "title": "Billy Bob Thornton reveals truth about 'Mayflower' and those Demi Moore stories",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROl-KSVbJZg6TI2YGdN-TyXDD6XgN8aS4AaEjkKWUgJCVJ4WHHgXnpGZFnIWI"
+        },
+        {
+          "url": "https://movieweb.com/billy-bob-thornton-mayflower-recommendation/",
+          "title": "Billy Bob Thornton's New 'Landman' Replacement Is the Perfect Thanksgiving Weekend Binge",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTie8UoR63GIetnfbO51ztiwZBZaYQl_62bTeCNk_tJuL8roBPhVf7dJcw7FeE"
+        }
+      ]
+    },
+    {
+      "query": "macaulay culkin",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
+        "https://www.yahoo.com/entertainment/movies/articles/macaulay-culkin-returns-acting-ahead-004940711.html",
+        "https://www.imdb.com/news/ni66127332/?ref_=tt_nwr_1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVTjaX2dSzFhRGlotoxHtgD9cFEdU5KFl3-yYF5-3ojPnFPD5AgBWyDlLbBBw",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/constance-wu-macaulay-culkin-ethan-eng-a24-walter-woodman-1237232191/",
+          "title": "Constance Wu, Macaulay Culkin, Ken Leung And Ethan Eng To Star In New A24 Film From Director Walter Woodman",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRVTjaX2dSzFhRGlotoxHtgD9cFEdU5KFl3-yYF5-3ojPnFPD5AgBWyDlLbBBw"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/macaulay-culkin-returns-acting-ahead-004940711.html",
+          "title": "Macaulay Culkin Returns to Acting Ahead of Home Alone Sequel for A24 Movie With Constance Wu",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJjtHbSBTvsmrAcekcEah5nktf6vuzxIOdKZUk2rp_najnXGeuxCit9iaRbGE"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66127332/?ref_=tt_nwr_1",
+          "title": "From screen-life shorts to A24: Walter Woodman’s debut lands Constance Wu and Macaulay Culkin",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW_3PlxdiyH6UMGsCIvcsQyy_jGU929Ln7cVu0S0QXR_krMc2Z_gLNDXUq2J0"
+        }
+      ]
+    },
+    {
+      "query": "jessica simpson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-simpson-flaunts-darkest-hair-190458416.html",
+        "https://people.com/jessica-simpson-changes-her-signature-blonde-hair-to-brown-photo-12270072",
+        "https://www.instyle.com/jessica-simpson-chocolate-brown-hair-transformation-new-photo-12275363"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoyqseN3Hd4XoNDTfEdUDCJ_4s4UYtnaEfjmGAm9clQOgUI7A_2fBU7nK4iVs",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/jessica-simpson-flaunts-darkest-hair-190458416.html",
+          "title": "Jessica Simpson flaunts darkest hair color in two decades: ‘Billionaire brunette’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRoyqseN3Hd4XoNDTfEdUDCJ_4s4UYtnaEfjmGAm9clQOgUI7A_2fBU7nK4iVs"
+        },
+        {
+          "url": "https://people.com/jessica-simpson-changes-her-signature-blonde-hair-to-brown-photo-12270072",
+          "title": "Jessica Simpson Shares a Closer Look at Her New Brunette Hair After Ditching Her Signature Blonde Locks",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQivz3FoHZt2vmd3A3lR45sKkvyHCsuLv_GXral1hdPq1uKsk4kpLSsILv9GzU"
+        },
+        {
+          "url": "https://www.instyle.com/jessica-simpson-chocolate-brown-hair-transformation-new-photo-12275363",
+          "title": "Jessica Simpson Looks Nearly Unrecognizable With Darkest Hair Transformation in Years",
+          "publisher": "InStyle",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE5_rCChcCKSR-7lFLF115VKPaOog_Q-FPcwAf1kky-226bsZ5GnZHGXtoul4"
+        }
+      ]
+    },
+    {
+      "query": "tcu vs texas tech",
+      "approx_searches": "500+",
+      "published_at": "2026-11-26T23:30:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/betting/news/tcu-texas-tech-odds-prediction-time-rivalry-week-best-bets-college-football-picks/",
+        "https://www.kcbd.com/2026/11/25/texas-tech-sells-out-thanksgiving-matchup-against-tcu/",
+        "https://sports.yahoo.com/college-football/articles/tcu-injury-report-horned-frogs-224907251.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD-qAXxjZfElXSfXjnrjvIoAizHwh0LFHMM9m2N_KavxiZR07yd9CE-pSQBxM",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/betting/news/tcu-texas-tech-odds-prediction-time-rivalry-week-best-bets-college-football-picks/",
+          "title": "TCU vs. Texas Tech odds, prediction, time: Rivalry week college football picks from proven model",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSD-qAXxjZfElXSfXjnrjvIoAizHwh0LFHMM9m2N_KavxiZR07yd9CE-pSQBxM"
+        },
+        {
+          "url": "https://www.kcbd.com/2026/11/25/texas-tech-sells-out-thanksgiving-matchup-against-tcu/",
+          "title": "Texas Tech sells out Thanksgiving matchup against TCU",
+          "publisher": "KCBD",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6yxLVVUGtRUhHwXrUZb4KXzNVSzx9Eea4qGCKYm5ISjIAPXMaREXI_hq80eE"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/tcu-injury-report-horned-frogs-224907251.html",
+          "title": "TCU Injury Report: Horned Frogs Face Texas Tech in Thanksgiving Battle",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNM4MkdIGt0tw_m8995R39Yp2AivN-HtfJ_tPn9MgysgBA43R6wUKh05am6Bw"
+        }
+      ]
+    },
+    {
+      "query": "black friday deals on thanksgiving day",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-26T23:20:00Z",
+      "related_news_urls": [
+        "https://nymag.com/strategist/article/amazon-thanksgiving-black-friday-sale-2026.html",
+        "https://www.southernliving.com/what-to-buy-amazon-black-friday-deals-2026-12243834",
+        "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecU_Rq0JDEbDciS2MbSD7_eQmY2J_TQUlvARgnetptWgNFBggtGwevzwXmvQ",
+      "image_credit": "New York Magazine",
+      "news": [
+        {
+          "url": "https://nymag.com/strategist/article/amazon-thanksgiving-black-friday-sale-2026.html",
+          "title": "Many New Amazon Black Friday Deals Have Dropped Today",
+          "publisher": "New York Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQecU_Rq0JDEbDciS2MbSD7_eQmY2J_TQUlvARgnetptWgNFBggtGwevzwXmvQ"
+        },
+        {
+          "url": "https://www.southernliving.com/what-to-buy-amazon-black-friday-deals-2026-12243834",
+          "title": "Don’t Let Amazon’s Black Friday Sale Overwhelm You—These 15 Finds Are The Best Place To Start",
+          "publisher": "Southern Living",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-UQT1Be-xryUZKEa4O8f-GTkT1cF7Rt1uvGbkYgfH7xYTpGcVBAbQ5myJDw4"
+        },
+        {
+          "url": "https://shopping.yahoo.com/deals/breaking-news/live/amazon-black-friday-deals-live-updates-on-the-biggest-sales-from-apple-yeti-ninja-ring-kitchenaid-and-more-during-cyber-week-2026-153217857.html",
+          "title": "Amazon Black Friday deals: Live updates on the biggest sales from Apple, Yeti, Ninja, Ring, KitchenAid and more during Cyber Week 2026",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQORpvwj1j-4EgaJJaveH09QkO-6tuLeU305kw-YPa9u7gnqcVFIn_jw6TDH6Y"
+        }
+      ]
+    },
+    {
+      "query": "tcu basketball",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-26T23:20:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
+        "https://www.si.com/college/tcu/basketball/tcu-creighton-basketball-how-to-watch-players-era-2026",
+        "https://cwibc.co.id/en/tcu-creighton-players-era-showdown"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
+          "title": "TCU Horned Frogs play the Creighton Bluejays",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        },
+        {
+          "url": "https://www.si.com/college/tcu/basketball/tcu-creighton-basketball-how-to-watch-players-era-2026",
+          "title": "TCU vs. Creighton Basketball Preview and How to Watch the Players Era 16",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbOuQTMc_uQCKh-iopm0eNcoJL4jPOdlVf2kOyg4cIkADWHb1YS3l1xG7cKZ8"
+        },
+        {
+          "url": "https://cwibc.co.id/en/tcu-creighton-players-era-showdown",
+          "title": "TCU Faces Creighton in Players Era Tournament Showdown",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUeC6WQJKJaQfXleLxe0fjoQ2hY686XuKIyc-AvECn6litsmOk2dlc0PzJhP0"
+        }
+      ]
+    }
+  ]
+}
