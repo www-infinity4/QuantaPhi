@@ -3,356 +3,348 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T22:31:13.215293Z",
+  "checked_at": "2026-11-27T23:01:21.588055Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "villanova vs kansas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T22:10:00Z",
+      "query": "texas basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T22:40:00Z",
       "related_news_urls": [
-        "https://www.vuhoops.com/villanova-basketball/35794/villanovas-last-win-looking-worse-wildcats-with-another-chance-friday",
-        "https://sports.yahoo.com/mens-college-basketball/articles/villanova-kansas-open-game-thread-205700976.html",
-        "https://www2.ljworld.com/sports/ku-mens-basketball/2026/nov/25/preview-ku-mens-basketball-to-host-villanova-on-black-friday/"
+        "https://www.burntorangenation.com/texas-longhorns-basketball/107921/texas-longhorns-saint-marys-gaels-game-time-television",
+        "https://247sports.com/college/texas/article/how-to-watch-betting-line-for-no-7-texas-basketballs-friday-afternoon-contest-against-saint-marys-293364319/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/texas-basketball-faces-major-test-173140809.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvZC-3pcrgbGHBVSrJ0Ru82Lg2NDdePxHrFe2mvcI9MwQFODWlaMU_dVFivg",
-      "image_credit": "VU Hoops",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQikRn1tDGzyCmi9OKRgMhguGhreEWZ0gSma81pufRkMl8sjwjaA7ZjiGFlZhc",
+      "image_credit": "Burnt Orange Nation",
       "news": [
         {
-          "url": "https://www.vuhoops.com/villanova-basketball/35794/villanovas-last-win-looking-worse-wildcats-with-another-chance-friday",
-          "title": "Villanova’s Last Win Looking Worse, Wildcats With Another Chance Friday",
-          "publisher": "VU Hoops",
+          "url": "https://www.burntorangenation.com/texas-longhorns-basketball/107921/texas-longhorns-saint-marys-gaels-game-time-television",
+          "title": "No. 7 Texas to face Saint Mary’s in the Rady Children’s Invitational championship",
+          "publisher": "Burnt Orange Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHvZC-3pcrgbGHBVSrJ0Ru82Lg2NDdePxHrFe2mvcI9MwQFODWlaMU_dVFivg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQikRn1tDGzyCmi9OKRgMhguGhreEWZ0gSma81pufRkMl8sjwjaA7ZjiGFlZhc"
         },
         {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/villanova-kansas-open-game-thread-205700976.html",
-          "title": "Villanova at Kansas: Open Game Thread",
+          "url": "https://247sports.com/college/texas/article/how-to-watch-betting-line-for-no-7-texas-basketballs-friday-afternoon-contest-against-saint-marys-293364319/",
+          "title": "How to watch, betting line for No. 7 Texas basketball's Friday afternoon contest against Saint Mary's",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbSy96yw6qU3XSD4XHwkwpot_pJJ2XVOuSul6ygR604neOomWWAYR96a8pOkg"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/texas-basketball-faces-major-test-173140809.html",
+          "title": "Texas Basketball Faces Major Test in Black Friday Tournament Championship",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFDZnMvhr8h9Tl9mGT728dU01gH-EQSdMbFd5lFTLeQ5TG1-28vatvO8Iqrvs"
-        },
-        {
-          "url": "https://www2.ljworld.com/sports/ku-mens-basketball/2026/nov/25/preview-ku-mens-basketball-to-host-villanova-on-black-friday/",
-          "title": "Preview: KU men’s basketball to host Villanova on Black Friday",
-          "publisher": "Lawrence Journal-World",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6V6qWm-M0cKFaCUsEgUqKcThaxDxeGW_tDuuXqVZeGBlVUxSKrjCcNy3HZcg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREj_5fVKBUxa0DTMDjeRKdtnUPYx_x_KySkLbUJTs2P0pOt1u3-4dyacULnxI"
         }
       ]
     },
     {
-      "query": "roman wilson",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-27T22:10:00Z",
+      "query": "anthony ellis philly marathon",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T22:40:00Z",
       "related_news_urls": [
-        "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
-        "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
-        "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game"
+        "https://patch.com/pennsylvania/media/delco-man-25-dies-after-collapsing-end-2026-philadelphia-marathon",
+        "https://marathonhandbook.com/anthony-ellis-philadelphia-marathon-death/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI",
-      "image_credit": "Steelers.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0ZWRh_h4CCgpx_mqKPTNiRG8jVIDGmP41M2hKwQuwCWNghzWr-cWTv6_sfsw",
+      "image_credit": "Patch",
       "news": [
         {
-          "url": "https://www.steelers.com/news/steelers-make-roster-moves-ahead-of-eagles-game",
-          "title": "Steelers make roster moves ahead of Eagles game",
-          "publisher": "Steelers.com",
+          "url": "https://patch.com/pennsylvania/media/delco-man-25-dies-after-collapsing-end-2026-philadelphia-marathon",
+          "title": "Delco Man, 25, Dies After Collapsing At The End Of The 2026 Philadelphia Marathon",
+          "publisher": "Patch",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQidKGUXlBxQNggxWNG3rPyFKtExYslNeay-gcB3_5jQ3FTqKLg0aQ8NEx01YI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0ZWRh_h4CCgpx_mqKPTNiRG8jVIDGmP41M2hKwQuwCWNghzWr-cWTv6_sfsw"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/steelers-massive-defensive-boost-vs-162715474.html",
-          "title": "Steelers get massive defensive boost vs. Broncos",
+          "url": "https://marathonhandbook.com/anthony-ellis-philadelphia-marathon-death/",
+          "title": "Former Sun Valley Quarterback Dies After Philly Marathon",
+          "publisher": "Marathon Handbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicEAU9vBKf2k9TktQASPbrJQwAtZDjVHCNOdYUiRUFLGemNwRDK6NY-HrflU"
+        }
+      ]
+    },
+    {
+      "query": "texas high school football playoffs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T22:40:00Z",
+      "related_news_urls": [
+        "https://www.ksat.com/sports/big-game-coverage/2026/11/25/bgc-scores-and-schedule-week-3-playoffs-2026/",
+        "https://sports.yahoo.com/high-school-sports/articles/san-antonio-area-high-school-220725968.html",
+        "https://www.expressnews.com/sports/high-school/article/football-playoffs-schedule-san-antonio-third-round-22551959.php"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0",
+      "image_credit": "KSAT",
+      "news": [
+        {
+          "url": "https://www.ksat.com/sports/big-game-coverage/2026/11/25/bgc-scores-and-schedule-week-3-playoffs-2026/",
+          "title": "BGC Scores and Schedule: Week 3 Playoffs, 2026",
+          "publisher": "KSAT",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ0A3BJQhxu6maZCBQGloB3wUFQNEPTn_GJrl_nkPY0nT34kzQdYOJMlxwBNH0"
+        },
+        {
+          "url": "https://sports.yahoo.com/high-school-sports/articles/san-antonio-area-high-school-220725968.html",
+          "title": "San Antonio-area high school football third round playoff scoreboard",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUhPnCvPd2c2g6IzE1LKDrB5Hz5QGETPlqZQx9IYTYkV6ExfrWs4xZMGRrF4A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRtafHaxfmpFAMSNq5OVVZLV5Z3HemNWEgk1ZGKuTzMZfKG8WtMBKMVAfn05Dg"
         },
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
-          "title": "Steelers activate WR Roman Wilson off IR for Eagles game",
+          "url": "https://www.expressnews.com/sports/high-school/article/football-playoffs-schedule-san-antonio-third-round-22551959.php",
+          "title": "High school football playoffs regional schedule for San Antonio teams",
+          "publisher": "San Antonio Express-News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuJ-YxL9IIErRXeUy6ajp6iP4WO4k76v6BXVZfXK3t9LRSc0aLmTiQaj2gz7k"
+        }
+      ]
+    },
+    {
+      "query": "patrick queen",
+      "approx_searches": "200+",
+      "published_at": "2026-11-27T22:40:00Z",
+      "related_news_urls": [
+        "https://www.philadelphiaeagles.com/video/game-highlights-eagles-19-steelers-16-2026-nfl-regular-season-week-11",
+        "https://www.espn.com/nfl/recap/_/gameId/401873076",
+        "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRctjh0kUu47er45EzGY-pB-FjnZcrdY8F5kf6brJZbpluzV14x6h2Whi2f5VM",
+      "image_credit": "Philadelphia Eagles",
+      "news": [
+        {
+          "url": "https://www.philadelphiaeagles.com/video/game-highlights-eagles-19-steelers-16-2026-nfl-regular-season-week-11",
+          "title": "Game Highlights: Eagles 19, Steelers 16",
+          "publisher": "Philadelphia Eagles",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRctjh0kUu47er45EzGY-pB-FjnZcrdY8F5kf6brJZbpluzV14x6h2Whi2f5VM"
+        },
+        {
+          "url": "https://www.espn.com/nfl/recap/_/gameId/401873076",
+          "title": "Eagles 19-16 Steelers (Nov 22, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHgRXSi9I3YMbWRTnMKMmPeGh-bmnlT3SeHftVjWyzsuuv-fRYYNr_RGR9N5o"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSse0edD-MBJycdfKeBrWO9O-YMh2GM3OOlwxTN91vB2rvbTruFIBSB6m3dtSI"
+        },
+        {
+          "url": "https://www.nbcsportsphiladelphia.com/nfl/philadelphia-eagles/aaron-rodgers-released-steelers-mike-mccarthy-eagles/769483/",
+          "title": "Did the Eagles just end Aaron Rodgers' Hall of Fame career?",
+          "publisher": "NBC Sports Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0SPvL1Ipl2qSKfZeBxa34PvzfufdK2BDN3-rWgdB40cc350UqxGybYzVjBb0"
         }
       ]
     },
     {
-      "query": "fluminense vs cruzeiro",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T22:10:00Z",
-      "related_news_urls": [
-        "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/27/fluminense-x-cruzeiro-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-        "https://www.otempo.com.br/sports/cruzeiro/2026/11/27/cruzeiro-enfrenta-fabio-pela-10-vez-desde-quando-goleiro-foi-para-o-fluminense",
-        "https://www.terra.com.br/esportes/fluminense/marcao-recebe-lista-com-12-jogadores-no-fluminense,53046b014ec7d81274457bf9017da9f5m0zkj2fj.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkcvxrFcWgmw7ghWgpNR0mmd3nRO46vyh79FYcWd-trTojkwveqtQT4s_Lih0",
-      "image_credit": "ge",
-      "news": [
-        {
-          "url": "https://ge.globo.com/mg/futebol/brasileirao-serie-a/noticia/2026/11/27/fluminense-x-cruzeiro-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
-          "title": "Fluminense x Cruzeiro: onde assistir ao vivo, horário e escalações",
-          "publisher": "ge",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkcvxrFcWgmw7ghWgpNR0mmd3nRO46vyh79FYcWd-trTojkwveqtQT4s_Lih0"
-        },
-        {
-          "url": "https://www.otempo.com.br/sports/cruzeiro/2026/11/27/cruzeiro-enfrenta-fabio-pela-10-vez-desde-quando-goleiro-foi-para-o-fluminense",
-          "title": "Cruzeiro enfrenta Fábio pela 10ª vez desde quando goleiro foi para o Fluminense",
-          "publisher": "O Tempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrt6TMcpEeQ258SJi-7-1p1VH0k0J9UpRhWJcTJx7AJtx2tQuiTN_VcmdXS8"
-        },
-        {
-          "url": "https://www.terra.com.br/esportes/fluminense/marcao-recebe-lista-com-12-jogadores-no-fluminense,53046b014ec7d81274457bf9017da9f5m0zkj2fj.html",
-          "title": "Marcão recebe lista com 12 jogadores no Fluminense",
-          "publisher": "Terra",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTFEoEDYgCYyBHzrKh0JnrHOoG9xRWO9kwWkpmDI7GWp-idwsGt_FZIPDhoiFQ"
-        }
-      ]
-    },
-    {
-      "query": "dj uiagalelei",
+      "query": "pj gallagher",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T22:10:00Z",
+      "published_at": "2026-11-27T22:30:00Z",
       "related_news_urls": [
-        "https://www.chargers.com/news/sign-quarterback-jake-browning-to-active-roster",
-        "https://bleacherreport.com/articles/25537921-chargers-sign-new-qb-contract-justin-herbert-injured-concussion-protocol",
-        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-sign-jake-browning-to-active-roster"
+        "https://www.rte.ie/entertainment/2026/1127/1600964-pj-gallagher/",
+        "https://www.independent.ie/entertainment/obituary-pj-gallagher-stand-up-career-to-success-on-the-airwaves/a/165241425.html",
+        "https://www.thejournal.ie/pj-gallagher-dies-7240976-Nov2026/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q9wQ4LJ_mb6yrw2vCNBiLVtno6ZKEnZGF_ah8lu0aN7_0vzicexDKwnjspY",
-      "image_credit": "Los Angeles Chargers",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZlQOu2sXf6YDIBtVEy5eiD14NHU0e5SSnOQJT2P69tzfRCdTNmy-iElus7k",
+      "image_credit": "RTE.ie",
       "news": [
         {
-          "url": "https://www.chargers.com/news/sign-quarterback-jake-browning-to-active-roster",
-          "title": "Los Angeles Chargers Sign Quarterback Jake Browning to Active Roster",
-          "publisher": "Los Angeles Chargers",
+          "url": "https://www.rte.ie/entertainment/2026/1127/1600964-pj-gallagher/",
+          "title": "Comedian and presenter PJ Gallagher dies aged 51",
+          "publisher": "RTE.ie",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q9wQ4LJ_mb6yrw2vCNBiLVtno6ZKEnZGF_ah8lu0aN7_0vzicexDKwnjspY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQoZlQOu2sXf6YDIBtVEy5eiD14NHU0e5SSnOQJT2P69tzfRCdTNmy-iElus7k"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537921-chargers-sign-new-qb-contract-justin-herbert-injured-concussion-protocol",
-          "title": "Chargers Sign New QB to Contract with Justin Herbert Injured in Concussion Protocol",
-          "publisher": "Bleacher Report",
+          "url": "https://www.independent.ie/entertainment/obituary-pj-gallagher-stand-up-career-to-success-on-the-airwaves/a/165241425.html",
+          "title": "Obituary: PJ Gallagher, stand-up career to success on the airwaves",
+          "publisher": "Irish Independent",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRFd-A5kI505NKkxKJ0AG7jjHFas4DqYrKazUYz5JAXliKgp8FRGaP1UyVhCyU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcScpgD532ABr4FBvtKdfuuNCImu8wwL70DpnzSzUW7ksAabvc7J6OBMB_xhcmY"
         },
         {
-          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/chargers-sign-jake-browning-to-active-roster",
-          "title": "Chargers sign Jake Browning to active roster",
-          "publisher": "NBC Sports",
+          "url": "https://www.thejournal.ie/pj-gallagher-dies-7240976-Nov2026/",
+          "title": "Comedian and presenter PJ Gallgher dies aged 51",
+          "publisher": "The Journal",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc5FmBMV3LcJX3SwGoA55MB-9N3FI6DEnx4MWPUq9aIWFSyyMRHwbGd0YRg70"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9TyFvvVlrdhq7F4g51m2pvnsLAbOf-Pii_y6dXpJvQb65sIUJpPqILeUFEPg"
         }
       ]
     },
     {
-      "query": "kentucky vs maine",
+      "query": "old dominion vs virginia tech",
       "approx_searches": "500+",
-      "published_at": "2026-11-27T22:10:00Z",
+      "published_at": "2026-11-27T22:30:00Z",
       "related_news_urls": [
-        "https://ukathletics.com/news/2026/11/26/big-blue-preview-no-11-9-kentucky-plays-maine-south-dakota-state-in-daytona-beach-classic/",
-        "https://www.aseaofblue.com/kentucky-womens-basketball/189127/no-11-kentucky-womens-basketball-vs-maine-preview-and-how-to-watch",
-        "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-11-kentucky-wbb-heads-south-for-two-games-at-the-daytona-beach-classic/"
+        "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-old-dominion-live-updates-score-and-analysis-01m8fes5m5j0",
+        "https://www.foxsports.com/articles/cbk/virginia-tech-plays-old-dominion-after-hammonds-24point-game",
+        "https://techlunchpail.com/blog/mike-youngs-coaching-tree-in-the-spotlight-as-virginia-tech-faces-odu"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy8M0WyNvZ_f_sCSzPX2N2MFxYf1CLQnq7Fkf9-v_GHkkr5wftKKUbXJtqRI",
-      "image_credit": "UKAthletics",
-      "news": [
-        {
-          "url": "https://ukathletics.com/news/2026/11/26/big-blue-preview-no-11-9-kentucky-plays-maine-south-dakota-state-in-daytona-beach-classic/",
-          "title": "Big Blue Preview: No. 11/9 Kentucky Plays Maine, South Dakota State in Daytona Beach Classic",
-          "publisher": "UKAthletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy8M0WyNvZ_f_sCSzPX2N2MFxYf1CLQnq7Fkf9-v_GHkkr5wftKKUbXJtqRI"
-        },
-        {
-          "url": "https://www.aseaofblue.com/kentucky-womens-basketball/189127/no-11-kentucky-womens-basketball-vs-maine-preview-and-how-to-watch",
-          "title": "No. 11 Kentucky Women’s Basketball vs. Maine preview and how to watch",
-          "publisher": "A Sea Of Blue",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVCQbAo5OBY3mMVG7aam2X4uW4s8hiAwy9s3TO_JiC9nPnaiBzck9RyhN0dzQ"
-        },
-        {
-          "url": "https://www.on3.com/teams/kentucky-wildcats/news/preview-no-11-kentucky-wbb-heads-south-for-two-games-at-the-daytona-beach-classic/",
-          "title": "PREVIEW: No. 11 Kentucky WBB heads south for two games at the Daytona Beach Classic",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQOH0tpoa79SRwO3pwi-BVfnsS-QR9qkdS-AxOoqY8MMz3XJvsAhpk60ocB1JQ"
-        }
-      ]
-    },
-    {
-      "query": "dow jones industrial average",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-27T22:00:00Z",
-      "related_news_urls": [
-        "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
-        "https://www.barrons.com/articles/u-s-indexes-moved-upward-friday-sandisk-led-increases-bd5a0755",
-        "https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJZ_YetqtPfN1ikbdOefZHqsX7yY5kvDtuHKjoIng9T2jole8dsHYqdLtQ8Y",
-      "image_credit": "CNBC",
-      "news": [
-        {
-          "url": "https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html",
-          "title": "Dow rallies nearly 600 points to close out best week since 2022: Live updates",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIJZ_YetqtPfN1ikbdOefZHqsX7yY5kvDtuHKjoIng9T2jole8dsHYqdLtQ8Y"
-        },
-        {
-          "url": "https://www.barrons.com/articles/u-s-indexes-moved-upward-friday-sandisk-led-increases-bd5a0755",
-          "title": "U.S. Indexes Moved Upward Friday; Sandisk Led Increases",
-          "publisher": "Barron's",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR4Z09NNyLZgi8D5A-WkxTBGwh3NeFzp7OKkIEbwXtbKWr8NiA9UQOBba_acM4"
-        },
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-26/asian-stock-futures-signal-gains-oil-climbs-again-markets-wrap",
-          "title": "US Futures Rally as Tech Rebound Gains Momentum: Markets Wrap",
-          "publisher": "Bloomberg",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQF7zj_DY3amPlroMmrBAvfGjcBmJa5KY02yJmo_7pgtHyBLf0BV9VDSkaByBs"
-        }
-      ]
-    },
-    {
-      "query": "martha stewart",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T22:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/martha-stewart-calls-one-type-212251193.html",
-        "https://pagesix.com/2026/11/27/celebrity-news/martha-stewart-reveals-what-she-loves-and-cant-stand-about-new-yorkers/",
-        "https://www.aol.com/articles/martha-stewart-says-she-considers-175306000.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwRDEqa1KbV1NvTQOT179Jj9_gLpAN8XQ0u_kUVaTxgJQ_LqO_mEvwBAzyRSU",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/martha-stewart-calls-one-type-212251193.html",
-          "title": "Martha Stewart Calls Out the One Type of New Yorker She Can’t Stand",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwRDEqa1KbV1NvTQOT179Jj9_gLpAN8XQ0u_kUVaTxgJQ_LqO_mEvwBAzyRSU"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/27/celebrity-news/martha-stewart-reveals-what-she-loves-and-cant-stand-about-new-yorkers/",
-          "title": "Exclusive | Martha Stewart reveals what she loves — and can’t stand — about New Yorkers",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlofVvpYwFqo-Zxs2xp5iiQYyNJCkVdm08aSKByzf75G3P0lbW6fDcbgnK8xI"
-        },
-        {
-          "url": "https://www.aol.com/articles/martha-stewart-says-she-considers-175306000.html",
-          "title": "Martha Stewart Says She Considers Herself a 'New Yorker': 'We're a Real Breed of People'",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7YEg_9GWZNRR-u4PSplB35kOx5GL0LF77fG7trRYX3_SoHkKB19rNHL_PpIQ"
-        }
-      ]
-    },
-    {
-      "query": "kevin harvick",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T22:00:00Z",
-      "related_news_urls": [
-        "https://www.caranddriver.com/news/a74532859/stellantis-exits-wec-formula-e-racing/",
-        "https://sports.yahoo.com/nascar/articles/teeth-completely-knocked-kevin-harvick-184652401.html",
-        "https://www.motorsport.com/wec/news/what-peugeot-had-planned-for-its-abandoned-2027-wec-hypercar-/10877664/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx6IzJ65ITLFYbnD3vjvycVwjKa8ZzdjPZZlIyuzuYlb9dMkxbbl6cNV2_6eI",
-      "image_credit": "Car and Driver",
-      "news": [
-        {
-          "url": "https://www.caranddriver.com/news/a74532859/stellantis-exits-wec-formula-e-racing/",
-          "title": "Stellantis Exiting the WEC and Formula E to Focus on New Hi-Po Cars",
-          "publisher": "Car and Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTx6IzJ65ITLFYbnD3vjvycVwjKa8ZzdjPZZlIyuzuYlb9dMkxbbl6cNV2_6eI"
-        },
-        {
-          "url": "https://sports.yahoo.com/nascar/articles/teeth-completely-knocked-kevin-harvick-184652401.html",
-          "title": "\"Get Your Teeth Completely Knocked In\"- Kevin Harvick Issues Blunt Warning Over Dodge's Cup Series Return",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRj1iwqi_TMG-o0uTToU2f_EjU2aJeGV6Hd4Cl0ZuwEU9awqO6yQTB3_JPvWaw"
-        },
-        {
-          "url": "https://www.motorsport.com/wec/news/what-peugeot-had-planned-for-its-abandoned-2027-wec-hypercar-/10877664/",
-          "title": "What Peugeot had planned for its abandoned 2027 WEC Hypercar",
-          "publisher": "Motorsport.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIZYqBnE0NWvCnMDjVbOcWeDI8H1Gq-XTETxsMmo7z_nxzKWkr0bn-qRfL3j0"
-        }
-      ]
-    },
-    {
-      "query": "duck hodges",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T21:50:00Z",
-      "related_news_urls": [
-        "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
-        "https://www.usmagazine.com/stylish/pictures/hottest-cmas-2026-couples-lainey-wilson-husband-duck-more/",
-        "https://journalarta.com/en/2026/11/19/devlin-hodges-lainey-wilson-marriage-football-career/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/all-about-devlin-duck-hodges-lainey-wilson-husband-12260249",
-          "title": "All About Lainey Wilson’s Husband, Former NFL Player Devlin ‘Duck’ Hodges",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPvU2cxqCrcYAm76ESrGGVt5jtdn1oc3UiTkejgDu27UaBJUu7PUA2MaPIrRg"
-        },
-        {
-          "url": "https://www.usmagazine.com/stylish/pictures/hottest-cmas-2026-couples-lainey-wilson-husband-duck-more/",
-          "title": "Hottest Couples at the 2026 CMA Awards: Host Lainey Wilson and Husband Duck Hodges and More Sizzle",
-          "publisher": "Us Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRTLQmDoGu0XGI7kaED_5RLeu8J2M60HrD0D2BBuvqjwoRDDTcFkdJTD8A_lE"
-        },
-        {
-          "url": "https://journalarta.com/en/2026/11/19/devlin-hodges-lainey-wilson-marriage-football-career/",
-          "title": "Lainey Wilson and Devlin Hodges Married in Tennessee Cave",
-          "publisher": "JournalArta",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSGHDZl3Da1o4BGlijfjoVwXfmD_GBtnBHKO3bJg_9aYwrOZTO6cOLXbf84rYQ"
-        }
-      ]
-    },
-    {
-      "query": "philadelphia phillies",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T21:50:00Z",
-      "related_news_urls": [
-        "https://www.si.com/mlb/phillies/onsi/phillies-must-sign-one-of-these-two-free-agents",
-        "https://sports.yahoo.com/mlb/articles/phillies-shift-scouting-focus-japan-140000818.html",
-        "https://www.thegoodphight.com/philadelphia-phillies-news/89670/phillies-news-teruaki-sato-corey-seager-freddy-peralta"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3KRqtX06D34j75ZjrukwAhvn5kP8pIqXX5d67mSeVeX5D5UseIsRDw1rdog",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_YOkFMx0pZLvhTW520g_QmMBAP1YlNBuVgjPBL1mWfN3S3s-0U-8lANRreE",
       "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.si.com/mlb/phillies/onsi/phillies-must-sign-one-of-these-two-free-agents",
-          "title": "Phillies Must Sign One of These Two Free Agents",
+          "url": "https://www.si.com/college/virginiatech/basketball/virginia-tech-mbb-vs-old-dominion-live-updates-score-and-analysis-01m8fes5m5j0",
+          "title": "Virginia Tech MBB vs. Old Dominion Live Updates: Score and Analysis",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRP3KRqtX06D34j75ZjrukwAhvn5kP8pIqXX5d67mSeVeX5D5UseIsRDw1rdog"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRo_YOkFMx0pZLvhTW520g_QmMBAP1YlNBuVgjPBL1mWfN3S3s-0U-8lANRreE"
         },
         {
-          "url": "https://sports.yahoo.com/mlb/articles/phillies-shift-scouting-focus-japan-140000818.html",
-          "title": "Should the Phillies shift their scouting focus from Japan to Latin America?",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.foxsports.com/articles/cbk/virginia-tech-plays-old-dominion-after-hammonds-24point-game",
+          "title": "Virginia Tech plays Old Dominion after Hammond's 24-point game",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2hnHoL5udxy3jg6H79X7M7bz-7xMcOZAijiFdMyG70QqQuE_O-yn2GBoHWB8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4s4BZOkTNXN3YIPa9D2mGE41CMQSYHPibv39-9pCCL84ruNU6IK4Wzep74lk"
         },
         {
-          "url": "https://www.thegoodphight.com/philadelphia-phillies-news/89670/phillies-news-teruaki-sato-corey-seager-freddy-peralta",
-          "title": "Phillies news: Teruaki Sato, Corey Seager, Freddy Peralta",
-          "publisher": "The Good Phight",
+          "url": "https://techlunchpail.com/blog/mike-youngs-coaching-tree-in-the-spotlight-as-virginia-tech-faces-odu",
+          "title": "Mike Young's Coaching Tree in the Spotlight as Virginia Tech Faces ODU",
+          "publisher": "The Tech Lunch Pail",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNsmoh9ut8p3CAryBQ1m6hM4wITSkK2P5flsquTwTAUhg_ePOS5_6CrEsD9LA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzdrbt70UjX4luZdIzNjRjo00pLyOeJTe8gmVUVMDUZ6BTVWgDr1SIN_3l-ug"
+        }
+      ]
+    },
+    {
+      "query": "brock purdy injury",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-27T22:20:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/brock-purdy-ankle-out-49ers-seahawks-mac-jones-start",
+        "https://komonews.com/sports/sports-content/49ers-qb-brock-purdy-to-miss-sundays-game-against-seahawks-report",
+        "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-injury-report-week-12-seahawks/1983372/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF5dYlUP-XgZyR2omYexHicm2xIJ_i2YOfutLQlEZ-FauG4wsVe59YQs6qjRo",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/brock-purdy-ankle-out-49ers-seahawks-mac-jones-start",
+          "title": "Brock Purdy (ankle) ruled out for 49ers' game vs. Seahawks; Mac Jones to start at QB",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF5dYlUP-XgZyR2omYexHicm2xIJ_i2YOfutLQlEZ-FauG4wsVe59YQs6qjRo"
+        },
+        {
+          "url": "https://komonews.com/sports/sports-content/49ers-qb-brock-purdy-to-miss-sundays-game-against-seahawks-report",
+          "title": "49ers QB Brock Purdy to miss Sunday's game against Seahawks: Report",
+          "publisher": "KOMO",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSphX3xuHe7DV4krIqfbDVo18t4aM90U8gABdPF1_nls6xjLkgxSLznZR19t4"
+        },
+        {
+          "url": "https://www.nbcsportsbayarea.com/nfl/san-francisco-49ers/brock-purdy-injury-report-week-12-seahawks/1983372/",
+          "title": "49ers QB Brock Purdy misses second consecutive practice with ankle injury",
+          "publisher": "NBC Sports Bay Area & California",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSpEgqAqok-lKSnStVpO0lcZRW2u2pXghX4JO1-cVRHLk4Mdh8-swkPpS3TGSc"
+        }
+      ]
+    },
+    {
+      "query": "chris boswell",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T22:20:00Z",
+      "related_news_urls": [
+        "https://www.dkpittsburghsports.com/team/steelers/feed/topic/112726-steelers-vs-broncos-score-news-coverage-nfl-football-dk",
+        "https://www.nfl.com/videos/steelers-increase-their-lead-with-chris-boswell-33-yard-fg",
+        "https://www.steelers.com/news/boswell-ties-steelers-all-time-scoring-record"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtp-W4me6uFmqqHF-frOqfTzta2GzcFx1RAwN8y68pM5bYdhGMdQXY0mUmJLE",
+      "image_credit": "DK Pittsburgh Sports",
+      "news": [
+        {
+          "url": "https://www.dkpittsburghsports.com/team/steelers/feed/topic/112726-steelers-vs-broncos-score-news-coverage-nfl-football-dk",
+          "title": "LIVE: Steelers 27, Broncos 5, fourth quarter",
+          "publisher": "DK Pittsburgh Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRtp-W4me6uFmqqHF-frOqfTzta2GzcFx1RAwN8y68pM5bYdhGMdQXY0mUmJLE"
+        },
+        {
+          "url": "https://www.nfl.com/videos/steelers-increase-their-lead-with-chris-boswell-33-yard-fg",
+          "title": "Steelers increase their lead with Chris Boswell 33-yard FG",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ1AGboErZde5f2eNcllj6c4Re3WL2jXc1BVi91kWdh9dVLY82FPouYePQqQ"
+        },
+        {
+          "url": "https://www.steelers.com/news/boswell-ties-steelers-all-time-scoring-record",
+          "title": "Boswell ties Steelers all-time scoring record",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQtNCsmO3txLPwvtgJppsoaHeeoVX618Au7DZAYOIXxY753fs-OUOdjfgWYEac"
+        }
+      ]
+    },
+    {
+      "query": "stephen nedoroscik",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T22:20:00Z",
+      "related_news_urls": [
+        "https://www.eonline.com/news/1438439/stephen-nedoroscik-debuts-relationship-after-tess-mccracken-breakup",
+        "https://www.yahoo.com/entertainment/celebrity/articles/dwts-alum-stephen-nedoroscik-hints-183157753.html",
+        "https://people.com/olympian-stephen-nedoroscik-hard-launches-new-romance-10-months-after-tess-mccracken-breakup-12283325"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TeX6boIzlAl-ZKgElQDkO2Q_uZW_eyzUpTYn5iUZgZrHR5IuceMxhOaC4K0",
+      "image_credit": "E! News",
+      "news": [
+        {
+          "url": "https://www.eonline.com/news/1438439/stephen-nedoroscik-debuts-relationship-after-tess-mccracken-breakup",
+          "title": "Olympian Stephen Nedoroscik Hard Launches New Romance 10 Months After Tess McCracken Breakup",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3TeX6boIzlAl-ZKgElQDkO2Q_uZW_eyzUpTYn5iUZgZrHR5IuceMxhOaC4K0"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/dwts-alum-stephen-nedoroscik-hints-183157753.html",
+          "title": "DWTS Alum Stephen Nedoroscik Hints at New Flame After 10-Year Split",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQIZTYE3-1ARMkf_i_pDIBvvQEB1vY9DMRYQe3zWBoT0w9iqDk72s0__Vfslsg"
+        },
+        {
+          "url": "https://people.com/olympian-stephen-nedoroscik-hard-launches-new-romance-10-months-after-tess-mccracken-breakup-12283325",
+          "title": "Stephen Nedoroscik Hard Launches New Romance 10 Months After Split from Girlfriend of Nearly 10 Years",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-SdijsASZF_KdTNnCd54VX-L_nRbwhVNnPSi3Z586gsOlE62QDUWrBWlwVM"
+        }
+      ]
+    },
+    {
+      "query": "levante ud vs racing santander standings",
+      "approx_searches": "500+",
+      "published_at": "2026-11-27T22:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
+        "https://www.marca.com/en/soccer/laliga-ea-sports/levante-racing-santander/2026/11/27/01_0101_20261127_855_189-live.html",
+        "https://cwibc.co.id/en/levante-faces-racing-santander-valencia"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzV4kG04tqFlfTEFaHVx3Tf5EZlYgY088cLHYnVePgKGwpe3ufkTU-xOLuYKA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50614840/levante-vs-racing-santander-game-highlights",
+          "title": "Levante vs. Racing Santander - Game Highlights",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRzV4kG04tqFlfTEFaHVx3Tf5EZlYgY088cLHYnVePgKGwpe3ufkTU-xOLuYKA"
+        },
+        {
+          "url": "https://www.marca.com/en/soccer/laliga-ea-sports/levante-racing-santander/2026/11/27/01_0101_20261127_855_189-live.html",
+          "title": "Levante - Racing Santander LIVE. LALIGA EA Sports latest updates",
+          "publisher": "MARCA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-7e4ONuwuLeScbPSkzdc-iXh8UQJKEuJxMQaEX3FlNpisH2eg77JE0_rrQBI"
+        },
+        {
+          "url": "https://cwibc.co.id/en/levante-faces-racing-santander-valencia",
+          "title": "Levante Faces Racing Santander With Defensive Injuries in Valencia",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlLNu-50lvU09QPfGhPvxC5U65k-RJFgmT6rK8wNYNprf3Z3rzyDbpYNdzc9w"
         }
       ]
     }
