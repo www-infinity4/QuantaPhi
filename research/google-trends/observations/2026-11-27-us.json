@@ -3,16 +3,86 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T09:31:21.322181Z",
+  "checked_at": "2026-11-27T10:01:25.823860Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gma",
+      "approx_searches": "100+",
+      "published_at": "2026-11-27T09:40:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/airasia-delays-staff-salary-payments-end-month-internal-email-shows-2026-11-27/",
+        "https://newsinfo.inquirer.net/2347824/labor-group-seeks-probe-into-airasias-retrenchment-of-90-pilots",
+        "https://www.pna.gov.ph/article/dole-creates-task-force-for-planned-airasia-strike"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2TVpPSZuV5iiAfauAomY31m5qOkzhDtuWfeqF4cqzbibIZtJXH-XPfku7tmA",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/airasia-delays-staff-salary-payments-end-month-internal-email-shows-2026-11-27/",
+          "title": "AirAsia delays staff salary payments to end of month, internal email shows",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2TVpPSZuV5iiAfauAomY31m5qOkzhDtuWfeqF4cqzbibIZtJXH-XPfku7tmA"
+        },
+        {
+          "url": "https://newsinfo.inquirer.net/2347824/labor-group-seeks-probe-into-airasias-retrenchment-of-90-pilots",
+          "title": "Labor group seeks probe into AirAsia’s retrenchment of 90 pilots",
+          "publisher": "Inquirer.net",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUyEBngxnYyrAQP_VaUXy2RentHcWzHYrBf61IjxIiAmOJeNntjaaUxq0iL0g"
+        },
+        {
+          "url": "https://www.pna.gov.ph/article/dole-creates-task-force-for-planned-airasia-strike",
+          "title": "DOLE creates task force for planned AirAsia strike",
+          "publisher": "Philippine News Agency",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW2Hm2ThbYOvjArX6IHPAyHhjP1DG5Xe1GmCn4LAZ9fNAqjZ3fike316vuvFQ"
+        }
+      ]
+    },
+    {
+      "query": "is the stock market open today",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-27T09:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+        "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-thanksgiving-holiday-shortened-black-friday-trading",
+        "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/personal-finance/investing/article/is-the-stock-market-open-on-thanksgiving-and-black-friday-135419542.html",
+          "title": "Is the stock market open on Thanksgiving and Black Friday?",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9wYFWrglOKgOBoQTDJpL7wPrVSNjRVzH6lRlQtgLZ6WBl4pGwJj6QeLCQX3k"
+        },
+        {
+          "url": "https://www.marketwatch.com/livecoverage/stock-market-today-dow-s-p-500-nasdaq-thanksgiving-holiday-shortened-black-friday-trading",
+          "title": "Stock Market Today: Dow, S&P 500 and Nasdaq set to rally ahead of shortened Black Friday trading: live updates",
+          "publisher": "MarketWatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWpLtxMpAOsv0qLkH0I5gMgfPPTQc-7isCGzxPEfgvB-kDUWjV02wL3LG_-bc"
+        },
+        {
+          "url": "https://www.investors.com/news/stock-market-hours-thanksgiving-black-friday-sp-500-nasdaq-dow-jones-nvidia/",
+          "title": "Stock Market Trading Hours For Thanksgiving And Black Friday",
+          "publisher": "Investor's Business Daily",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRpe143F8JfRZZeOstU_9EJPIcugmFrPxUmPK02-s9V_KDENNsbP28eyAHQ3bA"
+        }
+      ]
+    },
     {
       "query": "what time does old navy open on black friday",
       "approx_searches": "100+",
       "published_at": "2026-11-27T08:50:00Z",
       "related_news_urls": [
         "https://shopping.yahoo.com/deals/breaking-news/article/old-navys-black-friday-sale-has-nearly-everything-at-half-off-including-its-popular-wide-leg-jeans-212411652.html",
-        "https://www.goodhousekeeping.com/what-to-buy/clothing/a74532607/old-navy-black-friday-sale-2026/",
+        "https://demokratis.co.id/en/old-navy-black-friday-sale",
         "https://www.today.com/shop/old-navy-black-friday-2026-sale-rcna610928"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuZROYDDjvUNceAv4lwdzBVrz3UzBtPMAV_AGzQlDOOU9UaP649FntZlY1BM",
@@ -26,11 +96,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzuZROYDDjvUNceAv4lwdzBVrz3UzBtPMAV_AGzQlDOOU9UaP649FntZlY1BM"
         },
         {
-          "url": "https://www.goodhousekeeping.com/what-to-buy/clothing/a74532607/old-navy-black-friday-sale-2026/",
-          "title": "Old Navy’s 50% Off for Black Friday–10 Deals to Shop on Thanksgiving",
-          "publisher": "Good Housekeeping",
+          "url": "https://demokratis.co.id/en/old-navy-black-friday-sale",
+          "title": "Old Navy Launches Black Friday Sale With Discounts Up to 50 Percent",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhLWMddRYJgaC0InzHT9HepXMTk6cZTJFICySOIGxPhOR--bJoF2b_syVF8Qo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUxaWGwoah3w57Lm_W23MjA9HK3EEwYjTA5woboenrCwPQtKPKtXEWzJVcxzE"
         },
         {
           "url": "https://www.today.com/shop/old-navy-black-friday-2026-sale-rcna610928",
@@ -43,42 +113,42 @@
     },
     {
       "query": "russian ukraine war",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-27T08:40:00Z",
       "related_news_urls": [
-        "https://www.politico.eu/article/donald-trump-diverges-from-nato-statement-emphasizing-ukraine-mustnt-expand-war/",
-        "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-        "https://www.usatoday.com/story/news/politics/2026/11/26/trump-urges-putin-to-stop-military-aggression/92970086007/"
+        "https://www.yahoo.com/news/articles/trump-says-putin-come-g20-003505934.html",
+        "https://www.rte.ie/news/2026/1127/1600845-trump-putin/",
+        "https://www.kyivpost.com/post/91344"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaUPk41iMfjgAhMX1GgyI3rWL5-4aN4EPJZnqwdi3wE71EcKaNCNa1FOSlkQE",
-      "image_credit": "POLITICO.eu",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3RU7IVhNIpLC3pbsx4zgOgxWdI34FTEudzLQ6LNPDHkXGDi8o1rbn3KNWTA",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.politico.eu/article/donald-trump-diverges-from-nato-statement-emphasizing-ukraine-mustnt-expand-war/",
-          "title": "Trump diverges from NATO statement, emphasizing Ukraine mustn’t expand war",
-          "publisher": "POLITICO.eu",
+          "url": "https://www.yahoo.com/news/articles/trump-says-putin-come-g20-003505934.html",
+          "title": "Trump says Putin can come to G20 if he wants",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaUPk41iMfjgAhMX1GgyI3rWL5-4aN4EPJZnqwdi3wE71EcKaNCNa1FOSlkQE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT3RU7IVhNIpLC3pbsx4zgOgxWdI34FTEudzLQ6LNPDHkXGDi8o1rbn3KNWTA"
         },
         {
-          "url": "https://www.cnbc.com/2026/11/26/trump-nato-rutte-russia-ukraine-war.html",
-          "title": "Trump, NATO chief caution Russia as attacks on Ukraine’s energy infrastructure intensify",
-          "publisher": "CNBC",
+          "url": "https://www.rte.ie/news/2026/1127/1600845-trump-putin/",
+          "title": "Trump says Putin can attend Florida G20 meeting, Kremlin says 'no decision' made",
+          "publisher": "RTE.ie",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZtQTWUZDn_jtENPo0TJE1fwnBA7o9uNHWV3h_OKPJdkvb-48D2Ambn65r38"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTLTmxBTAzKpjg61aOGfAmlbkymVcJcPdIU7fBWq_sHGcHRrKESiPZdbHikKl8"
         },
         {
-          "url": "https://www.usatoday.com/story/news/politics/2026/11/26/trump-urges-putin-to-stop-military-aggression/92970086007/",
-          "title": "Trump urges Putin to stop 'military aggression' as he meets with NATO",
-          "publisher": "USA Today",
+          "url": "https://www.kyivpost.com/post/91344",
+          "title": "Trump Says He Wants Putin at Miami G20 Summit Despite Growing Bipartisan Opposition in Congress",
+          "publisher": "Kyiv Post",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKvR7_dtUsHNbmo5yzk80dIDZzrbiKyx7PCiPRxlvwON6HYSyfnXRyLx9QCEM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_Ue9DfEDuzEq1AC6JyiWrIoFkkcQqiJyu2GCyaKUC47L0xcuVciNZIGjqz5E"
         }
       ]
     },
     {
       "query": "shead",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-27T08:20:00Z",
       "related_news_urls": [
         "https://raptorsrapture.com/raptors-davion-mitchell-trade-looks-awful-as-he-emerges-as-the-point-guard-they-need"
@@ -148,7 +218,7 @@
         "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
         "https://www.bbc.com/sport/cricket/articles/cw1mdzn9dzpzo"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQqTYGV3x1EUWiUF6cLjrBLbDsit_hOAkD1OOEZcJEnHT460iyTnws-1F_3Wg",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr_rWowFa7Y5KBAinLt77Zy1vYOior73DE-UV-c7jwFmb6iHy4ox4KmTuSqWI",
       "image_credit": "BBC",
       "news": [
         {
@@ -156,7 +226,7 @@
           "title": "Australia vs England LIVE: Third T20, Brisbane - cricket score, commentary & updates",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQqTYGV3x1EUWiUF6cLjrBLbDsit_hOAkD1OOEZcJEnHT460iyTnws-1F_3Wg"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRr_rWowFa7Y5KBAinLt77Zy1vYOior73DE-UV-c7jwFmb6iHy4ox4KmTuSqWI"
         },
         {
           "url": "https://www.cricinfo.com/series/england-in-australia-2026-27-1528677/australia-vs-england-3rd-t20i-1528708/match-preview",
@@ -171,6 +241,41 @@
           "publisher": "BBC",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfkGMBk6X3f_ogHJCjio3C1OLMAaaEzNln8ePPa5pH2GXJ1aneH-XdVdzjzdc"
+        }
+      ]
+    },
+    {
+      "query": "gta6 pc port",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T07:30:00Z",
+      "related_news_urls": [
+        "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
+        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+        "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0",
+      "image_credit": "TechPowerUp",
+      "news": [
+        {
+          "url": "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
+          "title": "Rockstar Squashes \"Leonida,\" the Biggest GTA 6 PC Recompilation Effort",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
+        },
+        {
+          "url": "https://decrypt.co/384061/vibecoded-gta-6-pc-ports-are-now-rendering-in-game-graphics-despite-take-two-crackdown",
+          "title": "Vibecoded GTA 6 PC Ports Are Now Rendering In-Game Graphics Despite Take-Two Crackdown",
+          "publisher": "Decrypt",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3IlqXMZKDIdYzZpf-ER-McOBbNqkfSCPbea3voeN2YqplSZ5rDALg5jqGGfI"
         }
       ]
     },
@@ -206,111 +311,6 @@
           "publisher": "The Palm Beach Post",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhf39WBjgh81WfiFuV7W0VH3c63AU50ukVdc3yYtojr_MLgrkxqoyDDVdU2vg"
-        }
-      ]
-    },
-    {
-      "query": "daycare",
-      "approx_searches": "200+",
-      "published_at": "2026-11-27T07:10:00Z",
-      "related_news_urls": [
-        "https://www.local10.com/news/local/2026/11/24/ex-broward-daycare-worker-confesses-to-touching-7-year-old-girls-vagina-deputies-say/",
-        "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
-        "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U",
-      "image_credit": "WPLG Local 10",
-      "news": [
-        {
-          "url": "https://www.local10.com/news/local/2026/11/24/ex-broward-daycare-worker-confesses-to-touching-7-year-old-girls-vagina-deputies-say/",
-          "title": "Ex-Broward daycare worker confesses to touching 7-year-old girl’s vagina, deputies say",
-          "publisher": "WPLG Local 10",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U"
-        },
-        {
-          "url": "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
-          "title": "Former worker at Pompano Beach day care arrested after 7-year-old girl reports abuse, deputies say",
-          "publisher": "WSVN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4kZntBjM1y4k-tnZ8c4nP9pW91pvHdL5K8wKxkA_3nFnfUxRrXp0WggRNOIk"
-        },
-        {
-          "url": "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges",
-          "title": "Former Pompano Beach Daycare Worker Arrested on Child Molestation Charges",
-          "publisher": "TAPinto",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTlZivshrYPvEasgRxoYLAGpzEi-rUVsuHjvKJuTVsAaEzJFsQfIXooidIuzvQ"
-        }
-      ]
-    },
-    {
-      "query": "seth meyers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T06:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/26/arts/television/late-night-meyers-huang-therapy-fallon.html",
-        "https://www.businessinsider.com/jensen-huang-therapy-silicon-valley-couples-therapist-ceo-nvidia-2026-11",
-        "https://www.yahoo.com/news/us/articles/rabbi-schonbuch-newsmax-nvidia-ceo-160549558.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_m6Yo9eTmDyWmme39LqLVdHQcsuPgETzA3PwENsaGoKvXsBpB_nEfeHcFeXU",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/26/arts/television/late-night-meyers-huang-therapy-fallon.html",
-          "title": "Seth Meyers Drags Jensen Huang’s Daily 90-Minute Therapy Sessions",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS_m6Yo9eTmDyWmme39LqLVdHQcsuPgETzA3PwENsaGoKvXsBpB_nEfeHcFeXU"
-        },
-        {
-          "url": "https://www.businessinsider.com/jensen-huang-therapy-silicon-valley-couples-therapist-ceo-nvidia-2026-11",
-          "title": "I’m a Silicon Valley couples therapist. Here’s what Jensen Huang's daily therapy sessions might entail.",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkhnHHgW-tMQp0fuAULc-zH29RstKknPdRhddN0afqmKxmyW9XE0Y9ELC-NQ"
-        },
-        {
-          "url": "https://www.yahoo.com/news/us/articles/rabbi-schonbuch-newsmax-nvidia-ceo-160549558.html",
-          "title": "Rabbi Schonbuch to Newsmax: Nvidia CEO Faces Long Road to Rebuilding Trust",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT_Onf76277ctjPUhVqxd2KPTYUOBrsWbGb_9jEGl1ejiGjMIUZ5UDISAMgcHo"
-        }
-      ]
-    },
-    {
-      "query": "ocelot jugular gta 6",
-      "approx_searches": "500+",
-      "published_at": "2026-11-27T06:10:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
-        "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
-        "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
-          "title": "Here's where you can steal the Ocelot Bloodless Jugular for Randy in GTA 6",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
-          "title": "How to get Ocelot Jugular in GTA 6 explained",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD6Dv5w8kSBiFwV314PgaXvRxywfNKyEkEOdYWYSo-mD2H-KB5XfBKI8t4YBs"
-        },
-        {
-          "url": "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version",
-          "title": "How to get Ocelot Jugular for Randy's Wish List in GTA 6. Location of Bloodless Jugular, how to keep this car version",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUM-v_wW1-GAaTDn-eSS9if6dbv5_SV5eNgz7PaGx2LTZYRqvgs1VGANb-kWs"
         }
       ]
     }
