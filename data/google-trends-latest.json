@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-27T07:31:10.087759Z",
+  "checked_at": "2026-11-27T08:01:34.027849Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "gta6 pc port",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-27T07:30:00Z",
+      "related_news_urls": [
+        "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
+        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0",
+      "image_credit": "TechPowerUp",
+      "news": [
+        {
+          "url": "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
+          "title": "Rockstar Squashes \"Leonida,\" the Biggest GTA 6 PC Recompilation Effort",
+          "publisher": "TechPowerUp",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
+          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
+        },
+        {
+          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
+          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
+        }
+      ]
+    },
     {
       "query": "white",
       "approx_searches": "5000+",
@@ -47,7 +82,7 @@
       "published_at": "2026-11-27T07:10:00Z",
       "related_news_urls": [
         "https://www.local10.com/news/local/2026/11/24/ex-broward-daycare-worker-confesses-to-touching-7-year-old-girls-vagina-deputies-say/",
-        "https://hoodline.com/2026/11/pompano-beach-day-care-worker-denied-bond-after-7-year-old-s-abuse-report/",
+        "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
         "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U",
@@ -61,11 +96,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSU7A27w-NqYic7_AyZjdLOpaGUpAzDLlIjr_eyqAssULq0c0_zQpz_zwgWv1U"
         },
         {
-          "url": "https://hoodline.com/2026/11/pompano-beach-day-care-worker-denied-bond-after-7-year-old-s-abuse-report/",
-          "title": "Pompano Beach Day Care Worker Denied Bond After 7-Year-Old's Abuse Report",
-          "publisher": "Hoodline",
+          "url": "https://wsvn.com/news/local/pompano-beach-daycare-worker-arrested/",
+          "title": "Former worker at Pompano Beach day care arrested after 7-year-old girl reports abuse, deputies say",
+          "publisher": "WSVN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1GIMB1lxIFVuNR6x0oBWwbi7SuSPnZe1j93PfR2GWGjMOGZjuCw-DBCwCNeI"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4kZntBjM1y4k-tnZ8c4nP9pW91pvHdL5K8wKxkA_3nFnfUxRrXp0WggRNOIk"
         },
         {
           "url": "https://www.tapinto.net/towns/pompano-beach/sections/police-and-fire/articles/former-pompano-beach-daycare-worker-arrested-on-child-molestation-charges",
@@ -151,26 +186,26 @@
       "approx_searches": "500+",
       "published_at": "2026-11-27T06:10:00Z",
       "related_news_urls": [
-        "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
         "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
+        "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
         "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD6Dv5w8kSBiFwV314PgaXvRxywfNKyEkEOdYWYSo-mD2H-KB5XfBKI8t4YBs",
-      "image_credit": "Radio Times",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA",
+      "image_credit": "PC Gamer",
       "news": [
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
-          "title": "How to get Ocelot Jugular in GTA 6 explained",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD6Dv5w8kSBiFwV314PgaXvRxywfNKyEkEOdYWYSo-mD2H-KB5XfBKI8t4YBs"
-        },
         {
           "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
           "title": "Here's where you can steal the Ocelot Bloodless Jugular for Randy in GTA 6",
           "publisher": "PC Gamer",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA"
+        },
+        {
+          "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
+          "title": "How to get Ocelot Jugular in GTA 6 explained",
+          "publisher": "Radio Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD6Dv5w8kSBiFwV314PgaXvRxywfNKyEkEOdYWYSo-mD2H-KB5XfBKI8t4YBs"
         },
         {
           "url": "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version",
@@ -252,48 +287,13 @@
       ]
     },
     {
-      "query": "gta 6 pc port",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-27T05:40:00Z",
-      "related_news_urls": [
-        "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
-        "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-        "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0",
-      "image_credit": "TechPowerUp",
-      "news": [
-        {
-          "url": "https://www.techpowerup.com/355160/rockstar-squashes-leonida-the-biggest-gta-6-pc-recompilation-effort",
-          "title": "Rockstar Squashes \"Leonida,\" the Biggest GTA 6 PC Recompilation Effort",
-          "publisher": "TechPowerUp",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLPGhaLF4Vyk3HaSsWJhlK3cD6byct8tcPeGY4cYV3yJtBFzgt7rdGVECyzM0"
-        },
-        {
-          "url": "https://www.ign.com/articles/gta-6-leaker-cyberleek-reportedly-releases-exe-file-for-xbox-build-sparking-concern-an-unofficial-pc-port-could-be-around-the-corner",
-          "title": "Cyberleek Reportedly Releases .exe File for Xbox Build",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStq4gFUYn1R_emxRhDqC4yPQh-NeP9Rejd4fQmRa8_AbVaf60ppFLZwoSNUPc"
-        },
-        {
-          "url": "https://mashable.com/tech/gta-6-pc-port-project-shut-down-by-take-two",
-          "title": "Unauthorized 'GTA 6' PC port shut down by Rockstar Games' parent company",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSnTBH_xt7z1uP7_a4asu9hUWSQNGE4USrAMugWBHVSNFrBIvztUMe0t6UpxQw"
-        }
-      ]
-    },
-    {
       "query": "jessica biel",
       "approx_searches": "2000+",
       "published_at": "2026-11-27T05:30:00Z",
       "related_news_urls": [
         "https://www.hollywoodreporter.com/tv/tv-news/justin-timberlake-documentary-trailer-apple-1236761080/",
         "https://www.apple.com/tv-pr/news/2026/11/apple-tv-announces-new-four-part-documentary-event-timberlake-directed-by-academy-award-winner-fisher-stevens/",
-        "https://pagesix.com/2026/11/23/celebrity-news/justin-timberlake-shares-rare-insight-into-bitter-britney-spears-breakup/"
+        "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRuwPd455-trpG6J6YCqqN-JwmEmP4R1i8uLx2wSpZkhdCTdpAzXoKGp30g8O8",
       "image_credit": "The Hollywood Reporter",
@@ -313,17 +313,17 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy2mturUszdb68P6L1v0x2qeOtzZ_Zd78D5d2CxG3NP6JtW8VdfCubhdufdSc"
         },
         {
-          "url": "https://pagesix.com/2026/11/23/celebrity-news/justin-timberlake-shares-rare-insight-into-bitter-britney-spears-breakup/",
-          "title": "Justin Timberlake shares rare insight into bitter Britney Spears breakup: ‘Really hard to talk about’",
-          "publisher": "Page Six",
+          "url": "https://globalnews.ca/news/12163986/justin-timberlake-docuseries-trailer/",
+          "title": "Justin Timberlake opens up about ex Britney Spears in docuseries trailer",
+          "publisher": "Global News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT5YOtsUGs-un3eHFonwdtTPpT70QeCGqmAowmmsWp99pMlFmlzixpvWSkDvLE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh-5o_OGl7sNzJrvfnRUkiVMTRkMFh11uhtAOEV3i324_-5xxcdYdNxHq3VpU"
         }
       ]
     },
     {
       "query": "ikea black friday",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-27T05:30:00Z",
       "related_news_urls": [
         "https://www.apartmenttherapy.com/ikea-black-friday-cyber-monday-sale-2026-37702493",
