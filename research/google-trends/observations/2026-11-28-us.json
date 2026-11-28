@@ -3,34 +3,237 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T11:31:14.273423Z",
+  "checked_at": "2026-11-28T12:01:23.157224Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "al-hazem vs al-nassr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://athlonsports.com/soccer/how-to-watch-al-hazem-vs-al-nassr-online-free-start-time-live-streaming-tv-channels-usa-countries",
+        "https://khelnow.com/football/will-cristiano-ronaldo-play-al-hazem-vs-al-nassr-saudi-pro-league-202611",
+        "https://onefootball.com/en/betting/predictions/al-hazm-vs-al-nassr-28-11-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchYxRv4tFIwHk374zO3QN3xmytBlJe6OsPTpRLN0tNMaCzOiKRxpmKVR4r5o",
+      "image_credit": "Athlon Sports",
+      "news": [
+        {
+          "url": "https://athlonsports.com/soccer/how-to-watch-al-hazem-vs-al-nassr-online-free-start-time-live-streaming-tv-channels-usa-countries",
+          "title": "How to Watch Al Hazem vs. Al Nassr Online for Free? Start Time, Live Streaming & TV Channels in USA and Other Countries",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchYxRv4tFIwHk374zO3QN3xmytBlJe6OsPTpRLN0tNMaCzOiKRxpmKVR4r5o"
+        },
+        {
+          "url": "https://khelnow.com/football/will-cristiano-ronaldo-play-al-hazem-vs-al-nassr-saudi-pro-league-202611",
+          "title": "Will Cristiano Ronaldo play tonight in Al Hazem vs Al Nassr Saudi Pro League 2026-27 clash?",
+          "publisher": "Khel Now",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8NmMIxo3GlisKcYStPovMLwWMmzLpTHzLZy-VMXpj2itNe6bxT7hYLJjTfmA"
+        },
+        {
+          "url": "https://onefootball.com/en/betting/predictions/al-hazm-vs-al-nassr-28-11-2026",
+          "title": "Al-Hazm vs Al-Nassr - Prediction, where to watch, kick-off time and line-ups 28-11-2026",
+          "publisher": "OneFootball",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRR-pX-zop_AZpTncH8Yr-dWiLj6J8yU5F2ed7DZiLAws8aCTyH4J4yJdffI1k"
+        }
+      ]
+    },
+    {
+      "query": "college football scores",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-texas-am-west-virginia-vs-utah-and-more-on-black-friday-023307246.html",
+        "https://www.fanduel.com/research/9-best-college-football-bets-picks-odds-props-and-predictions-today-for-black-friday",
+        "https://www.foxnews.com/outkick-sports/black-friday-college-football-unusual-start-utsa-records-rare-back-to-back-safeties"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe9zeoHNCRwC3hV6g471FpTjgrxJA1CCR3hGKRkBJOBoigqueCUmoDEymfCXI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-texas-am-west-virginia-vs-utah-and-more-on-black-friday-023307246.html",
+          "title": "College football live updates, scores: Texas vs. Texas A&M, West Virginia vs. Utah and more on Black Friday",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe9zeoHNCRwC3hV6g471FpTjgrxJA1CCR3hGKRkBJOBoigqueCUmoDEymfCXI"
+        },
+        {
+          "url": "https://www.fanduel.com/research/9-best-college-football-bets-picks-odds-props-and-predictions-today-for-black-friday",
+          "title": "9 Best College Football Bets, Picks, Odds, Props and Predictions Today for Black Friday",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPWFFB9A6bm_mClrjW-2iXeE2Q1o0_AKhfPyz5dHlpa2eQOYrbR3FENmqrxxw"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/black-friday-college-football-unusual-start-utsa-records-rare-back-to-back-safeties",
+          "title": "Black Friday college football off to unusual start as UTSA records rare back-to-back safeties | OutKick",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3s8QtEYeu-VJdBigUtOrFJUcLoNCso7V6nNw0dxXCC1zlLIRl5EtxjbGM7o0"
+        }
+      ]
+    },
+    {
+      "query": "patch",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://patch.com/connecticut/newhaven/overnight-new-haven-man-was-struck-grasso-blvd-hit-run-driver-he-may-be",
+        "https://www.nbcconnecticut.com/news/local/pedestrian-may-be-partly-paralyzed-after-new-haven-hit-and-run-police-say/3800049/",
+        "https://www.wfsb.com/2026/11/27/police-search-driver-accused-hitting-pedestrian-new-haven/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKkG8xhMjYlztvYjKpdc4E06iky2m4tqj6xkx-IhYZvjVj6rg4rwMJZNKY7SI",
+      "image_credit": "Patch",
+      "news": [
+        {
+          "url": "https://patch.com/connecticut/newhaven/overnight-new-haven-man-was-struck-grasso-blvd-hit-run-driver-he-may-be",
+          "title": "Overnight, New Haven Man Was Struck On Grasso Blvd By Hit & Run Driver, He 'May Be Partially Paralyzed': PD",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKkG8xhMjYlztvYjKpdc4E06iky2m4tqj6xkx-IhYZvjVj6rg4rwMJZNKY7SI"
+        },
+        {
+          "url": "https://www.nbcconnecticut.com/news/local/pedestrian-may-be-partly-paralyzed-after-new-haven-hit-and-run-police-say/3800049/",
+          "title": "Pedestrian may be partly paralyzed after New Haven hit-and-run, police say",
+          "publisher": "NBC Connecticut",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mtndckQLFhftpDcIFQ2XbBK-uZxnbWjTvCJcO9ZPGo6aENnUR-xqYzcz7fI"
+        },
+        {
+          "url": "https://www.wfsb.com/2026/11/27/police-search-driver-accused-hitting-pedestrian-new-haven/",
+          "title": "Police search for driver accused of hitting pedestrian in New Haven",
+          "publisher": "WFSB",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT9RDERYscsbE3E5quWmF871Jc7QnD19xyNRSMTzUx-Hs0wxmvme-stoR6V9DY"
+        }
+      ]
+    },
+    {
+      "query": "real betis",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-rayo-alegria-champions-carrera-volver-disputarla-20261128073248-nts.html",
+        "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0",
+        "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_hOjGS5pxDY5BhRFY8hhPCg5RoVbJCzN1DOU8_8UnglCkpmnFeRIPrRayWU",
+      "image_credit": "ABC",
+      "news": [
+        {
+          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-rayo-alegria-champions-carrera-volver-disputarla-20261128073248-nts.html",
+          "title": "Betis - Rayo: De la alegría por la Champions a la carrera por volver a disputarla",
+          "publisher": "ABC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_hOjGS5pxDY5BhRFY8hhPCg5RoVbJCzN1DOU8_8UnglCkpmnFeRIPrRayWU"
+        },
+        {
+          "url": "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0",
+          "title": "Betis-Rayo: el Betis llega con cuatro bajas por lesión",
+          "publisher": "Tu Futbolero",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2H9nmPoUYwwv988NCG0xAcJpiYnTkhOnVoi-jkGFDrPv8dpVAjb9jl-SlP4o"
+        },
+        {
+          "url": "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/",
+          "title": "Nos visita el Rayo Vallecano. – Historia bética",
+          "publisher": "Manquepierda",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWhmmeyDaXz8QdhCUYKIdbqUXQWQFFHkxp9vwzVq7mn4O_BfxDuh5YLtwtuEA"
+        }
+      ]
+    },
+    {
+      "query": "connections today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
+          "title": "NYT Connections Answers for November 28, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40"
+        },
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 28, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/",
+          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 28, #1266",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        }
+      ]
+    },
+    {
+      "query": "nicole scherzinger",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T11:20:00Z",
+      "related_news_urls": [
+        "https://pagesix.com/2026/11/27/celebrity-news/nicole-scherzinger-and-fiance-thom-evans-split-after-7-years/",
+        "https://www.usatoday.com/story/entertainment/music/2026/11/27/nicole-scherzinger-thom-evans-breakup-split/92982972007/",
+        "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSlELqJ41OwoLGLXBh8kIyEc-lyEZoQzrXxMXtNZk538ujcl3XmVgP6ZiAeIY",
+      "image_credit": "Page Six",
+      "news": [
+        {
+          "url": "https://pagesix.com/2026/11/27/celebrity-news/nicole-scherzinger-and-fiance-thom-evans-split-after-7-years/",
+          "title": "Nicole Scherzinger and fiancé Thom Evans split after 7 years together as he shares heartbreaking statement",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSlELqJ41OwoLGLXBh8kIyEc-lyEZoQzrXxMXtNZk538ujcl3XmVgP6ZiAeIY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/27/nicole-scherzinger-thom-evans-breakup-split/92982972007/",
+          "title": "Nicole Scherzinger and fiancé Thom Evans split after 3-year engagement",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUAxJutpmc07zpqhFIoqqQT7RDgRveppDoge8oHArWglH-6TkoOLVoci_HMU8"
+        },
+        {
+          "url": "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
+          "title": "Nicole Scherzinger and Fiancé Thom Evans End Engagement After 7 Years Together",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U"
+        }
+      ]
+    },
     {
       "query": "heather locklear",
       "approx_searches": "200+",
       "published_at": "2026-11-28T11:10:00Z",
       "related_news_urls": [
-        "https://www.tvinsider.com/1305922/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
-        "https://www.remindmagazine.com/gallery/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
-        "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html"
+        "https://demokratis.co.id/en/locklear-lamas-thanksgiving-celebration",
+        "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html",
+        "https://cwibc.co.id/en/locklear-lamas-thanksgiving-celebration"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5g1WfgiTf7DbrssSMFifO5RBJul47ALkw1NHbaqIBgNaFtb8D0V_DeoDL7A",
-      "image_credit": "TV Insider",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4",
+      "image_credit": "Demokratis.co.id",
       "news": [
         {
-          "url": "https://www.tvinsider.com/1305922/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
-          "title": "The Hollywood Show Chicago: Heather Locklear, Erin Murphy, Casts of 'The Love Boat,' 'Goodefellas,' & More",
-          "publisher": "TV Insider",
+          "url": "https://demokratis.co.id/en/locklear-lamas-thanksgiving-celebration",
+          "title": "Heather Locklear Celebrates Thanksgiving With Lorenzo Lamas",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5g1WfgiTf7DbrssSMFifO5RBJul47ALkw1NHbaqIBgNaFtb8D0V_DeoDL7A"
-        },
-        {
-          "url": "https://www.remindmagazine.com/gallery/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
-          "title": "The Hollywood Show Chicago: Heather Locklear, Erin Murphy, Casts of 'The Love Boat,' 'Goodfellas,' & More (PHOTOS)",
-          "publisher": "Remind Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg7UCB2Ok33snbVsk_a7Jr4kDLgbjFLGOezC-0erlfKq_qHdJ45-NQvjuPHe8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4"
         },
         {
           "url": "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html",
@@ -38,54 +241,26 @@
           "publisher": "Yahoo Lifestyle Canada",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAGQJnNcfDy46OnBoDjnmGbpSTG1okBHk31H6axuQyrEnIZXQA7Pdjvn_OL6s"
-        }
-      ]
-    },
-    {
-      "query": "taiwan election results",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T11:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
-        "https://www.scmp.com/news/china/politics/article/3376134/kmt-claims-first-win-taiwan-local-elections-chen-yu-jen-takes-quemoy",
-        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
-          "title": "Ruling party set to make gains in Taiwan local elections watched by China",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM"
         },
         {
-          "url": "https://www.scmp.com/news/china/politics/article/3376134/kmt-claims-first-win-taiwan-local-elections-chen-yu-jen-takes-quemoy",
-          "title": "KMT claims first win of Taiwan local elections as Chen Yu-jen takes Quemoy",
-          "publisher": "South China Morning Post",
+          "url": "https://cwibc.co.id/en/locklear-lamas-thanksgiving-celebration",
+          "title": "Heather Locklear Celebrates Thanksgiving With Lorenzo Lamas",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGrsb3oP4e8MMxk6aL9jkU-OJkBfLNkoiVvMBVLA5QwJqgtpEgjKO-X5nhO30"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
-          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4"
         }
       ]
     },
     {
       "query": "pedro pascal",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T11:10:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/28/magazine/pedro-pascal-interview.html",
         "https://suaragarut.id/en/pedro-pascal-hollywood-career",
         "https://wikiofthrones.com/pedro-pascal-says-he-owes-his-career-to-game-of-thrones-i-owe-to-it"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFHHXAo4Dq8ArfDYyga4QTTY0pGIVhCjgWZUKTGv_C08WVDpbSU3QYGSFRdo",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsB3a_bnQxd3cadCbaIAfIsYKXPBgB2S2AscPQRJyz1k60plzCu7xdI-62_Q",
       "image_credit": "The New York Times",
       "news": [
         {
@@ -93,7 +268,7 @@
           "title": "Pedro Pascal’s Life Began With a Rupture. He’s Still Coming to Terms With It.",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFHHXAo4Dq8ArfDYyga4QTTY0pGIVhCjgWZUKTGv_C08WVDpbSU3QYGSFRdo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsB3a_bnQxd3cadCbaIAfIsYKXPBgB2S2AscPQRJyz1k60plzCu7xdI-62_Q"
         },
         {
           "url": "https://suaragarut.id/en/pedro-pascal-hollywood-career",
@@ -108,6 +283,41 @@
           "publisher": "Wiki of Thrones",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2d8ckGfj4vrPEXfnIrZP4u8Xd199XH9wZKQLCN3r44RDWF3r45BpkJF4OrKc"
+        }
+      ]
+    },
+    {
+      "query": "taiwan election results",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T11:10:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+        "https://focustaiwan.tw/politics/202611285002"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+          "title": "Ruling party set to make gains in Taiwan local elections watched by China",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
+        },
+        {
+          "url": "https://focustaiwan.tw/politics/202611285002",
+          "title": "LIVE UPDATE Taiwan local elections live results",
+          "publisher": "Focus Taiwan",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTctyKoGjTmTDVV7FtUQJHoVydMKiElrpeOZDzhO1Q01-T2KmP_JvlZdL80mac"
         }
       ]
     },
@@ -143,216 +353,6 @@
           "publisher": "NewsBreak: Local News & Alerts",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6AYA4kthU46B1dyGHzX1haLWR3JQU6qRnCPBFgCT2cea286NaENUtdb_edqE"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 graphics downgrade",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T11:00:00Z",
-      "related_news_urls": [
-        "https://www.digitalfoundry.net/features/how-gta-6s-graphics-evolved-from-pre-release-trailers-to-the-final-game",
-        "https://en.gamegpu.com/news/igry/sravnenie-gta-6-s-rannimi-trejlerami-pokazalo-sushchestvennoe-razlichiya-v-grafike",
-        "https://foro3d.com/en/2026/noviembre/gta-vi-los-trailers-y-el-juego-final-no-siempre-coinciden.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKXq1pfWAeFlJH0TohAY83uHPPkyybDIMyQAz5hDawUaqRMzrmujcOZm7VlTQ",
-      "image_credit": "Digital Foundry",
-      "news": [
-        {
-          "url": "https://www.digitalfoundry.net/features/how-gta-6s-graphics-evolved-from-pre-release-trailers-to-the-final-game",
-          "title": "How GTA 6's Graphics Evolved from Pre-Release Trailers to the Final Game",
-          "publisher": "Digital Foundry",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKXq1pfWAeFlJH0TohAY83uHPPkyybDIMyQAz5hDawUaqRMzrmujcOZm7VlTQ"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/igry/sravnenie-gta-6-s-rannimi-trejlerami-pokazalo-sushchestvennoe-razlichiya-v-grafike",
-          "title": "Comparison of GTA 6 with early trailers revealed significant differences in graphics",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDUKMJ4Ts622j06r8KIZkHtbs8MuzAx66ReZ1zZJ0pbYTxiI6Zo1QUEttZTI4"
-        },
-        {
-          "url": "https://foro3d.com/en/2026/noviembre/gta-vi-los-trailers-y-el-juego-final-no-siempre-coinciden.html",
-          "title": "GTA VI: trailers and the final game do not always match",
-          "publisher": "Foro3D",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfYM2sXmMIQabUPGZYbed-WgGUwzfTts9xXXn1hrF2w816KFTYm1gki7oHGwc"
-        }
-      ]
-    },
-    {
-      "query": "osu vs michigan",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T11:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/michigan-vs-ohio-state-picks-100530411.html",
-        "https://sports.yahoo.com/college-football/articles/channel-ohio-state-football-game-100236362.html",
-        "https://www.nytimes.com/athletic/7807068/2026/11/24/college-football-top-rivalries-now-michigan-ohio-state-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmiOSqhjAnQoJvBq50BiEHbvWCOW1r1E7NR1krA5YQBcxdVWAlLP0x-tTaLyQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/michigan-vs-ohio-state-picks-100530411.html",
-          "title": "Michigan vs Ohio State picks: Who can salvage season with win in The Game?",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmiOSqhjAnQoJvBq50BiEHbvWCOW1r1E7NR1krA5YQBcxdVWAlLP0x-tTaLyQ"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/channel-ohio-state-football-game-100236362.html",
-          "title": "What channel is the Ohio State football game on? How to watch OSU play",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB3CtMd3mYdnH4zBB03XWtme3gd6i2piDF3zRYws4-MbmETX3THgy5Jyd9Qdg"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7807068/2026/11/24/college-football-top-rivalries-now-michigan-ohio-state-2026/",
-          "title": "Ranking college football’s top 25 rivalries right now. Is Michigan-Ohio State still No. 1? - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaYqRwXOc6HpFtQiI92ETORUKJJLBN9mj8xHrJ8rRlBCcmmxV7bLxsmrRnNxY"
-        }
-      ]
-    },
-    {
-      "query": "jetblue new fort lauderdale routes",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T10:50:00Z",
-      "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/articles/jetblue-airways-jblu-could-11-051441579.html",
-        "https://www.bizjournals.com/southflorida/news/2026/11/20/two-airlines-expand-fll-service-after-spirit-ends.html",
-        "https://www.caymancompass.com/2026/11/21/jetblue-to-start-daily-fort-lauderdale-cayman-flights-in-february/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1AVnpDTxQr9mFpaB9W5sh3H4di6bzZ9RPnZa7LF4yDgGwbDbnEsZOvdnrDs",
-      "image_credit": "Yahoo Finance",
-      "news": [
-        {
-          "url": "https://finance.yahoo.com/markets/stocks/articles/jetblue-airways-jblu-could-11-051441579.html",
-          "title": "JetBlue Airways (JBLU) Could Be 11% Below Fair Value As Fort Lauderdale Routes Expand",
-          "publisher": "Yahoo Finance",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1AVnpDTxQr9mFpaB9W5sh3H4di6bzZ9RPnZa7LF4yDgGwbDbnEsZOvdnrDs"
-        },
-        {
-          "url": "https://www.bizjournals.com/southflorida/news/2026/11/20/two-airlines-expand-fll-service-after-spirit-ends.html",
-          "title": "Two airlines expand FLL service six months after Spirit shutdown",
-          "publisher": "The Business Journals",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqDpD0VB9fv-hJ2pcmq9W-pWwlkJx3crvl7Z9X-o8TQrRjv6ESseI1R6KqNG4"
-        },
-        {
-          "url": "https://www.caymancompass.com/2026/11/21/jetblue-to-start-daily-fort-lauderdale-cayman-flights-in-february/",
-          "title": "JetBlue to start daily Fort Lauderdale-Cayman flights in February",
-          "publisher": "Cayman Compass",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbrTAKlO2CfPIK2Hj0NBciWdOTpABJ-LvjPGLfO61DfX6MFnfhL6nrKrt8A60"
-        }
-      ]
-    },
-    {
-      "query": "what time does target open today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-28T10:50:00Z",
-      "related_news_urls": [
-        "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
-        "https://www.abc10.com/article/news/nation-world/are-banks-open-black-friday-usps-mail-delivery-whats-open-closed/507-c231a8f7-49ad-4c5a-876d-13ab585e49e7",
-        "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ",
-      "image_credit": "NBC 5 Chicago",
-      "news": [
-        {
-          "url": "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
-          "title": "Target, Walmart, TJ Maxx: Store and mall hours for Black Friday in the Chicago area",
-          "publisher": "NBC 5 Chicago",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ"
-        },
-        {
-          "url": "https://www.abc10.com/article/news/nation-world/are-banks-open-black-friday-usps-mail-delivery-whats-open-closed/507-c231a8f7-49ad-4c5a-876d-13ab585e49e7",
-          "title": "Are banks open on Black Friday? What about the post office? Here's what's open, closed",
-          "publisher": "ABC10",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2t-_zedRcFxx8R1dOefgasXWFxgOxtFRXpjCFujnibV1tvvUE5OCtQJSkvs"
-        },
-        {
-          "url": "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving",
-          "title": "Black Friday and Thanksgiving store open hours 2026: When major retailers open",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXf6mOPBJ3XH2SyxrkIaWRPGeiOuQRehdRndR-F9jG2fSoTJezBCJTVdiOeiQ"
-        }
-      ]
-    },
-    {
-      "query": "winter storm warning",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-28T10:40:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/colorado/news/colorado-storm-snow-winds-dangerous-holiday-travel-saturday/",
-        "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
-        "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVAi_Y-8xWRVRsVCAJcJvz8U_7lA3VWbyzCUQKsdg9tXKyuA9vcBmNoeJHwq8",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/colorado/news/colorado-storm-snow-winds-dangerous-holiday-travel-saturday/",
-          "title": "Colorado storm to bring heavy snow, strong winds and dangerous holiday travel Saturday",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVAi_Y-8xWRVRsVCAJcJvz8U_7lA3VWbyzCUQKsdg9tXKyuA9vcBmNoeJHwq8"
-        },
-        {
-          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
-          "title": "Denver weather: Windy and colder with snow showers Friday",
-          "publisher": "KDVR",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNLEeGy7nsdUBPvhADXLaw_EFQZYXpqWUKcyc2kLP72xNrb5rjods3Vn7oQc"
-        },
-        {
-          "url": "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/",
-          "title": "Resort could get 15″ of snow in change of pace for Colorado",
-          "publisher": "Denver Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG9saD5ZPWxBTJhCE1NJWW5Hbuwzx6ypM9Tg19BH0ayOaIfKYXmmxpfzQmJ8A"
-        }
-      ]
-    },
-    {
-      "query": "ghsa football playoffs 2026",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T10:40:00Z",
-      "related_news_urls": [
-        "https://www.onlineathens.com/story/sports/high-school/football/2026/11/27/live-updates-for-quarterfinals-of-athens-area-ghsa-football-playoffs/92910251007/",
-        "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-roundup-week-16/93-6d00d8f0-e055-4838-86ba-5cc23df14878",
-        "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrn1YSwX4gJPoTr-ZQEUt_eECSR82Sl3zeYHZa-xDefl8N4kRJx2-Y-SUqdo",
-      "image_credit": "Online Athens",
-      "news": [
-        {
-          "url": "https://www.onlineathens.com/story/sports/high-school/football/2026/11/27/live-updates-for-quarterfinals-of-athens-area-ghsa-football-playoffs/92910251007/",
-          "title": "Live updates for quarterfinals of Athens-area GHSA football playoffs",
-          "publisher": "Online Athens",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrn1YSwX4gJPoTr-ZQEUt_eECSR82Sl3zeYHZa-xDefl8N4kRJx2-Y-SUqdo"
-        },
-        {
-          "url": "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-roundup-week-16/93-6d00d8f0-e055-4838-86ba-5cc23df14878",
-          "title": "Football Friday Night Roundup | Central Georgia teams advance to GHSA Final Four",
-          "publisher": "13WMAZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF79d0BM5woRuPPBQofeQSQNYq5UN_2ooXrpD5nlfETqFTTgOsWnpN1UZQL70"
-        },
-        {
-          "url": "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/",
-          "title": "Breaking down every quarterfinal game in the 2026 GHSA football playoffs",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQyy47zuGbQBLWIq4DMBpC99faJ58NL89agSBYVgxya8p-r2XAywEcK2biYGM"
         }
       ]
     }
