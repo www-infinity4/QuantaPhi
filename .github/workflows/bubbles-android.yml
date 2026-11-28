@@ -30,6 +30,8 @@ on:
       - 'test/bubbles-native-session-voice.test.cjs'
       - 'test/bubbles-native-site-parity.test.cjs'
       - '.github/workflows/bubbles-android.yml'
+      - '.github/scripts/verify-bubbles-apk-update.mjs'
+      - 'test/bubbles-apk-update.test.mjs'
   push:
     branches: [main]
     paths:
@@ -46,6 +48,8 @@ on:
       - 'test/bubbles-webview-recovery.test.cjs'
       - 'test/bubbles-apk-preview.test.cjs'
       - '.github/workflows/bubbles-android.yml'
+      - '.github/scripts/verify-bubbles-apk-update.mjs'
+      - 'test/bubbles-apk-update.test.mjs'
 permissions:
   contents: read
 jobs:
@@ -146,7 +150,7 @@ jobs:
           npx playwright install --with-deps chromium
           node --test test/bubbles-native-chat.browser.cjs test/bubbles-web-chat.browser.cjs
       - name: Verify isolated Android preview install contract
-        run: node --test test/bubbles-apk-preview.test.cjs
+        run: node --test test/bubbles-apk-preview.test.cjs test/bubbles-apk-update.test.mjs
       - name: Verify SIM inspection intent boundaries
         run: |
           node --test test/bubbles-sim-tool.test.cjs
@@ -261,6 +265,30 @@ jobs:
           grep -q "name='org.quantaphi.bubbles.preview5'" /tmp/bubbles-apk-badging.txt
           grep -q "sdkVersion:'26'" /tmp/bubbles-apk-badging.txt
           sha256sum "$APK"
+      - name: Verify upgrade signer and version against the published Bubbles APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          BASELINE="$RUNNER_TEMP/bubbles-published"
+          mkdir -p "$BASELINE"
+          gh release download bubbles-preview-current --repo "$GH_REPO" --dir "$BASELINE" \
+            --pattern Bubbles-Preview5-Android12.apk --pattern Bubbles-Preview5-Android12.apk.sha256
+          (cd "$BASELINE" && sha256sum --check Bubbles-Preview5-Android12.apk.sha256)
+          SDK="${ANDROID_SDK_ROOT:-/usr/local/lib/android/sdk}"
+          VERSION=$(sed -n "s/.*versionName '\([^']*\)'.*/\1/p" android/bubbles-overlay/app/build.gradle)
+          node .github/scripts/verify-bubbles-apk-update.mjs \
+            --apk android/bubbles-overlay/app/build/outputs/apk/debug/app-debug.apk \
+            --previous "$BASELINE/Bubbles-Preview5-Android12.apk" \
+            --aapt "$SDK/build-tools/35.0.0/aapt" --apksigner "$SDK/build-tools/35.0.0/apksigner" \
+            --version "$VERSION" --source "$(git rev-parse HEAD)" --receipt "$RUNNER_TEMP/bubbles-apk-receipt.json"
+      - name: Preserve APK source, version, digest and signer receipt
+        uses: actions/upload-artifact@v7
+        with:
+          name: bubbles-apk-update-receipt
+          path: ${{ runner.temp }}/bubbles-apk-receipt.json
+          if-no-files-found: error
       - name: Upload separately installable Bubbles Preview APK
         uses: actions/upload-artifact@v7
         with:
@@ -274,6 +302,9 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: android
     runs-on: ubuntu-latest
+    concurrency:
+      group: bubbles-preview5-publication
+      cancel-in-progress: false
     permissions:
       contents: write
     steps:
@@ -282,6 +313,10 @@ jobs:
         with:
           name: bubbles-preview-android12-apk
           path: dist
+      - uses: actions/download-artifact@v4
+        with:
+          name: bubbles-apk-update-receipt
+          path: dist/receipt
       - name: Publish directly installable Android APK
         env:
           GH_TOKEN: ${{ github.token }}
@@ -295,9 +330,15 @@ jobs:
           VERSIONED="Bubbles-v${VERSION}-Preview5-Android12.apk"
           mv dist/app-debug.apk "dist/$VERSIONED"
           cp "dist/$VERSIONED" dist/Bubbles-Preview5-Android12.apk
+          cp dist/receipt/bubbles-apk-receipt.json "dist/$VERSIONED.receipt.json"
           (cd dist && sha256sum "$VERSIONED" > "$VERSIONED.sha256" && sha256sum Bubbles-Preview5-Android12.apk > Bubbles-Preview5-Android12.apk.sha256)
           if gh release view bubbles-preview-current --repo "$GH_REPO" >/dev/null 2>&1; then
-            gh release upload bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
+            gh release view bubbles-preview-current --repo "$GH_REPO" --json assets --jq '.assets[].name' > "$RUNNER_TEMP/bubbles-release-assets.txt"
+            if grep -Fxq "$VERSIONED" "$RUNNER_TEMP/bubbles-release-assets.txt"; then
+              echo "::error::Versioned APK already exists; bump the version instead of replacing published bytes"
+              exit 1
+            fi
+            gh release upload bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/$VERSIONED.receipt.json" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --clobber --repo "$GH_REPO"
           else
-            gh release create bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Every version also retains a uniquely named signed APK asset and SHA256 checksum, so download version identity is clear. Test-signed preview, not a production release."
+            gh release create bubbles-preview-current "dist/$VERSIONED#Bubbles v${VERSION}-preview" "dist/$VERSIONED.sha256" "dist/$VERSIONED.receipt.json" "dist/Bubbles-Preview5-Android12.apk#Current Bubbles Preview" dist/Bubbles-Preview5-Android12.apk.sha256 --repo "$GH_REPO" --target "$GITHUB_SHA" --title "Bubbles Preview for Android" --notes "Direct APK for Android 8+ ARM phones. Every version also retains a uniquely named signed APK asset and SHA256 checksum, so download version identity is clear. Test-signed preview, not a production release."
           fi
