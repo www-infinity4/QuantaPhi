@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T18:01:16.307182Z",
+  "checked_at": "2026-11-28T18:31:10.348012Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tsa",
+      "query": "kansas state vs iowa state",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T18:10:00Z",
+      "related_news_urls": [
+        "https://www.desmoinesregister.com/story/sports/college/iowa-state/football/2026/11/28/iowa-state-football-kansas-state-k-state-where-to-watch-tv-channel/92942499007/",
+        "https://sports.yahoo.com/college-football/articles/iowa-state-football-vs-kansas-130004167.html",
+        "https://www.kcci.com/article/iowa-state-kansas-state-football-farmageddon-score-updates-highlights/74554510"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTaGahls2HN_rexjuO4-G1R7tKPvmcca5kIgHQxtUtzAT934ZbYrFenlL0Tw",
+      "image_credit": "The Des Moines Register",
+      "news": [
+        {
+          "url": "https://www.desmoinesregister.com/story/sports/college/iowa-state/football/2026/11/28/iowa-state-football-kansas-state-k-state-where-to-watch-tv-channel/92942499007/",
+          "title": "How to watch Iowa State vs Kansas State football on Saturday, time, TV",
+          "publisher": "The Des Moines Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTaGahls2HN_rexjuO4-G1R7tKPvmcca5kIgHQxtUtzAT934ZbYrFenlL0Tw"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/iowa-state-football-vs-kansas-130004167.html",
+          "title": "Iowa State Football vs. Kansas State: 3 Bold Predictions for Farmageddon",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzyZsG4WR6LgqJoeYqEVWN07gzv3HuFdAKY9ZerelqOU_lx0RoI8g-Y9N8xI"
+        },
+        {
+          "url": "https://www.kcci.com/article/iowa-state-kansas-state-football-farmageddon-score-updates-highlights/74554510",
+          "title": "Iowa State football vs. Kansas State: Score updates and highlights from Senior Day",
+          "publisher": "KCCI",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1saSQS7b_BArsmNF4E_x4dUUuPh8P2PVTGGnluGz4o_ZedcPPa0Eu6PCrWgs"
+        }
+      ]
+    },
+    {
+      "query": "coastal carolina vs james madison",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T17:40:00Z",
+      "published_at": "2026-11-28T18:10:00Z",
       "related_news_urls": [
-        "https://www.foxnews.com/travel/tsa-agent-spots-strange-detail-scanner-finds-dangerous-object-inside-sharpie",
-        "https://www.tsa.gov/about/employee-stories/sharp-catch-richmond-tsa-officers-detect-concealed-knife-inside-sharpie",
-        "https://people.com/tsa-officers-discover-knife-hidden-inside-sharpie-at-virginia-airport-12277185"
+        "https://sports.yahoo.com/college-football/articles/watch-coastal-carolina-vs-james-175500520.html",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/coastal-carolina-chanticleers-vs-james-madison-dukes-prediction-odds-2026-11-28/",
+        "https://www.dnronline.com/sports/level/college/james_madison_university/ryan-beard-coastal-carolina-football-embracing-opportunity-in-season-finale-at-jmu/article_24ef76d7-8270-509f-8625-4916ab213fdd.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5deaAPeNQv9G50GeJmgJ0flmugnaEO66HCFhnWK8E3Z-Atr5h12DFORUyvnM",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/travel/tsa-agent-spots-strange-detail-scanner-finds-dangerous-object-inside-sharpie",
-          "title": "TSA agent spots strange detail on scanner, finds dangerous object inside Sharpie",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5deaAPeNQv9G50GeJmgJ0flmugnaEO66HCFhnWK8E3Z-Atr5h12DFORUyvnM"
-        },
-        {
-          "url": "https://www.tsa.gov/about/employee-stories/sharp-catch-richmond-tsa-officers-detect-concealed-knife-inside-sharpie",
-          "title": "Sharp catch! Richmond TSA officers detect concealed knife inside Sharpie",
-          "publisher": "www.tsa.gov",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzgWFEVTtIwtXDd7n1PJLRlnUVwvm_Yst5arZ19qfYRwxGdwDnOwDFIF4Zufs"
-        },
-        {
-          "url": "https://people.com/tsa-officers-discover-knife-hidden-inside-sharpie-at-virginia-airport-12277185",
-          "title": "TSA Officers Spot a ‘Suspicious’ Sharpie Inside Traveler’s Carry-On at Virginia Airport. Then They See a Blade",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7T-Vz4QzXY4nGTB0VZnab3O-Vx8z_TxYLZOwtq9EPx1ShDWVqgjBGxoRR78s"
-        }
-      ]
-    },
-    {
-      "query": "la news",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:40:00Z",
-      "related_news_urls": [
-        "https://ktla.com/news/local-news/suspected-arsonist-found-hiding-in-attic-after-los-angeles-county-brush-fire/",
-        "https://www.nbclosangeles.com/news/local/arson-suspect-arrested-topanga-brush-fire/3975570/",
-        "https://mynewsla.com/crime/2026/11/27/man-suspected-of-starting-small-brush-fire-in-topanga-arrested/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd2NlDAmeu8MJ3JW7uYkEItsSQ5K5CEPYnwO2Ntc0eHx_6JFdyruXw7ESI1IU",
-      "image_credit": "KTLA",
-      "news": [
-        {
-          "url": "https://ktla.com/news/local-news/suspected-arsonist-found-hiding-in-attic-after-los-angeles-county-brush-fire/",
-          "title": "Suspected arsonist found hiding in attic after Los Angeles County brush fire",
-          "publisher": "KTLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd2NlDAmeu8MJ3JW7uYkEItsSQ5K5CEPYnwO2Ntc0eHx_6JFdyruXw7ESI1IU"
-        },
-        {
-          "url": "https://www.nbclosangeles.com/news/local/arson-suspect-arrested-topanga-brush-fire/3975570/",
-          "title": "Arson suspect linked to Topanga brush fire arrested",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVJBZ_LdJIvfE3p38juU-UEf4khTycwMuFQ1jYM4kc9CWEhQHXseZ3Z6WQ28"
-        },
-        {
-          "url": "https://mynewsla.com/crime/2026/11/27/man-suspected-of-starting-small-brush-fire-in-topanga-arrested/",
-          "title": "Police Arrest Suspect for Starting Small Brush Fire in Topanga",
-          "publisher": "MyNewsLA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzM1Vrs2JFpUxMzJauUHW2b9gSl7JaKM5-OcgvrZXp5EDGRpvSWX9YzsvUys"
-        }
-      ]
-    },
-    {
-      "query": "nfl mock draft",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T17:40:00Z",
-      "related_news_urls": [
-        "https://www.thefalcoholic.com/atlanta-falcons-draft/98780/falcons-draft-2027-way-too-early-nfl-mock-draft-3-0-trinidad-chambliss-melvin-siani",
-        "https://www.kgw.com/video/sports/locked-on/lo-atlanta/falcons-show/atlanta-falcons-cant-be-complacent-at-qb-ranking-their-biggest-offseason-needs/535-40f4638e-34c2-4064-bc0b-54aea911e32f",
-        "https://www.miamiherald.com/sports/article318240603.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQwCVu2oPCdJW5vL61q_I3pXJC0guVIZHAyuEgHIR_KP0kLspxV18oRxQerA",
-      "image_credit": "The Falcoholic",
-      "news": [
-        {
-          "url": "https://www.thefalcoholic.com/atlanta-falcons-draft/98780/falcons-draft-2027-way-too-early-nfl-mock-draft-3-0-trinidad-chambliss-melvin-siani",
-          "title": "Falcons Draft 2027: Way-Too-Early NFL Mock Draft 3.0",
-          "publisher": "The Falcoholic",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQwCVu2oPCdJW5vL61q_I3pXJC0guVIZHAyuEgHIR_KP0kLspxV18oRxQerA"
-        },
-        {
-          "url": "https://www.kgw.com/video/sports/locked-on/lo-atlanta/falcons-show/atlanta-falcons-cant-be-complacent-at-qb-ranking-their-biggest-offseason-needs/535-40f4638e-34c2-4064-bc0b-54aea911e32f",
-          "title": "Atlanta Falcons Can't Be COMPLACENT at QB: Ranking Their BIGGEST Offseason Needs",
-          "publisher": "KGW",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzRZMUmNZIUJsTfIWyqIduV8jtTYBEyDBGjIQ4Lv9M_YrwwCI2dNlVuwcO0mA"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/article318240603.html",
-          "title": "Falcons Recap: Contract extensions, mock drafts, Hall of Fame votes",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQeEjIApIILlJlSW93rK9Cduq5bTwWfG3B9d5uhW8LMvIOexALsJEzuGQBDoY"
-        }
-      ]
-    },
-    {
-      "query": "earthquake now",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-28T17:30:00Z",
-      "related_news_urls": [
-        "https://www.nbclosangeles.com/news/local/preliminary-5-2-earthquake-rattles-manhattan-beach/3975678/",
-        "https://www.latimes.com/california/story/2026-11-22/california-earthquake-magnitude-3-3-quake-rumbles-near-el-segundo",
-        "https://www.cbsnews.com/losangeles/news/4-7-earthquake-manhattan-beach/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww",
-      "image_credit": "NBC Los Angeles",
-      "news": [
-        {
-          "url": "https://www.nbclosangeles.com/news/local/preliminary-5-2-earthquake-rattles-manhattan-beach/3975678/",
-          "title": "Preliminary 5.2 earthquake rattles Manhattan Beach",
-          "publisher": "NBC Los Angeles",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww"
-        },
-        {
-          "url": "https://www.latimes.com/california/story/2026-11-22/california-earthquake-magnitude-3-3-quake-rumbles-near-el-segundo",
-          "title": "Magnitude 3.3 earthquake rumbles near El Segundo",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXsybt3xBcQQSOqet4LD5h6HY22jw3BovH8U_qCAiuw-HW58aw1kZxifu0Fs"
-        },
-        {
-          "url": "https://www.cbsnews.com/losangeles/news/4-7-earthquake-manhattan-beach/",
-          "title": "Preliminary 4.7 earthquake rocks off Los Angeles County coast",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKa7XDDYnupUfTcx-zYB5FTX2nFVjV9drU3UcKh4Hc6To3TPPbnX4uZNFYFIM"
-        }
-      ]
-    },
-    {
-      "query": "earthquake",
-      "approx_searches": "200000+",
-      "published_at": "2026-11-28T17:30:00Z",
-      "related_news_urls": [
-        "https://watchers.news/epicenter/fiber-optic-sensing-small-california-earthquake-rupture/",
-        "https://news.rice.edu/news/2026/new-technology-unearths-surprising-complexity-small-earthquakes",
-        "https://en.sedaily.com/business/2026/11/27/buried-telecom-fiber-turns-into-7000-seismometers-in-korean"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnIMu_Vs01GPUtDw65Lb7cyuwBffKaQCN4JZbMK4K_YRXllcd7W7tM3FPxnA",
-      "image_credit": "The Watchers - Watching the world evolve and transform",
-      "news": [
-        {
-          "url": "https://watchers.news/epicenter/fiber-optic-sensing-small-california-earthquake-rupture/",
-          "title": "Fiber-optic sensing reveals hidden rupture stages inside a small California earthquake",
-          "publisher": "The Watchers - Watching the world evolve and transform",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnIMu_Vs01GPUtDw65Lb7cyuwBffKaQCN4JZbMK4K_YRXllcd7W7tM3FPxnA"
-        },
-        {
-          "url": "https://news.rice.edu/news/2026/new-technology-unearths-surprising-complexity-small-earthquakes",
-          "title": "New technology unearths surprising complexity in small earthquakes",
-          "publisher": "Rice University",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSYAQb5U0r_qD3sAYQQbYOHVNFe6AxBKSIRpQf49BDJ1TXd-S2aY8rYz6PdY"
-        },
-        {
-          "url": "https://en.sedaily.com/business/2026/11/27/buried-telecom-fiber-turns-into-7000-seismometers-in-korean",
-          "title": "Buried Telecom Fiber Turns Into 7,000 Seismometers in Korean Study",
-          "publisher": "Seoul Economic Daily",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThPVXEq16jEAJ8uSZv_4T-PKu0sXDTiQijWxaYbJo5qfYoRhFwyDOTBkPV-0o"
-        }
-      ]
-    },
-    {
-      "query": "earthquake california today",
-      "approx_searches": "10000+",
-      "published_at": "2026-11-28T17:30:00Z",
-      "related_news_urls": [
-        "https://www.kcra.com/article/tuolumne-county-earthquake/74554032",
-        "https://www.yahoo.com/news/weather-news/articles/two-earthquakes-jolt-california-overnight-154411466.html",
-        "https://www.sacbee.com/news/california/earthquakes/article318288028.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfp81V4DEkqQt7jpxkr-qYUpUV9rhtLST0blV9e7HBg-Z95NH7trPXiNCbze0",
-      "image_credit": "KCRA",
-      "news": [
-        {
-          "url": "https://www.kcra.com/article/tuolumne-county-earthquake/74554032",
-          "title": "3.0-magnitude earthquake hits in Tuolumne County, USGS says",
-          "publisher": "KCRA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfp81V4DEkqQt7jpxkr-qYUpUV9rhtLST0blV9e7HBg-Z95NH7trPXiNCbze0"
-        },
-        {
-          "url": "https://www.yahoo.com/news/weather-news/articles/two-earthquakes-jolt-california-overnight-154411466.html",
-          "title": "Two earthquakes jolt California overnight Saturday as rumblings increase in size",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqhUtIWNHa-CZesTXa--5cJjvsZEUZuqYyrUJCQFFfQvQ8tdhrWTDBwse6ghI"
-        },
-        {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318288028.html",
-          "title": "3.2 magnitude earthquake shakes near San Lucas, CA on Nov. 27",
-          "publisher": "Sacramento Bee",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvd3waHF_phM_AaJ1EEd9TPGzsc8wPXYk_huPGQy-5g9aO9MiszZHgzKhYZpk"
-        }
-      ]
-    },
-    {
-      "query": "earthquakes",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T17:30:00Z",
-      "related_news_urls": [
-        "https://www.foxweather.com/extreme-weather/strong-magnitude-6-7-earthquake-strikes-far-east-russia",
-        "https://www.voiceofemirates.com/en/news/2026/11/28/a-6-7-magnitude-earthquake-strikes-near-yelizovo-in-the-kamchatka-peninsula-of-eastern-russia/",
-        "https://egyptian-gazette.com/world/6-7-magnitude-quake-hits-russias-kamchatka-region/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLEf--ZbNuJs06MnVBiqz0VYz7L4wY-GGhRelTSx4ftPWG2KQJ7VpcPEfHWqs",
-      "image_credit": "FOX Weather",
-      "news": [
-        {
-          "url": "https://www.foxweather.com/extreme-weather/strong-magnitude-6-7-earthquake-strikes-far-east-russia",
-          "title": "Strong magnitude 6.7 earthquake strikes far-east Russia along active Pacific Ring of Fire",
-          "publisher": "FOX Weather",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLEf--ZbNuJs06MnVBiqz0VYz7L4wY-GGhRelTSx4ftPWG2KQJ7VpcPEfHWqs"
-        },
-        {
-          "url": "https://www.voiceofemirates.com/en/news/2026/11/28/a-6-7-magnitude-earthquake-strikes-near-yelizovo-in-the-kamchatka-peninsula-of-eastern-russia/",
-          "title": "A 6.7 magnitude earthquake strikes near Yelizovo in the Kamchatka Peninsula of eastern Russia",
-          "publisher": "صوت الإمارات",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs3fwNnh5ap5R-MlJeRp_WB1Tdvxd8PADgSqxGydXA4XEul_nX1r7Kwdxv0n4"
-        },
-        {
-          "url": "https://egyptian-gazette.com/world/6-7-magnitude-quake-hits-russias-kamchatka-region/",
-          "title": "6.7-magnitude quake hits Russia’s Kamchatka region",
-          "publisher": "Egyptian Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ98Gm0T5jPZvqlmtQe_5zXiM47Z5DaAgnPZCXJVrMYqhTRJ4WXCWh2QetloQw"
-        }
-      ]
-    },
-    {
-      "query": "luke fahey",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T17:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/ohio-state-michigan-rivalry-quarterback-120007884.html",
-        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165763/luke-fahey-troy-smith-and-an-unusual-coincidence-in-the-game-against-michigan",
-        "https://buckeyeswire.usatoday.com/story/sports/college/buckeyes/football/2026/11/25/ohio-state-football-troy-smith-victory-bell-ringer/92952917007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1vZHPtjZ9HWM37WvqrEsiJgHsJjjYQMTPfRqdTI4HSpeVuEZK6-kJ9H0SqLY",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSllw5B1lQwJqb2VJHafaGU76BhL0kr4LO_mgLQ7CwIBrbmwfKn_SF9AZUXkgs",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/articles/ohio-state-michigan-rivalry-quarterback-120007884.html",
-          "title": "The Ohio State-Michigan Rivalry Has a New Quarterback Storyline Nobody Expected",
+          "url": "https://sports.yahoo.com/college-football/articles/watch-coastal-carolina-vs-james-175500520.html",
+          "title": "How to watch Coastal Carolina vs James Madison: Live stream NCAA College Football, TV channel",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1vZHPtjZ9HWM37WvqrEsiJgHsJjjYQMTPfRqdTI4HSpeVuEZK6-kJ9H0SqLY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSllw5B1lQwJqb2VJHafaGU76BhL0kr4LO_mgLQ7CwIBrbmwfKn_SF9AZUXkgs"
         },
         {
-          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165763/luke-fahey-troy-smith-and-an-unusual-coincidence-in-the-game-against-michigan",
-          "title": "Troy Smith, Luke Fahey and an Unusual Coincidence in the Game Against Michigan",
-          "publisher": "Eleven Warriors",
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/coastal-carolina-chanticleers-vs-james-madison-dukes-prediction-odds-2026-11-28/",
+          "title": "Coastal Carolina vs James Madison Prediction, Picks & Odds | 28 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9BykXzcFr9RVTWn7STXfi3OTAiKz3G_7UXs3mh2Jy2FpsfvP5Gkame_Y158"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcPd-FURvkQdl2zEa929luSWTdsOGCG9ClAMzdMuwAbilFIaS32JCEzbDESdc"
         },
         {
-          "url": "https://buckeyeswire.usatoday.com/story/sports/college/buckeyes/football/2026/11/25/ohio-state-football-troy-smith-victory-bell-ringer/92952917007/",
-          "title": "Troy Smith will be the final Victory Bell ringer for the 2026 season",
-          "publisher": "Buckeyes Wire",
+          "url": "https://www.dnronline.com/sports/level/college/james_madison_university/ryan-beard-coastal-carolina-football-embracing-opportunity-in-season-finale-at-jmu/article_24ef76d7-8270-509f-8625-4916ab213fdd.html",
+          "title": "Ryan Beard, Coastal Carolina football embracing opportunity in season finale at JMU",
+          "publisher": "Daily News-Record",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUzoQe10cpAANq9QWVbCog6VBxECkVAqY4n_qjyoq5yQiy8DcTpCobOXlMJ9c"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhcbSj7om4ZV88gLndSyL7798iAF-2E4VxcEBvKC38-gGoSxpWqON566kCnr0"
         }
       ]
     },
     {
-      "query": "temblor hoy",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T17:30:00Z",
+      "query": "grambling st vs southern u",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:10:00Z",
       "related_news_urls": [
-        "https://www.pulzo.com/mundo/estados-unidos/sismo-de-magnitud-4-4-sacude-colorado-y-nuevo-mexico-epicentro-cerca-de-weston-segun-usgs-PP5363969A",
-        "https://www.minuto60.com/mundo/terremoto-hoy-25-noviembre-ee-uu-magnitud-epicentro/19558",
-        "https://www.elnuevodia.com.co/mundo/fuerte-sismo-se-registro-en-el-mundo-hoy-25-de-noviembre-esto-se-sabe-541652"
+        "https://www.wwltv.com/article/sports/local-sports/bayou-classic-tv-broadcast-changes-due-to-macys-parade-postponement/289-4702ae29-122c-41d2-9a86-10e0fa300939",
+        "https://sports.yahoo.com/college-football/articles/bayou-classic-returns-saturday-53rd-170000353.html",
+        "https://www.wdsu.com/article/nopd-warns-against-unauthorized-rideshare-drivers-during-bayou-classic-weekend/74552784"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6A4vfwa840gnlNFh_YBZePiNvUyZWsxXafkfPKfLui0qfBb3d7XiAVt5gjU",
-      "image_credit": "Pulzo",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtq3klWJ58ip-4RC01ROZA2TAIhE0iooTxe2TI-iZgh3TtPTuVXrNpbg9r6S4",
+      "image_credit": "WWLTV.com",
       "news": [
         {
-          "url": "https://www.pulzo.com/mundo/estados-unidos/sismo-de-magnitud-4-4-sacude-colorado-y-nuevo-mexico-epicentro-cerca-de-weston-segun-usgs-PP5363969A",
-          "title": "Sismo de magnitud 4,4 sacude la frontera entre Colorado y Nuevo México la madrugada del 25 de noviembre de 2026",
-          "publisher": "Pulzo",
+          "url": "https://www.wwltv.com/article/sports/local-sports/bayou-classic-tv-broadcast-changes-due-to-macys-parade-postponement/289-4702ae29-122c-41d2-9a86-10e0fa300939",
+          "title": "Bayou Classic TV broadcast changes due to Macy's parade postponement",
+          "publisher": "WWLTV.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6A4vfwa840gnlNFh_YBZePiNvUyZWsxXafkfPKfLui0qfBb3d7XiAVt5gjU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtq3klWJ58ip-4RC01ROZA2TAIhE0iooTxe2TI-iZgh3TtPTuVXrNpbg9r6S4"
         },
         {
-          "url": "https://www.minuto60.com/mundo/terremoto-hoy-25-noviembre-ee-uu-magnitud-epicentro/19558",
-          "title": "Fuerte temblor hoy 25 de noviembre en Estados Unidos: magnitud y epicentro del sismo",
-          "publisher": "Minuto60",
+          "url": "https://sports.yahoo.com/college-football/articles/bayou-classic-returns-saturday-53rd-170000353.html",
+          "title": "Bayou Classic returns Saturday for its 53rd year",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxW_mtfmsu4hTHl1sWBfSIC83csv6aSmSZa73FfEz3vwg6ZHn7kPJQGr0S8q8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtyL1MsmsBEwsoHFwK5-_QFySAjXdC0vuKdMKLDVMVTJJz-bQlRitI2bx6O9o"
         },
         {
-          "url": "https://www.elnuevodia.com.co/mundo/fuerte-sismo-se-registro-en-el-mundo-hoy-25-de-noviembre-esto-se-sabe-541652",
-          "title": "Fuerte sismo se registró en el mundo hoy 25 de noviembre: esto se sabe",
-          "publisher": "El Nuevo Dia (Colombia)",
+          "url": "https://www.wdsu.com/article/nopd-warns-against-unauthorized-rideshare-drivers-during-bayou-classic-weekend/74552784",
+          "title": "NOPD warns against unauthorized rideshare drivers during Bayou Classic weekend",
+          "publisher": "WDSU",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB_rCSutgEBru5WnxnRcNwb0SVhol4rb5D071m37WfUQSUT3rGShoL52FFq3o"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-cCmaTA-OiNS8PTUt384OwPH6X1m9X1J5cEW-bFw8ao1XyAM7nY2PVN4iEQ"
         }
       ]
     },
     {
-      "query": "earthquake san diego",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T17:30:00Z",
+      "query": "nolan james jr",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T18:10:00Z",
       "related_news_urls": [
-        "https://www.nbcsandiego.com/news/local/3-6-quake-reported-eastern-san-diego-county/4106824/",
-        "https://www.cbs8.com/article/weather/earthquakes/did-you-feel-it-earthquake-recorded-near-mount-laguna/509-05997294-f55c-4b0f-9a08-0a60ba15232c",
-        "https://www.sacbee.com/news/california/earthquakes/article318263485.html"
+        "https://www.si.com/college/notredame/football/notre-dame-running-back-nolan-james-jr-all-purpose-star",
+        "https://www.on3.com/teams/notre-dame-fighting-irish/news/rb-nolan-james-jr-keeps-proving-his-value-to-notre-dames-offense/",
+        "https://www.rotoballer.com/player-news/nolan-james-jr-looking-to-stay-hot-in-regular-season-finale/2002872"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQowMK32qOvO4D_Ov6jF4ry-2oWa4t5kqIu3jk2astZkY0AUtqGMFC0yMSo9iQ",
-      "image_credit": "NBC 7 San Diego",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjAE1PD3L2XL8Jpv9PjdkhDIC2zwCjzeKr3lMdxUlvGfPPtx_xo26UvIM4qOg",
+      "image_credit": "Sports Illustrated",
       "news": [
         {
-          "url": "https://www.nbcsandiego.com/news/local/3-6-quake-reported-eastern-san-diego-county/4106824/",
-          "title": "3.6 quake reported in eastern San Diego County near Mount Laguna",
-          "publisher": "NBC 7 San Diego",
+          "url": "https://www.si.com/college/notredame/football/notre-dame-running-back-nolan-james-jr-all-purpose-star",
+          "title": "Notre Dame Has an All-Purpose Star in Running Back Nolan James Jr.",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQowMK32qOvO4D_Ov6jF4ry-2oWa4t5kqIu3jk2astZkY0AUtqGMFC0yMSo9iQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjAE1PD3L2XL8Jpv9PjdkhDIC2zwCjzeKr3lMdxUlvGfPPtx_xo26UvIM4qOg"
         },
         {
-          "url": "https://www.cbs8.com/article/weather/earthquakes/did-you-feel-it-earthquake-recorded-near-mount-laguna/509-05997294-f55c-4b0f-9a08-0a60ba15232c",
-          "title": "Did you feel it? Earthquake recorded near Mount Laguna",
-          "publisher": "cbs8.com",
+          "url": "https://www.on3.com/teams/notre-dame-fighting-irish/news/rb-nolan-james-jr-keeps-proving-his-value-to-notre-dames-offense/",
+          "title": "RB Nolan James Jr. keeps proving his value to Notre Dame's offense",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmmN2rZ4TNHc3YFHS1mSsPrtqYRfD8Sen8sRtkbVi3qeNhMznyPX0o-_I1-s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT0cpPapcdSsnJmvIPYSuPE7cE_SakEAdYOIZjge7RNc0YYeXSgbF3IZE3WE0"
         },
         {
-          "url": "https://www.sacbee.com/news/california/earthquakes/article318263485.html",
-          "title": "Nov. 25: Earthquake measuring 2.8 shakes region near Ferndale, CA",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.rotoballer.com/player-news/nolan-james-jr-looking-to-stay-hot-in-regular-season-finale/2002872",
+          "title": "Nolan James Jr. Looking to Stay Hot in Regular Season Finale - College Football News | Fantasy CFB",
+          "publisher": "RotoBaller",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmYg4z5Vuj_cen2YnaVpKKdx56zbI4DAAUDr5mMazGnOI9rYQl5aSiEPfi0nk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4kWcOjlEfSJ14D6VwWg2LfJUMqYCyvOeSl-BIdbkbCxKa4RxDNlvW_8458I8"
+        }
+      ]
+    },
+    {
+      "query": "ucf vs colorado",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T18:00:00Z",
+      "related_news_urls": [
+        "https://www.denverpost.com/2026/11/27/cu-buffs-ucf-football-2026-tv-predictions/",
+        "https://sports.yahoo.com/college-football/articles/colorado-buffaloes-vs-ucf-knights-135500035.html",
+        "https://www.coloradoan.com/story/sports/college/2026/11/28/ucf-colorado-channel-today-time-tv-schedule-streaming-info/92946645007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyKFcHFP7S-EmRMUGnywvSvu2i9sPfHr1Nq55XEeiWLYPsX_Be7WG3zu3Dyc8",
+      "image_credit": "The Denver Post",
+      "news": [
+        {
+          "url": "https://www.denverpost.com/2026/11/27/cu-buffs-ucf-football-2026-tv-predictions/",
+          "title": "CU Buffs vs. UCF football: How to watch, keys to the game, odds, staff predictions",
+          "publisher": "The Denver Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyKFcHFP7S-EmRMUGnywvSvu2i9sPfHr1Nq55XEeiWLYPsX_Be7WG3zu3Dyc8"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/colorado-buffaloes-vs-ucf-knights-135500035.html",
+          "title": "Colorado Buffaloes vs. UCF Knights Final Prediction",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_8p0lB2c92caQDWbiCERtw7CVWqefgumM10N8kmbjDRFGEMTCVjijb2pzr58"
+        },
+        {
+          "url": "https://www.coloradoan.com/story/sports/college/2026/11/28/ucf-colorado-channel-today-time-tv-schedule-streaming-info/92946645007/",
+          "title": "Where to watch UCF vs Colorado today: Time, TV channel for Week 13",
+          "publisher": "The Coloradoan",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqKa4mQv2onHQcaHVjES-R00u3stWeF6ZQFKbbKeLVgssFcOtjhU8oEcaQkiI"
+        }
+      ]
+    },
+    {
+      "query": "chrisean rock",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:00:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/videos/chrisean-rock-reveals-shes-pregnant-174805702.html",
+        "https://theshaderoom.com/chrisean-rock-pregnancy-announcement-blueface-reacts-shock-fans-shade-room/",
+        "https://www.tmz.com/2026/11/28/chrisean-rock-pregnant/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxggvGqEC8v7SF9J2nuu7yziFb16EIbR_RfXUpe7iEcagTUcnRRZvxXCayTSI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/videos/chrisean-rock-reveals-shes-pregnant-174805702.html",
+          "title": "Chrisean Rock Reveals She's Pregnant By Blueface Again",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxggvGqEC8v7SF9J2nuu7yziFb16EIbR_RfXUpe7iEcagTUcnRRZvxXCayTSI"
+        },
+        {
+          "url": "https://theshaderoom.com/chrisean-rock-pregnancy-announcement-blueface-reacts-shock-fans-shade-room/",
+          "title": "Baby On Board! Chrisean Rock Shakes Up The Internet After Revealing She's Pregnant During Livestream (VIDEO)",
+          "publisher": "The Shade Room",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQndJkR4-4RKMOlG8acAFKo7mPXGgNuu1KW9ZTQGxDOD67pbbTC5gKm0qooBzc"
+        },
+        {
+          "url": "https://www.tmz.com/2026/11/28/chrisean-rock-pregnant/",
+          "title": "Chrisean Rock Reveals She’s Pregnant With Her Second Child",
+          "publisher": "TMZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloR5H054yInsp0tDLDkb9e3-98d0Rj33M9qco79ur14EuH-wsOLIf_oWf6H0"
+        }
+      ]
+    },
+    {
+      "query": "killington world cup",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T18:00:00Z",
+      "related_news_urls": [
+        "https://www.bostonglobe.com/2026/11/23/sports/mikaela-shiffrin-killington-return/",
+        "https://www.wcax.com/2026/11/27/fis-world-cup-returns-killington-amid-foggy-wet-weather/",
+        "https://www.nbcsports.com/olympics/news/mikaela-shiffrin-killington-how-to-watch-world-cup-alpine-skiing"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtXFMmcA95NVJbEE27rqA_IPDzdaSvcpvQKr6iZXLanqEkrOz4gLCXCLx1NOU",
+      "image_credit": "The Boston Globe",
+      "news": [
+        {
+          "url": "https://www.bostonglobe.com/2026/11/23/sports/mikaela-shiffrin-killington-return/",
+          "title": "Mikaela Shiffrin channels Killington triumphs over trauma in return to ski hill where she crashed",
+          "publisher": "The Boston Globe",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtXFMmcA95NVJbEE27rqA_IPDzdaSvcpvQKr6iZXLanqEkrOz4gLCXCLx1NOU"
+        },
+        {
+          "url": "https://www.wcax.com/2026/11/27/fis-world-cup-returns-killington-amid-foggy-wet-weather/",
+          "title": "FIS World Cup returns to Killington amid foggy, wet weather",
+          "publisher": "WCAX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs11rVkwf1Pu6ki8bIM-zATqXfNR2Hip8cKLvvuh2OHT_QL-JggOpUJFr9e9I"
+        },
+        {
+          "url": "https://www.nbcsports.com/olympics/news/mikaela-shiffrin-killington-how-to-watch-world-cup-alpine-skiing",
+          "title": "Stifel Killington Cup: How to watch Mikaela Shiffrin at Alpine skiing World Cup",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB0YnYToUtVnmDU0QuulL9pt7rRmIastLJRwNBFP9YfYvHhDd-iAXaDWxR094"
+        }
+      ]
+    },
+    {
+      "query": "lax earthquake",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T17:50:00Z",
+      "related_news_urls": [
+        "https://demokratis.co.id/en/california-earthquakes-lax-fire",
+        "https://cwibc.co.id/en/california-small-earthquakes-november",
+        "https://bsinews.id/en/california-earthquake-manhattan-beach-geysers"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHIyTXMAeDc62Vnq20S7RyDwlQCwPBC0YYFH9SltnEfoBtqenbd1iOV8dkaA",
+      "image_credit": "Demokratis.co.id",
+      "news": [
+        {
+          "url": "https://demokratis.co.id/en/california-earthquakes-lax-fire",
+          "title": "California Records Separate Earthquakes as LAX Fire Emerges",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHIyTXMAeDc62Vnq20S7RyDwlQCwPBC0YYFH9SltnEfoBtqenbd1iOV8dkaA"
+        },
+        {
+          "url": "https://cwibc.co.id/en/california-small-earthquakes-november",
+          "title": "Small Earthquakes Shake Two California Areas in November",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwm0ufPoRX3ohCBYVUQ5ZhqCC0Y_1Bh_jLfRgktfb_krx96OdvKca8eEa63M"
+        },
+        {
+          "url": "https://bsinews.id/en/california-earthquake-manhattan-beach-geysers",
+          "title": "California Records 4.7 and 2.1 Magnitude Earthquakes",
+          "publisher": "bsinews.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv0ga6H5wBoASo-nP75Z9ni08X0eo2c6Hw9KyCxGE68j8O_TJJRaFsTu_0LRY"
+        }
+      ]
+    },
+    {
+      "query": "lehigh football",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T17:50:00Z",
+      "related_news_urls": [
+        "https://cwibc.co.id/en/lehigh-albany-fcs-playoff-preview",
+        "https://sports.yahoo.com/college-football/articles/ualbany-football-ready-let-rip-203000338.html",
+        "https://www.college-sports-journal.com/fcs-playoffs-round-one-preview-hidden-history-gives-albany-lehigh-playoff-game-extra-juice/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9gltv41W55l-bwebov80DpxTUVBywi62pqVP6iEXX2PonZ5aepyTfO9NOB8",
+      "image_credit": "cwibc.co.id",
+      "news": [
+        {
+          "url": "https://cwibc.co.id/en/lehigh-albany-fcs-playoff-preview",
+          "title": "Lehigh Faces Albany Behind Yoder in FCS Playoff Opener",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9gltv41W55l-bwebov80DpxTUVBywi62pqVP6iEXX2PonZ5aepyTfO9NOB8"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/ualbany-football-ready-let-rip-203000338.html",
+          "title": "UAlbany football ready to 'let it rip' as underdog at Lehigh in FCS playoffs",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zsw574r73izYMo6TnVBMcwCfMfba895wWRdsMRXUXZ2PdBXoT15TEftHTx4"
+        },
+        {
+          "url": "https://www.college-sports-journal.com/fcs-playoffs-round-one-preview-hidden-history-gives-albany-lehigh-playoff-game-extra-juice/",
+          "title": "FCS PLAYOFFS ROUND ONE PREVIEW: Hidden History Gives UAlbany/Lehigh Playoff Game Extra Juice",
+          "publisher": "College Sports Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6toszPyuaGSS0jJsmqYs-MPyE7aKQGYyDkvuKTRuHY0PP6TM4Afzk60fm0k"
+        }
+      ]
+    },
+    {
+      "query": "lax",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T17:50:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/news/us/articles/traveler-says-los-angeles-airport-050000283.html",
+        "https://www.the-sun.com/money/17366723/los-angeles-airport-tipping-crowns-restaurant-bar/",
+        "https://nypost.com/2026/11/25/lifestyle/lax-traveler-exposes-airport-restaurants-sneaky-auto-tip-policy/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJdFvSEsSo-Xu4SwmzAzlLHic_yor8A4xSh0YYN0OWVOsAMhFw-bInNW4Onw",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/news/us/articles/traveler-says-los-angeles-airport-050000283.html",
+          "title": "Traveler says a Los Angeles airport bar added 20% to his $120.25 tab, then asked him to tip again: ‘It’s just taking advantage of travelers’",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJdFvSEsSo-Xu4SwmzAzlLHic_yor8A4xSh0YYN0OWVOsAMhFw-bInNW4Onw"
+        },
+        {
+          "url": "https://www.the-sun.com/money/17366723/los-angeles-airport-tipping-crowns-restaurant-bar/",
+          "title": "US airport diners could be asked to tip TWICE under little-known policy that added $24 to traveler’s drinks bill",
+          "publisher": "The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-thxruzGHZA8IiMRQ75wOC-joKZDyeooHao2zvTQnEE4TxeYxN731SEAA5tM"
+        },
+        {
+          "url": "https://nypost.com/2026/11/25/lifestyle/lax-traveler-exposes-airport-restaurants-sneaky-auto-tip-policy/",
+          "title": "LAX passenger exposes ‘sneaky’ auto-tip at airport restaurant — prompting rallying calls for ‘uprising’",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJMClX_L0FB26ZY242FcNSJrNqjpMIL96KKvfXmSw-WJ2PODy1I4ISrf6TpI"
         }
       ]
     }
