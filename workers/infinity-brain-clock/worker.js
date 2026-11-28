@@ -1111,11 +1111,21 @@ export class BrainClock extends DurableObject{
     await this.ctx.storage.put(cacheKey,catalog);
    }
    if(body.action==='list_repositories')return {ok:true,status:'repository_catalog_read',repositories:catalog.repositories,complete:true};
-   return suggestRepositories(runtime,body.request,catalog.repositories);
+   const quota=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+   return suggestRepositories(quota?{...runtime,WRITER_AI:undefined}:runtime,body.request,catalog.repositories);
   }
   const repository=validateRepository(body.repository),leaseKey=repositoryLockKey(repository);
   const initial=await this.ctx.blockConcurrencyWhile(async()=>{
    const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
+   if(body.action==='assist'){
+    const quota=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+    if(quota){
+     const record={ok:false,status:'blocked',repository,action:body.action,requestId:body.requestId,
+      receipts:[],...quota,retryScheduled:false,mutationSubmitted:false,finishedAt:new Date().toISOString()};
+     await this.ctx.storage.put(key,record);
+     return {existing:record};
+    }
+   }
    if(await repositoryIsLocked(this.ctx.storage,repository,Date.now()))return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
    let bitContext=null;
    if(this.env.BUBBLE_BITS_ENABLED==='1'){
@@ -1133,6 +1143,31 @@ export class BrainClock extends DurableObject{
   // The same ID is used to inspect results after a phone/network timeout.
   this.ctx.waitUntil(this.completeDirectGithub(body,record,key,leaseKey));
   return record;
+ }
+ async directModel(body,leaseKey,model,options){
+  const shared=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+  if(shared)throw providerQuotaError(shared);
+  const current=await this.ctx.storage.get(leaseKey);
+  if(current?.directRequestId!==body.requestId||!Number.isSafeInteger(current.leaseUntil)||current.leaseUntil<=Date.now())throw Error('writer_lease_rejected');
+  let answer;
+  try{answer=await this.env.WRITER_AI.run(model,options);}
+  catch(error){
+   const quota=workersAiQuotaFailure(error);
+   if(!quota)throw error;
+   // Only an actual inference refusal under this still-current direct lease
+   // may pause the shared provider. No source/caller/tool error can create it.
+   const saved=await this.ctx.storage.transaction(async tx=>{
+    const held=await tx.get(leaseKey);
+    if(held?.directRequestId!==body.requestId||!Number.isSafeInteger(held.leaseUntil)||held.leaseUntil<=Date.now())return false;
+    await tx.put(RUNNER_PROVIDER_QUOTA,quota);
+    return true;
+   });
+   if(!saved)throw Error('writer_lease_rejected');
+   throw providerQuotaError(quota);
+  }
+  const held=await this.ctx.storage.get(leaseKey);
+  if(held?.directRequestId!==body.requestId||!Number.isSafeInteger(held.leaseUntil)||held.leaseUntil<=Date.now())throw Error('writer_lease_rejected');
+  return answer;
  }
  async completeDirectGithub(body,record,key,leaseKey){
   const repository=record.repository;
@@ -1174,14 +1209,18 @@ export class BrainClock extends DurableObject{
   };
   try{
    const runtime=await githubEnvironment(this.env,this.ctx.storage);
-   const result=body.action==='assist'?await directGithubAgent(runtime,body,fetch,saveReceipt):await githubOperation(runtime,body);
+   const modelRuntime=body.action==='assist'&&runtime.WRITER_AI?{...runtime,
+    WRITER_AI:{run:(model,options)=>this.directModel(body,leaseKey,model,options)}}:runtime;
+   const result=body.action==='assist'?await directGithubAgent(modelRuntime,body,fetch,saveReceipt):await githubOperation(runtime,body);
    if(body.action!=='assist')await saveReceipt(result);
    const {receipts,...metadata}=result;
    Object.assign(record,metadata,{status:metadata.status||(metadata.ok?'complete':'blocked'),finishedAt:new Date().toISOString()});
    await this.ctx.storage.put(key,record);
    await this.emit('bubbles','black-box','direct GitHub outcome',repository+' · '+record.status+'. GitHub receipts shared with color bots; no deployment inferred.');
   }catch(error){
-   Object.assign(record,{ok:false,status:'blocked',error:String(error.message).slice(0,180),finishedAt:new Date().toISOString()});
+   const quota=activeRunnerProviderQuota(error);
+   Object.assign(record,{ok:false,status:'blocked',error:quota?.error||String(error.message).slice(0,180),
+    ...(quota?{...quota,retryScheduled:false}:{}),finishedAt:new Date().toISOString()});
    await this.ctx.storage.put(key,record);
   }finally{
    await this.ctx.storage.transaction(async tx=>{

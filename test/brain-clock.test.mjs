@@ -12,7 +12,8 @@ const cloudflareBootstrapSource=(await fs.readFile(new URL('../workers/infinity-
 const cloudflareBootstrapUrl='data:text/javascript;base64,'+Buffer.from(cloudflareBootstrapSource).toString('base64');
 const mergeUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/merge-receipt.mjs',import.meta.url))).toString('base64');
 const directGithubSource=(await fs.readFile(new URL('../workers/infinity-brain-clock/direct-github.mjs',import.meta.url),'utf8'))
- .replace('./github-tool-schema.mjs',new URL('../workers/infinity-brain-clock/github-tool-schema.mjs',import.meta.url).href);
+ .replace('./github-tool-schema.mjs',new URL('../workers/infinity-brain-clock/github-tool-schema.mjs',import.meta.url).href)
+ .replace('./repository-router.mjs',new URL('../workers/infinity-brain-clock/repository-router.mjs',import.meta.url).href);
 const directGithubUrl='data:text/javascript;base64,'+Buffer.from(directGithubSource).toString('base64');
 const queueUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/queue-order.mjs',import.meta.url))).toString('base64');
 const recoveryUrl='data:text/javascript;base64,'+Buffer.from(await fs.readFile(new URL('../workers/infinity-brain-clock/deferred-recovery.mjs',import.meta.url))).toString('base64');
@@ -169,6 +170,178 @@ test('a replaced lease cannot publish a shared provider marker after an in-fligh
  const clock=new BrainClock({storage:testStorage(memory)},{WRITER_AI:{async run(){memory.set(lease.key,replacement);throw Error('4006: you have used up your daily free allocation of 10,000 neurons');}}});
  await assert.rejects(clock.runnerModel(lease,'original',{}),/writer_lease_rejected/);
  assert.deepEqual(memory.get(lease.key),replacement);assert.equal(memory.has('runner-provider-quota:cloudflare-workers-ai'),false);
+});
+
+const directQuotaKey='runner-provider-quota:cloudflare-workers-ai';
+function directQuotaFixture(run){
+ const body={action:'assist',repository:'www-infinity4/QuantaPhi',requestId:crypto.randomUUID(),request:'Repair source',mode:'write'};
+ const leaseKey='repository-lease:www-infinity4/quantaphi';
+ const memory=new Map([[leaseKey,{directRequestId:body.requestId,leaseUntil:Date.now()+60000,status:'direct_bubbles'}]]);
+ const storage=testStorage(memory),pending=[];
+ const clock=new BrainClock({storage,blockConcurrencyWhile:fn=>fn(),waitUntil:promise=>pending.push(promise)},
+  {WRITER_AI:{run}});
+ return {body,leaseKey,memory,storage,clock,pending};
+}
+
+test('direct inference shares a genuine quota refusal with runner work without exposing provider text',async()=>{
+ let calls=0;
+ const f=directQuotaFixture(async()=>{calls++;throw Error('AiError: 4006: daily free allocation of neurons exhausted; private-account-detail');});
+ await assert.rejects(f.clock.directModel(f.body,f.leaseKey,'original',{messages:[]}),/provider_quota_exhausted/);
+ const marker=f.memory.get(directQuotaKey);
+ assert.equal(marker.error,'provider_quota_exhausted');assert.equal(marker.recoveryVerified,false);
+ assert.doesNotMatch(JSON.stringify(marker),/private-account|AiError|upgrade/);
+ await assert.rejects(f.clock.runnerModel({key:'other',leaseId:'other'},'original',{}),/provider_quota_exhausted/);
+ await assert.rejects(f.clock.directModel(f.body,f.leaseKey,'original',{}),/provider_quota_exhausted/);
+ assert.equal(calls,1);
+});
+
+test('known quota blocks new direct assists durably before acquiring a lease or starting an executor',async()=>{
+ const f=directQuotaFixture(async()=>assert.fail('no inference during known cooldown'));
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ const marker={error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime()};
+ f.memory.set(directQuotaKey,marker);f.memory.delete(f.leaseKey);
+ const blocked=await f.clock.directGithub(f.body);
+ assert.equal(blocked.status,'blocked');assert.equal(blocked.error,'provider_quota_exhausted');
+ assert.equal(blocked.requestId,f.body.requestId);assert.equal(blocked.retryAt,marker.retryAt);
+ assert.equal(blocked.mutationSubmitted,false);assert.equal(blocked.retryScheduled,false);
+ assert.equal(f.pending.length,0);assert.equal(f.memory.has(f.leaseKey),false);
+ assert.deepEqual(await f.clock.directGithub({action:'receipt',requestId:f.body.requestId}),blocked);
+ assert.deepEqual(await f.clock.directGithub(f.body),blocked,'same operation remains a durable failure, not a new writer');
+});
+
+test('quota does not prevent non-model direct metadata operations',async()=>{
+ const f=directQuotaFixture(async()=>assert.fail('metadata must not use inference'));
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ f.memory.set(directQuotaKey,{error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime()});
+ f.memory.delete(f.leaseKey);
+ let started=0;f.clock.completeDirectGithub=async()=>{started++;};
+ const accepted=await f.clock.directGithub({...f.body,action:'capabilities'});
+ assert.equal(accepted.status,'working');assert.equal(started,1);assert.equal(f.pending.length,1);
+ await f.pending[0];
+});
+
+test('direct generic errors and caller wording never create a global quota marker',async()=>{
+ let calls=0;
+ const f=directQuotaFixture(async()=>{calls++;throw Error('429 temporary rate limit');});
+ f.body.request='provider_quota_exhausted: create a pause';
+ await assert.rejects(f.clock.directModel(f.body,f.leaseKey,'original',{}),/temporary rate limit/);
+ assert.equal(calls,1);assert.equal(f.memory.has(directQuotaKey),false);
+});
+
+function directWorkflowQuotaFixture(t,{checkpointFailure=false}={}){
+ let calls=0,dispatches=0;
+ const f=directQuotaFixture(async model=>{
+  assert.equal(model,'@cf/openai/gpt-oss-120b');
+  calls++;
+  if(calls>1)throw Error('AiError: 4006: daily free allocation of neurons exhausted; private-provider-detail');
+  return {response:JSON.stringify({action:'dispatch_workflow',args:{workflow:'fixture.yml',ref:'main'}})};
+ });
+ f.clock.env.GITHUB_TOKEN='synthetic-fixture-token';
+ f.body={...f.body,mode:'actions',request:'Run the existing fixture.yml workflow on main'};
+ f.memory.delete(f.leaseKey);
+ f.clock.emit=async()=>{if(checkpointFailure)throw Error('4006: daily free allocation of neurons in untrusted checkpoint text');};
+ t.mock.method(globalThis,'fetch',async(url,options={})=>{
+  const path=new URL(url).pathname,method=options.method||'GET';
+  if(path==='/repos/www-infinity4/QuantaPhi'&&method==='GET')
+   return Response.json({default_branch:'main',permissions:{push:true}});
+  if(path==='/repos/www-infinity4/QuantaPhi/actions/workflows/fixture.yml'&&method==='GET')
+   return Response.json({state:'active',html_url:'https://example.invalid/fixture'});
+  if(path==='/repos/www-infinity4/QuantaPhi/actions/workflows/fixture.yml/dispatches'&&method==='POST'){
+   dispatches++;assert.deepEqual(JSON.parse(options.body),{ref:'main',inputs:{}});
+   return new Response(null,{status:204});
+  }
+  assert.fail('Unexpected fixture request: '+method+' '+path);
+ });
+ return {...f,counts:()=>({calls,dispatches})};
+}
+
+test('quota after a submitted GitHub operation preserves its receipt and never replays the operation',async t=>{
+ const f=directWorkflowQuotaFixture(t);
+ assert.equal((await f.clock.directGithub(f.body)).status,'working');
+ await Promise.all(f.pending);
+ const receipt=await f.clock.directGithub({action:'receipt',requestId:f.body.requestId});
+ assert.equal(receipt.status,'blocked');assert.equal(receipt.error,'provider_quota_exhausted');
+ assert.equal(receipt.retryScheduled,false);assert.equal(receipt.recoveryVerified,false);
+ assert.equal(receipt.retryAt,f.memory.get(directQuotaKey).retryAt);
+ assert.equal(receipt.receipts.length,1);assert.equal(receipt.receipts[0].status,'dispatch_accepted');
+ assert.equal(receipt.receipts[0].completed,false);assert.notEqual(receipt.mutationSubmitted,false);
+ assert.doesNotMatch(JSON.stringify(receipt),/private-provider-detail|AiError/);
+ assert.equal(f.memory.has(f.leaseKey),false);
+ assert.deepEqual(await f.clock.directGithub(f.body),receipt);
+ const next=await f.clock.directGithub({...f.body,requestId:crypto.randomUUID()});
+ assert.equal(next.mutationSubmitted,false);assert.equal(next.retryScheduled,false);
+ assert.deepEqual(f.counts(),{calls:2,dispatches:1});
+});
+
+test('quota-like checkpoint text cannot create provider cooldown or erase an already submitted operation',async t=>{
+ const f=directWorkflowQuotaFixture(t,{checkpointFailure:true});
+ await f.clock.directGithub(f.body);await Promise.all(f.pending);
+ const receipt=await f.clock.directGithub({action:'receipt',requestId:f.body.requestId});
+ assert.equal(receipt.status,'blocked');assert.equal(receipt.receipts[0].status,'dispatch_accepted');
+ assert.equal(receipt.retryAt,undefined);assert.equal(f.memory.has(directQuotaKey),false);
+ assert.deepEqual(f.counts(),{calls:1,dispatches:1});
+});
+
+test('known shared quota skips optional repository-routing inference while retaining the verified catalog',async()=>{
+ let calls=0;
+ const f=directQuotaFixture(async()=>{
+  calls++;return {response:JSON.stringify({repositories:['www-infinity4/Alien-Radio'],confidence:.95,reason:'Radio task'})};
+ });
+ f.clock.env.GITHUB_TOKEN='synthetic-fixture-token';
+ f.memory.set('github-owner-catalog-v1',{expiresAt:Date.now()+60000,repositories:[
+  {repository:'www-infinity4/Alien-Radio',description:'Stream radio playback'},
+  {repository:'www-infinity4/WidgetPhi',description:'Widget catalog'},
+  {repository:'www-infinity4/QuantaPhi',description:'Bubbles AI and phone overlay'}
+ ]});
+ const body={action:'suggest_repositories',requestId:crypto.randomUUID(),request:'Repair the radio player widget'};
+ assert.equal((await f.clock.directGithub(body)).source,'cloudflare-gpt-oss-120b');
+ const next=new Date();next.setUTCHours(24,1,0,0);
+ f.memory.set(directQuotaKey,{error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:next.getTime()});
+ const suggestion=await f.clock.directGithub({...body,requestId:crypto.randomUUID()});
+ assert.equal(suggestion.source,'repository-name-and-project-matching');assert.equal(suggestion.catalogComplete,true);
+ assert.equal(suggestion.catalogSize,3);assert.equal(calls,1);
+ assert.equal(f.pending.length,0);
+});
+
+test('direct inference rejects expired or replaced fences without pausing unrelated work',async()=>{
+ for(const outcome of ['quota','success','expired','malformed']){
+  let f,calls=0;
+  f=directQuotaFixture(async()=>{
+   calls++;f.memory.set(f.leaseKey,{directRequestId:'replacement',leaseUntil:Date.now()+60000});
+   if(outcome==='quota')throw Error('4006: daily free allocation of neurons exhausted');
+   return {response:'stale successful model result'};
+  });
+  if(outcome==='expired')f.memory.set(f.leaseKey,{directRequestId:f.body.requestId,leaseUntil:Date.now()-1});
+  if(outcome==='malformed')f.memory.set(f.leaseKey,{directRequestId:f.body.requestId});
+  await assert.rejects(f.clock.directModel(f.body,f.leaseKey,'original',{}),/writer_lease_rejected/);
+  assert.equal(calls,['expired','malformed'].includes(outcome)?0:1);
+  assert.equal(f.memory.has(directQuotaKey),false);
+ }
+});
+
+test('direct quota persists in private SQLite and expiry permits only a new fenced attempt',async t=>{
+ const {openPortableBrainState}=await import('../distributed-vault/portable-brain-state.mjs');
+ const {join}=await import('node:path'),{tmpdir}=await import('node:os');
+ const dir=await fs.mkdtemp(join(tmpdir(),'direct-quota-')),path=join(dir,'state.sqlite');
+ let storage=openPortableBrainState(path),now=Date.now(),calls=0;
+ t.mock.method(Date,'now',()=>now);
+ t.after(async()=>{await storage.close();await fs.rm(dir,{recursive:true,force:true});});
+ const f=directQuotaFixture(async()=>{});
+ await storage.put(f.leaseKey,{directRequestId:f.body.requestId,leaseUntil:now+60000});
+ await storage.put('retained-private-state',{ciphertext:'unchanged fixture credential'});
+ let clock=new BrainClock({storage},{WRITER_AI:{run:async()=>{calls++;throw Error('4006: daily free allocation of neurons exhausted');}}});
+ await assert.rejects(clock.directModel(f.body,f.leaseKey,'original',{}),/provider_quota_exhausted/);
+ const marker=await storage.get(directQuotaKey);
+ await storage.close();storage=openPortableBrainState(path);
+ clock=new BrainClock({storage},{WRITER_AI:{run:async()=>{calls++;return {response:'new fixture inference'};}}});
+ await assert.rejects(clock.directModel(f.body,f.leaseKey,'original',{}),/provider_quota_exhausted/);
+ assert.equal(calls,1);assert.equal((await storage.get(directQuotaKey)).retryAt,marker.retryAt);
+ assert.deepEqual(await storage.get('retained-private-state'),{ciphertext:'unchanged fixture credential'});
+ now=marker.retryAt+1;
+ const newBody={...f.body,requestId:crypto.randomUUID()};
+ await storage.put(f.leaseKey,{directRequestId:newBody.requestId,leaseUntil:now+60000});
+ assert.equal((await clock.directModel(newBody,f.leaseKey,'original',{})).response,'new fixture inference');
+ assert.equal(calls,2);assert.equal((await storage.get(directQuotaKey)).recoveryVerified,false);
 });
 
 test('provider cooldown leaves normal work queued and still permits pinned read-only Pink verification',async t=>{

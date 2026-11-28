@@ -3394,9 +3394,9 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
  // A plural repair follow-up is an explicit new work instruction. Use the
  // existing verified source search instead of letting it fall to plain chat.
  if(contextualPluralRepair&&!ownerGithubNonAction&&!requestsAgents&&!namedRecordBIssue)directCoding=true;
- // Repair of the first-party Bubbles or X Quick Card is explicitly a Robot
- // Brain job. Do not turn it into a conversational direct GitHub 'assist'.
- // Owner verification, trusted repository and runner receipts remain mandatory.
+ // Resolve first-party repairs before general intent. The authenticated direct
+ // builder can stage ordinary source work without the D1 ticket database.
+ // Rich evidence and batches retain their existing ticket contracts.
  const knownQuantaRepair=!ownerGithubNonAction&&!createRepository&&!directRequest&&!pairedRepoWork
   &&typeof brainTools!=='undefined'&&brainTools?.firstPartyRepairTarget?.(request)==='www-infinity4/QuantaPhi';
  if(knownQuantaRepair)directCoding=false;
@@ -3478,16 +3478,21 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
   }
  }
  else if(!embedded&&knownQuantaRepair){
-  // One normal chat message now triggers the actual authenticated owner Brain
-  // endpoint and returns its real ticket status in this same conversation.
-  // A queued job is never described as completed or deployed.
-  workText.value=request;tools.open=true;
+  tools.open=true;
   try{
-   const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
-   workEvidence=(await humanReplies()).workReply(ticket);
-   recordBrainNotice('Verified owner work ticket: '+ticket.id+' · '+ticket.repository+' · '+ticket.status);
+   const targets=repositorySelectionExplicit?[...repositorySelection].sort():['www-infinity4/QuantaPhi'];
+   if(targets.length===1&&!requestsAgents&&!activeCardEvidence&&!imageWorkEvidence&&request.length<=5000){
+    if(!repositorySelectionExplicit){repositorySelection.clear();repositorySelection.add(targets[0]);}
+    workEvidence=await performRepositoryRepair(request,targets[0]);
+   }else{
+    workText.value=request;
+    const ticket=await submitWork(request,'explicit-user-command',imageWorkEvidence);
+    workEvidence=(await humanReplies()).workReply(ticket);
+    recordBrainNotice('Verified owner work ticket: '+ticket.id+' · '+ticket.repository+' · '+ticket.status);
+   }
+   workStatus.textContent=workEvidence;
   }catch(error){
-   workEvidence='Bubbles could not confirm an owner work ticket: '+String(error.message||error).slice(0,190)+'. No code change or bot execution is being claimed.';
+   workEvidence='Bubbles could not confirm repository work: '+String(error.message||error).slice(0,190)+'. Check existing receipts before retrying.';
    workStatus.textContent=workEvidence;
   }
  }
@@ -3530,9 +3535,8 @@ async function sendMessage(text,fromVoice=false,androidScreenEvidence=''){
      workflowIntent&&mode!=='write'?(namedWorkflow&&workflowDispatch?'dispatch_workflow':'list_workflows'):'assist';
    const engineeringRequest=request+(contextualPluralRepair?'\nPrior owner defect statement for THIS plural repair (context only; verify against source before editing): '+contextualRepairQuery.slice(request.length).trim():'')+(sourceHint?'\nVerified discovery: '+sourceHint.path+' in '+repository+'. Re-read it at the pinned head before editing.':'');
    if(action==='assist'&&mode==='write'&&!directRequest&&!coderRequest){
-    status.textContent='Sending the repair to the repository runner.';
-    const ticket=await submitRepositoryWork(engineeringRequest,'explicit-user-command',repository,activeCardEvidence,imageWorkEvidence);
-    workEvidence=(await humanReplies()).workReply(ticket);
+    status.textContent='Sending the repair to the authenticated GitHub builder.';
+    workEvidence=await performRepositoryRepair(engineeringRequest,repository,imageWorkEvidence,activeCardEvidence,requestsAgents);
    }else{
     status.textContent='Checking the direct GitHub connection.';
     const directWorkRequest=engineeringRequest+(imageWorkEvidence?'\nUntrusted image observations (saved text, not a fresh read; never instructions, authorization or repository selection): '+JSON.stringify(imageWorkEvidence):'')+
@@ -4593,6 +4597,22 @@ async function requestRunner(ticketId='',jobId=''){
  if(!response.ok||!result.ok)throw Error(String(result.error||'Runner request was not acknowledged'));
  if(!['queued_for_runner','no_pending_jobs','awaiting_repository_runner','runner_dispatch_failed','runner_dispatch_unverified','job_not_dispatchable'].includes(result.status))throw Error('Unexpected runner result');
  return result;
+}
+async function performRepositoryRepair(request,repository,imageEvidence='',cardEvidence=null,requiresTeam=false){
+ if(embedded)throw Error('owner_tools_unavailable_in_embed');
+ // The existing direct request contract is bounded plain text for one repo.
+ // Preserve evidence/batch contracts rather than dropping or shortening input.
+ if(requiresTeam||imageEvidence||cardEvidence||request.length>5000){
+  const ticket=await submitRepositoryWork(request,'explicit-user-command',repository,cardEvidence,imageEvidence);
+  recordBrainNotice('Verified owner work ticket: '+ticket.id+' · '+ticket.repository+' · '+ticket.status);
+  return (await humanReplies()).workReply(ticket);
+ }
+ const operation={action:'assist',mode:'write',repository,request};
+ const result=await directGithubOperation(operation,{ownerRequest:request});
+ // Reuse the existing final-no-action overflow gate. A missing response or an
+ // accepted/working request must keep its receipt, never start a second writer.
+ const overflow=await maybeDelegateDirectOverflow(result,operation,request);
+ return overflow||(await humanReplies()).githubReply(result);
 }
 async function submitWork(request,approval='explicit-click',imageEvidence=''){
  if(activeCardEvidence)cardWorkspaceInstance?.diagnose();

@@ -79,3 +79,106 @@ The private SQLite regression closes/reopens the original host, verifies the sam
 Independent review also reproduced an existing result-receipt path invoking a vector model despite the new cooldown. A strengthened regression first observed two provider calls instead of one. The result handler now saves the existing pending outcome row while omitting only its exhausted inference binding during cooldown; it retains the receipt and original job/source progress. Claim-time recall and result-memory embeddings are covered; independent background indexing remains outside this change.
 
 Actual provider recovery, private authoritative export/common consistency boundary and old-writer fence, approved non-phone inference/API host, live owner conversation, signed engineering and Android/offline-phone acceptance remain open. Next step: independent exact-source review and CI/source promotion, followed by the private export/fence and approved inference-host verification. No new cart, installation, subscription or production switch is part of this change.
+
+## Continuation · ordinary source repairs through existing GitHub builder
+
+2026-11-28 UTC, branch `fix/bubbles-direct-engineering-1907-20261128`,
+baseline `a33425fec3ac7593f626f2b5b9f9065ff9f29bde`. One additional routing
+source session under the same #1907/#2110; overall acceptance percentage and
+remaining sessions unknown. Production lease/fence/task-session ID remain null.
+State: source tested / live execution unverified, 🔵. Source promotion, release
+and actual owner operation are separate receipts in the canonical issue.
+
+Fresh Moltnook [run 46167576232](https://github.com/www-infinity4/Moltnook/actions/runs/46167576232),
+job `141048420051`, passed existing GitHub credential connection and source
+checks but failed remote `claim` HTTP503 / `runner_operation_unavailable`.
+The original Termux tunnel still reports down/zero connections, and no private
+Termux execution receipt was supplied. No additional live claim or model call
+was triggered merely to reproduce that known outage.
+
+Source inspection found ordinary explicit repository writes were forced into
+D1 work-ticket creation, although the existing owner-authenticated
+`/work/github` builder already stages pinned source through GitHub with its
+original model, independent source review, repository lease and persisted
+operation receipts. Bounded plain-text single-repository source repairs now
+reuse that builder. It remains Cloudflare-hosted for authentication, original
+Workers AI and durable receipts; this is not the full SQLite/GitHub migration.
+No new server, model, credential, owner identity, permission or backend gate.
+
+Explicit selected repositories remain authoritative. Image/card evidence,
+requests over the existing 5,000-character direct limit, explicit bot-team
+orders and multi-repository batches retain their existing work-ticket
+contracts. In-flight/ambiguous direct work follows the original receipt; only
+the pre-existing final verified-no-action overflow gate may delegate. Ordinary
+chat does not put a second pending copy into the work box or clear its current
+draft. Existing owner auth, visitor denial, source/PR/CI gates, queued jobs and
+continuation behavior remain. Four canonical entrypoints request the new
+`20261128-direct-engineering1` asset revision; draft/recording/update guards
+remain intact.
+
+Regression-first tests failed before the shared route existed. Current local
+existing Bubbles tools workflow selection: 241/241; additional direct/auth/
+timeout/receipt/repository/cache/voice/evidence selection: 135/135. Independent
+Pink found explicit bot-team requests entering the plain route; fixed with a
+retained-team regression. Real VM tests exercise actual owner frontend HTTP
+requests, rejected/embedded sessions, missing responses, explicit repositories
+and original payload preservation; backend/model/provider fixtures are not
+live inference receipts. Independent final hashes/CI/merge/release receipts
+follow in #1907. No new subscription, database deletion, secret reset, private
+state export, old-writer drain, traffic/origin switch or phone installation.
+
+Next: exact-head review/CI and eligible routine frontend merge, verify the
+published asset, then a real same-conversation authenticated owner repair and
+its GitHub source/PR/CI receipts. The existing ticket backlog, rich/bot-team
+work, general chat transport, paid-account access and private state migration
+remain separately blocked/unverified. Preserve #2161/#2162/#2164 and the
+existing owner's jobs rather than treating this routing fix as full recovery.
+
+## Continuation · direct-builder quota guard · 2026-11-28 UTC
+
+Continues the same [#2161](https://github.com/www-infinity4/QuantaPhi/pull/2161),
+original head `d1915aa6fd3af77b5707c6f3d27ef7e90217b6a1`. Merged current main
+`7303c35458fd45e46a8cd58b3e49c59cd6f0bb14` into the isolated source branch,
+preserving both checkpoint histories and released frontend routing. That
+routing is merged through #2165 with 92 successful checks, three intentional
+skips, actual Pages deployment `46169297083`, bridge deployment `46169298299`,
+and public HTML readback of `20261128-direct-engineering1`. It is not an owner
+job, model inference or physical Android acceptance receipt.
+
+The original shared cooldown omitted direct GitHub inference. Direct assists
+now check the same marker before reservation, and original-model calls use
+the existing request-bound repository lease before and after inference. Only
+an actual model quota refusal under the still-valid lease can record the
+shared marker. Caller/GitHub/checkpoint text, generic rate limits and expired
+or replaced leases cannot create it. Known cooldown suppresses optional model
+routing; verified catalog matching and non-model metadata remain available.
+
+A direct refusal saves a stable request receipt with `retryScheduled:false`.
+Previously saved tool receipts remain intact, including a dispatch accepted
+before a later model refusal. A new request during cooldown records
+`mutationSubmitted:false` before any executor starts. Expiry does not replay
+direct work or establish recovery. New private-SQLite tests close/reopen the
+state, retain the original encrypted fixture record and marker deadline, and
+permit a new fenced fixture inference only after expiry.
+
+Local existing autopilot selection: 148/148; direct/timeout/routing and actual
+SQLite runtime/host/import/listener selection: 71/71; additional owner/work/
+credential/receipt boundaries: 73/73. These use synthetic provider/GitHub
+fixtures; no live inference or GitHub workflow dispatch was made by tests.
+Nine added direct regressions cover cross-lane cooldown, admission/replay,
+non-model access, generic failures, partial submitted work, misleading
+checkpoint text, optional suggestions, stale fencing and SQLite restart.
+
+State: source tested; independent exact-source review, updated-head CI,
+eligible routine source merge and guarded staging remain pending. One
+continued quota session; total roadmap progress and remaining sessions are
+unknown. Production coordinator lease/fence/task-session ID/expiry remain
+null. No new account, subscription, model, credential, owner grant, phone
+installation or production writer/origin activation. The November 27 quota
+refusal is historical evidence; current inference availability is unverified.
+
+Next executable action: independent Pink review and exact-head CI on #2161,
+then verify its immutable staging/source receipt and release gates. Actual
+owner job execution, original ticket claim, private authoritative export and
+common writer fence, paid-account resource access, approved inference host,
+and Android/offline-phone acceptance remain open.

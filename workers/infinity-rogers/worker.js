@@ -1,4 +1,15 @@
 const COLLAB_PATH='/v1/ai/collaborate';
+// Regenerable response cache only. Never touch usage, work, identity or receipts.
+async function pruneExpiredAiCache(db,{now=Date.now(),limit=16}={}){
+ if(!Number.isSafeInteger(now)||now<=86400000||!Number.isSafeInteger(limit)||limit<1||limit>250)
+  throw Error('ai_cache_retention_bounds_invalid');
+ const cutoff=now-86400000;
+ const result=await db.prepare('DELETE FROM ai_cache WHERE expires_at<=? AND cache_key IN (SELECT cache_key FROM ai_cache INDEXED BY idx_ai_cache_expires WHERE expires_at<=? ORDER BY expires_at LIMIT ?)')
+  .bind(cutoff,cutoff,limit).run();
+ const removed=result?.meta?.changes;
+ if(!Number.isSafeInteger(removed)||removed<0||removed>limit)throw Error('ai_cache_retention_unverified');
+ return {scope:'expired-ai-response-cache',removed,cutoff};
+}
 const ALLOWED_ORIGINS = new Set([
   "https://www-infinity4.github.io",
   "https://oracle-card-studio.pages.dev",
@@ -822,6 +833,10 @@ async function runMetered(request,env,body,mode){
  const freshStory=body?.context?.task==="infinite-book-deep-story";
  const key=freshStory?"":await cacheKey(mode+"|"+raw+"|"+JSON.stringify(body?.context||{}));
  if(key&&env.METER_DB){
+  // One bounded indexed pass on this existing request, including cache hits.
+  // Cleanup failure must not suppress a usable cached answer or run a model
+  // again. No new timer, worker, database, quota grant or owner sign-in.
+  try{await pruneExpiredAiCache(env.METER_DB)}catch{console.warn('ai_cache_retention_deferred');}
   try{
    const cached=await env.METER_DB.prepare("SELECT response_json FROM ai_cache WHERE cache_key=?1 AND expires_at>?2").bind(key,Date.now()).first();
    if(cached){const data=JSON.parse(cached.response_json);return json(request,{...data,cached:true,meter:{...state,userId}});}

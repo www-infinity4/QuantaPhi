@@ -277,7 +277,7 @@ and passing CI do not provide an always-on private inference service. Follow
 the repository-first placement and offline-phone acceptance gates in
 `work/unfinished/2110-shard-cache-checkpoint.md` before production adoption.
 
-## Shared signed-runner provider cooldown
+## Shared runner and direct-builder provider cooldown
 
 SQLite removes a work/state storage dependency; it does not provide inference.
 The original Workers AI model probe on November 27 returned HTTP 429, code
@@ -285,11 +285,14 @@ The original Workers AI model probe on November 27 returned HTTP 429, code
 was received and no paid plan or substitute model was selected. This is
 separate from prior D1 query exhaustion and does not diagnose every gateway 429.
 
-The original runner now persists a shared provider cooldown in the same
+The original runner and direct GitHub builder share a provider cooldown in the same
 durable Brain state, including on this SQLite host. A genuine model quota
-refusal under a still-current lease commits the shared marker and that lease's
-existing retry fields together. Caller text, an arbitrary 429, or a replaced
-lease cannot create it. A new clock/host instance reads the same marker.
+refusal under a still-current runner lease commits the shared marker and that
+lease's existing retry fields together. Direct inference records the same
+marker only while its original request still holds an unexpired repository
+lease. Both its preflight and result reject expired/replaced leases. Caller
+text, an arbitrary 429, or a GitHub/checkpoint error cannot create the marker.
+A new clock/host instance reads the same marker.
 
 While it is active, eligible model-dependent jobs remain queued without a new
 run/repository lease or ticket write. A claim race rechecks the marker inside
@@ -300,9 +303,21 @@ still occur to find those reviews; this does not bypass D1 failures.
 Result receipts still save their durable outcome row while a known cooldown
 defers that row's vector inference to the existing pending-memory path.
 
+New direct assists during the cooldown save a blocked receipt before acquiring
+a repository lease or starting an executor. The request ID remains replayable
+as that same receipt. A quota refusal during direct work retains every already
+saved GitHub receipt, including an operation accepted before the refusal; it
+does not claim that no mutation occurred. Direct requests set
+`retryScheduled:false`: expiry never replays a commit, dispatch or PR. A new
+owner-authorized request is required for another attempt. Existing receipt
+reads, read-only code search and non-model metadata operations remain available.
+Repository suggestions use the verified catalog and deterministic matching
+without their optional inference while the shared marker is active.
+
 The scheduled retry is one minute after the next UTC day, matching the existing
 per-job policy. Expiry only permits a fresh attempt; it does not establish
 provider recovery, execute a job, renew approval or mark anything complete.
-The marker gates this signed repository runner, not every Bubbles gateway or
-background model consumer. Full state export/fencing, an approved inference
+The marker gates the signed repository runner and direct GitHub builder;
+it does not gate every Bubbles gateway or background model consumer.
+Full state export/fencing, an approved inference
 host, actual conversation and live engineering remain unresolved.
