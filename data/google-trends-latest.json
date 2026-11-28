@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T13:30:55.021304Z",
+  "checked_at": "2026-11-28T14:01:24.674229Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "peacock black friday deal",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T13:00:00Z",
-      "related_news_urls": [
-        "https://www.businessinsider.com/guides/deals/paramount-plus-black-friday-deal-2026-11-27",
-        "https://6abc.com/story/disney-hulu-bundle-black-friday-deal-2026-499-month-1-year/20071247/",
-        "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Tp6JwQE7jQ6BZmc8SPaE5269vSSjW7GjzFZEjqsEROSx2JVDCY9_2tCTKLo",
-      "image_credit": "Business Insider",
-      "news": [
-        {
-          "url": "https://www.businessinsider.com/guides/deals/paramount-plus-black-friday-deal-2026-11-27",
-          "title": "Black Friday's 79% off Paramount Plus is great, but we think you should use this cool coupon instead",
-          "publisher": "Business Insider",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Tp6JwQE7jQ6BZmc8SPaE5269vSSjW7GjzFZEjqsEROSx2JVDCY9_2tCTKLo"
-        },
-        {
-          "url": "https://6abc.com/story/disney-hulu-bundle-black-friday-deal-2026-499-month-1-year/20071247/",
-          "title": "Disney+, Hulu Bundle Black Friday deal 2026: $4.99 per month for 1 year",
-          "publisher": "6abc Philadelphia",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_KKdg_BuZcb5P5FqBEdtoPPzySOf_a4HgJBlcFwH70Xlvp6Sfc67ZpxaAduI"
-        },
-        {
-          "url": "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/",
-          "title": "Black Friday Streaming Deals Offered By Disney+, HBO Max, Paramount+, Peacock & More",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2Xz3uI-8-Cbg1Y2BFYGR4lN7U21UZ-_pDiT_D7Mf0Hiu9DbkN6NhrTYCWzY"
-        }
-      ]
-    },
-    {
-      "query": "vitamin d deficiency sleep duration study",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T13:00:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
-        "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
-        "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
-          "title": "Low levels of common vitamin could be stealing nearly 30 minutes of your sleep",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU"
-        },
-        {
-          "url": "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
-          "title": "This Common Vitamin Deficiency Could Be Quietly Disrupting Your Sleep",
-          "publisher": "SciTechDaily",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1KtLn9IGLHCKoz5hmiBa6eJ7OUjjh_BHVZPcDUnkNDKBfUtgIWeS_O5YeDtA"
-        },
-        {
-          "url": "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/",
-          "title": "Why does sleep get worse with age? A common vitamin deficiency may offer a clue",
-          "publisher": "Earth.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSne0J8uFssYRMAMIMxWSsewbMxQMUoMxR16dg4KoS6BMmWw33r2ymjEVpn8ns"
-        }
-      ]
-    },
-    {
-      "query": "nbc",
+      "query": "where is college gameday",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T12:40:00Z",
+      "published_at": "2026-11-28T13:40:00Z",
       "related_news_urls": [
-        "https://www.nytimes.com/2026/11/27/business/media/nbc-ad-snl.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/nbc-pulls-israel-aid-ad-snl-thanksgiving-special-backlash/92986047007/",
-        "https://www.businessinsider.com/jewish-groups-slam-pro-palestine-ad-snl-fcc-2026-11"
+        "https://www.wfmynews2.com/article/life/food/little-richards-barbecue-in-winston-salem-to-serve-as-guest-chef-for-espns-college-gameday-nc/83-7316c814-d715-49da-aafa-0900adef4391",
+        "https://sports.yahoo.com/college-football/articles/espn-college-gameday-makes-surprising-122649089.html",
+        "https://myfox8.com/news/north-carolina/winston-salem/live-wake-forest-university-speaks-on-hosting-college-gameday/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs0KI_vOZ-nxlZhMt8rvJnZkYbC7ZTIqGvqHfFLvfbYm0gZC_SZxjfFemLiY",
-      "image_credit": "The New York Times",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0",
+      "image_credit": "wfmynews2.com",
       "news": [
         {
-          "url": "https://www.nytimes.com/2026/11/27/business/media/nbc-ad-snl.html",
-          "title": "NBC Pulls an Ad That Some Described as Antisemitic",
-          "publisher": "The New York Times",
+          "url": "https://www.wfmynews2.com/article/life/food/little-richards-barbecue-in-winston-salem-to-serve-as-guest-chef-for-espns-college-gameday-nc/83-7316c814-d715-49da-aafa-0900adef4391",
+          "title": "Little Richard's Barbecue in Winston-Salem to serve as Guest Chef for ESPN's College GameDay",
+          "publisher": "wfmynews2.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs0KI_vOZ-nxlZhMt8rvJnZkYbC7ZTIqGvqHfFLvfbYm0gZC_SZxjfFemLiY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0"
         },
         {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/nbc-pulls-israel-aid-ad-snl-thanksgiving-special-backlash/92986047007/",
-          "title": "NBC pulls controversial Israel aid ad during 'SNL' Thanksgiving special",
-          "publisher": "USA Today",
+          "url": "https://sports.yahoo.com/college-football/articles/espn-college-gameday-makes-surprising-122649089.html",
+          "title": "ESPN College GameDay Makes Surprising Final Regular-Season Stop: Where to Watch, Time and Guest Picker",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW0qU6IpgNbUMJWtfIcxUCATLvLGpBXqug2DfLDurDaKoOnHVXggNdsPRDvKc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJUB7B1Xv1dhxKKa5ImQkqwcIYrXDqGhnlJrAd-9IAJUqPSPq4xJzzQiGcjzA"
         },
         {
-          "url": "https://www.businessinsider.com/jewish-groups-slam-pro-palestine-ad-snl-fcc-2026-11",
-          "title": "NBC is reviewing its ad process after a commercial calling for an end to US aid to Israel drew backlash",
-          "publisher": "Business Insider",
+          "url": "https://myfox8.com/news/north-carolina/winston-salem/live-wake-forest-university-speaks-on-hosting-college-gameday/",
+          "title": "Wake Forest University AD speaks on hosting ‘College GameDay’",
+          "publisher": "FOX8 WGHP",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_jJQHuHsR9-RL7l1dvx96fe-3zhpoFJQqWxe6MZfA1IhGZgflSxJ_ZlCUf2M"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPA6KcnxjZytzE36_sKaqynGAJQZWHlAqqubPE3GMoXLqIJ8IRfeanMZxp1J8"
         }
       ]
     },
     {
-      "query": "mark harmon",
+      "query": "frosinone vs parma",
       "approx_searches": "200+",
-      "published_at": "2026-11-28T12:40:00Z",
+      "published_at": "2026-11-28T13:40:00Z",
       "related_news_urls": [
-        "https://people.com/little-house-star-patrick-labyorteaux-recalls-the-time-mark-harmon-literally-gave-him-the-shirt-off-his-back-12283093",
-        "https://demokratis.co.id/en/ncis-gibbs-signature-head-slap",
-        "https://screenrant.com/ncis-mark-harmon-signature-head-slap-block/"
+        "https://www.bbc.com/sport/football/live/ck5y1elydy5zt",
+        "https://www.tufutbolero.com/en/news/frosinone-parma-preview-frosinone-arrive-with-three-absences-feb443",
+        "https://www.gazzetta.it/en/Calcio/Serie-A/Frosinone/27-11-2026/frosinone-predicted-line-up-against-parma-bobcek-starts-and-grillitsch-returns.shtml"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBeK2SJkyyhE0LLW--dDNBTNrblKFefO5E7MmXWD-xaNHie913GFQODG4HH14",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/little-house-star-patrick-labyorteaux-recalls-the-time-mark-harmon-literally-gave-him-the-shirt-off-his-back-12283093",
-          "title": "‘Little House’ Star Patrick Labyorteaux Recalls the Time Mark Harmon Literally Gave Him the Shirt Off His Back",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBeK2SJkyyhE0LLW--dDNBTNrblKFefO5E7MmXWD-xaNHie913GFQODG4HH14"
-        },
-        {
-          "url": "https://demokratis.co.id/en/ncis-gibbs-signature-head-slap",
-          "title": "NCIS Keeps Gibbs From Using His Signature Head Slap",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6ehy45WpX49rlmZJfaLpPMtevGBs9zDvpB83SyLHkyzp_Y5YX_68qG_fcas0"
-        },
-        {
-          "url": "https://screenrant.com/ncis-mark-harmon-signature-head-slap-block/",
-          "title": "NCIS Blocks Mark Harmon's Signature Gibbs Move From Ever Coming Back",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTe87vzAHXoYBnIP7XjwSznPyLOzfDVhJGosSVOvboWnTWENcJRGeoMDO2L4AU"
-        }
-      ]
-    },
-    {
-      "query": "the challenge",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T12:40:00Z",
-      "related_news_urls": [
-        "https://people.com/the-challenge-winner-tyler-duckworth-cause-of-death-revealed-12059712",
-        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/challenge-champion-tyler-duckworth-cause-123751079.html",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/tyler-duckworth-cause-of-death-the-challenge/92983418007/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyRiniNCmWSgIcwuKj2fJK3YA1dvKIbmUFkvvNhO9eV3KHVBSZ9YRP6dI8vk",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/the-challenge-winner-tyler-duckworth-cause-of-death-revealed-12059712",
-          "title": "‘The Challenge’ Winner Tyler Duckworth’s Cause of Death Revealed",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyRiniNCmWSgIcwuKj2fJK3YA1dvKIbmUFkvvNhO9eV3KHVBSZ9YRP6dI8vk"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/challenge-champion-tyler-duckworth-cause-123751079.html",
-          "title": "‘The Challenge’ Champion Tyler Duckworth’s Cause of Death at 44 Revealed",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6UNAqKWeQSPMbqnJtcmJCUYUSDXT49tQ3YhxWI1mIwSRaFd6dQmAXfNFI1U"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/tyler-duckworth-cause-of-death-the-challenge/92983418007/",
-          "title": "'The Challenge' alum Tyler Duckworth's cause of death revealed",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSktSXUCgHnnwTMXvVAZZ_t5xQfIrIUyP-v3okDuyvxMvCgwJO8ihgKYmTVCDU"
-        }
-      ]
-    },
-    {
-      "query": "prince harry",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T12:40:00Z",
-      "related_news_urls": [
-        "https://thehill.com/blogs/in-the-know/6245656-prince-william-diana-award-administration/",
-        "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
-        "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfETpd-WM9OXIkmgEZrKTadaq6g00f4WnMZPspRKCD6n3yneyfPG5a8j5Repo",
-      "image_credit": "The Hill",
-      "news": [
-        {
-          "url": "https://thehill.com/blogs/in-the-know/6245656-prince-william-diana-award-administration/",
-          "title": "Prince William responds after the Diana Award says it can’t meet financial obligations",
-          "publisher": "The Hill",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfETpd-WM9OXIkmgEZrKTadaq6g00f4WnMZPspRKCD6n3yneyfPG5a8j5Repo"
-        },
-        {
-          "url": "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
-          "title": "Prince William speaks out as Princess Diana charity enters administration",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3udnzNo4fkEkdojlvs73LtHynhAvbUyvDyBjCvhVXyppycNioRHOUU9iExLI"
-        },
-        {
-          "url": "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706",
-          "title": "Prince William Reacts as Princess Diana’s Namesake Charity He Backs with Prince Harry Faces Closure",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcThjoNdRtSyntLGp3_pZsPpUm7yOKu3O1nakR1gij-W3mIuusHXldFgRkNgf_I"
-        }
-      ]
-    },
-    {
-      "query": "real betis - rayo vallecano",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T12:30:00Z",
-      "related_news_urls": [
-        "https://www.elmundo.es/deportes/futbol/laliga-ea-sports/betis-rayo/2026/11/28/01_0101_20261128_185_184-directo.html",
-        "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/",
-        "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagIs9SaeC_BGWhku2WwEnEyCQLRODS7OkVjb-DvA_oomKxDy4pz7zsXx7iWM",
-      "image_credit": "El Mundo",
-      "news": [
-        {
-          "url": "https://www.elmundo.es/deportes/futbol/laliga-ea-sports/betis-rayo/2026/11/28/01_0101_20261128_185_184-directo.html",
-          "title": "Betis - Rayo en directo",
-          "publisher": "El Mundo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagIs9SaeC_BGWhku2WwEnEyCQLRODS7OkVjb-DvA_oomKxDy4pz7zsXx7iWM"
-        },
-        {
-          "url": "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/",
-          "title": "Nos visita el Rayo Vallecano. – Historia bética",
-          "publisher": "Manquepierda",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWhmmeyDaXz8QdhCUYKIdbqUXQWQFFHkxp9vwzVq7mn4O_BfxDuh5YLtwtuEA"
-        },
-        {
-          "url": "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0",
-          "title": "Betis-Rayo: el Betis llega con cuatro bajas por lesión",
-          "publisher": "Tu Futbolero",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2H9nmPoUYwwv988NCG0xAcJpiYnTkhOnVoi-jkGFDrPv8dpVAjb9jl-SlP4o"
-        }
-      ]
-    },
-    {
-      "query": "betis vs rayo",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T12:30:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6reg91ewxqqt",
-        "https://www.tufutbolero.com/en/news/betis-rayo-preview-betis-arrive-with-four-injury-absences-fcf0d0",
-        "https://sports.yahoo.com/soccer/articles/pellegrini-makes-6-changes-betis-114200432.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c6reg91ewxqqt",
-          "title": "Real Betis vs Rayo Vallecano: Spanish La Liga stats & head-to-head",
+          "url": "https://www.bbc.com/sport/football/live/ck5y1elydy5zt",
+          "title": "Frosinone vs Parma: Italian Serie A stats & head-to-head",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRwOvZeQ1RCOectFBbNzb90RO0iFo7744EKusCTrxY7EliGaxoFxKykWOMiEA"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/betis-rayo-preview-betis-arrive-with-four-injury-absences-fcf0d0",
-          "title": "Betis-Rayo preview: Betis arrive with four injury absences",
+          "url": "https://www.tufutbolero.com/en/news/frosinone-parma-preview-frosinone-arrive-with-three-absences-feb443",
+          "title": "Frosinone-Parma preview: Frosinone arrive with three absences",
           "publisher": "Tu Futbolero",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzw3Zx2D-bE2Ryk82OvddJTSSBksrhtsJQnvcI4gd_KfqIc-gtc4xjv26_HWk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpmGAV8F4oY8p4GgcRqbTcSG9cIaUgWLtPg1OdhhRq6DLIaZES1u5nAQx9-hQ"
         },
         {
-          "url": "https://sports.yahoo.com/soccer/articles/pellegrini-makes-6-changes-betis-114200432.html",
-          "title": "🚨 Pellegrini makes 6 changes; Álvaro García returns: Betis-Rayo line-ups",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.gazzetta.it/en/Calcio/Serie-A/Frosinone/27-11-2026/frosinone-predicted-line-up-against-parma-bobcek-starts-and-grillitsch-returns.shtml",
+          "title": "Frosinone, against Parma Alvini with the new number 9: Bobcek starts and Grillitsch returns",
+          "publisher": "La Gazzetta dello Sport",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzKCBhZqeFXEJA4JTGzzHf449IaGusl5FwMvlG-DKcMKJpqFcDiImQrJwQ4o4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTarLl8ULPpZ1_sO-5RTBM1eb2pPDrd9z0pDS9nMQzWESFbxMCqToROhKBvl_I"
         }
       ]
     },
     {
-      "query": "ai encryption",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T12:30:00Z",
+      "query": "hamburg vs bayern",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T13:40:00Z",
       "related_news_urls": [
-        "https://www.theguardian.com/technology/2026/nov/28/ai-artificial-intelligence-encryption-global-chaos",
-        "https://www.ft.com/content/1a29e62d-b18d-4bad-937d-34f3eae0587a?syn-25a6b1a6=1",
-        "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8"
+        "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-hamburg-bayern-bundesliga-matchday-11",
+        "https://www.nytimes.com/athletic/7818323/2026/11/28/bayern-munich-vs-hamburger-sv-stream-how-to-watch-bundesliga-nov-28/",
+        "https://www.goal.com/en/news/kimmich-crisis-and-neuer-controversy-kompany-refuses-to-address-bayern-s-thorny-issues/bltbe0b6dfa463d59e6"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTltr61kfrsMWdvhbSiEWW6QHg-mYZEEc9Wk6fpOwSFJy-QJ9Ee1Df80Pq-lFo",
-      "image_credit": "The Guardian",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQO6BWOBzxY9CIf3R9KKvod9AfScbLpEcgqCgF5KK13Z2_1npEwQGxAwSbUU0",
+      "image_credit": "FC Bayern",
       "news": [
         {
-          "url": "https://www.theguardian.com/technology/2026/nov/28/ai-artificial-intelligence-encryption-global-chaos",
-          "title": "AI labs sitting on ‘bombshell’ revelations that could cause global chaos, experts warn",
+          "url": "https://fcbayern.com/en/news/matchpreviews/2026/11/preview-hamburg-bayern-bundesliga-matchday-11",
+          "title": "Preview: Hamburg vs. Bayern, Bundesliga Matchday 11",
+          "publisher": "FC Bayern",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQO6BWOBzxY9CIf3R9KKvod9AfScbLpEcgqCgF5KK13Z2_1npEwQGxAwSbUU0"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7818323/2026/11/28/bayern-munich-vs-hamburger-sv-stream-how-to-watch-bundesliga-nov-28/",
+          "title": "How to watch Bayern Munich vs. Hamburger SV in the U.S.: TV channel and streaming options for November 28",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiK3X4RI2pdAzkOg7XHkfOt3Rt2gNs-uG9oYCeA5rZ0J-D9VOQMs2hJYJO9i8"
+        },
+        {
+          "url": "https://www.goal.com/en/news/kimmich-crisis-and-neuer-controversy-kompany-refuses-to-address-bayern-s-thorny-issues/bltbe0b6dfa463d59e6",
+          "title": "Kimmich crisis and Neuer controversy: Kompany refuses to address Bayern's thorny issues",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwyinHC-F4oe8wLdD7SdvyTWYyAstV1H1RAcwAYgeVi2g_z3MoAhV4S3qk0yQ"
+        }
+      ]
+    },
+    {
+      "query": "savannah guthrie",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T13:30:00Z",
+      "related_news_urls": [
+        "https://www.newsnationnow.com/crime/pacemaker-clue-drone-tech-advances-guthrie/",
+        "https://www.tvinsider.com/1305999/nancy-guthrie-update-retired-fbi-agent-reacts-2-bombshell-reports-jennifer-coffindaffer/",
+        "https://m.economictimes.com/world/us/nancy-guthries-abductor-may-be-no-longer-in-the-us-criminologist-fears-case-could-go-cold/articleshow/136212056.cms"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhioOOmWGAUI9hej0FweHXYEn8JChTPL07UTSXk5AWZ6GXyn0N6HTXIDDRq3Y",
+      "image_credit": "NewsNation",
+      "news": [
+        {
+          "url": "https://www.newsnationnow.com/crime/pacemaker-clue-drone-tech-advances-guthrie/",
+          "title": "Pacemaker clue? Drone tech advances could revive Guthrie search",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhioOOmWGAUI9hej0FweHXYEn8JChTPL07UTSXk5AWZ6GXyn0N6HTXIDDRq3Y"
+        },
+        {
+          "url": "https://www.tvinsider.com/1305999/nancy-guthrie-update-retired-fbi-agent-reacts-2-bombshell-reports-jennifer-coffindaffer/",
+          "title": "Nancy Guthrie Update: Retired FBI Agent Reacts to 2 Bombshell Reports",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyAqO8U0DFZiPrvu95upnsgY3XpLGVOFydgHPXveMVmBwbsJhwtRW1lpnrYq0"
+        },
+        {
+          "url": "https://m.economictimes.com/world/us/nancy-guthries-abductor-may-be-no-longer-in-the-us-criminologist-fears-case-could-go-cold/articleshow/136212056.cms",
+          "title": "Nancy Guthrie’s abductor may be ‘no longer in the US,’ criminologist fears case could go cold",
+          "publisher": "The Economic Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvlwFX3Rf6ROdr9Q8FalBnHhKp2V33KBPsAODF65XPVBbc5Za0FhDakgKO_Gg"
+        }
+      ]
+    },
+    {
+      "query": "savannah guthrie mom",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T13:30:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66125050/?ref_=nmnw_art_perm",
+        "https://www.yahoo.com/entertainment/celebrity/articles/savannah-guthries-parade-hosting-moves-162023517.html",
+        "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRghGHgFljQb7jh92wdsLFO_1JEvn8YkmQGhG8IFsp0By-AQRyBH-Fs4GI2--s",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66125050/?ref_=nmnw_art_perm",
+          "title": "Today: Thanksgiving Morning Lead-In to the 100th Parade",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRghGHgFljQb7jh92wdsLFO_1JEvn8YkmQGhG8IFsp0By-AQRyBH-Fs4GI2--s"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/savannah-guthries-parade-hosting-moves-162023517.html",
+          "title": "Savannah Guthrie's Parade Hosting Moves to Saturday on Her First Thanksgiving Since Her Mom Vanished",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT1GO36-0O5GVG4VJ34s1p96uUZ0tBqpLkP_CzjNYiZ5WIixXm3K5DnwGBuYFI"
+        },
+        {
+          "url": "https://parade.com/news/savannah-guthrie-returns-to-the-macys-parade-with-her-mom-still-missing",
+          "title": "Savannah Guthrie Returns to the Macy’s Parade with Her Mom Still Missing",
+          "publisher": "Parade Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQrKsDG8vuGdrUeAM20aphDEZ0dFNCeMYtM7_S8kbd66f1EDFUsHOKSBYzAtI"
+        }
+      ]
+    },
+    {
+      "query": "al roker",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T13:20:00Z",
+      "related_news_urls": [
+        "https://people.com/al-roker-keeps-family-tradition-alive-macys-thanksgiving-day-parade-postponed-first-time-ever-12283329",
+        "https://www.nbcnews.com/pop-culture/tv/al-roker-thanksgiving-memories-one-stubborn-stick-butter-rcna611330",
+        "https://pagesix.com/2026/11/26/celebrity-news/al-roker-explains-why-his-thanksgiving-looks-different-this-year/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Obk5sHEcFkhVNFacx8VKIpABS1OoNe8ql3xkYWV2USUspznqheU0m-zXpU",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/al-roker-keeps-family-tradition-alive-macys-thanksgiving-day-parade-postponed-first-time-ever-12283329",
+          "title": "Al Roker Keeps Family Tradition Alive Despite Macy’s Thanksgiving Day Parade Being Postponed for First Time Ever",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT95Obk5sHEcFkhVNFacx8VKIpABS1OoNe8ql3xkYWV2USUspznqheU0m-zXpU"
+        },
+        {
+          "url": "https://www.nbcnews.com/pop-culture/tv/al-roker-thanksgiving-memories-one-stubborn-stick-butter-rcna611330",
+          "title": "Al Roker, Thanksgiving memories and one stubborn stick of butter",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFLnPSUOLKcgm4wy7x2wjyxEXboK7L-q6nw4aIIjF1WbamUwhHzkyfzAduRiM"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/26/celebrity-news/al-roker-explains-why-his-thanksgiving-looks-different-this-year/",
+          "title": "Exclusive | Al Roker explains why his Thanksgiving looks different this year",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSo9sovskb7dpI1Nk8aswtlkaKfdA9z3j3jk2a25Sg_0vedpQNezMZnb4ancQw"
+        }
+      ]
+    },
+    {
+      "query": "local election results",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T13:20:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+        "https://www.aljazeera.com/news/2026/11/28/taiwan-opposition-party-wins-re-election-in-taipei-mayoral-race",
+        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+          "title": "Ruling party makes gains in Taiwan local elections watched by China",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM"
+        },
+        {
+          "url": "https://www.aljazeera.com/news/2026/11/28/taiwan-opposition-party-wins-re-election-in-taipei-mayoral-race",
+          "title": "Taiwan opposition party wins re-election in Taipei mayoral race",
+          "publisher": "Al Jazeera",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTa0aox7n3TDze5H07MCqSTiotHuTllwqz3DW__l7CxM_aUw34rPGtF5CMgIN8"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
+        }
+      ]
+    },
+    {
+      "query": "gma deals and steals",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T13:20:00Z",
+      "related_news_urls": [
+        "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
+        "https://cwibc.co.id/en/gma-holiday-gift-deals-2026",
+        "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI",
+      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "news": [
+        {
+          "url": "https://abcnews.com/GMA/Shop/gma-deals-steals-black-friday/story?id=138385185",
+          "title": "'GMA' Deals & Steals for Black Friday",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRnD90pu8CNVJt-C475bks3lLEC0C83sjdkmZMsoZjkR6Pitldsp2_jtQQ1MyI"
+        },
+        {
+          "url": "https://cwibc.co.id/en/gma-holiday-gift-deals-2026",
+          "title": "GMA Features Holiday Gifts With Discounts Up to 62 Percent",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTjbAQnPI2blsV48MTokHITB-nUVhRBqCsposNkvsnY1rv3hIo-B6Ywd9ATeA"
+        },
+        {
+          "url": "https://abc7ny.com/post/gma-deals-steals-gifts-20/20059018/",
+          "title": "'GMA' Deals & Steals on gifts $20 and under",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR_7PcZLhaxsvZt_2mEVq-Ibid8b_NFa58TwhF4UTlsYIa19CvhTA2o_xSafWI"
+        }
+      ]
+    },
+    {
+      "query": "wales vs japan",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T13:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/rugby-union/live/cqwy40z0kdpxt",
+        "https://www.theguardian.com/sport/live/2026/nov/28/wales-v-japan-nations-championship-rugby-union-live",
+        "https://www.florugby.com/articles/16471045-wales-vs-japan-live-score-updates-nations-championship-rugby"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3PIEDkmO4PHXJ6Rbz0DA_-k2zbtOsG2dm-MY_84MoWznF4XgxGp0wJEORMDM",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/rugby-union/live/cqwy40z0kdpxt",
+          "title": "Wales vs Japan LIVE: Nations Championship 2026 - live text & radio commentary",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3PIEDkmO4PHXJ6Rbz0DA_-k2zbtOsG2dm-MY_84MoWznF4XgxGp0wJEORMDM"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/live/2026/nov/28/wales-v-japan-nations-championship-rugby-union-live",
+          "title": "Wales v Japan: Nations Championship rugby union – live",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTltr61kfrsMWdvhbSiEWW6QHg-mYZEEc9Wk6fpOwSFJy-QJ9Ee1Df80Pq-lFo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTKRJV8yfdctuRB6PbAOLgkNcGgSosbfCbPnbHU2dI374JFgTqW3oqhkYNZRds"
         },
         {
-          "url": "https://www.ft.com/content/1a29e62d-b18d-4bad-937d-34f3eae0587a?syn-25a6b1a6=1",
-          "title": "Can AI crack encryption?",
-          "publisher": "Financial Times",
+          "url": "https://www.florugby.com/articles/16471045-wales-vs-japan-live-score-updates-nations-championship-rugby",
+          "title": "Wales vs. Japan Rugby Lineups, Watch Guide & Updates",
+          "publisher": "FloRugby",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6kYqLMa1PvSFY1DZAtmUhx0JDZpOnUSn6h2wi_4UBFt6Hsj94yghJIQXedjA"
-        },
-        {
-          "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
-          "title": "AI on brink of making online security useless, mathematicians fear",
-          "publisher": "The Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRL67eyxBc8KOXpw7nk-APdkpVCDiSVs6Dr38c_EtXGCRGHtFdl98JJcy1sMpg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzXJ4tbUO3IO2stwEa1nKt0uyKrav5aqbd6olIawkHsPdxzQC6uO35h0Pcy4k"
         }
       ]
     },
     {
-      "query": "college football playoff",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-28T12:30:00Z",
+      "query": "today show",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T13:20:00Z",
       "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-        "https://bleacherreport.com/articles/25536929-expert-cfb-locks-predictions-michigan-vs-ohio-state-and-week-13-biggest-games"
+        "https://www.yahoo.com/entertainment/tv/articles/today-hosts-air-screw-revealed-161348474.html",
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/todays-sheinelle-jones-stuns-strapless-100423787.html",
+        "https://cwibc.co.id/en/sheinelle-jones-caribbean-thanksgiving"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
-      "image_credit": "ESPN",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoyWn64xmUPV96SuCV-AE0B2FQGtaqa1V9WnEI_77aViwhFdW02Xh1e0obqo8",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
-          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
-          "publisher": "ESPN",
+          "url": "https://www.yahoo.com/entertainment/tv/articles/today-hosts-air-screw-revealed-161348474.html",
+          "title": "Today host's on-air 'screw-up' revealed following intense conversation with producer",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQoyWn64xmUPV96SuCV-AE0B2FQGtaqa1V9WnEI_77aViwhFdW02Xh1e0obqo8"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/todays-sheinelle-jones-stuns-strapless-100423787.html",
+          "title": "TODAY's Sheinelle Jones stuns in strapless bikini as she soaks up the sun on dreamy boat",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQOvTbClxkCMJuVUIftFCdhnSBiYuHOcaV6CKjs4A4NlX7GtWiQYn9JYMGnyx4"
         },
         {
-          "url": "https://bleacherreport.com/articles/25536929-expert-cfb-locks-predictions-michigan-vs-ohio-state-and-week-13-biggest-games",
-          "title": "Expert CFB Locks, Predictions for Michigan vs. Ohio State and Week 13 Biggest Games",
-          "publisher": "Bleacher Report",
+          "url": "https://cwibc.co.id/en/sheinelle-jones-caribbean-thanksgiving",
+          "title": "Sheinelle Jones Shares Caribbean Thanksgiving Bikini Photos",
+          "publisher": "cwibc.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKRSiA7AV3f_h3hGW_g5aI_OEB95k8mQh4ohrF1vHuz1-aDEO5APBYyCbYz_s"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkvDYEpUwGwLePTICOCLWacUAxDQiAhJhkUDqL2PeMSarGCXaKWvst8VAGocU"
         }
       ]
     }
