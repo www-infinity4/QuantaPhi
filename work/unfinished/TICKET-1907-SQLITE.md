@@ -65,3 +65,57 @@ Further boundary testing and independent review reproduced an unread-upload defe
 No source export, old-writer fence, real adapter configuration, phone installation, process replacement, DNS/tunnel change, runner-origin change or writer activation occurred. Next executable step: independent review and exact-head CI of this integration, then verify the existing private host configuration and a consistent source export/fence before controlled live adoption. Bubbles conversation routing and actual engineering acceptance remain open.
 
 The mesh remains optional staging/recovery under #2110's repository-first placement decision. This general Node host integration can run on a verified owner-approved non-phone host; it does not make the phone the required production server. New subprocess fixtures use the corrected bounded monotonic readiness window and stop-before-directory-removal order from #2157. Native cloud Workers AI bindings are not evidence of an existing local model adapter; its real configuration/inference still requires verification.
+
+## Continuation · ordinary source repairs through existing GitHub builder
+
+2026-11-28 UTC, branch `fix/bubbles-direct-engineering-1907-20261128`,
+baseline `a33425fec3ac7593f626f2b5b9f9065ff9f29bde`. One additional routing
+source session under the same #1907/#2110; overall acceptance percentage and
+remaining sessions unknown. Production lease/fence/task-session ID remain null.
+State: source tested / live execution unverified, 🔵. Source promotion, release
+and actual owner operation are separate receipts in the canonical issue.
+
+Fresh Moltnook [run 46167576232](https://github.com/www-infinity4/Moltnook/actions/runs/46167576232),
+job `141048420051`, passed existing GitHub credential connection and source
+checks but failed remote `claim` HTTP503 / `runner_operation_unavailable`.
+The original Termux tunnel still reports down/zero connections, and no private
+Termux execution receipt was supplied. No additional live claim or model call
+was triggered merely to reproduce that known outage.
+
+Source inspection found ordinary explicit repository writes were forced into
+D1 work-ticket creation, although the existing owner-authenticated
+`/work/github` builder already stages pinned source through GitHub with its
+original model, independent source review, repository lease and persisted
+operation receipts. Bounded plain-text single-repository source repairs now
+reuse that builder. It remains Cloudflare-hosted for authentication, original
+Workers AI and durable receipts; this is not the full SQLite/GitHub migration.
+No new server, model, credential, owner identity, permission or backend gate.
+
+Explicit selected repositories remain authoritative. Image/card evidence,
+requests over the existing 5,000-character direct limit, explicit bot-team
+orders and multi-repository batches retain their existing work-ticket
+contracts. In-flight/ambiguous direct work follows the original receipt; only
+the pre-existing final verified-no-action overflow gate may delegate. Ordinary
+chat does not put a second pending copy into the work box or clear its current
+draft. Existing owner auth, visitor denial, source/PR/CI gates, queued jobs and
+continuation behavior remain. Four canonical entrypoints request the new
+`20261128-direct-engineering1` asset revision; draft/recording/update guards
+remain intact.
+
+Regression-first tests failed before the shared route existed. Current local
+existing Bubbles tools workflow selection: 241/241; additional direct/auth/
+timeout/receipt/repository/cache/voice/evidence selection: 135/135. Independent
+Pink found explicit bot-team requests entering the plain route; fixed with a
+retained-team regression. Real VM tests exercise actual owner frontend HTTP
+requests, rejected/embedded sessions, missing responses, explicit repositories
+and original payload preservation; backend/model/provider fixtures are not
+live inference receipts. Independent final hashes/CI/merge/release receipts
+follow in #1907. No new subscription, database deletion, secret reset, private
+state export, old-writer drain, traffic/origin switch or phone installation.
+
+Next: exact-head review/CI and eligible routine frontend merge, verify the
+published asset, then a real same-conversation authenticated owner repair and
+its GitHub source/PR/CI receipts. The existing ticket backlog, rich/bot-team
+work, general chat transport, paid-account access and private state migration
+remain separately blocked/unverified. Preserve #2161/#2162/#2164 and the
+existing owner's jobs rather than treating this routing fix as full recovery.

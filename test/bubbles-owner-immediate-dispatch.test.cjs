@@ -44,7 +44,8 @@ test('An ordinary owner request to add a copy button uses a real code route',()=
  assert.equal(matches('Please add a copy button to Bubbles owner approval'),true);
  assert.equal(matches('Tell me about copying paintings'),false);
  assert.match(bubbles,/const sourceEdit=.*\(\?:add\|create\|make\|build\|generate\|insert\|attach\|fix/);
- assert.match(bubbles,/await submitRepositoryWork\(engineeringRequest,'explicit-user-command'/);
+ assert.match(bubbles,/await performRepositoryRepair\(engineeringRequest,repository,imageWorkEvidence,activeCardEvidence,requestsAgents\)/);
+ assert.match(bubbles,/await directGithubOperation\(operation,\{ownerRequest:request\}\)/);
  assert.match(bubbles,/owner\[- \]approval/);
  assert.match(bubbles,/const copy=create\('button','ba-owner-copy','Copy request'\)/);
  assert.match(bubbles,/navigator\.clipboard\.writeText\(summary\)/);
