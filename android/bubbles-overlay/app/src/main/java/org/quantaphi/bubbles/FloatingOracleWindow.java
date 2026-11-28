@@ -849,14 +849,16 @@ final class FloatingOracleWindow {
                         if (!(decoded instanceof String) || ((String) decoded).isEmpty()) return;
                         JSONObject request = new JSONObject((String) decoded);
                         if (!"probe".equals(request.optString("action"))) return;
+                        String kind = request.optString("kind", "");
+                        if (!"shell".equals(kind) && !"python".equals(kind)) return;
                         Intent ownerDialog = new Intent(service, MainActivity.class)
-                            .putExtra("termux_python_probe", true)
+                            .putExtra("termux_probe_kind", kind)
                             .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_SINGLE_TOP);
                         service.startActivity(ownerDialog);
                     } catch (RuntimeException error) {
-                        status.setText("Could not show Android's Python test approval; no test ran.");
+                        status.setText("Could not show Android's Termux approval; no check ran.");
                     } catch (Exception error) {
-                        status.setText("Android rejected the Python diagnostic request.");
+                        status.setText("Android rejected the Termux check request.");
                     }
                 });
             website.evaluateJavascript(
