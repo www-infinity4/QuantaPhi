@@ -3,9 +3,44 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T06:36:01.608952Z",
+  "checked_at": "2026-11-28T07:01:11.706758Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "alaska earthquake center",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T06:20:00Z",
+      "related_news_urls": [
+        "https://alaskabeacon.com/2026/11/27/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information/",
+        "https://www.newsfromthestates.com/article/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information",
+        "https://www.newsminer.com/news/alaska_news/winter-for-the-alaska-earthquake-center-field-crew/article_00ef3228-3cdb-4ffe-a27d-5e72baf22bf3.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBlguD7HpK6lIJERdX5nF6Etq-aWjBUTkoyJW400FwGUXF_Cg70MVhlFfyfJY",
+      "image_credit": "Alaska Beacon",
+      "news": [
+        {
+          "url": "https://alaskabeacon.com/2026/11/27/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information/",
+          "title": "New app consolidates Alaska tsunami hazard and preparation information",
+          "publisher": "Alaska Beacon",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBlguD7HpK6lIJERdX5nF6Etq-aWjBUTkoyJW400FwGUXF_Cg70MVhlFfyfJY"
+        },
+        {
+          "url": "https://www.newsfromthestates.com/article/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information",
+          "title": "New app consolidates Alaska tsunami hazard and preparation information",
+          "publisher": "News From The States",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCmtntlH4Io7dDjX7UkMQffAPjMoNaVG-s8Rko7j5iX07Z08mhZ1kSpOYN7AE"
+        },
+        {
+          "url": "https://www.newsminer.com/news/alaska_news/winter-for-the-alaska-earthquake-center-field-crew/article_00ef3228-3cdb-4ffe-a27d-5e72baf22bf3.html",
+          "title": "Winter for the Alaska Earthquake Center field crew",
+          "publisher": "Fairbanks Daily News-Miner",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqZ_tw5NWDzDHrhxOyt7ujHcYi2FIZWrfgbTeRRsKMs_Bo6IOzQ4yKs-Yu53A"
+        }
+      ]
+    },
     {
       "query": "gordon ramsay",
       "approx_searches": "500+",
@@ -42,13 +77,48 @@
       ]
     },
     {
+      "query": "jodie foster",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T06:00:00Z",
+      "related_news_urls": [
+        "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
+        "https://cwibc.co.id/en/jodie-foster-queen-celeste-hexed",
+        "https://www.the-independent.com/arts-entertainment/films/news/jodie-foster-favorite-film-the-lion-king-b3089246.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
+          "title": "Jodie Foster Says Her Hexed Villain Is ‘Much Meaner in French’ After Recording Both Versions (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E"
+        },
+        {
+          "url": "https://cwibc.co.id/en/jodie-foster-queen-celeste-hexed",
+          "title": "Jodie Foster Voices Queen Celeste in Disney Animation's Hexed",
+          "publisher": "cwibc.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkAAb44WOQwfw94lu0FtssVSd_8cBh8K6qqugjscnuqwfTcV6u690B3rpmzX0"
+        },
+        {
+          "url": "https://www.the-independent.com/arts-entertainment/films/news/jodie-foster-favorite-film-the-lion-king-b3089246.html",
+          "title": "Jodie Foster reveals her favorite film ‘ever’ that she’s watched ‘over 100 times’",
+          "publisher": "The Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStN5-46-QuXBMC6JVETZtvdDJq2Aohr3wgKsaDCVp-sUpNkCWbXfnaOuhPGt4"
+        }
+      ]
+    },
+    {
       "query": "wlfi",
       "approx_searches": "200+",
       "published_at": "2026-11-28T06:00:00Z",
       "related_news_urls": [
         "https://thedefiant.io/news/markets/usd1-trades-at-0-9967-on-coinbase-after-wlfi-selloff",
         "https://cryptobriefing.com/world-liberty-financial-wlfi-token-plunges-59-percent/",
-        "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2"
+        "https://www.tokenpost.com/news/investing/63940"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUBJF0AhkMgnuRL9RtLW1zHlnSxGOr52UiUAuWVPMGOVBGdytZa2YjT22SZu8",
       "image_credit": "The Defiant",
@@ -68,46 +138,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCFhqMiTu7xSlfSH7CuqV8c969aCkuqAX8Ba7tYNUmR26srTgxBcVtJVuOjI"
         },
         {
-          "url": "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2",
-          "title": "World Liberty’s WLFI Sinks 39% as Bitcoin Slips 2%",
-          "publisher": "The Defiant",
+          "url": "https://www.tokenpost.com/news/investing/63940",
+          "title": "WLFI Wallet Sells 12,121 ETH at Estimated $19.26 Million Loss",
+          "publisher": "www.tokenpost.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFFch5jCE0G2kVZHBORHk_Ez2gy53pA_upOWFw6t5OWHZvgrcnWo6rh5ZENcw"
-        }
-      ]
-    },
-    {
-      "query": "jodie foster",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T06:00:00Z",
-      "related_news_urls": [
-        "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
-        "https://www.animationxpress.com/latest-news/jodie-foster-finally-gets-her-disney-villain-moment-with-hexed/",
-        "https://www.film-news.co.uk/news/UK/130512/Jodie-Foster-reveals-villainous-role-in-Hexed-was-totally-fun"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
-          "title": "Jodie Foster Says Her Hexed Villain Is ‘Much Meaner in French’ After Recording Both Versions (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E"
-        },
-        {
-          "url": "https://www.animationxpress.com/latest-news/jodie-foster-finally-gets-her-disney-villain-moment-with-hexed/",
-          "title": "Jodie Foster finally gets her Disney villain moment with ‘Hexed’",
-          "publisher": "Animation Xpress",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaW_lnkBDD63xC_9iMl__A4VT6uqQ-24mHf0Ol7UIcMVO1Tt4N9F2eXLMNbg"
-        },
-        {
-          "url": "https://www.film-news.co.uk/news/UK/130512/Jodie-Foster-reveals-villainous-role-in-Hexed-was-totally-fun",
-          "title": "Jodie Foster reveals villainous role in Hexed was 'totally fun'",
-          "publisher": "Film-News.co.uk",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhQ_V93gX477uM7pUYNTfGe9QeEJ3k2jZZcC6ivnvzgyoNTDs4hGfCWZOEr8"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9qGp3-EqTUck2fBwqp7DHdeHKM-vBFN1ACCyiIWHp49z7qGfih8z63rsHwhw"
         }
       ]
     },
@@ -182,43 +217,8 @@
       ]
     },
     {
-      "query": "robin givens",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/robin-givens-still-rocks-her-101500620.html",
-        "https://demokratis.co.id/en/robin-givens-signature-voluminous-hair",
-        "https://suaragarut.id/en/robin-givens-signature-hairstyle"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7qTfcACWL0_iIotDnGcgYa17dQ9wUR12vxOXYcxaf_gFwNaDGwYceCTr9-Vw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/robin-givens-still-rocks-her-101500620.html",
-          "title": "Robin Givens Still Rocks Her Signature Voluminous Hair In Her 60s — With A Modern Twist",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7qTfcACWL0_iIotDnGcgYa17dQ9wUR12vxOXYcxaf_gFwNaDGwYceCTr9-Vw"
-        },
-        {
-          "url": "https://demokratis.co.id/en/robin-givens-signature-voluminous-hair",
-          "title": "Robin Givens Updates Her Signature Voluminous Hairstyle",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvyVA-Fv8O2vBs_2IJjFAiPKkWJn2IGkoQGyunBGBedrDtjtVsOZKqI6mja3A"
-        },
-        {
-          "url": "https://suaragarut.id/en/robin-givens-signature-hairstyle",
-          "title": "Robin Givens Updates Her Signature Voluminous Hairstyle",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQZ8MCatmKtf_GnA6ZxztZftuYCPPN9ih0My9kh3pfV_zQbJGLd8MHCmVjxpY"
-        }
-      ]
-    },
-    {
       "query": "gta 6 chapter 3 mission list",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-28T05:30:00Z",
       "related_news_urls": [
         "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
@@ -252,13 +252,48 @@
       ]
     },
     {
+      "query": "suze orman",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T05:30:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/options/articles/only-annuity-dave-ramsey-tolerates-220317831.html",
+        "https://www.thestreet.com/retirement/suze-orman-warns-of-sobering-retirement-fact-urges-roth-ira-fix",
+        "https://tradersunion.com/news/market-voices/show/4436887-caregiving-impact-retirement-savings/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw9JqMZXGtLGW3S_jArJa6RL5qfG2J84pVphGrLGAi_wqFlaSk1spaWh98nuA",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/options/articles/only-annuity-dave-ramsey-tolerates-220317831.html",
+          "title": "The Only Annuity Dave Ramsey Tolerates Is the One Suze Orman Likes Least",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTw9JqMZXGtLGW3S_jArJa6RL5qfG2J84pVphGrLGAi_wqFlaSk1spaWh98nuA"
+        },
+        {
+          "url": "https://www.thestreet.com/retirement/suze-orman-warns-of-sobering-retirement-fact-urges-roth-ira-fix",
+          "title": "Suze Orman warns of sobering retirement fact; urges Roth IRA fix",
+          "publisher": "TheStreet",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQLA1KkuNmBIuzQI450oGnIVDJpHsKC13KHLijUSAV0GYcG2TZi9r-mJxvVsI8"
+        },
+        {
+          "url": "https://tradersunion.com/news/market-voices/show/4436887-caregiving-impact-retirement-savings/",
+          "title": "Suze Orman: Caring for a parent can affect earnings and retirement savings",
+          "publisher": "Traders Union",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx3ifhx3m-TXc-fUBKnpgtNN0wqq3V8tAlDNeec55KigsPFWz5Ah-aF_sEQh8"
+        }
+      ]
+    },
+    {
       "query": "texas tech basketball",
       "approx_searches": "1000+",
       "published_at": "2026-11-28T05:20:00Z",
       "related_news_urls": [
         "https://www.espn.com/mens-college-basketball/game/_/gameId/401920531/texas-tech-oregon",
         "https://247sports.com/college/oregon/article/oregon-lets-upset-bid-slip-away-in-62-59-loss-to-no-5-texas-tech-293371778/",
-        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/"
+        "https://wreckemred.com/donovan-atwell-finds-shooting-touch-as-texas-tech-basketball-beats-oregon"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGqDSbwJHrVmcqTWX25UdrH_TloXhMDKe8arlVE9IjLQQ5mRjYcBzQIwlmT-o",
       "image_credit": "ESPN",
@@ -278,11 +313,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp2GJXNpjpNyyiRmWS55m6tkbSk51u1G1ckTmb2FilgkCZ6piNGR6QIg8R4Xk"
         },
         {
-          "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/",
-          "title": "Texas Tech rallies to beat Oregon 62-59 in the Players Era",
-          "publisher": "Red Raiders Wire",
+          "url": "https://wreckemred.com/donovan-atwell-finds-shooting-touch-as-texas-tech-basketball-beats-oregon",
+          "title": "Donovan Atwell finds shooting touch as Texas Tech basketball beats Oregon",
+          "publisher": "Wreck'Em Red",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUojqYcKi2Y0WT11U53X5vZx3c_Q_AT5_l65SKf4pTrt2fpyRQZK_FbTrTbNM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTpMNLZb6cdNovHhpgRPyMWTngkyPPDI-MOwPQbERMSGH9Ri4dZAO7EGVwABbU"
         }
       ]
     },
@@ -318,41 +353,6 @@
           "publisher": "28/22 News",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGUrXk3I_kmt30vKapYAgJgHWr-Gfb9TTYy66fhkYB5gOeadH4OtdDyIbRJ0"
-        }
-      ]
-    },
-    {
-      "query": "jim caviezel",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T05:10:00Z",
-      "related_news_urls": [
-        "https://collider.com/jim-caviezel-ghost-soldier-action-movie-removed-from-1300-theaters-box-office/",
-        "https://religionunplugged.com/news/2026/11/30/jim-caviezel-in-ghost-soldier-another-faith-based-action-snore-fest",
-        "https://www.cbr.com/ghost-soldier-is-john-wick-meets-ghost-recon/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIKyZwvi2K-jWMHy-xZAWIzmg9oGpHhMqhPSJx9hZz0HkeEhBNE_yfzPg1veQ",
-      "image_credit": "Collider",
-      "news": [
-        {
-          "url": "https://collider.com/jim-caviezel-ghost-soldier-action-movie-removed-from-1300-theaters-box-office/",
-          "title": "Jim Caviezel’s Latest Action Flop Officially Removed From 1,300 Theaters",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIKyZwvi2K-jWMHy-xZAWIzmg9oGpHhMqhPSJx9hZz0HkeEhBNE_yfzPg1veQ"
-        },
-        {
-          "url": "https://religionunplugged.com/news/2026/11/30/jim-caviezel-in-ghost-soldier-another-faith-based-action-snore-fest",
-          "title": "Jim Caviezel Stars In ‘Ghost Soldier’: Yet Another Faith-Based Action Snore-Fest",
-          "publisher": "Religion Unplugged",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkK1QNt9KxD_l1fx1VySfCdIS7FW8Yd90PEDTZuSyOqj87dHLFznITATpte-o"
-        },
-        {
-          "url": "https://www.cbr.com/ghost-soldier-is-john-wick-meets-ghost-recon/",
-          "title": "Taylor Sheridan Star's New Gritty Action Movie Is John Wick Meets Ghost Recon",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVh70L_ygoxFF-dVNyvgFXaRV8iMzn3S6Zp5Tb_mh6W4Z812yvLkGMg9AfXOw"
         }
       ]
     }
