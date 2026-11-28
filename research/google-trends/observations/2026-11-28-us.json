@@ -3,17 +3,262 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T15:01:20.926516Z",
+  "checked_at": "2026-11-28T15:30:55.611652Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "mariska hargitay",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T15:10:00Z",
+      "related_news_urls": [
+        "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
+        "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
+        "https://demokratis.co.id/en/hargitay-nutcracker-family-production"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEppKq1EIHPgJqMq9qkOtbPw-6MOe9ZunGt2rMF51PHR95WWZajEvkZlpyybI",
+      "image_credit": "BroadwayWorld",
+      "news": [
+        {
+          "url": "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
+          "title": "Mariska Hargitay Joins Her Daughter’s Production of THE NUTCRACKER With Husband Peter Hermann",
+          "publisher": "BroadwayWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEppKq1EIHPgJqMq9qkOtbPw-6MOe9ZunGt2rMF51PHR95WWZajEvkZlpyybI"
+        },
+        {
+          "url": "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
+          "title": "Mariska Hargitay and Peter Hermann Were Cast in Daughter’s Production of ‘The Nutcracker’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5TRwATod7utwQEsl3qnnLP4ctkf-IapP1DnBpOzrngjarxbZcL2I2krkhLh8"
+        },
+        {
+          "url": "https://demokratis.co.id/en/hargitay-nutcracker-family-production",
+          "title": "Mariska Hargitay Joins Daughter in The Nutcracker Production",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB3Po1IKtinc2N43l67HdmebfP1LczEQAqrl30t2-5wP5nZBZlGuw_ZLxvKw0"
+        }
+      ]
+    },
+    {
+      "query": "canada–united states border",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T15:00:00Z",
+      "related_news_urls": [
+        "https://www.newsweek.com/canada-change-border-entry-rules-americans-12775451",
+        "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next",
+        "https://twaslnews1.twaslnews.com/8444079/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA",
+      "image_credit": "Newsweek",
+      "news": [
+        {
+          "url": "https://www.newsweek.com/canada-change-border-entry-rules-americans-12775451",
+          "title": "Canada To Change Border Entry Rules for Thousands of Americans In Days",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA"
+        },
+        {
+          "url": "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next",
+          "title": "Canada’s Remote Area Border Crossing permits permanently expire this month: here’s what comes next",
+          "publisher": "The Ely Echo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOQ_ABrSi4jD2CMEiqMSHgLqSFgU09S_M0XcnTsDhl6wYqbc-ZGCBETXRQ1s"
+        },
+        {
+          "url": "https://twaslnews1.twaslnews.com/8444079/",
+          "title": "Canada–united States Border: RABC ends December 1 for 11,000 users",
+          "publisher": "شبكة تواصل الإخبارية",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ2L_6NHTP2ryy5EJBQzmmGYu7CR5bKOp8tutW2g9QZuXkOmeFILFtxLoxowY"
+        }
+      ]
+    },
+    {
+      "query": "gio lopez",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T14:50:00Z",
+      "related_news_urls": [
+        "https://www.si.com/college/wake-forest/football/gio-lopez-headlines-wake-forests-week-12-honors-01m8fb45pbbn",
+        "https://journalnow.com/sports/college/wfu/football/article_9ef2086e-f540-4881-902c-91b6c9e776f0.html",
+        "https://miamihurricanes.com/news/2026/11/24/mensah-named-davey-obrien-award-finalist"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEaf4cgRLGS32O_yje9hMbRl0w0xBJ7Q1vKmhUX2sPHtZga2-0WhoNZeGEUl8",
+      "image_credit": "Sports Illustrated",
+      "news": [
+        {
+          "url": "https://www.si.com/college/wake-forest/football/gio-lopez-headlines-wake-forests-week-12-honors-01m8fb45pbbn",
+          "title": "Gio Lopez Headlines Wake Forest’s Week 12 Honors",
+          "publisher": "Sports Illustrated",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEaf4cgRLGS32O_yje9hMbRl0w0xBJ7Q1vKmhUX2sPHtZga2-0WhoNZeGEUl8"
+        },
+        {
+          "url": "https://journalnow.com/sports/college/wfu/football/article_9ef2086e-f540-4881-902c-91b6c9e776f0.html",
+          "title": "Wake Forest makes another move in the College Football Rankings",
+          "publisher": "Winston-Salem Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScmxgQiSdnymXqMHQWmExd9QbyolRXEKY6DA1E5tAiOYPBjzFklXBuu25PE-0"
+        },
+        {
+          "url": "https://miamihurricanes.com/news/2026/11/24/mensah-named-davey-obrien-award-finalist",
+          "title": "Mensah Named Davey O’Brien Award Finalist",
+          "publisher": "Miami Hurricanes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyX9K2hOwGXh89G7G6g1v3y6diPlbHo-tIFdEB_lTUVqYNvLnz48k7fAHPlAs"
+        }
+      ]
+    },
+    {
+      "query": "rockettes",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T14:50:00Z",
+      "related_news_urls": [
+        "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
+        "https://www.newsnationnow.com/us-news/peta-rockettes-protest-trump-turkey-pardon/",
+        "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI",
+      "image_credit": "PIX11",
+      "news": [
+        {
+          "url": "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
+          "title": "PETA supporters crash Rockettes Christmas performance",
+          "publisher": "PIX11",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI"
+        },
+        {
+          "url": "https://www.newsnationnow.com/us-news/peta-rockettes-protest-trump-turkey-pardon/",
+          "title": "PETA defends Rockettes protest, pushes Trump on turkey pardon",
+          "publisher": "NewsNation",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh8cp39oYGJ07e4D_YJU0M1KwwC2myrSIDJkAs4DaSWd01vGukNNvfLODd87A"
+        },
+        {
+          "url": "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html",
+          "title": "PETA Activists Storm Rockettes Show",
+          "publisher": "Newser",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReUvKct4L_H3X8UTeZWzfJV_oytCLI5jznnGhkwnpAlgDIUsMq3BhLkWNuTTQ"
+        }
+      ]
+    },
+    {
+      "query": "universal studios orlando",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T14:50:00Z",
+      "related_news_urls": [
+        "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/",
+        "https://orlandoparkstop.com/news/theme-park-news/epic-universe-update-indoor-coaster-construction-official-announcement-ride-rumors/",
+        "https://www.fool.com/investing/2026/11/24/is-disney-world-s-top-rival-making-an-epic-mistake/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclC4l97_BhLrAnVKRHsqOUQ36Jfwf2tJRzPDan2nYssut9QoTEWi6bun52w0",
+      "image_credit": "AllEars.Net",
+      "news": [
+        {
+          "url": "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/",
+          "title": "5 Changes Confirmed for Universal Theme Parks in 2027",
+          "publisher": "AllEars.Net",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclC4l97_BhLrAnVKRHsqOUQ36Jfwf2tJRzPDan2nYssut9QoTEWi6bun52w0"
+        },
+        {
+          "url": "https://orlandoparkstop.com/news/theme-park-news/epic-universe-update-indoor-coaster-construction-official-announcement-ride-rumors/",
+          "title": "Epic Universe Update: Indoor Coaster Construction, Official Announcement, & Ride Rumors",
+          "publisher": "Orlando ParkStop",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqxlGWFtrIlI-A4wnk5R6mMcDUeCaVIV86OhrYMNazt9faLvUpTeyUE2n0Lc"
+        },
+        {
+          "url": "https://www.fool.com/investing/2026/11/24/is-disney-world-s-top-rival-making-an-epic-mistake/",
+          "title": "Is Disney World's Top Rival Making an \"Epic\" Mistake?",
+          "publisher": "The Motley Fool",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStFyyr28OvLUwFS0a0yAkIsDoDPtm-lfpieMKoDq0W4jZDHYCY6K9j1xnegbw"
+        }
+      ]
+    },
+    {
+      "query": "meghan, duchess of sussex",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T14:50:00Z",
+      "related_news_urls": [
+        "https://www.vogue.com/article/how-meghan-markle-is-hosting-her-first-thanksgiving-back-in-britain",
+        "https://www.hola.com/us/royals/20261126937533/princess-lilibet-prince-archie-first-thanksgiving-uk-glimpse/",
+        "https://pagesix.com/2026/11/26/royal-family/inside-meghan-markles-homemade-holiday-plans-as-she-prince-harry-celebrate-thanksgiving/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1pXGDnQrhaaf2EooTDYh4OVjHIloivl4QQraGJXC8ZUfVhaSE_rbeZvV1Ac",
+      "image_credit": "Vogue",
+      "news": [
+        {
+          "url": "https://www.vogue.com/article/how-meghan-markle-is-hosting-her-first-thanksgiving-back-in-britain",
+          "title": "How Meghan Markle Is Hosting Her First Thanksgiving Back in Britain",
+          "publisher": "Vogue",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1pXGDnQrhaaf2EooTDYh4OVjHIloivl4QQraGJXC8ZUfVhaSE_rbeZvV1Ac"
+        },
+        {
+          "url": "https://www.hola.com/us/royals/20261126937533/princess-lilibet-prince-archie-first-thanksgiving-uk-glimpse/",
+          "title": "Princess Lilibet and Prince Archie spend first Thanksgiving in the UK as Meghan Markle shares glimpse of holidays at home",
+          "publisher": "HOLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDATQUYW-SMsngpGI4bo6TW9aNXBdznXapT-nefM7A_A-0iTfb4h8Io676VZk"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/26/royal-family/inside-meghan-markles-homemade-holiday-plans-as-she-prince-harry-celebrate-thanksgiving/",
+          "title": "Inside Meghan Markle’s ‘homemade holiday’ plans as she and Prince Harry celebrate first Thanksgiving back in Britain",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fehL6fuxUKPYPN2noIs0ZjbMRSkNzILy7UZCZrST3WJ9OWd_bq4spWtxSrE"
+        }
+      ]
+    },
+    {
+      "query": "james garner",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T14:50:00Z",
+      "related_news_urls": [
+        "https://www.tvline.com/2326971/south-park-star-recurring-role-james-garner-rockford-files-isaac-hayes/",
+        "https://www.imdb.com/news/ni66131179/?ref_=nwc_art_perm",
+        "https://3dvf.com/en/james-garner-did-his-own-rockford-stunts-then-sued-universal-and-won-against-hollywood-accounting/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBT4EsINcdCAz77_X9QWxF5z3AVczwv7zxURVuZ-CAXB6Jb9fEChE2W9DMxs",
+      "image_credit": "TVLine",
+      "news": [
+        {
+          "url": "https://www.tvline.com/2326971/south-park-star-recurring-role-james-garner-rockford-files-isaac-hayes/",
+          "title": "An Original South Park Star Had A Recurring Role On James Garner's The Rockford Files",
+          "publisher": "TVLine",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBT4EsINcdCAz77_X9QWxF5z3AVczwv7zxURVuZ-CAXB6Jb9fEChE2W9DMxs"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66131179/?ref_=nwc_art_perm",
+          "title": "An Original South Park Star Had A Recurring Role On James Garner's The Rockford Files",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd60DWl7DPVR_NAfP66UJIH-UbyYymG47xbJi-WajhaZ4mUmbcFXDPPMTaAH4"
+        },
+        {
+          "url": "https://3dvf.com/en/james-garner-did-his-own-rockford-stunts-then-sued-universal-and-won-against-hollywood-accounting/",
+          "title": "James Garner did his own Rockford stunts, then sued Universal and won against Hollywood accounting",
+          "publisher": "3DVF",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAv8-T89CJLKfvpk3JDvi2z2HWt1pGvqqUJHl3QuyhWmM0nPf6F5lSEI5rzE"
+        }
+      ]
+    },
     {
       "query": "wake forest football",
       "approx_searches": "5000+",
       "published_at": "2026-11-28T14:40:00Z",
       "related_news_urls": [
         "https://www.wfmynews2.com/article/life/food/little-richards-barbecue-in-winston-salem-to-serve-as-guest-chef-for-espns-college-gameday-nc/83-7316c814-d715-49da-aafa-0900adef4391",
-        "https://www.cbssports.com/betting/news/college-football-score-predictions-picks-best-bets-today-rivalry-week-2026/",
-        "https://myfox8.com/news/north-carolina/winston-salem/live-wake-forest-university-speaks-on-hosting-college-gameday/"
+        "https://www.espn.com/video/clip/_/id/50621291/wake-forest-fans-let-toilet-paper-fly-college-gameday",
+        "https://www.cbssports.com/betting/news/college-football-score-predictions-picks-best-bets-today-rivalry-week-2026/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0",
       "image_credit": "wfmynews2.com",
@@ -26,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0"
         },
         {
+          "url": "https://www.espn.com/video/clip/_/id/50621291/wake-forest-fans-let-toilet-paper-fly-college-gameday",
+          "title": "Wake Forest fans let the toilet paper fly on 'College GameDay'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsALrfwVst7uzfRTptot9gilpbwolhtk3ho2gfK9FLjHHxMX-mW_PBtmgvXHM"
+        },
+        {
           "url": "https://www.cbssports.com/betting/news/college-football-score-predictions-picks-best-bets-today-rivalry-week-2026/",
           "title": "College football score predictions for Rivalry Week, 2026: Model backs Wake Forest (-14.5) vs. Duke",
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLy4V3fOi_4xSS5dqADbp1v0D2Sbo29ipngmzJvlxFiFd9d71FH--DJ9PeWl8"
-        },
-        {
-          "url": "https://myfox8.com/news/north-carolina/winston-salem/live-wake-forest-university-speaks-on-hosting-college-gameday/",
-          "title": "Wake Forest University AD speaks on hosting ‘College GameDay’",
-          "publisher": "FOX8 WGHP",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPA6KcnxjZytzE36_sKaqynGAJQZWHlAqqubPE3GMoXLqIJ8IRfeanMZxp1J8"
         }
       ]
     },
@@ -47,8 +292,8 @@
       "published_at": "2026-11-28T14:40:00Z",
       "related_news_urls": [
         "https://screenrant.com/harry-potter-season-1-gringott-bank-hbo-images/",
-        "https://www.dailyvoa.com/entertainment/hbo-harry-potter-posters-tease-mark-on-snapes-forehead",
-        "https://showsnob.com/first-look-crucial-harry-potter-macguffin-draws-immense-criticism"
+        "https://collider.com/hbo-harry-potter-severus-snape-forehead-scar-new-posters/",
+        "https://www.imdb.com/news/ni66130999/?ref_=nmnw_art_perm"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJYQvAyOd_IhmNFkFdn5y8CFzh5uaNowXT6tqlnxMYgqyKml0Jfk0ZgwdBzKA",
       "image_credit": "ScreenRant",
@@ -61,18 +306,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJYQvAyOd_IhmNFkFdn5y8CFzh5uaNowXT6tqlnxMYgqyKml0Jfk0ZgwdBzKA"
         },
         {
-          "url": "https://www.dailyvoa.com/entertainment/hbo-harry-potter-posters-tease-mark-on-snapes-forehead",
-          "title": "HBO Harry Potter Posters Tease Mark on Snape's Forehead",
-          "publisher": "Daily Voice Of Asia",
+          "url": "https://collider.com/hbo-harry-potter-severus-snape-forehead-scar-new-posters/",
+          "title": "HBO Officially Makes Severus Snape the New Harry Potter",
+          "publisher": "Collider",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCtAbYX3lHwNtNZsEtZ6HrI1l1FkVHM8GLb4UJn4yDYswXFo1rP7qBYCimkNc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPtEdzwR8HOLhordFmp2cI0BjuVo9kmtwvyEjQecZBUA9mDbjDd0pm2UwzhRU"
         },
         {
-          "url": "https://showsnob.com/first-look-crucial-harry-potter-macguffin-draws-immense-criticism",
-          "title": "First look at crucial Harry Potter MacGuffin draws immense criticism",
-          "publisher": "Show Snob",
+          "url": "https://www.imdb.com/news/ni66130999/?ref_=nmnw_art_perm",
+          "title": "HBO’s Harry Potter Confirms Major Changes To 1 Iconic Book Location",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT670_fFoYpN5e5Hwh-s5VD2tywgvm4waCLdHP_S17jK7toF41mvic97tG6eUQ"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8hQd9sSS0-HIw5jOtiJDDsRhuNEqPu9QEiDYPHAfpp53A_QqPqEluf92cKrA"
         }
       ]
     },
@@ -81,20 +326,13 @@
       "approx_searches": "500+",
       "published_at": "2026-11-28T14:40:00Z",
       "related_news_urls": [
-        "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
         "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
-        "https://sportsbook.fanduel.com/football/ncaa-football-games/connecticut-@-wyoming-36351587"
+        "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
+        "https://7220sports.com/wyoming-uconn-football-information-analysis-latest/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk",
-      "image_credit": "Hartford Courant",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno",
+      "image_credit": "FOX Sports",
       "news": [
-        {
-          "url": "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
-          "title": "UConn football will finish its regular season at the highest elevation in the FBS against Wyoming",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk"
-        },
         {
           "url": "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
           "title": "How to Watch UConn vs. Wyoming: TV Channel, Live Stream, Time",
@@ -103,248 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno"
         },
         {
-          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/connecticut-@-wyoming-36351587",
-          "title": "Connecticut @ Wyoming Odds",
-          "publisher": "FanDuel Sportsbook",
+          "url": "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
+          "title": "UConn football will finish its regular season at the highest elevation in the FBS against Wyoming",
+          "publisher": "Hartford Courant",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQltJRht3fZEnCh-ho5-AVlqA71Fi7Skw_GzjVGeFgo6dJFQlP8e_p_lNuWRU"
-        }
-      ]
-    },
-    {
-      "query": "new harry potter series",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:40:00Z",
-      "related_news_urls": [
-        "https://www.harrypotter.com/features/six-fashionable-findings-from-the-hbo-original-harry-potter-series-costume-department",
-        "https://www.yahoo.com/entertainment/tv/articles/j-k-rowling-reveals-she-182144229.html",
-        "https://www.radiotimes.com/tv/fantasy/harry-potter-tv-series-director-mark-mylod-preview-interview/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW4QxooE8f6PV3hxr3xtDY-_--7AG8kbZP72LrfmWrP3msYELrkmlFzsQ1ahQ",
-      "image_credit": "Harry Potter",
-      "news": [
-        {
-          "url": "https://www.harrypotter.com/features/six-fashionable-findings-from-the-hbo-original-harry-potter-series-costume-department",
-          "title": "Harry Potter | Six fashionable findings from the HBO Original Harry Potter series costume department",
-          "publisher": "Harry Potter",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRW4QxooE8f6PV3hxr3xtDY-_--7AG8kbZP72LrfmWrP3msYELrkmlFzsQ1ahQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/tv/articles/j-k-rowling-reveals-she-182144229.html",
-          "title": "J.K. Rowling Reveals What She Honestly Thinks Of HBO’s New Harry Potter Show",
-          "publisher": "Yahoo",
+          "url": "https://7220sports.com/wyoming-uconn-football-information-analysis-latest/",
+          "title": "Gear Up For Game Day: UConn Huskies",
+          "publisher": "7220 Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9u-8RQT6dcTRjrrRsBIhJOymOS8z4J3TXJwVBiwixi1ieP3P5qqAM2e6rOoA"
-        },
-        {
-          "url": "https://www.radiotimes.com/tv/fantasy/harry-potter-tv-series-director-mark-mylod-preview-interview/",
-          "title": "Harry Potter TV series director reveals how new Philosopher's Stone is not just a remake",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_m5cU39B9byItNvF6YAJ4fsfDTNelJYZiYpn6hHzGLk28JyInHlH4axK-xI"
-        }
-      ]
-    },
-    {
-      "query": "ana de armas",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:40:00Z",
-      "related_news_urls": [
-        "https://movieweb.com/knock-knock-leaving-streaming-november-2026/",
-        "https://www.yahoo.com/entertainment/celebrity/articles/tom-cruise-believes-chance-rekindling-140042864.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthpxwlHTspLhYDx2SuqPZm2U5mdyPeBiVqax0-xXNteJSc4cmy3kTBCkY4I4",
-      "image_credit": "MovieWeb",
-      "news": [
-        {
-          "url": "https://movieweb.com/knock-knock-leaving-streaming-november-2026/",
-          "title": "Ana de Armas' (Very) R-Rated 99-Minute Thriller Remake Is Being Cut From Streaming Next Week",
-          "publisher": "MovieWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRthpxwlHTspLhYDx2SuqPZm2U5mdyPeBiVqax0-xXNteJSc4cmy3kTBCkY4I4"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/articles/tom-cruise-believes-chance-rekindling-140042864.html",
-          "title": "Tom Cruise Believes There’s a Chance of ‘Rekindling’ Chemistry With Ana de Armas Despite New Romance",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc9FJNRxb3gjV5cR6ziaYuB94qqZqGCPuy0rPNT5-hPhar0ymbMkzI16mLMTo"
-        }
-      ]
-    },
-    {
-      "query": "jake dickert",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T14:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/jake-dickert-mentor-could-see-130002119.html",
-        "https://www.nytimes.com/athletic/7801756/2026/11/22/miami-wake-forest-acc-championship-tiebreaker/",
-        "https://caneswarning.com/should-miami-and-wake-forest-just-agree-to-skip-the-acc-championship-game"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAw3iQssSFgZz-kCoNvEm2FNfLFtJaV7fOxOOhOiSQ62FVoVMbW3iZn6lzCJQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/jake-dickert-mentor-could-see-130002119.html",
-          "title": "Jake Dickert’s Mentor Could See This Coming",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRAw3iQssSFgZz-kCoNvEm2FNfLFtJaV7fOxOOhOiSQ62FVoVMbW3iZn6lzCJQ"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7801756/2026/11/22/miami-wake-forest-acc-championship-tiebreaker/",
-          "title": "No tiebreakers needed. Miami and Wake Forest will face off for the ACC championship - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRljwLoMhV52KsHC3vzw9FK9ZZtRZBGtuGyZTYFmt24nyCVZpYlF88Wg13ttxM"
-        },
-        {
-          "url": "https://caneswarning.com/should-miami-and-wake-forest-just-agree-to-skip-the-acc-championship-game",
-          "title": "Should Miami and Wake Forest just agree to skip the ACC championship game?",
-          "publisher": "Canes Warning",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtcwTCVwFtwimPl2uP1GDJooNsD18mklY4e7Sht6c20zppizhz0NO6xmfVJS4"
-        }
-      ]
-    },
-    {
-      "query": "terremoto",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T14:30:00Z",
-      "related_news_urls": [
-        "https://www.portafolio.co/economia/gobierno/colombia-estudia-implementar-un-sistema-de-alerta-temprana-de-terremotos-con-tecnologia-japonesa-asi-va-el-plan-507233",
-        "https://www.facebook.com/noticiero90minutos/videos/noti90-en-cali-las-familias-afectadas-por-el-sismo-del-pasado-10-de-agosto-sigue/984095907716975/",
-        "https://www.cali.gov.co/boletines/publicaciones/195730/en-audiencia-publica-del-congreso-de-la-republica-alcaldia-presento-balance-de-gestion-del-terremoto-y-escucho-a-la-ciudadania/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wll0_wnb_8YWdCmjm6k7qTgWSKwnsySQ-zRaaXB1p5BL7dnWD0ipCmSEog8",
-      "image_credit": "Portafolio.co",
-      "news": [
-        {
-          "url": "https://www.portafolio.co/economia/gobierno/colombia-estudia-implementar-un-sistema-de-alerta-temprana-de-terremotos-con-tecnologia-japonesa-asi-va-el-plan-507233",
-          "title": "Colombia estudia implementar un sistema de alerta temprana de terremotos con tecnología japonesa: así va el plan",
-          "publisher": "Portafolio.co",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9wll0_wnb_8YWdCmjm6k7qTgWSKwnsySQ-zRaaXB1p5BL7dnWD0ipCmSEog8"
-        },
-        {
-          "url": "https://www.facebook.com/noticiero90minutos/videos/noti90-en-cali-las-familias-afectadas-por-el-sismo-del-pasado-10-de-agosto-sigue/984095907716975/",
-          "title": "Noticiero 90 Minutos . . #Noti90 En Cali, las familias afectadas por el sismo del pasado 10 de agosto siguen esperando respuestas. Durante una audiencia pública, autoridades y cong",
-          "publisher": "Facebook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeyknebV7qy4WdE0y8-sEhtZWiNkgWZI5gmP17dZ8CDmz84LmaGYqivu7DH9I"
-        },
-        {
-          "url": "https://www.cali.gov.co/boletines/publicaciones/195730/en-audiencia-publica-del-congreso-de-la-republica-alcaldia-presento-balance-de-gestion-del-terremoto-y-escucho-a-la-ciudadania/",
-          "title": "En audiencia pública del Congreso de la República, Alcaldía presentó balance de gestión del terremoto y escuchó a la ciudadanía",
-          "publisher": "Alcaldía de Santiago de Cali",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwZqkgr22dcV3bHS8NbO3_K-gm3psgqqd6x1eYdbO3z33PE6keRoQs2wnfHMo"
-        }
-      ]
-    },
-    {
-      "query": "christkindlmarket",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T14:30:00Z",
-      "related_news_urls": [
-        "https://www.rtd-denver.com/community/news/2026/jingle-all-the-way-to-denver-christkindlmarket-with-rtd",
-        "https://www.denver7.com/news/local-news/high-winds-delay-opening-of-denver-christkindlmarket-saturday",
-        "https://www.denvergazette.com/2026/11/21/photos-christkindlmarkt-and-the-mile-high-tree-kick-off-the-holidays/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw0aYsvqhrckQzG8Y_LKEzD8xv0GifX8KP13UF91yVO7_CvON96l4T2vGtSPo",
-      "image_credit": "RTD-Denver",
-      "news": [
-        {
-          "url": "https://www.rtd-denver.com/community/news/2026/jingle-all-the-way-to-denver-christkindlmarket-with-rtd",
-          "title": "‘Jingle all the way’ to Denver Christkindlmarket with RTD",
-          "publisher": "RTD-Denver",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQw0aYsvqhrckQzG8Y_LKEzD8xv0GifX8KP13UF91yVO7_CvON96l4T2vGtSPo"
-        },
-        {
-          "url": "https://www.denver7.com/news/local-news/high-winds-delay-opening-of-denver-christkindlmarket-saturday",
-          "title": "High winds delay opening of Denver Christkindlmarket Saturday",
-          "publisher": "Denver7",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRbFtZwfdaTlJvlv6udn7ABv_Iw3hQA2wp0IDI6zH_2yB26VzAfrmT-cMaYJV0"
-        },
-        {
-          "url": "https://www.denvergazette.com/2026/11/21/photos-christkindlmarkt-and-the-mile-high-tree-kick-off-the-holidays/",
-          "title": "PHOTOS: Christkindlmarkt and the Mile High Tree kick off the holidays",
-          "publisher": "Denver Gazette",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Ndq1JBg2U09Rw2xZzOplo38vR5y0Pz1H7FmII4LM9BdSvfV6ceaSTEj2pPo"
-        }
-      ]
-    },
-    {
-      "query": "noah codjo-evora",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:30:00Z",
-      "related_news_urls": [
-        "https://www.record.pt/internacional/paises/alemanha/bayern-munique/detalhe/ha-mais-um-luso-descendente-a-despontar-no-bayern-munique-noah-codjo-evora-ja-se-estreou-na-champions",
-        "https://diadejogo.pt/noticias/codjo-evora-o-luso-de-19-anos-lancado-na-champions-2026-11-27",
-        "https://www.spacemoney.com.br/esportes/noah-codjo-evora-estreia-bayern-bundesliga-champions/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMAjSm7qQKPe_1iuwQs_-CWD-RVaWvud_7xhBSDq3tgDLefZ9x4FsxQsKnQQ",
-      "image_credit": "Record",
-      "news": [
-        {
-          "url": "https://www.record.pt/internacional/paises/alemanha/bayern-munique/detalhe/ha-mais-um-luso-descendente-a-despontar-no-bayern-munique-noah-codjo-evora-ja-se-estreou-na-champions",
-          "title": "Há mais um luso-descendente a despontar no Bayern Munique: Noah Codjo-Evora já se estreou na Champions",
-          "publisher": "Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxMAjSm7qQKPe_1iuwQs_-CWD-RVaWvud_7xhBSDq3tgDLefZ9x4FsxQsKnQQ"
-        },
-        {
-          "url": "https://diadejogo.pt/noticias/codjo-evora-o-luso-de-19-anos-lancado-na-champions-2026-11-27",
-          "title": "Codjo-Évora, o luso de 19 anos lançado na Champions",
-          "publisher": "diadejogo.pt",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQN7F5t972Mzs-jd1tyA5ghKI-UjmxiH51MwiZlW4bskg-vuxaQ2hpnX6sBQKI"
-        },
-        {
-          "url": "https://www.spacemoney.com.br/esportes/noah-codjo-evora-estreia-bayern-bundesliga-champions/",
-          "title": "Noah Codjo-Evora estreia pelo Bayern na Bundesliga",
-          "publisher": "SpaceMoney",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-POOiLVWzsYmPKxLILXoKrwEccsE2oEbO-CXnMulVyP9LkgFTxlAU8gaDbKU"
-        }
-      ]
-    },
-    {
-      "query": "al-hazem f.c. vs al-nassr standings",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T14:20:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/soccer/saudi-pro-league-al-hazem-fc-vs-al-nassr-fc-nov-28-2026-game-boxscore-1101055",
-        "https://www.tallahatchienews.ms/node/479441",
-        "https://demokratis.co.id/en/postecoglou-ronaldo-felix-al-nassr"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvNVjT7d5fNZDfK9VfBxoWaKXRuqYbFYj51UqpRiBjsO6YQbEO_madDDyXxzo",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/soccer/saudi-pro-league-al-hazem-fc-vs-al-nassr-fc-nov-28-2026-game-boxscore-1101055",
-          "title": "Al-Hazem FC vs. Al-Nassr FC - Final Score - November 28, 2026",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRvNVjT7d5fNZDfK9VfBxoWaKXRuqYbFYj51UqpRiBjsO6YQbEO_madDDyXxzo"
-        },
-        {
-          "url": "https://www.tallahatchienews.ms/node/479441",
-          "title": "[STREAM@TV] How to Watch Al Hazem vs. Al Nassr Online for Free Start Time, Live Streaming & TV Channels in USA and Other Countries",
-          "publisher": "tallahatchienews.ms",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0"
-        },
-        {
-          "url": "https://demokratis.co.id/en/postecoglou-ronaldo-felix-al-nassr",
-          "title": "Postecoglou Starts Ronaldo and Felix Against Al-Hazem",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRJgxF66Hal06geUUs0ZAKGUG4AecbvSMXKo3op3ZviO7PEncCIWW1H-rcYUVQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gAmBDh26Zeirf5VAg9bUMCAI6hgRDl_y5OQqaRxbnvVOk3NOqg8IZmnWLrc"
         }
       ]
     }
