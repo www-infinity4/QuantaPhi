@@ -3,9 +3,257 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T15:30:55.611652Z",
+  "checked_at": "2026-11-28T16:00:40.836537Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "leeds united",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T15:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
+        "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
+        "https://sports.yahoo.com/soccer/articles/matchday-programmes-coventry-city-clash-023000843.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0oA3Y1mbDSfoQEa6s8UJEVSUtmxXRPuk3Hti-hTPVFV3DAaRezwhNuwgd1iA",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
+          "title": "Leeds United vs Coventry City: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0oA3Y1mbDSfoQEa6s8UJEVSUtmxXRPuk3Hti-hTPVFV3DAaRezwhNuwgd1iA"
+        },
+        {
+          "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
+          "title": "The latest team news and Daniel Farke’s Coventry expectations",
+          "publisher": "Leeds United",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCrlZFHj-gFxGmrJnIE1-RC4Lkbyk3E5W1cOxofKCAzY8MOxL3GlmweI8rkhA"
+        },
+        {
+          "url": "https://sports.yahoo.com/soccer/articles/matchday-programmes-coventry-city-clash-023000843.html",
+          "title": "Matchday programmes for Coventry City clash on sale",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1mhGGlWt9H9BtKnDrnfwZ_mjy0eqLX-IfuOoZyLVnCuJMyOfzpkZ2zvllqZs"
+        }
+      ]
+    },
+    {
+      "query": "ben wang",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T15:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/es/news/ni66092507/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7qLC__uOpu9kRXIuEVp3NURO9OA9Pk6_35P_EGCEQC0uN2Ry7DdNHzMOicY",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/es/news/ni66092507/",
+          "title": "Hunger Games Actor Ben Wang in Talks to Play Iceman, X-Men’s Youngest Founder, at 29",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7qLC__uOpu9kRXIuEVp3NURO9OA9Pk6_35P_EGCEQC0uN2Ry7DdNHzMOicY"
+        }
+      ]
+    },
+    {
+      "query": "mckenna grace movies",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T15:40:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+        "https://variety.com/2026/film/box-office/box-office-hunger-games-sunrise-reaping-thanksgiving-1236959537/",
+        "https://www.theguardian.com/commentisfree/2026/nov/27/new-hunger-games-sunrise-on-the-reaping-a-gen-z-call-to-action"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnF68xyfCbb8IiIBf4bRf3uh_nEdu9xLgIiYZP4hEUseUX19HsvH_2Cs2G2tY",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
+          "title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnF68xyfCbb8IiIBf4bRf3uh_nEdu9xLgIiYZP4hEUseUX19HsvH_2Cs2G2tY"
+        },
+        {
+          "url": "https://variety.com/2026/film/box-office/box-office-hunger-games-sunrise-reaping-thanksgiving-1236959537/",
+          "title": "Box Office: Hunger Games: Sunrise on Reaping Rules Thanksgiving",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo4WAvcUkLQo3ppMpgixnIuY9X4DYrqq3b-NXVQMJhASB0M2Eg5W15iQ4mFxU"
+        },
+        {
+          "url": "https://www.theguardian.com/commentisfree/2026/nov/27/new-hunger-games-sunrise-on-the-reaping-a-gen-z-call-to-action",
+          "title": "Sunrise on the Reaping: the new Hunger Games film is a gen Z call to action – critics have missed the point",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-rMCUo16Tm4PMoAo3jfzcuaykhZy6StSHt19vRVHMj_6sWkh2CylaBcnR7XY"
+        }
+      ]
+    },
+    {
+      "query": "matt damon family home life",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T15:30:00Z",
+      "related_news_urls": [
+        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-reveals-difficult-living-211514045.html",
+        "https://graziamagazine.com/us/articles/after-91-days-filming-the-odyssey-matt-damon-56-says-coming-home-to-his-wife-and-4-daughters-25497-c1/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
+          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-reveals-difficult-living-211514045.html",
+          "title": "Matt Damon reveals difficult living situation with wife and four daughters",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpvLsnhTA93A6w9HWZvNt-_TvA67DkrbXUl8s94TtKquTEkSrTETAF75_rWsA"
+        },
+        {
+          "url": "https://graziamagazine.com/us/articles/after-91-days-filming-the-odyssey-matt-damon-56-says-coming-home-to-his-wife-and-4-daughters-25497-c1/",
+          "title": "After 91 Days Filming 'The Odyssey,' Matt Damon, 56, Says Coming Home to His Wife and 4 Daughters Was 'Difficult'",
+          "publisher": "Grazia",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHp3-grJgWlYzb9ndg3nuIZDFRhV3KxktFl4Z7kvAfmmejUaQ40vkMqE1K9U"
+        }
+      ]
+    },
+    {
+      "query": "paw patrol",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T15:30:00Z",
+      "related_news_urls": [
+        "https://explore-liverpool.com/extra-paw-patrol-live-show-added-in-liverpool-due-to-huge-demand/",
+        "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=section_banner&itm_content=1",
+        "https://peradaban.id/en/paw-patrol-live-uk-tour"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK0APgI2Bn7g18DgqjxeYnIT3fdaHXRuit3SdPUd70lnmnYPpkkMKBEFc6QOQ",
+      "image_credit": "Explore Liverpool",
+      "news": [
+        {
+          "url": "https://explore-liverpool.com/extra-paw-patrol-live-show-added-in-liverpool-due-to-huge-demand/",
+          "title": "Extra PAW Patrol Live! show added in Liverpool due to huge demand",
+          "publisher": "Explore Liverpool",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK0APgI2Bn7g18DgqjxeYnIT3fdaHXRuit3SdPUd70lnmnYPpkkMKBEFc6QOQ"
+        },
+        {
+          "url": "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=section_banner&itm_content=1",
+          "title": "PAW Patrol Live!Black Friday offer - save 20% on London tickets",
+          "publisher": "LondonWorld",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuJU3KDZQl5-JFjgPgUUGNUuGJq4GnAAmmgqpgvWKLF0-9f7TBr67c0tJBfqw"
+        },
+        {
+          "url": "https://peradaban.id/en/paw-patrol-live-uk-tour",
+          "title": "PAW Patrol Live Brings Heroes Unite Tour to UK Venues",
+          "publisher": "Peradaban.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL3cOYktP68LMGwW0WpZujRgKf-1Xw9MjzXR5cYkBAi5meDgELmmBxqWowr5Y"
+        }
+      ]
+    },
+    {
+      "query": "stephen garcia",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T15:20:00Z",
+      "related_news_urls": [
+        "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
+        "https://sports.yahoo.com/college-football/articles/clemsons-hevin-brown-shuler-south-120128429.html",
+        "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs",
+      "image_credit": "Greenville Online",
+      "news": [
+        {
+          "url": "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
+          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
+          "publisher": "Greenville Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/clemsons-hevin-brown-shuler-south-120128429.html",
+          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIyKIgjf0Rb-GsAPLwekHWaHQN6K1MDFSsw1PB02mZ_Gn61BBTlOmeitiU5Nc"
+        },
+        {
+          "url": "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
+          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
+          "publisher": "Greenville Online",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs"
+        }
+      ]
+    },
+    {
+      "query": "greta gerwig",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T15:20:00Z",
+      "related_news_urls": [
+        "https://www.narniaweb.com/2026/11/meryl-streep-was-present-for-narnia-additional-filming/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGK6KIG1JSBn_QOuSWnmV7EFlpVRwmbuF69tlRvSWu1nws1_HFC2LMrQ-HUlE",
+      "image_credit": "NarniaWeb",
+      "news": [
+        {
+          "url": "https://www.narniaweb.com/2026/11/meryl-streep-was-present-for-narnia-additional-filming/",
+          "title": "Meryl Streep was Present for ‘Narnia’ Additional Filming",
+          "publisher": "NarniaWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGK6KIG1JSBn_QOuSWnmV7EFlpVRwmbuF69tlRvSWu1nws1_HFC2LMrQ-HUlE"
+        }
+      ]
+    },
+    {
+      "query": "oreo",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T15:10:00Z",
+      "related_news_urls": [
+        "https://www.allrecipes.com/oreo-zero-sugar-dark-chocolate-12277624",
+        "https://boingboing.net/2026/11/25/popkin-oreo-cream-plaster-bust.html",
+        "https://www.cbc.ca/kidsnews/post/dairy-milk-oreo-bars-are-being-recalled-for-allergy-risk"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQrOFA4keJNWjVhutUadZM5aQVxyRW5mES70ZlE5h7mJuSa3qus-2y-fN9Tk",
+      "image_credit": "Allrecipes",
+      "news": [
+        {
+          "url": "https://www.allrecipes.com/oreo-zero-sugar-dark-chocolate-12277624",
+          "title": "A First-Of-Its-Kind Oreo Just Hit Store Shelves—And Fans Say It’s a ‘GAME CHANGER’",
+          "publisher": "Allrecipes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQrOFA4keJNWjVhutUadZM5aQVxyRW5mES70ZlE5h7mJuSa3qus-2y-fN9Tk"
+        },
+        {
+          "url": "https://boingboing.net/2026/11/25/popkin-oreo-cream-plaster-bust.html",
+          "title": "Watch an artist sculpt a plaster-style bust out of Oreo cream",
+          "publisher": "Boing Boing",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG-qEhAv0E-N9-TrstKRXi6cLhQmECYKs35fTKLQQC87OCA2t-miEsTlgpzMQ"
+        },
+        {
+          "url": "https://www.cbc.ca/kidsnews/post/dairy-milk-oreo-bars-are-being-recalled-for-allergy-risk",
+          "title": "Dairy Milk Oreo bars are being recalled for allergy risk | story | Kids News",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW5pUsRCWdFT7T8gTAkIfRYXgfZFhTbTq9HGSzteCb2b1qfTZb0U-yza32zoc"
+        }
+      ]
+    },
     {
       "query": "mariska hargitay",
       "approx_searches": "200+",
@@ -43,12 +291,12 @@
     },
     {
       "query": "canada–united states border",
-      "approx_searches": "1000+",
+      "approx_searches": "5000+",
       "published_at": "2026-11-28T15:00:00Z",
       "related_news_urls": [
         "https://www.newsweek.com/canada-change-border-entry-rules-americans-12775451",
-        "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next",
-        "https://twaslnews1.twaslnews.com/8444079/"
+        "https://demokratis.co.id/en/canada-remote-border-rules",
+        "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA",
       "image_credit": "Newsweek",
@@ -61,298 +309,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA"
         },
         {
+          "url": "https://demokratis.co.id/en/canada-remote-border-rules",
+          "title": "Canada Ends Remote Border Permit Program December 1",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOdpQgiVv9qa027t6pUgrlhiO-Td4Z7PtlTqa_N_06nfgsf31pNTKeWAzQDM"
+        },
+        {
           "url": "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next",
           "title": "Canada’s Remote Area Border Crossing permits permanently expire this month: here’s what comes next",
           "publisher": "The Ely Echo",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOQ_ABrSi4jD2CMEiqMSHgLqSFgU09S_M0XcnTsDhl6wYqbc-ZGCBETXRQ1s"
-        },
-        {
-          "url": "https://twaslnews1.twaslnews.com/8444079/",
-          "title": "Canada–united States Border: RABC ends December 1 for 11,000 users",
-          "publisher": "شبكة تواصل الإخبارية",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJ2L_6NHTP2ryy5EJBQzmmGYu7CR5bKOp8tutW2g9QZuXkOmeFILFtxLoxowY"
-        }
-      ]
-    },
-    {
-      "query": "gio lopez",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T14:50:00Z",
-      "related_news_urls": [
-        "https://www.si.com/college/wake-forest/football/gio-lopez-headlines-wake-forests-week-12-honors-01m8fb45pbbn",
-        "https://journalnow.com/sports/college/wfu/football/article_9ef2086e-f540-4881-902c-91b6c9e776f0.html",
-        "https://miamihurricanes.com/news/2026/11/24/mensah-named-davey-obrien-award-finalist"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEaf4cgRLGS32O_yje9hMbRl0w0xBJ7Q1vKmhUX2sPHtZga2-0WhoNZeGEUl8",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/wake-forest/football/gio-lopez-headlines-wake-forests-week-12-honors-01m8fb45pbbn",
-          "title": "Gio Lopez Headlines Wake Forest’s Week 12 Honors",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQEaf4cgRLGS32O_yje9hMbRl0w0xBJ7Q1vKmhUX2sPHtZga2-0WhoNZeGEUl8"
-        },
-        {
-          "url": "https://journalnow.com/sports/college/wfu/football/article_9ef2086e-f540-4881-902c-91b6c9e776f0.html",
-          "title": "Wake Forest makes another move in the College Football Rankings",
-          "publisher": "Winston-Salem Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScmxgQiSdnymXqMHQWmExd9QbyolRXEKY6DA1E5tAiOYPBjzFklXBuu25PE-0"
-        },
-        {
-          "url": "https://miamihurricanes.com/news/2026/11/24/mensah-named-davey-obrien-award-finalist",
-          "title": "Mensah Named Davey O’Brien Award Finalist",
-          "publisher": "Miami Hurricanes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyX9K2hOwGXh89G7G6g1v3y6diPlbHo-tIFdEB_lTUVqYNvLnz48k7fAHPlAs"
-        }
-      ]
-    },
-    {
-      "query": "rockettes",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:50:00Z",
-      "related_news_urls": [
-        "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
-        "https://www.newsnationnow.com/us-news/peta-rockettes-protest-trump-turkey-pardon/",
-        "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI",
-      "image_credit": "PIX11",
-      "news": [
-        {
-          "url": "https://pix11.com/news/peta-supporters-crash-rockettes-christmas-performance/",
-          "title": "PETA supporters crash Rockettes Christmas performance",
-          "publisher": "PIX11",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRSjhUk8qSvxByTshjDtrCDKXuNBSAvdcSWEh6Ofz3FxFtAjTGGFzr9kxEPppI"
-        },
-        {
-          "url": "https://www.newsnationnow.com/us-news/peta-rockettes-protest-trump-turkey-pardon/",
-          "title": "PETA defends Rockettes protest, pushes Trump on turkey pardon",
-          "publisher": "NewsNation",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSh8cp39oYGJ07e4D_YJU0M1KwwC2myrSIDJkAs4DaSWd01vGukNNvfLODd87A"
-        },
-        {
-          "url": "https://www.newser.com/story/400612/peta-activists-storm-rockettes-show.html",
-          "title": "PETA Activists Storm Rockettes Show",
-          "publisher": "Newser",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReUvKct4L_H3X8UTeZWzfJV_oytCLI5jznnGhkwnpAlgDIUsMq3BhLkWNuTTQ"
-        }
-      ]
-    },
-    {
-      "query": "universal studios orlando",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T14:50:00Z",
-      "related_news_urls": [
-        "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/",
-        "https://orlandoparkstop.com/news/theme-park-news/epic-universe-update-indoor-coaster-construction-official-announcement-ride-rumors/",
-        "https://www.fool.com/investing/2026/11/24/is-disney-world-s-top-rival-making-an-epic-mistake/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclC4l97_BhLrAnVKRHsqOUQ36Jfwf2tJRzPDan2nYssut9QoTEWi6bun52w0",
-      "image_credit": "AllEars.Net",
-      "news": [
-        {
-          "url": "https://allears.net/2026/11/26/5-changes-confirmed-for-universal-theme-parks-in-2027/",
-          "title": "5 Changes Confirmed for Universal Theme Parks in 2027",
-          "publisher": "AllEars.Net",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQclC4l97_BhLrAnVKRHsqOUQ36Jfwf2tJRzPDan2nYssut9QoTEWi6bun52w0"
-        },
-        {
-          "url": "https://orlandoparkstop.com/news/theme-park-news/epic-universe-update-indoor-coaster-construction-official-announcement-ride-rumors/",
-          "title": "Epic Universe Update: Indoor Coaster Construction, Official Announcement, & Ride Rumors",
-          "publisher": "Orlando ParkStop",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqxlGWFtrIlI-A4wnk5R6mMcDUeCaVIV86OhrYMNazt9faLvUpTeyUE2n0Lc"
-        },
-        {
-          "url": "https://www.fool.com/investing/2026/11/24/is-disney-world-s-top-rival-making-an-epic-mistake/",
-          "title": "Is Disney World's Top Rival Making an \"Epic\" Mistake?",
-          "publisher": "The Motley Fool",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStFyyr28OvLUwFS0a0yAkIsDoDPtm-lfpieMKoDq0W4jZDHYCY6K9j1xnegbw"
-        }
-      ]
-    },
-    {
-      "query": "meghan, duchess of sussex",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:50:00Z",
-      "related_news_urls": [
-        "https://www.vogue.com/article/how-meghan-markle-is-hosting-her-first-thanksgiving-back-in-britain",
-        "https://www.hola.com/us/royals/20261126937533/princess-lilibet-prince-archie-first-thanksgiving-uk-glimpse/",
-        "https://pagesix.com/2026/11/26/royal-family/inside-meghan-markles-homemade-holiday-plans-as-she-prince-harry-celebrate-thanksgiving/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1pXGDnQrhaaf2EooTDYh4OVjHIloivl4QQraGJXC8ZUfVhaSE_rbeZvV1Ac",
-      "image_credit": "Vogue",
-      "news": [
-        {
-          "url": "https://www.vogue.com/article/how-meghan-markle-is-hosting-her-first-thanksgiving-back-in-britain",
-          "title": "How Meghan Markle Is Hosting Her First Thanksgiving Back in Britain",
-          "publisher": "Vogue",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSk1pXGDnQrhaaf2EooTDYh4OVjHIloivl4QQraGJXC8ZUfVhaSE_rbeZvV1Ac"
-        },
-        {
-          "url": "https://www.hola.com/us/royals/20261126937533/princess-lilibet-prince-archie-first-thanksgiving-uk-glimpse/",
-          "title": "Princess Lilibet and Prince Archie spend first Thanksgiving in the UK as Meghan Markle shares glimpse of holidays at home",
-          "publisher": "HOLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDATQUYW-SMsngpGI4bo6TW9aNXBdznXapT-nefM7A_A-0iTfb4h8Io676VZk"
-        },
-        {
-          "url": "https://pagesix.com/2026/11/26/royal-family/inside-meghan-markles-homemade-holiday-plans-as-she-prince-harry-celebrate-thanksgiving/",
-          "title": "Inside Meghan Markle’s ‘homemade holiday’ plans as she and Prince Harry celebrate first Thanksgiving back in Britain",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-fehL6fuxUKPYPN2noIs0ZjbMRSkNzILy7UZCZrST3WJ9OWd_bq4spWtxSrE"
-        }
-      ]
-    },
-    {
-      "query": "james garner",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T14:50:00Z",
-      "related_news_urls": [
-        "https://www.tvline.com/2326971/south-park-star-recurring-role-james-garner-rockford-files-isaac-hayes/",
-        "https://www.imdb.com/news/ni66131179/?ref_=nwc_art_perm",
-        "https://3dvf.com/en/james-garner-did-his-own-rockford-stunts-then-sued-universal-and-won-against-hollywood-accounting/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBT4EsINcdCAz77_X9QWxF5z3AVczwv7zxURVuZ-CAXB6Jb9fEChE2W9DMxs",
-      "image_credit": "TVLine",
-      "news": [
-        {
-          "url": "https://www.tvline.com/2326971/south-park-star-recurring-role-james-garner-rockford-files-isaac-hayes/",
-          "title": "An Original South Park Star Had A Recurring Role On James Garner's The Rockford Files",
-          "publisher": "TVLine",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOBT4EsINcdCAz77_X9QWxF5z3AVczwv7zxURVuZ-CAXB6Jb9fEChE2W9DMxs"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66131179/?ref_=nwc_art_perm",
-          "title": "An Original South Park Star Had A Recurring Role On James Garner's The Rockford Files",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSd60DWl7DPVR_NAfP66UJIH-UbyYymG47xbJi-WajhaZ4mUmbcFXDPPMTaAH4"
-        },
-        {
-          "url": "https://3dvf.com/en/james-garner-did-his-own-rockford-stunts-then-sued-universal-and-won-against-hollywood-accounting/",
-          "title": "James Garner did his own Rockford stunts, then sued Universal and won against Hollywood accounting",
-          "publisher": "3DVF",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAv8-T89CJLKfvpk3JDvi2z2HWt1pGvqqUJHl3QuyhWmM0nPf6F5lSEI5rzE"
-        }
-      ]
-    },
-    {
-      "query": "wake forest football",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T14:40:00Z",
-      "related_news_urls": [
-        "https://www.wfmynews2.com/article/life/food/little-richards-barbecue-in-winston-salem-to-serve-as-guest-chef-for-espns-college-gameday-nc/83-7316c814-d715-49da-aafa-0900adef4391",
-        "https://www.espn.com/video/clip/_/id/50621291/wake-forest-fans-let-toilet-paper-fly-college-gameday",
-        "https://www.cbssports.com/betting/news/college-football-score-predictions-picks-best-bets-today-rivalry-week-2026/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0",
-      "image_credit": "wfmynews2.com",
-      "news": [
-        {
-          "url": "https://www.wfmynews2.com/article/life/food/little-richards-barbecue-in-winston-salem-to-serve-as-guest-chef-for-espns-college-gameday-nc/83-7316c814-d715-49da-aafa-0900adef4391",
-          "title": "Little Richard's Barbecue in Winston-Salem to serve as Guest Chef for ESPN's College GameDay",
-          "publisher": "wfmynews2.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRdgEb0DT4R_zXwZwFM4ebIBF-UT9at--WW0qTxADEMLoA4Te7856OPEEzLG0"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50621291/wake-forest-fans-let-toilet-paper-fly-college-gameday",
-          "title": "Wake Forest fans let the toilet paper fly on 'College GameDay'",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsALrfwVst7uzfRTptot9gilpbwolhtk3ho2gfK9FLjHHxMX-mW_PBtmgvXHM"
-        },
-        {
-          "url": "https://www.cbssports.com/betting/news/college-football-score-predictions-picks-best-bets-today-rivalry-week-2026/",
-          "title": "College football score predictions for Rivalry Week, 2026: Model backs Wake Forest (-14.5) vs. Duke",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSLy4V3fOi_4xSS5dqADbp1v0D2Sbo29ipngmzJvlxFiFd9d71FH--DJ9PeWl8"
-        }
-      ]
-    },
-    {
-      "query": "harry potter tv series",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T14:40:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/harry-potter-season-1-gringott-bank-hbo-images/",
-        "https://collider.com/hbo-harry-potter-severus-snape-forehead-scar-new-posters/",
-        "https://www.imdb.com/news/ni66130999/?ref_=nmnw_art_perm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJYQvAyOd_IhmNFkFdn5y8CFzh5uaNowXT6tqlnxMYgqyKml0Jfk0ZgwdBzKA",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/harry-potter-season-1-gringott-bank-hbo-images/",
-          "title": "HBO's Harry Potter Season 1's Major Location Unveiled In Sneak Peek",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTJYQvAyOd_IhmNFkFdn5y8CFzh5uaNowXT6tqlnxMYgqyKml0Jfk0ZgwdBzKA"
-        },
-        {
-          "url": "https://collider.com/hbo-harry-potter-severus-snape-forehead-scar-new-posters/",
-          "title": "HBO Officially Makes Severus Snape the New Harry Potter",
-          "publisher": "Collider",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPtEdzwR8HOLhordFmp2cI0BjuVo9kmtwvyEjQecZBUA9mDbjDd0pm2UwzhRU"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66130999/?ref_=nmnw_art_perm",
-          "title": "HBO’s Harry Potter Confirms Major Changes To 1 Iconic Book Location",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ8hQd9sSS0-HIw5jOtiJDDsRhuNEqPu9QEiDYPHAfpp53A_QqPqEluf92cKrA"
-        }
-      ]
-    },
-    {
-      "query": "uconn football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T14:40:00Z",
-      "related_news_urls": [
-        "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
-        "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
-        "https://7220sports.com/wyoming-uconn-football-information-analysis-latest/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno",
-      "image_credit": "FOX Sports",
-      "news": [
-        {
-          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
-          "title": "How to Watch UConn vs. Wyoming: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno"
-        },
-        {
-          "url": "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
-          "title": "UConn football will finish its regular season at the highest elevation in the FBS against Wyoming",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk"
-        },
-        {
-          "url": "https://7220sports.com/wyoming-uconn-football-information-analysis-latest/",
-          "title": "Gear Up For Game Day: UConn Huskies",
-          "publisher": "7220 Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0gAmBDh26Zeirf5VAg9bUMCAI6hgRDl_y5OQqaRxbnvVOk3NOqg8IZmnWLrc"
         }
       ]
     }
