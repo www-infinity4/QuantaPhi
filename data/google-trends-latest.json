@@ -3,262 +3,297 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T03:31:15.347202Z",
+  "checked_at": "2026-11-28T04:01:12.028573Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "the rookie north",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:10:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/the-rookie-north-season-1-production-wrap-best-news/",
-        "https://www.imdb.com/news/ni66128799/?ref_=nmnw_art_perm",
-        "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHO7Zsz4ck5f1lDFVl9PwDY4qGq1XJAhss0YykEvgs0ehK_cxCkXl9WUbp7JM",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/the-rookie-north-season-1-production-wrap-best-news/",
-          "title": "The Rookie's Expansion Series Officially Caps Off 2026 With The Best News",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTHO7Zsz4ck5f1lDFVl9PwDY4qGq1XJAhss0YykEvgs0ehK_cxCkXl9WUbp7JM"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66128799/?ref_=nmnw_art_perm",
-          "title": "Nathan Fillion’s The Rookie Spinoff Officially Hits Major Filming Milestone Ahead Of January Release",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQG4Za7eleqSPcb3pgfIGooTgX_Ax_FT3HwE4krZFV0KZzQeeM-AMwh7B0WONk"
-        },
-        {
-          "url": "https://abc.com/video/8f9ed8b3-9e81-4520-b34a-e1ee825b8fee/playlist/pl5535320355",
-          "title": "WATCH: The Rookie North - Series Premiere Jan 6 Video | The Rookie North",
-          "publisher": "ABC Network",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV1mP397FedN7ngkXdTogn_eZUBkBeYuktOGlfEdYw5klKg1RtXC6pE5VBQK0"
-        }
-      ]
-    },
-    {
-      "query": "celtics game",
+      "query": "collin sexton",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T03:10:00Z",
+      "published_at": "2026-11-28T03:40:00Z",
       "related_news_urls": [
-        "https://www.celticsblog.com/boston-celtics-news/151088/celtics-injury-report-atlanta-hawks-nba-cup",
-        "https://sports.yahoo.com/nba/articles/celtics-joe-mazzulla-reveals-mitchell-012935885.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/mitchell-robinson-is-recovering-from-covid"
+        "https://fadeawayworld.net/exclusive-interviews/exclusive-lakers-collin-sexton-on-luka-doncics-mvp-chances-hes-got-it",
+        "https://sports.yahoo.com/nba/articles/collin-sexton-reveals-lakers-help-012115699.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/27/not-to-talk-bad-on-utah-but-he-didnt-play-with-a/92978294007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjOCMt2h9Q2LlAbKftx3R376445GEUEN7Q2ty1OsswZTQ7z0uxAFMR8Tb8Kw",
-      "image_credit": "CelticsBlog",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRL2ZUDx_J3Eqw2QfW0A9S0dzUW_i_5JXvepktVhk3SF3CsLQJx_oSH-osrSIU",
+      "image_credit": "Fadeaway World",
       "news": [
         {
-          "url": "https://www.celticsblog.com/boston-celtics-news/151088/celtics-injury-report-atlanta-hawks-nba-cup",
-          "title": "Celtics will be without key player against Hawks",
-          "publisher": "CelticsBlog",
+          "url": "https://fadeawayworld.net/exclusive-interviews/exclusive-lakers-collin-sexton-on-luka-doncics-mvp-chances-hes-got-it",
+          "title": "Exclusive: Lakers’ Collin Sexton On Luka Dončić’s MVP Chances: \"He’s Got It\"",
+          "publisher": "Fadeaway World",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYjOCMt2h9Q2LlAbKftx3R376445GEUEN7Q2ty1OsswZTQ7z0uxAFMR8Tb8Kw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRL2ZUDx_J3Eqw2QfW0A9S0dzUW_i_5JXvepktVhk3SF3CsLQJx_oSH-osrSIU"
         },
         {
-          "url": "https://sports.yahoo.com/nba/articles/celtics-joe-mazzulla-reveals-mitchell-012935885.html",
-          "title": "Celtics’ Joe Mazzulla reveals Mitchell Robinson COVID-19 diagnosis",
+          "url": "https://sports.yahoo.com/nba/articles/collin-sexton-reveals-lakers-help-012115699.html",
+          "title": "Collin Sexton reveals how Lakers can help Luka Doncic win MVP",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStV9faCveLiRxv6fQYFZr3Lu8buc1a-oCWiCENKJyvV3i8m2OTwugycCpvHHc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRu1c9sdl6q_w7tNrF4YtcuLHEY0FnQnOxCxuhLEHC6N9tkWfg4SzrwHs7nD2I"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/mitchell-robinson-is-recovering-from-covid",
-          "title": "Mitchell Robinson is recovering from COVID",
-          "publisher": "NBC Sports",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/27/not-to-talk-bad-on-utah-but-he-didnt-play-with-a/92978294007/",
+          "title": "\"Not to talk bad [on Utah], but he didn't play with a …",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGXrHgeBOe0Dih_25hoNcO7RthCdVgt-nVtR739FGzUX6VDV3FNkYeCYsj6NE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQr5tqFtPSzTRuees-DnvNas6nFR2Sn6pInWPXF0ss120OOUbGWN-2tHadK26g"
         }
       ]
     },
     {
-      "query": "wemby",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T03:10:00Z",
+      "query": "scoot henderson",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T03:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/another-spurs-game-another-victor-045822743.html",
-        "https://airalamo.com/victor-wembanyama-has-transformed-spurs-into-lob-city-20",
-        "https://www.poundingtherock.com/spurs-analysis/110616/improvement-in-this-key-area-taken-wembanyama-to-the-next-level"
+        "https://www.rotowire.com/basketball/headlines/scoot-henderson-news-shooting-woes-return-in-victory-541141",
+        "https://speaks.co.in/sports/scoot-henderson-delivers-second-half-spark-as-trail-blazers-defeat-76ers-in-philadelphia/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/scoot-henderson-sinks-three-triples-scores-17"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0yY_cp0neH6dReAVt1Qmy57mGZ1pdKpDjkgAPcRQm4vRomSwJjlyqLCkHAbM",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAVMvP28Ze4CFwih9nzK0DAg3hmfurXvUUFqi6QOzw-xWfHPJwk1vM1kL7xco",
+      "image_credit": "RotoWire",
+      "news": [
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/scoot-henderson-news-shooting-woes-return-in-victory-541141",
+          "title": "Scoot Henderson News: Shooting woes return in victory",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSAVMvP28Ze4CFwih9nzK0DAg3hmfurXvUUFqi6QOzw-xWfHPJwk1vM1kL7xco"
+        },
+        {
+          "url": "https://speaks.co.in/sports/scoot-henderson-delivers-second-half-spark-as-trail-blazers-defeat-76ers-in-philadelphia/",
+          "title": "Scoot Henderson Delivers Second-Half Spark as Trail Blazers Defeat 76ers in Philadelphia",
+          "publisher": "Speaks Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0sYl0Yw4OYRsDcARaM6mZP1DZqK2HvQdvPBI3GxTh6VvgtgZR3XrXKUP5aII"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-23/scoot-henderson-sinks-three-triples-scores-17",
+          "title": "Scoot Henderson sinks three triples, scores 17",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4aUekY2BuNbEnMhHlQXN4Gr0y6Orrw9wipqUyJMEs4U62j9smET3l2iVHRPA"
+        }
+      ]
+    },
+    {
+      "query": "memphis grizzlies vs timberwolves match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T03:40:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/sports/nba/event/2026/3016725/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
+        "https://sportsbook.fanduel.com/basketball/nba/memphis-grizzlies-@-minnesota-timberwolves-36358264",
+        "https://sports.yahoo.com/nba/articles/edey-stewart-lamelos-status-grizzlies-232502913.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEMFfx8rfu1lrRYlE-8PIANwj74A-gzT6CiWk7ZBf-BAR-bwLmzvMyrQT82SY",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/sports/nba/event/2026/3016725/boxscore/?itm_source=oembed&itm_medium=sports&itm_campaign=scoreboard&site=USAT&itm_content=NBA&tile=1",
+          "title": "Memphis Grizzlies at Minnesota Timberwolves - NBA Game Summary - Nov 27, 2026",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEMFfx8rfu1lrRYlE-8PIANwj74A-gzT6CiWk7ZBf-BAR-bwLmzvMyrQT82SY"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/basketball/nba/memphis-grizzlies-@-minnesota-timberwolves-36358264",
+          "title": "Memphis Grizzlies @ Minnesota Timberwolves Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLgsEqdqNTpB9AcCsNOarp9ELrCnMrEehSTSs7VnMFzGLLDG31iwypKg9pv4"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/edey-stewart-lamelos-status-grizzlies-232502913.html",
+          "title": "Edey, Stewart & LaMelo's status for Grizzlies-T-Wolves: Injuries, Odds, How to Watch & Starters",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoqUNDaRgBXfk75ukFb8Xinqq03t1a7aDAkARIT2i0KgIl-UdikmDq5IwRXNg"
+        }
+      ]
+    },
+    {
+      "query": "what time is the parade tomorrow",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T03:40:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/27/us/macys-thanksgiving-parade-marching-bands",
+        "https://apnews.com/article/macys-thanksgiving-day-parade-rescheduled-ba6b05f16873b2b8966de38d5be8444d",
+        "https://www.yahoo.com/news/us/article/the-macys-thanksgiving-day-parade-is-on-for-saturday-one-high-school-band-had-to-scramble-an-extra-350000-to-make-it-141710254.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7nzdyK2OfnvlyBrUwBh17JLKHOSXL5MBo9j6dMzhMmc8uIvr9jva0gaENFTg",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/27/us/macys-thanksgiving-parade-marching-bands",
+          "title": "They came to New York City to perform in the parade. Mother Nature gave them new marching orders instead",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS7nzdyK2OfnvlyBrUwBh17JLKHOSXL5MBo9j6dMzhMmc8uIvr9jva0gaENFTg"
+        },
+        {
+          "url": "https://apnews.com/article/macys-thanksgiving-day-parade-rescheduled-ba6b05f16873b2b8966de38d5be8444d",
+          "title": "Postponed Macy's 100th Thanksgiving parade mostly the same, but now with LL Cool J and Gloria Gaynor",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6hf_GU4X_VpWQtD2UEdqENQF5ve9dItkJovy01bdrSlnH5F92KMZv9BGvcPo"
+        },
+        {
+          "url": "https://www.yahoo.com/news/us/article/the-macys-thanksgiving-day-parade-is-on-for-saturday-one-high-school-band-had-to-scramble-an-extra-350000-to-make-it-141710254.html",
+          "title": "The Macy's Thanksgiving Day Parade is on Saturday. One high school band raised $350,000 to make it.",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQhFEbCBjVHY1a0N8o9mgAg4INZhXMSHRZgCrkJbBrnkc46IPirnHKu2agUqY"
+        }
+      ]
+    },
+    {
+      "query": "rsl",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T03:40:00Z",
+      "related_news_urls": [
+        "https://www.rsl.com/video/rafa-cabral-all-wild-card-saves-november-19-2026-rsl-sea",
+        "https://www.sltrib.com/sports/rsl/2026/11/27/rafael-cabral-gives-real-salt-lake/",
+        "https://suaragarut.id/en/cabral-rsl-playoff-goalkeeping"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNriQGRaVjegIG3ImjgF_8UZVsMI_vYdpnKt3w1rMSCYToiaQc7HmKsiHAtK4",
+      "image_credit": "Real Salt Lake",
+      "news": [
+        {
+          "url": "https://www.rsl.com/video/rafa-cabral-all-wild-card-saves-november-19-2026-rsl-sea",
+          "title": "Rafa Cabral All Wild Card Saves: November 19, 2026 | RSL @ SEA",
+          "publisher": "Real Salt Lake",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRNriQGRaVjegIG3ImjgF_8UZVsMI_vYdpnKt3w1rMSCYToiaQc7HmKsiHAtK4"
+        },
+        {
+          "url": "https://www.sltrib.com/sports/rsl/2026/11/27/rafael-cabral-gives-real-salt-lake/",
+          "title": "How Real Salt Lake’s 36-year-old goalkeeper ‘found his magic’ to guide club’s playoff run",
+          "publisher": "The Salt Lake Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0W6u_N3NiM9B_wRSwW0P7zOzzPoWErqpFRy5oWd0hGQbIVt1hdm9F9XkKj0"
+        },
+        {
+          "url": "https://suaragarut.id/en/cabral-rsl-playoff-goalkeeping",
+          "title": "Cabral Sustains RSL Playoff Hopes With Consistent Goalkeeping",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScAN1Xi-fT-oCzI2h2oQcZkOl4zSU41aKPkZbqL4_Di66P2Q1s6z9vOmpaha8"
+        }
+      ]
+    },
+    {
+      "query": "mockingjay part 1",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T03:40:00Z",
+      "related_news_urls": [
+        "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
+        "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-mockingjay-one-movie-1236763038/",
+        "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-reveals-big-184523516.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyOb176vB4uiGZ45J6zBELZGH6buatXRAEZiRgsNpUjUzOcjHLb561WiP4KO0",
+      "image_credit": "Deadline",
+      "news": [
+        {
+          "url": "https://deadline.com/2026/11/hunger-games-producer-regrets-splitting-mockingjay-1237233567/",
+          "title": "'Hunger Games' Producer Regrets Splitting 'Mockingjay' As Fans Felt It Was A \"Play To Make Them See Two Films Instead Of One\"",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyOb176vB4uiGZ45J6zBELZGH6buatXRAEZiRgsNpUjUzOcjHLb561WiP4KO0"
+        },
+        {
+          "url": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-mockingjay-one-movie-1236763038/",
+          "title": "‘Hunger Games’ Producer Admits ‘Mockingjay’ Should Have Been One Movie",
+          "publisher": "The Hollywood Reporter",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEInfHMmBWVxLnJRG0kkAYMvc-0qlybbS_6-bXDNXQ_cHvWrR67X10Igtuytc"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/hunger-games-producer-reveals-big-184523516.html",
+          "title": "The Hunger Games Producer Reveals Big Regret Over Jennifer Lawrence’s Mockingjay Movies",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbFX1dS6k829riaHDEUj1yJSlSuM3glyRku5a4jCqjLfv-z4T83atg0SBuxFY"
+        }
+      ]
+    },
+    {
+      "query": "ryan yarbrough",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T03:30:00Z",
+      "related_news_urls": [
+        "https://www.mlbtraderumors.com/2026/11/cubs-to-sign-ryan-yarbrough.html",
+        "https://northsidebaseball.com/chicago-cubs-news/cubs/double-shot-cubs-to-sign-swingman-ryan-yarbrough-to-one-year-deal-r3595/",
+        "https://risingapple.com/ny-mets-yankees-free-agent-worth-look-ryan-yarbrough"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YKio0X2dS1UNt-EJnqhKy3YuRQRDMZGWNoaJ2Os-Py20H6SoMO1qpFfCMrM",
+      "image_credit": "MLB Trade Rumors",
+      "news": [
+        {
+          "url": "https://www.mlbtraderumors.com/2026/11/cubs-to-sign-ryan-yarbrough.html",
+          "title": "Cubs To Sign Ryan Yarbrough",
+          "publisher": "MLB Trade Rumors",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YKio0X2dS1UNt-EJnqhKy3YuRQRDMZGWNoaJ2Os-Py20H6SoMO1qpFfCMrM"
+        },
+        {
+          "url": "https://northsidebaseball.com/chicago-cubs-news/cubs/double-shot-cubs-to-sign-swingman-ryan-yarbrough-to-one-year-deal-r3595/",
+          "title": "Double Shot: Cubs to Sign Swingman Ryan Yarbrough to One-Year Deal",
+          "publisher": "North Side Baseball",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQscPBQTC7PFueg_woV2PRMQruHVXD1gc7fbNcFaZGpYj2CGKaNjTyRrILLU8s"
+        },
+        {
+          "url": "https://risingapple.com/ny-mets-yankees-free-agent-worth-look-ryan-yarbrough",
+          "title": "Affordable Yankees free agent is worth a look by the NY Mets if they tame any spending",
+          "publisher": "Rising Apple",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUCmtoqCBfbJeqz-iuHEh5EsIAaYjEC6PVwF6pYthIqfXkiM2B_Xy7U6UgHkA"
+        }
+      ]
+    },
+    {
+      "query": "northeastern vs northwestern",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T03:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/mens-college-basketball/articles/gamethread-watch-northwestern-men-basketball-000210251.html",
+        "https://www.insidenu.com/northwestern-mens-basketball/75412/rapid-reaction-cats-roar-back-for-65-61-win-behind-surges-from-west-pratt",
+        "https://nusports.com/news/2026/11/26/wildcats-gear-up-for-black-friday-home-clash-with-northeastern"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw2xDYP_-WgszWZQvI65BQR7QgpY-5aMGzza24uIv7s4CrvqN21YLwHHXHny8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/articles/another-spurs-game-another-victor-045822743.html",
-          "title": "Another Spurs game, another Victor Wembanyama dunk highlight",
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/gamethread-watch-northwestern-men-basketball-000210251.html",
+          "title": "Gamethread/How to watch Northwestern men’s basketball vs. Northeastern: TV, streaming, radio, injury report, betting line",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0yY_cp0neH6dReAVt1Qmy57mGZ1pdKpDjkgAPcRQm4vRomSwJjlyqLCkHAbM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRw2xDYP_-WgszWZQvI65BQR7QgpY-5aMGzza24uIv7s4CrvqN21YLwHHXHny8"
         },
         {
-          "url": "https://airalamo.com/victor-wembanyama-has-transformed-spurs-into-lob-city-20",
-          "title": "Victor Wembanyama has transformed the Spurs into Lob City 2.0",
-          "publisher": "Air Alamo",
+          "url": "https://www.insidenu.com/northwestern-mens-basketball/75412/rapid-reaction-cats-roar-back-for-65-61-win-behind-surges-from-west-pratt",
+          "title": "Rapid Reaction: ‘Cats roar back for 65-61 win behind surges from West, Pratt",
+          "publisher": "Inside NU",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPm5ryG0LzPUttHupfb9sGI8614_QU1-JFTa6YgxLidxIxidSOd_nP2FMJSbE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTH4rpMZU6CrZTuVmIJ3ejoNuDniA_eFa4LiR_s6fSj6DGTgW0vb68VAnx8I78"
         },
         {
-          "url": "https://www.poundingtherock.com/spurs-analysis/110616/improvement-in-this-key-area-taken-wembanyama-to-the-next-level",
-          "title": "Improvement in this key area taken Wembanyama to the next level",
-          "publisher": "Pounding The Rock",
+          "url": "https://nusports.com/news/2026/11/26/wildcats-gear-up-for-black-friday-home-clash-with-northeastern",
+          "title": "Wildcats Gear Up for Black Friday Home Clash with Northeastern",
+          "publisher": "Northwestern Wildcats",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsZH-66rLkqOL1sBBm6Yqo9_kZX2QNTi3Ash0h5ppwzCeP6D-gWEGxx9CEfFY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSgGURfo-B6y_BXZgLJDGD6ptQLr75y1FYkX7TOZYT-Q1PMTC44JVZwkxoHXTM"
         }
       ]
     },
     {
-      "query": "mls playoff bracket",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7812097/2026/11/25/mls-playoff-format-change-details-2027-2028-season/",
-        "https://www.theguardian.com/football/2026/nov/25/mls-playoff-format-changes",
-        "https://sports.yahoo.com/soccer/article/jack-harrison-joins-the-show--copa-america-is-back-in-the-usa--mls-cup-playoff-format-changes-203906162.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpzH9YJSzNmS5RocociT-LPwNQKGFxTFHytQks_fUtYZ-m6WvW9zySpGUVyA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7812097/2026/11/25/mls-playoff-format-change-details-2027-2028-season/",
-          "title": "MLS sets details for new playoff format starting in 2027-28 season: Sources - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTcpzH9YJSzNmS5RocociT-LPwNQKGFxTFHytQks_fUtYZ-m6WvW9zySpGUVyA"
-        },
-        {
-          "url": "https://www.theguardian.com/football/2026/nov/25/mls-playoff-format-changes",
-          "title": "MLS settles on new playoff format after considering double elimination",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQfqkHHQAsLBHQBLXAb_Mvfj_3koTqQ189TNAcn78ow1vAOgijJnap3ckBEQgg"
-        },
-        {
-          "url": "https://sports.yahoo.com/soccer/article/jack-harrison-joins-the-show--copa-america-is-back-in-the-usa--mls-cup-playoff-format-changes-203906162.html",
-          "title": "Jack Harrison Joins The Show + Copa America is Back In The USA + MLS Cup Playoff Format Changes",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_RU-X96dRgLudLQodH9l3CSoWVEa7cgnpgMYDz9IIPcqjiFwENLZsUgs2vgo"
-        }
-      ]
-    },
-    {
-      "query": "ghsa football scores",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T03:10:00Z",
-      "related_news_urls": [
-        "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-scoreboard-ghsa-playoff-quarterfinals/93-a667a9e2-8ef3-432f-bea2-aca8d051600b",
-        "https://www.walb.com/2026/11/27/ghsa-football-playoffs-schedules-scores-highlights-more/",
-        "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02WmNdGz7ixkyl-Z_5NQOn4GjezVtbuk_Q7a9bL3DrTxwPQQDhBUOgNs5IHk",
-      "image_credit": "13WMAZ",
-      "news": [
-        {
-          "url": "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-scoreboard-ghsa-playoff-quarterfinals/93-a667a9e2-8ef3-432f-bea2-aca8d051600b",
-          "title": "Football Friday Night Scoreboard | GHSA Playoff Quarterfinals",
-          "publisher": "13WMAZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02WmNdGz7ixkyl-Z_5NQOn4GjezVtbuk_Q7a9bL3DrTxwPQQDhBUOgNs5IHk"
-        },
-        {
-          "url": "https://www.walb.com/2026/11/27/ghsa-football-playoffs-schedules-scores-highlights-more/",
-          "title": "GHSA football playoffs: Schedules, scores, highlights & more",
-          "publisher": "WALB.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlttg5BiML5ctnETtjSNqLMO-xsnNHX9dPI2moTvdicPxbsSZ4XJFdnmgRkEQ"
-        },
-        {
-          "url": "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/",
-          "title": "Breaking down every quarterfinal game in the 2026 GHSA football playoffs",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQyy47zuGbQBLWIq4DMBpC99faJ58NL89agSBYVgxya8p-r2XAywEcK2biYGM"
-        }
-      ]
-    },
-    {
-      "query": "nba cup standings",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T03:00:00Z",
-      "related_news_urls": [
-        "https://www.nba.com/news/emirates-nba-cup-live-updates-november-27",
-        "https://sports.yahoo.com/nba/breaking-news/article/nba-cup-2026-pistons-and-sixers-join-mavericks-in-clinching-spot-in-knockout-round-030208714.html",
-        "https://www.nytimes.com/athletic/7815135/2026/11/27/nba-cup-group-scenarios-heat-knicks-76ers/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbT_E86-Qj0fDI-ZDfvpIH2b338YWQ7k5fFFI99h1X4wi61f9It_KEnw6U6Pw",
-      "image_credit": "NBA.com",
-      "news": [
-        {
-          "url": "https://www.nba.com/news/emirates-nba-cup-live-updates-november-27",
-          "title": "NBA Cup Nov. 27: Live Scores, Standings & Clinching Scenarios",
-          "publisher": "NBA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbT_E86-Qj0fDI-ZDfvpIH2b338YWQ7k5fFFI99h1X4wi61f9It_KEnw6U6Pw"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-cup-2026-pistons-and-sixers-join-mavericks-in-clinching-spot-in-knockout-round-030208714.html",
-          "title": "NBA Cup 2026: Pistons and Sixers join Mavericks in clinching spot in knockout round",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcsxAvAJ9MMATw_GzfiXseKEcVn8bXqeHZXB6pViHRnrUxwL0hKlFcTCQzEmo"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7815135/2026/11/27/nba-cup-group-scenarios-heat-knicks-76ers/",
-          "title": "NBA Cup quarterfinal scenarios include maximum chaos involving Heat, Knicks and 76ers - The Athletic",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRfibpEG5EB303vXKTB3hWdslgSSK-Ka3EmmOi9WHaQIA8-Jq6kCYpewUj_U8M"
-        }
-      ]
-    },
-    {
-      "query": "jalen johnson",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:00:00Z",
-      "related_news_urls": [
-        "https://pistolsfiringblog.com/daily-bullets-nov-27-pokes-land-thanksgiving-commitment/",
-        "https://www.on3.com/rivals/news/oklahoma-state-adds-big-physical-juco-cb-jalen-johnson-to-class/",
-        "https://bvmsports.com/2026/11/27/oklahoma-state-lands-top-juco-cb-bowl-projections-favor-pop-tarts-bowl/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPAIbkKXHKJ9LLihPzUzSoplpS6Gl-bfcbgCFUjFyOZVkX6hXPqZ3zFUhQlQ",
-      "image_credit": "Pistols Firing",
-      "news": [
-        {
-          "url": "https://pistolsfiringblog.com/daily-bullets-nov-27-pokes-land-thanksgiving-commitment/",
-          "title": "Daily Bullets (Nov. 27): Pokes Land Thanksgiving Commitment",
-          "publisher": "Pistols Firing",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRYPAIbkKXHKJ9LLihPzUzSoplpS6Gl-bfcbgCFUjFyOZVkX6hXPqZ3zFUhQlQ"
-        },
-        {
-          "url": "https://www.on3.com/rivals/news/oklahoma-state-adds-big-physical-juco-cb-jalen-johnson-to-class/",
-          "title": "Oklahoma State adds big, physical JUCO CB Jalen Johnson to class",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcGOtNkmD5MOUFNijgx200fv9dtxx6uxvG0GTRG5snFqSX7FiaKUjKKvkY9ig"
-        },
-        {
-          "url": "https://bvmsports.com/2026/11/27/oklahoma-state-lands-top-juco-cb-bowl-projections-favor-pop-tarts-bowl/",
-          "title": "Oklahoma State Lands Top JUCO CB; Bowl Projections Favor Pop-Tarts Bowl",
-          "publisher": "BVM Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT97P2LAsozeLPhp15Z7jHiH4pS_vXvFkqgzGMH-wItEtip-QTDrYrjGDzaDBY"
-        }
-      ]
-    },
-    {
-      "query": "lakers vs san antonio spurs match player stats",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:00:00Z",
+      "query": "golden state warriors vs portland trail blazers match player stats",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T03:30:00Z",
       "related_news_urls": [
         "https://www.nba.com/game/sas-vs-por-0022600063/box-score",
-        "https://www.nba.com/game/phx-vs-hou-0022600061/box-score",
-        "https://www.nba.com/game/min-vs-okc-0022600058/play-by-play"
+        "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
+        "https://www.nba.com/game/sas-vs-por-0022600063/play-by-play"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD56O0XN2exV5nxr8WduOZZbmbP7AUsBAcCHR-4pUiRw2uhACvMUlvokG2UF4",
       "image_credit": "NBA.com",
@@ -271,88 +306,53 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD56O0XN2exV5nxr8WduOZZbmbP7AUsBAcCHR-4pUiRw2uhACvMUlvokG2UF4"
         },
         {
-          "url": "https://www.nba.com/game/phx-vs-hou-0022600061/box-score",
-          "title": "Phoenix Suns vs Houston Rockets Nov 25, 2026 Box Scores",
+          "url": "https://www.nba.com/game/mia-vs-phi-0022600055/box-score",
+          "title": "Miami Heat vs Philadelphia 76ers Nov 25, 2026 Box Scores",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjOkq-rUELAFYWByF7c8VKBviQOCjBEmizXJbN1XTtFiTZhum57CPKbATM1a4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR5FuS4NRaWkQ9u3DJrF2ucs6WAnppL-At4iZp7mQGkk9AHluAUsCtKK-FNCr0"
         },
         {
-          "url": "https://www.nba.com/game/min-vs-okc-0022600058/play-by-play",
-          "title": "Minnesota Timberwolves vs Oklahoma City Thunder Nov 25, 2026 Play-by-Play",
+          "url": "https://www.nba.com/game/sas-vs-por-0022600063/play-by-play",
+          "title": "San Antonio Spurs vs Portland Trail Blazers Nov 25, 2026 Play-by-Play",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRh9GipYnDe8Z9SsgBdTFA-nlo_9V5ZxqqZMirGm1MmblHAnCD3aipksyeASUg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD56O0XN2exV5nxr8WduOZZbmbP7AUsBAcCHR-4pUiRw2uhACvMUlvokG2UF4"
         }
       ]
     },
     {
-      "query": "atlas fútbol club",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T03:00:00Z",
+      "query": "jake laravia",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T03:20:00Z",
       "related_news_urls": [
-        "https://www.azcentral.com/story/deportes/futbol/2026/11/27/atlas-vs-toluca-liguilla-liga-mx-hora-canal-donde-ver-en-vivo/92982356007/",
-        "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17563855/toluca-vs-atlas-liguilla-helinho-jugada-fair-play",
-        "https://www.france24.com/es/minuto-a-minuto/20261126-en-una-fiesta-para-mohamed-toluca-saca-ventaja-en-cuartos-de-final-del-apertura-mexicano"
+        "https://www.silverscreenandroll.com/lakers-news/129433/lakers-news-jj-redick-jake-laravia-jazz",
+        "https://sports.yahoo.com/nba/articles/ziaire-williams-honest-admission-amid-050224605.html",
+        "https://demokratis.co.id/en/redick-williams-starting-role-kings"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGGNfKmxOkTxroJZsysacZkgawxOl_dtcBO1XG5mV-uM2eocnveYwQ_mvj4Ss",
-      "image_credit": "azcentral.com and The Arizona Republic",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr096npjeB3ic7jv0V0R37jdyOK9kmcIClFRnebvSlH55nIeH0f2PLICxCaQ",
+      "image_credit": "Silver Screen and Roll",
       "news": [
         {
-          "url": "https://www.azcentral.com/story/deportes/futbol/2026/11/27/atlas-vs-toluca-liguilla-liga-mx-hora-canal-donde-ver-en-vivo/92982356007/",
-          "title": "¿Dónde ver en vivo Atlas vs Toluca? Semifinales de la Liga MX",
-          "publisher": "azcentral.com and The Arizona Republic",
+          "url": "https://www.silverscreenandroll.com/lakers-news/129433/lakers-news-jj-redick-jake-laravia-jazz",
+          "title": "JJ Redick credited Jake LaRavia for ‘unbelievable’ game against Jazz",
+          "publisher": "Silver Screen and Roll",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGGNfKmxOkTxroJZsysacZkgawxOl_dtcBO1XG5mV-uM2eocnveYwQ_mvj4Ss"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtr096npjeB3ic7jv0V0R37jdyOK9kmcIClFRnebvSlH55nIeH0f2PLICxCaQ"
         },
         {
-          "url": "https://espndeportes.espn.com/futbol/mexico/nota/_/id/17563855/toluca-vs-atlas-liguilla-helinho-jugada-fair-play",
-          "title": "Toluca: Helinho protagoniza jugada de Fair Play ante Atlas",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO3GG8Da-PPoIal3wDXvKY3CHR-OXzQ9i6TFH5rwJHXsI9LHwSTwQd1PPqNkc"
-        },
-        {
-          "url": "https://www.france24.com/es/minuto-a-minuto/20261126-en-una-fiesta-para-mohamed-toluca-saca-ventaja-en-cuartos-de-final-del-apertura-mexicano",
-          "title": "En una fiesta para Mohamed, Toluca saca ventaja en cuartos de final del Apertura mexicano",
-          "publisher": "France 24",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNi9HsubhcwxI1crc42xNRA1rQazsjAvoAYQILPOYTMFoK5bfPrflnKF_deg"
-        }
-      ]
-    },
-    {
-      "query": "tacko fall",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T02:50:00Z",
-      "related_news_urls": [
-        "https://thesixersense.com/tacko-fall-paying-price-for-76ers-finally-getting-healthier",
-        "https://www.phillyvoice.com/sixers-news-76ers-analysis-tacko-fall-depth-chart-nick-nurse-rotation-roster-stats-highlights-schedule-nba-adem-bona/",
-        "https://sports.yahoo.com/articles/trying-create-own-wemby-somebody-180419010.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQarUeykGMXFIRWx8codGqOLTlgV41FYEV2kFrI9u1SGWNETjjIM2uBdqxFle8",
-      "image_credit": "The Sixer Sense",
-      "news": [
-        {
-          "url": "https://thesixersense.com/tacko-fall-paying-price-for-76ers-finally-getting-healthier",
-          "title": "Tacko Fall is paying the price for the 76ers finally getting healthier",
-          "publisher": "The Sixer Sense",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQarUeykGMXFIRWx8codGqOLTlgV41FYEV2kFrI9u1SGWNETjjIM2uBdqxFle8"
-        },
-        {
-          "url": "https://www.phillyvoice.com/sixers-news-76ers-analysis-tacko-fall-depth-chart-nick-nurse-rotation-roster-stats-highlights-schedule-nba-adem-bona/",
-          "title": "Bonus Sixers mailbag: Could Tacko Fall actually stick in Nick Nurse's rotation?",
-          "publisher": "PhillyVoice",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn9baHXNxiwJS28f9THljieG8AxLuagu4uG8-2S6eDzbVl88FiNqVIM_ZFBU"
-        },
-        {
-          "url": "https://sports.yahoo.com/articles/trying-create-own-wemby-somebody-180419010.html",
-          "title": "‘They’re Trying to Create Their Own Wemby,’ ‘Somebody Stop This’ — NBA Fans Stunned As 7’6 Tacko Fall Shows Off 3-Point Skills",
+          "url": "https://sports.yahoo.com/nba/articles/ziaire-williams-honest-admission-amid-050224605.html",
+          "title": "Ziaire Williams’ honest admission amid shifting role for Lakers",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfDjcO7T-v5l2N7ZCl3UoR6vqYMlXRTSTJFGbffYi3mU5nMQeX5IpG7mYwUmY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRMwUJKQFb79ZNRfcIIxH5Rewl1RN07YX6L34nsoyR5DTvJclBwZAoLz-yv9f8"
+        },
+        {
+          "url": "https://demokratis.co.id/en/redick-williams-starting-role-kings",
+          "title": "Redick Explains Williams Starting Role Against Kings",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRChW3Vsfthp-Vpry9iYbJnfogbpo9qkDijcwewMda7PDr-WemU1maNNy31Qio"
         }
       ]
     }
