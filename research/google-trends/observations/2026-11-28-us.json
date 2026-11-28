@@ -3,9 +3,79 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T09:01:18.934705Z",
+  "checked_at": "2026-11-28T09:30:54.509256Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "nvda stock performance peak decline",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T09:10:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-still-paying-the-price-for-the-jensen-huang-ceo-drama-124902053.html",
+        "https://www.reuters.com/commentary/reuters-open-interest/icarus-stock-nvidia-sends-chill-us-savers-2026-11-25/",
+        "https://www.barchart.com/story/news/9032886/the-decline-in-nvidia-stock-was-equal-to-8-of-the-u-s-gdp-how-vital-is-nvda-to-the-u-s-economy"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAHZCcNz__Vla9SOQxLE0xg7dOFcRLOULJ8nuzWI6njJ0vXalioD3gyz4SjRM",
+      "image_credit": "Yahoo Finance",
+      "news": [
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-still-paying-the-price-for-the-jensen-huang-ceo-drama-124902053.html",
+          "title": "Nvidia stock is still paying the price for the Jensen Huang CEO drama",
+          "publisher": "Yahoo Finance",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAHZCcNz__Vla9SOQxLE0xg7dOFcRLOULJ8nuzWI6njJ0vXalioD3gyz4SjRM"
+        },
+        {
+          "url": "https://www.reuters.com/commentary/reuters-open-interest/icarus-stock-nvidia-sends-chill-us-savers-2026-11-25/",
+          "title": "COMMENTARY: Icarus stock Nvidia sends chill to US savers",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8T3jb6b4C3bJnpSsOgliRaxUtfxddeKEiwpLjZLH3Y12v088gYrwfQeSEOqA"
+        },
+        {
+          "url": "https://www.barchart.com/story/news/9032886/the-decline-in-nvidia-stock-was-equal-to-8-of-the-u-s-gdp-how-vital-is-nvda-to-the-u-s-economy",
+          "title": "The Decline in Nvidia Stock Was Equal to 8% of the U.S. GDP. How Vital Is NVDA to the U.S. Economy?",
+          "publisher": "Barchart.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaY8OifZRrIm6F950Qlk4WgmFWVRy_mlbvVuwsynu80ldj47lmqjfMxIpv2i4"
+        }
+      ]
+    },
+    {
+      "query": "sabrina carpenter",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T09:00:00Z",
+      "related_news_urls": [
+        "https://people.com/amy-schumer-jokes-she-resembles-sabrina-carpenter-with-new-bangs-12283185",
+        "https://pagesix.com/2026/11/26/style/amy-schumer-debuts-bangs-haircut-hilariously-channels-sabrina-carpenter/",
+        "https://www.thenews.com.pk/latest/1425468-amy-schumer-pokes-fun-at-her-new-hairstyle-with-sabrina-carpenter-comparison"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-0_nEiAfYwi9Ov0oKJ5KnVZIl69QetGqgEtqg5rmkGmGRiQZgqtbfobyTI",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/amy-schumer-jokes-she-resembles-sabrina-carpenter-with-new-bangs-12283185",
+          "title": "Amy Schumer Jokes That Her New Bangs Have People Mistaking Her for ‘Sabrina Carpenter’ or ‘a Carpenter’",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-0_nEiAfYwi9Ov0oKJ5KnVZIl69QetGqgEtqg5rmkGmGRiQZgqtbfobyTI"
+        },
+        {
+          "url": "https://pagesix.com/2026/11/26/style/amy-schumer-debuts-bangs-haircut-hilariously-channels-sabrina-carpenter/",
+          "title": "Amy Schumer hilariously channels Sabrina Carpenter with new bangs",
+          "publisher": "Page Six",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-0nGOUZMnvlJK4V_8ec7tR_JjWKqsgS9He1E1la6P3r19qwVNngHGqOUWWyo"
+        },
+        {
+          "url": "https://www.thenews.com.pk/latest/1425468-amy-schumer-pokes-fun-at-her-new-hairstyle-with-sabrina-carpenter-comparison",
+          "title": "Amy Schumer pokes fun at her new hairstyle with Sabrina Carpenter comparison",
+          "publisher": "The News International",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBQ4XCAA2u2g8ha_WeWApZ3xHDkJ66CHSZ3HrNYnyGa2LEF1kzEfcPgrdKqhw"
+        }
+      ]
+    },
     {
       "query": "中選會",
       "approx_searches": "200+",
@@ -20,33 +90,33 @@
       "approx_searches": "100+",
       "published_at": "2026-11-28T08:40:00Z",
       "related_news_urls": [
-        "https://www.dw.com/zh-hant/%E5%8F%B0%E7%81%A3%E5%9C%B0%E6%96%B9%E9%81%B8%E8%88%89%E5%89%8D%E5%A4%95-%E8%A7%A3%E6%94%BE%E8%BB%8D30%E6%9E%B6%E6%AC%A1%E8%BB%8D%E6%A9%9F%E5%9C%A8%E5%8F%B0%E6%B5%B7%E5%91%A8%E9%82%8A%E6%B4%BB%E5%8B%95/a-80072713",
-        "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20261127-%E5%8F%B0%E7%81%A3-%E4%B9%9D%E5%90%88%E4%B8%80%E9%81%B8%E8%88%89%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E8%A1%9D%E5%88%BA-%E5%9C%8B%E9%98%B2%E9%83%A8%E7%A8%B1%E5%81%B5%E6%B8%AC%E5%88%B0%E4%B8%AD%E5%9C%8B%E6%B4%BE%E5%87%BA%E7%9A%84%E6%88%B0%E6%A9%9F",
-        "https://www.ntdtv.com/b5/2026/11/28/a104154434.html"
+        "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/trad",
+        "https://www.cna.com.tw/news/aipl/202611285003.aspx",
+        "https://tw.news.yahoo.com/%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0-%E5%85%A8%E5%8F%B022%E7%B8%A3%E5%B8%82%E9%95%B7%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E8%A9%B3%E7%B4%B0%E7%9C%8B-081421602.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDdDx11TVC0gd1MMGmAAVJ-43IYky1DRPddknuc1iQ-K6V_D1s9ZyO4_A6NTE",
-      "image_credit": "DW.com",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.dw.com/zh-hant/%E5%8F%B0%E7%81%A3%E5%9C%B0%E6%96%B9%E9%81%B8%E8%88%89%E5%89%8D%E5%A4%95-%E8%A7%A3%E6%94%BE%E8%BB%8D30%E6%9E%B6%E6%AC%A1%E8%BB%8D%E6%A9%9F%E5%9C%A8%E5%8F%B0%E6%B5%B7%E5%91%A8%E9%82%8A%E6%B4%BB%E5%8B%95/a-80072713",
-          "title": "台灣」九合一「選戰進入最後沖刺 解放軍軍機活動增加動引關注",
-          "publisher": "DW.com",
+          "url": "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/trad",
+          "title": "台灣「九合一」選舉開票結果實時更新",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDdDx11TVC0gd1MMGmAAVJ-43IYky1DRPddknuc1iQ-K6V_D1s9ZyO4_A6NTE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo"
         },
         {
-          "url": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20261127-%E5%8F%B0%E7%81%A3-%E4%B9%9D%E5%90%88%E4%B8%80%E9%81%B8%E8%88%89%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E8%A1%9D%E5%88%BA-%E5%9C%8B%E9%98%B2%E9%83%A8%E7%A8%B1%E5%81%B5%E6%B8%AC%E5%88%B0%E4%B8%AD%E5%9C%8B%E6%B4%BE%E5%87%BA%E7%9A%84%E6%88%B0%E6%A9%9F",
-          "title": "台灣：九合一選舉最後一天衝刺 國防部稱偵測到中國派出的戰機",
-          "publisher": "RFI",
+          "url": "https://www.cna.com.tw/news/aipl/202611285003.aspx",
+          "title": "2026九合一大選開票實況中央社即時更新不搶快不灌票| 政治",
+          "publisher": "中央社 CNA",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKSOeFZnlwo9CRXjOH3lGboZMQo3bxFijNyQAB58gvNYQkPndni0ehB4Vn64"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwFn9wdmyVkSvJ7irFZLPx6J1N2SzQVWgMmSOrAanUYEfZWeUsTIK6LI7b-tg"
         },
         {
-          "url": "https://www.ntdtv.com/b5/2026/11/28/a104154434.html",
-          "title": "【新聞第一線】台灣投票前夕 共軍大規模擾台",
-          "publisher": "新唐人電視台",
+          "url": "https://tw.news.yahoo.com/%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0-%E5%85%A8%E5%8F%B022%E7%B8%A3%E5%B8%82%E9%95%B7%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E8%A9%B3%E7%B4%B0%E7%9C%8B-081421602.html",
+          "title": "不斷更新／全台22縣市長即時開票詳細看",
+          "publisher": "Yahoo新聞",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEZBjxxiha8KzSVfCrMQOAsUYTgR88xzN818y4VMhjTfr1mdlvtkp1UkoPh0k"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgixffDTufr7TNXomtFEk5hZOWZDGWte8z1_v4Dgd44oOLa5kZTBQL57DKVA"
         }
       ]
     },
@@ -87,12 +157,12 @@
     },
     {
       "query": "開票",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-28T08:10:00Z",
       "related_news_urls": [
         "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
-        "https://news.yahoo.co.jp/pickup/6604298",
-        "https://www.jiji.com/jc/p?id=20261128155559-0094387911"
+        "https://news.yahoo.co.jp/articles/10c3150c3e58bb26486dad9fae0591de14e2929d",
+        "https://news.web.nhk/newsweb/na/nd-20261127de82484"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M",
       "image_credit": "Bloomberg.com",
@@ -105,40 +175,33 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M"
         },
         {
-          "url": "https://news.yahoo.co.jp/pickup/6604298",
-          "title": "台湾の統一地方選 与党が伸長か",
+          "url": "https://news.yahoo.co.jp/articles/10c3150c3e58bb26486dad9fae0591de14e2929d",
+          "title": "“SNS偽情報”が前回比8割増 AIで偽造された候補者画像も拡散… 台湾・統一地方選「台北市長選」など注目 今夜にも大勢判明へ（TBS NEWS DIG Powered by JNN）",
           "publisher": "Yahoo!ニュース",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHqkXcuspw7wJoNnMwMa69oZWdzNgNY0gSAD_zg7aDnPnRqu23G7M2b7zmv0k"
         },
         {
-          "url": "https://www.jiji.com/jc/p?id=20261128155559-0094387911",
-          "title": "画像・写真：投票を行う蒋万安氏：時事ドットコム",
-          "publisher": "時事ドットコム",
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82484",
+          "title": "台湾統一地方選挙 28日投票へ 台北市長選挙の勝敗など焦点",
+          "publisher": "NHKニュース",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKGsArD2KdyZ77sEYDO3uVKoouoZTBOnJI_EL8i9ha9RkKFrzx0xI9HOrBxFU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkooTgYrE9yDAqTrFIRjA7QtTLYwo5OsgBq8blzWFeRT7p2gSYM2whLFlavtY"
         }
       ]
     },
     {
       "query": "today wordle hints",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T08:00:00Z",
       "related_news_urls": [
-        "https://mashable.com/entertainment/wordle-today-answer-november-28-2026",
         "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
-        "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/"
+        "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/",
+        "https://ftw.usatoday.com/story/tech/gaming/2026/11/28/wordle-hint-today-clues-november-28-2026/92978525007/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
-      "image_credit": "Mashable",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40",
+      "image_credit": "CNET",
       "news": [
-        {
-          "url": "https://mashable.com/entertainment/wordle-today-answer-november-28-2026",
-          "title": "Wordle today: The answer and hints for November 28, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
         {
           "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
           "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 28, #1988",
@@ -152,47 +215,19 @@
           "publisher": "Forbes",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROh6VwHVMCGgMeuZmdVI3qHN6COTca6AocJqEKCUzCHb_dId7DY5wELNIgm1Q"
-        }
-      ]
-    },
-    {
-      "query": "demi lovato",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T08:00:00Z",
-      "related_news_urls": [
-        "https://www.instagram.com/p/Df-A2Dmygse/",
-        "https://www.yahoo.com/entertainment/articles/selena-gomez-demi-lovato-agree-154702132.html",
-        "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM",
-      "image_credit": "Instagram",
-      "news": [
-        {
-          "url": "https://www.instagram.com/p/Df-A2Dmygse/",
-          "title": "#TSRCliquedUp: Look at Barney’s babies! 🥹 #SelenaGomez and #DemiLovato snap a selfie. 💗✍🏾: #TSRStaffLG",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM"
         },
         {
-          "url": "https://www.yahoo.com/entertainment/articles/selena-gomez-demi-lovato-agree-154702132.html",
-          "title": "Selena Gomez & Demi Lovato Agree on What They’re Most Thankful For This Holiday",
-          "publisher": "Yahoo",
+          "url": "https://ftw.usatoday.com/story/tech/gaming/2026/11/28/wordle-hint-today-clues-november-28-2026/92978525007/",
+          "title": "Wordle hint today: Clues for November 28 2026 NYT puzzle #1988",
+          "publisher": "USA Today",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIMDFTNguajh_aR5EYaNaD3a3l1WjIyAi4jAfIYQhbbjcJFqhmMYhNDawwU_g"
-        },
-        {
-          "url": "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340",
-          "title": "Selena Gomez and Demi Lovato’s Rare Beauty Friendsgiving Proves Nostalgia Still Sells—When It's On Brand",
-          "publisher": "Inc.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt6CClJk5Rup_xWOqZQ22P1BMyUPlqoO5ce2Hrf_rXAXYPHIFBT6snc0PSOuc"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiDvD2eq4CLG2A7b_lW99tBGJxFX6M6s-HvVSpVkhrbsB6HpDMhqL1-jlRVaE"
         }
       ]
     },
     {
       "query": "gta 6 fits",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T07:50:00Z",
       "related_news_urls": [
         "https://www.forbes.com/sites/paultassi/2026/11/24/where-to-find-lucias-best-hairstyle-in-gta-6/",
@@ -261,72 +296,37 @@
       ]
     },
     {
-      "query": "ocelot jugular gta 6",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T07:10:00Z",
-      "related_news_urls": [
-        "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
-        "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
-        "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA",
-      "image_credit": "PC Gamer",
-      "news": [
-        {
-          "url": "https://www.pcgamer.com/games/grand-theft-auto/gta-6-ocelot-bloodless-jugular-location/",
-          "title": "Here's where you can steal the Ocelot Bloodless Jugular for Randy in GTA 6",
-          "publisher": "PC Gamer",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0awenYdhO4eAIsPFTY2xB9dWAsouwXWO9zhiLPY0N84A8oXk13fC-ftDxGgA"
-        },
-        {
-          "url": "https://www.radiotimes.com/technology/gaming/gta-6-how-to-get-ocelot-jugular-explained/",
-          "title": "How to get Ocelot Jugular in GTA 6 explained",
-          "publisher": "Radio Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQD6Dv5w8kSBiFwV314PgaXvRxywfNKyEkEOdYWYSo-mD2H-KB5XfBKI8t4YBs"
-        },
-        {
-          "url": "https://escorenews.com/en/article/82938-how-to-get-ocelot-jugular-for-randy-s-wish-list-in-gta-6-location-of-bloodless-jugular-how-to-keep-this-car-version",
-          "title": "How to get Ocelot Jugular for Randy's Wish List in GTA 6. Location of Bloodless Jugular, how to keep this car version",
-          "publisher": "escorenews.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUM-v_wW1-GAaTDn-eSS9if6dbv5_SV5eNgz7PaGx2LTZYRqvgs1VGANb-kWs"
-        }
-      ]
-    },
-    {
       "query": "beach hazards statement",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-28T07:10:00Z",
       "related_news_urls": [
-        "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
-        "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
-        "https://demokratis.co.id/en/nws-southern-california-beach-hazards"
+        "https://www.pasadenastarnews.com/2026/11/27/beach-hazards-statement-active-for-catalina-santa-barbara-islands-until-early-saturday-evening/",
+        "https://cwibc.co.id/en/southern-california-beach-hazards",
+        "https://patch.com/california/lagunaniguel-danapoint/8-foot-waves-dangerous-rip-tides-forecasted-dana-point-advisory"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys",
-      "image_credit": "Los Angeles Daily News",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtoV3qfafYETEHD0H4ayEKN1nWOen249euaRnIn85R6uQF9maRaylXamiYJk",
+      "image_credit": "Pasadena Star News",
       "news": [
         {
-          "url": "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
-          "title": "High surf advisory in place for Malibu and Los Angeles County Beaches until early Saturday evening",
-          "publisher": "Los Angeles Daily News",
+          "url": "https://www.pasadenastarnews.com/2026/11/27/beach-hazards-statement-active-for-catalina-santa-barbara-islands-until-early-saturday-evening/",
+          "title": "Beach hazards statement active for Catalina/Santa Barbara Islands until early Saturday evening",
+          "publisher": "Pasadena Star News",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtoV3qfafYETEHD0H4ayEKN1nWOen249euaRnIn85R6uQF9maRaylXamiYJk"
         },
         {
-          "url": "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
-          "title": "Update: Beach hazards statement for Orange County Coast and San Diego County Coastal Areas until early Saturday evening",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxbt8I4G_AwQBqNSUbsA8Cbvcd2ili07VIrjVO5q21a_07M7JSds4YrrnnbKo"
-        },
-        {
-          "url": "https://demokratis.co.id/en/nws-southern-california-beach-hazards",
-          "title": "NWS Warns of Dangerous Surf and Coastal Flooding in Southern California",
-          "publisher": "Demokratis.co.id",
+          "url": "https://cwibc.co.id/en/southern-california-beach-hazards",
+          "title": "NWS Warns of Dangerous Surf and Coastal Flooding Across Southern California",
+          "publisher": "cwibc.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
+        },
+        {
+          "url": "https://patch.com/california/lagunaniguel-danapoint/8-foot-waves-dangerous-rip-tides-forecasted-dana-point-advisory",
+          "title": "8+ Foot Waves, Dangerous Rip Tides Forecasted For Dana Point: Advisory",
+          "publisher": "Patch",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRynSXEV_3_k-aPxgOLcUsTsXn9dSj6_wpPzTCGssh-0uzsLmeL9l5QFVDLOjY"
         }
       ]
     }
