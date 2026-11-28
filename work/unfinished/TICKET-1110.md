@@ -82,3 +82,26 @@ State: source tested / production blocked, 🟠. No new retention source merge/d
 Owner budget clarification, 2026-11-28 UTC: ongoing budget remains $0; do not activate paid Cloudflare subscriptions or assume permission to purchase from the earlier $5 question. The standard free Workers AI allocation renews daily; repeated new-account/trial rotation is not the target architecture. Preserve this installation and finish bounded retention, quota-aware execution and private SQLite/GitHub migration. Actual inference/host capacity and restored signed execution remain unverified. Independent retention review passed49/49 plus37 focused model regressions, indexed SQLite query-plan challenge and unchanged source hashes; root also passed91 model/card regressions. Exact-head CI/publication receipts follow in the canonical issue.
 
 Subsequent owner clarification supersedes the absolute $0 interpretation above: the existing bill is unaffordable, but the owner is considering a new $5 Workers subscription on another existing account to host Bubbles. No purchase or subscription activation has been authorized/executed by this session. Before new-account routing, preserve original owner/session/credential/work state and verify account access, migration consistency and real inference. Owner also requests a genuinely free AI alternative; selected Gemini API models have limited free tiers, not unlimited inference. Retain existing source/model until a replacement is explicitly chosen and tested.
+
+## Continuation · owner-reported payment and API access, 2026-11-28 UTC
+
+Owner subsequently reports paying for existing account
+`392a60022046dd9f6d11b1d4b511a2ad` and authorizes Bubbles/Brain setup only.
+This supersedes the earlier tentative-budget discussion; no subscription was
+purchased by this engineering session and no additional purchase is implied.
+The account invitation was accepted, but the existing connector still exposes
+only the original account after a fresh metadata check. Shared-browser
+GitHub/passkey sign-in failed; cookies were not cleared. Owner now requests
+curl/Termux. The reviewed operator source and remaining live-token dependency
+are tracked under the existing [#1907 checkpoint](TICKET-1907-SQLITE.md) and
+[API guide](../../docs/BUBBLES-PAID-ACCOUNT-API.md). It stages only empty core
+schemas, without migrating owner/job data or activating any writer/model.
+
+Retention source [#2163](https://github.com/www-infinity4/QuantaPhi/pull/2163)
+merged as `a33425fec3ac7593f626f2b5b9f9065ff9f29bde`; existing guarded
+[release 46093259122](https://github.com/www-infinity4/QuantaPhi/actions/runs/46093259122)
+successfully deployed/read back original-account `infinity-rogers` version
+`5f413792-f994-4bf5-ab84-43e10c981ab8`. This is verified retention deployment,
+not evidence that account storage or signed Bubbles conversation recovered.
+No additional expired-record deletion, account churn, model test, new-account
+database write or production cutover was performed in this API source session.
