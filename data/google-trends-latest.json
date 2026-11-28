@@ -3,348 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T02:01:21.949604Z",
+  "checked_at": "2026-11-28T02:31:08.698108Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "pelicans vs clippers",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T01:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/la-clippers-vs-orleans-pelicans-210600047.html",
-        "https://www.nytimes.com/athletic/7817274/2026/11/27/pelicans-vs-clippers-stream-how-to-watch-nov-27/",
-        "https://sports.betmgm.com/en/blog/nba/pelicans-clippers-player-prop-bets-picks-nba-nov-27-jaa/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxOMQEbfqL-XJVcebKSVlWDhG8V6VGyn0h7WBF-qnraoUZPh5kPGeAbhARmRk",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/la-clippers-vs-orleans-pelicans-210600047.html",
-          "title": "LA Clippers vs. New Orleans Pelicans Injury Report and Game Preview",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTxOMQEbfqL-XJVcebKSVlWDhG8V6VGyn0h7WBF-qnraoUZPh5kPGeAbhARmRk"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7817274/2026/11/27/pelicans-vs-clippers-stream-how-to-watch-nov-27/",
-          "title": "How to watch Pelicans vs. Clippers: TV channel and streaming options for November 27",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSoRz8A1GHM2LBTT7L8wpJEkZWYeuwJIrxe8Y6NN2WHp1I2SbMzCi5XTQOIY0E"
-        },
-        {
-          "url": "https://sports.betmgm.com/en/blog/nba/pelicans-clippers-player-prop-bets-picks-nba-nov-27-jaa/",
-          "title": "Pelicans vs Clippers Player Prop Bets Tonight – NBA, Nov. 27",
-          "publisher": "sports.betmgm.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMrxoP_VefH2r8Ows69lguaS_qVpU8iKtHj2qf1vKk6hEC9RpXZ2vrIqD8SG4"
-        }
-      ]
-    },
-    {
-      "query": "malin akerman",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T01:40:00Z",
-      "related_news_urls": [
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/donald-trump-jr-hunting-wives-thanksgiving-promo/92979592007/",
-        "https://deadline.com/2026/11/trump-jr-hunting-wives-kiss-1237234421/",
-        "https://www.the-independent.com/arts-entertainment/tv/news/donald-trump-jr-netflix-hunting-wives-thanksgiving-b3092947.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87dpJF-hHRNhzXHsmvH3ggZktIU_qYpuyF2zSxZiRQRf6q7PQpEZhVXdJX54",
-      "image_credit": "USA Today",
-      "news": [
-        {
-          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/donald-trump-jr-hunting-wives-thanksgiving-promo/92979592007/",
-          "title": "Donald Trump Jr. slams Netflix for inappropriate Thanksgiving ad",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ87dpJF-hHRNhzXHsmvH3ggZktIU_qYpuyF2zSxZiRQRf6q7PQpEZhVXdJX54"
-        },
-        {
-          "url": "https://deadline.com/2026/11/trump-jr-hunting-wives-kiss-1237234421/",
-          "title": "Donald Trump Jr Rips ‘Hunting Wives’ Female Kiss, Blesses Netflix With Publicity",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSCDwVip50f1IZod5Q8e-TpIWLbYlBc1j_x2mA-z4R7E995AyrNOQVxRhzmxo4"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/tv/news/donald-trump-jr-netflix-hunting-wives-thanksgiving-b3092947.html",
-          "title": "Donald Trump Jr. rages over Netflix’s NSFW Hunting Wives teaser",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRl6EKTwL9Yot_1Xh6ocO-CWWlca6z4sFTgcreiCDyb1qSMcHeTf8tsw0SGPDs"
-        }
-      ]
-    },
-    {
-      "query": "whitney leavitt",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T01:40:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/articles/whitney-leavitt-owns-bizarre-blunder-214129550.html",
-        "https://www.kclu.org/local-news/2026-11-24/ventura-county-takes-a-starring-role-in-new-netflix-festive-movie",
-        "https://people.com/whitney-leavitt-addresses-fake-texting-in-christmas-movie-12283272"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQErbpu61SS7qugPZgqNvkYc53rn2MsaFZ5unA4YTw-GC9HmYrZIt4F8k_u--A",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/movies/articles/whitney-leavitt-owns-bizarre-blunder-214129550.html",
-          "title": "Whitney Leavitt Owns Up to Bizarre Blunder in Her First Netflix Movie",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQErbpu61SS7qugPZgqNvkYc53rn2MsaFZ5unA4YTw-GC9HmYrZIt4F8k_u--A"
-        },
-        {
-          "url": "https://www.kclu.org/local-news/2026-11-24/ventura-county-takes-a-starring-role-in-new-netflix-festive-movie",
-          "title": "Ventura County takes a starring role in new Netflix festive movie",
-          "publisher": "KCLU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQF6-JX-tbqCxopvqBTpnf6ZPFpxvpXP-p-i6mDDHtrmr8KmKmZsFxhTH7LdnA"
-        },
-        {
-          "url": "https://people.com/whitney-leavitt-addresses-fake-texting-in-christmas-movie-12283272",
-          "title": "Whitney Leavitt Has Hilarious Response After Commenters Pointed Out Her Bad Fake Texting Skills in New Christmas Movie",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRuI2GoJiXWkR6ubJPmugn4H_U0l7pKXtM6sa8SPsIL6Qbg8z7XJEJzJDSPN8"
-        }
-      ]
-    },
-    {
-      "query": "warriors vs trail blazers",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T01:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/watch-warriors-vs-trail-blazers-013000984.html",
-        "https://www.blazersedge.com/gameday-coverage/118940/portland-trail-blazers-golden-state-warriors-time-tv-injury-report-nba-cup",
-        "https://www.oregonlive.com/betting/2026/11/warriors-vs-trail-blazers-predictions-model-projects-a-116-107-portland-win-plus-kalshi-odds-for-the-nba-cup-finale.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfebAQ_Nk65WpFiOU2bFWIMLIUKOeoJRxenKmmfLjFEuEZ1k0P_MIcFyu1nro",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/watch-warriors-vs-trail-blazers-013000984.html",
-          "title": "How to watch Warriors vs Trail Blazers: Live stream NBA, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfebAQ_Nk65WpFiOU2bFWIMLIUKOeoJRxenKmmfLjFEuEZ1k0P_MIcFyu1nro"
-        },
-        {
-          "url": "https://www.blazersedge.com/gameday-coverage/118940/portland-trail-blazers-golden-state-warriors-time-tv-injury-report-nba-cup",
-          "title": "Blazers Take on Warriors in Critical NBA Cup Game",
-          "publisher": "Blazer's Edge",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv8lczh6j3YVyjVecLboEJGTqoKHJPUV4UcZkHKy2tA7sYXhyqVA5vpuJWrLs"
-        },
-        {
-          "url": "https://www.oregonlive.com/betting/2026/11/warriors-vs-trail-blazers-predictions-model-projects-a-116-107-portland-win-plus-kalshi-odds-for-the-nba-cup-finale.html",
-          "title": "Warriors vs. Trail Blazers predictions: Model projects a 116-107 Portland win, plus Kalshi odds for the NBA Cup finale",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXoxVjgWtpL3gACmr05M5INoXgEDHOcBwtO1_-sDLcQK63hHg3V9NofaPJ-2s"
-        }
-      ]
-    },
-    {
-      "query": "nuggets vs jazz",
+      "query": "steve sarkisian",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T01:30:00Z",
+      "published_at": "2026-11-28T02:10:00Z",
       "related_news_urls": [
-        "https://utahjazz.com/news/preview-utah-jazz-end-nba-cup-play-against-denver-nuggets",
-        "https://sportsbook.fanduel.com/basketball/nba/denver-nuggets-@-utah-jazz-36358267",
-        "https://www.denverstiffs.com/preview-nuggets-visit-the-jazz-for-an-nba-cup-game/"
+        "https://sports.yahoo.com/college-football/articles/steve-sarkisian-wife-loreal-stuns-011247557.html",
+        "https://www.newsbreak.com/the-big-lead-289607885/5021848436081-steve-sarkisian-s-wife-loreal-casually-stuns-in-givenchy-with-1k-football-purse",
+        "https://www.essentiallysports.com/ncaa-college-football-news-steve-sarkisians-wife-loreal-turns-heads-at-texas-vs-arkansas-with-an-eight-nine-zero-finishing-touch-on-her-classic-game-day-look/"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUw80U7oXEvQ6wf9mRSvgjBjZ6Uas4jJw0T0G_8YSQIoNiUWj3rHVhQ3BCqHo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcr9fAYbjVXGKQRs-e0hYTjGx0dP-giQyM-JDJ_VAmBY9pm1IYj3r3jROJrB4",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/steve-sarkisian-wife-loreal-stuns-011247557.html",
+          "title": "Steve Sarkisian’s wife Loreal stuns in $9k Saint Laurent suede trench coat at Lone Star Showdown",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQcr9fAYbjVXGKQRs-e0hYTjGx0dP-giQyM-JDJ_VAmBY9pm1IYj3r3jROJrB4"
+        },
+        {
+          "url": "https://www.newsbreak.com/the-big-lead-289607885/5021848436081-steve-sarkisian-s-wife-loreal-casually-stuns-in-givenchy-with-1k-football-purse",
+          "title": "Steve Sarkisian’s wife Loreal casually stuns in Givenchy with $1k football purse",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSTUvHFulS4wkuPHLd7nxniOPuq6iO8qUsjSak17jpK57DHVKMZLuqOgyVB3_I"
+        },
+        {
+          "url": "https://www.essentiallysports.com/ncaa-college-football-news-steve-sarkisians-wife-loreal-turns-heads-at-texas-vs-arkansas-with-an-eight-nine-zero-finishing-touch-on-her-classic-game-day-look/",
+          "title": "Steve Sarkisian’s Wife Loreal Turns Heads at Texas vs. Arkansas With an $890 Finishing Touch on Her Classic Game Day Look",
+          "publisher": "EssentiallySports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS50Hz6oo3VUajYqlRwlh1uzYa-Vg1F8zcUsMAzj132oIDqWf2DcT2xaDdseFo"
+        }
+      ]
+    },
+    {
+      "query": "jose alvarado",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T02:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909319",
+        "https://www.fearthesword.com/cavs-analysis/54836/player-grades-cavs-at-knicks-another-fourth-quarter-implosion",
+        "https://www.nba.com/knicks/photos/knicks-on-the-court-sunday-november-25-vs-cleveland-cavaliers"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEb7UfDsFQuefacu1gLo_0Ax9tSTkISy991aS-NQFC9KZQfl3uFUCnpzMgsV0",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909319",
+          "title": "Knicks 121-102 Cavaliers (Nov 25, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEb7UfDsFQuefacu1gLo_0Ax9tSTkISy991aS-NQFC9KZQfl3uFUCnpzMgsV0"
+        },
+        {
+          "url": "https://www.fearthesword.com/cavs-analysis/54836/player-grades-cavs-at-knicks-another-fourth-quarter-implosion",
+          "title": "Player Grades: Cavs at Knicks - Another fourth quarter implosion",
+          "publisher": "Fear The Sword",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfyFNKyhPROAbJVamREj9XogrGSykUBihnhuU0l_wTEsmg8jj5PdQ013Zq80I"
+        },
+        {
+          "url": "https://www.nba.com/knicks/photos/knicks-on-the-court-sunday-november-25-vs-cleveland-cavaliers",
+          "title": "Knicks on the Court: Sunday, November 25 vs. Cleveland Cavaliers",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnbfyzJzbVsR7viSmQvngi51z-jL11bnWW-94hKCMCYwWX3j3zj08O3MkSFb8"
+        }
+      ]
+    },
+    {
+      "query": "ut",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T02:10:00Z",
+      "related_news_urls": [
+        "https://news.utexas.edu/2026/11/24/ut-holds-no-1-ranking-for-research-funded-by-national-science-foundation-for-second-consecutive-year/",
+        "https://www.kvue.com/video/news/local/ut-austin-named-top-in-the-nation-research-funded-by-national-science-foundation-supported/269-6fb5a15e-2f0a-4f0c-b29c-627a8baad8a6",
+        "https://www.cbssports.com/college-football/news/texas-texas-a-m-live-updates-score-college-football-week-13-2026/live/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR06iCUEwH8JO4B36EsS83ACfd9lKA5kkZ4fuf695H5OsN0Oz6FYMTaaM5cpJs",
+      "image_credit": "UT News",
+      "news": [
+        {
+          "url": "https://news.utexas.edu/2026/11/24/ut-holds-no-1-ranking-for-research-funded-by-national-science-foundation-for-second-consecutive-year/",
+          "title": "UT Holds No. 1 Ranking for Research Funded by National Science Foundation for Second Consecutive Year",
+          "publisher": "UT News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR06iCUEwH8JO4B36EsS83ACfd9lKA5kkZ4fuf695H5OsN0Oz6FYMTaaM5cpJs"
+        },
+        {
+          "url": "https://www.kvue.com/video/news/local/ut-austin-named-top-in-the-nation-research-funded-by-national-science-foundation-supported/269-6fb5a15e-2f0a-4f0c-b29c-627a8baad8a6",
+          "title": "UT Austin named No. 1 U.S. university for research funded by Science Foundation",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVlG_mgnVJ7payzPRNxMBuC3T9BBqd9Ffg5Lx_g29onzuktE4OyfSKRKdLjqM"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/texas-texas-a-m-live-updates-score-college-football-week-13-2026/live/",
+          "title": "Texas vs. Texas A&M live updates: Longhorns, Aggies clash in annual rivalry showdown",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSdgUJhM3CHwG9IGIrlqtfXWh06-Npk2ZzGoQGi44G-Uk-jH0IrwLkZqCxOrDk"
+        }
+      ]
+    },
+    {
+      "query": "wichita state vs kentucky",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T02:00:00Z",
+      "related_news_urls": [
+        "https://ukathletics.com/news/2026/11/25/big-blue-preview-kentucky-vs-wichita-state/",
+        "https://www.courier-journal.com/story/sports/college/kentucky/2026/11/27/kentucky-wichita-state-time-today-uk-basketball-tv-channel-streaming/92932567007/",
+        "https://sports.yahoo.com/mens-college-basketball/articles/kentucky-vs-wichita-state-game-004634226.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6f0pqudtW7eboQM1N_tVfadWwdSgmutwM7KnD97qzqGZYBk_-6WyDcVFOMs",
+      "image_credit": "UKAthletics",
+      "news": [
+        {
+          "url": "https://ukathletics.com/news/2026/11/25/big-blue-preview-kentucky-vs-wichita-state/",
+          "title": "Big Blue Preview: Kentucky vs. Wichita State",
+          "publisher": "UKAthletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt6f0pqudtW7eboQM1N_tVfadWwdSgmutwM7KnD97qzqGZYBk_-6WyDcVFOMs"
+        },
+        {
+          "url": "https://www.courier-journal.com/story/sports/college/kentucky/2026/11/27/kentucky-wichita-state-time-today-uk-basketball-tv-channel-streaming/92932567007/",
+          "title": "What channel is Kentucky basketball vs. Wichita State on today?",
+          "publisher": "The Courier-Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7VgP6rq06CH6nkidmcT3prvywbTFaUzeC_GRUudQbl3U2uttpR7yhrlOo3a4"
+        },
+        {
+          "url": "https://sports.yahoo.com/mens-college-basketball/articles/kentucky-vs-wichita-state-game-004634226.html",
+          "title": "Kentucky vs. Wichita State game discussion and pregame reading",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbC6BjNKMQzHUEH9MaR2JwqPAiW27AEDbqgEfAQYfI9-Ov43huiJygxr7VMuU"
+        }
+      ]
+    },
+    {
+      "query": "javon small",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T02:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/recap/_/gameId/401909321",
+        "https://dailymemphian.com/article/68929/memphis-grizzlies-nba-cup-win-over-la-clippers",
+        "https://www.grindcitymedia.com/2026/11/25/tony-allen-in-studio-grizzclippers-tonight-cfp-rankings-and-rivalry-weekend-chris-vernon-show"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqljbS87z55OvRUf7JI55xIWPU-rrGMBscjlqRwr9SfJROWtz8s-O8d3XdAQ",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909321",
+          "title": "Grizzlies 115-97 Clippers (Nov 25, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCqljbS87z55OvRUf7JI55xIWPU-rrGMBscjlqRwr9SfJROWtz8s-O8d3XdAQ"
+        },
+        {
+          "url": "https://dailymemphian.com/article/68929/memphis-grizzlies-nba-cup-win-over-la-clippers",
+          "title": "Grizzlies pick up NBA Cup win against Clippers, set up showdown in Minnesota",
+          "publisher": "Daily Memphian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTEEvZ5Ne6GqL5srlqgpqwfeRjSRZwVwYFQPMMvb0flpqlYWghAZ0vzSyydMnA"
+        },
+        {
+          "url": "https://www.grindcitymedia.com/2026/11/25/tony-allen-in-studio-grizzclippers-tonight-cfp-rankings-and-rivalry-weekend-chris-vernon-show",
+          "title": "Tony Allen In-Studio, Grizz/Clippers Tonight, CFP Rankings and Rivalry Weekend | Chris Vernon Show",
+          "publisher": "Grind City Media",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR12r4eWCTAu_bRwlTgW-2ft9uHeuUMcT_Ifs7Uo9pa6tuZw-3kXBI57ycHFsw"
+        }
+      ]
+    },
+    {
+      "query": "hillary clinton",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T02:00:00Z",
+      "related_news_urls": [
+        "https://www.reutersconnect.com/item/clinton-greets-state-senate-majority-leader-andrea-stewart-cousins-at-thursdays-event-hillary-rodham-clinton-greets-new-york/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NTYwMjY",
+        "https://www.foxnews.com/politics/biden-book-sales-lag-way-behind-obama-clinton-memoirs-first-week",
+        "https://www.nbcnews.com/politics/joe-biden/sales-biden-memoir-fall-far-short-books-obama-clinton-rcna611609"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUFQw9EEiHJp8TyyyL_uFOUF0bQKgeaV37uQhNikYtyyaDUh1rCGzApGiGwPI",
+      "image_credit": "Reuters Connect",
+      "news": [
+        {
+          "url": "https://www.reutersconnect.com/item/clinton-greets-state-senate-majority-leader-andrea-stewart-cousins-at-thursdays-event-hillary-rodham-clinton-greets-new-york/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX01UMVVTQVRPREFZMzA0NTYwMjY",
+          "title": "Licensable picture: Clinton greets state Senate Majority Leader Andrea Stewart-Cousins at Thursday?s event. Hillary Rodham Clinton greets New York",
+          "publisher": "Reuters Connect",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTUFQw9EEiHJp8TyyyL_uFOUF0bQKgeaV37uQhNikYtyyaDUh1rCGzApGiGwPI"
+        },
+        {
+          "url": "https://www.foxnews.com/politics/biden-book-sales-lag-way-behind-obama-clinton-memoirs-first-week",
+          "title": "Biden book sales lag way behind Obama, Clinton memoirs in first week",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHWE9ulijr7GAppAODWzlQAgp-mxrN573gN_HGt0gQA4a9RRaJNan21nl8Dk0"
+        },
+        {
+          "url": "https://www.nbcnews.com/politics/joe-biden/sales-biden-memoir-fall-far-short-books-obama-clinton-rcna611609",
+          "title": "Sales for Biden memoir fall far short of books by Obama, Clinton",
+          "publisher": "NBC News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTodkkfFrZUJR147BFhn2OxBu-TqTqScu9usXINgJLjmZfrNPBxQsbVvlxkpQU"
+        }
+      ]
+    },
+    {
+      "query": "james wiseman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T01:50:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/watch/video/james-wiseman-with-the-dunk-3",
+        "https://www.si.com/nba/knicks/onsi/james-wiseman-just-got-huge-knicks-gift-black-friday-01m8ex0das10",
+        "https://knup.com/sports/nba/player-news/performance/james-wiseman-performance-11-25-2026-716801/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl1F2OtLCxcWAAPaD75Fio7maEWyLbbeXILphe0PXH7RcFAAyZZqCioMu5eLc",
       "image_credit": "NBA.com",
       "news": [
         {
-          "url": "https://utahjazz.com/news/preview-utah-jazz-end-nba-cup-play-against-denver-nuggets",
-          "title": "Preview: Utah Jazz End NBA Cup Play Against Denver Nuggets",
+          "url": "https://www.nba.com/watch/video/james-wiseman-with-the-dunk-3",
+          "title": "James Wiseman with the dunk",
           "publisher": "NBA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQUw80U7oXEvQ6wf9mRSvgjBjZ6Uas4jJw0T0G_8YSQIoNiUWj3rHVhQ3BCqHo"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTl1F2OtLCxcWAAPaD75Fio7maEWyLbbeXILphe0PXH7RcFAAyZZqCioMu5eLc"
         },
         {
-          "url": "https://sportsbook.fanduel.com/basketball/nba/denver-nuggets-@-utah-jazz-36358267",
-          "title": "Denver Nuggets @ Utah Jazz Odds",
-          "publisher": "FanDuel Sportsbook",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfLgsEqdqNTpB9AcCsNOarp9ELrCnMrEehSTSs7VnMFzGLLDG31iwypKg9pv4"
-        },
-        {
-          "url": "https://www.denverstiffs.com/preview-nuggets-visit-the-jazz-for-an-nba-cup-game/",
-          "title": "Preview: Nuggets visit the Jazz for an NBA Cup game",
-          "publisher": "Denver Stiffs",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa18mSvqK8TgvloJRezmhyh65XVeMaKVNYvEg64CaplRaUZSloc9XPS0B6HXc"
-        }
-      ]
-    },
-    {
-      "query": "cruise ship outbreak",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T01:20:00Z",
-      "related_news_urls": [
-        "https://www.today.com/health/disease/princess-cruise-ship-outbreak-norovirus-rcna611578",
-        "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
-        "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0klhonJhNKGQ_WUrA0aptqWPA6_LfOBkm7WiH4PMtKWxRpLGbxnIwLHfUKdI",
-      "image_credit": "TODAY.com",
-      "news": [
-        {
-          "url": "https://www.today.com/health/disease/princess-cruise-ship-outbreak-norovirus-rcna611578",
-          "title": "Cause of Princess Cruise Ship Outbreak That Sickened 268 People Identified by CDC",
-          "publisher": "TODAY.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR0klhonJhNKGQ_WUrA0aptqWPA6_LfOBkm7WiH4PMtKWxRpLGbxnIwLHfUKdI"
-        },
-        {
-          "url": "https://www.cbsnews.com/miami/news/princess-cruises-caribbean-princess-sick-passengers-fort-lauderdale-november-2026/",
-          "title": "Cruise ship returns to Fort Lauderdale with nearly 150 sick passengers, crew members after 12-day journey",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlgGaHmjmeC95eiM6cHbUScrT6RHz3gJKKPulLFykrcWpZLtEFIAvJQ-5fFnQ"
-        },
-        {
-          "url": "https://www.fodors.com/news/photos/vomiting-and-diarrhea-sweep-through-cruise-ship-sickening-nearly-150-people",
-          "title": "Vomiting and Diarrhea Sweep Through Cruise Ship, Sickening Nearly 150 People",
-          "publisher": "Fodors Travel Guide",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSjLcFVKmVl9G9JBhPIwv4VRW9AE9sd7F5HKcq2BFtOc1rQeMk08JfPD4H2RwI"
-        }
-      ]
-    },
-    {
-      "query": "millonarios - américa",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T01:20:00Z",
-      "related_news_urls": [
-        "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17568305/millonarios-vs-america-por-el-liderato-del-grupo-b",
-        "https://www.sportingnews.com/us-es/tickets/news/boletas-america-millonarios-2026-precios-como-comprar/e8398800ffdf63019d1d2511",
-        "https://www.semana.com/deportes/articulo/primer-parte-medico-de-figura-de-america-de-cali-que-preocupa-a-david-gonzalez-no-va-contra-millonarios/202630/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYu_oQpfNEVchaZQcTZf5SrEN0iCYkz0O1eB_H9rcCQXmSe1ZqGPrsOFbd24Q",
-      "image_credit": "ESPN Deportes",
-      "news": [
-        {
-          "url": "https://espndeportes.espn.com/futbol/colombia/nota/_/id/17568305/millonarios-vs-america-por-el-liderato-del-grupo-b",
-          "title": "¿Final adelantada? Millonarios vs. América por el liderato del Grupo B",
-          "publisher": "ESPN Deportes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYu_oQpfNEVchaZQcTZf5SrEN0iCYkz0O1eB_H9rcCQXmSe1ZqGPrsOFbd24Q"
-        },
-        {
-          "url": "https://www.sportingnews.com/us-es/tickets/news/boletas-america-millonarios-2026-precios-como-comprar/e8398800ffdf63019d1d2511",
-          "title": "Boletas para América vs. Millonarios por la Liga BetPlay 2026: Cómo comprar y precios",
-          "publisher": "Sporting News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKfDQ3Q1eW4x5hcL2B-6SI5NvMjsXtjSVVK_9xqAXIJpRIZbM6OG07mH6eyb0"
-        },
-        {
-          "url": "https://www.semana.com/deportes/articulo/primer-parte-medico-de-figura-de-america-de-cali-que-preocupa-a-david-gonzalez-no-va-contra-millonarios/202630/",
-          "title": "Primer parte médico de figura de América de Cali que preocupa a David González: no va contra Millonarios",
-          "publisher": "Revista Semana",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSL18ESbK5Bsw_Kk_LPjqbEaoCIbPEn_gYI8Lk06x31_SJGeH11-TL3xwL-jMc"
-        }
-      ]
-    },
-    {
-      "query": "sec championship game",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T01:20:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
-        "https://www.11alive.com/article/sports/college/georgia-bulldogs/scenarios-for-who-georgia-will-play-in-final-sec-championship-atlanta/85-b15fdf12-3ac2-4a5e-ab31-7e8a102d2ac1",
-        "https://sports.yahoo.com/college-football/articles/alabama-sec-championship-game-scenarios-193359204.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
-          "title": "Breaking down Tennessee’s SEC Championship Game scenarios with one game to go",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4"
-        },
-        {
-          "url": "https://www.11alive.com/article/sports/college/georgia-bulldogs/scenarios-for-who-georgia-will-play-in-final-sec-championship-atlanta/85-b15fdf12-3ac2-4a5e-ab31-7e8a102d2ac1",
-          "title": "Scenarios for who Georgia will play in the final SEC Championship in Atlanta",
-          "publisher": "11Alive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR-LFgIrEmmaCbc6otc2uzHSntAY2vuSQ8djpacTA7MfaZ95_RWi1UNoOpKo2A"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/alabama-sec-championship-game-scenarios-193359204.html",
-          "title": "Alabama’s SEC Championship Game Scenarios Explained",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSB6EQX2dyu_6URHpTxGTgn7u17OsjqT4crGzzrr64seNQoQMY_MO3PLrrbofg"
-        }
-      ]
-    },
-    {
-      "query": "anto saka",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T01:20:00Z",
-      "related_news_urls": [
-        "https://www.si.com/college/tamu/football/anto-saka-carted-off-with-injury-against-texas",
-        "https://gigemgazette.com/injury-update-texas-a-m-loses-anto-saka-to-ankle-issue-in-final-game-of-the-season"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUOr9oFJpu_jKJB6ntgG5O18dicCt382ySygH6suO0nobGapxf7het-VRXH8",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/tamu/football/anto-saka-carted-off-with-injury-against-texas",
-          "title": "Anto Saka Carted Off with Injury Against Texas",
+          "url": "https://www.si.com/nba/knicks/onsi/james-wiseman-just-got-huge-knicks-gift-black-friday-01m8ex0das10",
+          "title": "James Wiseman Just Got a Huge Knicks Gift on Black Friday",
           "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUOr9oFJpu_jKJB6ntgG5O18dicCt382ySygH6suO0nobGapxf7het-VRXH8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMwygIJ0MArJ9HY06zfYoH1MqFEvgBXaroZXc6tQIiJfzVvJd5FKX67DCLLbc"
         },
         {
-          "url": "https://gigemgazette.com/injury-update-texas-a-m-loses-anto-saka-to-ankle-issue-in-final-game-of-the-season",
-          "title": "Injury update: Texas A&M loses Anto Saka to ankle issue in final game of the season",
-          "publisher": "Gig Em Gazette",
+          "url": "https://knup.com/sports/nba/player-news/performance/james-wiseman-performance-11-25-2026-716801/",
+          "title": "James Wiseman Tallies 7 Rebounds in Knicks' Win vs Cavaliers",
+          "publisher": "knup.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFiH3gwjfnzQQKdmxKqbJpUszSGd5owI74sCpawVJsgIcYuC1cFrbM8d7UJo0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUcrLL3It2Rkw01O-gBleJBIiPQSxow_EvClViC380w16OQb2gZv86k7KuXGk"
         }
       ]
     },
     {
-      "query": "peyton manning",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T01:20:00Z",
+      "query": "cameron diaz",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T01:50:00Z",
       "related_news_urls": [
-        "https://www.foxsports.com/stories/nfl/tom-brady-admits-he-wasnt-great-friends-peyton-manning-during-playing-career",
-        "https://www.yardbarker.com/nfl/articles/watch_which_4_qbs_are_making_tom_bradys_thanksgiving_dinner_invite_list/s1_15560_44620209",
-        "https://www.foxnews.com/video/6408895202112"
+        "https://www.eatingwell.com/cameron-diaz-shared-her-awesome-oatmeal-recipe-and-its-so-surprising-12238078",
+        "https://www.yahoo.com/entertainment/celebrity/articles/benji-madden-pick-slack-home-110054244.html",
+        "https://www.limapagi.id/en/cameron-diaz-oatmeal-acting-return"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG0PobLvKCcAifJHfxYNGFPkFZtlFSgeGd8NBIHVt2loRj4aHMzdDvVV2nSuM",
-      "image_credit": "FOX Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhitY-viXoEWWGGmnxGy6gyNW4e8eW7J6upUDaZEsyNH2sW_2mAXIENOA2lo",
+      "image_credit": "EatingWell",
       "news": [
         {
-          "url": "https://www.foxsports.com/stories/nfl/tom-brady-admits-he-wasnt-great-friends-peyton-manning-during-playing-career",
-          "title": "Tom Brady Admits He Wasn't Great Friends With Peyton Manning During Playing Career",
-          "publisher": "FOX Sports",
+          "url": "https://www.eatingwell.com/cameron-diaz-shared-her-awesome-oatmeal-recipe-and-its-so-surprising-12238078",
+          "title": "Cameron Diaz’s Go-To Oatmeal Is ‘Really Awesome’—and So Easy",
+          "publisher": "EatingWell",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQG0PobLvKCcAifJHfxYNGFPkFZtlFSgeGd8NBIHVt2loRj4aHMzdDvVV2nSuM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdhitY-viXoEWWGGmnxGy6gyNW4e8eW7J6upUDaZEsyNH2sW_2mAXIENOA2lo"
         },
         {
-          "url": "https://www.yardbarker.com/nfl/articles/watch_which_4_qbs_are_making_tom_bradys_thanksgiving_dinner_invite_list/s1_15560_44620209",
-          "title": "Watch: Which 4 QBs are making Tom Brady's Thanksgiving dinner invite list?",
-          "publisher": "Yardbarker",
+          "url": "https://www.yahoo.com/entertainment/celebrity/articles/benji-madden-pick-slack-home-110054244.html",
+          "title": "Benji Madden Has to ‘Pick Up the Slack at Home’ as Cameron Diaz’s Acting Comeback Kicks Into ‘Overdrive’",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFcOfA-07b3lAccaPcg44KF8t0vKOysSaI2IfMyKJeifQujcnUlMrn7oyJ-QA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0IYSAawjH7NihhZ2w-kE0R8FyyefIuDZ5AfXxH03YC5U88jmkk3ylOZY-Ne0"
         },
         {
-          "url": "https://www.foxnews.com/video/6408895202112",
-          "title": "Tom Brady’s favorite Thanksgiving moment, Turkey Bowl dream team & friendship with Peyton Manning",
-          "publisher": "Fox News",
+          "url": "https://www.limapagi.id/en/cameron-diaz-oatmeal-acting-return",
+          "title": "Cameron Diaz Shares Savory Oatmeal Recipe as Acting Career Expands",
+          "publisher": "Limapagi",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFNCwThHPDRExX2vHU7OumIGUMFjxa4KRvr5w1L4xLuYBET1NU7uxKbsKF4_w"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh59td1wqfm8Yh6E37PZfc8e3_c6EF0V0pGDK-mI9T76OvOo8qSJ9huijtk-M"
+        }
+      ]
+    },
+    {
+      "query": "sidney crosby",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T01:50:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/athletic/7812106/2026/11/26/sidney-crosby-penguins-nhl-stats/",
+        "https://sports.yahoo.com/nhl/articles/goal-penguin-forever-crosbys-agent-045850682.html",
+        "https://www.dailyfaceoff.com/news/is-sidney-crosby-declining-age-career-analysis-luck-teammates-pittsburgh-penguins"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4JYXLlD-QDtWRLm2oJ5DNAy1-iLqYB6hHMbY9n5IooyuaEy1Pa_mNZMtQw8w",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/athletic/7812106/2026/11/26/sidney-crosby-penguins-nhl-stats/",
+          "title": "Is Sidney Crosby finally slowing down? The numbers tell two different stories, plus 16 more NHL stats - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4JYXLlD-QDtWRLm2oJ5DNAy1-iLqYB6hHMbY9n5IooyuaEy1Pa_mNZMtQw8w"
+        },
+        {
+          "url": "https://sports.yahoo.com/nhl/articles/goal-penguin-forever-crosbys-agent-045850682.html",
+          "title": "'His Goal Is To Be A Penguin Forever': Crosby's Agent Comments On His Future",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ0hVyHrIMJGdnwTiaTznFe46nuBXw-prTuTyHwGFNpHENM6CokqC1VU801dE8"
+        },
+        {
+          "url": "https://www.dailyfaceoff.com/news/is-sidney-crosby-declining-age-career-analysis-luck-teammates-pittsburgh-penguins",
+          "title": "Say it ain’t Sid: are we finally seeing Crosby’s decline?",
+          "publisher": "Daily Faceoff",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu6gm6DNf59_ctQ-_BB8EJWmBoE7K7Qs1swF2sh61OI8RsZIukmMvCy0Scfxs"
+        }
+      ]
+    },
+    {
+      "query": "inundación",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T01:50:00Z",
+      "related_news_urls": [
+        "https://www.france24.com/es/minuto-a-minuto/20261127-miles-de-afectados-por-inundaciones-asociadas-a-el-ni%C3%B1o-en-el-norte-de-per%C3%BA",
+        "https://rpp.pe/peru/piura/emergencia-en-piura-lluvias-torrenciales-inundan-zonas-vulnerables-de-la-ciudad-live-3730",
+        "https://www.notiperu.com.pe/economia/noticia-peru-ministro-vinelli-instalo-equipos-acelerar-drenaje-zonas-inundadas-piura-20261128004444.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7u7NQlujTZu21LGIwM5Fi7gKbPBMvxoYQDD4Yyxq_DB0jrYLju-nwxl4IeuY",
+      "image_credit": "France 24",
+      "news": [
+        {
+          "url": "https://www.france24.com/es/minuto-a-minuto/20261127-miles-de-afectados-por-inundaciones-asociadas-a-el-ni%C3%B1o-en-el-norte-de-per%C3%BA",
+          "title": "Miles de afectados por inundaciones asociadas a El Niño en el norte de Perú",
+          "publisher": "France 24",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7u7NQlujTZu21LGIwM5Fi7gKbPBMvxoYQDD4Yyxq_DB0jrYLju-nwxl4IeuY"
+        },
+        {
+          "url": "https://rpp.pe/peru/piura/emergencia-en-piura-lluvias-torrenciales-inundan-zonas-vulnerables-de-la-ciudad-live-3730",
+          "title": "Emergencia por lluvias en la costa norte: precipitaciones golpean fuertemente Piura y Tumbes",
+          "publisher": "RPP Noticias",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQsUjQ6JdZFw5EWvIJZaq-4aAMG6BL34aCOiWGeK4v-gzKMCrb--Ar3Hyz-Ivg"
+        },
+        {
+          "url": "https://www.notiperu.com.pe/economia/noticia-peru-ministro-vinelli-instalo-equipos-acelerar-drenaje-zonas-inundadas-piura-20261128004444.html",
+          "title": "Ministro Vinelli: se instaló equipos para acelerar drenaje de zonas inundadas en Piura",
+          "publisher": "notiperú",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF2aW1LDFjF1zcX3SCGVBr9P39TP2r0_H-8mux9kG5OVWfLdUjehK1oaEuqDU"
         }
       ]
     }
