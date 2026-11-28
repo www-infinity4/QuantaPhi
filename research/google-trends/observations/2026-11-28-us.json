@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T19:31:15.338952Z",
+  "checked_at": "2026-11-28T20:01:07.276353Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "real madrid vs alavés",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T19:10:00Z",
-      "related_news_urls": [
-        "https://as.com/futbol/primera/real-madrid-alaves-hoy-en-directo-laliga-ea-sports-en-vivo-ultima-hora-en-el-bernabeu-f202611-d/",
-        "https://www.si.com/es-us/lesionados-y-sancionados-del-real-madrid-para-enfrentarse-al-alaves",
-        "https://elpais.com/deportes/futbol/2026-11-28/real-madrid-alaves-en-directo-el-partido-de-la-liga-en-vivo.html"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0FYT_Uf3miszaIA3qdXtleDKX0ZwXWriO0tQ-G5x0n51avUsunKG7K-NI308",
-      "image_credit": "Diario AS",
-      "news": [
-        {
-          "url": "https://as.com/futbol/primera/real-madrid-alaves-hoy-en-directo-laliga-ea-sports-en-vivo-ultima-hora-en-el-bernabeu-f202611-d/",
-          "title": "Real Madrid - Alavés hoy, en directo: LaLiga EA Sports en vivo, última hora en el Bernabéu",
-          "publisher": "Diario AS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS0FYT_Uf3miszaIA3qdXtleDKX0ZwXWriO0tQ-G5x0n51avUsunKG7K-NI308"
-        },
-        {
-          "url": "https://www.si.com/es-us/lesionados-y-sancionados-del-real-madrid-para-enfrentarse-al-alaves",
-          "title": "Lesionados y sancionados del Real Madrid para enfrentarse al Alavés",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSA8QdJuR-xeHzqwXPnbE7jSw-jDyyGh0jP73vhzDFTdqW_iXqb7RCMbtUL5Q8"
-        },
-        {
-          "url": "https://elpais.com/deportes/futbol/2026-11-28/real-madrid-alaves-en-directo-el-partido-de-la-liga-en-vivo.html",
-          "title": "Real Madrid - Alavés en directo, el partido de la Liga en vivo",
-          "publisher": "EL PAÍS",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkGyyBaEjUF4JHkVEtkjnY63xxl6Ohw2dbGYrYE6z7AtncnfK4wNLn4rnIVsw"
-        }
-      ]
-    },
-    {
-      "query": "psg - lorient",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T19:10:00Z",
-      "related_news_urls": [
-        "https://www.footmercato.net/a2743467077444889641-psg-le-groupe-convoque-pour-la-reception-de-lorient",
-        "https://www.ouest-france.fr/sport/football/ligue-1/direct/direct-paris-sg-fc-lorient-suivez-le-match-de-la-12e-journee-de-ligue-1-en-live-0dc58fdd-1d79-497e-ab71-fb76256701db",
-        "https://www.sport.fr/football/ligue-1-compos-probables-pour-psg-lorient-a-20h45-avec-dembele-de-retour-ferran-torres-en-question-et-une-surprise-dans-le-onze-parisien-1505706.shtm"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHQI8QTNbXnoJPGeeIout7IyjC0YkOjfQzPsB1oQ36X2OP3PQYYp2ddz5e_fw",
-      "image_credit": "Foot Mercato",
-      "news": [
-        {
-          "url": "https://www.footmercato.net/a2743467077444889641-psg-le-groupe-convoque-pour-la-reception-de-lorient",
-          "title": "PSG : le groupe convoqué pour la réception de Lorient sans Nuno Mendes",
-          "publisher": "Foot Mercato",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHQI8QTNbXnoJPGeeIout7IyjC0YkOjfQzPsB1oQ36X2OP3PQYYp2ddz5e_fw"
-        },
-        {
-          "url": "https://www.ouest-france.fr/sport/football/ligue-1/direct/direct-paris-sg-fc-lorient-suivez-le-match-de-la-12e-journee-de-ligue-1-en-live-0dc58fdd-1d79-497e-ab71-fb76256701db",
-          "title": "DIRECT. Paris SG - FC Lorient : suivez le match de la 12e journée de Ligue 1 en live",
-          "publisher": "Ouest-France",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST6Hb4XjEwpzvhTgiRlRfpkO5FqAAcpLIVb16gKbkLaR6UyGkcm_G08z7IgGU"
-        },
-        {
-          "url": "https://www.sport.fr/football/ligue-1-compos-probables-pour-psg-lorient-a-20h45-avec-dembele-de-retour-ferran-torres-en-question-et-une-surprise-dans-le-onze-parisien-1505706.shtm",
-          "title": "Ligue 1 : compos probables pour PSG – Lorient, à 20h45, avec Dembélé de retour, Ferran Torres en question et une surprise dans le onze parisien",
-          "publisher": "Sport.fr",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYg5UlsdD1Aipa4iOdyqrso7GnRvAj9TtTHOBNiI46hbbSC30Yt_mR9C11cAo"
-        }
-      ]
-    },
-    {
-      "query": "denver weather",
+      "query": "smu vs stanford",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T19:10:00Z",
+      "published_at": "2026-11-28T19:40:00Z",
       "related_news_urls": [
-        "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
-        "https://www.cbsnews.com/colorado/news/winter-storm-brings-heavy-snow-to-colorado-mountains-snow-showers-possible-across-denver-metro/",
-        "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/"
+        "https://www.sportsgambler.com/betting-tips/ncaaf/southern-methodist-mustangs-vs-stanford-cardinal-prediction-odds-2026-11-28/",
+        "https://www.on3.com/teams/smu-mustangs/news/smu-qb-ty-hawkins-ruled-out-vs-stanford-updates-on-pair-of-key-mustangs/",
+        "https://www.santacruzsentinel.com/2026/11/28/stanford-smu-preview-key-stats-acc-football/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNLEeGy7nsdUBPvhADXLaw_EFQZYXpqWUKcyc2kLP72xNrb5rjods3Vn7oQc",
-      "image_credit": "KDVR",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaihh4t96vv6mD9z7mF4G0L2AJemPvCmPjlhWnHzkjVgGxJe0Q9rDSSURFqWg",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
-          "title": "Denver weather: Windy and colder with snow showers Friday",
-          "publisher": "KDVR",
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/southern-methodist-mustangs-vs-stanford-cardinal-prediction-odds-2026-11-28/",
+          "title": "SMU vs Stanford Prediction, Picks & Odds | 28 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNLEeGy7nsdUBPvhADXLaw_EFQZYXpqWUKcyc2kLP72xNrb5rjods3Vn7oQc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaihh4t96vv6mD9z7mF4G0L2AJemPvCmPjlhWnHzkjVgGxJe0Q9rDSSURFqWg"
         },
         {
-          "url": "https://www.cbsnews.com/colorado/news/winter-storm-brings-heavy-snow-to-colorado-mountains-snow-showers-possible-across-denver-metro/",
-          "title": "Winter storm brings heavy snow to Colorado mountains, snow showers possible across Denver metro",
-          "publisher": "CBS News",
+          "url": "https://www.on3.com/teams/smu-mustangs/news/smu-qb-ty-hawkins-ruled-out-vs-stanford-updates-on-pair-of-key-mustangs/",
+          "title": "SMU QB Ty Hawkins ruled out vs. Stanford, updates on pair of key Mustangs",
+          "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTni7-HKKkMHywWKMTSZrUB-SDiEZvhSR0bGPJVJ4gC0pmw2H-8UafRQqGF7bU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSSWKTf83Wtf4kmoFxM3fyrGlUQoSwUgHXz_yYu0YmRsqjcRXX8UDJtvml_DXY"
         },
         {
-          "url": "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/",
-          "title": "Resort could get 15″ of snow in change of pace for Colorado",
-          "publisher": "Denver Gazette",
+          "url": "https://www.santacruzsentinel.com/2026/11/28/stanford-smu-preview-key-stats-acc-football/",
+          "title": "What to know before Stanford kicks off against SMU",
+          "publisher": "Santa Cruz Sentinel",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG9saD5ZPWxBTJhCE1NJWW5Hbuwzx6ypM9Tg19BH0ayOaIfKYXmmxpfzQmJ8A"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRmXA4sqWtBuT2Ud_q_RKJzr4GNphQi9_n5ePoR88cwiKFRTzYg5r4hZGXR98A"
         }
       ]
     },
     {
-      "query": "troy vs ar state",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T19:10:00Z",
+      "query": "tn state vs south carolina",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T19:40:00Z",
       "related_news_urls": [
-        "https://www.ktlo.com/2026/11/28/a-state-to-close-out-season-at-home-against-troy/",
-        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-at-arkansas-state.html",
-        "https://www.troymessenger.com/sports/trojans-continue-to-seek-answers-as-season-end-draws-near-72c68391"
+        "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
+        "https://www.nytimes.com/athletic/7811256/2026/11/25/uconn-geno-auriemma-crisis-losses-south-carolina/",
+        "https://www.ctinsider.com/sports/uconn-womens-basketball/article/bad-struggles-leadership-geno-auriemma-sarah-stron-22549794.php"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBo2FwZ4Z9xgpzUslsqkUccWbOJo_8dGb8fMfGqlQcquV4xGbDzTNJCzx_sAM",
-      "image_credit": "KTLO",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1Zld4_5kjmEEYlS8i38945XqbXcHv3N1TL1rCvyDTE7jibOBr6TzMu_4vd0",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.ktlo.com/2026/11/28/a-state-to-close-out-season-at-home-against-troy/",
-          "title": "A State to close out season at home against Troy",
-          "publisher": "KTLO",
+          "url": "https://www.espn.com/womens-college-basketball/story/_/id/50589389/tessa-johnson-career-high-32-spark-south-carolina-uconn",
+          "title": "South Carolina topples UConn behind Tessa Johnson's career-high 32",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBo2FwZ4Z9xgpzUslsqkUccWbOJo_8dGb8fMfGqlQcquV4xGbDzTNJCzx_sAM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSF1Zld4_5kjmEEYlS8i38945XqbXcHv3N1TL1rCvyDTE7jibOBr6TzMu_4vd0"
         },
         {
-          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-troys-game-at-arkansas-state.html",
-          "title": "Scouting report: What you need to know for Troy’s game at Arkansas State",
+          "url": "https://www.nytimes.com/athletic/7811256/2026/11/25/uconn-geno-auriemma-crisis-losses-south-carolina/",
+          "title": "A crisis at UConn? Geno Auriemma exasperated by 3 early losses, but it’s on him to fix it",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQrbzMxUmYK3USNYhO3sBS_VAOvTDS_xwmcdbP7RMz0Kb_wC3XCk39ZzpKuEiY"
+        },
+        {
+          "url": "https://www.ctinsider.com/sports/uconn-womens-basketball/article/bad-struggles-leadership-geno-auriemma-sarah-stron-22549794.php",
+          "title": "Why UConn women's basketball is struggling: Offense, leadership and more",
+          "publisher": "CT Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTamms3V93WM1pZbgp41WjNe7nO2GsuDESXXXqDp6c8PKBQNvSXWzSZ2O-e9Wk"
+        }
+      ]
+    },
+    {
+      "query": "tulane vs south florida",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T19:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/watch-tulane-vs-south-florida-193000376.html",
+        "https://gousfbulls.com/news/2026/11/28/football-keys-to-the-game-bulls-vs-green-wave",
+        "https://www.nola.com/sports/tulane/guerry-smith-predicts-the-score-of-tulane-south-florida-game/article_9735a207-7efb-40cb-a2c2-1cd977ecefc5.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQQgcYFRDOUd8VGRT-hwLKqCcwvKAHOTp_AUdsykwesD7WsJoqY8TOlR0s8GM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/watch-tulane-vs-south-florida-193000376.html",
+          "title": "How to watch Tulane vs South Florida: Live stream NCAA College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTQQgcYFRDOUd8VGRT-hwLKqCcwvKAHOTp_AUdsykwesD7WsJoqY8TOlR0s8GM"
+        },
+        {
+          "url": "https://gousfbulls.com/news/2026/11/28/football-keys-to-the-game-bulls-vs-green-wave",
+          "title": "Keys to the Game: Bulls vs. Green Wave",
+          "publisher": "USF Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT8l5n85fQdJz4NCPc71T6hcWL2g270ajjKZTCj_SuG_Ht3CJEwRt2SVhAUDiI"
+        },
+        {
+          "url": "https://www.nola.com/sports/tulane/guerry-smith-predicts-the-score-of-tulane-south-florida-game/article_9735a207-7efb-40cb-a2c2-1cd977ecefc5.html",
+          "title": "Guerry Smith predicts the outcome of Tulane's regular-season finale at South Florida",
+          "publisher": "NOLA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTIuZfEQ8KIntn-ziybdYrTlFupb_RvOlipwWtOf-51DYlAemkaxk0bY-HGpKU"
+        }
+      ]
+    },
+    {
+      "query": "utep vs northern il",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T19:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50587546/utep-niu-college-football-game-century",
+        "https://www.yardbarker.com/college_football/articles/mountain_worst_toothless_mwc_matchup_evokes_most_putrid_college_football_pillow_fights_of_all_time/s1_13132_44617419",
+        "https://www.dimers.com/cfb/news/texas-el-paso-vs-northern-illinois-prediction-11-28-2026-ac"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq5SmIj-oJFyiN4bULXtok6RBiNVSu5ksn4S-uijlp4KVB0UME5_YOrzLPwgM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50587546/utep-niu-college-football-game-century",
+          "title": "Why UTEP-NIU is 2026's most unglamorous Game of the Century",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSq5SmIj-oJFyiN4bULXtok6RBiNVSu5ksn4S-uijlp4KVB0UME5_YOrzLPwgM"
+        },
+        {
+          "url": "https://www.yardbarker.com/college_football/articles/mountain_worst_toothless_mwc_matchup_evokes_most_putrid_college_football_pillow_fights_of_all_time/s1_13132_44617419",
+          "title": "MOUNTAIN WORST: Toothless MWC matchup evokes most putrid college football pillow fights of all time",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq3yUP_XvPF4DpPfk6iGMf_TJ0Y5Rx8Pht0b60GJM48ZP6KfDDWWTpSwE3lwQ"
+        },
+        {
+          "url": "https://www.dimers.com/cfb/news/texas-el-paso-vs-northern-illinois-prediction-11-28-2026-ac",
+          "title": "Texas-El Paso vs. Northern Illinois prediction favors Huskies in Week 13, 2026",
+          "publisher": "Dimers",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCbpxWg8oADchZ1wVi6D-_ueoq8O9EEtWDxKkVUCkNSWfwISBWlxPcfDfv2o"
+        }
+      ]
+    },
+    {
+      "query": "fcs playoff bracket",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T19:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/football/article/2026-11-28/2026-fcs-football-championship-bracket-schedule-selection-info-playoffs",
+        "https://www.espn.com/college-football/story/_/id/50564910/montana-state-grabs-top-seed-24-team-fcs-playoff-bracket",
+        "https://vp-mi.com/news/2026/nov/26/big-sky-now-with-skyline-sports-samuel-akem-breaks-down-the-fcs-playoff-bracket/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv-3Bic9lrPLR6SQmqEuMkePn0FsUqVxfhjfM8AO7DcD47KkdGi4hzbN59nvs",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-28/2026-fcs-football-championship-bracket-schedule-selection-info-playoffs",
+          "title": "2026 FCS football championship: Bracket, schedule, selection info",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQv-3Bic9lrPLR6SQmqEuMkePn0FsUqVxfhjfM8AO7DcD47KkdGi4hzbN59nvs"
+        },
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50564910/montana-state-grabs-top-seed-24-team-fcs-playoff-bracket",
+          "title": "Montana State ranked No. 1, 5-7 LIU makes FCS bracket as conference champ",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAEIZABwvVdKaUgWEpckeJ5sbfKJtkN-bDXNaSCBXE1wbIs9gW-WIJ3eJ_KY"
+        },
+        {
+          "url": "https://vp-mi.com/news/2026/nov/26/big-sky-now-with-skyline-sports-samuel-akem-breaks-down-the-fcs-playoff-bracket/",
+          "title": "Big Sky Now: With Skyline Sports, Samuel Akem breaks down the FCS Playoff bracket",
+          "publisher": "Clark Fork Valley Press | Mineral Independent",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRPAvqPwmkLOUx4cAnPfEVof-KlkED1DYVHXIda0GDqdb-rkWUHwYnqVQZSbQM"
+        }
+      ]
+    },
+    {
+      "query": "jax state vs delaware",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T19:40:00Z",
+      "related_news_urls": [
+        "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-jax-states-matchup-with-delaware.html",
+        "https://www.delawareonline.com/story/sports/college/ud/2026/11/28/jacksonville-state-at-delaware-in-cusa-football-live-report-updates/92847382007/",
+        "https://sports.yahoo.com/college-football/articles/jacksonville-state-football-faces-delaware-100144666.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8d7D9kKu5jAPUZQ8SOv2luYv6-cJjremYKm3adoPr9U9-OdOtH3_wp8xlHO0",
+      "image_credit": "AL.com",
+      "news": [
+        {
+          "url": "https://www.al.com/sports/2026/11/scouting-report-what-you-need-to-know-for-jax-states-matchup-with-delaware.html",
+          "title": "Scouting report: What you need to know for Jax State’s matchup with Delaware",
           "publisher": "AL.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ6ViZBCMAybWE5nutytBWQ9Jfxqs2EJj9gm6pI-c3McbPjw6xL8JaDLMKwOOg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8d7D9kKu5jAPUZQ8SOv2luYv6-cJjremYKm3adoPr9U9-OdOtH3_wp8xlHO0"
         },
         {
-          "url": "https://www.troymessenger.com/sports/trojans-continue-to-seek-answers-as-season-end-draws-near-72c68391",
-          "title": "Trojans continue to seek answers as season end draws near",
-          "publisher": "The Troy Messenger",
+          "url": "https://www.delawareonline.com/story/sports/college/ud/2026/11/28/jacksonville-state-at-delaware-in-cusa-football-live-report-updates/92847382007/",
+          "title": "Jacksonville State at Delaware in CUSA football, live report, updates",
+          "publisher": "Delawareonline.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQUOZ8j5o1ycySM7R85S4TVpPqqJ9jVJaH80CV7OCYTz8fkKXkWkbLSSUMGeDU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE0LFxEcOZZhM4ad9UlehKfDm64vmYnj217ElbYWIBFrz7Fa9yNA74u-5UaX8"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/jacksonville-state-football-faces-delaware-100144666.html",
+          "title": "Jacksonville State football faces Delaware | Live score updates, highlights",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRMihzJ_8Er9ub9gF46S7R4PHvLcFezBRUMiFIG_vBXraQRWs-TfumgaE2RW_s"
         }
       ]
     },
     {
-      "query": "virginia vs virginia tech",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T19:00:00Z",
+      "query": "umass vs bowling green",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T19:40:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/virginia-tech/article/virginia-tech-vs-virginia-how-to-watch-football-2026-293380803/",
-        "https://bleacherreport.com/articles/25538472-uva-va-tech-field-scuffle-caught-video-ahead-cfb-rivalry-game",
-        "https://www.streakingthelawn.com/football/55142/previewing-uva-footballs-rivalry-clash-with-virginia-tech"
+        "https://www.toledoblade.com/sports/bgsu/2026/11/28/week-12-game-day-preview-massachusetts-at-bgsu-football/stories/20261128061",
+        "https://athlonsports.com/college-football/umass-minutemen-at-bowling-green-falcons-ncaaf-prediction-picks-odds-week13-2026",
+        "https://sportsbook.fanduel.com/football/ncaa-football-games/massachusetts-@-bowling-green-36351845"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq0OiizIWXLbikflFfz0xTXSdGWwVsuCrVIdeYz3YLtoH30TUyoGO4ZBQT42w",
+      "image_credit": "Toledo Blade",
+      "news": [
+        {
+          "url": "https://www.toledoblade.com/sports/bgsu/2026/11/28/week-12-game-day-preview-massachusetts-at-bgsu-football/stories/20261128061",
+          "title": "Week 12 game day preview: Massachusetts at BGSU football",
+          "publisher": "Toledo Blade",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq0OiizIWXLbikflFfz0xTXSdGWwVsuCrVIdeYz3YLtoH30TUyoGO4ZBQT42w"
+        },
+        {
+          "url": "https://athlonsports.com/college-football/umass-minutemen-at-bowling-green-falcons-ncaaf-prediction-picks-odds-week13-2026",
+          "title": "Bowling Green Looks to Rebound Against UMass After Shutout Loss to Toledo",
+          "publisher": "Athlon Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7mUBUguayuSjfzFXTDdQVVLBz_s89TIRaKr1gb6n9ROkr_29aR4jExUvQLyA"
+        },
+        {
+          "url": "https://sportsbook.fanduel.com/football/ncaa-football-games/massachusetts-@-bowling-green-36351845",
+          "title": "Massachusetts @ Bowling Green Odds",
+          "publisher": "FanDuel Sportsbook",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQltJRht3fZEnCh-ho5-AVlqA71Fi7Skw_GzjVGeFgo6dJFQlP8e_p_lNuWRU"
+        }
+      ]
+    },
+    {
+      "query": "georgia tech vs georgia",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-28T19:30:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
+        "https://sports.yahoo.com/college-football/articles/georgia-tech-vs-no-1-140005467.html",
+        "https://www.fox5atlanta.com/video/fmc-x6r280nkh01tis95"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE",
       "image_credit": "247Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/virginia-tech/article/virginia-tech-vs-virginia-how-to-watch-football-2026-293380803/",
-          "title": "How to Watch Virginia Tech vs. Virginia: TV Channel, Kickoff Time, Streaming and More",
+          "url": "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
+          "title": "Georgia football injury report vs. Georgia Tech",
           "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQMk8Q_2mjxK7XgBtrC2HO1HwzqAgx9HJbuGEK4ok0j4ncVkUVoDuX_SWdxAzs"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE"
         },
         {
-          "url": "https://bleacherreport.com/articles/25538472-uva-va-tech-field-scuffle-caught-video-ahead-cfb-rivalry-game",
-          "title": "UVA, Va Tech On-Field Scuffle Caught on Video Ahead of CFB Rivalry Game",
-          "publisher": "Bleacher Report",
+          "url": "https://sports.yahoo.com/college-football/articles/georgia-tech-vs-no-1-140005467.html",
+          "title": "Georgia Tech vs No. 1 Georgia : Game Preview and Final Score Prediction",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKApWXZ19hU36AqBvTk55LHnHMdwt7BwOg12kr_ocEpN6gh1PYZzq7NRisRwQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT804R1kWKZetuqXirBxOeHYJtPU9kgHBCeYEV9juxBSHdHJDOf4eACsIjfYrc"
         },
         {
-          "url": "https://www.streakingthelawn.com/football/55142/previewing-uva-footballs-rivalry-clash-with-virginia-tech",
-          "title": "Previewing UVA football’s rivalry clash with Virginia Tech",
-          "publisher": "Streaking The Lawn",
+          "url": "https://www.fox5atlanta.com/video/fmc-x6r280nkh01tis95",
+          "title": "Top-ranked Georgia hosts Georgia Tech in Athens rivalry",
+          "publisher": "FOX 5 Atlanta",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnLEt8PhNuUtKIIdgmC5uA4VgRkvq4e-ZGHdbKUgsbP6SJqT0oSa1c0ml8_IE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRiOy_zXx7_jlpo1TL8-RPvw7E3lk8vfKfXvx6eFERS7W4q_b-HSIoeaqVQtvU"
         }
       ]
     },
     {
-      "query": "inter - genoa",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T19:00:00Z",
+      "query": "penn state vs maryland",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T19:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/general/articles/inter-vs-genoa-complete-match-150000160.html",
-        "https://video.gazzetta.it/calcio/serie-a/inter-genoa-probabili-formazioni-lautaro-gioca-dal-1/4ebe8d31-d80a-4ab1-a840-468fcb16bxlk",
-        "https://telenord.it/genoa-stasera-rossoblu-emergenza-contro-linter-ostigard-111911"
+        "https://sports.yahoo.com/college-football/articles/maryland-football-vs-penn-state-193000003.html",
+        "https://sports.yahoo.com/college-football/articles/penn-state-vs-maryland-live-183050004.html",
+        "https://www.blackshoediaries.com/penn-state-football/93112/bsd-staff-predictions-roundtable-maryland-penn-state-nittany-lions-football"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfv7ApcnlmIVTUGQmI8hnqlpiklxGiW8wR41KnsLMTzpPizoZY5m5o3nwSRQ4",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSETCJgG3CGt1MUWMfu4KfSC9hhLGWgo0X_s486q-FzFW1RXRggJ8aQ2ZBcWc8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/general/articles/inter-vs-genoa-complete-match-150000160.html",
-          "title": "Inter vs. Genoa: the complete match guide",
+          "url": "https://sports.yahoo.com/college-football/articles/maryland-football-vs-penn-state-193000003.html",
+          "title": "Maryland football vs. Penn State game thread: updates, highlights & more",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTfv7ApcnlmIVTUGQmI8hnqlpiklxGiW8wR41KnsLMTzpPizoZY5m5o3nwSRQ4"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSETCJgG3CGt1MUWMfu4KfSC9hhLGWgo0X_s486q-FzFW1RXRggJ8aQ2ZBcWc8"
         },
         {
-          "url": "https://video.gazzetta.it/calcio/serie-a/inter-genoa-probabili-formazioni-lautaro-gioca-dal-1/4ebe8d31-d80a-4ab1-a840-468fcb16bxlk",
-          "title": "Inter-Genoa, probabili formazioni: Lautaro gioca, Chivu ne cambia 5",
-          "publisher": "La Gazzetta dello Sport",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDcIVWsOKM1cYul-a-uDO_eQHMvMk7fAW5nVwQHddUEWZDNd8BJI4diP5DS4"
-        },
-        {
-          "url": "https://telenord.it/genoa-stasera-rossoblu-emergenza-contro-linter-ostigard-111911",
-          "title": "Genoa, stasera rossoblu' in emergenza contro l’Inter: Ostigard e Baldanzi ko, De Rossi punta su Messias e Osmaijc",
-          "publisher": "Telenord",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxf4dxU7kKBNwRLV3CJxHDKc-KbquSsLJY9iJ7GoaqL6c25uHzcwO_xB-E8LM"
-        }
-      ]
-    },
-    {
-      "query": "psg vs lorient",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T19:00:00Z",
-      "related_news_urls": [
-        "https://www.tallahatchienews.ms/node/485078",
-        "https://sports.yahoo.com/soccer/articles/nobody-asks-luis-enrique-gets-142400399.html",
-        "https://onefootball.com/en/video/zaire-emery-to-hit-200-psg-games-at-just-20-3Mh8nNn80f061PMd6SJ5hQDb1TR"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0",
-      "image_credit": "tallahatchienews.ms",
-      "news": [
-        {
-          "url": "https://www.tallahatchienews.ms/node/485078",
-          "title": "【LIVESTREAMS^^FrEE】 PSG v Lorient: how to watch live, kick-off time and line-ups",
-          "publisher": "tallahatchienews.ms",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0"
-        },
-        {
-          "url": "https://sports.yahoo.com/soccer/articles/nobody-asks-luis-enrique-gets-142400399.html",
-          "title": "“Nobody asks me about it…” – Luis Enrique gets cheeky with journalists over “best team” stat",
+          "url": "https://sports.yahoo.com/college-football/articles/penn-state-vs-maryland-live-183050004.html",
+          "title": "Penn State vs. Maryland live updates: Score, highlights, analysis",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQUZ3yKeOLQPgih2z0LAbFpjmH7WwzjFKyS-w5-wG4hwSFZHOdzNKhPyE-JpZY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQJUEnOIBrGu2EV2FgegWxO5RdpV4WLy32Oo4bhYQ6aX9F6znaKBnFzbGcx3dc"
         },
         {
-          "url": "https://onefootball.com/en/video/zaire-emery-to-hit-200-psg-games-at-just-20-3Mh8nNn80f061PMd6SJ5hQDb1TR",
-          "title": "Zaire-Emery to hit 200 PSG games at just 20",
-          "publisher": "OneFootball",
+          "url": "https://www.blackshoediaries.com/penn-state-football/93112/bsd-staff-predictions-roundtable-maryland-penn-state-nittany-lions-football",
+          "title": "BSD Staff Predictions Roundtable: Maryland",
+          "publisher": "Black Shoe Diaries",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSZqeyDMmZlX9aUlaKVa1VaxHUEis2UDibtFnSG0XXaR2RMcXUouqDdp-TSVBc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvIVo55XKofcI3kiudRqbt1c70XNXJyWes_PYzeCibTsyKqyvYp9_IcvdqdnI"
         }
       ]
     },
     {
-      "query": "palmeiras vs estudiantes",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T19:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/soccer/articles/palmeiras-announce-line-libertadores-final-185200273.html",
-        "https://www.wvnews.com/sports/pro/brazil-argentina-copa-libertadores-soccer/image_510cf188-095c-51fe-ab0e-c318f1cc6f30.html",
-        "https://www.reuters.com/sports/soccer/palmeiras-estudiantes-meet-clash-power-defiance-libertadores-final-2026-11-27/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQklQgC8_Afv_Tag-B3EA3QKxl-XuS5BcNnlfsRmVJ1-3P1eCdLYCmX__b5LXc",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/soccer/articles/palmeiras-announce-line-libertadores-final-185200273.html",
-          "title": "📋 Palmeiras announce line-up for Libertadores final",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQklQgC8_Afv_Tag-B3EA3QKxl-XuS5BcNnlfsRmVJ1-3P1eCdLYCmX__b5LXc"
-        },
-        {
-          "url": "https://www.wvnews.com/sports/pro/brazil-argentina-copa-libertadores-soccer/image_510cf188-095c-51fe-ab0e-c318f1cc6f30.html",
-          "title": "Brazil Argentina Copa Libertadores Soccer",
-          "publisher": "WV News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStlLqigwvS0zvZ5AWYyIo1Ff4jHOakx2AuEl5qHH41_kOMSVKynDb7KXCoU4c"
-        },
-        {
-          "url": "https://www.reuters.com/sports/soccer/palmeiras-estudiantes-meet-clash-power-defiance-libertadores-final-2026-11-27/",
-          "title": "Palmeiras and Estudiantes meet in clash of power and defiance in Libertadores final",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1v_Ee29oN-pHcdGo-csm47VaXUivGNq09htorqxxfN1Yo214Lkc2MmXgeHFA"
-        }
-      ]
-    },
-    {
-      "query": "real madrid schedule",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T19:00:00Z",
-      "related_news_urls": [
-        "https://www.realmadrid.com/en-US/news/football/first-team/fixtures/real-madrid-alaves-tercer-partido-consecutivo-en-el-bernabeu-28-11-2026",
-        "https://www.si.com/soccer/real-madrid-vs-deportivo-alaves-predictions-11-28-26",
-        "https://www.goal.com/en/news/mourinho-delivers-good-news-and-sends-a-firm-message-on-the-winter-transfer-window/blt6fa36c6f4fb2c3f6"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaQXGGA_nCJuO1CiqNfZjwwgpPS0N7AKahcQHiHpD15Opph-E3NJgzjzw5N3A",
-      "image_credit": "Real Madrid CF | Web Oficial",
-      "news": [
-        {
-          "url": "https://www.realmadrid.com/en-US/news/football/first-team/fixtures/real-madrid-alaves-tercer-partido-consecutivo-en-el-bernabeu-28-11-2026",
-          "title": "Real Madrid-Alavés: aiming to extend the streak at the Bernabéu",
-          "publisher": "Real Madrid CF | Web Oficial",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRaQXGGA_nCJuO1CiqNfZjwwgpPS0N7AKahcQHiHpD15Opph-E3NJgzjzw5N3A"
-        },
-        {
-          "url": "https://www.si.com/soccer/real-madrid-vs-deportivo-alaves-predictions-11-28-26",
-          "title": "Real Madrid vs. Deportivo Alaves Predictions: Los Blancos Out to Extend Superb Winning Run",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0TnJ72k1REODNECRI2YKEreaLDZy3pNgmFpzPGLS0A7HpjVxqRqbAb00kNSA"
-        },
-        {
-          "url": "https://www.goal.com/en/news/mourinho-delivers-good-news-and-sends-a-firm-message-on-the-winter-transfer-window/blt6fa36c6f4fb2c3f6",
-          "title": "Mourinho delivers good news and sends a firm message on the winter transfer window",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-eUGEvZr21Z1Rd6svSfa1OBeYDIq2nBLzzr4WymgNiGxmegzcNhTwigMeSLM"
-        }
-      ]
-    },
-    {
-      "query": "inter vs genoa",
+      "query": "cincinnati vs byu",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T18:50:00Z",
+      "published_at": "2026-11-28T19:30:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cmde1d5elyn5t",
-        "https://www.beinsports.com/en-us/soccer/serie-a/articles/chivu-welcomes-zielinski-back-amid-inter-s-injury-problems-2026-11-27",
-        "https://www.goal.com/en-us/betting/tips/inter-vs-genoa-predictions-11-28-2026/A%3Ablte8a1bec8dfa87e7b"
+        "https://www.deseret.com/sports/2026/11/27/byu-cincinnati-cincy-cougars-bearcats-football-at-stake-on-the-line-big-12/",
+        "https://sports.ksl.com/ncaa/byu-football/byu-cincinnati-availability-report/579199",
+        "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-byu-293427506/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_TsAqic-ov-XWEsqwhiQycGVnPGx00yXsiVak6aC9Nx6SGBd0uL_ZPHvHY6s",
+      "image_credit": "Deseret News",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cmde1d5elyn5t",
-          "title": "Inter Milan vs Genoa: Italian Serie A stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.deseret.com/sports/2026/11/27/byu-cincinnati-cincy-cougars-bearcats-football-at-stake-on-the-line-big-12/",
+          "title": "No. 10 BYU might need a big win over Cincinnati on Saturday to stay ahead of Texas Tech, others, in College Football Playoff rankings",
+          "publisher": "Deseret News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_TsAqic-ov-XWEsqwhiQycGVnPGx00yXsiVak6aC9Nx6SGBd0uL_ZPHvHY6s"
         },
         {
-          "url": "https://www.beinsports.com/en-us/soccer/serie-a/articles/chivu-welcomes-zielinski-back-amid-inter-s-injury-problems-2026-11-27",
-          "title": "Chivu Welcomes Zielinski Back Amid Inter's Injury Problems",
-          "publisher": "beIN SPORTS",
+          "url": "https://sports.ksl.com/ncaa/byu-football/byu-cincinnati-availability-report/579199",
+          "title": "BYU football availability report for home finale against Cincinnati",
+          "publisher": "KSL Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQvKKGmdRia_nZc3g3RpEtHKjwyHUZNHXpaa0_UW5ySxFAPCaU7BEwE8n7zNno"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSQGcRLKXXIkJxawtcCpe-sq7NSQnfn7xItB94a7AqoVIV-aAtDoIg2JEjKcME"
         },
         {
-          "url": "https://www.goal.com/en-us/betting/tips/inter-vs-genoa-predictions-11-28-2026/A%3Ablte8a1bec8dfa87e7b",
-          "title": "Inter vs Genoa Predictions: Esposito and Dimarco to shine in home win",
-          "publisher": "Goal.com",
+          "url": "https://247sports.com/college/cincinnati/article/how-to-watch-and-staff-predictions-byu-293427506/",
+          "title": "How To Watch and Staff Predictions: BYU",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQllHl0p_cUY2ek22C6ivSaR5tyOrsON3VG9RQnKOLmy735M85VfcCEVwx6Axg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHllRbQrWImkSZfeAEj11bUiWDP-TU3EQjwSrLMGmh-zHJmv2wYa8MNpMiO2Y"
         }
       ]
     }
