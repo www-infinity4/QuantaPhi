@@ -3,82 +3,292 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T12:01:23.157224Z",
+  "checked_at": "2026-11-28T12:32:45.133727Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "al-hazem vs al-nassr",
+      "query": "lincoln city vs wolves",
       "approx_searches": "200+",
-      "published_at": "2026-11-28T11:40:00Z",
+      "published_at": "2026-11-28T12:10:00Z",
       "related_news_urls": [
-        "https://athlonsports.com/soccer/how-to-watch-al-hazem-vs-al-nassr-online-free-start-time-live-streaming-tv-channels-usa-countries",
-        "https://khelnow.com/football/will-cristiano-ronaldo-play-al-hazem-vs-al-nassr-saudi-pro-league-202611",
-        "https://onefootball.com/en/betting/predictions/al-hazm-vs-al-nassr-28-11-2026"
+        "https://www.bbc.com/sport/football/live/c3n0lgw017rlt",
+        "https://www.reutersconnect.com/item/championship-lincoln-city-v-wolverhampton-wanderers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlMwWEZDUjI",
+        "https://www.weareimps.com/news/match-guide-imps-v-wolves"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchYxRv4tFIwHk374zO3QN3xmytBlJe6OsPTpRLN0tNMaCzOiKRxpmKVR4r5o",
-      "image_credit": "Athlon Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1DjQCVpnnIH4YoVyYB3hoIBgZNDnFMsITKKgxaQ4Ldbo7Ze06F2lMx2EgdZQ",
+      "image_credit": "BBC",
       "news": [
         {
-          "url": "https://athlonsports.com/soccer/how-to-watch-al-hazem-vs-al-nassr-online-free-start-time-live-streaming-tv-channels-usa-countries",
-          "title": "How to Watch Al Hazem vs. Al Nassr Online for Free? Start Time, Live Streaming & TV Channels in USA and Other Countries",
-          "publisher": "Athlon Sports",
+          "url": "https://www.bbc.com/sport/football/live/c3n0lgw017rlt",
+          "title": "Lincoln City v Wolverhampton Wanderers: Championship stats & head-to-head",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTchYxRv4tFIwHk374zO3QN3xmytBlJe6OsPTpRLN0tNMaCzOiKRxpmKVR4r5o"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1DjQCVpnnIH4YoVyYB3hoIBgZNDnFMsITKKgxaQ4Ldbo7Ze06F2lMx2EgdZQ"
         },
         {
-          "url": "https://khelnow.com/football/will-cristiano-ronaldo-play-al-hazem-vs-al-nassr-saudi-pro-league-202611",
-          "title": "Will Cristiano Ronaldo play tonight in Al Hazem vs Al Nassr Saudi Pro League 2026-27 clash?",
-          "publisher": "Khel Now",
+          "url": "https://www.reutersconnect.com/item/championship-lincoln-city-v-wolverhampton-wanderers/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX1VQMUVNQlMwWEZDUjI",
+          "title": "Licensable picture: Championship - Lincoln City v Wolverhampton Wanderers",
+          "publisher": "Reuters Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR8NmMIxo3GlisKcYStPovMLwWMmzLpTHzLZy-VMXpj2itNe6bxT7hYLJjTfmA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIFpYFri8mlV5awDHqyVnL9xvB8VZpR9cEtyYuR27jTUtCJEAO7HLsVwWeDT0"
         },
         {
-          "url": "https://onefootball.com/en/betting/predictions/al-hazm-vs-al-nassr-28-11-2026",
-          "title": "Al-Hazm vs Al-Nassr - Prediction, where to watch, kick-off time and line-ups 28-11-2026",
-          "publisher": "OneFootball",
+          "url": "https://www.weareimps.com/news/match-guide-imps-v-wolves",
+          "title": "Match guide | Imps v Wolves",
+          "publisher": "Lincoln City Football Club",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRR-pX-zop_AZpTncH8Yr-dWiLj6J8yU5F2ed7DZiLAws8aCTyH4J4yJdffI1k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg6sf-hVlCuxAmWi94WoR9UFL0ZW79vvm8aJVEUU2RXaq5tN0809xrxpUiC40"
+        }
+      ]
+    },
+    {
+      "query": "donald trump",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T12:10:00Z",
+      "related_news_urls": [
+        "https://www.nbcwashington.com/news/local/storm-blows-kennedy-center-tarp-down-showing-name-for-first-time-in-months/4188491/",
+        "https://www.nytimes.com/2026/11/27/us/politics/kennedy-center-trump-name-tarp.html",
+        "https://www.forbes.com/sites/saradorn/2026/11/27/kennedy-center-facade-without-trumps-name-exposed-for-first-time/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSh-dvVS-NQBcFHwmKzSHy6mZh6aKhcYW5gk2uOOWaqabwkQ-JNaOxKD3bfVDI",
+      "image_credit": "NBC4 Washington",
+      "news": [
+        {
+          "url": "https://www.nbcwashington.com/news/local/storm-blows-kennedy-center-tarp-down-showing-name-for-first-time-in-months/4188491/",
+          "title": "Storm blows down Kennedy Center tarp, showing name for first time in months",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSh-dvVS-NQBcFHwmKzSHy6mZh6aKhcYW5gk2uOOWaqabwkQ-JNaOxKD3bfVDI"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/27/us/politics/kennedy-center-trump-name-tarp.html",
+          "title": "For One Stormy Moment, D.C. Reveled in a Blank Wall Where Trump’s Name Once Hung",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf9FnZkXQJwkr4Sr7_XWz2YofYiOSYTpeJW-gtNZlI9J5ERpZuIfqU7PofZ7c"
+        },
+        {
+          "url": "https://www.forbes.com/sites/saradorn/2026/11/27/kennedy-center-facade-without-trumps-name-exposed-for-first-time/",
+          "title": "Storm Partially Blows Away Kennedy Center Tarp—Exposing Building Without Trump’s Name",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSupuMRae9eZ06FbBHvbgSm_hPCwppu_JBcaJBPEKmd5MKLoeSnKJmHuqumZDQ"
+        }
+      ]
+    },
+    {
+      "query": "davis cup 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T12:10:00Z",
+      "related_news_urls": [
+        "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
+        "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori",
+        "https://www.reuters.com/sports/tennis/musetti-puts-italy-ahead-davis-cup-semi-final-2026-11-27/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLu4M2reyvG-RItWWgvgIqAzqhyzOoTTVz_sF0xP6q7whcxv3LHN8x0wFOl0",
+      "image_credit": "ATP Tour",
+      "news": [
+        {
+          "url": "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
+          "title": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLu4M2reyvG-RItWWgvgIqAzqhyzOoTTVz_sF0xP6q7whcxv3LHN8x0wFOl0"
+        },
+        {
+          "url": "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori",
+          "title": "Volandri: “We were ready to die” for Italy win",
+          "publisher": "Davis Cup",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOSzM5Wu2WKmP3Tz5Lip7t610QcEJgdc6ScNGpD95Ck890gbN2QHYycT6E4Hs"
+        },
+        {
+          "url": "https://www.reuters.com/sports/tennis/musetti-puts-italy-ahead-davis-cup-semi-final-2026-11-27/",
+          "title": "Holders Italy edge out Czechs to reach Davis Cup final again",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvrA49zyGDVCPt5eu0Ng2H_iBYQnnb_jI_xA_kVNcESkSiWBlZWZvXaA6X8Ak"
+        }
+      ]
+    },
+    {
+      "query": "taiwan local elections",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T12:00:00Z",
+      "related_news_urls": [
+        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+        "https://focustaiwan.tw/politics/202611285002"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+          "title": "Ruling party set to make gains in Taiwan local elections watched by China",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
+        },
+        {
+          "url": "https://focustaiwan.tw/politics/202611285002",
+          "title": "LIVE UPDATE Taiwan local elections live results",
+          "publisher": "Focus Taiwan",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTctyKoGjTmTDVV7FtUQJHoVydMKiElrpeOZDzhO1Q01-T2KmP_JvlZdL80mac"
+        }
+      ]
+    },
+    {
+      "query": "cuba",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T12:00:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/26/americas/trump-cuba-midterms-rubio-analysis-intl-latam",
+        "https://www.gisreportsonline.com/r/end-of-cuban-revolution/",
+        "https://english.elpais.com/international/2026-11-23/whats-next-for-cubas-political-future-an-attack-by-trump-before-years-end-or-a-democratic-shift.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBGWsyD7uo3ra5FCud4wqtTzd0nHY8gFHv6DjtVIkKBTGAVIgSJNC2tJ57iY8",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/26/americas/trump-cuba-midterms-rubio-analysis-intl-latam",
+          "title": "Trump’s midterms debacle hasn’t dimmed his designs on Cuba. Or those of ‘President’ Rubio",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRBGWsyD7uo3ra5FCud4wqtTzd0nHY8gFHv6DjtVIkKBTGAVIgSJNC2tJ57iY8"
+        },
+        {
+          "url": "https://www.gisreportsonline.com/r/end-of-cuban-revolution/",
+          "title": "Washington engineering the end of Cuba’s revolution",
+          "publisher": "GIS Reports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYqHxvd_mb7bDXxL9rAofQEZ09EwDNJFcFq1E3zif8JOFtKWsaa-SzdkvLPRs"
+        },
+        {
+          "url": "https://english.elpais.com/international/2026-11-23/whats-next-for-cubas-political-future-an-attack-by-trump-before-years-end-or-a-democratic-shift.html",
+          "title": "What’s next for Cuba’s political future: an attack by Trump before year’s end or a democratic shift?",
+          "publisher": "EL PAÍS English",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaoD51FrXcA63nXiDZVZppvOI2cLyfziKymPeFiMGYnzvkffFlW7vN8Y1HkiI"
+        }
+      ]
+    },
+    {
+      "query": "target hours today",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T11:50:00Z",
+      "related_news_urls": [
+        "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
+        "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving",
+        "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ",
+      "image_credit": "NBC 5 Chicago",
+      "news": [
+        {
+          "url": "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
+          "title": "Target, Walmart, TJ Maxx: Store and mall hours for Black Friday in the Chicago area",
+          "publisher": "NBC 5 Chicago",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ"
+        },
+        {
+          "url": "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving",
+          "title": "Black Friday and Thanksgiving store open hours 2026: When major retailers open",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXf6mOPBJ3XH2SyxrkIaWRPGeiOuQRehdRndR-F9jG2fSoTJezBCJTVdiOeiQ"
+        },
+        {
+          "url": "https://www.cbsnews.com/news/thanksgiving-store-hours-open-closed-2026-black-friday/",
+          "title": "What's open and closed on Black Friday 2026? Hours for stores, restaurants, banks and more",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC4W4TwX_q7n7tC-10lJLrxMr_oCsy1Tcd6isVMo4WnIqh0r6iekMGzwpSDOQ"
+        }
+      ]
+    },
+    {
+      "query": "al-hazem vs al-nassr",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T11:40:00Z",
+      "related_news_urls": [
+        "https://www.tallahatchienews.ms/node/479441",
+        "https://twaslnews1.twaslnews.com/8435336/",
+        "https://www.goal.com/en-za/news/postecoglou-shows-his-hand-ronaldo-and-felix-lead-al-nassr-against-al-hazem/blt890f0367c2beed61"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0",
+      "image_credit": "tallahatchienews.ms",
+      "news": [
+        {
+          "url": "https://www.tallahatchienews.ms/node/479441",
+          "title": "[STREAM@TV] How to Watch Al Hazem vs. Al Nassr Online for Free Start Time, Live Streaming & TV Channels in USA and Other Countries",
+          "publisher": "tallahatchienews.ms",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0"
+        },
+        {
+          "url": "https://twaslnews1.twaslnews.com/8435336/",
+          "title": "Al Hazem Vs Al Nassr: Al-Nassr won 8 of last 10",
+          "publisher": "شبكة تواصل الإخبارية",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLtaOsrwJ1Mfrmub1BT7gvI3-sbbrD9FJm0mPqP4dwfQvPDOD8CGtPI8OD99I"
+        },
+        {
+          "url": "https://www.goal.com/en-za/news/postecoglou-shows-his-hand-ronaldo-and-felix-lead-al-nassr-against-al-hazem/blt890f0367c2beed61",
+          "title": "Postecoglou shows his hand: Ronaldo and Felix lead Al-Nassr against Al-Hazem",
+          "publisher": "Goal.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzU9wmoE38-huqFPU_wNSfFpnPaw5tSJiFQt6iFBa35sJSmOXgC7Kk8ejW6ew"
         }
       ]
     },
     {
       "query": "college football scores",
-      "approx_searches": "5000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-28T11:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-texas-am-west-virginia-vs-utah-and-more-on-black-friday-023307246.html",
-        "https://www.fanduel.com/research/9-best-college-football-bets-picks-odds-props-and-predictions-today-for-black-friday",
-        "https://www.foxnews.com/outkick-sports/black-friday-college-football-unusual-start-utsa-records-rare-back-to-back-safeties"
+        "https://www.espn.com/college-football/story/_/id/50613517/college-football-rivalry-week-trolls",
+        "https://www.espnlacrosse.com/2026/11/27/%F0%9F%98%88-silenced-the-12th-man-texas-jab-tops-best-trolls-of-cfb-rivalry-week/",
+        "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-texas-am-west-virginia-vs-utah-and-more-on-black-friday-023307246.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe9zeoHNCRwC3hV6g471FpTjgrxJA1CCR3hGKRkBJOBoigqueCUmoDEymfCXI",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-w1bfrUewyiRlq6eHeLMKGwWkAt4FMy7FNHVqY0Xs17By6MQrc-vkDJNQzaU",
+      "image_credit": "ESPN",
       "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50613517/college-football-rivalry-week-trolls",
+          "title": "Texas' jab at Texas A&M leads college football rivalry week trolls",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-w1bfrUewyiRlq6eHeLMKGwWkAt4FMy7FNHVqY0Xs17By6MQrc-vkDJNQzaU"
+        },
+        {
+          "url": "https://www.espnlacrosse.com/2026/11/27/%F0%9F%98%88-silenced-the-12th-man-texas-jab-tops-best-trolls-of-cfb-rivalry-week/",
+          "title": "‘Silenced the 12th man’: Texas’ jab tops best trolls of CFB rivalry week",
+          "publisher": "ESPN La Crosse 105.5",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDo_fn3-i7QWGZhy7QTuFZMaCy5K764P-IF_HRpbl5ExQyrubj2kjXpb2Rh7s"
+        },
         {
           "url": "https://sports.yahoo.com/college-football/live/college-football-live-updates-scores-texas-vs-texas-am-west-virginia-vs-utah-and-more-on-black-friday-023307246.html",
           "title": "College football live updates, scores: Texas vs. Texas A&M, West Virginia vs. Utah and more on Black Friday",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSe9zeoHNCRwC3hV6g471FpTjgrxJA1CCR3hGKRkBJOBoigqueCUmoDEymfCXI"
-        },
-        {
-          "url": "https://www.fanduel.com/research/9-best-college-football-bets-picks-odds-props-and-predictions-today-for-black-friday",
-          "title": "9 Best College Football Bets, Picks, Odds, Props and Predictions Today for Black Friday",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPWFFB9A6bm_mClrjW-2iXeE2Q1o0_AKhfPyz5dHlpa2eQOYrbR3FENmqrxxw"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/black-friday-college-football-unusual-start-utsa-records-rare-back-to-back-safeties",
-          "title": "Black Friday college football off to unusual start as UTSA records rare back-to-back safeties | OutKick",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR3s8QtEYeu-VJdBigUtOrFJUcLoNCso7V6nNw0dxXCC1zlLIRl5EtxjbGM7o0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRyip4PC77oA_twlNwGyuM9Igu-GEoxJ1M1ZThCDevOZap5XpiUorRBDtvGo60"
         }
       ]
     },
     {
       "query": "patch",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T11:40:00Z",
       "related_news_urls": [
         "https://patch.com/connecticut/newhaven/overnight-new-haven-man-was-struck-grasso-blvd-hit-run-driver-he-may-be",
@@ -143,216 +353,6 @@
           "publisher": "Manquepierda",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWhmmeyDaXz8QdhCUYKIdbqUXQWQFFHkxp9vwzVq7mn4O_BfxDuh5YLtwtuEA"
-        }
-      ]
-    },
-    {
-      "query": "connections today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T11:40:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
-          "title": "NYT Connections Answers for November 28, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40"
-        },
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 28, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/",
-          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 28, #1266",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        }
-      ]
-    },
-    {
-      "query": "nicole scherzinger",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T11:20:00Z",
-      "related_news_urls": [
-        "https://pagesix.com/2026/11/27/celebrity-news/nicole-scherzinger-and-fiance-thom-evans-split-after-7-years/",
-        "https://www.usatoday.com/story/entertainment/music/2026/11/27/nicole-scherzinger-thom-evans-breakup-split/92982972007/",
-        "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSlELqJ41OwoLGLXBh8kIyEc-lyEZoQzrXxMXtNZk538ujcl3XmVgP6ZiAeIY",
-      "image_credit": "Page Six",
-      "news": [
-        {
-          "url": "https://pagesix.com/2026/11/27/celebrity-news/nicole-scherzinger-and-fiance-thom-evans-split-after-7-years/",
-          "title": "Nicole Scherzinger and fiancé Thom Evans split after 7 years together as he shares heartbreaking statement",
-          "publisher": "Page Six",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQSlELqJ41OwoLGLXBh8kIyEc-lyEZoQzrXxMXtNZk538ujcl3XmVgP6ZiAeIY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/entertainment/music/2026/11/27/nicole-scherzinger-thom-evans-breakup-split/92982972007/",
-          "title": "Nicole Scherzinger and fiancé Thom Evans split after 3-year engagement",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUAxJutpmc07zpqhFIoqqQT7RDgRveppDoge8oHArWglH-6TkoOLVoci_HMU8"
-        },
-        {
-          "url": "https://people.com/nicole-scherzinger-and-fiance-thom-evans-end-engagement-after-7-years-together-12283133",
-          "title": "Nicole Scherzinger and Fiancé Thom Evans End Engagement After 7 Years Together",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHbmLdOJ6KtBMR_nezaEsrxVMame_PApd3OnrjSegY53zbDC5Nb51uRLavO3U"
-        }
-      ]
-    },
-    {
-      "query": "heather locklear",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T11:10:00Z",
-      "related_news_urls": [
-        "https://demokratis.co.id/en/locklear-lamas-thanksgiving-celebration",
-        "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html",
-        "https://cwibc.co.id/en/locklear-lamas-thanksgiving-celebration"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4",
-      "image_credit": "Demokratis.co.id",
-      "news": [
-        {
-          "url": "https://demokratis.co.id/en/locklear-lamas-thanksgiving-celebration",
-          "title": "Heather Locklear Celebrates Thanksgiving With Lorenzo Lamas",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4"
-        },
-        {
-          "url": "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html",
-          "title": "Heather Locklear Cozies Up With Boyfriend Lorenzo Lamas for Pre-Thanksgiving Outing With Friends in California: Photo",
-          "publisher": "Yahoo Lifestyle Canada",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAGQJnNcfDy46OnBoDjnmGbpSTG1okBHk31H6axuQyrEnIZXQA7Pdjvn_OL6s"
-        },
-        {
-          "url": "https://cwibc.co.id/en/locklear-lamas-thanksgiving-celebration",
-          "title": "Heather Locklear Celebrates Thanksgiving With Lorenzo Lamas",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBXWc0aNjFrJKj3vF1DIlRCHbyN3nAonb_KZJ5nu3jADx-Do2PLeHGZ-86MV4"
-        }
-      ]
-    },
-    {
-      "query": "pedro pascal",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T11:10:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/28/magazine/pedro-pascal-interview.html",
-        "https://suaragarut.id/en/pedro-pascal-hollywood-career",
-        "https://wikiofthrones.com/pedro-pascal-says-he-owes-his-career-to-game-of-thrones-i-owe-to-it"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsB3a_bnQxd3cadCbaIAfIsYKXPBgB2S2AscPQRJyz1k60plzCu7xdI-62_Q",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/28/magazine/pedro-pascal-interview.html",
-          "title": "Pedro Pascal’s Life Began With a Rupture. He’s Still Coming to Terms With It.",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnsB3a_bnQxd3cadCbaIAfIsYKXPBgB2S2AscPQRJyz1k60plzCu7xdI-62_Q"
-        },
-        {
-          "url": "https://suaragarut.id/en/pedro-pascal-hollywood-career",
-          "title": "Pedro Pascal Builds Hollywood Stardom After Years of Struggle",
-          "publisher": "SuaraGarut.ID",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Z4Sbxq3UlxssuFqFhz0TybMTt4oId_HSYTYYuf0HyDGDnGOePp-5EaY2VYE"
-        },
-        {
-          "url": "https://wikiofthrones.com/pedro-pascal-says-he-owes-his-career-to-game-of-thrones-i-owe-to-it",
-          "title": "Pedro Pascal says he owes his career to Game of Thrones: \"I owe to it\"",
-          "publisher": "Wiki of Thrones",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2d8ckGfj4vrPEXfnIrZP4u8Xd199XH9wZKQLCN3r44RDWF3r45BpkJF4OrKc"
-        }
-      ]
-    },
-    {
-      "query": "taiwan election results",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T11:10:00Z",
-      "related_news_urls": [
-        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
-        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
-        "https://focustaiwan.tw/politics/202611285002"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U",
-      "image_credit": "Reuters",
-      "news": [
-        {
-          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
-          "title": "Ruling party set to make gains in Taiwan local elections watched by China",
-          "publisher": "Reuters",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQtgkfJaA8i5HXpymYZHnwPmsW4UnhUWAdrQbBR-waUzoS129o99MG2MiU1C3U"
-        },
-        {
-          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
-          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
-        },
-        {
-          "url": "https://focustaiwan.tw/politics/202611285002",
-          "title": "LIVE UPDATE Taiwan local elections live results",
-          "publisher": "Focus Taiwan",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTctyKoGjTmTDVV7FtUQJHoVydMKiElrpeOZDzhO1Q01-T2KmP_JvlZdL80mac"
-        }
-      ]
-    },
-    {
-      "query": "alex bowman",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T11:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nascar/articles/alex-bowman-says-retires-because-182814695.html",
-        "https://heavy.com/sports/nascar/nascar-cup-series-driver-hits-back-at-critics-with-emotional-retirement-response/",
-        "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwydj9Eiu7V-BXBXmUgoQWCg9nojkDXrOwLllgGpy9pLJMwqjCh6dRDeAc0hQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nascar/articles/alex-bowman-says-retires-because-182814695.html",
-          "title": "Alex Bowman Says He Retires Because He Cares Too Much",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwydj9Eiu7V-BXBXmUgoQWCg9nojkDXrOwLllgGpy9pLJMwqjCh6dRDeAc0hQ"
-        },
-        {
-          "url": "https://heavy.com/sports/nascar/nascar-cup-series-driver-hits-back-at-critics-with-emotional-retirement-response/",
-          "title": "NASCAR Cup Series Driver Hits Back at Critics With Emotional Retirement Response",
-          "publisher": "Heavy.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjp9tQfZCMyth-t3UBd-YXyCAt1OTr3_6RJIyK-t6juvL83J3nBK8Km3ABKqA"
-        },
-        {
-          "url": "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles",
-          "title": "\"Part of the Reason That I'm Retiring\"- Alex Bowman Shuts Down Critics as He Makes Raw Admission on Cup Struggles",
-          "publisher": "NewsBreak: Local News & Alerts",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6AYA4kthU46B1dyGHzX1haLWR3JQU6qRnCPBFgCT2cea286NaENUtdb_edqE"
         }
       ]
     }
