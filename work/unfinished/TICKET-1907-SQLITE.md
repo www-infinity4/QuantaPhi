@@ -52,7 +52,7 @@ No actual model/provider or phone configuration was selected, no service was ins
 
 ## Continuation · existing mesh/Brain listener integration
 
-Fourth documented source session, branch `feat/brain-existing-mesh-host-1907-20261127`, rebased onto `999aa47ba3e7cf538b00b7fb030823b097fa284d` to preserve the merged #2157 Android fixture correction and #2158 phone-independent placement gates. Production coordinator lease/fence/task-session ID/expiry remain null; no production job is claimed by this branch. Acceptance percentage and remaining sessions are unknown. State: source tested, independent review and exact-head CI/source promotion pending. Final immutable receipts are appended to #1907 and #2110.
+Fourth documented source session, branch `feat/brain-existing-mesh-host-1907-20261127`, rebased onto `999aa47ba3e7cf538b00b7fb030823b097fa284d` to preserve the merged #2157 Android fixture correction and #2158 phone-independent placement gates. Production coordinator lease/fence/task-session ID/expiry remain null; no production job was claimed by this branch. Acceptance percentage and remaining sessions are unknown. Source merged through [#2160](https://github.com/www-infinity4/QuantaPhi/pull/2160), head `f81ee6dff810109fb0cd92165b20e44a978a53e6`, merge `61f6f346f53bc978e84d6adeaa5bc40df8318668`, reviewed/CI/merged tree `66ebfb188b3b721b72880cde0b2a1a0ad5573e02`. Nine returned head checks passed; [vault run 46048072295](https://github.com/www-infinity4/QuantaPhi/actions/runs/46048072295) verified Node 22.23.5, 100/100. Post-merge vault run `46048226477` passed. Final receipts are also on #1907/#2110. Host deployment remains unverified.
 
 Live staging `/health` at `https://brain-stage.quantaphi.org/health` rendered `{"ok":true,"service":"infinity-mesh-local-v1"}`. Read-only tunnel metadata showed one active connection and existing loopback ingress on port 18789. This proves the encrypted storage service answers through HTTPS; it does not prove inference, original owner authentication or signed job execution. No private route was authenticated and no device shell was accessed. The known host is not a missing URL; its existing private state/model configuration and authenticated adoption remain the live dependency.
 
@@ -62,9 +62,23 @@ Regression-first RED: the new suite failed because `createConfiguredMeshHost` wa
 
 Further boundary testing and independent review reproduced an unread-upload defect: a declared oversized signed request received an early response but left the raw request paused, stalling a later request/close. Fixed in the shared HTTP adapter with a byte-bounded bridge and connection disposal after early response. Both declared-length and chunked oversized signed builds now return the original 413 JSON and permit follow-up health, claim and close; the Worker body limits and authentication remain unchanged. The earlier 100-test result predates this added boundary assertion; final exact-tree test receipts are recorded separately.
 
-No source export, old-writer fence, real adapter configuration, phone installation, process replacement, DNS/tunnel change, runner-origin change or writer activation occurred. Next executable step: independent review and exact-head CI of this integration, then verify the existing private host configuration and a consistent source export/fence before controlled live adoption. Bubbles conversation routing and actual engineering acceptance remain open.
+No source export, old-writer fence, real adapter configuration, phone installation, process replacement, DNS/tunnel change, runner-origin change or writer activation occurred. Source review/CI/merge are verified; original private host configuration and a consistent source export/fence remain necessary before controlled live adoption. Bubbles conversation routing and actual engineering acceptance remain open.
 
 The mesh remains optional staging/recovery under #2110's repository-first placement decision. This general Node host integration can run on a verified owner-approved non-phone host; it does not make the phone the required production server. New subprocess fixtures use the corrected bounded monotonic readiness window and stop-before-directory-removal order from #2157. Native cloud Workers AI bindings are not evidence of an existing local model adapter; its real configuration/inference still requires verification.
+
+## Continuation · shared signed-runner inference cooldown
+
+Fifth source session in this checkpoint, branch `fix/brain-provider-cooldown-1907-20261127`, baseline `61f6f346f53bc978e84d6adeaa5bc40df8318668`. Lease/fence/task-session identity/expiry remain null. State: source tested, review/CI/promotion pending. Overall acceptance and remaining sessions remain unknown.
+
+Live read-only Worker metadata confirms the original `WRITER_AI` native AI binding, `CLOCK` and `WORK_DB` remain configured. A non-sensitive original-model probe to `@cf/openai/gpt-oss-120b` was rejected by the connected provider API with HTTP 429 / code 4006 and explicit daily free neuron exhaustion. No response/inference success was obtained, no new probe was submitted after that refusal, and no paid plan, model, credential or permission was changed. This is a distinct confirmed inference blocker; prior D1 read-limit evidence remains separate. It is not proof that every gateway 429 has this cause.
+
+Source inspection found per-lease quota backoff did not stop a different eligible job from claiming and repeating the same failed inference. Regression-first tests reproduced the missing shared marker, an unintended new claim, and a claim-preparation race. The existing Brain now records a shared signed-runner cooldown atomically with its still-fenced job, checks it before model calls and ordinary lease reservations, and leaves unrelated jobs queued. Existing source-only Pink verification remains eligible under unchanged authorization/dependency rules, with saved memory instead of new vector inference during the cooldown. Caller wording, generic rate limits and replaced leases cannot create this marker.
+
+The private SQLite regression closes/reopens the original host, verifies the same deadline and retained original lease, rejects an incorrect lease, leaves a different queued repair unchanged, and permits a real fixture-model retry only after the deadline. Expiry is not a recovery or completion receipt. Source-only review, native Brain and full vault test totals are recorded with the promoted immutable head in #1907. Other gateway/background inference paths remain outside this signed-runner guard.
+
+Independent review also reproduced an existing result-receipt path invoking a vector model despite the new cooldown. A strengthened regression first observed two provider calls instead of one. The result handler now saves the existing pending outcome row while omitting only its exhausted inference binding during cooldown; it retains the receipt and original job/source progress. Claim-time recall and result-memory embeddings are covered; independent background indexing remains outside this change.
+
+Actual provider recovery, private authoritative export/common consistency boundary and old-writer fence, approved non-phone inference/API host, live owner conversation, signed engineering and Android/offline-phone acceptance remain open. Next step: independent exact-source review and CI/source promotion, followed by the private export/fence and approved inference-host verification. No new cart, installation, subscription or production switch is part of this change.
 
 ## Continuation · ordinary source repairs through existing GitHub builder
 
@@ -119,3 +133,52 @@ its GitHub source/PR/CI receipts. The existing ticket backlog, rich/bot-team
 work, general chat transport, paid-account access and private state migration
 remain separately blocked/unverified. Preserve #2161/#2162/#2164 and the
 existing owner's jobs rather than treating this routing fix as full recovery.
+
+## Continuation · direct-builder quota guard · 2026-11-28 UTC
+
+Continues the same [#2161](https://github.com/www-infinity4/QuantaPhi/pull/2161),
+original head `d1915aa6fd3af77b5707c6f3d27ef7e90217b6a1`. Merged current main
+`7303c35458fd45e46a8cd58b3e49c59cd6f0bb14` into the isolated source branch,
+preserving both checkpoint histories and released frontend routing. That
+routing is merged through #2165 with 92 successful checks, three intentional
+skips, actual Pages deployment `46169297083`, bridge deployment `46169298299`,
+and public HTML readback of `20261128-direct-engineering1`. It is not an owner
+job, model inference or physical Android acceptance receipt.
+
+The original shared cooldown omitted direct GitHub inference. Direct assists
+now check the same marker before reservation, and original-model calls use
+the existing request-bound repository lease before and after inference. Only
+an actual model quota refusal under the still-valid lease can record the
+shared marker. Caller/GitHub/checkpoint text, generic rate limits and expired
+or replaced leases cannot create it. Known cooldown suppresses optional model
+routing; verified catalog matching and non-model metadata remain available.
+
+A direct refusal saves a stable request receipt with `retryScheduled:false`.
+Previously saved tool receipts remain intact, including a dispatch accepted
+before a later model refusal. A new request during cooldown records
+`mutationSubmitted:false` before any executor starts. Expiry does not replay
+direct work or establish recovery. New private-SQLite tests close/reopen the
+state, retain the original encrypted fixture record and marker deadline, and
+permit a new fenced fixture inference only after expiry.
+
+Local existing autopilot selection: 148/148; direct/timeout/routing and actual
+SQLite runtime/host/import/listener selection: 71/71; additional owner/work/
+credential/receipt boundaries: 73/73. These use synthetic provider/GitHub
+fixtures; no live inference or GitHub workflow dispatch was made by tests.
+Nine added direct regressions cover cross-lane cooldown, admission/replay,
+non-model access, generic failures, partial submitted work, misleading
+checkpoint text, optional suggestions, stale fencing and SQLite restart.
+
+State: source tested; independent exact-source review, updated-head CI,
+eligible routine source merge and guarded staging remain pending. One
+continued quota session; total roadmap progress and remaining sessions are
+unknown. Production coordinator lease/fence/task-session ID/expiry remain
+null. No new account, subscription, model, credential, owner grant, phone
+installation or production writer/origin activation. The November 27 quota
+refusal is historical evidence; current inference availability is unverified.
+
+Next executable action: independent Pink review and exact-head CI on #2161,
+then verify its immutable staging/source receipt and release gates. Actual
+owner job execution, original ticket claim, private authoritative export and
+common writer fence, paid-account resource access, approved inference host,
+and Android/offline-phone acceptance remain open.

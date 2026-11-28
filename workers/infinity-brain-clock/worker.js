@@ -72,6 +72,14 @@ function workersAiQuotaFailure(error,now=Date.now()){
 const providerQuotaError=quota=>Object.assign(Error(quota.error),quota,{status:429});
 const providerQuotaResponse=quota=>Response.json({ok:false,...quota},{status:429,
  headers:{'Cache-Control':'no-store','Retry-After':String(Math.max(1,Math.ceil((quota.retryAt-Date.now())/1000)))}});
+const RUNNER_PROVIDER_QUOTA='runner-provider-quota:cloudflare-workers-ai';
+function activeRunnerProviderQuota(value,now=Date.now()){
+ const next=new Date(now);next.setUTCHours(24,1,0,0);
+ if(value?.error!=='provider_quota_exhausted'||value.provider!=='cloudflare-workers-ai'||
+    !Number.isSafeInteger(value.retryAt)||value.retryAt<=now||value.retryAt>next.getTime())return null;
+ return {error:'provider_quota_exhausted',provider:'cloudflare-workers-ai',retryAt:value.retryAt,
+  retryScheduled:true,recoveryVerified:false};
+}
 function malformedRunnerCredential(request){
  const token=(request.headers.get('Authorization')||'').replace(/^Bearer /,''),parts=token.split('.');
  if(token.length>16000||parts.length!==3||parts.some(part=>!/^[A-Za-z0-9_-]+$/.test(part)))return true;
@@ -120,7 +128,7 @@ async function updateRunnerLease(storage,lease,update){
   const lockKey=current.lockKey||legacyRepositoryLockKey(lease.repository);
   const lock=await tx.get(lockKey);
   if(current.lockKey&&lock?.leaseId!==lease.leaseId)return null;
-  const next=update(current,now);
+  const next=await update(current,now,tx);
   await tx.put(lease.key,next);
   if(lock?.leaseId===lease.leaseId)await tx.put(lockKey,next);
   return next;
@@ -381,6 +389,8 @@ export class BrainClock extends DurableObject{
    mergeSha:tentative.mergeSha,testCount:tentative.testPaths.length});
  }
  async runnerModel(lease,model,options){
+  const shared=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+  if(shared)throw providerQuotaError(shared);
   if(lease.providerQuota?.error==='provider_quota_exhausted'&&lease.providerQuota.retryAt>Date.now())
    throw providerQuotaError(lease.providerQuota);
   try{return await this.env.WRITER_AI.run(model,options);}
@@ -389,7 +399,12 @@ export class BrainClock extends DurableObject{
    if(!quota)throw error;
    // Only an actual failed inference under this current fenced lease can
    // create the marker. A runner-supplied message cannot extend its backoff.
-   const saved=await updateRunnerLease(this.ctx.storage,lease,current=>({...current,providerQuota:quota,retryAt:quota.retryAt}));
+   const saved=await updateRunnerLease(this.ctx.storage,lease,async(current,now,tx)=>{
+    // The shared marker and current job fence commit together. Only an actual
+    // refusal under this still-valid lease creates it; runner text cannot.
+    await tx.put(RUNNER_PROVIDER_QUOTA,quota);
+    return {...current,providerQuota:quota,retryAt:quota.retryAt};
+   });
    if(!saved)throw Error('writer_lease_rejected');
    lease.providerQuota=quota;
    throw providerQuotaError(quota);
@@ -524,6 +539,7 @@ export class BrainClock extends DurableObject{
    const admission=filterActiveTickets(candidates,{requested,now:Date.now()});
    await this.ctx.storage.put('writer-queue-selector',{when:Date.now(),examined:admission.examined,deferred:admission.deferred.slice(0,40)});
    const claimBlockedBy={},dependencyStates={};
+   let providerCooldown=activeRunnerProviderQuota(await storage.get(RUNNER_PROVIDER_QUOTA)),quotaDeferred=null;
    for(const {ticket,jobs,job,context} of prioritizeReadOnlyPinkReviews(admission.allowed,{requested})){
     {
      if((engine?!/^www-infinity4\/[\w.-]+$/.test(job.repository||''):!supported(job))||['complete','deployed_verified','committed_unverified','merged_verified','superseded'].includes(job.status))continue;
@@ -551,18 +567,25 @@ export class BrainClock extends DurableObject{
       if(eligibility.reason==='dependency_pending')noteRunnerDependencyStatuses(dependencyStates,jobs,effectiveDependencies);
       continue;
      }
+     if(!sourceReview&&providerCooldown){
+      quotaDeferred=providerCooldown;noteRunnerSkip(claimBlockedBy,'provider_quota_exhausted');continue;
+     }
      const lockKey=repositoryLockKey(job.repository);
      const lease={adapterVersion:VERSION,key,lockKey,ticketId:ticket.id,jobId:job.id,revision,runId,runAttempt,runUrl,leaseId:crypto.randomUUID(),leaseUntil:0,status:'claimed',job:previous?.commitSha?{...job,progress:{...job.progress,commitSha:previous.commitSha}}:job};
      const quantIndex=await this.ctx.storage.get('job-quant-index')||[];
      const memories=[];for(const item of quantIndex.filter(q=>q.repository===job.repository).slice(0,5)){const q=await this.ctx.storage.get(item.id);if(q)memories.push(q);}
      let experientialMemory=[];
      try{
-       experientialMemory=await recallOutcomes(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
+       // Source-only verification can use saved memory without spending the
+       // same exhausted provider's embedding allocation.
+       experientialMemory=await recallOutcomes(providerCooldown?{...this.env,WRITER_AI:undefined}:this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
          repository:job.repository,query:ticket.request+' '+job.instructions,limit:6});
      }catch{/* A missing memory schema must not block existing jobs. */}
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
      const reserved=await storage.transaction(async tx=>{
       const now=Date.now();
+      const cooldown=activeRunnerProviderQuota(await tx.get(RUNNER_PROVIDER_QUOTA),now);
+      if(!sourceReview&&cooldown){quotaDeferred=cooldown;providerCooldown=cooldown;return false;}
       if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now)||
        await this.generatedRepairHasPendingPink(ticket.id,context,job,tx))return false;
       lease.leaseUntil=now+runnerLeaseDuration(engine);
@@ -571,7 +594,7 @@ export class BrainClock extends DurableObject{
       await tx.put(runKey,lease.leaseId);
       return true;
      });
-     if(!reserved){noteRunnerSkip(claimBlockedBy,'repository_lease_active');continue;}
+     if(!reserved){noteRunnerSkip(claimBlockedBy,quotaDeferred?'provider_quota_exhausted':'repository_lease_active');continue;}
      const claimedContext=JSON.parse(ticket.context_json);
      const claimedJob=claimedContext.color_jobs.find(j=>j.id===job.id);
      const claimedAt=new Date().toISOString();
@@ -612,6 +635,7 @@ export class BrainClock extends DurableObject{
     .length;
    if(malformedGraphs)
     throw Error('runner_queue_graph_unavailable');
+   if(quotaDeferred)return providerQuotaResponse(quotaDeferred);
    const idle=describeRunnerIdle({candidateCount:candidates.length,admission,
     adapterMatches,claimBlockedBy,dependencyStates,scanLimited:rows.scanLimited});
    await this.ctx.storage.put('writer-idle-summary:'+ (engine?'repository-engine':'interface-writer'),
@@ -806,7 +830,8 @@ export class BrainClock extends DurableObject{
   try{await this.payWork(quant,body.verificationToken||'')}catch(e){await this.ctx.storage.put('bot-work-credit-error',{when:Date.now(),error:String(e.message).slice(0,200),quantId:quant.id})}
   await this.projectRunnerResult(receipt);
   try{
-    const memory=await rememberOutcome(this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
+    const cooldown=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+    const memory=await rememberOutcome(cooldown?{...this.env,WRITER_AI:undefined}:this.env,{ownerHash:this.env.WRITER_OWNER_HASH,
       repository:lease.repository,ticketId:lease.ticketId,jobId:lease.jobId,
       status:body.status,task:lease.job.instructions,summary:message,commitSha:receipt.commitSha,occurredAt:Date.now()});
     await this.ctx.storage.put('last-episodic-memory',{when:Date.now(),status:memory.vector,jobId:lease.jobId});
@@ -1086,11 +1111,21 @@ export class BrainClock extends DurableObject{
     await this.ctx.storage.put(cacheKey,catalog);
    }
    if(body.action==='list_repositories')return {ok:true,status:'repository_catalog_read',repositories:catalog.repositories,complete:true};
-   return suggestRepositories(runtime,body.request,catalog.repositories);
+   const quota=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+   return suggestRepositories(quota?{...runtime,WRITER_AI:undefined}:runtime,body.request,catalog.repositories);
   }
   const repository=validateRepository(body.repository),leaseKey=repositoryLockKey(repository);
   const initial=await this.ctx.blockConcurrencyWhile(async()=>{
    const prior=await this.ctx.storage.get(key);if(prior)return {existing:prior};
+   if(body.action==='assist'){
+    const quota=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+    if(quota){
+     const record={ok:false,status:'blocked',repository,action:body.action,requestId:body.requestId,
+      receipts:[],...quota,retryScheduled:false,mutationSubmitted:false,finishedAt:new Date().toISOString()};
+     await this.ctx.storage.put(key,record);
+     return {existing:record};
+    }
+   }
    if(await repositoryIsLocked(this.ctx.storage,repository,Date.now()))return {existing:{ok:false,status:'blocked',error:'repository_job_running',repository}};
    let bitContext=null;
    if(this.env.BUBBLE_BITS_ENABLED==='1'){
@@ -1108,6 +1143,31 @@ export class BrainClock extends DurableObject{
   // The same ID is used to inspect results after a phone/network timeout.
   this.ctx.waitUntil(this.completeDirectGithub(body,record,key,leaseKey));
   return record;
+ }
+ async directModel(body,leaseKey,model,options){
+  const shared=activeRunnerProviderQuota(await this.ctx.storage.get(RUNNER_PROVIDER_QUOTA));
+  if(shared)throw providerQuotaError(shared);
+  const current=await this.ctx.storage.get(leaseKey);
+  if(current?.directRequestId!==body.requestId||!Number.isSafeInteger(current.leaseUntil)||current.leaseUntil<=Date.now())throw Error('writer_lease_rejected');
+  let answer;
+  try{answer=await this.env.WRITER_AI.run(model,options);}
+  catch(error){
+   const quota=workersAiQuotaFailure(error);
+   if(!quota)throw error;
+   // Only an actual inference refusal under this still-current direct lease
+   // may pause the shared provider. No source/caller/tool error can create it.
+   const saved=await this.ctx.storage.transaction(async tx=>{
+    const held=await tx.get(leaseKey);
+    if(held?.directRequestId!==body.requestId||!Number.isSafeInteger(held.leaseUntil)||held.leaseUntil<=Date.now())return false;
+    await tx.put(RUNNER_PROVIDER_QUOTA,quota);
+    return true;
+   });
+   if(!saved)throw Error('writer_lease_rejected');
+   throw providerQuotaError(quota);
+  }
+  const held=await this.ctx.storage.get(leaseKey);
+  if(held?.directRequestId!==body.requestId||!Number.isSafeInteger(held.leaseUntil)||held.leaseUntil<=Date.now())throw Error('writer_lease_rejected');
+  return answer;
  }
  async completeDirectGithub(body,record,key,leaseKey){
   const repository=record.repository;
@@ -1149,14 +1209,18 @@ export class BrainClock extends DurableObject{
   };
   try{
    const runtime=await githubEnvironment(this.env,this.ctx.storage);
-   const result=body.action==='assist'?await directGithubAgent(runtime,body,fetch,saveReceipt):await githubOperation(runtime,body);
+   const modelRuntime=body.action==='assist'&&runtime.WRITER_AI?{...runtime,
+    WRITER_AI:{run:(model,options)=>this.directModel(body,leaseKey,model,options)}}:runtime;
+   const result=body.action==='assist'?await directGithubAgent(modelRuntime,body,fetch,saveReceipt):await githubOperation(runtime,body);
    if(body.action!=='assist')await saveReceipt(result);
    const {receipts,...metadata}=result;
    Object.assign(record,metadata,{status:metadata.status||(metadata.ok?'complete':'blocked'),finishedAt:new Date().toISOString()});
    await this.ctx.storage.put(key,record);
    await this.emit('bubbles','black-box','direct GitHub outcome',repository+' · '+record.status+'. GitHub receipts shared with color bots; no deployment inferred.');
   }catch(error){
-   Object.assign(record,{ok:false,status:'blocked',error:String(error.message).slice(0,180),finishedAt:new Date().toISOString()});
+   const quota=activeRunnerProviderQuota(error);
+   Object.assign(record,{ok:false,status:'blocked',error:quota?.error||String(error.message).slice(0,180),
+    ...(quota?{...quota,retryScheduled:false}:{}),finishedAt:new Date().toISOString()});
    await this.ctx.storage.put(key,record);
   }finally{
    await this.ctx.storage.transaction(async tx=>{

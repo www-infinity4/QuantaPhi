@@ -76,7 +76,7 @@ test('model failure never forges a selected repo or a job receipt',async()=>{
 test('Brain and floating Android shared Bubbles UI use authenticated catalog route',()=>{
  const brain=readFileSync('workers/infinity-brain-clock/worker.js','utf8');
  const ui=readFileSync('bubbles-ai.js','utf8');
- assert.match(brain,/suggestRepositories\(runtime,body.request,catalog.repositories\)/);
+ assert.match(brain,/suggestRepositories\(quota\?\{\.\.\.runtime,WRITER_AI:undefined\}:runtime,body.request,catalog.repositories\)/);
  assert.match(brain,/github-owner-catalog-v1/);
  assert.match(brain,/ownerAuthorized\(env,token\)/);
  assert.match(ui,/action:'suggest_repositories'/);
