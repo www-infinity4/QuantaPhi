@@ -3,330 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T11:01:13.618406Z",
+  "checked_at": "2026-11-28T11:31:14.273423Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "what time does the macy's parade start",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T10:20:00Z",
-      "related_news_urls": [
-        "https://abc7ny.com/story/what-time-does-macys-thanksgiving-parade-start/20092509/",
-        "https://apnews.com/article/macys-thanksgiving-parade-saturday-3462aace9e773eca60dcf527afdf4a39",
-        "https://www.bbc.com/news/articles/ckd71ypy9e8eo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQla3T0OE7vpUUzjsjS6ifJWvQiY87XOuDvF1HJFp-Gz0GWSqv26KoNdwp8W1o",
-      "image_credit": "ABC7 New York",
-      "news": [
-        {
-          "url": "https://abc7ny.com/story/what-time-does-macys-thanksgiving-parade-start/20092509/",
-          "title": "Macy's Thanksgiving Day Parade: What to know about Saturday's celebration",
-          "publisher": "ABC7 New York",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQla3T0OE7vpUUzjsjS6ifJWvQiY87XOuDvF1HJFp-Gz0GWSqv26KoNdwp8W1o"
-        },
-        {
-          "url": "https://apnews.com/article/macys-thanksgiving-parade-saturday-3462aace9e773eca60dcf527afdf4a39",
-          "title": "Postponed Macy's 100th Thanksgiving Day parade gets a do-over with 100 balloons and 1,000 clowns",
-          "publisher": "AP News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlv7FrWmiLR5LnyAA5f7i8CW26GeBkOEt3wYSm_RyvjDdKSElOv06j49skyWk"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/ckd71ypy9e8eo",
-          "title": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH43bTNr0vnRwYWLlz3r6hA4jn-Zeg362Yz-RpSgWtSCUDX-PLcR7pLNWgOd0"
-        }
-      ]
-    },
-    {
-      "query": "pacifica california",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T10:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
-        "https://www.marinij.com/2026/11/27/marin-officials-absorb-lessons-from-tidal-defense-before-next-torrent/",
-        "https://abcnews.com/US/king-tides-pummel-california-coast-leaders-fear/story?id=138466654"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeDDJDacgpD6fejuJUSZ6w1lwfGiF3qU0pxBZTlv7PGGJPl2LQqwUxnYxP28w",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
-          "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeDDJDacgpD6fejuJUSZ6w1lwfGiF3qU0pxBZTlv7PGGJPl2LQqwUxnYxP28w"
-        },
-        {
-          "url": "https://www.marinij.com/2026/11/27/marin-officials-absorb-lessons-from-tidal-defense-before-next-torrent/",
-          "title": "Marin officials absorb lessons from tidal defense before next torrent",
-          "publisher": "Marin Independent Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTd4WMp8qWt2WHZQLFXpBlJ6dhmAvtPPt0avVpJRhGhGK765K--RUkBPfpsal0"
-        },
-        {
-          "url": "https://abcnews.com/US/king-tides-pummel-california-coast-leaders-fear/story?id=138466654",
-          "title": "As king tides pummel California coast, leaders fear what's next",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjU9PJzJzBvnSi34Uc9ODParFoE4gs3ccFbCjPEQxUm_MIMdOkyirAfNDzV-I"
-        }
-      ]
-    },
-    {
-      "query": "john wick",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T10:10:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66130346/?ref_=ttnw_art_perm",
-        "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
-        "https://www.hollywoodoutbreak.com/2026/11/27/keanu-reeves-isnt-finished-with-john-wick-just-yet/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRRFv-U1AfVkYLjTcK8TsyHdJR2xZy3CGPkkRsyM9_9Oo-lwspXp2_R5HrIp4",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66130346/?ref_=ttnw_art_perm",
-          "title": "Keanu Reeves Isn’t finished with ‘John Wick’ Just Yet",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRRFv-U1AfVkYLjTcK8TsyHdJR2xZy3CGPkkRsyM9_9Oo-lwspXp2_R5HrIp4"
-        },
-        {
-          "url": "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
-          "title": "John Wick Returning In New Prequel Game Set Years Before The Impossible Task",
-          "publisher": "OpenCritic",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvux571P0qcwnWEukk9vNZk7XAkpcFavC4LJjUtUofqDUbHxlHCFv9-DJzlzg"
-        },
-        {
-          "url": "https://www.hollywoodoutbreak.com/2026/11/27/keanu-reeves-isnt-finished-with-john-wick-just-yet/",
-          "title": "Keanu Reeves Isn’t finished with ‘John Wick’ Just Yet",
-          "publisher": "Hollywood Outbreak",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc60lUERiTIFquNz5uDZw7Wm63PG5qjYZfVEkvi5cs2_9Uq6hQ5hQ-hl5Xa1E"
-        }
-      ]
-    },
-    {
-      "query": "nyt connections hints",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T10:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
-        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
-        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
-          "title": "NYT Connections Answers for November 28, 2026",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40"
-        },
-        {
-          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
-          "title": "NYT Connections hints today: Meanings for each word for Nov. 28, 2026",
-          "publisher": "Mashable",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
-        },
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/",
-          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 28, #1266",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
-        }
-      ]
-    },
-    {
-      "query": "car accident lawyer",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T09:50:00Z",
-      "related_news_urls": [
-        "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
-        "https://www.thehypemagazine.com/2026/11/27/how-a-car-crash-lawyer-handles-suburban-collision-claims-quickly/",
-        "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo",
-      "image_credit": "The Auto Channel",
-      "news": [
-        {
-          "url": "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
-          "title": "Why Witness Accounts Can Make a Difference in Car Crash Claims",
-          "publisher": "The Auto Channel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo"
-        },
-        {
-          "url": "https://www.thehypemagazine.com/2026/11/27/how-a-car-crash-lawyer-handles-suburban-collision-claims-quickly/",
-          "title": "How a Car Crash Lawyer Handles Suburban Collision Claims Quickly",
-          "publisher": "The Hype Magazine",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPJT2AXy1jwotwPtZbkoE-C1eJdBazYrvvqz5fO_fYDnwmLLpaNPxJoJSwXk"
-        },
-        {
-          "url": "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/",
-          "title": "What Compensation Can You Recover After an Auto Collision?",
-          "publisher": "The Weekly Driver",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fGL5xTS9nWJ1xFIefMdcxO3XvtRQYZLJxrQXb0M0P9xCDmnOC5RheQJB4sM"
-        }
-      ]
-    },
-    {
-      "query": "台湾选举",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T09:20:00Z",
-      "related_news_urls": [
-        "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/simp",
-        "https://www.zaobao.com.sg/news/china/story20261128-10071149",
-        "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo",
-      "image_credit": "BBC",
-      "news": [
-        {
-          "url": "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/simp",
-          "title": "台湾“九合一”选举开票结果实时更新",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo"
-        },
-        {
-          "url": "https://www.zaobao.com.sg/news/china/story20261128-10071149",
-          "title": "沈伯洋携妻带女投票后吃早餐",
-          "publisher": "联合早报",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXT6__cX91p1tkcqdSRuRlqwS4E2tFWJDaAaZsHxWlk7zjHqqx-9v5_qdLzuw"
-        },
-        {
-          "url": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9",
-          "title": "台湾九合一地方选举：台当局警告选举面临北京干预风险",
-          "publisher": "RFI",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALU9Xs1K8D9vG-Kgz_2oWJY2lYh-NhD5MVDfGbikKVJNEZRlVRC7l4M6Ropg"
-        }
-      ]
-    },
-    {
-      "query": "symbols",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T09:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
-        "https://www.cbc.ca/player/play/video/9.7439231",
-        "https://www.newsweek.com/canadas-supreme-court-upholds-muslim-headscarf-ban-12773683"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENXTS6pYkzsMrvBY5fQEwqmuxM_gq7WoZD1mIcr5Zg10_FEJoSRCddSiORDQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
-          "title": "Quebec Can Keep Its Ban on Religious Symbols, Canada’s Top Court Rules",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENXTS6pYkzsMrvBY5fQEwqmuxM_gq7WoZD1mIcr5Zg10_FEJoSRCddSiORDQ"
-        },
-        {
-          "url": "https://www.cbc.ca/player/play/video/9.7439231",
-          "title": "Bill 21 is 'legislative racism' Premier Kinew says",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6zPZg5HO9CWU_dIYN2at4zW6hBh7wiCbZm9YJC72sWnXrp3Jn5HEBax8YkNk"
-        },
-        {
-          "url": "https://www.newsweek.com/canadas-supreme-court-upholds-muslim-headscarf-ban-12773683",
-          "title": "Canada’s Supreme Court Upholds Muslim Headscarf Ban in Landmark Ruling",
-          "publisher": "Newsweek",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPam0KExhibmwx_2XoQpKTmyPWDfyUvB5zrm7H9BM2BBOg8-f5o639jw8ykN4"
-        }
-      ]
-    },
-    {
-      "query": "台灣開票",
+      "query": "heather locklear",
       "approx_searches": "200+",
-      "published_at": "2026-11-28T09:10:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
+      "published_at": "2026-11-28T11:10:00Z",
+      "related_news_urls": [
+        "https://www.tvinsider.com/1305922/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
+        "https://www.remindmagazine.com/gallery/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
+        "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5g1WfgiTf7DbrssSMFifO5RBJul47ALkw1NHbaqIBgNaFtb8D0V_DeoDL7A",
+      "image_credit": "TV Insider",
+      "news": [
+        {
+          "url": "https://www.tvinsider.com/1305922/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
+          "title": "The Hollywood Show Chicago: Heather Locklear, Erin Murphy, Casts of 'The Love Boat,' 'Goodefellas,' & More",
+          "publisher": "TV Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5g1WfgiTf7DbrssSMFifO5RBJul47ALkw1NHbaqIBgNaFtb8D0V_DeoDL7A"
+        },
+        {
+          "url": "https://www.remindmagazine.com/gallery/hollywood-show-chicago-heather-locklear-erin-murphy-love-boat-goodfellas-photos/",
+          "title": "The Hollywood Show Chicago: Heather Locklear, Erin Murphy, Casts of 'The Love Boat,' 'Goodfellas,' & More (PHOTOS)",
+          "publisher": "Remind Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg7UCB2Ok33snbVsk_a7Jr4kDLgbjFLGOezC-0erlfKq_qHdJ45-NQvjuPHe8"
+        },
+        {
+          "url": "https://ca.style.yahoo.com/heather-locklear-cozies-boyfriend-lorenzo-225509218.html",
+          "title": "Heather Locklear Cozies Up With Boyfriend Lorenzo Lamas for Pre-Thanksgiving Outing With Friends in California: Photo",
+          "publisher": "Yahoo Lifestyle Canada",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTAGQJnNcfDy46OnBoDjnmGbpSTG1okBHk31H6axuQyrEnIZXQA7Pdjvn_OL6s"
+        }
+      ]
     },
     {
-      "query": "nvda stock performance peak decline",
+      "query": "taiwan election results",
       "approx_searches": "200+",
-      "published_at": "2026-11-28T09:10:00Z",
+      "published_at": "2026-11-28T11:10:00Z",
       "related_news_urls": [
-        "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-still-paying-the-price-for-the-jensen-huang-ceo-drama-124902053.html",
-        "https://www.reuters.com/commentary/reuters-open-interest/icarus-stock-nvidia-sends-chill-us-savers-2026-11-25/",
-        "https://www.fool.com/investing/2026/11/24/nvidia-lost-275-trillion-in-45-days-more-than-496-sp-500-companies-wager-on-quick-bounce-disappointed/"
+        "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+        "https://www.scmp.com/news/china/politics/article/3376134/kmt-claims-first-win-taiwan-local-elections-chen-yu-jen-takes-quemoy",
+        "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAHZCcNz__Vla9SOQxLE0xg7dOFcRLOULJ8nuzWI6njJ0vXalioD3gyz4SjRM",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM",
+      "image_credit": "Reuters",
+      "news": [
+        {
+          "url": "https://www.reuters.com/world/china/taiwan-votes-key-local-elections-china-looks-2026-11-28/",
+          "title": "Ruling party set to make gains in Taiwan local elections watched by China",
+          "publisher": "Reuters",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR20uirRzsIW9Lcgd1QaWT3GkSu-vA2kX_Yw-E6IeKX8dcoYLKuNKYTJjx4YjM"
+        },
+        {
+          "url": "https://www.scmp.com/news/china/politics/article/3376134/kmt-claims-first-win-taiwan-local-elections-chen-yu-jen-takes-quemoy",
+          "title": "KMT claims first win of Taiwan local elections as Chen Yu-jen takes Quemoy",
+          "publisher": "South China Morning Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGrsb3oP4e8MMxk6aL9jkU-OJkBfLNkoiVvMBVLA5QwJqgtpEgjKO-X5nhO30"
+        },
+        {
+          "url": "https://www.nytimes.com/2026/11/27/world/asia/puma-shen-taiwan-election-china.html",
+          "title": "Puma Shen, Critic of China, Could be the Next Mayor of Taipei",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQj8tpPLaWBAyz0sxOIBHGDPwuSHbZzR8R6CwPtxLfMAbMOSDG0pwXMd2w_dkk"
+        }
+      ]
+    },
+    {
+      "query": "pedro pascal",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T11:10:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/28/magazine/pedro-pascal-interview.html",
+        "https://suaragarut.id/en/pedro-pascal-hollywood-career",
+        "https://wikiofthrones.com/pedro-pascal-says-he-owes-his-career-to-game-of-thrones-i-owe-to-it"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFHHXAo4Dq8ArfDYyga4QTTY0pGIVhCjgWZUKTGv_C08WVDpbSU3QYGSFRdo",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/28/magazine/pedro-pascal-interview.html",
+          "title": "Pedro Pascal’s Life Began With a Rupture. He’s Still Coming to Terms With It.",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPFHHXAo4Dq8ArfDYyga4QTTY0pGIVhCjgWZUKTGv_C08WVDpbSU3QYGSFRdo"
+        },
+        {
+          "url": "https://suaragarut.id/en/pedro-pascal-hollywood-career",
+          "title": "Pedro Pascal Builds Hollywood Stardom After Years of Struggle",
+          "publisher": "SuaraGarut.ID",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS3Z4Sbxq3UlxssuFqFhz0TybMTt4oId_HSYTYYuf0HyDGDnGOePp-5EaY2VYE"
+        },
+        {
+          "url": "https://wikiofthrones.com/pedro-pascal-says-he-owes-his-career-to-game-of-thrones-i-owe-to-it",
+          "title": "Pedro Pascal says he owes his career to Game of Thrones: \"I owe to it\"",
+          "publisher": "Wiki of Thrones",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2d8ckGfj4vrPEXfnIrZP4u8Xd199XH9wZKQLCN3r44RDWF3r45BpkJF4OrKc"
+        }
+      ]
+    },
+    {
+      "query": "alex bowman",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T11:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nascar/articles/alex-bowman-says-retires-because-182814695.html",
+        "https://heavy.com/sports/nascar/nascar-cup-series-driver-hits-back-at-critics-with-emotional-retirement-response/",
+        "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwydj9Eiu7V-BXBXmUgoQWCg9nojkDXrOwLllgGpy9pLJMwqjCh6dRDeAc0hQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nascar/articles/alex-bowman-says-retires-because-182814695.html",
+          "title": "Alex Bowman Says He Retires Because He Cares Too Much",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwydj9Eiu7V-BXBXmUgoQWCg9nojkDXrOwLllgGpy9pLJMwqjCh6dRDeAc0hQ"
+        },
+        {
+          "url": "https://heavy.com/sports/nascar/nascar-cup-series-driver-hits-back-at-critics-with-emotional-retirement-response/",
+          "title": "NASCAR Cup Series Driver Hits Back at Critics With Emotional Retirement Response",
+          "publisher": "Heavy.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTjp9tQfZCMyth-t3UBd-YXyCAt1OTr3_6RJIyK-t6juvL83J3nBK8Km3ABKqA"
+        },
+        {
+          "url": "https://www.newsbreak.com/essentially-sports-363861119/5029538426691-part-of-the-reason-that-i-m-retiring-alex-bowman-shuts-down-critics-as-he-makes-raw-admission-on-cup-struggles",
+          "title": "\"Part of the Reason That I'm Retiring\"- Alex Bowman Shuts Down Critics as He Makes Raw Admission on Cup Struggles",
+          "publisher": "NewsBreak: Local News & Alerts",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6AYA4kthU46B1dyGHzX1haLWR3JQU6qRnCPBFgCT2cea286NaENUtdb_edqE"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 graphics downgrade",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T11:00:00Z",
+      "related_news_urls": [
+        "https://www.digitalfoundry.net/features/how-gta-6s-graphics-evolved-from-pre-release-trailers-to-the-final-game",
+        "https://en.gamegpu.com/news/igry/sravnenie-gta-6-s-rannimi-trejlerami-pokazalo-sushchestvennoe-razlichiya-v-grafike",
+        "https://foro3d.com/en/2026/noviembre/gta-vi-los-trailers-y-el-juego-final-no-siempre-coinciden.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKXq1pfWAeFlJH0TohAY83uHPPkyybDIMyQAz5hDawUaqRMzrmujcOZm7VlTQ",
+      "image_credit": "Digital Foundry",
+      "news": [
+        {
+          "url": "https://www.digitalfoundry.net/features/how-gta-6s-graphics-evolved-from-pre-release-trailers-to-the-final-game",
+          "title": "How GTA 6's Graphics Evolved from Pre-Release Trailers to the Final Game",
+          "publisher": "Digital Foundry",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRKXq1pfWAeFlJH0TohAY83uHPPkyybDIMyQAz5hDawUaqRMzrmujcOZm7VlTQ"
+        },
+        {
+          "url": "https://en.gamegpu.com/news/igry/sravnenie-gta-6-s-rannimi-trejlerami-pokazalo-sushchestvennoe-razlichiya-v-grafike",
+          "title": "Comparison of GTA 6 with early trailers revealed significant differences in graphics",
+          "publisher": "GameGPU",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDUKMJ4Ts622j06r8KIZkHtbs8MuzAx66ReZ1zZJ0pbYTxiI6Zo1QUEttZTI4"
+        },
+        {
+          "url": "https://foro3d.com/en/2026/noviembre/gta-vi-los-trailers-y-el-juego-final-no-siempre-coinciden.html",
+          "title": "GTA VI: trailers and the final game do not always match",
+          "publisher": "Foro3D",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfYM2sXmMIQabUPGZYbed-WgGUwzfTts9xXXn1hrF2w816KFTYm1gki7oHGwc"
+        }
+      ]
+    },
+    {
+      "query": "osu vs michigan",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T11:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/michigan-vs-ohio-state-picks-100530411.html",
+        "https://sports.yahoo.com/college-football/articles/channel-ohio-state-football-game-100236362.html",
+        "https://www.nytimes.com/athletic/7807068/2026/11/24/college-football-top-rivalries-now-michigan-ohio-state-2026/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmiOSqhjAnQoJvBq50BiEHbvWCOW1r1E7NR1krA5YQBcxdVWAlLP0x-tTaLyQ",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/michigan-vs-ohio-state-picks-100530411.html",
+          "title": "Michigan vs Ohio State picks: Who can salvage season with win in The Game?",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmiOSqhjAnQoJvBq50BiEHbvWCOW1r1E7NR1krA5YQBcxdVWAlLP0x-tTaLyQ"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/channel-ohio-state-football-game-100236362.html",
+          "title": "What channel is the Ohio State football game on? How to watch OSU play",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTB3CtMd3mYdnH4zBB03XWtme3gd6i2piDF3zRYws4-MbmETX3THgy5Jyd9Qdg"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7807068/2026/11/24/college-football-top-rivalries-now-michigan-ohio-state-2026/",
+          "title": "Ranking college football’s top 25 rivalries right now. Is Michigan-Ohio State still No. 1? - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTaYqRwXOc6HpFtQiI92ETORUKJJLBN9mj8xHrJ8rRlBCcmmxV7bLxsmrRnNxY"
+        }
+      ]
+    },
+    {
+      "query": "jetblue new fort lauderdale routes",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T10:50:00Z",
+      "related_news_urls": [
+        "https://finance.yahoo.com/markets/stocks/articles/jetblue-airways-jblu-could-11-051441579.html",
+        "https://www.bizjournals.com/southflorida/news/2026/11/20/two-airlines-expand-fll-service-after-spirit-ends.html",
+        "https://www.caymancompass.com/2026/11/21/jetblue-to-start-daily-fort-lauderdale-cayman-flights-in-february/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1AVnpDTxQr9mFpaB9W5sh3H4di6bzZ9RPnZa7LF4yDgGwbDbnEsZOvdnrDs",
       "image_credit": "Yahoo Finance",
       "news": [
         {
-          "url": "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-still-paying-the-price-for-the-jensen-huang-ceo-drama-124902053.html",
-          "title": "Nvidia stock is still paying the price for the Jensen Huang CEO drama",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/jetblue-airways-jblu-could-11-051441579.html",
+          "title": "JetBlue Airways (JBLU) Could Be 11% Below Fair Value As Fort Lauderdale Routes Expand",
           "publisher": "Yahoo Finance",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAHZCcNz__Vla9SOQxLE0xg7dOFcRLOULJ8nuzWI6njJ0vXalioD3gyz4SjRM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTG1AVnpDTxQr9mFpaB9W5sh3H4di6bzZ9RPnZa7LF4yDgGwbDbnEsZOvdnrDs"
         },
         {
-          "url": "https://www.reuters.com/commentary/reuters-open-interest/icarus-stock-nvidia-sends-chill-us-savers-2026-11-25/",
-          "title": "COMMENTARY: Icarus stock Nvidia sends chill to US savers",
-          "publisher": "Reuters",
+          "url": "https://www.bizjournals.com/southflorida/news/2026/11/20/two-airlines-expand-fll-service-after-spirit-ends.html",
+          "title": "Two airlines expand FLL service six months after Spirit shutdown",
+          "publisher": "The Business Journals",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPR1UQJL-clPtiq8h0VC_7E16fCHNBq4Ndv8yalN0lFLtHcFnPXOaITNsd0E"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQqDpD0VB9fv-hJ2pcmq9W-pWwlkJx3crvl7Z9X-o8TQrRjv6ESseI1R6KqNG4"
         },
         {
-          "url": "https://www.fool.com/investing/2026/11/24/nvidia-lost-275-trillion-in-45-days-more-than-496-sp-500-companies-wager-on-quick-bounce-disappointed/",
-          "title": "Nvidia Lost $2.75 Trillion in 45 Days -- More Than the Market Cap of 496 S&P 500 Companies -- and Investors Wagering on a Quick Bounce to New Highs May Be Disappointed",
-          "publisher": "The Motley Fool",
+          "url": "https://www.caymancompass.com/2026/11/21/jetblue-to-start-daily-fort-lauderdale-cayman-flights-in-february/",
+          "title": "JetBlue to start daily Fort Lauderdale-Cayman flights in February",
+          "publisher": "Cayman Compass",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5vuIv7Yazkn3id6uwm79aF_Q10u4w_TxHuoVWa4_j4_y15FKEdQrFFQHjnoM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbrTAKlO2CfPIK2Hj0NBciWdOTpABJ-LvjPGLfO61DfX6MFnfhL6nrKrt8A60"
         }
       ]
     },
     {
-      "query": "sabrina carpenter",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T09:00:00Z",
+      "query": "what time does target open today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-28T10:50:00Z",
       "related_news_urls": [
-        "https://people.com/amy-schumer-jokes-she-resembles-sabrina-carpenter-with-new-bangs-12283185",
-        "https://pagesix.com/2026/11/26/style/amy-schumer-debuts-bangs-haircut-hilariously-channels-sabrina-carpenter/",
-        "https://demokratis.co.id/en/amy-schumer-bangs-sabrina-comparison"
+        "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
+        "https://www.abc10.com/article/news/nation-world/are-banks-open-black-friday-usps-mail-delivery-whats-open-closed/507-c231a8f7-49ad-4c5a-876d-13ab585e49e7",
+        "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-0_nEiAfYwi9Ov0oKJ5KnVZIl69QetGqgEtqg5rmkGmGRiQZgqtbfobyTI",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ",
+      "image_credit": "NBC 5 Chicago",
       "news": [
         {
-          "url": "https://people.com/amy-schumer-jokes-she-resembles-sabrina-carpenter-with-new-bangs-12283185",
-          "title": "Amy Schumer Jokes That Her New Bangs Have People Mistaking Her for ‘Sabrina Carpenter’ or ‘a Carpenter’",
-          "publisher": "People.com",
+          "url": "https://www.nbcchicago.com/news/local/target-walmart-tj-maxx-store-and-mall-hours-for-black-friday-in-the-chicago-area/4021804/",
+          "title": "Target, Walmart, TJ Maxx: Store and mall hours for Black Friday in the Chicago area",
+          "publisher": "NBC 5 Chicago",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-0_nEiAfYwi9Ov0oKJ5KnVZIl69QetGqgEtqg5rmkGmGRiQZgqtbfobyTI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSt8_4l30wYLrVYBflt0EyQtcT0DB7ihgzarRkLpdkiz-CFl1dr4Uhng1nD2YQ"
         },
         {
-          "url": "https://pagesix.com/2026/11/26/style/amy-schumer-debuts-bangs-haircut-hilariously-channels-sabrina-carpenter/",
-          "title": "Amy Schumer hilariously channels Sabrina Carpenter with new bangs",
-          "publisher": "Page Six",
+          "url": "https://www.abc10.com/article/news/nation-world/are-banks-open-black-friday-usps-mail-delivery-whats-open-closed/507-c231a8f7-49ad-4c5a-876d-13ab585e49e7",
+          "title": "Are banks open on Black Friday? What about the post office? Here's what's open, closed",
+          "publisher": "ABC10",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-0nGOUZMnvlJK4V_8ec7tR_JjWKqsgS9He1E1la6P3r19qwVNngHGqOUWWyo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU2t-_zedRcFxx8R1dOefgasXWFxgOxtFRXpjCFujnibV1tvvUE5OCtQJSkvs"
         },
         {
-          "url": "https://demokratis.co.id/en/amy-schumer-bangs-sabrina-comparison",
-          "title": "Amy Schumer Jokes About Sabrina Carpenter Hair Resemblance",
-          "publisher": "Demokratis.co.id",
+          "url": "https://mashable.com/life/black-friday-open-walmart-target-best-buy-costco-thanksgiving",
+          "title": "Black Friday and Thanksgiving store open hours 2026: When major retailers open",
+          "publisher": "Mashable",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYs3UJup0VhR9DY_mqROGObk9kRy0la39HAjODX8o_p4y-F974akycOy6OLvg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXf6mOPBJ3XH2SyxrkIaWRPGeiOuQRehdRndR-F9jG2fSoTJezBCJTVdiOeiQ"
+        }
+      ]
+    },
+    {
+      "query": "winter storm warning",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-28T10:40:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/colorado/news/colorado-storm-snow-winds-dangerous-holiday-travel-saturday/",
+        "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
+        "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVAi_Y-8xWRVRsVCAJcJvz8U_7lA3VWbyzCUQKsdg9tXKyuA9vcBmNoeJHwq8",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/colorado/news/colorado-storm-snow-winds-dangerous-holiday-travel-saturday/",
+          "title": "Colorado storm to bring heavy snow, strong winds and dangerous holiday travel Saturday",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQVAi_Y-8xWRVRsVCAJcJvz8U_7lA3VWbyzCUQKsdg9tXKyuA9vcBmNoeJHwq8"
+        },
+        {
+          "url": "https://kdvr.com/weather/weather-forecast/denver-weather-windy-and-colder-with-snow-showers-friday/",
+          "title": "Denver weather: Windy and colder with snow showers Friday",
+          "publisher": "KDVR",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVNLEeGy7nsdUBPvhADXLaw_EFQZYXpqWUKcyc2kLP72xNrb5rjods3Vn7oQc"
+        },
+        {
+          "url": "https://www.denvergazette.com/outtherecolorado/2026/11/27/resort-could-get-15-of-snow-in-change-of-pace-for-colorado/",
+          "title": "Resort could get 15″ of snow in change of pace for Colorado",
+          "publisher": "Denver Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTG9saD5ZPWxBTJhCE1NJWW5Hbuwzx6ypM9Tg19BH0ayOaIfKYXmmxpfzQmJ8A"
+        }
+      ]
+    },
+    {
+      "query": "ghsa football playoffs 2026",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T10:40:00Z",
+      "related_news_urls": [
+        "https://www.onlineathens.com/story/sports/high-school/football/2026/11/27/live-updates-for-quarterfinals-of-athens-area-ghsa-football-playoffs/92910251007/",
+        "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-roundup-week-16/93-6d00d8f0-e055-4838-86ba-5cc23df14878",
+        "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrn1YSwX4gJPoTr-ZQEUt_eECSR82Sl3zeYHZa-xDefl8N4kRJx2-Y-SUqdo",
+      "image_credit": "Online Athens",
+      "news": [
+        {
+          "url": "https://www.onlineathens.com/story/sports/high-school/football/2026/11/27/live-updates-for-quarterfinals-of-athens-area-ghsa-football-playoffs/92910251007/",
+          "title": "Live updates for quarterfinals of Athens-area GHSA football playoffs",
+          "publisher": "Online Athens",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvrn1YSwX4gJPoTr-ZQEUt_eECSR82Sl3zeYHZa-xDefl8N4kRJx2-Y-SUqdo"
+        },
+        {
+          "url": "https://www.13wmaz.com/article/sports/high-school/hs-football/ffn-roundup-week-16/93-6d00d8f0-e055-4838-86ba-5cc23df14878",
+          "title": "Football Friday Night Roundup | Central Georgia teams advance to GHSA Final Four",
+          "publisher": "13WMAZ",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRF79d0BM5woRuPPBQofeQSQNYq5UN_2ooXrpD5nlfETqFTTgOsWnpN1UZQL70"
+        },
+        {
+          "url": "https://www.ajc.com/sports/2026/11/high-school-football-quarterfinal-previews/",
+          "title": "Breaking down every quarterfinal game in the 2026 GHSA football playoffs",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQyy47zuGbQBLWIq4DMBpC99faJ58NL89agSBYVgxya8p-r2XAywEcK2biYGM"
         }
       ]
     }
