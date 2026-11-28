@@ -3,47 +3,222 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T06:01:34.448902Z",
+  "checked_at": "2026-11-28T06:36:01.608952Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "morgan scalley",
+      "query": "gordon ramsay",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T06:20:00Z",
+      "related_news_urls": [
+        "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
+        "https://www.kvue.com/article/news/nation-world/gordon-ramsay-daughter-gives-birth/507-4a051339-e94f-4064-8162-77afc4fd42f6",
+        "https://www.eonline.com/news/1438299/gordon-ramsay-is-grandfather-daughter-holly-gives-birth-to-first-baby"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrEzB8EXf1DtjKpEve6cdqiufi6MRIBjl-oY2HgUmMpPVN6b4z1TN45sI5SJE",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
+          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrEzB8EXf1DtjKpEve6cdqiufi6MRIBjl-oY2HgUmMpPVN6b4z1TN45sI5SJE"
+        },
+        {
+          "url": "https://www.kvue.com/article/news/nation-world/gordon-ramsay-daughter-gives-birth/507-4a051339-e94f-4064-8162-77afc4fd42f6",
+          "title": "Gordon Ramsay's daughter, Holly Ramsay-Peaty, gives birth to first child",
+          "publisher": "KVUE",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93k6R4lyIcRVRMJqEMisiyQHnNzyOn02XZAybCI_cn6GUU6c7Ok5A7vZG8L4"
+        },
+        {
+          "url": "https://www.eonline.com/news/1438299/gordon-ramsay-is-grandfather-daughter-holly-gives-birth-to-first-baby",
+          "title": "Gordon Ramsay Becomes Grandfather as Daughter Holly Gives Birth to First Baby",
+          "publisher": "E! News",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJSlrQeC4faO77AVWlkCXmzE97CntZ9Hu-GGl5fuUBPkC4BZ2niv0HfeSRA0w"
+        }
+      ]
+    },
+    {
+      "query": "wlfi",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T06:00:00Z",
+      "related_news_urls": [
+        "https://thedefiant.io/news/markets/usd1-trades-at-0-9967-on-coinbase-after-wlfi-selloff",
+        "https://cryptobriefing.com/world-liberty-financial-wlfi-token-plunges-59-percent/",
+        "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUBJF0AhkMgnuRL9RtLW1zHlnSxGOr52UiUAuWVPMGOVBGdytZa2YjT22SZu8",
+      "image_credit": "The Defiant",
+      "news": [
+        {
+          "url": "https://thedefiant.io/news/markets/usd1-trades-at-0-9967-on-coinbase-after-wlfi-selloff",
+          "title": "USD1 Trades at $0.9967 on Coinbase After WLFI Selloff",
+          "publisher": "The Defiant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSUBJF0AhkMgnuRL9RtLW1zHlnSxGOr52UiUAuWVPMGOVBGdytZa2YjT22SZu8"
+        },
+        {
+          "url": "https://cryptobriefing.com/world-liberty-financial-wlfi-token-plunges-59-percent/",
+          "title": "World Liberty Financial’s WLFI token plunges 59% in 24 hours",
+          "publisher": "Crypto Briefing",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCFhqMiTu7xSlfSH7CuqV8c969aCkuqAX8Ba7tYNUmR26srTgxBcVtJVuOjI"
+        },
+        {
+          "url": "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2",
+          "title": "World Liberty’s WLFI Sinks 39% as Bitcoin Slips 2%",
+          "publisher": "The Defiant",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFFch5jCE0G2kVZHBORHk_Ez2gy53pA_upOWFw6t5OWHZvgrcnWo6rh5ZENcw"
+        }
+      ]
+    },
+    {
+      "query": "jodie foster",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T06:00:00Z",
+      "related_news_urls": [
+        "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
+        "https://www.animationxpress.com/latest-news/jodie-foster-finally-gets-her-disney-villain-moment-with-hexed/",
+        "https://www.film-news.co.uk/news/UK/130512/Jodie-Foster-reveals-villainous-role-in-Hexed-was-totally-fun"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
+          "title": "Jodie Foster Says Her Hexed Villain Is ‘Much Meaner in French’ After Recording Both Versions (Exclusive)",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E"
+        },
+        {
+          "url": "https://www.animationxpress.com/latest-news/jodie-foster-finally-gets-her-disney-villain-moment-with-hexed/",
+          "title": "Jodie Foster finally gets her Disney villain moment with ‘Hexed’",
+          "publisher": "Animation Xpress",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKaW_lnkBDD63xC_9iMl__A4VT6uqQ-24mHf0Ol7UIcMVO1Tt4N9F2eXLMNbg"
+        },
+        {
+          "url": "https://www.film-news.co.uk/news/UK/130512/Jodie-Foster-reveals-villainous-role-in-Hexed-was-totally-fun",
+          "title": "Jodie Foster reveals villainous role in Hexed was 'totally fun'",
+          "publisher": "Film-News.co.uk",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEhQ_V93gX477uM7pUYNTfGe9QeEJ3k2jZZcC6ivnvzgyoNTDs4hGfCWZOEr8"
+        }
+      ]
+    },
+    {
+      "query": "dustin hoffman",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T05:50:00Z",
+      "related_news_urls": [
+        "https://www.wsj.com/arts-culture/books/look-at-me-review-hes-talkin-here-c8aa617a",
+        "https://ew.com/dustin-hoffman-reveals-money-from-the-graduate-12247734",
+        "https://www.unionleader.com/media/books-a-sunny-life-with-a-few-dark-clouds-in-dustin-hoffmans-memoir-look-at-me-e5f6b04a"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyQyLUnXdOArOI3hb2eQ50L5Z9tdt7EGGwaQciVOTrDFcQ-zsNCCcqTaGNAL0",
+      "image_credit": "WSJ",
+      "news": [
+        {
+          "url": "https://www.wsj.com/arts-culture/books/look-at-me-review-hes-talkin-here-c8aa617a",
+          "title": "‘Look at Me’ Review: He’s Talkin’ Here",
+          "publisher": "WSJ",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyQyLUnXdOArOI3hb2eQ50L5Z9tdt7EGGwaQciVOTrDFcQ-zsNCCcqTaGNAL0"
+        },
+        {
+          "url": "https://ew.com/dustin-hoffman-reveals-money-from-the-graduate-12247734",
+          "title": "Dustin Hoffman reveals how much money he took home from The Graduate: ‘My life was surreal’",
+          "publisher": "Entertainment Weekly",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-ms4ce3NHJNZFfzqp3wRMGkIInmydHg69YNIP2YJKFRswgG9o5zSJwRoK9U"
+        },
+        {
+          "url": "https://www.unionleader.com/media/books-a-sunny-life-with-a-few-dark-clouds-in-dustin-hoffmans-memoir-look-at-me-e5f6b04a",
+          "title": "Books: A sunny life, with a few dark clouds, in Dustin Hoffm...",
+          "publisher": "New Hampshire Union Leader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwDcP1-yqJeN_kvLdYFpUAux1qcE9IVmr-Um31M9NRKEL8_2rVjLHbo-ugYxs"
+        }
+      ]
+    },
+    {
+      "query": "wes enis",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:50:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
+        "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
+        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKwJ-hCAF1eZc4g7hOEUyoIOuFjoRvGIVzsukhBkF2QSEYzzB-zIpRcvw5kGI",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
+          "title": "Creighton 95-87 TCU (Nov 26, 2026) Game Recap",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKwJ-hCAF1eZc4g7hOEUyoIOuFjoRvGIVzsukhBkF2QSEYzzB-zIpRcvw5kGI"
+        },
+        {
+          "url": "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
+          "title": "Men's Basketball Tops TCU in Players Era 16 Semifinal",
+          "publisher": "Creighton University Athletics",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU"
+        },
+        {
+          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
+          "title": "TCU Horned Frogs play the Creighton Bluejays",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
+        }
+      ]
+    },
+    {
+      "query": "robin givens",
       "approx_searches": "200+",
       "published_at": "2026-11-28T05:40:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/west-virginia/article/what-utahs-morgan-scalley-said-about-wvu-this-week-293259494/",
-        "https://sports.ksl.com/ncaa/utah/morgan-scalleys-utah/579143",
-        "https://247sports.com/college/utah/article/morgan-scalley-post-game-press-conference-tcu-horned-frogs-win-sonny-dykes-293198231/"
+        "https://www.yahoo.com/entertainment/celebrity/fashion/articles/robin-givens-still-rocks-her-101500620.html",
+        "https://demokratis.co.id/en/robin-givens-signature-voluminous-hair",
+        "https://suaragarut.id/en/robin-givens-signature-hairstyle"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-jjfvV_NMgk96F1RoDCt3CaIGbQHai7_rYvrzSJ_4jSwq0UeLPXHW9sEDnBE",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7qTfcACWL0_iIotDnGcgYa17dQ9wUR12vxOXYcxaf_gFwNaDGwYceCTr9-Vw",
+      "image_credit": "Yahoo",
       "news": [
         {
-          "url": "https://247sports.com/college/west-virginia/article/what-utahs-morgan-scalley-said-about-wvu-this-week-293259494/",
-          "title": "What Utah's Morgan Scalley said about WVU this week",
-          "publisher": "247Sports",
+          "url": "https://www.yahoo.com/entertainment/celebrity/fashion/articles/robin-givens-still-rocks-her-101500620.html",
+          "title": "Robin Givens Still Rocks Her Signature Voluminous Hair In Her 60s — With A Modern Twist",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-jjfvV_NMgk96F1RoDCt3CaIGbQHai7_rYvrzSJ_4jSwq0UeLPXHW9sEDnBE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7qTfcACWL0_iIotDnGcgYa17dQ9wUR12vxOXYcxaf_gFwNaDGwYceCTr9-Vw"
         },
         {
-          "url": "https://sports.ksl.com/ncaa/utah/morgan-scalleys-utah/579143",
-          "title": "Takeaways from Morgan Scalley’s West Virginia week press conference",
-          "publisher": "KSL Sports",
+          "url": "https://demokratis.co.id/en/robin-givens-signature-voluminous-hair",
+          "title": "Robin Givens Updates Her Signature Voluminous Hairstyle",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbkYLCnLX8TIoISHgqUOYSdDV7gel50_AGeB-skqZia7p2aTG1ZPk8NnnxOA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvyVA-Fv8O2vBs_2IJjFAiPKkWJn2IGkoQGyunBGBedrDtjtVsOZKqI6mja3A"
         },
         {
-          "url": "https://247sports.com/college/utah/article/morgan-scalley-post-game-press-conference-tcu-horned-frogs-win-sonny-dykes-293198231/",
-          "title": "Morgan Scalley Shares His Thoughts on Utah's Win over TCU",
-          "publisher": "247Sports",
+          "url": "https://suaragarut.id/en/robin-givens-signature-hairstyle",
+          "title": "Robin Givens Updates Her Signature Voluminous Hairstyle",
+          "publisher": "SuaraGarut.ID",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNp0pGjZKLsijDAfmkoJIBLiJUnzsPDf1u0AQ0Ca45WIuU8HI4bPjsMsNdNG4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQZ8MCatmKtf_GnA6ZxztZftuYCPPN9ih0My9kh3pfV_zQbJGLd8MHCmVjxpY"
         }
       ]
     },
     {
       "query": "gta 6 chapter 3 mission list",
-      "approx_searches": "1000+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T05:30:00Z",
       "related_news_urls": [
         "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
@@ -82,8 +257,8 @@
       "published_at": "2026-11-28T05:20:00Z",
       "related_news_urls": [
         "https://www.espn.com/mens-college-basketball/game/_/gameId/401920531/texas-tech-oregon",
-        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/",
-        "https://www.fanduel.com/research/texas-tech-vs-oregon-college-basketball-predictions-odds-picks-best-bets-for-11-26-2026"
+        "https://247sports.com/college/oregon/article/oregon-lets-upset-bid-slip-away-in-62-59-loss-to-no-5-texas-tech-293371778/",
+        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGqDSbwJHrVmcqTWX25UdrH_TloXhMDKe8arlVE9IjLQQ5mRjYcBzQIwlmT-o",
       "image_credit": "ESPN",
@@ -96,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGqDSbwJHrVmcqTWX25UdrH_TloXhMDKe8arlVE9IjLQQ5mRjYcBzQIwlmT-o"
         },
         {
+          "url": "https://247sports.com/college/oregon/article/oregon-lets-upset-bid-slip-away-in-62-59-loss-to-no-5-texas-tech-293371778/",
+          "title": "Oregon lets upset bid slip away in 62-59 loss to No. 5 Texas Tech",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQp2GJXNpjpNyyiRmWS55m6tkbSk51u1G1ckTmb2FilgkCZ6piNGR6QIg8R4Xk"
+        },
+        {
           "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/",
           "title": "Texas Tech rallies to beat Oregon 62-59 in the Players Era",
           "publisher": "Red Raiders Wire",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUojqYcKi2Y0WT11U53X5vZx3c_Q_AT5_l65SKf4pTrt2fpyRQZK_FbTrTbNM"
-        },
-        {
-          "url": "https://www.fanduel.com/research/texas-tech-vs-oregon-college-basketball-predictions-odds-picks-best-bets-for-11-26-2026",
-          "title": "Texas Tech vs Oregon College Basketball Prediction, Odds, Picks, Best Bets for Nov. 26",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgjV7AxFE8CJTTa9d_k34PLuWcWI7XUDS839Ssp6RgnSpcDljWpIpNgGU_jac"
         }
       ]
     },
@@ -147,41 +322,6 @@
       ]
     },
     {
-      "query": "stephon castle",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T05:10:00Z",
-      "related_news_urls": [
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/stephon-castle-records-26-4-9-2-1-line-vs-lal",
-        "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
-        "https://airalamo.com/stephon-castle-s-turnovers-are-the-only-thing-between-him-and-the-nba-s-elite-playmakers"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkdHJ2S9OyY_Gkh2JwHPty2AaWU8ExvlfO_52kZtqP14QjiUoxjMO6LJPOmxg",
-      "image_credit": "NBC Sports",
-      "news": [
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/stephon-castle-records-26-4-9-2-1-line-vs-lal",
-          "title": "Stephon Castle records 26/4/9/2/1 line vs. LAL",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkdHJ2S9OyY_Gkh2JwHPty2AaWU8ExvlfO_52kZtqP14QjiUoxjMO6LJPOmxg"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
-          "title": "Spurs guard Stephon Castle in elite company as stat sheet-stuffing star",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwFaaEwCuaSeOBuRN2MJ78me7PcW0__QPsaCikx0ccRhi3Z0YHhqNHcAfola4"
-        },
-        {
-          "url": "https://airalamo.com/stephon-castle-s-turnovers-are-the-only-thing-between-him-and-the-nba-s-elite-playmakers",
-          "title": "Stephon Castle's turnovers are the only thing between him and the NBA's elite playmakers",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4i6bfGjKogMNRGnte4yu4rGpsuFOZ8fW3IF2A9uOT2Uwa93aou8hslULjpJw"
-        }
-      ]
-    },
-    {
       "query": "jim caviezel",
       "approx_searches": "500+",
       "published_at": "2026-11-28T05:10:00Z",
@@ -213,146 +353,6 @@
           "publisher": "Comic Book Resources",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVh70L_ygoxFF-dVNyvgFXaRV8iMzn3S6Zp5Tb_mh6W4Z812yvLkGMg9AfXOw"
-        }
-      ]
-    },
-    {
-      "query": "lakers game today",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:10:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50613364/lakers-reaves-available-missing-5-games-heel-bruise",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/trey-murphy-with-26-and-six-steals-on-friday",
-        "https://bleacherreport.com/articles/25537661-lakers-austin-reaves-says-it-felt-i-broke-my-foot-ahead-return-heel-injury"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjgr5pSZmkus7Ssx0uvDoCzfnfJ7v7NVzT_y4V_D8ODYVKsYKFPojrXuDJaVY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/nba/story/_/id/50613364/lakers-reaves-available-missing-5-games-heel-bruise",
-          "title": "Lakers' Austin Reaves available vs. Spurs after missing 5 games with heel bruise",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjgr5pSZmkus7Ssx0uvDoCzfnfJ7v7NVzT_y4V_D8ODYVKsYKFPojrXuDJaVY"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/trey-murphy-with-26-and-six-steals-on-friday",
-          "title": "Trey Murphy with 26 and six steals on Friday",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7NbzgO0P01GL_zw6izi3-uFXd3IQD60GIa18Q8T9mE0k1C9EM6ZE2vNljFZw"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537661-lakers-austin-reaves-says-it-felt-i-broke-my-foot-ahead-return-heel-injury",
-          "title": "Lakers' Austin Reaves Says It 'Felt Like I Broke My Foot' Ahead of Return from Heel Injury",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA_9zs1cEVvpt6aBUBwEMiGwVwgHGeSGT8WZpPE5ezPX1tFvG9MxzCiPVLaoQ"
-        }
-      ]
-    },
-    {
-      "query": "chris pratt",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
-        "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt",
-        "https://www.rogerebert.com/reviews/way-of-the-warrior-kid-chris-pratt-apple-tv-film-review-2026"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
-          "title": "‘Way of the Warrior Kid’ Review: Dispensing Martial Wisdom",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA"
-        },
-        {
-          "url": "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt",
-          "title": "Way of the Warrior Kid review - Chris Pratt’s family film is as subtle as a military recruitment video",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzvWnLlc_5ShLSM347g8t3u4vvIgNIjn4A95X6i5X2iE-mBeNRY3Lk6XoAlk"
-        },
-        {
-          "url": "https://www.rogerebert.com/reviews/way-of-the-warrior-kid-chris-pratt-apple-tv-film-review-2026",
-          "title": "Way of the Warrior Kid review: Chris Pratt pumps up a wimpy tot in limp Apple TV drama",
-          "publisher": "Roger Ebert",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvPGo_5tJHZcz-zufaezM4sBvFE1J2zK0Xfrkxgti9ANXmmPNkj2wcJlJKD5Q"
-        }
-      ]
-    },
-    {
-      "query": "matisse thybulle",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/athletic/7801996/2026/11/24/lakers-steals-defensive-nba/",
-        "https://www.cbssports.com/fantasy/basketball/news/lakers-matisse-thybulle-delivers-four-defensive-stats-in-win/",
-        "https://www.espn.com/video/clip/_/id/50579370/matisse-thybulle-rocks-rim-powerful-flush"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHPhwcP9V9YbWJg8yEnmc7F0r49aTcN52umtsKQPmT4Df9pSCpmivd3bMB08",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/athletic/7801996/2026/11/24/lakers-steals-defensive-nba/",
-          "title": "The Lakers have been stealing their way to wins. So far, it’s paying off",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHPhwcP9V9YbWJg8yEnmc7F0r49aTcN52umtsKQPmT4Df9pSCpmivd3bMB08"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-matisse-thybulle-delivers-four-defensive-stats-in-win/",
-          "title": "Lakers' Matisse Thybulle: Delivers four defensive stats in win",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50579370/matisse-thybulle-rocks-rim-powerful-flush",
-          "title": "Matisse Thybulle rocks the rim with powerful flush",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDBzhVoqQtJh_DYLE-u9-xgoPfFqiRzDuAewvH0e1KCp0RMFGRhz83OMMGH6s"
-        }
-      ]
-    },
-    {
-      "query": "toumani camara",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-shooting-slump-continues-in-win/",
-        "https://bsinews.id/en/camara-scoring-slump-blazers-spurs",
-        "https://demokratis.co.id/en/camara-shooting-slump-trail-blazers-win"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU",
-      "image_credit": "CBS Sports",
-      "news": [
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-shooting-slump-continues-in-win/",
-          "title": "Trail Blazers' Toumani Camara: Shooting slump continues in win",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU"
-        },
-        {
-          "url": "https://bsinews.id/en/camara-scoring-slump-blazers-spurs",
-          "title": "Toumani Camara Scores Eight Points in Blazers Win Over Spurs",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBeLwZJUYOrENWqx6sgUkiGO4D1Laq3YyALV9CObqUQkSEEvSNZ3yOeji8oD4"
-        },
-        {
-          "url": "https://demokratis.co.id/en/camara-shooting-slump-trail-blazers-win",
-          "title": "Toumani Camara Struggles From Field in Trail Blazers Win",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBeLwZJUYOrENWqx6sgUkiGO4D1Laq3YyALV9CObqUQkSEEvSNZ3yOeji8oD4"
         }
       ]
     }
