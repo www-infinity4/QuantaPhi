@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/build-developer-source-catalog.mjs
       - name: Retain authentic candidate data for audit even if PR creation is blocked
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: developer-catalog-source-candidates
           path: data/developer-source-catalog.json
