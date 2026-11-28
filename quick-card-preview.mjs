@@ -36,13 +36,19 @@ function getDialog(){
  document.body.append(dialog);
  return dialog;
 }
-export function openQuickCardPreview({url,title='Quick Card',description='',image='',official='',previewMode=DEFAULT_PREVIEW_MODE}={}){
+export function openQuickCardPreview({url,title='Quick Card',description='',image='',official='',previewMode=DEFAULT_PREVIEW_MODE, badge=null}={}){
  if(typeof document==='undefined')return false;
  const target=safeLocalCardUrl(url,location.origin+'/');
  if(!target)return false;
  const popup=getDialog();popup.replaceChildren();
  const header=el('header','qpr-header');
  const heading=el('div','qpr-heading');
+  // Render verified source badge if provided
+  if(badge && typeof badge === 'object'){
+    const badgeEl=el('span','quick-card-badge',badge.label||'');
+    if(badge.color) badgeEl.style.backgroundColor=badge.color;
+    heading.append(badgeEl);
+  }
  heading.append(el('span','qpr-kicker','QUANTAPHI · QUICK CARD PREVIEW'),el('h2','',String(title).slice(0,130)));
  const close=el('button','qpr-close','✕ Close');close.type='button';close.addEventListener('click',()=>popup.close());
  header.append(heading,close);popup.append(header);
