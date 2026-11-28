@@ -3,275 +3,308 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T01:01:28.060502Z",
+  "checked_at": "2026-11-28T01:31:19.943769Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "grizzlies vs timberwolves",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T00:40:00Z",
+      "query": "mavericks vs suns",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T01:10:00Z",
       "related_news_urls": [
-        "https://www.espn.com/nba/story/_/id/50613102/timberwolves-downgrade-lamelo-ball-ankle-sprain",
-        "https://bleacherreport.com/articles/25537913-lamelo-ball-injured-latest-t-wolves-stars-status-after-being-helped-court",
-        "https://sports.yahoo.com/nba/breaking-news/article/t-wolves-rule-out-lamelo-ball-for-nba-cup-game-against-grizzlies-due-to-ankle-sprain-190412110.html"
+        "https://www.nba.com/mavs/news/mavericks-suns-preview-good-times-galore-but-staying-grounded-is-crucial",
+        "https://sports.yahoo.com/nba/articles/preview-suns-finish-nba-cup-193958100.html",
+        "https://www.brightsideofthesun.com/suns-game-previews/114526/mavericks-game-preview-cooper-flagg-nba-cup-rebounding-ball-security-western-conference-standings"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLwKARP2AZVt02Wh_5YwH33a4cMQB8kXuR2fGNuz6i3v7J_rYkECPCdZlnmM",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_B--nSB6V6BtRfD851nNDmyfpfrBH4d85fyJllKU-KHGieiL4ETKK9j-5GDY",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/mavs/news/mavericks-suns-preview-good-times-galore-but-staying-grounded-is-crucial",
+          "title": "Mavericks-Suns preview: Good times galore, but staying grounded is crucial",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_B--nSB6V6BtRfD851nNDmyfpfrBH4d85fyJllKU-KHGieiL4ETKK9j-5GDY"
+        },
+        {
+          "url": "https://sports.yahoo.com/nba/articles/preview-suns-finish-nba-cup-193958100.html",
+          "title": "Preview: Suns Finish NBA Cup Action vs Mavericks",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQWhClo67cYzuCrKwg9y1L3P4nA-L97SEhBWWzkzz2ZFPmHKkVun6eUWytyeJw"
+        },
+        {
+          "url": "https://www.brightsideofthesun.com/suns-game-previews/114526/mavericks-game-preview-cooper-flagg-nba-cup-rebounding-ball-security-western-conference-standings",
+          "title": "Game Preview: The Suns have a Cooper Flagg problem to solve on Black Friday",
+          "publisher": "Bright Side Of The Sun",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKWp3C5RwSkRgDb_PqtBWN-Jpoiu116hnLvmz3BLq0_3CxwuxbSg-xH2SemVo"
+        }
+      ]
+    },
+    {
+      "query": "tyrese maxey",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T01:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
+        "https://sports.yahoo.com/nba/breaking-news/article/nba-cup-2026-76ers-lebron-james-oldest-to-post-triple-double-rockets-kevin-durant-fifth-ever-to-score-33000-points-061556599.html",
+        "https://www.nytimes.com/athletic/7813456/2026/11/25/lebron-james-sixers-triple-double-miami-heat-nba-cup/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv_IqH7Od15IEJmZz8P9L7Lpe315rTF8k2cC9eNUhGxxEm-Ef888SQ0rI4-qM",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nba/story/_/id/50613102/timberwolves-downgrade-lamelo-ball-ankle-sprain",
-          "title": "Timberwolves downgrade star LaMelo Ball to out with ankle sprain",
+          "url": "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
+          "title": "LeBron dusts 'off the cape' to save 76ers with triple-double",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLwKARP2AZVt02Wh_5YwH33a4cMQB8kXuR2fGNuz6i3v7J_rYkECPCdZlnmM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTv_IqH7Od15IEJmZz8P9L7Lpe315rTF8k2cC9eNUhGxxEm-Ef888SQ0rI4-qM"
         },
         {
-          "url": "https://bleacherreport.com/articles/25537913-lamelo-ball-injured-latest-t-wolves-stars-status-after-being-helped-court",
-          "title": "LaMelo Ball Injured, Latest on T-Wolves Star's Status After Being Helped Off Court",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbX62q0mXeqywJXtB_jmIV42CRlmlTAJuW_vhlVJmJqZbSLaqeX0jQkGbYC6w"
-        },
-        {
-          "url": "https://sports.yahoo.com/nba/breaking-news/article/t-wolves-rule-out-lamelo-ball-for-nba-cup-game-against-grizzlies-due-to-ankle-sprain-190412110.html",
-          "title": "T-Wolves rule out LaMelo Ball for NBA Cup game against Grizzlies due to ankle sprain",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/nba-cup-2026-76ers-lebron-james-oldest-to-post-triple-double-rockets-kevin-durant-fifth-ever-to-score-33000-points-061556599.html",
+          "title": "NBA Cup 2026: 76ers' LeBron James oldest to post triple-double; Rockets' Kevin Durant fifth ever to score 33,000 points",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxw2ZbN804nrB_CfbQ33B6BixQKwXz3KnbxIjoZthhKu1yIRpuCJULwGMXSlM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT0xFGZFMAhPzxG9ESB4-7xmmz-W_MN4yEU-NPqqRAOLWqIMb2-7GzH7rgEQho"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7813456/2026/11/25/lebron-james-sixers-triple-double-miami-heat-nba-cup/",
+          "title": "LeBron James happy to ‘dust off the cape’ for his 1st Sixers triple-double - The Athletic",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTCNqIyIyF_6UgG9t9OyUjp0UP9A0bLbdQeq14uOgOHlRUO1RQMbjYuES0UlM"
         }
       ]
     },
     {
-      "query": "ncaa football (fbs i)",
+      "query": "eli manning",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T00:40:00Z",
+      "published_at": "2026-11-28T01:10:00Z",
       "related_news_urls": [
-        "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
-        "https://www.espn.com/video/clip/_/id/50616478/bill-connelly-dissects-dynamic-college-football-playoff-landscape",
-        "https://bleacherreport.com/articles/25536913-latest-bowl-projections-2026-cfp-playoff-bracket-scenarios-and-week-13-predictions"
+        "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
+        "https://bleacherreport.com/articles/25537287-eli-manning-rob-gronkowski-among-52-players-make-cut-pro-football-hof-class-2027-voting",
+        "https://www.steelers.com/news/six-former-steelers-advance-in-hof-voting-process"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI",
-      "image_credit": "NCAA.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
-          "title": "College Football Playoff bracket, based on current committee rankings",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50616478/bill-connelly-dissects-dynamic-college-football-playoff-landscape",
-          "title": "Bill Connelly dissects dynamic College Football Playoff landscape",
+          "url": "https://www.espn.com/nfl/story/_/id/50584494/pro-football-hall-fame-trims-2027-player-nominees-52",
+          "title": "Pro Football Hall of Fame voters trim Class of 2027 nominees to 52",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdbPuZHY4uakTLz2KmIvGNepheDk3tJxx7iA3tF2F9wYp46GXw0flBun6OqHM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzRkXSaUu1W-DpKyhOO-d2xyD5TpFm-_SKFiIOn_0V36voRRDqXXzeokBxYc"
         },
         {
-          "url": "https://bleacherreport.com/articles/25536913-latest-bowl-projections-2026-cfp-playoff-bracket-scenarios-and-week-13-predictions",
-          "title": "Latest Bowl Projections, 2026 CFP Playoff Bracket Scenarios and Week 13 Predictions",
+          "url": "https://bleacherreport.com/articles/25537287-eli-manning-rob-gronkowski-among-52-players-make-cut-pro-football-hof-class-2027-voting",
+          "title": "Eli Manning, Rob Gronkowski Among 52 Players to Make Cut in Pro Football HOF Class of 2027 Voting",
           "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-O-dIxULP5-cucckq6JB5M6LnTVfrVqnM4RX4_UfJkuBTe8qJ32UaSSPWUjA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTPfJEksocqYdleYYQjedBArMU-S0IfTmrrbc12CGqrLyc-ETcVidPgEdN15Ck"
+        },
+        {
+          "url": "https://www.steelers.com/news/six-former-steelers-advance-in-hof-voting-process",
+          "title": "Six former Steelers advance in HOF voting process",
+          "publisher": "Steelers.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3GJYKKjCOY2Gn5jKbflli_Li4KZWST0uigYgSoaV1Y0ZgTQQPwqFxUGwQJwE"
         }
       ]
     },
     {
-      "query": "colin simmons",
+      "query": "dominick barlow",
       "approx_searches": "500+",
-      "published_at": "2026-11-28T00:40:00Z",
+      "published_at": "2026-11-28T01:10:00Z",
       "related_news_urls": [
-        "https://www.burntorangenation.com/texas-longhorns-football/107935/colin-simmons-sec-player-availability-report-texas-texas-am",
-        "https://www.on3.com/teams/texas-longhorns/news/intel-on-texas-most-recent-availability-report/",
-        "https://247sports.com/college/texas/article/edge-colin-simmons-ol-andre-cojoe-listed-as-questionable-for-texas-on-tuesdays-sec-availability-report-293279522/"
+        "https://sports.yahoo.com/nba/articles/lebron-james-discusses-play-dominick-214720665.html",
+        "https://www.phillyvoice.com/sixers-news-76ers-analysis-lebron-james-press-conference-dominick-barlow-highlights-vs-heat-nba-stats/",
+        "https://metrophiladelphia.com/stories/sixers-practice-notes-injuries-tacko-fall-labaron-philon,163709"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzjw3wIT1f5y2liatp7cQ4E_9BF64S-eTQcR2Akf5SasSa8BowfCrRp9ccXx0",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmZh3MtgTIsfjCAC9LuTKx15iILAOnfx-w2kQhHvZLlDo0da78SU8tO4W37IU",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/lebron-james-discusses-play-dominick-214720665.html",
+          "title": "LeBron James discusses play of Dominick Barlow as Sixers move forward",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmZh3MtgTIsfjCAC9LuTKx15iILAOnfx-w2kQhHvZLlDo0da78SU8tO4W37IU"
+        },
+        {
+          "url": "https://www.phillyvoice.com/sixers-news-76ers-analysis-lebron-james-press-conference-dominick-barlow-highlights-vs-heat-nba-stats/",
+          "title": "LeBron James, Dominick Barlow forming dynamic partnership for Sixers: 'We’re going to make some plays'",
+          "publisher": "PhillyVoice",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQMR4NkdTiZBUyhz9yPHvqi8UHemAb_Iy7lE3-Bf5vn7pBrLP6_BYY9xxIfaw"
+        },
+        {
+          "url": "https://metrophiladelphia.com/stories/sixers-practice-notes-injuries-tacko-fall-labaron-philon,163709",
+          "title": "Sixers practice notes: Injury updates, Nurse praises Tacko Fall, Labaron Philon",
+          "publisher": "Metro Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcREcvte0qnwgzCUciIHl8YJTs6hp5yVpKq7QXNF_tKN1Casi7uZpL6IG0F4uc0"
+        }
+      ]
+    },
+    {
+      "query": "november 1963",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T01:10:00Z",
+      "related_news_urls": [
+        "https://variety.com/2026/film/festivals/john-travolta-jfk-assassin-johnny-roselli-november-1963-1236959137/",
+        "https://wjla.com/good-morning-washington/november-1963-revisits-the-48-hours-around-jfks-assassination",
+        "https://www.yahoo.com/entertainment/movies/articles/john-travolta-72-recalls-watching-214817300.html"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4LVpH5MjsjtIRB6ILgeKcJDZB78Ef9k3cxrZaGQwfwqXRuf5m1gDh4kamvA",
+      "image_credit": "Variety",
+      "news": [
+        {
+          "url": "https://variety.com/2026/film/festivals/john-travolta-jfk-assassin-johnny-roselli-november-1963-1236959137/",
+          "title": "John Travolta on Playing Alleged JFK Assassin in 'November 1963'",
+          "publisher": "Variety",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY4LVpH5MjsjtIRB6ILgeKcJDZB78Ef9k3cxrZaGQwfwqXRuf5m1gDh4kamvA"
+        },
+        {
+          "url": "https://wjla.com/good-morning-washington/november-1963-revisits-the-48-hours-around-jfks-assassination",
+          "title": "November 1963 Revisits the 48 Hours Around JFK’s Assassination",
+          "publisher": "WJLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRQdquQ-AQeTISmMrq8MFZ40EnS-aWRgZvjH3Z3waWMnKtwMNfa95xhtt8H75M"
+        },
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/articles/john-travolta-72-recalls-watching-214817300.html",
+          "title": "John Travolta, 72, Recalls Watching JFK’s Death as a Child Before Taking on Controversial New Role",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSeeV0IoxmmDnKVGXF3naRPvfE-ibGq6vF5Q268wLjPbQ28OSvvKiHtuPlk1ME"
+        }
+      ]
+    },
+    {
+      "query": "common",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T01:10:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
+        "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
+        "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
+          "title": "Low levels of common vitamin could be stealing nearly 30 minutes of your sleep",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU"
+        },
+        {
+          "url": "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
+          "title": "This Common Vitamin Deficiency Could Be Quietly Disrupting Your Sleep",
+          "publisher": "SciTechDaily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1KtLn9IGLHCKoz5hmiBa6eJ7OUjjh_BHVZPcDUnkNDKBfUtgIWeS_O5YeDtA"
+        },
+        {
+          "url": "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/",
+          "title": "Why does sleep get worse with age? A common vitamin deficiency may offer a clue",
+          "publisher": "Earth.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSne0J8uFssYRMAMIMxWSsewbMxQMUoMxR16dg4KoS6BMmWw33r2ymjEVpn8ns"
+        }
+      ]
+    },
+    {
+      "query": "west virginia vs utah",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T01:00:00Z",
+      "related_news_urls": [
+        "https://www.foxsports.com/stories/college-football/how-to-watch-west-virginia-vs-utah-tv-channel-live-stream-time-nov-27-2026",
+        "https://sports.yahoo.com/college-football/articles/watch-west-virginia-vs-utah-010000283.html",
+        "https://247sports.com/college/west-virginia/article/wvus-leaders-have-clinched-perfection-and-now-they-must-prevent-it-293284917/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbW0jAFQq4Wa6nRrbHBW3LKurJJcCM9oI64zwfQhort3B3cBuqzWzmkkleCqM",
+      "image_credit": "FOX Sports",
+      "news": [
+        {
+          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-west-virginia-vs-utah-tv-channel-live-stream-time-nov-27-2026",
+          "title": "How to Watch West Virginia vs. Utah: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbW0jAFQq4Wa6nRrbHBW3LKurJJcCM9oI64zwfQhort3B3cBuqzWzmkkleCqM"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/watch-west-virginia-vs-utah-010000283.html",
+          "title": "How to watch West Virginia vs Utah: Live stream College Football, TV channel",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQthabVgalh8NxuCBgAtrdZV4_mEqTdqp8M_lUMTt2a1Gf9V5RnjeQCq7PjUVs"
+        },
+        {
+          "url": "https://247sports.com/college/west-virginia/article/wvus-leaders-have-clinched-perfection-and-now-they-must-prevent-it-293284917/",
+          "title": "WVU's leaders have clinched perfection and now they must prevent it",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcThDcvo1RrYyUIK2_P9w5OFXjjtayk1XcNbf0T9uHGDH_YHRc88I0V3mdHAuAU"
+        }
+      ]
+    },
+    {
+      "query": "will muschamp",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T01:00:00Z",
+      "related_news_urls": [
+        "https://www.burntorangenation.com/texas-longhorns-football/107813/will-muschamp-georgia-dc-texsas-longhorns",
+        "https://www.ajc.com/sports/2026/11/georgia-football-defensive-coordinator-replacement/",
+        "https://www.on3.com/teams/texas-longhorns/news/back-to-georgia-texas-defensive-coordinator-will-muschamp-last-move-austin-georgia/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP0ek0HngNFiPrgAE8KUa3E_JRw_8IEv_s5Djz4wHLgnUt25M8QTdgUKYf2MI",
       "image_credit": "Burnt Orange Nation",
       "news": [
         {
-          "url": "https://www.burntorangenation.com/texas-longhorns-football/107935/colin-simmons-sec-player-availability-report-texas-texas-am",
-          "title": "Texas edge Colin Simmons ruled out on pregame injury report",
+          "url": "https://www.burntorangenation.com/texas-longhorns-football/107813/will-muschamp-georgia-dc-texsas-longhorns",
+          "title": "Texas DC Will Muschamp calls his move to Austin his last",
           "publisher": "Burnt Orange Nation",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzjw3wIT1f5y2liatp7cQ4E_9BF64S-eTQcR2Akf5SasSa8BowfCrRp9ccXx0"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSP0ek0HngNFiPrgAE8KUa3E_JRw_8IEv_s5Djz4wHLgnUt25M8QTdgUKYf2MI"
         },
         {
-          "url": "https://www.on3.com/teams/texas-longhorns/news/intel-on-texas-most-recent-availability-report/",
-          "title": "Intel on Texas' Most Recent Availability Report",
+          "url": "https://www.ajc.com/sports/2026/11/georgia-football-defensive-coordinator-replacement/",
+          "title": "Here’s who Georgia could hire to replace Glenn Schumann as defensive coordinator",
+          "publisher": "The Atlanta Journal-Constitution",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRdtNffWlDM4THJ0l6baBTwciohPRipdO0gTzEOo813e4Js9YHjXK-yCk8vVvc"
+        },
+        {
+          "url": "https://www.on3.com/teams/texas-longhorns/news/back-to-georgia-texas-defensive-coordinator-will-muschamp-last-move-austin-georgia/",
+          "title": "Back to Georgia? Texas DC Will Muschamp says he's made his 'last move' to Austin",
           "publisher": "On3",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7GvhZp1GTeXthpf4YS5CE6p29qrozGiu9N6Vp3y7m0ydKusDbKadI4K9sMzA"
-        },
-        {
-          "url": "https://247sports.com/college/texas/article/edge-colin-simmons-ol-andre-cojoe-listed-as-questionable-for-texas-on-tuesdays-sec-availability-report-293279522/",
-          "title": "EDGE Colin Simmons, OL Andre Cojoe listed as questionable for Texas on Tuesday's SEC Availability Report",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBq9s3N9ntd_8phjt7gfSJa9ljd36COpbZ-5L0lgag9-L-WVomqqipPiw61s"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAGatxNl9mDLaueTawij0QdGQEZFvcc30lsWi4E8oIHZrbev5cLgJ2neqWjkE"
         }
       ]
     },
     {
-      "query": "crown jewel 2026",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "ronald reagan washington national airport",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:40:00Z",
+      "query": "is smackdown live tonight",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T00:50:00Z",
       "related_news_urls": [
-        "https://www.nbcwashington.com/news/local/american-airlines-plane-clipped-the-wing-of-2nd-plane-at-reagan-national-airport/4188653/",
-        "https://www.cnn.com/2026/11/27/us/american-airlines-jet-clips-wing-reagan-national",
-        "https://wjla.com/news/local/dc-flights-american-airlines-clip-wings-thanksgiving-black-friday-washington-arlington-va-travel-dallas-chicago-dfw-ord-injuries-faa-damage-pilot-audio-national-airport-taxiway-runway"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WK7Oph8xaqylShTe1nSEJ5biScyEjvSN7QWppenfJqqA5WBAXOIoBnd6onA",
-      "image_credit": "NBC4 Washington",
-      "news": [
-        {
-          "url": "https://www.nbcwashington.com/news/local/american-airlines-plane-clipped-the-wing-of-2nd-plane-at-reagan-national-airport/4188653/",
-          "title": "American Airlines plane ‘clipped the wing' of 2nd plane at Reagan National Airport",
-          "publisher": "NBC4 Washington",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WK7Oph8xaqylShTe1nSEJ5biScyEjvSN7QWppenfJqqA5WBAXOIoBnd6onA"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/27/us/american-airlines-jet-clips-wing-reagan-national",
-          "title": "American Airlines jets clip wings at Washington DC area airport",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLh2gSGN-laMQaLbnuTFrpkfysPzzb6S99Zu0TY9IhiRlONEbJTBsdMikP4s"
-        },
-        {
-          "url": "https://wjla.com/news/local/dc-flights-american-airlines-clip-wings-thanksgiving-black-friday-washington-arlington-va-travel-dallas-chicago-dfw-ord-injuries-faa-damage-pilot-audio-national-airport-taxiway-runway",
-          "title": "2 American Airlines flights bound for Dallas, Chicago clip wings at DCA",
-          "publisher": "WJLA",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXk_haw5uCmAuPXFQWWdyF_-LgVWzWUrVJEKgiyU9uzohewLQnHPjqVMfkWmE"
-        }
-      ]
-    },
-    {
-      "query": "andrew wiggins",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:40:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/heat-key-andrew-wiggins-injury-222645240.html",
-        "https://www.fanduel.com/research/nba/player-news/game-updates/andrew-wiggins-and-heat-play-knicks-on-november-27-2026",
-        "https://www.rotowire.com/basketball/headlines/andrew-wiggins-news-good-to-go-friday-541154"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG4NxyOBGH6JLTooxWHwQYarschUKTGdCBSikvznabJ9IkL0H2G-b5kdrGgPM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/heat-key-andrew-wiggins-injury-222645240.html",
-          "title": "Heat Get Key Andrew Wiggins Injury Update Ahead of Knicks Game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG4NxyOBGH6JLTooxWHwQYarschUKTGdCBSikvznabJ9IkL0H2G-b5kdrGgPM"
-        },
-        {
-          "url": "https://www.fanduel.com/research/nba/player-news/game-updates/andrew-wiggins-and-heat-play-knicks-on-november-27-2026",
-          "title": "Andrew Wiggins And Heat Face Knicks On Nov. 27",
-          "publisher": "FanDuel",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDYMH7MJ-T5biq8Yg2hiIwzVd7BM0ZizbyRqRl65YSnCK-Mo0GwO6j1ilaOC4"
-        },
-        {
-          "url": "https://www.rotowire.com/basketball/headlines/andrew-wiggins-news-good-to-go-friday-541154",
-          "title": "Andrew Wiggins News: Good to go Friday",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYXDi_3mNSeh7D6iOx4zIi_x3KCNTIh5Noy0Czr4Nnlwto2dNuT-BmMTUZ5Q"
-        }
-      ]
-    },
-    {
-      "query": "landry shamet",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:40:00Z",
-      "related_news_urls": [
-        "https://www.postingandtoasting.com/knicks-features-profiles/91633/landry-shamet-has-arrived-why-not-shamwow-for-sixth-man-of-the-year",
-        "https://nypost.com/2026/11/27/sports/landry-shamet-is-sixth-man-of-the-year-and-the-knicks-wont-hear-otherwise/",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK-_xyUDZLKI1ocxQPaQLH8lNVB2gj4jn8SxgJcmexdmvMIl3gKYPpDqCcpAI",
-      "image_credit": "Posting and Toasting",
-      "news": [
-        {
-          "url": "https://www.postingandtoasting.com/knicks-features-profiles/91633/landry-shamet-has-arrived-why-not-shamwow-for-sixth-man-of-the-year",
-          "title": "Landry Shamet has arrived. Why can’t he be Sixth Man of the Year?",
-          "publisher": "Posting and Toasting",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK-_xyUDZLKI1ocxQPaQLH8lNVB2gj4jn8SxgJcmexdmvMIl3gKYPpDqCcpAI"
-        },
-        {
-          "url": "https://nypost.com/2026/11/27/sports/landry-shamet-is-sixth-man-of-the-year-and-the-knicks-wont-hear-otherwise/",
-          "title": "Landry Shamet is the Sixth Man of the Year and the Knicks won’t hear otherwise",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGVKe-IeY4BOHnItkEggLTNPcH3BR3DLqbcw5mwkRvMjTvU0W0jKE70-pyb4"
-        },
-        {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond",
-          "title": "NYK start Brunson, Bridges, Shamet, Hart, Drummond",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgj0cFVHmimVQULrgs0jqzxtxZptVu1yNMFkVr84cXDq6ck1o6ruiP3zcT2Y8"
-        }
-      ]
-    },
-    {
-      "query": "oba femi",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T00:30:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/wrestling/article/wwe-survivor-series-what-im-hearing-about-the-rocks-return-potential-roman-reigns-match-wrestlemania-43-cm-punk-cody-rhodes-190328047.html",
-        "https://www.si.com/fannation/wrestling/wwe/cm-punk-names-dream-match-he-wants-to-see-at-wrestlemania-43",
-        "https://bleacherreport.com/articles/25536536-wwe-rumors-rocks-return-oba-femi-backstage-heat-trick-williams-talks-gunther-punishment"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKk76OtqBPKNFlMHqL0HMo3zX6nqvVzjN2-49jqnseD0VBtILTglWO5i4SjSQ",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/wrestling/article/wwe-survivor-series-what-im-hearing-about-the-rocks-return-potential-roman-reigns-match-wrestlemania-43-cm-punk-cody-rhodes-190328047.html",
-          "title": "WWE Survivor Series: What I'm hearing about The Rock's return and a potential Roman Reigns match",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKk76OtqBPKNFlMHqL0HMo3zX6nqvVzjN2-49jqnseD0VBtILTglWO5i4SjSQ"
-        },
-        {
-          "url": "https://www.si.com/fannation/wrestling/wwe/cm-punk-names-dream-match-he-wants-to-see-at-wrestlemania-43",
-          "title": "CM Punk Names Dream Match He Wants to See at WrestleMania 43",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhAyNkSsMJm1LueCbGzRRXUvkCUH-4ooj-phqJ1oU3IZO_hvb3eopBR6OG03Y"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25536536-wwe-rumors-rocks-return-oba-femi-backstage-heat-trick-williams-talks-gunther-punishment",
-          "title": "WWE Rumors on The Rock's Return & Oba Femi Backstage Heat, Trick Williams Talks Gunther 'Punishment'",
-          "publisher": "Bleacher Report",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSic6btqYSkr_xUCy4lUusq55YkCim7RVMR9tqoCZGcS_2zeZ5iEG6oOtQ5X5g"
-        }
-      ]
-    },
-    {
-      "query": "smackdown",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T00:30:00Z",
-      "related_news_urls": [
+        "https://www.wwe.com/shows/smackdown/2026-11-27",
         "https://bleacherreport.com/liveblogs/25538025-wwe-smackdown-live-updates-results-and-highlights-survivor-series-wargames-2026",
-        "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-27/live/",
-        "https://sports.yahoo.com/wrestling/articles/wwe-smackdown-tonight-pre-taped-153120262.html"
+        "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-27/live/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS9Z1cSXT-syQpDgaYNko6F6ehMIoP73HDHEk8vRM4Peqfk4JzMBaNJOCH_2g",
-      "image_credit": "Bleacher Report",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnNLsqbJp5ouiexB1V34mAoiOrR6S_fMWsPAU1tJux__N5PAKiEM-GD-jHZzc",
+      "image_credit": "WWE",
       "news": [
+        {
+          "url": "https://www.wwe.com/shows/smackdown/2026-11-27",
+          "title": "SmackDown preview: Nov. 27, 2026: Kevin Owens & Finn Bálor join forces against Gunther & Sami Zayn",
+          "publisher": "WWE",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTnNLsqbJp5ouiexB1V34mAoiOrR6S_fMWsPAU1tJux__N5PAKiEM-GD-jHZzc"
+        },
         {
           "url": "https://bleacherreport.com/liveblogs/25538025-wwe-smackdown-live-updates-results-and-highlights-survivor-series-wargames-2026",
           "title": "WWE SmackDown Live Updates, Results and Highlights Before Survivor Series WarGames 2026",
@@ -285,48 +318,41 @@
           "publisher": "CBS Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
-        },
-        {
-          "url": "https://sports.yahoo.com/wrestling/articles/wwe-smackdown-tonight-pre-taped-153120262.html",
-          "title": "WWE SmackDown Tonight Is Pre-Taped — Here Are the Spoilers",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLPUKiFcRKD9jwyqAtIL26OVAKTCUzTq8vWjHGgLIN_9ek80n-MryEArPW-jU"
         }
       ]
     },
     {
-      "query": "michael douglas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T00:30:00Z",
+      "query": "brad pitt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T00:50:00Z",
       "related_news_urls": [
-        "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
-        "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
-        "https://suaragarut.id/en/michael-douglas-family-struggles"
+        "https://www.cnn.com/2026/11/26/entertainment/angelina-jolie-brad-pitt-winery-lawsuit-scli-intl",
+        "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html",
+        "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM",
-      "image_credit": "Demokratis.co.id",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qSfIRd3f8Zah8FNvEBfeKLAsK6XAE2wS4iMQC4ynz017KR0aSxebjzZi1Fw",
+      "image_credit": "CNN",
       "news": [
         {
-          "url": "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
-          "title": "Michael Douglas Reveals Family Struggles in Memoir",
-          "publisher": "Demokratis.co.id",
+          "url": "https://www.cnn.com/2026/11/26/entertainment/angelina-jolie-brad-pitt-winery-lawsuit-scli-intl",
+          "title": "Angelina Jolie and Brad Pitt settle years-long legal battle over French winery",
+          "publisher": "CNN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0qSfIRd3f8Zah8FNvEBfeKLAsK6XAE2wS4iMQC4ynz017KR0aSxebjzZi1Fw"
         },
         {
-          "url": "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
-          "title": "Michael Douglas' health after stage-four cancer diagnosis",
-          "publisher": "Daily Express",
+          "url": "https://www.nytimes.com/2026/11/25/movies/angelina-jolie-brad-pitt-settlement-winery-lawsuit.html",
+          "title": "Angelina Jolie and Brad Pitt Settle Lawsuit That Aired Abuse Allegations",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vxaQ0aNiI6oy4BrEyMmuiymuShtH4SNzGvFNgekBZygGYQouBilI0YXoY0w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkPSJAJU2cAyndtPdfTxoGkMtfRPNRHzd18Et8Vp1_zOUXSM5RoynAFEHGFrE"
         },
         {
-          "url": "https://suaragarut.id/en/michael-douglas-family-struggles",
-          "title": "Michael Douglas Reveals Family Struggles and Cameron's Recovery",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://abcnews.com/GMA/Culture/brad-pitt-angelina-jolie-settle-legal-battle-french/story?id=138454052",
+          "title": "Brad Pitt and Angelina Jolie settle legal battle over French winery",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQf8zc9ZOgjMxqYVn4ufqgCuyiJ6i4ZxVC50sxyACV_T725lH0GHzbSO79i0jY"
         }
       ]
     }
