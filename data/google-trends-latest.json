@@ -3,16 +3,331 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T18:31:10.348012Z",
+  "checked_at": "2026-11-28T19:01:12.492003Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "kansas state vs iowa state",
+      "query": "jack sawyer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:40:00Z",
+      "related_news_urls": [
+        "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-second-year-pass-rusher-goes-down-with-knee-injury.html",
+        "https://steelersdepot.com/2026/11/injury-roundup-steelers-suffer-multiple-defensive-injuries-in-win-over-broncos/",
+        "https://www.rotowire.com/football/headlines/jack-sawyer-injury-wont-return-friday-due-to-knee-injury-650148"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_qZiLHsZuopMIrjla2HE70FiVs07vTSPEAtOLm-B0_XOMTqxcGEyh_HPuRTk",
+      "image_credit": "PennLive.com",
+      "news": [
+        {
+          "url": "https://www.pennlive.com/steelers/2026/11/pittsburgh-steelers-second-year-pass-rusher-goes-down-with-knee-injury.html",
+          "title": "Pittsburgh Steelers’ second-year pass rusher goes down with knee injury",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_qZiLHsZuopMIrjla2HE70FiVs07vTSPEAtOLm-B0_XOMTqxcGEyh_HPuRTk"
+        },
+        {
+          "url": "https://steelersdepot.com/2026/11/injury-roundup-steelers-suffer-multiple-defensive-injuries-in-win-over-broncos/",
+          "title": "Injury Roundup: Steelers Suffer Multiple Defensive Injuries In Win Over Broncos",
+          "publisher": "Steelers Depot",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ4E4HbV5SS8uyf5KRQI31Z_lBygWPraICirbRHbrU9KotPvsIycYV126Ll0dY"
+        },
+        {
+          "url": "https://www.rotowire.com/football/headlines/jack-sawyer-injury-wont-return-friday-due-to-knee-injury-650148",
+          "title": "Jack Sawyer Injury: Won't return Friday due to knee injury",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS23JWBYL6dnyOLlZA2rcExUinkzPcMzDn0_LVDXLYPKOTeKbkhFZkdnO93OqI"
+        }
+      ]
+    },
+    {
+      "query": "d3 football playoffs",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/football/article/2026-11-28/2026-diii-football-championship-bracket-schedule-scores",
+        "https://www.jsonline.com/story/sports/college/2026/11/27/whitewater-platteville-concordia-ncaa-division-iii-football-playoff/92865970007/",
+        "https://www.fubo.tv/welcome/matches/0fd9e4d1-1de6-40b2-8419-3410381cf8f6"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAA8A5BIL6pR1V6mvDd39AY1ipMVd0EY-kbl8u9RvOYGLye1o5OduSyUWUsGM",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-28/2026-diii-football-championship-bracket-schedule-scores",
+          "title": "2026 DIII football championship: Bracket, schedule, scores",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRAA8A5BIL6pR1V6mvDd39AY1ipMVd0EY-kbl8u9RvOYGLye1o5OduSyUWUsGM"
+        },
+        {
+          "url": "https://www.jsonline.com/story/sports/college/2026/11/27/whitewater-platteville-concordia-ncaa-division-iii-football-playoff/92865970007/",
+          "title": "3 Wisconsin teams begin play in NCAA Division III football tournament",
+          "publisher": "Milwaukee Journal Sentinel",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTNNSw2jijwQ3FB7Wl3msBWN-PGb5OVMYAxsZzH9wY5V1FTfPklqiNECph1hYk"
+        },
+        {
+          "url": "https://www.fubo.tv/welcome/matches/0fd9e4d1-1de6-40b2-8419-3410381cf8f6",
+          "title": "Watch Wisconsin-Whitewater vs Claremont Mudd Scripps",
+          "publisher": "Fubo",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRSye3du6e3M2mfTaHAKFovGqzJqVEM4eSEJMbjpaVJ0NuvnB5MsWbnFAAaCI0"
+        }
+      ]
+    },
+    {
+      "query": "siena basketball",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T18:40:00Z",
+      "related_news_urls": [
+        "https://sports.betmgm.com/en/blog/ncaab/siena-seton-hall-prediction-odds-picks-nov-28-college-basketball-jaa/",
+        "https://www.bleachernation.com/picks/2026/11/28/big-east-basketball-predictions-computer-picks-and-best-bets-november-28-2/",
+        "https://www.sportytrader.com/us/picks/siena-saints-seton-hall-pirates-390817/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYiblvtRYaGZSZDSdxMsyQHJ7IQLtMx9A5FEbCcLujLOstdR5w2YJravZtI-g",
+      "image_credit": "sports.betmgm.com",
+      "news": [
+        {
+          "url": "https://sports.betmgm.com/en/blog/ncaab/siena-seton-hall-prediction-odds-picks-nov-28-college-basketball-jaa/",
+          "title": "Siena vs Seton Hall Prediction, Odds & Best Bets Today – NCAAB, Nov. 28",
+          "publisher": "sports.betmgm.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTYiblvtRYaGZSZDSdxMsyQHJ7IQLtMx9A5FEbCcLujLOstdR5w2YJravZtI-g"
+        },
+        {
+          "url": "https://www.bleachernation.com/picks/2026/11/28/big-east-basketball-predictions-computer-picks-and-best-bets-november-28-2/",
+          "title": "Big East Basketball Predictions, Computer Picks and Best Bets | November 28",
+          "publisher": "Bleacher Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQnBSvKLeyGPDBtqJNDlrNZfzI8zIujAFeG6jebFLVVR0Wa7e2RTrpO2XRdHAA"
+        },
+        {
+          "url": "https://www.sportytrader.com/us/picks/siena-saints-seton-hall-pirates-390817/",
+          "title": "Seton Hall Pirates vs Siena Saints Prediction & Picks - NCAAB Men",
+          "publisher": "SportyTrader",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTU-t5dcb4M5bV7aBcAMujkp1e-I9jKUjJw9N0_deEAgrjaOP-Y8UDmuTPq3U8"
+        }
+      ]
+    },
+    {
+      "query": "pat freiermuth",
       "approx_searches": "2000+",
+      "published_at": "2026-11-28T18:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/fridays-game-gives-steelers-fans-a-chance-to-chime-in-on-recent-events",
+        "https://sports.yahoo.com/general/videos/pat-freiermuth-credits-tj-watt-120000124.html",
+        "https://demokratis.co.id/en/steelers-fans-broncos-game-reaction"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHokwt4_oRpE5OCk1gZhJygpJ6uhJwX5HkKRRaQGhc4WtSTvN_jtxrj5ndj1g",
+      "image_credit": "NBC Sports",
+      "news": [
+        {
+          "url": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/fridays-game-gives-steelers-fans-a-chance-to-chime-in-on-recent-events",
+          "title": "Friday’s game gives Steelers fans a chance to chime in on recent events",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSHokwt4_oRpE5OCk1gZhJygpJ6uhJwX5HkKRRaQGhc4WtSTvN_jtxrj5ndj1g"
+        },
+        {
+          "url": "https://sports.yahoo.com/general/videos/pat-freiermuth-credits-tj-watt-120000124.html",
+          "title": "Pat Freiermuth Credits TJ Watt and Cam Heyward's Pregame Message in Win Over Broncos",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqtTjOjbsgeuFfRORZpOyyUyjcCcnReqOWx-9iNbxA4NfqYSF9NtZ_QYkZ94"
+        },
+        {
+          "url": "https://demokratis.co.id/en/steelers-fans-broncos-game-reaction",
+          "title": "Steelers Fans Prepare to Voice Frustration Against Broncos",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0LrunhHJpXfLLQBX3MzAkJ9eM3F-plYy7M46vxIyi3b0qteTgxqFdNR__Gbg"
+        }
+      ]
+    },
+    {
+      "query": "um game",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:30:00Z",
+      "related_news_urls": [
+        "https://www.maizenbrew.com/michigan-mens-basketball/129730/5-takeaways-from-michigan-kansas-state-elliot-cadeau-trey-mckenney-joseph-hartman",
+        "https://www.yardbarker.com/college_basketball/articles/michigan_kansas_state_determined_to_leave_las_vegas_with_a_win/s1_17048_44626391",
+        "https://www.yardbarker.com/college_basketball/articles/michigan_uses_huge_first_half_to_swamp_kansas_state/s1_17048_44628812"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSByA9wCEzis2gflhn8EOx8Wuv9p4R4zkNnRDHwHvzgL_BFiSRMjSsg_tnqkAY",
+      "image_credit": "Maize n Brew",
+      "news": [
+        {
+          "url": "https://www.maizenbrew.com/michigan-mens-basketball/129730/5-takeaways-from-michigan-kansas-state-elliot-cadeau-trey-mckenney-joseph-hartman",
+          "title": "5 Takeaways from Michigan’s bounce-back win over Kansas State",
+          "publisher": "Maize n Brew",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSByA9wCEzis2gflhn8EOx8Wuv9p4R4zkNnRDHwHvzgL_BFiSRMjSsg_tnqkAY"
+        },
+        {
+          "url": "https://www.yardbarker.com/college_basketball/articles/michigan_kansas_state_determined_to_leave_las_vegas_with_a_win/s1_17048_44626391",
+          "title": "Michigan, Kansas State determined to leave Las Vegas with a win",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT6FXTHacEguL5SKeIrOqXkGQO_WCIebTRAMIGG_LTB3DxTpjepv0mN8IrdOUU"
+        },
+        {
+          "url": "https://www.yardbarker.com/college_basketball/articles/michigan_uses_huge_first_half_to_swamp_kansas_state/s1_17048_44628812",
+          "title": "Michigan uses huge first half to swamp Kansas State",
+          "publisher": "Yardbarker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTBRb2cdn2-GHG9YwVTxyaPvbGACUVW3ljYuyqqhzWtHTrVR4O8k3PZT0S0Ilk"
+        }
+      ]
+    },
+    {
+      "query": "macará - ldu quito",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T18:30:00Z",
+      "related_news_urls": [
+        "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17562792/macara-vs-liga-de-quito-por-liga-ecuabet-equipo-fecha-hora-y-tv-en-vivo",
+        "https://as.com/apuestas/pronosticos/macara-vs-ldu-quito-pronostico-28-11-2026/",
+        "https://www.primicias.ec/deportes/ligapro/macara/envivo-liga-quito-resultado-ver-partido-tv-137952/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhkEDYRTnp3pKlg76PFf2NtXLZmdBbp5uhmt1sYm8AAi0w7FcW_iAR_8frswE",
+      "image_credit": "ESPN Deportes",
+      "news": [
+        {
+          "url": "https://espndeportes.espn.com/futbol/ecuador/nota/_/id/17562792/macara-vs-liga-de-quito-por-liga-ecuabet-equipo-fecha-hora-y-tv-en-vivo",
+          "title": "Cuándo juega Macará vs. Liga de Quito por Liga Ecuabet: equipo, fecha, hora y TV en vivo",
+          "publisher": "ESPN Deportes",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhkEDYRTnp3pKlg76PFf2NtXLZmdBbp5uhmt1sYm8AAi0w7FcW_iAR_8frswE"
+        },
+        {
+          "url": "https://as.com/apuestas/pronosticos/macara-vs-ldu-quito-pronostico-28-11-2026/",
+          "title": "Macará - LDU Quito | Pronóstico y cuotas 28.11.2026",
+          "publisher": "Diario AS",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT6f02MTn0DMqTMPGjlZ7PvEleu2i5noTkhvpCH-Z53zYirPi34_2tUvqnfXec"
+        },
+        {
+          "url": "https://www.primicias.ec/deportes/ligapro/macara/envivo-liga-quito-resultado-ver-partido-tv-137952/",
+          "title": "EN VIVO| Macará vs. Liga de Quito en un partido clave por el último cupo de Copa Libertadores 2027",
+          "publisher": "Primicias",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS1_aU0dZ2OMuZF7bvISM0lHsP-un5qLFHu4eolvcn2kArdBkKWWAuTsydXQEg"
+        }
+      ]
+    },
+    {
+      "query": "tua tagovailoa",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T18:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nfl/story/_/id/50623183/sources-falcons-agree-part-ways-qb-tua-tagovailoa",
+        "https://bleacherreport.com/articles/25459173-tua-tagovailoa-cut-falcons-gm-releases-statement-qb-joins-aaron-rodgers-daniel-jones-fa",
+        "https://www.atlantafalcons.com/news/atlanta-falcons-release-qb-tua-tagovailoa"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkv2mz0bJRhgSfaTiByOAP7XzRN3MKmx5Cs4ufCJouijmPibPVUU84Dnbp9-Y",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50623183/sources-falcons-agree-part-ways-qb-tua-tagovailoa",
+          "title": "Sources: Falcons to part with Tua Tagovailoa, ending QB's brief Atlanta stint",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTkv2mz0bJRhgSfaTiByOAP7XzRN3MKmx5Cs4ufCJouijmPibPVUU84Dnbp9-Y"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25459173-tua-tagovailoa-cut-falcons-gm-releases-statement-qb-joins-aaron-rodgers-daniel-jones-fa",
+          "title": "Tua Tagovailoa Cut, Falcons GM Releases Statement as QB Joins Aaron Rodgers, Daniel Jones in FA",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwyh9awDhdK9sJpeq2NMeYR1QoFgU1RxJITGJsBYL2Wo9K2jTVC7xm62tNzE4"
+        },
+        {
+          "url": "https://www.atlantafalcons.com/news/atlanta-falcons-release-qb-tua-tagovailoa",
+          "title": "Atlanta Falcons release QB Tua Tagovailoa",
+          "publisher": "Atlanta Falcons",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGKC-LZbaQJuaZkUsKii8M189wt54c43ahIg_VZ-1EiCVbowmQ5oqAxIvtvRk"
+        }
+      ]
+    },
+    {
+      "query": "retirement",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T18:20:00Z",
+      "related_news_urls": [
+        "https://www.usatoday.com/story/money/personal-finance/2026/11/28/most-americans-plan-to-work-in-retirement/92941539007/",
+        "https://www.indexbox.io/blog/americans-expect-to-work-in-retirement-but-few-do/",
+        "https://www.moneylion.com/trending/money/big-retirement-expenses-nobody-warns-too-late"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_0UNIsClEQS73dk-blkHh7QBVn7o2FteCd2joUo7eHgufJkgvkVO3qYViH8",
+      "image_credit": "USA Today",
+      "news": [
+        {
+          "url": "https://www.usatoday.com/story/money/personal-finance/2026/11/28/most-americans-plan-to-work-in-retirement/92941539007/",
+          "title": "Planning to work in retirement? Don't count on it",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf_0UNIsClEQS73dk-blkHh7QBVn7o2FteCd2joUo7eHgufJkgvkVO3qYViH8"
+        },
+        {
+          "url": "https://www.indexbox.io/blog/americans-expect-to-work-in-retirement-but-few-do/",
+          "title": "Americans Expect to Work in Retirement, but Few Do",
+          "publisher": "IndexBox",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTuAMVR6Mt2B7nktcs6gef9Nw7eVw2YQA1FkmjDnNJ0DR_nRGZlge8vpya23_g"
+        },
+        {
+          "url": "https://www.moneylion.com/trending/money/big-retirement-expenses-nobody-warns-too-late",
+          "title": "6 Retirement Expenses Nobody Warns You About",
+          "publisher": "MoneyLion",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT4UMPwcstW2SJVxmQ5F4BCPI1lcKnuVYxXb_wONShlb49iSM0kEUHP0AqYE4U"
+        }
+      ]
+    },
+    {
+      "query": "nm state vs middle tenn.",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T18:20:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/mtsu-vs-mexico-state-live-160030837.html",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/new-mexico-state-vs-middle-tennessee-blue-raiders-prediction-odds-2026-11-28/",
+        "https://gomiddle.substack.com/p/behind-enemy-lines-new-mexico-state"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZqLMfm35N7VupJ-ttbHcat_Fe-8jip9i93E5Fks-vS7WuBVdEHLX6Y4X6DY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/mtsu-vs-mexico-state-live-160030837.html",
+          "title": "MTSU vs. New Mexico State live updates from college football Week 13 game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQZqLMfm35N7VupJ-ttbHcat_Fe-8jip9i93E5Fks-vS7WuBVdEHLX6Y4X6DY"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/new-mexico-state-vs-middle-tennessee-blue-raiders-prediction-odds-2026-11-28/",
+          "title": "New Mexico State vs Middle Tennessee Prediction, Picks & Odds | 28 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
+        },
+        {
+          "url": "https://gomiddle.substack.com/p/behind-enemy-lines-new-mexico-state",
+          "title": "Behind Enemy Lines: New Mexico State",
+          "publisher": "Substack",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf3tTIigqoYJkDyS0bENaE-8g3Rsr1alwq0FizWZXvsC5Q0sAYER1KAK-kdqE"
+        }
+      ]
+    },
+    {
+      "query": "kansas state vs iowa state",
+      "approx_searches": "5000+",
       "published_at": "2026-11-28T18:10:00Z",
       "related_news_urls": [
         "https://www.desmoinesregister.com/story/sports/college/iowa-state/football/2026/11/28/iowa-state-football-kansas-state-k-state-where-to-watch-tv-channel/92942499007/",
-        "https://sports.yahoo.com/college-football/articles/iowa-state-football-vs-kansas-130004167.html",
+        "https://sports.yahoo.com/college-football/articles/kansas-state-iowa-state-2026-180000490.html",
         "https://www.kcci.com/article/iowa-state-kansas-state-football-farmageddon-score-updates-highlights/74554510"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTaGahls2HN_rexjuO4-G1R7tKPvmcca5kIgHQxtUtzAT934ZbYrFenlL0Tw",
@@ -26,11 +341,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQRTaGahls2HN_rexjuO4-G1R7tKPvmcca5kIgHQxtUtzAT934ZbYrFenlL0Tw"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/articles/iowa-state-football-vs-kansas-130004167.html",
-          "title": "Iowa State Football vs. Kansas State: 3 Bold Predictions for Farmageddon",
+          "url": "https://sports.yahoo.com/college-football/articles/kansas-state-iowa-state-2026-180000490.html",
+          "title": "Kansas State at Iowa State: 2026 Game 12",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbzyZsG4WR6LgqJoeYqEVWN07gzv3HuFdAKY9ZerelqOU_lx0RoI8g-Y9N8xI"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRO38O2Uzy1Ys19ovaNYhbwgZOnPrP8e2pjvGChV2IZ6L8Jlc-tj7zoOqwOXhU"
         },
         {
           "url": "https://www.kcci.com/article/iowa-state-kansas-state-football-farmageddon-score-updates-highlights/74554510",
@@ -38,321 +353,6 @@
           "publisher": "KCCI",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT1saSQS7b_BArsmNF4E_x4dUUuPh8P2PVTGGnluGz4o_ZedcPPa0Eu6PCrWgs"
-        }
-      ]
-    },
-    {
-      "query": "coastal carolina vs james madison",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T18:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/watch-coastal-carolina-vs-james-175500520.html",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/coastal-carolina-chanticleers-vs-james-madison-dukes-prediction-odds-2026-11-28/",
-        "https://www.dnronline.com/sports/level/college/james_madison_university/ryan-beard-coastal-carolina-football-embracing-opportunity-in-season-finale-at-jmu/article_24ef76d7-8270-509f-8625-4916ab213fdd.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSllw5B1lQwJqb2VJHafaGU76BhL0kr4LO_mgLQ7CwIBrbmwfKn_SF9AZUXkgs",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/watch-coastal-carolina-vs-james-175500520.html",
-          "title": "How to watch Coastal Carolina vs James Madison: Live stream NCAA College Football, TV channel",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSllw5B1lQwJqb2VJHafaGU76BhL0kr4LO_mgLQ7CwIBrbmwfKn_SF9AZUXkgs"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/coastal-carolina-chanticleers-vs-james-madison-dukes-prediction-odds-2026-11-28/",
-          "title": "Coastal Carolina vs James Madison Prediction, Picks & Odds | 28 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRcPd-FURvkQdl2zEa929luSWTdsOGCG9ClAMzdMuwAbilFIaS32JCEzbDESdc"
-        },
-        {
-          "url": "https://www.dnronline.com/sports/level/college/james_madison_university/ryan-beard-coastal-carolina-football-embracing-opportunity-in-season-finale-at-jmu/article_24ef76d7-8270-509f-8625-4916ab213fdd.html",
-          "title": "Ryan Beard, Coastal Carolina football embracing opportunity in season finale at JMU",
-          "publisher": "Daily News-Record",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhcbSj7om4ZV88gLndSyL7798iAF-2E4VxcEBvKC38-gGoSxpWqON566kCnr0"
-        }
-      ]
-    },
-    {
-      "query": "grambling st vs southern u",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T18:10:00Z",
-      "related_news_urls": [
-        "https://www.wwltv.com/article/sports/local-sports/bayou-classic-tv-broadcast-changes-due-to-macys-parade-postponement/289-4702ae29-122c-41d2-9a86-10e0fa300939",
-        "https://sports.yahoo.com/college-football/articles/bayou-classic-returns-saturday-53rd-170000353.html",
-        "https://www.wdsu.com/article/nopd-warns-against-unauthorized-rideshare-drivers-during-bayou-classic-weekend/74552784"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtq3klWJ58ip-4RC01ROZA2TAIhE0iooTxe2TI-iZgh3TtPTuVXrNpbg9r6S4",
-      "image_credit": "WWLTV.com",
-      "news": [
-        {
-          "url": "https://www.wwltv.com/article/sports/local-sports/bayou-classic-tv-broadcast-changes-due-to-macys-parade-postponement/289-4702ae29-122c-41d2-9a86-10e0fa300939",
-          "title": "Bayou Classic TV broadcast changes due to Macy's parade postponement",
-          "publisher": "WWLTV.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTtq3klWJ58ip-4RC01ROZA2TAIhE0iooTxe2TI-iZgh3TtPTuVXrNpbg9r6S4"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/bayou-classic-returns-saturday-53rd-170000353.html",
-          "title": "Bayou Classic returns Saturday for its 53rd year",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQtyL1MsmsBEwsoHFwK5-_QFySAjXdC0vuKdMKLDVMVTJJz-bQlRitI2bx6O9o"
-        },
-        {
-          "url": "https://www.wdsu.com/article/nopd-warns-against-unauthorized-rideshare-drivers-during-bayou-classic-weekend/74552784",
-          "title": "NOPD warns against unauthorized rideshare drivers during Bayou Classic weekend",
-          "publisher": "WDSU",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-cCmaTA-OiNS8PTUt384OwPH6X1m9X1J5cEW-bFw8ao1XyAM7nY2PVN4iEQ"
-        }
-      ]
-    },
-    {
-      "query": "nolan james jr",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T18:10:00Z",
-      "related_news_urls": [
-        "https://www.si.com/college/notredame/football/notre-dame-running-back-nolan-james-jr-all-purpose-star",
-        "https://www.on3.com/teams/notre-dame-fighting-irish/news/rb-nolan-james-jr-keeps-proving-his-value-to-notre-dames-offense/",
-        "https://www.rotoballer.com/player-news/nolan-james-jr-looking-to-stay-hot-in-regular-season-finale/2002872"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjAE1PD3L2XL8Jpv9PjdkhDIC2zwCjzeKr3lMdxUlvGfPPtx_xo26UvIM4qOg",
-      "image_credit": "Sports Illustrated",
-      "news": [
-        {
-          "url": "https://www.si.com/college/notredame/football/notre-dame-running-back-nolan-james-jr-all-purpose-star",
-          "title": "Notre Dame Has an All-Purpose Star in Running Back Nolan James Jr.",
-          "publisher": "Sports Illustrated",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjAE1PD3L2XL8Jpv9PjdkhDIC2zwCjzeKr3lMdxUlvGfPPtx_xo26UvIM4qOg"
-        },
-        {
-          "url": "https://www.on3.com/teams/notre-dame-fighting-irish/news/rb-nolan-james-jr-keeps-proving-his-value-to-notre-dames-offense/",
-          "title": "RB Nolan James Jr. keeps proving his value to Notre Dame's offense",
-          "publisher": "On3",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQT0cpPapcdSsnJmvIPYSuPE7cE_SakEAdYOIZjge7RNc0YYeXSgbF3IZE3WE0"
-        },
-        {
-          "url": "https://www.rotoballer.com/player-news/nolan-james-jr-looking-to-stay-hot-in-regular-season-finale/2002872",
-          "title": "Nolan James Jr. Looking to Stay Hot in Regular Season Finale - College Football News | Fantasy CFB",
-          "publisher": "RotoBaller",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT4kWcOjlEfSJ14D6VwWg2LfJUMqYCyvOeSl-BIdbkbCxKa4RxDNlvW_8458I8"
-        }
-      ]
-    },
-    {
-      "query": "ucf vs colorado",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T18:00:00Z",
-      "related_news_urls": [
-        "https://www.denverpost.com/2026/11/27/cu-buffs-ucf-football-2026-tv-predictions/",
-        "https://sports.yahoo.com/college-football/articles/colorado-buffaloes-vs-ucf-knights-135500035.html",
-        "https://www.coloradoan.com/story/sports/college/2026/11/28/ucf-colorado-channel-today-time-tv-schedule-streaming-info/92946645007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyKFcHFP7S-EmRMUGnywvSvu2i9sPfHr1Nq55XEeiWLYPsX_Be7WG3zu3Dyc8",
-      "image_credit": "The Denver Post",
-      "news": [
-        {
-          "url": "https://www.denverpost.com/2026/11/27/cu-buffs-ucf-football-2026-tv-predictions/",
-          "title": "CU Buffs vs. UCF football: How to watch, keys to the game, odds, staff predictions",
-          "publisher": "The Denver Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQyKFcHFP7S-EmRMUGnywvSvu2i9sPfHr1Nq55XEeiWLYPsX_Be7WG3zu3Dyc8"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/colorado-buffaloes-vs-ucf-knights-135500035.html",
-          "title": "Colorado Buffaloes vs. UCF Knights Final Prediction",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT_8p0lB2c92caQDWbiCERtw7CVWqefgumM10N8kmbjDRFGEMTCVjijb2pzr58"
-        },
-        {
-          "url": "https://www.coloradoan.com/story/sports/college/2026/11/28/ucf-colorado-channel-today-time-tv-schedule-streaming-info/92946645007/",
-          "title": "Where to watch UCF vs Colorado today: Time, TV channel for Week 13",
-          "publisher": "The Coloradoan",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqKa4mQv2onHQcaHVjES-R00u3stWeF6ZQFKbbKeLVgssFcOtjhU8oEcaQkiI"
-        }
-      ]
-    },
-    {
-      "query": "chrisean rock",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T18:00:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/entertainment/videos/chrisean-rock-reveals-shes-pregnant-174805702.html",
-        "https://theshaderoom.com/chrisean-rock-pregnancy-announcement-blueface-reacts-shock-fans-shade-room/",
-        "https://www.tmz.com/2026/11/28/chrisean-rock-pregnant/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxggvGqEC8v7SF9J2nuu7yziFb16EIbR_RfXUpe7iEcagTUcnRRZvxXCayTSI",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/entertainment/videos/chrisean-rock-reveals-shes-pregnant-174805702.html",
-          "title": "Chrisean Rock Reveals She's Pregnant By Blueface Again",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxggvGqEC8v7SF9J2nuu7yziFb16EIbR_RfXUpe7iEcagTUcnRRZvxXCayTSI"
-        },
-        {
-          "url": "https://theshaderoom.com/chrisean-rock-pregnancy-announcement-blueface-reacts-shock-fans-shade-room/",
-          "title": "Baby On Board! Chrisean Rock Shakes Up The Internet After Revealing She's Pregnant During Livestream (VIDEO)",
-          "publisher": "The Shade Room",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQndJkR4-4RKMOlG8acAFKo7mPXGgNuu1KW9ZTQGxDOD67pbbTC5gKm0qooBzc"
-        },
-        {
-          "url": "https://www.tmz.com/2026/11/28/chrisean-rock-pregnant/",
-          "title": "Chrisean Rock Reveals She’s Pregnant With Her Second Child",
-          "publisher": "TMZ",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQloR5H054yInsp0tDLDkb9e3-98d0Rj33M9qco79ur14EuH-wsOLIf_oWf6H0"
-        }
-      ]
-    },
-    {
-      "query": "killington world cup",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T18:00:00Z",
-      "related_news_urls": [
-        "https://www.bostonglobe.com/2026/11/23/sports/mikaela-shiffrin-killington-return/",
-        "https://www.wcax.com/2026/11/27/fis-world-cup-returns-killington-amid-foggy-wet-weather/",
-        "https://www.nbcsports.com/olympics/news/mikaela-shiffrin-killington-how-to-watch-world-cup-alpine-skiing"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtXFMmcA95NVJbEE27rqA_IPDzdaSvcpvQKr6iZXLanqEkrOz4gLCXCLx1NOU",
-      "image_credit": "The Boston Globe",
-      "news": [
-        {
-          "url": "https://www.bostonglobe.com/2026/11/23/sports/mikaela-shiffrin-killington-return/",
-          "title": "Mikaela Shiffrin channels Killington triumphs over trauma in return to ski hill where she crashed",
-          "publisher": "The Boston Globe",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRtXFMmcA95NVJbEE27rqA_IPDzdaSvcpvQKr6iZXLanqEkrOz4gLCXCLx1NOU"
-        },
-        {
-          "url": "https://www.wcax.com/2026/11/27/fis-world-cup-returns-killington-amid-foggy-wet-weather/",
-          "title": "FIS World Cup returns to Killington amid foggy, wet weather",
-          "publisher": "WCAX",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQs11rVkwf1Pu6ki8bIM-zATqXfNR2Hip8cKLvvuh2OHT_QL-JggOpUJFr9e9I"
-        },
-        {
-          "url": "https://www.nbcsports.com/olympics/news/mikaela-shiffrin-killington-how-to-watch-world-cup-alpine-skiing",
-          "title": "Stifel Killington Cup: How to watch Mikaela Shiffrin at Alpine skiing World Cup",
-          "publisher": "NBC Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQB0YnYToUtVnmDU0QuulL9pt7rRmIastLJRwNBFP9YfYvHhDd-iAXaDWxR094"
-        }
-      ]
-    },
-    {
-      "query": "lax earthquake",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T17:50:00Z",
-      "related_news_urls": [
-        "https://demokratis.co.id/en/california-earthquakes-lax-fire",
-        "https://cwibc.co.id/en/california-small-earthquakes-november",
-        "https://bsinews.id/en/california-earthquake-manhattan-beach-geysers"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHIyTXMAeDc62Vnq20S7RyDwlQCwPBC0YYFH9SltnEfoBtqenbd1iOV8dkaA",
-      "image_credit": "Demokratis.co.id",
-      "news": [
-        {
-          "url": "https://demokratis.co.id/en/california-earthquakes-lax-fire",
-          "title": "California Records Separate Earthquakes as LAX Fire Emerges",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrHIyTXMAeDc62Vnq20S7RyDwlQCwPBC0YYFH9SltnEfoBtqenbd1iOV8dkaA"
-        },
-        {
-          "url": "https://cwibc.co.id/en/california-small-earthquakes-november",
-          "title": "Small Earthquakes Shake Two California Areas in November",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHwm0ufPoRX3ohCBYVUQ5ZhqCC0Y_1Bh_jLfRgktfb_krx96OdvKca8eEa63M"
-        },
-        {
-          "url": "https://bsinews.id/en/california-earthquake-manhattan-beach-geysers",
-          "title": "California Records 4.7 and 2.1 Magnitude Earthquakes",
-          "publisher": "bsinews.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTv0ga6H5wBoASo-nP75Z9ni08X0eo2c6Hw9KyCxGE68j8O_TJJRaFsTu_0LRY"
-        }
-      ]
-    },
-    {
-      "query": "lehigh football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:50:00Z",
-      "related_news_urls": [
-        "https://cwibc.co.id/en/lehigh-albany-fcs-playoff-preview",
-        "https://sports.yahoo.com/college-football/articles/ualbany-football-ready-let-rip-203000338.html",
-        "https://www.college-sports-journal.com/fcs-playoffs-round-one-preview-hidden-history-gives-albany-lehigh-playoff-game-extra-juice/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9gltv41W55l-bwebov80DpxTUVBywi62pqVP6iEXX2PonZ5aepyTfO9NOB8",
-      "image_credit": "cwibc.co.id",
-      "news": [
-        {
-          "url": "https://cwibc.co.id/en/lehigh-albany-fcs-playoff-preview",
-          "title": "Lehigh Faces Albany Behind Yoder in FCS Playoff Opener",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt9gltv41W55l-bwebov80DpxTUVBywi62pqVP6iEXX2PonZ5aepyTfO9NOB8"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/ualbany-football-ready-let-rip-203000338.html",
-          "title": "UAlbany football ready to 'let it rip' as underdog at Lehigh in FCS playoffs",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6zsw574r73izYMo6TnVBMcwCfMfba895wWRdsMRXUXZ2PdBXoT15TEftHTx4"
-        },
-        {
-          "url": "https://www.college-sports-journal.com/fcs-playoffs-round-one-preview-hidden-history-gives-albany-lehigh-playoff-game-extra-juice/",
-          "title": "FCS PLAYOFFS ROUND ONE PREVIEW: Hidden History Gives UAlbany/Lehigh Playoff Game Extra Juice",
-          "publisher": "College Sports Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6toszPyuaGSS0jJsmqYs-MPyE7aKQGYyDkvuKTRuHY0PP6TM4Afzk60fm0k"
-        }
-      ]
-    },
-    {
-      "query": "lax",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:50:00Z",
-      "related_news_urls": [
-        "https://www.yahoo.com/news/us/articles/traveler-says-los-angeles-airport-050000283.html",
-        "https://www.the-sun.com/money/17366723/los-angeles-airport-tipping-crowns-restaurant-bar/",
-        "https://nypost.com/2026/11/25/lifestyle/lax-traveler-exposes-airport-restaurants-sneaky-auto-tip-policy/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJdFvSEsSo-Xu4SwmzAzlLHic_yor8A4xSh0YYN0OWVOsAMhFw-bInNW4Onw",
-      "image_credit": "Yahoo",
-      "news": [
-        {
-          "url": "https://www.yahoo.com/news/us/articles/traveler-says-los-angeles-airport-050000283.html",
-          "title": "Traveler says a Los Angeles airport bar added 20% to his $120.25 tab, then asked him to tip again: ‘It’s just taking advantage of travelers’",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWJdFvSEsSo-Xu4SwmzAzlLHic_yor8A4xSh0YYN0OWVOsAMhFw-bInNW4Onw"
-        },
-        {
-          "url": "https://www.the-sun.com/money/17366723/los-angeles-airport-tipping-crowns-restaurant-bar/",
-          "title": "US airport diners could be asked to tip TWICE under little-known policy that added $24 to traveler’s drinks bill",
-          "publisher": "The Sun",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-thxruzGHZA8IiMRQ75wOC-joKZDyeooHao2zvTQnEE4TxeYxN731SEAA5tM"
-        },
-        {
-          "url": "https://nypost.com/2026/11/25/lifestyle/lax-traveler-exposes-airport-restaurants-sneaky-auto-tip-policy/",
-          "title": "LAX passenger exposes ‘sneaky’ auto-tip at airport restaurant — prompting rallying calls for ‘uprising’",
-          "publisher": "New York Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWJMClX_L0FB26ZY242FcNSJrNqjpMIL96KKvfXmSw-WJ2PODy1I4ISrf6TpI"
         }
       ]
     }
