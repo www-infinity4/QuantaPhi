@@ -3,27 +3,62 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T07:30:44.144937Z",
+  "checked_at": "2026-11-28T08:01:15.447167Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "prisoners",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T07:20:00Z",
+      "related_news_urls": [
+        "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
+        "https://www.cnn.com/2026/11/27/us/new-mexico-pregnant-prison-inmate-escape-hnk",
+        "https://www.washingtonpost.com/nation/2026/11/27/pregnant-inmate-rebecca-taylor-escapes-prison-vehicle-albuquerque/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJIu2VFCB05hkyeS06kFDUVaLyCarCZZu2dSyz-O3rjEUFhtAie_ulixkzJa0",
+      "image_credit": "CBS News",
+      "news": [
+        {
+          "url": "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
+          "title": "Pregnant prisoner escapes in corrections vehicle after officers stop at Whataburger in New Mexico",
+          "publisher": "CBS News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJIu2VFCB05hkyeS06kFDUVaLyCarCZZu2dSyz-O3rjEUFhtAie_ulixkzJa0"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/27/us/new-mexico-pregnant-prison-inmate-escape-hnk",
+          "title": "New Mexico authorities search for pregnant woman who escaped during prison transport",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8zQHQn9Oxa10Em2jBUAinBb8l-l0IeAuVKPeFeI9Cou29sW63Y-8935rS-YE"
+        },
+        {
+          "url": "https://www.washingtonpost.com/nation/2026/11/27/pregnant-inmate-rebecca-taylor-escapes-prison-vehicle-albuquerque/",
+          "title": "Pregnant prisoner escapes from official vehicle in New Mexico",
+          "publisher": "The Washington Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStBoCwVuHEtbj84T48i_wRzLy0dewMq6dd53b7oEt88E6lvRdxwK5u_NAFi3w"
+        }
+      ]
+    },
     {
       "query": "beach hazards statement",
       "approx_searches": "200+",
       "published_at": "2026-11-28T07:10:00Z",
       "related_news_urls": [
-        "https://www.sacbee.com/news/weather-news/article318283659.html",
+        "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
         "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
-        "https://www.kuam.com/story/370530664/rip-current-small-craft-advisory-in-effect-this-week"
+        "https://demokratis.co.id/en/nws-southern-california-beach-hazards"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFJDpXudYZ__CZChemFmsaVBGzzZNh-0Fjy-z0ngvmAnHTeHYEeu4S0Tks8k",
-      "image_credit": "Sacramento Bee",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys",
+      "image_credit": "Los Angeles Daily News",
       "news": [
         {
-          "url": "https://www.sacbee.com/news/weather-news/article318283659.html",
-          "title": "UPDATE: Beach hazards statement for Catalina and Santa Barbara Islands",
-          "publisher": "Sacramento Bee",
+          "url": "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
+          "title": "High surf advisory in place for Malibu and Los Angeles County Beaches until early Saturday evening",
+          "publisher": "Los Angeles Daily News",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKFJDpXudYZ__CZChemFmsaVBGzzZNh-0Fjy-z0ngvmAnHTeHYEeu4S0Tks8k"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys"
         },
         {
           "url": "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
@@ -33,11 +68,11 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxbt8I4G_AwQBqNSUbsA8Cbvcd2ili07VIrjVO5q21a_07M7JSds4YrrnnbKo"
         },
         {
-          "url": "https://www.kuam.com/story/370530664/rip-current-small-craft-advisory-in-effect-this-week",
-          "title": "Rip current, small craft advisory in effect this week",
-          "publisher": "KUAM",
+          "url": "https://demokratis.co.id/en/nws-southern-california-beach-hazards",
+          "title": "NWS Warns of Dangerous Surf and Coastal Flooding in Southern California",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSubWE5ZR60c9cXPbAS7gTB6R_MtNmMLmss-I00eIE82LaHsLxeG_-qoxLCsNU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
         }
       ]
     },
@@ -252,41 +287,6 @@
       ]
     },
     {
-      "query": "wes enis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T05:50:00Z",
-      "related_news_urls": [
-        "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
-        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU",
-      "image_credit": "Creighton University Athletics",
-      "news": [
-        {
-          "url": "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
-          "title": "Men's Basketball Tops TCU in Players Era 16 Semifinal",
-          "publisher": "Creighton University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
-          "title": "Creighton 95-87 TCU (Nov 26, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKwJ-hCAF1eZc4g7hOEUyoIOuFjoRvGIVzsukhBkF2QSEYzzB-zIpRcvw5kGI"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
-          "title": "TCU Horned Frogs play the Creighton Bluejays",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
-        }
-      ]
-    },
-    {
       "query": "dustin hoffman",
       "approx_searches": "1000+",
       "published_at": "2026-11-28T05:50:00Z",
@@ -322,37 +322,37 @@
       ]
     },
     {
-      "query": "gta 6 chapter 3 mission list",
+      "query": "wes enis",
       "approx_searches": "500+",
-      "published_at": "2026-11-28T05:30:00Z",
+      "published_at": "2026-11-28T05:50:00Z",
       "related_news_urls": [
-        "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
-        "https://www.ign.com/wikis/gta-6/Chapter_3_Walkthrough_and_Guide",
-        "https://vocal.media/gamers/what-to-do-before-finishing-chapter-3"
+        "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
+        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk",
-      "image_credit": "VICE",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU",
+      "image_credit": "Creighton University Athletics",
       "news": [
         {
-          "url": "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
-          "title": "How Long Is Chapter 3 in GTA 6? All Missables and Mission List",
-          "publisher": "VICE",
+          "url": "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
+          "title": "Men's Basketball Tops TCU in Players Era 16 Semifinal",
+          "publisher": "Creighton University Athletics",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU"
         },
         {
-          "url": "https://www.ign.com/wikis/gta-6/Chapter_3_Walkthrough_and_Guide",
-          "title": "Chapter 3 Walkthrough and Guide",
-          "publisher": "IGN",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
+          "title": "Creighton 95-87 TCU (Nov 26, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": null
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKwJ-hCAF1eZc4g7hOEUyoIOuFjoRvGIVzsukhBkF2QSEYzzB-zIpRcvw5kGI"
         },
         {
-          "url": "https://vocal.media/gamers/what-to-do-before-finishing-chapter-3",
-          "title": "What to Do Before Finishing Chapter 3",
-          "publisher": "Vocal",
+          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
+          "title": "TCU Horned Frogs play the Creighton Bluejays",
+          "publisher": "FOX Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwt3f0rgJNS1p68UqNHTLauntzIW5ar5Xq0oM1iUhduxRoU9RLHc-p6Ru_nRg"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
         }
       ]
     }
