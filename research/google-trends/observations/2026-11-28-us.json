@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T16:31:00.647613Z",
+  "checked_at": "2026-11-28T17:01:15.135765Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "nc state vs unc",
+      "query": "elche c. f. - atlético madrid",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T16:10:00Z",
+      "published_at": "2026-11-28T16:40:00Z",
       "related_news_urls": [
-        "https://www.wral.com/sports/northcarolina-ncstate-football-rivalry-bowl-eligibility-november-2026/",
-        "https://www.newsobserver.com/sports/college/acc/article318278972.html",
-        "https://247sports.com/college/north-carolina/article/noah-saturdays-nc-state-game-is-a-must-win-for-unc-293349193/"
+        "https://espndeportes.espn.com/futbol/espana/nota/_/id/17568958/martin-anselmi-admiracion-diego-simeone-elche-atletico",
+        "https://www.si.com/es-us/la-posible-alineacion-titular-del-atletico-de-madrid-para-enfrentar-al-elche-28-11-2026",
+        "https://www.infobae.com/espana/agencias/2026/11/28/neto-vuelve-a-la-titularidad-ante-un-atletico-al-que-regresan-barrios-giuliano-y-hjulmand/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGBDCnt7y-pE0S_OR9CkE4y_iYcYyxTT4TxmQWtEefbYS5rEWmwGTOerrAJA",
-      "image_credit": "WRAL",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqtAtlObK2fmLm4kinRBKSSpYWEDbi9xiMDFabuFCWSZfZU61M9VymhbqmEPg",
+      "image_credit": "ESPN Deportes",
       "news": [
         {
-          "url": "https://www.wral.com/sports/northcarolina-ncstate-football-rivalry-bowl-eligibility-november-2026/",
-          "title": "Bowl eligibility and, of course, bragging rights on the line for UNC, NC State",
-          "publisher": "WRAL",
+          "url": "https://espndeportes.espn.com/futbol/espana/nota/_/id/17568958/martin-anselmi-admiracion-diego-simeone-elche-atletico",
+          "title": "Anselmi: \"Tengo una profunda admiración por Simeone\"",
+          "publisher": "ESPN Deportes",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGBDCnt7y-pE0S_OR9CkE4y_iYcYyxTT4TxmQWtEefbYS5rEWmwGTOerrAJA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqtAtlObK2fmLm4kinRBKSSpYWEDbi9xiMDFabuFCWSZfZU61M9VymhbqmEPg"
         },
         {
-          "url": "https://www.newsobserver.com/sports/college/acc/article318278972.html",
-          "title": "UNC or NC State football: Who needs a win more? (Video)",
-          "publisher": "Raleigh News & Observer",
+          "url": "https://www.si.com/es-us/la-posible-alineacion-titular-del-atletico-de-madrid-para-enfrentar-al-elche-28-11-2026",
+          "title": "La posible alineación titular del Atlético de Madrid para enfrentar al Elche",
+          "publisher": "Sports Illustrated",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW4OATmDQQjWyD7wBdutJZq5BTrqJ70KFn60LHQQJ63fFO7SMfeRqyVXPaQO8"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhfysjB1zhvnFp1HTCZQYA9BJY0Kyp0hbkHMVasb3W-BUeDJw9uugcmHeCm2g"
         },
         {
-          "url": "https://247sports.com/college/north-carolina/article/noah-saturdays-nc-state-game-is-a-must-win-for-unc-293349193/",
-          "title": "NOAH: Saturday's NC State Game Is a Must-Win for UNC",
-          "publisher": "247Sports",
+          "url": "https://www.infobae.com/espana/agencias/2026/11/28/neto-vuelve-a-la-titularidad-ante-un-atletico-al-que-regresan-barrios-giuliano-y-hjulmand/",
+          "title": "Neto vuelve a la titularidad ante un Atlético al que regresan Barrios, Giuliano y Hjulmand",
+          "publisher": "Infobae",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnNiNNcgXL8xmoEFTKXzYtn9ojZvktiWDbTS27tgu_5IdbhEBJWgtoWuyCXvo"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCoVJvVj9aGPuXyPjDrxDhOfyjQZ7Om7Bphe3rtlk95gVoUt-mGAUkg7FZN4"
         }
       ]
     },
     {
-      "query": "uconn vs wyoming",
+      "query": "elche vs atlético",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T16:10:00Z",
+      "published_at": "2026-11-28T16:40:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/uconn-vs-wyoming-tv-keys-154821248.html",
-        "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
-        "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/"
+        "https://www.intothecalderon.com/previews/30287/elche-cf-atletico-de-madrid-preview-and-team-news-la-liga",
+        "https://www.nytimes.com/athletic/7818585/2026/11/28/atletico-madrid-vs-elche-cf-stream-how-to-watch-la-liga-nov-28/",
+        "https://en.atleticodemadrid.com/noticias/looking-to-keep-adding-three-points-at-the-martinez-valero"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6eOAfxtzEErwTTck-jY8kyEHv6crFxpZSoEPdZHOC0KFqsErnOjZGYf_CE5g",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzkLbCEH9OE27mEFZcg_d43_l3q634ZQ2r7JEyjMJSDymRP0SrqLEns8IEKUQ",
+      "image_credit": "Into the Calderon",
       "news": [
         {
-          "url": "https://sports.yahoo.com/college-football/articles/uconn-vs-wyoming-tv-keys-154821248.html",
-          "title": "UConn vs. Wyoming: TV info, keys to the game, behind the numbers",
-          "publisher": "Yahoo Sports",
+          "url": "https://www.intothecalderon.com/previews/30287/elche-cf-atletico-de-madrid-preview-and-team-news-la-liga",
+          "title": "How will Atlético Madrid line up against Elche in La Liga?",
+          "publisher": "Into the Calderon",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6eOAfxtzEErwTTck-jY8kyEHv6crFxpZSoEPdZHOC0KFqsErnOjZGYf_CE5g"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRzkLbCEH9OE27mEFZcg_d43_l3q634ZQ2r7JEyjMJSDymRP0SrqLEns8IEKUQ"
         },
         {
-          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
-          "title": "How to Watch UConn vs. Wyoming: TV Channel, Live Stream, Time",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno"
-        },
-        {
-          "url": "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
-          "title": "UConn football will finish its regular season at the highest elevation in the FBS against Wyoming",
-          "publisher": "Hartford Courant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk"
-        }
-      ]
-    },
-    {
-      "query": "la tech vs ga southern",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://www.griceconnect.com/sports/game-preview-georgia-southern-set-to-host-louisiana-tech-in-big-finale-13055746",
-        "https://lincolnparishjournal.com/2026/11/28/bulldogs-face-georgia-southern-with-history-on-the-line/",
-        "https://www.sportsgambler.com/betting-tips/ncaaf/louisiana-tech-bulldogs-vs-georgia-southern-eagles-prediction-odds-2026-11-28/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVWnOGbR04o-EjHY7mWybZSQ7tmPNUevk2AOwTiI87AzOk2jM_7r4upuPsdTg",
-      "image_credit": "Grice Connect",
-      "news": [
-        {
-          "url": "https://www.griceconnect.com/sports/game-preview-georgia-southern-set-to-host-louisiana-tech-in-big-finale-13055746",
-          "title": "GAME PREVIEW | Georgia Southern set to host Louisiana Tech in Big FInale",
-          "publisher": "Grice Connect",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVWnOGbR04o-EjHY7mWybZSQ7tmPNUevk2AOwTiI87AzOk2jM_7r4upuPsdTg"
-        },
-        {
-          "url": "https://lincolnparishjournal.com/2026/11/28/bulldogs-face-georgia-southern-with-history-on-the-line/",
-          "title": "Bulldogs face Georgia Southern with history on the line",
-          "publisher": "Lincoln Parish Journal",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1t8tP9I9dDg0uBdC98T2dFe2-c-Z_gJfqyn2n4wojeq9FrOjklJ_5EXkb0IA"
-        },
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/louisiana-tech-bulldogs-vs-georgia-southern-eagles-prediction-odds-2026-11-28/",
-          "title": "Louisiana Tech vs Georgia Southern Prediction, Picks & Odds | 28 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNYkVtY1dMuxwSfoNEZvddpY0Jwfe16N-15Zcx9mRR9bSr2Rug7jZHsjEMfo4"
-        }
-      ]
-    },
-    {
-      "query": "england vs new zealand",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://www.theguardian.com/sport/2026/nov/27/england-target-historic-all-blacks-treble-after-finally-clicking-into-gear",
-        "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
-        "https://www.bbc.co.uk/sport/rugby-union/articles/cv8e04gj2wwwo"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs07FMOWWIzvPuGpn7F2KVoMsObUxxftVjyJNbIZ45rLK1OYzhTFvvmDEtQC4",
-      "image_credit": "The Guardian",
-      "news": [
-        {
-          "url": "https://www.theguardian.com/sport/2026/nov/27/england-target-historic-all-blacks-treble-after-finally-clicking-into-gear",
-          "title": "England target historic All Blacks treble after finally clicking into gear",
-          "publisher": "The Guardian",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs07FMOWWIzvPuGpn7F2KVoMsObUxxftVjyJNbIZ45rLK1OYzhTFvvmDEtQC4"
-        },
-        {
-          "url": "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
-          "title": "England vs New Zealand LIVE: Nations Championship 2026 - latest score, live text, radio commentary, lineups",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfGFcAQw1sFGz7PrT6RfmffACwr1aoB0ezcYeR7BTsazGQQ5DZwOV11GuMaUQ"
-        },
-        {
-          "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cv8e04gj2wwwo",
-          "title": "England v New Zealand: Greg Fisilau and Freddie Steward in hosts' XV",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8bkTzqMlADGziWyr_Xq7AimgZDS9hx_Y276J9OfxfyNOOAyX4tc-N0CeFac"
-        }
-      ]
-    },
-    {
-      "query": "central mi vs ball state",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/ncaaf/central-michigan-chippewas-vs-ball-state-cardinals-prediction-odds-2026-11-28/",
-        "https://www.thestarpress.com/story/sports/college/ball-state/2026/11/28/ball-state-football-vs-central-michigan-score-stats-updates/92882102007/",
-        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-ball-state-cardinals-v-central-michigan-chippewas/blt2567ac17327fbab0"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/central-michigan-chippewas-vs-ball-state-cardinals-prediction-odds-2026-11-28/",
-          "title": "Central Michigan vs Ball State Prediction, Picks & Odds | 28 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
-        },
-        {
-          "url": "https://www.thestarpress.com/story/sports/college/ball-state/2026/11/28/ball-state-football-vs-central-michigan-score-stats-updates/92882102007/",
-          "title": "Ball State football vs Central Michigan live updates | Score, highlights",
-          "publisher": "The Star Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMk-K5xzPgNlOOGeFMkmK3U-_-uroIXvyEMrG4du7Pd_OYmlmRdo-EMI8iyaQ"
-        },
-        {
-          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-ball-state-cardinals-v-central-michigan-chippewas/blt2567ac17327fbab0",
-          "title": "Watch Ball State Cardinals vs Central Michigan Chippewas NCAAF game LIVE: Online stream, TV channels, and kick-off time",
-          "publisher": "Goal.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTsqrO8AIOzvNEbSOBB135bsABWRsZxnsZz3F4dhHHPxDlVh_y9tSUL5e12dc"
-        }
-      ]
-    },
-    {
-      "query": "gatto",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://www.loscarpone.cai.it/dettaglio/leopardo-delle-nevi-e-gatto-di-pallas-una-ricerca-per-scoprire-la-vita-segreta-dei-felini/",
-        "https://www.pazienti.it/news-di-salute/gatti-e-salute-mentale-cosa-dice-lo-studio-sulla-toxoplasmosi-27112026",
-        "https://www.fanpage.it/kodami/quando-vivere-con-un-gatto-e-difficile-il-legame-tra-benessere-felino-e-salute-psicologica-umana/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQQMPJQELgvCJHPnEdjCTJ8A07V9Y6xIdmyEwXZv7atbOJDbER_CHWuk-9oXk",
-      "image_credit": "Lo Scarpone CAI",
-      "news": [
-        {
-          "url": "https://www.loscarpone.cai.it/dettaglio/leopardo-delle-nevi-e-gatto-di-pallas-una-ricerca-per-scoprire-la-vita-segreta-dei-felini/",
-          "title": "Leopardo delle nevi e gatto di Pallas: una ricerca per scoprire la vita segreta dei felini",
-          "publisher": "Lo Scarpone CAI",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQQMPJQELgvCJHPnEdjCTJ8A07V9Y6xIdmyEwXZv7atbOJDbER_CHWuk-9oXk"
-        },
-        {
-          "url": "https://www.pazienti.it/news-di-salute/gatti-e-salute-mentale-cosa-dice-lo-studio-sulla-toxoplasmosi-27112026",
-          "title": "Gatti e salute mentale: cosa dice lo studio sulla toxoplasmosi",
-          "publisher": "Pazienti.it",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2eShmIVWy5e34_ITcm7bBKFTLUw27zQvt6owG4By2dSoOICHMZZuRKDnIHXo"
-        },
-        {
-          "url": "https://www.fanpage.it/kodami/quando-vivere-con-un-gatto-e-difficile-il-legame-tra-benessere-felino-e-salute-psicologica-umana/",
-          "title": "Quando vivere con un gatto è difficile: il legame tra benessere felino e salute psicologica umana",
-          "publisher": "Fanpage",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8TcoawNHLeCkm1aMWvd5o7Evv7BL47-hwDcZ_ZOMT7Loqpx8WRIlDS1sEwI"
-        }
-      ]
-    },
-    {
-      "query": "charlotte fc",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://www.oregonlive.com/tv/2026/11/watch-chicago-fire-vs-charlotte-fc-today-with-this-black-friday-streaming-deal.html",
-        "https://www.wsoctv.com/news/local/charlotte-fc-prepares-potential-historic-playoff-game-against-chicago-fire/FQMUSJH3JJE33ENTWDC3ZPZMZU/",
-        "https://www.beinsports.com/en-nz/football/mls/articles/abada-lauds-charlottes-attacking-strength-in-mls-playoffs-2026-11-27"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3dgMpaSwDsQBY4x5XqMlWFBYjXOY1JcxHYyAz4Z3D68YSxDgjAbIc1kt5zs",
-      "image_credit": "OregonLive.com",
-      "news": [
-        {
-          "url": "https://www.oregonlive.com/tv/2026/11/watch-chicago-fire-vs-charlotte-fc-today-with-this-black-friday-streaming-deal.html",
-          "title": "Watch Chicago Fire vs. Charlotte FC today with this Black Friday streaming deal",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3dgMpaSwDsQBY4x5XqMlWFBYjXOY1JcxHYyAz4Z3D68YSxDgjAbIc1kt5zs"
-        },
-        {
-          "url": "https://www.wsoctv.com/news/local/charlotte-fc-prepares-potential-historic-playoff-game-against-chicago-fire/FQMUSJH3JJE33ENTWDC3ZPZMZU/",
-          "title": "Charlotte FC prepares for potential historic playoff game against Chicago Fire",
-          "publisher": "WSOC TV",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-U9KjuWQrBlbzxglbT40YsFQ4AJwW_HT5ocV2vxa8Tr8tdIeDuDSFed7h3Rs"
-        },
-        {
-          "url": "https://www.beinsports.com/en-nz/football/mls/articles/abada-lauds-charlottes-attacking-strength-in-mls-playoffs-2026-11-27",
-          "title": "Abada lauds Charlotte's attacking strength in MLS playoffs",
-          "publisher": "beIN SPORTS",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe94yM3uurRyeh5Ua5m6Xpy67L6uxAdUN5Hy6TGZWZfdvJhiH0uQ__SqglOME"
-        }
-      ]
-    },
-    {
-      "query": "georgia vs georgia tech",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T16:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
-        "https://sports.yahoo.com/college-football/articles/georgia-football-vs-georgia-tech-152929222.html",
-        "https://www.ajc.com/sports/2026/11/uga-georgia-tech-rivalry-game-details/"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
-          "title": "Georgia football injury report vs. Georgia Tech",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/georgia-football-vs-georgia-tech-152929222.html",
-          "title": "Georgia Football vs. Georgia Tech: Kickoff Time, TV Channel and Final Rivalry Preview",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWq3WAbL2vlbw3eZxCChY0kv_0dQ8euqA_5tscO7FSLSh_FmbDrvvxRosih9M"
-        },
-        {
-          "url": "https://www.ajc.com/sports/2026/11/uga-georgia-tech-rivalry-game-details/",
-          "title": "Inside the Georgia-Georgia Tech rivalry: Everything to know about the game",
-          "publisher": "The Atlanta Journal-Constitution",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyTFCwcL5o__z02Y8_UqePRs-rtsm9AikZQ2z-JYN5dNnSRg_8-Xd9lS8sxl0"
-        }
-      ]
-    },
-    {
-      "query": "boston college vs miami fl",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T16:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/boston-college-no-7-miami-110004843.html",
-        "https://www.stateoftheu.com/miami-hurricanes-football/90672/how-to-watch-miami-hurricanes-vs-boston-college-eagles-in-week-13",
-        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318250525.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYC1sgfywYPhLJnPpYDCRnYovQ2vyleaiGCdI_K2Y1lcdgqHK5BrR42JsCehU",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/boston-college-no-7-miami-110004843.html",
-          "title": "Boston College at No. 7 Miami: Game Central Rundown, Injury Updates, Depth Chart",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYC1sgfywYPhLJnPpYDCRnYovQ2vyleaiGCdI_K2Y1lcdgqHK5BrR42JsCehU"
-        },
-        {
-          "url": "https://www.stateoftheu.com/miami-hurricanes-football/90672/how-to-watch-miami-hurricanes-vs-boston-college-eagles-in-week-13",
-          "title": "How to watch Miami Hurricanes vs Boston College Eagles in Week 13",
-          "publisher": "State of The U",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3plYqx5hFJ-ZrIY-JQmRiJUyLZma-rYW2YFGLrSUIA6IC8B3airS3uDo4Eo"
-        },
-        {
-          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318250525.html",
-          "title": "Live updates: No. 7 Miami Hurricanes vs. Boston College Eagles",
-          "publisher": "Miami Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQtgYhXtZQp3Xr-7fNr3pbJv5GAZdL--H2T2Yz0N3pBR6vCBzvC_TqwMZf_Fw"
-        }
-      ]
-    },
-    {
-      "query": "alexandra daddario",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T16:00:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/25/movies/hershey-review.html",
-        "https://www.ktvb.com/article/news/local/idaho-today/idaho-today-entertainment/the-story-behind-the-chocolate-finn-wittrock-and-alexandra-daddario-star-in-new-film-hershey/277-0da6bac1-0102-47ad-9d6b-3c0337d72cc6",
-        "https://www.post-journal.com/news/top-stories/2026/11/incredibly-moving-catherine-hershey-jamestown-native-hits-silver-screen-with-premiere-of-hershey-this-week/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oLHITELsFUTXUUNw05rLG3pMVsNS6hp-iUFxzHEJpwcLtRvTGHgIKC987aQ",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/25/movies/hershey-review.html",
-          "title": "‘Hershey’ Review: A Vanilla Movie About Chocolate",
+          "url": "https://www.nytimes.com/athletic/7818585/2026/11/28/atletico-madrid-vs-elche-cf-stream-how-to-watch-la-liga-nov-28/",
+          "title": "How to watch Atletico Madrid vs. Elche CF in the U.S.: TV channel and streaming options for November 28",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oLHITELsFUTXUUNw05rLG3pMVsNS6hp-iUFxzHEJpwcLtRvTGHgIKC987aQ"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLGBC0EJiE764B5ae43wESh5mY-GEPQnZFJd6BgsARgk1VSkwerxwVY3C5ddw"
         },
         {
-          "url": "https://www.ktvb.com/article/news/local/idaho-today/idaho-today-entertainment/the-story-behind-the-chocolate-finn-wittrock-and-alexandra-daddario-star-in-new-film-hershey/277-0da6bac1-0102-47ad-9d6b-3c0337d72cc6",
-          "title": "The story behind the chocolate: ‘Hershey’ film brings a sweet story of love and legacy to life",
-          "publisher": "KTVB",
+          "url": "https://en.atleticodemadrid.com/noticias/looking-to-keep-adding-three-points-at-the-martinez-valero",
+          "title": "Club Atlético de Madrid - Looking to keep adding three points at the Martínez Valero",
+          "publisher": "Club Atlético de Madrid",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9_8ni682JtILfFzi8MvaN-nZ4pMjj_D-HZBmumL0o49GKWTac2-Xf0ckknDk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTT2C2ttMP4O6KHqT_nLSNMZUCw93j8cjVtHvtpT4vUcvqF3ODM6J6t3iVWTzU"
+        }
+      ]
+    },
+    {
+      "query": "ipswich town vs aston villa",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/sport/football/live/cmy49k14lne9t",
+        "https://www.theguardian.com/football/live/2026/nov/28/ipswich-town-v-aston-villa-premier-league-live",
+        "https://www.skysports.com/football/news/13616076/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39LzLfAR7r5CPCmqnXZgJVGy3ufh0_UDPyIqlh8yK2bNeYEZVUH3Mm6KiARE",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/sport/football/live/cmy49k14lne9t",
+          "title": "Ipswich Town vs Aston Villa: Premier League preview, team news, stats & head-to-head",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT39LzLfAR7r5CPCmqnXZgJVGy3ufh0_UDPyIqlh8yK2bNeYEZVUH3Mm6KiARE"
         },
         {
-          "url": "https://www.post-journal.com/news/top-stories/2026/11/incredibly-moving-catherine-hershey-jamestown-native-hits-silver-screen-with-premiere-of-hershey-this-week/",
-          "title": "‘Incredibly Moving’: Catherine Hershey, Jamestown native, hits silver screen with premiere of ‘Hershey’ this week",
-          "publisher": "Post Journal",
+          "url": "https://www.theguardian.com/football/live/2026/nov/28/ipswich-town-v-aston-villa-premier-league-live",
+          "title": "Ipswich Town v Aston Villa: Premier League – live",
+          "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSdZ9hikqna8N5oHSMHwbMjp6uqzoHpnwI9E3zGYy9Js-LsGkLjDOkkGDnK-0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaZldAE1meExVdHkARf2sAUSbYSfKIP5DJo2SK8VI7Cn7fdYNrPUkVfzpy_Y"
+        },
+        {
+          "url": "https://www.skysports.com/football/news/13616076/premier-league-predictions-and-jones-knows-best-bets-nottingham-forest-vs-chelsea-arsenal-vs-manchester-city-and-more",
+          "title": "Premier League predictions & Jones Knows' best bets: Arsenal vs Manchester City and more!",
+          "publisher": "Sky Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRVZwYVcYp_mvF7T0oFtoSNqEFddePWT7OtUVQuTtBLlSBOQVGmvpjM_Cvgv9o"
+        }
+      ]
+    },
+    {
+      "query": "chicago vs charlotte",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://www.nba.com/game/nop-vs-lac-0022600073/box-score",
+        "https://www.nba.com/game/sac-vs-gsw-0022600062/box-score",
+        "https://www.nba.com/game/sas-vs-por-0022600063/box-score"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRqcxfZYE90PTi7aR-e8sFmJh6CSli69t1m2SZe3uM90imkCh3UjxZIbzd8jg",
+      "image_credit": "NBA.com",
+      "news": [
+        {
+          "url": "https://www.nba.com/game/nop-vs-lac-0022600073/box-score",
+          "title": "New Orleans Pelicans vs LA Clippers Nov 27, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSRqcxfZYE90PTi7aR-e8sFmJh6CSli69t1m2SZe3uM90imkCh3UjxZIbzd8jg"
+        },
+        {
+          "url": "https://www.nba.com/game/sac-vs-gsw-0022600062/box-score",
+          "title": "Sacramento Kings vs Golden State Warriors Nov 25, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQGdZ1MQQ4kinuR1liV8fid2zUUvEWFOT0pCcNNQloXo5uRY-_QTHLhxqHQ8Nc"
+        },
+        {
+          "url": "https://www.nba.com/game/sas-vs-por-0022600063/box-score",
+          "title": "San Antonio Spurs vs Portland Trail Blazers Nov 25, 2026 Box Scores",
+          "publisher": "NBA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRD56O0XN2exV5nxr8WduOZZbmbP7AUsBAcCHR-4pUiRw2uhACvMUlvokG2UF4"
+        }
+      ]
+    },
+    {
+      "query": "caleb downs",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://www.nfl.com/news/jerry-jones-to-question-everything-after-cowboys-damning-thanksgiving-loss",
+        "https://www.espn.com/nfl/story/_/id/50614763/schottenheimer-says-jones-shares-our-disappointment",
+        "https://www.theguardian.com/sport/2026/nov/27/dallas-cowboys-jerry-jones-brian-schottenheimer"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsElhCDDA_dmKEQUQZlsejeQEhJULVYWFBVfr1MxmyDIleglKkLWIjUTC4jOw",
+      "image_credit": "NFL.com",
+      "news": [
+        {
+          "url": "https://www.nfl.com/news/jerry-jones-to-question-everything-after-cowboys-damning-thanksgiving-loss",
+          "title": "Jerry Jones to 'question everything' after Cowboys' 'damning' Thanksgiving loss",
+          "publisher": "NFL.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQsElhCDDA_dmKEQUQZlsejeQEhJULVYWFBVfr1MxmyDIleglKkLWIjUTC4jOw"
+        },
+        {
+          "url": "https://www.espn.com/nfl/story/_/id/50614763/schottenheimer-says-jones-shares-our-disappointment",
+          "title": "Brian Schottenheimer says Jerry Jones shares 'in our disappointment'",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuyNGsKO0I1evZdIFexobps41ZAOOLz2k9JmGi7Unno8GpWaDof8Tg4nJEmJk"
+        },
+        {
+          "url": "https://www.theguardian.com/sport/2026/nov/27/dallas-cowboys-jerry-jones-brian-schottenheimer",
+          "title": "Jerry Jones hits out at Cowboys’ ‘damning setbacks’ after latest meltdown",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ3pv2NXvLGH9vYz0Wdt6eth7bkG9q2vRqxbczXstwJ8-AcxRnuQXantcdfnY"
+        }
+      ]
+    },
+    {
+      "query": "desmond howard",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/lee-corso-gotta-already-rolling-172404838.html",
+        "https://www.espn.com/video/clip/_/id/50549636",
+        "https://bleacherreport.com/articles/25536016-watch-pat-mcafee-speedo-jump-high-dive-miami-trending-video-espn-college-gameday"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrRjNsZFaARfrZbJdA2Cr7K4MsZRioblFiJBrn2RzlTZmJValclaxwNuMV9bI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/lee-corso-gotta-already-rolling-172404838.html",
+          "title": "‘Lee Corso gotta already be rolling in his grave’: Pat McAfee sparks outrage with inappropriate joke on ‘College GameDay’",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTrRjNsZFaARfrZbJdA2Cr7K4MsZRioblFiJBrn2RzlTZmJValclaxwNuMV9bI"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50549636",
+          "title": "McAfee, Desmond Howard kick off 'GameDay' with jump off the high dive",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcREdhmyvXgFwF4g4_lbmNGBXw1u2Hy-TCHyTpBFnDWt_Yy033KXqV38Sryqugo"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536016-watch-pat-mcafee-speedo-jump-high-dive-miami-trending-video-espn-college-gameday",
+          "title": "Watch Pat McAfee in a Speedo Jump Off High Dive at Miami in Trending Video from ESPN College GameDay",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTK90BH0nUkloPwcFgpjODkRY6xO7VBd7J5YrHqmgTkuDmaNW2SYORJ06YyeCU"
+        }
+      ]
+    },
+    {
+      "query": "bryce underwood",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50606615/sources-michigan-qb-bryce-underwood-play-vs-ohio-state",
+        "https://sports.yahoo.com/college-football/articles/michigan-football-vs-ohio-state-150946444.html",
+        "https://abc6onyourside.com/sports/the-football-fever/availability-report-michigan-osu-without-key-starters-injuries-julian-sayin-bryce-underwood-game-big-ten-b1g-columbus-shoe-ohio-state-buckeyes-wolverines-rivalry-hate"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9PJ399oshJBzWATOcxXhzGAx9te3jP4VGTp0E7wcF3B96cM8f8XVHGyMaqA",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50606615/sources-michigan-qb-bryce-underwood-play-vs-ohio-state",
+          "title": "Sources: Michigan QB Bryce Underwood expected to start vs. rival Ohio State",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-9PJ399oshJBzWATOcxXhzGAx9te3jP4VGTp0E7wcF3B96cM8f8XVHGyMaqA"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/michigan-football-vs-ohio-state-150946444.html",
+          "title": "Michigan football vs. Ohio State: Full game-day injury reports",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTIU0svQNHxHr7NCIuTxkG6emF7OuNut8HRKLo7S0CvlyPKi69qZYE3c0YPCu4"
+        },
+        {
+          "url": "https://abc6onyourside.com/sports/the-football-fever/availability-report-michigan-osu-without-key-starters-injuries-julian-sayin-bryce-underwood-game-big-ten-b1g-columbus-shoe-ohio-state-buckeyes-wolverines-rivalry-hate",
+          "title": "Availability Report: Michigan, OSU without key starters",
+          "publisher": "WSYX",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS19S-TCZKegjTJQe-tENC2MfAk3QiKKyU_Qsi57DFIn1G02bnH0Djuz6eE32c"
+        }
+      ]
+    },
+    {
+      "query": "the legend of zelda master collection",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T16:40:00Z",
+      "related_news_urls": [
+        "https://www.imdb.com/news/ni66130201/?ref_=ttnw_art_perm",
+        "https://saiganak.com/product/tenyo-the-legend-of-zelda-jigsaw-puzzle/",
+        "https://screenrant.com/legend-of-zelda-master-collection-twilight-princess-return/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbplH_S8WBrSyTAbITOplULfZ7HHa5k_TezVX4Ywa0SEtpAvo-EkVpHwUZqEA",
+      "image_credit": "IMDb",
+      "news": [
+        {
+          "url": "https://www.imdb.com/news/ni66130201/?ref_=ttnw_art_perm",
+          "title": "The Legend Of Zelda: Master Collection Officially Releasing For Series' 40th Anniversary",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQbplH_S8WBrSyTAbITOplULfZ7HHa5k_TezVX4Ywa0SEtpAvo-EkVpHwUZqEA"
+        },
+        {
+          "url": "https://saiganak.com/product/tenyo-the-legend-of-zelda-jigsaw-puzzle/",
+          "title": "Three jigsaw puzzles commemorating the 40th anniversary of the \"Legend of Zelda\" series will go on sale on December 4! A 1,000-piece puzzle featuring Link from 10 games in the seri",
+          "publisher": "Saiga NAK",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRjaHGdsrFKP47ecPWFaR7L1mecfH0BmWFEvnOJGXHDkqOk9D7AzvQrWXAmtFg"
+        },
+        {
+          "url": "https://screenrant.com/legend-of-zelda-master-collection-twilight-princess-return/",
+          "title": "The Legend Of Zelda: Twilight Princess Officially Returns In The Master Collection",
+          "publisher": "ScreenRant",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSANwNZ8s2OUbvaj1HtMiz1JYsuYMVLMDG0J7aS-NN6XT3mXpNLRgg4t-Pmlko"
+        }
+      ]
+    },
+    {
+      "query": "illinois vs northwestern",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T16:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/roundtable-northwestern-football-vs-illinois-161930080.html",
+        "https://www.news-gazette.com/news/houser-ruled-out-for-trophy-game-against-northwestern/article_f361cd2c-5f7e-4113-8ed5-5bd6fefdc8c4.html",
+        "https://247sports.com/college/illinois/article/illinois-fighting-illini-football-katin-houser-injury-status-northwestern-carson-boyd-293358243/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMcJIEGqlhRwS-svfvoxI0sQaJlmN6WBDP1Z_X1JqZ7bx2lIqpCreyphi4dcI",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/roundtable-northwestern-football-vs-illinois-161930080.html",
+          "title": "ROUNDTABLE: Northwestern football vs. Illinois predictions",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTMcJIEGqlhRwS-svfvoxI0sQaJlmN6WBDP1Z_X1JqZ7bx2lIqpCreyphi4dcI"
+        },
+        {
+          "url": "https://www.news-gazette.com/news/houser-ruled-out-for-trophy-game-against-northwestern/article_f361cd2c-5f7e-4113-8ed5-5bd6fefdc8c4.html",
+          "title": "Houser ruled out for trophy game against Northwestern",
+          "publisher": "The News-Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQn_E-3kCUpT6aotBUWX4o7mIxkr-FuT1Qz5P97RkNWKB5xDA5ajP3LDHD8AR4"
+        },
+        {
+          "url": "https://247sports.com/college/illinois/article/illinois-fighting-illini-football-katin-houser-injury-status-northwestern-carson-boyd-293358243/",
+          "title": "Illini QB Katin Houser ruled out for Northwestern game, Carson Boyd likely to start",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSG_Sw4GszHINYJcn1sLGiAMBIgO2n34sEVW0DcL4A6pGq7QDqWVd2IWglTeCo"
+        }
+      ]
+    },
+    {
+      "query": "jeremiah smith",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T16:30:00Z",
+      "related_news_urls": [
+        "https://www.dispatch.com/story/opinion/columns/guest/2026/11/27/jeremiah-smith-ohio-state-the-game-kelly-immel-michigan/92931313007/",
+        "https://sports.yahoo.com/college-football/articles/jeremiah-smith-guarantees-ohio-state-160350312.html",
+        "https://www.newsweek.com/sports/ncaa/jeremiah-smith-delivers-guarantee-to-ohio-state-fans-ahead-of-michigan-game-12775756"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g",
+      "image_credit": "The Columbus Dispatch",
+      "news": [
+        {
+          "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/11/27/jeremiah-smith-ohio-state-the-game-kelly-immel-michigan/92931313007/",
+          "title": "Beat Michigan! Put ball in Jeremiah Smith's hand to send him out with 'gold pants' | Opinion",
+          "publisher": "The Columbus Dispatch",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/jeremiah-smith-guarantees-ohio-state-160350312.html",
+          "title": "Jeremiah Smith guarantees Ohio State victory vs Michigan",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzi0gt4oBAQIFSwJaiWFgoju-Ad2fJdCJ161AXr4VjJjEIyxr_pBn-wtjo7Do"
+        },
+        {
+          "url": "https://www.newsweek.com/sports/ncaa/jeremiah-smith-delivers-guarantee-to-ohio-state-fans-ahead-of-michigan-game-12775756",
+          "title": "Jeremiah Smith makes bold guarantee to Ohio State fans before Michigan game",
+          "publisher": "Newsweek",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCEmv59sjcKo2nIpsI17XH4TTr_4FM4tR_FPdW16nkg5QcYB46ZxiioYkHCKs"
         }
       ]
     }
