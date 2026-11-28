@@ -3,6 +3,7 @@ import './distributed-vault-brain-runtime.test.mjs';
 import './distributed-vault-brain-import.test.mjs';
 import './distributed-vault-brain-host.test.mjs';
 import './distributed-vault-brain-mesh.test.mjs';
+import './distributed-vault-brain-export.test.mjs';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=name=>readFileSync(new URL('../distributed-vault/deploy/'+name,import.meta.url),'utf8');
@@ -390,3 +391,4 @@ test('owner-host local chat refuses remote model names, excessive input, tool ca
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('x'.repeat(262145))}),/local_model_response_too_large/);
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('Unavailable',{status:503})}),/local_model_unavailable/);
 });
+import './distributed-vault-brain-admission.test.mjs';

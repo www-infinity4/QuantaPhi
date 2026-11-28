@@ -90,6 +90,105 @@ const runnerLeaseDuration=engine=>(engine?40:20)*60*1000;
 const repositoryLockKey=repository=>'repository-lease:'+repository.toLowerCase();
 const legacyRepositoryLockKey=repository=>'repository-lease:'+repository;
 
+// Reversible admission drain only. This does not fence other D1 producers,
+// direct owner tools, already executing calls or all durable-state writes.
+const MIGRATION_ADMISSION_KEY='brain-migration-admission-v1';
+const migrationPrivateHeaders={'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
+const migrationAdmissionResponse=()=>Response.json({ok:false,error:'migration_admission_blocked'},
+ {status:503,headers:migrationPrivateHeaders});
+function migrationAdmissionMetadata(value,ownerHash){
+ if(!value||typeof value!=='object'||Array.isArray(value)||Object.keys(value).length!==3||
+  Object.keys(value).some(key=>!['ownerHash','migrationId','sourceSha'].includes(key))||value.ownerHash!==ownerHash||
+  !/^[a-f0-9]{64}$/.test(ownerHash||'')||typeof value.migrationId!=='string'||!/^[A-Za-z0-9_-]{1,80}$/.test(value.migrationId)||
+  typeof value.sourceSha!=='string'||!/^[a-f0-9]{40}$/.test(value.sourceSha))throw Error('migration_admission_metadata_invalid');
+ return {ownerHash,migrationId:value.migrationId,sourceSha:value.sourceSha};
+}
+function validMigrationAdmission(value,ownerHash){
+ if(!value||typeof value!=='object'||Array.isArray(value)||value.version!==1||value.ownerHash!==ownerHash||
+  !['draining','cancelled'].includes(value.phase)||!Number.isSafeInteger(value.startedAt)||value.startedAt<=0||
+  Object.keys(value).some(key=>!['version','ownerHash','migrationId','sourceSha','phase','startedAt','cancelledAt'].includes(key)))return false;
+ try{migrationAdmissionMetadata({ownerHash:value.ownerHash,migrationId:value.migrationId,sourceSha:value.sourceSha},ownerHash);}catch{return false;}
+ return value.phase==='draining'?value.cancelledAt===undefined:
+  Number.isSafeInteger(value.cancelledAt)&&value.cancelledAt>=value.startedAt;
+}
+async function migrationAdmissionBlocked(storage,ownerHash){
+ const value=await storage.get(MIGRATION_ADMISSION_KEY);
+ // The feature flag controls operator mutations, never release of a saved
+ // drain. An imported drain also blocks the inactive SQLite target.
+ return value!==undefined&&(!validMigrationAdmission(value,ownerHash)||value.phase==='draining');
+}
+async function migrationAdmissionInventory(tx,now){
+ const result={complete:true};
+ const encoder=new TextEncoder(),compare=(a,b)=>{
+  for(let i=0;i<Math.min(a.length,b.length);i++)if(a[i]!==b[i])return a[i]-b[i];
+  return a.length-b.length;
+ };
+ const settled=new Set(['blocked','failed','complete','deployed_verified','merged_verified','source_verified','publication_absent','deferred_active_repair','superseded']);
+ for(const [name,prefix] of [['writer','writer:'],['repository','repository-lease:']]){
+  const summary={examined:0,active:0,expiredUnresolved:0,pendingPublication:0,malformed:0};let last,lastBytes;
+  while(summary.examined<1024){
+   const page=await tx.list({prefix,...(last===undefined?{}:{startAfter:last}),limit:Math.min(32,1024-summary.examined),noCache:true});
+   if(!(page instanceof Map))throw Error('migration_inventory_unavailable');
+   if(!page.size)break;
+   for(const [key,value] of page){
+    if(typeof key!=='string'||!key.startsWith(prefix))throw Error('migration_inventory_unavailable');
+    const encoded=encoder.encode(key);
+    if(new TextDecoder().decode(encoded)!==key||lastBytes&&compare(encoded,lastBytes)<=0)throw Error('migration_inventory_unavailable');
+    last=key;lastBytes=encoded;summary.examined++;
+    if(!value||typeof value!=='object'||Array.isArray(value)||typeof value.status!=='string'||
+       !Number.isSafeInteger(value.leaseUntil)||value.leaseUntil<0){summary.malformed++;continue;}
+    if(value.pendingPublication)summary.pendingPublication++;
+    if(value.leaseUntil>now)summary.active++;
+    else if(!settled.has(value.status)&&!value.pendingPublication)summary.expiredUnresolved++;
+   }
+  }
+  if(summary.examined===1024){
+   const overflow=await tx.list({prefix,startAfter:last,limit:1,noCache:true});
+   if(!(overflow instanceof Map))throw Error('migration_inventory_unavailable');
+   if(overflow.size)result.complete=false;
+  }
+  result[name]=summary;
+ }
+ return result;
+}
+async function migrationAdmissionOperation(storage,ownerHash,action,labels,alarmInFlight){
+ migrationAdmissionMetadata(labels,ownerHash);
+ const control=await storage.transaction(async tx=>{
+  const now=Date.now(),historyKey='brain-migration-admission-history:'+labels.migrationId;
+  let current=await tx.get(MIGRATION_ADMISSION_KEY),changed=false;
+  if(current!==undefined&&!validMigrationAdmission(current,ownerHash))throw Error('migration_admission_state_invalid');
+  const matches=record=>record?.migrationId===labels.migrationId&&record?.sourceSha===labels.sourceSha;
+  if(action==='begin'){
+   if(current?.phase==='draining'){
+    if(!matches(current))return {conflict:true};
+   }else{
+    // History is never deleted. Old begin/cancel retries cannot release a
+    // later drain or recreate an already cancelled migration identity.
+    if(await tx.get(historyKey)!==undefined)return {conflict:true};
+    current={version:1,...labels,phase:'draining',startedAt:now};changed=true;
+   }
+  }else{
+   if(!matches(current))return {conflict:true};
+   if(action==='cancel'&&current.phase==='draining'){
+    current={...current,phase:'cancelled',cancelledAt:Math.max(now,current.startedAt)};changed=true;
+   }
+  }
+  if(changed){await tx.put(MIGRATION_ADMISSION_KEY,current);await tx.put(historyKey,current);}
+  return {ok:true,format:'infinity-brain-admission/v1',migrationId:current.migrationId,sourceSha:current.sourceSha,
+   phase:current.phase,startedAt:current.startedAt,...(current.cancelledAt===undefined?{}:{cancelledAt:current.cancelledAt}),
+   claimsBlocked:current.phase==='draining',alarmInFlight:Boolean(alarmInFlight),
+   sourceWritesFenced:false,sourceFenceVerified:false,targetActivationAllowed:false,productionVerified:false,writerActivationPerformed:false};
+ });
+ if(control.conflict)return control;
+ // Observation is separate from the atomic control mutation. A damaged or
+ // unavailable unrelated lease record cannot prevent explicit cancellation.
+ // Unknown counts are null, never zero or a quiescence/activation claim.
+ let inventory;
+ try{inventory=await storage.transaction(tx=>migrationAdmissionInventory(tx,Date.now()));}
+ catch{inventory={complete:false,writer:null,repository:null};}
+ return {...control,inventory};
+}
+
 async function repositoryLease(storage,repository,now=Date.now()){
  const key=repositoryLockKey(repository),current=await storage.get(key);
  if(current?.leaseUntil>now)return current;
@@ -418,6 +517,7 @@ export class BrainClock extends DurableObject{
   const engine=body.runnerRepository==='www-infinity4/Moltnook';
   const runUrl='https://github.com/'+(engine?'www-infinity4/Moltnook':'www-infinity4/QuantaPhi')+'/actions/runs/'+runId;
   const path=new URL(request.url).pathname;
+  if(path==='/runner/claim'&&await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return migrationAdmissionResponse();
   await this.ctx.storage.put('writerHeartbeat',{when:Date.now(),runUrl});
   if(path==='/runner/github-credential'){
    if(!engine)throw Error('repository_engine_identity_required');
@@ -563,6 +663,7 @@ export class BrainClock extends DurableObject{
      lease.repository=job.repository;lease.engine=engine;lease.job={...lease.job,ownerRequest:ticket.request,runtimeFeedback:previous?.repairFeedback||null,jobQuantMemory:memories,...(engine?{experientialMemory}:{}),...(sourceReview?{sourceReview}:{})};
      const reserved=await storage.transaction(async tx=>{
       const now=Date.now();
+      if(await migrationAdmissionBlocked(tx,this.env.WRITER_OWNER_HASH))return 'migration_admission_blocked';
       if(await tx.get(runKey)||await repositoryIsLocked(tx,job.repository,now)||
        await this.generatedRepairHasPendingPink(ticket.id,context,job,tx))return false;
       lease.leaseUntil=now+runnerLeaseDuration(engine);
@@ -571,6 +672,7 @@ export class BrainClock extends DurableObject{
       await tx.put(runKey,lease.leaseId);
       return true;
      });
+     if(reserved==='migration_admission_blocked')return migrationAdmissionResponse();
      if(!reserved){noteRunnerSkip(claimBlockedBy,'repository_lease_active');continue;}
      const claimedContext=JSON.parse(ticket.context_json);
      const claimedJob=claimedContext.color_jobs.find(j=>j.id===job.id);
@@ -879,10 +981,12 @@ export class BrainClock extends DurableObject{
   }catch{return null;}
  }
  async dispatchRunner(){
+  if(await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return {status:'blocked',error:'migration_admission_blocked'};
   const previous=await this.ctx.storage.get('last-owner-dispatch');
   if(previous?.when>Date.now()-45000)return previous;
   const runtime=await githubEnvironment(this.env,this.ctx.storage);
   if(!runtime.GITHUB_TOKEN)return {status:'scheduled_fallback',error:'github_credential_not_connected'};
+  if(await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return {status:'blocked',error:'migration_admission_blocked'};
   try{
    const receipt=await githubOperation(runtime,{repository:'www-infinity4/Moltnook',action:'dispatch_workflow',workflow:'moltnook-repository-engine.yml',ref:'main'});
    const result={...receipt,when:Date.now()};await this.ctx.storage.put('last-owner-dispatch',result);return result;
@@ -1167,6 +1271,31 @@ export class BrainClock extends DurableObject{
   return record;
  }
  async fetch(request){
+  const admissionAction=new URL(request.url).pathname.match(/^\/migration\/admission\/(begin|status|cancel)$/)?.[1];
+  if(admissionAction&&request.method==='POST'){
+   if(this.env.BRAIN_MIGRATION_CONTROL_ENABLED!=='1')return new Response('Not found',{status:404,headers:migrationPrivateHeaders});
+   return this.ctx.blockConcurrencyWhile(async()=>{
+    try{
+     const labels=migrationAdmissionMetadata(await readBoundedJson(request,4096),this.env.WRITER_OWNER_HASH);
+     const result=await migrationAdmissionOperation(this.ctx.storage,this.env.WRITER_OWNER_HASH,admissionAction,labels,this.running);
+     return Response.json(result.conflict?{ok:false,error:'migration_admission_conflict'}:result,
+      {status:result.conflict?409:200,headers:migrationPrivateHeaders});
+    }catch{return Response.json({ok:false,error:'migration_admission_unavailable'},{status:503,headers:migrationPrivateHeaders});}
+   });
+  }
+  if(new URL(request.url).pathname==='/migration/state-export'&&request.method==='POST'){
+   const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff'};
+   if(this.env.BRAIN_PRIVATE_EXPORT_ENABLED!=='1')return new Response('Not found',{status:404,headers});
+   try{
+    const metadata=await readBoundedJson(request,4096);
+    if(metadata?.ownerHash!==this.env.WRITER_OWNER_HASH)throw Error('owner_scope_mismatch');
+    const {createPrivateBrainStateExport}=await import('./private-state-export.mjs');
+    const snapshot=await createPrivateBrainStateExport(this.ctx.storage,metadata);
+    return new Response(snapshot.serialized,{headers:{...headers,'Content-Disposition':'attachment; filename="brain-private-state.json"',
+     'X-Brain-KV-Snapshot':'complete','X-Brain-Source-Authority-Verified':'false','X-Brain-Source-Fence-Verified':'false',
+     'X-Brain-Work-Consistency-Verified':'false','X-Brain-Production-Verified':'false'}});
+   }catch{return Response.json({ok:false,error:'brain_private_state_export_unavailable'},{status:503,headers});}
+  }
   // Service-internal only: the outer Worker verifies bridge signature and
   // live consent. Serialize submission IDs so conflicting concurrent retries
   // cannot each insert a different ticket before either sees the other.
@@ -1294,6 +1423,7 @@ export class BrainClock extends DurableObject{
    return Response.json({ok:valid},{status:valid?200:404});
   }
   if(new URL(request.url).pathname==='/run-next'){
+   if(await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return migrationAdmissionResponse();
    const body=await request.json();
    if(body===null||typeof body!=='object'||Array.isArray(body)||
       (body.ticketId!==undefined&&typeof body.ticketId!=='string')||
@@ -1361,6 +1491,7 @@ export class BrainClock extends DurableObject{
    catch(error){const quota=workersAiQuotaFailure(error);if(quota)return providerQuotaResponse(quota);throw error;}
   }
   if(new URL(request.url).pathname==='/start'){
+   if(await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return migrationAdmissionResponse();
    if(await this.ctx.storage.get('version')!==VERSION){await this.ctx.storage.put('version',VERSION);await this.ctx.storage.setAlarm(Date.now()+1000);}
    else if(!await this.ctx.storage.getAlarm())await this.ctx.storage.setAlarm(Date.now()+1000);
    return Response.json({ok:true});
@@ -1387,6 +1518,7 @@ export class BrainClock extends DurableObject{
   if(count)await this.ctx.storage.put('previews',index);
  }
  async alarm(){
+  if(await migrationAdmissionBlocked(this.ctx.storage,this.env.WRITER_OWNER_HASH))return;
   if(this.running)return;this.running=true;
   let delay=PERIOD;
   // Recovery alarm is installed before network calls, so a crashed turn can recover.
@@ -1840,12 +1972,57 @@ async function ownerAuthorized(env,token){
 
 export default{
  async scheduled(event,env){
-  await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');
+  const started=await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/start');
+  if(!started.ok)return;
   // Bounded, credential-free replay of high-level memories after transient AI/index failures.
   try{await retryPendingEmbeddings(env,env.WRITER_OWNER_HASH,2)}catch{/* Existing Brain scheduler must keep running. */}
  },
  async fetch(request,env){
   const path=new URL(request.url).pathname;
+  const admissionAction=path.match(/^\/work\/migration\/admission\/(begin|status|cancel)$/)?.[1];
+  if(admissionAction&&request.method==='POST'){
+   const headers=migrationPrivateHeaders;
+   if(env.BRAIN_MIGRATION_CONTROL_ENABLED!=='1')return new Response('Not found',{status:404,headers});
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return Response.json({ok:false,error:'origin_rejected'},{status:403,headers});
+   const token=request.headers.get('Authorization')?.match(/^Bearer ([\x21-\x7e]{1,256})$/)?.[1];
+   // As with whole-state backup, short-lived owner sessions are insufficient.
+   if(!token||!/^[a-f0-9]{64}$/.test(env.WRITER_OWNER_HASH||'')||await digest(token)!==env.WRITER_OWNER_HASH)
+    return Response.json({ok:false,error:'owner_migration_authorization_required'},{status:401,headers});
+   let labels;
+   try{
+    const body=await readBoundedJson(request,4096);
+    if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).length!==2||
+     Object.keys(body).some(key=>!['migrationId','sourceSha'].includes(key)))throw Error();
+    labels=migrationAdmissionMetadata({...body,ownerHash:env.WRITER_OWNER_HASH},env.WRITER_OWNER_HASH);
+   }catch(error){return Response.json({ok:false,error:'migration_admission_metadata_invalid'},{status:error.message==='browser_result_oversize'?413:400,headers});}
+   try{return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/migration/admission/'+admissionAction,
+    {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(labels)});}
+   catch{return Response.json({ok:false,error:'migration_admission_unavailable'},{status:503,headers});}
+  }
+  if(path==='/work/migration/state-export'&&request.method==='POST'){
+   const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'private, no-store','X-Content-Type-Options':'nosniff','Vary':'Origin'};
+   if(env.BRAIN_PRIVATE_EXPORT_ENABLED!=='1')return new Response('Not found',{status:404,headers});
+   const origin=request.headers.get('Origin');
+   if(origin&&!origins.has(origin))return Response.json({ok:false,error:'origin_rejected'},{status:403,headers});
+   const token=request.headers.get('Authorization')?.match(/^Bearer ([\x21-\x7e]{1,256})$/)?.[1];
+   // Full private-state backup requires the original master preimage. Do not
+   // reuse ownerAuthorized: its phone/bridge session fallback is not this grant.
+   if(!token||!/^[a-f0-9]{64}$/.test(env.WRITER_OWNER_HASH||'')||await digest(token)!==env.WRITER_OWNER_HASH)
+    return Response.json({ok:false,error:'owner_migration_authorization_required'},{status:401,headers});
+   let metadata;
+   try{
+    const body=await readBoundedJson(request,4096);
+    if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).length!==3||
+     Object.keys(body).some(key=>!['sourceSha','snapshotId','workSha256'].includes(key)))throw Error();
+    const {validatePrivateBrainExportMetadata}=await import('./private-state-export.mjs');
+    metadata=validatePrivateBrainExportMetadata({...body,ownerHash:env.WRITER_OWNER_HASH});
+   }catch(error){return Response.json({ok:false,error:'brain_export_metadata_invalid'},{status:error.message==='browser_result_oversize'?413:400,headers});}
+   try{
+    return await env.CLOCK.get(env.CLOCK.idFromName('infinity-main')).fetch('https://clock.internal/migration/state-export',{
+     method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(metadata)});
+   }catch{return Response.json({ok:false,error:'brain_private_state_export_unavailable'},{status:503,headers});}
+  }
   if(path==='/owner/bridge-work'&&request.method==='POST'){
    try{
     const claims=await authenticateOwnerBridge(request);

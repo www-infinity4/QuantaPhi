@@ -33,7 +33,15 @@ export function openPortableBrainState(dbPath){
  const get=key=>{const row=db.prepare('SELECT value FROM portable_brain_state WHERE key=?').get(validKey(key));return row?JSON.parse(row.value):undefined;};
  const put=(key,value)=>{const json=JSON.stringify(value);if(typeof json!=='string')throw Error('invalid_state_value');db.prepare('INSERT INTO portable_brain_state(key,value) VALUES (?,?) ON CONFLICT(key) DO UPDATE SET value=excluded.value').run(validKey(key),json);};
  const del=key=>db.prepare('DELETE FROM portable_brain_state WHERE key=?').run(validKey(key)).changes>0;
- const list=({prefix=''}={})=>{if(typeof prefix!=='string'||prefix.length>1024)throw Error('invalid_state_prefix');return new Map(db.prepare('SELECT key,value FROM portable_brain_state WHERE substr(key,1,length(?))=? ORDER BY key').all(prefix,prefix).map(row=>[row.key,JSON.parse(row.value)]));};
+ const list=({prefix='',startAfter,limit}={})=>{
+  if(typeof prefix!=='string'||prefix.length>1024)throw Error('invalid_state_prefix');
+  if(startAfter!==undefined&&(typeof startAfter!=='string'||startAfter.length>1024)||
+     limit!==undefined&&(!Number.isSafeInteger(limit)||limit<1||limit>100000))throw Error('invalid_state_page');
+  const sql='SELECT key,value FROM portable_brain_state WHERE substr(key,1,length(?))=?'+
+   (startAfter===undefined?'':' AND key>?')+' ORDER BY key'+(limit===undefined?'':' LIMIT ?');
+  const args=[prefix,prefix,...(startAfter===undefined?[]:[startAfter]),...(limit===undefined?[]:[limit])];
+  return new Map(db.prepare(sql).all(...args).map(row=>[row.key,JSON.parse(row.value)]));
+ };
  // Compare the exact stored JSON representation, not a lossy partial match.
  // Undefined denotes an absent key; JSON null is a distinct stored value.
  const compareAndSwap=(key,expected,next)=>{

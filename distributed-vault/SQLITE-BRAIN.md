@@ -276,3 +276,81 @@ with private persistent disk and the existing model access. Repository source
 and passing CI do not provide an always-on private inference service. Follow
 the repository-first placement and offline-phone acceptance gates in
 `work/unfinished/2110-shard-cache-checkpoint.md` before production adoption.
+
+## Privileged private JSON-KV export
+
+The original Worker has an **inactive-by-default** export surface at
+`POST /work/migration/state-export`. It is available only when its private
+operator configuration explicitly sets `BRAIN_PRIVATE_EXPORT_ENABLED=1` and
+the bearer token is the original master preimage of `WRITER_OWNER_HASH`.
+Device/session tokens, GitHub OIDC and five-day conversation grants do not
+authorize it. The handler checks the existing origin allowlist and never
+falls back to phone/session verification. No new credential is created.
+
+This is privileged backup of the `infinity-main` object's **JSON KV**, including
+private session records, phone state, encrypted credentials, leases and receipt
+history. The internal handler reads all pages through one storage transaction,
+using UTF-8 key ordering. It reads one value per page to avoid loading many
+maximum-sized values before checking the budget, resets buffers on transaction
+retry, and continues until an empty terminal page. It writes no source state,
+alarm, D1 record or model request. Metadata and failures are bounded/sanitized;
+private values are never printed to logs or public GitHub receipts.
+
+The output uses the existing `infinity-brain-private-state/v1` format. Limits
+are 16 MiB of serialized UTF-8, 100,000 records, JSON depth 128 and 200,000 value
+nodes. Exceeding a limit refuses the export rather than truncating it. Values
+must be lossless JSON trees: unsupported structured-clone types, cycles,
+shared-reference aliasing within a value, sparse/extended arrays, accessors,
+non-enumerable data, non-finite numbers and negative zero are refused. Larger
+or typed snapshots need a separately implemented format, not silent conversion.
+
+`brain-private-export.mjs` is the matching operator download utility. It uses
+the original fixed HTTPS Worker endpoint, the existing master value from the
+private `BRAIN_OWNER_TOKEN` environment, and `redirect:error`. The input is an
+existing standalone private work SQLite snapshot and an existing private output
+directory. It verifies that snapshot's bytes before and after the download,
+validates owner/labels/counts/hash and explicit qualification headers, bounds
+and fatally decodes UTF-8, writes exclusive 0600 `state.json`, then synchronizes
+the private completion receipt last. Existing files are never overwritten.
+Errors do not print response bodies, private paths or credentials. On failure
+a partial private output may remain, without an accepted completion receipt.
+
+```bash
+node distributed-vault/brain-private-export.mjs PRIVATE_WORK.sqlite PRIVATE_DIRECTORY SOURCE_SHA
+```
+
+Do not put the master value in the command, chat, repository, workflow input,
+log or artifact. This utility belongs on a verified private operator host; it
+is not a public GitHub Actions task or an installed service. Its `state.json`
+can be staged through the existing private importer. It does not start Brain.
+
+**Completeness refers only to JSON KV in this one transaction.** DO SQL
+tables, alarms, environment encryption secrets, in-memory operations, D1 and
+other objects are excluded. Caller-supplied source SHA, snapshot ID and work
+hash are labels, not deployed-version or source-D1 attestation. HTTP headers
+and the separate private receipt explicitly report source authority, source
+fence, common work-snapshot consistency and production verification as false,
+and report `writerActivationPerformed:false`. The export neither stops the
+source writer nor activates a target. A stable local hash is not a common D1/DO consistency
+boundary. Original private export execution, consistent authoritative work
+export, rollback, old-writer fence and in-flight reconciliation remain required.
+
+No export is enabled, deployed or executed by a source merge. The existing
+Cloudflare health gate and approved host/inference requirements still apply.
+The current Durable Objects [storage API](https://developers.cloudflare.com/durable-objects/api/sqlite-storage-api/)
+documents transaction-scoped KV reads and UTF-8 pagination. Tests exercise the
+existing Node/SQLite harness and original Worker; they do not establish live
+Cloudflare export or physical Android acceptance.
+## Reversible admission drain before a future cutover
+
+The existing private export proposal now includes a separate, explicitly opted-in admission control. `BRAIN_MIGRATION_CONTROL_ENABLED=1` enables only the original-master-authorized POST routes `/work/migration/admission/begin`, `/status` and `/cancel`. The read-only export flag does not grant this mutation. Existing phone/bridge sessions, OIDC and five-day grants cannot operate it. The outer Worker derives the original owner scope; the internal route independently validates its gate and bounded labels.
+
+An explicit begin writes `brain-migration-admission-v1` and per-migration history atomically in existing durable state. Its `migrationId` and `sourceSha` are operator labels, not source attestation. Same-operation retries are idempotent; an old cancelled ID cannot be reused, nor can an old cancellation release a different migration. No timer, process restart, expired lease, feature-flag removal or SQLite writer flag cancels the marker. A malformed/cross-owner marker fails closed. Export/import preserves an active marker on the target, where it continues blocking claims.
+
+An active marker stops new signed claims before queue access, rechecks inside the reservation transaction, blocks new dispatch requests and scheduler/alarm entry, and preserves existing job selections, replay fences, credentials and sessions. Existing authenticated in-flight events, model work and result/readback remain subject to their original leases and fences. Calls already past admission may finish; existing background work is not killed. Explicit cancellation releases this admission layer; the original scheduled start can resume the existing alarm. It does not activate a target.
+
+Private aggregate inventory reads happen separately from atomic control changes. At most 1,024 writer and 1,024 repository records are examined, using native UTF-8 order. Active, expired-unresolved, pending-publication and malformed counts stay distinct; expired work is not deleted or treated as settled. Overflow sets `complete:false`; unavailable inventory returns null counts. Inventory failure cannot undo an acknowledged control mutation or prevent valid explicit cancellation. A response loss is safe to retry with the same labels. No private records, repository names or lease IDs are returned.
+
+The existing private operator client supports `brain-private-export.mjs admission begin|status|cancel MIGRATION_ID SOURCE_SHA`, using the original private `BRAIN_OWNER_TOKEN`, pinned original HTTPS authority, no redirects and bounded aggregate JSON. It validates the matching action, labels and qualifications. The ordinary export command stays read-only and never begins a drain implicitly. This is source interface documentation; no new installation or live operator command has been executed.
+
+**This is not the full source writer fence.** `infinity-work-tickets`, `public-trends`, direct owner operations, already running alarms/calls, D1 producers and other durable objects can still write. Zero observed leases cannot prove a common D1/KV boundary. All reports explicitly retain `sourceWritesFenced:false`, `sourceFenceVerified:false`, `targetActivationAllowed:false`, `productionVerified:false` and `writerActivationPerformed:false`. No seal, promote, target activation, grant renewal, full rollback or source-origin switch is provided. A common source fence/snapshot, in-flight reconciliation and verified original inference host remain cutover prerequisites. Neither this control nor private export has been enabled or verified live.
