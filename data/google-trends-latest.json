@@ -3,9 +3,149 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T08:01:15.447167Z",
+  "checked_at": "2026-11-28T08:31:06.293582Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "開票",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T08:10:00Z",
+      "related_news_urls": [
+        "https://news.yahoo.co.jp/pickup/6604298",
+        "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
+        "https://news.web.nhk/newsweb/na/nd-20261127de82484"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY",
+      "image_credit": "Yahoo!ニュース",
+      "news": [
+        {
+          "url": "https://news.yahoo.co.jp/pickup/6604298",
+          "title": "台湾の統一地方選 与党が伸長か",
+          "publisher": "Yahoo!ニュース",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY"
+        },
+        {
+          "url": "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
+          "title": "台湾の統一地方選、大勢の有権者が投票－28年総統選視野に中国も注視",
+          "publisher": "Bloomberg.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M"
+        },
+        {
+          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82484",
+          "title": "台湾統一地方選挙 28日投票へ 台北市長選挙の勝敗など焦点",
+          "publisher": "NHKニュース",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkooTgYrE9yDAqTrFIRjA7QtTLYwo5OsgBq8blzWFeRT7p2gSYM2whLFlavtY"
+        }
+      ]
+    },
+    {
+      "query": "today wordle hints",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T08:00:00Z",
+      "related_news_urls": [
+        "https://mashable.com/entertainment/wordle-today-answer-november-28-2026",
+        "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
+        "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY",
+      "image_credit": "Mashable",
+      "news": [
+        {
+          "url": "https://mashable.com/entertainment/wordle-today-answer-november-28-2026",
+          "title": "Wordle today: The answer and hints for November 28, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
+          "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 28, #1988",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40"
+        },
+        {
+          "url": "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/",
+          "title": "Today’s Wordle #1988 Hints, Clues And Answer For Saturday, November 28",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROh6VwHVMCGgMeuZmdVI3qHN6COTca6AocJqEKCUzCHb_dId7DY5wELNIgm1Q"
+        }
+      ]
+    },
+    {
+      "query": "demi lovato",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T08:00:00Z",
+      "related_news_urls": [
+        "https://www.instagram.com/p/Df-A2Dmygse/",
+        "https://www.realitytea.com/2026/11/27/selena-gomez-demi-lovato-husbands-gratitude-thanksgiving/",
+        "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM",
+      "image_credit": "Instagram",
+      "news": [
+        {
+          "url": "https://www.instagram.com/p/Df-A2Dmygse/",
+          "title": "#TSRCliquedUp: Look at Barney’s babies! 🥹 #SelenaGomez and #DemiLovato snap a selfie. 💗✍🏾: #TSRStaffLG",
+          "publisher": "Instagram",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM"
+        },
+        {
+          "url": "https://www.realitytea.com/2026/11/27/selena-gomez-demi-lovato-husbands-gratitude-thanksgiving/",
+          "title": "Selena Gomez & Demi Lovato Agree on What They’re Most Thankful For This Holiday",
+          "publisher": "Reality Tea",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6Ic2kA81XTv06BSPQ35jQfVk7XixgILbCB8mYN8ijTgE2jg2HPEwtcDqCqhQ"
+        },
+        {
+          "url": "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340",
+          "title": "Selena Gomez and Demi Lovato’s Rare Beauty Friendsgiving Proves Nostalgia Still Sells—When It's On Brand",
+          "publisher": "Inc.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTt6CClJk5Rup_xWOqZQ22P1BMyUPlqoO5ce2Hrf_rXAXYPHIFBT6snc0PSOuc"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 fits",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T07:50:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/paultassi/2026/11/24/where-to-find-lucias-best-hairstyle-in-gta-6/",
+        "https://www.ign.com/articles/gta-6-fashion-in-the-ign-community",
+        "https://www.gamingbible.com/news/gta-6-hairstyle-beauty-options-guide-098503-20261125"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx7OE0Gqrrqvp3cl9gQD5vIuNUdUbaXTYha4Ri5WyUroRGIUDEbSUqKdmWN3g",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/paultassi/2026/11/24/where-to-find-lucias-best-hairstyle-in-gta-6/",
+          "title": "Where To Find Lucia’s Best Hairstyle In ‘GTA 6’",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx7OE0Gqrrqvp3cl9gQD5vIuNUdUbaXTYha4Ri5WyUroRGIUDEbSUqKdmWN3g"
+        },
+        {
+          "url": "https://www.ign.com/articles/gta-6-fashion-in-the-ign-community",
+          "title": "GTA 6 Fashion in the IGN Community",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVJmZA5Lf-t9YFu1lj4m_E76icRF73a5w9VStDAUZAXkcFDaEg2oM2WKzKp6s"
+        },
+        {
+          "url": "https://www.gamingbible.com/news/gta-6-hairstyle-beauty-options-guide-098503-20261125",
+          "title": "GTA 6 hair and beauty salons: Every hairstyle, nails and makeup option for Jason and Lucia",
+          "publisher": "GAMINGbible",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMCg_Ln-fEWMHA1Sg_1Zj1YXr_9DNy7uXvqiv4e-4E5QQT6duXRvjpm62sXA"
+        }
+      ]
+    },
     {
       "query": "prisoners",
       "approx_searches": "200+",
@@ -38,41 +178,6 @@
           "publisher": "The Washington Post",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStBoCwVuHEtbj84T48i_wRzLy0dewMq6dd53b7oEt88E6lvRdxwK5u_NAFi3w"
-        }
-      ]
-    },
-    {
-      "query": "beach hazards statement",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T07:10:00Z",
-      "related_news_urls": [
-        "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
-        "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
-        "https://demokratis.co.id/en/nws-southern-california-beach-hazards"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys",
-      "image_credit": "Los Angeles Daily News",
-      "news": [
-        {
-          "url": "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
-          "title": "High surf advisory in place for Malibu and Los Angeles County Beaches until early Saturday evening",
-          "publisher": "Los Angeles Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys"
-        },
-        {
-          "url": "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
-          "title": "Update: Beach hazards statement for Orange County Coast and San Diego County Coastal Areas until early Saturday evening",
-          "publisher": "Orange County Register",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxbt8I4G_AwQBqNSUbsA8Cbvcd2ili07VIrjVO5q21a_07M7JSds4YrrnnbKo"
-        },
-        {
-          "url": "https://demokratis.co.id/en/nws-southern-california-beach-hazards",
-          "title": "NWS Warns of Dangerous Surf and Coastal Flooding in Southern California",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
         }
       ]
     },
@@ -112,13 +217,48 @@
       ]
     },
     {
+      "query": "beach hazards statement",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T07:10:00Z",
+      "related_news_urls": [
+        "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
+        "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
+        "https://demokratis.co.id/en/nws-southern-california-beach-hazards"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys",
+      "image_credit": "Los Angeles Daily News",
+      "news": [
+        {
+          "url": "https://www.dailynews.com/2026/11/27/high-surf-advisory-in-place-for-malibu-and-los-angeles-county-beaches-until-early-saturday-evening/",
+          "title": "High surf advisory in place for Malibu and Los Angeles County Beaches until early Saturday evening",
+          "publisher": "Los Angeles Daily News",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQLuW1APacJ0AdjO2Oh9K3iPjmPeUv9CIYVhZ7cI8OwTlKOq0QcDVlrwEJsys"
+        },
+        {
+          "url": "https://www.ocregister.com/2026/11/27/update-beach-hazards-statement-for-orange-county-coast-and-san-diego-county-coastal-areas-until-early-saturday-evening/",
+          "title": "Update: Beach hazards statement for Orange County Coast and San Diego County Coastal Areas until early Saturday evening",
+          "publisher": "Orange County Register",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSxbt8I4G_AwQBqNSUbsA8Cbvcd2ili07VIrjVO5q21a_07M7JSds4YrrnnbKo"
+        },
+        {
+          "url": "https://demokratis.co.id/en/nws-southern-california-beach-hazards",
+          "title": "NWS Warns of Dangerous Surf and Coastal Flooding in Southern California",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
+        }
+      ]
+    },
+    {
       "query": "xaivian lee",
       "approx_searches": "200+",
       "published_at": "2026-11-28T06:50:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/mens-college-basketball/articles/gonzaga-may-unlocking-best-version-193604789.html",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920540",
-        "https://www.spokesman.com/stories/2026/nov/26/gonzaga-wing-chauncey-wiggins-shows-he-can-be-impa/"
+        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909800",
+        "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-thoughts-analysis-vegas-293293126/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSEAFZkVqSJ8R_BYkATg1a60wDx9gPG9KrWgP9sArzyDri8YgsiR8Qzdy2BPM",
       "image_credit": "Yahoo Sports",
@@ -131,18 +271,18 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSEAFZkVqSJ8R_BYkATg1a60wDx9gPG9KrWgP9sArzyDri8YgsiR8Qzdy2BPM"
         },
         {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920540",
-          "title": "Gonzaga 72-64 Baylor (Nov 26, 2026) Game Recap",
+          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909800",
+          "title": "Gonzaga 101-61 Kansas State (Nov 25, 2026) Game Recap",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlHoNM-kvK1R-W3tpPSsl2v3xJum4xFLBUNt4aHdN1VefTpuJRGs5UZUiE2TA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8QEr5oY_Cn2REur2PmYYF1G_9Wn-2iJpNnxqLwwQsEKzrXGSiVdqnrop_wGw"
         },
         {
-          "url": "https://www.spokesman.com/stories/2026/nov/26/gonzaga-wing-chauncey-wiggins-shows-he-can-be-impa/",
-          "title": "Gonzaga wing Chauncey Wiggins shows he can be impact player in win over Baylor | 3 takeaways",
-          "publisher": "The Spokesman-Review",
+          "url": "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-thoughts-analysis-vegas-293293126/",
+          "title": "What I did and didn't like from K-State's 101-61 loss to Gonzaga",
+          "publisher": "247Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTF1WCKxdstGFtb8uxR0mTmcYK6C_A99gHgompdu0MzHwuMU-nVZbiph2eryfQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ91ABAO6IznSj-fcag_qoiycQuLQcFPxFF0Lo9qXt3jEurffklFYIiVaZmpYM"
         }
       ]
     },
@@ -170,7 +310,7 @@
           "title": "New app consolidates Alaska tsunami hazard and preparation information",
           "publisher": "News From The States",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSCmtntlH4Io7dDjX7UkMQffAPjMoNaVG-s8Rko7j5iX07Z08mhZ1kSpOYN7AE"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyOq_9ER5-LyJFJtG0WMxPdmikB0DNegTpBS6tqhrBiMKNRnME0LnLDse6m5k"
         },
         {
           "url": "https://www.newsminer.com/news/alaska_news/winter-for-the-alaska-earthquake-center-field-crew/article_00ef3228-3cdb-4ffe-a27d-5e72baf22bf3.html",
@@ -213,146 +353,6 @@
           "publisher": "E! News",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJSlrQeC4faO77AVWlkCXmzE97CntZ9Hu-GGl5fuUBPkC4BZ2niv0HfeSRA0w"
-        }
-      ]
-    },
-    {
-      "query": "jodie foster",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T06:00:00Z",
-      "related_news_urls": [
-        "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
-        "https://cwibc.co.id/en/jodie-foster-queen-celeste-hexed",
-        "https://www.the-independent.com/arts-entertainment/films/news/jodie-foster-favorite-film-the-lion-king-b3089246.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/jodie-foster-says-her-hexed-villain-is-much-meaner-in-french-after-recording-both-versions-exclusive-12259458",
-          "title": "Jodie Foster Says Her Hexed Villain Is ‘Much Meaner in French’ After Recording Both Versions (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQWrJOj2RBL1kwDIOsqPMy7K84kWlUbj6NhkIgv7G9xUihUb3xx_m29Lu-0c8E"
-        },
-        {
-          "url": "https://cwibc.co.id/en/jodie-foster-queen-celeste-hexed",
-          "title": "Jodie Foster Voices Queen Celeste in Disney Animation's Hexed",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkAAb44WOQwfw94lu0FtssVSd_8cBh8K6qqugjscnuqwfTcV6u690B3rpmzX0"
-        },
-        {
-          "url": "https://www.the-independent.com/arts-entertainment/films/news/jodie-foster-favorite-film-the-lion-king-b3089246.html",
-          "title": "Jodie Foster reveals her favorite film ‘ever’ that she’s watched ‘over 100 times’",
-          "publisher": "The Independent",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcStN5-46-QuXBMC6JVETZtvdDJq2Aohr3wgKsaDCVp-sUpNkCWbXfnaOuhPGt4"
-        }
-      ]
-    },
-    {
-      "query": "wlfi",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T06:00:00Z",
-      "related_news_urls": [
-        "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2",
-        "https://cryptobriefing.com/world-liberty-financial-wlfi-token-plunges-59-percent/",
-        "https://www.tokenpost.com/news/investing/63940"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFFch5jCE0G2kVZHBORHk_Ez2gy53pA_upOWFw6t5OWHZvgrcnWo6rh5ZENcw",
-      "image_credit": "The Defiant",
-      "news": [
-        {
-          "url": "https://thedefiant.io/news/markets/world-liberty-s-wlfi-sinks-39-as-bitcoin-slips-2",
-          "title": "World Liberty’s WLFI Sinks 39% as Bitcoin Slips 2%",
-          "publisher": "The Defiant",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFFch5jCE0G2kVZHBORHk_Ez2gy53pA_upOWFw6t5OWHZvgrcnWo6rh5ZENcw"
-        },
-        {
-          "url": "https://cryptobriefing.com/world-liberty-financial-wlfi-token-plunges-59-percent/",
-          "title": "World Liberty Financial’s WLFI token plunges 59% in 24 hours",
-          "publisher": "Crypto Briefing",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrCFhqMiTu7xSlfSH7CuqV8c969aCkuqAX8Ba7tYNUmR26srTgxBcVtJVuOjI"
-        },
-        {
-          "url": "https://www.tokenpost.com/news/investing/63940",
-          "title": "WLFI Wallet Sells 12,121 ETH at Estimated $19.26 Million Loss",
-          "publisher": "www.tokenpost.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9qGp3-EqTUck2fBwqp7DHdeHKM-vBFN1ACCyiIWHp49z7qGfih8z63rsHwhw"
-        }
-      ]
-    },
-    {
-      "query": "dustin hoffman",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T05:50:00Z",
-      "related_news_urls": [
-        "https://www.wsj.com/arts-culture/books/look-at-me-review-hes-talkin-here-c8aa617a",
-        "https://ew.com/dustin-hoffman-reveals-money-from-the-graduate-12247734",
-        "https://forward.com/culture/film-tv/864355/dustin-hoffman-me-too-look-at-me-memoir-review-jewish-actor-dorothy-michaels-tootsie/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyQyLUnXdOArOI3hb2eQ50L5Z9tdt7EGGwaQciVOTrDFcQ-zsNCCcqTaGNAL0",
-      "image_credit": "WSJ",
-      "news": [
-        {
-          "url": "https://www.wsj.com/arts-culture/books/look-at-me-review-hes-talkin-here-c8aa617a",
-          "title": "‘Look at Me’ Review: He’s Talkin’ Here",
-          "publisher": "WSJ",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyQyLUnXdOArOI3hb2eQ50L5Z9tdt7EGGwaQciVOTrDFcQ-zsNCCcqTaGNAL0"
-        },
-        {
-          "url": "https://ew.com/dustin-hoffman-reveals-money-from-the-graduate-12247734",
-          "title": "Dustin Hoffman reveals how much money he took home from The Graduate: ‘My life was surreal’",
-          "publisher": "Entertainment Weekly",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk-ms4ce3NHJNZFfzqp3wRMGkIInmydHg69YNIP2YJKFRswgG9o5zSJwRoK9U"
-        },
-        {
-          "url": "https://forward.com/culture/film-tv/864355/dustin-hoffman-me-too-look-at-me-memoir-review-jewish-actor-dorothy-michaels-tootsie/",
-          "title": "Dorothy Michaels, the woman Dustin Hoffman played in 'Tootsie,' might have thoughts about her alter ego's new memoir",
-          "publisher": "The Forward",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR9Svg8VblDv785jP62o0wtdx8Kfk0yXFcFqnLSctkKx8wRecQX_tizBbn8LUI"
-        }
-      ]
-    },
-    {
-      "query": "wes enis",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T05:50:00Z",
-      "related_news_urls": [
-        "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
-        "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU",
-      "image_credit": "Creighton University Athletics",
-      "news": [
-        {
-          "url": "https://gocreighton.com/news/2026/11/26/mens-basketball-vs-tcu",
-          "title": "Men's Basketball Tops TCU in Players Era 16 Semifinal",
-          "publisher": "Creighton University Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSNA1TYgZ1a97mRT34uS7uAqoezwCQ_-KsGtegbzEzESzERSoz5sTc5e2geEwU"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401920538",
-          "title": "Creighton 95-87 TCU (Nov 26, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSKwJ-hCAF1eZc4g7hOEUyoIOuFjoRvGIVzsukhBkF2QSEYzzB-zIpRcvw5kGI"
-        },
-        {
-          "url": "https://www.foxsports.com/articles/cbk/tcu-horned-frogs-play-the-creighton-bluejays",
-          "title": "TCU Horned Frogs play the Creighton Bluejays",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZZbMDYyeJQpeciPrvCnbboR9O0J49FLr4Mwf6F2WyEgGvcuYLtPUOQwqclDs"
         }
       ]
     }
