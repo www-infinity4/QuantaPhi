@@ -65,3 +65,87 @@ Further boundary testing and independent review reproduced an unread-upload defe
 No source export, old-writer fence, real adapter configuration, phone installation, process replacement, DNS/tunnel change, runner-origin change or writer activation occurred. Next executable step: independent review and exact-head CI of this integration, then verify the existing private host configuration and a consistent source export/fence before controlled live adoption. Bubbles conversation routing and actual engineering acceptance remain open.
 
 The mesh remains optional staging/recovery under #2110's repository-first placement decision. This general Node host integration can run on a verified owner-approved non-phone host; it does not make the phone the required production server. New subprocess fixtures use the corrected bounded monotonic readiness window and stop-before-directory-removal order from #2157. Native cloud Workers AI bindings are not evidence of an existing local model adapter; its real configuration/inference still requires verification.
+
+## Continuation · fixed paid-account API staging, 2026-11-28 UTC
+
+One further source session on branch `feat/bubbles-paid-api-stage-1907-20261127`,
+baseline `a33425fec3ac7593f626f2b5b9f9065ff9f29bde`. Continues the same
+#1907/#2110/#1110; no new ticket, production lease, fence, task/session identity
+or grant is claimed. All lease fields remain null. Overall acceptance percentage
+and remaining sessions are unknown. State: source tested / live access blocked,
+🔵. Exact publication, CI and independent-review receipts follow in canonical
+#1907; this checkpoint does not claim a live database create or chat recovery.
+
+Owner reports paying for existing Cloudflare account
+`392a60022046dd9f6d11b1d4b511a2ad` (Watsonkris611) and authorizes Bubbles/Brain
+setup only. The earlier absolute-zero-budget interpretation is superseded by
+that specific owner-reported payment, not permission to add subscriptions.
+The matching invitation was accepted and memberships read back accepted, but
+a fresh `/accounts` check still exposes only the original account to the
+existing connector. GitHub/passkey login in the shared browser failed. Cookies
+were not cleared. Owner requests curl/Termux as the new access path.
+
+Implemented a standard-library operator targeting only that fixed account
+and `bubbles-brain-core`: default access check; explicit empty staging using
+native original `work_tickets`, `brain_experiences`, `bubbles_chatgpt_bridge`
+schemas and five indexes. Incompatible/unknown schema or any existing core
+record stops writes. Partial compatible empty staging can be explicitly
+resumed. No deletion, owner rekeying, fabricated jobs, model call, Worker,
+cron, DNS, billing or production traffic change exists in this path.
+
+Optional explicit `--connect-github` uses existing authenticated `gh`, stdin
+only, to store the private API token in the dedicated repository Actions secret
+`BUBBLES_CLOUDFLARE_API_TOKEN`, with sanitized metadata readback. Existing
+dedicated secrets are detected case-insensitively and left unchanged. GitHub
+has no atomic create-only secret update, so concurrent administration of this
+dedicated name is excluded. Original deployment secrets are never selected.
+The manual-only workflow may use this secret on this repository's main after
+review and an owner-approved security-sensitive merge; PR tests receive no
+Cloudflare secret. No automatic live operation or new continuous phone server.
+
+Regression-first suite failed on the absent operator; current 17 offline tests
+pass with real SQLite schemas/partial-stage/readback, private prompt failure,
+fixed HTTPS/account, redirect refusal, bounded API calls, no automatic retry,
+schema/data preservation, case-insensitive GitHub secret inventory, stdin-only
+token, readback and uncertain credential-write receipts. Independent Pink
+found the initial uncertain-secret receipt and inventory/case issues; corrected
+with regressions and explicit create-only limitation. Tests contain synthetic
+credentials only. [Operator guide](../../docs/BUBBLES-PAID-ACCOUNT-API.md).
+
+No private API token is available to this session, no new-account D1 or secret
+write was performed, and payment/model capacity is not independently verified.
+Next: publish/review/exact-head CI, have the owner enter an account-scoped token
+privately in Termux, read the sanitized live receipt, then continue original
+private state/fence/import and reviewed Bubbles Worker/model/transport release.
+Creating an empty schema must not activate an empty Brain or reset owner data.
+
+### Owner correction · use existing Termux credentials first
+
+Owner rejects another dashboard/token-creation handoff and explicitly requests
+building through the existing Termux installation. The prior manual credential
+entry command is optional, not a required first step. Same draft #2164 now
+adds `--existing-credentials`: existing dedicated/standard environment token,
+then an already installed Wrangler's captured `auth token --json`. No install,
+npm, login/browser launch, arbitrary credential-file scan or new API token.
+Missing/unauthorized auth stops with sanitized evidence; temporary OAuth is
+never exported as a durable GitHub secret. Fixed account/schema/write gates
+are unchanged. Normal optional private entry still works if Wrangler is
+unconfigured; existing-only mode never prompts.
+
+Fresh live tunnel metadata: `quantaphi-termux-brain-stage`
+(`63bdb3b3-9e47-47b0-8a39-583783e5d825`) reports `down`, zero connections,
+last inactive `2026-11-27T22:19:33.601628Z`. No tunnel token fetched or tunnel
+configuration changed. The public-health lookup could not retrieve a result;
+that lookup is not an origin-health failure receipt. Local root GitHub CLI
+is not authenticated, and the available GitHub connector exposes no workflow
+dispatch or secret reader. Neither read proves the phone lacks credentials
+or local processes; root cannot run commands on the phone through the offline
+bridge. No remote phone command has been executed.
+
+Regression-first additional tests failed before this mode existed. Current
+23 offline tests pass, including existing environment/Wrangler selection,
+stdin closure, telemetry/debug suppression, no interactive fallback, captured
+failure sanitization and temporary OAuth non-export. Independent follow-up
+review and new exact-head CI are recorded in the canonical issue. No live
+database create, credential copy or Bubbles recovery is claimed. Next: one
+existing-credentials Termux run and sanitized receipt, without dashboard work.

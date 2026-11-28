@@ -1,0 +1,65 @@
+name: Bubbles paid account empty staging
+on:
+  pull_request:
+    paths:
+      - 'scripts/bubbles-account-stage.py'
+      - 'test/bubbles_account_stage_test.py'
+      - '.github/workflows/bubbles-account-stage.yml'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Check access, or stage the empty original core schemas'
+        type: choice
+        options: [check, stage]
+        default: check
+permissions:
+  contents: read
+concurrency:
+  group: bubbles-paid-account-${{ github.event_name == 'workflow_dispatch' && 'manual' || github.ref }}
+  cancel-in-progress: false
+jobs:
+  offline-tests:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Prove source and run offline real SQLite checks
+        run: |
+          git rev-parse HEAD
+          python3 -m unittest discover -s test -p bubbles_account_stage_test.py
+  account-stage:
+    needs: offline-tests
+    if: github.event_name == 'workflow_dispatch' && github.repository == 'www-infinity4/QuantaPhi' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run only the explicitly selected fixed-account operation
+        env:
+          BUBBLES_CLOUDFLARE_API_TOKEN: ${{ secrets.BUBBLES_CLOUDFLARE_API_TOKEN }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+        run: |
+          git rev-parse HEAD
+          case "$REQUESTED_MODE" in
+            check) python3 scripts/bubbles-account-stage.py | tee "$RUNNER_TEMP/bubbles-account-stage.json" ;;
+            stage) python3 scripts/bubbles-account-stage.py --stage | tee "$RUNNER_TEMP/bubbles-account-stage.json" ;;
+            *) exit 1 ;;
+          esac
+      - name: Preserve sanitized operation receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bubbles-paid-account-stage-receipt
+          path: ${{ runner.temp }}/bubbles-account-stage.json
+          if-no-files-found: error
+          retention-days: 7
