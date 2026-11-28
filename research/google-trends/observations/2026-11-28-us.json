@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T05:01:05.468018Z",
+  "checked_at": "2026-11-28T05:31:08.520479Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "spurs score",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T04:40:00Z",
+      "query": "stephon castle",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T05:10:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/charles-barkley-says-washington-wizards-114000610.html",
-        "https://www.espn.com/nba/recap/_/gameId/401909325",
-        "https://www.oregonlive.com/blazers/2026/11/joe-freemans-3-takeaways-from-trail-blazers-nba-cup-win-over-spurs.html"
+        "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/it-always-feels-good-when-you-dont-play-your-best/92874128007/",
+        "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/ZwLIF3QWIqnF/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCy4Uome34VkFx67yZFLZa4EB1f7Yi7FsZYZfsGWq41oQ1IA3eHhw6Bjrw9EE",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwFaaEwCuaSeOBuRN2MJ78me7PcW0__QPsaCikx0ccRhi3Z0YHhqNHcAfola4",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/articles/charles-barkley-says-washington-wizards-114000610.html",
-          "title": "Charles Barkley says the Washington Wizards made a trade that proves they don’t know what they’re doing",
+          "url": "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
+          "title": "Spurs guard Stephon Castle in elite company as stat sheet-stuffing star",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCy4Uome34VkFx67yZFLZa4EB1f7Yi7FsZYZfsGWq41oQ1IA3eHhw6Bjrw9EE"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwFaaEwCuaSeOBuRN2MJ78me7PcW0__QPsaCikx0ccRhi3Z0YHhqNHcAfola4"
         },
         {
-          "url": "https://www.espn.com/nba/recap/_/gameId/401909325",
-          "title": "Trail Blazers 116-111 Spurs (Nov 25, 2026) Game Recap",
-          "publisher": "ESPN",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/it-always-feels-good-when-you-dont-play-your-best/92874128007/",
+          "title": "\"It always feels good when you don't play your best …",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvWcKVRywOQo3yp3NvB9Km-rU1jA7RuWJQGwWNfq95Qwla4cOLwS6JzHC1JSU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG4eHFGO-l_7UnNFmYO7qAKs0yZ6DD8c-_JKASlRLdH3qMQhGhTdiIO9FRFog"
         },
         {
-          "url": "https://www.oregonlive.com/blazers/2026/11/joe-freemans-3-takeaways-from-trail-blazers-nba-cup-win-over-spurs.html",
-          "title": "Joe Freeman’s 3 takeaways from Trail Blazers’ NBA Cup win over Spurs",
-          "publisher": "OregonLive.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO76ru1AX-_tsW8xlJwmQnoniQxc8xTcxcQhy-N_oL93cKb9zOVH8gRHCvbcc"
-        }
-      ]
-    },
-    {
-      "query": "gonzaga basketball",
-      "approx_searches": "5000+",
-      "published_at": "2026-11-28T04:30:00Z",
-      "related_news_urls": [
-        "https://www.slipperstillfits.com/general/31696/game-preview-gonzaga-creighton-clash-at-the-players-era-16",
-        "https://omaha.com/sports/college/creighton/article_adce0356-71f3-4330-bd4c-a451db03d04f.html",
-        "https://sports.yahoo.com/betting/articles/gonzaga-vs-creighton-basketball-odds-190253488.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-DEnt0YtZg3Plf_1eVwQ0JzMvc-veVC8ekDlW79riGrXyTGlJU9ees4sjEZ8",
-      "image_credit": "The Slipper Still Fits",
-      "news": [
-        {
-          "url": "https://www.slipperstillfits.com/general/31696/game-preview-gonzaga-creighton-clash-at-the-players-era-16",
-          "title": "Game Preview: Gonzaga, Creighton Clash at the Players Era 16",
-          "publisher": "The Slipper Still Fits",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-DEnt0YtZg3Plf_1eVwQ0JzMvc-veVC8ekDlW79riGrXyTGlJU9ees4sjEZ8"
-        },
-        {
-          "url": "https://omaha.com/sports/college/creighton/article_adce0356-71f3-4330-bd4c-a451db03d04f.html",
-          "title": "Round one, fight! Weeks before rematch, Creighton, Gonzaga meet in Players Era semifinal",
-          "publisher": "Omaha World-Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRUYnFdytlsyMBxVuP6aY78HfQvQaKs8ppHMT2pC4Oy55aO_Y3Spu34jAOdTmg"
-        },
-        {
-          "url": "https://sports.yahoo.com/betting/articles/gonzaga-vs-creighton-basketball-odds-190253488.html",
-          "title": "Gonzaga vs. Creighton basketball odds, point spread, moneyline and over/under",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGNnOGnKPSBBWCWKF2Pky-6E2-8KfnkIywovzJ50UuEwVvgxf8X6AaZNtNBNQ"
-        }
-      ]
-    },
-    {
-      "query": "mega millions numbers",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T04:30:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
-        "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
-        "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
-          "title": "Mega Millions Jackpot Rises To $673 Million—Here’s What The Winner Could Take Home",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE"
-        },
-        {
-          "url": "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
-          "title": "Mega Millions winning numbers for Friday, Nov. 27, 2026",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
-        },
-        {
-          "url": "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/",
-          "title": "PA Lottery ticket worth $100,000 sold in Luzerne County",
-          "publisher": "28/22 News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGUrXk3I_kmt30vKapYAgJgHWr-Gfb9TTYy66fhkYB5gOeadH4OtdDyIbRJ0"
-        }
-      ]
-    },
-    {
-      "query": "pat kelsey",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T04:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/mens-college-basketball/story/_/id/50609831/louisville-calls-extra-gets-ball-back-game-winner",
-        "https://www.whas11.com/article/sports/basketball/pat-kelsey-rick-pitino-reflect-on-emotional-louisville-st-johns-matchup/417-b5a32b4c-e26f-4156-ac27-a6cd611875f0",
-        "https://gocards.com/news/2026/11/27/mens-basketball-wooley-hits-buzzer-beater-cards-win-93-90-over-st-john-s"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9Lgf-nLkBhqk9QHAshr-ROk7e6OiYsOu5tRrtag2pU8bG4uP-ICQS96re8OM",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50609831/louisville-calls-extra-gets-ball-back-game-winner",
-          "title": "Louisville calls excessive TO but gets ball back for game-winning 3",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9Lgf-nLkBhqk9QHAshr-ROk7e6OiYsOu5tRrtag2pU8bG4uP-ICQS96re8OM"
-        },
-        {
-          "url": "https://www.whas11.com/article/sports/basketball/pat-kelsey-rick-pitino-reflect-on-emotional-louisville-st-johns-matchup/417-b5a32b4c-e26f-4156-ac27-a6cd611875f0",
-          "title": "Pat Kelsey, Rick Pitino reflect on emotional Louisville-St. John’s matchup",
-          "publisher": "WHAS11",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdO_2tx01bBXLG1dUDEeG7qtcQuk81lvMhMEY2Dp8i3wL9xpmm-EeImxasuk"
-        },
-        {
-          "url": "https://gocards.com/news/2026/11/27/mens-basketball-wooley-hits-buzzer-beater-cards-win-93-90-over-st-john-s",
-          "title": "Wooley Hits Buzzer-Beater; Cards Win 93-90 Over St. John’s",
-          "publisher": "gocards.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYyqAkq5t_rkEU2iHzXGbtnxO6whmrEBnxXTFMSI0B0GZDf8zWht3EKGb9cKg"
-        }
-      ]
-    },
-    {
-      "query": "college football playoff bracket",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T04:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
-        "https://www.foxnews.com/outkick-sports/live-chat-big-ten-danger-getting-only-one-college-football-playoff-bid",
-        "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/27/cfp-football-rankings-predictions-live-college-scores-playoff-bracket-week-13/92977811007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0QN0hCn-jSYca9JaFSPiWo9j4lfrRAFZ61PnbMtkfnettEVm_QXez0qJqRhg",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
-          "title": "Who's on the College Football Playoff bubble after committee's fourth ranking?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0QN0hCn-jSYca9JaFSPiWo9j4lfrRAFZ61PnbMtkfnettEVm_QXez0qJqRhg"
-        },
-        {
-          "url": "https://www.foxnews.com/outkick-sports/live-chat-big-ten-danger-getting-only-one-college-football-playoff-bid",
-          "title": "LIVE CHAT: Is the Big Ten in danger of getting only one College Football Playoff bid?",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCRIP7arr0T7e9lHERxUSA8FrDhAr9VvC389R4tdlCpqozJ5H_CrLl17qCqHY"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/27/cfp-football-rankings-predictions-live-college-scores-playoff-bracket-week-13/92977811007/",
-          "title": "CFP rankings live predictions: Iowa blowout first Big Ten Playoff domino",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxS_ZWNUSy8nYpvdgHYMIqVxcN8TftcLUjPMRSsnHDvyaJU9-0bHuoLFxvO5o"
-        }
-      ]
-    },
-    {
-      "query": "texas college football standings",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-28T04:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
-        "https://www.cbssports.com/college-football/news/2026-sec-championship-game-texas-georgia/",
-        "https://sports.yahoo.com/college-football/articles/texas-win-eliminates-tennessee-football-040130673.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
-          "title": "Breaking down Tennessee’s SEC Championship Game scenarios with one game to go",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4"
-        },
-        {
-          "url": "https://www.cbssports.com/college-football/news/2026-sec-championship-game-texas-georgia/",
-          "title": "2026 SEC Championship Game: Texas gets one last shot at Georgia in contest's final edition",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqF76CpAHWYjc7xXoOWuCbGtOibqPJ8eSLjZ3edDGoP-gMqmEzN8PAe3efGLY"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/texas-win-eliminates-tennessee-football-040130673.html",
-          "title": "Texas win eliminates Tennessee football from last SEC championship game",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzVx99GXn6BeLVeAKXufJDKnuhlz31MkFHgKvi5WNkfUnc5pttaMM21SCUhSA"
-        }
-      ]
-    },
-    {
-      "query": "devon dampier",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T04:10:00Z",
-      "related_news_urls": [
-        "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
-        "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
-        "https://www.foxsports.com/watch-vertical/fmc-uvdbo5s9vm3o0lqa"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU",
-      "image_credit": "The Salt Lake Tribune",
-      "news": [
-        {
-          "url": "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
-          "title": "What needs to happen for Devon Dampier to win the Heisman?",
-          "publisher": "The Salt Lake Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
-          "title": "Who’s winning Heisman Trophy? Devon Dampier moves up, Jeremiah Smith runaway after Week 12",
+          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/ZwLIF3QWIqnF/",
+          "title": "MURPH at the Bucks-Blazers game!",
           "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4yBOTWacYJyfCSoD3HeBT4dIn1_KWm-0v7iL8cBzO9f8juFvre75qDvbxyNI"
-        },
-        {
-          "url": "https://www.foxsports.com/watch-vertical/fmc-uvdbo5s9vm3o0lqa",
-          "title": "Devon “Spider-Man” Dampier leads Utah Football to its 11th win of the season",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSePPFxCV-_EnzuukPiG5xg9Ymuoeh6oUKalQmroKmtSjm94AOxge26FU3CBwE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTuPrlOzRFiYhZ71nCzYN88q9c6nxKsXFe17Jx6aL_oU1V_XboufYrJtk4ZH8"
         }
       ]
     },
     {
-      "query": "heisman odds",
+      "query": "chris pratt",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T05:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
+        "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt",
+        "https://www.rogerebert.com/reviews/way-of-the-warrior-kid-chris-pratt-apple-tv-film-review-2026"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/way-of-the-warrior-kid-review.html",
+          "title": "‘Way of the Warrior Kid’ Review: Dispensing Martial Wisdom",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0LJZIzhmVTolx6zK-V6bMXCEMf9Z7LBXQY_3qKSbGNoiIEeXYoCNXAiUTvA"
+        },
+        {
+          "url": "https://www.theguardian.com/film/2026/nov/25/way-of-the-warrior-kid-review-chris-pratt",
+          "title": "Way of the Warrior Kid review - Chris Pratt’s family film is as subtle as a military recruitment video",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwzvWnLlc_5ShLSM347g8t3u4vvIgNIjn4A95X6i5X2iE-mBeNRY3Lk6XoAlk"
+        },
+        {
+          "url": "https://www.rogerebert.com/reviews/way-of-the-warrior-kid-chris-pratt-apple-tv-film-review-2026",
+          "title": "Way of the Warrior Kid review: Chris Pratt pumps up a wimpy tot in limp Apple TV drama",
+          "publisher": "Roger Ebert",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvPGo_5tJHZcz-zufaezM4sBvFE1J2zK0Xfrkxgti9ANXmmPNkj2wcJlJKD5Q"
+        }
+      ]
+    },
+    {
+      "query": "matisse thybulle",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T04:10:00Z",
+      "published_at": "2026-11-28T05:00:00Z",
       "related_news_urls": [
-        "https://www.dispatch.com/story/opinion/columns/guest/2026/11/27/jeremiah-smith-ohio-state-the-game-kelly-immel-michigan/92931313007/",
-        "https://247sports.com/college/ohio-state/article/special-jeremiah-smith-should-overcome-history-become-ohio-state-football-eight-heisman-trophy-winner-293345249/",
-        "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu"
+        "https://www.nytimes.com/athletic/7801996/2026/11/24/lakers-steals-defensive-nba/",
+        "https://www.cbssports.com/fantasy/basketball/news/lakers-matisse-thybulle-delivers-four-defensive-stats-in-win/",
+        "https://www.espn.com/video/clip/_/id/50579370/matisse-thybulle-rocks-rim-powerful-flush"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g",
-      "image_credit": "The Columbus Dispatch",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHPhwcP9V9YbWJg8yEnmc7F0r49aTcN52umtsKQPmT4Df9pSCpmivd3bMB08",
+      "image_credit": "The New York Times",
       "news": [
         {
-          "url": "https://www.dispatch.com/story/opinion/columns/guest/2026/11/27/jeremiah-smith-ohio-state-the-game-kelly-immel-michigan/92931313007/",
-          "title": "Beat Michigan! Put ball in Jeremiah Smith's hand to send him out with 'gold pants' | Opinion",
-          "publisher": "The Columbus Dispatch",
+          "url": "https://www.nytimes.com/athletic/7801996/2026/11/24/lakers-steals-defensive-nba/",
+          "title": "The Lakers have been stealing their way to wins. So far, it’s paying off",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZHPhwcP9V9YbWJg8yEnmc7F0r49aTcN52umtsKQPmT4Df9pSCpmivd3bMB08"
         },
         {
-          "url": "https://247sports.com/college/ohio-state/article/special-jeremiah-smith-should-overcome-history-become-ohio-state-football-eight-heisman-trophy-winner-293345249/",
-          "title": "'Special' Jeremiah Smith should overcome history, become Ohio State's eight Heisman Trophy winner",
-          "publisher": "247Sports",
+          "url": "https://www.cbssports.com/fantasy/basketball/news/lakers-matisse-thybulle-delivers-four-defensive-stats-in-win/",
+          "title": "Lakers' Matisse Thybulle: Delivers four defensive stats in win",
+          "publisher": "CBS Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT44G3FOZJ9GzpW2B4M6h97TAgf5CXXdItdS8SARErHWade-LSDtvaKTV57c-4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSVS_Dfwi6YOUxVlTT8cpuBrOWIIW0D95bd7kV7rIDcjN6zoiAtu8umSMSjrxQ"
         },
         {
-          "url": "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu",
-          "title": "A big game with a bigger grudge!",
-          "publisher": "FOX Sports",
+          "url": "https://www.espn.com/video/clip/_/id/50579370/matisse-thybulle-rocks-rim-powerful-flush",
+          "title": "Matisse Thybulle rocks the rim with powerful flush",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6lm4ScWpl_JysHbGoCZjxmUjCjGctmafHckojRj_CmHvXdf2XJwTyOM3c-S0"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQDBzhVoqQtJh_DYLE-u9-xgoPfFqiRzDuAewvH0e1KCp0RMFGRhz83OMMGH6s"
         }
       ]
     },
     {
-      "query": "united fidelity bank",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T04:10:00Z",
+      "query": "spurs coach",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:00:00Z",
       "related_news_urls": [
-        "https://www.cnn.com/2026/11/27/business/united-fidelity-bank-fdic",
-        "https://www.courierpress.com/story/news/local/2026/11/27/federal-government-closes-evansville-based-united-fidelity-bank/92987083007/",
-        "https://www.americanbanker.com/news/regulators-shutter-indiana-based-united-fidelity-bank"
+        "https://sports.yahoo.com/nba/articles/lakers-biggest-test-coming-not-193737959.html",
+        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/were-either-going-to-be-contenders-or-were-going-to/92964374007/",
+        "https://www.nytimes.com/athletic/7812789/2026/11/25/jj-redick-lakers-spurs-austin-reaves-injury/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6_-kF44OE4BVjeNelLfAW61pSBSXW_crlToabpzcPLr7ULKewjLFYdX8J1iE",
-      "image_credit": "CNN",
-      "news": [
-        {
-          "url": "https://www.cnn.com/2026/11/27/business/united-fidelity-bank-fdic",
-          "title": "Federal regulators shut $6 billion Indiana lender in biggest bank failure in over two years",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6_-kF44OE4BVjeNelLfAW61pSBSXW_crlToabpzcPLr7ULKewjLFYdX8J1iE"
-        },
-        {
-          "url": "https://www.courierpress.com/story/news/local/2026/11/27/federal-government-closes-evansville-based-united-fidelity-bank/92987083007/",
-          "title": "Federal government closes Evansville-based United Fidelity Bank",
-          "publisher": "Courier & Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDsS-dij09EfxTgvTojYuIXd3VKfwbMPm9gYFPmSfUGNonjrmMYwHbo4CnRHQ"
-        },
-        {
-          "url": "https://www.americanbanker.com/news/regulators-shutter-indiana-based-united-fidelity-bank",
-          "title": "Regulators shutter Indiana-based United Fidelity bank",
-          "publisher": "American Banker",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8C55uQi5UTu3oylJ6cHMBd6M-LYBtOaerTHd8EhBMGBMI_UW9HscuiuNUxbk"
-        }
-      ]
-    },
-    {
-      "query": "de'aaron fox",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T04:10:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/spurs-guards-dylan-harper-deaaron-033203178.html",
-        "https://basketnews.com/news-260360-dylan-harper-deaaron-fox-final-injury-status-for-spurs-vs-lakers-revealed.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/dylan-harper-will-be-available-to-play-vs-lakers"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDIcIx8J2Bn7P3JNdeKuIXh-_9bIUUTqqLiTKhNq8HbIA0MgSMW7QvAkDfTn4",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcJjTw6clCIJuPL9Qzc9Y12kUbkE1P0sF-QhHPVSzX4dgAlqeDgEb3xMehNT8",
       "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://sports.yahoo.com/nba/articles/spurs-guards-dylan-harper-deaaron-033203178.html",
-          "title": "Spurs guards Dylan Harper, De'Aaron Fox return to action against Lakers",
+          "url": "https://sports.yahoo.com/nba/articles/lakers-biggest-test-coming-not-193737959.html",
+          "title": "Lakers biggest test is coming, but it’s not Spurs, per JJ Redick",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDIcIx8J2Bn7P3JNdeKuIXh-_9bIUUTqqLiTKhNq8HbIA0MgSMW7QvAkDfTn4"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcJjTw6clCIJuPL9Qzc9Y12kUbkE1P0sF-QhHPVSzX4dgAlqeDgEb3xMehNT8"
         },
         {
-          "url": "https://basketnews.com/news-260360-dylan-harper-deaaron-fox-final-injury-status-for-spurs-vs-lakers-revealed.html",
-          "title": "Dylan Harper, De'Aaron Fox final injury status for Spurs vs Lakers revealed",
-          "publisher": "BasketNews.com",
+          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/were-either-going-to-be-contenders-or-were-going-to/92964374007/",
+          "title": "“We're either going to be contenders or we're going to …",
+          "publisher": "HoopsHype",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq4CyQgmYJsZmpvUK5a2nA55PHk-HSLpGvHnTsIVDsymbimURdhfZxRCgMNlU"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8l3Iv7bEf9ygCJJG3CHr-UkzUNt69eINjQrgvyLCyhrTplsWffVTbLclPnhA"
         },
         {
-          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/dylan-harper-will-be-available-to-play-vs-lakers",
-          "title": "Dylan Harper will be available to play vs Lakers",
-          "publisher": "NBC Sports",
+          "url": "https://www.nytimes.com/athletic/7812789/2026/11/25/jj-redick-lakers-spurs-austin-reaves-injury/",
+          "title": "JJ Redick knows ‘noise’ is coming, regardless of how Lakers fare on road trip",
+          "publisher": "The New York Times",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_0v6BftuLoofBx0A0tTKRFbIgC8OGBoi1p6DSX1_wd1vAvUxz27uQwWPgxYA"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqBxL7rF9VGgRChS7xApWO4Ri62YuO7Hy1-FzW6NT7bxhcrj8rW4EDuojWLaw"
+        }
+      ]
+    },
+    {
+      "query": "toumani camara",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:00:00Z",
+      "related_news_urls": [
+        "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-shooting-slump-continues-in-win/",
+        "https://www.rotowire.com/basketball/headlines/toumani-camara-news-shooting-slump-continues-in-win-541137",
+        "https://www.rotowire.com/basketball/headlines/toumani-camara-news-logs-10-points-in-narrow-loss-539692"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU",
+      "image_credit": "CBS Sports",
+      "news": [
+        {
+          "url": "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-shooting-slump-continues-in-win/",
+          "title": "Trail Blazers' Toumani Camara: Shooting slump continues in win",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/toumani-camara-news-shooting-slump-continues-in-win-541137",
+          "title": "Toumani Camara News: Shooting slump continues in win",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXD2Xfqq5OtQilc_7dMid-em987m_0HHusQ4VreuuCsoAWm0Zu0lrupIN7uow"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/toumani-camara-news-logs-10-points-in-narrow-loss-539692",
+          "title": "Toumani Camara News: Logs 10 points in narrow loss",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXD2Xfqq5OtQilc_7dMid-em987m_0HHusQ4VreuuCsoAWm0Zu0lrupIN7uow"
+        }
+      ]
+    },
+    {
+      "query": "mitch johnson",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:00:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/articles/spurs-bench-struggles-nothing-luke-223026858.html",
+        "https://airalamo.com/spurs-shouldnt-shut-door-making-big-trade-just-yet",
+        "https://demokratis.co.id/en/spurs-naz-reid-center-trade"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI5hAe1iOfsgHPoxHMdTtCmpVFUsr4Phv6gqqi9ViVgnizDxKibTL79-tsI0o",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/articles/spurs-bench-struggles-nothing-luke-223026858.html",
+          "title": "Spurs' Bench Struggles Has 'Nothing to Do' With Luke Kornet",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI5hAe1iOfsgHPoxHMdTtCmpVFUsr4Phv6gqqi9ViVgnizDxKibTL79-tsI0o"
+        },
+        {
+          "url": "https://airalamo.com/spurs-shouldnt-shut-door-making-big-trade-just-yet",
+          "title": "The Spurs shouldn't shut the door on making a big trade just yet",
+          "publisher": "Air Alamo",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6dsReSOngnuoIO8Ya80ZymK8n3ZoF5tiKhc7Gwjl8wbi6YOMQfwdAVNvCu3I"
+        },
+        {
+          "url": "https://demokratis.co.id/en/spurs-naz-reid-center-trade",
+          "title": "Spurs Explore Naz Reid Trade to Strengthen Center Rotation",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_VvEC1eDdWlBndZjxEpi93jAC5XDvumQ8jsa8t-54vKNU5xVdyEz64uZbr88"
+        }
+      ]
+    },
+    {
+      "query": "italy",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:00:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/tennis/story/_/id/50618699/italy-advances-davis-cup-final-win-czech-republic",
+        "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
+        "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGxcm2MdFQJribGEoxzMo-UEgDEgPEcldVXvU5YQvesAC5NpWUQ9zsMvq9-Lw",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/tennis/story/_/id/50618699/italy-advances-davis-cup-final-win-czech-republic",
+          "title": "Italy advances to Davis Cup final with win over Czech Republic",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGxcm2MdFQJribGEoxzMo-UEgDEgPEcldVXvU5YQvesAC5NpWUQ9zsMvq9-Lw"
+        },
+        {
+          "url": "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
+          "title": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final",
+          "publisher": "ATP Tour",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLu4M2reyvG-RItWWgvgIqAzqhyzOoTTVz_sF0xP6q7whcxv3LHN8x0wFOl0"
+        },
+        {
+          "url": "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori",
+          "title": "Volandri: “We were ready to die” for Italy win",
+          "publisher": "Davis Cup",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOSzM5Wu2WKmP3Tz5Lip7t610QcEJgdc6ScNGpD95Ck890gbN2QHYycT6E4Hs"
+        }
+      ]
+    },
+    {
+      "query": "amy poehler",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T04:50:00Z",
+      "related_news_urls": [
+        "https://www.thewrap.com/creative-content/tv-shows/amy-poehler-tina-fey-roast-los-angeles-thanksgiving/",
+        "https://news.jkn.co.kr/editions/english/post/1127014",
+        "https://www.imdb.com/news/ni66126842/?ref_=int_nwr_1"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3EMB2ssW1h4YBH-qLvvx_h2-5RPbt3bTAWH1aHNVyRmwjA0a8gsV5TnwXBTQ",
+      "image_credit": "TheWrap",
+      "news": [
+        {
+          "url": "https://www.thewrap.com/creative-content/tv-shows/amy-poehler-tina-fey-roast-los-angeles-thanksgiving/",
+          "title": "Amy Poehler and Tina Fey Roast LA Thanksgivings",
+          "publisher": "TheWrap",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3EMB2ssW1h4YBH-qLvvx_h2-5RPbt3bTAWH1aHNVyRmwjA0a8gsV5TnwXBTQ"
+        },
+        {
+          "url": "https://news.jkn.co.kr/editions/english/post/1127014",
+          "title": "Tina Fey and Amy Poehler Join Seth Meyers for NBC Thanksgiving Broadcast : Entertainment : JKN",
+          "publisher": "재경일보",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHWSGOIVa8UiTADBH8y47LdblPlJNz_VILUG-5ywetpdw3ioEzMR6cZbwOJUQ"
+        },
+        {
+          "url": "https://www.imdb.com/news/ni66126842/?ref_=int_nwr_1",
+          "title": "Late Night with Seth Meyers: The Meyers Family, Tina Fey, Amy Poehler",
+          "publisher": "IMDb",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStmEfOmuGX1S5ZNRG3EqaZITJ1tZ9ML0C8mxXV6tA3h9hKRHrNopAXCwdOtuA"
+        }
+      ]
+    },
+    {
+      "query": "san diego state basketball",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T04:50:00Z",
+      "related_news_urls": [
+        "https://www.sandiegouniontribune.com/2026/11/27/scouting-report-aztecs-to-face-nations-no-5-ranked-team-in-late-friday-showdown/",
+        "https://www.nytimes.com/athletic/7817339/2026/11/27/texas-tech-vs-san-diego-state-stream-how-to-watch-nov-27/",
+        "https://texastech.com/news/2026/11/27/mens-basketball-no-5-tech-takes-on-sdsu-in-players-era-16-finale"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJc7ElSTrJyr3ycHZdBNFZF04RypNQLx-eItsBYbcgItIWucWx9d0zplRbgm4",
+      "image_credit": "San Diego Union-Tribune",
+      "news": [
+        {
+          "url": "https://www.sandiegouniontribune.com/2026/11/27/scouting-report-aztecs-to-face-nations-no-5-ranked-team-in-late-friday-showdown/",
+          "title": "Scouting Report: Aztecs to face nation’s No. 5-ranked team in late Friday showdown",
+          "publisher": "San Diego Union-Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJc7ElSTrJyr3ycHZdBNFZF04RypNQLx-eItsBYbcgItIWucWx9d0zplRbgm4"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7817339/2026/11/27/texas-tech-vs-san-diego-state-stream-how-to-watch-nov-27/",
+          "title": "How to watch Texas Tech vs. San Diego State men’s basketball: TV channel and streaming options for November 27",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQyrwhzh4QT0PK4PrdV1vyGaS3lykG2_3sK-xYr25ong7qdYXFMiBRspHJWX8"
+        },
+        {
+          "url": "https://texastech.com/news/2026/11/27/mens-basketball-no-5-tech-takes-on-sdsu-in-players-era-16-finale",
+          "title": "No. 5 Tech takes on SDSU in Players Era 16 finale - Texas Tech Red Raiders",
+          "publisher": "Texas Tech Red Raiders",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKUmsdps4TD1g-asxinp3eQApAwc6TjLRKwUKaZl2U4twXxmpRl-gNRi8Mdu8"
+        }
+      ]
+    },
+    {
+      "query": "jimmy fallon",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T04:50:00Z",
+      "related_news_urls": [
+        "https://people.com/star-tracks-friday-november-27-2026-new-celebrity-photos-updated-daily-12280888-12283198",
+        "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140/",
+        "https://deadline.com/2026/11/justin-timberlake-jimmy-fallon-thanksgiving-1237234321/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkB_O2yPFir0HX2xm7dyDRsn6cJfWMcucz_bT-nsBIReTekKErECWZml98Ex8",
+      "image_credit": "People.com",
+      "news": [
+        {
+          "url": "https://people.com/star-tracks-friday-november-27-2026-new-celebrity-photos-updated-daily-12280888-12283198",
+          "title": "Celebrity Photos Updated Daily: Justin Timberlake, Jimmy Fallon, Miranda Lambert, Tina Fey, Amy Poehler and More",
+          "publisher": "People.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkB_O2yPFir0HX2xm7dyDRsn6cJfWMcucz_bT-nsBIReTekKErECWZml98Ex8"
+        },
+        {
+          "url": "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140/",
+          "title": "Watch Justin Timberlake Reluctantly Sing Backstreet Boys on ‘Fallon’: ‘This is Sacrilegious’",
+          "publisher": "Rolling Stone",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdAcgMGfFKOsiVBUBEiGNeoV-Vu2Gvlzadu1LOtsCxXl-VrgDykTkZd50DTU"
+        },
+        {
+          "url": "https://deadline.com/2026/11/justin-timberlake-jimmy-fallon-thanksgiving-1237234321/",
+          "title": "Justin Timberlake Shares Thanksgiving Dish On New Apple TV Doc Series",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7KC2qWZ-qIhh_iJKTseecXpdKyLqvalwxqTxkWanisKXAxmXm6e3cGGt4Wng"
         }
       ]
     }
