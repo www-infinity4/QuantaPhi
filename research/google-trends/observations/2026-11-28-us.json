@@ -3,41 +3,111 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T10:30:47.133255Z",
+  "checked_at": "2026-11-28T11:01:13.618406Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "what time does the macy's parade start",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T10:20:00Z",
+      "related_news_urls": [
+        "https://abc7ny.com/story/what-time-does-macys-thanksgiving-parade-start/20092509/",
+        "https://apnews.com/article/macys-thanksgiving-parade-saturday-3462aace9e773eca60dcf527afdf4a39",
+        "https://www.bbc.com/news/articles/ckd71ypy9e8eo"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQla3T0OE7vpUUzjsjS6ifJWvQiY87XOuDvF1HJFp-Gz0GWSqv26KoNdwp8W1o",
+      "image_credit": "ABC7 New York",
+      "news": [
+        {
+          "url": "https://abc7ny.com/story/what-time-does-macys-thanksgiving-parade-start/20092509/",
+          "title": "Macy's Thanksgiving Day Parade: What to know about Saturday's celebration",
+          "publisher": "ABC7 New York",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQla3T0OE7vpUUzjsjS6ifJWvQiY87XOuDvF1HJFp-Gz0GWSqv26KoNdwp8W1o"
+        },
+        {
+          "url": "https://apnews.com/article/macys-thanksgiving-parade-saturday-3462aace9e773eca60dcf527afdf4a39",
+          "title": "Postponed Macy's 100th Thanksgiving Day parade gets a do-over with 100 balloons and 1,000 clowns",
+          "publisher": "AP News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlv7FrWmiLR5LnyAA5f7i8CW26GeBkOEt3wYSm_RyvjDdKSElOv06j49skyWk"
+        },
+        {
+          "url": "https://www.bbc.com/news/articles/ckd71ypy9e8eo",
+          "title": "'We couldn't give up that easily': Marching bands scramble to cover costs after Thanksgiving parade rearranged",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTH43bTNr0vnRwYWLlz3r6hA4jn-Zeg362Yz-RpSgWtSCUDX-PLcR7pLNWgOd0"
+        }
+      ]
+    },
+    {
+      "query": "pacifica california",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T10:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
+        "https://www.marinij.com/2026/11/27/marin-officials-absorb-lessons-from-tidal-defense-before-next-torrent/",
+        "https://abcnews.com/US/king-tides-pummel-california-coast-leaders-fear/story?id=138466654"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeDDJDacgpD6fejuJUSZ6w1lwfGiF3qU0pxBZTlv7PGGJPl2LQqwUxnYxP28w",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/26/us/pacifica-pier-collapse-el-nino-king-tides.html",
+          "title": "Pacifica, Calif., Fears the Loss of Its Pier After a Section Collapsed Into the Sea",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQeDDJDacgpD6fejuJUSZ6w1lwfGiF3qU0pxBZTlv7PGGJPl2LQqwUxnYxP28w"
+        },
+        {
+          "url": "https://www.marinij.com/2026/11/27/marin-officials-absorb-lessons-from-tidal-defense-before-next-torrent/",
+          "title": "Marin officials absorb lessons from tidal defense before next torrent",
+          "publisher": "Marin Independent Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTd4WMp8qWt2WHZQLFXpBlJ6dhmAvtPPt0avVpJRhGhGK765K--RUkBPfpsal0"
+        },
+        {
+          "url": "https://abcnews.com/US/king-tides-pummel-california-coast-leaders-fear/story?id=138466654",
+          "title": "As king tides pummel California coast, leaders fear what's next",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjU9PJzJzBvnSi34Uc9ODParFoE4gs3ccFbCjPEQxUm_MIMdOkyirAfNDzV-I"
+        }
+      ]
+    },
     {
       "query": "john wick",
       "approx_searches": "100+",
       "published_at": "2026-11-28T10:10:00Z",
       "related_news_urls": [
-        "https://www.yahoo.com/entertainment/movies/box-office-results/articles/deadpool-2-director-second-flop-120000121.html",
-        "https://www.pennlive.com/food/2026/11/this-new-zoe-kravitz-heist-movie-is-actually-about-pittsburgh-food.html",
-        "https://movieweb.com/how-to-rob-a-bank-theater-exit/"
+        "https://www.imdb.com/news/ni66130346/?ref_=ttnw_art_perm",
+        "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
+        "https://www.hollywoodoutbreak.com/2026/11/27/keanu-reeves-isnt-finished-with-john-wick-just-yet/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVt2y1UuBRJ5o9MUiJj52v5lYuF6ZP2twXCxj8-0ugLp5OqKXa7VIwr_amI",
-      "image_credit": "Yahoo",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRRFv-U1AfVkYLjTcK8TsyHdJR2xZy3CGPkkRsyM9_9Oo-lwspXp2_R5HrIp4",
+      "image_credit": "IMDb",
       "news": [
         {
-          "url": "https://www.yahoo.com/entertainment/movies/box-office-results/articles/deadpool-2-director-second-flop-120000121.html",
-          "title": "Deadpool 2 Director’s Second Flop in 3 Years Continues To Crash & Burn at Box Office",
-          "publisher": "Yahoo",
+          "url": "https://www.imdb.com/news/ni66130346/?ref_=ttnw_art_perm",
+          "title": "Keanu Reeves Isn’t finished with ‘John Wick’ Just Yet",
+          "publisher": "IMDb",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVt2y1UuBRJ5o9MUiJj52v5lYuF6ZP2twXCxj8-0ugLp5OqKXa7VIwr_amI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSRRFv-U1AfVkYLjTcK8TsyHdJR2xZy3CGPkkRsyM9_9Oo-lwspXp2_R5HrIp4"
         },
         {
-          "url": "https://www.pennlive.com/food/2026/11/this-new-zoe-kravitz-heist-movie-is-actually-about-pittsburgh-food.html",
-          "title": "This new Zoe Kravitz heist movie is actually about Pittsburgh food",
-          "publisher": "PennLive.com",
+          "url": "https://opencritic.com/news/40072/john-wick-returning-in-new-prequel-game-set-years-before-the-impossible-task",
+          "title": "John Wick Returning In New Prequel Game Set Years Before The Impossible Task",
+          "publisher": "OpenCritic",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFxO2oiG9mE8ZZ_ocSlN8lz1ZPXX8mRiA7LI4bILnpf5GmLFLt9rnQ9y5MzA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvux571P0qcwnWEukk9vNZk7XAkpcFavC4LJjUtUofqDUbHxlHCFv9-DJzlzg"
         },
         {
-          "url": "https://movieweb.com/how-to-rob-a-bank-theater-exit/",
-          "title": "‘John Wick’ Director’s New Action Thriller Officially Leaves 700+ Theaters After Box Office Flop",
-          "publisher": "MovieWeb",
+          "url": "https://www.hollywoodoutbreak.com/2026/11/27/keanu-reeves-isnt-finished-with-john-wick-just-yet/",
+          "title": "Keanu Reeves Isn’t finished with ‘John Wick’ Just Yet",
+          "publisher": "Hollywood Outbreak",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMkZsGjxjHF23_chZx3xgrG8bKqmWJ0JHT3phgaTahzv3tobcOn-Pf1Tp9XXk"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRc60lUERiTIFquNz5uDZw7Wm63PG5qjYZfVEkvi5cs2_9Uq6hQ5hQ-hl5Xa1E"
         }
       ]
     },
@@ -82,7 +152,7 @@
       "published_at": "2026-11-28T09:50:00Z",
       "related_news_urls": [
         "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
-        "https://www.thehypemagazine.com/2026/11/27/how-a-car-accident-lawyer-fights-for-clients-after-a-bad-wreck/",
+        "https://www.thehypemagazine.com/2026/11/27/how-a-car-crash-lawyer-handles-suburban-collision-claims-quickly/",
         "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo",
@@ -96,11 +166,11 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo"
         },
         {
-          "url": "https://www.thehypemagazine.com/2026/11/27/how-a-car-accident-lawyer-fights-for-clients-after-a-bad-wreck/",
-          "title": "How a Car Accident Lawyer Fights for Clients After a Bad Wreck",
+          "url": "https://www.thehypemagazine.com/2026/11/27/how-a-car-crash-lawyer-handles-suburban-collision-claims-quickly/",
+          "title": "How a Car Crash Lawyer Handles Suburban Collision Claims Quickly",
           "publisher": "The Hype Magazine",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFzu4bbiHEz7qGktdP0ks8iwgdB1RtbuXDQdq7pRN0FWo0Ee2n1ca_tHehz3g"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPJT2AXy1jwotwPtZbkoE-C1eJdBazYrvvqz5fO_fYDnwmLLpaNPxJoJSwXk"
         },
         {
           "url": "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/",
@@ -113,22 +183,22 @@
     },
     {
       "query": "台湾选举",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-28T09:20:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/zhongwen/articles/cwkgry00vk48o/simp",
+        "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/simp",
         "https://www.zaobao.com.sg/news/china/story20261128-10071149",
         "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo",
       "image_credit": "BBC",
       "news": [
         {
-          "url": "https://www.bbc.com/zhongwen/articles/cwkgry00vk48o/simp",
-          "title": "台湾“九合一”选举BBC视像直播",
+          "url": "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/simp",
+          "title": "台湾“九合一”选举开票结果实时更新",
           "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo"
         },
         {
           "url": "https://www.zaobao.com.sg/news/china/story20261128-10071149",
@@ -170,7 +240,7 @@
           "title": "Bill 21 is 'legislative racism' Premier Kinew says",
           "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQcpf0ujL3g0CNBHH070yWwM1_INbjGLOOmy0lhep8jvRBeRT0-lguWmtL0EE"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6zPZg5HO9CWU_dIYN2at4zW6hBh7wiCbZm9YJC72sWnXrp3Jn5HEBax8YkNk"
         },
         {
           "url": "https://www.newsweek.com/canadas-supreme-court-upholds-muslim-headscarf-ban-12773683",
@@ -197,7 +267,7 @@
       "related_news_urls": [
         "https://finance.yahoo.com/markets/stocks/article/nvidia-stock-is-still-paying-the-price-for-the-jensen-huang-ceo-drama-124902053.html",
         "https://www.reuters.com/commentary/reuters-open-interest/icarus-stock-nvidia-sends-chill-us-savers-2026-11-25/",
-        "https://www.barchart.com/story/news/9032886/the-decline-in-nvidia-stock-was-equal-to-8-of-the-u-s-gdp-how-vital-is-nvda-to-the-u-s-economy"
+        "https://www.fool.com/investing/2026/11/24/nvidia-lost-275-trillion-in-45-days-more-than-496-sp-500-companies-wager-on-quick-bounce-disappointed/"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRAHZCcNz__Vla9SOQxLE0xg7dOFcRLOULJ8nuzWI6njJ0vXalioD3gyz4SjRM",
       "image_credit": "Yahoo Finance",
@@ -214,14 +284,14 @@
           "title": "COMMENTARY: Icarus stock Nvidia sends chill to US savers",
           "publisher": "Reuters",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8T3jb6b4C3bJnpSsOgliRaxUtfxddeKEiwpLjZLH3Y12v088gYrwfQeSEOqA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPR1UQJL-clPtiq8h0VC_7E16fCHNBq4Ndv8yalN0lFLtHcFnPXOaITNsd0E"
         },
         {
-          "url": "https://www.barchart.com/story/news/9032886/the-decline-in-nvidia-stock-was-equal-to-8-of-the-u-s-gdp-how-vital-is-nvda-to-the-u-s-economy",
-          "title": "The Decline in Nvidia Stock Was Equal to 8% of the U.S. GDP. How Vital Is NVDA to the U.S. Economy?",
-          "publisher": "Barchart.com",
+          "url": "https://www.fool.com/investing/2026/11/24/nvidia-lost-275-trillion-in-45-days-more-than-496-sp-500-companies-wager-on-quick-bounce-disappointed/",
+          "title": "Nvidia Lost $2.75 Trillion in 45 Days -- More Than the Market Cap of 496 S&P 500 Companies -- and Investors Wagering on a Quick Bounce to New Highs May Be Disappointed",
+          "publisher": "The Motley Fool",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTaY8OifZRrIm6F950Qlk4WgmFWVRy_mlbvVuwsynu80ldj47lmqjfMxIpv2i4"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5vuIv7Yazkn3id6uwm79aF_Q10u4w_TxHuoVWa4_j4_y15FKEdQrFFQHjnoM"
         }
       ]
     },
@@ -257,50 +327,6 @@
           "publisher": "Demokratis.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYs3UJup0VhR9DY_mqROGObk9kRy0la39HAjODX8o_p4y-F974akycOy6OLvg"
-        }
-      ]
-    },
-    {
-      "query": "中選會",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T08:40:00Z",
-      "related_news_urls": [],
-      "image_url": null,
-      "image_credit": "",
-      "news": []
-    },
-    {
-      "query": "台灣選舉",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T08:40:00Z",
-      "related_news_urls": [
-        "https://tw.news.yahoo.com/%E6%B4%8B%E6%B5%81-%E4%BE%86%E8%A5%B2%E9%80%BC%E8%BF%91%E8%94%A3%E8%90%AC%E5%AE%89-%E8%8B%B1%E5%AA%92-%E5%8C%97%E4%BA%AC%E4%B9%9F%E5%9C%A8%E7%9C%8B-104316894.html",
-        "https://www.worldjournal.com/wj/story/121359/9907198?from=wj_catelistnews_index",
-        "https://www.rfi.fr/tw/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E6%B3%95%E5%9C%8B%E5%A0%B1%E7%B4%99%E6%91%98%E8%A6%81/20261127-%E5%8F%8D%E5%8C%97%E4%BA%AC%E6%B4%BB%E5%8B%95%E5%AE%B6%E6%B2%88%E4%BC%AF%E9%99%BD%E7%AB%B6%E9%81%B8%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn4NTMkW5wvEOG2Og9wfkw9KmhBqjfzi7IaXhSipPAlGRi-2f74sIjZShuDY",
-      "image_credit": "Yahoo新聞",
-      "news": [
-        {
-          "url": "https://tw.news.yahoo.com/%E6%B4%8B%E6%B5%81-%E4%BE%86%E8%A5%B2%E9%80%BC%E8%BF%91%E8%94%A3%E8%90%AC%E5%AE%89-%E8%8B%B1%E5%AA%92-%E5%8C%97%E4%BA%AC%E4%B9%9F%E5%9C%A8%E7%9C%8B-104316894.html",
-          "title": "「洋流」來襲逼近蔣萬安 英媒：北京也在看",
-          "publisher": "Yahoo新聞",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn4NTMkW5wvEOG2Og9wfkw9KmhBqjfzi7IaXhSipPAlGRi-2f74sIjZShuDY"
-        },
-        {
-          "url": "https://www.worldjournal.com/wj/story/121359/9907198?from=wj_catelistnews_index",
-          "title": "洋流效應外溢南加 返台投票者增",
-          "publisher": "世界新聞網",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHchScasqnUdG2cMcTn_wDG_pCtNLWfQ_wXy_neV6ain6JgFL-ar8lfM_bGyY"
-        },
-        {
-          "url": "https://www.rfi.fr/tw/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E6%B3%95%E5%9C%8B%E5%A0%B1%E7%B4%99%E6%91%98%E8%A6%81/20261127-%E5%8F%8D%E5%8C%97%E4%BA%AC%E6%B4%BB%E5%8B%95%E5%AE%B6%E6%B2%88%E4%BC%AF%E9%99%BD%E7%AB%B6%E9%81%B8%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7",
-          "title": "法國報紙摘要 - 反北京活動家沈伯洋競選台北市長",
-          "publisher": "RFI",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKSOeFZnlwo9CRXjOH3lGboZMQo3bxFijNyQAB58gvNYQkPndni0ehB4Vn64"
         }
       ]
     }
