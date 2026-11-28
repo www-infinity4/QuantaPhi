@@ -3,13 +3,83 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T10:01:14.015648Z",
+  "checked_at": "2026-11-28T10:30:47.133255Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "car accident attorney",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T09:20:00Z",
+      "query": "john wick",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T10:10:00Z",
+      "related_news_urls": [
+        "https://www.yahoo.com/entertainment/movies/box-office-results/articles/deadpool-2-director-second-flop-120000121.html",
+        "https://www.pennlive.com/food/2026/11/this-new-zoe-kravitz-heist-movie-is-actually-about-pittsburgh-food.html",
+        "https://movieweb.com/how-to-rob-a-bank-theater-exit/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVt2y1UuBRJ5o9MUiJj52v5lYuF6ZP2twXCxj8-0ugLp5OqKXa7VIwr_amI",
+      "image_credit": "Yahoo",
+      "news": [
+        {
+          "url": "https://www.yahoo.com/entertainment/movies/box-office-results/articles/deadpool-2-director-second-flop-120000121.html",
+          "title": "Deadpool 2 Director’s Second Flop in 3 Years Continues To Crash & Burn at Box Office",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRADVt2y1UuBRJ5o9MUiJj52v5lYuF6ZP2twXCxj8-0ugLp5OqKXa7VIwr_amI"
+        },
+        {
+          "url": "https://www.pennlive.com/food/2026/11/this-new-zoe-kravitz-heist-movie-is-actually-about-pittsburgh-food.html",
+          "title": "This new Zoe Kravitz heist movie is actually about Pittsburgh food",
+          "publisher": "PennLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFxO2oiG9mE8ZZ_ocSlN8lz1ZPXX8mRiA7LI4bILnpf5GmLFLt9rnQ9y5MzA"
+        },
+        {
+          "url": "https://movieweb.com/how-to-rob-a-bank-theater-exit/",
+          "title": "‘John Wick’ Director’s New Action Thriller Officially Leaves 700+ Theaters After Box Office Flop",
+          "publisher": "MovieWeb",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSMkZsGjxjHF23_chZx3xgrG8bKqmWJ0JHT3phgaTahzv3tobcOn-Pf1Tp9XXk"
+        }
+      ]
+    },
+    {
+      "query": "nyt connections hints",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T10:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
+        "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
+        "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/27/crosswords/connections-companion-1266.html",
+          "title": "NYT Connections Answers for November 28, 2026",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzfghTjArUdA0NsJJfcPRfnMT4vYPqN7Ny8ADVpUcnuBSvFCFbJ1sVD5HMZ40"
+        },
+        {
+          "url": "https://mashable.com/entertainment/nyt-connections-hints-meanings-november-28-2026",
+          "title": "NYT Connections hints today: Meanings for each word for Nov. 28, 2026",
+          "publisher": "Mashable",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWTFs9otYzqS9eHZbldTpbyCOcgKyIP3yZhB7Iqfex58sxKAVg4MeUQhBwOY"
+        },
+        {
+          "url": "https://www.cnet.com/tech/gaming/todays-nyt-connections-hints-answers-november-28-1266/",
+          "title": "Today’s NYT Connections Hints and Answers for Saturday, Nov. 28, #1266",
+          "publisher": "CNET",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS5B2QPFmAtPFZ6dnv4KpH5_nPJZtIDzn1O1_Cv02WPuQdaV8r20pDOMUo0v-M"
+        }
+      ]
+    },
+    {
+      "query": "car accident lawyer",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T09:50:00Z",
       "related_news_urls": [
         "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
         "https://www.thehypemagazine.com/2026/11/27/how-a-car-accident-lawyer-fights-for-clients-after-a-bad-wreck/",
@@ -47,8 +117,8 @@
       "published_at": "2026-11-28T09:20:00Z",
       "related_news_urls": [
         "https://www.bbc.com/zhongwen/articles/cwkgry00vk48o/simp",
-        "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9",
-        "https://original.ifeng.com/c/8yPjieIWpK6"
+        "https://www.zaobao.com.sg/news/china/story20261128-10071149",
+        "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark",
       "image_credit": "BBC",
@@ -61,18 +131,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark"
         },
         {
+          "url": "https://www.zaobao.com.sg/news/china/story20261128-10071149",
+          "title": "沈伯洋携妻带女投票后吃早餐",
+          "publisher": "联合早报",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXT6__cX91p1tkcqdSRuRlqwS4E2tFWJDaAaZsHxWlk7zjHqqx-9v5_qdLzuw"
+        },
+        {
           "url": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9",
           "title": "台湾九合一地方选举：台当局警告选举面临北京干预风险",
           "publisher": "RFI",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALU9Xs1K8D9vG-Kgz_2oWJY2lYh-NhD5MVDfGbikKVJNEZRlVRC7l4M6Ropg"
-        },
-        {
-          "url": "https://original.ifeng.com/c/8yPjieIWpK6",
-          "title": "15万支持者参与造势，蒋万安“选前之夜”携妻合唱歌曲",
-          "publisher": "凤凰网",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOvQen7_UjjNYhxPzdwVHWrNyrpBzMB60Nw8ZYKSZtLqufflOstFzM7dj0ls"
         }
       ]
     },
@@ -83,7 +153,7 @@
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
         "https://www.cbc.ca/player/play/video/9.7439231",
-        "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols"
+        "https://www.newsweek.com/canadas-supreme-court-upholds-muslim-headscarf-ban-12773683"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENXTS6pYkzsMrvBY5fQEwqmuxM_gq7WoZD1mIcr5Zg10_FEJoSRCddSiORDQ",
       "image_credit": "The New York Times",
@@ -100,14 +170,14 @@
           "title": "Bill 21 is 'legislative racism' Premier Kinew says",
           "publisher": "CBC",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6zPZg5HO9CWU_dIYN2at4zW6hBh7wiCbZm9YJC72sWnXrp3Jn5HEBax8YkNk"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQcpf0ujL3g0CNBHH070yWwM1_INbjGLOOmy0lhep8jvRBeRT0-lguWmtL0EE"
         },
         {
-          "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
-          "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
-          "publisher": "The Guardian",
+          "url": "https://www.newsweek.com/canadas-supreme-court-upholds-muslim-headscarf-ban-12773683",
+          "title": "Canada’s Supreme Court Upholds Muslim Headscarf Ban in Landmark Ruling",
+          "publisher": "Newsweek",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_9s2RaMlPGmKYDZckqQItmD8FILTCh_LNUxDh8Y9uZdP4rg7hy__8FFonIMc"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTPam0KExhibmwx_2XoQpKTmyPWDfyUvB5zrm7H9BM2BBOg8-f5o639jw8ykN4"
         }
       ]
     },
@@ -204,103 +274,33 @@
       "approx_searches": "200+",
       "published_at": "2026-11-28T08:40:00Z",
       "related_news_urls": [
-        "https://www.chinatimes.com/realtimenews/20261128000879-260405",
-        "https://www.ntdtv.com.tw/b5/20261127/video/412512.html",
-        "https://www.ettoday.net/news/20261127/3279362.htm"
+        "https://tw.news.yahoo.com/%E6%B4%8B%E6%B5%81-%E4%BE%86%E8%A5%B2%E9%80%BC%E8%BF%91%E8%94%A3%E8%90%AC%E5%AE%89-%E8%8B%B1%E5%AA%92-%E5%8C%97%E4%BA%AC%E4%B9%9F%E5%9C%A8%E7%9C%8B-104316894.html",
+        "https://www.worldjournal.com/wj/story/121359/9907198?from=wj_catelistnews_index",
+        "https://www.rfi.fr/tw/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E6%B3%95%E5%9C%8B%E5%A0%B1%E7%B4%99%E6%91%98%E8%A6%81/20261127-%E5%8F%8D%E5%8C%97%E4%BA%AC%E6%B4%BB%E5%8B%95%E5%AE%B6%E6%B2%88%E4%BC%AF%E9%99%BD%E7%AB%B6%E9%81%B8%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrzQCXEx5u9Q10di5qrnS6wN6VLxlnSwBsxuCNjgFhB_LYW4cZbYRzRaJB_U",
-      "image_credit": "中時新聞網",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn4NTMkW5wvEOG2Og9wfkw9KmhBqjfzi7IaXhSipPAlGRi-2f74sIjZShuDY",
+      "image_credit": "Yahoo新聞",
       "news": [
         {
-          "url": "https://www.chinatimes.com/realtimenews/20261128000879-260405",
-          "title": "日媒震驚！在日台人「快閃返鄉」只為投票背後血淚曝- 生活",
-          "publisher": "中時新聞網",
+          "url": "https://tw.news.yahoo.com/%E6%B4%8B%E6%B5%81-%E4%BE%86%E8%A5%B2%E9%80%BC%E8%BF%91%E8%94%A3%E8%90%AC%E5%AE%89-%E8%8B%B1%E5%AA%92-%E5%8C%97%E4%BA%AC%E4%B9%9F%E5%9C%A8%E7%9C%8B-104316894.html",
+          "title": "「洋流」來襲逼近蔣萬安 英媒：北京也在看",
+          "publisher": "Yahoo新聞",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrzQCXEx5u9Q10di5qrnS6wN6VLxlnSwBsxuCNjgFhB_LYW4cZbYRzRaJB_U"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKn4NTMkW5wvEOG2Og9wfkw9KmhBqjfzi7IaXhSipPAlGRi-2f74sIjZShuDY"
         },
         {
-          "url": "https://www.ntdtv.com.tw/b5/20261127/video/412512.html",
-          "title": "返鄉潮護民主！海外台人飛回家、青年不缺席",
-          "publisher": "新唐人亞太電視台",
+          "url": "https://www.worldjournal.com/wj/story/121359/9907198?from=wj_catelistnews_index",
+          "title": "洋流效應外溢南加 返台投票者增",
+          "publisher": "世界新聞網",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQppkhzeI63RKoCCbKnsnp6E2gKg2uOCiXDXSlw4GPwZJMpYy-Ddc8cKgOs-A"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHchScasqnUdG2cMcTn_wDG_pCtNLWfQ_wXy_neV6ain6JgFL-ar8lfM_bGyY"
         },
         {
-          "url": "https://www.ettoday.net/news/20261127/3279362.htm",
-          "title": "58萬旅日YTr「回家投票了」！引《吉伊卡哇》名言：守護這座島",
-          "publisher": "ETtoday新聞雲",
+          "url": "https://www.rfi.fr/tw/%E5%B0%88%E6%AC%84%E6%AA%A2%E7%B4%A2/%E6%B3%95%E5%9C%8B%E5%A0%B1%E7%B4%99%E6%91%98%E8%A6%81/20261127-%E5%8F%8D%E5%8C%97%E4%BA%AC%E6%B4%BB%E5%8B%95%E5%AE%B6%E6%B2%88%E4%BC%AF%E9%99%BD%E7%AB%B6%E9%81%B8%E5%8F%B0%E5%8C%97%E5%B8%82%E9%95%B7",
+          "title": "法國報紙摘要 - 反北京活動家沈伯洋競選台北市長",
+          "publisher": "RFI",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqNhHKIiYAyc9_qamHG21d9iRPH37llZEtK0Cxh2x2rk65Qzh2NlEP8y_nt2I"
-        }
-      ]
-    },
-    {
-      "query": "noah beck",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T08:40:00Z",
-      "related_news_urls": [
-        "https://www.latimes.com/entertainment-arts/business/story/2026-11-26/tubi-sidelined-influencers-ya-creatorverse",
-        "https://www.techradar.com/entertainment/how-to-watch/how-to-watch-sidelined-3-endgame-on-tubi-its-free",
-        "https://uk.movies.yahoo.com/sequel-surprisingly-enjoyable-romcom-carrie-210900057.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw27KLpjyyUANGfxT9oW6ltB1GP1-NAIpucIejuVZ6aW16zn0fotEApNq70qg",
-      "image_credit": "Los Angeles Times",
-      "news": [
-        {
-          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-26/tubi-sidelined-influencers-ya-creatorverse",
-          "title": "Tubi bet on a TikTok star for its first YA movie. Three films later, it’s doubling down",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw27KLpjyyUANGfxT9oW6ltB1GP1-NAIpucIejuVZ6aW16zn0fotEApNq70qg"
-        },
-        {
-          "url": "https://www.techradar.com/entertainment/how-to-watch/how-to-watch-sidelined-3-endgame-on-tubi-its-free",
-          "title": "How to watch Sidelined 3: Endgame on Tubi (it's free)",
-          "publisher": "TechRadar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe-LT8RZZiuxt6vSstYMYpRB4BptLjtz0KWxR1LdpIxP0OaJx07vHLk0z7KeQ"
-        },
-        {
-          "url": "https://uk.movies.yahoo.com/sequel-surprisingly-enjoyable-romcom-carrie-210900057.html",
-          "title": "Sequel to “surprisingly enjoyable” romcom with Carrie star is now streaming for free",
-          "publisher": "Yahoo Entertainment UK",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFywk-7oBF0nCTK6OD1DLgFLP0KKKgEMYThzVXiYzI94tDXNb75gxNWTkitA8"
-        }
-      ]
-    },
-    {
-      "query": "jobs",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T08:30:00Z",
-      "related_news_urls": [
-        "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
-        "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-        "https://www.cio.com/article/4253973/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios.html"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRxFhkUFiB7-Q8L6D9-63nzsbADApAOGwl9tAXrQHlKOXX5LIvCCPpr_7HJU",
-      "image_credit": "Bloomberg.com",
-      "news": [
-        {
-          "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
-          "title": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
-          "publisher": "Bloomberg.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRxFhkUFiB7-Q8L6D9-63nzsbADApAOGwl9tAXrQHlKOXX5LIvCCPpr_7HJU"
-        },
-        {
-          "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
-          "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
-          "publisher": "CNBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAYsrUkjxQAAo25r2FZL09Nmkm4bjJ_i3GktAtK8VqgIgMACt4X0P4nsM_qMU"
-        },
-        {
-          "url": "https://www.cio.com/article/4253973/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios.html",
-          "title": "Why SAP’s second 10,000-job overhaul in two years matters to CIOs",
-          "publisher": "CIO",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4xj0WKslG8DgdcLcQS-6q5fSaRY4fuAN0zegvVkR-STaLIZkgzSlpyKVgVns"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKSOeFZnlwo9CRXjOH3lGboZMQo3bxFijNyQAB58gvNYQkPndni0ehB4Vn64"
         }
       ]
     }
