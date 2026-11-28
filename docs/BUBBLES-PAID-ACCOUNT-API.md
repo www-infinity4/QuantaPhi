@@ -10,7 +10,37 @@ accepted, but the current ChatGPT Cloudflare connection still exposes only
 the original account. Browser GitHub/passkey sign-in repeatedly failed.
 This API path uses the owner's existing Termux, Python and GitHub CLI.
 
-## One private token entry
+## Existing Termux credentials first
+
+Use the installed setup before asking the owner to make another credential:
+
+```sh
+python3 scripts/bubbles-account-stage.py --stage --existing-credentials
+```
+
+The operator tries only existing `BUBBLES_CLOUDFLARE_API_TOKEN`,
+`CLOUDFLARE_API_TOKEN`, or `CF_API_TOKEN` environment values, in that order.
+If none is present, an already installed `wrangler` can supply its existing
+session using `wrangler auth token --json`. Child stdout/stderr are captured
+privately; only fixed source/type metadata reaches the receipt. No npm,
+installation, new login, browser launch or key creation is invoked. Wrangler
+may refresh its own existing OAuth session, which is its documented normal
+behavior. The command closes stdin, disables telemetry/debug output and has
+a twenty-second timeout. The mode fails with a fixed reason instead of
+prompting if existing credentials are unavailable. Global API key/email auth
+is not imported by this token-only operator. Account/resource permission is
+still checked by the same fixed-account Cloudflare endpoint.
+
+OAuth sessions may stage the database if Cloudflare authorizes that account.
+Temporary OAuth values are never copied into the repository secret, even if
+`--connect-github` was explicitly requested; the receipt says
+`skipped_temporary_oauth`. Use the existing-only command without that optional
+flag when the owner only wants local staging. The root engineering session
+cannot execute this on the phone while its tunnel is down: the existing
+`quantaphi-termux-brain-stage` tunnel was read back down with zero connections
+on 2026-11-28 UTC. This is not proof that local phone processes are stopped.
+
+## Optional private token entry
 
 In the owner's working phone browser, open
 [Cloudflare API Tokens](https://dash.cloudflare.com/profile/api-tokens/),
@@ -28,7 +58,8 @@ This staging operator uses only D1; the other two permissions are for the
 separately reviewed Bubbles Worker/model connection that remains to be built.
 An existing token scoped correctly to this account also works.
 
-Enter the token at the operator's hidden terminal prompt. Never put it in
+When existing credentials cannot be used and the owner elects manual entry,
+enter the token at the operator's hidden terminal prompt. Never put it in
 chat, a shell command argument, a public workflow input or a repository file.
 The prompt fails instead of falling back to echoed input. The environment
 variable `BUBBLES_CLOUDFLARE_API_TOKEN` is supported for the manual Actions job.
@@ -91,3 +122,8 @@ The final printed JSON contains only operation metadata and fixed reason
 codes. It may be shared with the engineering session; it does not contain the
 token, provider error text, account records or job contents. Schema checks and
 failed operations remain distinguishable from production/chat verification.
+
+Existing credential references:
+[Wrangler auth token](https://developers.cloudflare.com/workers/wrangler/commands/general/#auth-token),
+[structured credential types and refresh behavior](https://developers.cloudflare.com/changelog/post/2025-12-18-wrangler-auth-token/),
+[Cloudflare environment variables](https://developers.cloudflare.com/workers/wrangler/system-environment-variables/).

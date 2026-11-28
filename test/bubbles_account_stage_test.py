@@ -209,16 +209,87 @@ class TransportTests(unittest.TestCase):
 
     def test_no_echo_fallback_or_noninteractive_missing_token(self):
         with mock.patch.dict(stage.os.environ, {}, clear=True), \
+             mock.patch.object(stage.shutil, "which", return_value=None), \
              mock.patch.object(stage.sys, "stdin", mock.Mock(isatty=lambda: False)), \
              mock.patch.object(stage.getpass, "getpass") as prompt:
             with self.assertRaises(stage.Blocked):
                 stage.read_token()
             prompt.assert_not_called()
         with mock.patch.dict(stage.os.environ, {}, clear=True), \
+             mock.patch.object(stage.shutil, "which", return_value=None), \
              mock.patch.object(stage.sys, "stdin", mock.Mock(isatty=lambda: True)), \
              mock.patch.object(stage.getpass, "getpass", side_effect=stage.getpass.GetPassWarning):
             with self.assertRaises(stage.Blocked):
                 stage.read_token()
+
+    def test_existing_environment_credentials_are_used_before_prompt(self):
+        for variable in (stage.SECRET_NAME, "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN"):
+            with self.subTest(variable=variable), \
+                 mock.patch.dict(stage.os.environ, {variable: SECRET}, clear=True), \
+                 mock.patch.object(stage.getpass, "getpass") as prompt, \
+                 mock.patch.object(stage.subprocess, "run") as child:
+                receipt = {}
+                self.assertEqual(stage.read_token(existing_only=True, receipt=receipt), SECRET)
+                self.assertEqual(receipt["credential_source"], variable)
+                self.assertEqual(receipt["credential_type"], "api_token")
+                self.assertNotIn(SECRET, json.dumps(receipt))
+                prompt.assert_not_called()
+                child.assert_not_called()
+
+    def test_existing_only_missing_auth_never_prompts(self):
+        with mock.patch.dict(stage.os.environ, {}, clear=True), \
+             mock.patch.object(stage.shutil, "which", return_value=None), \
+             mock.patch.object(stage.getpass, "getpass") as prompt:
+            with self.assertRaises(stage.Blocked) as raised:
+                stage.read_token(existing_only=True)
+        self.assertEqual(raised.exception.code, "existing_cloudflare_credentials_unavailable")
+        prompt.assert_not_called()
+
+    def test_normal_private_prompt_still_works_after_unconfigured_wrangler(self):
+        with mock.patch.dict(stage.os.environ, {}, clear=True), \
+             mock.patch.object(stage, "existing_wrangler_token", side_effect=stage.Blocked("existing_wrangler_auth_unavailable")), \
+             mock.patch.object(stage.sys, "stdin", mock.Mock(isatty=lambda: True)), \
+             mock.patch.object(stage.getpass, "getpass", return_value=SECRET) as prompt:
+            self.assertEqual(stage.read_token(), SECRET)
+            prompt.assert_called_once()
+
+    def test_existing_wrangler_auth_is_private_and_has_no_install_or_login(self):
+        for kind in ("api_token", "oauth"):
+            with self.subTest(kind=kind), \
+                 mock.patch.dict(stage.os.environ, {"WRANGLER_LOG": "debug"}, clear=True), \
+                 mock.patch.object(stage.shutil, "which", return_value="/existing/wrangler"), \
+                 mock.patch.object(stage.subprocess, "run", return_value=subprocess.CompletedProcess(
+                     [], 0, json.dumps({"type": kind, "token": SECRET}), "")) as child, \
+                 mock.patch.object(stage.getpass, "getpass") as prompt:
+                receipt = {}
+                self.assertEqual(stage.read_token(existing_only=True, receipt=receipt), SECRET)
+                self.assertEqual(receipt["credential_type"], kind)
+                self.assertNotIn(SECRET, json.dumps(receipt))
+                self.assertEqual(child.call_args.args[0], ["/existing/wrangler", "auth", "token", "--json"])
+                self.assertEqual(child.call_args.kwargs["stdin"], subprocess.DEVNULL)
+                self.assertEqual(child.call_args.kwargs["timeout"], 20)
+                self.assertEqual(child.call_args.kwargs["env"]["WRANGLER_LOG"], "error")
+                self.assertEqual(child.call_args.kwargs["env"]["WRANGLER_SEND_METRICS"], "false")
+                prompt.assert_not_called()
+
+    def test_wrangler_failures_or_unsupported_global_key_never_leak_or_prompt(self):
+        for result in (subprocess.CompletedProcess([], 1, SECRET, SECRET),
+                       subprocess.CompletedProcess([], 0, SECRET, SECRET),
+                       subprocess.CompletedProcess([], 0, json.dumps({"type": "api_key", "key": SECRET}), ""),
+                       subprocess.TimeoutExpired("wrangler", 20, output=SECRET)):
+            with self.subTest(result=type(result).__name__), \
+                 mock.patch.dict(stage.os.environ, {}, clear=True), \
+                 mock.patch.object(stage.shutil, "which", return_value="wrangler"), \
+                 mock.patch.object(stage.subprocess, "run") as child, \
+                 mock.patch.object(stage.getpass, "getpass") as prompt:
+                if isinstance(result, Exception):
+                    child.side_effect = result
+                else:
+                    child.return_value = result
+                with self.assertRaises(stage.Blocked) as raised:
+                    stage.read_token(existing_only=True)
+                self.assertNotIn(SECRET, str(raised.exception))
+                prompt.assert_not_called()
 
 
 class GithubTests(unittest.TestCase):
@@ -281,12 +352,30 @@ class GithubTests(unittest.TestCase):
 
     def test_main_missing_token_emits_only_sanitized_json(self):
         with mock.patch.dict(stage.os.environ, {}, clear=True), \
+             mock.patch.object(stage.shutil, "which", return_value=None), \
              mock.patch.object(stage.sys, "stdin", mock.Mock(isatty=lambda: False)), \
              mock.patch.object(stage.sys, "stdout", new_callable=io.StringIO) as output:
             self.assertEqual(stage.main([]), 1)
         receipt = json.loads(output.getvalue())
         self.assertEqual(receipt["reason"], "token_required_in_private_terminal")
         self.assertEqual(receipt["database_creation"], "not_attempted")
+
+    def test_temporary_oauth_is_not_exported_to_github(self):
+        def original_session(*, existing_only, receipt):
+            self.assertTrue(existing_only)
+            receipt["credential_type"] = "oauth"
+            receipt["credential_source"] = "existing_wrangler"
+            return SECRET
+
+        with mock.patch.object(stage, "read_token", side_effect=original_session), \
+             mock.patch.object(stage, "Client", return_value=FakeCloudflare()), \
+             mock.patch.object(stage, "connect_github") as connect, \
+             mock.patch.object(stage.sys, "stdout", new_callable=io.StringIO) as output:
+            self.assertEqual(stage.main(["--stage", "--existing-credentials", "--connect-github"]), 0)
+        receipt = json.loads(output.getvalue())
+        self.assertTrue(receipt["schema_verified"])
+        self.assertEqual(receipt["github_secret"], "skipped_temporary_oauth")
+        connect.assert_not_called()
 
     def test_malformed_secret_list_cannot_upsert(self):
         for secrets in ([{}], ["bad"], [{"name": "ok"}, {"name": "ok"}]):

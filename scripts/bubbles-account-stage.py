@@ -4,6 +4,7 @@
 Standard library only. Default: check. --stage: create/reuse the fixed empty D1
 with the original three core schemas. --connect-github: separately store the
 token in the named repository Actions secret, refusing a known existing secret.
+--existing-credentials: use existing environment/Wrangler auth, with no prompt.
 """
 
 import argparse
@@ -238,9 +239,59 @@ def run(api, create=False, receipt=None):
     return receipt
 
 
-def read_token():
-    token = os.environ.pop(SECRET_NAME, None)
-    if token is None:
+def valid_token(token):
+    return isinstance(token, str) and re.fullmatch(r"[A-Za-z0-9_.-]{20,2048}", token)
+
+
+def existing_wrangler_token():
+    executable = shutil.which("wrangler")
+    if not executable:
+        return None
+    env = dict(os.environ)
+    env.update({"CI": "true", "BROWSER": "false", "WRANGLER_LOG": "error",
+                "WRANGLER_SEND_METRICS": "false"})
+    try:
+        result = subprocess.run([executable, "auth", "token", "--json"],
+                                stdin=subprocess.DEVNULL, stdout=subprocess.PIPE,
+                                stderr=subprocess.PIPE, text=True, timeout=20,
+                                env=env, check=False)
+        if result.returncode or len(result.stdout) > 64 * 1024:
+            raise Blocked("existing_wrangler_auth_unavailable")
+        data = json.loads(result.stdout)
+        if (not isinstance(data, dict) or data.get("type") not in ("api_token", "oauth") or
+                not valid_token(data.get("token"))):
+            raise Blocked("existing_wrangler_auth_unavailable")
+        return data["token"], data["type"]
+    except (OSError, subprocess.SubprocessError, ValueError):
+        raise Blocked("existing_wrangler_auth_unavailable") from None
+
+
+def read_token(*, existing_only=False, receipt=None):
+    # Reuse already exported operator credentials before asking for new ones.
+    # Never read arbitrary files, run shell profiles, install a CLI or log values.
+    for name in (SECRET_NAME, "CLOUDFLARE_API_TOKEN", "CF_API_TOKEN"):
+        token = os.environ.pop(name, None)
+        if token:
+            if not valid_token(token):
+                raise Blocked("token_format_invalid")
+            if receipt is not None:
+                receipt.update({"credential_source": name,
+                                "credential_type": "oauth" if token.startswith("cfoat_") else "api_token"})
+            return token
+    try:
+        configured = existing_wrangler_token()
+    except Blocked:
+        if existing_only:
+            raise
+        configured = None
+    if configured is not None:
+        token, kind = configured
+        if receipt is not None:
+            receipt.update({"credential_source": "existing_wrangler", "credential_type": kind})
+        return token
+    if existing_only:
+        raise Blocked("existing_cloudflare_credentials_unavailable")
+    else:
         if not sys.stdin.isatty():
             raise Blocked("token_required_in_private_terminal")
         try:
@@ -249,8 +300,11 @@ def read_token():
                 token = getpass.getpass("Cloudflare API token (hidden; never paste into chat): ")
         except (getpass.GetPassWarning, EOFError, OSError):
             raise Blocked("private_token_prompt_unavailable") from None
-    if not isinstance(token, str) or not re.fullmatch(r"[A-Za-z0-9_-]{20,1024}", token):
+    if not valid_token(token):
         raise Blocked("token_format_invalid")
+    if receipt is not None:
+        receipt.update({"credential_source": "private_prompt",
+                        "credential_type": "oauth" if token.startswith("cfoat_") else "api_token"})
     return token
 
 
@@ -304,16 +358,21 @@ def connect_github(token):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--stage", action="store_true", help="create/verify the fixed empty Bubbles/Brain D1")
+    parser.add_argument("--existing-credentials", action="store_true",
+                        help="use existing Termux environment or installed Wrangler auth; never prompt/install/login")
     parser.add_argument("--connect-github", action="store_true",
                         help=f"store the token as {REPOSITORY} Actions secret {SECRET_NAME}; refuse known existing")
     args = parser.parse_args(argv)
     receipt = new_receipt(args.stage)
     try:
-        token = read_token()
+        token = read_token(existing_only=args.existing_credentials, receipt=receipt)
         run(Client(token), create=args.stage, receipt=receipt)
         if args.connect_github:
-            receipt["github_secret"] = "connection_attempted_unconfirmed"
-            receipt["github_secret"] = connect_github(token)
+            if receipt.get("credential_type") == "oauth":
+                receipt["github_secret"] = "skipped_temporary_oauth"
+            else:
+                receipt["github_secret"] = "connection_attempted_unconfirmed"
+                receipt["github_secret"] = connect_github(token)
         code = 0
     except Blocked as error:
         receipt["status"] = "blocked"

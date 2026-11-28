@@ -118,3 +118,34 @@ Next: publish/review/exact-head CI, have the owner enter an account-scoped token
 privately in Termux, read the sanitized live receipt, then continue original
 private state/fence/import and reviewed Bubbles Worker/model/transport release.
 Creating an empty schema must not activate an empty Brain or reset owner data.
+
+### Owner correction · use existing Termux credentials first
+
+Owner rejects another dashboard/token-creation handoff and explicitly requests
+building through the existing Termux installation. The prior manual credential
+entry command is optional, not a required first step. Same draft #2164 now
+adds `--existing-credentials`: existing dedicated/standard environment token,
+then an already installed Wrangler's captured `auth token --json`. No install,
+npm, login/browser launch, arbitrary credential-file scan or new API token.
+Missing/unauthorized auth stops with sanitized evidence; temporary OAuth is
+never exported as a durable GitHub secret. Fixed account/schema/write gates
+are unchanged. Normal optional private entry still works if Wrangler is
+unconfigured; existing-only mode never prompts.
+
+Fresh live tunnel metadata: `quantaphi-termux-brain-stage`
+(`63bdb3b3-9e47-47b0-8a39-583783e5d825`) reports `down`, zero connections,
+last inactive `2026-11-27T22:19:33.601628Z`. No tunnel token fetched or tunnel
+configuration changed. The public-health lookup could not retrieve a result;
+that lookup is not an origin-health failure receipt. Local root GitHub CLI
+is not authenticated, and the available GitHub connector exposes no workflow
+dispatch or secret reader. Neither read proves the phone lacks credentials
+or local processes; root cannot run commands on the phone through the offline
+bridge. No remote phone command has been executed.
+
+Regression-first additional tests failed before this mode existed. Current
+23 offline tests pass, including existing environment/Wrangler selection,
+stdin closure, telemetry/debug suppression, no interactive fallback, captured
+failure sanitization and temporary OAuth non-export. Independent follow-up
+review and new exact-head CI are recorded in the canonical issue. No live
+database create, credential copy or Bubbles recovery is claimed. Next: one
+existing-credentials Termux run and sanitized receipt, without dashboard work.
