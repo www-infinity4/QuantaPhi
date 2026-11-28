@@ -120,3 +120,23 @@ The CI runs the SQLite coordinator, HTTP tests, lost-phone-cache repair, credent
 The server now uses **coarse, server-observed availability of its own enrolled app cache** to decide where newly encrypted fragments should go. A valid app heartbeat counts at most once in a one-minute activity window. Caches active in more distinct windows are preferred; caches reporting lost fragments are deprioritized. Equal scores retain stable enrollment order. The server does not request browsing history, screen time, location, contacts, or data from other apps. Heartbeat windows are capped at 100 and are **not** evidence of a genuine unique physical phone or a guarantee of future availability.
 
 This is a lightweight heuristic. It cannot wake a phone, evade Android background limits, or restore missing ciphertext from a hash. The owner-held encrypted coordinator copy and multiple app replicas remain required until erasure coding and independent backup/recovery have been proven.
+
+
+## Local Bubbles text-chat pilot (Cloudflare exit #2110)
+
+On an owner-controlled computer with Node.js 22+ and a separately installed, running Ollama instance configured for local-only models, choose an already installed local model tag from `ollama list`. The repository does not download a model or start an inference runtime automatically. Verify that the inference runtime cannot forward requests externally before sending private information.
+
+```bash
+cd ~/QuantaPhi
+ollama list
+read -r MODEL
+node distributed-vault/local-inference-probe.mjs "$MODEL"
+printf '%s' 'Explain gravity in one sentence.' | node distributed-vault/local-inference-probe.mjs --chat "$MODEL"
+node distributed-vault/local-chat-server.mjs "$MODEL"
+```
+
+Open `http://127.0.0.1:8790/` on the **same machine** while the server is running. The model tag entered after `read` must exactly match the installed model. The synthetic probe should return a verified local response; the second command should return a real text reply. The browser should render a new response, retain a failed message, and recover when the runtime is restarted. Stop the browser server with Ctrl+C.
+
+The browser pilot has a same-origin restriction and binds to IPv4 loopback. It is not an owner-authenticated service: other local processes may access it. Never publish this port, reverse proxy it, or send account credentials, private source or wallet data to it. No conversation persistence or repository execution is implemented. Android/Termux compatibility of the underlying model runtime is not established; a phone cannot use a different computer's loopback address. A supported host and verified local model are still required.
+
+Record the actual host platform, installed model tag, source SHA, probe result, successful ordinary reply, and runtime network-isolation result before considering a secure remote API. Do not publish private prompts or credentials in GitHub receipts. A passing fixture is not a real inference or deployment receipt.
