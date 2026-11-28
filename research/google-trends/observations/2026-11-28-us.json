@@ -3,9 +3,123 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T09:30:54.509256Z",
+  "checked_at": "2026-11-28T10:01:14.015648Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "car accident attorney",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T09:20:00Z",
+      "related_news_urls": [
+        "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
+        "https://www.thehypemagazine.com/2026/11/27/how-a-car-accident-lawyer-fights-for-clients-after-a-bad-wreck/",
+        "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo",
+      "image_credit": "The Auto Channel",
+      "news": [
+        {
+          "url": "https://www.theautochannel.com/news/2026/11/25/1743372-why-witness-accounts-can-make-difference-car-crash-claims.html",
+          "title": "Why Witness Accounts Can Make a Difference in Car Crash Claims",
+          "publisher": "The Auto Channel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiXcfurV291GifRJVlxib-eiInh3bJ0SZfMz7NvmBWhbRyFhjR9Shs0PFFEjo"
+        },
+        {
+          "url": "https://www.thehypemagazine.com/2026/11/27/how-a-car-accident-lawyer-fights-for-clients-after-a-bad-wreck/",
+          "title": "How a Car Accident Lawyer Fights for Clients After a Bad Wreck",
+          "publisher": "The Hype Magazine",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQFzu4bbiHEz7qGktdP0ks8iwgdB1RtbuXDQdq7pRN0FWo0Ee2n1ca_tHehz3g"
+        },
+        {
+          "url": "https://theweeklydriver.com/what-compensation-can-you-recover-after-an-auto-collision/",
+          "title": "What Compensation Can You Recover After an Auto Collision?",
+          "publisher": "The Weekly Driver",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0fGL5xTS9nWJ1xFIefMdcxO3XvtRQYZLJxrQXb0M0P9xCDmnOC5RheQJB4sM"
+        }
+      ]
+    },
+    {
+      "query": "台湾选举",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T09:20:00Z",
+      "related_news_urls": [
+        "https://www.bbc.com/zhongwen/articles/cwkgry00vk48o/simp",
+        "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9",
+        "https://original.ifeng.com/c/8yPjieIWpK6"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark",
+      "image_credit": "BBC",
+      "news": [
+        {
+          "url": "https://www.bbc.com/zhongwen/articles/cwkgry00vk48o/simp",
+          "title": "台湾“九合一”选举BBC视像直播",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3qnY6Oyq37wwrSTYxbmyif7wHvCp31XIhB-XFRy9x-80Vc6LEWrZoqeefark"
+        },
+        {
+          "url": "https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20261127-%E5%8F%B0%E6%B9%BE%E4%B9%9D%E5%90%88%E4%B8%80%E5%9C%B0%E6%96%B9%E9%80%89%E4%B8%BE-%E5%8F%B0%E5%BD%93%E5%B1%80%E8%AD%A6%E5%91%8A%E9%80%89%E4%B8%BE%E9%9D%A2%E4%B8%B4%E5%8C%97%E4%BA%AC%E5%B9%B2%E9%A2%84%E9%A3%8E%E9%99%A9",
+          "title": "台湾九合一地方选举：台当局警告选举面临北京干预风险",
+          "publisher": "RFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRALU9Xs1K8D9vG-Kgz_2oWJY2lYh-NhD5MVDfGbikKVJNEZRlVRC7l4M6Ropg"
+        },
+        {
+          "url": "https://original.ifeng.com/c/8yPjieIWpK6",
+          "title": "15万支持者参与造势，蒋万安“选前之夜”携妻合唱歌曲",
+          "publisher": "凤凰网",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiOvQen7_UjjNYhxPzdwVHWrNyrpBzMB60Nw8ZYKSZtLqufflOstFzM7dj0ls"
+        }
+      ]
+    },
+    {
+      "query": "symbols",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T09:20:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
+        "https://www.cbc.ca/player/play/video/9.7439231",
+        "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENXTS6pYkzsMrvBY5fQEwqmuxM_gq7WoZD1mIcr5Zg10_FEJoSRCddSiORDQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/27/world/canada/canada-supreme-court-quebec-religion-bill-21.html",
+          "title": "Quebec Can Keep Its Ban on Religious Symbols, Canada’s Top Court Rules",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSENXTS6pYkzsMrvBY5fQEwqmuxM_gq7WoZD1mIcr5Zg10_FEJoSRCddSiORDQ"
+        },
+        {
+          "url": "https://www.cbc.ca/player/play/video/9.7439231",
+          "title": "Bill 21 is 'legislative racism' Premier Kinew says",
+          "publisher": "CBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6zPZg5HO9CWU_dIYN2at4zW6hBh7wiCbZm9YJC72sWnXrp3Jn5HEBax8YkNk"
+        },
+        {
+          "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+          "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+          "publisher": "The Guardian",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ_9s2RaMlPGmKYDZckqQItmD8FILTCh_LNUxDh8Y9uZdP4rg7hy__8FFonIMc"
+        }
+      ]
+    },
+    {
+      "query": "台灣開票",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T09:10:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
     {
       "query": "nvda stock performance peak decline",
       "approx_searches": "200+",
@@ -48,7 +162,7 @@
       "related_news_urls": [
         "https://people.com/amy-schumer-jokes-she-resembles-sabrina-carpenter-with-new-bangs-12283185",
         "https://pagesix.com/2026/11/26/style/amy-schumer-debuts-bangs-haircut-hilariously-channels-sabrina-carpenter/",
-        "https://www.thenews.com.pk/latest/1425468-amy-schumer-pokes-fun-at-her-new-hairstyle-with-sabrina-carpenter-comparison"
+        "https://demokratis.co.id/en/amy-schumer-bangs-sabrina-comparison"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQze-0_nEiAfYwi9Ov0oKJ5KnVZIl69QetGqgEtqg5rmkGmGRiQZgqtbfobyTI",
       "image_credit": "People.com",
@@ -68,17 +182,17 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-0nGOUZMnvlJK4V_8ec7tR_JjWKqsgS9He1E1la6P3r19qwVNngHGqOUWWyo"
         },
         {
-          "url": "https://www.thenews.com.pk/latest/1425468-amy-schumer-pokes-fun-at-her-new-hairstyle-with-sabrina-carpenter-comparison",
-          "title": "Amy Schumer pokes fun at her new hairstyle with Sabrina Carpenter comparison",
-          "publisher": "The News International",
+          "url": "https://demokratis.co.id/en/amy-schumer-bangs-sabrina-comparison",
+          "title": "Amy Schumer Jokes About Sabrina Carpenter Hair Resemblance",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBQ4XCAA2u2g8ha_WeWApZ3xHDkJ66CHSZ3HrNYnyGa2LEF1kzEfcPgrdKqhw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQYs3UJup0VhR9DY_mqROGObk9kRy0la39HAjODX8o_p4y-F974akycOy6OLvg"
         }
       ]
     },
     {
       "query": "中選會",
-      "approx_searches": "200+",
+      "approx_searches": "500+",
       "published_at": "2026-11-28T08:40:00Z",
       "related_news_urls": [],
       "image_url": null,
@@ -87,36 +201,36 @@
     },
     {
       "query": "台灣選舉",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T08:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/trad",
-        "https://www.cna.com.tw/news/aipl/202611285003.aspx",
-        "https://tw.news.yahoo.com/%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0-%E5%85%A8%E5%8F%B022%E7%B8%A3%E5%B8%82%E9%95%B7%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E8%A9%B3%E7%B4%B0%E7%9C%8B-081421602.html"
+        "https://www.chinatimes.com/realtimenews/20261128000879-260405",
+        "https://www.ntdtv.com.tw/b5/20261127/video/412512.html",
+        "https://www.ettoday.net/news/20261127/3279362.htm"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrzQCXEx5u9Q10di5qrnS6wN6VLxlnSwBsxuCNjgFhB_LYW4cZbYRzRaJB_U",
+      "image_credit": "中時新聞網",
       "news": [
         {
-          "url": "https://www.bbc.com/zhongwen/articles/ck0jxz70e4z5o/trad",
-          "title": "台灣「九合一」選舉開票結果實時更新",
-          "publisher": "BBC",
+          "url": "https://www.chinatimes.com/realtimenews/20261128000879-260405",
+          "title": "日媒震驚！在日台人「快閃返鄉」只為投票背後血淚曝- 生活",
+          "publisher": "中時新聞網",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbKquawrvAwjnVzjZwHwfzjHgv1O9UBiIYS0Vv4b_zI7EoBZTNWMJjsrtWvWo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCrzQCXEx5u9Q10di5qrnS6wN6VLxlnSwBsxuCNjgFhB_LYW4cZbYRzRaJB_U"
         },
         {
-          "url": "https://www.cna.com.tw/news/aipl/202611285003.aspx",
-          "title": "2026九合一大選開票實況中央社即時更新不搶快不灌票| 政治",
-          "publisher": "中央社 CNA",
+          "url": "https://www.ntdtv.com.tw/b5/20261127/video/412512.html",
+          "title": "返鄉潮護民主！海外台人飛回家、青年不缺席",
+          "publisher": "新唐人亞太電視台",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQwFn9wdmyVkSvJ7irFZLPx6J1N2SzQVWgMmSOrAanUYEfZWeUsTIK6LI7b-tg"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTQppkhzeI63RKoCCbKnsnp6E2gKg2uOCiXDXSlw4GPwZJMpYy-Ddc8cKgOs-A"
         },
         {
-          "url": "https://tw.news.yahoo.com/%E4%B8%8D%E6%96%B7%E6%9B%B4%E6%96%B0-%E5%85%A8%E5%8F%B022%E7%B8%A3%E5%B8%82%E9%95%B7%E5%8D%B3%E6%99%82%E9%96%8B%E7%A5%A8%E8%A9%B3%E7%B4%B0%E7%9C%8B-081421602.html",
-          "title": "不斷更新／全台22縣市長即時開票詳細看",
-          "publisher": "Yahoo新聞",
+          "url": "https://www.ettoday.net/news/20261127/3279362.htm",
+          "title": "58萬旅日YTr「回家投票了」！引《吉伊卡哇》名言：守護這座島",
+          "publisher": "ETtoday新聞雲",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgixffDTufr7TNXomtFEk5hZOWZDGWte8z1_v4Dgd44oOLa5kZTBQL57DKVA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqNhHKIiYAyc9_qamHG21d9iRPH37llZEtK0Cxh2x2rk65Qzh2NlEP8y_nt2I"
         }
       ]
     },
@@ -156,177 +270,37 @@
       ]
     },
     {
-      "query": "開票",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T08:10:00Z",
+      "query": "jobs",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T08:30:00Z",
       "related_news_urls": [
-        "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
-        "https://news.yahoo.co.jp/articles/10c3150c3e58bb26486dad9fae0591de14e2929d",
-        "https://news.web.nhk/newsweb/na/nd-20261127de82484"
+        "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+        "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+        "https://www.cio.com/article/4253973/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios.html"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRxFhkUFiB7-Q8L6D9-63nzsbADApAOGwl9tAXrQHlKOXX5LIvCCPpr_7HJU",
       "image_credit": "Bloomberg.com",
       "news": [
         {
-          "url": "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
-          "title": "台湾の統一地方選、大勢の有権者が投票－28年総統選視野に中国も注視",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring",
+          "title": "SAP Weighs Cutting at Least 10,000 Positions in AI Restructuring",
           "publisher": "Bloomberg.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRxFhkUFiB7-Q8L6D9-63nzsbADApAOGwl9tAXrQHlKOXX5LIvCCPpr_7HJU"
         },
         {
-          "url": "https://news.yahoo.co.jp/articles/10c3150c3e58bb26486dad9fae0591de14e2929d",
-          "title": "“SNS偽情報”が前回比8割増 AIで偽造された候補者画像も拡散… 台湾・統一地方選「台北市長選」など注目 今夜にも大勢判明へ（TBS NEWS DIG Powered by JNN）",
-          "publisher": "Yahoo!ニュース",
+          "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+          "title": "German software firm SAP is reportedly cutting at least 10,000 jobs in AI push",
+          "publisher": "CNBC",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTHqkXcuspw7wJoNnMwMa69oZWdzNgNY0gSAD_zg7aDnPnRqu23G7M2b7zmv0k"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAYsrUkjxQAAo25r2FZL09Nmkm4bjJ_i3GktAtK8VqgIgMACt4X0P4nsM_qMU"
         },
         {
-          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82484",
-          "title": "台湾統一地方選挙 28日投票へ 台北市長選挙の勝敗など焦点",
-          "publisher": "NHKニュース",
+          "url": "https://www.cio.com/article/4253973/why-saps-second-10000-job-overhaul-in-two-years-matters-to-cios.html",
+          "title": "Why SAP’s second 10,000-job overhaul in two years matters to CIOs",
+          "publisher": "CIO",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkooTgYrE9yDAqTrFIRjA7QtTLYwo5OsgBq8blzWFeRT7p2gSYM2whLFlavtY"
-        }
-      ]
-    },
-    {
-      "query": "today wordle hints",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T08:00:00Z",
-      "related_news_urls": [
-        "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
-        "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/",
-        "https://ftw.usatoday.com/story/tech/gaming/2026/11/28/wordle-hint-today-clues-november-28-2026/92978525007/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40",
-      "image_credit": "CNET",
-      "news": [
-        {
-          "url": "https://www.cnet.com/tech/gaming/todays-wordle-hints-answer-november-28-1988/",
-          "title": "Today’s NYT Wordle Hints, Answer and Help for Saturday, Nov. 28, #1988",
-          "publisher": "CNET",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSEa5gGqbzlxCuoKeG_Swy0F8UbP2kaD6mieuiuEbz6lIybuNLvqvWJPLR8u40"
-        },
-        {
-          "url": "https://www.forbes.com/sites/erikkain/2026/11/27/wordle-hints-clues-answer-saturday-november-28/",
-          "title": "Today’s Wordle #1988 Hints, Clues And Answer For Saturday, November 28",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROh6VwHVMCGgMeuZmdVI3qHN6COTca6AocJqEKCUzCHb_dId7DY5wELNIgm1Q"
-        },
-        {
-          "url": "https://ftw.usatoday.com/story/tech/gaming/2026/11/28/wordle-hint-today-clues-november-28-2026/92978525007/",
-          "title": "Wordle hint today: Clues for November 28 2026 NYT puzzle #1988",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRiDvD2eq4CLG2A7b_lW99tBGJxFX6M6s-HvVSpVkhrbsB6HpDMhqL1-jlRVaE"
-        }
-      ]
-    },
-    {
-      "query": "gta 6 fits",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T07:50:00Z",
-      "related_news_urls": [
-        "https://www.forbes.com/sites/paultassi/2026/11/24/where-to-find-lucias-best-hairstyle-in-gta-6/",
-        "https://www.ign.com/articles/gta-6-fashion-in-the-ign-community",
-        "https://www.gamingbible.com/news/gta-6-hairstyle-beauty-options-guide-098503-20261125"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx7OE0Gqrrqvp3cl9gQD5vIuNUdUbaXTYha4Ri5WyUroRGIUDEbSUqKdmWN3g",
-      "image_credit": "Forbes",
-      "news": [
-        {
-          "url": "https://www.forbes.com/sites/paultassi/2026/11/24/where-to-find-lucias-best-hairstyle-in-gta-6/",
-          "title": "Where To Find Lucia’s Best Hairstyle In ‘GTA 6’",
-          "publisher": "Forbes",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSx7OE0Gqrrqvp3cl9gQD5vIuNUdUbaXTYha4Ri5WyUroRGIUDEbSUqKdmWN3g"
-        },
-        {
-          "url": "https://www.ign.com/articles/gta-6-fashion-in-the-ign-community",
-          "title": "GTA 6 Fashion in the IGN Community",
-          "publisher": "IGN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQVJmZA5Lf-t9YFu1lj4m_E76icRF73a5w9VStDAUZAXkcFDaEg2oM2WKzKp6s"
-        },
-        {
-          "url": "https://www.gamingbible.com/news/gta-6-hairstyle-beauty-options-guide-098503-20261125",
-          "title": "GTA 6 hair and beauty salons: Every hairstyle, nails and makeup option for Jason and Lucia",
-          "publisher": "GAMINGbible",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMCg_Ln-fEWMHA1Sg_1Zj1YXr_9DNy7uXvqiv4e-4E5QQT6duXRvjpm62sXA"
-        }
-      ]
-    },
-    {
-      "query": "prisoners",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T07:20:00Z",
-      "related_news_urls": [
-        "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
-        "https://www.cnn.com/2026/11/27/us/new-mexico-pregnant-prison-inmate-escape-hnk",
-        "https://www.bbc.com/news/articles/c9m2jke85xzxo"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJIu2VFCB05hkyeS06kFDUVaLyCarCZZu2dSyz-O3rjEUFhtAie_ulixkzJa0",
-      "image_credit": "CBS News",
-      "news": [
-        {
-          "url": "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
-          "title": "Pregnant prisoner escapes in corrections vehicle after officers stop at Whataburger in New Mexico",
-          "publisher": "CBS News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJIu2VFCB05hkyeS06kFDUVaLyCarCZZu2dSyz-O3rjEUFhtAie_ulixkzJa0"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/27/us/new-mexico-pregnant-prison-inmate-escape-hnk",
-          "title": "New Mexico authorities search for pregnant woman who escaped during prison transport",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8zQHQn9Oxa10Em2jBUAinBb8l-l0IeAuVKPeFeI9Cou29sW63Y-8935rS-YE"
-        },
-        {
-          "url": "https://www.bbc.com/news/articles/c9m2jke85xzxo",
-          "title": "Rebecca Taylor: Pregnant US inmate escapes in prison vehicle after medical appointment",
-          "publisher": "BBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFxnnb5ID5H0rij5fvE8Vi12SjU_jnVUvltO3R41ePwkj6D3WApSR430_GWsY"
-        }
-      ]
-    },
-    {
-      "query": "beach hazards statement",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T07:10:00Z",
-      "related_news_urls": [
-        "https://www.pasadenastarnews.com/2026/11/27/beach-hazards-statement-active-for-catalina-santa-barbara-islands-until-early-saturday-evening/",
-        "https://cwibc.co.id/en/southern-california-beach-hazards",
-        "https://patch.com/california/lagunaniguel-danapoint/8-foot-waves-dangerous-rip-tides-forecasted-dana-point-advisory"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtoV3qfafYETEHD0H4ayEKN1nWOen249euaRnIn85R6uQF9maRaylXamiYJk",
-      "image_credit": "Pasadena Star News",
-      "news": [
-        {
-          "url": "https://www.pasadenastarnews.com/2026/11/27/beach-hazards-statement-active-for-catalina-santa-barbara-islands-until-early-saturday-evening/",
-          "title": "Beach hazards statement active for Catalina/Santa Barbara Islands until early Saturday evening",
-          "publisher": "Pasadena Star News",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGtoV3qfafYETEHD0H4ayEKN1nWOen249euaRnIn85R6uQF9maRaylXamiYJk"
-        },
-        {
-          "url": "https://cwibc.co.id/en/southern-california-beach-hazards",
-          "title": "NWS Warns of Dangerous Surf and Coastal Flooding Across Southern California",
-          "publisher": "cwibc.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
-        },
-        {
-          "url": "https://patch.com/california/lagunaniguel-danapoint/8-foot-waves-dangerous-rip-tides-forecasted-dana-point-advisory",
-          "title": "8+ Foot Waves, Dangerous Rip Tides Forecasted For Dana Point: Advisory",
-          "publisher": "Patch",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRynSXEV_3_k-aPxgOLcUsTsXn9dSj6_wpPzTCGssh-0uzsLmeL9l5QFVDLOjY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR4xj0WKslG8DgdcLcQS-6q5fSaRY4fuAN0zegvVkR-STaLIZkgzSlpyKVgVns"
         }
       ]
     }
