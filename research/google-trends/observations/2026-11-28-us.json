@@ -3,17 +3,87 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T13:01:18.951151Z",
+  "checked_at": "2026-11-28T13:30:55.021304Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
+      "query": "peacock black friday deal",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T13:00:00Z",
+      "related_news_urls": [
+        "https://www.businessinsider.com/guides/deals/paramount-plus-black-friday-deal-2026-11-27",
+        "https://6abc.com/story/disney-hulu-bundle-black-friday-deal-2026-499-month-1-year/20071247/",
+        "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Tp6JwQE7jQ6BZmc8SPaE5269vSSjW7GjzFZEjqsEROSx2JVDCY9_2tCTKLo",
+      "image_credit": "Business Insider",
+      "news": [
+        {
+          "url": "https://www.businessinsider.com/guides/deals/paramount-plus-black-friday-deal-2026-11-27",
+          "title": "Black Friday's 79% off Paramount Plus is great, but we think you should use this cool coupon instead",
+          "publisher": "Business Insider",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Tp6JwQE7jQ6BZmc8SPaE5269vSSjW7GjzFZEjqsEROSx2JVDCY9_2tCTKLo"
+        },
+        {
+          "url": "https://6abc.com/story/disney-hulu-bundle-black-friday-deal-2026-499-month-1-year/20071247/",
+          "title": "Disney+, Hulu Bundle Black Friday deal 2026: $4.99 per month for 1 year",
+          "publisher": "6abc Philadelphia",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_KKdg_BuZcb5P5FqBEdtoPPzySOf_a4HgJBlcFwH70Xlvp6Sfc67ZpxaAduI"
+        },
+        {
+          "url": "https://deadline.com/2026/11/black-friday-streaming-deals-disney-hbo-max-paramount-peacock-1237231785/",
+          "title": "Black Friday Streaming Deals Offered By Disney+, HBO Max, Paramount+, Peacock & More",
+          "publisher": "Deadline",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2Xz3uI-8-Cbg1Y2BFYGR4lN7U21UZ-_pDiT_D7Mf0Hiu9DbkN6NhrTYCWzY"
+        }
+      ]
+    },
+    {
+      "query": "vitamin d deficiency sleep duration study",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T13:00:00Z",
+      "related_news_urls": [
+        "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
+        "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
+        "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU",
+      "image_credit": "Fox News",
+      "news": [
+        {
+          "url": "https://www.foxnews.com/health/low-levels-common-vitamin-stealing-30-minutes-sleep",
+          "title": "Low levels of common vitamin could be stealing nearly 30 minutes of your sleep",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTF1o7lQu5zi521alOhf1QLIwHN4Y4mTo8ivD8SV09__h5-Cd-CSjc5bk4RaqU"
+        },
+        {
+          "url": "https://scitechdaily.com/this-common-vitamin-deficiency-could-be-quietly-disrupting-your-sleep/",
+          "title": "This Common Vitamin Deficiency Could Be Quietly Disrupting Your Sleep",
+          "publisher": "SciTechDaily",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1KtLn9IGLHCKoz5hmiBa6eJ7OUjjh_BHVZPcDUnkNDKBfUtgIWeS_O5YeDtA"
+        },
+        {
+          "url": "https://www.earth.com/lifestyle/why-does-sleep-get-worse-with-age-a-common-vitamin-deficiency-may-offer-a-clue/",
+          "title": "Why does sleep get worse with age? A common vitamin deficiency may offer a clue",
+          "publisher": "Earth.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSne0J8uFssYRMAMIMxWSsewbMxQMUoMxR16dg4KoS6BMmWw33r2ymjEVpn8ns"
+        }
+      ]
+    },
+    {
       "query": "nbc",
-      "approx_searches": "200+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-28T12:40:00Z",
       "related_news_urls": [
         "https://www.nytimes.com/2026/11/27/business/media/nbc-ad-snl.html",
-        "https://www.businessinsider.com/jewish-groups-slam-pro-palestine-ad-snl-fcc-2026-11",
-        "https://www.semafor.com/article/11/24/2026/gaza-group-to-air-defund-israel-ad-during-snl"
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/nbc-pulls-israel-aid-ad-snl-thanksgiving-special-backlash/92986047007/",
+        "https://www.businessinsider.com/jewish-groups-slam-pro-palestine-ad-snl-fcc-2026-11"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs0KI_vOZ-nxlZhMt8rvJnZkYbC7ZTIqGvqHfFLvfbYm0gZC_SZxjfFemLiY",
       "image_credit": "The New York Times",
@@ -26,27 +96,28 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSPs0KI_vOZ-nxlZhMt8rvJnZkYbC7ZTIqGvqHfFLvfbYm0gZC_SZxjfFemLiY"
         },
         {
+          "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/nbc-pulls-israel-aid-ad-snl-thanksgiving-special-backlash/92986047007/",
+          "title": "NBC pulls controversial Israel aid ad during 'SNL' Thanksgiving special",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSW0qU6IpgNbUMJWtfIcxUCATLvLGpBXqug2DfLDurDaKoOnHVXggNdsPRDvKc"
+        },
+        {
           "url": "https://www.businessinsider.com/jewish-groups-slam-pro-palestine-ad-snl-fcc-2026-11",
           "title": "NBC is reviewing its ad process after a commercial calling for an end to US aid to Israel drew backlash",
           "publisher": "Business Insider",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS_jJQHuHsR9-RL7l1dvx96fe-3zhpoFJQqWxe6MZfA1IhGZgflSxJ_ZlCUf2M"
-        },
-        {
-          "url": "https://www.semafor.com/article/11/24/2026/gaza-group-to-air-defund-israel-ad-during-snl",
-          "title": "Gaza group to air defund Israel ad during SNL",
-          "publisher": "Semafor",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwiuczej-dX8NUWRLMA3AgOjM2ovBubo9T3DZh3W8R89_l6BfT7alb8vgIAg8"
         }
       ]
     },
     {
       "query": "mark harmon",
-      "approx_searches": "100+",
+      "approx_searches": "200+",
       "published_at": "2026-11-28T12:40:00Z",
       "related_news_urls": [
         "https://people.com/little-house-star-patrick-labyorteaux-recalls-the-time-mark-harmon-literally-gave-him-the-shirt-off-his-back-12283093",
+        "https://demokratis.co.id/en/ncis-gibbs-signature-head-slap",
         "https://screenrant.com/ncis-mark-harmon-signature-head-slap-block/"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBeK2SJkyyhE0LLW--dDNBTNrblKFefO5E7MmXWD-xaNHie913GFQODG4HH14",
@@ -58,6 +129,13 @@
           "publisher": "People.com",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSBeK2SJkyyhE0LLW--dDNBTNrblKFefO5E7MmXWD-xaNHie913GFQODG4HH14"
+        },
+        {
+          "url": "https://demokratis.co.id/en/ncis-gibbs-signature-head-slap",
+          "title": "NCIS Keeps Gibbs From Using His Signature Head Slap",
+          "publisher": "Demokratis.co.id",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6ehy45WpX49rlmZJfaLpPMtevGBs9zDvpB83SyLHkyzp_Y5YX_68qG_fcas0"
         },
         {
           "url": "https://screenrant.com/ncis-mark-harmon-signature-head-slap-block/",
@@ -74,8 +152,8 @@
       "published_at": "2026-11-28T12:40:00Z",
       "related_news_urls": [
         "https://people.com/the-challenge-winner-tyler-duckworth-cause-of-death-revealed-12059712",
-        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/tyler-duckworth-cause-of-death-the-challenge/92983418007/",
-        "https://deadline.com/2026/11/tyler-duckworth-cause-of-death-the-challenge-mtv-1237234390/"
+        "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/challenge-champion-tyler-duckworth-cause-123751079.html",
+        "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/tyler-duckworth-cause-of-death-the-challenge/92983418007/"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyRiniNCmWSgIcwuKj2fJK3YA1dvKIbmUFkvvNhO9eV3KHVBSZ9YRP6dI8vk",
       "image_credit": "People.com",
@@ -88,18 +166,18 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyRiniNCmWSgIcwuKj2fJK3YA1dvKIbmUFkvvNhO9eV3KHVBSZ9YRP6dI8vk"
         },
         {
+          "url": "https://www.yahoo.com/entertainment/celebrity/deaths-obituaries/articles/challenge-champion-tyler-duckworth-cause-123751079.html",
+          "title": "‘The Challenge’ Champion Tyler Duckworth’s Cause of Death at 44 Revealed",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY6UNAqKWeQSPMbqnJtcmJCUYUSDXT49tQ3YhxWI1mIwSRaFd6dQmAXfNFI1U"
+        },
+        {
           "url": "https://www.usatoday.com/story/entertainment/tv-streaming/2026/11/27/tyler-duckworth-cause-of-death-the-challenge/92983418007/",
           "title": "'The Challenge' alum Tyler Duckworth's cause of death revealed",
           "publisher": "USA Today",
           "description": "",
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSktSXUCgHnnwTMXvVAZZ_t5xQfIrIUyP-v3okDuyvxMvCgwJO8ihgKYmTVCDU"
-        },
-        {
-          "url": "https://deadline.com/2026/11/tyler-duckworth-cause-of-death-the-challenge-mtv-1237234390/",
-          "title": "‘The Challenge’ Alum Tyler Duckworth’s Cause Of Death Revealed",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIjv6_zYlbtqXUQ-Cuf-ctFCczFTpFfbaMkO8gkTPraAQCbQeo_9iPzac5G3I"
         }
       ]
     },
@@ -108,26 +186,26 @@
       "approx_searches": "100+",
       "published_at": "2026-11-28T12:40:00Z",
       "related_news_urls": [
-        "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
         "https://thehill.com/blogs/in-the-know/6245656-prince-william-diana-award-administration/",
+        "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
         "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3udnzNo4fkEkdojlvs73LtHynhAvbUyvDyBjCvhVXyppycNioRHOUU9iExLI",
-      "image_credit": "ABC News - Breaking News, Latest News and Videos",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfETpd-WM9OXIkmgEZrKTadaq6g00f4WnMZPspRKCD6n3yneyfPG5a8j5Repo",
+      "image_credit": "The Hill",
       "news": [
-        {
-          "url": "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
-          "title": "Prince William speaks out as Princess Diana charity enters administration",
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3udnzNo4fkEkdojlvs73LtHynhAvbUyvDyBjCvhVXyppycNioRHOUU9iExLI"
-        },
         {
           "url": "https://thehill.com/blogs/in-the-know/6245656-prince-william-diana-award-administration/",
           "title": "Prince William responds after the Diana Award says it can’t meet financial obligations",
           "publisher": "The Hill",
           "description": "",
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfETpd-WM9OXIkmgEZrKTadaq6g00f4WnMZPspRKCD6n3yneyfPG5a8j5Repo"
+        },
+        {
+          "url": "https://abcnews.com/GMA/News/prince-william-speaks-princess-diana-charity-enters-administration/story?id=138473646",
+          "title": "Prince William speaks out as Princess Diana charity enters administration",
+          "publisher": "ABC News - Breaking News, Latest News and Videos",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3udnzNo4fkEkdojlvs73LtHynhAvbUyvDyBjCvhVXyppycNioRHOUU9iExLI"
         },
         {
           "url": "https://people.com/prince-william-reacts-as-princess-diana-s-namesake-charity-he-backs-with-prince-harry-faces-closure-12281706",
@@ -140,22 +218,22 @@
     },
     {
       "query": "real betis - rayo vallecano",
-      "approx_searches": "1000+",
+      "approx_searches": "2000+",
       "published_at": "2026-11-28T12:30:00Z",
       "related_news_urls": [
-        "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-rayo-alegria-champions-carrera-volver-disputarla-20261128073248-nts.html",
+        "https://www.elmundo.es/deportes/futbol/laliga-ea-sports/betis-rayo/2026/11/28/01_0101_20261128_185_184-directo.html",
         "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/",
-        "https://www.infobae.com/espana/agencias/2026/11/28/cucho-lidera-el-ataque-betico-ante-un-rayo-con-pedrosa-y-alvaro/"
+        "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_hOjGS5pxDY5BhRFY8hhPCg5RoVbJCzN1DOU8_8UnglCkpmnFeRIPrRayWU",
-      "image_credit": "ABC",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagIs9SaeC_BGWhku2WwEnEyCQLRODS7OkVjb-DvA_oomKxDy4pz7zsXx7iWM",
+      "image_credit": "El Mundo",
       "news": [
         {
-          "url": "https://www.abc.es/deportes/alfinaldelapalmera/noticias-betis/betis-rayo-alegria-champions-carrera-volver-disputarla-20261128073248-nts.html",
-          "title": "Betis - Rayo: De la alegría por la Champions a la carrera por volver a disputarla",
-          "publisher": "ABC",
+          "url": "https://www.elmundo.es/deportes/futbol/laliga-ea-sports/betis-rayo/2026/11/28/01_0101_20261128_185_184-directo.html",
+          "title": "Betis - Rayo en directo",
+          "publisher": "El Mundo",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_hOjGS5pxDY5BhRFY8hhPCg5RoVbJCzN1DOU8_8UnglCkpmnFeRIPrRayWU"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQagIs9SaeC_BGWhku2WwEnEyCQLRODS7OkVjb-DvA_oomKxDy4pz7zsXx7iWM"
         },
         {
           "url": "https://www.manquepierda.com/historiarealbetis/nos-visita-el-rayo-vallecano-12/",
@@ -165,17 +243,17 @@
           "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQWhmmeyDaXz8QdhCUYKIdbqUXQWQFFHkxp9vwzVq7mn4O_BfxDuh5YLtwtuEA"
         },
         {
-          "url": "https://www.infobae.com/espana/agencias/2026/11/28/cucho-lidera-el-ataque-betico-ante-un-rayo-con-pedrosa-y-alvaro/",
-          "title": "Cucho lidera el ataque bético ante un Rayo con Pedrosa y Álvaro",
-          "publisher": "Infobae",
+          "url": "https://www.tufutbolero.com/novedades/betis-rayo-el-betis-llega-con-cuatro-bajas-por-lesion-fcf0d0",
+          "title": "Betis-Rayo: el Betis llega con cuatro bajas por lesión",
+          "publisher": "Tu Futbolero",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRHCoVJvVj9aGPuXyPjDrxDhOfyjQZ7Om7Bphe3rtlk95gVoUt-mGAUkg7FZN4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2H9nmPoUYwwv988NCG0xAcJpiYnTkhOnVoi-jkGFDrPv8dpVAjb9jl-SlP4o"
         }
       ]
     },
     {
       "query": "betis vs rayo",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-28T12:30:00Z",
       "related_news_urls": [
         "https://www.bbc.com/sport/football/live/c6reg91ewxqqt",
@@ -201,7 +279,7 @@
         },
         {
           "url": "https://sports.yahoo.com/soccer/articles/pellegrini-makes-6-changes-betis-114200432.html",
-          "title": "🚨 Pellegrini makes 6 changes: Betis XI against Rayo Vallecano",
+          "title": "🚨 Pellegrini makes 6 changes; Álvaro García returns: Betis-Rayo line-ups",
           "publisher": "Yahoo Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTzKCBhZqeFXEJA4JTGzzHf449IaGusl5FwMvlG-DKcMKJpqFcDiImQrJwQ4o4"
@@ -210,7 +288,7 @@
     },
     {
       "query": "ai encryption",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-28T12:30:00Z",
       "related_news_urls": [
         "https://www.theguardian.com/technology/2026/nov/28/ai-artificial-intelligence-encryption-global-chaos",
@@ -245,98 +323,36 @@
     },
     {
       "query": "college football playoff",
-      "approx_searches": "200+",
+      "approx_searches": "20000+",
       "published_at": "2026-11-28T12:30:00Z",
       "related_news_urls": [
-        "https://sports.yahoo.com/college-football/articles/notre-dame-syracuse-live-updates-120136617.html",
-        "https://www.usatoday.com/story/sports/college/fighting-irish/football/2026/11/28/notre-dame-football-news-update-syracuse-orange-prediction-score-rivalry-weekend-week-13/92960020007/",
-        "https://dailyorange.com/2026/11/syracuse-football-notre-dame-beat-writers-predictions/"
+        "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
+        "https://bleacherreport.com/articles/25536929-expert-cfb-locks-predictions-michigan-vs-ohio-state-and-week-13-biggest-games"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfimh-NvFB9N5KwRD-MM4yVRNLfwqXg2eagLJ2Pfoc-wmPlSPG4mEkl1O8PG8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/college-football/articles/notre-dame-syracuse-live-updates-120136617.html",
-          "title": "Notre Dame at Syracuse live updates: Score, highlights, and analysis",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQfimh-NvFB9N5KwRD-MM4yVRNLfwqXg2eagLJ2Pfoc-wmPlSPG4mEkl1O8PG8"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/college/fighting-irish/football/2026/11/28/notre-dame-football-news-update-syracuse-orange-prediction-score-rivalry-weekend-week-13/92960020007/",
-          "title": "Experts pick Notre Dame at Syracuse and top Week 13 contests",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRz3VDaAynHSVYPTdXfDIhw1wCABHsXThLxtDFlBeIjFqgM3Yz6pG9IXpJNvsA"
-        },
-        {
-          "url": "https://dailyorange.com/2026/11/syracuse-football-notre-dame-beat-writers-predictions/",
-          "title": "Beat writers agree Syracuse ends season with heavy loss to No. 4 Notre Dame",
-          "publisher": "The Daily Orange",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg6dc0jTuMXd-zM9X-OQQh9D1HGvWPvezoA2XRcDqKsko3c9kUpOx3KA65FuA"
-        }
-      ]
-    },
-    {
-      "query": "delcy rodríguez",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T12:30:00Z",
-      "related_news_urls": [
-        "https://www.instagram.com/p/DgQ-2pci6af/",
-        "https://www.eltiempo.com/mundo/venezuela/delcy-rodriguez-ordena-a-las-fuerzas-armadas-de-venezuela-a-crear-un-comando-de-drones-y-sistemas-no-tripulado-3605038"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqGmQxI3juphrBpPyrCc5mcWSoR_ZH25fe7dRu4wrFnQNV2Ubzxd60Cvq2xco",
-      "image_credit": "Instagram",
-      "news": [
-        {
-          "url": "https://www.instagram.com/p/DgQ-2pci6af/",
-          "title": "Jefa de Estado lidera actos por el Día de la Aviación Militar Bolivariana La presidenta de la República Bolivariana de Venezuela, Delcy Rodríguez, lideró este viernes, desde el Pal",
-          "publisher": "Instagram",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQqGmQxI3juphrBpPyrCc5mcWSoR_ZH25fe7dRu4wrFnQNV2Ubzxd60Cvq2xco"
-        },
-        {
-          "url": "https://www.eltiempo.com/mundo/venezuela/delcy-rodriguez-ordena-a-las-fuerzas-armadas-de-venezuela-a-crear-un-comando-de-drones-y-sistemas-no-tripulado-3605038",
-          "title": "Delcy Rodríguez ordena a las Fuerzas Armadas de Venezuela crear un comando de drones y sistemas no tripulados",
-          "publisher": "El Tiempo",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzU3a_VNTSQnZOWlD20qROdXrYA6GB_7p3Tz87CEGWp0Wg4D8mKV0Q6LSqfxU"
-        }
-      ]
-    },
-    {
-      "query": "jerry jones brian schottenheimer cowboys",
-      "approx_searches": "100+",
-      "published_at": "2026-11-28T12:30:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/nfl/story/_/id/50608969/cowboys-jerry-jones-backs-coach-damning-setbacks",
-        "https://sports.yahoo.com/nfl/articles/cowboys-news-jerry-jones-everything-120000593.html",
-        "https://www.theguardian.com/sport/2026/nov/27/dallas-cowboys-jerry-jones-brian-schottenheimer"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxP2DRj-nxvEn0zvz11GQXJqEQID0ueltf746pXBulm-gDv-eHyvl5TrVZmzg",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU",
       "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://www.espn.com/nfl/story/_/id/50608969/cowboys-jerry-jones-backs-coach-damning-setbacks",
-          "title": "Jerry Jones backs Schottenheimer despite 'damning setbacks' in loss",
+          "url": "https://www.espn.com/college-football/story/_/id/50595179/connelly-rivalry-week-stakes-preview",
+          "title": "What rivalries have the biggest stakes? Connelly looks at the end of the season",
           "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxP2DRj-nxvEn0zvz11GQXJqEQID0ueltf746pXBulm-gDv-eHyvl5TrVZmzg"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfnnRp_QuLGGnIs-2F3kgdfXdyXQoqSntbJrimG4SCRAm6syAX2X5MeB1vKbU"
         },
         {
-          "url": "https://sports.yahoo.com/nfl/articles/cowboys-news-jerry-jones-everything-120000593.html",
-          "title": "Cowboys news: Jerry Jones will ‘question everything’ after Eagles loss",
+          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
+          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5ZVdcuWPTNefdlJJIfpHfPNuPbOmZHTLXasrvbjLXceMSaReaQ5vWs1wuUT4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
         },
         {
-          "url": "https://www.theguardian.com/sport/2026/nov/27/dallas-cowboys-jerry-jones-brian-schottenheimer",
-          "title": "Jerry Jones hits out at Cowboys’ ‘damning setbacks’ after latest meltdown",
-          "publisher": "The Guardian",
+          "url": "https://bleacherreport.com/articles/25536929-expert-cfb-locks-predictions-michigan-vs-ohio-state-and-week-13-biggest-games",
+          "title": "Expert CFB Locks, Predictions for Michigan vs. Ohio State and Week 13 Biggest Games",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJ3pv2NXvLGH9vYz0Wdt6eth7bkG9q2vRqxbczXstwJ8-AcxRnuQXantcdfnY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQKRSiA7AV3f_h3hGW_g5aI_OEB95k8mQh4ohrF1vHuz1-aDEO5APBYyCbYz_s"
         }
       ]
     }
