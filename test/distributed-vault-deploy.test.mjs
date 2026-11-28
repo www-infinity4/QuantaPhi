@@ -391,3 +391,4 @@ test('owner-host local chat refuses remote model names, excessive input, tool ca
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('x'.repeat(262145))}),/local_model_response_too_large/);
  await assert.rejects(localChat({...options,fetcher:async()=>new Response('Unavailable',{status:503})}),/local_model_unavailable/);
 });
+import './distributed-vault-brain-admission.test.mjs';
