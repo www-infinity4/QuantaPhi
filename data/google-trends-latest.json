@@ -3,47 +3,231 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T00:44:20.206042Z",
+  "checked_at": "2026-11-28T01:01:28.060502Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "michael douglas",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T00:30:00Z",
+      "query": "grizzlies vs timberwolves",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T00:40:00Z",
       "related_news_urls": [
-        "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
-        "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
-        "https://suaragarut.id/en/michael-douglas-family-struggles"
+        "https://www.espn.com/nba/story/_/id/50613102/timberwolves-downgrade-lamelo-ball-ankle-sprain",
+        "https://bleacherreport.com/articles/25537913-lamelo-ball-injured-latest-t-wolves-stars-status-after-being-helped-court",
+        "https://sports.yahoo.com/nba/breaking-news/article/t-wolves-rule-out-lamelo-ball-for-nba-cup-game-against-grizzlies-due-to-ankle-sprain-190412110.html"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM",
-      "image_credit": "Demokratis.co.id",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLwKARP2AZVt02Wh_5YwH33a4cMQB8kXuR2fGNuz6i3v7J_rYkECPCdZlnmM",
+      "image_credit": "ESPN",
       "news": [
         {
-          "url": "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
-          "title": "Michael Douglas Reveals Family Struggles in Memoir",
-          "publisher": "Demokratis.co.id",
+          "url": "https://www.espn.com/nba/story/_/id/50613102/timberwolves-downgrade-lamelo-ball-ankle-sprain",
+          "title": "Timberwolves downgrade star LaMelo Ball to out with ankle sprain",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaLwKARP2AZVt02Wh_5YwH33a4cMQB8kXuR2fGNuz6i3v7J_rYkECPCdZlnmM"
         },
         {
-          "url": "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
-          "title": "Michael Douglas' health after stage-four cancer diagnosis",
-          "publisher": "Daily Express",
+          "url": "https://bleacherreport.com/articles/25537913-lamelo-ball-injured-latest-t-wolves-stars-status-after-being-helped-court",
+          "title": "LaMelo Ball Injured, Latest on T-Wolves Star's Status After Being Helped Off Court",
+          "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vxaQ0aNiI6oy4BrEyMmuiymuShtH4SNzGvFNgekBZygGYQouBilI0YXoY0w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRbX62q0mXeqywJXtB_jmIV42CRlmlTAJuW_vhlVJmJqZbSLaqeX0jQkGbYC6w"
         },
         {
-          "url": "https://suaragarut.id/en/michael-douglas-family-struggles",
-          "title": "Michael Douglas Reveals Family Struggles and Cameron's Recovery",
-          "publisher": "SuaraGarut.ID",
+          "url": "https://sports.yahoo.com/nba/breaking-news/article/t-wolves-rule-out-lamelo-ball-for-nba-cup-game-against-grizzlies-due-to-ankle-sprain-190412110.html",
+          "title": "T-Wolves rule out LaMelo Ball for NBA Cup game against Grizzlies due to ankle sprain",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRxw2ZbN804nrB_CfbQ33B6BixQKwXz3KnbxIjoZthhKu1yIRpuCJULwGMXSlM"
+        }
+      ]
+    },
+    {
+      "query": "ncaa football (fbs i)",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [
+        "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
+        "https://www.espn.com/video/clip/_/id/50616478/bill-connelly-dissects-dynamic-college-football-playoff-landscape",
+        "https://bleacherreport.com/articles/25536913-latest-bowl-projections-2026-cfp-playoff-bracket-scenarios-and-week-13-predictions"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI",
+      "image_credit": "NCAA.com",
+      "news": [
+        {
+          "url": "https://www.ncaa.com/news/football/article/2026-11-24/college-football-playoff-bracket-based-current-committee-rankings",
+          "title": "College Football Playoff bracket, based on current committee rankings",
+          "publisher": "NCAA.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSpm3cIGYfZ14I_5vuUD-9dU0eVnGBbcJO-I4Ak-1wG3zS6FC2VwKZ_KzmWxI"
+        },
+        {
+          "url": "https://www.espn.com/video/clip/_/id/50616478/bill-connelly-dissects-dynamic-college-football-playoff-landscape",
+          "title": "Bill Connelly dissects dynamic College Football Playoff landscape",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQdbPuZHY4uakTLz2KmIvGNepheDk3tJxx7iA3tF2F9wYp46GXw0flBun6OqHM"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25536913-latest-bowl-projections-2026-cfp-playoff-bracket-scenarios-and-week-13-predictions",
+          "title": "Latest Bowl Projections, 2026 CFP Playoff Bracket Scenarios and Week 13 Predictions",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT-O-dIxULP5-cucckq6JB5M6LnTVfrVqnM4RX4_UfJkuBTe8qJ32UaSSPWUjA"
+        }
+      ]
+    },
+    {
+      "query": "colin simmons",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [
+        "https://www.burntorangenation.com/texas-longhorns-football/107935/colin-simmons-sec-player-availability-report-texas-texas-am",
+        "https://www.on3.com/teams/texas-longhorns/news/intel-on-texas-most-recent-availability-report/",
+        "https://247sports.com/college/texas/article/edge-colin-simmons-ol-andre-cojoe-listed-as-questionable-for-texas-on-tuesdays-sec-availability-report-293279522/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzjw3wIT1f5y2liatp7cQ4E_9BF64S-eTQcR2Akf5SasSa8BowfCrRp9ccXx0",
+      "image_credit": "Burnt Orange Nation",
+      "news": [
+        {
+          "url": "https://www.burntorangenation.com/texas-longhorns-football/107935/colin-simmons-sec-player-availability-report-texas-texas-am",
+          "title": "Texas edge Colin Simmons ruled out on pregame injury report",
+          "publisher": "Burnt Orange Nation",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTzjw3wIT1f5y2liatp7cQ4E_9BF64S-eTQcR2Akf5SasSa8BowfCrRp9ccXx0"
+        },
+        {
+          "url": "https://www.on3.com/teams/texas-longhorns/news/intel-on-texas-most-recent-availability-report/",
+          "title": "Intel on Texas' Most Recent Availability Report",
+          "publisher": "On3",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT7GvhZp1GTeXthpf4YS5CE6p29qrozGiu9N6Vp3y7m0ydKusDbKadI4K9sMzA"
+        },
+        {
+          "url": "https://247sports.com/college/texas/article/edge-colin-simmons-ol-andre-cojoe-listed-as-questionable-for-texas-on-tuesdays-sec-availability-report-293279522/",
+          "title": "EDGE Colin Simmons, OL Andre Cojoe listed as questionable for Texas on Tuesday's SEC Availability Report",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBq9s3N9ntd_8phjt7gfSJa9ljd36COpbZ-5L0lgag9-L-WVomqqipPiw61s"
+        }
+      ]
+    },
+    {
+      "query": "crown jewel 2026",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "ronald reagan washington national airport",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [
+        "https://www.nbcwashington.com/news/local/american-airlines-plane-clipped-the-wing-of-2nd-plane-at-reagan-national-airport/4188653/",
+        "https://www.cnn.com/2026/11/27/us/american-airlines-jet-clips-wing-reagan-national",
+        "https://wjla.com/news/local/dc-flights-american-airlines-clip-wings-thanksgiving-black-friday-washington-arlington-va-travel-dallas-chicago-dfw-ord-injuries-faa-damage-pilot-audio-national-airport-taxiway-runway"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WK7Oph8xaqylShTe1nSEJ5biScyEjvSN7QWppenfJqqA5WBAXOIoBnd6onA",
+      "image_credit": "NBC4 Washington",
+      "news": [
+        {
+          "url": "https://www.nbcwashington.com/news/local/american-airlines-plane-clipped-the-wing-of-2nd-plane-at-reagan-national-airport/4188653/",
+          "title": "American Airlines plane ‘clipped the wing' of 2nd plane at Reagan National Airport",
+          "publisher": "NBC4 Washington",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3WK7Oph8xaqylShTe1nSEJ5biScyEjvSN7QWppenfJqqA5WBAXOIoBnd6onA"
+        },
+        {
+          "url": "https://www.cnn.com/2026/11/27/us/american-airlines-jet-clips-wing-reagan-national",
+          "title": "American Airlines jets clip wings at Washington DC area airport",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLh2gSGN-laMQaLbnuTFrpkfysPzzb6S99Zu0TY9IhiRlONEbJTBsdMikP4s"
+        },
+        {
+          "url": "https://wjla.com/news/local/dc-flights-american-airlines-clip-wings-thanksgiving-black-friday-washington-arlington-va-travel-dallas-chicago-dfw-ord-injuries-faa-damage-pilot-audio-national-airport-taxiway-runway",
+          "title": "2 American Airlines flights bound for Dallas, Chicago clip wings at DCA",
+          "publisher": "WJLA",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQXk_haw5uCmAuPXFQWWdyF_-LgVWzWUrVJEKgiyU9uzohewLQnHPjqVMfkWmE"
+        }
+      ]
+    },
+    {
+      "query": "andrew wiggins",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/nba/articles/heat-key-andrew-wiggins-injury-222645240.html",
+        "https://www.fanduel.com/research/nba/player-news/game-updates/andrew-wiggins-and-heat-play-knicks-on-november-27-2026",
+        "https://www.rotowire.com/basketball/headlines/andrew-wiggins-news-good-to-go-friday-541154"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG4NxyOBGH6JLTooxWHwQYarschUKTGdCBSikvznabJ9IkL0H2G-b5kdrGgPM",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/nba/articles/heat-key-andrew-wiggins-injury-222645240.html",
+          "title": "Heat Get Key Andrew Wiggins Injury Update Ahead of Knicks Game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSG4NxyOBGH6JLTooxWHwQYarschUKTGdCBSikvznabJ9IkL0H2G-b5kdrGgPM"
+        },
+        {
+          "url": "https://www.fanduel.com/research/nba/player-news/game-updates/andrew-wiggins-and-heat-play-knicks-on-november-27-2026",
+          "title": "Andrew Wiggins And Heat Face Knicks On Nov. 27",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTDYMH7MJ-T5biq8Yg2hiIwzVd7BM0ZizbyRqRl65YSnCK-Mo0GwO6j1ilaOC4"
+        },
+        {
+          "url": "https://www.rotowire.com/basketball/headlines/andrew-wiggins-news-good-to-go-friday-541154",
+          "title": "Andrew Wiggins News: Good to go Friday",
+          "publisher": "RotoWire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAYXDi_3mNSeh7D6iOx4zIi_x3KCNTIh5Noy0Czr4Nnlwto2dNuT-BmMTUZ5Q"
+        }
+      ]
+    },
+    {
+      "query": "landry shamet",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T00:40:00Z",
+      "related_news_urls": [
+        "https://www.postingandtoasting.com/knicks-features-profiles/91633/landry-shamet-has-arrived-why-not-shamwow-for-sixth-man-of-the-year",
+        "https://nypost.com/2026/11/27/sports/landry-shamet-is-sixth-man-of-the-year-and-the-knicks-wont-hear-otherwise/",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK-_xyUDZLKI1ocxQPaQLH8lNVB2gj4jn8SxgJcmexdmvMIl3gKYPpDqCcpAI",
+      "image_credit": "Posting and Toasting",
+      "news": [
+        {
+          "url": "https://www.postingandtoasting.com/knicks-features-profiles/91633/landry-shamet-has-arrived-why-not-shamwow-for-sixth-man-of-the-year",
+          "title": "Landry Shamet has arrived. Why can’t he be Sixth Man of the Year?",
+          "publisher": "Posting and Toasting",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSK-_xyUDZLKI1ocxQPaQLH8lNVB2gj4jn8SxgJcmexdmvMIl3gKYPpDqCcpAI"
+        },
+        {
+          "url": "https://nypost.com/2026/11/27/sports/landry-shamet-is-sixth-man-of-the-year-and-the-knicks-wont-hear-otherwise/",
+          "title": "Landry Shamet is the Sixth Man of the Year and the Knicks won’t hear otherwise",
+          "publisher": "New York Post",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzGVKe-IeY4BOHnItkEggLTNPcH3BR3DLqbcw5mwkRvMjTvU0W0jKE70-pyb4"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-21/nyk-start-brunson-bridges-shamet-hart-drummond",
+          "title": "NYK start Brunson, Bridges, Shamet, Hart, Drummond",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRgj0cFVHmimVQULrgs0jqzxtxZptVu1yNMFkVr84cXDq6ck1o6ruiP3zcT2Y8"
         }
       ]
     },
     {
       "query": "oba femi",
-      "approx_searches": "500+",
+      "approx_searches": "1000+",
       "published_at": "2026-11-28T00:30:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/wrestling/article/wwe-survivor-series-what-im-hearing-about-the-rocks-return-potential-roman-reigns-match-wrestlemania-43-cm-punk-cody-rhodes-190328047.html",
@@ -77,282 +261,72 @@
       ]
     },
     {
-      "query": "nathan fillion",
-      "approx_searches": "200+",
+      "query": "smackdown",
+      "approx_searches": "1000+",
       "published_at": "2026-11-28T00:30:00Z",
       "related_news_urls": [
-        "https://www.cbr.com/firefly-animated-revival-gets-update-nathan-fillion/",
-        "https://screenrant.com/firefly-animated-revival-series-progress-nathan-fillion-update/",
-        "https://comicbook.com/tv-shows/news/nathan-fillions-firefly-update-is-good-news-for-the-revival-even-if-its-not-what-i-expected/"
+        "https://bleacherreport.com/liveblogs/25538025-wwe-smackdown-live-updates-results-and-highlights-survivor-series-wargames-2026",
+        "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-27/live/",
+        "https://sports.yahoo.com/wrestling/articles/wwe-smackdown-tonight-pre-taped-153120262.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Fdi4_zaMmDzcFmIphH-9x4REgq_OuMaJAulR0K_6tDbzNGhag6QYscjXsKE",
-      "image_credit": "Comic Book Resources",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS9Z1cSXT-syQpDgaYNko6F6ehMIoP73HDHEk8vRM4Peqfk4JzMBaNJOCH_2g",
+      "image_credit": "Bleacher Report",
       "news": [
         {
-          "url": "https://www.cbr.com/firefly-animated-revival-gets-update-nathan-fillion/",
-          "title": "Nathan Fillion's 14-Episode Sci-Fi Masterpiece Finally Gets a Revival Update",
-          "publisher": "Comic Book Resources",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6Fdi4_zaMmDzcFmIphH-9x4REgq_OuMaJAulR0K_6tDbzNGhag6QYscjXsKE"
-        },
-        {
-          "url": "https://screenrant.com/firefly-animated-revival-series-progress-nathan-fillion-update/",
-          "title": "Firefly's New Revival Series Gets Exciting Update From Nathan Fillion",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRlBh71-_2suqekp1Ytq2vZLlL8PZj924ZWW1c2zGLChlhz4AdPcR73AJSiMx8"
-        },
-        {
-          "url": "https://comicbook.com/tv-shows/news/nathan-fillions-firefly-update-is-good-news-for-the-revival-even-if-its-not-what-i-expected/",
-          "title": "Nathan Fillion’s Firefly Update Is Good News for the Revival, Even If It’s Not What I Expected",
-          "publisher": "ComicBook.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIaj7PQabGPYGvPpdvSJpGs3d_yPHDwNtfRNIyuIlNhim1Hq8arUY2nGntjwo"
-        }
-      ]
-    },
-    {
-      "query": "survivor series 2026",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/wwe/story/_/id/50601087/wwe-survivor-series-wargames-2026-roundtable",
-        "https://bleacherreport.com/articles/25537551-updated-2026-wwe-survivor-series-card-and-predictions-match-order",
-        "https://sports.yahoo.com/wrestling/articles/watch-wwe-survivor-series-2026-200000334.html"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRofd_ZXLov85kDk0oychnhUOsYh7h-DbtnIdvjcNG3gEL1sJ9aXzP6y9G7eEw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/wwe/story/_/id/50601087/wwe-survivor-series-wargames-2026-roundtable",
-          "title": "WWE Survivor Series 2026 roundtable: Can The 946 beat The Bloodline in WarGames?",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRofd_ZXLov85kDk0oychnhUOsYh7h-DbtnIdvjcNG3gEL1sJ9aXzP6y9G7eEw"
-        },
-        {
-          "url": "https://bleacherreport.com/articles/25537551-updated-2026-wwe-survivor-series-card-and-predictions-match-order",
-          "title": "Updated 2026 WWE Survivor Series Card and Predictions for Match Order",
+          "url": "https://bleacherreport.com/liveblogs/25538025-wwe-smackdown-live-updates-results-and-highlights-survivor-series-wargames-2026",
+          "title": "WWE SmackDown Live Updates, Results and Highlights Before Survivor Series WarGames 2026",
           "publisher": "Bleacher Report",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3QUdNvTyNnE9r4qEpJSHxfdpV5nHQSzl-Tj9kvtr5Lt2hworp634Ma0o_ClY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRS9Z1cSXT-syQpDgaYNko6F6ehMIoP73HDHEk8vRM4Peqfk4JzMBaNJOCH_2g"
         },
         {
-          "url": "https://sports.yahoo.com/wrestling/articles/watch-wwe-survivor-series-2026-200000334.html",
-          "title": "How to Watch WWE Survivor Series 2026 With YouTube TV, Hulu + Live TV & DIRECTV",
+          "url": "https://www.cbssports.com/wwe/news/wwe-smackdown-results-live-updates-and-grades-for-november-27/live/",
+          "title": "WWE SmackDown results, live updates and grades for Nov. 27 as Owens, Balor team to face Zayn, Gunther",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQEnlf_DWRUGqh2OV-kK9l8qNbQ9yNi9CxDq_qWsb8uwc9KaZPEt6uB-8wI_pE"
+        },
+        {
+          "url": "https://sports.yahoo.com/wrestling/articles/wwe-smackdown-tonight-pre-taped-153120262.html",
+          "title": "WWE SmackDown Tonight Is Pre-Taped — Here Are the Spoilers",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRL5kBvbinMEjvu6Ro14zQmEo4J6jERuTsUpGrbr94WssRCC2oIzsZlsNKiL5I"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRLPUKiFcRKD9jwyqAtIL26OVAKTCUzTq8vWjHGgLIN_9ek80n-MryEArPW-jU"
         }
       ]
     },
     {
-      "query": "david boreanaz",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T00:20:00Z",
-      "related_news_urls": [
-        "https://screenrant.com/david-boreanaz-rockford-files-nbc-reboot-trailer-angel-recast-revealed/",
-        "https://deadline.com/2026/11/brandon-t-jackson-the-rockford-files-recurring-cast-1237229451/",
-        "https://www.thetvcave.com/post/the-rockford-files-first-look-trailer-david-boreanaz-is-back"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRa4HFZmdWHSEw2VH-8qn-kDm9JR2DHlwsibOziayg2-2LodfP3BRkAe4enG7M",
-      "image_credit": "ScreenRant",
-      "news": [
-        {
-          "url": "https://screenrant.com/david-boreanaz-rockford-files-nbc-reboot-trailer-angel-recast-revealed/",
-          "title": "David Boreanaz’s New Reboot Of Classic NBC Detective Series Officially Unveils Recast Original Character",
-          "publisher": "ScreenRant",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRa4HFZmdWHSEw2VH-8qn-kDm9JR2DHlwsibOziayg2-2LodfP3BRkAe4enG7M"
-        },
-        {
-          "url": "https://deadline.com/2026/11/brandon-t-jackson-the-rockford-files-recurring-cast-1237229451/",
-          "title": "Brandon T. Jackson Joins ‘The Rockford Files’ In Recurring Role",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMEUQ68tRyCjiVNpn_fuDgemDrBjDbLAZdZdbW_w-auoSjYitxTHe3WMWzu0"
-        },
-        {
-          "url": "https://www.thetvcave.com/post/the-rockford-files-first-look-trailer-david-boreanaz-is-back",
-          "title": "The Rockford Files First-Look Trailer: David Boreanaz Is Back",
-          "publisher": "The TV Cave",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU-sSRrdcwZrb3J0iSfvUlUMSFVvCC8uSX6sSIl-LkukqyoWfkPg_GVDu9JA0"
-        }
-      ]
-    },
-    {
-      "query": "people",
+      "query": "michael douglas",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T00:20:00Z",
+      "published_at": "2026-11-28T00:30:00Z",
       "related_news_urls": [
-        "https://people.com/kristen-bell-reveals-the-special-tradition-that-helps-her-kids-slow-down-and-savor-christmas-morning-12283733",
-        "https://people.com/the-challenge-winner-tyler-duckworth-cause-of-death-revealed-12059712",
-        "https://deadline.com/2026/11/tyler-duckworth-cause-of-death-the-challenge-mtv-1237234390/"
+        "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
+        "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
+        "https://suaragarut.id/en/michael-douglas-family-struggles"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPY8AvwpTkqEF2vaadcpkIwSjVSQNHXTafHZ7tfyS4F4ZKYdV3w3nCz8e9dFs",
-      "image_credit": "People.com",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM",
+      "image_credit": "Demokratis.co.id",
       "news": [
         {
-          "url": "https://people.com/kristen-bell-reveals-the-special-tradition-that-helps-her-kids-slow-down-and-savor-christmas-morning-12283733",
-          "title": "Kristen Bell Reveals the Special Tradition That Helps Her Kids Slow Down and Savor Christmas Morning",
-          "publisher": "People.com",
+          "url": "https://demokratis.co.id/en/michael-douglas-family-struggles-memoir",
+          "title": "Michael Douglas Reveals Family Struggles in Memoir",
+          "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQPY8AvwpTkqEF2vaadcpkIwSjVSQNHXTafHZ7tfyS4F4ZKYdV3w3nCz8e9dFs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
         },
         {
-          "url": "https://people.com/the-challenge-winner-tyler-duckworth-cause-of-death-revealed-12059712",
-          "title": "‘The Challenge’ Winner Tyler Duckworth’s Cause of Death Revealed",
-          "publisher": "People.com",
+          "url": "https://www.express.co.uk/celebrity-news/2267430/michael-douglas-health-stage-four-cancer",
+          "title": "Michael Douglas' health after stage-four cancer diagnosis",
+          "publisher": "Daily Express",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvyRiniNCmWSgIcwuKj2fJK3YA1dvKIbmUFkvvNhO9eV3KHVBSZ9YRP6dI8vk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vxaQ0aNiI6oy4BrEyMmuiymuShtH4SNzGvFNgekBZygGYQouBilI0YXoY0w"
         },
         {
-          "url": "https://deadline.com/2026/11/tyler-duckworth-cause-of-death-the-challenge-mtv-1237234390/",
-          "title": "‘The Challenge’ Alum Tyler Duckworth’s Cause Of Death Revealed",
-          "publisher": "Deadline",
+          "url": "https://suaragarut.id/en/michael-douglas-family-struggles",
+          "title": "Michael Douglas Reveals Family Struggles and Cameron's Recovery",
+          "publisher": "SuaraGarut.ID",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIjv6_zYlbtqXUQ-Cuf-ctFCczFTpFfbaMkO8gkTPraAQCbQeo_9iPzac5G3I"
-        }
-      ]
-    },
-    {
-      "query": "miss universo",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.nytimes.com/2026/11/24/style/miss-universe-pageant-puerto-rico-feud.html",
-        "https://www.cnn.com/2026/11/25/style/miss-universe-2026-winner",
-        "https://www.washingtonpost.com/lifestyle/2026/11/25/jennifer-barreto-miss-puerto-rico-crowned-miss-universe-after-stormy-year-pageant/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6-TGQ8tOd56_peRwCOeGC7etdnLh1smyBshnuqo-Opv0iuq2Lwq_vMEN0AlE",
-      "image_credit": "The New York Times",
-      "news": [
-        {
-          "url": "https://www.nytimes.com/2026/11/24/style/miss-universe-pageant-puerto-rico-feud.html",
-          "title": "The Glamour of Miss Universe Masks an Ugly Battle for Control",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6-TGQ8tOd56_peRwCOeGC7etdnLh1smyBshnuqo-Opv0iuq2Lwq_vMEN0AlE"
-        },
-        {
-          "url": "https://www.cnn.com/2026/11/25/style/miss-universe-2026-winner",
-          "title": "Miss Universe crowns winner after another turbulent year for world’s biggest pageant",
-          "publisher": "CNN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxWAxqU0A2Sk69ni8tN7CwOqUi8kdRLTLzVLCxNAxYzeMxKLIy1Ql-7LN5CMA"
-        },
-        {
-          "url": "https://www.washingtonpost.com/lifestyle/2026/11/25/jennifer-barreto-miss-puerto-rico-crowned-miss-universe-after-stormy-year-pageant/",
-          "title": "Miss Puerto Rico crowned Miss Universe after tumultuous year for pageant",
-          "publisher": "The Washington Post",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkDs33CvDAH5rnOMYyXMYxws8Va2Qb0kY-TguG8sq8DGGLKVu8EOW-Bh-PkBY"
-        }
-      ]
-    },
-    {
-      "query": "brownsburg football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.wthr.com/article/sports/high-school/hs-football/indiana-high-school-ihsaa-football-state-championship-matchups-operation-football-lucas-oil-stadium/531-ae33f117-acb6-46a1-bd5c-fbc5b68a1d1b",
-        "https://www.indystar.com/story/sports/high-school/2026/11/26/ihsaa-football-50-players-to-watch-at-six-football-state-finals-games/92962811007/",
-        "https://www.ihsaa.org/media/news/class-6a-football-state-championship-preview-0"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEC6rsSgqF2JAQ9qsJu2h_mKrkCRbr4qf3JRyFNf02arB7q7MdA8oEtrhNEQQ",
-      "image_credit": "WTHR",
-      "news": [
-        {
-          "url": "https://www.wthr.com/article/sports/high-school/hs-football/indiana-high-school-ihsaa-football-state-championship-matchups-operation-football-lucas-oil-stadium/531-ae33f117-acb6-46a1-bd5c-fbc5b68a1d1b",
-          "title": "Indiana high school football state championship matchups | Operation Football",
-          "publisher": "WTHR",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEC6rsSgqF2JAQ9qsJu2h_mKrkCRbr4qf3JRyFNf02arB7q7MdA8oEtrhNEQQ"
-        },
-        {
-          "url": "https://www.indystar.com/story/sports/high-school/2026/11/26/ihsaa-football-50-players-to-watch-at-six-football-state-finals-games/92962811007/",
-          "title": "Ready, set, go. 50 players to watch at IHSAA football state finals",
-          "publisher": "IndyStar",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS0-VpAPXwpicn-3ipvvCh0sMJ4_s8QdMpV5PkE1wztY-6GAobmsKKuISbt_dg"
-        },
-        {
-          "url": "https://www.ihsaa.org/media/news/class-6a-football-state-championship-preview-0",
-          "title": "Class 6A Football State Championship Preview",
-          "publisher": "Indiana High School Athletic Association",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSssdg8_qY-ZPdE8xsXJFWxkz-do7il_y3_8SQZeMftvQVTKYafRqrkMlO23Xs"
-        }
-      ]
-    },
-    {
-      "query": "black panther",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T00:20:00Z",
-      "related_news_urls": [
-        "https://www.imdb.com/news/ni66113728/",
-        "https://en.gamegpu.com/news/igry/akter-ozvuchivaniya-chernoj-pantery-oproverg-slukhi-ob-odnoknopochnom-gejmplee-v-igre-marvel-1943",
-        "https://www.a90skid.com/upcoming-games/marvel-1943-rise-of-hydra/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTYZws9mEZxQZC_fQEHlyCh2ut-DEG75Sv6EYt-6N3Lh_5vxWrIJQIWC8faL0",
-      "image_credit": "IMDb",
-      "news": [
-        {
-          "url": "https://www.imdb.com/news/ni66113728/",
-          "title": "Marvel 1943: Rise of Hydra Report Sheds New Light on Development Issues",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTYZws9mEZxQZC_fQEHlyCh2ut-DEG75Sv6EYt-6N3Lh_5vxWrIJQIWC8faL0"
-        },
-        {
-          "url": "https://en.gamegpu.com/news/igry/akter-ozvuchivaniya-chernoj-pantery-oproverg-slukhi-ob-odnoknopochnom-gejmplee-v-igre-marvel-1943",
-          "title": "Black Panther's voice actor has dismissed rumors of one-button gameplay in Marvel 1943.",
-          "publisher": "GameGPU",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTX4J3GMsuQcZm5t-YXmTUqFJzIWazL59A7i7vWK-ALl8XySqWbXZxntTSniSc"
-        },
-        {
-          "url": "https://www.a90skid.com/upcoming-games/marvel-1943-rise-of-hydra/",
-          "title": "Marvel 1943: Rise of Hydra",
-          "publisher": "A 90s Kid",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6rbNuXdwIdNNWfUt5VvlsDA0YfHpFCzazZ_qPbRg66tZyxjrw9S4DjCfyieU"
-        }
-      ]
-    },
-    {
-      "query": "bronson reed",
-      "approx_searches": "100000+",
-      "published_at": "2026-11-28T00:10:00Z",
-      "related_news_urls": [
-        "https://www.foxnews.com/outkick-sports/jermaine-haley-wwe-star-known-bronson-reed-dead-38",
-        "https://www.fightful.com/wrestling/bronson-reed-passes-away-due-to-medical-complications/",
-        "https://nodq.com/news/breaking-news-wwe-announces-that-bronson-reed-has-passed-away/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP-dk_2owIYAO40ROIyhLMNCI1rJNQKJLJZYG4zcrrf0jd6SOy8pqoq-jxvso",
-      "image_credit": "Fox News",
-      "news": [
-        {
-          "url": "https://www.foxnews.com/outkick-sports/jermaine-haley-wwe-star-known-bronson-reed-dead-38",
-          "title": "Jermaine Haley, WWE star known as Bronson Reed, dead at 38",
-          "publisher": "Fox News",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSP-dk_2owIYAO40ROIyhLMNCI1rJNQKJLJZYG4zcrrf0jd6SOy8pqoq-jxvso"
-        },
-        {
-          "url": "https://www.fightful.com/wrestling/bronson-reed-passes-away-due-to-medical-complications/",
-          "title": "Bronson Reed Passes Away Due To Medical Complications",
-          "publisher": "Fightful",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTFN1FaxsqMyGn7jPQJ6iCxZq3mX2DWG1_z5nEZtgxwsEjc_5Ut1A88Chwb9vM"
-        },
-        {
-          "url": "https://nodq.com/news/breaking-news-wwe-announces-that-bronson-reed-has-passed-away/",
-          "title": "Breaking news: WWE announces that Bronson Reed has passed away",
-          "publisher": "NoDQ.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnoMO6DBE9K06C_n9SOTHLWdMHhiM0EGfRve3q00F6oPG2FvjQ1R8I13thdhY"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQGDYJ-zfCTRnbARyQeMzz08kxmtJValJshNOJqpWVSiig2A_9zlUcjruVS5pM"
         }
       ]
     }
