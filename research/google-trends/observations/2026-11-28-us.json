@@ -3,356 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T17:30:52.859774Z",
+  "checked_at": "2026-11-28T18:01:16.307182Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "fl atlantic vs east carolina",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:10:00Z",
-      "related_news_urls": [
-        "https://247sports.com/college/east-carolina/article/ecu-football-three-things-i-know-three-things-i-think-ahead-of-regular-season-finale-293376892/",
-        "https://www.tallahatchienews.ms/node/482196",
-        "https://bonesville.net/2026/11/27/1128-2026_pregame-show_fau/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs010UgpBCtxjrZr4Di2M6XEp-BhbvJnBFkzu4C_jm9oSmrpCeyIlq1pzR9is",
-      "image_credit": "247Sports",
-      "news": [
-        {
-          "url": "https://247sports.com/college/east-carolina/article/ecu-football-three-things-i-know-three-things-i-think-ahead-of-regular-season-finale-293376892/",
-          "title": "Three Things I Know, Three Things I Think Ahead of ECU's Regular Season Finale",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRs010UgpBCtxjrZr4Di2M6XEp-BhbvJnBFkzu4C_jm9oSmrpCeyIlq1pzR9is"
-        },
-        {
-          "url": "https://www.tallahatchienews.ms/node/482196",
-          "title": "(TODAY'S MATCH) East Carolina vs Florida Atlantic Live football coverage game Nov 28, 2028",
-          "publisher": "tallahatchienews.ms",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0"
-        },
-        {
-          "url": "https://bonesville.net/2026/11/27/1128-2026_pregame-show_fau/",
-          "title": "Bonesville Pregame Show",
-          "publisher": "Bonesville",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTITuv4ANmUIkeedXu2olJU9kXBsFMDzdpQvbhwsJh_2KPoqgwrS0wJEWiCjjk"
-        }
-      ]
-    },
-    {
-      "query": "bo jackson",
+      "query": "tsa",
       "approx_searches": "1000+",
-      "published_at": "2026-11-28T17:10:00Z",
+      "published_at": "2026-11-28T17:40:00Z",
       "related_news_urls": [
-        "https://www.newsbreak.com/rolling-flavors-342606941/5019099229035-my-grandmother-taught-me-to-make-my-dinner-like-this-stuffed-chicken-breast-in-the-oven",
-        "https://www.newsbreak.com/news-today-310730832/5026667386222-trying-again-and-again-to-feed-the-giraffe-short",
-        "https://www.newsbreak.com/kreative-comedy-396561280/5028551414092-this-is-why-we-tithe-to-god-christianity-reel-jesus-faith"
+        "https://www.foxnews.com/travel/tsa-agent-spots-strange-detail-scanner-finds-dangerous-object-inside-sharpie",
+        "https://www.tsa.gov/about/employee-stories/sharp-catch-richmond-tsa-officers-detect-concealed-knife-inside-sharpie",
+        "https://people.com/tsa-officers-discover-knife-hidden-inside-sharpie-at-virginia-airport-12277185"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVdMDUioNUOhqDmgGQDojBhHQKjY7zOg4FZOZcgfI6CwZHHucaZIIrUwvXHdE",
-      "image_credit": "NewsBreak: Local News & Alerts",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5deaAPeNQv9G50GeJmgJ0flmugnaEO66HCFhnWK8E3Z-Atr5h12DFORUyvnM",
+      "image_credit": "Fox News",
       "news": [
         {
-          "url": "https://www.newsbreak.com/rolling-flavors-342606941/5019099229035-my-grandmother-taught-me-to-make-my-dinner-like-this-stuffed-chicken-breast-in-the-oven",
-          "title": "My grandmother taught me to make my dinner like this! Stuffed chicken breast in the oven!",
-          "publisher": "NewsBreak: Local News & Alerts",
+          "url": "https://www.foxnews.com/travel/tsa-agent-spots-strange-detail-scanner-finds-dangerous-object-inside-sharpie",
+          "title": "TSA agent spots strange detail on scanner, finds dangerous object inside Sharpie",
+          "publisher": "Fox News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVdMDUioNUOhqDmgGQDojBhHQKjY7zOg4FZOZcgfI6CwZHHucaZIIrUwvXHdE"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5deaAPeNQv9G50GeJmgJ0flmugnaEO66HCFhnWK8E3Z-Atr5h12DFORUyvnM"
         },
         {
-          "url": "https://www.newsbreak.com/news-today-310730832/5026667386222-trying-again-and-again-to-feed-the-giraffe-short",
-          "title": "Trying Again and Again to Feed the Giraffe🦒❤️#short",
-          "publisher": "NewsBreak: Local News & Alerts",
+          "url": "https://www.tsa.gov/about/employee-stories/sharp-catch-richmond-tsa-officers-detect-concealed-knife-inside-sharpie",
+          "title": "Sharp catch! Richmond TSA officers detect concealed knife inside Sharpie",
+          "publisher": "www.tsa.gov",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSOCvl4Qd3GwhOG0t9iEAW4QpJSO4x6RmwZtN_N7BaRDLQ9BQe-Zx1M3Pzeo1E"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzgWFEVTtIwtXDd7n1PJLRlnUVwvm_Yst5arZ19qfYRwxGdwDnOwDFIF4Zufs"
         },
         {
-          "url": "https://www.newsbreak.com/kreative-comedy-396561280/5028551414092-this-is-why-we-tithe-to-god-christianity-reel-jesus-faith",
-          "title": "This is why we tithe to God! #christianity #reel #jesus #faith",
-          "publisher": "NewsBreak: Local News & Alerts",
+          "url": "https://people.com/tsa-officers-discover-knife-hidden-inside-sharpie-at-virginia-airport-12277185",
+          "title": "TSA Officers Spot a ‘Suspicious’ Sharpie Inside Traveler’s Carry-On at Virginia Airport. Then They See a Blade",
+          "publisher": "People.com",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTXcOONfBvVIcQ2SIX7jKcuGJNbwL7g6mEP8zzHQLSml-h6RBrPOjljpw4HEt4"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7T-Vz4QzXY4nGTB0VZnab3O-Vx8z_TxYLZOwtq9EPx1ShDWVqgjBGxoRR78s"
         }
       ]
     },
     {
-      "query": "psv vs go ahead eagles",
+      "query": "la news",
       "approx_searches": "500+",
-      "published_at": "2026-11-28T17:10:00Z",
+      "published_at": "2026-11-28T17:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/cw8dv1ld93e6t",
-        "https://www.fubo.tv/welcome/matches/0d884a1a-33f0-4023-a992-4200344b2b38",
-        "https://www.football.com/ng/news/159726"
+        "https://ktla.com/news/local-news/suspected-arsonist-found-hiding-in-attic-after-los-angeles-county-brush-fire/",
+        "https://www.nbclosangeles.com/news/local/arson-suspect-arrested-topanga-brush-fire/3975570/",
+        "https://mynewsla.com/crime/2026/11/27/man-suspected-of-starting-small-brush-fire-in-topanga-arrested/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd2NlDAmeu8MJ3JW7uYkEItsSQ5K5CEPYnwO2Ntc0eHx_6JFdyruXw7ESI1IU",
+      "image_credit": "KTLA",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/cw8dv1ld93e6t",
-          "title": "PSV vs Go Ahead Eagles: Dutch Eredivisie stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://ktla.com/news/local-news/suspected-arsonist-found-hiding-in-attic-after-los-angeles-county-brush-fire/",
+          "title": "Suspected arsonist found hiding in attic after Los Angeles County brush fire",
+          "publisher": "KTLA",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRoLTnkLSxQlvqf_-H7ZnJQf9xAcIu_3_Nl04nx7yiOma_DJDRg8rPzFHZdJSw"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRd2NlDAmeu8MJ3JW7uYkEItsSQ5K5CEPYnwO2Ntc0eHx_6JFdyruXw7ESI1IU"
         },
         {
-          "url": "https://www.fubo.tv/welcome/matches/0d884a1a-33f0-4023-a992-4200344b2b38",
-          "title": "Watch PSV vs Go Ahead Eagles",
-          "publisher": "Fubo",
+          "url": "https://www.nbclosangeles.com/news/local/arson-suspect-arrested-topanga-brush-fire/3975570/",
+          "title": "Arson suspect linked to Topanga brush fire arrested",
+          "publisher": "NBC Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQCodzljmUDMou4ni-ImDOspQ-MM_1ZUwTPQWDKkdMarOJlHOyl-DsbXZ_kEhY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIVJBZ_LdJIvfE3p38juU-UEf4khTycwMuFQ1jYM4kc9CWEhQHXseZ3Z6WQ28"
         },
         {
-          "url": "https://www.football.com/ng/news/159726",
-          "title": "PSV Eindhoven vs Go Ahead Eagles Preview and Prediction",
-          "publisher": "Football.com",
+          "url": "https://mynewsla.com/crime/2026/11/27/man-suspected-of-starting-small-brush-fire-in-topanga-arrested/",
+          "title": "Police Arrest Suspect for Starting Small Brush Fire in Topanga",
+          "publisher": "MyNewsLA.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTk6IPbipAEZaD-TuZaWg_mp24Wfda95HWhlqOY9Em1TDiRBFP0bTXaOE0IRDo"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzM1Vrs2JFpUxMzJauUHW2b9gSl7JaKM5-OcgvrZXp5EDGRpvSWX9YzsvUys"
         }
       ]
     },
     {
-      "query": "idaho state vs north dakota",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:10:00Z",
-      "related_news_urls": [
-        "https://www.grandforksherald.com/sports/college/8-things-to-know-about-unds-playoff-opponent-idaho-state",
-        "https://fightinghawks.com/news/2026/11/23/football-north-dakota-enters-fcs-playoffs-ranked-no-9-in-both-major-polls.aspx",
-        "https://www.dimers.com/cfb/news/idaho-state-vs-north-dakota-prediction-11-28-2026-ac"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGAXKX1N4RO8gdndD8gXy9i8iQi5a0KKqa9zioi4uRlLuY25Lm1dTyeUFAC8k",
-      "image_credit": "Grand Forks Herald",
-      "news": [
-        {
-          "url": "https://www.grandforksherald.com/sports/college/8-things-to-know-about-unds-playoff-opponent-idaho-state",
-          "title": "8 things to know about UND's playoff opponent Idaho State",
-          "publisher": "Grand Forks Herald",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGAXKX1N4RO8gdndD8gXy9i8iQi5a0KKqa9zioi4uRlLuY25Lm1dTyeUFAC8k"
-        },
-        {
-          "url": "https://fightinghawks.com/news/2026/11/23/football-north-dakota-enters-fcs-playoffs-ranked-no-9-in-both-major-polls.aspx",
-          "title": "North Dakota enters FCS playoffs ranked No. 9 in both major polls",
-          "publisher": "University of North Dakota Athletics",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTg78jOmhS9NkEmNH1MG54iSBLUYmYHT4czleD-q67r77hVJXarCzilgM-4OCQ"
-        },
-        {
-          "url": "https://www.dimers.com/cfb/news/idaho-state-vs-north-dakota-prediction-11-28-2026-ac",
-          "title": "Idaho State vs. North Dakota prediction favors Fighting Hawks in Week 13, 2026",
-          "publisher": "Dimers",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZUkGrMMAlvqmInypfCe5rI9icwDja9jiGJWewWiDX3VRYW-ObY8Z98ypeEmo"
-        }
-      ]
-    },
-    {
-      "query": "kennesaw st vs wku",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:10:00Z",
-      "related_news_urls": [
-        "https://www.sportsgambler.com/betting-tips/ncaaf/kennesaw-state-owls-vs-western-kentucky-hilltoppers-prediction-odds-2026-11-28/",
-        "https://bgdailynews.com/2026/11/27/tops-aim-to-finish-strong-against-owls/",
-        "https://wkuherald.com/99780/sports/wku-football-caps-off-season-for-senior-day-showdown-against-kennesaw-state/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiEAvegaR4CRlqLMOfPMpg7Y3OVmSTKr-MU394z0Rltdg79IcxxOpspHf2jKI",
-      "image_credit": "Sportsgambler",
-      "news": [
-        {
-          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/kennesaw-state-owls-vs-western-kentucky-hilltoppers-prediction-odds-2026-11-28/",
-          "title": "Kennesaw State vs Western Kentucky Prediction, Picks & Odds | 28 Nov 2026",
-          "publisher": "Sportsgambler",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTiEAvegaR4CRlqLMOfPMpg7Y3OVmSTKr-MU394z0Rltdg79IcxxOpspHf2jKI"
-        },
-        {
-          "url": "https://bgdailynews.com/2026/11/27/tops-aim-to-finish-strong-against-owls/",
-          "title": "Tops aim to finish strong against Owls",
-          "publisher": "Bowling Green Daily News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTLdQDCc6IlpjMkhSWMt-6coRLshj8RDYed5eum_3y6rOiRzX7-xDGGr6jgUiA"
-        },
-        {
-          "url": "https://wkuherald.com/99780/sports/wku-football-caps-off-season-for-senior-day-showdown-against-kennesaw-state/",
-          "title": "WKU Football caps off season for senior day showdown against Kennesaw State",
-          "publisher": "WKUHerald.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSi-0lxdZ96UhIygR5JFhW_esNkWRaiBuIqIXVUT2l2biWkhNl5NXZUaRRwQm8"
-        }
-      ]
-    },
-    {
-      "query": "southern miss vs old dominion",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T17:10:00Z",
-      "related_news_urls": [
-        "https://www.tallahatchienews.ms/node/483454",
-        "https://www.pilotonline.com/2026/11/27/odu-enters-season-finale-against-southern-miss-looking-to-end-on-a-high-note/",
-        "https://247sports.com/college/southern-mississippi/article/anderson-backs-the-scheme-but-can-bolden-get-southern-miss-to-execute-it-293341695/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0",
-      "image_credit": "tallahatchienews.ms",
-      "news": [
-        {
-          "url": "https://www.tallahatchienews.ms/node/483454",
-          "title": "(LIVEFREEE:TV Southern Miss vs Old Dominion free Live Football Coverage On (Nov 28, 2026)",
-          "publisher": "tallahatchienews.ms",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSw219bYHkbj9DFYQg_sRucn-ludx6MHiGZzfhGcDStpeACMbS_TGgWfnxEwx0"
-        },
-        {
-          "url": "https://www.pilotonline.com/2026/11/27/odu-enters-season-finale-against-southern-miss-looking-to-end-on-a-high-note/",
-          "title": "ODU enters season finale against Southern Miss looking to end on a high note",
-          "publisher": "The Virginian-Pilot",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxreJVA_PkxudCMor3Amk9K4_FNqf2dDWCxyl-4ovuycWPr8DJpVYvG5jf2mQ"
-        },
-        {
-          "url": "https://247sports.com/college/southern-mississippi/article/anderson-backs-the-scheme-but-can-bolden-get-southern-miss-to-execute-it-293341695/",
-          "title": "Anderson Backs The Scheme, But Can Bolden Get Southern Miss To Execute It?",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ_BuCkGzWH0TcXiWTrNtlwWukeyklNx4xAGu5n0bAzibOKnH-qeShYBT9NFDo"
-        }
-      ]
-    },
-    {
-      "query": "crystal palace",
+      "query": "nfl mock draft",
       "approx_searches": "200+",
-      "published_at": "2026-11-28T17:10:00Z",
+      "published_at": "2026-11-28T17:40:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/articles/cmwy85vljzyxo",
-        "https://www.telegraph.co.uk/betting/football/crystal-palace-vs-hull-city-predictions-tips-29-11-2026/",
-        "https://www.tufutbolero.com/en/news/crystal-palace-hull-city-palace-arrive-on-five-straight-fe80d5"
+        "https://www.thefalcoholic.com/atlanta-falcons-draft/98780/falcons-draft-2027-way-too-early-nfl-mock-draft-3-0-trinidad-chambliss-melvin-siani",
+        "https://www.kgw.com/video/sports/locked-on/lo-atlanta/falcons-show/atlanta-falcons-cant-be-complacent-at-qb-ranking-their-biggest-offseason-needs/535-40f4638e-34c2-4064-bc0b-54aea911e32f",
+        "https://www.miamiherald.com/sports/article318240603.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTrhgUhxcQH5nMY1aV5zAfdlWmuxCdhye0Hs2br3Ncn-11nLDc5ZXiXQeBIY",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQwCVu2oPCdJW5vL61q_I3pXJC0guVIZHAyuEgHIR_KP0kLspxV18oRxQerA",
+      "image_credit": "The Falcoholic",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/articles/cmwy85vljzyxo",
-          "title": "Crystal Palace v Hull City: Key stats and talking points",
-          "publisher": "BBC",
+          "url": "https://www.thefalcoholic.com/atlanta-falcons-draft/98780/falcons-draft-2027-way-too-early-nfl-mock-draft-3-0-trinidad-chambliss-melvin-siani",
+          "title": "Falcons Draft 2027: Way-Too-Early NFL Mock Draft 3.0",
+          "publisher": "The Falcoholic",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjTrhgUhxcQH5nMY1aV5zAfdlWmuxCdhye0Hs2br3Ncn-11nLDc5ZXiXQeBIY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvQwCVu2oPCdJW5vL61q_I3pXJC0guVIZHAyuEgHIR_KP0kLspxV18oRxQerA"
         },
         {
-          "url": "https://www.telegraph.co.uk/betting/football/crystal-palace-vs-hull-city-predictions-tips-29-11-2026/",
-          "title": "Crystal Palace vs Hull City predictions: Bet builder and tips for Sunday’s Premier League match",
-          "publisher": "The Telegraph",
+          "url": "https://www.kgw.com/video/sports/locked-on/lo-atlanta/falcons-show/atlanta-falcons-cant-be-complacent-at-qb-ranking-their-biggest-offseason-needs/535-40f4638e-34c2-4064-bc0b-54aea911e32f",
+          "title": "Atlanta Falcons Can't Be COMPLACENT at QB: Ranking Their BIGGEST Offseason Needs",
+          "publisher": "KGW",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-DokFu_awUhQ3uiT0sbqT8xLGSlKjj1Mog3ZNrpcOQLCxyDs5UGFBqpFrE8M"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQzRZMUmNZIUJsTfIWyqIduV8jtTYBEyDBGjIQ4Lv9M_YrwwCI2dNlVuwcO0mA"
         },
         {
-          "url": "https://www.tufutbolero.com/en/news/crystal-palace-hull-city-palace-arrive-on-five-straight-fe80d5",
-          "title": "Crystal Palace-Hull City: Palace arrive on five straight defeats",
-          "publisher": "Tu Futbolero",
+          "url": "https://www.miamiherald.com/sports/article318240603.html",
+          "title": "Falcons Recap: Contract extensions, mock drafts, Hall of Fame votes",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEFXlaq7SJeUSvYIbcJdrL39oAQgXwUvMLVHvLpbDNGXS5Iioc6b5l8Be1u28"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQeEjIApIILlJlSW93rK9Cduq5bTwWfG3B9d5uhW8LMvIOexALsJEzuGQBDoY"
         }
       ]
     },
     {
-      "query": "army navy game",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T17:10:00Z",
+      "query": "earthquake now",
+      "approx_searches": "200000+",
+      "published_at": "2026-11-28T17:30:00Z",
       "related_news_urls": [
-        "https://www.wearethemighty.com/entertainment/how-the-army-navy-game-inspired-the-black-friday-nickname/",
-        "https://www.chicagotribune.com/2026/11/26/vintage-chicago-tribune-army-navy-game-soldier-field/",
-        "https://www.chicagotribune.com/2026/11/27/november-27-chicago-history/"
+        "https://www.nbclosangeles.com/news/local/preliminary-5-2-earthquake-rattles-manhattan-beach/3975678/",
+        "https://www.latimes.com/california/story/2026-11-22/california-earthquake-magnitude-3-3-quake-rumbles-near-el-segundo",
+        "https://www.cbsnews.com/losangeles/news/4-7-earthquake-manhattan-beach/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTk-AX5odwP5nN9Gmw64gCYYM0v929Pwp5gBR5i5APmsOmWb4-yh_OeyAWCI",
-      "image_credit": "We Are The Mighty",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww",
+      "image_credit": "NBC Los Angeles",
       "news": [
         {
-          "url": "https://www.wearethemighty.com/entertainment/how-the-army-navy-game-inspired-the-black-friday-nickname/",
-          "title": "How the Army-Navy Game inspired the ‘Black Friday’ nickname",
-          "publisher": "We Are The Mighty",
+          "url": "https://www.nbclosangeles.com/news/local/preliminary-5-2-earthquake-rattles-manhattan-beach/3975678/",
+          "title": "Preliminary 5.2 earthquake rattles Manhattan Beach",
+          "publisher": "NBC Los Angeles",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYTk-AX5odwP5nN9Gmw64gCYYM0v929Pwp5gBR5i5APmsOmWb4-yh_OeyAWCI"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQkwtyJu8rVdCcHhNbum6S5oXDkC76496v0nhdusVFC_O_u0DXnFdldc03v-ww"
         },
         {
-          "url": "https://www.chicagotribune.com/2026/11/26/vintage-chicago-tribune-army-navy-game-soldier-field/",
-          "title": "Vintage Chicago Tribune: A century ago, the Army-Navy game was at Soldier Field",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.latimes.com/california/story/2026-11-22/california-earthquake-magnitude-3-3-quake-rumbles-near-el-segundo",
+          "title": "Magnitude 3.3 earthquake rumbles near El Segundo",
+          "publisher": "Los Angeles Times",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7d9Xtd1DCg_2WKDOrtiFbPfyEFhVt4Ed9RNpIlLQBGu6zEsIxovFMtR-AQIw"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEXsybt3xBcQQSOqet4LD5h6HY22jw3BovH8U_qCAiuw-HW58aw1kZxifu0Fs"
         },
         {
-          "url": "https://www.chicagotribune.com/2026/11/27/november-27-chicago-history/",
-          "title": "Today in Chicago History: Soldier Field is dedicated during an Army vs. Navy game before 110,000 fans",
-          "publisher": "Chicago Tribune",
+          "url": "https://www.cbsnews.com/losangeles/news/4-7-earthquake-manhattan-beach/",
+          "title": "Preliminary 4.7 earthquake rocks off Los Angeles County coast",
+          "publisher": "CBS News",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT9U69hfBjXcvVJNScxZwWzjlEfSEotJu_hBSyBjE-r-JZoGFP6G9MExln_VeY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKa7XDDYnupUfTcx-zYB5FTX2nFVjV9drU3UcKh4Hc6To3TPPbnX4uZNFYFIM"
         }
       ]
     },
     {
-      "query": "malachi nelson",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T17:00:00Z",
+      "query": "earthquake",
+      "approx_searches": "200000+",
+      "published_at": "2026-11-28T17:30:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/notre-dame/longformarticle/pre-game-quick-hits-no-4-notre-dame-fighting-irish-college-football-team-syracuse-orange-293437467/",
-        "https://www.cbssports.com/betting/news/notre-dame-syracuse-prediction-odds-time-2026-rivalry-week-college-football-picks-best-bets/",
-        "https://www.localsyr.com/orange-nation/dome-sellout-what-you-need-to-know-about-parking-saturday/"
+        "https://watchers.news/epicenter/fiber-optic-sensing-small-california-earthquake-rupture/",
+        "https://news.rice.edu/news/2026/new-technology-unearths-surprising-complexity-small-earthquakes",
+        "https://en.sedaily.com/business/2026/11/27/buried-telecom-fiber-turns-into-7000-seismometers-in-korean"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO_yyJOjbSSNPa8BnjKauBTVV4H2PQL_8Gfa4vM5xrxvER12oq1F2M6OoM7X0",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnIMu_Vs01GPUtDw65Lb7cyuwBffKaQCN4JZbMK4K_YRXllcd7W7tM3FPxnA",
+      "image_credit": "The Watchers - Watching the world evolve and transform",
       "news": [
         {
-          "url": "https://247sports.com/college/notre-dame/longformarticle/pre-game-quick-hits-no-4-notre-dame-fighting-irish-college-football-team-syracuse-orange-293437467/",
-          "title": "Pre-Game Quick Hits: No. 4 Notre Dame @ Syracuse",
-          "publisher": "247Sports",
+          "url": "https://watchers.news/epicenter/fiber-optic-sensing-small-california-earthquake-rupture/",
+          "title": "Fiber-optic sensing reveals hidden rupture stages inside a small California earthquake",
+          "publisher": "The Watchers - Watching the world evolve and transform",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRO_yyJOjbSSNPa8BnjKauBTVV4H2PQL_8Gfa4vM5xrxvER12oq1F2M6OoM7X0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxnIMu_Vs01GPUtDw65Lb7cyuwBffKaQCN4JZbMK4K_YRXllcd7W7tM3FPxnA"
         },
         {
-          "url": "https://www.cbssports.com/betting/news/notre-dame-syracuse-prediction-odds-time-2026-rivalry-week-college-football-picks-best-bets/",
-          "title": "Notre Dame vs. Syracuse prediction, odds, time: Rivalry Week college football picks from proven model",
-          "publisher": "CBS Sports",
+          "url": "https://news.rice.edu/news/2026/new-technology-unearths-surprising-complexity-small-earthquakes",
+          "title": "New technology unearths surprising complexity in small earthquakes",
+          "publisher": "Rice University",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRojyHjcwukKPsF5vGKFJuF47PwckOMTXOq51ytSdK4M7IYMWTxCBQ_g8IEwhk"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgSYAQb5U0r_qD3sAYQQbYOHVNFe6AxBKSIRpQf49BDJ1TXd-S2aY8rYz6PdY"
         },
         {
-          "url": "https://www.localsyr.com/orange-nation/dome-sellout-what-you-need-to-know-about-parking-saturday/",
-          "title": "Dome sellout: What you need to know about parking Saturday",
-          "publisher": "WSYR",
+          "url": "https://en.sedaily.com/business/2026/11/27/buried-telecom-fiber-turns-into-7000-seismometers-in-korean",
+          "title": "Buried Telecom Fiber Turns Into 7,000 Seismometers in Korean Study",
+          "publisher": "Seoul Economic Daily",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIUWiyoetN96mxJBM7HE5KQ1an3rnBfOvIjiUTz67xWyJ843O8U8sbJPOsMA"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThPVXEq16jEAJ8uSZv_4T-PKu0sXDTiQijWxaYbJo5qfYoRhFwyDOTBkPV-0o"
         }
       ]
     },
     {
-      "query": "ryan day",
+      "query": "earthquake california today",
+      "approx_searches": "10000+",
+      "published_at": "2026-11-28T17:30:00Z",
+      "related_news_urls": [
+        "https://www.kcra.com/article/tuolumne-county-earthquake/74554032",
+        "https://www.yahoo.com/news/weather-news/articles/two-earthquakes-jolt-california-overnight-154411466.html",
+        "https://www.sacbee.com/news/california/earthquakes/article318288028.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfp81V4DEkqQt7jpxkr-qYUpUV9rhtLST0blV9e7HBg-Z95NH7trPXiNCbze0",
+      "image_credit": "KCRA",
+      "news": [
+        {
+          "url": "https://www.kcra.com/article/tuolumne-county-earthquake/74554032",
+          "title": "3.0-magnitude earthquake hits in Tuolumne County, USGS says",
+          "publisher": "KCRA",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSfp81V4DEkqQt7jpxkr-qYUpUV9rhtLST0blV9e7HBg-Z95NH7trPXiNCbze0"
+        },
+        {
+          "url": "https://www.yahoo.com/news/weather-news/articles/two-earthquakes-jolt-california-overnight-154411466.html",
+          "title": "Two earthquakes jolt California overnight Saturday as rumblings increase in size",
+          "publisher": "Yahoo",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTqhUtIWNHa-CZesTXa--5cJjvsZEUZuqYyrUJCQFFfQvQ8tdhrWTDBwse6ghI"
+        },
+        {
+          "url": "https://www.sacbee.com/news/california/earthquakes/article318288028.html",
+          "title": "3.2 magnitude earthquake shakes near San Lucas, CA on Nov. 27",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTvd3waHF_phM_AaJ1EEd9TPGzsc8wPXYk_huPGQy-5g9aO9MiszZHgzKhYZpk"
+        }
+      ]
+    },
+    {
+      "query": "earthquakes",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T17:30:00Z",
+      "related_news_urls": [
+        "https://www.foxweather.com/extreme-weather/strong-magnitude-6-7-earthquake-strikes-far-east-russia",
+        "https://www.voiceofemirates.com/en/news/2026/11/28/a-6-7-magnitude-earthquake-strikes-near-yelizovo-in-the-kamchatka-peninsula-of-eastern-russia/",
+        "https://egyptian-gazette.com/world/6-7-magnitude-quake-hits-russias-kamchatka-region/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLEf--ZbNuJs06MnVBiqz0VYz7L4wY-GGhRelTSx4ftPWG2KQJ7VpcPEfHWqs",
+      "image_credit": "FOX Weather",
+      "news": [
+        {
+          "url": "https://www.foxweather.com/extreme-weather/strong-magnitude-6-7-earthquake-strikes-far-east-russia",
+          "title": "Strong magnitude 6.7 earthquake strikes far-east Russia along active Pacific Ring of Fire",
+          "publisher": "FOX Weather",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRLEf--ZbNuJs06MnVBiqz0VYz7L4wY-GGhRelTSx4ftPWG2KQJ7VpcPEfHWqs"
+        },
+        {
+          "url": "https://www.voiceofemirates.com/en/news/2026/11/28/a-6-7-magnitude-earthquake-strikes-near-yelizovo-in-the-kamchatka-peninsula-of-eastern-russia/",
+          "title": "A 6.7 magnitude earthquake strikes near Yelizovo in the Kamchatka Peninsula of eastern Russia",
+          "publisher": "صوت الإمارات",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTs3fwNnh5ap5R-MlJeRp_WB1Tdvxd8PADgSqxGydXA4XEul_nX1r7Kwdxv0n4"
+        },
+        {
+          "url": "https://egyptian-gazette.com/world/6-7-magnitude-quake-hits-russias-kamchatka-region/",
+          "title": "6.7-magnitude quake hits Russia’s Kamchatka region",
+          "publisher": "Egyptian Gazette",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ98Gm0T5jPZvqlmtQe_5zXiM47Z5DaAgnPZCXJVrMYqhTRJ4WXCWh2QetloQw"
+        }
+      ]
+    },
+    {
+      "query": "luke fahey",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T17:30:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/ohio-state-michigan-rivalry-quarterback-120007884.html",
+        "https://www.elevenwarriors.com/ohio-state-football/2026/11/165763/luke-fahey-troy-smith-and-an-unusual-coincidence-in-the-game-against-michigan",
+        "https://buckeyeswire.usatoday.com/story/sports/college/buckeyes/football/2026/11/25/ohio-state-football-troy-smith-victory-bell-ringer/92952917007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1vZHPtjZ9HWM37WvqrEsiJgHsJjjYQMTPfRqdTI4HSpeVuEZK6-kJ9H0SqLY",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/ohio-state-michigan-rivalry-quarterback-120007884.html",
+          "title": "The Ohio State-Michigan Rivalry Has a New Quarterback Storyline Nobody Expected",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1vZHPtjZ9HWM37WvqrEsiJgHsJjjYQMTPfRqdTI4HSpeVuEZK6-kJ9H0SqLY"
+        },
+        {
+          "url": "https://www.elevenwarriors.com/ohio-state-football/2026/11/165763/luke-fahey-troy-smith-and-an-unusual-coincidence-in-the-game-against-michigan",
+          "title": "Troy Smith, Luke Fahey and an Unusual Coincidence in the Game Against Michigan",
+          "publisher": "Eleven Warriors",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTO9BykXzcFr9RVTWn7STXfi3OTAiKz3G_7UXs3mh2Jy2FpsfvP5Gkame_Y158"
+        },
+        {
+          "url": "https://buckeyeswire.usatoday.com/story/sports/college/buckeyes/football/2026/11/25/ohio-state-football-troy-smith-victory-bell-ringer/92952917007/",
+          "title": "Troy Smith will be the final Victory Bell ringer for the 2026 season",
+          "publisher": "Buckeyes Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRUzoQe10cpAANq9QWVbCog6VBxECkVAqY4n_qjyoq5yQiy8DcTpCobOXlMJ9c"
+        }
+      ]
+    },
+    {
+      "query": "temblor hoy",
       "approx_searches": "2000+",
-      "published_at": "2026-11-28T17:00:00Z",
+      "published_at": "2026-11-28T17:30:00Z",
       "related_news_urls": [
-        "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/28/ryan-day-record-michigan-ohio-state-the-game/92986570007/",
-        "https://www.landgrantholyland.com/ohio-state-football/126921/column-what-is-even-the-argument-to-bring-ryan-day-back-in-2027-ohio-state-buckeyes-football",
-        "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-football-coach-ryan-day-previews-michigan-wolverines-matchup-293248007/"
+        "https://www.pulzo.com/mundo/estados-unidos/sismo-de-magnitud-4-4-sacude-colorado-y-nuevo-mexico-epicentro-cerca-de-weston-segun-usgs-PP5363969A",
+        "https://www.minuto60.com/mundo/terremoto-hoy-25-noviembre-ee-uu-magnitud-epicentro/19558",
+        "https://www.elnuevodia.com.co/mundo/fuerte-sismo-se-registro-en-el-mundo-hoy-25-de-noviembre-esto-se-sabe-541652"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoBY3sk80KRCFk0y3lPWvniutknHKfV0oKHpQYeMYO_OFcpEr0BH-uFKvAzg0",
-      "image_credit": "USA Today",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6A4vfwa840gnlNFh_YBZePiNvUyZWsxXafkfPKfLui0qfBb3d7XiAVt5gjU",
+      "image_credit": "Pulzo",
       "news": [
         {
-          "url": "https://www.usatoday.com/story/sports/ncaaf/bigten/2026/11/28/ryan-day-record-michigan-ohio-state-the-game/92986570007/",
-          "title": "Ryan Day has struggled vs Michigan. What is Ohio State coach's record vs Wolverines?",
-          "publisher": "USA Today",
+          "url": "https://www.pulzo.com/mundo/estados-unidos/sismo-de-magnitud-4-4-sacude-colorado-y-nuevo-mexico-epicentro-cerca-de-weston-segun-usgs-PP5363969A",
+          "title": "Sismo de magnitud 4,4 sacude la frontera entre Colorado y Nuevo México la madrugada del 25 de noviembre de 2026",
+          "publisher": "Pulzo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQoBY3sk80KRCFk0y3lPWvniutknHKfV0oKHpQYeMYO_OFcpEr0BH-uFKvAzg0"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTp6A4vfwa840gnlNFh_YBZePiNvUyZWsxXafkfPKfLui0qfBb3d7XiAVt5gjU"
         },
         {
-          "url": "https://www.landgrantholyland.com/ohio-state-football/126921/column-what-is-even-the-argument-to-bring-ryan-day-back-in-2027-ohio-state-buckeyes-football",
-          "title": "Column: What is the argument to bring Ryan Day back in 2027?",
-          "publisher": "Land-Grant Holy Land",
+          "url": "https://www.minuto60.com/mundo/terremoto-hoy-25-noviembre-ee-uu-magnitud-epicentro/19558",
+          "title": "Fuerte temblor hoy 25 de noviembre en Estados Unidos: magnitud y epicentro del sismo",
+          "publisher": "Minuto60",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSC1tjjeY3qLOSopyNPzSjgvJtEAy5Vik2GFcMPYsgmsy-dXg7yr-jkS4Q_oU"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRxW_mtfmsu4hTHl1sWBfSIC83csv6aSmSZa73FfEz3vwg6ZHn7kPJQGr0S8q8"
         },
         {
-          "url": "https://247sports.com/college/ohio-state/longformarticle/ohio-state-buckeyes-football-coach-ryan-day-previews-michigan-wolverines-matchup-293248007/",
-          "title": "Day Full Video: Ohio State coach: 'We need to win this game. That's the No. 1 goal'",
-          "publisher": "247Sports",
+          "url": "https://www.elnuevodia.com.co/mundo/fuerte-sismo-se-registro-en-el-mundo-hoy-25-de-noviembre-esto-se-sabe-541652",
+          "title": "Fuerte sismo se registró en el mundo hoy 25 de noviembre: esto se sabe",
+          "publisher": "El Nuevo Dia (Colombia)",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdqcuJ-HkhLR-C53dyHVD84rsGdXqm6PC1SRuh4yyhqJsK1vJQydoUA4vXUJQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRB_rCSutgEBru5WnxnRcNwb0SVhol4rb5D071m37WfUQSUT3rGShoL52FFq3o"
+        }
+      ]
+    },
+    {
+      "query": "earthquake san diego",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T17:30:00Z",
+      "related_news_urls": [
+        "https://www.nbcsandiego.com/news/local/3-6-quake-reported-eastern-san-diego-county/4106824/",
+        "https://www.cbs8.com/article/weather/earthquakes/did-you-feel-it-earthquake-recorded-near-mount-laguna/509-05997294-f55c-4b0f-9a08-0a60ba15232c",
+        "https://www.sacbee.com/news/california/earthquakes/article318263485.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQowMK32qOvO4D_Ov6jF4ry-2oWa4t5kqIu3jk2astZkY0AUtqGMFC0yMSo9iQ",
+      "image_credit": "NBC 7 San Diego",
+      "news": [
+        {
+          "url": "https://www.nbcsandiego.com/news/local/3-6-quake-reported-eastern-san-diego-county/4106824/",
+          "title": "3.6 quake reported in eastern San Diego County near Mount Laguna",
+          "publisher": "NBC 7 San Diego",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQowMK32qOvO4D_Ov6jF4ry-2oWa4t5kqIu3jk2astZkY0AUtqGMFC0yMSo9iQ"
+        },
+        {
+          "url": "https://www.cbs8.com/article/weather/earthquakes/did-you-feel-it-earthquake-recorded-near-mount-laguna/509-05997294-f55c-4b0f-9a08-0a60ba15232c",
+          "title": "Did you feel it? Earthquake recorded near Mount Laguna",
+          "publisher": "cbs8.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvmmN2rZ4TNHc3YFHS1mSsPrtqYRfD8Sen8sRtkbVi3qeNhMznyPX0o-_I1-s"
+        },
+        {
+          "url": "https://www.sacbee.com/news/california/earthquakes/article318263485.html",
+          "title": "Nov. 25: Earthquake measuring 2.8 shakes region near Ferndale, CA",
+          "publisher": "Sacramento Bee",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRmYg4z5Vuj_cen2YnaVpKKdx56zbI4DAAUDr5mMazGnOI9rYQl5aSiEPfi0nk"
         }
       ]
     }
