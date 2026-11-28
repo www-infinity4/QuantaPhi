@@ -3,83 +3,48 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T04:31:19.830396Z",
+  "checked_at": "2026-11-28T05:01:05.468018Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "tennessee basketball",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T04:10:00Z",
+      "query": "spurs score",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T04:40:00Z",
       "related_news_urls": [
-        "https://247sports.com/college/tennessee/longformarticle/behind-enemy-lines-louisville-basketball-insider-breaks-down-cardinals-matchup-with-tennessee-basketball-in-players-era-las-vegas-293388344/",
-        "https://utsports.com/news/2026/11/27/mens-basketball-hoops-central-9-11-tennessee-vs-25-23-louisville",
-        "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/27/tennessee-vols-basketball-louisville-tv-channel-today-time-players-era/92976217007/"
+        "https://sports.yahoo.com/nba/articles/charles-barkley-says-washington-wizards-114000610.html",
+        "https://www.espn.com/nba/recap/_/gameId/401909325",
+        "https://www.oregonlive.com/blazers/2026/11/joe-freemans-3-takeaways-from-trail-blazers-nba-cup-win-over-spurs.html"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUWafpiKAOypPckjQL0lv3_-e2Xn74SMtZj13TRiC9GBc-vb7ysFBm9CYY5vc",
-      "image_credit": "247Sports",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCy4Uome34VkFx67yZFLZa4EB1f7Yi7FsZYZfsGWq41oQ1IA3eHhw6Bjrw9EE",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://247sports.com/college/tennessee/longformarticle/behind-enemy-lines-louisville-basketball-insider-breaks-down-cardinals-matchup-with-tennessee-basketball-in-players-era-las-vegas-293388344/",
-          "title": "Behind Enemy Lines: Louisville insider breaks down Cardinals' matchup with Tennessee in Vegas",
-          "publisher": "247Sports",
+          "url": "https://sports.yahoo.com/nba/articles/charles-barkley-says-washington-wizards-114000610.html",
+          "title": "Charles Barkley says the Washington Wizards made a trade that proves they don’t know what they’re doing",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUWafpiKAOypPckjQL0lv3_-e2Xn74SMtZj13TRiC9GBc-vb7ysFBm9CYY5vc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCy4Uome34VkFx67yZFLZa4EB1f7Yi7FsZYZfsGWq41oQ1IA3eHhw6Bjrw9EE"
         },
         {
-          "url": "https://utsports.com/news/2026/11/27/mens-basketball-hoops-central-9-11-tennessee-vs-25-23-louisville",
-          "title": "HOOPS CENTRAL: #9/11 Tennessee vs. #25/23 Louisville",
-          "publisher": "University of Tennessee Athletics",
+          "url": "https://www.espn.com/nba/recap/_/gameId/401909325",
+          "title": "Trail Blazers 116-111 Spurs (Nov 25, 2026) Game Recap",
+          "publisher": "ESPN",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSEixi9wZ4x4g-8AQtssHmH_iIn8sC-oRO1HEggyuBc6lBwrzWXAhn7iZomVEc"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRvWcKVRywOQo3yp3NvB9Km-rU1jA7RuWJQGwWNfq95Qwla4cOLwS6JzHC1JSU"
         },
         {
-          "url": "https://www.knoxnews.com/story/sports/college/university-of-tennessee/mens-basketball/2026/11/27/tennessee-vols-basketball-louisville-tv-channel-today-time-players-era/92976217007/",
-          "title": "What channel is Tennessee basketball vs Louisville on today? Time, TV schedule in Players Era",
-          "publisher": "Knoxville News Sentinel",
+          "url": "https://www.oregonlive.com/blazers/2026/11/joe-freemans-3-takeaways-from-trail-blazers-nba-cup-win-over-spurs.html",
+          "title": "Joe Freeman’s 3 takeaways from Trail Blazers’ NBA Cup win over Spurs",
+          "publisher": "OregonLive.com",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOORuzQoQCR4mtrSKCI0xgf_A_LlaY2vlKMEjtN-EOtgUutc3FEZ-JddGrtY"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTO76ru1AX-_tsW8xlJwmQnoniQxc8xTcxcQhy-N_oL93cKb9zOVH8gRHCvbcc"
         }
       ]
     },
     {
-      "query": "devon dampier",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T04:10:00Z",
-      "related_news_urls": [
-        "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
-        "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
-        "https://sports.ksl.com/ncaa/utah/devon-dampier-heisman-utah-2/579164"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU",
-      "image_credit": "The Salt Lake Tribune",
-      "news": [
-        {
-          "url": "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
-          "title": "What needs to happen for Devon Dampier to win the Heisman?",
-          "publisher": "The Salt Lake Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
-          "title": "Who’s winning Heisman Trophy? Devon Dampier moves up, Jeremiah Smith runaway after Week 12",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4yBOTWacYJyfCSoD3HeBT4dIn1_KWm-0v7iL8cBzO9f8juFvre75qDvbxyNI"
-        },
-        {
-          "url": "https://sports.ksl.com/ncaa/utah/devon-dampier-heisman-utah-2/579164",
-          "title": "Devon Dampier’s Heisman moments: The highlight plays and the drives Utah had to have",
-          "publisher": "KSL Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQShx1KVOKy-mmlem9uSQJp5yXDcqoha2a3f8suDLkVondBZJIzebb-JLXoJSA"
-        }
-      ]
-    },
-    {
-      "query": "creighton basketball",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T04:10:00Z",
+      "query": "gonzaga basketball",
+      "approx_searches": "5000+",
+      "published_at": "2026-11-28T04:30:00Z",
       "related_news_urls": [
         "https://www.slipperstillfits.com/general/31696/game-preview-gonzaga-creighton-clash-at-the-players-era-16",
         "https://omaha.com/sports/college/creighton/article_adce0356-71f3-4330-bd4c-a451db03d04f.html",
@@ -112,13 +77,188 @@
       ]
     },
     {
+      "query": "mega millions numbers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T04:30:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
+        "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
+        "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Rises To $673 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE"
+        },
+        {
+          "url": "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
+          "title": "Mega Millions winning numbers for Friday, Nov. 27, 2026",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
+        },
+        {
+          "url": "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/",
+          "title": "PA Lottery ticket worth $100,000 sold in Luzerne County",
+          "publisher": "28/22 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGUrXk3I_kmt30vKapYAgJgHWr-Gfb9TTYy66fhkYB5gOeadH4OtdDyIbRJ0"
+        }
+      ]
+    },
+    {
+      "query": "pat kelsey",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T04:30:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/story/_/id/50609831/louisville-calls-extra-gets-ball-back-game-winner",
+        "https://www.whas11.com/article/sports/basketball/pat-kelsey-rick-pitino-reflect-on-emotional-louisville-st-johns-matchup/417-b5a32b4c-e26f-4156-ac27-a6cd611875f0",
+        "https://gocards.com/news/2026/11/27/mens-basketball-wooley-hits-buzzer-beater-cards-win-93-90-over-st-john-s"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9Lgf-nLkBhqk9QHAshr-ROk7e6OiYsOu5tRrtag2pU8bG4uP-ICQS96re8OM",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/story/_/id/50609831/louisville-calls-extra-gets-ball-back-game-winner",
+          "title": "Louisville calls excessive TO but gets ball back for game-winning 3",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT9Lgf-nLkBhqk9QHAshr-ROk7e6OiYsOu5tRrtag2pU8bG4uP-ICQS96re8OM"
+        },
+        {
+          "url": "https://www.whas11.com/article/sports/basketball/pat-kelsey-rick-pitino-reflect-on-emotional-louisville-st-johns-matchup/417-b5a32b4c-e26f-4156-ac27-a6cd611875f0",
+          "title": "Pat Kelsey, Rick Pitino reflect on emotional Louisville-St. John’s matchup",
+          "publisher": "WHAS11",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdO_2tx01bBXLG1dUDEeG7qtcQuk81lvMhMEY2Dp8i3wL9xpmm-EeImxasuk"
+        },
+        {
+          "url": "https://gocards.com/news/2026/11/27/mens-basketball-wooley-hits-buzzer-beater-cards-win-93-90-over-st-john-s",
+          "title": "Wooley Hits Buzzer-Beater; Cards Win 93-90 Over St. John’s",
+          "publisher": "gocards.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSYyqAkq5t_rkEU2iHzXGbtnxO6whmrEBnxXTFMSI0B0GZDf8zWht3EKGb9cKg"
+        }
+      ]
+    },
+    {
+      "query": "college football playoff bracket",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T04:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
+        "https://www.foxnews.com/outkick-sports/live-chat-big-ten-danger-getting-only-one-college-football-playoff-bid",
+        "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/27/cfp-football-rankings-predictions-live-college-scores-playoff-bracket-week-13/92977811007/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0QN0hCn-jSYca9JaFSPiWo9j4lfrRAFZ61PnbMtkfnettEVm_QXez0qJqRhg",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/college-football/story/_/id/50575185/cfp-playoff-2026-bubble-watch-week-fourth-ranking",
+          "title": "Who's on the College Football Playoff bubble after committee's fourth ranking?",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT0QN0hCn-jSYca9JaFSPiWo9j4lfrRAFZ61PnbMtkfnettEVm_QXez0qJqRhg"
+        },
+        {
+          "url": "https://www.foxnews.com/outkick-sports/live-chat-big-ten-danger-getting-only-one-college-football-playoff-bid",
+          "title": "LIVE CHAT: Is the Big Ten in danger of getting only one College Football Playoff bid?",
+          "publisher": "Fox News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCRIP7arr0T7e9lHERxUSA8FrDhAr9VvC389R4tdlCpqozJ5H_CrLl17qCqHY"
+        },
+        {
+          "url": "https://www.usatoday.com/story/sports/ncaaf/college-football-playoffs/2026/11/27/cfp-football-rankings-predictions-live-college-scores-playoff-bracket-week-13/92977811007/",
+          "title": "CFP rankings live predictions: Iowa blowout first Big Ten Playoff domino",
+          "publisher": "USA Today",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSxS_ZWNUSy8nYpvdgHYMIqVxcN8TftcLUjPMRSsnHDvyaJU9-0bHuoLFxvO5o"
+        }
+      ]
+    },
+    {
+      "query": "texas college football standings",
+      "approx_searches": "20000+",
+      "published_at": "2026-11-28T04:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
+        "https://www.cbssports.com/college-football/news/2026-sec-championship-game-texas-georgia/",
+        "https://sports.yahoo.com/college-football/articles/texas-win-eliminates-tennessee-football-040130673.html"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/tennessee/article/tennessee-vols-football-sec-championship-game-scenarios-tiebreakers-vanderbilt-regular-season-finale-293377687/",
+          "title": "Breaking down Tennessee’s SEC Championship Game scenarios with one game to go",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRPbF-Cr4us4H9wILYI4yEnsADRSYLOzgabefpa5ks48sttqk6nN7pZkg5Z8S4"
+        },
+        {
+          "url": "https://www.cbssports.com/college-football/news/2026-sec-championship-game-texas-georgia/",
+          "title": "2026 SEC Championship Game: Texas gets one last shot at Georgia in contest's final edition",
+          "publisher": "CBS Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqF76CpAHWYjc7xXoOWuCbGtOibqPJ8eSLjZ3edDGoP-gMqmEzN8PAe3efGLY"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/texas-win-eliminates-tennessee-football-040130673.html",
+          "title": "Texas win eliminates Tennessee football from last SEC championship game",
+          "publisher": "Yahoo Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzVx99GXn6BeLVeAKXufJDKnuhlz31MkFHgKvi5WNkfUnc5pttaMM21SCUhSA"
+        }
+      ]
+    },
+    {
+      "query": "devon dampier",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T04:10:00Z",
+      "related_news_urls": [
+        "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
+        "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
+        "https://www.foxsports.com/watch-vertical/fmc-uvdbo5s9vm3o0lqa"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU",
+      "image_credit": "The Salt Lake Tribune",
+      "news": [
+        {
+          "url": "https://www.sltrib.com/sports/utah-utes/2026/11/27/devon-dampiers-heisman-trophy/",
+          "title": "What needs to happen for Devon Dampier to win the Heisman?",
+          "publisher": "The Salt Lake Tribune",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQO3SBcfcutp6qcnKyzMLiHndwbP3EOygY2btzem3mRPx4bPGtUMgaDzjTaDHU"
+        },
+        {
+          "url": "https://www.nytimes.com/athletic/7807427/2026/11/24/heisman-trophy-race-candidates-devon-dampier-jeremiah-smith-week-12/",
+          "title": "Who’s winning Heisman Trophy? Devon Dampier moves up, Jeremiah Smith runaway after Week 12",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR4yBOTWacYJyfCSoD3HeBT4dIn1_KWm-0v7iL8cBzO9f8juFvre75qDvbxyNI"
+        },
+        {
+          "url": "https://www.foxsports.com/watch-vertical/fmc-uvdbo5s9vm3o0lqa",
+          "title": "Devon “Spider-Man” Dampier leads Utah Football to its 11th win of the season",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSePPFxCV-_EnzuukPiG5xg9Ymuoeh6oUKalQmroKmtSjm94AOxge26FU3CBwE"
+        }
+      ]
+    },
+    {
       "query": "heisman odds",
       "approx_searches": "1000+",
       "published_at": "2026-11-28T04:10:00Z",
       "related_news_urls": [
         "https://www.dispatch.com/story/opinion/columns/guest/2026/11/27/jeremiah-smith-ohio-state-the-game-kelly-immel-michigan/92931313007/",
-        "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu",
-        "https://247sports.com/college/ohio-state/article/special-jeremiah-smith-should-overcome-history-become-ohio-state-football-eight-heisman-trophy-winner-293345249/"
+        "https://247sports.com/college/ohio-state/article/special-jeremiah-smith-should-overcome-history-become-ohio-state-football-eight-heisman-trophy-winner-293345249/",
+        "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g",
       "image_credit": "The Columbus Dispatch",
@@ -131,18 +271,53 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQFqSZWlohATUOoh1iknCvwfF7nmhVrGFs2ZY4Wp_XAh4s8T1WqvC8HQOFMU4g"
         },
         {
-          "url": "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu",
-          "title": "A big game with a bigger grudge!",
-          "publisher": "FOX Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6lm4ScWpl_JysHbGoCZjxmUjCjGctmafHckojRj_CmHvXdf2XJwTyOM3c-S0"
-        },
-        {
           "url": "https://247sports.com/college/ohio-state/article/special-jeremiah-smith-should-overcome-history-become-ohio-state-football-eight-heisman-trophy-winner-293345249/",
           "title": "'Special' Jeremiah Smith should overcome history, become Ohio State's eight Heisman Trophy winner",
           "publisher": "247Sports",
           "description": "",
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT44G3FOZJ9GzpW2B4M6h97TAgf5CXXdItdS8SARErHWade-LSDtvaKTV57c-4"
+        },
+        {
+          "url": "https://www.foxsports.com/watch-vertical/fmc-polsng6l5inlycvu",
+          "title": "A big game with a bigger grudge!",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS6lm4ScWpl_JysHbGoCZjxmUjCjGctmafHckojRj_CmHvXdf2XJwTyOM3c-S0"
+        }
+      ]
+    },
+    {
+      "query": "united fidelity bank",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T04:10:00Z",
+      "related_news_urls": [
+        "https://www.cnn.com/2026/11/27/business/united-fidelity-bank-fdic",
+        "https://www.courierpress.com/story/news/local/2026/11/27/federal-government-closes-evansville-based-united-fidelity-bank/92987083007/",
+        "https://www.americanbanker.com/news/regulators-shutter-indiana-based-united-fidelity-bank"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6_-kF44OE4BVjeNelLfAW61pSBSXW_crlToabpzcPLr7ULKewjLFYdX8J1iE",
+      "image_credit": "CNN",
+      "news": [
+        {
+          "url": "https://www.cnn.com/2026/11/27/business/united-fidelity-bank-fdic",
+          "title": "Federal regulators shut $6 billion Indiana lender in biggest bank failure in over two years",
+          "publisher": "CNN",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6_-kF44OE4BVjeNelLfAW61pSBSXW_crlToabpzcPLr7ULKewjLFYdX8J1iE"
+        },
+        {
+          "url": "https://www.courierpress.com/story/news/local/2026/11/27/federal-government-closes-evansville-based-united-fidelity-bank/92987083007/",
+          "title": "Federal government closes Evansville-based United Fidelity Bank",
+          "publisher": "Courier & Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDsS-dij09EfxTgvTojYuIXd3VKfwbMPm9gYFPmSfUGNonjrmMYwHbo4CnRHQ"
+        },
+        {
+          "url": "https://www.americanbanker.com/news/regulators-shutter-indiana-based-united-fidelity-bank",
+          "title": "Regulators shutter Indiana-based United Fidelity bank",
+          "publisher": "American Banker",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8C55uQi5UTu3oylJ6cHMBd6M-LYBtOaerTHd8EhBMGBMI_UW9HscuiuNUxbk"
         }
       ]
     },
@@ -152,8 +327,8 @@
       "published_at": "2026-11-28T04:10:00Z",
       "related_news_urls": [
         "https://sports.yahoo.com/nba/articles/spurs-guards-dylan-harper-deaaron-033203178.html",
-        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/dylan-harper-will-be-available-to-play-vs-lakers",
-        "https://airalamo.com/spurs-lakers-injury-report-harper-fox-and-reaves-status-and-more-in-wemby-luka-mvp-showdown"
+        "https://basketnews.com/news-260360-dylan-harper-deaaron-fox-final-injury-status-for-spurs-vs-lakers-revealed.html",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/dylan-harper-will-be-available-to-play-vs-lakers"
       ],
       "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDIcIx8J2Bn7P3JNdeKuIXh-_9bIUUTqqLiTKhNq8HbIA0MgSMW7QvAkDfTn4",
       "image_credit": "Yahoo Sports",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSDIcIx8J2Bn7P3JNdeKuIXh-_9bIUUTqqLiTKhNq8HbIA0MgSMW7QvAkDfTn4"
         },
         {
+          "url": "https://basketnews.com/news-260360-dylan-harper-deaaron-fox-final-injury-status-for-spurs-vs-lakers-revealed.html",
+          "title": "Dylan Harper, De'Aaron Fox final injury status for Spurs vs Lakers revealed",
+          "publisher": "BasketNews.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRq4CyQgmYJsZmpvUK5a2nA55PHk-HSLpGvHnTsIVDsymbimURdhfZxRCgMNlU"
+        },
+        {
           "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-27/dylan-harper-will-be-available-to-play-vs-lakers",
           "title": "Dylan Harper will be available to play vs Lakers",
           "publisher": "NBC Sports",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS_0v6BftuLoofBx0A0tTKRFbIgC8OGBoi1p6DSX1_wd1vAvUxz27uQwWPgxYA"
-        },
-        {
-          "url": "https://airalamo.com/spurs-lakers-injury-report-harper-fox-and-reaves-status-and-more-in-wemby-luka-mvp-showdown",
-          "title": "Spurs-Lakers injury report: Harper, Fox, and Reaves status and more in Wemby-Luka MVP showdown",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSULNyvCPh-RKmwj8QUY3eskGo5iVifjL5aMuXYhbJ01v6DsX3726Q_O2nBySI"
-        }
-      ]
-    },
-    {
-      "query": "ut austin football",
-      "approx_searches": "20000+",
-      "published_at": "2026-11-28T04:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/college-football/story/_/page/gamedaykickoff112526/week-13-top-games-upsets-preview",
-        "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-        "https://www.ncaa.com/news/football/article/2026-11-25/4-games-storylines-rivalry-week-could-impact-college-football-playoff-bracket"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBpCyhEFy8cCMaQk1qa8r8Yjv1sNlqEGDpmEg5Jf0MEs4V8g93yO_B3wecwfY",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/college-football/story/_/page/gamedaykickoff112526/week-13-top-games-upsets-preview",
-          "title": "Week 13 Game Day Kickoff: Nothing compares to the outright hatred of a rival",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSBpCyhEFy8cCMaQk1qa8r8Yjv1sNlqEGDpmEg5Jf0MEs4V8g93yO_B3wecwfY"
-        },
-        {
-          "url": "https://sports.yahoo.com/college-football/betting/article/week-13-college-football-odds-storylines-best-bets-for-michigan-ohio-state-and-the-weekends-other-big-games-151948923.html",
-          "title": "Week 13 college football odds, storylines: Best bets for Michigan-Ohio State and the weekend's other big games",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNMykENKJii3KgG2R9YlQQoC-Z_DEomS8rmkTOx_819X6MywJUflqok7J-fZk"
-        },
-        {
-          "url": "https://www.ncaa.com/news/football/article/2026-11-25/4-games-storylines-rivalry-week-could-impact-college-football-playoff-bracket",
-          "title": "4 games, storylines from rivalry week that could impact the College Football Playoff bracket",
-          "publisher": "NCAA.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRq9qHk1XES5unQme76zFXG5u2ZPQh77pOap0nmNh4WuTEGvfNjZuMXZrcFbLc"
-        }
-      ]
-    },
-    {
-      "query": "ryan clark",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:50:00Z",
-      "related_news_urls": [
-        "https://www.hitc.com/cam-newton-now-suggests-aaron-rodgers-was-the-reason-another-player-left-the-steelers/",
-        "https://www.aol.com/articles/kind-played-little-dirty-ex-184124000.html",
-        "https://www.essentiallysports.com/nfl-legends-news-cam-newton-apologizes-to-steelers-legend-after-aaron-rodgers-criticism-proves-true-following-qbs-controversial-rant/"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9fa8c6i2--Llekmk7noyiPg6jvRVBBSx8D6EH_fhVfq_0SJo4IUSS0Ag6cMc",
-      "image_credit": "HITC",
-      "news": [
-        {
-          "url": "https://www.hitc.com/cam-newton-now-suggests-aaron-rodgers-was-the-reason-another-player-left-the-steelers/",
-          "title": "Cam Newton now suggests Aaron Rodgers was the reason another player left the Steelers",
-          "publisher": "HITC",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9fa8c6i2--Llekmk7noyiPg6jvRVBBSx8D6EH_fhVfq_0SJo4IUSS0Ag6cMc"
-        },
-        {
-          "url": "https://www.aol.com/articles/kind-played-little-dirty-ex-184124000.html",
-          "title": "‘Kind of Played a Little Dirty’ — Ex-NFL MVP Cam Newton Slams ‘Hypocritical’ Aaron Rodgers for Controversial Comments on Mike McCarthy",
-          "publisher": "AOL.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQck3YtjeGWmkl3h5VVISL9QCFYVs3yKe8-Bla_6AvDX_B5FuImPOSIwBayJ3c"
-        },
-        {
-          "url": "https://www.essentiallysports.com/nfl-legends-news-cam-newton-apologizes-to-steelers-legend-after-aaron-rodgers-criticism-proves-true-following-qbs-controversial-rant/",
-          "title": "Cam Newton Apologizes to Steelers Legend After Aaron Rodgers’ Criticism Proves True Following QB’s Controversial Rant",
-          "publisher": "EssentiallySports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSc2-mUAdmynuHnRu7hCGtUs0X58t8IFOd4w_B1dM3U6SDBLJtyK_ax7viP-ec"
-        }
-      ]
-    },
-    {
-      "query": "cedric coward",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:50:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/video/clip/_/id/50600011/cedric-coward-throws-big-dunk-vs-la-clippers",
-        "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cedric-coward-five-triples-extend-hot-shooting-streak/",
-        "https://www.espn.com/video/clip/_/id/50600626/cedric-coward-gets-hoop-harm"
-      ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG7GFYfvhZsejcT56rMkNelIoohphpTUL-qoWAANiT4XUo1Sg4pZcBTl1HDP0",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50600011/cedric-coward-throws-big-dunk-vs-la-clippers",
-          "title": "Cedric Coward throws down big dunk vs. LA Clippers",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG7GFYfvhZsejcT56rMkNelIoohphpTUL-qoWAANiT4XUo1Sg4pZcBTl1HDP0"
-        },
-        {
-          "url": "https://www.cbssports.com/fantasy/basketball/news/grizzlies-cedric-coward-five-triples-extend-hot-shooting-streak/",
-          "title": "Grizzlies' Cedric Coward: Five triples extend hot shooting streak",
-          "publisher": "CBS Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU"
-        },
-        {
-          "url": "https://www.espn.com/video/clip/_/id/50600626/cedric-coward-gets-hoop-harm",
-          "title": "Cedric Coward gets the hoop and the harm",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTCxi_LQ9u18FvLa2eGPuoIToLlqeYDcJ95WVrj0JeCy5oSzFTRu9HUqHNFack"
-        }
-      ]
-    },
-    {
-      "query": "st john bosco football",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:50:00Z",
-      "related_news_urls": [
-        "https://www.maxpreps.com/news/yqL4BnXf00q9_R-5vmXASQ/maxpreps-top-25-high-school-football-scores-no-9-centennial-faces-no-10-st-john-bosco-in-californias-southern-section-division-1-championship-game.htm",
-        "https://www.usatoday.com/story/sports/high-school/football/2026/11/27/st-john-bosco-football-nike-cleats-before-cif-ss-championship-clash/92988365007/",
-        "https://www.latimes.com/sports/highschool/story/2026-11-25/st-john-bosco-corona-centennial-matchup-highlights-championship-weekend"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqS5FJznJ44kivhoJDuDnrQIYbxJPchijKPrcj_jZidxlDGty__2qKMu8xDD4",
-      "image_credit": "MaxPreps",
-      "news": [
-        {
-          "url": "https://www.maxpreps.com/news/yqL4BnXf00q9_R-5vmXASQ/maxpreps-top-25-high-school-football-scores-no-9-centennial-faces-no-10-st-john-bosco-in-californias-southern-section-division-1-championship-game.htm",
-          "title": "MaxPreps Top 25 high school football scores: No. 9 Centennial faces No. 10 St. John Bosco in California's Southern Section Division 1 championship game",
-          "publisher": "MaxPreps",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRqS5FJznJ44kivhoJDuDnrQIYbxJPchijKPrcj_jZidxlDGty__2qKMu8xDD4"
-        },
-        {
-          "url": "https://www.usatoday.com/story/sports/high-school/football/2026/11/27/st-john-bosco-football-nike-cleats-before-cif-ss-championship-clash/92988365007/",
-          "title": "California high school football power gets surprise from Nike ahead of title game",
-          "publisher": "USA Today",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSzfEp6BxUjfaCyuJ-OIRboxZqbLSMYo4tSg6rwTPrTLScJaC7klfkwASogEDI"
-        },
-        {
-          "url": "https://www.latimes.com/sports/highschool/story/2026-11-25/st-john-bosco-corona-centennial-matchup-highlights-championship-weekend",
-          "title": "St. John Bosco-Centennial matchup highlights championship weekend",
-          "publisher": "Los Angeles Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRYRJKpbnpDiVNvOQfrQlNATDGDouPPj925_UYYTiXW_0QXD8_Lo_6wCEIz-Jk"
-        }
-      ]
-    },
-    {
-      "query": "st aug vs brother martin",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T03:50:00Z",
-      "related_news_urls": [
-        "https://www.mhsaa.com/sports/football/stories/divine-child-comes-back-double-digit-deficit-complete-repeat",
-        "https://www.freep.com/story/sports/high-school/2026/11/27/divine-child-kenowa-hills-score-updates-mhsaa-football-finals--live/92959877007/",
-        "https://www.detroitnews.com/picture-gallery/sports/high-school/2026/11/27/dearborn-divine-child-takes-on-grand-rapids-kenowa-hills-in-div-4/92981694007/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbV1bQm_JQ2pzj4oPAclPCEbrc3TQRTCINbjejjC_H8msH9afhom1-53zylxo",
-      "image_credit": "Michigan High School Athletic Association",
-      "news": [
-        {
-          "url": "https://www.mhsaa.com/sports/football/stories/divine-child-comes-back-double-digit-deficit-complete-repeat",
-          "title": "Divine Child Comes Back from Double-Digit Deficit to Complete Repeat",
-          "publisher": "Michigan High School Athletic Association",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQbV1bQm_JQ2pzj4oPAclPCEbrc3TQRTCINbjejjC_H8msH9afhom1-53zylxo"
-        },
-        {
-          "url": "https://www.freep.com/story/sports/high-school/2026/11/27/divine-child-kenowa-hills-score-updates-mhsaa-football-finals--live/92959877007/",
-          "title": "Divine Child stuns Kenowa Hills with rally in D-4 MHSAA football finals",
-          "publisher": "Detroit Free Press",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS-vvqldNu4ihXzY9BfAebi15V-drFWbBaiIxbLze-MNNWW028pOyRf1mUIoRM"
-        },
-        {
-          "url": "https://www.detroitnews.com/picture-gallery/sports/high-school/2026/11/27/dearborn-divine-child-takes-on-grand-rapids-kenowa-hills-in-div-4/92981694007/",
-          "title": "Dearborn Divine Child defeats Grand Rapids Kenowa Hills in Div. 4",
-          "publisher": "The Detroit News",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzC7t8kKZinYsaJ3Pu-ZUlX1_sK3rUnf4nUxyp-InzjuxllqhlOjy83wAy5OU"
         }
       ]
     }
