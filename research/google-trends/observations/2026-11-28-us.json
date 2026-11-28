@@ -3,21 +3,168 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T05:31:08.520479Z",
+  "checked_at": "2026-11-28T06:01:34.448902Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "morgan scalley",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:40:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/west-virginia/article/what-utahs-morgan-scalley-said-about-wvu-this-week-293259494/",
+        "https://sports.ksl.com/ncaa/utah/morgan-scalleys-utah/579143",
+        "https://247sports.com/college/utah/article/morgan-scalley-post-game-press-conference-tcu-horned-frogs-win-sonny-dykes-293198231/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-jjfvV_NMgk96F1RoDCt3CaIGbQHai7_rYvrzSJ_4jSwq0UeLPXHW9sEDnBE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/west-virginia/article/what-utahs-morgan-scalley-said-about-wvu-this-week-293259494/",
+          "title": "What Utah's Morgan Scalley said about WVU this week",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS-jjfvV_NMgk96F1RoDCt3CaIGbQHai7_rYvrzSJ_4jSwq0UeLPXHW9sEDnBE"
+        },
+        {
+          "url": "https://sports.ksl.com/ncaa/utah/morgan-scalleys-utah/579143",
+          "title": "Takeaways from Morgan Scalley’s West Virginia week press conference",
+          "publisher": "KSL Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDbkYLCnLX8TIoISHgqUOYSdDV7gel50_AGeB-skqZia7p2aTG1ZPk8NnnxOA"
+        },
+        {
+          "url": "https://247sports.com/college/utah/article/morgan-scalley-post-game-press-conference-tcu-horned-frogs-win-sonny-dykes-293198231/",
+          "title": "Morgan Scalley Shares His Thoughts on Utah's Win over TCU",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNp0pGjZKLsijDAfmkoJIBLiJUnzsPDf1u0AQ0Ca45WIuU8HI4bPjsMsNdNG4"
+        }
+      ]
+    },
+    {
+      "query": "gta 6 chapter 3 mission list",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T05:30:00Z",
+      "related_news_urls": [
+        "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+        "https://www.ign.com/wikis/gta-6/Chapter_3_Walkthrough_and_Guide",
+        "https://vocal.media/gamers/what-to-do-before-finishing-chapter-3"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk",
+      "image_credit": "VICE",
+      "news": [
+        {
+          "url": "https://www.vice.com/en/article/gta-6-chapter-3-length-missions-missables/",
+          "title": "How Long Is Chapter 3 in GTA 6? All Missables and Mission List",
+          "publisher": "VICE",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTAbq0ePmrjmYZjWBae47HaCz3zmjJFKVFwpScgOIeDXdwwYDHDf4Xb6pArWjk"
+        },
+        {
+          "url": "https://www.ign.com/wikis/gta-6/Chapter_3_Walkthrough_and_Guide",
+          "title": "Chapter 3 Walkthrough and Guide",
+          "publisher": "IGN",
+          "description": "",
+          "image_url": null
+        },
+        {
+          "url": "https://vocal.media/gamers/what-to-do-before-finishing-chapter-3",
+          "title": "What to Do Before Finishing Chapter 3",
+          "publisher": "Vocal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSwt3f0rgJNS1p68UqNHTLauntzIW5ar5Xq0oM1iUhduxRoU9RLHc-p6Ru_nRg"
+        }
+      ]
+    },
+    {
+      "query": "texas tech basketball",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T05:20:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/mens-college-basketball/game/_/gameId/401920531/texas-tech-oregon",
+        "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/",
+        "https://www.fanduel.com/research/texas-tech-vs-oregon-college-basketball-predictions-odds-picks-best-bets-for-11-26-2026"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGqDSbwJHrVmcqTWX25UdrH_TloXhMDKe8arlVE9IjLQQ5mRjYcBzQIwlmT-o",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/mens-college-basketball/game/_/gameId/401920531/texas-tech-oregon",
+          "title": "Texas Tech 62-59 Oregon (Nov 26, 2026) Final Score",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTGqDSbwJHrVmcqTWX25UdrH_TloXhMDKe8arlVE9IjLQQ5mRjYcBzQIwlmT-o"
+        },
+        {
+          "url": "https://redraiderswire.usatoday.com/story/sports/college/red-raiders/mens-basketball/2026/11/27/texas-tech-vs-oregon-score-red-raiders-rally-to-win-62-59/92987877007/",
+          "title": "Texas Tech rallies to beat Oregon 62-59 in the Players Era",
+          "publisher": "Red Raiders Wire",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUojqYcKi2Y0WT11U53X5vZx3c_Q_AT5_l65SKf4pTrt2fpyRQZK_FbTrTbNM"
+        },
+        {
+          "url": "https://www.fanduel.com/research/texas-tech-vs-oregon-college-basketball-predictions-odds-picks-best-bets-for-11-26-2026",
+          "title": "Texas Tech vs Oregon College Basketball Prediction, Odds, Picks, Best Bets for Nov. 26",
+          "publisher": "FanDuel",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRgjV7AxFE8CJTTa9d_k34PLuWcWI7XUDS839Ssp6RgnSpcDljWpIpNgGU_jac"
+        }
+      ]
+    },
+    {
+      "query": "mega millions winning numbers",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T05:10:00Z",
+      "related_news_urls": [
+        "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
+        "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
+        "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/"
+      ],
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE",
+      "image_credit": "Forbes",
+      "news": [
+        {
+          "url": "https://www.forbes.com/sites/siladityaray/2026/11/25/mega-millions-jackpot-rises-to-673-million-heres-what-the-winner-could-take-home/",
+          "title": "Mega Millions Jackpot Rises To $673 Million—Here’s What The Winner Could Take Home",
+          "publisher": "Forbes",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSkvfhCRFSNx3kcPaCog6hFIFjur_whlefWm26SNlvwCu-SdQM0GFe-nyP77dE"
+        },
+        {
+          "url": "https://www.freep.com/story/news/lottery/2026/11/27/mega-millions-numbers-friday-november-27-2026-results/92662585007/",
+          "title": "Mega Millions winning numbers for Friday, Nov. 27, 2026",
+          "publisher": "Detroit Free Press",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRXHqMIOjFDaagXhUNbfGpgzWHntDfsk9dH1zQxwV76ivmqrwYHmUERhUglC1I"
+        },
+        {
+          "url": "https://www.2822news.com/news/pa-lottery-ticket-worth-100000-sold-in-luzerne-county/",
+          "title": "PA Lottery ticket worth $100,000 sold in Luzerne County",
+          "publisher": "28/22 News",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGUrXk3I_kmt30vKapYAgJgHWr-Gfb9TTYy66fhkYB5gOeadH4OtdDyIbRJ0"
+        }
+      ]
+    },
     {
       "query": "stephon castle",
       "approx_searches": "2000+",
       "published_at": "2026-11-28T05:10:00Z",
       "related_news_urls": [
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/stephon-castle-records-26-4-9-2-1-line-vs-lal",
         "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/it-always-feels-good-when-you-dont-play-your-best/92874128007/",
-        "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/ZwLIF3QWIqnF/"
+        "https://airalamo.com/stephon-castle-s-turnovers-are-the-only-thing-between-him-and-the-nba-s-elite-playmakers"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwFaaEwCuaSeOBuRN2MJ78me7PcW0__QPsaCikx0ccRhi3Z0YHhqNHcAfola4",
-      "image_credit": "Yahoo Sports",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkdHJ2S9OyY_Gkh2JwHPty2AaWU8ExvlfO_52kZtqP14QjiUoxjMO6LJPOmxg",
+      "image_credit": "NBC Sports",
       "news": [
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/stephon-castle-records-26-4-9-2-1-line-vs-lal",
+          "title": "Stephon Castle records 26/4/9/2/1 line vs. LAL",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRkdHJ2S9OyY_Gkh2JwHPty2AaWU8ExvlfO_52kZtqP14QjiUoxjMO6LJPOmxg"
+        },
         {
           "url": "https://sports.yahoo.com/nba/articles/spurs-guard-stephon-castle-elite-214927815.html",
           "title": "Spurs guard Stephon Castle in elite company as stat sheet-stuffing star",
@@ -26,18 +173,81 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTwFaaEwCuaSeOBuRN2MJ78me7PcW0__QPsaCikx0ccRhi3Z0YHhqNHcAfola4"
         },
         {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/20/it-always-feels-good-when-you-dont-play-your-best/92874128007/",
-          "title": "\"It always feels good when you don't play your best …",
-          "publisher": "HoopsHype",
+          "url": "https://airalamo.com/stephon-castle-s-turnovers-are-the-only-thing-between-him-and-the-nba-s-elite-playmakers",
+          "title": "Stephon Castle's turnovers are the only thing between him and the NBA's elite playmakers",
+          "publisher": "Air Alamo",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRG4eHFGO-l_7UnNFmYO7qAKs0yZ6DD8c-_JKASlRLdH3qMQhGhTdiIO9FRFog"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4i6bfGjKogMNRGnte4yu4rGpsuFOZ8fW3IF2A9uOT2Uwa93aou8hslULjpJw"
+        }
+      ]
+    },
+    {
+      "query": "jim caviezel",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T05:10:00Z",
+      "related_news_urls": [
+        "https://collider.com/jim-caviezel-ghost-soldier-action-movie-removed-from-1300-theaters-box-office/",
+        "https://religionunplugged.com/news/2026/11/30/jim-caviezel-in-ghost-soldier-another-faith-based-action-snore-fest",
+        "https://www.cbr.com/ghost-soldier-is-john-wick-meets-ghost-recon/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIKyZwvi2K-jWMHy-xZAWIzmg9oGpHhMqhPSJx9hZz0HkeEhBNE_yfzPg1veQ",
+      "image_credit": "Collider",
+      "news": [
+        {
+          "url": "https://collider.com/jim-caviezel-ghost-soldier-action-movie-removed-from-1300-theaters-box-office/",
+          "title": "Jim Caviezel’s Latest Action Flop Officially Removed From 1,300 Theaters",
+          "publisher": "Collider",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQIKyZwvi2K-jWMHy-xZAWIzmg9oGpHhMqhPSJx9hZz0HkeEhBNE_yfzPg1veQ"
         },
         {
-          "url": "https://www.nytimes.com/athletic/live-blogs/nba-news-schedule-scores-games-live-updates-2026/CzqWv0txVItd/ZwLIF3QWIqnF/",
-          "title": "MURPH at the Bucks-Blazers game!",
-          "publisher": "The New York Times",
+          "url": "https://religionunplugged.com/news/2026/11/30/jim-caviezel-in-ghost-soldier-another-faith-based-action-snore-fest",
+          "title": "Jim Caviezel Stars In ‘Ghost Soldier’: Yet Another Faith-Based Action Snore-Fest",
+          "publisher": "Religion Unplugged",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTuPrlOzRFiYhZ71nCzYN88q9c6nxKsXFe17Jx6aL_oU1V_XboufYrJtk4ZH8"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRkK1QNt9KxD_l1fx1VySfCdIS7FW8Yd90PEDTZuSyOqj87dHLFznITATpte-o"
+        },
+        {
+          "url": "https://www.cbr.com/ghost-soldier-is-john-wick-meets-ghost-recon/",
+          "title": "Taylor Sheridan Star's New Gritty Action Movie Is John Wick Meets Ghost Recon",
+          "publisher": "Comic Book Resources",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVh70L_ygoxFF-dVNyvgFXaRV8iMzn3S6Zp5Tb_mh6W4Z812yvLkGMg9AfXOw"
+        }
+      ]
+    },
+    {
+      "query": "lakers game today",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T05:10:00Z",
+      "related_news_urls": [
+        "https://www.espn.com/nba/story/_/id/50613364/lakers-reaves-available-missing-5-games-heel-bruise",
+        "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/trey-murphy-with-26-and-six-steals-on-friday",
+        "https://bleacherreport.com/articles/25537661-lakers-austin-reaves-says-it-felt-i-broke-my-foot-ahead-return-heel-injury"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjgr5pSZmkus7Ssx0uvDoCzfnfJ7v7NVzT_y4V_D8ODYVKsYKFPojrXuDJaVY",
+      "image_credit": "ESPN",
+      "news": [
+        {
+          "url": "https://www.espn.com/nba/story/_/id/50613364/lakers-reaves-available-missing-5-games-heel-bruise",
+          "title": "Lakers' Austin Reaves available vs. Spurs after missing 5 games with heel bruise",
+          "publisher": "ESPN",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQjgr5pSZmkus7Ssx0uvDoCzfnfJ7v7NVzT_y4V_D8ODYVKsYKFPojrXuDJaVY"
+        },
+        {
+          "url": "https://www.nbcsports.com/fantasy/basketball/player-news/2026-11-28/trey-murphy-with-26-and-six-steals-on-friday",
+          "title": "Trey Murphy with 26 and six steals on Friday",
+          "publisher": "NBC Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS7NbzgO0P01GL_zw6izi3-uFXd3IQD60GIa18Q8T9mE0k1C9EM6ZE2vNljFZw"
+        },
+        {
+          "url": "https://bleacherreport.com/articles/25537661-lakers-austin-reaves-says-it-felt-i-broke-my-foot-ahead-return-heel-injury",
+          "title": "Lakers' Austin Reaves Says It 'Felt Like I Broke My Foot' Ahead of Return from Heel Injury",
+          "publisher": "Bleacher Report",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRA_9zs1cEVvpt6aBUBwEMiGwVwgHGeSGT8WZpPE5ezPX1tFvG9MxzCiPVLaoQ"
         }
       ]
     },
@@ -112,48 +322,13 @@
       ]
     },
     {
-      "query": "spurs coach",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/nba/articles/lakers-biggest-test-coming-not-193737959.html",
-        "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/were-either-going-to-be-contenders-or-were-going-to/92964374007/",
-        "https://www.nytimes.com/athletic/7812789/2026/11/25/jj-redick-lakers-spurs-austin-reaves-injury/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcJjTw6clCIJuPL9Qzc9Y12kUbkE1P0sF-QhHPVSzX4dgAlqeDgEb3xMehNT8",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/nba/articles/lakers-biggest-test-coming-not-193737959.html",
-          "title": "Lakers biggest test is coming, but it’s not Spurs, per JJ Redick",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRcJjTw6clCIJuPL9Qzc9Y12kUbkE1P0sF-QhHPVSzX4dgAlqeDgEb3xMehNT8"
-        },
-        {
-          "url": "https://www.hoopshype.com/story/sports/nba/rumors/2026/11/25/were-either-going-to-be-contenders-or-were-going-to/92964374007/",
-          "title": "“We're either going to be contenders or we're going to …",
-          "publisher": "HoopsHype",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8l3Iv7bEf9ygCJJG3CHr-UkzUNt69eINjQrgvyLCyhrTplsWffVTbLclPnhA"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7812789/2026/11/25/jj-redick-lakers-spurs-austin-reaves-injury/",
-          "title": "JJ Redick knows ‘noise’ is coming, regardless of how Lakers fare on road trip",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQqBxL7rF9VGgRChS7xApWO4Ri62YuO7Hy1-FzW6NT7bxhcrj8rW4EDuojWLaw"
-        }
-      ]
-    },
-    {
       "query": "toumani camara",
       "approx_searches": "200+",
       "published_at": "2026-11-28T05:00:00Z",
       "related_news_urls": [
         "https://www.cbssports.com/fantasy/basketball/news/trail-blazers-toumani-camara-shooting-slump-continues-in-win/",
-        "https://www.rotowire.com/basketball/headlines/toumani-camara-news-shooting-slump-continues-in-win-541137",
-        "https://www.rotowire.com/basketball/headlines/toumani-camara-news-logs-10-points-in-narrow-loss-539692"
+        "https://bsinews.id/en/camara-scoring-slump-blazers-spurs",
+        "https://demokratis.co.id/en/camara-shooting-slump-trail-blazers-win"
       ],
       "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU",
       "image_credit": "CBS Sports",
@@ -166,193 +341,18 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT7SctwXAU_JU39cN-nQsnwfYgHHo3Gt7kgiTImJy792y8ppvkgmCD7XuQVezU"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/toumani-camara-news-shooting-slump-continues-in-win-541137",
-          "title": "Toumani Camara News: Shooting slump continues in win",
-          "publisher": "RotoWire",
+          "url": "https://bsinews.id/en/camara-scoring-slump-blazers-spurs",
+          "title": "Toumani Camara Scores Eight Points in Blazers Win Over Spurs",
+          "publisher": "bsinews.id",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXD2Xfqq5OtQilc_7dMid-em987m_0HHusQ4VreuuCsoAWm0Zu0lrupIN7uow"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBeLwZJUYOrENWqx6sgUkiGO4D1Laq3YyALV9CObqUQkSEEvSNZ3yOeji8oD4"
         },
         {
-          "url": "https://www.rotowire.com/basketball/headlines/toumani-camara-news-logs-10-points-in-narrow-loss-539692",
-          "title": "Toumani Camara News: Logs 10 points in narrow loss",
-          "publisher": "RotoWire",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSXD2Xfqq5OtQilc_7dMid-em987m_0HHusQ4VreuuCsoAWm0Zu0lrupIN7uow"
-        }
-      ]
-    },
-    {
-      "query": "mitch johnson",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/articles/spurs-bench-struggles-nothing-luke-223026858.html",
-        "https://airalamo.com/spurs-shouldnt-shut-door-making-big-trade-just-yet",
-        "https://demokratis.co.id/en/spurs-naz-reid-center-trade"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI5hAe1iOfsgHPoxHMdTtCmpVFUsr4Phv6gqqi9ViVgnizDxKibTL79-tsI0o",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/articles/spurs-bench-struggles-nothing-luke-223026858.html",
-          "title": "Spurs' Bench Struggles Has 'Nothing to Do' With Luke Kornet",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTI5hAe1iOfsgHPoxHMdTtCmpVFUsr4Phv6gqqi9ViVgnizDxKibTL79-tsI0o"
-        },
-        {
-          "url": "https://airalamo.com/spurs-shouldnt-shut-door-making-big-trade-just-yet",
-          "title": "The Spurs shouldn't shut the door on making a big trade just yet",
-          "publisher": "Air Alamo",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR6dsReSOngnuoIO8Ya80ZymK8n3ZoF5tiKhc7Gwjl8wbi6YOMQfwdAVNvCu3I"
-        },
-        {
-          "url": "https://demokratis.co.id/en/spurs-naz-reid-center-trade",
-          "title": "Spurs Explore Naz Reid Trade to Strengthen Center Rotation",
+          "url": "https://demokratis.co.id/en/camara-shooting-slump-trail-blazers-win",
+          "title": "Toumani Camara Struggles From Field in Trail Blazers Win",
           "publisher": "Demokratis.co.id",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ_VvEC1eDdWlBndZjxEpi93jAC5XDvumQ8jsa8t-54vKNU5xVdyEz64uZbr88"
-        }
-      ]
-    },
-    {
-      "query": "italy",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T05:00:00Z",
-      "related_news_urls": [
-        "https://www.espn.com/tennis/story/_/id/50618699/italy-advances-davis-cup-final-win-czech-republic",
-        "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
-        "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGxcm2MdFQJribGEoxzMo-UEgDEgPEcldVXvU5YQvesAC5NpWUQ9zsMvq9-Lw",
-      "image_credit": "ESPN",
-      "news": [
-        {
-          "url": "https://www.espn.com/tennis/story/_/id/50618699/italy-advances-davis-cup-final-win-czech-republic",
-          "title": "Italy advances to Davis Cup final with win over Czech Republic",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSGxcm2MdFQJribGEoxzMo-UEgDEgPEcldVXvU5YQvesAC5NpWUQ9zsMvq9-Lw"
-        },
-        {
-          "url": "https://www.atptour.com/en/news/italy-czechia-davis-cup-finals-2026-sf",
-          "title": "Musetti pulls off double duty, Italy claws into fourth straight Davis Cup final",
-          "publisher": "ATP Tour",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQNLu4M2reyvG-RItWWgvgIqAzqhyzOoTTVz_sF0xP6q7whcxv3LHN8x0wFOl0"
-        },
-        {
-          "url": "https://www.daviscup.com/en/news/italy-semifinal-press-conference-musetti-vavassori",
-          "title": "Volandri: “We were ready to die” for Italy win",
-          "publisher": "Davis Cup",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSOSzM5Wu2WKmP3Tz5Lip7t610QcEJgdc6ScNGpD95Ck890gbN2QHYycT6E4Hs"
-        }
-      ]
-    },
-    {
-      "query": "amy poehler",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T04:50:00Z",
-      "related_news_urls": [
-        "https://www.thewrap.com/creative-content/tv-shows/amy-poehler-tina-fey-roast-los-angeles-thanksgiving/",
-        "https://news.jkn.co.kr/editions/english/post/1127014",
-        "https://www.imdb.com/news/ni66126842/?ref_=int_nwr_1"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3EMB2ssW1h4YBH-qLvvx_h2-5RPbt3bTAWH1aHNVyRmwjA0a8gsV5TnwXBTQ",
-      "image_credit": "TheWrap",
-      "news": [
-        {
-          "url": "https://www.thewrap.com/creative-content/tv-shows/amy-poehler-tina-fey-roast-los-angeles-thanksgiving/",
-          "title": "Amy Poehler and Tina Fey Roast LA Thanksgivings",
-          "publisher": "TheWrap",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3EMB2ssW1h4YBH-qLvvx_h2-5RPbt3bTAWH1aHNVyRmwjA0a8gsV5TnwXBTQ"
-        },
-        {
-          "url": "https://news.jkn.co.kr/editions/english/post/1127014",
-          "title": "Tina Fey and Amy Poehler Join Seth Meyers for NBC Thanksgiving Broadcast : Entertainment : JKN",
-          "publisher": "재경일보",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQHWSGOIVa8UiTADBH8y47LdblPlJNz_VILUG-5ywetpdw3ioEzMR6cZbwOJUQ"
-        },
-        {
-          "url": "https://www.imdb.com/news/ni66126842/?ref_=int_nwr_1",
-          "title": "Late Night with Seth Meyers: The Meyers Family, Tina Fey, Amy Poehler",
-          "publisher": "IMDb",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcStmEfOmuGX1S5ZNRG3EqaZITJ1tZ9ML0C8mxXV6tA3h9hKRHrNopAXCwdOtuA"
-        }
-      ]
-    },
-    {
-      "query": "san diego state basketball",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T04:50:00Z",
-      "related_news_urls": [
-        "https://www.sandiegouniontribune.com/2026/11/27/scouting-report-aztecs-to-face-nations-no-5-ranked-team-in-late-friday-showdown/",
-        "https://www.nytimes.com/athletic/7817339/2026/11/27/texas-tech-vs-san-diego-state-stream-how-to-watch-nov-27/",
-        "https://texastech.com/news/2026/11/27/mens-basketball-no-5-tech-takes-on-sdsu-in-players-era-16-finale"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJc7ElSTrJyr3ycHZdBNFZF04RypNQLx-eItsBYbcgItIWucWx9d0zplRbgm4",
-      "image_credit": "San Diego Union-Tribune",
-      "news": [
-        {
-          "url": "https://www.sandiegouniontribune.com/2026/11/27/scouting-report-aztecs-to-face-nations-no-5-ranked-team-in-late-friday-showdown/",
-          "title": "Scouting Report: Aztecs to face nation’s No. 5-ranked team in late Friday showdown",
-          "publisher": "San Diego Union-Tribune",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSJc7ElSTrJyr3ycHZdBNFZF04RypNQLx-eItsBYbcgItIWucWx9d0zplRbgm4"
-        },
-        {
-          "url": "https://www.nytimes.com/athletic/7817339/2026/11/27/texas-tech-vs-san-diego-state-stream-how-to-watch-nov-27/",
-          "title": "How to watch Texas Tech vs. San Diego State men’s basketball: TV channel and streaming options for November 27",
-          "publisher": "The New York Times",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRQyrwhzh4QT0PK4PrdV1vyGaS3lykG2_3sK-xYr25ong7qdYXFMiBRspHJWX8"
-        },
-        {
-          "url": "https://texastech.com/news/2026/11/27/mens-basketball-no-5-tech-takes-on-sdsu-in-players-era-16-finale",
-          "title": "No. 5 Tech takes on SDSU in Players Era 16 finale - Texas Tech Red Raiders",
-          "publisher": "Texas Tech Red Raiders",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTKUmsdps4TD1g-asxinp3eQApAwc6TjLRKwUKaZl2U4twXxmpRl-gNRi8Mdu8"
-        }
-      ]
-    },
-    {
-      "query": "jimmy fallon",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T04:50:00Z",
-      "related_news_urls": [
-        "https://people.com/star-tracks-friday-november-27-2026-new-celebrity-photos-updated-daily-12280888-12283198",
-        "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140/",
-        "https://deadline.com/2026/11/justin-timberlake-jimmy-fallon-thanksgiving-1237234321/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkB_O2yPFir0HX2xm7dyDRsn6cJfWMcucz_bT-nsBIReTekKErECWZml98Ex8",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/star-tracks-friday-november-27-2026-new-celebrity-photos-updated-daily-12280888-12283198",
-          "title": "Celebrity Photos Updated Daily: Justin Timberlake, Jimmy Fallon, Miranda Lambert, Tina Fey, Amy Poehler and More",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkB_O2yPFir0HX2xm7dyDRsn6cJfWMcucz_bT-nsBIReTekKErECWZml98Ex8"
-        },
-        {
-          "url": "https://www.rollingstone.com/music/music-news/justin-timberlake-upcoming-doc-series-interview-fallon-1235665140/",
-          "title": "Watch Justin Timberlake Reluctantly Sing Backstreet Boys on ‘Fallon’: ‘This is Sacrilegious’",
-          "publisher": "Rolling Stone",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdAcgMGfFKOsiVBUBEiGNeoV-Vu2Gvlzadu1LOtsCxXl-VrgDykTkZd50DTU"
-        },
-        {
-          "url": "https://deadline.com/2026/11/justin-timberlake-jimmy-fallon-thanksgiving-1237234321/",
-          "title": "Justin Timberlake Shares Thanksgiving Dish On New Apple TV Doc Series",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7KC2qWZ-qIhh_iJKTseecXpdKyLqvalwxqTxkWanisKXAxmXm6e3cGGt4Wng"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTBeLwZJUYOrENWqx6sgUkiGO4D1Laq3YyALV9CObqUQkSEEvSNZ3yOeji8oD4"
         }
       ]
     }
