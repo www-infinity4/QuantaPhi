@@ -3,28 +3,100 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T08:31:06.293582Z",
+  "checked_at": "2026-11-28T09:01:18.934705Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
+    {
+      "query": "中選會",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T08:40:00Z",
+      "related_news_urls": [],
+      "image_url": null,
+      "image_credit": "",
+      "news": []
+    },
+    {
+      "query": "台灣選舉",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T08:40:00Z",
+      "related_news_urls": [
+        "https://www.dw.com/zh-hant/%E5%8F%B0%E7%81%A3%E5%9C%B0%E6%96%B9%E9%81%B8%E8%88%89%E5%89%8D%E5%A4%95-%E8%A7%A3%E6%94%BE%E8%BB%8D30%E6%9E%B6%E6%AC%A1%E8%BB%8D%E6%A9%9F%E5%9C%A8%E5%8F%B0%E6%B5%B7%E5%91%A8%E9%82%8A%E6%B4%BB%E5%8B%95/a-80072713",
+        "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20261127-%E5%8F%B0%E7%81%A3-%E4%B9%9D%E5%90%88%E4%B8%80%E9%81%B8%E8%88%89%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E8%A1%9D%E5%88%BA-%E5%9C%8B%E9%98%B2%E9%83%A8%E7%A8%B1%E5%81%B5%E6%B8%AC%E5%88%B0%E4%B8%AD%E5%9C%8B%E6%B4%BE%E5%87%BA%E7%9A%84%E6%88%B0%E6%A9%9F",
+        "https://www.ntdtv.com/b5/2026/11/28/a104154434.html"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDdDx11TVC0gd1MMGmAAVJ-43IYky1DRPddknuc1iQ-K6V_D1s9ZyO4_A6NTE",
+      "image_credit": "DW.com",
+      "news": [
+        {
+          "url": "https://www.dw.com/zh-hant/%E5%8F%B0%E7%81%A3%E5%9C%B0%E6%96%B9%E9%81%B8%E8%88%89%E5%89%8D%E5%A4%95-%E8%A7%A3%E6%94%BE%E8%BB%8D30%E6%9E%B6%E6%AC%A1%E8%BB%8D%E6%A9%9F%E5%9C%A8%E5%8F%B0%E6%B5%B7%E5%91%A8%E9%82%8A%E6%B4%BB%E5%8B%95/a-80072713",
+          "title": "台灣」九合一「選戰進入最後沖刺 解放軍軍機活動增加動引關注",
+          "publisher": "DW.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQDdDx11TVC0gd1MMGmAAVJ-43IYky1DRPddknuc1iQ-K6V_D1s9ZyO4_A6NTE"
+        },
+        {
+          "url": "https://www.rfi.fr/tw/%E6%B8%AF%E6%BE%B3%E5%8F%B0/20261127-%E5%8F%B0%E7%81%A3-%E4%B9%9D%E5%90%88%E4%B8%80%E9%81%B8%E8%88%89%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E8%A1%9D%E5%88%BA-%E5%9C%8B%E9%98%B2%E9%83%A8%E7%A8%B1%E5%81%B5%E6%B8%AC%E5%88%B0%E4%B8%AD%E5%9C%8B%E6%B4%BE%E5%87%BA%E7%9A%84%E6%88%B0%E6%A9%9F",
+          "title": "台灣：九合一選舉最後一天衝刺 國防部稱偵測到中國派出的戰機",
+          "publisher": "RFI",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxKSOeFZnlwo9CRXjOH3lGboZMQo3bxFijNyQAB58gvNYQkPndni0ehB4Vn64"
+        },
+        {
+          "url": "https://www.ntdtv.com/b5/2026/11/28/a104154434.html",
+          "title": "【新聞第一線】台灣投票前夕 共軍大規模擾台",
+          "publisher": "新唐人電視台",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTEZBjxxiha8KzSVfCrMQOAsUYTgR88xzN818y4VMhjTfr1mdlvtkp1UkoPh0k"
+        }
+      ]
+    },
+    {
+      "query": "noah beck",
+      "approx_searches": "100+",
+      "published_at": "2026-11-28T08:40:00Z",
+      "related_news_urls": [
+        "https://www.latimes.com/entertainment-arts/business/story/2026-11-26/tubi-sidelined-influencers-ya-creatorverse",
+        "https://www.techradar.com/entertainment/how-to-watch/how-to-watch-sidelined-3-endgame-on-tubi-its-free",
+        "https://uk.movies.yahoo.com/sequel-surprisingly-enjoyable-romcom-carrie-210900057.html"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw27KLpjyyUANGfxT9oW6ltB1GP1-NAIpucIejuVZ6aW16zn0fotEApNq70qg",
+      "image_credit": "Los Angeles Times",
+      "news": [
+        {
+          "url": "https://www.latimes.com/entertainment-arts/business/story/2026-11-26/tubi-sidelined-influencers-ya-creatorverse",
+          "title": "Tubi bet on a TikTok star for its first YA movie. Three films later, it’s doubling down",
+          "publisher": "Los Angeles Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRw27KLpjyyUANGfxT9oW6ltB1GP1-NAIpucIejuVZ6aW16zn0fotEApNq70qg"
+        },
+        {
+          "url": "https://www.techradar.com/entertainment/how-to-watch/how-to-watch-sidelined-3-endgame-on-tubi-its-free",
+          "title": "How to watch Sidelined 3: Endgame on Tubi (it's free)",
+          "publisher": "TechRadar",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTe-LT8RZZiuxt6vSstYMYpRB4BptLjtz0KWxR1LdpIxP0OaJx07vHLk0z7KeQ"
+        },
+        {
+          "url": "https://uk.movies.yahoo.com/sequel-surprisingly-enjoyable-romcom-carrie-210900057.html",
+          "title": "Sequel to “surprisingly enjoyable” romcom with Carrie star is now streaming for free",
+          "publisher": "Yahoo Entertainment UK",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSFywk-7oBF0nCTK6OD1DLgFLP0KKKgEMYThzVXiYzI94tDXNb75gxNWTkitA8"
+        }
+      ]
+    },
     {
       "query": "開票",
       "approx_searches": "200+",
       "published_at": "2026-11-28T08:10:00Z",
       "related_news_urls": [
-        "https://news.yahoo.co.jp/pickup/6604298",
         "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
-        "https://news.web.nhk/newsweb/na/nd-20261127de82484"
+        "https://news.yahoo.co.jp/pickup/6604298",
+        "https://www.jiji.com/jc/p?id=20261128155559-0094387911"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY",
-      "image_credit": "Yahoo!ニュース",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M",
+      "image_credit": "Bloomberg.com",
       "news": [
-        {
-          "url": "https://news.yahoo.co.jp/pickup/6604298",
-          "title": "台湾の統一地方選 与党が伸長か",
-          "publisher": "Yahoo!ニュース",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY"
-        },
         {
           "url": "https://www.bloomberg.com/jp/news/articles/2026-11-28/TP6RPGKJH6V400?srnd=jp-homepage",
           "title": "台湾の統一地方選、大勢の有権者が投票－28年総統選視野に中国も注視",
@@ -33,11 +105,18 @@
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRzYiy6agPQxCxJdB5lqtl4AYa_R1Fm9Yhvl_XTdtluwHkCur2JLPlqU-k7-0M"
         },
         {
-          "url": "https://news.web.nhk/newsweb/na/nd-20261127de82484",
-          "title": "台湾統一地方選挙 28日投票へ 台北市長選挙の勝敗など焦点",
-          "publisher": "NHKニュース",
+          "url": "https://news.yahoo.co.jp/pickup/6604298",
+          "title": "台湾の統一地方選 与党が伸長か",
+          "publisher": "Yahoo!ニュース",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkooTgYrE9yDAqTrFIRjA7QtTLYwo5OsgBq8blzWFeRT7p2gSYM2whLFlavtY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOKp-Xdwke-WMHQkdhPjaDERJ4A2pcdyporDjBvjaDbIdM5Jm0kji-4Q53blY"
+        },
+        {
+          "url": "https://www.jiji.com/jc/p?id=20261128155559-0094387911",
+          "title": "画像・写真：投票を行う蒋万安氏：時事ドットコム",
+          "publisher": "時事ドットコム",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRKGsArD2KdyZ77sEYDO3uVKoouoZTBOnJI_EL8i9ha9RkKFrzx0xI9HOrBxFU"
         }
       ]
     },
@@ -82,7 +161,7 @@
       "published_at": "2026-11-28T08:00:00Z",
       "related_news_urls": [
         "https://www.instagram.com/p/Df-A2Dmygse/",
-        "https://www.realitytea.com/2026/11/27/selena-gomez-demi-lovato-husbands-gratitude-thanksgiving/",
+        "https://www.yahoo.com/entertainment/articles/selena-gomez-demi-lovato-agree-154702132.html",
         "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340"
       ],
       "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM",
@@ -96,11 +175,11 @@
           "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1jj6gQdvlOFvCvzeIxpwJ2rOElvQzSh0_gBAHJbzzmlTkn7BqhCeyG_oLlEM"
         },
         {
-          "url": "https://www.realitytea.com/2026/11/27/selena-gomez-demi-lovato-husbands-gratitude-thanksgiving/",
+          "url": "https://www.yahoo.com/entertainment/articles/selena-gomez-demi-lovato-agree-154702132.html",
           "title": "Selena Gomez & Demi Lovato Agree on What They’re Most Thankful For This Holiday",
-          "publisher": "Reality Tea",
+          "publisher": "Yahoo",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS6Ic2kA81XTv06BSPQ35jQfVk7XixgILbCB8mYN8ijTgE2jg2HPEwtcDqCqhQ"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRIMDFTNguajh_aR5EYaNaD3a3l1WjIyAi4jAfIYQhbbjcJFqhmMYhNDawwU_g"
         },
         {
           "url": "https://www.inc.com/ali-donaldson/selena-gomez-rare-beauty-friendsgiving-nostalgia-marketing/91440340",
@@ -153,7 +232,7 @@
       "related_news_urls": [
         "https://www.cbsnews.com/news/pregnant-prisoner-escapes-corrections-vehicle-new-mexico/",
         "https://www.cnn.com/2026/11/27/us/new-mexico-pregnant-prison-inmate-escape-hnk",
-        "https://www.washingtonpost.com/nation/2026/11/27/pregnant-inmate-rebecca-taylor-escapes-prison-vehicle-albuquerque/"
+        "https://www.bbc.com/news/articles/c9m2jke85xzxo"
       ],
       "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSJIu2VFCB05hkyeS06kFDUVaLyCarCZZu2dSyz-O3rjEUFhtAie_ulixkzJa0",
       "image_credit": "CBS News",
@@ -173,11 +252,11 @@
           "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR8zQHQn9Oxa10Em2jBUAinBb8l-l0IeAuVKPeFeI9Cou29sW63Y-8935rS-YE"
         },
         {
-          "url": "https://www.washingtonpost.com/nation/2026/11/27/pregnant-inmate-rebecca-taylor-escapes-prison-vehicle-albuquerque/",
-          "title": "Pregnant prisoner escapes from official vehicle in New Mexico",
-          "publisher": "The Washington Post",
+          "url": "https://www.bbc.com/news/articles/c9m2jke85xzxo",
+          "title": "Rebecca Taylor: Pregnant US inmate escapes in prison vehicle after medical appointment",
+          "publisher": "BBC",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStBoCwVuHEtbj84T48i_wRzLy0dewMq6dd53b7oEt88E6lvRdxwK5u_NAFi3w"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFxnnb5ID5H0rij5fvE8Vi12SjU_jnVUvltO3R41ePwkj6D3WApSR430_GWsY"
         }
       ]
     },
@@ -248,111 +327,6 @@
           "publisher": "Demokratis.co.id",
           "description": "",
           "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQBmH1f_TYDRyDkARPr0pcONwYvB7EfejQ_QHMVyB3ZRa9Ujqf3oHinr2b2oqM"
-        }
-      ]
-    },
-    {
-      "query": "xaivian lee",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T06:50:00Z",
-      "related_news_urls": [
-        "https://sports.yahoo.com/mens-college-basketball/articles/gonzaga-may-unlocking-best-version-193604789.html",
-        "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909800",
-        "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-thoughts-analysis-vegas-293293126/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSEAFZkVqSJ8R_BYkATg1a60wDx9gPG9KrWgP9sArzyDri8YgsiR8Qzdy2BPM",
-      "image_credit": "Yahoo Sports",
-      "news": [
-        {
-          "url": "https://sports.yahoo.com/mens-college-basketball/articles/gonzaga-may-unlocking-best-version-193604789.html",
-          "title": "Gonzaga may be unlocking the best version of Xaivian Lee",
-          "publisher": "Yahoo Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSSEAFZkVqSJ8R_BYkATg1a60wDx9gPG9KrWgP9sArzyDri8YgsiR8Qzdy2BPM"
-        },
-        {
-          "url": "https://www.espn.com/mens-college-basketball/recap/_/gameId/401909800",
-          "title": "Gonzaga 101-61 Kansas State (Nov 25, 2026) Game Recap",
-          "publisher": "ESPN",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS8QEr5oY_Cn2REur2PmYYF1G_9Wn-2iJpNnxqLwwQsEKzrXGSiVdqnrop_wGw"
-        },
-        {
-          "url": "https://247sports.com/college/kansas-state/article/kansas-state-basketball-gonzaga-thoughts-analysis-vegas-293293126/",
-          "title": "What I did and didn't like from K-State's 101-61 loss to Gonzaga",
-          "publisher": "247Sports",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ91ABAO6IznSj-fcag_qoiycQuLQcFPxFF0Lo9qXt3jEurffklFYIiVaZmpYM"
-        }
-      ]
-    },
-    {
-      "query": "alaska earthquake center",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T06:20:00Z",
-      "related_news_urls": [
-        "https://alaskabeacon.com/2026/11/27/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information/",
-        "https://www.newsfromthestates.com/article/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information",
-        "https://www.newsminer.com/news/alaska_news/winter-for-the-alaska-earthquake-center-field-crew/article_00ef3228-3cdb-4ffe-a27d-5e72baf22bf3.html"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBlguD7HpK6lIJERdX5nF6Etq-aWjBUTkoyJW400FwGUXF_Cg70MVhlFfyfJY",
-      "image_credit": "Alaska Beacon",
-      "news": [
-        {
-          "url": "https://alaskabeacon.com/2026/11/27/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information/",
-          "title": "New app consolidates Alaska tsunami hazard and preparation information",
-          "publisher": "Alaska Beacon",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBlguD7HpK6lIJERdX5nF6Etq-aWjBUTkoyJW400FwGUXF_Cg70MVhlFfyfJY"
-        },
-        {
-          "url": "https://www.newsfromthestates.com/article/new-app-consolidates-alaska-tsunami-hazard-and-preparation-information",
-          "title": "New app consolidates Alaska tsunami hazard and preparation information",
-          "publisher": "News From The States",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQyOq_9ER5-LyJFJtG0WMxPdmikB0DNegTpBS6tqhrBiMKNRnME0LnLDse6m5k"
-        },
-        {
-          "url": "https://www.newsminer.com/news/alaska_news/winter-for-the-alaska-earthquake-center-field-crew/article_00ef3228-3cdb-4ffe-a27d-5e72baf22bf3.html",
-          "title": "Winter for the Alaska Earthquake Center field crew",
-          "publisher": "Fairbanks Daily News-Miner",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSqZ_tw5NWDzDHrhxOyt7ujHcYi2FIZWrfgbTeRRsKMs_Bo6IOzQ4yKs-Yu53A"
-        }
-      ]
-    },
-    {
-      "query": "gordon ramsay",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T06:20:00Z",
-      "related_news_urls": [
-        "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
-        "https://www.kvue.com/article/news/nation-world/gordon-ramsay-daughter-gives-birth/507-4a051339-e94f-4064-8162-77afc4fd42f6",
-        "https://www.eonline.com/news/1438299/gordon-ramsay-is-grandfather-daughter-holly-gives-birth-to-first-baby"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrEzB8EXf1DtjKpEve6cdqiufi6MRIBjl-oY2HgUmMpPVN6b4z1TN45sI5SJE",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/gordon-ramsay-shares-first-message-to-granddaughter-daphne-12281931",
-          "title": "Gordon Ramsay Celebrates Arrival of His First Grandchild, ‘Miss Daphne’ with Sweet Message",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrEzB8EXf1DtjKpEve6cdqiufi6MRIBjl-oY2HgUmMpPVN6b4z1TN45sI5SJE"
-        },
-        {
-          "url": "https://www.kvue.com/article/news/nation-world/gordon-ramsay-daughter-gives-birth/507-4a051339-e94f-4064-8162-77afc4fd42f6",
-          "title": "Gordon Ramsay's daughter, Holly Ramsay-Peaty, gives birth to first child",
-          "publisher": "KVUE",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT93k6R4lyIcRVRMJqEMisiyQHnNzyOn02XZAybCI_cn6GUU6c7Ok5A7vZG8L4"
-        },
-        {
-          "url": "https://www.eonline.com/news/1438299/gordon-ramsay-is-grandfather-daughter-holly-gives-birth-to-first-baby",
-          "title": "Gordon Ramsay Becomes Grandfather as Daughter Holly Gives Birth to First Baby",
-          "publisher": "E! News",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSJSlrQeC4faO77AVWlkCXmzE97CntZ9Hu-GGl5fuUBPkC4BZ2niv0HfeSRA0w"
         }
       ]
     }
