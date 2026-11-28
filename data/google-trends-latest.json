@@ -3,324 +3,356 @@
   "source": "Google Trends Trending Now RSS",
   "source_url": "https://trends.google.com/trending/rss?geo=US",
   "region": "US",
-  "checked_at": "2026-11-28T16:00:40.836537Z",
+  "checked_at": "2026-11-28T16:31:00.647613Z",
   "search_volume_meaning": "Google's approximate search buckets, not exact counts or site visits",
   "topics": [
     {
-      "query": "leeds united",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T15:40:00Z",
+      "query": "nc state vs unc",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T16:10:00Z",
       "related_news_urls": [
-        "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
-        "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
-        "https://sports.yahoo.com/soccer/articles/matchday-programmes-coventry-city-clash-023000843.html"
+        "https://www.wral.com/sports/northcarolina-ncstate-football-rivalry-bowl-eligibility-november-2026/",
+        "https://www.newsobserver.com/sports/college/acc/article318278972.html",
+        "https://247sports.com/college/north-carolina/article/noah-saturdays-nc-state-game-is-a-must-win-for-unc-293349193/"
       ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0oA3Y1mbDSfoQEa6s8UJEVSUtmxXRPuk3Hti-hTPVFV3DAaRezwhNuwgd1iA",
-      "image_credit": "BBC",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGBDCnt7y-pE0S_OR9CkE4y_iYcYyxTT4TxmQWtEefbYS5rEWmwGTOerrAJA",
+      "image_credit": "WRAL",
       "news": [
         {
-          "url": "https://www.bbc.com/sport/football/live/c6dx1kdx25dnt",
-          "title": "Leeds United vs Coventry City: Premier League preview, team news, stats & head-to-head",
-          "publisher": "BBC",
+          "url": "https://www.wral.com/sports/northcarolina-ncstate-football-rivalry-bowl-eligibility-november-2026/",
+          "title": "Bowl eligibility and, of course, bragging rights on the line for UNC, NC State",
+          "publisher": "WRAL",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT0oA3Y1mbDSfoQEa6s8UJEVSUtmxXRPuk3Hti-hTPVFV3DAaRezwhNuwgd1iA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTGBDCnt7y-pE0S_OR9CkE4y_iYcYyxTT4TxmQWtEefbYS5rEWmwGTOerrAJA"
         },
         {
-          "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations",
-          "title": "The latest team news and Daniel Farke’s Coventry expectations",
-          "publisher": "Leeds United",
+          "url": "https://www.newsobserver.com/sports/college/acc/article318278972.html",
+          "title": "UNC or NC State football: Who needs a win more? (Video)",
+          "publisher": "Raleigh News & Observer",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCrlZFHj-gFxGmrJnIE1-RC4Lkbyk3E5W1cOxofKCAzY8MOxL3GlmweI8rkhA"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQW4OATmDQQjWyD7wBdutJZq5BTrqJ70KFn60LHQQJ63fFO7SMfeRqyVXPaQO8"
         },
         {
-          "url": "https://sports.yahoo.com/soccer/articles/matchday-programmes-coventry-city-clash-023000843.html",
-          "title": "Matchday programmes for Coventry City clash on sale",
+          "url": "https://247sports.com/college/north-carolina/article/noah-saturdays-nc-state-game-is-a-must-win-for-unc-293349193/",
+          "title": "NOAH: Saturday's NC State Game Is a Must-Win for UNC",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSnNiNNcgXL8xmoEFTKXzYtn9ojZvktiWDbTS27tgu_5IdbhEBJWgtoWuyCXvo"
+        }
+      ]
+    },
+    {
+      "query": "uconn vs wyoming",
+      "approx_searches": "2000+",
+      "published_at": "2026-11-28T16:10:00Z",
+      "related_news_urls": [
+        "https://sports.yahoo.com/college-football/articles/uconn-vs-wyoming-tv-keys-154821248.html",
+        "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
+        "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/"
+      ],
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6eOAfxtzEErwTTck-jY8kyEHv6crFxpZSoEPdZHOC0KFqsErnOjZGYf_CE5g",
+      "image_credit": "Yahoo Sports",
+      "news": [
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/uconn-vs-wyoming-tv-keys-154821248.html",
+          "title": "UConn vs. Wyoming: TV info, keys to the game, behind the numbers",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1mhGGlWt9H9BtKnDrnfwZ_mjy0eqLX-IfuOoZyLVnCuJMyOfzpkZ2zvllqZs"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR6eOAfxtzEErwTTck-jY8kyEHv6crFxpZSoEPdZHOC0KFqsErnOjZGYf_CE5g"
+        },
+        {
+          "url": "https://www.foxsports.com/stories/college-football/how-to-watch-uconn-vs-wyoming-tv-channel-live-stream-time-nov-28-2026",
+          "title": "How to Watch UConn vs. Wyoming: TV Channel, Live Stream, Time",
+          "publisher": "FOX Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcShK-qDuAQ70e-L37vY6DHdKr4_GVkzEd7r1UI5v3fJgCuEGex_mNusO010vno"
+        },
+        {
+          "url": "https://www.courant.com/2026/11/27/uconn-football-will-finish-its-regular-season-at-the-highest-elevation-in-the-fbs-against-wyoming/",
+          "title": "UConn football will finish its regular season at the highest elevation in the FBS against Wyoming",
+          "publisher": "Hartford Courant",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTkkb6KjfidVjWC9QovYjwOB3fJwW4wxJgjm0rlmlgnrpX_T4UtZcsEN0nuOKk"
         }
       ]
     },
     {
-      "query": "ben wang",
+      "query": "la tech vs ga southern",
       "approx_searches": "500+",
-      "published_at": "2026-11-28T15:40:00Z",
+      "published_at": "2026-11-28T16:10:00Z",
       "related_news_urls": [
-        "https://www.imdb.com/es/news/ni66092507/"
+        "https://www.griceconnect.com/sports/game-preview-georgia-southern-set-to-host-louisiana-tech-in-big-finale-13055746",
+        "https://lincolnparishjournal.com/2026/11/28/bulldogs-face-georgia-southern-with-history-on-the-line/",
+        "https://www.sportsgambler.com/betting-tips/ncaaf/louisiana-tech-bulldogs-vs-georgia-southern-eagles-prediction-odds-2026-11-28/"
       ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7qLC__uOpu9kRXIuEVp3NURO9OA9Pk6_35P_EGCEQC0uN2Ry7DdNHzMOicY",
-      "image_credit": "IMDb",
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVWnOGbR04o-EjHY7mWybZSQ7tmPNUevk2AOwTiI87AzOk2jM_7r4upuPsdTg",
+      "image_credit": "Grice Connect",
       "news": [
         {
-          "url": "https://www.imdb.com/es/news/ni66092507/",
-          "title": "Hunger Games Actor Ben Wang in Talks to Play Iceman, X-Men’s Youngest Founder, at 29",
-          "publisher": "IMDb",
+          "url": "https://www.griceconnect.com/sports/game-preview-georgia-southern-set-to-host-louisiana-tech-in-big-finale-13055746",
+          "title": "GAME PREVIEW | Georgia Southern set to host Louisiana Tech in Big FInale",
+          "publisher": "Grice Connect",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx7qLC__uOpu9kRXIuEVp3NURO9OA9Pk6_35P_EGCEQC0uN2Ry7DdNHzMOicY"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSVWnOGbR04o-EjHY7mWybZSQ7tmPNUevk2AOwTiI87AzOk2jM_7r4upuPsdTg"
+        },
+        {
+          "url": "https://lincolnparishjournal.com/2026/11/28/bulldogs-face-georgia-southern-with-history-on-the-line/",
+          "title": "Bulldogs face Georgia Southern with history on the line",
+          "publisher": "Lincoln Parish Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1t8tP9I9dDg0uBdC98T2dFe2-c-Z_gJfqyn2n4wojeq9FrOjklJ_5EXkb0IA"
+        },
+        {
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/louisiana-tech-bulldogs-vs-georgia-southern-eagles-prediction-odds-2026-11-28/",
+          "title": "Louisiana Tech vs Georgia Southern Prediction, Picks & Odds | 28 Nov 2026",
+          "publisher": "Sportsgambler",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTNYkVtY1dMuxwSfoNEZvddpY0Jwfe16N-15Zcx9mRR9bSr2Rug7jZHsjEMfo4"
         }
       ]
     },
     {
-      "query": "mckenna grace movies",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T15:40:00Z",
+      "query": "england vs new zealand",
+      "approx_searches": "1000+",
+      "published_at": "2026-11-28T16:10:00Z",
       "related_news_urls": [
-        "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
-        "https://variety.com/2026/film/box-office/box-office-hunger-games-sunrise-reaping-thanksgiving-1236959537/",
-        "https://www.theguardian.com/commentisfree/2026/nov/27/new-hunger-games-sunrise-on-the-reaping-a-gen-z-call-to-action"
+        "https://www.theguardian.com/sport/2026/nov/27/england-target-historic-all-blacks-treble-after-finally-clicking-into-gear",
+        "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
+        "https://www.bbc.co.uk/sport/rugby-union/articles/cv8e04gj2wwwo"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnF68xyfCbb8IiIBf4bRf3uh_nEdu9xLgIiYZP4hEUseUX19HsvH_2Cs2G2tY",
-      "image_credit": "Deadline",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs07FMOWWIzvPuGpn7F2KVoMsObUxxftVjyJNbIZ45rLK1OYzhTFvvmDEtQC4",
+      "image_credit": "The Guardian",
       "news": [
         {
-          "url": "https://deadline.com/2026/11/box-office-hunger-games-hexed-focker-in-law-thanksgiving-1237233281/",
-          "title": "Box Office: 'Hunger Games: Sunrise on Reaping' $85M 5-day Over Thanksgiving",
-          "publisher": "Deadline",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRnF68xyfCbb8IiIBf4bRf3uh_nEdu9xLgIiYZP4hEUseUX19HsvH_2Cs2G2tY"
-        },
-        {
-          "url": "https://variety.com/2026/film/box-office/box-office-hunger-games-sunrise-reaping-thanksgiving-1236959537/",
-          "title": "Box Office: Hunger Games: Sunrise on Reaping Rules Thanksgiving",
-          "publisher": "Variety",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQo4WAvcUkLQo3ppMpgixnIuY9X4DYrqq3b-NXVQMJhASB0M2Eg5W15iQ4mFxU"
-        },
-        {
-          "url": "https://www.theguardian.com/commentisfree/2026/nov/27/new-hunger-games-sunrise-on-the-reaping-a-gen-z-call-to-action",
-          "title": "Sunrise on the Reaping: the new Hunger Games film is a gen Z call to action – critics have missed the point",
+          "url": "https://www.theguardian.com/sport/2026/nov/27/england-target-historic-all-blacks-treble-after-finally-clicking-into-gear",
+          "title": "England target historic All Blacks treble after finally clicking into gear",
           "publisher": "The Guardian",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-rMCUo16Tm4PMoAo3jfzcuaykhZy6StSHt19vRVHMj_6sWkh2CylaBcnR7XY"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs07FMOWWIzvPuGpn7F2KVoMsObUxxftVjyJNbIZ45rLK1OYzhTFvvmDEtQC4"
+        },
+        {
+          "url": "https://www.bbc.com/sport/rugby-union/live/cqgm38rjnej2t",
+          "title": "England vs New Zealand LIVE: Nations Championship 2026 - latest score, live text, radio commentary, lineups",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRfGFcAQw1sFGz7PrT6RfmffACwr1aoB0ezcYeR7BTsazGQQ5DZwOV11GuMaUQ"
+        },
+        {
+          "url": "https://www.bbc.co.uk/sport/rugby-union/articles/cv8e04gj2wwwo",
+          "title": "England v New Zealand: Greg Fisilau and Freddie Steward in hosts' XV",
+          "publisher": "BBC",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb8bkTzqMlADGziWyr_Xq7AimgZDS9hx_Y276J9OfxfyNOOAyX4tc-N0CeFac"
         }
       ]
     },
     {
-      "query": "matt damon family home life",
-      "approx_searches": "1000+",
-      "published_at": "2026-11-28T15:30:00Z",
-      "related_news_urls": [
-        "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-        "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-reveals-difficult-living-211514045.html",
-        "https://graziamagazine.com/us/articles/after-91-days-filming-the-odyssey-matt-damon-56-says-coming-home-to-his-wife-and-4-daughters-25497-c1/"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM",
-      "image_credit": "People.com",
-      "news": [
-        {
-          "url": "https://people.com/matt-damon-adjusting-family-life-after-filming-the-odyssey-exclusive-12266199",
-          "title": "Matt Damon Says Returning Home After Filming The Odyssey Was ‘Difficult’ as He Adjusted to Family Life (Exclusive)",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT3N0L2FwNGZ6vc2BZ97-ngRhb-0PeFlhMG9oCLOoyR3sgqL4M8fT0CjvhJkHM"
-        },
-        {
-          "url": "https://www.yahoo.com/entertainment/celebrity/interviews/articles/matt-damon-reveals-difficult-living-211514045.html",
-          "title": "Matt Damon reveals difficult living situation with wife and four daughters",
-          "publisher": "Yahoo",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSpvLsnhTA93A6w9HWZvNt-_TvA67DkrbXUl8s94TtKquTEkSrTETAF75_rWsA"
-        },
-        {
-          "url": "https://graziamagazine.com/us/articles/after-91-days-filming-the-odyssey-matt-damon-56-says-coming-home-to-his-wife-and-4-daughters-25497-c1/",
-          "title": "After 91 Days Filming 'The Odyssey,' Matt Damon, 56, Says Coming Home to His Wife and 4 Daughters Was 'Difficult'",
-          "publisher": "Grazia",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnHp3-grJgWlYzb9ndg3nuIZDFRhV3KxktFl4Z7kvAfmmejUaQ40vkMqE1K9U"
-        }
-      ]
-    },
-    {
-      "query": "paw patrol",
+      "query": "central mi vs ball state",
       "approx_searches": "500+",
-      "published_at": "2026-11-28T15:30:00Z",
+      "published_at": "2026-11-28T16:10:00Z",
       "related_news_urls": [
-        "https://explore-liverpool.com/extra-paw-patrol-live-show-added-in-liverpool-due-to-huge-demand/",
-        "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=section_banner&itm_content=1",
-        "https://peradaban.id/en/paw-patrol-live-uk-tour"
+        "https://www.sportsgambler.com/betting-tips/ncaaf/central-michigan-chippewas-vs-ball-state-cardinals-prediction-odds-2026-11-28/",
+        "https://www.thestarpress.com/story/sports/college/ball-state/2026/11/28/ball-state-football-vs-central-michigan-score-stats-updates/92882102007/",
+        "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-ball-state-cardinals-v-central-michigan-chippewas/blt2567ac17327fbab0"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK0APgI2Bn7g18DgqjxeYnIT3fdaHXRuit3SdPUd70lnmnYPpkkMKBEFc6QOQ",
-      "image_credit": "Explore Liverpool",
+      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0",
+      "image_credit": "Sportsgambler",
       "news": [
         {
-          "url": "https://explore-liverpool.com/extra-paw-patrol-live-show-added-in-liverpool-due-to-huge-demand/",
-          "title": "Extra PAW Patrol Live! show added in Liverpool due to huge demand",
-          "publisher": "Explore Liverpool",
+          "url": "https://www.sportsgambler.com/betting-tips/ncaaf/central-michigan-chippewas-vs-ball-state-cardinals-prediction-odds-2026-11-28/",
+          "title": "Central Michigan vs Ball State Prediction, Picks & Odds | 28 Nov 2026",
+          "publisher": "Sportsgambler",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTK0APgI2Bn7g18DgqjxeYnIT3fdaHXRuit3SdPUd70lnmnYPpkkMKBEFc6QOQ"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTRS2TFT-SCQ7_VYEX1WO_fnCL3T7ysdJWupxfl0HLLYYTcYmRjR2z4N10eCs0"
         },
         {
-          "url": "https://www.londonworld.com/sponsored/pawsome-black-friday-deal-save-20-on-selected-paw-patrol-live-tickets-at-london-ovo-arena-wembley-9376483?itm_source=internal&itm_campaign=breaking-news-ticker&itm_channel=section_banner&itm_content=1",
-          "title": "PAW Patrol Live!Black Friday offer - save 20% on London tickets",
-          "publisher": "LondonWorld",
+          "url": "https://www.thestarpress.com/story/sports/college/ball-state/2026/11/28/ball-state-football-vs-central-michigan-score-stats-updates/92882102007/",
+          "title": "Ball State football vs Central Michigan live updates | Score, highlights",
+          "publisher": "The Star Press",
           "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQuJU3KDZQl5-JFjgPgUUGNUuGJq4GnAAmmgqpgvWKLF0-9f7TBr67c0tJBfqw"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQMk-K5xzPgNlOOGeFMkmK3U-_-uroIXvyEMrG4du7Pd_OYmlmRdo-EMI8iyaQ"
         },
         {
-          "url": "https://peradaban.id/en/paw-patrol-live-uk-tour",
-          "title": "PAW Patrol Live Brings Heroes Unite Tour to UK Venues",
-          "publisher": "Peradaban.id",
+          "url": "https://www.goal.com/en-us/news/live-stream-online-tv-where-to-watch-ball-state-cardinals-v-central-michigan-chippewas/blt2567ac17327fbab0",
+          "title": "Watch Ball State Cardinals vs Central Michigan Chippewas NCAAF game LIVE: Online stream, TV channels, and kick-off time",
+          "publisher": "Goal.com",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTL3cOYktP68LMGwW0WpZujRgKf-1Xw9MjzXR5cYkBAi5meDgELmmBxqWowr5Y"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSTsqrO8AIOzvNEbSOBB135bsABWRsZxnsZz3F4dhHHPxDlVh_y9tSUL5e12dc"
         }
       ]
     },
     {
-      "query": "stephen garcia",
-      "approx_searches": "2000+",
-      "published_at": "2026-11-28T15:20:00Z",
+      "query": "gatto",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T16:10:00Z",
       "related_news_urls": [
-        "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
-        "https://sports.yahoo.com/college-football/articles/clemsons-hevin-brown-shuler-south-120128429.html",
-        "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/"
+        "https://www.loscarpone.cai.it/dettaglio/leopardo-delle-nevi-e-gatto-di-pallas-una-ricerca-per-scoprire-la-vita-segreta-dei-felini/",
+        "https://www.pazienti.it/news-di-salute/gatti-e-salute-mentale-cosa-dice-lo-studio-sulla-toxoplasmosi-27112026",
+        "https://www.fanpage.it/kodami/quando-vivere-con-un-gatto-e-difficile-il-legame-tra-benessere-felino-e-salute-psicologica-umana/"
       ],
-      "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs",
-      "image_credit": "Greenville Online",
+      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQQMPJQELgvCJHPnEdjCTJ8A07V9Y6xIdmyEwXZv7atbOJDbER_CHWuk-9oXk",
+      "image_credit": "Lo Scarpone CAI",
       "news": [
         {
-          "url": "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
-          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
-          "publisher": "Greenville Online",
+          "url": "https://www.loscarpone.cai.it/dettaglio/leopardo-delle-nevi-e-gatto-di-pallas-una-ricerca-per-scoprire-la-vita-segreta-dei-felini/",
+          "title": "Leopardo delle nevi e gatto di Pallas: una ricerca per scoprire la vita segreta dei felini",
+          "publisher": "Lo Scarpone CAI",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQQQMPJQELgvCJHPnEdjCTJ8A07V9Y6xIdmyEwXZv7atbOJDbER_CHWuk-9oXk"
         },
         {
-          "url": "https://sports.yahoo.com/college-football/articles/clemsons-hevin-brown-shuler-south-120128429.html",
-          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
+          "url": "https://www.pazienti.it/news-di-salute/gatti-e-salute-mentale-cosa-dice-lo-studio-sulla-toxoplasmosi-27112026",
+          "title": "Gatti e salute mentale: cosa dice lo studio sulla toxoplasmosi",
+          "publisher": "Pazienti.it",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS2eShmIVWy5e34_ITcm7bBKFTLUw27zQvt6owG4By2dSoOICHMZZuRKDnIHXo"
+        },
+        {
+          "url": "https://www.fanpage.it/kodami/quando-vivere-con-un-gatto-e-difficile-il-legame-tra-benessere-felino-e-salute-psicologica-umana/",
+          "title": "Quando vivere con un gatto è difficile: il legame tra benessere felino e salute psicologica umana",
+          "publisher": "Fanpage",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY8TcoawNHLeCkm1aMWvd5o7Evv7BL47-hwDcZ_ZOMT7Loqpx8WRIlDS1sEwI"
+        }
+      ]
+    },
+    {
+      "query": "charlotte fc",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T16:10:00Z",
+      "related_news_urls": [
+        "https://www.oregonlive.com/tv/2026/11/watch-chicago-fire-vs-charlotte-fc-today-with-this-black-friday-streaming-deal.html",
+        "https://www.wsoctv.com/news/local/charlotte-fc-prepares-potential-historic-playoff-game-against-chicago-fire/FQMUSJH3JJE33ENTWDC3ZPZMZU/",
+        "https://www.beinsports.com/en-nz/football/mls/articles/abada-lauds-charlottes-attacking-strength-in-mls-playoffs-2026-11-27"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3dgMpaSwDsQBY4x5XqMlWFBYjXOY1JcxHYyAz4Z3D68YSxDgjAbIc1kt5zs",
+      "image_credit": "OregonLive.com",
+      "news": [
+        {
+          "url": "https://www.oregonlive.com/tv/2026/11/watch-chicago-fire-vs-charlotte-fc-today-with-this-black-friday-streaming-deal.html",
+          "title": "Watch Chicago Fire vs. Charlotte FC today with this Black Friday streaming deal",
+          "publisher": "OregonLive.com",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY3dgMpaSwDsQBY4x5XqMlWFBYjXOY1JcxHYyAz4Z3D68YSxDgjAbIc1kt5zs"
+        },
+        {
+          "url": "https://www.wsoctv.com/news/local/charlotte-fc-prepares-potential-historic-playoff-game-against-chicago-fire/FQMUSJH3JJE33ENTWDC3ZPZMZU/",
+          "title": "Charlotte FC prepares for potential historic playoff game against Chicago Fire",
+          "publisher": "WSOC TV",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ-U9KjuWQrBlbzxglbT40YsFQ4AJwW_HT5ocV2vxa8Tr8tdIeDuDSFed7h3Rs"
+        },
+        {
+          "url": "https://www.beinsports.com/en-nz/football/mls/articles/abada-lauds-charlottes-attacking-strength-in-mls-playoffs-2026-11-27",
+          "title": "Abada lauds Charlotte's attacking strength in MLS playoffs",
+          "publisher": "beIN SPORTS",
+          "description": "",
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQe94yM3uurRyeh5Ua5m6Xpy67L6uxAdUN5Hy6TGZWZfdvJhiH0uQ__SqglOME"
+        }
+      ]
+    },
+    {
+      "query": "georgia vs georgia tech",
+      "approx_searches": "200+",
+      "published_at": "2026-11-28T16:10:00Z",
+      "related_news_urls": [
+        "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
+        "https://sports.yahoo.com/college-football/articles/georgia-football-vs-georgia-tech-152929222.html",
+        "https://www.ajc.com/sports/2026/11/uga-georgia-tech-rivalry-game-details/"
+      ],
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE",
+      "image_credit": "247Sports",
+      "news": [
+        {
+          "url": "https://247sports.com/college/georgia/longformarticle/georgia-bulldogs-football-injury-update-report-vs-georgia-tech-yellow-jackets-drew-bobo-josh-horton-kirby-smart-293362512/",
+          "title": "Georgia football injury report vs. Georgia Tech",
+          "publisher": "247Sports",
+          "description": "",
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsYwYpSfiIDr2X7vQMe0-w4o1qZe9QhL94IIhVTDim0X8LC2rb_dE_TU1JxjE"
+        },
+        {
+          "url": "https://sports.yahoo.com/college-football/articles/georgia-football-vs-georgia-tech-152929222.html",
+          "title": "Georgia Football vs. Georgia Tech: Kickoff Time, TV Channel and Final Rivalry Preview",
           "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSIyKIgjf0Rb-GsAPLwekHWaHQN6K1MDFSsw1PB02mZ_Gn61BBTlOmeitiU5Nc"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWq3WAbL2vlbw3eZxCChY0kv_0dQ8euqA_5tscO7FSLSh_FmbDrvvxRosih9M"
         },
         {
-          "url": "https://www.greenvilleonline.com/story/sports/college/clemson/2026/11/28/college-gameday-clemson-south-carolina-hevin-brown-shuler-stephen-garcia/92960943007/",
-          "title": "How Clemson's Hevin Brown-Shuler, South Carolina's Stephen Garcia bonded over cancer fight",
-          "publisher": "Greenville Online",
+          "url": "https://www.ajc.com/sports/2026/11/uga-georgia-tech-rivalry-game-details/",
+          "title": "Inside the Georgia-Georgia Tech rivalry: Everything to know about the game",
+          "publisher": "The Atlanta Journal-Constitution",
           "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQYcBDFHzGm6LRcu1Gd9qiXLzYBHQA0GYz9GdhkP0pvvyJ3UEEwGy9bpBV4mLs"
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSyTFCwcL5o__z02Y8_UqePRs-rtsm9AikZQ2z-JYN5dNnSRg_8-Xd9lS8sxl0"
         }
       ]
     },
     {
-      "query": "greta gerwig",
-      "approx_searches": "500+",
-      "published_at": "2026-11-28T15:20:00Z",
-      "related_news_urls": [
-        "https://www.narniaweb.com/2026/11/meryl-streep-was-present-for-narnia-additional-filming/"
-      ],
-      "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGK6KIG1JSBn_QOuSWnmV7EFlpVRwmbuF69tlRvSWu1nws1_HFC2LMrQ-HUlE",
-      "image_credit": "NarniaWeb",
-      "news": [
-        {
-          "url": "https://www.narniaweb.com/2026/11/meryl-streep-was-present-for-narnia-additional-filming/",
-          "title": "Meryl Streep was Present for ‘Narnia’ Additional Filming",
-          "publisher": "NarniaWeb",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTGK6KIG1JSBn_QOuSWnmV7EFlpVRwmbuF69tlRvSWu1nws1_HFC2LMrQ-HUlE"
-        }
-      ]
-    },
-    {
-      "query": "oreo",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T15:10:00Z",
-      "related_news_urls": [
-        "https://www.allrecipes.com/oreo-zero-sugar-dark-chocolate-12277624",
-        "https://boingboing.net/2026/11/25/popkin-oreo-cream-plaster-bust.html",
-        "https://www.cbc.ca/kidsnews/post/dairy-milk-oreo-bars-are-being-recalled-for-allergy-risk"
-      ],
-      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQrOFA4keJNWjVhutUadZM5aQVxyRW5mES70ZlE5h7mJuSa3qus-2y-fN9Tk",
-      "image_credit": "Allrecipes",
-      "news": [
-        {
-          "url": "https://www.allrecipes.com/oreo-zero-sugar-dark-chocolate-12277624",
-          "title": "A First-Of-Its-Kind Oreo Just Hit Store Shelves—And Fans Say It’s a ‘GAME CHANGER’",
-          "publisher": "Allrecipes",
-          "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnQrOFA4keJNWjVhutUadZM5aQVxyRW5mES70ZlE5h7mJuSa3qus-2y-fN9Tk"
-        },
-        {
-          "url": "https://boingboing.net/2026/11/25/popkin-oreo-cream-plaster-bust.html",
-          "title": "Watch an artist sculpt a plaster-style bust out of Oreo cream",
-          "publisher": "Boing Boing",
-          "description": "",
-          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG-qEhAv0E-N9-TrstKRXi6cLhQmECYKs35fTKLQQC87OCA2t-miEsTlgpzMQ"
-        },
-        {
-          "url": "https://www.cbc.ca/kidsnews/post/dairy-milk-oreo-bars-are-being-recalled-for-allergy-risk",
-          "title": "Dairy Milk Oreo bars are being recalled for allergy risk | story | Kids News",
-          "publisher": "CBC",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQW5pUsRCWdFT7T8gTAkIfRYXgfZFhTbTq9HGSzteCb2b1qfTZb0U-yza32zoc"
-        }
-      ]
-    },
-    {
-      "query": "mariska hargitay",
-      "approx_searches": "200+",
-      "published_at": "2026-11-28T15:10:00Z",
-      "related_news_urls": [
-        "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
-        "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
-        "https://demokratis.co.id/en/hargitay-nutcracker-family-production"
-      ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEppKq1EIHPgJqMq9qkOtbPw-6MOe9ZunGt2rMF51PHR95WWZajEvkZlpyybI",
-      "image_credit": "BroadwayWorld",
-      "news": [
-        {
-          "url": "https://www.broadwayworld.com/article/Mariska-Hargitay-Joins-Her-Daughters-Production-of-THE-NUTCRACKER-With-Husband-Peter-Hermann-20261125",
-          "title": "Mariska Hargitay Joins Her Daughter’s Production of THE NUTCRACKER With Husband Peter Hermann",
-          "publisher": "BroadwayWorld",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTEppKq1EIHPgJqMq9qkOtbPw-6MOe9ZunGt2rMF51PHR95WWZajEvkZlpyybI"
-        },
-        {
-          "url": "https://people.com/mariska-hargitay-reveals-she-and-husband-peter-hermann-were-cast-in-her-daughters-production-of-the-nutcracker-12276971",
-          "title": "Mariska Hargitay and Peter Hermann Were Cast in Daughter’s Production of ‘The Nutcracker’",
-          "publisher": "People.com",
-          "description": "",
-          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS5TRwATod7utwQEsl3qnnLP4ctkf-IapP1DnBpOzrngjarxbZcL2I2krkhLh8"
-        },
-        {
-          "url": "https://demokratis.co.id/en/hargitay-nutcracker-family-production",
-          "title": "Mariska Hargitay Joins Daughter in The Nutcracker Production",
-          "publisher": "Demokratis.co.id",
-          "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQB3Po1IKtinc2N43l67HdmebfP1LczEQAqrl30t2-5wP5nZBZlGuw_ZLxvKw0"
-        }
-      ]
-    },
-    {
-      "query": "canada–united states border",
+      "query": "boston college vs miami fl",
       "approx_searches": "5000+",
-      "published_at": "2026-11-28T15:00:00Z",
+      "published_at": "2026-11-28T16:00:00Z",
       "related_news_urls": [
-        "https://www.newsweek.com/canada-change-border-entry-rules-americans-12775451",
-        "https://demokratis.co.id/en/canada-remote-border-rules",
-        "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next"
+        "https://sports.yahoo.com/college-football/articles/boston-college-no-7-miami-110004843.html",
+        "https://www.stateoftheu.com/miami-hurricanes-football/90672/how-to-watch-miami-hurricanes-vs-boston-college-eagles-in-week-13",
+        "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318250525.html"
       ],
-      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA",
-      "image_credit": "Newsweek",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYC1sgfywYPhLJnPpYDCRnYovQ2vyleaiGCdI_K2Y1lcdgqHK5BrR42JsCehU",
+      "image_credit": "Yahoo Sports",
       "news": [
         {
-          "url": "https://www.newsweek.com/canada-change-border-entry-rules-americans-12775451",
-          "title": "Canada To Change Border Entry Rules for Thousands of Americans In Days",
-          "publisher": "Newsweek",
+          "url": "https://sports.yahoo.com/college-football/articles/boston-college-no-7-miami-110004843.html",
+          "title": "Boston College at No. 7 Miami: Game Central Rundown, Injury Updates, Depth Chart",
+          "publisher": "Yahoo Sports",
           "description": "",
-          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQBDfeFDLK48EtcYFXSR4AGTD41NVLOiy0X5kK_AXfz2tvYP_B58a9BIHI_LWA"
+          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYC1sgfywYPhLJnPpYDCRnYovQ2vyleaiGCdI_K2Y1lcdgqHK5BrR42JsCehU"
         },
         {
-          "url": "https://demokratis.co.id/en/canada-remote-border-rules",
-          "title": "Canada Ends Remote Border Permit Program December 1",
-          "publisher": "Demokratis.co.id",
+          "url": "https://www.stateoftheu.com/miami-hurricanes-football/90672/how-to-watch-miami-hurricanes-vs-boston-college-eagles-in-week-13",
+          "title": "How to watch Miami Hurricanes vs Boston College Eagles in Week 13",
+          "publisher": "State of The U",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxOdpQgiVv9qa027t6pUgrlhiO-Td4Z7PtlTqa_N_06nfgsf31pNTKeWAzQDM"
+          "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTA3plYqx5hFJ-ZrIY-JQmRiJUyLZma-rYW2YFGLrSUIA6IC8B3airS3uDo4Eo"
         },
         {
-          "url": "https://www.elyecho.com/article/5426,canada-s-remote-area-border-crossing-permits-permanently-expire-this-month-here-s-what-comes-next",
-          "title": "Canada’s Remote Area Border Crossing permits permanently expire this month: here’s what comes next",
-          "publisher": "The Ely Echo",
+          "url": "https://www.miamiherald.com/sports/college/acc/university-of-miami/article318250525.html",
+          "title": "Live updates: No. 7 Miami Hurricanes vs. Boston College Eagles",
+          "publisher": "Miami Herald",
           "description": "",
-          "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOQ_ABrSi4jD2CMEiqMSHgLqSFgU09S_M0XcnTsDhl6wYqbc-ZGCBETXRQ1s"
+          "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSQtgYhXtZQp3Xr-7fNr3pbJv5GAZdL--H2T2Yz0N3pBR6vCBzvC_TqwMZf_Fw"
+        }
+      ]
+    },
+    {
+      "query": "alexandra daddario",
+      "approx_searches": "500+",
+      "published_at": "2026-11-28T16:00:00Z",
+      "related_news_urls": [
+        "https://www.nytimes.com/2026/11/25/movies/hershey-review.html",
+        "https://www.ktvb.com/article/news/local/idaho-today/idaho-today-entertainment/the-story-behind-the-chocolate-finn-wittrock-and-alexandra-daddario-star-in-new-film-hershey/277-0da6bac1-0102-47ad-9d6b-3c0337d72cc6",
+        "https://www.post-journal.com/news/top-stories/2026/11/incredibly-moving-catherine-hershey-jamestown-native-hits-silver-screen-with-premiere-of-hershey-this-week/"
+      ],
+      "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oLHITELsFUTXUUNw05rLG3pMVsNS6hp-iUFxzHEJpwcLtRvTGHgIKC987aQ",
+      "image_credit": "The New York Times",
+      "news": [
+        {
+          "url": "https://www.nytimes.com/2026/11/25/movies/hershey-review.html",
+          "title": "‘Hershey’ Review: A Vanilla Movie About Chocolate",
+          "publisher": "The New York Times",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR1oLHITELsFUTXUUNw05rLG3pMVsNS6hp-iUFxzHEJpwcLtRvTGHgIKC987aQ"
+        },
+        {
+          "url": "https://www.ktvb.com/article/news/local/idaho-today/idaho-today-entertainment/the-story-behind-the-chocolate-finn-wittrock-and-alexandra-daddario-star-in-new-film-hershey/277-0da6bac1-0102-47ad-9d6b-3c0337d72cc6",
+          "title": "The story behind the chocolate: ‘Hershey’ film brings a sweet story of love and legacy to life",
+          "publisher": "KTVB",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR9_8ni682JtILfFzi8MvaN-nZ4pMjj_D-HZBmumL0o49GKWTac2-Xf0ckknDk"
+        },
+        {
+          "url": "https://www.post-journal.com/news/top-stories/2026/11/incredibly-moving-catherine-hershey-jamestown-native-hits-silver-screen-with-premiere-of-hershey-this-week/",
+          "title": "‘Incredibly Moving’: Catherine Hershey, Jamestown native, hits silver screen with premiere of ‘Hershey’ this week",
+          "publisher": "Post Journal",
+          "description": "",
+          "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQSdZ9hikqna8N5oHSMHwbMjp6uqzoHpnwI9E3zGYy9Js-LsGkLjDOkkGDnK-0"
         }
       ]
     }
